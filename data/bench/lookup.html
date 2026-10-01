@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>linguaapp-dict-bench</title>
+<script>
+  // 查找規則與 data/CLAUDE.md、data/tests/test_dict.py 相同
+  function shardKey(word, n) {
+    let k = '';
+    for (const ch of word.toLowerCase().slice(0, n)) k += ch >= 'a' && ch <= 'z' ? ch : '_';
+    return k.padEnd(n, '_');
+  }
+
+  async function lookup(word) {
+    const t0 = performance.now();
+    const manifest = await (await fetch('../dict/manifest.json')).json();
+    const lens = [...manifest.prefixLengths].sort((a, b) => b - a);
+    const key = lens.map((n) => shardKey(word, n)).find((k) => k in manifest.shards);
+    const shard = await (await fetch('../dict/' + manifest.shards[key])).json();
+    const entry = shard.e[word] ?? shard.e[word.toLowerCase()] ?? null;
+    const forms = shard.f[word.toLowerCase()] ?? null;
+    return { ms: performance.now() - t0, entry, forms };
+  }
+</script>

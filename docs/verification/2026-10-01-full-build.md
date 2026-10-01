@@ -6,6 +6,7 @@
 
 | 卡 | 類型 | commit | 自動化證據 | UI 走查 |
 |---|---|---|---|---|
+| TASK-6 | feat（單字資料管線） | 見 git log「TASK-6」 | data pytest 30/30（無原始檔模式 28＋2 skip）；重建 602 檔 sha256 0 差異；冷啟動最大 50.2ms；Oxford 守衛 4 種植入皆紅 | N/A |
 | TASK-2 | design（R1 線框＋方向，含 R1b 重做） | 見 git log「TASK-2」 | 對比度 R1 63 組／R1b 84 組全過 AA（腳本可重現、手算吻合、突變 exit 1） | 圈選頁 2 輪（G1） |
 | TASK-10 | feat（本機資料層＋FSRS） | 見 git log「TASK-10」 | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
 | TASK-19 | feat（Supabase schema＋RLS） | 見 git log「TASK-19」 | pgTAP 74/74、HTTP smoke 8/8；突變（關 RLS／未上鎖新表／bytea 欄／TRUNCATE）皆轉紅 | N/A |
@@ -59,4 +60,15 @@
 - **重跑**：
   ```
   PYTHONUTF8=1 python docs/design/r1/contrast_check.py && PYTHONUTF8=1 python docs/design/r1/contrast_check.py r1b
+  ```
+
+## TASK-6 · 單字資料管線——CEFR-J／Octanove／TSL／NGSL／ECDICT 匯入與繁中化
+
+- **改了什麼**：data/scripts（下載鎖檔＋sha256、建置、OpenCC s2twp＋19 條誤轉修正表）、data/sources（各來源分檔、各自授權；CEFR-J 1.5 衍生級距不標 CC BY-SA、原表不進 git）、data/lexicon（10,202 筆／9,073 詞）、data/dict（12.4 萬詞、596 片、gzip 3.29MB、最大片 113KB；詞形對照取自 ECDICT exchange 欄）、data/licenses、data/LICENSES.md、NOTICE、CI 新增 data job。
+- **驗收官實跑**（隔離、PASS）：pytest 30 passed；raw 改名後 28 passed／2 skipped；重建 602 產物逐檔 sha256 一致；自抽 10 字回原始 CSV 10/10 一致；自抽 20 條釋義 0 簡體；冷啟動親跑 15 次中位 12.5ms、最大 50.2ms；Oxford 守衛 4 種植入皆轉紅。
+- **代決**：CEFR-J 用 1.5（1.6 需填表）；lemma.en.txt 因條款限研究／教育用途排除；CEFR-J 官網自述曾參照 EVP 補字→維持採用（規格明文來源），列報告告知；s2twp 誤轉以修正表處理，語境不確定者不改。
+- **觀察（不擋）**：ECDICT 原文殘留簡體「于」6、「云」3 處（守衛字表未涵蓋）；NOTICE 第 9 行舊句；proposal 的 id 描述未同步（data/CLAUDE.md 為準）。
+- **重跑**：
+  ```
+  PYTHONUTF8=1 data/.venv/Scripts/python.exe -m pytest data/tests -q
   ```

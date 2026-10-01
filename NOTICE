@@ -2,42 +2,48 @@ LinguaApp
 Copyright (C) 2026 LinguaApp contributors
 
 本專案程式碼以 GNU Affero General Public License v3.0 授權（見 LICENSE）。
-data/ 目錄內的單字資料以 Creative Commons Attribution-ShareAlike 4.0 International 授權（見 data/LICENSE）。
+data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 4.0 International 授權（見 data/LICENSE）；
+逐檔例外（CEFR-J 衍生檔、ECDICT 衍生字典）見 data/LICENSES.md，條款原文見 data/licenses/。
 
 本檔為第三方資料與元件的歸屬清單（骨架）。各項的版本、來源網址與實際使用範圍，
 於資料實際匯入時（TASK-6 等）補全；未補全前標「待補」。
 
-== 單字資料（data/，CC BY-SA 4.0 範圍）==
+== 單字資料（data/）==
 
-- CEFR-J Wordlist Version 1.6
-  出處：東京外國語大學投野由紀夫研究室（CEFR-J Wordlist Version 1.6）
-  條款：標明出處即可研究、教育及商用免費使用；非 OSI 授權
-  來源：https://www.cefr-j.org/download.html
-  使用範圍：待補
+- CEFR-J Wordlist Version 1.5
+  引用：The CEFR-J Wordlist Version 1.5. Compiled by Yukio Tono, Tokyo University of Foreign Studies.
+        Retrieved from https://github.com/openlanguageprofiles/olp-en-cefrj (commit d4e45b7) on 01/10/2026.
+  條款：著作權屬東京外國語大學投野研究室；適切引用即可研究、教育及商用免費使用；非 CC BY-SA、非 OSI 授權
+  使用範圍：data/sources/cefrj/levels.json（詞條、詞性、CEFR 級距）與 lexicon 中 cefrSource=cefrj 的 cefr 值
+  修改：多寫法詞條取第一寫法為 headword；詞性改為統一列舉；原表不散布
 
-- Octanove Vocabulary Profile（C1/C2）
+- Octanove Vocabulary Profile C1/C2 ver 1.0，Octanove Labs
   授權：CC BY-SA 4.0
-  來源：https://github.com/openlanguageprofiles/olp-en-cefrj
-  使用範圍：待補
+  來源：https://github.com/openlanguageprofiles/olp-en-cefrj（commit d4e45b7）
+  使用範圍：data/sources/octanove/levels.json 與 lexicon 中 cefrSource=octanove 的 cefr 值
+  修改：詞性改為統一列舉；修正兩筆詞性筆誤（remonstrate、batter）；重複詞條取較低級
 
-- TSL（TOEIC Service List）1.2，Browne & Culligan
+- TSL（TOEIC Service List）1.2，Browne, C., Culligan, B. (2013)
   授權：CC BY-SA 4.0
-  來源：待補
-  使用範圍：待補
+  來源：https://www.newgeneralservicelist.com/toeic-service-list（TSL_12_stats.csv）
+  使用範圍：data/sources/ngsl-tsl/flags.json 與 lexicon 的 toeic 旗標
+  修改：只取詞條、轉小寫
 
-- NGSL（New General Service List）1.2
+- NGSL（New General Service List）1.2，Browne, C., Culligan, B., Phillips, J.
   授權：CC BY-SA 4.0
-  來源：待補
-  使用範圍：待補
+  來源：https://www.newgeneralservicelist.com/new-general-service-list（NGSL_12_stats.csv）
+  使用範圍：data/sources/ngsl-tsl/flags.json 與 lexicon 的 ngsl 旗標
+  修改：只取詞條、轉小寫
 
-- ECDICT
-  授權：MIT
-  來源：https://github.com/skywind3000/ECDICT
-  使用範圍：待補（衍生資料經 OpenCC s2twp 轉台灣繁體）
+- ECDICT，Copyright (c) 2025 Linwei
+  授權：MIT（全文見 data/licenses/ECDICT-MIT.txt）
+  來源：https://github.com/skywind3000/ECDICT（commit bc015ed）
+  使用範圍：data/dict/（音標、釋義、詞形對照）與 lexicon 的 freqRank、glossZh
+  修改：中文釋義經 OpenCC s2twp 轉台灣正體（少數誤轉詞以 data/scripts/zh_fixups.tsv 修正）並截斷；丟棄 oxford、collins、tag 等欄；未使用 lemma.en.txt
 
 == 建置工具與執行期元件 ==
 
-- OpenCC（Apache-2.0）：https://github.com/BYVoid/OpenCC — 使用範圍：待補
+- OpenCC（Apache-2.0）：https://github.com/BYVoid/OpenCC — 使用範圍：建置時（data/scripts/）以 PyPI opencc 1.4.2 的 s2twp 轉換 ECDICT 釋義，不隨 app 散布；授權全文見 data/licenses/OpenCC-Apache-2.0.txt
 - Dexie.js（Apache-2.0）：https://github.com/dexie/Dexie.js — 使用範圍：本機 IndexedDB 資料層（app/src/data/）
   NOTICE 原文：Copyright (c) 2014-2017 David Fahlander. Licensed under the Apache License, Version 2.0.
 - 其餘 npm 相依套件的授權見 app/package-lock.json 與各套件自身的授權檔
