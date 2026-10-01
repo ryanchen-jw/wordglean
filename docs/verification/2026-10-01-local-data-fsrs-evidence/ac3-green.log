@@ -1,0 +1,13 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-10-local-data-fsrs/app
+
+ ✓ src/data/db.test.ts > schema 版本 > 正式 v1 定義與凍結 fixture 一致 5ms
+ ✓ src/data/db.test.ts > schema 版本 > 全新開啟後各表可用 17ms
+ ✓ src/data/db.test.ts > migration：v1 → v2 升版不掉資料 > v1 寫入的全部資料在 v2 開啟後原樣保留 23ms
+ ✓ src/data/db.test.ts > migration：v1 → v2 升版不掉資料 > 正式 createDb 以目前版本開啟既有 v1 資料不變 7ms
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  22:17:05
+   Duration  644ms (setup 41%, import 34%, transform 13%, tests 11%, worker 1%)
+

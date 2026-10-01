@@ -6,6 +6,7 @@
 
 | 卡 | 類型 | commit | 自動化證據 | UI 走查 |
 |---|---|---|---|---|
+| TASK-10 | feat（本機資料層＋FSRS） | 見 git log「TASK-10」 | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
 | TASK-19 | feat（Supabase schema＋RLS） | 見 git log「TASK-19」 | pgTAP 74/74、HTTP smoke 8/8；突變（關 RLS／未上鎖新表／bytea 欄／TRUNCATE）皆轉紅 | N/A |
 | TASK-5 | feat（app 骨架） | 見 git log「TASK-5」 | lint／typecheck／unit 1/1；e2e 3 passed、1 skipped（workers=1）；突變（關 SW 註冊）→ 3 紅 | N/A（佔位頁，非 has-ui） |
 
@@ -34,4 +35,15 @@
 - **重跑**（Git Bash）：
   ```
   MSYS_NO_PATHCONV=1 npx --yes supabase@2.118.0 start && npx --yes supabase@2.118.0 db reset && npx --yes supabase@2.118.0 test db && bash supabase/tests/smoke-rls-http.sh && npx --yes supabase@2.118.0 stop
+  ```
+
+## TASK-10 · 本機資料層＋FSRS 排程
+
+- **改了什麼**：app/src/srs（ts-fsrs 5.4.2 封裝：retention 0.9、learning 1m/10m、relearning 10m 皆用內建參數、fuzz 關閉、log 可 reschedule 重播；裝置時區換日、每日新字額度、暫停門檻「待複習 > 每日新字×倍數」預設 10×10 可設定）＋app/src/data（Dexie 4.4.6 schema v1 五表、UTC epoch ms、入池／收藏同字一筆來源多重、作答紀錄）。NOTICE 補 Dexie 歸屬。
+- **驗收官實跑**（隔離、PASS）：typecheck／lint 綠；vitest 預設／TZ=UTC／TZ=Asia/Taipei 各 40 passed；build rc=0。驗收官自製突變：門檻 > 改 >=（1 紅）、learning 10m→5m（3 紅）、relearning（1 紅）、凍結 v1 少索引（守衛紅）。
+- **觀察（不擋）**：凍結 v1 守衛用 toMatchObject 比子集，「就地往 v1 加表」偵測不到；FsrsFields／ReviewEntry 7 欄重疊；3 處雙重轉型；真瀏覽器 IndexedDB 留 TASK-11 以 Playwright webkit 補驗。
+- **證據**：`docs/verification/2026-10-01-local-data-fsrs-evidence/`
+- **重跑**：
+  ```
+  cd app && npm run typecheck && npm run lint && TZ=UTC npx vitest run && TZ=Asia/Taipei npx vitest run
   ```

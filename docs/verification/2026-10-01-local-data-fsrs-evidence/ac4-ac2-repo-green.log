@@ -1,0 +1,21 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-10-local-data-fsrs/app
+
+ ✓ src/data/repo.test.ts > 收藏與課程字共用同一個池（AC#4） > 課程字再收藏：仍只有一筆，來源同時有課程與收藏 33ms
+ ✓ src/data/repo.test.ts > 收藏與課程字共用同一個池（AC#4） > 收藏字再進課程：仍只有一筆，來源多重 9ms
+ ✓ src/data/repo.test.ts > 收藏與課程字共用同一個池（AC#4） > 已學過的字被收藏，FSRS 狀態不重置 11ms
+ ✓ src/data/repo.test.ts > 收藏與課程字共用同一個池（AC#4） > 同字出現在兩個小課：課程來源累加、同一小課不重複；重複收藏保留首次時間 12ms
+ ✓ src/data/repo.test.ts > 收藏與課程字共用同一個池（AC#4） > 大小寫與前後空白視為同一字 7ms
+ ✓ src/data/repo.test.ts > 作答紀錄 > 寫入一筆 review log（uuid、作答前狀態），池紀錄同步更新 9ms
+ ✓ src/data/repo.test.ts > 作答紀錄 > 不在池中的字不可作答 5ms
+ ✓ src/data/repo.test.ts > 作答紀錄 > 待複習數不含尚未學的新字、不含未到期的字 7ms
+ ✓ src/data/repo.test.ts > 今日新字額度：跨時區換日（AC#2） > 預設設定：每日 10 字、暫停倍數 10 20ms
+ ✓ src/data/repo.test.ts > 今日新字額度：跨時區換日（AC#2） > UTC+8：台北已換到 10/02，只算 2 字 48ms
+ ✓ src/data/repo.test.ts > 今日新字額度：跨時區換日（AC#2） > UTC-5：波哥大仍是 10/01，算 5 字；換日後歸零 14ms
+ ✓ src/data/repo.test.ts > 今日新字額度：跨時區換日（AC#2） > 待複習超過門檻（依使用者設定）時暫停出新字 15ms
+
+ Test Files  1 passed (1)
+      Tests  12 passed (12)
+   Start at  22:20:21
+   Duration  896ms (setup 38%, tests 27%, transform 18%, import 16%, worker 1%)
+

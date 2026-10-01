@@ -1,10 +1,10 @@
 ---
 id: TASK-10
 title: 本機資料層＋FSRS 排程——單字池、收藏、每日新字上限
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 07:54'
+updated_date: '2026-10-01 14:43'
 labels:
   - app
 dependencies:
@@ -26,8 +26,14 @@ ordinal: 10000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 FSRS 封裝單元測試：新字→學習步驟→複習的完整狀態轉換、答錯重學、模擬 60 天作答的到期分布合理（無負間隔、無 NaN）
-- [ ] #2 每日新字上限與暫停門檻的單元測試，含跨時區換日（UTC+8 與 UTC-5 各一）
-- [ ] #3 DB migration 測試：v1→v2 升版不掉資料
-- [ ] #4 收藏既有課程字不重複建卡（同一字只有一筆池紀錄、來源可多重）
+- [x] #1 FSRS 封裝單元測試：新字→學習步驟→複習的完整狀態轉換、答錯重學、模擬 60 天作答的到期分布合理（無負間隔、無 NaN）
+- [x] #2 每日新字上限與暫停門檻的單元測試，含跨時區換日（UTC+8 與 UTC-5 各一）
+- [x] #3 DB migration 測試：v1→v2 升版不掉資料
+- [x] #4 收藏既有課程字不重複建卡（同一字只有一筆池紀錄、來源可多重）
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-01 驗收 PASS（隔離驗收官三時區實跑）。代決：AC#3 正式只有 v1、升版測試用凍結 fixture＋測試用 v2；收藏不另開表（word_pool.favoritedAt＋courseRefs）；取消收藏留 TASK-16；UTC-5 用 America/Bogota（美東 10 月為 UTC-4）並加紐約冬令；wordId 暫定小寫 headword；fuzz 關閉。選型：ts-fsrs 5.4.2（MIT）、dexie 4.4.6（Apache-2.0，NOTICE 已補）、fake-indexeddb 6.2.5（測試用）；context7 未登入→查 npm（偏離）。觀察：凍結 v1 守衛抓不到就地加表（toMatchObject 子集比對），留待 TASK-11 或後續順手收緊。
+<!-- SECTION:NOTES:END -->

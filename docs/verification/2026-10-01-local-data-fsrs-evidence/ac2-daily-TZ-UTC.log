@@ -1,0 +1,21 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-10-local-data-fsrs/app
+
+ ✓ src/srs/daily.test.ts > localDayKey：以使用者時區換日 > UTC+8（Asia/Taipei）：UTC 16:00 換日 34ms
+ ✓ src/srs/daily.test.ts > localDayKey：以使用者時區換日 > UTC-5（America/Bogota）：UTC 05:00 換日 1ms
+ ✓ src/srs/daily.test.ts > localDayKey：以使用者時區換日 > UTC-5（America/New_York 冬令）：UTC 05:00 換日 1ms
+ ✓ src/srs/daily.test.ts > localDayKey：以使用者時區換日 > 同一瞬間在兩個時區屬於不同日 1ms
+ ✓ src/srs/daily.test.ts > dayBoundsUtc：本地日界轉 UTC（半開區間） > Asia/Taipei 2026-10-02 2ms
+ ✓ src/srs/daily.test.ts > dayBoundsUtc：本地日界轉 UTC（半開區間） > America/Bogota 2026-10-02 1ms
+ ✓ src/srs/daily.test.ts > dayBoundsUtc：本地日界轉 UTC（半開區間） > America/New_York 夏令結束日 2026-11-01 有 25 小時 1ms
+ ✓ src/srs/daily.test.ts > dayBoundsUtc：本地日界轉 UTC（半開區間） > Australia/Sydney 夏令開始日 2026-10-04 有 23 小時（UTC 以東、午夜在切換前） 1ms
+ ✓ src/srs/daily.test.ts > newWordQuota：每日新字上限與暫停門檻 > 未達上限：剩餘＝上限－今日已出 1ms
+ ✓ src/srs/daily.test.ts > newWordQuota：每日新字上限與暫停門檻 > 已達或超過上限：剩餘 0，不為負 0ms
+ ✓ src/srs/daily.test.ts > newWordQuota：每日新字上限與暫停門檻 > 待複習＝上限×10 時不暫停；超過 1 筆即暫停 0ms
+ ✓ src/srs/daily.test.ts > newWordQuota：每日新字上限與暫停門檻 > 暫停倍數可設定 0ms
+
+ Test Files  1 passed (1)
+      Tests  12 passed (12)
+   Start at  14:13:20
+   Duration  1.75s (setup 83%, transform 9%, tests 6%, worker 1%, import 1%)
+

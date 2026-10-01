@@ -1,0 +1,20 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-10-local-data-fsrs/app
+
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > 新字的初始狀態 6ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > 新字答 Again → 學習中，1 分鐘後到期 1ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > 新字答 Good → 學習中，10 分鐘後到期；再 Good → 畢業進複習，間隔 ≥ 1 天 1ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > 複習中答錯 → 重學，10 分鐘後到期、遺忘次數 +1；重學後 Good → 回到複習 1ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > review log 記錄作答前狀態與作答時間 1ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > replay：以 review log 重播得到與逐次作答相同的卡片狀態（TASK-20 依賴） 2ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：狀態轉換（規格 §7：學習步驟 1m／10m、重學 10m） > replay：沒有紀錄時回到新字 1ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：模擬 60 天作答的到期分布 > 所有卡片與紀錄的數值有限、無 NaN 96ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：模擬 60 天作答的到期分布 > 無負間隔：每張卡的下次到期都不早於上次作答 4ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：模擬 60 天作答的到期分布 > 一律答 Good 的字，複習間隔逐次拉長 1ms
+ ✓ src/srs/scheduler.test.ts > FSRS 封裝：模擬 60 天作答的到期分布 > 到期日分散，不擠在同一天 0ms
+
+ Test Files  1 passed (1)
+      Tests  11 passed (11)
+   Start at  22:05:22
+   Duration  2.13s (setup 67%, transform 15%, tests 12%, import 5%, worker 1%)
+
