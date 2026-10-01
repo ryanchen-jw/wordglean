@@ -97,3 +97,18 @@
   ```
   npm test --prefix content && node content/scripts/validate-curriculum.mjs
   ```
+
+## TASK-3 · 設計 R2——設計系統＋高保真畫面 v1.0 定版
+
+- **改了什麼**：`docs/design/v1.0/`（審閱頁 review.html／review.src.html＋build_review.py、components.md、self-review.md、icons/）：14 畫面、41 狀態、143 圖示；`app/src/design/` tokens.css＋theme.css（Tailwind 4 `@theme inline`，淺／深兩色系）＋對比度測試；`app/src/index.css` 引入、`App.tsx` text-lg→text-body、PWA theme_color 改設計底色。創辦人 G2 兩輪 14 畫面全 OK 後定版。
+- **驗收官實跑**（隔離，第一輪 FAIL→補件後 PASS）：
+  - 第一輪：lint／typecheck／build exit 0；test 83 passed；tokens 測試 43 綠、單邊突變（淺色 hint 改淺）2 紅後還原；清單外實際用到的色對另算皆 ≥4.5；兩引擎各 40 張截圖破版 0、<44px 0。**FAIL 一條**：範圍要求的「模型下載中」狀態在第二輪被移除（Kokoro 改選配時一起拿掉，但 Moonshine 仍需下載）。
+  - 補件（afa0f77）：s04 新增「語音辨識模型下載中」（進度 42%、錄音鈕停用、可跳過）；複驗以 git archive 重建審閱頁與提交版逐位元組相同；兩引擎各 41 張、新截圖目視無破版；diff 只限設計檔與截圖。**PASS**。
+- **未補**（執行長裁示，本機記憶體不足）：最終版只有淺色兩引擎；深色（chromium／webkit）、chromium 特大字級沿用第一輪修改前畫面；webkit 特大字級兩輪皆未拍。
+- **觀察（交 TASK-11）**：間距無 `--lg-space` token（沿用 Tailwind 4px 基準）；s07-right 的「meeting」查字標示疑似示範殘留；兩組 metrics.tsv 為同一 blob（值全 0，無法證明分別量測）。
+- **證據**：`docs/verification/2026-10-02-task-3-design-v1-evidence/`（shots-r2b 最終版、shots 第一輪深色／特大、tokens 紅綠 log、app 檢查 log）
+- **重跑**：
+  ```
+  cd app && npm run lint && npm run typecheck && npm test && npm run build
+  PYTHONUTF8=1 python docs/design/v1.0/build_review.py   # 與提交的 review.html cmp 應相同
+  ```
