@@ -2,7 +2,7 @@
 function App() {
   return (
     <main className="flex min-h-dvh items-center justify-center p-6">
-      <p data-testid="app-placeholder" className="text-lg">
+      <p data-testid="app-placeholder" className="text-body">
         LinguaApp 骨架建置中
       </p>
     </main>

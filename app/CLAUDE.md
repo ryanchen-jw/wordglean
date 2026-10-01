@@ -26,7 +26,9 @@ app/
 ├── src/
 │   ├── App.tsx          佔位頁（設計定版 TASK-3 前不做畫面）
 │   ├── main.tsx         進入點
-│   ├── index.css        Tailwind 進入點（@import 'tailwindcss'）
+│   ├── index.css        Tailwind 進入點（tailwindcss＋design/tokens.css＋design/theme.css）
+│   ├── design/          設計 tokens（tokens.css 唯一數值來源、theme.css 接 Tailwind 4 @theme、
+│   │                    tokens.test.ts 守 WCAG AA）；規格見 ../docs/design/
 │   ├── *.test.tsx       單元測試與受測檔放在一起
 │   └── test/setup.ts    Vitest 共用設定（jest-dom matchers）
 ├── e2e/                 Playwright 測試

@@ -1,0 +1,137 @@
+/*
+ * LinguaApp 設計 tokens（TASK-3 設計 R2）——設計數值的唯一來源。
+ * 純 CSS 變數（--lg-*）：app 經 theme.css 接成 Tailwind 工具類別；設計審閱頁直接內嵌本檔。
+ * 色彩組合的 WCAG AA 由 tokens.test.ts 守門，改色後跑 `npm test`。
+ *
+ * 切換屬性（掛在 <html>）：
+ *   data-theme="light|dark"    不設＝跟隨系統
+ *   data-text-size="lg|xl"     不設＝標準；以根字級等比放大（rem）
+ *
+ * 字體自 host（TASK-11）：@fontsource-variable/noto-sans-tc、plus-jakarta-sans、noto-sans。
+ */
+
+:root {
+  /* 色彩：紙感米底＋深藍主色（R1 方向 A） */
+  --lg-bg: #f6f1e7;
+  --lg-surface: #fffcf5;
+  --lg-primary-soft: #e3e9f2;
+  --lg-text: #1e2329;
+  --lg-muted: #595e66;
+  --lg-line: #e3dccd;
+  --lg-border: #8f8778;
+  --lg-primary: #22467a;
+  --lg-on-primary: #ffffff;
+  --lg-focus: #22467a;
+  --lg-correct: #2c6b3f;
+  --lg-correct-bg: #e4f0e4;
+  --lg-error: #a23a2c;
+  --lg-error-bg: #f7e3de;
+  --lg-hint: #7d5700;
+  --lg-hint-bg: #f6ebcf;
+  --lg-disabled-bg: #ebe5d8;
+  --lg-disabled-text: #8c877d;
+  --lg-scrim: rgb(30 35 41 / 45%);
+
+  /* 字體 */
+  --lg-font-ui: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif;
+  --lg-font-heading: var(--lg-font-ui);
+  --lg-font-zh-tr: var(--lg-font-ui);
+  --lg-font-en: 'Plus Jakarta Sans', 'Noto Sans TC', system-ui, sans-serif;
+  --lg-font-ipa: 'Noto Sans', 'Segoe UI', 'Lucida Sans Unicode', sans-serif;
+
+  /* 字級階（rem；中文內文 17px） */
+  --lg-text-caption: 0.8125rem;
+  --lg-text-secondary: 0.9375rem;
+  --lg-text-body: 1.0625rem;
+  --lg-text-content: 1.1875rem;
+  --lg-text-title-sm: 1.25rem;
+  --lg-text-title: 1.5rem;
+  --lg-text-display: 2.125rem;
+  --lg-leading-body: 1.7;
+  --lg-leading-content: 1.5;
+  --lg-leading-title: 1.3;
+
+  /* 圓角（R1b 方向 3） */
+  --lg-radius-card: 20px;
+  --lg-radius-control: 14px;
+  --lg-radius-chip: 999px;
+  --lg-radius-sheet: 28px;
+
+  /* 陰影：幾乎不用；只有浮在內容上的彈層與 Toast */
+  --lg-shadow-sheet: 0 -4px 24px rgb(30 35 41 / 12%);
+  --lg-shadow-toast: 0 4px 16px rgb(30 35 41 / 16%);
+
+  /* 動效：只有按下回饋與答對／翻卡 */
+  --lg-duration-press: 100ms;
+  --lg-duration-feedback: 200ms;
+  --lg-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --lg-press-scale: 0.97;
+}
+
+:root[data-theme='dark'] {
+  --lg-bg: #1b1a17;
+  --lg-surface: #25231f;
+  --lg-primary-soft: #263247;
+  --lg-text: #ece6da;
+  --lg-muted: #aba394;
+  --lg-line: #3a3731;
+  --lg-border: #7a7366;
+  --lg-primary: #9db8e3;
+  --lg-on-primary: #14223a;
+  --lg-focus: #9db8e3;
+  --lg-correct: #8fcb9b;
+  --lg-correct-bg: #1e3324;
+  --lg-error: #f0a296;
+  --lg-error-bg: #3b2420;
+  --lg-hint: #e3c075;
+  --lg-hint-bg: #352c18;
+  --lg-disabled-bg: #2e2c27;
+  --lg-disabled-text: #77716a;
+  --lg-scrim: rgb(0 0 0 / 60%);
+  --lg-shadow-sheet: 0 -4px 24px rgb(0 0 0 / 40%);
+  --lg-shadow-toast: 0 4px 16px rgb(0 0 0 / 45%);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --lg-bg: #1b1a17;
+    --lg-surface: #25231f;
+    --lg-primary-soft: #263247;
+    --lg-text: #ece6da;
+    --lg-muted: #aba394;
+    --lg-line: #3a3731;
+    --lg-border: #7a7366;
+    --lg-primary: #9db8e3;
+    --lg-on-primary: #14223a;
+    --lg-focus: #9db8e3;
+    --lg-correct: #8fcb9b;
+    --lg-correct-bg: #1e3324;
+    --lg-error: #f0a296;
+    --lg-error-bg: #3b2420;
+    --lg-hint: #e3c075;
+    --lg-hint-bg: #352c18;
+    --lg-disabled-bg: #2e2c27;
+    --lg-disabled-text: #77716a;
+    --lg-scrim: rgb(0 0 0 / 60%);
+    --lg-shadow-sheet: 0 -4px 24px rgb(0 0 0 / 40%);
+    --lg-shadow-toast: 0 4px 16px rgb(0 0 0 / 45%);
+    color-scheme: dark;
+  }
+}
+
+/* App 內三段字級（iPhone 網頁不跟系統字級） */
+html[data-text-size='lg'] {
+  font-size: 112.5%;
+}
+html[data-text-size='xl'] {
+  font-size: 125%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --lg-duration-press: 0ms;
+    --lg-duration-feedback: 0ms;
+    --lg-press-scale: 1;
+  }
+}

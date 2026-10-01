@@ -1,0 +1,44 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-2-design-r1/app
+
+ ❯ src/design/tokens.test.ts (43 tests | 1 failed) 31ms
+   ❯ tokens.css 色彩組合全部通過 WCAG AA (41)
+     × 跟隨系統的深色與手動深色是同一組色碼 13ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/design/tokens.test.ts > tokens.css 色彩組合全部通過 WCAG AA > 跟隨系統的深色與手動深色是同一組色碼
+AssertionError: expected { bg: '#1b1a17', …(17) } to deeply equal { bg: '#1b1a17', …(17) }
+
+- Expected
++ Received
+
+@@ -1,10 +1,10 @@
+  {
+    "bg": "#1b1a17",
+    "border": "#7a7366",
+    "correct": "#8fcb9b",
+-   "correct-bg": "#1e3324",
++   "correct-bg": "#1e3325",
+    "disabled-bg": "#2e2c27",
+    "disabled-text": "#77716a",
+    "error": "#f0a296",
+    "error-bg": "#3b2420",
+    "focus": "#9db8e3",
+
+ ❯ src/design/tokens.test.ts:88:26
+     86|
+     87|   it('跟隨系統的深色與手動深色是同一組色碼', () => {
+     88|     expect(darkBySystem).toEqual(dark)
+       |                          ^
+     89|   })
+     90| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 42 passed (43)
+   Start at  22:57:46
+   Duration  2.39s (environment 78%, setup 16%, transform 4%, tests 2%, import 1%)
+

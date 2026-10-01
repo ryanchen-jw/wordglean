@@ -1,0 +1,1094 @@
+<title>LinguaApp 設計 v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Noto+Sans:wght@400&display=swap">
+<style>
+/* ===== 設計 tokens：由 build_review.py 從 app/src/design/tokens.css 原封內嵌，唯一來源 ===== */
+/*__TOKENS__*/
+
+/* ===== 審閱頁外框（本身也用同一套 tokens，跟著外觀／字體／字級切換） ===== */
+/* 版面概念：上方工具列切換外觀／字體／字級；每個畫面一列「手機框＋狀態切換＋意見」 */
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--lg-bg); color: var(--lg-text); font-family: var(--lg-font-ui); font-size: var(--lg-text-body); line-height: var(--lg-leading-body); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 96px; display: grid; gap: 36px; }
+h1, h2, h3 { margin: 0; line-height: var(--lg-leading-title); text-wrap: balance; }
+h1 { font-family: var(--lg-font-heading); font-size: var(--lg-text-title); }
+h2 { font-family: var(--lg-font-heading); font-size: var(--lg-text-title-sm); }
+p { margin: 0; }
+.lede { color: var(--lg-muted); max-width: 42em; font-size: var(--lg-text-secondary); }
+.eyebrow { color: var(--lg-muted); font-size: var(--lg-text-caption); letter-spacing: .06em; }
+.steps { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; font-size: var(--lg-text-secondary); max-width: 44em; }
+.toolbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--lg-bg); border-bottom: 1px solid var(--lg-line); padding-block: 10px; display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: var(--lg-text-secondary); }
+.seg { display: inline-flex; align-items: center; gap: 8px; }
+.seg-label { color: var(--lg-muted); font-size: var(--lg-text-caption); }
+.seg-btns { display: inline-flex; border: 1px solid var(--lg-border); border-radius: 999px; overflow: hidden; }
+.seg-btns button { font: inherit; font-size: var(--lg-text-caption); min-height: 44px; padding: 0 12px; border: 0; background: transparent; color: var(--lg-text); cursor: pointer; }
+.seg-btns button[aria-pressed="true"] { background: var(--lg-primary); color: var(--lg-on-primary); font-weight: 700; }
+.done { margin-left: auto; color: var(--lg-muted); }
+.done strong { color: var(--lg-text); font-variant-numeric: tabular-nums; }
+.banner { border: 1px solid var(--lg-error); color: var(--lg-error); background: var(--lg-error-bg); border-radius: 12px; padding: 12px 16px; font-size: var(--lg-text-secondary); }
+section, .shot-row { scroll-margin-top: 72px; }
+button:focus-visible, textarea:focus-visible, input:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--lg-focus); outline-offset: 2px; }
+
+/* 設計系統一覽 */
+.sys { display: grid; gap: 16px; }
+.sw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.sw { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 0 10px; align-items: center; font-size: var(--lg-text-caption); }
+.sw i { grid-row: span 2; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--lg-line); }
+.sw code { color: var(--lg-muted); font-size: 12px; }
+.type-scale { display: grid; gap: 6px; background: var(--lg-surface); border: 1px solid var(--lg-line); border-radius: var(--lg-radius-card); padding: 16px 20px; }
+.type-scale span { color: var(--lg-muted); font-size: var(--lg-text-caption); margin-right: 10px; }
+
+/* 每個畫面一列 */
+.shot-row { display: grid; grid-template-columns: minmax(0, 392px) minmax(0, 1fr); gap: 28px; align-items: start; padding-top: 28px; border-top: 1px solid var(--lg-line); }
+@media (max-width: 820px) { .shot-row { grid-template-columns: minmax(0, 1fr); } }
+.shot-info { display: grid; gap: 12px; min-width: 0; }
+.shot-info h2 span { color: var(--lg-muted); font-weight: 400; font-size: var(--lg-text-secondary); margin-left: 8px; }
+.states { display: flex; flex-wrap: wrap; gap: 8px; }
+.states button { font: inherit; font-size: var(--lg-text-caption); min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--lg-border); background: var(--lg-surface); color: var(--lg-text); cursor: pointer; }
+.states button[aria-pressed="true"] { background: var(--lg-primary-soft); border-color: var(--lg-primary); color: var(--lg-primary); font-weight: 700; }
+.notes { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; font-size: var(--lg-text-secondary); color: var(--lg-muted); }
+.verdict { display: grid; gap: 10px; border-top: 1px dashed var(--lg-line); padding-top: 14px; }
+.choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.choice { position: relative; }
+.choice input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.choice span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--lg-border); background: var(--lg-surface); font-size: var(--lg-text-secondary); }
+.choice input:checked + span { background: var(--lg-primary); border-color: var(--lg-primary); color: var(--lg-on-primary); font-weight: 700; }
+.choice input:focus-visible + span { outline: 3px solid var(--lg-focus); outline-offset: 2px; }
+textarea.cmt { width: 100%; min-height: 80px; font: inherit; font-size: var(--lg-text-secondary); color: var(--lg-text); background: var(--lg-surface); border: 1px solid var(--lg-border); border-radius: 12px; padding: 10px 12px; resize: vertical; }
+.save { font-size: var(--lg-text-caption); color: var(--lg-muted); min-height: 1.4em; }
+.save.bad { color: var(--lg-error); }
+.plain-btn { font: inherit; font-size: var(--lg-text-secondary); min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--lg-border); background: var(--lg-surface); color: var(--lg-text); cursor: pointer; }
+#copyOut { font-family: ui-monospace, Consolas, monospace; min-height: 160px; }
+
+/* ===== 手機框（390×844）與 App 畫面元件：類別名對應 docs/design/v1.0/components.md ===== */
+.phone { width: 390px; max-width: 100%; height: 844px; border-radius: 44px; border: 1px solid var(--lg-border); background: var(--lg-bg); color: var(--lg-text); overflow: hidden; display: flex; flex-direction: column; position: relative; font-family: var(--lg-font-ui); font-size: var(--lg-text-body); line-height: var(--lg-leading-body); }
+.ic { width: 20px; height: 20px; flex: none; }
+.ic-24 { width: 24px; height: 24px; }
+.sbar { height: 47px; flex: none; display: flex; align-items: flex-end; padding: 0 28px 6px; font-size: 15px; font-weight: 600; font-family: system-ui, sans-serif; }
+.home-ind { position: absolute; left: 50%; bottom: 8px; width: 134px; height: 5px; margin-left: -67px; border-radius: 3px; background: var(--lg-text); opacity: .85; pointer-events: none; }
+.a-head { flex: none; padding: 6px 20px 10px; display: grid; gap: 2px; }
+.a-head .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.a-title { font-family: var(--lg-font-heading); font-weight: 700; font-size: var(--lg-text-title); }
+.a-sub { color: var(--lg-muted); font-size: var(--lg-text-secondary); }
+.icon-btn { width: 44px; height: 44px; display: inline-grid; place-items: center; border: 0; background: transparent; color: var(--lg-text); border-radius: 12px; }
+.a-main { flex: 1; min-height: 0; overflow: auto; padding: 4px 20px 20px; display: grid; gap: 12px; align-content: start; }
+.a-foot { flex: none; padding: 12px 20px 34px; display: grid; gap: 10px; border-top: 1px solid var(--lg-line); background: var(--lg-bg); }
+.a-foot.row2 { grid-template-columns: 1fr 1.4fr; }
+.nav { flex: none; display: grid; grid-template-columns: repeat(3, 1fr); background: var(--lg-surface); border-top: 1px solid var(--lg-line); padding-bottom: 26px; }
+.nav span { display: grid; justify-items: center; gap: 2px; padding: 8px 0 4px; color: var(--lg-muted); font-size: var(--lg-text-caption); position: relative; }
+.nav span.on { color: var(--lg-primary); font-weight: 700; }
+.nav span.on::after { content: ""; position: absolute; bottom: 0; width: 20px; height: 4px; border-radius: 2px; background: var(--lg-primary); }
+
+.card { background: var(--lg-surface); border: 1px solid var(--lg-line); border-radius: var(--lg-radius-card); padding: 20px; display: grid; gap: 10px; min-width: 0; }
+.card.tight { padding: 16px; gap: 6px; }
+.card-h { font-family: var(--lg-font-heading); font-weight: 700; font-size: var(--lg-text-title-sm); }
+.label { color: var(--lg-muted); font-size: var(--lg-text-secondary); }
+.cap { color: var(--lg-muted); font-size: var(--lg-text-caption); }
+.num { font-size: var(--lg-text-display); font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.bento { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tile-link { display: flex; justify-content: space-between; align-items: flex-start; }
+.tile-link .ic { color: var(--lg-muted); }
+.list { display: grid; }
+.li { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 52px; border-bottom: 1px solid var(--lg-line); }
+.li:last-child { border-bottom: 0; }
+.li .r { color: var(--lg-muted); font-size: var(--lg-text-secondary); font-variant-numeric: tabular-nums; display: inline-flex; align-items: center; gap: 4px; }
+.en { font-family: var(--lg-font-en); }
+.zh-tr { font-family: var(--lg-font-zh-tr); }
+.ipa { font-family: var(--lg-font-ipa); color: var(--lg-muted); font-size: var(--lg-text-secondary); }
+.content { font-family: var(--lg-font-en); font-size: var(--lg-text-content); line-height: var(--lg-leading-content); }
+.tag { display: inline-flex; align-items: center; font-size: var(--lg-text-caption); line-height: 1; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--lg-border); color: var(--lg-muted); }
+.tag.pri { border-color: var(--lg-primary); color: var(--lg-primary); }
+
+.btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 52px; border-radius: var(--lg-radius-control); font: inherit; font-weight: 700; font-size: var(--lg-text-body); border: 1px solid transparent; cursor: pointer; transition: transform var(--lg-duration-press) var(--lg-ease), background-color var(--lg-duration-press) var(--lg-ease); }
+.btn:active { transform: scale(var(--lg-press-scale)); }
+.btn-pri { background: var(--lg-primary); color: var(--lg-on-primary); }
+.btn-sec { background: var(--lg-surface); color: var(--lg-primary); border-color: var(--lg-border); }
+.btn-danger { background: var(--lg-surface); color: var(--lg-error); border-color: var(--lg-border); }
+.btn-dis { background: var(--lg-disabled-bg); color: var(--lg-disabled-text); cursor: not-allowed; }
+.btn-text { display: flex; align-items: center; gap: 6px; min-height: 44px; color: var(--lg-primary); font-weight: 500; background: none; border: 0; padding: 0; font: inherit; }
+
+.lbar { display: flex; align-items: center; gap: 10px; }
+.prog { flex: 1; height: 6px; border-radius: 3px; background: var(--lg-line); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--lg-primary); border-radius: 3px; }
+.prog.err i { background: var(--lg-error); }
+.pcount { font-size: var(--lg-text-caption); color: var(--lg-muted); font-variant-numeric: tabular-nums; }
+
+.qtype { color: var(--lg-muted); font-size: var(--lg-text-secondary); }
+.play { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; background: var(--lg-primary-soft); color: var(--lg-primary); border: 0; margin: 4px auto 0; }
+.play .ic { width: 30px; height: 30px; }
+.center { text-align: center; justify-items: center; }
+.field { width: 100%; min-height: 96px; border: 1px solid var(--lg-border); border-radius: var(--lg-radius-control); background: var(--lg-surface); padding: 12px 14px; font-family: var(--lg-font-en); font-size: var(--lg-text-content); line-height: var(--lg-leading-content); color: var(--lg-text); }
+.field.focus { outline: 3px solid var(--lg-focus); outline-offset: 1px; }
+.field .ph { color: var(--lg-muted); font-family: var(--lg-font-ui); font-size: var(--lg-text-secondary); }
+.opt { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 10px 14px; border: 1px solid var(--lg-border); border-radius: var(--lg-radius-control); background: var(--lg-surface); }
+.opt b { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-size: var(--lg-text-caption); font-weight: 600; color: var(--lg-muted); border: 1px solid var(--lg-border); flex: none; font-family: var(--lg-font-ui); }
+.opt .t { flex: 1; min-width: 0; }
+.opt.sel { border: 2px solid var(--lg-primary); padding: 9px 13px; }
+.opt.sel b { background: var(--lg-primary); color: var(--lg-on-primary); border-color: var(--lg-primary); }
+.opt.ok { border: 2px solid var(--lg-correct); background: var(--lg-correct-bg); padding: 9px 13px; }
+.opt.ok b, .opt.ok > .ic { color: var(--lg-correct); border-color: var(--lg-correct); }
+.opt.no { border: 2px solid var(--lg-error); background: var(--lg-error-bg); padding: 9px 13px; }
+.opt.no b, .opt.no > .ic { color: var(--lg-error); border-color: var(--lg-error); }
+.opt.dim { border-color: var(--lg-line); color: var(--lg-disabled-text); }
+
+.fb { border-radius: var(--lg-radius-control); padding: 12px 14px; display: grid; gap: 4px; font-size: var(--lg-text-secondary); }
+.fb strong { display: flex; align-items: center; gap: 6px; font-size: var(--lg-text-body); }
+.fb .x { color: var(--lg-text); }
+.fb.ok { background: var(--lg-correct-bg); color: var(--lg-correct); }
+.fb.no { background: var(--lg-error-bg); color: var(--lg-error); }
+.fb.hint { background: var(--lg-hint-bg); color: var(--lg-hint); }
+.mark-err { color: var(--lg-error); background: var(--lg-error-bg); text-decoration: underline 2px; text-underline-offset: 3px; border-radius: 3px; padding: 0 2px; }
+.mark-miss { color: var(--lg-error); letter-spacing: .05em; }
+
+.rec-wrap { display: grid; justify-items: center; gap: 8px; padding-top: 8px; }
+.rec { width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; border: 0; background: var(--lg-primary); color: var(--lg-on-primary); }
+.rec .ic { width: 30px; height: 30px; }
+.rec.on { background: var(--lg-error); box-shadow: 0 0 0 6px var(--lg-error-bg), 0 0 0 8px var(--lg-error); }
+.rec.busy { background: var(--lg-disabled-bg); color: var(--lg-disabled-text); }
+.rec.denied { background: var(--lg-surface); color: var(--lg-error); border: 2px solid var(--lg-error); }
+.wave { display: flex; align-items: flex-end; gap: 3px; height: 22px; }
+.wave i { width: 4px; border-radius: 2px; background: var(--lg-error); }
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
+
+.flash { text-align: center; justify-items: center; gap: 8px; padding: 28px 20px; }
+.flash .w { font-family: var(--lg-font-en); font-size: var(--lg-text-display); font-weight: 600; line-height: 1.15; }
+.flash .meta { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; }
+.rate { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.rate button { min-height: 56px; border-radius: var(--lg-radius-control); border: 1px solid var(--lg-border); background: var(--lg-surface); color: var(--lg-text); font: inherit; font-weight: 700; font-size: var(--lg-text-secondary); display: grid; place-items: center; line-height: 1.25; padding: 6px 2px; }
+.rate small { color: var(--lg-muted); font-weight: 400; font-size: var(--lg-text-caption); }
+.rate .good { background: var(--lg-primary); border-color: var(--lg-primary); color: var(--lg-on-primary); }
+.rate .good small { color: var(--lg-on-primary); }
+
+.scrim { position: absolute; inset: 0; background: var(--lg-scrim); }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; background: var(--lg-surface); border-radius: var(--lg-radius-sheet) var(--lg-radius-sheet) 0 0; box-shadow: var(--lg-shadow-sheet); padding: 10px 20px 40px; display: grid; gap: 12px; }
+.grab { width: 36px; height: 4px; border-radius: 2px; background: var(--lg-border); justify-self: center; margin-bottom: 4px; }
+
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--lg-border); font-size: var(--lg-text-secondary); color: var(--lg-text); background: var(--lg-surface); }
+.chip.on { background: var(--lg-primary); color: var(--lg-on-primary); border-color: var(--lg-primary); font-weight: 700; }
+.chip.soft.on { background: var(--lg-primary-soft); color: var(--lg-primary); }
+.search { display: flex; align-items: center; gap: 8px; min-height: 48px; border: 1px solid var(--lg-border); border-radius: var(--lg-radius-control); background: var(--lg-surface); padding: 0 14px; color: var(--lg-muted); font-size: var(--lg-text-secondary); }
+.strip { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: var(--lg-radius-control); font-size: var(--lg-text-secondary); }
+.strip.hint { background: var(--lg-hint-bg); color: var(--lg-hint); }
+.empty { display: grid; justify-items: center; text-align: center; gap: 10px; padding: 48px 12px; }
+.empty .ic { width: 28px; height: 28px; color: var(--lg-muted); }
+
+.lv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.wordbox { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 12px; border: 1px solid var(--lg-border); border-radius: var(--lg-radius-control); background: var(--lg-surface); font-family: var(--lg-font-en); font-size: var(--lg-text-body); }
+.wordbox .box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lg-border); flex: none; display: grid; place-items: center; }
+.wordbox.on { border: 2px solid var(--lg-primary); background: var(--lg-primary-soft); padding: 0 11px; }
+.wordbox.on .box { background: var(--lg-primary); border-color: var(--lg-primary); color: var(--lg-on-primary); }
+.wordbox.on .box .ic { width: 16px; height: 16px; }
+.bars { display: grid; gap: 8px; }
+.bar-row { display: grid; grid-template-columns: 2.2em 1fr 3.4em; align-items: center; gap: 10px; font-size: var(--lg-text-secondary); font-variant-numeric: tabular-nums; }
+.bar-row .track { height: 10px; border-radius: 5px; background: var(--lg-line); overflow: hidden; }
+.bar-row .track i { display: block; height: 100%; background: var(--lg-primary); }
+.set-group { display: grid; gap: 0; }
+.set-h { font-size: var(--lg-text-caption); color: var(--lg-muted); letter-spacing: .04em; padding: 0 4px 6px; }
+.set-li { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 52px; padding: 0 16px; background: var(--lg-surface); border: 1px solid var(--lg-line); border-top-width: 0; }
+.set-h + .set-li { border-top-width: 1px; border-radius: 16px 16px 0 0; }
+.set-li:last-child { border-radius: 0 0 16px 16px; }
+.set-h + .set-li:last-child { border-radius: 16px; }
+.set-li .r { color: var(--lg-muted); font-size: var(--lg-text-secondary); display: inline-flex; align-items: center; gap: 4px; }
+.set-block { background: var(--lg-surface); border: 1px solid var(--lg-line); border-radius: 16px; padding: 16px; display: grid; gap: 10px; }
+.status-ok { color: var(--lg-correct); display: inline-flex; gap: 4px; align-items: center; font-weight: 700; }
+.err-line { color: var(--lg-error); font-size: var(--lg-text-secondary); display: flex; gap: 6px; align-items: center; }
+.toast { position: absolute; left: 16px; right: 16px; bottom: 104px; background: var(--lg-text); color: var(--lg-bg); border-radius: var(--lg-radius-control); box-shadow: var(--lg-shadow-toast); padding: 12px 14px; display: flex; align-items: center; gap: 8px; font-size: var(--lg-text-secondary); }
+.toast.top { bottom: auto; top: 59px; }
+.toast b { margin-left: auto; color: var(--lg-bg); text-decoration: underline; }
+.two-col { display: grid; gap: 6px; }
+.two-col .k { font-size: var(--lg-text-caption); color: var(--lg-muted); }
+.round2 { background: var(--lg-primary-soft); border-radius: var(--lg-radius-card); padding: 16px 20px; display: grid; gap: 8px; font-size: var(--lg-text-secondary); max-width: 46em; }
+.round2 ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.badge { display: inline-flex; align-items: center; margin-left: 10px; padding: 2px 10px; border-radius: 999px; font-size: var(--lg-text-caption); font-weight: 700; background: var(--lg-hint-bg); color: var(--lg-hint); vertical-align: middle; }
+.prev { border-left: 3px solid var(--lg-line); padding: 4px 0 4px 12px; color: var(--lg-muted); font-size: var(--lg-text-secondary); }
+.tw { border-radius: 4px; }
+.tw.on { background: var(--lg-primary-soft); box-shadow: inset 0 -2px 0 var(--lg-primary); }
+.tip { color: var(--lg-muted); font-size: var(--lg-text-caption); }
+.dialog { position: absolute; left: 20px; right: 20px; top: 50%; transform: translateY(-50%); background: var(--lg-surface); border-radius: var(--lg-radius-card); box-shadow: var(--lg-shadow-sheet); padding: 24px 20px 20px; display: grid; gap: 12px; }
+.chk { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: var(--lg-text-secondary); }
+.chk .box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lg-border); display: grid; place-items: center; flex: none; }
+.chk.on .box { background: var(--lg-primary); border-color: var(--lg-primary); color: var(--lg-on-primary); }
+.chk.on .box .ic { width: 16px; height: 16px; }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:10px">
+    <p class="eyebrow">TASK-3 設計・v1.0 定版（2026-10-02，創辦人 G2 兩輪圈選）</p>
+    <h1>LinguaApp 畫面設計 v1.0</h1>
+    <div class="round2" role="note">
+      <strong>第二輪：已依你的意見修改</strong>
+      <ul>
+        <li><b>4. 說（跟讀）</b>：辨識完先讓你確認或修改句子，按「送出」後才逐字比對計分；不再有「模型聽錯、不計分」。</li>
+        <li><b>7. 單字卡</b>：不再直接翻面看答案，改成從 4 個中文意思裡選一個，選完立刻告訴你對錯。</li>
+        <li><b>8. 查義</b>：改成全 App 規則——所有英文學習內容的單字都可以點來查意思（畫面 5、7、9 有示範）。</li>
+        <li><b>字體</b>：定為你選的「黑體」，襯線版已刪除。</li>
+        <li><b>發音</b>：預設用手機內建聲音；高音質發音改成設定裡的選配（畫面 3、11）。</li>
+        <li><b>新增 3 個畫面</b>：12 離開小課確認、13 清除資料二次確認、14 小課完成頁。</li>
+      </ul>
+      <p>上一輪已 OK 的畫面維持你的回覆；標「已修改，請再確認」與「新增」的畫面請再選一次。</p>
+    </div>
+    <ol class="steps">
+      <li>用上方工具列切換「外觀」「字級」，看看深色模式和放大字級的樣子。</li>
+      <li>每個畫面右邊有狀態按鈕，點了左邊的手機畫面會換成那個狀態。</li>
+      <li>每個畫面選「這個畫面 OK」或「要修改」，要修改就寫下想改什麼。你點的、寫的都會自動存下來。</li>
+    </ol>
+  </header>
+
+  <div class="toolbar" role="toolbar" aria-label="預覽設定">
+    <div class="seg"><span class="seg-label" id="lbTheme">外觀</span><span class="seg-btns" role="group" aria-labelledby="lbTheme" data-attr="data-theme"><button type="button" data-val="" aria-pressed="true">跟隨系統</button><button type="button" data-val="light" aria-pressed="false">淺色</button><button type="button" data-val="dark" aria-pressed="false">深色</button></span></div>
+    <div class="seg"><span class="seg-label" id="lbSize">字級</span><span class="seg-btns" role="group" aria-labelledby="lbSize" data-attr="data-text-size"><button type="button" data-val="" aria-pressed="true">標準</button><button type="button" data-val="lg" aria-pressed="false">大</button><button type="button" data-val="xl" aria-pressed="false">特大</button></span></div>
+    <span class="done" role="status">已回覆 <strong id="doneCount">0</strong>／14　<span id="dbState">連線儲存中…</span></span>
+  </div>
+
+  <div id="dbBanner" class="banner" hidden></div>
+
+  <section class="sys" aria-labelledby="sysHead">
+    <h2 id="sysHead">設計系統一覽</h2>
+    <p class="lede">所有畫面只用下面這些顏色、字級與圓角。顏色兩種外觀都通過無障礙對比標準（WCAG AA），由程式自動檢查。</p>
+    <div class="sw-grid" id="swatches"></div>
+    <div class="type-scale">
+      <div style="font-family:var(--lg-font-heading);font-weight:700;font-size:var(--lg-text-display);line-height:1.15"><span>34</span>今天的學習</div>
+      <div style="font-family:var(--lg-font-heading);font-weight:700;font-size:var(--lg-text-title)"><span>24</span>畫面標題</div>
+      <div style="font-family:var(--lg-font-heading);font-weight:700;font-size:var(--lg-text-title-sm)"><span>20</span>卡片標題</div>
+      <div class="content"><span>19</span>The meeting was postponed until Friday.</div>
+      <div style="font-size:var(--lg-text-body)"><span>17</span>中文內文：會議延到星期五。</div>
+      <div style="font-size:var(--lg-text-secondary)"><span>15</span>次要文字：約 6 分鐘</div>
+      <div style="font-size:var(--lg-text-caption)"><span>13</span>說明小字：資料來源 ECDICT</div>
+    </div>
+  </section>
+
+  <!-- ===================== s01 首頁 ===================== -->
+  <article class="shot-row" id="s01" data-screen="s01">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row"><span class="a-title">今天</span><span class="icon-btn" aria-label="設定">{{i:settings}}</span></div><span class="a-sub">B1｜約多益 275+</span></div>
+        <div class="a-main">
+          <div class="card"><div class="card-h">今天的學習</div><p class="label">先複習，再上一課・約 11 分鐘</p><button class="btn btn-pri" type="button">開始今天的學習</button></div>
+          <div class="bento">
+            <div class="card tight"><div class="tile-link"><span class="label">到期複習</span>{{i:chevron-right}}</div><span class="num">24</span><span class="cap">約 6 分鐘</span></div>
+            <div class="card tight"><div class="tile-link"><span class="label">下一課</span>{{i:chevron-right}}</div><span style="font-weight:700;line-height:1.35">辦公室 3<br>會議改期</span><span class="cap">約 5 分鐘・新字 8</span></div>
+          </div>
+          <div class="card tight"><span class="label">今天已完成</span><div style="display:flex;gap:20px;font-variant-numeric:tabular-nums"><span>複習 0／24</span><span>新課 0／1</span></div></div>
+        </div>
+        <div class="nav"><span class="on">{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span>{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="done" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row"><span class="a-title">今天</span><span class="icon-btn" aria-label="設定">{{i:settings}}</span></div><span class="a-sub">B1｜約多益 275+</span></div>
+        <div class="a-main">
+          <div class="card"><div style="display:flex;align-items:center;gap:8px;color:var(--lg-correct)">{{i:circle-check}}<span class="card-h" style="color:var(--lg-text)">今天的學習都完成了</span></div><p class="label">明天約有 18 個單字到期。</p><button class="btn btn-sec" type="button">再上一課（選用）</button></div>
+          <div class="card tight"><span class="label">今天已完成</span><div style="display:flex;gap:20px;font-variant-numeric:tabular-nums"><span>複習 24／24</span><span>新課 1／1</span></div></div>
+        </div>
+        <div class="nav"><span class="on">{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span>{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="paused" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row"><span class="a-title">今天</span><span class="icon-btn" aria-label="設定">{{i:settings}}</span></div><span class="a-sub">B1｜約多益 275+</span></div>
+        <div class="a-main">
+          <div class="card"><div class="card-h">今天的學習</div><p class="label">先把到期的單字複習完・約 30 分鐘</p><button class="btn btn-pri" type="button">開始複習</button></div>
+          <div class="bento">
+            <div class="card tight"><div class="tile-link"><span class="label">到期複習</span>{{i:chevron-right}}</div><span class="num">132</span><span class="cap">約 30 分鐘</span></div>
+            <div class="card tight" style="background:var(--lg-hint-bg);border-color:var(--lg-hint-bg);color:var(--lg-hint)"><span style="display:flex;gap:6px;align-items:center;font-weight:700">{{i:info}}新課暫停</span><span style="font-size:var(--lg-text-secondary);line-height:1.5">待複習超過 100 個，降回 100 以下會自動恢復</span></div>
+          </div>
+        </div>
+        <div class="nav"><span class="on">{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span>{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="first" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row"><span class="a-title">今天</span><span class="icon-btn" aria-label="設定">{{i:settings}}</span></div><span class="a-sub">還沒有分級</span></div>
+        <div class="a-main">
+          <div class="card"><div class="card-h">先花 5 分鐘找出你的起點</div><p class="label">勾出認識的單字，我們會推薦適合的級距。之後隨時可以在設定裡調整。</p><button class="btn btn-pri" type="button">開始分級測驗</button><button class="btn-text" type="button">跳過，從 A1 開始 {{i:chevron-right}}</button></div>
+        </div>
+        <div class="nav"><span class="on">{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span>{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="offline" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row"><span class="a-title">今天</span><span class="icon-btn" aria-label="設定">{{i:settings}}</span></div><span class="a-sub">B1｜約多益 275+</span></div>
+        <div class="a-main">
+          <div class="strip hint" role="status">{{i:wifi-off}}目前離線：複習與已下載的課程仍可使用</div>
+          <div class="card"><div class="card-h">今天的學習</div><p class="label">先複習，再上一課・約 11 分鐘</p><button class="btn btn-pri" type="button">開始今天的學習</button></div>
+          <div class="bento">
+            <div class="card tight"><div class="tile-link"><span class="label">到期複習</span>{{i:chevron-right}}</div><span class="num">24</span><span class="cap">約 6 分鐘</span></div>
+            <div class="card tight"><div class="tile-link"><span class="label">下一課</span>{{i:chevron-right}}</div><span style="font-weight:700;line-height:1.35">辦公室 3<br>會議改期</span><span class="cap">已下載・可離線上課</span></div>
+          </div>
+        </div>
+        <div class="nav"><span class="on">{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span>{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>1. 首頁「今天的學習」<span>模組卡版面</span></h2>
+      <div class="states" role="group" aria-label="首頁狀態"><button type="button" data-st="default" aria-pressed="true">預設</button><button type="button" data-st="done">今天都完成</button><button type="button" data-st="paused">複習太多、新課暫停</button><button type="button" data-st="first">第一次開啟</button><button type="button" data-st="offline">離線</button></div>
+      <ul class="notes"><li>一大卡放主要按鈕，兩張小卡顯示到期數和下一課，點小卡可直接進去。</li><li>只顯示今天做了多少，不顯示連續天數或分數。</li><li>新課暫停門檻：待複習超過每日新字數 ×10（預設 100）。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s02 課程地圖 ===================== -->
+  <article class="shot-row" id="s02" data-screen="s02">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><span class="a-title">課程</span></div>
+        <div class="a-main">
+          <div class="chips" role="tablist" aria-label="級距"><span class="chip">A1</span><span class="chip">A2</span><span class="chip on">B1</span><span class="chip">B2</span><span class="chip">C1</span></div>
+          <p class="label">B1｜約多益 275+</p>
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span class="card-h">辦公室</span><span class="cap">3／8 課</span></div>
+            <div class="list">
+              <div class="li"><span style="display:flex;gap:8px;align-items:center;color:var(--lg-correct)">{{i:circle-check}}<span style="color:var(--lg-text)">1　自我介紹與部門</span></span></div>
+              <div class="li"><span style="display:flex;gap:8px;align-items:center;color:var(--lg-correct)">{{i:circle-check}}<span style="color:var(--lg-text)">2　電話留言</span></span></div>
+              <div class="li" style="background:var(--lg-primary-soft);margin:0 -12px;padding:0 12px;border-radius:12px;border:0"><span style="display:flex;gap:8px;align-items:center;color:var(--lg-primary);font-weight:700">{{i:play}}3　會議改期</span><span class="r" style="color:var(--lg-primary)">目前這課</span></div>
+              <div class="li"><span style="padding-left:28px">4　請假與代理人</span></div>
+              <div class="li"><span style="padding-left:28px;color:var(--lg-muted)">5–8　展開</span></div>
+            </div>
+          </div>
+          <div class="card tight"><div style="display:flex;justify-content:space-between;align-items:center"><span class="card-h">旅行</span><span class="r cap" style="display:inline-flex;gap:4px;align-items:center">0／8 課 {{i:chevron-right}}</span></div></div>
+          <div class="card tight"><div style="display:flex;justify-content:space-between;align-items:center"><span class="card-h">飲食與聚餐</span><span class="r cap" style="display:inline-flex;gap:4px;align-items:center">0／6 課 {{i:chevron-right}}</span></div></div>
+        </div>
+        <div class="nav"><span>{{i24:sun}}今天</span><span class="on">{{i24:map}}課程</span><span>{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="detail" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><span class="a-title">課程</span></div>
+        <div class="a-main">
+          <div class="chips"><span class="chip">A1</span><span class="chip">A2</span><span class="chip on">B1</span><span class="chip">B2</span><span class="chip">C1</span></div>
+          <div class="card"><span class="card-h">辦公室</span></div>
+        </div>
+        <div class="scrim"></div>
+        <div class="sheet" role="dialog" aria-label="小課詳情">
+          <div class="grab"></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span class="card-h">辦公室 3｜會議改期</span><span class="cap">約 5 分鐘</span></div>
+          <p class="label">新字 8 個</p>
+          <p class="en" style="line-height:1.6">reschedule・postpone・agenda・attendee・confirm・venue・minutes・deadline</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="tag">聽 2</span><span class="tag">說 2</span><span class="tag">讀 3</span><span class="tag">寫 1</span></div>
+          <button class="btn btn-pri" type="button">開始這一課</button>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>2. 課程地圖</h2>
+      <div class="states" role="group" aria-label="課程地圖狀態"><button type="button" data-st="default" aria-pressed="true">預設</button><button type="button" data-st="detail">點開某一課</button></div>
+      <ul class="notes"><li>級距可自由切換、不鎖課；目前這課用淡藍底標示。</li><li>點課程從下方彈出詳情，開始鈕在最底部。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s03 聽 ===================== -->
+  <article class="shot-row" id="s03" data-screen="s03">
+    <div class="screens">
+      <div class="phone" data-state="type">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="5" aria-valuemax="12"><i style="width:42%"></i></div><span class="pcount">5／12</span></div></div>
+        <div class="a-main">
+          <div class="card center"><span class="qtype">聽音打字</span><p class="label">聽句子，把聽到的英文打出來</p><button class="play" type="button" aria-label="播放">{{i:volume-2}}</button><button class="btn-text" type="button">{{i:turtle}}慢速播放</button></div>
+          <div class="field focus">They moved the meeting to Friday|</div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">聽不出來</button><button class="btn btn-pri" type="button">檢查</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="wrong" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:42%"></i></div><span class="pcount">5／12</span></div></div>
+        <div class="a-main">
+          <div class="card center"><span class="qtype">聽音打字</span><button class="play" type="button" aria-label="再聽一次">{{i:volume-2}}</button></div>
+          <div class="field">They <span class="mark-err">move</span> the meeting to Friday</div>
+        </div>
+        <div class="a-foot"><div class="fb no" role="status"><strong>{{i:x}}差一點：move → moved</strong><span class="x en">They moved the meeting to Friday.</span><span class="x zh-tr">他們把會議改到星期五。</span></div><button class="btn btn-pri" type="button">繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="choice-right" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:50%"></i></div><span class="pcount">6／12</span></div></div>
+        <div class="a-main">
+          <div class="card center"><span class="qtype">聽音選答</span><button class="play" type="button" aria-label="播放">{{i:volume-2}}</button><p>他們決定怎麼處理會議？</p></div>
+          <div class="opt dim"><b>A</b><span class="t en">Cancel it</span></div>
+          <div class="opt ok"><b>B</b><span class="t en">Move it to Friday</span>{{i:check}}</div>
+          <div class="opt dim"><b>C</b><span class="t en">Hold it online</span></div>
+        </div>
+        <div class="a-foot"><div class="fb ok" role="status"><strong>{{i:check}}正確</strong><span class="x en">They decided to move the meeting to Friday.</span></div><button class="btn btn-pri" type="button">繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="voice" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="1" aria-valuemax="12"><i style="width:8%"></i></div><span class="pcount">1／12</span></div></div>
+        <div class="a-main">
+          <div class="card center"><span class="qtype">聽音打字</span><p class="label">聽句子，把聽到的英文打出來</p><button class="play" type="button" aria-label="播放">{{i:volume-2}}</button><span class="cap">手機內建聲音</span></div>
+          <div class="field"><span class="ph">把聽到的英文打在這裡</span></div>
+          <div class="strip hint">{{i:info}}<span>想要更自然的發音，可以到設定開啟「高音質發音」（選配）</span></div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">聽不出來</button><button class="btn btn-dis" type="button" disabled>檢查</button></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>3. 小課——聽<span>聽音打字／聽音選答</span></h2>
+      <div class="states" role="group" aria-label="聽題狀態"><button type="button" data-st="type" aria-pressed="true">作答中</button><button type="button" data-st="wrong">答錯</button><button type="button" data-st="choice-right">選答答對</button><button type="button" data-st="voice">手機內建聲音（預設）</button></div>
+      <ul class="notes"><li>答對、答錯都用「顏色＋圖示＋文字」，錯的字加底線。</li><li>回饋條出現在底部按鈕上方，拇指直接按「繼續」。</li><li>發音預設用手機內建聲音，不用下載；高音質發音是設定裡的選配（約 310MB，需 WebGPU）。只在第一次出現一行提示。</li><li>還沒輸入時「檢查」為停用。</li></ul>
+    </div>
+  </article>
+
+    <!-- ===================== s04 說 ===================== -->
+  <article class="shot-row" id="s04" data-screen="s04">
+    <div class="screens">
+      <div class="phone" data-state="idle">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main" style="align-content:center">
+          <div class="card"><span class="qtype">跟讀</span><p class="label">聽一次，再唸出這句</p><p class="content"><span class="tw">Could</span> <span class="tw">we</span> <span class="tw">push</span> <span class="tw">the</span> <span class="tw">meeting</span> <span class="tw">to</span> <span class="tw">next</span> <span class="tw">Monday</span>?</p><button class="btn-text" type="button">{{i:volume-2}}聽示範</button></div>
+        </div>
+        <div class="a-foot" style="border-top:0"><div class="rec-wrap"><button class="rec" type="button" aria-label="開始錄音">{{i:mic}}</button><span class="label">點一下開始錄音</span><button class="btn-text" type="button">現在不方便說話（這題先跳過）</button></div></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="recording" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main" style="align-content:center">
+          <div class="card"><span class="qtype">跟讀</span><p class="content">Could we push the meeting to next Monday?</p></div>
+        </div>
+        <div class="a-foot" style="border-top:0"><div class="rec-wrap"><div class="wave" aria-hidden="true"><i style="height:6px"></i><i style="height:12px"></i><i style="height:20px"></i><i style="height:14px"></i><i style="height:22px"></i><i style="height:10px"></i><i style="height:16px"></i><i style="height:6px"></i></div><button class="rec on" type="button" aria-label="結束錄音">{{i:square}}</button><span class="label" style="color:var(--lg-error);font-variant-numeric:tabular-nums">錄音中・0:03　點一下結束</span></div></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="busy" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main" style="align-content:center">
+          <div class="card"><span class="qtype">跟讀</span><p class="content">Could we push the meeting to next Monday?</p></div>
+        </div>
+        <div class="a-foot" style="border-top:0"><div class="rec-wrap"><button class="rec busy" type="button" disabled aria-busy="true" aria-label="辨識中"><span class="spin" style="display:grid">{{i:loader-circle}}</span></button><span class="label">轉文字中…（錄音不會上傳）</span></div></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="confirm" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main">
+          <div class="card tight two-col"><span class="k">目標句</span><p class="content"><span class="tw">Could</span> <span class="tw">we</span> <span class="tw">push</span> <span class="tw">the</span> <span class="tw">meeting</span> <span class="tw">to</span> <span class="tw">next</span> <span class="tw">Monday</span>?</p></div>
+          <div class="two-col"><label class="k" for="s04-said">你唸的句子（辨識結果，聽錯的地方可以直接改）</label><div class="field focus" id="s04-said" style="min-height:96px">Could we push the meetings to next|</div><span class="cap">確認沒問題再按「送出」，送出後才會計分。</span></div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">再唸一次</button><button class="btn btn-pri" type="button">送出</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="result" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main">
+          <div class="card tight two-col"><span class="k">目標句</span><p class="content"><span class="tw">Could</span> <span class="tw">we</span> <span class="tw">push</span> <span class="tw">the</span> <span class="tw">meeting</span> <span class="tw">to</span> <span class="tw">next</span> <span class="tw">Monday</span>?</p></div>
+          <div class="card tight two-col"><span class="k">你送出的句子</span><p class="content">Could we push the <span class="mark-err">meetings</span> to next <span class="mark-miss">＿＿</span>?</p><span class="cap" style="color:var(--lg-error)">錯字 1・漏字 1・得分 6／8 字</span></div>
+        </div>
+        <div class="a-foot"><div class="fb no" role="status"><strong>{{i:x}}差一點：meeting、Monday</strong><span class="x">再聽一次示範，注意單複數和句尾的星期。</span></div><div class="row2" style="display:grid;grid-template-columns:1fr 1.4fr;gap:10px"><button class="btn btn-sec" type="button">再唸一次</button><button class="btn btn-pri" type="button">繼續</button></div></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="denied" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main" style="align-content:center">
+          <div class="card"><span class="qtype">跟讀</span><p class="content">Could we push the meeting to next Monday?</p></div>
+        </div>
+        <div class="a-foot" style="border-top:0"><div class="rec-wrap"><button class="rec denied" type="button" aria-label="麥克風未允許">{{i:mic-off}}</button><span class="err-line">{{i:info}}需要麥克風才能跟讀</span><button class="btn btn-sec" type="button">允許麥克風</button><button class="btn-text" type="button">這題跳過</button></div></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="stt-download" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="7" aria-valuemax="12"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main" style="align-content:center">
+          <div class="card"><span class="qtype">跟讀</span><p class="label">聽一次，再唸出這句</p><p class="content">Could we push the meeting to next Monday?</p><button class="btn-text" type="button">{{i:volume-2}}聽示範</button></div>
+          <div class="set-block" role="status"><div style="display:flex;justify-content:space-between;align-items:center"><span style="display:flex;gap:6px;align-items:center;font-weight:700">{{i:download}}語音辨識模型下載中</span><span class="pcount">42%</span></div><div class="prog" role="progressbar" aria-valuenow="42" aria-valuemax="100"><i style="width:42%"></i></div><p class="cap">約 50–80MB，只需下載一次，之後不用網路也能跟讀。下載時可以先做別題，下載會在背景繼續。</p></div>
+        </div>
+        <div class="a-foot" style="border-top:0"><div class="rec-wrap"><button class="rec busy" type="button" disabled aria-label="語音辨識模型下載中，暫時無法錄音">{{i:mic}}</button><span class="label">模型下載完才能錄音</span><button class="btn-text" type="button">先跳過這題</button></div></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>4. 小課——說<span>跟讀</span><em class="badge">已修改，請再確認</em></h2>
+      <div class="states" role="group" aria-label="跟讀狀態"><button type="button" data-st="idle" aria-pressed="true">待錄</button><button type="button" data-st="recording">錄音中</button><button type="button" data-st="busy">辨識中</button><button type="button" data-st="confirm">辨識完：確認或修改</button><button type="button" data-st="result">送出後：逐字比對</button><button type="button" data-st="denied">未允許麥克風</button><button type="button" data-st="stt-download">語音辨識模型下載中</button></div>
+      <ul class="notes"><li>依你的意見：辨識完先顯示可修改的句子，你確認或改好後按「送出」，才用送出的句子逐字比對計分。</li><li>辨識結果和你送出的句子有什麼不同，只在背景記錄，畫面上不強調。</li><li>點一下開始、再點一下結束錄音；錄音鈕在下方三分之一正中。</li><li>第一次跟讀前要下載語音辨識模型（約 50–80MB）：下載中錄音鈕停用並顯示進度，可以先跳過這題。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s05 讀 ===================== -->
+  <article class="shot-row" id="s05" data-screen="s05">
+    <div class="screens">
+      <div class="phone" data-state="mc-wrong">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:25%"></i></div><span class="pcount">3／12</span></div></div>
+        <div class="a-main">
+          <div class="card"><span class="qtype">選出最適合的字</span><p class="content">The client asked us to ______ the launch until May.</p></div>
+          <div class="opt ok"><b>A</b><span class="t en">postpone</span>{{i:check}}</div>
+          <div class="opt no"><b>B</b><span class="t en">promote</span>{{i:x}}</div>
+          <div class="opt dim"><b>C</b><span class="t en">propose</span></div>
+          <div class="opt dim"><b>D</b><span class="t en">protect</span></div>
+        </div>
+        <div class="a-foot"><div class="fb no" role="status"><strong>{{i:x}}答案是 A：postpone</strong><span class="x">postpone＝延後；promote＝推廣、升遷。</span></div><button class="btn btn-pri" type="button">繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="reading" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main">
+          <div class="card tight" style="max-height:220px;overflow:auto"><span class="qtype">閱讀理解</span><p class="content"><span class="tw">Dear</span> <span class="tw">team</span>, <span class="tw">due</span> <span class="tw">to</span> <span class="tw">the</span> <span class="tw">public</span> <span class="tw">holiday</span>, <span class="tw">our</span> <span class="tw">weekly</span> <span class="tw">meeting</span> <span class="tw">will</span> <span class="tw">be</span> <span class="tw">moved</span> <span class="tw">from</span> <span class="tw">Monday</span> <span class="tw">to</span> <span class="tw">Tuesday</span> <span class="tw">at</span> 10 <span class="tw">a</span>.<span class="tw">m</span>. <span class="tw">Please</span> <span class="tw">update</span> <span class="tw">your</span> <span class="tw">calendars</span> <span class="tw">and</span> <span class="tw">send</span> <span class="tw">any</span> <span class="tw">agenda</span> <span class="tw">items</span> <span class="tw">to</span> <span class="tw">Jenny</span> <span class="tw">by</span> <span class="tw">Friday</span>.</p></div>
+          <span class="tip" style="margin-top:-4px">英文字都可以點，查看意思</span>
+          <p style="font-weight:700">1／2　為什麼要改期？</p>
+          <div class="opt sel"><b>A</b><span class="t">因為國定假日</span></div>
+          <div class="opt"><b>B</b><span class="t">因為客戶要求</span></div>
+          <div class="opt"><b>C</b><span class="t">因為會議室被借走</span></div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">看中文翻譯</button><button class="btn btn-pri" type="button">檢查</button></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>5. 小課——讀<span>選擇題／閱讀理解</span></h2>
+      <div class="states" role="group" aria-label="讀題狀態"><button type="button" data-st="mc-wrong" aria-pressed="true">選擇題答錯</button><button type="button" data-st="reading">閱讀理解作答中</button></div>
+      <ul class="notes"><li>答錯時同時標出你選的（✗）和正確答案（✓）。</li><li>短文裡每個英文字都可以點來查意思（全 App 規則，見畫面 8）；前三次上課會在短文下方顯示一行小字提示。</li><li>作答前選項本身不能點來查義（點選項＝選它）；按「檢查」之後選項裡的字也可以點。</li><li>短文過長時在卡片內自己捲動，選項永遠看得到。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s06 寫 ===================== -->
+  <article class="shot-row" id="s06" data-screen="s06">
+    <div class="screens">
+      <div class="phone" data-state="input">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:92%"></i></div><span class="pcount">11／12</span></div></div>
+        <div class="a-main">
+          <div class="card"><span class="qtype">中翻英</span><p class="zh-tr" style="font-size:var(--lg-text-title-sm);line-height:1.5">我們可以把會議延到下週一嗎？</p><span class="cap">提示字：<span class="en">postpone</span></span></div>
+          <div class="field focus">Can we postpone the meeting to next Monday?</div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">跳過</button><button class="btn btn-pri" type="button">送出批改</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="ai" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:92%"></i></div><span class="pcount">11／12</span></div></div>
+        <div class="a-main">
+          <div class="card tight two-col"><span class="k">你的句子</span><p class="content">Can we postpone the meeting <span class="mark-err">to</span> next Monday?</p></div>
+          <div class="card tight two-col" style="border-color:var(--lg-correct)"><span class="k">建議寫法</span><p class="content">Could we postpone the meeting <strong>until</strong> next Monday?</p></div>
+          <div class="card tight two-col"><span class="k">說明</span><ul style="margin:0;padding-left:1.2em;display:grid;gap:4px;font-size:var(--lg-text-secondary)"><li><span class="en">until</span> 表示「延到某時為止」，比 <span class="en">to</span> 自然。</li><li><span class="en">Could</span> 比 <span class="en">Can</span> 更客氣，適合職場請求。</li></ul><span class="cap">由你的 OpenRouter 帳號批改</span></div>
+        </div>
+        <div class="a-foot"><button class="btn btn-pri" type="button">我懂了，繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="nokey" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:92%"></i></div><span class="pcount">11／12</span></div></div>
+        <div class="a-main">
+          <div class="card tight two-col"><span class="k">你的句子</span><p class="content">Can we postpone the meeting to next Monday?</p></div>
+          <div class="card tight two-col"><span class="k">參考答案</span><p class="content">Could we postpone the meeting until next Monday?</p></div>
+          <p style="font-weight:700">跟參考答案比一比，意思一樣嗎？</p>
+          <div class="strip hint">{{i:info}}<span>設定 OpenRouter 帳號後可以用 AI 批改　<u>去設定</u></span></div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">我寫錯了</button><button class="btn btn-pri" type="button">我寫對了</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="fail" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:92%"></i></div><span class="pcount">11／12</span></div></div>
+        <div class="a-main">
+          <div class="card tight two-col"><span class="k">你的句子</span><p class="content">Can we postpone the meeting to next Monday?</p></div>
+          <div class="fb no" role="alert"><strong>{{i:circle-x}}AI 批改暫時無法使用</strong><span class="x">今日免費額度已用完。可以先對照參考答案，或到設定換一個模型。</span></div>
+          <div class="card tight two-col"><span class="k">參考答案</span><p class="content">Could we postpone the meeting until next Monday?</p></div>
+        </div>
+        <div class="a-foot row2"><button class="btn btn-sec" type="button">換模型</button><button class="btn btn-pri" type="button">繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>6. 小課——寫<span>中翻英／造句</span></h2>
+      <div class="states" role="group" aria-label="寫作狀態"><button type="button" data-st="input" aria-pressed="true">作答中</button><button type="button" data-st="ai">AI 批改結果</button><button type="button" data-st="nokey">沒有金鑰（降級）</button><button type="button" data-st="fail">批改失敗</button></div>
+      <ul class="notes"><li>沒有金鑰時改成對照參考答案、自己判斷，提示只出現一行，不跳彈窗。</li><li>批改失敗時保留參考答案，讓這題還能完成。</li></ul>
+    </div>
+  </article>
+
+    <!-- ===================== s07 單字卡 ===================== -->
+  <article class="shot-row" id="s07" data-screen="s07">
+    <div class="screens">
+      <div class="phone" data-state="question">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="8" aria-valuemax="24"><i style="width:33%"></i></div><span class="pcount">複習 8／24</span></div></div>
+        <div class="a-main">
+          <div class="card flash" style="padding:20px"><span class="w">postpone</span><span class="meta"><span class="ipa">/pəʊstˈpəʊn/</span><span class="icon-btn" aria-label="發音" style="color:var(--lg-primary)">{{i:volume-2}}</span></span></div>
+          <p class="label" style="text-align:center">選出這個字的意思</p>
+          <div class="opt"><b>A</b><span class="t">延後、延期</span></div>
+          <div class="opt"><b>B</b><span class="t">推廣、升遷</span></div>
+          <div class="opt"><b>C</b><span class="t">提議、建議</span></div>
+          <div class="opt"><b>D</b><span class="t">保護、防護</span></div>
+        </div>
+        <div class="a-foot" style="border-top:0"><button class="btn-text" type="button" style="justify-content:center">{{i:info}}看例句提示</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="right" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="8" aria-valuemax="24"><i style="width:33%"></i></div><span class="pcount">複習 8／24</span></div></div>
+        <div class="a-main">
+          <div class="card flash" style="padding:20px"><span class="w">postpone</span><span class="meta"><span class="ipa">/pəʊstˈpəʊn/</span><span class="cap">v.</span><span class="tag pri">B1</span><span class="tag pri">多益常考</span><span class="icon-btn" aria-label="發音" style="color:var(--lg-primary)">{{i:volume-2}}</span></span></div>
+          <div class="opt ok"><b>A</b><span class="t">延後、延期</span>{{i:check}}</div>
+          <div class="opt dim"><b>B</b><span class="t">推廣、升遷</span></div>
+          <div class="opt dim"><b>C</b><span class="t">提議、建議</span></div>
+          <div class="opt dim"><b>D</b><span class="t">保護、防護</span></div>
+        </div>
+        <div class="a-foot"><div class="fb ok" role="status"><strong>{{i:check}}正確：延後、延期</strong><span class="x en"><span class="tw">The</span> <span class="tw on">meeting</span> <span class="tw">was</span> <span class="tw">postponed</span> <span class="tw">until</span> <span class="tw">Friday</span>.</span><span class="x">會議延到星期五。</span></div><button class="btn btn-pri" type="button">繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="wrong" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="8" aria-valuemax="24"><i style="width:33%"></i></div><span class="pcount">複習 8／24</span></div></div>
+        <div class="a-main">
+          <div class="card flash" style="padding:20px"><span class="w">postpone</span><span class="meta"><span class="ipa">/pəʊstˈpəʊn/</span><span class="cap">v.</span><span class="tag pri">B1</span><span class="tag pri">多益常考</span><span class="icon-btn" aria-label="發音" style="color:var(--lg-primary)">{{i:volume-2}}</span></span></div>
+          <div class="opt ok"><b>A</b><span class="t">延後、延期</span>{{i:check}}</div>
+          <div class="opt no"><b>B</b><span class="t">推廣、升遷</span>{{i:x}}</div>
+          <div class="opt dim"><b>C</b><span class="t">提議、建議</span></div>
+          <div class="opt dim"><b>D</b><span class="t">保護、防護</span></div>
+        </div>
+        <div class="a-foot"><div class="fb no" role="status"><strong>{{i:x}}postpone 是「延後、延期」</strong><span class="x en"><span class="tw">The</span> <span class="tw">meeting</span> <span class="tw">was</span> <span class="tw">postponed</span> <span class="tw">until</span> <span class="tw">Friday</span>.</span><span class="x">會議延到星期五。</span></div><button class="btn btn-pri" type="button">繼續</button></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>7. 單字卡複習<em class="badge">已修改，請再確認</em></h2>
+      <div class="states" role="group" aria-label="單字卡狀態"><button type="button" data-st="question" aria-pressed="true">出題</button><button type="button" data-st="right">答對</button><button type="button" data-st="wrong">答錯</button></div>
+      <ul class="notes"><li>依你的意見：不再直接翻面看答案，改成從 4 個中文意思選一個（1 個正確＋3 個同級的干擾項），選完立刻顯示對錯、例句和中譯。</li><li>複習排程自動評分，不用自己按「記得／忘了」：答錯＝忘了；答對但超過 15 秒或看了例句提示＝困難；答對＝記得。</li><li>出題時測驗的字不能點來查義（會直接看到答案）；答完後例句裡的字都可以點（「答對」狀態示範了點 meeting 的樣子）。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s08 查義彈層 ===================== -->
+  <article class="shot-row" id="s08" data-screen="s08">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main"><div class="card tight"><span class="qtype">閱讀理解</span><p class="content"><span class="tw">Dear</span> <span class="tw">team</span>, <span class="tw">due</span> <span class="tw">to</span> <span class="tw">the</span> <span class="tw">public</span> <span class="tw">holiday</span>, <span class="tw">our</span> <span class="tw">weekly</span> <span class="tw on">meeting</span> <span class="tw">will</span> <span class="tw">be</span> <span class="tw">moved</span>…</p></div></div>
+        <div class="scrim"></div>
+        <div class="sheet" role="dialog" aria-label="單字查義">
+          <div class="grab"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center"><span class="en" style="font-size:var(--lg-text-title);font-weight:600">meeting</span><span style="display:flex;gap:6px"><span class="tag pri">B1</span><span class="tag pri">多益常考</span></span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="ipa">/ˈmiːtɪŋ/</span><span class="cap">n.</span><span class="icon-btn" aria-label="發音" style="color:var(--lg-primary)">{{i:volume-2}}</span></div>
+          <ol style="margin:0;padding-left:1.4em;display:grid;gap:4px" class="zh-tr"><li>會議；集會</li><li>會面；相遇</li></ol>
+          <button class="btn btn-sec" type="button">{{i:star}}加入收藏單字庫</button>
+          <span class="cap">資料來源：ECDICT</span>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="saved" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main"><div class="card tight"><span class="qtype">閱讀理解</span><p class="content"><span class="tw">Dear</span> <span class="tw">team</span>, <span class="tw">due</span> <span class="tw">to</span> <span class="tw">the</span> <span class="tw">public</span> <span class="tw">holiday</span>, <span class="tw">our</span> <span class="tw">weekly</span> <span class="tw on">meetings</span> <span class="tw">will</span> <span class="tw">be</span> <span class="tw">moved</span>…</p></div></div>
+        <div class="scrim"></div>
+        <div class="sheet" role="dialog" aria-label="單字查義">
+          <div class="grab"></div>
+          <span class="cap">meetings → 原形 meeting</span>
+          <div style="display:flex;justify-content:space-between;align-items:center"><span class="en" style="font-size:var(--lg-text-title);font-weight:600">meeting</span><span style="display:flex;gap:6px"><span class="tag pri">B1</span><span class="tag pri">多益常考</span></span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="ipa">/ˈmiːtɪŋ/</span><span class="cap">n.</span><span class="icon-btn" aria-label="發音" style="color:var(--lg-primary)">{{i:volume-2}}</span></div>
+          <ol style="margin:0;padding-left:1.4em;display:grid;gap:4px" class="zh-tr"><li>會議；集會</li><li>會面；相遇</li></ol>
+          <button class="btn" type="button" style="background:var(--lg-primary-soft);color:var(--lg-primary)">{{i:star}}已在收藏單字庫（點一下取消）</button>
+          <span class="cap">資料來源：ECDICT</span>
+        </div>
+        <div class="toast top" role="status">{{i:circle-check}}已加入收藏<b>復原</b></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="notfound" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:58%"></i></div><span class="pcount">7／12</span></div></div>
+        <div class="a-main"><div class="card tight"><span class="qtype">閱讀理解</span><p class="content">…<span class="tw">send</span> <span class="tw">any</span> <span class="tw">agenda</span> <span class="tw">items</span> <span class="tw">to</span> <span class="tw on">Jenny</span> <span class="tw">by</span> <span class="tw">Friday</span>.</p></div></div>
+        <div class="scrim"></div>
+        <div class="sheet" role="dialog" aria-label="單字查義">
+          <div class="grab"></div>
+          <span class="en" style="font-size:var(--lg-text-title);font-weight:600">Jenny</span>
+          <p class="err-line" style="color:var(--lg-muted)">{{i:info}}字典裡沒有這個字（可能是人名或專有名詞）</p>
+          <span class="cap">資料來源：ECDICT</span>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>8. 單字查義彈層<em class="badge">已修改，請再確認</em></h2>
+      <div class="states" role="group" aria-label="查義狀態"><button type="button" data-st="default" aria-pressed="true">預設</button><button type="button" data-st="saved">已收藏＋提示</button><button type="button" data-st="notfound">查無此字</button></div>
+      <div class="round2" style="background:var(--lg-surface);border:1px solid var(--lg-line)"><strong>全 App 規則：英文字都可以點</strong><span>依你的意見，所有出現英文學習內容的地方——題目、選項、短文、例句、回饋句、單字卡、單字庫列表、批改結果——每個英文單字都可以點，打開這個查義彈層。</span><span>平常不加底線，避免整段都像連結；按下的字會變淡藍底，查詢中的字加一條藍色底線。作答中查字不會改變題目狀態，也不算作答。只有「會直接看到答案的字」在作答前不能點（例如單字卡正在考的字）。</span></div>
+      <ul class="notes"><li>只蓋住下半部，上面的題目還看得到；下滑或點暗處關閉。</li><li>變化形（meetings）會先顯示原形。</li><li>收藏後的字和課程學到的字進同一個複習排程。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s09 單字庫 ===================== -->
+  <article class="shot-row" id="s09" data-screen="s09">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><span class="a-title">單字庫</span><span class="a-sub">共 312 字・今天到期 24</span></div>
+        <div class="a-main">
+          <div class="search">{{i:search}}搜尋英文或中文</div>
+          <div class="chips"><span class="chip on">全部</span><span class="chip">到期</span><span class="chip">收藏</span></div>
+          <span class="chip" style="justify-self:start;gap:4px" role="button" aria-haspopup="listbox">熟悉度：全部 {{i:chevron-down}}</span>
+          <div class="card tight" style="padding:4px 16px">
+            <div class="list">
+              <div class="li"><span><span class="en" style="font-weight:600">postpone</span>　<span class="label">延後</span></span><span class="r">3 天後</span></div>
+              <div class="li"><span><span class="en" style="font-weight:600">meeting</span>　<span class="label">會議</span></span><span class="r" style="color:var(--lg-primary);font-weight:700">今天到期</span></div>
+              <div class="li"><span><span class="en" style="font-weight:600">reschedule</span>　<span class="label">重新安排</span></span><span class="r"><span style="color:var(--lg-primary);display:inline-flex">{{i:star}}</span>12 天後</span></div>
+              <div class="li"><span><span class="en" style="font-weight:600">agenda</span>　<span class="label">議程</span></span><span class="r">1 個月後</span></div>
+              <div class="li"><span><span class="en" style="font-weight:600">attendee</span>　<span class="label">出席者</span></span><span class="r">5 天後</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav"><span>{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span class="on">{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="empty" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><span class="a-title">單字庫</span><span class="a-sub">共 0 字</span></div>
+        <div class="a-main">
+          <div class="empty">{{i:book-open}}<p class="card-h">單字庫還是空的</p><p class="label">上完第一課，學過的字會出現在這裡；查字時按「收藏」也能加進來。</p><button class="btn btn-pri" type="button" style="max-width:240px">去上第一課</button></div>
+        </div>
+        <div class="nav"><span>{{i24:sun}}今天</span><span>{{i24:map}}課程</span><span class="on">{{i24:book-open}}單字庫</span></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>9. 單字庫</h2>
+      <div class="states" role="group" aria-label="單字庫狀態"><button type="button" data-st="default" aria-pressed="true">預設</button><button type="button" data-st="empty">空的</button></div>
+      <ul class="notes"><li>篩選範圍（全部／到期／收藏）用分頁；熟悉度（陌生／學習中／熟悉）收進一顆下拉鈕，避免一次給 7 個選項。</li><li>熟悉度由複習排程的記憶狀態換算，實作時再定門檻。</li><li>收藏的字有星號。</li><li>點列表裡的英文字會打開查義彈層（全 App 規則）。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s10 分級測驗 ===================== -->
+  <article class="shot-row" id="s10" data-screen="s10">
+    <div class="screens">
+      <div class="phone" data-state="pick">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog"><i style="width:40%"></i></div><span class="pcount">第 2／5 組</span></div></div>
+        <div class="a-main">
+          <p class="card-h">勾選你「認識意思」的字</p>
+          <p class="label">不確定就不要勾；裡面混了幾個不存在的假字。</p>
+          <div class="lv-grid">
+            <div class="wordbox on"><span class="box">{{i:check}}</span>schedule</div><div class="wordbox"><span class="box"></span>brisk</div>
+            <div class="wordbox on"><span class="box">{{i:check}}</span>invoice</div><div class="wordbox"><span class="box"></span>plinter</div>
+            <div class="wordbox"><span class="box"></span>commute</div><div class="wordbox on"><span class="box">{{i:check}}</span>deadline</div>
+            <div class="wordbox"><span class="box"></span>vendor</div><div class="wordbox"><span class="box"></span>tremble</div>
+            <div class="wordbox"><span class="box"></span>fortnight</div><div class="wordbox"><span class="box"></span>blathe</div>
+            <div class="wordbox on"><span class="box">{{i:check}}</span>budget</div><div class="wordbox"><span class="box"></span>reluctant</div>
+          </div>
+        </div>
+        <div class="a-foot"><button class="btn btn-pri" type="button">下一組（已勾 4 個）</button></div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="result" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><span class="a-title">你的起點</span></div>
+        <div class="a-main">
+          <div class="card"><span class="num" style="font-family:var(--lg-font-heading)">B1</span><span class="label">約多益 275+</span></div>
+          <div class="card tight bars">
+            <div class="bar-row"><span>A1</span><span class="track"><i style="width:95%"></i></span><span>95%</span></div>
+            <div class="bar-row"><span>A2</span><span class="track"><i style="width:84%"></i></span><span>84%</span></div>
+            <div class="bar-row"><span>B1</span><span class="track"><i style="width:58%"></i></span><span>58%</span></div>
+            <div class="bar-row"><span>B2</span><span class="track"><i style="width:25%"></i></span><span>25%</span></div>
+            <span class="cap">每一級你認識的字的比例</span>
+          </div>
+          <div class="strip hint">{{i:info}}勾到 1 個假字，結果已向下修正</div>
+        </div>
+        <div class="a-foot"><button class="btn btn-pri" type="button">從 B1 開始</button><button class="btn-text" type="button" style="justify-content:center">想自己選級距 {{i:chevron-right}}</button></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>10. 新手分級測驗</h2>
+      <div class="states" role="group" aria-label="分級測驗狀態"><button type="button" data-st="pick" aria-pressed="true">勾選中</button><button type="button" data-st="result">結果</button></div>
+      <ul class="notes"><li>整格都可點，勾選以框線、底色、打勾三者表示。</li><li>結果只說勾到幾個假字，不逐一點名。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s11 設定 ===================== -->
+  <article class="shot-row" id="s11" data-screen="s11">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row" style="justify-content:flex-start"><span class="icon-btn" aria-label="返回">{{i:arrow-left}}</span><span class="a-title">設定</span></div></div>
+        <div class="a-main">
+          <div class="set-group"><div class="set-h">學習</div><div class="set-li"><span>目前級距</span><span class="r">B1｜約多益 275+ {{i:chevron-right}}</span></div><div class="set-li"><span>每日新字數</span><span class="r">10 {{i:chevron-right}}</span></div></div>
+          <div class="set-block"><div class="set-h" style="padding:0">AI 批改（OpenRouter）</div><span class="label">狀態：未設定</span><button class="btn btn-pri" type="button">{{i:key-round}}用 OpenRouter 帳號一鍵授權</button><button class="btn-text" type="button">改用貼上金鑰 {{i:chevron-right}}</button><span class="cap" style="display:flex;gap:6px">{{i:lock}}金鑰只存在這支手機，不會傳到我們的伺服器</span></div>
+          <div class="set-group"><div class="set-h">外觀與字級</div><div class="set-li"><span>外觀</span><span class="r">跟隨系統 {{i:chevron-right}}</span></div><div class="set-li"><span>字級大小</span><span class="r">標準 {{i:chevron-right}}</span></div></div>
+          <div class="set-group"><div class="set-h">語音</div><div class="set-li"><span>發音</span><span class="r">手機內建聲音（預設） {{i:chevron-right}}</span></div><div class="set-li"><span style="display:grid;line-height:1.35">高音質發音（選配）<span class="cap">約 310MB・需支援 WebGPU 的手機</span></span><span class="r">{{i:download}}下載</span></div><div class="set-li"><span style="display:grid;line-height:1.35">語音辨識模型<span class="cap">跟讀用・約 50–80MB</span></span><span class="r">已下載 {{i:chevron-right}}</span></div></div>
+          <div class="set-group"><div class="set-h">資料</div><div class="set-li"><span style="display:flex;gap:8px;align-items:center">{{i:file-down}}匯出學習紀錄</span><span class="r">{{i:chevron-right}}</span></div><div class="set-li"><span style="display:flex;gap:8px;align-items:center;color:var(--lg-error)">{{i:trash-2}}清除這支手機上的資料</span><span class="r">{{i:chevron-right}}</span></div></div>
+          <div class="set-group"><div class="set-h">帳號與同步</div><div class="set-li"><span class="label">未登入：進度只存在這支手機</span></div></div>
+          <div class="set-group"><div class="set-h">其他</div><div class="set-li"><span>隱私說明・授權・原始碼</span><span class="r">{{i:chevron-right}}</span></div></div>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="linked" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row" style="justify-content:flex-start"><span class="icon-btn" aria-label="返回">{{i:arrow-left}}</span><span class="a-title">設定</span></div></div>
+        <div class="a-main">
+          <div class="set-block"><div class="set-h" style="padding:0">AI 批改（OpenRouter）</div><span class="status-ok">{{i:circle-check}}已連結</span><div class="set-li" style="border-radius:12px;border-top-width:1px"><span>模型</span><span class="r">免費模型 {{i:chevron-right}}</span></div><span class="label">今日免費額度剩 37 次</span><button class="btn btn-danger" type="button">解除連結</button></div>
+          <div class="set-group"><div class="set-h">帳號與同步</div><div class="set-li"><span>已登入：xxx@gmail.com</span></div><div class="set-li"><span class="label">上次同步：剛剛</span><span class="r">登出</span></div></div>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="keyerr" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row" style="justify-content:flex-start"><span class="icon-btn" aria-label="返回">{{i:arrow-left}}</span><span class="a-title">設定</span></div></div>
+        <div class="a-main">
+          <div class="set-block"><div class="set-h" style="padding:0">貼上 OpenRouter 金鑰</div><label class="k cap" for="dummy-key">金鑰</label><div class="field" id="dummy-key" style="min-height:52px;border:2px solid var(--lg-error);font-size:var(--lg-text-secondary)" aria-describedby="key-err">sk-or-v1-3f9a…</div><span class="err-line" id="key-err">{{i:circle-x}}金鑰無效：請確認是否完整貼上（應以 sk-or- 開頭）</span><button class="btn btn-pri" type="button">驗證並儲存</button></div>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>11. 設定<span>含 OpenRouter 金鑰</span></h2>
+      <div class="states" role="group" aria-label="設定狀態"><button type="button" data-st="default" aria-pressed="true">預設（未授權）</button><button type="button" data-st="linked">已授權、已登入</button><button type="button" data-st="keyerr">貼金鑰錯誤</button></div>
+      <ul class="notes"><li>外觀預設「跟隨系統」，可改淺色或深色；字級可選標準／大／特大。</li><li>新增「資料」區：匯出學習紀錄、清除這支手機上的資料（二次確認見畫面 13）。</li><li>語音：發音預設手機內建聲音；高音質發音是選配下載（約 310MB，需 WebGPU）；語音辨識模型約 50–80MB。</li><li>錯誤訊息在欄位正下方，說明原因與怎麼修。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s12 離開小課確認 ===================== -->
+  <article class="shot-row" id="s12" data-screen="s12">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="lbar"><span class="icon-btn" aria-label="離開">{{i:x}}</span><div class="prog" role="progressbar" aria-valuenow="5" aria-valuemax="12"><i style="width:42%"></i></div><span class="pcount">5／12</span></div></div>
+        <div class="a-main"><div class="card tight"><span class="qtype">閱讀理解</span><p class="content">Dear team, due to the public holiday, our weekly meeting will be moved…</p></div></div>
+        <div class="scrim"></div>
+        <div class="dialog" role="alertdialog" aria-labelledby="s12-t" aria-describedby="s12-d">
+          <p class="card-h" id="s12-t">要離開這一課嗎？</p>
+          <p class="label" id="s12-d">目前做到 5／12 題。離開後下次會從第 1 題重新開始。</p>
+          <button class="btn btn-pri" type="button">繼續上課</button>
+          <button class="btn btn-sec" type="button">離開</button>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>12. 離開小課確認<em class="badge">新增</em></h2>
+      <div class="states" role="group" aria-label="離開確認狀態"><button type="button" data-st="default" aria-pressed="true">預設</button></div>
+      <ul class="notes"><li>上課中按左上角 ✕ 時出現。安全的選項（繼續上課）在上面、用主要按鈕。</li><li>離開後進度是否保留，由 TASK-18 每日動線決定；文案是暫定。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s13 清除資料二次確認 ===================== -->
+  <article class="shot-row" id="s13" data-screen="s13">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row" style="justify-content:flex-start"><span class="icon-btn" aria-label="返回">{{i:arrow-left}}</span><span class="a-title">設定</span></div></div>
+        <div class="a-main"><div class="set-group"><div class="set-h">資料</div><div class="set-li"><span>匯出學習紀錄</span></div><div class="set-li"><span style="color:var(--lg-error)">清除這支手機上的資料</span></div></div></div>
+        <div class="scrim"></div>
+        <div class="dialog" role="alertdialog" aria-labelledby="s13-t" aria-describedby="s13-d">
+          <p class="card-h" id="s13-t">清除這支手機上的所有學習資料？</p>
+          <p class="label" id="s13-d">單字庫、複習排程和設定都會刪除，無法復原。已登入的話，雲端資料不受影響。</p>
+          <div class="chk"><span class="box"></span>我了解資料無法復原</div>
+          <button class="btn btn-pri" type="button">取消</button>
+          <button class="btn btn-dis" type="button" disabled>清除資料</button>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+      <div class="phone" data-state="checked" hidden>
+        <div class="sbar">9:41</div>
+        <div class="a-head"><div class="row" style="justify-content:flex-start"><span class="icon-btn" aria-label="返回">{{i:arrow-left}}</span><span class="a-title">設定</span></div></div>
+        <div class="a-main"><div class="set-group"><div class="set-h">資料</div><div class="set-li"><span>匯出學習紀錄</span></div><div class="set-li"><span style="color:var(--lg-error)">清除這支手機上的資料</span></div></div></div>
+        <div class="scrim"></div>
+        <div class="dialog" role="alertdialog" aria-labelledby="s13-t2">
+          <p class="card-h" id="s13-t2">清除這支手機上的所有學習資料？</p>
+          <p class="label">單字庫、複習排程和設定都會刪除，無法復原。已登入的話，雲端資料不受影響。</p>
+          <div class="chk on"><span class="box">{{i:check}}</span>我了解資料無法復原</div>
+          <button class="btn btn-pri" type="button">取消</button>
+          <button class="btn btn-danger" type="button">{{i:trash-2}}清除資料</button>
+        </div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>13. 清除資料二次確認<em class="badge">新增</em></h2>
+      <div class="states" role="group" aria-label="清除確認狀態"><button type="button" data-st="default" aria-pressed="true">預設（未勾選）</button><button type="button" data-st="checked">勾選後可清除</button></div>
+      <ul class="notes"><li>要先勾「我了解資料無法復原」，紅字的「清除資料」才能按，避免誤觸。</li><li>「取消」在上面、是主要按鈕。</li></ul>
+    </div>
+  </article>
+
+  <!-- ===================== s14 小課完成頁 ===================== -->
+  <article class="shot-row" id="s14" data-screen="s14">
+    <div class="screens">
+      <div class="phone" data-state="default">
+        <div class="sbar">9:41</div>
+        <div class="a-head"><span class="a-sub">辦公室 3｜會議改期</span><span class="a-title">這一課完成了</span></div>
+        <div class="a-main">
+          <div class="card tight"><span class="label">新學的 8 個字已加入單字庫，明天開始複習</span><p class="en" style="line-height:1.9"><span class="tw">reschedule</span>・<span class="tw">postpone</span>・<span class="tw">agenda</span>・<span class="tw">attendee</span>・<span class="tw">confirm</span>・<span class="tw">venue</span>・<span class="tw">minutes</span>・<span class="tw">deadline</span></p></div>
+          <div class="card tight"><span class="label">這一課</span><div style="display:flex;gap:20px;font-variant-numeric:tabular-nums"><span>12 題</span><span>答對 10 題</span></div><span class="cap">答錯的 2 題已排進明天的複習</span></div>
+        </div>
+        <div class="a-foot"><button class="btn btn-pri" type="button">回到今天</button><button class="btn-text" type="button" style="justify-content:center">再複習一次剛學的字 {{i:chevron-right}}</button></div>
+        <div class="home-ind"></div>
+      </div>
+    </div>
+    <div class="shot-info">
+      <h2>14. 小課完成頁<em class="badge">新增</em></h2>
+      <div class="states" role="group" aria-label="完成頁狀態"><button type="button" data-st="default" aria-pressed="true">預設</button></div>
+      <ul class="notes"><li>只說學了什麼、答對幾題，不放星星、分數動畫或連續天數。</li><li>新學的字都可以點來查義。</li></ul>
+    </div>
+  </article>
+
+  <section aria-labelledby="ovHead" style="display:grid;gap:12px">
+    <h2 id="ovHead">整體意見（選填）</h2>
+    <textarea class="cmt" id="overall-comment" aria-labelledby="ovHead" placeholder="例如：整體可以定版，但首頁卡片想再緊一點"></textarea>
+    <p class="save" id="save-overall"></p>
+  </section>
+
+  <section aria-labelledby="cpHead" style="display:grid;gap:10px">
+    <h3 id="cpHead">備用：自動儲存失效時</h3>
+    <p class="lede">如果上方顯示「自動儲存無法使用」，請按下面的按鈕複製全部回覆，貼給執行長。</p>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="plain-btn" id="copyBtn" type="button">複製全部回覆</button><span class="save" id="copyMsg"></span></div>
+    <textarea class="cmt" id="copyOut" readonly hidden aria-label="全部回覆文字"></textarea>
+  </section>
+</div>
+
+<script>
+const SCREEN_NAMES = { s01: "首頁", s02: "課程地圖", s03: "小課－聽", s04: "小課－說", s05: "小課－讀", s06: "小課－寫", s07: "單字卡複習", s08: "單字查義彈層", s09: "單字庫", s10: "新手分級測驗", s11: "設定", s12: "離開小課確認", s13: "清除資料二次確認", s14: "小課完成頁" };
+// 第二輪修改過的畫面：這個時間以前的回覆屬第一輪，只顯示為「第一輪意見」，不預填決定（固定值，重建頁面不會變）
+const REVISED = new Set(["s04", "s07", "s08"]);
+const ROUND2_SINCE = "2026-10-01T16:45:00.000Z";
+const SWATCHES = [["bg","底色"],["surface","卡片"],["primary-soft","淡主色底"],["text","內文"],["muted","次要文字"],["line","細線"],["border","邊線"],["primary","主色"],["correct","答對"],["correct-bg","答對底"],["error","答錯"],["error-bg","答錯底"],["hint","提示"],["hint-bg","提示底"]];
+
+const el = (tag, attrs = {}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) { if (k === "class") n.className = v; else if (k === "text") n.textContent = v; else n.setAttribute(k, v); }
+  for (const k of kids) if (k != null) n.append(k);
+  return n;
+};
+
+/* 色票：讀目前生效的 token 值，跟著外觀切換 */
+function renderSwatches() {
+  const cs = getComputedStyle(document.documentElement);
+  document.getElementById("swatches").replaceChildren(...SWATCHES.map(([k, label]) => {
+    const i = el("i"); i.style.background = "var(--lg-" + k + ")";
+    return el("div", { class: "sw" }, i, el("span", { text: label }), el("code", { text: cs.getPropertyValue("--lg-" + k).trim() }));
+  }));
+}
+
+/* 工具列：外觀／字體／字級都改 <html> 屬性，與 app 的 tokens.css 相同機制 */
+for (const grp of document.querySelectorAll(".seg-btns")) {
+  const attr = grp.dataset.attr;
+  grp.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.val) document.documentElement.setAttribute(attr, b.dataset.val); else document.documentElement.removeAttribute(attr);
+    grp.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    renderSwatches();
+  });
+}
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", renderSwatches);
+
+/* 每個畫面的狀態切換 */
+function show(screen, state) {
+  const row = document.getElementById(screen);
+  row.querySelectorAll(".phone").forEach(p => { p.hidden = p.dataset.state !== state; });
+  row.querySelectorAll(".states button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.st === state)));
+}
+document.querySelectorAll(".shot-row").forEach(row => {
+  row.querySelector(".states").addEventListener("click", e => { const b = e.target.closest("button"); if (b) show(row.id, b.dataset.st); });
+});
+window.__show = show; // 截圖腳本用
+
+/* 每個畫面的意見表單 */
+const forms = {};
+function radioGroup(name, opts, label) {
+  const g = el("div", { class: "choices", role: "radiogroup", "aria-label": label });
+  for (const [v, t] of opts) g.append(el("label", { class: "choice", for: name + "-" + v }, el("input", { type: "radio", name, id: name + "-" + v, value: v }), el("span", { text: t })));
+  return g;
+}
+for (const row of document.querySelectorAll(".shot-row")) {
+  const id = row.id, name = SCREEN_NAMES[id];
+  const radios = radioGroup(id + "-v", [["ok", "這個畫面 OK"], ["change", "要修改"]], name + " 的決定");
+  const ta = el("textarea", { class: "cmt", id: id + "-comment", "aria-label": name + " 意見", placeholder: "想改什麼？寫狀態名稱更清楚，例如「答錯時回饋條太擠」" });
+  const status = el("p", { class: "save", id: "save-" + id });
+  row.querySelector(".shot-info").append(el("div", { class: "verdict" }, el("strong", { text: "你的決定" }), radios, ta, status));
+  const prev = el("p", { class: "prev", hidden: "" });
+  row.querySelector(".verdict").before(prev);
+  forms["screens/" + id] = {
+    status,
+    get: () => ({ verdict: radios.querySelector("input:checked")?.value || null, comment: ta.value }),
+    set: s => {
+      if (REVISED.has(id) && s.updatedAt && s.updatedAt < ROUND2_SINCE) {
+        prev.textContent = `第一輪你的意見：${({ ok: "OK", change: "要修改" })[s.verdict] || "未選"}${s.comment ? "｜" + s.comment : ""}`;
+        prev.hidden = false;
+        return;
+      }
+      radios.querySelectorAll("input").forEach(i => { i.checked = i.value === s.verdict; });
+      if (document.activeElement !== ta) ta.value = s.comment || "";
+    },
+    answered: s => !!s.verdict,
+    text: s => `${id} ${name}：${({ ok: "OK", change: "要修改" })[s.verdict] || "未選"}${s.comment ? "｜" + s.comment : ""}`,
+  };
+  radios.addEventListener("change", () => queueSave("screens/" + id, 0));
+  wireText(ta, "screens/" + id);
+}
+{
+  const ov = document.getElementById("overall-comment");
+  forms["choices/overall"] = {
+    status: document.getElementById("save-overall"),
+    get: () => ({ comment: ov.value }),
+    set: s => { if (document.activeElement !== ov) ov.value = s.comment || ""; },
+    answered: () => false,
+    text: s => `整體意見：${s.comment || "（無）"}`,
+  };
+  wireText(ov, "choices/overall");
+}
+
+/* ---- 儲存：db 文件 screens/s01…s11、choices/font、choices/overall ---- */
+let db = null;
+const timers = {}, saving = {}, again = {}, dirty = {};
+function wireText(ta, key) {
+  ta.addEventListener("input", () => queueSave(key, 900));
+  ta.addEventListener("blur", () => { if (timers[key]) queueSave(key, 0); });
+}
+function queueSave(key, delay) {
+  dirty[key] = true; updateCount();
+  clearTimeout(timers[key]);
+  timers[key] = setTimeout(() => { timers[key] = null; save(key); }, delay);
+}
+async function save(key) {
+  const f = forms[key];
+  if (!db) { f.status.textContent = "尚未儲存（自動儲存無法使用，請用頁尾的複製按鈕）"; f.status.className = "save bad"; return; }
+  if (saving[key]) { again[key] = true; return; }
+  saving[key] = true; f.status.textContent = "儲存中…"; f.status.className = "save";
+  try {
+    await db.doc(key).set({ ...f.get(), updatedAt: new Date().toISOString() });
+    f.status.textContent = "已儲存 " + new Date().toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit" });
+    dirty[key] = false;
+  } catch (e) {
+    f.status.textContent = "儲存失敗：" + (e && e.code === "quota_exceeded" ? "空間已滿" : "請稍後再改一次，或用頁尾的複製按鈕");
+    f.status.className = "save bad";
+  } finally {
+    saving[key] = false;
+    if (again[key]) { again[key] = false; save(key); }
+  }
+}
+function updateCount() { document.getElementById("doneCount").textContent = Object.values(forms).filter(f => f.answered(f.get())).length; }
+function showBanner(msg) { const b = document.getElementById("dbBanner"); b.textContent = msg; b.hidden = false; document.getElementById("dbState").textContent = "自動儲存無法使用"; }
+async function connect() {
+  try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch { db = null; }
+  if (!db) { showBanner("目前無法自動儲存（可能是本機預覽或未登入）。你仍可以勾選與填寫，完成後請用頁尾的「複製全部回覆」貼給執行長。"); return; }
+  document.getElementById("dbState").textContent = "自動儲存已開啟";
+  for (const col of ["screens", "choices"]) {
+    db.collection(col).onSnapshot(snap => {
+      for (const doc of snap.docs) {
+        const key = col + "/" + doc.id, f = forms[key];
+        if (!f || dirty[key] || saving[key]) continue;
+        f.set(doc.data() || {});
+        const t = doc.data()?.updatedAt;
+        if (t && !f.status.textContent) f.status.textContent = "上次儲存 " + new Date(t).toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+      }
+      updateCount();
+    }, () => { db = null; showBanner("與儲存空間的連線中斷了。已填的內容還在畫面上，請重新整理頁面，或用頁尾的複製按鈕。"); });
+  }
+}
+document.getElementById("copyBtn").addEventListener("click", () => {
+  const out = document.getElementById("copyOut"), msg = document.getElementById("copyMsg");
+  out.value = ["LinguaApp 設計 R2 高保真審閱回覆", ...Object.values(forms).map(f => f.text(f.get()))].join("\n");
+  const fallback = () => { out.hidden = false; out.focus(); out.select(); msg.textContent = "無法自動複製，已選取下方文字，請手動複製"; };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(out.value).then(() => { msg.textContent = "已複製"; }, fallback); else fallback();
+});
+
+renderSwatches();
+updateCount();
+connect();
+</script>

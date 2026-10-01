@@ -1,0 +1,32 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-2-design-r1/app
+
+ ❯ src/design/tokens.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/design/tokens.test.ts [ src/design/tokens.test.ts ]
+Error: Failed to resolve import "./tokens.css?raw" from "src/design/tokens.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Projects/LinguaApp/.claude/worktrees/task-2-design-r1/app/src/design/tokens.test.ts:2:16
+  1  |  import { describe, expect, it } from "vitest";
+  2  |  import css from "./tokens.css?raw";
+     |                   ^
+  3  |  // WCAG 2.x 相對亮度與對比（https://www.w3.org/TR/WCAG22/#dfn-contrast-ratio）
+  4  |  function luminance(hex) {
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:8736:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:8733:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/node.js:26423:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:26493:30
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:26459:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:8515:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:19998:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  22:54:04
+   Duration  33.16s (environment 86%, setup 14%)
+

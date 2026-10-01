@@ -1,0 +1,23 @@
+
+> linguaapp@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 16 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/registerSW.js                0.13 kB
+dist/manifest.webmanifest         0.31 kB
+dist/index.html                   0.58 kB │ gzip:  0.36 kB
+dist/assets/index-q4GcqqF0.css    8.74 kB │ gzip:  2.71 kB
+dist/assets/index-BuXiQY7h.js   219.77 kB │ gzip: 68.70 kB
+
+✓ built in 602ms
+
+PWA v1.3.0
+mode      generateSW
+precache  8 entries (223.88 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-9c191d2f.js

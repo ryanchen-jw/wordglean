@@ -1,0 +1,60 @@
+/*
+ * 把 tokens.css 的 --lg-* 接成 Tailwind 4 工具類別（bg-surface、text-muted、rounded-card、text-body…）。
+ * 用 inline：工具類別直接引用 var(--lg-*)，深色模式與字體切換在執行期自動生效。
+ * 色彩、字體、字級先清空預設值，只留設計系統的 token，避免畫面用到系統外的顏色。
+ */
+@theme inline {
+  --color-*: initial;
+  --color-bg: var(--lg-bg);
+  --color-surface: var(--lg-surface);
+  --color-primary-soft: var(--lg-primary-soft);
+  --color-text: var(--lg-text);
+  --color-muted: var(--lg-muted);
+  --color-line: var(--lg-line);
+  --color-border: var(--lg-border);
+  --color-primary: var(--lg-primary);
+  --color-on-primary: var(--lg-on-primary);
+  --color-focus: var(--lg-focus);
+  --color-correct: var(--lg-correct);
+  --color-correct-bg: var(--lg-correct-bg);
+  --color-error: var(--lg-error);
+  --color-error-bg: var(--lg-error-bg);
+  --color-hint: var(--lg-hint);
+  --color-hint-bg: var(--lg-hint-bg);
+  --color-disabled-bg: var(--lg-disabled-bg);
+  --color-disabled-text: var(--lg-disabled-text);
+  --color-scrim: var(--lg-scrim);
+
+  --font-*: initial;
+  --font-sans: var(--lg-font-ui);
+  --font-heading: var(--lg-font-heading);
+  --font-zh-tr: var(--lg-font-zh-tr);
+  --font-en: var(--lg-font-en);
+  --font-ipa: var(--lg-font-ipa);
+
+  --text-*: initial;
+  --text-caption: var(--lg-text-caption);
+  --text-caption--line-height: var(--lg-leading-body);
+  --text-secondary: var(--lg-text-secondary);
+  --text-secondary--line-height: var(--lg-leading-body);
+  --text-body: var(--lg-text-body);
+  --text-body--line-height: var(--lg-leading-body);
+  --text-content: var(--lg-text-content);
+  --text-content--line-height: var(--lg-leading-content);
+  --text-title-sm: var(--lg-text-title-sm);
+  --text-title-sm--line-height: var(--lg-leading-title);
+  --text-title: var(--lg-text-title);
+  --text-title--line-height: var(--lg-leading-title);
+  --text-display: var(--lg-text-display);
+  --text-display--line-height: var(--lg-leading-title);
+
+  --radius-card: var(--lg-radius-card);
+  --radius-control: var(--lg-radius-control);
+  --radius-chip: var(--lg-radius-chip);
+  --radius-sheet: var(--lg-radius-sheet);
+
+  --shadow-sheet: var(--lg-shadow-sheet);
+  --shadow-toast: var(--lg-shadow-toast);
+
+  --ease-standard: var(--lg-ease);
+}
