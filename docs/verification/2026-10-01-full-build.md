@@ -112,3 +112,19 @@
   cd app && npm run lint && npm run typecheck && npm test && npm run build
   PYTHONUTF8=1 python docs/design/v1.0/build_review.py   # 與提交的 review.html cmp 應相同
   ```
+
+## TASK-20 · 登入與同步——Google＋Email 驗證碼、訪客資料合併
+
+- **改了什麼**：`app/src/sync/`（合併純函式 mergeSnapshots、同步引擎、離線佇列 outbox、Supabase 遠端）、`app/src/auth/`（AccountEntry／AccountPanel：Email→驗證碼→登入／登出、Google 依設定顯示、換帳號阻擋）、Dexie v2（outbox、syncMeta）、`supabase/migrations/20261002000000_review_logs_inserted_at.sql`（伺服器時間游標＋觸發器）＋pgTAP、本機 OTP 信件範本、`npm run e2e:sync`（本機 Supabase 真收信、不進 CI）。
+- **代決**：登出先推完佇列再清本機；拉取用 inserted_at 游標＋重疊窗＋id 去重；收藏取聯集（取消收藏上線後改最後修改者勝）；設定同時間取穩定序列化較大者（交換律）；本機資料已屬帳號 X 時以 Y 登入→不合併、阻擋並登出 Y。
+- **驗收官實跑**（隔離、PASS）：lint／typecheck／build 0；單元 135 passed；pgTAP 81；e2e:sync 8/8（訪客學習→Mailpit 取碼登入→雲端核對→B context 進度相同→B 作答 A 拉到→登出清本機）；未設定時入口守衛突變 config.test 3 紅＋e2e 兩裝置紅；`__linguaTest` 不在一般 build；RLS 寫他人 user_id 被擋、自帶 inserted_at 被觸發器覆寫。
+- **UI 走查**：P0 長 email（64 字元）不折行水平溢出（375 34px／320 89px）→ 修為 overflow-wrap:anywhere＋375／320 回歸測試（修前 233／288px 紅、修後 0）；P2 錯誤圖示、讀取轉圈、文字鈕 › 留 TODO(TASK-11)。
+- **已知限制**：AC#2 的「學習」步驟暫用測試掛鉤（學習畫面上線後改從 UI 操作）；結算後同步需 AuthApi 暴露 requestSync（交 TASK-18）；同步表清單在 4 處重複；特大字級未另測。
+- **證據**：`docs/verification/2026-10-02-task20-sync-evidence/proposal.md`
+- **重跑**：
+  ```
+  cd app && npm run lint && npm run typecheck && npm test && npm run build && E2E_PORT=5298 npx playwright test --workers=1
+  npx supabase@2.118.0 start && npx supabase@2.118.0 test db
+  cd app && LINGUA_SYNC_ANON_KEY=… LINGUA_SYNC_SERVICE_KEY=… npm run e2e:sync -- --workers=1   # key 取自 supabase status -o env
+  npx supabase@2.118.0 stop
+  ```
