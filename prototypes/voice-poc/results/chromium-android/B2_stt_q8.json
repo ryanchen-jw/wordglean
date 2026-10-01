@@ -1,0 +1,182 @@
+{
+ "project": "chromium-android",
+ "browserVersion": "153.0.8010.12",
+ "scenario": "B2_stt_q8",
+ "finishedAt": "2026-10-01T14:46:59.928Z",
+ "query": "device=auto&sttDtype=q8&workers=1",
+ "wallMs": 205927,
+ "crashed": false,
+ "error": null,
+ "baseline": {
+  "totalPrivateMB": 289.16015625,
+  "maxProcPrivateMB": 139.7421875,
+  "maxProcWorkingSetMB": 158.20703125,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 3882.84765625
+ },
+ "procPeak": {
+  "totalPrivateMB": 1260.78125,
+  "maxProcPrivateMB": 860.10546875,
+  "maxProcWorkingSetMB": 788.734375,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 3179.61328125,
+  "peakTotalPrivateMB": 1343.22265625,
+  "minSystemFreeMB": 2358.0234375,
+  "maxOwnMB": 1464.93359375,
+  "abortedLowMemory": false,
+  "abortReason": null
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "q8",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Mobile Safari/537.36",
+   "hasWebGPU": true,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 22,
+   "deviceMemory": 32
+  },
+  "events": [
+   {
+    "kind": "sttLoad",
+    "at": 13497.400000095367,
+    "model": "moonshine",
+    "dtype": "q8",
+    "device": "webgpu",
+    "loadMs": 9856.599999904633,
+    "warmupMs": 2432.2999999523163,
+    "readyMs": 12288.899999856949,
+    "downloadMs": 4771.799999952316,
+    "bytes": 32079632,
+    "files": [
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "config.json",
+     "preprocessor_config.json",
+     "onnx/encoder_model_quantized.onnx",
+     "onnx/decoder_model_merged_quantized.onnx",
+     "generation_config.json"
+    ]
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 22941.900000095367,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Кеildeips",
+    "recognizeMs": 9042.400000095367,
+    "audioSec": 3.505,
+    "ref": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS",
+    "errors": 9,
+    "refWords": 8
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 47751.700000047684,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Кеildeips",
+    "recognizeMs": 24684.5,
+    "audioSec": 14.225,
+    "ref": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY",
+    "errors": 43,
+    "refWords": 43
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 56631.700000047684,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD",
+    "recognizeMs": 8702.100000143051,
+    "audioSec": 5.025,
+    "ref": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY",
+    "errors": 11,
+    "refWords": 11
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 97191.70000004768,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Ке",
+    "recognizeMs": 40486.299999952316,
+    "audioSec": 23.315,
+    "ref": "FROM THE RESPECT PAID HER ON ALL SIDES SHE SEEMED LIKE A QUEEN AND FROM THE ADORATION WITH WHICH SHE WAS TREATED BY TWO OR THREE SHE APPEARED AN OBJECT OF WORSHIP THE QUEEN MOTHER GAVE THE FRENCH THE MOST AFFECTIONATE RECEPTION FRANCE WAS HER NATIVE COUNTRY AND SHE HAD SUFFERED TOO MUCH UNHAPPINESS IN ENGLAND FOR ENGLAND TO HAVE MADE HER FORGET FRANCE",
+    "errors": 64,
+    "refWords": 64
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 118963.60000014305,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD",
+    "recognizeMs": 21563.599999904633,
+    "audioSec": 11.065,
+    "ref": "SHE TAUGHT HER DAUGHTER THEN BY HER OWN AFFECTION FOR IT THAT LOVE FOR A COUNTRY WHERE THEY HAD BOTH BEEN HOSPITABLY RECEIVED AND WHERE A BRILLIANT FUTURE OPENED BEFORE THEM",
+    "errors": 31,
+    "refWords": 31
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 152278.40000009537,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD",
+    "recognizeMs": 33075.59999990463,
+    "audioSec": 13.16,
+    "ref": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS",
+    "errors": 33,
+    "refWords": 33
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 167126.90000009537,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Ке",
+    "recognizeMs": 14660.100000143051,
+    "audioSec": 5.85,
+    "ref": "THIS HAS INDEED BEEN A HARASSING DAY CONTINUED THE YOUNG MAN HIS EYES FIXED UPON HIS FRIEND",
+    "errors": 17,
+    "refWords": 17
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 173538.60000014305,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Ке",
+    "recognizeMs": 6229.100000143051,
+    "audioSec": 3.315,
+    "ref": "YOU WILL BE FRANK WITH ME I ALWAYS AM",
+    "errors": 9,
+    "refWords": 9
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 184592.20000004768,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Кеilde",
+    "recognizeMs": 11013.200000047684,
+    "audioSec": 4.785,
+    "ref": "CAN YOU IMAGINE WHY BUCKINGHAM HAS BEEN SO VIOLENT I SUSPECT",
+    "errors": 11,
+    "refWords": 11
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 201466.90000009537,
+    "text": "quartifies prconfirminé�ildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD КеildeipsADD Ке",
+    "recognizeMs": 16797.800000190735,
+    "audioSec": 7.28,
+    "ref": "IT IS YOU WHO ARE MISTAKEN RAOUL I HAVE READ HIS DISTRESS IN HIS EYES IN HIS EVERY GESTURE AND ACTION THE WHOLE DAY",
+    "errors": 24,
+    "refWords": 24
+   },
+   {
+    "kind": "sttFixtures",
+    "at": 201467.5,
+    "n": 10,
+    "accuracy": 0,
+    "avgRecognizeMs": 18625.470000052454,
+    "totalAudioSec": 91.52499999999999
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false,
+  "jsHeapUsedMB": 1.1510095596313477
+ }
+}

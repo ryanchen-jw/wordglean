@@ -1,0 +1,51 @@
+{
+ "project": "webkit-ios",
+ "browserVersion": "26.6",
+ "scenario": "B2_stt_q8",
+ "finishedAt": "2026-10-01T14:54:17.275Z",
+ "query": "device=auto&sttDtype=q8&workers=1",
+ "wallMs": 7053,
+ "crashed": false,
+ "error": "page.evaluate: Target page, context or browser has been closed",
+ "baseline": {
+  "totalPrivateMB": 1069.109375,
+  "maxProcPrivateMB": 277.8984375,
+  "maxProcWorkingSetMB": 54.46875,
+  "maxProcName": "WebKitWebProcess.exe",
+  "procCount": 4,
+  "systemFreeMB": 5450.33984375
+ },
+ "procPeak": {
+  "totalPrivateMB": 5333.25,
+  "maxProcPrivateMB": 4552.7109375,
+  "maxProcWorkingSetMB": 243.60546875,
+  "maxProcName": "WebKitWebProcess.exe",
+  "procCount": 4,
+  "systemFreeMB": 4571.3359375,
+  "peakTotalPrivateMB": 5333.25,
+  "minSystemFreeMB": 4358.76171875,
+  "maxOwnMB": 5485.5,
+  "abortedLowMemory": true,
+  "abortReason": "本量測行程合計 5486 MB > 3072"
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "q8",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+   "hasWebGPU": false,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 8,
+   "deviceMemory": null
+  },
+  "events": []
+ },
+ "mem": {
+  "crossOriginIsolated": false
+ }
+}

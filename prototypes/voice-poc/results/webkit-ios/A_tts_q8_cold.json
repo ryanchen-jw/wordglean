@@ -1,0 +1,68 @@
+{
+ "project": "webkit-ios",
+ "browserVersion": "26.6",
+ "scenario": "A_tts_q8_cold",
+ "finishedAt": "2026-10-01T14:53:11.416Z",
+ "query": "device=auto&ttsDtype=q8&workers=1",
+ "wallMs": 19870,
+ "crashed": false,
+ "error": "page.evaluate: Target page, context or browser has been closed",
+ "baseline": {
+  "totalPrivateMB": 1069.09765625,
+  "maxProcPrivateMB": 277.82421875,
+  "maxProcWorkingSetMB": 54.4140625,
+  "maxProcName": "WebKitWebProcess.exe",
+  "procCount": 4,
+  "systemFreeMB": 5498.6484375
+ },
+ "procPeak": {
+  "totalPrivateMB": 5660.53125,
+  "maxProcPrivateMB": 4797.0703125,
+  "maxProcWorkingSetMB": 650.03125,
+  "maxProcName": "WebKitWebProcess.exe",
+  "procCount": 4,
+  "systemFreeMB": 4649.09375,
+  "peakTotalPrivateMB": 5660.53125,
+  "minSystemFreeMB": 4580.83984375,
+  "maxOwnMB": 5812.8671875,
+  "abortedLowMemory": true,
+  "abortReason": "本量測行程合計 5813 MB > 3072"
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "template",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+   "hasWebGPU": false,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 8,
+   "deviceMemory": null
+  },
+  "events": [
+   {
+    "kind": "ttsLoad",
+    "at": 15748,
+    "model": "kokoro",
+    "dtype": "q8",
+    "device": "wasm",
+    "loadMs": 15143,
+    "downloadMs": 11548,
+    "bytes": 92364770,
+    "files": [
+     "config.json",
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "onnx/model_quantized.onnx"
+    ]
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false
+ }
+}

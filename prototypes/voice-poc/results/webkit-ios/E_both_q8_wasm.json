@@ -1,0 +1,216 @@
+{
+ "project": "webkit-ios",
+ "browserVersion": "26.6",
+ "scenario": "E_both_q8_wasm",
+ "finishedAt": "2026-10-01T15:07:24.370Z",
+ "query": "device=wasm&ttsDtype=q8&sttDtype=template&workers=2",
+ "wallMs": 60694,
+ "crashed": false,
+ "error": null,
+ "baseline": {
+  "totalPrivateMB": 1069.109375,
+  "totalWorkingSetMB": 141.2578125,
+  "maxProcWsOnlyMB": 54.52734375,
+  "maxProcPrivateMB": 277.984375,
+  "maxProcWorkingSetMB": 54.52734375,
+  "maxProcName": "WebKitWebProcess.exe",
+  "procCount": 4,
+  "systemFreeMB": 6659.29296875
+ },
+ "procPeak": {
+  "totalPrivateMB": 10461.3125,
+  "totalWorkingSetMB": 1672.35546875,
+  "maxProcWsOnlyMB": 1430.4921875,
+  "maxProcPrivateMB": 9549.1875,
+  "maxProcWorkingSetMB": 1430.4921875,
+  "maxProcName": "WebKitWebProcess.exe",
+  "procCount": 4,
+  "systemFreeMB": 4292.0625,
+  "peakTotalPrivateMB": 10461.3125,
+  "peakTotalWorkingSetMB": 1672.35546875,
+  "peakProcWorkingSetMB": 1430.4921875,
+  "minSystemFreeMB": 4292.0625,
+  "maxOwnMB": 1789.171875,
+  "abortedLowMemory": false,
+  "abortReason": null
+ },
+ "metrics": {
+  "cfg": {
+   "device": "wasm",
+   "ttsDtype": "q8",
+   "sttDtype": "template",
+   "workers": 2,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+   "hasWebGPU": false,
+   "hasWebAudio": false,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 8,
+   "deviceMemory": null
+  },
+  "events": [
+   {
+    "kind": "sttLoad",
+    "at": 19733,
+    "model": "moonshine",
+    "dtype": {
+     "encoder_model": "fp32",
+     "decoder_model_merged": "q8"
+    },
+    "device": "wasm",
+    "loadMs": 18918,
+    "warmupMs": 473,
+    "readyMs": 19391,
+    "downloadMs": 12201,
+    "bytes": 55024302,
+    "files": [
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "config.json",
+     "preprocessor_config.json",
+     "onnx/encoder_model.onnx",
+     "onnx/decoder_model_merged_quantized.onnx",
+     "generation_config.json"
+    ]
+   },
+   {
+    "kind": "ttsLoad",
+    "at": 22608,
+    "model": "kokoro",
+    "dtype": "q8",
+    "device": "wasm",
+    "loadMs": 22252,
+    "downloadMs": 18518,
+    "bytes": 92364770,
+    "files": [
+     "config.json",
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "onnx/model_quantized.onnx"
+    ]
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 38759,
+    "text": "I would like a cup of coffee.",
+    "synthMs": 15976,
+    "audioSec": 2.175,
+    "rtf": 7.34528735632184,
+    "samplingRate": 24000
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 39703,
+    "text": "Concord returned to its place amidst the tents.",
+    "recognizeMs": 899,
+    "audioSec": 3.505,
+    "ref": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS",
+    "errors": 0,
+    "refWords": 8
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 43933,
+    "text": "The English forwarded to the French baskets of flowers, of which they had made a plentiful provision to greet the arrival of the young princess. The French in return invited the English to a supper, which was to be given the next day.",
+    "recognizeMs": 4205,
+    "audioSec": 14.225,
+    "ref": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY",
+    "errors": 0,
+    "refWords": 43
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 44982,
+    "text": "Congratulations were poured in upon the princess everywhere during her journey.",
+    "recognizeMs": 1028,
+    "audioSec": 5.025,
+    "ref": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY",
+    "errors": 0,
+    "refWords": 11
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 49894,
+    "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared in object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+    "recognizeMs": 4893,
+    "audioSec": 23.315,
+    "ref": "FROM THE RESPECT PAID HER ON ALL SIDES SHE SEEMED LIKE A QUEEN AND FROM THE ADORATION WITH WHICH SHE WAS TREATED BY TWO OR THREE SHE APPEARED AN OBJECT OF WORSHIP THE QUEEN MOTHER GAVE THE FRENCH THE MOST AFFECTIONATE RECEPTION FRANCE WAS HER NATIVE COUNTRY AND SHE HAD SUFFERED TOO MUCH UNHAPPINESS IN ENGLAND FOR ENGLAND TO HAVE MADE HER FORGET FRANCE",
+    "errors": 1,
+    "refWords": 64
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 52184,
+    "text": "She taught her daughter then by her own affection for it, that love for a country where they had both been hospitably received and where a brilliant future opened for them.",
+    "recognizeMs": 2269,
+    "audioSec": 11.065,
+    "ref": "SHE TAUGHT HER DAUGHTER THEN BY HER OWN AFFECTION FOR IT THAT LOVE FOR A COUNTRY WHERE THEY HAD BOTH BEEN HOSPITABLY RECEIVED AND WHERE A BRILLIANT FUTURE OPENED BEFORE THEM",
+    "errors": 1,
+    "refWords": 31
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 54401,
+    "text": "The count had thrown himself back on his seat, leaning his shoulders against the partition of the tent, and remained thus his face buried in his hands with heaving chest and restless limbs.",
+    "recognizeMs": 2131,
+    "audioSec": 13.16,
+    "ref": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS",
+    "errors": 0,
+    "refWords": 33
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 55433,
+    "text": "This has indeed been a harassing day, continued the young man, his eyes fixed upon his friend.",
+    "recognizeMs": 1024,
+    "audioSec": 5.85,
+    "ref": "THIS HAS INDEED BEEN A HARASSING DAY CONTINUED THE YOUNG MAN HIS EYES FIXED UPON HIS FRIEND",
+    "errors": 0,
+    "refWords": 17
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 56164,
+    "text": "You will be frank with me, I always am.",
+    "recognizeMs": 706,
+    "audioSec": 3.315,
+    "ref": "YOU WILL BE FRANK WITH ME I ALWAYS AM",
+    "errors": 0,
+    "refWords": 9
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 56910,
+    "text": "Can you imagine my buckingham has been so violent? I suspect.",
+    "recognizeMs": 726,
+    "audioSec": 4.785,
+    "ref": "CAN YOU IMAGINE WHY BUCKINGHAM HAS BEEN SO VIOLENT I SUSPECT",
+    "errors": 1,
+    "refWords": 11
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 58210,
+    "text": "It is you who are mistaken, Raoul. I have read his distress in his eyes, in his every gesture and action the whole day.",
+    "recognizeMs": 1277,
+    "audioSec": 7.28,
+    "ref": "IT IS YOU WHO ARE MISTAKEN RAOUL I HAVE READ HIS DISTRESS IN HIS EYES IN HIS EVERY GESTURE AND ACTION THE WHOLE DAY",
+    "errors": 0,
+    "refWords": 24
+   },
+   {
+    "kind": "sttFixtures",
+    "at": 58211,
+    "n": 10,
+    "accuracy": 0.9880478087649402,
+    "avgRecognizeMs": 1915.8,
+    "totalAudioSec": 91.52499999999999
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false
+ }
+}

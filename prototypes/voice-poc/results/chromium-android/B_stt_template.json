@@ -1,0 +1,137 @@
+{
+ "project": "chromium-android",
+ "browserVersion": "153.0.8010.12",
+ "scenario": "B_stt_template",
+ "finishedAt": "2026-10-01T14:32:43.183Z",
+ "query": "device=auto&sttDtype=template&workers=1",
+ "wallMs": 34651,
+ "crashed": false,
+ "error": "page.evaluate: Target page, context or browser has been closed",
+ "baseline": {
+  "totalPrivateMB": 286.8203125,
+  "maxProcPrivateMB": 138.6875,
+  "maxProcWorkingSetMB": 157.6015625,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 4044.328125
+ },
+ "procPeak": {
+  "totalPrivateMB": 1728.3671875,
+  "maxProcPrivateMB": 790.4375,
+  "maxProcWorkingSetMB": 864.88671875,
+  "maxProcName": "chrome.exe",
+  "procCount": 10,
+  "systemFreeMB": 979.0078125,
+  "peakTotalPrivateMB": 1728.3671875,
+  "minSystemFreeMB": 979.0078125,
+  "maxOwnMB": 1844.1953125,
+  "abortedLowMemory": true,
+  "abortReason": "系統空閒 979 MB < 1229"
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "template",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Mobile Safari/537.36",
+   "hasWebGPU": true,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 22,
+   "deviceMemory": 32
+  },
+  "events": [
+   {
+    "kind": "sttLoad",
+    "at": 16563.10000014305,
+    "model": "moonshine",
+    "dtype": {
+     "encoder_model": "fp32",
+     "decoder_model_merged": "q4"
+    },
+    "device": "webgpu",
+    "loadMs": 13918.599999904633,
+    "warmupMs": 1480.2999999523163,
+    "readyMs": 15398.899999856949,
+    "downloadMs": 11326.200000047684,
+    "bytes": 79431700,
+    "files": [
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "config.json",
+     "preprocessor_config.json",
+     "onnx/encoder_model.onnx",
+     "onnx/decoder_model_merged_q4.onnx",
+     "generation_config.json"
+    ]
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 20255.60000014305,
+    "text": "Concord returned with place amidst the tents.",
+    "recognizeMs": 827.6000001430511,
+    "audioSec": 3.505,
+    "ref": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS",
+    "errors": 2,
+    "refWords": 8
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 23962.5,
+    "text": "The English forwarded to the French baskets of flowers, of which they had made a plentiful provision to greet the arrival of the young princess. The French in return invited the English to a supper, which was to be given the next day.",
+    "recognizeMs": 3649.7999999523163,
+    "audioSec": 14.225,
+    "ref": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY",
+    "errors": 0,
+    "refWords": 43
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 24990.10000014305,
+    "text": "Congratulations were poured in upon the princess everywhere during her journey,",
+    "recognizeMs": 1001.8999998569489,
+    "audioSec": 5.025,
+    "ref": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY",
+    "errors": 0,
+    "refWords": 11
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 28605,
+    "text": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared in object of worship. The Queen Mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+    "recognizeMs": 3358.9000000953674,
+    "audioSec": 23.315,
+    "ref": "FROM THE RESPECT PAID HER ON ALL SIDES SHE SEEMED LIKE A QUEEN AND FROM THE ADORATION WITH WHICH SHE WAS TREATED BY TWO OR THREE SHE APPEARED AN OBJECT OF WORSHIP THE QUEEN MOTHER GAVE THE FRENCH THE MOST AFFECTIONATE RECEPTION FRANCE WAS HER NATIVE COUNTRY AND SHE HAD SUFFERED TOO MUCH UNHAPPINESS IN ENGLAND FOR ENGLAND TO HAVE MADE HER FORGET FRANCE",
+    "errors": 1,
+    "refWords": 64
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 30598.900000095367,
+    "text": "She taught her daughter then by her own affection for it, that love for a country where they had both been hospitably received and where a brilliant future opened for them.",
+    "recognizeMs": 1952.4000000953674,
+    "audioSec": 11.065,
+    "ref": "SHE TAUGHT HER DAUGHTER THEN BY HER OWN AFFECTION FOR IT THAT LOVE FOR A COUNTRY WHERE THEY HAD BOTH BEEN HOSPITABLY RECEIVED AND WHERE A BRILLIANT FUTURE OPENED BEFORE THEM",
+    "errors": 1,
+    "refWords": 31
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 33024.10000014305,
+    "text": "The count had thrown himself back on his seat, leaning his shoulders against the partition of the tent, and remained thus his face buried in his hands with heaving chest and restless limbs.",
+    "recognizeMs": 2363,
+    "audioSec": 13.16,
+    "ref": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS",
+    "errors": 0,
+    "refWords": 33
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false,
+  "jsHeapUsedMB": 0.9375886917114258
+ }
+}

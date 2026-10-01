@@ -1,0 +1,76 @@
+{
+ "project": "chromium-android",
+ "browserVersion": "153.0.8010.12",
+ "scenario": "A2_tts_q8_warm",
+ "finishedAt": "2026-10-01T13:58:39.532Z",
+ "query": "device=auto&ttsDtype=q8&workers=1",
+ "wallMs": 28191,
+ "crashed": false,
+ "error": null,
+ "baseline": {
+  "totalPrivateMB": 846.6484375,
+  "maxProcPrivateMB": 585.3984375,
+  "maxProcWorkingSetMB": 618.7265625,
+  "maxProcName": "chrome.exe",
+  "procCount": 10,
+  "systemFreeMB": 4688.65234375
+ },
+ "procPeak": {
+  "totalPrivateMB": 1047.4375,
+  "maxProcPrivateMB": 601.1640625,
+  "maxProcWorkingSetMB": 610.78515625,
+  "maxProcName": "chrome.exe",
+  "procCount": 10,
+  "systemFreeMB": 3592.8671875,
+  "peakTotalPrivateMB": 1154.77734375,
+  "minSystemFreeMB": 3592.8671875,
+  "abortedLowMemory": false
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "template",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Mobile Safari/537.36",
+   "hasWebGPU": true,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 22,
+   "deviceMemory": 32
+  },
+  "events": [
+   {
+    "kind": "ttsLoad",
+    "at": 7075.299999952316,
+    "model": "kokoro",
+    "dtype": "q8",
+    "device": "webgpu",
+    "loadMs": 5998.399999856949,
+    "downloadMs": 165.39999985694885,
+    "bytes": 92364770,
+    "files": [
+     "config.json",
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "onnx/model_quantized.onnx"
+    ]
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 27636.400000095367,
+    "text": "I would like a cup of coffee.",
+    "synthMs": 20475,
+    "audioSec": 2.275,
+    "rtf": 9.000000000000002,
+    "samplingRate": 24000
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false,
+  "jsHeapUsedMB": 1.6107463836669922
+ }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>語音原型 voice-poc</title>
+    <style>
+      body { font: 15px/1.5 system-ui, sans-serif; margin: 0; padding: 16px; background: #fff; color: #111; }
+      button { font: inherit; padding: 10px 14px; margin: 4px 4px 4px 0; border-radius: 8px; border: 1px solid #888; background: #f4f4f4; }
+      #btnSelfTest { background: #1d4ed8; color: #fff; border-color: #1d4ed8; width: 100%; }
+      input { font: inherit; width: 100%; box-sizing: border-box; padding: 8px; }
+      table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+      th, td { border: 1px solid #ccc; padding: 6px; text-align: left; vertical-align: top; }
+      th { width: 48%; font-weight: 600; }
+      pre { white-space: pre-wrap; word-break: break-all; font-size: 12px; background: #f6f6f6; padding: 8px; max-height: 40vh; overflow: auto; }
+      #env { font-size: 11px; color: #555; word-break: break-all; }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-size: 18px">語音原型（TASK-1）</h1>
+    <p>請先連 Wi-Fi：第一次會下載約 140–165 MB 模型。</p>
+    <button id="btnSelfTest">一鍵自測（約 2–5 分鐘）</button>
+    <table id="nums"></table>
+    <button id="btnCopy">複製結果</button>
+    <details>
+      <summary>手動操作</summary>
+      <button id="btnLoadTts">載入 Kokoro</button>
+      <input id="text" value="Could you tell me how to get to the train station, please?" />
+      <button id="btnSpeak">念出來</button>
+      <br />
+      <button id="btnLoadStt">載入 Moonshine</button>
+      <button id="btnRecord">開始錄音</button>
+      <button id="btnFixtures">跑 10 句測試音檔</button>
+      <button id="btnMemory">量記憶體</button>
+    </details>
+    <p id="env"></p>
+    <pre id="log"></pre>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

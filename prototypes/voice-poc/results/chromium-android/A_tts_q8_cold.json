@@ -1,0 +1,94 @@
+{
+ "project": "chromium-android",
+ "browserVersion": "153.0.8010.12",
+ "scenario": "A_tts_q8_cold",
+ "finishedAt": "2026-10-01T13:58:07.757Z",
+ "query": "device=auto&ttsDtype=q8&workers=1",
+ "wallMs": 93962,
+ "crashed": false,
+ "error": null,
+ "baseline": {
+  "totalPrivateMB": 289.4140625,
+  "maxProcPrivateMB": 136.0625,
+  "maxProcWorkingSetMB": 154.84375,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 5142.84375
+ },
+ "procPeak": {
+  "totalPrivateMB": 1298.0234375,
+  "maxProcPrivateMB": 670.55859375,
+  "maxProcWorkingSetMB": 722.4765625,
+  "maxProcName": "chrome.exe",
+  "procCount": 10,
+  "systemFreeMB": 4143.35546875,
+  "peakTotalPrivateMB": 1334.74609375,
+  "minSystemFreeMB": 3379.65234375,
+  "abortedLowMemory": false
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "template",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Mobile Safari/537.36",
+   "hasWebGPU": true,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 22,
+   "deviceMemory": 32
+  },
+  "events": [
+   {
+    "kind": "ttsLoad",
+    "at": 19441.299999952316,
+    "model": "kokoro",
+    "dtype": "q8",
+    "device": "webgpu",
+    "loadMs": 18342.099999904633,
+    "downloadMs": 11690.599999904633,
+    "bytes": 92364770,
+    "files": [
+     "config.json",
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "onnx/model_quantized.onnx"
+    ]
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 52601.700000047684,
+    "text": "Could you tell me how to get to the train station, please?",
+    "synthMs": 31878.599999904633,
+    "audioSec": 4.275,
+    "rtf": 7.456982456118042,
+    "samplingRate": 24000
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 70539.79999995232,
+    "text": "I would like a cup of coffee.",
+    "synthMs": 17931.299999952316,
+    "audioSec": 2.275,
+    "rtf": 7.8818901098691505,
+    "samplingRate": 24000
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 92241.59999990463,
+    "text": "She has been studying English for three years.",
+    "synthMs": 20367,
+    "audioSec": 2.8,
+    "rtf": 7.273928571428573,
+    "samplingRate": 24000
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false,
+  "jsHeapUsedMB": 1.7425661087036133
+ }
+}

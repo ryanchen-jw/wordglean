@@ -1,0 +1,85 @@
+{
+ "project": "chromium-android",
+ "browserVersion": "153.0.8010.12",
+ "scenario": "G_mic_fake",
+ "finishedAt": "2026-10-01T14:52:37.021Z",
+ "query": "device=auto&sttDtype=template&workers=1",
+ "wallMs": 29436,
+ "crashed": false,
+ "error": null,
+ "baseline": {
+  "totalPrivateMB": 285.84375,
+  "maxProcPrivateMB": 137.17578125,
+  "maxProcWorkingSetMB": 156.51953125,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 4209.53515625
+ },
+ "procPeak": {
+  "totalPrivateMB": 1519.85546875,
+  "maxProcPrivateMB": 768,
+  "maxProcWorkingSetMB": 783.05859375,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 3334.70703125,
+  "peakTotalPrivateMB": 1519.85546875,
+  "minSystemFreeMB": 2532.93359375,
+  "maxOwnMB": 1636.95703125,
+  "abortedLowMemory": false,
+  "abortReason": null
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "q8",
+   "sttDtype": "template",
+   "workers": 1,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Mobile Safari/537.36",
+   "hasWebGPU": true,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 22,
+   "deviceMemory": 32
+  },
+  "events": [
+   {
+    "kind": "sttLoad",
+    "at": 20719.200000047684,
+    "model": "moonshine",
+    "dtype": {
+     "encoder_model": "fp32",
+     "decoder_model_merged": "q4"
+    },
+    "device": "webgpu",
+    "loadMs": 17024.299999952316,
+    "warmupMs": 2322.5999999046326,
+    "readyMs": 19346.89999985695,
+    "downloadMs": 10122.100000143051,
+    "bytes": 79431700,
+    "files": [
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "config.json",
+     "preprocessor_config.json",
+     "onnx/encoder_model.onnx",
+     "onnx/decoder_model_merged_q4.onnx",
+     "generation_config.json"
+    ]
+   },
+   {
+    "kind": "sttRecognize",
+    "at": 26314.10000014305,
+    "text": "",
+    "recognizeMs": 204.10000014305115,
+    "audioSec": 4.44,
+    "ref": null
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false,
+  "jsHeapUsedMB": 3.034480094909668
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "project": "chromium-android",
+ "browserVersion": "153.0.8010.12",
+ "scenario": "F_both_fp32",
+ "finishedAt": "2026-10-01T14:51:26.293Z",
+ "query": "device=auto&ttsDtype=fp32&sttDtype=template&workers=2",
+ "wallMs": 58392,
+ "crashed": false,
+ "error": null,
+ "baseline": {
+  "totalPrivateMB": 284.3359375,
+  "maxProcPrivateMB": 136.83203125,
+  "maxProcWorkingSetMB": 156.1484375,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 4942.2109375
+ },
+ "procPeak": {
+  "totalPrivateMB": 2820.05859375,
+  "maxProcPrivateMB": 1689.98828125,
+  "maxProcWorkingSetMB": 1776.80859375,
+  "maxProcName": "chrome.exe",
+  "procCount": 9,
+  "systemFreeMB": 2657.61328125,
+  "peakTotalPrivateMB": 2950.97265625,
+  "minSystemFreeMB": 2657.61328125,
+  "maxOwnMB": 3068.25390625,
+  "abortedLowMemory": false,
+  "abortReason": null
+ },
+ "metrics": {
+  "cfg": {
+   "device": "auto",
+   "ttsDtype": "fp32",
+   "sttDtype": "template",
+   "workers": 2,
+   "voice": "af_heart"
+  },
+  "env": {
+   "ua": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Mobile Safari/537.36",
+   "hasWebGPU": true,
+   "crossOriginIsolated": false,
+   "hardwareConcurrency": 22,
+   "deviceMemory": 32
+  },
+  "events": [
+   {
+    "kind": "sttLoad",
+    "at": 19876.299999952316,
+    "model": "moonshine",
+    "dtype": {
+     "encoder_model": "fp32",
+     "decoder_model_merged": "q4"
+    },
+    "device": "webgpu",
+    "loadMs": 17123.299999952316,
+    "warmupMs": 1937.7000000476837,
+    "readyMs": 19061,
+    "downloadMs": 15272.799999952316,
+    "bytes": 79431700,
+    "files": [
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "config.json",
+     "preprocessor_config.json",
+     "onnx/encoder_model.onnx",
+     "onnx/decoder_model_merged_q4.onnx",
+     "generation_config.json"
+    ]
+   },
+   {
+    "kind": "ttsLoad",
+    "at": 46720.700000047684,
+    "model": "kokoro",
+    "dtype": "fp32",
+    "device": "webgpu",
+    "loadMs": 45871.5,
+    "downloadMs": 43457.40000009537,
+    "bytes": 325535886,
+    "files": [
+     "config.json",
+     "tokenizer.json",
+     "tokenizer_config.json",
+     "onnx/model.onnx"
+    ]
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 54402.200000047684,
+    "text": "Could you tell me how to get to the train station, please?",
+    "synthMs": 5508.700000047684,
+    "audioSec": 3.425,
+    "rtf": 1.608379562057718,
+    "samplingRate": 24000
+   },
+   {
+    "kind": "ttsSpeak",
+    "at": 55743.799999952316,
+    "text": "I would like a cup of coffee.",
+    "synthMs": 1154.2000000476837,
+    "audioSec": 2.175,
+    "rtf": 0.5306666666885903,
+    "samplingRate": 24000
+   }
+  ]
+ },
+ "mem": {
+  "crossOriginIsolated": false,
+  "jsHeapUsedMB": 1.6486759185791016
+ }
+}

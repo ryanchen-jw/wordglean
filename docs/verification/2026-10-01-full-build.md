@@ -6,6 +6,7 @@
 
 | 卡 | 類型 | commit | 自動化證據 | UI 走查 |
 |---|---|---|---|---|
+| TASK-1 | investigate（語音原型） | 見 git log「TASK-1」 | wer 單元 7/7；結論數字抽 6 處與 results JSON 吻合 | N/A（原型；真機待 G4） |
 | TASK-6 | feat（單字資料管線） | 見 git log「TASK-6」 | data pytest 30/30（無原始檔模式 28＋2 skip）；重建 602 檔 sha256 0 差異；冷啟動最大 50.2ms；Oxford 守衛 4 種植入皆紅 | N/A |
 | TASK-2 | design（R1 線框＋方向，含 R1b 重做） | 見 git log「TASK-2」 | 對比度 R1 63 組／R1b 84 組全過 AA（腳本可重現、手算吻合、突變 exit 1） | 圈選頁 2 輪（G1） |
 | TASK-10 | feat（本機資料層＋FSRS） | 見 git log「TASK-10」 | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
@@ -71,4 +72,15 @@
 - **重跑**：
   ```
   PYTHONUTF8=1 data/.venv/Scripts/python.exe -m pytest data/tests -q
+  ```
+
+## TASK-1 · 語音原型實測——Kokoro TTS＋Moonshine STT（G4 待真機）
+
+- **結論：需降級**。STT（Moonshine tiny）可行：LibriSpeech 10 句逐字正確率 98.0%（WebGPU）／98.8%（WASM），每句 1.5–1.9 s。TTS（Kokoro）手機即時合成不可行：q8 每句 11–32 s（RTF 5–9），fp32 夠快但 310 MB、單行程 1.7 GB。兩者同載 chromium／webkit 皆未崩潰（webkit working set 合計 1.67 GB）。
+- **建議**：TASK-13 預設系統聲音、Kokoro 選配（僅 WebGPU＋fp32）或改產題時離線預產音檔（需裁示）；TASK-14 用範本精度、限輸出長度、分時載入、不與 Kokoro 同常駐。
+- **驗收官**（隔離、PASS）：抽 6+ 個數字回 results JSON 吻合；wer 7/7＋手算一例一致；未量項如實標示；LibriSpeech CC BY 4.0、moonshine-web Apache-2.0 出處齊；無 VAD、無 token、無大檔。驗收後修：§3 數字對齊 JSON、下載量統一、刪舊冒煙 log、自測例外清旗標。
+- **未量**：webkit A／B／B2／F、chromium B、D、COI、webkit WebGPU（Windows WebKit 無）。
+- **重跑**：
+  ```
+  cd prototypes/voice-poc && npm ci && node --test && node tests/summarize.mjs
   ```
