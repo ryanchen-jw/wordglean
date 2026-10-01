@@ -1,10 +1,10 @@
 ---
 id: TASK-2
 title: 設計 R1——方向探索：ASCII 線框＋三個視覺方向
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 14:38'
+updated_date: '2026-10-01 14:49'
 labels:
   - app
 dependencies: []
@@ -24,11 +24,11 @@ ordinal: 2000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 ASCII 線框涵蓋範圍所列 11 個畫面，每個標出主要互動與資訊層級
-- [ ] #2 三個視覺方向各有：情緒關鍵字、配色（含對比度檢查 WCAG AA）、中英字體組合、圓角與密度、參考產品、價值／成本比
-- [ ] #3 列出至少 5 個被挑戰的預設假設與各自建議（深色模式、方向、單手熱區、字級、插畫系統）
-- [ ] #4 以 Artifact 圈選頁交付（每方向可選「採用／混搭某元素／否決」＋自由意見），停 In Review 等 G1
-- [ ] #5 創辦人圈選結果記回本卡 comment 後才 Done
+- [x] #1 ASCII 線框涵蓋範圍所列 11 個畫面，每個標出主要互動與資訊層級
+- [x] #2 三個視覺方向各有：情緒關鍵字、配色（含對比度檢查 WCAG AA）、中英字體組合、圓角與密度、參考產品、價值／成本比
+- [x] #3 列出至少 5 個被挑戰的預設假設與各自建議（深色模式、方向、單手熱區、字級、插畫系統）
+- [x] #4 以 Artifact 圈選頁交付（每方向可選「採用／混搭某元素／否決」＋自由意見），停 In Review 等 G1
+- [x] #5 創辦人圈選結果記回本卡 comment 後才 Done
 <!-- AC:END -->
 
 ## Implementation Notes
@@ -39,4 +39,8 @@ ordinal: 2000
 2026-10-01 G1 圈選結果（Artifact db picks）：7 條預設做法全部『同意建議』（深色模式第一版就做、只直向但橫向不壞版、主按鈕在下 1/3、App 內三段字級、不做吉祥物、顏色＋圖示＋文字、短動效＋尊重減少動態）。三個方向 A/B/C 皆未選。整體意見：『主要視覺與風格，使用 UIUXPRO skill 重新設計一次，一樣設計3版』。→ 視覺方向重做 R1b（3 版），線框沿用。
 
 2026-10-01 R1b 完成（分支 worktree-task-2-design-r1：0f38923 併 main、345a94f 對比度補驗＋線框門檻修正、96b18d2 三方向、8411a23 圈選頁、874b056 D1 跟讀改點一下開始／結束）。用 ui-ux-pro-max 三條 --design-system 查詢；否決兒童向（Claymorphism 本體、Baloo/Comic Neue、Varela Round）與高無障礙風險的 Neumorphism。84 組對比度全過 AA（含深色回饋底）。圈選頁：https://claude.ai/artifact/HsKbpbhqcAs8AR712kUFoi（db picks，發佈後 list 正常、空）。待 R2 修：設定畫面『外觀 淺色（見挑戰假設）』應改為跟隨系統（已定案）。停 In Review 等 G1（R1b 圈選）。
+
+2026-10-01 G1 第二輪（R1b）圈選結果（Artifact db picks/overall）：『方向3 + 第一版 A 的色系與質感』，三方向未個別勾選。執行長解讀與代決：版面結構採 R1b 方向 3 暖橘模組（Bento 模組卡首頁、圓角、密度）；配色與質感採 R1 方向 A 安靜書桌（紙感米底、深藍主色、細線分隔、幾乎無陰影）；字體未指定→R2 以方向 3 字體為底並另提 A 襯線版供 G2 比較。7 條預設做法維持定案。
+
+2026-10-01 驗收 PASS（隔離驗收官）；R1 舊圈選頁跟讀文字為歷史頁、刻意不改。
 <!-- SECTION:NOTES:END -->

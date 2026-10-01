@@ -6,6 +6,7 @@
 
 | 卡 | 類型 | commit | 自動化證據 | UI 走查 |
 |---|---|---|---|---|
+| TASK-2 | design（R1 線框＋方向，含 R1b 重做） | 見 git log「TASK-2」 | 對比度 R1 63 組／R1b 84 組全過 AA（腳本可重現、手算吻合、突變 exit 1） | 圈選頁 2 輪（G1） |
 | TASK-10 | feat（本機資料層＋FSRS） | 見 git log「TASK-10」 | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
 | TASK-19 | feat（Supabase schema＋RLS） | 見 git log「TASK-19」 | pgTAP 74/74、HTTP smoke 8/8；突變（關 RLS／未上鎖新表／bytea 欄／TRUNCATE）皆轉紅 | N/A |
 | TASK-5 | feat（app 骨架） | 見 git log「TASK-5」 | lint／typecheck／unit 1/1；e2e 3 passed、1 skipped（workers=1）；突變（關 SW 註冊）→ 3 紅 | N/A（佔位頁，非 has-ui） |
@@ -46,4 +47,16 @@
 - **重跑**：
   ```
   cd app && npm run typecheck && npm run lint && TZ=UTC npx vitest run && TZ=Asia/Taipei npx vitest run
+  ```
+
+## TASK-2 · 設計 R1——ASCII 線框＋三個視覺方向（含 R1b 重做）
+
+- **改了什麼**：docs/design/r1/（11 畫面線框 wireframes.md、A/B/C 三方向、7 條挑戰假設、contrast_check.py、圈選頁）；docs/design/r1b/（以 ui-ux-pro-max 重做 1/2/3 三方向、圈選頁）。
+- **G1 圈選**：第一輪 7 條預設做法全同意、A/B/C 未採用、指示用 ui-ux-pro-max 重做；第二輪「方向 3＋第一版 A 的色系與質感」。圈選頁：R1 https://claude.ai/artifact/STt2PsWSU5c2VLKt4Vok7B 、R1b https://claude.ai/artifact/HsKbpbhqcAs8AR712kUFoi
+- **驗收官**（隔離、PASS）：contrast_check.py 兩模式 exit 0、輸出 63／84 列與 directions.md 逐列吻合；手算 #FFFFFF/#C2410C＝5.178、#1E2329/#F6F1E7＝14.051 與腳本一致；改不達標色 → exit 1；pick.html 內嵌色碼與腳本差異 0。
+- **觀察**：R1 舊圈選頁的跟讀線框仍為「按住說話」（歷史頁、刻意不改；wireframes.md 為準）。
+- **證據**：`docs/verification/2026-10-01-design-r1-evidence/`（390 寬截圖）
+- **重跑**：
+  ```
+  PYTHONUTF8=1 python docs/design/r1/contrast_check.py && PYTHONUTF8=1 python docs/design/r1/contrast_check.py r1b
   ```

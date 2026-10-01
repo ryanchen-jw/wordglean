@@ -4,7 +4,7 @@ title: 單字資料管線——CEFR-J／Octanove／TSL／NGSL／ECDICT 匯入與
 status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 14:05'
+updated_date: '2026-10-01 14:47'
 labels:
   - data
 dependencies:
@@ -38,4 +38,6 @@ ordinal: 6000
 
 <!-- SECTION:NOTES:BEGIN -->
 2026-10-01 執行長代決：CEFR-J 用 olp GitHub 1.5 版（1.6 需填表、不可重現下載）；原表不進 repo；衍生級距獨立檔 data/sources/cefrj/levels.json 依原條款標出處、不標 CC BY-SA。規格寫 1.6、『data/ 整體 CC BY-SA』兩處待創辦人裁示是否改條文。字典收錄篩選（有詞頻／lemma／lexicon，排除片語）。截斷：每詞性≤3義項、每詞條≤160字。
+
+2026-10-01 執行長代決（結案前）：D1 lemma.en.txt 檔頭限 research/educational purposes→依授權有疑慮排除，改用 ECDICT exchange 欄反推 56,911 組詞形對照（MIT 範圍）；D2 CEFR-J 官網自述曾比對 EVP 補字→CEFR-J 為規格明文來源、條款明確，維持採用，列報告告知創辦人；D3 s2twp 用詞誤轉（最高級→最高階 458 等）→加獨立反向修正表；lexicon id 保留大小寫、TASK-7 依小寫聚合。統計：lexicon 10,202 筆／9,073 字；字典 12.4 萬詞、596 片、gzip 3.29MB、最大片 113KB；冷啟動中位 12.8ms／最大 193ms（本機無網路延遲）。ECDICT 釋義原始出處未核一手。
 <!-- SECTION:NOTES:END -->

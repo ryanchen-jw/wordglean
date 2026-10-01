@@ -1,9 +1,10 @@
 ---
 id: TASK-3
 title: 設計 R2——設計系統＋高保真畫面定版
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 14:46'
 labels:
   - app
 dependencies:
