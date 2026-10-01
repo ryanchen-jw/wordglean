@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{MMDD}} {{批次名}}——驗收報告</title>
+<!--
+  日結／批次驗收報告模板（受眾＝user，決策導向）。規則見 harness/07-verification-report.md §6。
+  用法：複製本檔 → 另存 .claude/daily-plan/sessions/acceptance-report-<MMDD>-<slug>.html
+
+  填充鐵則（違反即失去本模板的意義）：
+  1. 一卡一 <section class="card">。**一張卡的狀況、決策、新發現、截圖全部寫在自己的卡裡**，
+     不再按資料型別分章。真正無主的（跨卡法遵風險、紀律事件）才進「跨卡事項」。
+  2. 卡片順序＝需裁示 → 半場／未完 → 全綠。全綠卡用 <details class="card done"> 收合成一行。
+  3. 每個決策六欄不可省：問題／選項／建議／影響＋急迫／**不裁示的預設**／**裁示後我會做什麼**。
+     前四欄讓你能判斷，後兩欄讓你不回也能跑、回了不用再問一輪。
+  4. 每卡「驗證」段必附重跑指令（07 §4：每個數字都要有重跑指令）。
+  5. 截圖 base64 內嵌在所屬卡的 <details>；不設全覽章節（首屏不解碼、開檔才快）。
+  6. 🚫 禁上雲（06 §4）：禁 Artifact／claude.ai／任何對外 hosting，本檔只在本機開。
+  7. 事實底、重跑指令的 durable 版另落 docs/verification/<date>-<feature>.md（07 §2）；本檔日拋。
+-->
+<style>
+:root{--fg:#1e293b;--dim:#64748b;--bg:#f8fafc;--card:#fff;--border:#e2e8f0;--accent:#4f46e5;
+      --ok:#16a34a;--warn:#d97706;--info:#2563eb}
+@media(prefers-color-scheme:dark){:root{--fg:#e2e8f0;--dim:#94a3b8;--bg:#0f172a;--card:#1e293b;--border:#334155;--accent:#818cf8;
+      --ok:#4ade80;--warn:#fbbf24;--info:#60a5fa}}
+*{box-sizing:border-box}body{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;color:var(--fg);background:var(--bg);margin:0;padding:2rem;line-height:1.7}
+main{max-width:960px;margin:auto}
+h1{font-size:1.6rem;margin:.2em 0}h2{margin-top:2.2rem;border-left:4px solid var(--accent);padding-left:.6rem}
+code{background:rgba(127,127,127,.15);padding:.1em .35em;border-radius:4px;font-size:.92em}
+.dim{color:var(--dim);font-size:.88em}
+/* 頂部狀態列：全域前提一眼看完 */
+.statusbar{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem 1.2rem}
+.statusbar .flags{margin:.4em 0 0;color:var(--warn);font-weight:600}
+/* 待裁示速覽：純錨點，不重複卡內內容 */
+.inbox{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--warn);border-radius:10px;padding:.6rem 1.2rem 1rem;margin:1rem 0 0}
+.inbox ol{margin:.4em 0;padding-left:1.4em}.inbox li{margin:.25em 0}
+.inbox a{color:var(--accent);font-weight:600;text-decoration:none}.inbox a:hover{text-decoration:underline}
+/* 卡片 */
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem 1.2rem;margin:.8rem 0;scroll-margin-top:1rem}
+.card.needs{border-left:4px solid var(--warn)}
+.card.done{border-left:4px solid var(--ok);padding:.6rem 1.2rem}
+.card h3{margin:.1em 0 .5em;font-size:1.04rem}
+.chip{font-size:.75em;font-weight:700;padding:.1em .5em;border-radius:99px;vertical-align:.15em;white-space:nowrap}
+.chip.ok{color:var(--ok);border:1px solid var(--ok)}
+.chip.half{color:var(--warn);border:1px solid var(--warn)}
+.chip.info{color:var(--info);border:1px solid var(--info)}
+dl{display:grid;grid-template-columns:5.5em 1fr;gap:.3em .9em;margin:.6em 0}
+dt{color:var(--dim);font-size:.88em;font-weight:600}dd{margin:0}
+.rerun{display:inline-block;margin-top:.3em}
+/* 決策區：卡內，六欄 */
+.decision{border:1px dashed var(--warn);border-radius:8px;padding:.7rem .9rem;margin:.8em 0;background:rgba(217,119,6,.06)}
+.decision h4{margin:0 0 .4em;font-size:.98rem;color:var(--warn)}
+.decision table{width:100%;border-collapse:collapse;font-size:.9rem;margin:.3em 0 .5em}
+.decision td,.decision th{border:1px solid var(--border);padding:.35rem .6rem;text-align:left;vertical-align:top}
+.decision th{width:6.5em;color:var(--dim);font-weight:600}
+.decision .fallback{margin:.2em 0;font-size:.92em}
+.finding{font-size:.92em;margin:.5em 0}
+details summary{cursor:pointer;font-weight:600}
+details.card.done summary{font-weight:600;font-size:1rem}
+figure{margin:1rem 0;text-align:center}
+img{max-width:100%;border:1px solid var(--border);border-radius:8px}
+figcaption{color:var(--dim);font-size:.85rem;margin-top:.4rem}
+.warn{background:rgba(217,119,6,.13);border:1px solid var(--warn);border-radius:8px;padding:.8rem 1rem}
+ul.cross{margin:.4em 0;padding-left:1.3em}ul.cross li{margin:.3em 0}
+@media(max-width:600px){body{padding:1rem}dl{grid-template-columns:1fr;gap:.1em}dt{margin-top:.4em}}
+</style></head><body><main>
+
+<header class="statusbar">
+  <h1>{{MMDD}} {{批次名}}——驗收報告</h1>
+  <p class="dim">{{YYYY-MM-DD}}｜{{模式：goal 自主／日結}}｜{{N}} worker・{{M}} 卡｜{{審查路數：走查官／驗收官／…}}</p>
+  <p class="flags">⚠ {{全域前提：全部 commit 已就緒但未 push、未部署}}　｜　待你裁示 {{K}} 項</p>
+</header>
+
+<nav class="inbox">
+  <h2 style="border:0;padding:0;margin:.6em 0 .3em;font-size:1.05rem">待你裁示 {{K}} 項</h2>
+  <ol>
+    <li><a href="#task-nn">TASK-nn</a> {{一句話問題}} —— {{N}} 選一，建議 {{X}}<span class="dim">　·　不裁＝{{預設}}</span></li>
+    <li><a href="#cross">跨卡</a> {{跨卡風險 R1-R3}} —— 逐項做／不做<span class="dim">　·　不裁＝{{預設}}</span></li>
+    <li class="dim">TASK-mm {{僅告知事項}} —— 僅告知、無需動作</li>
+  </ol>
+  <p class="dim">回覆速記：<code>① D ② F+I ③ a ④ R1R2做／R3開卡</code>（照編號回即可，其餘我按「不裁示的預設」走）</p>
+</nav>
+
+<h2>逐卡（需裁示的排前面）</h2>
+
+<!-- ▼ 需裁示卡：狀況＋決策＋新發現＋截圖全在同一張卡內 -->
+<section id="task-nn" class="card needs">
+  <h3><span class="chip half">🟠 {{終態：半場收官／查證結案}}</span>　TASK-nn　{{卡名}}</h3>
+  <p class="dim">{{Repo}} <code>{{commit}}</code>｜{{卡狀態：卡續 In Progress／退 To Do}}</p>
+  <dl>
+    <dt>做了什麼</dt><dd>{{2-4 行：改了什麼、關鍵取捨；卡面前提被翻案要在此明說}}</dd>
+    <dt>驗證</dt><dd>{{測試數字＋隔離審查 verdict＋執行長親驗到哪}}<br>
+      <code class="rerun">{{重跑指令，07 §4 必附}}</code></dd>
+  </dl>
+  <div class="decision">
+    <h4>⚠ 待你裁示 ①　{{一句話問題}}</h4>
+    <table>
+      <tr><th>選項</th><td>A {{…}}／B {{…}}／C {{…}}／<b>D {{…}}</b></td></tr>
+      <tr><th>建議</th><td><b>{{選哪個}}</b> —— {{一句理由，引用既有拍板或 memory 更好}}</td></tr>
+      <tr><th>影響／急迫</th><td>{{影響面}}；急迫度 {{高／中／低}}</td></tr>
+    </table>
+    <p class="fallback">▸ <b>不裁示的預設</b>：{{你不回我就走這條}}</p>
+    <p class="fallback">▸ <b>裁示後我會</b>：{{開卡／改檔／消卡／併入 TASK-XX}}</p>
+  </div>
+  <p class="finding">📌 <b>新發現</b>（本卡副產物，未動手）：{{…；無則整行刪}}</p>
+  <details><summary>📷 證據 {{n}} 張</summary>
+    <figure><img src="data:image/png;base64,{{…}}" loading="lazy"><figcaption>{{說明}}</figcaption></figure>
+  </details>
+</section>
+
+<!-- ▼ 全綠無待辦卡：<details> 收合成一行，展開才看細節 -->
+<details id="task-kk" class="card done"><summary><span class="chip ok">✅ Done</span>　TASK-kk　{{卡名}}　<span class="dim">— 無待辦</span></summary>
+  <p class="dim">{{Repo}} <code>{{commit}}</code></p>
+  <dl>
+    <dt>做了什麼</dt><dd>{{…}}</dd>
+    <dt>驗證</dt><dd>{{…}}<br><code class="rerun">{{重跑指令}}</code></dd>
+  </dl>
+  <details><summary>📷 證據 {{n}} 張</summary>
+    <figure><img src="data:image/png;base64,{{…}}" loading="lazy"><figcaption>{{說明}}</figcaption></figure>
+  </details>
+</details>
+
+<h2 id="cross">跨卡事項</h2>
+<div class="card needs">
+  <h4 style="margin:.2em 0">⚠ 待你裁示 ④　{{無主的跨卡決策，例：跨卡風險 R1-R3／未建頁面}}</h4>
+  <table style="width:100%;border-collapse:collapse;font-size:.9rem">
+    <tr><th style="width:3em;border:1px solid var(--border);padding:.35rem .6rem;text-align:left">R1</th>
+        <td style="border:1px solid var(--border);padding:.35rem .6rem">{{風險}} → {{建議動作}}（{{成本}}）</td></tr>
+  </table>
+  <p class="fallback">▸ <b>不裁示的預設</b>：{{…}}　｜　▸ <b>裁示後我會</b>：{{…}}</p>
+</div>
+<ul class="cross">
+  <li><b>紀律事件</b>：{{worker 越界／規則缺口與已補措施；無則刪}}</li>
+</ul>
+
+<h2>誠實聲明</h2>
+<div class="warn">
+  {{哪些證據 transient、哪些驗證跳過、哪些 P2 延後、哪些是既有問題非本波引入}}<br>
+  統一驗證報告（事實底＋重跑指令）：<code>docs/verification/{{YYYY-MM-DD}}-{{feature}}.md</code>；證據圖：<code>docs/verification/{{feature}}-evidence/</code>
+</div>
+
+</main></body></html>

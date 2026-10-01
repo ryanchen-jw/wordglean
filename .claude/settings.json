@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**/.env.example)",
+      "Edit(**/.env.example)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf /*)",
+      "Bash(git push * --force *)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)"
+    ],
+    "ask": [
+      "Read(//**/.env)",
+      "Read(//**/.env.*)",
+      "Bash(git push *)",
+      "Bash(gh pr merge *)",
+      "Bash(gh secret *)",
+      "Bash(gh workflow run *)",
+      "Bash(gh auth token *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pythonw \"$CLAUDE_PROJECT_DIR/.claude/harness/hooks/bash_gate.py\"",
+            "timeout": 15,
+            "statusMessage": "bash_gate 權限判讀"
+          }
+        ]
+      }
+    ]
+  }
+}
