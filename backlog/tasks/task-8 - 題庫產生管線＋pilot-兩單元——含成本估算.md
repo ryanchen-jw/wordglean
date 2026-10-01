@@ -1,10 +1,10 @@
 ---
 id: TASK-8
 title: 題庫產生管線＋pilot 兩單元——含成本估算
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 15:37'
+updated_date: '2026-10-01 16:01'
 labels:
   - content
 dependencies:
@@ -25,8 +25,14 @@ ordinal: 8000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 schema 與自動檢查器有單元測試，含刻意注入的越級字、雙答案、簡體字三種負向案例被擋
+- [x] #1 schema 與自動檢查器有單元測試，含刻意注入的越級字、雙答案、簡體字三種負向案例被擋
 - [ ] #2 pilot 兩單元產出且自動檢查全綠，實際花費與 token 數記錄
 - [ ] #3 全量成本估算報告（三個候選模型的品質抽樣比較＋金額）
 - [ ] #4 以 Artifact 圈選頁交付 pilot 抽審，停 In Review 等 G5；創辦人核准預算上限後才 Done
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-02 Stage 0–3 完成（分支 worktree-task-8-item-bank，752f50b→fb2e6cb）：題目 schema、自動檢查器（越級／無級距／簡體＋opencc s2twp 不變性／大陸用語／長度／選項／答案）、版本化產題與判題 prompt、產題程式（金鑰缺席 exit 2 拒跑、預算硬上限、最壞情況逐呼叫把關、失敗不重跑）、乾跑 16 課全綠、content 測試 73/73。代決：每課題量（單字卡 8、聽打 1、聽選 1、跟讀 2、選擇 2、閱讀 1 篇 2 題、寫作中翻英與造句各 1）；候選 sonnet-5.5／gemini-3.8-flash／gpt-6-luna、判題不同家族、deepseek 不列；無級距字一律擋、白名單人審；模型比較加抽 b1-u14-l01 補情境題代表性；opencc-js 1.4.2（MIT AND Apache-2.0）只用於產題管線、Stage 5 補 NOTICE。成本（2026-10-01 OpenRouter 價）：pilot 約 US/usr/bin/bash.40、最壞 US.34；全量 984 課 US.3（luna）～US8（sonnet）。卡點：本機無開發方 OpenRouter 金鑰→Stage 4 真打需創辦人放 .env 後放行。停 In Review（G5 前置）。
+<!-- SECTION:NOTES:END -->
