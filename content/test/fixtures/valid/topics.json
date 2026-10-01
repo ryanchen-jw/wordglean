@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "topics": [
+    { "id": "self-intro", "titleZh": "自我介紹", "titleEn": "About Me", "domain": "life", "scope": "姓名、問候", "sources": ["fixture"] },
+    { "id": "food", "titleZh": "飲食", "titleEn": "Food", "domain": "life", "scope": "食物、飲料", "sources": ["fixture"] },
+    { "id": "travel", "titleZh": "旅行", "titleEn": "Travel", "domain": "life", "scope": "交通、住宿", "sources": ["fixture"] }
+  ],
+  "levels": {
+    "A1": ["self-intro", "food"],
+    "A2": ["travel"],
+    "B1": ["travel"],
+    "B2": ["travel"],
+    "C1": ["travel"]
+  }
+}

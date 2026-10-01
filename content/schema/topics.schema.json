@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linguaapp.local/schema/topics.schema.json",
+  "title": "主題清單（content/curriculum/topics.json）",
+  "description": "topics＝主題定義；levels＝各級距依學習順序列出的主題 id（每個主題在該級可展開成一或多個單元）。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "topics", "levels"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/topic" }
+    },
+    "levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A1", "A2", "B1", "B2", "C1"],
+      "properties": {
+        "A1": { "$ref": "#/$defs/topicIdList" },
+        "A2": { "$ref": "#/$defs/topicIdList" },
+        "B1": { "$ref": "#/$defs/topicIdList" },
+        "B2": { "$ref": "#/$defs/topicIdList" },
+        "C1": { "$ref": "#/$defs/topicIdList" }
+      }
+    }
+  },
+  "$defs": {
+    "topicId": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "topicIdList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/topicId" }
+    },
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "titleZh", "titleEn", "domain", "scope", "sources"],
+      "properties": {
+        "id": { "$ref": "#/$defs/topicId" },
+        "titleZh": { "type": "string", "minLength": 1 },
+        "titleEn": { "type": "string", "minLength": 1 },
+        "domain": {
+          "description": "life＝生活；toeic＝多益職場情境；general＝跨主題的功能字與抽象用字（描述、數量、時間、思考等）",
+          "enum": ["life", "toeic", "general"]
+        },
+        "scope": {
+          "description": "涵蓋範圍（繁中）：分類單字與產題時判斷字是否屬於此主題的依據",
+          "type": "string",
+          "minLength": 1
+        },
+        "sources": {
+          "description": "主題出處代碼（定義見 content/CLAUDE.md）",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

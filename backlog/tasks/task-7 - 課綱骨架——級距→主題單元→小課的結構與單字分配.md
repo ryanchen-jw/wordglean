@@ -1,10 +1,10 @@
 ---
 id: TASK-7
 title: 課綱骨架——級距→主題單元→小課的結構與單字分配
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 07:53'
+updated_date: '2026-10-01 15:38'
 labels:
   - content
 dependencies:
@@ -25,8 +25,14 @@ ordinal: 7000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 curriculum schema 與 validator 完成並有單元測試
-- [ ] #2 A1–C1 全部單元與小課生成，validator 全綠；統計報告列每級單元數、小課數、字數
-- [ ] #3 多益常考字在 B1–C1 的覆蓋率列入報告
-- [ ] #4 content/CLAUDE.md 寫好
+- [x] #1 curriculum schema 與 validator 完成並有單元測試
+- [x] #2 A1–C1 全部單元與小課生成，validator 全綠；統計報告列每級單元數、小課數、字數
+- [x] #3 多益常考字在 B1–C1 的覆蓋率列入報告
+- [x] #4 content/CLAUDE.md 寫好
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-01 驗收 PASS（隔離驗收官，含獨立重算）。代決：主題清單參考 CEFR-J 主題與 ETS 情境（不問創辦人，TASK-8 pilot 時可調整）；字→主題人工分類（Claude 訂閱額度、非 app 金鑰）；以小寫 headword 為單位、最低級引入一次；C2 不排課；每課 6–10 字目標 8；小課 ID a1-u01-l03 上線後凍結；授權依 data/LICENSES.md。選型：ajv 8.20（MIT）＋node:test；context7 未登入（偏離）。待 G5：TSL 377 字無級距未排課；B2/C1 有單課單元、C1『情緒與個性』占 25%。
+<!-- SECTION:NOTES:END -->

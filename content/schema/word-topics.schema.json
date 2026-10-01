@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linguaapp.local/schema/word-topics.schema.json",
+  "title": "字→主題分類（content/curriculum/word-topics.json）",
+  "description": "人工分類結果：每個級距底下，主題 id → 該主題的字（小寫 headword）。排課器依此產生各級距檔。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "levels"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "A1": { "$ref": "#/$defs/topicWords" },
+        "A2": { "$ref": "#/$defs/topicWords" },
+        "B1": { "$ref": "#/$defs/topicWords" },
+        "B2": { "$ref": "#/$defs/topicWords" },
+        "C1": { "$ref": "#/$defs/topicWords" }
+      }
+    }
+  },
+  "$defs": {
+    "topicWords": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z][a-z0-9-]*$" },
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

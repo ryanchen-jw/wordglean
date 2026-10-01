@@ -1,9 +1,10 @@
 ---
 id: TASK-8
 title: 題庫產生管線＋pilot 兩單元——含成本估算
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 15:37'
 labels:
   - content
 dependencies:

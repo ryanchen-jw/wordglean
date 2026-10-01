@@ -6,6 +6,7 @@
 
 | 卡 | 類型 | commit | 自動化證據 | UI 走查 |
 |---|---|---|---|---|
+| TASK-7 | feat（課綱骨架） | 見 git log「TASK-7」 | content 測試 41/41；validator 全綠；重建 sha256 一致；獨立重算重複／越界／漏排皆 0 | N/A |
 | TASK-1 | investigate（語音原型） | 見 git log「TASK-1」 | wer 單元 7/7；結論數字抽 6 處與 results JSON 吻合 | N/A（原型；真機待 G4） |
 | TASK-6 | feat（單字資料管線） | 見 git log「TASK-6」 | data pytest 30/30（無原始檔模式 28＋2 skip）；重建 602 檔 sha256 0 差異；冷啟動最大 50.2ms；Oxford 守衛 4 種植入皆紅 | N/A |
 | TASK-2 | design（R1 線框＋方向，含 R1b 重做） | 見 git log「TASK-2」 | 對比度 R1 63 組／R1b 84 組全過 AA（腳本可重現、手算吻合、突變 exit 1） | 圈選頁 2 輪（G1） |
@@ -83,4 +84,16 @@
 - **重跑**：
   ```
   cd prototypes/voice-poc && npm ci && node --test && node tests/summarize.mjs
+  ```
+
+## TASK-7 · 課綱骨架——級距→主題單元→小課與單字分配
+
+- **改了什麼**：content/schema（級距檔、主題清單、字→主題分類）、validator（10 種錯誤代碼）、分配器、A1–C1 課綱：185 單元、984 小課、7,773 字（A1 23/135/1063、A2 27/158/1241、B1 43/269/2139、B2 53/304/2417、C1 39/118/913）；41 個主題（多益情境對 ETS 手冊、生活主題對 CEFR 2001 一手原文）；STATS.md；content/CLAUDE.md。
+- **驗收官實跑**（隔離、PASS）：npm test 41/41；validator exit 0；重建 sha256 逐檔一致；獨立腳本重算重複引入 0、字數越界 0、級距不符 0、漏排 0、TSL B1–C1 覆蓋 51.7%；植入重複字與越級字 → DUPLICATE_INTRO／LEVEL_MISMATCH、exit 1。
+- **代決**：以小寫 headword 為單位、取最低級、引入一次；C2 不排課（875 字只有 C2）；大小寫合併 4 組（IT/it、March/march、May/may、Miss/miss）。
+- **待 G5 一併裁示**：TSL 多益常考字 30.2%（377 字）在單字表無級距、未排課；總課數 984 決定 TASK-9 成本。
+- **證據**：`docs/verification/2026-10-01-curriculum-evidence/smoke.md`
+- **重跑**：
+  ```
+  npm test --prefix content && node content/scripts/validate-curriculum.mjs
   ```

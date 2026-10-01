@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "topics": [
+    { "id": "core-words", "titleZh": "基礎常用字", "titleEn": "Core Words", "domain": "general", "scope": "代名詞、冠詞、介系詞、連接詞、助動詞、be 動詞、疑問詞、最常用的副詞等功能字", "sources": ["linguaapp"] },
+    { "id": "numbers-time", "titleZh": "數字、時間與日期", "titleEn": "Numbers & Time", "domain": "general", "scope": "數字、序數、時刻、星期、月份、季節、頻率與時間副詞", "sources": ["linguaapp"] },
+    { "id": "describing-things", "titleZh": "描述事物", "titleEn": "Describing Things", "domain": "general", "scope": "顏色、形狀、大小、材質、新舊、好壞等描述性形容詞與相關名詞", "sources": ["linguaapp"] },
+    { "id": "everyday-actions", "titleZh": "常用動作", "titleEn": "Everyday Actions", "domain": "general", "scope": "不專屬特定情境的常用動詞（拿、放、開、找、幫忙、開始、結束等）與移動、位置用字", "sources": ["linguaapp"] },
+    { "id": "thoughts-opinions", "titleZh": "想法與意見", "titleEn": "Thoughts & Opinions", "domain": "general", "scope": "思考、相信、同意、建議、判斷、表達立場與態度的用字", "sources": ["linguaapp"] },
+    { "id": "quantity-degree", "titleZh": "數量與程度", "titleEn": "Quantity & Degree", "domain": "general", "scope": "數量、比例、增減、程度副詞、比較與範圍", "sources": ["linguaapp"] },
+    { "id": "change-cause", "titleZh": "變化與因果", "titleEn": "Change & Cause", "domain": "general", "scope": "變化、過程、原因、結果、影響、條件與可能性", "sources": ["linguaapp"] },
+    { "id": "academic-argument", "titleZh": "論述與學術用語", "titleEn": "Academic & Argument", "domain": "general", "scope": "分析、論證、研究、概念、證據、抽象名詞等正式書面用字", "sources": ["cefr-domain:educational"] },
+
+    { "id": "self-intro", "titleZh": "自我介紹", "titleEn": "About Me", "domain": "life", "scope": "姓名、年齡、國籍、住址、聯絡方式、職業身分等個人資料", "sources": ["t90:1"] },
+    { "id": "family-friends", "titleZh": "家人與朋友", "titleEn": "Family & Friends", "domain": "life", "scope": "家庭成員、親屬、朋友、人際關係、社交邀約與往來", "sources": ["t90:6"] },
+    { "id": "feelings-personality", "titleZh": "情緒與個性", "titleEn": "Feelings & Personality", "domain": "life", "scope": "情緒、感受、個性特質、人的行為表現", "sources": ["t90:6"] },
+    { "id": "appearance-clothes", "titleZh": "外表與衣著", "titleEn": "Appearance & Clothes", "domain": "life", "scope": "外貌、身材、髮型、衣服、配件、穿著", "sources": ["t90:1", "t90:9"] },
+    { "id": "home", "titleZh": "居家生活", "titleEn": "Home", "domain": "life", "scope": "房屋、房間、家具、家電、家事、居住環境", "sources": ["t90:2"] },
+    { "id": "daily-routine", "titleZh": "日常作息", "titleEn": "Daily Routine", "domain": "life", "scope": "起床、通勤、工作或上學、睡眠等每日例行活動", "sources": ["t90:3"] },
+    { "id": "food-drink", "titleZh": "食物與飲料", "titleEn": "Food & Drink", "domain": "life", "scope": "食物、飲料、餐點、烹飪、味道、用餐", "sources": ["t90:10"] },
+    { "id": "shopping", "titleZh": "購物", "titleEn": "Shopping", "domain": "life", "scope": "商店、商品、價格、付款、退換貨", "sources": ["t90:9"] },
+    { "id": "body-health", "titleZh": "身體與健康", "titleEn": "Body & Health", "domain": "life", "scope": "身體部位、生病與症狀、看醫生、保健", "sources": ["t90:7"] },
+    { "id": "hobbies-leisure", "titleZh": "休閒與嗜好", "titleEn": "Hobbies & Leisure", "domain": "life", "scope": "休閒活動、嗜好、遊戲、音樂、閱讀、出遊", "sources": ["t90:4"] },
+    { "id": "sports", "titleZh": "運動", "titleEn": "Sports", "domain": "life", "scope": "運動項目、比賽、健身、場地與器材", "sources": ["t90:4"] },
+    { "id": "school-learning", "titleZh": "學校與學習", "titleEn": "School & Learning", "domain": "life", "scope": "學校、課程、科目、考試、學習活動", "sources": ["t90:8"] },
+    { "id": "places-town", "titleZh": "城鎮與地點", "titleEn": "Places in Town", "domain": "life", "scope": "建築、街道、公共場所、方位與問路、國家與地理", "sources": ["t90:12"] },
+    { "id": "getting-around", "titleZh": "交通與旅行", "titleEn": "Getting Around", "domain": "life", "scope": "交通工具、搭車、行程、住宿、觀光", "sources": ["t90:5"] },
+    { "id": "weather-nature", "titleZh": "天氣與自然", "titleEn": "Weather & Nature", "domain": "life", "scope": "天氣、氣候、動植物、自然景觀", "sources": ["t90:14", "t90:2"] },
+    { "id": "public-services", "titleZh": "生活服務", "titleEn": "Services", "domain": "life", "scope": "郵局、銀行櫃台、警察、修理、公共機關等日常服務", "sources": ["t90:11"] },
+    { "id": "language-communication", "titleZh": "語言與溝通", "titleEn": "Language & Communication", "domain": "life", "scope": "語言、說話、寫字、溝通方式、電話與訊息", "sources": ["t90:13"] },
+    { "id": "media-culture", "titleZh": "媒體與文化", "titleEn": "Media & Culture", "domain": "life", "scope": "電視、廣播、報章、網路、文化與藝術活動", "sources": ["t90:4"] },
+    { "id": "environment", "titleZh": "環境議題", "titleEn": "Environment", "domain": "life", "scope": "污染、氣候變遷、資源、能源、保育", "sources": ["t90:2"] },
+    { "id": "society-issues", "titleZh": "社會與時事", "titleEn": "Society & Current Affairs", "domain": "life", "scope": "政府、政治、法律、犯罪、經濟與社會議題、新聞時事", "sources": ["cefr-domain:public"] },
+
+    { "id": "offices", "titleZh": "辦公室日常", "titleEn": "Offices", "domain": "toeic", "scope": "董事會、委員會、信件、備忘錄、電話與電子郵件、辦公設備與家具、辦公流程", "sources": ["ets-lr:offices"] },
+    { "id": "personnel", "titleZh": "人事與求職", "titleEn": "Personnel", "domain": "toeic", "scope": "招募、雇用、退休、薪資、升遷、求職申請、徵才廣告、退休金、獎項", "sources": ["ets-lr:personnel"] },
+    { "id": "general-business", "titleZh": "商務往來", "titleEn": "General Business", "domain": "toeic", "scope": "合約、談判、合併、行銷、銷售、保固、商業規劃、會議研討、勞資關係", "sources": ["ets-lr:general-business"] },
+    { "id": "finance-budgeting", "titleZh": "財務與預算", "titleEn": "Finance & Budgeting", "domain": "toeic", "scope": "銀行、投資、稅務、會計、帳單", "sources": ["ets-lr:finance-budgeting"] },
+    { "id": "purchasing", "titleZh": "採購與物流", "titleEn": "Purchasing", "domain": "toeic", "scope": "採買、訂購用品、出貨運送、發票", "sources": ["ets-lr:purchasing"] },
+    { "id": "dining-out", "titleZh": "餐敘與外食", "titleEn": "Dining Out", "domain": "toeic", "scope": "商務與非正式午餐、宴會、招待會、餐廳訂位", "sources": ["ets-lr:dining-out"] },
+    { "id": "travel", "titleZh": "出差與旅程安排", "titleEn": "Travel", "domain": "toeic", "scope": "火車、飛機、計程車、巴士、船與渡輪、票券、時刻表、車站與機場廣播、租車、飯店、訂位、延誤與取消", "sources": ["ets-lr:travel"] },
+    { "id": "entertainment", "titleZh": "藝文與娛樂", "titleEn": "Entertainment", "domain": "toeic", "scope": "電影、劇場、音樂、藝術、展覽、博物館、媒體", "sources": ["ets-lr:entertainment"] },
+    { "id": "health", "titleZh": "醫療與保險", "titleEn": "Health", "domain": "toeic", "scope": "醫療保險、看診、牙醫、診所、醫院", "sources": ["ets-lr:health"] },
+    { "id": "housing-property", "titleZh": "房產與設施", "titleEn": "Housing & Corporate Property", "domain": "toeic", "scope": "營建、規格、買賣與租賃、水電瓦斯服務", "sources": ["ets-lr:housing-corporate-property"] },
+    { "id": "manufacturing", "titleZh": "製造與品管", "titleEn": "Manufacturing", "domain": "toeic", "scope": "生產線、廠務管理、品質管制", "sources": ["ets-lr:manufacturing"] },
+    { "id": "technical-areas", "titleZh": "科技與技術", "titleEn": "Technical Areas", "domain": "toeic", "scope": "電子、科技、電腦、實驗室與相關設備、技術規格", "sources": ["ets-lr:technical-areas"] },
+    { "id": "corporate-development", "titleZh": "研發與企業發展", "titleEn": "Corporate Development", "domain": "toeic", "scope": "研究、產品開發", "sources": ["ets-lr:corporate-development"] }
+  ],
+  "levels": {
+    "A1": [
+      "core-words", "self-intro", "numbers-time", "family-friends", "describing-things", "home",
+      "daily-routine", "food-drink", "appearance-clothes", "shopping", "places-town", "getting-around",
+      "body-health", "hobbies-leisure", "weather-nature", "school-learning", "everyday-actions", "feelings-personality"
+    ],
+    "A2": [
+      "core-words", "numbers-time", "describing-things", "everyday-actions", "family-friends", "feelings-personality",
+      "appearance-clothes", "home", "daily-routine", "food-drink", "shopping", "places-town",
+      "getting-around", "body-health", "hobbies-leisure", "sports", "school-learning", "weather-nature",
+      "public-services", "language-communication", "media-culture", "quantity-degree", "thoughts-opinions",
+      "change-cause"
+    ],
+    "B1": [
+      "core-words", "numbers-time", "everyday-actions", "describing-things", "quantity-degree", "thoughts-opinions", "change-cause",
+      "family-friends", "feelings-personality", "appearance-clothes", "home", "daily-routine", "food-drink",
+      "dining-out", "shopping", "purchasing", "places-town", "getting-around", "travel",
+      "body-health", "health", "hobbies-leisure", "sports", "entertainment", "school-learning",
+      "weather-nature", "environment", "public-services", "society-issues", "language-communication",
+      "media-culture", "offices", "personnel"
+    ],
+    "B2": [
+      "core-words", "numbers-time", "daily-routine", "shopping", "everyday-actions", "describing-things", "quantity-degree", "thoughts-opinions", "change-cause", "academic-argument",
+      "family-friends", "feelings-personality", "appearance-clothes", "home", "food-drink", "body-health",
+      "hobbies-leisure", "sports", "school-learning", "places-town", "getting-around", "weather-nature",
+      "environment", "public-services", "language-communication", "media-culture", "society-issues",
+      "offices", "personnel", "general-business", "finance-budgeting", "purchasing", "dining-out",
+      "travel", "entertainment", "health", "housing-property", "manufacturing", "technical-areas",
+      "corporate-development"
+    ],
+    "C1": [
+      "core-words", "numbers-time", "daily-routine", "shopping", "everyday-actions", "describing-things", "quantity-degree", "thoughts-opinions", "change-cause", "academic-argument",
+      "family-friends", "feelings-personality", "appearance-clothes", "home", "food-drink", "body-health",
+      "hobbies-leisure", "sports", "school-learning", "places-town", "getting-around", "weather-nature",
+      "environment", "public-services", "language-communication", "media-culture", "society-issues",
+      "offices", "personnel", "general-business", "finance-budgeting", "purchasing", "dining-out",
+      "travel", "entertainment", "health", "housing-property", "manufacturing", "technical-areas",
+      "corporate-development"
+    ]
+  }
+}
