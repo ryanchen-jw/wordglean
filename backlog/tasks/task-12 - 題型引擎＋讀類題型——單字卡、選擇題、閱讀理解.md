@@ -4,6 +4,7 @@ title: 題型引擎＋讀類題型——單字卡、選擇題、閱讀理解
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 16:41'
 labels:
   - app
 dependencies:
@@ -28,3 +29,9 @@ ordinal: 12000
 - [ ] #2 三種讀類題型 E2E 在兩個手機 project 通過
 - [ ] #3 答對／答錯回饋符合定版設計（視覺 smoke 截圖）
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-02 創辦人 G2 裁示：單字卡改為四選一中文釋義（不翻面、不自評四級），FSRS 評分沿用本卡通用對應（答錯＝Again、答對但 >15 秒或用提示＝Hard、答對＝Good；不提供 Easy），取代本卡原代決『單字卡由使用者自評四級』。以 docs/design 定版為準。
+<!-- SECTION:NOTES:END -->

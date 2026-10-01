@@ -4,7 +4,7 @@ title: 說——Moonshine STT 整合與跟讀題、兩欄修正
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 18:00'
+updated_date: '2026-10-01 16:41'
 labels:
   - app
 dependencies:
@@ -32,3 +32,9 @@ ordinal: 14000
 - [ ] #3 使用者修正後分數不變、該題標記「模型聽錯」且紀錄寫入，有測試
 - [ ] #4 Web Speech 後備需同意才啟用，有測試；網路面板確認錄音無任何上傳請求
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-02 創辦人 G2 裁示（規格 §6 已改寫）：跟讀辨識完先讓使用者確認／修正，按送出後以送出句與目標句逐字比對計分；不再有『模型聽錯、不計分』標記。辨識結果與送出句差異仍要保留紀錄（speech_corrections）。
+<!-- SECTION:NOTES:END -->

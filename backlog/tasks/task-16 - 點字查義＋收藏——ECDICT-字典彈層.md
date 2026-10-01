@@ -4,7 +4,7 @@ title: 點字查義＋收藏——ECDICT 字典彈層
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 18:00'
+updated_date: '2026-10-01 16:41'
 labels:
   - app
 dependencies:
@@ -32,3 +32,9 @@ ordinal: 16000
 - [ ] #3 彈層開啟延遲（chromium 模擬，字典已快取）< 150ms
 - [ ] #4 詞形還原命中來源（資料表／規則）統計列入報告，30 例中大多應由資料表命中
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-02 創辦人 G2 裁示：全 App 只要出現英文單字（題目、選項、短文、例句、回饋、單字卡、單字庫、批改結果）都要可點查義，作答中查字不影響題目狀態。規格見 docs/design 定版的『可點英文字』元件。
+<!-- SECTION:NOTES:END -->

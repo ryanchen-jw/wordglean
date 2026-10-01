@@ -1,10 +1,10 @@
 ---
 id: TASK-3
 title: 設計 R2——設計系統＋高保真畫面定版
-status: In Review
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 15:35'
+updated_date: '2026-10-01 16:40'
 labels:
   - app
 dependencies:
@@ -36,4 +36,6 @@ ordinal: 3000
 
 <!-- SECTION:NOTES:BEGIN -->
 2026-10-01 Stage 0–4 完成（分支 worktree-task-2-design-r1：1be6ec3 tokens＋Tailwind 4 theme＋對比度單元測試、0276998 元件規格、9317afe 審閱頁、0dd1cc5／9aee780 自審修正與截圖）。代決：對比度進 app 單元測試（43 項，突變紅證）；PWA 主題色改 #f6f1e7；字體自 host 留 TASK-11（@fontsource 套件名已列）；補畫資料匯出／清除、依熟悉度篩；字級 rem 等比放大。webkit＋chromium 6 組 204 張截圖、破版 0、<44px 觸控 0。G2 審閱頁：https://claude.ai/artifact/JCK7dHeNbSybiqXod2h5HG（db screens/choices，發佈後 list 正常、空）。待 G2 微調時處理：模型大小文字（90MB／28MB）依 TASK-1 實測與 TTS 裁示更新；補畫離開小課確認框、清除資料二次確認、小課完成頁。停 In Review 等 G2。
+
+2026-10-02 G2 第一輪結果（Artifact db）：s01/02/03/05/06/09/10/11 OK；s04 跟讀改為確認／修正後送出、以送出句計分（規格 §6 已依創辦人裁示改寫）；s07 單字卡改為四選一中文釋義、FSRS 依 TASK-12 通用對應自動評分（Again/Hard/Good）；s08 全 App 英文字皆可點查義（全域規則）；字體選主案黑體。s09 提問（到期依據）已在對話中回答：FSRS 依每字穩定度預測記得率降到 90% 之日。Stage 5 微調中。
 <!-- SECTION:NOTES:END -->
