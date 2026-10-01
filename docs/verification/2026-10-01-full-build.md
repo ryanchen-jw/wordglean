@@ -128,3 +128,15 @@
   cd app && LINGUA_SYNC_ANON_KEY=… LINGUA_SYNC_SERVICE_KEY=… npm run e2e:sync -- --workers=1   # key 取自 supabase status -o env
   npx supabase@2.118.0 stop
   ```
+
+## TASK-11 · App 外殼與主要畫面——依定版
+
+- **改了什麼**：自寫 history 路由（app/src/router.ts、routes.tsx）＋底部三格導覽、離線提示條；首頁 s01（預設／今天完成／新課暫停／第一次開啟）、課程地圖 s02（級距切換、小課彈層）、單字庫 s09（全部／到期／收藏、熟悉度、英文搜尋、50 筆分批）、設定 s11（每日新字數、外觀／字級 localStorage、模型下載 UI 骨架、匯出、帳號與同步接 TASK-20 AccountEntry）、清除確認 s13；加到主畫面卡（Android 一鍵／iOS 說明）；workbox 預快取 22 項＋SPA fallback＋字體 runtime 快取；app/src/i18n/zh-TW.json＋型別化 t()（draft-pending-G3）；共用 Button／Card／BottomSheet／OptionSheet；appDb 單例。
+- **代決**：五畫面＝s01/s02/s09/s11/s13；目前級距暫由課程進度推導（正式欄位 TASK-17）；小課顯示單元名＋序號；單字庫中文釋義交 TASK-16；熟悉＝穩定度 ≥21 天；偏差 22 項附理由（以 s13 畫面為準、分隔符號維持 muted——設計截圖色邊為 ClearType）。
+- **驗收**：第一輪 FAIL（e2e:sync 6/12 紅：折行量法不一；差異清單漏 1 項）＋走查 P0×2 → 修正後複驗 PASS：lint／typecheck／build 0、單元 219–220、e2e 42–44 過 2 跳（Windows webkit 無法模擬離線）、e2e:sync 12/12；守衛突變皆紅（英文字串、預快取、折行量測、停用鈕圖示）。走查重驗再抓到 320 特大列表伸出卡片 +39px → 加子元素溢出守衛（修前紅）後修正。
+- **未驗**：AC#3 webkit 離線重開（工具限制）。
+- **證據**：`docs/verification/2026-10-02-task11-shell-evidence/`（proposal、design-diff）
+- **重跑**：
+  ```
+  cd app && npm run lint && npm run typecheck && npm test && npm run build && E2E_PORT=5302 npx playwright test --workers=1
+  ```
