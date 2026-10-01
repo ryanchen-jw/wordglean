@@ -1,0 +1,217 @@
+{
+  "_status": "draft-pending-G3",
+  "common": {
+    "action": {
+      "back": "返回",
+      "close": "關閉"
+    },
+    "level": {
+      "toeic": "{level}｜約多益 {score}+"
+    }
+  },
+  "nav": {
+    "bar": {
+      "label": "主要導覽",
+      "today": "今天",
+      "course": "課程",
+      "words": "單字庫"
+    }
+  },
+  "system": {
+    "offline": {
+      "strip": "目前離線：複習與已下載的課程仍可使用"
+    }
+  },
+  "home": {
+    "header": {
+      "title": "今天",
+      "settings": "設定",
+      "unplaced": "還沒有分級"
+    },
+    "today": {
+      "title": "今天的學習",
+      "summaryReviewLesson": "先複習，再上一課・約 {min} 分鐘",
+      "summaryLesson": "上一課・約 {min} 分鐘",
+      "summaryReview": "先把到期的單字複習完・約 {min} 分鐘",
+      "startButton": "開始今天的學習",
+      "startReview": "開始複習"
+    },
+    "due": {
+      "label": "到期複習",
+      "minutes": "約 {min} 分鐘"
+    },
+    "next": {
+      "label": "下一課",
+      "title": "{unit} {n}",
+      "meta": "約 {min} 分鐘・新字 {count}",
+      "levelDone": "這個級距的課都上完了"
+    },
+    "paused": {
+      "title": "新課暫停",
+      "body": "待複習超過 {n} 個，降回 {n} 以下會自動恢復"
+    },
+    "progress": {
+      "label": "今天已完成",
+      "reviews": "複習 {done}／{total}",
+      "lessons": "新課 {done}／{total}"
+    },
+    "done": {
+      "title": "今天的學習都完成了",
+      "tomorrow": "明天約有 {n} 個單字到期。",
+      "extraLesson": "再上一課（選用）"
+    },
+    "first": {
+      "title": "先花 5 分鐘找出你的起點",
+      "body": "勾出認識的單字，我們會推薦適合的級距。之後隨時可以在設定裡調整。",
+      "startButton": "開始分級測驗",
+      "skip": "跳過，從 A1 開始"
+    }
+  },
+  "course": {
+    "header": {
+      "title": "課程"
+    },
+    "level": {
+      "tabsLabel": "級距"
+    },
+    "unit": {
+      "progress": "{done}／{total} 課",
+      "current": "目前這課",
+      "lesson": "第 {n} 課"
+    },
+    "sheet": {
+      "label": "小課詳情",
+      "title": "{unit} {n}",
+      "minutes": "約 {min} 分鐘",
+      "newWords": "新字 {n} 個",
+      "startButton": "開始這一課"
+    }
+  },
+  "words": {
+    "header": {
+      "title": "單字庫",
+      "summary": "共 {total} 字・今天到期 {due}",
+      "summaryEmpty": "共 0 字"
+    },
+    "filter": {
+      "search": "搜尋英文單字",
+      "scopeLabel": "篩選範圍",
+      "all": "全部",
+      "due": "到期",
+      "favorite": "收藏",
+      "familiarity": "熟悉度：{name}",
+      "familiaritySheet": "依熟悉度篩選",
+      "familiarityAll": "全部",
+      "familiarityNew": "陌生",
+      "familiarityLearning": "學習中",
+      "familiarityFamiliar": "熟悉"
+    },
+    "due": {
+      "today": "今天到期",
+      "days": "{n} 天後",
+      "months": "{n} 個月後",
+      "years": "{n} 年後",
+      "newWord": "新字"
+    },
+    "list": {
+      "favorited": "已收藏",
+      "noMatch": "沒有符合條件的單字"
+    },
+    "empty": {
+      "title": "單字庫還是空的",
+      "body": "上完第一課，學過的字會出現在這裡；查字時按「收藏」也能加進來。",
+      "button": "去上第一課"
+    }
+  },
+  "settings": {
+    "header": {
+      "title": "設定"
+    },
+    "learning": {
+      "title": "學習",
+      "level": "目前級距",
+      "unplaced": "還沒有分級",
+      "dailyNew": "每日新字數",
+      "dailyNewSheet": "每日新字數"
+    },
+    "ai": {
+      "title": "AI 批改（OpenRouter）",
+      "status": "狀態：未設定",
+      "oauthButton": "用 OpenRouter 帳號一鍵授權",
+      "pasteKey": "改用貼上金鑰",
+      "privacy": "金鑰只存在這支手機，不會傳到我們的伺服器"
+    },
+    "appearance": {
+      "title": "外觀與字級",
+      "theme": "外觀",
+      "themeSystem": "跟隨系統",
+      "themeLight": "淺色",
+      "themeDark": "深色",
+      "textSize": "字級大小",
+      "textSizeMd": "標準",
+      "textSizeLg": "大",
+      "textSizeXl": "特大"
+    },
+    "voice": {
+      "title": "語音",
+      "tts": "發音",
+      "ttsValue": "手機內建聲音（預設）",
+      "ttsHq": "高音質發音（選配）",
+      "ttsHqNote": "約 310MB・需支援 WebGPU 的手機",
+      "stt": "語音辨識模型",
+      "sttNote": "跟讀用・約 50–80MB"
+    },
+    "data": {
+      "title": "資料",
+      "export": "匯出學習紀錄",
+      "exportDone": "已匯出學習紀錄",
+      "clear": "清除這支手機上的資料"
+    },
+    "account": {
+      "title": "帳號與同步",
+      "signedOut": "未登入：進度只存在這支手機"
+    },
+    "other": {
+      "title": "其他",
+      "about": "隱私說明・授權・原始碼"
+    }
+  },
+  "clearData": {
+    "dialog": {
+      "title": "清除這支手機上的所有學習資料？",
+      "body": "單字庫、複習排程和設定都會刪除，無法復原。已登入的話，雲端資料不受影響。",
+      "confirmCheck": "我了解資料無法復原",
+      "cancel": "取消",
+      "confirm": "清除資料",
+      "busy": "清除中…",
+      "failed": "清除失敗，請關閉其他分頁後再試一次"
+    }
+  },
+  "download": {
+    "action": {
+      "start": "下載",
+      "startNamed": "下載{name}"
+    },
+    "status": {
+      "done": "已下載",
+      "percent": "{n}%",
+      "failedRetry": "下載中斷・重試"
+    }
+  },
+  "install": {
+    "card": {
+      "title": "把 LinguaApp 加到主畫面",
+      "bodyPrompt": "像一般應用程式一樣從主畫面開啟，沒有網路也能複習。",
+      "bodyIos": "在 Safari 點下方的「分享」，再選「加入主畫面」。",
+      "button": "加到主畫面",
+      "close": "關閉加到主畫面提示"
+    }
+  },
+  "stub": {
+    "page": {
+      "title": "尚未開放",
+      "body": "這個功能還在製作中，之後的版本會開放。",
+      "backHome": "回到今天"
+    }
+  }
+}

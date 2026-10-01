@@ -1,6 +1,7 @@
 // 登入畫面視覺 smoke（harness 06）：關鍵狀態逐一截圖附進報告；手機三件套斷言
 // 寄驗證碼的回應以 page.route mock（成功／失敗），不需真的 Supabase 收信
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
+import { measureMobile } from '../e2e/measure.js'
 
 // Service worker 接管後，WebKit 的 page.route 攔不到頁面請求（實測：mock 沒命中、直連 55421）；
 // SW 本身由一般 e2e 驗，這裡封鎖 SW 讓 mock 生效
@@ -10,23 +11,12 @@ async function shot(page: Page, info: TestInfo, name: string) {
   await info.attach(name, { body: await page.screenshot(), contentType: 'image/png' })
 }
 
-// 手機三件套：無橫向溢出、按鈕文字不折行、可點元素 ≥ 44×44
+// 手機三件套：無橫向溢出、按鈕文字不折行、可點元素 ≥ 44×44（與一般 e2e 共用量法 e2e/measure.ts）
 async function mobileChecks(page: Page) {
-  const overflow = await page.evaluate(
-    () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
-  )
-  expect(overflow).toBe(0)
-  for (const button of await page.getByRole('button').all()) {
-    const lines = await button.evaluate((el) => {
-      const range = document.createRange()
-      range.selectNodeContents(el)
-      return new Set([...range.getClientRects()].map((r) => Math.round(r.top))).size
-    })
-    expect(lines, `按鈕「${await button.innerText()}」折行`).toBe(1)
-    const box = (await button.boundingBox())!
-    expect(box.width).toBeGreaterThanOrEqual(44)
-    expect(box.height).toBeGreaterThanOrEqual(44)
-  }
+  const m = await measureMobile(page)
+  expect(m.overflow, '橫向溢出').toEqual([])
+  expect(m.wrapped, '按鈕折行').toEqual([])
+  expect(m.small, '可點元素 <44px').toEqual([])
 }
 
 // 跨來源（App 5298 → Supabase 55421）：mock 回應照真實 Supabase 帶 CORS 標頭並回應預檢
@@ -48,14 +38,15 @@ function mockOtp(page: Page, status: number) {
 }
 
 async function openForm(page: Page) {
-  await page.goto('/')
-  await expect(page.getByTestId('app-placeholder')).toHaveText('LinguaApp 骨架建置中')
+  await page.goto('/settings')
+  // 登入入口在設定頁「帳號與同步」（TASK-11 接線）
+  await expect(page.getByTestId('settings-account-slot')).toBeAttached()
   await page.getByTestId('login-entry').click()
   await page.getByTestId('login-email').fill('me@test.local')
 }
 
 test('登入入口與 Email 表單（含 Google 按鈕）', async ({ page }, info) => {
-  await page.goto('/')
+  await page.goto('/settings')
   await expect(page.getByTestId('login-entry')).toBeVisible()
   await mobileChecks(page)
   await shot(page, info, '1-入口')
@@ -130,7 +121,7 @@ for (const width of [375, 320]) {
     await page.setViewportSize({ width, height: 740 })
     await mockOtp(page, 200)
     await mockVerify(page)
-    await page.goto('/')
+    await page.goto('/settings')
     await page.getByTestId('login-entry').click()
     await page.getByTestId('login-email').fill(LONG_EMAIL)
     await page.getByTestId('login-send').click()

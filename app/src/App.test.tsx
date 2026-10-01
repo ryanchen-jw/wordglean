@@ -1,45 +1,55 @@
-import { render, screen } from '@testing-library/react'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { act, fireEvent, render, screen } from '@testing-library/react'
+import { beforeEach, describe, expect, it } from 'vitest'
 import App from './App'
 
-// 不連真的 Supabase：登入工作階段以假物件代替
-vi.mock('./auth/session', () => ({
-  createAuthSession: async () => ({
-    google: false,
-    sendCode: async () => {},
-    verifyCode: async () => {},
-    signInWithGoogle: async () => {},
-    signOut: async () => true,
-    subscribe: (cb: (email: string | null) => void) => {
-      cb(null)
-      return () => {}
-    },
-  }),
-}))
+const go = (path: string) => history.replaceState(null, '', path)
 
-afterEach(() => {
-  vi.unstubAllEnvs()
-})
+describe('App 路由與底部導覽', () => {
+  beforeEach(() => go('/'))
 
-describe('App 佔位頁', () => {
-  it('顯示骨架識別字串', () => {
+  it('首頁：標題「今天」、導覽「今天」為目前頁', () => {
     render(<App />)
-    expect(screen.getByTestId('app-placeholder')).toHaveTextContent('LinguaApp 骨架建置中')
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('今天')
+    const nav = screen.getByRole('navigation', { name: '主要導覽' })
+    expect(nav.querySelector('[aria-current="page"]')).toHaveTextContent('今天')
   })
 
-  it('未設定 Supabase：沒有登入入口，其餘照常（AC#3）', async () => {
-    vi.stubEnv('VITE_SUPABASE_URL', '')
-    vi.stubEnv('VITE_SUPABASE_ANON_KEY', '')
+  it('點導覽「單字庫」切換畫面與網址', async () => {
     render(<App />)
-    expect(screen.getByTestId('app-placeholder')).toBeInTheDocument()
-    // 入口在動態載入後才出現：等足時間仍找不到才算「沒有」（有設定時下一案例約數十毫秒內出現）
-    await expect(screen.findByTestId('login-entry', {}, { timeout: 1000 })).rejects.toThrow()
+    fireEvent.click(screen.getByRole('link', { name: '單字庫' }))
+    expect(location.pathname).toBe('/words')
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('單字庫')
+    expect(screen.getByRole('link', { name: '單字庫' })).toHaveAttribute('aria-current', 'page')
   })
 
-  it('有設定 Supabase：出現登入入口', async () => {
-    vi.stubEnv('VITE_SUPABASE_URL', 'http://127.0.0.1:55421')
-    vi.stubEnv('VITE_SUPABASE_ANON_KEY', 'anon-key')
+  it('設定：從首頁齒輪進入、無底部導覽、返回回首頁', async () => {
     render(<App />)
-    expect(await screen.findByTestId('login-entry')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('link', { name: '設定' }))
+    expect(location.pathname).toBe('/settings')
+    expect(screen.queryByRole('navigation', { name: '主要導覽' })).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '返回' }))
+    // history.back() 在 jsdom 為非同步，等 popstate
+    await act(() => new Promise((r) => window.addEventListener('popstate', r, { once: true })))
+    expect(location.pathname).toBe('/')
+  })
+
+  it('直接開啟子頁時返回鍵回首頁', async () => {
+    go('/settings')
+    render(<App />)
+    fireEvent.click(screen.getByRole('button', { name: '返回' }))
+    expect(location.pathname).toBe('/')
+  })
+
+  it('尚未開放的目的地顯示暫時頁', () => {
+    go('/lesson/b1-u01-l03')
+    render(<App />)
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('尚未開放')
+  })
+
+  it('未知路徑導回首頁', () => {
+    go('/nope')
+    render(<App />)
+    expect(location.pathname).toBe('/')
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('今天')
   })
 })

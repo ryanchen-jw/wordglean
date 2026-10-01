@@ -1,28 +1,7 @@
-import { expect, test, type Page } from '@playwright/test'
+import { expect, test } from '@playwright/test'
+import { openWithServiceWorker } from './sw.js'
 
-const PLACEHOLDER = 'LinguaApp 骨架建置中'
-
-// 開首頁並等 service worker 啟用、接管本頁
-async function openWithServiceWorker(page: Page) {
-  await page.goto('/')
-  // 識別字串：確認打到的是本 checkout 的 app，而不是別人的 server
-  await expect(page.getByTestId('app-placeholder')).toHaveText(PLACEHOLDER)
-
-  // ready 在 activating 時就會 resolve，要再等 activated
-  const swState = await page.evaluate(async () => {
-    const sw = (await navigator.serviceWorker.ready).active!
-    if (sw.state !== 'activated') {
-      await new Promise((resolve) =>
-        sw.addEventListener('statechange', () => sw.state === 'activated' && resolve(null)),
-      )
-    }
-    return sw.state
-  })
-  expect(swState).toBe('activated')
-  await page.waitForFunction(() => navigator.serviceWorker.controller !== null)
-}
-
-test('佔位頁可開、service worker 註冊成功並完成 precache', async ({ page }) => {
+test('首頁可開、service worker 註冊成功並完成 precache', async ({ page }) => {
   await openWithServiceWorker(page)
 
   // workbox 以 ?__WB_REVISION__=… 存帶 revision 的項目，比對時忽略 query
@@ -32,9 +11,9 @@ test('佔位頁可開、service worker 註冊成功並完成 precache', async ({
   expect(indexCached).toBe(true)
 })
 
-test('未設定 Supabase 的建置：沒有登入入口（TASK-20 AC#3）', async ({ page }) => {
-  await page.goto('/')
-  await expect(page.getByTestId('app-placeholder')).toHaveText(PLACEHOLDER)
+test('未設定 Supabase 的建置：設定頁沒有登入入口（TASK-20 AC#3）', async ({ page }) => {
+  await page.goto('/settings')
+  await expect(page.getByTestId('settings-account-slot')).toHaveText('未登入：進度只存在這支手機')
   // 登入入口是動態載入後才出現；等網路靜止再斷言不存在，避免太早判定
   await page.waitForLoadState('networkidle')
   await expect(page.getByTestId('login-entry')).toHaveCount(0)
@@ -48,5 +27,5 @@ test('離線重新載入仍可開', async ({ page, context, browserName }) => {
   await openWithServiceWorker(page)
   await context.setOffline(true)
   await page.reload()
-  await expect(page.getByTestId('app-placeholder')).toHaveText(PLACEHOLDER)
+  await expect(page.getByTestId('screen-home')).toBeAttached()
 })

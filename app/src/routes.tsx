@@ -1,0 +1,26 @@
+// 路由表（docs/verification/2026-10-02-task11-shell-evidence/proposal.md）
+import { useEffect } from 'react'
+import { navigate, usePathname } from './router'
+import { CourseScreen } from './screens/course/CourseScreen'
+import { HomeScreen } from './screens/home/HomeScreen'
+import { SettingsScreen } from './screens/settings/SettingsScreen'
+import { StubScreen } from './screens/StubScreen'
+import { WordsScreen } from './screens/words/WordsScreen'
+
+// 尚未開放：複習／小課（TASK-18）、分級（TASK-17）、授權頁（TASK-21）、OpenRouter（TASK-15）、模型下載（TASK-13／14）
+const STUB_PATHS = /^\/(review|placement|about|openrouter|models|lesson\/[^/]+)$/
+
+function RedirectHome() {
+  useEffect(() => navigate('/', { replace: true }), [])
+  return null
+}
+
+export function AppRoutes() {
+  const pathname = usePathname()
+  if (pathname === '/') return <HomeScreen />
+  if (pathname === '/course') return <CourseScreen />
+  if (pathname === '/words') return <WordsScreen />
+  if (pathname === '/settings') return <SettingsScreen />
+  if (STUB_PATHS.test(pathname)) return <StubScreen />
+  return <RedirectHome />
+}

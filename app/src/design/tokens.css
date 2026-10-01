@@ -7,7 +7,8 @@
  *   data-theme="light|dark"    不設＝跟隨系統
  *   data-text-size="lg|xl"     不設＝標準；以根字級等比放大（rem）
  *
- * 字體自 host（TASK-11）：@fontsource-variable/noto-sans-tc、plus-jakarta-sans、noto-sans。
+ * 字體自 host（TASK-11）：@fontsource-variable/noto-sans-tc、plus-jakarta-sans、noto-sans；
+ * 套件註冊的字族名帶 Variable 後綴，排在原名前面（審閱頁用 Google Fonts 原名）。
  */
 
 :root {
@@ -33,11 +34,15 @@
   --lg-scrim: rgb(30 35 41 / 45%);
 
   /* 字體 */
-  --lg-font-ui: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif;
+  --lg-font-ui:
+    'Noto Sans TC Variable', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui,
+    sans-serif;
   --lg-font-heading: var(--lg-font-ui);
   --lg-font-zh-tr: var(--lg-font-ui);
-  --lg-font-en: 'Plus Jakarta Sans', 'Noto Sans TC', system-ui, sans-serif;
-  --lg-font-ipa: 'Noto Sans', 'Segoe UI', 'Lucida Sans Unicode', sans-serif;
+  --lg-font-en:
+    'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', 'Noto Sans TC Variable', 'Noto Sans TC',
+    system-ui, sans-serif;
+  --lg-font-ipa: 'Noto Sans Variable', 'Noto Sans', 'Segoe UI', 'Lucida Sans Unicode', sans-serif;
 
   /* 字級階（rem；中文內文 17px） */
   --lg-text-caption: 0.8125rem;

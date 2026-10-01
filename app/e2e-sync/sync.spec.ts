@@ -39,8 +39,9 @@ async function shot(page: Page, info: TestInfo, name: string) {
 
 async function open(context: BrowserContext) {
   const page = await context.newPage()
-  await page.goto('/')
-  await expect(page.getByTestId('app-placeholder')).toHaveText('LinguaApp 骨架建置中')
+  await page.goto('/settings')
+  // 登入入口在設定頁「帳號與同步」（TASK-11 接線）
+  await expect(page.getByTestId('settings-account-slot')).toBeAttached()
   await page.waitForFunction(() => '__linguaTest' in window)
   return page
 }

@@ -25,8 +25,16 @@ React＋Vite＋TypeScript＋TailwindCSS；PWA 由 vite-plugin-pwa 產生 service
 ```
 app/
 ├── src/
-│   ├── App.tsx          佔位頁（設計定版 TASK-3 前不做畫面）
-│   ├── main.tsx         進入點
+│   ├── App.tsx          只渲染 AppRoutes（路由表在 routes.tsx；router.ts／Link.tsx 為自寫 history 路由）
+│   ├── main.tsx         進入點（字體、外觀偏好先套再渲染）
+│   ├── i18n/            介面文案 zh-TW.json（key＝<畫面>.<區塊>.<用途>，待 TASK-4 G3 定稿）＋ t()
+│   ├── shell/           外框（頁首、底部導覽、離線條）、外觀／字級偏好、加到主畫面提示
+│   ├── screens/         home／course／words／settings 畫面與其推導模型（*Model.ts）
+│   ├── curriculum/      課綱型別與查詢；課綱檔以獨立 json 資產載入（不併進程式碼 bundle）
+│   ├── data/            Dexie 資料層、appDb.ts（App 唯一 db 實例）、匯出／清除
+│   ├── download/        模型下載狀態型別與進度元件（骨架，TASK-13／14 接真下載）
+│   ├── auth/、sync/     登入與同步（TASK-20）；帳號區塊掛在設定頁 AccountSection
+│   ├── ui/              Button、Card、BottomSheet、OptionSheet
 │   ├── index.css        Tailwind 進入點（tailwindcss＋design/tokens.css＋design/theme.css）
 │   ├── design/          設計 tokens（tokens.css 唯一數值來源、theme.css 接 Tailwind 4 @theme、
 │   │                    tokens.test.ts 守 WCAG AA）；規格見 ../docs/design/
@@ -45,7 +53,10 @@ app/
 - **單元（Vitest＋Testing Library）**：`src/**/*.test.{ts,tsx}`；以使用者看得到的文字／testid 斷言，期望值寫字面值、不從實作重算。
 - **e2e（Playwright）**：兩個 project——`webkit-iphone15`（iOS 模擬）、`chromium-pixel7`（Android 模擬）。
   - webServer 跑 `build && preview`（埠 5288），`reuseExistingServer: false`：埠被別人占用時直接失敗，避免打到別的 checkout。
-  - smoke 先核對識別字串（`data-testid="app-placeholder"`、「LinguaApp 骨架建置中」）再斷言 service worker。
+  - smoke 先核對識別字串（`data-testid="screen-home"`）再斷言 service worker；`shell.spec`＝首次開啟流程，`offline.spec`＝離線重開首頁／單字庫／課程。
+  - `visual-smoke.spec`＝06 視覺 smoke：五畫面全狀態兩引擎截圖（attach＋具名檔存 `test-results/`），斷言無溢出、單行控件不折行、可點 ≥44px、無英文介面字串、body 套 token 色。看報告：`PLAYWRIGHT_HTML_OUTPUT_DIR=playwright-report/visual-smoke npx playwright test e2e/visual-smoke.spec.ts --reporter=list,html` 後 `npx playwright show-report playwright-report/visual-smoke`。
+  - `narrow.spec`＝320 標準／320 特大／375 特大下單字庫、設定、清除確認不破版（含子元素不伸出卡片、主鈕不留孤字）。手機量測（溢出、單行控件、44px、英文字串、body 色、容器內溢出）一律用 `e2e/measure.ts`，e2e-sync 也共用。
+  - 已知：WebKit（Windows build）原生 IndexedDB 一次寫 5000 筆約 77 秒（測試準備成本），該案例時限放寬到 150 秒。
   - 已知限制：Playwright 的 WebKit（Windows build）在 `setOffline` 後 reload 會丟 internal error，離線重載只在 chromium 驗。
 - **CI**：`../.github/workflows/ci.yml`——lint → typecheck → unit → e2e → build，不部署。
 - 測試勿寫死 `toLocaleString('zh-TW')` 的輸出（新版 ICU 會出細空格，本機與 CI 不一致）。

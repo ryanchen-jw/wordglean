@@ -1,0 +1,72 @@
+// 畫面外框：TabScreen＝有底部導覽的分頁（今天／課程／單字庫）；SubScreen＝有返回鍵、無導覽的子頁（設定等）
+import { ArrowLeft, WifiOff } from 'lucide-react'
+import type { ReactNode } from 'react'
+import { t } from '../i18n/t'
+import { goBack } from '../router'
+import { BottomNav } from './BottomNav'
+import { useOnline } from './useOnline'
+
+function OfflineStrip() {
+  if (useOnline()) return null
+  return (
+    <div
+      role="status"
+      className="flex items-center gap-2 rounded-control bg-hint-bg px-3.5 py-2.5 text-secondary text-hint"
+    >
+      <WifiOff size={20} aria-hidden="true" className="flex-none" />
+      {t('system.offline.strip')}
+    </div>
+  )
+}
+
+const frame = 'flex h-dvh flex-col bg-bg text-text'
+const headerPad = 'px-5 pt-[calc(env(safe-area-inset-top)+6px)] pb-2.5'
+// 欄寬 minmax(0,1fr)：內容（長英文字、輸入框固有寬度）的 min-content 不得撐寬版面（走查 P0-1）
+const mainCls =
+  'grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)] content-start gap-3 overflow-y-auto px-5 pt-1 pb-5'
+const titleCls = 'font-heading text-title font-bold'
+
+export const iconBtnCls =
+  'inline-grid size-11 flex-none place-items-center rounded-xl text-text active:bg-primary-soft'
+
+type TabProps = { title: string; subtitle?: ReactNode; action?: ReactNode; children: ReactNode }
+
+export function TabScreen({ title, subtitle, action, children }: TabProps) {
+  return (
+    <div className={frame}>
+      <header className={`grid gap-0.5 ${headerPad}`}>
+        <div className="flex min-h-11 items-center justify-between gap-3">
+          <h1 className={titleCls}>{title}</h1>
+          {action}
+        </div>
+        {subtitle != null && <p className="text-secondary text-muted">{subtitle}</p>}
+      </header>
+      <main className={mainCls}>
+        <OfflineStrip />
+        {children}
+      </main>
+      <BottomNav />
+    </div>
+  )
+}
+
+export function SubScreen({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <div className={frame}>
+      <header className={headerPad}>
+        <div className="flex min-h-11 items-center gap-3">
+          <button
+            type="button"
+            className={iconBtnCls}
+            aria-label={t('common.action.back')}
+            onClick={goBack}
+          >
+            <ArrowLeft size={20} aria-hidden="true" />
+          </button>
+          <h1 className={titleCls}>{title}</h1>
+        </div>
+      </header>
+      <main className={mainCls}>{children}</main>
+    </div>
+  )
+}
