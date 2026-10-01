@@ -4,6 +4,7 @@ title: 點字查義＋收藏——ECDICT 字典彈層
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 18:00'
 labels:
   - app
 dependencies:
@@ -21,6 +22,7 @@ ordinal: 16000
 【範圍】做：可點擊英文字的文字元件（處理標點、縮寫、詞形還原：複數、過去式、進行式至原形，代決用輕量規則＋ECDICT 詞形欄位）；字典彈層（音標、詞性、繁中釋義、CEFR 等級、多益常考標記、TTS 播放、加入收藏）；字典分片延遲載入與快取。不做：句子翻譯（規格明定不需要）。
 【邊界】彈層樣式依定版設計。
 【dev-flow】feat
+【借鑑】詞形還原改為先查 ECDICT 的 lemma.en.txt 與 exchange 欄位（TASK-6 產出的切片），查不到才退回規則。（參考 docs/research/oss-landscape.md）
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
@@ -28,4 +30,5 @@ ordinal: 16000
 - [ ] #1 詞形還原單元測試 ≥ 30 例（不規則動詞與複數）
 - [ ] #2 點字→彈層→收藏→單字庫出現 的 E2E 通過；離線狀態可查
 - [ ] #3 彈層開啟延遲（chromium 模擬，字典已快取）< 150ms
+- [ ] #4 詞形還原命中來源（資料表／規則）統計列入報告，30 例中大多應由資料表命中
 <!-- AC:END -->

@@ -1,9 +1,10 @@
 ---
 id: TASK-5
 title: 專案骨架——Vite＋React＋TS＋Tailwind、測試與 CI
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 07:24'
 labels:
   - app
   - workspace

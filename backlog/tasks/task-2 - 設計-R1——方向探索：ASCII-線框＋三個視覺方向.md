@@ -1,9 +1,10 @@
 ---
 id: TASK-2
 title: 設計 R1——方向探索：ASCII 線框＋三個視覺方向
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 07:24'
 labels:
   - app
 dependencies: []

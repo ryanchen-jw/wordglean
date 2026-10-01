@@ -4,6 +4,7 @@ title: 本機資料層＋FSRS 排程——單字池、收藏、每日新字上�
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 18:00'
 labels:
   - app
 dependencies:
@@ -20,6 +21,7 @@ ordinal: 10000
 【範圍】做：IndexedDB 層（Dexie 或等價，版本化 migration）：使用者設定、單字池（stability、difficulty、reps、lapses、last/due、state、來源 course/favorite）、複習紀錄（review log，供日後同步合併）、課程進度、跟讀修正紀錄；FSRS 封裝（desired retention 0.9、learning steps 1m/10m、relearning 10m）；「今天」以裝置時區換日；暫停新字門檻（待複習 > 每日新字 ×10 時暫停，代決值，可設定）。不做：UI（TASK-11 起）、雲端同步（TASK-20）。
 【邊界】時間一律存 UTC epoch，顯示與換日才轉本地（harness 09 時區規約）。
 【dev-flow】feat
+【借鑑】直接使用 ts-fsrs v5 內建的 learning_steps、relearning_steps、forgetting_curve，不自寫步驟邏輯；複習紀錄格式需能餵給 reschedule 重播（TASK-20 依賴）。（參考 docs/research/oss-landscape.md）
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria

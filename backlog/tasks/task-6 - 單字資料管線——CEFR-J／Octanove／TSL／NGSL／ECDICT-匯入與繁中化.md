@@ -4,6 +4,7 @@ title: 單字資料管線——CEFR-J／Octanove／TSL／NGSL／ECDICT 匯入與
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 18:00'
 labels:
   - data
 dependencies:
@@ -20,6 +21,7 @@ ordinal: 6000
 【範圍】做：data/scripts/ 下載與轉換腳本（可重跑、鎖來源版本與 checksum）；授權原文逐一存 data/licenses/，NOTICE 歸屬補齊；合併成 lexicon（headword、CEFR 等級、多益常考旗標、詞頻、詞性、音標、繁中釋義）；ECDICT 以 OpenCC s2twp 轉繁；字典切片（依首字母或雜湊分片）供瀏覽器延遲載入，單片大小上限 200KB gzip；釋義過長截斷規則。不做：Oxford 3000/5000、English Vocabulary Profile（版權不可用）。
 【邊界】每份來源的授權條款須以一手原文核對（記憶 reference_agent_verbatim_claim_unreliable：抓不到原文就標未核，不可轉述二手）。若授權有疑慮，該來源排除並記錄，不得自行放寬。
 【dev-flow】feat
+【借鑑】匯入 ECDICT 時丟棄 oxford、collins、tag 三欄（oxford 屬牛津 3000 版權衍生；另兩欄非在地需求）；lemma.en.txt（詞形對照表，MIT）一併切片供 TASK-16 使用。（參考 docs/research/oss-landscape.md）
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
@@ -29,4 +31,5 @@ ordinal: 6000
 - [ ] #3 繁中化檢查：轉換後抽 50 條釋義無簡體字；腳本可重跑且輸出位元組一致（同來源版本）
 - [ ] #4 字典切片總大小與單片最大值列入報告；瀏覽器端查一個字的冷啟動延遲（chromium 模擬）< 300ms
 - [ ] #5 data/CLAUDE.md 寫好（來源、授權分界、重建指令）
+- [ ] #6 守衛測試：lexicon 與字典切片不含任何 Oxford 3000 衍生欄位（oxford 欄或同等資訊），CI 必跑
 <!-- AC:END -->

@@ -1,9 +1,10 @@
 ---
 id: TASK-1
 title: 語音原型實測——Kokoro TTS＋Moonshine STT 在手機瀏覽器的可行性
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 07:26'
 labels:
   - app
 dependencies: []
@@ -20,6 +21,7 @@ ordinal: 1000
 【範圍】做：獨立原型頁 prototypes/voice-poc/（不進 app/）；Kokoro 合成、Moonshine 辨識、兩者同時載入、WebGPU→WASM 後備；自動化量測用 browser skill 的 webkit（iOS 代理）與 chromium（Android 代理）模擬。不做：正式 UI、整合進 app。
 【邊界】模擬無法量真機記憶體上限 → 留閘 G4：產出一個可在手機開啟的原型頁與 5 分鐘自測步驟（需 HTTPS 才能用麥克風：本機用 vite --host＋mkcert 或 Cloudflare quick tunnel），由創辦人真機自測回填；創辦人略過時以模擬結論為準並明列未驗項。
 【dev-flow】investigate-only
+【借鑑】以 transformers.js-examples 的 moonshine-web（Apache-2.0）Worker 範本與 kokoro-js 為起點改寫，不從零寫 Worker；模型換成 Moonshine tiny。不使用 VAD 自動斷句（2026-10-01 裁示：跟讀只用按鈕）。（參考 docs/research/oss-landscape.md）
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria

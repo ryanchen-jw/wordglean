@@ -4,6 +4,7 @@ title: 開源與法遵文件——README、自架指南、隱私說明、授權�
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 18:00'
 labels:
   - workspace
   - app
@@ -22,6 +23,7 @@ ordinal: 21000
 【範圍】做：README（產品介紹、截圖、授權分界）、CONTRIBUTING、自架指南（Cloudflare Pages＋Supabase，含不設定登入的最小部署）、隱私說明（App 內頁＋repo）、App 內「授權與致謝」頁（列出所有資料與模型來源及授權）。
 【邊界】對外文案：推薦版落檔可先跑，merge 前創辦人逐字審（留閘 G3 同類）。法律意見不在範圍，隱私說明標註「非法律文件」並建議上線前請專業者看過。
 【dev-flow】docs
+【借鑑】NOTICE 與 App 內授權致謝頁必列：eSpeak NG（GPL-3.0，經 kokoro-js → phonemizer 帶入）、transformers.js（Apache-2.0）、ECDICT 與 lemma.en.txt（MIT）、所有移植自 LibreLingo（AGPL）的程式碼出處、Moonshine 與 Kokoro 模型授權。（參考 docs/research/oss-landscape.md）
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
