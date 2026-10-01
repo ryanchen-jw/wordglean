@@ -5,17 +5,18 @@ React＋Vite＋TypeScript＋TailwindCSS；PWA 由 vite-plugin-pwa 產生 service
 
 ## 指令（皆在 `app/` 下執行）
 
-| 指令                | 用途                                                                                |
-| ------------------- | ----------------------------------------------------------------------------------- |
-| `npm ci`            | 安裝依賴（worktree 內各自安裝，禁 junction／symlink 連主 checkout 的 node_modules） |
-| `npm run dev`       | dev server，固定埠 **5287**（strictPort，被占用直接失敗）                           |
-| `npm run build`     | typecheck＋產出 `dist/`（含 `sw.js`、`manifest.webmanifest`）                       |
-| `npm run preview`   | 以 build 產物起 server，固定埠 **5288**（strictPort）                               |
-| `npm run lint`      | ESLint＋Prettier 檢查                                                               |
-| `npm run format`    | Prettier 自動排版                                                                   |
-| `npm run typecheck` | `tsc -b`（app／node／e2e 三份 tsconfig）                                            |
-| `npm test`          | Vitest 單元測試（jsdom）                                                            |
-| `npm run e2e`       | Playwright 手機模擬 e2e（自動 build＋preview）                                      |
+| 指令                | 用途                                                                                               |
+| ------------------- | -------------------------------------------------------------------------------------------------- |
+| `npm ci`            | 安裝依賴（worktree 內各自安裝，禁 junction／symlink 連主 checkout 的 node_modules）                |
+| `npm run dev`       | dev server，固定埠 **5287**（strictPort，被占用直接失敗）                                          |
+| `npm run build`     | typecheck＋產出 `dist/`（含 `sw.js`、`manifest.webmanifest`）                                      |
+| `npm run preview`   | 以 build 產物起 server，固定埠 **5288**（strictPort）                                              |
+| `npm run lint`      | ESLint＋Prettier 檢查                                                                              |
+| `npm run format`    | Prettier 自動排版                                                                                  |
+| `npm run typecheck` | `tsc -b`（app／node／e2e 三份 tsconfig）                                                           |
+| `npm test`          | Vitest 單元測試（jsdom）                                                                           |
+| `npm run e2e`       | Playwright 手機模擬 e2e（自動 build＋preview）；`E2E_PORT` 可改埠                                  |
+| `npm run e2e:sync`  | 登入與同步 e2e＋登入畫面視覺 smoke（需本機 Supabase，跑法見 `playwright.sync.config.ts`；不進 CI） |
 
 首次跑 e2e 前：`npx playwright install webkit chromium`（CI 用 `--with-deps`）。
 
@@ -32,6 +33,7 @@ app/
 │   ├── *.test.tsx       單元測試與受測檔放在一起
 │   └── test/setup.ts    Vitest 共用設定（jest-dom matchers）
 ├── e2e/                 Playwright 測試
+├── e2e-sync/            需本機 Supabase 的 e2e（TASK-20 登入同步）
 ├── public/icons/        PWA 佔位圖示（192／512，TASK-3 後替換）
 ├── vite.config.ts       Vite＋Tailwind＋PWA＋Vitest 設定、dev／preview 埠
 ├── playwright.config.ts 兩個手機 project 與 webServer

@@ -172,3 +172,28 @@ describe('今日新字額度：跨時區換日（AC#2）', () => {
     })
   })
 })
+
+describe('寫入同時進同步佇列（TASK-20 離線佇列）', () => {
+  const queued = async () =>
+    (await db.outbox.orderBy('seq').toArray()).map((e) => `${e.table}:${e.key}`)
+
+  it('加課程字、收藏、作答、改設定都記一筆待推項目', async () => {
+    await addFromCourse(db, 'Apple', 'a1-u1-l1', T)
+    await addFavorite(db, 'apple', T + MIN)
+    await recordReview(db, 'apple', Grade.Good, T + 2 * MIN)
+    await saveSettings(db, { dailyNewLimit: 5 }, T + 3 * MIN)
+    const logId = (await db.reviewLogs.toArray())[0].id
+    expect(await queued()).toEqual([
+      'wordPool:apple',
+      'wordPool:apple',
+      'wordPool:apple',
+      `reviewLogs:${logId}`,
+      'settings:local',
+    ])
+  })
+
+  it('寫入失敗時佇列也不留紀錄（同一交易）', async () => {
+    await expect(recordReview(db, 'ghost', Grade.Good, T)).rejects.toThrow()
+    expect(await queued()).toEqual([])
+  })
+})

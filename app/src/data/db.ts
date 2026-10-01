@@ -40,12 +40,27 @@ export interface SpeechCorrection {
   createdAt: number
 }
 
+/** 同步佇列：本機寫入後待推到雲端的列（表名＋主鍵）；同步成功後刪除 */
+export interface OutboxEntry {
+  seq?: number
+  table: 'settings' | 'wordPool' | 'reviewLogs' | 'courseProgress' | 'speechCorrections'
+  key: string
+}
+
+/** 同步狀態：userId（本機資料已綁定的帳號）、cursor（作答紀錄拉取游標） */
+export interface SyncMeta {
+  key: 'userId' | 'cursor'
+  value: string | null
+}
+
 export type LinguaDb = Dexie & {
   settings: EntityTable<Settings, 'id'>
   wordPool: EntityTable<PoolWord, 'wordId'>
   reviewLogs: EntityTable<ReviewLogRow, 'id'>
   courseProgress: EntityTable<CourseProgress, 'lessonId'>
   speechCorrections: EntityTable<SpeechCorrection, 'id'>
+  outbox: EntityTable<OutboxEntry, 'seq'>
+  syncMeta: EntityTable<SyncMeta, 'key'>
 }
 
 export interface SchemaVersion {
@@ -54,7 +69,7 @@ export interface SchemaVersion {
   upgrade?: (tx: Transaction) => PromiseLike<unknown> | void
 }
 
-export const SCHEMA_VERSIONS: readonly SchemaVersion[] = Object.freeze([
+export const SCHEMA_VERSIONS: readonly SchemaVersion[] = Object.freeze<SchemaVersion[]>([
   {
     version: 1,
     stores: {
@@ -65,6 +80,8 @@ export const SCHEMA_VERSIONS: readonly SchemaVersion[] = Object.freeze([
       speechCorrections: 'id, createdAt',
     },
   },
+  // TASK-20：登入同步的離線佇列與同步狀態
+  { version: 2, stores: { outbox: '++seq', syncMeta: 'key' } },
 ])
 
 export const DB_NAME = 'linguaapp'

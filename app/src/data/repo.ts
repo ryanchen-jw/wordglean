@@ -1,5 +1,5 @@
 // 單字池、作答紀錄、設定的讀寫；時間參數一律 UTC epoch ms，時區只在算「今天」時傳入
-import type { LinguaDb, PoolWord, Settings } from './db'
+import type { LinguaDb, OutboxEntry, PoolWord, Settings } from './db'
 import { CardState, createScheduler, DEFAULT_RETENTION, type Grade } from '../srs/scheduler'
 import { dayBoundsUtc, deviceTimeZone, localDayKey, newWordQuota } from '../srs/daily'
 
@@ -11,6 +11,10 @@ export const DEFAULT_SETTINGS: Settings = {
   updatedAt: 0,
 }
 
+// 本機寫入同一交易內記一筆待推項目（TASK-20 離線佇列）
+const enqueue = (db: LinguaDb, table: OutboxEntry['table'], key: string) =>
+  db.outbox.add({ table, key })
+
 export async function getSettings(db: LinguaDb): Promise<Settings> {
   return (await db.settings.get('local')) ?? DEFAULT_SETTINGS
 }
@@ -20,8 +24,9 @@ export async function saveSettings(
   patch: Partial<Omit<Settings, 'id' | 'updatedAt'>>,
   nowMs: number,
 ): Promise<void> {
-  await db.transaction('rw', db.settings, async () => {
+  await db.transaction('rw', db.settings, db.outbox, async () => {
     await db.settings.put({ ...(await getSettings(db)), ...patch, id: 'local', updatedAt: nowMs })
+    await enqueue(db, 'settings', 'local')
   })
 }
 
@@ -35,7 +40,7 @@ async function upsertSource(
   apply: (w: PoolWord) => void,
 ): Promise<void> {
   const wordId = normalizeWordId(word)
-  await db.transaction('rw', db.wordPool, async () => {
+  await db.transaction('rw', db.wordPool, db.outbox, async () => {
     const existing = await db.wordPool.get(wordId)
     const row: PoolWord = existing ?? {
       wordId,
@@ -46,6 +51,7 @@ async function upsertSource(
     }
     apply(row)
     await db.wordPool.put(row)
+    await enqueue(db, 'wordPool', wordId)
   })
 }
 
@@ -68,13 +74,16 @@ export async function recordReview(
   nowMs: number,
 ): Promise<void> {
   const wordId = normalizeWordId(word)
-  await db.transaction('rw', [db.wordPool, db.reviewLogs, db.settings], async () => {
+  await db.transaction('rw', [db.wordPool, db.reviewLogs, db.settings, db.outbox], async () => {
     const row = await db.wordPool.get(wordId)
     if (!row) throw new Error(`單字不在池中：${wordId}`)
     const { desiredRetention } = await getSettings(db)
     const { card, log } = createScheduler(desiredRetention).review(row, grade, nowMs)
+    const id = crypto.randomUUID()
     await db.wordPool.put({ ...row, ...card })
-    await db.reviewLogs.add({ id: crypto.randomUUID(), wordId, ...log })
+    await db.reviewLogs.add({ id, wordId, ...log })
+    await enqueue(db, 'wordPool', wordId)
+    await enqueue(db, 'reviewLogs', id)
   })
 }
 

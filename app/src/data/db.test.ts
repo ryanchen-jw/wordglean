@@ -105,18 +105,26 @@ describe('schema 版本', () => {
     expect(SCHEMA_VERSIONS[0]).toMatchObject({ version: 1, stores: V1_STORES })
   })
 
+  it('v2 只追加同步用的兩張表', () => {
+    expect(SCHEMA_VERSIONS[1]).toEqual({
+      version: 2,
+      stores: { outbox: '++seq', syncMeta: 'key' },
+    })
+  })
+
   it('全新開啟後各表可用', async () => {
     const db = createDb(freshName())
     await db.open()
-    expect(db.tables.map((t) => t.name).sort()).toEqual([...TABLES].sort())
+    expect(db.tables.map((t) => t.name).sort()).toEqual([...TABLES, 'outbox', 'syncMeta'].sort())
     db.close()
   })
 })
 
-describe('migration：v1 → v2 升版不掉資料', () => {
-  // 測試專用 v2：新增複合索引與一張表，並在 upgrade 動既有列；正式 schema 目前只有 v1
+describe('migration：升版不掉資料', () => {
+  // 測試專用的下一版：新增複合索引與一張表，並在 upgrade 動既有列
+  const NEXT = SCHEMA_VERSIONS.length + 1
   const V2: SchemaVersion = {
-    version: 2,
+    version: NEXT,
     stores: { wordPool: 'wordId, due, state, favoritedAt, [state+due]', notes: '++id' },
     upgrade: (tx) =>
       tx
@@ -127,13 +135,13 @@ describe('migration：v1 → v2 升版不掉資料', () => {
         }),
   }
 
-  it('v1 寫入的全部資料在 v2 開啟後原樣保留', async () => {
+  it('v1 寫入的全部資料在下一版開啟後原樣保留', async () => {
     const name = freshName()
     await seedAtV1(name)
 
     const db = createDb(name, [...SCHEMA_VERSIONS, V2])
     await db.open()
-    expect(db.verno).toBe(2)
+    expect(db.verno).toBe(NEXT)
     for (const t of TABLES) {
       const rows = await db.table(t).toArray()
       const expected =

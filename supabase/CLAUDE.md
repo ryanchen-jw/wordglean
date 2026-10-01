@@ -59,6 +59,7 @@ CLI 一律 `npx --yes supabase@2.118.0`（鎖版本、不全域安裝）。proje
 | reviewLogs.scheduledDays | review_logs.scheduled_days | integer | |
 | reviewLogs.learningSteps | review_logs.learning_steps | integer | |
 | reviewLogs.review | review_logs.review | timestamptz | 等同 ts-fsrs FSRSHistory；不含已棄用的 elapsed_days／last_elapsed_days |
+| （無） | review_logs.inserted_at | timestamptz | 雲端專用；伺服器寫入時間（觸發器覆寫用戶端值），TASK-20 拉取游標 |
 | courseProgress.lessonId（PK） | course_progress.lesson_id | text | PK＝(user_id, lesson_id)；格式待 TASK-7 |
 | courseProgress.completedAt | course_progress.completed_at | timestamptz，可空 | |
 | courseProgress.updatedAt | course_progress.updated_at | timestamptz | |

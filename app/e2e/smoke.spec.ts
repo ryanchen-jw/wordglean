@@ -32,6 +32,14 @@ test('佔位頁可開、service worker 註冊成功並完成 precache', async ({
   expect(indexCached).toBe(true)
 })
 
+test('未設定 Supabase 的建置：沒有登入入口（TASK-20 AC#3）', async ({ page }) => {
+  await page.goto('/')
+  await expect(page.getByTestId('app-placeholder')).toHaveText(PLACEHOLDER)
+  // 登入入口是動態載入後才出現；等網路靜止再斷言不存在，避免太早判定
+  await page.waitForLoadState('networkidle')
+  await expect(page.getByTestId('login-entry')).toHaveCount(0)
+})
+
 test('離線重新載入仍可開', async ({ page, context, browserName }) => {
   // Playwright 的 WebKit（Windows build）在 setOffline 後 reload 會丟 internal error，
   // 與 app 無關；離線重載只在 chromium 驗
