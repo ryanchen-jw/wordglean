@@ -1,0 +1,41 @@
+LinguaApp
+Copyright (C) 2026 LinguaApp contributors
+
+本專案程式碼以 GNU Affero General Public License v3.0 授權（見 LICENSE）。
+data/ 目錄內的單字資料以 Creative Commons Attribution-ShareAlike 4.0 International 授權（見 data/LICENSE）。
+
+本檔為第三方資料與元件的歸屬清單（骨架）。各項的版本、來源網址與實際使用範圍，
+於資料實際匯入時（TASK-6 等）補全；未補全前標「待補」。
+
+== 單字資料（data/，CC BY-SA 4.0 範圍）==
+
+- CEFR-J Wordlist Version 1.6
+  出處：東京外國語大學投野由紀夫研究室（CEFR-J Wordlist Version 1.6）
+  條款：標明出處即可研究、教育及商用免費使用；非 OSI 授權
+  來源：https://www.cefr-j.org/download.html
+  使用範圍：待補
+
+- Octanove Vocabulary Profile（C1/C2）
+  授權：CC BY-SA 4.0
+  來源：https://github.com/openlanguageprofiles/olp-en-cefrj
+  使用範圍：待補
+
+- TSL（TOEIC Service List）1.2，Browne & Culligan
+  授權：CC BY-SA 4.0
+  來源：待補
+  使用範圍：待補
+
+- NGSL（New General Service List）1.2
+  授權：CC BY-SA 4.0
+  來源：待補
+  使用範圍：待補
+
+- ECDICT
+  授權：MIT
+  來源：https://github.com/skywind3000/ECDICT
+  使用範圍：待補（衍生資料經 OpenCC s2twp 轉台灣繁體）
+
+== 建置工具與執行期元件 ==
+
+- OpenCC（Apache-2.0）：https://github.com/BYVoid/OpenCC — 使用範圍：待補
+- 其餘 npm 相依套件的授權見 app/package-lock.json 與各套件自身的授權檔

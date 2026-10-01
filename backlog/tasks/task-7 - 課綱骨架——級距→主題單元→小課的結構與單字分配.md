@@ -1,9 +1,10 @@
 ---
 id: TASK-7
 title: 課綱骨架——級距→主題單元→小課的結構與單字分配
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 07:53'
 labels:
   - content
 dependencies:

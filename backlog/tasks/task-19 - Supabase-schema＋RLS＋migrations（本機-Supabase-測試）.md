@@ -1,9 +1,10 @@
 ---
 id: TASK-19
 title: Supabase schema＋RLS＋migrations（本機 Supabase 測試）
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
+updated_date: '2026-10-01 07:55'
 labels:
   - supabase
 dependencies:

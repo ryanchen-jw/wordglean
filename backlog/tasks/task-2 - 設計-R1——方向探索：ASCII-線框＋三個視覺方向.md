@@ -4,7 +4,7 @@ title: 設計 R1——方向探索：ASCII 線框＋三個視覺方向
 status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 07:24'
+updated_date: '2026-10-01 14:09'
 labels:
   - app
 dependencies: []
@@ -30,3 +30,11 @@ ordinal: 2000
 - [ ] #4 以 Artifact 圈選頁交付（每方向可選「採用／混搭某元素／否決」＋自由意見），停 In Review 等 G1
 - [ ] #5 創辦人圈選結果記回本卡 comment 後才 Done
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-01 執行長：R1 產出在分支 worktree-task-2-design-r1（0771ddb 線框、7b40a43 方向＋對比度腳本、a5354ce 圈選頁）。圈選頁 Artifact：https://claude.ai/artifact/STt2PsWSU5c2VLKt4Vok7B（db 集合 picks，發佈後 list 正常、空）。對比度 63 組全過 AA。待 R2 修：線框首頁 (b) 寫『到期量回到 50 以下恢復』與代決門檻『每日新字×10』不一致；深色回饋疊色底未入腳本；Literata 音標字形。停 In Review 等 G1。
+
+2026-10-01 G1 圈選結果（Artifact db picks）：7 條預設做法全部『同意建議』（深色模式第一版就做、只直向但橫向不壞版、主按鈕在下 1/3、App 內三段字級、不做吉祥物、顏色＋圖示＋文字、短動效＋尊重減少動態）。三個方向 A/B/C 皆未選。整體意見：『主要視覺與風格，使用 UIUXPRO skill 重新設計一次，一樣設計3版』。→ 視覺方向重做 R1b（3 版），線框沿用。
+<!-- SECTION:NOTES:END -->

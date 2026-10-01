@@ -1,0 +1,112 @@
+== ci-local start 2026-10-01 16:01:57 +08 | node v22.20.0 | npm 10.9.3 | HEAD 0a83534
+
+== STEP: npm ci
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@asamuzakjp/css-color@7.1.2',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@asamuzakjp/dom-selector@9.2.2',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'jsdom@30.1.1',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'w3c-xmlserializer@6.0.0',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 518 packages, and audited 519 packages in 11s
+
+150 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+== OK: npm ci
+
+== STEP: npm run lint
+
+> linguaapp@0.0.0 lint
+> eslint . && prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+== OK: npm run lint
+
+== STEP: npm run typecheck
+
+> linguaapp@0.0.0 typecheck
+> tsc -b
+
+== OK: npm run typecheck
+
+== STEP: npm test
+
+> linguaapp@0.0.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.3 [39m[90mC:/Projects/LinguaApp/.claude/worktrees/app-skeleton/app[39m
+
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 16:02:53
+[2m   Duration [22m 24.72s[2m (environment 81%, setup 17%, import 1%)[22m
+
+== OK: npm test
+
+== STEP: npx playwright install webkit chromium
+== OK: npx playwright install webkit chromium
+
+== STEP: npm run e2e
+
+> linguaapp@0.0.0 e2e
+> playwright test
+
+
+[2mRunning [22m4[2m tests using [22m4[2m workers[22m
+
+  [32m-[39m  [2m3 [22m[36m[webkit-iphone15] › e2e\smoke.spec.ts:35:1 › 離線重新載入仍可開[39m
+  [32mok[39m [2m2 [22m[chromium-pixel7] › e2e\smoke.spec.ts:25:1 › 佔位頁可開、service worker 註冊成功並完成 precache[2m (2.2s)[22m
+  [32mok[39m [2m4 [22m[chromium-pixel7] › e2e\smoke.spec.ts:35:1 › 離線重新載入仍可開[2m (2.3s)[22m
+  [32mok[39m [2m1 [22m[webkit-iphone15] › e2e\smoke.spec.ts:25:1 › 佔位頁可開、service worker 註冊成功並完成 precache[2m (2.7s)[22m
+
+[33m  1 skipped[39m
+[32m  3 passed[39m[2m (26.3s)[22m
+== OK: npm run e2e
+
+== STEP: npm run build
+
+> linguaapp@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v8.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[0m 16 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[0m[32mregisterSW.js              [0m[1;2m  0.13 kB[0m
+[2mdist/[0m[32mmanifest.webmanifest       [0m[1;2m  0.31 kB[0m
+[2mdist/[0m[32mindex.html                 [0m[1;2m  0.58 kB[0m[2m │ gzip:  0.35 kB[0m
+[2mdist/[0m[2massets/[0m[35mindex-oJwaSwlE.css  [0m[1;2m  6.38 kB[0m[2m │ gzip:  1.93 kB[0m
+[2mdist/[0m[2massets/[0m[36mindex-Bh48I0tT.js   [0m[1;2m219.77 kB[0m[2m │ gzip: 68.70 kB[0m
+
+[32m✓ built in 235ms[39m
+
+[36mPWA v1.3.0[39m
+mode      [35mgenerateSW[39m
+precache  [32m8 entries[39m [2m(221.57 KiB)[22m
+files generated
+  [2mdist/sw.js[22m
+  [2mdist/workbox-9c191d2f.js[22m
+== OK: npm run build
+
+== ci-local ALL GREEN 2026-10-01 16:04:02 +08

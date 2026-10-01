@@ -1,10 +1,10 @@
 ---
 id: TASK-5
 title: 專案骨架——Vite＋React＋TS＋Tailwind、測試與 CI
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 07:24'
+updated_date: '2026-10-01 14:16'
 labels:
   - app
   - workspace
@@ -25,9 +25,15 @@ ordinal: 5000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 npm run dev／build／test／e2e 全部可跑，build 產物可離線開啟（PWA service worker 註冊成功）
-- [ ] #2 Playwright 兩個手機 project 各有一支 smoke 測試通過
-- [ ] #3 CI workflow 在本機以 act 或推分支前的等價指令驗證一次全綠（不 push 到遠端則記錄本機等價結果）
-- [ ] #4 LICENSE、data/LICENSE、NOTICE 就位；README 骨架寫明授權分界
-- [ ] #5 app/CLAUDE.md 寫好（指令、資料夾結構、測試方式）
+- [x] #1 npm run dev／build／test／e2e 全部可跑，build 產物可離線開啟（PWA service worker 註冊成功）
+- [x] #2 Playwright 兩個手機 project 各有一支 smoke 測試通過
+- [x] #3 CI workflow 在本機以 act 或推分支前的等價指令驗證一次全綠（不 push 到遠端則記錄本機等價結果）
+- [x] #4 LICENSE、data/LICENSE、NOTICE 就位；README 骨架寫明授權分界
+- [x] #5 app/CLAUDE.md 寫好（指令、資料夾結構、測試方式）
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-01 驗收 PASS（隔離驗收官）。代決：context7 worker 內未登入→改查 npm peerDependencies（偏離）；TypeScript 用 6.0.3（typescript-eslint peer <6.1）；AC#3 無 remote→本機等價全綠（ci-local.log）＋actionlint；webkit 離線重載因 Windows WebKit 限制 skip。選型：react 19.3、vite 8.3.1、tailwind 4.3.3、vite-plugin-pwa 1.3.0、vitest 5.0.3、@playwright/test 1.63.0、eslint 10.11 等，皆 MIT/Apache-2.0。
+<!-- SECTION:NOTES:END -->

@@ -1,10 +1,10 @@
 ---
 id: TASK-10
 title: 本機資料層＋FSRS 排程——單字池、收藏、每日新字上限
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 18:00'
+updated_date: '2026-10-01 07:54'
 labels:
   - app
 dependencies:

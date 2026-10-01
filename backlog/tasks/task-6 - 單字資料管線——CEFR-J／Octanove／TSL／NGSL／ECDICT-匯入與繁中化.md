@@ -1,10 +1,10 @@
 ---
 id: TASK-6
 title: 單字資料管線——CEFR-J／Octanove／TSL／NGSL／ECDICT 匯入與繁中化
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 18:00'
+updated_date: '2026-10-01 14:05'
 labels:
   - data
 dependencies:
@@ -33,3 +33,9 @@ ordinal: 6000
 - [ ] #5 data/CLAUDE.md 寫好（來源、授權分界、重建指令）
 - [ ] #6 守衛測試：lexicon 與字典切片不含任何 Oxford 3000 衍生欄位（oxford 欄或同等資訊），CI 必跑
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-01 執行長代決：CEFR-J 用 olp GitHub 1.5 版（1.6 需填表、不可重現下載）；原表不進 repo；衍生級距獨立檔 data/sources/cefrj/levels.json 依原條款標出處、不標 CC BY-SA。規格寫 1.6、『data/ 整體 CC BY-SA』兩處待創辦人裁示是否改條文。字典收錄篩選（有詞頻／lemma／lexicon，排除片語）。截斷：每詞性≤3義項、每詞條≤160字。
+<!-- SECTION:NOTES:END -->

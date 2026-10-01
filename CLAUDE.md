@@ -8,7 +8,7 @@ LinguaApp——英文學習手機版 Web App（聽說讀寫＋間隔重複），
 
 | 資料夾 | 一句話定位 | 詳細文件 |
 |---|---|---|
-| `app/` | React＋Vite＋TailwindCSS 手機版 PWA；TTS／STT／字典／FSRS 皆在瀏覽器執行 | `app/CLAUDE.md`（建立時補） |
+| `app/` | React＋Vite＋TailwindCSS 手機版 PWA；TTS／STT／字典／FSRS 皆在瀏覽器執行 | `app/CLAUDE.md` |
 | `supabase/` | schema、RLS、migrations；Auth（Google、Email 驗證碼） | `supabase/CLAUDE.md`（建立時補） |
 | `content/` | 題庫與課程 JSON（LLM 批次產生＋抽審）、產題與校驗腳本 | `content/CLAUDE.md`（建立時補） |
 | `data/` | 單字資料（CEFR-J、Octanove、TSL/NGSL、ECDICT 衍生），**獨立授權 CC BY-SA**，不得混入 AGPL 程式碼 | `data/LICENSE` |
