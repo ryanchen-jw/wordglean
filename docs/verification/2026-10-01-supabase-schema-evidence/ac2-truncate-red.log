@@ -1,0 +1,47 @@
+# 新守衛對舊 schema（未 revoke truncate／references／trigger）——預期紅
+Connecting to local database...
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/rls_isolation.test.sql .. 
+# Failed test 48: "A 不能 TRUNCATE（否則可清掉 B 的列）"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 64: "B favorites 無新增列"
+#         have: 0
+#         want: 1
+# Looks like you failed 2 tests of 66
+Failed 2/66 subtests 
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/schema_guard.test.sql ... 
+# Failed test 6: "authenticated／anon 對 public 表無 TRUNCATE／REFERENCES／TRIGGER"
+#     Unexpected records:
+#         ("authenticated profiles:TRUNCATE")
+#         ("authenticated profiles:REFERENCES")
+#         ("authenticated profiles:TRIGGER")
+#         ("authenticated settings:TRUNCATE")
+#         ("authenticated settings:REFERENCES")
+#         ("authenticated settings:TRIGGER")
+#         ("authenticated word_pool:TRUNCATE")
+#         ("authenticated word_pool:REFERENCES")
+#         ("authenticated word_pool:TRIGGER")
+#         ("authenticated course_progress:TRUNCATE")
+#         ("authenticated course_progress:REFERENCES")
+#         ("authenticated course_progress:TRIGGER")
+#         ("authenticated favorites:TRUNCATE")
+#         ("authenticated favorites:REFERENCES")
+#         ("authenticated favorites:TRIGGER")
+#         ("authenticated speech_corrections:TRUNCATE")
+#         ("authenticated speech_corrections:REFERENCES")
+#         ("authenticated speech_corrections:TRIGGER")
+#         ("authenticated review_logs:TRUNCATE")
+#         ("authenticated review_logs:REFERENCES")
+#         ("authenticated review_logs:TRIGGER")
+# Looks like you failed 1 test of 8
+Failed 1/8 subtests 
+
+Test Summary Report
+-------------------
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/rls_isolation.test.sql (Wstat: 0 Tests: 66 Failed: 2)
+  Failed tests:  48, 64
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/schema_guard.test.sql (Wstat: 0 Tests: 8 Failed: 1)
+  Failed test:  6
+Files=2, Tests=74,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.02 cusr  0.03 csys =  0.10 CPU)
+Result: FAIL
+error running container: exit 1

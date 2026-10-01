@@ -1,10 +1,10 @@
 ---
 id: TASK-19
 title: Supabase schema＋RLS＋migrations（本機 Supabase 測試）
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 07:55'
+updated_date: '2026-10-01 14:42'
 labels:
   - supabase
 dependencies:
@@ -25,7 +25,13 @@ ordinal: 19000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 本機 supabase start 後 migration 可從零套用、可重跑
-- [ ] #2 RLS 負向測試：A 使用者讀寫 B 的資料全部被拒
-- [ ] #3 schema 與 app 本機資料層欄位對照表寫入 supabase/CLAUDE.md
+- [x] #1 本機 supabase start 後 migration 可從零套用、可重跑
+- [x] #2 RLS 負向測試：A 使用者讀寫 B 的資料全部被拒
+- [x] #3 schema 與 app 本機資料層欄位對照表寫入 supabase/CLAUDE.md
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-01 驗收 PASS（隔離驗收官實跑）。代決：埠段 55420 起（避撞他專案）、CLI npx 鎖 2.118.0（2.119.0 剛發布）、『可重跑』＝db reset 連跑皆綠＋migration up 無變動；favorites 雲端獨立表含墓碑、本機為 word_pool.favoritedAt（投影交 TASK-20）；欄位對齊 TASK-10、不含已棄用 elapsed_days。驗收後補強：收回 authenticated 的 TRUNCATE／REFERENCES／TRIGGER（TRUNCATE 繞過 RLS），附紅綠證據。context7 worker 內未登入→查 npm（偏離）。給下游：TASK-20 收 OTP 需開 [local_smtp]；word_id／lesson_id 目前 text 無格式，TASK-6/7 定案後可收緊；TASK-17 需本機欄位對應 profiles.cefr_level。
+<!-- SECTION:NOTES:END -->

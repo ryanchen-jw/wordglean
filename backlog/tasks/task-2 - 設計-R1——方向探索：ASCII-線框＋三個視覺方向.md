@@ -1,10 +1,10 @@
 ---
 id: TASK-2
 title: 設計 R1——方向探索：ASCII 線框＋三個視覺方向
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 14:09'
+updated_date: '2026-10-01 14:38'
 labels:
   - app
 dependencies: []
@@ -37,4 +37,6 @@ ordinal: 2000
 2026-10-01 執行長：R1 產出在分支 worktree-task-2-design-r1（0771ddb 線框、7b40a43 方向＋對比度腳本、a5354ce 圈選頁）。圈選頁 Artifact：https://claude.ai/artifact/STt2PsWSU5c2VLKt4Vok7B（db 集合 picks，發佈後 list 正常、空）。對比度 63 組全過 AA。待 R2 修：線框首頁 (b) 寫『到期量回到 50 以下恢復』與代決門檻『每日新字×10』不一致；深色回饋疊色底未入腳本；Literata 音標字形。停 In Review 等 G1。
 
 2026-10-01 G1 圈選結果（Artifact db picks）：7 條預設做法全部『同意建議』（深色模式第一版就做、只直向但橫向不壞版、主按鈕在下 1/3、App 內三段字級、不做吉祥物、顏色＋圖示＋文字、短動效＋尊重減少動態）。三個方向 A/B/C 皆未選。整體意見：『主要視覺與風格，使用 UIUXPRO skill 重新設計一次，一樣設計3版』。→ 視覺方向重做 R1b（3 版），線框沿用。
+
+2026-10-01 R1b 完成（分支 worktree-task-2-design-r1：0f38923 併 main、345a94f 對比度補驗＋線框門檻修正、96b18d2 三方向、8411a23 圈選頁、874b056 D1 跟讀改點一下開始／結束）。用 ui-ux-pro-max 三條 --design-system 查詢；否決兒童向（Claymorphism 本體、Baloo/Comic Neue、Varela Round）與高無障礙風險的 Neumorphism。84 組對比度全過 AA（含深色回饋底）。圈選頁：https://claude.ai/artifact/HsKbpbhqcAs8AR712kUFoi（db picks，發佈後 list 正常、空）。待 R2 修：設定畫面『外觀 淺色（見挑戰假設）』應改為跟隨系統（已定案）。停 In Review 等 G1（R1b 圈選）。
 <!-- SECTION:NOTES:END -->

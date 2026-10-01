@@ -1,0 +1,22 @@
+# 突變：favorites policy 改 using(true) with check(true)，經 HTTP 入口跑 smoke（預期紅）
+ok   - A 寫入自己的收藏
+ok   - B 寫入自己的收藏
+FAIL - A 讀收藏只看到自己（期望 200 [{"word_id":"apple"}]，實得 200 [{"word_id":"apple"}, 
+ {"word_id":"bread"}, 
+ {"word_id":"apple"}, 
+ {"word_id":"bread"}, 
+ {"word_id":"apple"}, 
+ {"word_id":"apple"}, 
+ {"word_id":"bread"}]）
+FAIL - A 以 B 的 user_id 寫入被拒（期望 403，實得 201）
+FAIL - A 改 B 的收藏影響 0 列（期望 200 []，實得 200 [{"user_id":"df542ef7-9556-4f67-9416-85f7e18ceaa8","word_id":"bread","created_at":"2026-10-01T14:17:01.261862+00:00","deleted_at":"2026-10-01T00:00:00+00:00","updated_at":"2026-10-01T14:17:01.261862+00:00"}, 
+ {"user_id":"df542ef7-9556-4f67-9416-85f7e18ceaa8","word_id":"cat","created_at":"2026-10-01T14:17:02.150035+00:00","deleted_at":"2026-10-01T00:00:00+00:00","updated_at":"2026-10-01T14:17:02.150035+00:00"}]）
+FAIL - A 刪 B 的收藏影響 0 列（期望 200 []，實得 200 [{"user_id":"df542ef7-9556-4f67-9416-85f7e18ceaa8","word_id":"bread","created_at":"2026-10-01T14:17:01.261862+00:00","deleted_at":"2026-10-01T00:00:00+00:00","updated_at":"2026-10-01T14:17:01.261862+00:00"}, 
+ {"user_id":"df542ef7-9556-4f67-9416-85f7e18ceaa8","word_id":"cat","created_at":"2026-10-01T14:17:02.150035+00:00","deleted_at":"2026-10-01T00:00:00+00:00","updated_at":"2026-10-01T14:17:02.150035+00:00"}]）
+FAIL - B 的收藏原封不動（期望 200 [{"word_id":"bread","deleted_at":null}]，實得 200 [{"word_id":"apple","deleted_at":null}, 
+ {"word_id":"bread","deleted_at":null}, 
+ {"word_id":"apple","deleted_at":null}, 
+ {"word_id":"bread","deleted_at":null}, 
+ {"word_id":"apple","deleted_at":null}, 
+ {"word_id":"apple","deleted_at":null}]）
+ok   - 未登入（anon）讀收藏被拒

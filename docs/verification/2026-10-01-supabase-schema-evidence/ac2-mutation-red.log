@@ -1,0 +1,71 @@
+# 突變：word_pool 關 RLS／favorites policy 改 using(true)／anon grant select settings／review_logs 開 update
+Connecting to local database...
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/rls_isolation.test.sql .. 
+# Failed test 15: "word_pool：A 只看得到自己"
+#     Results differ beginning at row 2:
+#         have: (bread)
+#         want: NULL
+# Failed test 16: "word_pool：A 以 B 的 user_id insert 被拒"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 17: "word_pool：A 改 B 影響 0 列"
+#         have: 2
+#         want: 0
+# Failed test 18: "word_pool：A 刪 B 影響 0 列"
+#         have: 2
+#         want: 0
+# Failed test 19: "word_pool：A 不能把自己的列轉給 B"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 21: "word_pool：正向對照——A 改自己 2 列"
+#         have: 1
+#         want: 2
+# Failed test 24: "review_logs：A 改 B 被拒（append-only，無 update 權限）"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 26: "review_logs：A 連自己的也不能改（append-only）"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 36: "favorites：A 只看得到自己"
+#     Results differ beginning at row 2:
+#         have: (bread)
+#         want: NULL
+# Failed test 37: "favorites：A 以 B 的 user_id insert 被拒"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 38: "favorites：A 改 B 影響 0 列"
+#         have: 2
+#         want: 0
+# Failed test 39: "favorites：A 刪 B 影響 0 列"
+#         have: 2
+#         want: 0
+# Failed test 40: "favorites：A 不能把自己的列轉給 B"
+#       caught: no exception
+#       wanted: 42501
+# Failed test 41: "favorites：正向對照——A 標自己墓碑 1 列"
+#         have: 0
+#         want: 1
+# Failed test 49: "anon：settings 被拒"
+#       caught: no exception
+#       wanted: 42501
+# Looks like you failed 15 tests of 65
+Failed 15/65 subtests 
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/schema_guard.test.sql ... 
+# Failed test 2: "public 每張表都開 RLS"
+#     Unexpected records:
+#         (word_pool)
+# Failed test 5: "anon 對 public 表無任何權限"
+#     Unexpected records:
+#         (settings:SELECT)
+# Looks like you failed 2 tests of 7
+Failed 2/7 subtests 
+
+Test Summary Report
+-------------------
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/rls_isolation.test.sql (Wstat: 0 Tests: 65 Failed: 15)
+  Failed tests:  15-19, 21, 24, 26, 36-41, 49
+/Projects/LinguaApp/.claude/worktrees/task-19-supabase/supabase/tests/database/schema_guard.test.sql (Wstat: 0 Tests: 7 Failed: 2)
+  Failed tests:  2, 5
+Files=2, Tests=72,  1 wallclock secs ( 0.08 usr  0.01 sys +  0.14 cusr  0.19 csys =  0.42 CPU)
+Result: FAIL
+error running container: exit 1
