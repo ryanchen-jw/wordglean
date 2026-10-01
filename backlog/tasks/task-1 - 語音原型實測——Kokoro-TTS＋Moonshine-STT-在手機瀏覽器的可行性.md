@@ -1,10 +1,10 @@
 ---
 id: TASK-1
 title: 語音原型實測——Kokoro TTS＋Moonshine STT 在手機瀏覽器的可行性
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 15:14'
+updated_date: '2026-10-01 17:12'
 labels:
   - app
 dependencies: []
@@ -29,7 +29,7 @@ ordinal: 1000
 - [x] #1 原型頁可載入 Kokoro 唸出指定英文句，記錄首次下載時間、載入時間、單句合成延遲
 - [x] #2 原型頁可錄音並以 Moonshine tiny 轉文字，記錄載入時間、辨識延遲、10 句測試句的逐字正確率
 - [x] #3 兩模型同時載入時，在 webkit 與 chromium 模擬下記錄記憶體與是否崩潰；WebGPU 不可用時的 WASM 後備路徑實測一次
-- [ ] #4 產出手機自測步驟（含 HTTPS 開法、要回填的 6 個數字）並停 In Review 等 G4；創辦人回填或明示略過後才可 Done
+- [x] #4 產出手機自測步驟（含 HTTPS 開法、要回填的 6 個數字）並停 In Review 等 G4；創辦人回填或明示略過後才可 Done
 - [x] #5 結論寫 docs/research/voice-poc.md：可行／需降級（系統聲音、分時載入、只載一個）／不可行，附數據與給 TASK-13／14 的載入策略建議
 <!-- AC:END -->
 
@@ -37,4 +37,6 @@ ordinal: 1000
 
 <!-- SECTION:NOTES:BEGIN -->
 2026-10-01 驗收 PASS（AC#1–3、#5；AC#4 自測步驟已備、待 G4 真機回填）。結論需降級：Moonshine 可行（98%）、Kokoro 手機即時合成不可行（q8 每句 11–32 s）。代決：transformers.js 直載 ONNX、共用 v3 引擎、LibriSpeech 真人錄音、webkit 閘門改看 working set（Windows WebKit 預留 private bytes 誤判）。給 TASK-13／14 的載入策略見 docs/research/voice-poc.md §5。需裁示：TTS 改預設系統聲音或產題時離線預產音檔（影響規格 §2）。
+
+2026-10-02 G4 創辦人裁示：真機實測略過，以桌機模擬結論為準（自測步驟已在 voice-poc.md §4 備妥）。「聽」語音來源裁示 A：系統聲音為預設、Kokoro 選配（規格 §2 已改）。
 <!-- SECTION:NOTES:END -->

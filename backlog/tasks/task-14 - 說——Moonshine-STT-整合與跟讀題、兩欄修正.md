@@ -4,7 +4,7 @@ title: 說——Moonshine STT 整合與跟讀題、兩欄修正
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 16:41'
+updated_date: '2026-10-01 17:12'
 labels:
   - app
 dependencies:
@@ -37,4 +37,6 @@ ordinal: 14000
 
 <!-- SECTION:NOTES:BEGIN -->
 2026-10-02 創辦人 G2 裁示（規格 §6 已改寫）：跟讀辨識完先讓使用者確認／修正，按送出後以送出句與目標句逐字比對計分；不再有『模型聽錯、不計分』標記。辨識結果與送出句差異仍要保留紀錄（speech_corrections）。
+
+2026-10-02 G4 真機自測已略過，以模擬結論為準；Moonshine 用範本精度（WebGPU encoder fp32＋decoder q4 約 76MB、WASM 約 52MB）、限輸出長度、分時載入，見 voice-poc.md §5。
 <!-- SECTION:NOTES:END -->

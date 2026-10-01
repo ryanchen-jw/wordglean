@@ -4,7 +4,7 @@ title: 聽——Kokoro TTS 整合與聽音打字／聽音選答
 status: To Do
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 18:00'
+updated_date: '2026-10-01 17:12'
 labels:
   - app
 dependencies:
@@ -32,3 +32,9 @@ ordinal: 13000
 - [ ] #3 兩種聽力題型 E2E 通過；聽音打字的寬鬆比對規則有單元測試
 - [ ] #4 移植的比對器通過原規則的等價測試，另加本專案縮寫與數字案例
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-10-02 創辦人裁示：語音來源 A——預設手機系統聲音（speechSynthesis），Kokoro 為設定選配（僅 WebGPU＋fp32、約 310MB、下載前告知）；載入策略依 docs/research/voice-poc.md §5。G4 真機自測已略過，以模擬結論為準。
+<!-- SECTION:NOTES:END -->

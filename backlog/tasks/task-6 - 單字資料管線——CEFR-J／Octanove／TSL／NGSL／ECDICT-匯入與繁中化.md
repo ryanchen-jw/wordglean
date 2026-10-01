@@ -4,7 +4,7 @@ title: 單字資料管線——CEFR-J／Octanove／TSL／NGSL／ECDICT 匯入與
 status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 15:09'
+updated_date: '2026-10-01 17:12'
 labels:
   - data
 dependencies:
@@ -42,4 +42,6 @@ ordinal: 6000
 2026-10-01 執行長代決（結案前）：D1 lemma.en.txt 檔頭限 research/educational purposes→依授權有疑慮排除，改用 ECDICT exchange 欄反推 56,911 組詞形對照（MIT 範圍）；D2 CEFR-J 官網自述曾比對 EVP 補字→CEFR-J 為規格明文來源、條款明確，維持採用，列報告告知創辦人；D3 s2twp 用詞誤轉（最高級→最高階 458 等）→加獨立反向修正表；lexicon id 保留大小寫、TASK-7 依小寫聚合。統計：lexicon 10,202 筆／9,073 字；字典 12.4 萬詞、596 片、gzip 3.29MB、最大片 113KB；冷啟動中位 12.8ms／最大 193ms（本機無網路延遲）。ECDICT 釋義原始出處未核一手。
 
 2026-10-01 驗收 PASS（隔離驗收官實跑）。選型：opencc 1.4.2（Apache-2.0）、pytest 9.1.1（MIT）、@playwright/test 1.63.0、actions/setup-python@v7；context7 未登入→查 PyPI/npm/GitHub（偏離）。殘留待順手修：ECDICT 原文簡體『于』6、『云』3 處；NOTICE 第 9 行舊句。
+
+2026-10-02 創辦人裁示：規格 data/ 授權改為依各來源分檔標示、CEFR-J 採 1.5（規格 §1、§4 已改）。
 <!-- SECTION:NOTES:END -->

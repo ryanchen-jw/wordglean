@@ -6,7 +6,7 @@
 
 - 英文學習 Web App，使用者母語繁體中文；聽、說、讀、寫四面向。
 - **只做手機版**（不做 RWD），以 PWA 形式可加入主畫面。
-- **開源免費**：程式碼 AGPL-3.0 公開於 GitHub；另架一個官方站供一般人直接使用。單字資料（CC BY-SA 來源）放獨立資料夾、獨立授權。
+- **開源免費**：程式碼 AGPL-3.0 公開於 GitHub；另架一個官方站供一般人直接使用。單字資料放獨立資料夾 `data/`，依各來源原授權分檔標示（Octanove、TSL、NGSL 為 CC BY-SA；ECDICT 為 MIT；CEFR-J 衍生級距依其原條款、標明出處，不重新授權為 CC BY-SA），索引見 `data/LICENSES.md`（2026-10-02 創辦人裁示）。
 - 第一版**不做遊戲化**（無連續天數、經驗值、排行榜、愛心）、**不做金流**。
 
 ## 2. 架構
@@ -16,14 +16,14 @@
 | 前端 | React＋Vite＋TailwindCSS（可用 shadcn） | 題型互動多 |
 | 前端部署 | Cloudflare Pages | 免費 |
 | 後端 | **不寫後端**；Supabase（PostgreSQL＋Auth＋Row Level Security） | 登入、同步、權限都由 Supabase 處理；他人可自架一份 |
-| 語音合成（聽） | 手機瀏覽器跑 Kokoro-82M（約 90MB）；載入失敗或記憶體不足時退回系統內建聲音 | 地端開源模型 |
+| 語音合成（聽） | **預設用手機系統內建聲音**；Kokoro-82M 為設定裡的選配（僅 WebGPU 可用時提供 fp32 版、約 310MB，下載前告知） | 原型實測 Kokoro 在手機瀏覽器即時合成過慢（見 `docs/research/voice-poc.md`；2026-10-02 創辦人裁示） |
 | 語音辨識（說） | 手機瀏覽器跑 Moonshine tiny（約 28MB，MIT）；Web Speech API 僅作最後後備 | 錄音不離開手機 |
 | LLM（寫作批改、語法解釋） | OpenRouter，**使用者自帶帳號**（OAuth PKCE 一鍵授權或貼金鑰），金鑰只存使用者瀏覽器、由瀏覽器直接呼叫；使用者可自選模型 | 營運者零 LLM 成本、伺服器不碰金鑰 |
 | 單字查義 | 內建 ECDICT（MIT，76 萬詞條，含音標、詞性），以 OpenCC s2twp 轉台灣繁體 | 免費、離線、無額度 |
 
 Supabase 免費方案（二手來源核對）：500MB 資料庫、每月 5 萬活躍使用者、**閒置 7 天會自動暫停**——官方站需要定時喚醒機制（例如 Cloudflare 排程每日 ping）。
 
-⚠️ iOS Safari 的 WASM 實務可用記憶體約 300MB，Kokoro 與 Moonshine 同時常駐有風險 → **開工第一步做語音原型**，在真實 iPhone／Android 上量載入時間、記憶體、延遲。
+語音原型已完成（TASK-1，`docs/research/voice-poc.md`）：Moonshine 可行、Kokoro 手機即時合成不可行；真機自測經創辦人裁示略過，以桌機模擬結論為準（2026-10-02）。
 
 ## 3. 帳號與資料
 
@@ -35,7 +35,7 @@ Supabase 免費方案（二手來源核對）：500MB 資料庫、每月 5 萬�
 
 - 內部分級軸：CEFR A1–C1（多益官方對照無 C2）。
 - 畫面顯示「B1｜約多益 xxx+」。對照依 ETS 官方 CEFR 門檻（聽力 / 閱讀：A1 60/60、A2 110/115、B1 275/275、B2 400/385、C1 490/455）；ETS 自述僅供參考。
-- 單字資料：CEFR-J 1.6（7,801 字，標註出處可商用）＋ Octanove C1/C2（CC BY-SA）做分級；TSL（多益常用 1,250 字）與 NGSL 標為「多益常考」。**不可使用** Oxford 3000/5000、English Vocabulary Profile（版權）。
+- 單字資料：CEFR-J 1.5（研究室條款：標註出處可商用、可改作；1.6 需填表下載、不適合可重跑腳本，2026-10-02 創辦人裁示採 1.5）＋ Octanove C1/C2（CC BY-SA）做分級；TSL（多益常用 1,250 字）與 NGSL 標為「多益常考」。**不可使用** Oxford 3000/5000、English Vocabulary Profile（版權）。
 - 題庫由開發方用 LLM 批次產生（例句、閱讀短文、選項、參考答案、繁中翻譯），自動檢查（用字不超級距、答案唯一）後創辦人抽審，存成檔案進 repo。產題 LLM 費用由開發方一次性負擔。
 
 ## 5. 新手分級測驗
