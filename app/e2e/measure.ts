@@ -1,7 +1,7 @@
 // 手機版量測（harness 06 三件套＋介面字串）：一般 e2e、視覺 smoke、e2e-sync 共用同一套量法，避免標準不一
 import type { Page } from '@playwright/test'
 
-// 允許出現在介面文字中的英文（產品名、服務名、級距、單位）；英文學習內容以 lang="en" 標示、不掃
+// 允許出現在介面文字中的英文（產品名、服務名、級距、單位）；英文學習內容以 lang="en"（音標 en-fonipa）標示、不掃
 export const ALLOWED_LATIN = [
   'LinguaApp',
   'OpenRouter',
@@ -10,6 +10,8 @@ export const ALLOWED_LATIN = [
   'B1',
   'B2',
   'C1',
+  'C2', // 字典彈層的級距標籤（Octanove C2）
+  'ECDICT', // 字典彈層「資料來源：ECDICT」
   'MB',
   'WebGPU',
   'AI',
@@ -75,10 +77,10 @@ export function measureMobile(page: Page): Promise<MobileMetrics> {
       if (lines > 1) wrapped.push(`${label(el)} 行數=${lines}`)
     }
 
-    // (c) 可點目標 ≥44×44（行內英文字屬 WCAG 2.5.8 例外，目前沒有）
+    // (c) 可點目標 ≥44×44；行內可點英文字（data-en-word）屬 WCAG 2.5.8 行內例外，不量
     const small: string[] = []
     for (const el of document.querySelectorAll('button, a, [role=tab], [role=option], label')) {
-      if (!visible(el)) continue
+      if (!visible(el) || el.hasAttribute('data-en-word')) continue
       // 只有包住控制項的 label 才是觸控目標（如勾選列）；<label for> 欄位標題的目標是輸入框本身
       if (el.tagName === 'LABEL' && !el.querySelector('input, select, textarea')) continue
       const b = el.getBoundingClientRect()
@@ -91,14 +93,14 @@ export function measureMobile(page: Page): Promise<MobileMetrics> {
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
     for (let n = walker.nextNode(); n; n = walker.nextNode()) {
       const p = n.parentElement
-      if (!p || p.closest('[lang="en"], script, style') || !visible(p)) continue
+      if (!p || p.closest('[lang|="en"], script, style') || !visible(p)) continue
       for (const w of n.textContent?.match(/[A-Za-z][A-Za-z0-9]*/g) ?? [])
         if (!allowed.includes(w)) latin.push(w)
     }
     for (const el of document.querySelectorAll('[aria-label], [placeholder]'))
       for (const v of [el.getAttribute('aria-label'), el.getAttribute('placeholder')])
         for (const w of v?.match(/[A-Za-z][A-Za-z0-9]*/g) ?? [])
-          if (!allowed.includes(w) && !el.closest('[lang="en"]')) latin.push(w)
+          if (!allowed.includes(w) && !el.closest('[lang|="en"]')) latin.push(w)
 
     // body 的背景與文字色＝當下色系的 token
     const probe = document.createElement('div')

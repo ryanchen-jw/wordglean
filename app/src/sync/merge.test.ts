@@ -245,6 +245,43 @@ describe('其餘合併規則', () => {
     ])
   })
 
+  // TASK-16 D2：收藏狀態以最後修改者為準（favoriteUpdatedAt）；沒有修改時間的舊資料沿用上一條規則
+  it('取消收藏晚於另一側的收藏：取消勝；之後再收藏：收藏勝；對調參數結果相同', () => {
+    const fav = word({ wordId: 'a', favoritedAt: T0, favoriteUpdatedAt: T0 })
+    const unfav = word({ wordId: 'a', favoritedAt: null, favoriteUpdatedAt: T0 + DAY })
+    for (const [x, y] of [
+      [fav, unfav],
+      [unfav, fav],
+    ]) {
+      const m = mergeSnapshots({ ...empty(), words: [x] }, { ...empty(), words: [y] })
+      expect(m.words[0]).toMatchObject({ favoritedAt: null, favoriteUpdatedAt: T0 + DAY })
+    }
+    const refav = word({ wordId: 'a', favoritedAt: T0 + 2 * DAY, favoriteUpdatedAt: T0 + 2 * DAY })
+    for (const [x, y] of [
+      [unfav, refav],
+      [refav, unfav],
+    ]) {
+      const m = mergeSnapshots({ ...empty(), words: [x] }, { ...empty(), words: [y] })
+      expect(m.words[0]).toMatchObject({
+        favoritedAt: T0 + 2 * DAY,
+        favoriteUpdatedAt: T0 + 2 * DAY,
+      })
+    }
+  })
+
+  it('收藏與取消同一毫秒：收藏勝（與參數順序無關）', () => {
+    const fav = word({ wordId: 'a', favoritedAt: T0, favoriteUpdatedAt: T0 + DAY })
+    const unfav = word({ wordId: 'a', favoritedAt: null, favoriteUpdatedAt: T0 + DAY })
+    expect(
+      mergeSnapshots({ ...empty(), words: [fav] }, { ...empty(), words: [unfav] }).words[0]
+        .favoritedAt,
+    ).toBe(T0)
+    expect(
+      mergeSnapshots({ ...empty(), words: [unfav] }, { ...empty(), words: [fav] }).words[0]
+        .favoritedAt,
+    ).toBe(T0)
+  })
+
   it('課程來源取聯集並排序；加入時間取較早', () => {
     const m = mergeSnapshots(
       { ...empty(), words: [word({ wordId: 'a', courseRefs: ['l2', 'l1'], addedAt: T0 + DAY })] },

@@ -13,7 +13,7 @@
 | review_logs | 以 `id` 取聯集去重；輸出依 (`review`, `id`) 排序 |
 | 單字池 FSRS 欄位 | 該字合併後的 review log 依 (`review`, `id`) 排序後以 `replay()`（ts-fsrs `reschedule`）重播得出；無紀錄則保留 `addedAt` 較早那筆的欄位 |
 | 單字池 courseRefs／addedAt | courseRefs 取聯集並排序；addedAt 取較早 |
-| 收藏 favoritedAt | 取聯集（任一側非 null 即收藏，值取較早）。遠端 `deleted_at` 非 null 由轉接層轉成 `favoritedAt: null`，所以本機有收藏時以本機為準 |
+| 收藏 favoritedAt | 取聯集（任一側非 null 即收藏，值取較早）。遠端 `deleted_at` 非 null 由轉接層轉成 `favoritedAt: null`，所以本機有收藏時以本機為準。**TASK-16 起改為最後修改者為準**（見已知限制對應條） |
 | 設定 | `updatedAt` 晚者勝；同時間取鍵排序後穩定序列化（JSON）字串較大者，與參數順序無關 |
 | 課程進度 | 以 `lessonId` 合併；completedAt 取較早、updatedAt 取較晚 |
 | 跟讀修正 | 以 `id` 取聯集 |
@@ -56,7 +56,7 @@
 ## 已知限制
 
 - 重播一律用合併後設定的 `desiredRetention`；使用者中途改過保留率時，重播結果與當初逐次作答的結果不同。AC#1 只在固定保留率下斷言。
-- 本機尚無「取消收藏」，故收藏只做聯集、遠端墓碑會被本機收藏覆寫回收藏；取消收藏功能出現後改為最後修改者為準。
+- ~~本機尚無「取消收藏」，故收藏只做聯集、遠端墓碑會被本機收藏覆寫回收藏；取消收藏功能出現後改為最後修改者為準。~~ **已解除（TASK-16 Stage 4，2026-10-02）**：本機單字新增 `favoriteUpdatedAt`（收藏／取消的最後修改時間，非索引欄、Dexie 不升版）；取消收藏推墓碑（`deleted_at`＝取消時間），`updated_at`＝修改時間；合併改為收藏狀態以最後修改者為準（同時間收藏勝、兩側都收藏取較早收藏時間）。沒有修改時間的舊資料仍退化為聯集。規則見 `app/src/sync/merge.ts` 的 `mergeFavorite`、`app/src/sync/rows.ts` 的 `favoriteRow`。
 - 「每次結算後同步」目前無結算流程可掛，Stage 2 匯出 `requestSync()` 供 TASK-11／小課流程呼叫。
 - 單字池的課程來源（courseRefs）以整列 upsert 推送：兩台裝置在「拉取→推送」之間的數百毫秒內同時推同一個字時，後推者可能蓋掉先推者新增的來源；下次任一側同步會因本機仍有聯集而補回，但可能暫時不一致。
 - 雲端課程進度 completed_at 為空的列不帶回本機（本機只記已完成）。

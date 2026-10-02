@@ -11,6 +11,7 @@ const ALLOWED_LATIN = new Set([
   'B1',
   'B2',
   'C1',
+  'ECDICT', // 字典彈層「資料來源：ECDICT」（設計 s08）
   'MB',
   'WebGPU',
   'AI',

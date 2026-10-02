@@ -1,4 +1,4 @@
-// 06 視覺 smoke（AC#1／AC#2）：五畫面（s01、s02、s09、s11、s13）全部狀態＋安裝卡，兩個手機引擎各一輪。
+// 06 視覺 smoke（AC#1／AC#2）：六畫面（s01、s02、s08、s09、s11、s13）全部狀態＋安裝卡，兩個手機引擎各一輪。
 // 每個狀態：截圖 attach 進 HTML report；斷言 06 三件套（無橫向溢出、單行控件不折行、可點目標 ≥44×44）；
 // 掃描畫面上的介面文字不得有白名單以外的英文（英文學習內容以 lang="en" 標示、排除）。
 // 資料量級：單字庫 5000 字（課綱上限約 7,800 字的同量級）、到期 132（新課暫停門檻以上）。
@@ -40,6 +40,7 @@ async function seed(page: Page, s: Seed) {
         'agenda',
         'attendee',
         'internationalization',
+        'jennyx', // 字典查無此字（s08）
       ]
       for (let i = 0; i < (s.words ?? 0); i++)
         tx.objectStore('wordPool').put({
@@ -53,7 +54,7 @@ async function seed(page: Page, s: Seed) {
           reps: 2,
           lapses: 0,
           lastReview: null,
-          courseRefs: [],
+          courseRefs: ['a1-u01-l01'], // 有來源才算在池中（TASK-16 D3）
           favoritedAt: i % 7 === 2 ? i : null,
           addedAt: i,
         })
@@ -160,6 +161,37 @@ test('s09 單字庫：空的／預設（5000 字）／熟悉度彈層', async ({
   await check(page, info, 's09-default')
   await page.getByRole('button', { name: '熟悉度：全部' }).click()
   await check(page, info, 's09-familiarity-sheet')
+})
+
+// TASK-16：字典彈層三態＋疊在課程詳情上；jennyx 為假字（查無此字）
+test('s08 字典彈層：查到／已收藏＋提示／查無此字／疊在課程詳情上', async ({ page }, info) => {
+  await page.goto('/words')
+  await expect(page.getByText('單字庫還是空的')).toBeVisible()
+  await seed(page, { words: 12 })
+  await page.reload()
+  const dict = page.getByRole('dialog', { name: '單字查義' })
+  await page.getByRole('button', { name: 'postpone', exact: true }).click()
+  await expect(dict.getByRole('heading', { name: 'postpone' })).toBeVisible()
+  await check(page, info, 's08-default')
+  await dict.getByRole('button', { name: '加入收藏單字庫' }).click()
+  await expect(page.getByRole('status').filter({ hasText: '已加入收藏' })).toBeVisible()
+  await check(page, info, 's08-saved')
+  await page.keyboard.press('Escape')
+  await page.getByRole('button', { name: 'jennyx', exact: true }).click()
+  await expect(dict.getByText('字典裡沒有這個字（可能是人名或專有名詞）')).toBeVisible()
+  await check(page, info, 's08-notfound')
+  await page.keyboard.press('Escape')
+  await page.goto('/course')
+  await page
+    .getByRole('button', { name: /第 1 課/ })
+    .first()
+    .click()
+  await page
+    .getByRole('dialog', { name: '小課詳情' })
+    .getByRole('button', { name: 'have', exact: true })
+    .click()
+  await expect(dict.getByRole('heading', { name: 'have' })).toBeVisible()
+  await check(page, info, 's08-over-lesson')
 })
 
 test('s11 設定：預設（上／下半）／每日新字數彈層／深色', async ({ page }, info) => {

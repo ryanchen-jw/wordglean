@@ -25,15 +25,23 @@ export interface WordFilter {
   query: string
 }
 
-/** 篩選後依到期時間排序（最急的在前），還沒開始學的新字排最後 */
-export function filterWords(words: readonly PoolWord[], f: WordFilter, nowMs: number): PoolWord[] {
+/**
+ * 篩選後依到期時間排序（最急的在前），還沒開始學的新字排最後；
+ * 搜尋比對英文與中文釋義（glosses：wordId → 釋義行，TASK-16）
+ */
+export function filterWords(
+  words: readonly PoolWord[],
+  f: WordFilter,
+  nowMs: number,
+  glosses?: ReadonlyMap<string, string>,
+): PoolWord[] {
   const q = f.query.trim().toLowerCase()
   return words
     .filter(
       (w) =>
         (f.scope === 'all' || (f.scope === 'due' ? isDue(w, nowMs) : w.favoritedAt !== null)) &&
         (f.familiarity === 'all' || familiarityOf(w) === f.familiarity) &&
-        (q === '' || w.wordId.includes(q)),
+        (q === '' || w.wordId.includes(q) || (glosses?.get(w.wordId)?.includes(q) ?? false)),
     )
     .sort((a, b) => {
       const an = a.state === CardState.New

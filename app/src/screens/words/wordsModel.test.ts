@@ -69,6 +69,21 @@ describe('filterWords', () => {
     expect(f({ query: ' EDU ' })).toEqual(['reschedule'])
     expect(f({ query: 'zzz' })).toEqual([])
   })
+  it('搜尋中文：比對釋義（TASK-16 補 D5）；沒有釋義的字只比英文', () => {
+    const glosses = new Map([
+      ['postpone', 'vt. 延遲, 使延期⋯'],
+      ['meeting', 'n. 會議, 會面'],
+      ['agenda', 'pl. 議程, 日常工作事項'],
+    ])
+    const g = (query: string) =>
+      filterWords(words, { scope: 'all', familiarity: 'all', query }, NOW, glosses).map(
+        (x) => x.wordId,
+      )
+    expect(g('延期')).toEqual(['postpone'])
+    expect(g('議')).toEqual(['meeting', 'agenda'])
+    expect(g('出席')).toEqual([])
+    expect(g('meet')).toEqual(['meeting'])
+  })
 })
 
 describe('dueLabel（依裝置時區算日數）', () => {

@@ -32,12 +32,13 @@ app/
 │   ├── screens/         home／course／words／settings／lesson 畫面與其推導模型（*Model.ts）
 │   ├── lesson/          題型引擎（TASK-12）：題目型別、佇列與題型登記、FSRS 評分對應、小課進度（續作）、
 │   │                    結算；題目檔以獨立 json 資產載入（E2E 建置 VITE_ITEM_FIXTURES=true 改讀 fixtures/）
-│   ├── dict/            EnglishText（英文學習內容；TASK-16 以可點查義版取代）
+│   ├── dict/            字典（TASK-16）：可點英文字 EnglishText、字典彈層 DictionaryProvider、詞形還原與查找；
+│   │                    字典切片（data/dict）與單字總表（data/lexicon）以獨立 json 資產預快取、不內嵌進 bundle
 │   ├── curriculum/      課綱型別與查詢；課綱檔以獨立 json 資產載入（不併進程式碼 bundle）
 │   ├── data/            Dexie 資料層、appDb.ts（App 唯一 db 實例）、匯出／清除
 │   ├── download/        模型下載狀態型別與進度元件（骨架，TASK-13／14 接真下載）
 │   ├── auth/、sync/     登入與同步（TASK-20）；帳號區塊掛在設定頁 AccountSection
-│   ├── ui/              Button、Card、BottomSheet、OptionSheet、ChoiceOption、FeedbackBar、ConfirmDialog
+│   ├── ui/              Button、Card、BottomSheet、OptionSheet、ChoiceOption、FeedbackBar、ConfirmDialog、Toast
 │   ├── index.css        Tailwind 進入點（tailwindcss＋design/tokens.css＋design/theme.css）
 │   ├── design/          設計 tokens（tokens.css 唯一數值來源、theme.css 接 Tailwind 4 @theme、
 │   │                    tokens.test.ts 守 WCAG AA）；規格見 ../docs/design/

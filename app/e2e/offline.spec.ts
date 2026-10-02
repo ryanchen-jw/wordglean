@@ -31,7 +31,7 @@ test('離線重開：首頁、單字庫、課程地圖都可進入，首頁顯�
       reps: 2,
       lapses: 0,
       lastReview: null,
-      courseRefs: [],
+      courseRefs: ['a1-u01-l01'], // 有來源才算在池中（TASK-16 D3）
       favoritedAt: null,
       addedAt: 0,
     })

@@ -55,7 +55,10 @@ export interface FavoriteRow {
   updated_at: string
 }
 
-/** 收藏只推「已收藏」；本機沒有取消收藏，不推墓碑（proposal 已知限制） */
+/**
+ * 已收藏推收藏列；取消過收藏（有修改時間）推墓碑列（deleted_at＝取消時間，TASK-16）；從未收藏不推。
+ * updated_at＝收藏狀態修改時間，舊資料沒有時用推送時間
+ */
 export const wordToRows = (w: PoolWord, userId: string, nowIso: string) => ({
   pool: {
     user_id: userId,
@@ -72,19 +75,31 @@ export const wordToRows = (w: PoolWord, userId: string, nowIso: string) => ({
     course_refs: w.courseRefs,
     added_at: iso(w.addedAt),
   } satisfies WordPoolRow,
-  favorite:
-    w.favoritedAt === null
-      ? null
-      : ({
-          user_id: userId,
-          word_id: w.wordId,
-          created_at: iso(w.favoritedAt),
-          deleted_at: null,
-          updated_at: nowIso,
-        } satisfies FavoriteRow),
+  favorite: favoriteRow(w, userId, nowIso),
 })
 
-type FavoritePick = Pick<FavoriteRow, 'word_id' | 'created_at' | 'deleted_at'>
+function favoriteRow(w: PoolWord, userId: string, nowIso: string): FavoriteRow | null {
+  const changed = w.favoriteUpdatedAt === undefined ? null : iso(w.favoriteUpdatedAt)
+  if (w.favoritedAt !== null)
+    return {
+      user_id: userId,
+      word_id: w.wordId,
+      created_at: iso(w.favoritedAt),
+      deleted_at: null,
+      updated_at: changed ?? nowIso,
+    }
+  if (changed === null) return null
+  return {
+    user_id: userId,
+    word_id: w.wordId,
+    created_at: changed,
+    deleted_at: changed,
+    updated_at: changed,
+  }
+}
+
+type FavoritePick = Pick<FavoriteRow, 'word_id' | 'created_at' | 'deleted_at'> &
+  Partial<Pick<FavoriteRow, 'updated_at'>>
 
 /** 單字池列與收藏列合成一筆本機單字；墓碑（deleted_at 非空）視為未收藏 */
 export function wordFromRows(
@@ -92,6 +107,8 @@ export function wordFromRows(
   fav: FavoritePick | undefined,
 ): PoolWord {
   const favoritedAt = fav && fav.deleted_at === null ? ms(fav.created_at) : null
+  // 收藏狀態修改時間（TASK-16）：雲端列有 updated_at 才帶回
+  const changed = fav?.updated_at ? { favoriteUpdatedAt: ms(fav.updated_at) } : {}
   if (!pool) {
     const at = ms(fav!.created_at)
     return {
@@ -99,6 +116,7 @@ export function wordFromRows(
       ...createScheduler().newCard(at),
       courseRefs: [],
       favoritedAt,
+      ...changed,
       addedAt: at,
     }
   }
@@ -115,6 +133,7 @@ export function wordFromRows(
     lastReview: msOrNull(pool.last_review),
     courseRefs: pool.course_refs,
     favoritedAt,
+    ...changed,
     addedAt: ms(pool.added_at),
   }
 }

@@ -31,15 +31,16 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
     <>
       <LessonMain>
         <Card className="justify-items-center gap-2 px-5 py-7 text-center">
+          {/* 作答前不可點（會直接看到答案）；作答後改為可點查義（G2） */}
           <EnglishText
             text={item.word}
-            disabled="all"
+            disabled={answered ? undefined : 'all'}
             className="font-en text-display font-semibold break-words"
           />
           {canSpeak() && (
             <button
               type="button"
-              className={`${iconBtnCls} text-primary!`}
+              className={`${iconBtnCls} text-primary`}
               aria-label={t('lesson.wordCard.speak')}
               onClick={() => speak(item.word)}
             >

@@ -100,7 +100,7 @@ const word = (wordId: string, state: CardState, due: number): PoolWord => ({
   reps: 1,
   lapses: 0,
   lastReview: null,
-  courseRefs: [],
+  courseRefs: ['a2-u01-l01'], // 有來源才算在池中（TASK-16 D3）
   favoritedAt: null,
   addedAt: 0,
 })
@@ -174,7 +174,13 @@ describe('loadHomeDbInput', () => {
   })
 
   it('只有收藏字、沒有上過課也不算第一次開啟', async () => {
-    await db.wordPool.put(word('w1', CardState.New, NOW))
+    await db.wordPool.put({ ...word('w1', CardState.New, NOW), courseRefs: [], favoritedAt: NOW })
     expect((await loadHomeDbInput(db, NOW, TZ)).firstRun).toBe(false)
+  })
+
+  // TASK-16 執行長代決：收藏後又按「復原」的字不在池中（inPool），仍算第一次開啟
+  it('收藏後又復原（無來源）的字不算，仍是第一次開啟', async () => {
+    await db.wordPool.put({ ...word('w1', CardState.New, NOW), courseRefs: [], favoritedAt: null })
+    expect((await loadHomeDbInput(db, NOW, TZ)).firstRun).toBe(true)
   })
 })

@@ -3,7 +3,9 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { db } from '../../data/appDb'
 import type { PoolWord } from '../../data/db'
+import { DictionaryProvider } from '../../dict/DictionaryProvider'
 import { CardState } from '../../srs/scheduler'
+import { fsDictDeps } from '../../test/dictFs'
 import { WordsScreen } from './WordsScreen'
 
 const DAY = 86_400_000
@@ -19,7 +21,7 @@ const word = (wordId: string, p: Partial<PoolWord> = {}): PoolWord => ({
   reps: 3,
   lapses: 0,
   lastReview: null,
-  courseRefs: [],
+  courseRefs: ['a1-u01-l01'], // 有來源才算在池中（TASK-16 D3）
   favoritedAt: null,
   addedAt: 0,
   ...p,
@@ -84,7 +86,7 @@ describe('單字庫（s09）', () => {
 
     fireEvent.click(screen.getByRole('button', { name: '熟悉度：熟悉' }))
     fireEvent.click(screen.getByRole('option', { name: '全部' }))
-    fireEvent.change(screen.getByRole('searchbox', { name: '搜尋英文單字' }), {
+    fireEvent.change(screen.getByRole('searchbox', { name: '搜尋英文或中文' }), {
       target: { value: 'res' },
     })
     expect(listed()).toEqual(['reschedule', 'rest'])
@@ -99,5 +101,41 @@ describe('單字庫（s09）', () => {
     render(<WordsScreen />)
     await screen.findByText('共 120 字・今天到期 0')
     expect(listed()).toHaveLength(50)
+  })
+
+  describe('中文釋義與中文搜尋（TASK-16，補 TASK-11 D5）', () => {
+    const loaded = fsDictDeps()
+    const deps = () => Promise.resolve(loaded)
+    const renderWithDict = () =>
+      render(
+        <DictionaryProvider deps={deps}>
+          <WordsScreen />
+        </DictionaryProvider>,
+      )
+
+    it('列表顯示短釋義（取自單字總表）；可用中文搜尋', async () => {
+      await db.wordPool.bulkPut([word('postpone'), word('meeting', { due: Date.now() + 2 * DAY })])
+      renderWithDict()
+      expect(await screen.findByText('延遲')).toBeInTheDocument()
+      expect(screen.getByText('會議')).toBeInTheDocument()
+      fireEvent.change(screen.getByRole('searchbox', { name: '搜尋英文或中文' }), {
+        target: { value: '延期' },
+      })
+      expect(listed()).toEqual(['postpone'])
+    })
+
+    it('列表的英文字可點查義', async () => {
+      await db.wordPool.bulkPut([word('agenda')])
+      renderWithDict()
+      fireEvent.click(await screen.findByRole('button', { name: 'agenda' }))
+      expect(await screen.findByRole('dialog', { name: '單字查義' })).toBeInTheDocument()
+    })
+
+    it('沒有課程來源也沒收藏的字（取消收藏後）不列、不計數', async () => {
+      await db.wordPool.bulkPut([word('meeting'), word('agenda', { courseRefs: [] })])
+      renderWithDict()
+      expect(await screen.findByText('共 1 字・今天到期 0')).toBeInTheDocument()
+      expect(listed()).toEqual(['meeting'])
+    })
   })
 })

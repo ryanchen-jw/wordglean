@@ -15,6 +15,7 @@ import { levelLabel } from '../../curriculum/levelLabel'
 import { useLevelDoc } from '../../curriculum/load'
 import { db } from '../../data/appDb'
 import { useLiveQuery } from '../../data/useLiveQuery'
+import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import { navigate } from '../../router'
 import { TabScreen } from '../../shell/Screen'
@@ -48,8 +49,9 @@ function LessonSheet({ lesson, onClose }: { lesson: LessonRef; onClose: () => vo
       <p className="text-secondary text-muted">
         {t('course.sheet.newWords', { n: lesson.words.length })}
       </p>
-      <p lang="en" className="font-en leading-[1.6]">
-        {lesson.words.join('・')}
+      {/* 新字可點查義（全 App 可點英文字規則，components.md §12） */}
+      <p className="font-en leading-[1.6]">
+        <EnglishText text={lesson.words.join('・')} />
       </p>
       <Button onClick={() => navigate(`/lesson/${lesson.lessonId}`)}>
         {t('course.sheet.startButton')}

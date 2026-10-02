@@ -24,8 +24,29 @@ function unionBy<T>(a: T[], b: T[], key: (t: T) => string, combine: (x: T, y: T)
   return [...map.entries()].sort(([x], [y]) => cmp(x, y)).map(([, t]) => t)
 }
 
-const minNullable = (x: number | null, y: number | null) =>
-  x === null ? y : y === null ? x : Math.min(x, y)
+// 收藏狀態修改時間；舊資料沒有時以收藏時間代替（從未收藏＝最舊）
+const favoriteChange = (w: PoolWord) => w.favoriteUpdatedAt ?? w.favoritedAt ?? -Infinity
+
+/**
+ * 收藏狀態以最後修改者為準（TASK-16）：兩側都收藏取較早的收藏時間；一側收藏、一側未收藏時比修改時間，
+ * 同時間收藏勝（與參數順序無關）。沒有修改時間的舊資料退化為「收藏取聯集」
+ */
+function mergeFavorite(
+  x: PoolWord,
+  y: PoolWord,
+): Pick<PoolWord, 'favoritedAt' | 'favoriteUpdatedAt'> {
+  const changes = [x.favoriteUpdatedAt, y.favoriteUpdatedAt].filter((c) => c !== undefined)
+  const updated = changes.length > 0 ? { favoriteUpdatedAt: Math.max(...changes) } : {}
+  if (x.favoritedAt !== null && y.favoritedAt !== null)
+    return { favoritedAt: Math.min(x.favoritedAt, y.favoritedAt), ...updated }
+  const fav = x.favoritedAt !== null ? x : y
+  const other = fav === x ? y : x
+  if (fav.favoritedAt === null) return { favoritedAt: null, ...updated }
+  return {
+    favoritedAt: favoriteChange(fav) >= favoriteChange(other) ? fav.favoritedAt : null,
+    ...updated,
+  }
+}
 
 // 鍵排序後的 JSON，與物件建立時的鍵順序無關
 export const stableJson = (o: object) => JSON.stringify(o, Object.keys(o).sort())
@@ -64,7 +85,7 @@ export function mergeSnapshots(a: SyncSnapshot, b: SyncSnapshot): SyncSnapshot {
       return {
         ...base,
         courseRefs: [...new Set([...x.courseRefs, ...y.courseRefs])],
-        favoritedAt: minNullable(x.favoritedAt, y.favoritedAt),
+        ...mergeFavorite(x, y),
         addedAt: Math.min(x.addedAt, y.addedAt),
       }
     },

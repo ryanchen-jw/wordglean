@@ -94,6 +94,32 @@ describe('雲端列 ↔ 本機資料', () => {
     expect(wordFromRows({ ...poolRow, last_review: null }, undefined).lastReview).toBeNull()
   })
 
+  // TASK-16 D2：取消收藏推墓碑；收藏狀態的修改時間（favoriteUpdatedAt）走 updated_at
+  it('取消收藏：推墓碑列（deleted_at＝取消時間）；有修改時間時 updated_at 用它', () => {
+    const T = '2026-10-05T00:00:00.000Z'
+    const changed = Date.parse(T)
+    expect(wordToRows({ ...word, favoritedAt: null, favoriteUpdatedAt: changed }, U, ISO)).toEqual({
+      pool: poolRow,
+      favorite: { user_id: U, word_id: 'apple', created_at: T, deleted_at: T, updated_at: T },
+    })
+    expect(wordToRows({ ...word, favoriteUpdatedAt: changed }, U, ISO).favorite).toEqual({
+      user_id: U,
+      word_id: 'apple',
+      created_at: ISO,
+      deleted_at: null,
+      updated_at: T,
+    })
+  })
+
+  it('拉回時帶回收藏狀態的修改時間（墓碑與收藏皆然）', () => {
+    const fav = { word_id: 'apple', created_at: PG, deleted_at: null, updated_at: PG }
+    expect(wordFromRows(poolRow, fav)).toEqual({ ...word, favoriteUpdatedAt: MS })
+    expect(wordFromRows(poolRow, { ...fav, deleted_at: PG })).toMatchObject({
+      favoritedAt: null,
+      favoriteUpdatedAt: MS,
+    })
+  })
+
   it('只有收藏列、沒有單字池列：以收藏時間建新字', () => {
     expect(wordFromRows(undefined, { word_id: 'river', created_at: PG, deleted_at: null })).toEqual(
       {

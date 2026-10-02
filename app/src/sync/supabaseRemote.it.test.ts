@@ -7,7 +7,13 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import Dexie from 'dexie'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import { createDb, type LinguaDb } from '../data/db'
-import { addFavorite, addFromCourse, recordReview, saveSettings } from '../data/repo'
+import {
+  addFavorite,
+  addFromCourse,
+  recordReview,
+  removeFavorite,
+  saveSettings,
+} from '../data/repo'
 import { Grade } from '../srs/scheduler'
 import { createSyncEngine } from './engine'
 import { createSupabaseRemote } from './supabaseRemote'
@@ -101,5 +107,40 @@ describe.skipIf(!URL || !ANON || !SERVICE)('Supabase 同步（本機整合）', 
       'stone',
     ])
     expect(await c.reviewLogs.count()).toBe(3)
+  })
+
+  // TASK-16 D2：取消收藏推墓碑、收藏狀態以最後修改者為準（經真 PostgREST 往返）
+  it('取消收藏跨裝置同步：一台取消、另一台跟著取消；再收藏也跟著收藏', async () => {
+    const d = await freshDb('d')
+    const e = await freshDb('e')
+    const ed = createSyncEngine({ db: d, remote: createSupabaseRemote(await signedIn()) })
+    const ee = createSyncEngine({ db: e, remote: createSupabaseRemote(await signedIn()) })
+    await addFavorite(d, 'cloud', T + 20 * MIN)
+    await ed.sync()
+    await ee.sync()
+    expect((await e.wordPool.get('cloud'))?.favoritedAt).toBe(T + 20 * MIN)
+
+    await removeFavorite(e, 'cloud', T + 30 * MIN)
+    await ee.sync()
+    const { data: tomb } = await admin
+      .from('favorites')
+      .select('deleted_at, updated_at')
+      .eq('user_id', userId)
+      .eq('word_id', 'cloud')
+      .single()
+    expect(Date.parse(tomb!.deleted_at!)).toBe(T + 30 * MIN)
+    await ed.sync()
+    expect(await d.wordPool.get('cloud')).toMatchObject({
+      favoritedAt: null,
+      favoriteUpdatedAt: T + 30 * MIN,
+    })
+
+    await addFavorite(d, 'cloud', T + 40 * MIN)
+    await ed.sync()
+    await ee.sync()
+    expect(await e.wordPool.get('cloud')).toMatchObject({
+      favoritedAt: T + 40 * MIN,
+      favoriteUpdatedAt: T + 40 * MIN,
+    })
   })
 })

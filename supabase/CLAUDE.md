@@ -48,7 +48,7 @@ CLI 一律 `npx --yes supabase@2.118.0`（鎖版本、不全域安裝）。proje
 | wordPool.favoritedAt | favorites.created_at／deleted_at | timestamptz | 雲端不放在 word_pool。非 null ⇔ favorites 有列且 deleted_at 為 null；取消收藏時寫 deleted_at（墓碑），不刪列 |
 | wordPool.addedAt | word_pool.added_at | timestamptz | |
 | wordPool.wordId（收藏的字） | favorites.word_id | text | PK＝(user_id, word_id) |
-| （無） | favorites.updated_at | timestamptz | 雲端專用，合併收藏用 |
+| wordPool.favoriteUpdatedAt | favorites.updated_at | timestamptz | 收藏狀態（收藏／取消）最後修改時間，合併以最後修改者為準（TASK-16）；本機舊資料沒有此欄時推送時間代替 |
 | reviewLogs.id（PK） | review_logs.id | uuid | 用戶端產生，去重鍵 |
 | reviewLogs.wordId | review_logs.word_id | text | |
 | reviewLogs.rating | review_logs.rating | smallint 1–4 | |

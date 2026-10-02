@@ -171,7 +171,11 @@ export function HomeScreen() {
       title={t('home.header.title')}
       subtitle={model && (model.state === 'first' ? t('home.header.unplaced') : levelLabel(level))}
       action={
-        <Link to="/settings" className={iconBtnCls} aria-label={t('home.header.settings')}>
+        <Link
+          to="/settings"
+          className={`${iconBtnCls} text-text`}
+          aria-label={t('home.header.settings')}
+        >
           <Settings size={20} aria-hidden="true" />
         </Link>
       }

@@ -1,7 +1,10 @@
-// 底部彈層（components.md §7 外框）：遮罩、拖曳把手；下滑、點遮罩或 Esc 關閉；開啟時焦點移入、關閉後還原
+// 底部彈層（components.md §7 外框）：遮罩、拖曳把手；下滑、點遮罩或 Esc 關閉（疊開時只關最上層）；開啟時焦點移入、關閉後還原
 import { useEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 
 const CLOSE_DRAG_PX = 80
+
+// 彈層可疊（例：課程詳情上再開字典彈層）；Esc 只關最上層
+const openSheets: object[] = []
 
 type Props = { label: string; onClose: () => void; children: ReactNode }
 
@@ -17,11 +20,15 @@ export function BottomSheet({ label, onClose, children }: Props) {
 
   useEffect(() => {
     const opener = document.activeElement as HTMLElement | null
+    const self = {}
+    openSheets.push(self)
     sheet.current?.focus()
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && closeRef.current()
+    const onKey = (e: KeyboardEvent) =>
+      e.key === 'Escape' && openSheets.at(-1) === self && closeRef.current()
     document.addEventListener('keydown', onKey)
     return () => {
       document.removeEventListener('keydown', onKey)
+      openSheets.splice(openSheets.indexOf(self), 1)
       opener?.focus()
     }
   }, [])

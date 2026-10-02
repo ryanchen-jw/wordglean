@@ -10,7 +10,9 @@ import {
   countDue,
   getSettings,
   getTodayQuota,
+  inPool,
   recordReview,
+  removeFavorite,
   saveSettings,
 } from './repo'
 import { CardState, Grade } from '../srs/scheduler'
@@ -81,6 +83,63 @@ describe('收藏與課程字共用同一個池（AC#4）', () => {
     await addFromCourse(db, 'apple', 'a1-u1-l1', T)
     await addFavorite(db, ' Apple ', T)
     expect(await db.wordPool.count()).toBe(1)
+  })
+})
+
+describe('取消收藏與來源歸零（TASK-16 D3）', () => {
+  it('取消收藏：收藏時間清空、課程來源與 FSRS 狀態不動，記一筆待推項目', async () => {
+    await addFromCourse(db, 'apple', 'a1-u1-l1', T)
+    await recordReview(db, 'apple', Grade.Good, T + MIN)
+    await addFavorite(db, 'apple', T + 2 * MIN)
+    const before = await db.wordPool.get('apple')
+    const queued = await db.outbox.count()
+    await removeFavorite(db, 'Apple ', T + 3 * MIN)
+    const after = await db.wordPool.get('apple')
+    expect(after).toMatchObject({ favoritedAt: null, courseRefs: ['a1-u1-l1'] })
+    expect(after?.stability).toBe(before?.stability)
+    expect(after?.reps).toBe(1)
+    expect(await db.outbox.count()).toBe(queued + 1)
+  })
+
+  it('收藏與取消都記下收藏狀態的修改時間（同步以最後修改者為準）；重複收藏不改', async () => {
+    await addFavorite(db, 'kiwi', T)
+    expect(await db.wordPool.get('kiwi')).toMatchObject({ favoritedAt: T, favoriteUpdatedAt: T })
+    await addFavorite(db, 'kiwi', T + MIN)
+    expect(await db.wordPool.get('kiwi')).toMatchObject({ favoritedAt: T, favoriteUpdatedAt: T })
+    await removeFavorite(db, 'kiwi', T + 2 * MIN)
+    expect(await db.wordPool.get('kiwi')).toMatchObject({
+      favoritedAt: null,
+      favoriteUpdatedAt: T + 2 * MIN,
+    })
+    await addFavorite(db, 'kiwi', T + 3 * MIN)
+    expect(await db.wordPool.get('kiwi')).toMatchObject({
+      favoritedAt: T + 3 * MIN,
+      favoriteUpdatedAt: T + 3 * MIN,
+    })
+  })
+
+  it('不在池中的字取消收藏：什麼都不做', async () => {
+    await removeFavorite(db, 'ghost', T)
+    expect(await db.wordPool.count()).toBe(0)
+    expect(await db.outbox.count()).toBe(0)
+  })
+
+  it('inPool：有課程來源或已收藏才算在池中', () => {
+    expect(inPool({ courseRefs: ['a1-u1-l1'], favoritedAt: null })).toBe(true)
+    expect(inPool({ courseRefs: [], favoritedAt: T })).toBe(true)
+    expect(inPool({ courseRefs: [], favoritedAt: null })).toBe(false)
+  })
+
+  it('收藏後又取消的已學字：不算待複習；再收藏時沿用原排程', async () => {
+    await addFavorite(db, 'pear', T)
+    await recordReview(db, 'pear', Grade.Again, T)
+    const due = (await db.wordPool.get('pear'))!.due
+    expect(await countDue(db, due)).toBe(1)
+    await removeFavorite(db, 'pear', T + MIN)
+    expect(await countDue(db, due)).toBe(0)
+    await addFavorite(db, 'pear', T + 2 * MIN)
+    expect(await countDue(db, due)).toBe(1)
+    expect((await db.wordPool.get('pear'))!.due).toBe(due)
   })
 })
 

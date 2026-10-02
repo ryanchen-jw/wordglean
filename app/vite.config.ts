@@ -12,7 +12,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       workbox: {
-        // 課綱 json 資產一併預快取，離線可開課程地圖
+        // 課綱、字典切片（597 片）、單字總表等 json 資產一併預快取：離線可開課程地圖、可查字（TASK-16 D1）
         globPatterns: ['**/*.{js,css,html,json,svg,png}'],
         // 站內路由（/words、/settings…）離線時都回 index.html
         navigateFallback: 'index.html',
@@ -40,11 +40,18 @@ export default defineConfig({
       },
     }),
   ],
-  // 課綱與題目檔在 app 之外（../content/curriculum、../content/items），dev server 需明列允許
+  // 課綱、題目檔、字典資料在 app 之外，dev server 需明列允許
   server: {
     port: 5287,
     strictPort: true,
-    fs: { allow: ['.', '../content/curriculum', '../content/items'] },
+    fs: {
+      allow: ['.', '../content/curriculum', '../content/items', '../data/dict', '../data/lexicon'],
+    },
+  },
+  // data/ 依來源授權分檔（data/LICENSES.md），小檔也不得內嵌進程式碼 bundle，一律輸出成獨立資產
+  build: {
+    assetsInlineLimit: (file) =>
+      /\/data\/(dict|lexicon)\/[^/]+\.json$/.test(file) ? false : undefined,
   },
   preview: { port: 5288, strictPort: true },
   test: {

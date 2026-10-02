@@ -1,6 +1,6 @@
 // 首頁「今天」的資料與狀態推導（設計 s01）；推導規則見 docs/verification/2026-10-02-task11-shell-evidence/proposal.md
 import type { LinguaDb } from '../../data/db'
-import { countDue, getSettings, getTodayQuota } from '../../data/repo'
+import { countDue, getSettings, getTodayQuota, inPool } from '../../data/repo'
 import { CardState } from '../../srs/scheduler'
 import { dayBoundsUtc, localDayKey } from '../../srs/daily'
 import { currentLevel, type Level, type LessonRef } from '../../curriculum/curriculum'
@@ -78,7 +78,8 @@ export async function loadHomeDbInput(
   const [progress, wordCount, dueCount, dueTomorrow, reviewsDoneToday, quota, settings] =
     await Promise.all([
       db.courseProgress.toArray(),
-      db.wordPool.count(),
+      // 收藏後又復原（無來源）的字不在池中，不影響「第一次開啟」（TASK-16 D3）
+      db.wordPool.filter(inPool).count(),
       countDue(db, nowMs),
       countDue(db, tomorrowEnd - 1),
       db.reviewLogs

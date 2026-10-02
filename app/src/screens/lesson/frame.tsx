@@ -20,7 +20,7 @@ export function LessonHeader({
       <div className="flex min-h-11 items-center gap-2.5">
         <button
           type="button"
-          className={iconBtnCls}
+          className={`${iconBtnCls} text-text`}
           aria-label={t('lesson.frame.leave')}
           onClick={onLeave}
         >

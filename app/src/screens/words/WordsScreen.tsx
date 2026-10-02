@@ -1,9 +1,14 @@
-// 單字庫（設計 s09）：分頁（全部／到期／收藏）＋熟悉度下拉＋英文搜尋；中文釋義與中文搜尋待 TASK-16（D5）
+// 單字庫（設計 s09）：分頁（全部／到期／收藏）＋熟悉度下拉＋英文或中文搜尋；列出中文釋義、英文字可點查義（TASK-16）
 import { BookOpen, ChevronDown, Search, Star } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { db } from '../../data/appDb'
 import type { PoolWord } from '../../data/db'
+import { inPool } from '../../data/repo'
 import { useLiveQuery } from '../../data/useLiveQuery'
+import { useDictionary } from '../../dict/context'
+import { EnglishText } from '../../dict/EnglishText'
+import { shortGloss } from '../../dict/format'
+import { glossLine } from '../../dict/gloss'
 import { t, type MessageKey } from '../../i18n/t'
 import { navigate } from '../../router'
 import { TabScreen } from '../../shell/Screen'
@@ -48,7 +53,34 @@ function EmptyState() {
   )
 }
 
-function WordList({ words, nowMs }: { words: PoolWord[]; nowMs: number }) {
+/** 單字池各字的中文釋義行（wordId → 釋義）；字典載入前為空表 */
+function useGlosses(words: readonly PoolWord[] | undefined): ReadonlyMap<string, string> {
+  const dict = useDictionary()
+  const [glosses, setGlosses] = useState<ReadonlyMap<string, string>>(new Map())
+  const key = words?.map((w) => w.wordId).join(' ')
+  useEffect(() => {
+    if (!dict || !key) return
+    let alive = true
+    dict
+      .deps()
+      .then(async (deps) => {
+        const ids = key.split(' ')
+        const lines = await Promise.all(ids.map((id) => glossLine(id, deps)))
+        const map = new Map<string, string>()
+        ids.forEach((id, i) => lines[i] !== null && map.set(id, lines[i]))
+        if (alive) setGlosses(map)
+      })
+      .catch((e) => console.error(e))
+    return () => {
+      alive = false
+    }
+  }, [dict, key])
+  return glosses
+}
+
+type ListProps = { words: PoolWord[]; nowMs: number; glosses: ReadonlyMap<string, string> }
+
+function WordList({ words, nowMs, glosses }: ListProps) {
   const [shown, setShown] = useState(PAGE)
   const sentinel = useRef<HTMLLIElement>(null)
   const tz = deviceTimeZone()
@@ -77,8 +109,17 @@ function WordList({ words, nowMs }: { words: PoolWord[]; nowMs: number }) {
               key={w.wordId}
               className="flex min-h-13 items-center justify-between gap-3 border-b border-line last:border-b-0"
             >
-              <span lang="en" className="min-w-0 truncate font-en font-semibold">
-                {w.wordId}
+              {/* 英文字優先：同一行放不下時中文釋義換到下一行，各自過長才截斷 */}
+              <span className="flex min-w-0 flex-wrap items-baseline gap-x-3 py-1.5">
+                <EnglishText
+                  text={w.wordId}
+                  className="max-w-full truncate font-en font-semibold"
+                />
+                {glosses.has(w.wordId) && (
+                  <span className="max-w-full truncate text-secondary text-muted">
+                    {shortGloss(glosses.get(w.wordId)!)}
+                  </span>
+                )}
               </span>
               <span
                 className={`inline-flex flex-none items-center gap-1 text-secondary tabular-nums ${
@@ -102,7 +143,8 @@ function WordList({ words, nowMs }: { words: PoolWord[]; nowMs: number }) {
 export function WordsScreen() {
   // 「現在」跟著資料一起取，資料變動時一併更新（render 內不可呼叫 Date.now）
   const data = useLiveQuery(
-    async () => ({ words: await db.wordPool.toArray(), nowMs: Date.now() }),
+    // 來源歸零（取消收藏、按了復原）的字不算在池中（TASK-16 D3）
+    async () => ({ words: (await db.wordPool.toArray()).filter(inPool), nowMs: Date.now() }),
     [],
   )
   const words = data?.words
@@ -111,6 +153,7 @@ export function WordsScreen() {
   const [familiarity, setFamiliarity] = useState<Familiarity | 'all'>('all')
   const [query, setQuery] = useState('')
   const [sheetOpen, setSheetOpen] = useState(false)
+  const glosses = useGlosses(words)
 
   const dueCount = words?.filter((w) => isDue(w, nowMs)).length ?? 0
   const summary = !words
@@ -166,8 +209,9 @@ export function WordsScreen() {
             </button>
             <WordList
               key={filterKey}
-              words={filterWords(words, { scope, familiarity, query }, nowMs)}
+              words={filterWords(words, { scope, familiarity, query }, nowMs, glosses)}
               nowMs={nowMs}
+              glosses={glosses}
             />
           </>
         )}

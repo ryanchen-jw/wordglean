@@ -2,9 +2,11 @@ import 'fake-indexeddb/auto'
 import { act, fireEvent, render, screen, within } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
+import { DictionaryProvider } from '../../dict/DictionaryProvider'
 import type { LessonItemsDoc } from '../../lesson/items'
 import { loadFixture } from '../../lesson/testFixtures'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
+import { fsDictDeps } from '../../test/dictFs'
 import { LessonScreen } from './LessonScreen'
 
 // 期望文案取自設計 s05／s07／s12／s14 與 zh-TW.json；題目與釋義取自樣本課 fixture（a1-u01-l01）
@@ -234,5 +236,43 @@ describe('載入失敗', () => {
       fireEvent.click(screen.getByRole('button', { name: '回到課程' }))
     })
     expect(location.pathname).toBe('/course')
+  })
+})
+
+// TASK-16 接上可點查義版 EnglishText：G2 裁示「會洩漏答案的字作答前不可點，作答後全部改為可點」
+describe('小課的可點英文字（G2）', () => {
+  const loaded = fsDictDeps()
+  const renderWithDict = () =>
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <LessonScreen lessonId={LESSON} loadItems={loadItems} />
+      </DictionaryProvider>,
+    )
+
+  it('單字卡：作答前測驗字（含例句提示裡的）不可點；作答後可點查義', async () => {
+    renderWithDict()
+    await count(1)
+    fireEvent.click(screen.getByRole('button', { name: '看例句提示' }))
+    const hint = screen.getByTestId('wordcard-hint')
+    expect((await within(hint).findAllByRole('button')).length).toBeGreaterThan(0)
+    expect(screen.queryAllByRole('button', { name: 'the' })).toEqual([])
+    await answerCurrent(1)
+    const front = screen.getByText('the', { selector: '.text-display button' })
+    fireEvent.click(front)
+    expect(await screen.findByRole('dialog', { name: '單字查義' })).toBeInTheDocument()
+  })
+
+  it('選擇題：作答前選項是單選、字不可點；檢查後選項的字可點', async () => {
+    renderWithDict()
+    for (let n = 1; n <= 8; n++) {
+      await answerCurrent(n)
+      cont()
+    }
+    await count(9)
+    const mcq = doc.items.find((it) => it.type === 'mcq')!
+    const answerText = mcq.type === 'mcq' ? mcq.options[mcq.answer] : ''
+    expect(screen.queryAllByRole('button', { name: answerText })).toEqual([])
+    await answerCurrent(9)
+    expect(screen.getAllByRole('button', { name: answerText }).length).toBeGreaterThan(0)
   })
 })

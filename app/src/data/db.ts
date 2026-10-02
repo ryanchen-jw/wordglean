@@ -17,6 +17,8 @@ export interface PoolWord extends FsrsFields {
   wordId: string // 暫定小寫 headword，待 TASK-6 定案
   courseRefs: string[]
   favoritedAt: number | null
+  /** 收藏狀態（收藏／取消）最後修改時間；同步以最後修改者為準（TASK-16）。非索引欄位、不升版，舊資料沒有此欄 */
+  favoriteUpdatedAt?: number
   addedAt: number
 }
 

@@ -63,9 +63,29 @@ export function addFromCourse(db: LinguaDb, word: string, lessonId: string, nowM
 
 export function addFavorite(db: LinguaDb, word: string, nowMs: number) {
   return upsertSource(db, word, nowMs, (w) => {
-    w.favoritedAt ??= nowMs
+    if (w.favoritedAt !== null) return
+    w.favoritedAt = nowMs
+    w.favoriteUpdatedAt = nowMs
   })
 }
+
+/** 取消收藏：清收藏時間、記修改時間（同步推墓碑），課程來源與 FSRS 狀態不動；不在池中的字不處理 */
+export async function removeFavorite(db: LinguaDb, word: string, nowMs: number): Promise<void> {
+  const wordId = normalizeWordId(word)
+  await db.transaction('rw', db.wordPool, db.outbox, async () => {
+    const row = await db.wordPool.get(wordId)
+    if (!row || row.favoritedAt === null) return
+    await db.wordPool.put({ ...row, favoritedAt: null, favoriteUpdatedAt: nowMs })
+    await enqueue(db, 'wordPool', wordId)
+  })
+}
+
+/**
+ * 是否在單字池（TASK-16 D3）：有課程來源或已收藏。兩者皆無的字（取消收藏、按了復原）讀取時視為不在池中，
+ * 不刪資料、再收藏時沿用原排程；單字庫、待複習數、複習佇列（TASK-18）一律以此過濾
+ */
+export const inPool = (w: Pick<PoolWord, 'courseRefs' | 'favoritedAt'>) =>
+  w.courseRefs.length > 0 || w.favoritedAt !== null
 
 export async function recordReview(
   db: LinguaDb,
@@ -100,12 +120,12 @@ export async function completeLesson(db: LinguaDb, lessonId: string, nowMs: numb
   })
 }
 
-/** 待複習數：已開始學（非新字）且已到期 */
+/** 待複習數：在池中、已開始學（非新字）且已到期 */
 export function countDue(db: LinguaDb, nowMs: number): Promise<number> {
   return db.wordPool
     .where('due')
     .belowOrEqual(nowMs)
-    .filter((w) => w.state !== CardState.New)
+    .filter((w) => w.state !== CardState.New && inPool(w))
     .count()
 }
 

@@ -20,7 +20,15 @@ async function seedWords(page: Page) {
       r.onerror = () => rej(r.error)
     })
     const tx = db.transaction('wordPool', 'readwrite')
-    const words = ['internationalization', 'counterproductive', 'meeting', 'agenda', 'postpone']
+    // jennyx：字典查無此字（s08 查無狀態）
+    const words = [
+      'internationalization',
+      'counterproductive',
+      'meeting',
+      'agenda',
+      'postpone',
+      'jennyx',
+    ]
     words.forEach((wordId, i) =>
       tx.objectStore('wordPool').put({
         wordId,
@@ -33,7 +41,7 @@ async function seedWords(page: Page) {
         reps: 2,
         lapses: 0,
         lastReview: null,
-        courseRefs: [],
+        courseRefs: ['a1-u01-l01'], // 有來源才算在池中（TASK-16 D3）
         favoritedAt: i % 2 ? 1 : null,
         addedAt: i,
       }),
@@ -73,6 +81,33 @@ for (const c of CASES) {
       await check(page, info, `${c.name}-s09`)
       // 走查 P0-1b：每一列（含到期標示、分隔線）不得伸出卡片框
       expect(await overflowingChildren(page, '[data-testid="word-card"]'), '列伸出卡片').toEqual([])
+    })
+
+    test('s08 字典彈層：查到、已收藏＋提示、查無此字（TASK-16）', async ({ page }, info) => {
+      await page.goto('/words')
+      await expect(page.getByText('單字庫還是空的')).toBeVisible()
+      await seedWords(page)
+      await page.reload()
+      const dialog = page.getByRole('dialog', { name: '單字查義' })
+      await page.getByRole('button', { name: 'postpone', exact: true }).click()
+      await expect(dialog.getByRole('heading', { name: 'postpone' })).toBeVisible()
+      await check(page, info, `${c.name}-s08-default`)
+      expect(await overflowingChildren(page, '[data-testid="dict-sheet"]'), '彈層內容伸出').toEqual(
+        [],
+      )
+      await dialog.getByRole('button', { name: '加入收藏單字庫' }).click()
+      await expect(page.getByRole('status').filter({ hasText: '已加入收藏' })).toBeVisible()
+      await check(page, info, `${c.name}-s08-saved`)
+      expect(await overflowingChildren(page, '[data-testid="dict-sheet"]'), '彈層內容伸出').toEqual(
+        [],
+      )
+      await page.keyboard.press('Escape')
+      await page.getByRole('button', { name: 'jennyx', exact: true }).click()
+      await expect(dialog.getByText('字典裡沒有這個字（可能是人名或專有名詞）')).toBeVisible()
+      await check(page, info, `${c.name}-s08-notfound`)
+      expect(await overflowingChildren(page, '[data-testid="dict-sheet"]'), '彈層內容伸出').toEqual(
+        [],
+      )
     })
 
     test('s11 設定', async ({ page }, info) => {

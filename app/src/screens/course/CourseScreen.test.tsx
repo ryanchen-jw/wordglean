@@ -2,6 +2,8 @@ import 'fake-indexeddb/auto'
 import { fireEvent, render, screen, within } from '@testing-library/react'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { db } from '../../data/appDb'
+import { DictionaryProvider } from '../../dict/DictionaryProvider'
+import { fsDictDeps } from '../../test/dictFs'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
 import { CourseScreen } from './CourseScreen'
 
@@ -48,6 +50,26 @@ describe('課程地圖（s02）', () => {
       within(sheet).getByText('aside・beneath・merely・regarding・moreover・whenever・surely・via'),
     ).toBeInTheDocument()
     expect(within(sheet).getByRole('button', { name: '開始這一課' })).toBeInTheDocument()
+    fireEvent.keyDown(document, { key: 'Escape' })
+    expect(screen.queryByRole('dialog')).toBeNull()
+  })
+
+  it('詳情的新字可點查義；Esc 先關字典、再關詳情（TASK-16）', async () => {
+    const loaded = fsDictDeps()
+    await completeLessons('b1-u01-l01', 'b1-u01-l02')
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <CourseScreen />
+      </DictionaryProvider>,
+    )
+    fireEvent.click(await screen.findByRole('button', { name: /第 3 課/ }))
+    const lesson = screen.getByRole('dialog', { name: '小課詳情' })
+    fireEvent.click(within(lesson).getByRole('button', { name: 'merely' }))
+    const dict = await screen.findByRole('dialog', { name: '單字查義' })
+    expect(await within(dict).findByRole('heading', { name: 'merely' })).toBeInTheDocument()
+    fireEvent.keyDown(document, { key: 'Escape' })
+    expect(screen.queryByRole('dialog', { name: '單字查義' })).toBeNull()
+    expect(screen.getByRole('dialog', { name: '小課詳情' })).toBeInTheDocument()
     fireEvent.keyDown(document, { key: 'Escape' })
     expect(screen.queryByRole('dialog')).toBeNull()
   })
