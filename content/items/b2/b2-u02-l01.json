@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u02-l01",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:50:31Z",
+  "properNouns": [
+    "Ryan"
+  ],
+  "items": [
+    {
+      "id": "b2-u02-l01-q01",
+      "type": "wordCard",
+      "word": "lifetime",
+      "exampleEn": "This watch comes with a lifetime guarantee.",
+      "exampleZh": "這支手錶享有終身保固。",
+      "glossZh": "一生；終生",
+      "distractorsZh": [
+        "十年",
+        "一季",
+        "片刻"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q02",
+      "type": "wordCard",
+      "word": "seldom",
+      "exampleEn": "Snow seldom falls in this part of the country.",
+      "exampleZh": "這個地區很少下雪。",
+      "glossZh": "很少；不常",
+      "distractorsZh": [
+        "經常",
+        "總是",
+        "通常"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q03",
+      "type": "wordCard",
+      "word": "temporarily",
+      "exampleEn": "The shop is temporarily closed for repairs.",
+      "exampleZh": "這家店因整修暫時關閉。",
+      "glossZh": "暫時地",
+      "distractorsZh": [
+        "永久地",
+        "經常",
+        "立刻"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q04",
+      "type": "wordCard",
+      "word": "precede",
+      "exampleEn": "A short video will precede the main talk.",
+      "exampleZh": "主要演講之前會先播一段短片。",
+      "glossZh": "在⋯之前；先於",
+      "distractorsZh": [
+        "跟隨",
+        "取代",
+        "延長"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q05",
+      "type": "wordCard",
+      "word": "seasonal",
+      "exampleEn": "Seasonal fruit is usually cheaper and fresher.",
+      "exampleZh": "當季水果通常比較便宜，也比較新鮮。",
+      "glossZh": "季節性的",
+      "distractorsZh": [
+        "長期的",
+        "每日的",
+        "全職的"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q06",
+      "type": "wordCard",
+      "word": "serial",
+      "exampleEn": "Please write the serial number of your laptop on the form.",
+      "exampleZh": "請把你筆電的序號寫在表格上。",
+      "glossZh": "序列的；序號",
+      "distractorsZh": [
+        "私人的",
+        "隨機的",
+        "正確的"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q07",
+      "type": "wordCard",
+      "word": "daytime",
+      "exampleEn": "The museum is only open in the daytime.",
+      "exampleZh": "博物館只在白天開放。",
+      "glossZh": "白天；日間",
+      "distractorsZh": [
+        "夜晚",
+        "週末",
+        "清晨"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q08",
+      "type": "wordCard",
+      "word": "hourly",
+      "exampleEn": "The hourly news on the radio is only five minutes long.",
+      "exampleZh": "電台每小時整點播報的新聞只有五分鐘長。",
+      "glossZh": "每小時的；按小時計的",
+      "distractorsZh": [
+        "每天的",
+        "每月的",
+        "每年的"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "During the daytime, the trains run every ten minutes.",
+      "sentenceZh": "白天時，火車每十分鐘一班。"
+    },
+    {
+      "id": "b2-u02-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "The elevator is temporarily out of service. Please use the stairs on your left.",
+      "audioZh": "電梯暫時停止服務。請使用您左手邊的樓梯。",
+      "questionZh": "說話者請大家怎麼做？",
+      "options": [
+        "Call the front desk",
+        "Wait for the elevator",
+        "Use the stairs",
+        "Go to the right"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u02-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "My grandmother seldom watches TV; she prefers to read.",
+      "sentenceZh": "我奶奶很少看電視，她比較喜歡看書。"
+    },
+    {
+      "id": "b2-u02-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Mangoes are seasonal, so they are expensive in winter.",
+      "sentenceZh": "芒果是季節性水果，所以冬天很貴。"
+    },
+    {
+      "id": "b2-u02-l01-q13",
+      "type": "mcq",
+      "stemEn": "In this job, the ____ pay is low, so I have to work long days to earn enough.",
+      "stemZh": "這份工作的時薪很低，所以我得每天工作很久才賺得夠。",
+      "options": [
+        "hourly",
+        "temporary",
+        "serial",
+        "previous"
+      ],
+      "optionGlossZh": [
+        "每小時的",
+        "暫時的",
+        "連續的",
+        "先前的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u02-l01-q14",
+      "type": "mcq",
+      "stemEn": "At this company, a training course must ____ your first day of work.",
+      "stemZh": "在這家公司，正式上班第一天之前必須先上訓練課程。",
+      "options": [
+        "precede",
+        "forget",
+        "temporarily",
+        "promise"
+      ],
+      "optionGlossZh": [
+        "在⋯之前",
+        "忘記",
+        "暫時地",
+        "承諾"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u02-l01-q15",
+      "type": "reading",
+      "passageEn": "Every summer, a hotel by the sea hires seasonal workers. Last year, my cousin Ryan took one of these jobs. He was paid an hourly rate, and he worked mostly in the daytime, cleaning rooms and helping guests. A short training course preceded his first day. In it, he learned to check the serial number on every key card so that guests would not get the wrong room. Ryan seldom had free time, but he enjoyed the work. When the hotel was temporarily short of staff in August, he worked nights too. He says it was the best summer he has had in his lifetime.",
+      "passageZh": "每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我表哥 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是他這輩子度過最棒的夏天。",
+      "questions": [
+        {
+          "questionZh": "Ryan 上班第一天之前做了什麼？",
+          "options": [
+            "去海邊度假",
+            "參加了簡短的訓練課程",
+            "打掃了所有房間",
+            "認識了所有客人"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "八月時 Ryan 為什麼連晚上也上班？",
+          "options": [
+            "飯店暫時人手不足",
+            "他想多賺一點錢",
+            "白天天氣太熱",
+            "有客人特別要求他晚上服務"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q16",
+      "type": "translate",
+      "promptZh": "我很少在晚上十點以後喝咖啡。",
+      "hintWords": [
+        "seldom"
+      ],
+      "referenceEn": [
+        "I seldom drink coffee after ten at night.",
+        "I seldom have coffee after ten in the evening."
+      ],
+      "rubricZh": [
+        "seldom 通常放在一般動詞前面（例如 I seldom drink…）",
+        "「喝咖啡」可寫 drink coffee、have coffee 等；「晚上十點以後」可寫 after ten at night、after 10 p.m. 等"
+      ]
+    },
+    {
+      "id": "b2-u02-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "temporarily",
+      "instructionZh": "用 temporarily 造一個句子，說說某個暫時的變化或安排。",
+      "referenceEn": [
+        "I am temporarily working from home while my office is being repaired.",
+        "My favorite restaurant has temporarily moved to a smaller place."
+      ],
+      "rubricZh": [
+        "句子要用到 temporarily，修飾動詞或形容詞（例如 temporarily closed、temporarily working）",
+        "句意要表示這個狀況只是暫時的，之後會恢復或改變"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:21:00Z",
+    "verdicts": {
+      "b2-u02-l01-q10": [
+        2
+      ],
+      "b2-u02-l01-q13": [
+        0
+      ],
+      "b2-u02-l01-q14": [
+        0
+      ],
+      "b2-u02-l01-q15#0": [
+        1
+      ],
+      "b2-u02-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"one of the best summers of his lifetime\" 不自然，慣用 \"of his life\"；若要用 lifetime 可改 \"…the best summer he has had in his lifetime\"。",
+        "resolution": "改前：\"Every summer, a hotel by the sea hires seasonal workers. Last year, my cousin Ryan took one of these jobs. He was paid an hourly rate, and he worked mostly in the daytime, cleaning rooms and helping guests. A short training course preceded his first day. In it, he learned to check the serial number on every key card so that guests would not get the wrong room. Ryan seldom had free time, but he enjoyed the work. When the hotel was temporarily short of staff in August, he worked nights too. He says it was one of the best summers of his lifetime.\"；改後：\"Every summer, a hotel by the sea hires seasonal workers. Last year, my cousin Ryan took one of these jobs. He was paid an hourly rate, and he worked mostly in the daytime, cleaning rooms and helping guests. A short training course preceded his first day. In it, he learned to check the serial number on every key card so that guests would not get the wrong room. Ryan seldom had free time, but he enjoyed the work. When the hotel was temporarily short of staff in August, he worked nights too. He says it was the best summer he has had in his lifetime.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"one of the best summers of his lifetime\" 不自然，慣用 \"of his life\"；若要用 lifetime 可改 \"…the best summer he has had in his lifetime\"。",
+        "resolution": "改前：\"每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我表哥 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是他這輩子最棒的夏天之一。\"；改後：\"每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我表哥 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是他這輩子度過最棒的夏天。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）",
+        "resolution": "改前：\"The library near my home is temporarily closed this week.\"；改後：\"My favorite restaurant has temporarily moved to a smaller place.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）",
+        "resolution": "改前：\"連續的；序列的\"；改後：\"連續的；序號的\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：雷同人工複查（自查 ≥40% 句對，主詞、情境、句型未換足兩項）——改單字卡例句",
+        "resolution": "改前：\"Part-time staff are paid an hourly rate.\"；改後：\"The hourly news on the radio is only five minutes long.\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：雷同人工複查（自查 ≥40% 句對，主詞、情境、句型未換足兩項）——改單字卡例句",
+        "resolution": "改前：\"兼職員工按時薪計酬。\"；改後：\"電台每小時整點播報的新聞只有五分鐘長。\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：情境對照表逐列人工複查（主詞、情境、句型未換足兩項）",
+        "resolution": "改前：\"I seldom eat breakfast on weekdays.\"；改後：\"Snow seldom falls in this part of the country.\"",
+        "resolvedAt": "2026-10-02T15:48:50Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：情境對照表逐列人工複查（主詞、情境、句型未換足兩項）",
+        "resolution": "改前：\"我平日很少吃早餐。\"；改後：\"這個地區很少下雪。\"",
+        "resolvedAt": "2026-10-02T15:48:50Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長最終複審修正：最終複審建議（撰寫端採納）：釋義通順",
+        "resolution": "改前：\"連續的；序號的\"；改後：\"序列的；序號\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"認識了所有客人\"；改後：\"先認識了飯店所有的客人\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/3",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"客人特別要求\"；改後：\"有客人特別要求他晚上服務\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"先認識了飯店所有的客人\"；改後：\"認識了所有客人\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "執行長裁示修正：干擾項用字範圍：同級未教字換成本課、先前課或低一級以下的字",
+        "resolution": "改前：\"punctual\"；改後：\"temporary\"",
+        "resolvedAt": "2026-10-02T19:35:19Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "執行長裁示修正：干擾項用字範圍：同級未教字換成本課、先前課或低一級以下的字",
+        "resolution": "改前：\"準時的\"；改後：\"暫時的\"",
+        "resolvedAt": "2026-10-02T19:35:19Z"
+      },
+      {
+        "path": "items/12/options/3",
+        "message": "執行長裁示修正：干擾項用字範圍：同級未教字換成本課、先前課或低一級以下的字",
+        "resolution": "改前：\"timeless\"；改後：\"previous\"",
+        "resolvedAt": "2026-10-02T19:35:19Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/3",
+        "message": "執行長裁示修正：干擾項用字範圍：同級未教字換成本課、先前課或低一級以下的字",
+        "resolution": "改前：\"永恆的\"；改後：\"先前的\"",
+        "resolvedAt": "2026-10-02T19:35:19Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
+        "resolution": "改前：\"seldom\"；改後：\"forget\"",
+        "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
+        "resolution": "改前：\"很少\"；改後：\"忘記\"",
+        "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
+        "resolution": "改前：\"lifetime\"；改後：\"promise\"",
+        "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
+        "resolution": "改前：\"一生\"；改後：\"承諾\"",
+        "resolvedAt": "2026-10-02T20:37:24Z"
+      }
+    ]
+  }
+}

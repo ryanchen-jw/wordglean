@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u19-l08",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T17:43:47Z",
+  "properNouns": [
+    "Marie",
+    "Curie",
+    "Hamlet",
+    "English"
+  ],
+  "items": [
+    {
+      "id": "b2-u19-l08-q01",
+      "type": "wordCard",
+      "word": "botany",
+      "exampleEn": "The old garden behind the university is used for teaching botany.",
+      "exampleZh": "大學後面那座老花園是用來教植物學的。",
+      "glossZh": "植物學",
+      "distractorsZh": [
+        "動物學",
+        "地質學",
+        "化學"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q02",
+      "type": "wordCard",
+      "word": "soliloquy",
+      "exampleEn": "The actor practiced the long soliloquy alone in his dressing room.",
+      "exampleZh": "那位演員獨自在化妝室裡練習那段長獨白。",
+      "glossZh": "（戲劇的）獨白",
+      "distractorsZh": [
+        "對話",
+        "合唱",
+        "旁白"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q03",
+      "type": "wordCard",
+      "word": "apostrophe",
+      "exampleEn": "My name has an apostrophe in it, so some websites won't accept it.",
+      "exampleZh": "我的名字裡有一個撇號，所以有些網站不接受。",
+      "glossZh": "撇號（'）",
+      "distractorsZh": [
+        "逗號",
+        "引號",
+        "括號"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q04",
+      "type": "wordCard",
+      "word": "hyphen",
+      "exampleEn": "Phone numbers are often written with a hyphen between the groups of numbers.",
+      "exampleZh": "電話號碼常在幾組數字之間加上連字號。",
+      "glossZh": "連字號（-）",
+      "distractorsZh": [
+        "底線",
+        "斜線",
+        "冒號"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q05",
+      "type": "wordCard",
+      "word": "radium",
+      "exampleEn": "Radium was once used to make clock numbers glow in the dark.",
+      "exampleZh": "鐳曾經被用來讓時鐘數字在黑暗中發光。",
+      "glossZh": "鐳",
+      "distractorsZh": [
+        "鐵",
+        "銅",
+        "鋁"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q06",
+      "type": "wordCard",
+      "word": "indent",
+      "exampleEn": "The program indented every line by mistake, so we printed the menu again.",
+      "exampleZh": "程式不小心把每一行都縮排了，所以我們重印了菜單。",
+      "glossZh": "（段落）縮排",
+      "distractorsZh": [
+        "刪除",
+        "加粗",
+        "置中"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q07",
+      "type": "wordCard",
+      "word": "italicize",
+      "exampleEn": "The editor italicized every foreign word in the article.",
+      "exampleZh": "編輯把文章裡每個外文字都改成斜體。",
+      "glossZh": "把…改成斜體",
+      "distractorsZh": [
+        "把…放大",
+        "把…刪除",
+        "把…翻譯"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q08",
+      "type": "listenType",
+      "sentenceEn": "Marie Curie discovered radium together with her husband.",
+      "sentenceZh": "瑪麗．居禮和她的丈夫一起發現了鐳。"
+    },
+    {
+      "id": "b2-u19-l08-q09",
+      "type": "listenChoice",
+      "audioEn": "In your essay, please indent the first line of each paragraph and leave a blank line between paragraphs.",
+      "audioZh": "你的文章每段第一行請縮排，並且段落之間空一行。",
+      "questionZh": "說話者要求每段第一行怎麼處理？",
+      "options": [
+        "Indent it",
+        "Underline it",
+        "Use bold",
+        "Center"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u19-l08-q10",
+      "type": "shadowing",
+      "sentenceEn": "In the play Hamlet, the most famous soliloquy begins with 'To be or not to be.'",
+      "sentenceZh": "在《哈姆雷特》劇中，最有名的獨白以「生存還是毀滅」開頭。"
+    },
+    {
+      "id": "b2-u19-l08-q11",
+      "type": "shadowing",
+      "sentenceEn": "My sister chose botany because she loves flowers and trees.",
+      "sentenceZh": "我妹妹選了植物學，因為她喜歡花和樹。"
+    },
+    {
+      "id": "b2-u19-l08-q12",
+      "type": "mcq",
+      "stemEn": "In the word don't, the ____ shows that a letter is missing.",
+      "stemZh": "在 don't 這個字裡，撇號表示少了一個字母。",
+      "options": [
+        "conjunction",
+        "hyphen",
+        "colon",
+        "apostrophe"
+      ],
+      "optionGlossZh": [
+        "連接詞",
+        "連字號",
+        "冒號",
+        "撇號"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b2-u19-l08-q13",
+      "type": "mcq",
+      "stemEn": "Please ____ the titles of books, so they look different from the rest of the text.",
+      "stemZh": "請把書名改成斜體，讓它們和其他文字看起來不同。",
+      "options": [
+        "instruct",
+        "familiarize",
+        "italicize",
+        "master"
+      ],
+      "optionGlossZh": [
+        "指示",
+        "使熟悉",
+        "改成斜體",
+        "精通"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u19-l08-q14",
+      "type": "reading",
+      "passageEn": "Our English teacher is very strict about writing style. She tells us to indent the first line of every paragraph and to italicize the titles of books and films. She often circles a missing apostrophe in red, and she reminds us that well-known needs a hyphen. Last week, we read a soliloquy from a famous play and wrote an essay about it. My friend, who loves botany, compared the character's thoughts to a plant growing in the dark. In science class, we also learned about the history of radium. Her rules take some getting used to, but she believes they help us excel at writing.",
+      "passageZh": "我們的英文老師對寫作格式很嚴格。她要我們每段第一行要縮排，書名和電影名稱要用斜體。她常用紅筆圈出漏掉的撇號，也提醒我們 well-known 中間要有連字號。上週，我們讀了一齣名劇裡的一段獨白，並寫了一篇心得。我那位喜歡植物學的朋友，把角色的想法比作在黑暗中生長的植物。在自然課上，我們也學了鐳的歷史。她的規定需要一點時間適應，但她相信這些規定能幫助我們在寫作上表現出色。",
+      "questions": [
+        {
+          "questionZh": "老師要求書名和電影名稱怎麼寫？",
+          "options": [
+            "用粗體字",
+            "加上底線",
+            "用斜體",
+            "全部大寫"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "作者的朋友把角色的想法比作什麼？",
+          "options": [
+            "一座安靜的花園",
+            "一本封面全黑的書",
+            "一段很長的獨白",
+            "黑暗中的植物"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q15",
+      "type": "translate",
+      "promptZh": "two-year-old 這類詞中間要加連字號。",
+      "hintWords": [
+        "hyphen"
+      ],
+      "referenceEn": [
+        "Words like two-year-old always need hyphens.",
+        "You should put hyphens in words such as two-year-old."
+      ],
+      "rubricZh": [
+        "hyphen 是可數名詞（例如 need hyphens、use a hyphen）",
+        "「要加」可寫，例如 need、should put、use 等"
+      ]
+    },
+    {
+      "id": "b2-u19-l08-q16",
+      "type": "makeSentence",
+      "targetWord": "botany",
+      "instructionZh": "用 botany 造一個句子，說說你對植物學或植物的興趣。",
+      "referenceEn": [
+        "I don't know much about botany, but I enjoy growing herbs.",
+        "I became interested in botany after visiting a large garden."
+      ],
+      "rubricZh": [
+        "句子要用到 botany",
+        "時態合理即可（例如 enjoy、became）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-03T06:40:00Z",
+    "verdicts": {
+      "b2-u19-l08-q09": [
+        0
+      ],
+      "b2-u19-l08-q12": [
+        3
+      ],
+      "b2-u19-l08-q13": [
+        2
+      ],
+      "b2-u19-l08-q14#0": [
+        2
+      ],
+      "b2-u19-l08-q14#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示修正：第②關：印表機不會縮排，改 program",
+        "resolution": "改前：\"The printer indented every line by mistake, so we printed the menu again.\"；改後：\"The program indented every line by mistake, so we printed the menu again.\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示修正：第②關：同步",
+        "resolution": "改前：\"印表機不小心把每一行都縮排了，所以我們重印了菜單。\"；改後：\"程式不小心把每一行都縮排了，所以我們重印了菜單。\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/passageEn",
+        "message": "執行長裁示修正：第②關：endurance 硬塞；前單元字改由 excel 帶入",
+        "resolution": "改前：\"Our English teacher is very strict about writing style. She tells us to indent the first line of every paragraph and to italicize the titles of books and films. She often circles a missing apostrophe in red, and she reminds us that well-known needs a hyphen. Last week, we read a soliloquy from a famous play and wrote an essay about it. My friend, who loves botany, compared the character's thoughts to a plant growing in the dark. In science class, we also learned about the history of radium. Our teacher's rules take some endurance at first, but they soon feel natural.\"；改後：\"Our English teacher is very strict about writing style. She tells us to indent the first line of every paragraph and to italicize the titles of books and films. She often circles a missing apostrophe in red, and she reminds us that well-known needs a hyphen. Last week, we read a soliloquy from a famous play and wrote an essay about it. My friend, who loves botany, compared the character's thoughts to a plant growing in the dark. In science class, we also learned about the history of radium. Her rules take some getting used to, but she believes they help us excel at writing.\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/passageZh",
+        "message": "執行長裁示修正：第②關：同步",
+        "resolution": "改前：\"我們的英文老師對寫作格式很嚴格。她要我們每段第一行要縮排，書名和電影名稱要用斜體。她常用紅筆圈出漏掉的撇號，也提醒我們 well-known 中間要有連字號。上週，我們讀了一齣名劇裡的一段獨白，並寫了一篇心得。我那位喜歡植物學的朋友，把角色的想法比作在黑暗中生長的植物。在自然課上，我們也學了鐳的歷史。老師的規定一開始需要一點耐力，但很快就會變得自然。\"；改後：\"我們的英文老師對寫作格式很嚴格。她要我們每段第一行要縮排，書名和電影名稱要用斜體。她常用紅筆圈出漏掉的撇號，也提醒我們 well-known 中間要有連字號。上週，我們讀了一齣名劇裡的一段獨白，並寫了一篇心得。我那位喜歡植物學的朋友，把角色的想法比作在黑暗中生長的植物。在自然課上，我們也學了鐳的歷史。她的規定需要一點時間適應，但她相信這些規定能幫助我們在寫作上表現出色。\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長裁示修正：評分要點補「例如…等」（§11.23）",
+        "resolution": "改前：\"「要加」可寫 need、should put、use 等\"；改後：\"「要加」可寫，例如 need、should put、use 等\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "第②關 issue 結案：「The printer indented every line by mistake」——印表機不會自行縮排（是排版／軟體設定），情境不合理；建議改 The program indented… 或由人縮排",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/5 的 2 筆修正紀錄。",
+        "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/13/passageEn",
+        "message": "第②關 issue 結案：疑似：「Our teacher's rules take some endurance at first」硬塞前課字 endurance，不自然；可改 take some getting used to",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/13 的 2 筆修正紀錄。",
+        "resolvedAt": "2026-10-02T19:53:25Z"
+      }
+    ]
+  }
+}

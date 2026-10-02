@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u07-l06",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:51:33Z",
+  "properNouns": [
+    "American",
+    "York"
+  ],
+  "items": [
+    {
+      "id": "b2-u07-l06-q01",
+      "type": "wordCard",
+      "word": "width",
+      "exampleEn": "The table has a width of two meters.",
+      "exampleZh": "這張桌子寬兩公尺。",
+      "glossZh": "寬度",
+      "distractorsZh": [
+        "高度",
+        "長度",
+        "深度"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q02",
+      "type": "wordCard",
+      "word": "heap",
+      "exampleEn": "There was a heap of clothes on the floor.",
+      "exampleZh": "地板上有一堆衣服。",
+      "glossZh": "一堆；堆積",
+      "distractorsZh": [
+        "一件",
+        "一排",
+        "一層"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q03",
+      "type": "wordCard",
+      "word": "extraordinarily",
+      "exampleEn": "The view from the top was extraordinarily beautiful.",
+      "exampleZh": "從山頂看出去的景色美得出奇。",
+      "glossZh": "格外地；非常地",
+      "distractorsZh": [
+        "稍微",
+        "普通地",
+        "偶爾"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q04",
+      "type": "wordCard",
+      "word": "dime",
+      "exampleEn": "This candy cost only a dime when I was a child.",
+      "exampleZh": "我小時候這種糖果只要一角錢。",
+      "glossZh": "一角硬幣（美國十分錢）",
+      "distractorsZh": [
+        "一元硬幣",
+        "五分硬幣",
+        "紙鈔"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q05",
+      "type": "wordCard",
+      "word": "compute",
+      "exampleEn": "The program can compute the total cost in seconds.",
+      "exampleZh": "這個程式幾秒內就能算出總費用。",
+      "glossZh": "計算",
+      "distractorsZh": [
+        "猜測",
+        "刪除",
+        "列印"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q06",
+      "type": "wordCard",
+      "word": "subdivision",
+      "exampleEn": "Each department in our company has several subdivisions.",
+      "exampleZh": "我們公司的每個部門都分成好幾個小組。",
+      "glossZh": "細分；分部",
+      "distractorsZh": [
+        "總部",
+        "合併",
+        "整體"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q07",
+      "type": "wordCard",
+      "word": "thickness",
+      "exampleEn": "Check the thickness of the ice before you walk on it.",
+      "exampleZh": "在冰上行走之前，先檢查冰的厚度。",
+      "glossZh": "厚度",
+      "distractorsZh": [
+        "溫度",
+        "顏色",
+        "重量"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q08",
+      "type": "wordCard",
+      "word": "exceptionally",
+      "exampleEn": "This summer has been exceptionally hot.",
+      "exampleZh": "今年夏天格外炎熱。",
+      "glossZh": "格外地；特別地",
+      "distractorsZh": [
+        "平常地",
+        "稍微",
+        "偶爾"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "Please measure the width and thickness of the board before cutting it.",
+      "sentenceZh": "切之前，請先量木板的寬度和厚度。"
+    },
+    {
+      "id": "b2-u07-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "Before we order, let's compute how many chairs we need for the party.",
+      "audioZh": "訂購之前，我們先算算派對需要幾張椅子。",
+      "questionZh": "說話者建議先做什麼？",
+      "options": [
+        "Calculate the number of chairs",
+        "Buy more tables first",
+        "Call the guests about the party",
+        "Clean the room before the party"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u07-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "She did exceptionally well in her first year at the company.",
+      "sentenceZh": "她進公司第一年表現格外出色。"
+    },
+    {
+      "id": "b2-u07-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "She heaped food onto my plate until I couldn't eat any more.",
+      "sentenceZh": "她一直往我盤子裡堆食物，直到我再也吃不下。"
+    },
+    {
+      "id": "b2-u07-l06-q13",
+      "type": "mcq",
+      "stemEn": "The ____ of these old walls helps to keep the house warm in winter.",
+      "stemZh": "這些老牆的厚度有助於讓房子在冬天保暖。",
+      "options": [
+        "dime",
+        "heap",
+        "thickness",
+        "subdivision"
+      ],
+      "optionGlossZh": [
+        "一角硬幣",
+        "一堆",
+        "厚度",
+        "細分"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u07-l06-q14",
+      "type": "mcq",
+      "stemEn": "The road is ____ long; it takes three days to drive from one end to the other.",
+      "stemZh": "這條路長得出奇；從一頭開到另一頭要三天。",
+      "options": [
+        "sufficiently",
+        "broadly",
+        "width",
+        "extraordinarily"
+      ],
+      "optionGlossZh": [
+        "足夠地",
+        "大致上",
+        "寬度",
+        "格外地"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b2-u07-l06-q15",
+      "type": "reading",
+      "passageEn": "My grandfather kept a heap of old coins in a glass jar. Last month, I helped him sort them. Many were American dimes from his years of working in New York. He wanted to compute their value, so we divided the coins into groups by country, with subdivisions by year. Some coins were extraordinarily old, more than a hundred years. One silver coin was exceptionally rare; an expert said it was worth thousands of dollars. We also measured the width and thickness of each coin precisely and wrote everything in a notebook. My grandfather says the notebook is now worth more than the coins!",
+      "passageZh": "我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家分組，每組再依年份細分。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也精確地量了每枚硬幣的寬度（直徑）和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！",
+      "questions": [
+        {
+          "questionZh": "很多一角硬幣是從哪裡來的？",
+          "options": [
+            "爺爺在古董店一枚一枚買的",
+            "爺爺出國旅行時在銀行兌換來的",
+            "爺爺以前在紐約工作時留下的",
+            "爺爺的朋友送給他的"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "他們怎麼把硬幣分類？",
+          "options": [
+            "依顏色深淺",
+            "依國家和年份",
+            "依硬幣的大小和厚度",
+            "依硬幣重量"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q16",
+      "type": "translate",
+      "promptZh": "這條河最寬的地方有一百公尺。",
+      "hintWords": [
+        "width"
+      ],
+      "referenceEn": [
+        "The width of the river is one hundred meters at its widest point.",
+        "The river is one hundred meters wide at its widest point."
+      ],
+      "rubricZh": [
+        "width 是名詞（例如 the width of…、a width of…）；寫 is one hundred meters wide 意思也對",
+        "「最寬的地方」可寫 at its widest point、at the widest part 等"
+      ]
+    },
+    {
+      "id": "b2-u07-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "exceptionally",
+      "instructionZh": "用 exceptionally 造一個句子，說說某件事格外好、格外差或格外特別。",
+      "referenceEn": [
+        "My team worked exceptionally hard this month.",
+        "The food at my sister's wedding was exceptionally good."
+      ],
+      "rubricZh": [
+        "句子要用到 exceptionally，修飾形容詞或副詞（例如 exceptionally good、exceptionally hard）",
+        "句意要表示程度特別高"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:21:00Z",
+    "verdicts": {
+      "b2-u07-l06-q10": [
+        0
+      ],
+      "b2-u07-l06-q13": [
+        2
+      ],
+      "b2-u07-l06-q14": [
+        3
+      ],
+      "b2-u07-l06-q15#0": [
+        2
+      ],
+      "b2-u07-l06-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關＋第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）：疑似用法不自然：\"we put the coins into subdivisions by country and by year\"——subdivision 指既有整體再細分出的部分，「把硬幣放進細分」不道地；中譯也只譯成「分類」。建議 \"we divided the coins into groups by country, with subdivisions by year\"。",
+        "resolution": "改前：\"My grandfather kept a heap of old coins in a glass jar. Last month, I helped him sort them. Many were American dimes from his years of working in New York. He wanted to compute their value, so we put the coins into subdivisions by country and by year. Some coins were extraordinarily old, more than a hundred years. One silver coin was exceptionally rare; an expert said it was worth thousands of dollars. We also measured the width and thickness of each coin and wrote everything in a notebook. My grandfather says the notebook is now worth more than the coins!\"；改後：\"My grandfather kept a heap of old coins in a glass jar. Last month, I helped him sort them. Many were American dimes from his years of working in New York. He wanted to compute their value, so we divided the coins into groups by country, with subdivisions by year. Some coins were extraordinarily old, more than a hundred years. One silver coin was exceptionally rare; an expert said it was worth thousands of dollars. We also measured the width and thickness of each coin and wrote everything in a notebook. My grandfather says the notebook is now worth more than the coins!\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關＋第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）：疑似用法不自然：\"we put the coins into subdivisions by country and by year\"——subdivision 指既有整體再細分出的部分，「把硬幣放進細分」不道地；中譯也只譯成「分類」。建議 \"we divided the coins into groups by country, with subdivisions by year\"。",
+        "resolution": "改前：\"我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家和年份分類。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也量了每枚硬幣的直徑和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！\"；改後：\"我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家分組，每組再依年份細分。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也量了每枚硬幣的直徑和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）",
+        "resolution": "改前：\"我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家分組，每組再依年份細分。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也量了每枚硬幣的直徑和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！\"；改後：\"我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家分組，每組再依年份細分。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也量了每枚硬幣的寬度（直徑）和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/9/audioEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"The computer will compute your final score in a few seconds.\"；改後：\"Before we order, let's compute how many chairs we need for the party.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"電腦會在幾秒內算出你的最後分數。\"；改後：\"訂購之前，我們先算算派對需要幾張椅子。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/9/questionZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"電腦會做什麼？\"；改後：\"說話者建議先做什麼？\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：[\"Calculate your score\",\"Print your report\",\"Send an email\",\"Turn itself off\"]；改後：[\"Calculate the number of chairs\",\"Buy more tables\",\"Call the guests\",\"Clean the room\"]",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：[\"古董店買的\",\"銀行換來的\",\"爺爺在紐約工作的那些年\",\"朋友送的\"]；改後：[\"古董店買的\",\"銀行換來的\",\"爺爺以前在紐約工作時留下的\",\"朋友送的\"]",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/15/referenceEn/0",
+        "message": "執行長第②③關裁示修正：第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）",
+        "resolution": "改前：\"At its widest point, the river has a width of one hundred meters.\"；改後：\"The river is one hundred meters wide at its widest point.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長最終複審修正：最終複審 FIX 5：補單元間複用（precisely，u06-l06）",
+        "resolution": "改前：\"My grandfather kept a heap of old coins in a glass jar. Last month, I helped him sort them. Many were American dimes from his years of working in New York. He wanted to compute their value, so we divided the coins into groups by country, with subdivisions by year. Some coins were extraordinarily old, more than a hundred years. One silver coin was exceptionally rare; an expert said it was worth thousands of dollars. We also measured the width and thickness of each coin and wrote everything in a notebook. My grandfather says the notebook is now worth more than the coins!\"；改後：\"My grandfather kept a heap of old coins in a glass jar. Last month, I helped him sort them. Many were American dimes from his years of working in New York. He wanted to compute their value, so we divided the coins into groups by country, with subdivisions by year. Some coins were extraordinarily old, more than a hundred years. One silver coin was exceptionally rare; an expert said it was worth thousands of dollars. We also measured the width and thickness of each coin precisely and wrote everything in a notebook. My grandfather says the notebook is now worth more than the coins!\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長最終複審修正：最終複審 FIX 5：中譯同步",
+        "resolution": "改前：\"我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家分組，每組再依年份細分。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也量了每枚硬幣的寬度（直徑）和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！\"；改後：\"我爺爺在一個玻璃罐裡放了一大堆舊硬幣。上個月，我幫他整理。其中很多是他在紐約工作那些年留下的美國一角硬幣。他想算出這些硬幣值多少錢，所以我們把硬幣依國家分組，每組再依年份細分。有些硬幣非常古老，超過一百年。有一枚銀幣格外稀有，一位專家說它值好幾千美元。我們也精確地量了每枚硬幣的寬度（直徑）和厚度，把一切都記在筆記本裡。爺爺說，現在這本筆記本比那些硬幣還值錢！\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/15/referenceEn",
+        "message": "執行長最終複審修正：最終複審建議（撰寫端採納）：第一個參考答案示範提示字 width",
+        "resolution": "改前：[\"The river is one hundred meters wide at its widest point.\",\"The width of the river is one hundred meters at its widest point.\"]；改後：[\"The width of the river is one hundred meters at its widest point.\",\"The river is one hundred meters wide at its widest point.\"]",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"Call the guests\"；改後：\"Call the guests about the party\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"Clean the room\"；改後：\"Clean the room before the party\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"古董店買的\"；改後：\"爺爺在古董店一枚一枚買的\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"銀行換來的\"；改後：\"爺爺出國旅行時在銀行兌換來的\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"依顏色\"；改後：\"依顏色和材質\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"依大小\"；改後：\"依硬幣的大小和厚度\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"依顏色和材質\"；改後：\"依顏色深淺\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"Buy more tables\"；改後：\"Buy more tables first\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"朋友送的\"；改後：\"爺爺的朋友送給他的\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/1/options/3",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"依重量\"；改後：\"依硬幣重量\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：dime；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"dime\"；改後：\"sufficiently\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：dime；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"一角硬幣\"；改後：\"足夠地\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：dime；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"compute\"；改後：\"broadly\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：dime；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"計算\"；改後：\"大致上\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      }
+    ]
+  }
+}

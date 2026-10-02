@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u08-l05",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:59:04Z",
+  "properNouns": [
+    "Lu"
+  ],
+  "items": [
+    {
+      "id": "b2-u08-l05-q01",
+      "type": "wordCard",
+      "word": "evaluation",
+      "exampleEn": "Each new product goes through a careful evaluation.",
+      "exampleZh": "每項新產品都要經過仔細的評估。",
+      "glossZh": "評估；評價",
+      "distractorsZh": [
+        "廣告",
+        "包裝",
+        "運送"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q02",
+      "type": "wordCard",
+      "word": "interpretation",
+      "exampleEn": "There is more than one interpretation of this poem.",
+      "exampleZh": "這首詩有不只一種解讀。",
+      "glossZh": "解釋；解讀",
+      "distractorsZh": [
+        "標題",
+        "作者",
+        "出版"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q03",
+      "type": "wordCard",
+      "word": "exception",
+      "exampleEn": "I usually walk to work, but today was an exception.",
+      "exampleZh": "我平常走路上班，但今天是例外。",
+      "glossZh": "例外；除外",
+      "distractorsZh": [
+        "規則",
+        "習慣",
+        "原因"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q04",
+      "type": "wordCard",
+      "word": "implication",
+      "exampleEn": "Have you thought about the implications of this decision?",
+      "exampleZh": "你想過這個決定可能帶來的影響嗎？",
+      "glossZh": "可能的影響；含意",
+      "distractorsZh": [
+        "原因",
+        "日期",
+        "細節"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q05",
+      "type": "wordCard",
+      "word": "recognition",
+      "exampleEn": "She received recognition for her years of hard work.",
+      "exampleZh": "她多年的努力獲得了肯定。",
+      "glossZh": "肯定；讚譽；認出",
+      "distractorsZh": [
+        "批評",
+        "薪水",
+        "休假"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q06",
+      "type": "wordCard",
+      "word": "assure",
+      "exampleEn": "The guide assured us of a safe trip.",
+      "exampleZh": "導遊向我們保證旅途安全。",
+      "glossZh": "保證；使確信",
+      "distractorsZh": [
+        "懷疑",
+        "警告",
+        "要求"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q07",
+      "type": "wordCard",
+      "word": "assumption",
+      "exampleEn": "Don't make assumptions about people based on their clothes.",
+      "exampleZh": "不要只憑衣著就對別人下定論。",
+      "glossZh": "假定；臆測",
+      "distractorsZh": [
+        "事實",
+        "證據",
+        "決定"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q08",
+      "type": "wordCard",
+      "word": "dispute",
+      "exampleEn": "The two companies are in a dispute over the contract.",
+      "exampleZh": "兩家公司因為合約起了糾紛。",
+      "glossZh": "爭論；糾紛",
+      "distractorsZh": [
+        "協議",
+        "合作",
+        "交易"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "The two neighbors had a dispute about the noise at night.",
+      "sentenceZh": "兩位鄰居為了夜裡的噪音起了爭執。"
+    },
+    {
+      "id": "b2-u08-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "We assure all our customers that their personal information is safe.",
+      "audioZh": "我們向所有顧客保證，他們的個人資料很安全。",
+      "questionZh": "公司向顧客保證什麼？",
+      "options": [
+        "Delivery is free",
+        "Prices will go down next month",
+        "Their information is safe",
+        "The store opens early every day"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u08-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "The rule applies to everyone; there are no exceptions.",
+      "sentenceZh": "這條規定適用於每個人，沒有例外。"
+    },
+    {
+      "id": "b2-u08-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "Your interpretation of the data is different from mine.",
+      "sentenceZh": "你對這些數據的解讀和我不同。"
+    },
+    {
+      "id": "b2-u08-l05-q13",
+      "type": "mcq",
+      "stemEn": "He made the ____ that the meeting was canceled, but it was only moved to Friday.",
+      "stemZh": "他以為會議取消了，但其實只是改到星期五。",
+      "options": [
+        "assumption",
+        "recognition",
+        "evaluation",
+        "dispute"
+      ],
+      "optionGlossZh": [
+        "假定",
+        "肯定",
+        "評估",
+        "爭論"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u08-l05-q14",
+      "type": "mcq",
+      "stemEn": "The pilot ____ the passengers that there was nothing to worry about.",
+      "stemZh": "機長向乘客保證沒什麼好擔心的。",
+      "options": [
+        "evaluated",
+        "assured",
+        "implication",
+        "perceived"
+      ],
+      "optionGlossZh": [
+        "評估",
+        "保證",
+        "含意",
+        "認為"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b2-u08-l05-q15",
+      "type": "reading",
+      "passageEn": "Every year, our company gives an award to one worker in recognition of excellent service. This year, the evaluation was tough, because many people did well. At first, the team made the assumption that the sales manager would win, but the award went to a cleaner named Mr. Lu, who had worked here for twenty years. There was a small dispute about the decision, since the award had always gone to office staff, with no exceptions. However, the director explained her interpretation of excellent service: it means helping others every day. She assured everyone that the decision was fair. The implication was clear: every job matters.",
+      "passageZh": "每年公司都會頒獎給一位員工，表揚他優秀的服務。今年的評選很困難，因為很多人表現都很好。起初，團隊以為業務經理會得獎，結果獎項頒給了在這裡工作二十年的清潔人員呂先生。這個決定引起了一點爭論，因為這個獎過去一向頒給辦公室員工，從無例外。不過，總監解釋了她對「優秀服務」的理解：就是每天幫助別人。她向大家保證這個決定很公平。這件事的含意很清楚：每一份工作都很重要。",
+      "questions": [
+        {
+          "questionZh": "一開始團隊以為誰會得獎？",
+          "options": [
+            "清潔工",
+            "業務經理",
+            "董事長",
+            "一位新進員工"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "這個決定傳達了什麼意思？",
+          "options": [
+            "清潔人員的薪水比經理高",
+            "每一份工作都很重要",
+            "業務部門表現不好",
+            "明年不再頒獎"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q16",
+      "type": "translate",
+      "promptZh": "除了星期日以外，這家店每天都營業。",
+      "hintWords": [
+        "exception"
+      ],
+      "referenceEn": [
+        "The shop is open every day with the exception of Sunday.",
+        "With the exception of Sundays, this store is open every day."
+      ],
+      "rubricZh": [
+        "exception 表示「例外」，例如 with the exception of…（除了…之外）等",
+        "寫 except Sunday 意思也對；「營業」可寫，例如 is open 等"
+      ]
+    },
+    {
+      "id": "b2-u08-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "assumption",
+      "instructionZh": "用 assumption 造一個句子，說說你曾經做錯的一個假設。",
+      "referenceEn": [
+        "I made the wrong assumption that my new colleague was the boss.",
+        "My assumption that the trip would be cheap turned out to be wrong."
+      ],
+      "rubricZh": [
+        "句子要用到 assumption（例如 make an assumption、my assumption that… 等）",
+        "句子要說到你自己，並表示假設和實際情況不同"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:21:00Z",
+    "verdicts": {
+      "b2-u08-l05-q10": [
+        2
+      ],
+      "b2-u08-l05-q13": [
+        0
+      ],
+      "b2-u08-l05-q14": [
+        1
+      ],
+      "b2-u08-l05-q15#0": [
+        1
+      ],
+      "b2-u08-l05-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/13/stemEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"Let me ____ you that we will finish the work on time.\"；改後：\"The pilot ____ the passengers that there was nothing to worry about.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"我向你保證，我們會準時完成工作。\"；改後：\"機長向乘客保證沒什麼好擔心的。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：[\"exception\",\"assure\",\"implication\",\"recognition\"]；改後：[\"exception\",\"assured\",\"implication\",\"recognition\"]",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：單元間複用——閱讀短文自然帶入前面單元的字",
+        "resolution": "改前：\"Every year, our company gives an award to one worker in recognition of excellent service. This year, the evaluation was difficult, because many people did well. At first, the team made the assumption that the sales manager would win, but the award went to a cleaner named Mr. Lu, who had worked here for twenty years. There was a small dispute about the decision, since the award had always gone to office staff, with no exceptions. However, the director explained her interpretation of excellent service: it means helping others every day. She assured everyone that the decision was fair. The implication was clear: every job matters.\"；改後：\"Every year, our company gives an award to one worker in recognition of excellent service. This year, the evaluation was tough, because many people did well. At first, the team made the assumption that the sales manager would win, but the award went to a cleaner named Mr. Lu, who had worked here for twenty years. There was a small dispute about the decision, since the award had always gone to office staff, with no exceptions. However, the director explained her interpretation of excellent service: it means helping others every day. She assured everyone that the decision was fair. The implication was clear: every job matters.\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長最終複審修正：最終複審建議（撰寫端採納）：雷同邊界（四處都是 assure sb that）",
+        "resolution": "改前：\"I assure you that the money will arrive tomorrow.\"；改後：\"The guide assured us of a safe trip.\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長最終複審修正：最終複審建議（撰寫端採納）：雷同邊界（四處都是 assure sb that）",
+        "resolution": "改前：\"我向你保證錢明天會到。\"；改後：\"導遊向我們保證旅途安全。\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"Prices will go down\"；改後：\"Prices will go down next month\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"新進員工\"；改後：\"一位新進員工\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"清潔人員的薪水最高\"；改後：\"清潔人員的薪水比經理高\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"The store opens early\"；改後：\"The store opens early every day\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"清潔人員\"；改後：\"清潔工\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"總監\"；改後：\"女總監\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長正解長度裁示修正：正解長度名次分布修正後人工複核：干擾項改為與短文明確不符的內容（「女」字刻意）",
+        "resolution": "改前：\"女總監\"；改後：\"老闆\"",
+        "resolvedAt": "2026-10-02T18:26:08Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長正解長度裁示修正：名次分布修正後人工複核：「老闆」過短，違反 0.5–2 倍限制",
+        "resolution": "改前：\"老闆\"；改後：\"董事長\"",
+        "resolvedAt": "2026-10-02T18:26:48Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示修正：單字卡第一義須為例句所教詞義（App 作答選項只顯示第一義）：調整釋義順序",
+        "resolution": "改前：\"含意；可能的影響\"；改後：\"可能的影響；含意\"",
+        "resolvedAt": "2026-10-02T19:58:48Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：recognition；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"exception\"；改後：\"evaluated\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：recognition；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"例外\"；改後：\"評估\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：recognition；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"recognition\"；改後：\"perceived\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：recognition；混合詞性題至少兩個干擾項放得進空格",
+        "resolution": "改前：\"肯定\"；改後：\"認為\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/15/rubricZh",
+        "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
+        "resolution": "改前：[\"exception 常用 with the exception of…，表示「除了…之外」\",\"寫 except Sunday 意思也對；「營業」可寫 is open 等\"]；改後：[\"exception 表示「例外」，例如 with the exception of…（除了…之外）等\",\"寫 except Sunday 意思也對；「營業」可寫，例如 is open 等\"]",
+        "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16/rubricZh",
+        "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
+        "resolution": "改前：[\"句子要用到 assumption，常用 make an assumption、my assumption that…\",\"句子要說到你自己，並表示假設和實際情況不同\"]；改後：[\"句子要用到 assumption（例如 make an assumption、my assumption that… 等）\",\"句子要說到你自己，並表示假設和實際情況不同\"]",
+        "resolvedAt": "2026-10-02T20:48:11Z"
+      }
+    ]
+  }
+}

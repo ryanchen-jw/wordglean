@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u01-l01",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:55:04Z",
+  "properNouns": [
+    "Sarah",
+    "Linda",
+    "Kevin"
+  ],
+  "items": [
+    {
+      "id": "b2-u01-l01-q01",
+      "type": "wordCard",
+      "word": "exclusively",
+      "exampleEn": "This parking area is exclusively for visitors.",
+      "exampleZh": "這個停車區僅供訪客使用。",
+      "glossZh": "僅僅；專門地",
+      "distractorsZh": [
+        "偶爾地",
+        "大致上",
+        "公開地"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q02",
+      "type": "wordCard",
+      "word": "likewise",
+      "exampleEn": "Sarah thanked the team, and the manager did likewise.",
+      "exampleZh": "Sarah 向團隊道謝，經理也這麼做了。",
+      "glossZh": "同樣地；也",
+      "distractorsZh": [
+        "相反地",
+        "因此",
+        "最後"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q03",
+      "type": "wordCard",
+      "word": "accordingly",
+      "exampleEn": "The rules have changed, so please act accordingly.",
+      "exampleZh": "規定改了，請照著調整你的做法。",
+      "glossZh": "相應地；照著",
+      "distractorsZh": [
+        "偶然地",
+        "反而",
+        "立刻"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q04",
+      "type": "wordCard",
+      "word": "additionally",
+      "exampleEn": "Additionally, all staff will get an extra day off.",
+      "exampleZh": "此外，全體員工會多放一天假。",
+      "glossZh": "此外；另外",
+      "distractorsZh": [
+        "然而",
+        "因此",
+        "例如"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q05",
+      "type": "wordCard",
+      "word": "alternatively",
+      "exampleEn": "You can pay by card. Alternatively, you can pay in cash.",
+      "exampleZh": "你可以刷卡，或者也可以付現金。",
+      "glossZh": "或者；另一個選擇是",
+      "distractorsZh": [
+        "此外",
+        "因此",
+        "最後"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q06",
+      "type": "wordCard",
+      "word": "neither",
+      "exampleEn": "Neither of the two printers is working.",
+      "exampleZh": "兩台印表機都不能用。",
+      "glossZh": "兩者都不",
+      "distractorsZh": [
+        "兩者都",
+        "其中之一",
+        "全部"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q07",
+      "type": "wordCard",
+      "word": "somewhat",
+      "exampleEn": "The new office is somewhat smaller than the old one.",
+      "exampleZh": "新辦公室比舊的稍微小一點。",
+      "glossZh": "有點；稍微",
+      "distractorsZh": [
+        "非常",
+        "完全",
+        "幾乎不"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q08",
+      "type": "wordCard",
+      "word": "necessarily",
+      "exampleEn": "Do we necessarily need to finish it today?",
+      "exampleZh": "我們一定要今天完成嗎？",
+      "glossZh": "必定；一定",
+      "distractorsZh": [
+        "偶爾",
+        "故意地",
+        "幸運地"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "On Fridays, we use the big meeting room exclusively for training.",
+      "sentenceZh": "每週五，大會議室只用來做訓練。"
+    },
+    {
+      "id": "b2-u01-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Neither of the trains stops here. Alternatively, you can take a bus to the station.",
+      "audioZh": "兩班火車都不停這裡。或者，你可以搭公車到車站。",
+      "questionZh": "說話者建議怎麼做？",
+      "options": [
+        "Take a bus to the station",
+        "Wait here for the next train",
+        "Walk to the next town instead",
+        "Take a taxi home"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u01-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "I was somewhat surprised by the results of the survey.",
+      "sentenceZh": "我對調查結果有點驚訝。"
+    },
+    {
+      "id": "b2-u01-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "A high price does not necessarily mean high quality.",
+      "sentenceZh": "價格高不一定代表品質好。"
+    },
+    {
+      "id": "b2-u01-l01-q13",
+      "type": "mcq",
+      "stemEn": "Our budget has been cut, so we must plan ____.",
+      "stemZh": "我們的預算被刪減了，所以必須相應地做規劃。",
+      "options": [
+        "somewhat",
+        "exclusively",
+        "accordingly",
+        "likewise"
+      ],
+      "optionGlossZh": [
+        "有點",
+        "專門地",
+        "相應地",
+        "同樣地"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u01-l01-q14",
+      "type": "mcq",
+      "stemEn": "The hotel has a free gym. ____, breakfast is included in the price.",
+      "stemZh": "這家飯店有免費的健身房。此外，房價還包含早餐。",
+      "options": [
+        "Necessarily",
+        "Alternatively",
+        "Additionally",
+        "Unfortunately"
+      ],
+      "optionGlossZh": [
+        "必然地",
+        "或者",
+        "此外",
+        "不幸地"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u01-l01-q15",
+      "type": "reading",
+      "passageEn": "From next Monday, the third-floor kitchen will be used exclusively by the design team, because they need space for a new project. Other staff can use the kitchen on the fifth floor. Alternatively, they can eat in the small garden behind the building. We know this change is somewhat inconvenient. The fifth-floor kitchen will be busier, but that does not necessarily mean longer lines, since we will add a second coffee machine there. Additionally, the company will pay for lunch every Friday this month. Neither the kitchen rule nor the extra coffee machine is permanent. We will review them in three months and adjust our plans accordingly. Linda at the front desk will listen to your ideas, and the managers will likewise read every comment.",
+      "passageZh": "從下週一起，三樓的廚房將只給設計團隊使用，因為他們的新專案需要空間。其他員工可以使用五樓的廚房，或者也可以在大樓後面的小花園用餐。我們知道這項改變有點不方便。五樓的廚房會比較擁擠，但這不一定代表要排更久，因為我們會在那裡多放一台咖啡機。此外，本月每週五公司會請大家吃午餐。廚房規定和多加的咖啡機都不是永久的。我們會在三個月後檢討，並據此調整計畫。櫃台的 Linda 會聽取大家的想法，經理們也同樣會閱讀每一則意見。",
+      "questions": [
+        {
+          "questionZh": "從下週一起，誰可以使用三樓的廚房？",
+          "options": [
+            "只有設計團隊",
+            "公司的所有員工",
+            "只有經理們",
+            "來訪的公司客人"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "公司打算怎麼處理這些改變？",
+          "options": [
+            "交給設計團隊決定",
+            "永遠維持不變",
+            "下週一就取消",
+            "三個月後檢討並調整"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q16",
+      "type": "translate",
+      "promptZh": "我們可以搭火車去，或者也可以開車去。",
+      "hintWords": [
+        "alternatively"
+      ],
+      "referenceEn": [
+        "We can go by train. Alternatively, we can drive.",
+        "We can take the train, or alternatively, we can drive there."
+      ],
+      "rubricZh": [
+        "alternatively 用來提出另一個選擇（例如放在第二句句首：Alternatively, we can drive.；也可接在 or 後面）",
+        "「搭火車去」可寫 go by train、take the train 等；「開車去」可寫 drive、drive there、go by car 等"
+      ]
+    },
+    {
+      "id": "b2-u01-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "likewise",
+      "instructionZh": "用 likewise 造一個句子，說說別人做了某件事，你也照著做。",
+      "referenceEn": [
+        "My manager left the office early, and I did likewise.",
+        "Kevin turned off his phone during the meeting, and I did likewise."
+      ],
+      "rubricZh": [
+        "句子要用到 likewise，表示「同樣地、也這樣做」（例如 do likewise、…, and likewise, I…）",
+        "前後兩件事要是同樣的動作或情況，而且第二件事是你做的"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:21:00Z",
+    "verdicts": {
+      "b2-u01-l01-q10": [
+        0
+      ],
+      "b2-u01-l01-q13": [
+        2
+      ],
+      "b2-u01-l01-q14": [
+        2
+      ],
+      "b2-u01-l01-q15#0": [
+        0
+      ],
+      "b2-u01-l01-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"Neither of these changes is permanent.\" 前文列了三件以上的改變（三樓廚房專用、五樓加咖啡機、每週五請午餐），neither 只用於兩者，指涉不清；且「本月每週五請午餐」本來就有期限，說它不是永久的多餘。建議改 None of these changes 或明確只指兩件事，passageZh「這兩項改變」同步調整。",
+        "resolution": "改前：\"From next Monday, the third-floor kitchen will be used exclusively by the design team, because they need space for a new project. Other staff can use the kitchen on the fifth floor. Alternatively, they can eat in the small garden behind the building. We know this change is somewhat inconvenient. The fifth-floor kitchen will be busier, but that does not necessarily mean longer lines, since we will add a second coffee machine there. Additionally, the company will pay for lunch every Friday this month. Neither of these changes is permanent. We will review them in three months and adjust our plans accordingly. Please share your ideas with Linda at the front desk, and the managers will likewise listen to your feedback.\"；改後：\"From next Monday, the third-floor kitchen will be used exclusively by the design team, because they need space for a new project. Other staff can use the kitchen on the fifth floor. Alternatively, they can eat in the small garden behind the building. We know this change is somewhat inconvenient. The fifth-floor kitchen will be busier, but that does not necessarily mean longer lines, since we will add a second coffee machine there. Additionally, the company will pay for lunch every Friday this month. Neither the kitchen rule nor the extra coffee machine is permanent. We will review them in three months and adjust our plans accordingly. Please share your ideas with Linda at the front desk, and the managers will likewise listen to your feedback.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"Neither of these changes is permanent.\" 前文列了三件以上的改變（三樓廚房專用、五樓加咖啡機、每週五請午餐），neither 只用於兩者，指涉不清；且「本月每週五請午餐」本來就有期限，說它不是永久的多餘。建議改 None of these changes 或明確只指兩件事，passageZh「這兩項改變」同步調整。",
+        "resolution": "改前：\"從下週一起，三樓的廚房將只給設計團隊使用，因為他們的新專案需要空間。其他員工可以使用五樓的廚房，或者也可以在大樓後面的小花園用餐。我們知道這項改變有點不方便。五樓的廚房會比較擁擠，但這不一定代表要排更久，因為我們會在那裡多放一台咖啡機。此外，本月每週五公司會請大家吃午餐。這兩項改變都不是永久的。我們會在三個月後檢討，並據此調整計畫。有任何想法請告訴櫃台的 Linda，經理們也同樣會聽取大家的意見。\"；改後：\"從下週一起，三樓的廚房將只給設計團隊使用，因為他們的新專案需要空間。其他員工可以使用五樓的廚房，或者也可以在大樓後面的小花園用餐。我們知道這項改變有點不方便。五樓的廚房會比較擁擠，但這不一定代表要排更久，因為我們會在那裡多放一台咖啡機。此外，本月每週五公司會請大家吃午餐。廚房規定和多加的咖啡機都不是永久的。我們會在三個月後檢討，並據此調整計畫。有任何想法請告訴櫃台的 Linda，經理們也同樣會聽取大家的意見。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"Please share your ideas with Linda..., and the managers will likewise listen to your feedback.\" 前句只說把意見交給 Linda，沒說 Linda 會聽取，likewise 沒有可對應的同類動作，承接不通。",
+        "resolution": "改前：\"From next Monday, the third-floor kitchen will be used exclusively by the design team, because they need space for a new project. Other staff can use the kitchen on the fifth floor. Alternatively, they can eat in the small garden behind the building. We know this change is somewhat inconvenient. The fifth-floor kitchen will be busier, but that does not necessarily mean longer lines, since we will add a second coffee machine there. Additionally, the company will pay for lunch every Friday this month. Neither the kitchen rule nor the extra coffee machine is permanent. We will review them in three months and adjust our plans accordingly. Please share your ideas with Linda at the front desk, and the managers will likewise listen to your feedback.\"；改後：\"From next Monday, the third-floor kitchen will be used exclusively by the design team, because they need space for a new project. Other staff can use the kitchen on the fifth floor. Alternatively, they can eat in the small garden behind the building. We know this change is somewhat inconvenient. The fifth-floor kitchen will be busier, but that does not necessarily mean longer lines, since we will add a second coffee machine there. Additionally, the company will pay for lunch every Friday this month. Neither the kitchen rule nor the extra coffee machine is permanent. We will review them in three months and adjust our plans accordingly. Linda at the front desk will listen to your ideas, and the managers will likewise read every comment.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"Please share your ideas with Linda..., and the managers will likewise listen to your feedback.\" 前句只說把意見交給 Linda，沒說 Linda 會聽取，likewise 沒有可對應的同類動作，承接不通。",
+        "resolution": "改前：\"從下週一起，三樓的廚房將只給設計團隊使用，因為他們的新專案需要空間。其他員工可以使用五樓的廚房，或者也可以在大樓後面的小花園用餐。我們知道這項改變有點不方便。五樓的廚房會比較擁擠，但這不一定代表要排更久，因為我們會在那裡多放一台咖啡機。此外，本月每週五公司會請大家吃午餐。廚房規定和多加的咖啡機都不是永久的。我們會在三個月後檢討，並據此調整計畫。有任何想法請告訴櫃台的 Linda，經理們也同樣會聽取大家的意見。\"；改後：\"從下週一起，三樓的廚房將只給設計團隊使用，因為他們的新專案需要空間。其他員工可以使用五樓的廚房，或者也可以在大樓後面的小花園用餐。我們知道這項改變有點不方便。五樓的廚房會比較擁擠，但這不一定代表要排更久，因為我們會在那裡多放一台咖啡機。此外，本月每週五公司會請大家吃午餐。廚房規定和多加的咖啡機都不是永久的。我們會在三個月後檢討，並據此調整計畫。櫃台的 Linda 會聽取大家的想法，經理們也同樣會閱讀每一則意見。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"Wait for the next train\"；改後：\"Wait here for the next train\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"所有員工\"；改後：\"公司的所有員工\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"永遠維持不變\"；改後：\"從下週一起永遠維持不變\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"Walk to the next town\"；改後：\"Walk to the next town instead\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"來訪的客人\"；改後：\"來訪的公司客人\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"從下週一起永遠維持不變\"；改後：\"永遠維持不變\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示修正：單字卡第一義須為例句所教詞義（App 作答選項只顯示第一義）：調整釋義順序",
+        "resolution": "改前：\"專門地；僅僅\"；改後：\"僅僅；專門地\"",
+        "resolvedAt": "2026-10-02T19:58:48Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：somewhat；accordingly 為 q13 正解",
+        "resolution": "改前：\"Accordingly\"；改後：\"Necessarily\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：somewhat；accordingly 為 q13 正解",
+        "resolution": "改前：\"相應地\"；改後：\"必然地\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：somewhat；accordingly 為 q13 正解",
+        "resolution": "改前：\"Somewhat\"；改後：\"Unfortunately\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：somewhat；accordingly 為 q13 正解",
+        "resolution": "改前：\"有點\"；改後：\"不幸地\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      }
+    ]
+  }
+}

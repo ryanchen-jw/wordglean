@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u06-l07",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:51:29Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b2-u06-l07-q01",
+      "type": "wordCard",
+      "word": "relevant",
+      "exampleEn": "Please include only relevant information in your report.",
+      "exampleZh": "報告裡請只放相關的資訊。",
+      "glossZh": "相關的；切題的",
+      "distractorsZh": [
+        "無關的",
+        "錯誤的",
+        "過時的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q02",
+      "type": "wordCard",
+      "word": "external",
+      "exampleEn": "I keep all my old photos on an external hard drive.",
+      "exampleZh": "我把所有舊照片都存在外接硬碟裡。",
+      "glossZh": "外部的；外面的",
+      "distractorsZh": [
+        "內部的",
+        "私人的",
+        "主要的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q03",
+      "type": "wordCard",
+      "word": "comprehensive",
+      "exampleEn": "The guide gives a comprehensive list of hotels in the city.",
+      "exampleZh": "這本指南列出了市內飯店的完整清單。",
+      "glossZh": "全面的；廣泛的",
+      "distractorsZh": [
+        "簡短的",
+        "部分的",
+        "錯誤的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q04",
+      "type": "wordCard",
+      "word": "vital",
+      "exampleEn": "Water is vital for all living things.",
+      "exampleZh": "水對所有生物都至關重要。",
+      "glossZh": "極重要的；必要的",
+      "distractorsZh": [
+        "危險的",
+        "多餘的",
+        "稀少的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q05",
+      "type": "wordCard",
+      "word": "sophisticated",
+      "exampleEn": "The new factory uses very sophisticated machines.",
+      "exampleZh": "這座新工廠使用非常精密的機器。",
+      "glossZh": "精密的；老練的",
+      "distractorsZh": [
+        "簡單的",
+        "老舊的",
+        "便宜的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q06",
+      "type": "wordCard",
+      "word": "prompt",
+      "exampleEn": "Thank you for your prompt reply.",
+      "exampleZh": "謝謝您迅速的回覆。",
+      "glossZh": "迅速的；及時的",
+      "distractorsZh": [
+        "遲來的",
+        "冗長的",
+        "禮貌的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q07",
+      "type": "wordCard",
+      "word": "detailed",
+      "exampleEn": "She gave us a detailed plan for the trip.",
+      "exampleZh": "她給了我們一份詳細的旅行計畫。",
+      "glossZh": "詳細的",
+      "distractorsZh": [
+        "簡略的",
+        "模糊的",
+        "昂貴的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q08",
+      "type": "wordCard",
+      "word": "concrete",
+      "exampleEn": "The two companies have not reached a concrete agreement yet.",
+      "exampleZh": "兩家公司還沒有達成具體的協議。",
+      "glossZh": "具體的；混凝土",
+      "distractorsZh": [
+        "抽象的",
+        "有趣的",
+        "錯誤的"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q09",
+      "type": "listenType",
+      "sentenceEn": "Please send me a detailed report of the costs by Friday.",
+      "sentenceZh": "請在星期五前寄給我一份詳細的費用報告。"
+    },
+    {
+      "id": "b2-u06-l07-q10",
+      "type": "listenChoice",
+      "audioEn": "At tomorrow's meeting, we need concrete ideas, not general comments.",
+      "audioZh": "明天的會議上，我們需要具體的點子，而不是籠統的意見。",
+      "questionZh": "明天的會議需要什麼？",
+      "options": [
+        "General comments",
+        "Specific ideas",
+        "A long report",
+        "Coffee and snacks"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b2-u06-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "Good communication is vital in a small team.",
+      "sentenceZh": "在小團隊裡，良好的溝通至關重要。"
+    },
+    {
+      "id": "b2-u06-l07-q12",
+      "type": "shadowing",
+      "sentenceEn": "This phone has a sophisticated camera that works well at night.",
+      "sentenceZh": "這支手機有一顆精密的相機，晚上也拍得很好。"
+    },
+    {
+      "id": "b2-u06-l07-q13",
+      "type": "mcq",
+      "stemEn": "Her advice was very ____ to my situation, so I followed it right away.",
+      "stemZh": "她的建議和我的處境非常相關，所以我馬上照做了。",
+      "options": [
+        "relevant",
+        "sophisticated",
+        "concrete",
+        "detailed"
+      ],
+      "optionGlossZh": [
+        "相關的",
+        "精密的",
+        "具體的",
+        "詳細的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u06-l07-q14",
+      "type": "mcq",
+      "stemEn": "The ____ walls of the house are white, but inside, every room is painted blue.",
+      "stemZh": "這棟房子的外牆是白色的，但裡面每個房間都漆成藍色。",
+      "options": [
+        "external",
+        "prompt",
+        "comprehensive",
+        "vital"
+      ],
+      "optionGlossZh": [
+        "外部的",
+        "迅速的",
+        "全面的",
+        "極重要的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u06-l07-q15",
+      "type": "reading",
+      "passageEn": "Last month, our company asked an external firm to review our computer system. The firm sent us a comprehensive report of forty pages. It was very detailed, and every point was relevant to our daily work. The report said our system was not sophisticated enough for a company of our size. It gave concrete examples, such as slow email and old security software. The experts said that fixing these problems was vital, and they asked for a prompt decision. Our manager agreed, and the existing system will be replaced by the end of the year.",
+      "passageZh": "上個月，我們公司請一家外部公司檢查我們的電腦系統。對方寄來一份四十頁的全面報告。報告非常詳細，每一點都和我們的日常工作相關。報告指出，以我們公司的規模來說，系統不夠先進。報告舉了具體例子，例如電子郵件很慢、防護軟體老舊。專家們說，解決這些問題至關重要，並請我們迅速做出決定。經理同意了，年底前現有的系統就會被換掉。",
+      "questions": [
+        {
+          "questionZh": "外部公司的報告指出什麼問題？",
+          "options": [
+            "每年的預算花太多",
+            "負責電腦的員工人數太少",
+            "辦公室空間太小",
+            "系統不夠先進"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "報告舉了哪些具體例子？",
+          "options": [
+            "印表機常壞、網路費用太貴",
+            "電子郵件很慢、防護軟體老舊",
+            "電腦太重、螢幕太小",
+            "會議太多、報告太長"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q16",
+      "type": "translate",
+      "promptZh": "我們需要一份更詳細的計畫。",
+      "hintWords": [
+        "detailed"
+      ],
+      "referenceEn": [
+        "We need a more detailed plan.",
+        "We need a plan that is more detailed."
+      ],
+      "rubricZh": [
+        "detailed 是形容詞，比較級是 more detailed（例如 a more detailed plan）",
+        "「需要」可寫 need、require 等"
+      ]
+    },
+    {
+      "id": "b2-u06-l07-q17",
+      "type": "makeSentence",
+      "targetWord": "vital",
+      "instructionZh": "用 vital 造一個句子，說說你覺得工作或生活中極為重要的一件事。",
+      "referenceEn": [
+        "I think it is vital to keep a good balance between work and family.",
+        "For me, a good night's sleep is vital to doing my job well."
+      ],
+      "rubricZh": [
+        "句子要用到 vital，表示「極為重要的」（例如 is vital to／for…、It is vital to…）",
+        "句子要說到你自己的看法"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:21:00Z",
+    "verdicts": {
+      "b2-u06-l07-q10": [
+        1
+      ],
+      "b2-u06-l07-q13": [
+        0
+      ],
+      "b2-u06-l07-q14": [
+        0
+      ],
+      "b2-u06-l07-q15#0": [
+        3
+      ],
+      "b2-u06-l07-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"Only include ____ details; leave out anything that has nothing to do with the topic.\"；改後：\"Her advice was very ____ to my situation, so I followed it right away.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"只放相關的細節；和主題無關的都刪掉。\"；改後：\"她的建議和我的處境非常相關，所以我馬上照做了。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/13/stemEn",
+        "message": "執行長第②③關裁示修正：第②關＋第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）：語意重複：\"external experts from another firm\"——external 已表示來自外部，與 from another firm 重複；建議刪 from another firm 或改情境。",
+        "resolution": "改前：\"The bank asked ____ experts from another firm to review the plan.\"；改後：\"The ____ walls of the house are white, but inside, every room is painted blue.\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正：第②關＋第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）：語意重複：\"external experts from another firm\"——external 已表示來自外部，與 from another firm 重複；建議刪 from another firm 或改情境。",
+        "resolution": "改前：\"銀行請了另一家公司的外部專家來審查這個計畫。\"；改後：\"這棟房子的外牆是白色的，但裡面每個房間都漆成藍色。\"",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長第②③關裁示修正：第②關＋第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）：語意重複：\"external experts from another firm\"——external 已表示來自外部，與 from another firm 重複；建議刪 from another firm 或改情境。",
+        "resolution": "改前：[\"external\",\"prompt\",\"comprehensive\",\"concrete\"]；改後：[\"external\",\"prompt\",\"comprehensive\",\"relevant\"]",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長第②③關裁示修正：第②關＋第③關疑似（執行長裁示：放寬評分要點照改；語感類撰寫端判斷改）：語意重複：\"external experts from another firm\"——external 已表示來自外部，與 from another firm 重複；建議刪 from another firm 或改情境。",
+        "resolution": "改前：[\"外部的\",\"迅速的\",\"全面的\",\"具體的\"]；改後：[\"外部的\",\"迅速的\",\"全面的\",\"相關的\"]",
+        "resolvedAt": "2026-10-02T15:40:10Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：雷同人工複查（自查 ≥40% 句對，主詞、情境、句型未換足兩項）——改單字卡例句",
+        "resolution": "改前：\"We hired an external company to check our accounts.\"；改後：\"The room has no windows, so there is no external light.\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：雷同人工複查（自查 ≥40% 句對，主詞、情境、句型未換足兩項）——改單字卡例句",
+        "resolution": "改前：\"我們聘請了一家外部公司來查核帳目。\"；改後：\"這個房間沒有窗戶，所以沒有外面的光線。\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：單元間複用——閱讀短文自然帶入前面單元的字",
+        "resolution": "改前：\"Last month, our company asked an external firm to review our computer system. The firm sent us a comprehensive report of forty pages. It was very detailed, and every point was relevant to our daily work. The report said our system was not sophisticated enough for a company of our size. It gave concrete examples, such as slow email and old security software. The experts said that fixing these problems was vital, and they asked for a prompt decision. Our manager agreed, and we will have a new system by the end of the year.\"；改後：\"Last month, our company asked an external firm to review our computer system. The firm sent us a comprehensive report of forty pages. It was very detailed, and every point was relevant to our daily work. The report said our system was not sophisticated enough for a company of our size. It gave concrete examples, such as slow email and old security software. The experts said that fixing these problems was vital, and they asked for a prompt decision. Our manager agreed, and the existing system will be replaced by the end of the year.\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：執行長 b2b1 裁示：單元間複用——閱讀短文自然帶入前面單元的字",
+        "resolution": "改前：\"上個月，我們公司請一家外部公司檢查我們的電腦系統。對方寄來一份四十頁的全面報告。報告非常詳細，每一點都和我們的日常工作相關。報告指出，以我們公司的規模來說，系統不夠先進。報告舉了具體例子，例如電子郵件很慢、防護軟體老舊。專家們說，解決這些問題至關重要，並請我們迅速做出決定。經理同意了，年底前我們就會有新系統。\"；改後：\"上個月，我們公司請一家外部公司檢查我們的電腦系統。對方寄來一份四十頁的全面報告。報告非常詳細，每一點都和我們的日常工作相關。報告指出，以我們公司的規模來說，系統不夠先進。報告舉了具體例子，例如電子郵件很慢、防護軟體老舊。專家們說，解決這些問題至關重要，並請我們迅速做出決定。經理同意了，年底前現有的系統就會被換掉。\"",
+        "resolvedAt": "2026-10-02T15:44:44Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長最終複審修正：最終複審建議（撰寫端採納）：external light 生硬",
+        "resolution": "改前：\"The room has no windows, so there is no external light.\"；改後：\"I keep all my old photos on an external hard drive.\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長最終複審修正：最終複審建議（撰寫端採納）：external light 生硬",
+        "resolution": "改前：\"這個房間沒有窗戶，所以沒有外面的光線。\"；改後：\"我把所有舊照片都存在外接硬碟裡。\"",
+        "resolvedAt": "2026-10-02T16:39:09Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"員工人數太少\"；改後：\"負責電腦的員工人數太少\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長正解長度裁示修正：正解長度偏差（挑最長的期望命中率）：選項長度與具體程度拉齊，正解意思不變",
+        "resolution": "改前：\"印表機常壞、網路太貴\"；改後：\"印表機常常壞、網路的費用太貴\"",
+        "resolvedAt": "2026-10-02T17:58:17Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"公司的系統不夠先進\"；改後：\"系統不夠先進\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"預算花太多\"；改後：\"每年的預算花太多\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"辦公室太小\"；改後：\"辦公室空間太小\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
+        "resolution": "改前：\"印表機常常壞、網路的費用太貴\"；改後：\"印表機常壞、網路費用太貴\"",
+        "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：prompt；external 為 q14 正解",
+        "resolution": "改前：\"external\"；改後：\"concrete\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：prompt；external 為 q14 正解",
+        "resolution": "改前：\"外部的\"；改後：\"具體的\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/12/options/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：prompt；external 為 q14 正解",
+        "resolution": "改前：\"prompt\"；改後：\"detailed\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：prompt；external 為 q14 正解",
+        "resolution": "改前：\"迅速的\"；改後：\"詳細的\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：relevant 為 q13 正解",
+        "resolution": "改前：\"relevant\"；改後：\"vital\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：relevant 為 q13 正解",
+        "resolution": "改前：\"相關的\"；改後：\"極重要的\"",
+        "resolvedAt": "2026-10-02T20:04:44Z"
+      }
+    ]
+  }
+}

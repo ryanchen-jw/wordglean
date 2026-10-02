@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u20-l04",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:33:44Z",
+  "properNouns": [
+    "Venice",
+    "Australia"
+  ],
+  "items": [
+    {
+      "id": "b2-u20-l04-q01",
+      "type": "wordCard",
+      "word": "proximity",
+      "exampleEn": "In the crowded elevator, I felt uneasy with so many strangers in close proximity.",
+      "exampleZh": "在擁擠的電梯裡，那麼多陌生人緊挨著我，讓我很不自在。",
+      "glossZh": "鄰近；接近",
+      "distractorsZh": [
+        "價格",
+        "大小",
+        "歷史"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q02",
+      "type": "wordCard",
+      "word": "offshore",
+      "exampleEn": "Huge offshore wind farms now produce power for thousands of homes.",
+      "exampleZh": "巨大的離岸風場現在為數千戶人家供電。",
+      "glossZh": "離岸的；海上的",
+      "distractorsZh": [
+        "內陸的",
+        "地下的",
+        "山上的"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q03",
+      "type": "wordCard",
+      "word": "dorm",
+      "exampleEn": "Every dorm room has two beds, two desks and a small fridge.",
+      "exampleZh": "每間宿舍房間都有兩張床、兩張書桌和一台小冰箱。",
+      "glossZh": "（口語）宿舍",
+      "distractorsZh": [
+        "教室",
+        "餐廳",
+        "體育館"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q04",
+      "type": "wordCard",
+      "word": "outskirts",
+      "exampleEn": "Life on the city's outskirts is quieter, but the bus ride downtown is long.",
+      "exampleZh": "住在城市外圍比較安靜，但搭公車到市中心要很久。",
+      "glossZh": "郊區；外圍",
+      "distractorsZh": [
+        "市中心",
+        "海邊",
+        "山頂"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q05",
+      "type": "wordCard",
+      "word": "ghetto",
+      "exampleEn": "In history books, a ghetto is the part of a city where one group of people lived apart from others.",
+      "exampleZh": "在歷史書裡，ghetto 指城市中某一群人與其他人分開居住的區域。",
+      "glossZh": "（少數族群的）聚居區；隔離區",
+      "distractorsZh": [
+        "市集",
+        "港口",
+        "花園"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q06",
+      "type": "wordCard",
+      "word": "pentagon",
+      "exampleEn": "The children cut paper into triangles, squares and a pentagon.",
+      "exampleZh": "孩子們把紙剪成三角形、正方形和一個五角形。",
+      "glossZh": "五角形；五邊形",
+      "distractorsZh": [
+        "圓形",
+        "六角形",
+        "長方形"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q07",
+      "type": "wordCard",
+      "word": "gateway",
+      "exampleEn": "Learning a second language can be a gateway to jobs around the world.",
+      "exampleZh": "學第二語言可能是通往世界各地工作的門路。",
+      "glossZh": "門戶；門口；通道",
+      "distractorsZh": [
+        "障礙",
+        "終點",
+        "牆壁"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q08",
+      "type": "wordCard",
+      "word": "aboriginal",
+      "exampleEn": "The museum has a large collection of Aboriginal art from Australia.",
+      "exampleZh": "那間博物館收藏了大量來自澳洲的原住民藝術品。",
+      "glossZh": "原住民的",
+      "distractorsZh": [
+        "現代的",
+        "外國的",
+        "都市的"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "First-year students must live in the dorm on campus.",
+      "sentenceZh": "一年級學生必須住在校內的宿舍。"
+    },
+    {
+      "id": "b2-u20-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "The airport is the gateway to the island, so most visitors arrive there by plane.",
+      "audioZh": "機場是通往這座島的門戶，所以大部分遊客都搭飛機抵達。",
+      "questionZh": "大部分遊客怎麼到這座島？",
+      "options": [
+        "By plane",
+        "By boat",
+        "By fast train",
+        "By car"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u20-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "We rented a small house on the outskirts of the town.",
+      "sentenceZh": "我們在鎮外圍租了一間小房子。"
+    },
+    {
+      "id": "b2-u20-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "Aboriginal people have lived in this land for thousands of years.",
+      "sentenceZh": "原住民已經在這片土地上生活了好幾千年。"
+    },
+    {
+      "id": "b2-u20-l04-q13",
+      "type": "mcq",
+      "stemEn": "The house is expensive because of its ____ to good schools.",
+      "stemZh": "這間房子很貴，因為它離好學校很近。",
+      "options": [
+        "suburb",
+        "proximity",
+        "gateway",
+        "dorm"
+      ],
+      "optionGlossZh": [
+        "郊區",
+        "鄰近",
+        "門戶",
+        "宿舍"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b2-u20-l04-q14",
+      "type": "mcq",
+      "stemEn": "A ____ has five sides and five corners.",
+      "stemZh": "五邊形有五個邊和五個角。",
+      "options": [
+        "cube",
+        "square",
+        "circle",
+        "pentagon"
+      ],
+      "optionGlossZh": [
+        "立方體",
+        "正方形",
+        "圓形",
+        "五邊形"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b2-u20-l04-q15",
+      "type": "reading",
+      "passageEn": "This summer, I joined a history tour of an old port city. Our first stop was the old ghetto, a historic area where a small community once lived. Today, it is a quiet area full of cafés and bookshops. Next, we walked to the stone gateway that once protected the city. Our guide pointed out the city's proximity to the sea and explained why trade made it rich. In the afternoon, we took a boat to visit a small offshore island. That night, I stayed in a student dorm on the outskirts of town, which was cheap and surprisingly cozy.",
+      "passageZh": "今年夏天，我參加了一個古老港口城市的歷史導覽。第一站是舊的聚居區，那是一個歷史街區，以前有一個小社群住在那裡。如今，那裡是一個寧靜的地區，到處都是咖啡館和書店。接著，我們走到以前保護城市的石造城門。導覽員指出這座城市鄰近海洋，並解釋貿易為什麼讓它富裕起來。下午，我們搭船去參觀一座離岸的小島。那天晚上，我住在鎮外圍的學生宿舍，價格便宜，而且出乎意料地溫馨。",
+      "questions": [
+        {
+          "questionZh": "那個舊聚居區如今是什麼樣子？",
+          "options": [
+            "到處是空無一人的廢墟",
+            "有很多工廠",
+            "寧靜，有咖啡館",
+            "熱鬧的大型傳統市場"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "作者那天晚上住在哪裡？",
+          "options": [
+            "港口邊的飯店",
+            "島上的小旅館",
+            "導覽員的家裡",
+            "學生宿舍"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q16",
+      "type": "translate",
+      "promptZh": "很多大公司把工廠蓋在城市外圍。",
+      "hintWords": [
+        "outskirts"
+      ],
+      "referenceEn": [
+        "Many big companies build their factories on the outskirts of the city.",
+        "Many large companies put their factories on the outskirts of cities."
+      ],
+      "rubricZh": [
+        "「在城市外圍」可寫，例如 on the outskirts of the city 等",
+        "時態合理即可（例如 build、built）"
+      ]
+    },
+    {
+      "id": "b2-u20-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "dorm",
+      "instructionZh": "用 dorm 造一個句子，說說你住宿舍的經驗或對宿舍生活的想法。",
+      "referenceEn": [
+        "I lived in a dorm in my first year at university, and I made many friends.",
+        "I think living in a dorm teaches you to share and be patient."
+      ],
+      "rubricZh": [
+        "句子要用到 dorm",
+        "時態合理即可"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-03T06:40:00Z",
+    "verdicts": {
+      "b2-u20-l04-q10": [
+        0
+      ],
+      "b2-u20-l04-q13": [
+        1
+      ],
+      "b2-u20-l04-q14": [
+        3
+      ],
+      "b2-u20-l04-q15#0": [
+        2
+      ],
+      "b2-u20-l04-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示修正：執行長裁示：ghetto 單字卡只放中性歷史定義",
+        "resolution": "改前：\"Historians study letters written inside the ghetto to learn about daily life there.\"；改後：\"In history books, a ghetto is the part of a city where one group of people lived apart from others.\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示修正：執行長裁示：ghetto 中性歷史定義",
+        "resolution": "改前：\"歷史學家研究在隔離區裡寫下的信件，藉此認識那裡的日常生活。\"；改後：\"在歷史書裡，ghetto 指城市中某一群人與其他人分開居住的區域。\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示修正：執行長裁示：aboriginal 釋義不用「土著的」",
+        "resolution": "改前：\"原住民的；土著的\"；改後：\"原住民的\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長裁示修正：第②關：指澳洲原住民時大寫",
+        "resolution": "改前：\"The museum has a large collection of aboriginal art from Australia.\"；改後：\"The museum has a large collection of Aboriginal art from Australia.\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（gateway、proximity）",
+        "resolution": "改前：\"ghetto\"；改後：\"triangle\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（gateway、proximity）",
+        "resolution": "改前：\"聚居區\"；改後：\"三角形\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（gateway、proximity）",
+        "resolution": "改前：\"gateway\"；改後：\"square\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（gateway、proximity）",
+        "resolution": "改前：\"門戶\"；改後：\"正方形\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（gateway、proximity）",
+        "resolution": "改前：\"proximity\"；改後：\"circle\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（gateway、proximity）",
+        "resolution": "改前：\"鄰近\"；改後：\"圓形\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長裁示修正：執行長裁示：閱讀不寫隔離情節",
+        "resolution": "改前：\"This summer, I joined a history tour of an old port city. Our first stop was the old ghetto, where a small group of people was once forced to live behind walls. Today, it is a quiet area full of cafés and bookshops. Next, we walked to the stone gateway that once protected the city. Our guide pointed out the city's proximity to the sea and explained why trade made it rich. In the afternoon, we took a boat to visit a small offshore island. That night, I stayed in a student dorm on the outskirts of town, which was cheap and surprisingly cozy.\"；改後：\"This summer, I joined a history tour of an old port city. Our first stop was the old ghetto, a historic area where a small community once lived. Today, it is a quiet area full of cafés and bookshops. Next, we walked to the stone gateway that once protected the city. Our guide pointed out the city's proximity to the sea and explained why trade made it rich. In the afternoon, we took a boat to visit a small offshore island. That night, I stayed in a student dorm on the outskirts of town, which was cheap and surprisingly cozy.\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長裁示修正：執行長裁示：同步",
+        "resolution": "改前：\"今年夏天，我參加了一個古老港口城市的歷史導覽。第一站是舊的隔離區，以前一小群人被迫住在城牆後面。如今，那裡是一個寧靜的地區，到處都是咖啡館和書店。接著，我們走到以前保護城市的石造城門。導覽員指出這座城市鄰近海洋，並解釋貿易為什麼讓它富裕起來。下午，我們搭船去參觀一座離岸的小島。那天晚上，我住在鎮外圍的學生宿舍，價格便宜，而且出乎意料地溫馨。\"；改後：\"今年夏天，我參加了一個古老港口城市的歷史導覽。第一站是舊的聚居區，那是一個歷史街區，以前有一個小社群住在那裡。如今，那裡是一個寧靜的地區，到處都是咖啡館和書店。接著，我們走到以前保護城市的石造城門。導覽員指出這座城市鄰近海洋，並解釋貿易為什麼讓它富裕起來。下午，我們搭船去參觀一座離岸的小島。那天晚上，我住在鎮外圍的學生宿舍，價格便宜，而且出乎意料地溫馨。\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/14/questions/0/questionZh",
+        "message": "執行長裁示修正：執行長裁示：同步",
+        "resolution": "改前：\"那個舊隔離區如今是什麼樣子？\"；改後：\"那個舊聚居區如今是什麼樣子？\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長裁示修正：第③關 FIX：評分要點封閉清單",
+        "resolution": "改前：\"outskirts 常用 on the outskirts of…\"；改後：\"「在城市外圍」可寫，例如 on the outskirts of the city 等\"",
+        "resolvedAt": "2026-10-02T19:49:22Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長 06:40 新規則）：pentagon 為 q14 正解",
+        "resolution": "改前：\"pentagon\"；改後：\"suburb\"",
+        "resolvedAt": "2026-10-02T19:52:18Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長 06:40 新規則）：pentagon 為 q14 正解",
+        "resolution": "改前：\"五角形\"；改後：\"郊區\"",
+        "resolvedAt": "2026-10-02T19:52:18Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長裁示修正：用字範圍（只用本課、先前課或低一級字）：triangle 為 B2 後面課字",
+        "resolution": "改前：\"triangle\"；改後：\"cube\"",
+        "resolvedAt": "2026-10-02T19:52:18Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長裁示修正：用字範圍（只用本課、先前課或低一級字）：triangle 為 B2 後面課字",
+        "resolution": "改前：\"三角形\"；改後：\"立方體\"",
+        "resolvedAt": "2026-10-02T19:52:18Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "第②關 issue 結案：aboriginal 釋義「土著的」在台灣語境帶貶義，對原住民不友善；建議只留「原住民的」",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/7 的 2 筆修正紀錄。",
+        "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "第②關 issue 結案：指澳洲原住民時慣例大寫 Aboriginal（aboriginal art from Australia → Aboriginal art），同課跟讀已用大寫，前後不一",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/7 的 2 筆修正紀錄。",
+        "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "第②關 issue 結案：疑似沉重題材：ghetto 段「a small group of people was once forced to live behind walls」影射歷史上的強制隔離（猶太隔離區）；已淡化但仍屬沉重歷史，請執行長確認；單字卡例句「letters written inside the ghetto」同樣聯想迫害史",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的 3 筆修正紀錄。",
+        "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示修正：單字卡第一義須為例句所教詞義（App 作答選項只顯示第一義）：調整釋義順序",
+        "resolution": "改前：\"門口；通道；門戶\"；改後：\"門戶；門口；通道\"",
+        "resolvedAt": "2026-10-02T19:58:48Z"
+      }
+    ]
+  }
+}
