@@ -87,6 +87,19 @@ export async function recordReview(
   })
 }
 
+/** 記完成一課；completedAt 保留第一次完成的時間（與同步合併規則 min／max 一致） */
+export async function completeLesson(db: LinguaDb, lessonId: string, nowMs: number): Promise<void> {
+  await db.transaction('rw', db.courseProgress, db.outbox, async () => {
+    const existing = await db.courseProgress.get(lessonId)
+    await db.courseProgress.put({
+      lessonId,
+      completedAt: existing?.completedAt ?? nowMs,
+      updatedAt: nowMs,
+    })
+    await enqueue(db, 'courseProgress', lessonId)
+  })
+}
+
 /** 待複習數：已開始學（非新字）且已到期 */
 export function countDue(db: LinguaDb, nowMs: number): Promise<number> {
   return db.wordPool

@@ -1,6 +1,7 @@
 // 本機 IndexedDB（Dexie）；時間欄一律 UTC epoch ms
 // 已出版的版本只能往後追加，不可就地修改（db.test.ts 以凍結 fixture 守住 v1）
 import Dexie, { type EntityTable, type Transaction } from 'dexie'
+import type { LessonRun } from '../lesson/run'
 import type { FsrsFields, ReviewEntry } from '../srs/scheduler'
 
 export interface Settings {
@@ -61,6 +62,7 @@ export type LinguaDb = Dexie & {
   speechCorrections: EntityTable<SpeechCorrection, 'id'>
   outbox: EntityTable<OutboxEntry, 'seq'>
   syncMeta: EntityTable<SyncMeta, 'key'>
+  lessonRuns: EntityTable<LessonRun, 'lessonId'>
 }
 
 export interface SchemaVersion {
@@ -82,6 +84,8 @@ export const SCHEMA_VERSIONS: readonly SchemaVersion[] = Object.freeze<SchemaVer
   },
   // TASK-20：登入同步的離線佇列與同步狀態
   { version: 2, stores: { outbox: '++seq', syncMeta: 'key' } },
+  // TASK-12：小課進度（中途離開可續）；只存本機、不同步、不匯出
+  { version: 3, stores: { lessonRuns: 'lessonId' } },
 ])
 
 export const DB_NAME = 'linguaapp'

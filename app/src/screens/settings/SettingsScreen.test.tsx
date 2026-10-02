@@ -81,7 +81,7 @@ describe('設定（s11）', () => {
     await waitFor(() => expect(click).toHaveBeenCalledOnce())
     const blob = (createUrl.mock.calls[0] as unknown as [Blob])[0]
     expect(blob.type).toBe('application/json')
-    expect(JSON.parse(await blob.text())).toMatchObject({ app: 'linguaapp', schemaVersion: 2 })
+    expect(JSON.parse(await blob.text())).toMatchObject({ app: 'linguaapp', schemaVersion: 3 })
   })
 })
 

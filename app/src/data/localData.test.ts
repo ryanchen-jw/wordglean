@@ -26,7 +26,7 @@ describe('exportData', () => {
     await db.courseProgress.put({ lessonId: 'a1-u01-l01', completedAt: T, updatedAt: T })
 
     const file = await exportData(db, T + 1)
-    expect(file).toMatchObject({ app: 'linguaapp', schemaVersion: 2, exportedAt: T + 1 })
+    expect(file).toMatchObject({ app: 'linguaapp', schemaVersion: 3, exportedAt: T + 1 })
     expect(Object.keys(file.tables).sort()).toEqual([
       'courseProgress',
       'reviewLogs',

@@ -23,6 +23,18 @@
       opacity: 0;
     }
   }
+  /* 答題回饋（components.md 微互動）：回饋區向上位移 16px＋淡入、✓／✗ 圖示 0.8→1 */
+  @keyframes lg-rise-in {
+    from {
+      transform: translateY(16px);
+      opacity: 0;
+    }
+  }
+  @keyframes lg-pop-in {
+    from {
+      transform: scale(0.8);
+    }
+  }
 
   /* 搜尋框不用瀏覽器原生的清除 ×（chromium／webkit），維持設計樣式 */
   input[type='search']::-webkit-search-cancel-button,

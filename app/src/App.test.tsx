@@ -41,7 +41,7 @@ describe('App 路由與底部導覽', () => {
   })
 
   it('尚未開放的目的地顯示暫時頁', () => {
-    go('/lesson/b1-u01-l03')
+    go('/review')
     render(<App />)
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('尚未開放')
   })

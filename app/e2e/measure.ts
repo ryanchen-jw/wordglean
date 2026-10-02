@@ -14,6 +14,11 @@ export const ALLOWED_LATIN = [
   'WebGPU',
   'AI',
   'Safari',
+  // 選項字母標（components.md §3、設計 s05／s07）
+  'A',
+  'B',
+  'C',
+  'D',
 ]
 
 export interface MobileMetrics {

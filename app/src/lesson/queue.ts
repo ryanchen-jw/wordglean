@@ -1,0 +1,144 @@
+// 題型登記表與題目佇列：題目檔 → 作答步驟；未登記的題型（聽說寫，TASK-13～15）或欄位不全的題目略過並回報
+import type {
+  ItemType,
+  LessonItem,
+  LessonItemsDoc,
+  McqItem,
+  ReadingItem,
+  WordCardItem,
+} from './items'
+
+export interface Choice {
+  options: string[]
+  answer: number
+}
+
+/** 一個作答步驟；進度條與完成頁的題數都以步驟計（閱讀每小題一步） */
+export interface Step {
+  key: string
+  itemId: string
+  type: ItemType
+  /** 作答後寫入 FSRS 的字（新字同時入池）；null＝只計分（D2：只有單字卡寫入） */
+  srsWord: string | null
+  choice?: Choice
+  /** 閱讀小題索引 */
+  questionIndex?: number
+}
+
+export interface ItemTypeDef<I extends LessonItem = LessonItem> {
+  type: I['type']
+  isValid(item: I): boolean
+  toSteps(item: I): Step[]
+}
+
+export interface Skipped {
+  itemId: string
+  type: string
+  reason: 'unsupported' | 'invalid'
+}
+
+export type Registry = ReadonlyMap<string, ItemTypeDef>
+
+export function defineItemType<I extends LessonItem>(def: ItemTypeDef<I>): ItemTypeDef {
+  return def as unknown as ItemTypeDef
+}
+
+export function createRegistry(defs: readonly ItemTypeDef[]): Registry {
+  return new Map(defs.map((d) => [d.type, d]))
+}
+
+// FNV-1a 32 位元；只用來讓同一題的選項順序固定（續作時不變），不求亂度品質
+function hash(s: string): number {
+  let h = 0x811c9dc5
+  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 0x01000193)
+  return h >>> 0
+}
+
+const nonEmpty = (s: unknown) => typeof s === 'string' && s.trim() !== ''
+const distinct = (xs: string[]) => new Set(xs).size === xs.length
+const validAnswer = (options: string[], answer: number) =>
+  Number.isInteger(answer) && answer >= 0 && answer < options.length
+
+/** 單字卡選項：正確釋義插在干擾項之間，位置由題號決定 */
+export function wordCardChoice(item: WordCardItem): Choice {
+  const answer = hash(item.id) % (item.distractorsZh.length + 1)
+  const options = [...item.distractorsZh]
+  options.splice(answer, 0, item.glossZh)
+  return { options, answer }
+}
+
+export const wordCardType = defineItemType<WordCardItem>({
+  type: 'wordCard',
+  isValid: (it) =>
+    nonEmpty(it.word) &&
+    nonEmpty(it.glossZh) &&
+    Array.isArray(it.distractorsZh) &&
+    it.distractorsZh.length === 3 &&
+    it.distractorsZh.every(nonEmpty) &&
+    distinct([it.glossZh, ...it.distractorsZh]),
+  toSteps: (it) => [
+    {
+      key: it.id,
+      itemId: it.id,
+      type: 'wordCard',
+      srsWord: it.word.trim().toLowerCase(),
+      choice: wordCardChoice(it),
+    },
+  ],
+})
+
+export const mcqType = defineItemType<McqItem>({
+  type: 'mcq',
+  isValid: (it) =>
+    Array.isArray(it.options) &&
+    it.options.length >= 2 &&
+    validAnswer(it.options, it.answer) &&
+    (it.optionGlossZh === undefined || it.optionGlossZh.length === it.options.length),
+  toSteps: (it) => [
+    {
+      key: it.id,
+      itemId: it.id,
+      type: 'mcq',
+      srsWord: null,
+      choice: { options: it.options, answer: it.answer },
+    },
+  ],
+})
+
+export const readingType = defineItemType<ReadingItem>({
+  type: 'reading',
+  isValid: (it) =>
+    nonEmpty(it.passageEn) &&
+    Array.isArray(it.questions) &&
+    it.questions.length > 0 &&
+    it.questions.every((q) => Array.isArray(q.options) && validAnswer(q.options, q.answer)),
+  toSteps: (it) =>
+    it.questions.map((q, i) => ({
+      key: `${it.id}#${i}`,
+      itemId: it.id,
+      type: 'reading' as const,
+      srsWord: null,
+      choice: { options: q.options, answer: q.answer },
+      questionIndex: i,
+    })),
+})
+
+/** 讀類三題型（TASK-12）；聽說寫由 TASK-13～15 登記 */
+export const READ_TYPES: readonly ItemTypeDef[] = [wordCardType, mcqType, readingType]
+
+/** 依題目檔順序產生作答步驟；穿插排序屬 TASK-18 */
+export function buildQueue(
+  doc: LessonItemsDoc,
+  registry: Registry,
+): { steps: Step[]; skipped: Skipped[] } {
+  const steps: Step[] = []
+  const skipped: Skipped[] = []
+  for (const item of doc.items) {
+    const def = registry.get(item.type)
+    if (!def) skipped.push({ itemId: item.id, type: item.type, reason: 'unsupported' })
+    else if (!def.isValid(item))
+      skipped.push({ itemId: item.id, type: item.type, reason: 'invalid' })
+    else steps.push(...def.toSteps(item))
+  }
+  return { steps, skipped }
+}

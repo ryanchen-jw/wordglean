@@ -112,10 +112,16 @@ describe('schema 版本', () => {
     })
   })
 
+  it('v3 只追加小課進度表（TASK-12）', () => {
+    expect(SCHEMA_VERSIONS[2]).toEqual({ version: 3, stores: { lessonRuns: 'lessonId' } })
+  })
+
   it('全新開啟後各表可用', async () => {
     const db = createDb(freshName())
     await db.open()
-    expect(db.tables.map((t) => t.name).sort()).toEqual([...TABLES, 'outbox', 'syncMeta'].sort())
+    expect(db.tables.map((t) => t.name).sort()).toEqual(
+      [...TABLES, 'outbox', 'syncMeta', 'lessonRuns'].sort(),
+    )
     db.close()
   })
 })

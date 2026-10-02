@@ -6,6 +6,7 @@ import { createDb, type LinguaDb } from './db'
 import {
   addFavorite,
   addFromCourse,
+  completeLesson,
   countDue,
   getSettings,
   getTodayQuota,
@@ -195,5 +196,29 @@ describe('寫入同時進同步佇列（TASK-20 離線佇列）', () => {
   it('寫入失敗時佇列也不留紀錄（同一交易）', async () => {
     await expect(recordReview(db, 'ghost', Grade.Good, T)).rejects.toThrow()
     expect(await queued()).toEqual([])
+  })
+})
+
+describe('完成小課（TASK-12）', () => {
+  it('第一次完成記下時間並排入同步佇列', async () => {
+    await completeLesson(db, 'a1-u01-l01', T)
+    expect(await db.courseProgress.get('a1-u01-l01')).toEqual({
+      lessonId: 'a1-u01-l01',
+      completedAt: T,
+      updatedAt: T,
+    })
+    expect(await db.outbox.toArray()).toMatchObject([
+      { table: 'courseProgress', key: 'a1-u01-l01' },
+    ])
+  })
+
+  it('再完成一次：完成時間保留第一次，更新時間往後', async () => {
+    await completeLesson(db, 'a1-u01-l01', T)
+    await completeLesson(db, 'a1-u01-l01', T + 5 * MIN)
+    expect(await db.courseProgress.get('a1-u01-l01')).toEqual({
+      lessonId: 'a1-u01-l01',
+      completedAt: T,
+      updatedAt: T + 5 * MIN,
+    })
   })
 })

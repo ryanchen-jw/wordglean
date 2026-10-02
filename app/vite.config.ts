@@ -40,8 +40,12 @@ export default defineConfig({
       },
     }),
   ],
-  // 課綱檔在 app 之外（../content/curriculum），dev server 需明列允許
-  server: { port: 5287, strictPort: true, fs: { allow: ['.', '../content/curriculum'] } },
+  // 課綱與題目檔在 app 之外（../content/curriculum、../content/items），dev server 需明列允許
+  server: {
+    port: 5287,
+    strictPort: true,
+    fs: { allow: ['.', '../content/curriculum', '../content/items'] },
+  },
   preview: { port: 5288, strictPort: true },
   test: {
     environment: 'jsdom',
