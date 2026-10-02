@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u04-l02",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:30Z",
+  "properNouns": [
+    "Tainan",
+    "Japanese",
+    "Korean",
+    "Lin",
+    "Wang"
+  ],
+  "items": [
+    {
+      "id": "a1-u04-l02-q01",
+      "type": "wordCard",
+      "word": "parent",
+      "exampleEn": "My parents live in Tainan.",
+      "exampleZh": "我爸媽住在台南。",
+      "glossZh": "父親或母親；家長",
+      "distractorsZh": [
+        "兄弟",
+        "子女",
+        "鄰居"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q02",
+      "type": "wordCard",
+      "word": "party",
+      "exampleEn": "We are having a birthday party tonight.",
+      "exampleZh": "我們今晚要開生日派對。",
+      "glossZh": "派對；聚會",
+      "distractorsZh": [
+        "會議",
+        "課程",
+        "旅行"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q03",
+      "type": "wordCard",
+      "word": "love",
+      "exampleEn": "I love my family.",
+      "exampleZh": "我愛我的家人。",
+      "glossZh": "愛；喜愛",
+      "distractorsZh": [
+        "討厭",
+        "認識",
+        "幫助"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q04",
+      "type": "wordCard",
+      "word": "wife",
+      "exampleEn": "His wife is a doctor.",
+      "exampleZh": "他太太是醫生。",
+      "glossZh": "妻子",
+      "distractorsZh": [
+        "丈夫",
+        "女兒",
+        "姊妹"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q05",
+      "type": "wordCard",
+      "word": "son",
+      "exampleEn": "Their son is five years old.",
+      "exampleZh": "他們的兒子五歲。",
+      "glossZh": "兒子",
+      "distractorsZh": [
+        "女兒",
+        "孫子",
+        "姪子"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q06",
+      "type": "wordCard",
+      "word": "baby",
+      "exampleEn": "The baby is sleeping.",
+      "exampleZh": "寶寶正在睡覺。",
+      "glossZh": "嬰兒；寶寶",
+      "distractorsZh": [
+        "小狗",
+        "老人",
+        "學生"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q07",
+      "type": "wordCard",
+      "word": "culture",
+      "exampleEn": "I want to learn about Japanese culture.",
+      "exampleZh": "我想了解日本文化。",
+      "glossZh": "文化",
+      "distractorsZh": [
+        "歷史",
+        "語言",
+        "天氣"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q08",
+      "type": "wordCard",
+      "word": "brother",
+      "exampleEn": "My brother is two years older than me.",
+      "exampleZh": "我哥哥比我大兩歲。",
+      "glossZh": "兄弟（哥哥或弟弟）",
+      "distractorsZh": [
+        "姊妹",
+        "叔叔",
+        "兒子"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "My wife and I love our baby.",
+      "sentenceZh": "我太太和我很愛我們的寶寶。"
+    },
+    {
+      "id": "a1-u04-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Tonight is my son's birthday party. He is six.",
+      "audioZh": "今晚是我兒子的生日派對，他六歲。",
+      "questionZh": "今晚是誰的生日派對？",
+      "options": [
+        "My brother's",
+        "My wife's",
+        "My son's"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u04-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "Her parents love Korean culture.",
+      "sentenceZh": "她爸媽很喜歡韓國文化。"
+    },
+    {
+      "id": "a1-u04-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "The baby has two brothers.",
+      "sentenceZh": "這個寶寶有兩個哥哥。"
+    },
+    {
+      "id": "a1-u04-l02-q13",
+      "type": "mcq",
+      "stemEn": "This is Mr. Lin and his ____, Mrs. Lin.",
+      "stemZh": "這位是林先生和他的太太林太太。",
+      "options": [
+        "wife",
+        "son",
+        "brother",
+        "baby"
+      ],
+      "optionGlossZh": [
+        "妻子",
+        "兒子",
+        "兄弟",
+        "嬰兒"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u04-l02-q14",
+      "type": "mcq",
+      "stemEn": "We are having a ____ for her birthday.",
+      "stemZh": "我們要為她辦生日派對。",
+      "options": [
+        "culture",
+        "party",
+        "love",
+        "parent"
+      ],
+      "optionGlossZh": [
+        "文化",
+        "派對",
+        "愛",
+        "父親或母親"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u04-l02-q15",
+      "type": "reading",
+      "passageEn": "Mr. and Mrs. Wang have a new baby. He is their first son. Today, the family has a party at home. Mrs. Wang's brother brings a cake, and her parents bring some baby clothes. Everyone loves the baby.",
+      "passageZh": "王先生和王太太剛生了寶寶，是他們的第一個兒子。今天他們在家裡辦派對。王太太的兄弟帶了一個蛋糕，她的爸媽帶了一些嬰兒衣服。大家都很喜歡這個寶寶。",
+      "questions": [
+        {
+          "questionZh": "王家的寶寶是男生還是女生？",
+          "options": [
+            "男生",
+            "女生",
+            "文中沒有說"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "王太太的兄弟帶了什麼？",
+          "options": [
+            "一個蛋糕",
+            "嬰兒衣服",
+            "一束花"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q16",
+      "type": "translate",
+      "promptZh": "我愛我的爸媽。",
+      "hintWords": [
+        "love",
+        "parent"
+      ],
+      "referenceEn": [
+        "I love my parents."
+      ],
+      "rubricZh": [
+        "love 後面直接接人（例如 love my parents）",
+        "「爸媽」可寫 parents，或 my mom and dad、my father and mother 等"
+      ]
+    },
+    {
+      "id": "a1-u04-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "brother",
+      "instructionZh": "用 brother 造一個句子，說說你的兄弟（或朋友的兄弟）。",
+      "referenceEn": [
+        "I have one brother. He is ten.",
+        "My brother is a cop."
+      ],
+      "rubricZh": [
+        "brother 可指哥哥或弟弟（也可寫 older／younger brother、big／little brother）",
+        "動詞配合主詞（例如 My brother is、I have）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u04-l02-q10": [
+        2
+      ],
+      "a1-u04-l02-q13": [
+        0
+      ],
+      "a1-u04-l02-q14": [
+        1
+      ],
+      "a1-u04-l02-q15#0": [
+        0
+      ],
+      "a1-u04-l02-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「wife」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:12Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「男生」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:12Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「一個蛋糕」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:12Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「爸媽」是兩個人，用複數 parents\"；改後：\"「爸媽」可寫 parents，或 my mom and dad、my father and mother 等\"",
+        "resolvedAt": "2026-10-02T11:28:12Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"brother 可指哥哥或弟弟\"；改後：\"brother 可指哥哥或弟弟（也可寫 older／younger brother、big／little brother）\"",
+        "resolvedAt": "2026-10-02T11:28:12Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「My son's」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:30Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「wife」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:30Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「party」由位置 3 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:30Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「男生」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:30Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「一個蛋糕」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:30Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
+        "resolution": "改前：[\"Tainan\",\"Japanese\",\"Korean\",\"Lin\",\"Wang\",\"Mr\",\"Mrs\"]；改後：[\"Tainan\",\"Japanese\",\"Korean\",\"Lin\",\"Wang\"]",
+        "resolvedAt": "2026-10-02T13:00:29Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u02-l05",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:08Z",
+  "properNouns": [
+    "Amy",
+    "Ken",
+    "Japan",
+    "Taipei",
+    "Osaka",
+    "Tainan",
+    "Hualien",
+    "Anna",
+    "France",
+    "Germany",
+    "Chinese"
+  ],
+  "items": [
+    {
+      "id": "a1-u02-l05-q01",
+      "type": "wordCard",
+      "word": "hello",
+      "exampleEn": "Hello, is this Amy?",
+      "exampleZh": "喂，請問是 Amy 嗎？",
+      "glossZh": "你好；（電話）喂",
+      "distractorsZh": [
+        "再見",
+        "謝謝",
+        "對不起"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q02",
+      "type": "wordCard",
+      "word": "greet",
+      "exampleEn": "The teacher greets the students at the door.",
+      "exampleZh": "老師在門口迎接學生。",
+      "glossZh": "迎接；打招呼",
+      "distractorsZh": [
+        "介紹",
+        "感謝",
+        "告訴"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q03",
+      "type": "wordCard",
+      "word": "excuse",
+      "exampleEn": "Excuse me, where is the bathroom?",
+      "exampleZh": "不好意思，請問廁所在哪裡？",
+      "glossZh": "原諒（excuse me：不好意思）",
+      "distractorsZh": [
+        "歡迎",
+        "謝謝",
+        "再見"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q04",
+      "type": "wordCard",
+      "word": "spy",
+      "exampleEn": "The man in the movie is a spy.",
+      "exampleZh": "電影裡的那個男人是間諜。",
+      "glossZh": "間諜",
+      "distractorsZh": [
+        "警察",
+        "記者",
+        "演員"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q05",
+      "type": "wordCard",
+      "word": "foreigner",
+      "exampleEn": "Many foreigners visit Taipei every year.",
+      "exampleZh": "每年有很多外國人來台北。",
+      "glossZh": "外國人",
+      "distractorsZh": [
+        "本地人",
+        "客人",
+        "學生"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q06",
+      "type": "wordCard",
+      "word": "hometown",
+      "exampleEn": "My hometown is a small town near the sea.",
+      "exampleZh": "我的家鄉是靠海的小鎮。",
+      "glossZh": "家鄉",
+      "distractorsZh": [
+        "首都",
+        "學校",
+        "公司"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q07",
+      "type": "wordCard",
+      "word": "nationality",
+      "exampleEn": "What is your nationality?",
+      "exampleZh": "你是哪國人？",
+      "glossZh": "國籍",
+      "distractorsZh": [
+        "名字",
+        "地址",
+        "年齡"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q08",
+      "type": "wordCard",
+      "word": "pardon",
+      "exampleEn": "Pardon? Can you say that again?",
+      "exampleZh": "抱歉，你說什麼？可以再說一次嗎？",
+      "glossZh": "（沒聽清楚時）請再說一遍",
+      "distractorsZh": [
+        "謝謝",
+        "再見",
+        "歡迎"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "Excuse me, what is your name?",
+      "sentenceZh": "不好意思，請問你叫什麼名字？"
+    },
+    {
+      "id": "a1-u02-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "Ken lives in Taipei now, but his hometown is Osaka.",
+      "audioZh": "Ken 現在住在台北，但他的家鄉是大阪。",
+      "questionZh": "Ken 的家鄉在哪裡？",
+      "options": [
+        "Taipei",
+        "Osaka",
+        "Tainan"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u02-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "Pardon? I can't hear you.",
+      "sentenceZh": "抱歉，你說什麼？我聽不到。"
+    },
+    {
+      "id": "a1-u02-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "In the movie, the spy has no name.",
+      "sentenceZh": "電影裡的那個間諜沒有名字。"
+    },
+    {
+      "id": "a1-u02-l05-q13",
+      "type": "mcq",
+      "stemEn": "My ____ is Hualien, a city by the sea.",
+      "stemZh": "我的家鄉是花蓮，一個海邊的城市。",
+      "options": [
+        "hometown",
+        "nationality",
+        "foreigner",
+        "spy"
+      ],
+      "optionGlossZh": [
+        "家鄉",
+        "國籍",
+        "外國人",
+        "間諜"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u02-l05-q14",
+      "type": "mcq",
+      "stemEn": "____ me, is this seat free?",
+      "stemZh": "不好意思，請問這個位子有人坐嗎？",
+      "options": [
+        "Hello",
+        "Greet",
+        "Excuse",
+        "Spy"
+      ],
+      "optionGlossZh": [
+        "你好",
+        "迎接",
+        "原諒（excuse me）",
+        "間諜"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u02-l05-q15",
+      "type": "reading",
+      "passageEn": "Anna is from France. She is a foreigner in Taipei, but she loves the city. Every morning, she greets the old man at the store near her home. She says \"hello\" to him in Chinese. He is always happy to see her.",
+      "passageZh": "Anna 來自法國。她在台北是外國人，但她很喜歡這個城市。每天早上，她都會跟她家附近那家店的老先生打招呼。她用中文跟他說「你好」。他每次看到她都很開心。",
+      "questions": [
+        {
+          "questionZh": "Anna 來自哪裡？",
+          "options": [
+            "台北",
+            "法國",
+            "德國"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Anna 每天早上跟誰打招呼？",
+          "options": [
+            "店裡的老先生",
+            "她的老師",
+            "她的室友"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q16",
+      "type": "translate",
+      "promptZh": "你的國籍是什麼？",
+      "hintWords": [
+        "nationality"
+      ],
+      "referenceEn": [
+        "What is your nationality?",
+        "What's your nationality?"
+      ],
+      "rubricZh": [
+        "問句可寫 What is your nationality?、What's your nationality? 等",
+        "nationality 前面用 your（「你的」國籍）"
+      ]
+    },
+    {
+      "id": "a1-u02-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "hometown",
+      "instructionZh": "用 hometown 造一個句子，說說你的家鄉。",
+      "referenceEn": [
+        "My hometown is Tainan.",
+        "My hometown is a small town near the sea."
+      ],
+      "rubricZh": [
+        "用 my hometown 表示「我的家鄉」（例如 My hometown is…、I love my hometown）",
+        "可說家鄉在哪裡或是什麼樣的地方（例如 is Tainan、is a small town）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u02-l05-q10": [
+        1
+      ],
+      "a1-u02-l05-q13": [
+        0
+      ],
+      "a1-u02-l05-q14": [
+        2
+      ],
+      "a1-u02-l05-q15#0": [
+        1
+      ],
+      "a1-u02-l05-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：Pardon 是禮貌請求重說，中譯改「抱歉，你說什麼？」",
+        "resolution": "改前：\"什麼？你可以再說一次嗎？\"；改後：\"抱歉，你說什麼？可以再說一次嗎？\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Osaka」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：第②③關：中譯語氣改禮貌；跟讀句與單字卡例句幾乎重複，換情境",
+        "resolution": "改前：\"Pardon? Can you say that again, please?\"；改後：\"Pardon? Can you say your name again?\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：第②③關：中譯語氣改禮貌；跟讀句與單字卡例句幾乎重複，換情境",
+        "resolution": "改前：\"什麼？請你再說一次好嗎？\"；改後：\"抱歉，可以再說一次你的名字嗎？\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（spy）",
+        "resolution": "改前：\"She greets every guest at the door.\"；改後：\"In the movie, the spy has no name.\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（spy）",
+        "resolution": "改前：\"她在門口迎接每一位客人。\"；改後：\"電影裡的那個間諜沒有名字。\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「hometown」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：花蓮不稱 small town，改 a city by the sea",
+        "resolution": "改前：\"My ____ is Hualien, a small town by the sea.\"；改後：\"My ____ is Hualien, a city by the sea.\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：花蓮不稱 small town，改 a city by the sea",
+        "resolution": "改前：\"我的家鄉是花蓮，一個海邊的小鎮。\"；改後：\"我的家鄉是花蓮，一個海邊的城市。\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Excuse」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「店裡的老先生」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"用 What is…? 的問句（可縮寫成 What's）\"；改後：\"問句可寫 What is your nationality?、What's your nationality? 等\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"nationality 表示「國籍」，前面用 your\"；改後：\"nationality 前面用 your（「你的」國籍）\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"用 my hometown 表示「我的家鄉」\"；改後：\"用 my hometown 表示「我的家鄉」（例如 My hometown is…、I love my hometown）\"",
+        "resolvedAt": "2026-10-02T11:28:02Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Osaka」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第二輪複審修正：FIX#7 補情境句不與單字卡例句雷同",
+        "resolution": "改前：\"Pardon? Can you say your name again?\"；改後：\"Pardon? I can't hear you.\"",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第二輪複審修正：FIX#7 補情境句不與單字卡例句雷同",
+        "resolution": "改前：\"抱歉，可以再說一次你的名字嗎？\"；改後：\"抱歉，你說什麼？我聽不到。\"",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「hometown」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Excuse」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「法國」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「店裡的老先生」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:09Z"
+      }
+    ]
+  }
+}

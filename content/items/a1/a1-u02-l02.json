@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u02-l02",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:00Z",
+  "properNouns": [
+    "Emma",
+    "Ben",
+    "Leo",
+    "Amy",
+    "Mia",
+    "Tom"
+  ],
+  "items": [
+    {
+      "id": "a1-u02-l02-q01",
+      "type": "wordCard",
+      "word": "job",
+      "exampleEn": "My job is very interesting.",
+      "exampleZh": "我的工作很有趣。",
+      "glossZh": "工作；職業",
+      "distractorsZh": [
+        "名字",
+        "年齡",
+        "興趣"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q02",
+      "type": "wordCard",
+      "word": "name",
+      "exampleEn": "What is your name?",
+      "exampleZh": "你叫什麼名字？",
+      "glossZh": "名字",
+      "distractorsZh": [
+        "地址",
+        "工作",
+        "年齡"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q03",
+      "type": "wordCard",
+      "word": "kid",
+      "exampleEn": "They have two kids.",
+      "exampleZh": "他們有兩個小孩。",
+      "glossZh": "小孩",
+      "distractorsZh": [
+        "寵物",
+        "朋友",
+        "老師"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q04",
+      "type": "wordCard",
+      "word": "person",
+      "exampleEn": "She is a very nice person.",
+      "exampleZh": "她是一個很好的人。",
+      "glossZh": "人；個人",
+      "distractorsZh": [
+        "地方",
+        "東西",
+        "動物"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q05",
+      "type": "wordCard",
+      "word": "girl",
+      "exampleEn": "The girl in the red dress is my sister.",
+      "exampleZh": "穿紅色洋裝的女孩是我妹妹。",
+      "glossZh": "女孩",
+      "distractorsZh": [
+        "男孩",
+        "女士",
+        "嬰兒"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q06",
+      "type": "wordCard",
+      "word": "guy",
+      "exampleEn": "Ben is a nice guy.",
+      "exampleZh": "Ben 人很好。",
+      "glossZh": "（口語）男生；人",
+      "distractorsZh": [
+        "女孩",
+        "老師",
+        "客人"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q07",
+      "type": "wordCard",
+      "word": "boy",
+      "exampleEn": "That boy is ten years old.",
+      "exampleZh": "那個男孩十歲。",
+      "glossZh": "男孩",
+      "distractorsZh": [
+        "女孩",
+        "男士",
+        "老人"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q08",
+      "type": "wordCard",
+      "word": "age",
+      "exampleEn": "My son is the same age as your son.",
+      "exampleZh": "我兒子和你兒子同年紀。",
+      "glossZh": "年齡",
+      "distractorsZh": [
+        "名字",
+        "身高",
+        "生日"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "Who is that person at the door?",
+      "sentenceZh": "門口那個人是誰？"
+    },
+    {
+      "id": "a1-u02-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Leo is a nice guy. He has a job at a bank.",
+      "audioZh": "Leo 人很好，他在銀行上班。",
+      "questionZh": "Leo 在哪裡工作？",
+      "options": [
+        "At a bank",
+        "At a school",
+        "At a hospital"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u02-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "That guy is the same age as me.",
+      "sentenceZh": "那個男生和我同年紀。"
+    },
+    {
+      "id": "a1-u02-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "The boy and the girl are good friends.",
+      "sentenceZh": "那個男孩和那個女孩是好朋友。"
+    },
+    {
+      "id": "a1-u02-l02-q13",
+      "type": "mcq",
+      "stemEn": "Hi, my ____ is Amy.",
+      "stemZh": "嗨，我的名字是 Amy。",
+      "options": [
+        "age",
+        "job",
+        "name",
+        "person"
+      ],
+      "optionGlossZh": [
+        "年齡",
+        "工作",
+        "名字",
+        "人"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u02-l02-q14",
+      "type": "mcq",
+      "stemEn": "I am a nurse at a hospital. It is a good ____.",
+      "stemZh": "我在醫院當護士，這是一份好工作。",
+      "options": [
+        "job",
+        "guy",
+        "boy",
+        "girl"
+      ],
+      "optionGlossZh": [
+        "工作",
+        "（口語）男生",
+        "男孩",
+        "女孩"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u02-l02-q15",
+      "type": "reading",
+      "passageEn": "Hi! My name is Mia. I am a nurse, and I like my job. I live with my husband and our two kids, a boy and a girl. The boy is eight, and the girl is five. They are very good kids.",
+      "passageZh": "嗨！我的名字是 Mia。我是護士，我喜歡我的工作。我和我先生還有兩個小孩住在一起，一個男孩和一個女孩。男孩八歲，女孩五歲。他們都是很乖的孩子。",
+      "questions": [
+        {
+          "questionZh": "Mia 的工作是什麼？",
+          "options": [
+            "醫生",
+            "老師",
+            "護士"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "Mia 的女兒幾歲？",
+          "options": [
+            "五歲",
+            "八歲",
+            "十歲"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q16",
+      "type": "translate",
+      "promptZh": "你的工作是什麼？",
+      "hintWords": [
+        "job"
+      ],
+      "referenceEn": [
+        "What is your job?",
+        "What's your job?"
+      ],
+      "rubricZh": [
+        "問句可寫 What is your job?、What's your job? 等",
+        "寫 What do you do? 問職業，意思相同也正確"
+      ]
+    },
+    {
+      "id": "a1-u02-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "age",
+      "instructionZh": "用 age 造一個句子，說說你和某個人年紀一樣。",
+      "referenceEn": [
+        "I am the same age as my cousin.",
+        "My friend Tom and I are the same age."
+      ],
+      "rubricZh": [
+        "「同年紀」可用 the same age（例如 the same age as my cousin、Tom and I are the same age）",
+        "be 動詞配合主詞（例如 I am、Tom and I are）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u02-l02-q10": [
+        0
+      ],
+      "a1-u02-l02-q13": [
+        2
+      ],
+      "a1-u02-l02-q14": [
+        0
+      ],
+      "a1-u02-l02-q15#0": [
+        2
+      ],
+      "a1-u02-l02-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（person）",
+        "resolution": "改前：\"Her name is Emma.\"；改後：\"Emma is a very nice person.\"",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（person）",
+        "resolution": "改前：\"她的名字是 Emma。\"；改後：\"Emma 是個很好的人。\"",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「At a bank」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（guy）",
+        "resolution": "改前：\"That girl is the same age as me.\"；改後：\"That guy is the same age as me.\"",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（guy）",
+        "resolution": "改前：\"那個女孩和我同年紀。\"；改後：\"那個男生和我同年紀。\"",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「name」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「job」由位置 3 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「護士」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/15/rubricZh",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：[\"疑問詞 what 放在句首\",\"be 動詞放在主詞前面形成問句（例如 What is your job?）\",\"寫 What do you do? 問職業，意思相同也正確\"]；改後：[\"問句可寫 What is your job?、What's your job? 等\",\"寫 What do you do? 問職業，意思相同也正確\"]",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「同年紀」可用 the same age（例如 the same age as my cousin）\"；改後：\"「同年紀」可用 the same age（例如 the same age as my cousin、Tom and I are the same age）\"",
+        "resolvedAt": "2026-10-02T11:27:59Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第二輪複審修正：FIX#8 補情境句不與單字卡例句雷同",
+        "resolution": "改前：\"Emma is a very nice person.\"；改後：\"Who is that person at the door?\"",
+        "resolvedAt": "2026-10-02T12:39:00Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第二輪複審修正：FIX#8 補情境句不與單字卡例句雷同",
+        "resolution": "改前：\"Emma 是個很好的人。\"；改後：\"門口那個人是誰？\"",
+        "resolvedAt": "2026-10-02T12:39:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「name」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「job」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:00Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「護士」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:00Z"
+      }
+    ]
+  }
+}

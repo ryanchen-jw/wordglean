@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u13-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:26:25Z",
+  "properNouns": [
+    "Lee"
+  ],
+  "items": [
+    {
+      "id": "a1-u13-l01-q01",
+      "type": "wordCard",
+      "word": "headache",
+      "exampleEn": "I have a headache.",
+      "exampleZh": "我頭痛。",
+      "glossZh": "頭痛",
+      "distractorsZh": [
+        "牙痛",
+        "發燒",
+        "感冒"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q02",
+      "type": "wordCard",
+      "word": "hand",
+      "exampleEn": "Wash your hands before you eat.",
+      "exampleZh": "吃東西前要洗手。",
+      "glossZh": "手",
+      "distractorsZh": [
+        "腳",
+        "臉",
+        "頭"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q03",
+      "type": "wordCard",
+      "word": "eye",
+      "exampleEn": "She has big brown eyes.",
+      "exampleZh": "她有一雙棕色的大眼睛。",
+      "glossZh": "眼睛",
+      "distractorsZh": [
+        "耳朵",
+        "鼻子",
+        "嘴巴"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q04",
+      "type": "wordCard",
+      "word": "head",
+      "exampleEn": "My head hurts.",
+      "exampleZh": "我的頭好痛。",
+      "glossZh": "頭",
+      "distractorsZh": [
+        "手",
+        "腳",
+        "肚子"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q05",
+      "type": "wordCard",
+      "word": "body",
+      "exampleEn": "Swimming is good for your body.",
+      "exampleZh": "游泳對身體很好。",
+      "glossZh": "身體",
+      "distractorsZh": [
+        "心情",
+        "房間",
+        "時間"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q06",
+      "type": "wordCard",
+      "word": "face",
+      "exampleEn": "Wash your face in the morning.",
+      "exampleZh": "早上要洗臉。",
+      "glossZh": "臉",
+      "distractorsZh": [
+        "手",
+        "頭髮",
+        "腳"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q07",
+      "type": "wordCard",
+      "word": "health",
+      "exampleEn": "Smoking is bad for your health.",
+      "exampleZh": "抽菸有害健康。",
+      "glossZh": "健康",
+      "distractorsZh": [
+        "工作",
+        "金錢",
+        "家庭"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q08",
+      "type": "wordCard",
+      "word": "heart",
+      "exampleEn": "My grandfather has a bad heart.",
+      "exampleZh": "我爺爺心臟不好。",
+      "glossZh": "心臟",
+      "distractorsZh": [
+        "肺",
+        "胃",
+        "頭"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "My hands and face are cold.",
+      "sentenceZh": "我的手和臉都好冷。"
+    },
+    {
+      "id": "a1-u13-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Wash your hands and face. Dinner is ready.",
+      "audioZh": "去洗手洗臉，晚餐好了。",
+      "questionZh": "說話者要你洗什麼？",
+      "options": [
+        "The dishes",
+        "Your hair",
+        "Your hands and face"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u13-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "Running is good for your body and heart.",
+      "sentenceZh": "跑步對身體和心臟都很好。"
+    },
+    {
+      "id": "a1-u13-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Close your eyes and go to sleep.",
+      "sentenceZh": "閉上眼睛睡覺吧。"
+    },
+    {
+      "id": "a1-u13-l01-q13",
+      "type": "mcq",
+      "stemEn": "I have a ____. I want to go to bed.",
+      "stemZh": "我頭痛，想去睡覺。",
+      "options": [
+        "hand",
+        "health",
+        "face",
+        "headache"
+      ],
+      "optionGlossZh": [
+        "手",
+        "健康",
+        "臉",
+        "頭痛"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u13-l01-q14",
+      "type": "mcq",
+      "stemEn": "We see with our ____.",
+      "stemZh": "我們用眼睛看東西。",
+      "options": [
+        "hearts",
+        "hands",
+        "heads",
+        "eyes"
+      ],
+      "optionGlossZh": [
+        "心臟",
+        "手",
+        "頭",
+        "眼睛"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u13-l01-q15",
+      "type": "reading",
+      "passageEn": "Mr. Lee works at a computer all day. In the evening, his eyes are tired, and he often has a headache. His doctor says, \"Your health is important. Take a walk every day, and don't look at your phone at night.\"",
+      "passageZh": "李先生整天用電腦工作。到了晚上，他的眼睛很累，而且常常頭痛。他的醫生說：「你的健康很重要。每天去散步，晚上不要看手機。」",
+      "questions": [
+        {
+          "questionZh": "李先生晚上常常怎麼了？",
+          "options": [
+            "肚子痛",
+            "頭痛",
+            "發燒"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "醫生要他每天做什麼？",
+          "options": [
+            "吃藥",
+            "散步",
+            "早點起床"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q16",
+      "type": "translate",
+      "promptZh": "我頭很痛。",
+      "hintWords": [
+        "headache"
+      ],
+      "referenceEn": [
+        "I have a bad headache.",
+        "My head hurts a lot."
+      ],
+      "rubricZh": [
+        "「頭痛」可用 have a headache 或 my head hurts",
+        "痛得厲害可用 a bad headache、hurts a lot 等"
+      ]
+    },
+    {
+      "id": "a1-u13-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "health",
+      "instructionZh": "用 health 造一個句子，說說什麼對健康好或不好。",
+      "referenceEn": [
+        "Fruit is good for your health.",
+        "Smoking is bad for your health."
+      ],
+      "rubricZh": [
+        "「對健康好／不好」可用 good／bad for … health（例如 good for your health）",
+        "health 前面常加所有格（例如 your health、my health）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u13-l01-q10": [
+        2
+      ],
+      "a1-u13-l01-q13": [
+        3
+      ],
+      "a1-u13-l01-q14": [
+        3
+      ],
+      "a1-u13-l01-q15#0": [
+        1
+      ],
+      "a1-u13-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同（第③關建議：與聽選音檔重複）",
+        "resolution": "改前：\"Wash your hands and face.\"；改後：\"My hands and face are cold.\"",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同（第③關建議：與聽選音檔重複）",
+        "resolution": "改前：\"去洗手洗臉。\"；改後：\"我的手和臉都好冷。\"",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Your hands and face」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：裁示（規則 9）：不出現吃藥",
+        "resolution": "改前：\"I have a ____. Can I have some medicine?\"；改後：\"I have a ____. My head hurts.\"",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：裁示（規則 9）：不出現吃藥",
+        "resolution": "改前：\"我頭痛，可以給我一些藥嗎？\"；改後：\"我頭痛，頭好痛。\"",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「eyes」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「頭痛」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「散步」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:23Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
+        "resolution": "改前：[\"Mr\",\"Lee\"]；改後：[\"Lee\"]",
+        "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長最終複審修正：FIX#5 中譯不重複",
+        "resolution": "改前：\"I have a ____. My head hurts.\"；改後：\"I have a ____. I want to go to bed.\"",
+        "resolvedAt": "2026-10-02T13:26:25Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長最終複審修正：FIX#5 中譯不重複",
+        "resolution": "改前：\"我頭痛，頭好痛。\"；改後：\"我頭痛，想去睡覺。\"",
+        "resolvedAt": "2026-10-02T13:26:25Z"
+      }
+    ]
+  }
+}

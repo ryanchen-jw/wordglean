@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u02-l06",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:13Z",
+  "properNouns": [
+    "Lin",
+    "Wang",
+    "Chen",
+    "Smith",
+    "Canada",
+    "English",
+    "Tom",
+    "Mary"
+  ],
+  "items": [
+    {
+      "id": "a1-u02-l06-q01",
+      "type": "wordCard",
+      "word": "good afternoon",
+      "exampleEn": "Good afternoon, Mrs. Lin.",
+      "exampleZh": "林太太，午安。",
+      "glossZh": "午安",
+      "distractorsZh": [
+        "早安",
+        "晚安",
+        "再見"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q02",
+      "type": "wordCard",
+      "word": "good morning",
+      "exampleEn": "Good morning, everyone!",
+      "exampleZh": "大家早安！",
+      "glossZh": "早安",
+      "distractorsZh": [
+        "午安",
+        "晚安",
+        "謝謝"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q03",
+      "type": "wordCard",
+      "word": "good night",
+      "exampleEn": "Good night, Mom. See you tomorrow.",
+      "exampleZh": "媽媽晚安，明天見。",
+      "glossZh": "晚安（睡前或晚上道別）",
+      "distractorsZh": [
+        "早安",
+        "午安",
+        "歡迎"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q04",
+      "type": "wordCard",
+      "word": "last name",
+      "exampleEn": "My last name is Chen.",
+      "exampleZh": "我姓陳。",
+      "glossZh": "姓",
+      "distractorsZh": [
+        "小名",
+        "地址",
+        "國籍"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q05",
+      "type": "wordCard",
+      "word": "mr.",
+      "exampleEn": "Mr. Wang is my English teacher.",
+      "exampleZh": "王先生是我的英文老師。",
+      "glossZh": "先生（放在男性姓氏前）",
+      "distractorsZh": [
+        "太太",
+        "小姐",
+        "老師"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q06",
+      "type": "wordCard",
+      "word": "mrs.",
+      "exampleEn": "Mrs. Lin is my neighbor.",
+      "exampleZh": "林太太是我的鄰居。",
+      "glossZh": "太太（放在已婚女性姓氏前）",
+      "distractorsZh": [
+        "先生",
+        "小姐",
+        "老師"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q07",
+      "type": "wordCard",
+      "word": "smith",
+      "exampleEn": "Mr. Smith is from Canada.",
+      "exampleZh": "Smith 先生來自加拿大。",
+      "glossZh": "鐵匠；（大寫 Smith）常見英文姓氏",
+      "distractorsZh": [
+        "鄰居",
+        "老師",
+        "記者"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q08",
+      "type": "listenType",
+      "sentenceEn": "Good morning, Mr. Smith.",
+      "sentenceZh": "Smith 先生，早安。"
+    },
+    {
+      "id": "a1-u02-l06-q09",
+      "type": "listenChoice",
+      "audioEn": "Good afternoon. I am Mrs. Smith, your new teacher.",
+      "audioZh": "午安，我是 Smith 太太，你們的新老師。",
+      "questionZh": "說話者是誰？",
+      "options": [
+        "A doctor",
+        "A new student",
+        "Your new teacher"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u02-l06-q10",
+      "type": "shadowing",
+      "sentenceEn": "We say good night before we go to bed.",
+      "sentenceZh": "我們睡前會說晚安。"
+    },
+    {
+      "id": "a1-u02-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "What is your last name, sir?",
+      "sentenceZh": "先生，請問您貴姓？"
+    },
+    {
+      "id": "a1-u02-l06-q12",
+      "type": "mcq",
+      "stemEn": "I am going to bed. ____, Mom!",
+      "stemZh": "我要去睡了。媽媽晚安！",
+      "options": [
+        "Good night",
+        "Good morning",
+        "Good afternoon",
+        "Last name"
+      ],
+      "optionGlossZh": [
+        "晚安",
+        "早安",
+        "午安",
+        "姓"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u02-l06-q13",
+      "type": "mcq",
+      "stemEn": "My first name is Tom, and my ____ is Smith.",
+      "stemZh": "我的名字是 Tom，姓 Smith。",
+      "options": [
+        "Mrs.",
+        "last name",
+        "good morning",
+        "nationality"
+      ],
+      "optionGlossZh": [
+        "太太",
+        "姓",
+        "早安",
+        "國籍"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u02-l06-q14",
+      "type": "reading",
+      "passageEn": "Good morning! My name is Mary Smith. Smith is my last name. My husband is Mr. Smith, and I am Mrs. Smith. We are teachers at the same school. Every afternoon, our students say, \"Good afternoon, Mr. and Mrs. Smith!\"",
+      "passageZh": "早安！我的名字是 Mary Smith，Smith 是我的姓。我先生是 Smith 先生，我是 Smith 太太。我們在同一所學校當老師。每天下午，我們的學生都會說：「Smith 先生、Smith 太太，午安！」",
+      "questions": [
+        {
+          "questionZh": "Mary 和她先生做什麼工作？",
+          "options": [
+            "都是記者",
+            "都是老師",
+            "都是醫生"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "學生什麼時候說 Good afternoon？",
+          "options": [
+            "每天下午",
+            "每天早上",
+            "每天晚上"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q15",
+      "type": "translate",
+      "promptZh": "Smith 太太，早安。",
+      "hintWords": [
+        "good morning",
+        "Mrs."
+      ],
+      "referenceEn": [
+        "Good morning, Mrs. Smith."
+      ],
+      "rubricZh": [
+        "「早安」用 good morning（例如 Good morning, Mrs. Smith.）",
+        "「Smith 太太」寫成 Mrs. Smith（英式不加點寫 Mrs Smith 也正確）"
+      ]
+    },
+    {
+      "id": "a1-u02-l06-q16",
+      "type": "makeSentence",
+      "targetWord": "last name",
+      "instructionZh": "用 last name 造一個句子，說說你姓什麼。",
+      "referenceEn": [
+        "My last name is Chen.",
+        "My last name is Lin."
+      ],
+      "rubricZh": [
+        "「姓」用 last name（例如 My last name is Chen.）",
+        "也可寫 Chen is my last name. 這類句型"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u02-l06-q09": [
+        2
+      ],
+      "a1-u02-l06-q12": [
+        0
+      ],
+      "a1-u02-l06-q13": [
+        1
+      ],
+      "a1-u02-l06-q14#0": [
+        1
+      ],
+      "a1-u02-l06-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長第②③關裁示修正：第②關＋裁示：smith 釋義寫「鐵匠；（大寫 Smith）常見英文姓氏」",
+        "resolution": "改前：\"Smith（常見的英文姓氏）\"；改後：\"鐵匠；（大寫 Smith）常見英文姓氏\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Your new teacher」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/8/audioEn",
+        "message": "執行長第②③關裁示修正：第②關：My name is 後面不接稱謂，改 I am Mrs. Smith",
+        "resolution": "改前：\"Good afternoon. My name is Mrs. Smith. I am your new teacher.\"；改後：\"Good afternoon. I am Mrs. Smith, your new teacher.\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/8/audioZh",
+        "message": "執行長第②③關裁示修正：第②關：My name is 後面不接稱謂，改 I am Mrs. Smith",
+        "resolution": "改前：\"午安，我是 Smith 太太，我是你們的新老師。\"；改後：\"午安，我是 Smith 太太，你們的新老師。\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Good night」由位置 1 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「last name」由位置 3 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「都是老師」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/14/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「早安」用 good morning\"；改後：\"「早安」用 good morning（例如 Good morning, Mrs. Smith.）\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「Smith 太太」寫成 Mrs. Smith（Mrs. 放在姓氏前面）\"；改後：\"「Smith 太太」寫成 Mrs. Smith（英式不加點寫 Mrs Smith 也正確）\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「姓」用 last name（例如 My last name is …）\"；改後：\"「姓」用 last name（例如 My last name is Chen.）\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"姓氏的第一個字母大寫\"；改後：\"也可寫 Chen is my last name. 這類句型\"",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Mr\",\"Mrs\",\"Lin\",\"Wang\",\"Chen\",\"Smith\",\"Canada\",\"English\",\"Tom\",\"Mary\"]；改後：[\"Mr\",\"Mrs\",\"Lin\",\"Wang\",\"Chen\",\"Canada\",\"English\",\"Tom\",\"Mary\"]",
+        "resolvedAt": "2026-10-02T11:28:03Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Your new teacher」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "items/9/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"Good night, everyone. See you tomorrow.\"；改後：\"We say good night before we go to bed.\"",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "items/9/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"大家晚安，明天見。\"；改後：\"我們睡前會說晚安。\"",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Good night」由位置 3 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「last name」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「都是老師」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「每天下午」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Mr\",\"Mrs\",\"Lin\",\"Wang\",\"Chen\",\"Canada\",\"English\",\"Tom\",\"Mary\"]；改後：[\"Mr\",\"Mrs\",\"Lin\",\"Wang\",\"Chen\",\"Smith\",\"Canada\",\"English\",\"Tom\",\"Mary\"]",
+        "resolvedAt": "2026-10-02T12:39:13Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
+        "resolution": "改前：[\"Mr\",\"Mrs\",\"Lin\",\"Wang\",\"Chen\",\"Smith\",\"Canada\",\"English\",\"Tom\",\"Mary\"]；改後：[\"Lin\",\"Wang\",\"Chen\",\"Smith\",\"Canada\",\"English\",\"Tom\",\"Mary\"]",
+        "resolvedAt": "2026-10-02T13:00:29Z"
+      }
+    ]
+  }
+}

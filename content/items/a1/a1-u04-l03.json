@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u04-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:31Z",
+  "properNouns": [
+    "Tom",
+    "Japan",
+    "Tainan"
+  ],
+  "items": [
+    {
+      "id": "a1-u04-l03-q01",
+      "type": "wordCard",
+      "word": "daughter",
+      "exampleEn": "Their daughter is a singer.",
+      "exampleZh": "他們的女兒是歌手。",
+      "glossZh": "女兒",
+      "distractorsZh": [
+        "兒子",
+        "姊妹",
+        "妻子"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q02",
+      "type": "wordCard",
+      "word": "husband",
+      "exampleEn": "My husband is an engineer.",
+      "exampleZh": "我先生是工程師。",
+      "glossZh": "丈夫",
+      "distractorsZh": [
+        "妻子",
+        "兒子",
+        "哥哥"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q03",
+      "type": "wordCard",
+      "word": "share",
+      "exampleEn": "Can I share your umbrella?",
+      "exampleZh": "我可以跟你共用雨傘嗎？",
+      "glossZh": "分享；共用",
+      "distractorsZh": [
+        "弄丟",
+        "修理",
+        "販賣"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q04",
+      "type": "wordCard",
+      "word": "present",
+      "exampleEn": "This present is for you.",
+      "exampleZh": "這份禮物是給你的。",
+      "glossZh": "禮物",
+      "distractorsZh": [
+        "卡片",
+        "照片",
+        "信件"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q05",
+      "type": "wordCard",
+      "word": "sister",
+      "exampleEn": "My sister lives in Japan.",
+      "exampleZh": "我姊姊住在日本。",
+      "glossZh": "姊妹（姊姊或妹妹）",
+      "distractorsZh": [
+        "兄弟",
+        "女兒",
+        "阿姨"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q06",
+      "type": "wordCard",
+      "word": "visit",
+      "exampleEn": "We visit our grandparents every month.",
+      "exampleZh": "我們每個月去探望祖父母。",
+      "glossZh": "拜訪；探望",
+      "distractorsZh": [
+        "打電話給",
+        "邀請",
+        "想念"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q07",
+      "type": "wordCard",
+      "word": "partner",
+      "exampleEn": "Tom is my partner in this game.",
+      "exampleZh": "Tom 是我這場遊戲的搭檔。",
+      "glossZh": "搭檔；夥伴",
+      "distractorsZh": [
+        "對手",
+        "老師",
+        "客人"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q08",
+      "type": "wordCard",
+      "word": "guest",
+      "exampleEn": "We have three guests tonight.",
+      "exampleZh": "我們今晚有三位客人。",
+      "glossZh": "客人",
+      "distractorsZh": [
+        "主人",
+        "鄰居",
+        "服務生"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "My sister and her husband visit us often.",
+      "sentenceZh": "我姊姊和姊夫常來看我們。"
+    },
+    {
+      "id": "a1-u04-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "Our guests are here! Can you get some cups for them?",
+      "audioZh": "我們的客人到了！你可以幫他們拿一些杯子嗎？",
+      "questionZh": "說話者要你拿什麼？",
+      "options": [
+        "Some cups",
+        "Some cake",
+        "Some chairs"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u04-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "This present is from my daughter.",
+      "sentenceZh": "這份禮物是我女兒送的。"
+    },
+    {
+      "id": "a1-u04-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "Tom is my partner at work.",
+      "sentenceZh": "Tom 是我的工作夥伴。"
+    },
+    {
+      "id": "a1-u04-l03-q13",
+      "type": "mcq",
+      "stemEn": "My ____ is a doctor. She works at a hospital.",
+      "stemZh": "我女兒是醫生，她在醫院工作。",
+      "options": [
+        "husband",
+        "daughter",
+        "son",
+        "brother"
+      ],
+      "optionGlossZh": [
+        "丈夫",
+        "女兒",
+        "兒子",
+        "兄弟"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u04-l03-q14",
+      "type": "mcq",
+      "stemEn": "I want to ____ my aunt in Tainan this weekend.",
+      "stemZh": "這個週末我想去台南拜訪我阿姨。",
+      "options": [
+        "guest",
+        "share",
+        "present",
+        "visit"
+      ],
+      "optionGlossZh": [
+        "客人",
+        "分享",
+        "禮物",
+        "拜訪"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u04-l03-q15",
+      "type": "reading",
+      "passageEn": "Every summer, my sister visits us with her husband and their daughter. They are our guests for two weeks. My sister always brings presents for my kids. We share many meals, and we play games together at night.",
+      "passageZh": "每年夏天，我姊姊會和她先生還有女兒來我們家。他們會在我們家作客兩個星期。我姊姊總是帶禮物給我的孩子。我們一起吃很多頓飯，晚上一起玩遊戲。",
+      "questions": [
+        {
+          "questionZh": "姊姊一家每年夏天在說話者家住多久？",
+          "options": [
+            "一個星期",
+            "兩個星期",
+            "一個月"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "姊姊總是帶什麼來？",
+          "options": [
+            "一些書",
+            "一個蛋糕",
+            "給孩子的禮物"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q16",
+      "type": "translate",
+      "promptZh": "我可以和你分享這塊蛋糕嗎？",
+      "hintWords": [
+        "share"
+      ],
+      "referenceEn": [
+        "Can I share this cake with you?",
+        "May I share this piece of cake with you?"
+      ],
+      "rubricZh": [
+        "share 後面接分享的東西，再用 with 接人（例如 share this cake with you）",
+        "用表示請求的問句（例如 Can I…?、May I…?、Could I…?）",
+        "「這塊蛋糕」可寫 this cake、this piece of cake 等"
+      ]
+    },
+    {
+      "id": "a1-u04-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "visit",
+      "instructionZh": "用 visit 造一個句子，說說你會去探望的一位家人或朋友。",
+      "referenceEn": [
+        "I visit my grandmother every Sunday.",
+        "I will visit my friend in Tainan this weekend."
+      ],
+      "rubricZh": [
+        "visit 後面直接接人或地點，不加 to（例如 visit my grandmother）；寫 go to see my grandmother 也正確",
+        "時態配合內容（例如習慣用現在簡單式；未來的計畫用 will、be going to 等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u04-l03-q10": [
+        0
+      ],
+      "a1-u04-l03-q13": [
+        1
+      ],
+      "a1-u04-l03-q14": [
+        3
+      ],
+      "a1-u04-l03-q15#0": [
+        1
+      ],
+      "a1-u04-l03-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Some cups」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（partner）",
+        "resolution": "改前：\"Let's share this pizza.\"；改後：\"My partner and I share an office.\"",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（partner）",
+        "resolution": "改前：\"我們一起分這個披薩吧。\"；改後：\"我和我的搭檔共用一間辦公室。\"",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「daughter」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「兩個星期」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/15/rubricZh",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：[\"share 後面接分享的東西，再用 with 接人（例如 share this cake with you）\",\"請求可用 Can I 或 May I 開頭\"]；改後：[\"share 後面接分享的東西，再用 with 接人（例如 share this cake with you）\",\"用表示請求的問句（例如 Can I…?、May I…?、Could I…?）\",\"「這塊蛋糕」可寫 this cake、this piece of cake 等\"]",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"visit 後面直接接人或地點，不加 to（例如 visit my grandmother）\"；改後：\"visit 後面直接接人或地點，不加 to（例如 visit my grandmother）；寫 go to see my grandmother 也正確\"",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"時態配合內容（習慣用現在簡單式；未來的計畫用 will 等）\"；改後：\"時態配合內容（例如習慣用現在簡單式；未來的計畫用 will、be going to 等）\"",
+        "resolvedAt": "2026-10-02T11:28:13Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第二輪複審修正：建議：my partner 單獨出現易被理解成伴侶",
+        "resolution": "改前：\"My partner and I share an office.\"；改後：\"Tom is my partner at work.\"",
+        "resolvedAt": "2026-10-02T12:39:32Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第二輪複審修正：建議：my partner 單獨出現易被理解成伴侶",
+        "resolution": "改前：\"我和我的搭檔共用一間辦公室。\"；改後：\"Tom 是我的工作夥伴。\"",
+        "resolvedAt": "2026-10-02T12:39:32Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「visit」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:32Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「兩個星期」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:32Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「給孩子的禮物」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:32Z"
+      }
+    ]
+  }
+}

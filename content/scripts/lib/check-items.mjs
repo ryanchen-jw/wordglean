@@ -273,5 +273,47 @@ export function checkLevelAnswerPositions(docs) {
   );
 }
 
+// 正解位置④：同一級內，課內相鄰兩題的正解位置差有固定規律（TASK-9 執行長裁示 G1）。
+// 比兩組：課內 mcq 第 2 題對第 1 題、閱讀第 2 小題對第 1 小題；差＝(後−前) mod 前一題選項數。
+// 樣本（課數）≥8 時，兩種情況報錯——學習者答完前一題就能縮小下一題的範圍：
+//   ① 某個差值占比超過 60%；② 某個差值完全沒出現，但依均勻分布應出現 ≥5 次（例：mcq 永遠相鄰 ±1，差 0、2 從不出現）。
+export function checkAnswerPositionPatterns(docs, minCount = 8, maxShare = 0.6, minExpected = 5) {
+  const byLevel = new Map();
+  const add = (level, kind, n, delta) => {
+    const kinds = byLevel.get(level) ?? new Map();
+    const entry = kinds.get(kind) ?? { n, counts: new Map() };
+    entry.n = Math.max(entry.n, n);
+    entry.counts.set(delta, (entry.counts.get(delta) ?? 0) + 1);
+    kinds.set(kind, entry);
+    byLevel.set(level, kinds);
+  };
+  const diff = (a, b, n) => (((b - a) % n) + n) % n;
+  for (const doc of docs) {
+    const mcqs = doc.items.filter((it) => it.type === 'mcq');
+    if (mcqs.length >= 2) add(doc.level, 'mcq', mcqs[0].options.length, diff(mcqs[0].answer, mcqs[1].answer, mcqs[0].options.length));
+    for (const it of doc.items.filter((x) => x.type === 'reading' && x.questions.length >= 2)) {
+      const [q1, q2] = it.questions;
+      add(doc.level, 'reading', q1.options.length, diff(q1.answer, q2.answer, q1.options.length));
+    }
+  }
+  const out = [];
+  for (const [level, kinds] of byLevel) {
+    for (const [kind, { n, counts }] of kinds) {
+      const total = [...counts.values()].reduce((sum, c) => sum + c, 0);
+      if (total < minCount) continue;
+      const label = kind === 'mcq' ? 'mcq 第 2 題對第 1 題' : '閱讀第 2 小題對第 1 小題';
+      const [delta, top] = [...counts].sort((a, b) => b[1] - a[1])[0];
+      const missing = Array.from({ length: n }, (_, d) => d).filter((d) => !counts.has(d));
+      const dist = Array.from({ length: n }, (_, d) => `${d}:${counts.get(d) ?? 0}`).join('、');
+      if (top / total > maxShare) {
+        out.push({ code: 'ANSWER_POSITION_PATTERN', path: level, message: `${level} 全級${label}的正解位置差集中在 ${delta}：${top}/${total}（上限 ${maxShare * 100}%；分布 ${dist}）` });
+      } else if (missing.length && total / n >= minExpected) {
+        out.push({ code: 'ANSWER_POSITION_PATTERN', path: level, message: `${level} 全級${label}的正解位置差從未出現 ${missing.join('、')}（共 ${total} 課，均勻時每個差值約 ${(total / n).toFixed(1)} 次；分布 ${dist}）` });
+      }
+    }
+  }
+  return out;
+}
+
 // 會讓該課不合格的錯誤（排除 notice 提示）。
 export const blockingErrors = (errors) => errors.filter((e) => !e.notice);

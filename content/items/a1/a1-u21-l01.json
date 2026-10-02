@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u21-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:22:40Z",
+  "properNouns": [
+    "Tom"
+  ],
+  "items": [
+    {
+      "id": "a1-u21-l01-q01",
+      "type": "wordCard",
+      "word": "fine",
+      "exampleEn": "I am fine, thank you.",
+      "exampleZh": "我很好，謝謝。",
+      "glossZh": "好的；健康的",
+      "distractorsZh": [
+        "生病的",
+        "忙碌的",
+        "累的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q02",
+      "type": "wordCard",
+      "word": "size",
+      "exampleEn": "What size are these shoes?",
+      "exampleZh": "這雙鞋是幾號的？",
+      "glossZh": "尺寸；大小",
+      "distractorsZh": [
+        "顏色",
+        "價格",
+        "形狀"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q03",
+      "type": "wordCard",
+      "word": "ready",
+      "exampleEn": "Dinner is ready.",
+      "exampleZh": "晚餐準備好了。",
+      "glossZh": "準備好的",
+      "distractorsZh": [
+        "冷掉的",
+        "太晚的",
+        "空的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q04",
+      "type": "wordCard",
+      "word": "left",
+      "exampleEn": "I write with my left hand.",
+      "exampleZh": "我用左手寫字。",
+      "glossZh": "左邊的",
+      "distractorsZh": [
+        "右邊的",
+        "前面的",
+        "後面的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q05",
+      "type": "wordCard",
+      "word": "blue",
+      "exampleEn": "The sky is blue.",
+      "exampleZh": "天空是藍色的。",
+      "glossZh": "藍色的",
+      "distractorsZh": [
+        "綠色的",
+        "黃色的",
+        "紅色的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q06",
+      "type": "wordCard",
+      "word": "dark",
+      "exampleEn": "It is dark outside.",
+      "exampleZh": "外面很暗。",
+      "glossZh": "黑暗的；暗的",
+      "distractorsZh": [
+        "明亮的",
+        "溫暖的",
+        "安靜的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q07",
+      "type": "wordCard",
+      "word": "green",
+      "exampleEn": "I like green apples.",
+      "exampleZh": "我喜歡青蘋果。",
+      "glossZh": "綠色的",
+      "distractorsZh": [
+        "藍色的",
+        "紅色的",
+        "黃色的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q08",
+      "type": "wordCard",
+      "word": "nice",
+      "exampleEn": "What a nice day!",
+      "exampleZh": "天氣真好！",
+      "glossZh": "好的；美好的",
+      "distractorsZh": [
+        "糟糕的",
+        "奇怪的",
+        "無聊的"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Are you ready? It is getting dark.",
+      "sentenceZh": "你準備好了嗎？天色要暗了。"
+    },
+    {
+      "id": "a1-u21-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "These shoes are a nice color, but the size is wrong.",
+      "audioZh": "這雙鞋的顏色很好看，但尺寸不對。",
+      "questionZh": "這雙鞋有什麼問題？",
+      "options": [
+        "The size is wrong.",
+        "The color is ugly.",
+        "They are too expensive."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u21-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "Turn left at the green building.",
+      "sentenceZh": "在綠色大樓那裡左轉。"
+    },
+    {
+      "id": "a1-u21-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "I'm fine. How are you?",
+      "sentenceZh": "我很好，你呢？"
+    },
+    {
+      "id": "a1-u21-l01-q13",
+      "type": "mcq",
+      "stemEn": "Wait a minute. I am not ____ yet.",
+      "stemZh": "等一下，我還沒準備好。",
+      "options": [
+        "left",
+        "ready",
+        "size",
+        "blue"
+      ],
+      "optionGlossZh": [
+        "左邊的",
+        "準備好的",
+        "尺寸",
+        "藍色的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u21-l01-q14",
+      "type": "mcq",
+      "stemEn": "Do you have this shirt in a bigger ____?",
+      "stemZh": "這件襯衫有大一點的尺寸嗎？",
+      "options": [
+        "size",
+        "dark",
+        "green",
+        "nice"
+      ],
+      "optionGlossZh": [
+        "尺寸",
+        "暗的",
+        "綠色的",
+        "好的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u21-l01-q15",
+      "type": "reading",
+      "passageEn": "Tom wants a new shirt. He likes blue, but the shop only has green and dark red shirts. He puts on a green one, but the size is too small. The woman at the shop is very nice. She says, \"Come back on Friday. The blue shirts will be ready then.\"",
+      "passageZh": "Tom 想買一件新襯衫。他喜歡藍色，但店裡只有綠色和深紅色的。他穿上一件綠色的，可是尺寸太小。店裡的女士人很好，她說：「星期五再來吧，那時藍色的襯衫就準備好了。」",
+      "questions": [
+        {
+          "questionZh": "Tom 喜歡什麼顏色？",
+          "options": [
+            "藍色",
+            "綠色",
+            "深紅色"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "店員要 Tom 什麼時候再來？",
+          "options": [
+            "下個月",
+            "明天",
+            "星期五"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q16",
+      "type": "translate",
+      "promptZh": "你準備好了嗎？",
+      "hintWords": [
+        "ready"
+      ],
+      "referenceEn": [
+        "Are you ready?",
+        "Are you ready to go?"
+      ],
+      "rubricZh": [
+        "問句把 be 動詞放在主詞前面（例如 Are you ready?）",
+        "寫 Are you ready to go? 也正確"
+      ]
+    },
+    {
+      "id": "a1-u21-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "dark",
+      "instructionZh": "用 dark 造一個句子，描述暗的地方或深色的東西。",
+      "referenceEn": [
+        "It is very dark in the room.",
+        "She has dark hair."
+      ],
+      "rubricZh": [
+        "dark 可形容光線暗（例如 It is dark）或顏色深（例如 dark hair、dark blue）",
+        "dark 放在 be 動詞後面或名詞前面"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T13:19:27Z",
+    "verdicts": {
+      "a1-u21-l01-q10": [
+        0
+      ],
+      "a1-u21-l01-q13": [
+        1
+      ],
+      "a1-u21-l01-q14": [
+        0
+      ],
+      "a1-u21-l01-q15#0": [
+        0
+      ],
+      "a1-u21-l01-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：ready 中譯「準備好了」",
+        "resolution": "改前：\"Tom 想買一件新襯衫。他喜歡藍色，但店裡只有綠色和深紅色的。他穿上一件綠色的，可是尺寸太小。店裡的女士人很好，她說：「星期五再來吧，那時藍色的襯衫就會到了。」\"；改後：\"Tom 想買一件新襯衫。他喜歡藍色，但店裡只有綠色和深紅色的。他穿上一件綠色的，可是尺寸太小。店裡的女士人很好，她說：「星期五再來吧，那時藍色的襯衫就準備好了。」\"",
+        "resolvedAt": "2026-10-02T13:22:41Z"
+      },
+      {
+        "path": "items/15/promptZh",
+        "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
+        "resolution": "改前：\"晚餐準備好了嗎？\"；改後：\"你準備好了嗎？\"",
+        "resolvedAt": "2026-10-02T13:22:41Z"
+      },
+      {
+        "path": "items/15/referenceEn",
+        "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
+        "resolution": "改前：[\"Is dinner ready?\"]；改後：[\"Are you ready?\",\"Are you ready to go?\"]",
+        "resolvedAt": "2026-10-02T13:22:41Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
+        "resolution": "改前：\"問句把 be 動詞放在主詞前面（例如 Is dinner ready?）\"；改後：\"問句把 be 動詞放在主詞前面（例如 Are you ready?）\"",
+        "resolvedAt": "2026-10-02T13:22:41Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
+        "resolution": "改前：\"寫 Is the dinner ready? 也可接受\"；改後：\"寫 Are you ready to go? 也正確\"",
+        "resolvedAt": "2026-10-02T13:22:41Z"
+      }
+    ]
+  }
+}

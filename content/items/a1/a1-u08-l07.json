@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u08-l07",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:31Z",
+  "properNouns": [
+    "Christmas",
+    "Taiwan"
+  ],
+  "items": [
+    {
+      "id": "a1-u08-l07-q01",
+      "type": "wordCard",
+      "word": "breakfast",
+      "exampleEn": "I have breakfast at seven.",
+      "exampleZh": "我七點吃早餐。",
+      "glossZh": "早餐",
+      "distractorsZh": [
+        "午餐",
+        "晚餐",
+        "宵夜"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q02",
+      "type": "wordCard",
+      "word": "smell",
+      "exampleEn": "I love the smell of coffee.",
+      "exampleZh": "我很喜歡咖啡的香味。",
+      "glossZh": "氣味；香味",
+      "distractorsZh": [
+        "顏色",
+        "聲音",
+        "價格"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q03",
+      "type": "wordCard",
+      "word": "corn",
+      "exampleEn": "I like corn soup.",
+      "exampleZh": "我喜歡玉米湯。",
+      "glossZh": "玉米",
+      "distractorsZh": [
+        "豆子",
+        "米",
+        "馬鈴薯"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q04",
+      "type": "wordCard",
+      "word": "cake",
+      "exampleEn": "Let's have some cake.",
+      "exampleZh": "我們吃點蛋糕吧。",
+      "glossZh": "蛋糕",
+      "distractorsZh": [
+        "麵包",
+        "餅乾",
+        "布丁"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q05",
+      "type": "wordCard",
+      "word": "chocolate",
+      "exampleEn": "She gave me a box of chocolates.",
+      "exampleZh": "她送我一盒巧克力。",
+      "glossZh": "巧克力",
+      "distractorsZh": [
+        "糖果",
+        "餅乾",
+        "冰淇淋"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q06",
+      "type": "wordCard",
+      "word": "rice",
+      "exampleEn": "In Taiwan, people eat rice every day.",
+      "exampleZh": "在台灣，大家每天都吃米飯。",
+      "glossZh": "米飯；米",
+      "distractorsZh": [
+        "麵包",
+        "麵",
+        "豆子"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q07",
+      "type": "wordCard",
+      "word": "turkey",
+      "exampleEn": "Some families eat turkey at Christmas.",
+      "exampleZh": "有些家庭聖誕節會吃火雞。",
+      "glossZh": "火雞（肉）",
+      "distractorsZh": [
+        "雞肉",
+        "牛肉",
+        "鴨肉"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q08",
+      "type": "listenType",
+      "sentenceEn": "I eat rice for breakfast.",
+      "sentenceZh": "我早餐吃飯。"
+    },
+    {
+      "id": "a1-u08-l07-q09",
+      "type": "listenChoice",
+      "audioEn": "What is that smell? Is Mom making a chocolate cake?",
+      "audioZh": "那是什麼味道？媽媽在做巧克力蛋糕嗎？",
+      "questionZh": "說話者覺得媽媽在做什麼？",
+      "options": [
+        "A chocolate cake",
+        "Corn soup",
+        "Rice"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u08-l07-q10",
+      "type": "shadowing",
+      "sentenceEn": "This chocolate cake is delicious.",
+      "sentenceZh": "這個巧克力蛋糕很好吃。"
+    },
+    {
+      "id": "a1-u08-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "We have turkey for Christmas dinner.",
+      "sentenceZh": "我們聖誕晚餐吃火雞。"
+    },
+    {
+      "id": "a1-u08-l07-q12",
+      "type": "mcq",
+      "stemEn": "Good morning! ____ is ready. Come and eat.",
+      "stemZh": "早安！早餐好了，快來吃。",
+      "options": [
+        "Smell",
+        "Breakfast",
+        "Morning",
+        "Hungry"
+      ],
+      "optionGlossZh": [
+        "氣味",
+        "早餐",
+        "早上",
+        "餓的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u08-l07-q13",
+      "type": "mcq",
+      "stemEn": "I love the ____ of hot bread.",
+      "stemZh": "我很喜歡剛出爐麵包的香味。",
+      "options": [
+        "breakfast",
+        "corn",
+        "rice",
+        "smell"
+      ],
+      "optionGlossZh": [
+        "早餐",
+        "玉米",
+        "米飯",
+        "氣味"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u08-l07-q14",
+      "type": "reading",
+      "passageEn": "Today is my birthday. In the morning, I wake up to a great smell. My dad is making breakfast: rice, eggs, and corn soup. In the evening, my mom brings home a big chocolate cake. Everyone eats a piece. It is a great day!",
+      "passageZh": "今天是我的生日。早上，我被一股很香的味道叫醒。爸爸正在做早餐：飯、蛋和玉米湯。晚上，媽媽帶了一個大巧克力蛋糕回家，每個人都吃了一塊。真是美好的一天！",
+      "questions": [
+        {
+          "questionZh": "爸爸早餐做了什麼？",
+          "options": [
+            "麵包和牛奶",
+            "飯、蛋和玉米湯",
+            "巧克力蛋糕"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "媽媽晚上帶了什麼回家？",
+          "options": [
+            "巧克力蛋糕",
+            "一隻火雞",
+            "一盒餅乾"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q15",
+      "type": "translate",
+      "promptZh": "我早餐通常吃飯和蛋。",
+      "hintWords": [
+        "breakfast",
+        "rice"
+      ],
+      "referenceEn": [
+        "I usually have rice and eggs for breakfast.",
+        "I usually eat rice and an egg for breakfast."
+      ],
+      "rubricZh": [
+        "「早餐吃⋯」可用 for breakfast（例如 eggs for breakfast），也可寫 My breakfast is usually…",
+        "usually 通常放在一般動詞前（放句首也可以）",
+        "蛋可寫 eggs 或 an egg"
+      ]
+    },
+    {
+      "id": "a1-u08-l07-q16",
+      "type": "makeSentence",
+      "targetWord": "cake",
+      "instructionZh": "用 cake 造一個句子，說說你喜歡的蛋糕，或你什麼時候吃蛋糕。",
+      "referenceEn": [
+        "I love chocolate cake.",
+        "We eat cake on my birthday."
+      ],
+      "rubricZh": [
+        "泛指蛋糕時不加 a（例如 I love cake）；說種類可加名稱（例如 chocolate cake）",
+        "一整個蛋糕用 a cake，一塊用 a piece of cake"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u08-l07-q09": [
+        0
+      ],
+      "a1-u08-l07-q12": [
+        1
+      ],
+      "a1-u08-l07-q13": [
+        3
+      ],
+      "a1-u08-l07-q14#0": [
+        1
+      ],
+      "a1-u08-l07-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「A chocolate cake」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（turkey）",
+        "resolution": "改前：\"Would you like rice or corn?\"；改後：\"We have turkey for Christmas dinner.\"",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（turkey）",
+        "resolution": "改前：\"你要米飯還是玉米？\"；改後：\"我們聖誕晚餐吃火雞。\"",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Breakfast」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「飯、蛋和玉米湯」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/14/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「早餐吃⋯」用 for breakfast（例如 eggs for breakfast）\"；改後：\"「早餐吃⋯」可用 for breakfast（例如 eggs for breakfast），也可寫 My breakfast is usually…\"",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"usually 放在一般動詞前面\"；改後：\"usually 通常放在一般動詞前（放句首也可以）\"",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"泛指蛋糕時不加 a（例如 I love cake）\"；改後：\"泛指蛋糕時不加 a（例如 I love cake）；說種類可加名稱（例如 chocolate cake）\"",
+        "resolvedAt": "2026-10-02T11:28:48Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「A chocolate cake」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:31Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Breakfast」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:31Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「smell」由位置 1 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:31Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「飯、蛋和玉米湯」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:31Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「巧克力蛋糕」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:31Z"
+      }
+    ]
+  }
+}

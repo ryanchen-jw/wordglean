@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u11-l02",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:05Z",
+  "properNouns": [
+    "Park",
+    "Street"
+  ],
+  "items": [
+    {
+      "id": "a1-u11-l02-q01",
+      "type": "wordCard",
+      "word": "ground",
+      "exampleEn": "The ball is on the ground.",
+      "exampleZh": "球在地上。",
+      "glossZh": "地面",
+      "distractorsZh": [
+        "天空",
+        "牆",
+        "屋頂"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q02",
+      "type": "wordCard",
+      "word": "site",
+      "exampleEn": "This is the site of the new school.",
+      "exampleZh": "這裡是新學校的預定地。",
+      "glossZh": "地點；用地",
+      "distractorsZh": [
+        "時間",
+        "名字",
+        "計畫"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q03",
+      "type": "wordCard",
+      "word": "street",
+      "exampleEn": "I live on this street.",
+      "exampleZh": "我住在這條街上。",
+      "glossZh": "街道",
+      "distractorsZh": [
+        "河",
+        "橋",
+        "山"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q04",
+      "type": "wordCard",
+      "word": "hospital",
+      "exampleEn": "My mother works at a hospital.",
+      "exampleZh": "我媽媽在醫院工作。",
+      "glossZh": "醫院",
+      "distractorsZh": [
+        "銀行",
+        "學校",
+        "車站"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q05",
+      "type": "wordCard",
+      "word": "church",
+      "exampleEn": "There is an old church in our town.",
+      "exampleZh": "我們鎮上有一座老教堂。",
+      "glossZh": "教堂",
+      "distractorsZh": [
+        "寺廟",
+        "宮殿",
+        "醫院"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q06",
+      "type": "wordCard",
+      "word": "bank",
+      "exampleEn": "I go to the bank to get some money.",
+      "exampleZh": "我去銀行領錢。",
+      "glossZh": "銀行",
+      "distractorsZh": [
+        "郵局",
+        "商店",
+        "醫院"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q07",
+      "type": "wordCard",
+      "word": "officer",
+      "exampleEn": "The officer at the airport asks me some questions.",
+      "exampleZh": "機場的官員問了我一些問題。",
+      "glossZh": "（機場、警察等）人員；官員",
+      "distractorsZh": [
+        "醫生",
+        "店員",
+        "司機"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q08",
+      "type": "wordCard",
+      "word": "sign",
+      "exampleEn": "The sign says \"No Smoking.\"",
+      "exampleZh": "那個告示寫著「禁止吸菸」。",
+      "glossZh": "標誌；告示牌",
+      "distractorsZh": [
+        "地圖",
+        "信",
+        "照片"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "Please don't sit on the ground.",
+      "sentenceZh": "請不要坐在地上。"
+    },
+    {
+      "id": "a1-u11-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "The hospital is on this street, near the bank.",
+      "audioZh": "醫院在這條街上，在銀行附近。",
+      "questionZh": "醫院在哪裡？",
+      "options": [
+        "Near the school",
+        "Near the church",
+        "Near the bank"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u11-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "They are building a new hospital on this site.",
+      "sentenceZh": "他們正在這塊地上蓋新醫院。"
+    },
+    {
+      "id": "a1-u11-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "An officer from the city visits our school.",
+      "sentenceZh": "一位市府官員來參觀我們學校。"
+    },
+    {
+      "id": "a1-u11-l02-q13",
+      "type": "mcq",
+      "stemEn": "I put my money in the ____.",
+      "stemZh": "我把錢存在銀行。",
+      "options": [
+        "sign",
+        "street",
+        "bank",
+        "officer"
+      ],
+      "optionGlossZh": [
+        "標誌",
+        "街道",
+        "銀行",
+        "官員"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u11-l02-q14",
+      "type": "mcq",
+      "stemEn": "My father is sick. He is in the ____.",
+      "stemZh": "我爸爸生病了，他在醫院。",
+      "options": [
+        "hospital",
+        "sign",
+        "site",
+        "officer"
+      ],
+      "optionGlossZh": [
+        "醫院",
+        "標誌",
+        "地點",
+        "官員"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u11-l02-q15",
+      "type": "reading",
+      "passageEn": "Welcome to our town! The bank is on Park Street, near the old church. The hospital is on the other side of the street. Look for the big red sign. The man at the door can help you.",
+      "passageZh": "歡迎來到我們鎮上！銀行在公園街上，靠近那座老教堂。醫院在街道的另一邊，找那個紅色的大招牌就對了。門口的那位先生可以幫你。",
+      "questions": [
+        {
+          "questionZh": "銀行在哪裡？",
+          "options": [
+            "老教堂附近",
+            "醫院裡面",
+            "學校旁邊"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "找醫院時要看什麼？",
+          "options": [
+            "一棵大樹",
+            "一面旗子",
+            "紅色的大招牌"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q16",
+      "type": "translate",
+      "promptZh": "請問銀行在哪裡？",
+      "hintWords": [
+        "bank"
+      ],
+      "referenceEn": [
+        "Excuse me, where is the bank?",
+        "Where is the bank, please?"
+      ],
+      "rubricZh": [
+        "問地點例如用 Where is…?（可縮寫成 Where's）；寫 Can you tell me where the bank is? 也正確",
+        "「請問」可用 Excuse me 開頭，或在句尾加 please"
+      ]
+    },
+    {
+      "id": "a1-u11-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "street",
+      "instructionZh": "用 street 造一個句子，說說你家附近的一條街。",
+      "referenceEn": [
+        "There are many shops on my street.",
+        "I live on a quiet street."
+      ],
+      "rubricZh": [
+        "「在⋯街上」常用 on（例如 on my street）",
+        "可用 There are…、I live on… 等說街上的情形"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u11-l02-q10": [
+        2
+      ],
+      "a1-u11-l02-q13": [
+        2
+      ],
+      "a1-u11-l02-q14": [
+        0
+      ],
+      "a1-u11-l02-q15#0": [
+        0
+      ],
+      "a1-u11-l02-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長第②③關裁示修正：第②關：officer 釋義貼合例句",
+        "resolution": "改前：\"官員\"；改後：\"（機場、警察等）人員；官員\"",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「bank」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「hospital」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「老教堂附近」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關 FIX：兩條要點不矛盾",
+        "resolution": "改前：\"用 Where is…? 問地點（可縮寫成 Where's）\"；改後：\"問地點例如用 Where is…?（可縮寫成 Where's）；寫 Can you tell me where the bank is? 也正確\"",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：第③關 FIX：兩條要點不矛盾",
+        "resolution": "改前：\"「請問」可用 Excuse me 開頭，或在句尾加 please；寫 Can you tell me where the bank is? 也正確\"；改後：\"「請問」可用 Excuse me 開頭，或在句尾加 please\"",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[]；改後：[\"Park\",\"Street\"]",
+        "resolvedAt": "2026-10-02T12:41:06Z"
+      }
+    ]
+  }
+}

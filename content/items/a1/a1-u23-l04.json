@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u23-l04",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:40:46Z",
+  "properNouns": [
+    "Dad",
+    "Mom"
+  ],
+  "items": [
+    {
+      "id": "a1-u23-l04-q01",
+      "type": "wordCard",
+      "word": "discuss",
+      "exampleEn": "Let's discuss the plan.",
+      "exampleZh": "我們來討論這個計畫吧。",
+      "glossZh": "討論",
+      "distractorsZh": [
+        "同意",
+        "忘記",
+        "完成"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q02",
+      "type": "wordCard",
+      "word": "check",
+      "exampleEn": "Please check your bag before you leave.",
+      "exampleZh": "離開前請檢查你的包包。",
+      "glossZh": "檢查；帳單",
+      "distractorsZh": [
+        "菜單",
+        "座位",
+        "杯子"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q03",
+      "type": "wordCard",
+      "word": "laugh",
+      "exampleEn": "The baby laughs a lot.",
+      "exampleZh": "寶寶很常笑。",
+      "glossZh": "笑",
+      "distractorsZh": [
+        "哭",
+        "叫",
+        "睡"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q04",
+      "type": "wordCard",
+      "word": "guess",
+      "exampleEn": "Guess what I have in my hand!",
+      "exampleZh": "猜猜我手裡有什麼！",
+      "glossZh": "猜",
+      "distractorsZh": [
+        "看",
+        "說",
+        "拿"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q05",
+      "type": "wordCard",
+      "word": "forget",
+      "exampleEn": "Don't forget your umbrella.",
+      "exampleZh": "別忘了你的雨傘。",
+      "glossZh": "忘記",
+      "distractorsZh": [
+        "記得",
+        "帶",
+        "買"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q06",
+      "type": "wordCard",
+      "word": "imagine",
+      "exampleEn": "Imagine you are a bird.",
+      "exampleZh": "想像你是一隻鳥。",
+      "glossZh": "想像",
+      "distractorsZh": [
+        "相信",
+        "記得",
+        "忘記"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q07",
+      "type": "wordCard",
+      "word": "finish",
+      "exampleEn": "I finish work at six.",
+      "exampleZh": "我六點下班。",
+      "glossZh": "完成；結束",
+      "distractorsZh": [
+        "開始",
+        "休息",
+        "等待"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q08",
+      "type": "wordCard",
+      "word": "shake",
+      "exampleEn": "The dog shakes its body after a swim.",
+      "exampleZh": "狗游完泳後抖一抖身體。",
+      "glossZh": "搖；搖動",
+      "distractorsZh": [
+        "切",
+        "倒",
+        "洗"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "Did you finish your homework?",
+      "sentenceZh": "你寫完功課了嗎？"
+    },
+    {
+      "id": "a1-u23-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "Guess how old I am. I am forty!",
+      "audioZh": "猜猜我幾歲，我四十歲了！",
+      "questionZh": "說話者幾歲？",
+      "options": [
+        "Thirty",
+        "Fourteen",
+        "Forty"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u23-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "Shake the bottle before you drink.",
+      "sentenceZh": "喝之前先搖一搖瓶子。"
+    },
+    {
+      "id": "a1-u23-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "Mom always checks the windows before bed.",
+      "sentenceZh": "媽媽睡前總會檢查窗戶。"
+    },
+    {
+      "id": "a1-u23-l04-q13",
+      "type": "mcq",
+      "stemEn": "____ you can fly. Where do you want to go?",
+      "stemZh": "想像你會飛，你想去哪裡？",
+      "options": [
+        "Laugh",
+        "Finish",
+        "Imagine",
+        "Check"
+      ],
+      "optionGlossZh": [
+        "笑",
+        "完成",
+        "想像",
+        "檢查"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u23-l04-q14",
+      "type": "mcq",
+      "stemEn": "Waiter, can we have the ____, please? We want to pay.",
+      "stemZh": "服務生，請給我們帳單，我們要結帳。",
+      "options": [
+        "guess",
+        "check",
+        "laugh",
+        "imagine"
+      ],
+      "optionGlossZh": [
+        "猜",
+        "帳單",
+        "笑",
+        "想像"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u23-l04-q15",
+      "type": "reading",
+      "passageEn": "After dinner at a quiet restaurant, my family discusses the food. My dad says the fish was the best. My little sister makes a funny face, and we all laugh. Then Dad asks for the check. \"Guess how much it is,\" he says. Mom says, \"I can't imagine!\"",
+      "passageZh": "在一家安靜的餐廳吃完晚餐後，我們全家討論起食物。爸爸說魚最好吃。妹妹做了個鬼臉，我們都笑了。接著爸爸請服務生拿帳單來，說：「猜猜看多少錢。」媽媽說：「我不敢想像！」",
+      "questions": [
+        {
+          "questionZh": "晚餐後全家人在討論什麼？",
+          "options": [
+            "食物",
+            "電影",
+            "旅行"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "爸爸說什麼最好吃？",
+          "options": [
+            "蛋糕",
+            "雞肉",
+            "魚"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q16",
+      "type": "translate",
+      "promptZh": "別忘了明天的考試。",
+      "hintWords": [
+        "forget"
+      ],
+      "referenceEn": [
+        "Don't forget the test tomorrow.",
+        "Don't forget tomorrow's test."
+      ],
+      "rubricZh": [
+        "「別忘了」用 Don't forget…",
+        "forget 後面可直接接名詞，或接 to＋原形（例如 forget to study）"
+      ]
+    },
+    {
+      "id": "a1-u23-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "finish",
+      "instructionZh": "用 finish 造一個句子，說說你幾點完成某件事。",
+      "referenceEn": [
+        "I finish lunch at one.",
+        "I finished my homework at eight."
+      ],
+      "rubricZh": [
+        "finish 後面可接名詞或動名詞（例如 finish work、finish eating）",
+        "時態配合內容（例如習慣用現在簡單式，已完成的事用過去式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T13:19:27Z",
+    "verdicts": {
+      "a1-u23-l04-q10": [
+        2
+      ],
+      "a1-u23-l04-q13": [
+        2
+      ],
+      "a1-u23-l04-q14": [
+        1
+      ],
+      "a1-u23-l04-q15#0": [
+        0
+      ],
+      "a1-u23-l04-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關 D8：單元主題常用義「檢查」為主",
+        "resolution": "改前：\"Can we have the check, please?\"；改後：\"Please check your bag before you leave.\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關 D8：單元主題常用義「檢查」為主",
+        "resolution": "改前：\"請給我們帳單。\"；改後：\"離開前請檢查你的包包。\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關：例句示範動詞用法",
+        "resolution": "改前：\"Give the bottle a shake.\"；改後：\"The dog shakes its body after a swim.\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：例句示範動詞用法",
+        "resolution": "改前：\"把瓶子搖一搖。\"；改後：\"狗游完泳後抖一抖身體。\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關 D8：帳單義保留在情境句、不與單字卡雷同",
+        "resolution": "改前：\"Please check your answers again.\"；改後：\"Can we have the check, please?\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：第③關 D8：帳單義保留在情境句、不與單字卡雷同",
+        "resolution": "改前：\"請再檢查一次你的答案。\"；改後：\"請給我們帳單。\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/3",
+        "message": "執行長第②③關裁示修正：第③關 D8：句首 Check 是動詞「檢查」",
+        "resolution": "改前：\"帳單\"；改後：\"檢查\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第③關 D9：結尾語感；b3 裁示：自然複用 u21 形容詞",
+        "resolution": "改前：\"After dinner at a restaurant, my family discusses the food. My dad says the fish was the best. My little sister makes a funny face, and we all laugh. Then Dad asks for the check. \\\"Guess how much it is,\\\" he says. Mom does not want to imagine!\"；改後：\"After dinner at a quiet restaurant, my family discusses the food. My dad says the fish was the best. My little sister makes a funny face, and we all laugh. Then Dad asks for the check. \\\"Guess how much it is,\\\" he says. Mom says, \\\"I can't imagine!\\\"\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第③關 D9：結尾語感；b3 裁示：自然複用 u21 形容詞",
+        "resolution": "改前：\"在餐廳吃完晚餐後，我們全家討論起食物。爸爸說魚最好吃。妹妹做了個鬼臉，我們都笑了。接著爸爸請服務生拿帳單來，說：「猜猜看多少錢。」媽媽根本不敢想像！\"；改後：\"在一家安靜的餐廳吃完晚餐後，我們全家討論起食物。爸爸說魚最好吃。妹妹做了個鬼臉，我們都笑了。接著爸爸請服務生拿帳單來，說：「猜猜看多少錢。」媽媽說：「我不敢想像！」\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/16/referenceEn/0",
+        "message": "執行長第②③關裁示修正：第②關＋第③關 D13：參考答案要有時刻、不與單字卡相同",
+        "resolution": "改前：\"I finish work at six.\"；改後：\"I finish lunch at one.\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第②關＋第③關 D13：參考答案要有時刻、不與單字卡相同",
+        "resolution": "改前：\"I finished my homework before dinner.\"；改後：\"I finished my homework at eight.\"",
+        "resolvedAt": "2026-10-02T13:23:25Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長最終複審修正：FIX#1「檢查」詞義補單字卡以外的情境句",
+        "resolution": "改前：\"Can we have the check, please?\"；改後：\"Mom always checks the windows before bed.\"",
+        "resolvedAt": "2026-10-02T13:40:47Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長最終複審修正：FIX#1「檢查」詞義補單字卡以外的情境句",
+        "resolution": "改前：\"請給我們帳單。\"；改後：\"媽媽睡前總會檢查窗戶。\"",
+        "resolvedAt": "2026-10-02T13:40:47Z"
+      }
+    ]
+  }
+}

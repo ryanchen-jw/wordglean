@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l08",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:42:19Z",
+  "properNouns": [
+    "Lucy"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l08-q01",
+      "type": "wordCard",
+      "word": "sentence",
+      "exampleEn": "Please read the first sentence.",
+      "exampleZh": "請唸第一個句子。",
+      "glossZh": "句子",
+      "distractorsZh": [
+        "單字",
+        "段落",
+        "頁"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q02",
+      "type": "wordCard",
+      "word": "suggestion",
+      "exampleEn": "Do you have any suggestions?",
+      "exampleZh": "你有什麼建議嗎？",
+      "glossZh": "建議",
+      "distractorsZh": [
+        "問題",
+        "答案",
+        "規則"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q03",
+      "type": "wordCard",
+      "word": "elementary",
+      "exampleEn": "My son goes to an elementary school near our home.",
+      "exampleZh": "我兒子讀我們家附近的小學。",
+      "glossZh": "初等的；小學的",
+      "distractorsZh": [
+        "複雜的",
+        "困難的",
+        "特別的"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q04",
+      "type": "wordCard",
+      "word": "ideal",
+      "exampleEn": "This is an ideal place for a picnic.",
+      "exampleZh": "這是野餐的理想地點。",
+      "glossZh": "理想的",
+      "distractorsZh": [
+        "危險的",
+        "吵鬧的",
+        "普通的"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q05",
+      "type": "wordCard",
+      "word": "math",
+      "exampleEn": "I am good at math.",
+      "exampleZh": "我很擅長數學。",
+      "glossZh": "數學",
+      "distractorsZh": [
+        "科學",
+        "歷史",
+        "語言"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q06",
+      "type": "wordCard",
+      "word": "pen",
+      "exampleEn": "Can I use your pen?",
+      "exampleZh": "我可以用你的筆嗎？",
+      "glossZh": "筆",
+      "distractorsZh": [
+        "尺",
+        "書",
+        "紙"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q07",
+      "type": "wordCard",
+      "word": "sum",
+      "exampleEn": "The sum of two and three is five.",
+      "exampleZh": "二加三的和是五。",
+      "glossZh": "總和；總數",
+      "distractorsZh": [
+        "差",
+        "一半",
+        "平均"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q08",
+      "type": "listenType",
+      "sentenceEn": "Please write one sentence with a pen.",
+      "sentenceZh": "請用筆寫一個句子。"
+    },
+    {
+      "id": "a1-u16-l08-q09",
+      "type": "listenChoice",
+      "audioEn": "My suggestion is to study math every day.",
+      "audioZh": "我的建議是每天都讀數學。",
+      "questionZh": "說話者建議什麼？",
+      "options": [
+        "Sleep early",
+        "Read more books",
+        "Study math every day"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l08-q10",
+      "type": "shadowing",
+      "sentenceEn": "This is an ideal job for me.",
+      "sentenceZh": "這對我來說是理想的工作。"
+    },
+    {
+      "id": "a1-u16-l08-q11",
+      "type": "shadowing",
+      "sentenceEn": "My sister teaches at an elementary school.",
+      "sentenceZh": "我姊姊在小學教書。"
+    },
+    {
+      "id": "a1-u16-l08-q12",
+      "type": "mcq",
+      "stemEn": "The ____ of four and six is ten.",
+      "stemZh": "四加六的和是十。",
+      "options": [
+        "pen",
+        "sum",
+        "sentence",
+        "suggestion"
+      ],
+      "optionGlossZh": [
+        "筆",
+        "總和",
+        "句子",
+        "建議"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l08-q13",
+      "type": "mcq",
+      "stemEn": "Thank you for your ____. It is a good idea.",
+      "stemZh": "謝謝你的建議，這是個好主意。",
+      "options": [
+        "sum",
+        "math",
+        "pen",
+        "suggestion"
+      ],
+      "optionGlossZh": [
+        "總和",
+        "數學",
+        "筆",
+        "建議"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u16-l08-q14",
+      "type": "reading",
+      "passageEn": "Lucy teaches math at an elementary school. Her students are young, so she makes math fun. She tells them a short story with numbers in it, and they find the sum. Then each student writes one sentence about it with a pen. The other teachers say it is an ideal way to learn.",
+      "passageZh": "Lucy 在小學教數學。她的學生年紀小，所以她把數學變得很好玩。她會講一個有數字的小故事，讓學生算出總和，然後每個學生用筆寫一個關於這個故事的句子。其他老師都說這是理想的學習方式。",
+      "questions": [
+        {
+          "questionZh": "Lucy 教什麼科目？",
+          "options": [
+            "美術",
+            "英文",
+            "數學"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "學生用筆寫什麼？",
+          "options": [
+            "一個句子",
+            "一個故事",
+            "一個數字"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q15",
+      "type": "translate",
+      "promptZh": "這是一個理想的地方。",
+      "hintWords": [
+        "ideal"
+      ],
+      "referenceEn": [
+        "This is an ideal place.",
+        "It is an ideal place."
+      ],
+      "rubricZh": [
+        "ideal 可放在名詞前（例如 an ideal place；母音開頭用 an），也可放在 be 動詞後（例如 This place is ideal.）",
+        "寫 This is the ideal place. 也正確"
+      ]
+    },
+    {
+      "id": "a1-u16-l08-q16",
+      "type": "makeSentence",
+      "targetWord": "suggestion",
+      "instructionZh": "用 suggestion 造一個句子，給朋友一個建議，或說說你收到的建議。",
+      "referenceEn": [
+        "My suggestion is to take the bus.",
+        "My teacher has a good suggestion for me."
+      ],
+      "rubricZh": [
+        "可用 My suggestion is…，或 have a suggestion、give a suggestion 等",
+        "動詞配合主詞和時態"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l08-q09": [
+        2
+      ],
+      "a1-u16-l08-q12": [
+        1
+      ],
+      "a1-u16-l08-q13": [
+        3
+      ],
+      "a1-u16-l08-q14#0": [
+        2
+      ],
+      "a1-u16-l08-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長第②③關裁示修正：第③關 S9：釋義對上 elementary school",
+        "resolution": "改前：\"初級的；基礎的\"；改後：\"初等的；小學的\"",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/7/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"Can I use your pen to write a sentence?\"；改後：\"Please write one sentence with a pen.\"",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/7/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"我可以用你的筆寫一個句子嗎？\"；改後：\"請用筆寫一個句子。\"",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Study math every day」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「sum」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/13/passageEn",
+        "message": "執行長第②③關裁示修正：第②③關 FIX：sum 用本課「總和」詞義",
+        "resolution": "改前：\"Lucy teaches math at an elementary school. Her students are young, so she makes math fun. She tells them a short story with a sum in it. Then each student writes one sentence about it with a pen. The other teachers say it is an ideal way to learn.\"；改後：\"Lucy teaches math at an elementary school. Her students are young, so she makes math fun. She tells them a short story with numbers in it, and they find the sum. Then each student writes one sentence about it with a pen. The other teachers say it is an ideal way to learn.\"",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/13/passageZh",
+        "message": "執行長第②③關裁示修正：第②③關 FIX：中譯同步",
+        "resolution": "改前：\"Lucy 在小學教數學。她的學生年紀小，所以她把數學變得很好玩。她會講一個有加法題的小故事，然後每個學生用筆寫一個關於這個故事的句子。其他老師都說這是理想的學習方式。\"；改後：\"Lucy 在小學教數學。她的學生年紀小，所以她把數學變得很好玩。她會講一個有數字的小故事，讓學生算出總和，然後每個學生用筆寫一個關於這個故事的句子。其他老師都說這是理想的學習方式。\"",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「數學」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「一個句子」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/14/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第②③關 FIX",
+        "resolution": "改前：\"ideal 放在名詞前面（例如 an ideal place；母音開頭用 an）\"；改後：\"ideal 可放在名詞前（例如 an ideal place；母音開頭用 an），也可放在 be 動詞後（例如 This place is ideal.）\"",
+        "resolvedAt": "2026-10-02T12:42:19Z"
+      }
+    ]
+  }
+}

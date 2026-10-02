@@ -5,7 +5,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { blockingErrors, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
+import { blockingErrors, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
 import { loadCheckContext } from '../scripts/lib/items-context.mjs';
 
 const base = loadCheckContext({ allowlist: 'no-such-file.json' });
@@ -86,6 +86,15 @@ test('台灣通行寫法不誤擋：台灣、連接、支持、菜單', () => {
   card(doc, 1).exampleZh = '服務員送來菜單。';
   card(doc, 2).exampleZh = '她沒有回我的消息。';
   card(doc, 3).exampleZh = '這裡不准停車，那只不過是小事。';
+  assert.deepEqual(checkA1(doc), []);
+});
+
+test('開發端撰寫與 A2 回報撞到的 opencc 誤擋：傢伙、打開、類型、代碼、夾克扣、圖像、查看、了解、通信、設備、高級、觸摸', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleZh = 'Ben 是個不錯的傢伙，請打開窗戶。';
+  card(doc, 1).exampleZh = '這是一種新類型的手機，門的代碼是多少？';
+  card(doc, 2).exampleZh = '我的夾克扣不起來，請查看這張圖像。';
+  card(doc, 3).exampleZh = '我了解這台通信設備，它很高級，請不要觸摸。';
   assert.deepEqual(checkA1(doc), []);
 });
 
@@ -315,6 +324,35 @@ test('多字詞：according to 在 B1 通過、在 A1 報 OVER_LEVEL', () => {
   assert.match(errors[0].message, /according to\(B1\)/);
 });
 
+test('含「.」「-」的 headword 整段比對（同多字詞）：Mr.／Mrs.／T-shirt／a.m.／p.m. 不宣告專有名詞也通過', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleEn = 'Mr. Smith and Mrs. Smith have a T-shirt.';
+  card(doc, 1).exampleEn = 'The bus comes at 7 a.m. and at 9 P.M.';
+  assert.deepEqual(checkA1(doc), []);
+});
+
+test('含「-」的 headword 加複數 s 也整段比對：T-shirts 不宣告專有名詞也通過', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleEn = 'I have two T-shirts in the bag.';
+  assert.deepEqual(checkA1(doc), []);
+});
+
+test('含「.」的 headword 照自己的級距判：Ms.（A2）在 A1 報 OVER_LEVEL，不是 UNLEVELED', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleEn = 'Ms. Smith is in the park.';
+  const errors = checkA1(doc);
+  assert.deepEqual(codes(errors), ['OVER_LEVEL items/0/exampleEn']);
+  assert.match(errors[0].message, /ms\.\(A2\)/);
+});
+
+test('複合字的不規則複數用詞形還原回到 headword：grandchildren（grandchild A2）在 A1 報 OVER_LEVEL、不是 UNLEVELED', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleEn = 'The grandchildren are in the park.';
+  const errors = checkA1(doc);
+  assert.deepEqual(codes(errors), ['OVER_LEVEL items/0/exampleEn']);
+  assert.match(errors[0].message, /grandchildren\(A2\)/);
+});
+
 test('LENGTH：A1 句子 2 字、短文過短', () => {
   const doc = fixture('a1-u01-l01');
   card(doc, 1).exampleEn = 'Be quiet.';
@@ -414,6 +452,44 @@ test('正解位置②：閱讀小題逐題計入（每篇 2 小題）', () => {
     items: [{ id: 'r', type: 'reading', questions: [{ options: ['a', 'b'], answer: 1 }, { options: ['a', 'b'], answer: 1 }] }],
   }));
   assert.deepEqual(codes(checkLevelAnswerPositions(docs)), ['ANSWER_POSITION_LEVEL A1']);
+});
+
+test('正解位置④：同一級 mcq 第 2 題對第 1 題的位置差固定（相鄰 ±1）→ ANSWER_POSITION_PATTERN；各差值平均則不報', () => {
+  const lesson = (n, answers, level = 'A1') => ({
+    lessonId: `${level.toLowerCase()}-u01-l${String(n).padStart(2, '0')}`,
+    level,
+    items: answers.map((answer, k) => ({ id: `q${k}`, type: 'mcq', options: ['a', 'b', 'c', 'd'], answer })),
+  });
+  // 反例：TASK-9 第 1 批重排後的規律——每課第 2 題＝第 1 題 ±1（mod 4），12 課全部相鄰
+  const adjacent = [[2, 3], [0, 1], [3, 2], [3, 0], [1, 2], [0, 3], [2, 1], [1, 0], [3, 0], [0, 1], [2, 3], [1, 2]];
+  const errors = checkAnswerPositionPatterns(adjacent.map((a, n) => lesson(n + 1, a)));
+  assert.deepEqual(codes(errors), ['ANSWER_POSITION_PATTERN A1']);
+  assert.match(errors[0].message, /mcq 第 2 題對第 1 題.*集中在 1：8\/12/);
+  // 差值 0／1／2／3 各 3 課 → 不報
+  const even = [[0, 0], [1, 1], [2, 2], [0, 1], [1, 2], [2, 3], [0, 2], [1, 3], [2, 0], [0, 3], [1, 0], [2, 1]];
+  assert.deepEqual(checkAnswerPositionPatterns(even.map((a, n) => lesson(n + 1, a))), []);
+  // 反例：實際的相鄰規律——差值只有 1 與 3（各半），0、2 從未出現；24 課時均勻應各約 6 次 → 報
+  const plusMinus = Array.from({ length: 24 }, (_, n) => [n % 4, (n % 4 + (n % 2 ? 3 : 1)) % 4]);
+  const pm = checkAnswerPositionPatterns(plusMinus.map((a, n) => lesson(n + 1, a)));
+  assert.deepEqual(codes(pm), ['ANSWER_POSITION_PATTERN A1']);
+  assert.match(pm[0].message, /從未出現 0、2/);
+  // 樣本少（12 課、每個差值期望 3 次）時，差值沒出現不算規律
+  assert.deepEqual(checkAnswerPositionPatterns(plusMinus.slice(0, 12).map((a, n) => lesson(n + 1, a))), []);
+  // 不足 8 課不判；不同級分開算
+  assert.deepEqual(checkAnswerPositionPatterns(adjacent.slice(0, 7).map((a, n) => lesson(n + 1, a))), []);
+  const mixed = [...adjacent.slice(0, 7).map((a, n) => lesson(n + 1, a)), ...adjacent.slice(7).map((a, n) => lesson(n + 1, a, 'B1'))];
+  assert.deepEqual(checkAnswerPositionPatterns(mixed), []);
+});
+
+test('正解位置④：閱讀第 2 小題對第 1 小題的位置差固定 → ANSWER_POSITION_PATTERN', () => {
+  const docs = Array.from({ length: 9 }, (_, n) => ({
+    lessonId: `a1-u01-l${String(n + 1).padStart(2, '0')}`,
+    level: 'A1',
+    items: [{ id: 'r', type: 'reading', questions: [{ options: ['a', 'b', 'c'], answer: n % 3 }, { options: ['a', 'b', 'c'], answer: (n + 1) % 3 }] }],
+  }));
+  const errors = checkAnswerPositionPatterns(docs);
+  assert.deepEqual(codes(errors), ['ANSWER_POSITION_PATTERN A1']);
+  assert.match(errors[0].message, /閱讀第 2 小題對第 1 小題.*集中在 1：9\/9/);
 });
 
 test('最終審後修正條目可標記已複審（rechecked：by＋at）；rechecked 缺 at → SCHEMA', () => {

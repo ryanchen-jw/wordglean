@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u03-l06",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:25Z",
+  "properNouns": [
+    "May",
+    "Saturday",
+    "Sunday",
+    "Jenny"
+  ],
+  "items": [
+    {
+      "id": "a1-u03-l06-q01",
+      "type": "wordCard",
+      "word": "evening",
+      "exampleEn": "I watch TV in the evening.",
+      "exampleZh": "我晚上看電視。",
+      "glossZh": "傍晚；晚上",
+      "distractorsZh": [
+        "早上",
+        "中午",
+        "半夜"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q02",
+      "type": "wordCard",
+      "word": "nine",
+      "exampleEn": "My daughter is nine.",
+      "exampleZh": "我女兒九歲。",
+      "glossZh": "九",
+      "distractorsZh": [
+        "八",
+        "十",
+        "第九"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q03",
+      "type": "wordCard",
+      "word": "afternoon",
+      "exampleEn": "We have a meeting this afternoon.",
+      "exampleZh": "我們今天下午有會議。",
+      "glossZh": "下午",
+      "distractorsZh": [
+        "早上",
+        "晚上",
+        "中午"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q04",
+      "type": "wordCard",
+      "word": "weekend",
+      "exampleEn": "What do you do on the weekend?",
+      "exampleZh": "你週末都做什麼？",
+      "glossZh": "週末",
+      "distractorsZh": [
+        "平日",
+        "月底",
+        "早上"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q05",
+      "type": "wordCard",
+      "word": "date",
+      "exampleEn": "What is the date today?",
+      "exampleZh": "今天幾月幾號？",
+      "glossZh": "日期",
+      "distractorsZh": [
+        "時間",
+        "地址",
+        "天氣"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q06",
+      "type": "wordCard",
+      "word": "winter",
+      "exampleEn": "It is cold in winter.",
+      "exampleZh": "冬天很冷。",
+      "glossZh": "冬天",
+      "distractorsZh": [
+        "夏天",
+        "春天",
+        "秋天"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q07",
+      "type": "wordCard",
+      "word": "tomorrow",
+      "exampleEn": "See you tomorrow!",
+      "exampleZh": "明天見！",
+      "glossZh": "明天",
+      "distractorsZh": [
+        "昨天",
+        "今天",
+        "週末"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q08",
+      "type": "wordCard",
+      "word": "quarter",
+      "exampleEn": "It is a quarter past nine.",
+      "exampleZh": "現在九點十五分。",
+      "glossZh": "一刻鐘；十五分鐘",
+      "distractorsZh": [
+        "半小時",
+        "一小時",
+        "一分鐘"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "The class starts at nine tomorrow.",
+      "sentenceZh": "明天的課九點開始。"
+    },
+    {
+      "id": "a1-u03-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "The meeting is at a quarter past nine tomorrow.",
+      "audioZh": "會議在明天九點十五分。",
+      "questionZh": "會議是什麼時候？",
+      "options": [
+        "Tomorrow at 9:15",
+        "Today at 9:15",
+        "Tomorrow at 9:45"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u03-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "We go to the mountains on the weekend.",
+      "sentenceZh": "我們週末去山上。"
+    },
+    {
+      "id": "a1-u03-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "My birthday is in winter.",
+      "sentenceZh": "我的生日在冬天。"
+    },
+    {
+      "id": "a1-u03-l06-q13",
+      "type": "mcq",
+      "stemEn": "What is the ____ today? It is May 5.",
+      "stemZh": "今天幾月幾號？今天是五月五日。",
+      "options": [
+        "quarter",
+        "date",
+        "weekend",
+        "evening"
+      ],
+      "optionGlossZh": [
+        "一刻鐘",
+        "日期",
+        "週末",
+        "傍晚"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u03-l06-q14",
+      "type": "mcq",
+      "stemEn": "I will see you ____ morning.",
+      "stemZh": "明天早上見。",
+      "options": [
+        "evening",
+        "tomorrow",
+        "afternoon",
+        "nine"
+      ],
+      "optionGlossZh": [
+        "傍晚",
+        "明天",
+        "下午",
+        "九"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u03-l06-q15",
+      "type": "reading",
+      "passageEn": "It is winter now, and this weekend is cold. On Saturday afternoon, Jenny goes to a movie with her sister. The movie starts at a quarter past two. In the evening, they eat hot soup at home. Tomorrow is Sunday, and they will visit their aunt.",
+      "passageZh": "現在是冬天，這個週末很冷。星期六下午，Jenny 和她妹妹去看電影，電影兩點十五分開始。晚上她們在家喝熱湯。明天是星期天，她們要去看阿姨。",
+      "questions": [
+        {
+          "questionZh": "電影幾點開始？",
+          "options": [
+            "兩點四十五分",
+            "兩點半",
+            "兩點十五分"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "她們明天要做什麼？",
+          "options": [
+            "去看電影",
+            "去看阿姨",
+            "在家喝湯"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q16",
+      "type": "translate",
+      "promptZh": "我們明天晚上見面吧。",
+      "hintWords": [
+        "tomorrow",
+        "evening"
+      ],
+      "referenceEn": [
+        "Let's meet tomorrow evening.",
+        "Let's meet tomorrow night."
+      ],
+      "rubricZh": [
+        "「明天晚上」可寫 tomorrow evening、tomorrow night 等，前面不加 in 或 on",
+        "提議可用 Let's 等（例如 Let's meet）"
+      ]
+    },
+    {
+      "id": "a1-u03-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "weekend",
+      "instructionZh": "用 weekend 造一個句子，說說你這個週末要做什麼。",
+      "referenceEn": [
+        "I will visit my grandmother this weekend.",
+        "This weekend, I am going to the beach."
+      ],
+      "rubricZh": [
+        "「這個週末」用 this weekend，前面不加 on（放句首或句尾都可以）",
+        "未來的計畫用表示未來的寫法（例如 will、be going to、現在進行式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u03-l06-q10": [
+        0
+      ],
+      "a1-u03-l06-q13": [
+        1
+      ],
+      "a1-u03-l06-q14": [
+        1
+      ],
+      "a1-u03-l06-q15#0": [
+        2
+      ],
+      "a1-u03-l06-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（nine）",
+        "resolution": "改前：\"See you tomorrow afternoon.\"；改後：\"See you tomorrow at nine.\"",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（nine）",
+        "resolution": "改前：\"明天下午見。\"；改後：\"明天九點見。\"",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Tomorrow at 9:15」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「tomorrow」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「兩點十五分」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「去看阿姨」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「明天晚上」可寫 tomorrow evening 或 tomorrow night，前面不加 in 或 on\"；改後：\"「明天晚上」可寫 tomorrow evening、tomorrow night 等，前面不加 in 或 on\"",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"提議可用 Let's（例如 Let's meet）\"；改後：\"提議可用 Let's 等（例如 Let's meet）\"",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「這個週末」用 this weekend，前面不加 on\"；改後：\"「這個週末」用 this weekend，前面不加 on（放句首或句尾都可以）\"",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"未來的計畫用表示未來的寫法（例如 will、be going to）\"；改後：\"未來的計畫用表示未來的寫法（例如 will、be going to、現在進行式）\"",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"May\",\"Saturday\",\"Sunday\",\"Jenny\"]；改後：[\"Jenny\"]",
+        "resolvedAt": "2026-10-02T11:28:10Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"See you tomorrow at nine.\"；改後：\"The class starts at nine tomorrow.\"",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"明天九點見。\"；改後：\"明天的課九點開始。\"",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Tomorrow at 9:15」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"It is very cold here in winter.\"；改後：\"My birthday is in winter.\"",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"這裡冬天很冷。\"；改後：\"我的生日在冬天。\"",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「date」由位置 3 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「tomorrow」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「兩點十五分」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「去看阿姨」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Jenny\"]；改後：[\"May\",\"Saturday\",\"Sunday\",\"Jenny\"]",
+        "resolvedAt": "2026-10-02T12:39:25Z"
+      }
+    ]
+  }
+}

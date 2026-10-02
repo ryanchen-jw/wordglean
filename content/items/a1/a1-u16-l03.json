@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:42:06Z",
+  "properNouns": [
+    "Ben",
+    "Lin",
+    "English",
+    "Taipei"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l03-q01",
+      "type": "wordCard",
+      "word": "result",
+      "exampleEn": "The test results are good.",
+      "exampleZh": "考試結果很好。",
+      "glossZh": "結果；成績",
+      "distractorsZh": [
+        "原因",
+        "問題",
+        "計畫"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q02",
+      "type": "wordCard",
+      "word": "reason",
+      "exampleEn": "There is a reason for everything.",
+      "exampleZh": "凡事都有原因。",
+      "glossZh": "理由；原因",
+      "distractorsZh": [
+        "結果",
+        "答案",
+        "目的"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q03",
+      "type": "wordCard",
+      "word": "teacher",
+      "exampleEn": "Our English teacher is very nice.",
+      "exampleZh": "我們的英文老師人很好。",
+      "glossZh": "老師",
+      "distractorsZh": [
+        "學生",
+        "醫生",
+        "校長"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q04",
+      "type": "wordCard",
+      "word": "college",
+      "exampleEn": "My brother goes to college in Taipei.",
+      "exampleZh": "我哥哥在台北讀大學。",
+      "glossZh": "大學；學院",
+      "distractorsZh": [
+        "小學",
+        "公司",
+        "醫院"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q05",
+      "type": "wordCard",
+      "word": "course",
+      "exampleEn": "I am taking a cooking course.",
+      "exampleZh": "我正在上烹飪課程。",
+      "glossZh": "課程",
+      "distractorsZh": [
+        "考試",
+        "學校",
+        "老師"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q06",
+      "type": "wordCard",
+      "word": "class",
+      "exampleEn": "We have English class at nine.",
+      "exampleZh": "我們九點有英文課。",
+      "glossZh": "課；班級",
+      "distractorsZh": [
+        "下課",
+        "考試",
+        "假期"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q07",
+      "type": "wordCard",
+      "word": "paper",
+      "exampleEn": "Write your answer on this paper.",
+      "exampleZh": "把答案寫在這張紙上。",
+      "glossZh": "紙",
+      "distractorsZh": [
+        "布",
+        "筆",
+        "木頭"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q08",
+      "type": "wordCard",
+      "word": "teach",
+      "exampleEn": "My mother teaches math.",
+      "exampleZh": "我媽媽教數學。",
+      "glossZh": "教",
+      "distractorsZh": [
+        "學",
+        "讀",
+        "寫"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "Our teacher teaches us history.",
+      "sentenceZh": "我們的老師教我們歷史。"
+    },
+    {
+      "id": "a1-u16-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "I am not in class today because I am sick.",
+      "audioZh": "我今天沒去上課，因為我生病了。",
+      "questionZh": "說話者為什麼沒去上課？",
+      "options": [
+        "Sick",
+        "Late",
+        "Busy"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u16-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "The teacher gives us our test results.",
+      "sentenceZh": "老師把考試結果發給我們。"
+    },
+    {
+      "id": "a1-u16-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "Tell me the reason, please.",
+      "sentenceZh": "請告訴我原因。"
+    },
+    {
+      "id": "a1-u16-l03-q13",
+      "type": "mcq",
+      "stemEn": "My sister studies art at ____.",
+      "stemZh": "我姊姊在大學念藝術。",
+      "options": [
+        "course",
+        "college",
+        "reason",
+        "result"
+      ],
+      "optionGlossZh": [
+        "課程",
+        "大學",
+        "理由",
+        "結果"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l03-q14",
+      "type": "mcq",
+      "stemEn": "Mr. Lin ____ English at our school.",
+      "stemZh": "林先生在我們學校教英文。",
+      "options": [
+        "paper",
+        "class",
+        "teaches",
+        "result"
+      ],
+      "optionGlossZh": [
+        "紙",
+        "課",
+        "教",
+        "結果"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l03-q15",
+      "type": "reading",
+      "passageEn": "Ben is a college student. This year, he is taking a computer course. His teacher is very good, and she teaches the class with many examples. Ben's test result is great. The reason is that he studies every night.",
+      "passageZh": "Ben 是大學生。今年他在上一門電腦課程。他的老師很好，上課時會舉很多例子。Ben 的考試成績很棒，原因是他每天晚上都讀書。",
+      "questions": [
+        {
+          "questionZh": "Ben 今年上什麼課程？",
+          "options": [
+            "英文課",
+            "電腦課",
+            "數學課"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Ben 考試成績好的原因是什麼？",
+          "options": [
+            "他上課有錄音",
+            "考試很簡單",
+            "他每天晚上都讀書"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q16",
+      "type": "translate",
+      "promptZh": "請把你的名字寫在這張紙上。",
+      "hintWords": [
+        "paper"
+      ],
+      "referenceEn": [
+        "Please write your name on this paper.",
+        "Please write your name on this piece of paper."
+      ],
+      "rubricZh": [
+        "「在紙上」用 on（例如 on this paper、on this piece of paper）",
+        "please 放句首或句尾都可以"
+      ]
+    },
+    {
+      "id": "a1-u16-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "teach",
+      "instructionZh": "用 teach 造一個句子，說說誰教你什麼，或你會教別人什麼。",
+      "referenceEn": [
+        "My father teaches me to swim.",
+        "I can teach you how to cook rice."
+      ],
+      "rubricZh": [
+        "teach 後面可接人和科目（例如 teach me English），或 teach someone to＋原形、how to…",
+        "動詞配合主詞和時態（例如 My father teaches、taught）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l03-q10": [
+        0
+      ],
+      "a1-u16-l03-q13": [
+        1
+      ],
+      "a1-u16-l03-q14": [
+        2
+      ],
+      "a1-u16-l03-q15#0": [
+        1
+      ],
+      "a1-u16-l03-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Sick」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:06Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「college」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:06Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「teaches」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:06Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「電腦課」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:06Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
+        "resolution": "改前：[\"Ben\",\"Mr\",\"Lin\",\"English\",\"Taipei\"]；改後：[\"Ben\",\"Lin\",\"English\",\"Taipei\"]",
+        "resolvedAt": "2026-10-02T13:00:29Z"
+      }
+    ]
+  }
+}

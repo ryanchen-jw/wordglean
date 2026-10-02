@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l04",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:42:10Z",
+  "properNouns": [
+    "Japan",
+    "English"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l04-q01",
+      "type": "wordCard",
+      "word": "test",
+      "exampleEn": "We have a math test tomorrow.",
+      "exampleZh": "我們明天有數學考試。",
+      "glossZh": "測驗；考試",
+      "distractorsZh": [
+        "作業",
+        "課本",
+        "假期"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q02",
+      "type": "wordCard",
+      "word": "technology",
+      "exampleEn": "Technology makes our life easy.",
+      "exampleZh": "科技讓我們的生活變得容易。",
+      "glossZh": "科技；技術",
+      "distractorsZh": [
+        "歷史",
+        "藝術",
+        "自然"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q03",
+      "type": "wordCard",
+      "word": "computer",
+      "exampleEn": "I use a computer at work.",
+      "exampleZh": "我在公司用電腦。",
+      "glossZh": "電腦",
+      "distractorsZh": [
+        "電視",
+        "手機",
+        "收音機"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q04",
+      "type": "wordCard",
+      "word": "letter",
+      "exampleEn": "I wrote a letter to my grandmother.",
+      "exampleZh": "我寫了一封信給奶奶。",
+      "glossZh": "信",
+      "distractorsZh": [
+        "卡片",
+        "包裹",
+        "明信片"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q05",
+      "type": "wordCard",
+      "word": "rule",
+      "exampleEn": "There are many rules at this school.",
+      "exampleZh": "這所學校有很多規定。",
+      "glossZh": "規則；規定",
+      "distractorsZh": [
+        "課程",
+        "成績",
+        "活動"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q06",
+      "type": "wordCard",
+      "word": "board",
+      "exampleEn": "The teacher writes on the board.",
+      "exampleZh": "老師在黑板上寫字。",
+      "glossZh": "板子；黑板",
+      "distractorsZh": [
+        "桌子",
+        "窗戶",
+        "牆"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q07",
+      "type": "wordCard",
+      "word": "subject",
+      "exampleEn": "My favorite subject is science.",
+      "exampleZh": "我最喜歡的科目是自然科學。",
+      "glossZh": "科目",
+      "distractorsZh": [
+        "老師",
+        "教室",
+        "考試"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q08",
+      "type": "wordCard",
+      "word": "note",
+      "exampleEn": "I take notes in class.",
+      "exampleZh": "我上課時做筆記。",
+      "glossZh": "筆記",
+      "distractorsZh": [
+        "考試",
+        "書",
+        "信"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "Please write the rules on the board.",
+      "sentenceZh": "請把規則寫在黑板上。"
+    },
+    {
+      "id": "a1-u16-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "Don't forget the test tomorrow. Read your notes tonight.",
+      "audioZh": "別忘了明天的考試，今晚要讀你的筆記。",
+      "questionZh": "說話者要你今晚做什麼？",
+      "options": [
+        "Use the computer",
+        "Write a letter",
+        "Read your notes"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "Math is my favorite subject.",
+      "sentenceZh": "數學是我最喜歡的科目。"
+    },
+    {
+      "id": "a1-u16-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "Computer technology helps us learn.",
+      "sentenceZh": "電腦科技幫助我們學習。"
+    },
+    {
+      "id": "a1-u16-l04-q13",
+      "type": "mcq",
+      "stemEn": "I write a ____ to my friend in Japan.",
+      "stemZh": "我寫一封信給在日本的朋友。",
+      "options": [
+        "rule",
+        "letter",
+        "board",
+        "subject"
+      ],
+      "optionGlossZh": [
+        "規則",
+        "信",
+        "黑板",
+        "科目"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l04-q14",
+      "type": "mcq",
+      "stemEn": "The teacher writes the new words on the ____.",
+      "stemZh": "老師把新的單字寫在黑板上。",
+      "options": [
+        "board",
+        "test",
+        "technology",
+        "subject"
+      ],
+      "optionGlossZh": [
+        "黑板",
+        "考試",
+        "科技",
+        "科目"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u16-l04-q15",
+      "type": "reading",
+      "passageEn": "Our school has new technology this year. Every classroom has a computer and a big white board. The teachers put their notes on the internet, so we can read them at home. But there is one rule: no phones in class!",
+      "passageZh": "我們學校今年有了新科技。每間教室都有一台電腦和一面大白板。老師會把筆記放到網路上，所以我們在家也能讀。不過有一條規定：上課不能用手機！",
+      "questions": [
+        {
+          "questionZh": "今年每間教室有什麼？",
+          "options": [
+            "電視",
+            "新的桌椅",
+            "電腦和大白板"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "學校有什麼規定？",
+          "options": [
+            "不能在家看筆記",
+            "上課不能用手機",
+            "要穿制服"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q16",
+      "type": "translate",
+      "promptZh": "我明天有英文考試。",
+      "hintWords": [
+        "test"
+      ],
+      "referenceEn": [
+        "I have an English test tomorrow.",
+        "I will have an English test tomorrow."
+      ],
+      "rubricZh": [
+        "「有考試」可用 have a test（English 前面的冠詞用 an）",
+        "未來確定的安排可用現在簡單式或 will（例如 I have、I will have）"
+      ]
+    },
+    {
+      "id": "a1-u16-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "note",
+      "instructionZh": "用 note 造一個句子，說說你上課或開會時做筆記的習慣。",
+      "referenceEn": [
+        "I take notes in every class.",
+        "I write notes in my notebook at meetings."
+      ],
+      "rubricZh": [
+        "「做筆記」可用 take notes、write notes 等",
+        "習慣性的事用現在簡單式"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l04-q10": [
+        2
+      ],
+      "a1-u16-l04-q13": [
+        1
+      ],
+      "a1-u16-l04-q14": [
+        0
+      ],
+      "a1-u16-l04-q15#0": [
+        2
+      ],
+      "a1-u16-l04-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長第②③關裁示修正：第②關＋第③關 S8：只用到一義就只釋一義",
+        "resolution": "改前：\"信；字母\"；改後：\"信\"",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Read your notes」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「letter」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「board」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：交代筆記放在網路上",
+        "resolution": "改前：\"Our school has new technology this year. Every classroom has a computer and a big white board. The teachers put notes on the computer, so we can read them at home. But there is one rule: no phones in class!\"；改後：\"Our school has new technology this year. Every classroom has a computer and a big white board. The teachers put their notes on the internet, so we can read them at home. But there is one rule: no phones in class!\"",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：中譯同步",
+        "resolution": "改前：\"我們學校今年有了新科技。每間教室都有一台電腦和一面大白板。老師會把筆記放在電腦上，所以我們在家也能讀。不過有一條規定：上課不能用手機！\"；改後：\"我們學校今年有了新科技。每間教室都有一台電腦和一面大白板。老師會把筆記放到網路上，所以我們在家也能讀。不過有一條規定：上課不能用手機！\"",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「電腦和大白板」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「上課不能用手機」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:10Z"
+      }
+    ]
+  }
+}

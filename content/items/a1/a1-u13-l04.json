@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u13-l04",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:30Z",
+  "properNouns": [
+    "Leo"
+  ],
+  "items": [
+    {
+      "id": "a1-u13-l04-q01",
+      "type": "wordCard",
+      "word": "sick",
+      "exampleEn": "I am sick today, so I will stay home.",
+      "exampleZh": "我今天生病了，所以會待在家。",
+      "glossZh": "生病的",
+      "distractorsZh": [
+        "健康的",
+        "開心的",
+        "忙碌的"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q02",
+      "type": "wordCard",
+      "word": "tooth",
+      "exampleEn": "My tooth hurts.",
+      "exampleZh": "我的牙齒好痛。",
+      "glossZh": "牙齒",
+      "distractorsZh": [
+        "舌頭",
+        "嘴唇",
+        "骨頭"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q03",
+      "type": "wordCard",
+      "word": "nurse",
+      "exampleEn": "The nurse helps the doctor.",
+      "exampleZh": "護士幫醫生的忙。",
+      "glossZh": "護士",
+      "distractorsZh": [
+        "醫生",
+        "病人",
+        "警察"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q04",
+      "type": "wordCard",
+      "word": "tired",
+      "exampleEn": "I am very tired after work.",
+      "exampleZh": "我下班後很累。",
+      "glossZh": "累的",
+      "distractorsZh": [
+        "餓的",
+        "生氣的",
+        "忙碌的"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q05",
+      "type": "wordCard",
+      "word": "breathe",
+      "exampleEn": "It is hard to breathe in this room.",
+      "exampleZh": "在這個房間裡很難呼吸。",
+      "glossZh": "呼吸",
+      "distractorsZh": [
+        "說話",
+        "吞嚥",
+        "咳嗽"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q06",
+      "type": "wordCard",
+      "word": "smoke",
+      "exampleEn": "There is smoke in the kitchen!",
+      "exampleZh": "廚房裡有煙！",
+      "glossZh": "煙",
+      "distractorsZh": [
+        "火",
+        "水",
+        "霧"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q07",
+      "type": "wordCard",
+      "word": "fever",
+      "exampleEn": "The baby has a fever.",
+      "exampleZh": "寶寶發燒了。",
+      "glossZh": "發燒",
+      "distractorsZh": [
+        "頭痛",
+        "咳嗽",
+        "牙痛"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q08",
+      "type": "wordCard",
+      "word": "smoking",
+      "exampleEn": "Smoking is bad for you.",
+      "exampleZh": "抽菸對你有害。",
+      "glossZh": "抽菸",
+      "distractorsZh": [
+        "喝酒",
+        "熬夜",
+        "運動"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "I brush my teeth after every meal.",
+      "sentenceZh": "我每餐飯後都刷牙。"
+    },
+    {
+      "id": "a1-u13-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "I have a fever, so I can't go to work today.",
+      "audioZh": "我發燒了，所以今天沒辦法去上班。",
+      "questionZh": "說話者怎麼了？",
+      "options": [
+        "A fever",
+        "A bad tooth",
+        "A broken leg"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u13-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "The nurse helps the sick children.",
+      "sentenceZh": "護士幫助生病的孩子。"
+    },
+    {
+      "id": "a1-u13-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "The smoke makes it hard to breathe.",
+      "sentenceZh": "煙讓人很難呼吸。"
+    },
+    {
+      "id": "a1-u13-l04-q13",
+      "type": "mcq",
+      "stemEn": "I worked for ten hours. I am very ____.",
+      "stemZh": "我工作了十個小時，非常累。",
+      "options": [
+        "tired",
+        "smoke",
+        "tooth",
+        "nurse"
+      ],
+      "optionGlossZh": [
+        "累的",
+        "煙",
+        "牙齒",
+        "護士"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u13-l04-q14",
+      "type": "mcq",
+      "stemEn": "Please open the window. I can't ____.",
+      "stemZh": "請開一下窗戶，我沒辦法呼吸。",
+      "options": [
+        "smoking",
+        "fever",
+        "breathe",
+        "sick"
+      ],
+      "optionGlossZh": [
+        "抽菸",
+        "發燒",
+        "呼吸",
+        "生病的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u13-l04-q15",
+      "type": "reading",
+      "passageEn": "Leo is sick today. He has a fever, and it is hard for him to breathe. His mother takes him to the hospital. A nurse gives him some water. Leo's father smokes at home, and now he wants to stop smoking.",
+      "passageZh": "Leo 今天生病了。他發燒，而且呼吸困難。他媽媽帶他去醫院。一位護士給他一些水。Leo 的爸爸會在家抽菸，現在他想戒菸了。",
+      "questions": [
+        {
+          "questionZh": "Leo 怎麼了？",
+          "options": [
+            "發燒、呼吸困難",
+            "牙齒痛",
+            "腳受傷"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Leo 的爸爸現在想做什麼？",
+          "options": [
+            "換工作",
+            "戒菸",
+            "搬家"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q16",
+      "type": "translate",
+      "promptZh": "我今天很累，想早點睡。",
+      "hintWords": [
+        "tired"
+      ],
+      "referenceEn": [
+        "I am very tired today. I want to go to bed early.",
+        "I'm tired today, so I want to sleep early."
+      ],
+      "rubricZh": [
+        "「很累」例如 I am very tired；用 feel tired 也正確",
+        "「早點睡」可用 go to bed early、sleep early 等"
+      ]
+    },
+    {
+      "id": "a1-u13-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "sick",
+      "instructionZh": "用 sick 造一個句子，說說你生病時會做什麼。",
+      "referenceEn": [
+        "When I am sick, I stay in bed.",
+        "I drink a lot of water when I am sick."
+      ],
+      "rubricZh": [
+        "「生病時」可用 when I am sick、when I feel sick、when I get sick 等",
+        "sick 是形容詞，放在 be 動詞、feel、get 等後面（例如 am sick、feel sick、get sick）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u13-l04-q10": [
+        0
+      ],
+      "a1-u13-l04-q13": [
+        0
+      ],
+      "a1-u13-l04-q14": [
+        2
+      ],
+      "a1-u13-l04-q15#0": [
+        0
+      ],
+      "a1-u13-l04-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：裁示（規則 9）：不出現吃藥",
+        "resolution": "改前：\"The nurse gives me some medicine.\"；改後：\"The nurse helps the doctor.\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：裁示（規則 9）：不出現吃藥",
+        "resolution": "改前：\"護士給我一些藥。\"；改後：\"護士幫醫生的忙。\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"My tooth hurts, so I can't eat.\"；改後：\"I brush my teeth after every meal.\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"我牙齒痛，所以沒辦法吃東西。\"；改後：\"我每餐飯後都刷牙。\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：smoke（煙）補情境",
+        "resolution": "改前：\"No smoking in the hospital.\"；改後：\"The smoke makes it hard to breathe.\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：smoke（煙）補情境",
+        "resolution": "改前：\"醫院裡禁止吸菸。\"；改後：\"煙讓人很難呼吸。\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「breathe」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：裁示（規則 9）：不出現吃藥與診斷",
+        "resolution": "改前：\"Leo is sick today. He has a fever, and it is hard for him to breathe. His mother takes him to the hospital. A nurse gives him some water and medicine. The doctor says smoking at home is bad for Leo. His father wants to stop smoking now.\"；改後：\"Leo is sick today. He has a fever, and it is hard for him to breathe. His mother takes him to the hospital. A nurse gives him some water. Leo's father smokes at home, and now he wants to stop smoking.\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：裁示（規則 9）：中譯同步",
+        "resolution": "改前：\"Leo 今天生病了。他發燒，而且呼吸困難。他媽媽帶他去醫院。一位護士給他一些水和藥。醫生說在家抽菸對 Leo 不好。他爸爸現在想戒菸了。\"；改後：\"Leo 今天生病了。他發燒，而且呼吸困難。他媽媽帶他去醫院。一位護士給他一些水。Leo 的爸爸會在家抽菸，現在他想戒菸了。\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「發燒、呼吸困難」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「戒菸」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第②③關 FIX",
+        "resolution": "改前：\"「很累」用 be 動詞＋tired（例如 I am very tired）\"；改後：\"「很累」例如 I am very tired；用 feel tired 也正確\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第②③關 FIX",
+        "resolution": "改前：\"「生病時」可用 when I am sick、when I feel sick 等\"；改後：\"「生病時」可用 when I am sick、when I feel sick、when I get sick 等\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：第②③關 FIX",
+        "resolution": "改前：\"sick 是形容詞，放在 be 動詞或 feel 後面\"；改後：\"sick 是形容詞，放在 be 動詞、feel、get 等後面（例如 am sick、feel sick、get sick）\"",
+        "resolvedAt": "2026-10-02T12:41:30Z"
+      }
+    ]
+  }
+}

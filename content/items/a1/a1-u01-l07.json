@@ -172,18 +172,18 @@
       "stemEn": "The dog runs ____ the house when it rains.",
       "stemZh": "下雨時，狗會跑進屋子裡。",
       "options": [
-        "into",
-        "other",
         "than",
+        "other",
+        "into",
         "your"
       ],
       "optionGlossZh": [
-        "進入⋯裡面",
-        "其他的",
         "比",
+        "其他的",
+        "進入⋯裡面",
         "你的"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "id": "a1-u01-l07-q15",
@@ -194,20 +194,20 @@
         {
           "questionZh": "Jack 幾歲？",
           "options": [
-            "五歲",
             "十歲",
+            "五歲",
             "十二歲"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "questionZh": "下雨時，他們去了哪裡？",
           "options": [
             "回家",
-            "跑進一間小店",
-            "留在公園"
+            "留在公園",
+            "跑進一間小店"
           ],
-          "answer": 1
+          "answer": 2
         }
       ]
     },
@@ -256,13 +256,13 @@
         3
       ],
       "a1-u01-l07-q14": [
-        0
+        2
       ],
       "a1-u01-l07-q15#0": [
-        0
+        1
       ],
       "a1-u01-l07-q15#1": [
-        1
+        2
       ]
     },
     "glossVerdicts": {},
@@ -309,6 +309,24 @@
         "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
         "resolution": "正解「into」由位置 2 移到 0，與「than」互換；審題員判題索引同步重對應",
         "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「into」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「五歲」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「跑進一間小店」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
       }
     ]
   }

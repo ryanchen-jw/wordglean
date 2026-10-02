@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:59Z",
+  "properNouns": [
+    "Tom",
+    "Kevin",
+    "Japan",
+    "English",
+    "Lisa",
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l01-q01",
+      "type": "wordCard",
+      "word": "homework",
+      "exampleEn": "We have a lot of homework today.",
+      "exampleZh": "我們今天有很多功課。",
+      "glossZh": "家庭作業；功課",
+      "distractorsZh": [
+        "考試",
+        "課本",
+        "假期"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q02",
+      "type": "wordCard",
+      "word": "classmate",
+      "exampleEn": "Amy is my classmate.",
+      "exampleZh": "Amy 是我的同班同學。",
+      "glossZh": "同班同學",
+      "distractorsZh": [
+        "老師",
+        "鄰居",
+        "室友"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q03",
+      "type": "wordCard",
+      "word": "underline",
+      "exampleEn": "Underline the new words in red.",
+      "exampleZh": "用紅筆在新單字下面畫線。",
+      "glossZh": "在⋯下面畫線；底線",
+      "distractorsZh": [
+        "句號",
+        "標題",
+        "箭頭"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q04",
+      "type": "wordCard",
+      "word": "school",
+      "exampleEn": "My school is near the park.",
+      "exampleZh": "我的學校在公園附近。",
+      "glossZh": "學校",
+      "distractorsZh": [
+        "公司",
+        "醫院",
+        "圖書館"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q05",
+      "type": "wordCard",
+      "word": "student",
+      "exampleEn": "There are thirty students in my class.",
+      "exampleZh": "我們班有三十個學生。",
+      "glossZh": "學生",
+      "distractorsZh": [
+        "老師",
+        "校長",
+        "家長"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q06",
+      "type": "wordCard",
+      "word": "problem",
+      "exampleEn": "I have a problem with my computer.",
+      "exampleZh": "我的電腦出了問題。",
+      "glossZh": "問題；難題",
+      "distractorsZh": [
+        "答案",
+        "計畫",
+        "禮物"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q07",
+      "type": "wordCard",
+      "word": "question",
+      "exampleEn": "Can I ask you a question?",
+      "exampleZh": "我可以問你一個問題嗎？",
+      "glossZh": "問題（提問）",
+      "distractorsZh": [
+        "答案",
+        "故事",
+        "消息"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q08",
+      "type": "wordCard",
+      "word": "write",
+      "exampleEn": "Please write your name here.",
+      "exampleZh": "請在這裡寫下你的名字。",
+      "glossZh": "寫",
+      "distractorsZh": [
+        "讀",
+        "畫",
+        "剪"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "My classmate helps me with my homework.",
+      "sentenceZh": "我的同學幫我做功課。"
+    },
+    {
+      "id": "a1-u16-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I have a question about the homework. Can you help me?",
+      "audioZh": "我有一個關於作業的問題，你可以幫我嗎？",
+      "questionZh": "說話者的問題是關於什麼？",
+      "options": [
+        "The homework",
+        "The test",
+        "The school bus"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u16-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "Draw an underline under each new word.",
+      "sentenceZh": "在每個新字下面畫一條底線。"
+    },
+    {
+      "id": "a1-u16-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The students write their names on the paper.",
+      "sentenceZh": "學生們把名字寫在紙上。"
+    },
+    {
+      "id": "a1-u16-l01-q13",
+      "type": "mcq",
+      "stemEn": "Can I ask you a ____?",
+      "stemZh": "我可以問你一個問題嗎？",
+      "options": [
+        "school",
+        "question",
+        "student",
+        "underline"
+      ],
+      "optionGlossZh": [
+        "學校",
+        "問題",
+        "學生",
+        "底線"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l01-q14",
+      "type": "mcq",
+      "stemEn": "Tom and I are in the same class. He is my ____.",
+      "stemZh": "Tom 和我同班，他是我的同班同學。",
+      "options": [
+        "classmate",
+        "homework",
+        "problem",
+        "school"
+      ],
+      "optionGlossZh": [
+        "同班同學",
+        "功課",
+        "問題",
+        "學校"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u16-l01-q15",
+      "type": "reading",
+      "passageEn": "Kevin is a new student at our school. He is from Japan, and his English is not very good. He often has problems with his homework. His classmate Lisa helps him every day after school. Now Kevin can answer many questions in class.",
+      "passageZh": "Kevin 是我們學校的新學生。他來自日本，英文不太好，常常在功課上遇到問題。他的同學 Lisa 每天放學後都幫他。現在 Kevin 在課堂上能回答很多問題了。",
+      "questions": [
+        {
+          "questionZh": "Kevin 常遇到什麼問題？",
+          "options": [
+            "功課上的問題",
+            "交不到朋友",
+            "找不到學校"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "誰每天放學後幫 Kevin？",
+          "options": [
+            "他的老師",
+            "他的同學 Lisa",
+            "他的媽媽"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q16",
+      "type": "translate",
+      "promptZh": "我今天有很多功課。",
+      "hintWords": [
+        "homework"
+      ],
+      "referenceEn": [
+        "I have a lot of homework today.",
+        "I have lots of homework today."
+      ],
+      "rubricZh": [
+        "homework 是不可數名詞，不加 s，也不說 a homework",
+        "「很多」可用 a lot of、lots of 等"
+      ]
+    },
+    {
+      "id": "a1-u16-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "write",
+      "instructionZh": "用 write 造一個句子，說說你常寫什麼（例如信、電子郵件、筆記）。",
+      "referenceEn": [
+        "I write emails at work every day.",
+        "I often write letters to my grandmother."
+      ],
+      "rubricZh": [
+        "write 後面接寫的東西（例如 write emails、write a letter），寫給誰可用 to",
+        "習慣性的事用現在簡單式"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l01-q10": [
+        0
+      ],
+      "a1-u16-l01-q13": [
+        1
+      ],
+      "a1-u16-l01-q14": [
+        0
+      ],
+      "a1-u16-l01-q15#0": [
+        0
+      ],
+      "a1-u16-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：裁示：名詞／動詞兩用的字，釋義並列兩義、本課加動詞情境（第②關）",
+        "resolution": "改前：\"There is an underline under each new word.\"；改後：\"Underline the new words in red.\"",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：裁示：名詞／動詞兩用的字，釋義並列兩義、本課加動詞情境（第②關）",
+        "resolution": "改前：\"每個新字下面都有一條底線。\"；改後：\"用紅筆在新單字下面畫線。\"",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長第②③關裁示修正：裁示：名詞／動詞兩用的字，釋義並列兩義、本課加動詞情境（第②關）",
+        "resolution": "改前：\"底線（字下面的線）\"；改後：\"在⋯下面畫線；底線\"",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「The homework」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：第②關：單數底線標多字不通；保留名詞用法",
+        "resolution": "改前：\"The underline shows the new words.\"；改後：\"Draw an underline under each new word.\"",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：第②關：單數底線標多字不通；保留名詞用法",
+        "resolution": "改前：\"底線標出了新的單字。\"；改後：\"在每個新字下面畫一條底線。\"",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「question」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「classmate」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「功課上的問題」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      },
+      {
+        "path": "items/15/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第③關 S17：參考答案保留主詞「我」",
+        "resolution": "改前：\"There is a lot of homework today.\"；改後：\"I have lots of homework today.\"",
+        "resolvedAt": "2026-10-02T12:41:59Z"
+      }
+    ]
+  }
+}

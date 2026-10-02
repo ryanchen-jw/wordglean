@@ -43,12 +43,15 @@ export function tokenize(text) {
 }
 
 // 多字詞（lexicon 中含空格的 headword，例：according to）：整段比對、取其級距，並從文字中移除。
+// 含「.」或「-」的 headword（Mr.、Mrs.、Ms.、a.m.、T-shirt）同樣整段比對——分詞器會把它們拆成 Mr、T＋shirt 而查無級距。
 export function extractMultiwords(text, levels) {
-  const phrases = [...levels.keys()].filter((w) => w.includes(' ')).sort((a, b) => b.length - a.length);
+  const phrases = [...levels.keys()].filter((w) => /[ .-]/.test(w)).sort((a, b) => b.length - a.length);
   const found = [];
   let rest = text;
   for (const phrase of phrases) {
-    const pattern = new RegExp(`(?<![A-Za-z'])${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![A-Za-z'])`, 'gi');
+    // 含「-」的 headword 允許複數 s（T-shirts）
+    const plural = phrase.includes('-') && /[a-z]$/.test(phrase) ? 's?' : '';
+    const pattern = new RegExp(`(?<![A-Za-z'])${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}${plural}(?![A-Za-z'])`, 'gi');
     rest = rest.replace(pattern, () => {
       found.push(phrase);
       return ' ';
@@ -84,6 +87,13 @@ export function wordLevel(word, levels, lemmas) {
   };
   pick([lower, plain, ...lemmas(lower), ...lemmas(plain)]);
   if (best === null) pick(ruleLemmas(plain));
+  // 複合字的不規則變化（grandchildren、firemen）：ECDICT 詞形表只收單字（children→child），
+  // 拆出字尾查詞形表、換回原形再查（grand＋child）。字尾至少 3 個字母。
+  if (best === null) {
+    for (let i = 1; i <= plain.length - 3; i++) {
+      pick(lemmas(plain.slice(i)).map((lemma) => plain.slice(0, i) + lemma));
+    }
+  }
   return best;
 }
 

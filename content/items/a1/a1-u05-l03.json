@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u05-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:42Z",
+  "properNouns": [
+    "Kate"
+  ],
+  "items": [
+    {
+      "id": "a1-u05-l03-q01",
+      "type": "wordCard",
+      "word": "long",
+      "exampleEn": "She has long hair.",
+      "exampleZh": "她有一頭長髮。",
+      "glossZh": "長的",
+      "distractorsZh": [
+        "短的",
+        "黑的",
+        "新的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q02",
+      "type": "wordCard",
+      "word": "little",
+      "exampleEn": "I have a little dog.",
+      "exampleZh": "我有一隻小狗。",
+      "glossZh": "小的",
+      "distractorsZh": [
+        "大的",
+        "老的",
+        "胖的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q03",
+      "type": "wordCard",
+      "word": "important",
+      "exampleEn": "This meeting is very important.",
+      "exampleZh": "這個會議很重要。",
+      "glossZh": "重要的",
+      "distractorsZh": [
+        "無聊的",
+        "簡單的",
+        "便宜的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q04",
+      "type": "wordCard",
+      "word": "line",
+      "exampleEn": "Please wait in line.",
+      "exampleZh": "請排隊等候。",
+      "glossZh": "列；隊伍；線",
+      "distractorsZh": [
+        "座位",
+        "圓圈",
+        "票"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q05",
+      "type": "wordCard",
+      "word": "bad",
+      "exampleEn": "The weather is bad today.",
+      "exampleZh": "今天天氣很糟。",
+      "glossZh": "壞的；糟的",
+      "distractorsZh": [
+        "好的",
+        "熱的",
+        "新的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q06",
+      "type": "wordCard",
+      "word": "white",
+      "exampleEn": "The snow is white.",
+      "exampleZh": "雪是白色的。",
+      "glossZh": "白色的",
+      "distractorsZh": [
+        "黑色的",
+        "灰色的",
+        "藍色的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q07",
+      "type": "wordCard",
+      "word": "real",
+      "exampleEn": "Is this a real flower?",
+      "exampleZh": "這是真的花嗎？",
+      "glossZh": "真的；真實的",
+      "distractorsZh": [
+        "假的",
+        "新的",
+        "漂亮的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q08",
+      "type": "wordCard",
+      "word": "best",
+      "exampleEn": "This is the best cake in town.",
+      "exampleZh": "這是鎮上最好吃的蛋糕。",
+      "glossZh": "最好的",
+      "distractorsZh": [
+        "最差的",
+        "最新的",
+        "最大的"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "The weather is bad today, so let's stay home.",
+      "sentenceZh": "今天天氣很糟，我們待在家吧。"
+    },
+    {
+      "id": "a1-u05-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "The line at the bank is long. I will come back later.",
+      "audioZh": "銀行大排長龍，我晚點再來。",
+      "questionZh": "說話者為什麼要晚點再來？",
+      "options": [
+        "The bank is closed.",
+        "The line is long.",
+        "It is late."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u05-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "My brother has a little white cat.",
+      "sentenceZh": "我哥哥有一隻小白貓。"
+    },
+    {
+      "id": "a1-u05-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "It is a very important test.",
+      "sentenceZh": "這是一個非常重要的考試。"
+    },
+    {
+      "id": "a1-u05-l03-q13",
+      "type": "mcq",
+      "stemEn": "This is not a toy. It is a ____ car.",
+      "stemZh": "這不是玩具，這是一台真的車。",
+      "options": [
+        "important",
+        "line",
+        "best",
+        "real"
+      ],
+      "optionGlossZh": [
+        "重要的",
+        "線",
+        "最好的",
+        "真的"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u05-l03-q14",
+      "type": "mcq",
+      "stemEn": "We waited in a long ____ for the bus.",
+      "stemZh": "我們排了很長的隊等公車。",
+      "options": [
+        "line",
+        "white",
+        "real",
+        "little"
+      ],
+      "optionGlossZh": [
+        "隊伍；線",
+        "白色的",
+        "真的",
+        "小的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u05-l03-q15",
+      "type": "reading",
+      "passageEn": "My best friend, Kate, has long black hair. She works at a small cafe. The coffee there is very good, so there is always a long line in the morning. Kate says her job is not easy, but it is important to her.",
+      "passageZh": "我最好的朋友 Kate 有一頭黑色長髮。她在一家小咖啡店工作。那裡的咖啡很好喝，所以早上總是大排長龍。Kate 說她的工作不輕鬆，但對她來說很重要。",
+      "questions": [
+        {
+          "questionZh": "Kate 的頭髮是什麼樣子？",
+          "options": [
+            "白色長髮",
+            "黑色短髮",
+            "黑色長髮"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "為什麼早上總是大排長龍？",
+          "options": [
+            "那裡的咖啡很便宜",
+            "那裡的咖啡很好喝",
+            "那家店很大"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q16",
+      "type": "translate",
+      "promptZh": "這是全世界最好的工作。",
+      "hintWords": [
+        "best"
+      ],
+      "referenceEn": [
+        "This is the best job in the world."
+      ],
+      "rubricZh": [
+        "best 前面加 the 或所有格（例如 the best job、my best friend）",
+        "「全世界」可用 in the world"
+      ]
+    },
+    {
+      "id": "a1-u05-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "important",
+      "instructionZh": "用 important 造一個句子，說說對你很重要的一件事或一個人。",
+      "referenceEn": [
+        "My family is very important to me.",
+        "My job is important to me."
+      ],
+      "rubricZh": [
+        "important 放在 be 動詞後面或名詞前面（例如 is important、an important day）",
+        "「對我很重要」可用 important to me 或 important for me"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u05-l03-q10": [
+        1
+      ],
+      "a1-u05-l03-q13": [
+        3
+      ],
+      "a1-u05-l03-q14": [
+        0
+      ],
+      "a1-u05-l03-q15#0": [
+        2
+      ],
+      "a1-u05-l03-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：釋義與本課其他題的「隊伍」詞義一致（lexicon A1：列、線）",
+        "resolution": "改前：\"Please draw a line under the word.\"；改後：\"Please wait in line.\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：釋義與本課其他題的「隊伍」詞義一致（lexicon A1：列、線）",
+        "resolution": "改前：\"請在這個字下面畫一條線。\"；改後：\"請排隊等候。\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：釋義與本課其他題的「隊伍」詞義一致（lexicon A1：列、線）",
+        "resolution": "改前：\"線\"；改後：\"列；隊伍；線\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/3/distractorsZh/0",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：釋義與本課其他題的「隊伍」詞義一致（lexicon A1：列、線）",
+        "resolution": "改前：\"圓\"；改後：\"座位\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/3/distractorsZh/1",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：釋義與本課其他題的「隊伍」詞義一致（lexicon A1：列、線）",
+        "resolution": "改前：\"點\"；改後：\"圓圈\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/3/distractorsZh/2",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：釋義與本課其他題的「隊伍」詞義一致（lexicon A1：列、線）",
+        "resolution": "改前：\"字\"；改後：\"票\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（bad）",
+        "resolution": "改前：\"This is the best day of my life.\"；改後：\"The weather is bad, so we stay home.\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（bad）",
+        "resolution": "改前：\"這是我人生中最美好的一天。\"；改後：\"天氣很糟，所以我們待在家。\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「The line is long.」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（little）",
+        "resolution": "改前：\"Is that a real white tiger?\"；改後：\"My little brother has a white cat.\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（little）",
+        "resolution": "改前：\"那是真的白老虎嗎？\"；改後：\"我弟弟有一隻白貓。\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關建議：跟讀句與造句參考答案重複，換句",
+        "resolution": "改前：\"My family is very important to me.\"；改後：\"It is a very important test.\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：第③關建議：跟讀句與造句參考答案重複，換句",
+        "resolution": "改前：\"我的家人對我來說很重要。\"；改後：\"這是一個非常重要的考試。\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「real」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「line」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「黑色長髮」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「那裡的咖啡很好喝」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"best 前面要加 the（例如 the best job）\"；改後：\"best 前面加 the 或所有格（例如 the best job、my best friend）\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「全世界」用 in the world\"；改後：\"「全世界」可用 in the world\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"important 放在 be 動詞後面或名詞前面\"；改後：\"important 放在 be 動詞後面或名詞前面（例如 is important、an important day）\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「對我很重要」可用 important to me\"；改後：\"「對我很重要」可用 important to me 或 important for me\"",
+        "resolvedAt": "2026-10-02T11:28:23Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第二輪複審修正：FIX#10 一次性情境不用現在簡單式",
+        "resolution": "改前：\"The weather is bad, so we stay home.\"；改後：\"The weather is bad today, so let's stay home.\"",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第二輪複審修正：FIX#10 一次性情境不用現在簡單式",
+        "resolution": "改前：\"天氣很糟，所以我們待在家。\"；改後：\"今天天氣很糟，我們待在家吧。\"",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第二輪複審修正：建議：little 示範「小的」詞義",
+        "resolution": "改前：\"My little brother has a white cat.\"；改後：\"My brother has a little white cat.\"",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第二輪複審修正：建議：little 示範「小的」詞義",
+        "resolution": "改前：\"我弟弟有一隻白貓。\"；改後：\"我哥哥有一隻小白貓。\"",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「real」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「line」由位置 3 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「黑色長髮」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「那裡的咖啡很好喝」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:42Z"
+      }
+    ]
+  }
+}

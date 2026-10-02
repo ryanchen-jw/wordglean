@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u12-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:11Z",
+  "properNouns": [
+    "Japan",
+    "Lins",
+    "Tokyo"
+  ],
+  "items": [
+    {
+      "id": "a1-u12-l01-q01",
+      "type": "wordCard",
+      "word": "airport",
+      "exampleEn": "We take a taxi to the airport.",
+      "exampleZh": "我們搭計程車去機場。",
+      "glossZh": "機場",
+      "distractorsZh": [
+        "車站",
+        "港口",
+        "飯店"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q02",
+      "type": "wordCard",
+      "word": "vacation",
+      "exampleEn": "We go to Japan on vacation every summer.",
+      "exampleZh": "我們每年夏天去日本度假。",
+      "glossZh": "假期；度假",
+      "distractorsZh": [
+        "工作",
+        "會議",
+        "考試"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q03",
+      "type": "wordCard",
+      "word": "jet",
+      "exampleEn": "The jet flies very fast.",
+      "exampleZh": "那架噴射機飛得很快。",
+      "glossZh": "噴射機",
+      "distractorsZh": [
+        "火車",
+        "船",
+        "公車"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q04",
+      "type": "wordCard",
+      "word": "airplane",
+      "exampleEn": "I see an airplane in the sky.",
+      "exampleZh": "我看到天上有一架飛機。",
+      "glossZh": "飛機",
+      "distractorsZh": [
+        "火車",
+        "船",
+        "汽車"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q05",
+      "type": "wordCard",
+      "word": "bicycle",
+      "exampleEn": "I ride my bicycle to school.",
+      "exampleZh": "我騎腳踏車上學。",
+      "glossZh": "腳踏車",
+      "distractorsZh": [
+        "機車",
+        "汽車",
+        "公車"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q06",
+      "type": "wordCard",
+      "word": "subway",
+      "exampleEn": "I take the subway to work.",
+      "exampleZh": "我搭捷運上班。",
+      "glossZh": "地鐵；捷運",
+      "distractorsZh": [
+        "公車",
+        "計程車",
+        "火車"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q07",
+      "type": "wordCard",
+      "word": "way",
+      "exampleEn": "Is this the way to the station?",
+      "exampleZh": "這是去車站的路嗎？",
+      "glossZh": "路；路線",
+      "distractorsZh": [
+        "票",
+        "地圖",
+        "時間"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q08",
+      "type": "wordCard",
+      "word": "car",
+      "exampleEn": "My father has a red car.",
+      "exampleZh": "我爸爸有一台紅色的車。",
+      "glossZh": "汽車",
+      "distractorsZh": [
+        "腳踏車",
+        "公車",
+        "卡車"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "A jet is flying over our house.",
+      "sentenceZh": "一架噴射機正飛過我們家上空。"
+    },
+    {
+      "id": "a1-u12-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "My car is broken, so I will ride my bicycle today.",
+      "audioZh": "我的車壞了，所以今天騎腳踏車。",
+      "questionZh": "說話者今天怎麼出門？",
+      "options": [
+        "By car",
+        "By bicycle",
+        "By subway"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u12-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "We go on vacation by car.",
+      "sentenceZh": "我們開車去度假。"
+    },
+    {
+      "id": "a1-u12-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "This is the fastest way to school.",
+      "sentenceZh": "這是去學校最快的路。"
+    },
+    {
+      "id": "a1-u12-l01-q13",
+      "type": "mcq",
+      "stemEn": "Excuse me, can you tell me the ____ to the bank?",
+      "stemZh": "不好意思，可以告訴我去銀行的路嗎？",
+      "options": [
+        "way",
+        "jet",
+        "vacation",
+        "car"
+      ],
+      "optionGlossZh": [
+        "路",
+        "噴射機",
+        "假期",
+        "汽車"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u12-l01-q14",
+      "type": "mcq",
+      "stemEn": "We are going to the beach for our summer ____.",
+      "stemZh": "我們暑假要去海邊。",
+      "options": [
+        "vacation",
+        "airport",
+        "subway",
+        "bicycle"
+      ],
+      "optionGlossZh": [
+        "假期",
+        "機場",
+        "捷運",
+        "腳踏車"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u12-l01-q15",
+      "type": "reading",
+      "passageEn": "This summer, the Lins are going on vacation to Japan. They will take a taxi to the airport early in the morning. The airplane leaves at nine. In Tokyo, they will take the subway and ride bicycles around the city.",
+      "passageZh": "今年夏天，林家要去日本度假。他們一大早會搭計程車去機場，飛機九點起飛。在東京，他們會搭地鐵，也會騎腳踏車逛城市。",
+      "questions": [
+        {
+          "questionZh": "林家要怎麼去機場？",
+          "options": [
+            "搭計程車",
+            "搭捷運",
+            "開車"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "在東京他們要怎麼移動？",
+          "options": [
+            "租車",
+            "搭地鐵和騎腳踏車",
+            "搭公車"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q16",
+      "type": "translate",
+      "promptZh": "我每天搭捷運上班。",
+      "hintWords": [
+        "subway"
+      ],
+      "referenceEn": [
+        "I take the subway to work every day.",
+        "I go to work by subway every day."
+      ],
+      "rubricZh": [
+        "「搭捷運」可用 take the subway、by subway、by MRT 等",
+        "「上班」可用 go to work、to work",
+        "every day 放句首或句尾都可以"
+      ]
+    },
+    {
+      "id": "a1-u12-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "vacation",
+      "instructionZh": "用 vacation 造一個句子，說說你想去或去過哪裡度假。",
+      "referenceEn": [
+        "I want to go to Japan on vacation.",
+        "I went to the beach on my vacation."
+      ],
+      "rubricZh": [
+        "「去度假」可用 go on vacation、on vacation 等",
+        "時態配合內容（例如想做的事用 want to；過去的事用過去式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u12-l01-q10": [
+        1
+      ],
+      "a1-u12-l01-q13": [
+        0
+      ],
+      "a1-u12-l01-q14": [
+        0
+      ],
+      "a1-u12-l01-q15#0": [
+        0
+      ],
+      "a1-u12-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「By bicycle」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/9/audioEn",
+        "message": "執行長第②③關裁示修正：第③關 D6：單次行為用 will",
+        "resolution": "改前：\"My car is broken, so I ride my bicycle today.\"；改後：\"My car is broken, so I will ride my bicycle today.\"",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"Is this the way to the airport?\"；改後：\"This is the fastest way to school.\"",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"這是去機場的路嗎？\"；改後：\"這是去學校最快的路。\"",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「vacation」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「搭計程車」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「搭地鐵和騎腳踏車」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關 D5：造句不收沒用 vacation 的 holiday",
+        "resolution": "改前：\"「去度假」可用 go on vacation、on vacation 等（英式 holiday 也正確）\"；改後：\"「去度假」可用 go on vacation、on vacation 等\"",
+        "resolvedAt": "2026-10-02T12:41:11Z"
+      }
+    ]
+  }
+}

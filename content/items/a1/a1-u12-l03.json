@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u12-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:15Z",
+  "properNouns": [
+    "Japan",
+    "Jack"
+  ],
+  "items": [
+    {
+      "id": "a1-u12-l03-q01",
+      "type": "wordCard",
+      "word": "plane",
+      "exampleEn": "The plane is full today.",
+      "exampleZh": "今天的飛機客滿了。",
+      "glossZh": "飛機",
+      "distractorsZh": [
+        "船",
+        "火車",
+        "卡車"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q02",
+      "type": "wordCard",
+      "word": "ship",
+      "exampleEn": "The big ship is going to Japan.",
+      "exampleZh": "那艘大船要開往日本。",
+      "glossZh": "（大）船",
+      "distractorsZh": [
+        "飛機",
+        "火車",
+        "卡車"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q03",
+      "type": "wordCard",
+      "word": "driver",
+      "exampleEn": "The bus driver is very nice.",
+      "exampleZh": "公車司機人很好。",
+      "glossZh": "司機",
+      "distractorsZh": [
+        "乘客",
+        "警察",
+        "水手"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q04",
+      "type": "wordCard",
+      "word": "boat",
+      "exampleEn": "We took a boat to the island.",
+      "exampleZh": "我們搭小船去島上。",
+      "glossZh": "小船",
+      "distractorsZh": [
+        "飛機",
+        "火車",
+        "橋"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q05",
+      "type": "wordCard",
+      "word": "truck",
+      "exampleEn": "A big truck is on the street.",
+      "exampleZh": "街上有一輛大卡車。",
+      "glossZh": "卡車",
+      "distractorsZh": [
+        "公車",
+        "計程車",
+        "腳踏車"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q06",
+      "type": "wordCard",
+      "word": "ride",
+      "exampleEn": "Can I ride your bike?",
+      "exampleZh": "我可以騎你的腳踏車嗎？",
+      "glossZh": "騎；搭乘",
+      "distractorsZh": [
+        "修理",
+        "借",
+        "推"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q07",
+      "type": "wordCard",
+      "word": "bus",
+      "exampleEn": "I take the bus to school.",
+      "exampleZh": "我搭公車上學。",
+      "glossZh": "公車",
+      "distractorsZh": [
+        "火車",
+        "計程車",
+        "捷運"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q08",
+      "type": "wordCard",
+      "word": "train",
+      "exampleEn": "The train leaves at seven.",
+      "exampleZh": "火車七點開。",
+      "glossZh": "火車",
+      "distractorsZh": [
+        "公車",
+        "飛機",
+        "船"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "The bus driver is my uncle.",
+      "sentenceZh": "那位公車司機是我叔叔。"
+    },
+    {
+      "id": "a1-u12-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "The train is too slow, so we will take the bus.",
+      "audioZh": "火車太慢了，所以我們會搭公車。",
+      "questionZh": "他們決定搭什麼？",
+      "options": [
+        "A boat",
+        "The train",
+        "The bus"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u12-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "We can go there by boat or by plane.",
+      "sentenceZh": "我們可以搭船或搭飛機去那裡。"
+    },
+    {
+      "id": "a1-u12-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "My father is a truck driver.",
+      "sentenceZh": "我爸爸是卡車司機。"
+    },
+    {
+      "id": "a1-u12-l03-q13",
+      "type": "mcq",
+      "stemEn": "Can you ____ a horse?",
+      "stemZh": "你會騎馬嗎？",
+      "options": [
+        "driver",
+        "ride",
+        "boat",
+        "bus"
+      ],
+      "optionGlossZh": [
+        "司機",
+        "騎",
+        "小船",
+        "公車"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u12-l03-q14",
+      "type": "mcq",
+      "stemEn": "The ____ drives the bus very carefully.",
+      "stemZh": "這位司機開公車開得很小心。",
+      "options": [
+        "ship",
+        "truck",
+        "plane",
+        "driver"
+      ],
+      "optionGlossZh": [
+        "船",
+        "卡車",
+        "飛機",
+        "司機"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u12-l03-q15",
+      "type": "reading",
+      "passageEn": "Every day, Jack takes the bus to the station. Then he takes the train to the city. He works on a big ship. He cooks for the people on the ship. On the weekend, he takes his small boat out on the river.",
+      "passageZh": "Jack 每天搭公車到車站，再搭火車進城。他在一艘大船上工作，幫船上的人煮飯。週末他會開著他的小船到河上。",
+      "questions": [
+        {
+          "questionZh": "Jack 在哪裡工作？",
+          "options": [
+            "一列火車上",
+            "一艘大船上",
+            "一家餐廳"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Jack 在船上做什麼？",
+          "options": [
+            "賣票",
+            "開船",
+            "煮飯"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q16",
+      "type": "translate",
+      "promptZh": "我搭公車去車站。",
+      "hintWords": [
+        "bus"
+      ],
+      "referenceEn": [
+        "I take the bus to the station.",
+        "I go to the station by bus."
+      ],
+      "rubricZh": [
+        "「搭公車」可用 take the bus、by bus 等",
+        "「去車站」用 to the station"
+      ]
+    },
+    {
+      "id": "a1-u12-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "ride",
+      "instructionZh": "用 ride 造一個句子，說說你會騎或搭的交通工具。",
+      "referenceEn": [
+        "I ride my bike to work.",
+        "I ride the bus to school every day."
+      ],
+      "rubricZh": [
+        "ride 後面接交通工具或動物（例如 ride a bike、ride the bus、ride a horse）",
+        "動詞配合主詞和時態（例如 I ride、I rode）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u12-l03-q10": [
+        2
+      ],
+      "a1-u12-l03-q13": [
+        1
+      ],
+      "a1-u12-l03-q14": [
+        3
+      ],
+      "a1-u12-l03-q15#0": [
+        1
+      ],
+      "a1-u12-l03-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「The bus」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:15Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「ride」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:15Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②③關 FIX：船上不說 driver",
+        "resolution": "改前：\"Every day, Jack takes the bus to the station. Then he takes the train to the city. He works on a big ship. He is not a driver; he cooks for the people on the ship. On the weekend, he takes his small boat out on the river.\"；改後：\"Every day, Jack takes the bus to the station. Then he takes the train to the city. He works on a big ship. He cooks for the people on the ship. On the weekend, he takes his small boat out on the river.\"",
+        "resolvedAt": "2026-10-02T12:41:15Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②③關 FIX：中譯同步",
+        "resolution": "改前：\"Jack 每天搭公車到車站，再搭火車進城。他在一艘大船上工作。他不是駕駛，而是幫船上的人煮飯。週末他會開著他的小船到河上。\"；改後：\"Jack 每天搭公車到車站，再搭火車進城。他在一艘大船上工作，幫船上的人煮飯。週末他會開著他的小船到河上。\"",
+        "resolvedAt": "2026-10-02T12:41:15Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「煮飯」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:15Z"
+      }
+    ]
+  }
+}

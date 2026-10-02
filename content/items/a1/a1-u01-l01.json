@@ -128,11 +128,11 @@
       "audioZh": "Mia 有一隻狗和一隻貓。",
       "questionZh": "Mia 有什麼動物？",
       "options": [
-        "A dog and a cat",
         "Two dogs",
+        "A dog and a cat",
         "A cat and a bird"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "id": "a1-u01-l01-q11",
@@ -154,16 +154,16 @@
       "options": [
         "to",
         "in",
-        "of",
-        "and"
+        "and",
+        "of"
       ],
       "optionGlossZh": [
         "到",
         "在⋯裡",
-        "⋯的",
-        "和"
+        "和",
+        "⋯的"
       ],
-      "answer": 2
+      "answer": 3
     },
     {
       "id": "a1-u01-l01-q14",
@@ -172,17 +172,17 @@
       "stemZh": "我媽媽現在在廚房裡。",
       "options": [
         "of",
-        "in",
+        "to",
         "and",
-        "to"
+        "in"
       ],
       "optionGlossZh": [
         "⋯的",
-        "在⋯裡",
+        "到",
         "和",
-        "到"
+        "在⋯裡"
       ],
-      "answer": 1
+      "answer": 3
     },
     {
       "id": "a1-u01-l01-q15",
@@ -203,10 +203,10 @@
           "questionZh": "早上狗在哪裡？",
           "options": [
             "在學校",
-            "在家裡",
-            "在公園"
+            "在公園",
+            "在家裡"
           ],
-          "answer": 1
+          "answer": 2
         }
       ]
     },
@@ -248,19 +248,19 @@
     "reviewedAt": "2026-10-02T04:16:44Z",
     "verdicts": {
       "a1-u01-l01-q10": [
-        0
+        1
       ],
       "a1-u01-l01-q13": [
-        2
+        3
       ],
       "a1-u01-l01-q14": [
-        1
+        3
       ],
       "a1-u01-l01-q15#0": [
         2
       ],
       "a1-u01-l01-q15#1": [
-        1
+        2
       ]
     },
     "glossVerdicts": {},
@@ -283,6 +283,30 @@
         "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
         "resolution": "正解「一個妹妹和一隻狗」由位置 0 移到 2，與「兩隻狗」互換；審題員判題索引同步重對應",
         "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「A dog and a cat」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「of」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「in」由位置 1 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「在家裡」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:47:49Z"
       }
     ]
   }

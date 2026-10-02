@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u14-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:45:15Z",
+  "properNouns": [
+    "Ben",
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "a1-u14-l03-q01",
+      "type": "wordCard",
+      "word": "win",
+      "exampleEn": "Our team always wins.",
+      "exampleZh": "我們隊總是贏。",
+      "glossZh": "贏",
+      "distractorsZh": [
+        "輸",
+        "參加",
+        "練習"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q02",
+      "type": "wordCard",
+      "word": "music",
+      "exampleEn": "I listen to music on the bus.",
+      "exampleZh": "我在公車上聽音樂。",
+      "glossZh": "音樂",
+      "distractorsZh": [
+        "新聞",
+        "電影",
+        "故事"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q03",
+      "type": "wordCard",
+      "word": "player",
+      "exampleEn": "He is a great soccer player.",
+      "exampleZh": "他是一位很棒的足球員。",
+      "glossZh": "選手；球員",
+      "distractorsZh": [
+        "教練",
+        "球迷",
+        "裁判"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q04",
+      "type": "wordCard",
+      "word": "star",
+      "exampleEn": "She is a big movie star.",
+      "exampleZh": "她是電影大明星。",
+      "glossZh": "明星",
+      "distractorsZh": [
+        "導演",
+        "記者",
+        "粉絲"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q05",
+      "type": "wordCard",
+      "word": "picture",
+      "exampleEn": "Can I take a picture of you?",
+      "exampleZh": "我可以幫你拍張照嗎？",
+      "glossZh": "照片；圖畫",
+      "distractorsZh": [
+        "影片",
+        "信",
+        "海報"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q06",
+      "type": "wordCard",
+      "word": "news",
+      "exampleEn": "I read the news every morning.",
+      "exampleZh": "我每天早上看新聞。",
+      "glossZh": "新聞；消息",
+      "distractorsZh": [
+        "小說",
+        "廣告",
+        "天氣"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q07",
+      "type": "wordCard",
+      "word": "movie",
+      "exampleEn": "This movie is very funny.",
+      "exampleZh": "這部電影很好笑。",
+      "glossZh": "電影",
+      "distractorsZh": [
+        "音樂",
+        "書",
+        "遊戲"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q08",
+      "type": "wordCard",
+      "word": "catch",
+      "exampleEn": "Can you catch the ball?",
+      "exampleZh": "你接得到球嗎？",
+      "glossZh": "接住；抓住",
+      "distractorsZh": [
+        "丟",
+        "踢",
+        "打"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "Let's watch a movie tonight.",
+      "sentenceZh": "我們今晚看電影吧。"
+    },
+    {
+      "id": "a1-u14-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "The news says our team won the game.",
+      "audioZh": "新聞說我們隊贏了比賽。",
+      "questionZh": "新聞說什麼？",
+      "options": [
+        "It will rain.",
+        "Our team won.",
+        "The game is tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u14-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "The dog can catch the ball.",
+      "sentenceZh": "那隻狗接得到球。"
+    },
+    {
+      "id": "a1-u14-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "That singer is a big star in Japan.",
+      "sentenceZh": "那位歌手在日本是大明星。"
+    },
+    {
+      "id": "a1-u14-l03-q13",
+      "type": "mcq",
+      "stemEn": "Our team played well and ____ the game.",
+      "stemZh": "我們隊表現很好，贏了比賽。",
+      "options": [
+        "won",
+        "music",
+        "picture",
+        "news"
+      ],
+      "optionGlossZh": [
+        "贏",
+        "音樂",
+        "照片",
+        "新聞"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u14-l03-q14",
+      "type": "mcq",
+      "stemEn": "Look here! I want to take a ____ of you.",
+      "stemZh": "看這裡！我想幫你拍張照。",
+      "options": [
+        "star",
+        "news",
+        "picture",
+        "music"
+      ],
+      "optionGlossZh": [
+        "明星",
+        "新聞",
+        "照片",
+        "音樂"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u14-l03-q15",
+      "type": "reading",
+      "passageEn": "Ben loves soccer. He is a player on his school team, and he has a picture of a famous soccer player on his wall. Today, Ben's team plays a big game, and they win! It is on the news that night.",
+      "passageZh": "Ben 很愛足球，他是校隊的球員，他的牆上貼著一位知名足球員的照片。今天 Ben 的隊伍參加一場大比賽，而且贏了！當晚的新聞還報導了這件事。",
+      "questions": [
+        {
+          "questionZh": "Ben 的牆上貼著誰的照片？",
+          "options": [
+            "一位知名的足球員",
+            "他的教練",
+            "他的隊友"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "今天的比賽結果如何？",
+          "options": [
+            "Ben 的隊伍贏了",
+            "Ben 的隊伍輸了",
+            "比賽延期了"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q16",
+      "type": "translate",
+      "promptZh": "我喜歡聽音樂。",
+      "hintWords": [
+        "music"
+      ],
+      "referenceEn": [
+        "I like to listen to music.",
+        "I like listening to music."
+      ],
+      "rubricZh": [
+        "「聽音樂」用 listen to music（要有 to）",
+        "like 後面可接 to＋原形或動名詞（例如 like to listen、like listening）"
+      ]
+    },
+    {
+      "id": "a1-u14-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "movie",
+      "instructionZh": "用 movie 造一個句子，說說你喜歡的電影或你最近看的電影。",
+      "referenceEn": [
+        "I watched a funny movie yesterday.",
+        "My favorite movie is about a dog."
+      ],
+      "rubricZh": [
+        "「看電影」可用 watch a movie、see a movie 等",
+        "時態配合內容（例如過去的事用過去式 watched）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u14-l03-q10": [
+        1
+      ],
+      "a1-u14-l03-q13": [
+        0
+      ],
+      "a1-u14-l03-q14": [
+        2
+      ],
+      "a1-u14-l03-q15#0": [
+        0
+      ],
+      "a1-u14-l03-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：裁示：star 在休閒單元教「明星」",
+        "resolution": "改前：\"There are many stars in the sky tonight.\"；改後：\"She is a big movie star.\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：裁示：star 在休閒單元教「明星」",
+        "resolution": "改前：\"今晚天空有很多星星。\"；改後：\"她是電影大明星。\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長第②③關裁示修正：裁示：star 在休閒單元教「明星」",
+        "resolution": "改前：\"星星\"；改後：\"明星\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/3/distractorsZh/0",
+        "message": "執行長第②③關裁示修正：裁示：star 在休閒單元教「明星」",
+        "resolution": "改前：\"月亮\"；改後：\"導演\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/3/distractorsZh/1",
+        "message": "執行長第②③關裁示修正：裁示：star 在休閒單元教「明星」",
+        "resolution": "改前：\"雲\"；改後：\"記者\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/3/distractorsZh/2",
+        "message": "執行長第②③關裁示修正：裁示：star 在休閒單元教「明星」",
+        "resolution": "改前：\"太陽\"；改後：\"粉絲\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/9/audioEn",
+        "message": "執行長第②③關裁示修正：第③關 D7：新聞報導結果",
+        "resolution": "改前：\"The news says our team will win the game today.\"；改後：\"The news says our team won the game.\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長第②③關裁示修正：第③關 D7：新聞報導結果",
+        "resolution": "改前：\"新聞說我們隊今天會贏得比賽。\"；改後：\"新聞說我們隊贏了比賽。\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長第②③關裁示修正：第③關 D7：新聞報導結果",
+        "resolution": "改前：\"Our team will win.\"；改後：\"It will rain.\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長第②③關裁示修正：第③關 D7：新聞報導結果",
+        "resolution": "改前：\"It will rain.\"；改後：\"Our team won.\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/9/answer",
+        "message": "執行長第②③關裁示修正：第③關 D7：新聞報導結果",
+        "resolution": "改前：0；改後：1",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：star 情境同步",
+        "resolution": "改前：\"I can see a very bright star.\"；改後：\"That singer is a big star in Japan.\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：star 情境同步",
+        "resolution": "改前：\"我看得到一顆很亮的星星。\"；改後：\"那位歌手在日本是大明星。\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「picture」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長第②③關裁示修正：裁示：選項釋義同步",
+        "resolution": "改前：\"星星\"；改後：\"明星\"",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「一位知名的足球員」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Ben\"]；改後：[\"Ben\",\"Japan\"]",
+        "resolvedAt": "2026-10-02T12:45:16Z"
+      }
+    ]
+  }
+}

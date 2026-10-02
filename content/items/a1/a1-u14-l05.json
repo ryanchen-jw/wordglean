@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u14-l05",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:45:23Z",
+  "properNouns": [
+    "Emma",
+    "Mom"
+  ],
+  "items": [
+    {
+      "id": "a1-u14-l05-q01",
+      "type": "wordCard",
+      "word": "song",
+      "exampleEn": "This is my favorite song.",
+      "exampleZh": "這是我最喜歡的歌。",
+      "glossZh": "歌曲",
+      "distractorsZh": [
+        "電影",
+        "故事",
+        "照片"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q02",
+      "type": "wordCard",
+      "word": "enjoy",
+      "exampleEn": "I enjoy reading books.",
+      "exampleZh": "我很喜歡看書。",
+      "glossZh": "享受；喜歡",
+      "distractorsZh": [
+        "討厭",
+        "忘記",
+        "完成"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q03",
+      "type": "wordCard",
+      "word": "radio",
+      "exampleEn": "My father listens to the radio in the car.",
+      "exampleZh": "我爸爸在車上聽廣播。",
+      "glossZh": "收音機；廣播",
+      "distractorsZh": [
+        "電視",
+        "電話",
+        "相機"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q04",
+      "type": "wordCard",
+      "word": "ball",
+      "exampleEn": "The dog is playing with a ball.",
+      "exampleZh": "狗在玩球。",
+      "glossZh": "球",
+      "distractorsZh": [
+        "盒子",
+        "玩具車",
+        "骨頭"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q05",
+      "type": "wordCard",
+      "word": "camera",
+      "exampleEn": "I take pictures with my new camera.",
+      "exampleZh": "我用新相機拍照。",
+      "glossZh": "相機",
+      "distractorsZh": [
+        "手機",
+        "電視",
+        "收音機"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q06",
+      "type": "wordCard",
+      "word": "bar",
+      "exampleEn": "I want a chocolate bar.",
+      "exampleZh": "我想要一條巧克力。",
+      "glossZh": "條；塊（長條狀）",
+      "distractorsZh": [
+        "盒",
+        "包",
+        "杯"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q07",
+      "type": "wordCard",
+      "word": "magazine",
+      "exampleEn": "I read a magazine on the train.",
+      "exampleZh": "我在火車上看雜誌。",
+      "glossZh": "雜誌",
+      "distractorsZh": [
+        "報紙",
+        "小說",
+        "字典"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q08",
+      "type": "wordCard",
+      "word": "sing",
+      "exampleEn": "She sings very well.",
+      "exampleZh": "她唱歌唱得很好。",
+      "glossZh": "唱歌",
+      "distractorsZh": [
+        "跳舞",
+        "說話",
+        "畫畫"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "Let's sing a happy song.",
+      "sentenceZh": "我們來唱首快樂的歌吧。"
+    },
+    {
+      "id": "a1-u14-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "Let's sing a song for Mom's birthday.",
+      "audioZh": "我們為媽媽的生日唱首歌吧。",
+      "questionZh": "他們要為媽媽做什麼？",
+      "options": [
+        "Buy a camera",
+        "Sing a song",
+        "Make a cake"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u14-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "The kids are playing with a ball.",
+      "sentenceZh": "孩子們在玩球。"
+    },
+    {
+      "id": "a1-u14-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "There is a chocolate bar in my bag.",
+      "sentenceZh": "我的包包裡有一條巧克力。"
+    },
+    {
+      "id": "a1-u14-l05-q13",
+      "type": "mcq",
+      "stemEn": "We ____ the party very much.",
+      "stemZh": "我們非常享受這個派對。",
+      "options": [
+        "ball",
+        "song",
+        "radio",
+        "enjoy"
+      ],
+      "optionGlossZh": [
+        "球",
+        "歌曲",
+        "收音機",
+        "享受"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u14-l05-q14",
+      "type": "mcq",
+      "stemEn": "I take a lot of pictures with my ____.",
+      "stemZh": "我用相機拍很多照片。",
+      "options": [
+        "bar",
+        "radio",
+        "magazine",
+        "camera"
+      ],
+      "optionGlossZh": [
+        "條",
+        "收音機",
+        "雜誌",
+        "相機"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u14-l05-q15",
+      "type": "reading",
+      "passageEn": "Emma enjoys music. She sings in the school band. In the car, she always listens to the radio and sings along. Her favorite magazine is about music, too. For her birthday, she wants a new camera.",
+      "passageZh": "Emma 很喜歡音樂，她在學校的樂團唱歌。在車上，她總是聽著廣播跟著唱。她最喜歡的雜誌也是跟音樂有關的。她生日想要一台新相機。",
+      "questions": [
+        {
+          "questionZh": "Emma 在車上做什麼？",
+          "options": [
+            "拍照",
+            "看雜誌",
+            "聽廣播跟著唱"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "Emma 最喜歡的雜誌是關於什麼的？",
+          "options": [
+            "電影",
+            "運動",
+            "音樂"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q16",
+      "type": "translate",
+      "promptZh": "我很喜歡唱歌。",
+      "hintWords": [
+        "enjoy",
+        "sing"
+      ],
+      "referenceEn": [
+        "I enjoy singing.",
+        "I really enjoy singing."
+      ],
+      "rubricZh": [
+        "enjoy 後面接動名詞（例如 enjoy singing），不接 to sing",
+        "可加 really、very much 加強語氣（例如 I really enjoy singing），沒加也正確"
+      ]
+    },
+    {
+      "id": "a1-u14-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "enjoy",
+      "instructionZh": "用 enjoy 造一個句子，說說你喜歡做的事。",
+      "referenceEn": [
+        "I enjoy cooking for my family.",
+        "I enjoy walking in the park."
+      ],
+      "rubricZh": [
+        "enjoy 後面接名詞或動名詞（例如 enjoy music、enjoy cooking），不接 to＋原形",
+        "動詞配合主詞和時態"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u14-l05-q10": [
+        1
+      ],
+      "a1-u14-l05-q13": [
+        3
+      ],
+      "a1-u14-l05-q14": [
+        3
+      ],
+      "a1-u14-l05-q15#0": [
+        2
+      ],
+      "a1-u14-l05-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「enjoy」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:24Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「聽廣播跟著唱」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:24Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Emma\"]；改後：[\"Emma\",\"Mom\"]",
+        "resolvedAt": "2026-10-02T12:45:24Z"
+      }
+    ]
+  }
+}

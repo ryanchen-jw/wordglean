@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u19-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:22:32Z",
+  "properNouns": [
+    "Lisa"
+  ],
+  "items": [
+    {
+      "id": "a1-u19-l03-q01",
+      "type": "wordCard",
+      "word": "under",
+      "exampleEn": "My shoes are under the table.",
+      "exampleZh": "我的鞋子在桌子底下。",
+      "glossZh": "在⋯下面",
+      "distractorsZh": [
+        "在⋯上面",
+        "在⋯旁邊",
+        "在⋯後面"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q02",
+      "type": "wordCard",
+      "word": "lot",
+      "exampleEn": "I have a lot of friends.",
+      "exampleZh": "我有很多朋友。",
+      "glossZh": "（a lot of）很多",
+      "distractorsZh": [
+        "一點",
+        "沒有",
+        "幾個"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q03",
+      "type": "wordCard",
+      "word": "both",
+      "exampleEn": "Both of my parents are teachers.",
+      "exampleZh": "我爸媽都是老師。",
+      "glossZh": "兩者都",
+      "distractorsZh": [
+        "只有一個",
+        "都不",
+        "每個"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q04",
+      "type": "wordCard",
+      "word": "yes",
+      "exampleEn": "Yes, I am ready.",
+      "exampleZh": "是的，我準備好了。",
+      "glossZh": "是；對",
+      "distractorsZh": [
+        "不",
+        "也許",
+        "謝謝"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q05",
+      "type": "wordCard",
+      "word": "around",
+      "exampleEn": "We walk around the park.",
+      "exampleZh": "我們繞著公園走。",
+      "glossZh": "在⋯周圍；繞著",
+      "distractorsZh": [
+        "穿過",
+        "越過",
+        "沿著"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q06",
+      "type": "wordCard",
+      "word": "away",
+      "exampleEn": "The beach is ten minutes away.",
+      "exampleZh": "海灘在十分鐘路程外。",
+      "glossZh": "在遠處；離開",
+      "distractorsZh": [
+        "附近",
+        "這裡",
+        "裡面"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q07",
+      "type": "wordCard",
+      "word": "until",
+      "exampleEn": "The shop is open until nine.",
+      "exampleZh": "這家店開到九點。",
+      "glossZh": "直到",
+      "distractorsZh": [
+        "從",
+        "在⋯之前",
+        "大約"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q08",
+      "type": "wordCard",
+      "word": "yet",
+      "exampleEn": "I have not finished my homework yet.",
+      "exampleZh": "我還沒寫完功課。",
+      "glossZh": "（否定句）還；尚",
+      "distractorsZh": [
+        "已經",
+        "剛剛",
+        "從不"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "Are you a student? Yes, I am.",
+      "sentenceZh": "你是學生嗎？是的，我是。"
+    },
+    {
+      "id": "a1-u19-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "Is the shop open? Yes, it is open until ten.",
+      "audioZh": "店有開嗎？有，開到十點。",
+      "questionZh": "店開到幾點？",
+      "options": [
+        "Until eight",
+        "Until nine",
+        "Until ten"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u19-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "The birds flew away.",
+      "sentenceZh": "鳥兒飛走了。"
+    },
+    {
+      "id": "a1-u19-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "There are a lot of books under the bed.",
+      "sentenceZh": "床底下有很多書。"
+    },
+    {
+      "id": "a1-u19-l03-q13",
+      "type": "mcq",
+      "stemEn": "Are you ready? Not ____.",
+      "stemZh": "你準備好了嗎？還沒。",
+      "options": [
+        "yet",
+        "both",
+        "around",
+        "under"
+      ],
+      "optionGlossZh": [
+        "還",
+        "兩者都",
+        "周圍",
+        "在⋯下面"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u19-l03-q14",
+      "type": "mcq",
+      "stemEn": "I have two brothers. ____ of them are tall.",
+      "stemZh": "我有兩個兄弟，他們兩個都很高。",
+      "options": [
+        "Both",
+        "Yes",
+        "Away",
+        "Until"
+      ],
+      "optionGlossZh": [
+        "兩者都",
+        "是",
+        "離開",
+        "直到"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u19-l03-q15",
+      "type": "reading",
+      "passageEn": "Lisa has a dog and a cat. Both of them sleep under her bed. Every evening, she walks the dog around the block. Her cat stays home. Lisa says the cat is not ready for a walk yet. They walk until it gets dark.",
+      "passageZh": "Lisa 有一隻狗和一隻貓，牠們都睡在她的床底下。每天傍晚，她都帶狗繞著街區散步，貓則待在家裡。Lisa 說貓還沒準備好去散步。她和狗一直走到天黑。",
+      "questions": [
+        {
+          "questionZh": "Lisa 的狗和貓睡在哪裡？",
+          "options": [
+            "院子裡",
+            "她的床底下",
+            "沙發上"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Lisa 每天傍晚帶狗做什麼？",
+          "options": [
+            "去公園玩球",
+            "繞著街區散步",
+            "去看醫生"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q16",
+      "type": "translate",
+      "promptZh": "我們兩個都是學生。",
+      "hintWords": [
+        "both"
+      ],
+      "referenceEn": [
+        "We are both students.",
+        "Both of us are students."
+      ],
+      "rubricZh": [
+        "「兩個都」可用 both，放在 be 動詞後面（例如 We are both）或主詞前（例如 Both of us）",
+        "主詞是複數，名詞也用複數 students"
+      ]
+    },
+    {
+      "id": "a1-u19-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "lot",
+      "instructionZh": "用 a lot of 造一個句子，說說你有很多的東西。",
+      "referenceEn": [
+        "I have a lot of books.",
+        "I have a lot of toy cars."
+      ],
+      "rubricZh": [
+        "a lot of 後面可接可數複數名詞或不可數名詞（例如 a lot of books、a lot of water）",
+        "寫 lots of 也正確"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T13:19:27Z",
+    "verdicts": {
+      "a1-u19-l03-q10": [
+        2
+      ],
+      "a1-u19-l03-q13": [
+        0
+      ],
+      "a1-u19-l03-q14": [
+        0
+      ],
+      "a1-u19-l03-q15#0": [
+        1
+      ],
+      "a1-u19-l03-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：情境句不與單字卡雷同，對上「離開」義",
+        "resolution": "改前：\"The station is five minutes away.\"；改後：\"The birds flew away.\"",
+        "resolvedAt": "2026-10-02T13:22:32Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：情境句不與單字卡雷同，對上「離開」義",
+        "resolution": "改前：\"車站在五分鐘路程外。\"；改後：\"鳥兒飛走了。\"",
+        "resolvedAt": "2026-10-02T13:22:32Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：They 指 Lisa 和狗，不用「她們」",
+        "resolution": "改前：\"Lisa 有一隻狗和一隻貓，牠們都睡在她的床底下。每天傍晚，她都帶狗繞著街區散步，貓則待在家裡。Lisa 說貓還沒準備好去散步。她們一直走到天黑。\"；改後：\"Lisa 有一隻狗和一隻貓，牠們都睡在她的床底下。每天傍晚，她都帶狗繞著街區散步，貓則待在家裡。Lisa 說貓還沒準備好去散步。她和狗一直走到天黑。\"",
+        "resolvedAt": "2026-10-02T13:22:32Z"
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第③關 D2：參考答案要說「你有」",
+        "resolution": "改前：\"There are a lot of trees near my home.\"；改後：\"I have a lot of toy cars.\"",
+        "resolvedAt": "2026-10-02T13:22:32Z"
+      }
+    ]
+  }
+}

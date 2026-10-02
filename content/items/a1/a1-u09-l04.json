@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u09-l04",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:48Z",
+  "properNouns": [
+    "Kevin"
+  ],
+  "items": [
+    {
+      "id": "a1-u09-l04-q01",
+      "type": "wordCard",
+      "word": "ribbon",
+      "exampleEn": "She has a red ribbon in her hair.",
+      "exampleZh": "她頭髮上綁著一條紅色緞帶。",
+      "glossZh": "緞帶；絲帶",
+      "distractorsZh": [
+        "髮夾",
+        "帽子",
+        "手環"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q02",
+      "type": "wordCard",
+      "word": "trousers",
+      "exampleEn": "He is wearing black trousers.",
+      "exampleZh": "他穿著黑色長褲。",
+      "glossZh": "（英式）長褲",
+      "distractorsZh": [
+        "襯衫",
+        "裙子",
+        "外套"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q03",
+      "type": "wordCard",
+      "word": "apron",
+      "exampleEn": "My mother wears an apron when she cooks.",
+      "exampleZh": "我媽媽煮飯時會穿圍裙。",
+      "glossZh": "圍裙",
+      "distractorsZh": [
+        "外套",
+        "毛巾",
+        "手套"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q04",
+      "type": "wordCard",
+      "word": "haircut",
+      "exampleEn": "I like your new haircut!",
+      "exampleZh": "我喜歡你的新髮型！",
+      "glossZh": "理髮；髮型",
+      "distractorsZh": [
+        "帽子",
+        "衣服",
+        "眼鏡"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q05",
+      "type": "wordCard",
+      "word": "glasses",
+      "exampleEn": "I wear glasses when I read.",
+      "exampleZh": "我看書時會戴眼鏡。",
+      "glossZh": "眼鏡",
+      "distractorsZh": [
+        "手錶",
+        "帽子",
+        "耳環"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q06",
+      "type": "wordCard",
+      "word": "pants",
+      "exampleEn": "These pants are too long.",
+      "exampleZh": "這條褲子太長了。",
+      "glossZh": "（美式）褲子",
+      "distractorsZh": [
+        "襯衫",
+        "鞋子",
+        "裙子"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q07",
+      "type": "wordCard",
+      "word": "t-shirt",
+      "exampleEn": "I wear a T-shirt in summer.",
+      "exampleZh": "我夏天穿 T 恤。",
+      "glossZh": "T 恤",
+      "distractorsZh": [
+        "襯衫",
+        "外套",
+        "背心"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q08",
+      "type": "listenType",
+      "sentenceEn": "Where are my glasses?",
+      "sentenceZh": "我的眼鏡在哪裡？"
+    },
+    {
+      "id": "a1-u09-l04-q09",
+      "type": "listenChoice",
+      "audioEn": "Please wear an apron in the kitchen. Your T-shirt is white.",
+      "audioZh": "在廚房請穿圍裙，你的 T 恤是白色的。",
+      "questionZh": "說話者要你在廚房穿什麼？",
+      "options": [
+        "An apron",
+        "A T-shirt",
+        "Glasses"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u09-l04-q10",
+      "type": "shadowing",
+      "sentenceEn": "The girl has a pink ribbon in her hair.",
+      "sentenceZh": "那個女孩頭髮上綁著一條粉紅色緞帶。"
+    },
+    {
+      "id": "a1-u09-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "His trousers are too short.",
+      "sentenceZh": "他的長褲太短了。"
+    },
+    {
+      "id": "a1-u09-l04-q12",
+      "type": "mcq",
+      "stemEn": "I can't see well. Where are my ____?",
+      "stemZh": "我看不清楚，我的眼鏡在哪裡？",
+      "options": [
+        "apron",
+        "glasses",
+        "haircut",
+        "ribbon"
+      ],
+      "optionGlossZh": [
+        "圍裙",
+        "眼鏡",
+        "髮型",
+        "緞帶"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u09-l04-q13",
+      "type": "mcq",
+      "stemEn": "Your hair is too long. Go and get a ____.",
+      "stemZh": "你的頭髮太長了，去剪個頭髮吧。",
+      "options": [
+        "trousers",
+        "apron",
+        "haircut",
+        "glasses"
+      ],
+      "optionGlossZh": [
+        "長褲",
+        "圍裙",
+        "理髮",
+        "眼鏡"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u09-l04-q14",
+      "type": "reading",
+      "passageEn": "Kevin works at a small cafe. Every morning, he puts on a white T-shirt, black pants, and a long apron. He wears glasses because he can't see well. Today he has a new haircut, and everyone says he looks great.",
+      "passageZh": "Kevin 在一家小咖啡店工作。每天早上，他穿上白色 T 恤、黑色褲子和一件長圍裙。他戴眼鏡，因為他看不清楚。今天他剪了新髮型，大家都說他看起來很棒。",
+      "questions": [
+        {
+          "questionZh": "Kevin 上班穿什麼顏色的褲子？",
+          "options": [
+            "黑色",
+            "白色",
+            "藍色"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Kevin 為什麼戴眼鏡？",
+          "options": [
+            "他看不清楚",
+            "他覺得好看",
+            "工作規定要戴"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q15",
+      "type": "translate",
+      "promptZh": "我夏天都穿 T 恤。",
+      "hintWords": [
+        "T-shirt"
+      ],
+      "referenceEn": [
+        "I wear T-shirts in summer.",
+        "I always wear a T-shirt in summer."
+      ],
+      "rubricZh": [
+        "「穿」用 wear",
+        "T-shirt（寫成 t-shirt 也接受，大小寫不扣分），泛指時可用複數 T-shirts"
+      ]
+    },
+    {
+      "id": "a1-u09-l04-q16",
+      "type": "makeSentence",
+      "targetWord": "glasses",
+      "instructionZh": "用 glasses 造一個句子，說說你或你身邊的人戴眼鏡的情況。",
+      "referenceEn": [
+        "I wear glasses at work.",
+        "My father wears glasses when he reads."
+      ],
+      "rubricZh": [
+        "「戴眼鏡」用 wear glasses",
+        "glasses 是複數，當主詞時動詞用 are（例如 My glasses are new）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u09-l04-q09": [
+        0
+      ],
+      "a1-u09-l04-q12": [
+        1
+      ],
+      "a1-u09-l04-q13": [
+        2
+      ],
+      "a1-u09-l04-q14#0": [
+        0
+      ],
+      "a1-u09-l04-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「An apron」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：跟讀句改 His trousers are too short.",
+        "resolution": "改前：\"Pants and trousers are the same thing.\"；改後：\"His trousers are too short.\"",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：跟讀句改 His trousers are too short.",
+        "resolution": "改前：\"pants 和 trousers 是同一種東西。\"；改後：\"他的長褲太短了。\"",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「haircut」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「黑色」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「他看不清楚」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"T-shirt 的 T 要大寫，泛指時可用複數 T-shirts\"；改後：\"T-shirt（寫成 t-shirt 也接受，大小寫不扣分），泛指時可用複數 T-shirts\"",
+        "resolvedAt": "2026-10-02T11:28:53Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「glasses」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:48Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「haircut」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:48Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「黑色」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:48Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
+        "resolution": "改前：[\"T\",\"Kevin\"]；改後：[\"Kevin\"]",
+        "resolvedAt": "2026-10-02T13:00:29Z"
+      }
+    ]
+  }
+}

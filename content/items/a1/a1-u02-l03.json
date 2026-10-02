@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u02-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:02Z",
+  "properNouns": [
+    "Ken",
+    "Sam",
+    "Nina",
+    "Korea",
+    "Leo"
+  ],
+  "items": [
+    {
+      "id": "a1-u02-l03-q01",
+      "type": "wordCard",
+      "word": "thank",
+      "exampleEn": "Thank you for your help.",
+      "exampleZh": "謝謝你的幫忙。",
+      "glossZh": "感謝；謝謝",
+      "distractorsZh": [
+        "道歉",
+        "歡迎",
+        "介紹"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q02",
+      "type": "wordCard",
+      "word": "personal",
+      "exampleEn": "Please do not ask personal questions.",
+      "exampleZh": "請不要問私人問題。",
+      "glossZh": "個人的；私人的",
+      "distractorsZh": [
+        "公共的",
+        "外國的",
+        "重要的"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q03",
+      "type": "wordCard",
+      "word": "foreign",
+      "exampleEn": "Do you speak a foreign language?",
+      "exampleZh": "你會說外語嗎？",
+      "glossZh": "外國的",
+      "distractorsZh": [
+        "本地的",
+        "私人的",
+        "重要的"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q04",
+      "type": "wordCard",
+      "word": "address",
+      "exampleEn": "Please write your address here.",
+      "exampleZh": "請在這裡寫下你的地址。",
+      "glossZh": "地址",
+      "distractorsZh": [
+        "電話",
+        "名字",
+        "年齡"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q05",
+      "type": "wordCard",
+      "word": "sorry",
+      "exampleEn": "I am sorry I am late.",
+      "exampleZh": "對不起，我遲到了。",
+      "glossZh": "抱歉的；對不起",
+      "distractorsZh": [
+        "高興的",
+        "生氣的",
+        "害怕的"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q06",
+      "type": "wordCard",
+      "word": "introduce",
+      "exampleEn": "Let me introduce my friend Ken.",
+      "exampleZh": "讓我介紹我的朋友 Ken。",
+      "glossZh": "介紹",
+      "distractorsZh": [
+        "感謝",
+        "邀請",
+        "打招呼"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q07",
+      "type": "wordCard",
+      "word": "reporter",
+      "exampleEn": "The reporter asks the singer some questions.",
+      "exampleZh": "記者問了歌手一些問題。",
+      "glossZh": "記者",
+      "distractorsZh": [
+        "歌手",
+        "工程師",
+        "警察"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q08",
+      "type": "wordCard",
+      "word": "birth",
+      "exampleEn": "Please write your date of birth here.",
+      "exampleZh": "請在這裡寫下你的出生日期。",
+      "glossZh": "出生",
+      "distractorsZh": [
+        "搬家",
+        "結婚",
+        "工作"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "What is your date of birth?",
+      "sentenceZh": "你的出生日期是什麼時候？"
+    },
+    {
+      "id": "a1-u02-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "Hi, I am Sam. I am a reporter from a foreign newspaper.",
+      "audioZh": "嗨，我是 Sam，我是一家外國報社的記者。",
+      "questionZh": "Sam 的工作是什麼？",
+      "options": [
+        "He is a doctor.",
+        "He is a teacher.",
+        "He is a reporter."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u02-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "Please write your personal information here.",
+      "sentenceZh": "請在這裡填寫你的個人資料。"
+    },
+    {
+      "id": "a1-u02-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "My sister works for a foreign bank.",
+      "sentenceZh": "我姊姊在一家外商銀行工作。"
+    },
+    {
+      "id": "a1-u02-l03-q13",
+      "type": "mcq",
+      "stemEn": "Please write your home ____ here.",
+      "stemZh": "請在這裡寫下你家的地址。",
+      "options": [
+        "reporter",
+        "address",
+        "sorry",
+        "thank"
+      ],
+      "optionGlossZh": [
+        "記者",
+        "地址",
+        "抱歉的",
+        "感謝"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u02-l03-q14",
+      "type": "mcq",
+      "stemEn": "____ you very much!",
+      "stemZh": "非常謝謝你！",
+      "options": [
+        "Thank",
+        "Sorry",
+        "Personal",
+        "Introduce"
+      ],
+      "optionGlossZh": [
+        "感謝",
+        "抱歉的",
+        "個人的",
+        "介紹"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u02-l03-q15",
+      "type": "reading",
+      "passageEn": "Today a new student is in our class. The teacher introduces her to us. Her name is Nina, and she is from Korea. She can speak three languages. A reporter from the school newspaper asks her some questions. Nina says, \"Thank you. I am happy to be here.\"",
+      "passageZh": "今天我們班上有一位新同學。老師把她介紹給我們。她的名字是 Nina，來自韓國。她會說三種語言。校刊的一位記者問了她一些問題。Nina 說：「謝謝，我很高興來到這裡。」",
+      "questions": [
+        {
+          "questionZh": "誰把 Nina 介紹給大家？",
+          "options": [
+            "老師",
+            "校刊記者",
+            "Nina 的朋友"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Nina 會說幾種語言？",
+          "options": [
+            "三種",
+            "兩種",
+            "四種"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q16",
+      "type": "translate",
+      "promptZh": "對不起，我不知道你的名字。",
+      "hintWords": [
+        "sorry"
+      ],
+      "referenceEn": [
+        "Sorry, I don't know your name.",
+        "I am sorry, I do not know your name."
+      ],
+      "rubricZh": [
+        "道歉可用 sorry（例如 Sorry、I am sorry、I'm sorry）",
+        "否定可用 do not 或 don't（例如 I don't know your name）"
+      ]
+    },
+    {
+      "id": "a1-u02-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "introduce",
+      "instructionZh": "用 introduce 造一個句子，說你要把某個人介紹給大家。",
+      "referenceEn": [
+        "I want to introduce my friend Ken to everyone.",
+        "Let me introduce my brother, Leo."
+      ],
+      "rubricZh": [
+        "introduce 後面接被介紹的人（例如 introduce my friend Ken）",
+        "介紹給誰可用 to（例如 to everyone、to you all），沒寫也正確",
+        "開頭可用 I want to…、Let me…、I would like to… 等"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u02-l03-q10": [
+        2
+      ],
+      "a1-u02-l03-q13": [
+        1
+      ],
+      "a1-u02-l03-q14": [
+        0
+      ],
+      "a1-u02-l03-q15#0": [
+        0
+      ],
+      "a1-u02-l03-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關：逗號連接兩個子句（comma splice），改為 I am sorry I am late.",
+        "resolution": "改前：\"I am sorry, I am late.\"；改後：\"I am sorry I am late.\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：自查（裁示 form 照 lexicon A1 詞義）：例句不用 form 的「表格」詞義",
+        "resolution": "改前：\"Please write your date of birth on the form.\"；改後：\"Please write your date of birth here.\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：自查（裁示 form 照 lexicon A1 詞義）：例句不用 form 的「表格」詞義",
+        "resolution": "改前：\"請在表格上寫下你的出生日期。\"；改後：\"請在這裡寫下你的出生日期。\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（birth）",
+        "resolution": "改前：\"Thank you for the gift.\"；改後：\"What is your date of birth?\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（birth）",
+        "resolution": "改前：\"謝謝你的禮物。\"；改後：\"你的出生日期是什麼時候？\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「He is a reporter.」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（personal）",
+        "resolution": "改前：\"Can I introduce my sister to you?\"；改後：\"Please write your personal information here.\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（personal）",
+        "resolution": "改前：\"我可以把我妹妹介紹給你嗎？\"；改後：\"請在這裡填寫你的個人資料。\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（foreign）",
+        "resolution": "改前：\"I am sorry, I do not know his address.\"；改後：\"My sister works for a foreign bank.\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（foreign）",
+        "resolution": "改前：\"抱歉，我不知道他的地址。\"；改後：\"我姊姊在一家外商銀行工作。\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「address」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Thank」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「三種」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"道歉可用 sorry（例如 Sorry、I am sorry）\"；改後：\"道歉可用 sorry（例如 Sorry、I am sorry、I'm sorry）\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"否定句用 do not（don't）know\"；改後：\"否定可用 do not 或 don't（例如 I don't know your name）\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/16/referenceEn/0",
+        "message": "執行長第②③關裁示修正：第②關：題目要「介紹給大家」，參考答案改 to everyone",
+        "resolution": "改前：\"I want to introduce my friend Ken to you.\"；改後：\"I want to introduce my friend Ken to everyone.\"",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/16/rubricZh",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：[\"introduce 後面接被介紹的人（例如 introduce my friend）\",\"介紹給誰可用 to（例如 to you、to everyone），沒寫也正確\"]；改後：[\"introduce 後面接被介紹的人（例如 introduce my friend Ken）\",\"介紹給誰可用 to（例如 to everyone、to you all），沒寫也正確\",\"開頭可用 I want to…、Let me…、I would like to… 等\"]",
+        "resolvedAt": "2026-10-02T11:32:12Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「He is a reporter.」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:03Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「address」由位置 3 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:03Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Thank」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:03Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「三種」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:03Z"
+      }
+    ]
+  }
+}

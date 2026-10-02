@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u03-l04",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:22Z",
+  "properNouns": [
+    "Japan",
+    "Ken"
+  ],
+  "items": [
+    {
+      "id": "a1-u03-l04-q01",
+      "type": "wordCard",
+      "word": "early",
+      "exampleEn": "I get up early every day.",
+      "exampleZh": "我每天很早起床。",
+      "glossZh": "早；提早",
+      "distractorsZh": [
+        "晚；遲",
+        "很快",
+        "剛才"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q02",
+      "type": "wordCard",
+      "word": "moment",
+      "exampleEn": "Please wait a moment.",
+      "exampleZh": "請稍等一下。",
+      "glossZh": "片刻；一會兒",
+      "distractorsZh": [
+        "小時",
+        "地方",
+        "機會"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q03",
+      "type": "wordCard",
+      "word": "second",
+      "exampleEn": "This is my second time in Japan.",
+      "exampleZh": "這是我第二次來日本。",
+      "glossZh": "第二的",
+      "distractorsZh": [
+        "第一的",
+        "最後的",
+        "一半的"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q04",
+      "type": "wordCard",
+      "word": "six",
+      "exampleEn": "My son is six years old.",
+      "exampleZh": "我兒子六歲。",
+      "glossZh": "六",
+      "distractorsZh": [
+        "五",
+        "七",
+        "第六"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q05",
+      "type": "wordCard",
+      "word": "late",
+      "exampleEn": "Sorry, I am late.",
+      "exampleZh": "抱歉，我遲到了。",
+      "glossZh": "遲的；晚的",
+      "distractorsZh": [
+        "早的",
+        "忙的",
+        "累的"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q06",
+      "type": "wordCard",
+      "word": "half",
+      "exampleEn": "I waited for half an hour.",
+      "exampleZh": "我等了半小時。",
+      "glossZh": "一半",
+      "distractorsZh": [
+        "全部",
+        "一點",
+        "兩倍"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q07",
+      "type": "wordCard",
+      "word": "soon",
+      "exampleEn": "The bus will come soon.",
+      "exampleZh": "公車很快就會來。",
+      "glossZh": "很快；不久",
+      "distractorsZh": [
+        "很晚",
+        "剛才",
+        "以前"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q08",
+      "type": "wordCard",
+      "word": "period",
+      "exampleEn": "I have a math class in the first period.",
+      "exampleZh": "我第一節有數學課。",
+      "glossZh": "（上課的）一節；時段",
+      "distractorsZh": [
+        "考試",
+        "午餐",
+        "假期"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "The meeting starts at half past six.",
+      "sentenceZh": "會議六點半開始。"
+    },
+    {
+      "id": "a1-u03-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "Sorry, I am late. I will be there soon.",
+      "audioZh": "抱歉，我遲到了，我很快就到。",
+      "questionZh": "說話者怎麼了？",
+      "options": [
+        "Sick",
+        "Early",
+        "Late"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u03-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "I will be back in a moment.",
+      "sentenceZh": "我馬上回來。"
+    },
+    {
+      "id": "a1-u03-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "We get up early on Monday.",
+      "sentenceZh": "我們星期一很早起床。"
+    },
+    {
+      "id": "a1-u03-l04-q13",
+      "type": "mcq",
+      "stemEn": "The train leaves at six. Please don't be ____.",
+      "stemZh": "火車六點開，請不要遲到。",
+      "options": [
+        "moment",
+        "half",
+        "late",
+        "second"
+      ],
+      "optionGlossZh": [
+        "片刻",
+        "一半",
+        "遲的",
+        "第二的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u03-l04-q14",
+      "type": "mcq",
+      "stemEn": "I will call you back in a ____.",
+      "stemZh": "我等一下回電給你。",
+      "options": [
+        "moment",
+        "period",
+        "half",
+        "six"
+      ],
+      "optionGlossZh": [
+        "片刻",
+        "一節課",
+        "一半",
+        "六"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u03-l04-q15",
+      "type": "reading",
+      "passageEn": "School starts at eight. Today Ken gets up late, at half past seven. He runs to the bus stop. The bus comes soon, and he gets to school at eight. He is not late! In the second period, he has a math test.",
+      "passageZh": "學校八點上課。今天 Ken 很晚才起床，七點半才起來。他跑到公車站，公車很快就來了，他八點到學校，沒有遲到！第二節課他有數學考試。",
+      "questions": [
+        {
+          "questionZh": "Ken 今天幾點起床？",
+          "options": [
+            "七點半",
+            "八點",
+            "六點半"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Ken 第二節課有什麼？",
+          "options": [
+            "數學考試",
+            "英文課",
+            "體育課"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q16",
+      "type": "translate",
+      "promptZh": "火車很快就會到。",
+      "hintWords": [
+        "soon"
+      ],
+      "referenceEn": [
+        "The train will arrive soon.",
+        "The train will come soon.",
+        "The train is coming soon."
+      ],
+      "rubricZh": [
+        "soon 表示「很快」，常放在句尾（例如 arrive soon），也可放在 will 後面（例如 will soon arrive）",
+        "「到」可用 arrive、come、be here 等",
+        "未來的事用表示未來的寫法（例如 will、is coming）"
+      ]
+    },
+    {
+      "id": "a1-u03-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "early",
+      "instructionZh": "用 early 造一個句子，說說你很早做的一件事。",
+      "referenceEn": [
+        "I get up early on Monday.",
+        "I go to work early every day."
+      ],
+      "rubricZh": [
+        "early 常放在動詞片語後面（例如 get up early、go to work early）",
+        "時態配合內容（例如習慣用現在簡單式；昨天的事用過去式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u03-l04-q10": [
+        2
+      ],
+      "a1-u03-l04-q13": [
+        2
+      ],
+      "a1-u03-l04-q14": [
+        0
+      ],
+      "a1-u03-l04-q15#0": [
+        0
+      ],
+      "a1-u03-l04-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Late」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「late」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「七點半」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「數學考試」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"soon 表示「很快」，常放在句尾（例如 arrive soon）\"；改後：\"soon 表示「很快」，常放在句尾（例如 arrive soon），也可放在 will 後面（例如 will soon arrive）\"",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「到」可用 arrive、come 等\"；改後：\"「到」可用 arrive、come、be here 等\"",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"early 常放在動詞片語後面（例如 get up early）\"；改後：\"early 常放在動詞片語後面（例如 get up early、go to work early）\"",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"時態配合內容（習慣用現在簡單式；昨天的事用過去式）\"；改後：\"時態配合內容（例如習慣用現在簡單式；昨天的事用過去式）\"",
+        "resolvedAt": "2026-10-02T11:28:08Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「moment」由位置 3 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:22Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「七點半」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:22Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「數學考試」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:22Z"
+      }
+    ]
+  }
+}

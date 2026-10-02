@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l06",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:42:16Z",
+  "properNouns": [
+    "Anna",
+    "Lin",
+    "April",
+    "English"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l06-q01",
+      "type": "wordCard",
+      "word": "writer",
+      "exampleEn": "She is a famous writer.",
+      "exampleZh": "她是一位有名的作家。",
+      "glossZh": "作家",
+      "distractorsZh": [
+        "讀者",
+        "演員",
+        "記者"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q02",
+      "type": "wordCard",
+      "word": "scientist",
+      "exampleEn": "My uncle is a scientist.",
+      "exampleZh": "我舅舅是科學家。",
+      "glossZh": "科學家",
+      "distractorsZh": [
+        "醫生",
+        "工程師",
+        "老師"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q03",
+      "type": "wordCard",
+      "word": "speech",
+      "exampleEn": "The teacher gives a speech on the first day.",
+      "exampleZh": "老師在第一天發表演說。",
+      "glossZh": "演講；演說",
+      "distractorsZh": [
+        "考試",
+        "會議",
+        "對話"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q04",
+      "type": "wordCard",
+      "word": "conversation",
+      "exampleEn": "We have a long conversation on the phone.",
+      "exampleZh": "我們在電話裡聊了很久。",
+      "glossZh": "對話；談話",
+      "distractorsZh": [
+        "演講",
+        "信",
+        "訊息"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q05",
+      "type": "wordCard",
+      "word": "survey",
+      "exampleEn": "We did a survey of fifty students.",
+      "exampleZh": "我們對五十個學生做了調查。",
+      "glossZh": "調查",
+      "distractorsZh": [
+        "考試",
+        "報告",
+        "會議"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q06",
+      "type": "wordCard",
+      "word": "reader",
+      "exampleEn": "This book has many young readers.",
+      "exampleZh": "這本書有很多年輕讀者。",
+      "glossZh": "讀者",
+      "distractorsZh": [
+        "作家",
+        "老師",
+        "書店"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q07",
+      "type": "wordCard",
+      "word": "lesson",
+      "exampleEn": "Today's lesson is about animals.",
+      "exampleZh": "今天的課是關於動物的。",
+      "glossZh": "一課；課程",
+      "distractorsZh": [
+        "考試",
+        "假期",
+        "作業"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q08",
+      "type": "wordCard",
+      "word": "review",
+      "exampleEn": "We have a review lesson before the test.",
+      "exampleZh": "考試前我們上一堂複習課。",
+      "glossZh": "複習",
+      "distractorsZh": [
+        "考試",
+        "午餐",
+        "遊戲"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "The writer gives a speech at our school.",
+      "sentenceZh": "那位作家到我們學校演講。"
+    },
+    {
+      "id": "a1-u16-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "Today's lesson is a review. The test is on Friday.",
+      "audioZh": "今天的課是複習，考試在星期五。",
+      "questionZh": "考試是哪一天？",
+      "options": [
+        "Today",
+        "On Friday",
+        "On Monday"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "The scientist has a conversation with the students.",
+      "sentenceZh": "那位科學家和學生們對談。"
+    },
+    {
+      "id": "a1-u16-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "Many readers answered our survey.",
+      "sentenceZh": "很多讀者回覆了我們的調查。"
+    },
+    {
+      "id": "a1-u16-l06-q13",
+      "type": "mcq",
+      "stemEn": "A ____ writes books.",
+      "stemZh": "作家寫書。",
+      "options": [
+        "speech",
+        "reader",
+        "writer",
+        "survey"
+      ],
+      "optionGlossZh": [
+        "演講",
+        "讀者",
+        "作家",
+        "調查"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l06-q14",
+      "type": "mcq",
+      "stemEn": "Before the test, we have a ____ of all the lessons.",
+      "stemZh": "考試前，我們會複習所有的課。",
+      "options": [
+        "scientist",
+        "writer",
+        "review",
+        "conversation"
+      ],
+      "optionGlossZh": [
+        "科學家",
+        "作家",
+        "複習",
+        "對話"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l06-q15",
+      "type": "reading",
+      "passageEn": "Our class did a survey about reading. We asked fifty students. Most of them are big readers, and they love the stories of one writer, Anna Lin. In April, Anna Lin will give a speech at our school. We want to have a conversation with her.",
+      "passageZh": "我們班做了一個關於閱讀的調查，問了五十個學生。他們大多很愛看書，而且都喜歡作家 Anna Lin 的故事。四月時，Anna Lin 會來我們學校演講。我們想和她聊聊。",
+      "questions": [
+        {
+          "questionZh": "調查問了多少個學生？",
+          "options": [
+            "十五個",
+            "五十個",
+            "一百個"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "四月時 Anna Lin 會做什麼？",
+          "options": [
+            "寫一本新書",
+            "來學校演講",
+            "去圖書館"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q16",
+      "type": "translate",
+      "promptZh": "我們今天有一堂複習課。",
+      "hintWords": [
+        "review",
+        "lesson"
+      ],
+      "referenceEn": [
+        "We have a review lesson today.",
+        "Today we have a review class."
+      ],
+      "rubricZh": [
+        "「複習課」可寫 a review lesson、a review class 等",
+        "「今天」放句首或句尾都可以"
+      ]
+    },
+    {
+      "id": "a1-u16-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "conversation",
+      "instructionZh": "用 conversation 造一個句子，說說你和誰聊天。",
+      "referenceEn": [
+        "I had a nice conversation with my neighbor today.",
+        "I like to have conversations with my friends in English."
+      ],
+      "rubricZh": [
+        "「和某人聊天」可用 have a conversation with（例如 with my neighbor）",
+        "時態配合內容（例如今天已發生的事用 had）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l06-q10": [
+        1
+      ],
+      "a1-u16-l06-q13": [
+        2
+      ],
+      "a1-u16-l06-q14": [
+        2
+      ],
+      "a1-u16-l06-q15#0": [
+        1
+      ],
+      "a1-u16-l06-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「On Friday」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關 S13：英文時態與中譯一致",
+        "resolution": "改前：\"Many readers answer our survey.\"；改後：\"Many readers answered our survey.\"",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「writer」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「review」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關＋第③關 S12：姓氏不用撞字的 Green",
+        "resolution": "改前：\"Our class did a survey about reading. We asked fifty students. Most of them are big readers, and they love the stories of one writer, Anna Green. In April, Anna Green will give a speech at our school. We want to have a conversation with her.\"；改後：\"Our class did a survey about reading. We asked fifty students. Most of them are big readers, and they love the stories of one writer, Anna Lin. In April, Anna Lin will give a speech at our school. We want to have a conversation with her.\"",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：中譯同步",
+        "resolution": "改前：\"我們班做了一個關於閱讀的調查，問了五十個學生。他們大多很愛看書，而且都喜歡作家 Anna Green 的故事。四月時，Anna Green 會來我們學校演講。我們想和她聊聊。\"；改後：\"我們班做了一個關於閱讀的調查，問了五十個學生。他們大多很愛看書，而且都喜歡作家 Anna Lin 的故事。四月時，Anna Lin 會來我們學校演講。我們想和她聊聊。\"",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「五十個」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/14/questions/1/questionZh",
+        "message": "執行長第②③關裁示修正：第②關：題目同步",
+        "resolution": "改前：\"四月時 Anna Green 會做什麼？\"；改後：\"四月時 Anna Lin 會做什麼？\"",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Anna\",\"English\"]；改後：[\"Anna\",\"Lin\",\"April\",\"English\"]",
+        "resolvedAt": "2026-10-02T12:42:16Z"
+      }
+    ]
+  }
+}

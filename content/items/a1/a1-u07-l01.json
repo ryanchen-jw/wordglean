@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u07-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:07Z",
+  "properNouns": [
+    "Tom",
+    "Chen",
+    "Amy",
+    "Sunday"
+  ],
+  "items": [
+    {
+      "id": "a1-u07-l01-q01",
+      "type": "wordCard",
+      "word": "internet",
+      "exampleEn": "I use the internet every day.",
+      "exampleZh": "我每天都上網。",
+      "glossZh": "網際網路",
+      "distractorsZh": [
+        "電視",
+        "電話",
+        "報紙"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q02",
+      "type": "wordCard",
+      "word": "work",
+      "exampleEn": "I go to work by bus.",
+      "exampleZh": "我搭公車上班。",
+      "glossZh": "工作；上班",
+      "distractorsZh": [
+        "休息",
+        "學校",
+        "旅行"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q03",
+      "type": "wordCard",
+      "word": "group",
+      "exampleEn": "We study in a group of four.",
+      "exampleZh": "我們四個人一組讀書。",
+      "glossZh": "組；群",
+      "distractorsZh": [
+        "房間",
+        "課本",
+        "考試"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q04",
+      "type": "wordCard",
+      "word": "business",
+      "exampleEn": "My uncle has a small business.",
+      "exampleZh": "我叔叔經營一家小公司。",
+      "glossZh": "生意；公司",
+      "distractorsZh": [
+        "房子",
+        "汽車",
+        "家庭"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q05",
+      "type": "wordCard",
+      "word": "wait",
+      "exampleEn": "Please wait for me here.",
+      "exampleZh": "請在這裡等我。",
+      "glossZh": "等待",
+      "distractorsZh": [
+        "離開",
+        "跑步",
+        "打電話"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q06",
+      "type": "wordCard",
+      "word": "stay",
+      "exampleEn": "I stay at home on Sunday.",
+      "exampleZh": "我星期天待在家。",
+      "glossZh": "停留；待",
+      "distractorsZh": [
+        "出去",
+        "工作",
+        "搬家"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q07",
+      "type": "wordCard",
+      "word": "role",
+      "exampleEn": "She has an important role in the team.",
+      "exampleZh": "她在團隊裡扮演重要的角色。",
+      "glossZh": "角色；職責",
+      "distractorsZh": [
+        "名字",
+        "座位",
+        "問題"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q08",
+      "type": "wordCard",
+      "word": "leader",
+      "exampleEn": "Tom is the leader of our group.",
+      "exampleZh": "Tom 是我們這一組的組長。",
+      "glossZh": "領導者；隊長",
+      "distractorsZh": [
+        "成員",
+        "客人",
+        "學生"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Please wait for me after work.",
+      "sentenceZh": "下班後請等我。"
+    },
+    {
+      "id": "a1-u07-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I usually stay at work until seven. Then I go home.",
+      "audioZh": "我通常在公司待到七點，然後回家。",
+      "questionZh": "說話者通常在公司待到幾點？",
+      "options": [
+        "Until seven",
+        "Until six",
+        "Until eight"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u07-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "Our group has a new leader.",
+      "sentenceZh": "我們這一組有新組長了。"
+    },
+    {
+      "id": "a1-u07-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "I read the news on the internet.",
+      "sentenceZh": "我在網路上看新聞。"
+    },
+    {
+      "id": "a1-u07-l01-q13",
+      "type": "mcq",
+      "stemEn": "Can you ____ here for a minute?",
+      "stemZh": "你可以在這裡等一下嗎？",
+      "options": [
+        "role",
+        "wait",
+        "group",
+        "leader"
+      ],
+      "optionGlossZh": [
+        "角色",
+        "等待",
+        "組",
+        "領導者"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u07-l01-q14",
+      "type": "mcq",
+      "stemEn": "Mrs. Chen is the ____ of our team.",
+      "stemZh": "陳太太是我們團隊的領導者。",
+      "options": [
+        "group",
+        "leader",
+        "role",
+        "internet"
+      ],
+      "optionGlossZh": [
+        "組",
+        "領導者",
+        "角色",
+        "網際網路"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u07-l01-q15",
+      "type": "reading",
+      "passageEn": "Amy works for a small internet business. She is the leader of a group of five people. Every morning, the group has a short meeting. Each person talks about their role for the day. Amy often stays late at work, but she loves her job.",
+      "passageZh": "Amy 在一家小型網路公司上班。她帶領一個五人小組。每天早上，小組會開一個簡短的會議，每個人說說自己當天負責的工作。Amy 常常在公司待到很晚，但她很喜歡她的工作。",
+      "questions": [
+        {
+          "questionZh": "Amy 帶領幾個人的小組？",
+          "options": [
+            "五個人",
+            "三個人",
+            "十個人"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Amy 下班的時間通常怎樣？",
+          "options": [
+            "很早就下班",
+            "常常很晚才走",
+            "每天準時下班"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q16",
+      "type": "translate",
+      "promptZh": "我在家等你。",
+      "hintWords": [
+        "wait"
+      ],
+      "referenceEn": [
+        "I will wait for you at home.",
+        "I am waiting for you at home."
+      ],
+      "rubricZh": [
+        "「等某人」用 wait for（例如 wait for you）",
+        "「在家」可寫 at home、be home 等",
+        "時態合理即可（例如 will wait、am waiting、wait）"
+      ]
+    },
+    {
+      "id": "a1-u07-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "stay",
+      "instructionZh": "用 stay 造一個句子，說說你週末會待在哪裡。",
+      "referenceEn": [
+        "I stay at home on the weekend.",
+        "This weekend, I will stay with my grandparents."
+      ],
+      "rubricZh": [
+        "stay 後面接地點（例如 stay at home、stay home、stay in Taipei）或用 with 接人",
+        "時態配合內容（例如習慣用現在簡單式；未來的計畫用 will 等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u07-l01-q10": [
+        0
+      ],
+      "a1-u07-l01-q13": [
+        1
+      ],
+      "a1-u07-l01-q14": [
+        1
+      ],
+      "a1-u07-l01-q15#0": [
+        0
+      ],
+      "a1-u07-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「wait」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「五個人」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「常常很晚才走」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「在家」用 at home\"；改後：\"「在家」可寫 at home、be home 等\"",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"stay 後面接地點（例如 stay at home、stay in Taipei）或用 with 接人\"；改後：\"stay 後面接地點（例如 stay at home、stay home、stay in Taipei）或用 with 接人\"",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"時態配合內容\"；改後：\"時態配合內容（例如習慣用現在簡單式；未來的計畫用 will 等）\"",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Tom\",\"Mrs\",\"Chen\",\"Amy\",\"Sunday\"]；改後：[\"Tom\",\"Mrs\",\"Chen\",\"Amy\"]",
+        "resolvedAt": "2026-10-02T11:28:34Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Until seven」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:08Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「wait」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:08Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「leader」由位置 3 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:08Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「五個人」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:08Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「常常很晚才走」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:08Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Tom\",\"Mrs\",\"Chen\",\"Amy\"]；改後：[\"Tom\",\"Mrs\",\"Chen\",\"Amy\",\"Sunday\"]",
+        "resolvedAt": "2026-10-02T12:40:08Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
+        "resolution": "改前：[\"Tom\",\"Mrs\",\"Chen\",\"Amy\",\"Sunday\"]；改後：[\"Tom\",\"Chen\",\"Amy\",\"Sunday\"]",
+        "resolvedAt": "2026-10-02T13:00:29Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u08-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:20Z",
+  "properNouns": [
+    "Tom"
+  ],
+  "items": [
+    {
+      "id": "a1-u08-l01-q01",
+      "type": "wordCard",
+      "word": "juice",
+      "exampleEn": "I drink orange juice every morning.",
+      "exampleZh": "我每天早上喝柳橙汁。",
+      "glossZh": "果汁",
+      "distractorsZh": [
+        "牛奶",
+        "茶",
+        "湯"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q02",
+      "type": "wordCard",
+      "word": "bean",
+      "exampleEn": "I put some beans in the soup.",
+      "exampleZh": "我在湯裡放了一些豆子。",
+      "glossZh": "豆子",
+      "distractorsZh": [
+        "米",
+        "蛋",
+        "麵包"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q03",
+      "type": "wordCard",
+      "word": "tomato",
+      "exampleEn": "This salad has tomatoes in it.",
+      "exampleZh": "這份沙拉裡有番茄。",
+      "glossZh": "番茄",
+      "distractorsZh": [
+        "馬鈴薯",
+        "蘋果",
+        "洋蔥"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q04",
+      "type": "wordCard",
+      "word": "butter",
+      "exampleEn": "I like butter on my bread.",
+      "exampleZh": "我喜歡在麵包上塗奶油。",
+      "glossZh": "奶油",
+      "distractorsZh": [
+        "果醬",
+        "起司",
+        "糖"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q05",
+      "type": "wordCard",
+      "word": "apple",
+      "exampleEn": "An apple a day is good for you.",
+      "exampleZh": "一天一顆蘋果，對你有益。",
+      "glossZh": "蘋果",
+      "distractorsZh": [
+        "香蕉",
+        "橘子",
+        "葡萄"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q06",
+      "type": "wordCard",
+      "word": "salad",
+      "exampleEn": "I want a green salad, please.",
+      "exampleZh": "請給我一份生菜沙拉。",
+      "glossZh": "沙拉",
+      "distractorsZh": [
+        "湯",
+        "三明治",
+        "蛋糕"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q07",
+      "type": "wordCard",
+      "word": "soup",
+      "exampleEn": "This soup is too hot.",
+      "exampleZh": "這碗湯太燙了。",
+      "glossZh": "湯",
+      "distractorsZh": [
+        "果汁",
+        "沙拉",
+        "飯"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q08",
+      "type": "wordCard",
+      "word": "hungry",
+      "exampleEn": "I am hungry. Let's eat.",
+      "exampleZh": "我餓了，我們吃飯吧。",
+      "glossZh": "餓的",
+      "distractorsZh": [
+        "累的",
+        "飽的",
+        "渴的"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "I want tomato soup, please.",
+      "sentenceZh": "請給我番茄湯。"
+    },
+    {
+      "id": "a1-u08-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I am not very hungry. I only want a salad.",
+      "audioZh": "我不太餓，我只想吃沙拉。",
+      "questionZh": "說話者想吃什麼？",
+      "options": [
+        "A salad",
+        "Some soup",
+        "An apple"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u08-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "There are beans and tomatoes in the soup.",
+      "sentenceZh": "湯裡有豆子和番茄。"
+    },
+    {
+      "id": "a1-u08-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Can I have some butter, please?",
+      "sentenceZh": "可以給我一點奶油嗎？"
+    },
+    {
+      "id": "a1-u08-l01-q13",
+      "type": "mcq",
+      "stemEn": "I am ____. Can we eat now?",
+      "stemZh": "我餓了，我們現在可以吃飯嗎？",
+      "options": [
+        "hungry",
+        "butter",
+        "salad",
+        "apple"
+      ],
+      "optionGlossZh": [
+        "餓的",
+        "奶油",
+        "沙拉",
+        "蘋果"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u08-l01-q14",
+      "type": "mcq",
+      "stemEn": "I drink a glass of apple ____ every day.",
+      "stemZh": "我每天喝一杯蘋果汁。",
+      "options": [
+        "soup",
+        "juice",
+        "hungry",
+        "bean"
+      ],
+      "optionGlossZh": [
+        "湯",
+        "果汁",
+        "餓的",
+        "豆子"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u08-l01-q15",
+      "type": "reading",
+      "passageEn": "It is twelve, and Tom is hungry. He goes to a small restaurant near his office. He does not want a big meal, so he has a salad and a bowl of tomato soup. He also drinks a glass of apple juice. The soup is hot and good.",
+      "passageZh": "現在十二點，Tom 肚子餓了。他到辦公室附近的一家小餐廳。他不想吃太多，所以點了一份沙拉和一碗番茄湯。他也喝了一杯蘋果汁。湯熱熱的，很好喝。",
+      "questions": [
+        {
+          "questionZh": "Tom 為什麼去餐廳？",
+          "options": [
+            "他要見朋友",
+            "他肚子餓了",
+            "他要買咖啡"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Tom 喝了什麼飲料？",
+          "options": [
+            "咖啡",
+            "柳橙汁",
+            "蘋果汁"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q16",
+      "type": "translate",
+      "promptZh": "我很餓，我想喝湯。",
+      "hintWords": [
+        "hungry",
+        "soup"
+      ],
+      "referenceEn": [
+        "I am very hungry. I want some soup.",
+        "I'm hungry, and I want to have some soup."
+      ],
+      "rubricZh": [
+        "「很餓」用 be 動詞＋hungry（例如 I am very hungry）",
+        "「喝湯」常說 have soup 或 eat soup，寫 drink soup 也可以接受",
+        "「想」可用 want、would like 等"
+      ]
+    },
+    {
+      "id": "a1-u08-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "apple",
+      "instructionZh": "用 apple 造一個句子，說說你多常吃蘋果或什麼時候吃。",
+      "referenceEn": [
+        "I eat an apple every day.",
+        "I often eat apples after dinner."
+      ],
+      "rubricZh": [
+        "一顆蘋果用 an apple（母音開頭用 an）",
+        "泛指蘋果時用複數 apples（例如 I like apples）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u08-l01-q10": [
+        0
+      ],
+      "a1-u08-l01-q13": [
+        0
+      ],
+      "a1-u08-l01-q14": [
+        1
+      ],
+      "a1-u08-l01-q15#0": [
+        1
+      ],
+      "a1-u08-l01-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「A salad」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:42Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「hungry」由位置 1 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:42Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「juice」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:42Z"
+      },
+      {
+        "path": "items/15/rubricZh",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：[\"「很餓」用 be 動詞＋hungry（例如 I am very hungry）\",\"「喝湯」英文常說 have soup 或 eat soup，寫 drink soup 也可以接受\"]；改後：[\"「很餓」用 be 動詞＋hungry（例如 I am very hungry）\",\"「喝湯」常說 have soup 或 eat soup，寫 drink soup 也可以接受\",\"「想」可用 want、would like 等\"]",
+        "resolvedAt": "2026-10-02T11:28:42Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"泛指蘋果時用複數 apples\"；改後：\"泛指蘋果時用複數 apples（例如 I like apples）\"",
+        "resolvedAt": "2026-10-02T11:28:42Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「A salad」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:21Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「hungry」由位置 3 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:21Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「juice」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:21Z"
+      }
+    ]
+  }
+}

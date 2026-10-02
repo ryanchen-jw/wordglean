@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u06-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:57Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a1-u06-l03-q01",
+      "type": "wordCard",
+      "word": "machine",
+      "exampleEn": "This machine makes coffee.",
+      "exampleZh": "這台機器會煮咖啡。",
+      "glossZh": "機器",
+      "distractorsZh": [
+        "工具",
+        "盒子",
+        "電話"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q02",
+      "type": "wordCard",
+      "word": "yard",
+      "exampleEn": "The kids are playing in the yard.",
+      "exampleZh": "孩子們在院子裡玩。",
+      "glossZh": "院子",
+      "distractorsZh": [
+        "房間",
+        "屋頂",
+        "車庫"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q03",
+      "type": "wordCard",
+      "word": "garden",
+      "exampleEn": "My mother grows flowers in the garden.",
+      "exampleZh": "我媽媽在花園裡種花。",
+      "glossZh": "花園",
+      "distractorsZh": [
+        "廚房",
+        "公園",
+        "農場"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q04",
+      "type": "wordCard",
+      "word": "kitchen",
+      "exampleEn": "Dad is cooking in the kitchen.",
+      "exampleZh": "爸爸正在廚房煮飯。",
+      "glossZh": "廚房",
+      "distractorsZh": [
+        "浴室",
+        "客廳",
+        "臥室"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q05",
+      "type": "wordCard",
+      "word": "key",
+      "exampleEn": "I can't find my key.",
+      "exampleZh": "我找不到我的鑰匙。",
+      "glossZh": "鑰匙",
+      "distractorsZh": [
+        "手機",
+        "錢包",
+        "雨傘"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q06",
+      "type": "wordCard",
+      "word": "tool",
+      "exampleEn": "My father keeps his tools in a box.",
+      "exampleZh": "我爸爸把他的工具放在一個箱子裡。",
+      "glossZh": "工具",
+      "distractorsZh": [
+        "玩具",
+        "衣服",
+        "書"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q07",
+      "type": "wordCard",
+      "word": "hall",
+      "exampleEn": "Please wait in the hall.",
+      "exampleZh": "請在走廊等。",
+      "glossZh": "走廊；大廳",
+      "distractorsZh": [
+        "廚房",
+        "院子",
+        "樓梯"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q08",
+      "type": "wordCard",
+      "word": "bedroom",
+      "exampleEn": "Our house has three bedrooms.",
+      "exampleZh": "我們家有三間臥室。",
+      "glossZh": "臥室",
+      "distractorsZh": [
+        "浴室",
+        "廚房",
+        "飯廳"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "My bedroom is at the end of the hall.",
+      "sentenceZh": "我的臥室在走廊的盡頭。"
+    },
+    {
+      "id": "a1-u06-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "I am in the garden. Can you bring me some tools?",
+      "audioZh": "我在花園裡，你可以拿一些工具給我嗎？",
+      "questionZh": "說話者要你拿什麼？",
+      "options": [
+        "Some tools",
+        "A key",
+        "Some water"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u06-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "We have a small yard behind the house.",
+      "sentenceZh": "我們房子後面有一個小院子。"
+    },
+    {
+      "id": "a1-u06-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "This machine washes the dishes.",
+      "sentenceZh": "這台機器會洗碗。"
+    },
+    {
+      "id": "a1-u06-l03-q13",
+      "type": "mcq",
+      "stemEn": "I cook dinner in the ____.",
+      "stemZh": "我在廚房煮晚餐。",
+      "options": [
+        "tool",
+        "key",
+        "kitchen",
+        "machine"
+      ],
+      "optionGlossZh": [
+        "工具",
+        "鑰匙",
+        "廚房",
+        "機器"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u06-l03-q14",
+      "type": "mcq",
+      "stemEn": "I use a ____ to open the door.",
+      "stemZh": "我用鑰匙開門。",
+      "options": [
+        "kitchen",
+        "garden",
+        "key",
+        "hall"
+      ],
+      "optionGlossZh": [
+        "廚房",
+        "花園",
+        "鑰匙",
+        "走廊"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u06-l03-q15",
+      "type": "reading",
+      "passageEn": "We have a new house. It has three bedrooms and a big kitchen. My mother loves the kitchen because it has a new coffee machine. Behind the house, there is a yard with a small garden. My father keeps his tools there.",
+      "passageZh": "我們有一棟新房子，有三間臥室和一間大廚房。我媽媽很喜歡廚房，因為裡面有一台新的咖啡機。房子後面有一個院子，院子裡有一座小花園。我爸爸把他的工具放在那裡。",
+      "questions": [
+        {
+          "questionZh": "媽媽為什麼喜歡廚房？",
+          "options": [
+            "裡面有新的咖啡機",
+            "可以看到花園",
+            "廚房離臥室很近"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "爸爸把工具放在哪裡？",
+          "options": [
+            "臥室裡",
+            "廚房裡",
+            "房子後面的院子"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q16",
+      "type": "translate",
+      "promptZh": "我的鑰匙在臥室裡。",
+      "hintWords": [
+        "key",
+        "bedroom"
+      ],
+      "referenceEn": [
+        "My key is in the bedroom.",
+        "My keys are in the bedroom."
+      ],
+      "rubricZh": [
+        "「在⋯裡」用 in（例如 in the bedroom、in my bedroom）",
+        "鑰匙可寫單數 key（配 is）或複數 keys（配 are）"
+      ]
+    },
+    {
+      "id": "a1-u06-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "kitchen",
+      "instructionZh": "用 kitchen 造一個句子，說說你家的廚房，或你在廚房做什麼。",
+      "referenceEn": [
+        "I cook in the kitchen every night.",
+        "Our kitchen is small but clean."
+      ],
+      "rubricZh": [
+        "kitchen 前面加冠詞或所有格（例如 in the kitchen、a small kitchen、our kitchen）",
+        "動詞配合主詞（例如 I cook、Our kitchen is、We have）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u06-l03-q10": [
+        0
+      ],
+      "a1-u06-l03-q13": [
+        2
+      ],
+      "a1-u06-l03-q14": [
+        2
+      ],
+      "a1-u06-l03-q15#0": [
+        0
+      ],
+      "a1-u06-l03-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（hall）",
+        "resolution": "改前：\"The key is in the kitchen.\"；改後：\"Please wait for me in the hall.\"",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（hall）",
+        "resolution": "改前：\"鑰匙在廚房裡。\"；改後：\"請在大廳等我。\"",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「kitchen」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「key」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「裡面有新的咖啡機」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「在⋯裡」用 in（例如 in the bedroom）\"；改後：\"「在⋯裡」用 in（例如 in the bedroom、in my bedroom）\"",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"鑰匙可寫單數 key（配 is）或複數 keys（配 are），動詞要配合\"；改後：\"鑰匙可寫單數 key（配 is）或複數 keys（配 are）\"",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"kitchen 前面加 the 或所有格（例如 in the kitchen、our kitchen）\"；改後：\"kitchen 前面加冠詞或所有格（例如 in the kitchen、a small kitchen、our kitchen）\"",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"動詞配合主詞\"；改後：\"動詞配合主詞（例如 I cook、Our kitchen is、We have）\"",
+        "resolvedAt": "2026-10-02T11:28:30Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第二輪複審修正：FIX#6 補情境句不與單字卡例句雷同",
+        "resolution": "改前：\"Please wait for me in the hall.\"；改後：\"My bedroom is at the end of the hall.\"",
+        "resolvedAt": "2026-10-02T12:39:59Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第二輪複審修正：FIX#6 補情境句不與單字卡例句雷同",
+        "resolution": "改前：\"請在大廳等我。\"；改後：\"我的臥室在走廊的盡頭。\"",
+        "resolvedAt": "2026-10-02T12:39:59Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Some tools」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:59Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「kitchen」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:59Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「裡面有新的咖啡機」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:59Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「房子後面的院子」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:59Z"
+      }
+    ]
+  }
+}

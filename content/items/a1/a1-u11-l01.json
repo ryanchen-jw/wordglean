@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u11-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:04Z",
+  "properNouns": [
+    "Taipei"
+  ],
+  "items": [
+    {
+      "id": "a1-u11-l01-q01",
+      "type": "wordCard",
+      "word": "zoo",
+      "exampleEn": "We saw lions at the zoo.",
+      "exampleZh": "我們在動物園看到獅子。",
+      "glossZh": "動物園",
+      "distractorsZh": [
+        "公園",
+        "農場",
+        "博物館"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q02",
+      "type": "wordCard",
+      "word": "place",
+      "exampleEn": "This is a nice place to live.",
+      "exampleZh": "這是個很適合居住的好地方。",
+      "glossZh": "地方",
+      "distractorsZh": [
+        "時間",
+        "人",
+        "東西"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q03",
+      "type": "wordCard",
+      "word": "city",
+      "exampleEn": "Taipei is a big city.",
+      "exampleZh": "台北是個大城市。",
+      "glossZh": "城市",
+      "distractorsZh": [
+        "國家",
+        "村莊",
+        "島"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q04",
+      "type": "wordCard",
+      "word": "office",
+      "exampleEn": "My office is near the station.",
+      "exampleZh": "我的辦公室在車站附近。",
+      "glossZh": "辦公室",
+      "distractorsZh": [
+        "教室",
+        "工廠",
+        "商店"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q05",
+      "type": "wordCard",
+      "word": "war",
+      "exampleEn": "We learn about the war in history class.",
+      "exampleZh": "我們在歷史課學到那場戰爭。",
+      "glossZh": "戰爭",
+      "distractorsZh": [
+        "和平",
+        "比賽",
+        "節日"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q06",
+      "type": "wordCard",
+      "word": "field",
+      "exampleEn": "The cows are in the field.",
+      "exampleZh": "牛在田野裡。",
+      "glossZh": "田野；田地",
+      "distractorsZh": [
+        "河流",
+        "森林",
+        "院子"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q07",
+      "type": "wordCard",
+      "word": "town",
+      "exampleEn": "I grew up in a small town.",
+      "exampleZh": "我在一個小鎮長大。",
+      "glossZh": "小鎮；城鎮",
+      "distractorsZh": [
+        "森林",
+        "海灘",
+        "學校"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q08",
+      "type": "wordCard",
+      "word": "building",
+      "exampleEn": "That tall building is a hotel.",
+      "exampleZh": "那棟高樓是一家飯店。",
+      "glossZh": "建築物；大樓",
+      "distractorsZh": [
+        "橋",
+        "街道",
+        "公園"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "My office is in that building.",
+      "sentenceZh": "我的辦公室在那棟大樓裡。"
+    },
+    {
+      "id": "a1-u11-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I live in a small town, but I work in the city.",
+      "audioZh": "我住在一個小鎮，但在城市裡工作。",
+      "questionZh": "說話者在哪裡工作？",
+      "options": [
+        "At the zoo",
+        "In a small town",
+        "In the city"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u11-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "People do not like war.",
+      "sentenceZh": "人們不喜歡戰爭。"
+    },
+    {
+      "id": "a1-u11-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "There are many tall buildings in this city.",
+      "sentenceZh": "這個城市有很多高樓。"
+    },
+    {
+      "id": "a1-u11-l01-q13",
+      "type": "mcq",
+      "stemEn": "Let's take the kids to the ____ to see the animals.",
+      "stemZh": "我們帶孩子去動物園看動物吧。",
+      "options": [
+        "office",
+        "war",
+        "zoo",
+        "building"
+      ],
+      "optionGlossZh": [
+        "辦公室",
+        "戰爭",
+        "動物園",
+        "建築物"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u11-l01-q14",
+      "type": "mcq",
+      "stemEn": "Taipei is a big ____.",
+      "stemZh": "台北是一個大城市。",
+      "options": [
+        "war",
+        "city",
+        "office",
+        "field"
+      ],
+      "optionGlossZh": [
+        "戰爭",
+        "城市",
+        "辦公室",
+        "田野"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u11-l01-q15",
+      "type": "reading",
+      "passageEn": "I live in a small town near a big city. Every day, I take the train to my office in the city. My office is in a tall building. On the weekend, I take my kids to the zoo or play ball with them in the field behind our house.",
+      "passageZh": "我住在大城市附近的一個小鎮。每天我搭火車到城裡的辦公室上班，我的辦公室在一棟高樓裡。週末時，我會帶孩子去動物園，或在我們家後面的田野陪他們玩球。",
+      "questions": [
+        {
+          "questionZh": "說話者的辦公室在哪裡？",
+          "options": [
+            "動物園旁邊",
+            "小鎮上",
+            "城裡的一棟高樓"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "週末說話者會帶孩子去哪裡？",
+          "options": [
+            "動物園",
+            "辦公室",
+            "火車站"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q16",
+      "type": "translate",
+      "promptZh": "台北是一個很好的地方。",
+      "hintWords": [
+        "place"
+      ],
+      "referenceEn": [
+        "Taipei is a very nice place.",
+        "Taipei is a great place."
+      ],
+      "rubricZh": [
+        "place 前面加 a 和形容詞（例如 a nice place、a great place）",
+        "主詞可寫 Taipei 或 It"
+      ]
+    },
+    {
+      "id": "a1-u11-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "town",
+      "instructionZh": "用 town 造一個句子，說說你住的或你喜歡的一個小鎮。",
+      "referenceEn": [
+        "I live in a small town near the sea.",
+        "My hometown is a quiet town."
+      ],
+      "rubricZh": [
+        "town 前面加冠詞、所有格或形容詞（例如 a small town、my town）",
+        "「住在」用 live in；也可描述小鎮（例如 My town is quiet）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u11-l01-q10": [
+        2
+      ],
+      "a1-u11-l01-q13": [
+        2
+      ],
+      "a1-u11-l01-q14": [
+        1
+      ],
+      "a1-u11-l01-q15#0": [
+        2
+      ],
+      "a1-u11-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正：裁示：避開沉重題材，改中性情境",
+        "resolution": "改前：\"My grandfather told me stories about the war.\"；改後：\"We learn about the war in history class.\"",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正：裁示：避開沉重題材，改中性情境",
+        "resolution": "改前：\"我爺爺跟我說了戰爭的故事。\"；改後：\"我們在歷史課學到那場戰爭。\"",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：避開沉重題材",
+        "resolution": "改前：\"My grandfather does not like to talk about the war.\"；改後：\"People do not like war.\"",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：避開沉重題材",
+        "resolution": "改前：\"我爺爺不喜歡談起戰爭。\"；改後：\"人們不喜歡戰爭。\"",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「zoo」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「city」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關＋第③關 D11：field 中譯與單字卡一致",
+        "resolution": "改前：\"我住在大城市附近的一個小鎮。每天我搭火車到城裡的辦公室上班，我的辦公室在一棟高樓裡。週末時，我會帶孩子去動物園，或在我們家後面的空地陪他們玩球。\"；改後：\"我住在大城市附近的一個小鎮。每天我搭火車到城裡的辦公室上班，我的辦公室在一棟高樓裡。週末時，我會帶孩子去動物園，或在我們家後面的田野陪他們玩球。\"",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「城裡的一棟高樓」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「動物園」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:04Z"
+      }
+    ]
+  }
+}

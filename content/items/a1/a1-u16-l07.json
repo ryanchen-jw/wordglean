@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l07",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:45:28Z",
+  "properNouns": [
+    "Tina"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l07-q01",
+      "type": "wordCard",
+      "word": "grade",
+      "exampleEn": "My daughter is in grade two.",
+      "exampleZh": "我女兒讀二年級。",
+      "glossZh": "年級",
+      "distractorsZh": [
+        "班級",
+        "學校",
+        "年紀"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q02",
+      "type": "wordCard",
+      "word": "classroom",
+      "exampleEn": "Our classroom is on the second floor.",
+      "exampleZh": "我們的教室在二樓。",
+      "glossZh": "教室",
+      "distractorsZh": [
+        "辦公室",
+        "圖書館",
+        "操場"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q03",
+      "type": "wordCard",
+      "word": "reading",
+      "exampleEn": "Reading is my hobby.",
+      "exampleZh": "閱讀是我的嗜好。",
+      "glossZh": "閱讀",
+      "distractorsZh": [
+        "寫作",
+        "唱歌",
+        "畫畫"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q04",
+      "type": "wordCard",
+      "word": "desk",
+      "exampleEn": "My book is on the desk.",
+      "exampleZh": "我的書在書桌上。",
+      "glossZh": "書桌",
+      "distractorsZh": [
+        "椅子",
+        "櫃子",
+        "床"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q05",
+      "type": "wordCard",
+      "word": "file",
+      "exampleEn": "Please put this file on my desk.",
+      "exampleZh": "請把這個資料夾放在我的桌上。",
+      "glossZh": "資料夾；文件",
+      "distractorsZh": [
+        "書包",
+        "信封",
+        "紙箱"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q06",
+      "type": "wordCard",
+      "word": "topic",
+      "exampleEn": "What is the topic of your speech?",
+      "exampleZh": "你演講的主題是什麼？",
+      "glossZh": "主題；話題",
+      "distractorsZh": [
+        "時間",
+        "地點",
+        "答案"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q07",
+      "type": "wordCard",
+      "word": "copy",
+      "exampleEn": "Can I have a copy of the notes?",
+      "exampleZh": "我可以要一份筆記的影本嗎？",
+      "glossZh": "副本；影本",
+      "distractorsZh": [
+        "筆記本",
+        "信封",
+        "照片"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q08",
+      "type": "listenType",
+      "sentenceEn": "There are thirty desks in our classroom.",
+      "sentenceZh": "我們教室有三十張書桌。"
+    },
+    {
+      "id": "a1-u16-l07-q09",
+      "type": "listenChoice",
+      "audioEn": "The topic of today's reading is the sea.",
+      "audioZh": "今天閱讀的主題是大海。",
+      "questionZh": "今天閱讀的主題是什麼？",
+      "options": [
+        "Animals",
+        "The sea",
+        "Music"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l07-q10",
+      "type": "shadowing",
+      "sentenceEn": "Please make a copy of this file.",
+      "sentenceZh": "請把這份文件影印一份。"
+    },
+    {
+      "id": "a1-u16-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "My son is in grade four.",
+      "sentenceZh": "我兒子讀四年級。"
+    },
+    {
+      "id": "a1-u16-l07-q12",
+      "type": "mcq",
+      "stemEn": "Students sit at their ____ in the classroom.",
+      "stemZh": "學生在教室裡坐在自己的書桌前。",
+      "options": [
+        "grades",
+        "topics",
+        "copies",
+        "desks"
+      ],
+      "optionGlossZh": [
+        "年級",
+        "主題",
+        "影本",
+        "書桌"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u16-l07-q13",
+      "type": "mcq",
+      "stemEn": "Today's ____ is music. Let's talk about it.",
+      "stemZh": "今天的主題是音樂，我們來聊聊吧。",
+      "options": [
+        "copy",
+        "file",
+        "topic",
+        "desk"
+      ],
+      "optionGlossZh": [
+        "影本",
+        "資料夾",
+        "主題",
+        "書桌"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l07-q14",
+      "type": "reading",
+      "passageEn": "Tina is a teacher. She teaches grade five. Every morning, she comes to the classroom early. She puts a file on each desk. In the file, there is a copy of the day's reading. The topic changes every day.",
+      "passageZh": "Tina 是老師，教五年級。她每天早上很早就到教室，在每張書桌上放一個資料夾，資料夾裡有當天閱讀內容的影本。主題每天都不一樣。",
+      "questions": [
+        {
+          "questionZh": "Tina 教幾年級？",
+          "options": [
+            "五年級",
+            "四年級",
+            "三年級"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "資料夾裡有什麼？",
+          "options": [
+            "當天閱讀內容的影本",
+            "考試卷",
+            "學生的作業"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q15",
+      "type": "translate",
+      "promptZh": "這個可以給我一份影本嗎？",
+      "hintWords": [
+        "copy"
+      ],
+      "referenceEn": [
+        "Can I have a copy of this?",
+        "May I have a copy of this?"
+      ],
+      "rubricZh": [
+        "「一份影本」用 a copy（例如 a copy of this）",
+        "請求可用 Can I…?、May I…?、Could I…? 等"
+      ]
+    },
+    {
+      "id": "a1-u16-l07-q16",
+      "type": "makeSentence",
+      "targetWord": "topic",
+      "instructionZh": "用 topic 造一個句子，說說你喜歡聊的話題。",
+      "referenceEn": [
+        "My favorite topic is food.",
+        "I like to talk about the topic of travel."
+      ],
+      "rubricZh": [
+        "可用 My favorite topic is…，或 talk about the topic of… 等",
+        "單數 topic 前面要加冠詞或所有格（例如 the topic、my favorite topic）",
+        "用複數泛指也正確（例如 I like topics about food.）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l07-q09": [
+        1
+      ],
+      "a1-u16-l07-q12": [
+        3
+      ],
+      "a1-u16-l07-q13": [
+        2
+      ],
+      "a1-u16-l07-q14#0": [
+        0
+      ],
+      "a1-u16-l07-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：實體資料夾不譯「檔案」",
+        "resolution": "改前：\"請把這份檔案放在我的桌上。\"；改後：\"請把這個資料夾放在我的桌上。\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長第②③關裁示修正：第②關：實體資料夾不譯「檔案」",
+        "resolution": "改前：\"檔案；文件\"；改後：\"資料夾；文件\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「The sea」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/9/sentenceZh",
+        "message": "執行長第②③關裁示修正：第②關：file 中譯一致",
+        "resolution": "改前：\"請把這份檔案影印一份。\"；改後：\"請把這份文件影印一份。\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「desks」由位置 1 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "執行長第②③關裁示修正：第②關：選項釋義同步",
+        "resolution": "改前：\"檔案\"；改後：\"資料夾\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/13/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：中譯同步",
+        "resolution": "改前：\"Tina 是老師，教五年級。她每天早上很早就到教室，在每張書桌上放一份檔案，檔案裡有當天閱讀內容的影本。主題每天都不一樣。\"；改後：\"Tina 是老師，教五年級。她每天早上很早就到教室，在每張書桌上放一個資料夾，資料夾裡有當天閱讀內容的影本。主題每天都不一樣。\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「當天閱讀內容的影本」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/13/questions/1/questionZh",
+        "message": "執行長第②③關裁示修正：第②關：題目同步",
+        "resolution": "改前：\"檔案裡有什麼？\"；改後：\"資料夾裡有什麼？\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/14/promptZh",
+        "message": "執行長第②③關裁示修正：第③關 S14：中文通順",
+        "resolution": "改前：\"我可以要一份這個的影本嗎？\"；改後：\"這個可以給我一份影本嗎？\"",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      },
+      {
+        "path": "items/15/rubricZh",
+        "message": "執行長第②③關裁示修正：第②③關 FIX",
+        "resolution": "改前：[\"可用 My favorite topic is…，或 talk about the topic of… 等\",\"topic 前面加冠詞或所有格（例如 the topic、my favorite topic）\"]；改後：[\"可用 My favorite topic is…，或 talk about the topic of… 等\",\"單數 topic 前面要加冠詞或所有格（例如 the topic、my favorite topic）\",\"用複數泛指也正確（例如 I like topics about food.）\"]",
+        "resolvedAt": "2026-10-02T12:45:29Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u18-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:45:33Z",
+  "properNouns": [
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "a1-u18-l01-q01",
+      "type": "wordCard",
+      "word": "like",
+      "exampleEn": "I like rainy days.",
+      "exampleZh": "我喜歡下雨天。",
+      "glossZh": "喜歡",
+      "distractorsZh": [
+        "討厭",
+        "害怕",
+        "需要"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q02",
+      "type": "wordCard",
+      "word": "feel",
+      "exampleEn": "I feel tired today.",
+      "exampleZh": "我今天覺得很累。",
+      "glossZh": "覺得；感覺",
+      "distractorsZh": [
+        "看起來",
+        "聽起來",
+        "變得"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q03",
+      "type": "wordCard",
+      "word": "believe",
+      "exampleEn": "I believe you.",
+      "exampleZh": "我相信你。",
+      "glossZh": "相信",
+      "distractorsZh": [
+        "懷疑",
+        "忘記",
+        "原諒"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q04",
+      "type": "wordCard",
+      "word": "hope",
+      "exampleEn": "There is always hope.",
+      "exampleZh": "總是有希望的。",
+      "glossZh": "希望；盼望",
+      "distractorsZh": [
+        "恐懼",
+        "回憶",
+        "錯誤"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q05",
+      "type": "wordCard",
+      "word": "happy",
+      "exampleEn": "I am very happy today.",
+      "exampleZh": "我今天很開心。",
+      "glossZh": "快樂的；開心的",
+      "distractorsZh": [
+        "難過的",
+        "生氣的",
+        "害怕的"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q06",
+      "type": "wordCard",
+      "word": "character",
+      "exampleEn": "She has a strong character.",
+      "exampleZh": "她的個性很堅強。",
+      "glossZh": "個性；性格",
+      "distractorsZh": [
+        "外表",
+        "工作",
+        "年齡"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q07",
+      "type": "wordCard",
+      "word": "feeling",
+      "exampleEn": "I have a good feeling about this.",
+      "exampleZh": "我對這件事有好的預感。",
+      "glossZh": "感覺；感受",
+      "distractorsZh": [
+        "想法",
+        "計畫",
+        "答案"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q08",
+      "type": "wordCard",
+      "word": "memory",
+      "exampleEn": "I have happy memories of my school days.",
+      "exampleZh": "我有求學時期的快樂回憶。",
+      "glossZh": "記憶；回憶",
+      "distractorsZh": [
+        "夢想",
+        "計畫",
+        "照片"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "I hope you feel better soon.",
+      "sentenceZh": "希望你早日好起來。"
+    },
+    {
+      "id": "a1-u18-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I feel happy when I think of my old friends.",
+      "audioZh": "想到老朋友時，我就覺得很開心。",
+      "questionZh": "說話者什麼時候覺得開心？",
+      "options": [
+        "When I go to work",
+        "When I eat cake",
+        "When I think of old friends"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u18-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "I know that feeling.",
+      "sentenceZh": "我懂那種感覺。"
+    },
+    {
+      "id": "a1-u18-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "I like his character very much.",
+      "sentenceZh": "我很喜歡他的個性。"
+    },
+    {
+      "id": "a1-u18-l01-q13",
+      "type": "mcq",
+      "stemEn": "I ____ sick today. I want to stay in bed.",
+      "stemZh": "我今天覺得不舒服，想待在床上。",
+      "options": [
+        "hope",
+        "believe",
+        "feel",
+        "memory"
+      ],
+      "optionGlossZh": [
+        "希望",
+        "相信",
+        "覺得",
+        "回憶"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u18-l01-q14",
+      "type": "mcq",
+      "stemEn": "Where there is life, there is ____.",
+      "stemZh": "只要活著，就有希望。",
+      "options": [
+        "hope",
+        "character",
+        "happy",
+        "believe"
+      ],
+      "optionGlossZh": [
+        "希望",
+        "個性",
+        "開心的",
+        "相信"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u18-l01-q15",
+      "type": "reading",
+      "passageEn": "My grandmother is eighty, but she has a strong character. She has many memories of her school days. Those were hard years, but she always had hope. Today, she feels happy when she plays with us. I believe she is the strongest woman in my family.",
+      "passageZh": "我奶奶八十歲了，但她的個性很堅強。她有很多求學時期的回憶。那些年很辛苦，但她一直懷抱希望。現在，她跟我們一起玩的時候就覺得很快樂。我相信她是我們家最堅強的女人。",
+      "questions": [
+        {
+          "questionZh": "奶奶有很多關於什麼的回憶？",
+          "options": [
+            "旅行",
+            "工作",
+            "求學時期"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "奶奶現在什麼時候覺得快樂？",
+          "options": [
+            "跟孫子們玩的時候",
+            "看電視的時候",
+            "出去散步的時候"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q16",
+      "type": "translate",
+      "promptZh": "我今天覺得很開心。",
+      "hintWords": [
+        "feel",
+        "happy"
+      ],
+      "referenceEn": [
+        "I feel very happy today.",
+        "I am very happy today."
+      ],
+      "rubricZh": [
+        "「覺得」可用 feel＋形容詞（例如 feel happy），寫 I am happy 也正確",
+        "feel 後面接形容詞，不用副詞（不寫 feel happily）"
+      ]
+    },
+    {
+      "id": "a1-u18-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "memory",
+      "instructionZh": "用 memory 造一個句子，說說你的一個美好回憶。",
+      "referenceEn": [
+        "I have a happy memory of my first trip to Japan.",
+        "My best memory is my tenth birthday party."
+      ],
+      "rubricZh": [
+        "可用 I have a … memory of…，或 My best memory is… 等",
+        "說回憶裡的事可用過去式"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u18-l01-q10": [
+        2
+      ],
+      "a1-u18-l01-q13": [
+        2
+      ],
+      "a1-u18-l01-q14": [
+        0
+      ],
+      "a1-u18-l01-q15#0": [
+        2
+      ],
+      "a1-u18-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長第②③關裁示修正：裁示：名詞／動詞兩用的字，釋義並列兩義、本課加動詞情境",
+        "resolution": "改前：\"希望\"；改後：\"希望；盼望\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：中譯不加「很多」",
+        "resolution": "改前：\"我有很多求學時期的快樂回憶。\"；改後：\"我有求學時期的快樂回憶。\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：名詞／動詞兩用的字，釋義並列兩義、本課加動詞情境（並避免與單字卡雷同）",
+        "resolution": "改前：\"I believe there is always hope.\"；改後：\"I hope you feel better soon.\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：名詞／動詞兩用的字，釋義並列兩義、本課加動詞情境（並避免與單字卡雷同）",
+        "resolution": "改前：\"我相信總是有希望的。\"；改後：\"希望你早日好起來。\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「When I think of old friends」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"I have a good feeling about the test.\"；改後：\"I know that feeling.\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：裁示：情境句不與同課單字卡例句雷同",
+        "resolution": "改前：\"我對這次考試有好的預感。\"；改後：\"我懂那種感覺。\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「feel」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：避開戰爭題材",
+        "resolution": "改前：\"My grandmother is eighty, but she has a strong character. She has many memories of the war. Those were hard years, but she always had hope. Today, she feels happy when she plays with us. I believe she is the strongest woman in my family.\"；改後：\"My grandmother is eighty, but she has a strong character. She has many memories of her school days. Those were hard years, but she always had hope. Today, she feels happy when she plays with us. I believe she is the strongest woman in my family.\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：中譯同步",
+        "resolution": "改前：\"我奶奶八十歲了，但她的個性很堅強。她有很多關於戰爭的回憶。那些年很辛苦，但她一直懷抱希望。現在，她跟我們一起玩的時候就覺得很快樂。我相信她是我們家最堅強的女人。\"；改後：\"我奶奶八十歲了，但她的個性很堅強。她有很多求學時期的回憶。那些年很辛苦，但她一直懷抱希望。現在，她跟我們一起玩的時候就覺得很快樂。我相信她是我們家最堅強的女人。\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：選項同步",
+        "resolution": "改前：\"戰爭\"；改後：\"旅行\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：選項同步",
+        "resolution": "改前：\"學校\"；改後：\"工作\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：選項同步",
+        "resolution": "改前：\"旅行\"；改後：\"求學時期\"",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/questions/0/answer",
+        "message": "執行長第②③關裁示修正：第②③關＋裁示：選項同步",
+        "resolution": "改前：0；改後：2",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「跟孫子們玩的時候」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:45:33Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u02-l04",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:06Z",
+  "properNouns": [
+    "Tina",
+    "Helen",
+    "Taiwan",
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "a1-u02-l04-q01",
+      "type": "wordCard",
+      "word": "lady",
+      "exampleEn": "The lady in the black coat is my aunt.",
+      "exampleZh": "穿黑色外套的那位女士是我阿姨。",
+      "glossZh": "女士",
+      "distractorsZh": [
+        "男士",
+        "女孩",
+        "老師"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q02",
+      "type": "wordCard",
+      "word": "welcome",
+      "exampleEn": "Welcome to our home!",
+      "exampleZh": "歡迎來我們家！",
+      "glossZh": "歡迎",
+      "distractorsZh": [
+        "謝謝",
+        "再見",
+        "抱歉"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q03",
+      "type": "wordCard",
+      "word": "thanks",
+      "exampleEn": "Thanks for the coffee.",
+      "exampleZh": "謝謝你的咖啡。",
+      "glossZh": "謝謝",
+      "distractorsZh": [
+        "歡迎",
+        "抱歉",
+        "你好"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q04",
+      "type": "wordCard",
+      "word": "engineer",
+      "exampleEn": "My father is an engineer. He works in a factory.",
+      "exampleZh": "我爸爸是工程師，他在工廠工作。",
+      "glossZh": "工程師",
+      "distractorsZh": [
+        "記者",
+        "醫生",
+        "司機"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q05",
+      "type": "wordCard",
+      "word": "hi",
+      "exampleEn": "Hi, I am Tina. Nice to meet you.",
+      "exampleZh": "嗨，我是 Tina，很高興認識你。",
+      "glossZh": "嗨；你好",
+      "distractorsZh": [
+        "再見",
+        "謝謝",
+        "對不起"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q06",
+      "type": "wordCard",
+      "word": "sir",
+      "exampleEn": "Excuse me, sir, is this your bag?",
+      "exampleZh": "先生，不好意思，這是您的包包嗎？",
+      "glossZh": "先生（尊稱）",
+      "distractorsZh": [
+        "女士",
+        "老師",
+        "同學"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q07",
+      "type": "wordCard",
+      "word": "self",
+      "exampleEn": "She is not sick now. She is her old self again.",
+      "exampleZh": "她病好了，又回到原來的樣子了。",
+      "glossZh": "自己；自我",
+      "distractorsZh": [
+        "別人",
+        "朋友",
+        "家人"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q08",
+      "type": "wordCard",
+      "word": "cop",
+      "exampleEn": "The cop helps the old man.",
+      "exampleZh": "那位警察幫助那位老先生。",
+      "glossZh": "（口語）警察",
+      "distractorsZh": [
+        "醫生",
+        "記者",
+        "司機"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "Hi, welcome to our school.",
+      "sentenceZh": "嗨，歡迎來到我們學校。"
+    },
+    {
+      "id": "a1-u02-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "No, sir, I am not a cop. I am an engineer.",
+      "audioZh": "不是的，先生，我不是警察，我是工程師。",
+      "questionZh": "說話者的工作是什麼？",
+      "options": [
+        "A reporter",
+        "A cop",
+        "An engineer"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u02-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "The cop helps the lady find her bag.",
+      "sentenceZh": "警察幫那位女士找她的包包。"
+    },
+    {
+      "id": "a1-u02-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "My grandpa is his old self again.",
+      "sentenceZh": "我爺爺又回到原來的樣子了。"
+    },
+    {
+      "id": "a1-u02-l04-q13",
+      "type": "mcq",
+      "stemEn": "____ to our party!",
+      "stemZh": "歡迎來參加我們的派對！",
+      "options": [
+        "Sorry",
+        "Welcome",
+        "Engineer",
+        "Cop"
+      ],
+      "optionGlossZh": [
+        "抱歉的",
+        "歡迎",
+        "工程師",
+        "警察"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u02-l04-q14",
+      "type": "mcq",
+      "stemEn": "Excuse me, ____. Is this your phone?",
+      "stemZh": "先生，不好意思，這是您的手機嗎？",
+      "options": [
+        "welcome",
+        "self",
+        "sir",
+        "thanks"
+      ],
+      "optionGlossZh": [
+        "歡迎",
+        "自我",
+        "先生（尊稱）",
+        "謝謝"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u02-l04-q15",
+      "type": "reading",
+      "passageEn": "Hi, I am Helen. I am an engineer. Today is my first day at a new office. A lady at the door says, \"Welcome!\" She shows me my desk. Then a man gives me a cup of coffee. I say, \"Thanks!\" Everyone here is nice.",
+      "passageZh": "嗨，我是 Helen，我是工程師。今天是我在新辦公室的第一天。門口的一位女士說：「歡迎！」她帶我看我的辦公桌。接著一位男士給我一杯咖啡，我說：「謝謝！」這裡每個人都很好。",
+      "questions": [
+        {
+          "questionZh": "Helen 的工作是什麼？",
+          "options": [
+            "警察",
+            "工程師",
+            "記者"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "誰給 Helen 一杯咖啡？",
+          "options": [
+            "一位男士",
+            "門口的女士",
+            "她的老闆"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q16",
+      "type": "translate",
+      "promptZh": "歡迎來到台灣！",
+      "hintWords": [
+        "welcome"
+      ],
+      "referenceEn": [
+        "Welcome to Taiwan!"
+      ],
+      "rubricZh": [
+        "welcome 後面用 to 接地點（例如 Welcome to Taiwan!）",
+        "可以加上稱呼（例如 Welcome to Taiwan, my friend!），沒加也正確"
+      ]
+    },
+    {
+      "id": "a1-u02-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "thanks",
+      "instructionZh": "用 thanks 造一個句子，向朋友道謝。",
+      "referenceEn": [
+        "Thanks for the gift!",
+        "Thanks for your help, Tina."
+      ],
+      "rubricZh": [
+        "thanks 後面可用 for 接感謝的事（例如 for the gift、for your help）",
+        "只寫 Thanks a lot!、Thanks, Amy! 這類短句也正確"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u02-l04-q10": [
+        2
+      ],
+      "a1-u02-l04-q13": [
+        1
+      ],
+      "a1-u02-l04-q14": [
+        2
+      ],
+      "a1-u02-l04-q15#0": [
+        1
+      ],
+      "a1-u02-l04-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：對 sir 用尊稱「您」，與同課 q14 一致",
+        "resolution": "改前：\"先生，不好意思，這是你的包包嗎？\"；改後：\"先生，不好意思，這是您的包包嗎？\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關＋裁示：self 例句補 again、中譯寫清楚「又回到原來的樣子」",
+        "resolution": "改前：\"She is happy again. She is her old self.\"；改後：\"She is not sick now. She is her old self again.\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關＋裁示：self 例句補 again、中譯寫清楚「又回到原來的樣子」",
+        "resolution": "改前：\"她又開心起來了，變回原來的自己。\"；改後：\"她病好了，又回到原來的樣子了。\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「An engineer」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/9/audioEn",
+        "message": "執行長第②③關裁示修正：第②關：情境不明，改成被問職業時的回答",
+        "resolution": "改前：\"Thanks, sir. I am an engineer, not a cop.\"；改後：\"No, sir, I am not a cop. I am an engineer.\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長第②③關裁示修正：第②關：情境不明，改成被問職業時的回答",
+        "resolution": "改前：\"謝謝您，先生。我是工程師，不是警察。\"；改後：\"不是的，先生，我不是警察，我是工程師。\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（cop）",
+        "resolution": "改前：\"Thanks for your help, sir.\"；改後：\"The cop helps the lady find her bag.\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（cop）",
+        "resolution": "改前：\"先生，謝謝您的幫忙。\"；改後：\"警察幫那位女士找她的包包。\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（self）",
+        "resolution": "改前：\"The lady is an engineer from Japan.\"；改後：\"My grandpa is his old self again.\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（self）",
+        "resolution": "改前：\"那位女士是來自日本的工程師。\"；改後：\"我爺爺又回到原來的樣子了。\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Welcome」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「sir」由位置 1 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「一位男士」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"welcome 後面用 to 接地點（例如 welcome to Taiwan）\"；改後：\"welcome 後面用 to 接地點（例如 Welcome to Taiwan!）\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"Taiwan 是地名，首字母大寫\"；改後：\"可以加上稱呼（例如 Welcome to Taiwan, my friend!），沒加也正確\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"只說 Thanks a lot! 這類短句也正確\"；改後：\"只寫 Thanks a lot!、Thanks, Amy! 這類短句也正確\"",
+        "resolvedAt": "2026-10-02T11:28:01Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Welcome」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:07Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「sir」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:07Z"
+      }
+    ]
+  }
+}

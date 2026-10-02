@@ -75,6 +75,7 @@
 | `ANSWER_POSITION` | 單課所有選擇類題位（mcq＋聽選＋閱讀小題）合計，≥4 個正解在同一位置（第③關加） |
 | `ANSWER_POSITION_UNIT` | 同一單元跨課合計，同題型 ≥6 題時，某位置的正解超過 50%（第③關加；CLI 全量檢查時才判） |
 | `ANSWER_POSITION_LEVEL` | 同一級跨課合計，同題型 ≥6 題時，某位置的正解超過 50%（第③關加；CLI 全量檢查時才判） |
+| `ANSWER_POSITION_PATTERN` | 同一級內，課內 mcq 第 2 題對第 1 題、閱讀第 2 小題對第 1 小題的正解位置差（mod 選項數）有固定規律：課數 ≥8 時，某個差值占比超過 60%，或某個差值從未出現但均勻時應出現 ≥5 次（TASK-9 執行長裁示 G1 加；CLI 全量檢查時才判） |
 
 縮寫：`n't`→not、`'m`→am、`'re`→are、`'ll`→will、`'ve`→have（`can't`→can、`won't`→will）；`'s`、`'d` 不檢。數字不檢。
 

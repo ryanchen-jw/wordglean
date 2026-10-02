@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u06-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:39:53Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a1-u06-l01-q01",
+      "type": "wordCard",
+      "word": "bathroom",
+      "exampleEn": "Our house has two bathrooms.",
+      "exampleZh": "我們家有兩間浴室。",
+      "glossZh": "浴室；廁所",
+      "distractorsZh": [
+        "廚房",
+        "臥室",
+        "客廳"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q02",
+      "type": "wordCard",
+      "word": "towel",
+      "exampleEn": "Can I have a clean towel?",
+      "exampleZh": "可以給我一條乾淨的毛巾嗎？",
+      "glossZh": "毛巾",
+      "distractorsZh": [
+        "枕頭",
+        "牙刷",
+        "肥皂"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q03",
+      "type": "wordCard",
+      "word": "garbage",
+      "exampleEn": "Please take out the garbage.",
+      "exampleZh": "請把垃圾拿出去倒。",
+      "glossZh": "垃圾",
+      "distractorsZh": [
+        "衣服",
+        "碗盤",
+        "信件"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q04",
+      "type": "wordCard",
+      "word": "sofa",
+      "exampleEn": "The cat is sleeping on the sofa.",
+      "exampleZh": "貓在沙發上睡覺。",
+      "glossZh": "沙發",
+      "distractorsZh": [
+        "床",
+        "桌子",
+        "地毯"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q05",
+      "type": "wordCard",
+      "word": "vase",
+      "exampleEn": "There are some flowers in the vase.",
+      "exampleZh": "花瓶裡有一些花。",
+      "glossZh": "花瓶",
+      "distractorsZh": [
+        "杯子",
+        "盤子",
+        "碗"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q06",
+      "type": "wordCard",
+      "word": "home",
+      "exampleEn": "I am at home now.",
+      "exampleZh": "我現在在家。",
+      "glossZh": "家",
+      "distractorsZh": [
+        "學校",
+        "辦公室",
+        "公園"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q07",
+      "type": "wordCard",
+      "word": "room",
+      "exampleEn": "My room is very small.",
+      "exampleZh": "我的房間很小。",
+      "glossZh": "房間",
+      "distractorsZh": [
+        "房子",
+        "院子",
+        "門"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q08",
+      "type": "wordCard",
+      "word": "house",
+      "exampleEn": "They live in a big house near the park.",
+      "exampleZh": "他們住在公園附近的一棟大房子裡。",
+      "glossZh": "房子",
+      "distractorsZh": [
+        "房間",
+        "公園",
+        "商店"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q09",
+      "type": "wordCard",
+      "word": "door",
+      "exampleEn": "Please close the door.",
+      "exampleZh": "請關門。",
+      "glossZh": "門",
+      "distractorsZh": [
+        "窗戶",
+        "牆",
+        "地板"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "The towel is in the bathroom.",
+      "sentenceZh": "毛巾在浴室裡。"
+    },
+    {
+      "id": "a1-u06-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "Can you take out the garbage? It is by the door.",
+      "audioZh": "你可以把垃圾拿出去倒嗎？垃圾在門邊。",
+      "questionZh": "垃圾在哪裡？",
+      "options": [
+        "By the door",
+        "In the bathroom",
+        "On the sofa"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u06-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Welcome to my new house.",
+      "sentenceZh": "歡迎來我的新家。"
+    },
+    {
+      "id": "a1-u06-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "There is a vase on the table.",
+      "sentenceZh": "桌上有一個花瓶。"
+    },
+    {
+      "id": "a1-u06-l01-q14",
+      "type": "mcq",
+      "stemEn": "I take a shower in the ____.",
+      "stemZh": "我在浴室洗澡。",
+      "options": [
+        "vase",
+        "garbage",
+        "bathroom",
+        "sofa"
+      ],
+      "optionGlossZh": [
+        "花瓶",
+        "垃圾",
+        "浴室",
+        "沙發"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u06-l01-q15",
+      "type": "mcq",
+      "stemEn": "Please open the ____. Someone is here.",
+      "stemZh": "請開門，有人來了。",
+      "options": [
+        "vase",
+        "towel",
+        "garbage",
+        "door"
+      ],
+      "optionGlossZh": [
+        "花瓶",
+        "毛巾",
+        "垃圾",
+        "門"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u06-l01-q16",
+      "type": "reading",
+      "passageEn": "My house is not big, but I love it. There are three rooms and one bathroom. In the living room, there is a big sofa and a vase of flowers. Every night, I take out the garbage. Then I sit on the sofa and watch TV. It is good to be home.",
+      "passageZh": "我的房子不大，但我很喜歡。房子有三個房間和一間浴室。客廳裡有一張大沙發和一瓶花。每天晚上我都會去倒垃圾，然後坐在沙發上看電視。待在家真好。",
+      "questions": [
+        {
+          "questionZh": "這棟房子有幾間浴室？",
+          "options": [
+            "一間",
+            "兩間",
+            "三間"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "說話者每天晚上做什麼家事？",
+          "options": [
+            "洗碗",
+            "倒垃圾",
+            "掃地"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q17",
+      "type": "translate",
+      "promptZh": "我今天晚上在家。",
+      "hintWords": [
+        "home"
+      ],
+      "referenceEn": [
+        "I am at home tonight.",
+        "I will be home tonight.",
+        "I will be at home tonight."
+      ],
+      "rubricZh": [
+        "「在家」可寫 at home、be home、stay home 等",
+        "時態合理即可（例如 am、will be）"
+      ]
+    },
+    {
+      "id": "a1-u06-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "room",
+      "instructionZh": "用 room 造一個句子，描述你的房間。",
+      "referenceEn": [
+        "My room is small but clean.",
+        "There is a big bed in my room."
+      ],
+      "rubricZh": [
+        "room 前面加所有格或冠詞（例如 my room、a big room）",
+        "可用 There is…、My room is…、My room has… 等來描述"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u06-l01-q11": [
+        0
+      ],
+      "a1-u06-l01-q14": [
+        2
+      ],
+      "a1-u06-l01-q15": [
+        3
+      ],
+      "a1-u06-l01-q16#0": [
+        0
+      ],
+      "a1-u06-l01-q16#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/10",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「By the door」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:28Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「bathroom」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:28Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「door」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:28Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「在家」可寫 at home 或 be home\"；改後：\"「在家」可寫 at home、be home、stay home 等\"",
+        "resolvedAt": "2026-10-02T11:28:28Z"
+      },
+      {
+        "path": "items/17/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"room 前面加 my 等所有格或冠詞\"；改後：\"room 前面加所有格或冠詞（例如 my room、a big room）\"",
+        "resolvedAt": "2026-10-02T11:28:28Z"
+      },
+      {
+        "path": "items/17/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"可用 There is… 或 My room is… 來描述\"；改後：\"可用 There is…、My room is…、My room has… 等來描述\"",
+        "resolvedAt": "2026-10-02T11:28:28Z"
+      },
+      {
+        "path": "items/10",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「By the door」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:53Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「bathroom」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:53Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「door」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:53Z"
+      },
+      {
+        "path": "items/15/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「一間」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:53Z"
+      },
+      {
+        "path": "items/15/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「倒垃圾」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:39:53Z"
+      }
+    ]
+  }
+}

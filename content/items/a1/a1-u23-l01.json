@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u23-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:23:21Z",
+  "properNouns": [
+    "Ben"
+  ],
+  "items": [
+    {
+      "id": "a1-u23-l01-q01",
+      "type": "wordCard",
+      "word": "cut",
+      "exampleEn": "Please cut the cake.",
+      "exampleZh": "請切蛋糕。",
+      "glossZh": "切；剪",
+      "distractorsZh": [
+        "煮",
+        "洗",
+        "拿"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q02",
+      "type": "wordCard",
+      "word": "kill",
+      "exampleEn": "The cold weather killed my flowers.",
+      "exampleZh": "寒冷的天氣凍死了我的花。",
+      "glossZh": "殺死；使死亡",
+      "distractorsZh": [
+        "救活",
+        "種",
+        "澆水"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q03",
+      "type": "wordCard",
+      "word": "care",
+      "exampleEn": "Take care of yourself!",
+      "exampleZh": "好好照顧自己！",
+      "glossZh": "小心；照顧",
+      "distractorsZh": [
+        "麻煩",
+        "樂趣",
+        "休息"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q04",
+      "type": "wordCard",
+      "word": "mind",
+      "exampleEn": "Reading is good for your mind.",
+      "exampleZh": "閱讀對頭腦有好處。",
+      "glossZh": "心思；頭腦",
+      "distractorsZh": [
+        "身體",
+        "心臟",
+        "手"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q05",
+      "type": "wordCard",
+      "word": "carry",
+      "exampleEn": "Can you carry this box for me?",
+      "exampleZh": "你可以幫我搬這個箱子嗎？",
+      "glossZh": "搬；攜帶",
+      "distractorsZh": [
+        "丟",
+        "修理",
+        "賣"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q06",
+      "type": "wordCard",
+      "word": "break",
+      "exampleEn": "Don't break the glass.",
+      "exampleZh": "別打破玻璃杯。",
+      "glossZh": "打破；弄壞",
+      "distractorsZh": [
+        "修理",
+        "洗",
+        "買"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q07",
+      "type": "wordCard",
+      "word": "action",
+      "exampleEn": "I like action movies.",
+      "exampleZh": "我喜歡動作片。",
+      "glossZh": "動作；行動",
+      "distractorsZh": [
+        "愛情",
+        "歷史",
+        "音樂"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q08",
+      "type": "wordCard",
+      "word": "join",
+      "exampleEn": "Can I join your team?",
+      "exampleZh": "我可以加入你們的隊伍嗎？",
+      "glossZh": "加入；參加",
+      "distractorsZh": [
+        "離開",
+        "看",
+        "幫助"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Please carry the box with care.",
+      "sentenceZh": "請小心搬這個箱子。"
+    },
+    {
+      "id": "a1-u23-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Do you want to join us? We are watching an action movie.",
+      "audioZh": "你要加入我們嗎？我們在看動作片。",
+      "questionZh": "他們在做什麼？",
+      "options": [
+        "Watching an action movie",
+        "Playing a game",
+        "Cutting a cake"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u23-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "Be careful. Don't break the cups.",
+      "sentenceZh": "小心，別打破杯子。"
+    },
+    {
+      "id": "a1-u23-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The hot sun killed the grass.",
+      "sentenceZh": "炎熱的太陽把草曬死了。"
+    },
+    {
+      "id": "a1-u23-l01-q13",
+      "type": "mcq",
+      "stemEn": "Can I ____ your club?",
+      "stemZh": "我可以加入你們的社團嗎？",
+      "options": [
+        "action",
+        "mind",
+        "join",
+        "care"
+      ],
+      "optionGlossZh": [
+        "動作",
+        "心思",
+        "加入",
+        "照顧"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u23-l01-q14",
+      "type": "mcq",
+      "stemEn": "My bag is heavy. Can you help me ____ it?",
+      "stemZh": "我的包包很重，你可以幫我拿嗎？",
+      "options": [
+        "carry",
+        "mind",
+        "action",
+        "care"
+      ],
+      "optionGlossZh": [
+        "搬；拿",
+        "心思",
+        "動作",
+        "照顧"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u23-l01-q15",
+      "type": "reading",
+      "passageEn": "Ben wants to join the school drama club. What is on his mind? He wants to be a famous action movie actor! In his first play, he has a small role. He must carry a heavy box on the stage, but he breaks it. Everyone laughs, and Ben laughs too.",
+      "passageZh": "Ben 想加入學校的戲劇社。他心裡在想什麼？他想成為有名的動作片演員！在他的第一齣戲裡，他演一個小角色，要在台上搬一個很重的箱子，結果他把箱子弄壞了。大家都笑了，Ben 也笑了。",
+      "questions": [
+        {
+          "questionZh": "Ben 想加入什麼社團？",
+          "options": [
+            "戲劇社",
+            "足球社",
+            "音樂社"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Ben 在台上做了什麼？",
+          "options": [
+            "唱了一首歌",
+            "把箱子弄壞了",
+            "忘了台詞"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q16",
+      "type": "translate",
+      "promptZh": "請幫我切這個蛋糕。",
+      "hintWords": [
+        "cut"
+      ],
+      "referenceEn": [
+        "Please cut this cake for me.",
+        "Can you cut this cake for me?"
+      ],
+      "rubricZh": [
+        "cut 後面直接接要切的東西（例如 cut this cake）",
+        "請求可用 Please…、Can you…? 等"
+      ]
+    },
+    {
+      "id": "a1-u23-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "join",
+      "instructionZh": "用 join 造一個句子，說說你想參加的社團或活動。",
+      "referenceEn": [
+        "I want to join the swimming club.",
+        "Can I join your game?"
+      ],
+      "rubricZh": [
+        "join 後面可直接接團體或活動（例如 join the club、join us）；參加活動說 join in the game 也正確",
+        "「想參加」可用 want to join、would like to join 等"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T13:19:27Z",
+    "verdicts": {
+      "a1-u23-l01-q10": [
+        0
+      ],
+      "a1-u23-l01-q13": [
+        2
+      ],
+      "a1-u23-l01-q14": [
+        0
+      ],
+      "a1-u23-l01-q15#0": [
+        0
+      ],
+      "a1-u23-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：單字卡例句不與短文雷同",
+        "resolution": "改前：\"What is on your mind?\"；改後：\"Reading is good for your mind.\"",
+        "resolvedAt": "2026-10-02T13:23:22Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：單字卡例句不與短文雷同",
+        "resolution": "改前：\"你在想什麼？\"；改後：\"閱讀對頭腦有好處。\"",
+        "resolvedAt": "2026-10-02T13:23:22Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：b3 裁示：自然複用 u21 形容詞（heavy）",
+        "resolution": "改前：\"Ben wants to join the school drama club. What is on his mind? He wants to be a famous action movie actor! In his first play, he has a small role. He must carry a big box on the stage, but he breaks it. Everyone laughs, and Ben laughs too.\"；改後：\"Ben wants to join the school drama club. What is on his mind? He wants to be a famous action movie actor! In his first play, he has a small role. He must carry a heavy box on the stage, but he breaks it. Everyone laughs, and Ben laughs too.\"",
+        "resolvedAt": "2026-10-02T13:23:22Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：b3 裁示：自然複用 u21 形容詞（heavy）",
+        "resolution": "改前：\"Ben 想加入學校的戲劇社。他心裡在想什麼？他想成為有名的動作片演員！在他的第一齣戲裡，他演一個小角色，要在台上搬一個大箱子，結果他把箱子弄壞了。大家都笑了，Ben 也笑了。\"；改後：\"Ben 想加入學校的戲劇社。他心裡在想什麼？他想成為有名的動作片演員！在他的第一齣戲裡，他演一個小角色，要在台上搬一個很重的箱子，結果他把箱子弄壞了。大家都笑了，Ben 也笑了。\"",
+        "resolvedAt": "2026-10-02T13:23:22Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第②③關 FIX：join in 是正確用法",
+        "resolution": "改前：\"join 後面直接接團體或活動，不加 in（例如 join the club）\"；改後：\"join 後面可直接接團體或活動（例如 join the club、join us）；參加活動說 join in the game 也正確\"",
+        "resolvedAt": "2026-10-02T13:23:22Z"
+      }
+    ]
+  }
+}

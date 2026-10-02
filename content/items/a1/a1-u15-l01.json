@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u15-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:41:41Z",
+  "properNouns": [
+    "Taipei",
+    "Tainan",
+    "Hualien"
+  ],
+  "items": [
+    {
+      "id": "a1-u15-l01-q01",
+      "type": "wordCard",
+      "word": "pet",
+      "exampleEn": "Do you have a pet?",
+      "exampleZh": "你有養寵物嗎？",
+      "glossZh": "寵物",
+      "distractorsZh": [
+        "玩具",
+        "朋友",
+        "植物"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q02",
+      "type": "wordCard",
+      "word": "sunny",
+      "exampleEn": "It is sunny today.",
+      "exampleZh": "今天是晴天。",
+      "glossZh": "晴朗的",
+      "distractorsZh": [
+        "下雨的",
+        "多雲的",
+        "下雪的"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q03",
+      "type": "wordCard",
+      "word": "rainy",
+      "exampleEn": "I stay home on rainy days.",
+      "exampleZh": "下雨天我待在家。",
+      "glossZh": "下雨的",
+      "distractorsZh": [
+        "晴朗的",
+        "颳風的",
+        "寒冷的"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q04",
+      "type": "wordCard",
+      "word": "sunshine",
+      "exampleEn": "The cat is sleeping in the sunshine.",
+      "exampleZh": "貓在陽光下睡覺。",
+      "glossZh": "陽光",
+      "distractorsZh": [
+        "月光",
+        "雨水",
+        "陰影"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q05",
+      "type": "wordCard",
+      "word": "snowy",
+      "exampleEn": "It is snowy in the mountains.",
+      "exampleZh": "山上在下雪。",
+      "glossZh": "下雪的",
+      "distractorsZh": [
+        "晴朗的",
+        "炎熱的",
+        "潮濕的"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q06",
+      "type": "wordCard",
+      "word": "cloudy",
+      "exampleEn": "It is cloudy, but it is not raining.",
+      "exampleZh": "天氣多雲，但沒有下雨。",
+      "glossZh": "多雲的；陰天的",
+      "distractorsZh": [
+        "晴朗的",
+        "下雪的",
+        "炎熱的"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q07",
+      "type": "wordCard",
+      "word": "tree",
+      "exampleEn": "There is a big tree in our yard.",
+      "exampleZh": "我們院子裡有一棵大樹。",
+      "glossZh": "樹",
+      "distractorsZh": [
+        "花",
+        "草",
+        "石頭"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q08",
+      "type": "wordCard",
+      "word": "fire",
+      "exampleEn": "Don't play with fire.",
+      "exampleZh": "不要玩火。",
+      "glossZh": "火",
+      "distractorsZh": [
+        "水",
+        "煙",
+        "冰"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "The cat is sleeping under the tree.",
+      "sentenceZh": "貓在樹下睡覺。"
+    },
+    {
+      "id": "a1-u15-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "It is cloudy now, but it will be sunny this afternoon.",
+      "audioZh": "現在是陰天，但今天下午會放晴。",
+      "questionZh": "今天下午天氣會怎樣？",
+      "options": [
+        "Snowy",
+        "Rainy",
+        "Sunny"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u15-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "My pet dog loves the sunshine.",
+      "sentenceZh": "我的寵物狗很喜歡曬太陽。"
+    },
+    {
+      "id": "a1-u15-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "We sit by the fire on snowy nights.",
+      "sentenceZh": "下雪的夜晚，我們坐在火爐旁。"
+    },
+    {
+      "id": "a1-u15-l01-q13",
+      "type": "mcq",
+      "stemEn": "Take an umbrella. It is ____ today.",
+      "stemZh": "帶把傘，今天會下雨。",
+      "options": [
+        "rainy",
+        "pet",
+        "tree",
+        "fire"
+      ],
+      "optionGlossZh": [
+        "下雨的",
+        "寵物",
+        "樹",
+        "火"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u15-l01-q14",
+      "type": "mcq",
+      "stemEn": "A dog or a cat can be a good ____.",
+      "stemZh": "狗或貓都可以是很好的寵物。",
+      "options": [
+        "tree",
+        "fire",
+        "pet",
+        "cloudy"
+      ],
+      "optionGlossZh": [
+        "樹",
+        "火",
+        "寵物",
+        "多雲的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u15-l01-q15",
+      "type": "reading",
+      "passageEn": "The weather is different in every place today. In Taipei, it is rainy. In Tainan, it is sunny and hot. In the mountains, it is snowy and very cold. In Hualien, it is cloudy, but there is no rain.",
+      "passageZh": "今天每個地方的天氣都不一樣。台北下雨，台南晴朗炎熱，山上下雪、非常冷，花蓮是陰天，但沒有下雨。",
+      "questions": [
+        {
+          "questionZh": "台南今天天氣如何？",
+          "options": [
+            "多雲",
+            "下雨",
+            "晴朗炎熱"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "山上今天天氣如何？",
+          "options": [
+            "下雪、很冷",
+            "晴朗",
+            "下雨"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q16",
+      "type": "translate",
+      "promptZh": "今天是晴天。",
+      "hintWords": [
+        "sunny"
+      ],
+      "referenceEn": [
+        "It is sunny today.",
+        "It's a sunny day today."
+      ],
+      "rubricZh": [
+        "說天氣可用 It is＋形容詞（例如 It is sunny），也可寫 Today is sunny、It's a sunny day",
+        "sunny 是形容詞，不要寫成 It is sun"
+      ]
+    },
+    {
+      "id": "a1-u15-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "pet",
+      "instructionZh": "用 pet 造一個句子，說說你養（或想養）的寵物。",
+      "referenceEn": [
+        "I have a pet cat.",
+        "I want a pet dog."
+      ],
+      "rubricZh": [
+        "pet 可放在動物名稱前（例如 a pet cat），也可單獨當名詞（例如 I have a pet）",
+        "動詞配合主詞（例如 I have、I want）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u15-l01-q10": [
+        2
+      ],
+      "a1-u15-l01-q13": [
+        0
+      ],
+      "a1-u15-l01-q14": [
+        2
+      ],
+      "a1-u15-l01-q15#0": [
+        2
+      ],
+      "a1-u15-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「rainy」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:41Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「pet」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:41Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第③關 S19：every city 與 mountains 不一致",
+        "resolution": "改前：\"The weather is different in every city today. In Taipei, it is rainy. In Tainan, it is sunny and hot. In the mountains, it is snowy and very cold. In Hualien, it is cloudy, but there is no rain.\"；改後：\"The weather is different in every place today. In Taipei, it is rainy. In Tainan, it is sunny and hot. In the mountains, it is snowy and very cold. In Hualien, it is cloudy, but there is no rain.\"",
+        "resolvedAt": "2026-10-02T12:41:41Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第③關 S19：中譯同步",
+        "resolution": "改前：\"今天每個城市的天氣都不一樣。台北下雨，台南晴朗炎熱，山上下雪、非常冷，花蓮是陰天，但沒有下雨。\"；改後：\"今天每個地方的天氣都不一樣。台北下雨，台南晴朗炎熱，山上下雪、非常冷，花蓮是陰天，但沒有下雨。\"",
+        "resolvedAt": "2026-10-02T12:41:41Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「晴朗炎熱」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:41Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「下雪、很冷」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:41:41Z"
+      }
+    ]
+  }
+}

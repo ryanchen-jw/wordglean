@@ -4,7 +4,7 @@
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
 import { parseArgs } from 'node:util';
-import { blockingErrors, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from './lib/check-items.mjs';
+import { blockingErrors, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from './lib/check-items.mjs';
 import { DEFAULT_PATHS, loadCheckContext } from './lib/items-context.mjs';
 
 const { values, positionals } = parseArgs({
@@ -44,8 +44,8 @@ for (const file of files) {
   total += blocking;
   notices += all.length - blocking;
 }
-// 正解位置②③：同一級、同一單元跨課合計
-for (const e of [...checkLevelAnswerPositions(docs), ...checkUnitAnswerPositions(docs)]) {
+// 正解位置②③④：同一級、同一單元跨課合計；同一級相鄰題位置差的規律
+for (const e of [...checkLevelAnswerPositions(docs), ...checkUnitAnswerPositions(docs), ...checkAnswerPositionPatterns(docs)]) {
   console.error(`${e.code}	${e.path}	${e.message}`);
   total += 1;
 }

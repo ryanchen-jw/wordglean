@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u08-l08",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:34Z",
+  "properNouns": [
+    "Mike"
+  ],
+  "items": [
+    {
+      "id": "a1-u08-l08-q01",
+      "type": "wordCard",
+      "word": "beef",
+      "exampleEn": "I don't eat beef.",
+      "exampleZh": "我不吃牛肉。",
+      "glossZh": "牛肉",
+      "distractorsZh": [
+        "豬肉",
+        "雞肉",
+        "魚肉"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q02",
+      "type": "wordCard",
+      "word": "banana",
+      "exampleEn": "Monkeys love bananas.",
+      "exampleZh": "猴子很愛吃香蕉。",
+      "glossZh": "香蕉",
+      "distractorsZh": [
+        "蘋果",
+        "葡萄",
+        "橘子"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q03",
+      "type": "wordCard",
+      "word": "grape",
+      "exampleEn": "These grapes are very sweet.",
+      "exampleZh": "這些葡萄很甜。",
+      "glossZh": "葡萄",
+      "distractorsZh": [
+        "香蕉",
+        "蘋果",
+        "番茄"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q04",
+      "type": "wordCard",
+      "word": "burger",
+      "exampleEn": "I want a beef burger and some juice.",
+      "exampleZh": "我要一個牛肉漢堡和一些果汁。",
+      "glossZh": "漢堡",
+      "distractorsZh": [
+        "熱狗",
+        "披薩",
+        "沙拉"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q05",
+      "type": "wordCard",
+      "word": "yogurt",
+      "exampleEn": "I eat yogurt with fruit for breakfast.",
+      "exampleZh": "我早餐吃優格配水果。",
+      "glossZh": "優格",
+      "distractorsZh": [
+        "起司",
+        "牛奶",
+        "奶油"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q06",
+      "type": "wordCard",
+      "word": "biscuit",
+      "exampleEn": "Would you like a biscuit with your tea?",
+      "exampleZh": "你要配茶吃塊餅乾嗎？",
+      "glossZh": "（英式）餅乾",
+      "distractorsZh": [
+        "麵包",
+        "蛋糕",
+        "糖果"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q07",
+      "type": "wordCard",
+      "word": "coke",
+      "exampleEn": "Can I have a coke, please?",
+      "exampleZh": "請給我一杯可樂。",
+      "glossZh": "可樂",
+      "distractorsZh": [
+        "咖啡",
+        "果汁",
+        "茶"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q08",
+      "type": "listenType",
+      "sentenceEn": "I want a burger and a coke.",
+      "sentenceZh": "我要一個漢堡和一杯可樂。"
+    },
+    {
+      "id": "a1-u08-l08-q09",
+      "type": "listenChoice",
+      "audioEn": "I can't eat beef, so I want a chicken burger.",
+      "audioZh": "我不能吃牛肉，所以我要雞肉漢堡。",
+      "questionZh": "說話者要哪一種漢堡？",
+      "options": [
+        "A fish burger",
+        "A beef burger",
+        "A chicken burger"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u08-l08-q10",
+      "type": "shadowing",
+      "sentenceEn": "Bananas and grapes are my favorite fruit.",
+      "sentenceZh": "香蕉和葡萄是我最喜歡的水果。"
+    },
+    {
+      "id": "a1-u08-l08-q11",
+      "type": "shadowing",
+      "sentenceEn": "There are some biscuits in the box.",
+      "sentenceZh": "盒子裡有一些餅乾。"
+    },
+    {
+      "id": "a1-u08-l08-q12",
+      "type": "mcq",
+      "stemEn": "A ____ is long and yellow.",
+      "stemZh": "香蕉是長長的、黃色的。",
+      "options": [
+        "burger",
+        "grape",
+        "banana",
+        "biscuit"
+      ],
+      "optionGlossZh": [
+        "漢堡",
+        "葡萄",
+        "香蕉",
+        "餅乾"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u08-l08-q13",
+      "type": "mcq",
+      "stemEn": "Can I have a glass of ____ with my burger?",
+      "stemZh": "我吃漢堡時可以配一杯可樂嗎？",
+      "options": [
+        "biscuit",
+        "beef",
+        "grape",
+        "coke"
+      ],
+      "optionGlossZh": [
+        "餅乾",
+        "牛肉",
+        "葡萄",
+        "可樂"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u08-l08-q14",
+      "type": "reading",
+      "passageEn": "Mike goes to a burger shop with his son. Mike has a beef burger and a coke. His son doesn't drink coke, so he has a cup of grape juice. After lunch, they buy some bananas and yogurt for tomorrow's breakfast.",
+      "passageZh": "Mike 和他兒子去一家漢堡店。Mike 吃了一個牛肉漢堡，喝了一杯可樂。他兒子不喝可樂，所以喝了一杯葡萄汁。午餐後，他們買了一些香蕉和優格，當作明天的早餐。",
+      "questions": [
+        {
+          "questionZh": "Mike 的兒子喝了什麼？",
+          "options": [
+            "葡萄汁",
+            "可樂",
+            "牛奶"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "他們買香蕉和優格做什麼？",
+          "options": [
+            "送給朋友",
+            "當晚餐",
+            "當明天的早餐"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q15",
+      "type": "translate",
+      "promptZh": "我不吃牛肉，我吃雞肉。",
+      "hintWords": [
+        "beef"
+      ],
+      "referenceEn": [
+        "I don't eat beef. I eat chicken."
+      ],
+      "rubricZh": [
+        "否定可用 don't 或 do not（例如 I don't eat beef）",
+        "beef、chicken 當食物時不加 a、不加 s"
+      ]
+    },
+    {
+      "id": "a1-u08-l08-q16",
+      "type": "makeSentence",
+      "targetWord": "banana",
+      "instructionZh": "用 banana 造一個句子，說說你什麼時候吃香蕉。",
+      "referenceEn": [
+        "I eat a banana every morning.",
+        "I often eat bananas after lunch."
+      ],
+      "rubricZh": [
+        "一根香蕉用 a banana，泛指時用複數 bananas",
+        "時間可放句首或句尾（例如 every morning、after lunch）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u08-l08-q09": [
+        2
+      ],
+      "a1-u08-l08-q12": [
+        2
+      ],
+      "a1-u08-l08-q13": [
+        3
+      ],
+      "a1-u08-l08-q14#0": [
+        0
+      ],
+      "a1-u08-l08-q14#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「A chicken burger」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「banana」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「coke」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「葡萄汁」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「當明天的早餐」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/14/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"否定句用 don't（例如 I don't eat beef）\"；改後：\"否定可用 don't 或 do not（例如 I don't eat beef）\"",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"時間可放句尾（例如 every morning、after lunch）\"；改後：\"時間可放句首或句尾（例如 every morning、after lunch）\"",
+        "resolvedAt": "2026-10-02T11:28:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「banana」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:35Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「coke」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:35Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「當明天的早餐」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:35Z"
+      }
+    ]
+  }
+}

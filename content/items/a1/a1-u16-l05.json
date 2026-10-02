@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u16-l05",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:42:15Z",
+  "properNouns": [
+    "Chinese",
+    "Japanese",
+    "English",
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a1-u16-l05-q01",
+      "type": "wordCard",
+      "word": "page",
+      "exampleEn": "Please open your book to page ten.",
+      "exampleZh": "請把書翻到第十頁。",
+      "glossZh": "頁",
+      "distractorsZh": [
+        "行",
+        "章",
+        "段"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q02",
+      "type": "wordCard",
+      "word": "language",
+      "exampleEn": "How many languages can you speak?",
+      "exampleZh": "你會說幾種語言？",
+      "glossZh": "語言",
+      "distractorsZh": [
+        "國家",
+        "文化",
+        "科目"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q03",
+      "type": "wordCard",
+      "word": "article",
+      "exampleEn": "I read an article about health.",
+      "exampleZh": "我讀了一篇關於健康的文章。",
+      "glossZh": "文章",
+      "distractorsZh": [
+        "書",
+        "信",
+        "歌"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q04",
+      "type": "wordCard",
+      "word": "list",
+      "exampleEn": "Here is my shopping list.",
+      "exampleZh": "這是我的購物清單。",
+      "glossZh": "清單；名單",
+      "distractorsZh": [
+        "地圖",
+        "收據",
+        "信"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q05",
+      "type": "wordCard",
+      "word": "answer",
+      "exampleEn": "Do you know the answer?",
+      "exampleZh": "你知道答案嗎？",
+      "glossZh": "答案；回答",
+      "distractorsZh": [
+        "問題",
+        "原因",
+        "例子"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q06",
+      "type": "wordCard",
+      "word": "section",
+      "exampleEn": "This section of the test is easy.",
+      "exampleZh": "考試的這一部分很簡單。",
+      "glossZh": "部分；區段",
+      "distractorsZh": [
+        "題目",
+        "頁",
+        "規則"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q07",
+      "type": "wordCard",
+      "word": "example",
+      "exampleEn": "Can you give me an example?",
+      "exampleZh": "你可以舉個例子嗎？",
+      "glossZh": "例子",
+      "distractorsZh": [
+        "答案",
+        "規則",
+        "理由"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q08",
+      "type": "wordCard",
+      "word": "science",
+      "exampleEn": "We do fun things in science class.",
+      "exampleZh": "我們在自然課上做有趣的事。",
+      "glossZh": "科學；自然科",
+      "distractorsZh": [
+        "歷史",
+        "美術",
+        "音樂"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "Please write your answer on page two.",
+      "sentenceZh": "請把你的答案寫在第二頁。"
+    },
+    {
+      "id": "a1-u16-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "Read the article on page five. Then answer the questions.",
+      "audioZh": "讀第五頁的文章，然後回答問題。",
+      "questionZh": "說話者要你讀哪一頁的文章？",
+      "options": [
+        "Page two",
+        "Page five",
+        "Page nine"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u16-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "English is an important language.",
+      "sentenceZh": "英文是一種重要的語言。"
+    },
+    {
+      "id": "a1-u16-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "Put your name on the list.",
+      "sentenceZh": "把你的名字寫在名單上。"
+    },
+    {
+      "id": "a1-u16-l05-q13",
+      "type": "mcq",
+      "stemEn": "For ____, apples and bananas are fruit.",
+      "stemZh": "例如，蘋果和香蕉都是水果。",
+      "options": [
+        "example",
+        "list",
+        "science",
+        "page"
+      ],
+      "optionGlossZh": [
+        "例子",
+        "清單",
+        "科學",
+        "頁"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u16-l05-q14",
+      "type": "mcq",
+      "stemEn": "She speaks three ____: English, Chinese, and Japanese.",
+      "stemZh": "她會說三種語言：英文、中文和日文。",
+      "options": [
+        "sections",
+        "articles",
+        "languages",
+        "lists"
+      ],
+      "optionGlossZh": [
+        "部分",
+        "文章",
+        "語言",
+        "清單"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u16-l05-q15",
+      "type": "reading",
+      "passageEn": "Amy writes articles for the school newspaper. This week, her article is about science. It has three sections. In each section, she gives an example of science in our everyday life. There is also a list of questions at the end.",
+      "passageZh": "Amy 幫校刊寫文章。這週她的文章是關於科學的，分成三個部分。每個部分她都舉了一個日常生活中的科學例子。文章最後還有一串問題。",
+      "questions": [
+        {
+          "questionZh": "Amy 這週的文章是關於什麼？",
+          "options": [
+            "語言",
+            "科學",
+            "運動"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "文章最後有什麼？",
+          "options": [
+            "一串問題",
+            "一張照片",
+            "一首詩"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q16",
+      "type": "translate",
+      "promptZh": "這篇文章在第三頁。",
+      "hintWords": [
+        "article",
+        "page"
+      ],
+      "referenceEn": [
+        "This article is on page three.",
+        "The article is on page 3."
+      ],
+      "rubricZh": [
+        "「在第三頁」可寫 on page three（這時 page 前不加 the），也可寫 on the third page",
+        "寫數字 3 或英文 three 都可以"
+      ]
+    },
+    {
+      "id": "a1-u16-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "answer",
+      "instructionZh": "用 answer 造一個句子（當名詞或動詞都可以），說說回答問題的事。",
+      "referenceEn": [
+        "I know the answer to this question.",
+        "I always answer my emails quickly."
+      ],
+      "rubricZh": [
+        "answer 當名詞常用 the answer to…（例如 the answer to this question）",
+        "answer 當動詞直接接受詞（例如 answer my emails）",
+        "動詞配合主詞和時態"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u16-l05-q10": [
+        1
+      ],
+      "a1-u16-l05-q13": [
+        0
+      ],
+      "a1-u16-l05-q14": [
+        2
+      ],
+      "a1-u16-l05-q15#0": [
+        1
+      ],
+      "a1-u16-l05-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「languages」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:15Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「科學」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:42:15Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關 FIX",
+        "resolution": "改前：\"「在第三頁」用 on page three（page 前不加 the）\"；改後：\"「在第三頁」可寫 on page three（這時 page 前不加 the），也可寫 on the third page\"",
+        "resolvedAt": "2026-10-02T12:42:15Z"
+      }
+    ]
+  }
+}

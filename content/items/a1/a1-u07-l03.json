@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u07-l03",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:11Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a1-u07-l03-q01",
+      "type": "wordCard",
+      "word": "code",
+      "exampleEn": "What is the code for the door?",
+      "exampleZh": "門的密碼是多少？",
+      "glossZh": "密碼",
+      "distractorsZh": [
+        "鑰匙",
+        "地址",
+        "名字"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q02",
+      "type": "wordCard",
+      "word": "wake",
+      "exampleEn": "I wake up at six every day.",
+      "exampleZh": "我每天六點醒來。",
+      "glossZh": "醒來",
+      "distractorsZh": [
+        "睡覺",
+        "出門",
+        "吃飯"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q03",
+      "type": "wordCard",
+      "word": "telephone",
+      "exampleEn": "Where is the telephone?",
+      "exampleZh": "電話在哪裡？",
+      "glossZh": "電話",
+      "distractorsZh": [
+        "電視",
+        "電腦",
+        "收音機"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q04",
+      "type": "wordCard",
+      "word": "busy",
+      "exampleEn": "I am very busy today.",
+      "exampleZh": "我今天很忙。",
+      "glossZh": "忙碌的",
+      "distractorsZh": [
+        "有空的",
+        "生病的",
+        "開心的"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q05",
+      "type": "wordCard",
+      "word": "habit",
+      "exampleEn": "Reading every night is a good habit.",
+      "exampleZh": "每天晚上看書是一個好習慣。",
+      "glossZh": "習慣",
+      "distractorsZh": [
+        "技能",
+        "工作",
+        "規則"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q06",
+      "type": "wordCard",
+      "word": "mail",
+      "exampleEn": "Is there any mail for me?",
+      "exampleZh": "有我的信嗎？",
+      "glossZh": "郵件；信件",
+      "distractorsZh": [
+        "包包",
+        "鑰匙",
+        "禮物"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q07",
+      "type": "wordCard",
+      "word": "shower",
+      "exampleEn": "I take a shower every morning.",
+      "exampleZh": "我每天早上沖澡。",
+      "glossZh": "淋浴；沖澡",
+      "distractorsZh": [
+        "早餐",
+        "散步",
+        "午睡"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q08",
+      "type": "listenType",
+      "sentenceEn": "I wake up at seven and take a shower.",
+      "sentenceZh": "我七點醒來，然後沖澡。"
+    },
+    {
+      "id": "a1-u07-l03-q09",
+      "type": "listenChoice",
+      "audioEn": "The telephone is ringing, but I am in the shower!",
+      "audioZh": "電話在響，可是我在沖澡！",
+      "questionZh": "電話響的時候，說話者在做什麼？",
+      "options": [
+        "Sleeping",
+        "Taking a shower",
+        "Eating breakfast"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u07-l03-q10",
+      "type": "shadowing",
+      "sentenceEn": "Getting up early is a good habit.",
+      "sentenceZh": "早起是一個好習慣。"
+    },
+    {
+      "id": "a1-u07-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "Please answer the telephone.",
+      "sentenceZh": "請接一下電話。"
+    },
+    {
+      "id": "a1-u07-l03-q12",
+      "type": "mcq",
+      "stemEn": "I ____ up at six every morning.",
+      "stemZh": "我每天早上六點醒來。",
+      "options": [
+        "shower",
+        "wake",
+        "habit",
+        "code"
+      ],
+      "optionGlossZh": [
+        "淋浴",
+        "醒來",
+        "習慣",
+        "密碼"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u07-l03-q13",
+      "type": "mcq",
+      "stemEn": "Do you know the ____ for this door?",
+      "stemZh": "你知道這扇門的密碼嗎？",
+      "options": [
+        "habit",
+        "mail",
+        "busy",
+        "code"
+      ],
+      "optionGlossZh": [
+        "習慣",
+        "郵件",
+        "忙碌的",
+        "密碼"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u07-l03-q14",
+      "type": "reading",
+      "passageEn": "My father has some good habits. He wakes up at five every morning and takes a cold shower. Then he reads his mail and the news. He is very busy at work, but at night, he never looks at his phone in bed.",
+      "passageZh": "我爸爸有一些好習慣。他每天早上五點醒來，然後洗冷水澡。接著他看信件和新聞。他工作很忙，但晚上他從來不在床上看手機。",
+      "questions": [
+        {
+          "questionZh": "爸爸每天早上幾點醒來？",
+          "options": [
+            "五點",
+            "六點",
+            "七點"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "爸爸晚上從來不做什麼？",
+          "options": [
+            "洗冷水澡",
+            "看新聞",
+            "在床上看手機"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q15",
+      "type": "translate",
+      "promptZh": "我今天很忙，沒有時間。",
+      "hintWords": [
+        "busy"
+      ],
+      "referenceEn": [
+        "I am very busy today. I have no time.",
+        "I'm busy today, and I don't have time."
+      ],
+      "rubricZh": [
+        "「很忙」用 be 動詞＋busy（例如 I am busy）",
+        "「沒有時間」可寫 I have no time、I don't have time、I don't have any time 等"
+      ]
+    },
+    {
+      "id": "a1-u07-l03-q16",
+      "type": "makeSentence",
+      "targetWord": "habit",
+      "instructionZh": "用 habit 造一個句子，說說你的一個好習慣或壞習慣。",
+      "referenceEn": [
+        "I have a good habit. I drink water every morning.",
+        "Eating late at night is my bad habit."
+      ],
+      "rubricZh": [
+        "可說 I have a good／bad habit，或 … is a good／bad habit、My habit is… 等",
+        "習慣的內容可用現在簡單式或動名詞（例如 I drink water…、eating late）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u07-l03-q09": [
+        1
+      ],
+      "a1-u07-l03-q12": [
+        1
+      ],
+      "a1-u07-l03-q13": [
+        3
+      ],
+      "a1-u07-l03-q14#0": [
+        0
+      ],
+      "a1-u07-l03-q14#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長第②③關裁示修正：第③關疑似：釋義不帶英文",
+        "resolution": "改前：\"醒來（wake up）\"；改後：\"醒來\"",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「Taking a shower」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（telephone）",
+        "resolution": "改前：\"The mail comes at ten every day.\"；改後：\"Please answer the telephone.\"",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：S2 目標字補句子情境（telephone）",
+        "resolution": "改前：\"郵件每天十點送來。\"；改後：\"請接一下電話。\"",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「code」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「五點」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/13/questions/1",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「在床上看手機」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「沒有時間」可寫 I have no time 或 I don't have time\"；改後：\"「沒有時間」可寫 I have no time、I don't have time、I don't have any time 等\"",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"可說 I have a good／bad habit，或 … is a good／bad habit\"；改後：\"可說 I have a good／bad habit，或 … is a good／bad habit、My habit is… 等\"",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"習慣的內容可用現在簡單式或動名詞（例如 eating late）\"；改後：\"習慣的內容可用現在簡單式或動名詞（例如 I drink water…、eating late）\"",
+        "resolvedAt": "2026-10-02T11:28:37Z"
+      },
+      {
+        "path": "items/8",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「Taking a shower」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:11Z"
+      },
+      {
+        "path": "items/11",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「wake」由位置 3 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:11Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「code」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:11Z"
+      },
+      {
+        "path": "items/13/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「五點」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:11Z"
+      }
+    ]
+  }
+}

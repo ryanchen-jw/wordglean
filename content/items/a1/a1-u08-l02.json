@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u08-l02",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:40:22Z",
+  "properNouns": [
+    "Saturday"
+  ],
+  "items": [
+    {
+      "id": "a1-u08-l02-q01",
+      "type": "wordCard",
+      "word": "cookie",
+      "exampleEn": "My grandmother makes great cookies.",
+      "exampleZh": "我奶奶做的餅乾很好吃。",
+      "glossZh": "餅乾",
+      "distractorsZh": [
+        "蛋糕",
+        "糖果",
+        "麵包"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q02",
+      "type": "wordCard",
+      "word": "candy",
+      "exampleEn": "Kids love candy.",
+      "exampleZh": "小孩都愛吃糖果。",
+      "glossZh": "糖果",
+      "distractorsZh": [
+        "餅乾",
+        "水果",
+        "冰淇淋"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q03",
+      "type": "wordCard",
+      "word": "sandwich",
+      "exampleEn": "I have a sandwich for lunch.",
+      "exampleZh": "我午餐吃三明治。",
+      "glossZh": "三明治",
+      "distractorsZh": [
+        "漢堡",
+        "披薩",
+        "沙拉"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q04",
+      "type": "wordCard",
+      "word": "pizza",
+      "exampleEn": "Let's have pizza tonight.",
+      "exampleZh": "我們今晚吃披薩吧。",
+      "glossZh": "披薩",
+      "distractorsZh": [
+        "麵包",
+        "漢堡",
+        "三明治"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q05",
+      "type": "wordCard",
+      "word": "delicious",
+      "exampleEn": "This cake is delicious!",
+      "exampleZh": "這個蛋糕好好吃！",
+      "glossZh": "美味的",
+      "distractorsZh": [
+        "難吃的",
+        "便宜的",
+        "很燙的"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q06",
+      "type": "wordCard",
+      "word": "waiter",
+      "exampleEn": "The waiter brings us some water.",
+      "exampleZh": "服務生幫我們拿來一些水。",
+      "glossZh": "（男）服務生",
+      "distractorsZh": [
+        "廚師",
+        "客人",
+        "老闆"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q07",
+      "type": "wordCard",
+      "word": "cafe",
+      "exampleEn": "Let's meet at the cafe near the station.",
+      "exampleZh": "我們在車站附近的咖啡店碰面吧。",
+      "glossZh": "咖啡店",
+      "distractorsZh": [
+        "書店",
+        "銀行",
+        "車站"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q08",
+      "type": "wordCard",
+      "word": "waitress",
+      "exampleEn": "The waitress is very nice.",
+      "exampleZh": "那位女服務生人很好。",
+      "glossZh": "女服務生",
+      "distractorsZh": [
+        "女廚師",
+        "女客人",
+        "女老闆"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "Can I have a cheese sandwich?",
+      "sentenceZh": "可以給我一份起司三明治嗎？"
+    },
+    {
+      "id": "a1-u08-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Excuse me, waiter. Can we have two pizzas, please?",
+      "audioZh": "服務生，不好意思，可以給我們兩個披薩嗎？",
+      "questionZh": "說話者要點什麼？",
+      "options": [
+        "Two sandwiches",
+        "Two pizzas",
+        "Two cookies"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u08-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "The cookies at this cafe are delicious.",
+      "sentenceZh": "這家咖啡店的餅乾很好吃。"
+    },
+    {
+      "id": "a1-u08-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "Don't eat too much candy.",
+      "sentenceZh": "不要吃太多糖果。"
+    },
+    {
+      "id": "a1-u08-l02-q13",
+      "type": "mcq",
+      "stemEn": "The ____ brings our food to the table. He is very nice.",
+      "stemZh": "服務生把我們的食物送到桌上，他人很好。",
+      "options": [
+        "candy",
+        "waitress",
+        "cafe",
+        "waiter"
+      ],
+      "optionGlossZh": [
+        "糖果",
+        "女服務生",
+        "咖啡店",
+        "（男）服務生"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u08-l02-q14",
+      "type": "mcq",
+      "stemEn": "This pizza is ____! Can I have one more piece?",
+      "stemZh": "這個披薩好好吃！我可以再吃一塊嗎？",
+      "options": [
+        "cookie",
+        "cafe",
+        "delicious",
+        "sandwich"
+      ],
+      "optionGlossZh": [
+        "餅乾",
+        "咖啡店",
+        "美味的",
+        "三明治"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u08-l02-q15",
+      "type": "reading",
+      "passageEn": "There is a new cafe on my street. It has sandwiches, pizza, and cookies. The sandwiches are delicious, and the cookies are free with every coffee! The waiter and the waitress are very nice. I go there every Saturday.",
+      "passageZh": "我住的那條街上開了一家新的咖啡店，有三明治、披薩和餅乾。三明治很好吃，而且每買一杯咖啡就送餅乾！男服務生和女服務生都很親切。我每個星期六都去。",
+      "questions": [
+        {
+          "questionZh": "在這家咖啡店，買咖啡會送什麼？",
+          "options": [
+            "餅乾",
+            "三明治",
+            "糖果"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "說話者多久去一次？",
+          "options": [
+            "每天",
+            "每個星期六",
+            "每個月一次"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q16",
+      "type": "translate",
+      "promptZh": "這個三明治很好吃。",
+      "hintWords": [
+        "sandwich",
+        "delicious"
+      ],
+      "referenceEn": [
+        "This sandwich is delicious.",
+        "This sandwich is very good."
+      ],
+      "rubricZh": [
+        "「這個三明治」用 this sandwich",
+        "「很好吃」可用 delicious、very good、tastes good 等"
+      ]
+    },
+    {
+      "id": "a1-u08-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "cafe",
+      "instructionZh": "用 cafe 造一個句子，說說你喜歡的一家咖啡店。",
+      "referenceEn": [
+        "I like the cafe near my office.",
+        "There is a nice cafe on my street."
+      ],
+      "rubricZh": [
+        "cafe 前面加冠詞、所有格或 this／that（例如 a cafe、the cafe、my favorite cafe、this cafe）",
+        "可說咖啡店在哪裡或有什麼好（例如 near my office、has great coffee）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T11:12:37Z",
+    "verdicts": {
+      "a1-u08-l02-q10": [
+        1
+      ],
+      "a1-u08-l02-q13": [
+        3
+      ],
+      "a1-u08-l02-q14": [
+        2
+      ],
+      "a1-u08-l02-q15#0": [
+        0
+      ],
+      "a1-u08-l02-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「delicious」由位置 0 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:43Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：S1 正解位置改以題號雜湊偽亂數決定",
+        "resolution": "正解「餅乾」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T11:28:43Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"「很好吃」可用 delicious、very good 等\"；改後：\"「很好吃」可用 delicious、very good、tastes good 等\"",
+        "resolvedAt": "2026-10-02T11:28:43Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"cafe 前面加冠詞（例如 a cafe、the cafe）\"；改後：\"cafe 前面加冠詞、所有格或 this／that（例如 a cafe、the cafe、my favorite cafe、this cafe）\"",
+        "resolvedAt": "2026-10-02T11:28:43Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點全面自查（點名字詞或句型一律寫成「例如」，並收其他正確結構；不與參考答案矛盾）",
+        "resolution": "改前：\"可說咖啡店在哪裡（例如 near my office、on my street）\"；改後：\"可說咖啡店在哪裡或有什麼好（例如 near my office、has great coffee）\"",
+        "resolvedAt": "2026-10-02T11:28:43Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Saturday\"]；改後：[]",
+        "resolvedAt": "2026-10-02T11:28:43Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「waiter」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:22Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「delicious」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:22Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「每個星期六」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:22Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[]；改後：[\"Saturday\"]",
+        "resolvedAt": "2026-10-02T12:40:22Z"
+      }
+    ]
+  }
+}

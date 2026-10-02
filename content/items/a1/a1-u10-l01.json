@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u10-l01",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:26:20Z",
+  "properNouns": [
+    "Amy",
+    "Saturday"
+  ],
+  "items": [
+    {
+      "id": "a1-u10-l01-q01",
+      "type": "wordCard",
+      "word": "supermarket",
+      "exampleEn": "I buy food at the supermarket.",
+      "exampleZh": "我在超市買食物。",
+      "glossZh": "超市",
+      "distractorsZh": [
+        "書店",
+        "銀行",
+        "餐廳"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q02",
+      "type": "wordCard",
+      "word": "bookstore",
+      "exampleEn": "There is a big bookstore near the station.",
+      "exampleZh": "車站附近有一家大書店。",
+      "glossZh": "書店",
+      "distractorsZh": [
+        "超市",
+        "圖書館",
+        "文具店"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q03",
+      "type": "wordCard",
+      "word": "money",
+      "exampleEn": "I don't have much money.",
+      "exampleZh": "我沒有很多錢。",
+      "glossZh": "錢",
+      "distractorsZh": [
+        "時間",
+        "東西",
+        "衣服"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q04",
+      "type": "wordCard",
+      "word": "pay",
+      "exampleEn": "Can I pay by card?",
+      "exampleZh": "我可以刷卡付款嗎？",
+      "glossZh": "付錢",
+      "distractorsZh": [
+        "借",
+        "找",
+        "賣"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q05",
+      "type": "wordCard",
+      "word": "change",
+      "exampleEn": "Here is your change.",
+      "exampleZh": "這是找您的零錢。",
+      "glossZh": "找回的零錢",
+      "distractorsZh": [
+        "收據",
+        "帳單",
+        "價格"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q06",
+      "type": "wordCard",
+      "word": "spend",
+      "exampleEn": "I spend a lot of money on books.",
+      "exampleZh": "我花很多錢買書。",
+      "glossZh": "花（錢、時間）",
+      "distractorsZh": [
+        "存",
+        "借",
+        "賺"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q07",
+      "type": "wordCard",
+      "word": "buy",
+      "exampleEn": "I want to buy a new bag.",
+      "exampleZh": "我想買一個新包包。",
+      "glossZh": "買",
+      "distractorsZh": [
+        "賣",
+        "借",
+        "換"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q08",
+      "type": "wordCard",
+      "word": "sell",
+      "exampleEn": "This shop sells shoes.",
+      "exampleZh": "這家店賣鞋子。",
+      "glossZh": "賣",
+      "distractorsZh": [
+        "買",
+        "修理",
+        "做"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "How much money do you have?",
+      "sentenceZh": "你有多少錢？"
+    },
+    {
+      "id": "a1-u10-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "This book is ten dollars. Can I pay by card?",
+      "audioZh": "這本書十美元，我可以刷卡嗎？",
+      "questionZh": "這本書多少錢？",
+      "options": [
+        "Ten dollars",
+        "Two dollars",
+        "Twelve dollars"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u10-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "I spend too much money on clothes.",
+      "sentenceZh": "我花太多錢買衣服了。"
+    },
+    {
+      "id": "a1-u10-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "They sell fruit at the supermarket.",
+      "sentenceZh": "超市有賣水果。"
+    },
+    {
+      "id": "a1-u10-l01-q13",
+      "type": "mcq",
+      "stemEn": "This store ____ milk and bread.",
+      "stemZh": "這家店賣牛奶和麵包。",
+      "options": [
+        "sells",
+        "money",
+        "supermarket",
+        "bookstore"
+      ],
+      "optionGlossZh": [
+        "賣",
+        "錢",
+        "超市",
+        "書店"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u10-l01-q14",
+      "type": "mcq",
+      "stemEn": "Here is ten dollars. Please keep the ____.",
+      "stemZh": "這是十美元，零錢不用找了。",
+      "options": [
+        "change",
+        "bookstore",
+        "spend",
+        "sell"
+      ],
+      "optionGlossZh": [
+        "零錢",
+        "書店",
+        "花費",
+        "賣"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u10-l01-q15",
+      "type": "reading",
+      "passageEn": "On Saturday, Amy goes shopping. First, she goes to the supermarket and buys some fruit and milk. Then she goes to a bookstore and buys two books. She pays twenty dollars and gets two dollars in change. Amy spends a lot of money every Saturday.",
+      "passageZh": "星期六，Amy 去購物。她先去超市買了一些水果和牛奶，然後到書店買了兩本書。她付了二十美元，找回兩美元。Amy 每個星期六都花很多錢。",
+      "questions": [
+        {
+          "questionZh": "Amy 在超市買了什麼？",
+          "options": [
+            "麵包和蛋",
+            "兩本書",
+            "水果和牛奶"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "Amy 找回多少零錢？",
+          "options": [
+            "二十美元",
+            "兩美元",
+            "十美元"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q16",
+      "type": "translate",
+      "promptZh": "我想買這本書。",
+      "hintWords": [
+        "buy"
+      ],
+      "referenceEn": [
+        "I want to buy this book.",
+        "I'd like to buy this book."
+      ],
+      "rubricZh": [
+        "「想買」可用 want to buy、would like to buy 等",
+        "「這本書」用 this book"
+      ]
+    },
+    {
+      "id": "a1-u10-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "spend",
+      "instructionZh": "用 spend 造一個句子，說說你把錢或時間花在什麼上。",
+      "referenceEn": [
+        "I spend a lot of money on food.",
+        "I spend two hours on homework every day."
+      ],
+      "rubricZh": [
+        "「花錢（時間）在⋯上」可用 spend … on（例如 spend money on food）",
+        "也可用 spend＋時間＋動名詞（例如 spend two hours cooking）",
+        "時態配合內容"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T12:21:28Z",
+    "verdicts": {
+      "a1-u10-l01-q10": [
+        0
+      ],
+      "a1-u10-l01-q13": [
+        0
+      ],
+      "a1-u10-l01-q14": [
+        0
+      ],
+      "a1-u10-l01-q15#0": [
+        2
+      ],
+      "a1-u10-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：\"這本書十美元，我可以刷卡嗎？\"；改後：\"這本書十元，我可以刷卡嗎？\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「sells」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「change」由位置 3 移到 0（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：\"這是十美元，零錢不用找了。\"；改後：\"這是十元，零錢不用找了。\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：\"星期六，Amy 去購物。她先去超市買了一些水果和牛奶，然後到書店買了兩本書。她付了二十美元，找回兩美元。Amy 每個星期六都花很多錢。\"；改後：\"星期六，Amy 去購物。她先去超市買了一些水果和牛奶，然後到書店買了兩本書。她付了二十元，找回兩元。Amy 每個星期六都花很多錢。\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
+        "resolution": "正解「水果和牛奶」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/questions/1/questionZh",
+        "message": "執行長第②③關裁示修正：第②關：題目不寫死「在書店」",
+        "resolution": "改前：\"Amy 在書店找回多少零錢？\"；改後：\"Amy 找回多少零錢？\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：\"兩美元\"；改後：\"二十元\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：\"二十美元\"；改後：\"兩元\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：\"十美元\"；改後：\"十元\"",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/14/questions/1/answer",
+        "message": "執行長第②③關裁示修正：第③關建議：台灣情境的價格中譯不加「美」",
+        "resolution": "改前：0；改後：1",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
+        "resolution": "改前：[\"Amy\"]；改後：[\"Amy\",\"Saturday\"]",
+        "resolvedAt": "2026-10-02T12:40:58Z"
+      },
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長最終複審修正：FIX#3 u10 價格中譯改回「美元」，與單字卡釋義「元（美元）」一致、金額量級合理",
+        "resolution": "改前：\"這本書十元，我可以刷卡嗎？\"；改後：\"這本書十美元，我可以刷卡嗎？\"",
+        "resolvedAt": "2026-10-02T13:26:20Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長最終複審修正：FIX#3 u10 價格中譯改回「美元」，與單字卡釋義「元（美元）」一致、金額量級合理",
+        "resolution": "改前：\"這是十元，零錢不用找了。\"；改後：\"這是十美元，零錢不用找了。\"",
+        "resolvedAt": "2026-10-02T13:26:20Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長最終複審修正：FIX#3 u10 價格中譯改回「美元」，與單字卡釋義「元（美元）」一致、金額量級合理",
+        "resolution": "改前：\"星期六，Amy 去購物。她先去超市買了一些水果和牛奶，然後到書店買了兩本書。她付了二十元，找回兩元。Amy 每個星期六都花很多錢。\"；改後：\"星期六，Amy 去購物。她先去超市買了一些水果和牛奶，然後到書店買了兩本書。她付了二十美元，找回兩美元。Amy 每個星期六都花很多錢。\"",
+        "resolvedAt": "2026-10-02T13:26:20Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長最終複審修正：FIX#3 u10 價格中譯改回「美元」，與單字卡釋義「元（美元）」一致、金額量級合理",
+        "resolution": "改前：\"二十元\"；改後：\"二十美元\"",
+        "resolvedAt": "2026-10-02T13:26:20Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長最終複審修正：FIX#3 u10 價格中譯改回「美元」，與單字卡釋義「元（美元）」一致、金額量級合理",
+        "resolution": "改前：\"兩元\"；改後：\"兩美元\"",
+        "resolvedAt": "2026-10-02T13:26:20Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長最終複審修正：FIX#3 u10 價格中譯改回「美元」，與單字卡釋義「元（美元）」一致、金額量級合理",
+        "resolution": "改前：\"十元\"；改後：\"十美元\"",
+        "resolvedAt": "2026-10-02T13:26:20Z"
+      }
+    ]
+  }
+}
