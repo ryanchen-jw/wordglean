@@ -54,10 +54,19 @@ export function LessonHeader({
   )
 }
 
-export function LessonMain({ children }: { children: ReactNode }) {
+export function LessonMain({
+  children,
+  center,
+}: {
+  children: ReactNode
+  /** 設計 s04 跟讀：題目卡垂直置中 */
+  center?: boolean
+}) {
   // auto-rows-max：內容超過畫面時整區捲動，不把自己會捲的閱讀卡壓到最小（320 特大字級實測）
   return (
-    <main className="grid min-h-0 flex-1 auto-rows-max grid-cols-[minmax(0,1fr)] content-start gap-3 overflow-y-auto px-5 pt-1 pb-5">
+    <main
+      className={`grid min-h-0 flex-1 auto-rows-max grid-cols-[minmax(0,1fr)] ${center ? 'content-center' : 'content-start'} gap-3 overflow-y-auto px-5 pt-1 pb-5`}
+    >
       {children}
     </main>
   )

@@ -56,6 +56,14 @@ export interface ListenTypeItem {
   sentenceZh: string
 }
 
+/** 跟讀（設計 s04、TASK-14）：唸出英文句，轉文字後與目標句逐字比對 */
+export interface ShadowingItem {
+  id: string
+  type: 'shadowing'
+  sentenceEn: string
+  sentenceZh: string
+}
+
 /** 聽音選答：播放 audioEn，繁中提問、英文選項（設計 s03） */
 export interface ListenChoiceItem {
   id: string
@@ -67,14 +75,23 @@ export interface ListenChoiceItem {
   answer: number
 }
 
-/** 尚未支援的題型（說寫，TASK-14～15）：引擎只看 id 與 type */
+/** 尚未支援的題型（寫，TASK-15）：引擎只看 id 與 type */
 export interface OtherItem {
   id: string
-  type: Exclude<ItemType, 'wordCard' | 'mcq' | 'reading' | 'listenType' | 'listenChoice'>
+  type: Exclude<
+    ItemType,
+    'wordCard' | 'mcq' | 'reading' | 'listenType' | 'listenChoice' | 'shadowing'
+  >
 }
 
 export type LessonItem =
-  WordCardItem | McqItem | ReadingItem | ListenTypeItem | ListenChoiceItem | OtherItem
+  | WordCardItem
+  | McqItem
+  | ReadingItem
+  | ListenTypeItem
+  | ListenChoiceItem
+  | ShadowingItem
+  | OtherItem
 
 export interface LessonItemsDoc {
   schemaVersion: 1

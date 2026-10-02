@@ -24,7 +24,8 @@ export default defineConfig({
     // 不重用既有 server：埠被別人占用時直接失敗，避免打到別的 checkout
     reuseExistingServer: false,
     // 小課 e2e（TASK-12）：題目來源換成樣本課 fixture（正式建置只讀 content/items）
-    env: { VITE_ITEM_FIXTURES: 'true' },
+    // 跟讀（TASK-14）固定不可用：兩引擎都走 TASK-18「無 STT」替代路徑；跟讀另由 playwright.speech.config.ts 驗
+    env: { VITE_ITEM_FIXTURES: 'true', VITE_E2E_STT: 'off' },
     timeout: 120_000,
   },
 })

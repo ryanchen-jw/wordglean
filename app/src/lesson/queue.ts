@@ -7,6 +7,7 @@ import type {
   ListenTypeItem,
   McqItem,
   ReadingItem,
+  ShadowingItem,
   WordCardItem,
 } from './items'
 
@@ -154,6 +155,16 @@ export const listenChoiceType = defineItemType<ListenChoiceItem>({
 
 /** 聽類兩題型（TASK-13）；只計分、不寫 FSRS（TASK-12 D2） */
 export const LISTEN_TYPES: readonly ItemTypeDef[] = [listenTypeType, listenChoiceType]
+
+/** 跟讀（TASK-14）：只計分、不寫 FSRS */
+export const shadowingType = defineItemType<ShadowingItem>({
+  type: 'shadowing',
+  isValid: (it) => nonEmpty(it.sentenceEn) && /[a-z0-9]/i.test(it.sentenceEn),
+  toSteps: (it) => [{ key: it.id, itemId: it.id, type: 'shadowing', srsWord: null }],
+})
+
+/** 說類題型（TASK-14） */
+export const SPEAK_TYPES: readonly ItemTypeDef[] = [shadowingType]
 
 /** 依題目檔順序產生作答步驟；穿插排序屬 TASK-18 */
 export function buildQueue(

@@ -5,6 +5,7 @@ import { ListenChoiceView } from './ListenChoiceView'
 import { ListenTypeView } from './ListenTypeView'
 import { McqView } from './McqView'
 import { ReadingView } from './ReadingView'
+import { ShadowingView } from './ShadowingView'
 import type { QuestionProps } from './types'
 import { WordCardView } from './WordCardView'
 
@@ -14,4 +15,5 @@ export const QUESTION_VIEWS: Partial<Record<ItemType, ComponentType<QuestionProp
   reading: ReadingView as ComponentType<QuestionProps>,
   listenType: ListenTypeView as ComponentType<QuestionProps>,
   listenChoice: ListenChoiceView as ComponentType<QuestionProps>,
+  shadowing: ShadowingView as ComponentType<QuestionProps>,
 }

@@ -1,5 +1,5 @@
 // 單字池、作答紀錄、設定的讀寫；時間參數一律 UTC epoch ms，時區只在算「今天」時傳入
-import type { LinguaDb, OutboxEntry, PoolWord, Settings } from './db'
+import type { LinguaDb, OutboxEntry, PoolWord, Settings, SpeechCorrection } from './db'
 import { CardState, createScheduler, DEFAULT_RETENTION, type Grade } from '../srs/scheduler'
 import { dayBoundsUtc, deviceTimeZone, localDayKey, newWordQuota } from '../srs/daily'
 
@@ -106,6 +106,19 @@ export async function recordReview(
     await db.reviewLogs.add({ id, wordId, ...log })
     await enqueue(db, 'wordPool', wordId)
     await enqueue(db, 'reviewLogs', id)
+  })
+}
+
+/** 跟讀每次送出記一筆：辨識原文與送出句（規格 §6：差異留作評估辨識準確度，不影響計分） */
+export async function addSpeechCorrection(
+  db: LinguaDb,
+  entry: Omit<SpeechCorrection, 'id' | 'createdAt'>,
+  nowMs: number,
+): Promise<void> {
+  const id = crypto.randomUUID()
+  await db.transaction('rw', db.speechCorrections, db.outbox, async () => {
+    await db.speechCorrections.add({ id, ...entry, createdAt: nowMs })
+    await enqueue(db, 'speechCorrections', id)
   })
 }
 

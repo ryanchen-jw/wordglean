@@ -5,19 +5,20 @@ React＋Vite＋TypeScript＋TailwindCSS；PWA 由 vite-plugin-pwa 產生 service
 
 ## 指令（皆在 `app/` 下執行）
 
-| 指令                | 用途                                                                                                               |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `npm ci`            | 安裝依賴（worktree 內各自安裝，禁 junction／symlink 連主 checkout 的 node_modules）                                |
-| `npm run dev`       | dev server，固定埠 **5287**（strictPort，被占用直接失敗）                                                          |
-| `npm run build`     | typecheck＋產出 `dist/`（含 `sw.js`、`manifest.webmanifest`）                                                      |
-| `npm run preview`   | 以 build 產物起 server，固定埠 **5288**（strictPort）                                                              |
-| `npm run lint`      | ESLint＋Prettier 檢查                                                                                              |
-| `npm run format`    | Prettier 自動排版                                                                                                  |
-| `npm run typecheck` | `tsc -b`（app／node／e2e 三份 tsconfig）                                                                           |
-| `npm test`          | Vitest 單元測試（jsdom）                                                                                           |
-| `npm run e2e`       | Playwright 手機模擬 e2e（自動 build＋preview）；`E2E_PORT` 可改埠                                                  |
-| `npm run e2e:sync`  | 登入與同步 e2e（含結算後同步）＋登入畫面視覺 smoke（需本機 Supabase，跑法見 `playwright.sync.config.ts`；不進 CI） |
-| `npm run e2e:tts`   | 高音質發音真模型測試（下載約 310MB、需 WebGPU 與空閒記憶體 ≥3GB，見 `playwright.tts.config.ts`；不進 CI）          |
+| 指令                                                       | 用途                                                                                                                        |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `npm ci`                                                   | 安裝依賴（worktree 內各自安裝，禁 junction／symlink 連主 checkout 的 node_modules）                                         |
+| `npm run dev`                                              | dev server，固定埠 **5287**（strictPort，被占用直接失敗）                                                                   |
+| `npm run build`                                            | typecheck＋產出 `dist/`（含 `sw.js`、`manifest.webmanifest`）                                                               |
+| `npm run preview`                                          | 以 build 產物起 server，固定埠 **5288**（strictPort）                                                                       |
+| `npm run lint`                                             | ESLint＋Prettier 檢查                                                                                                       |
+| `npm run format`                                           | Prettier 自動排版                                                                                                           |
+| `npm run typecheck`                                        | `tsc -b`（app／node／e2e 三份 tsconfig）                                                                                    |
+| `npm test`                                                 | Vitest 單元測試（jsdom）                                                                                                    |
+| `npm run e2e`                                              | Playwright 手機模擬 e2e（自動 build＋preview）；`E2E_PORT` 可改埠                                                           |
+| `npm run e2e:sync`                                         | 登入與同步 e2e（含結算後同步）＋登入畫面視覺 smoke（需本機 Supabase，跑法見 `playwright.sync.config.ts`；不進 CI）          |
+| `npm run e2e:tts`                                          | 高音質發音真模型測試（下載約 310MB、需 WebGPU 與空閒記憶體 ≥3GB，見 `playwright.tts.config.ts`；不進 CI）                   |
+| `npx playwright test --config playwright.speech.config.ts` | 跟讀 e2e：s04 視覺 smoke（假辨識）＋真模型整合測試（`--project=chromium-stt-real`，會自 Hugging Face 下載約 52MB；不進 CI） |
 
 首次跑 e2e 前：`npx playwright install webkit chromium`（CI 用 `--with-deps`）。
 
@@ -41,9 +42,11 @@ app/
 │   │                    字典切片（data/dict）與單字總表（data/lexicon）以獨立 json 資產預快取、不內嵌進 bundle
 │   ├── curriculum/      課綱型別與查詢；課綱檔以獨立 json 資產載入（不併進程式碼 bundle）
 │   ├── data/            Dexie 資料層、appDb.ts（App 唯一 db 實例）、匯出／清除
-│   ├── download/        模型下載狀態型別與進度元件（高音質發音已接真下載；語音辨識待 TASK-14）
+│   ├── download/        模型下載狀態型別與進度元件（高音質發音、語音辨識皆已接真下載）
 │   ├── speech/          發音服務（TASK-13）：speak.ts＝App 唯一發音入口；預設手機內建聲音，高音質（Kokoro 選配，
-│   │                    kokoro.worker.ts、僅 WebGPU）失敗自動退回並提示
+│   │                    kokoro.worker.ts、僅 WebGPU）失敗自動退回並提示。
+│   │                    跟讀（TASK-14）：逐字比對 align.ts、Moonshine Worker（stt*.ts）、錄音與權限 mic.ts、
+│   │                    Web Speech 後備 webSpeech.ts（需同意）；畫面經 services.ts 的 SpeechContext 取用
 │   ├── auth/、sync/     登入與同步（TASK-20）；帳號區塊掛在設定頁 AccountSection
 │   ├── ui/              Button、Card、BottomSheet、OptionSheet、ChoiceOption、FeedbackBar、ConfirmDialog、Toast
 │   ├── index.css        Tailwind 進入點（tailwindcss＋design/tokens.css＋design/theme.css）
@@ -53,6 +56,7 @@ app/
 │   └── test/setup.ts    Vitest 共用設定（jest-dom matchers）
 ├── e2e/                 Playwright 測試
 ├── e2e-sync/            需本機 Supabase 的 e2e（TASK-20 登入同步）
+├── e2e-speech/          跟讀 e2e（TASK-14）；fixtures/librispeech 為 CC BY 4.0 測試音檔（不隨 app 散布，見 NOTICE）
 ├── public/icons/        PWA 佔位圖示（192／512，TASK-3 後替換）
 ├── vite.config.ts       Vite＋Tailwind＋PWA＋Vitest 設定、dev／preview 埠
 ├── playwright.config.ts 兩個手機 project 與 webServer

@@ -36,7 +36,7 @@ export interface CourseProgress {
   updatedAt: number
 }
 
-/** 跟讀修正：分數以辨識結果為準，使用者修正只標記「模型聽錯」（規格 §6） */
+/** 跟讀紀錄：每次送出一筆；recognizedText＝辨識原文、correctedText＝使用者送出的句子（分數以送出句為準，規格 §6 G2） */
 export interface SpeechCorrection {
   id: string
   itemId: string

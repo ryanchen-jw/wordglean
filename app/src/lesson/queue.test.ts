@@ -7,6 +7,7 @@ import {
   defineItemType,
   LISTEN_TYPES,
   READ_TYPES,
+  SPEAK_TYPES,
   type Step,
 } from './queue'
 import { loadFixture } from './testFixtures'
@@ -211,5 +212,55 @@ describe('題目佇列（AC#1）', () => {
     )
     expect(steps.map((s) => s.key)).toContain('a1-u01-l01-q09')
     expect(skipped.map((s) => s.itemId)).not.toContain('a1-u01-l01-q09')
+  })
+})
+
+describe('跟讀題型（TASK-14）', () => {
+  const doc = (items: LessonItemsDoc['items']): LessonItemsDoc => ({
+    schemaVersion: 1,
+    lessonId: 'x',
+    level: 'a1',
+    items,
+  })
+  const registry = createRegistry([...READ_TYPES, ...SPEAK_TYPES])
+
+  it('一題一步、只計分不寫 FSRS（srsWord＝null）、沒有選項', () => {
+    const { steps, skipped } = buildQueue(
+      doc([
+        {
+          id: 's1',
+          type: 'shadowing',
+          sentenceEn: 'I have a cup of tea.',
+          sentenceZh: '我有一杯茶。',
+        },
+      ]),
+      registry,
+    )
+    expect(skipped).toEqual([])
+    expect(steps).toEqual<Step[]>([{ key: 's1', itemId: 's1', type: 'shadowing', srsWord: null }])
+  })
+
+  it('目標句空白或沒有任何英數字＝欄位不全，略過', () => {
+    const { steps, skipped } = buildQueue(
+      doc([
+        { id: 's1', type: 'shadowing', sentenceEn: '  ', sentenceZh: '' },
+        { id: 's2', type: 'shadowing', sentenceEn: '…?', sentenceZh: '' },
+      ]),
+      registry,
+    )
+    expect(steps).toEqual([])
+    expect(skipped).toEqual([
+      { itemId: 's1', type: 'shadowing', reason: 'invalid' },
+      { itemId: 's2', type: 'shadowing', reason: 'invalid' },
+    ])
+  })
+
+  it('樣本課 A1：兩題跟讀接在單字卡之後，整課 14 步', () => {
+    const { steps } = buildQueue(loadFixture('a1-u01-l01'), registry)
+    expect(steps).toHaveLength(14)
+    expect(steps.slice(8, 10).map((s) => [s.key, s.type])).toEqual([
+      ['a1-u01-l01-q11', 'shadowing'],
+      ['a1-u01-l01-q12', 'shadowing'],
+    ])
   })
 })

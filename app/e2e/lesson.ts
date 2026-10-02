@@ -11,6 +11,8 @@ interface Pick {
   check: boolean
   /** 聽音打字：正解要打的句子（答錯時改打 WRONG_TYPED） */
   typed?: string
+  /** 跟讀（stt＝true 時才在佇列裡）：目標句 */
+  shadowing?: string
 }
 
 export const WRONG_TYPED = 'x'
@@ -42,11 +44,12 @@ const rest = (opts: string[], answer: number) => [
 ]
 
 // 依題目檔算出每一步的正解與錯誤選項；與引擎無關（直接讀 fixture）。
-// 出題順序照 TASK-18 穿插規則：單字卡在前，其餘聽→說→讀→寫每輪各出一題（本 App 目前登記聽、讀）；
-// 能力替代（capabilities.ts）：語音辨識尚未接上（TASK-14），跟讀一律換成聽音打字；tts＝false（手機不能播音）時聽類題整題略過
-export const stepsOf = (lessonId: string, { tts = true } = {}): Pick[] => {
+// 出題順序照 TASK-18 穿插規則：單字卡在前，其餘聽→說→讀→寫每輪各出一題（本 App 登記聽、說、讀）；
+// 能力替代（capabilities.ts）：stt＝false（不能跟讀）時跟讀換成聽音打字；tts＝false（手機不能播音）時聽類題整題略過。
+// e2e 主套件建置固定 STT 不可用（playwright.config 的 VITE_E2E_STT=off），所以預設 stt＝false；跟讀在 e2e-speech 驗
+export const stepsOf = (lessonId: string, { tts = true, stt = false } = {}): Pick[] => {
   const items = readFixture(lessonId).items.map((it) =>
-    it.type === 'shadowing' ? { ...it, type: 'listenType' } : it,
+    it.type === 'shadowing' && !stt ? { ...it, type: 'listenType' } : it,
   )
   const toSteps = (it: FixtureDoc['items'][number]): Pick[] => {
     if (it.type === 'wordCard')
@@ -54,12 +57,13 @@ export const stepsOf = (lessonId: string, { tts = true } = {}): Pick[] => {
     if (it.type === 'mcq' || it.type === 'listenChoice')
       return [{ options: rest(it.options!, it.answer!), check: true }]
     if (it.type === 'listenType') return [{ options: [], check: true, typed: it.sentenceEn! }]
+    if (it.type === 'shadowing') return [{ options: [], check: false, shadowing: it.sentenceEn! }]
     if (it.type === 'reading')
       return it.questions!.map((q) => ({ options: rest(q.options, q.answer), check: true }))
     return []
   }
-  const groups = [tts ? ['listenType', 'listenChoice'] : [], ['mcq', 'reading']].map((types) =>
-    items.filter((it) => types.includes(it.type)),
+  const groups = [tts ? ['listenType', 'listenChoice'] : [], ['shadowing'], ['mcq', 'reading']].map(
+    (types) => items.filter((it) => types.includes(it.type)),
   )
   const out = items.filter((it) => it.type === 'wordCard').flatMap(toSteps)
   for (let round = 0; groups.some((g) => round < g.length); round++)

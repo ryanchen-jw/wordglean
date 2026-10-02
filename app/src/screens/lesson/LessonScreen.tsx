@@ -5,12 +5,19 @@ import { levelOfLessonId } from '../../curriculum/curriculum'
 import { useLevelDoc } from '../../curriculum/load'
 import { db as appDb } from '../../data/appDb'
 import type { LinguaDb } from '../../data/db'
+import { addSpeechCorrection } from '../../data/repo'
 import { t } from '../../i18n/t'
 import type { LessonItem, LessonItemsDoc } from '../../lesson/items'
 import { loadLessonItems } from '../../lesson/load'
 import { buildLessonQueue } from '../../lesson/assemble'
 import { detectCapabilities, type Capabilities } from '../../lesson/capabilities'
-import { createRegistry, LISTEN_TYPES, READ_TYPES, type Step } from '../../lesson/queue'
+import {
+  createRegistry,
+  LISTEN_TYPES,
+  READ_TYPES,
+  SPEAK_TYPES,
+  type Step,
+} from '../../lesson/queue'
 import { currentKey, type LessonRun } from '../../lesson/run'
 import {
   answerStep,
@@ -20,6 +27,7 @@ import {
   type SettleSummary,
 } from '../../lesson/session'
 import { goBack, navigate } from '../../router'
+import { useSpeech } from '../../speech/services'
 import { ttsAvailable } from '../../speech/speak'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
@@ -28,7 +36,7 @@ import { LessonDone } from './LessonDone'
 import { LessonHeader, LessonMain, lessonFrameCls } from './frame'
 import { QUESTION_VIEWS } from './views'
 
-const registry = createRegistry([...READ_TYPES, ...LISTEN_TYPES])
+const registry = createRegistry([...READ_TYPES, ...LISTEN_TYPES, ...SPEAK_TYPES])
 
 type Props = {
   lessonId: string
@@ -61,6 +69,11 @@ export function LessonScreen({
   const saving = useRef<Promise<LessonRun> | null>(null)
   const shownAt = useRef(0)
   const levelDoc = useLevelDoc(levelOfLessonId(lessonId))
+  const speech = useSpeech()
+
+  // 這一課有跟讀題：整課期間留著語音辨識 Worker，離開小課才釋放（分時載入，TASK-14）
+  const hasShadowing = phase.kind === 'play' && phase.steps.some((s) => s.type === 'shadowing')
+  useEffect(() => (hasShadowing ? speech.stt.acquire() : undefined), [hasShadowing, speech])
 
   const finish = useCallback(
     async (run: LessonRun, steps: Step[]) => {
@@ -83,7 +96,7 @@ export function LessonScreen({
       const { steps, skipped, changes } = buildLessonQueue(
         doc,
         registry,
-        capabilities ?? detectCapabilities(ttsAvailable),
+        capabilities ?? detectCapabilities(ttsAvailable, speech.sttUsable),
       )
       // 能力不足的替代、未支援的題型（聽說寫，TASK-13～15）略過；記錄供除錯
       if (changes.length) console.info('[lesson] 能力替代', changes)
@@ -166,10 +179,16 @@ export function LessonScreen({
       step,
       { correct, usedHint, elapsedMs: at - shownAt.current },
       at,
-    ).then((next) => {
-      setPhase({ ...phase, run: next })
-      return next
-    })
+    )
+      .then((next) => {
+        setPhase({ ...phase, run: next })
+        return next
+      })
+      // 存檔失敗（或重複作答）不可讓整課卡住：記錄後退回目前進度，「繼續」與 ✕ 照常可用
+      .catch((e: unknown) => {
+        console.error('[lesson] 作答存檔失敗', e)
+        return run
+      })
   }
 
   const onContinue = async () => {
@@ -180,6 +199,9 @@ export function LessonScreen({
       saving.current = null
       if (saved.cursor === steps.length - 1) await finish(saved, steps)
       else setPhase({ ...phase, run: await continueRun(db, saved, now()) })
+    } catch (e) {
+      // 例：這題的作答沒存成功（advance 拒絕）；留在這題，✕ 仍可離開
+      console.error('[lesson] 無法前進到下一題', e)
     } finally {
       busy.current = false
     }
@@ -209,6 +231,19 @@ export function LessonScreen({
         step={step}
         onAnswer={onAnswer}
         onContinue={onContinue}
+        onSpeech={({ recognized, submitted }) => {
+          const it = items.get(step.itemId)!
+          addSpeechCorrection(
+            db,
+            {
+              itemId: step.itemId,
+              targetText: 'sentenceEn' in it ? it.sentenceEn : '',
+              recognizedText: recognized,
+              correctedText: submitted,
+            },
+            now(),
+          ).catch((e: unknown) => console.error('[lesson] 跟讀紀錄寫入失敗', e))
+        }}
       />
       {leaving && (
         <ConfirmDialog

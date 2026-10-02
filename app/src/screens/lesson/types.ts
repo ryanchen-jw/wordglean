@@ -8,6 +8,8 @@ export interface QuestionProps<I extends LessonItem = LessonItem> {
   step: Step
   onAnswer: (answer: { correct: boolean; usedHint: boolean }) => void
   onContinue: () => void
+  /** 跟讀每次送出（TASK-14）：辨識原文與送出句，由小課畫面寫入紀錄 */
+  onSpeech?: (entry: { recognized: string; submitted: string }) => void
 }
 
 export const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']

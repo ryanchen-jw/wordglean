@@ -59,16 +59,18 @@ export function applyCapabilities(
 }
 
 /**
- * 目前裝置的能力；STT（TASK-14）與金鑰（TASK-15）併入前固定不可用。
- * TTS 由呼叫端傳入發音服務的判斷（speech/speak.ts ttsAvailable：內建聲音或已下載的高音質，TASK-13）；
- * 本檔不直接 import 發音服務，保持純邏輯（node 環境的單元測試也能載入）
+ * 目前裝置的能力；金鑰（TASK-15）併入前固定不可用。
+ * TTS、STT 由呼叫端傳入服務的判斷（speech/speak.ts ttsAvailable：內建聲音或已下載的高音質，TASK-13；
+ * speech/services.ts sttUsable：能錄音且能跑本機辨識、或已同意瀏覽器語音辨識，TASK-14）；
+ * 本檔不直接 import 語音服務，保持純邏輯（node 環境的單元測試也能載入）
  */
 export function detectCapabilities(
   ttsAvailable: () => boolean = () => typeof window !== 'undefined' && 'speechSynthesis' in window,
+  sttUsable: () => boolean = () => false,
 ): Capabilities {
   return {
     tts: ttsAvailable(),
-    stt: false,
+    stt: sttUsable(),
     llmKey: false,
   }
 }

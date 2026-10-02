@@ -14,6 +14,7 @@ import { useDownloadStatus, type DownloadId } from '../../download/download'
 import { t, type MessageKey } from '../../i18n/t'
 import { navigate } from '../../router'
 import { clearPrefs, usePrefs, type Prefs } from '../../shell/prefs'
+import { stt } from '../../speech/stt'
 import { SubScreen } from '../../shell/Screen'
 import { hqVoice } from '../../speech/speak'
 import type { VoiceChoice } from '../../speech/hqVoice'
@@ -140,8 +141,8 @@ export function SettingsScreen() {
     if (v === 'hq' && hqStatus.kind !== 'downloaded') setConfirmHq(true)
     else hqVoice.setChoice(v)
   }
-  // 骨架：語音辨識的真下載由 TASK-14 接上，先導到「尚未開放」
-  const sttStart = () => navigate('/models')
+  // 語音辨識（TASK-14）：在這裡直接下載（下載完就釋放，不常駐記憶體）
+  const sttStart = () => void stt.load().catch(() => undefined)
 
   const exportNow = async () => {
     const nowMs = Date.now()

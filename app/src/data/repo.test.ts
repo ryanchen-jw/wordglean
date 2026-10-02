@@ -5,6 +5,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { createDb, type LinguaDb } from './db'
 import {
   addFavorite,
+  addSpeechCorrection,
   addFromCourse,
   completeLesson,
   countDue,
@@ -297,5 +298,30 @@ describe('完成小課（TASK-12）', () => {
       completedAt: T,
       updatedAt: T + 5 * MIN,
     })
+  })
+})
+
+describe('跟讀紀錄（TASK-14）', () => {
+  it('每次送出記一筆辨識原文與送出句（uuid、時間），並排入同步佇列', async () => {
+    const T = Date.parse('2026-10-02T08:00:00Z')
+    const entry = {
+      itemId: 'a1-u01-l01-q11',
+      targetText: 'I have a cup of tea.',
+      recognizedText: 'I have a cap of tea',
+      correctedText: 'I have a cup of tea',
+    }
+    await addSpeechCorrection(db, entry, T)
+    await addSpeechCorrection(db, { ...entry, correctedText: 'I have a cap of tea' }, T + 1)
+    const rows = await db.speechCorrections.orderBy('createdAt').toArray()
+    expect(rows).toEqual([
+      { id: expect.any(String), ...entry, createdAt: T },
+      { id: expect.any(String), ...entry, correctedText: 'I have a cap of tea', createdAt: T + 1 },
+    ])
+    expect(rows[0].id).toMatch(/^[0-9a-f-]{36}$/)
+    expect(rows[0].id).not.toBe(rows[1].id)
+    expect(await db.outbox.toArray()).toEqual([
+      { seq: 1, table: 'speechCorrections', key: rows[0].id },
+      { seq: 2, table: 'speechCorrections', key: rows[1].id },
+    ])
   })
 })

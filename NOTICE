@@ -60,4 +60,17 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
   - phonemizer 1.2.1（npm 標 Apache-2.0）：https://github.com/xenova/phonemizer.js——內含編譯成 WebAssembly 的 eSpeak NG
   - eSpeak NG（GPL-3.0-or-later）：https://github.com/espeak-ng/espeak-ng——經 phonemizer 隨程式散布；GPL-3.0 與本專案 AGPL-3.0 相容（AGPL-3.0 第 13 條）
   - 模型 Kokoro-82M（Apache-2.0）：https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX——不隨程式散布，使用者下載時直接取自 Hugging Face
+- 語音辨識（跟讀，TASK-14；Moonshine 在瀏覽器 Worker 執行，app/src/speech/stt.worker.ts）：
+  - 與高音質發音共用上列 @huggingface/transformers 3.8.1 與 onnxruntime-web 的 wasm
+  - moonshine-web 範例（Apache-2.0）：https://github.com/huggingface/transformers.js-examples/tree/main/moonshine-web——
+    app/src/speech/sttEngine.ts 改寫自其 worker（裝置偵測、依裝置分精度、暖機、推論鏈）
+  - 模型 Moonshine tiny（MIT，Useful Sensors）ONNX 版 onnx-community/moonshine-tiny-ONNX——不隨程式散布，
+    使用者第一次跟讀時直接取自 Hugging Face、存在本機快取
 - 其餘 npm 相依套件的授權見 app/package-lock.json 與各套件自身的授權檔
+
+== 測試資料（不隨 app 散布）==
+
+- LibriSpeech ASR corpus（Vassil Panayotov, Guoguo Chen, Daniel Povey, Sanjeev Khudanpur）
+  授權：CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）；語料出處 https://www.openslr.org/12
+  使用範圍：app/e2e-speech/fixtures/librispeech/（test-clean 前 10 句，說話者 6930、章節 75918）——語音辨識整合測試的預錄音檔
+  修改：FLAC 以 ffmpeg 轉成 16 kHz、單聲道、16-bit WAV；內容未剪輯（同 prototypes/voice-poc/fixtures/librispeech）

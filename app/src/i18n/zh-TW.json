@@ -52,6 +52,19 @@
     "review.frame.count",
     "review.frame.progress",
     "settings.voice.ttsHqValue",
+    "speak.download.bodyIdle",
+    "speak.download.titleIdle",
+    "speak.fallback.accept",
+    "speak.fallback.body",
+    "speak.fallback.decline",
+    "speak.fallback.offer",
+    "speak.fallback.title",
+    "speak.question.busyWeb",
+    "speak.question.failed",
+    "speak.question.preparing",
+    "speak.question.unsupported",
+    "speak.result.almost",
+    "speak.result.missing",
     "stub.page.backHome",
     "stub.page.body",
     "stub.page.title",
@@ -488,7 +501,11 @@
       "busy": "轉文字中…（錄音不會上傳）",
       "target": "目標句",
       "retry": "再唸一次",
-      "submit": "送出"
+      "submit": "送出",
+      "preparing": "語音辨識準備中…",
+      "failed": "錄音或轉文字失敗，請再唸一次",
+      "unsupported": "這個瀏覽器無法錄音",
+      "busyWeb": "轉文字中…（錄音會傳送到瀏覽器廠商伺服器）"
     },
     "confirm": {
       "label": "你唸的句子（辨識結果，聽錯的地方可以直接改）",
@@ -496,7 +513,9 @@
     },
     "result": {
       "label": "你送出的句子",
-      "score": "錯字 {wrong}・漏字 {missing}・得分 {score}／{total} 字"
+      "score": "錯字 {wrong}・漏字 {missing}・得分 {score}／{total} 字",
+      "almost": "差一點：",
+      "missing": "漏字"
     },
     "denied": {
       "aria": "麥克風未允許",
@@ -507,7 +526,16 @@
     "download": {
       "aria": "語音辨識模型下載中，暫時無法錄音",
       "hint": "模型下載完才能錄音",
-      "skip": "先跳過這題"
+      "skip": "先跳過這題",
+      "titleIdle": "需要下載語音辨識模型",
+      "bodyIdle": "約 50–80MB，只需下載一次，之後不用網路也能跟讀。"
+    },
+    "fallback": {
+      "offer": "改用瀏覽器的語音辨識",
+      "title": "改用瀏覽器的語音辨識？",
+      "body": "這支手機無法在本機轉文字。改用瀏覽器的語音辨識時，錄音將傳送到瀏覽器廠商伺服器轉成文字。同意只在這次使用期間有效。",
+      "decline": "不用了",
+      "accept": "同意並使用"
     }
   },
   "write": {
