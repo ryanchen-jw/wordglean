@@ -140,3 +140,31 @@
   ```
   cd app && npm run lint && npm run typecheck && npm test && npm run build && E2E_PORT=5302 npx playwright test --workers=1
   ```
+
+## TASK-12 · 題型引擎＋讀類題型——單字卡四選一、選擇題、閱讀理解
+
+- **改了什麼**：app/src/lesson（佇列、計分、單一交易寫入、中途續作、結算 onSettle）、/lesson/:id 小課外框 s03、單字卡 s07（G2：四選一、FSRS 自動評分 Again／Hard／Good）、選擇題／閱讀 s05、離開確認 s12、完成頁 s14；Dexie v3 lessonRuns；completeLesson。題目 fixture 以建置旗標載入（正式建置不含）。
+- **驗收**：第一輪 FAIL（AC#3 選項答對／答錯底色被 bg-surface 蓋掉；譯文展開後不在視野）→ 修正並加 computed 底色與 in-viewport 守衛；e2e 68 過 2 略；引擎 5 種突變皆紅。
+- **證據**：`docs/verification/2026-10-02-task12-read-items-evidence/`（proposal、偏差 19 條）
+- **重跑**：`cd app && npm test && E2E_PORT=5312 npx playwright test --workers=1`
+
+## TASK-16 · 點字查義＋收藏——ECDICT 字典彈層
+
+- **改了什麼**：app/src/dict（tokenize、lemmatize、lookup、EnglishText、DictionarySheet、Toast）、字典 597 片預快取且不內嵌 bundle、收藏／取消／復原、inPool、單字庫中文顯示與搜尋、取消收藏同步墓碑（最後修改者勝）。
+- **驗收**：AC#1 65 例（table 60／rule 5）、AC#2 兩引擎＋chromium 離線、AC#3 p95 15.7ms（n=30）、e2e:sync 12/12；走查 P1（iconBtnCls 文字色蓋掉發音鈕主色）修正並加 icon-color 守衛（修前 8 紅）；EnglishText 禁點改原形比對。
+- **證據**：`docs/verification/2026-10-02-task16-dictionary-evidence/`
+- **重跑**：`cd app && npm test && E2E_PORT=5322 npx playwright test --workers=1`
+
+## TASK-17 · 新手分級測驗——點選認識的單字＋假字偵測
+
+- **改了什麼**：content 假字產生器（自實作 Wuggy 式、lexicon／ECDICT 完整原檔過濾、拼錯距離、可唸性、冒犯字黑名單）與題本；app/src/placement（LexTALE 計分、≥85 掌握、灌水重測）；s10 畫面；settings.cefr_level migration＋pgTAP＋同步；設定頁級距選單。
+- **驗收**：AC 全過（自產 900 假字對 ECDICT 原檔 0 命中、四作答者手算、實等 182 秒、pgTAP 87）；走查 P1×2（勾選底色、長字斷字）修正並加守衛。
+- **證據**：`docs/verification/2026-10-02-task17-placement-evidence/`（report.md 含公式出處）
+- **重跑**：`cd content && node --test`；`data/.venv/Scripts/python.exe -m pytest data/tests/test_placement_ecdict.py`（需 data/raw）
+
+## TASK-4 · 介面文案定稿——全 App 繁中 UI
+
+- **改了什麼**：copy-table 279 列（位置白話描述）→ 創辦人 G3「照建議」全數定稿 → g3-apply 寫入 app/src/i18n/zh-TW.json（後續卡新增與 4 處行為衝突 key 列 _pendingG3）；登入元件改讀文案；noHardcoded 守衛；scripts/ 繁中用語檢查；規格 §2 STT 大小改 50–80MB（cce1f2b）。
+- **驗收**：PASS——全表比對 0 不一致、腳本重跑產出相同、check-zh 314 條 0 錯、守衛三突變紅。
+- **證據**：`docs/verification/2026-10-02-task4-copy-evidence/`
+- **重跑**：`cd scripts && npm test && node check-zh.mjs ../app/src/i18n/zh-TW.json`
