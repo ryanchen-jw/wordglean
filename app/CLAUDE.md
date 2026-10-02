@@ -5,18 +5,18 @@ React＋Vite＋TypeScript＋TailwindCSS；PWA 由 vite-plugin-pwa 產生 service
 
 ## 指令（皆在 `app/` 下執行）
 
-| 指令                | 用途                                                                                               |
-| ------------------- | -------------------------------------------------------------------------------------------------- |
-| `npm ci`            | 安裝依賴（worktree 內各自安裝，禁 junction／symlink 連主 checkout 的 node_modules）                |
-| `npm run dev`       | dev server，固定埠 **5287**（strictPort，被占用直接失敗）                                          |
-| `npm run build`     | typecheck＋產出 `dist/`（含 `sw.js`、`manifest.webmanifest`）                                      |
-| `npm run preview`   | 以 build 產物起 server，固定埠 **5288**（strictPort）                                              |
-| `npm run lint`      | ESLint＋Prettier 檢查                                                                              |
-| `npm run format`    | Prettier 自動排版                                                                                  |
-| `npm run typecheck` | `tsc -b`（app／node／e2e 三份 tsconfig）                                                           |
-| `npm test`          | Vitest 單元測試（jsdom）                                                                           |
-| `npm run e2e`       | Playwright 手機模擬 e2e（自動 build＋preview）；`E2E_PORT` 可改埠                                  |
-| `npm run e2e:sync`  | 登入與同步 e2e＋登入畫面視覺 smoke（需本機 Supabase，跑法見 `playwright.sync.config.ts`；不進 CI） |
+| 指令                | 用途                                                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `npm ci`            | 安裝依賴（worktree 內各自安裝，禁 junction／symlink 連主 checkout 的 node_modules）                                |
+| `npm run dev`       | dev server，固定埠 **5287**（strictPort，被占用直接失敗）                                                          |
+| `npm run build`     | typecheck＋產出 `dist/`（含 `sw.js`、`manifest.webmanifest`）                                                      |
+| `npm run preview`   | 以 build 產物起 server，固定埠 **5288**（strictPort）                                                              |
+| `npm run lint`      | ESLint＋Prettier 檢查                                                                                              |
+| `npm run format`    | Prettier 自動排版                                                                                                  |
+| `npm run typecheck` | `tsc -b`（app／node／e2e 三份 tsconfig）                                                                           |
+| `npm test`          | Vitest 單元測試（jsdom）                                                                                           |
+| `npm run e2e`       | Playwright 手機模擬 e2e（自動 build＋preview）；`E2E_PORT` 可改埠                                                  |
+| `npm run e2e:sync`  | 登入與同步 e2e（含結算後同步）＋登入畫面視覺 smoke（需本機 Supabase，跑法見 `playwright.sync.config.ts`；不進 CI） |
 
 首次跑 e2e 前：`npx playwright install webkit chromium`（CI 用 `--with-deps`）。
 
@@ -30,9 +30,12 @@ app/
 │   ├── i18n/            介面文案 zh-TW.json（key＝<畫面>.<區塊>.<用途>，TASK-4 G3 定稿；_pendingG3＝定稿後
 │   │                    新增、待下輪審）＋ t()；noHardcoded.test.ts 守衛：src 內不得硬寫中文介面字串
 │   ├── shell/           外框（頁首、底部導覽、離線條）、外觀／字級偏好、加到主畫面提示
-│   ├── screens/         home／course／words／settings／lesson 畫面與其推導模型（*Model.ts）
+│   ├── screens/         home／course／words／settings／lesson／review 畫面與其推導模型（*Model.ts）
 │   ├── lesson/          題型引擎（TASK-12）：題目型別、佇列與題型登記、FSRS 評分對應、小課進度（續作）、
 │   │                    結算；題目檔以獨立 json 資產載入（E2E 建置 VITE_ITEM_FIXTURES=true 改讀 fixtures/）
+│   │                    能力替代規則與穿插（capabilities.ts、assemble.ts，TASK-18）
+│   ├── today/           今日學習組裝（TASK-18）：到期複習＋下一課、受每日新字上限與暫停門檻約束
+│   ├── review/          單字複習（TASK-18）：卡片取自來源課題目檔，收藏字以單字總表出卡；作答寫 FSRS；練習模式不寫
 │   ├── dict/            字典（TASK-16）：可點英文字 EnglishText、字典彈層 DictionaryProvider、詞形還原與查找；
 │   │                    字典切片（data/dict）與單字總表（data/lexicon）以獨立 json 資產預快取、不內嵌進 bundle
 │   ├── curriculum/      課綱型別與查詢；課綱檔以獨立 json 資產載入（不併進程式碼 bundle）
@@ -64,6 +67,7 @@ app/
   - 已知（Windows）：webServer 的 preview 子程序在測試跑完後不會結束，Playwright 會卡在收尾、不印總結；輸出一律寫檔不接管道，跑完以 `netstat -ano` 找該埠的程序手動結束。
   - `narrow.spec`＝320 標準／320 特大／375 特大下單字庫、設定、清除確認、分級測驗不破版（含子元素不伸出卡片、主鈕不留孤字）。手機量測（溢出、單行控件、44px、英文字串、body 色、容器內溢出）一律用 `e2e/measure.ts`，e2e-sync 也共用。
   - `placement-cards.spec`＝分級測驗字卡：勾選底色（淺／深色系 computed 比對 token）、最長字題本在多種寬度／字級下不斷字不溢出。
+  - `today.spec`＝今日動線（`page.clock` 固定時間：第一天上課、第二天先複習再接下一課、首頁數字更新）與三能力皆不可用仍完成一課；`review-visual.spec`＝複習各狀態截圖、狀態色 computed 斷言、窄螢幕／特大字級（共用 `e2e/today.ts`）。
   - `lesson.spec`＝小課讀類三題型走完一課與續作；`lesson-visual.spec`＝小課各狀態截圖與窄螢幕／特大字級量測。e2e 的 webServer 帶 `VITE_ITEM_FIXTURES=true`，題目來源為 `src/lesson/fixtures/items/` 的樣本課。
   - 已知：WebKit（Windows build）原生 IndexedDB 一次寫 5000 筆約 77 秒（測試準備成本），該案例時限放寬到 150 秒。
   - 已知限制：Playwright 的 WebKit（Windows build）在 `setOffline` 後 reload 會丟 internal error，離線重載只在 chromium 驗。

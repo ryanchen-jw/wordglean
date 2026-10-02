@@ -8,7 +8,9 @@ import type { LinguaDb } from '../../data/db'
 import { t } from '../../i18n/t'
 import type { LessonItem, LessonItemsDoc } from '../../lesson/items'
 import { loadLessonItems } from '../../lesson/load'
-import { buildQueue, createRegistry, READ_TYPES, type Step } from '../../lesson/queue'
+import { buildLessonQueue } from '../../lesson/assemble'
+import { detectCapabilities, type Capabilities } from '../../lesson/capabilities'
+import { createRegistry, READ_TYPES, type Step } from '../../lesson/queue'
 import { currentKey, type LessonRun } from '../../lesson/run'
 import {
   answerStep,
@@ -32,6 +34,8 @@ type Props = {
   db?: LinguaDb
   loadItems?: (lessonId: string) => Promise<LessonItemsDoc | null>
   now?: () => number
+  /** 裝置能力（TTS／STT／金鑰）；不足時換題型、改自評或略過（TASK-18） */
+  capabilities?: Capabilities
   /** 結算後（同步接線屬 TASK-18） */
   onSettle?: (summary: SettleSummary) => void
 }
@@ -47,6 +51,7 @@ export function LessonScreen({
   db = appDb,
   loadItems = loadLessonItems,
   now = Date.now,
+  capabilities,
   onSettle,
 }: Props) {
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
@@ -74,8 +79,13 @@ export function LessonScreen({
     ;(async () => {
       const doc = await loadItems(lessonId)
       if (!doc) throw new Error(`沒有這一課的題目：${lessonId}`)
-      const { steps, skipped } = buildQueue(doc, registry)
-      // 未支援的題型（聽說寫，TASK-13～15）略過；記錄供除錯
+      const { steps, skipped, changes } = buildLessonQueue(
+        doc,
+        registry,
+        capabilities ?? detectCapabilities(),
+      )
+      // 能力不足的替代、未支援的題型（聽說寫，TASK-13～15）略過；記錄供除錯
+      if (changes.length) console.info('[lesson] 能力替代', changes)
       if (skipped.length) console.info('[lesson] 略過的題目', skipped)
       if (steps.length === 0) throw new Error(`這一課沒有可作答的題目：${lessonId}`)
       const { run } = await startOrResume(db, lessonId, steps, now())

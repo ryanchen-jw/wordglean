@@ -174,6 +174,19 @@ describe('loadHomeDbInput', () => {
     expect([...input.completedIds].sort()).toEqual(['a2-u01-l01', 'b1-u01-l01'])
   })
 
+  it('每日新字設 0、有到期：不顯示新課暫停（TASK-18）', async () => {
+    await db.settings.put({
+      id: 'local',
+      dailyNewLimit: 0,
+      pauseMultiplier: 10,
+      desiredRetention: 0.9,
+      cefrLevel: null,
+      updatedAt: 0,
+    })
+    await db.wordPool.put(word('w1', CardState.Review, at('2026-10-01T07:00:00Z')))
+    expect(await loadHomeDbInput(db, NOW, TZ)).toMatchObject({ dueCount: 1, paused: false })
+  })
+
   it('設定有級距（分級或跳過）：不算第一次開啟，級距取設定', async () => {
     await saveSettings(db, { cefrLevel: 'B1' }, NOW)
     expect(await loadHomeDbInput(db, NOW, TZ)).toMatchObject({ firstRun: false, level: 'B1' })

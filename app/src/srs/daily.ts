@@ -54,14 +54,15 @@ export function dayBoundsUtc(dayKey: string, timeZone: string): { startMs: numbe
   }
 }
 
-/** 今日還能出幾個新字；待複習 > 每日新字 × 暫停倍數 時暫停出新字 */
+/** 今日還能出幾個新字；待複習 > 每日新字 × 暫停倍數 時暫停出新字（每日新字設 0 不算暫停，TASK-18） */
 export function newWordQuota(input: {
   dailyNewLimit: number
   pauseMultiplier: number
   dueCount: number
   introducedToday: number
 }): { remaining: number; paused: boolean } {
-  const paused = input.dueCount > input.dailyNewLimit * input.pauseMultiplier
+  const paused =
+    input.dailyNewLimit > 0 && input.dueCount > input.dailyNewLimit * input.pauseMultiplier
   return {
     remaining: paused ? 0 : Math.max(0, input.dailyNewLimit - input.introducedToday),
     paused,

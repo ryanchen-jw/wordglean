@@ -89,6 +89,13 @@ describe('newWordQuota：每日新字上限與暫停門檻', () => {
     })
   })
 
+  // TASK-18 執行長裁示：上限 0＝使用者不要新字，不是複習太多，不顯示「新課暫停」
+  it('每日新字設 0：有到期也不算暫停，剩餘 0', () => {
+    expect(
+      newWordQuota({ dailyNewLimit: 0, pauseMultiplier: 10, dueCount: 1, introducedToday: 0 }),
+    ).toEqual({ remaining: 0, paused: false })
+  })
+
   it('暫停倍數可設定', () => {
     expect(
       newWordQuota({ dailyNewLimit: 10, pauseMultiplier: 5, dueCount: 51, introducedToday: 0 }),

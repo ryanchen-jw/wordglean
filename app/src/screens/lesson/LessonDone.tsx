@@ -53,8 +53,12 @@ export function LessonDone({ summary, subtitle, wrongScheduled }: Props) {
       </LessonMain>
       <LessonFoot>
         <Button onClick={() => navigate('/', { replace: true })}>{t('lesson.done.home')}</Button>
-        {/* 只複習本課新字屬 TASK-18（/review 目前為尚未開放頁） */}
-        <Button variant="text" className="justify-center!" onClick={() => navigate('/review')}>
+        {/* 只練習本課新字、不寫排程（TASK-18 D5） */}
+        <Button
+          variant="text"
+          className="justify-center!"
+          onClick={() => navigate(`/review?lesson=${summary.lessonId}`)}
+        >
           {t('lesson.done.reviewAgain')}
           <ChevronRight size={20} aria-hidden="true" />
         </Button>

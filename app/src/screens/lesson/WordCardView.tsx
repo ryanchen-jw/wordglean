@@ -19,6 +19,8 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
   const [picked, setPicked] = useState<number | null>(null)
   const [hint, setHint] = useState(false)
   const answered = picked !== null
+  // 收藏字的複習卡沒有例句（TASK-18）：不給例句提示、回饋只有釋義
+  const hasExample = item.exampleEn !== ''
   // 作答前測驗字本身不可點（會直接看到答案）
   const hide = answered ? undefined : new Set([item.word.toLowerCase()])
 
@@ -88,13 +90,18 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
               )
             }
           >
-            <EnglishText text={item.exampleEn} className="font-en" />
-            <ZhText text={item.exampleZh} />
+            {hasExample && (
+              <>
+                <EnglishText text={item.exampleEn} className="font-en" />
+                <ZhText text={item.exampleZh} />
+              </>
+            )}
           </FeedbackBar>
           <Button onClick={onContinue}>{t('lesson.feedback.continue')}</Button>
         </LessonFoot>
       ) : (
-        !hint && (
+        !hint &&
+        hasExample && (
           <LessonFoot plain>
             <Button variant="text" className="justify-center!" onClick={() => setHint(true)}>
               <Info size={20} aria-hidden="true" />

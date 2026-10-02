@@ -74,6 +74,21 @@ describe('首頁（s01）', () => {
       'href',
       '/course?lesson=b1-u01-l02',
     )
+    expect(screen.getByRole('link', { name: /到期複習/ })).toHaveAttribute('href', '/review')
+    // TASK-18：今天的學習先複習、複習完接下一課
+    fireEvent.click(screen.getByRole('button', { name: '開始今天的學習' }))
+    expect(location.pathname + location.search).toBe('/review?flow=today')
+  })
+
+  it('沒有到期：開始今天的學習直接進下一課', async () => {
+    await db.courseProgress.put({
+      lessonId: 'b1-u01-l01',
+      completedAt: Date.now() - 2 * DAY,
+      updatedAt: 0,
+    })
+    render(<HomeScreen />)
+    fireEvent.click(await screen.findByRole('button', { name: '開始今天的學習' }))
+    expect(location.pathname).toBe('/lesson/b1-u01-l02')
   })
 
   it('新課暫停：待複習 101 > 10×10', async () => {

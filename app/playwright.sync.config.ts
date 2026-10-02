@@ -33,6 +33,8 @@ export default defineConfig({
       VITE_AUTH_GOOGLE: 'true',
       // 讓 e2e 以真實資料層模擬學習（學習畫面待 TASK-11 之後）
       VITE_E2E_HOOKS: 'true',
+      // 題目來源換成樣本課 fixture（TASK-18 settle-sync.spec 走真實小課畫面）
+      VITE_ITEM_FIXTURES: 'true',
     },
   },
 })

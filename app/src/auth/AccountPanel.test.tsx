@@ -11,6 +11,7 @@ function fakeAuth(over: Partial<AuthApi> = {}) {
     verifyCode: vi.fn(async () => {}),
     signInWithGoogle: vi.fn(async () => {}),
     signOut: vi.fn(async () => true),
+    requestSync: vi.fn(),
     subscribe: (cb) => {
       listener = cb
       cb(null)

@@ -11,15 +11,10 @@ interface Pick {
   check: boolean
 }
 
-// 依題目檔算出每一步的正解與錯誤選項；與引擎無關（直接讀 fixture）
-const doc = JSON.parse(
-  readFileSync(
-    resolve(import.meta.dirname, '../src/lesson/fixtures/items', `${LESSON}.json`),
-    'utf-8',
-  ),
-) as {
+interface FixtureDoc {
   items: {
     type: string
+    word?: string
     glossZh?: string
     distractorsZh?: string[]
     options?: string[]
@@ -28,19 +23,31 @@ const doc = JSON.parse(
   }[]
 }
 
+export const readFixture = (lessonId: string) =>
+  JSON.parse(
+    readFileSync(
+      resolve(import.meta.dirname, '../src/lesson/fixtures/items', `${lessonId}.json`),
+      'utf-8',
+    ),
+  ) as FixtureDoc
+
 const rest = (opts: string[], answer: number) => [
   opts[answer],
   ...opts.filter((_, i) => i !== answer),
 ]
 
-export const STEPS: Pick[] = doc.items.flatMap((it): Pick[] => {
-  if (it.type === 'wordCard')
-    return [{ options: [it.glossZh!, ...it.distractorsZh!], check: false }]
-  if (it.type === 'mcq') return [{ options: rest(it.options!, it.answer!), check: true }]
-  if (it.type === 'reading')
-    return it.questions!.map((q) => ({ options: rest(q.options, q.answer), check: true }))
-  return []
-})
+// 依題目檔算出每一步的正解與錯誤選項；與引擎無關（直接讀 fixture）。讀類題依題目檔順序（單字卡在前）
+export const stepsOf = (lessonId: string): Pick[] =>
+  readFixture(lessonId).items.flatMap((it): Pick[] => {
+    if (it.type === 'wordCard')
+      return [{ options: [it.glossZh!, ...it.distractorsZh!], check: false }]
+    if (it.type === 'mcq') return [{ options: rest(it.options!, it.answer!), check: true }]
+    if (it.type === 'reading')
+      return it.questions!.map((q) => ({ options: rest(q.options, q.answer), check: true }))
+    return []
+  })
+
+export const STEPS: Pick[] = stepsOf(LESSON)
 
 export const count = (page: Page, n: number) =>
   expect(page.getByText(`${n}／${STEPS.length}`, { exact: true })).toBeVisible()

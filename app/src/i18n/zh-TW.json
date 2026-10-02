@@ -29,6 +29,16 @@
     "placement.result.retest",
     "placement.result.retestHint",
     "placement.result.toeicNote",
+    "review.done.correct",
+    "review.done.empty",
+    "review.done.home",
+    "review.done.summary",
+    "review.done.title",
+    "review.done.words",
+    "review.error.back",
+    "review.error.body",
+    "review.frame.count",
+    "review.frame.progress",
     "stub.page.backHome",
     "stub.page.body",
     "stub.page.title",
@@ -545,6 +555,24 @@
       "label": "輸入寄到 {email} 的驗證碼",
       "submit": "登入",
       "changeEmail": "重新輸入 Email"
+    }
+  },
+  "review": {
+    "frame": {
+      "count": "複習 {n}／{total}",
+      "progress": "複習進度"
+    },
+    "done": {
+      "title": "複習完成",
+      "summary": "這一輪",
+      "words": "{n} 個字",
+      "correct": "答對 {n} 個",
+      "empty": "目前沒有到期的單字",
+      "home": "回到今天"
+    },
+    "error": {
+      "body": "複習載入失敗",
+      "back": "回到今天"
     }
   }
 }

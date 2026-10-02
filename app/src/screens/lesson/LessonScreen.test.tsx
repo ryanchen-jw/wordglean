@@ -170,6 +170,20 @@ describe('小課畫面（AC#2 單元層）', () => {
     expect(await db.courseProgress.get(LESSON)).toBeDefined()
     fireEvent.click(within(done).getByRole('button', { name: '回到今天' }))
     expect(location.pathname).toBe('/')
+    // TASK-18 D5：只練習本課新字
+    fireEvent.click(within(done).getByRole('button', { name: '再複習一次剛學的字' }))
+    expect(location.pathname + location.search).toBe(`/review?lesson=${LESSON}`)
+  })
+
+  it('TTS／STT／金鑰皆不可用（AC#4）：聽說題略過，讀類 12 題照常出', async () => {
+    render(
+      <LessonScreen
+        lessonId={LESSON}
+        loadItems={loadItems}
+        capabilities={{ tts: false, stt: false, llmKey: false }}
+      />,
+    )
+    expect(await count(1)).toBeInTheDocument()
   })
 })
 

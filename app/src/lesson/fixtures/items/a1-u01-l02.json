@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l02",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": ["Amy", "Tom"],
+  "items": [
+    {
+      "id": "a1-u01-l02-q01",
+      "type": "wordCard",
+      "word": "it",
+      "exampleEn": "It is a big dog.",
+      "exampleZh": "它是一隻大狗。",
+      "glossZh": "它（指物或動物）",
+      "distractorsZh": ["她", "他", "他們"]
+    },
+    {
+      "id": "a1-u01-l02-q02",
+      "type": "wordCard",
+      "word": "i",
+      "exampleEn": "I am a student.",
+      "exampleZh": "我是一名學生。",
+      "glossZh": "我",
+      "distractorsZh": ["你", "他", "她"]
+    },
+    {
+      "id": "a1-u01-l02-q03",
+      "type": "wordCard",
+      "word": "that",
+      "exampleEn": "That is my book.",
+      "exampleZh": "那是我的書。",
+      "glossZh": "那個（遠指）",
+      "distractorsZh": ["這個", "哪一個", "一些"]
+    },
+    {
+      "id": "a1-u01-l02-q04",
+      "type": "wordCard",
+      "word": "for",
+      "exampleEn": "This gift is for you.",
+      "exampleZh": "這份禮物是給你的。",
+      "glossZh": "給，為了",
+      "distractorsZh": ["在...上面", "和...一起", "在...裡面"]
+    },
+    {
+      "id": "a1-u01-l02-q05",
+      "type": "wordCard",
+      "word": "you",
+      "exampleEn": "You are my friend.",
+      "exampleZh": "你是我的朋友。",
+      "glossZh": "你，你們",
+      "distractorsZh": ["我", "他", "她"]
+    },
+    {
+      "id": "a1-u01-l02-q06",
+      "type": "wordCard",
+      "word": "he",
+      "exampleEn": "He is a teacher.",
+      "exampleZh": "他是一名老師。",
+      "glossZh": "他（男性）",
+      "distractorsZh": ["她", "我", "我們"]
+    },
+    {
+      "id": "a1-u01-l02-q07",
+      "type": "wordCard",
+      "word": "with",
+      "exampleEn": "I go with my mom.",
+      "exampleZh": "我和我媽媽一起去。",
+      "glossZh": "和...一起",
+      "distractorsZh": ["在...上面", "在...裡面", "因為"]
+    },
+    {
+      "id": "a1-u01-l02-q08",
+      "type": "wordCard",
+      "word": "on",
+      "exampleEn": "The book is on the table.",
+      "exampleZh": "那本書在桌子上面。",
+      "glossZh": "在...上面",
+      "distractorsZh": ["在...裡面", "和...一起", "在...後面"]
+    },
+    {
+      "id": "a1-u01-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "I am with my friend on Monday.",
+      "sentenceZh": "我星期一和我的朋友在一起。"
+    },
+    {
+      "id": "a1-u01-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "The cat is on the box. It is small.",
+      "audioZh": "那隻貓在盒子上面。它很小。",
+      "questionZh": "那隻貓在哪裡？",
+      "options": ["On the table", "On the box", "On the bed"],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "I go to school with my sister.",
+      "sentenceZh": "我和我妹妹一起去學校。"
+    },
+    {
+      "id": "a1-u01-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "That is a beautiful house for you.",
+      "sentenceZh": "那是一間為你準備的美麗房子。"
+    },
+    {
+      "id": "a1-u01-l02-q13",
+      "type": "mcq",
+      "stemEn": "I go to the park ____ my friend.",
+      "stemZh": "我和我的朋友一起去公園。",
+      "options": ["on", "for", "with", "that"],
+      "optionGlossZh": ["在...上面", "給，為了", "和...一起", "那個"],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l02-q14",
+      "type": "mcq",
+      "stemEn": "The cat is ____ the table.",
+      "stemZh": "那隻貓在桌子上面。",
+      "options": ["with", "on", "for", "that"],
+      "optionGlossZh": ["和...一起", "在...上面", "給，為了", "那個"],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l02-q15",
+      "type": "reading",
+      "passageEn": "My name is Amy. I am a teacher. My friend is Tom. He is a student. We go to school with our dog. The dog is on the chair. It is a small dog. That is my happy day.",
+      "passageZh": "我的名字是 Amy。我是一名老師。我的朋友是 Tom。他是一名學生。我們和我們的狗一起去學校。那隻狗在椅子上面。它是一隻小狗。那是我很開心的一天。",
+      "questions": [
+        {
+          "questionZh": "Tom 是什麼職業？",
+          "options": ["老師", "學生", "醫生"],
+          "answer": 1
+        },
+        {
+          "questionZh": "狗在哪裡？",
+          "options": ["桌子上面", "椅子後面", "椅子上面"],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l02-q16",
+      "type": "translate",
+      "promptZh": "那本書在我桌子上面。",
+      "hintWords": ["that", "on"],
+      "referenceEn": ["That book is on my table."],
+      "rubricZh": [
+        "正確使用 that 指遠處事物",
+        "介系詞 on 表示「在...上面」",
+        "be 動詞 is 與單數主詞一致"
+      ]
+    },
+    {
+      "id": "a1-u01-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "for",
+      "instructionZh": "用 for 寫一個句子，表示「給某人」或「為了...」。",
+      "referenceEn": ["This gift is for you.", "I study for the test."],
+      "rubricZh": [
+        "正確使用 for 表示「給」或「為了」",
+        "句子結構完整，有主詞和動詞",
+        "拼寫與大小寫正確"
+      ]
+    }
+  ],
+  "attempt": 3,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l02-q10": [1],
+      "a1-u01-l02-q13": [2],
+      "a1-u01-l02-q14": [1],
+      "a1-u01-l02-q15#0": [1],
+      "a1-u01-l02-q15#1": [2]
+    }
+  }
+}

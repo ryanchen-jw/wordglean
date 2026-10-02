@@ -10,10 +10,15 @@ export function LessonHeader({
   n,
   total,
   onLeave,
+  count = t('lesson.frame.count', { n: n ?? 0, total: total ?? 0 }),
+  progressLabel = t('lesson.frame.progress'),
 }: {
   n?: number
   total?: number
   onLeave: () => void
+  /** 題數文字與進度條名稱（複習用「複習 n／總數」，TASK-18） */
+  count?: string
+  progressLabel?: string
 }) {
   return (
     <header className="flex-none px-5 pt-[calc(env(safe-area-inset-top)+6px)] pb-2.5">
@@ -30,7 +35,7 @@ export function LessonHeader({
           <>
             <div
               role="progressbar"
-              aria-label={t('lesson.frame.progress')}
+              aria-label={progressLabel}
               aria-valuenow={n}
               aria-valuemin={0}
               aria-valuemax={total}
@@ -41,9 +46,7 @@ export function LessonHeader({
                 style={{ width: `${(n / total) * 100}%` }}
               />
             </div>
-            <span className="text-caption text-muted tabular-nums">
-              {t('lesson.frame.count', { n, total })}
-            </span>
+            <span className="text-caption text-muted tabular-nums">{count}</span>
           </>
         )}
       </div>

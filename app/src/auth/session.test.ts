@@ -95,3 +95,15 @@ describe('登入接線：換帳號保護', () => {
     expect(fake.signOut).not.toHaveBeenCalled()
   })
 })
+
+describe('結算後同步（TASK-18）', () => {
+  it('requestSync：已登入時同步一次（會連雲端），失敗不丟錯', async () => {
+    reset()
+    const db = await freshDb()
+    await addFavorite(db, 'river', 0)
+
+    const auth = await createAuthSession(config, db)
+    expect(() => auth.requestSync()).not.toThrow()
+    await vi.waitFor(() => expect(fake.from).toHaveBeenCalled())
+  })
+})

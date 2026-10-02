@@ -17,6 +17,8 @@ export interface AuthApi {
    * notice＝'account-mismatch'：本機資料屬於另一個帳號，剛登入的帳號已被登出、未同步
    */
   subscribe(cb: (email: string | null, notice?: 'account-mismatch') => void): () => void
+  /** 不等結果的同步（TASK-18：小課結算後）；未登入時不做事，失敗時資料留在佇列 */
+  requestSync(): void
 }
 
 const check = async (p: Promise<{ error: unknown }>) => {
@@ -47,6 +49,7 @@ export async function createAuthSession(config: AuthConfig, db: LinguaDb): Promi
       await check(client.auth.signOut())
       return true
     },
+    requestSync: () => engine.requestSync(),
     subscribe(cb) {
       const { data } = client.auth.onAuthStateChange((event, session) => {
         cb(session?.user.email ?? null)

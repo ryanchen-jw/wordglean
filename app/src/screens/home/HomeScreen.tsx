@@ -99,7 +99,9 @@ async function skipPlacement() {
 }
 
 function HomeBody({ m }: { m: HomeModel }) {
-  const startTarget = m.dueCount > 0 || !m.next ? '/review' : `/lesson/${m.next.lessonId}`
+  // 今天的學習：有到期先複習、複習完接下一課（TASK-18）
+  const startTarget =
+    m.dueCount > 0 || !m.next ? '/review?flow=today' : `/lesson/${m.next.lessonId}`
 
   if (m.state === 'first')
     return (
