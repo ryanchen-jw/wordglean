@@ -16,13 +16,23 @@ const ALLOWED_LATIN = new Set([
   'WebGPU',
   'AI',
   'Safari',
+  // TASK-4 G3 定稿文案中的英文字
+  'App',
+  'Email',
+  'Google',
+  'ECDICT',
+  'Wi',
+  'Fi',
+  'sk',
+  'or',
 ])
 
+// 底線開頭（_status、_pendingG3）是中繼欄位，不是文案
 function allStrings(node: unknown, path = ''): [string, string][] {
   if (typeof node === 'string') return [[path, node]]
-  return Object.entries(node as Record<string, unknown>).flatMap(([k, v]) =>
-    allStrings(v, path ? `${path}.${k}` : k),
-  )
+  return Object.entries(node as Record<string, unknown>)
+    .filter(([k]) => !k.startsWith('_'))
+    .flatMap(([k, v]) => allStrings(v, path ? `${path}.${k}` : k))
 }
 
 describe('t()', () => {
@@ -39,25 +49,26 @@ describe('t()', () => {
 })
 
 describe('zh-TW.json', () => {
-  it('頂層標記為草稿、待 G3 審定', () => {
-    expect(messages._status).toBe('draft-pending-G3')
+  it('頂層標記為 G3 定稿；_pendingG3 的 key 都存在且是字串', () => {
+    expect(messages._status).toBe('approved-G3-2026-10-02')
+    const keys = new Map(allStrings(messages))
+    const missing = messages._pendingG3.filter((k) => !keys.has(k))
+    expect(missing).toEqual([])
   })
 
   it('除允許清單外沒有英文介面字串', () => {
-    const offenders = allStrings(messages)
-      .filter(([path]) => path !== '_status')
-      .flatMap(([path, text]) =>
-        (text.replace(/\{\w+\}/g, '').match(/[A-Za-z][A-Za-z0-9]*/g) ?? [])
-          .filter((w) => !ALLOWED_LATIN.has(w))
-          .map((w) => `${path}: ${w}`),
-      )
+    const offenders = allStrings(messages).flatMap(([path, text]) =>
+      (text.replace(/\{\w+\}/g, '').match(/[A-Za-z][A-Za-z0-9]*/g) ?? [])
+        .filter((w) => !ALLOWED_LATIN.has(w))
+        .map((w) => `${path}: ${w}`),
+    )
     expect(offenders).toEqual([])
   })
 
   it('key 遵守 <畫面>.<區塊>.<用途> 三層', () => {
     const bad = allStrings(messages)
       .map(([path]) => path)
-      .filter((p) => p !== '_status' && p.split('.').length !== 3)
+      .filter((p) => p.split('.').length !== 3)
     expect(bad).toEqual([])
   })
 })

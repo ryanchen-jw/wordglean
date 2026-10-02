@@ -1,5 +1,40 @@
 {
-  "_status": "draft-pending-G3",
+  "_status": "approved-G3-2026-10-02",
+  "_pendingG3": [
+    "account.panel.mismatch",
+    "clearData.dialog.failed",
+    "common.action.close",
+    "course.sheet.title",
+    "course.unit.lesson",
+    "dict.sheet.loadFailed",
+    "dict.sheet.loading",
+    "download.action.startNamed",
+    "download.status.failedRetry",
+    "download.status.percent",
+    "home.next.levelDone",
+    "home.next.title",
+    "home.today.summaryLesson",
+    "install.card.close",
+    "lesson.done.subtitle",
+    "lesson.error.back",
+    "lesson.error.body",
+    "lesson.frame.count",
+    "lesson.leave.body",
+    "lesson.leave.bodyDone",
+    "lesson.reading.hideTranslation",
+    "lesson.reading.question",
+    "lesson.wordCard.hintLabel",
+    "nav.bar.label",
+    "stub.page.backHome",
+    "stub.page.body",
+    "stub.page.title",
+    "words.due.newWord",
+    "words.due.years",
+    "words.filter.familiarityAll",
+    "words.filter.familiaritySheet",
+    "words.filter.scopeLabel",
+    "words.list.noMatch"
+  ],
   "common": {
     "action": {
       "back": "返回",
@@ -7,6 +42,17 @@
     },
     "level": {
       "toeic": "{level}｜約多益 {score}+"
+    },
+    "text": {
+      "play": "播放",
+      "playAgain": "再聽一次",
+      "toeicApprox": "約多益 {score}+",
+      "processing": "處理中…",
+      "retry": "重試",
+      "later": "之後再說",
+      "almost": "差一點：{detail}",
+      "tapToLookup": "英文字都可以點，查看意思",
+      "justNow": "剛剛"
     }
   },
   "nav": {
@@ -19,7 +65,35 @@
   },
   "system": {
     "offline": {
-      "strip": "目前離線：複習與已下載的課程仍可使用"
+      "strip": "目前離線：複習與已下載的課程仍可使用",
+      "needNetwork": "這個功能需要網路，連上後再試一次。",
+      "lessonNotDownloaded": "這一課還沒下載，連上網路後就能上。"
+    },
+    "mic": {
+      "title": "跟讀需要用到麥克風",
+      "body": "錄音只在這支手機上轉成文字，不會上傳。",
+      "blocked": "麥克風被瀏覽器擋下了。請到瀏覽器的網站設定開啟麥克風，再回來重試。"
+    },
+    "storage": {
+      "title": "讓這支手機保留你的學習紀錄",
+      "body": "手機空間不足時，瀏覽器可能會清掉網站資料。允許保留後，單字庫和進度比較不會被刪掉。",
+      "allow": "允許保留"
+    },
+    "error": {
+      "generic": "出了點問題，請再試一次。",
+      "dataLoad": "讀不到這支手機上的學習資料，請重新開啟 App。"
+    },
+    "sync": {
+      "failed": "同步沒有完成，下次連上網路會自動再試。"
+    },
+    "toast": {
+      "unsaved": "已取消收藏",
+      "gradeFailed": "批改失敗：網路中斷",
+      "unlinked": "已解除 OpenRouter 連結"
+    },
+    "page": {
+      "notFound": "找不到這個頁面",
+      "appDescription": "英文聽說讀寫練習，搭配間隔重複複習單字。"
     }
   },
   "home": {
@@ -65,6 +139,9 @@
       "body": "勾出認識的單字，我們會推薦適合的級距。之後隨時可以在設定裡調整。",
       "startButton": "開始分級測驗",
       "skip": "跳過，從 A1 開始"
+    },
+    "tile": {
+      "nextOffline": "已下載・可離線上課"
     }
   },
   "course": {
@@ -77,7 +154,8 @@
     "unit": {
       "progress": "{done}／{total} 課",
       "current": "目前這課",
-      "lesson": "第 {n} 課"
+      "lesson": "第 {n} 課",
+      "expand": "{from}–{to}　展開"
     },
     "sheet": {
       "label": "小課詳情",
@@ -85,6 +163,12 @@
       "minutes": "約 {min} 分鐘",
       "newWords": "新字 {n} 個",
       "startButton": "開始這一課"
+    },
+    "detail": {
+      "listen": "聽 {count}",
+      "speak": "說 {count}",
+      "read": "讀 {count}",
+      "write": "寫 {count}"
     }
   },
   "words": {
@@ -102,9 +186,9 @@
       "familiarity": "熟悉度：{name}",
       "familiaritySheet": "依熟悉度篩選",
       "familiarityAll": "全部",
-      "familiarityNew": "陌生",
+      "familiarityNew": "新字",
       "familiarityLearning": "學習中",
-      "familiarityFamiliar": "熟悉"
+      "familiarityFamiliar": "已熟悉"
     },
     "due": {
       "today": "今天到期",
@@ -132,14 +216,24 @@
       "level": "目前級距",
       "unplaced": "還沒有分級",
       "dailyNew": "每日新字數",
-      "dailyNewSheet": "每日新字數"
+      "dailyNewSheet": "每日新字數",
+      "levelSheet": "選擇級距"
     },
     "ai": {
       "title": "AI 批改（OpenRouter）",
       "status": "狀態：未設定",
       "oauthButton": "用 OpenRouter 帳號一鍵授權",
       "pasteKey": "改用貼上金鑰",
-      "privacy": "金鑰只存在這支手機，不會傳到我們的伺服器"
+      "privacy": "金鑰只存在這支手機，不會傳到我們的伺服器",
+      "oauthFail": "授權沒有完成，請再試一次。",
+      "writingPrivacy": "寫作題的句子只會送到你選的 OpenRouter 模型",
+      "linked": "已連結",
+      "model": "模型",
+      "freeModel": "免費模型",
+      "quota": "今日免費額度剩 {count} 次",
+      "unlink": "解除連結",
+      "unlinkConfirmTitle": "解除 OpenRouter 連結？",
+      "unlinkConfirmBody": "解除後，寫作題改成對照參考答案自己判斷。之後可以再連結。"
     },
     "appearance": {
       "title": "外觀與字級",
@@ -159,21 +253,31 @@
       "ttsHq": "高音質發音（選配）",
       "ttsHqNote": "約 310MB・需支援 WebGPU 的手機",
       "stt": "語音辨識模型",
-      "sttNote": "跟讀用・約 50–80MB"
+      "sttNote": "跟讀用・約 50–80MB",
+      "hqUnsupported": "這支手機不支援高音質發音"
     },
     "data": {
       "title": "資料",
       "export": "匯出學習紀錄",
-      "exportDone": "已匯出學習紀錄",
+      "exportDone": "學習紀錄已匯出",
       "clear": "清除這支手機上的資料"
     },
     "account": {
       "title": "帳號與同步",
-      "signedOut": "未登入：進度只存在這支手機"
+      "signedOut": "未登入：進度只存在這支手機",
+      "lastSync": "上次同步：{time}"
     },
     "other": {
       "title": "其他",
       "about": "隱私說明・授權・原始碼"
+    },
+    "key": {
+      "title": "貼上 OpenRouter 金鑰",
+      "label": "金鑰",
+      "invalid": "金鑰無效：請確認是否完整貼上（應以 sk-or- 開頭）",
+      "rejected": "OpenRouter 不接受這組金鑰，請到 OpenRouter 確認金鑰還有效。",
+      "save": "驗證並儲存",
+      "verifying": "驗證中…"
     }
   },
   "clearData": {
@@ -184,7 +288,8 @@
       "cancel": "取消",
       "confirm": "清除資料",
       "busy": "清除中…",
-      "failed": "清除失敗，請關閉其他分頁後再試一次"
+      "failed": "清除失敗，請關閉其他分頁後再試一次",
+      "done": "已清除這支手機上的資料"
     }
   },
   "download": {
@@ -195,16 +300,34 @@
     "status": {
       "done": "已下載",
       "percent": "{n}%",
-      "failedRetry": "下載中斷・重試"
+      "failedRetry": "下載中斷・重試",
+      "failed": "下載中斷",
+      "storageFull": "手機空間不夠，下載不了。請先清出約 {size} 的空間。"
+    },
+    "stt": {
+      "title": "語音辨識模型下載中",
+      "body": "約 50–80MB，只需下載一次，之後不用網路也能跟讀。下載時可以先做別題，下載會在背景繼續。"
+    },
+    "hq": {
+      "confirmTitle": "下載高音質發音？",
+      "confirmBody": "約 310MB，建議連上 Wi-Fi 再下載。下載後不用網路也能用。",
+      "delete": "刪除高音質發音",
+      "deleteConfirmTitle": "刪除高音質發音？",
+      "deleteConfirmBody": "刪除後改用手機內建聲音，之後可以再下載。"
     }
   },
   "install": {
     "card": {
       "title": "把 LinguaApp 加到主畫面",
-      "bodyPrompt": "像一般應用程式一樣從主畫面開啟，沒有網路也能複習。",
+      "bodyPrompt": "之後從主畫面直接開啟，沒有網路也能複習。",
       "bodyIos": "在 Safari 點下方的「分享」，再選「加入主畫面」。",
       "button": "加到主畫面",
       "close": "關閉加到主畫面提示"
+    },
+    "update": {
+      "title": "有新版本可以用了",
+      "reload": "重新整理",
+      "offlineReady": "已經可以離線使用"
     }
   },
   "stub": {
@@ -235,7 +358,7 @@
   "lesson": {
     "frame": {
       "leave": "離開",
-      "progress": "小課進度",
+      "progress": "作答進度",
       "count": "{n}／{total}"
     },
     "error": {
@@ -256,7 +379,8 @@
       "hintLabel": "例句提示",
       "speak": "發音",
       "right": "正確：{gloss}",
-      "isGloss": " 是「{gloss}」"
+      "isGloss": " 是「{gloss}」",
+      "progress": "複習 {current}／{total}"
     },
     "mcq": {
       "type": "選出最適合的字"
@@ -284,6 +408,135 @@
       "wrongScheduled": "答錯的 {n} 題已排進明天的複習",
       "home": "回到今天",
       "reviewAgain": "再複習一次剛學的字"
+    },
+    "type": {
+      "listenType": "聽音打字",
+      "listenChoice": "聽音選答",
+      "speak": "跟讀",
+      "translate": "中翻英",
+      "sentence": "造句"
+    },
+    "question": {
+      "loadError": "這題載入失敗",
+      "loadErrorNext": "換下一題"
+    }
+  },
+  "listen": {
+    "type": {
+      "instruction": "聽句子，把聽到的英文打出來",
+      "placeholder": "把聽到的英文打在這裡"
+    },
+    "question": {
+      "slow": "慢速播放",
+      "cantHear": "聽不出來",
+      "voiceTag": "手機內建聲音",
+      "voiceHint": "想要更自然的發音，可以到設定開啟「高音質發音」（選配）"
+    }
+  },
+  "speak": {
+    "question": {
+      "instruction": "聽一次，再唸出這句",
+      "listenDemo": "聽示範",
+      "record": "開始錄音",
+      "idleHint": "點一下開始錄音",
+      "skipNow": "現在不方便說話（這題先跳過）",
+      "stop": "結束錄音",
+      "recording": "錄音中・{time}　點一下結束",
+      "busyAria": "辨識中",
+      "busy": "轉文字中…（錄音不會上傳）",
+      "target": "目標句",
+      "retry": "再唸一次",
+      "submit": "送出"
+    },
+    "confirm": {
+      "label": "你唸的句子（辨識結果，聽錯的地方可以直接改）",
+      "hint": "確認沒問題再按「送出」，送出後才會計分。"
+    },
+    "result": {
+      "label": "你送出的句子",
+      "score": "錯字 {wrong}・漏字 {missing}・得分 {score}／{total} 字"
+    },
+    "denied": {
+      "aria": "麥克風未允許",
+      "body": "需要麥克風才能跟讀",
+      "allow": "允許麥克風",
+      "skip": "這題跳過"
+    },
+    "download": {
+      "aria": "語音辨識模型下載中，暫時無法錄音",
+      "hint": "模型下載完才能錄音",
+      "skip": "先跳過這題"
+    }
+  },
+  "write": {
+    "question": {
+      "hintWords": "提示字：",
+      "skip": "跳過",
+      "submit": "送出批改",
+      "grading": "批改中…",
+      "yours": "你的句子",
+      "reference": "參考答案"
+    },
+    "ai": {
+      "suggestion": "建議寫法",
+      "explanation": "說明",
+      "by": "由你的 OpenRouter 帳號批改",
+      "done": "我懂了，繼續"
+    },
+    "nokey": {
+      "prompt": "跟參考答案比一比，意思一樣嗎？",
+      "hint": "設定 OpenRouter 帳號後可以用 AI 批改",
+      "goSettings": "去設定",
+      "wrong": "我寫錯了",
+      "right": "我寫對了"
+    },
+    "fail": {
+      "title": "AI 批改暫時無法使用",
+      "quota": "今日免費額度已用完。可以先對照參考答案，或到設定換一個模型。",
+      "network": "網路好像斷了。可以先對照參考答案，或稍後再試。",
+      "offline": "目前離線，AI 批改需要網路。可以先對照參考答案。",
+      "keyInvalid": "OpenRouter 連結已失效，請到設定重新連結。",
+      "changeModel": "換模型"
+    },
+    "sentence": {
+      "instruction": "用提示字寫一個英文句子"
+    }
+  },
+  "placement": {
+    "pick": {
+      "group": "第 {current}／{total} 組",
+      "instruction": "勾選你「認識意思」的字",
+      "hint": "不確定就不要勾；裡面混了幾個不存在的假字。",
+      "next": "下一組（已勾 {count} 個）",
+      "finish": "看結果（已勾 {count} 個）"
+    },
+    "result": {
+      "title": "你的起點",
+      "chart": "每一級你認識的字的比例",
+      "penalty": "勾到 {count} 個假字，結果已向下修正",
+      "start": "從 {level} 開始",
+      "choose": "想自己選級距"
+    }
+  },
+  "account": {
+    "panel": {
+      "entry": "登入以同步進度",
+      "intro": "登入後，這支手機的進度會合併到雲端，換手機也能接著學。",
+      "google": "使用 Google 登入",
+      "error": "沒有成功，請確認網路或驗證碼後再試一次。",
+      "signedIn": "已登入：{email}",
+      "logout": "登出",
+      "logoutBlocked": "還有資料沒同步到雲端，連上網路後再登出。",
+      "mismatch": "這支手機上有另一個帳號的學習資料。請先用原帳號登入並登出，或到設定清除這支手機上的資料。"
+    },
+    "email": {
+      "label": "Email",
+      "send": "寄驗證碼"
+    },
+    "code": {
+      "label": "輸入寄到 {email} 的驗證碼",
+      "submit": "登入",
+      "changeEmail": "重新輸入 Email"
     }
   }
 }

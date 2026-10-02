@@ -40,9 +40,7 @@ describe('加到主畫面卡片', () => {
         }),
       ),
     )
-    expect(
-      screen.getByText('像一般應用程式一樣從主畫面開啟，沒有網路也能複習。'),
-    ).toBeInTheDocument()
+    expect(screen.getByText('之後從主畫面直接開啟，沒有網路也能複習。')).toBeInTheDocument()
     await act(async () => fireEvent.click(screen.getByRole('button', { name: '加到主畫面' })))
     expect(prompt).toHaveBeenCalledOnce()
     expect(screen.queryByTestId('install-card')).toBeNull()

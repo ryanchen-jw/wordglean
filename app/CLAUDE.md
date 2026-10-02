@@ -27,7 +27,8 @@ app/
 ├── src/
 │   ├── App.tsx          只渲染 AppRoutes（路由表在 routes.tsx；router.ts／Link.tsx 為自寫 history 路由）
 │   ├── main.tsx         進入點（字體、外觀偏好先套再渲染）
-│   ├── i18n/            介面文案 zh-TW.json（key＝<畫面>.<區塊>.<用途>，待 TASK-4 G3 定稿）＋ t()
+│   ├── i18n/            介面文案 zh-TW.json（key＝<畫面>.<區塊>.<用途>，TASK-4 G3 定稿；_pendingG3＝定稿後
+│   │                    新增、待下輪審）＋ t()；noHardcoded.test.ts 守衛：src 內不得硬寫中文介面字串
 │   ├── shell/           外框（頁首、底部導覽、離線條）、外觀／字級偏好、加到主畫面提示
 │   ├── screens/         home／course／words／settings／lesson 畫面與其推導模型（*Model.ts）
 │   ├── lesson/          題型引擎（TASK-12）：題目型別、佇列與題型登記、FSRS 評分對應、小課進度（續作）、

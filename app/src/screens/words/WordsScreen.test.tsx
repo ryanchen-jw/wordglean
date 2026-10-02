@@ -79,12 +79,12 @@ describe('單字庫（s09）', () => {
     expect(listed()).toEqual(['reschedule', 'rest'])
 
     fireEvent.click(screen.getByRole('button', { name: '熟悉度：全部' }))
-    fireEvent.click(screen.getByRole('option', { name: '熟悉' }))
+    fireEvent.click(screen.getByRole('option', { name: '已熟悉' }))
     expect(screen.queryByRole('dialog')).toBeNull()
-    expect(screen.getByRole('button', { name: '熟悉度：熟悉' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '熟悉度：已熟悉' })).toBeInTheDocument()
     expect(listed()).toEqual(['reschedule'])
 
-    fireEvent.click(screen.getByRole('button', { name: '熟悉度：熟悉' }))
+    fireEvent.click(screen.getByRole('button', { name: '熟悉度：已熟悉' }))
     fireEvent.click(screen.getByRole('option', { name: '全部' }))
     fireEvent.change(screen.getByRole('searchbox', { name: '搜尋英文或中文' }), {
       target: { value: 'res' },

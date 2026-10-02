@@ -1,0 +1,17 @@
+{
+  "name": "linguaapp-scripts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "test": "node --test",
+    "check-zh": "node check-zh.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "opencc-js": "^1.4.2"
+  }
+}

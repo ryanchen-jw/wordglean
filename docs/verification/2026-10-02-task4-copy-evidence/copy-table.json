@@ -1,0 +1,4223 @@
+{
+  "meta": {
+    "task": "TASK-4",
+    "status": "draft-pending-G3",
+    "generated": "2026-10-02",
+    "designSource": "docs/design/v1.0/review.src.html（14 畫面 41 狀態）＋ components.md",
+    "keyRules": "docs/pending/2026-10-02-task4-copy/proposal.md",
+    "types": [
+      "按鈕",
+      "標題",
+      "標籤",
+      "說明",
+      "錯誤",
+      "空狀態",
+      "Toast",
+      "權限說明",
+      "無金鑰",
+      "隱私",
+      "無障礙"
+    ],
+    "screens": {
+      "s01": "畫面 1 首頁「今天」",
+      "s02": "畫面 2 課程地圖",
+      "s03": "畫面 3 小課・聽",
+      "s04": "畫面 4 小課・說（跟讀）",
+      "s05": "畫面 5 小課・讀",
+      "s06": "畫面 6 小課・寫",
+      "s07": "畫面 7 單字卡複習",
+      "s08": "畫面 8 單字查義彈層",
+      "s09": "畫面 9 單字庫",
+      "s10": "畫面 10 新手分級測驗",
+      "s11": "畫面 11 設定",
+      "s12": "畫面 12 離開小課確認",
+      "s13": "畫面 13 清除資料確認",
+      "s14": "畫面 14 小課完成頁",
+      "sys": "設計未畫（系統字串、登入、下載、加入主畫面）"
+    }
+  },
+  "rows": [
+    {
+      "key": "common.continue",
+      "text": "繼續",
+      "where": "小課中每題看完回饋後，畫面最下方的主要按鈕（聽、說、讀、寫、單字卡都有）",
+      "type": "按鈕",
+      "screen": "s03",
+      "design": [
+        "繼續"
+      ],
+      "states": [
+        "s03/wrong",
+        "s03/choice-right",
+        "s04/result",
+        "s05/mc-wrong",
+        "s06/fail",
+        "s07/right",
+        "s07/wrong"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.check",
+      "text": "檢查",
+      "where": "小課作答中，填完或選完答案後按的主要按鈕（聽音打字、閱讀理解）",
+      "type": "按鈕",
+      "screen": "s03",
+      "design": [
+        "檢查"
+      ],
+      "states": [
+        "s03/type",
+        "s03/voice",
+        "s05/reading"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.cancel",
+      "text": "取消",
+      "where": "各種確認框的左邊按鈕（例：清除資料確認、下載前告知、解除連結確認）",
+      "type": "按鈕",
+      "screen": "s13",
+      "design": [
+        "取消"
+      ],
+      "states": [
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.back",
+      "text": "返回",
+      "where": "設定頁左上角箭頭；讀螢幕軟體念的名稱，畫面上看不到字",
+      "type": "無障礙",
+      "screen": "s11",
+      "design": [
+        "返回"
+      ],
+      "states": [
+        "s11/default",
+        "s11/linked",
+        "s11/keyerr",
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.exitLesson",
+      "text": "離開",
+      "where": "小課、單字卡、分級測驗左上角的 ✕；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s03",
+      "design": [
+        "離開"
+      ],
+      "states": [
+        "s03/type",
+        "s03/wrong",
+        "s03/choice-right",
+        "s03/voice",
+        "s04/idle",
+        "s04/recording",
+        "s04/busy",
+        "s04/confirm",
+        "s04/result",
+        "s04/denied",
+        "s04/stt-download",
+        "s05/mc-wrong",
+        "s05/reading",
+        "s06/input",
+        "s06/ai",
+        "s06/nokey",
+        "s06/fail",
+        "s07/question",
+        "s07/right",
+        "s07/wrong",
+        "s08/default",
+        "s08/saved",
+        "s08/notfound",
+        "s10/pick",
+        "s12/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.play",
+      "text": "播放",
+      "where": "聽力題的大喇叭播放鈕；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s03",
+      "design": [
+        "播放"
+      ],
+      "states": [
+        "s03/type",
+        "s03/choice-right",
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.playAgain",
+      "text": "再聽一次",
+      "where": "聽音打字答錯後，喇叭鈕的名稱（讀螢幕軟體念）",
+      "type": "無障礙",
+      "screen": "s03",
+      "design": [
+        "再聽一次"
+      ],
+      "states": [
+        "s03/wrong"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.pronounce",
+      "text": "發音",
+      "where": "單字卡與查義彈層裡，英文單字旁的小喇叭；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s07",
+      "design": [
+        "發音"
+      ],
+      "states": [
+        "s07/question",
+        "s07/right",
+        "s07/wrong",
+        "s08/default",
+        "s08/saved",
+        "s08/notfound"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.level",
+      "text": "{level}｜約多益 {score}+",
+      "where": "首頁標題下的小字、課程地圖級距下方、設定「目前級距」右側；顯示目前級距與對照分數",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "B1｜約多益 275+"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done",
+        "s01/paused",
+        "s01/offline",
+        "s02/default",
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.toeicApprox",
+      "text": "約多益 {score}+",
+      "where": "分級測驗結果頁，大大的級距字母下方",
+      "type": "標籤",
+      "screen": "s10",
+      "design": [
+        "約多益 275+"
+      ],
+      "states": [
+        "s10/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.toeicTag",
+      "text": "多益常考",
+      "where": "單字卡作答後、查義彈層裡，單字旁的小標籤（這個字是多益常考字時才出現）",
+      "type": "標籤",
+      "screen": "s07",
+      "design": [
+        "多益常考"
+      ],
+      "states": [
+        "s07/right",
+        "s07/wrong",
+        "s08/default",
+        "s08/saved",
+        "s08/notfound"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.minutes",
+      "text": "約 {minutes} 分鐘",
+      "where": "首頁「到期複習」小卡數字下方、課程地圖點開某一課時；預估要花的時間",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "約 6 分鐘",
+        "約 30 分鐘",
+        "約 5 分鐘"
+      ],
+      "states": [
+        "s01/default",
+        "s01/paused",
+        "s01/offline",
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.progressAria",
+      "text": "作答進度",
+      "where": "小課最上方的進度條；讀螢幕軟體念的名稱（例：作答進度 5／12）",
+      "type": "無障礙",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計稿只畫了「5／12」數字，進度條需要一個名稱給讀螢幕軟體。"
+    },
+    {
+      "key": "common.processing",
+      "text": "處理中…",
+      "where": "任何按鈕按下後在等待時，按鈕上的字暫時換成這句（例：登入時）",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "common.retry",
+      "text": "重試",
+      "where": "錯誤提示右邊的動作（例：批改失敗、模型下載中斷）",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "common.later",
+      "text": "之後再說",
+      "where": "加入主畫面提示、儲存空間權限說明的次要按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "common.correct",
+      "text": "正確",
+      "where": "答對時，題目下方綠色回饋條的開頭",
+      "type": "說明",
+      "screen": "s03",
+      "design": [
+        "正確"
+      ],
+      "states": [
+        "s03/choice-right"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.almost",
+      "text": "差一點：{detail}",
+      "where": "答錯時，題目下方回饋條的開頭，後面接哪裡錯（聽音打字、跟讀）",
+      "type": "說明",
+      "screen": "s03",
+      "design": [
+        "差一點：move → moved",
+        "差一點：meeting、Monday"
+      ],
+      "states": [
+        "s03/wrong",
+        "s04/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.answerIs",
+      "text": "答案是 {letter}：{answer}",
+      "where": "選擇題答錯時，回饋條開頭告訴你正確答案",
+      "type": "說明",
+      "screen": "s05",
+      "design": [
+        "答案是 A：postpone"
+      ],
+      "states": [
+        "s05/mc-wrong"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.tapToLookup",
+      "text": "英文字都可以點，查看意思",
+      "where": "前三次上課時，第一段英文下方的一行小字（之後不再出現）",
+      "type": "說明",
+      "screen": "s05",
+      "design": [
+        "英文字都可以點，查看意思"
+      ],
+      "states": [
+        "s05/reading"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.dueToday",
+      "text": "今天到期",
+      "where": "單字庫列表每個字的右側：今天就該複習",
+      "type": "標籤",
+      "screen": "s09",
+      "design": [
+        "今天到期"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.dueInDays",
+      "text": "{count} 天後",
+      "where": "單字庫列表每個字的右側：幾天後要複習",
+      "type": "標籤",
+      "screen": "s09",
+      "design": [
+        "3 天後",
+        "12 天後",
+        "5 天後"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.dueInMonths",
+      "text": "{count} 個月後",
+      "where": "單字庫列表每個字的右側：一個月以上才要複習",
+      "type": "標籤",
+      "screen": "s09",
+      "design": [
+        "1 個月後"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "common.justNow",
+      "text": "剛剛",
+      "where": "設定「上次同步」後面的時間（一分鐘內）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": "設計稿寫成「上次同步：剛剛」一整句，見 settings.account.lastSync。"
+    },
+    {
+      "key": "nav.today",
+      "text": "今天",
+      "where": "畫面最下方導覽列第 1 個（太陽圖示）",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "今天"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done",
+        "s01/paused",
+        "s01/first",
+        "s01/offline",
+        "s02/default",
+        "s09/default",
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "nav.course",
+      "text": "課程",
+      "where": "畫面最下方導覽列第 2 個（地圖圖示）",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "課程"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done",
+        "s01/paused",
+        "s01/first",
+        "s01/offline",
+        "s02/default",
+        "s09/default",
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "nav.words",
+      "text": "單字庫",
+      "where": "畫面最下方導覽列第 3 個（書本圖示）",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "單字庫"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done",
+        "s01/paused",
+        "s01/first",
+        "s01/offline",
+        "s02/default",
+        "s09/default",
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.title",
+      "text": "今天",
+      "where": "首頁最上方的大標題",
+      "type": "標題",
+      "screen": "s01",
+      "design": [
+        "今天"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done",
+        "s01/paused",
+        "s01/first",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.settings",
+      "text": "設定",
+      "where": "首頁右上角齒輪；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s01",
+      "design": [
+        "設定"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done",
+        "s01/paused",
+        "s01/first",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.unplaced",
+      "text": "還沒有分級",
+      "where": "第一次開啟、還沒做分級測驗時，首頁標題下方的小字（平常這裡顯示級距）",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "還沒有分級"
+      ],
+      "states": [
+        "s01/first"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.today.title",
+      "text": "今天的學習",
+      "where": "首頁最上面大卡的標題",
+      "type": "標題",
+      "screen": "s01",
+      "design": [
+        "今天的學習"
+      ],
+      "states": [
+        "s01/default",
+        "s01/paused",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.today.plan",
+      "text": "先複習，再上一課・約 {minutes} 分鐘",
+      "where": "首頁大卡標題下方，說明今天要做什麼",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "先複習，再上一課・約 11 分鐘"
+      ],
+      "states": [
+        "s01/default",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.today.start",
+      "text": "開始今天的學習",
+      "where": "首頁大卡的主要按鈕（平常、離線時）",
+      "type": "按鈕",
+      "screen": "s01",
+      "design": [
+        "開始今天的學習"
+      ],
+      "states": [
+        "s01/default",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.tile.due",
+      "text": "到期複習",
+      "where": "首頁左邊小卡的標題，下面是今天要複習的字數；點了直接進入只複習單字",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "到期複習"
+      ],
+      "states": [
+        "s01/default",
+        "s01/paused",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.tile.next",
+      "text": "下一課",
+      "where": "首頁右邊小卡的標題，下面是下一課名稱；點了看課程詳情",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "下一課"
+      ],
+      "states": [
+        "s01/default",
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.tile.nextMeta",
+      "text": "約 {minutes} 分鐘・新字 {count}",
+      "where": "首頁「下一課」小卡最下面的小字",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "約 5 分鐘・新字 8"
+      ],
+      "states": [
+        "s01/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.tile.nextOffline",
+      "text": "已下載・可離線上課",
+      "where": "離線時，首頁「下一課」小卡最下面的小字（取代時間與新字數）",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "已下載・可離線上課"
+      ],
+      "states": [
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.progress.title",
+      "text": "今天已完成",
+      "where": "首頁最下面那張小卡的標題",
+      "type": "標籤",
+      "screen": "s01",
+      "design": [
+        "今天已完成"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.progress.review",
+      "text": "複習 {done}／{total}",
+      "where": "首頁「今天已完成」卡裡：已複習幾個／今天要複習幾個",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "複習 0／24",
+        "複習 24／24"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.progress.lesson",
+      "text": "新課 {done}／{total}",
+      "where": "首頁「今天已完成」卡裡：已上幾課新課／今天目標幾課",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "新課 0／1",
+        "新課 1／1"
+      ],
+      "states": [
+        "s01/default",
+        "s01/done"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.done.title",
+      "text": "今天的學習都完成了",
+      "where": "今天複習和新課都做完後，首頁大卡的標題（前面有綠色勾）",
+      "type": "標題",
+      "screen": "s01",
+      "design": [
+        "今天的學習都完成了"
+      ],
+      "states": [
+        "s01/done"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.done.body",
+      "text": "明天約有 {count} 個單字到期。",
+      "where": "今天都完成時，大卡標題下方",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "明天約有 18 個單字到期。"
+      ],
+      "states": [
+        "s01/done"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.done.extraLesson",
+      "text": "再上一課（選用）",
+      "where": "今天都完成時，大卡裡的次要按鈕",
+      "type": "按鈕",
+      "screen": "s01",
+      "design": [
+        "再上一課（選用）"
+      ],
+      "states": [
+        "s01/done"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.paused.plan",
+      "text": "先把到期的單字複習完・約 {minutes} 分鐘",
+      "where": "待複習太多、新課暫停時，大卡標題下方",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "先把到期的單字複習完・約 30 分鐘"
+      ],
+      "states": [
+        "s01/paused"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.paused.start",
+      "text": "開始複習",
+      "where": "新課暫停時，大卡的主要按鈕",
+      "type": "按鈕",
+      "screen": "s01",
+      "design": [
+        "開始複習"
+      ],
+      "states": [
+        "s01/paused"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.paused.title",
+      "text": "新課暫停",
+      "where": "新課暫停時，右邊小卡（原本的「下一課」）變成黃色提示的標題",
+      "type": "標題",
+      "screen": "s01",
+      "design": [
+        "新課暫停"
+      ],
+      "states": [
+        "s01/paused"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.paused.body",
+      "text": "待複習超過 {limit} 個，降回 {limit} 以下會自動恢復",
+      "where": "新課暫停時，黃色小卡的說明",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "待複習超過 100 個，降回 100 以下會自動恢復"
+      ],
+      "states": [
+        "s01/paused"
+      ],
+      "undrawn": false,
+      "note": "元件規格寫的是「新課暫停：先把複習量降下來」，畫面稿較具體，推薦用畫面稿。"
+    },
+    {
+      "key": "home.first.title",
+      "text": "先花 5 分鐘找出你的起點",
+      "where": "第一次開啟時，首頁大卡的標題",
+      "type": "標題",
+      "screen": "s01",
+      "design": [
+        "先花 5 分鐘找出你的起點"
+      ],
+      "states": [
+        "s01/first"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.first.body",
+      "text": "勾出認識的單字，我們會推薦適合的級距。之後隨時可以在設定裡調整。",
+      "where": "第一次開啟時，大卡標題下方",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "勾出認識的單字，我們會推薦適合的級距。之後隨時可以在設定裡調整。"
+      ],
+      "states": [
+        "s01/first"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.first.start",
+      "text": "開始分級測驗",
+      "where": "第一次開啟時，大卡的主要按鈕",
+      "type": "按鈕",
+      "screen": "s01",
+      "design": [
+        "開始分級測驗"
+      ],
+      "states": [
+        "s01/first"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "home.first.skip",
+      "text": "跳過，從 A1 開始",
+      "where": "第一次開啟時，主要按鈕下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s01",
+      "design": [
+        "跳過，從 A1 開始"
+      ],
+      "states": [
+        "s01/first"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.title",
+      "text": "課程",
+      "where": "課程地圖最上方的大標題",
+      "type": "標題",
+      "screen": "s02",
+      "design": [
+        "課程"
+      ],
+      "states": [
+        "s02/default",
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.levelTabs",
+      "text": "級距",
+      "where": "課程地圖上方 A1～C1 那排切換鈕；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s02",
+      "design": [
+        "級距"
+      ],
+      "states": [
+        "s02/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.unitProgress",
+      "text": "{done}／{total} 課",
+      "where": "課程地圖每個主題右邊：上完幾課／共幾課",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "3／8 課",
+        "0／8 課",
+        "0／6 課"
+      ],
+      "states": [
+        "s02/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.current",
+      "text": "目前這課",
+      "where": "課程地圖上正要上的那一課，右邊的小標籤",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "目前這課"
+      ],
+      "states": [
+        "s02/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.expand",
+      "text": "{from}–{to}　展開",
+      "where": "課程地圖主題裡，後面幾課收起來時的展開鈕",
+      "type": "按鈕",
+      "screen": "s02",
+      "design": [
+        "5–8　展開"
+      ],
+      "states": [
+        "s02/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.aria",
+      "text": "小課詳情",
+      "where": "課程地圖點開某一課時跳出的底部彈層；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s02",
+      "design": [
+        "小課詳情"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.newWords",
+      "text": "新字 {count} 個",
+      "where": "小課詳情彈層裡，時間旁邊：這課會學幾個新字",
+      "type": "說明",
+      "screen": "s02",
+      "design": [
+        "新字 8 個"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.listen",
+      "text": "聽 {count}",
+      "where": "小課詳情彈層裡，四個題型題數的第 1 個",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "聽 2"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.speak",
+      "text": "說 {count}",
+      "where": "小課詳情彈層裡，四個題型題數的第 2 個",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "說 2"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.read",
+      "text": "讀 {count}",
+      "where": "小課詳情彈層裡，四個題型題數的第 3 個",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "讀 3"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.write",
+      "text": "寫 {count}",
+      "where": "小課詳情彈層裡，四個題型題數的第 4 個",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "寫 1"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "course.detail.start",
+      "text": "開始這一課",
+      "where": "小課詳情彈層最下面的主要按鈕",
+      "type": "按鈕",
+      "screen": "s02",
+      "design": [
+        "開始這一課"
+      ],
+      "states": [
+        "s02/detail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.name",
+      "text": "{topic} {number}｜{title}",
+      "where": "課名的排列方式：小課詳情彈層標題、小課完成頁最上方（主題名、第幾課、課名由課程內容帶入）",
+      "type": "標籤",
+      "screen": "s02",
+      "design": [
+        "辦公室 3｜會議改期"
+      ],
+      "states": [
+        "s02/detail",
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.type.listenType",
+      "text": "聽音打字",
+      "where": "小課題目卡左上角的題型名稱（聽寫題）",
+      "type": "標籤",
+      "screen": "s03",
+      "design": [
+        "聽音打字"
+      ],
+      "states": [
+        "s03/type",
+        "s03/wrong",
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.type.listenChoice",
+      "text": "聽音選答",
+      "where": "小課題目卡左上角的題型名稱（聽完選答案）",
+      "type": "標籤",
+      "screen": "s03",
+      "design": [
+        "聽音選答"
+      ],
+      "states": [
+        "s03/choice-right"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.type.speak",
+      "text": "跟讀",
+      "where": "小課題目卡左上角的題型名稱（跟讀題）",
+      "type": "標籤",
+      "screen": "s04",
+      "design": [
+        "跟讀"
+      ],
+      "states": [
+        "s04/idle",
+        "s04/recording",
+        "s04/busy",
+        "s04/denied",
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.type.reading",
+      "text": "閱讀理解",
+      "where": "小課題目卡左上角的題型名稱（短文閱讀；查字彈層、離開確認背後也看得到）",
+      "type": "標籤",
+      "screen": "s05",
+      "design": [
+        "閱讀理解"
+      ],
+      "states": [
+        "s05/reading",
+        "s08/default",
+        "s08/saved",
+        "s08/notfound",
+        "s12/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.type.translate",
+      "text": "中翻英",
+      "where": "小課題目卡左上角的題型名稱（寫作：中文翻成英文）",
+      "type": "標籤",
+      "screen": "s06",
+      "design": [
+        "中翻英"
+      ],
+      "states": [
+        "s06/input"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.type.sentence",
+      "text": "造句",
+      "where": "小課題目卡左上角的題型名稱（寫作：用提示字造句）",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "規格有「造句」題型，設計只畫了中翻英。"
+    },
+    {
+      "key": "lesson.loadError",
+      "text": "這題載入失敗",
+      "where": "題目載入失敗時，題目卡裡顯示的訊息",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "lesson.loadErrorNext",
+      "text": "換下一題",
+      "where": "題目載入失敗時，訊息下方的次要按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "lesson.exit.title",
+      "text": "要離開這一課嗎？",
+      "where": "上課中按左上角 ✕ 時跳出的確認框標題",
+      "type": "標題",
+      "screen": "s12",
+      "design": [
+        "要離開這一課嗎？"
+      ],
+      "states": [
+        "s12/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.exit.body",
+      "text": "目前做到 {current}／{total} 題。離開後下次會從第 1 題重新開始。",
+      "where": "離開確認框的說明",
+      "type": "說明",
+      "screen": "s12",
+      "design": [
+        "目前做到 5／12 題。離開後下次會從第 1 題重新開始。"
+      ],
+      "states": [
+        "s12/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.exit.stay",
+      "text": "繼續上課",
+      "where": "離開確認框的主要按鈕（留下來）",
+      "type": "按鈕",
+      "screen": "s12",
+      "design": [
+        "繼續上課"
+      ],
+      "states": [
+        "s12/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.exit.leave",
+      "text": "離開",
+      "where": "離開確認框的次要按鈕（真的離開）",
+      "type": "按鈕",
+      "screen": "s12",
+      "design": [
+        "離開"
+      ],
+      "states": [
+        "s12/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.title",
+      "text": "這一課完成了",
+      "where": "一課上完後整頁的大標題",
+      "type": "標題",
+      "screen": "s14",
+      "design": [
+        "這一課完成了"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": "元件規格寫「完成：辦公室 3」，畫面稿是「這一課完成了」，推薦用畫面稿（課名已在上方）。"
+    },
+    {
+      "key": "lesson.done.newWords",
+      "text": "新學的 {count} 個字已加入單字庫，明天開始複習",
+      "where": "小課完成頁第一張卡：新字清單上方的說明",
+      "type": "說明",
+      "screen": "s14",
+      "design": [
+        "新學的 8 個字已加入單字庫，明天開始複習"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.statsTitle",
+      "text": "這一課",
+      "where": "小課完成頁第二張卡的標題（下面是題數與答對數）",
+      "type": "標籤",
+      "screen": "s14",
+      "design": [
+        "這一課"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.total",
+      "text": "{count} 題",
+      "where": "小課完成頁第二張卡：這課共幾題",
+      "type": "說明",
+      "screen": "s14",
+      "design": [
+        "12 題"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.correct",
+      "text": "答對 {count} 題",
+      "where": "小課完成頁第二張卡：答對幾題",
+      "type": "說明",
+      "screen": "s14",
+      "design": [
+        "答對 10 題"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.wrongScheduled",
+      "text": "答錯的 {count} 題已排進明天的複習",
+      "where": "小課完成頁第二張卡最下面（有答錯才出現）",
+      "type": "說明",
+      "screen": "s14",
+      "design": [
+        "答錯的 2 題已排進明天的複習"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.home",
+      "text": "回到今天",
+      "where": "小課完成頁最下面的主要按鈕；「找不到頁面」也用這顆",
+      "type": "按鈕",
+      "screen": "s14",
+      "design": [
+        "回到今天"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "lesson.done.reviewAgain",
+      "text": "再複習一次剛學的字",
+      "where": "小課完成頁主要按鈕下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s14",
+      "design": [
+        "再複習一次剛學的字"
+      ],
+      "states": [
+        "s14/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "listen.type.instruction",
+      "text": "聽句子，把聽到的英文打出來",
+      "where": "聽音打字題，題型名稱下方的說明",
+      "type": "說明",
+      "screen": "s03",
+      "design": [
+        "聽句子，把聽到的英文打出來"
+      ],
+      "states": [
+        "s03/type",
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "listen.type.placeholder",
+      "text": "把聽到的英文打在這裡",
+      "where": "聽音打字題，輸入框還沒打字時顯示的淡色提示",
+      "type": "說明",
+      "screen": "s03",
+      "design": [
+        "把聽到的英文打在這裡"
+      ],
+      "states": [
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "listen.slow",
+      "text": "慢速播放",
+      "where": "聽音打字題，大喇叭旁邊的烏龜按鈕",
+      "type": "按鈕",
+      "screen": "s03",
+      "design": [
+        "慢速播放"
+      ],
+      "states": [
+        "s03/type"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "listen.cantHear",
+      "text": "聽不出來",
+      "where": "聽音打字題，最下方左邊的次要按鈕（直接看答案）",
+      "type": "按鈕",
+      "screen": "s03",
+      "design": [
+        "聽不出來"
+      ],
+      "states": [
+        "s03/type",
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "listen.voiceTag",
+      "text": "手機內建聲音",
+      "where": "聽力題播放鈕下方的小字，說明現在用哪種聲音念",
+      "type": "標籤",
+      "screen": "s03",
+      "design": [
+        "手機內建聲音"
+      ],
+      "states": [
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "listen.voiceHint",
+      "text": "想要更自然的發音，可以到設定開啟「高音質發音」（選配）",
+      "where": "聽力題下方的提示（用內建聲音時才出現）",
+      "type": "說明",
+      "screen": "s03",
+      "design": [
+        "想要更自然的發音，可以到設定開啟「高音質發音」（選配）"
+      ],
+      "states": [
+        "s03/voice"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.instruction",
+      "text": "聽一次，再唸出這句",
+      "where": "跟讀題，題型名稱下方的說明",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "聽一次，再唸出這句"
+      ],
+      "states": [
+        "s04/idle",
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.listenDemo",
+      "text": "聽示範",
+      "where": "跟讀題，句子下方的播放按鈕",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "聽示範"
+      ],
+      "states": [
+        "s04/idle",
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.record",
+      "text": "開始錄音",
+      "where": "跟讀題，畫面下方的大圓麥克風鈕；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s04",
+      "design": [
+        "開始錄音"
+      ],
+      "states": [
+        "s04/idle"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.idleHint",
+      "text": "點一下開始錄音",
+      "where": "跟讀題，大圓麥克風鈕下方的小字",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "點一下開始錄音"
+      ],
+      "states": [
+        "s04/idle"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.skipNow",
+      "text": "現在不方便說話（這題先跳過）",
+      "where": "跟讀題，最下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "現在不方便說話（這題先跳過）"
+      ],
+      "states": [
+        "s04/idle"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.stop",
+      "text": "結束錄音",
+      "where": "錄音中，大圓鈕（變成方塊）的名稱；讀螢幕軟體念",
+      "type": "無障礙",
+      "screen": "s04",
+      "design": [
+        "結束錄音"
+      ],
+      "states": [
+        "s04/recording"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.recording",
+      "text": "錄音中・{time}　點一下結束",
+      "where": "錄音中，大圓鈕下方的小字（時間會跳動）",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "錄音中・0:03　點一下結束"
+      ],
+      "states": [
+        "s04/recording"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.busyAria",
+      "text": "辨識中",
+      "where": "錄完後轉文字時，大圓鈕的名稱；讀螢幕軟體念",
+      "type": "無障礙",
+      "screen": "s04",
+      "design": [
+        "辨識中"
+      ],
+      "states": [
+        "s04/busy"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.busy",
+      "text": "轉文字中…（錄音不會上傳）",
+      "where": "錄完後轉文字時，大圓鈕下方的小字",
+      "type": "隱私",
+      "screen": "s04",
+      "design": [
+        "轉文字中…（錄音不會上傳）"
+      ],
+      "states": [
+        "s04/busy"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.target",
+      "text": "目標句",
+      "where": "跟讀辨識完成後，畫面上方要唸的那句的標題",
+      "type": "標籤",
+      "screen": "s04",
+      "design": [
+        "目標句"
+      ],
+      "states": [
+        "s04/confirm",
+        "s04/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.confirm.label",
+      "text": "你唸的句子（辨識結果，聽錯的地方可以直接改）",
+      "where": "跟讀辨識完成後，可修改的輸入框上方標題",
+      "type": "標籤",
+      "screen": "s04",
+      "design": [
+        "你唸的句子（辨識結果，聽錯的地方可以直接改）"
+      ],
+      "states": [
+        "s04/confirm"
+      ],
+      "undrawn": false,
+      "note": "元件規格寫「辨識結果如下，聽錯的地方可以直接改」，畫面稿較清楚，推薦用畫面稿。"
+    },
+    {
+      "key": "speak.confirm.hint",
+      "text": "確認沒問題再按「送出」，送出後才會計分。",
+      "where": "跟讀辨識完成後，輸入框下方的小字",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "確認沒問題再按「送出」，送出後才會計分。"
+      ],
+      "states": [
+        "s04/confirm"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.retry",
+      "text": "再唸一次",
+      "where": "跟讀確認與結果時，最下方左邊的次要按鈕",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "再唸一次"
+      ],
+      "states": [
+        "s04/confirm",
+        "s04/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.submit",
+      "text": "送出",
+      "where": "跟讀確認時，最下方右邊的主要按鈕",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "送出"
+      ],
+      "states": [
+        "s04/confirm"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.result.label",
+      "text": "你送出的句子",
+      "where": "跟讀送出後，逐字比對結果上方的標題",
+      "type": "標籤",
+      "screen": "s04",
+      "design": [
+        "你送出的句子"
+      ],
+      "states": [
+        "s04/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.result.score",
+      "text": "錯字 {wrong}・漏字 {missing}・得分 {score}／{total} 字",
+      "where": "跟讀送出後，比對結果下方的成績",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "錯字 1・漏字 1・得分 6／8 字"
+      ],
+      "states": [
+        "s04/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.denied.aria",
+      "text": "麥克風未允許",
+      "where": "沒允許麥克風時，大圓鈕（斜線麥克風）的名稱；讀螢幕軟體念",
+      "type": "無障礙",
+      "screen": "s04",
+      "design": [
+        "麥克風未允許"
+      ],
+      "states": [
+        "s04/denied"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.denied.body",
+      "text": "需要麥克風才能跟讀",
+      "where": "沒允許麥克風時，大圓鈕下方的說明",
+      "type": "權限說明",
+      "screen": "s04",
+      "design": [
+        "需要麥克風才能跟讀"
+      ],
+      "states": [
+        "s04/denied"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.denied.allow",
+      "text": "允許麥克風",
+      "where": "沒允許麥克風時的次要按鈕；跟讀前的麥克風說明框也用這顆",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "允許麥克風"
+      ],
+      "states": [
+        "s04/denied"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.denied.skip",
+      "text": "這題跳過",
+      "where": "沒允許麥克風時，最下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "這題跳過"
+      ],
+      "states": [
+        "s04/denied"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.download.aria",
+      "text": "語音辨識模型下載中，暫時無法錄音",
+      "where": "語音辨識模型還在下載時，灰色大圓鈕的名稱；讀螢幕軟體念",
+      "type": "無障礙",
+      "screen": "s04",
+      "design": [
+        "語音辨識模型下載中，暫時無法錄音"
+      ],
+      "states": [
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.download.hint",
+      "text": "模型下載完才能錄音",
+      "where": "語音辨識模型下載中，灰色大圓鈕下方的小字",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "模型下載完才能錄音"
+      ],
+      "states": [
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "speak.download.skip",
+      "text": "先跳過這題",
+      "where": "語音辨識模型下載中，最下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s04",
+      "design": [
+        "先跳過這題"
+      ],
+      "states": [
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "read.mc.instruction",
+      "text": "選出最適合的字",
+      "where": "選擇題（填空選字），題目卡左上角的說明",
+      "type": "說明",
+      "screen": "s05",
+      "design": [
+        "選出最適合的字"
+      ],
+      "states": [
+        "s05/mc-wrong"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "read.showTranslation",
+      "text": "看中文翻譯",
+      "where": "閱讀理解題，最下方左邊的次要按鈕（看短文翻譯）",
+      "type": "按鈕",
+      "screen": "s05",
+      "design": [
+        "看中文翻譯"
+      ],
+      "states": [
+        "s05/reading"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.hintWords",
+      "text": "提示字：",
+      "where": "中翻英題，中文題目下方、提示單字前面",
+      "type": "標籤",
+      "screen": "s06",
+      "design": [
+        "提示字："
+      ],
+      "states": [
+        "s06/input"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.skip",
+      "text": "跳過",
+      "where": "寫作題，最下方左邊的次要按鈕",
+      "type": "按鈕",
+      "screen": "s06",
+      "design": [
+        "跳過"
+      ],
+      "states": [
+        "s06/input"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.submit",
+      "text": "送出批改",
+      "where": "寫作題，最下方右邊的主要按鈕",
+      "type": "按鈕",
+      "screen": "s06",
+      "design": [
+        "送出批改"
+      ],
+      "states": [
+        "s06/input"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.grading",
+      "text": "批改中…",
+      "where": "按「送出批改」後等 AI 回覆時，按鈕上的字",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "write.yours",
+      "text": "你的句子",
+      "where": "寫作題送出後，你寫的句子上方的標題",
+      "type": "標籤",
+      "screen": "s06",
+      "design": [
+        "你的句子"
+      ],
+      "states": [
+        "s06/ai",
+        "s06/nokey",
+        "s06/fail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.ai.suggestion",
+      "text": "建議寫法",
+      "where": "AI 批改結果：改好的句子上方的標題",
+      "type": "標籤",
+      "screen": "s06",
+      "design": [
+        "建議寫法"
+      ],
+      "states": [
+        "s06/ai"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.ai.explanation",
+      "text": "說明",
+      "where": "AI 批改結果：文法解釋上方的標題",
+      "type": "標籤",
+      "screen": "s06",
+      "design": [
+        "說明"
+      ],
+      "states": [
+        "s06/ai"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.ai.by",
+      "text": "由你的 OpenRouter 帳號批改",
+      "where": "AI 批改結果最下方的小字",
+      "type": "隱私",
+      "screen": "s06",
+      "design": [
+        "由你的 OpenRouter 帳號批改"
+      ],
+      "states": [
+        "s06/ai"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.ai.done",
+      "text": "我懂了，繼續",
+      "where": "AI 批改結果最下方的主要按鈕",
+      "type": "按鈕",
+      "screen": "s06",
+      "design": [
+        "我懂了，繼續"
+      ],
+      "states": [
+        "s06/ai"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.reference",
+      "text": "參考答案",
+      "where": "沒設定 AI 或批改失敗時，參考答案上方的標題",
+      "type": "標籤",
+      "screen": "s06",
+      "design": [
+        "參考答案"
+      ],
+      "states": [
+        "s06/nokey",
+        "s06/fail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.nokey.prompt",
+      "text": "跟參考答案比一比，意思一樣嗎？",
+      "where": "沒設定 AI 批改時，參考答案下方的問句",
+      "type": "無金鑰",
+      "screen": "s06",
+      "design": [
+        "跟參考答案比一比，意思一樣嗎？"
+      ],
+      "states": [
+        "s06/nokey"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.nokey.hint",
+      "text": "設定 OpenRouter 帳號後可以用 AI 批改",
+      "where": "沒設定 AI 批改時，藍色提示框的說明",
+      "type": "無金鑰",
+      "screen": "s06",
+      "design": [
+        "設定 OpenRouter 帳號後可以用 AI 批改"
+      ],
+      "states": [
+        "s06/nokey"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.nokey.goSettings",
+      "text": "去設定",
+      "where": "沒設定 AI 批改時，藍色提示框裡的按鈕",
+      "type": "無金鑰",
+      "screen": "s06",
+      "design": [
+        "去設定"
+      ],
+      "states": [
+        "s06/nokey"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.nokey.wrong",
+      "text": "我寫錯了",
+      "where": "沒設定 AI 批改時，最下方左邊按鈕（自己判斷寫錯）",
+      "type": "按鈕",
+      "screen": "s06",
+      "design": [
+        "我寫錯了"
+      ],
+      "states": [
+        "s06/nokey"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.nokey.right",
+      "text": "我寫對了",
+      "where": "沒設定 AI 批改時，最下方右邊按鈕（自己判斷寫對）",
+      "type": "按鈕",
+      "screen": "s06",
+      "design": [
+        "我寫對了"
+      ],
+      "states": [
+        "s06/nokey"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.fail.title",
+      "text": "AI 批改暫時無法使用",
+      "where": "AI 批改失敗時，紅色訊息的標題",
+      "type": "錯誤",
+      "screen": "s06",
+      "design": [
+        "AI 批改暫時無法使用"
+      ],
+      "states": [
+        "s06/fail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.fail.quota",
+      "text": "今日免費額度已用完。可以先對照參考答案，或到設定換一個模型。",
+      "where": "AI 批改失敗、原因是今天免費次數用完時，標題下方的說明",
+      "type": "錯誤",
+      "screen": "s06",
+      "design": [
+        "今日免費額度已用完。可以先對照參考答案，或到設定換一個模型。"
+      ],
+      "states": [
+        "s06/fail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.fail.network",
+      "text": "網路好像斷了。可以先對照參考答案，或稍後再試。",
+      "where": "AI 批改失敗、原因是網路中斷時，標題下方的說明",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計只畫了「額度用完」一種原因，補上網路中斷。"
+    },
+    {
+      "key": "write.fail.offline",
+      "text": "目前離線，AI 批改需要網路。可以先對照參考答案。",
+      "where": "離線時送出寫作題，標題下方的說明",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "write.fail.keyInvalid",
+      "text": "OpenRouter 連結已失效，請到設定重新連結。",
+      "where": "AI 批改失敗、原因是金鑰失效或被撤銷時，標題下方的說明",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "write.fail.changeModel",
+      "text": "換模型",
+      "where": "AI 批改失敗時，最下方左邊的次要按鈕（到設定換模型）",
+      "type": "按鈕",
+      "screen": "s06",
+      "design": [
+        "換模型"
+      ],
+      "states": [
+        "s06/fail"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "write.sentence.instruction",
+      "text": "用提示字寫一個英文句子",
+      "where": "造句題，題型名稱下方的說明",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "規格有「造句」題型，設計只畫了中翻英。"
+    },
+    {
+      "key": "card.progress",
+      "text": "複習 {current}／{total}",
+      "where": "單字卡複習時，畫面上方的進度",
+      "type": "標籤",
+      "screen": "s07",
+      "design": [
+        "複習 8／24"
+      ],
+      "states": [
+        "s07/question",
+        "s07/right",
+        "s07/wrong"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "card.instruction",
+      "text": "選出這個字的意思",
+      "where": "單字卡出題時，英文單字下方的說明",
+      "type": "說明",
+      "screen": "s07",
+      "design": [
+        "選出這個字的意思"
+      ],
+      "states": [
+        "s07/question"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "card.exampleHint",
+      "text": "看例句提示",
+      "where": "單字卡出題時，四個選項下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s07",
+      "design": [
+        "看例句提示"
+      ],
+      "states": [
+        "s07/question"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "card.right",
+      "text": "正確：{meaning}",
+      "where": "單字卡答對時，綠色回饋區的開頭",
+      "type": "說明",
+      "screen": "s07",
+      "design": [
+        "正確：延後、延期"
+      ],
+      "states": [
+        "s07/right"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "card.wrong",
+      "text": "{word} 是「{meaning}」",
+      "where": "單字卡答錯時，回饋區的開頭（告訴你正確意思）",
+      "type": "說明",
+      "screen": "s07",
+      "design": [
+        "postpone 是「延後、延期」"
+      ],
+      "states": [
+        "s07/wrong"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "dict.aria",
+      "text": "單字查義",
+      "where": "點英文字跳出的底部查義彈層；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "s08",
+      "design": [
+        "單字查義"
+      ],
+      "states": [
+        "s08/default",
+        "s08/saved",
+        "s08/notfound"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "dict.lemma",
+      "text": "{form} → 原形 {lemma}",
+      "where": "查義彈層最上方：點到的是變化形時（例：複數、過去式）顯示原形",
+      "type": "說明",
+      "screen": "s08",
+      "design": [
+        "meetings → 原形 meeting"
+      ],
+      "states": [
+        "s08/saved"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "dict.save",
+      "text": "加入收藏單字庫",
+      "where": "查義彈層裡的收藏按鈕（還沒收藏時）",
+      "type": "按鈕",
+      "screen": "s08",
+      "design": [
+        "加入收藏單字庫"
+      ],
+      "states": [
+        "s08/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "dict.saved",
+      "text": "已在收藏單字庫（點一下取消）",
+      "where": "查義彈層裡的收藏按鈕（已收藏時，再點會取消）",
+      "type": "按鈕",
+      "screen": "s08",
+      "design": [
+        "已在收藏單字庫（點一下取消）"
+      ],
+      "states": [
+        "s08/saved"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "dict.source",
+      "text": "資料來源：ECDICT",
+      "where": "查義彈層最下方的小字",
+      "type": "說明",
+      "screen": "s08",
+      "design": [
+        "資料來源：ECDICT"
+      ],
+      "states": [
+        "s08/default",
+        "s08/saved",
+        "s08/notfound"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "dict.notFound",
+      "text": "字典裡沒有這個字（可能是人名或專有名詞）",
+      "where": "查義彈層：點到的字字典裡沒有時",
+      "type": "錯誤",
+      "screen": "s08",
+      "design": [
+        "字典裡沒有這個字（可能是人名或專有名詞）"
+      ],
+      "states": [
+        "s08/notfound"
+      ],
+      "undrawn": false,
+      "note": "元件規格寫「字典裡沒有這個字」，畫面稿多了括號說明，推薦用畫面稿。"
+    },
+    {
+      "key": "words.title",
+      "text": "單字庫",
+      "where": "單字庫頁最上方的大標題",
+      "type": "標題",
+      "screen": "s09",
+      "design": [
+        "單字庫"
+      ],
+      "states": [
+        "s09/default",
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.summary",
+      "text": "共 {count} 字・今天到期 {due}",
+      "where": "單字庫標題下方：總字數與今天要複習的數量",
+      "type": "說明",
+      "screen": "s09",
+      "design": [
+        "共 312 字・今天到期 24"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.summaryEmpty",
+      "text": "共 {count} 字",
+      "where": "單字庫還是空的時候，標題下方的小字",
+      "type": "說明",
+      "screen": "s09",
+      "design": [
+        "共 0 字"
+      ],
+      "states": [
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.search",
+      "text": "搜尋英文或中文",
+      "where": "單字庫最上方搜尋框還沒打字時的淡色提示",
+      "type": "說明",
+      "screen": "s09",
+      "design": [
+        "搜尋英文或中文"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.filter.all",
+      "text": "全部",
+      "where": "單字庫搜尋框下方的篩選鈕第 1 個",
+      "type": "按鈕",
+      "screen": "s09",
+      "design": [
+        "全部"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.filter.due",
+      "text": "到期",
+      "where": "單字庫搜尋框下方的篩選鈕第 2 個（只看今天到期）",
+      "type": "按鈕",
+      "screen": "s09",
+      "design": [
+        "到期"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.filter.saved",
+      "text": "收藏",
+      "where": "單字庫搜尋框下方的篩選鈕第 3 個（只看收藏的字）",
+      "type": "按鈕",
+      "screen": "s09",
+      "design": [
+        "收藏"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.familiarity",
+      "text": "熟悉度：{value}",
+      "where": "單字庫篩選列右邊的下拉選單",
+      "type": "按鈕",
+      "screen": "s09",
+      "design": [
+        "熟悉度：全部"
+      ],
+      "states": [
+        "s09/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.familiarity.new",
+      "text": "新字",
+      "where": "熟悉度下拉選單的選項：剛學、還沒複習過",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計沒畫下拉內容；選項分法待 TASK-11 依複習狀態定案，先提三級。"
+    },
+    {
+      "key": "words.familiarity.learning",
+      "text": "學習中",
+      "where": "熟悉度下拉選單的選項：還在短間隔反覆複習",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "words.familiarity.known",
+      "text": "已熟悉",
+      "where": "熟悉度下拉選單的選項：複習間隔已經很長",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "words.savedMark",
+      "text": "已收藏",
+      "where": "單字庫列表裡收藏字旁的星星；讀螢幕軟體念的名稱",
+      "type": "無障礙",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計稿星星沒有名稱，補給讀螢幕軟體。"
+    },
+    {
+      "key": "words.empty.title",
+      "text": "單字庫還是空的",
+      "where": "單字庫沒有任何字時，畫面中間的標題",
+      "type": "空狀態",
+      "screen": "s09",
+      "design": [
+        "單字庫還是空的"
+      ],
+      "states": [
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.empty.body",
+      "text": "上完第一課，學過的字會出現在這裡；查字時按「收藏」也能加進來。",
+      "where": "單字庫沒有任何字時，標題下方的說明",
+      "type": "空狀態",
+      "screen": "s09",
+      "design": [
+        "上完第一課，學過的字會出現在這裡；查字時按「收藏」也能加進來。"
+      ],
+      "states": [
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "words.empty.start",
+      "text": "去上第一課",
+      "where": "單字庫沒有任何字時，說明下方的主要按鈕",
+      "type": "按鈕",
+      "screen": "s09",
+      "design": [
+        "去上第一課"
+      ],
+      "states": [
+        "s09/empty"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.group",
+      "text": "第 {current}／{total} 組",
+      "where": "分級測驗上方的進度",
+      "type": "標籤",
+      "screen": "s10",
+      "design": [
+        "第 2／5 組"
+      ],
+      "states": [
+        "s10/pick"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.instruction",
+      "text": "勾選你「認識意思」的字",
+      "where": "分級測驗每一組的標題",
+      "type": "標題",
+      "screen": "s10",
+      "design": [
+        "勾選你「認識意思」的字"
+      ],
+      "states": [
+        "s10/pick"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.hint",
+      "text": "不確定就不要勾；裡面混了幾個不存在的假字。",
+      "where": "分級測驗標題下方的提醒",
+      "type": "說明",
+      "screen": "s10",
+      "design": [
+        "不確定就不要勾；裡面混了幾個不存在的假字。"
+      ],
+      "states": [
+        "s10/pick"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.next",
+      "text": "下一組（已勾 {count} 個）",
+      "where": "分級測驗最下方的主要按鈕",
+      "type": "按鈕",
+      "screen": "s10",
+      "design": [
+        "下一組（已勾 4 個）"
+      ],
+      "states": [
+        "s10/pick"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.finish",
+      "text": "看結果（已勾 {count} 個）",
+      "where": "分級測驗最後一組時，最下方的主要按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計只畫了中間的組，最後一組按鈕文字補上。"
+    },
+    {
+      "key": "placement.result.title",
+      "text": "你的起點",
+      "where": "分級測驗結果頁最上方的標題",
+      "type": "標題",
+      "screen": "s10",
+      "design": [
+        "你的起點"
+      ],
+      "states": [
+        "s10/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.result.chart",
+      "text": "每一級你認識的字的比例",
+      "where": "分級測驗結果頁，各級百分比長條下方的說明",
+      "type": "說明",
+      "screen": "s10",
+      "design": [
+        "每一級你認識的字的比例"
+      ],
+      "states": [
+        "s10/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.result.penalty",
+      "text": "勾到 {count} 個假字，結果已向下修正",
+      "where": "分級測驗結果頁：有勾到假字時的提示",
+      "type": "說明",
+      "screen": "s10",
+      "design": [
+        "勾到 1 個假字，結果已向下修正"
+      ],
+      "states": [
+        "s10/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.result.start",
+      "text": "從 {level} 開始",
+      "where": "分級測驗結果頁最下方的主要按鈕",
+      "type": "按鈕",
+      "screen": "s10",
+      "design": [
+        "從 B1 開始"
+      ],
+      "states": [
+        "s10/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "placement.result.choose",
+      "text": "想自己選級距",
+      "where": "分級測驗結果頁主要按鈕下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s10",
+      "design": [
+        "想自己選級距"
+      ],
+      "states": [
+        "s10/result"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.title",
+      "text": "設定",
+      "where": "設定頁最上方的大標題（清除資料確認背後也看得到）",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "設定"
+      ],
+      "states": [
+        "s11/default",
+        "s11/linked",
+        "s11/keyerr",
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.learning",
+      "text": "學習",
+      "where": "設定頁第 1 區的小標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "學習"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.level",
+      "text": "目前級距",
+      "where": "設定「學習」區第 1 列",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "目前級距"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.levelPicker",
+      "text": "選擇級距",
+      "where": "點「目前級距」或分級結果頁「想自己選級距」後，選單的標題",
+      "type": "標題",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "settings.dailyNew",
+      "text": "每日新字數",
+      "where": "設定「學習」區第 2 列（右邊是數字）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "每日新字數"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.title",
+      "text": "AI 批改（OpenRouter）",
+      "where": "設定頁 AI 批改區的小標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "AI 批改（OpenRouter）"
+      ],
+      "states": [
+        "s11/default",
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.statusNone",
+      "text": "狀態：未設定",
+      "where": "設定 AI 批改區：還沒連結時的狀態",
+      "type": "無金鑰",
+      "screen": "s11",
+      "design": [
+        "狀態：未設定"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.oauth",
+      "text": "用 OpenRouter 帳號一鍵授權",
+      "where": "設定 AI 批改區的主要按鈕（還沒連結時）",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "用 OpenRouter 帳號一鍵授權"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.oauthFail",
+      "text": "授權沒有完成，請再試一次。",
+      "where": "從 OpenRouter 授權頁回來但沒成功時，按鈕下方的紅字",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "settings.ai.pasteKey",
+      "text": "改用貼上金鑰",
+      "where": "設定 AI 批改區，主要按鈕下方的文字按鈕",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "改用貼上金鑰"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.keyPrivacy",
+      "text": "金鑰只存在這支手機，不會傳到我們的伺服器",
+      "where": "設定 AI 批改區最下方的小字（鎖頭圖示）",
+      "type": "隱私",
+      "screen": "s11",
+      "design": [
+        "金鑰只存在這支手機，不會傳到我們的伺服器"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.writingPrivacy",
+      "text": "寫作題的句子只會送到你選的 OpenRouter 模型",
+      "where": "設定 AI 批改區，金鑰說明下方的第二行小字",
+      "type": "隱私",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "規格 §9 第 3 點的隱私說明，設計未畫，建議放這裡。"
+    },
+    {
+      "key": "settings.ai.linked",
+      "text": "已連結",
+      "where": "設定 AI 批改區：連結成功後的狀態（綠色勾）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "已連結"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.model",
+      "text": "模型",
+      "where": "設定 AI 批改區：連結後的模型選擇列",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "模型"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.freeModel",
+      "text": "免費模型",
+      "where": "設定 AI 批改區：模型選擇列右側（選的是免費模型時）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "免費模型"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.quota",
+      "text": "今日免費額度剩 {count} 次",
+      "where": "設定 AI 批改區：模型下方的剩餘次數",
+      "type": "說明",
+      "screen": "s11",
+      "design": [
+        "今日免費額度剩 37 次"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.unlink",
+      "text": "解除連結",
+      "where": "設定 AI 批改區的紅字按鈕（連結後）；解除確認框的確認鈕也用這句",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "解除連結"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.ai.unlinkConfirm.title",
+      "text": "解除 OpenRouter 連結？",
+      "where": "按「解除連結」後跳出的確認框標題",
+      "type": "標題",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格要求危險按鈕一律二次確認，設計未畫此框。"
+    },
+    {
+      "key": "settings.ai.unlinkConfirm.body",
+      "text": "解除後，寫作題改成對照參考答案自己判斷。之後可以再連結。",
+      "where": "解除連結確認框的說明",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "settings.key.title",
+      "text": "貼上 OpenRouter 金鑰",
+      "where": "點「改用貼上金鑰」後的區塊標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "貼上 OpenRouter 金鑰"
+      ],
+      "states": [
+        "s11/keyerr"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.key.label",
+      "text": "金鑰",
+      "where": "貼金鑰輸入框上方的欄位名稱",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "金鑰"
+      ],
+      "states": [
+        "s11/keyerr"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.key.invalid",
+      "text": "金鑰無效：請確認是否完整貼上（應以 sk-or- 開頭）",
+      "where": "貼的金鑰格式不對時，輸入框下方的紅字",
+      "type": "錯誤",
+      "screen": "s11",
+      "design": [
+        "金鑰無效：請確認是否完整貼上（應以 sk-or- 開頭）"
+      ],
+      "states": [
+        "s11/keyerr"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.key.rejected",
+      "text": "OpenRouter 不接受這組金鑰，請到 OpenRouter 確認金鑰還有效。",
+      "where": "金鑰格式對、但 OpenRouter 驗證不通過時，輸入框下方的紅字",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "settings.key.save",
+      "text": "驗證並儲存",
+      "where": "貼金鑰區塊的主要按鈕",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "驗證並儲存"
+      ],
+      "states": [
+        "s11/keyerr"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.key.verifying",
+      "text": "驗證中…",
+      "where": "按「驗證並儲存」後等待時，按鈕上的字",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "settings.look",
+      "text": "外觀與字級",
+      "where": "設定頁外觀區的小標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "外觀與字級"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.theme",
+      "text": "外觀",
+      "where": "設定「外觀與字級」區第 1 列",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "外觀"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.theme.system",
+      "text": "跟隨系統",
+      "where": "「外觀」的選項：跟手機的淺色／深色設定走（預設）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "跟隨系統"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.theme.light",
+      "text": "淺色",
+      "where": "「外觀」的選項",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "畫面說明有寫，選單沒畫。"
+    },
+    {
+      "key": "settings.theme.dark",
+      "text": "深色",
+      "where": "「外觀」的選項",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "畫面說明有寫，選單沒畫。"
+    },
+    {
+      "key": "settings.fontSize",
+      "text": "字級大小",
+      "where": "設定「外觀與字級」區第 2 列",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "字級大小"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.fontSize.standard",
+      "text": "標準",
+      "where": "「字級大小」的選項（預設）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "標準"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.fontSize.large",
+      "text": "大",
+      "where": "「字級大小」的選項",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "畫面說明有寫，選單沒畫。"
+    },
+    {
+      "key": "settings.fontSize.xlarge",
+      "text": "特大",
+      "where": "「字級大小」的選項",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "畫面說明有寫，選單沒畫。"
+    },
+    {
+      "key": "settings.voice",
+      "text": "語音",
+      "where": "設定頁語音區的小標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "語音"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.pronounce",
+      "text": "發音",
+      "where": "設定「語音」區第 1 列（選用哪種聲音念英文）",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "發音"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.builtin",
+      "text": "手機內建聲音（預設）",
+      "where": "設定「發音」右側目前的選擇",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "手機內建聲音（預設）"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.hq",
+      "text": "高音質發音（選配）",
+      "where": "設定「語音」區第 2 列",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "高音質發音（選配）"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.hqHint",
+      "text": "約 310MB・需支援 WebGPU 的手機",
+      "where": "設定「高音質發音」下方的小字",
+      "type": "說明",
+      "screen": "s11",
+      "design": [
+        "約 310MB・需支援 WebGPU 的手機"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.hqUnsupported",
+      "text": "這支手機不支援高音質發音",
+      "where": "手機不支援 WebGPU 時，「高音質發音」下方的小字（取代下載鈕）",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "settings.voice.stt",
+      "text": "語音辨識模型",
+      "where": "設定「語音」區第 3 列",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "語音辨識模型"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.sttHint",
+      "text": "跟讀用・約 50–80MB",
+      "where": "設定「語音辨識模型」下方的小字",
+      "type": "說明",
+      "screen": "s11",
+      "design": [
+        "跟讀用・約 50–80MB"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": "規格寫「約 28MB」，但語音原型實測（voice-poc.md）28MB 版本輸出亂碼不能用，可用的是 52MB／76MB，所以保留設計稿的 50–80MB；請創辦人確認。"
+    },
+    {
+      "key": "settings.voice.download",
+      "text": "下載",
+      "where": "設定「高音質發音」「語音辨識模型」右側，還沒下載時的按鈕",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "下載"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.voice.downloaded",
+      "text": "已下載",
+      "where": "設定「語音辨識模型」右側，已下載時的狀態",
+      "type": "標籤",
+      "screen": "s11",
+      "design": [
+        "已下載"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.data",
+      "text": "資料",
+      "where": "設定頁資料區的小標題（清除確認背後也看得到）",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "資料"
+      ],
+      "states": [
+        "s11/default",
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.export",
+      "text": "匯出學習紀錄",
+      "where": "設定「資料」區第 1 列",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "匯出學習紀錄"
+      ],
+      "states": [
+        "s11/default",
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.clear",
+      "text": "清除這支手機上的資料",
+      "where": "設定「資料」區第 2 列（紅字）",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "清除這支手機上的資料"
+      ],
+      "states": [
+        "s11/default",
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.account",
+      "text": "帳號與同步",
+      "where": "設定頁帳號區的小標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "帳號與同步"
+      ],
+      "states": [
+        "s11/default",
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.account.local",
+      "text": "未登入：進度只存在這支手機",
+      "where": "設定帳號區：沒登入時的說明",
+      "type": "隱私",
+      "screen": "s11",
+      "design": [
+        "未登入：進度只存在這支手機"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.account.lastSync",
+      "text": "上次同步：{time}",
+      "where": "設定帳號區：登入後顯示最後一次同步的時間",
+      "type": "說明",
+      "screen": "s11",
+      "design": [
+        "上次同步：剛剛"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.other",
+      "text": "其他",
+      "where": "設定頁最後一區的小標題",
+      "type": "標題",
+      "screen": "s11",
+      "design": [
+        "其他"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "settings.about",
+      "text": "隱私說明・授權・原始碼",
+      "where": "設定「其他」區的列，點了進入說明頁（內容是 TASK-21）",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "隱私說明・授權・原始碼"
+      ],
+      "states": [
+        "s11/default"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "clearData.title",
+      "text": "清除這支手機上的所有學習資料？",
+      "where": "按「清除這支手機上的資料」後跳出的確認框標題",
+      "type": "標題",
+      "screen": "s13",
+      "design": [
+        "清除這支手機上的所有學習資料？"
+      ],
+      "states": [
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "clearData.body",
+      "text": "單字庫、複習排程和設定都會刪除，無法復原。已登入的話，雲端資料不受影響。",
+      "where": "清除資料確認框的說明",
+      "type": "說明",
+      "screen": "s13",
+      "design": [
+        "單字庫、複習排程和設定都會刪除，無法復原。已登入的話，雲端資料不受影響。"
+      ],
+      "states": [
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "clearData.ack",
+      "text": "我了解資料無法復原",
+      "where": "清除資料確認框的勾選框（勾了才能按清除）",
+      "type": "按鈕",
+      "screen": "s13",
+      "design": [
+        "我了解資料無法復原"
+      ],
+      "states": [
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "clearData.confirm",
+      "text": "清除資料",
+      "where": "清除資料確認框的紅色按鈕",
+      "type": "按鈕",
+      "screen": "s13",
+      "design": [
+        "清除資料"
+      ],
+      "states": [
+        "s13/default",
+        "s13/checked"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "clearData.busy",
+      "text": "清除中…",
+      "where": "按下清除後等待時，紅色按鈕上的字",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "clearData.done",
+      "text": "已清除這支手機上的資料",
+      "where": "清除完成後，畫面下方短暫出現的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "account.entry",
+      "text": "登入以同步進度",
+      "where": "設定帳號區：沒登入時的文字按鈕（點開登入表單）",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。前面的「›」改由圖示呈現，不放進文案。"
+    },
+    {
+      "key": "account.intro",
+      "text": "登入後，這支手機的進度會合併到雲端，換手機也能接著學。",
+      "where": "登入表單最上方的說明",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "規格 §3：登入後合併本機資料到雲端。TASK-20 目前沒有這句。"
+    },
+    {
+      "key": "account.google",
+      "text": "使用 Google 登入",
+      "where": "登入表單：Google 登入按鈕（官方站有設定 Google 時才出現）",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.email.label",
+      "text": "Email",
+      "where": "登入表單：email 輸入框上方的欄位名稱",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。台灣介面「Email」「電子郵件」都常見，推薦「Email」較短。"
+    },
+    {
+      "key": "account.email.send",
+      "text": "寄驗證碼",
+      "where": "登入表單：輸入 email 後的主要按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.code.label",
+      "text": "輸入寄到 {email} 的驗證碼",
+      "where": "登入表單第二步：驗證碼輸入框上方",
+      "type": "標籤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.code.submit",
+      "text": "登入",
+      "where": "登入表單第二步：輸入驗證碼後的主要按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.code.changeEmail",
+      "text": "重新輸入 Email",
+      "where": "登入表單第二步：主要按鈕下方的文字按鈕（回上一步改 email）",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.error",
+      "text": "沒有成功，請確認網路或驗證碼後再試一次。",
+      "where": "登入表單：寄驗證碼或登入失敗時的紅字",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。TASK-20 原字「沒有成功，請再試一次。」，推薦補上可能原因。"
+    },
+    {
+      "key": "account.signedIn",
+      "text": "已登入：{email}",
+      "where": "設定帳號區：登入後顯示帳號",
+      "type": "說明",
+      "screen": "s11",
+      "design": [
+        "已登入：xxx@gmail.com"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.logout",
+      "text": "登出",
+      "where": "設定帳號區：登入後右側的按鈕",
+      "type": "按鈕",
+      "screen": "s11",
+      "design": [
+        "登出"
+      ],
+      "states": [
+        "s11/linked"
+      ],
+      "undrawn": false,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "account.logoutBlocked",
+      "text": "還有資料沒同步到雲端，連上網路後再登出。",
+      "where": "按登出時還有沒同步的資料，出現在登出鈕上方的紅字",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "TASK-20 登入元件目前用的字（AccountPanel.tsx）。"
+    },
+    {
+      "key": "download.stt.title",
+      "text": "語音辨識模型下載中",
+      "where": "跟讀題：語音辨識模型還在下載時，進度條上方的標題",
+      "type": "標題",
+      "screen": "s04",
+      "design": [
+        "語音辨識模型下載中"
+      ],
+      "states": [
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "download.stt.body",
+      "text": "約 50–80MB，只需下載一次，之後不用網路也能跟讀。下載時可以先做別題，下載會在背景繼續。",
+      "where": "跟讀題：語音辨識模型下載進度條下方的說明",
+      "type": "說明",
+      "screen": "s04",
+      "design": [
+        "約 50–80MB，只需下載一次，之後不用網路也能跟讀。下載時可以先做別題，下載會在背景繼續。"
+      ],
+      "states": [
+        "s04/stt-download"
+      ],
+      "undrawn": false,
+      "note": "大小同設定頁：規格寫約 28MB，實測可用版本為 52MB／76MB，保留 50–80MB；請創辦人確認。"
+    },
+    {
+      "key": "download.failed",
+      "text": "下載中斷",
+      "where": "任何模型下載失敗時，進度條旁的紅字（後面接「重試」）",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "download.hq.confirmTitle",
+      "text": "下載高音質發音？",
+      "where": "設定按「高音質發音」的下載後，跳出的告知框標題",
+      "type": "標題",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "規格要求下載前告知大小，設計未畫。"
+    },
+    {
+      "key": "download.hq.confirmBody",
+      "text": "約 310MB，建議連上 Wi-Fi 再下載。下載後不用網路也能用。",
+      "where": "高音質發音下載告知框的說明",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "download.hq.delete",
+      "text": "刪除高音質發音",
+      "where": "設定：高音質發音下載完成後，該列的紅字按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格的危險按鈕舉例有「刪除模型」，設計未畫。"
+    },
+    {
+      "key": "download.hq.deleteConfirmTitle",
+      "text": "刪除高音質發音？",
+      "where": "按「刪除高音質發音」後的確認框標題",
+      "type": "標題",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "download.hq.deleteConfirmBody",
+      "text": "刪除後改用手機內建聲音，之後可以再下載。",
+      "where": "刪除高音質發音確認框的說明",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "download.storageFull",
+      "text": "手機空間不夠，下載不了。請先清出約 {size} 的空間。",
+      "where": "下載模型時手機空間不足，進度條下方的紅字",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "install.title",
+      "text": "把 LinguaApp 加到主畫面",
+      "where": "用瀏覽器開幾次後，畫面下方出現的加入主畫面提示標題",
+      "type": "標題",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "規格 §1 PWA，設計未畫。"
+    },
+    {
+      "key": "install.body",
+      "text": "之後從主畫面直接開啟，沒有網路也能複習。",
+      "where": "加入主畫面提示的說明",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "install.add",
+      "text": "加到主畫面",
+      "where": "加入主畫面提示的主要按鈕（Android 等支援一鍵加入的瀏覽器）",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "install.iosSteps",
+      "text": "在 Safari 點下方的「分享」，再選「加入主畫面」。",
+      "where": "iPhone 上的加入主畫面提示（iPhone 不能一鍵加入，改成教步驟）",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "「分享」「加入主畫面」是 iOS 自己的按鈕名稱，需與 iOS 繁中介面一致。"
+    },
+    {
+      "key": "install.updateReady",
+      "text": "有新版本可以用了",
+      "where": "App 有更新時，畫面下方出現的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "install.reload",
+      "text": "重新整理",
+      "where": "新版本提示右側的動作",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "install.offlineReady",
+      "text": "已經可以離線使用",
+      "where": "第一次開啟、離線所需檔案準備好時，畫面下方出現一次的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.offline.banner",
+      "text": "目前離線：複習與已下載的課程仍可使用",
+      "where": "沒有網路時，各頁標題下方的黃色長條（不會自己消失，連上網路才收起）",
+      "type": "說明",
+      "screen": "s01",
+      "design": [
+        "目前離線：複習與已下載的課程仍可使用"
+      ],
+      "states": [
+        "s01/offline"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "system.offline.needNetwork",
+      "text": "這個功能需要網路，連上後再試一次。",
+      "where": "離線時點了需要網路的功能（例：下載模型、登入）",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.offline.lessonNotDownloaded",
+      "text": "這一課還沒下載，連上網路後就能上。",
+      "where": "離線時點了還沒下載的課",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.mic.title",
+      "text": "跟讀需要用到麥克風",
+      "where": "第一次做跟讀題、瀏覽器詢問麥克風權限之前，先出現的說明框標題",
+      "type": "權限說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "先說明再讓瀏覽器跳權限詢問，提高允許率。"
+    },
+    {
+      "key": "system.mic.body",
+      "text": "錄音只在這支手機上轉成文字，不會上傳。",
+      "where": "麥克風說明框的說明（下方按鈕：「允許麥克風」「這題跳過」）",
+      "type": "隱私",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "system.mic.blocked",
+      "text": "麥克風被瀏覽器擋下了。請到瀏覽器的網站設定開啟麥克風，再回來重試。",
+      "where": "曾按過「封鎖」、瀏覽器不會再詢問時，跟讀題顯示的說明",
+      "type": "權限說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.storage.title",
+      "text": "讓這支手機保留你的學習紀錄",
+      "where": "第一次上完課後，請瀏覽器保留資料前的說明框標題",
+      "type": "權限說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "瀏覽器空間不足時可能清掉網站資料；先說明再請求保留。"
+    },
+    {
+      "key": "system.storage.body",
+      "text": "手機空間不足時，瀏覽器可能會清掉網站資料。允許保留後，單字庫和進度比較不會被刪掉。",
+      "where": "保留資料說明框的說明",
+      "type": "權限說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "system.storage.allow",
+      "text": "允許保留",
+      "where": "保留資料說明框的主要按鈕",
+      "type": "按鈕",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "同上。"
+    },
+    {
+      "key": "system.error.generic",
+      "text": "出了點問題，請再試一次。",
+      "where": "沒有更具體原因時的通用錯誤訊息",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.error.dataLoad",
+      "text": "讀不到這支手機上的學習資料，請重新開啟 App。",
+      "where": "App 開啟時讀不到本機資料，畫面中間的訊息",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.sync.failed",
+      "text": "同步沒有完成，下次連上網路會自動再試。",
+      "where": "登入後同步失敗時，畫面下方短暫出現的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.toast.saved",
+      "text": "已加入收藏",
+      "where": "在查義彈層按「加入收藏單字庫」後，畫面上方短暫出現的提示",
+      "type": "Toast",
+      "screen": "s08",
+      "design": [
+        "已加入收藏"
+      ],
+      "states": [
+        "s08/saved"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "system.toast.undo",
+      "text": "復原",
+      "where": "「已加入收藏」提示右側的動作（反悔）",
+      "type": "按鈕",
+      "screen": "s08",
+      "design": [
+        "復原"
+      ],
+      "states": [
+        "s08/saved"
+      ],
+      "undrawn": false,
+      "note": ""
+    },
+    {
+      "key": "system.toast.unsaved",
+      "text": "已取消收藏",
+      "where": "取消收藏後，短暫出現的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.toast.gradeFailed",
+      "text": "批改失敗：網路中斷",
+      "where": "送出批改後網路斷掉，畫面下方短暫出現的提示（右側接「重試」）",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "元件規格（components.md）有寫，示意畫面沒畫到。"
+    },
+    {
+      "key": "system.toast.exported",
+      "text": "學習紀錄已匯出",
+      "where": "按「匯出學習紀錄」完成後，畫面下方短暫出現的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.toast.unlinked",
+      "text": "已解除 OpenRouter 連結",
+      "where": "解除連結完成後，畫面下方短暫出現的提示",
+      "type": "Toast",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.notFound",
+      "text": "找不到這個頁面",
+      "where": "網址打錯或連結失效時，畫面中間的訊息（下方按鈕「回到今天」）",
+      "type": "錯誤",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    },
+    {
+      "key": "system.appDescription",
+      "text": "英文聽說讀寫練習，搭配間隔重複複習單字。",
+      "where": "加到主畫面、分享連結時顯示的 App 簡介（使用者在 App 外看到）",
+      "type": "說明",
+      "screen": "sys",
+      "design": [],
+      "states": [],
+      "undrawn": true,
+      "note": "設計未畫，依規格補上。"
+    }
+  ],
+  "excluded": [
+    {
+      "text": "辦公室 3",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "會議改期",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "辦公室",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "旅行",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "飲食與聚餐",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "1　自我介紹與部門",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "2　電話留言",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "3　會議改期",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "4　請假與代理人",
+      "reason": "課名、主題名（課程內容 content/curriculum）"
+    },
+    {
+      "text": "他們把會議改到星期五。",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "他們決定怎麼處理會議？",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "因為國定假日",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "因為客戶要求",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "因為會議室被借走",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "我們可以把會議延到下週一嗎？",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "會議延到星期五。",
+      "reason": "學習內容（題庫產生）：題目、選項、翻譯"
+    },
+    {
+      "text": "1／2　為什麼要改期？",
+      "reason": "學習內容（題庫產生）：題號＋題目（題號格式同進度顯示）"
+    },
+    {
+      "text": "延後、延期",
+      "reason": "學習內容（題庫產生）：選項的中文釋義"
+    },
+    {
+      "text": "推廣、升遷",
+      "reason": "學習內容（題庫產生）：選項的中文釋義"
+    },
+    {
+      "text": "提議、建議",
+      "reason": "學習內容（題庫產生）：選項的中文釋義"
+    },
+    {
+      "text": "保護、防護",
+      "reason": "學習內容（題庫產生）：選項的中文釋義"
+    },
+    {
+      "text": "postpone＝延後；promote＝推廣、升遷。",
+      "reason": "學習內容（題庫產生）：選擇題解說"
+    },
+    {
+      "text": "再聽一次示範，注意單複數和句尾的星期。",
+      "reason": "逐題的跟讀提示，屬題目內容；來源（預先產生或固定句）待 TASK-12 決定"
+    },
+    {
+      "text": "表示「延到某時為止」，比",
+      "reason": "AI 批改產生的文法說明（LLM 輸出）"
+    },
+    {
+      "text": "自然。",
+      "reason": "AI 批改產生的文法說明（LLM 輸出）"
+    },
+    {
+      "text": "比",
+      "reason": "AI 批改產生的文法說明（LLM 輸出）"
+    },
+    {
+      "text": "更客氣，適合職場請求。",
+      "reason": "AI 批改產生的文法說明（LLM 輸出）"
+    },
+    {
+      "text": "會議；集會",
+      "reason": "字典釋義（ECDICT）"
+    },
+    {
+      "text": "會面；相遇",
+      "reason": "字典釋義（ECDICT）"
+    },
+    {
+      "text": "延後",
+      "reason": "字典釋義（ECDICT）"
+    },
+    {
+      "text": "會議",
+      "reason": "字典釋義（ECDICT）"
+    },
+    {
+      "text": "重新安排",
+      "reason": "字典釋義（ECDICT）"
+    },
+    {
+      "text": "議程",
+      "reason": "字典釋義（ECDICT）"
+    },
+    {
+      "text": "出席者",
+      "reason": "字典釋義（ECDICT）"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ test('課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 
   await page.goto(`/course?lesson=${LESSON}`)
   await page.getByRole('button', { name: '開始這一課' }).click()
   await expect(page).toHaveURL(new RegExp(`/lesson/${LESSON}$`))
-  await expect(page.getByRole('progressbar', { name: '小課進度' })).toHaveAttribute(
+  await expect(page.getByRole('progressbar', { name: '作答進度' })).toHaveAttribute(
     'aria-valuemax',
     String(STEPS.length),
   )

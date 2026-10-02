@@ -21,7 +21,7 @@ beforeEach(async () => {
   await db.open()
 })
 
-const progress = () => screen.getByRole('progressbar', { name: '小課進度' })
+const progress = () => screen.getByRole('progressbar', { name: '作答進度' })
 const count = (n: number) => screen.findByText(`${n}／12`)
 const option = (name: string) => screen.getByRole('radio', { name })
 const cont = () => fireEvent.click(screen.getByRole('button', { name: '繼續' }))
