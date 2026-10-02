@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l05",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Amy",
+    "Ben"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l05-q01",
+      "type": "wordCard",
+      "word": "who",
+      "exampleEn": "Who is that woman?",
+      "exampleZh": "那個女人是誰？",
+      "glossZh": "誰",
+      "distractorsZh": [
+        "什麼",
+        "哪裡",
+        "何時"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q02",
+      "type": "wordCard",
+      "word": "if",
+      "exampleEn": "If it is sunny, I will go out.",
+      "exampleZh": "如果天氣好，我會出去。",
+      "glossZh": "如果",
+      "distractorsZh": [
+        "因為",
+        "所以",
+        "但是"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q03",
+      "type": "wordCard",
+      "word": "would",
+      "exampleEn": "Would you like a cup of tea?",
+      "exampleZh": "你想要一杯茶嗎？",
+      "glossZh": "願意（禮貌問法）",
+      "distractorsZh": [
+        "可以",
+        "應該",
+        "必須"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q04",
+      "type": "wordCard",
+      "word": "her",
+      "exampleEn": "I like her very much.",
+      "exampleZh": "我非常喜歡她。",
+      "glossZh": "她",
+      "distractorsZh": [
+        "他",
+        "我的",
+        "他的"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q05",
+      "type": "wordCard",
+      "word": "all",
+      "exampleEn": "We are all happy today.",
+      "exampleZh": "我們今天都很開心。",
+      "glossZh": "全部，都",
+      "distractorsZh": [
+        "一些",
+        "沒有",
+        "大部分"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q06",
+      "type": "wordCard",
+      "word": "my",
+      "exampleEn": "This is my book.",
+      "exampleZh": "這是我的書。",
+      "glossZh": "我的",
+      "distractorsZh": [
+        "你的",
+        "他的",
+        "她的"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q07",
+      "type": "wordCard",
+      "word": "about",
+      "exampleEn": "It is about three o'clock.",
+      "exampleZh": "現在大約三點。",
+      "glossZh": "大約",
+      "distractorsZh": [
+        "因為",
+        "所以",
+        "但是"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q08",
+      "type": "wordCard",
+      "word": "will",
+      "exampleEn": "I will see you tomorrow.",
+      "exampleZh": "我明天會見到你。",
+      "glossZh": "將，會",
+      "distractorsZh": [
+        "可以",
+        "應該",
+        "必須"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "Who is that woman?",
+      "sentenceZh": "那個女人是誰？"
+    },
+    {
+      "id": "a1-u01-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "If it rains, I will stay at home.",
+      "audioZh": "如果下雨，我會待在家裡。",
+      "questionZh": "他會做什麼事？",
+      "options": [
+        "Go to work",
+        "Stay at home",
+        "Walk in the rain"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "I will call my friend tomorrow.",
+      "sentenceZh": "我明天會打給我的朋友。"
+    },
+    {
+      "id": "a1-u01-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "She will give me all her books.",
+      "sentenceZh": "她會把她所有的書給我。"
+    },
+    {
+      "id": "a1-u01-l05-q13",
+      "type": "mcq",
+      "stemEn": "I will call ____ tomorrow.",
+      "stemZh": "我明天會打給她。",
+      "options": [
+        "she",
+        "him",
+        "her",
+        "my"
+      ],
+      "optionGlossZh": [
+        "她（主詞）",
+        "他（受詞）",
+        "她（受詞）",
+        "我的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l05-q14",
+      "type": "mcq",
+      "stemEn": "I want to know ____ is in the classroom.",
+      "stemZh": "我想知道誰在教室裡。",
+      "options": [
+        "who",
+        "what",
+        "where",
+        "when"
+      ],
+      "optionGlossZh": [
+        "誰",
+        "什麼",
+        "哪裡",
+        "何時"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l05-q15",
+      "type": "reading",
+      "passageEn": "Amy and Ben are friends. Amy will meet Ben at the park today. If it is rainy, they will go to the library. Ben will bring all of his books. Amy likes to read. She will wait for him at the big tree. They will talk about their favorite stories. It will be a great day.",
+      "passageZh": "艾蜜和班是朋友。艾蜜今天會在公園見班。如果下雨，他們會去圖書館。班會帶他所有的書。艾蜜喜歡閱讀。她會在大樹下等他。他們會談論他們最喜歡的故事。那將是很棒的一天。",
+      "questions": [
+        {
+          "questionZh": "如果下雨，他們會去哪裡？",
+          "options": [
+            "去公園",
+            "去圖書館",
+            "去學校"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "班會帶什麼去？",
+          "options": [
+            "他所有的書",
+            "一些食物",
+            "一台電腦"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q16",
+      "type": "translate",
+      "promptZh": "如果明天下雨，我會待在家裡。",
+      "hintWords": [
+        "if",
+        "will"
+      ],
+      "referenceEn": [
+        "If it rains tomorrow, I will stay at home.",
+        "If it is rainy tomorrow, I will stay at home."
+      ],
+      "rubricZh": [
+        "正確使用 if 引導條件句",
+        "正確使用 will 表示未來動作",
+        "主詞與動詞搭配正確"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "would",
+      "instructionZh": "用 would 寫一個禮貌的問句，邀請朋友做某事。",
+      "referenceEn": [
+        "Would you like to come to my house?",
+        "Would you like to have coffee with me?"
+      ],
+      "rubricZh": [
+        "正確使用 would 構成禮貌問句",
+        "語法正確",
+        "意思清楚且合理"
+      ]
+    }
+  ],
+  "attempt": 3,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l05-q10": [
+        1
+      ],
+      "a1-u01-l05-q13": [
+        1,
+        2
+      ],
+      "a1-u01-l05-q14": [
+        0,
+        1
+      ],
+      "a1-u01-l05-q15#0": [
+        1
+      ],
+      "a1-u01-l05-q15#1": [
+        0
+      ]
+    }
+  }
+}

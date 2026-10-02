@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l03",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T03:40:41Z",
+  "properNouns": [
+    "Helen",
+    "Tokyo",
+    "Seoul",
+    "Taipei"
+  ],
+  "items": [
+    {
+      "id": "b1-u01-l03-q01",
+      "type": "wordCard",
+      "word": "aside",
+      "exampleEn": "She put her phone aside and listened to me.",
+      "exampleZh": "她把手機放到一邊，專心聽我說。",
+      "glossZh": "在一旁；到一邊",
+      "distractorsZh": [
+        "在中間",
+        "在上面",
+        "向前"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q02",
+      "type": "wordCard",
+      "word": "beneath",
+      "exampleEn": "We sat beneath a big tree to rest.",
+      "exampleZh": "我們坐在一棵大樹下休息。",
+      "glossZh": "在⋯下方",
+      "distractorsZh": [
+        "在⋯上方",
+        "在⋯旁邊",
+        "在⋯對面"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q03",
+      "type": "wordCard",
+      "word": "merely",
+      "exampleEn": "It was merely a small mistake.",
+      "exampleZh": "那僅僅是一個小錯誤。",
+      "glossZh": "只不過；僅僅",
+      "distractorsZh": [
+        "非常",
+        "完全",
+        "特別"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q04",
+      "type": "wordCard",
+      "word": "regarding",
+      "exampleEn": "I have a question regarding my bill.",
+      "exampleZh": "我對我的帳單有一個疑問。",
+      "glossZh": "關於",
+      "distractorsZh": [
+        "除了",
+        "儘管",
+        "代替"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q05",
+      "type": "wordCard",
+      "word": "moreover",
+      "exampleEn": "The hotel is cheap. Moreover, it is near the station.",
+      "exampleZh": "這間飯店很便宜，而且離車站很近。",
+      "glossZh": "此外；而且",
+      "distractorsZh": [
+        "然而",
+        "因此",
+        "否則"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q06",
+      "type": "wordCard",
+      "word": "whenever",
+      "exampleEn": "Whenever I visit my aunt, she makes soup for me.",
+      "exampleZh": "每次我去看阿姨，她都會煮湯給我喝。",
+      "glossZh": "每當；無論何時",
+      "distractorsZh": [
+        "無論在哪裡",
+        "無論是誰",
+        "除非"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q07",
+      "type": "wordCard",
+      "word": "surely",
+      "exampleEn": "Surely you know the answer.",
+      "exampleZh": "你一定知道答案吧。",
+      "glossZh": "一定；想必",
+      "distractorsZh": [
+        "很少",
+        "也許不",
+        "偶爾"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q08",
+      "type": "wordCard",
+      "word": "via",
+      "exampleEn": "We flew to Seoul via Tokyo.",
+      "exampleZh": "我們經由東京飛到首爾。",
+      "glossZh": "經由；透過",
+      "distractorsZh": [
+        "除了",
+        "代替",
+        "針對"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "Please send me the file via email.",
+      "sentenceZh": "請用電子郵件把檔案寄給我。"
+    },
+    {
+      "id": "b1-u01-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "Whenever Helen feels stressed, she goes for a long walk beneath the trees.",
+      "audioZh": "每當 Helen 覺得有壓力時，她就會到樹下散步很久。",
+      "questionZh": "Helen 有壓力時會做什麼？",
+      "options": [
+        "She goes for a walk.",
+        "She calls her friends.",
+        "She goes to sleep.",
+        "She eats something sweet."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "I would like to ask a question regarding the schedule.",
+      "sentenceZh": "我想問一個關於行程表的問題。"
+    },
+    {
+      "id": "b1-u01-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "This is merely the first step of our plan.",
+      "sentenceZh": "這只不過是我們計畫的第一步。"
+    },
+    {
+      "id": "b1-u01-l03-q13",
+      "type": "mcq",
+      "stemEn": "The flat is large and bright. ____, the rent is quite low.",
+      "stemZh": "這間公寓又大又明亮，而且租金相當便宜。",
+      "options": [
+        "Merely",
+        "Moreover",
+        "Beneath",
+        "Via"
+      ],
+      "optionGlossZh": [
+        "只不過",
+        "此外；而且",
+        "在⋯下方",
+        "經由"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l03-q14",
+      "type": "mcq",
+      "stemEn": "Please call me ____ you need help.",
+      "stemZh": "你需要幫忙的時候，隨時打電話給我。",
+      "options": [
+        "regarding",
+        "surely",
+        "whenever",
+        "aside"
+      ],
+      "optionGlossZh": [
+        "關於",
+        "一定",
+        "每當；無論何時",
+        "在一旁"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l03-q15",
+      "type": "reading",
+      "passageEn": "Helen works at a small travel company. Whenever customers have questions regarding their trips, they contact her via email or phone. Last week, a man was angry because his flight was late. It was merely a short delay, but he was very worried. Helen put her other work aside and helped him find a new flight. Moreover, she gave him a free meal ticket. Surely he will book with them again.",
+      "passageZh": "Helen 在一間小旅行社工作。每當客人對行程有疑問時，都會透過電子郵件或電話聯絡她。上週，一位先生因為班機延誤而很生氣。那只是短暫的延誤，但他非常擔心。Helen 把其他工作放到一邊，幫他找到新的班機。此外，她還送他一張免費餐券。他一定會再找這間公司訂行程。",
+      "questions": [
+        {
+          "questionZh": "那位先生為什麼生氣？",
+          "options": [
+            "因為餐點不好吃",
+            "因為班機延誤",
+            "因為旅費太貴",
+            "因為找不到 Helen"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Helen 除了幫他換班機，還做了什麼？",
+          "options": [
+            "退他全部的錢",
+            "陪他去機場",
+            "幫他訂飯店",
+            "送他一張免費餐券"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q16",
+      "type": "translate",
+      "promptZh": "每當我去台北，我都住在同一間飯店。",
+      "hintWords": [
+        "whenever"
+      ],
+      "referenceEn": [
+        "Whenever I go to Taipei, I stay at the same hotel.",
+        "I stay at the same hotel whenever I go to Taipei."
+      ],
+      "rubricZh": [
+        "用 whenever 表示「每當」",
+        "習慣性的事用現在簡單式",
+        "the same hotel 表示「同一間飯店」"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "moreover",
+      "instructionZh": "用 moreover 造兩個句子，說明你喜歡某個地方的兩個理由。",
+      "referenceEn": [
+        "This cafe is quiet. Moreover, the coffee is cheap.",
+        "The park is quiet. Moreover, it is close to my home."
+      ],
+      "rubricZh": [
+        "moreover 用來補充另一個理由",
+        "通常放在第二句句首，後面加逗號",
+        "前後兩句的意思方向一致"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T04:16:44Z",
+    "verdicts": {
+      "b1-u01-l03-q10": [
+        0
+      ],
+      "b1-u01-l03-q13": [
+        1
+      ],
+      "b1-u01-l03-q14": [
+        2
+      ],
+      "b1-u01-l03-q15#0": [
+        1
+      ],
+      "b1-u01-l03-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/16/referenceEn/0",
+        "message": "前句 I like this cafe. 只是表態、不是理由，整組只給出一個理由，不符題目「兩個理由」的要求；moreover 接在非理由句之後補充理由，用法不道地",
+        "resolution": "參考答案改為 \"This cafe is quiet. Moreover, the coffee is cheap.\"（兩句都是理由，moreover 補充第二個理由）",
+        "resolvedAt": "2026-10-02T04:26:03Z",
+        "rechecked": {
+          "by": "執行長第③關",
+          "at": "2026-10-02"
+        }
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第③關裁示修正：\"use the company again\" 不道地",
+        "resolution": "改為 \"Helen works at a small travel company. Whenever customers have questions regarding their trips, they contact her via email or phone. Last week, a man was angry because his flight was late. It was merely a short delay, but he was very worried. Helen put her other work aside and helped him find a new flight. Moreover, she gave him a free meal ticket. Surely he will book with them again.\"（原 \"Helen works at a small travel company. Whenever customers have questions regarding their trips, they contact her via email or phone. Last week, a man was angry because his flight was late. It was merely a short delay, but he was very worried. Helen put her other work aside and helped him find a new flight. Moreover, she gave him a free meal ticket. Surely he will use the company again.\"）",
+        "resolvedAt": "2026-10-02T07:06:42Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
+        "resolution": "正解「Moreover」由位置 0 移到 1，與「Merely」互換；審題員判題索引同步重對應",
+        "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/14/questions/1",
+        "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
+        "resolution": "正解「送他一張免費餐券」由位置 1 移到 3，與「陪他去機場」互換；審題員判題索引同步重對應",
+        "resolvedAt": "2026-10-02T07:07:22Z"
+      }
+    ]
+  }
+}

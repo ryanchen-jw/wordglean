@@ -1,0 +1,243 @@
+{
+  "runId": "pilot-day3d",
+  "startedAt": "2026-10-02T01:46:20.421Z",
+  "genModel": "qwen/qwen3.8-27b:free",
+  "judgeModel": "google/gemma-4-31b-it:free",
+  "judgeFallback": "apodex/apodex-1.1-mini:free",
+  "judgeSwitches": [
+    {
+      "at": "2026-10-02T01:52:18.935Z",
+      "from": "google/gemma-4-31b-it:free",
+      "to": "apodex/apodex-1.1-mini:free",
+      "after429": 6
+    }
+  ],
+  "genPrompt": "gen-lesson.v3",
+  "regenRejected": true,
+  "judgePrompt": "judge-mcq.v1",
+  "budgetUsd": 0,
+  "dryRun": false,
+  "quotaChecks": [
+    {
+      "at": "2026-10-02T01:46:20.780Z",
+      "remaining": 11,
+      "used": 39,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:46:20.784Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 3,
+      "prompt": "gen-lesson.v3",
+      "at": "2026-10-02T01:46:20.998Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 11145,
+      "completionTokens": 5250,
+      "reasoningTokens": 3868,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 56173
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 3,
+      "prompt": "gen-lesson.v3",
+      "at": "2026-10-02T01:47:17.186Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 11405,
+      "completionTokens": 2098,
+      "reasoningTokens": 2098,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "error",
+      "durationMs": 59036
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:48:16.260Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:49:16.685Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:50:17.605Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:51:18.113Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:52:18.541Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 3,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T01:52:18.938Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 769,
+      "completionTokens": 1578,
+      "reasoningTokens": 1266,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 6189
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "b1-u01-l03",
+      "status": "parse_failed",
+      "attempt": 3,
+      "errors": [
+        {
+          "code": "PARSE",
+          "message": "Expected ',' or ']' after array element in JSON at position 3765 (line 21 column 1)"
+        }
+      ],
+      "note": "Expected ',' or ']' after array element in JSON at position 3765 (line 21 column 1)"
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "status": "parse_failed",
+      "attempt": 3,
+      "errors": [
+        {
+          "code": "PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "回應中沒有 JSON 物件"
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "status": "check_failed",
+      "attempt": 3,
+      "errors": [
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/0/exampleZh",
+          "message": "opencc cn→twp 會改成：那隻貓跳到桌子上。"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/10/options/1",
+          "message": "超過 B1：neither(B2)"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/15/passageZh",
+          "message": "opencc cn→twp 會改成：我打電話給我的朋友 Anna 邀請她參加派對，但她沒有接。她也沒有回覆我的簡訊。我等了兩個小時，但我的電話都沒打通。我很擔心她是不是遇到麻煩。與此同時，我哥哥 John 正在廚房做晚餐。他問我要不要吃飯，我說除非我收到 Anna 的訊息，否則我就自己吃。John 微笑說：「她大概是睡著了，她總是這樣。」我希望那就是事實。"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/15/questions/0/options/0",
+          "message": "opencc cn→twp 會改成：因為他一直在等 Anna 的訊息"
+        }
+      ],
+      "note": "4 個錯誤"
+    }
+  ],
+  "remaining": [],
+  "totals": {
+    "promptTokens": 23319,
+    "completionTokens": 8926,
+    "costUsd": 0
+  },
+  "stoppedReason": null,
+  "finishedAt": "2026-10-02T01:52:27.002Z"
+}

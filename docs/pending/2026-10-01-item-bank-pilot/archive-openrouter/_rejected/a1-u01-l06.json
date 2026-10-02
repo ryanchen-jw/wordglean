@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l06",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Lily"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l06-q01",
+      "type": "wordCard",
+      "word": "up",
+      "exampleEn": "The book is up on the shelf.",
+      "exampleZh": "書在上面的架上。",
+      "glossZh": "在上面，向較高處",
+      "distractorsZh": [
+        "在裡面",
+        "在後面",
+        "在前面"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q02",
+      "type": "wordCard",
+      "word": "there",
+      "exampleEn": "The dog is there.",
+      "exampleZh": "狗在那裡。",
+      "glossZh": "在那裡",
+      "distractorsZh": [
+        "在這裡",
+        "在前面",
+        "在後面"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q03",
+      "type": "wordCard",
+      "word": "so",
+      "exampleEn": "I am tired, so I go to bed.",
+      "exampleZh": "我累了，所以我上床睡覺。",
+      "glossZh": "所以，因此",
+      "distractorsZh": [
+        "但是",
+        "因為",
+        "然後"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q04",
+      "type": "wordCard",
+      "word": "when",
+      "exampleEn": "When do you go to school?",
+      "exampleZh": "你什麼時候去學校？",
+      "glossZh": "何時，什麼時候",
+      "distractorsZh": [
+        "哪裡",
+        "誰",
+        "為什麼"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q05",
+      "type": "wordCard",
+      "word": "which",
+      "exampleEn": "Which color do you like?",
+      "exampleZh": "你喜歡哪一種顏色？",
+      "glossZh": "哪一個，那一個",
+      "distractorsZh": [
+        "多少",
+        "怎麼樣",
+        "誰"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q06",
+      "type": "wordCard",
+      "word": "them",
+      "exampleEn": "I see them in the park.",
+      "exampleZh": "我在公園看到他們。",
+      "glossZh": "他們，她們",
+      "distractorsZh": [
+        "我們",
+        "你",
+        "他"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q07",
+      "type": "wordCard",
+      "word": "some",
+      "exampleEn": "I eat some rice.",
+      "exampleZh": "我吃了一些飯。",
+      "glossZh": "一些的，少許的",
+      "distractorsZh": [
+        "所有的",
+        "沒有",
+        "每一"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q08",
+      "type": "wordCard",
+      "word": "me",
+      "exampleEn": "She gives me a book.",
+      "exampleZh": "她給我一本書。",
+      "glossZh": "我（賓格）",
+      "distractorsZh": [
+        "我的",
+        "我自己",
+        "他"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "Please give me some water.",
+      "sentenceZh": "請給我一些水。"
+    },
+    {
+      "id": "a1-u01-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "When do you go to school?",
+      "audioZh": "你什麼時候去學校？",
+      "questionZh": "這句話問的是什麼？",
+      "options": [
+        "The time",
+        "The place",
+        "The food"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "I am here, but you are there.",
+      "sentenceZh": "我在這裡，但你在那裡。"
+    },
+    {
+      "id": "a1-u01-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "When you are ready, tell me.",
+      "sentenceZh": "你準備好的時候，告訴我。"
+    },
+    {
+      "id": "a1-u01-l06-q13",
+      "type": "mcq",
+      "stemEn": "I want to drink ____ water.",
+      "stemZh": "我想喝一些水。",
+      "options": [
+        "many",
+        "any",
+        "some",
+        "all"
+      ],
+      "optionGlossZh": [
+        "很多",
+        "任何",
+        "一些",
+        "全部"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l06-q14",
+      "type": "mcq",
+      "stemEn": "I see ____ at the park.",
+      "stemZh": "我在公園看到他們。",
+      "options": [
+        "they",
+        "them",
+        "their",
+        "theirs"
+      ],
+      "optionGlossZh": [
+        "他們（主格）",
+        "他們（賓格）",
+        "他們的",
+        "他們的（所有格代詞）"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l06-q15",
+      "type": "reading",
+      "passageEn": "Tom and Lily are at the park. Some children play on the grass. Tom sees a dog. When Lily sees the dog, she is afraid. She tells Tom, 'Is there a cat up on the tree?' Tom says, 'No, there is not. Which one do you like better, the dog or the bird?' Lily says, 'I like them all. They are so cute!'",
+      "passageZh": "湯姆和莉莉在公園。一些小孩在草地上玩。湯姆看到一隻狗。當莉莉看到那隻狗的時候，她很害怕。她告訴湯姆：「樹上面有貓嗎？」湯姆說：「沒有。你比較喜歡哪一個，狗還是鳥？」莉莉說：「我喜歡牠們全部。牠們好可愛！」",
+      "questions": [
+        {
+          "questionZh": "湯姆和莉莉在哪裡？",
+          "options": [
+            "在公園",
+            "在學校",
+            "在家裡"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "莉莉看到狗的時候，她的感覺是什麼？",
+          "options": [
+            "很開心",
+            "很害怕",
+            "很生氣"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q16",
+      "type": "translate",
+      "promptZh": "你準備好的時候，告訴我。",
+      "hintWords": [
+        "when",
+        "me"
+      ],
+      "referenceEn": [
+        "Tell me when you are ready."
+      ],
+      "rubricZh": [
+        "正确使用 when 引導時間副詞子句",
+        "正确使用 me 作為動詞 tell 的受詞（賓格）",
+        "主句動詞 tell 與子句主詞 you 的搭配正確"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "which",
+      "instructionZh": "用 which 寫一句問句，問「你喜歡哪一種顏色？」",
+      "referenceEn": [
+        "Which color do you like?"
+      ],
+      "rubricZh": [
+        "正确使用 which 作為疑問代詞修飾名詞",
+        "問句語序正確：which + 名詞 + 助動詞 + 主詞 + 動詞",
+        "句末使用問號"
+      ]
+    }
+  ],
+  "attempt": 3,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l06-q10": [
+        0
+      ],
+      "a1-u01-l06-q13": [
+        2
+      ],
+      "a1-u01-l06-q14": [
+        1
+      ],
+      "a1-u01-l06-q15#0": [
+        0
+      ],
+      "a1-u01-l06-q15#1": [
+        1
+      ]
+    }
+  }
+}

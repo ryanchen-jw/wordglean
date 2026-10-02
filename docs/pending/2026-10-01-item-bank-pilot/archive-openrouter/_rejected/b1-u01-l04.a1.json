@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l04",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u01-l04-q01",
+      "type": "wordCard",
+      "word": "nevertheless",
+      "exampleEn": "The road was closed; nevertheless, they found another way.",
+      "exampleZh": "道路封了；然而，他們還是找到了另一條路。"
+    },
+    {
+      "id": "b1-u01-l04-q02",
+      "type": "wordCard",
+      "word": "nowhere",
+      "exampleEn": "The money was nowhere to be found in the house.",
+      "exampleZh": "那筆錢在房子裡到處都找不到。"
+    },
+    {
+      "id": "b1-u01-l04-q03",
+      "type": "wordCard",
+      "word": "mere",
+      "exampleEn": "He finished the task in a mere five minutes.",
+      "exampleZh": "他僅用五分鐘就完成了任務。"
+    },
+    {
+      "id": "b1-u01-l04-q04",
+      "type": "wordCard",
+      "word": "furthermore",
+      "exampleEn": "The hotel is quiet. Furthermore, it is close to the station.",
+      "exampleZh": "旅館很安靜。此外，它離車站很近。"
+    },
+    {
+      "id": "b1-u01-l04-q05",
+      "type": "wordCard",
+      "word": "nonetheless",
+      "exampleEn": "The weather was bad; nonetheless, we went for a walk.",
+      "exampleZh": "天氣不好；不過，我們還是去散步了。"
+    },
+    {
+      "id": "b1-u01-l04-q06",
+      "type": "wordCard",
+      "word": "wherever",
+      "exampleEn": "You can sit wherever you like in the room.",
+      "exampleZh": "你可以坐在房間裡任何你想坐的地方。"
+    },
+    {
+      "id": "b1-u01-l04-q07",
+      "type": "wordCard",
+      "word": "altogether",
+      "exampleEn": "I was altogether surprised by the result.",
+      "exampleZh": "我對那個結果感到完全驚訝。"
+    },
+    {
+      "id": "b1-u01-l04-q08",
+      "type": "wordCard",
+      "word": "provided",
+      "exampleEn": "You can go, provided you finish your homework first.",
+      "exampleZh": "你可以去，只要你先完成作業。"
+    },
+    {
+      "id": "b1-u01-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "Nevertheless, the team won the game even though it rained.",
+      "sentenceZh": "然而，儘管下著雨，那支隊伍還是贏了比賽。"
+    },
+    {
+      "id": "b1-u01-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "The document is a mere two pages long. Furthermore, it is easy to read.",
+      "audioZh": "那份文件僅僅只有兩頁。此外，它很容易讀。",
+      "questionZh": "文件有多長？",
+      "options": [
+        "Two pages",
+        "Ten pages",
+        "One page",
+        "Five pages"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "Nevertheless, I will attend the meeting tomorrow morning.",
+      "sentenceZh": "然而，我明天早上會參加會議。"
+    },
+    {
+      "id": "b1-u01-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "Wherever you go, remember to take your umbrella.",
+      "sentenceZh": "無論你去哪裡，記得帶上傘。"
+    },
+    {
+      "id": "b1-u01-l04-q13",
+      "type": "mcq",
+      "stemEn": "The task took a ____ five minutes to complete.",
+      "stemZh": "那項任務僅用五分鐘就完成了。",
+      "options": [
+        "mere",
+        "furthermore",
+        "nonetheless",
+        "altogether"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l04-q14",
+      "type": "mcq",
+      "stemEn": "I searched the whole house, but the keys were ____ to be found.",
+      "stemZh": "我搜遍了整間房子，但那把鑰匙就是找不到。",
+      "options": [
+        "everywhere",
+        "somewhere",
+        "nowhere",
+        "anywhere"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l04-q15",
+      "type": "reading",
+      "passageEn": "Last week, I lost my phone. I looked everywhere, but it was nowhere to be found. Nevertheless, I called my friend's house and her office. Furthermore, I checked the café where I usually study. On Tuesday, my friend found it under a chair. She said, 'You can keep it wherever you like, provided you pay me dinner.' I felt altogether better after that. It was a mere three days, but it felt like a whole week.",
+      "passageZh": "上週我弄丟了手機。我到處找，但怎麼都找不到。然而，我还是打電話給我朋友的家和她的辦公室。此外，我還去了我平常學習的那間咖啡廳。週二，我的朋友在椅子底下找到了它。她說：「你可以把它放在任何你想要的地方，只要你請我吃飯。」之後我感覺完全好多了。才不過三天，但感覺像過了一個禮拜。",
+      "questions": [
+        {
+          "questionZh": "手機是在哪裡找到的？",
+          "options": [
+            "在家裡",
+            "在辦公室裡",
+            "在咖啡廳裡",
+            "在學校裡"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "朋友找到手機後提出了什麼條件？",
+          "options": [
+            "要把它還回來",
+            "要請她吃晚餐",
+            "要送她禮物",
+            "要給她一些錢"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l04-q16",
+      "type": "translate",
+      "promptZh": "無論你去哪裡，只要先完成報告，你就可以早走。",
+      "hintWords": [
+        "wherever",
+        "provided"
+      ],
+      "referenceEn": [
+        "Wherever you go, you can leave early provided you finish your report first."
+      ],
+      "rubricZh": [
+        "正確使用 wherever 引導地點子句",
+        "正確使用 provided 表達條件",
+        "句法正確且意思完整"
+      ]
+    },
+    {
+      "id": "b1-u01-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "nevertheless",
+      "instructionZh": "用 nevertheless 寫一個句子，表達「雖然有困難或不幸，但仍然做了某事」的意思。",
+      "referenceEn": [
+        "The exam was very hard; nevertheless, I passed it.",
+        "It rained all day; nevertheless, we had a picnic in the park."
+      ],
+      "rubricZh": [
+        "正確使用 nevertheless 表達轉折對比",
+        "句法正確",
+        "意思清楚且合乎邏輯"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l04-q10": [
+        0
+      ],
+      "b1-u01-l04-q13": [
+        0
+      ],
+      "b1-u01-l04-q14": [
+        2
+      ],
+      "b1-u01-l04-q15#0": [],
+      "b1-u01-l04-q15#1": [
+        1
+      ]
+    }
+  }
+}

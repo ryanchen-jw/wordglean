@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l05",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u01-l05-q01",
+      "type": "wordCard",
+      "word": "consequently",
+      "exampleEn": "I missed the bus, so consequently I was late for work.",
+      "exampleZh": "我搭不到公車，所以遲到了。",
+      "glossZh": "因此、所以",
+      "distractorsZh": [
+        "同時地",
+        "意外地",
+        "首先"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q02",
+      "type": "wordCard",
+      "word": "goodness",
+      "exampleEn": "Goodness, I can't find my phone anywhere!",
+      "exampleZh": "天哪，我到處都找不到手機！",
+      "glossZh": "天哪（驚呼）",
+      "distractorsZh": [
+        "善良",
+        "美好",
+        "善意"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q03",
+      "type": "wordCard",
+      "word": "afterwards",
+      "exampleEn": "We finished dinner and went for a walk afterwards.",
+      "exampleZh": "我們吃完晚餐，後來去散步。",
+      "glossZh": "後來、之後",
+      "distractorsZh": [
+        "之前",
+        "同時",
+        "首先"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q04",
+      "type": "wordCard",
+      "word": "underneath",
+      "exampleEn": "The cat was hiding underneath the table.",
+      "exampleZh": "貓咪躲在桌子底下。",
+      "glossZh": "在…底下",
+      "distractorsZh": [
+        "在…上面",
+        "在…旁邊",
+        "在…裡面"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q05",
+      "type": "wordCard",
+      "word": "someplace",
+      "exampleEn": "Let's go someplace quiet to relax.",
+      "exampleZh": "我們去個安靜的地方放鬆一下。",
+      "glossZh": "某個地方",
+      "distractorsZh": [
+        "某個人",
+        "某件事",
+        "某個時間"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q06",
+      "type": "wordCard",
+      "word": "gee",
+      "exampleEn": "Gee, I didn't know you could draw so well!",
+      "exampleZh": "哎呀，我居然不知道你畫得這麼好！",
+      "glossZh": "哎呀（驚訝驚呼）",
+      "distractorsZh": [
+        "驅馬口令",
+        "太好了",
+        "求求你"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q07",
+      "type": "wordCard",
+      "word": "oneself",
+      "exampleEn": "You should enjoy yourself, not always think of others.",
+      "exampleZh": "你應該享受自己，不要總是想到別人。",
+      "glossZh": "自己（反身代詞）",
+      "distractorsZh": [
+        "其他人",
+        "對方",
+        "某個人"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q08",
+      "type": "wordCard",
+      "word": "whichever",
+      "exampleEn": "You can sit in whichever chair you like.",
+      "exampleZh": "你可以坐任何一把椅子。",
+      "glossZh": "任何一個",
+      "distractorsZh": [
+        "所有的",
+        "最合適的",
+        "不同的"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "Consequently, I had to wait at the bus stop for twenty minutes.",
+      "sentenceZh": "因此，我不得不在公車站等二十分鐘。"
+    },
+    {
+      "id": "b1-u01-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "Afterwards, we went underneath the bridge to take some photos.",
+      "audioZh": "後來，我們走到橋下面去拍一些照片。",
+      "questionZh": "後來他們去了哪裡？",
+      "options": [
+        "Underneath the bridge",
+        "On top of the bridge",
+        "Beside the bridge"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "Afterwards, she went someplace quiet to read a book.",
+      "sentenceZh": "後來，她去了某個安靜的地方看書。"
+    },
+    {
+      "id": "b1-u01-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "Whichever path you choose, enjoy yourself on the way.",
+      "sentenceZh": "不管你選哪條路，享受過程吧。"
+    },
+    {
+      "id": "b1-u01-l05-q13",
+      "type": "mcq",
+      "stemEn": "I looked under the bed and found the keys ____ the bed frame.",
+      "stemZh": "我往床底下看，發現鑰匙在床架下面。",
+      "options": [
+        "someplace",
+        "consequently",
+        "underneath",
+        "afterwards"
+      ],
+      "answer": 2,
+      "optionGlossZh": [
+        "某個地方",
+        "因此",
+        "在…底下",
+        "後來"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q14",
+      "type": "mcq",
+      "stemEn": "I'm tired. Let's go ____ quiet to rest.",
+      "stemZh": "我累了。我們去個安靜的地方休息吧。",
+      "options": [
+        "someplace",
+        "afterwards",
+        "consequently",
+        "underneath"
+      ],
+      "answer": 0,
+      "optionGlossZh": [
+        "某個地方",
+        "後來",
+        "因此",
+        "在…底下"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q15",
+      "type": "reading",
+      "passageEn": "Last weekend, I went someplace quiet in the mountains. I was very tired, so consequently I decided to rest by a lake. Underneath a big tree, I found a bench and sat down. Afterwards, I walked along the path. Whichever direction I looked, I saw beautiful flowers. Gee, the view was amazing! I had a great time by myself. I enjoyed myself so much that I forgot about time.",
+      "passageZh": "上週末，我去了山上某個安靜的地方。我很累，所以就在湖邊休息。我在一棵大樹下面找到一張長椅，坐了下來。後來，我沿著小徑散步。不管往哪個方向看，都能看到漂亮的花。哎呀，景色真美！我獨自玩得很開心，完全忘了時間。",
+      "questions": [
+        {
+          "questionZh": "作者在什麼地方坐下？",
+          "options": [
+            "在大樹底下",
+            "在湖中央",
+            "在山上最高處"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "後來作者做了什麼？",
+          "options": [
+            "回家了",
+            "沿著小徑散步",
+            "睡了一覺"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q16",
+      "type": "translate",
+      "promptZh": "他生病了，所以( consequently )他沒有來上班。",
+      "hintWords": [
+        "consequently"
+      ],
+      "referenceEn": [
+        "He was sick, so consequently he didn't come to work.",
+        "He was ill, consequently he stayed home from work."
+      ],
+      "rubricZh": [
+        "正確使用 consequently 表達因果關係",
+        "主謂一致，語法正確",
+        "意思完整，包含生病和未到上班兩個資訊"
+      ]
+    },
+    {
+      "id": "b1-u01-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "afterwards",
+      "instructionZh": "寫一個句子，描述你做完一件事之後又做了另一件事，使用 afterwards 表示「後來」。",
+      "referenceEn": [
+        "I finished my homework and went for a walk afterwards.",
+        "We had dinner and watched a movie afterwards.",
+        "I took a shower and went to bed afterwards."
+      ],
+      "rubricZh": [
+        "正確使用 afterwards 表示時間上的「後來」",
+        "句子包含兩個動作",
+        "語法正確，句意清楚"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l05-q10": [
+        0
+      ],
+      "b1-u01-l05-q13": [
+        2
+      ],
+      "b1-u01-l05-q14": [
+        0
+      ],
+      "b1-u01-l05-q15#0": [
+        0
+      ],
+      "b1-u01-l05-q15#1": [
+        1
+      ]
+    }
+  },
+  "glossBackfill": {
+    "model": "qwen/qwen3.8-27b:free",
+    "promptVersion": "gloss-backfill.v1",
+    "judgeModel": "apodex/apodex-1.1-mini:free",
+    "judgePromptVersion": "gloss-judge.v1"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l09",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Anna"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l09-q01",
+      "type": "wordCard",
+      "word": "no",
+      "exampleEn": "No, I am not hungry.",
+      "exampleZh": "不，我不餓。",
+      "glossZh": "不",
+      "distractorsZh": [
+        "在這裡",
+        "很多",
+        "只有"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q02",
+      "type": "wordCard",
+      "word": "here",
+      "exampleEn": "The cat is here on the bed.",
+      "exampleZh": "貓在床上的這裡。",
+      "glossZh": "在這裡",
+      "distractorsZh": [
+        "那裡",
+        "上面",
+        "後面"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q03",
+      "type": "wordCard",
+      "word": "many",
+      "exampleEn": "I have many books at home.",
+      "exampleZh": "我在家裡有很多書。",
+      "glossZh": "許多的",
+      "distractorsZh": [
+        "任何的",
+        "只有",
+        "非常"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q04",
+      "type": "wordCard",
+      "word": "only",
+      "exampleEn": "She is the only student in the class.",
+      "exampleZh": "她是班上唯一的學生。",
+      "glossZh": "唯一的",
+      "distractorsZh": [
+        "很多的",
+        "任何的",
+        "非常的"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q05",
+      "type": "wordCard",
+      "word": "those",
+      "exampleEn": "Those are my friends.",
+      "exampleZh": "那些是我的朋友。",
+      "glossZh": "那些",
+      "distractorsZh": [
+        "這個",
+        "在這裡",
+        "很多"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q06",
+      "type": "wordCard",
+      "word": "very",
+      "exampleEn": "The movie was very good.",
+      "exampleZh": "那部電影非常好。",
+      "glossZh": "非常",
+      "distractorsZh": [
+        "不",
+        "在這裡",
+        "那些"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q07",
+      "type": "wordCard",
+      "word": "back",
+      "exampleEn": "Please go back to your seat.",
+      "exampleZh": "請回到你的座位。",
+      "glossZh": "向後地",
+      "distractorsZh": [
+        "在這裡",
+        "很多",
+        "非常"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q08",
+      "type": "wordCard",
+      "word": "any",
+      "exampleEn": "Do you have any questions?",
+      "exampleZh": "你有任何問題嗎？",
+      "glossZh": "任何的",
+      "distractorsZh": [
+        "很多的",
+        "所有的",
+        "沒有"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q09",
+      "type": "listenType",
+      "sentenceEn": "There are many people here today.",
+      "sentenceZh": "今天這裡有很多人。"
+    },
+    {
+      "id": "a1-u01-l09-q10",
+      "type": "listenChoice",
+      "audioEn": "I only have two books.",
+      "audioZh": "我只有一兩本書。",
+      "questionZh": "他可以看到幾本書？",
+      "options": [
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l09-q11",
+      "type": "shadowing",
+      "sentenceEn": "Can you come here with me?",
+      "sentenceZh": "你可以跟我來這裡嗎？"
+    },
+    {
+      "id": "a1-u01-l09-q12",
+      "type": "shadowing",
+      "sentenceEn": "Those flowers are very beautiful.",
+      "sentenceZh": "那些花非常漂亮。"
+    },
+    {
+      "id": "a1-u01-l09-q13",
+      "type": "mcq",
+      "stemEn": "I have ____ one brother.",
+      "stemZh": "我只有一個兄弟。",
+      "options": [
+        "only",
+        "any",
+        "many",
+        "those"
+      ],
+      "optionGlossZh": [
+        "唯一的",
+        "任何的",
+        "許多的",
+        "那些"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l09-q14",
+      "type": "mcq",
+      "stemEn": "Please go ____ to your room.",
+      "stemZh": "請回到你的房間。",
+      "options": [
+        "here",
+        "very",
+        "back",
+        "no"
+      ],
+      "optionGlossZh": [
+        "在這裡",
+        "非常",
+        "向後地",
+        "不"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l09-q15",
+      "type": "reading",
+      "passageEn": "Every morning, Anna walks to the park. She sees many dogs there. Today, she sees only three cats. The cats are very cute. Anna says, 'Those cats are so funny!' She takes a photo and goes back home. She has a great day.",
+      "passageZh": "每天早上，Anna 會走到公園。她那裡看到很多狗。今天，她只看到三隻貓。那些貓非常可愛。Anna 說：「那些貓真有趣！」她拍了照，然後回到家。她過得很開心。",
+      "questions": [
+        {
+          "questionZh": "今天 Anna 在公園看到幾隻貓？",
+          "options": [
+            "三隻貓",
+            "兩隻貓",
+            "四隻貓"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Anna 覺得那些貓怎麼樣？",
+          "options": [
+            "很可怕",
+            "很可愛又很有趣",
+            "很安靜"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q16",
+      "type": "translate",
+      "promptZh": "這裡只有三個人。",
+      "hintWords": [
+        "only",
+        "here"
+      ],
+      "referenceEn": [
+        "There are only three people here."
+      ],
+      "rubricZh": [
+        "only 放在數字前面表示「只有」",
+        "here 放在句末表示「在這裡」",
+        "主詞和動詞一致"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q17",
+      "type": "makeSentence",
+      "targetWord": "any",
+      "instructionZh": "用 \"any\" 寫一個問句，詢問某人是否有某樣東西。",
+      "referenceEn": [
+        "Do you have any books?",
+        "Is there any food at home?",
+        "Can I have any help?"
+      ],
+      "rubricZh": [
+        "any 用於問句",
+        "句型結構正確",
+        "意思通順"
+      ]
+    }
+  ],
+  "attempt": 3,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l09-q10": [
+        0
+      ],
+      "a1-u01-l09-q13": [
+        0
+      ],
+      "a1-u01-l09-q14": [
+        2
+      ],
+      "a1-u01-l09-q15#0": [
+        0
+      ],
+      "a1-u01-l09-q15#1": [
+        1
+      ]
+    }
+  }
+}

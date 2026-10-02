@@ -1,0 +1,236 @@
+{
+  "runId": "compare-qwen-day3",
+  "startedAt": "2026-10-02T00:26:59.273Z",
+  "genModel": "qwen/qwen3.8-27b:free",
+  "judgeModel": "google/gemma-4-31b-it:free",
+  "judgeFallback": null,
+  "judgeSwitches": [],
+  "genPrompt": "gen-lesson.v1",
+  "regenRejected": false,
+  "judgePrompt": "judge-mcq.v1",
+  "budgetUsd": 0,
+  "dryRun": false,
+  "quotaChecks": [
+    {
+      "at": "2026-10-02T00:26:59.389Z",
+      "remaining": 40,
+      "used": 10,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:26:59.393Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:26:59.648Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:27:59.665Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:28:00.144Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:29:00.149Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:29:00.600Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:30:00.610Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:30:01.027Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:31:01.037Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:31:01.605Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:32:01.494Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-02T00:32:01.961Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "a1-u01-l01",
+      "status": "deferred_today",
+      "note": "429 延後 6 次，今日不再排"
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "status": "deferred_today",
+      "note": "429 延後 6 次，今日不再排"
+    }
+  ],
+  "remaining": [],
+  "totals": {
+    "promptTokens": 0,
+    "completionTokens": 0,
+    "costUsd": 0
+  },
+  "stoppedReason": null,
+  "finishedAt": "2026-10-02T00:32:02.217Z"
+}

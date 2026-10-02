@@ -1,0 +1,21 @@
+{
+  "properNouns": ["Kaohsiung"],
+  "items": [
+    {"type": "wordCard", "word": "aside", "exampleEn": "He stood aside and let her pass.", "exampleZh": "他退到一旁，讓她過去。", "glossZh": "退到一旁；離開某處", "distractorsZh": ["在...下方", "只", "而且"]},
+    {"type": "wordCard", "word": "beneath", "exampleEn": "The cat hid beneath the table.", "exampleZh": "貓藏在桌子下方。", "glossZh": "在...下方", "distractorsZh": ["退到一旁", "只", "關於"]},
+    {"type": "wordCard", "word": "merely", "exampleEn": "I merely want to ask a question.", "exampleZh": "我只是想問一個問題。", "glossZh": "只；不過", "distractorsZh": ["而且", "在...下方", "不論何時"]},
+    {"type": "wordCard", "word": "regarding", "exampleEn": "Regarding the meeting, we need more time.", "exampleZh": "關於那個會議，我們需要更多時間。", "glossZh": "關於", "distractorsZh": ["在...下方", "只", "而且"]},
+    {"type": "wordCard", "word": "moreover", "exampleEn": "The film was long; moreover, it was boring.", "exampleZh": "那部電影很長，而且很無聊。", "glossZh": "而且；此外", "distractorsZh": ["只", "在...下方", "關於"]},
+    {"type": "wordCard", "word": "whenever", "exampleEn": "Call me whenever you are free.", "exampleZh": "每當你有空就給我打電話。", "glossZh": "不論何時；每當", "distractorsZh": ["在...下方", "只", "而且"]},
+    {"type": "wordCard", "word": "surely", "exampleEn": "You surely know the answer.", "exampleZh": "你想必知道答案。", "glossZh": "想必；的確", "distractorsZh": ["在...下方", "只", "關於"]},
+    {"type": "wordCard", "word": "via", "exampleEn": "We traveled via the north way.", "exampleZh": "我們經由北側道路前往。", "glossZh": "經由；經過", "distractorsZh": ["退到一旁", "只", "而且"]},
+    {"type": "listenType", "sentenceEn": "The letters beneath the door were from my mother.", "sentenceZh": "門下方的信是我媽媽寄來的。"},
+    {"type": "listenChoice", "audioEn": "The bus goes via the station. Moreover, it stops there.", "audioZh": "公車經過車站，而且會在那裡停。", "questionZh": "公車會經過哪裡？", "options": ["the station", "the airport", "the hospital"], "answer": 0},
+    {"type": "shadowing", "sentenceEn": "Please step aside; the train is coming.", "sentenceZh": "請退到一旁，火車要來了。"},
+    {"type": "shadowing", "sentenceEn": "I was merely thinking about the new plan.", "sentenceZh": "我只是在想那個新計畫。"},
+    {"type": "mcq", "stemEn": "The book is hidden ____ the floor.", "stemZh": "那本書藏在地板下方。", "options": ["beneath", "merely", "regarding", "moreover"], "optionGlossZh": ["在...下方", "只", "關於", "而且"], "answer": 0},
+    {"type": "mcq", "stemEn": "____ the exam results, we must wait until Friday.", "stemZh": "關於考試結果，我們必須等到週五。", "options": ["Whenever", "Surely", "Via", "Regarding"], "optionGlossZh": ["不論何時", "想必", "經由", "關於"], "answer": 3},
+    {"type": "reading", "passageEn": "Last week, I traveled to Kaohsiung via the north way. The journey was long, and moreover, the weather was bad. I sat aside in the cafe and drank coffee. Beneath the table, I noticed a small note. Regarding the note, it said: 'The best view is from the hill.' I was merely curious, so I went there whenever I had free time. Surely, the view was wonderful.", "passageZh": "上週我經由北側道路前往高雄。旅程很長，而且天氣不好。我退到咖啡館的一旁喝咖啡。桌子下方，我注意到一小張紙條。關於那張紙條，上面寫著：「最好的景色在山上。」我只是很好奇，所以每當有空我就去那裡。的確，景色非常漂亮。", "questions": [{"questionZh": "作者是怎麼去高雄的？", "options": ["經由北側道路", "搭飛機", "騎腳踏車"], "answer": 0}, {"questionZh": "桌子下方的紙條上寫了什麼？", "options": ["咖啡館在山的下方", "最好的景色在山上", "下週要考試"], "answer": 1}]},
+    {"type": "translate", "promptZh": "關於明天的會議，它想必會準時開始。", "hintWords": ["regarding", "surely"], "referenceEn": ["Regarding tomorrow's meeting, it will surely start on time."], "rubricZh": ["使用 regarding 引出話題", "使用 surely 表示「想必」", "語法正確、語意通順"]},
+    {"type": "makeSentence", "targetWord": "whenever", "instructionZh": "用 whenever 寫一句話，表達「每當有空你就做某事」。", "referenceEn": ["I read a book whenever I have free time.", "She calls her mom whenever she has a moment."], "rubricZh": ["正確使用 whenever 作為連接詞", "主句與從句時態搭配正確", "句子完整、語意清楚"]}
+}

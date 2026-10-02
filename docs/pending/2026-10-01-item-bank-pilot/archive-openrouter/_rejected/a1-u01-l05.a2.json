@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l05",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Anna",
+    "Ben"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l05-q01",
+      "type": "wordCard",
+      "word": "who",
+      "exampleEn": "Who is that man?",
+      "exampleZh": "那個男人是誰？"
+    },
+    {
+      "id": "a1-u01-l05-q02",
+      "type": "wordCard",
+      "word": "if",
+      "exampleEn": "If it rains, I stay home.",
+      "exampleZh": "如果下雨，我就待在家裡。"
+    },
+    {
+      "id": "a1-u01-l05-q03",
+      "type": "wordCard",
+      "word": "would",
+      "exampleEn": "Would you like some tea?",
+      "exampleZh": "你想來些茶嗎？"
+    },
+    {
+      "id": "a1-u01-l05-q04",
+      "type": "wordCard",
+      "word": "her",
+      "exampleEn": "She looks at her cat.",
+      "exampleZh": "她看著她的貓。"
+    },
+    {
+      "id": "a1-u01-l05-q05",
+      "type": "wordCard",
+      "word": "all",
+      "exampleEn": "All the people are here.",
+      "exampleZh": "所有的人都來了。"
+    },
+    {
+      "id": "a1-u01-l05-q06",
+      "type": "wordCard",
+      "word": "my",
+      "exampleEn": "This is my new book.",
+      "exampleZh": "這是我的新書。"
+    },
+    {
+      "id": "a1-u01-l05-q07",
+      "type": "wordCard",
+      "word": "about",
+      "exampleEn": "The book is about animals.",
+      "exampleZh": "那本書是關於動物的。"
+    },
+    {
+      "id": "a1-u01-l05-q08",
+      "type": "wordCard",
+      "word": "will",
+      "exampleEn": "I will call you tomorrow.",
+      "exampleZh": "我明天會打電話給你。"
+    },
+    {
+      "id": "a1-u01-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "She will come to my house.",
+      "sentenceZh": "她會來我家。"
+    },
+    {
+      "id": "a1-u01-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "If you are hungry, eat some bread.",
+      "audioZh": "如果你餓了，就吃些麵包。",
+      "questionZh": "聽完後，餓了應該怎麼做？",
+      "options": [
+        "Drink some water",
+        "Eat some bread",
+        "Sleep for an hour"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "I will meet all my friends today.",
+      "sentenceZh": "我今天會見我所有的朋友。"
+    },
+    {
+      "id": "a1-u01-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "Who wants to come with her?",
+      "sentenceZh": "誰想跟她去？"
+    },
+    {
+      "id": "a1-u01-l05-q13",
+      "type": "mcq",
+      "stemEn": "I will call ____ mom tonight.",
+      "stemZh": "我今晚會打電話給我媽媽。",
+      "options": [
+        "my",
+        "her",
+        "who",
+        "if"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l05-q14",
+      "type": "mcq",
+      "stemEn": "____ is the woman in the red dress?",
+      "stemZh": "穿紅色洋裝的女人是谁？",
+      "options": [
+        "All",
+        "Her",
+        "Who",
+        "About"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l05-q15",
+      "type": "reading",
+      "passageEn": "Anna and her friend Ben go to a restaurant. Ben wants to eat some fish. Anna does not like fish. She would like to eat chicken. All the food is very good. Anna will pay for the food. Ben says, 'Thank you! If you are hungry, we can eat more.'",
+      "passageZh": "Anna 和朋友 Ben 去餐廳。Ben 想吃些魚。Anna 不喜歡魚。她想吃雞肉。所有食物都非常好吃。Anna 會付錢。Ben 說：「謝謝！如果你餓了，我們可以多吃。」",
+      "questions": [
+        {
+          "questionZh": "Anna 想吃什麼？",
+          "options": [
+            "魚",
+            "雞肉",
+            "麵包"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "誰要付錢？",
+          "options": [
+            "Anna",
+            "Ben",
+            "他們兩個一起"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q16",
+      "type": "translate",
+      "promptZh": "如果她餓了，她會吃些飯。",
+      "hintWords": [
+        "if",
+        "will"
+      ],
+      "referenceEn": [
+        "If she is hungry, she will eat some rice."
+      ],
+      "rubricZh": [
+        "使用 if 引導條件子句",
+        "使用 will 表示未來動作",
+        "主句與子句的語序正確"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "about",
+      "instructionZh": "用 about 寫一個句子，描述一本書或影片的的內容。",
+      "referenceEn": [
+        "This movie is about a small dog.",
+        "The book is about my family.",
+        "It is a story about a lost cat."
+      ],
+      "rubricZh": [
+        "about 作為介系詞使用，後接名詞或名詞片語",
+        "句子結構完整，主謂一致",
+        "語意清楚，能說明內容主題"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l05-q10": [
+        1
+      ],
+      "a1-u01-l05-q13": [
+        0,
+        1
+      ],
+      "a1-u01-l05-q14": [
+        2
+      ],
+      "a1-u01-l05-q15#0": [
+        1
+      ],
+      "a1-u01-l05-q15#1": [
+        0
+      ]
+    }
+  }
+}

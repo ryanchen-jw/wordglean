@@ -1,0 +1,248 @@
+{
+  "runId": "compare-qwen",
+  "startedAt": "2026-10-01T18:25:03.796Z",
+  "genModel": "qwen/qwen3.8-27b:free",
+  "judgeModel": "google/gemma-4-31b-it:free",
+  "genPrompt": "gen-lesson.v1",
+  "judgePrompt": "judge-mcq.v1",
+  "budgetUsd": 0,
+  "dryRun": false,
+  "quotaChecks": [
+    {
+      "at": "2026-10-01T18:25:04.085Z",
+      "remaining": 45,
+      "used": 5,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-01T18:32:19.817Z",
+      "remaining": 44,
+      "used": 6,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:25:04.089Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:25:04.364Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:26:04.378Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:26:05.184Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:27:05.186Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1147,
+      "completionTokens": 4707,
+      "reasoningTokens": 3749,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 96305
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:28:41.494Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:28:41.924Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:29:41.934Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:29:42.319Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:30:42.328Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-01T18:30:42.912Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1137,
+      "completionTokens": 4921,
+      "reasoningTokens": 3506,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 96677
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:32:19.819Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:32:20.046Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:33:20.061Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "a1-u01-l01",
+      "status": "deferred_today",
+      "note": "429 延後 6 次，今日不再排"
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "status": "deferred_today",
+      "note": "429 延後 6 次，今日不再排"
+    }
+  ],
+  "remaining": [],
+  "totals": {
+    "promptTokens": 2284,
+    "completionTokens": 9628,
+    "costUsd": 0
+  },
+  "stoppedReason": null,
+  "finishedAt": "2026-10-01T18:33:20.477Z"
+}

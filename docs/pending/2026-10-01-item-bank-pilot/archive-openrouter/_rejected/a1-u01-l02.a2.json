@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l02",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l02-q01",
+      "type": "wordCard",
+      "word": "it",
+      "exampleEn": "It is on the table.",
+      "exampleZh": "它在桌子上面。"
+    },
+    {
+      "id": "a1-u01-l02-q02",
+      "type": "wordCard",
+      "word": "i",
+      "exampleEn": "I am here with you.",
+      "exampleZh": "我和你在這裡。"
+    },
+    {
+      "id": "a1-u01-l02-q03",
+      "type": "wordCard",
+      "word": "that",
+      "exampleEn": "That is for you.",
+      "exampleZh": "那是給你的。"
+    },
+    {
+      "id": "a1-u01-l02-q04",
+      "type": "wordCard",
+      "word": "for",
+      "exampleEn": "This gift is for you.",
+      "exampleZh": "這個禮物是給你的。"
+    },
+    {
+      "id": "a1-u01-l02-q05",
+      "type": "wordCard",
+      "word": "you",
+      "exampleEn": "You are on the bus.",
+      "exampleZh": "你在公車上。"
+    },
+    {
+      "id": "a1-u01-l02-q06",
+      "type": "wordCard",
+      "word": "he",
+      "exampleEn": "He is with me today.",
+      "exampleZh": "他今天和我在一起。"
+    },
+    {
+      "id": "a1-u01-l02-q07",
+      "type": "wordCard",
+      "word": "with",
+      "exampleEn": "I walk with you on the road.",
+      "exampleZh": "我和你一起在馬路上走。"
+    },
+    {
+      "id": "a1-u01-l02-q08",
+      "type": "wordCard",
+      "word": "on",
+      "exampleEn": "The book is on the desk.",
+      "exampleZh": "書在書桌上面。"
+    },
+    {
+      "id": "a1-u01-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "I am with you on the train.",
+      "sentenceZh": "我和你在一起，在火車上。"
+    },
+    {
+      "id": "a1-u01-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "He is on the bus. It is for you.",
+      "audioZh": "他在公車上。那是給你的。",
+      "questionZh": "誰在公車上？",
+      "options": [
+        "He",
+        "I",
+        "You"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "It is on the table for you.",
+      "sentenceZh": "它在桌子上面，是給你的。"
+    },
+    {
+      "id": "a1-u01-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "He says that it is for you.",
+      "sentenceZh": "他說那是給你的。"
+    },
+    {
+      "id": "a1-u01-l02-q13",
+      "type": "mcq",
+      "stemEn": "The cat is ____ the table.",
+      "stemZh": "貓在桌子上面。",
+      "options": [
+        "for",
+        "that",
+        "on",
+        "he"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l02-q14",
+      "type": "mcq",
+      "stemEn": "I walk to the park ____ my friend.",
+      "stemZh": "我和我的朋友一起走到公園。",
+      "options": [
+        "for",
+        "with",
+        "on",
+        "that"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l02-q15",
+      "type": "reading",
+      "passageEn": "Tom is on the bus. His friend Amy is at the office. Tom has a book. The book is on the seat. It is for Amy. Tom says that it is a nice book.",
+      "passageZh": "湯姆在公車上。他的朋友艾蜜在辦公室。湯姆有一本書。書在座位上。那本書是給艾蜜的。湯姆說它是一本很棒的書。",
+      "questions": [
+        {
+          "questionZh": "誰在公車上？",
+          "options": [
+            "艾蜜",
+            "湯姆",
+            "湯姆和艾蜜"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "那本書是給誰的？",
+          "options": [
+            "艾蜜",
+            "湯姆",
+            "艾蜜的朋友"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l02-q16",
+      "type": "translate",
+      "promptZh": "那本書是給你的，它在桌子上面。",
+      "hintWords": [
+        "that",
+        "for",
+        "on"
+      ],
+      "referenceEn": [
+        "That book is for you. It is on the table.",
+        "That book is for you. It is on the desk."
+      ],
+      "rubricZh": [
+        "使用 that 指代那本書",
+        "使用 for 表示「給」",
+        "使用 on 表示「在…上面」",
+        "使用 it 指代那本書"
+      ]
+    },
+    {
+      "id": "a1-u01-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "with",
+      "instructionZh": "用 with 寫一個句子，描述你和誰一起做某事。",
+      "referenceEn": [
+        "I eat with my friend.",
+        "She walks with her sister on the road.",
+        "He is with me on the bus."
+      ],
+      "rubricZh": [
+        "正確使用 with 表示「和…一起」",
+        "句子語法正確",
+        "使用 A1 程度的字彙",
+        "句子長度 3 到 12 個字"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l02-q10": [
+        0
+      ],
+      "a1-u01-l02-q13": [
+        2
+      ],
+      "a1-u01-l02-q14": [
+        1
+      ],
+      "a1-u01-l02-q15#0": [
+        1
+      ],
+      "a1-u01-l02-q15#1": [
+        0
+      ]
+    }
+  }
+}

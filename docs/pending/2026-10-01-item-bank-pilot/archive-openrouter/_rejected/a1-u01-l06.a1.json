@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l06",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a1-u01-l06-q01",
+      "type": "wordCard",
+      "word": "up",
+      "exampleEn": "Put the book up on the shelf.",
+      "exampleZh": "把書放到上面的架上。"
+    },
+    {
+      "id": "a1-u01-l06-q02",
+      "type": "wordCard",
+      "word": "there",
+      "exampleEn": "There is a cat in the garden.",
+      "exampleZh": "花園裡有一隻貓。"
+    },
+    {
+      "id": "a1-u01-l06-q03",
+      "type": "wordCard",
+      "word": "so",
+      "exampleEn": "I was late, so I missed the bus.",
+      "exampleZh": "我遲到了，所以我錯過公車了。"
+    },
+    {
+      "id": "a1-u01-l06-q04",
+      "type": "wordCard",
+      "word": "when",
+      "exampleEn": "When does the class start?",
+      "exampleZh": "課程什麼時候開始？"
+    },
+    {
+      "id": "a1-u01-l06-q05",
+      "type": "wordCard",
+      "word": "which",
+      "exampleEn": "Which one do you like?",
+      "exampleZh": "你喜歡哪一個？"
+    },
+    {
+      "id": "a1-u01-l06-q06",
+      "type": "wordCard",
+      "word": "them",
+      "exampleEn": "I called them this morning.",
+      "exampleZh": "我這早上打了電話給他們。"
+    },
+    {
+      "id": "a1-u01-l06-q07",
+      "type": "wordCard",
+      "word": "some",
+      "exampleEn": "Can I have some water?",
+      "exampleZh": "我可以喝一些水嗎？"
+    },
+    {
+      "id": "a1-u01-l06-q08",
+      "type": "wordCard",
+      "word": "me",
+      "exampleEn": "Please send me the file.",
+      "exampleZh": "請把檔案傳給我。"
+    },
+    {
+      "id": "a1-u01-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "Put some papers up on the shelf, please.",
+      "sentenceZh": "請把一些文件放到上面的架上。"
+    },
+    {
+      "id": "a1-u01-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "When does the meeting start? It starts at nine. So don't forget to call them.",
+      "audioZh": "會議什麼時候開始？它九點開始。所以別忘了打電話給他們。",
+      "questionZh": "會議什麼時候開始？",
+      "options": [
+        "At eight",
+        "At nine",
+        "At ten"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "I gave her some flowers, and she put them up.",
+      "sentenceZh": "我送她一些花，她把它們放上面了。"
+    },
+    {
+      "id": "a1-u01-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "Which cup is green? It is up there on the shelf.",
+      "sentenceZh": "哪隻杯子是綠色的？它在上面那邊的架上。"
+    },
+    {
+      "id": "a1-u01-l06-q13",
+      "type": "mcq",
+      "stemEn": "I need to call ____ this afternoon.",
+      "stemZh": "我今天下午要打電話給他們。",
+      "options": [
+        "when",
+        "up",
+        "them",
+        "some"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l06-q14",
+      "type": "mcq",
+      "stemEn": "Please send the report to ____.",
+      "stemZh": "請把報告傳給我。",
+      "options": [
+        "so",
+        "which",
+        "there",
+        "me"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u01-l06-q15",
+      "type": "reading",
+      "passageEn": "Today, I went to the office. When I arrived, some people were already there. I put my bag up on the shelf. I called them and said hello. Which desk do I use? I don't know. So I sat near the window and waited.",
+      "passageZh": "今天，我去了辦公室。到的時候，有些人已經在那裡了。我把包包放在上面的架上。我打電話給他們，說你好。哪張桌子是我用的？我不知道。所以我坐在窗邊等了。",
+      "questions": [
+        {
+          "questionZh": "他的包包放在哪裡？",
+          "options": [
+            "在窗邊",
+            "在架子上",
+            "在桌子上"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "他為什麼坐在窗邊？",
+          "options": [
+            "因為他不知道哪張桌子是他的",
+            "因為那裡有人坐著",
+            "因為他喜歡窗邊"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q16",
+      "type": "translate",
+      "promptZh": "當你遲到的時候，請打電話給他們。",
+      "hintWords": [
+        "when",
+        "them"
+      ],
+      "referenceEn": [
+        "When you are late, please call them.",
+        "When you are late, call them, please."
+      ],
+      "rubricZh": [
+        "使用 when 引導時間子句",
+        "使用 them 作代詞",
+        "使用 call 表示打電話",
+        "句末有請或 please 表示禮貌"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "so",
+      "instructionZh": "用 so 寫一句話，說明原因和結果。",
+      "referenceEn": [
+        "It was raining, so I brought an umbrella.",
+        "I was tired, so I went home early."
+      ],
+      "rubricZh": [
+        "正確使用 so 連接原因和結果",
+        "句子在 3 到 12 個字之間",
+        "語法正確",
+        "內容通順、合乎邏輯"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l06-q10": [
+        1
+      ],
+      "a1-u01-l06-q13": [
+        2
+      ],
+      "a1-u01-l06-q14": [
+        3
+      ],
+      "a1-u01-l06-q15#0": [
+        1
+      ],
+      "a1-u01-l06-q15#1": [
+        0
+      ]
+    }
+  }
+}

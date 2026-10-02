@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l10",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l10-q01",
+      "type": "wordCard",
+      "word": "through",
+      "exampleEn": "I walk through the park.",
+      "exampleZh": "我穿過公園散步。"
+    },
+    {
+      "id": "a1-u01-l10-q02",
+      "type": "wordCard",
+      "word": "us",
+      "exampleEn": "They help us every day.",
+      "exampleZh": "他們每天幫助我們。"
+    },
+    {
+      "id": "a1-u01-l10-q03",
+      "type": "wordCard",
+      "word": "down",
+      "exampleEn": "She puts the book down.",
+      "exampleZh": "她把書放下來。"
+    },
+    {
+      "id": "a1-u01-l10-q04",
+      "type": "wordCard",
+      "word": "after",
+      "exampleEn": "We eat after lunch.",
+      "exampleZh": "我們午飯後吃東西。"
+    },
+    {
+      "id": "a1-u01-l10-q05",
+      "type": "wordCard",
+      "word": "should",
+      "exampleEn": "You should drink water.",
+      "exampleZh": "你應該喝水。"
+    },
+    {
+      "id": "a1-u01-l10-q06",
+      "type": "wordCard",
+      "word": "over",
+      "exampleEn": "The bird flies over the tree.",
+      "exampleZh": "鳥從樹上方飛過去。"
+    },
+    {
+      "id": "a1-u01-l10-q07",
+      "type": "wordCard",
+      "word": "still",
+      "exampleEn": "He is still here.",
+      "exampleZh": "他還是在這裡。"
+    },
+    {
+      "id": "a1-u01-l10-q08",
+      "type": "wordCard",
+      "word": "need",
+      "exampleEn": "I need a new bag.",
+      "exampleZh": "我需要一個新的包包。"
+    },
+    {
+      "id": "a1-u01-l10-q09",
+      "type": "listenType",
+      "sentenceEn": "We walk down the hill.",
+      "sentenceZh": "我們走下小山丘。"
+    },
+    {
+      "id": "a1-u01-l10-q10",
+      "type": "listenChoice",
+      "audioEn": "After work, I go home.",
+      "audioZh": "工作後，我回家。",
+      "questionZh": "工作後他做什麼？",
+      "options": [
+        "go to school",
+        "go home",
+        "go to the park"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l10-q11",
+      "type": "shadowing",
+      "sentenceEn": "You should drink more water.",
+      "sentenceZh": "你應該多喝水。"
+    },
+    {
+      "id": "a1-u01-l10-q12",
+      "type": "shadowing",
+      "sentenceEn": "The cat jumps over the wall.",
+      "sentenceZh": "貓跳過牆壁。"
+    },
+    {
+      "id": "a1-u01-l10-q13",
+      "type": "mcq",
+      "stemEn": "The teacher helps ____ every day.",
+      "stemZh": "老師每天幫助我們。",
+      "options": [
+        "we",
+        "our",
+        "us",
+        "ours"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l10-q14",
+      "type": "mcq",
+      "stemEn": "The bird flies ____ the river.",
+      "stemZh": "鳥從河上方飛過。",
+      "options": [
+        "over",
+        "through",
+        "down",
+        "after"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l10-q15",
+      "type": "reading",
+      "passageEn": "After work, I walk through the park. I sit on a chair and drink water. My friend Amy is still there. She says, 'We should go home now.' I need to check my phone. The sun goes over the trees.",
+      "passageZh": "下班後，我穿過公園走。我坐在椅子上喝水。我的朋友 Amy 還在那裡。她說：「我們應該現在回家了。」我需要看一下手機。太陽從樹上方落下去了。",
+      "questions": [
+        {
+          "questionZh": "作者和朋友在哪裡？",
+          "options": [
+            "在家裡",
+            "在公園裡",
+            "在學校"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "朋友建議做什麼？",
+          "options": [
+            "看手機",
+            "再喝點水",
+            "回家"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l10-q16",
+      "type": "translate",
+      "promptZh": "工作後，我們需要走下樓梯。",
+      "hintWords": [
+        "after",
+        "down",
+        "need"
+      ],
+      "referenceEn": [
+        "We need to walk down the stairs after work.",
+        "After work, we need to go down the stairs."
+      ],
+      "rubricZh": [
+        "使用 after 表示「在…之後」",
+        "need to 後接原形動詞",
+        "down 放在動詞後表示「向下」"
+      ]
+    },
+    {
+      "id": "a1-u01-l10-q17",
+      "type": "makeSentence",
+      "targetWord": "should",
+      "instructionZh": "用 should 寫一個建議朋友做某事的句子。",
+      "referenceEn": [
+        "You should drink more water.",
+        "You should go to bed early.",
+        "He should eat breakfast every day."
+      ],
+      "rubricZh": [
+        "should 後接原形動詞",
+        "句子語意為建議或勸告",
+        "主詞與動詞一致"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l10-q10": [
+        1
+      ],
+      "a1-u01-l10-q13": [
+        2
+      ],
+      "a1-u01-l10-q14": [
+        0
+      ],
+      "a1-u01-l10-q15#0": [
+        1
+      ],
+      "a1-u01-l10-q15#1": [
+        2
+      ]
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l10",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a1-u01-l10-q01",
+      "type": "wordCard",
+      "word": "through",
+      "exampleEn": "We walk through the park.",
+      "exampleZh": "我們穿過公園走路。"
+    },
+    {
+      "id": "a1-u01-l10-q02",
+      "type": "wordCard",
+      "word": "us",
+      "exampleEn": "Come with us, please.",
+      "exampleZh": "請跟我們一起來。"
+    },
+    {
+      "id": "a1-u01-l10-q03",
+      "type": "wordCard",
+      "word": "down",
+      "exampleEn": "The cat jumps down.",
+      "exampleZh": "貓跳下來。"
+    },
+    {
+      "id": "a1-u01-l10-q04",
+      "type": "wordCard",
+      "word": "after",
+      "exampleEn": "I eat after lunch.",
+      "exampleZh": "我午餐之後吃東西。"
+    },
+    {
+      "id": "a1-u01-l10-q05",
+      "type": "wordCard",
+      "word": "should",
+      "exampleEn": "You should rest now.",
+      "exampleZh": "你現在應該休息一下。"
+    },
+    {
+      "id": "a1-u01-l10-q06",
+      "type": "wordCard",
+      "word": "over",
+      "exampleEn": "The bird flies over the tree.",
+      "exampleZh": "鳥飛到樹上面。"
+    },
+    {
+      "id": "a1-u01-l10-q07",
+      "type": "wordCard",
+      "word": "still",
+      "exampleEn": "The water is still.",
+      "exampleZh": "水是靜的。"
+    },
+    {
+      "id": "a1-u01-l10-q08",
+      "type": "wordCard",
+      "word": "need",
+      "exampleEn": "I need water.",
+      "exampleZh": "我需要水。"
+    },
+    {
+      "id": "a1-u01-l10-q09",
+      "type": "listenType",
+      "sentenceEn": "Please come with us after work.",
+      "sentenceZh": "工作之後請跟我們一起來。"
+    },
+    {
+      "id": "a1-u01-l10-q10",
+      "type": "listenChoice",
+      "audioEn": "We need to walk down the road.",
+      "audioZh": "我們需要沿著路走下去。",
+      "questionZh": "他們要做什麼事？",
+      "options": [
+        "walk down the road",
+        "walk up the road",
+        "run down the road"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l10-q11",
+      "type": "shadowing",
+      "sentenceEn": "You should sit down now.",
+      "sentenceZh": "你現在應該坐下。"
+    },
+    {
+      "id": "a1-u01-l10-q12",
+      "type": "shadowing",
+      "sentenceEn": "After dinner, we walk through the park.",
+      "sentenceZh": "晚餐之後，我們穿過公園走路。"
+    },
+    {
+      "id": "a1-u01-l10-q13",
+      "type": "mcq",
+      "stemEn": "We walk ____ the park every day.",
+      "stemZh": "我們每天穿過公園走路。",
+      "options": [
+        "after",
+        "through",
+        "down",
+        "over"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l10-q14",
+      "type": "mcq",
+      "stemEn": "You ____ rest after work.",
+      "stemZh": "你工作之後應該休息一下。",
+      "options": [
+        "over",
+        "still",
+        "should",
+        "need"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l10-q15",
+      "type": "reading",
+      "passageEn": "After work, we walk through the park. The sun goes down over the trees. The water in the lake is still. I need a break. You should come with us. It is a good time to be outside.",
+      "passageZh": "工作之後，我們在公園裡走路。太陽從樹上落下去。湖裡的水很靜。我需要休息一下。你應該和我們一起來。現在是出去的好時候。",
+      "questions": [
+        {
+          "questionZh": "他們在哪裡走路？",
+          "options": [
+            "在學校裡",
+            "在公園裡",
+            "在家裡"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "湖水的樣子怎樣？",
+          "options": [
+            "很安靜",
+            "很燙",
+            "很多"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l10-q16",
+      "type": "translate",
+      "promptZh": "工作之後，你應該坐下來。",
+      "hintWords": [
+        "after",
+        "should",
+        "down"
+      ],
+      "referenceEn": [
+        "After work, you should sit down."
+      ],
+      "rubricZh": [
+        "使用 after 表示「在…之後」",
+        "使用 should 表示「應該」",
+        "使用 sit down 表示「坐下」",
+        "語法正確，語意完整"
+      ]
+    },
+    {
+      "id": "a1-u01-l10-q17",
+      "type": "makeSentence",
+      "targetWord": "need",
+      "instructionZh": "用 need 寫一個句子，說明你需要的東西。",
+      "referenceEn": [
+        "I need water.",
+        "We need help.",
+        "She needs a rest."
+      ],
+      "rubricZh": [
+        "正確使用 need 表示「需要」",
+        "主詞和動詞配合正確",
+        "句子意思完整、清晰"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l10-q10": [
+        0
+      ],
+      "a1-u01-l10-q13": [
+        1
+      ],
+      "a1-u01-l10-q14": [
+        2
+      ],
+      "a1-u01-l10-q15#0": [
+        1
+      ],
+      "a1-u01-l10-q15#1": [
+        0
+      ]
+    }
+  }
+}

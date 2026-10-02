@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l07",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Anna",
+    "Tom"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l07-q01",
+      "type": "wordCard",
+      "word": "out",
+      "exampleEn": "The cat is out in the yard.",
+      "exampleZh": "貓在院子外面。",
+      "glossZh": "在外",
+      "distractorsZh": [
+        "在裡面",
+        "上面",
+        "後面"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q02",
+      "type": "wordCard",
+      "word": "into",
+      "exampleEn": "She walked into the room.",
+      "exampleZh": "她走進了房間。",
+      "glossZh": "進入…之內",
+      "distractorsZh": [
+        "離開",
+        "上面",
+        "旁邊"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q03",
+      "type": "wordCard",
+      "word": "just",
+      "exampleEn": "I just ate lunch.",
+      "exampleZh": "我剛吃完午餐。",
+      "glossZh": "剛剛",
+      "distractorsZh": [
+        "一直",
+        "永遠",
+        "很少"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q04",
+      "type": "wordCard",
+      "word": "him",
+      "exampleEn": "I gave him a book.",
+      "exampleZh": "我給了他一本書。",
+      "glossZh": "他（受格）",
+      "distractorsZh": [
+        "她（受格）",
+        "它（受格）",
+        "他們（主格）"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q05",
+      "type": "wordCard",
+      "word": "your",
+      "exampleEn": "Is this your phone?",
+      "exampleZh": "這是你的電話嗎？",
+      "glossZh": "你的",
+      "distractorsZh": [
+        "我的",
+        "他的",
+        "她的"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q06",
+      "type": "wordCard",
+      "word": "could",
+      "exampleEn": "Could you help me?",
+      "exampleZh": "你可以幫我嗎？",
+      "glossZh": "可以，能（委婉）",
+      "distractorsZh": [
+        "必須",
+        "應該",
+        "想要"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q07",
+      "type": "wordCard",
+      "word": "than",
+      "exampleEn": "She is taller than me.",
+      "exampleZh": "她比我高。",
+      "glossZh": "比",
+      "distractorsZh": [
+        "和",
+        "在…之間",
+        "從…到"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q08",
+      "type": "wordCard",
+      "word": "other",
+      "exampleEn": "The other cat is black.",
+      "exampleZh": "另一隻貓是黑色的。",
+      "glossZh": "另外的，其他的",
+      "distractorsZh": [
+        "相同的",
+        "全部的",
+        "第一個"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q09",
+      "type": "listenType",
+      "sentenceEn": "He just walked into the room.",
+      "sentenceZh": "他剛剛走進了房間。"
+    },
+    {
+      "id": "a1-u01-l07-q10",
+      "type": "listenChoice",
+      "audioEn": "She could not come into the room.",
+      "audioZh": "她進不到房間裡。",
+      "questionZh": "她做了什麼？",
+      "options": [
+        "She could not come in",
+        "She went into the room",
+        "She stayed outside"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "I just gave him your other book.",
+      "sentenceZh": "我剛把你的另一本書給了他。"
+    },
+    {
+      "id": "a1-u01-l07-q12",
+      "type": "shadowing",
+      "sentenceEn": "Could you walk out into the yard?",
+      "sentenceZh": "你能走出去到院子裡嗎？"
+    },
+    {
+      "id": "a1-u01-l07-q13",
+      "type": "mcq",
+      "stemEn": "I ____ finished my homework.",
+      "stemZh": "我剛完成我的功課。",
+      "options": [
+        "other",
+        "just",
+        "than",
+        "out"
+      ],
+      "optionGlossZh": [
+        "另外的",
+        "剛剛",
+        "比",
+        "在外"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l07-q14",
+      "type": "mcq",
+      "stemEn": "She gave ____ a new book.",
+      "stemZh": "她給了他一本新書。",
+      "options": [
+        "him",
+        "your",
+        "just",
+        "could"
+      ],
+      "optionGlossZh": [
+        "他（受格）",
+        "你的",
+        "剛剛",
+        "可以"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q15",
+      "type": "reading",
+      "passageEn": "Anna is in the kitchen. Her brother Tom is out in the garden. He just forgot his keys. Anna could not find them. She called him. He said, 'Check the other room.' She found them under the bed.",
+      "passageZh": "安娜在廚房裡。她的哥哥湯姆在外面花園裡。他剛剛忘了鑰匙在哪。安娜找不到它們。她打電話給他。他說：「去另一個房間看看。」她在床下找到了。",
+      "questions": [
+        {
+          "questionZh": "湯姆忘了什麼？",
+          "options": [
+            "他的鑰匙",
+            "他的書",
+            "他的電話"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "安娜最後在哪裡找到鑰匙？",
+          "options": [
+            "桌子上面",
+            "床下面",
+            "花園裡面"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q16",
+      "type": "translate",
+      "promptZh": "他剛把書放進了他的包裡。",
+      "hintWords": [
+        "just",
+        "into"
+      ],
+      "referenceEn": [
+        "He just put the book into his bag."
+      ],
+      "rubricZh": [
+        "使用 just 表示「剛」",
+        "使用 into 表示「進入…之內」",
+        "動詞 put 的拼寫正確（過去式同形）"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q17",
+      "type": "makeSentence",
+      "targetWord": "could",
+      "instructionZh": "用 could 寫一句向別人提出請求的句子。",
+      "referenceEn": [
+        "Could you help me with this?",
+        "Could you open the window for me?"
+      ],
+      "rubricZh": [
+        "使用 could 表達委婉請求",
+        "句型正確：Could + 主詞 + 動詞原形",
+        "語意自然，適合日常情境"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l07-q10": [
+        0,
+        2
+      ],
+      "a1-u01-l07-q13": [
+        1
+      ],
+      "a1-u01-l07-q14": [
+        0
+      ],
+      "a1-u01-l07-q15#0": [
+        0
+      ],
+      "a1-u01-l07-q15#1": [
+        1
+      ]
+    }
+  }
+}

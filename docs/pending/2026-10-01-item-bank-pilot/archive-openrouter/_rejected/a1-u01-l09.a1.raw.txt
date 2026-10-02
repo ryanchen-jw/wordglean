@@ -1,0 +1,21 @@
+{
+  "properNouns": ["Tom"],
+  "items": [
+    {"type": "wordCard", "word": "no", "exampleEn": "I have no money today.", "exampleZh": "我今天沒有錢。"},
+    {"type": "wordCard", "word": "here", "exampleEn": "The book is here.", "exampleZh": "這本書在這裡。"},
+    {"type": "wordCard", "word": "many", "exampleEn": "I have many books.", "exampleZh": "我有很多書。"},
+    {"type": "wordCard", "word": "only", "exampleEn": "I only have one friend.", "exampleZh": "我只有一個朋友。"},
+    {"type": "wordCard", "word": "those", "exampleEn": "Those are my shoes.", "exampleZh": "那些是我的鞋。"},
+    {"type": "wordCard", "word": "very", "exampleEn": "I am very happy.", "exampleZh": "我非常開心。"},
+    {"type": "wordCard", "word": "back", "exampleEn": "I want to go back home.", "exampleZh": "我想回家。"},
+    {"type": "wordCard", "word": "any", "exampleEn": "Do you have any water?", "exampleZh": "你有水嗎？"},
+    {"type": "listenType", "sentenceEn": "I am not here now.", "sentenceZh": "我現在不在這裡。"},
+    {"type": "listenChoice", "audioEn": "I want to go back home now.", "audioZh": "我現在想回家。", "questionZh": "他想去哪裡？", "options": ["home", "school", "work"], "answer": 0},
+    {"type": "shadowing", "sentenceEn": "I can see those books here.", "sentenceZh": "我可以看見這裡的那些書。"},
+    {"type": "shadowing", "sentenceEn": "Many people are not here today.", "sentenceZh": "今天很多人不在這裡。"},
+    {"type": "mcq", "stemEn": "I don't have ____ water.", "stemZh": "我沒有水。", "options": ["any", "many", "only", "very"], "answer": 0},
+    {"type": "mcq", "stemEn": "She is ____ happy today.", "stemZh": "她今天非常開心。", "options": ["many", "no", "very", "those"], "answer": 2},
+    {"type": "reading", "passageEn": "Today is a very good day. I am at the park with my friend Tom. He has many things to eat. We sit on a chair. I say, \"Here, have some food.\" Tom says, \"Thank you. I have no money today, but you are very kind.\" I feel happy. We talk and laugh. It is a good day.", "passageZh": "今天是很好的日子。我在公園，和朋友 Tom 在一起。他有很多食物。我們坐在椅子上。我說：「這裡，吃一些吧。」Tom 說：「謝謝。我今天沒有錢，但你很善良。」我覺得很開心。我們聊天、大笑。這是很好的日子。", "questions": [{"questionZh": "Tom 今天沒有什麼？", "options": ["沒有錢", "沒有朋友", "沒有食物"], "answer": 0}, {"questionZh": "說話的人覺得怎麼樣？", "options": ["很生氣", "很開心", "很疲倦"], "answer": 1}]},
+    {"type": "translate", "promptZh": "我這裡沒有水。", "hintWords": ["no", "here"], "referenceEn": ["I have no water here.", "There is no water here."], "rubricZh": ["使用 no 表示「沒有」", "使用 here 表示「在這裡」", "主詞與動詞搭配正確"]},
+    {"type": "makeSentence", "targetWord": "back", "instructionZh": "用 back 寫一個句子，表示「回到某處」的意思。", "referenceEn": ["I want to go back home.", "Please come back soon."], "rubricZh": ["正確使用 back 作副詞", "句子語法正確", "意思清楚完整"]}
+}

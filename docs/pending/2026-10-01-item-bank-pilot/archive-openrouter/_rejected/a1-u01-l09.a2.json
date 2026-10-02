@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l09",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Anna",
+    "Ben"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l09-q01",
+      "type": "wordCard",
+      "word": "no",
+      "exampleEn": "There is no milk in the kitchen.",
+      "exampleZh": "廚房裡沒有牛奶。",
+      "glossZh": "沒有；不",
+      "distractorsZh": [
+        "許多的",
+        "在這裡",
+        "非常"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q02",
+      "type": "wordCard",
+      "word": "here",
+      "exampleEn": "Please come here.",
+      "exampleZh": "請過來這裡。",
+      "glossZh": "在這裡",
+      "distractorsZh": [
+        "在裡面",
+        "在後面",
+        "在旁邊"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q03",
+      "type": "wordCard",
+      "word": "many",
+      "exampleEn": "There are many books on the table.",
+      "exampleZh": "桌上有很多書。",
+      "glossZh": "許多的",
+      "distractorsZh": [
+        "一點的",
+        "非常貴的",
+        "不同的"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q04",
+      "type": "wordCard",
+      "word": "only",
+      "exampleEn": "I have only one sister.",
+      "exampleZh": "我只有一個姊妹。",
+      "glossZh": "只有；唯一的",
+      "distractorsZh": [
+        "許多的",
+        "在附近",
+        "不同的"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q05",
+      "type": "wordCard",
+      "word": "those",
+      "exampleEn": "Those are my new shoes.",
+      "exampleZh": "那些是我的新鞋。",
+      "glossZh": "那些",
+      "distractorsZh": [
+        "這個",
+        "我的",
+        "在哪里"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q06",
+      "type": "wordCard",
+      "word": "very",
+      "exampleEn": "The coffee is very hot.",
+      "exampleZh": "咖啡很燙。",
+      "glossZh": "非常",
+      "distractorsZh": [
+        "最",
+        "已經",
+        "很少"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q07",
+      "type": "wordCard",
+      "word": "back",
+      "exampleEn": "Please go back to your seat.",
+      "exampleZh": "請回到你的座位。",
+      "glossZh": "向後；回去",
+      "distractorsZh": [
+        "在前面",
+        "在上面",
+        "向左"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q08",
+      "type": "wordCard",
+      "word": "any",
+      "exampleEn": "Do you have any questions?",
+      "exampleZh": "你有什麼問題嗎？",
+      "glossZh": "任何的",
+      "distractorsZh": [
+        "所有的",
+        "沒有的",
+        "特別的"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q09",
+      "type": "listenType",
+      "sentenceEn": "There are no problems here.",
+      "sentenceZh": "這裡沒有問題。"
+    },
+    {
+      "id": "a1-u01-l09-q10",
+      "type": "listenChoice",
+      "audioEn": "I have only two sisters and no brothers.",
+      "audioZh": "我只有兩個姐妹，沒有兄弟。",
+      "questionZh": "他有幾個姐妹？",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l09-q11",
+      "type": "shadowing",
+      "sentenceEn": "Those books are very old.",
+      "sentenceZh": "那些書很舊。"
+    },
+    {
+      "id": "a1-u01-l09-q12",
+      "type": "shadowing",
+      "sentenceEn": "Please bring your notebook back.",
+      "sentenceZh": "請把你的筆記本帶回來。"
+    },
+    {
+      "id": "a1-u01-l09-q13",
+      "type": "mcq",
+      "stemEn": "The soup is ____ hot today.",
+      "stemZh": "今天的湯非常燙。",
+      "options": [
+        "many",
+        "those",
+        "very",
+        "back"
+      ],
+      "optionGlossZh": [
+        "許多的",
+        "那些",
+        "非常",
+        "向後；回去"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l09-q14",
+      "type": "mcq",
+      "stemEn": "Do you have ____ questions?",
+      "stemZh": "你有什麼問題嗎？",
+      "options": [
+        "no",
+        "any",
+        "only",
+        "those"
+      ],
+      "optionGlossZh": [
+        "沒有；不",
+        "任何的",
+        "只有；唯一的",
+        "那些"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l09-q15",
+      "type": "reading",
+      "passageEn": "Anna and Ben work in a small office. Anna has many books on her desk. She says, 'These books are very old, but I love them.' Ben asks, 'Do you have any notebooks here?' Anna says, 'No, I have only one notebook. I left it at home this morning.' Ben says, 'Please bring it back after lunch.' Anna says, 'OK.'",
+      "passageZh": "Anna 和 Ben 在小辦公室工作。Anna 的桌上有很多書。她說：「這些書很舊，但我喜歡它們。」Ben 問：「你這裡有筆記本嗎？」Anna 說：「沒有，我只有一個筆記本，今天早上忘在家裡了。」Ben 說：「午餐後請帶回來。」Anna 說：「好的。」",
+      "questions": [
+        {
+          "questionZh": "Anna 的書怎樣？",
+          "options": [
+            "很舊但她喜歡",
+            "很新而且很貴",
+            "很貴但她不喜歡",
+            "很舊而且很少"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Anna 的筆記本在哪里？",
+          "options": [
+            "在辦公室桌上",
+            "在家裡",
+            "在圖書館",
+            "在餐廳"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q16",
+      "type": "translate",
+      "promptZh": "這裡有很多咖啡，但你只要一杯就好。",
+      "hintWords": [
+        "many",
+        "only"
+      ],
+      "referenceEn": [
+        "There are many cups of coffee here, but you only need one."
+      ],
+      "rubricZh": [
+        "使用 many 修飾複數名詞",
+        "使用 only 表示「只要」",
+        "使用 here 表示「在這裡」",
+        "be 動詞與複數名詞搭配"
+      ]
+    },
+    {
+      "id": "a1-u01-l09-q17",
+      "type": "makeSentence",
+      "targetWord": "those",
+      "instructionZh": "用 those 寫一個句子，描述遠處的一些東西。",
+      "referenceEn": [
+        "Those flowers are very beautiful.",
+        "Those students are reading in the library.",
+        "I like those shoes very much."
+      ],
+      "rubricZh": [
+        "those 後面接複數名詞",
+        "those 用來指較遠的事物",
+        "句子結構正確"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l09-q10": [
+        1
+      ],
+      "a1-u01-l09-q13": [
+        2
+      ],
+      "a1-u01-l09-q14": [
+        1
+      ],
+      "a1-u01-l09-q15#0": [
+        0
+      ],
+      "a1-u01-l09-q15#1": [
+        1
+      ]
+    }
+  }
+}

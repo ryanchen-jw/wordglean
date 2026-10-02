@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l08",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a1-u01-l08-q01",
+      "type": "wordCard",
+      "word": "how",
+      "exampleEn": "How are you today?",
+      "exampleZh": "你今天過得怎麼樣？"
+    },
+    {
+      "id": "a1-u01-l08-q02",
+      "type": "wordCard",
+      "word": "then",
+      "exampleEn": "I eat lunch, then I go home.",
+      "exampleZh": "我吃午餐，然後我回家。"
+    },
+    {
+      "id": "a1-u01-l08-q03",
+      "type": "wordCard",
+      "word": "its",
+      "exampleEn": "The cat drinks its water.",
+      "exampleZh": "那隻貓喝牠的水。"
+    },
+    {
+      "id": "a1-u01-l08-q04",
+      "type": "wordCard",
+      "word": "our",
+      "exampleEn": "This is our house.",
+      "exampleZh": "這是我們的房子。"
+    },
+    {
+      "id": "a1-u01-l08-q05",
+      "type": "wordCard",
+      "word": "more",
+      "exampleEn": "I want more tea.",
+      "exampleZh": "我想要更多茶。"
+    },
+    {
+      "id": "a1-u01-l08-q06",
+      "type": "wordCard",
+      "word": "these",
+      "exampleEn": "These books are on the table.",
+      "exampleZh": "這些書在桌上。"
+    },
+    {
+      "id": "a1-u01-l08-q07",
+      "type": "wordCard",
+      "word": "also",
+      "exampleEn": "I also like tea.",
+      "exampleZh": "我也喜歡茶。"
+    },
+    {
+      "id": "a1-u01-l08-q08",
+      "type": "wordCard",
+      "word": "because",
+      "exampleEn": "I am tired because I work a lot.",
+      "exampleZh": "我很累，因為我工作很多。"
+    },
+    {
+      "id": "a1-u01-l08-q09",
+      "type": "listenType",
+      "sentenceEn": "I am happy because these are our new books.",
+      "sentenceZh": "我很開心，因為這些是我們的新書。"
+    },
+    {
+      "id": "a1-u01-l08-q10",
+      "type": "listenChoice",
+      "audioEn": "I want more tea because I am also very tired.",
+      "audioZh": "我想要更多茶，因為我也非常累。",
+      "questionZh": "他為什麼想要更多茶？",
+      "options": [
+        "He is very hungry.",
+        "He is very tired.",
+        "He is very happy."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l08-q11",
+      "type": "shadowing",
+      "sentenceEn": "These are also our books.",
+      "sentenceZh": "這些也是我們的書。"
+    },
+    {
+      "id": "a1-u01-l08-q12",
+      "type": "shadowing",
+      "sentenceEn": "I want more tea because I am tired.",
+      "sentenceZh": "我想要更多茶，因為我很累。"
+    },
+    {
+      "id": "a1-u01-l08-q13",
+      "type": "mcq",
+      "stemEn": "I stay at home ____ I am sick.",
+      "stemZh": "我待在家裡，因為我生病了。",
+      "options": [
+        "then",
+        "how",
+        "because",
+        "also"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l08-q14",
+      "type": "mcq",
+      "stemEn": "The cat drinks ____ milk every day.",
+      "stemZh": "那隻貓每天喝牠的牛奶。",
+      "options": [
+        "its",
+        "their",
+        "our",
+        "your"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l08-q15",
+      "type": "reading",
+      "passageEn": "I work at a small office. Our office is near the park. Every morning, I drink tea at the park. Then I walk to the office. I like this because it is quiet. My friend also walks to work. We are happy because we see more people.",
+      "passageZh": "我在一家小辦公室工作。我們的辦公室靠近公園。每天早上，我在公園喝茶。然後我走路去辦公室。我喜歡這樣，因為那裡很安靜。我的朋友也走路去上班。我們很高興，因為我們可以看到更多人。",
+      "questions": [
+        {
+          "questionZh": "他為什麼喜歡在公園喝茶？",
+          "options": [
+            "因為公園很安靜",
+            "因為公園很大",
+            "因為公園很美麗"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "他的朋友怎麼去上班？",
+          "options": [
+            "開車",
+            "走路",
+            "坐捷運"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q16",
+      "type": "translate",
+      "promptZh": "我很累，因為我今天工作很多。",
+      "hintWords": [
+        "because",
+        "more"
+      ],
+      "referenceEn": [
+        "I am tired because I work more today."
+      ],
+      "rubricZh": [
+        "正確使用 because 連接原因與結果",
+        "more 用作副詞，表示程度比平常多",
+        "句子結構完整，語意正確"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q17",
+      "type": "makeSentence",
+      "targetWord": "then",
+      "instructionZh": "用 then 寫一個句子，描述兩件連續發生的事情。",
+      "referenceEn": [
+        "I eat breakfast, then I go to work.",
+        "I drink tea, then I read a book."
+      ],
+      "rubricZh": [
+        "正確使用 then 表示時間順序",
+        "句子包含兩個連續的動作",
+        "語法正確，語意通順"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l08-q10": [
+        1
+      ],
+      "a1-u01-l08-q13": [
+        2
+      ],
+      "a1-u01-l08-q14": [
+        0
+      ],
+      "a1-u01-l08-q15#0": [
+        0
+      ],
+      "a1-u01-l08-q15#1": [
+        1
+      ]
+    }
+  }
+}

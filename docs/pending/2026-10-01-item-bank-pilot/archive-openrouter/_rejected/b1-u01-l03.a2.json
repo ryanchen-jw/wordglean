@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l03",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Taipei",
+    "Osaka"
+  ],
+  "items": [
+    {
+      "id": "b1-u01-l03-q01",
+      "type": "wordCard",
+      "word": "aside",
+      "exampleEn": "She set her book aside and read the news.",
+      "exampleZh": "她將書放在一邊，看新聞。",
+      "glossZh": "在一邊",
+      "distractorsZh": [
+        "在上方",
+        "關於",
+        "只"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q02",
+      "type": "wordCard",
+      "word": "beneath",
+      "exampleEn": "The cat slept beneath the table all day.",
+      "exampleZh": "貓咪一整天都在桌子下面睡覺。",
+      "glossZh": "在…下方",
+      "distractorsZh": [
+        "在旁邊",
+        "關於",
+        "而且"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q03",
+      "type": "wordCard",
+      "word": "merely",
+      "exampleEn": "He was merely asking a question, not complaining.",
+      "exampleZh": "他只是在問問題，並沒有在抱怨。",
+      "glossZh": "只",
+      "distractorsZh": [
+        "在…下方",
+        "關於",
+        "而且"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q04",
+      "type": "wordCard",
+      "word": "regarding",
+      "exampleEn": "I have a question regarding the meeting schedule.",
+      "exampleZh": "我對會議時間表有一個問題。",
+      "glossZh": "關於",
+      "distractorsZh": [
+        "只",
+        "在…下方",
+        "而且"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q05",
+      "type": "wordCard",
+      "word": "moreover",
+      "exampleEn": "The hotel is cheap; moreover, it is near the station.",
+      "exampleZh": "這家旅館很便宜，而且靠近車站。",
+      "glossZh": "而且",
+      "distractorsZh": [
+        "只",
+        "關於",
+        "在…下方"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q06",
+      "type": "wordCard",
+      "word": "whenever",
+      "exampleEn": "Call me whenever you need help.",
+      "exampleZh": "每當你需要幫忙時就打電話給我。",
+      "glossZh": "每當",
+      "distractorsZh": [
+        "只",
+        "關於",
+        "而且"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q07",
+      "type": "wordCard",
+      "word": "surely",
+      "exampleEn": "You will finish the project on time, surely.",
+      "exampleZh": "你一定會如期完成專案吧。",
+      "glossZh": "的確地",
+      "distractorsZh": [
+        "只",
+        "關於",
+        "在…下方"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q08",
+      "type": "wordCard",
+      "word": "via",
+      "exampleEn": "We traveled to Taipei via train.",
+      "exampleZh": "我們經由列車前往台北。",
+      "glossZh": "經由",
+      "distractorsZh": [
+        "只",
+        "關於",
+        "而且"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "She placed the documents regarding the project on my desk.",
+      "sentenceZh": "她將關於該專案的文件放在我的桌上。"
+    },
+    {
+      "id": "b1-u01-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "The meeting has been moved to Friday. Moreover, we need to bring our reports.",
+      "audioZh": "會議已改到星期五，而且我們需要帶上報告。",
+      "questionZh": "根據這段話，下列哪項正確？",
+      "options": [
+        "The meeting was cancelled.",
+        "The meeting moved to a new day.",
+        "The reports were lost."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "She sat aside and watched the game quietly.",
+      "sentenceZh": "她坐到旁邊安靜地看比賽。"
+    },
+    {
+      "id": "b1-u01-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "Beneath the old tree, they found a hidden box.",
+      "sentenceZh": "在那棵老樹下，他們找到了一個隱藏的盒子。"
+    },
+    {
+      "id": "b1-u01-l03-q13",
+      "type": "mcq",
+      "stemEn": "Could you give me some information ____ the new schedule?",
+      "stemZh": "你能給我一些關於新時間表的資訊嗎？",
+      "options": [
+        "merely",
+        "regarding",
+        "surely",
+        "aside"
+      ],
+      "optionGlossZh": [
+        "只",
+        "關於",
+        "的確地",
+        "在一邊"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l03-q14",
+      "type": "mcq",
+      "stemEn": "We sent the package to Osaka ____ the post office.",
+      "stemZh": "我們經由郵局把包裹寄到大阪。",
+      "options": [
+        "beneath",
+        "merely",
+        "via",
+        "aside"
+      ],
+      "optionGlossZh": [
+        "在…下方",
+        "只",
+        "經由",
+        "在一邊"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l03-q15",
+      "type": "reading",
+      "passageEn": "My sister sent me a message regarding her weekend trip. She planned to visit a small town in the mountains. She traveled there via a local train, which took about two hours. She said the town was quiet and beautiful. Moreover, she found a lovely cafe near the old bridge. She sat aside from the main street and enjoyed some fresh fruit and coffee. She told me that whenever she feels stressed, she likes to go somewhere peaceful. I surely hope I can join her next time.",
+      "passageZh": "我姊姊發了一則關於她週末旅行的訊息。她計畫去山上的一個小鎮。她坐當地列車前往，大約花兩個小時。她說那個小鎮安靜而美麗。此外，她在舊橋附近找到了一間漂亮的咖啡館。她坐在離主街旁一點的地方，享用了一些新鮮水果和咖啡。她告訴我，每當她感到壓力大時，就喜歡去安靜的地方。我真的很希望下次能和她一起去。",
+      "questions": [
+        {
+          "questionZh": "她如何到達那個小鎮？",
+          "options": [
+            "她開車去的",
+            "她坐當地列車去的",
+            "她走路去的"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "她為什麼喜歡去安靜的地方？",
+          "options": [
+            "因為她喜歡拍照",
+            "因為她感到壓力大時需要放鬆",
+            "因為那裡的食物很便宜"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q16",
+      "type": "translate",
+      "promptZh": "關於這個議題，她只是提了一個小小的建議，並沒有強迫任何人改變想法。",
+      "hintWords": [
+        "regarding",
+        "merely"
+      ],
+      "referenceEn": [
+        "Regarding this topic, she merely made a small suggestion and did not force anyone to change their mind."
+      ],
+      "rubricZh": [
+        "正確使用 regarding 表示「關於」",
+        "正確使用 merely 表示「只是」",
+        "動詞時態一致（過去式）"
+      ]
+    },
+    {
+      "id": "b1-u01-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "whenever",
+      "instructionZh": "用 whenever 造一個句子，描述你每當做某事時會做的事。",
+      "referenceEn": [
+        "I go for a walk whenever I feel tired after work.",
+        "I drink hot tea whenever the weather is cold."
+      ],
+      "rubricZh": [
+        "正確使用 whenever 引導時間子句",
+        "主句與子句的時態搭配正確",
+        "語意清晰且合邏輯"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l03-q10": [
+        1
+      ],
+      "b1-u01-l03-q13": [
+        1
+      ],
+      "b1-u01-l03-q14": [
+        2
+      ],
+      "b1-u01-l03-q15#0": [
+        1
+      ],
+      "b1-u01-l03-q15#1": [
+        1
+      ]
+    }
+  }
+}

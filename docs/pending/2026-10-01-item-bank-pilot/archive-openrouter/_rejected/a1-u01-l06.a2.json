@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l06",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Amy",
+    "Tom"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l06-q01",
+      "type": "wordCard",
+      "word": "up",
+      "exampleEn": "The book is up on the shelf.",
+      "exampleZh": "那本書在架子上面。",
+      "glossZh": "在...上面，向較高處",
+      "distractorsZh": [
+        "在下面",
+        "在旁邊",
+        "在裡面"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q02",
+      "type": "wordCard",
+      "word": "there",
+      "exampleEn": "There is a cat under the table.",
+      "exampleZh": "桌子底下有一隻貓。",
+      "glossZh": "在那裡",
+      "distractorsZh": [
+        "在這裡",
+        "在裡面",
+        "在後面"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q03",
+      "type": "wordCard",
+      "word": "so",
+      "exampleEn": "I am tired, so I go home.",
+      "exampleZh": "我累了，所以回家。",
+      "glossZh": "所以，因此",
+      "distractorsZh": [
+        "但是",
+        "雖然",
+        "而且"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q04",
+      "type": "wordCard",
+      "word": "when",
+      "exampleEn": "When do you go to school?",
+      "exampleZh": "你何時去學校？",
+      "glossZh": "何時，什麼時候",
+      "distractorsZh": [
+        "哪裡",
+        "誰",
+        "為什麼"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q05",
+      "type": "wordCard",
+      "word": "which",
+      "exampleEn": "Which book do you like?",
+      "exampleZh": "你喜歡哪一本？",
+      "glossZh": "哪一個",
+      "distractorsZh": [
+        "多久",
+        "為什麼",
+        "哪裡"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q06",
+      "type": "wordCard",
+      "word": "them",
+      "exampleEn": "I see them in the park.",
+      "exampleZh": "我在公園看到他們。",
+      "glossZh": "他們",
+      "distractorsZh": [
+        "她們自己",
+        "他的",
+        "我的"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q07",
+      "type": "wordCard",
+      "word": "some",
+      "exampleEn": "I want some water.",
+      "exampleZh": "我要一些水。",
+      "glossZh": "一些的，少許的",
+      "distractorsZh": [
+        "全部的",
+        "沒有",
+        "很多"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q08",
+      "type": "wordCard",
+      "word": "me",
+      "exampleEn": "She calls me in the morning.",
+      "exampleZh": "她早上打電話給我。",
+      "glossZh": "我（受詞）",
+      "distractorsZh": [
+        "我的",
+        "我自己",
+        "我們"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "When are we going?",
+      "sentenceZh": "我們何時出發？"
+    },
+    {
+      "id": "a1-u01-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "I look for them in the house.",
+      "audioZh": "我在房子裡找他們。",
+      "questionZh": "他在哪裡找他們？",
+      "options": [
+        "In the park",
+        "In the house",
+        "In the school"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "Where is my bag? It is up on the shelf.",
+      "sentenceZh": "我的包在哪裡？它在架子頂上。"
+    },
+    {
+      "id": "a1-u01-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "So, when do you eat lunch?",
+      "sentenceZh": "所以，你何時吃午餐？"
+    },
+    {
+      "id": "a1-u01-l06-q13",
+      "type": "mcq",
+      "stemEn": "I see ____ in the park.",
+      "stemZh": "我在公園看到他們。",
+      "options": [
+        "them",
+        "they",
+        "their",
+        "my"
+      ],
+      "optionGlossZh": [
+        "他們（受詞）",
+        "他們（主詞）",
+        "他們的",
+        "我的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l06-q14",
+      "type": "mcq",
+      "stemEn": "____ do you go to work?",
+      "stemZh": "你何時去上班？",
+      "options": [
+        "Where",
+        "Why",
+        "When",
+        "Which"
+      ],
+      "optionGlossZh": [
+        "哪裡",
+        "為什麼",
+        "何時",
+        "哪一個"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l06-q15",
+      "type": "reading",
+      "passageEn": "Amy goes to the park with her friend Tom. She sees some birds up in the tree. Which one is that? she asks Tom. They eat lunch together. When they finish, they go home.",
+      "passageZh": "Amy 和她的朋友 Tom 去公園。她看到樹上有一些鳥。「那隻是哪一隻？」她問 Tom。他們一起吃午餐。吃完後，他們回家。",
+      "questions": [
+        {
+          "questionZh": "Amy 看到什麼？",
+          "options": [
+            "一些鳥",
+            "一些貓",
+            "一些狗"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "他們吃完午餐後做什麼？",
+          "options": [
+            "去學校",
+            "回家",
+            "去圖書館"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q16",
+      "type": "translate",
+      "promptZh": "她打電話給我，問我何時到。",
+      "hintWords": [
+        "me",
+        "when"
+      ],
+      "referenceEn": [
+        "She calls me and asks when I arrive."
+      ],
+      "rubricZh": [
+        "正確使用 me 作為受詞",
+        "when 正確引導時間副詞句",
+        "第三人稱單數動詞加 s"
+      ]
+    },
+    {
+      "id": "a1-u01-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "so",
+      "instructionZh": "用 so 寫一句話，表達因為某個原因而做某事。",
+      "referenceEn": [
+        "I am hungry, so I eat lunch."
+      ],
+      "rubricZh": [
+        "so 正確連接原因與結果",
+        "前後子句語法正確",
+        "因果關係清楚"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l06-q10": [
+        1
+      ],
+      "a1-u01-l06-q13": [
+        0
+      ],
+      "a1-u01-l06-q14": [
+        0,
+        1,
+        2
+      ],
+      "a1-u01-l06-q15#0": [
+        0
+      ],
+      "a1-u01-l06-q15#1": [
+        1
+      ]
+    }
+  }
+}

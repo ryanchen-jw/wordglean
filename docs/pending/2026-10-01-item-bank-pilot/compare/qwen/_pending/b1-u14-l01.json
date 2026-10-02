@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u14-l01",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u14-l01-q01",
+      "type": "wordCard",
+      "word": "treat",
+      "exampleEn": "My boss paid for lunch as a treat for the whole team.",
+      "exampleZh": "我老闆請整個團隊吃午餐，當作一種款待。"
+    },
+    {
+      "id": "b1-u14-l01-q02",
+      "type": "wordCard",
+      "word": "server",
+      "exampleEn": "The server brought us our menus and suggested the special of the day.",
+      "exampleZh": "服務員送來菜單，並推薦了當日的特選。"
+    },
+    {
+      "id": "b1-u14-l01-q03",
+      "type": "wordCard",
+      "word": "pub",
+      "exampleEn": "We went to a small pub after the meeting and had a few drinks.",
+      "exampleZh": "開會後我們去了一家小酒館喝了几杯。"
+    },
+    {
+      "id": "b1-u14-l01-q04",
+      "type": "wordCard",
+      "word": "festive",
+      "exampleEn": "The restaurant had a festive atmosphere with red decorations and music.",
+      "exampleZh": "餐廳佈置了紅色裝飾和音樂，充滿節慶氣氛。"
+    },
+    {
+      "id": "b1-u14-l01-q05",
+      "type": "wordCard",
+      "word": "booking",
+      "exampleEn": "I made a booking for two at the restaurant for Saturday night.",
+      "exampleZh": "我預約了週六晚上的餐廳，兩位。"
+    },
+    {
+      "id": "b1-u14-l01-q06",
+      "type": "wordCard",
+      "word": "takeaway",
+      "exampleEn": "I ordered from a takeaway place because I was in a hurry.",
+      "exampleZh": "我很趕時間，所以從外賣店下了單。"
+    },
+    {
+      "id": "b1-u14-l01-q07",
+      "type": "wordCard",
+      "word": "refreshments",
+      "exampleEn": "The office offers free refreshments in the break room every afternoon.",
+      "exampleZh": "辦公室每個下午都在茶水間提供免費茶點。"
+    },
+    {
+      "id": "b1-u14-l01-q08",
+      "type": "wordCard",
+      "word": "self-service",
+      "exampleEn": "This buffet restaurant is self-service, so you get your food from the counter.",
+      "exampleZh": "這家自助餐餐廳是自助式的，你要從櫃檯自己取餐。"
+    },
+    {
+      "id": "b1-u14-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Could I have a table booking for four people at seven o'clock, please?",
+      "sentenceZh": "請問可以幫我們預約四人座位嗎？七點。"
+    },
+    {
+      "id": "b1-u14-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "We're having a festive dinner to celebrate the company's tenth anniversary. I've already made the booking and ordered the cake.",
+      "audioZh": "我們正在舉行一場喜慶的晚宴，慶祝公司成立十週年。我已預約好了，也訂了蛋糕。",
+      "questionZh": "他們為什麼要舉行這場晚宴？",
+      "options": [
+        "To celebrate a company anniversary",
+        "To welcome new employees",
+        "To send off a retiring manager"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u14-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "I'd like to make a booking for six at the restaurant on Friday evening.",
+      "sentenceZh": "我想預約週五晚上餐廳的六個座位。"
+    },
+    {
+      "id": "b1-u14-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The pub serves local beers and has a festive atmosphere every weekend.",
+      "sentenceZh": "那家酒館供應當地啤酒，每個週末都有喜慶的氣氛。"
+    },
+    {
+      "id": "b1-u14-l01-q13",
+      "type": "mcq",
+      "stemEn": "My boss said lunch was on him — it was a ____ for the whole team.",
+      "stemZh": "我老闆說午餐他請客——這是整個團隊的款待。",
+      "options": [
+        "pub",
+        "treat",
+        "booking",
+        "takeaway"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u14-l01-q14",
+      "type": "mcq",
+      "stemEn": "The conference room had ____ ready for everyone during the long meeting.",
+      "stemZh": "長會議期間，會議室為每個人準備了茶點。",
+      "options": [
+        "servers",
+        "bookings",
+        "refreshments",
+        "takeaways"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u14-l01-q15",
+      "type": "reading",
+      "passageEn": "Last month, our department held a festive dinner to celebrate the launch of our new product. Our manager made the booking for a large restaurant near the office. The restaurant is self-service, so guests picked their food from the counter. There were many dishes to choose from. After dinner, we moved to a small pub across the street. The pub had live music and served local beers. Everyone enjoyed the evening. Some colleagues who could not attend ordered takeaway from a nearby shop instead. The manager said the treat was well worth it.",
+      "passageZh": "上個月，我們部門舉辦了一場喜慶的晚宴，慶祝新產品上市。經理幫我們在辦公室附近的一家大型餐廳訂了位。那間餐廳是自助式的，所以客人從櫃檯自己取餐。菜色很多，大家可以自由選擇。晚餐後，我們轉到街對面的一間小酒館。酒館有現場音樂，也供應當地啤酒。大家都玩得很開心。有些同事因為無法參加，就從附近的外賣店點了外賣。經理說這趟款待非常值得。",
+      "questions": [
+        {
+          "questionZh": "晚宴是在哪裡舉行的？",
+          "options": [
+            "街角的一家小酒館",
+            "辦公室附近的大型自助餐廳",
+            "一家外賣店"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "為什麼有些同事吃了外賣？",
+          "options": [
+            "他們比較喜歡外賣店的食物",
+            "他們無法參加晚宴",
+            "餐廳沒有足夠的座位"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u14-l01-q16",
+      "type": "translate",
+      "promptZh": "我幫團隊預約了餐廳，週五晚上七點，八個位子。",
+      "hintWords": [
+        "booking"
+      ],
+      "referenceEn": [
+        "I made a booking for the team at the restaurant for eight people at seven on Friday.",
+        "I made a booking for eight at the restaurant on Friday at seven for our team."
+      ],
+      "rubricZh": [
+        "正確使用 booking 表示預約",
+        "時間（週五、七點）和人數（八位）表達正確",
+        "介詞使用正確（for, at, on）"
+      ]
+    },
+    {
+      "id": "b1-u14-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "refreshments",
+      "instructionZh": "用 refreshments 寫一個句子，描述辦公室或會議中的情境。",
+      "referenceEn": [
+        "The company provides free refreshments in the meeting room.",
+        "We set up refreshments for the visitors in the lobby.",
+        "Could you prepare some refreshments for the afternoon meeting?"
+      ],
+      "rubricZh": [
+        "refreshments 作名詞使用正確",
+        "句子語法完整、結構正確",
+        "情境合理（辦公室或會議場域）"
+      ]
+    }
+  ]
+}

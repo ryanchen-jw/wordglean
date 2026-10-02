@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l05",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Anna"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l05-q01",
+      "type": "wordCard",
+      "word": "who",
+      "exampleEn": "Who is that man?",
+      "exampleZh": "那個男人是誰？"
+    },
+    {
+      "id": "a1-u01-l05-q02",
+      "type": "wordCard",
+      "word": "if",
+      "exampleEn": "If it rains, I stay home.",
+      "exampleZh": "如果下雨，我就待在家。"
+    },
+    {
+      "id": "a1-u01-l05-q03",
+      "type": "wordCard",
+      "word": "would",
+      "exampleEn": "Would you like a cup of tea?",
+      "exampleZh": "你想要一杯茶嗎？"
+    },
+    {
+      "id": "a1-u01-l05-q04",
+      "type": "wordCard",
+      "word": "her",
+      "exampleEn": "I gave her the book.",
+      "exampleZh": "我把書給了她。"
+    },
+    {
+      "id": "a1-u01-l05-q05",
+      "type": "wordCard",
+      "word": "all",
+      "exampleEn": "All the students are here.",
+      "exampleZh": "所有的學生都在這裡。"
+    },
+    {
+      "id": "a1-u01-l05-q06",
+      "type": "wordCard",
+      "word": "my",
+      "exampleEn": "This is my house.",
+      "exampleZh": "這是我的房子。"
+    },
+    {
+      "id": "a1-u01-l05-q07",
+      "type": "wordCard",
+      "word": "about",
+      "exampleEn": "I have a book about cats.",
+      "exampleZh": "我有一本關於貓的書。"
+    },
+    {
+      "id": "a1-u01-l05-q08",
+      "type": "wordCard",
+      "word": "will",
+      "exampleEn": "I will call you tomorrow.",
+      "exampleZh": "我明天會打電話給你。"
+    },
+    {
+      "id": "a1-u01-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "I will go to the park with my friend.",
+      "sentenceZh": "我會和朋友去公園。"
+    },
+    {
+      "id": "a1-u01-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "All of my friends will come.",
+      "audioZh": "我所有的朋友都會來。",
+      "questionZh": "誰會來？",
+      "options": [
+        "All of her friends",
+        "All of my friends",
+        "All of his friends"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "Would you like some water?",
+      "sentenceZh": "你想要一些水嗎？"
+    },
+    {
+      "id": "a1-u01-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "If it is hot, I will stay home.",
+      "sentenceZh": "如果天氣熱，我就待在家。"
+    },
+    {
+      "id": "a1-u01-l05-q13",
+      "type": "mcq",
+      "stemEn": "I don't know ____ will come to the party.",
+      "stemZh": "我不知道誰會來參加派對。",
+      "options": [
+        "where",
+        "what",
+        "who",
+        "when"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l05-q14",
+      "type": "mcq",
+      "stemEn": "We need ____ the books on the table.",
+      "stemZh": "我們需要桌上所有的書。",
+      "options": [
+        "all",
+        "every",
+        "each",
+        "any"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l05-q15",
+      "type": "reading",
+      "passageEn": "My name is Tom. I will go to the park tomorrow. My friend, Anna, will come with me. If it rains, we will stay at my house. Who will bring the snacks? Anna will bring them for all of us.",
+      "passageZh": "我叫 Tom。我明天要去公園。我的朋友 Anna 會跟我一起去。如果下雨，我們就待在我家。誰會帶點心？Anna 會幫我們全部人帶。",
+      "questions": [
+        {
+          "questionZh": "誰會帶點心？",
+          "options": [
+            "Tom",
+            "Anna",
+            "All of them"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "如果下雨，他們會在哪裡？",
+          "options": [
+            "在公園",
+            "在家裡",
+            "在學校"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q16",
+      "type": "translate",
+      "promptZh": "如果天氣很冷，我會待在家裡。",
+      "hintWords": [
+        "if",
+        "will"
+      ],
+      "referenceEn": [
+        "If it is cold, I will stay at home.",
+        "If it is cold, I will stay home."
+      ],
+      "rubricZh": [
+        "使用 if 引導條件句",
+        "使用 will 表示未來",
+        "句子結構正確",
+        "語意與中文一致"
+      ]
+    },
+    {
+      "id": "a1-u01-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "about",
+      "instructionZh": "用 about 寫一個句子，描述你的書或影片。",
+      "referenceEn": [
+        "I have a book about cats.",
+        "My video is about cooking.",
+        "The book is about my city."
+      ],
+      "rubricZh": [
+        "正確使用 about 作為介系詞",
+        "句子語意通順",
+        "字數在 3 到 12 字之間",
+        "使用 A1 程度的詞彙"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l05-q10": [
+        1
+      ],
+      "a1-u01-l05-q13": [
+        2
+      ],
+      "a1-u01-l05-q14": [
+        0
+      ],
+      "a1-u01-l05-q15#0": [
+        1
+      ],
+      "a1-u01-l05-q15#1": [
+        1
+      ]
+    }
+  }
+}

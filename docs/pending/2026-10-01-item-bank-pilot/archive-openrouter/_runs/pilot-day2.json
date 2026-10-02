@@ -1,0 +1,861 @@
+{
+  "runId": "pilot-day2",
+  "startedAt": "2026-10-01T19:17:35.402Z",
+  "genModel": "qwen/qwen3.8-27b:free",
+  "judgeModel": "google/gemma-4-31b-it:free",
+  "judgeFallback": "apodex/apodex-1.1-mini:free",
+  "judgeSwitches": [
+    {
+      "at": "2026-10-01T19:19:31.598Z",
+      "from": "google/gemma-4-31b-it:free",
+      "to": "apodex/apodex-1.1-mini:free",
+      "after429": 6
+    }
+  ],
+  "genPrompt": "gen-lesson.v2",
+  "regenRejected": false,
+  "judgePrompt": "judge-mcq.v1",
+  "budgetUsd": 0,
+  "dryRun": false,
+  "quotaChecks": [
+    {
+      "at": "2026-10-01T19:17:35.741Z",
+      "remaining": 35,
+      "used": 15,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-01T19:21:02.721Z",
+      "remaining": 33,
+      "used": 17,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-01T19:24:18.235Z",
+      "remaining": 31,
+      "used": 19,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-01T19:33:01.381Z",
+      "remaining": 18,
+      "used": 32,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:17:35.744Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l02",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:17:36.136Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:17:36.606Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:17:36.836Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:17:37.035Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l06",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:17:37.218Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l07",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:17:37.590Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1513,
+      "completionTokens": 6418,
+      "reasoningTokens": 5125,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 113637
+    },
+    {
+      "lessonId": "a1-u01-l07",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:19:31.229Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l07",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:19:31.600Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 644,
+      "completionTokens": 2000,
+      "reasoningTokens": 1959,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "length",
+      "durationMs": 7966
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:19:39.572Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1504,
+      "completionTokens": 5866,
+      "reasoningTokens": 4542,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 82938
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:21:02.722Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 588,
+      "completionTokens": 1389,
+      "reasoningTokens": 1069,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 5265
+    },
+    {
+      "lessonId": "a1-u01-l09",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:21:08.268Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1545,
+      "completionTokens": 8542,
+      "reasoningTokens": 7595,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 165046
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:23:53.323Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:23:53.747Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:23:54.019Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:23:54.278Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:23:54.516Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 709,
+      "completionTokens": 2000,
+      "reasoningTokens": 2102,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "length",
+      "durationMs": 7879
+    },
+    {
+      "lessonId": "b1-u01-l05",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:24:02.399Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 670,
+      "completionTokens": 1314,
+      "reasoningTokens": 1048,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 4839
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:24:07.484Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 692,
+      "completionTokens": 1513,
+      "reasoningTokens": 1254,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 5786
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:24:13.330Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 559,
+      "completionTokens": 1322,
+      "reasoningTokens": 996,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 4886
+    },
+    {
+      "lessonId": "a1-u01-l02",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:24:18.276Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 547,
+      "completionTokens": 1334,
+      "reasoningTokens": 1053,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 4717
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:24:23.035Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1510,
+      "completionTokens": 6243,
+      "reasoningTokens": 5278,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 103108
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:26:06.146Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 553,
+      "completionTokens": 1030,
+      "reasoningTokens": 740,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 5012
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:26:11.187Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 626,
+      "completionTokens": 2000,
+      "reasoningTokens": 1648,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "length",
+      "durationMs": 7567
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:26:18.758Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 569,
+      "completionTokens": 1493,
+      "reasoningTokens": 1136,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 5335
+    },
+    {
+      "lessonId": "a1-u01-l06",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:26:24.119Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 592,
+      "completionTokens": 1894,
+      "reasoningTokens": 1553,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 6488
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:26:30.650Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1511,
+      "completionTokens": 11009,
+      "reasoningTokens": 10035,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 251187
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:30:41.840Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 562,
+      "completionTokens": 1466,
+      "reasoningTokens": 1109,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 5608
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:30:47.488Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1536,
+      "completionTokens": 8094,
+      "reasoningTokens": 6597,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 126262
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:32:53.753Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 646,
+      "completionTokens": 2000,
+      "reasoningTokens": 1742,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "length",
+      "durationMs": 7606
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:33:01.390Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1419,
+      "completionTokens": 2645,
+      "reasoningTokens": 2645,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "error",
+      "durationMs": 98804
+    },
+    {
+      "lessonId": "b1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 1,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:34:40.201Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1520,
+      "completionTokens": 5063,
+      "reasoningTokens": 4077,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 94096
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "a1-u01-l07",
+      "status": "judge_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "JUDGE_PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "題目留在 _pending/，下次執行只補判題"
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l09",
+      "status": "parse_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "PARSE",
+          "message": "Expected ',' or ']' after array element in JSON at position 2620 (line 21 column 1)"
+        }
+      ],
+      "note": "Expected ',' or ']' after array element in JSON at position 2620 (line 21 column 1)"
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "status": "judge_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "JUDGE_PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "題目留在 _pending/，下次執行只補判題"
+    },
+    {
+      "lessonId": "b1-u01-l05",
+      "status": "ok"
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l02",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/6/exampleEn",
+          "message": "超過 A1：road(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/16/referenceEn/1",
+          "message": "超過 A1：road(A2)"
+        }
+      ],
+      "note": "2 個錯誤"
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "SIMPLIFIED",
+          "path": "items/2/exampleZh",
+          "message": "含簡體字：学"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/2/exampleZh",
+          "message": "opencc cn→twp 會改成：他們在學校。"
+        },
+        {
+          "code": "SIMPLIFIED",
+          "path": "items/8/sentenceZh",
+          "message": "含簡體字：学"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/8/sentenceZh",
+          "message": "opencc cn→twp 會改成：這是我的朋友。我們在學校。"
+        },
+        {
+          "code": "UNLEVELED",
+          "path": "items/9/options/2",
+          "message": "lexicon 無級距：Korea"
+        },
+        {
+          "code": "SIMPLIFIED",
+          "path": "items/9/audioZh",
+          "message": "含簡體字：学"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/9/audioZh",
+          "message": "opencc cn→twp 會改成：他們來自臺灣。我們在學校。"
+        },
+        {
+          "code": "SIMPLIFIED",
+          "path": "items/11/sentenceZh",
+          "message": "含簡體字：学"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/11/sentenceZh",
+          "message": "opencc cn→twp 會改成：我們在家裡，但他們在學校。"
+        },
+        {
+          "code": "SIMPLIFIED",
+          "path": "items/14/passageZh",
+          "message": "含簡體字：学"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/14/passageZh",
+          "message": "opencc cn→twp 會改成：這是我的朋友 Tom。他來自日本。我們現在在學校。他的課在兩點。Tom 喜歡數學，但不喜歡美術。我們每天一起做事。他是個好學生。"
+        }
+      ],
+      "note": "11 個錯誤"
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "status": "judge_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "JUDGE_PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "題目留在 _pending/，下次執行只補判題"
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/14/passageEn",
+          "message": "超過 A1：snacks(A2)"
+        },
+        {
+          "code": "ZH_MISSING",
+          "path": "items/14/questions/0/options/0",
+          "message": "沒有任何中文字"
+        },
+        {
+          "code": "ZH_MISSING",
+          "path": "items/14/questions/0/options/1",
+          "message": "沒有任何中文字"
+        },
+        {
+          "code": "ZH_MISSING",
+          "path": "items/14/questions/0/options/2",
+          "message": "沒有任何中文字"
+        }
+      ],
+      "note": "4 個錯誤"
+    },
+    {
+      "lessonId": "a1-u01-l06",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/7/exampleEn",
+          "message": "超過 A1：send(A2)"
+        },
+        {
+          "code": "LENGTH",
+          "path": "items/9/audioEn",
+          "message": "句長 15 字，A1 應為 3–12"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/13/stemEn",
+          "message": "超過 A1：send(A2), report(A2)"
+        }
+      ],
+      "note": "3 個錯誤"
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/15/referenceEn/0",
+          "message": "超過 A1：stairs(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/15/referenceEn/1",
+          "message": "超過 A1：stairs(A2)"
+        }
+      ],
+      "note": "2 個錯誤"
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "status": "judge_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "JUDGE_PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "題目留在 _pending/，下次執行只補判題"
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "status": "parse_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "回應中沒有 JSON 物件"
+    },
+    {
+      "lessonId": "b1-u01-l03",
+      "status": "parse_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "PARSE",
+          "message": "Expected ',' or ']' after array element in JSON at position 3287 (line 1 column 3288)"
+        }
+      ],
+      "note": "Expected ',' or ']' after array element in JSON at position 3287 (line 1 column 3288)"
+    }
+  ],
+  "remaining": [],
+  "totals": {
+    "promptTokens": 20015,
+    "completionTokens": 74635,
+    "costUsd": 0
+  },
+  "stoppedReason": null,
+  "finishedAt": "2026-10-01T19:36:14.299Z"
+}

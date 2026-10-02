@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l07",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Lily"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l07-q01",
+      "type": "wordCard",
+      "word": "out",
+      "exampleEn": "The sun is out today.",
+      "exampleZh": "今天太陽出來了。",
+      "glossZh": "在外",
+      "distractorsZh": [
+        "在裡面",
+        "在上方",
+        "在下方"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q02",
+      "type": "wordCard",
+      "word": "into",
+      "exampleEn": "He walks into the kitchen.",
+      "exampleZh": "他走進了廚房。",
+      "glossZh": "進入…之內",
+      "distractorsZh": [
+        "離開…之外",
+        "經過",
+        "在…旁邊"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q03",
+      "type": "wordCard",
+      "word": "just",
+      "exampleEn": "I just finished my homework.",
+      "exampleZh": "我剛剛完成作業了。",
+      "glossZh": "剛剛",
+      "distractorsZh": [
+        "一直",
+        "從來",
+        "幾乎"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q04",
+      "type": "wordCard",
+      "word": "him",
+      "exampleEn": "I give the book to him.",
+      "exampleZh": "我將書給他。",
+      "glossZh": "他（受格）",
+      "distractorsZh": [
+        "她（受格）",
+        "他們（受格）",
+        "我（受格）"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q05",
+      "type": "wordCard",
+      "word": "your",
+      "exampleEn": "Is this your phone?",
+      "exampleZh": "這是你的手機嗎？",
+      "glossZh": "你的",
+      "distractorsZh": [
+        "我的",
+        "他的",
+        "她的"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q06",
+      "type": "wordCard",
+      "word": "could",
+      "exampleEn": "Could you help me?",
+      "exampleZh": "你可以幫我嗎？",
+      "glossZh": "可以、能（委婉）",
+      "distractorsZh": [
+        "必須",
+        "不會",
+        "應該"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q07",
+      "type": "wordCard",
+      "word": "than",
+      "exampleEn": "I am taller than my sister.",
+      "exampleZh": "我比姊姊高。",
+      "glossZh": "比",
+      "distractorsZh": [
+        "和",
+        "或者",
+        "因為"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q08",
+      "type": "wordCard",
+      "word": "other",
+      "exampleEn": "Do you have any other questions?",
+      "exampleZh": "你還有其他問題嗎？",
+      "glossZh": "其他的、另外的",
+      "distractorsZh": [
+        "所有",
+        "唯一",
+        "相同"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q09",
+      "type": "listenType",
+      "sentenceEn": "He just walked into the room.",
+      "sentenceZh": "他剛剛走進了房間。"
+    },
+    {
+      "id": "a1-u01-l07-q10",
+      "type": "listenChoice",
+      "audioEn": "Could you give the pen to him?",
+      "audioZh": "你可以把那支筆給他嗎？",
+      "questionZh": "他想要什麼東西？",
+      "options": [
+        "a pen",
+        "a book",
+        "a cup",
+        "a bag"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "I just opened the door.",
+      "sentenceZh": "我剛剛打開了門。"
+    },
+    {
+      "id": "a1-u01-l07-q12",
+      "type": "shadowing",
+      "sentenceEn": "She is taller than her brother.",
+      "sentenceZh": "她比哥哥高。"
+    },
+    {
+      "id": "a1-u01-l07-q13",
+      "type": "mcq",
+      "stemEn": "He gave the book to ____.",
+      "stemZh": "他將那本書给了他。",
+      "options": [
+        "him",
+        "he",
+        "his",
+        "her"
+      ],
+      "optionGlossZh": [
+        "他（受格）",
+        "他（主格）",
+        "他的",
+        "她（受格）"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q14",
+      "type": "mcq",
+      "stemEn": "Do you have any ____ books?",
+      "stemZh": "你還有其他書嗎？",
+      "options": [
+        "other",
+        "another",
+        "the other",
+        "others"
+      ],
+      "optionGlossZh": [
+        "其他的（形容詞）",
+        "另一個（接单數名詞）",
+        "另一個（特指的）",
+        "其他的人事物（名詞）"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q15",
+      "type": "reading",
+      "passageEn": "Tom is in the kitchen. He just opened the door. His sister Lily walks into the room and sits at the table. She asks, 'Could you give me your phone?' Tom says, 'Sure, here it is.' Lily says, 'Thanks. Is this your other phone? It's older than the first one.' Tom laughs and says, 'Yes, it's my old phone.'",
+      "passageZh": "湯姆在廚房裡。他剛剛打開了門。他的妹妹莉莉走進房間，坐在桌子旁。她問：「你可以把你的手機給我嗎？」湯姆說：「當然，給你了。」莉莉說：「謝謝。這是你的另一支手機嗎？它比第一支舊。」湯姆笑著說：「是的，那是我的舊手機。」",
+      "questions": [
+        {
+          "questionZh": "莉莉走進房間後做了什麼？",
+          "options": [
+            "坐在桌子上",
+            "坐在桌子旁",
+            "站在門邊",
+            "走到窗戶前"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "莉莉拿到的那支手機和第一支相比如何？",
+          "options": [
+            "比較新",
+            "比較舊",
+            "一樣新舊",
+            "比較大"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q16",
+      "type": "translate",
+      "promptZh": "他剛剛走進了房間。",
+      "hintWords": [
+        "just",
+        "into"
+      ],
+      "referenceEn": [
+        "He just walked into the room."
+      ],
+      "rubricZh": [
+        "使用 just 表示「剛剛」",
+        "使用 into 表示「進入」",
+        "動詞用過去式"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q17",
+      "type": "makeSentence",
+      "targetWord": "could",
+      "instructionZh": "用 could 寫一句委婉請求的句子。",
+      "referenceEn": [
+        "Could you open the window?",
+        "Could you help me, please?"
+      ],
+      "rubricZh": [
+        "使用 could 表達委婉請求",
+        "句型為 Could＋主詞＋動詞原形",
+        "語意通順且語法正確"
+      ]
+    }
+  ],
+  "attempt": 3,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l07-q10": [
+        0
+      ],
+      "a1-u01-l07-q13": [
+        0,
+        3
+      ],
+      "a1-u01-l07-q14": [
+        0
+      ],
+      "a1-u01-l07-q15#0": [
+        1
+      ],
+      "a1-u01-l07-q15#1": [
+        1
+      ]
+    }
+  }
+}

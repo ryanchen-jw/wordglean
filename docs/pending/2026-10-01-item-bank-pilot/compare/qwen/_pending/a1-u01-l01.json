@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l01",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l01-q01",
+      "type": "wordCard",
+      "word": "the",
+      "exampleEn": "The book is on the table.",
+      "exampleZh": "那本書在桌子上。"
+    },
+    {
+      "id": "a1-u01-l01-q02",
+      "type": "wordCard",
+      "word": "be",
+      "exampleEn": "I am a student.",
+      "exampleZh": "我是一名學生。"
+    },
+    {
+      "id": "a1-u01-l01-q03",
+      "type": "wordCard",
+      "word": "and",
+      "exampleEn": "I like tea and coffee.",
+      "exampleZh": "我喜歡茶和咖啡。"
+    },
+    {
+      "id": "a1-u01-l01-q04",
+      "type": "wordCard",
+      "word": "of",
+      "exampleEn": "This is a cup of tea.",
+      "exampleZh": "這是一杯茶。"
+    },
+    {
+      "id": "a1-u01-l01-q05",
+      "type": "wordCard",
+      "word": "a",
+      "exampleEn": "I have a cat.",
+      "exampleZh": "我有一隻貓。"
+    },
+    {
+      "id": "a1-u01-l01-q06",
+      "type": "wordCard",
+      "word": "in",
+      "exampleEn": "The cat is in the box.",
+      "exampleZh": "貓在盒子裡面。"
+    },
+    {
+      "id": "a1-u01-l01-q07",
+      "type": "wordCard",
+      "word": "to",
+      "exampleEn": "I go to school every day.",
+      "exampleZh": "我每天去學校。"
+    },
+    {
+      "id": "a1-u01-l01-q08",
+      "type": "wordCard",
+      "word": "have",
+      "exampleEn": "I have a new phone.",
+      "exampleZh": "我有一支新手機。"
+    },
+    {
+      "id": "a1-u01-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "I have a book in my hand.",
+      "sentenceZh": "我手裡有一本書。"
+    },
+    {
+      "id": "a1-u01-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I want to go to the park. The park is in the city.",
+      "audioZh": "我想到公園去。公園在城里。",
+      "questionZh": "公園在哪裡？",
+      "options": [
+        "in the city",
+        "in the park",
+        "to the city"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "I have a book and a pen.",
+      "sentenceZh": "我有一本書和一支筆。"
+    },
+    {
+      "id": "a1-u01-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The cat is in the box.",
+      "sentenceZh": "貓在盒子裡面。"
+    },
+    {
+      "id": "a1-u01-l01-q13",
+      "type": "mcq",
+      "stemEn": "I like tea ____ coffee.",
+      "stemZh": "我喜歡茶和咖啡。",
+      "options": [
+        "to",
+        "and",
+        "of",
+        "in"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l01-q14",
+      "type": "mcq",
+      "stemEn": "I ____ a new phone.",
+      "stemZh": "我有一支新手機。",
+      "options": [
+        "is",
+        "to",
+        "in",
+        "have"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a1-u01-l01-q15",
+      "type": "reading",
+      "passageEn": "Hi, I am Amy. I have a cat and a dog. The cat is in the box. The dog is at the door. I love them. We have fun together.",
+      "passageZh": "嗨，我是 Amy。我有一隻貓和一隻狗。貓在盒子裡面。狗在門邊。我愛牠們。我們玩得很開心。",
+      "questions": [
+        {
+          "questionZh": "貓在哪裡？",
+          "options": [
+            "在盒子裡面",
+            "在門邊",
+            "在 Amy 手上"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Amy 有幾隻動物？",
+          "options": [
+            "一隻",
+            "兩隻",
+            "三隻"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q16",
+      "type": "translate",
+      "promptZh": "我有一隻貓，它在盒子裡面。",
+      "hintWords": [
+        "have",
+        "in"
+      ],
+      "referenceEn": [
+        "I have a cat. It is in the box."
+      ],
+      "rubricZh": [
+        "正確使用 have 表示「有」",
+        "正確使用 a 修飾 cat",
+        "正確使用 in the box 表示地點"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "and",
+      "instructionZh": "用 and 寫一個句子，連接兩樣東西。",
+      "referenceEn": [
+        "I have a cat and a dog.",
+        "She likes tea and coffee.",
+        "The book and the pen are on the desk."
+      ],
+      "rubricZh": [
+        "正確使用 and 連接兩個名詞或名詞片語",
+        "句子結構完整、語法正確",
+        "用字屬於 A1 範圍"
+      ]
+    }
+  ]
+}

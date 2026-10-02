@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l03",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Anna",
+    "Japan",
+    "Taiwan"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l03-q01",
+      "type": "wordCard",
+      "word": "do",
+      "exampleEn": "I do my work at home.",
+      "exampleZh": "我在家裡做我的工作。",
+      "glossZh": "做",
+      "distractorsZh": [
+        "帶",
+        "吃",
+        "買"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q02",
+      "type": "wordCard",
+      "word": "this",
+      "exampleEn": "This is my new book.",
+      "exampleZh": "這是我的新書。",
+      "glossZh": "這個",
+      "distractorsZh": [
+        "他",
+        "我",
+        "它"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q03",
+      "type": "wordCard",
+      "word": "they",
+      "exampleEn": "They are at the office.",
+      "exampleZh": "他們在辦公室。",
+      "glossZh": "他們",
+      "distractorsZh": [
+        "我們",
+        "你們",
+        "我"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q04",
+      "type": "wordCard",
+      "word": "at",
+      "exampleEn": "The class starts at nine.",
+      "exampleZh": "課程九點開始。",
+      "glossZh": "在",
+      "distractorsZh": [
+        "到",
+        "被",
+        "向"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q05",
+      "type": "wordCard",
+      "word": "but",
+      "exampleEn": "I like tea, but I do not like coffee.",
+      "exampleZh": "我喜歡茶，但是我不喜歡咖啡。",
+      "glossZh": "但是",
+      "distractorsZh": [
+        "和",
+        "因為",
+        "所以"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q06",
+      "type": "wordCard",
+      "word": "we",
+      "exampleEn": "We go to work at eight.",
+      "exampleZh": "我們八點去上班。",
+      "glossZh": "我們",
+      "distractorsZh": [
+        "你",
+        "他",
+        "它"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q07",
+      "type": "wordCard",
+      "word": "his",
+      "exampleEn": "His bag is on the table.",
+      "exampleZh": "他的包在桌子上。",
+      "glossZh": "他的",
+      "distractorsZh": [
+        "她的",
+        "我的",
+        "你的"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q08",
+      "type": "wordCard",
+      "word": "from",
+      "exampleEn": "I am from Taiwan.",
+      "exampleZh": "我來自台灣。",
+      "glossZh": "來自",
+      "distractorsZh": [
+        "到",
+        "在",
+        "向"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "They do not like this song.",
+      "sentenceZh": "他們不喜歡這首歌。"
+    },
+    {
+      "id": "a1-u01-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "They are at the park now.",
+      "audioZh": "他們現在在公園。",
+      "questionZh": "他們現在在哪裡？",
+      "options": [
+        "At the park",
+        "At school",
+        "At home"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "We do our work at the office.",
+      "sentenceZh": "我們在辦公室做我們的工作。"
+    },
+    {
+      "id": "a1-u01-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "They are from Japan, but they live in Taiwan.",
+      "sentenceZh": "他們來自日本，但是他們住在台灣。"
+    },
+    {
+      "id": "a1-u01-l03-q13",
+      "type": "mcq",
+      "stemEn": "____ are from Japan.",
+      "stemZh": "他們來自日本。",
+      "options": [
+        "They",
+        "This",
+        "His",
+        "But"
+      ],
+      "answer": 0,
+      "optionGlossZh": [
+        "他們",
+        "這個",
+        "他的",
+        "但是"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q14",
+      "type": "mcq",
+      "stemEn": "I like tea, ____ I do not like coffee.",
+      "stemZh": "我喜歡茶，但是我不喜歡咖啡。",
+      "options": [
+        "and",
+        "but",
+        "at",
+        "this"
+      ],
+      "answer": 1,
+      "optionGlossZh": [
+        "和",
+        "但是",
+        "在",
+        "這個"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q15",
+      "type": "reading",
+      "passageEn": "Tom and Anna work at a small office. Tom is from Japan. Anna is from Taiwan. They do a lot of work. His bag is red. Her bag is blue. We have lunch at one. I like my job, but I am tired.",
+      "passageZh": "Tom 和 Anna 在一個小辦公室工作。Tom 來自日本。Anna 來自台灣。他們做很多工作。他的包是紅色的。她的包是藍色的。我們一點鐘吃午餐。我喜歡我的工作，但是我累了。",
+      "questions": [
+        {
+          "questionZh": "Tom 來自哪裡？",
+          "options": [
+            "來自日本",
+            "來自台灣",
+            "來自英國"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "他的包是什麼顏色？",
+          "options": [
+            "藍色",
+            "紅色",
+            "黑色"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q16",
+      "type": "translate",
+      "promptZh": "我們來自台灣，但是我們喜歡日本。",
+      "hintWords": [
+        "we",
+        "from",
+        "but"
+      ],
+      "referenceEn": [
+        "We are from Taiwan, but we like Japan."
+      ],
+      "rubricZh": [
+        "使用 we 作主詞",
+        "使用 from 表達來自",
+        "使用 but 連接兩個子句"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "at",
+      "instructionZh": "用「at」寫一句關於時間或地點的句子。",
+      "referenceEn": [
+        "I go to school at eight.",
+        "The cat is at home.",
+        "We meet at the park."
+      ],
+      "rubricZh": [
+        "正確使用 at 表達時間或地點",
+        "句子結構正確",
+        "語意清楚自然"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l03-q10": [
+        0
+      ],
+      "a1-u01-l03-q13": [
+        0
+      ],
+      "a1-u01-l03-q14": [
+        1
+      ],
+      "a1-u01-l03-q15#0": [
+        0
+      ],
+      "a1-u01-l03-q15#1": [
+        1
+      ]
+    }
+  },
+  "glossBackfill": {
+    "model": "qwen/qwen3.8-27b:free",
+    "promptVersion": "gloss-backfill.v1",
+    "judgeModel": "apodex/apodex-1.1-mini:free",
+    "judgePromptVersion": "gloss-judge.v1"
+  }
+}

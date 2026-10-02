@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l04",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Maria",
+    "John"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l04-q01",
+      "type": "wordCard",
+      "word": "not",
+      "exampleEn": "I am not at home.",
+      "exampleZh": "我不在家。",
+      "glossZh": "不",
+      "distractorsZh": [
+        "無法",
+        "沒有",
+        "不是"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q02",
+      "type": "wordCard",
+      "word": "by",
+      "exampleEn": "I go to work by bus.",
+      "exampleZh": "我搭公車去上班。",
+      "glossZh": "搭",
+      "distractorsZh": [
+        "被",
+        "旁邊",
+        "按照"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q03",
+      "type": "wordCard",
+      "word": "she",
+      "exampleEn": "She is my friend.",
+      "exampleZh": "她是我的朋友。",
+      "glossZh": "她",
+      "distractorsZh": [
+        "他",
+        "它",
+        "她們"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q04",
+      "type": "wordCard",
+      "word": "or",
+      "exampleEn": "Do you like tea or coffee?",
+      "exampleZh": "你喜歡茶還是咖啡？",
+      "glossZh": "還是",
+      "distractorsZh": [
+        "而且",
+        "否則",
+        "因為"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q05",
+      "type": "wordCard",
+      "word": "as",
+      "exampleEn": "She works as a teacher.",
+      "exampleZh": "她當老師。",
+      "glossZh": "作為",
+      "distractorsZh": [
+        "因為",
+        "像",
+        "與"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q06",
+      "type": "wordCard",
+      "word": "what",
+      "exampleEn": "What is this?",
+      "exampleZh": "這是什麼？",
+      "glossZh": "什麼",
+      "distractorsZh": [
+        "哪一個",
+        "為什麼",
+        "怎麼"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q07",
+      "type": "wordCard",
+      "word": "their",
+      "exampleEn": "Their house is big.",
+      "exampleZh": "他們的房子很大。",
+      "glossZh": "他們的",
+      "distractorsZh": [
+        "他的",
+        "她的",
+        "我們的"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q08",
+      "type": "wordCard",
+      "word": "can",
+      "exampleEn": "Can you help me?",
+      "exampleZh": "你可以幫我嗎？",
+      "glossZh": "可以",
+      "distractorsZh": [
+        "必須",
+        "應該",
+        "願意"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "She is not at work today.",
+      "sentenceZh": "她今天沒有上班。"
+    },
+    {
+      "id": "a1-u01-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "What can she do as a teacher?",
+      "audioZh": "她身為老師能做什麼？",
+      "questionZh": "她是什麼職業？",
+      "options": [
+        "She is a doctor.",
+        "She is a teacher.",
+        "She is a nurse."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "Can she help us today?",
+      "sentenceZh": "她今天能幫我們嗎？"
+    },
+    {
+      "id": "a1-u01-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "Not now, please wait by the door.",
+      "sentenceZh": "現在不行，請在門邊等一下。"
+    },
+    {
+      "id": "a1-u01-l04-q13",
+      "type": "mcq",
+      "stemEn": "She can drive a car, but she can ____ fly.",
+      "stemZh": "她會開車，但她不會飛。",
+      "options": [
+        "not",
+        "very",
+        "too",
+        "so"
+      ],
+      "answer": 0,
+      "optionGlossZh": [
+        "不",
+        "非常",
+        "太",
+        "這麼"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q14",
+      "type": "mcq",
+      "stemEn": "I go to school ____ bus every day.",
+      "stemZh": "我每天都搭公車去學校。",
+      "options": [
+        "in",
+        "at",
+        "by",
+        "on"
+      ],
+      "answer": 2,
+      "optionGlossZh": [
+        "在……裡面",
+        "在",
+        "搭",
+        "在……上面"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q15",
+      "type": "reading",
+      "passageEn": "Maria and John work at a school. She works as a teacher. John works as a nurse. They are good friends. Their office is small. Maria can cook very well. She is not at home today. What can John do? He can help Maria by phone. Or he can come to her office. They are happy.",
+      "passageZh": "Maria 和 John 在同一間學校工作。她當老師，John 當護士。他們是好朋友。他們的辦公室很小。Maria 煮飯煮得很好。她今天不在家。John 能做什麼？他可以用電話幫 Maria，也可以到她的辦公室。他們很快樂。",
+      "questions": [
+        {
+          "questionZh": "Maria 的工作是什麼？",
+          "options": [
+            "護士",
+            "老師",
+            "醫生",
+            "護工"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "John 今天可以怎麼幫 Maria？",
+          "options": [
+            "去她家做飯",
+            "打電話或到她的辦公室",
+            "幫她洗衣服",
+            "送花給她"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q16",
+      "type": "translate",
+      "promptZh": "她不在家。她當護士。",
+      "hintWords": [
+        "not",
+        "as"
+      ],
+      "referenceEn": [
+        "She is not at home. She works as a nurse.",
+        "She is not home. She works as a nurse."
+      ],
+      "rubricZh": [
+        "正確使用 not 表達否定",
+        "正確使用 as 表達職業",
+        "句子結構正確、語意清楚"
+      ]
+    },
+    {
+      "id": "a1-u01-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "or",
+      "instructionZh": "用 or 寫一個表示選擇的句子，包含兩個選項。",
+      "referenceEn": [
+        "Do you like tea or coffee?",
+        "Can she drive or walk?",
+        "Is it red or blue?"
+      ],
+      "rubricZh": [
+        "正確使用 or 連接兩個選項",
+        "句子結構正確",
+        "意思清楚、合乎邏輯"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l04-q10": [
+        1
+      ],
+      "a1-u01-l04-q13": [
+        0
+      ],
+      "a1-u01-l04-q14": [
+        2
+      ],
+      "a1-u01-l04-q15#0": [
+        1
+      ],
+      "a1-u01-l04-q15#1": [
+        1
+      ]
+    }
+  },
+  "glossBackfill": {
+    "model": "qwen/qwen3.8-27b:free",
+    "promptVersion": "gloss-backfill.v1",
+    "judgeModel": "apodex/apodex-1.1-mini:free",
+    "judgePromptVersion": "gloss-judge.v1"
+  }
+}

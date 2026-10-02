@@ -1,0 +1,553 @@
+{
+  "runId": "pilot-day2-regen",
+  "startedAt": "2026-10-01T19:37:38.749Z",
+  "genModel": "qwen/qwen3.8-27b:free",
+  "judgeModel": "google/gemma-4-31b-it:free",
+  "judgeFallback": "apodex/apodex-1.1-mini:free",
+  "judgeSwitches": [
+    {
+      "at": "2026-10-01T19:44:13.921Z",
+      "from": "google/gemma-4-31b-it:free",
+      "to": "apodex/apodex-1.1-mini:free",
+      "after429": 6
+    }
+  ],
+  "genPrompt": "gen-lesson.v2",
+  "regenRejected": true,
+  "judgePrompt": "judge-mcq.v1",
+  "budgetUsd": 0,
+  "dryRun": false,
+  "quotaChecks": [
+    {
+      "at": "2026-10-01T19:37:39.068Z",
+      "remaining": 14,
+      "used": 36,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-01T19:42:55.653Z",
+      "remaining": 11,
+      "used": 39,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "a1-u01-l02",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:37:39.071Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1511,
+      "completionTokens": 1494,
+      "reasoningTokens": 1494,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 20234
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:37:59.311Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:37:59.915Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:38:00.130Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1526,
+      "completionTokens": 5863,
+      "reasoningTokens": 4589,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 113978
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 2,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:39:54.110Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l06",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:39:54.553Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l07",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:39:54.825Z",
+      "status": "ok",
+      "provider": "Google AI Studio",
+      "servedModel": "google/gemma-4-31b-it:free",
+      "promptTokens": 648,
+      "completionTokens": 130,
+      "reasoningTokens": 0,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 4619
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:39:59.702Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:40:00.130Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:40:00.391Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:40:00.570Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1510,
+      "completionTokens": 6805,
+      "reasoningTokens": 5594,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 174864
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 2,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:42:55.656Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:42:55.867Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 2,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:42:56.046Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l06",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:42:56.225Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "gen",
+      "model": "qwen/qwen3.8-27b:free",
+      "attempt": 2,
+      "prompt": "gen-lesson.v2",
+      "at": "2026-10-01T19:42:56.463Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "servedModel": "qwen/qwen3.8-27b:free",
+      "promptTokens": 1511,
+      "completionTokens": 5029,
+      "reasoningTokens": 3829,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 77022
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "judge",
+      "model": "google/gemma-4-31b-it:free",
+      "attempt": 2,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:44:13.489Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 2,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:44:13.923Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 556,
+      "completionTokens": 2345,
+      "reasoningTokens": 1988,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 8263
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:44:22.299Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 646,
+      "completionTokens": 2358,
+      "reasoningTokens": 1911,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "stop",
+      "durationMs": 14270
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "role": "judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "attempt": 1,
+      "prompt": "judge-mcq.v1",
+      "at": "2026-10-01T19:44:36.747Z",
+      "status": "ok",
+      "provider": "Novita",
+      "servedModel": "apodex/apodex-1.1-mini:free",
+      "promptTokens": 709,
+      "completionTokens": 6000,
+      "reasoningTokens": 5166,
+      "costUsd": 0,
+      "costSource": "openrouter",
+      "finishReason": "length",
+      "durationMs": 24221
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "a1-u01-l01",
+      "status": "skipped"
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "status": "skipped"
+    },
+    {
+      "lessonId": "a1-u01-l09",
+      "status": "rejected"
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "status": "rejected"
+    },
+    {
+      "lessonId": "b1-u01-l03",
+      "status": "rejected"
+    },
+    {
+      "lessonId": "b1-u01-l05",
+      "status": "skipped"
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "status": "skipped"
+    },
+    {
+      "lessonId": "a1-u01-l02",
+      "status": "parse_failed",
+      "attempt": 2,
+      "errors": [
+        {
+          "code": "PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "回應中沒有 JSON 物件"
+    },
+    {
+      "lessonId": "a1-u01-l07",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/14/passageEn",
+          "message": "超過 A1：out of(A2)"
+        },
+        {
+          "code": "MCQ_AMBIGUOUS",
+          "path": "items/12",
+          "message": "判題模型認為 0, 1 都正確（答案 1）"
+        }
+      ],
+      "note": "2 個錯誤"
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "status": "check_failed",
+      "attempt": 2,
+      "errors": [
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/4/exampleEn",
+          "message": "超過 A1：rest(B1)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/9/audioEn",
+          "message": "超過 A1：road(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/9/options/0",
+          "message": "超過 A1：road(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/9/options/1",
+          "message": "超過 A1：road(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/9/options/2",
+          "message": "超過 A1：road(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/13/stemEn",
+          "message": "超過 A1：rest(B1)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/14/passageEn",
+          "message": "超過 A1：lake(A2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/16/referenceEn/2",
+          "message": "超過 A1：rest(B1)"
+        }
+      ],
+      "note": "8 個錯誤"
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "status": "check_failed",
+      "errors": [
+        {
+          "code": "UNLEVELED",
+          "path": "items/10/options/0",
+          "message": "lexicon 無級距：他建議大家多留一下"
+        },
+        {
+          "code": "UNLEVELED",
+          "path": "items/10/options/1",
+          "message": "lexicon 無級距：他態度堅定, 堅持要走"
+        },
+        {
+          "code": "UNLEVELED",
+          "path": "items/10/options/2",
+          "message": "lexicon 無級距：他在問大家要不要走"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/11/sentenceEn",
+          "message": "超過 B1：project(B2)"
+        },
+        {
+          "code": "OVER_LEVEL",
+          "path": "items/15/passageEn",
+          "message": "超過 B1：employees(B2)"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/15/passageZh",
+          "message": "opencc cn→twp 會改成：開完會後，Sarah 問她的主管，新政策是否適用於所有人。主管回覆說，它包含所有員工。他也提到，改變會從下個週一開始。儘管團隊有些顧慮，大多數員工看起來對新規定挺高興的。根據公司政策，任何不同意的人之後都可以找 HR 談。因此，會議在正面的氣氛中結束。"
+        },
+        {
+          "code": "SIMPLIFIED",
+          "path": "items/17/rubricZh/0",
+          "message": "含簡體字：确"
+        },
+        {
+          "code": "ZH_NOT_TW",
+          "path": "items/17/rubricZh/0",
+          "message": "opencc cn→twp 會改成：正確使用 thus 　因果關係"
+        }
+      ],
+      "note": "8 個錯誤"
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "status": "judge_failed",
+      "attempt": 1,
+      "errors": [
+        {
+          "code": "JUDGE_PARSE",
+          "message": "回應中沒有 JSON 物件"
+        }
+      ],
+      "note": "題目留在 _pending/，下次執行只補判題"
+    }
+  ],
+  "remaining": [
+    "a1-u01-l03",
+    "a1-u01-l04",
+    "a1-u01-l05",
+    "a1-u01-l06"
+  ],
+  "totals": {
+    "promptTokens": 8617,
+    "completionTokens": 30024,
+    "costUsd": 0
+  },
+  "stoppedReason": "quota：每日免費額度剩 2 次（≤ 2），收工",
+  "finishedAt": "2026-10-01T19:45:00.971Z"
+}

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l06",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u01-l06-q01",
+      "type": "wordCard",
+      "word": "according to",
+      "exampleEn": "According to the news, the train leaves at nine.",
+      "exampleZh": "根據新聞報導，火車九點出發。",
+      "glossZh": "根據",
+      "distractorsZh": [
+        "與…相反",
+        "在…之後",
+        "從…開始"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q02",
+      "type": "wordCard",
+      "word": "because of",
+      "exampleEn": "We stayed home because of the rain.",
+      "exampleZh": "因為下雨，我們留在家。",
+      "glossZh": "因為",
+      "distractorsZh": [
+        "雖然",
+        "為了",
+        "除非"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q03",
+      "type": "wordCard",
+      "word": "farther",
+      "exampleEn": "The farther you walk, the more tired you get.",
+      "exampleZh": "你走越遠，就會越累。",
+      "glossZh": "較遠",
+      "distractorsZh": [
+        "更近",
+        "更快",
+        "更高"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q04",
+      "type": "wordCard",
+      "word": "farthest",
+      "exampleEn": "My house is the farthest from the office.",
+      "exampleZh": "我家離辦公室最遠。",
+      "glossZh": "最遠",
+      "distractorsZh": [
+        "最近",
+        "最高",
+        "最大"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q05",
+      "type": "wordCard",
+      "word": "furthest",
+      "exampleEn": "This is the furthest point we reached on the hike.",
+      "exampleZh": "這是我們健行到達的最遠點。",
+      "glossZh": "最遠",
+      "distractorsZh": [
+        "最近",
+        "最高",
+        "最多"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q06",
+      "type": "wordCard",
+      "word": "instead of",
+      "exampleEn": "I drank tea instead of coffee this morning.",
+      "exampleZh": "我今天早上喝茶，沒有喝咖啡。",
+      "glossZh": "而非",
+      "distractorsZh": [
+        "除了…還有",
+        "與…同時",
+        "除了…之外"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q07",
+      "type": "wordCard",
+      "word": "ought to",
+      "exampleEn": "You ought to rest more after work.",
+      "exampleZh": "你下班後應該多休息。",
+      "glossZh": "應該",
+      "distractorsZh": [
+        "必須",
+        "曾經",
+        "將會"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q08",
+      "type": "wordCard",
+      "word": "used to",
+      "exampleEn": "I used to walk to school every day.",
+      "exampleZh": "我過去每天走路去學校。",
+      "glossZh": "過去常常",
+      "distractorsZh": [
+        "習慣於",
+        "一直以來",
+        "準備要"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "I used to drive to work. Now I take the train instead of driving.",
+      "sentenceZh": "我過去開車上班。現在我改搭火車，不再開車了。"
+    },
+    {
+      "id": "b1-u01-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "According to the weather report, it will rain tomorrow. We ought to stay indoors.",
+      "audioZh": "根據天氣預報，明天會下雨。我們應該待在室內。",
+      "questionZh": "他們明天應該做什麼？",
+      "options": [
+        "Go to the beach",
+        "Stay at home",
+        "Take a walk outside"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "I used to live in a small town, but now I live in the city.",
+      "sentenceZh": "我過去住在小鎮，現在住在城市裡。"
+    },
+    {
+      "id": "b1-u01-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "Farther from the city, the air is cleaner and the noise is quieter.",
+      "sentenceZh": "離城市越遠，空氣越清新，聲音越小。"
+    },
+    {
+      "id": "b1-u01-l06-q13",
+      "type": "mcq",
+      "stemEn": "We canceled the picnic ____ the heavy rain.",
+      "stemZh": "因為大雨，我們取消了野餐。",
+      "options": [
+        "according to",
+        "because of",
+        "instead of",
+        "farther"
+      ],
+      "answer": 1,
+      "optionGlossZh": [
+        "根據",
+        "因為",
+        "而非",
+        "較遠"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q14",
+      "type": "mcq",
+      "stemEn": "You ____ finish that report before Friday.",
+      "stemZh": "你應該在星期五前完成那份報告。",
+      "options": [
+        "used to",
+        "ought to",
+        "because of",
+        "farthest"
+      ],
+      "answer": 1,
+      "optionGlossZh": [
+        "過去常常",
+        "應該",
+        "因為",
+        "最遠"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q15",
+      "type": "reading",
+      "passageEn": "Last year, I used to live far from the office. I took the bus every morning, but because of traffic, I was often late. According to my manager, I ought to find a better way to go to work. So I moved closer to the office instead of taking the bus. Now I walk ten minutes to work. The air is cleaner and the noise is quieter. I used to be stressed every morning, but now I feel much better. I think I made the right choice.",
+      "passageZh": "去年，我住得離辦公室很遠。我每天搭公車上班，但因為塞車，常常遲到。根據主管的建議，我應該找更好的通勤方式。所以我搬到離辦公室比較近的地方，不再搭公車。現在我走路十分鐘就能到公司。空氣比較清新，聲音也比較小。我過去每天早上都很緊張，現在感覺好多了。我想我做了對的選擇。",
+      "questions": [
+        {
+          "questionZh": "根據文章，他過去常常遲到的原因是什麼？",
+          "options": [
+            "住得太遠",
+            "塞車",
+            "公車太慢"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "他現在怎麼去上班？",
+          "options": [
+            "搭公車",
+            "開車",
+            "走路"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q16",
+      "type": "translate",
+      "promptZh": "因為天氣太冷，他過去常常待在家裡，現在他改用運動代替。",
+      "hintWords": [
+        "because of",
+        "used to",
+        "instead of"
+      ],
+      "referenceEn": [
+        "Because of the cold weather, he used to stay at home, but now he exercises instead.",
+        "Because of the cold weather, he used to stay home. Now he works out instead."
+      ],
+      "rubricZh": [
+        "正確使用 because of 引導原因",
+        "正確使用 used to 描述過去的習慣",
+        "正確使用 instead of 表達替代關係"
+      ]
+    },
+    {
+      "id": "b1-u01-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "farthest",
+      "instructionZh": "用 farthest 寫一個句子，描述某個地方或某個人離你或某個地點最遠。",
+      "referenceEn": [
+        "The farthest I have ever traveled is the mountains in the north.",
+        "My grandmother's house is the farthest from the city center.",
+        "Of all my friends, the farthest one lives in another country."
+      ],
+      "rubricZh": [
+        "farthest 使用正確，語法通順",
+        "句意清楚，能辨識最遠的對象",
+        "字數控制在 5 到 18 詞之間"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l06-q10": [
+        1
+      ],
+      "b1-u01-l06-q13": [
+        1
+      ],
+      "b1-u01-l06-q14": [
+        1
+      ],
+      "b1-u01-l06-q15#0": [
+        1
+      ],
+      "b1-u01-l06-q15#1": [
+        2
+      ]
+    }
+  },
+  "glossBackfill": {
+    "model": "qwen/qwen3.8-27b:free",
+    "promptVersion": "gloss-backfill.v1",
+    "judgeModel": "apodex/apodex-1.1-mini:free",
+    "judgePromptVersion": "gloss-judge.v1"
+  }
+}

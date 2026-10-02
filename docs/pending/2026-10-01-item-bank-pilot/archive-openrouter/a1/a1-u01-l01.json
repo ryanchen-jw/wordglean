@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l01",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v1",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Taipei"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l01-q01",
+      "type": "wordCard",
+      "word": "the",
+      "exampleEn": "The book is on the table.",
+      "exampleZh": "那本書在桌子上。",
+      "glossZh": "那（特定）",
+      "distractorsZh": [
+        "一（不特定）",
+        "在",
+        "和"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q02",
+      "type": "wordCard",
+      "word": "be",
+      "exampleEn": "I am a student.",
+      "exampleZh": "我是一名學生。",
+      "glossZh": "是",
+      "distractorsZh": [
+        "有",
+        "去",
+        "吃"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q03",
+      "type": "wordCard",
+      "word": "and",
+      "exampleEn": "I have a cat and a dog.",
+      "exampleZh": "我有一隻貓和一隻狗。",
+      "glossZh": "和",
+      "distractorsZh": [
+        "或",
+        "但",
+        "在"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q04",
+      "type": "wordCard",
+      "word": "of",
+      "exampleEn": "I have a cup of tea.",
+      "exampleZh": "我有一杯茶。",
+      "glossZh": "的（表內容）",
+      "distractorsZh": [
+        "在",
+        "和",
+        "去"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q05",
+      "type": "wordCard",
+      "word": "a",
+      "exampleEn": "She has a big house.",
+      "exampleZh": "她有一間大房子。",
+      "glossZh": "一（不特定）",
+      "distractorsZh": [
+        "那（特定）",
+        "在",
+        "和"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q06",
+      "type": "wordCard",
+      "word": "in",
+      "exampleEn": "I live in Taipei.",
+      "exampleZh": "我住在台北。",
+      "glossZh": "在",
+      "distractorsZh": [
+        "到",
+        "和",
+        "是"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q07",
+      "type": "wordCard",
+      "word": "to",
+      "exampleEn": "I go to school by bus.",
+      "exampleZh": "我搭公車去學校。",
+      "glossZh": "到（方向）",
+      "distractorsZh": [
+        "在",
+        "和",
+        "是"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q08",
+      "type": "wordCard",
+      "word": "have",
+      "exampleEn": "I have two brothers.",
+      "exampleZh": "我有兩個兄弟。",
+      "glossZh": "有",
+      "distractorsZh": [
+        "是",
+        "去",
+        "吃"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "I am in the kitchen and I have a cup.",
+      "sentenceZh": "我在廚房裡，我有一個杯子。"
+    },
+    {
+      "id": "a1-u01-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I go to the store to buy a book.",
+      "audioZh": "我去商店買一本書。",
+      "questionZh": "他要去買什麼？",
+      "options": [
+        "a book",
+        "a pen",
+        "a cup"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "I have a cat and a dog in my house.",
+      "sentenceZh": "我在家裡有一隻貓和一隻狗。"
+    },
+    {
+      "id": "a1-u01-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "I go to the office in the morning.",
+      "sentenceZh": "我早上去辦公室。"
+    },
+    {
+      "id": "a1-u01-l01-q13",
+      "type": "mcq",
+      "stemEn": "I live ____ Taipei.",
+      "stemZh": "我住在台北。",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "answer": 0,
+      "optionGlossZh": [
+        "在（某個地方）",
+        "在（表面）",
+        "在（某點）",
+        "到（方向）"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q14",
+      "type": "mcq",
+      "stemEn": "She ____ a small dog.",
+      "stemZh": "她有一隻小狗。",
+      "options": [
+        "have",
+        "has",
+        "is",
+        "am"
+      ],
+      "answer": 1,
+      "optionGlossZh": [
+        "有",
+        "有（第三人稱）",
+        "是",
+        "是（第一單數）"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q15",
+      "type": "reading",
+      "passageEn": "I am a teacher. I live in Taipei. I have a small office and a big desk in the room. I go to work in the morning. I have two cats at home. They are very cute. I like my life and I am happy.",
+      "passageZh": "我是一名老師。我住在台北。我有一個小辦公室和一張大書桌在房間裡。我早上去上班。我在家中有兩隻貓。牠們很可愛。我喜歡我的生活，我很開心。",
+      "questions": [
+        {
+          "questionZh": "她住在哪裡？",
+          "options": [
+            "台北",
+            "台中",
+            "高雄"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "她家中有幾隻貓？",
+          "options": [
+            "一隻",
+            "兩隻",
+            "三隻"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q16",
+      "type": "translate",
+      "promptZh": "我住在家裡，我有一隻貓。",
+      "hintWords": [
+        "in",
+        "have",
+        "a"
+      ],
+      "referenceEn": [
+        "I live in my home and I have a cat.",
+        "I am at home and I have a cat."
+      ],
+      "rubricZh": [
+        "正確使用「in」表示地點",
+        "正確使用「have」表示擁有",
+        "使用冠詞「a」",
+        "句子結構完整、語法正確"
+      ]
+    },
+    {
+      "id": "a1-u01-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "to",
+      "instructionZh": "用「to」寫一個句子，描述你每天去的一個地方。",
+      "referenceEn": [
+        "I go to school every day.",
+        "I walk to the park in the morning.",
+        "I go to work by bus."
+      ],
+      "rubricZh": [
+        "正確使用介系詞「to」",
+        "動詞與「to」搭配正確（如 go to、walk to）",
+        "句子長度 3–12 個字",
+        "語法正確、意思清楚"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l01-q10": [
+        0
+      ],
+      "a1-u01-l01-q13": [
+        0
+      ],
+      "a1-u01-l01-q14": [
+        1
+      ],
+      "a1-u01-l01-q15#0": [
+        0
+      ],
+      "a1-u01-l01-q15#1": [
+        1
+      ]
+    }
+  },
+  "glossBackfill": {
+    "model": "qwen/qwen3.8-27b:free",
+    "promptVersion": "gloss-backfill.v1",
+    "judgeModel": "apodex/apodex-1.1-mini:free",
+    "judgePromptVersion": "gloss-judge.v1"
+  }
+}

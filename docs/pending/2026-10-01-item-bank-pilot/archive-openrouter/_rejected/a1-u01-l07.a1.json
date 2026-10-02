@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l07",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Anna"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l07-q01",
+      "type": "wordCard",
+      "word": "out",
+      "exampleEn": "The light is out.",
+      "exampleZh": "燈滅了。"
+    },
+    {
+      "id": "a1-u01-l07-q02",
+      "type": "wordCard",
+      "word": "into",
+      "exampleEn": "She went into the room.",
+      "exampleZh": "她走進了那間房間。"
+    },
+    {
+      "id": "a1-u01-l07-q03",
+      "type": "wordCard",
+      "word": "just",
+      "exampleEn": "I just saw him.",
+      "exampleZh": "我剛剛看到他了。"
+    },
+    {
+      "id": "a1-u01-l07-q04",
+      "type": "wordCard",
+      "word": "him",
+      "exampleEn": "I gave him the book.",
+      "exampleZh": "我把那本書給了他。"
+    },
+    {
+      "id": "a1-u01-l07-q05",
+      "type": "wordCard",
+      "word": "your",
+      "exampleEn": "Is this your bag?",
+      "exampleZh": "這是你的包嗎？"
+    },
+    {
+      "id": "a1-u01-l07-q06",
+      "type": "wordCard",
+      "word": "could",
+      "exampleEn": "Could you help me?",
+      "exampleZh": "你可以幫我嗎？"
+    },
+    {
+      "id": "a1-u01-l07-q07",
+      "type": "wordCard",
+      "word": "than",
+      "exampleEn": "He is taller than me.",
+      "exampleZh": "他比我高。"
+    },
+    {
+      "id": "a1-u01-l07-q08",
+      "type": "wordCard",
+      "word": "other",
+      "exampleEn": "Give me the other one.",
+      "exampleZh": "把另一個給我。"
+    },
+    {
+      "id": "a1-u01-l07-q09",
+      "type": "listenType",
+      "sentenceEn": "He walked into the house.",
+      "sentenceZh": "他走進了那間屋子。"
+    },
+    {
+      "id": "a1-u01-l07-q10",
+      "type": "listenChoice",
+      "audioEn": "I just gave him your phone.",
+      "audioZh": "我剛剛把你的手機給了他。",
+      "questionZh": "說話的人做了什麼？",
+      "options": [
+        "I gave him your phone.",
+        "I took her book.",
+        "I gave him your book."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "She could come into the room.",
+      "sentenceZh": "她可以走進那間房間。"
+    },
+    {
+      "id": "a1-u01-l07-q12",
+      "type": "shadowing",
+      "sentenceEn": "I just gave him your book.",
+      "sentenceZh": "我剛剛把你的書給了他。"
+    },
+    {
+      "id": "a1-u01-l07-q13",
+      "type": "mcq",
+      "stemEn": "He went ____ the house.",
+      "stemZh": "他走進了那間屋子。",
+      "options": [
+        "in",
+        "into",
+        "on",
+        "at"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l07-q14",
+      "type": "mcq",
+      "stemEn": "Is this ____ bag?",
+      "stemZh": "這是你的包嗎？",
+      "options": [
+        "your",
+        "you",
+        "yours",
+        "him"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l07-q15",
+      "type": "reading",
+      "passageEn": "Tom sees a cat in the park. The cat just went out of a box. Tom gives it some food. Anna is his friend. She asks, 'Is that your cat?' Tom says, 'No, I don't know that other cat. Could I take it home?' Anna says, 'Yes, you could go into your house and give it food.' The cat is very happy.",
+      "passageZh": "Tom 在公園看到一隻貓。那隻貓剛從盒子裡面出來。Tom 給牠一些食物。Anna 是他的朋友。她問：「那是你的貓嗎？」Tom 說：「不是，我不認識那隻貓。我可以帶牠回家嗎？」Anna 說：「可以，你可以帶牠進你的房間，再給牠食物。」那隻貓很高興。",
+      "questions": [
+        {
+          "questionZh": "那隻貓剛才是從哪裡出來的？",
+          "options": [
+            "從盒子裡面",
+            "從樹底下",
+            "從公園外面"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Tom 可以帶那隻貓回家嗎？",
+          "options": [
+            "可以，Anna 同意了",
+            "不可以，Anna 不同意",
+            "Anna 沒有回答"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q16",
+      "type": "translate",
+      "promptZh": "我剛剛把他帶進了那間房間。",
+      "hintWords": [
+        "just",
+        "him",
+        "into"
+      ],
+      "referenceEn": [
+        "I just brought him into the room.",
+        "I just took him into the room."
+      ],
+      "rubricZh": [
+        "使用 just 表示「剛剛」",
+        "使用 him 作為動詞受詞",
+        "使用 into 表示「進入...之內」",
+        "動詞用過去式"
+      ]
+    },
+    {
+      "id": "a1-u01-l07-q17",
+      "type": "makeSentence",
+      "targetWord": "could",
+      "instructionZh": "用 could 寫一句問句，向別人請求做一件事。",
+      "referenceEn": [
+        "Could you help me?",
+        "Could you open the door?",
+        "Could you tell him this?"
+      ],
+      "rubricZh": [
+        "句首使用 Could",
+        "是問句並有問號",
+        "語意為向對方提出請求"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "google/gemma-4-31b-it:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l07-q10": [
+        0
+      ],
+      "a1-u01-l07-q13": [
+        0,
+        1
+      ],
+      "a1-u01-l07-q14": [
+        0
+      ],
+      "a1-u01-l07-q15#0": [
+        0
+      ],
+      "a1-u01-l07-q15#1": [
+        0
+      ]
+    }
+  }
+}

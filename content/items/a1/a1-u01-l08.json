@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l08",
+  "level": "A1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T03:40:33Z",
+  "properNouns": [
+    "Nina",
+    "Momo"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l08-q01",
+      "type": "wordCard",
+      "word": "how",
+      "exampleEn": "How do you go to work?",
+      "exampleZh": "你怎麼去上班？",
+      "glossZh": "怎麼；如何",
+      "distractorsZh": [
+        "為什麼",
+        "誰",
+        "哪裡"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q02",
+      "type": "wordCard",
+      "word": "then",
+      "exampleEn": "I eat breakfast, and then I go to school.",
+      "exampleZh": "我吃完早餐，然後去上學。",
+      "glossZh": "然後",
+      "distractorsZh": [
+        "因為",
+        "以前",
+        "但是"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q03",
+      "type": "wordCard",
+      "word": "its",
+      "exampleEn": "The dog is playing with its ball.",
+      "exampleZh": "那隻狗在玩牠的球。",
+      "glossZh": "它的；牠的",
+      "distractorsZh": [
+        "他們的",
+        "我的",
+        "你的"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q04",
+      "type": "wordCard",
+      "word": "our",
+      "exampleEn": "Our house is near the station.",
+      "exampleZh": "我們家在車站附近。",
+      "glossZh": "我們的",
+      "distractorsZh": [
+        "你們的",
+        "他們的",
+        "她的"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q05",
+      "type": "wordCard",
+      "word": "more",
+      "exampleEn": "Can I have more rice, please?",
+      "exampleZh": "可以再給我多一點飯嗎？",
+      "glossZh": "更多",
+      "distractorsZh": [
+        "更少",
+        "全部",
+        "沒有"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q06",
+      "type": "wordCard",
+      "word": "these",
+      "exampleEn": "These shoes are new.",
+      "exampleZh": "這些鞋子是新的。",
+      "glossZh": "這些",
+      "distractorsZh": [
+        "那些",
+        "這個",
+        "每一個"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q07",
+      "type": "wordCard",
+      "word": "also",
+      "exampleEn": "I like dogs. I also like cats.",
+      "exampleZh": "我喜歡狗，我也喜歡貓。",
+      "glossZh": "也",
+      "distractorsZh": [
+        "只",
+        "從不",
+        "已經"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q08",
+      "type": "wordCard",
+      "word": "because",
+      "exampleEn": "I am happy because it is Friday.",
+      "exampleZh": "因為今天是星期五，所以我很開心。",
+      "glossZh": "因為",
+      "distractorsZh": [
+        "所以",
+        "但是",
+        "如果"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q09",
+      "type": "listenType",
+      "sentenceEn": "How are you today?",
+      "sentenceZh": "你今天好嗎？"
+    },
+    {
+      "id": "a1-u01-l08-q10",
+      "type": "listenChoice",
+      "audioEn": "Nina is not at school because she is sick.",
+      "audioZh": "Nina 沒去學校，因為她生病了。",
+      "questionZh": "Nina 為什麼沒去學校？",
+      "options": [
+        "She is late",
+        "She is sick",
+        "She is busy"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l08-q11",
+      "type": "shadowing",
+      "sentenceEn": "These apples are from our garden.",
+      "sentenceZh": "這些蘋果是我們花園種的。"
+    },
+    {
+      "id": "a1-u01-l08-q12",
+      "type": "shadowing",
+      "sentenceEn": "I also want more water.",
+      "sentenceZh": "我也想要多一點水。"
+    },
+    {
+      "id": "a1-u01-l08-q13",
+      "type": "mcq",
+      "stemEn": "I stay home ____ it is raining.",
+      "stemZh": "因為在下雨，所以我待在家裡。",
+      "options": [
+        "these",
+        "then",
+        "because",
+        "how"
+      ],
+      "optionGlossZh": [
+        "這些",
+        "然後",
+        "因為",
+        "怎麼"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a1-u01-l08-q14",
+      "type": "mcq",
+      "stemEn": "First I wash my hands, ____ I eat.",
+      "stemZh": "我先洗手，然後吃東西。",
+      "options": [
+        "these",
+        "then",
+        "its",
+        "our"
+      ],
+      "optionGlossZh": [
+        "這些",
+        "然後",
+        "它的",
+        "我們的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l08-q15",
+      "type": "reading",
+      "passageEn": "Our family has a cat. Its name is Momo. Every morning, Momo eats its food and then sleeps in the sun. My sister also loves Momo. She gives it more food because it is always hungry. How happy Momo is!",
+      "passageZh": "我們家有一隻貓，牠的名字叫 Momo。每天早上，Momo 吃完飯後就在陽光下睡覺。我妹妹也很愛 Momo，她會多給牠一些食物，因為牠總是很餓。Momo 真是幸福啊！",
+      "questions": [
+        {
+          "questionZh": "Momo 吃完早餐後做什麼？",
+          "options": [
+            "出去玩",
+            "喝牛奶",
+            "在陽光下睡覺"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "妹妹為什麼多給 Momo 食物？",
+          "options": [
+            "因為牠總是很餓",
+            "因為牠生病了",
+            "因為今天是牠生日"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q16",
+      "type": "translate",
+      "promptZh": "我很累，因為我昨天很晚睡。",
+      "hintWords": [
+        "because"
+      ],
+      "referenceEn": [
+        "I am tired because I went to bed late yesterday.",
+        "I'm tired because I went to bed late yesterday."
+      ],
+      "rubricZh": [
+        "用 because 說明原因",
+        "昨天的事用過去式（例如 went to bed late、stayed up late）",
+        "「很晚睡」可寫 went to bed late 或 stayed up late"
+      ]
+    },
+    {
+      "id": "a1-u01-l08-q17",
+      "type": "makeSentence",
+      "targetWord": "also",
+      "instructionZh": "用 also 造一個句子，說說你喜歡的另一樣東西。",
+      "referenceEn": [
+        "I like music. I also like sports.",
+        "I like tea. I also like milk."
+      ],
+      "rubricZh": [
+        "also 放在一般動詞前、be 動詞後",
+        "表示「也」的意思",
+        "句子有主詞和動詞"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T04:16:44Z",
+    "verdicts": {
+      "a1-u01-l08-q10": [
+        1
+      ],
+      "a1-u01-l08-q13": [
+        2
+      ],
+      "a1-u01-l08-q14": [
+        1
+      ],
+      "a1-u01-l08-q15#0": [
+        2
+      ],
+      "a1-u01-l08-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "規定昨天的事用過去式 went，會排除同樣正確的「很晚睡」譯法（如 I stayed up late last night.）",
+        "resolution": "要點改為「昨天的事用過去式（例如 went to bed late、stayed up late）」，不寫死單一動詞",
+        "resolvedAt": "2026-10-02T04:26:03Z",
+        "rechecked": {
+          "by": "執行長第③關",
+          "at": "2026-10-02"
+        }
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第③關裁示修正：參考答案 2 不是在說「你」（準則 §2）",
+        "resolution": "改為 \"I like tea. I also like milk.\"（原 \"My brother also likes ice cream.\"）",
+        "resolvedAt": "2026-10-02T07:06:42Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長第③關裁示修正：干擾項 because 合文法（\"…, because I eat.\"）（準則 §6）",
+        "resolution": "改為 \"these\"（原 \"because\"）",
+        "resolvedAt": "2026-10-02T07:06:42Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長第③關裁示修正：選項釋義同步",
+        "resolution": "改為 \"這些\"（原 \"因為\"）",
+        "resolvedAt": "2026-10-02T07:06:42Z"
+      },
+      {
+        "path": "items/15/rubricZh/2",
+        "message": "執行長第③關裁示修正：要點寫成定義，批改者可能當成唯一寫法",
+        "resolution": "改為 \"「很晚睡」可寫 went to bed late 或 stayed up late\"（原 \"go to bed late 表示「很晚睡」\"）",
+        "resolvedAt": "2026-10-02T07:06:42Z"
+      },
+      {
+        "path": "items/9",
+        "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
+        "resolution": "正解「She is sick」由位置 0 移到 1，與「She is late」互換；審題員判題索引同步重對應",
+        "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/12",
+        "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
+        "resolution": "正解「because」由位置 0 移到 2，與「these」互換；審題員判題索引同步重對應",
+        "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/13",
+        "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
+        "resolution": "正解「then」由位置 2 移到 1，與「its」互換；審題員判題索引同步重對應",
+        "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/14/questions/0",
+        "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
+        "resolution": "正解「在陽光下睡覺」由位置 1 移到 2，與「喝牛奶」互換；審題員判題索引同步重對應",
+        "resolvedAt": "2026-10-02T07:07:22Z"
+      }
+    ]
+  }
+}

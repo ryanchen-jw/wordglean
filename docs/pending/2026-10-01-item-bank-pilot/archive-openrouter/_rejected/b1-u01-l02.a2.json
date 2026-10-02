@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l02",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "b1-u01-l02-q01",
+      "type": "wordCard",
+      "word": "onto",
+      "exampleEn": "She jumped onto the chair.",
+      "exampleZh": "她跳到了椅子上。",
+      "glossZh": "在...之上",
+      "distractorsZh": [
+        "在...之下",
+        "在...之間",
+        "在...旁邊"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q02",
+      "type": "wordCard",
+      "word": "throughout",
+      "exampleEn": "He walked throughout the city.",
+      "exampleZh": "他走遍了整個城市。",
+      "glossZh": "遍及, 在各處",
+      "distractorsZh": [
+        "在...之上",
+        "在...裡面",
+        "在...旁邊"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q03",
+      "type": "wordCard",
+      "word": "nor",
+      "exampleEn": "I don't like tea, nor coffee.",
+      "exampleZh": "我不喜歡茶，也不喜歡咖啡。",
+      "glossZh": "也不, 也沒有",
+      "distractorsZh": [
+        "而且",
+        "但是",
+        "所以"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q04",
+      "type": "wordCard",
+      "word": "none",
+      "exampleEn": "None of the students were late.",
+      "exampleZh": "沒有學生遲到。",
+      "glossZh": "沒有人, 無一物",
+      "distractorsZh": [
+        "所有人都",
+        "有些",
+        "每一個"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q05",
+      "type": "wordCard",
+      "word": "unless",
+      "exampleEn": "You will fail unless you study.",
+      "exampleZh": "除非你學習，否則你會失敗。",
+      "glossZh": "除非",
+      "distractorsZh": [
+        "因為",
+        "所以",
+        "雖然"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q06",
+      "type": "wordCard",
+      "word": "otherwise",
+      "exampleEn": "Hurry up, otherwise you will be late.",
+      "exampleZh": "快點，否則你會遲到。",
+      "glossZh": "否則",
+      "distractorsZh": [
+        "同時",
+        "因此",
+        "幾乎"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q07",
+      "type": "wordCard",
+      "word": "somehow",
+      "exampleEn": "She finished the job somehow.",
+      "exampleZh": "她不知怎麼就完成了那項工作。",
+      "glossZh": "不知何故",
+      "distractorsZh": [
+        "故意地",
+        "順便",
+        "終於"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q08",
+      "type": "wordCard",
+      "word": "forth",
+      "exampleEn": "From this day forth, we start together.",
+      "exampleZh": "從今天起，我們一起開始。",
+      "glossZh": "往前, 以後",
+      "distractorsZh": [
+        "往後",
+        "向上",
+        "向外"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q09",
+      "type": "wordCard",
+      "word": "meanwhile",
+      "exampleEn": "Meanwhile, she was reading a book.",
+      "exampleZh": "與此同時，她正在看一本書。",
+      "glossZh": "同時, 於此時",
+      "distractorsZh": [
+        "後來",
+        "首先",
+        "終於"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q10",
+      "type": "listenType",
+      "sentenceEn": "None of the students passed the test.",
+      "sentenceZh": "沒有學生通過考試。"
+    },
+    {
+      "id": "b1-u01-l02-q11",
+      "type": "listenChoice",
+      "audioEn": "She jumped onto the table and broke it.",
+      "audioZh": "她跳上了桌子，把它打破了。",
+      "questionZh": "她跳到了什麼上面？",
+      "options": [
+        "the table",
+        "the chair",
+        "the floor"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "Unless you hurry, you will miss the bus.",
+      "sentenceZh": "除非你快點，否則你會錯過公車。"
+    },
+    {
+      "id": "b1-u01-l02-q13",
+      "type": "shadowing",
+      "sentenceEn": "Meanwhile, he was waiting outside the office.",
+      "sentenceZh": "與此同時，他正在辦公室外面等。"
+    },
+    {
+      "id": "b1-u01-l02-q14",
+      "type": "mcq",
+      "stemEn": "You will be late ____ you leave now.",
+      "stemZh": "除非你現在離開，否則你會遲到。",
+      "options": [
+        "unless",
+        "because",
+        "since",
+        "so"
+      ],
+      "optionGlossZh": [
+        "除非",
+        "因為",
+        "既然",
+        "所以"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l02-q15",
+      "type": "mcq",
+      "stemEn": "____ of the reports were complete.",
+      "stemZh": "沒有報告是完整的。",
+      "options": [
+        "Some",
+        "All",
+        "None",
+        "Any"
+      ],
+      "optionGlossZh": [
+        "一些",
+        "全部",
+        "沒有(一個)",
+        "任何"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l02-q16",
+      "type": "reading",
+      "passageEn": "Last Friday, Amy went to the market to buy some vegetables. Throughout the morning, she checked every stall and compared prices. She was looking for fresh tomatoes, but none of the shops had any. Meanwhile, her brother was at home waiting for her to return. He told her that he was hungry and wanted to cook dinner. Amy said she would buy rice and chicken. She walked to another shop on the other side of the street. Somehow, she found a small stand near the park that sold very fresh produce. She was so happy that she bought extra vegetables for the weekend.",
+      "passageZh": "上星期五，Amy 去市場買一些蔬菜。整個早上，她看了每個攤位並比較價格。她在找新鮮的番茄，但沒有一家店有。與此同時，她弟弟在家裡等她回來。他告訴她很餓，想做飯。Amy 說她會買米和雞肉。她走到街對面的另一家店。不知怎麼的，她在公園附近找到一個小攤位，那裡賣非常新鮮的農產。她很開心，買了額外的蔬菜備用過週末。",
+      "questions": [
+        {
+          "questionZh": "Amy 在市場上特別想找什麼？",
+          "options": [
+            "生鮮雞肉",
+            "新鮮的番茄",
+            "蔬菜和米"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Amy 的弟弟在家裡做什麼？",
+          "options": [
+            "在做事",
+            "等 Amy 回來",
+            "在看書"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q17",
+      "type": "translate",
+      "promptZh": "除非你現在離開，否則你會錯過火車。",
+      "hintWords": [
+        "unless"
+      ],
+      "referenceEn": [
+        "Unless you leave now, you will miss the train."
+      ],
+      "rubricZh": [
+        "正确使用 unless 引導條件分句",
+        "主句使用 will + 動詞原形表達將來結果",
+        "句意完整，語法正確"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q18",
+      "type": "makeSentence",
+      "targetWord": "otherwise",
+      "instructionZh": "用 otherwise 寫一個句子，表示「如果不这样做，會產生不好的結果」的提醒或警告。",
+      "referenceEn": [
+        "Hurry up, otherwise you will miss the train.",
+        "Put on a coat, otherwise you will catch a cold."
+      ],
+      "rubricZh": [
+        "otherwise 正確連接兩個分句",
+        "前半句為祈使句或建議，後半句為不好的結果",
+        "句意通順，語法正確"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l02-q11": [
+        0
+      ],
+      "b1-u01-l02-q14": [
+        0
+      ],
+      "b1-u01-l02-q15": [
+        0,
+        1,
+        2
+      ],
+      "b1-u01-l02-q16#0": [
+        1
+      ],
+      "b1-u01-l02-q16#1": [
+        1
+      ]
+    }
+  }
+}

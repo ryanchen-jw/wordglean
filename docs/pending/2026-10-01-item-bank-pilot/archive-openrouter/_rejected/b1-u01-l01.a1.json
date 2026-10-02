@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l01",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Sarah",
+    "HR"
+  ],
+  "items": [
+    {
+      "id": "b1-u01-l01-q01",
+      "type": "wordCard",
+      "word": "afterward",
+      "exampleEn": "Afterward, we went home together.",
+      "exampleZh": "後來，我們一起回家了。"
+    },
+    {
+      "id": "b1-u01-l01-q02",
+      "type": "wordCard",
+      "word": "whoever",
+      "exampleEn": "Whoever comes first gets the last piece of cake.",
+      "exampleZh": "無論誰先來，就能拿到最後一塊蛋糕。"
+    },
+    {
+      "id": "b1-u01-l01-q03",
+      "type": "wordCard",
+      "word": "aboard",
+      "exampleEn": "All the children were aboard the train.",
+      "exampleZh": "所有的孩子都在火車上了。"
+    },
+    {
+      "id": "b1-u01-l01-q04",
+      "type": "wordCard",
+      "word": "anyhow",
+      "exampleEn": "Anyhow, I must call her now.",
+      "exampleZh": "無論如何，我現在必須打電話給她。"
+    },
+    {
+      "id": "b1-u01-l01-q05",
+      "type": "wordCard",
+      "word": "whether",
+      "exampleEn": "I don't know whether he will come tomorrow.",
+      "exampleZh": "我不知道他明天會不會來。"
+    },
+    {
+      "id": "b1-u01-l01-q06",
+      "type": "wordCard",
+      "word": "including",
+      "exampleEn": "The price includes everything, including tax.",
+      "exampleZh": "價格包含一切，包括稅。"
+    },
+    {
+      "id": "b1-u01-l01-q07",
+      "type": "wordCard",
+      "word": "per",
+      "exampleEn": "The rent is five thousand dollars per month.",
+      "exampleZh": "租金是每月五千美元。"
+    },
+    {
+      "id": "b1-u01-l01-q08",
+      "type": "wordCard",
+      "word": "despite",
+      "exampleEn": "Despite the rain, we went to the park.",
+      "exampleZh": "儘管下雨，我們還是去了公園。"
+    },
+    {
+      "id": "b1-u01-l01-q09",
+      "type": "wordCard",
+      "word": "thus",
+      "exampleEn": "He was late; thus, he missed the bus.",
+      "exampleZh": "他遲到了；因此，他錯過了公車。"
+    },
+    {
+      "id": "b1-u01-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "Despite the cold weather, everyone stayed outside to enjoy the sun.",
+      "sentenceZh": "儘管天氣寒冷，大家還是留在外面享受陽光。"
+    },
+    {
+      "id": "b1-u01-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "Whether you like it or not, we must leave now.",
+      "audioZh": "無論你喜不喜歡，我們現在必須離開。",
+      "questionZh": "說話者的態度是什麼？",
+      "options": [
+        "他建議大家多留一下",
+        "他態度堅定，堅持要走",
+        "他在問大家要不要走"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Anyhow, I will keep working until I finish the project.",
+      "sentenceZh": "無論如何，我會一直工作到完成專案為止。"
+    },
+    {
+      "id": "b1-u01-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "Including the new members, our team now has twelve people.",
+      "sentenceZh": "包括新成員在內，我們的團隊現在有十二個人。"
+    },
+    {
+      "id": "b1-u01-l01-q14",
+      "type": "mcq",
+      "stemEn": "______ the bad weather, the flight was on time.",
+      "stemZh": "儘管天氣不好，航班還是準時了。",
+      "options": [
+        "Despite",
+        "Because",
+        "Although",
+        "Since"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l01-q15",
+      "type": "mcq",
+      "stemEn": "The ticket costs fifty dollars ____ person.",
+      "stemZh": "票價是每人五十美元。",
+      "options": [
+        "by",
+        "at",
+        "per",
+        "on"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l01-q16",
+      "type": "reading",
+      "passageEn": "After the meeting, Sarah asked her boss whether the new policy would apply to everyone. The boss replied that it included all staff members. He also mentioned that the change would start next Monday. Despite some concerns from the team, most employees seemed happy about the new rule. Per company policy, anyone who disagreed could talk to HR afterward. Thus, the meeting ended on a positive note.",
+      "passageZh": "開完會後，Sarah 問她的主管，新政策是否適用於所有人。主管回覆說，它包含所有員工。他也提到，改變會從下個週一開始。儘管團隊有些顧慮，大多數員工看起來對新規定挺高興的。根据公司政策，任何不同意的人之後都可以找 HR 談。因此，會議在正面的氣氛中結束。",
+      "questions": [
+        {
+          "questionZh": "新政策從什麼時候開始？",
+          "options": [
+            "下個週一",
+            "下個週二",
+            "本週五"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "誰可以之後找 HR 談？",
+          "options": [
+            "只有主管",
+            "所有員工",
+            "任何不同意新政策的人"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q17",
+      "type": "translate",
+      "promptZh": "無論誰先完成報告，就能先用新軟體。",
+      "hintWords": [
+        "whoever"
+      ],
+      "referenceEn": [
+        "Whoever finishes the report first can use the new software first."
+      ],
+      "rubricZh": [
+        "正確使用 whoever 引導子句",
+        "動詞用第三人稱單數（finishes）",
+        "語意完整，表達「無論誰……就能……」"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "thus",
+      "instructionZh": "用 thus 寫一句話，說明一個原因和結果（例如：因為下了一整天雨，所以……）。",
+      "referenceEn": [
+        "It rained all day; thus, the picnic was canceled.",
+        "She studied very hard; thus, she passed the exam."
+      ],
+      "rubricZh": [
+        "正确使用 thus 連接因果關係",
+        "thus 前用分號或獨立句子",
+        "原因和結果邏輯正確，語意通順"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l01-q11": [
+        1
+      ],
+      "b1-u01-l01-q14": [
+        0
+      ],
+      "b1-u01-l01-q15": [
+        2
+      ],
+      "b1-u01-l01-q16#0": [
+        0
+      ],
+      "b1-u01-l01-q16#1": [
+        2
+      ]
+    }
+  }
+}

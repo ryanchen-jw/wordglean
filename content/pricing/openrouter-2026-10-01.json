@@ -1,0 +1,43 @@
+{
+  "source": "https://openrouter.ai/api/v1/models",
+  "fetchedAt": "2026-10-01T15:52:07.992Z",
+  "unit": "USD per 1M tokens",
+  "models": {
+    "anthropic/claude-sonnet-5.5": {
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "promptPerM": 2,
+      "completionPerM": 10,
+      "contextLength": 1000000
+    },
+    "google/gemini-3.8-flash": {
+      "name": "Google: Gemini 3.8 Flash",
+      "promptPerM": 0.75,
+      "completionPerM": 3.75,
+      "contextLength": 1048576
+    },
+    "openai/gpt-6-luna": {
+      "name": "OpenAI: GPT-6 Luna",
+      "promptPerM": 0.1,
+      "completionPerM": 0.5,
+      "contextLength": 1050000
+    },
+    "anthropic/claude-sonnet-5.5:batch": {
+      "name": "Anthropic: Claude Sonnet 5.5 (batch)",
+      "promptPerM": 1,
+      "completionPerM": 5,
+      "contextLength": 1000000
+    },
+    "google/gemini-3.8-flash:batch": {
+      "name": "Google: Gemini 3.8 Flash (batch)",
+      "promptPerM": 0.375,
+      "completionPerM": 1.875,
+      "contextLength": 1048576
+    },
+    "openai/gpt-6-luna:batch": {
+      "name": "OpenAI: GPT-6 Luna (batch)",
+      "promptPerM": 0.05,
+      "completionPerM": 0.25,
+      "contextLength": 1050000
+    }
+  }
+}

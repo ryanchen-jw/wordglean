@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l01",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Alex",
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "b1-u01-l01-q01",
+      "type": "wordCard",
+      "word": "afterward",
+      "exampleEn": "We ate dinner and afterward we walked to the beach.",
+      "exampleZh": "我們吃完晚餐後，走路去了海邊。",
+      "glossZh": "然後",
+      "distractorsZh": [
+        "幾乎",
+        "從來不",
+        "可能"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q02",
+      "type": "wordCard",
+      "word": "whoever",
+      "exampleEn": "Whoever finds my keys can come to my office.",
+      "exampleZh": "不管誰找到我的鑰匙，都可以到我的辦公室來。",
+      "glossZh": "任何人",
+      "distractorsZh": [
+        "所有東西",
+        "沒有誰",
+        "某個人"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q03",
+      "type": "wordCard",
+      "word": "aboard",
+      "exampleEn": "All passengers are now aboard the train.",
+      "exampleZh": "所有乘客現在都已經上了火車。",
+      "glossZh": "在火車上",
+      "distractorsZh": [
+        "在岸邊",
+        "在岸上",
+        "在陸地上"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q04",
+      "type": "wordCard",
+      "word": "anyhow",
+      "exampleEn": "I'm not sure, but anyhow let's try it together.",
+      "exampleZh": "我不確定，但無論如何，讓我們一起試看看吧。",
+      "glossZh": "無論如何",
+      "distractorsZh": [
+        "然後",
+        "因此",
+        "幾乎"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q05",
+      "type": "wordCard",
+      "word": "whether",
+      "exampleEn": "I don't know whether he will come tomorrow.",
+      "exampleZh": "我不知道他明天會不會來。",
+      "glossZh": "是否",
+      "distractorsZh": [
+        "因為",
+        "然而",
+        "所以"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q06",
+      "type": "wordCard",
+      "word": "including",
+      "exampleEn": "The price includes everything, including the guidebook.",
+      "exampleZh": "價格包含所有東西，包括導覽手冊。",
+      "glossZh": "包含",
+      "distractorsZh": [
+        "除外",
+        "反對",
+        "除非"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q07",
+      "type": "wordCard",
+      "word": "per",
+      "exampleEn": "The ticket costs two hundred dollars per person.",
+      "exampleZh": "這張票每人二百美元。",
+      "glossZh": "每一",
+      "distractorsZh": [
+        "由於",
+        "儘管",
+        "然後"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q08",
+      "type": "wordCard",
+      "word": "despite",
+      "exampleEn": "Despite the rain, we finished the hike early.",
+      "exampleZh": "儘管下雨，我們還是提早走完了健行。",
+      "glossZh": "儘管",
+      "distractorsZh": [
+        "因為",
+        "除非",
+        "然而"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q09",
+      "type": "wordCard",
+      "word": "thus",
+      "exampleEn": "She practiced every day and thus passed the exam easily.",
+      "exampleZh": "她每天都在練習，因此輕鬆地通過了考試。",
+      "glossZh": "因此",
+      "distractorsZh": [
+        "然後",
+        "幾乎",
+        "同樣地"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "Afterward, the passengers were all aboard the ship.",
+      "sentenceZh": "後來，所有乘客都已經上了船。"
+    },
+    {
+      "id": "b1-u01-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "Whether you like it or not, the meeting starts at nine.",
+      "audioZh": "不管你喜不喜歡，會議九點開始。",
+      "questionZh": "會議什麼時候開始？",
+      "options": [
+        "At nine",
+        "At ten",
+        "At eight"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Despite the cold weather, she walked to work.",
+      "sentenceZh": "儘管天氣冷，她還是走路去上班。"
+    },
+    {
+      "id": "b1-u01-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "The hotel charges fifty dollars per night, including tax.",
+      "sentenceZh": "這間飯店每晚收五十美元，包含稅金。"
+    },
+    {
+      "id": "b1-u01-l01-q14",
+      "type": "mcq",
+      "stemEn": "______ the heavy traffic, he arrived at the airport on time.",
+      "stemZh": "儘管交通擁堵，他還是準時抵達了機場。",
+      "options": [
+        "Although",
+        "Because",
+        "Despite",
+        "However"
+      ],
+      "optionGlossZh": [
+        "雖然",
+        "因為",
+        "儘管",
+        "然而"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l01-q15",
+      "type": "mcq",
+      "stemEn": "I'm not sure ______ she will accept the job or not.",
+      "stemZh": "我不確定她是否會接受這份工作。",
+      "options": [
+        "what",
+        "whether",
+        "why",
+        "when"
+      ],
+      "optionGlossZh": [
+        "什麼",
+        "是否",
+        "為什麼",
+        "什麼時候"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l01-q16",
+      "type": "reading",
+      "passageEn": "Alex traveled to Japan last month. He booked a train trip that included a hotel stay. The ticket cost one hundred fifty dollars per person. Despite the long journey, Alex felt excited. Afterward, he explored the city with his friend. They visited a famous temple and a local market. Whether or not it rained, they enjoyed every moment. Whoever you ask, Alex says it was the best trip of his life. Thus, he plans to visit again next year, including the countryside.",
+      "passageZh": "亞歷克斯上月去了日本。他訂了一趟包含住宿的火車旅行。車票每人一百五十美元。儘管旅程漫長，亞歷克斯還是感到很興奮。後來，他和朋友一起探索了這個城市。他們參觀了有名的寺廟和當地市場。不管有沒有下雨，他們都享受了每個時刻。不管問誰，亞歷克斯都說那是他一生中最棒的旅行。因此，他計畫明年再去，包括鄉間地區。",
+      "questions": [
+        {
+          "questionZh": "火車票每人多少錢？",
+          "options": [
+            "一百美元",
+            "一百五十美元",
+            "一百美元五十美分"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "亞歷克斯為什麼計畫明年再去日本？",
+          "options": [
+            "他的朋友邀請他了",
+            "天氣變好了",
+            "他覺得那是他一生中最棒的旅行"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q17",
+      "type": "translate",
+      "promptZh": "儘管下雨，他們還是享受了這段旅程。",
+      "hintWords": [
+        "despite"
+      ],
+      "referenceEn": [
+        "Despite the rain, they enjoyed the journey."
+      ],
+      "rubricZh": [
+        "使用 despite 正確表達「儘管」的讓步意義",
+        "動詞時態一致",
+        "句意完整通順"
+      ]
+    },
+    {
+      "id": "b1-u01-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "thus",
+      "instructionZh": "用 thus 寫一個句子，表示「因此」的意思，句中包含因果關係。",
+      "referenceEn": [
+        "She studied hard every day and thus passed the exam.",
+        "He was late many times, and thus his boss was angry with him."
+      ],
+      "rubricZh": [
+        "正確使用 thus 表示「因此」的因果關係",
+        "前後邏輯清晰",
+        "文法正確（時態、主詞一致）"
+      ]
+    }
+  ],
+  "attempt": 2,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l01-q11": [
+        0
+      ],
+      "b1-u01-l01-q14": [
+        2
+      ],
+      "b1-u01-l01-q15": [
+        1
+      ],
+      "b1-u01-l01-q16#0": [
+        1
+      ],
+      "b1-u01-l01-q16#1": [
+        2
+      ]
+    }
+  }
+}

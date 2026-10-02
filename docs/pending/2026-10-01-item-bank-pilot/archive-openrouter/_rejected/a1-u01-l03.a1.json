@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-u01-l03",
+  "level": "A1",
+  "promptVersion": "gen-lesson.v2",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Tom",
+    "Japan",
+    "Taipei",
+    "Taiwan"
+  ],
+  "items": [
+    {
+      "id": "a1-u01-l03-q01",
+      "type": "wordCard",
+      "word": "do",
+      "exampleEn": "I do my work at home.",
+      "exampleZh": "我在家裡工作。"
+    },
+    {
+      "id": "a1-u01-l03-q02",
+      "type": "wordCard",
+      "word": "this",
+      "exampleEn": "This is my book.",
+      "exampleZh": "這是我的書。"
+    },
+    {
+      "id": "a1-u01-l03-q03",
+      "type": "wordCard",
+      "word": "they",
+      "exampleEn": "They are at school.",
+      "exampleZh": "他們在学校。"
+    },
+    {
+      "id": "a1-u01-l03-q04",
+      "type": "wordCard",
+      "word": "at",
+      "exampleEn": "I am at home.",
+      "exampleZh": "我在家裡。"
+    },
+    {
+      "id": "a1-u01-l03-q05",
+      "type": "wordCard",
+      "word": "but",
+      "exampleEn": "I like tea, but I don't like coffee.",
+      "exampleZh": "我喜歡茶，但不喜歡咖啡。"
+    },
+    {
+      "id": "a1-u01-l03-q06",
+      "type": "wordCard",
+      "word": "we",
+      "exampleEn": "We go to school.",
+      "exampleZh": "我們去上學。"
+    },
+    {
+      "id": "a1-u01-l03-q07",
+      "type": "wordCard",
+      "word": "his",
+      "exampleEn": "His book is red.",
+      "exampleZh": "他的書是紅色的。"
+    },
+    {
+      "id": "a1-u01-l03-q08",
+      "type": "wordCard",
+      "word": "from",
+      "exampleEn": "I am from Taipei.",
+      "exampleZh": "我來自台北。"
+    },
+    {
+      "id": "a1-u01-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "This is my friend. We are at school.",
+      "sentenceZh": "這是我的朋友。我們在学校。"
+    },
+    {
+      "id": "a1-u01-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "They are from Taiwan. We are at school.",
+      "audioZh": "他們來自台灣。我們在学校。",
+      "questionZh": "他們來自哪裡？",
+      "options": [
+        "Taiwan",
+        "Japan",
+        "Korea"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "This is my book. It is red.",
+      "sentenceZh": "這是我的書。它是紅色的。"
+    },
+    {
+      "id": "a1-u01-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "We are at home, but they are at school.",
+      "sentenceZh": "我們在家裡，但他們在学校。"
+    },
+    {
+      "id": "a1-u01-l03-q13",
+      "type": "mcq",
+      "stemEn": "I am ____ home.",
+      "stemZh": "我在家裡。",
+      "options": [
+        "in",
+        "at",
+        "on",
+        "from"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a1-u01-l03-q14",
+      "type": "mcq",
+      "stemEn": "I like tea ____ I don't like coffee.",
+      "stemZh": "我喜歡茶，但不喜歡咖啡。",
+      "options": [
+        "but",
+        "and",
+        "at",
+        "this"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a1-u01-l03-q15",
+      "type": "reading",
+      "passageEn": "This is my friend, Tom. He is from Japan. We are at school now. His class is at two. Tom likes math, but he doesn't like art. We do our work together every day. He is a good student.",
+      "passageZh": "這是我的朋友 Tom。他來自日本。我們現在在学校。他的課在兩點。Tom 喜歡數學，但不喜歡美術。我們每天一起做事。他是個好學生。",
+      "questions": [
+        {
+          "questionZh": "Tom 來自哪裡？",
+          "options": [
+            "韓國",
+            "日本",
+            "美國"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Tom 喜歡什麼科目？",
+          "options": [
+            "數學",
+            "美術",
+            "音樂"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q16",
+      "type": "translate",
+      "promptZh": "他們來自台北。",
+      "hintWords": [
+        "they",
+        "from"
+      ],
+      "referenceEn": [
+        "They are from Taipei."
+      ],
+      "rubricZh": [
+        "正確使用代名詞 they 作為主詞",
+        "正確使用介系詞 from 表示來自",
+        "句子結構完整、語序正確"
+      ]
+    },
+    {
+      "id": "a1-u01-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "but",
+      "instructionZh": "用 but 寫一個句子，前面表達喜歡，後面表達不喜歡，形成對比。",
+      "referenceEn": [
+        "I like tea, but I don't like coffee.",
+        "She likes cats, but she doesn't like dogs."
+      ],
+      "rubricZh": [
+        "正確使用 but 連接兩個對比的子句",
+        "前後意思形成對比",
+        "句型結構正確、主詞一致"
+      ]
+    }
+  ],
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "a1-u01-l03-q10": [
+        0
+      ],
+      "a1-u01-l03-q13": [
+        1
+      ],
+      "a1-u01-l03-q14": [
+        0
+      ],
+      "a1-u01-l03-q15#0": [
+        1
+      ],
+      "a1-u01-l03-q15#1": [
+        0
+      ]
+    }
+  }
+}

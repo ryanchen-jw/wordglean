@@ -1,0 +1,209 @@
+{
+  "runId": "compare-gemma",
+  "startedAt": "2026-10-01T18:34:46.636Z",
+  "genModel": "google/gemma-4-31b-it:free",
+  "judgeModel": "qwen/qwen3.8-27b:free",
+  "genPrompt": "gen-lesson.v1",
+  "judgePrompt": "judge-mcq.v1",
+  "budgetUsd": 0,
+  "dryRun": false,
+  "quotaChecks": [
+    {
+      "at": "2026-10-01T18:34:46.927Z",
+      "remaining": 43,
+      "used": 7,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:34:46.932Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:34:47.174Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:35:47.190Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:35:47.628Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:36:47.635Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:36:48.095Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:37:48.117Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:37:48.598Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:38:48.612Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:38:49.044Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:39:49.057Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "role": "gen",
+      "model": "google/gemma-4-31b-it:free",
+      "at": "2026-10-01T18:39:49.488Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "Google AI Studio"
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "a1-u01-l01",
+      "status": "deferred_today",
+      "note": "429 延後 6 次，今日不再排"
+    },
+    {
+      "lessonId": "b1-u14-l01",
+      "status": "deferred_today",
+      "note": "429 延後 6 次，今日不再排"
+    }
+  ],
+  "remaining": [],
+  "totals": {
+    "promptTokens": 0,
+    "completionTokens": 0,
+    "costUsd": 0
+  },
+  "stoppedReason": null,
+  "finishedAt": "2026-10-01T18:39:49.682Z"
+}

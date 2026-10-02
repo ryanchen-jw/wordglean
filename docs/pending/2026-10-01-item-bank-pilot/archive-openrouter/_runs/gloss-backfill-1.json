@@ -1,0 +1,468 @@
+{
+  "runId": "gloss-backfill-1",
+  "kind": "gloss-backfill",
+  "startedAt": "2026-10-02T01:28:29.702Z",
+  "genModel": "qwen/qwen3.8-27b:free",
+  "judgeModel": "apodex/apodex-1.1-mini:free",
+  "glossPrompt": "gloss-backfill.v1",
+  "judgePrompt": "gloss-judge.v1",
+  "quotaChecks": [
+    {
+      "at": "2026-10-02T01:28:30.057Z",
+      "remaining": 22,
+      "used": 28,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-02T01:32:14.933Z",
+      "remaining": 18,
+      "used": 32,
+      "limit": 50,
+      "isFreeTier": true
+    },
+    {
+      "at": "2026-10-02T01:35:30.099Z",
+      "remaining": 14,
+      "used": 36,
+      "limit": 50,
+      "isFreeTier": true
+    }
+  ],
+  "calls": [
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:28:30.060Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:28:30.724Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:28:31.027Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:28:31.265Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l05",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:28:31.505Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "promptTokens": 873,
+      "completionTokens": 2199,
+      "reasoningTokens": 1920,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 40311
+    },
+    {
+      "lessonId": "b1-u01-l05",
+      "role": "gloss-judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "at": "2026-10-02T01:29:12.198Z",
+      "status": "ok",
+      "provider": "Novita",
+      "promptTokens": 670,
+      "completionTokens": 2940,
+      "reasoningTokens": 2789,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 11573
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:29:23.775Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:29:30.730Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "promptTokens": 786,
+      "completionTokens": 2537,
+      "reasoningTokens": 2269,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 52795
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "role": "gloss-judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "at": "2026-10-02T01:30:23.602Z",
+      "status": "ok",
+      "provider": "Novita",
+      "promptTokens": 608,
+      "completionTokens": 1473,
+      "reasoningTokens": 1273,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 6419
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:30:30.024Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:30:30.287Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:30:30.572Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:30:30.907Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:31:30.299Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "promptTokens": 798,
+      "completionTokens": 1704,
+      "reasoningTokens": 1480,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 44593
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "role": "gloss-judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "at": "2026-10-02T01:32:15.093Z",
+      "status": "ok",
+      "provider": "Novita",
+      "promptTokens": 592,
+      "completionTokens": 2157,
+      "reasoningTokens": 1826,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 8671
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:32:23.767Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:32:24.014Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:32:24.276Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:33:24.026Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:33:24.544Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:33:24.819Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "promptTokens": 855,
+      "completionTokens": 1464,
+      "reasoningTokens": 1209,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 24346
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "role": "gloss-judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "at": "2026-10-02T01:33:49.259Z",
+      "status": "ok",
+      "provider": "Novita",
+      "promptTokens": 643,
+      "completionTokens": 3323,
+      "reasoningTokens": 3264,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 12196
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:34:24.546Z",
+      "status": "ok",
+      "provider": "ModelRun",
+      "promptTokens": 782,
+      "completionTokens": 2085,
+      "reasoningTokens": 1856,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 58676
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "role": "gloss-judge",
+      "model": "apodex/apodex-1.1-mini:free",
+      "at": "2026-10-02T01:35:23.276Z",
+      "status": "ok",
+      "provider": "Novita",
+      "promptTokens": 583,
+      "completionTokens": 1734,
+      "reasoningTokens": 1606,
+      "costUsd": 0,
+      "finishReason": "stop",
+      "durationMs": 6788
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:35:30.102Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "role": "gloss",
+      "model": "qwen/qwen3.8-27b:free",
+      "at": "2026-10-02T01:36:30.704Z",
+      "status": "rate_limited",
+      "rateLimit": {
+        "limit": null,
+        "remaining": null,
+        "reset": null,
+        "providerCode": null,
+        "providerName": "ModelRun"
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "a1-u01-l02",
+      "status": "not_needed"
+    },
+    {
+      "lessonId": "a1-u01-l05",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "a1-u01-l06",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "a1-u01-l07",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "a1-u01-l09",
+      "status": "not_needed"
+    },
+    {
+      "lessonId": "a1-u01-l10",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "b1-u01-l01",
+      "status": "not_needed"
+    },
+    {
+      "lessonId": "b1-u01-l02",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "b1-u01-l03",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "b1-u01-l04",
+      "status": "not_final"
+    },
+    {
+      "lessonId": "b1-u01-l05",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l01",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l03",
+      "status": "ok"
+    },
+    {
+      "lessonId": "b1-u01-l06",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l04",
+      "status": "ok"
+    },
+    {
+      "lessonId": "a1-u01-l08",
+      "status": "deferred_today",
+      "note": "429 延後 6 次"
+    }
+  ],
+  "remaining": [],
+  "stoppedReason": null,
+  "finishedAt": "2026-10-02T01:36:31.167Z"
+}

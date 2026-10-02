@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u01-l02",
+  "level": "B1",
+  "promptVersion": "gen-lesson.v3",
+  "model": "qwen/qwen3.8-27b:free",
+  "properNouns": [
+    "Anna",
+    "John"
+  ],
+  "items": [
+    {
+      "id": "b1-u01-l02-q01",
+      "type": "wordCard",
+      "word": "onto",
+      "exampleEn": "The cat jumped onto the table.",
+      "exampleZh": "那只貓跳到桌子上。",
+      "glossZh": "在……之上",
+      "distractorsZh": [
+        "從……之下",
+        "離開",
+        "朝向"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q02",
+      "type": "wordCard",
+      "word": "throughout",
+      "exampleEn": "He stayed throughout the whole meeting.",
+      "exampleZh": "他在整個會議期間都留下來。",
+      "glossZh": "遍及，在……期間",
+      "distractorsZh": [
+        "離開",
+        "附近",
+        "反對"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q03",
+      "type": "wordCard",
+      "word": "nor",
+      "exampleEn": "I don't like coffee, nor do I like tea.",
+      "exampleZh": "我不喜歡咖啡，也不喜歡茶。",
+      "glossZh": "也不，也沒有",
+      "distractorsZh": [
+        "但",
+        "所以",
+        "因此"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q04",
+      "type": "wordCard",
+      "word": "none",
+      "exampleEn": "None of the students were late.",
+      "exampleZh": "沒有一個學生遲到。",
+      "glossZh": "沒有人，無一物",
+      "distractorsZh": [
+        "所有人",
+        "一些",
+        "許多"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q05",
+      "type": "wordCard",
+      "word": "unless",
+      "exampleEn": "You will fail unless you study hard.",
+      "exampleZh": "除非你努力讀書，否則你會失敗。",
+      "glossZh": "除非",
+      "distractorsZh": [
+        "如果",
+        "因為",
+        "儘管"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q06",
+      "type": "wordCard",
+      "word": "otherwise",
+      "exampleEn": "Hurry up, otherwise you will miss the bus.",
+      "exampleZh": "快一點，否則你會錯過公車。",
+      "glossZh": "否則",
+      "distractorsZh": [
+        "因此",
+        "然後",
+        "同時"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q07",
+      "type": "wordCard",
+      "word": "somehow",
+      "exampleEn": "She finished the work somehow.",
+      "exampleZh": "她不知怎麼的就完成了工作。",
+      "glossZh": "不知何故",
+      "distractorsZh": [
+        "在某個地方",
+        "在某個時候",
+        "以某種方式"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q08",
+      "type": "wordCard",
+      "word": "forth",
+      "exampleEn": "They marched forth into the field.",
+      "exampleZh": "他們向前行進到田野裡。",
+      "glossZh": "往前，以後",
+      "distractorsZh": [
+        "返回",
+        "向下",
+        "離開"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q09",
+      "type": "wordCard",
+      "word": "meanwhile",
+      "exampleEn": "Meanwhile, I was reading a book.",
+      "exampleZh": "與此同時，我正在看一本書。",
+      "glossZh": "同時，於此時",
+      "distractorsZh": [
+        "最終",
+        "首先",
+        "相反"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q10",
+      "type": "listenType",
+      "sentenceEn": "Unless you leave now, you will be late.",
+      "sentenceZh": "除非你現在離開，否則你會遲到。"
+    },
+    {
+      "id": "b1-u01-l02-q11",
+      "type": "listenChoice",
+      "audioEn": "He didn't call me, nor did he send a text.",
+      "audioZh": "他沒有打給我，也沒有傳簡訊。",
+      "questionZh": "他做了哪些事？",
+      "options": [
+        "He called and sent a text.",
+        "He did neither call nor text.",
+        "He called but didn't send a text.",
+        "He texted but didn't call."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u01-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "None of us could solve the problem.",
+      "sentenceZh": "我們沒有人能解決這個問題。"
+    },
+    {
+      "id": "b1-u01-l02-q13",
+      "type": "shadowing",
+      "sentenceEn": "I will wait here; otherwise, I will go home.",
+      "sentenceZh": "我會在這邊等；否則，我就回家了。"
+    },
+    {
+      "id": "b1-u01-l02-q14",
+      "type": "mcq",
+      "stemEn": "You should wear a coat, ____ it will rain.",
+      "stemZh": "你應該穿外套，否則會下雨。",
+      "options": [
+        "otherwise",
+        "somewhere",
+        "nowhere",
+        "sometime"
+      ],
+      "optionGlossZh": [
+        "否則",
+        "某個地方",
+        "任何地方都不",
+        "某個時候"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u01-l02-q15",
+      "type": "mcq",
+      "stemEn": "I couldn't find the keys, ____ could I find my bag.",
+      "stemZh": "我找不到鑰匙，也找不到我的包。",
+      "options": [
+        "not",
+        "none",
+        "nor",
+        "never"
+      ],
+      "optionGlossZh": [
+        "不",
+        "沒有人，無一物",
+        "也不，也沒有",
+        "從不"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u01-l02-q16",
+      "type": "reading",
+      "passageEn": "I called my friend Anna to invite her to a party, but she didn't answer. Nor did she reply to my text message. I waited for two hours, but none of my calls went through. I was worried that she was in trouble. Meanwhile, my brother John was making dinner in the kitchen. He asked me if I wanted to eat, and I said I would unless I heard from Anna first. Otherwise, I would just eat alone. John smiled and said, 'She probably fell asleep. She always does.' I hoped that was the case.",
+      "passageZh": "我打電話給我的朋友 Anna 邀請她參加派對，但她沒有接。她也沒有回覆我的簡訊。我等了兩個小時，但我的電話都沒打通。我很擔心她是不是遇到麻煩。與此同時，我哥哥 John 正在廚房做晚餐。他問我要不要吃飯，我說除非我收到 Anna 的消息，否則我就自己吃。John 微笑說：「她大概是睡著了，她總是這樣。」我希望那就是事實。",
+      "questions": [
+        {
+          "questionZh": "講者為什麼沒有先吃飯？",
+          "options": [
+            "因為他一直在等 Anna 的消息",
+            "因為他哥哥沒有做晚餐",
+            "因為他不想吃東西",
+            "因為派對快開始了"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "John 認為 Anna 怎麼了？",
+          "options": [
+            "她出了意外",
+            "她在忙著工作",
+            "她大概是睡著了",
+            "她去了別的城市"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q17",
+      "type": "translate",
+      "promptZh": "除非你現在出發，否則你會錯過那班飛機。",
+      "hintWords": [
+        "unless"
+      ],
+      "referenceEn": [
+        "Unless you leave now, you will miss that flight.",
+        "You will miss that flight unless you leave now."
+      ],
+      "rubricZh": [
+        "正確使用 unless 引導條件從句",
+        "主句使用 will 加動詞原形表示將來的結果",
+        "語意完整，清楚表達「除非……否則……」的邏輯關係"
+      ]
+    },
+    {
+      "id": "b1-u01-l02-q18",
+      "type": "makeSentence",
+      "targetWord": "meanwhile",
+      "instructionZh": "用 meanwhile 寫一個句子，描述兩件同時發生的事。",
+      "referenceEn": [
+        "Meanwhile, my sister was watching TV at home.",
+        "He was studying, and meanwhile his mother was cooking dinner."
+      ],
+      "rubricZh": [
+        "正確使用 meanwhile 連接兩個同時發生的動作",
+        "使用過去進行式描述同時進行的事情",
+        "語意通順，能清楚表達時間上的並行關係"
+      ]
+    }
+  ],
+  "attempt": 3,
+  "judge": {
+    "model": "apodex/apodex-1.1-mini:free",
+    "promptVersion": "judge-mcq.v1",
+    "verdicts": {
+      "b1-u01-l02-q11": [
+        1
+      ],
+      "b1-u01-l02-q14": [
+        0
+      ],
+      "b1-u01-l02-q15": [
+        2
+      ],
+      "b1-u01-l02-q16#0": [
+        0
+      ],
+      "b1-u01-l02-q16#1": [
+        2
+      ]
+    }
+  }
+}
