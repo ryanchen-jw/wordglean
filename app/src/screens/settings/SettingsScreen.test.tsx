@@ -3,7 +3,7 @@ import Dexie from 'dexie'
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
-import { getSettings } from '../../data/repo'
+import { getSettings, saveSettings } from '../../data/repo'
 import { SettingsScreen } from './SettingsScreen'
 
 beforeEach(async () => {
@@ -43,6 +43,37 @@ describe('設定（s11）', () => {
     render(<SettingsScreen />)
     expect(
       await screen.findByRole('button', { name: /目前級距\s*B2｜約多益 400\+/ }),
+    ).toBeInTheDocument()
+  })
+
+  it('設定的級距優先於課程進度推導', async () => {
+    await db.courseProgress.put({ lessonId: 'b2-u01-l01', completedAt: 1, updatedAt: 0 })
+    await saveSettings(db, { cefrLevel: 'A2' }, 1)
+    render(<SettingsScreen />)
+    expect(
+      await screen.findByRole('button', { name: /目前級距\s*A2｜約多益 110\+/ }),
+    ).toBeInTheDocument()
+  })
+
+  it('目前級距：底部彈層列 A1–C1（附多益對照），選 B1 → 寫入設定', async () => {
+    render(<SettingsScreen />)
+    fireEvent.click(await screen.findByRole('button', { name: /目前級距/ }))
+    const sheet = screen.getByRole('dialog', { name: '目前級距' })
+    expect(
+      within(sheet)
+        .getAllByRole('option')
+        .map((o) => o.textContent),
+    ).toEqual([
+      'A1｜約多益 60+',
+      'A2｜約多益 110+',
+      'B1｜約多益 275+',
+      'B2｜約多益 400+',
+      'C1｜約多益 490+',
+    ])
+    fireEvent.click(within(sheet).getByRole('option', { name: 'B1｜約多益 275+' }))
+    await waitFor(async () => expect((await getSettings(db)).cefrLevel).toBe('B1'))
+    expect(
+      await screen.findByRole('button', { name: /目前級距\s*B1｜約多益 275\+/ }),
     ).toBeInTheDocument()
   })
 

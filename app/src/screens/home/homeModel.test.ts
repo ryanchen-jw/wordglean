@@ -3,6 +3,7 @@ import 'fake-indexeddb/auto'
 import Dexie from 'dexie'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { createDb, type LinguaDb, type PoolWord, type ReviewLogRow } from '../../data/db'
+import { saveSettings } from '../../data/repo'
 import { CardState, type Grade } from '../../srs/scheduler'
 import type { LessonRef } from '../../curriculum/curriculum'
 import { buildHomeModel, loadHomeDbInput, type HomeInput } from './homeModel'
@@ -171,6 +172,18 @@ describe('loadHomeDbInput', () => {
       paused: false,
     })
     expect([...input.completedIds].sort()).toEqual(['a2-u01-l01', 'b1-u01-l01'])
+  })
+
+  it('設定有級距（分級或跳過）：不算第一次開啟，級距取設定', async () => {
+    await saveSettings(db, { cefrLevel: 'B1' }, NOW)
+    expect(await loadHomeDbInput(db, NOW, TZ)).toMatchObject({ firstRun: false, level: 'B1' })
+  })
+
+  it('設定級距優先於課程進度推導；沒有設定時才用推導', async () => {
+    await db.courseProgress.put({ lessonId: 'a2-u01-l01', completedAt: NOW, updatedAt: 0 })
+    expect((await loadHomeDbInput(db, NOW, TZ)).level).toBe('A2')
+    await saveSettings(db, { cefrLevel: 'C1' }, NOW)
+    expect((await loadHomeDbInput(db, NOW, TZ)).level).toBe('C1')
   })
 
   it('只有收藏字、沒有上過課也不算第一次開啟', async () => {

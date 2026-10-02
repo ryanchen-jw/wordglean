@@ -1,10 +1,11 @@
-// 06 視覺 smoke（AC#1／AC#2）：六畫面（s01、s02、s08、s09、s11、s13）全部狀態＋安裝卡，兩個手機引擎各一輪。
+// 06 視覺 smoke（AC#1／AC#2）：七畫面（s01、s02、s08、s09、s10、s11、s13）全部狀態＋安裝卡，兩個手機引擎各一輪。
 // 每個狀態：截圖 attach 進 HTML report；斷言 06 三件套（無橫向溢出、單行控件不折行、可點目標 ≥44×44）；
 // 掃描畫面上的介面文字不得有白名單以外的英文（英文學習內容以 lang="en" 標示、排除）。
 // 資料量級：單字庫 5000 字（課綱上限約 7,800 字的同量級）、到期 132（新課暫停門檻以上）。
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
 import { measureMobile } from './measure.js'
+import { answerAll, BANK, isLevel } from './placementHelpers.js'
 
 const DAY = 86_400_000
 
@@ -238,6 +239,33 @@ test('安裝卡：iOS 說明（webkit）／安裝鈕（chromium）', async ({ pa
   await check(page, info, 'install-card')
 })
 
+test('s10 分級測驗：勾選中／結果（勾到假字）／選級距彈層／重測', async ({ page }, info) => {
+  // 走兩輪 60 題（作答＋重測）；WebKit 在本機負載高時超過預設 30 秒（非 UI 逾時，AC#3 計時另驗）
+  test.setTimeout(90_000)
+  await page.goto('/placement')
+  // 勾 A1、A2 真字＋第一個假字 → 起點 B1、提示「結果已向下修正」（同設計 s10 範例）
+  let pseudo = 0
+  await answerAll(
+    page,
+    (w) => isLevel(w, 'A1', 'A2') || (BANK.pseudowords.includes(w) && pseudo++ === 0),
+    {
+      onGroup: async (g) => {
+        if (g === 2) await check(page, info, 's10-pick')
+      },
+    },
+  )
+  await expect(page.getByText('勾到 1 個假字，結果已向下修正')).toBeVisible()
+  await expect(page.getByTestId('placement-level')).toHaveText('B1')
+  await check(page, info, 's10-result')
+  await page.getByRole('button', { name: '想自己選級距' }).click()
+  await expect(page.getByRole('dialog', { name: '目前級距' })).toBeVisible()
+  await check(page, info, 's10-levelsheet')
+  await page.goto('/placement')
+  await answerAll(page, () => true)
+  await expect(page.getByText('勾到 10 個假字，結果可能不準，建議重新測驗')).toBeVisible()
+  await check(page, info, 's10-retest')
+})
+
 test.describe('系統深色模式', () => {
   test.use({ colorScheme: 'dark' })
 
@@ -251,5 +279,16 @@ test.describe('系統深色模式', () => {
     await page.goto('/words')
     await expect(page.getByText('單字庫還是空的')).toBeVisible()
     await check(page, info, 'dark-s09-empty')
+  })
+
+  test('分級測驗（深色）：勾選中、結果', async ({ page }, info) => {
+    await page.goto('/placement')
+    await answerAll(page, (w) => isLevel(w, 'A1'), {
+      onGroup: async (g) => {
+        if (g === 1) await check(page, info, 'dark-s10-pick')
+      },
+    })
+    await expect(page.getByText('你的起點')).toBeVisible()
+    await check(page, info, 'dark-s10-result')
   })
 })

@@ -40,12 +40,19 @@ export default defineConfig({
       },
     }),
   ],
-  // 課綱、題目檔、字典資料在 app 之外，dev server 需明列允許
+  // 課綱、題目檔、分級題本、字典資料在 app 之外，dev server 需明列允許
   server: {
     port: 5287,
     strictPort: true,
     fs: {
-      allow: ['.', '../content/curriculum', '../content/items', '../data/dict', '../data/lexicon'],
+      allow: [
+        '.',
+        '../content/curriculum',
+        '../content/items',
+        '../content/placement',
+        '../data/dict',
+        '../data/lexicon',
+      ],
     },
   },
   // data/ 依來源授權分檔（data/LICENSES.md），小檔也不得內嵌進程式碼 bundle，一律輸出成獨立資產

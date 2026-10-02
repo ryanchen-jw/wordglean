@@ -91,8 +91,9 @@ export async function loadHomeDbInput(
       getSettings(db),
     ])
   return {
-    firstRun: progress.length === 0 && wordCount === 0,
-    level: currentLevel(progress),
+    // 設定有級距（分級測驗、跳過＝A1、設定頁手動改）就不是第一次開啟；級距以設定為準，無值才依課程進度推導（TASK-17）
+    firstRun: settings.cefrLevel === null && progress.length === 0 && wordCount === 0,
+    level: settings.cefrLevel ?? currentLevel(progress),
     completedIds: new Set(progress.map((p) => p.lessonId)),
     dueCount,
     dueTomorrow,

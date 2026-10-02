@@ -6,6 +6,9 @@ import { t } from './t'
 const ALLOWED_LATIN = new Set([
   'LinguaApp',
   'OpenRouter',
+  // 多益對照出處（TASK-17 結果頁「僅供參考」）
+  'ETS',
+  'CEFR',
   'A1',
   'A2',
   'B1',

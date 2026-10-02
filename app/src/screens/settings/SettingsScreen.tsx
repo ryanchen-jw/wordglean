@@ -2,6 +2,7 @@
 import { ChevronRight, FileDown, KeyRound, Lock, Trash2 } from 'lucide-react'
 import { createContext, useContext, useState, type ReactNode } from 'react'
 import { currentLevel } from '../../curriculum/curriculum'
+import { LevelSheet } from '../../curriculum/LevelSheet'
 import { levelLabel } from '../../curriculum/levelLabel'
 import { db } from '../../data/appDb'
 import { clearLocalData, exportData } from '../../data/localData'
@@ -31,7 +32,7 @@ const TEXT_SIZES: { value: Prefs['textSize']; label: MessageKey }[] = [
   { value: 'xl', label: 'settings.appearance.textSizeXl' },
 ]
 
-type Sheet = 'dailyNew' | 'theme' | 'textSize' | null
+type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | null
 
 const rowCls =
   'flex min-h-13 w-full items-center justify-between gap-3 border border-t-0 border-line bg-surface px-4 text-left first:rounded-t-2xl first:border-t last:rounded-b-2xl'
@@ -110,7 +111,8 @@ function downloadJson(data: unknown, fileName: string) {
 export function SettingsScreen() {
   const data = useLiveQuery(async () => {
     const [settings, progress] = await Promise.all([getSettings(db), db.courseProgress.toArray()])
-    return { settings, level: currentLevel(progress) }
+    // 級距以設定為準，無值才依課程進度推導（TASK-17）
+    return { settings, level: settings.cefrLevel ?? currentLevel(progress) }
   }, [])
   const [prefs, setPref] = usePrefs()
   const [sheet, setSheet] = useState<Sheet>(null)
@@ -140,7 +142,7 @@ export function SettingsScreen() {
               value={
                 data && (data.level ? levelLabel(data.level) : t('settings.learning.unplaced'))
               }
-              onClick={() => navigate(data?.level ? `/course?level=${data.level}` : '/course')}
+              onClick={() => setSheet('level')}
             />
             <Row
               label={t('settings.learning.dailyNew')}
@@ -228,6 +230,13 @@ export function SettingsScreen() {
         </div>
       </RowWrapContext>
 
+      {sheet === 'level' && data && (
+        <LevelSheet
+          selected={data.level}
+          onSelect={(level) => saveSettings(db, { cefrLevel: level }, Date.now())}
+          onClose={close}
+        />
+      )}
       {sheet === 'dailyNew' && data && (
         <OptionSheet
           label={t('settings.learning.dailyNewSheet')}

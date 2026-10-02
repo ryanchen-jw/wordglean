@@ -5,7 +5,8 @@ import { BottomSheet } from './BottomSheet'
 type Props<T extends string | number> = {
   label: string
   options: readonly { value: T; label: string }[]
-  selected: T
+  /** null＝尚未選（如未分級） */
+  selected: T | null
   onSelect: (value: T) => void
   onClose: () => void
 }

@@ -25,6 +25,10 @@
     "lesson.reading.question",
     "lesson.wordCard.hintLabel",
     "nav.bar.label",
+    "placement.pick.exit",
+    "placement.result.retest",
+    "placement.result.retestHint",
+    "placement.result.toeicNote",
     "stub.page.backHome",
     "stub.page.body",
     "stub.page.title",
@@ -508,14 +512,18 @@
       "instruction": "勾選你「認識意思」的字",
       "hint": "不確定就不要勾；裡面混了幾個不存在的假字。",
       "next": "下一組（已勾 {count} 個）",
-      "finish": "看結果（已勾 {count} 個）"
+      "finish": "看結果（已勾 {count} 個）",
+      "exit": "離開"
     },
     "result": {
       "title": "你的起點",
       "chart": "每一級你認識的字的比例",
       "penalty": "勾到 {count} 個假字，結果已向下修正",
       "start": "從 {level} 開始",
-      "choose": "想自己選級距"
+      "choose": "想自己選級距",
+      "toeicNote": "多益分數依 ETS 官方 CEFR 對照，僅供參考",
+      "retestHint": "勾到 {count} 個假字，結果可能不準，建議重新測驗",
+      "retest": "重新測驗"
     }
   },
   "account": {

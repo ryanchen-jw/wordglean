@@ -5,6 +5,8 @@ import type { Page } from '@playwright/test'
 export const ALLOWED_LATIN = [
   'LinguaApp',
   'OpenRouter',
+  'ETS',
+  'CEFR',
   'A1',
   'A2',
   'B1',

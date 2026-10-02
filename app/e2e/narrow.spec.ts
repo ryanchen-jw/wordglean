@@ -1,7 +1,8 @@
-// 窄螢幕與特大字級（走查 P0／P2）：320 標準、320 特大、375 特大下，單字庫、設定、清除確認不得破版
+// 窄螢幕與特大字級（走查 P0／P2）：320 標準、320 特大、375 特大下，單字庫、設定、清除確認、分級測驗不得破版
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
 import { measureMobile, overflowingChildren } from './measure.js'
+import { answerAll, BANK } from './placementHelpers.js'
 
 const CASES = [
   { name: '320-md', width: 320, height: 640, textSize: null },
@@ -116,6 +117,35 @@ for (const c of CASES) {
       await check(page, info, `${c.name}-s11-top`)
       await page.getByRole('button', { name: '下載語音辨識模型' }).scrollIntoViewIfNeeded()
       await check(page, info, `${c.name}-s11-voice`)
+    })
+
+    test('s10 分級測驗：勾選中、結果（勾到假字）、重測、選級距彈層', async ({ page }, info) => {
+      // 走兩輪 60 題（作答＋重測）；WebKit 在本機負載高時單輪約 15 秒，預設 30 秒不夠（非 UI 逾時，AC#3 計時另驗）
+      test.setTimeout(90_000)
+      await page.goto('/placement')
+      await expect(page.getByText('第 1／5 組')).toBeVisible()
+      // 勾 A1／A2 真字＋第一個假字（級距查已提交題本）
+      let pseudo = 0
+      const pick = (word: string) =>
+        BANK.levels.A1.includes(word) ||
+        BANK.levels.A2.includes(word) ||
+        (BANK.pseudowords.includes(word) && pseudo++ === 0)
+      await answerAll(page, pick, {
+        onGroup: async (g) => {
+          if (g === 1) await check(page, info, `${c.name}-s10-pick`)
+        },
+      })
+      await expect(page.getByText('勾到 1 個假字，結果已向下修正')).toBeVisible()
+      await check(page, info, `${c.name}-s10-result`)
+      await page.getByRole('button', { name: '想自己選級距' }).click()
+      await expect(page.getByRole('dialog', { name: '目前級距' })).toBeVisible()
+      await check(page, info, `${c.name}-s10-levelsheet`)
+      await page.keyboard.press('Escape')
+      // 重測狀態：全勾
+      await page.goto('/placement')
+      await answerAll(page, () => true)
+      await expect(page.getByRole('button', { name: '重新測驗' })).toBeVisible()
+      await check(page, info, `${c.name}-s10-retest`)
     })
 
     test('s13 清除確認：彈窗在視窗內', async ({ page }, info) => {

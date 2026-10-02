@@ -8,6 +8,7 @@ export const DEFAULT_SETTINGS: Settings = {
   dailyNewLimit: 10,
   pauseMultiplier: 10,
   desiredRetention: DEFAULT_RETENTION,
+  cefrLevel: null,
   updatedAt: 0,
 }
 
@@ -16,7 +17,8 @@ const enqueue = (db: LinguaDb, table: OutboxEntry['table'], key: string) =>
   db.outbox.add({ table, key })
 
 export async function getSettings(db: LinguaDb): Promise<Settings> {
-  return (await db.settings.get('local')) ?? DEFAULT_SETTINGS
+  const row = await db.settings.get('local')
+  return row ? { ...row, cefrLevel: row.cefrLevel ?? null } : DEFAULT_SETTINGS
 }
 
 export async function saveSettings(

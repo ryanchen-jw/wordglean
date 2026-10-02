@@ -7,7 +7,7 @@
 | 路徑 | 授權 |
 |---|---|
 | `schema/`、`scripts/`、`test/` | AGPL-3.0（程式碼，同 repo 根 `LICENSE`） |
-| `curriculum/*.json`、`curriculum/STATS.md`（及日後的題庫 JSON） | 衍生自 lexicon 的級距與多益旗標，**依 `data/LICENSES.md` 各來源條款**（CEFR-J 衍生級距適用 CEFR-J 條款、不是 CC BY-SA；Octanove、TSL／NGSL 為 CC BY-SA 4.0） |
+| `curriculum/*.json`、`curriculum/STATS.md`、`placement/placement.json`（及日後的題庫 JSON） | 衍生自 lexicon 的級距與多益旗標，**依 `data/LICENSES.md` 各來源條款**（CEFR-J 衍生級距適用 CEFR-J 條款、不是 CC BY-SA；Octanove、TSL／NGSL 為 CC BY-SA 4.0） |
 
 不要把課綱資料寫死成單一授權；整體授權表述待創辦人裁示後以 `data/LICENSES.md` 為準。
 
@@ -27,6 +27,11 @@
 | `scripts/lib/stats.mjs` | `curriculumStats`、`renderStats` | 人 |
 | `scripts/build-curriculum.mjs` | 檢查分類 → 排課 → validator → 寫級距檔與 STATS.md | — |
 | `scripts/validate-curriculum.mjs` | 只檢查現有級距檔 | — |
+| `placement/placement.json` | 分級測驗題本（TASK-17）：A1–C1 各 30 個候選真字＋200 個假字池 | **產生，勿手改** |
+| `scripts/lib/pseudoword.mjs` | 假字產生器（參考 Wuggy 方法自己實作，規則見檔頭與 `docs/verification/2026-10-02-task17-placement-evidence/proposal.md` §4） | 人 |
+| `scripts/lib/offensive.mjs` | 分級測驗排除字：真字的冒犯／粗俗字名單（整字）、假字的不雅字串（子字串）；自訂名單、附分類理由 | 人 |
+| `scripts/lib/placement.mjs` | 題本組裝 `buildPlacement(lexicon, dictWords)`、讀 ECDICT 切片 `loadDictWords` | 人 |
+| `scripts/build-placement.mjs` | 產生 `placement/placement.json` | — |
 
 ## 規則
 
@@ -70,6 +75,7 @@ npm ci
 npm test                         # 單元＋整合測試（含「已提交級距檔＝排課器產出」）
 node scripts/build-curriculum.mjs   # 改了 topics.json／word-topics.json／lexicon 後重建；輸出位元組可重現
 npm run validate                 # 只檢查現有級距檔
+node scripts/build-placement.mjs    # 改了 lexicon／data/dict／產生器後重建分級測驗題本（位元組可重現）
 # 皆可加 --lexicon <file> --dir <curriculum dir>
 ```
 

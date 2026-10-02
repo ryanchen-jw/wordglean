@@ -71,7 +71,7 @@ describe.skipIf(!URL || !ANON || !SERVICE)('Supabase 同步（本機整合）', 
     await addFromCourse(a, 'apple', 'l1', T)
     await recordReview(a, 'apple', Grade.Good, T + MIN)
     await recordReview(a, 'apple', Grade.Good, T + 11 * MIN)
-    await saveSettings(a, { dailyNewLimit: 7 }, T + 12 * MIN)
+    await saveSettings(a, { dailyNewLimit: 7, cefrLevel: 'B2' }, T + 12 * MIN)
     await addFromCourse(b, 'apple', 'l2', T + 2 * MIN)
     await recordReview(b, 'apple', Grade.Again, T + 3 * MIN)
     await addFavorite(b, 'stone', T + 4 * MIN)
@@ -88,7 +88,7 @@ describe.skipIf(!URL || !ANON || !SERVICE)('Supabase 同步（本機整合）', 
     expect(poolA.map((w) => w.wordId)).toEqual(['apple', 'stone'])
     expect(poolA[0]).toMatchObject({ courseRefs: ['l1', 'l2'], reps: 3, lastReview: T + 11 * MIN })
     expect(poolA[1].favoritedAt).toBe(T + 4 * MIN)
-    expect(await b.settings.get('local')).toMatchObject({ dailyNewLimit: 7 })
+    expect(await b.settings.get('local')).toMatchObject({ dailyNewLimit: 7, cefrLevel: 'B2' })
     expect(await a.outbox.count()).toBe(0)
     expect(await b.outbox.count()).toBe(0)
 

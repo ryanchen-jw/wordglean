@@ -1,6 +1,7 @@
 // 本機 IndexedDB（Dexie）；時間欄一律 UTC epoch ms
 // 已出版的版本只能往後追加，不可就地修改（db.test.ts 以凍結 fixture 守住 v1）
 import Dexie, { type EntityTable, type Transaction } from 'dexie'
+import type { Level } from '../curriculum/curriculum'
 import type { LessonRun } from '../lesson/run'
 import type { FsrsFields, ReviewEntry } from '../srs/scheduler'
 
@@ -9,6 +10,8 @@ export interface Settings {
   dailyNewLimit: number
   pauseMultiplier: number
   desiredRetention: number
+  /** 目前級距（分級測驗結果、跳過＝A1、設定頁手動改）；null＝未分級。無索引，Dexie 不升版；舊列缺此欄由 getSettings 補 null（TASK-17） */
+  cefrLevel: Level | null
   updatedAt: number
 }
 

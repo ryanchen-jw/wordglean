@@ -51,6 +51,27 @@ export function TabScreen({ title, subtitle, action, children }: TabProps) {
   )
 }
 
+/** 流程頁（分級測驗等）：自訂頁首、可捲內容、固定在底部的動作區；無底部導覽 */
+export function FlowScreen({
+  header,
+  footer,
+  children,
+}: {
+  header: ReactNode
+  footer: ReactNode
+  children: ReactNode
+}) {
+  return (
+    <div className={frame}>
+      <header className={headerPad}>{header}</header>
+      <main className={mainCls}>{children}</main>
+      <footer className="grid flex-none gap-2.5 border-t border-line bg-bg px-5 pt-3 pb-[calc(env(safe-area-inset-bottom)+12px)]">
+        {footer}
+      </footer>
+    </div>
+  )
+}
+
 export function SubScreen({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div className={frame}>

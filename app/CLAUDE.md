@@ -60,7 +60,10 @@ app/
   - webServer 跑 `build && preview`（埠 5288），`reuseExistingServer: false`：埠被別人占用時直接失敗，避免打到別的 checkout。
   - smoke 先核對識別字串（`data-testid="screen-home"`）再斷言 service worker；`shell.spec`＝首次開啟流程，`offline.spec`＝離線重開首頁／單字庫／課程。
   - `visual-smoke.spec`＝06 視覺 smoke：五畫面全狀態兩引擎截圖（attach＋具名檔存 `test-results/`），斷言無溢出、單行控件不折行、可點 ≥44px、無英文介面字串、body 套 token 色。看報告：`PLAYWRIGHT_HTML_OUTPUT_DIR=playwright-report/visual-smoke npx playwright test e2e/visual-smoke.spec.ts --reporter=list,html` 後 `npx playwright show-report playwright-report/visual-smoke`。
-  - `narrow.spec`＝320 標準／320 特大／375 特大下單字庫、設定、清除確認不破版（含子元素不伸出卡片、主鈕不留孤字）。手機量測（溢出、單行控件、44px、英文字串、body 色、容器內溢出）一律用 `e2e/measure.ts`，e2e-sync 也共用。
+  - `placement.spec`＝分級測驗 AC#3（TASK-17）：首次開啟 → 測驗 → 結果寫入設定 → 設定頁改級距；以「60 題 × 3 秒＋實測畫面耗時 < 300 秒」判定。`PLACEMENT_REALTIME=1` 時每題真等 3 秒（本機留證據用，約 3 分鐘）。題本查詢與逐組作答共用 `e2e/placementHelpers.ts`。
+  - 已知（Windows）：webServer 的 preview 子程序在測試跑完後不會結束，Playwright 會卡在收尾、不印總結；輸出一律寫檔不接管道，跑完以 `netstat -ano` 找該埠的程序手動結束。
+  - `narrow.spec`＝320 標準／320 特大／375 特大下單字庫、設定、清除確認、分級測驗不破版（含子元素不伸出卡片、主鈕不留孤字）。手機量測（溢出、單行控件、44px、英文字串、body 色、容器內溢出）一律用 `e2e/measure.ts`，e2e-sync 也共用。
+  - `placement-cards.spec`＝分級測驗字卡：勾選底色（淺／深色系 computed 比對 token）、最長字題本在多種寬度／字級下不斷字不溢出。
   - `lesson.spec`＝小課讀類三題型走完一課與續作；`lesson-visual.spec`＝小課各狀態截圖與窄螢幕／特大字級量測。e2e 的 webServer 帶 `VITE_ITEM_FIXTURES=true`，題目來源為 `src/lesson/fixtures/items/` 的樣本課。
   - 已知：WebKit（Windows build）原生 IndexedDB 一次寫 5000 筆約 77 秒（測試準備成本），該案例時限放寬到 150 秒。
   - 已知限制：Playwright 的 WebKit（Windows build）在 `setOffline` 後 reload 會丟 internal error，離線重載只在 chromium 驗。

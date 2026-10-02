@@ -33,6 +33,7 @@ CLI 一律 `npx --yes supabase@2.118.0`（鎖版本、不全域安裝）。proje
 | settings.dailyNewLimit | settings.daily_new_limit | integer，預設 10 | 規格 §7 |
 | settings.pauseMultiplier | settings.pause_multiplier | integer，預設 10 | TASK-10 代決值 |
 | settings.desiredRetention | settings.desired_retention | double，預設 0.9 | 規格 §7 |
+| settings.cefrLevel | settings.cefr_level | text A1–C1，可空 | TASK-17 目前級距；null＝未分級。本機無索引、Dexie 未升版，TASK-17 前的舊列缺此欄時讀為 null |
 | settings.updatedAt | settings.updated_at | timestamptz | 由用戶端寫入，供最後修改時間合併；伺服器不覆寫 |
 | wordPool.wordId（PK） | word_pool.word_id | text | PK＝(user_id, word_id)；暫定小寫 headword，待 TASK-6 |
 | wordPool.state | word_pool.state | smallint 0–3 | |
@@ -69,5 +70,5 @@ CLI 一律 `npx --yes supabase@2.118.0`（鎖版本、不全域安裝）。proje
 | speechCorrections.recognizedText | speech_corrections.recognized_text | text | |
 | speechCorrections.correctedText | speech_corrections.corrected_text | text | 只存文字，不存錄音 |
 | speechCorrections.createdAt | speech_corrections.created_at | timestamptz | |
-| （無） | profiles.cefr_level | text A1–C1，可空 | 本機對應待 TASK-17（分級測驗）定 |
+| （無） | profiles.cefr_level | text A1–C1，可空 | **未使用**：TASK-17 改存 settings.cefr_level（隨設定同步）；保留不刪 |
 | （無） | profiles.id／created_at／updated_at | uuid／timestamptz | 雲端專用；id＝auth.users.id |

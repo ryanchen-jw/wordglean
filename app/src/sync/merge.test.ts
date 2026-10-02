@@ -225,6 +225,7 @@ describe('其餘合併規則', () => {
     dailyNewLimit: 10,
     pauseMultiplier: 10,
     desiredRetention: 0.9,
+    cefrLevel: null,
     updatedAt: 0,
     ...p,
   })

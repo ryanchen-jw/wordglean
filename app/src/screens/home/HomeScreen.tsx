@@ -4,6 +4,7 @@ import { nextLesson, type Level } from '../../curriculum/curriculum'
 import { levelLabel } from '../../curriculum/levelLabel'
 import { useLevelDoc } from '../../curriculum/load'
 import { db } from '../../data/appDb'
+import { saveSettings } from '../../data/repo'
 import { useLiveQuery } from '../../data/useLiveQuery'
 import { t } from '../../i18n/t'
 import { Link } from '../../Link'
@@ -91,6 +92,12 @@ function PausedTile({ m }: { m: HomeModel }) {
   )
 }
 
+// 跳過分級＝級距定為 A1（TASK-17）
+async function skipPlacement() {
+  await saveSettings(db, { cefrLevel: 'A1' }, Date.now())
+  navigate('/course?level=A1')
+}
+
 function HomeBody({ m }: { m: HomeModel }) {
   const startTarget = m.dueCount > 0 || !m.next ? '/review' : `/lesson/${m.next.lessonId}`
 
@@ -100,7 +107,7 @@ function HomeBody({ m }: { m: HomeModel }) {
         <h2 className={cardTitleCls}>{t('home.first.title')}</h2>
         <p className="text-secondary text-muted">{t('home.first.body')}</p>
         <Button onClick={() => navigate('/placement')}>{t('home.first.startButton')}</Button>
-        <Button variant="text" onClick={() => navigate('/course?level=A1')}>
+        <Button variant="text" onClick={skipPlacement}>
           {t('home.first.skip')}
           <ChevronRight size={20} aria-hidden="true" />
         </Button>

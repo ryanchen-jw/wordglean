@@ -1,7 +1,8 @@
 import 'fake-indexeddb/auto'
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { db } from '../../data/appDb'
+import { getSettings } from '../../data/repo'
 import type { PoolWord } from '../../data/db'
 import { CardState } from '../../srs/scheduler'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
@@ -40,6 +41,17 @@ describe('首頁（s01）', () => {
     expect(screen.getByText('還沒有分級')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: '開始分級測驗' })).toBeInTheDocument()
     expect(screen.getByTestId('screen-home')).toHaveAttribute('data-state', 'first')
+  })
+
+  it('跳過分級：寫入級距 A1、前往 A1 課程地圖；之後不再是第一次開啟', async () => {
+    render(<HomeScreen />)
+    fireEvent.click(await screen.findByRole('button', { name: '跳過，從 A1 開始' }))
+    await waitFor(async () => expect((await getSettings(db)).cefrLevel).toBe('A1'))
+    expect(location.pathname + location.search).toBe('/course?level=A1')
+    await waitFor(() =>
+      expect(screen.getByTestId('screen-home')).toHaveAttribute('data-state', 'default'),
+    )
+    expect(screen.getByText('A1｜約多益 60+')).toBeInTheDocument()
   })
 
   it('預設：到期 24、下一課為 B1 基礎常用字第 2 課', async () => {

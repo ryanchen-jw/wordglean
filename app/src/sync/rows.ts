@@ -1,4 +1,5 @@
 // 雲端列 ↔ 本機資料的欄位換算；對照表見 supabase/CLAUDE.md（本機 UTC epoch ms ↔ 雲端 timestamptz）
+import type { Level } from '../curriculum/curriculum'
 import type { CourseProgress, PoolWord, ReviewLogRow, Settings, SpeechCorrection } from '../data/db'
 import { createScheduler, type CardState, type Grade } from '../srs/scheduler'
 
@@ -12,14 +13,17 @@ export interface SettingsRow {
   daily_new_limit: number
   pause_multiplier: number
   desired_retention: number
+  cefr_level: Level | null
   updated_at: string
 }
 
+// TASK-17 前寫入的本機列沒有 cefrLevel，推上去當 null
 export const settingsToRow = (s: Settings, userId: string): SettingsRow => ({
   user_id: userId,
   daily_new_limit: s.dailyNewLimit,
   pause_multiplier: s.pauseMultiplier,
   desired_retention: s.desiredRetention,
+  cefr_level: s.cefrLevel ?? null,
   updated_at: iso(s.updatedAt),
 })
 
@@ -28,6 +32,7 @@ export const settingsFromRow = (r: SettingsRow): Settings => ({
   dailyNewLimit: r.daily_new_limit,
   pauseMultiplier: r.pause_multiplier,
   desiredRetention: r.desired_retention,
+  cefrLevel: r.cefr_level,
   updatedAt: ms(r.updated_at),
 })
 

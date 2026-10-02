@@ -192,11 +192,29 @@ describe('今日新字額度：跨時區換日（AC#2）', () => {
     }
   })
 
-  it('預設設定：每日 10 字、暫停倍數 10', async () => {
+  it('預設設定：每日 10 字、暫停倍數 10、未分級', async () => {
     expect(await getSettings(db)).toMatchObject({
       dailyNewLimit: 10,
       pauseMultiplier: 10,
       desiredRetention: 0.9,
+      cefrLevel: null,
+    })
+  })
+
+  it('TASK-17 前存的設定列沒有 cefrLevel：讀出為 null（Dexie 不升版）；寫入級距後讀回', async () => {
+    await db.settings.put({
+      id: 'local',
+      dailyNewLimit: 20,
+      pauseMultiplier: 10,
+      desiredRetention: 0.9,
+      updatedAt: 1,
+    } as never)
+    expect(await getSettings(db)).toMatchObject({ dailyNewLimit: 20, cefrLevel: null })
+    await saveSettings(db, { cefrLevel: 'B2' }, 2)
+    expect(await getSettings(db)).toMatchObject({
+      dailyNewLimit: 20,
+      cefrLevel: 'B2',
+      updatedAt: 2,
     })
   })
 

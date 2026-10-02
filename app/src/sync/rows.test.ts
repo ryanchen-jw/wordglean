@@ -27,6 +27,7 @@ describe('雲端列 ↔ 本機資料', () => {
       dailyNewLimit: 15,
       pauseMultiplier: 8,
       desiredRetention: 0.85,
+      cefrLevel: 'B1' as const,
       updatedAt: MS,
     }
     const row = {
@@ -34,10 +35,32 @@ describe('雲端列 ↔ 本機資料', () => {
       daily_new_limit: 15,
       pause_multiplier: 8,
       desired_retention: 0.85,
+      cefr_level: 'B1' as const,
       updated_at: ISO,
     }
     expect(settingsToRow(local, U)).toEqual(row)
     expect(settingsFromRow({ ...row, updated_at: PG })).toEqual(local)
+  })
+
+  it('設定：未分級＝null；TASK-17 前寫入的本機列沒有 cefrLevel 也推 null', () => {
+    const old = {
+      id: 'local' as const,
+      dailyNewLimit: 10,
+      pauseMultiplier: 10,
+      desiredRetention: 0.9,
+      updatedAt: MS,
+    }
+    expect(settingsToRow(old as never, U).cefr_level).toBeNull()
+    expect(
+      settingsFromRow({
+        user_id: U,
+        daily_new_limit: 10,
+        pause_multiplier: 10,
+        desired_retention: 0.9,
+        cefr_level: null,
+        updated_at: PG,
+      }).cefrLevel,
+    ).toBeNull()
   })
 
   const word = {
