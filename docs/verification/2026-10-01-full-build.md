@@ -168,3 +168,10 @@
 - **驗收**：PASS——全表比對 0 不一致、腳本重跑產出相同、check-zh 314 條 0 錯、守衛三突變紅。
 - **證據**：`docs/verification/2026-10-02-task4-copy-evidence/`
 - **重跑**：`cd scripts && npm test && node check-zh.mjs ../app/src/i18n/zh-TW.json`
+
+## TASK-18 · 每日動線與課程流程——先複習再新課、完成小課入池
+
+- **改了什麼**：app/src/today（組裝器：到期依 due＋一輪上限、每日新字與暫停門檻、下一課 cefrLevel→最後完成級距→A1）、app/src/review（/review 單獨複習／今日動線／練習不寫排程、收藏字四選一卡）、lesson/capabilities.ts＋assemble.ts（題型穿插與能力替代）、結算後同步（共用 session 單例＋requestSync）。課程地圖照設計不鎖課。
+- **驗收**：PASS——AC#1 四情境字面值、AC#2 14 天模擬（112 字、到期 0–21）、AC#3 today.spec 推一天流程、AC#4 三能力不可用完成一課；e2e:sync 14（settle-sync 反證 25 筆未送紅）；四守衛紅證；走查兩引擎無 P0/P1。
+- **證據**：`docs/verification/2026-10-02-task18-daily-flow-evidence/`
+- **重跑**：`cd app && npm test && E2E_PORT=5372 npx playwright test --workers=1`
