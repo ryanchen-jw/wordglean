@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "c1-u23-l01",
+  "level": "C1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T21:39:55Z",
+  "properNouns": [
+    "Tom",
+    "Torvan"
+  ],
+  "items": [
+    {
+      "id": "c1-u23-l01-q01",
+      "type": "wordCard",
+      "word": "oversee",
+      "exampleEn": "A senior manager will oversee the move to the new office.",
+      "exampleZh": "一位資深經理會負責監督搬到新辦公室的事。",
+      "glossZh": "監督；管理",
+      "distractorsZh": [
+        "延後；推遲",
+        "反對；拒絕",
+        "參與；加入"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q02",
+      "type": "wordCard",
+      "word": "organizational",
+      "exampleEn": "She has excellent organizational skills and never misses a deadline.",
+      "exampleZh": "她的組織能力很強，從不錯過截止期限。",
+      "glossZh": "組織的；組織上的",
+      "distractorsZh": [
+        "溝通的；交流的",
+        "技術的；技術上的",
+        "財務的；金錢上的"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q03",
+      "type": "wordCard",
+      "word": "advisory",
+      "exampleEn": "He joined the company's advisory board last year.",
+      "exampleZh": "他去年加入了公司的顧問委員會。",
+      "glossZh": "顧問的；諮詢的",
+      "distractorsZh": [
+        "管理的；行政的",
+        "銷售的；業務的",
+        "財務的；會計的"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q04",
+      "type": "wordCard",
+      "word": "consultation",
+      "exampleEn": "The lawyer offers a free first consultation to new clients.",
+      "exampleZh": "這位律師為新客戶提供第一次免費諮詢。",
+      "glossZh": "諮詢；商議",
+      "distractorsZh": [
+        "爭吵；爭執",
+        "聚餐；聚會",
+        "面試；考核"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q05",
+      "type": "wordCard",
+      "word": "liaison",
+      "exampleEn": "The company hired a liaison to work with local schools.",
+      "exampleZh": "公司聘了一位聯絡專員，負責和當地學校合作。",
+      "glossZh": "聯絡人；聯絡",
+      "distractorsZh": [
+        "競爭者；對手",
+        "主管；上司",
+        "調查員；調查"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q06",
+      "type": "wordCard",
+      "word": "formality",
+      "exampleEn": "Signing this form is just a formality.",
+      "exampleZh": "簽這張表格只是個形式而已。",
+      "glossZh": "例行手續、形式；拘謹",
+      "distractorsZh": [
+        "重要關鍵、核心；認真",
+        "法律責任、義務；嚴格",
+        "特別待遇、優惠；熱情"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q07",
+      "type": "wordCard",
+      "word": "consultancy",
+      "exampleEn": "She left the bank to start her own consultancy.",
+      "exampleZh": "她離開銀行，開了自己的顧問公司。",
+      "glossZh": "顧問公司；諮詢服務",
+      "distractorsZh": [
+        "會計事務所；記帳",
+        "廣告公司；宣傳",
+        "補習班；教學"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q08",
+      "type": "listenType",
+      "sentenceEn": "Who will oversee the project while Tom is away?",
+      "sentenceZh": "Tom 不在的時候，誰來負責監督這個專案？"
+    },
+    {
+      "id": "c1-u23-l01-q09",
+      "type": "listenChoice",
+      "audioEn": "After a few formalities at the front desk, we went up to our room.",
+      "audioZh": "在櫃台辦完幾項手續後，我們就上樓回房間了。",
+      "questionZh": "他們在櫃台做了什麼？",
+      "options": [
+        "Paid for dinner",
+        "Talked with the hotel manager",
+        "Filled in some forms",
+        "Asked for maps"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c1-u23-l01-q10",
+      "type": "shadowing",
+      "sentenceEn": "Our office needs a liaison with the city government.",
+      "sentenceZh": "我們辦公室需要一位負責和市政府聯絡的人。"
+    },
+    {
+      "id": "c1-u23-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "The consultancy helps small shops sell online.",
+      "sentenceZh": "這家顧問公司協助小商店在網路上銷售。"
+    },
+    {
+      "id": "c1-u23-l01-q12",
+      "type": "mcq",
+      "stemEn": "The ____ committee gives advice but does not make final decisions.",
+      "stemZh": "諮詢委員會提供建議，但不做最後的決定。",
+      "options": [
+        "integral",
+        "advisory",
+        "symptomatic",
+        "revealing"
+      ],
+      "optionGlossZh": [
+        "不可或缺的",
+        "諮詢的",
+        "表明問題的",
+        "透露真相的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c1-u23-l01-q13",
+      "type": "mcq",
+      "stemEn": "She had a ____ with a tax expert before opening her shop.",
+      "stemZh": "開店之前，她找了稅務專家諮詢。",
+      "options": [
+        "cavity",
+        "consultation",
+        "verdict",
+        "organizational"
+      ],
+      "optionGlossZh": [
+        "空洞",
+        "諮詢",
+        "判決",
+        "組織的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c1-u23-l01-q14",
+      "type": "reading",
+      "passageEn": "Last year, Torvan, a small design company, hired a consultancy to fix its organizational problems. After several consultations with staff, the consultants found that nobody knew who should oversee each project. Weekly meetings were full of formality but produced very few real decisions. Their advice was simple: create a small advisory group of senior designers and choose one trusted person to act as a liaison between designers and clients. Six months later, projects were finishing on time again, staff said the office felt more relaxed, and clients were happier too.",
+      "passageZh": "去年，小型設計公司 Torvan 聘請了一家顧問公司，來解決組織上的問題。和員工進行了幾次諮詢後，顧問們發現，沒有人知道每個專案該由誰來監督。每週的會議充滿了繁文縟節，卻很少做出真正的決定。他們的建議很簡單：由資深設計師組成一個小型諮詢小組，並選一位可靠的人擔任設計師與客戶之間的聯絡人。六個月後，專案又都能準時完成，員工說辦公室的氣氛輕鬆多了，客戶也更滿意了。",
+      "questions": [
+        {
+          "questionZh": "顧問們發現了什麼問題？",
+          "options": [
+            "客戶都付款太慢",
+            "公司的設計師人數太少，忙不過來",
+            "辦公室空間太小",
+            "沒人知道該由誰監督專案"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "顧問建議公司怎麼做？",
+          "options": [
+            "成立諮詢小組並指定聯絡人",
+            "搬到更大、更舒服的新辦公室去",
+            "多聘請幾位年輕又有經驗的設計師",
+            "取消所有的會議，改用電子郵件溝通"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q15",
+      "type": "translate",
+      "promptZh": "她負責監督新進員工的訓練。",
+      "hintWords": [
+        "oversee"
+      ],
+      "referenceEn": [
+        "She oversees the training of new staff.",
+        "She is responsible for overseeing the training of new employees."
+      ],
+      "rubricZh": [
+        "oversee 是及物動詞，表示「監督、管理」（例如 oversee the training 等）",
+        "「新進員工」可寫，例如 new staff、new employees 等",
+        "「負責」可直接用 oversee，也可寫，例如 be responsible for、be in charge of 等"
+      ]
+    },
+    {
+      "id": "c1-u23-l01-q16",
+      "type": "makeSentence",
+      "targetWord": "liaison",
+      "instructionZh": "用 liaison 造一個句子，說說你在學校或工作中當過的聯絡角色。",
+      "referenceEn": [
+        "Last year, I was the liaison between my class and the teachers.",
+        "In my club, I act as a liaison with the student council."
+      ],
+      "rubricZh": [
+        "liaison 是名詞，表示「聯絡人、聯絡」（例如 act as a liaison、the liaison between A and B 等）",
+        "句子要說到你自己的經驗"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:45:00Z",
+    "verdicts": {
+      "c1-u23-l01-q09": [
+        2
+      ],
+      "c1-u23-l01-q12": [
+        1
+      ],
+      "c1-u23-l01-q13": [
+        1
+      ],
+      "c1-u23-l01-q14#0": [
+        3
+      ],
+      "c1-u23-l01-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：公司名 \"Green Leaf\" 由兩個英文單字組成（green、leaf），違反「名字剛好是英文單字的換掉」（§11-10，✗ Mr. Green）；學習者可能把它當一般字讀。建議改用非單字的專名。",
+        "resolution": "公司名 Green Leaf 改成非一般單字的 Torvan，中譯保留英文",
+        "resolvedAt": "2026-10-02T21:39:55Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：疑似：\"You need a consultation with a tax expert before you open the business.\" 是對讀者的稅務／開業建議，接近 §11-21「不寫理財建議」的界線；建議改成中性事實句（例如 She had a consultation with a tax expert before opening her shop.）。",
+        "resolution": "改成不帶建議的事實句 She had a ____ with a tax expert before opening her shop.",
+        "resolvedAt": "2026-10-02T21:39:55Z"
+      },
+      {
+        "path": "items/8/audioEn",
+        "message": "執行長第②③關裁示修正：第③關 B 疑似 4：formality 卡與聽選都是「X is just a formality」句型",
+        "resolution": "聽選改 After a few formalities at the front desk, we went up to our room.，題目與選項重寫",
+        "resolvedAt": "2026-10-02T21:39:55Z"
+      },
+      {
+        "path": "items/7/sentenceZh",
+        "message": "執行長裁示：中文欄人名一律保留英文名，不音譯",
+        "resolution": "「湯姆」改「Tom」",
+        "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14/rubricZh",
+        "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
+        "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：oversee 是及物動詞，表示「監督、管理」（例如 oversee the training 等）／「新進員工」可寫，例如 new staff、new employees 等／「負責」可直接用 oversee，也可寫，例如 be responsible for、be in charge of 等",
+        "resolvedAt": "2026-10-02T21:45:49Z"
+      }
+    ]
+  }
+}
