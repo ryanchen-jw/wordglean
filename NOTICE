@@ -41,9 +41,23 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
   使用範圍：data/dict/（音標、釋義、詞形對照）與 lexicon 的 freqRank、glossZh
   修改：中文釋義經 OpenCC s2twp 轉台灣正體（少數誤轉詞以 data/scripts/zh_fixups.tsv 修正）並截斷；丟棄 oxford、collins、tag 等欄；未使用 lemma.en.txt
 
+== 移植的程式碼 ==
+
+- LibreLingo answer-corrector（AGPL-3.0-or-later），Copyright LibreLingo contributors
+  來源：https://github.com/kantord/LibreLingo apps/answer-corrector/src/index.ts（commit 0dc960e 的父 commit，含原始測試）；
+        延續版 https://codeberg.org/LibreLingoRelive/LibreLingoRelive 同路徑（commit 451f9a0）邏輯相同
+  使用範圍：app/src/lesson/answer/corrector.ts（原樣移植成 TypeScript；等價測試 corrector.test.ts 逐字取自原始測試）
+  修改：Levenshtein 改用自寫的 app/src/lesson/answer/levenshtein.ts（原用 js-levenshtein／leven）；排版
+
 == 建置工具與執行期元件 ==
 
 - OpenCC（Apache-2.0）：https://github.com/BYVoid/OpenCC — 使用範圍：建置時（data/scripts/）以 PyPI opencc 1.4.2 的 s2twp 轉換 ECDICT 釋義，不隨 app 散布；授權全文見 data/licenses/OpenCC-Apache-2.0.txt
 - Dexie.js（Apache-2.0）：https://github.com/dexie/Dexie.js — 使用範圍：本機 IndexedDB 資料層（app/src/data/）
   NOTICE 原文：Copyright (c) 2014-2017 David Fahlander. Licensed under the Apache License, Version 2.0.
+- 高音質發音（Kokoro 選配，TASK-13；只在使用者選用並下載後於瀏覽器 Worker 執行，app/src/speech/kokoro.worker.ts）：
+  - kokoro-js 1.2.1（Apache-2.0）：https://github.com/hexgrad/kokoro（kokoro.js）
+  - @huggingface/transformers 3.8.1（Apache-2.0）：https://github.com/huggingface/transformers.js；內含 onnxruntime-web（MIT）的 wasm，隨 app 從本站提供（與 TASK-14 共用同一份）
+  - phonemizer 1.2.1（npm 標 Apache-2.0）：https://github.com/xenova/phonemizer.js——內含編譯成 WebAssembly 的 eSpeak NG
+  - eSpeak NG（GPL-3.0-or-later）：https://github.com/espeak-ng/espeak-ng——經 phonemizer 隨程式散布；GPL-3.0 與本專案 AGPL-3.0 相容（AGPL-3.0 第 13 條）
+  - 模型 Kokoro-82M（Apache-2.0）：https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX——不隨程式散布，使用者下載時直接取自 Hugging Face
 - 其餘 npm 相依套件的授權見 app/package-lock.json 與各套件自身的授權檔

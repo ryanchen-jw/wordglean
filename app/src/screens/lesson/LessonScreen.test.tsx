@@ -185,6 +185,36 @@ describe('小課畫面（AC#2 單元層）', () => {
     )
     expect(await count(1)).toBeInTheDocument()
   })
+
+  it('能播音（TASK-13）：聽類兩題進佇列，跟讀換成聽音打字（語音辨識未接上），穿插在第 9 題聽音打字、第 11 題聽音選答，一課 16 步', async () => {
+    render(
+      <LessonScreen
+        lessonId={LESSON}
+        loadItems={loadItems}
+        capabilities={{ tts: true, stt: false, llmKey: false }}
+      />,
+    )
+    expect(await screen.findByText('1／16')).toBeInTheDocument()
+    const glosses = doc.items.flatMap((it) => (it.type === 'wordCard' ? [it.glossZh] : []))
+    for (const [i, gloss] of glosses.entries()) {
+      await screen.findByText(`${i + 1}／16`)
+      fireEvent.click(option(gloss))
+      await screen.findByRole('status')
+      cont()
+    }
+    expect(await screen.findByText('9／16')).toBeInTheDocument()
+    expect(screen.getByText('聽音打字')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: '聽不出來' }))
+    cont()
+    expect(await screen.findByText('10／16')).toBeInTheDocument()
+    expect(screen.getByText('選出最適合的字')).toBeInTheDocument()
+    fireEvent.click(option('of'))
+    fireEvent.click(screen.getByRole('button', { name: '檢查' }))
+    await screen.findByRole('status')
+    cont()
+    expect(await screen.findByText('11／16')).toBeInTheDocument()
+    expect(screen.getByText('聽音選答')).toBeInTheDocument()
+  })
 })
 
 describe('離開與接續（s12）', () => {

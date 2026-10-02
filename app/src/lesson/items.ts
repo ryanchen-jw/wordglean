@@ -48,13 +48,33 @@ export interface ReadingItem {
   questions: ReadingQuestion[]
 }
 
-/** 本卡尚未支援的題型（聽說寫，TASK-13～15）：引擎只看 id 與 type */
-export interface OtherItem {
+/** 聽音打字：播放 sentenceEn，使用者打出來（設計 s03） */
+export interface ListenTypeItem {
   id: string
-  type: Exclude<ItemType, 'wordCard' | 'mcq' | 'reading'>
+  type: 'listenType'
+  sentenceEn: string
+  sentenceZh: string
 }
 
-export type LessonItem = WordCardItem | McqItem | ReadingItem | OtherItem
+/** 聽音選答：播放 audioEn，繁中提問、英文選項（設計 s03） */
+export interface ListenChoiceItem {
+  id: string
+  type: 'listenChoice'
+  audioEn: string
+  audioZh: string
+  questionZh: string
+  options: string[]
+  answer: number
+}
+
+/** 尚未支援的題型（說寫，TASK-14～15）：引擎只看 id 與 type */
+export interface OtherItem {
+  id: string
+  type: Exclude<ItemType, 'wordCard' | 'mcq' | 'reading' | 'listenType' | 'listenChoice'>
+}
+
+export type LessonItem =
+  WordCardItem | McqItem | ReadingItem | ListenTypeItem | ListenChoiceItem | OtherItem
 
 export interface LessonItemsDoc {
   schemaVersion: 1

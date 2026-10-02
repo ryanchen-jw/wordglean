@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { WordCardItem } from '../../lesson/items'
-import { canSpeak, speak } from '../../lesson/speak'
+import { speak, ttsAvailable } from '../../speech/speak'
 import { iconBtnCls } from '../../shell/Screen'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
@@ -39,7 +39,8 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
             disabled={answered ? undefined : 'all'}
             className="font-en text-display font-semibold break-words"
           />
-          {canSpeak() && (
+          {/* 手機不能播音（沒有內建聲音、也沒用高音質）時不顯示發音鈕（TASK-18 能力偵測） */}
+          {ttsAvailable() && (
             <button
               type="button"
               className={`${iconBtnCls} text-primary`}

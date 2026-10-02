@@ -1,6 +1,7 @@
-// 設定（設計 s11 預設）＋清除資料確認（s13）；AI 批改為佔位（TASK-15），帳號區為 TASK-20 掛點
+// 設定（設計 s11 預設）＋清除資料確認（s13）；AI 批改為佔位（TASK-15），帳號區為 TASK-20 掛點；
+// 語音區：發音選擇與高音質發音下載（TASK-13），語音辨識下載為 TASK-14 掛點
 import { ChevronRight, FileDown, KeyRound, Lock, Trash2 } from 'lucide-react'
-import { createContext, useContext, useState, type ReactNode } from 'react'
+import { createContext, useContext, useState, useSyncExternalStore, type ReactNode } from 'react'
 import { currentLevel } from '../../curriculum/curriculum'
 import { LevelSheet } from '../../curriculum/LevelSheet'
 import { levelLabel } from '../../curriculum/levelLabel'
@@ -14,7 +15,10 @@ import { t, type MessageKey } from '../../i18n/t'
 import { navigate } from '../../router'
 import { clearPrefs, usePrefs, type Prefs } from '../../shell/prefs'
 import { SubScreen } from '../../shell/Screen'
+import { hqVoice } from '../../speech/speak'
+import type { VoiceChoice } from '../../speech/hqVoice'
 import { Button } from '../../ui/Button'
+import { ConfirmDialog } from '../../ui/ConfirmDialog'
 import { OptionSheet } from '../../ui/OptionSheet'
 import { AccountSection } from './AccountSection'
 import { ClearDataDialog } from './ClearDataDialog'
@@ -32,7 +36,7 @@ const TEXT_SIZES: { value: Prefs['textSize']; label: MessageKey }[] = [
   { value: 'xl', label: 'settings.appearance.textSizeXl' },
 ]
 
-type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | null
+type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | 'voice' | null
 
 const rowCls =
   'flex min-h-13 w-full items-center justify-between gap-3 border border-t-0 border-line bg-surface px-4 text-left first:rounded-t-2xl first:border-t last:rounded-b-2xl'
@@ -84,17 +88,27 @@ function Row({
   )
 }
 
-function ModelRow({ id, name, note }: { id: DownloadId; name: string; note: string }) {
+function ModelRow({
+  id,
+  name,
+  note,
+  onStart,
+  onRetry,
+}: {
+  id: DownloadId
+  name: string
+  note: string
+  onStart: () => void
+  onRetry: () => void
+}) {
   const status = useDownloadStatus(id)
-  // 真下載由 TASK-13／14 接上；骨架階段導到「尚未開放」
-  const start = () => navigate('/models')
   return (
     <div className={rowCls}>
       <span className="grid min-w-0 leading-[1.35]">
         {name}
         <span className="text-caption text-muted">{note}</span>
       </span>
-      <DownloadProgress status={status} label={name} onStart={start} onRetry={start} />
+      <DownloadProgress status={status} label={name} onStart={onStart} onRetry={onRetry} />
     </div>
   )
 }
@@ -117,7 +131,17 @@ export function SettingsScreen() {
   const [prefs, setPref] = usePrefs()
   const [sheet, setSheet] = useState<Sheet>(null)
   const [confirming, setConfirming] = useState(false)
+  // 高音質發音（TASK-13 D5）：下載前告知檔案大小；未下載時選它＝導向下載
+  const [confirmHq, setConfirmHq] = useState(false)
+  const voice = useSyncExternalStore(hqVoice.subscribe, hqVoice.choice)
+  const hqStatus = useDownloadStatus('tts-hq')
   const close = () => setSheet(null)
+  const pickVoice = (v: VoiceChoice) => {
+    if (v === 'hq' && hqStatus.kind !== 'downloaded') setConfirmHq(true)
+    else hqVoice.setChoice(v)
+  }
+  // 骨架：語音辨識的真下載由 TASK-14 接上，先導到「尚未開放」
+  const sttStart = () => navigate('/models')
 
   const exportNow = async () => {
     const nowMs = Date.now()
@@ -192,15 +216,23 @@ export function SettingsScreen() {
           <Group title={t('settings.voice.title')}>
             <Row
               label={t('settings.voice.tts')}
-              value={t('settings.voice.ttsValue')}
-              onClick={() => navigate('/models')}
+              value={t(voice === 'hq' ? 'settings.voice.ttsHqValue' : 'settings.voice.ttsValue')}
+              onClick={() => setSheet('voice')}
             />
             <ModelRow
               id="tts-hq"
               name={t('settings.voice.ttsHq')}
               note={t('settings.voice.ttsHqNote')}
+              onStart={() => setConfirmHq(true)}
+              onRetry={() => hqVoice.startDownload()}
             />
-            <ModelRow id="stt" name={t('settings.voice.stt')} note={t('settings.voice.sttNote')} />
+            <ModelRow
+              id="stt"
+              name={t('settings.voice.stt')}
+              note={t('settings.voice.sttNote')}
+              onStart={sttStart}
+              onRetry={sttStart}
+            />
           </Group>
 
           <Group title={t('settings.data.title')}>
@@ -262,6 +294,33 @@ export function SettingsScreen() {
           selected={prefs.textSize}
           onSelect={(v) => setPref('textSize', v)}
           onClose={close}
+        />
+      )}
+      {sheet === 'voice' && (
+        <OptionSheet<VoiceChoice>
+          label={t('settings.voice.tts')}
+          options={[
+            { value: 'system', label: t('settings.voice.ttsValue') },
+            ...(hqStatus.kind === 'unsupported'
+              ? []
+              : [{ value: 'hq' as const, label: t('settings.voice.ttsHq') }]),
+          ]}
+          selected={voice}
+          onSelect={pickVoice}
+          onClose={close}
+        />
+      )}
+      {confirmHq && (
+        <ConfirmDialog
+          title={t('download.hq.confirmTitle')}
+          body={t('download.hq.confirmBody')}
+          safeLabel={t('common.text.later')}
+          riskLabel={t('download.action.start')}
+          onSafe={() => setConfirmHq(false)}
+          onRisk={() => {
+            setConfirmHq(false)
+            hqVoice.startDownload()
+          }}
         />
       )}
       {confirming && <ClearDataDialog onCancel={() => setConfirming(false)} onConfirm={clearNow} />}

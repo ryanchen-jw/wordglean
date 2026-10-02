@@ -1,8 +1,10 @@
-// 題型登記表與題目佇列：題目檔 → 作答步驟；未登記的題型（聽說寫，TASK-13～15）或欄位不全的題目略過並回報
+// 題型登記表與題目佇列：題目檔 → 作答步驟；未登記的題型（說寫，TASK-14～15）或欄位不全的題目略過並回報
 import type {
   ItemType,
   LessonItem,
   LessonItemsDoc,
+  ListenChoiceItem,
+  ListenTypeItem,
   McqItem,
   ReadingItem,
   WordCardItem,
@@ -125,6 +127,33 @@ export const readingType = defineItemType<ReadingItem>({
 
 /** 讀類三題型（TASK-12）；聽說寫由 TASK-13～15 登記 */
 export const READ_TYPES: readonly ItemTypeDef[] = [wordCardType, mcqType, readingType]
+
+export const listenTypeType = defineItemType<ListenTypeItem>({
+  type: 'listenType',
+  isValid: (it) => nonEmpty(it.sentenceEn),
+  toSteps: (it) => [{ key: it.id, itemId: it.id, type: 'listenType', srsWord: null }],
+})
+
+export const listenChoiceType = defineItemType<ListenChoiceItem>({
+  type: 'listenChoice',
+  isValid: (it) =>
+    nonEmpty(it.audioEn) &&
+    Array.isArray(it.options) &&
+    it.options.length >= 2 &&
+    validAnswer(it.options, it.answer),
+  toSteps: (it) => [
+    {
+      key: it.id,
+      itemId: it.id,
+      type: 'listenChoice',
+      srsWord: null,
+      choice: { options: it.options, answer: it.answer },
+    },
+  ],
+})
+
+/** 聽類兩題型（TASK-13）；只計分、不寫 FSRS（TASK-12 D2） */
+export const LISTEN_TYPES: readonly ItemTypeDef[] = [listenTypeType, listenChoiceType]
 
 /** 依題目檔順序產生作答步驟；穿插排序屬 TASK-18 */
 export function buildQueue(

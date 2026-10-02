@@ -1,10 +1,12 @@
 // TASK-12 AC#3 視覺 smoke（harness 06）：讀類三題型的出題／答對／答錯、例句提示、閱讀翻譯、離開確認 s12、完成頁 s14。
 // 每個狀態截圖 attach＋具名檔存 test-results/（gitignored），斷言 06 三件套＋英文介面字串＋body 色；
 // 另在 320 標準／320 特大／375 特大下量溢出、折行與卡片內子元素溢出（比照 narrow.spec）。
-// 資料：樣本課 fixture（A1 一課 12 步）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
+// TASK-13：s03 聽音打字（作答中／內建聲音＋第一次提示／答錯／聽不出來）、聽音選答（答對／答錯）。
+// 資料：樣本課 fixture（A1 一課 16 步：第 9、13、16 題聽音打字（後兩題由跟讀替代）、第 11 題聽音選答）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
-import { answer, LESSON, next, playTo } from './lesson.js'
+import { answer, count, LESSON, next, playTo } from './lesson.js'
+import { fakeSystemVoice, fakeWebGpu } from './speech.js'
 import { measureMobile, overflowingChildren } from './measure.js'
 
 async function check(page: Page, info: TestInfo, name: string, strict = true) {
@@ -28,6 +30,10 @@ async function check(page: Page, info: TestInfo, name: string, strict = true) {
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('lg.installDismissed', '1'))
+  // 聽類題要能播音才出（TASK-18 能力偵測）；Playwright WebKit（Windows）沒有 speechSynthesis，一律用替身
+  await fakeSystemVoice(page)
+  // 首次提示「到設定開啟高音質」只在支援 WebGPU 的手機出現（headless chromium 沒有）
+  await fakeWebGpu(page)
 })
 
 test('s07 單字卡：出題／例句提示／答對／答錯', async ({ page }, info) => {
@@ -71,21 +77,92 @@ for (const theme of ['light', 'dark'] as const) {
   })
 }
 
+// 走查 P1 守衛（TASK-12／16／17 都踩過 bg-surface 蓋掉狀態色）：s03 錯字標示、回饋條、提示條、播放鈕、聽音選答選項
+// 的實際 computed 色＝對應 token，兩色系都驗
+for (const theme of ['light', 'dark'] as const) {
+  test(`s03 狀態色＝token（${theme}）`, async ({ page }) => {
+    await page.addInitScript((th) => localStorage.setItem('lg.theme', th), theme)
+    await page.goto(`/lesson/${LESSON}`)
+    await playTo(page, 9)
+    const style = (sel: string, prop: 'backgroundColor' | 'color') =>
+      page
+        .locator(sel)
+        .first()
+        .evaluate((el, p) => getComputedStyle(el)[p], prop)
+    const token = (name: string, prop: 'background' | 'color' = 'background') =>
+      page.evaluate(
+        ([n, p]) => {
+          const probe = document.createElement('div')
+          probe.style[p] = `var(${n})`
+          document.body.append(probe)
+          const cs = getComputedStyle(probe)
+          const c = p === 'color' ? cs.color : cs.backgroundColor
+          probe.remove()
+          return c
+        },
+        [name, prop] as const,
+      )
+
+    expect(await style('[data-testid="hq-voice-hint"]', 'backgroundColor')).toBe(
+      await token('--lg-hint-bg'),
+    )
+    expect(await style('[data-testid="hq-voice-hint"]', 'color')).toBe(
+      await token('--lg-hint', 'color'),
+    )
+    expect(await style('button[aria-label="播放"]', 'backgroundColor')).toBe(
+      await token('--lg-primary-soft'),
+    )
+
+    await page.getByRole('textbox').fill('The book is on a bag')
+    await page.getByRole('button', { name: '檢查' }).click()
+    expect(await style('[data-testid="listen-typed"] mark', 'backgroundColor')).toBe(
+      await token('--lg-error-bg'),
+    )
+    expect(await style('[data-testid="listen-typed"] mark', 'color')).toBe(
+      await token('--lg-error', 'color'),
+    )
+    expect(await style('[data-testid="listen-typed"]', 'backgroundColor')).toBe(
+      await token('--lg-surface'),
+    )
+    expect(await style('[data-feedback="no"]', 'backgroundColor')).toBe(
+      await token('--lg-error-bg'),
+    )
+
+    // 穿插：第 10 題是選擇題，第 11 題才是聽音選答（TASK-18）
+    await next(page)
+    await answer(page, 10)
+    await next(page)
+    await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
+    await page.getByRole('button', { name: '檢查' }).click()
+    expect(await style('[data-choice="correct"]', 'backgroundColor')).toBe(
+      await token('--lg-correct-bg'),
+    )
+    expect(await style('[data-choice="wrong"]', 'backgroundColor')).toBe(
+      await token('--lg-error-bg'),
+    )
+    // 兩色系的 token 不同，避免「兩邊都是同一個顏色」的假綠
+    expect(await token('--lg-error-bg')).not.toBe(await token('--lg-surface'))
+    expect(await token('--lg-hint-bg')).not.toBe(await token('--lg-surface'))
+  })
+}
+
 test('s05 選擇題：已選未檢查／答錯／答對', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 10)
   await page.getByRole('radio', { name: 'in', exact: true }).click()
   await check(page, info, 's05-mc-selected')
   await page.getByRole('button', { name: '檢查' }).click()
   await check(page, info, 's05-mc-wrong')
   await next(page)
-  await answer(page, 10)
+  await answer(page, 11)
+  await next(page)
+  await answer(page, 12)
   await check(page, info, 's05-mc-right')
 })
 
 test('s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 11)
+  await playTo(page, 14)
   await page.getByRole('radio', { name: '兩個', exact: true }).click()
   await check(page, info, 's05-reading')
   await page.getByRole('button', { name: '看中文翻譯' }).click()
@@ -99,10 +176,45 @@ test('s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認
   await check(page, info, 's05-reading-wrong')
 })
 
+test('s03 聽音打字：內建聲音＋第一次提示／作答中／答錯；第二次不再提示', async ({ page }, info) => {
+  await page.goto(`/lesson/${LESSON}`)
+  await playTo(page, 9)
+  await expect(page.getByTestId('hq-voice-hint')).toBeVisible()
+  await check(page, info, 's03-voice')
+  await page.getByRole('textbox').fill('The book is on a bag')
+  await check(page, info, 's03-type')
+  await page.getByRole('button', { name: '檢查' }).click()
+  await expect(page.getByRole('status')).toContainText('差一點：on → in、a → the')
+  await check(page, info, 's03-wrong')
+})
+
+test('s03 聽不出來；聽音選答答對／答錯', async ({ page }, info) => {
+  await page.goto(`/lesson/${LESSON}`)
+  await playTo(page, 9)
+  await page.getByRole('button', { name: '聽不出來' }).click()
+  await check(page, info, 's03-giveup')
+  await next(page)
+  await answer(page, 10)
+  await next(page)
+  await count(page, 11)
+  await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
+  await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
+  await check(page, info, 's03-choice-selected')
+  await page.getByRole('button', { name: '檢查' }).click()
+  await check(page, info, 's03-choice-wrong')
+})
+
+test('s03 聽音選答答對', async ({ page }, info) => {
+  await page.goto(`/lesson/${LESSON}`)
+  await playTo(page, 11)
+  await answer(page, 11)
+  await check(page, info, 's03-choice-right')
+})
+
 test('s14 完成頁', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  for (let n = 1; n <= 12; n++) {
-    await answer(page, n, n === 2 || n === 9)
+  for (let n = 1; n <= 16; n++) {
+    await answer(page, n, n === 2 || n === 10)
     await next(page)
   }
   await expect(page.getByTestId('lesson-done')).toBeVisible()
@@ -116,7 +228,7 @@ const NARROW = [
 ] as const
 
 for (const c of NARROW) {
-  test(`窄螢幕／特大字級 ${c.name}：單字卡答錯、選擇題答錯、閱讀、離開確認、完成頁`, async ({
+  test(`窄螢幕／特大字級 ${c.name}：單字卡答錯、聽題答錯、選擇題答錯、閱讀、離開確認、完成頁`, async ({
     page,
   }, info) => {
     test.setTimeout(90_000)
@@ -134,10 +246,21 @@ for (const c of NARROW) {
       await answer(page, n)
       await next(page)
     }
-    await answer(page, 9, true)
+    await count(page, 9)
+    await check(page, info, `${c.name}-s03-voice`, false)
+    await page.getByRole('textbox').fill('The book is on a bag')
+    await page.getByRole('button', { name: '檢查' }).click()
+    await check(page, info, `${c.name}-s03-wrong`, false)
+    await next(page)
+    await answer(page, 10, true)
     await check(page, info, `${c.name}-s05-mc-wrong`, false)
     await next(page)
-    await answer(page, 10)
+    await answer(page, 11, true)
+    await check(page, info, `${c.name}-s03-choice-wrong`, false)
+    await next(page)
+    await answer(page, 12)
+    await next(page)
+    await answer(page, 13)
     await next(page)
     await page.getByRole('button', { name: '看中文翻譯' }).click()
     await check(page, info, `${c.name}-s05-reading-zh`, false)
@@ -150,7 +273,7 @@ for (const c of NARROW) {
     expect(box.y).toBeGreaterThanOrEqual(0)
     expect(box.y + box.height).toBeLessThanOrEqual(c.height)
     await page.getByRole('button', { name: '繼續上課' }).click()
-    for (let n = 11; n <= 12; n++) {
+    for (let n = 14; n <= 16; n++) {
       await answer(page, n)
       await next(page)
     }

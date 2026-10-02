@@ -6,6 +6,11 @@ import { db } from '../../data/appDb'
 import { getSettings, saveSettings } from '../../data/repo'
 import { SettingsScreen } from './SettingsScreen'
 
+// TASK-13：高音質發音只在有 WebGPU 的手機提供下載；jsdom 沒有 WebGPU，這裡模擬支援的手機（設計 s11 預設畫面）
+vi.hoisted(() => {
+  Object.defineProperty(navigator, 'gpu', { value: { requestAdapter: async () => ({}) } })
+})
+
 beforeEach(async () => {
   history.replaceState(null, '', '/settings')
   localStorage.clear()
@@ -57,7 +62,8 @@ describe('設定（s11）', () => {
 
   it('目前級距：底部彈層列 A1–C1（附多益對照），選 B1 → 寫入設定', async () => {
     render(<SettingsScreen />)
-    fireEvent.click(await screen.findByRole('button', { name: /目前級距/ }))
+    // 等設定讀完（列上出現「還沒有分級」）再點：資料未載入前彈層不開，全套負載下會偶發點空（TASK-13 回報）
+    fireEvent.click(await screen.findByRole('button', { name: /目前級距\s*還沒有分級/ }))
     const sheet = screen.getByRole('dialog', { name: '目前級距' })
     expect(
       within(sheet)

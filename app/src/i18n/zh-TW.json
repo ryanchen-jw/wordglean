@@ -21,6 +21,18 @@
     "lesson.frame.count",
     "lesson.leave.body",
     "lesson.leave.bodyDone",
+    "lesson.listen.almost",
+    "lesson.listen.answerWas",
+    "lesson.listen.choiceTitle",
+    "lesson.listen.giveUp",
+    "lesson.listen.hqFailed",
+    "lesson.listen.hqHint",
+    "lesson.listen.missing",
+    "lesson.listen.placeholder",
+    "lesson.listen.slow",
+    "lesson.listen.systemVoice",
+    "lesson.listen.typePrompt",
+    "lesson.listen.typeTitle",
     "lesson.reading.hideTranslation",
     "lesson.reading.question",
     "lesson.wordCard.hintLabel",
@@ -39,6 +51,7 @@
     "review.error.body",
     "review.frame.count",
     "review.frame.progress",
+    "settings.voice.ttsHqValue",
     "stub.page.backHome",
     "stub.page.body",
     "stub.page.title",
@@ -268,7 +281,8 @@
       "ttsHqNote": "約 310MB・需支援 WebGPU 的手機",
       "stt": "語音辨識模型",
       "sttNote": "跟讀用・約 50–80MB",
-      "hqUnsupported": "這支手機不支援高音質發音"
+      "hqUnsupported": "這支手機不支援高音質發音",
+      "ttsHqValue": "高音質發音"
     },
     "data": {
       "title": "資料",
@@ -433,6 +447,20 @@
     "question": {
       "loadError": "這題載入失敗",
       "loadErrorNext": "換下一題"
+    },
+    "listen": {
+      "typeTitle": "聽音打字",
+      "choiceTitle": "聽音選答",
+      "typePrompt": "聽句子，把聽到的英文打出來",
+      "slow": "慢速播放",
+      "systemVoice": "手機內建聲音",
+      "placeholder": "把聽到的英文打在這裡",
+      "giveUp": "聽不出來",
+      "almost": "差一點：",
+      "missing": "＿＿",
+      "answerWas": "這一句是",
+      "hqHint": "想要更自然的發音，可以到設定開啟「高音質發音」（選配）",
+      "hqFailed": "高音質發音無法使用，已改用手機內建聲音"
     }
   },
   "listen": {

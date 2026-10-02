@@ -1,4 +1,7 @@
-// 模型與字典下載的狀態型別（骨架）：真下載由 TASK-13（高音質發音）、TASK-14（語音辨識）、TASK-16（字典）接上
+// 模型與字典下載的狀態型別：高音質發音（tts-hq）接 TASK-13 的真下載；語音辨識（stt）由 TASK-14 接上
+import { useSyncExternalStore } from 'react'
+import { hqVoice } from '../speech/speak'
+
 export type DownloadId = 'tts-hq' | 'stt'
 
 export type DownloadStatus =
@@ -6,9 +9,13 @@ export type DownloadStatus =
   | { kind: 'downloading'; progress: number } // 0–1
   | { kind: 'downloaded' }
   | { kind: 'failed' }
+  | { kind: 'unsupported' } // 這支手機不能用（高音質發音需要 WebGPU）
 
-/** 目前一律回報未下載；接上真下載後改為讀實際狀態 */
+const NOT_DOWNLOADED: DownloadStatus = { kind: 'notDownloaded' }
+const noSubscribe = () => () => {}
+
 export function useDownloadStatus(id: DownloadId): DownloadStatus {
-  void id
-  return { kind: 'notDownloaded' }
+  return useSyncExternalStore(id === 'tts-hq' ? hqVoice.subscribe : noSubscribe, () =>
+    id === 'tts-hq' ? hqVoice.status() : NOT_DOWNLOADED,
+  )
 }

@@ -10,7 +10,7 @@ import type { LessonItem, LessonItemsDoc } from '../../lesson/items'
 import { loadLessonItems } from '../../lesson/load'
 import { buildLessonQueue } from '../../lesson/assemble'
 import { detectCapabilities, type Capabilities } from '../../lesson/capabilities'
-import { createRegistry, READ_TYPES, type Step } from '../../lesson/queue'
+import { createRegistry, LISTEN_TYPES, READ_TYPES, type Step } from '../../lesson/queue'
 import { currentKey, type LessonRun } from '../../lesson/run'
 import {
   answerStep,
@@ -20,6 +20,7 @@ import {
   type SettleSummary,
 } from '../../lesson/session'
 import { goBack, navigate } from '../../router'
+import { ttsAvailable } from '../../speech/speak'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { ConfirmDialog } from '../../ui/ConfirmDialog'
@@ -27,7 +28,7 @@ import { LessonDone } from './LessonDone'
 import { LessonHeader, LessonMain, lessonFrameCls } from './frame'
 import { QUESTION_VIEWS } from './views'
 
-const registry = createRegistry(READ_TYPES)
+const registry = createRegistry([...READ_TYPES, ...LISTEN_TYPES])
 
 type Props = {
   lessonId: string
@@ -82,7 +83,7 @@ export function LessonScreen({
       const { steps, skipped, changes } = buildLessonQueue(
         doc,
         registry,
-        capabilities ?? detectCapabilities(),
+        capabilities ?? detectCapabilities(ttsAvailable),
       )
       // 能力不足的替代、未支援的題型（聽說寫，TASK-13～15）略過；記錄供除錯
       if (changes.length) console.info('[lesson] 能力替代', changes)

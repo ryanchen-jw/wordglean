@@ -1,7 +1,14 @@
 // @vitest-environment node
 import { describe, expect, it } from 'vitest'
 import type { LessonItemsDoc, WordCardItem } from './items'
-import { buildQueue, createRegistry, defineItemType, READ_TYPES, type Step } from './queue'
+import {
+  buildQueue,
+  createRegistry,
+  defineItemType,
+  LISTEN_TYPES,
+  READ_TYPES,
+  type Step,
+} from './queue'
 import { loadFixture } from './testFixtures'
 
 const readRegistry = createRegistry(READ_TYPES)
@@ -133,6 +140,62 @@ describe('題目佇列（AC#1）', () => {
     it('干擾項不是 3 個', () => {
       const bad = doc({ glossZh: '那個', distractorsZh: ['和', '有'] })
       expect(buildQueue(bad, readRegistry).skipped[0].reason).toBe('invalid')
+    })
+  })
+
+  describe('聽類兩題型（TASK-13）', () => {
+    const listenRegistry = createRegistry([...READ_TYPES, ...LISTEN_TYPES])
+
+    it('A1 樣本課：聽音打字、聽音選答各 1 步，插在單字卡與選擇題之間＝14 步', () => {
+      const { steps, skipped } = buildQueue(loadFixture('a1-u01-l01'), listenRegistry)
+      expect(steps).toHaveLength(14)
+      expect(steps.slice(8, 10)).toEqual([
+        { key: 'a1-u01-l01-q09', itemId: 'a1-u01-l01-q09', type: 'listenType', srsWord: null },
+        {
+          key: 'a1-u01-l01-q10',
+          itemId: 'a1-u01-l01-q10',
+          type: 'listenChoice',
+          srsWord: null,
+          choice: { options: ['A dog and a cat', 'Two dogs', 'A cat and a bird'], answer: 0 },
+        },
+      ])
+      expect(skipped.map((s) => s.type)).toEqual([
+        'shadowing',
+        'shadowing',
+        'translate',
+        'makeSentence',
+      ])
+    })
+
+    it('欄位不全的聽題略過（invalid）', () => {
+      const bad = (item: Record<string, unknown>): LessonItemsDoc => ({
+        schemaVersion: 1,
+        lessonId: 'x',
+        level: 'A1',
+        items: [item as unknown as LessonItemsDoc['items'][number]],
+      })
+      const reasons = [
+        { id: 'a', type: 'listenType', sentenceEn: ' ', sentenceZh: '空' },
+        {
+          id: 'b',
+          type: 'listenChoice',
+          audioEn: 'Hi.',
+          audioZh: '嗨',
+          questionZh: '？',
+          options: ['A', 'B'],
+          answer: 2,
+        },
+        {
+          id: 'c',
+          type: 'listenChoice',
+          audioEn: '',
+          audioZh: '',
+          questionZh: '？',
+          options: ['A', 'B'],
+          answer: 0,
+        },
+      ].map((it) => buildQueue(bad(it), listenRegistry).skipped[0]?.reason)
+      expect(reasons).toEqual(['invalid', 'invalid', 'invalid'])
     })
   })
 
