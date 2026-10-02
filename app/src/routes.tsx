@@ -8,13 +8,15 @@ import { CourseScreen } from './screens/course/CourseScreen'
 import { HomeScreen } from './screens/home/HomeScreen'
 import { LessonScreen } from './screens/lesson/LessonScreen'
 import { ReviewScreen, type ReviewMode } from './screens/review/ReviewScreen'
+import { OpenRouterCallback } from './screens/settings/OpenRouterCallback'
+import { OpenRouterKeyScreen } from './screens/settings/OpenRouterKeyScreen'
 import { PlacementScreen } from './screens/placement/PlacementScreen'
 import { SettingsScreen } from './screens/settings/SettingsScreen'
 import { StubScreen } from './screens/StubScreen'
 import { WordsScreen } from './screens/words/WordsScreen'
 
-// 尚未開放：授權頁（TASK-21）、OpenRouter（TASK-15）、模型下載（TASK-13／14）
-const STUB_PATHS = /^\/(about|openrouter|models)$/
+// 尚未開放：授權頁（TASK-21）、模型下載（TASK-13／14）
+const STUB_PATHS = /^\/(about|models)$/
 const LESSON_PATH = /^\/lesson\/([a-z0-9-]+)$/
 
 // 小課結算後同步（TASK-18 D2）；沒設定登入時不做事
@@ -42,6 +44,8 @@ export function AppRoutes() {
   if (pathname === '/words') return <WordsScreen />
   if (pathname === '/settings') return <SettingsScreen />
   if (pathname === '/placement') return <PlacementScreen />
+  if (pathname === '/openrouter') return <OpenRouterKeyScreen />
+  if (pathname === '/openrouter/callback') return <OpenRouterCallback />
   const lesson = LESSON_PATH.exec(pathname)
   if (lesson) return <LessonScreen key={lesson[1]} lessonId={lesson[1]} onSettle={onLessonSettle} />
   if (pathname === '/review')

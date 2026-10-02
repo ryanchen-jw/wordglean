@@ -46,12 +46,14 @@ test('聽音打字：播放／慢速、拼錯算錯並標錯字、寬鬆比對�
   await expect(page.getByTestId('listen-typed').locator('mark')).toHaveText(['bags'])
   await expect(page.getByRole('button', { name: '再聽一次' })).toBeVisible()
   await next(page)
-  // TASK-18 穿插：第 10 題是選擇題，第 11 題才是聽音選答
+  // TASK-18 穿插：第 10 題是選擇題、第 11 題寫作（TASK-15，自評），第 12 題才是聽音選答
   await answer(page, 10)
+  await next(page)
+  await answer(page, 11)
   await next(page)
 
   // 聽音選答
-  await count(page, 11)
+  await count(page, 12)
   await expect(page.getByText('聽音選答')).toBeVisible()
   await expect(page.getByText('Tom 有什麼？')).toBeVisible()
   await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
@@ -63,7 +65,7 @@ test('聽音打字：播放／慢速、拼錯算錯並標錯字、寬鬆比對�
   await expect(status).toContainText('答案是 A：A dog and a cat')
   await expect(status).toContainText('Tom 有一隻狗和一隻貓。')
   await next(page)
-  await count(page, 12)
+  await count(page, 13)
 })
 
 test('聽音打字：大小寫、標點、彎引號不計算對；聽音選答答對', async ({ page }) => {
@@ -75,7 +77,9 @@ test('聽音打字：大小寫、標點、彎引號不計算對；聽音選答�
   await next(page)
   await answer(page, 10)
   await next(page)
-  await count(page, 11)
+  await answer(page, 11)
+  await next(page)
+  await count(page, 12)
   await page.getByRole('radio', { name: 'A dog and a cat', exact: true }).click()
   await page.getByRole('button', { name: '檢查' }).click()
   await expect(page.getByRole('status')).toContainText('正確')

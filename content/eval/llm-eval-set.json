@@ -1,0 +1,555 @@
+{
+  "version": "llm-eval-set.v1",
+  "description": "TASK-15 預設批改模型評測題組：40 句台灣學習者常見錯句（中翻英 30、造句 10）。answer＝學習者寫的錯句；mustFix＝必修錯誤點，批改後的句子不得再含 wrong、且須含 fix 任一寫法（不分大小寫）。",
+  "items": [
+    {
+      "id": "ev-01",
+      "kind": "translate",
+      "level": "A1",
+      "errorType": "冠詞 a／an",
+      "promptZh": "我有一個蘋果。",
+      "words": ["have"],
+      "referenceEn": ["I have an apple."],
+      "rubricZh": ["母音開頭的字前面用 an"],
+      "answer": "I have a apple.",
+      "mustFix": [{ "wrong": "a apple", "fix": ["an apple"] }]
+    },
+    {
+      "id": "ev-02",
+      "kind": "translate",
+      "level": "A1",
+      "errorType": "主詞動詞一致（第三人稱單數）",
+      "promptZh": "她每天早上喝咖啡。",
+      "words": ["drink"],
+      "referenceEn": ["She drinks coffee every morning."],
+      "rubricZh": ["第三人稱單數現在式動詞加 s"],
+      "answer": "She drink coffee every morning.",
+      "mustFix": [{ "wrong": "She drink ", "fix": ["She drinks", "She has"] }]
+    },
+    {
+      "id": "ev-03",
+      "kind": "translate",
+      "level": "A1",
+      "errorType": "中文「有」直譯（There has）",
+      "promptZh": "桌上有一本書。",
+      "words": ["there"],
+      "referenceEn": ["There is a book on the table."],
+      "rubricZh": ["表示「某處有某物」用 there is／there are，不用 there has"],
+      "answer": "There has a book on the table.",
+      "mustFix": [{ "wrong": "There has", "fix": ["There is", "There's"] }]
+    },
+    {
+      "id": "ev-04",
+      "kind": "translate",
+      "level": "A1",
+      "errorType": "副詞位置（very 修飾動詞）",
+      "promptZh": "我非常喜歡音樂。",
+      "words": ["like"],
+      "referenceEn": ["I really like music.", "I like music very much."],
+      "rubricZh": ["very 不能直接修飾動詞，用 really like 或 like … very much"],
+      "answer": "I very like music.",
+      "mustFix": [
+        {
+          "wrong": "very like",
+          "fix": ["really like", "very much", "love music", "like music a lot"]
+        }
+      ]
+    },
+    {
+      "id": "ev-05",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "過去式",
+      "promptZh": "昨天我去了圖書館。",
+      "words": ["library"],
+      "referenceEn": ["Yesterday I went to the library.", "I went to the library yesterday."],
+      "rubricZh": ["yesterday 表示過去，動詞用過去式 went"],
+      "answer": "Yesterday I go to the library.",
+      "mustFix": [{ "wrong": "I go ", "fix": ["I went"] }]
+    },
+    {
+      "id": "ev-06",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "間接問句語序",
+      "promptZh": "他不知道她住在哪裡。",
+      "words": ["where"],
+      "referenceEn": ["He doesn't know where she lives."],
+      "rubricZh": ["間接問句用直述句語序，不用 does 倒裝"],
+      "answer": "He doesn't know where does she live.",
+      "mustFix": [{ "wrong": "where does she live", "fix": ["where she lives"] }]
+    },
+    {
+      "id": "ev-07",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "Although 與 but 並用",
+      "promptZh": "雖然下雨，我們還是去了公園。",
+      "words": ["although"],
+      "referenceEn": ["Although it was raining, we still went to the park."],
+      "rubricZh": ["although 和 but 不能在同一句一起用"],
+      "answer": "Although it was raining, but we still went to the park.",
+      "mustFix": [{ "wrong": "but we", "fix": ["we still went", "we went"] }]
+    },
+    {
+      "id": "ev-08",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "時間介系詞（星期用 on）",
+      "promptZh": "我們星期一有考試。",
+      "words": ["test"],
+      "referenceEn": ["We have a test on Monday."],
+      "rubricZh": ["星期幾前面用 on"],
+      "answer": "We have a test in Monday.",
+      "mustFix": [{ "wrong": "in Monday", "fix": ["on Monday"] }]
+    },
+    {
+      "id": "ev-09",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "不可數名詞加 s",
+      "promptZh": "老師給了我們很多建議。",
+      "words": ["advice"],
+      "referenceEn": ["The teacher gave us a lot of advice."],
+      "rubricZh": ["advice 不可數，不加 s；many 改 a lot of 或 much"],
+      "answer": "The teacher gave us many advices.",
+      "mustFix": [{ "wrong": "advices", "fix": ["advice"] }]
+    },
+    {
+      "id": "ev-10",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "look forward to＋動名詞",
+      "promptZh": "我很期待見到你。",
+      "words": ["look forward to"],
+      "referenceEn": ["I am looking forward to meeting you.", "I look forward to seeing you."],
+      "rubricZh": ["look forward to 的 to 是介系詞，後面接動名詞"],
+      "answer": "I am looking forward to meet you.",
+      "mustFix": [{ "wrong": "to meet ", "fix": ["to meeting", "to seeing"] }]
+    },
+    {
+      "id": "ev-11",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "及物動詞多加介系詞（discuss about）",
+      "promptZh": "我們明天要討論這個問題。",
+      "words": ["discuss"],
+      "referenceEn": ["We will discuss this problem tomorrow."],
+      "rubricZh": ["discuss 是及物動詞，後面直接接受詞，不加 about"],
+      "answer": "We will discuss about this problem tomorrow.",
+      "mustFix": [{ "wrong": "discuss about", "fix": ["discuss this", "discuss the"] }]
+    },
+    {
+      "id": "ev-12",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "-ing／-ed 形容詞（boring／bored）",
+      "promptZh": "看這部電影的時候，我覺得很無聊。",
+      "words": ["bored"],
+      "referenceEn": ["I felt very bored during the movie.", "I was very bored during the movie."],
+      "rubricZh": ["描述人的感受用 bored；boring 是形容事物讓人無聊"],
+      "answer": "I was very boring during the movie.",
+      "mustFix": [{ "wrong": "boring", "fix": ["bored"] }]
+    },
+    {
+      "id": "ev-13",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "現在完成式（持續到現在）",
+      "promptZh": "我住在台北已經五年了。",
+      "words": ["for"],
+      "referenceEn": ["I have lived in Taipei for five years.", "I've been living in Taipei for five years."],
+      "rubricZh": ["從過去持續到現在的狀態用現在完成式（have lived）"],
+      "answer": "I live in Taipei for five years.",
+      "mustFix": [
+        {
+          "wrong": "I live in",
+          "fix": ["have lived in", "'ve lived in", "have been living in", "'ve been living in"]
+        }
+      ]
+    },
+    {
+      "id": "ev-14",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "比較級重複（more better）",
+      "promptZh": "她的英文比我的好多了。",
+      "words": ["better"],
+      "referenceEn": ["Her English is much better than mine."],
+      "rubricZh": ["better 已經是比較級，不再加 more；加強用 much"],
+      "answer": "Her English is more better than mine.",
+      "mustFix": [{ "wrong": "more better", "fix": ["much better", "far better", "a lot better"] }]
+    },
+    {
+      "id": "ev-15",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "助動詞後接原形",
+      "promptZh": "我昨天沒有去上班。",
+      "words": ["work"],
+      "referenceEn": ["I didn't go to work yesterday."],
+      "rubricZh": ["didn't 後面接原形動詞"],
+      "answer": "I didn't went to work yesterday.",
+      "mustFix": [{ "wrong": "didn't went", "fix": ["didn't go", "did not go"] }]
+    },
+    {
+      "id": "ev-16",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "suggest 的句型",
+      "promptZh": "他建議我早點睡。",
+      "words": ["suggest"],
+      "referenceEn": ["He suggested that I go to bed earlier.", "He suggested I sleep earlier."],
+      "rubricZh": ["suggest 不接「人＋to 不定詞」，用 suggest (that) 子句"],
+      "answer": "He suggested me to sleep earlier.",
+      "mustFix": [
+        {
+          "wrong": "suggested me to",
+          "fix": ["suggested that I", "suggested I ", "advised me to", "told me to"]
+        }
+      ]
+    },
+    {
+      "id": "ev-17",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "中式搭配（開燈）",
+      "promptZh": "請打開燈。",
+      "words": ["light"],
+      "referenceEn": ["Please turn on the light."],
+      "rubricZh": ["開燈用 turn on／switch on，不用 open"],
+      "answer": "Please open the light.",
+      "mustFix": [
+        {
+          "wrong": "open the light",
+          "fix": ["turn on the light", "switch on the light", "turn the light on", "switch the light on"]
+        }
+      ]
+    },
+    {
+      "id": "ev-18",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "不及物動詞誤用被動（happen）",
+      "promptZh": "這件事是什麼時候發生的？",
+      "words": ["happen"],
+      "referenceEn": ["When did it happen?", "When did this happen?"],
+      "rubricZh": ["happen 是不及物動詞，沒有被動式"],
+      "answer": "When was it happened?",
+      "mustFix": [{ "wrong": "was it happened", "fix": ["did it happen", "did this happen"] }]
+    },
+    {
+      "id": "ev-19",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "be 動詞＋一般動詞（am agree）",
+      "promptZh": "我同意你的看法。",
+      "words": ["agree"],
+      "referenceEn": ["I agree with you."],
+      "rubricZh": ["agree 是動詞，前面不加 am"],
+      "answer": "I am agree with you.",
+      "mustFix": [{ "wrong": "am agree", "fix": ["I agree", "I totally agree", "I completely agree"] }]
+    },
+    {
+      "id": "ev-20",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "spend 的句型",
+      "promptZh": "我花了很多錢買這支手機。",
+      "words": ["spend"],
+      "referenceEn": ["I spent a lot of money on this phone.", "I spent a lot of money buying this phone."],
+      "rubricZh": ["spend 金錢 on 東西，或 spend 金錢＋動名詞"],
+      "answer": "I spent a lot of money to buy this phone.",
+      "mustFix": [{ "wrong": "to buy", "fix": ["buying", "on this phone"] }]
+    },
+    {
+      "id": "ev-21",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "marry 多加介系詞",
+      "promptZh": "她嫁給了一位醫生。",
+      "words": ["marry"],
+      "referenceEn": ["She married a doctor.", "She got married to a doctor."],
+      "rubricZh": ["marry 直接接人，不加 with；或用 get married to"],
+      "answer": "She married with a doctor.",
+      "mustFix": [
+        { "wrong": "married with", "fix": ["married a doctor", "married to a doctor"] }
+      ]
+    },
+    {
+      "id": "ev-22",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "people 是複數",
+      "promptZh": "這裡的人都很友善。",
+      "words": ["people"],
+      "referenceEn": ["The people here are very friendly."],
+      "rubricZh": ["people 是複數名詞，動詞用 are"],
+      "answer": "The people here is very friendly.",
+      "mustFix": [{ "wrong": "here is", "fix": ["here are"] }]
+    },
+    {
+      "id": "ev-23",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "使役動詞後接原形",
+      "promptZh": "他讓我等了一個小時。",
+      "words": ["make"],
+      "referenceEn": ["He made me wait for an hour.", "He kept me waiting for an hour."],
+      "rubricZh": ["make 人 做某事：make＋受詞＋原形動詞，不加 to"],
+      "answer": "He made me to wait for an hour.",
+      "mustFix": [{ "wrong": "made me to", "fix": ["made me wait", "kept me waiting"] }]
+    },
+    {
+      "id": "ev-24",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "explain 的受詞位置",
+      "promptZh": "你可以解釋這個字給我聽嗎？",
+      "words": ["explain"],
+      "referenceEn": ["Can you explain this word to me?"],
+      "rubricZh": ["explain 東西 to 人，不說 explain 人 東西"],
+      "answer": "Can you explain me this word?",
+      "mustFix": [
+        { "wrong": "explain me", "fix": ["word to me", "explain to me"] }
+      ]
+    },
+    {
+      "id": "ev-25",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "already 與時態",
+      "promptZh": "我已經吃過早餐了。",
+      "words": ["already"],
+      "referenceEn": ["I have already eaten breakfast.", "I've already had breakfast."],
+      "rubricZh": ["已經完成的事用現在完成式（have already eaten）"],
+      "answer": "I already eat breakfast.",
+      "mustFix": [
+        {
+          "wrong": "already eat ",
+          "fix": ["already eaten", "already had", "already ate"]
+        }
+      ]
+    },
+    {
+      "id": "ev-26",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "不可數名詞加 s（homework）",
+      "promptZh": "我們有很多作業要寫。",
+      "words": ["homework"],
+      "referenceEn": ["We have a lot of homework to do."],
+      "rubricZh": ["homework 不可數，不加 s"],
+      "answer": "We have a lot of homeworks to do.",
+      "mustFix": [{ "wrong": "homeworks", "fix": ["homework"] }]
+    },
+    {
+      "id": "ev-27",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "because 與 so 並用",
+      "promptZh": "因為下雨，所以比賽取消了。",
+      "words": ["because"],
+      "referenceEn": ["Because it rained, the game was cancelled.", "The game was canceled because it rained."],
+      "rubricZh": ["because 和 so 不能在同一句一起用"],
+      "answer": "Because it rained, so the game was cancelled.",
+      "mustFix": [
+        {
+          "wrong": "so the game",
+          "fix": ["the game was cancelled", "the game was canceled", "game was called off"]
+        }
+      ]
+    },
+    {
+      "id": "ev-28",
+      "kind": "translate",
+      "level": "B2",
+      "errorType": "despite 後接子句",
+      "promptZh": "儘管很累，她還是完成了工作。",
+      "words": ["despite"],
+      "referenceEn": ["Despite being tired, she finished the work.", "Despite feeling tired, she finished her work."],
+      "rubricZh": ["despite 是介系詞，後面接名詞或動名詞，不接完整子句"],
+      "answer": "Despite she was tired, she finished the work.",
+      "mustFix": [
+        {
+          "wrong": "Despite she was",
+          "fix": [
+            "Despite being",
+            "Despite feeling",
+            "Although she was",
+            "Even though she was",
+            "Despite her",
+            "In spite of being",
+            "Despite the fact that she was"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ev-29",
+      "kind": "translate",
+      "level": "A2",
+      "errorType": "現在完成式配過去時間",
+      "promptZh": "他上個月去了日本。",
+      "words": ["Japan"],
+      "referenceEn": ["He went to Japan last month."],
+      "rubricZh": ["有明確過去時間（last month）用過去式，不用現在完成式"],
+      "answer": "He has gone to Japan last month.",
+      "mustFix": [{ "wrong": "has gone", "fix": ["went to Japan"] }]
+    },
+    {
+      "id": "ev-30",
+      "kind": "translate",
+      "level": "B1",
+      "errorType": "can 與 able to 並用",
+      "promptZh": "我沒辦法參加明天的會議。",
+      "words": ["attend"],
+      "referenceEn": ["I can't attend tomorrow's meeting.", "I won't be able to attend tomorrow's meeting."],
+      "rubricZh": ["can 和 be able to 意思相同，不能疊在一起用"],
+      "answer": "I can't able to attend tomorrow's meeting.",
+      "mustFix": [
+        {
+          "wrong": "can't able",
+          "fix": ["can't attend", "cannot attend", "not able to", "won't be able to", "can not attend"]
+        }
+      ]
+    },
+    {
+      "id": "ev-31",
+      "kind": "makeSentence",
+      "level": "A1",
+      "errorType": "冠詞 a／an",
+      "promptZh": "用 an 或 a 造一個句子，說說你有的一樣東西。",
+      "words": ["a", "an"],
+      "referenceEn": ["I have a pen."],
+      "rubricZh": ["子音開頭的字前面用 a，母音開頭用 an"],
+      "answer": "I have an pen.",
+      "mustFix": [{ "wrong": "an pen", "fix": ["a pen"] }]
+    },
+    {
+      "id": "ev-32",
+      "kind": "makeSentence",
+      "level": "A2",
+      "errorType": "過去式",
+      "promptZh": "用 yesterday 造一個句子，說說你昨天做的一件事。",
+      "words": ["yesterday"],
+      "referenceEn": ["Yesterday I watched a movie with my friends."],
+      "rubricZh": ["yesterday 表示過去，動詞用過去式"],
+      "answer": "Yesterday I watch a movie with my friends.",
+      "mustFix": [{ "wrong": "I watch ", "fix": ["I watched"] }]
+    },
+    {
+      "id": "ev-33",
+      "kind": "makeSentence",
+      "level": "A2",
+      "errorType": "enjoy＋動名詞",
+      "promptZh": "用 enjoy 造一個句子，說說你喜歡的活動。",
+      "words": ["enjoy"],
+      "referenceEn": ["I enjoy swimming in the summer."],
+      "rubricZh": ["enjoy 後面接動名詞，不接 to 不定詞"],
+      "answer": "I enjoy to swim in the summer.",
+      "mustFix": [{ "wrong": "enjoy to swim", "fix": ["enjoy swimming"] }]
+    },
+    {
+      "id": "ev-34",
+      "kind": "makeSentence",
+      "level": "B1",
+      "errorType": "whether 子句語序",
+      "promptZh": "用 whether 造一個句子，說說你還沒決定的一件事。",
+      "words": ["whether"],
+      "referenceEn": ["I am not sure whether I should call him.", "I am not sure whether to call him."],
+      "rubricZh": ["whether 子句用直述句語序（主詞在前）"],
+      "answer": "I am not sure whether should I call him.",
+      "mustFix": [{ "wrong": "whether should I", "fix": ["whether I should", "whether to call"] }]
+    },
+    {
+      "id": "ev-35",
+      "kind": "makeSentence",
+      "level": "B1",
+      "errorType": "since 與現在完成式",
+      "promptZh": "用 since 造一個句子，說說你從什麼時候開始做某件事。",
+      "words": ["since"],
+      "referenceEn": ["I have studied English since 2020."],
+      "rubricZh": ["since 表示「自從…到現在」，主要子句用現在完成式"],
+      "answer": "I study English since 2020.",
+      "mustFix": [
+        {
+          "wrong": "I study English since",
+          "fix": [
+            "have studied English since",
+            "'ve studied English since",
+            "have been studying English since",
+            "'ve been studying English since",
+            "have learned English since",
+            "have been learning English since"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ev-36",
+      "kind": "makeSentence",
+      "level": "A2",
+      "errorType": "不可數名詞加 s（information）",
+      "promptZh": "用 information 造一個句子。",
+      "words": ["information"],
+      "referenceEn": ["Can you give me some information about the tour?"],
+      "rubricZh": ["information 不可數，不加 s"],
+      "answer": "Can you give me some informations about the tour?",
+      "mustFix": [{ "wrong": "informations", "fix": ["information"] }]
+    },
+    {
+      "id": "ev-37",
+      "kind": "makeSentence",
+      "level": "B1",
+      "errorType": "介系詞後接動名詞",
+      "promptZh": "用 afraid 造一個句子，說說你害怕的事。",
+      "words": ["afraid"],
+      "referenceEn": ["I am afraid of speaking English in public."],
+      "rubricZh": ["介系詞 of 後面接動名詞"],
+      "answer": "I am afraid of speak English in public.",
+      "mustFix": [{ "wrong": "afraid of speak ", "fix": ["afraid of speaking", "afraid to speak"] }]
+    },
+    {
+      "id": "ev-38",
+      "kind": "makeSentence",
+      "level": "A2",
+      "errorType": "listen 少了 to",
+      "promptZh": "用 listen 造一個句子，說說你晚上常做的事。",
+      "words": ["listen"],
+      "referenceEn": ["I like to listen to music at night."],
+      "rubricZh": ["listen 後面要接 to 再接受詞"],
+      "answer": "I like to listen music at night.",
+      "mustFix": [{ "wrong": "listen music", "fix": ["listen to music", "listening to music"] }]
+    },
+    {
+      "id": "ev-39",
+      "kind": "makeSentence",
+      "level": "B1",
+      "errorType": "used to＋原形",
+      "promptZh": "用 used to 造一個句子，說說你以前的習慣。",
+      "words": ["used to"],
+      "referenceEn": ["I used to play basketball after school."],
+      "rubricZh": ["表示過去習慣的 used to 後面接原形動詞"],
+      "answer": "I used to playing basketball after school.",
+      "mustFix": [{ "wrong": "used to playing", "fix": ["used to play"] }]
+    },
+    {
+      "id": "ev-40",
+      "kind": "makeSentence",
+      "level": "B2",
+      "errorType": "unless 多加否定",
+      "promptZh": "用 unless 造一個句子，提醒別人一件事。",
+      "words": ["unless"],
+      "referenceEn": ["Unless you hurry, you will miss the bus."],
+      "rubricZh": ["unless 已經是「除非／如果不」，子句裡不再加 don't"],
+      "answer": "Unless you don't hurry, you will miss the bus.",
+      "mustFix": [
+        {
+          "wrong": "Unless you don't",
+          "fix": ["Unless you hurry", "If you don't hurry", "If you do not hurry"]
+        }
+      ]
+    }
+  ]
+}

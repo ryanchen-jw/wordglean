@@ -75,14 +75,30 @@ export interface ListenChoiceItem {
   answer: number
 }
 
-/** 尚未支援的題型（寫，TASK-15）：引擎只看 id 與 type */
-export interface OtherItem {
+/** 寫作題共同欄位（TASK-15）：referenceEn＝參考答案（無金鑰時自評用）、rubricZh＝批改要點 */
+interface WritingFields {
   id: string
-  type: Exclude<
-    ItemType,
-    'wordCard' | 'mcq' | 'reading' | 'listenType' | 'listenChoice' | 'shadowing'
-  >
+  referenceEn: string[]
+  rubricZh: string[]
+  /** 能力替代規則（TASK-18 applyCapabilities）標記：改用參考答案自評 */
+  selfCheck?: true
 }
+
+/** 中翻英（設計 s06） */
+export interface TranslateItem extends WritingFields {
+  type: 'translate'
+  promptZh: string
+  hintWords: string[]
+}
+
+/** 造句：用 targetWord 造句 */
+export interface MakeSentenceItem extends WritingFields {
+  type: 'makeSentence'
+  targetWord: string
+  instructionZh: string
+}
+
+export type WritingItem = TranslateItem | MakeSentenceItem
 
 export type LessonItem =
   | WordCardItem
@@ -91,7 +107,7 @@ export type LessonItem =
   | ListenTypeItem
   | ListenChoiceItem
   | ShadowingItem
-  | OtherItem
+  | WritingItem
 
 export interface LessonItemsDoc {
   schemaVersion: 1

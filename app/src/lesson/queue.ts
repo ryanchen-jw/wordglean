@@ -5,10 +5,13 @@ import type {
   LessonItemsDoc,
   ListenChoiceItem,
   ListenTypeItem,
+  MakeSentenceItem,
   McqItem,
   ReadingItem,
   ShadowingItem,
+  TranslateItem,
   WordCardItem,
+  WritingItem,
 } from './items'
 
 export interface Choice {
@@ -165,6 +168,32 @@ export const shadowingType = defineItemType<ShadowingItem>({
 
 /** 說類題型（TASK-14） */
 export const SPEAK_TYPES: readonly ItemTypeDef[] = [shadowingType]
+
+const nonEmptyList = (xs: unknown) => Array.isArray(xs) && xs.length > 0 && xs.every(nonEmpty)
+const writingValid = (it: WritingItem) => nonEmptyList(it.referenceEn) && nonEmptyList(it.rubricZh)
+// 寫作不寫 FSRS（TASK-15 派工）：只計分
+const writingStep = (it: WritingItem): Step[] => [
+  { key: it.id, itemId: it.id, type: it.type, srsWord: null },
+]
+
+export const translateType = defineItemType<TranslateItem>({
+  type: 'translate',
+  isValid: (it) =>
+    nonEmpty(it.promptZh) &&
+    Array.isArray(it.hintWords) &&
+    it.hintWords.every(nonEmpty) &&
+    writingValid(it),
+  toSteps: writingStep,
+})
+
+export const makeSentenceType = defineItemType<MakeSentenceItem>({
+  type: 'makeSentence',
+  isValid: (it) => nonEmpty(it.targetWord) && nonEmpty(it.instructionZh) && writingValid(it),
+  toSteps: writingStep,
+})
+
+/** 寫類兩題型（TASK-15）：中翻英、造句 */
+export const WRITE_TYPES: readonly ItemTypeDef[] = [translateType, makeSentenceType]
 
 /** 依題目檔順序產生作答步驟；穿插排序屬 TASK-18 */
 export function buildQueue(

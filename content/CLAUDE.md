@@ -32,6 +32,8 @@
 | `scripts/lib/offensive.mjs` | 分級測驗排除字：真字的冒犯／粗俗字名單（整字）、假字的不雅字串（子字串）；自訂名單、附分類理由 | 人 |
 | `scripts/lib/placement.mjs` | 題本組裝 `buildPlacement(lexicon, dictWords)`、讀 ECDICT 切片 `loadDictWords` | 人 |
 | `scripts/build-placement.mjs` | 產生 `placement/placement.json` | — |
+| `eval/llm-eval-set.json` | TASK-15 批改模型評測題組（40 句錯句＋必修錯誤點） | 人 |
+| `scripts/lib/llm-eval.mjs`、`scripts/llm-eval.mjs` | 批改模型評測：`:free` 硬守衛、評分、分日接續；prompt 與解析器直接 import `app/src/llm/*.ts`（Node 22 型別剝除）。用法與規則見 `docs/research/llm-eval.md` | — |
 
 ## 規則
 

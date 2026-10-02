@@ -47,7 +47,7 @@ test('AC#3：今天的學習——先複習到期的 8 個字，再接下一課�
 
 test('AC#4：手機不能播音、不能辨識語音、沒有金鑰時仍能完成一課', async ({ page }) => {
   await page.addInitScript(() => {
-    // 模擬沒有 speechSynthesis 的瀏覽器（STT、金鑰在本卡固定為不可用）
+    // 模擬沒有 speechSynthesis 的瀏覽器（e2e 建置 STT 固定不可用；沒有連結 OpenRouter→寫作題改自評）
     Reflect.deleteProperty(window, 'speechSynthesis')
     Reflect.deleteProperty(Object.getPrototypeOf(window), 'speechSynthesis')
   })
@@ -56,10 +56,10 @@ test('AC#4：手機不能播音、不能辨識語音、沒有金鑰時仍能完�
   await expect(page.getByRole('button', { name: '發音' })).toHaveCount(0)
   await expect(page.getByRole('progressbar', { name: '作答進度' })).toHaveAttribute(
     'aria-valuemax',
-    '12',
+    '14',
   )
   await playLesson(page, LESSON)
-  await expect(page.getByTestId('lesson-done')).toContainText('答對 12 題')
+  await expect(page.getByTestId('lesson-done')).toContainText('答對 14 題')
 })
 
 test('完成頁「再複習一次剛學的字」：練習本課 8 個字，不影響今天的複習數', async ({ page }) => {

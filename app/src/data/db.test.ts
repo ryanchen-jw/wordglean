@@ -116,11 +116,15 @@ describe('schema 版本', () => {
     expect(SCHEMA_VERSIONS[2]).toEqual({ version: 3, stores: { lessonRuns: 'lessonId' } })
   })
 
+  it('v4 只追加本機祕密表（TASK-15）', () => {
+    expect(SCHEMA_VERSIONS[3]).toEqual({ version: 4, stores: { secrets: 'key' } })
+  })
+
   it('全新開啟後各表可用', async () => {
     const db = createDb(freshName())
     await db.open()
     expect(db.tables.map((t) => t.name).sort()).toEqual(
-      [...TABLES, 'outbox', 'syncMeta', 'lessonRuns'].sort(),
+      [...TABLES, 'outbox', 'syncMeta', 'lessonRuns', 'secrets'].sort(),
     )
     db.close()
   })

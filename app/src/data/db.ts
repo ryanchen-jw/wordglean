@@ -46,6 +46,16 @@ export interface SpeechCorrection {
   createdAt: number
 }
 
+/** 本機祕密（TASK-15）：只存這支手機，不同步、不匯出；key＝'openrouter' */
+export interface SecretRow {
+  key: 'openrouter'
+  apiKey: string
+  /** 使用者選的模型 id */
+  model: string
+  via: 'oauth' | 'paste'
+  linkedAt: number
+}
+
 /** 同步佇列：本機寫入後待推到雲端的列（表名＋主鍵）；同步成功後刪除 */
 export interface OutboxEntry {
   seq?: number
@@ -68,6 +78,7 @@ export type LinguaDb = Dexie & {
   outbox: EntityTable<OutboxEntry, 'seq'>
   syncMeta: EntityTable<SyncMeta, 'key'>
   lessonRuns: EntityTable<LessonRun, 'lessonId'>
+  secrets: EntityTable<SecretRow, 'key'>
 }
 
 export interface SchemaVersion {
@@ -91,6 +102,8 @@ export const SCHEMA_VERSIONS: readonly SchemaVersion[] = Object.freeze<SchemaVer
   { version: 2, stores: { outbox: '++seq', syncMeta: 'key' } },
   // TASK-12：小課進度（中途離開可續）；只存本機、不同步、不匯出
   { version: 3, stores: { lessonRuns: 'lessonId' } },
+  // TASK-15：OpenRouter 金鑰與選定模型；只存本機、不同步、不匯出
+  { version: 4, stores: { secrets: 'key' } },
 ])
 
 export const DB_NAME = 'linguaapp'

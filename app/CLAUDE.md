@@ -48,6 +48,7 @@ app/
 │   │                    跟讀（TASK-14）：逐字比對 align.ts、Moonshine Worker（stt*.ts）、錄音與權限 mic.ts、
 │   │                    Web Speech 後備 webSpeech.ts（需同意）；畫面經 services.ts 的 SpeechContext 取用
 │   ├── auth/、sync/     登入與同步（TASK-20）；帳號區塊掛在設定頁 AccountSection
+│   ├── llm/             OpenRouter（TASK-15）：金鑰存放（db secrets 表，不同步不匯出）、PKCE、用戶端、批改 prompt 與解析容錯、預設模型
 │   ├── ui/              Button、Card、BottomSheet、OptionSheet、ChoiceOption、FeedbackBar、ConfirmDialog、Toast
 │   ├── index.css        Tailwind 進入點（tailwindcss＋design/tokens.css＋design/theme.css）
 │   ├── design/          設計 tokens（tokens.css 唯一數值來源、theme.css 接 Tailwind 4 @theme、
@@ -76,6 +77,7 @@ app/
   - `placement-cards.spec`＝分級測驗字卡：勾選底色（淺／深色系 computed 比對 token）、最長字題本在多種寬度／字級下不斷字不溢出。
   - `today.spec`＝今日動線（`page.clock` 固定時間：第一天上課、第二天先複習再接下一課、首頁數字更新）與三能力皆不可用仍完成一課；`review-visual.spec`＝複習各狀態截圖、狀態色 computed 斷言、窄螢幕／特大字級（共用 `e2e/today.ts`）。
   - `listen.spec`＝聽音打字／聽音選答；`tts-hq.spec`＝高音質發音強制失敗退回、下載失敗、崩潰旗標（攔下 Hugging Face／jsDelivr，不真的下載；WebKit 的 Cache Storage 不跨導覽保留，「已下載」狀態只在 chromium 驗）；內建聲音以 `e2e/speech.ts` 替身記錄呼叫。
+  - `openrouter.spec`＝一鍵授權（PKCE）／貼金鑰／清除金鑰／寫作題 AI 批改與失敗，openrouter.ai 全由假端點（`e2e/openrouter.ts`）回應，並檢查金鑰只送往 openrouter.ai；`openrouter-visual.spec`＝s06 寫作四態、s11 AI 區視覺 smoke。兩者封鎖 service worker（其請求不經 page.route）。
   - `lesson.spec`＝小課讀類三題型走完一課與續作；`lesson-visual.spec`＝小課各狀態截圖與窄螢幕／特大字級量測。e2e 的 webServer 帶 `VITE_ITEM_FIXTURES=true`，題目來源為 `src/lesson/fixtures/items/` 的樣本課。
   - 已知：WebKit（Windows build）原生 IndexedDB 一次寫 5000 筆約 77 秒（測試準備成本），該案例時限放寬到 150 秒。
   - 已知限制：Playwright 的 WebKit（Windows build）在 `setOffline` 後 reload 會丟 internal error，離線重載只在 chromium 驗。

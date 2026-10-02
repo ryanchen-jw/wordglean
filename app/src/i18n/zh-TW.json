@@ -73,7 +73,15 @@
     "words.filter.familiarityAll",
     "words.filter.familiaritySheet",
     "words.filter.scopeLabel",
-    "words.list.noMatch"
+    "words.list.noMatch",
+    "settings.ai.oauthPending",
+    "settings.ai.unlinkCancel",
+    "settings.ai.modelFree",
+    "settings.ai.modelPrice",
+    "settings.ai.modelsLoading",
+    "settings.ai.modelsFailed",
+    "settings.key.unverified",
+    "write.fail.other"
   ],
   "common": {
     "action": {
@@ -273,7 +281,13 @@
       "quota": "今日免費額度剩 {count} 次",
       "unlink": "解除連結",
       "unlinkConfirmTitle": "解除 OpenRouter 連結？",
-      "unlinkConfirmBody": "解除後，寫作題改成對照參考答案自己判斷。之後可以再連結。"
+      "unlinkConfirmBody": "解除後，寫作題改成對照參考答案自己判斷。之後可以再連結。",
+      "oauthPending": "正在完成 OpenRouter 授權…",
+      "unlinkCancel": "取消",
+      "modelFree": "{name}・免費",
+      "modelPrice": "{name}・每百萬詞元 輸入 {input}／輸出 {output} 美元",
+      "modelsLoading": "正在讀取模型清單…",
+      "modelsFailed": "讀不到模型清單，請稍後再試。"
     },
     "appearance": {
       "title": "外觀與字級",
@@ -318,7 +332,8 @@
       "invalid": "金鑰無效：請確認是否完整貼上（應以 sk-or- 開頭）",
       "rejected": "OpenRouter 不接受這組金鑰，請到 OpenRouter 確認金鑰還有效。",
       "save": "驗證並儲存",
-      "verifying": "驗證中…"
+      "verifying": "驗證中…",
+      "unverified": "現在連不到 OpenRouter 驗證金鑰，請稍後再試。"
     }
   },
   "clearData": {
@@ -566,7 +581,8 @@
       "network": "網路好像斷了。可以先對照參考答案，或稍後再試。",
       "offline": "目前離線，AI 批改需要網路。可以先對照參考答案。",
       "keyInvalid": "OpenRouter 連結已失效，請到設定重新連結。",
-      "changeModel": "換模型"
+      "changeModel": "換模型",
+      "other": "AI 這次沒有給出可用的結果。可以先對照參考答案，或稍後再試。"
     },
     "sentence": {
       "instruction": "用提示字寫一個英文句子"

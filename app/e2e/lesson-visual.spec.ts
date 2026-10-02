@@ -2,10 +2,10 @@
 // 每個狀態截圖 attach＋具名檔存 test-results/（gitignored），斷言 06 三件套＋英文介面字串＋body 色；
 // 另在 320 標準／320 特大／375 特大下量溢出、折行與卡片內子元素溢出（比照 narrow.spec）。
 // TASK-13：s03 聽音打字（作答中／內建聲音＋第一次提示／答錯／聽不出來）、聽音選答（答對／答錯）。
-// 資料：樣本課 fixture（A1 一課 16 步：第 9、13、16 題聽音打字（後兩題由跟讀替代）、第 11 題聽音選答）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
+// 資料：樣本課 fixture（A1 一課 18 步：第 9、15、18 題聽音打字（後兩題由跟讀替代）、第 12 題聽音選答、第 11／14 題寫作自評）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
-import { answer, count, LESSON, next, playTo } from './lesson.js'
+import { answer, count, LESSON, next, playTo, STEPS } from './lesson.js'
 import { fakeSystemVoice, fakeWebGpu } from './speech.js'
 import { measureMobile, overflowingChildren } from './measure.js'
 
@@ -128,9 +128,11 @@ for (const theme of ['light', 'dark'] as const) {
       await token('--lg-error-bg'),
     )
 
-    // 穿插：第 10 題是選擇題，第 11 題才是聽音選答（TASK-18）
+    // 穿插：第 10 題是選擇題、第 11 題寫作（TASK-15，沒有金鑰→自評），第 12 題才是聽音選答（TASK-18）
     await next(page)
     await answer(page, 10)
+    await next(page)
+    await answer(page, 11)
     await next(page)
     await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
     await page.getByRole('button', { name: '檢查' }).click()
@@ -157,12 +159,14 @@ test('s05 選擇題：已選未檢查／答錯／答對', async ({ page }, info)
   await answer(page, 11)
   await next(page)
   await answer(page, 12)
+  await next(page)
+  await answer(page, 13)
   await check(page, info, 's05-mc-right')
 })
 
 test('s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 14)
+  await playTo(page, 16)
   await page.getByRole('radio', { name: '兩個', exact: true }).click()
   await check(page, info, 's05-reading')
   await page.getByRole('button', { name: '看中文翻譯' }).click()
@@ -196,7 +200,9 @@ test('s03 聽不出來；聽音選答答對／答錯', async ({ page }, info) =>
   await next(page)
   await answer(page, 10)
   await next(page)
-  await count(page, 11)
+  await answer(page, 11)
+  await next(page)
+  await count(page, 12)
   await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
   await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
   await check(page, info, 's03-choice-selected')
@@ -206,14 +212,14 @@ test('s03 聽不出來；聽音選答答對／答錯', async ({ page }, info) =>
 
 test('s03 聽音選答答對', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 11)
-  await answer(page, 11)
+  await playTo(page, 12)
+  await answer(page, 12)
   await check(page, info, 's03-choice-right')
 })
 
 test('s14 完成頁', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  for (let n = 1; n <= 16; n++) {
+  for (let n = 1; n <= STEPS.length; n++) {
     await answer(page, n, n === 2 || n === 10)
     await next(page)
   }
@@ -255,13 +261,15 @@ for (const c of NARROW) {
     await answer(page, 10, true)
     await check(page, info, `${c.name}-s05-mc-wrong`, false)
     await next(page)
-    await answer(page, 11, true)
+    await answer(page, 11)
+    await next(page)
+    await answer(page, 12, true)
     await check(page, info, `${c.name}-s03-choice-wrong`, false)
     await next(page)
-    await answer(page, 12)
-    await next(page)
-    await answer(page, 13)
-    await next(page)
+    for (let n = 13; n <= 15; n++) {
+      await answer(page, n)
+      await next(page)
+    }
     await page.getByRole('button', { name: '看中文翻譯' }).click()
     await check(page, info, `${c.name}-s05-reading-zh`, false)
     // 閱讀卡限高自己捲動，選項與底部按鈕仍在畫面內
@@ -273,7 +281,7 @@ for (const c of NARROW) {
     expect(box.y).toBeGreaterThanOrEqual(0)
     expect(box.y + box.height).toBeLessThanOrEqual(c.height)
     await page.getByRole('button', { name: '繼續上課' }).click()
-    for (let n = 14; n <= 16; n++) {
+    for (let n = 16; n <= STEPS.length; n++) {
       await answer(page, n)
       await next(page)
     }

@@ -29,8 +29,9 @@ export function buildLessonQueue(
   doc: LessonItemsDoc,
   registry: Registry,
   caps: Capabilities,
-): { steps: Step[]; skipped: Skipped[]; changes: CapabilityChange[] } {
+): { steps: Step[]; skipped: Skipped[]; changes: CapabilityChange[]; doc: LessonItemsDoc } {
   const applied = applyCapabilities(doc, caps)
   const { steps, skipped } = buildQueue(applied.doc, registry)
-  return { steps: interleave(steps), skipped, changes: applied.changes }
+  // doc＝套用替代規則後的題目（自評標記、換過的題型），畫面以它取題目內容
+  return { steps: interleave(steps), skipped, changes: applied.changes, doc: applied.doc }
 }

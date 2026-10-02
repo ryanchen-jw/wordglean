@@ -12,6 +12,13 @@ export async function playLesson(page: Page, lessonId: string) {
   const steps = stepsOf(lessonId, { tts })
   for (const [i, s] of steps.entries()) {
     await expect(page.getByText(`${i + 1}／${steps.length}`, { exact: true })).toBeVisible()
+    // 寫作題（TASK-15）：沒有金鑰→寫參考答案、自評「我寫對了」，按下即進下一題
+    if (s.write !== undefined) {
+      await page.getByRole('textbox', { name: '你的句子' }).fill(s.write)
+      await page.getByRole('button', { name: '送出批改' }).click()
+      await page.getByRole('button', { name: '我寫對了' }).click()
+      continue
+    }
     if (s.typed !== undefined)
       await page.getByRole('textbox', { name: '把聽到的英文打在這裡' }).fill(s.typed)
     else await page.getByRole('radio', { name: s.options[0], exact: true }).click()

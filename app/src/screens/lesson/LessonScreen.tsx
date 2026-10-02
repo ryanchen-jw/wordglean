@@ -1,6 +1,6 @@
 // 小課（設計 s03 外框＋讀類題型 s05／s07、離開確認 s12、完成頁 s14）；規則見 docs/verification/2026-10-02-task12-read-items-evidence/proposal.md
 import { Info } from 'lucide-react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { levelOfLessonId } from '../../curriculum/curriculum'
 import { useLevelDoc } from '../../curriculum/load'
 import { db as appDb } from '../../data/appDb'
@@ -16,6 +16,7 @@ import {
   LISTEN_TYPES,
   READ_TYPES,
   SPEAK_TYPES,
+  WRITE_TYPES,
   type Step,
 } from '../../lesson/queue'
 import { currentKey, type LessonRun } from '../../lesson/run'
@@ -26,6 +27,8 @@ import {
   startOrResume,
   type SettleSummary,
 } from '../../lesson/session'
+import { getLink } from '../../llm/keyStore'
+import { useLiveQuery } from '../../data/useLiveQuery'
 import { goBack, navigate } from '../../router'
 import { useSpeech } from '../../speech/services'
 import { ttsAvailable } from '../../speech/speak'
@@ -35,8 +38,9 @@ import { ConfirmDialog } from '../../ui/ConfirmDialog'
 import { LessonDone } from './LessonDone'
 import { LessonHeader, LessonMain, lessonFrameCls } from './frame'
 import { QUESTION_VIEWS } from './views'
+import { WritingEnvContext, type GradeFn } from './writingEnv'
 
-const registry = createRegistry([...READ_TYPES, ...LISTEN_TYPES, ...SPEAK_TYPES])
+const registry = createRegistry([...READ_TYPES, ...LISTEN_TYPES, ...SPEAK_TYPES, ...WRITE_TYPES])
 
 type Props = {
   lessonId: string
@@ -47,6 +51,8 @@ type Props = {
   capabilities?: Capabilities
   /** 結算後（同步接線屬 TASK-18） */
   onSettle?: (summary: SettleSummary) => void
+  /** 寫作題批改（TASK-15）；預設瀏覽器直呼 OpenRouter */
+  grade?: GradeFn
 }
 
 type Phase =
@@ -62,6 +68,7 @@ export function LessonScreen({
   now = Date.now,
   capabilities,
   onSettle,
+  grade,
 }: Props) {
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
   const [leaving, setLeaving] = useState(false)
@@ -69,6 +76,9 @@ export function LessonScreen({
   const saving = useRef<Promise<LessonRun> | null>(null)
   const shownAt = useRef(0)
   const levelDoc = useLevelDoc(levelOfLessonId(lessonId))
+  // 讀取中為 undefined；沒有金鑰為 null（寫作題據此決定 AI 批改或自評）
+  const link = useLiveQuery(() => getLink(db), [db])
+  const writingEnv = useContext(WritingEnvContext)
   const speech = useSpeech()
 
   // 這一課有跟讀題：整課期間留著語音辨識 Worker，離開小課才釋放（分時載入，TASK-14）
@@ -93,10 +103,17 @@ export function LessonScreen({
     ;(async () => {
       const doc = await loadItems(lessonId)
       if (!doc) throw new Error(`沒有這一課的題目：${lessonId}`)
-      const { steps, skipped, changes } = buildLessonQueue(
+      // 有無 OpenRouter 金鑰（TASK-15）：沒有時寫作題依替代規則改自評（selfCheck）
+      const hasKey = (await getLink(db)) !== null
+      const {
+        steps,
+        skipped,
+        changes,
+        doc: applied,
+      } = buildLessonQueue(
         doc,
         registry,
-        capabilities ?? detectCapabilities(ttsAvailable, speech.sttUsable),
+        capabilities ?? detectCapabilities(ttsAvailable, speech.sttUsable, () => hasKey),
       )
       // 能力不足的替代、未支援的題型（聽說寫，TASK-13～15）略過；記錄供除錯
       if (changes.length) console.info('[lesson] 能力替代', changes)
@@ -105,7 +122,9 @@ export function LessonScreen({
       const { run } = await startOrResume(db, lessonId, steps, now())
       if (!alive) return
       if (currentKey(run) === null) await finish(run, steps)
-      else setPhase({ kind: 'play', items: new Map(doc.items.map((i) => [i.id, i])), steps, run })
+      // 題目取替代後的版本（帶 selfCheck 標記、換過的題型）
+      else
+        setPhase({ kind: 'play', items: new Map(applied.items.map((i) => [i.id, i])), steps, run })
     })().catch((e) => {
       console.error(e)
       if (alive) setPhase({ kind: 'error' })
@@ -225,26 +244,34 @@ export function LessonScreen({
   return (
     <div data-testid="lesson-screen" className={lessonFrameCls}>
       <LessonHeader n={run.cursor + 1} total={steps.length} onLeave={onLeave} />
-      <View
-        key={step.key}
-        item={items.get(step.itemId)!}
-        step={step}
-        onAnswer={onAnswer}
-        onContinue={onContinue}
-        onSpeech={({ recognized, submitted }) => {
-          const it = items.get(step.itemId)!
-          addSpeechCorrection(
-            db,
-            {
-              itemId: step.itemId,
-              targetText: 'sentenceEn' in it ? it.sentenceEn : '',
-              recognizedText: recognized,
-              correctedText: submitted,
-            },
-            now(),
-          ).catch((e: unknown) => console.error('[lesson] 跟讀紀錄寫入失敗', e))
+      <WritingEnvContext
+        value={{
+          link,
+          level: levelOfLessonId(lessonId),
+          grade: grade ?? writingEnv.grade,
         }}
-      />
+      >
+        <View
+          key={step.key}
+          item={items.get(step.itemId)!}
+          step={step}
+          onAnswer={onAnswer}
+          onContinue={onContinue}
+          onSpeech={({ recognized, submitted }) => {
+            const it = items.get(step.itemId)!
+            addSpeechCorrection(
+              db,
+              {
+                itemId: step.itemId,
+                targetText: 'sentenceEn' in it ? it.sentenceEn : '',
+                recognizedText: recognized,
+                correctedText: submitted,
+              },
+              now(),
+            ).catch((e: unknown) => console.error('[lesson] 跟讀紀錄寫入失敗', e))
+          }}
+        />
+      </WritingEnvContext>
       {leaving && (
         <ConfirmDialog
           title={t('lesson.leave.title')}

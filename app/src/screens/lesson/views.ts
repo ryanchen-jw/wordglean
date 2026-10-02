@@ -1,4 +1,4 @@
-// 題型畫面登記表：與引擎的題型登記（lesson/queue.ts READ_TYPES、LISTEN_TYPES）成對；說寫由 TASK-14～15 加入
+// 題型畫面登記表：與引擎的題型登記（lesson/queue.ts READ／LISTEN／SPEAK／WRITE_TYPES）成對
 import type { ComponentType } from 'react'
 import type { ItemType } from '../../lesson/items'
 import { ListenChoiceView } from './ListenChoiceView'
@@ -8,6 +8,7 @@ import { ReadingView } from './ReadingView'
 import { ShadowingView } from './ShadowingView'
 import type { QuestionProps } from './types'
 import { WordCardView } from './WordCardView'
+import { WritingView } from './WritingView'
 
 export const QUESTION_VIEWS: Partial<Record<ItemType, ComponentType<QuestionProps>>> = {
   wordCard: WordCardView as ComponentType<QuestionProps>,
@@ -16,4 +17,6 @@ export const QUESTION_VIEWS: Partial<Record<ItemType, ComponentType<QuestionProp
   listenType: ListenTypeView as ComponentType<QuestionProps>,
   listenChoice: ListenChoiceView as ComponentType<QuestionProps>,
   shadowing: ShadowingView as ComponentType<QuestionProps>,
+  translate: WritingView as ComponentType<QuestionProps>,
+  makeSentence: WritingView as ComponentType<QuestionProps>,
 }

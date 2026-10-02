@@ -1,6 +1,6 @@
-// 設定（設計 s11 預設）＋清除資料確認（s13）；AI 批改為佔位（TASK-15），帳號區為 TASK-20 掛點；
+// 設定（設計 s11 預設）＋清除資料確認（s13）；AI 批改區見 AiSection（TASK-15），帳號區為 TASK-20 掛點；
 // 語音區：發音選擇與高音質發音下載（TASK-13），語音辨識下載為 TASK-14 掛點
-import { ChevronRight, FileDown, KeyRound, Lock, Trash2 } from 'lucide-react'
+import { ChevronRight, FileDown, Trash2 } from 'lucide-react'
 import { createContext, useContext, useState, useSyncExternalStore, type ReactNode } from 'react'
 import { currentLevel } from '../../curriculum/curriculum'
 import { LevelSheet } from '../../curriculum/LevelSheet'
@@ -18,10 +18,10 @@ import { stt } from '../../speech/stt'
 import { SubScreen } from '../../shell/Screen'
 import { hqVoice } from '../../speech/speak'
 import type { VoiceChoice } from '../../speech/hqVoice'
-import { Button } from '../../ui/Button'
 import { ConfirmDialog } from '../../ui/ConfirmDialog'
 import { OptionSheet } from '../../ui/OptionSheet'
 import { AccountSection } from './AccountSection'
+import { AiSection } from './AiSection'
 import { ClearDataDialog } from './ClearDataDialog'
 
 const DAILY_NEW_OPTIONS = [5, 10, 15, 20, 30] as const
@@ -176,30 +176,7 @@ export function SettingsScreen() {
             />
           </Group>
 
-          <section className="grid gap-2.5 rounded-2xl border border-line bg-surface p-4">
-            <h2 className="text-caption tracking-[0.04em] text-muted">{t('settings.ai.title')}</h2>
-            <span className="text-secondary text-muted">{t('settings.ai.status')}</span>
-            {/* 文案待 G3；窄螢幕特大字級允許折兩行、置中（走查 P1-2） */}
-            <Button
-              data-multiline
-              className="py-2 text-center"
-              onClick={() => navigate('/openrouter')}
-            >
-              {/* 圖示與文字同一段行內內容：折行時圖示跟著第一行、整段置中 */}
-              <span className="text-balance">
-                <KeyRound size={20} aria-hidden="true" className="mr-2 inline align-[-0.2em]" />
-                {t('settings.ai.oauthButton')}
-              </span>
-            </Button>
-            <Button variant="text" onClick={() => navigate('/openrouter')}>
-              {t('settings.ai.pasteKey')}
-              <ChevronRight size={20} aria-hidden="true" />
-            </Button>
-            <span className="flex gap-1.5 text-caption text-muted">
-              <Lock size={20} aria-hidden="true" className="flex-none" />
-              {t('settings.ai.privacy')}
-            </span>
-          </section>
+          <AiSection />
 
           <Group title={t('settings.appearance.title')}>
             <Row

@@ -11,7 +11,12 @@ import { LessonScreen } from './LessonScreen'
 
 // 期望文案取自設計 s05／s07／s12／s14 與 zh-TW.json；題目與釋義取自樣本課 fixture（a1-u01-l01）
 const LESSON = 'a1-u01-l01'
-const doc = loadFixture(LESSON)
+// 本檔只測讀類三題型：濾掉寫作題（TASK-15 登記；寫作題見 WritingView.test.tsx）
+const full = loadFixture(LESSON)
+const doc = {
+  ...full,
+  items: full.items.filter((it) => it.type !== 'translate' && it.type !== 'makeSentence'),
+}
 const loadItems = async () => doc
 
 beforeEach(async () => {
