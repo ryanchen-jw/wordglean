@@ -327,7 +327,7 @@ describe('跟讀：瀏覽器語音辨識後備（AC#4、Round 1 D8）', () => {
     fireEvent.click(await screen.findByRole('button', { name: OFFER }))
     const dialog = await screen.findByRole('alertdialog')
     expect(dialog).toHaveTextContent('改用瀏覽器的語音辨識？')
-    expect(dialog).toHaveTextContent('錄音將傳送到瀏覽器廠商伺服器')
+    expect(dialog).toHaveTextContent('錄音可能會傳送到瀏覽器廠商的伺服器')
     expect(within(dialog).getByRole('button', { name: '不用了' })).toHaveFocus()
     fireEvent.click(within(dialog).getByRole('button', { name: '不用了' }))
     expect(screen.queryByRole('alertdialog')).toBeNull()
@@ -356,7 +356,7 @@ describe('跟讀：瀏覽器語音辨識後備（AC#4、Round 1 D8）', () => {
     await vi.waitFor(async () => expect(await db.speechCorrections.count()).toBe(1))
   })
 
-  it('轉文字中的說明改為「會傳送到瀏覽器廠商伺服器」', async () => {
+  it('轉文字中的說明改為「可能會傳送到瀏覽器廠商的伺服器」', async () => {
     const rec = fakeRecognition({ texts: ['hello'] })
     const web = createWebSpeech(() => rec.Ctor)
     web.consent()
@@ -365,7 +365,9 @@ describe('跟讀：瀏覽器語音辨識後備（AC#4、Round 1 D8）', () => {
     await screen.findByRole('button', { name: '結束錄音' })
     rec.made[0].stop = () => {} // 攔住辨識結束，停在轉文字中
     click('結束錄音')
-    expect(await screen.findByText('轉文字中…（錄音會傳送到瀏覽器廠商伺服器）')).toBeInTheDocument()
+    expect(
+      await screen.findByText('轉文字中…（錄音可能會傳送到瀏覽器廠商的伺服器）'),
+    ).toBeInTheDocument()
   })
 
   it('模型載入失敗：保留重試，同時提出後備', async () => {

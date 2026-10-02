@@ -18,7 +18,9 @@ test('AC#3：今天的學習——先複習到期的 8 個字，再接下一課�
   await expect(home).toHaveAttribute('data-state', 'default')
   await expect(page.getByText('先複習，再上一課・約 7 分鐘')).toBeVisible()
   await expect(page.getByRole('link', { name: /到期複習/ })).toContainText('8')
-  await expect(page.getByRole('link', { name: /下一課/ })).toContainText('基礎常用字（一） 2')
+  await expect(page.getByRole('link', { name: /下一課/ })).toContainText(
+    '基礎常用字（一）・第 2 課',
+  )
   await expect(page.getByText('複習 0／8')).toBeVisible()
   await expect(page.getByText('新課 0／1')).toBeVisible()
 

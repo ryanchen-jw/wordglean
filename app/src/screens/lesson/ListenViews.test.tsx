@@ -123,7 +123,7 @@ describe('聽音打字', () => {
     const onAnswer = renderType()
     fireEvent.click(screen.getByRole('button', { name: '聽不出來' }))
     expect(onAnswer).toHaveBeenCalledWith({ correct: false, usedHint: false })
-    expect(screen.getByRole('status')).toHaveTextContent('這一句是')
+    expect(screen.getByRole('status')).toHaveTextContent('答案是')
     expect(screen.getByRole('status')).toHaveTextContent('They moved the meeting to Friday.')
     expect(screen.getByRole('button', { name: '繼續' })).toBeInTheDocument()
   })

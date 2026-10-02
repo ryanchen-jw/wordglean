@@ -167,7 +167,9 @@ describe('清除資料確認（s13）', () => {
     fireEvent.click(screen.getByRole('checkbox', { name: '我了解資料無法復原' }))
     fireEvent.click(screen.getByRole('button', { name: '清除資料' }))
     const alert = await screen.findByRole('alert')
-    expect(alert).toHaveTextContent('清除失敗，請關閉其他分頁後再試一次')
+    expect(alert).toHaveTextContent(
+      '清除沒有完成。如果其他分頁也開著 LinguaApp，請先關掉再試一次。',
+    )
     expect(alert).not.toHaveTextContent('Database')
     expect(logged).toHaveBeenCalledWith(raw)
     expect(screen.getByRole('button', { name: '清除資料' })).toBeEnabled()

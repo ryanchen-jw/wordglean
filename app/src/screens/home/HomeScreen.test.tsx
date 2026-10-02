@@ -66,7 +66,7 @@ describe('首頁（s01）', () => {
     expect(screen.getByText('B1｜約多益 275+')).toBeInTheDocument()
     expect(screen.getByText('24')).toBeInTheDocument()
     expect(screen.getByText('約 6 分鐘')).toBeInTheDocument()
-    expect(screen.getByText('基礎常用字 2')).toBeInTheDocument()
+    expect(screen.getByText('基礎常用字・第 2 課')).toBeInTheDocument()
     expect(screen.getByText('約 5 分鐘・新字 9')).toBeInTheDocument()
     expect(screen.getByText('複習 0／24')).toBeInTheDocument()
     expect(screen.getByText('新課 0／1')).toBeInTheDocument()

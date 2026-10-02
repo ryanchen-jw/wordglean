@@ -196,7 +196,7 @@ test('s04 模型載入失敗：提出瀏覽器語音辨識後備＋同意框', a
   await check(page, info, 's04-failed-offer')
   await page.getByRole('button', { name: '改用瀏覽器的語音辨識' }).click()
   const dialog = page.getByRole('alertdialog')
-  await expect(dialog).toContainText('錄音將傳送到瀏覽器廠商伺服器')
+  await expect(dialog).toContainText('錄音可能會傳送到瀏覽器廠商的伺服器')
   await check(page, info, 's04-fallback-dialog')
   await dialog.getByRole('button', { name: '同意並使用' }).click()
   await expect(page.getByRole('button', { name: '開始錄音' })).toBeEnabled()

@@ -44,7 +44,7 @@ describe('課程地圖（s02）', () => {
     render(<CourseScreen />)
     fireEvent.click(await screen.findByRole('button', { name: /第 3 課/ }))
     const sheet = screen.getByRole('dialog', { name: '小課詳情' })
-    expect(within(sheet).getByRole('heading')).toHaveTextContent('基礎常用字 3')
+    expect(within(sheet).getByRole('heading')).toHaveTextContent('基礎常用字・第 3 課')
     expect(within(sheet).getByText('新字 8 個')).toBeInTheDocument()
     expect(
       within(sheet).getByText('aside・beneath・merely・regarding・moreover・whenever・surely・via'),
@@ -90,7 +90,7 @@ describe('課程地圖（s02）', () => {
     history.replaceState(null, '', '/course?lesson=b1-u02-l01')
     render(<CourseScreen />)
     const sheet = await screen.findByRole('dialog', { name: '小課詳情' })
-    expect(within(sheet).getByRole('heading')).toHaveTextContent('數字、時間與日期 1')
+    expect(within(sheet).getByRole('heading')).toHaveTextContent('數字、時間與日期・第 1 課')
     fireEvent.click(screen.getByTestId('sheet-scrim'))
     expect(screen.queryByRole('dialog')).toBeNull()
     expect(location.search).toBe('')

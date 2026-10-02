@@ -18,6 +18,14 @@ export async function answerStep(page: Page, n: number) {
     await page.getByRole('button', { name: /跳過/ }).click()
     return
   }
+  // 寫作題（TASK-15）：沒有金鑰→對照參考答案自評，按「我寫對了」直接進下一題（同 e2e/lesson.ts answer）
+  if (s.write !== undefined) {
+    await page.getByRole('textbox', { name: '你的句子' }).fill(s.write)
+    await page.getByRole('button', { name: '送出批改' }).click()
+    await expect(page.getByText('跟參考答案比一比，意思一樣嗎？')).toBeVisible()
+    await page.getByRole('button', { name: '我寫對了' }).click()
+    return
+  }
   if (s.typed !== undefined)
     await page.getByRole('textbox', { name: '把聽到的英文打在這裡' }).fill(s.typed)
   else await page.getByRole('radio', { name: s.options[0], exact: true }).click()

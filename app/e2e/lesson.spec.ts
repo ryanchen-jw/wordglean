@@ -76,7 +76,7 @@ test('課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 
 
   const done = page.getByTestId('lesson-done')
   await expect(done.getByRole('heading', { level: 1 })).toHaveText('這一課完成了')
-  await expect(done).toContainText('基礎常用字（一） 1')
+  await expect(done).toContainText('基礎常用字（一）・第 1 課')
   await expect(done).toContainText('新學的 8 個字已加入單字庫，明天開始複習')
   await expect(done).toContainText('18 題')
   await expect(done).toContainText('答對 15 題')
@@ -101,7 +101,7 @@ test('中途離開（✕ → 離開）後重開，從離開的那題接續', asy
   await playTo(page, 4)
   await page.getByRole('button', { name: '離開' }).click()
   const dialog = page.getByRole('alertdialog')
-  await expect(dialog).toContainText('目前做到 3／18 題。離開後下次會從第 4 題繼續。')
+  await expect(dialog).toContainText('已完成 3／18 題。進度會保留，下次從第 4 題繼續。')
   await expect(dialog.getByRole('button', { name: '繼續上課' })).toBeFocused()
   await dialog.getByRole('button', { name: '離開' }).click()
   await expect(page).not.toHaveURL(/\/lesson\//)

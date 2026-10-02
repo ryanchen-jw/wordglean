@@ -73,7 +73,9 @@ describe('分級測驗（s10）', () => {
     expect(await screen.findByText('你的起點')).toBeInTheDocument()
     expect(screen.getByTestId('placement-level')).toHaveTextContent('B2')
     expect(screen.getByText('約多益 400+')).toBeInTheDocument()
-    expect(screen.getByText('多益分數依 ETS 官方 CEFR 對照，僅供參考')).toBeInTheDocument()
+    expect(
+      screen.getByText('多益分數指聽力分項，依 ETS 官方的 CEFR 對照，僅供參考'),
+    ).toBeInTheDocument()
     expect(screen.getByText('每一級你認識的字的比例')).toBeInTheDocument()
     const bars = within(screen.getByTestId('placement-bars'))
     for (const [level, pct] of [
@@ -101,7 +103,7 @@ describe('分級測驗（s10）', () => {
     render(<PlacementScreen />)
     await answerAll(() => true)
     expect(
-      await screen.findByText('勾到 10 個假字，結果可能不準，建議重新測驗'),
+      await screen.findByText('勾到 10 個假字，這次結果不太準。建議重新測驗，或自己選級距。'),
     ).toBeInTheDocument()
     expect(screen.getByTestId('placement-level')).toHaveTextContent('A1')
     expect(screen.queryByRole('button', { name: /開始$/ })).toBeNull()

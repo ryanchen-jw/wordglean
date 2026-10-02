@@ -262,7 +262,9 @@ test('s10 分級測驗：勾選中／結果（勾到假字）／選級距彈層�
   await check(page, info, 's10-levelsheet')
   await page.goto('/placement')
   await answerAll(page, () => true)
-  await expect(page.getByText('勾到 10 個假字，結果可能不準，建議重新測驗')).toBeVisible()
+  await expect(
+    page.getByText('勾到 10 個假字，這次結果不太準。建議重新測驗，或自己選級距。'),
+  ).toBeVisible()
   await check(page, info, 's10-retest')
 })
 

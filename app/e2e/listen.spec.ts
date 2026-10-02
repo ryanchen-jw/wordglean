@@ -89,7 +89,7 @@ test('聽不出來：直接看答案、可繼續下一題', async ({ page }) => 
   await page.goto(`/lesson/${LESSON}`)
   await playTo(page, 9)
   await page.getByRole('button', { name: '聽不出來' }).click()
-  await expect(page.getByRole('status')).toContainText('這一句是')
+  await expect(page.getByRole('status')).toContainText('答案是')
   await expect(page.getByRole('status')).toContainText('The book is in the bag.')
   await next(page)
   await count(page, 10)

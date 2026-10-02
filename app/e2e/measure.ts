@@ -18,6 +18,7 @@ export const ALLOWED_LATIN = [
   'WebGPU',
   'AI',
   'Safari',
+  'App', // 與 src/i18n/t.test.ts 白名單一致（system.error.dataLoad「請重新開啟 App」）
   // 選項字母標（components.md §3、設計 s05／s07）
   'A',
   'B',

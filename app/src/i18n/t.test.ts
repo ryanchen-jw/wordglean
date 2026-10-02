@@ -52,11 +52,9 @@ describe('t()', () => {
 })
 
 describe('zh-TW.json', () => {
-  it('頂層標記為 G3 定稿；_pendingG3 的 key 都存在且是字串', () => {
-    expect(messages._status).toBe('approved-G3-2026-10-02')
-    const keys = new Map(allStrings(messages))
-    const missing = messages._pendingG3.filter((k) => !keys.has(k))
-    expect(missing).toEqual([])
+  it('頂層標記為 G3 第二輪定稿；沒有待審 key（_pendingG3）', () => {
+    expect(messages._status).toBe('approved-CEO-G3r2-2026-10-03')
+    expect('_pendingG3' in messages).toBe(false)
   })
 
   it('除允許清單外沒有英文介面字串', () => {

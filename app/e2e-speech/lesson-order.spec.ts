@@ -18,13 +18,13 @@ test('能跟讀：一課含 2 題跟讀，依穿插順序走完到完成頁', as
     String(SPEECH_STEPS.length),
   )
   // 期望值：fixture 第 11、12 題為跟讀（I have a cup of tea.／We go to the park on Sunday.），
-  // 穿插後落在第 10、13 步（8 張單字卡後：聽音打字、跟讀、選擇題｜聽音選答、跟讀、選擇題｜閱讀 2 小題）
-  expect(SPEECH_STEPS.length).toBe(16)
+  // 穿插後落在第 10、14 步（8 張單字卡後：聽音打字、跟讀、選擇題、中翻英｜聽音選答、跟讀、選擇題、造句｜閱讀 2 小題）
+  expect(SPEECH_STEPS.length).toBe(18)
   expect(
     SPEECH_STEPS.flatMap((s, i) => (s.shadowing !== undefined ? [[i + 1, s.shadowing]] : [])),
   ).toEqual([
     [10, 'I have a cup of tea.'],
-    [13, 'We go to the park on Sunday.'],
+    [14, 'We go to the park on Sunday.'],
   ])
   for (let n = 1; n <= SPEECH_STEPS.length; n++) {
     const s = SPEECH_STEPS[n - 1]

@@ -1,88 +1,5 @@
 {
-  "_status": "approved-G3-2026-10-02",
-  "_pendingG3": [
-    "account.panel.mismatch",
-    "clearData.dialog.failed",
-    "common.action.close",
-    "course.sheet.title",
-    "course.unit.lesson",
-    "dict.sheet.loadFailed",
-    "dict.sheet.loading",
-    "download.action.startNamed",
-    "download.status.failedRetry",
-    "download.status.percent",
-    "home.next.levelDone",
-    "home.next.title",
-    "home.today.summaryLesson",
-    "install.card.close",
-    "lesson.done.subtitle",
-    "lesson.error.back",
-    "lesson.error.body",
-    "lesson.frame.count",
-    "lesson.leave.body",
-    "lesson.leave.bodyDone",
-    "lesson.listen.almost",
-    "lesson.listen.answerWas",
-    "lesson.listen.choiceTitle",
-    "lesson.listen.giveUp",
-    "lesson.listen.hqFailed",
-    "lesson.listen.hqHint",
-    "lesson.listen.missing",
-    "lesson.listen.placeholder",
-    "lesson.listen.slow",
-    "lesson.listen.systemVoice",
-    "lesson.listen.typePrompt",
-    "lesson.listen.typeTitle",
-    "lesson.reading.hideTranslation",
-    "lesson.reading.question",
-    "lesson.wordCard.hintLabel",
-    "nav.bar.label",
-    "placement.pick.exit",
-    "placement.result.retest",
-    "placement.result.retestHint",
-    "placement.result.toeicNote",
-    "review.done.correct",
-    "review.done.empty",
-    "review.done.home",
-    "review.done.summary",
-    "review.done.title",
-    "review.done.words",
-    "review.error.back",
-    "review.error.body",
-    "review.frame.count",
-    "review.frame.progress",
-    "settings.voice.ttsHqValue",
-    "speak.download.bodyIdle",
-    "speak.download.titleIdle",
-    "speak.fallback.accept",
-    "speak.fallback.body",
-    "speak.fallback.decline",
-    "speak.fallback.offer",
-    "speak.fallback.title",
-    "speak.question.busyWeb",
-    "speak.question.failed",
-    "speak.question.preparing",
-    "speak.question.unsupported",
-    "speak.result.almost",
-    "speak.result.missing",
-    "stub.page.backHome",
-    "stub.page.body",
-    "stub.page.title",
-    "words.due.newWord",
-    "words.due.years",
-    "words.filter.familiarityAll",
-    "words.filter.familiaritySheet",
-    "words.filter.scopeLabel",
-    "words.list.noMatch",
-    "settings.ai.oauthPending",
-    "settings.ai.unlinkCancel",
-    "settings.ai.modelFree",
-    "settings.ai.modelPrice",
-    "settings.ai.modelsLoading",
-    "settings.ai.modelsFailed",
-    "settings.key.unverified",
-    "write.fail.other"
-  ],
+  "_status": "approved-CEO-G3r2-2026-10-03",
   "common": {
     "action": {
       "back": "返回",
@@ -153,7 +70,7 @@
     "today": {
       "title": "今天的學習",
       "summaryReviewLesson": "先複習，再上一課・約 {min} 分鐘",
-      "summaryLesson": "上一課・約 {min} 分鐘",
+      "summaryLesson": "上一堂新課・約 {min} 分鐘",
       "summaryReview": "先把到期的單字複習完・約 {min} 分鐘",
       "startButton": "開始今天的學習",
       "startReview": "開始複習"
@@ -164,7 +81,7 @@
     },
     "next": {
       "label": "下一課",
-      "title": "{unit} {n}",
+      "title": "{unit}・第 {n} 課",
       "meta": "約 {min} 分鐘・新字 {count}",
       "levelDone": "這個級距的課都上完了"
     },
@@ -207,7 +124,7 @@
     },
     "sheet": {
       "label": "小課詳情",
-      "title": "{unit} {n}",
+      "title": "{unit}・第 {n} 課",
       "minutes": "約 {min} 分鐘",
       "newWords": "新字 {n} 個",
       "startButton": "開始這一課"
@@ -344,7 +261,7 @@
       "cancel": "取消",
       "confirm": "清除資料",
       "busy": "清除中…",
-      "failed": "清除失敗，請關閉其他分頁後再試一次",
+      "failed": "清除沒有完成。如果其他分頁也開著 LinguaApp，請先關掉再試一次。",
       "done": "已清除這支手機上的資料"
     }
   },
@@ -389,7 +306,7 @@
   "stub": {
     "page": {
       "title": "尚未開放",
-      "body": "這個功能還在製作中，之後的版本會開放。",
+      "body": "這一頁還在製作中，之後的版本會開放。",
       "backHome": "回到今天"
     }
   },
@@ -400,7 +317,7 @@
       "speak": "發音",
       "loading": "查詢中…",
       "notFound": "字典裡沒有這個字（可能是人名或專有名詞）",
-      "loadFailed": "字典載入失敗，請再試一次",
+      "loadFailed": "字典載入失敗。請關閉後再點一次這個字。",
       "toeic": "多益常考",
       "source": "資料來源：ECDICT"
     },
@@ -418,7 +335,7 @@
       "count": "{n}／{total}"
     },
     "error": {
-      "body": "這一課載入失敗",
+      "body": "這一課載入失敗，請回到課程再試一次。",
       "back": "回到課程"
     },
     "choice": {
@@ -445,18 +362,18 @@
       "type": "閱讀理解",
       "question": "{n}／{total}　{question}",
       "showTranslation": "看中文翻譯",
-      "hideTranslation": "收起翻譯"
+      "hideTranslation": "收起中文翻譯"
     },
     "leave": {
       "title": "要離開這一課嗎？",
-      "body": "目前做到 {done}／{total} 題。離開後下次會從第 {next} 題繼續。",
+      "body": "已完成 {done}／{total} 題。進度會保留，下次從第 {next} 題繼續。",
       "bodyDone": "這一課已經做完了，離開後會記為完成。",
       "stay": "繼續上課",
       "leave": "離開"
     },
     "done": {
       "title": "這一課完成了",
-      "subtitle": "{unit} {n}",
+      "subtitle": "{unit}・第 {n} 課",
       "newWords": "新學的 {n} 個字已加入單字庫，明天開始複習",
       "summary": "這一課",
       "questions": "{n} 題",
@@ -486,7 +403,7 @@
       "giveUp": "聽不出來",
       "almost": "差一點：",
       "missing": "＿＿",
-      "answerWas": "這一句是",
+      "answerWas": "答案是",
       "hqHint": "想要更自然的發音，可以到設定開啟「高音質發音」（選配）",
       "hqFailed": "高音質發音無法使用，已改用手機內建聲音"
     }
@@ -520,7 +437,7 @@
       "preparing": "語音辨識準備中…",
       "failed": "錄音或轉文字失敗，請再唸一次",
       "unsupported": "這個瀏覽器無法錄音",
-      "busyWeb": "轉文字中…（錄音會傳送到瀏覽器廠商伺服器）"
+      "busyWeb": "轉文字中…（錄音可能會傳送到瀏覽器廠商的伺服器）"
     },
     "confirm": {
       "label": "你唸的句子（辨識結果，聽錯的地方可以直接改）",
@@ -548,7 +465,7 @@
     "fallback": {
       "offer": "改用瀏覽器的語音辨識",
       "title": "改用瀏覽器的語音辨識？",
-      "body": "這支手機無法在本機轉文字。改用瀏覽器的語音辨識時，錄音將傳送到瀏覽器廠商伺服器轉成文字。同意只在這次使用期間有效。",
+      "body": "這支手機無法在本機把錄音轉成文字。改用瀏覽器內建的語音辨識時，錄音可能會傳送到瀏覽器廠商的伺服器轉成文字。這次同意到關閉 LinguaApp 為止，下次開啟會再詢問。",
       "decline": "不用了",
       "accept": "同意並使用"
     }
@@ -603,8 +520,8 @@
       "penalty": "勾到 {count} 個假字，結果已向下修正",
       "start": "從 {level} 開始",
       "choose": "想自己選級距",
-      "toeicNote": "多益分數依 ETS 官方 CEFR 對照，僅供參考",
-      "retestHint": "勾到 {count} 個假字，結果可能不準，建議重新測驗",
+      "toeicNote": "多益分數指聽力分項，依 ETS 官方的 CEFR 對照，僅供參考",
+      "retestHint": "勾到 {count} 個假字，這次結果不太準。建議重新測驗，或自己選級距。",
       "retest": "重新測驗"
     }
   },
@@ -617,7 +534,7 @@
       "signedIn": "已登入：{email}",
       "logout": "登出",
       "logoutBlocked": "還有資料沒同步到雲端，連上網路後再登出。",
-      "mismatch": "這支手機上有另一個帳號的學習資料。請先用原帳號登入並登出，或到設定清除這支手機上的資料。"
+      "mismatch": "這支手機上的學習資料屬於另一個帳號，所以沒有登入。請先用原帳號登入再登出，或在上方「資料」區清除這支手機上的資料，再重新登入。"
     },
     "email": {
       "label": "Email",
@@ -643,7 +560,7 @@
       "home": "回到今天"
     },
     "error": {
-      "body": "複習載入失敗",
+      "body": "複習載入失敗，請回到今天再試一次。",
       "back": "回到今天"
     }
   }
