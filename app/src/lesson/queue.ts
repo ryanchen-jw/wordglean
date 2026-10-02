@@ -66,11 +66,23 @@ const validAnswer = (options: string[], answer: number) =>
   Number.isInteger(answer) && answer >= 0 && answer < options.length
 
 /** 單字卡選項：正確釋義插在干擾項之間，位置由題號決定 */
-export function wordCardChoice(item: WordCardItem): Choice {
+export function wordCardChoice(
+  item: WordCardItem,
+  sense: (gloss: string) => string = (g) => g,
+): Choice {
   const answer = hash(item.id) % (item.distractorsZh.length + 1)
-  const options = [...item.distractorsZh]
-  options.splice(answer, 0, item.glossZh)
+  const options = item.distractorsZh.map(sense)
+  options.splice(answer, 0, sense(item.glossZh))
   return { options, answer }
+}
+
+/**
+ * 釋義的第一個意思：全形分號「；」前一段，再去掉全形括號註記「（…）」；去完是空的就保留原段。
+ * 正解兩義並列或帶括號而干擾項沒有，都會因格式洩題（TASK-9）
+ */
+export function firstSense(gloss: string): string {
+  const first = gloss.split('；')[0].trim()
+  return first.replace(/（[^）]*）/g, '').trim() || first
 }
 
 export const wordCardType = defineItemType<WordCardItem>({
@@ -91,6 +103,14 @@ export const wordCardType = defineItemType<WordCardItem>({
       choice: wordCardChoice(it),
     },
   ],
+})
+
+/** 小課與複習的單字卡：作答選項只顯示第一義（回饋仍顯示完整 glossZh） */
+export const lessonWordCardType = defineItemType<WordCardItem>({
+  type: 'wordCard',
+  isValid: (it) =>
+    wordCardType.isValid(it) && distinct([it.glossZh, ...it.distractorsZh].map(firstSense)),
+  toSteps: (it) => [{ ...wordCardType.toSteps(it)[0], choice: wordCardChoice(it, firstSense) }],
 })
 
 export const mcqType = defineItemType<McqItem>({
@@ -130,7 +150,7 @@ export const readingType = defineItemType<ReadingItem>({
 })
 
 /** 讀類三題型（TASK-12）；聽說寫由 TASK-13～15 登記 */
-export const READ_TYPES: readonly ItemTypeDef[] = [wordCardType, mcqType, readingType]
+export const READ_TYPES: readonly ItemTypeDef[] = [lessonWordCardType, mcqType, readingType]
 
 export const listenTypeType = defineItemType<ListenTypeItem>({
   type: 'listenType',

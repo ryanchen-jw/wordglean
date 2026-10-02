@@ -36,10 +36,10 @@ export async function learnThenNextDay(page: Page) {
   await page.clock.setFixedTime(DAY1 + DAY)
 }
 
-// 樣本課 8 個字的正解；到期時間相同時依字母排序出題（today/plan.ts）
+// 樣本課 8 個字的正解選項（只顯示第一義＝全形分號前一段、去括號註記）；到期時間相同時依字母排序出題（today/plan.ts）
 export const GLOSS = new Map(
   readFixture(LESSON)
     .items.filter((it) => it.type === 'wordCard')
-    .map((it) => [it.word!, it.glossZh!]),
+    .map((it) => [it.word!, it.glossZh!.split('；')[0].replace(/（[^）]*）/g, '')]),
 )
 export const REVIEW_ORDER = [...GLOSS.keys()].sort()

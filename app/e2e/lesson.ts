@@ -56,7 +56,15 @@ export const stepsOf = (lessonId: string, { tts = true, stt = false } = {}): Pic
   )
   const toSteps = (it: FixtureDoc['items'][number]): Pick[] => {
     if (it.type === 'wordCard')
-      return [{ options: [it.glossZh!, ...it.distractorsZh!], check: false }]
+      // 選項只顯示第一義（全形分號前一段、去括號註記）
+      return [
+        {
+          options: [it.glossZh!, ...it.distractorsZh!].map((g) =>
+            g.split('；')[0].replace(/（[^）]*）/g, ''),
+          ),
+          check: false,
+        },
+      ]
     if (it.type === 'mcq' || it.type === 'listenChoice')
       return [{ options: rest(it.options!, it.answer!), check: true }]
     if (it.type === 'listenType') return [{ options: [], check: true, typed: it.sentenceEn! }]

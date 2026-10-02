@@ -4,6 +4,8 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { DictionaryProvider } from '../../dict/DictionaryProvider'
 import type { WordCardItem } from '../../lesson/items'
+import { buildQueue, createRegistry, READ_TYPES } from '../../lesson/queue'
+import { lessonWordCards } from '../../review/session'
 import { fsDictDeps } from '../../test/dictFs'
 import { WordCardView } from './WordCardView'
 
@@ -46,5 +48,55 @@ describe('單字卡：測驗字的變化形作答前不可點（G2）', () => {
     fireEvent.click(screen.getByRole('radio', { name: /會議/ }))
     expect(await screen.findByRole('button', { name: 'meeting' })).toBeInTheDocument()
     expect(await screen.findByRole('button', { name: 'meetings' })).toBeInTheDocument()
+  })
+})
+
+describe('單字卡：選項只顯示第一義、回饋顯示完整釋義（TASK-9 格式洩題）', () => {
+  const be: WordCardItem = {
+    id: 'a1-u01-l01-q02',
+    type: 'wordCard',
+    word: 'be',
+    exampleEn: 'Be quiet.',
+    exampleZh: '安靜。',
+    glossZh: '是；保持（某種狀態）',
+    distractorsZh: ['去', '有', '給'],
+  }
+
+  it('四個選項都不含「；」；答對後回饋含完整「是；保持（某種狀態）」', () => {
+    const { steps } = buildQueue(
+      { schemaVersion: 1, lessonId: 'a1-u01-l01', level: 'A1', items: [be] },
+      createRegistry(READ_TYPES),
+    )
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <WordCardView item={be} step={steps[0]} onAnswer={() => {}} onContinue={() => {}} />
+      </DictionaryProvider>,
+    )
+    const radios = screen.getAllByRole('radio')
+    expect(radios).toHaveLength(4)
+    expect(radios.filter((r) => r.textContent!.includes('；'))).toEqual([])
+
+    fireEvent.click(screen.getByRole('radio', { name: /是/ }))
+    expect(screen.getByText('正確：是；保持（某種狀態）')).toBeInTheDocument()
+  })
+
+  it('複習卡：四個選項都不含「；」；答錯後回饋含完整「是；保持（某種狀態）」', () => {
+    const [card] = lessonWordCards({
+      schemaVersion: 1,
+      lessonId: 'a1-u01-l01',
+      level: 'A1',
+      items: [be],
+    })
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <WordCardView item={card.item} step={card.step} onAnswer={() => {}} onContinue={() => {}} />
+      </DictionaryProvider>,
+    )
+    const radios = screen.getAllByRole('radio')
+    expect(radios).toHaveLength(4)
+    expect(radios.filter((r) => r.textContent!.includes('；'))).toEqual([])
+
+    fireEvent.click(screen.getByRole('radio', { name: /去/ }))
+    expect(screen.getByRole('status')).toHaveTextContent('be 是「是；保持（某種狀態）」')
   })
 })

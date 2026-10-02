@@ -4,7 +4,7 @@ import type { LexIndex } from '../dict/lexicon'
 import { recordReview } from '../data/repo'
 import { gradeFor, type AnswerInput } from '../lesson/grade'
 import type { LessonItemsDoc, WordCardItem } from '../lesson/items'
-import { wordCardType, type Step } from '../lesson/queue'
+import { lessonWordCardType, type Step } from '../lesson/queue'
 import type { Grade } from '../srs/scheduler'
 import { favoriteCard } from './favoriteCard'
 
@@ -15,12 +15,12 @@ export interface ReviewCard {
 }
 
 const toCard = (item: WordCardItem): ReviewCard => {
-  const step = wordCardType.toSteps(item)[0]
+  const step = lessonWordCardType.toSteps(item)[0]
   return { wordId: step.srsWord!, item, step }
 }
 
 const wordCardsOf = (doc: LessonItemsDoc) =>
-  doc.items.filter((i): i is WordCardItem => i.type === 'wordCard' && wordCardType.isValid(i))
+  doc.items.filter((i): i is WordCardItem => i.type === 'wordCard' && lessonWordCardType.isValid(i))
 
 /**
  * 依字的課程來源（依序）找原課單字卡；找不到時（收藏字）以單字總表出卡（loadLex 只在需要時載入）；

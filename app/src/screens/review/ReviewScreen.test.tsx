@@ -52,7 +52,7 @@ describe('單獨複習（從到期複習小卡進來）', () => {
       '2',
     )
     expect(screen.getByText('the')).toHaveAttribute('lang', 'en')
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     expect(await screen.findByRole('status')).toHaveTextContent(
       '正確：那個、這個（指特定的人事物）',
     )
@@ -102,7 +102,7 @@ describe('今天的學習（先複習再上課）', () => {
       />,
     )
     await screen.findByText('複習 1／1')
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     await screen.findByRole('status')
     cont()
     await screen.findByTestId('review-leaving')
@@ -139,7 +139,7 @@ describe('今天的學習（先複習再上課）', () => {
       />,
     )
     await screen.findByText('複習 1／1')
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     await screen.findByRole('status')
     cont()
     expect(await screen.findByTestId('review-done')).toHaveTextContent('複習完成')
@@ -163,7 +163,7 @@ describe('再複習一次剛學的字（D5：只練習）', () => {
     render(<ReviewScreen mode={{ kind: 'practice', lessonId: L1 }} loadItems={loadItems} />)
     expect(await screen.findByText('複習 1／8')).toBeInTheDocument()
     expect(screen.getByText('the')).toBeInTheDocument()
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     await screen.findByRole('status')
     cont()
     await screen.findByText('複習 2／8')

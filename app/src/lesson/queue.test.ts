@@ -5,6 +5,7 @@ import {
   buildQueue,
   createRegistry,
   defineItemType,
+  firstSense,
   LISTEN_TYPES,
   READ_TYPES,
   SPEAK_TYPES,
@@ -93,9 +94,9 @@ describe('題目佇列（AC#1）', () => {
     it('正解位置上是本課釋義，其餘三個是干擾項', () => {
       const the = cards[0]
       expect(the.choice?.options).toHaveLength(4)
-      expect(the.choice?.options[the.choice.answer]).toBe('那個、這個（指特定的人事物）')
+      expect(the.choice?.options[the.choice.answer]).toBe('那個、這個')
       expect([...(the.choice?.options ?? [])].sort()).toEqual(
-        ['那個、這個（指特定的人事物）', '和、以及', '在⋯裡面', '有、擁有'].sort(),
+        ['那個、這個', '和、以及', '在⋯裡面', '有、擁有'].sort(),
       )
     })
 
@@ -262,5 +263,70 @@ describe('跟讀題型（TASK-14）', () => {
       ['a1-u01-l01-q11', 'shadowing'],
       ['a1-u01-l01-q12', 'shadowing'],
     ])
+  })
+})
+
+describe('單字卡選項只顯示第一義（TASK-9 格式洩題）', () => {
+  it('firstSense：全形分號切第一段、半形不切、去前後空白', () => {
+    expect(firstSense('會議')).toBe('會議')
+    expect(firstSense('是；保持（某種狀態）')).toBe('是')
+    expect(firstSense('河; 江')).toBe('河; 江')
+    expect(firstSense('  是 ；保持 ')).toBe('是')
+  })
+
+  it('firstSense：去掉全形括號註記（含括號本身）', () => {
+    expect(firstSense('在（某時間或地點）')).toBe('在')
+    expect(firstSense('電梯（英式）；舉起')).toBe('電梯')
+    expect(firstSense('一個、一（個）')).toBe('一個、一')
+  })
+
+  it('firstSense：整段都是括號時保留原文', () => {
+    expect(firstSense('（英式）')).toBe('（英式）')
+    expect(firstSense('（口語）；很酷')).toBe('（口語）')
+  })
+
+  it('小課：干擾項的括號一併去除', () => {
+    const { options, answer } = buildQueue(
+      doc('在（某時間或地點）', ['從（某處）', '往、到', '和（某人）一起']),
+      readRegistry,
+    ).steps[0].choice!
+    expect([...options].sort()).toEqual(['在', '從', '往、到', '和一起'].sort())
+    expect(options[answer]).toBe('在')
+  })
+
+  const doc = (glossZh: string, distractorsZh: string[]): LessonItemsDoc => ({
+    schemaVersion: 1,
+    lessonId: 'a1-u01-l01',
+    level: 'A1',
+    items: [
+      {
+        id: 'a1-u01-l01-q02',
+        type: 'wordCard',
+        word: 'be',
+        exampleEn: 'Be quiet.',
+        exampleZh: '安靜。',
+        glossZh,
+        distractorsZh,
+      },
+    ],
+  })
+
+  it('小課：正解兩義並列、干擾項單義——四個選項都不含「；」，正解為第一義', () => {
+    const { options, answer } = buildQueue(
+      doc('是；保持（某種狀態）', ['去', '有', '給']),
+      readRegistry,
+    ).steps[0].choice!
+    expect(options.filter((o) => o.includes('；'))).toEqual([])
+    expect(options[answer]).toBe('是')
+  })
+
+  it('小課：干擾項含「；」也只取第一段', () => {
+    const { options } = buildQueue(doc('是', ['去；走', '有', '給']), readRegistry).steps[0].choice!
+    expect([...options].sort()).toEqual(['去', '是', '有', '給'].sort())
+  })
+
+  it('小課：取第一義後選項重複＝不合格', () => {
+    const bad = doc('是；保持', ['是；存在', '有', '給'])
+    expect(buildQueue(bad, readRegistry).skipped[0].reason).toBe('invalid')
   })
 })

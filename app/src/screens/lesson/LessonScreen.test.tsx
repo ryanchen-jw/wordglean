@@ -36,7 +36,16 @@ async function answerCurrent(n: number, wrong = false) {
   await count(n)
   const steps: { pick: string[]; check: boolean }[] = [
     ...doc.items.flatMap((it) => {
-      if (it.type === 'wordCard') return [{ pick: [it.glossZh, ...it.distractorsZh], check: false }]
+      // 選項只顯示第一義（全形分號前一段、去括號註記）
+      if (it.type === 'wordCard')
+        return [
+          {
+            pick: [it.glossZh, ...it.distractorsZh].map((g) =>
+              g.split('；')[0].replace(/（[^）]*）/g, ''),
+            ),
+            check: false,
+          },
+        ]
       if (it.type === 'mcq') {
         const opts = [it.options[it.answer], ...it.options.filter((_, i) => i !== it.answer)]
         return [{ pick: opts, check: true }]
@@ -69,7 +78,7 @@ describe('小課畫面（AC#2 單元層）', () => {
   it('單字卡答對：點選即判定，回饋「正確：釋義」＋例句＋中譯，其他選項停用', async () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
     await screen.findByText('the')
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     const fb = await screen.findByRole('status')
     expect(fb).toHaveTextContent('正確：那個、這個（指特定的人事物）')
     expect(fb).toHaveTextContent('The cat is on the bed.')
@@ -99,7 +108,7 @@ describe('小課畫面（AC#2 單元層）', () => {
     fireEvent.click(screen.getByRole('button', { name: '看例句提示' }))
     expect(screen.getByTestId('wordcard-hint')).toHaveTextContent('The cat is on the bed.')
     expect(screen.queryByRole('button', { name: '看例句提示' })).toBeNull()
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     await screen.findByRole('status')
     expect((await db.reviewLogs.toArray()).map((l) => l.rating)).toEqual([2])
   })
@@ -109,7 +118,7 @@ describe('小課畫面（AC#2 單元層）', () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} now={() => clock} />)
     await screen.findByText('the')
     clock += 15_001
-    fireEvent.click(option('那個、這個（指特定的人事物）'))
+    fireEvent.click(option('那個、這個'))
     await screen.findByRole('status')
     expect((await db.reviewLogs.toArray()).map((l) => l.rating)).toEqual([2])
   })
@@ -200,7 +209,9 @@ describe('小課畫面（AC#2 單元層）', () => {
       />,
     )
     expect(await screen.findByText('1／16')).toBeInTheDocument()
-    const glosses = doc.items.flatMap((it) => (it.type === 'wordCard' ? [it.glossZh] : []))
+    const glosses = doc.items.flatMap((it) =>
+      it.type === 'wordCard' ? [it.glossZh.split('；')[0].replace(/（[^）]*）/g, '')] : [],
+    )
     for (const [i, gloss] of glosses.entries()) {
       await screen.findByText(`${i + 1}／16`)
       fireEvent.click(option(gloss))
