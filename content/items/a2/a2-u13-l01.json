@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u13-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:53:44Z",
+  "properNouns": [
+    "Taichung",
+    "Japan",
+    "David"
+  ],
+  "items": [
+    {
+      "id": "a2-u13-l01-q01",
+      "type": "wordCard",
+      "word": "highway",
+      "exampleEn": "The highway is busy on Friday evenings.",
+      "exampleZh": "星期五傍晚公路上車很多。",
+      "glossZh": "公路；幹道",
+      "distractorsZh": [
+        "巷子",
+        "橋",
+        "隧道"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q02",
+      "type": "wordCard",
+      "word": "traveler",
+      "exampleEn": "This hotel is popular with young travelers.",
+      "exampleZh": "這家旅館很受年輕旅客歡迎。",
+      "glossZh": "旅行者；旅客",
+      "distractorsZh": [
+        "司機",
+        "店員",
+        "鄰居"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q03",
+      "type": "wordCard",
+      "word": "lane",
+      "exampleEn": "Turn right into the small lane.",
+      "exampleZh": "右轉進那條小巷。",
+      "glossZh": "小巷；車道",
+      "distractorsZh": [
+        "高速公路",
+        "廣場",
+        "橋"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q04",
+      "type": "wordCard",
+      "word": "cab",
+      "exampleEn": "Can you call a cab for me?",
+      "exampleZh": "你可以幫我叫一台計程車嗎？",
+      "glossZh": "計程車",
+      "distractorsZh": [
+        "公車",
+        "火車",
+        "腳踏車"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q05",
+      "type": "wordCard",
+      "word": "cruise",
+      "exampleEn": "My parents went on a cruise to Japan.",
+      "exampleZh": "我爸媽搭郵輪去日本旅遊。",
+      "glossZh": "郵輪之旅；乘船遊覽",
+      "distractorsZh": [
+        "健行",
+        "露營",
+        "長途開車"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q06",
+      "type": "wordCard",
+      "word": "brake",
+      "exampleEn": "Check your brakes before a long ride.",
+      "exampleZh": "長途騎車前先檢查煞車。",
+      "glossZh": "煞車",
+      "distractorsZh": [
+        "車燈",
+        "座椅",
+        "喇叭"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q07",
+      "type": "wordCard",
+      "word": "fare",
+      "exampleEn": "I paid the fare with my card.",
+      "exampleZh": "我用卡付了車資。",
+      "glossZh": "車資；票價",
+      "distractorsZh": [
+        "時刻表",
+        "路線",
+        "站牌"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q08",
+      "type": "wordCard",
+      "word": "suitcase",
+      "exampleEn": "I put my name on my suitcase.",
+      "exampleZh": "我把名字寫在行李箱上。",
+      "glossZh": "行李箱",
+      "distractorsZh": [
+        "背包",
+        "皮夾",
+        "雨傘"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "The cab fare was very high.",
+      "sentenceZh": "計程車的車資非常貴。"
+    },
+    {
+      "id": "a2-u13-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Our cruise leaves on Friday and comes back the next Thursday.",
+      "audioZh": "我們的郵輪星期五出發，下週四回來。",
+      "questionZh": "郵輪什麼時候回來？",
+      "options": [
+        "Next Thursday",
+        "On Friday",
+        "On Sunday"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u13-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "Many travelers come here in summer.",
+      "sentenceZh": "很多旅客夏天會來這裡。"
+    },
+    {
+      "id": "a2-u13-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Stay in the right lane on the highway.",
+      "sentenceZh": "在公路上請走右側車道。"
+    },
+    {
+      "id": "a2-u13-l01-q13",
+      "type": "mcq",
+      "stemEn": "I can't stop my bike! The ____ are broken.",
+      "stemZh": "我的腳踏車停不下來！煞車壞了。",
+      "options": [
+        "lanes",
+        "fares",
+        "brakes",
+        "suitcases"
+      ],
+      "optionGlossZh": [
+        "車道",
+        "車資",
+        "煞車",
+        "行李箱"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u13-l01-q14",
+      "type": "mcq",
+      "stemEn": "How much is the bus ____ to the airport?",
+      "stemZh": "到機場的公車票價是多少？",
+      "options": [
+        "traveler",
+        "cruise",
+        "highway",
+        "fare"
+      ],
+      "optionGlossZh": [
+        "旅客",
+        "郵輪之旅",
+        "公路",
+        "票價"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u13-l01-q15",
+      "type": "reading",
+      "passageEn": "Last month, David took a trip with his family. First, they drove on the highway for three hours. Then the car's brakes stopped working, so they left the car at a garage and took a cab to the station. The cab fare was expensive, and David's suitcase was very heavy. \"Next time, let's go on a cruise and relax!\" his wife said.",
+      "passageZh": "上個月，David 和家人去旅行。他們先在公路上開了三個小時的車。後來車子的煞車失靈了，所以他們把車留在修車廠，搭計程車去車站。計程車資很貴，David 的行李箱又很重。他太太說：「下次我們去搭郵輪放鬆一下吧！」",
+      "questions": [
+        {
+          "questionZh": "車子出了什麼問題？",
+          "options": [
+            "沒有油了",
+            "煞車失靈了",
+            "有個輪胎破了"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "David 的太太下次想怎麼旅行？",
+          "options": [
+            "坐火車",
+            "搭郵輪",
+            "騎腳踏車"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q16",
+      "type": "translate",
+      "promptZh": "這位旅客迷路了。",
+      "hintWords": [
+        "traveler"
+      ],
+      "referenceEn": [
+        "This traveler is lost.",
+        "This traveler got lost."
+      ],
+      "rubricZh": [
+        "「旅客」可寫例如 traveler、tourist",
+        "「迷路了」可寫例如 is lost、got lost"
+      ]
+    },
+    {
+      "id": "a2-u13-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "suitcase",
+      "instructionZh": "用 suitcase 造一個句子，說說你的行李箱，或旅行時你會在行李箱裡放什麼。",
+      "referenceEn": [
+        "I always pack my suitcase the night before a trip.",
+        "My suitcase is full of clothes and gifts."
+      ],
+      "rubricZh": [
+        "suitcase 是可數名詞（例如 my suitcase、a big suitcase）",
+        "主詞和動詞要搭配（例如 My suitcase is）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u13-l01-q10": [
+        0
+      ],
+      "a2-u13-l01-q13": [
+        2
+      ],
+      "a2-u13-l01-q14": [
+        3
+      ],
+      "a2-u13-l01-q15#0": [
+        1
+      ],
+      "a2-u13-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（drove on the highway to…）和閱讀（drove on the highway for three hours）雷同，改單字卡",
+        "resolution": "改為 \"The highway is busy on Friday evenings.\"（原 \"We drove on the highway to Taichung.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"星期五傍晚公路上車很多。\"（原 \"我們走公路開到台中。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（take a cab to the airport）和閱讀（took a cab to the station）雷同，改單字卡",
+        "resolution": "改為 \"Can you call a cab for me?\"（原 \"Let's take a cab to the airport.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"你可以幫我叫一台計程車嗎？\"（原 \"我們搭計程車去機場吧。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（brakes on my bike don't work）和 q13、閱讀（brakes are broken / stopped working）雷同，改單字卡",
+        "resolution": "改為 \"Check your brakes before a long ride.\"（原 \"The brakes on my bike don't work.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"長途騎車前先檢查煞車。\"（原 \"我腳踏車的煞車壞了。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（The bus fare is…）和 q14（How much is the bus fare…?）雷同，改單字卡",
+        "resolution": "改為 \"I paid the fare with my card.\"（原 \"The bus fare is fifteen dollars.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我用卡付了車資。\"（原 \"公車票價是十五元。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（My suitcase is too heavy）和閱讀（suitcase was very heavy）雷同，改單字卡",
+        "resolution": "改為 \"I put my name on my suitcase.\"（原 \"My suitcase is too heavy.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我把名字寫在行李箱上。\"（原 \"我的行李箱太重了。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"有個輪胎破了\"（原 \"輪胎破了\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      }
+    ]
+  }
+}

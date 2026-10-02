@@ -130,7 +130,7 @@
       "audioZh": "Tom 來自日本，但他現在住在這裡。",
       "questionZh": "Tom 現在住在哪裡？",
       "options": [
-        "Here",
+        "Right here",
         "In Japan",
         "At school"
       ],
@@ -320,6 +320,12 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「看書」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u01-l03-q10 目標第 1 長、消除單題異常值（改了選項 1，含正解措辭、意思不變）",
+        "resolution": "改為 [\"Right here\",\"In Japan\",\"At school\"]（原 [\"Here\",\"In Japan\",\"At school\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

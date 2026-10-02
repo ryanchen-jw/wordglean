@@ -127,7 +127,7 @@
       "audioZh": "我的手機在哪裡？晚餐前還在這裡。",
       "questionZh": "說話者在找什麼？",
       "options": [
-        "My keys",
+        "My house keys",
         "My phone",
         "My bag"
       ],
@@ -202,7 +202,7 @@
           "questionZh": "球在哪裡？",
           "options": [
             "Leo 的包包裡",
-            "樹上",
+            "公園的大樹上",
             "一台車底下"
           ],
           "answer": 2
@@ -268,6 +268,18 @@
         "message": "執行長第②③關裁示修正：第③關 D13：參考答案不與單字卡例句相同",
         "resolution": "改前：\"You must be quiet in the library.\"；改後：\"You must not eat in the library.\"",
         "resolvedAt": "2026-10-02T13:22:31Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"My house keys\"（原 \"My keys\"）",
+        "resolvedAt": "2026-10-02T17:55:45Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u19-l02-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
+        "resolution": "改為 [\"Leo 的包包裡\",\"公園的大樹上\",\"一台車底下\"]（原 [\"Leo 的包包裡\",\"樹上\",\"一台車底下\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

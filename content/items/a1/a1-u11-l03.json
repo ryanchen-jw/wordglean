@@ -127,7 +127,7 @@
       "options": [
         "Near the bridge",
         "On the corner",
-        "On the farm"
+        "On the big farm"
       ],
       "answer": 1
     },
@@ -199,8 +199,8 @@
         {
           "questionZh": "說話者最喜歡的地方是哪裡？",
           "options": [
-            "河邊",
-            "石橋上",
+            "小河旁邊的那片草地",
+            "小河上的那座老石橋",
             "農場角落的大樹下"
           ],
           "answer": 2
@@ -302,6 +302,24 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「農場角落的大樹下」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:41:08Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"小河上的那座老石橋\"（原 \"石橋上\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u11-l03-q15#1 目標第 3 長、消除單題異常值（改了選項 1）",
+        "resolution": "改為 [\"小河旁邊的那片草地\",\"小河上的那座老石橋\",\"農場角落的大樹下\"]（原 [\"河邊\",\"小河上的那座老石橋\",\"農場角落的大樹下\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u11-l03-q10 目標第 3 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"Near the bridge\",\"On the corner\",\"On the big farm\"]（原 [\"Near the bridge\",\"On the corner\",\"On the farm\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

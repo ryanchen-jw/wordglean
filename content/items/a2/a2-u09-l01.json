@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u09-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:58:27Z",
+  "properNouns": [
+    "Taipei",
+    "David"
+  ],
+  "items": [
+    {
+      "id": "a2-u09-l01-q01",
+      "type": "wordCard",
+      "word": "asleep",
+      "exampleEn": "The baby is asleep in her room.",
+      "exampleZh": "寶寶在她房間裡睡著了。",
+      "glossZh": "睡著的",
+      "distractorsZh": [
+        "醒著的",
+        "生病的",
+        "餓的"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q02",
+      "type": "wordCard",
+      "word": "lifestyle",
+      "exampleEn": "She has a healthy lifestyle.",
+      "exampleZh": "她的生活方式很健康。",
+      "glossZh": "生活方式",
+      "distractorsZh": [
+        "工作地點",
+        "收入",
+        "外表"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q03",
+      "type": "wordCard",
+      "word": "occupation",
+      "exampleEn": "Please write your name and occupation here.",
+      "exampleZh": "請在這裡寫上你的姓名和職業。",
+      "glossZh": "職業",
+      "distractorsZh": [
+        "地址",
+        "興趣",
+        "年齡"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q04",
+      "type": "wordCard",
+      "word": "captain",
+      "exampleEn": "The captain of the ship welcomed us.",
+      "exampleZh": "那艘船的船長歡迎我們。",
+      "glossZh": "船長；隊長",
+      "distractorsZh": [
+        "乘客",
+        "廚師",
+        "導遊"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q05",
+      "type": "wordCard",
+      "word": "businessman",
+      "exampleEn": "Businessmen often travel for work.",
+      "exampleZh": "商人常常需要出差。",
+      "glossZh": "商人；生意人",
+      "distractorsZh": [
+        "農夫",
+        "警察",
+        "學生"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q06",
+      "type": "wordCard",
+      "word": "clerk",
+      "exampleEn": "The clerk at the bank was very helpful.",
+      "exampleZh": "銀行的行員非常樂於幫忙。",
+      "glossZh": "職員；店員",
+      "distractorsZh": [
+        "老闆",
+        "客人",
+        "警衛"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q07",
+      "type": "wordCard",
+      "word": "bonus",
+      "exampleEn": "The boss gave us a bonus for our hard work.",
+      "exampleZh": "老闆因為我們工作認真，發給我們獎金。",
+      "glossZh": "獎金；紅利",
+      "distractorsZh": [
+        "罰款",
+        "稅金",
+        "房租"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q08",
+      "type": "wordCard",
+      "word": "sleepy",
+      "exampleEn": "I always feel sleepy after lunch.",
+      "exampleZh": "我午餐後總是覺得很睏。",
+      "glossZh": "睏的；想睡的",
+      "distractorsZh": [
+        "餓的",
+        "生氣的",
+        "緊張的"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "I was asleep when you called me.",
+      "sentenceZh": "你打電話給我的時候，我已經睡著了。"
+    },
+    {
+      "id": "a2-u09-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "As a hotel clerk, I work from three in the afternoon until midnight.",
+      "audioZh": "我是旅館櫃台人員，從下午三點工作到半夜。",
+      "questionZh": "說話的人幾點下班？",
+      "options": [
+        "At midnight",
+        "At three",
+        "At noon"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u09-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "He is the captain of our basketball team.",
+      "sentenceZh": "他是我們籃球隊的隊長。"
+    },
+    {
+      "id": "a2-u09-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "I'm so sleepy. Let's go home.",
+      "sentenceZh": "我好睏，我們回家吧。"
+    },
+    {
+      "id": "a2-u09-l01-q13",
+      "type": "mcq",
+      "stemEn": "She was so tired that she fell ____ on the bus.",
+      "stemZh": "她累到在公車上睡著了。",
+      "options": [
+        "asleep",
+        "sleepy",
+        "bonus",
+        "clerk"
+      ],
+      "optionGlossZh": [
+        "睡著的",
+        "睏的",
+        "獎金",
+        "職員"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u09-l01-q14",
+      "type": "mcq",
+      "stemEn": "What is your ____? — I'm a nurse.",
+      "stemZh": "你的職業是什麼？——我是護理師。",
+      "options": [
+        "lifestyle",
+        "occupation",
+        "captain",
+        "bonus"
+      ],
+      "optionGlossZh": [
+        "生活方式",
+        "職業",
+        "船長",
+        "獎金"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u09-l01-q15",
+      "type": "reading",
+      "passageEn": "David is a businessman. For many years, he worked long hours and slept only five hours a night. He was always sleepy at work, and he often fell asleep in meetings. Last year, he got a big bonus, but he wasn't happy. So he changed his lifestyle. Now he goes to bed early and walks every morning. \"Money isn't everything,\" he says.",
+      "passageZh": "David 是個生意人。他有很多年都工作很長的時間，每晚只睡五個小時。他上班時總是很睏，開會時還常常睡著。去年他拿到一大筆獎金，卻不快樂。於是他改變了生活方式。現在他很早上床睡覺，每天早上去散步。他說：「錢不是一切。」",
+      "questions": [
+        {
+          "questionZh": "David 以前上班時常常怎樣？",
+          "options": [
+            "上班常常遲到",
+            "很睏，開會時常睡著",
+            "常跟同事在會議上吵架"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "他怎麼改變生活方式？",
+          "options": [
+            "換了一份比較輕鬆的工作",
+            "早點睡、每天早上散步",
+            "搬到鄉下去住"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q16",
+      "type": "translate",
+      "promptZh": "那位店員幫我找到了合適的尺寸。",
+      "hintWords": [
+        "clerk"
+      ],
+      "referenceEn": [
+        "The clerk helped me find the right size.",
+        "The clerk helped me to find the right size."
+      ],
+      "rubricZh": [
+        "「店員」可寫例如 clerk、shop assistant",
+        "help＋人＋（to）原形動詞（例如 helped me find、helped me to find）",
+        "說過去的事用過去式（例如 helped）"
+      ]
+    },
+    {
+      "id": "a2-u09-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "lifestyle",
+      "instructionZh": "用 lifestyle 造一個句子，說說你現在或你想要的生活方式。",
+      "referenceEn": [
+        "I want to have a healthier lifestyle.",
+        "My lifestyle is very busy because of work."
+      ],
+      "rubricZh": [
+        "lifestyle 是名詞「生活方式」（例如 a healthy lifestyle、my lifestyle）",
+        "主詞和動詞要搭配（例如 My lifestyle is）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u09-l01-q10": [
+        0
+      ],
+      "a2-u09-l01-q13": [
+        0
+      ],
+      "a2-u09-l01-q14": [
+        1
+      ],
+      "a2-u09-l01-q15#0": [
+        1
+      ],
+      "a2-u09-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：used to（B1）越級，依裁示不用",
+        "resolution": "改為 \"David is a businessman. For many years, he worked long hours and slept only five hours a night. He was always sleepy at work, and he often fell asleep in meetings. Last year, he got a big bonus, but he wasn't happy. So he changed his lifestyle. Now he goes to bed early and walks every morning. \\\"Money isn't everything,\\\" he says.\"（原 \"David is a businessman. He used to work long hours and slept only five hours a night. He was always sleepy at work, and he often fell asleep in meetings. Last year, he got a big bonus, but he wasn't happy. So he changed his lifestyle. Now he goes to bed early and walks every morning. \\\"Money isn't everything,\\\" he says.\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"David 是個生意人。他有很多年都工作很長的時間，每晚只睡五個小時。他上班時總是很睏，開會時還常常睡著。去年他拿到一大筆獎金，卻不快樂。於是他改變了生活方式。現在他很早上床睡覺，每天早上去散步。他說：「錢不是一切。」\"（原 \"David 是個生意人。他以前工作時間很長，每晚只睡五個小時。他上班時總是很睏，開會時還常常睡著。去年他拿到一大筆獎金，卻不快樂。於是他改變了生活方式。現在他很早上床睡覺，每天早上去散步。他說：「錢不是一切。」\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（got a bonus at the end of the year）和閱讀（Last year, he got a big bonus）雷同，改單字卡",
+        "resolution": "改為 \"The boss gave us a bonus for our hard work.\"（原 \"Everyone got a bonus at the end of the year.\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"老闆因為我們工作認真，發給我們獎金。\"（原 \"年底每個人都拿到了獎金。\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關疑似 S19：聽打句和 asleep 單字卡同為「X is/are asleep」句型，換句型與情境",
+        "resolution": "改為 \"I was asleep when you called me.\"（原 \"The kids are already asleep.\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"你打電話給我的時候，我已經睡著了。\"（原 \"孩子們已經睡著了。\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關疑似 S12：刪去原文沒有的「上船」",
+        "resolution": "改為 \"那艘船的船長歡迎我們。\"（原 \"船長歡迎我們上船。\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同閱讀",
+        "resolution": "改為 \"Businessmen often travel for work.\"（原 \"My uncle is a businessman in Taipei.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"商人常常需要出差。\"（原 \"我叔叔是台北的一位商人。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"常跟同事在會議上吵架\"（原 \"常跟同事吵架\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"換了一份比較輕鬆的工作\"（原 \"換了一份工作\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u09-l01-q15#0 目標第 2 長、消除單題異常值（改了選項 1）",
+        "resolution": "改為 [\"上班常常遲到\",\"很睏，開會時常睡著\",\"常跟同事在會議上吵架\"]（原 [\"常常遲到\",\"很睏，開會時常睡著\",\"常跟同事在會議上吵架\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u09-l01-q15#1 目標第 2 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"換了一份比較輕鬆的工作\",\"早點睡、每天早上散步\",\"搬到鄉下去住\"]（原 [\"換了一份比較輕鬆的工作\",\"早點睡、每天早上散步\",\"搬到鄉下\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      }
+    ]
+  }
+}

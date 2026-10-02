@@ -201,9 +201,9 @@
         {
           "questionZh": "Dan 的房間裡有很多什麼？",
           "options": [
-            "鼓",
+            "很多鼓和吉他",
             "球員的海報",
-            "球"
+            "足球卡"
           ],
           "answer": 1
         }
@@ -347,6 +347,18 @@
         "message": "執行長第②③關裁示修正：第③關 D12：參考答案自然度",
         "resolution": "改前：\"I have a hobby. I play the guitar.\"；改後：\"My hobby is playing the guitar.\"",
         "resolvedAt": "2026-10-02T12:41:35Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"很多鼓和吉他\"（原 \"鼓\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u14-l01-q15#1 目標第 2 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"很多鼓和吉他\",\"球員的海報\",\"足球卡\"]（原 [\"很多鼓和吉他\",\"球員的海報\",\"球\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

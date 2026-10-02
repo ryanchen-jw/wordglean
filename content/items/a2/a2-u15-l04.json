@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u15-l04",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:10:44Z",
+  "properNouns": [
+    "Beethoven",
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a2-u15-l04-q01",
+      "type": "wordCard",
+      "word": "composer",
+      "exampleEn": "The composer wrote this song for his wife.",
+      "exampleZh": "這位作曲家為他太太寫了這首歌。",
+      "glossZh": "作曲家",
+      "distractorsZh": [
+        "歌手",
+        "畫家",
+        "作家"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q02",
+      "type": "wordCard",
+      "word": "comic",
+      "exampleEn": "This comic is about a cat and a dog.",
+      "exampleZh": "這本漫畫在講一隻貓和一隻狗。",
+      "glossZh": "漫畫；滑稽的",
+      "distractorsZh": [
+        "新聞",
+        "字典",
+        "日記"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q03",
+      "type": "wordCard",
+      "word": "rap",
+      "exampleEn": "My brother listens to rap every day.",
+      "exampleZh": "我哥哥每天都聽饒舌音樂。",
+      "glossZh": "饒舌音樂",
+      "distractorsZh": [
+        "爵士樂",
+        "古典樂",
+        "搖滾樂"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q04",
+      "type": "wordCard",
+      "word": "audio",
+      "exampleEn": "This old radio has very good audio quality.",
+      "exampleZh": "這台舊收音機的音質很好。",
+      "glossZh": "聲音的；音訊的",
+      "distractorsZh": [
+        "紙本的",
+        "免費的",
+        "手寫的"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q05",
+      "type": "wordCard",
+      "word": "singing",
+      "exampleEn": "We heard singing from the next room.",
+      "exampleZh": "我們聽到隔壁房間傳來歌聲。",
+      "glossZh": "唱歌；歌聲",
+      "distractorsZh": [
+        "舞蹈",
+        "畫畫",
+        "寫作"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q06",
+      "type": "wordCard",
+      "word": "amusement",
+      "exampleEn": "There is an amusement park near our town.",
+      "exampleZh": "我們鎮附近有一座遊樂園。",
+      "glossZh": "娛樂；遊樂",
+      "distractorsZh": [
+        "公司",
+        "學校",
+        "醫院"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q07",
+      "type": "wordCard",
+      "word": "clown",
+      "exampleEn": "The clown had a red nose and big shoes.",
+      "exampleZh": "那個小丑有紅鼻子和一雙大鞋子。",
+      "glossZh": "小丑",
+      "distractorsZh": [
+        "警察",
+        "老師",
+        "廚師"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q08",
+      "type": "listenType",
+      "sentenceEn": "We went to the amusement park on Sunday.",
+      "sentenceZh": "我們星期天去了遊樂園。"
+    },
+    {
+      "id": "a2-u15-l04-q09",
+      "type": "listenChoice",
+      "audioEn": "At the party, there was a clown, a magic show and lots of singing.",
+      "audioZh": "派對上有一個小丑、一場魔術表演，還有很多人在唱歌。",
+      "questionZh": "派對上有誰？",
+      "options": [
+        "A clown",
+        "A cook",
+        "A cop"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u15-l04-q10",
+      "type": "shadowing",
+      "sentenceEn": "I love reading comics on the weekend.",
+      "sentenceZh": "我很愛在週末看漫畫。"
+    },
+    {
+      "id": "a2-u15-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "My little sister loves singing and dancing.",
+      "sentenceZh": "我妹妹很愛唱歌跳舞。"
+    },
+    {
+      "id": "a2-u15-l04-q12",
+      "type": "mcq",
+      "stemEn": "Beethoven was a great ____.",
+      "stemZh": "貝多芬是一位偉大的作曲家。",
+      "options": [
+        "amusement",
+        "clown",
+        "comic",
+        "composer"
+      ],
+      "optionGlossZh": [
+        "娛樂",
+        "小丑",
+        "漫畫",
+        "作曲家"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u15-l04-q13",
+      "type": "mcq",
+      "stemEn": "The clown told a ____ story, and everyone laughed.",
+      "stemZh": "小丑講了一個滑稽的故事，大家都笑了。",
+      "options": [
+        "singing",
+        "comic",
+        "audio",
+        "composer"
+      ],
+      "optionGlossZh": [
+        "唱歌",
+        "滑稽的",
+        "聲音的",
+        "作曲家"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u15-l04-q14",
+      "type": "reading",
+      "passageEn": "Last Saturday was Amy's son's birthday, so she took him to an amusement park. There was a funny clown who told comic stories. Then a young man did a short rap, and all the children joined in the singing. \"This is my best birthday ever!\" her son said.",
+      "passageZh": "上週六是 Amy 兒子的生日，所以她帶他去遊樂園。那裡有一個很好笑的小丑在講滑稽的故事。接著一位年輕人表演了一段饒舌，所有孩子都跟著一起唱。她兒子說：「這是我過過最棒的生日！」",
+      "questions": [
+        {
+          "questionZh": "Amy 帶兒子去哪裡？",
+          "options": [
+            "海邊",
+            "動物園",
+            "遊樂園"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "小丑做了什麼？",
+          "options": [
+            "講滑稽的故事",
+            "表演饒舌",
+            "變魔術"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q15",
+      "type": "translate",
+      "promptZh": "我喜歡在睡前聽有聲故事。",
+      "hintWords": [
+        "audio"
+      ],
+      "referenceEn": [
+        "I like to listen to audio stories before bed.",
+        "I like listening to audio stories before I go to bed."
+      ],
+      "rubricZh": [
+        "「有聲故事」可寫 audio stories（audio 放在名詞前）",
+        "「睡前」可寫例如 before bed、before I go to bed"
+      ]
+    },
+    {
+      "id": "a2-u15-l04-q16",
+      "type": "makeSentence",
+      "targetWord": "singing",
+      "instructionZh": "用 singing 造一個句子，說說你或家人唱歌的情形。",
+      "referenceEn": [
+        "My mother's singing is better than mine.",
+        "I enjoy singing in the shower."
+      ],
+      "rubricZh": [
+        "singing 當名詞表示「唱歌；歌聲」（例如 her singing、enjoy singing）",
+        "主詞和動詞要搭配（例如 My mother's singing is）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u15-l04-q09": [
+        0
+      ],
+      "a2-u15-l04-q12": [
+        3
+      ],
+      "a2-u15-l04-q13": [
+        1
+      ],
+      "a2-u15-l04-q14#0": [
+        2
+      ],
+      "a2-u15-l04-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：第②關：\"made a comic face\" 不道地，慣用說法是 made a funny face；comic 作形容詞多用於 comic story／comic actor；建議換題幹（例如 \"He told a ____ story, and everyone laughed.\"）。",
+        "resolution": "改為 \"The clown told a ____ story, and everyone laughed.\"（原 \"The clown made a ____ face, and everyone laughed.\"）；made a comic face 不道地，改 comic story；選項與正解不變",
+        "resolvedAt": "2026-10-02T15:18:49Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：題幹中譯同步",
+        "resolution": "改為 \"小丑講了一個滑稽的故事，大家都笑了。\"（原 \"小丑做了一個滑稽的表情，大家都笑了。\"）",
+        "resolvedAt": "2026-10-02T15:18:49Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（The clown made the children laugh）和 q13（everyone laughed）雷同，改單字卡",
+        "resolution": "改為 \"The clown had a red nose and big shoes.\"（原 \"The clown made the children laugh.\"）",
+        "resolvedAt": "2026-10-02T15:18:49Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"那個小丑有紅鼻子和一雙大鞋子。\"（原 \"小丑逗得孩子們哈哈大笑。\"）",
+        "resolvedAt": "2026-10-02T15:18:49Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同 q12",
+        "resolution": "改為 \"The composer wrote this song for his wife.\"（原 \"Mozart was a famous composer.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"這位作曲家為他太太寫了這首歌。\"（原 \"莫札特是一位有名的作曲家。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長最終複審修正：Mozart 已不再使用，移出專有名詞",
+        "resolution": "改為 [\"Beethoven\",\"Amy\"]（原 [\"Mozart\",\"Beethoven\",\"Amy\"]）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同 q10",
+        "resolution": "改為 \"This comic is about a cat and a dog.\"（原 \"My son reads comics every night.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"這本漫畫在講一隻貓和一隻狗。\"（原 \"我兒子每天晚上都看漫畫。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同 q16 參考答案",
+        "resolution": "改為 \"We heard singing from the next room.\"（原 \"Her singing is beautiful.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"我們聽到隔壁房間傳來歌聲。\"（原 \"她的歌聲很美。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/13/questions/1/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"表演一段饒舌歌\"（原 \"表演饒舌\"）",
+        "resolvedAt": "2026-10-02T17:56:46Z"
+      },
+      {
+        "path": "items/8/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u15-l04-q09 目標第 1 長、消除單題異常值（改了選項 2、3）",
+        "resolution": "改為 [\"A clown\",\"A cook\",\"A cop\"]（原 [\"A clown\",\"A singer from TV\",\"A famous composer\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u15-l04-q14#1 目標第 1 長、消除單題異常值（改了選項 2）",
+        "resolution": "改為 [\"講滑稽的故事\",\"表演饒舌\",\"變魔術\"]（原 [\"講滑稽的故事\",\"表演一段饒舌歌\",\"變魔術\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      }
+    ]
+  }
+}

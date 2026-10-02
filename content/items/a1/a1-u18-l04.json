@@ -115,9 +115,9 @@
       "audioZh": "我們贏了比賽！真是太刺激了。",
       "questionZh": "說話者覺得比賽怎麼樣？",
       "options": [
-        "Boring",
+        "Very boring",
         "Exciting",
-        "Sad"
+        "Not fun"
       ],
       "answer": 1
     },
@@ -180,8 +180,8 @@
         {
           "questionZh": "Amy 明天要做什麼？",
           "options": [
-            "參加考試",
-            "搬家",
+            "去參加學校考試",
+            "搬家到新的城市",
             "第一次去日本"
           ],
           "answer": 2
@@ -293,6 +293,18 @@
         "message": "執行長抽審修正：dollar(s) 中譯全 A1 統一為「美元」",
         "resolution": "改前：\"我在街上撿到十元，我真幸運！\"；改後：\"我在街上撿到十美元，我真幸運！\"",
         "resolvedAt": "2026-10-02T13:31:18Z"
+      },
+      {
+        "path": "items/8/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u18-l04-q09 目標第 2 長、消除單題異常值（改了選項 1、3）",
+        "resolution": "改為 [\"Very boring\",\"Exciting\",\"Not fun\"]（原 [\"Boring\",\"Exciting\",\"Sad\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/13/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u18-l04-q14#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
+        "resolution": "改為 [\"去參加學校考試\",\"搬家到新的城市\",\"第一次去日本\"]（原 [\"參加考試\",\"搬家\",\"第一次去日本\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u14-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:00:12Z",
+  "properNouns": [
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a2-u14-l01-q01",
+      "type": "wordCard",
+      "word": "pill",
+      "exampleEn": "There is a small box of pills on the table.",
+      "exampleZh": "桌上有一小盒藥丸。",
+      "glossZh": "藥丸；藥片",
+      "distractorsZh": [
+        "糖果",
+        "鈕扣",
+        "硬幣"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q02",
+      "type": "wordCard",
+      "word": "wheelchair",
+      "exampleEn": "This bus has space for a wheelchair.",
+      "exampleZh": "這輛公車有放輪椅的空間。",
+      "glossZh": "輪椅",
+      "distractorsZh": [
+        "嬰兒車",
+        "腳踏車",
+        "沙發"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q03",
+      "type": "wordCard",
+      "word": "harmful",
+      "exampleEn": "Strong sunlight can be harmful to old paintings.",
+      "exampleZh": "強烈的陽光可能會損害老畫作。",
+      "glossZh": "有害的",
+      "distractorsZh": [
+        "有益的",
+        "舒服的",
+        "便宜的"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q04",
+      "type": "wordCard",
+      "word": "dentist",
+      "exampleEn": "My son is afraid of the dentist.",
+      "exampleZh": "我兒子很怕看牙醫。",
+      "glossZh": "牙醫",
+      "distractorsZh": [
+        "護理師",
+        "藥師",
+        "理髮師"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q05",
+      "type": "wordCard",
+      "word": "die",
+      "exampleEn": "My plants died because I forgot to give them water.",
+      "exampleZh": "我的植物枯死了，因為我忘了給它們澆水。",
+      "glossZh": "死；（植物）枯死",
+      "distractorsZh": [
+        "長大",
+        "開花",
+        "搬家"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q06",
+      "type": "wordCard",
+      "word": "death",
+      "exampleEn": "The story begins with the death of an old king.",
+      "exampleZh": "這個故事從一位老國王的死開始。",
+      "glossZh": "死亡",
+      "distractorsZh": [
+        "出生",
+        "婚禮",
+        "生日"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q07",
+      "type": "wordCard",
+      "word": "drug",
+      "exampleEn": "Scientists are working on a new drug for colds.",
+      "exampleZh": "科學家正在研發一種治感冒的新藥。",
+      "glossZh": "藥；藥物",
+      "distractorsZh": [
+        "食物",
+        "衣服",
+        "玩具"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q08",
+      "type": "wordCard",
+      "word": "patient",
+      "exampleEn": "The doctor sees thirty patients a day.",
+      "exampleZh": "這位醫生一天看三十個病人。",
+      "glossZh": "病人",
+      "distractorsZh": [
+        "醫生",
+        "護理師",
+        "訪客"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q09",
+      "type": "wordCard",
+      "word": "medical",
+      "exampleEn": "The town needs more medical workers.",
+      "exampleZh": "這個小鎮需要更多醫療人員。",
+      "glossZh": "醫學的；醫療的",
+      "distractorsZh": [
+        "音樂的",
+        "藝術的",
+        "體育的"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "My grandfather keeps his pills in the kitchen.",
+      "sentenceZh": "我爺爺把他的藥丸放在廚房。"
+    },
+    {
+      "id": "a2-u14-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "The new hospital has two hundred beds for patients.",
+      "audioZh": "新醫院有兩百張病床。",
+      "questionZh": "新醫院有幾張病床？",
+      "options": [
+        "Two thousand",
+        "Two hundred",
+        "Twenty"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u14-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Some plants are harmful to cats.",
+      "sentenceZh": "有些植物對貓有害。"
+    },
+    {
+      "id": "a2-u14-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "This drug is only for adults.",
+      "sentenceZh": "這種藥只限成人使用。"
+    },
+    {
+      "id": "a2-u14-l01-q14",
+      "type": "mcq",
+      "stemEn": "My tooth hurts. I need to see a ____.",
+      "stemZh": "我牙齒好痛，我得去看牙醫。",
+      "options": [
+        "pill",
+        "wheelchair",
+        "dentist",
+        "death"
+      ],
+      "optionGlossZh": [
+        "藥丸",
+        "輪椅",
+        "牙醫",
+        "死亡"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u14-l01-q15",
+      "type": "mcq",
+      "stemEn": "Some flowers ____ in the cold winter.",
+      "stemZh": "有些花在寒冷的冬天會枯死。",
+      "options": [
+        "harmful",
+        "medical",
+        "die",
+        "patient"
+      ],
+      "optionGlossZh": [
+        "有害的",
+        "醫學的",
+        "枯死",
+        "病人"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u14-l01-q16",
+      "type": "reading",
+      "passageEn": "Amy is a medical student. On weekends, she helps at a hospital. She pushes patients in wheelchairs and talks with them. She also helps the nurses carry things. Many of the patients are old and lonely. \"Talking with them makes me happy,\" she says. After she finishes school, she wants to work in her hometown.",
+      "passageZh": "Amy 是醫學系的學生。週末她會去醫院幫忙。她幫病人推輪椅、陪他們聊天，也幫護理師搬東西。很多病人年紀大了，又很寂寞。她說：「跟他們聊天讓我很開心。」畢業後，她想回家鄉工作。",
+      "questions": [
+        {
+          "questionZh": "Amy 週末做什麼？",
+          "options": [
+            "去學校上課",
+            "去醫院幫忙",
+            "出去旅行"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Amy 覺得跟病人聊天怎麼樣？",
+          "options": [
+            "讓她很緊張",
+            "讓她很累",
+            "讓她很開心"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q17",
+      "type": "translate",
+      "promptZh": "這本書寫的是一位畫家的一生與死亡。",
+      "hintWords": [
+        "death"
+      ],
+      "referenceEn": [
+        "This book is about the life and death of a painter.",
+        "This book tells the life and death of a painter."
+      ],
+      "rubricZh": [
+        "「死亡」用名詞 death",
+        "「⋯的一生」可寫例如 the life of…；「寫的是」可寫例如 is about、tells"
+      ]
+    },
+    {
+      "id": "a2-u14-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "medical",
+      "instructionZh": "用 medical 造一個句子，說說和醫學或醫療有關的人、地方或東西。",
+      "referenceEn": [
+        "My sister wants to go to medical school.",
+        "This hospital has new medical machines."
+      ],
+      "rubricZh": [
+        "medical 放在名詞前，表示「醫學的；醫療的」（例如 medical school、medical machines）",
+        "主詞和動詞要搭配（例如 This hospital has）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u14-l01-q11": [
+        1
+      ],
+      "a2-u14-l01-q14": [
+        2
+      ],
+      "a2-u14-l01-q15": [
+        2
+      ],
+      "a2-u14-l01-q16#0": [
+        1
+      ],
+      "a2-u14-l01-q16#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：\"After school, she wants to work in her hometown.\" 的 After school 一般理解為「放學後」，與 passageZh「畢業後」不符；英文宜改 \"After she finishes school\"／\"After she graduates\"。",
+        "resolution": "改為 \"Amy is a medical student. On weekends, she helps at a hospital. She pushes patients in wheelchairs and talks with them. She also helps the nurses carry things. Many of the patients are old and lonely. \\\"Talking with them makes me happy,\\\" she says. After she finishes school, she wants to work in her hometown.\"（原 \"Amy is a medical student. On weekends, she helps at a hospital. She pushes patients in wheelchairs and talks with them. She also helps the nurses count pills. Many of the patients are old and lonely. \\\"Talking with them makes me happy,\\\" she says. After school, she wants to work in her hometown.\"）；After school 改 After she finishes school（第③關 FIX 同）；清點藥物改搬東西",
+        "resolvedAt": "2026-10-02T15:16:15Z"
+      },
+      {
+        "path": "items/15/passageZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"Amy 是醫學系的學生。週末她會去醫院幫忙。她幫病人推輪椅、陪他們聊天，也幫護理師搬東西。很多病人年紀大了，又很寂寞。她說：「跟他們聊天讓我很開心。」畢業後，她想回家鄉工作。\"（原 \"Amy 是醫學系的學生。週末她會去醫院幫忙。她幫病人推輪椅、陪他們聊天，也幫護理師清點藥丸。很多病人年紀大了，又很寂寞。她說：「跟他們聊天讓我很開心。」畢業後，她想回家鄉工作。\"）",
+        "resolvedAt": "2026-10-02T15:16:15Z"
+      },
+      {
+        "path": "items/9/sentenceEn",
+        "message": "執行長第②③關裁示修正：閱讀拿掉 pills 後補 pill 的情境（dentist 仍有 q14）",
+        "resolution": "改為 \"My grandfather keeps his pills in the kitchen.\"（原 \"My appointment with the dentist is at three.\"）",
+        "resolvedAt": "2026-10-02T15:16:15Z"
+      },
+      {
+        "path": "items/9/sentenceZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我爺爺把他的藥丸放在廚房。\"（原 \"我和牙醫約在三點。\"）",
+        "resolvedAt": "2026-10-02T15:16:15Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：依裁示：避免 makes drugs 這類易讀成毒品的句子，改藥妝店情境",
+        "resolution": "改為 \"This drug is sold in every drugstore.\"（原 \"This company makes drugs.\"）",
+        "resolvedAt": "2026-10-02T15:16:15Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"這種藥每家藥妝店都買得到。\"（原 \"這家公司生產藥品。\"）",
+        "resolvedAt": "2026-10-02T15:16:15Z"
+      },
+      {
+        "path": "items/14/stemEn",
+        "message": "執行長最終複審修正：雷同：題幹主詞＋情境同卡；選項與正解位置不變",
+        "resolution": "改為 \"Some flowers ____ in the cold winter.\"（原 \"The flowers will ____ without water.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/14/stemZh",
+        "message": "執行長最終複審修正：題幹中譯同步",
+        "resolution": "改為 \"有些花在寒冷的冬天會枯死。\"（原 \"這些花沒有水就會枯死。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋句型同 q13",
+        "resolution": "改為 \"Scientists are working on a new drug for colds.\"（原 \"This drug is sold in every drugstore.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"科學家正在研發一種治感冒的新藥。\"（原 \"這種藥每家藥妝店都買得到。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：內容界線（不寫飲食建議）：原句「吃太多糖可能對牙齒有害」屬飲食建議，改中性情境",
+        "resolution": "改為 \"Strong sunlight can be harmful to old paintings.\"（原 \"Too much sugar can be harmful to your teeth.\"）",
+        "resolvedAt": "2026-10-02T17:47:01Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：內容界線（不寫飲食建議）：中譯同步",
+        "resolution": "改為 \"強烈的陽光可能會損害老畫作。\"（原 \"吃太多糖可能對牙齒有害。\"）",
+        "resolvedAt": "2026-10-02T17:47:01Z"
+      }
+    ]
+  }
+}

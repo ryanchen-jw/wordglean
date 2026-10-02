@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u12-l03",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:49:07Z",
+  "properNouns": [
+    "Kaohsiung",
+    "Taiwan",
+    "Hualien",
+    "Tokyo",
+    "Japan",
+    "English",
+    "Chinese",
+    "Amy",
+    "Seoul",
+    "Korea",
+    "Canada"
+  ],
+  "items": [
+    {
+      "id": "a2-u12-l03-q01",
+      "type": "wordCard",
+      "word": "south",
+      "exampleEn": "Many birds fly south in winter.",
+      "exampleZh": "很多鳥在冬天往南飛。",
+      "glossZh": "南方；南部；往南",
+      "distractorsZh": [
+        "北方",
+        "東方",
+        "西方"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q02",
+      "type": "wordCard",
+      "word": "west",
+      "exampleEn": "The sun goes down in the west.",
+      "exampleZh": "太陽從西邊落下。",
+      "glossZh": "西方；西邊",
+      "distractorsZh": [
+        "東方",
+        "南方",
+        "北方"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q03",
+      "type": "wordCard",
+      "word": "east",
+      "exampleEn": "Hualien is on the east coast of Taiwan.",
+      "exampleZh": "花蓮在台灣東岸。",
+      "glossZh": "東方；東部",
+      "distractorsZh": [
+        "西方",
+        "南方",
+        "北方"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q04",
+      "type": "wordCard",
+      "word": "direction",
+      "exampleEn": "Which direction is the station in?",
+      "exampleZh": "車站在哪個方向？",
+      "glossZh": "方向",
+      "distractorsZh": [
+        "距離",
+        "時間",
+        "價格"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q05",
+      "type": "wordCard",
+      "word": "capital",
+      "exampleEn": "We visited the capital last summer.",
+      "exampleZh": "我們去年夏天去了首都。",
+      "glossZh": "首都",
+      "distractorsZh": [
+        "港口",
+        "小鎮",
+        "邊界"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q06",
+      "type": "wordCard",
+      "word": "village",
+      "exampleEn": "There is only one shop in our village.",
+      "exampleZh": "我們村子裡只有一家商店。",
+      "glossZh": "村莊",
+      "distractorsZh": [
+        "城市",
+        "首都",
+        "機場"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q07",
+      "type": "wordCard",
+      "word": "native",
+      "exampleEn": "My teacher's native country is Canada.",
+      "exampleZh": "我老師的母國是加拿大。",
+      "glossZh": "本國的；母語的",
+      "distractorsZh": [
+        "困難的",
+        "外國的",
+        "正式的"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q08",
+      "type": "wordCard",
+      "word": "zone",
+      "exampleEn": "This is a quiet zone. Please don't talk loudly.",
+      "exampleZh": "這裡是安靜區，請不要大聲說話。",
+      "glossZh": "區域；地帶",
+      "distractorsZh": [
+        "時間",
+        "價格",
+        "方向"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "Drive west for about ten minutes.",
+      "sentenceZh": "往西開大約十分鐘。"
+    },
+    {
+      "id": "a2-u12-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "The village is about thirty minutes east of the city.",
+      "audioZh": "那個村莊在城市東邊，大約三十分鐘的路程。",
+      "questionZh": "村莊在城市的哪一邊？",
+      "options": [
+        "East",
+        "West",
+        "North"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u12-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "Drive slowly in the school zone.",
+      "sentenceZh": "在學校周邊區域請慢慢開。"
+    },
+    {
+      "id": "a2-u12-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "Many young people moved from the village to the capital.",
+      "sentenceZh": "很多年輕人從村莊搬到了首都。"
+    },
+    {
+      "id": "a2-u12-l03-q13",
+      "type": "mcq",
+      "stemEn": "Tokyo is the ____ of Japan.",
+      "stemZh": "東京是日本的首都。",
+      "options": [
+        "direction",
+        "village",
+        "zone",
+        "capital"
+      ],
+      "optionGlossZh": [
+        "方向",
+        "村莊",
+        "區域",
+        "首都"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u12-l03-q14",
+      "type": "mcq",
+      "stemEn": "Is Chinese your ____ language?",
+      "stemZh": "中文是你的母語嗎？",
+      "options": [
+        "native",
+        "west",
+        "direction",
+        "capital"
+      ],
+      "optionGlossZh": [
+        "母語的",
+        "西方",
+        "方向",
+        "首都"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u12-l03-q15",
+      "type": "reading",
+      "passageEn": "Amy grew up in a small village in the south of Taiwan. When she was eighteen, she moved north to study in a big city. At first, she often got lost because she had no sense of direction. Now she works in an office in the east of the city. But every New Year, she goes back to her village.",
+      "passageZh": "Amy 在台灣南部的一個小村莊長大。十八歲時，她搬到北部的大城市讀書。一開始她常常迷路，因為她完全沒有方向感。現在她在城市東區的一間辦公室工作。不過每年過年，她都會回到她的村莊。",
+      "questions": [
+        {
+          "questionZh": "Amy 在哪裡長大？",
+          "options": [
+            "台灣南部的小村莊",
+            "台灣北部的大城市",
+            "東部的海邊"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Amy 一開始為什麼常常迷路？",
+          "options": [
+            "她沒有手機",
+            "她不會說當地的話",
+            "她沒有方向感"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q16",
+      "type": "translate",
+      "promptZh": "首爾是韓國的首都。",
+      "hintWords": [
+        "capital"
+      ],
+      "referenceEn": [
+        "Seoul is the capital of Korea.",
+        "The capital of Korea is Seoul."
+      ],
+      "rubricZh": [
+        "「首都」用 capital",
+        "「⋯的首都」可寫 the capital of＋國家"
+      ]
+    },
+    {
+      "id": "a2-u12-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "direction",
+      "instructionZh": "用 direction 造一個句子，問路或說明要往哪個方向走。",
+      "referenceEn": [
+        "Is the museum in this direction?",
+        "Go in this direction for five minutes."
+      ],
+      "rubricZh": [
+        "direction 表示「方向」（例如 this direction、the wrong direction）",
+        "介系詞可寫例如 in this direction、in the wrong direction（寫 go this direction 也可以）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u12-l03-q10": [
+        0
+      ],
+      "a2-u12-l03-q13": [
+        3
+      ],
+      "a2-u12-l03-q14": [
+        0
+      ],
+      "a2-u12-l03-q15#0": [
+        0
+      ],
+      "a2-u12-l03-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：「Which direction is the station?」口語勉強可通，但較道地是 \"Which direction is the station in?\" 或 \"Which way is the station?\"；當單字卡範例宜用標準句。",
+        "resolution": "改為 \"Which direction is the station in?\"（原 \"Which direction is the station?\"）；照建議改標準句",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/16/referenceEn/0",
+        "message": "執行長第②③關裁示修正：第②關：\"Can you tell me the direction to the museum?\" 不道地：問路要用 directions（複數，指路線說明）或 the way to；單數 the direction to 是錯誤示範。",
+        "resolution": "改為 \"Is the museum in this direction?\"（原 \"Can you tell me the direction to the museum?\"）；the direction to 不道地，改用 in this direction 問路",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：第②關：「「往這個方向」用 in this direction」寫死；Go this direction（美式常見）也正確，且題目不一定要寫「往這個方向」；建議改「例如 in this direction、the wrong direction」並不作必要條件。",
+        "resolution": "改為 \"介系詞可寫例如 in this direction、in the wrong direction（寫 go this direction 也可以）\"（原 \"「往這個方向」用 in this direction\"）；改成「例如」，不當必要條件",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：「the business zone」不自然，一般說 business district／business area；zone 搭配宜改用 quiet zone、time zone 等常見用法。",
+        "resolution": "改為 \"Amy grew up in a small village in the south of Taiwan. When she was eighteen, she moved north to study in a big city. At first, she often got lost because she had no sense of direction. Now she works in an office in the east of the city. But every New Year, she goes back to her village.\"（原 \"Amy grew up in a small village in the south of Taiwan. When she was eighteen, she moved north to study in a big city. At first, she often got lost because she had no sense of direction. Now she works in the business zone in the east of the city. But every New Year, she goes back to her village.\"）；business zone 不自然；zone 改在 q11 跟讀句用常見搭配",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"Amy 在台灣南部的一個小村莊長大。十八歲時，她搬到北部的大城市讀書。一開始她常常迷路，因為她完全沒有方向感。現在她在城市東區的一間辦公室工作。不過每年過年，她都會回到她的村莊。\"（原 \"Amy 在台灣南部的一個小村莊長大。十八歲時，她搬到北部的大城市讀書。一開始她常常迷路，因為她完全沒有方向感。現在她在城市東區的商業區工作。不過每年過年，她都會回到她的村莊。\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：閱讀拿掉 zone 後補 zone 的常見搭配情境（direction 仍有閱讀與 q17）",
+        "resolution": "改為 \"You can't park here. It's a no-parking zone.\"（原 \"We walked in the wrong direction.\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"這裡不能停車，這是禁止停車區。\"（原 \"我們走錯方向了。\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（Kaohsiung is in the south of Taiwan）和閱讀（in the south of Taiwan）雷同，改單字卡",
+        "resolution": "改為 \"Many birds fly south in winter.\"（原 \"Kaohsiung is in the south of Taiwan.\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"很多鳥在冬天往南飛。\"（原 \"高雄在台灣南部。\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長第②③關裁示修正：釋義對上例句用法",
+        "resolution": "改為 \"南方；南部；往南\"（原 \"南方；南部\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（not my native language）和 q14（your native language?）雷同，改單字卡",
+        "resolution": "改為 \"My teacher's native country is Canada.\"（原 \"English is not my native language.\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我老師的祖國是加拿大。\"（原 \"英文不是我的母語。\"）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "properNouns",
+        "message": "執行長第②③關裁示修正：新增 Canada",
+        "resolution": "改為 [\"Kaohsiung\",\"Taiwan\",\"Hualien\",\"Tokyo\",\"Japan\",\"English\",\"Chinese\",\"Amy\",\"Seoul\",\"Korea\",\"Canada\"]（原 [\"Kaohsiung\",\"Taiwan\",\"Hualien\",\"Tokyo\",\"Japan\",\"English\",\"Chinese\",\"Amy\",\"Seoul\",\"Korea\"]）",
+        "resolvedAt": "2026-10-02T15:12:38Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：「祖國」在台灣帶政治意涵，改「母國」",
+        "resolution": "改為 \"我老師的母國是加拿大。\"（原 \"我老師的祖國是加拿大。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同閱讀",
+        "resolution": "改為 \"There is only one shop in our village.\"（原 \"My grandmother lives in a small village in the mountains.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"我們村子裡只有一家商店。\"（原 \"我奶奶住在山上的一個小村莊。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長最終複審修正：雷同：跟讀句主詞＋句型同卡",
+        "resolution": "改為 \"Drive slowly in the school zone.\"（原 \"You can't park here. It's a no-parking zone.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"在學校周邊區域請慢慢開。\"（原 \"這裡不能停車，這是禁止停車區。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"台灣北部的大城市\"（原 \"北部的大城市\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      }
+    ]
+  }
+}

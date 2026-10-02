@@ -127,7 +127,7 @@
       "options": [
         "It is too cold.",
         "It is too hot.",
-        "It is raining."
+        "It is raining hard."
       ],
       "answer": 0
     },
@@ -199,8 +199,8 @@
         {
           "questionZh": "他們什麼時候回家？",
           "options": [
-            "下雨的時候",
-            "中午",
+            "開始下大雨的時候",
+            "中午太陽很大的時候",
             "傍晚變冷的時候"
           ],
           "answer": 2
@@ -297,6 +297,24 @@
         "message": "執行長第②③關裁示修正：第③關 S15：參考答案要說到「最喜歡」",
         "resolution": "改前：\"I like animals, and I love dogs.\"；改後：\"I love dogs. They are my favorite animals.\"",
         "resolvedAt": "2026-10-02T12:41:45Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"開始下大雨的時候\"（原 \"下雨的時候\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"It is raining hard.\"（原 \"It is raining.\"）",
+        "resolvedAt": "2026-10-02T17:55:45Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u15-l02-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
+        "resolution": "改為 [\"開始下大雨的時候\",\"中午太陽很大的時候\",\"傍晚變冷的時候\"]（原 [\"開始下大雨的時候\",\"中午\",\"傍晚變冷的時候\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

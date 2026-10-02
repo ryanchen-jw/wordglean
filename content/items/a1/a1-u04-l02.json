@@ -196,9 +196,9 @@
         {
           "questionZh": "王家的寶寶是男生還是女生？",
           "options": [
-            "男生",
-            "女生",
-            "文中沒有說"
+            "男孩子",
+            "女孩",
+            "文中沒說"
           ],
           "answer": 0
         },
@@ -332,6 +332,12 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Tainan\",\"Japanese\",\"Korean\",\"Lin\",\"Wang\",\"Mr\",\"Mrs\"]；改後：[\"Tainan\",\"Japanese\",\"Korean\",\"Lin\",\"Wang\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u04-l02-q15#0 目標第 2 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）",
+        "resolution": "改為 [\"男孩子\",\"女孩\",\"文中沒說\"]（原 [\"男生\",\"女生\",\"文中沒有說\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

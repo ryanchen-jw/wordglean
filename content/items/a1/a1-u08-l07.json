@@ -117,7 +117,7 @@
       "options": [
         "A chocolate cake",
         "Corn soup",
-        "Rice"
+        "Rice and fish"
       ],
       "answer": 0
     },
@@ -180,7 +180,7 @@
         {
           "questionZh": "爸爸早餐做了什麼？",
           "options": [
-            "麵包和牛奶",
+            "麵包、牛奶和水果",
             "飯、蛋和玉米湯",
             "巧克力蛋糕"
           ],
@@ -191,7 +191,7 @@
           "options": [
             "巧克力蛋糕",
             "一隻火雞",
-            "一盒餅乾"
+            "一大盒巧克力餅乾"
           ],
           "answer": 0
         }
@@ -330,6 +330,24 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「巧克力蛋糕」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:40:31Z"
+      },
+      {
+        "path": "items/13/questions/0/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"麵包、牛奶和水果\"（原 \"麵包和牛奶\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/13/questions/1/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"一大盒巧克力餅乾\"（原 \"一盒餅乾\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/8/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u08-l07-q09 目標第 1 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"A chocolate cake\",\"Corn soup\",\"Rice and fish\"]（原 [\"A chocolate cake\",\"Corn soup\",\"Rice\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

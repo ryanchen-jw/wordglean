@@ -5,7 +5,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { blockingErrors, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
+import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
 import { loadCheckContext } from '../scripts/lib/items-context.mjs';
 
 const base = loadCheckContext({ allowlist: 'no-such-file.json' });
@@ -95,6 +95,15 @@ test('開發端撰寫與 A2 回報撞到的 opencc 誤擋：傢伙、打開、�
   card(doc, 1).exampleZh = '這是一種新類型的手機，門的代碼是多少？';
   card(doc, 2).exampleZh = '我的夾克扣不起來，請查看這張圖像。';
   card(doc, 3).exampleZh = '我了解這台通信設備，它很高級，請不要觸摸。';
+  assert.deepEqual(checkA1(doc), []);
+});
+
+test('A2 第 2 批回報的 opencc 誤擋：家具、攀岩、你家什麼（家什）、祕書', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleZh = '我們替客廳買了一些新家具。';
+  card(doc, 1).exampleZh = '攀岩很難，但很刺激。';
+  card(doc, 2).exampleZh = '說說你家什麼時候會烤肉。';
+  card(doc, 3).exampleZh = '請留言給我的祕書。';
   assert.deepEqual(checkA1(doc), []);
 });
 
@@ -452,6 +461,70 @@ test('正解位置②：閱讀小題逐題計入（每篇 2 小題）', () => {
     items: [{ id: 'r', type: 'reading', questions: [{ options: ['a', 'b'], answer: 1 }, { options: ['a', 'b'], answer: 1 }] }],
   }));
   assert.deepEqual(codes(checkLevelAnswerPositions(docs)), ['ANSWER_POSITION_LEVEL A1']);
+});
+
+test('正解長度：選項依字元長度排名次，正解落在每個名次的比例（並列依區間攤分）同級同題型都要在隨機 ±12pp 內——三選一 21–45%、四選一 13–37%（≥20 題）→ ANSWER_LONGEST', () => {
+  // 三選一：r1＝正解最長、r2＝第二長、r3＝最短、tie＝正解與一個干擾項並列第 1–2 名（各記 0.5）
+  const q = (kind) => ({
+    r1: { options: ['六個字的正解', '五個字選項', '四個字的'], answer: 0 },
+    r2: { options: ['五個字正解', '六個字的選項', '四個字的'], answer: 0 },
+    r3: { options: ['四個字的', '五個字選項', '六個字的選項'], answer: 0 },
+    tie: { options: ['一樣長的', '一樣長的', '三個字'], answer: 0 },
+  })[kind];
+  const docs = (level, kinds) => kinds.map((kind, n) => ({
+    lessonId: `${level.toLowerCase()}-u01-l${String(n + 1).padStart(2, '0')}`,
+    level,
+    items: [{ id: 'r', type: 'reading', questions: [q(kind)] }],
+  }));
+  const spread = (a, b, c) => [...Array(a).fill('r1'), ...Array(b).fill('r2'), ...Array(c).fill('r3')];
+  const messages = (errors) => errors.map((e) => e.message).join('\n');
+  // 反例：正解永遠最長、永遠第二長、永遠最短 → 都要擋下
+  const always1 = checkAnswerLongest(docs('A1', spread(21, 0, 0)));
+  assert.match(messages(always1), /reading（3 選 1）正解是第 1 長（最長）的比例 100\.0%（21 題，應在 21%–45%）/);
+  assert.match(messages(always1), /第 3 長（最短）的比例 0\.0%/);
+  assert.match(messages(checkAnswerLongest(docs('A1', spread(0, 21, 0)))), /第 2 長的比例 100\.0%/);
+  assert.match(messages(checkAnswerLongest(docs('A1', spread(0, 0, 21)))), /第 3 長（最短）的比例 100\.0%/);
+  // 反例：正解永遠不是最長（第二長、最短各半）→ 最長 0% 低於下限
+  assert.match(messages(checkAnswerLongest(docs('A1', spread(0, 11, 10)))), /第 1 長（最長）的比例 0\.0%/);
+  // 反例：正解總在並列第 1–2 名 → 第 1、2 名各 50%、最短 0%
+  assert.deepEqual(codes(checkAnswerLongest(docs('A1', Array(20).fill('tie')))), ['ANSWER_LONGEST A1', 'ANSWER_LONGEST A1', 'ANSWER_LONGEST A1']);
+  // 均勻（7／7／7）、邊界內（9／7／5＝42.9%／33.3%／23.8%）→ 不報
+  assert.deepEqual(checkAnswerLongest(docs('B1', spread(7, 7, 7))), []);
+  assert.deepEqual(checkAnswerLongest(docs('B1', spread(9, 7, 5))), []);
+  // 不足 20 題不判（19 題全最長）
+  assert.deepEqual(checkAnswerLongest(docs('A1', spread(19, 0, 0))), []);
+  // 四選一 13–37%：counts[r]＝正解是第 r+1 長的題數（選項由長到短排，answer 即名次）
+  const mcq = (counts) => counts.flatMap((c, rank) => Array(c).fill(rank)).map((rank, n) => ({
+    lessonId: `a2-u01-l${String(n + 1).padStart(2, '0')}`,
+    level: 'A2',
+    items: [{ id: 'm', type: 'mcq', options: ['aaaa', 'bbb', 'cc', 'd'], answer: rank }],
+  }));
+  assert.deepEqual(checkAnswerLongest(mcq([5, 5, 5, 5])), []);
+  assert.deepEqual(checkAnswerLongest(mcq([7, 5, 5, 3])), []);
+  const second = checkAnswerLongest(mcq([4, 8, 4, 4]));
+  assert.deepEqual(codes(second), ['ANSWER_LONGEST A2']);
+  assert.match(second[0].message, /mcq（4 選 1）正解是第 2 長的比例 40\.0%（20 題，應在 13%–37%）/);
+  const low = messages(checkAnswerLongest(mcq([5, 5, 8, 2])));
+  assert.match(low, /第 3 長的比例 40\.0%/);
+  assert.match(low, /第 4 長（最短）的比例 10\.0%/);
+});
+
+test('正解長度：reading、listenChoice 單題任一選項長度 >其餘平均 2 倍或 <一半 → ANSWER_LONGEST（逐題、不論題數）；mcq 單字選項不套用', () => {
+  const lesson = (items) => [{ lessonId: 'a2-u01-l01', level: 'A2', items }];
+  const reading = (options) => ({ id: 'a2-u01-l01-q15', type: 'reading', questions: [{ options, answer: 1 }] });
+  // 反例：一個干擾項特別長（10 字 vs 其餘平均 4 字 → 2.5 倍）
+  const long = checkAnswerLongest(lesson([reading(['一張很舊的藏寶地圖呢', '四個字的', '四個字的'])]));
+  assert.deepEqual(codes(long), ['ANSWER_LONGEST a2-u01-l01']);
+  assert.match(long[0].message, /a2-u01-l01-q15#0（items\/0\/questions\/0）選項 1 長 10 字，其餘平均 4\.0 字（超過 2 倍）/);
+  // 反例：聽選一個選項特別短（3 字元 vs 其餘平均 17.5 → 不到一半）
+  const short = checkAnswerLongest(lesson([{ id: 'a2-u01-l01-q10', type: 'listenChoice', options: ['Wait at the corner', 'Cab', 'Go home right now'], answer: 0 }]));
+  assert.deepEqual(codes(short), ['ANSWER_LONGEST a2-u01-l01']);
+  assert.match(short[0].message, /q10（items\/0）選項 2 長 3 字，其餘平均 17\.5 字（不到一半）/);
+  // 剛好 2 倍、剛好一半不報
+  assert.deepEqual(checkAnswerLongest(lesson([reading(['八個字的選項呢呢', '四個字的', '四個字的'])])), []);
+  assert.deepEqual(checkAnswerLongest(lesson([reading(['兩字', '四個字的', '四個字的'])])), []);
+  // mcq 單字選項不套用（spy 3 字元 vs 其餘平均 9.3）
+  assert.deepEqual(checkAnswerLongest(lesson([{ id: 'a2-u01-l01-q13', type: 'mcq', options: ['hometown', 'nationality', 'foreigner', 'spy'], answer: 0 }])), []);
 });
 
 test('正解位置④：同一級 mcq 第 2 題對第 1 題的位置差固定（相鄰 ±1）→ ANSWER_POSITION_PATTERN；各差值平均則不報', () => {

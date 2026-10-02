@@ -195,17 +195,17 @@
           "questionZh": "林家要怎麼去機場？",
           "options": [
             "搭計程車",
-            "搭捷運",
-            "開車"
+            "搭捷運到機場",
+            "搭公車"
           ],
           "answer": 0
         },
         {
           "questionZh": "在東京他們要怎麼移動？",
           "options": [
-            "租車",
+            "租一台車自己開去玩",
             "搭地鐵和騎腳踏車",
-            "搭公車"
+            "搭觀光公車和計程車"
           ],
           "answer": 1
         }
@@ -313,6 +313,30 @@
         "message": "執行長第②③關裁示修正：第③關 D5：造句不收沒用 vacation 的 holiday",
         "resolution": "改前：\"「去度假」可用 go on vacation、on vacation 等（英式 holiday 也正確）\"；改後：\"「去度假」可用 go on vacation、on vacation 等\"",
         "resolvedAt": "2026-10-02T12:41:11Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"搭捷運到機場\"（原 \"搭捷運\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"租一台車自己開去玩\"（原 \"租車\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u12-l01-q15#0 目標第 2 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"搭計程車\",\"搭捷運到機場\",\"搭公車\"]（原 [\"搭計程車\",\"搭捷運到機場\",\"開車\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u12-l01-q15#1 目標第 3 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"租一台車自己開去玩\",\"搭地鐵和騎腳踏車\",\"搭觀光公車和計程車\"]（原 [\"租一台車自己開去玩\",\"搭地鐵和騎腳踏車\",\"搭公車\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

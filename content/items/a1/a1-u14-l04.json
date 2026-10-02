@@ -128,7 +128,7 @@
       "questionZh": "說話者要你先做什麼？",
       "options": [
         "Draw a picture",
-        "Watch TV",
+        "Watch TV now",
         "Do homework"
       ],
       "answer": 2
@@ -192,7 +192,7 @@
         {
           "questionZh": "Tina 在學校為什麼製作海報？",
           "options": [
-            "為了戲劇表演",
+            "為了班上的戲劇表演",
             "為了運動比賽",
             "為了學校的音樂會"
           ],
@@ -201,9 +201,9 @@
         {
           "questionZh": "Tina 的哥哥喜歡做什麼？",
           "options": [
-            "畫畫",
+            "在房間裡畫很多畫",
             "看電視上的足球",
-            "演戲"
+            "在學校演戲"
           ],
           "answer": 1
         }
@@ -329,6 +329,30 @@
         "message": "執行長第②③關裁示修正：第③關 FIX",
         "resolution": "改前：[\"用 What is your favorite …? 問最喜歡的東西（可縮寫成 What's）\",\"favorite 放在名詞前面（英式拼法 favourite 也正確）\"]；改後：[\"問最喜歡的東西例如用 What is your favorite …?（可縮寫成 What's）\",\"寫 Which sport do you like best? 也正確\",\"favorite 放在名詞前面（英式拼法 favourite 也正確）\"]",
         "resolvedAt": "2026-10-02T12:45:20Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"為了班上的戲劇表演\"（原 \"為了戲劇表演\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"在房間裡畫很多畫\"（原 \"畫畫\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u14-l04-q15#1 目標第 2 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"在房間裡畫很多畫\",\"看電視上的足球\",\"在學校演戲\"]（原 [\"在房間裡畫很多畫\",\"看電視上的足球\",\"演戲\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u14-l04-q10 目標第 3 長、消除單題異常值（改了選項 2）",
+        "resolution": "改為 [\"Draw a picture\",\"Watch TV now\",\"Do homework\"]（原 [\"Draw a picture\",\"Watch TV\",\"Do homework\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

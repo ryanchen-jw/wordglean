@@ -127,7 +127,7 @@
       "options": [
         "Under the table",
         "On the bed",
-        "On the chair"
+        "On the chair by the door"
       ],
       "answer": 0
     },
@@ -199,7 +199,7 @@
         {
           "questionZh": "床底下有什麼？",
           "options": [
-            "一雙鞋子",
+            "一雙舊的運動鞋",
             "一箱舊玩具",
             "一張照片"
           ],
@@ -310,6 +310,18 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「window」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:39:55Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"一雙舊的運動鞋\"（原 \"一雙鞋子\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"On the chair by the door\"（原 \"On the chair\"）",
+        "resolvedAt": "2026-10-02T17:55:45Z"
       }
     ]
   }

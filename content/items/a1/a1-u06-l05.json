@@ -126,8 +126,8 @@
       "questionZh": "老鼠在哪裡？",
       "options": [
         "Under the table",
-        "On the couch",
-        "In the toilet"
+        "On the old couch",
+        "On the kitchen chair"
       ],
       "answer": 0
     },
@@ -350,6 +350,18 @@
         "message": "執行長最終複審修正：評分要點放寬（第二輪建議漏改）",
         "resolution": "改前：\"用 Where is…? 問地點（可縮寫成 Where's）\"；改後：\"問地點例如用 Where is…?（可縮寫成 Where's）；寫 Where can I find the toilet? 也正確\"",
         "resolvedAt": "2026-10-02T13:26:22Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"On the old couch\"（原 \"On the couch\"）",
+        "resolvedAt": "2026-10-02T17:55:45Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u06-l05-q10 目標第 3 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"Under the table\",\"On the old couch\",\"On the kitchen chair\"]（原 [\"Under the table\",\"On the old couch\",\"In the toilet\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

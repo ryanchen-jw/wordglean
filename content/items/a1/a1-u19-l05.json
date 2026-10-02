@@ -203,8 +203,8 @@
           "questionZh": "誰不喜歡散步？",
           "options": [
             "Ken 和 Ben",
-            "老師",
-            "大家"
+            "老師和 Ken",
+            "只有 Ben"
           ],
           "answer": 0
         }
@@ -305,6 +305,12 @@
         "message": "執行長第②③關裁示修正：第②關：不寫死「不加 to」",
         "resolution": "改前：\"near 後面直接接地點，不加 to（例如 near my home）\"；改後：\"near 後面通常直接接地點（例如 near my home）\"",
         "resolvedAt": "2026-10-02T13:24:01Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u19-l05-q15#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
+        "resolution": "改為 [\"Ken 和 Ben\",\"老師和 Ken\",\"只有 Ben\"]（原 [\"Ken 和 Ben\",\"老師\",\"大家\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

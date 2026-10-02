@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u02-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:24:44Z",
+  "properNouns": [
+    "Japan",
+    "Nina"
+  ],
+  "items": [
+    {
+      "id": "a2-u02-l01-q01",
+      "type": "wordCard",
+      "word": "midnight",
+      "exampleEn": "I went to bed after midnight.",
+      "exampleZh": "我過了午夜才去睡覺。",
+      "glossZh": "午夜；半夜十二點",
+      "distractorsZh": [
+        "中午",
+        "傍晚",
+        "清晨"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q02",
+      "type": "wordCard",
+      "word": "noon",
+      "exampleEn": "Let's meet at noon tomorrow.",
+      "exampleZh": "我們明天中午見面吧。",
+      "glossZh": "中午；正午",
+      "distractorsZh": [
+        "午夜",
+        "黃昏",
+        "早上"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q03",
+      "type": "wordCard",
+      "word": "someday",
+      "exampleEn": "Someday I want to visit Japan.",
+      "exampleZh": "總有一天我想去日本。",
+      "glossZh": "（將來）總有一天",
+      "distractorsZh": [
+        "昨天",
+        "每天",
+        "最近"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q04",
+      "type": "wordCard",
+      "word": "calendar",
+      "exampleEn": "There is a big calendar on the kitchen wall.",
+      "exampleZh": "廚房牆上掛著一本大日曆。",
+      "glossZh": "日曆；行事曆",
+      "distractorsZh": [
+        "時鐘",
+        "地圖",
+        "筆記本"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q05",
+      "type": "wordCard",
+      "word": "weekday",
+      "exampleEn": "The museum is quiet on weekdays.",
+      "exampleZh": "博物館平日很安靜。",
+      "glossZh": "平日；工作日",
+      "distractorsZh": [
+        "週末",
+        "假日",
+        "生日"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q06",
+      "type": "wordCard",
+      "word": "timetable",
+      "exampleEn": "Let's check the bus timetable.",
+      "exampleZh": "我們來查一下公車時刻表吧。",
+      "glossZh": "時刻表",
+      "distractorsZh": [
+        "車票",
+        "地圖",
+        "菜單"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q07",
+      "type": "wordCard",
+      "word": "lunchtime",
+      "exampleEn": "The restaurant is very busy at lunchtime.",
+      "exampleZh": "這家餐廳午餐時間非常忙。",
+      "glossZh": "午餐時間",
+      "distractorsZh": [
+        "下班時間",
+        "睡覺時間",
+        "早餐時間"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q08",
+      "type": "wordCard",
+      "word": "finally",
+      "exampleEn": "The bus finally came after an hour.",
+      "exampleZh": "等了一個小時，公車終於來了。",
+      "glossZh": "終於；最後",
+      "distractorsZh": [
+        "馬上",
+        "從來不",
+        "已經"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "The last train leaves at midnight.",
+      "sentenceZh": "最後一班火車午夜發車。"
+    },
+    {
+      "id": "a2-u02-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "On weekdays, the bus comes every ten minutes.",
+      "audioZh": "平日公車每十分鐘來一班。",
+      "questionZh": "平日公車多久來一班？",
+      "options": [
+        "Every ten minutes",
+        "Every five minutes",
+        "Every hour"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u02-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "We finally finished the work at noon.",
+      "sentenceZh": "我們終於在中午把工作做完了。"
+    },
+    {
+      "id": "a2-u02-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "I'll call you at lunchtime.",
+      "sentenceZh": "我午餐時間打電話給你。"
+    },
+    {
+      "id": "a2-u02-l01-q13",
+      "type": "mcq",
+      "stemEn": "We usually eat lunch at ____.",
+      "stemZh": "我們通常在中午吃午餐。",
+      "options": [
+        "midnight",
+        "night",
+        "noon",
+        "breakfast"
+      ],
+      "optionGlossZh": [
+        "午夜",
+        "晚上",
+        "中午",
+        "早餐"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u02-l01-q14",
+      "type": "mcq",
+      "stemEn": "Let me check the train ____ before we go.",
+      "stemZh": "出發前我先查一下火車時刻表。",
+      "options": [
+        "midnight",
+        "timetable",
+        "weekday",
+        "lunchtime"
+      ],
+      "optionGlossZh": [
+        "午夜",
+        "時刻表",
+        "平日",
+        "午餐時間"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u02-l01-q15",
+      "type": "reading",
+      "passageEn": "Nina works in an office from Monday to Friday. On weekdays, she gets up at seven and takes the train at eight. She always checks the timetable first. At lunchtime, she eats with her friends near the office. Last Friday, she worked till midnight because she had a lot of work. She finally got home at one in the morning. \"Someday I will take a long holiday,\" she said.",
+      "passageZh": "Nina 從星期一到星期五在辦公室上班。平日她七點起床、八點搭火車，也總是會先查時刻表。午餐時間，她和朋友在公司附近吃飯。上週五她因為工作很多，一直工作到午夜，終於在凌晨一點才到家。她說：「總有一天我要放個長假。」",
+      "questions": [
+        {
+          "questionZh": "Nina 平日幾點搭火車？",
+          "options": [
+            "七點",
+            "八點",
+            "九點"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "上週五 Nina 為什麼工作到午夜？",
+          "options": [
+            "火車停駛",
+            "她想放假",
+            "工作很多"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q16",
+      "type": "translate",
+      "promptZh": "我把會議寫在行事曆上了。",
+      "hintWords": [
+        "calendar"
+      ],
+      "referenceEn": [
+        "I wrote the meeting on my calendar.",
+        "I have put the meeting on my calendar."
+      ],
+      "rubricZh": [
+        "「寫在行事曆上」可寫例如 on my calendar、in my calendar",
+        "用過去式或現在完成式（例如 wrote、have put、added）"
+      ]
+    },
+    {
+      "id": "a2-u02-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "someday",
+      "instructionZh": "用 someday 造一個句子，說說你將來想做的一件事。",
+      "referenceEn": [
+        "Someday I want to open my own cafe.",
+        "I hope I can buy a house by the sea someday."
+      ],
+      "rubricZh": [
+        "someday 表示「將來總有一天」，放句首或句尾都可以（例如 Someday I…、…someday）",
+        "說想做的事可用例如 want to、hope to、will"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T13:12:04Z",
+    "verdicts": {
+      "a2-u02-l01-q10": [
+        0
+      ],
+      "a2-u02-l01-q13": [
+        2
+      ],
+      "a2-u02-l01-q14": [
+        1
+      ],
+      "a2-u02-l01-q15#0": [
+        1
+      ],
+      "a2-u02-l01-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/options",
+        "message": "執行長第②③關裁示修正：新規則：mcq 四選項同詞性（名詞），只能靠詞義判斷",
+        "resolution": "改為 [\"midnight\",\"night\",\"noon\",\"breakfast\"]（原 [\"someday\",\"calendar\",\"noon\",\"finally\"]）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長第②③關裁示修正：選項釋義同步",
+        "resolution": "改為 [\"午夜\",\"晚上\",\"中午\",\"早餐\"]（原 [\"總有一天\",\"日曆\",\"中午\",\"終於\"]）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：「廚房牆上掛著一份大日曆」量詞不自然，台灣說「一本大日曆」或「一個大月曆」。",
+        "resolution": "改為 \"廚房牆上掛著一本大日曆。\"（原 \"廚房牆上掛著一份大日曆。\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：\"She always checks the timetable first.\" 譯成「出門前一定先查時刻表」，多加了原文沒有的「出門前」；建議「她總是會先查時刻表」。",
+        "resolution": "改為 \"Nina 從星期一到星期五在辦公室上班。平日她七點起床、八點搭火車，也總是會先查時刻表。午餐時間，她和朋友在公司附近吃飯。上週五她因為工作很多，一直工作到午夜，終於在凌晨一點才到家。她說：「總有一天我要放個長假。」\"（原 \"Nina 從星期一到星期五在辦公室上班。平日她七點起床、八點搭火車，出門前一定先查時刻表。午餐時間，她和朋友在公司附近吃飯。上週五她因為工作很多，一直工作到午夜，終於在凌晨一點才到家。她說：「總有一天我要放個長假。」\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關疑似：要點前後矛盾，改成「例如」並列",
+        "resolution": "改為 \"「寫在行事曆上」可寫例如 on my calendar、in my calendar\"（原 \"「寫在行事曆上」用 on（例如 on my calendar、in my calendar 也可以）\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      }
+    ]
+  }
+}

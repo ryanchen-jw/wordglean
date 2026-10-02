@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u05-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:25:56Z",
+  "properNouns": [
+    "Amy",
+    "Chinese",
+    "Chen"
+  ],
+  "items": [
+    {
+      "id": "a2-u05-l01-q01",
+      "type": "wordCard",
+      "word": "junior",
+      "exampleEn": "Amy is the most junior person in our office.",
+      "exampleZh": "Amy 是我們辦公室裡資歷最淺的人。",
+      "glossZh": "資淺的；年紀較輕的",
+      "distractorsZh": [
+        "資深的",
+        "最聰明的",
+        "最忙的"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q02",
+      "type": "wordCard",
+      "word": "anniversary",
+      "exampleEn": "We had a party for our company's tenth anniversary.",
+      "exampleZh": "我們為了公司成立十週年辦了一場派對。",
+      "glossZh": "週年紀念（日）",
+      "distractorsZh": [
+        "生日",
+        "畢業典禮",
+        "新年"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q03",
+      "type": "wordCard",
+      "word": "reunion",
+      "exampleEn": "We have a big family reunion every Chinese New Year.",
+      "exampleZh": "我們每年農曆新年都有一場盛大的家族團聚。",
+      "glossZh": "團聚；重聚",
+      "distractorsZh": [
+        "分離",
+        "爭吵",
+        "旅行"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q04",
+      "type": "wordCard",
+      "word": "member",
+      "exampleEn": "How many members are there in your family?",
+      "exampleZh": "你家有幾口人？",
+      "glossZh": "成員",
+      "distractorsZh": [
+        "房間",
+        "客人",
+        "寵物"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q05",
+      "type": "wordCard",
+      "word": "human",
+      "exampleEn": "Dogs can understand some human language.",
+      "exampleZh": "狗能聽懂一些人類的語言。",
+      "glossZh": "人類的",
+      "distractorsZh": [
+        "動物的",
+        "植物的",
+        "機器的"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q06",
+      "type": "wordCard",
+      "word": "couple",
+      "exampleEn": "A young couple lives next door.",
+      "exampleZh": "隔壁住著一對年輕夫妻。",
+      "glossZh": "一對（夫妻或情侶）",
+      "distractorsZh": [
+        "一群人",
+        "一位老人",
+        "一個小孩"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q07",
+      "type": "wordCard",
+      "word": "adult",
+      "exampleEn": "Tickets are three hundred dollars for adults.",
+      "exampleZh": "成人票是三百元。",
+      "glossZh": "成年人",
+      "distractorsZh": [
+        "小孩",
+        "學生",
+        "嬰兒"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q08",
+      "type": "wordCard",
+      "word": "generation",
+      "exampleEn": "Three generations live in this house.",
+      "exampleZh": "這間房子裡住著三代人。",
+      "glossZh": "一代（人）；世代",
+      "distractorsZh": [
+        "一層樓",
+        "一個房間",
+        "一家店"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "This movie is only for adults.",
+      "sentenceZh": "這部電影只限成人觀看。"
+    },
+    {
+      "id": "a2-u05-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Our family reunion is next Sunday at my grandmother's house.",
+      "audioZh": "我們的家族聚會在下週日，地點是我奶奶家。",
+      "questionZh": "家族聚會在哪裡舉行？",
+      "options": [
+        "At a restaurant near home",
+        "At grandmother's house",
+        "At a hotel in town"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u05-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "They are a lovely couple.",
+      "sentenceZh": "他們是很登對的一對。"
+    },
+    {
+      "id": "a2-u05-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "She is a junior member of our tennis club.",
+      "sentenceZh": "她是我們網球社的青少年會員。"
+    },
+    {
+      "id": "a2-u05-l01-q13",
+      "type": "mcq",
+      "stemEn": "Today is our tenth wedding ____.",
+      "stemZh": "今天是我們結婚十週年紀念日。",
+      "options": [
+        "reunion",
+        "generation",
+        "member",
+        "anniversary"
+      ],
+      "optionGlossZh": [
+        "團聚",
+        "世代",
+        "成員",
+        "週年紀念"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u05-l01-q14",
+      "type": "mcq",
+      "stemEn": "My grandparents, my parents and I are three different ____.",
+      "stemZh": "我的祖父母、父母和我是三個不同的世代。",
+      "options": [
+        "generations",
+        "anniversaries",
+        "reunions",
+        "juniors"
+      ],
+      "optionGlossZh": [
+        "世代",
+        "週年紀念",
+        "團聚",
+        "資淺的人"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u05-l01-q15",
+      "type": "reading",
+      "passageEn": "Last month, the Chen family had a big reunion for the fiftieth anniversary of the grandparents' wedding. Four generations came, from the old couple to two little babies. Every family member brought some food. The adults talked and laughed all afternoon, while the youngest member, a baby girl, slept the whole time.",
+      "passageZh": "上個月，陳家為了爺爺奶奶結婚五十週年辦了一場大型家族聚會。從那對老夫妻到兩個小寶寶，四代人都來了。每位家族成員都帶了一些食物。大人們整個下午有說有笑，而年紀最小的成員——一個女寶寶——從頭睡到尾。",
+      "questions": [
+        {
+          "questionZh": "陳家為什麼要聚會？",
+          "options": [
+            "慶祝爺爺奶奶結婚五十週年",
+            "慶祝寶寶出生",
+            "一起過農曆新年"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "年紀最小的成員在聚會上做什麼？",
+          "options": [
+            "一直在吃東西",
+            "和大人聊天",
+            "從頭睡到尾"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q16",
+      "type": "translate",
+      "promptZh": "這是人類歷史上很重要的一天。",
+      "hintWords": [
+        "human"
+      ],
+      "referenceEn": [
+        "This is an important day in human history.",
+        "This is a very important day in human history."
+      ],
+      "rubricZh": [
+        "human 當形容詞放在名詞前（例如 human history）",
+        "「很重要」可寫例如 important、very important、big"
+      ]
+    },
+    {
+      "id": "a2-u05-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "reunion",
+      "instructionZh": "用 reunion 造一個句子，說說你參加過或想參加的團聚。",
+      "referenceEn": [
+        "We had a class reunion last year.",
+        "I hope to have a reunion with my old classmates."
+      ],
+      "rubricZh": [
+        "reunion 是名詞（例如 a family reunion、a class reunion）",
+        "時態配合句意（例如 had、has、will have）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T13:12:04Z",
+    "verdicts": {
+      "a2-u05-l01-q10": [
+        1
+      ],
+      "a2-u05-l01-q13": [
+        3
+      ],
+      "a2-u05-l01-q14": [
+        0
+      ],
+      "a2-u05-l01-q15#0": [
+        0
+      ],
+      "a2-u05-l01-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/options",
+        "message": "執行長第②③關裁示修正：新規則：mcq 四選項同詞性（名詞），只能靠詞義判斷",
+        "resolution": "改為 [\"reunion\",\"generation\",\"member\",\"anniversary\"]（原 [\"adult\",\"generation\",\"human\",\"anniversary\"]）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長第②③關裁示修正：選項釋義同步",
+        "resolution": "改為 [\"團聚\",\"世代\",\"成員\",\"週年紀念\"]（原 [\"成年人\",\"世代\",\"人類的\",\"週年紀念\"]）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"the most junior member, a baby girl\" ——junior 是「資淺、職位較低」，用在家族裡指年紀最小的嬰兒不道地，應寫 the youngest member；passageZh 已譯「年紀最小」，與 junior 本課詞義（資淺的）不符。",
+        "resolution": "改為 \"Last month, the Chen family had a big reunion for the fiftieth anniversary of the grandparents' wedding. Four generations came, from the old couple to two little babies. Every family member brought some food. The adults talked and laughed all afternoon, while the youngest member, a baby girl, slept the whole time.\"（原 \"Last month, the Chen family had a big reunion for the fiftieth anniversary of the grandparents' wedding. Four generations came, from the old couple to two little babies. Every family member brought some food. The adults talked and laughed all afternoon, while the most junior member, a baby girl, slept the whole time.\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關：疑似：\"some human words\" 搭配不自然（human 多搭 language／speech／voice），建議 \"Dogs can understand some human language.\" 或換例句 \"This is a human voice.\"",
+        "resolution": "改為 \"Dogs can understand some human language.\"（原 \"Dogs can understand some human words.\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"狗能聽懂一些人類的語言。\"（原 \"狗能聽懂人類的一些話。\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正：閱讀改用 youngest 後，補 junior「資淺的」情境句",
+        "resolution": "改為 \"She is a junior member of our tennis club.\"（原 \"Every member of the team was there.\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"她是我們網球社的資淺成員。\"（原 \"團隊的每個成員都到了。\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：adult 情境句與單字卡雷同（票價）",
+        "resolution": "改為 \"This movie is only for adults.\"（原 \"Tickets are cheaper for children than for adults.\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"這部電影只限成人觀看。\"（原 \"兒童票比成人票便宜。\"）",
+        "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長最終複審修正：俱樂部裡的 junior member 指青少年會員，原譯「資淺成員」不忠實",
+        "resolution": "改為 \"她是我們網球社的青少年會員。\"（原 \"她是我們網球社的資淺成員。\"）",
+        "resolvedAt": "2026-10-02T14:49:18Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節",
+        "resolution": "改為 \"At a restaurant near home\"（原 \"At a restaurant\"）",
+        "resolvedAt": "2026-10-02T17:42:01Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"全家人一起過農曆新年吃年夜飯\"（原 \"一起過新年\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u05-l01-q10 目標第 2 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"At a restaurant near home\",\"At grandmother's house\",\"At a hotel in town\"]（原 [\"At a restaurant near home\",\"At grandmother's house\",\"At a hotel\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u05-l01-q15#0 目標第 1 長、消除單題異常值（改了選項 3）",
+        "resolution": "改為 [\"慶祝爺爺奶奶結婚五十週年\",\"慶祝寶寶出生\",\"一起過農曆新年\"]（原 [\"慶祝爺爺奶奶結婚五十週年\",\"慶祝寶寶出生\",\"全家人一起過農曆新年吃年夜飯\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      }
+    ]
+  }
+}

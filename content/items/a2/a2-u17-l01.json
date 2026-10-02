@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u17-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T17:56:48Z",
+  "properNouns": [
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "a2-u17-l01-q01",
+      "type": "wordCard",
+      "word": "campus",
+      "exampleEn": "Students can't drive cars on campus.",
+      "exampleZh": "學生不能在校園裡開車。",
+      "glossZh": "校園",
+      "distractorsZh": [
+        "宿舍",
+        "圖書館",
+        "教室"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q02",
+      "type": "wordCard",
+      "word": "textbook",
+      "exampleEn": "This textbook is heavy, but it is very useful.",
+      "exampleZh": "這本課本很重，但很有用。",
+      "glossZh": "課本；教科書",
+      "distractorsZh": [
+        "筆記本",
+        "小說",
+        "字典"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q03",
+      "type": "wordCard",
+      "word": "logical",
+      "exampleEn": "Science needs logical thinking.",
+      "exampleZh": "科學需要有邏輯的思考。",
+      "glossZh": "合乎邏輯的",
+      "distractorsZh": [
+        "好笑的",
+        "錯誤的",
+        "簡短的"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q04",
+      "type": "wordCard",
+      "word": "semester",
+      "exampleEn": "This semester, I'm taking four classes.",
+      "exampleZh": "這學期我修四門課。",
+      "glossZh": "學期",
+      "distractorsZh": [
+        "假期",
+        "週末",
+        "課程"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q05",
+      "type": "wordCard",
+      "word": "folder",
+      "exampleEn": "Put your homework in the blue folder.",
+      "exampleZh": "把作業放進藍色的資料夾。",
+      "glossZh": "資料夾",
+      "distractorsZh": [
+        "書包",
+        "鉛筆盒",
+        "信封"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q06",
+      "type": "wordCard",
+      "word": "beginner",
+      "exampleEn": "This class is for beginners.",
+      "exampleZh": "這堂課是給初學者上的。",
+      "glossZh": "初學者",
+      "distractorsZh": [
+        "專家",
+        "老師",
+        "冠軍"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q07",
+      "type": "wordCard",
+      "word": "research",
+      "exampleEn": "Our research took two years.",
+      "exampleZh": "我們的研究花了兩年。",
+      "glossZh": "研究",
+      "distractorsZh": [
+        "比賽",
+        "旅行",
+        "廣告"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q08",
+      "type": "wordCard",
+      "word": "education",
+      "exampleEn": "My grandmother didn't get much education.",
+      "exampleZh": "我奶奶沒受過多少教育。",
+      "glossZh": "教育",
+      "distractorsZh": [
+        "娛樂",
+        "健康",
+        "交通"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q09",
+      "type": "wordCard",
+      "word": "experience",
+      "exampleEn": "I have a lot of experience with children.",
+      "exampleZh": "我很有照顧小孩的經驗。",
+      "glossZh": "經驗；經歷",
+      "distractorsZh": [
+        "證書",
+        "興趣",
+        "時間"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "Please bring your textbook to every class.",
+      "sentenceZh": "每堂課都請帶課本來。"
+    },
+    {
+      "id": "a2-u17-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "The second semester begins in February and ends in June.",
+      "audioZh": "第二學期二月開始，六月結束。",
+      "questionZh": "第二學期什麼時候結束？",
+      "options": [
+        "In February",
+        "In June",
+        "In September"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u17-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Our campus has a big library.",
+      "sentenceZh": "我們的校園裡有一座大圖書館。"
+    },
+    {
+      "id": "a2-u17-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "Living abroad was a great experience.",
+      "sentenceZh": "住在國外是一段很棒的經歷。"
+    },
+    {
+      "id": "a2-u17-l01-q14",
+      "type": "mcq",
+      "stemEn": "I just started learning the piano. I'm a ____.",
+      "stemZh": "我剛開始學鋼琴，我是初學者。",
+      "options": [
+        "campus",
+        "beginner",
+        "folder",
+        "semester"
+      ],
+      "optionGlossZh": [
+        "校園",
+        "初學者",
+        "資料夾",
+        "學期"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u17-l01-q15",
+      "type": "mcq",
+      "stemEn": "Your idea is good and very ____.",
+      "stemZh": "你的想法很好，也很合乎邏輯。",
+      "options": [
+        "textbook",
+        "research",
+        "education",
+        "logical"
+      ],
+      "optionGlossZh": [
+        "課本",
+        "研究",
+        "教育",
+        "合乎邏輯的"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u17-l01-q16",
+      "type": "reading",
+      "passageEn": "Amy is in her first semester at university. The campus is big, and at first she often got lost. Her textbooks are expensive, so she buys used ones. She keeps her notes in different folders. Her teacher is doing research on education in small villages, and Amy helps him. \"It's a great experience,\" she says.",
+      "passageZh": "Amy 正在讀大學的第一個學期。校園很大，一開始她常常迷路。她的課本很貴，所以她都買二手的。她把筆記分別放在不同的資料夾裡。她的老師正在研究小村莊的教育，Amy 會幫他的忙。她說：「這是很棒的經驗。」",
+      "questions": [
+        {
+          "questionZh": "Amy 為什麼買二手課本？",
+          "options": [
+            "新的賣完了",
+            "新的太貴",
+            "老師要她買"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Amy 幫老師做什麼？",
+          "options": [
+            "幫老師改學生的考卷",
+            "每天幫老師打掃研究室",
+            "研究小村莊的教育"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q17",
+      "type": "translate",
+      "promptZh": "這份工作需要三年的經驗。",
+      "hintWords": [
+        "experience"
+      ],
+      "referenceEn": [
+        "This job needs three years of experience.",
+        "You need three years of experience for this job."
+      ],
+      "rubricZh": [
+        "「經驗」用 experience（不可數，不加 s）",
+        "「三年的經驗」可寫例如 three years of experience"
+      ]
+    },
+    {
+      "id": "a2-u17-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "education",
+      "instructionZh": "用 education 造一個句子，說說你對教育的看法，或你受過的教育。",
+      "referenceEn": [
+        "Good education can change a person's life.",
+        "My parents paid for my education."
+      ],
+      "rubricZh": [
+        "education 是不可數名詞（例如 good education、my education）",
+        "主詞和動詞要搭配（例如 Good education can change）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T18:20:34Z",
+    "verdicts": {
+      "a2-u17-l01-q11": [
+        1
+      ],
+      "a2-u17-l01-q14": [
+        1
+      ],
+      "a2-u17-l01-q15": [
+        3
+      ],
+      "a2-u17-l01-q16#0": [
+        1
+      ],
+      "a2-u17-l01-q16#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u17-l01-q16#1 目標第 3 長、消除單題異常值（改了選項 2）",
+        "resolution": "改為 [\"幫老師改學生的考卷\",\"每天幫老師打掃研究室\",\"研究小村莊的教育\"]（原 [\"幫老師改學生的考卷\",\"打掃教室\",\"研究小村莊的教育\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：情境對照表逐列重判：和 mcq「Your idea is good and very logical.」情境（評價想法）、句型（X is adj and logical）相同，改單字卡例句",
+        "resolution": "改為 \"Science needs logical thinking.\"（原 \"Her answer was clear and logical.\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：配合例句修改",
+        "resolution": "改為 \"科學需要有邏輯的思考。\"（原 \"她的回答清楚又合乎邏輯。\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/8/exampleEn",
+        "message": "執行長第②③關裁示修正：情境對照表逐列重判：和翻譯參考答案「You need three years of experience for this job.」主詞（you）、情境（工作經驗）相同，改單字卡例句",
+        "resolution": "改為 \"I have a lot of experience with children.\"（原 \"Do you have any work experience?\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/8/exampleZh",
+        "message": "執行長第②③關裁示修正：配合例句修改",
+        "resolution": "改為 \"我很有照顧小孩的經驗。\"（原 \"你有工作經驗嗎？\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      }
+    ]
+  }
+}

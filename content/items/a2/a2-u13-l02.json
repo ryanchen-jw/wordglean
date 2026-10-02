@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u13-l02",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:55:08Z",
+  "properNouns": [
+    "Kevin",
+    "Taipei",
+    "Kaohsiung"
+  ],
+  "items": [
+    {
+      "id": "a2-u13-l02-q01",
+      "type": "wordCard",
+      "word": "road",
+      "exampleEn": "This road goes to the beach.",
+      "exampleZh": "這條路通往海邊。",
+      "glossZh": "道路；馬路",
+      "distractorsZh": [
+        "河",
+        "橋",
+        "牆"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q02",
+      "type": "wordCard",
+      "word": "gas",
+      "exampleEn": "The price of gas went up again.",
+      "exampleZh": "油價又漲了。",
+      "glossZh": "汽油；瓦斯",
+      "distractorsZh": [
+        "水",
+        "電",
+        "空氣"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q03",
+      "type": "wordCard",
+      "word": "track",
+      "exampleEn": "The tracks go over a long bridge.",
+      "exampleZh": "鐵軌經過一座長長的橋。",
+      "glossZh": "軌道；鐵軌；月台",
+      "distractorsZh": [
+        "車廂",
+        "車票",
+        "座位"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q04",
+      "type": "wordCard",
+      "word": "express",
+      "exampleEn": "Take the express to save time.",
+      "exampleZh": "搭快車可以省時間。",
+      "glossZh": "快車",
+      "distractorsZh": [
+        "慢車",
+        "計程車",
+        "渡輪"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q05",
+      "type": "wordCard",
+      "word": "flight",
+      "exampleEn": "I always sleep on long flights.",
+      "exampleZh": "我搭長途班機時總是在睡覺。",
+      "glossZh": "班機；航班",
+      "distractorsZh": [
+        "車票",
+        "行李",
+        "護照"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q06",
+      "type": "wordCard",
+      "word": "path",
+      "exampleEn": "Follow the path along the river.",
+      "exampleZh": "沿著河邊的小路走。",
+      "glossZh": "小路；步道",
+      "distractorsZh": [
+        "高速公路",
+        "隧道",
+        "停車場"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q07",
+      "type": "wordCard",
+      "word": "speed",
+      "exampleEn": "The train travels at a high speed.",
+      "exampleZh": "這班火車以高速行駛。",
+      "glossZh": "速度",
+      "distractorsZh": [
+        "距離",
+        "方向",
+        "價格"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q08",
+      "type": "wordCard",
+      "word": "tour",
+      "exampleEn": "The tour starts at nine in front of the hotel.",
+      "exampleZh": "導覽行程九點在飯店前面出發。",
+      "glossZh": "遊覽；觀光行程",
+      "distractorsZh": [
+        "會議",
+        "課程",
+        "比賽"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "The express train doesn't stop here.",
+      "sentenceZh": "快車不停這一站。"
+    },
+    {
+      "id": "a2-u13-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Our flight was late, so we missed the city tour.",
+      "audioZh": "我們的班機誤點了，所以錯過了市區觀光。",
+      "questionZh": "他們為什麼錯過了市區觀光？",
+      "options": [
+        "The flight was late",
+        "They got lost",
+        "It rained"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u13-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "There's a small path behind the house.",
+      "sentenceZh": "房子後面有一條小路。"
+    },
+    {
+      "id": "a2-u13-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "Please don't drive at that speed.",
+      "sentenceZh": "請不要開那麼快。"
+    },
+    {
+      "id": "a2-u13-l02-q13",
+      "type": "mcq",
+      "stemEn": "The train to Taipei leaves from ____ three.",
+      "stemZh": "往台北的火車從第三月台出發。",
+      "options": [
+        "track",
+        "path",
+        "road",
+        "tour"
+      ],
+      "optionGlossZh": [
+        "月台",
+        "小路",
+        "道路",
+        "遊覽"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u13-l02-q14",
+      "type": "mcq",
+      "stemEn": "We need to stop and buy ____ for the car.",
+      "stemZh": "我們需要停下來幫車子加油。",
+      "options": [
+        "express",
+        "speed",
+        "gas",
+        "path"
+      ],
+      "optionGlossZh": [
+        "快車",
+        "速度",
+        "汽油",
+        "小路"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u13-l02-q15",
+      "type": "reading",
+      "passageEn": "Last weekend, Kevin's family drove to the mountains. On the way, they stopped to buy gas. Later, the road became too small for the car, so they walked up a small path. At the top, they watched an express train go along the tracks far below. The next day, they took a short tour of a tea farm.",
+      "passageZh": "上週末，Kevin 一家人開車去山上。路上他們停下來加油。後來路變得太小，車子開不過去，他們就沿著一條小路走上去。在山頂，他們看著一班快車沿著遠遠下方的鐵軌駛過。隔天，他們參加了一趟茶園的短程導覽。",
+      "questions": [
+        {
+          "questionZh": "路變小以後，他們做了什麼？",
+          "options": [
+            "掉頭開車回家去了",
+            "改搭快車到山上去",
+            "沿著小路走上去"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "隔天他們做了什麼？",
+          "options": [
+            "搭飛機",
+            "參觀茶園",
+            "去海邊玩"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q16",
+      "type": "translate",
+      "promptZh": "我們的班機誤點了兩個小時。",
+      "hintWords": [
+        "flight"
+      ],
+      "referenceEn": [
+        "Our flight was two hours late.",
+        "Our flight was late by two hours."
+      ],
+      "rubricZh": [
+        "「班機」用 flight",
+        "「誤點兩小時」可寫例如 was two hours late、had a two-hour delay、was delayed for two hours"
+      ]
+    },
+    {
+      "id": "a2-u13-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "tour",
+      "instructionZh": "用 tour 造一個句子，說說你參加過或想參加的觀光行程。",
+      "referenceEn": [
+        "I want to take a boat tour in Kaohsiung.",
+        "We went on a food tour at a night market."
+      ],
+      "rubricZh": [
+        "tour 是名詞（例如 a bus tour、a food tour）",
+        "「參加行程」可寫例如 take a tour、go on a tour"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u13-l02-q10": [
+        0
+      ],
+      "a2-u13-l02-q13": [
+        0
+      ],
+      "a2-u13-l02-q14": [
+        2
+      ],
+      "a2-u13-l02-q15#0": [
+        2
+      ],
+      "a2-u13-l02-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長第②③關裁示修正：第②關：釋義「快車；快遞」中的「快遞」與例句（Take the express＝搭快車）用法不符，違反「釋義對得上例句用法」；建議只留「快車」。",
+        "resolution": "改為 \"快車\"（原 \"快車；快遞\"）；刪去例句沒有的「快遞」",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（train tracks）和 q13、閱讀（train…track）雷同，改單字卡",
+        "resolution": "改為 \"The tracks go over a long bridge.\"（原 \"Don't walk on the train tracks.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"鐵軌經過一座長長的橋。\"（原 \"不要走在鐵軌上。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋情境同 q16、q10",
+        "resolution": "改為 \"I always sleep on long flights.\"（原 \"Our flight leaves at eight in the morning.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"我搭長途班機時總是在睡覺。\"（原 \"我們的班機早上八點起飛。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同閱讀",
+        "resolution": "改為 \"The tour starts at nine in front of the hotel.\"（原 \"We took a bus tour of the city.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"導覽行程九點在飯店前面出發。\"（原 \"我們搭巴士遊覽了整座城市。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"改搭快車到山上\"（原 \"搭快車\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"去海邊玩\"（原 \"去海邊\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u13-l02-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
+        "resolution": "改為 [\"掉頭開車回家去了\",\"改搭快車到山上去\",\"沿著小路走上去\"]（原 [\"回家\",\"改搭快車到山上\",\"沿著小路走上去\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      }
+    ]
+  }
+}

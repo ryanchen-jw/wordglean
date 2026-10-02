@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u13-l03",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:56:37Z",
+  "properNouns": [
+    "Taipei",
+    "Hualien",
+    "Tokyo",
+    "Tom",
+    "Taiwan"
+  ],
+  "items": [
+    {
+      "id": "a2-u13-l03-q01",
+      "type": "wordCard",
+      "word": "visitor",
+      "exampleEn": "The museum had many visitors on Sunday.",
+      "exampleZh": "博物館星期天有很多參觀者。",
+      "glossZh": "參觀者；訪客",
+      "distractorsZh": [
+        "員工",
+        "警衛",
+        "老師"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q02",
+      "type": "wordCard",
+      "word": "traffic",
+      "exampleEn": "Traffic in this city is terrible.",
+      "exampleZh": "這座城市的交通很糟。",
+      "glossZh": "交通；車流",
+      "distractorsZh": [
+        "噪音",
+        "天氣",
+        "空氣"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q03",
+      "type": "wordCard",
+      "word": "pilot",
+      "exampleEn": "Pilots need years of training.",
+      "exampleZh": "飛行員需要好幾年的訓練。",
+      "glossZh": "飛行員；機師",
+      "distractorsZh": [
+        "乘客",
+        "空服員",
+        "司機"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q04",
+      "type": "wordCard",
+      "word": "passenger",
+      "exampleEn": "All passengers must show their tickets.",
+      "exampleZh": "所有乘客都必須出示車票。",
+      "glossZh": "乘客",
+      "distractorsZh": [
+        "司機",
+        "機師",
+        "店員"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q05",
+      "type": "wordCard",
+      "word": "tourist",
+      "exampleEn": "In summer, the beach is full of tourists.",
+      "exampleZh": "夏天海灘上滿是觀光客。",
+      "glossZh": "觀光客",
+      "distractorsZh": [
+        "居民",
+        "學生",
+        "員工"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q06",
+      "type": "wordCard",
+      "word": "journey",
+      "exampleEn": "The journey from Taipei to Hualien takes two hours by train.",
+      "exampleZh": "從台北搭火車到花蓮要兩個小時。",
+      "glossZh": "旅程；路程",
+      "distractorsZh": [
+        "車站",
+        "車票",
+        "時刻表"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q07",
+      "type": "wordCard",
+      "word": "adventure",
+      "exampleEn": "I love books about adventures.",
+      "exampleZh": "我很愛看冒險故事的書。",
+      "glossZh": "冒險；奇遇",
+      "distractorsZh": [
+        "意外",
+        "工作",
+        "夢"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q08",
+      "type": "wordCard",
+      "word": "astronaut",
+      "exampleEn": "The astronaut stayed in space for six months.",
+      "exampleZh": "那位太空人在太空待了六個月。",
+      "glossZh": "太空人",
+      "distractorsZh": [
+        "機師",
+        "科學家",
+        "船長"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "There is heavy traffic on the bridge.",
+      "sentenceZh": "橋上車流量很大。"
+    },
+    {
+      "id": "a2-u13-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "Hello, passengers. This is your pilot. We will land in Tokyo at six.",
+      "audioZh": "各位乘客好，我是機長。我們將在六點降落東京。",
+      "questionZh": "飛機幾點降落？",
+      "options": [
+        "At six",
+        "At seven",
+        "At five"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u13-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "The journey was long but fun.",
+      "sentenceZh": "這趟旅程很長，但很好玩。"
+    },
+    {
+      "id": "a2-u13-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "Tourists love the night markets here.",
+      "sentenceZh": "觀光客很愛這裡的夜市。"
+    },
+    {
+      "id": "a2-u13-l03-q13",
+      "type": "mcq",
+      "stemEn": "The ____ flies the plane.",
+      "stemZh": "機師負責駕駛飛機。",
+      "options": [
+        "tourist",
+        "passenger",
+        "pilot",
+        "visitor"
+      ],
+      "optionGlossZh": [
+        "觀光客",
+        "乘客",
+        "機師",
+        "訪客"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u13-l03-q14",
+      "type": "mcq",
+      "stemEn": "Climbing that mountain was a big ____.",
+      "stemZh": "爬那座山是一場大冒險。",
+      "options": [
+        "traffic",
+        "astronaut",
+        "passenger",
+        "adventure"
+      ],
+      "optionGlossZh": [
+        "交通",
+        "太空人",
+        "乘客",
+        "冒險"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u13-l03-q15",
+      "type": "reading",
+      "passageEn": "When Tom was a child, he wanted to be an astronaut. Now he is a pilot. Every day, he flies hundreds of passengers to different cities. Many of them are tourists or business visitors. Tom says every journey is a small adventure. But there is one thing he doesn't like: the traffic on his way to the airport!",
+      "passageZh": "Tom 小時候想當太空人，現在他是一名機師。他每天載著幾百名乘客飛往不同的城市，其中很多是觀光客或來洽公的訪客。Tom 說每一趟旅程都是一場小冒險。不過有一件事他不喜歡：去機場路上的車潮！",
+      "questions": [
+        {
+          "questionZh": "Tom 小時候想當什麼？",
+          "options": [
+            "公車司機",
+            "機師",
+            "太空人"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "Tom 不喜歡什麼？",
+          "options": [
+            "每天很早就要起床",
+            "飛很遠的航線",
+            "去機場路上的車潮"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q16",
+      "type": "translate",
+      "promptZh": "這座城市每年都有很多觀光客。",
+      "hintWords": [
+        "tourist"
+      ],
+      "referenceEn": [
+        "This city has many tourists every year.",
+        "Many tourists come to this city every year."
+      ],
+      "rubricZh": [
+        "「觀光客」用 tourists（複數）",
+        "可寫例如 This city has…、Many tourists come to…"
+      ]
+    },
+    {
+      "id": "a2-u13-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "journey",
+      "instructionZh": "用 journey 造一個句子，說說一趟你記得的旅程。",
+      "referenceEn": [
+        "My first journey by plane was very exciting.",
+        "Our train journey across Taiwan was wonderful."
+      ],
+      "rubricZh": [
+        "journey 表示「旅程；路程」（例如 a long journey、my first journey）",
+        "時態配合句意（例如 was）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u13-l03-q10": [
+        0
+      ],
+      "a2-u13-l03-q13": [
+        2
+      ],
+      "a2-u13-l03-q14": [
+        3
+      ],
+      "a2-u13-l03-q15#0": [
+        2
+      ],
+      "a2-u13-l03-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（tourists visit the night market）和 q12（Tourists love the night markets）雷同，改單字卡",
+        "resolution": "改為 \"In summer, the beach is full of tourists.\"（原 \"Many tourists visit the night market every day.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"夏天海灘上滿是觀光客。\"（原 \"每天都有很多觀光客去逛夜市。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（wants to be an astronaut when she grows up）和閱讀（wanted to be an astronaut）雷同，改單字卡",
+        "resolution": "改為 \"The astronaut stayed in space for six months.\"（原 \"She wants to be an astronaut when she grows up.\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"那位太空人在太空待了六個月。\"（原 \"她長大想當太空人。\"）",
+        "resolvedAt": "2026-10-02T15:14:08Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋句型＋情境同 q09",
+        "resolution": "改為 \"Traffic in this city is terrible.\"（原 \"There is a lot of traffic in the morning.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"這座城市的交通很糟。\"（原 \"早上路上車很多。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋情境同 q10",
+        "resolution": "改為 \"Pilots need years of training.\"（原 \"The pilot said we would land in ten minutes.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"飛行員需要好幾年的訓練。\"（原 \"機長說我們十分鐘後降落。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長最終複審修正：雷同：三項都同 q14",
+        "resolution": "改為 \"I love books about adventures.\"（原 \"Camping in the mountains was a real adventure.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"我很愛看冒險故事的書。\"（原 \"在山上露營真是一場冒險。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"公車司機\"（原 \"司機\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"每天很早就要起床\"（原 \"很早起床\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      }
+    ]
+  }
+}

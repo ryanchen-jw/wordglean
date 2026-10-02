@@ -128,8 +128,8 @@
       "questionZh": "說話者想要什麼？",
       "options": [
         "Something to eat",
-        "Some tea",
-        "Another cup of coffee"
+        "A cup of hot tea",
+        "More coffee"
       ],
       "answer": 2
     },
@@ -273,6 +273,12 @@
         "message": "執行長第②③關裁示修正：第③關 D1：參考答案要說到「你喜歡」",
         "resolution": "改前：\"This song is really good.\"；改後：\"I really love this song.\"",
         "resolvedAt": "2026-10-02T13:22:30Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u19-l01-q10 目標第 3 長、消除單題異常值（改了選項 2、3，含正解措辭、意思不變）",
+        "resolution": "改為 [\"Something to eat\",\"A cup of hot tea\",\"More coffee\"]（原 [\"Something to eat\",\"Some tea\",\"Another cup of coffee\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

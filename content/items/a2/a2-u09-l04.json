@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u09-l04",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:05:41Z",
+  "properNouns": [
+    "Lucy"
+  ],
+  "items": [
+    {
+      "id": "a2-u09-l04-q01",
+      "type": "wordCard",
+      "word": "hunter",
+      "exampleEn": "The hunter knows every path in these mountains.",
+      "exampleZh": "那位獵人熟悉這片山裡的每一條小路。",
+      "glossZh": "獵人",
+      "distractorsZh": [
+        "農夫",
+        "木匠",
+        "郵差"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q02",
+      "type": "wordCard",
+      "word": "retired",
+      "exampleEn": "Retired people often have a lot of free time.",
+      "exampleZh": "退休的人通常有很多空閒時間。",
+      "glossZh": "退休的",
+      "distractorsZh": [
+        "失業的",
+        "忙碌的",
+        "單身的"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q03",
+      "type": "wordCard",
+      "word": "pro",
+      "exampleEn": "My uncle is a golf pro.",
+      "exampleZh": "我叔叔是職業高爾夫球選手。",
+      "glossZh": "職業選手；專家（口語）",
+      "distractorsZh": [
+        "新手",
+        "粉絲",
+        "裁判"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q04",
+      "type": "wordCard",
+      "word": "fisherman",
+      "exampleEn": "The fisherman sells fresh fish at the market every morning.",
+      "exampleZh": "那位漁夫每天早上在市場賣新鮮的魚。",
+      "glossZh": "漁夫",
+      "distractorsZh": [
+        "農夫",
+        "廚師",
+        "司機"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q05",
+      "type": "wordCard",
+      "word": "diary",
+      "exampleEn": "She writes in her diary every night.",
+      "exampleZh": "她每天晚上寫日記。",
+      "glossZh": "日記",
+      "distractorsZh": [
+        "信",
+        "小說",
+        "報紙"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q06",
+      "type": "wordCard",
+      "word": "barber",
+      "exampleEn": "My barber is very kind and talks a lot.",
+      "exampleZh": "我的理髮師很親切，話也很多。",
+      "glossZh": "理髮師",
+      "distractorsZh": [
+        "牙醫",
+        "裁縫",
+        "司機"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q07",
+      "type": "wordCard",
+      "word": "sleepless",
+      "exampleEn": "Many new parents have sleepless nights.",
+      "exampleZh": "很多新手爸媽常常整夜睡不好。",
+      "glossZh": "失眠的；睡不著的",
+      "distractorsZh": [
+        "安靜的",
+        "快樂的",
+        "寒冷的"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q08",
+      "type": "wordCard",
+      "word": "businesswoman",
+      "exampleEn": "The businesswoman has meetings all day.",
+      "exampleZh": "那位女企業家整天都在開會。",
+      "glossZh": "女商人；女企業家",
+      "distractorsZh": [
+        "女演員",
+        "女警",
+        "女服務生"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "My grandfather is retired, but he still works in his garden.",
+      "sentenceZh": "我爺爺退休了，但他還是在花園裡忙。"
+    },
+    {
+      "id": "a2-u09-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "The barber cut my hair too short this time.",
+      "audioZh": "這次理髮師把我的頭髮剪得太短了。",
+      "questionZh": "說話的人覺得頭髮怎麼了？",
+      "options": [
+        "Too short",
+        "Too long",
+        "Very nice"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u09-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "After a sleepless night, I felt very tired.",
+      "sentenceZh": "一整夜沒睡之後，我覺得非常累。"
+    },
+    {
+      "id": "a2-u09-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "The hunter and his dog walked quietly through the forest.",
+      "sentenceZh": "獵人和他的狗靜悄悄地穿過森林。"
+    },
+    {
+      "id": "a2-u09-l04-q13",
+      "type": "mcq",
+      "stemEn": "Yesterday I read my old ____ from when I was ten.",
+      "stemZh": "昨天我讀了我十歲時寫的舊日記。",
+      "options": [
+        "diary",
+        "barber",
+        "hunter",
+        "pro"
+      ],
+      "optionGlossZh": [
+        "日記",
+        "理髮師",
+        "獵人",
+        "職業選手"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u09-l04-q14",
+      "type": "mcq",
+      "stemEn": "He's not a beginner. He plays like a ____.",
+      "stemZh": "他可不是新手，他打得像職業選手一樣。",
+      "options": [
+        "diary",
+        "pro",
+        "retired",
+        "sleepless"
+      ],
+      "optionGlossZh": [
+        "日記",
+        "職業選手",
+        "退休的",
+        "睡不著的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u09-l04-q15",
+      "type": "reading",
+      "passageEn": "Lucy's grandfather is a retired fisherman. He kept a diary for fifty years about the sea and the weather. Lucy's mother is a busy businesswoman, and she often has sleepless nights because of work. Last week, Lucy read Grandpa's diary to her mother. It helped her relax, and she slept well that night.",
+      "passageZh": "Lucy 的爺爺是一位退休的漁夫。他寫了五十年的日記，記錄大海和天氣。Lucy 的媽媽是個忙碌的女企業家，常常因為工作而失眠。上週，Lucy 把爺爺的日記唸給媽媽聽。這讓媽媽放鬆下來，那天晚上她睡得很好。",
+      "questions": [
+        {
+          "questionZh": "爺爺五十年的日記記錄了什麼？",
+          "options": [
+            "大海和天氣",
+            "家人的生日",
+            "他賺了多少錢"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Lucy 的媽媽為什麼常常失眠？",
+          "options": [
+            "因為喝太多咖啡",
+            "因為鄰居太吵",
+            "因為工作"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q16",
+      "type": "translate",
+      "promptZh": "這位理髮師剪頭髮剪得很好。",
+      "hintWords": [
+        "barber"
+      ],
+      "referenceEn": [
+        "This barber cuts hair very well.",
+        "This barber is very good at cutting hair."
+      ],
+      "rubricZh": [
+        "「理髮師」用 barber",
+        "主詞第三人稱單數時動詞加 s（例如 cuts）；寫 is good at cutting hair 也正確"
+      ]
+    },
+    {
+      "id": "a2-u09-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "retired",
+      "instructionZh": "用 retired 造一個句子，說說一位已經退休的家人或朋友。",
+      "referenceEn": [
+        "My retired father likes to cook for us.",
+        "My grandmother is retired and lives by the sea."
+      ],
+      "rubricZh": [
+        "retired 是形容詞（例如 is retired、my retired father）",
+        "主詞和動詞要搭配（例如 My grandmother is）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u09-l04-q10": [
+        0
+      ],
+      "a2-u09-l04-q13": [
+        0
+      ],
+      "a2-u09-l04-q14": [
+        1
+      ],
+      "a2-u09-l04-q15#0": [
+        0
+      ],
+      "a2-u09-l04-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：題幹和 diary 單字卡雷同（write in diary every night），換情境與句型；選項與正解不變",
+        "resolution": "改為 \"I found my old ____ from when I was ten. It was fun to read it.\"（原 \"I write about my day in my ____ every night.\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：題幹中譯同步",
+        "resolution": "改為 \"我找到十歲時寫的舊日記，讀起來很有趣。\"（原 \"我每天晚上都把一天的事寫在日記裡。\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡和 q10、q16 都是 barber cut hair，改單字卡（情境題保留最自然的搭配）",
+        "resolution": "改為 \"My barber is very friendly and talks a lot.\"（原 \"My barber has cut my hair for ten years.\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我的理髮師很親切，話也很多。\"（原 \"我的理髮師已經幫我剪頭髮剪了十年。\"）",
+        "resolvedAt": "2026-10-02T15:00:35Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：friendly 在 lexicon 是 B2，改用 kind",
+        "resolution": "改為 \"My barber is very kind and talks a lot.\"（原 \"My barber is very friendly and talks a lot.\"）",
+        "resolvedAt": "2026-10-02T15:00:52Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：前一版題幹 15 字超過 A2 句長上限，再改",
+        "resolution": "改為 \"Last night I read my old ____ from when I was ten.\"（原 \"I found my old ____ from when I was ten. It was fun to read it.\"）",
+        "resolvedAt": "2026-10-02T15:00:52Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：題幹中譯同步",
+        "resolution": "改為 \"昨晚我讀了我十歲時寫的舊日記。\"（原 \"我找到十歲時寫的舊日記，讀起來很有趣。\"）",
+        "resolvedAt": "2026-10-02T15:00:52Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正：雷同自查：避開單字卡的 every night",
+        "resolution": "改為 \"Yesterday I read my old ____ from when I was ten.\"（原 \"Last night I read my old ____ from when I was ten.\"）",
+        "resolvedAt": "2026-10-02T15:05:57Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正：題幹中譯同步",
+        "resolution": "改為 \"昨天我讀了我十歲時寫的舊日記。\"（原 \"昨晚我讀了我十歲時寫的舊日記。\"）",
+        "resolvedAt": "2026-10-02T15:05:57Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同 q09、q17",
+        "resolution": "改為 \"Retired people often have a lot of free time.\"（原 \"My parents are both retired.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"退休的人通常有很多空閒時間。\"（原 \"我爸媽都退休了。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋情境同 q11",
+        "resolution": "改為 \"Many new parents have sleepless nights.\"（原 \"I had a sleepless night before the exam.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"很多新手爸媽常常整夜睡不好。\"（原 \"考試前一晚我整夜沒睡。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同閱讀",
+        "resolution": "改為 \"The businesswoman has meetings all day.\"（原 \"My aunt is a successful businesswoman.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"那位女企業家整天都在開會。\"（原 \"我阿姨是一位成功的女企業家。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      }
+    ]
+  }
+}

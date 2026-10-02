@@ -92,8 +92,8 @@
       "id": "a1-u08-l05-q07",
       "type": "wordCard",
       "word": "vegetable",
-      "exampleEn": "Eat more vegetables. They are good for you.",
-      "exampleZh": "多吃蔬菜，對你有好處。",
+      "exampleEn": "We grow vegetables in our garden.",
+      "exampleZh": "我們在花園裡種蔬菜。",
       "glossZh": "蔬菜",
       "distractorsZh": [
         "水果",
@@ -128,7 +128,7 @@
       "questionZh": "說話者要你買什麼？",
       "options": [
         "Water and fruit",
-        "Meat and fish",
+        "Meat and white fish",
         "Sugar and milk"
       ],
       "answer": 0
@@ -353,6 +353,36 @@
         "message": "執行長第二輪複審修正：FIX#3 要點不收沒用 vegetable 的句子",
         "resolution": "改前：[\"泛指蔬菜時用複數 vegetables，也可直接說蔬菜名稱（例如 beans、tomatoes）\",\"否定可用 don't（例如 I don't like beans）\"]；改後：[\"泛指蔬菜時用複數 vegetables（例如 I like vegetables、green vegetables）\",\"可再補充蔬菜名稱（例如 Beans are my favorite vegetable.）\",\"否定可用 don't（例如 I don't like vegetables）\"]",
         "resolvedAt": "2026-10-02T12:45:11Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：內容界線（不寫飲食建議）：原句「多吃蔬菜，對你有好處」屬飲食建議，改中性情境",
+        "resolution": "改為 \"I buy fresh vegetables at the market.\"（原 \"Eat more vegetables. They are good for you.\"）",
+        "resolvedAt": "2026-10-02T17:47:01Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：內容界線（不寫飲食建議）：中譯同步",
+        "resolution": "改為 \"我在市場買新鮮的蔬菜。\"（原 \"多吃蔬菜，對你有好處。\"）",
+        "resolvedAt": "2026-10-02T17:47:01Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：內容界線（不寫飲食建議）：前一版用了 A2 字（fresh、market），改成 A1 字",
+        "resolution": "改為 \"We grow vegetables in our garden.\"（原 \"I buy fresh vegetables at the market.\"）",
+        "resolvedAt": "2026-10-02T17:47:23Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：內容界線（不寫飲食建議）：中譯同步",
+        "resolution": "改為 \"我們在花園裡種蔬菜。\"（原 \"我在市場買新鮮的蔬菜。\"）",
+        "resolvedAt": "2026-10-02T17:47:23Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"Meat and white fish\"（原 \"Meat and fish\"）",
+        "resolvedAt": "2026-10-02T17:55:45Z"
       }
     ]
   }

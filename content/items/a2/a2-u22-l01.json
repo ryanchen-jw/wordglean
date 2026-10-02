@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u22-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T16:49:58Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "a2-u22-l01-q01",
+      "type": "wordCard",
+      "word": "centimeter",
+      "exampleEn": "We need a box about forty centimeters wide.",
+      "exampleZh": "我們需要一個大約四十公分寬的箱子。",
+      "glossZh": "公分",
+      "distractorsZh": [
+        "公斤",
+        "公升",
+        "公里"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q02",
+      "type": "wordCard",
+      "word": "liter",
+      "exampleEn": "This bottle holds one liter of water.",
+      "exampleZh": "這個瓶子可以裝一公升的水。",
+      "glossZh": "公升",
+      "distractorsZh": [
+        "公克",
+        "公分",
+        "公里"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q03",
+      "type": "wordCard",
+      "word": "gram",
+      "exampleEn": "Add two hundred grams of flour.",
+      "exampleZh": "加兩百公克的麵粉。",
+      "glossZh": "公克",
+      "distractorsZh": [
+        "公升",
+        "公尺",
+        "公里"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q04",
+      "type": "wordCard",
+      "word": "kilogram",
+      "exampleEn": "Apples cost fifty dollars a kilogram here.",
+      "exampleZh": "這裡的蘋果一公斤五十元。",
+      "glossZh": "公斤",
+      "distractorsZh": [
+        "公分",
+        "公升",
+        "公里"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q05",
+      "type": "wordCard",
+      "word": "kilometer",
+      "exampleEn": "He runs five kilometers every morning.",
+      "exampleZh": "他每天早上跑五公里。",
+      "glossZh": "公里",
+      "distractorsZh": [
+        "公斤",
+        "公分",
+        "公升"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q06",
+      "type": "wordCard",
+      "word": "part",
+      "exampleEn": "Cut the cake into eight parts.",
+      "exampleZh": "把蛋糕切成八塊。",
+      "glossZh": "部分；一份",
+      "distractorsZh": [
+        "全部",
+        "盤子",
+        "味道"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q07",
+      "type": "wordCard",
+      "word": "few",
+      "exampleEn": "There are few cars on the road at night.",
+      "exampleZh": "晚上路上幾乎沒有車。",
+      "glossZh": "很少的；（a few）幾個",
+      "distractorsZh": [
+        "很多的",
+        "全部的",
+        "每個"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q08",
+      "type": "wordCard",
+      "word": "million",
+      "exampleEn": "This painting costs two million dollars.",
+      "exampleZh": "這幅畫要價兩百萬元。",
+      "glossZh": "百萬",
+      "distractorsZh": [
+        "千",
+        "百",
+        "十"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q09",
+      "type": "wordCard",
+      "word": "least",
+      "exampleEn": "Who has the least homework today?",
+      "exampleZh": "今天誰的作業最少？",
+      "glossZh": "最少的",
+      "distractorsZh": [
+        "最多的",
+        "最新的",
+        "最難的"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "The school is two kilometers from my home.",
+      "sentenceZh": "學校離我家兩公里。"
+    },
+    {
+      "id": "a2-u22-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "Please buy two liters of milk and a kilogram of rice.",
+      "audioZh": "請買兩公升牛奶和一公斤米。",
+      "questionZh": "要買多少牛奶？",
+      "options": [
+        "Two liters",
+        "One liter",
+        "Three liters"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u22-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Only a few students came to the party.",
+      "sentenceZh": "只有幾個學生來參加派對。"
+    },
+    {
+      "id": "a2-u22-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "Can you buy a liter of milk on your way home?",
+      "sentenceZh": "你回家路上可以買一公升牛奶嗎？"
+    },
+    {
+      "id": "a2-u22-l01-q14",
+      "type": "mcq",
+      "stemEn": "The baby is only fifty ____ long.",
+      "stemZh": "這個寶寶只有五十公分長。",
+      "options": [
+        "grams",
+        "liters",
+        "centimeters",
+        "kilometers"
+      ],
+      "optionGlossZh": [
+        "公克",
+        "公升",
+        "公分",
+        "公里"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u22-l01-q15",
+      "type": "mcq",
+      "stemEn": "This letter is very light. It is only twenty ____.",
+      "stemZh": "這封信很輕，只有二十公克。",
+      "options": [
+        "liters",
+        "grams",
+        "few",
+        "least"
+      ],
+      "optionGlossZh": [
+        "公升",
+        "公克",
+        "很少的",
+        "最少的"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u22-l01-q16",
+      "type": "reading",
+      "passageEn": "Last weekend, my family went hiking. The path was eight kilometers long. My parents and I each carried two liters of water, and my bag was about five kilograms. My little brother carried the least, only a few snacks. At the top, the view was beautiful. That was my favorite part of the day. A sign there said, \"About one million people visit this mountain every year.\" I also found a small stone of only a few grams.",
+      "passageZh": "上週末，我們全家去健行。步道長八公里。我和爸媽各帶了兩公升的水，我的包包大約五公斤重。我弟弟背得最少，只有幾包零食。山頂的景色很美，那是我一天中最喜歡的部分。那裡的牌子寫著：「每年大約有一百萬人來爬這座山。」我還撿到一顆只有幾公克重的小石頭。",
+      "questions": [
+        {
+          "questionZh": "作者和爸媽各帶了多少水？",
+          "options": [
+            "一公升",
+            "兩公升",
+            "五公升"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "誰背的東西最少？",
+          "options": [
+            "作者本人",
+            "作者的爸爸媽媽",
+            "作者的弟弟"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q17",
+      "type": "translate",
+      "promptZh": "這袋米重五公斤。",
+      "hintWords": [
+        "kilogram"
+      ],
+      "referenceEn": [
+        "This bag of rice is five kilograms.",
+        "This bag of rice weighs five kilograms."
+      ],
+      "rubricZh": [
+        "「公斤」可寫，例如 kilograms、kilos 等（這裡用複數）",
+        "可寫例如 is five kilograms、weighs five kilograms"
+      ]
+    },
+    {
+      "id": "a2-u22-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "part",
+      "instructionZh": "用 part 造一個句子，說說你最喜歡某樣東西的哪一部分。",
+      "referenceEn": [
+        "My favorite part of the movie was the ending.",
+        "My favorite part of school is lunch time."
+      ],
+      "rubricZh": [
+        "part 表示「部分」（例如 the best part of…、part of…）",
+        "主詞和動詞要搭配（例如 My favorite part is）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T18:20:34Z",
+    "verdicts": {
+      "a2-u22-l01-q11": [
+        0
+      ],
+      "a2-u22-l01-q14": [
+        2
+      ],
+      "a2-u22-l01-q15": [
+        1
+      ],
+      "a2-u22-l01-q16#0": [
+        1
+      ],
+      "a2-u22-l01-q16#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長第②③關裁示修正：第②關：「釐米」是大陸常用說法，台灣一般只說「公分」；疑似非台灣用語，建議只留「公分」。",
+        "resolution": "改為 \"公分\"（原 \"公分；釐米\"）；執行長裁示：台灣用語，釐米→公分",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：原文 eight parts 未說等分，譯「八等份」多加了「等」的資訊；英文切蛋糕也較常說 eight pieces（疑似）。",
+        "resolution": "改為 \"把蛋糕切成八塊。\"（原 \"把蛋糕切成八等份。\"）",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/15/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：前文說 each of us carried two liters of water（含弟弟），後文又說弟弟只背了 only a few snacks，前後矛盾。",
+        "resolution": "改為 \"Last weekend, my family went hiking. The path was eight kilometers long. My parents and I each carried two liters of water, and my bag was about five kilograms. My little brother carried the least, only a few snacks. At the top, the view was beautiful. That was my favorite part of the day. A sign there said, \\\"About one million people visit this mountain every year.\\\" I also found a small stone of only a few grams.\"（原 \"Last weekend, my family went hiking. The path was eight kilometers long, and each of us carried two liters of water. My bag was about five kilograms. My little brother carried the least, only a few snacks. At the top, we saw a sign: \\\"This forest is one million years old.\\\" That was my favorite part of the day. I also found a small stone of only a few grams.\"）；另一條第②關：森林「一百萬年」不合常理、最喜歡的部分承接牽強。改成每年約一百萬人來爬山；最喜歡的部分改為山頂景色；帶水的人改成作者和爸媽，和弟弟只背零食不再矛盾",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/15/passageZh",
+        "message": "執行長第②③關裁示修正：中譯配合英文修改",
+        "resolution": "改為 \"上週末，我們全家去健行。步道長八公里。我和爸媽各帶了兩公升的水，我的包包大約五公斤重。我弟弟背得最少，只有幾包零食。山頂的景色很美，那是我一天中最喜歡的部分。那裡的牌子寫著：「每年大約有一百萬人來爬這座山。」我還撿到一顆只有幾公克重的小石頭。\"（原 \"上週末，我們全家去健行。步道長八公里，每個人都帶了兩公升的水。我的包包大約五公斤重。我弟弟背得最少，只有幾包零食。到了山頂，我們看到一塊牌子寫著：「這片森林已有一百萬年歷史。」那是我一天中最喜歡的部分。我還撿到一顆只有幾公克重的小石頭。\"）",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/15/questions/0/questionZh",
+        "message": "執行長第②③關裁示修正：短文改為作者和爸媽各帶水",
+        "resolution": "改為 \"作者和爸媽各帶了多少水？\"（原 \"每個人帶了多少水？\"）",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關疑似 S16（放寬評分要點類照建議改）：收 kilos，和 l06 一致",
+        "resolution": "改為 \"「公斤」可寫，例如 kilograms、kilos 等（這裡用複數）\"（原 \"「公斤」用 kilogram，這裡用複數 kilograms\"）",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/17/referenceEn/0",
+        "message": "執行長第②③關裁示修正：第③關：參考答案沒寫到「你」",
+        "resolution": "改為 \"My favorite part of the movie was the ending.\"（原 \"The best part of the movie was the ending.\"）",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/15/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u22-l01-q16#1 目標第 3 長、消除單題異常值（改了選項 1、2）",
+        "resolution": "改為 [\"說故事的作者\",\"作者的爸爸媽媽\",\"作者的弟弟\"]（原 [\"作者\",\"爸爸\",\"作者的弟弟\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正：情境對照表逐列重判：和 mcq「The baby is only fifty centimeters long.」情境（量身長）、句型相同，改單字卡例句",
+        "resolution": "改為 \"We need a box about forty centimeters wide.\"（原 \"I am one hundred and sixty centimeters tall.\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正：配合例句修改",
+        "resolution": "改為 \"我們需要一個大約四十公分寬的箱子。\"（原 \"我身高一百六十公分。\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/15/questions/1/options",
+        "message": "執行長最終複審修正：干擾項「說故事的作者」中文不自然，改「作者本人」；正解改為第 2 長，名次分布與異常值仍合格",
+        "resolution": "改為 [\"作者本人\",\"作者的爸爸媽媽\",\"作者的弟弟\"]（原 [\"說故事的作者\",\"作者的爸爸媽媽\",\"作者的弟弟\"]）",
+        "resolvedAt": "2026-10-02T19:13:41Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u10-l02",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T13:29:36Z",
+  "properNouns": [
+    "Ben"
+  ],
+  "items": [
+    {
+      "id": "a2-u10-l02-q01",
+      "type": "wordCard",
+      "word": "steak",
+      "exampleEn": "How would you like your steak?",
+      "exampleZh": "你的牛排要幾分熟？",
+      "glossZh": "牛排",
+      "distractorsZh": [
+        "雞腿",
+        "漢堡",
+        "香腸"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q02",
+      "type": "wordCard",
+      "word": "snack",
+      "exampleEn": "We bought some snacks for the trip.",
+      "exampleZh": "我們買了一些零食路上吃。",
+      "glossZh": "點心；零食",
+      "distractorsZh": [
+        "正餐",
+        "飲料",
+        "水果"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q03",
+      "type": "wordCard",
+      "word": "jam",
+      "exampleEn": "Can you pass me the jam?",
+      "exampleZh": "可以把果醬遞給我嗎？",
+      "glossZh": "果醬",
+      "distractorsZh": [
+        "奶油",
+        "起司",
+        "花生醬"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q04",
+      "type": "wordCard",
+      "word": "barbecue",
+      "exampleEn": "A barbecue in the park is a lot of fun.",
+      "exampleZh": "在公園烤肉很好玩。",
+      "glossZh": "烤肉（聚會）",
+      "distractorsZh": [
+        "野餐",
+        "火鍋",
+        "早午餐"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q05",
+      "type": "wordCard",
+      "word": "seafood",
+      "exampleEn": "This restaurant is famous for its seafood.",
+      "exampleZh": "這家餐廳以海鮮聞名。",
+      "glossZh": "海鮮",
+      "distractorsZh": [
+        "甜點",
+        "蔬菜",
+        "麵包"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q06",
+      "type": "wordCard",
+      "word": "cafeteria",
+      "exampleEn": "The cafeteria on the first floor is cheap.",
+      "exampleZh": "一樓的自助餐廳很便宜。",
+      "glossZh": "自助餐廳；員工或學生餐廳",
+      "distractorsZh": [
+        "超市",
+        "圖書館",
+        "廚房"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q07",
+      "type": "wordCard",
+      "word": "fry",
+      "exampleEn": "I'd like a burger and fries, please.",
+      "exampleZh": "我要一個漢堡和薯條。",
+      "glossZh": "薯條（常用複數 fries）",
+      "distractorsZh": [
+        "沙拉",
+        "濃湯",
+        "可樂"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q08",
+      "type": "wordCard",
+      "word": "cooler",
+      "exampleEn": "Our cooler keeps food cold all day.",
+      "exampleZh": "我們的保冷箱能讓食物冰一整天。",
+      "glossZh": "保冷箱；冰桶",
+      "distractorsZh": [
+        "烤箱",
+        "背包",
+        "垃圾桶"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "Let's bring a cooler to the beach.",
+      "sentenceZh": "我們帶個保冷箱去海邊吧。"
+    },
+    {
+      "id": "a2-u10-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "At the barbecue, we had steak, sausages and fresh seafood.",
+      "audioZh": "烤肉的時候，我們吃了牛排、香腸和新鮮海鮮。",
+      "questionZh": "他們烤肉時吃了什麼？",
+      "options": [
+        "Pasta and salad",
+        "Steak and seafood",
+        "Rice and soup"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u10-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "I always eat a snack after school.",
+      "sentenceZh": "我放學後總是會吃點心。"
+    },
+    {
+      "id": "a2-u10-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "The cafeteria closes at two.",
+      "sentenceZh": "自助餐廳兩點關門。"
+    },
+    {
+      "id": "a2-u10-l02-q13",
+      "type": "mcq",
+      "stemEn": "Do you want some ____ on your toast?",
+      "stemZh": "你的吐司要不要塗一點果醬？",
+      "options": [
+        "jam",
+        "cafeteria",
+        "cooler",
+        "snack"
+      ],
+      "optionGlossZh": [
+        "果醬",
+        "自助餐廳",
+        "保冷箱",
+        "點心"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u10-l02-q14",
+      "type": "mcq",
+      "stemEn": "Many students eat lunch in the school ____.",
+      "stemZh": "很多學生在學校的自助餐廳吃午餐。",
+      "options": [
+        "garage",
+        "cooler",
+        "oven",
+        "cafeteria"
+      ],
+      "optionGlossZh": [
+        "車庫",
+        "保冷箱",
+        "烤箱",
+        "自助餐廳"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a2-u10-l02-q15",
+      "type": "reading",
+      "passageEn": "Last Saturday, Ben's family had a barbecue by the sea. They brought a big cooler full of cold drinks. Ben's father cooked steak, and his uncle brought fresh seafood from the market. Ben's little sister only wanted fries! In the afternoon, they had bread with jam as a snack.",
+      "passageZh": "上週六，Ben 一家人在海邊烤肉。他們帶了一個裝滿冰飲料的大保冷箱。Ben 的爸爸烤牛排，叔叔從市場帶來新鮮的海鮮。Ben 的妹妹只想吃薯條！下午，他們吃麵包配果醬當點心。",
+      "questions": [
+        {
+          "questionZh": "叔叔帶了什麼來？",
+          "options": [
+            "新鮮的海鮮",
+            "大塊牛排",
+            "一些薯條"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "下午的點心是什麼？",
+          "options": [
+            "一盤新鮮的水果",
+            "香草冰淇淋甜筒",
+            "麵包配果醬"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q16",
+      "type": "translate",
+      "promptZh": "這家店的海鮮很新鮮。",
+      "hintWords": [
+        "seafood"
+      ],
+      "referenceEn": [
+        "The seafood at this shop is very fresh.",
+        "This shop's seafood is very fresh."
+      ],
+      "rubricZh": [
+        "「海鮮」用 seafood（不可數，不加 s）",
+        "主詞是 seafood 時 be 動詞用 is"
+      ]
+    },
+    {
+      "id": "a2-u10-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "snack",
+      "instructionZh": "用 snack 造一個句子，說說你喜歡的點心，或你什麼時候吃點心。",
+      "referenceEn": [
+        "My favorite snack is fruit.",
+        "I eat a snack when I feel hungry."
+      ],
+      "rubricZh": [
+        "snack 是可數名詞（例如 a snack、my favorite snack）",
+        "時態配合句意（例如 is、eat）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u10-l02-q10": [
+        1
+      ],
+      "a2-u10-l02-q13": [
+        0
+      ],
+      "a2-u10-l02-q14": [
+        3
+      ],
+      "a2-u10-l02-q15#0": [
+        0
+      ],
+      "a2-u10-l02-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/6/glossZh",
+        "message": "第②關：疑似詞義不符：wordCard 字是 fry，但例句只用名詞 fries、釋義「薯條」；CEFR-J A2 的 fry 主要是動詞「（油）炸、煎」。依已裁原則應示範動詞（例如 Fry the eggs in a little oil.）",
+        "resolution": "不改：lexicon 的 fry 是名詞 A2、動詞 B1（第③關也確認 fry 名詞＝A2）；依「照該級詞性教」維持名詞「薯條」，不示範 B1 的動詞義",
+        "resolvedAt": "2026-10-02T15:05:57Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第③關疑似 S23：閱讀和 cooler 單字卡雷同（put drinks in the cooler），換句型",
+        "resolution": "改為 \"Last Saturday, Ben's family had a barbecue by the sea. They brought a big cooler full of cold drinks. Ben's father cooked steak, and his uncle brought fresh seafood from the market. Ben's little sister only wanted fries! In the afternoon, they had bread with jam as a snack.\"（原 \"Last Saturday, Ben's family had a barbecue by the sea. They put cold drinks in a big cooler. Ben's father cooked steak, and his uncle brought fresh seafood from the market. Ben's little sister only wanted fries! In the afternoon, they had bread with jam as a snack.\"）",
+        "resolvedAt": "2026-10-02T15:05:57Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"上週六，Ben 一家人在海邊烤肉。他們帶了一個裝滿冰飲料的大保冷箱。Ben 的爸爸烤牛排，叔叔從市場帶來新鮮的海鮮。Ben 的妹妹只想吃薯條！下午，他們吃麵包配果醬當點心。\"（原 \"上週六，Ben 一家人在海邊烤肉。他們把冰飲料放進一個大保冷箱。Ben 的爸爸烤牛排，叔叔從市場帶來新鮮的海鮮。Ben 的妹妹只想吃薯條！下午，他們吃麵包配果醬當點心。\"）",
+        "resolvedAt": "2026-10-02T15:05:57Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：閱讀改寫後仍和單字卡共用 drinks，改單字卡",
+        "resolution": "改為 \"Our cooler keeps food cold all day.\"（原 \"Put the drinks in the cooler.\"）",
+        "resolvedAt": "2026-10-02T15:07:25Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我們的保冷箱能讓食物冰一整天。\"（原 \"把飲料放進保冷箱。\"）",
+        "resolvedAt": "2026-10-02T15:07:25Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋句型＋情境同 q11",
+        "resolution": "改為 \"We bought some snacks for the trip.\"（原 \"I usually have a small snack at four.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"我們買了一些零食路上吃。\"（原 \"我通常四點會吃一點小點心。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長最終複審修正：雷同：句型＋情境同閱讀",
+        "resolution": "改為 \"A barbecue in the park is a lot of fun.\"（原 \"We're having a barbecue in the garden on Saturday.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"在公園烤肉很好玩。\"（原 \"我們星期六要在花園烤肉。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"大塊的牛排\"（原 \"牛排\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"香草冰淇淋\"（原 \"冰淇淋\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/14/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u10-l02-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
+        "resolution": "改為 [\"新鮮的海鮮\",\"大塊牛排\",\"一些薯條\"]（原 [\"新鮮的海鮮\",\"大塊的牛排\",\"薯條\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u10-l02-q15#1 目標第 3 長、消除單題異常值（改了選項 1、2）",
+        "resolution": "改為 [\"一盤新鮮的水果\",\"香草冰淇淋甜筒\",\"麵包配果醬\"]（原 [\"水果\",\"香草冰淇淋\",\"麵包配果醬\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      }
+    ]
+  }
+}

@@ -194,7 +194,7 @@
         {
           "questionZh": "Amy 的護照最後在哪裡找到？",
           "options": [
-            "舊外套的口袋裡",
+            "舊外套口袋裡",
             "床底下",
             "包包裡",
             "保險箱裡"
@@ -225,7 +225,7 @@
         "You can have whichever book you want."
       ],
       "rubricZh": [
-        "whichever 後面可接名詞（book）或 one",
+        "whichever 後面可接名詞（例如 book）、one 等",
         "can 後面接原形動詞",
         "you want 放在名詞後面修飾"
       ]
@@ -242,7 +242,7 @@
       "rubricZh": [
         "consequently 表示「因此；結果」",
         "前面是原因，後面是結果",
-        "可放在句首加逗號，或放在 and 後面"
+        "例如放在句首加逗號、放在 and 後面等"
       ]
     }
   ],
@@ -304,6 +304,24 @@
         "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
         "resolution": "正解「舊外套的口袋裡」由位置 1 移到 0，與「床底下」互換；審題員判題索引同步重對應",
         "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 13：pilot b1-u01 也要掃評分要點封閉清單",
+        "resolution": "改前：\"whichever 後面可接名詞（book）或 one\"；改後：\"whichever 後面可接名詞（例如 book）、one 等\"",
+        "resolvedAt": "2026-10-02T18:28:08Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 13：pilot b1-u01 也要掃評分要點封閉清單",
+        "resolution": "改前：\"可放在句首加逗號，或放在 and 後面\"；改後：\"例如放在句首加逗號、放在 and 後面等\"",
+        "resolvedAt": "2026-10-02T18:28:08Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
+        "resolution": "改前：\"舊外套的口袋裡\"；改後：\"舊外套口袋裡\"",
+        "resolvedAt": "2026-10-02T18:28:08Z"
       }
     ]
   }

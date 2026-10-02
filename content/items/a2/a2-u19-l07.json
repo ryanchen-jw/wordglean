@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u19-l07",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T16:24:12Z",
+  "properNouns": [
+    "Kaohsiung",
+    "Amy",
+    "Kevin",
+    "Lee"
+  ],
+  "items": [
+    {
+      "id": "a2-u19-l07-q01",
+      "type": "wordCard",
+      "word": "policewoman",
+      "exampleEn": "My aunt is a policewoman in Kaohsiung.",
+      "exampleZh": "我阿姨是高雄的女警。",
+      "glossZh": "女警",
+      "distractorsZh": [
+        "護理師",
+        "店員",
+        "老師"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q02",
+      "type": "wordCard",
+      "word": "first name",
+      "exampleEn": "Her first name is very long.",
+      "exampleZh": "她的名字很長。",
+      "glossZh": "名字（不含姓）",
+      "distractorsZh": [
+        "姓",
+        "綽號",
+        "地址"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q03",
+      "type": "wordCard",
+      "word": "id",
+      "exampleEn": "You need ID to open a bank account.",
+      "exampleZh": "開銀行帳戶需要身分證明。",
+      "glossZh": "身分證明（常寫 ID）",
+      "distractorsZh": [
+        "現金",
+        "照片",
+        "鑰匙"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q04",
+      "type": "wordCard",
+      "word": "id card",
+      "exampleEn": "My ID card has an old photo of me.",
+      "exampleZh": "我身分證上的照片是很久以前拍的。",
+      "glossZh": "身分證",
+      "distractorsZh": [
+        "信用卡",
+        "車票",
+        "名片"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q05",
+      "type": "wordCard",
+      "word": "police officer",
+      "exampleEn": "My cousin wants to be a police officer.",
+      "exampleZh": "我表哥想當警察。",
+      "glossZh": "警察；警員",
+      "distractorsZh": [
+        "郵差",
+        "司機",
+        "醫生"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q06",
+      "type": "wordCard",
+      "word": "police station",
+      "exampleEn": "Is there a police station near here?",
+      "exampleZh": "這附近有警察局嗎？",
+      "glossZh": "警察局",
+      "distractorsZh": [
+        "郵局",
+        "車站",
+        "醫院"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q07",
+      "type": "wordCard",
+      "word": "post office",
+      "exampleEn": "I bought some stamps at the post office.",
+      "exampleZh": "我在郵局買了一些郵票。",
+      "glossZh": "郵局",
+      "distractorsZh": [
+        "銀行",
+        "警察局",
+        "超市"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q08",
+      "type": "listenType",
+      "sentenceEn": "The post office closes at five today.",
+      "sentenceZh": "郵局今天五點關門。"
+    },
+    {
+      "id": "a2-u19-l07-q09",
+      "type": "listenChoice",
+      "audioEn": "I lost my wallet, so I went to the police station.",
+      "audioZh": "我弄丟了皮夾，所以去了警察局。",
+      "questionZh": "說話的人為什麼去警察局？",
+      "options": [
+        "The speaker needed a map",
+        "The speaker lost a wallet",
+        "The speaker found a dog"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u19-l07-q10",
+      "type": "shadowing",
+      "sentenceEn": "Please show your ID card at the door.",
+      "sentenceZh": "請在門口出示你的身分證。"
+    },
+    {
+      "id": "a2-u19-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "The policewoman was very kind to the children.",
+      "sentenceZh": "那位女警對孩子們非常親切。"
+    },
+    {
+      "id": "a2-u19-l07-q12",
+      "type": "mcq",
+      "stemEn": "I want to send this box to my aunt. Where is the ____?",
+      "stemZh": "我想把這個箱子寄給我阿姨，郵局在哪裡？",
+      "options": [
+        "post office",
+        "police station",
+        "id card",
+        "first name"
+      ],
+      "optionGlossZh": [
+        "郵局",
+        "警察局",
+        "身分證",
+        "名字"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u19-l07-q13",
+      "type": "mcq",
+      "stemEn": "My ____ is Kevin, and my surname is Lee.",
+      "stemZh": "我的名字是 Kevin，姓是 Lee。",
+      "options": [
+        "post office",
+        "id",
+        "first name",
+        "police officer"
+      ],
+      "optionGlossZh": [
+        "郵局",
+        "身分證明",
+        "名字",
+        "警察"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u19-l07-q14",
+      "type": "reading",
+      "passageEn": "Yesterday, Amy lost her wallet on the bus. Her ID card and some money were in it. She went to the police station near her school. A kind police officer asked for her first name and surname, and Amy showed her student card as ID. Two hours later, a policewoman called her. Someone found the wallet and took it to the post office!",
+      "passageZh": "昨天，Amy 在公車上弄丟了皮夾，裡面有她的身分證和一些錢。她去了學校附近的警察局。一位親切的警察問了她的名字和姓，Amy 拿出學生證當作身分證明。兩個小時後，一位女警打電話給她：有人撿到皮夾，把它送到郵局了！",
+      "questions": [
+        {
+          "questionZh": "皮夾裡有什麼？",
+          "options": [
+            "她的作業本",
+            "她的新手機",
+            "她的身分證和一些錢"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "最後皮夾被送到哪裡？",
+          "options": [
+            "公車站",
+            "郵局",
+            "學校"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q15",
+      "type": "translate",
+      "promptZh": "警察局就在郵局旁邊。",
+      "hintWords": [
+        "police station",
+        "post office"
+      ],
+      "referenceEn": [
+        "The police station is next to the post office.",
+        "The police station is right next to the post office."
+      ],
+      "rubricZh": [
+        "「警察局」用 police station、「郵局」用 post office",
+        "「在⋯旁邊」可寫例如 next to"
+      ]
+    },
+    {
+      "id": "a2-u19-l07-q16",
+      "type": "makeSentence",
+      "targetWord": "police officer",
+      "instructionZh": "用 police officer 造一個句子，說說警察的工作，或你遇過的一位警察。",
+      "referenceEn": [
+        "A police officer helped me find my way.",
+        "Police officers work day and night."
+      ],
+      "rubricZh": [
+        "police officer 是可數名詞（例如 a police officer、police officers）",
+        "時態配合句意（例如 helped、work）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T18:20:34Z",
+    "verdicts": {
+      "a2-u19-l07-q09": [
+        1
+      ],
+      "a2-u19-l07-q12": [
+        0
+      ],
+      "a2-u19-l07-q13": [
+        2
+      ],
+      "a2-u19-l07-q14#0": [
+        2
+      ],
+      "a2-u19-l07-q14#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/13/questions/0/options",
+        "message": "第②關：正解選項明顯是最長的一個（「她的身分證和一些錢」9 字 vs 4 字），違反「正解不落在最長集合」；應縮短正解或加長干擾項。",
+        "resolution": "執行長裁示：「單題正解最長」類 issue 由全級長度名次分布規則統一處理",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/8/options",
+        "message": "執行長第②③關裁示修正：第③關疑似 9：音檔是第一人稱，選項寫 He 和 TTS 性別可能不一致",
+        "resolution": "改為 [\"The speaker needed a map\",\"The speaker lost a wallet\",\"The speaker found a dog\"]（原 [\"He needed a map\",\"He lost his wallet\",\"He found a dog\"]）",
+        "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/13/questions/0/options",
+        "message": "執行長裁示：正解長度名次分布：a2-u19-l07-q14#0 目標第 1 長、消除單題異常值（改了選項 1、2）",
+        "resolution": "改為 [\"她的作業本\",\"她的新手機\",\"她的身分證和一些錢\"]（原 [\"她的作業\",\"她的手機\",\"她的身分證和一些錢\"]）",
+        "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正：情境對照表逐列重判：和造句參考答案「A police officer helped me find my way.」主詞、句型相同，改單字卡例句",
+        "resolution": "改為 \"My cousin wants to be a police officer.\"（原 \"The police officer wore a blue uniform.\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正：配合例句修改",
+        "resolution": "改為 \"我表哥想當警察。\"（原 \"那位警察穿著藍色制服。\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：情境對照表逐列重判：和翻譯參考答案「The police station is next to the post office.」主詞、句型相同，改單字卡例句",
+        "resolution": "改為 \"Is there a police station near here?\"（原 \"The police station is open all night.\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：配合例句修改",
+        "resolution": "改為 \"這附近有警察局嗎？\"（原 \"警察局整晚都有開。\"）",
+        "resolvedAt": "2026-10-02T18:49:56Z"
+      }
+    ]
+  }
+}

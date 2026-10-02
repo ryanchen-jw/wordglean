@@ -129,9 +129,9 @@
       "audioZh": "Ben 比他妹妹年紀大，他十二歲。",
       "questionZh": "誰的年紀比較大？",
       "options": [
-        "His mother",
-        "His sister",
-        "Ben"
+        "They are the same age",
+        "His little sister",
+        "Ben, her brother"
       ],
       "answer": 2
     },
@@ -203,8 +203,8 @@
         {
           "questionZh": "下雨時，他們去了哪裡？",
           "options": [
-            "回家",
-            "留在公園",
+            "跑回家裡等雨停",
+            "留在公園裡繼續玩",
             "跑進一間小店"
           ],
           "answer": 2
@@ -327,6 +327,24 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「跑進一間小店」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"留在公園裡繼續玩\"（原 \"留在公園\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u01-l07-q10 目標第 3 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）；干擾項 His mother 會讓「誰年紀比較大」有歧義（媽媽也比較大），一併換掉",
+        "resolution": "改為 [\"They are the same age\",\"His little sister\",\"Ben, her brother\"]（原 [\"His mother\",\"His sister\",\"Ben\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/14/questions/1/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u01-l07-q15#1 目標第 3 長、消除單題異常值（改了選項 1）",
+        "resolution": "改為 [\"跑回家裡等雨停\",\"留在公園裡繼續玩\",\"跑進一間小店\"]（原 [\"回家\",\"留在公園裡繼續玩\",\"跑進一間小店\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }

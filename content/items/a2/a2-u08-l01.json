@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-u08-l01",
+  "level": "A2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T12:44:38Z",
+  "properNouns": [
+    "Kevin"
+  ],
+  "items": [
+    {
+      "id": "a2-u08-l01-q01",
+      "type": "wordCard",
+      "word": "oven",
+      "exampleEn": "Bake the bread in the oven for thirty minutes.",
+      "exampleZh": "把麵包放進烤箱烤三十分鐘。",
+      "glossZh": "烤箱",
+      "distractorsZh": [
+        "冰箱",
+        "洗衣機",
+        "水槽"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q02",
+      "type": "wordCard",
+      "word": "battery",
+      "exampleEn": "My phone needs a new battery.",
+      "exampleZh": "我的手機需要換新電池。",
+      "glossZh": "電池",
+      "distractorsZh": [
+        "螢幕",
+        "按鍵",
+        "喇叭"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q03",
+      "type": "wordCard",
+      "word": "garage",
+      "exampleEn": "Our garage is big enough for two cars.",
+      "exampleZh": "我們的車庫大到可以停兩台車。",
+      "glossZh": "車庫",
+      "distractorsZh": [
+        "廚房",
+        "陽台",
+        "地下室"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q04",
+      "type": "wordCard",
+      "word": "basket",
+      "exampleEn": "She put the apples in a basket.",
+      "exampleZh": "她把蘋果放進籃子裡。",
+      "glossZh": "籃子",
+      "distractorsZh": [
+        "盒子",
+        "袋子",
+        "盤子"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q05",
+      "type": "wordCard",
+      "word": "blanket",
+      "exampleEn": "It's cold. Do you need another blanket?",
+      "exampleZh": "好冷，你要不要再多拿一條毯子？",
+      "glossZh": "毯子",
+      "distractorsZh": [
+        "枕頭",
+        "毛巾",
+        "外套"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q06",
+      "type": "wordCard",
+      "word": "container",
+      "exampleEn": "This container is made of glass.",
+      "exampleZh": "這個容器是玻璃做的。",
+      "glossZh": "容器",
+      "distractorsZh": [
+        "蓋子",
+        "標籤",
+        "托盤"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q07",
+      "type": "wordCard",
+      "word": "elevator",
+      "exampleEn": "There are two elevators in this building.",
+      "exampleZh": "這棟大樓有兩部電梯。",
+      "glossZh": "電梯",
+      "distractorsZh": [
+        "樓梯",
+        "手扶梯",
+        "走廊"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q08",
+      "type": "wordCard",
+      "word": "lamp",
+      "exampleEn": "There is a small lamp next to my bed.",
+      "exampleZh": "我床邊有一盞小檯燈。",
+      "glossZh": "燈；檯燈",
+      "distractorsZh": [
+        "鬧鐘",
+        "鏡子",
+        "電扇"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q09",
+      "type": "wordCard",
+      "word": "refrigerator",
+      "exampleEn": "Put the milk back in the refrigerator.",
+      "exampleZh": "把牛奶放回冰箱。",
+      "glossZh": "冰箱",
+      "distractorsZh": [
+        "烤箱",
+        "洗衣機",
+        "櫥櫃"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "The elevator is not working today.",
+      "sentenceZh": "電梯今天故障了。"
+    },
+    {
+      "id": "a2-u08-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "The batteries are in the basket next to the refrigerator.",
+      "audioZh": "電池放在冰箱旁邊的籃子裡。",
+      "questionZh": "電池放在哪裡？",
+      "options": [
+        "In the garage",
+        "In the basket",
+        "In the oven"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a2-u08-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "My cat sleeps on a warm blanket.",
+      "sentenceZh": "我的貓睡在一條溫暖的毯子上。"
+    },
+    {
+      "id": "a2-u08-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "We keep our bikes in the garage.",
+      "sentenceZh": "我們把腳踏車放在車庫裡。"
+    },
+    {
+      "id": "a2-u08-l01-q14",
+      "type": "mcq",
+      "stemEn": "The cake is still in the ____. It needs ten more minutes.",
+      "stemZh": "蛋糕還在烤箱裡，還要再烤十分鐘。",
+      "options": [
+        "battery",
+        "lamp",
+        "oven",
+        "elevator"
+      ],
+      "optionGlossZh": [
+        "電池",
+        "燈",
+        "烤箱",
+        "電梯"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2-u08-l01-q15",
+      "type": "mcq",
+      "stemEn": "I put a new ____ in the clock, and now it works again.",
+      "stemZh": "我在時鐘裡放了一顆新電池，現在它又會走了。",
+      "options": [
+        "battery",
+        "blanket",
+        "container",
+        "garage"
+      ],
+      "optionGlossZh": [
+        "電池",
+        "毯子",
+        "容器",
+        "車庫"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a2-u08-l01-q16",
+      "type": "reading",
+      "passageEn": "Last week, Kevin and his wife moved into a new apartment on the eleventh floor, so they take the elevator every day. The kitchen has a big refrigerator and an oven. There is no garage, so they park their car on the street. Kevin's mother gave them a basket of fruit, a warm blanket and a lamp for the living room.",
+      "passageZh": "上週，Kevin 和太太搬進一間位在十一樓的新公寓，所以他們每天都搭電梯。廚房裡有一台大冰箱和一個烤箱。那裡沒有車庫，所以他們把車停在街上。Kevin 的媽媽送了他們一籃水果、一條溫暖的毯子和一盞放客廳的燈。",
+      "questions": [
+        {
+          "questionZh": "他們的新公寓在幾樓？",
+          "options": [
+            "十二樓",
+            "二樓",
+            "十一樓"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "他們把車停在哪裡？",
+          "options": [
+            "車庫裡",
+            "公司裡",
+            "街上"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q17",
+      "type": "translate",
+      "promptZh": "請把湯倒進這個容器裡。",
+      "hintWords": [
+        "container"
+      ],
+      "referenceEn": [
+        "Please pour the soup into this container.",
+        "Please put the soup in this container."
+      ],
+      "rubricZh": [
+        "「容器」用 container",
+        "「倒進」可寫例如 pour … into、put … in",
+        "請求句用原形動詞開頭（例如 Please pour…）"
+      ]
+    },
+    {
+      "id": "a2-u08-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "refrigerator",
+      "instructionZh": "用 refrigerator 造一個句子，說說你家冰箱裡有什麼。",
+      "referenceEn": [
+        "There are some eggs and fruit in our refrigerator.",
+        "Our refrigerator is full of vegetables."
+      ],
+      "rubricZh": [
+        "refrigerator 是可數名詞（例如 the refrigerator、our refrigerator）",
+        "「在冰箱裡」用 in（例如 in our refrigerator）；說「裝滿了」可寫 is full of"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T14:50:25Z",
+    "verdicts": {
+      "a2-u08-l01-q11": [
+        1
+      ],
+      "a2-u08-l01-q14": [
+        2
+      ],
+      "a2-u08-l01-q15": [
+        0
+      ],
+      "a2-u08-l01-q16#0": [
+        2
+      ],
+      "a2-u08-l01-q16#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：「好冷，你需要再一條毯子嗎？」少了動詞，不通順；宜作「好冷，你要不要再多拿一條毯子？」",
+        "resolution": "改為 \"好冷，你要不要再多拿一條毯子？\"（原 \"好冷，你需要再一條毯子嗎？\"）；照建議補上動詞",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/14/stemEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：題幹和 battery 單字卡雷同（needs a new battery），換主詞、情境與句型；選項與正解不變",
+        "resolution": "改為 \"I put a new ____ in the clock, and now it works again.\"（原 \"This clock stopped. It needs a new ____.\"）",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/14/stemZh",
+        "message": "執行長第②③關裁示修正：題幹中譯同步",
+        "resolution": "改為 \"我在時鐘裡放了一顆新電池，現在它又會走了。\"（原 \"這個時鐘停了，需要換新電池。\"）",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（park his car in the garage）和閱讀（park their car on the street）共用停車情境，改單字卡",
+        "resolution": "改為 \"We keep our bikes in the garage.\"（原 \"My dad parks his car in the garage.\"）",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我們把腳踏車放在車庫裡。\"（原 \"我爸爸把車停在車庫裡。\"）",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：單字卡（take the elevator to the tenth floor）和閱讀（eleventh floor, take the elevator）雷同，改單字卡",
+        "resolution": "改為 \"The elevator in our building is very slow.\"（原 \"Let's take the elevator to the tenth floor.\"）",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我們大樓的電梯很慢。\"（原 \"我們搭電梯到十樓吧。\"）",
+        "resolvedAt": "2026-10-02T14:58:31Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：雷同自查：前一版單字卡和 q13 跟讀句相同，再換",
+        "resolution": "改為 \"Our garage is big enough for two cars.\"（原 \"We keep our bikes in the garage.\"）",
+        "resolvedAt": "2026-10-02T14:59:21Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改為 \"我們的車庫大到可以停兩台車。\"（原 \"我們把腳踏車放在車庫裡。\"）",
+        "resolvedAt": "2026-10-02T14:59:21Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋情境同 q10",
+        "resolution": "改為 \"There are two elevators in this building.\"（原 \"The elevator in our building is very slow.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"這棟大樓有兩部電梯。\"（原 \"我們大樓的電梯很慢。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長最終複審修正：雷同：主詞＋句型同 q17",
+        "resolution": "改為 \"This container is made of glass.\"（原 \"Keep the cookies in a plastic container.\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長最終複審修正：中譯同步",
+        "resolution": "改為 \"這個容器是玻璃做的。\"（原 \"把餅乾放進塑膠容器裡。\"）",
+        "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/15/questions/0/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"十二樓\"（原 \"十樓\"）",
+        "resolvedAt": "2026-10-02T17:45:24Z"
+      }
+    ]
+  }
+}

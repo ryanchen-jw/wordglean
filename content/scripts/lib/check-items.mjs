@@ -315,5 +315,53 @@ export function checkAnswerPositionPatterns(docs, minCount = 8, maxShare = 0.6, 
   return out;
 }
 
+// 正解長度（TASK-9 執行長裁示「正解長度均衡」，2026-10-03 定為長度名次分布）：各題選項依字元數由長到短排名次 1…n，
+// 統計正解落在每個名次的比例；並列時正解所在的並列區間各名次平均攤分（例：正解與一個干擾項並列第 1–2 名 → 名次 1、2 各記 0.5）。
+// 同一級、同題型、同選項數，題數 ≥minCount 時每個名次都要在隨機機率 ±12 個百分點內（三選一 21–45%、四選一 13–37%），
+// 只限最長會讓正解被擠到其他名次，所以每個名次都檢查。閱讀小題逐題計入。名次分布適用 reading、listenChoice、mcq。
+// 另有單題異常值（逐題、不論題數）：reading、listenChoice 任一選項長度 >其餘選項平均的 2 倍或 <一半就報錯，
+// 避免「一眼就能排除」的特別長／特別短選項。mcq 不套用：選項是單字，長短天生不同，正解又多半是目標字。
+const OUTLIER_TYPES = new Set(['reading', 'listenChoice']);
+export function checkAnswerLongest(docs, minCount = 20, ranges = { 3: [0.21, 0.45], 4: [0.13, 0.37] }) {
+  const len = (s) => [...String(s)].length;
+  const groups = new Map();
+  const out = [];
+  for (const doc of docs) {
+    doc.items.forEach((item, i) => {
+      for (const [qid, options, answer, path] of choiceQuestions(item, i)) {
+        if (OUTLIER_TYPES.has(item.type)) {
+          options.forEach((o, k) => {
+            const others = options.filter((_, j) => j !== k).map(len);
+            const avg = others.reduce((a, b) => a + b, 0) / others.length;
+            const side = len(o) > 2 * avg + 1e-9 ? '超過 2 倍' : len(o) < avg / 2 - 1e-9 ? '不到一半' : '';
+            if (side) out.push({ code: 'ANSWER_LONGEST', path: doc.lessonId, message: `${qid}（${path}）選項 ${k + 1} 長 ${len(o)} 字，其餘平均 ${avg.toFixed(1)} 字（${side}）` });
+          });
+        }
+        const key = `${doc.level}|${item.type}|${options.length}`;
+        const entry = groups.get(key) ?? { ranks: Array(options.length).fill(0), total: 0 };
+        const own = len(options[answer]);
+        const longer = options.filter((o) => len(o) > own).length;
+        const tied = options.filter((o) => len(o) === own).length;
+        for (let r = longer; r < longer + tied; r++) entry.ranks[r] += 1 / tied;
+        entry.total += 1;
+        groups.set(key, entry);
+      }
+    });
+  }
+  for (const [key, { ranks, total }] of groups) {
+    if (total < minCount) continue;
+    const [level, type, n] = key.split('|');
+    const [lo, hi] = ranges[n] ?? [1 / Number(n) - 0.12, 1 / Number(n) + 0.12];
+    ranks.forEach((hit, r) => {
+      const share = hit / total;
+      if (share < lo - 1e-9 || share > hi + 1e-9) {
+        const name = `第 ${r + 1} 長${r === 0 ? '（最長）' : r === ranks.length - 1 ? '（最短）' : ''}`;
+        out.push({ code: 'ANSWER_LONGEST', path: level, message: `${level} 全級${type}（${n} 選 1）正解是${name}的比例 ${(share * 100).toFixed(1)}%（${total} 題，應在 ${Math.round(lo * 100)}%–${Math.round(hi * 100)}%）` });
+      }
+    });
+  }
+  return out;
+}
+
 // 會讓該課不合格的錯誤（排除 notice 提示）。
 export const blockingErrors = (errors) => errors.filter((e) => !e.notice);

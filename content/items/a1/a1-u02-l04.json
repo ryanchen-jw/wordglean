@@ -130,8 +130,8 @@
       "audioZh": "不是的，先生，我不是警察，我是工程師。",
       "questionZh": "說話者的工作是什麼？",
       "options": [
-        "A reporter",
-        "A cop",
+        "A news reporter",
+        "A cop in this town",
         "An engineer"
       ],
       "answer": 2
@@ -197,7 +197,7 @@
           "options": [
             "警察",
             "工程師",
-            "記者"
+            "報社記者"
           ],
           "answer": 1
         },
@@ -372,6 +372,24 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「sir」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:39:07Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"報社記者\"（原 \"記者\"）",
+        "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
+        "resolution": "改為 \"A news reporter\"（原 \"A reporter\"）",
+        "resolvedAt": "2026-10-02T17:55:45Z"
+      },
+      {
+        "path": "items/9/options",
+        "message": "執行長裁示：正解長度名次分布：a1-u02-l04-q10 目標第 3 長、消除單題異常值（改了選項 2）",
+        "resolution": "改為 [\"A news reporter\",\"A cop in this town\",\"An engineer\"]（原 [\"A news reporter\",\"A cop\",\"An engineer\"]）",
+        "resolvedAt": "2026-10-02T18:37:43Z"
       }
     ]
   }
