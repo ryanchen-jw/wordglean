@@ -1,18 +1,42 @@
 # TASK-1～23 驗證報告（2026-10-01 full-build）
 
 > 可再現：每個數字都附「重跑指令」。本檔隨各卡 squash-merge 逐段 append。
+> 最後整併：2026-10-03（台北），main HEAD `0461d4d`。事實來源：`.claude/daily-plan/sessions/acceptance-report-1001-full-build.html`（決策用 HTML）、各卡 backlog、git log；HTML 較舊之處以執行長 10-03 補充為準。
+
+## TL;DR
+
+- 23 張卡：Done 18、In Review 1（TASK-15，只差 AC#4 免費模型評測）、進行中 1（TASK-9 題庫）、未開工 3（TASK-21／22／23，等前置卡）。花費 $0。
+- 題庫已進 main 477／984 課（A1 135、A2 158、B2 u01～u24 153、C1 u36～u39 31）；B1、B2 u25～u53、C1 u01～u35 進行中。剔除 0 題。
+- 每張 Done 卡都經隔離驗收官實跑＋突變紅證；有 UI 的卡另有兩引擎走查。題庫走三關（盲審、課綱審查、最終複審）＋執行長親審，全部由 Claude 進行，沒有人類語言專家複核。
+- 全部 commit 只在本機 main，未 push、未部署（G7）。待裁示 0 項。
 
 ## 總覽
 
-| 卡 | 類型 | commit | 自動化證據 | UI 走查 |
-|---|---|---|---|---|
-| TASK-7 | feat（課綱骨架） | 見 git log「TASK-7」 | content 測試 41/41；validator 全綠；重建 sha256 一致；獨立重算重複／越界／漏排皆 0 | N/A |
-| TASK-1 | investigate（語音原型） | 見 git log「TASK-1」 | wer 單元 7/7；結論數字抽 6 處與 results JSON 吻合 | N/A（原型；真機待 G4） |
-| TASK-6 | feat（單字資料管線） | 見 git log「TASK-6」 | data pytest 30/30（無原始檔模式 28＋2 skip）；重建 602 檔 sha256 0 差異；冷啟動最大 50.2ms；Oxford 守衛 4 種植入皆紅 | N/A |
-| TASK-2 | design（R1 線框＋方向，含 R1b 重做） | 見 git log「TASK-2」 | 對比度 R1 63 組／R1b 84 組全過 AA（腳本可重現、手算吻合、突變 exit 1） | 圈選頁 2 輪（G1） |
-| TASK-10 | feat（本機資料層＋FSRS） | 見 git log「TASK-10」 | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
-| TASK-19 | feat（Supabase schema＋RLS） | 見 git log「TASK-19」 | pgTAP 74/74、HTTP smoke 8/8；突變（關 RLS／未上鎖新表／bytea 欄／TRUNCATE）皆轉紅 | N/A |
-| TASK-5 | feat（app 骨架） | 見 git log「TASK-5」 | lint／typecheck／unit 1/1；e2e 3 passed、1 skipped（workers=1）；突變（關 SW 註冊）→ 3 紅 | N/A（佔位頁，非 has-ui） |
+| 卡 | 類型 | 狀態 | commit | 自動化證據 | UI 走查 |
+|---|---|---|---|---|---|
+| TASK-1 | investigate（語音原型） | Done | 5fe044a／規格 22ed253 | wer 單元 7/7；結論數字抽 6 處與 results JSON 吻合 | N/A（原型；G4 真機略過） |
+| TASK-2 | design（R1 線框＋方向，含 R1b 重做） | Done | 8a3b0a0 | 對比度 R1 63 組／R1b 84 組全過 AA（腳本可重現、手算吻合、突變 exit 1） | 圈選頁 2 輪（G1） |
+| TASK-3 | design（R2 設計系統＋高保真 v1.0） | Done | 8a2cb08（補件 afa0f77） | tokens 對比度測試 43 項、突變 2 紅；兩引擎淺色各 41 張破版 0 | G2 兩輪定版 |
+| TASK-4 | content（介面文案定稿） | Done | 5b96f3d／規格 cce1f2b／G3 第二輪 9a86184 | 全表比對 0 不一致；check-zh 314 條 0 錯；守衛三突變紅 | G3 兩輪 |
+| TASK-5 | feat（app 骨架） | Done | 2f867f0 | lint／typecheck／unit 1/1；e2e 3 passed、1 skipped（workers=1）；突變（關 SW 註冊）→ 3 紅 | N/A（佔位頁，非 has-ui） |
+| TASK-6 | feat（單字資料管線） | Done | 2cc3f62／規格 22ed253 | data pytest 30/30（無原始檔模式 28＋2 skip）；重建 602 檔 sha256 0 差異；冷啟動最大 50.2ms；Oxford 守衛 4 種植入皆紅 | N/A |
+| TASK-7 | feat（課綱骨架） | Done | 5474515 | content 測試 41/41；validator 全綠；重建 sha256 一致；獨立重算重複／越界／漏排皆 0 | N/A |
+| TASK-8 | feat（題庫管線＋pilot） | Done | 11ec9d7 | pilot 16 課 274 題檢查器全綠；守衛突變皆紅 | N/A |
+| TASK-9 | content（題庫全量） | 進行中 | 837a688、61224a2、055c008、a60f26b、a201dd3、0461d4d | 477／984 課進 main；三關審定；剔除 0 | 執行長親審（見 TASK-9 節） |
+| TASK-10 | feat（本機資料層＋FSRS） | Done | e4ee37f | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
+| TASK-11 | feat（App 外殼） | Done | a407e8b | 單元 219–220、e2e 42–44 過 2 跳、e2e:sync 12/12；守衛突變皆紅 | 兩引擎；P0×2＋320 寬溢出已修 |
+| TASK-12 | feat（題型引擎＋讀類） | Done | 54301fc | e2e 68 過 2 略；引擎 5 種突變皆紅 | 兩引擎；第一輪 FAIL 後修正 |
+| TASK-13 | feat（聽） | Done | a9d1490 | 退回邏輯突變 4 項紅；e2e chromium 81／webkit 76；真模型合成一句 | 兩引擎；顏色吻合設計 |
+| TASK-14 | feat（說） | Done | f0e294a | 逐字比對 23 組；預錄 10 句真模型 98.8%；錄音期間 0 上傳 | 7 狀態 64 張 |
+| TASK-15 | feat（寫） | In Review（AC#4 進行中） | 66914ed | App 端 AC#1–#3 PASS；整合驗收 openrouter.ai 以外外送 0；評測 0／160 | 走查 P0（AI 卡溢出）已修 |
+| TASK-16 | feat（點字查義＋收藏） | Done | 7874889 | AC#1 65 例；p95 15.7ms（n=30）；e2e:sync 12/12 | 兩引擎；P1 已修 |
+| TASK-17 | feat（分級測驗） | Done | 7033aac | 900 假字對 ECDICT 0 命中；四作答者手算；pgTAP 87 | P1×2 已修 |
+| TASK-18 | feat（每日動線） | Done | e0979c9 | AC#2 14 天模擬；e2e:sync 14；四守衛紅證 | 兩引擎無 P0/P1 |
+| TASK-19 | feat（Supabase schema＋RLS） | Done | d1b62a0 | pgTAP 74/74、HTTP smoke 8/8；突變（關 RLS／未上鎖新表／bytea 欄／TRUNCATE）皆轉紅 | N/A |
+| TASK-20 | feat（登入與同步） | Done | a28af5d | 單元 135；pgTAP 81；e2e:sync 8/8 | P0（長 email 溢出）已修 |
+| TASK-21 | docs（開源與法遵） | 未開工（等 TASK-15 Done） | — | — | — |
+| TASK-22 | qa（全面 QA） | 未開工（等 TASK-13～16 全 Done） | — | — | — |
+| TASK-23 | ops（上線） | 未開工（等 G6／G7） | — | — | — |
 
 ## TASK-5 · 專案骨架——Vite＋React＋TS＋Tailwind、PWA、測試與 CI
 
@@ -166,6 +190,7 @@
 
 - **改了什麼**：copy-table 279 列（位置白話描述）→ 創辦人 G3「照建議」全數定稿 → g3-apply 寫入 app/src/i18n/zh-TW.json（後續卡新增與 4 處行為衝突 key 列 _pendingG3）；登入元件改讀文案；noHardcoded 守衛；scripts/ 繁中用語檢查；規格 §2 STT 大小改 50–80MB（cce1f2b）。
 - **驗收**：PASS——全表比對 0 不一致、腳本重跑產出相同、check-zh 314 條 0 錯、守衛三突變紅。
+- **G3 第二輪**（授權執行長決定）：_pendingG3 81 條定稿——改寫 17、沿用 64（9a86184）。
 - **證據**：`docs/verification/2026-10-02-task4-copy-evidence/`
 - **重跑**：`cd scripts && npm test && node check-zh.mjs ../app/src/i18n/zh-TW.json`
 
@@ -175,3 +200,121 @@
 - **驗收**：PASS——AC#1 四情境字面值、AC#2 14 天模擬（112 字、到期 0–21）、AC#3 today.spec 推一天流程、AC#4 三能力不可用完成一課；e2e:sync 14（settle-sync 反證 25 筆未送紅）；四守衛紅證；走查兩引擎無 P0/P1。
 - **證據**：`docs/verification/2026-10-02-task18-daily-flow-evidence/`
 - **重跑**：`cd app && npm test && E2E_PORT=5372 npx playwright test --workers=1`
+
+## TASK-8 · 題庫產生管線＋pilot 兩單元
+
+- **改了什麼**：依 G5 方向改由開發端 Claude 撰寫題目（author `claude-dev`，0 次 OpenRouter）：pilot 16 課 274 題、題目格式與自動檢查器（越級字、雙答案、簡體與大陸用語、正解位置）、撰寫準則、三關審定流程、全量時程估算（約 20 批）。花費 $0。
+- **驗收**：16 課檢查器全綠；隔離驗收 PASS，P1／P2 已補正。原 AC 的「三模型比較＋金額」「預算核准」因 G5 改方向而被取代，已記卡。
+- **證據**：`docs/pending/2026-10-01-item-bank-pilot/`（evidence.md、cost-estimate.md；結案後搬 evidence 目錄）
+- **重跑**：`npm test --prefix content && node content/scripts/check-items.mjs --require-judge`
+
+## TASK-13 · 聽——Kokoro TTS 整合與聽音打字／聽音選答
+
+- **改了什麼**：依「聽」A——預設手機系統聲音念題，高音質 Kokoro 為設定選配（約 310MB、下載前告知）；Kokoro 載入失敗或沒回應時自動退回系統聲音並提示、可重試；聽音打字（大小寫、標點寬鬆，拼錯算錯）、聽音選答；NFKC 判題；能力偵測接入每日動線。
+- **驗收**：首輪 FAIL（Kokoro 載入失敗時沒有退回、下載卡 0%）→ 修正後第二輪 PASS：退回邏輯突變 4 項轉紅、e2e chromium 81／webkit 76 綠、真模型合成一句成功（下載 44s、合成 5.3s；第二次走快取、連線主機只有本站）、顏色吻合設計。
+- **已知 P2**（移交 TASK-22）：首播最長等 90 秒、全形逗號後沒空白會判錯、合成階段無逾時。
+- **證據**：`docs/pending/2026-10-02-task13-listen/`（proposal、evidence/kokoro-real-run*.json）
+- **重跑**：`cd app && npm test && npx playwright test --workers=1`；真模型（本機、不進 CI）`npm run e2e:tts`
+
+## TASK-14 · 說——Moonshine STT 整合與跟讀題、兩欄修正
+
+- **改了什麼**：手機本機辨識語音（Moonshine，模型 50–80MB 按鈕下載、錄音不上傳）、跟讀題、辨識結果讓使用者確認／修正後送出；AC#3 依裁示改為「以使用者修正後送出的句子計分」，辨識原文與送出句差異記入 speech_corrections；Moonshine 不能用時才提出瀏覽器語音辨識，且需同意。
+- **驗收**：首輪 FAIL（「再唸一次」→跳過會卡死整課；取得麥克風時連點留下未關的錄音）→ 修正後複驗 PASS：逐字比對 23 組；預錄 10 句真模型逐字正確率 98.8%（251 字錯 3，3 次重跑相同）；錄音期間 0 個上傳請求。走查 7 種狀態 64 張、顏色吻合設計。
+- **已知 P2**：近零秒錄音偶發失敗、極端存檔失敗後的殘留狀態（移交 TASK-22）；辨識原文會同步雲端，隱私說明交 TASK-21。
+- **證據**：`docs/pending/2026-10-02-task14-shadowing/`（proposal、evidence/run{1,2,3}-stt-accuracy.json）
+- **重跑**：`cd app && npm test && npx playwright test --workers=1`；真模型正確率見 `app/e2e-speech/stt-real.spec.ts`
+
+## TASK-15 · 寫——OpenRouter 自帶金鑰、批改與無金鑰降級＋預設模型評測（In Review）
+
+- **改了什麼**：一鍵授權（PKCE）或貼金鑰、金鑰只存手機瀏覽器（IndexedDB）、寫作批改（翻譯／造句）、沒金鑰時改成對照參考答案自評、預設模型評測管線（只打 :free 模型的硬守衛）。
+- **驗收**：App 端 AC#1–#3 PASS；併入 TASK-13／14 與 A1 題庫後的整合驗收 PASS（id/key 不錯位、FSRS 不受影響、三能力皆無仍可完成、openrouter.ai 以外真實外送 0）。走查 P0（AI 卡窄螢幕溢出 7–722px）已修並加 openrouter-narrow.spec 16 項（修前 12 紅）。
+- **進行中**：AC#4 預設模型評測——40 句常見錯句 × 4 個免費模型＝160 次，目前 0／160（prompt v2）。免費額度每天約 50 次，每天台北 08:05 後放行、花費 $0，約需 4 天。跑完依代決原則 D4 選預設模型（不拿使用者資料訓練的免費模型中改錯正確率最高者，次高當備援）→ 勾 AC#4 → Done。
+- **已知 P2**（移交 TASK-22）：e2e 測試輔助旗標可能跨測試殘留；作答紀錄不區分自評／AI 批改。
+- **證據**：`docs/pending/2026-10-02-task15-openrouter/`（proposal、dry-run）
+- **重跑**：`cd app && npm test && npx playwright test --workers=1`
+
+## TASK-9 · 題庫全量產生——A1 至 C1（進行中）
+
+- **範圍**：課綱 984 課（A1 135、A2 158、B1 269、B2 304、C1 118），全部由開發端 Claude 撰寫，0 次 OpenRouter、花費 $0（帳本 `content/items/_runs/claude-dev-pilot.json`）。G5 授權執行長代審。
+- **已進 main：477 課**——A1 135（837a688）、A2 158（61224a2）、B2 u01～u24 153（055c008）、C1 u36～u39 31（0461d4d）；A1／A2 後期規則補正（a201dd3：修 86 題＋7 題雙答案）；App 端單字卡與複習卡作答選項只顯示第一義、去括號註記（a60f26b）。
+- **進行中**：B1（u01～u25 已定稿未合，第 4 批寫到 u37）、B2 u25～u53、C1 u01～u35（第 2 批修正中）。
+- **AC 進度**：#1 全部小課有題目且自動檢查全綠、剔除 ≤1%——進行中（目前剔除 0）｜#2 花費 ≤ 上限、逐批記錄——$0｜#3 隨機抽 40 題給創辦人瀏覽——結案時做｜#4 授權說明寫入 NOTICE 與 content/README——結案時做。
+
+### 每級三關結果
+
+第②關＝另一個 Claude 不看答案自己作答，看有沒有兩個以上說得通的選項（多解）；第③關＝對照課綱與撰寫規則逐題審，FIX＝必須修的條數；最終複審＝修完後再全面核對一次；執行長親審＝執行長自己抽題看。
+
+| 級別 | 狀態 | 第②關 盲審多解 | 第③關 FIX | 最終複審 | 執行長親審 |
+|---|---|---|---|---|---|
+| A1（135 課） | 已進 main | 3 批共 625 題位，0 多解 | 17＋21＋22＝60 條（第 1 批另有第二輪複審 FIX 12）全修 | 第 1+2 批 FIX 5、第 3 批 FIX 8，全修 | 3 批各抽約 10%（13 課）：1 個問題（dollars 中譯統一「美元」）已修 |
+| A2（158 課） | 已進 main | 3 批共 790 題位，1 題雙答案（a2-u04-l08 q13，干擾項 admit 已換） | 34＋31＋79＝144 條全修 | FIX 12／72（其中 66 條為句子與單字卡例句雷同）／4，全修 | 第 2 批 7 題選項改動：1 題雙答案（budget）已改 |
+| A1／A2 後期規則補正 | 已進 main（a201dd3） | 改動題重新盲答全一致；「只看英文」抓到 7 題第二解，已修 | — | 單字卡第一義、干擾項範圍等全級自查，修 86 題 | — |
+| B1 u01～u25 | 已定稿未合 | 255／240／240 題位，1 題雙答案（b1-u18-l05 q14，干擾項 transport 已換） | 30＋34＋34＝98 條全修 | FIX 10／13／12，全修 | 第 1 批改動 5 題通過；第 2、3 批紀錄未列 |
+| B1 第 4 批起（寫到 u37） | 進行中 | 進行中 | 進行中 | 進行中 | 進行中 |
+| B2 u01～u24（153 課） | 已進 main | 260／270／235 題位，2 題雙答案（b2-u15-l01 q13 boil、b2-u19-l01 q13 seminar，皆已換） | 36＋55＋38＝129 條全修 | FIX 9／4／55，全修 | 改動選項 6 題＋干擾項更換 13 題通過；混合詞性 32 題親審；「只看英文」自查修 29 題，改動 73 題重新盲答全一致 |
+| B2 u25～u53（151 課） | 進行中 | 進行中 | 進行中 | 進行中 | 進行中 |
+| C1 u01～u35 | 進行中（第 1 批定稿、第 2 批修正中） | 第 1 批 240 題位，0 多解｜第 2 批進行中 | 第 1 批 64 條全修｜第 2 批進行中 | 第 1 批 FIX 4，全修｜第 2 批進行中 | 第 1 批 11 題選擇題＋2 段短文通過｜第 2 批進行中 |
+| C1 u36～u39（31 課） | 已進 main（0461d4d） | 155 題位 0 多解（另 50 條意見全修） | 27 條全修 | FIX 6，全修；改動 48＋2 題只看英文重新盲答全一致 | 3 課 |
+
+### 剔除清單
+
+目前 **0 題**。唯一被建議剔除的 a1-u02-l03-q14（A1 第 2 單元很早期，已教的動詞太少，湊不出第二個放得進空格的干擾項）改以豁免處理：比照 a1-u01-l01，免用「混合詞性題至少兩個干擾項放得進空格」，但把勉強說得通的干擾項 Need 換成明顯不通的已教字。
+
+### 規則演進（審查中陸續新增，全部級別適用）
+
+1. 寫作題評分要點一律寫「例如…等」，並列出其他也算對的寫法。
+2. 正確答案的位置每題獨立隨機，檢查器會擋「位置有規律」。
+3. 每個新字除了單字卡，至少再出現在一題有完整句子的題目裡。
+4. 字義以該級最常用、貼合單元主題的意思為準；名詞動詞都常用的字兩義並列。
+5. 不寫醫療建議與戰爭、災難、死亡等沉重題材。
+6. 題目句子不可和單字卡例句雷同：主詞、情境、句型至少換兩項，並附對照表逐列人工核對。
+7. 不是本課要教的字，不可用超過該級的意思。
+8. 從 A2 起，每課至少一題選擇題四個選項同詞性，只能靠字義判斷。
+9. 不寫國家地位、主權、統獨相關句子。
+10. 不寫理財投資、飲食建議與鼓勵賭博的情節。
+11. 選項中只有一個大寫的專有名詞也算洩題。
+12. 每單元從第 2 課起，閱讀短文自然帶入前面學過的字。
+13. 選項長度：正確答案落在「最長、第二長、第三長、最短」的比例都要接近隨機，單題選項長度不得差到兩倍以上。
+14. 干擾項只用已經教過或低一級的字，不可一眼就排除，同一個字不可在多課重複當干擾項。
+15. 混合詞性的那題，三個干擾項至少兩個放得進空格。
+16. 同一課兩題選擇題不共用干擾項，也不拿另一題的答案當干擾項。
+17. 選擇題只看英文就要只有一個答案（作答時不顯示中文題意）。
+18. 單字卡第一個意思＝最常用的意思，例句要示範這個意思；作答選項只顯示第一個意思。
+19. 聽選題的音檔句子也納入雷同比對。
+20. 規則衝突時的優先序：「只看英文唯一可解」優先於混合詞性與同詞性配比；豁免 6 題已記錄於 `docs/pending/2026-10-02-item-bank-full/a12-cleanup-changes.md`（「規則衝突與豁免」節）。
+
+### 備查事項
+
+- 課綱命名與內容不符 3 處（備查、不動課綱）：
+  - b2-u24「生活服務（一）」
+  - a2-u26「常用動作（二）」
+  - c1-u22 主題寫政府、政治、法律，實際是宗教字
+- 課綱誤植 1 處：C1 的 chauffer 應為 chauffeur，執行長授權只改這一字。
+- 題庫審查全部由 Claude 進行（撰寫者、盲審、課綱審查、最終複審為不同的獨立 session），沒有人類語言專家複核。
+- 裁示與審查原始紀錄在 scratchpad（t9/*-rulings.md、t9/*-final.md、t9/ceo-spotcheck.md，transient）；各級狀態與改動清單在 `docs/pending/2026-10-02-item-bank-full/`（結案後搬 evidence 目錄）。
+- **重跑**：
+  ```
+  npm test --prefix content && node content/scripts/check-items.mjs --require-judge
+  ```
+
+## TASK-21 · 開源與法遵文件——未開工
+
+- 等 TASK-15 Done。已累積待寫：辨識原文會同步雲端的隱私說明（TASK-14）、題庫授權說明（TASK-9 AC#4）。
+
+## TASK-22 · 全面 QA——未開工
+
+- 等 TASK-13～16 全 Done（目前只差 TASK-15）。
+- 已累積移交項：單字顯示大小寫（i→I、tv→TV、月份）、TASK-13／14／15 的 P2、跟讀模型下載失敗時標題仍顯示「下載中」、未使用的文案 key、兩份英文字串白名單不一致、HomeScreen 測試負載下偶發逾時。
+
+## TASK-23 · 上線——未開工
+
+- 等 G6／G7。上線後依 `.claude/harness/07-verification-report.md` §7 做部署後唯讀走查。
+
+## 誠實聲明
+
+- 所有語音數字為桌機模擬（手機下限），iOS 真實記憶體上限與 WebGPU 未驗；G4 真機自測依裁示略過。
+- CI workflow 未在 GitHub 實跑（無 remote），以本機等價指令代替。
+- worker 內 context7 未登入，函式庫查證改用 npm／PyPI registry 與官方文件（每卡 comment 已註明偏離）。
+- TASK-3 最終版只有淺色兩引擎截圖；深色、特大字級沿用第一輪（本機記憶體不足，執行長裁示）。
+- TASK-8／13／14／15／9 的證據仍在 `docs/pending/`，結案時搬進 `docs/verification/*-evidence/`；scratchpad 內的審查紀錄為 transient。
+- 全部 commit 只在本機 main、未 push、未部署。
