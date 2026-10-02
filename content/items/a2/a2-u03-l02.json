@@ -150,13 +150,13 @@
       "stemZh": "請說大聲一點，我聽不到你說話。",
       "options": [
         "loudly",
-        "quietly",
+        "correctly",
         "silently",
         "smoothly"
       ],
       "optionGlossZh": [
         "大聲地",
-        "小聲地",
+        "正確地",
         "安靜地",
         "順利地"
       ],
@@ -309,6 +309,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u03-l02-q10 目標第 3 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"The restaurant was noisy\",\"The restaurant was closed\",\"The food there was very bad\"]（原 [\"The restaurant was noisy\",\"The restaurant was closed\",\"The food was bad\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：quietly 超範圍，改本單元 correctly",
+        "resolution": "改為 [\"loudly\", \"correctly\", \"silently\", \"smoothly\"]（原 [\"loudly\", \"quietly\", \"silently\", \"smoothly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：quietly 超範圍，改本單元 correctly",
+        "resolution": "改為 [\"大聲地\", \"正確地\", \"安靜地\", \"順利地\"]（原 [\"大聲地\", \"小聲地\", \"安靜地\", \"順利地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

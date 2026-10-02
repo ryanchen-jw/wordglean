@@ -155,15 +155,15 @@
       "stemZh": "我喜歡牛奶，但是我妹妹不喜歡。",
       "options": [
         "this",
-        "from",
+        "for",
         "but",
-        "at"
+        "that"
       ],
       "optionGlossZh": [
         "這個",
-        "從",
+        "因為（書面）",
         "但是",
-        "在"
+        "那個"
       ],
       "answer": 2
     },
@@ -174,15 +174,15 @@
       "stemZh": "這封信是我奶奶寄來的。",
       "options": [
         "at",
-        "but",
+        "in",
         "from",
-        "we"
+        "on"
       ],
       "optionGlossZh": [
         "在",
-        "但是",
+        "在⋯裡面",
         "從；來自",
-        "我們"
+        "在⋯上面"
       ],
       "answer": 2
     },
@@ -326,6 +326,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u01-l03-q10 目標第 1 長、消除單題異常值（改了選項 1，含正解措辭、意思不變）",
         "resolution": "改為 [\"Right here\",\"In Japan\",\"At school\"]（原 [\"Here\",\"In Japan\",\"At school\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：from 是 q14 正解、at 與 q14 共用，改 for、that（兩者文法可通、語意不對）；避開 and（也通）",
+        "resolution": "改為 [\"this\", \"for\", \"but\", \"that\"]（原 [\"this\", \"from\", \"but\", \"at\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：from 是 q14 正解、at 與 q14 共用，改 for、that（兩者文法可通、語意不對）；避開 and（也通）",
+        "resolution": "改為 [\"這個\", \"因為（書面）\", \"但是\", \"那個\"]（原 [\"這個\", \"從\", \"但是\", \"在\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：but 是 q13 正解改 in；we 改 on，使四選項皆介系詞；避開 for／to（也通）",
+        "resolution": "改為 [\"at\", \"in\", \"from\", \"on\"]（原 [\"at\", \"but\", \"from\", \"we\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：but 是 q13 正解改 in；we 改 on，使四選項皆介系詞；避開 for／to（也通）",
+        "resolution": "改為 [\"在\", \"在⋯裡面\", \"從；來自\", \"在⋯上面\"]（原 [\"在\", \"但是\", \"從；來自\", \"我們\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

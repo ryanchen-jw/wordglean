@@ -150,15 +150,15 @@
       "stemEn": "She is the best player on our team, so she will ____ win.",
       "stemZh": "她是我們隊上最強的選手，所以她一定會贏。",
       "options": [
-        "hardly",
+        "never",
         "certainly",
-        "nearly",
+        "almost",
         "especially"
       ],
       "optionGlossZh": [
-        "幾乎不",
+        "從不",
         "一定",
-        "差一點",
+        "幾乎",
         "尤其"
       ],
       "answer": 1
@@ -353,6 +353,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u01-l04-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"想去山下那條小河裡學游泳\",\"想到別的樹上找新的朋友玩\",\"想看看山的另一邊有什麼\"]（原 [\"想去山下那條河裡學游泳\",\"想找新朋友\",\"想看看山的另一邊有什麼\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：hardly、nearly 超範圍，改 never、almost",
+        "resolution": "改為 [\"never\", \"certainly\", \"almost\", \"especially\"]（原 [\"hardly\", \"certainly\", \"nearly\", \"especially\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：hardly、nearly 超範圍，改 never、almost",
+        "resolution": "改為 [\"從不\", \"一定\", \"幾乎\", \"尤其\"]（原 [\"幾乎不\", \"一定\", \"差一點\", \"尤其\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

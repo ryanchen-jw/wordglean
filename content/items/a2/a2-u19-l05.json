@@ -79,8 +79,8 @@
       "id": "a2-u19-l05-q06",
       "type": "wordCard",
       "word": "repair",
-      "exampleEn": "The road is closed for repairs.",
-      "exampleZh": "這條路因為整修而封閉。",
+      "exampleEn": "The old clock in our hall was repaired in one day.",
+      "exampleZh": "我們走廊上那座舊時鐘一天就修好了。",
       "glossZh": "修理；整修",
       "distractorsZh": [
         "清潔",
@@ -140,13 +140,13 @@
       "options": [
         "envelope",
         "liberty",
-        "permission",
+        "population",
         "fighter"
       ],
       "optionGlossZh": [
         "信封",
         "自由",
-        "許可",
+        "人口",
         "戰士"
       ],
       "answer": 0
@@ -158,14 +158,14 @@
       "stemZh": "沒有得到許可，你不能在這裡拍照。",
       "options": [
         "permission",
-        "envelope",
-        "fighter",
+        "freedom",
+        "society",
         "repair"
       ],
       "optionGlossZh": [
         "許可",
-        "信封",
-        "戰士",
+        "自由",
+        "社會",
         "修理"
       ],
       "answer": 0
@@ -279,6 +279,42 @@
         "message": "執行長第②③關裁示修正：第②關：正解選項明顯是最長的一個（「一家有名餐廳的收據」9 字 vs 3–4 字），違反「正解不落在最長集合」；應縮短正解或加長干擾項。",
         "resolution": "改為 [\"他和自由女神像的合照\",\"一張美國的地圖\",\"一些美國的硬幣\"]（原 [\"一家有名餐廳的收據\",\"一張照片\",\"一些錢\"]）；短文結尾改寫，正解同步；長度另由全級名次分布規則處理",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「修理」；與 q09 修理費用、q14 租車小修、q16 手機需修理／修腳踏車換了主詞＋情境＋句型（被動語態）。",
+        "resolution": "改為 \"The old clock in our hall was repaired in one day.\"（原 \"The road is closed for repairs.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「修理」；與 q09 修理費用、q14 租車小修、q16 手機需修理／修腳踏車換了主詞＋情境＋句型（被動語態）。",
+        "resolution": "改為 \"我們走廊上那座舊時鐘一天就修好了。\"（原 \"這條路因為整修而封閉。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：permission 是 q13 正解，改 population",
+        "resolution": "改為 [\"envelope\", \"liberty\", \"population\", \"fighter\"]（原 [\"envelope\", \"liberty\", \"permission\", \"fighter\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：permission 是 q13 正解，改 population",
+        "resolution": "改為 [\"信封\", \"自由\", \"人口\", \"戰士\"]（原 [\"信封\", \"自由\", \"許可\", \"戰士\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：envelope 是 q12 正解改 freedom；fighter 與 q12 共用（且可數名詞無冠詞）改 society",
+        "resolution": "改為 [\"permission\", \"freedom\", \"society\", \"repair\"]（原 [\"permission\", \"envelope\", \"fighter\", \"repair\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：envelope 是 q12 正解改 freedom；fighter 與 q12 共用（且可數名詞無冠詞）改 society",
+        "resolution": "改為 [\"許可\", \"自由\", \"社會\", \"修理\"]（原 [\"許可\", \"信封\", \"戰士\", \"修理\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

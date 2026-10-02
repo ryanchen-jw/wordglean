@@ -169,15 +169,15 @@
       "stemZh": "這所學校對學習有先進的想法，例如不考試。",
       "options": [
         "progressive",
-        "lack",
+        "cheap",
         "depend",
-        "solution"
+        "traditional"
       ],
       "optionGlossZh": [
         "先進的",
-        "缺乏",
+        "便宜的",
         "依靠",
-        "解決辦法"
+        "傳統的"
       ],
       "answer": 0
     },
@@ -272,6 +272,18 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"這座城市用先進的方法維持街道清潔。\"（原 \"我們的小鎮變得越來越進步。\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：solution 與 q13 共用、lack 放不進 has ___ ideas，改形容詞 traditional、cheap",
+        "resolution": "改為 [\"progressive\", \"cheap\", \"depend\", \"traditional\"]（原 [\"progressive\", \"lack\", \"depend\", \"solution\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：solution 與 q13 共用、lack 放不進 has ___ ideas，改形容詞 traditional、cheap",
+        "resolution": "改為 [\"先進的\", \"便宜的\", \"依靠\", \"傳統的\"]（原 [\"先進的\", \"缺乏\", \"依靠\", \"解決辦法\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

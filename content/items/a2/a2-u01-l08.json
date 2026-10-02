@@ -174,16 +174,16 @@
       "stemEn": "We can stay here ____ Sunday.",
       "stemZh": "我們可以在這裡待到星期天。",
       "options": [
-        "elsewhere",
+        "against",
         "till",
         "latter",
-        "shall"
+        "without"
       ],
       "optionGlossZh": [
-        "到別處",
+        "與⋯對抗",
         "直到",
         "後者",
-        "（提議）⋯好嗎"
+        "沒有"
       ],
       "answer": 1
     },
@@ -303,6 +303,30 @@
         "message": "執行長第②③關裁示修正：中譯同步",
         "resolution": "改為 \"請轉過身來，讓我看看你的背。\"（原 \"我叫他名字的時候，他轉過身來。\"）",
         "resolvedAt": "2026-10-02T13:22:50Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：elsewhere 是 q13 正解改 beyond；shall 放不進空格改 during，使兩個干擾項文法成立",
+        "resolution": "改為 [\"beyond\", \"till\", \"latter\", \"during\"]（原 [\"elsewhere\", \"till\", \"latter\", \"shall\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：elsewhere 是 q13 正解改 beyond；shall 放不進空格改 during，使兩個干擾項文法成立",
+        "resolution": "改為 [\"在⋯之後；超過\", \"直到\", \"後者\", \"在⋯期間\"]（原 [\"到別處\", \"直到\", \"後者\", \"（提議）⋯好嗎\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We can stay here during Sunday.／beyond Sunday. 只看英文都說得通；換成 against、without，介系詞片語文法通但語意不通",
+        "resolution": "改為 [\"against\", \"till\", \"latter\", \"without\"]（原 [\"beyond\", \"till\", \"latter\", \"during\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We can stay here during Sunday.／beyond Sunday. 只看英文都說得通；換成 against、without，介系詞片語文法通但語意不通",
+        "resolution": "改為 [\"與⋯對抗\", \"直到\", \"後者\", \"沒有\"]（原 [\"在⋯之後；超過\", \"直到\", \"後者\", \"在⋯期間\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

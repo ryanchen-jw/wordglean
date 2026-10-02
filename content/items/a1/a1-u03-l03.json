@@ -79,8 +79,8 @@
       "id": "a1-u03-l03-q06",
       "type": "wordCard",
       "word": "minute",
-      "exampleEn": "Please wait a minute.",
-      "exampleZh": "請等一下。",
+      "exampleEn": "It takes me twenty minutes to walk to school.",
+      "exampleZh": "我走路上學要花二十分鐘。",
       "glossZh": "分鐘；一會兒",
       "distractorsZh": [
         "小時",
@@ -154,13 +154,13 @@
         "ago",
         "often",
         "once",
-        "morning"
+        "now"
       ],
       "optionGlossZh": [
         "⋯以前",
         "常常",
         "一次",
-        "早上"
+        "現在"
       ],
       "answer": 0
     },
@@ -173,13 +173,13 @@
         "morning",
         "minute",
         "hour",
-        "once"
+        "day"
       ],
       "optionGlossZh": [
         "早上",
         "分鐘",
         "小時",
-        "一次"
+        "天；日"
       ],
       "answer": 2
     },
@@ -334,6 +334,54 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「老師」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:39:19Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 minute＝分鐘；與 q09 公車班距、q11 待會見、q13 多久以前、q14 一小時幾分換了主詞＋情境＋句型",
+        "resolution": "改為 \"It takes me twenty minutes to walk to school.\"（原 \"Please wait a minute.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 minute＝分鐘；與 q09 公車班距、q11 待會見、q13 多久以前、q14 一小時幾分換了主詞＋情境＋句型",
+        "resolution": "改為 \"我走路上學要花二十分鐘。\"（原 \"請等一下。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：once、morning 與 q14 共用，改 later、after（ten minutes later／after 文法可通、與「前」意思相反）；避開 back（也對）",
+        "resolution": "改為 [\"ago\", \"often\", \"later\", \"after\"]（原 [\"ago\", \"often\", \"once\", \"morning\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：once、morning 與 q14 共用，改 later、after（ten minutes later／after 文法可通、與「前」意思相反）；避開 back（也對）",
+        "resolution": "改為 [\"⋯以前\", \"常常\", \"之後；待會\", \"之後\"]（原 [\"⋯以前\", \"常常\", \"一次\", \"早上\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：once 與 q13 共用且非名詞，改 day，四選項皆名詞",
+        "resolution": "改為 [\"morning\", \"minute\", \"hour\", \"day\"]（原 [\"morning\", \"minute\", \"hour\", \"once\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：once 與 q13 共用且非名詞，改 day，四選項皆名詞",
+        "resolution": "改為 [\"早上\", \"分鐘\", \"小時\", \"天；日\"]（原 [\"早上\", \"分鐘\", \"小時\", \"一次\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：later、after 代入成 He left ten minutes later／ten minutes after. 都說得通；換成 once（文法勉強、語意不通）、now（不通）",
+        "resolution": "改為 [\"ago\", \"often\", \"once\", \"now\"]（原 [\"ago\", \"often\", \"later\", \"after\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：later、after 代入成 He left ten minutes later／ten minutes after. 都說得通；換成 once（文法勉強、語意不通）、now（不通）",
+        "resolution": "改為 [\"⋯以前\", \"常常\", \"一次\", \"現在\"]（原 [\"⋯以前\", \"常常\", \"之後；待會\", \"之後\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

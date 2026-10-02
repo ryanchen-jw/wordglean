@@ -170,16 +170,16 @@
       "stemEn": "I like to ____ jeans and a white shirt.",
       "stemZh": "我喜歡穿牛仔褲和白襯衫。",
       "options": [
-        "bag",
+        "cook",
         "pretty",
         "wear",
-        "hair"
+        "greet"
       ],
       "optionGlossZh": [
-        "包包",
+        "煮",
         "漂亮的",
         "穿",
-        "頭髮"
+        "打招呼"
       ],
       "answer": 2
     },
@@ -335,6 +335,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u09-l01-q10 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"An umbrella\",\"A big black bag\",\"Your hat\"]（原 [\"An umbrella\",\"A big black bag\",\"A hat\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：hair 與 q13 共用；混合詞性題原無干擾項放得進空格，bag/hair 換動詞 cook/share",
+        "resolution": "改為 [\"cook\", \"pretty\", \"wear\", \"share\"]（原 [\"bag\", \"pretty\", \"wear\", \"hair\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：hair 與 q13 共用；混合詞性題原無干擾項放得進空格，bag/hair 換動詞 cook/share",
+        "resolution": "改為 [\"煮\", \"漂亮的\", \"穿\", \"共用\"]（原 [\"包包\", \"漂亮的\", \"穿\", \"頭髮\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：I like to share jeans and a white shirt.（和家人共穿）只看英文勉強說得通，share 換成 greet，向牛仔褲打招呼語意不通，cook、greet 兩個動詞放得進空格",
+        "resolution": "改為 [\"cook\", \"pretty\", \"wear\", \"greet\"]（原 [\"cook\", \"pretty\", \"wear\", \"share\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：I like to share jeans and a white shirt.（和家人共穿）只看英文勉強說得通，share 換成 greet，向牛仔褲打招呼語意不通，cook、greet 兩個動詞放得進空格",
+        "resolution": "改為 [\"煮\", \"漂亮的\", \"穿\", \"打招呼\"]（原 [\"煮\", \"漂亮的\", \"穿\", \"共用\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

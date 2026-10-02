@@ -154,14 +154,14 @@
       "options": [
         "sells",
         "money",
-        "supermarket",
-        "bookstore"
+        "spends",
+        "pays"
       ],
       "optionGlossZh": [
         "賣",
         "錢",
-        "超市",
-        "書店"
+        "花費",
+        "付錢"
       ],
       "answer": 0
     },
@@ -173,14 +173,14 @@
       "options": [
         "change",
         "bookstore",
-        "spend",
-        "sell"
+        "phone",
+        "key"
       ],
       "optionGlossZh": [
         "零錢",
         "書店",
-        "花費",
-        "賣"
+        "電話",
+        "鑰匙"
       ],
       "answer": 0
     },
@@ -378,6 +378,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"麵包、蛋和果汁\"（原 \"麵包和蛋\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：bookstore 與 q14 共用；supermarket/bookstore 換動詞 spends/pays，兩個干擾項可放進空格",
+        "resolution": "改為 [\"sells\", \"money\", \"spends\", \"pays\"]（原 [\"sells\", \"money\", \"supermarket\", \"bookstore\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：bookstore 與 q14 共用；supermarket/bookstore 換動詞 spends/pays，兩個干擾項可放進空格",
+        "resolution": "改為 [\"賣\", \"錢\", \"花費\", \"付錢\"]（原 [\"賣\", \"錢\", \"超市\", \"書店\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sell 是 q13 正解、spend 為動詞，換名詞 phone/key，四項皆名詞",
+        "resolution": "改為 [\"change\", \"bookstore\", \"phone\", \"key\"]（原 [\"change\", \"bookstore\", \"spend\", \"sell\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sell 是 q13 正解、spend 為動詞，換名詞 phone/key，四項皆名詞",
+        "resolution": "改為 [\"零錢\", \"書店\", \"電話\", \"鑰匙\"]（原 [\"零錢\", \"書店\", \"花費\", \"賣\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

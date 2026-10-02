@@ -152,15 +152,15 @@
       "stemEn": "The book has twelve ____, and each one is about a different country.",
       "stemZh": "這本書有十二章，每一章介紹一個不同的國家。",
       "options": [
-        "learners",
-        "atoms",
-        "exams",
+        "semesters",
+        "errors",
+        "folders",
         "chapters"
       ],
       "optionGlossZh": [
-        "學習者",
-        "原子",
-        "考試",
+        "學期",
+        "錯誤",
+        "資料夾",
         "章"
       ],
       "answer": 3
@@ -281,6 +281,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u17-l04-q15#0 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"放學後去附近的補習班上課\",\"看電視上的自然科節目\",\"讀一章課本、寫摘要\"]（原 [\"放學後去附近的補習班上課\",\"看電視\",\"讀一章課本、寫摘要\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：learners、atoms 與 q14 共用、exams 是 q14 正解；改本單元複數名詞 semesters、errors、folders（charts、essays 會變也對故不用）",
+        "resolution": "改為 [\"semesters\", \"errors\", \"folders\", \"chapters\"]（原 [\"learners\", \"atoms\", \"exams\", \"chapters\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：learners、atoms 與 q14 共用、exams 是 q14 正解；改本單元複數名詞 semesters、errors、folders（charts、essays 會變也對故不用）",
+        "resolution": "改為 [\"學期\", \"錯誤\", \"資料夾\", \"章\"]（原 [\"學習者\", \"原子\", \"考試\", \"章\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

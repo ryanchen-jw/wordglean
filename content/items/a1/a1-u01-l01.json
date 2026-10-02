@@ -17,7 +17,7 @@
       "word": "the",
       "exampleEn": "The cat is on the bed.",
       "exampleZh": "那隻貓在床上。",
-      "glossZh": "這個；那個（特指）",
+      "glossZh": "那個；這個",
       "distractorsZh": [
         "一個",
         "和",
@@ -28,8 +28,8 @@
       "id": "a1-u01-l01-q02",
       "type": "wordCard",
       "word": "be",
-      "exampleEn": "Please be quiet in the library.",
-      "exampleZh": "在圖書館裡請保持安靜。",
+      "exampleEn": "We are good friends.",
+      "exampleZh": "我們是好朋友。",
       "glossZh": "是；保持（某狀態）",
       "distractorsZh": [
         "有",
@@ -152,14 +152,14 @@
       "stemEn": "Can I have a cup ____ coffee, please?",
       "stemZh": "請給我一杯咖啡好嗎？",
       "options": [
-        "to",
-        "in",
+        "a",
+        "the",
         "and",
         "of"
       ],
       "optionGlossZh": [
-        "到",
-        "在⋯裡",
+        "一個",
+        "這個；那個",
         "和",
         "⋯的"
       ],
@@ -171,15 +171,15 @@
       "stemEn": "My mother is ____ the kitchen now.",
       "stemZh": "我媽媽現在在廚房裡。",
       "options": [
-        "of",
+        "be",
         "to",
-        "and",
+        "have",
         "in"
       ],
       "optionGlossZh": [
-        "⋯的",
+        "是",
         "到",
-        "和",
+        "有",
         "在⋯裡"
       ],
       "answer": 3
@@ -313,6 +313,48 @@
         "message": "執行長裁示：正解長度名次分布：a1-u01-l01-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"兩隻小狗和一個哥哥\",\"一個哥哥和一隻小貓\",\"一個妹妹和一隻狗\"]（原 [\"兩隻狗\",\"一個哥哥和一隻貓\",\"一個妹妹和一隻狗\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"那個；這個\"（原 \"這個；那個（特指）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 be＝是（are）；與同課 q01/q04/q06/q09/q14/q17 的「物品在某處」換了主詞＋情境＋句型（人＋名詞補語）",
+        "resolution": "改為 \"We are good friends.\"（原 \"Please be quiet in the library.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 be＝是（are）；與同課 q01/q04/q06/q09/q14/q17 的「物品在某處」換了主詞＋情境＋句型（人＋名詞補語）",
+        "resolution": "改為 \"我們是好朋友。\"（原 \"在圖書館裡請保持安靜。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：to、and 與 q14 共用、in 是 q14 正解，改用 a、the；保留 and（a cup and coffee 文法可通）。本課僅 8 字、其他介系詞只有 to，無法做到同詞性題",
+        "resolution": "改為 [\"a\", \"the\", \"and\", \"of\"]（原 [\"to\", \"in\", \"and\", \"of\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：to、and 與 q14 共用、in 是 q14 正解，改用 a、the；保留 and（a cup and coffee 文法可通）。本課僅 8 字、其他介系詞只有 to，無法做到同詞性題",
+        "resolution": "改為 [\"一個\", \"這個；那個\", \"和\", \"⋯的\"]（原 [\"到\", \"在⋯裡\", \"和\", \"⋯的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：of 是 q13 正解、and 與 q13 共用，改 be、have；保留 to。全課可用字只有 8 個，同詞性與混合題兩條件無解（見回報）",
+        "resolution": "改為 [\"be\", \"to\", \"have\", \"in\"]（原 [\"of\", \"to\", \"and\", \"in\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：of 是 q13 正解、and 與 q13 共用，改 be、have；保留 to。全課可用字只有 8 個，同詞性與混合題兩條件無解（見回報）",
+        "resolution": "改為 [\"是\", \"到\", \"有\", \"在⋯裡\"]（原 [\"⋯的\", \"到\", \"和\", \"在⋯裡\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

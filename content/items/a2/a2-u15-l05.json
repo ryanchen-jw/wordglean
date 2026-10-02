@@ -160,15 +160,15 @@
       "stemZh": "我們去露營時睡在森林裡。",
       "options": [
         "camping",
-        "cassette",
-        "chess",
-        "symphony"
+        "shopping",
+        "dancing",
+        "singing"
       ],
       "optionGlossZh": [
         "露營",
-        "錄音帶",
-        "西洋棋",
-        "交響曲"
+        "購物",
+        "跳舞",
+        "唱歌"
       ],
       "answer": 0
     },
@@ -371,6 +371,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u15-l05-q14#0 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"和老朋友在公園裡下西洋棋\",\"像在迪斯可舞廳一樣跳舞\",\"和朋友去山上健行\"]（原 [\"和老朋友在公園裡下西洋棋\",\"像在迪斯可舞廳一樣跳舞\",\"去健行\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：chess 是 q12 正解、symphony 與 q12 共用；改 -ing 名詞 shopping、dancing、singing，四項都放得進 went ____，靠 slept in the forest 排除（hiking 會變也對故不用）",
+        "resolution": "改為 [\"camping\", \"shopping\", \"dancing\", \"singing\"]（原 [\"camping\", \"cassette\", \"chess\", \"symphony\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：chess 是 q12 正解、symphony 與 q12 共用；改 -ing 名詞 shopping、dancing、singing，四項都放得進 went ____，靠 slept in the forest 排除（hiking 會變也對故不用）",
+        "resolution": "改為 [\"露營\", \"購物\", \"跳舞\", \"唱歌\"]（原 [\"露營\", \"錄音帶\", \"西洋棋\", \"交響曲\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

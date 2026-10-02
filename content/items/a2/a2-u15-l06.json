@@ -159,13 +159,13 @@
       "options": [
         "lyrics",
         "MP3 player",
-        "board game",
+        "drawing",
         "digital camera"
       ],
       "optionGlossZh": [
         "歌詞",
         "MP3 播放器",
-        "桌遊",
+        "圖畫",
         "數位相機"
       ],
       "answer": 0
@@ -453,6 +453,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u15-l06-q09 目標第 2 長、消除單題異常值（改了選項 2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"Classical music\",\"Only hip hop\",\"Rock music\"]（原 [\"Classical music\",\"Hip hop\",\"Rock\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：board game 與 q12 共用，改本單元名詞 drawing（rhythm、tune 會變也對故不用）",
+        "resolution": "改為 [\"lyrics\", \"MP3 player\", \"drawing\", \"digital camera\"]（原 [\"lyrics\", \"MP3 player\", \"board game\", \"digital camera\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：board game 與 q12 共用，改本單元名詞 drawing（rhythm、tune 會變也對故不用）",
+        "resolution": "改為 [\"歌詞\", \"MP3 播放器\", \"圖畫\", \"數位相機\"]（原 [\"歌詞\", \"MP3 播放器\", \"桌遊\", \"數位相機\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

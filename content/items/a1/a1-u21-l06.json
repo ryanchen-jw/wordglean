@@ -81,7 +81,7 @@
       "word": "closed",
       "exampleEn": "The shop is closed today.",
       "exampleZh": "這家店今天沒開。",
-      "glossZh": "關閉的；沒營業的",
+      "glossZh": "沒營業的；關閉的",
       "distractorsZh": [
         "開著的",
         "擁擠的",
@@ -151,13 +151,13 @@
       "stemEn": "Don't use that cup. It is ____.",
       "stemZh": "別用那個杯子，它很髒。",
       "options": [
-        "blank",
+        "quiet",
         "dirty",
         "super",
         "tight"
       ],
       "optionGlossZh": [
-        "空白的",
+        "安靜的",
         "髒的",
         "超棒的",
         "緊的"
@@ -170,16 +170,16 @@
       "stemEn": "Start on a ____ page.",
       "stemZh": "從空白的一頁開始寫。",
       "options": [
-        "orange",
+        "rude",
         "closed",
         "blank",
-        "tight"
+        "broken"
       ],
       "optionGlossZh": [
-        "橘色的",
+        "沒禮貌的",
         "關閉的",
         "空白的",
-        "緊的"
+        "壞掉的"
       ],
       "answer": 2
     },
@@ -304,6 +304,60 @@
         "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
         "resolution": "改前：\"寫 My phone does not work. 也正確\"；改後：\"寫 My bike does not work. 也正確\"",
         "resolvedAt": "2026-10-02T13:22:44Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"沒營業的；關閉的\"（原 \"關閉的；沒營業的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：blank 是 q14 正解改 orange（避開 broken 也通）；tight 留本題",
+        "resolution": "改為 [\"orange\", \"dirty\", \"super\", \"tight\"]（原 [\"blank\", \"dirty\", \"super\", \"tight\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：blank 是 q14 正解改 orange（避開 broken 也通）；tight 留本題",
+        "resolution": "改為 [\"橘色的\", \"髒的\", \"超棒的\", \"緊的\"]（原 [\"空白的\", \"髒的\", \"超棒的\", \"緊的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：tight 與 q13 共用改 broken；orange 搭 a 會洩題，改 purple（避開 clean 也通）",
+        "resolution": "改為 [\"purple\", \"closed\", \"blank\", \"broken\"]（原 [\"orange\", \"closed\", \"blank\", \"tight\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：tight 與 q13 共用改 broken；orange 搭 a 會洩題，改 purple（避開 clean 也通）",
+        "resolution": "改為 [\"紫色的\", \"關閉的\", \"空白的\", \"壞掉的\"]（原 [\"橘色的\", \"關閉的\", \"空白的\", \"緊的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：orange 代入「Don't use that cup. It is orange.」在合理情境下可成立（指認那個橘色杯子），換成 quiet（杯子安靜，語意不通）",
+        "resolution": "改為 [\"quiet\", \"dirty\", \"super\", \"tight\"]（原 [\"orange\", \"dirty\", \"super\", \"tight\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：orange 代入「Don't use that cup. It is orange.」在合理情境下可成立（指認那個橘色杯子），換成 quiet（杯子安靜，語意不通）",
+        "resolution": "改為 [\"安靜的\", \"髒的\", \"超棒的\", \"緊的\"]（原 [\"橘色的\", \"髒的\", \"超棒的\", \"緊的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：purple 代入「Start on a purple page.」說得通（彩色頁的筆記本），換成 rude（a rude page 語意不通）",
+        "resolution": "改為 [\"rude\", \"closed\", \"blank\", \"broken\"]（原 [\"purple\", \"closed\", \"blank\", \"broken\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：purple 代入「Start on a purple page.」說得通（彩色頁的筆記本），換成 rude（a rude page 語意不通）",
+        "resolution": "改為 [\"沒禮貌的\", \"關閉的\", \"空白的\", \"壞掉的\"]（原 [\"紫色的\", \"關閉的\", \"空白的\", \"壞掉的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

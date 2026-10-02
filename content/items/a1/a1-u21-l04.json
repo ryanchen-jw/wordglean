@@ -149,13 +149,13 @@
       "stemEn": "It is not raining now. The ground is ____.",
       "stemZh": "現在沒下雨了，地面是乾的。",
       "options": [
-        "straight",
+        "strange",
         "slow",
         "dry",
         "yellow"
       ],
       "optionGlossZh": [
-        "直直地",
+        "奇怪的",
         "慢的",
         "乾的",
         "黃色的"
@@ -168,13 +168,13 @@
       "stemEn": "Go ____ for two blocks.",
       "stemZh": "直走兩個街區。",
       "options": [
-        "strange",
+        "clean",
         "thick",
         "thin",
         "straight"
       ],
       "optionGlossZh": [
-        "奇怪的",
+        "乾淨的",
         "厚的",
         "薄的",
         "直直地"
@@ -284,6 +284,30 @@
         "message": "執行長第②③關裁示修正：第②關：補一句讓 strange 示範「奇怪的」",
         "resolution": "改前：\"昨天我在院子裡看到一隻奇怪的貓。牠很瘦，是黃色的，動作也很慢，也許是餓了。我給了牠一些水和一條乾淨的毛巾。現在牠睡在我廚房裡一個乾燥的箱子裡。\"；改後：\"昨天我在院子裡看到一隻奇怪的貓。牠很瘦，是黃色的，一隻眼睛是藍色、一隻是綠色。牠動作也很慢，也許是餓了。我給了牠一些水和一條乾淨的毛巾。現在牠睡在我廚房裡一個乾燥的箱子裡。\"",
         "resolvedAt": "2026-10-02T13:22:42Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：straight 是 q14 正解改 strange",
+        "resolution": "改為 [\"strange\", \"slow\", \"dry\", \"yellow\"]（原 [\"straight\", \"slow\", \"dry\", \"yellow\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：straight 是 q14 正解改 strange",
+        "resolution": "改為 [\"奇怪的\", \"慢的\", \"乾的\", \"黃色的\"]（原 [\"直直地\", \"慢的\", \"乾的\", \"黃色的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：strange 移給 q13，本題改 clean（避開 slow 也通）",
+        "resolution": "改為 [\"clean\", \"thick\", \"thin\", \"straight\"]（原 [\"strange\", \"thick\", \"thin\", \"straight\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：strange 移給 q13，本題改 clean（避開 slow 也通）",
+        "resolution": "改為 [\"乾淨的\", \"厚的\", \"薄的\", \"直直地\"]（原 [\"奇怪的\", \"厚的\", \"薄的\", \"直直地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -173,16 +173,16 @@
       "stemEn": "Mr. Lin ____ English at our school.",
       "stemZh": "林先生在我們學校教英文。",
       "options": [
-        "paper",
+        "eats",
         "class",
         "teaches",
-        "result"
+        "underlines"
       ],
       "optionGlossZh": [
-        "紙",
+        "吃",
         "課",
         "教",
-        "結果"
+        "在⋯下面畫線"
       ],
       "answer": 2
     },
@@ -295,6 +295,18 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Ben\",\"Mr\",\"Lin\",\"English\",\"Taipei\"]；改後：[\"Ben\",\"Lin\",\"English\",\"Taipei\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：result 與 q13 共用；混合詞性題原無干擾項放得進空格，paper/result 換動詞 reads/writes（實作端複核：reads、writes English 代入也說得通，改 eats、underlines——文法成立、詞義不通）",
+        "resolution": "改為 [\"eats\", \"class\", \"teaches\", \"underlines\"]（原 [\"paper\", \"class\", \"teaches\", \"result\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：result 與 q13 共用；混合詞性題原無干擾項放得進空格，paper/result 換動詞 reads/writes（實作端複核：reads、writes English 代入也說得通，改 eats、underlines——文法成立、詞義不通）",
+        "resolution": "改為 [\"吃\", \"課\", \"教\", \"在⋯下面畫線\"]（原 [\"紙\", \"課\", \"教\", \"結果\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

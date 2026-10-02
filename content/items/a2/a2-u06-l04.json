@@ -30,7 +30,7 @@
       "word": "unfortunately",
       "exampleEn": "Unfortunately, the shop was closed.",
       "exampleZh": "可惜那家店沒開。",
-      "glossZh": "不幸地；可惜",
+      "glossZh": "可惜；不幸地",
       "distractorsZh": [
         "幸好",
         "當然",
@@ -152,14 +152,14 @@
       "stemEn": "Nobody thought he could win, so everyone was ____ when he won.",
       "stemZh": "沒人想到他會贏，所以他贏的時候大家都很驚訝。",
       "options": [
-        "bored",
-        "sleepy",
+        "creative",
+        "polite",
         "hungry",
         "surprised"
       ],
       "optionGlossZh": [
-        "無聊的",
-        "想睡的",
+        "有創意的",
+        "有禮貌的",
         "餓的",
         "驚訝的"
       ],
@@ -341,6 +341,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u06-l04-q15#0 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"大家都很安靜地離開了教室\",\"Jenny 尖叫了一聲\",\"老師高興得哭了\"]（原 [\"大家都安靜地離開了教室\",\"Jenny 尖叫了一聲\",\"老師哭了\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"可惜；不幸地\"（原 \"不幸地；可惜\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：bored、sleepy 超範圍，改本單元 creative、polite",
+        "resolution": "改為 [\"creative\", \"polite\", \"hungry\", \"surprised\"]（原 [\"bored\", \"sleepy\", \"hungry\", \"surprised\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：bored、sleepy 超範圍，改本單元 creative、polite",
+        "resolution": "改為 [\"有創意的\", \"有禮貌的\", \"餓的\", \"驚訝的\"]（原 [\"無聊的\", \"想睡的\", \"餓的\", \"驚訝的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

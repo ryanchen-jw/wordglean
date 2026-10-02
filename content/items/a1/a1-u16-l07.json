@@ -94,7 +94,7 @@
       "word": "copy",
       "exampleEn": "Can I have a copy of the notes?",
       "exampleZh": "我可以要一份筆記的影本嗎？",
-      "glossZh": "副本；影本",
+      "glossZh": "影本；副本",
       "distractorsZh": [
         "筆記本",
         "信封",
@@ -139,14 +139,14 @@
       "stemZh": "學生在教室裡坐在自己的書桌前。",
       "options": [
         "grades",
-        "topics",
-        "copies",
+        "tests",
+        "boards",
         "desks"
       ],
       "optionGlossZh": [
         "年級",
-        "主題",
-        "影本",
+        "考試",
+        "黑板",
         "書桌"
       ],
       "answer": 3
@@ -160,13 +160,13 @@
         "copy",
         "file",
         "topic",
-        "desk"
+        "rule"
       ],
       "optionGlossZh": [
         "影本",
         "資料夾",
         "主題",
-        "書桌"
+        "規則"
       ],
       "answer": 2
     },
@@ -322,6 +322,36 @@
         "message": "執行長裁示：正解長度名次分布：a1-u16-l07-q14#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"當天閱讀內容的影本\",\"當天考試的考卷\",\"學生寫好的作業\"]（原 [\"當天閱讀內容的影本\",\"考試卷\",\"學生的作業\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"影本；副本\"（原 \"副本；影本\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：topics 是 q13 正解、copies 與 q13 共用，換 tests/boards",
+        "resolution": "改為 [\"grades\", \"tests\", \"boards\", \"desks\"]（原 [\"grades\", \"topics\", \"copies\", \"desks\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：topics 是 q13 正解、copies 與 q13 共用，換 tests/boards",
+        "resolution": "改為 [\"年級\", \"考試\", \"黑板\", \"書桌\"]（原 [\"年級\", \"主題\", \"影本\", \"書桌\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：desk 是 q12 正解，換 rule",
+        "resolution": "改為 [\"copy\", \"file\", \"topic\", \"rule\"]（原 [\"copy\", \"file\", \"topic\", \"desk\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：desk 是 q12 正解，換 rule",
+        "resolution": "改為 [\"影本\", \"資料夾\", \"主題\", \"規則\"]（原 [\"影本\", \"資料夾\", \"主題\", \"書桌\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

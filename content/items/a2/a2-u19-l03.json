@@ -66,7 +66,7 @@
       "word": "murder",
       "exampleEn": "This TV show is about a murder on a train.",
       "exampleZh": "這部影集在講一起火車上的謀殺案。",
-      "glossZh": "謀殺；謀殺案",
+      "glossZh": "謀殺案；謀殺",
       "distractorsZh": [
         "婚禮",
         "旅行",
@@ -151,13 +151,13 @@
       "options": [
         "emergency",
         "freedom",
-        "murder",
+        "crime",
         "committee"
       ],
       "optionGlossZh": [
         "緊急情況",
         "自由",
-        "謀殺",
+        "犯罪",
         "委員會"
       ],
       "answer": 3
@@ -362,6 +362,24 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"這座公園的猴子常常偷遊客的食物。\"（原 \"這座公園的猴子有時會偷遊客的食物。\"）",
         "resolvedAt": "2026-10-02T18:50:22Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"謀殺案；謀殺\"（原 \"謀殺；謀殺案\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：murder 是 q14 正解，改 crime",
+        "resolution": "改為 [\"emergency\", \"freedom\", \"crime\", \"committee\"]（原 [\"emergency\", \"freedom\", \"murder\", \"committee\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：murder 是 q14 正解，改 crime",
+        "resolution": "改為 [\"緊急情況\", \"自由\", \"犯罪\", \"委員會\"]（原 [\"緊急情況\", \"自由\", \"謀殺\", \"委員會\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

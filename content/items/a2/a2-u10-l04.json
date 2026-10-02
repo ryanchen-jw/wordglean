@@ -17,7 +17,7 @@
       "word": "tablespoon",
       "exampleEn": "One tablespoon of this sauce is enough.",
       "exampleZh": "這種醬汁一大匙就夠了。",
-      "glossZh": "大湯匙；一大匙",
+      "glossZh": "一大匙；大湯匙",
       "distractorsZh": [
         "一小匙",
         "一杯",
@@ -171,16 +171,16 @@
       "stemEn": "Add two ____ of sugar to the cake.",
       "stemZh": "在蛋糕裡加兩大匙糖。",
       "options": [
-        "raw",
+        "pans",
         "tablespoons",
-        "lemon",
-        "honey"
+        "plates",
+        "forks"
       ],
       "optionGlossZh": [
-        "生的",
+        "平底鍋",
         "大匙",
-        "檸檬",
-        "蜂蜜"
+        "盤子",
+        "叉子"
       ],
       "answer": 1
     },
@@ -330,6 +330,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u10-l04-q10 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"Orange juice\",\"A cup of milk\",\"Lemon juice\"]（原 [\"Orange juice\",\"Milk\",\"Lemon juice\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"一大匙；大湯匙\"（原 \"大湯匙；一大匙\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：honey 與 q13 共用；raw 為形容詞、lemon／honey 單數不可數放不進 two ____ of，改複數名詞 pans、plates、forks，只能靠詞義排除",
+        "resolution": "改為 [\"pans\", \"tablespoons\", \"plates\", \"forks\"]（原 [\"raw\", \"tablespoons\", \"lemon\", \"honey\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：honey 與 q13 共用；raw 為形容詞、lemon／honey 單數不可數放不進 two ____ of，改複數名詞 pans、plates、forks，只能靠詞義排除",
+        "resolution": "改為 [\"平底鍋\", \"大匙\", \"盤子\", \"叉子\"]（原 [\"生的\", \"大匙\", \"檸檬\", \"蜂蜜\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

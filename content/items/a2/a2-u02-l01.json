@@ -152,14 +152,14 @@
       "stemEn": "We usually eat lunch at ____.",
       "stemZh": "我們通常在中午吃午餐。",
       "options": [
-        "midnight",
-        "night",
+        "first",
+        "birth",
         "noon",
         "breakfast"
       ],
       "optionGlossZh": [
-        "午夜",
-        "晚上",
+        "第一；起初",
+        "出生",
         "中午",
         "早餐"
       ],
@@ -171,13 +171,13 @@
       "stemEn": "Let me check the train ____ before we go.",
       "stemZh": "出發前我先查一下火車時刻表。",
       "options": [
-        "midnight",
+        "calendar",
         "timetable",
         "weekday",
         "lunchtime"
       ],
       "optionGlossZh": [
-        "午夜",
+        "行事曆",
         "時刻表",
         "平日",
         "午餐時間"
@@ -293,6 +293,30 @@
         "message": "執行長第②③關裁示修正：第③關疑似：要點前後矛盾，改成「例如」並列",
         "resolution": "改為 \"「寫在行事曆上」可寫例如 on my calendar、in my calendar\"（原 \"「寫在行事曆上」用 on（例如 on my calendar、in my calendar 也可以）\"）",
         "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：midnight 與 q13 共用，改本單元 calendar",
+        "resolution": "改為 [\"calendar\", \"timetable\", \"weekday\", \"lunchtime\"]（原 [\"midnight\", \"timetable\", \"weekday\", \"lunchtime\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：midnight 與 q13 共用，改本單元 calendar",
+        "resolution": "改為 [\"行事曆\", \"時刻表\", \"平日\", \"午餐時間\"]（原 [\"午夜\", \"時刻表\", \"平日\", \"午餐時間\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We usually eat lunch at midnight／at night. 只看英文勉強說得通（夜班）；換成 at first、at birth，文法通但語意不通",
+        "resolution": "改為 [\"first\", \"birth\", \"noon\", \"breakfast\"]（原 [\"midnight\", \"night\", \"noon\", \"breakfast\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We usually eat lunch at midnight／at night. 只看英文勉強說得通（夜班）；換成 at first、at birth，文法通但語意不通",
+        "resolution": "改為 [\"第一；起初\", \"出生\", \"中午\", \"早餐\"]（原 [\"午夜\", \"晚上\", \"中午\", \"早餐\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

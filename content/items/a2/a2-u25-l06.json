@@ -168,15 +168,15 @@
       "stemEn": "The lights turn off ____ at midnight.",
       "stemZh": "燈會在半夜自動關掉。",
       "options": [
-        "suitable",
-        "fancy",
-        "artificial",
+        "strongly",
+        "widely",
+        "differently",
         "automatically"
       ],
       "optionGlossZh": [
-        "適合的",
-        "花俏的",
-        "人造的",
+        "強烈地",
+        "廣泛地",
+        "不同地",
         "自動地"
       ],
       "answer": 3
@@ -278,6 +278,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u25-l06-q15#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"博物館附近一家高級餐廳\",\"學校的學生餐廳\",\"公園的草地上\"]（原 [\"博物館附近一家高級餐廳\",\"學校\",\"公園\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：suitable、fancy 與 q13 共用、artificial 是 q13 正解，且形容詞放不進 turn off ___，改本單元副詞，四選項同為副詞",
+        "resolution": "改為 [\"strongly\", \"widely\", \"differently\", \"automatically\"]（原 [\"suitable\", \"fancy\", \"artificial\", \"automatically\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：suitable、fancy 與 q13 共用、artificial 是 q13 正解，且形容詞放不進 turn off ___，改本單元副詞，四選項同為副詞",
+        "resolution": "改為 [\"強烈地\", \"廣泛地\", \"不同地\", \"自動地\"]（原 [\"適合的\", \"花俏的\", \"人造的\", \"自動地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

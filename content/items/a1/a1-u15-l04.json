@@ -158,13 +158,13 @@
       "stemEn": "The ____ is nice today. Let's go to the beach.",
       "stemZh": "今天天氣很好，我們去海邊吧。",
       "options": [
-        "leaf",
+        "horse",
         "rain",
         "bear",
         "weather"
       ],
       "optionGlossZh": [
-        "葉子",
+        "馬",
         "雨",
         "熊",
         "天氣"
@@ -268,6 +268,18 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「weather」由位置 2 移到 3（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:41:48Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：leaf 與 q12 共用，換 horse",
+        "resolution": "改為 [\"horse\", \"rain\", \"bear\", \"weather\"]（原 [\"leaf\", \"rain\", \"bear\", \"weather\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：leaf 與 q12 共用，換 horse",
+        "resolution": "改為 [\"馬\", \"雨\", \"熊\", \"天氣\"]（原 [\"葉子\", \"雨\", \"熊\", \"天氣\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

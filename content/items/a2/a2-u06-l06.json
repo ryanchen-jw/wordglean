@@ -151,14 +151,14 @@
       "stemEn": "I was ____ by his English. It was very good.",
       "stemZh": "他的英文讓我印象深刻，說得非常好。",
       "options": [
-        "wisdom",
-        "joy",
+        "annoyed",
+        "hated",
         "impressed",
         "helpful"
       ],
       "optionGlossZh": [
-        "智慧",
-        "喜悅",
+        "惱怒的",
+        "被討厭",
         "印象深刻的",
         "有幫助的"
       ],
@@ -172,13 +172,13 @@
       "options": [
         "work",
         "run",
-        "dance",
+        "study",
         "relax"
       ],
       "optionGlossZh": [
         "工作",
         "跑步",
-        "跳舞",
+        "讀書",
         "放鬆"
       ],
       "answer": 3
@@ -298,6 +298,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"她很想念以前上班的日子\"（原 \"她很想念以前的工作\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：wisdom、joy 放不進 I was ___ by，改本單元過去分詞 annoyed、hated（文法成立，靠語意排除）",
+        "resolution": "改為 [\"annoyed\", \"hated\", \"impressed\", \"helpful\"]（原 [\"wisdom\", \"joy\", \"impressed\", \"helpful\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：wisdom、joy 放不進 I was ___ by，改本單元過去分詞 annoyed、hated（文法成立，靠語意排除）",
+        "resolution": "改為 [\"惱怒的\", \"被討厭\", \"印象深刻的\", \"有幫助的\"]（原 [\"智慧\", \"喜悅\", \"印象深刻的\", \"有幫助的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：dance 為非本單元字且他課已用，改 study",
+        "resolution": "改為 [\"work\", \"run\", \"study\", \"relax\"]（原 [\"work\", \"run\", \"dance\", \"relax\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：dance 為非本單元字且他課已用，改 study",
+        "resolution": "改為 [\"工作\", \"跑步\", \"讀書\", \"放鬆\"]（原 [\"工作\", \"跑步\", \"跳舞\", \"放鬆\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

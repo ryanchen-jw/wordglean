@@ -55,7 +55,7 @@
       "word": "boil",
       "exampleEn": "Can you boil some eggs for breakfast?",
       "exampleZh": "你可以煮幾顆蛋當早餐嗎？",
-      "glossZh": "煮沸；用水煮",
+      "glossZh": "用水煮；煮沸",
       "distractorsZh": [
         "炸",
         "烤",
@@ -172,13 +172,13 @@
       "options": [
         "Slice",
         "Boil",
-        "Soda",
+        "Bake",
         "Cooking"
       ],
       "optionGlossZh": [
-        "片",
+        "切片",
         "煮沸",
-        "汽水",
+        "烤",
         "烹飪"
       ],
       "answer": 1
@@ -376,6 +376,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u10-l05-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"怎麼燒開水、煮蔬菜\",\"怎麼烤巧克力蛋糕\",\"怎麼烤牛肉\"]（原 [\"怎麼燒開水、煮蔬菜\",\"怎麼烤一個巧克力蛋糕\",\"怎麼烤肉\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"用水煮；煮沸\"（原 \"煮沸；用水煮\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：原本只有 Slice 放得進祈使句動詞位置，Soda 改本單元動詞 Bake，湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"Slice\", \"Boil\", \"Bake\", \"Cooking\"]（原 [\"Slice\", \"Boil\", \"Soda\", \"Cooking\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：原本只有 Slice 放得進祈使句動詞位置，Soda 改本單元動詞 Bake，湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"切片\", \"煮沸\", \"烤\", \"烹飪\"]（原 [\"片\", \"煮沸\", \"汽水\", \"烹飪\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

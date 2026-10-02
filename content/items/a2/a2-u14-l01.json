@@ -67,8 +67,8 @@
       "type": "wordCard",
       "word": "die",
       "exampleEn": "My plants died because I forgot to give them water.",
-      "exampleZh": "我的植物枯死了，因為我忘了給它們澆水。",
-      "glossZh": "死；（植物）枯死",
+      "exampleZh": "我的植物死了，因為我忘了給它們澆水。",
+      "glossZh": "死；枯死",
       "distractorsZh": [
         "長大",
         "開花",
@@ -120,7 +120,7 @@
       "word": "medical",
       "exampleEn": "The town needs more medical workers.",
       "exampleZh": "這個小鎮需要更多醫療人員。",
-      "glossZh": "醫學的；醫療的",
+      "glossZh": "醫療的；醫學的",
       "distractorsZh": [
         "音樂的",
         "藝術的",
@@ -183,14 +183,14 @@
       "stemEn": "Some flowers ____ in the cold winter.",
       "stemZh": "有些花在寒冷的冬天會枯死。",
       "options": [
-        "harmful",
-        "medical",
+        "boil",
+        "bake",
         "die",
         "patient"
       ],
       "optionGlossZh": [
-        "有害的",
-        "醫學的",
+        "沸騰",
+        "烤",
         "枯死",
         "病人"
       ],
@@ -347,6 +347,42 @@
         "message": "執行長裁示：內容界線（不寫飲食建議）：中譯同步",
         "resolution": "改為 \"強烈的陽光可能會損害老畫作。\"（原 \"吃太多糖可能對牙齒有害。\"）",
         "resolvedAt": "2026-10-02T17:47:01Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"枯死；死\"（原 \"死；（植物）枯死\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/8/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"醫療的；醫學的\"（原 \"醫學的；醫療的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：harmful、medical 放不進 flowers ____ 動詞位置，改 boil、bake（能代入、與 cold winter 矛盾而排除；grow、open 會變也對故不用）",
+        "resolution": "改為 [\"boil\", \"bake\", \"die\", \"patient\"]（原 [\"harmful\", \"medical\", \"die\", \"patient\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：harmful、medical 放不進 flowers ____ 動詞位置，改 boil、bake（能代入、與 cold winter 矛盾而排除；grow、open 會變也對故不用）",
+        "resolution": "改為 [\"沸騰\", \"烤\", \"枯死\", \"病人\"]（原 [\"有害的\", \"醫學的\", \"枯死\", \"病人\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"死；枯死\"（原 \"枯死；死\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"我的植物死了，因為我忘了給它們澆水。\"（原 \"我的植物枯死了，因為我忘了給它們澆水。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

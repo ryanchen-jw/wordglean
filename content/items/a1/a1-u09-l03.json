@@ -152,15 +152,15 @@
       "stemZh": "今天很冷，穿件保暖的大衣。",
       "options": [
         "ugly",
-        "button",
+        "umbrella",
         "coat",
-        "cute"
+        "bag"
       ],
       "optionGlossZh": [
         "醜的",
-        "鈕扣",
+        "雨傘",
         "大衣",
-        "可愛的"
+        "包包"
       ],
       "answer": 2
     },
@@ -173,13 +173,13 @@
         "button",
         "skirt",
         "cap",
-        "handsome"
+        "pocket"
       ],
       "optionGlossZh": [
         "鈕扣",
         "裙子",
         "鴨舌帽",
-        "英俊的"
+        "口袋"
       ],
       "answer": 0
     },
@@ -346,6 +346,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u09-l03-q15#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"給弟弟的帽子\",\"長大衣\",\"一件短裙\"]（原 [\"給弟弟的帽子\",\"媽媽喜歡的長大衣\",\"短裙\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：button 是 q14 正解；換 umbrella，cute 換 bag，兩個名詞可放進 a warm ____",
+        "resolution": "改為 [\"ugly\", \"umbrella\", \"coat\", \"bag\"]（原 [\"ugly\", \"button\", \"coat\", \"cute\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：button 是 q14 正解；換 umbrella，cute 換 bag，兩個名詞可放進 a warm ____",
+        "resolution": "改為 [\"醜的\", \"雨傘\", \"大衣\", \"包包\"]（原 [\"醜的\", \"鈕扣\", \"大衣\", \"可愛的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：handsome 是形容詞放不進 A ____ is gone，換 pocket，四項皆名詞",
+        "resolution": "改為 [\"button\", \"skirt\", \"cap\", \"pocket\"]（原 [\"button\", \"skirt\", \"cap\", \"handsome\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：handsome 是形容詞放不進 A ____ is gone，換 pocket，四項皆名詞",
+        "resolution": "改為 [\"鈕扣\", \"裙子\", \"鴨舌帽\", \"口袋\"]（原 [\"鈕扣\", \"裙子\", \"鴨舌帽\", \"英俊的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

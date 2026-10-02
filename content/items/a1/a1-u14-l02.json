@@ -109,7 +109,7 @@
       "word": "art",
       "exampleEn": "She is good at art.",
       "exampleZh": "她很擅長美術。",
-      "glossZh": "藝術；美術",
+      "glossZh": "美術；藝術",
       "distractorsZh": [
         "數學",
         "音樂",
@@ -172,16 +172,16 @@
       "stemEn": "Can you read me a ____ before bed?",
       "stemZh": "你可以在睡前唸個故事給我聽嗎？",
       "options": [
-        "team",
+        "poster",
         "game",
         "story",
-        "cinema"
+        "picnic"
       ],
       "optionGlossZh": [
-        "隊伍",
+        "海報",
         "遊戲",
         "故事",
-        "電影院"
+        "野餐"
       ],
       "answer": 2
     },
@@ -330,6 +330,24 @@
         "message": "執行長裁示：正解長度名次分布：a1-u14-l02-q15#1 目標第 1 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"電影院\",\"海灘\",\"公園\"]（原 [\"電影院\",\"海灘\",\"Sara 家\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"美術；藝術\"（原 \"藝術；美術\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：team 是 q13 正解、cinema 與 q13 共用，換 poster/picnic",
+        "resolution": "改為 [\"poster\", \"game\", \"story\", \"picnic\"]（原 [\"team\", \"game\", \"story\", \"cinema\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：team 是 q13 正解、cinema 與 q13 共用，換 poster/picnic",
+        "resolution": "改為 [\"海報\", \"遊戲\", \"故事\", \"野餐\"]（原 [\"隊伍\", \"遊戲\", \"故事\", \"電影院\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

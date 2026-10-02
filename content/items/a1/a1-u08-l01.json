@@ -152,14 +152,14 @@
       "stemZh": "我餓了，我們現在可以吃飯嗎？",
       "options": [
         "hungry",
-        "butter",
-        "salad",
+        "full",
+        "sure",
         "apple"
       ],
       "optionGlossZh": [
         "餓的",
-        "奶油",
-        "沙拉",
+        "飽的",
+        "確定的",
         "蘋果"
       ],
       "answer": 0
@@ -172,13 +172,13 @@
       "options": [
         "soup",
         "juice",
-        "hungry",
+        "tomato",
         "bean"
       ],
       "optionGlossZh": [
         "湯",
         "果汁",
-        "餓的",
+        "番茄",
         "豆子"
       ],
       "answer": 1
@@ -312,6 +312,42 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「juice」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:40:21Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：butter、salad 放不進 I am ___，改 full、free（文法可通、語意不對）",
+        "resolution": "改為 [\"hungry\", \"full\", \"free\", \"apple\"]（原 [\"hungry\", \"butter\", \"salad\", \"apple\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：butter、salad 放不進 I am ___，改 full、free（文法可通、語意不對）",
+        "resolution": "改為 [\"餓的\", \"飽的\", \"有空的\", \"蘋果\"]（原 [\"餓的\", \"奶油\", \"沙拉\", \"蘋果\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：hungry 是 q13 正解，改同課名詞 tomato，四選項皆名詞",
+        "resolution": "改為 [\"soup\", \"juice\", \"tomato\", \"bean\"]（原 [\"soup\", \"juice\", \"hungry\", \"bean\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：hungry 是 q13 正解，改同課名詞 tomato，四選項皆名詞",
+        "resolution": "改為 [\"湯\", \"果汁\", \"番茄\", \"豆子\"]（原 [\"湯\", \"果汁\", \"餓的\", \"豆子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：free 代入成 I am free. Can we eat now?（有空了）說得通；換成 sure，I am sure. Can we eat now? 前後接不上",
+        "resolution": "改為 [\"hungry\", \"full\", \"sure\", \"apple\"]（原 [\"hungry\", \"full\", \"free\", \"apple\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：free 代入成 I am free. Can we eat now?（有空了）說得通；換成 sure，I am sure. Can we eat now? 前後接不上",
+        "resolution": "改為 [\"餓的\", \"飽的\", \"確定的\", \"蘋果\"]（原 [\"餓的\", \"飽的\", \"有空的\", \"蘋果\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

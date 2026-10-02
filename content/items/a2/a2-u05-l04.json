@@ -153,13 +153,13 @@
       "stemEn": "The bus was so ____ that I couldn't find a seat.",
       "stemZh": "公車太擠了，我找不到位子坐。",
       "options": [
-        "empty",
+        "cold",
         "quiet",
         "crowded",
         "clean"
       ],
       "optionGlossZh": [
-        "空的",
+        "冷的",
         "安靜的",
         "擁擠的",
         "乾淨的"
@@ -289,6 +289,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"爺爺過八十歲生日\"（原 \"爺爺過生日\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：empty 超範圍，改 cold（文法成立，與找不到位子無因果）",
+        "resolution": "改為 [\"cold\", \"quiet\", \"crowded\", \"clean\"]（原 [\"empty\", \"quiet\", \"crowded\", \"clean\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：empty 超範圍，改 cold（文法成立，與找不到位子無因果）",
+        "resolution": "改為 [\"冷的\", \"安靜的\", \"擁擠的\", \"乾淨的\"]（原 [\"空的\", \"安靜的\", \"擁擠的\", \"乾淨的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

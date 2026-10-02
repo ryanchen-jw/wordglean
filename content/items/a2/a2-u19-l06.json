@@ -14,8 +14,8 @@
       "id": "a2-u19-l06-q01",
       "type": "wordCard",
       "word": "invade",
-      "exampleEn": "On weekends, tourists invade our small town.",
-      "exampleZh": "每到週末，觀光客就會湧入我們的小鎮。",
+      "exampleEn": "Long ago, soldiers from the north invaded this town.",
+      "exampleZh": "很久以前，一群從北方來的軍人入侵了這座小鎮。",
       "glossZh": "入侵；湧入",
       "distractorsZh": [
         "離開",
@@ -81,7 +81,7 @@
       "word": "robbery",
       "exampleEn": "The bank robbery was in the news.",
       "exampleZh": "那起銀行搶案上了新聞。",
-      "glossZh": "搶劫；搶案",
+      "glossZh": "搶案；搶劫",
       "distractorsZh": [
         "婚禮",
         "比賽",
@@ -157,15 +157,15 @@
       "stemEn": "Two men tried to ____ the bank, but the police came quickly.",
       "stemZh": "兩個男人想搶銀行，但警察很快就來了。",
       "options": [
-        "stamp",
+        "steal",
         "rob",
-        "surname",
+        "repair",
         "policeman"
       ],
       "optionGlossZh": [
-        "郵票",
+        "偷",
         "搶劫",
-        "姓",
+        "修理",
         "警察"
       ],
       "answer": 1
@@ -297,6 +297,48 @@
         "message": "執行長裁示：正解長度名次分布：a2-u19-l06-q09 目標第 3 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"Wait at the corner\",\"Go to the next bus stop\",\"Call a taxi for all of us\"]（原 [\"Wait at the corner\",\"Go home\",\"Call a taxi\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"湧入；入侵\"（原 \"入侵；湧入\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"搶案；搶劫\"（原 \"搶劫；搶案\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：stamp、surname 與 q12 共用，改動詞 steal、repair，使兩個干擾項放得進 to ___ the bank",
+        "resolution": "改為 [\"steal\", \"rob\", \"repair\", \"policeman\"]（原 [\"stamp\", \"rob\", \"surname\", \"policeman\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：stamp、surname 與 q12 共用，改動詞 steal、repair，使兩個干擾項放得進 to ___ the bank",
+        "resolution": "改為 [\"偷\", \"搶劫\", \"修理\", \"警察\"]（原 [\"郵票\", \"搶劫\", \"姓\", \"警察\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"入侵；湧入\"（原 \"湧入；入侵\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"Long ago, soldiers from the north invaded this town.\"（原 \"On weekends, tourists invade our small town.\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"很久以前，一群從北方來的軍人入侵了這座小鎮。\"（原 \"每到週末，觀光客就會湧入我們的小鎮。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

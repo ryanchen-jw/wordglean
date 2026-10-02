@@ -151,14 +151,14 @@
       "stemEn": "Let's take the kids to the ____ to see the animals.",
       "stemZh": "我們帶孩子去動物園看動物吧。",
       "options": [
-        "office",
-        "war",
+        "town",
+        "cafe",
         "zoo",
         "building"
       ],
       "optionGlossZh": [
-        "辦公室",
-        "戰爭",
+        "小鎮",
+        "咖啡店",
         "動物園",
         "建築物"
       ],
@@ -328,6 +328,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u11-l01-q15#0 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"動物園旁邊的小屋\",\"小鎮上的郵局旁邊\",\"城裡的一棟高樓\"]（原 [\"動物園旁邊的小屋\",\"小鎮上\",\"城裡的一棟高樓\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：office/war 與 q14 共用，換 town/cafe（地點名詞，靠詞義排除）",
+        "resolution": "改為 [\"town\", \"cafe\", \"zoo\", \"building\"]（原 [\"office\", \"war\", \"zoo\", \"building\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：office/war 與 q14 共用，換 town/cafe（地點名詞，靠詞義排除）",
+        "resolution": "改為 [\"小鎮\", \"咖啡店\", \"動物園\", \"建築物\"]（原 [\"辦公室\", \"戰爭\", \"動物園\", \"建築物\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

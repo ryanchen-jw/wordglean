@@ -168,15 +168,15 @@
       "stemEn": "Turn right at the ____ of this street.",
       "stemZh": "在這條街的盡頭右轉。",
       "options": [
-        "happen",
-        "set",
-        "watch",
+        "stand",
+        "stop",
+        "point",
         "end"
       ],
       "optionGlossZh": [
-        "發生",
-        "放",
-        "看",
+        "攤子",
+        "停靠站",
+        "點",
         "盡頭"
       ],
       "answer": 3
@@ -308,6 +308,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u17-l05-q15#1 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"學校的公車司機\",\"說話者的爸爸\",\"學校老師\"]（原 [\"公車司機\",\"說話者的爸爸\",\"老師\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：happen、watch 與 q13 共用且動詞放不進名詞空格，三個干擾項改名詞 stand、stop、point",
+        "resolution": "改為 [\"stand\", \"stop\", \"point\", \"end\"]（原 [\"happen\", \"set\", \"watch\", \"end\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：happen、watch 與 q13 共用且動詞放不進名詞空格，三個干擾項改名詞 stand、stop、point",
+        "resolution": "改為 [\"攤子\", \"停靠站\", \"點\", \"盡頭\"]（原 [\"發生\", \"放\", \"看\", \"盡頭\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

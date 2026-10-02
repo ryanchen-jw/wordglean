@@ -164,13 +164,13 @@
       "stemEn": "The cake is still in the ____. It needs ten more minutes.",
       "stemZh": "蛋糕還在烤箱裡，還要再烤十分鐘。",
       "options": [
-        "battery",
+        "basket",
         "lamp",
         "oven",
         "elevator"
       ],
       "optionGlossZh": [
-        "電池",
+        "籃子",
         "燈",
         "烤箱",
         "電梯"
@@ -360,6 +360,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"十二樓\"（原 \"十樓\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：battery 是 q15 正解，改本課 basket",
+        "resolution": "改為 [\"basket\", \"lamp\", \"oven\", \"elevator\"]（原 [\"battery\", \"lamp\", \"oven\", \"elevator\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：battery 是 q15 正解，改本課 basket",
+        "resolution": "改為 [\"籃子\", \"燈\", \"烤箱\", \"電梯\"]（原 [\"電池\", \"燈\", \"烤箱\", \"電梯\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

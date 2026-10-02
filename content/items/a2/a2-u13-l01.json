@@ -31,7 +31,7 @@
       "word": "traveler",
       "exampleEn": "This hotel is popular with young travelers.",
       "exampleZh": "這家旅館很受年輕旅客歡迎。",
-      "glossZh": "旅行者；旅客",
+      "glossZh": "旅客；旅行者",
       "distractorsZh": [
         "司機",
         "店員",
@@ -154,13 +154,13 @@
       "stemZh": "我的腳踏車停不下來！煞車壞了。",
       "options": [
         "lanes",
-        "fares",
+        "cabs",
         "brakes",
         "suitcases"
       ],
       "optionGlossZh": [
         "車道",
-        "車資",
+        "計程車",
         "煞車",
         "行李箱"
       ],
@@ -330,6 +330,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"有個輪胎破了\"（原 \"輪胎破了\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"旅客；旅行者\"（原 \"旅行者；旅客\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：fares 是 q14 正解 fare 的變化形，改本課字 cabs",
+        "resolution": "改為 [\"lanes\", \"cabs\", \"brakes\", \"suitcases\"]（原 [\"lanes\", \"fares\", \"brakes\", \"suitcases\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：fares 是 q14 正解 fare 的變化形，改本課字 cabs",
+        "resolution": "改為 [\"車道\", \"計程車\", \"煞車\", \"行李箱\"]（原 [\"車道\", \"車資\", \"煞車\", \"行李箱\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

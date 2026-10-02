@@ -24,8 +24,8 @@
       "id": "a2-u12-l03-q01",
       "type": "wordCard",
       "word": "south",
-      "exampleEn": "Many birds fly south in winter.",
-      "exampleZh": "很多鳥在冬天往南飛。",
+      "exampleEn": "The weather is usually warmer in the south.",
+      "exampleZh": "南部的天氣通常比較溫暖。",
       "glossZh": "南方；南部；往南",
       "distractorsZh": [
         "北方",
@@ -182,14 +182,14 @@
       "options": [
         "native",
         "west",
-        "direction",
-        "capital"
+        "worldwide",
+        "indoor"
       ],
       "optionGlossZh": [
         "母語的",
-        "西方",
-        "方向",
-        "首都"
+        "西方的",
+        "全世界的",
+        "室內的"
       ],
       "answer": 0
     },
@@ -386,6 +386,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"台灣北部的大城市\"（原 \"北部的大城市\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「南方／南部」（名詞）；與 q15 閱讀（Amy 在台灣南部長大）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"The weather is usually warmer in the south.\"（原 \"Many birds fly south in winter.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「南方／南部」（名詞）；與 q15 閱讀（Amy 在台灣南部長大）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"南部的天氣通常比較溫暖。\"（原 \"很多鳥在冬天往南飛。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：direction 與 q13 共用、capital 是 q13 正解，改本單元形容詞 worldwide、indoor（能代入、靠詞義排除）",
+        "resolution": "改為 [\"native\", \"west\", \"worldwide\", \"indoor\"]（原 [\"native\", \"west\", \"direction\", \"capital\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：direction 與 q13 共用、capital 是 q13 正解，改本單元形容詞 worldwide、indoor（能代入、靠詞義排除）",
+        "resolution": "改為 [\"母語的\", \"西方的\", \"全世界的\", \"室內的\"]（原 [\"母語的\", \"西方\", \"方向\", \"首都\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

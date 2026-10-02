@@ -27,7 +27,7 @@
       "word": "alarm",
       "exampleEn": "The car alarm rang for ten minutes.",
       "exampleZh": "那個汽車警報器響了十分鐘。",
-      "glossZh": "警報（器）；鬧鈴",
+      "glossZh": "警報器；鬧鈴",
       "distractorsZh": [
         "收音機",
         "電燈",
@@ -150,13 +150,13 @@
       "stemZh": "我聽到鬧鈴六點響了就起床。",
       "options": [
         "cupboard",
-        "stove",
+        "fridge",
         "screw",
         "alarm"
       ],
       "optionGlossZh": [
         "櫥櫃",
-        "爐子",
+        "冰箱",
         "螺絲",
         "鬧鈴"
       ],
@@ -321,6 +321,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節",
         "resolution": "改為 \"Open the window a little\"（原 \"Open the window\"）",
         "resolvedAt": "2026-10-02T17:42:01Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"警報器；鬧鈴\"（原 \"警報（器）；鬧鈴\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：stove 是 q14 正解，改本課 fridge",
+        "resolution": "改為 [\"cupboard\", \"fridge\", \"screw\", \"alarm\"]（原 [\"cupboard\", \"stove\", \"screw\", \"alarm\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：stove 是 q14 正解，改本課 fridge",
+        "resolution": "改為 [\"櫥櫃\", \"冰箱\", \"螺絲\", \"鬧鈴\"]（原 [\"櫥櫃\", \"爐子\", \"螺絲\", \"鬧鈴\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

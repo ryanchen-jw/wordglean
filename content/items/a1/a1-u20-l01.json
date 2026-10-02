@@ -149,16 +149,16 @@
       "stemEn": "I was at home ____.",
       "stemZh": "我昨天在家。",
       "options": [
-        "due",
+        "soon",
         "yesterday",
         "twelve",
-        "March"
+        "now"
       ],
       "optionGlossZh": [
-        "到期的",
+        "很快",
         "昨天",
         "十二",
-        "三月"
+        "現在"
       ],
       "answer": 1
     },
@@ -168,16 +168,16 @@
       "stemEn": "The library book is ____ on Monday.",
       "stemZh": "圖書館的書星期一到期。",
       "options": [
-        "yesterday",
-        "fifty",
+        "expensive",
+        "open",
         "due",
-        "March"
+        "new"
       ],
       "optionGlossZh": [
-        "昨天",
-        "五十",
+        "昂貴的",
+        "開著的",
         "到期的",
-        "三月"
+        "新的"
       ],
       "answer": 2
     },
@@ -289,6 +289,42 @@
         "message": "執行長抽審修正：dollar(s) 中譯全 A1 統一為「美元」",
         "resolution": "改前：\"我昨天買了這件外套，它五十元。\"；改後：\"我昨天買了這件外套，它五十美元。\"",
         "resolvedAt": "2026-10-02T13:31:19Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：due 是 q14 正解、March 與 q14 共用，改副詞 soon、always，使兩個干擾項文法可放入（避開 then、early 也通）",
+        "resolution": "改為 [\"soon\", \"yesterday\", \"twelve\", \"always\"]（原 [\"due\", \"yesterday\", \"twelve\", \"March\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：due 是 q14 正解、March 與 q14 共用，改副詞 soon、always，使兩個干擾項文法可放入（避開 then、early 也通）",
+        "resolution": "改為 [\"很快\", \"昨天\", \"十二\", \"總是\"]（原 [\"到期的\", \"昨天\", \"十二\", \"三月\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：yesterday 是 q13 正解、March 與 q13 共用，改形容詞 expensive、open、new，四選項同為形容詞",
+        "resolution": "改為 [\"expensive\", \"open\", \"due\", \"new\"]（原 [\"yesterday\", \"fifty\", \"due\", \"March\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：yesterday 是 q13 正解、March 與 q13 共用，改形容詞 expensive、open、new，四選項同為形容詞",
+        "resolution": "改為 [\"昂貴的\", \"開著的\", \"到期的\", \"新的\"]（原 [\"昨天\", \"五十\", \"到期的\", \"三月\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：always 代入「I was at home always.」文法與語意皆可成立，換成 now（I was at home now. 過去式配 now 語意矛盾；tomorrow 已被他課使用）",
+        "resolution": "改為 [\"soon\", \"yesterday\", \"twelve\", \"now\"]（原 [\"soon\", \"yesterday\", \"twelve\", \"always\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：always 代入「I was at home always.」文法與語意皆可成立，換成 now（I was at home now. 過去式配 now 語意矛盾；tomorrow 已被他課使用）",
+        "resolution": "改為 [\"很快\", \"昨天\", \"十二\", \"現在\"]（原 [\"很快\", \"昨天\", \"十二\", \"總是\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

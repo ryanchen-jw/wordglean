@@ -42,7 +42,7 @@
       "word": "care",
       "exampleEn": "Take care of yourself!",
       "exampleZh": "好好照顧自己！",
-      "glossZh": "小心；照顧",
+      "glossZh": "照顧；小心",
       "distractorsZh": [
         "麻煩",
         "樂趣",
@@ -154,13 +154,13 @@
         "action",
         "mind",
         "join",
-        "care"
+        "break"
       ],
       "optionGlossZh": [
         "動作",
-        "心思",
+        "照顧",
         "加入",
-        "照顧"
+        "弄壞"
       ],
       "answer": 2
     },
@@ -171,14 +171,14 @@
       "stemZh": "我的包包很重，你可以幫我拿嗎？",
       "options": [
         "carry",
-        "mind",
-        "action",
+        "cut",
+        "kill",
         "care"
       ],
       "optionGlossZh": [
         "搬；拿",
-        "心思",
-        "動作",
+        "切",
+        "殺死",
         "照顧"
       ],
       "answer": 0
@@ -292,6 +292,36 @@
         "message": "執行長第②③關裁示修正：第②③關 FIX：join in 是正確用法",
         "resolution": "改前：\"join 後面直接接團體或活動，不加 in（例如 join the club）\"；改後：\"join 後面可直接接團體或活動（例如 join the club、join us）；參加活動說 join in the game 也正確\"",
         "resolvedAt": "2026-10-02T13:23:22Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"照顧；小心\"（原 \"小心；照顧\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：care 與 q14 共用改動詞 break，使 mind、break 兩個干擾項文法可放入",
+        "resolution": "改為 [\"action\", \"mind\", \"join\", \"break\"]（原 [\"action\", \"mind\", \"join\", \"care\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：care 與 q14 共用改動詞 break，使 mind、break 兩個干擾項文法可放入",
+        "resolution": "改為 [\"動作\", \"照顧\", \"加入\", \"弄壞\"]（原 [\"動作\", \"心思\", \"加入\", \"照顧\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：mind、action 與 q13 共用，改動詞 cut、kill；care 留本題",
+        "resolution": "改為 [\"carry\", \"cut\", \"kill\", \"care\"]（原 [\"carry\", \"mind\", \"action\", \"care\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：mind、action 與 q13 共用，改動詞 cut、kill；care 留本題",
+        "resolution": "改為 [\"搬；拿\", \"切\", \"殺死\", \"照顧\"]（原 [\"搬；拿\", \"心思\", \"動作\", \"照顧\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

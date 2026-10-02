@@ -152,13 +152,13 @@
         "worried",
         "wise",
         "romantic",
-        "admire"
+        "gentle"
       ],
       "optionGlossZh": [
         "擔心的",
         "明智的",
         "浪漫的",
-        "欽佩"
+        "溫柔的"
       ],
       "answer": 0
     },
@@ -308,6 +308,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"他們以前一起讀的學校\"（原 \"他們以前的學校\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：admire 是 q14 正解，改本課形容詞 gentle",
+        "resolution": "改為 [\"worried\", \"wise\", \"romantic\", \"gentle\"]（原 [\"worried\", \"wise\", \"romantic\", \"admire\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：admire 是 q14 正解，改本課形容詞 gentle",
+        "resolution": "改為 [\"擔心的\", \"明智的\", \"浪漫的\", \"溫柔的\"]（原 [\"擔心的\", \"明智的\", \"浪漫的\", \"欽佩\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

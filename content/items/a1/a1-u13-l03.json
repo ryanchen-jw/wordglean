@@ -170,16 +170,16 @@
       "stemEn": "My grandpa is very ____. He walks for an hour every day.",
       "stemZh": "我爺爺很健康，他每天走一個小時。",
       "options": [
-        "medicine",
+        "handsome",
         "healthy",
-        "bone",
-        "neck"
+        "ugly",
+        "cute"
       ],
       "optionGlossZh": [
-        "藥",
+        "英俊的",
         "健康的",
-        "骨頭",
-        "脖子"
+        "醜的",
+        "可愛的"
       ],
       "answer": 1
     },
@@ -346,6 +346,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"因為牛奶很好喝\"（原 \"因為好喝\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：medicine 是 q13 正解；改為四個形容詞 handsome/ugly/cute，靠詞義選 healthy",
+        "resolution": "改為 [\"handsome\", \"healthy\", \"ugly\", \"cute\"]（原 [\"medicine\", \"healthy\", \"bone\", \"neck\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：medicine 是 q13 正解；改為四個形容詞 handsome/ugly/cute，靠詞義選 healthy",
+        "resolution": "改為 [\"英俊的\", \"健康的\", \"醜的\", \"可愛的\"]（原 [\"藥\", \"健康的\", \"骨頭\", \"脖子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

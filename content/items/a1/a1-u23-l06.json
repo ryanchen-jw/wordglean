@@ -12,8 +12,8 @@
       "id": "a1-u23-l06-q01",
       "type": "wordCard",
       "word": "repeat",
-      "exampleEn": "Can you repeat that, please?",
-      "exampleZh": "可以請你再說一次嗎？",
+      "exampleEn": "The teacher repeats the new words three times.",
+      "exampleZh": "老師會把新單字重複唸三次。",
       "glossZh": "重複；再說一次",
       "distractorsZh": [
         "回答",
@@ -27,7 +27,7 @@
       "word": "carefully",
       "exampleEn": "Please read the question carefully.",
       "exampleZh": "請仔細讀題目。",
-      "glossZh": "小心地；仔細地",
+      "glossZh": "仔細地；小心地",
       "distractorsZh": [
         "很快地",
         "大聲地",
@@ -77,8 +77,8 @@
       "id": "a1-u23-l06-q06",
       "type": "wordCard",
       "word": "pray",
-      "exampleEn": "Many people pray at the temple.",
-      "exampleZh": "很多人在廟裡拜拜。",
+      "exampleEn": "We pray for good weather before our trip.",
+      "exampleZh": "出遊前，我們祈禱有好天氣。",
       "glossZh": "祈禱；拜拜",
       "distractorsZh": [
         "唱歌",
@@ -149,14 +149,14 @@
       "stemEn": "Can I ____ your umbrella? I will give it back tomorrow.",
       "stemZh": "我可以借你的雨傘嗎？明天還你。",
       "options": [
-        "pray",
-        "solve",
+        "fill",
+        "cover",
         "borrow",
         "dig"
       ],
       "optionGlossZh": [
-        "祈禱",
-        "解決",
+        "裝滿",
+        "蓋住",
         "借（入）",
         "挖"
       ],
@@ -170,14 +170,14 @@
       "options": [
         "solve",
         "ring",
-        "pray",
-        "dig"
+        "feed",
+        "push"
       ],
       "optionGlossZh": [
         "解答",
         "響",
-        "祈禱",
-        "挖"
+        "餵",
+        "推"
       ],
       "answer": 0
     },
@@ -302,6 +302,66 @@
         "message": "執行長裁示：正解長度名次分布：a1-u23-l06-q15#1 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"在狗屋裡睡覺\",\"在客廳裡玩球\",\"在花園挖洞\"]（原 [\"睡覺\",\"吃書\",\"在花園挖洞\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 repeat＝重複；與 q10 Repeat the question、q15 閱讀請老師再說一次換了主詞＋情境＋句型",
+        "resolution": "改為 \"The teacher repeats the new words three times.\"（原 \"Can you repeat that, please?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 repeat＝重複；與 q10 Repeat the question、q15 閱讀請老師再說一次換了主詞＋情境＋句型",
+        "resolution": "改為 \"老師把新單字重複了三次。\"（原 \"可以請你再說一次嗎？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"仔細地；小心地\"（原 \"小心地；仔細地\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 pray＝祈禱；與 q12 奶奶每天早上祈禱換了主詞＋情境＋句型",
+        "resolution": "改為 \"We pray for good weather before our trip.\"（原 \"Many people pray at the temple.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 pray＝祈禱；與 q12 奶奶每天早上祈禱換了主詞＋情境＋句型",
+        "resolution": "改為 \"出遊前，我們祈禱有好天氣。\"（原 \"很多人在廟裡拜拜。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：solve 是 q14 正解改 cover，pray 與 q14 共用改 fill；dig 留本題",
+        "resolution": "改為 [\"fill\", \"cover\", \"borrow\", \"dig\"]（原 [\"pray\", \"solve\", \"borrow\", \"dig\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：solve 是 q14 正解改 cover，pray 與 q14 共用改 fill；dig 留本題",
+        "resolution": "改為 [\"裝滿\", \"蓋住\", \"借（入）\", \"挖\"]（原 [\"祈禱\", \"解決\", \"借（入）\", \"挖\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：pray、dig 與 q13 共用，改 feed、push（避開 check、guess 也通）",
+        "resolution": "改為 [\"solve\", \"ring\", \"feed\", \"push\"]（原 [\"solve\", \"ring\", \"pray\", \"dig\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：pray、dig 與 q13 共用，改 feed、push（避開 check、guess 也通）",
+        "resolution": "改為 [\"解答\", \"響\", \"餵\", \"推\"]（原 [\"解答\", \"響\", \"祈禱\", \"挖\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：中譯時態忠實（現在式習慣動作）",
+        "resolution": "改為 \"老師會把新單字重複唸三次。\"（原 \"老師把新單字重複了三次。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

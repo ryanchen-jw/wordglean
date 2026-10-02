@@ -84,7 +84,7 @@
       "word": "material",
       "exampleEn": "What material is this bag made of?",
       "exampleZh": "這個包包是什麼材質做的？",
-      "glossZh": "材料；材質",
+      "glossZh": "材質；材料",
       "distractorsZh": [
         "顏色",
         "形狀",
@@ -154,15 +154,15 @@
       "stemEn": "Paper is a cheap ____.",
       "stemZh": "紙是一種便宜的材料。",
       "options": [
-        "private",
+        "system",
         "material",
-        "single",
+        "model",
         "image"
       ],
       "optionGlossZh": [
-        "私人的",
+        "系統",
         "材料",
-        "單一的",
+        "模型；機型",
         "影像"
       ],
       "answer": 1
@@ -302,6 +302,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"相機現在要賣多少錢\"（原 \"相機多少錢\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"材質；材料\"（原 \"材料；材質\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：private、single 與 q14 共用，改本單元名詞 system、model",
+        "resolution": "改為 [\"system\", \"material\", \"model\", \"image\"]（原 [\"private\", \"material\", \"single\", \"image\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：private、single 與 q14 共用，改本單元名詞 system、model",
+        "resolution": "改為 [\"系統\", \"材料\", \"模型；機型\", \"影像\"]（原 [\"私人的\", \"材料\", \"單一的\", \"影像\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

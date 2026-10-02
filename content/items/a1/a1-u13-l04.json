@@ -152,15 +152,15 @@
       "stemZh": "我工作了十個小時，非常累。",
       "options": [
         "tired",
-        "smoke",
-        "tooth",
-        "nurse"
+        "healthy",
+        "pretty",
+        "young"
       ],
       "optionGlossZh": [
         "累的",
-        "煙",
-        "牙齒",
-        "護士"
+        "健康的",
+        "漂亮的",
+        "年輕的"
       ],
       "answer": 0
     },
@@ -170,16 +170,16 @@
       "stemEn": "Please open the window. I can't ____.",
       "stemZh": "請開一下窗戶，我沒辦法呼吸。",
       "options": [
-        "smoking",
+        "exercise",
         "fever",
         "breathe",
-        "sick"
+        "drive"
       ],
       "optionGlossZh": [
-        "抽菸",
+        "運動",
         "發燒",
         "呼吸",
-        "生病的"
+        "開車"
       ],
       "answer": 2
     },
@@ -358,6 +358,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u13-l04-q15#0 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"發燒、呼吸困難\",\"牙齒很痛不能吃飯\",\"腳受傷不能走\"]（原 [\"發燒、呼吸困難\",\"牙齒很痛不能吃飯\",\"腳受傷\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：兩題原都沒有四選項同詞性，smoke/tooth/nurse 換形容詞 healthy/pretty/young",
+        "resolution": "改為 [\"tired\", \"healthy\", \"pretty\", \"young\"]（原 [\"tired\", \"smoke\", \"tooth\", \"nurse\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：兩題原都沒有四選項同詞性，smoke/tooth/nurse 換形容詞 healthy/pretty/young",
+        "resolution": "改為 [\"累的\", \"健康的\", \"漂亮的\", \"年輕的\"]（原 [\"累的\", \"煙\", \"牙齒\", \"護士\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原無干擾項放得進 I can't ____，smoking/sick 換動詞 exercise/drive",
+        "resolution": "改為 [\"exercise\", \"fever\", \"breathe\", \"drive\"]（原 [\"smoking\", \"fever\", \"breathe\", \"sick\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原無干擾項放得進 I can't ____，smoking/sick 換動詞 exercise/drive",
+        "resolution": "改為 [\"運動\", \"發燒\", \"呼吸\", \"開車\"]（原 [\"抽菸\", \"發燒\", \"呼吸\", \"生病的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

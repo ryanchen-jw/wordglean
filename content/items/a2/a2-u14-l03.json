@@ -42,7 +42,7 @@
       "word": "psychologist",
       "exampleEn": "The psychologist listened to the students carefully.",
       "exampleZh": "那位心理師仔細聽學生們說話。",
-      "glossZh": "心理學家；心理師",
+      "glossZh": "心理師；心理學家",
       "distractorsZh": [
         "牙醫",
         "律師",
@@ -151,13 +151,13 @@
       "stemEn": "She stayed home because she was ____.",
       "stemZh": "她待在家裡，因為她生病了。",
       "options": [
-        "rich",
+        "harmful",
         "ill",
         "tall",
         "blonde"
       ],
       "optionGlossZh": [
-        "有錢的",
+        "有害的",
         "生病的",
         "高的",
         "金髮的"
@@ -171,15 +171,15 @@
       "stemZh": "他跌倒，弄傷了手臂。",
       "options": [
         "cheek",
-        "physically",
+        "exercised",
         "injured",
-        "psychologist"
+        "practiced"
       ],
       "optionGlossZh": [
         "臉頰",
-        "身體上",
+        "運動",
         "弄傷",
-        "心理師"
+        "練習"
       ],
       "answer": 2
     },
@@ -358,6 +358,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u14-l03-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"跑到一半，鞋子突然壞掉了\",\"在不熟悉的小路上迷路了\",\"跌倒了，腳趾撞到石頭\"]（原 [\"跑到一半，鞋子壞掉了\",\"迷路了\",\"跌倒了，腳趾撞到石頭\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"心理師；心理學家\"（原 \"心理學家；心理師\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：rich 已在他課當非本單元干擾項，改本單元形容詞 harmful",
+        "resolution": "改為 [\"harmful\", \"ill\", \"tall\", \"blonde\"]（原 [\"rich\", \"ill\", \"tall\", \"blonde\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：rich 已在他課當非本單元干擾項，改本單元形容詞 harmful",
+        "resolution": "改為 [\"有害的\", \"生病的\", \"高的\", \"金髮的\"]（原 [\"有錢的\", \"生病的\", \"高的\", \"金髮的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：physically、psychologist 放不進 ____ his arm 動詞位置，改 exercised、practiced（能代入、靠詞義排除；hurt、broke 會變也對故不用）",
+        "resolution": "改為 [\"cheek\", \"exercised\", \"injured\", \"practiced\"]（原 [\"cheek\", \"physically\", \"injured\", \"psychologist\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：physically、psychologist 放不進 ____ his arm 動詞位置，改 exercised、practiced（能代入、靠詞義排除；hurt、broke 會變也對故不用）",
+        "resolution": "改為 [\"臉頰\", \"運動\", \"弄傷\", \"練習\"]（原 [\"臉頰\", \"身體上\", \"弄傷\", \"心理師\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

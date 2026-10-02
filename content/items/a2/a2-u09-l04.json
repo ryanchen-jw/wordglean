@@ -107,7 +107,7 @@
       "word": "businesswoman",
       "exampleEn": "The businesswoman has meetings all day.",
       "exampleZh": "那位女企業家整天都在開會。",
-      "glossZh": "女商人；女企業家",
+      "glossZh": "女企業家；女商人",
       "distractorsZh": [
         "女演員",
         "女警",
@@ -154,13 +154,13 @@
         "diary",
         "barber",
         "hunter",
-        "pro"
+        "boss"
       ],
       "optionGlossZh": [
         "日記",
         "理髮師",
         "獵人",
-        "職業選手"
+        "老闆"
       ],
       "answer": 0
     },
@@ -170,16 +170,16 @@
       "stemEn": "He's not a beginner. He plays like a ____.",
       "stemZh": "他可不是新手，他打得像職業選手一樣。",
       "options": [
-        "diary",
+        "clerk",
         "pro",
-        "retired",
-        "sleepless"
+        "manager",
+        "secretary"
       ],
       "optionGlossZh": [
-        "日記",
+        "店員",
         "職業選手",
-        "退休的",
-        "睡不著的"
+        "經理",
+        "秘書"
       ],
       "answer": 1
     },
@@ -352,6 +352,36 @@
         "message": "執行長最終複審修正：中譯同步",
         "resolution": "改為 \"那位女企業家整天都在開會。\"（原 \"我阿姨是一位成功的女企業家。\"）",
         "resolvedAt": "2026-10-02T16:28:32Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"女企業家；女商人\"（原 \"女商人；女企業家\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：pro 是 q14 正解不可當干擾項，改本單元字 boss",
+        "resolution": "改為 [\"diary\", \"barber\", \"hunter\", \"boss\"]（原 [\"diary\", \"barber\", \"hunter\", \"pro\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：pro 是 q14 正解不可當干擾項，改本單元字 boss",
+        "resolution": "改為 [\"日記\", \"理髮師\", \"獵人\", \"老闆\"]（原 [\"日記\", \"理髮師\", \"獵人\", \"職業選手\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：diary 是 q13 正解改 clerk；retired、sleepless 為形容詞放不進 a ____，改 manager、secretary 成四選項同詞性",
+        "resolution": "改為 [\"clerk\", \"pro\", \"manager\", \"secretary\"]（原 [\"diary\", \"pro\", \"retired\", \"sleepless\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：diary 是 q13 正解改 clerk；retired、sleepless 為形容詞放不進 a ____，改 manager、secretary 成四選項同詞性",
+        "resolution": "改為 [\"店員\", \"職業選手\", \"經理\", \"秘書\"]（原 [\"日記\", \"職業選手\", \"退休的\", \"睡不著的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

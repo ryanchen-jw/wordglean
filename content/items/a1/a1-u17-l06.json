@@ -107,7 +107,7 @@
       "word": "plan",
       "exampleEn": "What is your plan for the weekend?",
       "exampleZh": "你週末有什麼計畫？",
-      "glossZh": "計畫；打算（動詞）",
+      "glossZh": "計畫；打算",
       "distractorsZh": [
         "問題",
         "回憶",
@@ -170,13 +170,13 @@
       "stemEn": "I can't ____ where I put my keys.",
       "stemZh": "我想不起來我把鑰匙放在哪裡。",
       "options": [
-        "build",
+        "plan",
         "open",
         "speak",
         "remember"
       ],
       "optionGlossZh": [
-        "建造",
+        "計畫",
         "開",
         "說",
         "記得"
@@ -310,6 +310,24 @@
         "message": "執行長裁示：正解長度名次分布：a1-u17-l06-q15#1 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"開車到山上爬山\",\"沿著河邊散步\",\"去市場買菜\"]（原 [\"種花\",\"沿著河邊散步\",\"去市場\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"計畫；打算\"（原 \"計畫；打算（動詞）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：build 與 q13 共用改 plan",
+        "resolution": "改為 [\"plan\", \"open\", \"speak\", \"remember\"]（原 [\"build\", \"open\", \"speak\", \"remember\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：build 與 q13 共用改 plan",
+        "resolution": "改為 [\"計畫\", \"開\", \"說\", \"記得\"]（原 [\"建造\", \"開\", \"說\", \"記得\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

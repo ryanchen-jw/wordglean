@@ -53,8 +53,8 @@
       "id": "a2-u03-l06-q04",
       "type": "wordCard",
       "word": "basic",
-      "exampleEn": "The hotel room is basic but clean.",
-      "exampleZh": "這間飯店房間很簡單，但很乾淨。",
+      "exampleEn": "You need basic computer skills for this job.",
+      "exampleZh": "這份工作需要基本的電腦技能。",
       "glossZh": "基本的；簡單的",
       "distractorsZh": [
         "豪華的",
@@ -66,8 +66,8 @@
       "id": "a2-u03-l06-q05",
       "type": "wordCard",
       "word": "perfect",
-      "exampleEn": "The weather is perfect for a picnic.",
-      "exampleZh": "這種天氣最適合野餐了。",
+      "exampleEn": "Your drawing is perfect!",
+      "exampleZh": "你的畫完美極了！",
       "glossZh": "完美的；最適合的",
       "distractorsZh": [
         "糟糕的",
@@ -79,8 +79,8 @@
       "id": "a2-u03-l06-q06",
       "type": "wordCard",
       "word": "feature",
-      "exampleEn": "This phone has many useful features.",
-      "exampleZh": "這支手機有很多實用的功能。",
+      "exampleEn": "The old bridge is a famous feature of this town.",
+      "exampleZh": "這座舊橋是這個小鎮有名的特色。",
       "glossZh": "特色；功能",
       "distractorsZh": [
         "缺點",
@@ -153,13 +153,13 @@
       "options": [
         "safe",
         "fresh",
-        "dangerous",
+        "popular",
         "noisy"
       ],
       "optionGlossZh": [
         "安全的",
         "新鮮的",
-        "危險的",
+        "受歡迎的",
         "吵鬧的"
       ],
       "answer": 0
@@ -170,15 +170,15 @@
       "stemEn": "The ____ plan was to go by train, but we drove instead.",
       "stemZh": "原本的計畫是搭火車，但我們後來改開車。",
       "options": [
-        "fresh",
+        "complete",
         "feature",
-        "easily",
+        "modern",
         "original"
       ],
       "optionGlossZh": [
-        "新鮮的",
+        "完整的",
         "特色",
-        "輕易地",
+        "現代的",
         "原本的"
       ],
       "answer": 3
@@ -298,6 +298,66 @@
         "message": "執行長裁示：正解長度名次分布：a2-u03-l06-q15#0 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"用昂貴食材做高級的西式料理\",\"用新鮮蔬菜做簡單的家常菜\",\"只賣咖啡和甜點\"]（原 [\"用昂貴食材做高級的西式料理\",\"用新鮮蔬菜做簡單的家常菜\",\"只賣咖啡\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「基本的」；與 q15 閱讀（basic home cooking）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"You need basic computer skills for this job.\"（原 \"The hotel room is basic but clean.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「基本的」；與 q15 閱讀（basic home cooking）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"這份工作需要基本的電腦技能。\"（原 \"這間飯店房間很簡單，但很乾淨。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「完美的」；與 q10 飯店、q11 計畫、q15 餐廳、q16 公寓（皆為「最適合」或場所）換了主詞＋情境＋句型（無 for 結構，改為稱讚畫作）。",
+        "resolution": "改為 \"Your drawing is perfect!\"（原 \"The weather is perfect for a picnic.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「完美的」；與 q10 飯店、q11 計畫、q15 餐廳、q16 公寓（皆為「最適合」或場所）換了主詞＋情境＋句型（無 for 結構，改為稱讚畫作）。",
+        "resolution": "改為 \"你的畫完美極了！\"（原 \"這種天氣最適合野餐了。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「特色」；與 q15 閱讀（餐廳開放式廚房）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"The old bridge is a famous feature of this town.\"（原 \"This phone has many useful features.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「特色」；與 q15 閱讀（餐廳開放式廚房）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"這座舊橋是這個小鎮有名的特色。\"（原 \"這支手機有很多實用的功能。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：dangerous 超範圍，改本單元形容詞 popular",
+        "resolution": "改為 [\"safe\", \"fresh\", \"popular\", \"noisy\"]（原 [\"safe\", \"fresh\", \"dangerous\", \"noisy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：dangerous 超範圍，改本單元形容詞 popular",
+        "resolution": "改為 [\"安全的\", \"新鮮的\", \"受歡迎的\", \"吵鬧的\"]（原 [\"安全的\", \"新鮮的\", \"危險的\", \"吵鬧的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fresh 與 q13 共用改 complete；easily 放不進 The ___ plan 改形容詞 modern",
+        "resolution": "改為 [\"complete\", \"feature\", \"modern\", \"original\"]（原 [\"fresh\", \"feature\", \"easily\", \"original\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fresh 與 q13 共用改 complete；easily 放不進 The ___ plan 改形容詞 modern",
+        "resolution": "改為 [\"完整的\", \"特色\", \"現代的\", \"原本的\"]（原 [\"新鮮的\", \"特色\", \"輕易地\", \"原本的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

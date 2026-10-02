@@ -18,8 +18,8 @@
       "id": "a1-u12-l02-q01",
       "type": "wordCard",
       "word": "drive",
-      "exampleEn": "Let's go for a drive.",
-      "exampleZh": "我們開車去兜風吧。",
+      "exampleEn": "My father drives to work every day.",
+      "exampleZh": "我爸爸每天開車上班。",
       "glossZh": "開車；兜風",
       "distractorsZh": [
         "走路",
@@ -155,16 +155,16 @@
       "stemEn": "What time does the plane ____ in Taipei?",
       "stemZh": "飛機幾點抵達台北？",
       "options": [
-        "seat",
+        "stay",
         "arrive",
-        "hotel",
-        "trip"
+        "visit",
+        "change"
       ],
       "optionGlossZh": [
-        "座位",
+        "停留",
         "抵達",
-        "飯店",
-        "旅行"
+        "拜訪",
+        "換（車、機）"
       ],
       "answer": 1
     },
@@ -321,6 +321,30 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Tainan\",\"Japan\",\"Mr\",\"Mrs\",\"Wang\",\"Hualien\",\"Taipei\"]；改後：[\"Tainan\",\"Japan\",\"Wang\",\"Hualien\",\"Taipei\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 drive＝開車；與 q15 閱讀（王氏夫婦搭火車不開車）換了主詞＋情境＋句型",
+        "resolution": "改為 \"My father drives to work every day.\"（原 \"Let's go for a drive.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 drive＝開車；與 q15 閱讀（王氏夫婦搭火車不開車）換了主詞＋情境＋句型",
+        "resolution": "改為 \"我爸爸每天開車上班。\"（原 \"我們開車去兜風吧。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：seat 與 q14 共用；兩題原都無四選項同詞性，改為四個動詞 stay/visit/change",
+        "resolution": "改為 [\"stay\", \"arrive\", \"visit\", \"change\"]（原 [\"seat\", \"arrive\", \"hotel\", \"trip\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：seat 與 q14 共用；兩題原都無四選項同詞性，改為四個動詞 stay/visit/change",
+        "resolution": "改為 [\"停留\", \"抵達\", \"拜訪\", \"換（車、機）\"]（原 [\"座位\", \"抵達\", \"飯店\", \"旅行\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -136,15 +136,15 @@
       "stemEn": "The ____ climbed the tree and ate a banana.",
       "stemZh": "那隻黑猩猩爬上樹吃了一根香蕉。",
       "options": [
-        "bush",
+        "duck",
         "chimpanzee",
-        "bay",
+        "robin",
         "sunflower"
       ],
       "optionGlossZh": [
-        "灌木",
+        "鴨子",
         "黑猩猩",
-        "海灣",
+        "知更鳥",
         "向日葵"
       ],
       "answer": 1
@@ -295,6 +295,18 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"貓躲在一叢灌木後面。\"（原 \"爸爸修剪了花園裡的灌木。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bush、bay 與 q13 共用，改 duck、robin（本單元動物，靠詞義排除）",
+        "resolution": "改為 [\"duck\", \"chimpanzee\", \"robin\", \"sunflower\"]（原 [\"bush\", \"chimpanzee\", \"bay\", \"sunflower\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bush、bay 與 q13 共用，改 duck、robin（本單元動物，靠詞義排除）",
+        "resolution": "改為 [\"鴨子\", \"黑猩猩\", \"知更鳥\", \"向日葵\"]（原 [\"灌木\", \"黑猩猩\", \"海灣\", \"向日葵\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

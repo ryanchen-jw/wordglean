@@ -14,7 +14,7 @@
       "word": "load",
       "exampleEn": "I wash two loads of clothes every week.",
       "exampleZh": "我每週洗兩批衣服。",
-      "glossZh": "（一次的）載量；一批",
+      "glossZh": "一批；一次的量",
       "distractorsZh": [
         "一雙",
         "一片",
@@ -170,13 +170,13 @@
       "options": [
         "max",
         "greatly",
-        "pile",
+        "fully",
         "badly"
       ],
       "optionGlossZh": [
         "最多",
         "大大地",
-        "一堆",
+        "完全地",
         "差勁地"
       ],
       "answer": 3
@@ -308,6 +308,24 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點封閉清單",
         "resolution": "改為 \"「公斤」可寫，例如 kilo、kilogram 等\"（原 \"「公斤」可寫 kilo（寫 kilogram 也正確）\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"一批；一次的量\"（原 \"（一次的）載量；一批\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pile 放不進 played ___，改副詞 fully，使兩個干擾項文法成立",
+        "resolution": "改為 [\"max\", \"greatly\", \"fully\", \"badly\"]（原 [\"max\", \"greatly\", \"pile\", \"badly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pile 放不進 played ___，改副詞 fully，使兩個干擾項文法成立",
+        "resolution": "改為 [\"最多\", \"大大地\", \"完全地\", \"差勁地\"]（原 [\"最多\", \"大大地\", \"一堆\", \"差勁地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

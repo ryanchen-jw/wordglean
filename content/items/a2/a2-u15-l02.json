@@ -170,13 +170,13 @@
       "stemEn": "Do you have any ____ in sports?",
       "stemZh": "你對運動有興趣嗎？",
       "options": [
-        "hero",
+        "hike",
         "musical",
         "interest",
         "rhythm"
       ],
       "optionGlossZh": [
-        "英雄",
+        "健行",
         "音樂的",
         "興趣",
         "節奏"
@@ -310,6 +310,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u15-l02-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"一個擺滿推理小說的大書架\",\"一把舊吉他和幾張樂團海報\",\"她畫的圖和奶奶的老照片\"]（原 [\"一個擺滿推理小說的大書架\",\"一把吉他\",\"她畫的圖和奶奶的老照片\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hero 與 q13 共用，改本單元名詞 hike",
+        "resolution": "改為 [\"hike\", \"musical\", \"interest\", \"rhythm\"]（原 [\"hero\", \"musical\", \"interest\", \"rhythm\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hero 與 q13 共用，改本單元名詞 hike",
+        "resolution": "改為 [\"健行\", \"音樂的\", \"興趣\", \"節奏\"]（原 [\"英雄\", \"音樂的\", \"興趣\", \"節奏\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

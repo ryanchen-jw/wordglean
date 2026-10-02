@@ -80,9 +80,9 @@
       "id": "a1-u17-l04-q06",
       "type": "wordCard",
       "word": "move",
-      "exampleEn": "Our move to Taipei was easy.",
-      "exampleZh": "我們搬到台北很順利。",
-      "glossZh": "移動；搬家（動詞、名詞）",
+      "exampleEn": "Can you help me move this table?",
+      "exampleZh": "你可以幫我移動這張桌子嗎？",
+      "glossZh": "移動；搬家",
       "distractorsZh": [
         "旅行",
         "工作",
@@ -153,15 +153,15 @@
       "stemZh": "在轉角左轉。",
       "options": [
         "Turn",
-        "Hear",
-        "Start",
-        "Hold"
+        "Show",
+        "Know",
+        "Call"
       ],
       "optionGlossZh": [
         "轉彎",
-        "聽到",
-        "開始",
-        "抓住"
+        "出示",
+        "知道",
+        "呼叫"
       ],
       "answer": 0
     },
@@ -173,13 +173,13 @@
       "options": [
         "holds",
         "hears",
-        "turns",
+        "moves",
         "starts"
       ],
       "optionGlossZh": [
         "抓住",
         "聽到",
-        "轉彎",
+        "移動",
         "開始"
       ],
       "answer": 3
@@ -335,6 +335,60 @@
         "message": "執行長裁示：正解長度名次分布：a1-u17-l04-q15#1 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"大家都在車上睡覺\",\"在車上一起吃早餐\",\"聽廣播一起唱歌\"]（原 [\"睡覺\",\"吃早餐\",\"聽廣播一起唱歌\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前；單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"移動；搬家\"（原 \"移動；搬家（動詞、名詞）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 move＝移動（動詞）；與 q12 搬到台北、q15 閱讀搬新家換了主詞＋情境＋句型",
+        "resolution": "改為 \"Can you help me move this table?\"（原 \"Our move to Taipei was easy.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 move＝移動（動詞）；與 q12 搬到台北、q15 閱讀搬新家換了主詞＋情境＋句型",
+        "resolution": "改為 \"你可以幫我移動這張桌子嗎？\"（原 \"我們搬到台北很順利。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Start 是 q14 正解、Hear／Hold 與 q14 共用，改 Show、Point、Call（避開 Look／Keep 等也通的字）",
+        "resolution": "改為 [\"Turn\", \"Show\", \"Point\", \"Call\"]（原 [\"Turn\", \"Hear\", \"Start\", \"Hold\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Start 是 q14 正解、Hear／Hold 與 q14 共用，改 Show、Point、Call（避開 Look／Keep 等也通的字）",
+        "resolution": "改為 [\"轉彎\", \"出示\", \"指\", \"呼叫\"]（原 [\"轉彎\", \"聽到\", \"開始\", \"抓住\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：turns 是 q13 正解改 moves",
+        "resolution": "改為 [\"holds\", \"hears\", \"moves\", \"starts\"]（原 [\"holds\", \"hears\", \"turns\", \"starts\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：turns 是 q13 正解改 moves",
+        "resolution": "改為 [\"抓住\", \"聽到\", \"移動\", \"開始\"]（原 [\"抓住\", \"聽到\", \"轉彎\", \"開始\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Point 代入「Point left at the corner.」文法通、勉強可解為在轉角往左指，換成 Know（Know left at the corner. 語意不通）",
+        "resolution": "改為 [\"Turn\", \"Show\", \"Know\", \"Call\"]（原 [\"Turn\", \"Show\", \"Point\", \"Call\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Point 代入「Point left at the corner.」文法通、勉強可解為在轉角往左指，換成 Know（Know left at the corner. 語意不通）",
+        "resolution": "改為 [\"轉彎\", \"出示\", \"知道\", \"呼叫\"]（原 [\"轉彎\", \"出示\", \"指\", \"呼叫\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

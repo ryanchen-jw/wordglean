@@ -167,14 +167,14 @@
       "options": [
         "old",
         "new",
-        "own",
-        "thing"
+        "foreign",
+        "great"
       ],
       "optionGlossZh": [
         "老的",
         "新的",
-        "自己的",
-        "東西"
+        "外國的",
+        "很棒的"
       ],
       "answer": 0
     },
@@ -187,13 +187,13 @@
         "high",
         "big",
         "well",
-        "old"
+        "own"
       ],
       "optionGlossZh": [
         "高的",
         "大的",
         "很好地",
-        "老的"
+        "自己的"
       ],
       "answer": 2
     },
@@ -367,6 +367,54 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「十樓」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:39:39Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：own、thing 放不進 He is very ___，改 good、great，四選項皆形容詞",
+        "resolution": "改為 [\"old\", \"new\", \"good\", \"great\"]（原 [\"old\", \"new\", \"own\", \"thing\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：own、thing 放不進 He is very ___，改 good、great，四選項皆形容詞",
+        "resolution": "改為 [\"老的\", \"新的\", \"好的\", \"很棒的\"]（原 [\"老的\", \"新的\", \"自己的\", \"東西\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：old 是 q14 正解，改 often（plays very often 文法可通，與 high 共兩個）；避開 good（常見錯誤）",
+        "resolution": "改為 [\"high\", \"big\", \"well\", \"often\"]（原 [\"high\", \"big\", \"well\", \"old\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：old 是 q14 正解，改 often（plays very often 文法可通，與 high 共兩個）；避開 good（常見錯誤）",
+        "resolution": "改為 [\"高的\", \"大的\", \"很好地\", \"常常\"]（原 [\"高的\", \"大的\", \"很好地\", \"老的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：good 代入成 My grandfather is eighty. He is very good.（身體很好）說得通；換成 foreign，He is very foreign 語意不通",
+        "resolution": "改為 [\"old\", \"new\", \"foreign\", \"great\"]（原 [\"old\", \"new\", \"good\", \"great\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：good 代入成 My grandfather is eighty. He is very good.（身體很好）說得通；換成 foreign，He is very foreign 語意不通",
+        "resolution": "改為 [\"老的\", \"新的\", \"外國的\", \"很棒的\"]（原 [\"老的\", \"新的\", \"好的\", \"很棒的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：指定必修：often 代入成 She plays the piano very often. 說得通；換成 own，plays the piano very own 文法不通",
+        "resolution": "改為 [\"high\", \"big\", \"well\", \"own\"]（原 [\"high\", \"big\", \"well\", \"often\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：指定必修：often 代入成 She plays the piano very often. 說得通；換成 own，plays the piano very own 文法不通",
+        "resolution": "改為 [\"高的\", \"大的\", \"很好地\", \"自己的\"]（原 [\"高的\", \"大的\", \"很好地\", \"常常\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

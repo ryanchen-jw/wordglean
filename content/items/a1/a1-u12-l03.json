@@ -152,16 +152,16 @@
       "stemEn": "Can you ____ a horse?",
       "stemZh": "你會騎馬嗎？",
       "options": [
-        "driver",
+        "email",
         "ride",
         "boat",
-        "bus"
+        "fly"
       ],
       "optionGlossZh": [
-        "司機",
+        "寄電子郵件",
         "騎",
         "小船",
-        "公車"
+        "飛"
       ],
       "answer": 1
     },
@@ -293,6 +293,30 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「煮飯」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:41:15Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：driver 是 q14 正解換 drive，bus 換 fly，兩個動詞可放進空格",
+        "resolution": "改為 [\"drive\", \"ride\", \"boat\", \"fly\"]（原 [\"driver\", \"ride\", \"boat\", \"bus\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：driver 是 q14 正解換 drive，bus 換 fly，兩個動詞可放進空格",
+        "resolution": "改為 [\"駕駛\", \"騎\", \"小船\", \"飛\"]（原 [\"司機\", \"騎\", \"小船\", \"公車\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Can you drive a horse? 英文可指駕馬（車），只看英文也成立；drive 換成 email（文法可放、語意不通），仍有 email、fly 兩個動詞放得進空格",
+        "resolution": "改為 [\"email\", \"ride\", \"boat\", \"fly\"]（原 [\"drive\", \"ride\", \"boat\", \"fly\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Can you drive a horse? 英文可指駕馬（車），只看英文也成立；drive 換成 email（文法可放、語意不通），仍有 email、fly 兩個動詞放得進空格",
+        "resolution": "改為 [\"寄電子郵件\", \"騎\", \"小船\", \"飛\"]（原 [\"駕駛\", \"騎\", \"小船\", \"飛\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

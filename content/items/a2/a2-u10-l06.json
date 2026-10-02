@@ -139,13 +139,13 @@
         "cereal",
         "champagne",
         "toast",
-        "ham"
+        "jam"
       ],
       "optionGlossZh": [
         "穀片",
         "香檳",
         "吐司",
-        "火腿"
+        "果醬"
       ],
       "answer": 1
     },
@@ -355,6 +355,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"因為晚上爸爸要工作\"（原 \"因為晚上要工作\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：ham 與 q13 共用，改本單元字 jam",
+        "resolution": "改為 [\"cereal\", \"champagne\", \"toast\", \"jam\"]（原 [\"cereal\", \"champagne\", \"toast\", \"ham\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：ham 與 q13 共用，改本單元字 jam",
+        "resolution": "改為 [\"穀片\", \"香檳\", \"吐司\", \"果醬\"]（原 [\"穀片\", \"香檳\", \"吐司\", \"火腿\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

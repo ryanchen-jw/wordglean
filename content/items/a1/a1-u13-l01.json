@@ -151,13 +151,13 @@
       "stemEn": "I have a ____. I want to go to bed.",
       "stemZh": "我頭痛，想去睡覺。",
       "options": [
-        "hand",
+        "body",
         "health",
         "face",
         "headache"
       ],
       "optionGlossZh": [
-        "手",
+        "身體",
         "健康",
         "臉",
         "頭痛"
@@ -328,6 +328,18 @@
         "message": "執行長最終複審修正：FIX#5 中譯不重複",
         "resolution": "改前：\"我頭痛，頭好痛。\"；改後：\"我頭痛，想去睡覺。\"",
         "resolvedAt": "2026-10-02T13:26:25Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hand 與 q14 共用，換 body",
+        "resolution": "改為 [\"body\", \"health\", \"face\", \"headache\"]（原 [\"hand\", \"health\", \"face\", \"headache\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hand 與 q14 共用，換 body",
+        "resolution": "改為 [\"身體\", \"健康\", \"臉\", \"頭痛\"]（原 [\"手\", \"健康\", \"臉\", \"頭痛\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

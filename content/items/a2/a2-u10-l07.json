@@ -79,7 +79,7 @@
       "word": "napkin",
       "exampleEn": "There's a napkin under your fork.",
       "exampleZh": "你的叉子下面有一張餐巾紙。",
-      "glossZh": "餐巾；餐巾紙",
+      "glossZh": "餐巾紙；餐巾",
       "distractorsZh": [
         "盤子",
         "湯匙",
@@ -90,8 +90,8 @@
       "id": "a2-u10-l07-q07",
       "type": "wordCard",
       "word": "roast",
-      "exampleEn": "My uncle roasts coffee beans in his shop.",
-      "exampleZh": "我叔叔在他的店裡烘焙咖啡豆。",
+      "exampleEn": "We roasted fish over a small fire on the beach.",
+      "exampleZh": "我們在海灘上用小火堆烤魚。",
       "glossZh": "烤；烘焙（肉、咖啡豆等）",
       "distractorsZh": [
         "煮",
@@ -156,15 +156,15 @@
       "stemZh": "她做了一大批餅乾。",
       "options": [
         "batch",
-        "grilled",
+        "dessert",
         "roast",
-        "pear"
+        "slice"
       ],
       "optionGlossZh": [
         "一批",
-        "烤的",
+        "甜點",
         "烤",
-        "梨子"
+        "一片"
       ],
       "answer": 0
     },
@@ -313,6 +313,36 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"有人把飲料打翻在桌上\"（原 \"有人打翻了飲料\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"餐巾紙；餐巾\"（原 \"餐巾；餐巾紙\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「烤」（食物）；與 q09／q14 烤雞在烤箱、q16 冬天烤地瓜／週末烤箱烤肉換了主詞＋情境（海灘火堆）＋句型。",
+        "resolution": "改為 \"We roasted fish over a small fire on the beach.\"（原 \"My uncle roasts coffee beans in his shop.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「烤」（食物）；與 q09／q14 烤雞在烤箱、q16 冬天烤地瓜／週末烤箱烤肉換了主詞＋情境（海灘火堆）＋句型。",
+        "resolution": "改為 \"我們在海灘上用小火堆烤魚。\"（原 \"我叔叔在他的店裡烘焙咖啡豆。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：pear 是 q12 正解改 slice；grilled 放不進 a big ____ of，改名詞 dessert，湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"batch\", \"dessert\", \"roast\", \"slice\"]（原 [\"batch\", \"grilled\", \"roast\", \"pear\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：pear 是 q12 正解改 slice；grilled 放不進 a big ____ of，改名詞 dessert，湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"一批\", \"甜點\", \"烤\", \"一片\"]（原 [\"一批\", \"烤的\", \"烤\", \"梨子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

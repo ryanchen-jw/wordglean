@@ -53,8 +53,8 @@
       "id": "a1-u08-l05-q04",
       "type": "wordCard",
       "word": "bottle",
-      "exampleEn": "I buy a bottle of water every day.",
-      "exampleZh": "我每天買一瓶水。",
+      "exampleEn": "Can you open this bottle for me?",
+      "exampleZh": "你可以幫我打開這個瓶子嗎？",
       "glossZh": "瓶子；一瓶",
       "distractorsZh": [
         "杯子",
@@ -107,7 +107,7 @@
       "word": "dish",
       "exampleEn": "Can you wash the dishes?",
       "exampleZh": "你可以洗碗盤嗎？",
-      "glossZh": "盤子；碗盤",
+      "glossZh": "碗盤；盤子",
       "distractorsZh": [
         "杯子",
         "衣服",
@@ -170,16 +170,16 @@
       "stemEn": "Apples and bananas are ____.",
       "stemZh": "蘋果和香蕉是水果。",
       "options": [
-        "meat",
-        "vegetable",
+        "candy",
+        "chicken",
         "fruit",
-        "meal"
+        "juice"
       ],
       "optionGlossZh": [
-        "肉",
-        "蔬菜",
+        "糖果",
+        "雞肉",
         "水果",
-        "一餐"
+        "果汁"
       ],
       "answer": 2
     },
@@ -383,6 +383,36 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"Meat and white fish\"（原 \"Meat and fish\"）",
         "resolvedAt": "2026-10-02T17:55:45Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 bottle＝瓶子（容器）；與 q10 買兩瓶水、q15 閱讀 Lisa 帶一瓶水換了情境＋句型＋用法",
+        "resolution": "改為 \"Can you open this bottle for me?\"（原 \"I buy a bottle of water every day.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 bottle＝瓶子（容器）；與 q10 買兩瓶水、q15 閱讀 Lisa 帶一瓶水換了情境＋句型＋用法",
+        "resolution": "改為 \"你可以幫我打開這個瓶子嗎？\"（原 \"我每天買一瓶水。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"碗盤；盤子\"（原 \"盤子；碗盤\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：meat/vegetable 與 q13 共用，換 candy/chicken；meal 可數用法不通換 juice，四項皆可放進空格",
+        "resolution": "改為 [\"candy\", \"chicken\", \"fruit\", \"juice\"]（原 [\"meat\", \"vegetable\", \"fruit\", \"meal\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：meat/vegetable 與 q13 共用，換 candy/chicken；meal 可數用法不通換 juice，四項皆可放進空格",
+        "resolution": "改為 [\"糖果\", \"雞肉\", \"水果\", \"果汁\"]（原 [\"肉\", \"蔬菜\", \"水果\", \"一餐\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

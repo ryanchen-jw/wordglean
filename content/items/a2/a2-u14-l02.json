@@ -68,7 +68,7 @@
       "word": "temperature",
       "exampleEn": "What's the temperature outside?",
       "exampleZh": "外面氣溫幾度？",
-      "glossZh": "溫度；氣溫",
+      "glossZh": "氣溫；溫度",
       "distractorsZh": [
         "濕度",
         "價格",
@@ -81,7 +81,7 @@
       "word": "accident",
       "exampleEn": "The accident happened at a busy corner.",
       "exampleZh": "事故發生在一個繁忙的路口。",
-      "glossZh": "意外；事故",
+      "glossZh": "事故；意外",
       "distractorsZh": [
         "塞車",
         "比賽",
@@ -120,7 +120,7 @@
       "word": "stomach",
       "exampleEn": "My stomach makes noises when I'm hungry.",
       "exampleZh": "我肚子餓的時候會咕嚕咕嚕叫。",
-      "glossZh": "胃；肚子",
+      "glossZh": "肚子；胃",
       "distractorsZh": [
         "頭",
         "背",
@@ -186,13 +186,13 @@
         "accident",
         "physical",
         "temperature",
-        "lip"
+        "weight"
       ],
       "optionGlossZh": [
         "事故",
         "身體的",
         "溫度",
-        "嘴唇"
+        "重量"
       ],
       "answer": 0
     },
@@ -347,6 +347,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u14-l02-q16#1 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"一場在山上舉行的比賽\",\"一隻從樹林跑出來的熊\",\"一起車子撞樹的事故\"]（原 [\"一場比賽\",\"一隻從樹林跑出來的熊\",\"一起車子撞樹的事故\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"氣溫；溫度\"（原 \"溫度；氣溫\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"事故；意外\"（原 \"意外；事故\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/8/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"肚子；胃\"（原 \"胃；肚子\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lip 與 q14 共用，改本課名詞 weight",
+        "resolution": "改為 [\"accident\", \"physical\", \"temperature\", \"weight\"]（原 [\"accident\", \"physical\", \"temperature\", \"lip\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lip 與 q14 共用，改本課名詞 weight",
+        "resolution": "改為 [\"事故\", \"身體的\", \"溫度\", \"重量\"]（原 [\"事故\", \"身體的\", \"溫度\", \"嘴唇\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

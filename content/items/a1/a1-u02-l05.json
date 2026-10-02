@@ -24,8 +24,8 @@
       "id": "a1-u02-l05-q01",
       "type": "wordCard",
       "word": "hello",
-      "exampleEn": "Hello, is this Amy?",
-      "exampleZh": "喂，請問是 Amy 嗎？",
+      "exampleEn": "Hello! Nice to meet you.",
+      "exampleZh": "你好！很高興認識你。",
       "glossZh": "你好；（電話）喂",
       "distractorsZh": [
         "再見",
@@ -183,13 +183,13 @@
         "Hello",
         "Greet",
         "Excuse",
-        "Spy"
+        "Thank"
       ],
       "optionGlossZh": [
         "你好",
         "迎接",
         "原諒（excuse me）",
-        "間諜"
+        "感謝"
       ],
       "answer": 2
     },
@@ -404,6 +404,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"她學校的中文老師\"（原 \"她的老師\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 hello＝你好（見面招呼）；與 q15 閱讀（Anna 向老人打招呼的敘述）換了主詞＋情境＋句型",
+        "resolution": "改為 \"Hello! Nice to meet you.\"（原 \"Hello, is this Amy?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 hello＝你好（見面招呼）；與 q15 閱讀（Anna 向老人打招呼的敘述）換了主詞＋情境＋句型",
+        "resolution": "改為 \"你好！很高興認識你。\"（原 \"喂，請問是 Amy 嗎？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Spy 與 q13 共用，改 Thank（祈使句文法可通，與 Greet 共兩個）；避開 Pardon（也通）",
+        "resolution": "改為 [\"Hello\", \"Greet\", \"Excuse\", \"Thank\"]（原 [\"Hello\", \"Greet\", \"Excuse\", \"Spy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Spy 與 q13 共用，改 Thank（祈使句文法可通，與 Greet 共兩個）；避開 Pardon（也通）",
+        "resolution": "改為 [\"你好\", \"迎接\", \"原諒（excuse me）\", \"感謝\"]（原 [\"你好\", \"迎接\", \"原諒（excuse me）\", \"間諜\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

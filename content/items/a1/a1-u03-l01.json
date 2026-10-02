@@ -121,7 +121,7 @@
       "word": "may",
       "exampleEn": "We have a long holiday in May.",
       "exampleZh": "我們五月有個長假。",
-      "glossZh": "五月（May）；可以、可能（may）",
+      "glossZh": "五月；可以、可能",
       "distractorsZh": [
         "三月",
         "六月",
@@ -165,15 +165,15 @@
       "stemEn": "What ____ is it now?",
       "stemZh": "現在幾點？",
       "options": [
-        "two",
-        "first",
-        "o'clock",
+        "job",
+        "address",
+        "age",
         "time"
       ],
       "optionGlossZh": [
-        "二",
-        "第一的",
-        "⋯點鐘",
+        "工作",
+        "地址",
+        "年齡",
         "時間"
       ],
       "answer": 3
@@ -421,6 +421,48 @@
         "message": "執行長裁示：正解長度名次分布：a1-u03-l01-q16#1 目標第 2 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"搭公車去上班\",\"和新朋友吃午餐\",\"和老闆在辦公室開會\"]（原 [\"搭公車\",\"和新朋友吃午餐\",\"和老闆在辦公室開會\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/8/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：調換也解不了，改釋義內容",
+        "resolution": "改為 \"五月；可以、可能\"（原 \"五月（May）；可以、可能（may）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：two 與 q15 共用、first 是 q15 正解，o'clock 非名詞；改 job、address、age 四選項皆名詞，只能靠「幾點」詞義選 time（實作端複核：year、day 代入也是正常問句，不用）",
+        "resolution": "改為 [\"job\", \"address\", \"age\", \"time\"]（原 [\"two\", \"first\", \"o'clock\", \"time\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：two 與 q15 共用、first 是 q15 正解，o'clock 非名詞；改 job、address、age 四選項皆名詞，只能靠「幾點」詞義選 time（實作端複核：year、day 代入也是正常問句，不用）",
+        "resolution": "改為 [\"工作\", \"地址\", \"年齡\", \"時間\"]（原 [\"二\", \"第一的\", \"⋯點鐘\", \"時間\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：two 與 q14 共用且放不進空格，改 only（與 one 共兩個文法可通）",
+        "resolution": "改為 [\"now\", \"one\", \"only\", \"first\"]（原 [\"now\", \"one\", \"two\", \"first\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：two 與 q14 共用且放不進空格，改 only（與 one 共兩個文法可通）",
+        "resolution": "改為 [\"現在\", \"一\", \"唯一的\", \"第一的\"]（原 [\"現在\", \"一\", \"二\", \"第一的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：主 session 裁定：only 代入成 Today is the only day of my new job.（一日工作）說得通；換成 two，the two day 文法不通",
+        "resolution": "改為 [\"now\", \"one\", \"two\", \"first\"]（原 [\"now\", \"one\", \"only\", \"first\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：主 session 裁定：only 代入成 Today is the only day of my new job.（一日工作）說得通；換成 two，the two day 文法不通",
+        "resolution": "改為 [\"現在\", \"一\", \"二\", \"第一的\"]（原 [\"現在\", \"一\", \"唯一的\", \"第一的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

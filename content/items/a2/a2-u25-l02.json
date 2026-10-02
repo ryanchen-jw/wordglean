@@ -17,8 +17,8 @@
       "id": "a2-u25-l02-q01",
       "type": "wordCard",
       "word": "seriously",
-      "exampleEn": "Seriously? You ate the whole cake?",
-      "exampleZh": "真的假的？你把整個蛋糕吃掉了？",
+      "exampleEn": "My grandpa plays chess very seriously.",
+      "exampleZh": "我爺爺下棋非常認真。",
       "glossZh": "認真地；嚴重地；（口語）真的假的",
       "distractorsZh": [
         "隨便地",
@@ -45,7 +45,7 @@
       "word": "unusual",
       "exampleEn": "My friend has an unusual name.",
       "exampleZh": "我朋友的名字很特別。",
-      "glossZh": "不尋常的；特別的",
+      "glossZh": "特別的；不尋常的",
       "distractorsZh": [
         "普通的",
         "好聽的",
@@ -108,8 +108,8 @@
       "id": "a2-u25-l02-q08",
       "type": "wordCard",
       "word": "symbol",
-      "exampleEn": "The bear is the symbol of our school team.",
-      "exampleZh": "熊是我們學校球隊的標誌。",
+      "exampleEn": "To my grandma, this old ring is a symbol of family.",
+      "exampleZh": "對我奶奶來說，這枚舊戒指是家人的象徵。",
       "glossZh": "象徵；標誌；符號",
       "distractorsZh": [
         "名字",
@@ -156,13 +156,13 @@
       "options": [
         "weak",
         "proper",
-        "unusual",
+        "ancient",
         "opposite"
       ],
       "optionGlossZh": [
         "弱的",
         "適當的",
-        "特別的",
+        "古老的",
         "相反的"
       ],
       "answer": 1
@@ -173,15 +173,15 @@
       "stemEn": "English is ____ used around the world.",
       "stemZh": "英文在全世界被廣泛使用。",
       "options": [
-        "proper",
+        "seriously",
         "symbol",
-        "weak",
+        "deeply",
         "widely"
       ],
       "optionGlossZh": [
-        "適當的",
+        "認真地",
         "象徵",
-        "弱的",
+        "深深地",
         "廣泛地"
       ],
       "answer": 3
@@ -277,6 +277,72 @@
         "message": "執行長第②③關裁示修正：參考答案改寫，例子同步",
         "resolution": "改為 \"seriously 修飾動詞（例如 take … seriously、think seriously about）\"（原 \"seriously 修飾動詞（例如 take … seriously、talk seriously）\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「認真地」；與 q12（認真看待作業）、q17（take health seriously／認真思考未來）換了主詞＋情境＋句型（不用 take…seriously）。",
+        "resolution": "改為 \"My grandpa plays chess very seriously.\"（原 \"Seriously? You ate the whole cake?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「認真地」；與 q12（認真看待作業）、q17（take health seriously／認真思考未來）換了主詞＋情境＋句型（不用 take…seriously）。",
+        "resolution": "改為 \"我爺爺下棋非常認真。\"（原 \"真的假的？你把整個蛋糕吃掉了？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"特別的；不尋常的\"（原 \"不尋常的；特別的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「象徵」；與 q15 閱讀（紅門是小鎮的標誌）、q16 翻譯（心象徵愛）換了主詞＋情境；句型加了 To…, 的觀點框架。",
+        "resolution": "改為 \"To my grandma, this old ring is a symbol of family.\"（原 \"The bear is the symbol of our school team.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「象徵」；與 q15 閱讀（紅門是小鎮的標誌）、q16 翻譯（心象徵愛）換了主詞＋情境；句型加了 To…, 的觀點框架。",
+        "resolution": "改為 \"對我奶奶來說，這枚舊戒指是家人的象徵。\"（原 \"熊是我們學校球隊的標誌。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：proper 是 q13 正解、weak 與 q13 共用，改副詞 seriously、badly（可放 is ___ used）",
+        "resolution": "改為 [\"seriously\", \"symbol\", \"badly\", \"widely\"]（原 [\"proper\", \"symbol\", \"weak\", \"widely\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：proper 是 q13 正解、weak 與 q13 共用，改副詞 seriously、badly（可放 is ___ used）",
+        "resolution": "改為 [\"認真地\", \"象徵\", \"差勁地\", \"廣泛地\"]（原 [\"適當的\", \"象徵\", \"弱的\", \"廣泛地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「You need unusual shoes for hiking in the mountains.」可理解為需要特殊的鞋，說得通；unusual 換成 ancient，「古代的鞋」語意不通",
+        "resolution": "改為 [\"weak\", \"proper\", \"ancient\", \"opposite\"]（原 [\"weak\", \"proper\", \"unusual\", \"opposite\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「You need unusual shoes for hiking in the mountains.」可理解為需要特殊的鞋，說得通；unusual 換成 ancient，「古代的鞋」語意不通",
+        "resolution": "改為 [\"弱的\", \"適當的\", \"古老的\", \"相反的\"]（原 [\"弱的\", \"適當的\", \"特別的\", \"相反的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「English is badly used around the world.」英文在全球被用得很差，文法語意皆成立；badly 換成 deeply，「深深地被使用」語意不通",
+        "resolution": "改為 [\"seriously\", \"symbol\", \"deeply\", \"widely\"]（原 [\"seriously\", \"symbol\", \"badly\", \"widely\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「English is badly used around the world.」英文在全球被用得很差，文法語意皆成立；badly 換成 deeply，「深深地被使用」語意不通",
+        "resolution": "改為 [\"認真地\", \"象徵\", \"深深地\", \"廣泛地\"]（原 [\"認真地\", \"象徵\", \"差勁地\", \"廣泛地\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

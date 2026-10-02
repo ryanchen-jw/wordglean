@@ -51,8 +51,8 @@
       "id": "a2-u19-l04-q04",
       "type": "wordCard",
       "word": "violent",
-      "exampleEn": "Last night there was a violent storm.",
-      "exampleZh": "昨晚有一場猛烈的暴風雨。",
+      "exampleEn": "The police are looking for a violent man.",
+      "exampleZh": "警察正在找一名行為暴力的男子。",
       "glossZh": "暴力的；猛烈的",
       "distractorsZh": [
         "溫和的",
@@ -171,13 +171,13 @@
         "armed",
         "endangered",
         "violent",
-        "killer"
+        "public"
       ],
       "optionGlossZh": [
         "武裝的",
         "瀕臨絕種的",
         "暴力的",
-        "兇手"
+        "公開的"
       ],
       "answer": 2
     },
@@ -272,6 +272,42 @@
         "message": "執行長第②③關裁示修正：配合干擾項 illegal→endangered",
         "resolution": "改為 \"瀕臨絕種的\"（原 \"違法的\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"猛烈的；暴力的\"（原 \"暴力的；猛烈的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：killer 與 q13 共用，改形容詞 public，四選項同為形容詞",
+        "resolution": "改為 [\"armed\", \"endangered\", \"violent\", \"public\"]（原 [\"armed\", \"endangered\", \"violent\", \"killer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：killer 與 q13 共用，改形容詞 public，四選項同為形容詞",
+        "resolution": "改為 [\"武裝的\", \"瀕臨絕種的\", \"暴力的\", \"公開的\"]（原 [\"武裝的\", \"瀕臨絕種的\", \"暴力的\", \"兇手\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"暴力的；猛烈的\"（原 \"猛烈的；暴力的\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"The police are looking for a violent man.\"（原 \"Last night there was a violent storm.\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"警察正在找一名行為暴力的男子。\"（原 \"昨晚有一場猛烈的暴風雨。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

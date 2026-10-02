@@ -173,14 +173,14 @@
       "stemEn": "The food was good. ____, it was too expensive.",
       "stemZh": "食物很好吃，不過太貴了。",
       "options": [
-        "Therefore",
-        "Instead",
+        "Together",
+        "Tomorrow",
         "Besides",
         "However"
       ],
       "optionGlossZh": [
-        "因此",
-        "反而",
+        "一起",
+        "明天",
         "此外",
         "然而"
       ],
@@ -290,6 +290,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"城市正中心的大樓裡\"（原 \"城市的正中心\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：Therefore、Instead 超範圍，改 Usually、Also（皆副詞，可放句首）",
+        "resolution": "改為 [\"Usually\", \"Also\", \"Besides\", \"However\"]（原 [\"Therefore\", \"Instead\", \"Besides\", \"However\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：Therefore、Instead 超範圍，改 Usually、Also（皆副詞，可放句首）",
+        "resolution": "改為 [\"通常\", \"也\", \"此外\", \"然而\"]（原 [\"因此\", \"反而\", \"此外\", \"然而\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；每課至少一題四選項同詞性：The food was good. Also, it was too expensive.／Usually, it was too expensive. 只看英文都說得通；換成 Together、Tomorrow（Tomorrow 與過去式 was 衝突），文法通但語意不通",
+        "resolution": "改為 [\"Together\", \"Tomorrow\", \"Besides\", \"However\"]（原 [\"Usually\", \"Also\", \"Besides\", \"However\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；每課至少一題四選項同詞性：The food was good. Also, it was too expensive.／Usually, it was too expensive. 只看英文都說得通；換成 Together、Tomorrow（Tomorrow 與過去式 was 衝突），文法通但語意不通",
+        "resolution": "改為 [\"一起\", \"明天\", \"此外\", \"然而\"]（原 [\"通常\", \"也\", \"此外\", \"然而\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

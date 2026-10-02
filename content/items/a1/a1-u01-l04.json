@@ -153,16 +153,16 @@
       "stemEn": "Would you like rice ____ bread?",
       "stemZh": "你想吃飯還是麵包？",
       "options": [
-        "as",
+        "of",
         "or",
-        "not",
-        "by"
+        "the",
+        "from"
       ],
       "optionGlossZh": [
-        "作為",
+        "⋯的",
         "或者；還是",
-        "不",
-        "搭乘"
+        "這個；那個",
+        "從"
       ],
       "answer": 1
     },
@@ -172,15 +172,15 @@
       "stemEn": "My mother works ____ a teacher.",
       "stemZh": "我媽媽的工作是老師。",
       "options": [
-        "can",
-        "what",
-        "or",
+        "in",
+        "at",
+        "by",
         "as"
       ],
       "optionGlossZh": [
-        "能",
-        "什麼",
-        "或者",
+        "在⋯裡面",
+        "在",
+        "經由",
         "作為；擔任"
       ],
       "answer": 3
@@ -309,6 +309,42 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「畫畫」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：as 是 q14 正解改 of；by 讓給 q14 改 from（of／from 文法可通）；避開 and、with（也通）",
+        "resolution": "改為 [\"of\", \"or\", \"not\", \"from\"]（原 [\"as\", \"or\", \"not\", \"by\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：as 是 q14 正解改 of；by 讓給 q14 改 from（of／from 文法可通）；避開 and、with（也通）",
+        "resolution": "改為 [\"⋯的\", \"或者；還是\", \"不\", \"從\"]（原 [\"作為\", \"或者；還是\", \"不\", \"搭乘\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：or 是 q13 正解；can、what 放不進空格；改 in、at、by 四選項皆介系詞；避開 with、for（也通）",
+        "resolution": "改為 [\"in\", \"at\", \"by\", \"as\"]（原 [\"can\", \"what\", \"or\", \"as\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：or 是 q13 正解；can、what 放不進空格；改 in、at、by 四選項皆介系詞；避開 with、for（也通）",
+        "resolution": "改為 [\"在⋯裡面\", \"在\", \"經由\", \"作為；擔任\"]（原 [\"能\", \"什麼\", \"或者\", \"作為；擔任\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：not 代入成 Would you like rice not bread?（要飯不要麵包）只看英文可成立；換成 the，rice the bread 文法不通",
+        "resolution": "改為 [\"of\", \"or\", \"the\", \"from\"]（原 [\"of\", \"or\", \"not\", \"from\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：not 代入成 Would you like rice not bread?（要飯不要麵包）只看英文可成立；換成 the，rice the bread 文法不通",
+        "resolution": "改為 [\"⋯的\", \"或者；還是\", \"這個；那個\", \"從\"]（原 [\"⋯的\", \"或者；還是\", \"不\", \"從\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

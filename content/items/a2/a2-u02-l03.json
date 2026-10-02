@@ -17,7 +17,7 @@
       "word": "daily",
       "exampleEn": "Walking is part of my daily life.",
       "exampleZh": "走路是我日常生活的一部分。",
-      "glossZh": "每天的；日常的",
+      "glossZh": "日常的；每天的",
       "distractorsZh": [
         "每週的",
         "偶爾的",
@@ -139,15 +139,15 @@
       "stemEn": "Because of the heavy rain, there was a two-hour ____.",
       "stemZh": "因為下大雨，延誤了兩個小時。",
       "options": [
-        "gradually",
+        "schedule",
         "delay",
-        "sudden",
+        "final",
         "daily"
       ],
       "optionGlossZh": [
-        "逐漸地",
+        "行程",
         "延誤",
-        "突然的",
+        "決賽",
         "每天的"
       ],
       "answer": 1
@@ -286,6 +286,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u02-l03-q09 目標第 3 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"Takes an English class\",\"Goes swimming at the pool\",\"Goes to work at the office\"]（原 [\"Takes an English class\",\"Goes swimming at the pool\",\"Goes to work\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"日常的；每天的\"（原 \"每天的；日常的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：gradually 與 q13 共用改 schedule；sudden 放不進 a two-hour ___ 改名詞 final，使兩個干擾項文法成立",
+        "resolution": "改為 [\"schedule\", \"delay\", \"final\", \"daily\"]（原 [\"gradually\", \"delay\", \"sudden\", \"daily\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：gradually 與 q13 共用改 schedule；sudden 放不進 a two-hour ___ 改名詞 final，使兩個干擾項文法成立",
+        "resolution": "改為 [\"行程\", \"延誤\", \"決賽\", \"每天的\"]（原 [\"逐漸地\", \"延誤\", \"突然的\", \"每天的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

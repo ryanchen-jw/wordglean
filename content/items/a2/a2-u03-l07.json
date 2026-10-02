@@ -67,8 +67,8 @@
       "id": "a2-u03-l07-q05",
       "type": "wordCard",
       "word": "quick",
-      "exampleEn": "Can I ask you a quick question?",
-      "exampleZh": "可以簡單問你一個問題嗎？",
+      "exampleEn": "Taking the train is the quickest way to get there.",
+      "exampleZh": "搭火車是去那裡最快的方法。",
       "glossZh": "快的；簡短的",
       "distractorsZh": [
         "慢的",
@@ -82,7 +82,7 @@
       "word": "sample",
       "exampleEn": "The shop gives free samples of its cookies.",
       "exampleZh": "這家店提供免費的餅乾試吃。",
-      "glossZh": "樣品；試用品",
+      "glossZh": "試用品；樣品",
       "distractorsZh": [
         "收據",
         "包裝",
@@ -152,15 +152,15 @@
       "stemEn": "Everything is ____ today. Nothing strange happened.",
       "stemZh": "今天一切正常，沒發生什麼奇怪的事。",
       "options": [
-        "slowly",
+        "quick",
         "normal",
-        "sample",
+        "noisy",
         "wood"
       ],
       "optionGlossZh": [
-        "慢慢地",
+        "快的",
         "正常的",
-        "樣品",
+        "吵鬧的",
         "木頭"
       ],
       "answer": 1
@@ -173,13 +173,13 @@
       "options": [
         "fit",
         "soft",
-        "normal",
+        "popular",
         "slow"
       ],
       "optionGlossZh": [
         "健康的",
         "柔軟的",
-        "正常的",
+        "受歡迎的",
         "慢的"
       ],
       "answer": 0
@@ -317,6 +317,48 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"先幫每個玩具上好顏色\"（原 \"幫玩具上色\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「快的」；與 q11 跟讀（quick lunch 在桌前）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Taking the train is the quickest way to get there.\"（原 \"Can I ask you a quick question?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「快的」；與 q11 跟讀（quick lunch 在桌前）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"搭火車是去那裡最快的方法。\"（原 \"可以簡單問你一個問題嗎？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"試用品；樣品\"（原 \"樣品；試用品\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：slowly、sample 放不進 Everything is ___，改本單元形容詞 quick、noisy",
+        "resolution": "改為 [\"quick\", \"normal\", \"noisy\", \"wood\"]（原 [\"slowly\", \"normal\", \"sample\", \"wood\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：slowly、sample 放不進 Everything is ___，改本單元形容詞 quick、noisy",
+        "resolution": "改為 [\"快的\", \"正常的\", \"吵鬧的\", \"木頭\"]（原 [\"慢慢地\", \"正常的\", \"樣品\", \"木頭\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：normal 是 q13 正解，改本單元 popular",
+        "resolution": "改為 [\"fit\", \"soft\", \"popular\", \"slow\"]（原 [\"fit\", \"soft\", \"normal\", \"slow\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：normal 是 q13 正解，改本單元 popular",
+        "resolution": "改為 [\"健康的\", \"柔軟的\", \"受歡迎的\", \"慢的\"]（原 [\"健康的\", \"柔軟的\", \"正常的\", \"慢的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

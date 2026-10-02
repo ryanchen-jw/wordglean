@@ -14,8 +14,8 @@
       "id": "a2-u26-l02-q01",
       "type": "wordCard",
       "word": "function",
-      "exampleEn": "This room functions as a library.",
-      "exampleZh": "這個房間被當作圖書室使用。",
+      "exampleEn": "The old clock still functions after a hundred years.",
+      "exampleZh": "那座老時鐘過了一百年還能運作。",
       "glossZh": "運作；起作用；（作為…）使用",
       "distractorsZh": [
         "休息",
@@ -171,15 +171,15 @@
       "stemZh": "我們花了一整個下午探索老城區。",
       "options": [
         "exploring",
-        "instrument",
-        "tie",
-        "search"
+        "destroying",
+        "burning",
+        "gathering"
       ],
       "optionGlossZh": [
         "探索",
-        "樂器",
-        "領帶",
-        "搜尋"
+        "破壞",
+        "燒",
+        "聚集"
       ],
       "answer": 0
     },
@@ -304,6 +304,30 @@
         "message": "執行長最終複審修正：中譯配合英文修改",
         "resolution": "改為 \"上週六，我妹妹的貓不見了。我們馬上開始找。我們的貓常常跑出去到處探索，所以我們走遍家附近的每一條街，爸爸還提醒我們看看車子底下。到了傍晚，我們在我的音樂房裡找到那隻走失的貓。牠正睡在我舊樂器——一把吉他——的盒子裡！爸爸笑著說：「下次我們先在家裡找吧。」\"（原 \"上週六，我妹妹的貓不見了。我們的貓常常跑出去到處探索，所以我們馬上開始找。我們走遍家附近的每一條街，爸爸還提醒我們看看車子底下。到了傍晚，我們在我的音樂房裡找到那隻走失的貓。牠正睡在我舊樂器——一把吉他——的盒子裡！爸爸笑著說：「下次我們先在家裡找吧。」\"）",
         "resolvedAt": "2026-10-02T19:13:41Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「運作」；與 q12（手機在冷天運作不良）換了主詞＋情境＋句型（肯定句）。",
+        "resolution": "改為 \"The old clock still functions after a hundred years.\"（原 \"This room functions as a library.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「運作」；與 q12（手機在冷天運作不良）換了主詞＋情境＋句型（肯定句）。",
+        "resolution": "改為 \"那座老時鐘過了一百年還能運作。\"（原 \"這個房間被當作圖書室使用。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：tie 是 q13 正解、instrument、search 與 q13 共用，改本單元動詞 -ing 形，四選項同詞性",
+        "resolution": "改為 [\"exploring\", \"destroying\", \"burning\", \"gathering\"]（原 [\"exploring\", \"instrument\", \"tie\", \"search\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：tie 是 q13 正解、instrument、search 與 q13 共用，改本單元動詞 -ing 形，四選項同詞性",
+        "resolution": "改為 [\"探索\", \"破壞\", \"燒\", \"聚集\"]（原 [\"探索\", \"樂器\", \"領帶\", \"搜尋\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

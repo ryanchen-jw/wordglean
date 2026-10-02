@@ -172,14 +172,14 @@
       "stemZh": "我的手臂好痛，搬不動這個箱子。",
       "options": [
         "hurts",
-        "doctor",
-        "brain",
+        "smells",
+        "lives",
         "shoulder"
       ],
       "optionGlossZh": [
         "痛",
-        "醫生",
-        "大腦",
+        "發出氣味",
+        "活著",
         "肩膀"
       ],
       "answer": 0
@@ -414,6 +414,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u13-l02-q15#1 目標第 2 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"去游泳池游泳\",\"待在家裡、早點睡\",\"明天繼續去球場踢球\"]（原 [\"去游泳\",\"待在家裡、早點睡\",\"明天繼續去球場踢球\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原無干擾項放得進 My arm ____，doctor/brain 換動詞 smells/lives",
+        "resolution": "改為 [\"hurts\", \"smells\", \"lives\", \"shoulder\"]（原 [\"hurts\", \"doctor\", \"brain\", \"shoulder\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原無干擾項放得進 My arm ____，doctor/brain 換動詞 smells/lives",
+        "resolution": "改為 [\"痛\", \"發出氣味\", \"活著\", \"肩膀\"]（原 [\"痛\", \"醫生\", \"大腦\", \"肩膀\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

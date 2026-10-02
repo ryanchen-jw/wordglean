@@ -41,8 +41,8 @@
       "id": "a1-u01-l08-q03",
       "type": "wordCard",
       "word": "its",
-      "exampleEn": "The dog is playing with its ball.",
-      "exampleZh": "那隻狗在玩牠的球。",
+      "exampleEn": "The house is old, but its door is new.",
+      "exampleZh": "這間房子很舊，但它的門是新的。",
       "glossZh": "它的；牠的",
       "distractorsZh": [
         "他們的",
@@ -152,14 +152,14 @@
       "stemEn": "I stay home ____ it is raining.",
       "stemZh": "因為在下雨，所以我待在家裡。",
       "options": [
-        "these",
-        "then",
+        "so",
+        "or",
         "because",
         "how"
       ],
       "optionGlossZh": [
-        "這些",
-        "然後",
+        "所以",
+        "或者",
         "因為",
         "怎麼"
       ],
@@ -171,16 +171,16 @@
       "stemEn": "First I wash my hands, ____ I eat.",
       "stemZh": "我先洗手，然後吃東西。",
       "options": [
-        "these",
-        "its",
+        "when",
+        "if",
         "then",
-        "our"
+        "but"
       ],
       "optionGlossZh": [
-        "這些",
-        "它的",
+        "當⋯時",
+        "如果",
         "然後",
-        "我們的"
+        "但是"
       ],
       "answer": 2
     },
@@ -353,6 +353,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u01-l08-q15#0 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"跑到外面去花園玩\",\"在陽光下睡覺\",\"喝一碗牛奶\"]（原 [\"跑到外面去花園玩\",\"在陽光下睡覺\",\"喝牛奶\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 its＝它的（指物）；與 q15 閱讀（貓 Momo）換了主詞＋情境＋句型",
+        "resolution": "改為 \"The house is old, but its door is new.\"（原 \"The dog is playing with its ball.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 its＝它的（指物）；與 q15 閱讀（貓 Momo）換了主詞＋情境＋句型",
+        "resolution": "改為 \"這間房子很舊，但它的門是新的。\"（原 \"那隻狗在玩牠的球。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：these 與 q14 共用、then 是 q14 正解，改 so、or（文法可通、語意不對）；避開 when、if（也通）",
+        "resolution": "改為 [\"so\", \"or\", \"because\", \"how\"]（原 [\"these\", \"then\", \"because\", \"how\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：these 與 q14 共用、then 是 q14 正解，改 so、or（文法可通、語意不對）；避開 when、if（也通）",
+        "resolution": "改為 [\"所以\", \"或者\", \"因為\", \"怎麼\"]（原 [\"這些\", \"然後\", \"因為\", \"怎麼\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：these 與 q13 共用；its、our 放不進空格；改 when、if、but 四選項皆連接詞；避開 and、because",
+        "resolution": "改為 [\"when\", \"if\", \"then\", \"but\"]（原 [\"these\", \"its\", \"then\", \"our\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：these 與 q13 共用；its、our 放不進空格；改 when、if、but 四選項皆連接詞；避開 and、because",
+        "resolution": "改為 [\"當⋯時\", \"如果\", \"然後\", \"但是\"]（原 [\"這些\", \"它的\", \"然後\", \"我們的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

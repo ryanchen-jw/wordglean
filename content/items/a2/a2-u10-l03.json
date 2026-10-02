@@ -151,15 +151,15 @@
       "stemEn": "I'm so ____. Can I have a glass of water?",
       "stemZh": "我好渴，可以給我一杯水嗎？",
       "options": [
-        "sleepy",
+        "happy",
         "thirsty",
-        "angry",
+        "clever",
         "rich"
       ],
       "optionGlossZh": [
-        "想睡的",
+        "開心的",
         "口渴的",
-        "生氣的",
+        "聰明的",
         "有錢的"
       ],
       "answer": 1
@@ -170,13 +170,13 @@
       "stemEn": "Do you want some tomato ____ on your pasta?",
       "stemZh": "你的義大利麵要不要加一點番茄醬汁？",
       "options": [
-        "thirsty",
+        "plate",
         "diet",
         "beer",
         "sauce"
       ],
       "optionGlossZh": [
-        "口渴的",
+        "盤子",
         "飲食",
         "啤酒",
         "醬汁"
@@ -352,6 +352,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u10-l03-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"多吃魚和蔬菜、少用油和鹽\",\"晚餐改吃炸雞和薯條\",\"不再吃早餐了\"]（原 [\"多吃魚和蔬菜、少用油和鹽\",\"每天晚餐都改吃炸雞和薯條\",\"不再吃早餐\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：sleepy、rich 已在他課當非本單元干擾項，改 happy、sad（仍為形容詞，靠詞義排除）",
+        "resolution": "改為 [\"happy\", \"thirsty\", \"angry\", \"sad\"]（原 [\"sleepy\", \"thirsty\", \"angry\", \"rich\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：sleepy、rich 已在他課當非本單元干擾項，改 happy、sad（仍為形容詞，靠詞義排除）",
+        "resolution": "改為 [\"開心的\", \"口渴的\", \"生氣的\", \"難過的\"]（原 [\"想睡的\", \"口渴的\", \"生氣的\", \"有錢的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：thirsty 是 q13 正解，改本單元名詞 plate，四選項同為名詞",
+        "resolution": "改為 [\"plate\", \"diet\", \"beer\", \"sauce\"]（原 [\"thirsty\", \"diet\", \"beer\", \"sauce\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：thirsty 是 q13 正解，改本單元名詞 plate，四選項同為名詞",
+        "resolution": "改為 [\"盤子\", \"飲食\", \"啤酒\", \"醬汁\"]（原 [\"口渴的\", \"飲食\", \"啤酒\", \"醬汁\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：angry／sad 代入「I'm so angry/sad. Can I have a glass of water?」情境上說得通（情緒激動要杯水），換成 clever、rich：「I'm so rich. Can I have a glass of water?」文法通、因果不通",
+        "resolution": "改為 [\"happy\", \"thirsty\", \"clever\", \"rich\"]（原 [\"happy\", \"thirsty\", \"angry\", \"sad\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：angry／sad 代入「I'm so angry/sad. Can I have a glass of water?」情境上說得通（情緒激動要杯水），換成 clever、rich：「I'm so rich. Can I have a glass of water?」文法通、因果不通",
+        "resolution": "改為 [\"開心的\", \"口渴的\", \"聰明的\", \"有錢的\"]（原 [\"開心的\", \"口渴的\", \"生氣的\", \"難過的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

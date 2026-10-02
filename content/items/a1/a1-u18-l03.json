@@ -141,13 +141,13 @@
         "funny",
         "angry",
         "afraid",
-        "smart"
+        "happy"
       ],
       "optionGlossZh": [
         "好笑的",
         "生氣的",
         "害怕的",
-        "聰明的"
+        "快樂的"
       ],
       "answer": 2
     },
@@ -157,15 +157,15 @@
       "stemEn": "He is very ____. He always gets good grades.",
       "stemZh": "他很聰明，總是拿到好成績。",
       "options": [
-        "pleasure",
+        "interested",
         "smart",
-        "cry",
+        "alone",
         "surprise"
       ],
       "optionGlossZh": [
-        "榮幸",
+        "感興趣的",
         "聰明的",
-        "哭聲",
+        "獨自的",
         "驚喜"
       ],
       "answer": 1
@@ -309,6 +309,30 @@
         "message": "執行長第②③關裁示修正：第②關：選項同步",
         "resolution": "改前：\"嚇了一跳\"；改後：\"很害怕\"",
         "resolvedAt": "2026-10-02T12:45:39Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：smart 是 q13 正解改 happy",
+        "resolution": "改為 [\"funny\", \"angry\", \"afraid\", \"happy\"]（原 [\"funny\", \"angry\", \"afraid\", \"smart\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：smart 是 q13 正解改 happy",
+        "resolution": "改為 [\"好笑的\", \"生氣的\", \"害怕的\", \"快樂的\"]（原 [\"好笑的\", \"生氣的\", \"害怕的\", \"聰明的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pleasure、cry 為名詞放不進 very ____，改形容詞 interested、alone，使兩個干擾項文法成立",
+        "resolution": "改為 [\"interested\", \"smart\", \"alone\", \"surprise\"]（原 [\"pleasure\", \"smart\", \"cry\", \"surprise\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pleasure、cry 為名詞放不進 very ____，改形容詞 interested、alone，使兩個干擾項文法成立",
+        "resolution": "改為 [\"感興趣的\", \"聰明的\", \"獨自的\", \"驚喜\"]（原 [\"榮幸\", \"聰明的\", \"哭聲\", \"驚喜\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

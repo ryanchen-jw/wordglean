@@ -153,13 +153,13 @@
       "options": [
         "anxious",
         "peaceful",
-        "disappointed",
+        "grateful",
         "intelligent"
       ],
       "optionGlossZh": [
         "焦慮的",
         "平靜的",
-        "失望的",
+        "感激的",
         "聰明的"
       ],
       "answer": 1
@@ -172,13 +172,13 @@
       "options": [
         "happiness",
         "disappointed",
-        "confuse",
+        "excited",
         "pleasant"
       ],
       "optionGlossZh": [
         "幸福",
         "失望的",
-        "使困惑",
+        "興奮的",
         "愉快的"
       ],
       "answer": 1
@@ -280,6 +280,30 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點封閉清單",
         "resolution": "改為 \"「失望的」可寫，例如 disappointed 等\"（原 \"「失望的」可寫 disappointed\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：disappointed 是 q14 正解，改本課形容詞 grateful",
+        "resolution": "改為 [\"anxious\", \"peaceful\", \"grateful\", \"intelligent\"]（原 [\"anxious\", \"peaceful\", \"disappointed\", \"intelligent\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：disappointed 是 q14 正解，改本課形容詞 grateful",
+        "resolution": "改為 [\"焦慮的\", \"平靜的\", \"感激的\", \"聰明的\"]（原 [\"焦慮的\", \"平靜的\", \"失望的\", \"聰明的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：confuse 放不進 I was ___，改形容詞 excited，連同 pleasant 共兩個干擾項文法成立",
+        "resolution": "改為 [\"happiness\", \"disappointed\", \"excited\", \"pleasant\"]（原 [\"happiness\", \"disappointed\", \"confuse\", \"pleasant\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：confuse 放不進 I was ___，改形容詞 excited，連同 pleasant 共兩個干擾項文法成立",
+        "resolution": "改為 [\"幸福\", \"失望的\", \"興奮的\", \"愉快的\"]（原 [\"幸福\", \"失望的\", \"使困惑\", \"愉快的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

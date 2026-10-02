@@ -168,15 +168,15 @@
       "stemEn": "My new shoes are made of ____.",
       "stemZh": "我的新鞋是皮革做的。",
       "options": [
-        "precise",
+        "water",
         "leather",
-        "principal",
+        "weather",
         "differently"
       ],
       "optionGlossZh": [
-        "精確的",
+        "水",
         "皮革",
-        "主要的",
+        "天氣",
         "不同地"
       ],
       "answer": 1
@@ -266,6 +266,18 @@
         "message": "第②關：疑似：principal 在初中級最常用的是名詞「校長」，本課用形容詞「主要的」（the principal reason／the principal problem，偏正式、較高級用法）；請依 CEFR-J 該級詞性確認，若 A2 為名詞應改例句與釋義。",
         "resolution": "執行長裁示：教課綱該級列的詞性。principal 在 lexicon 是形容詞 A2、名詞 B2，維持形容詞「主要的」",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：precise、principal 放不進 made of ___，改名詞 water、weather（實作端複核：metal、paper 代入也成立，不用）",
+        "resolution": "改為 [\"water\", \"leather\", \"weather\", \"differently\"]（原 [\"precise\", \"leather\", \"principal\", \"differently\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：precise、principal 放不進 made of ___，改名詞 water、weather（實作端複核：metal、paper 代入也成立，不用）",
+        "resolution": "改為 [\"水\", \"皮革\", \"天氣\", \"不同地\"]（原 [\"精確的\", \"皮革\", \"主要的\", \"不同地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

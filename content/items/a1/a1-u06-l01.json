@@ -181,15 +181,15 @@
       "stemEn": "Please open the ____. Someone is here.",
       "stemZh": "請開門，有人來了。",
       "options": [
-        "vase",
+        "room",
         "towel",
-        "garbage",
+        "house",
         "door"
       ],
       "optionGlossZh": [
-        "花瓶",
+        "房間",
         "毛巾",
-        "垃圾",
+        "房子",
         "門"
       ],
       "answer": 3
@@ -346,6 +346,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"洗晚餐的碗\"（原 \"洗碗\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：vase、garbage 與 q14 共用，改同課名詞 room、house",
+        "resolution": "改為 [\"room\", \"towel\", \"house\", \"door\"]（原 [\"vase\", \"towel\", \"garbage\", \"door\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：vase、garbage 與 q14 共用，改同課名詞 room、house",
+        "resolution": "改為 [\"房間\", \"毛巾\", \"房子\", \"門\"]（原 [\"花瓶\", \"毛巾\", \"垃圾\", \"門\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

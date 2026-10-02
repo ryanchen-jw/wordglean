@@ -155,14 +155,14 @@
       "stemZh": "如果你遇到法律問題，就去找律師談。",
       "options": [
         "population",
-        "soldier",
-        "agency",
+        "window",
+        "doctor",
         "lawyer"
       ],
       "optionGlossZh": [
         "人口",
-        "士兵",
-        "代辦機構",
+        "窗戶",
+        "醫生",
         "律師"
       ],
       "answer": 3
@@ -277,6 +277,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u19-l02-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"一家旅行社\",\"飯店櫃台\",\"一位朋友\"]（原 [\"一家旅行社\",\"飯店的櫃台\",\"朋友\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：soldier 與 q14 共用改 teacher；agency 接 a 冠詞洩題改 doctor",
+        "resolution": "改為 [\"population\", \"teacher\", \"doctor\", \"lawyer\"]（原 [\"population\", \"soldier\", \"agency\", \"lawyer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：soldier 與 q14 共用改 teacher；agency 接 a 冠詞洩題改 doctor",
+        "resolution": "改為 [\"人口\", \"老師\", \"醫生\", \"律師\"]（原 [\"人口\", \"士兵\", \"代辦機構\", \"律師\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「If you have a problem with the law, talk to a teacher.」對學生而言勉強說得通，teacher 換成 window，「找窗戶談」語意不通",
+        "resolution": "改為 [\"population\", \"window\", \"doctor\", \"lawyer\"]（原 [\"population\", \"teacher\", \"doctor\", \"lawyer\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「If you have a problem with the law, talk to a teacher.」對學生而言勉強說得通，teacher 換成 window，「找窗戶談」語意不通",
+        "resolution": "改為 [\"人口\", \"窗戶\", \"醫生\", \"律師\"]（原 [\"人口\", \"老師\", \"醫生\", \"律師\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

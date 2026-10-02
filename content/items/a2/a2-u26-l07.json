@@ -139,15 +139,15 @@
       "stemZh": "我們在老市場裡逛了好幾個小時。",
       "options": [
         "wandered",
-        "swam",
+        "rained",
         "flew",
-        "begged"
+        "shone"
       ],
       "optionGlossZh": [
         "閒逛",
-        "游泳",
+        "下雨",
         "飛",
-        "乞求"
+        "發光"
       ],
       "answer": 0
     },
@@ -157,15 +157,15 @@
       "stemEn": "Hold on to the ____ and climb up slowly.",
       "stemZh": "抓緊繩子，慢慢往上爬。",
       "options": [
-        "shine",
+        "knock",
         "rope",
-        "invent",
+        "wave",
         "successfully"
       ],
       "optionGlossZh": [
-        "發光",
+        "敲擊聲",
         "繩子",
-        "發明",
+        "波浪",
         "成功地"
       ],
       "answer": 1
@@ -291,6 +291,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u26-l07-q14#1 目標第 1 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"一塊三明治\",\"一杯水\",\"一根骨頭\"]（原 [\"三明治\",\"水\",\"球\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：shine、invent 放不進 the ___，改本單元名詞 float、wave",
+        "resolution": "改為 [\"float\", \"rope\", \"wave\", \"successfully\"]（原 [\"shine\", \"rope\", \"invent\", \"successfully\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：shine、invent 放不進 the ___，改本單元名詞 float、wave",
+        "resolution": "改為 [\"浮板\", \"繩子\", \"波浪\", \"成功地\"]（原 [\"發光\", \"繩子\", \"發明\", \"成功地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；非本單元字不跨課重複當干擾項：「We begged around the old market for hours.」在市場乞討幾小時情境可成立，begged 換成 shone，「我們在市場發光」語意不通；swam 因 e5 補丁讓 a2-u16-l03 也用 swim 而跨課重複，改 rained（We rained around… 語意不通）",
+        "resolution": "改為 [\"wandered\", \"rained\", \"flew\", \"shone\"]（原 [\"wandered\", \"swam\", \"flew\", \"begged\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；非本單元字不跨課重複當干擾項：「We begged around the old market for hours.」在市場乞討幾小時情境可成立，begged 換成 shone，「我們在市場發光」語意不通；swam 因 e5 補丁讓 a2-u16-l03 也用 swim 而跨課重複，改 rained（We rained around… 語意不通）",
+        "resolution": "改為 [\"閒逛\", \"下雨\", \"飛\", \"發光\"]（原 [\"閒逛\", \"游泳\", \"飛\", \"乞求\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Hold on to the float and climb up slowly.」泳池抓著浮板爬上去說得通，float 換成 knock，「抓住敲擊聲」語意不通",
+        "resolution": "改為 [\"knock\", \"rope\", \"wave\", \"successfully\"]（原 [\"float\", \"rope\", \"wave\", \"successfully\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Hold on to the float and climb up slowly.」泳池抓著浮板爬上去說得通，float 換成 knock，「抓住敲擊聲」語意不通",
+        "resolution": "改為 [\"敲擊聲\", \"繩子\", \"波浪\", \"成功地\"]（原 [\"浮板\", \"繩子\", \"波浪\", \"成功地\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

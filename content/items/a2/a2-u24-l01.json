@@ -51,8 +51,8 @@
       "id": "a2-u24-l01-q04",
       "type": "wordCard",
       "word": "effect",
-      "exampleEn": "Special effects make this movie exciting.",
-      "exampleZh": "特效讓這部電影很刺激。",
+      "exampleEn": "Her kind words had a big effect on me.",
+      "exampleZh": "她親切的話對我影響很大。",
       "glossZh": "影響；效果",
       "distractorsZh": [
         "原因",
@@ -64,8 +64,8 @@
       "id": "a2-u24-l01-q05",
       "type": "wordCard",
       "word": "develop",
-      "exampleEn": "She developed a love of music at a young age.",
-      "exampleZh": "她從小就培養出對音樂的熱愛。",
+      "exampleEn": "The small shop slowly developed into a big business.",
+      "exampleZh": "那家小店慢慢發展成一家大公司。",
       "glossZh": "發展；培養；開發",
       "distractorsZh": [
         "失去",
@@ -152,13 +152,13 @@
         "situation",
         "force",
         "source",
-        "chance"
+        "cause"
       ],
       "optionGlossZh": [
         "情況",
         "力量",
         "來源",
-        "機會"
+        "原因"
       ],
       "answer": 1
     },
@@ -170,14 +170,14 @@
       "options": [
         "impact",
         "develop",
-        "power",
-        "situation"
+        "explain",
+        "describe"
       ],
       "optionGlossZh": [
         "影響",
         "培養",
-        "電力",
-        "情況"
+        "解釋",
+        "描述"
       ],
       "answer": 1
     },
@@ -278,6 +278,66 @@
         "message": "執行長裁示：正解長度名次分布：a2-u24-l01-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"更多在工廠上班的工人\",\"一個蓋新工廠的地方\",\"更乾淨的電力來源\"]（原 [\"更多在工廠上班的工人\",\"新的工廠\",\"更乾淨的電力來源\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"效果；影響\"（原 \"影響；效果\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「發展」；與 q15 閱讀（小鎮因工廠快速發展）換了主詞＋情境＋句型（develop into）。",
+        "resolution": "改為 \"The small shop slowly developed into a big business.\"（原 \"She developed a love of music at a young age.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「發展」；與 q15 閱讀（小鎮因工廠快速發展）換了主詞＋情境＋句型（develop into）。",
+        "resolution": "改為 \"那家小店慢慢發展成一家大公司。\"（原 \"她從小就培養出對音樂的熱愛。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：chance 為下一課字超範圍，改本課 cause",
+        "resolution": "改為 [\"situation\", \"force\", \"source\", \"cause\"]（原 [\"situation\", \"force\", \"source\", \"chance\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：chance 為下一課字超範圍，改本課 cause",
+        "resolution": "改為 [\"情況\", \"力量\", \"來源\", \"原因\"]（原 [\"情況\", \"力量\", \"來源\", \"機會\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：situation 與 q13 共用、power 放不進 helps children ___，改動詞 explain、describe",
+        "resolution": "改為 [\"impact\", \"develop\", \"explain\", \"describe\"]（原 [\"impact\", \"develop\", \"power\", \"situation\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：situation 與 q13 共用、power 放不進 helps children ___，改動詞 explain、describe",
+        "resolution": "改為 [\"影響\", \"培養\", \"解釋\", \"描述\"]（原 [\"影響\", \"培養\", \"電力\", \"情況\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"影響；效果\"（原 \"效果；影響\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"Her kind words had a big effect on me.\"（原 \"Special effects make this movie exciting.\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"她親切的話對我影響很大。\"（原 \"特效讓這部電影很刺激。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

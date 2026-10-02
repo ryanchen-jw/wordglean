@@ -140,14 +140,14 @@
       "stemEn": "Let's go ____ in the old town this afternoon.",
       "stemZh": "我們今天下午去老城區觀光吧。",
       "options": [
-        "roundabout",
-        "petrol",
+        "tonight",
+        "abroad",
         "tram",
         "sightseeing"
       ],
       "optionGlossZh": [
-        "圓環",
-        "汽油",
+        "今晚",
+        "到國外",
         "路面電車",
         "觀光"
       ],
@@ -159,16 +159,16 @@
       "stemEn": "The car needs ____. Let's stop at the next town.",
       "stemZh": "車子需要加油了，我們在下一個城鎮停一下吧。",
       "options": [
-        "guidebook",
-        "spaceship",
+        "traffic",
+        "adventure",
         "petrol",
-        "sightseeing"
+        "speed"
       ],
       "optionGlossZh": [
-        "旅遊指南",
-        "太空船",
+        "交通",
+        "冒險",
         "汽油",
-        "觀光"
+        "速度"
       ],
       "answer": 2
     },
@@ -341,6 +341,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u13-l04-q14#1 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"在高速公路上被警察攔了下來\",\"車子在停車場倒車時撞到了牆\",\"不太會走圓環，還差點沒油\"]（原 [\"在高速公路上被警察攔下來\",\"車子撞到牆\",\"不太會走圓環，還差點沒油\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：petrol 是 q13 正解；原本干擾項都放不進 go ____，roundabout、petrol 改副詞 downtown、abroad（能代入、與 in the old town 矛盾而排除）",
+        "resolution": "改為 [\"downtown\", \"abroad\", \"tram\", \"sightseeing\"]（原 [\"roundabout\", \"petrol\", \"tram\", \"sightseeing\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：petrol 是 q13 正解；原本干擾項都放不進 go ____，roundabout、petrol 改副詞 downtown、abroad（能代入、與 in the old town 矛盾而排除）",
+        "resolution": "改為 [\"往市中心\", \"到國外\", \"路面電車\", \"觀光\"]（原 [\"圓環\", \"汽油\", \"路面電車\", \"觀光\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sightseeing 是 q12 正解；guidebook、spaceship 為可數單數放不進 needs ____，改不可數名詞 traffic、adventure、speed，成四選項同詞性且都能代入",
+        "resolution": "改為 [\"traffic\", \"adventure\", \"petrol\", \"speed\"]（原 [\"guidebook\", \"spaceship\", \"petrol\", \"sightseeing\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sightseeing 是 q12 正解；guidebook、spaceship 為可數單數放不進 needs ____，改不可數名詞 traffic、adventure、speed，成四選項同詞性且都能代入",
+        "resolution": "改為 [\"交通\", \"冒險\", \"汽油\", \"速度\"]（原 [\"旅遊指南\", \"太空船\", \"汽油\", \"觀光\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：downtown 代入「Let's go downtown in the old town this afternoon.」英文說得通（老城區可能就是市中心），換成 tonight：「go tonight ... this afternoon」時間自相矛盾，語意不通",
+        "resolution": "改為 [\"tonight\", \"abroad\", \"tram\", \"sightseeing\"]（原 [\"downtown\", \"abroad\", \"tram\", \"sightseeing\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：downtown 代入「Let's go downtown in the old town this afternoon.」英文說得通（老城區可能就是市中心），換成 tonight：「go tonight ... this afternoon」時間自相矛盾，語意不通",
+        "resolution": "改為 [\"今晚\", \"到國外\", \"路面電車\", \"觀光\"]（原 [\"往市中心\", \"到國外\", \"路面電車\", \"觀光\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

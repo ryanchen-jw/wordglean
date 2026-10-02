@@ -53,7 +53,7 @@
       "word": "toilet",
       "exampleEn": "Where is the toilet?",
       "exampleZh": "廁所在哪裡？",
-      "glossZh": "馬桶；廁所",
+      "glossZh": "廁所；馬桶",
       "distractorsZh": [
         "廚房",
         "樓梯",
@@ -171,13 +171,13 @@
         "toilet",
         "dining room",
         "bucket",
-        "saw"
+        "bathroom"
       ],
       "optionGlossZh": [
         "馬桶",
         "飯廳",
         "水桶",
-        "鋸子"
+        "浴室；廁所"
       ],
       "answer": 1
     },
@@ -362,6 +362,24 @@
         "message": "執行長裁示：正解長度名次分布：a1-u06-l05-q10 目標第 3 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"Under the table\",\"On the old couch\",\"On the kitchen chair\"]（原 [\"Under the table\",\"On the old couch\",\"In the toilet\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"廁所；馬桶\"（原 \"馬桶；廁所\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：saw 與 q13 共用，改同單元名詞 bathroom；避開 living room、kitchen（也通）",
+        "resolution": "改為 [\"toilet\", \"dining room\", \"bucket\", \"bathroom\"]（原 [\"toilet\", \"dining room\", \"bucket\", \"saw\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：saw 與 q13 共用，改同單元名詞 bathroom；避開 living room、kitchen（也通）",
+        "resolution": "改為 [\"馬桶\", \"飯廳\", \"水桶\", \"浴室；廁所\"]（原 [\"馬桶\", \"飯廳\", \"水桶\", \"鋸子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

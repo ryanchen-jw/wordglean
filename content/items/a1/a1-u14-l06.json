@@ -152,16 +152,16 @@
       "stemEn": "I read about the game in the ____.",
       "stemZh": "我在報紙上讀到這場比賽的消息。",
       "options": [
-        "coach",
+        "video",
         "newspaper",
         "camp",
-        "fan"
+        "song"
       ],
       "optionGlossZh": [
-        "教練",
+        "影片",
         "報紙",
         "營隊",
-        "粉絲"
+        "歌曲"
       ],
       "answer": 1
     },
@@ -305,6 +305,18 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Mr\",\"Wu\",\"Japanese\"]；改後：[\"Wu\",\"Japanese\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：coach 是 q14 正解、fan 與 q14 共用，換 video/song",
+        "resolution": "改為 [\"video\", \"newspaper\", \"camp\", \"song\"]（原 [\"coach\", \"newspaper\", \"camp\", \"fan\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：coach 是 q14 正解、fan 與 q14 共用，換 video/song",
+        "resolution": "改為 [\"影片\", \"報紙\", \"營隊\", \"歌曲\"]（原 [\"教練\", \"報紙\", \"營隊\", \"粉絲\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

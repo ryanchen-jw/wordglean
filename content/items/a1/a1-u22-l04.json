@@ -107,7 +107,7 @@
       "word": "festival",
       "exampleEn": "There is a music festival in the park.",
       "exampleZh": "公園裡有一場音樂節。",
-      "glossZh": "節日；慶典",
+      "glossZh": "慶典；節日",
       "distractorsZh": [
         "比賽",
         "課程",
@@ -172,13 +172,13 @@
       "options": [
         "bat",
         "guitar",
-        "ghost",
+        "piano",
         "contest"
       ],
       "optionGlossZh": [
         "球棒",
         "吉他",
-        "鬼",
+        "鋼琴",
         "比賽"
       ],
       "answer": 0
@@ -286,6 +286,24 @@
         "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
         "resolution": "改前：[\"Chinese\",\"New\",\"Year\"]；改後：[\"Chinese\"]",
         "resolvedAt": "2026-10-02T13:22:47Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"慶典；節日\"（原 \"節日；慶典\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：ghost 與 q13 共用改 piano",
+        "resolution": "改為 [\"bat\", \"guitar\", \"piano\", \"contest\"]（原 [\"bat\", \"guitar\", \"ghost\", \"contest\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：ghost 與 q13 共用改 piano",
+        "resolution": "改為 [\"球棒\", \"吉他\", \"鋼琴\", \"比賽\"]（原 [\"球棒\", \"吉他\", \"鬼\", \"比賽\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

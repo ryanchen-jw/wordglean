@@ -94,7 +94,7 @@
       "word": "soft drink",
       "exampleEn": "This shop sells soft drinks and ice cream.",
       "exampleZh": "這家店賣汽水和冰淇淋。",
-      "glossZh": "不含酒精的飲料；汽水",
+      "glossZh": "汽水；不含酒精的飲料",
       "distractorsZh": [
         "啤酒",
         "熱湯",
@@ -138,13 +138,13 @@
       "stemEn": "I'm thirsty. Can I have a bottle of ____?",
       "stemZh": "我好渴，可以給我一瓶礦泉水嗎？",
       "options": [
-        "fast food",
+        "spaghetti",
         "olive oil",
         "main course",
         "mineral water"
       ],
       "optionGlossZh": [
-        "速食",
+        "義大利麵",
         "橄欖油",
         "主菜",
         "礦泉水"
@@ -157,16 +157,16 @@
       "stemEn": "Would you like a ____ with your burger?",
       "stemZh": "你的漢堡要不要配一杯可樂？",
       "options": [
-        "olive oil",
+        "barbecue",
         "cola",
         "fast food",
-        "main course"
+        "tablespoon"
       ],
       "optionGlossZh": [
-        "橄欖油",
+        "烤肉",
         "可樂",
         "速食",
-        "主菜"
+        "大湯匙"
       ],
       "answer": 1
     },
@@ -333,6 +333,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u10-l09-q14#1 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"一個大大的歐姆蛋\",\"一份五分熟的牛排\",\"用橄欖油煮的魚\"]（原 [\"歐姆蛋\",\"一份五分熟的牛排\",\"用橄欖油煮的魚\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"汽水；不含酒精的飲料\"（原 \"不含酒精的飲料；汽水\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：三個干擾項全與 q13 共用；fast food 改本單元字 spaghetti，olive oil、main course 留在本題、q13 另換",
+        "resolution": "改為 [\"spaghetti\", \"olive oil\", \"main course\", \"mineral water\"]（原 [\"fast food\", \"olive oil\", \"main course\", \"mineral water\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：三個干擾項全與 q13 共用；fast food 改本單元字 spaghetti，olive oil、main course 留在本題、q13 另換",
+        "resolution": "改為 [\"義大利麵\", \"橄欖油\", \"主菜\", \"礦泉水\"]（原 [\"速食\", \"橄欖油\", \"主菜\", \"礦泉水\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：olive oil、main course 與 q12 共用，改本單元字 barbecue、tablespoon；fast food 已自 q12 移除",
+        "resolution": "改為 [\"barbecue\", \"cola\", \"fast food\", \"tablespoon\"]（原 [\"olive oil\", \"cola\", \"fast food\", \"main course\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：olive oil、main course 與 q12 共用，改本單元字 barbecue、tablespoon；fast food 已自 q12 移除",
+        "resolution": "改為 [\"烤肉\", \"可樂\", \"速食\", \"大湯匙\"]（原 [\"橄欖油\", \"可樂\", \"速食\", \"主菜\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

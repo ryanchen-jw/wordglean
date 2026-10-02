@@ -153,16 +153,16 @@
       "stemEn": "Our plane will ____ in Taipei in one hour.",
       "stemZh": "我們的飛機一小時後會在台北降落。",
       "options": [
-        "seek",
+        "fall",
         "land",
         "produce",
-        "represent"
+        "continue"
       ],
       "optionGlossZh": [
-        "尋找",
+        "落下",
         "降落",
         "生產",
-        "代表"
+        "繼續"
       ],
       "answer": 1
     },
@@ -174,13 +174,13 @@
       "options": [
         "hits",
         "seeks",
-        "lands",
+        "pulls",
         "represents"
       ],
       "optionGlossZh": [
         "打",
         "尋找",
-        "降落",
+        "拉",
         "代表"
       ],
       "answer": 3
@@ -295,6 +295,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u04-l05-q15#1 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"很大，還有很軟的布料椅墊\",\"可以摺起來，放進小車子裡\",\"簡單，有堅固的木頭底座\"]（原 [\"很大，有很軟的布料椅墊\",\"可以摺起來\",\"簡單，有堅固的木頭底座\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：seek 與 q14 共用、represent 是 q14 正解，改本單元 fall、continue",
+        "resolution": "改為 [\"fall\", \"land\", \"produce\", \"continue\"]（原 [\"seek\", \"land\", \"produce\", \"represent\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：seek 與 q14 共用、represent 是 q14 正解，改本單元 fall、continue",
+        "resolution": "改為 [\"落下\", \"降落\", \"生產\", \"繼續\"]（原 [\"尋找\", \"降落\", \"生產\", \"代表\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lands 是 q13 正解，改本單元 pulls",
+        "resolution": "改為 [\"hits\", \"seeks\", \"pulls\", \"represents\"]（原 [\"hits\", \"seeks\", \"lands\", \"represents\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lands 是 q13 正解，改本單元 pulls",
+        "resolution": "改為 [\"打\", \"尋找\", \"拉\", \"代表\"]（原 [\"打\", \"尋找\", \"降落\", \"代表\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

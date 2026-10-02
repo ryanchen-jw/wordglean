@@ -149,13 +149,13 @@
       "stemEn": "The children ____ behind the door. Can you find them?",
       "stemZh": "孩子們躲在門後面，你找得到他們嗎？",
       "options": [
-        "blow",
+        "jump",
         "hide",
         "judge",
         "feed"
       ],
       "optionGlossZh": [
-        "吹",
+        "跳",
         "躲藏",
         "評斷",
         "餵"
@@ -168,14 +168,14 @@
       "stemEn": "The wind ____ the leaves around the yard.",
       "stemZh": "風把葉子吹得滿院子都是。",
       "options": [
-        "judges",
-        "hides",
+        "kills",
+        "fills",
         "blows",
         "climbs"
       ],
       "optionGlossZh": [
-        "評斷",
-        "躲藏",
+        "殺死",
+        "裝滿",
         "吹",
         "攀爬"
       ],
@@ -404,6 +404,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u23-l05-q15#1 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"院子的樹上\",\"房子下面的洞裡\",\"叔叔外套的口袋裡\"]（原 [\"樹上\",\"房子下面的洞裡\",\"叔叔的口袋裡\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：blow 是 q14 正解改 jump；judge 留本題",
+        "resolution": "改為 [\"jump\", \"hide\", \"judge\", \"feed\"]（原 [\"blow\", \"hide\", \"judge\", \"feed\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：blow 是 q14 正解改 jump；judge 留本題",
+        "resolution": "改為 [\"跳\", \"躲藏\", \"評斷\", \"餵\"]（原 [\"吹\", \"躲藏\", \"評斷\", \"餵\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hides 是 q13 正解、judges 與 q13 共用，改 kills、fills（避開 carries、pushes 也通）",
+        "resolution": "改為 [\"kills\", \"fills\", \"blows\", \"climbs\"]（原 [\"judges\", \"hides\", \"blows\", \"climbs\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hides 是 q13 正解、judges 與 q13 共用，改 kills、fills（避開 carries、pushes 也通）",
+        "resolution": "改為 [\"殺死\", \"裝滿\", \"吹\", \"攀爬\"]（原 [\"評斷\", \"躲藏\", \"吹\", \"攀爬\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

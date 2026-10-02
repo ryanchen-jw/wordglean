@@ -16,7 +16,7 @@
       "word": "overseas",
       "exampleEn": "Many students go overseas to study.",
       "exampleZh": "很多學生出國念書。",
-      "glossZh": "在海外；到國外",
+      "glossZh": "到國外；在海外",
       "distractorsZh": [
         "在國內",
         "在鄉下",
@@ -172,14 +172,14 @@
       "options": [
         "Pacific",
         "overseas",
-        "crown",
-        "queen"
+        "royal",
+        "national"
       ],
       "optionGlossZh": [
         "太平洋的",
         "在海外",
-        "王冠",
-        "女王"
+        "皇家的",
+        "國家的"
       ],
       "answer": 0
     },
@@ -334,6 +334,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節",
         "resolution": "改為 \"In the garden outside\"（原 \"In the garden\"）",
         "resolvedAt": "2026-10-02T17:42:01Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"到國外；在海外\"（原 \"在海外；到國外\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：crown、queen 與 q13 共用且放不進 the ____ coast 形容詞位置，改本單元形容詞 royal、national",
+        "resolution": "改為 [\"Pacific\", \"overseas\", \"royal\", \"national\"]（原 [\"Pacific\", \"overseas\", \"crown\", \"queen\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：crown、queen 與 q13 共用且放不進 the ____ coast 形容詞位置，改本單元形容詞 royal、national",
+        "resolution": "改為 [\"太平洋的\", \"在海外\", \"皇家的\", \"國家的\"]（原 [\"太平洋的\", \"在海外\", \"王冠\", \"女王\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

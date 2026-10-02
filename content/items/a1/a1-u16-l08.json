@@ -138,16 +138,16 @@
       "stemEn": "The ____ of four and six is ten.",
       "stemZh": "四加六的和是十。",
       "options": [
-        "pen",
+        "list",
         "sum",
         "sentence",
-        "suggestion"
+        "question"
       ],
       "optionGlossZh": [
-        "筆",
+        "清單",
         "總和",
         "句子",
-        "建議"
+        "問題"
       ],
       "answer": 1
     },
@@ -157,13 +157,13 @@
       "stemEn": "Thank you for your ____. It is a good idea.",
       "stemZh": "謝謝你的建議，這是個好主意。",
       "options": [
-        "sum",
+        "desk",
         "math",
         "pen",
         "suggestion"
       ],
       "optionGlossZh": [
-        "總和",
+        "書桌",
         "數學",
         "筆",
         "建議"
@@ -309,6 +309,30 @@
         "message": "執行長第②③關裁示修正：第②③關 FIX",
         "resolution": "改前：\"ideal 放在名詞前面（例如 an ideal place；母音開頭用 an）\"；改後：\"ideal 可放在名詞前（例如 an ideal place；母音開頭用 an），也可放在 be 動詞後（例如 This place is ideal.）\"",
         "resolvedAt": "2026-10-02T12:42:19Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：pen 與 q13 共用改 list；suggestion 是 q13 正解改 question",
+        "resolution": "改為 [\"list\", \"sum\", \"sentence\", \"question\"]（原 [\"pen\", \"sum\", \"sentence\", \"suggestion\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：pen 與 q13 共用改 list；suggestion 是 q13 正解改 question",
+        "resolution": "改為 [\"清單\", \"總和\", \"句子\", \"問題\"]（原 [\"筆\", \"總和\", \"句子\", \"建議\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sum 是 q12 正解改 desk；pen 留本題、q12 改掉",
+        "resolution": "改為 [\"desk\", \"math\", \"pen\", \"suggestion\"]（原 [\"sum\", \"math\", \"pen\", \"suggestion\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sum 是 q12 正解改 desk；pen 留本題、q12 改掉",
+        "resolution": "改為 [\"書桌\", \"數學\", \"筆\", \"建議\"]（原 [\"總和\", \"數學\", \"筆\", \"建議\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

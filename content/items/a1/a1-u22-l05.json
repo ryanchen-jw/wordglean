@@ -157,13 +157,13 @@
       "stemEn": "The king's son is a ____.",
       "stemZh": "國王的兒子是王子。",
       "options": [
-        "cartoon",
+        "concert",
         "doll",
         "opera",
         "prince"
       ],
       "optionGlossZh": [
-        "卡通",
+        "音樂會",
         "洋娃娃",
         "歌劇",
         "王子"
@@ -261,6 +261,18 @@
         "message": "執行長第②③關裁示修正：第②③關 FIX：中譯不加「每個人都不一樣」；b3 裁示：自然複用 u21 形容詞",
         "resolution": "改前：\"Amy 家裡每個人喜歡的東西都不一樣。奶奶喜歡歌劇；爸爸看奧運，也很愛游泳；妹妹玩洋娃娃、看卡通；Amy 喜歡跳舞。她最喜歡的故事是關於一位在盛大派對上跳舞的王子。\"；改後：\"Amy 一家人喜歡很多東西。奶奶喜歡歌劇；爸爸看奧運，也很愛游泳；妹妹玩穿粉紅洋裝的洋娃娃、看卡通；Amy 喜歡跳舞。她最喜歡的故事是關於一位在盛大派對上跳舞的王子。\"",
         "resolvedAt": "2026-10-02T13:22:49Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：cartoon 是 q12 正解改 concert（避開 actor、singer、musician 也通）",
+        "resolution": "改為 [\"concert\", \"doll\", \"opera\", \"prince\"]（原 [\"cartoon\", \"doll\", \"opera\", \"prince\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：cartoon 是 q12 正解改 concert（避開 actor、singer、musician 也通）",
+        "resolution": "改為 [\"音樂會\", \"洋娃娃\", \"歌劇\", \"王子\"]（原 [\"卡通\", \"洋娃娃\", \"歌劇\", \"王子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

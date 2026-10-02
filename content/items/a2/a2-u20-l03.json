@@ -53,8 +53,8 @@
       "id": "a2-u20-l03-q04",
       "type": "wordCard",
       "word": "tape",
-      "exampleEn": "My grandfather still listens to old music tapes.",
-      "exampleZh": "我爺爺還在聽舊的音樂錄音帶。",
+      "exampleEn": "I put the poster on the wall with tape.",
+      "exampleZh": "我用膠帶把海報貼在牆上。",
       "glossZh": "膠帶；錄音帶",
       "distractorsZh": [
         "剪刀",
@@ -152,15 +152,15 @@
       "stemZh": "老師給了我一些關於作文的好建議。",
       "options": [
         "advice",
-        "tape",
+        "sound",
         "silence",
-        "context"
+        "screen"
       ],
       "optionGlossZh": [
         "建議",
-        "膠帶",
+        "聲音",
         "安靜",
-        "上下文"
+        "螢幕"
       ],
       "answer": 0
     },
@@ -268,6 +268,42 @@
         "message": "執行長第②③關裁示修正：第②關：中譯多加原文沒有的資訊「（雨下得很大）」——等於把短文答案直接解釋給讀者；若要保留建議另做註解，不放在譯文中。",
         "resolution": "改為 \"學英文不只是背單字。上週，老師給我們看了一段短片。片中有個男人說：「It's raining cats and dogs!」一開始，全班一片安靜。接著老師給了我們一個建議：「看上下文。影片裡的天氣怎麼樣？」我們馬上就懂了這個說法。現在我們每天都用免費軟體學一個新說法。\"（原 \"學英文不只是背單字。上週，老師給我們看了一段短片。片中有個男人說：「It's raining cats and dogs!」一開始，全班一片安靜。接著老師給了我們一個建議：「看上下文。影片裡的天氣怎麼樣？」我們馬上就懂了這個說法（雨下得很大）。現在我們每天都用免費軟體學一個新說法。\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「膠帶」；同課僅 mcq 題，與原錄音帶例句換了情境＋句型。",
+        "resolution": "改為 \"I put the poster on the wall with tape.\"（原 \"My grandfather still listens to old music tapes.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「膠帶」；同課僅 mcq 題，與原錄音帶例句換了情境＋句型。",
+        "resolution": "改為 \"我用膠帶把海報貼在牆上。\"（原 \"我爺爺還在聽舊的音樂錄音帶。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tape 是 q14 正解，改本單元不可數名詞 sound",
+        "resolution": "改為 [\"advice\", \"sound\", \"silence\", \"context\"]（原 [\"advice\", \"tape\", \"silence\", \"context\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tape 是 q14 正解，改本單元不可數名詞 sound",
+        "resolution": "改為 [\"建議\", \"聲音\", \"安靜\", \"上下文\"]（原 [\"建議\", \"膠帶\", \"安靜\", \"上下文\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My teacher gave me some good context about my essay.」只看英文說得通（老師給背景說明），context 換成 screen，給作文「好螢幕」語意不通",
+        "resolution": "改為 [\"advice\", \"sound\", \"silence\", \"screen\"]（原 [\"advice\", \"sound\", \"silence\", \"context\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My teacher gave me some good context about my essay.」只看英文說得通（老師給背景說明），context 換成 screen，給作文「好螢幕」語意不通",
+        "resolution": "改為 [\"建議\", \"聲音\", \"安靜\", \"螢幕\"]（原 [\"建議\", \"聲音\", \"安靜\", \"上下文\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

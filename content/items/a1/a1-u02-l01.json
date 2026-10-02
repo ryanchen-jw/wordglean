@@ -156,16 +156,16 @@
       "stemEn": "My ____ is on July 4.",
       "stemZh": "我的生日是七月四日。",
       "options": [
-        "people",
-        "world",
+        "man",
+        "woman",
         "birthday",
-        "life"
+        "them"
       ],
       "optionGlossZh": [
-        "人們",
-        "世界",
+        "男人",
+        "女人",
         "生日",
-        "生活"
+        "他們（受詞）"
       ],
       "answer": 2
     },
@@ -175,16 +175,16 @@
       "stemEn": "Many ____ in my town ride bikes.",
       "stemZh": "我們鎮上很多人騎腳踏車。",
       "options": [
-        "woman",
-        "man",
+        "byes",
+        "worlds",
         "people",
-        "life"
+        "lives"
       ],
       "optionGlossZh": [
-        "女人",
-        "男人",
+        "再見",
+        "世界",
         "人們",
-        "生活"
+        "生活；生命"
       ],
       "answer": 2
     },
@@ -372,6 +372,30 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「台北」由位置 2 移到 1（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:38:59Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：people 是 q14 正解、life／world 讓給 q14；改 man、woman（文法可通）、them",
+        "resolution": "改為 [\"man\", \"woman\", \"birthday\", \"them\"]（原 [\"people\", \"world\", \"birthday\", \"life\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：people 是 q14 正解、life／world 讓給 q14；改 man、woman（文法可通）、them",
+        "resolution": "改為 [\"男人\", \"女人\", \"生日\", \"他們（受詞）\"]（原 [\"人們\", \"世界\", \"生日\", \"生活\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：woman、man 單數放不進 Many ___（文法洩題）；改成複數名詞 byes、worlds、lives；避開 men、women（也通）",
+        "resolution": "改為 [\"byes\", \"worlds\", \"people\", \"lives\"]（原 [\"woman\", \"man\", \"people\", \"life\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：woman、man 單數放不進 Many ___（文法洩題）；改成複數名詞 byes、worlds、lives；避開 men、women（也通）",
+        "resolution": "改為 [\"再見\", \"世界\", \"人們\", \"生活；生命\"]（原 [\"女人\", \"男人\", \"人們\", \"生活\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -170,13 +170,13 @@
       "stemEn": "You can ____ one cake from the box.",
       "stemZh": "你可以從盒子裡選一個蛋糕。",
       "options": [
-        "agree",
+        "break",
         "choose",
         "practice",
         "activity"
       ],
       "optionGlossZh": [
-        "同意",
+        "弄壞",
         "選擇",
         "練習",
         "活動"
@@ -274,6 +274,18 @@
         "message": "執行長第②③關裁示修正：第②關：描述既有的圖再畫出來語意怪；b3 裁示：自然複用 u21 形容詞",
         "resolution": "改前：\"我們學校有一個夏令營，有很多活動，每個孩子可以選兩個。我選了游泳和畫畫。我每天在游泳池練習。在畫畫課上，我們先描述一張圖，再把它畫出來。我們也去農場摘水果。我媽媽也同意這個營隊很棒。\"；改後：\"我們學校有一個夏令營，有很多活動，每個孩子可以選兩個。我選了游泳和畫畫。我每天在游泳池練習。在畫畫課上，我們先描述一朵漂亮的花，再把它畫出來。我們也去農場摘水果。我媽媽也同意這個營隊很棒。\"",
         "resolvedAt": "2026-10-02T13:23:23Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：agree 是 q13 正解改 break（避開 pick、carry 也通）",
+        "resolution": "改為 [\"break\", \"choose\", \"practice\", \"activity\"]（原 [\"agree\", \"choose\", \"practice\", \"activity\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：agree 是 q13 正解改 break（避開 pick、carry 也通）",
+        "resolution": "改為 [\"弄壞\", \"選擇\", \"練習\", \"活動\"]（原 [\"同意\", \"選擇\", \"練習\", \"活動\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

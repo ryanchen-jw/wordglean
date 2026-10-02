@@ -152,16 +152,16 @@
       "stemEn": "I ____ have tea in the morning.",
       "stemZh": "我早上通常喝茶。",
       "options": [
-        "summer",
-        "tonight",
+        "soon",
+        "early",
         "usually",
-        "future"
+        "late"
       ],
       "optionGlossZh": [
-        "夏天",
-        "今晚",
+        "很快；不久",
+        "提早",
         "通常",
-        "未來"
+        "晚；遲"
       ],
       "answer": 2
     },
@@ -171,14 +171,14 @@
       "stemEn": "Let's watch a movie ____.",
       "stemZh": "我們今晚看電影吧。",
       "options": [
-        "future",
-        "usually",
+        "never",
+        "always",
         "spring",
         "tonight"
       ],
       "optionGlossZh": [
-        "未來",
-        "通常",
+        "從不",
+        "總是",
         "春天",
         "今晚"
       ],
@@ -343,6 +343,54 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"和朋友在公園打棒球\"（原 \"打棒球\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：tonight 是 q14 正解、future 與 q14 共用、summer 放不進；改頻率副詞 never、always、often，只靠「通常」詞義選",
+        "resolution": "改為 [\"never\", \"always\", \"usually\", \"often\"]（原 [\"summer\", \"tonight\", \"usually\", \"future\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：tonight 是 q14 正解、future 與 q14 共用、summer 放不進；改頻率副詞 never、always、often，只靠「通常」詞義選",
+        "resolution": "改為 [\"從不\", \"總是\", \"通常\", \"常常\"]（原 [\"夏天\", \"今晚\", \"通常\", \"未來\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：usually 是 q13 正解、future 與 q13 共用且放不進；改 later、today（文法可通、與「今晚」不符）",
+        "resolution": "改為 [\"later\", \"today\", \"spring\", \"tonight\"]（原 [\"future\", \"usually\", \"spring\", \"tonight\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：usually 是 q13 正解、future 與 q13 共用且放不進；改 later、today（文法可通、與「今晚」不符）",
+        "resolution": "改為 [\"待會\", \"今天\", \"春天\", \"今晚\"]（原 [\"未來\", \"通常\", \"春天\", \"今晚\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：always／often／never 代入成 I always/often/never have tea in the morning. 都說得通；頻率副詞與 usually 同義無法排除，全換成 soon、early、late，放在主詞後文法不通",
+        "resolution": "改為 [\"soon\", \"early\", \"usually\", \"late\"]（原 [\"never\", \"always\", \"usually\", \"often\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：always／often／never 代入成 I always/often/never have tea in the morning. 都說得通；頻率副詞與 usually 同義無法排除，全換成 soon、early、late，放在主詞後文法不通",
+        "resolution": "改為 [\"很快；不久\", \"提早\", \"通常\", \"晚；遲\"]（原 [\"從不\", \"總是\", \"通常\", \"常常\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：later、today 代入成 Let's watch a movie later／today. 都說得通；換成 never、always，Let's watch a movie never/always 文法通但語意不通（never／always 從 q13 移來，免同課共用）",
+        "resolution": "改為 [\"never\", \"always\", \"spring\", \"tonight\"]（原 [\"later\", \"today\", \"spring\", \"tonight\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：later、today 代入成 Let's watch a movie later／today. 都說得通；換成 never、always，Let's watch a movie never/always 文法通但語意不通（never／always 從 q13 移來，免同課共用）",
+        "resolution": "改為 [\"從不\", \"總是\", \"春天\", \"今晚\"]（原 [\"待會\", \"今天\", \"春天\", \"今晚\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

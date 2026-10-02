@@ -30,7 +30,7 @@
       "word": "order",
       "exampleEn": "Your order is ready.",
       "exampleZh": "您點的餐好了。",
-      "glossZh": "點餐；訂單（也當動詞：點）",
+      "glossZh": "點餐；訂單",
       "distractorsZh": [
         "收據",
         "價格",
@@ -140,13 +140,13 @@
       "stemZh": "這雙鞋的價格是五十美元。",
       "options": [
         "price",
-        "owner",
+        "change",
         "item",
         "store"
       ],
       "optionGlossZh": [
         "價格",
-        "老闆",
+        "零錢",
         "品項",
         "商店"
       ],
@@ -159,14 +159,14 @@
       "stemZh": "林先生有一家小店，他是老闆。",
       "options": [
         "card",
-        "price",
+        "waiter",
         "order",
         "owner"
       ],
       "optionGlossZh": [
         "卡片",
-        "價格",
-        "點餐",
+        "服務生",
+        "訂單",
         "老闆"
       ],
       "answer": 3
@@ -377,6 +377,36 @@
         "message": "執行長裁示：正解長度名次分布：a1-u10-l02-q14#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"免費的東西\",\"一些錢\",\"一份工作\"]（原 [\"免費的東西\",\"錢\",\"店裡的工作機會\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"點餐；訂單\"（原 \"點餐；訂單（也當動詞：點）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：owner 是 q13 正解，換 change",
+        "resolution": "改為 [\"price\", \"change\", \"item\", \"store\"]（原 [\"price\", \"owner\", \"item\", \"store\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：owner 是 q13 正解，換 change",
+        "resolution": "改為 [\"價格\", \"零錢\", \"品項\", \"商店\"]（原 [\"價格\", \"老闆\", \"品項\", \"商店\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：price 是 q12 正解，換 waiter（人物名詞，靠詞義排除）",
+        "resolution": "改為 [\"card\", \"waiter\", \"order\", \"owner\"]（原 [\"card\", \"price\", \"order\", \"owner\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：price 是 q12 正解，換 waiter（人物名詞，靠詞義排除）",
+        "resolution": "改為 [\"卡片\", \"服務生\", \"訂單\", \"老闆\"]（原 [\"卡片\", \"價格\", \"點餐\", \"老闆\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

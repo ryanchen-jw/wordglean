@@ -53,8 +53,8 @@
       "id": "a1-u09-l04-q04",
       "type": "wordCard",
       "word": "haircut",
-      "exampleEn": "I like your new haircut!",
-      "exampleZh": "我喜歡你的新髮型！",
+      "exampleEn": "I get a haircut every month.",
+      "exampleZh": "我每個月理一次髮。",
       "glossZh": "理髮；髮型",
       "distractorsZh": [
         "帽子",
@@ -138,16 +138,16 @@
       "stemEn": "I can't see well. Where are my ____?",
       "stemZh": "我看不清楚，我的眼鏡在哪裡？",
       "options": [
-        "apron",
+        "pants",
         "glasses",
-        "haircut",
-        "ribbon"
+        "jeans",
+        "shoes"
       ],
       "optionGlossZh": [
-        "圍裙",
+        "褲子",
         "眼鏡",
-        "髮型",
-        "緞帶"
+        "牛仔褲",
+        "鞋子"
       ],
       "answer": 1
     },
@@ -160,13 +160,13 @@
         "trousers",
         "apron",
         "haircut",
-        "glasses"
+        "ribbon"
       ],
       "optionGlossZh": [
         "長褲",
         "圍裙",
         "理髮",
-        "眼鏡"
+        "緞帶"
       ],
       "answer": 2
     },
@@ -315,6 +315,42 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"T\",\"Kevin\"]；改後：[\"Kevin\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 haircut＝理髮；與 q14 閱讀（Kevin 的新髮型受稱讚）換了主詞＋情境＋句型",
+        "resolution": "改為 \"I get a haircut every month.\"（原 \"I like your new haircut!\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 haircut＝理髮；與 q14 閱讀（Kevin 的新髮型受稱讚）換了主詞＋情境＋句型",
+        "resolution": "改為 \"我每個月理一次髮。\"（原 \"我喜歡你的新髮型！\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：apron 與 q13 共用、haircut 是 q13 正解，換成複數名詞 pants/jeans/shoes，皆合 are my ____",
+        "resolution": "改為 [\"pants\", \"glasses\", \"jeans\", \"shoes\"]（原 [\"apron\", \"glasses\", \"haircut\", \"ribbon\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：apron 與 q13 共用、haircut 是 q13 正解，換成複數名詞 pants/jeans/shoes，皆合 are my ____",
+        "resolution": "改為 [\"褲子\", \"眼鏡\", \"牛仔褲\", \"鞋子\"]（原 [\"圍裙\", \"眼鏡\", \"髮型\", \"緞帶\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：glasses 是 q12 正解，換 ribbon",
+        "resolution": "改為 [\"trousers\", \"apron\", \"haircut\", \"ribbon\"]（原 [\"trousers\", \"apron\", \"haircut\", \"glasses\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：glasses 是 q12 正解，換 ribbon",
+        "resolution": "改為 [\"長褲\", \"圍裙\", \"理髮\", \"緞帶\"]（原 [\"長褲\", \"圍裙\", \"理髮\", \"眼鏡\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

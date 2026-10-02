@@ -51,8 +51,8 @@
       "id": "a2-u20-l02-q04",
       "type": "wordCard",
       "word": "debate",
-      "exampleEn": "The new road started a debate in our town.",
-      "exampleZh": "這條新道路在我們鎮上引起了爭論。",
+      "exampleEn": "Our team won the debate last Friday.",
+      "exampleZh": "我們隊上週五贏了那場辯論。",
       "glossZh": "辯論；爭論",
       "distractorsZh": [
         "比賽",
@@ -105,7 +105,7 @@
       "word": "text",
       "exampleEn": "Mom texts me every morning.",
       "exampleZh": "媽媽每天早上都傳簡訊給我。",
-      "glossZh": "簡訊；傳簡訊",
+      "glossZh": "傳簡訊；簡訊",
       "distractorsZh": [
         "打電話",
         "寫信",
@@ -168,16 +168,16 @@
       "stemEn": "They had a big ____ about money and stopped talking.",
       "stemZh": "他們為了錢大吵一架，之後就不說話了。",
       "options": [
-        "screen",
+        "report",
         "argument",
         "text",
-        "notice"
+        "rumor"
       ],
       "optionGlossZh": [
-        "螢幕",
+        "報告",
         "爭吵",
         "簡訊",
-        "公告"
+        "謠言"
       ],
       "answer": 1
     },
@@ -278,6 +278,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u20-l02-q15#1 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"家長和學生的意見\",\"老師們的手機\",\"期中考試\"]（原 [\"家長和學生的意見\",\"老師們的手機\",\"考試\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「辯論」；與 q10 辯論時間地點、q15 手機議題辯論換了主詞＋句型（勝負）。",
+        "resolution": "改為 \"Our team won the debate last Friday.\"（原 \"The new road started a debate in our town.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「辯論」；與 q10 辯論時間地點、q15 手機議題辯論換了主詞＋句型（勝負）。",
+        "resolution": "改為 \"我們隊上週五贏了那場辯論。\"（原 \"這條新道路在我們鎮上引起了爭論。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"傳簡訊；簡訊\"（原 \"簡訊；傳簡訊\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：screen、notice 與 q13 共用，改本單元 report、rumor",
+        "resolution": "改為 [\"report\", \"argument\", \"text\", \"rumor\"]（原 [\"screen\", \"argument\", \"text\", \"notice\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：screen、notice 與 q13 共用，改本單元 report、rumor",
+        "resolution": "改為 [\"報告\", \"爭吵\", \"簡訊\", \"謠言\"]（原 [\"螢幕\", \"爭吵\", \"簡訊\", \"公告\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

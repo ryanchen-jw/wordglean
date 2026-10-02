@@ -30,7 +30,7 @@
       "word": "reflect",
       "exampleEn": "The lake reflects the mountains.",
       "exampleZh": "湖面映出了群山的倒影。",
-      "glossZh": "反射；映出",
+      "glossZh": "映出；反射",
       "distractorsZh": [
         "擋住",
         "畫出",
@@ -155,13 +155,13 @@
         "remember",
         "discover",
         "reflect",
-        "forget"
+        "avoid"
       ],
       "optionGlossZh": [
         "記得",
         "發現",
         "反射",
-        "忘記"
+        "避開"
       ],
       "answer": 2
     },
@@ -323,6 +323,24 @@
         "message": "執行長最終複審修正：中譯同步",
         "resolution": "改為 \"他承認餅乾全是他吃掉的。\"（原 \"她承認她忘了我的生日。\"）",
         "resolvedAt": "2026-10-02T14:49:18Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"映出；反射\"（原 \"反射；映出\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：forget 為非本單元字且他課已用，改本單元 avoid",
+        "resolution": "改為 [\"remember\", \"discover\", \"reflect\", \"avoid\"]（原 [\"remember\", \"discover\", \"reflect\", \"forget\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：forget 為非本單元字且他課已用，改本單元 avoid",
+        "resolution": "改為 [\"記得\", \"發現\", \"反射\", \"避開\"]（原 [\"記得\", \"發現\", \"反射\", \"忘記\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

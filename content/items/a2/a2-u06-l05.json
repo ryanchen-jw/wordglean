@@ -168,15 +168,15 @@
       "stemEn": "She felt great ____ when her son finished school.",
       "stemZh": "兒子完成學業時，她感到非常驕傲。",
       "options": [
-        "surprising",
+        "difficulty",
         "mood",
-        "nervous",
+        "favor",
         "pride"
       ],
       "optionGlossZh": [
-        "令人驚訝的",
+        "困難",
         "心情",
-        "緊張的",
+        "幫忙",
         "驕傲"
       ],
       "answer": 3
@@ -332,6 +332,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u06-l05-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"一直在房間裡練習講話\",\"睡過頭了，差點就遲到\",\"很緊張，心情也不好\"]（原 [\"生病了\",\"睡過頭了，差點遲到\",\"很緊張，心情也不好\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：surprising、nervous 與 q13 共用，改本單元名詞 difficulty、shock，使干擾項放得進 felt great ___",
+        "resolution": "改為 [\"difficulty\", \"mood\", \"shock\", \"pride\"]（原 [\"surprising\", \"mood\", \"nervous\", \"pride\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：surprising、nervous 與 q13 共用，改本單元名詞 difficulty、shock，使干擾項放得進 felt great ___",
+        "resolution": "改為 [\"困難\", \"心情\", \"震驚\", \"驕傲\"]（原 [\"令人驚訝的\", \"心情\", \"緊張的\", \"驕傲\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：She felt great shock when her son finished school. 只看英文可成立（沒想到他能畢業）；換成 favor，felt great favor 語意不通",
+        "resolution": "改為 [\"difficulty\", \"mood\", \"favor\", \"pride\"]（原 [\"difficulty\", \"mood\", \"shock\", \"pride\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：She felt great shock when her son finished school. 只看英文可成立（沒想到他能畢業）；換成 favor，felt great favor 語意不通",
+        "resolution": "改為 [\"困難\", \"心情\", \"幫忙\", \"驕傲\"]（原 [\"困難\", \"心情\", \"震驚\", \"驕傲\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

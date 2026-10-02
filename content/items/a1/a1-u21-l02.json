@@ -151,15 +151,15 @@
       "stemEn": "I can't carry this bag. It is too ____.",
       "stemZh": "我拿不動這個包包，太重了。",
       "options": [
-        "living",
+        "bright",
         "fast",
-        "gold",
+        "dark",
         "heavy"
       ],
       "optionGlossZh": [
-        "活的",
+        "明亮的",
         "快的",
-        "金的",
+        "暗的",
         "重的"
       ],
       "answer": 3
@@ -170,13 +170,13 @@
       "stemEn": "Open the ____ door. Someone is there.",
       "stemZh": "開一下前門，有人來了。",
       "options": [
-        "fast",
+        "glad",
         "front",
         "living",
         "quickly"
       ],
       "optionGlossZh": [
-        "快的",
+        "高興的",
         "前面的",
         "活的",
         "很快地"
@@ -298,6 +298,42 @@
         "message": "執行長第②③關裁示修正：第③關 FIX：翻譯題不與單字卡例句相同",
         "resolution": "改前：\"middle 放在名詞前面，前面加 the\"；改後：\"動詞配合主詞\"",
         "resolvedAt": "2026-10-02T13:22:41Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：living 與 q14 共用改 bright，gold 改 dark；fast 留本題",
+        "resolution": "改為 [\"bright\", \"fast\", \"dark\", \"heavy\"]（原 [\"living\", \"fast\", \"gold\", \"heavy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：living 與 q14 共用改 bright，gold 改 dark；fast 留本題",
+        "resolution": "改為 [\"明亮的\", \"快的\", \"暗的\", \"重的\"]（原 [\"活的\", \"快的\", \"金的\", \"重的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：fast 與 q13 共用改 gold",
+        "resolution": "改為 [\"gold\", \"front\", \"living\", \"quickly\"]（原 [\"fast\", \"front\", \"living\", \"quickly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：fast 與 q13 共用改 gold",
+        "resolution": "改為 [\"金色的\", \"前面的\", \"活的\", \"很快地\"]（原 [\"快的\", \"前面的\", \"活的\", \"很快地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：gold 代入「Open the gold door. Someone is there.」完全說得通（金色的門），換成 glad（the glad door 語意不通）",
+        "resolution": "改為 [\"glad\", \"front\", \"living\", \"quickly\"]（原 [\"gold\", \"front\", \"living\", \"quickly\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：gold 代入「Open the gold door. Someone is there.」完全說得通（金色的門），換成 glad（the glad door 語意不通）",
+        "resolution": "改為 [\"高興的\", \"前面的\", \"活的\", \"很快地\"]（原 [\"金色的\", \"前面的\", \"活的\", \"很快地\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

@@ -92,8 +92,8 @@
       "id": "a2-u21-l02-q07",
       "type": "wordCard",
       "word": "column",
-      "exampleEn": "The old temple has six red columns.",
-      "exampleZh": "那座老廟有六根紅色柱子。",
+      "exampleEn": "I read her cooking column in the paper each week.",
+      "exampleZh": "我每週都會看她在報紙上的烹飪專欄。",
       "glossZh": "專欄；柱子",
       "distractorsZh": [
         "窗戶",
@@ -166,14 +166,14 @@
       "options": [
         "editor",
         "column",
-        "audience",
-        "tradition"
+        "scene",
+        "performance"
       ],
       "optionGlossZh": [
         "編輯",
         "專欄",
-        "觀眾",
-        "傳統"
+        "一幕",
+        "表演"
       ],
       "answer": 1
     },
@@ -323,6 +323,30 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"我們星期天去參觀了科學博物館。\"（原 \"科學博物館有很多讓孩子動手試試的東西。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「專欄」；與 q16 閱讀（舅舅寫專欄評展覽）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"I read her cooking column in the paper each week.\"（原 \"The old temple has six red columns.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「專欄」；與 q16 閱讀（舅舅寫專欄評展覽）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我每週都會看她在報紙上的烹飪專欄。\"（原 \"那座老廟有六根紅色柱子。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：audience 與 q15 共用、tradition 是 q15 正解，改本單元 scene、performance",
+        "resolution": "改為 [\"editor\", \"column\", \"scene\", \"performance\"]（原 [\"editor\", \"column\", \"audience\", \"tradition\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：audience 與 q15 共用、tradition 是 q15 正解，改本單元 scene、performance",
+        "resolution": "改為 [\"編輯\", \"專欄\", \"一幕\", \"表演\"]（原 [\"編輯\", \"專欄\", \"觀眾\", \"傳統\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

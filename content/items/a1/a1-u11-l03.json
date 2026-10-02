@@ -152,13 +152,13 @@
         "corner",
         "peace",
         "vote",
-        "farmer"
+        "officer"
       ],
       "optionGlossZh": [
         "轉角",
         "和平",
         "選票",
-        "農夫"
+        "官員"
       ],
       "answer": 0
     },
@@ -320,6 +320,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u11-l03-q10 目標第 3 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"Near the bridge\",\"On the corner\",\"On the big farm\"]（原 [\"Near the bridge\",\"On the corner\",\"On the farm\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：farmer 是 q14 正解，換 officer",
+        "resolution": "改為 [\"corner\", \"peace\", \"vote\", \"officer\"]（原 [\"corner\", \"peace\", \"vote\", \"farmer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：farmer 是 q14 正解，換 officer",
+        "resolution": "改為 [\"轉角\", \"和平\", \"選票\", \"官員\"]（原 [\"轉角\", \"和平\", \"選票\", \"農夫\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

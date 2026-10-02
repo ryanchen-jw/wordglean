@@ -38,8 +38,8 @@
       "id": "a2-u26-l06-q03",
       "type": "wordCard",
       "word": "string",
-      "exampleEn": "One string on my guitar is broken.",
-      "exampleZh": "我吉他上有一根弦斷了。",
+      "exampleEn": "The kite flew away when its string broke.",
+      "exampleZh": "風箏的線斷了，風箏就飛走了。",
       "glossZh": "細繩；（樂器的）弦",
       "distractorsZh": [
         "鍵",
@@ -51,8 +51,8 @@
       "id": "a2-u26-l06-q04",
       "type": "wordCard",
       "word": "freeze",
-      "exampleEn": "My computer froze, and I lost my work.",
-      "exampleZh": "我的電腦當機了，我做的東西都不見了。",
+      "exampleEn": "It was so cold that the water in the dog's bowl froze.",
+      "exampleZh": "天氣冷到連狗碗裡的水都結冰了。",
       "glossZh": "結冰；凍結；當機",
       "distractorsZh": [
         "融化",
@@ -139,13 +139,13 @@
         "buried",
         "adjusted",
         "froze",
-        "invented"
+        "operated"
       ],
       "optionGlossZh": [
         "埋",
         "調整",
         "凍結",
-        "發明"
+        "操作"
       ],
       "answer": 0
     },
@@ -158,13 +158,13 @@
         "float",
         "trick",
         "string",
-        "bury"
+        "chain"
       ],
       "optionGlossZh": [
         "浮板",
         "戲法",
         "細繩",
-        "埋"
+        "鍊子"
       ],
       "answer": 1
     },
@@ -301,6 +301,54 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"別假裝你沒看到我！\"（原 \"他假裝沒聽到我說話。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「細繩」；與 q11（需要繩子綁箱子）、q14 閱讀（魔術剪繩子）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"The kite flew away when its string broke.\"（原 \"One string on my guitar is broken.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「細繩」；與 q11（需要繩子綁箱子）、q14 閱讀（魔術剪繩子）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"風箏的線斷了，風箏就飛走了。\"（原 \"我吉他上有一根弦斷了。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「結冰」；與 q08（湖每年冬天結冰）換了主詞＋情境＋句型（so…that）；q12 mcq 為埋玩具題。",
+        "resolution": "改為 \"It was so cold that the water in the dog's bowl froze.\"（原 \"My computer froze, and I lost my work.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「結冰」；與 q08（湖每年冬天結冰）換了主詞＋情境＋句型（so…that）；q12 mcq 為埋玩具題。",
+        "resolution": "改為 \"天氣冷到連狗碗裡的水都結冰了。\"（原 \"我的電腦當機了，我做的東西都不見了。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：invented 為下一課字超範圍，改本單元 operated",
+        "resolution": "改為 [\"buried\", \"adjusted\", \"froze\", \"operated\"]（原 [\"buried\", \"adjusted\", \"froze\", \"invented\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：invented 為下一課字超範圍，改本單元 operated",
+        "resolution": "改為 [\"埋\", \"調整\", \"凍結\", \"操作\"]（原 [\"埋\", \"調整\", \"凍結\", \"發明\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bury 是 q12 正解，改本單元名詞 chain",
+        "resolution": "改為 [\"float\", \"trick\", \"string\", \"chain\"]（原 [\"float\", \"trick\", \"string\", \"bury\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bury 是 q12 正解，改本單元名詞 chain",
+        "resolution": "改為 [\"浮板\", \"戲法\", \"細繩\", \"鍊子\"]（原 [\"浮板\", \"戲法\", \"細繩\", \"埋\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

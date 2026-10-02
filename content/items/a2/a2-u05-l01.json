@@ -109,7 +109,7 @@
       "word": "generation",
       "exampleEn": "Three generations live in this house.",
       "exampleZh": "這間房子裡住著三代人。",
-      "glossZh": "一代（人）；世代",
+      "glossZh": "一代人；世代",
       "distractorsZh": [
         "一層樓",
         "一個房間",
@@ -154,13 +154,13 @@
       "stemZh": "今天是我們結婚十週年紀念日。",
       "options": [
         "reunion",
-        "generation",
+        "birthday",
         "member",
         "anniversary"
       ],
       "optionGlossZh": [
         "團聚",
-        "世代",
+        "生日",
         "成員",
         "週年紀念"
       ],
@@ -173,14 +173,14 @@
       "stemZh": "我的祖父母、父母和我是三個不同的世代。",
       "options": [
         "generations",
-        "anniversaries",
-        "reunions",
+        "classmates",
+        "adults",
         "juniors"
       ],
       "optionGlossZh": [
         "世代",
-        "週年紀念",
-        "團聚",
+        "同班同學",
+        "成年人",
         "資淺的人"
       ],
       "answer": 0
@@ -348,6 +348,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u05-l01-q15#0 目標第 1 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"慶祝爺爺奶奶結婚五十週年\",\"慶祝寶寶出生\",\"一起過農曆新年\"]（原 [\"慶祝爺爺奶奶結婚五十週年\",\"慶祝寶寶出生\",\"全家人一起過農曆新年吃年夜飯\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"一代人；世代\"（原 \"一代（人）；世代\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：generation 是 q14 正解改 birthday；reunion 保留（q14 改掉 reunions）",
+        "resolution": "改為 [\"reunion\", \"birthday\", \"member\", \"anniversary\"]（原 [\"reunion\", \"generation\", \"member\", \"anniversary\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：generation 是 q14 正解改 birthday；reunion 保留（q14 改掉 reunions）",
+        "resolution": "改為 [\"團聚\", \"生日\", \"成員\", \"週年紀念\"]（原 [\"團聚\", \"世代\", \"成員\", \"週年紀念\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：anniversaries 是 q13 正解改 classmates；reunions 與 q13 共用改 adults",
+        "resolution": "改為 [\"generations\", \"classmates\", \"adults\", \"juniors\"]（原 [\"generations\", \"anniversaries\", \"reunions\", \"juniors\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：anniversaries 是 q13 正解改 classmates；reunions 與 q13 共用改 adults",
+        "resolution": "改為 [\"世代\", \"同班同學\", \"成年人\", \"資淺的人\"]（原 [\"世代\", \"週年紀念\", \"團聚\", \"資淺的人\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

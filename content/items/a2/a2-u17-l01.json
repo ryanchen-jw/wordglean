@@ -184,14 +184,14 @@
       "stemZh": "你的想法很好，也很合乎邏輯。",
       "options": [
         "textbook",
-        "research",
-        "education",
+        "harmful",
+        "dangerous",
         "logical"
       ],
       "optionGlossZh": [
         "課本",
-        "研究",
-        "教育",
+        "有害的",
+        "危險的",
         "合乎邏輯的"
       ],
       "answer": 3
@@ -305,6 +305,18 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"我很有照顧小孩的經驗。\"（原 \"你有工作經驗嗎？\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：research、education 放不進 very ____ 形容詞位置，改 harmful、dangerous（能代入、與 good and 矛盾而排除）",
+        "resolution": "改為 [\"textbook\", \"harmful\", \"dangerous\", \"logical\"]（原 [\"textbook\", \"research\", \"education\", \"logical\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：research、education 放不進 very ____ 形容詞位置，改 harmful、dangerous（能代入、與 good and 矛盾而排除）",
+        "resolution": "改為 [\"課本\", \"有害的\", \"危險的\", \"合乎邏輯的\"]（原 [\"課本\", \"研究\", \"教育\", \"合乎邏輯的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

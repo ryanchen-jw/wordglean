@@ -142,13 +142,13 @@
       "stemZh": "這位歌手在亞洲很有名，大家都認識她。",
       "options": [
         "well-known",
-        "marvelous",
+        "separate",
         "left-hand",
         "unimportant"
       ],
       "optionGlossZh": [
         "有名的",
-        "極好的",
+        "分開的",
         "左側的",
         "不重要的"
       ],
@@ -161,14 +161,14 @@
       "stemZh": "那是我人生中最糟的一天，每件事都出錯。",
       "options": [
         "worst",
-        "marvelous",
-        "left-hand",
+        "fascinating",
+        "fantastic",
         "right-hand"
       ],
       "optionGlossZh": [
         "最糟的",
-        "極好的",
-        "左側的",
+        "極有趣的",
+        "很棒的",
         "右側的"
       ],
       "answer": 0
@@ -258,6 +258,30 @@
         "message": "執行長第②③關裁示修正：第②關：right-hand corner 譯「右上角」多加了「上」，原文只說右邊的角；應譯「右側的角落」或英文改 top right-hand corner。",
         "resolution": "改為 \"把你的名字寫在右邊的角落。\"（原 \"把你的名字寫在右上角。\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：marvelous、left-hand 與 q12 共用，改本單元 fascinating、fantastic",
+        "resolution": "改為 [\"worst\", \"fascinating\", \"fantastic\", \"right-hand\"]（原 [\"worst\", \"marvelous\", \"left-hand\", \"right-hand\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：marvelous、left-hand 與 q12 共用，改本單元 fascinating、fantastic",
+        "resolution": "改為 [\"最糟的\", \"極有趣的\", \"很棒的\", \"右側的\"]（原 [\"最糟的\", \"極好的\", \"左側的\", \"右側的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「This singer is marvelous in Asia. Everyone knows her.」勉強說得通，marvelous 換成 separate，「歌手在亞洲是分開的」語意不通",
+        "resolution": "改為 [\"well-known\", \"separate\", \"left-hand\", \"unimportant\"]（原 [\"well-known\", \"marvelous\", \"left-hand\", \"unimportant\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「This singer is marvelous in Asia. Everyone knows her.」勉強說得通，marvelous 換成 separate，「歌手在亞洲是分開的」語意不通",
+        "resolution": "改為 [\"有名的\", \"分開的\", \"左側的\", \"不重要的\"]（原 [\"有名的\", \"極好的\", \"左側的\", \"不重要的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

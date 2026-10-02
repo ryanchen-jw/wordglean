@@ -82,7 +82,7 @@
       "word": "board",
       "exampleEn": "The teacher writes on the board.",
       "exampleZh": "老師在黑板上寫字。",
-      "glossZh": "板子；黑板",
+      "glossZh": "黑板；板子",
       "distractorsZh": [
         "桌子",
         "窗戶",
@@ -154,14 +154,14 @@
       "options": [
         "rule",
         "letter",
-        "board",
-        "subject"
+        "class",
+        "course"
       ],
       "optionGlossZh": [
         "規則",
         "信",
-        "黑板",
-        "科目"
+        "課",
+        "課程"
       ],
       "answer": 1
     },
@@ -172,13 +172,13 @@
       "stemZh": "老師把新的單字寫在黑板上。",
       "options": [
         "board",
-        "test",
+        "idea",
         "technology",
         "subject"
       ],
       "optionGlossZh": [
         "黑板",
-        "考試",
+        "主意",
         "科技",
         "科目"
       ],
@@ -317,6 +317,36 @@
         "message": "執行長裁示：正解長度名次分布：a1-u16-l04-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"一台大電視和音響\",\"新的桌子和椅子\",\"電腦和大白板\"]（原 [\"電視\",\"新的桌椅\",\"電腦和大白板\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"黑板；板子\"（原 \"板子；黑板\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：board 是 q14 正解、subject 與 q14 共用，換 class/course",
+        "resolution": "改為 [\"rule\", \"letter\", \"class\", \"course\"]（原 [\"rule\", \"letter\", \"board\", \"subject\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：board 是 q14 正解、subject 與 q14 共用，換 class/course",
+        "resolution": "改為 [\"規則\", \"信\", \"課\", \"課程\"]（原 [\"規則\", \"信\", \"黑板\", \"科目\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：The teacher writes the new words on the test. 只看英文也成立（把新單字出在考卷上），test 換成 idea，寫在主意上語意不通",
+        "resolution": "改為 [\"board\", \"idea\", \"technology\", \"subject\"]（原 [\"board\", \"test\", \"technology\", \"subject\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：The teacher writes the new words on the test. 只看英文也成立（把新單字出在考卷上），test 換成 idea，寫在主意上語意不通",
+        "resolution": "改為 [\"黑板\", \"主意\", \"科技\", \"科目\"]（原 [\"黑板\", \"考試\", \"科技\", \"科目\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

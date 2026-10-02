@@ -155,16 +155,16 @@
       "stemEn": "We swim in the sea and play at the ____.",
       "stemZh": "我們在海裡游泳，在海灘上玩。",
       "options": [
-        "moon",
+        "sky",
         "beach",
         "cow",
-        "grass"
+        "stone"
       ],
       "optionGlossZh": [
-        "月亮",
+        "天空",
         "海灘",
         "牛",
-        "草"
+        "石頭"
       ],
       "answer": 1
     },
@@ -277,6 +277,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"因為這裡常常下雨\"（原 \"因為常下雨\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：moon 與 q12 共用、grass 是 q12 正解，換 hill/stone",
+        "resolution": "改為 [\"hill\", \"beach\", \"cow\", \"stone\"]（原 [\"moon\", \"beach\", \"cow\", \"grass\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：moon 與 q12 共用、grass 是 q12 正解，換 hill/stone",
+        "resolution": "改為 [\"小山\", \"海灘\", \"牛\", \"石頭\"]（原 [\"月亮\", \"海灘\", \"牛\", \"草\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We swim in the sea and play at the hill. 海邊有山丘時勉強說得通，hill 換成 sky，在天空玩語意不通",
+        "resolution": "改為 [\"sky\", \"beach\", \"cow\", \"stone\"]（原 [\"hill\", \"beach\", \"cow\", \"stone\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We swim in the sea and play at the hill. 海邊有山丘時勉強說得通，hill 換成 sky，在天空玩語意不通",
+        "resolution": "改為 [\"天空\", \"海灘\", \"牛\", \"石頭\"]（原 [\"小山\", \"海灘\", \"牛\", \"石頭\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

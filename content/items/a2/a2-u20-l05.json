@@ -17,7 +17,7 @@
       "word": "complaint",
       "exampleEn": "The shop answers every complaint quickly.",
       "exampleZh": "這家店對每一件投訴都很快回應。",
-      "glossZh": "抱怨；投訴",
+      "glossZh": "投訴；抱怨",
       "distractorsZh": [
         "稱讚",
         "訂單",
@@ -28,8 +28,8 @@
       "id": "a2-u20-l05-q02",
       "type": "wordCard",
       "word": "speaker",
-      "exampleEn": "These speakers make the music sound great.",
-      "exampleZh": "這組喇叭讓音樂聽起來很棒。",
+      "exampleEn": "Everyone listened quietly to the speaker.",
+      "exampleZh": "大家都安靜地聽演講者說話。",
       "glossZh": "演講者；喇叭",
       "distractorsZh": [
         "觀眾",
@@ -152,14 +152,14 @@
       "stemEn": "My teacher ____ me to read more English books.",
       "stemZh": "老師建議我多讀英文書。",
       "options": [
-        "web",
-        "script",
-        "pc",
+        "argued",
+        "shouted",
+        "PC",
         "advised"
       ],
       "optionGlossZh": [
-        "網路",
-        "劇本",
+        "爭論",
+        "大聲喊",
         "個人電腦",
         "建議"
       ],
@@ -287,6 +287,48 @@
         "message": "執行長裁示：正解長度名次分布：a2-u20-l05-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"作者和班上的演員\",\"學校的校長和老師\",\"同學 Nina\"]（原 [\"作者\",\"校長\",\"同學 Nina\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"投訴；抱怨\"（原 \"抱怨；投訴\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「演講者」；與 q10 演講十點開始、q15 導演來當講者換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Everyone listened quietly to the speaker.\"（原 \"These speakers make the music sound great.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「演講者」；與 q10 演講十點開始、q15 導演來當講者換了主詞＋情境＋句型。",
+        "resolution": "改為 \"大家都安靜地聽演講者說話。\"（原 \"這組喇叭讓音樂聽起來很棒。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：web、script 與 q14 共用且為名詞，改動詞過去式 paid、chose（可接 me to read，靠詞義排除）",
+        "resolution": "改為 [\"paid\", \"chose\", \"pc\", \"advised\"]（原 [\"web\", \"script\", \"pc\", \"advised\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：web、script 與 q14 共用且為名詞，改動詞過去式 paid、chose（可接 me to read，靠詞義排除）",
+        "resolution": "改為 [\"付錢\", \"選擇\", \"個人電腦\", \"建議\"]（原 [\"網路\", \"劇本\", \"個人電腦\", \"建議\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；縮寫照實際寫法大寫：只看英文：My teacher paid／chose me to read more English books 都說得通，換成本單元的 argued、shouted（後面不能直接接 me to，文法不通）；pc 照實際寫法改 PC。能接「動詞＋me to 讀書」的字代入都說得通，這題做不到「兩個干擾項放得進空格」，比照 a1-u02-l03-q14 請求豁免",
+        "resolution": "改為 [\"argued\", \"shouted\", \"PC\", \"advised\"]（原 [\"paid\", \"chose\", \"pc\", \"advised\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；縮寫照實際寫法大寫：只看英文：My teacher paid／chose me to read more English books 都說得通，換成本單元的 argued、shouted（後面不能直接接 me to，文法不通）；pc 照實際寫法改 PC。能接「動詞＋me to 讀書」的字代入都說得通，這題做不到「兩個干擾項放得進空格」，比照 a1-u02-l03-q14 請求豁免",
+        "resolution": "改為 [\"爭論\", \"大聲喊\", \"個人電腦\", \"建議\"]（原 [\"付錢\", \"選擇\", \"個人電腦\", \"建議\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

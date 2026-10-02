@@ -176,13 +176,13 @@
       "options": [
         "traffic",
         "astronaut",
-        "passenger",
+        "suitcase",
         "adventure"
       ],
       "optionGlossZh": [
         "交通",
         "太空人",
-        "乘客",
+        "行李箱",
         "冒險"
       ],
       "answer": 3
@@ -338,6 +338,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"每天很早就要起床\"（原 \"很早起床\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：passenger 與 q13 共用，改本單元名詞 suitcase",
+        "resolution": "改為 [\"traffic\", \"astronaut\", \"suitcase\", \"adventure\"]（原 [\"traffic\", \"astronaut\", \"passenger\", \"adventure\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：passenger 與 q13 共用，改本單元名詞 suitcase",
+        "resolution": "改為 [\"交通\", \"太空人\", \"行李箱\", \"冒險\"]（原 [\"交通\", \"太空人\", \"乘客\", \"冒險\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

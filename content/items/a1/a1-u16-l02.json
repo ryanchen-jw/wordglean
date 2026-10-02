@@ -152,16 +152,16 @@
       "stemEn": "I don't know this ____. What does it mean?",
       "stemZh": "我不認識這個字，它是什麼意思？",
       "options": [
-        "read",
+        "school",
         "history",
         "word",
-        "learn"
+        "student"
       ],
       "optionGlossZh": [
-        "讀",
+        "學校",
         "歷史",
         "字",
-        "學習"
+        "學生"
       ],
       "answer": 2
     },
@@ -174,13 +174,13 @@
         "information",
         "idea",
         "book",
-        "history"
+        "question"
       ],
       "optionGlossZh": [
         "資訊",
         "主意",
         "書",
-        "歷史"
+        "問題"
       ],
       "answer": 1
     },
@@ -307,6 +307,30 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「找更多資料」由位置 2 移到 0（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:42:04Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：history 與 q14 共用改由 q14 換掉；read/learn 是動詞放不進 this ____，換 school/student，四項皆名詞",
+        "resolution": "改為 [\"school\", \"history\", \"word\", \"student\"]（原 [\"read\", \"history\", \"word\", \"learn\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：history 與 q14 共用改由 q14 換掉；read/learn 是動詞放不進 this ____，換 school/student，四項皆名詞",
+        "resolution": "改為 [\"學校\", \"歷史\", \"字\", \"學生\"]（原 [\"讀\", \"歷史\", \"字\", \"學習\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：history 與 q13 共用，換 question；book、question 可放進 a good ____",
+        "resolution": "改為 [\"information\", \"idea\", \"book\", \"question\"]（原 [\"information\", \"idea\", \"book\", \"history\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：history 與 q13 共用，換 question；book、question 可放進 a good ____",
+        "resolution": "改為 [\"資訊\", \"主意\", \"書\", \"問題\"]（原 [\"資訊\", \"主意\", \"書\", \"歷史\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -17,7 +17,7 @@
       "word": "credit",
       "exampleEn": "I lost my credit card yesterday.",
       "exampleZh": "我昨天弄丟了我的信用卡。",
-      "glossZh": "信用；（credit card）信用卡",
+      "glossZh": "信用卡；信用",
       "distractorsZh": [
         "現金",
         "收據",
@@ -28,8 +28,8 @@
       "id": "a2-u11-l03-q02",
       "type": "wordCard",
       "word": "exchange",
-      "exampleEn": "Keep the receipt if you want to make an exchange.",
-      "exampleZh": "如果想換貨，請留著收據。",
+      "exampleEn": "The two students exchanged phone numbers after class.",
+      "exampleZh": "兩個學生下課後交換了電話號碼。",
       "glossZh": "交換；兌換；換貨",
       "distractorsZh": [
         "比賽",
@@ -159,14 +159,14 @@
       "stemZh": "這個包包很便宜，可是用一個星期就壞了。",
       "options": [
         "cheap",
-        "exchange",
-        "wealth",
+        "terrible",
+        "broken",
         "credit"
       ],
       "optionGlossZh": [
         "便宜的",
-        "交換",
-        "財富",
+        "糟糕的",
+        "壞掉的",
         "信用"
       ],
       "answer": 0
@@ -412,6 +412,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u11-l03-q14#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"小店裡的食物\",\"名牌衣服\",\"新手機\"]（原 [\"小店裡的食物\",\"名牌的衣服鞋子\",\"手機\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"信用卡；信用\"（原 \"信用；（credit card）信用卡\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「交換」（動詞）；與 q14 閱讀（衣服太大回店換貨）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"The two students exchanged phone numbers after class.\"（原 \"Keep the receipt if you want to make an exchange.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「交換」（動詞）；與 q14 閱讀（衣服太大回店換貨）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"兩個學生下課後交換了電話號碼。\"（原 \"如果想換貨，請留著收據。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：wealth 與 q12 共用；原本無干擾項放得進形容詞空格，wealth、exchange 改 broken、terrible（與 but 轉折矛盾而排除）",
+        "resolution": "改為 [\"cheap\", \"terrible\", \"broken\", \"credit\"]（原 [\"cheap\", \"exchange\", \"wealth\", \"credit\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：wealth 與 q12 共用；原本無干擾項放得進形容詞空格，wealth、exchange 改 broken、terrible（與 but 轉折矛盾而排除）",
+        "resolution": "改為 [\"便宜的\", \"糟糕的\", \"壞掉的\", \"信用\"]（原 [\"便宜的\", \"交換\", \"財富\", \"信用\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

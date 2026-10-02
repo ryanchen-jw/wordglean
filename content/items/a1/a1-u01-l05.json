@@ -152,14 +152,14 @@
       "stemEn": "____ is your English teacher?",
       "stemZh": "誰是你的英文老師？",
       "options": [
-        "If",
-        "My",
+        "Her",
+        "His",
         "Who",
         "All"
       ],
       "optionGlossZh": [
-        "如果",
-        "我的",
+        "她的",
+        "他的",
         "誰",
         "所有的"
       ],
@@ -172,15 +172,15 @@
       "stemZh": "這部電影是關於一家人和他們的貓。",
       "options": [
         "about",
-        "will",
-        "her",
-        "would"
+        "with",
+        "at",
+        "from"
       ],
       "optionGlossZh": [
         "關於",
-        "將會",
-        "她的",
-        "想要"
+        "和⋯一起",
+        "在",
+        "從"
       ],
       "answer": 0
     },
@@ -302,6 +302,42 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「Who」由位置 3 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：If、My 放不進空格，改 What、His（文法可通、語意不符「誰」）",
+        "resolution": "改為 [\"What\", \"His\", \"Who\", \"All\"]（原 [\"If\", \"My\", \"Who\", \"All\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：If、My 放不進空格，改 What、His（文法可通、語意不符「誰」）",
+        "resolution": "改為 [\"什麼\", \"他的\", \"誰\", \"所有的\"]（原 [\"如果\", \"我的\", \"誰\", \"所有的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：will、her、would 放不進空格，改 with、at、from 使四選項皆介系詞；避開 for、on（也通）",
+        "resolution": "改為 [\"about\", \"with\", \"at\", \"from\"]（原 [\"about\", \"will\", \"her\", \"would\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：will、her、would 放不進空格，改 with、at、from 使四選項皆介系詞；避開 for、on（也通）",
+        "resolution": "改為 [\"關於\", \"和⋯一起\", \"在\", \"從\"]（原 [\"關於\", \"將會\", \"她的\", \"想要\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：What 代入成 What is your English teacher?（問國籍、身分）只看英文可成立；換成 Her，Her is your English teacher? 文法不通",
+        "resolution": "改為 [\"Her\", \"His\", \"Who\", \"All\"]（原 [\"What\", \"His\", \"Who\", \"All\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：What 代入成 What is your English teacher?（問國籍、身分）只看英文可成立；換成 Her，Her is your English teacher? 文法不通",
+        "resolution": "改為 [\"她的\", \"他的\", \"誰\", \"所有的\"]（原 [\"什麼\", \"他的\", \"誰\", \"所有的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

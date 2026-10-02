@@ -158,13 +158,13 @@
         "Does",
         "Are",
         "Do",
-        "An"
+        "Am"
       ],
       "optionGlossZh": [
         "（問句用）do 的第三人稱單數",
         "是",
         "（問句用）do",
-        "一"
+        "（與 I 連用）是"
       ],
       "answer": 0
     },
@@ -174,16 +174,16 @@
       "stemEn": "I want to eat ____ orange.",
       "stemZh": "我想吃一顆柳橙。",
       "options": [
-        "are",
+        "a",
         "an",
-        "did",
-        "does"
+        "much",
+        "each"
       ],
       "optionGlossZh": [
-        "是",
+        "一個",
         "一",
-        "do 的過去式",
-        "do 的第三人稱單數"
+        "很多",
+        "每個"
       ],
       "answer": 1
     },
@@ -289,6 +289,30 @@
         "message": "執行長最終複審修正：FIX#6 are 補完整句情境",
         "resolution": "改前：\"I am all right now, thank you.\"；改後：\"We are all right, thank you.\"",
         "resolvedAt": "2026-10-02T13:40:51Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：An 是 q14 正解改 Am（避開 Did 也通）；Are 留本題",
+        "resolution": "改為 [\"Does\", \"Are\", \"Do\", \"Am\"]（原 [\"Does\", \"Are\", \"Do\", \"An\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：An 是 q14 正解改 Am（避開 Did 也通）；Are 留本題",
+        "resolution": "改為 [\"（問句用）do 的第三人稱單數\", \"是\", \"（問句用）do\", \"（與 I 連用）是\"]（原 [\"（問句用）do 的第三人稱單數\", \"是\", \"（問句用）do\", \"一\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：are 與 q13 共用改 a（a／an 辨析）；does 是 q13 正解改 each；did 與 q13 Does／Do 同詞元改 much",
+        "resolution": "改為 [\"a\", \"an\", \"much\", \"each\"]（原 [\"are\", \"an\", \"did\", \"does\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：are 與 q13 共用改 a（a／an 辨析）；does 是 q13 正解改 each；did 與 q13 Does／Do 同詞元改 much",
+        "resolution": "改為 [\"一個\", \"一\", \"很多\", \"每個\"]（原 [\"是\", \"一\", \"do 的過去式\", \"do 的第三人稱單數\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

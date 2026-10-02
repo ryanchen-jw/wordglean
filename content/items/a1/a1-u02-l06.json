@@ -101,11 +101,11 @@
       "word": "smith",
       "exampleEn": "Mr. Smith is from Canada.",
       "exampleZh": "Smith 先生來自加拿大。",
-      "glossZh": "鐵匠；（大寫 Smith）常見英文姓氏",
+      "glossZh": "英文姓氏；鐵匠",
       "distractorsZh": [
-        "鄰居",
-        "老師",
-        "記者"
+        "男生名字",
+        "城市名稱",
+        "國家名稱"
       ]
     },
     {
@@ -148,13 +148,13 @@
         "Good night",
         "Good morning",
         "Good afternoon",
-        "Last name"
+        "Welcome"
       ],
       "optionGlossZh": [
         "晚安",
         "早安",
         "午安",
-        "姓"
+        "歡迎"
       ],
       "answer": 0
     },
@@ -166,13 +166,13 @@
       "options": [
         "Mrs.",
         "last name",
-        "good morning",
+        "hometown",
         "nationality"
       ],
       "optionGlossZh": [
         "太太",
         "姓",
-        "早安",
+        "家鄉",
         "國籍"
       ],
       "answer": 1
@@ -382,6 +382,42 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Mr\",\"Mrs\",\"Lin\",\"Wang\",\"Chen\",\"Smith\",\"Canada\",\"English\",\"Tom\",\"Mary\"]；改後：[\"Lin\",\"Wang\",\"Chen\",\"Smith\",\"Canada\",\"English\",\"Tom\",\"Mary\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：調換也解不了，改釋義內容",
+        "resolution": "改為 \"英文姓氏；鐵匠\"（原 \"鐵匠；（大寫 Smith）常見英文姓氏\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/distractorsZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：調換也解不了，改釋義內容",
+        "resolution": "改為 [\"男生名字\", \"城市名稱\", \"國家名稱\"]（原 [\"鄰居\", \"老師\", \"記者\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：Last name 是 q13 正解，改 Welcome 使四選項皆招呼語；good morning 讓給本題",
+        "resolution": "改為 [\"Good night\", \"Good morning\", \"Good afternoon\", \"Welcome\"]（原 [\"Good night\", \"Good morning\", \"Good afternoon\", \"Last name\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：Last name 是 q13 正解，改 Welcome 使四選項皆招呼語；good morning 讓給本題",
+        "resolution": "改為 [\"晚安\", \"早安\", \"午安\", \"歡迎\"]（原 [\"晚安\", \"早安\", \"午安\", \"姓\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：good morning 與 q12 共用，改同單元名詞 hometown",
+        "resolution": "改為 [\"Mrs.\", \"last name\", \"hometown\", \"nationality\"]（原 [\"Mrs.\", \"last name\", \"good morning\", \"nationality\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：good morning 與 q12 共用，改同單元名詞 hometown",
+        "resolution": "改為 [\"太太\", \"姓\", \"家鄉\", \"國籍\"]（原 [\"太太\", \"姓\", \"早安\", \"國籍\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

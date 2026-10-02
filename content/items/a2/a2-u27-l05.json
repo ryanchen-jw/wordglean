@@ -68,7 +68,7 @@
       "word": "playful",
       "exampleEn": "My uncle has a playful smile.",
       "exampleZh": "我叔叔的笑容很調皮。",
-      "glossZh": "愛玩的；調皮的",
+      "glossZh": "調皮的；愛玩的",
       "distractorsZh": [
         "嚴肅的",
         "疲倦的",
@@ -138,13 +138,13 @@
       "stemEn": "\"Who ate my cake?\" she shouted ____.",
       "stemZh": "「誰吃了我的蛋糕？」她生氣地大叫。",
       "options": [
-        "happily",
+        "partly",
         "luckily",
         "softly",
         "angrily"
       ],
       "optionGlossZh": [
-        "快樂地",
+        "部分地",
         "幸好",
         "輕聲地",
         "生氣地"
@@ -159,13 +159,13 @@
       "options": [
         "greedy",
         "envy",
-        "angrily",
+        "playful",
         "frank"
       ],
       "optionGlossZh": [
         "貪心的",
         "羨慕",
-        "生氣地",
+        "愛玩的",
         "坦白的"
       ],
       "answer": 0
@@ -285,6 +285,36 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"我爸爸生氣地看著我。\"（原 \"她生氣地闔上書。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"調皮的；愛玩的\"（原 \"愛玩的；調皮的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：angrily 是 q12 正解，改本課形容詞 playful",
+        "resolution": "改為 [\"greedy\", \"envy\", \"playful\", \"frank\"]（原 [\"greedy\", \"envy\", \"angrily\", \"frank\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：angrily 是 q12 正解，改本課形容詞 playful",
+        "resolution": "改為 [\"貪心的\", \"羨慕\", \"愛玩的\", \"坦白的\"]（原 [\"貪心的\", \"羨慕\", \"生氣地\", \"坦白的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「\"Who ate my cake?\" she shouted happily.」開玩笑情境勉強成立，happily 換成 partly，「部分地大叫」語意不通",
+        "resolution": "改為 [\"partly\", \"luckily\", \"softly\", \"angrily\"]（原 [\"happily\", \"luckily\", \"softly\", \"angrily\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「\"Who ate my cake?\" she shouted happily.」開玩笑情境勉強成立，happily 換成 partly，「部分地大叫」語意不通",
+        "resolution": "改為 [\"部分地\", \"幸好\", \"輕聲地\", \"生氣地\"]（原 [\"快樂地\", \"幸好\", \"輕聲地\", \"生氣地\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

@@ -12,8 +12,8 @@
       "id": "a2-u18-l06-q01",
       "type": "wordCard",
       "word": "oak",
-      "exampleEn": "Our table is made of oak.",
-      "exampleZh": "我們的桌子是橡木做的。",
+      "exampleEn": "We had a picnic under a big oak.",
+      "exampleZh": "我們在一棵大橡樹下野餐。",
       "glossZh": "橡樹；橡木",
       "distractorsZh": [
         "竹子",
@@ -77,8 +77,8 @@
       "id": "a2-u18-l06-q06",
       "type": "wordCard",
       "word": "sandy",
-      "exampleEn": "Your shoes are sandy. Leave them outside.",
-      "exampleZh": "你的鞋子沾滿了沙，放在外面吧。",
+      "exampleEn": "The path to the lake is sandy, so walk slowly.",
+      "exampleZh": "通往湖邊的小路是沙地，所以要慢慢走。",
       "glossZh": "沙質的；沾滿沙的",
       "distractorsZh": [
         "溼的",
@@ -169,13 +169,13 @@
       "stemZh": "老虎瀕臨絕種，所以我們必須保護牠們的安全。",
       "options": [
         "underwater",
-        "harvest",
+        "insects",
         "endangered",
         "sandy"
       ],
       "optionGlossZh": [
         "水下的",
-        "收成",
+        "昆蟲",
         "瀕臨絕種的",
         "沾滿沙的"
       ],
@@ -278,6 +278,42 @@
         "message": "執行長第②③關裁示修正：第③關：參考答案主詞是弟弟，不是「你」",
         "resolution": "改為 \"My favorite dinosaur has a very long neck.\"（原 \"My little brother loves dinosaurs.\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「橡樹」；與 q12 跟讀（老橡樹兩百歲）、q15 島上老橡樹換了主詞＋情境＋句型。",
+        "resolution": "改為 \"We had a picnic under a big oak.\"（原 \"Our table is made of oak.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「橡樹」；與 q12 跟讀（老橡樹兩百歲）、q15 島上老橡樹換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我們在一棵大橡樹下野餐。\"（原 \"我們的桌子是橡木做的。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「沙質的」；與 q09 聽打、q15 閱讀（沙灘）換了主詞＋情境＋句型（含祈使子句）。",
+        "resolution": "改為 \"The path to the lake is sandy, so walk slowly.\"（原 \"Your shoes are sandy. Leave them outside.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「沙質的」；與 q09 聽打、q15 閱讀（沙灘）換了主詞＋情境＋句型（含祈使子句）。",
+        "resolution": "改為 \"通往湖邊的小路是沙地，所以要慢慢走。\"（原 \"你的鞋子沾滿了沙，放在外面吧。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：harvest 與 q13 共用，改本單元複數名詞 insects（Tigers are insects 可代入、靠詞義排除；creatures、wild 會變也對故不用）",
+        "resolution": "改為 [\"underwater\", \"insects\", \"endangered\", \"sandy\"]（原 [\"underwater\", \"harvest\", \"endangered\", \"sandy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：harvest 與 q13 共用，改本單元複數名詞 insects（Tigers are insects 可代入、靠詞義排除；creatures、wild 會變也對故不用）",
+        "resolution": "改為 [\"水下的\", \"昆蟲\", \"瀕臨絕種的\", \"沾滿沙的\"]（原 [\"水下的\", \"收成\", \"瀕臨絕種的\", \"沾滿沙的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

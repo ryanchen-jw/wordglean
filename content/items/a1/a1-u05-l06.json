@@ -152,15 +152,15 @@
       "stemZh": "抱歉，我搭錯公車了，我要搭的是 5 號公車。",
       "options": [
         "wrong",
-        "top",
-        "quickly",
-        "color"
+        "easy",
+        "short",
+        "close"
       ],
       "optionGlossZh": [
         "錯的",
-        "頂部",
-        "很快地",
-        "顏色"
+        "容易的",
+        "短的",
+        "近的"
       ],
       "answer": 0
     },
@@ -170,15 +170,15 @@
       "stemEn": "Please walk ____. We are late.",
       "stemZh": "請走快一點，我們遲到了。",
       "options": [
-        "top",
+        "well",
         "difficult",
-        "short",
+        "hard",
         "quickly"
       ],
       "optionGlossZh": [
-        "頂部",
+        "好好地",
         "困難的",
-        "短的",
+        "用力地",
         "很快地"
       ],
       "answer": 3
@@ -334,6 +334,42 @@
         "message": "執行長第二輪複審修正：FIX#4 要點不收沒用 color 的句子",
         "resolution": "改前：\"寫 I like blue best. 也正確\"；改後：\"寫 I like the color blue best.、Blue is my favorite color. 等也正確\"",
         "resolvedAt": "2026-10-02T12:39:50Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：top 與 q14 共用、quickly 是 q14 正解；改 red、short、close，四選項皆形容詞",
+        "resolution": "改為 [\"wrong\", \"red\", \"short\", \"close\"]（原 [\"wrong\", \"top\", \"quickly\", \"color\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：top 與 q14 共用、quickly 是 q14 正解；改 red、short、close，四選項皆形容詞",
+        "resolution": "改為 [\"錯的\", \"紅色的\", \"短的\", \"近的\"]（原 [\"錯的\", \"頂部\", \"很快地\", \"顏色\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：top 與 q13 共用、short 讓給 q13；改副詞 well、hard（walk well／hard 文法可通）",
+        "resolution": "改為 [\"well\", \"difficult\", \"hard\", \"quickly\"]（原 [\"top\", \"difficult\", \"short\", \"quickly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：top 與 q13 共用、short 讓給 q13；改副詞 well、hard（walk well／hard 文法可通）",
+        "resolution": "改為 [\"好好地\", \"困難的\", \"用力地\", \"很快地\"]（原 [\"頂部\", \"困難的\", \"短的\", \"很快地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：red 代入成 Sorry, this is the red bus. I want the number 5 bus. 說得通；換成 easy，the easy bus 語意不通",
+        "resolution": "改為 [\"wrong\", \"easy\", \"short\", \"close\"]（原 [\"wrong\", \"red\", \"short\", \"close\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：red 代入成 Sorry, this is the red bus. I want the number 5 bus. 說得通；換成 easy，the easy bus 語意不通",
+        "resolution": "改為 [\"錯的\", \"容易的\", \"短的\", \"近的\"]（原 [\"錯的\", \"紅色的\", \"短的\", \"近的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

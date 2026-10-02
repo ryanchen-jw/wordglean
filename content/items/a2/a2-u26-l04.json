@@ -27,8 +27,8 @@
       "id": "a2-u26-l04-q02",
       "type": "wordCard",
       "word": "pour",
-      "exampleEn": "It's pouring outside. Take an umbrella.",
-      "exampleZh": "外面下著傾盆大雨，帶把傘吧。",
+      "exampleEn": "My little sister poured too much sauce on her rice.",
+      "exampleZh": "我妹妹在飯上倒了太多醬汁。",
       "glossZh": "倒；（雨）傾盆而下",
       "distractorsZh": [
         "吹",
@@ -92,8 +92,8 @@
       "id": "a2-u26-l04-q07",
       "type": "wordCard",
       "word": "escape",
-      "exampleEn": "Reading is my escape from a busy day.",
-      "exampleZh": "閱讀是我暫時逃離忙碌一天的方式。",
+      "exampleEn": "The dog escaped from the garden this morning.",
+      "exampleZh": "那隻狗今天早上從花園逃走了。",
       "glossZh": "逃離；逃避的方式",
       "distractorsZh": [
         "工作",
@@ -170,16 +170,16 @@
       "stemEn": "If you work hard, you will ____.",
       "stemZh": "只要你努力，就會成功。",
       "options": [
-        "tip",
+        "pour",
         "succeed",
-        "tear",
+        "escape",
         "fix"
       ],
       "optionGlossZh": [
-        "小費",
+        "倒",
         "成功",
-        "眼淚",
-        "困境"
+        "逃走",
+        "修理"
       ],
       "answer": 1
     },
@@ -346,6 +346,54 @@
         "message": "執行長第②③關裁示修正：配合題幹修改",
         "resolution": "改為 \"我最好的朋友搬走時，我的眼眶裡有淚水。\"（原 \"我們在機場道別時，我的眼眶裡有淚水。\"）",
         "resolvedAt": "2026-10-02T18:31:57Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「倒」；與 q11（請倒水到我杯子）、q15 閱讀（媽媽倒冷飲）換了主詞＋情境（煮飯倒米）＋句型（直述）。",
+        "resolution": "改為 \"He poured the rice into a big bowl.\"（原 \"It's pouring outside. Take an umbrella.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「倒」；與 q11（請倒水到我杯子）、q15 閱讀（媽媽倒冷飲）換了主詞＋情境（煮飯倒米）＋句型（直述）。",
+        "resolution": "改為 \"他把米倒進一個大碗裡。\"（原 \"外面下著傾盆大雨，帶把傘吧。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範動詞「逃離」；與 q15 閱讀（名詞 a short escape from the city）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"The dog escaped from the garden this morning.\"（原 \"Reading is my escape from a busy day.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範動詞「逃離」；與 q15 閱讀（名詞 a short escape from the city）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"那隻狗今天早上從花園逃走了。\"（原 \"閱讀是我暫時逃離忙碌一天的方式。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tip 與 q13 共用、tear 是 q13 正解，改本課動詞 pour、escape",
+        "resolution": "改為 [\"pour\", \"succeed\", \"escape\", \"fix\"]（原 [\"tip\", \"succeed\", \"tear\", \"fix\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tip 與 q13 共用、tear 是 q13 正解，改本課動詞 pour、escape",
+        "resolution": "改為 [\"倒\", \"成功\", \"逃走\", \"修理\"]（原 [\"小費\", \"成功\", \"眼淚\", \"困境\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：例句與同課跟讀 Please pour some water into my glass. 情境、句型雷同，改寫",
+        "resolution": "改為 \"My little sister poured too much sauce on her rice.\"（原 \"He poured the rice into a big bowl.\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：例句與同課跟讀 Please pour some water into my glass. 情境、句型雷同，改寫",
+        "resolution": "改為 \"我妹妹在飯上倒了太多醬汁。\"（原 \"他把米倒進一個大碗裡。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

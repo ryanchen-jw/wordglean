@@ -92,7 +92,7 @@
       "word": "natural",
       "exampleEn": "Natural light makes the room feel warm.",
       "exampleZh": "自然光讓房間感覺很溫暖。",
-      "glossZh": "天然的；自然的",
+      "glossZh": "自然的；天然的",
       "distractorsZh": [
         "人造的",
         "便宜的",
@@ -105,7 +105,7 @@
       "word": "rock",
       "exampleEn": "A big rock fell on the road.",
       "exampleZh": "一塊大石頭掉到馬路上。",
-      "glossZh": "岩石；石頭",
+      "glossZh": "石頭；岩石",
       "distractorsZh": [
         "沙子",
         "樹枝",
@@ -168,16 +168,16 @@
       "stemEn": "This cream is made only from plants. It's all ____.",
       "stemZh": "這款乳霜完全用植物做成，全部都是天然的。",
       "options": [
-        "thunderstorm",
+        "windy",
         "seaside",
         "natural",
-        "rock"
+        "fried"
       ],
       "optionGlossZh": [
-        "雷雨",
+        "風大的",
         "海邊",
         "天然的",
-        "岩石"
+        "油炸的"
       ],
       "answer": 2
     },
@@ -284,6 +284,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u18-l02-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"出去鎮上買東西\",\"去附近的海邊游泳\",\"在房間裡看雨\"]（原 [\"出去鎮上買東西\",\"去游泳\",\"在房間裡看雨\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"自然的；天然的\"（原 \"天然的；自然的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"石頭；岩石\"（原 \"岩石；石頭\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：thunderstorm、rock 與 q13 共用，改形容詞 windy、fried（能代入、靠 made only from plants 排除）",
+        "resolution": "改為 [\"windy\", \"seaside\", \"natural\", \"fried\"]（原 [\"thunderstorm\", \"seaside\", \"natural\", \"rock\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：thunderstorm、rock 與 q13 共用，改形容詞 windy、fried（能代入、靠 made only from plants 排除）",
+        "resolution": "改為 [\"風大的\", \"海邊\", \"天然的\", \"油炸的\"]（原 [\"雷雨\", \"海邊\", \"天然的\", \"岩石\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

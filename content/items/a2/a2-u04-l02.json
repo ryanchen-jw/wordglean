@@ -168,16 +168,16 @@
       "stemEn": "He ____ to help me with my bags.",
       "stemZh": "他主動說要幫我拿行李。",
       "options": [
-        "included",
+        "spilled",
         "understood",
         "offered",
-        "created"
+        "quit"
       ],
       "optionGlossZh": [
-        "包含",
+        "灑出",
         "理解",
         "主動提出",
-        "創造"
+        "放棄；辭去"
       ],
       "answer": 2
     },
@@ -296,6 +296,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"換幾個新的球員上場\"（原 \"換新的球員上場\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：included、created 與 q13 共用，改本單元 seemed、quit（可接不定詞，靠語意排除）",
+        "resolution": "改為 [\"seemed\", \"understood\", \"offered\", \"quit\"]（原 [\"included\", \"understood\", \"offered\", \"created\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：included、created 與 q13 共用，改本單元 seemed、quit（可接不定詞，靠語意排除）",
+        "resolution": "改為 [\"似乎\", \"理解\", \"主動提出\", \"放棄；辭去\"]（原 [\"包含\", \"理解\", \"主動提出\", \"創造\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：He seemed to help me with my bags. 只看英文文法語意都通；換成 spilled，He spilled to help me 語意不通",
+        "resolution": "改為 [\"spilled\", \"understood\", \"offered\", \"quit\"]（原 [\"seemed\", \"understood\", \"offered\", \"quit\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：He seemed to help me with my bags. 只看英文文法語意都通；換成 spilled，He spilled to help me 語意不通",
+        "resolution": "改為 [\"灑出\", \"理解\", \"主動提出\", \"放棄；辭去\"]（原 [\"似乎\", \"理解\", \"主動提出\", \"放棄；辭去\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

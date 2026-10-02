@@ -94,7 +94,7 @@
       "word": "downstairs",
       "exampleEn": "Breakfast is ready. Come downstairs!",
       "exampleZh": "早餐好了，下樓來吧！",
-      "glossZh": "在樓下；往樓下",
+      "glossZh": "往樓下；在樓下",
       "distractorsZh": [
         "在樓上",
         "在屋外",
@@ -184,14 +184,14 @@
       "stemZh": "我的房間在樓上，在二樓。",
       "options": [
         "upstairs",
-        "drawer",
-        "sew",
+        "outside",
+        "yesterday",
         "bulb"
       ],
       "optionGlossZh": [
         "在樓上",
-        "抽屜",
-        "縫",
+        "在外面",
+        "昨天",
         "燈泡"
       ],
       "answer": 0
@@ -347,6 +347,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u08-l02-q11 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"On the balcony upstairs\",\"In a drawer downstairs\",\"In the bathroom upstairs\"]（原 [\"On the balcony\",\"In a drawer downstairs\",\"In the bathroom upstairs\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"往樓下；在樓下\"（原 \"在樓下；往樓下\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：drawer、sew 放不進 My room is ___，改 outside、本課 downstairs（文法成立，與二樓／樓上語意衝突）",
+        "resolution": "改為 [\"upstairs\", \"outside\", \"downstairs\", \"bulb\"]（原 [\"upstairs\", \"drawer\", \"sew\", \"bulb\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：drawer、sew 放不進 My room is ___，改 outside、本課 downstairs（文法成立，與二樓／樓上語意衝突）",
+        "resolution": "改為 [\"在樓上\", \"在外面\", \"在樓下\", \"燈泡\"]（原 [\"在樓上\", \"抽屜\", \"縫\", \"燈泡\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My room is downstairs, on the second floor. 只看英文可成立（說話者在三樓）；換成 yesterday，My room is yesterday 語意不通",
+        "resolution": "改為 [\"upstairs\", \"outside\", \"yesterday\", \"bulb\"]（原 [\"upstairs\", \"outside\", \"downstairs\", \"bulb\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My room is downstairs, on the second floor. 只看英文可成立（說話者在三樓）；換成 yesterday，My room is yesterday 語意不通",
+        "resolution": "改為 [\"在樓上\", \"在外面\", \"昨天\", \"燈泡\"]（原 [\"在樓上\", \"在外面\", \"在樓下\", \"燈泡\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

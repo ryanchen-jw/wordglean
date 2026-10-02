@@ -29,7 +29,7 @@
       "word": "slide",
       "exampleEn": "Our teacher showed us twenty slides about Japan.",
       "exampleZh": "老師給我們看了二十張關於日本的投影片。",
-      "glossZh": "溜滑梯；投影片",
+      "glossZh": "投影片；溜滑梯",
       "distractorsZh": [
         "鞦韆",
         "地圖",
@@ -92,8 +92,8 @@
       "id": "a2-u26-l05-q07",
       "type": "wordCard",
       "word": "pack",
-      "exampleEn": "I bought a pack of cards.",
-      "exampleZh": "我買了一副撲克牌。",
+      "exampleEn": "Before we moved, it took us a whole week to pack.",
+      "exampleZh": "搬家前，我們花了整整一週打包。",
       "glossZh": "打包；一包；一副",
       "distractorsZh": [
         "一杯",
@@ -138,13 +138,13 @@
       "stemEn": "Read the ____ and answer the questions below.",
       "stemZh": "閱讀這段文章並回答下面的問題。",
       "options": [
-        "rope",
+        "tie",
         "pack",
         "passage",
         "chain"
       ],
       "optionGlossZh": [
-        "繩子",
+        "領帶",
         "一包",
         "一段文章",
         "鍊子"
@@ -157,16 +157,16 @@
       "stemEn": "The test ____ of three parts.",
       "stemZh": "這份考試由三個部分組成。",
       "options": [
-        "display",
+        "speaks",
         "consists",
         "slide",
-        "passage"
+        "thinks"
       ],
       "optionGlossZh": [
-        "展示",
+        "說",
         "組成",
         "投影片",
-        "通道"
+        "想"
       ],
       "answer": 1
     },
@@ -261,6 +261,48 @@
         "message": "執行長第②③關裁示修正：中譯配合英文修改",
         "resolution": "改為 \"上週，我們班去參觀博物館。這趟參觀分成兩個部分。首先，我們看了一個老玩具展，像是給洋娃娃玩的小木頭溜滑梯。接著，我們穿過一條又長又暗的通道，來到一個擺滿老地圖的房間。有一扇門很低，我們得彎下腰才能通過。離開前，我們問了警衛很多問題，老師對他說：「抱歉打擾您了。」最後，我們把筆記收進包包裡。\"（原 \"上週，我們班去參觀博物館。這趟參觀分成兩個部分。首先，我們看了一個老玩具展，像是給洋娃娃玩的小木頭溜滑梯。接著，我們穿過一條又長又暗的通道，來到一個擺滿老地圖的房間。有一扇門很低，我們得彎下腰才能通過。老師說：「抱歉打擾大家一下，請不要走散。」最後，我們把筆記收進包包裡。\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"投影片；溜滑梯\"（原 \"溜滑梯；投影片\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「打包」（不及物）；與 q11（別忘了帶牙刷）、q14 閱讀（筆記放進包包）、q15 翻譯（還沒打包行李）換了主詞＋情境（搬家）＋句型（it took us…to pack）。",
+        "resolution": "改為 \"Before we moved, it took us a whole week to pack.\"（原 \"I bought a pack of cards.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「打包」（不及物）；與 q11（別忘了帶牙刷）、q14 閱讀（筆記放進包包）、q15 翻譯（還沒打包行李）換了主詞＋情境（搬家）＋句型（it took us…to pack）。",
+        "resolution": "改為 \"搬家前，我們花了整整一週打包。\"（原 \"我買了一副撲克牌。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：rope 為後面課字超範圍，改本單元 tie",
+        "resolution": "改為 [\"tie\", \"pack\", \"passage\", \"chain\"]（原 [\"rope\", \"pack\", \"passage\", \"chain\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：rope 為後面課字超範圍，改本單元 tie",
+        "resolution": "改為 [\"領帶\", \"一包\", \"一段文章\", \"鍊子\"]（原 [\"繩子\", \"一包\", \"一段文章\", \"鍊子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：passage 是 q12 正解；display 放不進空格，改可接 of 的動詞 speaks、thinks（靠詞義排除）",
+        "resolution": "改為 [\"speaks\", \"consists\", \"slide\", \"thinks\"]（原 [\"display\", \"consists\", \"slide\", \"passage\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：passage 是 q12 正解；display 放不進空格，改可接 of 的動詞 speaks、thinks（靠詞義排除）",
+        "resolution": "改為 [\"說\", \"組成\", \"投影片\", \"想\"]（原 [\"展示\", \"組成\", \"投影片\", \"通道\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

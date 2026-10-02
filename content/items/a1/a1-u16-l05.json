@@ -110,7 +110,7 @@
       "word": "science",
       "exampleEn": "We do fun things in science class.",
       "exampleZh": "我們在自然課上做有趣的事。",
-      "glossZh": "科學；自然科",
+      "glossZh": "自然科；科學",
       "distractorsZh": [
         "歷史",
         "美術",
@@ -155,13 +155,13 @@
       "stemZh": "例如，蘋果和香蕉都是水果。",
       "options": [
         "example",
-        "list",
+        "word",
         "science",
         "page"
       ],
       "optionGlossZh": [
         "例子",
-        "清單",
+        "字",
         "科學",
         "頁"
       ],
@@ -285,6 +285,24 @@
         "message": "執行長第②③關裁示修正：第③關 FIX",
         "resolution": "改前：\"「在第三頁」用 on page three（page 前不加 the）\"；改後：\"「在第三頁」可寫 on page three（這時 page 前不加 the），也可寫 on the third page\"",
         "resolvedAt": "2026-10-02T12:42:15Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"自然科；科學\"（原 \"科學；自然科\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：list 與 q14 的 lists 同字共用，換 word",
+        "resolution": "改為 [\"example\", \"word\", \"science\", \"page\"]（原 [\"example\", \"list\", \"science\", \"page\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：list 與 q14 的 lists 同字共用，換 word",
+        "resolution": "改為 [\"例子\", \"字\", \"科學\", \"頁\"]（原 [\"例子\", \"清單\", \"科學\", \"頁\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

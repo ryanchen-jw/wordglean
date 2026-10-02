@@ -31,7 +31,7 @@
       "word": "advertising",
       "exampleEn": "Advertising on TV is very expensive.",
       "exampleZh": "在電視上打廣告非常貴。",
-      "glossZh": "廣告業；廣告",
+      "glossZh": "廣告；廣告業",
       "distractorsZh": [
         "教育",
         "運動",
@@ -44,7 +44,7 @@
       "word": "portrait",
       "exampleEn": "This portrait of my mother is my favorite picture.",
       "exampleZh": "這幅我媽媽的畫像是我最喜歡的畫。",
-      "glossZh": "肖像；畫像",
+      "glossZh": "畫像；肖像",
       "distractorsZh": [
         "風景畫",
         "地圖",
@@ -55,8 +55,8 @@
       "id": "a2-u21-l03-q04",
       "type": "wordCard",
       "word": "fiction",
-      "exampleEn": "This book is fiction, not a true story.",
-      "exampleZh": "這本書是虛構的，不是真實的故事。",
+      "exampleEn": "My aunt writes fiction for young readers.",
+      "exampleZh": "我阿姨為年輕讀者寫小說。",
       "glossZh": "小說；虛構作品",
       "distractorsZh": [
         "新聞",
@@ -172,16 +172,16 @@
       "stemEn": "My sister works in ____. She makes posters for new products.",
       "stemZh": "我姊姊在廣告業工作，她替新產品做海報。",
       "options": [
-        "portrait",
+        "tradition",
         "classic",
         "advertising",
-        "episode"
+        "fiction"
       ],
       "optionGlossZh": [
-        "肖像",
+        "傳統",
         "經典的",
         "廣告業",
-        "一集"
+        "小說"
       ],
       "answer": 2
     },
@@ -294,6 +294,54 @@
         "message": "第②關：正解選項明顯是最長的一個（「一張舊的肥皂廣告」8 字 vs 4–5 字），違反「正解不落在最長集合」；應縮短正解或加長干擾項。",
         "resolution": "執行長裁示：「單題正解最長」類 issue 由全級長度名次分布規則統一處理",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"廣告；廣告業\"（原 \"廣告業；廣告\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"畫像；肖像\"（原 \"肖像；畫像\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「小說」；與 q11（哥哥愛看科幻電影）、q17（睡前讀小說）換了主詞＋情境（寫作）＋句型。",
+        "resolution": "改為 \"My aunt writes fiction for young readers.\"（原 \"This book is fiction, not a true story.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「小說」；與 q11（哥哥愛看科幻電影）、q17（睡前讀小說）換了主詞＋情境（寫作）＋句型。",
+        "resolution": "改為 \"我阿姨為年輕讀者寫小說。\"（原 \"這本書是虛構的，不是真實的故事。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：portrait 是 q13 正解、episode 與 q13 共用，改 publishing、fiction（可放 works in ___）",
+        "resolution": "改為 [\"publishing\", \"classic\", \"advertising\", \"fiction\"]（原 [\"portrait\", \"classic\", \"advertising\", \"episode\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：portrait 是 q13 正解、episode 與 q13 共用，改 publishing、fiction（可放 works in ___）",
+        "resolution": "改為 [\"出版業\", \"經典的\", \"廣告業\", \"小說\"]（原 [\"肖像\", \"經典的\", \"廣告業\", \"一集\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My sister works in publishing. She makes posters for new products.」出版業也做宣傳海報，說得通；publishing 換成 tradition，「works in tradition」文法可放但語意不通",
+        "resolution": "改為 [\"tradition\", \"classic\", \"advertising\", \"fiction\"]（原 [\"publishing\", \"classic\", \"advertising\", \"fiction\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My sister works in publishing. She makes posters for new products.」出版業也做宣傳海報，說得通；publishing 換成 tradition，「works in tradition」文法可放但語意不通",
+        "resolution": "改為 [\"傳統\", \"經典的\", \"廣告業\", \"小說\"]（原 [\"出版業\", \"經典的\", \"廣告業\", \"小說\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

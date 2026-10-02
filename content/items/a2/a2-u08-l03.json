@@ -29,7 +29,7 @@
       "word": "tidy",
       "exampleEn": "Please tidy your room before dinner.",
       "exampleZh": "晚餐前請把房間整理好。",
-      "glossZh": "整理（動詞）；整齊的",
+      "glossZh": "整理；整齊的",
       "distractorsZh": [
         "弄髒",
         "吵鬧的",
@@ -170,15 +170,15 @@
       "stemEn": "Can you help me ____ my desk? I can't find anything.",
       "stemZh": "你可以幫我整理書桌嗎？我什麼都找不到。",
       "options": [
-        "mirror",
+        "drill",
         "tidy",
-        "gate",
+        "carry",
         "apartment"
       ],
       "optionGlossZh": [
-        "鏡子",
+        "鑽孔",
         "整理",
-        "大門",
+        "搬",
         "公寓"
       ],
       "answer": 1
@@ -328,6 +328,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u08-l03-q15#1 目標第 1 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"一位清潔人員\",\"她的媽媽\",\"公寓房東\"]（原 [\"清潔人員\",\"Amy 的媽媽\",\"房東\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）；單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"整理；整齊的\"（原 \"整理（動詞）；整齊的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：mirror、gate 放不進 help me ___ my desk，改動詞 drill、carry（文法成立，與找不到東西語意不合）",
+        "resolution": "改為 [\"drill\", \"tidy\", \"carry\", \"apartment\"]（原 [\"mirror\", \"tidy\", \"gate\", \"apartment\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：mirror、gate 放不進 help me ___ my desk，改動詞 drill、carry（文法成立，與找不到東西語意不合）",
+        "resolution": "改為 [\"鑽孔\", \"整理\", \"搬\", \"公寓\"]（原 [\"鏡子\", \"整理\", \"大門\", \"公寓\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

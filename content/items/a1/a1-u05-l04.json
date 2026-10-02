@@ -156,13 +156,13 @@
         "sure",
         "light",
         "true",
-        "difference"
+        "different"
       ],
       "optionGlossZh": [
         "確定的",
         "輕的",
         "真實的",
-        "差別"
+        "不同的"
       ],
       "answer": 1
     },
@@ -172,16 +172,16 @@
       "stemEn": "I feel ____ today. Yesterday I was sick.",
       "stemZh": "我今天覺得好多了，我昨天生病了。",
       "options": [
-        "difference",
+        "important",
         "better",
-        "true",
-        "sure"
+        "white",
+        "long"
       ],
       "optionGlossZh": [
-        "差別",
+        "重要的",
         "比較好的",
-        "真實的",
-        "確定的"
+        "白色的",
+        "長的"
       ],
       "answer": 1
     },
@@ -349,6 +349,42 @@
         "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
         "resolution": "改前：[\"Leo\"]；改後：[\"Sunday\",\"Saturday\",\"Leo\"]",
         "resolvedAt": "2026-10-02T12:39:44Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：difference 與 q14 共用且非形容詞，改 different，四選項皆形容詞；sure、true 留本題",
+        "resolution": "改為 [\"sure\", \"light\", \"true\", \"different\"]（原 [\"sure\", \"light\", \"true\", \"difference\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：difference 與 q14 共用且非形容詞，改 different，四選項皆形容詞；sure、true 留本題",
+        "resolution": "改為 [\"確定的\", \"輕的\", \"真實的\", \"不同的\"]（原 [\"確定的\", \"輕的\", \"真實的\", \"差別\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：difference、true、sure 與 q13 共用；改 important、free、bad，四選項皆形容詞；避開 good、well（也對）、different（語意模糊）",
+        "resolution": "改為 [\"important\", \"better\", \"free\", \"bad\"]（原 [\"difference\", \"better\", \"true\", \"sure\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：difference、true、sure 與 q13 共用；改 important、free、bad，四選項皆形容詞；避開 good、well（也對）、different（語意模糊）",
+        "resolution": "改為 [\"重要的\", \"比較好的\", \"有空的\", \"糟的\"]（原 [\"差別\", \"比較好的\", \"真實的\", \"確定的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：bad、free 代入成 I feel bad today／I feel free today. Yesterday I was sick. 說得通；換成 white、long，I feel white/long today 語意不通",
+        "resolution": "改為 [\"important\", \"better\", \"white\", \"long\"]（原 [\"important\", \"better\", \"free\", \"bad\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：bad、free 代入成 I feel bad today／I feel free today. Yesterday I was sick. 說得通；換成 white、long，I feel white/long today 語意不通",
+        "resolution": "改為 [\"重要的\", \"比較好的\", \"白色的\", \"長的\"]（原 [\"重要的\", \"比較好的\", \"有空的\", \"糟的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

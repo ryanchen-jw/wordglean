@@ -16,7 +16,7 @@
       "word": "phone",
       "exampleEn": "My phone is in my bag.",
       "exampleZh": "我的手機在包包裡。",
-      "glossZh": "電話；手機",
+      "glossZh": "手機；電話",
       "distractorsZh": [
         "錢包",
         "鑰匙",
@@ -29,7 +29,7 @@
       "word": "worker",
       "exampleEn": "The factory has fifty workers.",
       "exampleZh": "這間工廠有五十位員工。",
-      "glossZh": "工人；員工",
+      "glossZh": "員工；工人",
       "distractorsZh": [
         "老闆",
         "客人",
@@ -53,8 +53,8 @@
       "id": "a1-u07-l02-q04",
       "type": "wordCard",
       "word": "message",
-      "exampleEn": "Please leave me a message.",
-      "exampleZh": "請留言給我。",
+      "exampleEn": "I read your message this morning.",
+      "exampleZh": "我今天早上看了你的訊息。",
       "glossZh": "訊息；留言",
       "distractorsZh": [
         "禮物",
@@ -171,15 +171,15 @@
       "stemZh": "他工作很努力，他的生意很成功。",
       "options": [
         "successful",
-        "sleep",
+        "short",
         "meeting",
-        "skill"
+        "wrong"
       ],
       "optionGlossZh": [
         "成功的",
-        "睡覺",
+        "短的",
         "會議",
-        "技能"
+        "錯的"
       ],
       "answer": 0
     },
@@ -339,6 +339,54 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「Ken 得到了工作」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:40:10Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"手機；電話\"（原 \"電話；手機\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"員工；工人\"（原 \"工人；員工\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 message＝訊息；與 q11 手機有新訊息、q15 閱讀（媽媽傳來祝福）換了主詞＋情境＋句型",
+        "resolution": "改為 \"I read your message this morning.\"（原 \"Please leave me a message.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 message＝訊息；與 q11 手機有新訊息、q15 閱讀（媽媽傳來祝福）換了主詞＋情境＋句型",
+        "resolution": "改為 \"我今天早上看了你的訊息。\"（原 \"請留言給我。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：sleep、skill 與 q13 共用且放不進，改形容詞 special、different（文法可通）",
+        "resolution": "改為 [\"successful\", \"special\", \"meeting\", \"different\"]（原 [\"successful\", \"sleep\", \"meeting\", \"skill\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：sleep、skill 與 q13 共用且放不進，改形容詞 special、different（文法可通）",
+        "resolution": "改為 [\"成功的\", \"特別的\", \"會議\", \"不同的\"]（原 [\"成功的\", \"睡覺\", \"會議\", \"技能\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：special、different 代入成 his business is very special/different 說得通；換成 short、wrong，his business is very short/wrong 文法通、語意不通",
+        "resolution": "改為 [\"successful\", \"short\", \"meeting\", \"wrong\"]（原 [\"successful\", \"special\", \"meeting\", \"different\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：special、different 代入成 his business is very special/different 說得通；換成 short、wrong，his business is very short/wrong 文法通、語意不通",
+        "resolution": "改為 [\"成功的\", \"短的\", \"會議\", \"錯的\"]（原 [\"成功的\", \"特別的\", \"會議\", \"不同的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

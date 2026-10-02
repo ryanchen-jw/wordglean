@@ -68,7 +68,7 @@
       "word": "concern",
       "exampleEn": "Thank you for your concern.",
       "exampleZh": "謝謝你的關心。",
-      "glossZh": "擔心；關心",
+      "glossZh": "關心；擔心",
       "distractorsZh": [
         "禮物",
         "幫忙",
@@ -139,13 +139,13 @@
       "stemZh": "出國留學是學習新語言的好機會。",
       "options": [
         "attention",
-        "evidence",
+        "prediction",
         "concern",
         "opportunity"
       ],
       "optionGlossZh": [
         "注意",
-        "證據",
+        "預測",
         "擔心",
         "機會"
       ],
@@ -255,6 +255,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u23-l02-q14#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"加拿大的一所大學\",\"台灣的家裡\",\"日本的大學\"]（原 [\"加拿大的一所大學\",\"家裡\",\"日本\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"關心；擔心\"（原 \"擔心；關心\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：evidence 是 q13 正解，改本單元 prediction",
+        "resolution": "改為 [\"attention\", \"prediction\", \"concern\", \"opportunity\"]（原 [\"attention\", \"evidence\", \"concern\", \"opportunity\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：evidence 是 q13 正解，改本單元 prediction",
+        "resolution": "改為 [\"注意\", \"預測\", \"擔心\", \"機會\"]（原 [\"注意\", \"證據\", \"擔心\", \"機會\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

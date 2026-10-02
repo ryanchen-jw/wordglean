@@ -157,14 +157,14 @@
       "options": [
         "reporter",
         "address",
-        "sorry",
-        "thank"
+        "name",
+        "birth"
       ],
       "optionGlossZh": [
         "記者",
         "地址",
-        "抱歉的",
-        "感謝"
+        "名字",
+        "出生"
       ],
       "answer": 1
     },
@@ -405,6 +405,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u02-l03-q15#0 目標第 1 長、消除單題異常值（改了選項 1、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"我們的老師\",\"校刊記者\",\"她的朋友\"]（原 [\"老師\",\"校刊記者\",\"Nina 的朋友\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：thank 是 q14 正解、sorry 與 q14 共用，改 name、birth 使四選項皆名詞",
+        "resolution": "改為 [\"reporter\", \"address\", \"name\", \"birth\"]（原 [\"reporter\", \"address\", \"sorry\", \"thank\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：thank 是 q14 正解、sorry 與 q14 共用，改 name、birth 使四選項皆名詞",
+        "resolution": "改為 [\"記者\", \"地址\", \"名字\", \"出生\"]（原 [\"記者\", \"地址\", \"抱歉的\", \"感謝\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Sorry 與 q13 共用，改 Need（文法可通，與 Introduce 共兩個放得進）",
+        "resolution": "改為 [\"Thank\", \"Need\", \"Personal\", \"Introduce\"]（原 [\"Thank\", \"Sorry\", \"Personal\", \"Introduce\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Sorry 與 q13 共用，改 Need（文法可通，與 Introduce 共兩個放得進）",
+        "resolution": "改為 [\"感謝\", \"需要\", \"個人的\", \"介紹\"]（原 [\"感謝\", \"抱歉的\", \"個人的\", \"介紹\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：指定必修：Need 換成本課已教的 Sorry，Sorry you very much! 明顯不通（本題免「兩個放得進」）",
+        "resolution": "改為 [\"Thank\", \"Sorry\", \"Personal\", \"Introduce\"]（原 [\"Thank\", \"Need\", \"Personal\", \"Introduce\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：指定必修：Need 換成本課已教的 Sorry，Sorry you very much! 明顯不通（本題免「兩個放得進」）",
+        "resolution": "改為 [\"感謝\", \"抱歉的\", \"個人的\", \"介紹\"]（原 [\"感謝\", \"需要\", \"個人的\", \"介紹\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

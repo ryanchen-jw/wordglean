@@ -154,14 +154,14 @@
       "stemZh": "帶把傘，今天會下雨。",
       "options": [
         "rainy",
-        "pet",
-        "tree",
+        "tired",
+        "sweet",
         "fire"
       ],
       "optionGlossZh": [
         "下雨的",
-        "寵物",
-        "樹",
+        "累的",
+        "甜的",
         "火"
       ],
       "answer": 0
@@ -173,15 +173,15 @@
       "stemZh": "狗或貓都可以是很好的寵物。",
       "options": [
         "tree",
-        "fire",
+        "coach",
         "pet",
-        "cloudy"
+        "driver"
       ],
       "optionGlossZh": [
         "樹",
-        "火",
+        "教練",
         "寵物",
-        "多雲的"
+        "司機"
       ],
       "answer": 2
     },
@@ -324,6 +324,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u15-l01-q15#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"下雪、很冷\",\"晴朗溫暖\",\"下大雨\"]（原 [\"下雪、很冷\",\"晴朗又很溫暖\",\"下雨\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：pet 是 q14 正解、tree 與 q14 共用，換形容詞 sunny/snowy，兩個可放進空格",
+        "resolution": "改為 [\"rainy\", \"sunny\", \"snowy\", \"fire\"]（原 [\"rainy\", \"pet\", \"tree\", \"fire\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：pet 是 q14 正解、tree 與 q14 共用，換形容詞 sunny/snowy，兩個可放進空格",
+        "resolution": "改為 [\"下雨的\", \"晴朗的\", \"下雪的\", \"火\"]（原 [\"下雨的\", \"寵物\", \"樹\", \"火\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：fire 與 q13 共用換 coach；cloudy 是形容詞放不進 a good ____ 換 driver，四項皆名詞",
+        "resolution": "改為 [\"tree\", \"coach\", \"pet\", \"driver\"]（原 [\"tree\", \"fire\", \"pet\", \"cloudy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：fire 與 q13 共用換 coach；cloudy 是形容詞放不進 a good ____ 換 driver，四項皆名詞",
+        "resolution": "改為 [\"樹\", \"教練\", \"寵物\", \"司機\"]（原 [\"樹\", \"火\", \"寵物\", \"多雲的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Take an umbrella. It is snowy today.（下雪也撐傘）與 It is sunny today.（撐傘遮陽）只看英文都說得通；snowy 換 sweet、sunny 換 tired，形容詞文法可放但天氣語意不通",
+        "resolution": "改為 [\"rainy\", \"tired\", \"sweet\", \"fire\"]（原 [\"rainy\", \"sunny\", \"snowy\", \"fire\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Take an umbrella. It is snowy today.（下雪也撐傘）與 It is sunny today.（撐傘遮陽）只看英文都說得通；snowy 換 sweet、sunny 換 tired，形容詞文法可放但天氣語意不通",
+        "resolution": "改為 [\"下雨的\", \"累的\", \"甜的\", \"火\"]（原 [\"下雨的\", \"晴朗的\", \"下雪的\", \"火\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

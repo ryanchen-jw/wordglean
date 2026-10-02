@@ -42,8 +42,8 @@
       "id": "a1-u04-l03-q03",
       "type": "wordCard",
       "word": "share",
-      "exampleEn": "Can I share your umbrella?",
-      "exampleZh": "我可以跟你共用雨傘嗎？",
+      "exampleEn": "My little brother likes to share his toys with me.",
+      "exampleZh": "我弟弟喜歡和我分享他的玩具。",
       "glossZh": "分享；共用",
       "distractorsZh": [
         "弄丟",
@@ -355,6 +355,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u04-l03-q15#1 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"一些新鮮的水果\",\"一個很大的生日蛋糕\",\"給孩子的禮物\"]（原 [\"一些書\",\"一個很大的生日蛋糕\",\"給孩子的禮物\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 share＝分享；與 q16 翻譯（請求分蛋糕）、q15 閱讀（一起吃飯）換了主詞＋情境＋句型",
+        "resolution": "改為 \"My little brother likes to share his toys with me.\"（原 \"Can I share your umbrella?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 share＝分享；與 q16 翻譯（請求分蛋糕）、q15 閱讀（一起吃飯）換了主詞＋情境＋句型",
+        "resolution": "改為 \"我弟弟喜歡和我分享他的玩具。\"（原 \"我可以跟你共用雨傘嗎？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -81,7 +81,7 @@
       "word": "another",
       "exampleEn": "Can I have another cup of tea?",
       "exampleZh": "我可以再來一杯茶嗎？",
-      "glossZh": "另一個；再一個",
+      "glossZh": "再一個；另一個",
       "distractorsZh": [
         "同一個",
         "最後一個",
@@ -151,16 +151,16 @@
       "stemEn": "____ are you sad? Tell me.",
       "stemZh": "你為什麼難過？告訴我。",
       "options": [
-        "Much",
+        "Really",
         "Why",
-        "Most",
-        "Too"
+        "How",
+        "Very"
       ],
       "optionGlossZh": [
-        "很多",
+        "真的",
         "為什麼",
-        "大多數的",
-        "也"
+        "怎麼",
+        "非常"
       ],
       "answer": 1
     },
@@ -279,6 +279,24 @@
         "message": "執行長裁示：正解長度名次分布：a1-u19-l01-q10 目標第 3 長、消除單題異常值（改了選項 2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"Something to eat\",\"A cup of hot tea\",\"More coffee\"]（原 [\"Something to eat\",\"Some tea\",\"Another cup of coffee\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"再一個；另一個\"（原 \"另一個；再一個\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Much、Most、Too 皆與 q14 共用，改副詞 Really、How、Very（How 文法可放入，避開也通的 When）",
+        "resolution": "改為 [\"Really\", \"Why\", \"How\", \"Very\"]（原 [\"Much\", \"Why\", \"Most\", \"Too\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Much、Most、Too 皆與 q14 共用，改副詞 Really、How、Very（How 文法可放入，避開也通的 When）",
+        "resolution": "改為 [\"真的\", \"為什麼\", \"怎麼\", \"非常\"]（原 [\"很多\", \"為什麼\", \"大多數的\", \"也\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -172,13 +172,13 @@
         "never",
         "always",
         "today",
-        "month"
+        "now"
       ],
       "optionGlossZh": [
         "從不",
         "總是",
         "今天",
-        "月"
+        "現在"
       ],
       "answer": 0
     },
@@ -188,13 +188,13 @@
       "stemEn": "There are about four weeks in a ____.",
       "stemZh": "一個月大約有四個星期。",
       "options": [
-        "today",
+        "year",
         "night",
         "number",
         "month"
       ],
       "optionGlossZh": [
-        "今天",
+        "年",
         "夜晚",
         "號碼",
         "月"
@@ -366,6 +366,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"去醫院上一整天班\"（原 \"去醫院上班\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：month 是 q15 正解，改 now，四選項皆副詞；today 留本題、q15 改用 year",
+        "resolution": "改為 [\"never\", \"always\", \"today\", \"now\"]（原 [\"never\", \"always\", \"today\", \"month\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：month 是 q15 正解，改 now，四選項皆副詞；today 留本題、q15 改用 year",
+        "resolution": "改為 [\"從不\", \"總是\", \"今天\", \"現在\"]（原 [\"從不\", \"總是\", \"今天\", \"月\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：today 與 q14 共用，改 year，四選項皆名詞",
+        "resolution": "改為 [\"year\", \"night\", \"number\", \"month\"]（原 [\"today\", \"night\", \"number\", \"month\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：today 與 q14 共用，改 year，四選項皆名詞",
+        "resolution": "改為 [\"年\", \"夜晚\", \"號碼\", \"月\"]（原 [\"今天\", \"夜晚\", \"號碼\", \"月\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

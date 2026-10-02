@@ -151,16 +151,16 @@
       "stemEn": "Hi, where is the ____? I need to check in.",
       "stemZh": "你好，櫃台人員在哪裡？我要辦入住。",
       "options": [
-        "labor",
+        "bonus",
         "receptionist",
         "training",
-        "fisherman"
+        "labor"
       ],
       "optionGlossZh": [
-        "勞力",
+        "獎金",
         "櫃台人員",
         "訓練",
-        "漁夫"
+        "勞動"
       ],
       "answer": 1
     },
@@ -171,14 +171,14 @@
       "stemZh": "她工作很努力，賺了很多錢。",
       "options": [
         "earns",
-        "labor",
-        "staff",
+        "sells",
+        "buys",
         "manager"
       ],
       "optionGlossZh": [
         "賺",
-        "勞力",
-        "員工",
+        "賣",
+        "買",
         "經理"
       ],
       "answer": 0
@@ -340,6 +340,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u09-l02-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"接待訪客、接聽電話\",\"打掃整間辦公室\",\"和經理開會\"]（原 [\"接待訪客、接聽電話\",\"打掃整間辦公室和會議室\",\"開會\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；干擾項只用本課、先前課或低一級字：labor 與 q14 共用改 bonus；fisherman 為 a2-u09-l04 超範圍改 captain",
+        "resolution": "改為 [\"bonus\", \"receptionist\", \"training\", \"captain\"]（原 [\"labor\", \"receptionist\", \"training\", \"fisherman\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；干擾項只用本課、先前課或低一級字：labor 與 q14 共用改 bonus；fisherman 為 a2-u09-l04 超範圍改 captain",
+        "resolution": "改為 [\"獎金\", \"櫃台人員\", \"訓練\", \"船長\"]（原 [\"勞力\", \"櫃台人員\", \"訓練\", \"漁夫\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：labor 與 q13 共用且原本無干擾項放得進動詞空格，labor 改 sells、staff 改 buys（能代入、靠搭配排除）",
+        "resolution": "改為 [\"earns\", \"sells\", \"buys\", \"manager\"]（原 [\"earns\", \"labor\", \"staff\", \"manager\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：labor 與 q13 共用且原本無干擾項放得進動詞空格，labor 改 sells、staff 改 buys（能代入、靠搭配排除）",
+        "resolution": "改為 [\"賺\", \"賣\", \"買\", \"經理\"]（原 [\"賺\", \"勞力\", \"員工\", \"經理\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：captain 代入「Hi, where is the captain? I need to check in.」在郵輪情境說得通，換成本課 labor：「where is the labor」文法通、語意不通",
+        "resolution": "改為 [\"bonus\", \"receptionist\", \"training\", \"labor\"]（原 [\"bonus\", \"receptionist\", \"training\", \"captain\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：captain 代入「Hi, where is the captain? I need to check in.」在郵輪情境說得通，換成本課 labor：「where is the labor」文法通、語意不通",
+        "resolution": "改為 [\"獎金\", \"櫃台人員\", \"訓練\", \"勞動\"]（原 [\"獎金\", \"櫃台人員\", \"訓練\", \"船長\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

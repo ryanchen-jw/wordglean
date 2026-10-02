@@ -149,16 +149,16 @@
       "stemEn": "Read the ____ sentences and answer the questions.",
       "stemZh": "讀下列句子，然後回答問題。",
       "options": [
-        "circle",
+        "warm",
         "fair",
         "following",
-        "pair"
+        "heavy"
       ],
       "optionGlossZh": [
-        "圓圈",
+        "溫暖的",
         "公平的",
         "下列的",
-        "一雙"
+        "重的"
       ],
       "answer": 2
     },
@@ -344,6 +344,18 @@
         "message": "執行長最終複審修正：重新盲答：干擾項「小聲說話」和短文 Be quiet, please 太接近，換成「大聲唱歌」；長度不變，名次分布不受影響",
         "resolution": "改為 [\"快一點\",\"公平地玩\",\"大聲唱歌\"]（原 [\"快一點\",\"公平地玩\",\"小聲說話\"]）",
         "resolvedAt": "2026-10-02T19:13:41Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：circle 與 q14 共用、pair 是 q14 正解，改形容詞 warm、heavy，四選項同為形容詞",
+        "resolution": "改為 [\"warm\", \"fair\", \"following\", \"heavy\"]（原 [\"circle\", \"fair\", \"following\", \"pair\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：circle 與 q14 共用、pair 是 q14 正解，改形容詞 warm、heavy，四選項同為形容詞",
+        "resolution": "改為 [\"溫暖的\", \"公平的\", \"下列的\", \"重的\"]（原 [\"圓圈\", \"公平的\", \"下列的\", \"一雙\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

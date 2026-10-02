@@ -157,13 +157,13 @@
       "options": [
         "concentrate",
         "fault",
-        "sake",
+        "sing",
         "disagree"
       ],
       "optionGlossZh": [
         "專心",
         "過錯",
-        "緣故",
+        "唱歌",
         "意見不合"
       ],
       "answer": 3
@@ -301,6 +301,18 @@
         "message": "執行長最終複審修正：音檔是第一人稱，選項用 She／Her 可能和 TTS 性別不一致；改成 The speaker，正解仍排第 2 長、無異常值",
         "resolution": "改為 [\"The speaker is very hungry\",\"The speaker's brother is playing music\",\"The speaker's room is much too cold today\"]（原 [\"She is very hungry\",\"Her brother is playing music\",\"The room is much too cold for her\"]）",
         "resolvedAt": "2026-10-02T19:13:41Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：sake 放不進 often ___ about，改動詞 sing，連同 concentrate 共兩個干擾項文法成立",
+        "resolution": "改為 [\"concentrate\", \"fault\", \"sing\", \"disagree\"]（原 [\"concentrate\", \"fault\", \"sake\", \"disagree\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：sake 放不進 often ___ about，改動詞 sing，連同 concentrate 共兩個干擾項文法成立",
+        "resolution": "改為 [\"專心\", \"過錯\", \"唱歌\", \"意見不合\"]（原 [\"專心\", \"過錯\", \"緣故\", \"意見不合\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

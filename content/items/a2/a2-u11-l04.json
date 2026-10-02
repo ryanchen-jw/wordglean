@@ -14,7 +14,7 @@
       "word": "rent",
       "exampleEn": "Many students rent rooms near the school.",
       "exampleZh": "很多學生在學校附近租房間。",
-      "glossZh": "租（動詞）；租金",
+      "glossZh": "租；租金",
       "distractorsZh": [
         "賣掉",
         "打掃",
@@ -155,14 +155,14 @@
       "stemEn": "We always ____ a car when we travel.",
       "stemZh": "我們旅行時總是會租車。",
       "options": [
-        "drugstore",
-        "coin",
+        "paint",
+        "exchange",
         "banking",
         "rent"
       ],
       "optionGlossZh": [
-        "藥妝店",
-        "硬幣",
+        "粉刷",
+        "交換",
         "銀行業務",
         "租"
       ],
@@ -313,6 +313,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u11-l04-q14#0 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"一把舊鑰匙和幾封舊信\",\"一張舊地圖和一把鑰匙\",\"舊硬幣和一張舊收據\"]（原 [\"一把鑰匙\",\"一張舊地圖和一把鑰匙\",\"舊硬幣和一張舊收據\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）；單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"租；租金\"（原 \"租（動詞）；租金\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：coin 與 q12 共用；原本無干擾項放得進動詞空格，coin、drugstore 改 paint、exchange（能代入、靠詞義排除）",
+        "resolution": "改為 [\"paint\", \"exchange\", \"banking\", \"rent\"]（原 [\"drugstore\", \"coin\", \"banking\", \"rent\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：coin 與 q12 共用；原本無干擾項放得進動詞空格，coin、drugstore 改 paint、exchange（能代入、靠詞義排除）",
+        "resolution": "改為 [\"粉刷\", \"交換\", \"銀行業務\", \"租\"]（原 [\"藥妝店\", \"硬幣\", \"銀行業務\", \"租\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

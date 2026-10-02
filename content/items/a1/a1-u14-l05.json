@@ -43,7 +43,7 @@
       "word": "radio",
       "exampleEn": "My father listens to the radio in the car.",
       "exampleZh": "我爸爸在車上聽廣播。",
-      "glossZh": "收音機；廣播",
+      "glossZh": "廣播；收音機",
       "distractorsZh": [
         "電視",
         "電話",
@@ -152,15 +152,15 @@
       "stemEn": "We ____ the party very much.",
       "stemZh": "我們非常享受這個派對。",
       "options": [
-        "ball",
+        "win",
         "song",
-        "radio",
+        "play",
         "enjoy"
       ],
       "optionGlossZh": [
-        "球",
+        "贏",
         "歌曲",
-        "收音機",
+        "玩",
         "享受"
       ],
       "answer": 3
@@ -294,6 +294,24 @@
         "message": "執行長裁示：正解長度名次分布：a1-u14-l05-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"用她的新相機拍照\",\"看最喜歡的音樂雜誌\",\"聽廣播跟著唱\"]（原 [\"拍照\",\"看她最喜歡的音樂雜誌\",\"聽廣播跟著唱\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"廣播；收音機\"（原 \"收音機；廣播\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：radio 與 q14 共用；混合詞性題原無干擾項放得進空格，ball/radio 換動詞 win/play",
+        "resolution": "改為 [\"win\", \"song\", \"play\", \"enjoy\"]（原 [\"ball\", \"song\", \"radio\", \"enjoy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：radio 與 q14 共用；混合詞性題原無干擾項放得進空格，ball/radio 換動詞 win/play",
+        "resolution": "改為 [\"贏\", \"歌曲\", \"玩\", \"享受\"]（原 [\"球\", \"歌曲\", \"收音機\", \"享受\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

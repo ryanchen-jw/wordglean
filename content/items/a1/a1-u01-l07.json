@@ -154,14 +154,14 @@
       "stemZh": "這個包包比那個大。",
       "options": [
         "out",
-        "into",
-        "just",
+        "for",
+        "in",
         "than"
       ],
       "optionGlossZh": [
         "出去",
-        "進入⋯裡面",
-        "只是",
+        "為了",
+        "在⋯裡面",
         "比"
       ],
       "answer": 3
@@ -172,16 +172,16 @@
       "stemEn": "The dog runs ____ the house when it rains.",
       "stemZh": "下雨時，狗會跑進屋子裡。",
       "options": [
-        "than",
-        "other",
+        "of",
+        "with",
         "into",
-        "your"
+        "on"
       ],
       "optionGlossZh": [
-        "比",
-        "其他的",
+        "⋯的",
+        "和⋯一起",
         "進入⋯裡面",
-        "你的"
+        "在⋯上面"
       ],
       "answer": 2
     },
@@ -345,6 +345,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u01-l07-q15#1 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"跑回家裡等雨停\",\"留在公園裡繼續玩\",\"跑進一間小店\"]（原 [\"回家\",\"留在公園裡繼續玩\",\"跑進一間小店\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：into 是 q14 正解改 for；just 放不進空格改 in（for／in 文法可通）",
+        "resolution": "改為 [\"out\", \"for\", \"in\", \"than\"]（原 [\"out\", \"into\", \"just\", \"than\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：into 是 q14 正解改 for；just 放不進空格改 in（for／in 文法可通）",
+        "resolution": "改為 [\"出去\", \"為了\", \"在⋯裡面\", \"比\"]（原 [\"出去\", \"進入⋯裡面\", \"只是\", \"比\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：than 是 q13 正解；other、your 放不進空格；改 from、with、by 使四選項皆介系詞；避開 to、in、out（也通）",
+        "resolution": "改為 [\"from\", \"with\", \"into\", \"by\"]（原 [\"than\", \"other\", \"into\", \"your\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：than 是 q13 正解；other、your 放不進空格；改 from、with、by 使四選項皆介系詞；避開 to、in、out（也通）",
+        "resolution": "改為 [\"從\", \"和⋯一起\", \"進入⋯裡面\", \"經過\"]（原 [\"比\", \"其他的\", \"進入⋯裡面\", \"你的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：from／by 代入成 The dog runs from the house／runs by the house when it rains 都說得通；換成 of（文法不通）、on（狗在屋子上跑，語意不通）",
+        "resolution": "改為 [\"of\", \"with\", \"into\", \"on\"]（原 [\"from\", \"with\", \"into\", \"by\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：from／by 代入成 The dog runs from the house／runs by the house when it rains 都說得通；換成 of（文法不通）、on（狗在屋子上跑，語意不通）",
+        "resolution": "改為 [\"⋯的\", \"和⋯一起\", \"進入⋯裡面\", \"在⋯上面\"]（原 [\"從\", \"和⋯一起\", \"進入⋯裡面\", \"經過\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

@@ -174,13 +174,13 @@
         "December",
         "February",
         "January",
-        "Monday"
+        "November"
       ],
       "optionGlossZh": [
         "十二月",
         "二月",
         "一月",
-        "星期一"
+        "十一月"
       ],
       "answer": 2
     },
@@ -263,6 +263,19 @@
     },
     "glossVerdicts": {},
     "issues": [],
-    "resolvedAfterFinalReview": []
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Monday 與 q13 共用改 November",
+        "resolution": "改為 [\"December\", \"February\", \"January\", \"November\"]（原 [\"December\", \"February\", \"January\", \"Monday\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Monday 與 q13 共用改 November",
+        "resolution": "改為 [\"十二月\", \"二月\", \"一月\", \"十一月\"]（原 [\"十二月\", \"二月\", \"一月\", \"星期一\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      }
+    ]
   }
 }

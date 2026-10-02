@@ -56,7 +56,7 @@
       "word": "divide",
       "exampleEn": "Ten divided by two is five.",
       "exampleZh": "十除以二等於五。",
-      "glossZh": "分；除",
+      "glossZh": "除；分",
       "distractorsZh": [
         "加",
         "乘",
@@ -93,8 +93,8 @@
       "id": "a2-u22-l04-q07",
       "type": "wordCard",
       "word": "addition",
-      "exampleEn": "In addition to English, she speaks Japanese.",
-      "exampleZh": "除了英文，她還會說日文。",
+      "exampleEn": "Can you do this addition in your head?",
+      "exampleZh": "你能心算這題加法嗎？",
       "glossZh": "加法；（in addition）除了…還",
       "distractorsZh": [
         "減法",
@@ -153,13 +153,13 @@
       "stemZh": "你看那艘巨大的船！跟一棟大樓一樣大。",
       "options": [
         "average",
-        "extra",
+        "whole",
         "enormous",
         "additional"
       ],
       "optionGlossZh": [
         "平均的",
-        "額外的",
+        "整個的",
         "巨大的",
         "另外的"
       ],
@@ -171,15 +171,15 @@
       "stemEn": "Can I have ____ sauce on my pizza?",
       "stemZh": "我的披薩可以多加一點醬嗎？",
       "options": [
-        "fully",
+        "social",
         "divide",
-        "plus",
+        "dry",
         "extra"
       ],
       "optionGlossZh": [
-        "完全地",
+        "社交的",
         "分",
-        "加上",
+        "乾的",
         "額外的"
       ],
       "answer": 3
@@ -323,6 +323,60 @@
         "message": "執行長第②③關裁示修正：中譯配合英文修改",
         "resolution": "改為 \"上週六是我妹妹的生日。二十個小朋友，加上他們的爸媽，都來參加派對。媽媽做了一個超大的蛋糕，我們得把它分成三十塊。除了蛋糕，我們還有很多冰淇淋當甜點。有些小朋友還要多加巧克力。家裡非常吵，但大家都玩得很開心。到最後，每個盤子都空了！\"（原 \"上週六是我妹妹的生日。二十個小朋友，加上他們的爸媽，都來參加派對。媽媽做了一個超大的蛋糕，我們得把它分成三十塊。除了蛋糕，甜點還有很多冰淇淋。有些小朋友還要多加巧克力。家裡非常吵，但大家都玩得很開心。到最後，每個盤子都空了！\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"除；分\"（原 \"分；除\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「加法」；與 q17 造句（弟弟在學校學加法）換了主詞＋情境（心算）＋句型（疑問句）；q15 閱讀為 in addition 用法。",
+        "resolution": "改為 \"Can you do this addition in your head?\"（原 \"In addition to English, she speaks Japanese.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「加法」；與 q17 造句（弟弟在學校學加法）換了主詞＋情境（心算）＋句型（疑問句）；q15 閱讀為 in addition 用法。",
+        "resolution": "改為 \"你能心算這題加法嗎？\"（原 \"除了英文，她還會說日文。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：extra 是 q14 正解，改形容詞 whole",
+        "resolution": "改為 [\"average\", \"whole\", \"enormous\", \"additional\"]（原 [\"average\", \"extra\", \"enormous\", \"additional\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：extra 是 q14 正解，改形容詞 whole",
+        "resolution": "改為 [\"平均的\", \"整個的\", \"巨大的\", \"另外的\"]（原 [\"平均的\", \"額外的\", \"巨大的\", \"另外的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：fully、plus 放不進 have ___ sauce，改 enough、dry，使兩個干擾項文法成立",
+        "resolution": "改為 [\"enough\", \"divide\", \"dry\", \"extra\"]（原 [\"fully\", \"divide\", \"plus\", \"extra\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：fully、plus 放不進 have ___ sauce，改 enough、dry，使兩個干擾項文法成立",
+        "resolution": "改為 [\"足夠的\", \"分\", \"乾的\", \"額外的\"]（原 [\"完全地\", \"分\", \"加上\", \"額外的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Can I have enough sauce on my pizza?」文法通、語意勉強可成立，enough 換成 social，「社交的醬」語意不通",
+        "resolution": "改為 [\"social\", \"divide\", \"dry\", \"extra\"]（原 [\"enough\", \"divide\", \"dry\", \"extra\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Can I have enough sauce on my pizza?」文法通、語意勉強可成立，enough 換成 social，「社交的醬」語意不通",
+        "resolution": "改為 [\"社交的\", \"分\", \"乾的\", \"額外的\"]（原 [\"足夠的\", \"分\", \"乾的\", \"額外的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

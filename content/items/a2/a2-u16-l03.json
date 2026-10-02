@@ -155,13 +155,13 @@
       "options": [
         "skiing",
         "sailing",
-        "cycling",
+        "swimming",
         "rugby"
       ],
       "optionGlossZh": [
         "滑雪",
         "帆船運動",
-        "騎腳踏車",
+        "游泳",
         "橄欖球"
       ],
       "answer": 0
@@ -175,13 +175,13 @@
         "skating",
         "cricket",
         "racket",
-        "rugby"
+        "medal"
       ],
       "optionGlossZh": [
         "溜冰",
         "板球",
         "球拍",
-        "橄欖球"
+        "獎牌"
       ],
       "answer": 2
     },
@@ -390,6 +390,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u16-l03-q15#0 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"板球，還有冬天的滑雪和溜冰\",\"水上運動，尤其是帆船\",\"學校的攀岩社\"]（原 [\"板球，還有冬天的滑雪和溜冰\",\"水上運動，尤其是帆船\",\"攀岩\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：rugby 與 q13 共用，改本單元名詞 medal",
+        "resolution": "改為 [\"skating\", \"cricket\", \"racket\", \"medal\"]（原 [\"skating\", \"cricket\", \"racket\", \"rugby\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：rugby 與 q13 共用，改本單元名詞 medal",
+        "resolution": "改為 [\"溜冰\", \"板球\", \"球拍\", \"獎牌\"]（原 [\"溜冰\", \"板球\", \"球拍\", \"橄欖球\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：cycling 代入「In winter, we go cycling in the snowy mountains.」英文可能成立（冬季山地騎車），換成 swimming：冬天去積雪山上游泳語意不通",
+        "resolution": "改為 [\"skiing\", \"sailing\", \"swimming\", \"rugby\"]（原 [\"skiing\", \"sailing\", \"cycling\", \"rugby\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：cycling 代入「In winter, we go cycling in the snowy mountains.」英文可能成立（冬季山地騎車），換成 swimming：冬天去積雪山上游泳語意不通",
+        "resolution": "改為 [\"滑雪\", \"帆船運動\", \"游泳\", \"橄欖球\"]（原 [\"滑雪\", \"帆船運動\", \"騎腳踏車\", \"橄欖球\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

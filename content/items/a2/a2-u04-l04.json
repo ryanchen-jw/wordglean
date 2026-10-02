@@ -152,16 +152,16 @@
       "stemEn": "Can you ____ me the salt, please?",
       "stemZh": "可以請你把鹽遞給我嗎？",
       "options": [
-        "record",
-        "pull",
+        "lose",
+        "allow",
         "pass",
-        "raise"
+        "spill"
       ],
       "optionGlossZh": [
-        "錄下",
-        "拉",
+        "弄丟",
+        "允許",
         "遞給",
-        "舉起"
+        "灑出"
       ],
       "answer": 2
     },
@@ -323,6 +323,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u04-l04-q15#0 目標第 2 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"每天晚上去看別人在台上表演\",\"每天去上吉他課\",\"把自己彈的錄下來再仔細聽\"]（原 [\"每天晚上去看別人在台上表演\",\"去上吉他課\",\"把自己彈的錄下來再仔細聽\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：record、raise 與 q14 共用、pull 是 q14 正解，改本單元 send、allow、spill",
+        "resolution": "改為 [\"send\", \"allow\", \"pass\", \"spill\"]（原 [\"record\", \"pull\", \"pass\", \"raise\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：record、raise 與 q14 共用、pull 是 q14 正解，改本單元 send、allow、spill",
+        "resolution": "改為 [\"寄；傳送\", \"允許\", \"遞給\", \"灑出\"]（原 [\"錄下\", \"拉\", \"遞給\", \"舉起\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Can you send me the salt, please? 只看英文可成立（寄鹽給我）；換成 lose，Can you lose me the salt 語意不通",
+        "resolution": "改為 [\"lose\", \"allow\", \"pass\", \"spill\"]（原 [\"send\", \"allow\", \"pass\", \"spill\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Can you send me the salt, please? 只看英文可成立（寄鹽給我）；換成 lose，Can you lose me the salt 語意不通",
+        "resolution": "改為 [\"弄丟\", \"允許\", \"遞給\", \"灑出\"]（原 [\"寄；傳送\", \"允許\", \"遞給\", \"灑出\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

@@ -53,8 +53,8 @@
       "id": "a2-u26-l03-q04",
       "type": "wordCard",
       "word": "mark",
-      "exampleEn": "The teacher marked my test in red.",
-      "exampleZh": "老師用紅筆批改我的考卷。",
+      "exampleEn": "I put a mark next to each word I don't know.",
+      "exampleZh": "我在每個不認識的字旁邊做個記號。",
       "glossZh": "記號；痕跡；打分數",
       "distractorsZh": [
         "撕破",
@@ -172,14 +172,14 @@
       "options": [
         "chain",
         "belong",
-        "blame",
-        "organize"
+        "mark",
+        "instrument"
       ],
       "optionGlossZh": [
         "鏈條",
         "屬於",
-        "責怪",
-        "整理"
+        "記號",
+        "儀器"
       ],
       "answer": 0
     },
@@ -286,6 +286,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u26-l03-q15#1 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"一本寫滿 Mia 食譜的小筆記本\",\"一條掛著小金湯匙的鍊子\",\"一個小小的蛋糕\"]（原 [\"一本寫滿 Mia 食譜的小筆記本\",\"一條掛著小金湯匙的鍊子\",\"一個蛋糕\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「記號」；與 q15 閱讀（男孩臉上的白色痕跡）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"I put a mark next to each word I don't know.\"（原 \"The teacher marked my test in red.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「記號」；與 q15 閱讀（男孩臉上的白色痕跡）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我在每個不認識的字旁邊做個記號。\"（原 \"老師用紅筆批改我的考卷。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：blame 與 q13 共用、organize 是 q13 正解，改名詞 mark、instrument（可放 My bike ___）",
+        "resolution": "改為 [\"chain\", \"belong\", \"mark\", \"instrument\"]（原 [\"chain\", \"belong\", \"blame\", \"organize\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：blame 與 q13 共用、organize 是 q13 正解，改名詞 mark、instrument（可放 My bike ___）",
+        "resolution": "改為 [\"鏈條\", \"屬於\", \"記號\", \"儀器\"]（原 [\"鏈條\", \"屬於\", \"責怪\", \"整理\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

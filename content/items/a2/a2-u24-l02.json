@@ -172,14 +172,14 @@
       "stemZh": "我的新電腦功能很強，可以跑大型遊戲。",
       "options": [
         "powerful",
-        "pressure",
-        "chance",
+        "uncertain",
+        "sleepy",
         "condition"
       ],
       "optionGlossZh": [
         "強大的",
-        "壓力",
-        "機會",
+        "不確定的",
+        "睏的",
         "狀況"
       ],
       "answer": 0
@@ -281,6 +281,30 @@
         "message": "執行長第②③關裁示修正：第②關：疑似：his grades increased 搭配略不自然，成績一般說 his grades improved / went up；且與本課 improve 剛好可對應，用 increase 易讓學習者誤學搭配。",
         "resolution": "改為 \"Before the big exam, Tom felt a lot of pressure. His parents always compared him with his older sister. To improve his grades, he made a study plan: one hour every night. Slowly, his grades improved. On the day of the exam, he did not feel worried. He knew he had a good chance of doing well.\"（原 \"Before the big exam, Tom felt a lot of pressure. His parents always compared him with his older sister. To improve his grades, he made a study plan: one hour every night. Slowly, his grades increased. On the day of the exam, he did not feel worried. He knew he had a good chance of doing well.\"）；increase 另有 mcq 正解",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pressure、chance 為名詞放不進 very ___，改形容詞 uncertain、heavy",
+        "resolution": "改為 [\"powerful\", \"uncertain\", \"heavy\", \"condition\"]（原 [\"powerful\", \"pressure\", \"chance\", \"condition\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pressure、chance 為名詞放不進 very ___，改形容詞 uncertain、heavy",
+        "resolution": "改為 [\"強大的\", \"不確定的\", \"重的\", \"狀況\"]（原 [\"強大的\", \"壓力\", \"機會\", \"狀況\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My new computer is very heavy. It can run big games.」電競電腦很重也成立，heavy 換成 sleepy，電腦「很睏」語意不通",
+        "resolution": "改為 [\"powerful\", \"uncertain\", \"sleepy\", \"condition\"]（原 [\"powerful\", \"uncertain\", \"heavy\", \"condition\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My new computer is very heavy. It can run big games.」電競電腦很重也成立，heavy 換成 sleepy，電腦「很睏」語意不通",
+        "resolution": "改為 [\"強大的\", \"不確定的\", \"睏的\", \"狀況\"]（原 [\"強大的\", \"不確定的\", \"重的\", \"狀況\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

@@ -170,13 +170,13 @@
       "stemEn": "Put the photo in a ____ and put it on your desk.",
       "stemZh": "把照片放進相框，擺在你的書桌上。",
       "options": [
-        "basically",
+        "pocket",
         "frame",
         "empty",
         "metal"
       ],
       "optionGlossZh": [
-        "基本上",
+        "口袋",
         "框",
         "空的",
         "金屬"
@@ -286,6 +286,18 @@
         "message": "執行長第②③關裁示修正：第②關：題目要說「你買過或想買的二手東西」，參考答案 Used books are cheap at this shop. 沒有說到自己買過或想買，不符題目要求。",
         "resolution": "改為 \"I want to buy a used camera.\"（原 \"Used books are cheap at this shop.\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：basically 放不進 in a ___，改名詞 pocket，連同 metal 共兩個干擾項文法成立",
+        "resolution": "改為 [\"pocket\", \"frame\", \"empty\", \"metal\"]（原 [\"basically\", \"frame\", \"empty\", \"metal\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：basically 放不進 in a ___，改名詞 pocket，連同 metal 共兩個干擾項文法成立",
+        "resolution": "改為 [\"口袋\", \"框\", \"空的\", \"金屬\"]（原 [\"基本上\", \"框\", \"空的\", \"金屬\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

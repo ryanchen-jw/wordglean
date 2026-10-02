@@ -29,7 +29,7 @@
       "word": "fight",
       "exampleEn": "My brother and I had a fight.",
       "exampleZh": "我和我哥哥吵了一架。",
-      "glossZh": "吵架；打架（動詞、名詞）",
+      "glossZh": "吵架；打架",
       "distractorsZh": [
         "遊戲",
         "談話",
@@ -94,7 +94,7 @@
       "word": "save",
       "exampleEn": "I save some money every month.",
       "exampleZh": "我每個月存一些錢。",
-      "glossZh": "存（錢）；救",
+      "glossZh": "存；救",
       "distractorsZh": [
         "花",
         "借",
@@ -170,15 +170,15 @@
       "stemEn": "I can't ____ on my homework. My brother is playing music.",
       "stemZh": "我沒辦法專心寫功課，我弟弟在放音樂。",
       "options": [
-        "drop",
-        "fill",
-        "push",
+        "listen",
+        "fight",
+        "agree",
         "focus"
       ],
       "optionGlossZh": [
-        "掉下",
-        "裝滿",
-        "推",
+        "聽",
+        "吵架",
+        "同意",
         "專心"
       ],
       "answer": 3
@@ -340,6 +340,30 @@
         "message": "執行長最終複審修正：FIX#4 翻譯題換句型、不與單字卡雷同",
         "resolution": "改前：\"please 放句首或句尾都可以\"；改後：\"請求可用 Can you…?、Could you…?、Please… 等\"",
         "resolvedAt": "2026-10-02T13:40:46Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"吵架；打架\"（原 \"吵架；打架（動詞、名詞）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"存；救\"（原 \"存（錢）；救\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：drop、fill、push 三字皆與 q13 共用，改 listen、fight、agree",
+        "resolution": "改為 [\"listen\", \"fight\", \"agree\", \"focus\"]（原 [\"drop\", \"fill\", \"push\", \"focus\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：drop、fill、push 三字皆與 q13 共用，改 listen、fight、agree",
+        "resolution": "改為 [\"聽\", \"吵架\", \"同意\", \"專心\"]（原 [\"掉下\", \"裝滿\", \"推\", \"專心\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

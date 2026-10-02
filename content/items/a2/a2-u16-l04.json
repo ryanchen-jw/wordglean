@@ -141,14 +141,14 @@
       "options": [
         "badminton",
         "table tennis",
-        "surfing",
-        "footballer"
+        "hockey",
+        "cricket"
       ],
       "optionGlossZh": [
         "羽毛球",
         "桌球",
-        "衝浪",
-        "足球員"
+        "曲棍球",
+        "板球"
       ],
       "answer": 1
     },
@@ -334,6 +334,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u16-l04-q14#0 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"橄欖球和沙灘排球\",\"足球和滑板運動\",\"羽毛球和桌球\"]（原 [\"橄欖球\",\"足球和滑板運動\",\"羽毛球和桌球\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：footballer 是 q13 正解、surfing 與 q13 共用；改本單元球類 hockey、cricket，四項都能接 play",
+        "resolution": "改為 [\"badminton\", \"table tennis\", \"hockey\", \"cricket\"]（原 [\"badminton\", \"table tennis\", \"surfing\", \"footballer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：footballer 是 q13 正解、surfing 與 q13 共用；改本單元球類 hockey、cricket，四項都能接 play",
+        "resolution": "改為 [\"羽毛球\", \"桌球\", \"曲棍球\", \"板球\"]（原 [\"羽毛球\", \"桌球\", \"衝浪\", \"足球員\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

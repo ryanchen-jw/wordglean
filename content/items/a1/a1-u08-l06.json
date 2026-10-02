@@ -155,16 +155,16 @@
       "stemEn": "Would you like ____ or sugar in your coffee?",
       "stemZh": "你的咖啡要加鮮奶油還是糖？",
       "options": [
-        "bread",
+        "cheese",
         "cream",
-        "potato",
-        "knife"
+        "tomato",
+        "juice"
       ],
       "optionGlossZh": [
-        "麵包",
+        "起司",
         "鮮奶油",
-        "馬鈴薯",
-        "刀子"
+        "番茄",
+        "果汁"
       ],
       "answer": 1
     },
@@ -344,6 +344,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u08-l06-q14#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"煮馬鈴薯和蛋\",\"做麵包\",\"泡一壺茶\"]（原 [\"煮馬鈴薯和蛋\",\"做麵包和塗奶油\",\"泡茶\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：potato 與 q12 共用、knife 是 q12 正解，換 cheese/butter/juice（皆不可數名詞）",
+        "resolution": "改為 [\"cheese\", \"cream\", \"butter\", \"juice\"]（原 [\"bread\", \"cream\", \"potato\", \"knife\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：potato 與 q12 共用、knife 是 q12 正解，換 cheese/butter/juice（皆不可數名詞）",
+        "resolution": "改為 [\"起司\", \"鮮奶油\", \"奶油\", \"果汁\"]（原 [\"麵包\", \"鮮奶油\", \"馬鈴薯\", \"刀子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Would you like butter or sugar in your coffee? 只看英文也說得通（奶油咖啡確有其事），butter 換成 tomato，番茄加咖啡語意不通",
+        "resolution": "改為 [\"cheese\", \"cream\", \"tomato\", \"juice\"]（原 [\"cheese\", \"cream\", \"butter\", \"juice\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Would you like butter or sugar in your coffee? 只看英文也說得通（奶油咖啡確有其事），butter 換成 tomato，番茄加咖啡語意不通",
+        "resolution": "改為 [\"起司\", \"鮮奶油\", \"番茄\", \"果汁\"]（原 [\"起司\", \"鮮奶油\", \"奶油\", \"果汁\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

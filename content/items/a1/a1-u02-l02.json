@@ -86,7 +86,7 @@
       "word": "guy",
       "exampleEn": "Ben is a nice guy.",
       "exampleZh": "Ben 人很好。",
-      "glossZh": "（口語）男生；人",
+      "glossZh": "男生；人（口語）",
       "distractorsZh": [
         "女孩",
         "老師",
@@ -157,13 +157,13 @@
       "stemZh": "嗨，我的名字是 Amy。",
       "options": [
         "age",
-        "job",
+        "man",
         "name",
         "person"
       ],
       "optionGlossZh": [
         "年齡",
-        "工作",
+        "男人",
         "名字",
         "人"
       ],
@@ -357,6 +357,36 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「護士」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:39:00Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"男生；人（口語）\"（原 \"（口語）男生；人\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：job 是 q14 正解，改同課名詞 kid",
+        "resolution": "改為 [\"age\", \"kid\", \"name\", \"person\"]（原 [\"age\", \"job\", \"name\", \"person\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：job 是 q14 正解，改同課名詞 kid",
+        "resolution": "改為 [\"年齡\", \"小孩\", \"名字\", \"人\"]（原 [\"年齡\", \"工作\", \"名字\", \"人\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：kid 代入成 Hi, my kid is Amy.（家長介紹孩子）說得通；換成 man，my man is Amy（Amy 是女生名）語意不通",
+        "resolution": "改為 [\"age\", \"man\", \"name\", \"person\"]（原 [\"age\", \"kid\", \"name\", \"person\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：kid 代入成 Hi, my kid is Amy.（家長介紹孩子）說得通；換成 man，my man is Amy（Amy 是女生名）語意不通",
+        "resolution": "改為 [\"年齡\", \"男人\", \"名字\", \"人\"]（原 [\"年齡\", \"小孩\", \"名字\", \"人\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

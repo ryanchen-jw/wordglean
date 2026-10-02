@@ -79,8 +79,8 @@
       "id": "a2-u27-l03-q06",
       "type": "wordCard",
       "word": "weep",
-      "exampleEn": "She had a little weep after the sad phone call.",
-      "exampleZh": "接到那通令人難過的電話後，她小哭了一下。",
+      "exampleEn": "My grandpa wept at my sister's wedding.",
+      "exampleZh": "我爺爺在我姊姊的婚禮上哭了。",
       "glossZh": "哭泣；（一陣）哭",
       "distractorsZh": [
         "笑",
@@ -170,15 +170,15 @@
       "stemEn": "In the story, an old woman put a ____ on the princess.",
       "stemZh": "故事裡，一位老婦人對公主下了詛咒。",
       "options": [
-        "brave",
-        "sadly",
-        "frighten",
+        "weep",
+        "panic",
+        "harmony",
         "curse"
       ],
       "optionGlossZh": [
-        "勇敢的",
-        "難過地",
-        "使害怕",
+        "哭泣",
+        "恐慌",
+        "和諧",
         "詛咒"
       ],
       "answer": 3
@@ -280,6 +280,30 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"大家說這間老房子被下了詛咒。\"（原 \"他撞到腳趾時罵了一句髒話。\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範動詞「哭泣」；與 q15 閱讀（看電影後 had a little weep，名詞）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"My grandpa wept at my sister's wedding.\"（原 \"She had a little weep after the sad phone call.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範動詞「哭泣」；與 q15 閱讀（看電影後 had a little weep，名詞）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我爺爺在我姊姊的婚禮上哭了。\"（原 \"接到那通令人難過的電話後，她小哭了一下。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：brave 與 q13 共用、frighten 與 q13 正解同字，且三者放不進 a ___，改本單元名詞，四選項同為名詞",
+        "resolution": "改為 [\"weep\", \"panic\", \"harmony\", \"curse\"]（原 [\"brave\", \"sadly\", \"frighten\", \"curse\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：brave 與 q13 共用、frighten 與 q13 正解同字，且三者放不進 a ___，改本單元名詞，四選項同為名詞",
+        "resolution": "改為 [\"哭泣\", \"恐慌\", \"和諧\", \"詛咒\"]（原 [\"勇敢的\", \"難過地\", \"使害怕\", \"詛咒\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

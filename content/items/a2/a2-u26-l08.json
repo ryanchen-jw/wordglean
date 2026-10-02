@@ -157,15 +157,15 @@
       "stemEn": "We put a ____ in the kitchen to catch the mouse.",
       "stemZh": "我們在廚房放了捕鼠器來抓老鼠。",
       "options": [
-        "lend",
+        "pack",
         "trap",
         "splash",
         "organized"
       ],
       "optionGlossZh": [
-        "借出",
+        "一包",
         "捕捉器",
-        "濺",
+        "水花",
         "有條理的"
       ],
       "answer": 1
@@ -279,6 +279,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u26-l08-q09 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"Cooking for the party\",\"Sleeping on the sofa\",\"Studying for a test\"]（原 [\"Cooking\",\"Sleeping\",\"Studying for a test\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lend 與 q12 lent 同字，改本單元名詞 pack",
+        "resolution": "改為 [\"pack\", \"trap\", \"splash\", \"organized\"]（原 [\"lend\", \"trap\", \"splash\", \"organized\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lend 與 q12 lent 同字，改本單元名詞 pack",
+        "resolution": "改為 [\"一包\", \"捕捉器\", \"水花\", \"有條理的\"]（原 [\"借出\", \"捕捉器\", \"濺\", \"有條理的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

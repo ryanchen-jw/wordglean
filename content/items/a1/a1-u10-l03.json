@@ -55,7 +55,7 @@
       "word": "sale",
       "exampleEn": "The shoes are on sale today.",
       "exampleZh": "這些鞋子今天特價。",
-      "glossZh": "出售；特價",
+      "glossZh": "特價；出售",
       "distractorsZh": [
         "新品",
         "禮物",
@@ -138,16 +138,16 @@
       "stemEn": "Everything in this store is on ____ today.",
       "stemZh": "這家店今天全部特價。",
       "options": [
-        "dollar",
+        "order",
         "shopping",
         "sale",
-        "rich"
+        "time"
       ],
       "optionGlossZh": [
-        "美元",
+        "訂購",
         "購物",
         "特價",
-        "有錢的"
+        "時間"
       ],
       "answer": 2
     },
@@ -158,14 +158,14 @@
       "stemZh": "我身上沒帶錢，但我有信用卡。",
       "options": [
         "dollar",
-        "sale",
-        "shopping",
+        "store",
+        "bookstore",
         "credit card"
       ],
       "optionGlossZh": [
         "美元",
-        "特價",
-        "購物",
+        "商店",
+        "書店",
         "信用卡"
       ],
       "answer": 3
@@ -369,6 +369,36 @@
         "message": "執行長裁示：正解長度名次分布：a1-u10-l03-q09 目標第 1 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"It is too expensive.\",\"It is too small.\",\"It is ugly.\"]（原 [\"It is too expensive.\",\"It is a little too small.\",\"It is ugly.\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"特價；出售\"（原 \"出售；特價\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：dollar 與 q13 共用換 order；rich 放不進 on ____ 換 time，兩個干擾項可放進空格",
+        "resolution": "改為 [\"order\", \"shopping\", \"sale\", \"time\"]（原 [\"dollar\", \"shopping\", \"sale\", \"rich\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：dollar 與 q13 共用換 order；rich 放不進 on ____ 換 time，兩個干擾項可放進空格",
+        "resolution": "改為 [\"訂購\", \"購物\", \"特價\", \"時間\"]（原 [\"美元\", \"購物\", \"特價\", \"有錢的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sale 是 q12 正解、shopping 與 q12 共用，換 store/bookstore，四項皆可放進 I have a ____",
+        "resolution": "改為 [\"dollar\", \"store\", \"bookstore\", \"credit card\"]（原 [\"dollar\", \"sale\", \"shopping\", \"credit card\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sale 是 q12 正解、shopping 與 q12 共用，換 store/bookstore，四項皆可放進 I have a ____",
+        "resolution": "改為 [\"美元\", \"商店\", \"書店\", \"信用卡\"]（原 [\"美元\", \"特價\", \"購物\", \"信用卡\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

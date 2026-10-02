@@ -151,15 +151,15 @@
       "stemEn": "You look tired. You ____ go to bed early.",
       "stemZh": "你看起來很累，你應該早點睡。",
       "options": [
-        "through",
+        "still",
         "should",
-        "after",
+        "also",
         "over"
       ],
       "optionGlossZh": [
-        "穿過",
+        "仍然",
         "應該",
-        "在⋯之後",
+        "也",
         "在⋯上方"
       ],
       "answer": 1
@@ -171,15 +171,15 @@
       "stemZh": "我吃完早餐後刷牙。",
       "options": [
         "after",
-        "still",
-        "down",
-        "us"
+        "with",
+        "into",
+        "from"
       ],
       "optionGlossZh": [
         "在⋯之後",
-        "仍然",
-        "向下",
-        "我們"
+        "和⋯一起",
+        "進入⋯裡面",
+        "從"
       ],
       "answer": 0
     },
@@ -316,6 +316,42 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"因為他住在很遠的小鎮\"（原 \"因為他住很遠\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：after 是 q14 正解改 will；through 放不進空格改 still（兩者文法可通）；避開 could、can（語意太近）",
+        "resolution": "改為 [\"still\", \"should\", \"will\", \"over\"]（原 [\"through\", \"should\", \"after\", \"over\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：after 是 q14 正解改 will；through 放不進空格改 still（兩者文法可通）；避開 could、can（語意太近）",
+        "resolution": "改為 [\"仍然\", \"應該\", \"將會\", \"在⋯上方\"]（原 [\"穿過\", \"應該\", \"在⋯之後\", \"在⋯上方\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：still、down、us 放不進空格；改 with、into、from 使四選項皆介系詞；避開 at、over、before（也通）",
+        "resolution": "改為 [\"after\", \"with\", \"into\", \"from\"]（原 [\"after\", \"still\", \"down\", \"us\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：still、down、us 放不進空格；改 with、into、from 使四選項皆介系詞；避開 at、over、before（也通）",
+        "resolution": "改為 [\"在⋯之後\", \"和⋯一起\", \"進入⋯裡面\", \"從\"]（原 [\"在⋯之後\", \"仍然\", \"向下\", \"我們\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：will 代入成 You look tired. You will go to bed early.（命令語氣）說得通；換成 also，前後句接不上、語意不通",
+        "resolution": "改為 [\"still\", \"should\", \"also\", \"over\"]（原 [\"still\", \"should\", \"will\", \"over\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：will 代入成 You look tired. You will go to bed early.（命令語氣）說得通；換成 also，前後句接不上、語意不通",
+        "resolution": "改為 [\"仍然\", \"應該\", \"也\", \"在⋯上方\"]（原 [\"仍然\", \"應該\", \"將會\", \"在⋯上方\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

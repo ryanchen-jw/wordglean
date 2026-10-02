@@ -54,8 +54,8 @@
       "id": "a2-u22-l03-q04",
       "type": "wordCard",
       "word": "range",
-      "exampleEn": "This shop sells a wide range of phones.",
-      "exampleZh": "這家店賣各式各樣的手機。",
+      "exampleEn": "Tickets in this price range sell quickly.",
+      "exampleZh": "這個價格範圍的票賣得很快。",
       "glossZh": "範圍；一系列",
       "distractorsZh": [
         "價格",
@@ -167,13 +167,13 @@
       "options": [
         "unit",
         "range",
-        "scale",
+        "bit",
         "degree"
       ],
       "optionGlossZh": [
         "單元",
         "範圍",
-        "等級",
+        "一點",
         "度"
       ],
       "answer": 0
@@ -184,15 +184,15 @@
       "stemEn": "On a ____ of one to ten, how much do you like this movie?",
       "stemZh": "如果用一到十分來打分數，你有多喜歡這部電影？",
       "options": [
-        "twice",
+        "rate",
         "scale",
-        "additional",
+        "kilometer",
         "count"
       ],
       "optionGlossZh": [
-        "兩次",
+        "比率",
         "等級",
-        "額外的",
+        "公里",
         "數"
       ],
       "answer": 1
@@ -312,6 +312,42 @@
         "message": "執行長第②③關裁示修正：參考答案主詞改為 I，例子同步",
         "resolution": "改為 \"說習慣用現在式（例如 go、call）\"（原 \"說習慣用現在式（例如 go、calls）\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「範圍」；與 q16 閱讀（氣溫範圍 from…to…）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Tickets in this price range sell quickly.\"（原 \"This shop sells a wide range of phones.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「範圍」；與 q16 閱讀（氣溫範圍 from…to…）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"這個價格範圍的票賣得很快。\"（原 \"這家店賣各式各樣的手機。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：scale 是 q15 正解，改 bit",
+        "resolution": "改為 [\"unit\", \"range\", \"bit\", \"degree\"]（原 [\"unit\", \"range\", \"scale\", \"degree\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：scale 是 q15 正解，改 bit",
+        "resolution": "改為 [\"單元\", \"範圍\", \"一點\", \"度\"]（原 [\"單元\", \"範圍\", \"等級\", \"度\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：twice、additional 放不進 on a ___ of（additional 且有冠詞洩題），改名詞 rate、kilometer",
+        "resolution": "改為 [\"rate\", \"scale\", \"kilometer\", \"count\"]（原 [\"twice\", \"scale\", \"additional\", \"count\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：twice、additional 放不進 on a ___ of（additional 且有冠詞洩題），改名詞 rate、kilometer",
+        "resolution": "改為 [\"比率\", \"等級\", \"公里\", \"數\"]（原 [\"兩次\", \"等級\", \"額外的\", \"數\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

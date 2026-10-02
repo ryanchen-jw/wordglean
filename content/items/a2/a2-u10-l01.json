@@ -56,7 +56,7 @@
       "word": "chef",
       "exampleEn": "The chef at this hotel is from France.",
       "exampleZh": "這家飯店的主廚來自法國。",
-      "glossZh": "廚師；主廚",
+      "glossZh": "主廚；廚師",
       "distractorsZh": [
         "服務生",
         "經理",
@@ -171,16 +171,16 @@
       "stemEn": "I like to ____ cookies for my friends.",
       "stemZh": "我喜歡烤餅乾給朋友吃。",
       "options": [
-        "chef",
+        "drink",
         "bake",
         "pepper",
-        "pasta"
+        "spill"
       ],
       "optionGlossZh": [
-        "廚師",
+        "喝",
         "烤",
         "胡椒",
-        "義大利麵"
+        "灑出"
       ],
       "answer": 1
     },
@@ -311,6 +311,24 @@
         "message": "執行長裁示：正解長度名次分布：a2-u10-l01-q15#0 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"鮮蝦和雞蛋炒飯\",\"炭烤黑胡椒牛排\",\"蔬菜義大利麵\"]（原 [\"炒飯\",\"炭烤黑胡椒牛排\",\"蔬菜義大利麵\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"主廚；廚師\"（原 \"廚師；主廚\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：chef、pasta 為名詞放不進 to ____ 動詞空格，改 drink、spill（能代入、靠搭配排除）",
+        "resolution": "改為 [\"drink\", \"bake\", \"pepper\", \"spill\"]（原 [\"chef\", \"bake\", \"pepper\", \"pasta\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：chef、pasta 為名詞放不進 to ____ 動詞空格，改 drink、spill（能代入、靠搭配排除）",
+        "resolution": "改為 [\"喝\", \"烤\", \"胡椒\", \"灑出\"]（原 [\"廚師\", \"烤\", \"胡椒\", \"義大利麵\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

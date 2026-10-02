@@ -110,7 +110,7 @@
       "word": "cost",
       "exampleEn": "How much does this shirt cost?",
       "exampleZh": "這件襯衫多少錢？",
-      "glossZh": "花費（動詞）；費用",
+      "glossZh": "花費；費用",
       "distractorsZh": [
         "打折",
         "退錢",
@@ -173,14 +173,14 @@
       "stemEn": "This old lamp only ____ me five dollars.",
       "stemZh": "這盞舊燈只花了我五塊錢。",
       "options": [
-        "mall",
-        "euro",
+        "told",
+        "gave",
         "cost",
         "inexpensive"
       ],
       "optionGlossZh": [
-        "購物中心",
-        "歐元",
+        "告訴",
+        "給",
         "花費",
         "不貴的"
       ],
@@ -313,6 +313,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"市立博物館\"（原 \"博物館\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）；單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
+        "resolution": "改為 \"花費；費用\"（原 \"花費（動詞）；費用\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：mall 與 q13 共用；原本無干擾項放得進動詞空格，mall、euro 改 told、gave（能代入、靠詞義排除）",
+        "resolution": "改為 [\"told\", \"gave\", \"cost\", \"inexpensive\"]（原 [\"mall\", \"euro\", \"cost\", \"inexpensive\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：mall 與 q13 共用；原本無干擾項放得進動詞空格，mall、euro 改 told、gave（能代入、靠詞義排除）",
+        "resolution": "改為 [\"告訴\", \"給\", \"花費\", \"不貴的\"]（原 [\"購物中心\", \"歐元\", \"花費\", \"不貴的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

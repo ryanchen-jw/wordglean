@@ -154,15 +154,15 @@
       "stemZh": "公車上有給年長者坐的特別座位。",
       "options": [
         "married",
-        "rich",
+        "poor",
         "elderly",
-        "teenage"
+        "junior"
       ],
       "optionGlossZh": [
         "已婚的",
-        "有錢的",
+        "貧窮的",
         "年長的",
-        "十幾歲的"
+        "資淺的"
       ],
       "answer": 2
     },
@@ -306,6 +306,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"去她家住一個月讀書\"（原 \"去她家讀書\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；非本單元字不跨課重複當干擾項：teenage 超範圍改本單元 junior；rich 他課已用改 poor",
+        "resolution": "改為 [\"married\", \"poor\", \"elderly\", \"junior\"]（原 [\"married\", \"rich\", \"elderly\", \"teenage\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；非本單元字不跨課重複當干擾項：teenage 超範圍改本單元 junior；rich 他課已用改 poor",
+        "resolution": "改為 [\"已婚的\", \"貧窮的\", \"年長的\", \"資淺的\"]（原 [\"已婚的\", \"有錢的\", \"年長的\", \"十幾歲的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -157,16 +157,16 @@
       "stemEn": "It is very ____. I can't see the other side of the street.",
       "stemZh": "霧很大，我看不到街道的另一邊。",
       "options": [
-        "rose",
+        "cold",
         "foggy",
-        "tiger",
-        "frog"
+        "sunny",
+        "cool"
       ],
       "optionGlossZh": [
-        "玫瑰",
+        "冷的",
         "有霧的",
-        "老虎",
-        "青蛙"
+        "晴朗的",
+        "涼爽的"
       ],
       "answer": 1
     },
@@ -291,6 +291,18 @@
         "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
         "resolution": "改前：[]；改後：[\"Momo\"]",
         "resolvedAt": "2026-10-02T12:41:53Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：frog 與 q12 共用；兩題原都無四選項同詞性，改為四個形容詞 cold/sunny/cool",
+        "resolution": "改為 [\"cold\", \"foggy\", \"sunny\", \"cool\"]（原 [\"rose\", \"foggy\", \"tiger\", \"frog\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：frog 與 q12 共用；兩題原都無四選項同詞性，改為四個形容詞 cold/sunny/cool",
+        "resolution": "改為 [\"冷的\", \"有霧的\", \"晴朗的\", \"涼爽的\"]（原 [\"玫瑰\", \"有霧的\", \"老虎\", \"青蛙\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

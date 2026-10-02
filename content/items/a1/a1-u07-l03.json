@@ -138,14 +138,14 @@
       "options": [
         "shower",
         "wake",
-        "habit",
-        "code"
+        "stay",
+        "wait"
       ],
       "optionGlossZh": [
         "淋浴",
         "醒來",
-        "習慣",
-        "密碼"
+        "待著",
+        "等待"
       ],
       "answer": 1
     },
@@ -157,13 +157,13 @@
       "options": [
         "habit",
         "mail",
-        "busy",
+        "skill",
         "code"
       ],
       "optionGlossZh": [
         "習慣",
         "郵件",
-        "忙碌的",
+        "技能",
         "密碼"
       ],
       "answer": 3
@@ -343,6 +343,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u07-l03-q14#1 目標第 3 長、消除單題異常值（改了選項 1、2）；長度改動重新盲答 issue：干擾項「早上起床洗冷水澡」和題幹「晚上」時段矛盾，改成晚上情境",
         "resolution": "改為 [\"晚上在客廳看書\",\"看報紙上的新聞\",\"在床上看手機\"]（原 [\"早上起床洗冷水澡\",\"看新聞\",\"在床上看手機\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：habit 與 q13 共用、code 是 q13 正解；改 stay、wait（stay up／wait up 文法可通、語意不對）",
+        "resolution": "改為 [\"shower\", \"wake\", \"stay\", \"wait\"]（原 [\"shower\", \"wake\", \"habit\", \"code\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：habit 與 q13 共用、code 是 q13 正解；改 stay、wait（stay up／wait up 文法可通、語意不對）",
+        "resolution": "改為 [\"淋浴\", \"醒來\", \"待著\", \"等待\"]（原 [\"淋浴\", \"醒來\", \"習慣\", \"密碼\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：busy 非名詞，改同單元名詞 skill，四選項皆名詞",
+        "resolution": "改為 [\"habit\", \"mail\", \"skill\", \"code\"]（原 [\"habit\", \"mail\", \"busy\", \"code\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：busy 非名詞，改同單元名詞 skill，四選項皆名詞",
+        "resolution": "改為 [\"習慣\", \"郵件\", \"技能\", \"密碼\"]（原 [\"習慣\", \"郵件\", \"忙碌的\", \"密碼\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

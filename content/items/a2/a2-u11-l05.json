@@ -140,13 +140,13 @@
       "stemZh": "店員幫我找到了合適的尺寸。",
       "options": [
         "department store",
-        "cheque",
+        "wallet",
         "shop assistant",
         "grocery store"
       ],
       "optionGlossZh": [
         "百貨公司",
-        "支票",
+        "皮夾",
         "店員",
         "雜貨店"
       ],
@@ -352,6 +352,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u11-l05-q14#0 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"免費送每位客人一杯咖啡\",\"新店開幕，送每人小禮物\",\"大特價，所有東西半價\"]（原 [\"免費送咖啡\",\"新店開幕，送每人小禮物\",\"大特價，所有東西半價\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：cheque 是 q13 正解，改本單元名詞 wallet",
+        "resolution": "改為 [\"department store\", \"wallet\", \"shop assistant\", \"grocery store\"]（原 [\"department store\", \"cheque\", \"shop assistant\", \"grocery store\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：cheque 是 q13 正解，改本單元名詞 wallet",
+        "resolution": "改為 [\"百貨公司\", \"皮夾\", \"店員\", \"雜貨店\"]（原 [\"百貨公司\", \"支票\", \"店員\", \"雜貨店\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

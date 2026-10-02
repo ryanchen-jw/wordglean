@@ -149,15 +149,15 @@
       "stemEn": "He ____ to his teacher for being late.",
       "stemZh": "他因為遲到向老師道歉。",
       "options": [
-        "website",
+        "chatted",
         "apologized",
-        "printer",
+        "shouted",
         "clone"
       ],
       "optionGlossZh": [
-        "網站",
+        "聊天",
         "道歉",
-        "印表機",
+        "大喊",
         "複製"
       ],
       "answer": 1
@@ -314,6 +314,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u20-l06-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"全部送給隔壁的老鄰居\",\"全部貼在客廳的大牆上\",\"放進信封要寄給阿姨\"]（原 [\"全部送給隔壁的老鄰居\",\"貼在牆上\",\"放進信封要寄給阿姨\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：website 是 q14 正解、printer 與 q14 共用，改動詞 chatted、shouted，可接 to his teacher",
+        "resolution": "改為 [\"chatted\", \"apologized\", \"shouted\", \"clone\"]（原 [\"website\", \"apologized\", \"printer\", \"clone\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：website 是 q14 正解、printer 與 q14 共用，改動詞 chatted、shouted，可接 to his teacher",
+        "resolution": "改為 [\"聊天\", \"道歉\", \"大喊\", \"複製\"]（原 [\"網站\", \"道歉\", \"印表機\", \"複製\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -29,8 +29,8 @@
       "id": "a2-u12-l02-q02",
       "type": "wordCard",
       "word": "national",
-      "exampleEn": "This is the national museum.",
-      "exampleZh": "這是國立博物館。",
+      "exampleEn": "Today is a national holiday, so the banks are closed.",
+      "exampleZh": "今天是國定假日，所以銀行沒有開。",
       "glossZh": "國家的；國立的",
       "distractorsZh": [
         "私人的",
@@ -42,8 +42,8 @@
       "id": "a2-u12-l02-q03",
       "type": "wordCard",
       "word": "nation",
-      "exampleEn": "The whole nation watched the game on TV.",
-      "exampleZh": "全國人民都在看電視轉播這場比賽。",
+      "exampleEn": "This sport is popular in many nations.",
+      "exampleZh": "這項運動在很多國家都很受歡迎。",
       "glossZh": "國家；全國人民",
       "distractorsZh": [
         "城市",
@@ -185,16 +185,16 @@
       "stemEn": "We should buy fruit from ____ farmers.",
       "stemZh": "我們應該向本地農夫買水果。",
       "options": [
-        "space",
+        "indoor",
         "local",
         "nation",
-        "position"
+        "national"
       ],
       "optionGlossZh": [
-        "空間",
+        "室內的",
         "本地的",
         "國家",
-        "位置"
+        "國家的"
       ],
       "answer": 1
     },
@@ -361,6 +361,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u12-l02-q16#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"台北這座國際大城市\",\"很多很高的山\",\"很多漂亮的海灘\"]（原 [\"台北這座國際大城市\",\"很高的山\",\"很多漂亮的海灘和港口\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「國家的」；與 q16 閱讀（國家公園）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Today is a national holiday, so the banks are closed.\"（原 \"This is the national museum.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「國家的」；與 q16 閱讀（國家公園）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"今天是國定假日，所以銀行沒有開。\"（原 \"這是國立博物館。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「國家」；與 q10 聽打（各國的人來參加節慶）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"This sport is popular in many nations.\"（原 \"The whole nation watched the game on TV.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「國家」；與 q10 聽打（各國的人來參加節慶）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"這項運動在很多國家都很受歡迎。\"（原 \"全國人民都在看電視轉播這場比賽。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：space、position 與 q14 共用；原本無干擾項放得進形容詞位置，改 indoor、national（能代入、靠詞義排除）",
+        "resolution": "改為 [\"indoor\", \"local\", \"nation\", \"national\"]（原 [\"space\", \"local\", \"nation\", \"position\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：space、position 與 q14 共用；原本無干擾項放得進形容詞位置，改 indoor、national（能代入、靠詞義排除）",
+        "resolution": "改為 [\"室內的\", \"本地的\", \"國家\", \"國家的\"]（原 [\"空間\", \"本地的\", \"國家\", \"位置\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -30,7 +30,7 @@
       "word": "shoot",
       "exampleEn": "She shot the ball into the basket.",
       "exampleZh": "她把球投進了籃框。",
-      "glossZh": "投（籃）；射（門）",
+      "glossZh": "投籃；射門",
       "distractorsZh": [
         "接住",
         "傳給別人",
@@ -56,7 +56,7 @@
       "word": "accept",
       "exampleEn": "Please accept this small gift.",
       "exampleZh": "請收下這份小禮物。",
-      "glossZh": "接受；收下",
+      "glossZh": "收下；接受",
       "distractorsZh": [
         "拒絕",
         "弄丟",
@@ -153,13 +153,13 @@
       "stemZh": "你必須有票才能進入博物館。",
       "options": [
         "lie",
-        "success",
+        "prepare",
         "fail",
         "enter"
       ],
       "optionGlossZh": [
         "躺",
-        "成功",
+        "準備",
         "失敗",
         "進入"
       ],
@@ -171,13 +171,13 @@
       "stemEn": "The new cafe was a great ____. It was full every day.",
       "stemZh": "那家新咖啡店非常成功，每天都客滿。",
       "options": [
-        "mistake",
+        "effort",
         "problem",
         "success",
         "danger"
       ],
       "optionGlossZh": [
-        "錯誤",
+        "努力",
         "問題",
         "成功",
         "危險"
@@ -323,6 +323,42 @@
         "message": "執行長第②③關裁示修正：選項同步（正解位置不變）",
         "resolution": "改為 [\"Both plans failed\",\"The second plan worked\",\"They did not make a plan\"]（原 [\"She failed both tests\",\"She passed the second test\",\"She did not take the test\"]）",
         "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"投籃；射門\"（原 \"投（籃）；射（門）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"收下；接受\"（原 \"接受；收下\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：success 是 q14 正解，改本課動詞 prepare",
+        "resolution": "改為 [\"lie\", \"prepare\", \"fail\", \"enter\"]（原 [\"lie\", \"success\", \"fail\", \"enter\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：success 是 q14 正解，改本課動詞 prepare",
+        "resolution": "改為 [\"躺\", \"準備\", \"失敗\", \"進入\"]（原 [\"躺\", \"成功\", \"失敗\", \"進入\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：mistake 超範圍，改本單元名詞 effort",
+        "resolution": "改為 [\"effort\", \"problem\", \"success\", \"danger\"]（原 [\"mistake\", \"problem\", \"success\", \"danger\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：mistake 超範圍，改本單元名詞 effort",
+        "resolution": "改為 [\"努力\", \"問題\", \"成功\", \"危險\"]（原 [\"錯誤\", \"問題\", \"成功\", \"危險\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

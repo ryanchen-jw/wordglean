@@ -27,8 +27,8 @@
       "id": "a2-u25-l04-q02",
       "type": "wordCard",
       "word": "square",
-      "exampleEn": "We met in the town square.",
-      "exampleZh": "我們在鎮上的廣場碰面。",
+      "exampleEn": "We sat at a small square table by the window.",
+      "exampleZh": "我們坐在窗邊一張小方桌旁。",
       "glossZh": "方形的；廣場",
       "distractorsZh": [
         "圓形的",
@@ -171,13 +171,13 @@
       "stemZh": "不算袋子，米的淨重是五公斤。",
       "options": [
         "net",
-        "lost",
+        "inner",
         "split",
         "unknown"
       ],
       "optionGlossZh": [
         "淨的",
-        "遺失的",
+        "內部的",
         "裂開的",
         "未知的"
       ],
@@ -280,6 +280,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u25-l04-q15#1 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"附近有一座不為人知的湖\",\"附近有一家餐廳\",\"下山的另一條路\"]（原 [\"附近有一座不為人知的湖\",\"一家好吃的餐廳\",\"回家的路\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範形容詞「方形的」；與 q15 閱讀（village square 廣場）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"We sat at a small square table by the window.\"（原 \"We met in the town square.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範形容詞「方形的」；與 q15 閱讀（village square 廣場）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我們坐在窗邊一張小方桌旁。\"（原 \"我們在鎮上的廣場碰面。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lost 與 q13 共用，改本單元形容詞 inner",
+        "resolution": "改為 [\"net\", \"inner\", \"split\", \"unknown\"]（原 [\"net\", \"lost\", \"split\", \"unknown\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lost 與 q13 共用，改本單元形容詞 inner",
+        "resolution": "改為 [\"淨的\", \"內部的\", \"裂開的\", \"未知的\"]（原 [\"淨的\", \"遺失的\", \"裂開的\", \"未知的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

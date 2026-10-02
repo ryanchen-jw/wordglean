@@ -157,15 +157,15 @@
       "stemEn": "Can I have a glass of ____ with my burger?",
       "stemZh": "我吃漢堡時可以配一杯可樂嗎？",
       "options": [
-        "biscuit",
+        "butter",
         "beef",
-        "grape",
+        "rice",
         "coke"
       ],
       "optionGlossZh": [
-        "餅乾",
+        "奶油",
         "牛肉",
-        "葡萄",
+        "米飯",
         "可樂"
       ],
       "answer": 3
@@ -326,6 +326,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u08-l08-q14#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"送給隔壁的朋友\",\"當今天晚上的晚餐\",\"當明天的早餐\"]（原 [\"送給隔壁的朋友\",\"當晚餐\",\"當明天的早餐\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：biscuit/grape 與 q12 共用，換 butter/rice（不可數，皆能放進 a glass of）",
+        "resolution": "改為 [\"butter\", \"beef\", \"rice\", \"coke\"]（原 [\"biscuit\", \"beef\", \"grape\", \"coke\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：biscuit/grape 與 q12 共用，換 butter/rice（不可數，皆能放進 a glass of）",
+        "resolution": "改為 [\"奶油\", \"牛肉\", \"米飯\", \"可樂\"]（原 [\"餅乾\", \"牛肉\", \"葡萄\", \"可樂\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

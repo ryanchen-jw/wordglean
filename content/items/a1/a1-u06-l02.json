@@ -149,13 +149,13 @@
       "stemEn": "I drink a ____ of milk every morning.",
       "stemZh": "我每天早上喝一杯牛奶。",
       "options": [
-        "window",
+        "towel",
         "wall",
         "floor",
         "glass"
       ],
       "optionGlossZh": [
-        "窗戶",
+        "毛巾",
         "牆",
         "地板",
         "玻璃杯"
@@ -322,6 +322,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"On the chair by the door\"（原 \"On the chair\"）",
         "resolvedAt": "2026-10-02T17:55:45Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：window 是 q14 正解，改同單元名詞 towel；避開 box（a box of milk 也對）",
+        "resolution": "改為 [\"towel\", \"wall\", \"floor\", \"glass\"]（原 [\"window\", \"wall\", \"floor\", \"glass\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：window 是 q14 正解，改同單元名詞 towel；避開 box（a box of milk 也對）",
+        "resolution": "改為 [\"毛巾\", \"牆\", \"地板\", \"玻璃杯\"]（原 [\"窗戶\", \"牆\", \"地板\", \"玻璃杯\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

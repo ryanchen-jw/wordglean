@@ -171,13 +171,13 @@
         "heat",
         "earth",
         "wild",
-        "planet"
+        "natural"
       ],
       "optionGlossZh": [
         "高溫",
         "地球",
         "野生的",
-        "行星"
+        "天然的"
       ],
       "answer": 2
     },
@@ -278,6 +278,18 @@
         "message": "第②關：正解選項明顯是最長的一個（「來了暴風雨，他們睡在車上」12 字 vs 6–7 字），違反「正解不落在最長集合」；應縮短正解或加長干擾項。",
         "resolution": "執行長裁示：「單題正解最長」類 issue 由全級長度名次分布規則統一處理",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：planet 與 q13 planets 共用，改本單元形容詞 natural，湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"heat\", \"earth\", \"wild\", \"natural\"]（原 [\"heat\", \"earth\", \"wild\", \"planet\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：planet 與 q13 planets 共用，改本單元形容詞 natural，湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"高溫\", \"地球\", \"野生的\", \"天然的\"]（原 [\"高溫\", \"地球\", \"野生的\", \"行星\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

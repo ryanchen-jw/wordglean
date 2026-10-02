@@ -171,16 +171,16 @@
       "stemEn": "It is not hot, and it is not cold. It is ____.",
       "stemZh": "不熱也不冷，很涼爽。",
       "options": [
-        "river",
-        "ice",
+        "hot",
+        "cold",
         "cool",
-        "horse"
+        "snowy"
       ],
       "optionGlossZh": [
-        "河",
-        "冰",
+        "熱的",
+        "冷的",
         "涼爽的",
-        "馬"
+        "下雪的"
       ],
       "answer": 2
     },
@@ -282,6 +282,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"在山丘上騎爺爺的老馬\"（原 \"騎馬\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：ice 是 q13 正解；改為四個形容詞 hot/cold/snowy，靠詞義選 cool",
+        "resolution": "改為 [\"hot\", \"cold\", \"cool\", \"snowy\"]（原 [\"river\", \"ice\", \"cool\", \"horse\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：ice 是 q13 正解；改為四個形容詞 hot/cold/snowy，靠詞義選 cool",
+        "resolution": "改為 [\"熱的\", \"冷的\", \"涼爽的\", \"下雪的\"]（原 [\"河\", \"冰\", \"涼爽的\", \"馬\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

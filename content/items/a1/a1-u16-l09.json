@@ -139,15 +139,15 @@
       "stemZh": "你的姓怎麼拼？",
       "options": [
         "pencil",
-        "ruler",
+        "wash",
         "spell",
-        "paragraph"
+        "underline"
       ],
       "optionGlossZh": [
         "鉛筆",
-        "尺",
+        "洗",
         "拼寫",
-        "段落"
+        "畫底線"
       ],
       "answer": 2
     },
@@ -279,6 +279,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"英文課本、電腦和計算機\"（原 \"課本和電腦\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：ruler 是 q13 正解、paragraph 與 q13 共用，改動詞 copy、underline，使兩個干擾項能放進動詞空格",
+        "resolution": "改為 [\"pencil\", \"copy\", \"spell\", \"underline\"]（原 [\"pencil\", \"ruler\", \"spell\", \"paragraph\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：ruler 是 q13 正解、paragraph 與 q13 共用，改動詞 copy、underline，使兩個干擾項能放進動詞空格",
+        "resolution": "改為 [\"鉛筆\", \"抄寫\", \"拼寫\", \"畫底線\"]（原 [\"鉛筆\", \"尺\", \"拼寫\", \"段落\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：copy 代入「How do you copy your last name?」情境上說得通，換成 wash（How do you wash your last name? 語意不通）",
+        "resolution": "改為 [\"pencil\", \"wash\", \"spell\", \"underline\"]（原 [\"pencil\", \"copy\", \"spell\", \"underline\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：copy 代入「How do you copy your last name?」情境上說得通，換成 wash（How do you wash your last name? 語意不通）",
+        "resolution": "改為 [\"鉛筆\", \"洗\", \"拼寫\", \"畫底線\"]（原 [\"鉛筆\", \"抄寫\", \"拼寫\", \"畫底線\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

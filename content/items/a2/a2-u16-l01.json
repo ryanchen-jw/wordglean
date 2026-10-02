@@ -152,13 +152,13 @@
       "stemEn": "The fastest ____ crossed the line first.",
       "stemZh": "跑最快的跑者最先衝過終點線。",
       "options": [
-        "stadium",
+        "challenge",
         "runner",
         "skate",
         "golf"
       ],
       "optionGlossZh": [
-        "體育場",
+        "挑戰",
         "跑者",
         "溜冰鞋",
         "高爾夫球"
@@ -311,6 +311,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u16-l01-q15#0 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"學校的大操場\",\"新的體育場\",\"市立公園\"]（原 [\"學校的大操場\",\"新的體育場\",\"公園\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：stadium 與 q14 共用，改本課名詞 challenge（athlete 會變也對故不用）",
+        "resolution": "改為 [\"challenge\", \"runner\", \"skate\", \"golf\"]（原 [\"stadium\", \"runner\", \"skate\", \"golf\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：stadium 與 q14 共用，改本課名詞 challenge（athlete 會變也對故不用）",
+        "resolution": "改為 [\"挑戰\", \"跑者\", \"溜冰鞋\", \"高爾夫球\"]（原 [\"體育場\", \"跑者\", \"溜冰鞋\", \"高爾夫球\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

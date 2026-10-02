@@ -67,8 +67,8 @@
       "id": "a2-u15-l04-q05",
       "type": "wordCard",
       "word": "singing",
-      "exampleEn": "We heard singing from the next room.",
-      "exampleZh": "我們聽到隔壁房間傳來歌聲。",
+      "exampleEn": "Singing is a good way to learn new words.",
+      "exampleZh": "唱歌是學新單字的好方法。",
       "glossZh": "唱歌；歌聲",
       "distractorsZh": [
         "舞蹈",
@@ -141,13 +141,13 @@
       "options": [
         "amusement",
         "clown",
-        "comic",
+        "dancer",
         "composer"
       ],
       "optionGlossZh": [
         "娛樂",
         "小丑",
-        "漫畫",
+        "舞者",
         "作曲家"
       ],
       "answer": 3
@@ -161,13 +161,13 @@
         "singing",
         "comic",
         "audio",
-        "composer"
+        "lonely"
       ],
       "optionGlossZh": [
         "唱歌",
         "滑稽的",
         "聲音的",
-        "作曲家"
+        "寂寞的"
       ],
       "answer": 1
     },
@@ -334,6 +334,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u15-l04-q14#1 目標第 1 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"講滑稽的故事\",\"表演饒舌\",\"變魔術\"]（原 [\"講滑稽的故事\",\"表演一段饒舌歌\",\"變魔術\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「唱歌」（活動）；與 q09 派對、q11 妹妹愛唱跳、q14 遊樂園、q16 媽媽歌聲／洗澡唱歌換了主詞＋情境＋句型（動名詞作主詞）。",
+        "resolution": "改為 \"Singing is a good way to learn new words.\"（原 \"We heard singing from the next room.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「唱歌」（活動）；與 q09 派對、q11 妹妹愛唱跳、q14 遊樂園、q16 媽媽歌聲／洗澡唱歌換了主詞＋情境＋句型（動名詞作主詞）。",
+        "resolution": "改為 \"唱歌是學新單字的好方法。\"（原 \"我們聽到隔壁房間傳來歌聲。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：comic 是 q13 正解，改本單元名詞 dancer",
+        "resolution": "改為 [\"amusement\", \"clown\", \"dancer\", \"composer\"]（原 [\"amusement\", \"clown\", \"comic\", \"composer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：comic 是 q13 正解，改本單元名詞 dancer",
+        "resolution": "改為 [\"娛樂\", \"小丑\", \"舞者\", \"作曲家\"]（原 [\"娛樂\", \"小丑\", \"漫畫\", \"作曲家\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：composer 是 q12 正解，改形容詞 lonely（能代入、與 everyone laughed 矛盾而排除），湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"singing\", \"comic\", \"audio\", \"lonely\"]（原 [\"singing\", \"comic\", \"audio\", \"composer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：composer 是 q12 正解，改形容詞 lonely（能代入、與 everyone laughed 矛盾而排除），湊足兩個可代入的干擾項",
+        "resolution": "改為 [\"唱歌\", \"滑稽的\", \"聲音的\", \"寂寞的\"]（原 [\"唱歌\", \"滑稽的\", \"聲音的\", \"作曲家\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

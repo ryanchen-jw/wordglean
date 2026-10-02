@@ -143,16 +143,16 @@
       "stemEn": "My mother's brother is my ____.",
       "stemZh": "我媽媽的兄弟是我的舅舅。",
       "options": [
-        "aunt",
+        "cousin",
         "uncle",
         "grandfather",
-        "boyfriend"
+        "father"
       ],
       "optionGlossZh": [
-        "阿姨",
+        "堂（表）兄弟姊妹",
         "舅舅；叔叔",
         "祖父",
-        "男朋友"
+        "父親"
       ],
       "answer": 1
     },
@@ -162,16 +162,16 @@
       "stemEn": "____ Tom, how are you?",
       "stemZh": "親愛的 Tom，你好嗎？",
       "options": [
-        "Celebration",
+        "Aunt",
         "Dear",
         "Girlfriend",
-        "Boyfriend"
+        "Sorry"
       ],
       "optionGlossZh": [
-        "慶祝活動",
+        "阿姨",
         "親愛的",
         "女朋友",
-        "男朋友"
+        "抱歉"
       ],
       "answer": 1
     },
@@ -355,6 +355,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"Tom 的爺爺和奶奶\"（原 \"Tom 的爺爺\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：boyfriend 與 q13 共用改 father；aunt 讓給 q13 改 cousin，四選項皆名詞",
+        "resolution": "改為 [\"cousin\", \"uncle\", \"grandfather\", \"father\"]（原 [\"aunt\", \"uncle\", \"grandfather\", \"boyfriend\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：boyfriend 與 q13 共用改 father；aunt 讓給 q13 改 cousin，四選項皆名詞",
+        "resolution": "改為 [\"堂（表）兄弟姊妹\", \"舅舅；叔叔\", \"祖父\", \"父親\"]（原 [\"阿姨\", \"舅舅；叔叔\", \"祖父\", \"男朋友\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Boyfriend 與 q12 共用、Celebration 放不進；改 Aunt、Sorry（Aunt Tom／Sorry Tom 文法可通）；避開 Hi、Hello（也通）",
+        "resolution": "改為 [\"Aunt\", \"Dear\", \"Girlfriend\", \"Sorry\"]（原 [\"Celebration\", \"Dear\", \"Girlfriend\", \"Boyfriend\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Boyfriend 與 q12 共用、Celebration 放不進；改 Aunt、Sorry（Aunt Tom／Sorry Tom 文法可通）；避開 Hi、Hello（也通）",
+        "resolution": "改為 [\"阿姨\", \"親愛的\", \"女朋友\", \"抱歉\"]（原 [\"慶祝活動\", \"親愛的\", \"女朋友\", \"男朋友\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

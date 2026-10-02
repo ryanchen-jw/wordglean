@@ -156,15 +156,15 @@
       "stemEn": "Have you seen any good movies ____?",
       "stemZh": "你最近有看什麼好電影嗎？",
       "options": [
-        "final",
+        "finally",
         "recent",
-        "regular",
+        "again",
         "recently"
       ],
       "optionGlossZh": [
-        "最後的",
+        "終於",
         "最近的",
-        "規律的",
+        "再一次",
         "最近"
       ],
       "answer": 3
@@ -315,6 +315,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u02-l02-q14#1 目標第 3 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"爺爺把老房子賣給別人\",\"爺爺搬到城市的公寓住\",\"爸媽幫爺爺油漆房子\"]（原 [\"房子被賣掉了\",\"爺爺把房子賣掉搬到城市去了\",\"爸媽幫爺爺把房子油漆了一遍\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：final、regular 是形容詞放不進句尾，改副詞 finally、again",
+        "resolution": "改為 [\"finally\", \"recent\", \"again\", \"recently\"]（原 [\"final\", \"recent\", \"regular\", \"recently\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：final、regular 是形容詞放不進句尾，改副詞 finally、again",
+        "resolution": "改為 [\"終於\", \"最近的\", \"再一次\", \"最近\"]（原 [\"最後的\", \"最近的\", \"規律的\", \"最近\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

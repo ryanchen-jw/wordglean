@@ -172,14 +172,14 @@
       "stemZh": "我到家的時候會傳訊息給你。",
       "options": [
         "send",
-        "appear",
-        "remain",
+        "draw",
+        "throw",
         "expect"
       ],
       "optionGlossZh": [
         "傳送",
-        "出現",
-        "保持",
+        "畫",
+        "丟",
         "預計"
       ],
       "answer": 0
@@ -311,6 +311,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"打電話請爸媽來幫忙\"（原 \"打電話給爸媽\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：appear、remain 與 q13 共用，改可接雙受詞的 draw、throw",
+        "resolution": "改為 [\"send\", \"draw\", \"throw\", \"expect\"]（原 [\"send\", \"appear\", \"remain\", \"expect\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：appear、remain 與 q13 共用，改可接雙受詞的 draw、throw",
+        "resolution": "改為 [\"傳送\", \"畫\", \"丟\", \"預計\"]（原 [\"傳送\", \"出現\", \"保持\", \"預計\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

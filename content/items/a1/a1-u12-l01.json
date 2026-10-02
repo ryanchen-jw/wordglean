@@ -29,8 +29,8 @@
       "id": "a1-u12-l01-q02",
       "type": "wordCard",
       "word": "vacation",
-      "exampleEn": "We go to Japan on vacation every summer.",
-      "exampleZh": "我們每年夏天去日本度假。",
+      "exampleEn": "Our vacation is very short this year.",
+      "exampleZh": "今年我們的假期很短。",
       "glossZh": "假期；度假",
       "distractorsZh": [
         "工作",
@@ -155,13 +155,13 @@
       "options": [
         "way",
         "jet",
-        "vacation",
+        "airplane",
         "car"
       ],
       "optionGlossZh": [
         "路",
         "噴射機",
-        "假期",
+        "飛機",
         "汽車"
       ],
       "answer": 0
@@ -337,6 +337,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u12-l01-q15#1 目標第 3 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"租一台車自己開去玩\",\"搭地鐵和騎腳踏車\",\"搭觀光公車和計程車\"]（原 [\"租一台車自己開去玩\",\"搭地鐵和騎腳踏車\",\"搭公車\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 vacation＝假期（名詞）；與 q11 開車去度假、q15 閱讀去日本、q17 造句去日本／海灘換了情境＋句型（不再是 go on vacation）",
+        "resolution": "改為 \"Our vacation is very short this year.\"（原 \"We go to Japan on vacation every summer.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 vacation＝假期（名詞）；與 q11 開車去度假、q15 閱讀去日本、q17 造句去日本／海灘換了情境＋句型（不再是 go on vacation）",
+        "resolution": "改為 \"今年我們的假期很短。\"（原 \"我們每年夏天去日本度假。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：vacation 是 q14 正解，換 airplane",
+        "resolution": "改為 [\"way\", \"jet\", \"airplane\", \"car\"]（原 [\"way\", \"jet\", \"vacation\", \"car\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：vacation 是 q14 正解，換 airplane",
+        "resolution": "改為 [\"路\", \"噴射機\", \"飛機\", \"汽車\"]（原 [\"路\", \"噴射機\", \"假期\", \"汽車\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

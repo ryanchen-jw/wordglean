@@ -151,16 +151,16 @@
       "stemEn": "Don't throw away the bottles. Please ____ them.",
       "stemZh": "不要把瓶子丟掉，請拿去回收。",
       "options": [
-        "lose",
+        "drop",
         "pollute",
         "recycle",
-        "hide"
+        "marry"
       ],
       "optionGlossZh": [
-        "弄丟",
+        "使落下",
         "汙染",
         "回收",
-        "藏起來"
+        "和⋯結婚"
       ],
       "answer": 2
     },
@@ -170,16 +170,16 @@
       "stemEn": "It's very ____ today. My umbrella broke.",
       "stemZh": "今天風很大，我的傘都壞了。",
       "options": [
-        "ray",
+        "foggy",
         "windy",
         "scenery",
-        "elephant"
+        "cloudy"
       ],
       "optionGlossZh": [
-        "光線",
+        "有霧的",
         "風大的",
         "風景",
-        "大象"
+        "多雲的"
       ],
       "answer": 1
     },
@@ -274,6 +274,42 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"玻璃可以回收很多次。\"（原 \"我們學校會回收舊電腦。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：lose 已在他課當非本單元干擾項，改 drop",
+        "resolution": "改為 [\"drop\", \"pollute\", \"recycle\", \"hide\"]（原 [\"lose\", \"pollute\", \"recycle\", \"hide\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：lose 已在他課當非本單元干擾項，改 drop",
+        "resolution": "改為 [\"使落下\", \"汙染\", \"回收\", \"藏起來\"]（原 [\"弄丟\", \"汙染\", \"回收\", \"藏起來\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：ray、elephant 放不進 very ____ 形容詞位置，改 foggy、cloudy（能代入、靠 umbrella broke 排除；rainy 會變也對故不用）",
+        "resolution": "改為 [\"foggy\", \"windy\", \"scenery\", \"cloudy\"]（原 [\"ray\", \"windy\", \"scenery\", \"elephant\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：ray、elephant 放不進 very ____ 形容詞位置，改 foggy、cloudy（能代入、靠 umbrella broke 排除；rainy 會變也對故不用）",
+        "resolution": "改為 [\"有霧的\", \"風大的\", \"風景\", \"多雲的\"]（原 [\"光線\", \"風大的\", \"風景\", \"大象\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：hide 代入「Don't throw away the bottles. Please hide them.」情境上說得通，換成 marry：「Please marry them.」（指瓶子）文法通、語意不通",
+        "resolution": "改為 [\"drop\", \"pollute\", \"recycle\", \"marry\"]（原 [\"drop\", \"pollute\", \"recycle\", \"hide\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：hide 代入「Don't throw away the bottles. Please hide them.」情境上說得通，換成 marry：「Please marry them.」（指瓶子）文法通、語意不通",
+        "resolution": "改為 [\"使落下\", \"汙染\", \"回收\", \"和⋯結婚\"]（原 [\"使落下\", \"汙染\", \"回收\", \"藏起來\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

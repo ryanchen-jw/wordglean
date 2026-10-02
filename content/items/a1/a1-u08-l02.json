@@ -170,14 +170,14 @@
       "stemEn": "This pizza is ____! Can I have one more piece?",
       "stemZh": "這個披薩好好吃！我可以再吃一塊嗎？",
       "options": [
-        "cookie",
-        "cafe",
+        "hungry",
+        "bad",
         "delicious",
         "sandwich"
       ],
       "optionGlossZh": [
-        "餅乾",
-        "咖啡店",
+        "餓的",
+        "糟的",
         "美味的",
         "三明治"
       ],
@@ -329,6 +329,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u08-l02-q15#1 目標第 1 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"每天都去\",\"每個星期六\",\"每個月\"]（原 [\"每天\",\"每個星期六\",\"每個月一次\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：cafe 與 q13 共用、cookie 放不進；改形容詞 hungry、bad（文法可通、語意不對）",
+        "resolution": "改為 [\"hungry\", \"bad\", \"delicious\", \"sandwich\"]（原 [\"cookie\", \"cafe\", \"delicious\", \"sandwich\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：cafe 與 q13 共用、cookie 放不進；改形容詞 hungry、bad（文法可通、語意不對）",
+        "resolution": "改為 [\"餓的\", \"糟的\", \"美味的\", \"三明治\"]（原 [\"餅乾\", \"咖啡店\", \"美味的\", \"三明治\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

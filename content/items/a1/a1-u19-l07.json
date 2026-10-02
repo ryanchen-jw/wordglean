@@ -149,14 +149,14 @@
       "stemEn": "Is this umbrella ____? No, it is not mine.",
       "stemZh": "這把傘是你的嗎？不是，不是我的。",
       "options": [
-        "beside",
+        "above",
         "below",
         "yours",
         "everywhere"
       ],
       "optionGlossZh": [
-        "在⋯旁邊",
-        "在⋯下面",
+        "在上方",
+        "在下面",
         "你的",
         "到處"
       ],
@@ -289,6 +289,18 @@
         "message": "執行長第②③關裁示修正：第②③關 FIX：桌子底下用 under",
         "resolution": "改前：\"After the party, there are cups everywhere. My sister finds a blue cup beside the sofa. She says, \\\"This is mine.\\\" There is a red one below the table. \\\"Is it yours?\\\" I ask my brother. He says, \\\"No, it is Mom's. Ours are in the kitchen.\\\"\"；改後：\"After the party, there are cups everywhere. My sister finds a blue cup beside the sofa. She says, \\\"This is mine.\\\" There is a red one under the table. \\\"Is it yours?\\\" I ask my brother. He says, \\\"No, it is Mom's. Ours are in the kitchen.\\\"\"",
         "resolvedAt": "2026-10-02T13:24:01Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：beside 是 q14 正解改 above",
+        "resolution": "改為 [\"above\", \"below\", \"yours\", \"everywhere\"]（原 [\"beside\", \"below\", \"yours\", \"everywhere\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：beside 是 q14 正解改 above",
+        "resolution": "改為 [\"在上方\", \"在下面\", \"你的\", \"到處\"]（原 [\"在⋯旁邊\", \"在⋯下面\", \"你的\", \"到處\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

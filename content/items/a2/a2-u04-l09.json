@@ -153,13 +153,13 @@
       "options": [
         "achieve",
         "encourage",
-        "admire",
+        "reveal",
         "replace"
       ],
       "optionGlossZh": [
         "達成",
         "鼓勵",
-        "欽佩",
+        "揭露",
         "更換"
       ],
       "answer": 3
@@ -171,13 +171,13 @@
       "stemZh": "請參閱第五頁的地圖。",
       "options": [
         "roll",
-        "handle",
+        "listen",
         "attempt",
         "refer"
       ],
       "optionGlossZh": [
         "一捲",
-        "把手",
+        "聽",
         "嘗試",
         "參閱"
       ],
@@ -280,6 +280,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"每天早上都去公園跑步\"（原 \"每天都去跑步\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：admire 超範圍，改本單元 reveal",
+        "resolution": "改為 [\"achieve\", \"encourage\", \"reveal\", \"replace\"]（原 [\"achieve\", \"encourage\", \"admire\", \"replace\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：admire 超範圍，改本單元 reveal",
+        "resolution": "改為 [\"達成\", \"鼓勵\", \"揭露\", \"更換\"]（原 [\"達成\", \"鼓勵\", \"欽佩\", \"更換\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：handle 放不進 Please ___ to，改不及物動詞 listen，使 roll、listen 兩個干擾項文法成立",
+        "resolution": "改為 [\"roll\", \"listen\", \"attempt\", \"refer\"]（原 [\"roll\", \"handle\", \"attempt\", \"refer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：handle 放不進 Please ___ to，改不及物動詞 listen，使 roll、listen 兩個干擾項文法成立",
+        "resolution": "改為 [\"一捲\", \"聽\", \"嘗試\", \"參閱\"]（原 [\"一捲\", \"把手\", \"嘗試\", \"參閱\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -138,13 +138,13 @@
       "stemEn": "You must buy a ____ before you get on the train.",
       "stemZh": "你上火車前一定要先買票。",
       "options": [
-        "wheel",
+        "truck",
         "ticket",
         "sailor",
         "holiday"
       ],
       "optionGlossZh": [
-        "輪子",
+        "卡車",
         "票",
         "水手",
         "假日"
@@ -285,6 +285,18 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「一位老水手」由位置 0 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:41:18Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：wheel 是 q13 正解，換 truck",
+        "resolution": "改為 [\"truck\", \"ticket\", \"sailor\", \"holiday\"]（原 [\"wheel\", \"ticket\", \"sailor\", \"holiday\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：wheel 是 q13 正解，換 truck",
+        "resolution": "改為 [\"卡車\", \"票\", \"水手\", \"假日\"]（原 [\"輪子\", \"票\", \"水手\", \"假日\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

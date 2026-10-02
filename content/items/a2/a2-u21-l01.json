@@ -108,7 +108,7 @@
       "word": "scene",
       "exampleEn": "The scene at the beach was very funny.",
       "exampleZh": "海灘的那一幕非常好笑。",
-      "glossZh": "（電影等的）一幕；場面",
+      "glossZh": "一幕；場面（電影等）",
       "distractorsZh": [
         "歌曲",
         "角色",
@@ -185,14 +185,14 @@
       "stemZh": "過年時，我們和家人一起吃傳統的食物。",
       "options": [
         "bug",
-        "author",
-        "publish",
+        "rainy",
+        "plastic",
         "traditional"
       ],
       "optionGlossZh": [
         "小蟲",
-        "作者",
-        "出版",
+        "下雨的",
+        "塑膠的",
         "傳統的"
       ],
       "answer": 3
@@ -294,6 +294,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u21-l01-q16#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"一個專門介紹新書的網站\",\"一份地方報紙的電影版\",\"電影雜誌的最新一期\"]（原 [\"一個專門介紹新書的網站\",\"一份報紙\",\"電影雜誌的最新一期\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"一幕；場面（電影等）\"（原 \"（電影等的）一幕；場面\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：author、publish 放不進 ___ food，改形容詞 boring、plastic",
+        "resolution": "改為 [\"bug\", \"boring\", \"plastic\", \"traditional\"]（原 [\"bug\", \"author\", \"publish\", \"traditional\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：author、publish 放不進 ___ food，改形容詞 boring、plastic",
+        "resolution": "改為 [\"小蟲\", \"無聊的\", \"塑膠的\", \"傳統的\"]（原 [\"小蟲\", \"作者\", \"出版\", \"傳統的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「At New Year, we eat boring food with our family.」文法語意皆可成立，boring 換成 rainy，「下雨的食物」語意不通",
+        "resolution": "改為 [\"bug\", \"rainy\", \"plastic\", \"traditional\"]（原 [\"bug\", \"boring\", \"plastic\", \"traditional\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「At New Year, we eat boring food with our family.」文法語意皆可成立，boring 換成 rainy，「下雨的食物」語意不通",
+        "resolution": "改為 [\"小蟲\", \"下雨的\", \"塑膠的\", \"傳統的\"]（原 [\"小蟲\", \"無聊的\", \"塑膠的\", \"傳統的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

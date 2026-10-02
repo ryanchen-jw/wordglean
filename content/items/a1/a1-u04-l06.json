@@ -70,7 +70,7 @@
       "word": "grandma",
       "exampleEn": "Grandma makes the best soup.",
       "exampleZh": "奶奶煮的湯最好喝。",
-      "glossZh": "（口語）奶奶；外婆",
+      "glossZh": "奶奶；外婆（口語）",
       "distractorsZh": [
         "爺爺",
         "媽媽",
@@ -96,7 +96,7 @@
       "word": "grandpa",
       "exampleEn": "Grandpa takes me fishing on Sunday.",
       "exampleZh": "爺爺星期天帶我去釣魚。",
-      "glossZh": "（口語）爺爺；外公",
+      "glossZh": "爺爺；外公（口語）",
       "distractorsZh": [
         "奶奶",
         "爸爸",
@@ -140,15 +140,15 @@
       "stemEn": "We say \"____ Christmas\" in December.",
       "stemZh": "我們在十二月說「聖誕快樂」。",
       "options": [
-        "Grandpa",
+        "Dear",
         "Mum",
-        "Daddy",
+        "Social",
         "Merry"
       ],
       "optionGlossZh": [
-        "爺爺",
+        "親愛的",
         "（英式）媽媽",
-        "（兒語）爸爸",
+        "社交的",
         "快樂的"
       ],
       "answer": 3
@@ -159,14 +159,14 @@
       "stemEn": "My father's father is my ____.",
       "stemZh": "我爸爸的爸爸是我的爺爺。",
       "options": [
-        "mum",
-        "mommy",
+        "aunt",
+        "grandma",
         "grandpa",
         "daddy"
       ],
       "optionGlossZh": [
-        "（英式）媽媽",
-        "（兒語）媽媽",
+        "阿姨",
+        "奶奶；外婆",
         "爺爺",
         "（兒語）爸爸"
       ],
@@ -346,6 +346,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u04-l06-q14#1 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"買新的玩具給她\",\"和奶奶一起做餅乾\",\"唸故事給她聽\"]（原 [\"買玩具\",\"和奶奶一起做餅乾\",\"唸故事給她聽\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"奶奶；外婆（口語）\"（原 \"（口語）奶奶；外婆\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"爺爺；外公（口語）\"（原 \"（口語）爺爺；外公\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Grandpa 是 q13 正解、Daddy 與 q13 共用，改形容詞 Dear、Social（文法可通）",
+        "resolution": "改為 [\"Dear\", \"Mum\", \"Social\", \"Merry\"]（原 [\"Grandpa\", \"Mum\", \"Daddy\", \"Merry\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Grandpa 是 q13 正解、Daddy 與 q13 共用，改形容詞 Dear、Social（文法可通）",
+        "resolution": "改為 [\"親愛的\", \"（英式）媽媽\", \"社交的\", \"快樂的\"]（原 [\"爺爺\", \"（英式）媽媽\", \"（兒語）爸爸\", \"快樂的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：mum 與 q12 共用改 aunt；mommy 改 grandma，四選項皆名詞；避開 grandparent（也對）",
+        "resolution": "改為 [\"aunt\", \"grandma\", \"grandpa\", \"daddy\"]（原 [\"mum\", \"mommy\", \"grandpa\", \"daddy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：mum 與 q12 共用改 aunt；mommy 改 grandma，四選項皆名詞；避開 grandparent（也對）",
+        "resolution": "改為 [\"阿姨\", \"奶奶；外婆\", \"爺爺\", \"（兒語）爸爸\"]（原 [\"（英式）媽媽\", \"（兒語）媽媽\", \"爺爺\", \"（兒語）爸爸\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

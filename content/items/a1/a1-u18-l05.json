@@ -157,15 +157,15 @@
       "stemEn": "Our coach is very ____. We must be on time.",
       "stemZh": "我們的教練很嚴格，我們一定要準時。",
       "options": [
-        "lazy",
-        "shy",
-        "lonely",
+        "funny",
+        "sad",
+        "clever",
         "strict"
       ],
       "optionGlossZh": [
-        "懶惰的",
-        "害羞的",
-        "寂寞的",
+        "好笑的",
+        "難過的",
+        "聰明的",
         "嚴格的"
       ],
       "answer": 3
@@ -285,6 +285,18 @@
         "message": "執行長第②③關裁示修正：裁示：造句要點不收沒用 boring 的句子（bored）",
         "resolution": "改前：\"說自己覺得無聊可用 bored（例如 I am bored）；用動名詞當主詞也正確（例如 Waiting is boring）\"；改後：\"可用動名詞當主詞（例如 Waiting for the bus is boring）\"",
         "resolvedAt": "2026-10-02T12:45:44Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lazy、shy、lonely 三字皆與 q12 共用，改 funny、sad、clever",
+        "resolution": "改為 [\"funny\", \"sad\", \"clever\", \"strict\"]（原 [\"lazy\", \"shy\", \"lonely\", \"strict\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lazy、shy、lonely 三字皆與 q12 共用，改 funny、sad、clever",
+        "resolution": "改為 [\"好笑的\", \"難過的\", \"聰明的\", \"嚴格的\"]（原 [\"懶惰的\", \"害羞的\", \"寂寞的\", \"嚴格的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

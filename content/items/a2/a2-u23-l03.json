@@ -38,8 +38,8 @@
       "id": "a2-u23-l03-q03",
       "type": "wordCard",
       "word": "purpose",
-      "exampleEn": "This room has no real purpose.",
-      "exampleZh": "這個房間沒有什麼實際用途。",
+      "exampleEn": "Every rule in our class has a purpose.",
+      "exampleZh": "我們班上的每條規定都有它的目的。",
       "glossZh": "目的；用途",
       "distractorsZh": [
         "價格",
@@ -137,13 +137,13 @@
       "stemZh": "教練告訴我們下一場比賽的策略。",
       "options": [
         "truth",
-        "purpose",
+        "evidence",
         "strategy",
         "affair"
       ],
       "optionGlossZh": [
         "實話",
-        "目的",
+        "證據",
         "策略",
         "事務"
       ],
@@ -155,13 +155,13 @@
       "stemEn": "One ____ of living near school is that you can sleep longer.",
       "stemZh": "住在學校附近的一個好處是可以多睡一點。",
       "options": [
-        "affair",
+        "concern",
         "impossible",
         "advantage",
         "opinion"
       ],
       "optionGlossZh": [
-        "事務",
+        "擔心的事",
         "不可能的",
         "優點",
         "意見"
@@ -253,6 +253,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u23-l03-q09 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"The white shirt\",\"The green shirt\",\"The blue shirt\"]（原 [\"The white shirt\",\"The red shirt\",\"The blue shirt\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「目的」；與 q14 閱讀、q16 造句（The purpose of X is/was…）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Every rule in our class has a purpose.\"（原 \"This room has no real purpose.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「目的」；與 q14 閱讀、q16 造句（The purpose of X is/was…）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我們班上的每條規定都有它的目的。\"（原 \"這個房間沒有什麼實際用途。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：affair 與 q12 共用，改本單元名詞 concern（語意相反，靠詞義排除）",
+        "resolution": "改為 [\"concern\", \"impossible\", \"advantage\", \"opinion\"]（原 [\"affair\", \"impossible\", \"advantage\", \"opinion\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：affair 與 q12 共用，改本單元名詞 concern（語意相反，靠詞義排除）",
+        "resolution": "改為 [\"擔心的事\", \"不可能的\", \"優點\", \"意見\"]（原 [\"事務\", \"不可能的\", \"優點\", \"意見\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「The coach told us our purpose for the next game.」教練說明下場比賽的目標，說得通；purpose 換成 evidence，「下場比賽的證據」語意不通",
+        "resolution": "改為 [\"truth\", \"evidence\", \"strategy\", \"affair\"]（原 [\"truth\", \"purpose\", \"strategy\", \"affair\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「The coach told us our purpose for the next game.」教練說明下場比賽的目標，說得通；purpose 換成 evidence，「下場比賽的證據」語意不通",
+        "resolution": "改為 [\"實話\", \"證據\", \"策略\", \"事務\"]（原 [\"實話\", \"目的\", \"策略\", \"事務\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

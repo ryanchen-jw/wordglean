@@ -149,14 +149,14 @@
       "stemEn": "My grandfather made this ____ chair from an old tree.",
       "stemZh": "我爺爺用一棵老樹做了這張木椅。",
       "options": [
-        "inner",
-        "silver",
+        "metal",
+        "stone",
         "wooden",
         "usual"
       ],
       "optionGlossZh": [
-        "內部的",
-        "銀的",
+        "金屬",
+        "石頭",
         "木製的",
         "平常的"
       ],
@@ -170,14 +170,14 @@
       "options": [
         "unlike",
         "inner",
-        "strongly",
-        "quietly"
+        "smooth",
+        "ancient"
       ],
       "optionGlossZh": [
         "不像的",
         "內部的",
-        "強烈地",
-        "安靜地"
+        "光滑的",
+        "古老的"
       ],
       "answer": 1
     },
@@ -308,6 +308,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u25-l03-q15#1 目標第 1 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"書架上\",\"木盒子裡\",\"銀盒子的內層\"]（原 [\"書架上\",\"木盒子的最底下\",\"銀盒子的內層\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：inner 是 q14 正解，改本單元形容詞 golden",
+        "resolution": "改為 [\"golden\", \"silver\", \"wooden\", \"usual\"]（原 [\"inner\", \"silver\", \"wooden\", \"usual\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：inner 是 q14 正解，改本單元形容詞 golden",
+        "resolution": "改為 [\"金色的\", \"銀的\", \"木製的\", \"平常的\"]（原 [\"內部的\", \"銀的\", \"木製的\", \"平常的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：strongly、quietly 放不進 the ___ pocket，改形容詞 smooth、ancient",
+        "resolution": "改為 [\"unlike\", \"inner\", \"smooth\", \"ancient\"]（原 [\"unlike\", \"inner\", \"strongly\", \"quietly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：strongly、quietly 放不進 the ___ pocket，改形容詞 smooth、ancient",
+        "resolution": "改為 [\"不像的\", \"內部的\", \"光滑的\", \"古老的\"]（原 [\"不像的\", \"內部的\", \"強烈地\", \"安靜地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My grandfather made this golden chair from an old tree.」（塗成金色）勉強成立，silver 同理；golden 換 metal、silver 換 stone，用老樹做出金屬／石頭椅子語意不通",
+        "resolution": "改為 [\"metal\", \"stone\", \"wooden\", \"usual\"]（原 [\"golden\", \"silver\", \"wooden\", \"usual\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My grandfather made this golden chair from an old tree.」（塗成金色）勉強成立，silver 同理；golden 換 metal、silver 換 stone，用老樹做出金屬／石頭椅子語意不通",
+        "resolution": "改為 [\"金屬\", \"石頭\", \"木製的\", \"平常的\"]（原 [\"金色的\", \"銀的\", \"木製的\", \"平常的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

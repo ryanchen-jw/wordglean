@@ -27,8 +27,8 @@
       "id": "a2-u22-l02-q02",
       "type": "wordCard",
       "word": "level",
-      "exampleEn": "The water level in the lake is very low this year.",
-      "exampleZh": "今年湖的水位很低。",
+      "exampleEn": "This test checks your reading level.",
+      "exampleZh": "這個測驗會檢查你的閱讀程度。",
       "glossZh": "程度；等級；高度",
       "distractorsZh": [
         "顏色",
@@ -165,13 +165,13 @@
       "stemZh": "這堂課是給初學程度的學生上的。",
       "options": [
         "kilometer",
-        "million",
+        "kilogram",
         "centimeter",
         "level"
       ],
       "optionGlossZh": [
         "公里",
-        "百萬",
+        "公斤",
         "公分",
         "程度"
       ],
@@ -183,15 +183,15 @@
       "stemEn": "I was so hungry that I ate the ____ cake by myself!",
       "stemZh": "我餓到一個人吃掉了整個蛋糕！",
       "options": [
-        "nearly",
+        "windy",
         "whole",
-        "less",
+        "same",
         "several"
       ],
       "optionGlossZh": [
-        "幾乎",
+        "風大的",
         "整個的",
-        "較少的",
+        "相同的",
         "幾個"
       ],
       "answer": 1
@@ -287,6 +287,54 @@
         "message": "執行長第②③關裁示修正：中譯配合英文語序",
         "resolution": "改為 \"我們班想去山上旅行。我們的預算是五千元。遊覽車要兩千元，飯店的價格是每位學生一百元。那裡有好幾種活動可以做，像是健行和游泳。全班都很興奮。現在錢差不多夠了，不過我們得在吃的方面少花一點。\"（原 \"我們班想去山上旅行。我們的預算是五千元。遊覽車要兩千元，飯店的價格是每位學生一百元。那裡有好幾種活動可以做，像是健行和游泳。全班都很興奮。我們得在吃的方面少花一點，不過現在錢差不多夠了。\"）",
         "resolvedAt": "2026-10-02T18:31:29Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「程度」；同課僅 q14 mcq 選項，與同課他題不撞情境。",
+        "resolution": "改為 \"This test checks your reading level.\"（原 \"The water level in the lake is very low this year.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「程度」；同課僅 q14 mcq 選項，與同課他題不撞情境。",
+        "resolution": "改為 \"這個測驗會檢查你的閱讀程度。\"（原 \"今年湖的水位很低。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：million 是數詞，改名詞 kilogram，使本題四選項同為名詞",
+        "resolution": "改為 [\"kilometer\", \"kilogram\", \"centimeter\", \"level\"]（原 [\"kilometer\", \"million\", \"centimeter\", \"level\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：million 是數詞，改名詞 kilogram，使本題四選項同為名詞",
+        "resolution": "改為 [\"公里\", \"公斤\", \"公分\", \"程度\"]（原 [\"公里\", \"百萬\", \"公分\", \"程度\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：nearly、less 放不進 the ___ cake，改形容詞 wrong、same",
+        "resolution": "改為 [\"wrong\", \"whole\", \"same\", \"several\"]（原 [\"nearly\", \"whole\", \"less\", \"several\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：nearly、less 放不進 the ___ cake，改形容詞 wrong、same",
+        "resolution": "改為 [\"錯的\", \"整個的\", \"相同的\", \"幾個\"]（原 [\"幾乎\", \"整個的\", \"較少的\", \"幾個\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「I was so hungry that I ate the wrong cake by myself!」餓到拿錯蛋糕吃情境可成立，wrong 換成 windy，「風大的蛋糕」語意不通",
+        "resolution": "改為 [\"windy\", \"whole\", \"same\", \"several\"]（原 [\"wrong\", \"whole\", \"same\", \"several\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「I was so hungry that I ate the wrong cake by myself!」餓到拿錯蛋糕吃情境可成立，wrong 換成 windy，「風大的蛋糕」語意不通",
+        "resolution": "改為 [\"風大的\", \"整個的\", \"相同的\", \"幾個\"]（原 [\"錯的\", \"整個的\", \"相同的\", \"幾個\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

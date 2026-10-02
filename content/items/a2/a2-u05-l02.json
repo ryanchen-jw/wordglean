@@ -81,8 +81,8 @@
       "id": "a2-u05-l02-q06",
       "type": "wordCard",
       "word": "male",
-      "exampleEn": "Our new cat is a male.",
-      "exampleZh": "我們新養的貓是公的。",
+      "exampleEn": "In our office, only two workers are male.",
+      "exampleZh": "在我們辦公室裡，只有兩位員工是男性。",
       "glossZh": "男性；雄性（動物）",
       "distractorsZh": [
         "嬰兒",
@@ -156,13 +156,13 @@
         "female",
         "crowd",
         "married",
-        "youth"
+        "senior"
       ],
       "optionGlossZh": [
         "女性的",
         "人群",
         "已婚的",
-        "青春時期"
+        "資深的"
       ],
       "answer": 2
     },
@@ -172,16 +172,16 @@
       "stemEn": "Thank you for ____ me. I'd love to come to your wedding.",
       "stemZh": "謝謝你邀請我，我很樂意參加你的婚禮。",
       "options": [
-        "marrying",
+        "checking",
         "inviting",
-        "forgetting",
-        "losing"
+        "following",
+        "pushing"
       ],
       "optionGlossZh": [
-        "和⋯結婚",
+        "檢查",
         "邀請",
-        "忘記",
-        "弄丟"
+        "跟隨",
+        "推"
       ],
       "answer": 1
     },
@@ -330,6 +330,54 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"飯店的宴會廳實在太小了\"（原 \"飯店很小\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「男性」（人）；與 q11 跟讀（鳥是雄性嗎）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"In our office, only two workers are male.\"（原 \"Our new cat is a male.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「男性」（人）；與 q11 跟讀（鳥是雄性嗎）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"在我們辦公室裡，只有兩位員工是男性。\"（原 \"我們新養的貓是公的。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：female、youth 放不進 got ___，改 sick、hurt（文法成立，靠語意排除）",
+        "resolution": "改為 [\"sick\", \"crowd\", \"married\", \"hurt\"]（原 [\"female\", \"crowd\", \"married\", \"youth\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：female、youth 放不進 got ___，改 sick、hurt（文法成立，靠語意排除）",
+        "resolution": "改為 [\"生病的\", \"人群\", \"已婚的\", \"受傷的\"]（原 [\"女性的\", \"人群\", \"已婚的\", \"青春時期\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：forget、lose 為非本單元字且他課已用，改 following、pushing；marrying 與 q13 正解 married 同字，改 checking",
+        "resolution": "改為 [\"checking\", \"inviting\", \"following\", \"pushing\"]（原 [\"marrying\", \"inviting\", \"forgetting\", \"losing\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：forget、lose 為非本單元字且他課已用，改 following、pushing；marrying 與 q13 正解 married 同字，改 checking",
+        "resolution": "改為 [\"檢查\", \"邀請\", \"跟隨\", \"推\"]（原 [\"和⋯結婚\", \"邀請\", \"忘記\", \"弄丟\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My parents got sick in 1990.／got hurt in 1990. 只看英文都說得通；換成本課 female、senior，get＋形容詞文法通但語意不通",
+        "resolution": "改為 [\"female\", \"crowd\", \"married\", \"senior\"]（原 [\"sick\", \"crowd\", \"married\", \"hurt\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My parents got sick in 1990.／got hurt in 1990. 只看英文都說得通；換成本課 female、senior，get＋形容詞文法通但語意不通",
+        "resolution": "改為 [\"女性的\", \"人群\", \"已婚的\", \"資深的\"]（原 [\"生病的\", \"人群\", \"已婚的\", \"受傷的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

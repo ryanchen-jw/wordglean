@@ -173,13 +173,13 @@
         "electric",
         "furniture",
         "sink",
-        "lock"
+        "mirror"
       ],
       "optionGlossZh": [
         "電動的",
         "傢俱",
         "水槽",
-        "鎖"
+        "鏡子"
       ],
       "answer": 2
     },
@@ -334,6 +334,18 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"水溫太燙了\"（原 \"水太燙\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lock 是 q13 正解，改本單元 mirror",
+        "resolution": "改為 [\"electric\", \"furniture\", \"sink\", \"mirror\"]（原 [\"electric\", \"furniture\", \"sink\", \"lock\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lock 是 q13 正解，改本單元 mirror",
+        "resolution": "改為 [\"電動的\", \"傢俱\", \"水槽\", \"鏡子\"]（原 [\"電動的\", \"傢俱\", \"水槽\", \"鎖\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

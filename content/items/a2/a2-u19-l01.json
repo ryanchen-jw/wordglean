@@ -56,7 +56,7 @@
       "word": "public",
       "exampleEn": "Many members of the public came to the meeting.",
       "exampleZh": "很多民眾來參加會議。",
-      "glossZh": "（the public）大眾；民眾",
+      "glossZh": "大眾；民眾（the public）",
       "distractorsZh": [
         "員工",
         "學生",
@@ -82,7 +82,7 @@
       "word": "military",
       "exampleEn": "There is a military airport near my town.",
       "exampleZh": "我家附近有一座軍用機場。",
-      "glossZh": "軍事的；軍用的",
+      "glossZh": "軍用的；軍事的",
       "distractorsZh": [
         "國際的",
         "私人的",
@@ -152,14 +152,14 @@
       "stemEn": "If you see someone stealing a bike, call the ____.",
       "stemZh": "如果你看到有人在偷腳踏車，就打電話報警。",
       "options": [
-        "law",
-        "society",
+        "nurse",
+        "public",
         "police",
         "government"
       ],
       "optionGlossZh": [
-        "法律",
-        "社會",
+        "護士",
+        "大眾",
         "警察",
         "政府"
       ],
@@ -323,6 +323,30 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"很多民眾來參加會議。\"（原 \"這間廁所不開放給一般民眾使用。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"大眾；民眾（the public）\"（原 \"（the public）大眾；民眾\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"軍用的；軍事的\"（原 \"軍事的；軍用的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：law、society 與 q14 共用，改 nurse、public（皆名詞可放 call the ___）",
+        "resolution": "改為 [\"nurse\", \"public\", \"police\", \"government\"]（原 [\"law\", \"society\", \"police\", \"government\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：law、society 與 q14 共用，改 nurse、public（皆名詞可放 call the ___）",
+        "resolution": "改為 [\"護士\", \"大眾\", \"警察\", \"政府\"]（原 [\"法律\", \"社會\", \"警察\", \"政府\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -138,13 +138,13 @@
       "stemEn": "The wind is strong today. Let's fly a ____.",
       "stemZh": "今天風很大，我們去放風箏吧。",
       "options": [
-        "DVD",
+        "ghost",
         "fairy",
         "princess",
         "kite"
       ],
       "optionGlossZh": [
-        "DVD 光碟",
+        "鬼",
         "仙女",
         "公主",
         "風箏"
@@ -158,15 +158,15 @@
       "stemZh": "你可以用 DVD 看這部電影。",
       "options": [
         "DVD",
-        "kite",
-        "fairy",
-        "princess"
+        "photo",
+        "album",
+        "festival"
       ],
       "optionGlossZh": [
         "DVD 光碟",
-        "風箏",
-        "仙女",
-        "公主"
+        "照片",
+        "專輯",
+        "慶典"
       ],
       "answer": 0
     },
@@ -315,6 +315,30 @@
         "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
         "resolution": "改前：\"swimming pool 前面加 a\"；改後：\"swimming pool 前面加 a（例如 a big swimming pool）\"",
         "resolvedAt": "2026-10-02T13:22:50Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：DVD 是 q13 正解改 ghost；fairy、princess 留本題",
+        "resolution": "改為 [\"ghost\", \"fairy\", \"princess\", \"kite\"]（原 [\"DVD\", \"fairy\", \"princess\", \"kite\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：DVD 是 q13 正解改 ghost；fairy、princess 留本題",
+        "resolution": "改為 [\"鬼\", \"仙女\", \"公主\", \"風箏\"]（原 [\"DVD 光碟\", \"仙女\", \"公主\", \"風箏\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kite 是 q12 正解、fairy／princess 與 q12 共用，改 photo、album、festival",
+        "resolution": "改為 [\"DVD\", \"photo\", \"album\", \"festival\"]（原 [\"DVD\", \"kite\", \"fairy\", \"princess\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kite 是 q12 正解、fairy／princess 與 q12 共用，改 photo、album、festival",
+        "resolution": "改為 [\"DVD 光碟\", \"照片\", \"專輯\", \"慶典\"]（原 [\"DVD 光碟\", \"風箏\", \"仙女\", \"公主\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

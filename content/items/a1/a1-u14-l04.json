@@ -55,7 +55,7 @@
       "word": "goal",
       "exampleEn": "Our team got two goals.",
       "exampleZh": "我們隊進了兩球。",
-      "glossZh": "（球賽）得分；進球",
+      "glossZh": "進球；（球賽）得分",
       "distractorsZh": [
         "犯規",
         "隊員",
@@ -154,13 +154,13 @@
         "throw",
         "draw",
         "goal",
-        "stage"
+        "catch"
       ],
       "optionGlossZh": [
         "丟",
         "畫",
         "得分",
-        "舞台"
+        "接住"
       ],
       "answer": 1
     },
@@ -353,6 +353,24 @@
         "message": "執行長裁示：正解長度名次分布：a1-u14-l04-q10 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"Draw a picture\",\"Watch TV now\",\"Do homework\"]（原 [\"Draw a picture\",\"Watch TV\",\"Do homework\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"進球；（球賽）得分\"（原 \"（球賽）得分；進球\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：stage 與 q14 共用，換動詞 catch，兩個干擾項可放進空格",
+        "resolution": "改為 [\"throw\", \"draw\", \"goal\", \"catch\"]（原 [\"throw\", \"draw\", \"goal\", \"stage\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：stage 與 q14 共用，換動詞 catch，兩個干擾項可放進空格",
+        "resolution": "改為 [\"丟\", \"畫\", \"得分\", \"接住\"]（原 [\"丟\", \"畫\", \"得分\", \"舞台\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

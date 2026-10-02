@@ -81,8 +81,8 @@
       "id": "a1-u08-l03-q06",
       "type": "wordCard",
       "word": "cup",
-      "exampleEn": "Would you like a cup of tea?",
-      "exampleZh": "你要來一杯茶嗎？",
+      "exampleEn": "Please wash your cup after lunch.",
+      "exampleZh": "午餐後請洗你的杯子。",
       "glossZh": "杯子；一杯",
       "distractorsZh": [
         "盤子",
@@ -154,14 +154,14 @@
       "stemZh": "我們通常七點吃晚餐。",
       "options": [
         "water",
-        "food",
-        "cup",
+        "soup",
+        "love",
         "eat"
       ],
       "optionGlossZh": [
-        "水",
-        "食物",
-        "杯子",
+        "澆水",
+        "湯",
+        "愛",
         "吃"
       ],
       "answer": 3
@@ -172,15 +172,15 @@
       "stemEn": "Fish is my favorite ____.",
       "stemZh": "魚是我最喜歡的食物。",
       "options": [
-        "water",
-        "cup",
-        "eat",
+        "juice",
+        "candy",
+        "salad",
         "food"
       ],
       "optionGlossZh": [
-        "水",
-        "杯子",
-        "吃",
+        "果汁",
+        "糖果",
+        "沙拉",
         "食物"
       ],
       "answer": 3
@@ -362,6 +362,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u08-l03-q15#1 目標第 2 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"一起回家看電視節目\",\"走到海邊吃冰淇淋\",\"去咖啡店喝咖啡\"]（原 [\"一起回家看電視節目\",\"走到海邊吃冰淇淋\",\"去咖啡店\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 cup＝杯子（器皿）；與 q11 點一杯咖啡換了情境＋句型＋用法",
+        "resolution": "改為 \"Please wash your cup after lunch.\"（原 \"Would you like a cup of tea?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 cup＝杯子（器皿）；與 q11 點一杯咖啡換了情境＋句型＋用法",
+        "resolution": "改為 \"午餐後請洗你的杯子。\"（原 \"你要來一杯茶嗎？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：cup 與 q14 共用、food 是 q14 正解，換 soup/love；water（動詞）、love 可放進空格",
+        "resolution": "改為 [\"water\", \"soup\", \"love\", \"eat\"]（原 [\"water\", \"food\", \"cup\", \"eat\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：cup 與 q14 共用、food 是 q14 正解，換 soup/love；water（動詞）、love 可放進空格",
+        "resolution": "改為 [\"澆水\", \"湯\", \"愛\", \"吃\"]（原 [\"水\", \"食物\", \"杯子\", \"吃\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：water/cup 與 q13 共用、eat 是 q13 正解，換 juice/candy/salad，四選項皆名詞",
+        "resolution": "改為 [\"juice\", \"candy\", \"salad\", \"food\"]（原 [\"water\", \"cup\", \"eat\", \"food\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：water/cup 與 q13 共用、eat 是 q13 正解，換 juice/candy/salad，四選項皆名詞",
+        "resolution": "改為 [\"果汁\", \"糖果\", \"沙拉\", \"食物\"]（原 [\"水\", \"杯子\", \"吃\", \"食物\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -30,8 +30,8 @@
       "id": "a1-u07-l01-q02",
       "type": "wordCard",
       "word": "work",
-      "exampleEn": "I go to work by bus.",
-      "exampleZh": "我搭公車上班。",
+      "exampleEn": "My mother works at a hospital.",
+      "exampleZh": "我媽媽在醫院工作。",
       "glossZh": "工作；上班",
       "distractorsZh": [
         "休息",
@@ -56,8 +56,8 @@
       "id": "a1-u07-l01-q04",
       "type": "wordCard",
       "word": "business",
-      "exampleEn": "My uncle has a small business.",
-      "exampleZh": "我叔叔經營一家小公司。",
+      "exampleEn": "My uncle sells shoes. His business is very good.",
+      "exampleZh": "我叔叔賣鞋子，他的生意很好。",
       "glossZh": "生意；公司",
       "distractorsZh": [
         "房子",
@@ -154,16 +154,16 @@
       "stemEn": "Can you ____ here for a minute?",
       "stemZh": "你可以在這裡等一下嗎？",
       "options": [
-        "role",
+        "excuse",
         "wait",
-        "group",
-        "leader"
+        "thank",
+        "business"
       ],
       "optionGlossZh": [
-        "角色",
+        "原諒",
         "等待",
-        "組",
-        "領導者"
+        "感謝",
+        "生意"
       ],
       "answer": 1
     },
@@ -350,6 +350,54 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Tom\",\"Mrs\",\"Chen\",\"Amy\",\"Sunday\"]；改後：[\"Tom\",\"Chen\",\"Amy\",\"Sunday\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 work＝工作（動詞）；與 q09 下班後等我、q10 待到七點換了主詞＋情境＋句型；與 q15 閱讀 Amy works for 換了主詞＋情境",
+        "resolution": "改為 \"My mother works at a hospital.\"（原 \"I go to work by bus.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 work＝工作（動詞）；與 q09 下班後等我、q10 待到七點換了主詞＋情境＋句型；與 q15 閱讀 Amy works for 換了主詞＋情境",
+        "resolution": "改為 \"我媽媽在醫院工作。\"（原 \"我搭公車上班。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 business＝生意（買賣狀況）；與 q15 閱讀（Amy 在網路公司上班）換了主詞＋情境＋句型",
+        "resolution": "改為 \"My uncle sells shoes. His business is very good.\"（原 \"My uncle has a small business.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 business＝生意（買賣狀況）；與 q15 閱讀（Amy 在網路公司上班）換了主詞＋情境＋句型",
+        "resolution": "改為 \"我叔叔賣鞋子，他的生意很好。\"（原 \"我叔叔經營一家小公司。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：role、group 與 q14 共用、leader 是 q14 正解；改 work、meet（文法可通）、business；避開 stay（也對）",
+        "resolution": "改為 [\"work\", \"wait\", \"meet\", \"business\"]（原 [\"role\", \"wait\", \"group\", \"leader\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：role、group 與 q14 共用、leader 是 q14 正解；改 work、meet（文法可通）、business；避開 stay（也對）",
+        "resolution": "改為 [\"工作\", \"等待\", \"見面\", \"生意\"]（原 [\"角色\", \"等待\", \"組\", \"領導者\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：work、meet 代入成 Can you work here for a minute?／Can you meet here for a minute? 說得通；換成 excuse、thank（及物動詞缺受詞，文法不通）",
+        "resolution": "改為 [\"excuse\", \"wait\", \"thank\", \"business\"]（原 [\"work\", \"wait\", \"meet\", \"business\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：work、meet 代入成 Can you work here for a minute?／Can you meet here for a minute? 說得通；換成 excuse、thank（及物動詞缺受詞，文法不通）",
+        "resolution": "改為 [\"原諒\", \"等待\", \"感謝\", \"生意\"]（原 [\"工作\", \"等待\", \"見面\", \"生意\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

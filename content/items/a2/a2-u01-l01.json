@@ -167,15 +167,15 @@
       "stemZh": "看電影的時候請不要用手機。",
       "options": [
         "without",
-        "against",
+        "behind",
         "during",
-        "across"
+        "above"
       ],
       "optionGlossZh": [
         "沒有",
-        "與⋯對抗",
+        "在⋯後面",
         "在⋯期間",
-        "越過"
+        "在⋯上方"
       ],
       "answer": 2
     },
@@ -186,14 +186,14 @@
       "stemZh": "我們上週日和一支很強的隊伍比賽。",
       "options": [
         "against",
-        "during",
-        "might",
+        "along",
+        "into",
         "while"
       ],
       "optionGlossZh": [
         "與⋯對抗",
-        "在⋯期間",
-        "可能",
+        "沿著",
+        "進入⋯裡面",
         "當⋯的時候"
       ],
       "answer": 0
@@ -308,6 +308,42 @@
         "message": "執行長裁示：正解長度名次分布：a2-u01-l01-q11 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"At a shop near the beach\",\"At a hospital\",\"At a school in town\"]（原 [\"At a shop near the beach\",\"At a hospital in the city\",\"At a school\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；干擾項只用本課、先前課或低一級字：against 是 q15 正解改 behind；across 超範圍改 above",
+        "resolution": "改為 [\"without\", \"behind\", \"during\", \"above\"]（原 [\"without\", \"against\", \"during\", \"across\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；干擾項只用本課、先前課或低一級字：against 是 q15 正解改 behind；across 超範圍改 above",
+        "resolution": "改為 [\"沒有\", \"在⋯後面\", \"在⋯期間\", \"在⋯上方\"]（原 [\"沒有\", \"與⋯對抗\", \"在⋯期間\", \"越過\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：during 是 q14 正解改 beside；might 放不進空格改 near，使兩個干擾項文法成立",
+        "resolution": "改為 [\"against\", \"beside\", \"near\", \"while\"]（原 [\"against\", \"during\", \"might\", \"while\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：during 是 q14 正解改 beside；might 放不進空格改 near，使兩個干擾項文法成立",
+        "resolution": "改為 [\"與⋯對抗\", \"在⋯旁邊\", \"在⋯附近\", \"當⋯的時候\"]（原 [\"與⋯對抗\", \"在⋯期間\", \"可能\", \"當⋯的時候\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We played near／beside a very strong team last Sunday. 只看英文勉強說得通（在隔壁場地比賽）；換成 along、into，介系詞片語文法通但語意不通",
+        "resolution": "改為 [\"against\", \"along\", \"into\", \"while\"]（原 [\"against\", \"beside\", \"near\", \"while\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We played near／beside a very strong team last Sunday. 只看英文勉強說得通（在隔壁場地比賽）；換成 along、into，介系詞片語文法通但語意不通",
+        "resolution": "改為 [\"與⋯對抗\", \"沿著\", \"進入⋯裡面\", \"當⋯的時候\"]（原 [\"與⋯對抗\", \"在⋯旁邊\", \"在⋯附近\", \"當⋯的時候\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

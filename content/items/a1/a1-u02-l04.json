@@ -97,11 +97,11 @@
       "word": "self",
       "exampleEn": "She is not sick now. She is her old self again.",
       "exampleZh": "她病好了，又回到原來的樣子了。",
-      "glossZh": "自己；自我",
+      "glossZh": "本來的樣子；自己；自我",
       "distractorsZh": [
-        "別人",
-        "朋友",
-        "家人"
+        "別人的樣子",
+        "新的習慣",
+        "以前的朋友"
       ]
     },
     {
@@ -154,16 +154,16 @@
       "stemEn": "____ to our party!",
       "stemZh": "歡迎來參加我們的派對！",
       "options": [
-        "Sorry",
+        "Thanks",
         "Welcome",
         "Engineer",
-        "Cop"
+        "Hi"
       ],
       "optionGlossZh": [
-        "抱歉的",
+        "謝謝",
         "歡迎",
         "工程師",
-        "警察"
+        "嗨"
       ],
       "answer": 1
     },
@@ -173,16 +173,16 @@
       "stemEn": "Excuse me, ____. Is this your phone?",
       "stemZh": "先生，不好意思，這是您的手機嗎？",
       "options": [
-        "welcome",
+        "person",
         "self",
         "sir",
-        "thanks"
+        "world"
       ],
       "optionGlossZh": [
-        "歡迎",
+        "人",
         "自我",
         "先生（尊稱）",
-        "謝謝"
+        "世界"
       ],
       "answer": 2
     },
@@ -390,6 +390,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u02-l04-q10 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"A news reporter\",\"A cop in this town\",\"An engineer\"]（原 [\"A news reporter\",\"A cop\",\"An engineer\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：調換也解不了，改釋義內容",
+        "resolution": "改為 \"本來的樣子；自己；自我\"（原 \"自己；自我\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/distractorsZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：調換也解不了，改釋義內容",
+        "resolution": "改為 [\"別人的樣子\", \"新的習慣\", \"以前的朋友\"]（原 [\"別人\", \"朋友\", \"家人\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：Sorry、Cop 放不進空格，改 Thanks、Hi（文法可通、語意不符歡迎）",
+        "resolution": "改為 [\"Thanks\", \"Welcome\", \"Engineer\", \"Hi\"]（原 [\"Sorry\", \"Welcome\", \"Engineer\", \"Cop\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：Sorry、Cop 放不進空格，改 Thanks、Hi（文法可通、語意不符歡迎）",
+        "resolution": "改為 [\"謝謝\", \"歡迎\", \"工程師\", \"嗨\"]（原 [\"抱歉的\", \"歡迎\", \"工程師\", \"警察\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：welcome 是 q13 正解、thanks 讓給 q13；改 person、world 四選項皆名詞",
+        "resolution": "改為 [\"person\", \"self\", \"sir\", \"world\"]（原 [\"welcome\", \"self\", \"sir\", \"thanks\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：welcome 是 q13 正解、thanks 讓給 q13；改 person、world 四選項皆名詞",
+        "resolution": "改為 [\"人\", \"自我\", \"先生（尊稱）\", \"世界\"]（原 [\"歡迎\", \"自我\", \"先生（尊稱）\", \"謝謝\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

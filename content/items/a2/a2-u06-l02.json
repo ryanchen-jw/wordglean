@@ -154,13 +154,13 @@
         "pleases",
         "annoys",
         "helps",
-        "relaxes"
+        "cheers"
       ],
       "optionGlossZh": [
         "使高興",
         "惹惱",
         "幫助",
-        "使放鬆"
+        "使振奮"
       ],
       "answer": 1
     },
@@ -364,6 +364,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u06-l02-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"大狗\",\"貓咪\",\"水\"]（原 [\"其他的狗\",\"貓\",\"水\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：relaxes 超範圍，改本單元 cheers",
+        "resolution": "改為 [\"pleases\", \"annoys\", \"helps\", \"cheers\"]（原 [\"pleases\", \"annoys\", \"helps\", \"relaxes\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：relaxes 超範圍，改本單元 cheers",
+        "resolution": "改為 [\"使高興\", \"惹惱\", \"幫助\", \"使振奮\"]（原 [\"使高興\", \"惹惱\", \"幫助\", \"使放鬆\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

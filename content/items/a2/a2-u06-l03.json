@@ -152,13 +152,13 @@
       "stemEn": "My little brother is ____ about cars.",
       "stemZh": "我弟弟對車子非常著迷。",
       "options": [
-        "intelligence",
+        "impatient",
         "comfortable",
         "crazy",
         "manner"
       ],
       "optionGlossZh": [
-        "智力",
+        "不耐煩的",
         "舒服的",
         "著迷的",
         "方式"
@@ -174,13 +174,13 @@
         "hate",
         "appreciate",
         "avoid",
-        "lose"
+        "fear"
       ],
       "optionGlossZh": [
         "討厭",
         "感激",
         "避免",
-        "弄丟"
+        "害怕"
       ],
       "answer": 1
     },
@@ -323,6 +323,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u06-l03-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"班上其他的新同學\",\"教數學的那位老師\",\"數學有困難的人\"]（原 [\"班上其他的新同學\",\"老師\",\"數學有困難的人\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：intelligence 放不進 is ___ about，改形容詞 impatient，使兩個干擾項文法成立",
+        "resolution": "改為 [\"impatient\", \"comfortable\", \"crazy\", \"manner\"]（原 [\"intelligence\", \"comfortable\", \"crazy\", \"manner\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：intelligence 放不進 is ___ about，改形容詞 impatient，使兩個干擾項文法成立",
+        "resolution": "改為 [\"不耐煩的\", \"舒服的\", \"著迷的\", \"方式\"]（原 [\"智力\", \"舒服的\", \"著迷的\", \"方式\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：lose 為非本單元字且他課已用，改本單元 fear",
+        "resolution": "改為 [\"hate\", \"appreciate\", \"avoid\", \"fear\"]（原 [\"hate\", \"appreciate\", \"avoid\", \"lose\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：lose 為非本單元字且他課已用，改本單元 fear",
+        "resolution": "改為 [\"討厭\", \"感激\", \"避免\", \"害怕\"]（原 [\"討厭\", \"感激\", \"避免\", \"弄丟\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

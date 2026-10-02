@@ -27,8 +27,8 @@
       "id": "a2-u06-l01-q02",
       "type": "wordCard",
       "word": "inspiration",
-      "exampleEn": "My grandmother is my inspiration.",
-      "exampleZh": "我奶奶是激勵我的人。",
+      "exampleEn": "I get inspiration for my stories from my dreams.",
+      "exampleZh": "我寫故事的靈感來自我的夢。",
       "glossZh": "靈感；激勵人心的人事物",
       "distractorsZh": [
         "麻煩",
@@ -42,7 +42,7 @@
       "word": "creativity",
       "exampleEn": "This job needs a lot of creativity.",
       "exampleZh": "這份工作需要很多創意。",
-      "glossZh": "創造力；創意",
+      "glossZh": "創意；創造力",
       "distractorsZh": [
         "力氣",
         "耐心",
@@ -105,13 +105,13 @@
       "id": "a2-u06-l01-q08",
       "type": "wordCard",
       "word": "unpleasant",
-      "exampleEn": "There is an unpleasant smell in the kitchen.",
-      "exampleZh": "廚房裡有一股難聞的味道。",
+      "exampleEn": "The long wait at the airport was unpleasant.",
+      "exampleZh": "在機場的漫長等待令人不愉快。",
       "glossZh": "令人不愉快的；難聞的",
       "distractorsZh": [
-        "香的",
-        "新鮮的",
-        "熟悉的"
+        "令人興奮的",
+        "讓人放心的",
+        "令人好奇的"
       ]
     },
     {
@@ -154,13 +154,13 @@
         "creativity",
         "polite",
         "unpleasant",
-        "fortunately"
+        "uncomfortable"
       ],
       "optionGlossZh": [
         "創造力",
         "有禮貌的",
         "令人不愉快的",
-        "幸好"
+        "不自在的"
       ],
       "answer": 1
     },
@@ -170,13 +170,13 @@
       "stemEn": "I lost my wallet. ____, a kind man found it and gave it back.",
       "stemZh": "我弄丟了錢包。幸好有位好心人撿到並還給了我。",
       "options": [
-        "Unfortunately",
+        "Certainly",
         "Silently",
         "Correctly",
         "Fortunately"
       ],
       "optionGlossZh": [
-        "不幸地",
+        "當然；確實",
         "安靜地",
         "正確地",
         "幸好"
@@ -292,6 +292,66 @@
         "message": "執行長裁示：正解長度名次分布：a2-u06-l01-q15#0 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"薪水太少，而且每天都要加班到很晚才回家\",\"辦公室不舒服，老闆也常讓人不愉快\",\"辦公室離她家實在太遠\"]（原 [\"薪水太少，而且每天都要加班到很晚\",\"辦公室不舒服，老闆也常讓人不愉快\",\"離家太遠\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「靈感」；與 q15 閱讀（學生是我的激勵）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"I get inspiration for my stories from my dreams.\"（原 \"My grandmother is my inspiration.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「靈感」；與 q15 閱讀（學生是我的激勵）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我寫故事的靈感來自我的夢。\"（原 \"我奶奶是激勵我的人。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"創意；創造力\"（原 \"創造力；創意\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/distractorsZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 [\"令人興奮的\", \"讓人放心的\", \"令人好奇的\"]（原 [\"香的\", \"新鮮的\", \"熟悉的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「令人不愉快的」；與 q15 閱讀（老闆很討人厭）換了主詞＋情境。",
+        "resolution": "改為 \"The long wait at the airport was unpleasant.\"（原 \"There is an unpleasant smell in the kitchen.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「令人不愉快的」；與 q15 閱讀（老闆很討人厭）換了主詞＋情境。",
+        "resolution": "改為 \"在機場的漫長等待令人不愉快。\"（原 \"廚房裡有一股難聞的味道。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fortunately 是 q14 正解，改本課形容詞 uncomfortable，使兩個干擾項文法成立",
+        "resolution": "改為 [\"creativity\", \"polite\", \"unpleasant\", \"uncomfortable\"]（原 [\"creativity\", \"polite\", \"unpleasant\", \"fortunately\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fortunately 是 q14 正解，改本課形容詞 uncomfortable，使兩個干擾項文法成立",
+        "resolution": "改為 [\"創造力\", \"有禮貌的\", \"令人不愉快的\", \"不自在的\"]（原 [\"創造力\", \"有禮貌的\", \"令人不愉快的\", \"幸好\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：Unfortunately 超範圍，改副詞 Certainly",
+        "resolution": "改為 [\"Certainly\", \"Silently\", \"Correctly\", \"Fortunately\"]（原 [\"Unfortunately\", \"Silently\", \"Correctly\", \"Fortunately\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：Unfortunately 超範圍，改副詞 Certainly",
+        "resolution": "改為 [\"當然；確實\", \"安靜地\", \"正確地\", \"幸好\"]（原 [\"不幸地\", \"安靜地\", \"正確地\", \"幸好\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

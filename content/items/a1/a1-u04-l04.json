@@ -154,14 +154,14 @@
       "options": [
         "kiss",
         "celebrate",
-        "neighbor",
-        "cousin"
+        "visit",
+        "love"
       ],
       "optionGlossZh": [
         "親吻",
         "慶祝",
-        "鄰居",
-        "堂（表）兄弟姊妹"
+        "拜訪",
+        "喜愛"
       ],
       "answer": 1
     },
@@ -171,13 +171,13 @@
       "stemEn": "Mr. Lee lives in the house near ours. He is our ____.",
       "stemZh": "李先生住在我們家附近，他是我們的鄰居。",
       "options": [
-        "kiss",
+        "party",
         "gift",
         "mom",
         "neighbor"
       ],
       "optionGlossZh": [
-        "親吻",
+        "派對",
         "禮物",
         "媽媽",
         "鄰居"
@@ -349,6 +349,30 @@
         "message": "執行長工具修正裁示：分詞器已能整段比對 Mr.／Mrs.／T-shirt／a.m.／p.m.，移除變通宣告的專有名詞",
         "resolution": "改前：[\"Lee\",\"Mr\",\"Mrs\",\"Chen\"]；改後：[\"Lee\",\"Chen\"]",
         "resolvedAt": "2026-10-02T13:00:29Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：neighbor 是 q14 正解、cousin 非動詞；改 visit、love，四選項皆動詞；避開 share（也通）",
+        "resolution": "改為 [\"kiss\", \"celebrate\", \"visit\", \"love\"]（原 [\"kiss\", \"celebrate\", \"neighbor\", \"cousin\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：neighbor 是 q14 正解、cousin 非動詞；改 visit、love，四選項皆動詞；避開 share（也通）",
+        "resolution": "改為 [\"親吻\", \"慶祝\", \"拜訪\", \"喜愛\"]（原 [\"親吻\", \"慶祝\", \"鄰居\", \"堂（表）兄弟姊妹\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kiss 與 q13 共用，改同單元名詞 party",
+        "resolution": "改為 [\"party\", \"gift\", \"mom\", \"neighbor\"]（原 [\"kiss\", \"gift\", \"mom\", \"neighbor\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kiss 與 q13 共用，改同單元名詞 party",
+        "resolution": "改為 [\"派對\", \"禮物\", \"媽媽\", \"鄰居\"]（原 [\"親吻\", \"禮物\", \"媽媽\", \"鄰居\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -151,15 +151,15 @@
       "stemEn": "There are ____ students in the classroom.",
       "stemZh": "教室裡有很多學生。",
       "options": [
-        "here",
-        "very",
-        "back",
+        "into",
+        "its",
+        "than",
         "many"
       ],
       "optionGlossZh": [
-        "這裡",
-        "非常",
-        "回來",
+        "進入",
+        "它的",
+        "比",
         "許多"
       ],
       "answer": 3
@@ -172,14 +172,14 @@
       "options": [
         "very",
         "any",
-        "here",
-        "back"
+        "our",
+        "their"
       ],
       "optionGlossZh": [
         "非常",
         "任何",
-        "這裡",
-        "回來"
+        "我們的",
+        "他們的"
       ],
       "answer": 1
     },
@@ -335,6 +335,66 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「因為人很好」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：here、very、back 與 q14 共用且放不進空格；改 these、more、those 使四選項皆限定詞；避開 some（也通）",
+        "resolution": "改為 [\"these\", \"more\", \"those\", \"many\"]（原 [\"here\", \"very\", \"back\", \"many\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：here、very、back 與 q14 共用且放不進空格；改 these、more、those 使四選項皆限定詞；避開 some（也通）",
+        "resolution": "改為 [\"這些\", \"更多\", \"那些\", \"許多\"]（原 [\"這裡\", \"非常\", \"回來\", \"許多\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：here、back 與 q13 共用，改 only、their（文法可通、語意不對）；避開 some、no（也通）",
+        "resolution": "改為 [\"very\", \"any\", \"only\", \"their\"]（原 [\"very\", \"any\", \"here\", \"back\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：here、back 與 q13 共用，改 only、their（文法可通、語意不對）；避開 some、no（也通）",
+        "resolution": "改為 [\"非常\", \"任何\", \"只有\", \"他們的\"]（原 [\"非常\", \"任何\", \"這裡\", \"回來\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：more 代入成 There are more students in the classroom. 說得通；換成 its，There are its students… 無指涉、語意不通",
+        "resolution": "改為 [\"these\", \"its\", \"those\", \"many\"]（原 [\"these\", \"more\", \"those\", \"many\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：more 代入成 There are more students in the classroom. 說得通；換成 its，There are its students… 無指涉、語意不通",
+        "resolution": "改為 [\"這些\", \"它的\", \"那些\", \"許多\"]（原 [\"這些\", \"更多\", \"那些\", \"許多\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：only 代入成 Do you have only brothers or sisters? 說得通；換成 our，Do you have our brothers or sisters? 語意不通",
+        "resolution": "改為 [\"very\", \"any\", \"our\", \"their\"]（原 [\"very\", \"any\", \"only\", \"their\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：only 代入成 Do you have only brothers or sisters? 說得通；換成 our，Do you have our brothers or sisters? 語意不通",
+        "resolution": "改為 [\"非常\", \"任何\", \"我們的\", \"他們的\"]（原 [\"非常\", \"任何\", \"只有\", \"他們的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：There are these／those students in the classroom. 勉強合文法，換成本單元已教、放進空格明顯不通的 into、than（適用「只看英文唯一可解」優先，免混合詞性題與同詞性題條件）",
+        "resolution": "改為 [\"into\", \"its\", \"than\", \"many\"]（原 [\"these\", \"its\", \"those\", \"many\"]）",
+        "resolvedAt": "2026-10-02T21:05:08Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：There are these／those students in the classroom. 勉強合文法，換成本單元已教、放進空格明顯不通的 into、than（適用「只看英文唯一可解」優先，免混合詞性題與同詞性題條件）",
+        "resolution": "改為 [\"進入\", \"它的\", \"比\", \"許多\"]（原 [\"這些\", \"它的\", \"那些\", \"許多\"]）",
+        "resolvedAt": "2026-10-02T21:05:08Z"
       }
     ]
   }

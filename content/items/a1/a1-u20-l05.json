@@ -156,13 +156,13 @@
         "Sunday",
         "Tuesday",
         "October",
-        "September"
+        "December"
       ],
       "optionGlossZh": [
         "星期天",
         "星期二",
         "十月",
-        "九月"
+        "十二月"
       ],
       "answer": 0
     },
@@ -318,6 +318,18 @@
         "message": "執行長裁示：正解長度名次分布：a1-u20-l05-q15#1 目標第 2 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"晚上要上英文課\",\"她那天有空\",\"去打網球\"]（原 [\"要上英文課\",\"有空\",\"在咖啡店打工\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：September 是 q14 正解改 December",
+        "resolution": "改為 [\"Sunday\", \"Tuesday\", \"October\", \"December\"]（原 [\"Sunday\", \"Tuesday\", \"October\", \"September\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：September 是 q14 正解改 December",
+        "resolution": "改為 [\"星期天\", \"星期二\", \"十月\", \"十二月\"]（原 [\"星期天\", \"星期二\", \"十月\", \"九月\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

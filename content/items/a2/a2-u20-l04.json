@@ -40,8 +40,8 @@
       "id": "a2-u20-l04-q03",
       "type": "wordCard",
       "word": "shout",
-      "exampleEn": "With a shout, he jumped into the pool.",
-      "exampleZh": "他大叫一聲，跳進了游泳池。",
+      "exampleEn": "Don't shout at the dog. Be nice to it.",
+      "exampleZh": "不要對那隻狗大叫，要對牠好一點。",
       "glossZh": "喊叫；大叫聲",
       "distractorsZh": [
         "笑聲",
@@ -55,7 +55,7 @@
       "word": "description",
       "exampleEn": "This book has a long description of the old city.",
       "exampleZh": "這本書對那座古城有很長的描寫。",
-      "glossZh": "描述；描寫",
+      "glossZh": "描寫；描述",
       "distractorsZh": [
         "價格",
         "地圖",
@@ -170,15 +170,15 @@
       "stemEn": "You can buy tickets ____ or at the station.",
       "stemZh": "你可以在網路上或在車站買票。",
       "options": [
-        "print",
+        "slowly",
         "online",
-        "complain",
+        "loudly",
         "reply"
       ],
       "optionGlossZh": [
-        "列印",
+        "慢慢地",
         "在網路上",
-        "抱怨",
+        "大聲地",
         "回覆"
       ],
       "answer": 1
@@ -286,6 +286,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u20-l04-q15#1 目標第 3 長、消除單題異常值（改了選項 1、2、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"打電話給客服說明問題\",\"帶著收據到店裡換一件\",\"印表格、把夾克寄回\"]（原 [\"打電話給客服\",\"到店裡換貨\",\"印一張表格，把夾克連同收據寄回\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「喊叫」（動詞）；與 q12 跟讀（聽到隔壁街一聲大叫，名詞）換了主詞＋情境＋句型（否定祈使、shout at 某人）。",
+        "resolution": "改為 \"Don't shout at the dog. Be nice to it.\"（原 \"With a shout, he jumped into the pool.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「喊叫」（動詞）；與 q12 跟讀（聽到隔壁街一聲大叫，名詞）換了主詞＋情境＋句型（否定祈使、shout at 某人）。",
+        "resolution": "改為 \"不要對那隻狗大叫，要對牠好一點。\"（原 \"他大叫一聲，跳進了游泳池。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"描寫；描述\"（原 \"描述；描寫\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：print、complain 是動詞放不進空格，改副詞 slowly、loudly，使兩個干擾項文法成立",
+        "resolution": "改為 [\"slowly\", \"online\", \"loudly\", \"reply\"]（原 [\"print\", \"online\", \"complain\", \"reply\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：print、complain 是動詞放不進空格，改副詞 slowly、loudly，使兩個干擾項文法成立",
+        "resolution": "改為 [\"慢慢地\", \"在網路上\", \"大聲地\", \"回覆\"]（原 [\"列印\", \"在網路上\", \"抱怨\", \"回覆\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

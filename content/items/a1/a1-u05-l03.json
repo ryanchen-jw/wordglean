@@ -151,15 +151,15 @@
       "stemEn": "This is not a toy. It is a ____ car.",
       "stemZh": "這不是玩具，這是一台真的車。",
       "options": [
-        "important",
-        "line",
-        "best",
+        "different",
+        "long",
+        "bad",
         "real"
       ],
       "optionGlossZh": [
-        "重要的",
-        "線",
-        "最好的",
+        "不同的",
+        "長的",
+        "壞的",
         "真的"
       ],
       "answer": 3
@@ -172,14 +172,14 @@
       "options": [
         "line",
         "white",
-        "real",
-        "little"
+        "side",
+        "thing"
       ],
       "optionGlossZh": [
         "隊伍；線",
         "白色的",
-        "真的",
-        "小的"
+        "邊",
+        "東西"
       ],
       "answer": 0
     },
@@ -435,6 +435,30 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「那裡的咖啡很好喝」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:39:42Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：line 是 q14 正解；important 配 a 冠詞洩題、best 配 a 不通；改 different、long、bad，四選項皆子音開頭形容詞",
+        "resolution": "改為 [\"different\", \"long\", \"bad\", \"real\"]（原 [\"important\", \"line\", \"best\", \"real\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：line 是 q14 正解；important 配 a 冠詞洩題、best 配 a 不通；改 different、long、bad，四選項皆子音開頭形容詞",
+        "resolution": "改為 [\"不同的\", \"長的\", \"壞的\", \"真的\"]（原 [\"重要的\", \"線\", \"最好的\", \"真的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：real 是 q13 正解改 side；little 放不進改 thing（side／thing 文法可通）",
+        "resolution": "改為 [\"line\", \"white\", \"side\", \"thing\"]（原 [\"line\", \"white\", \"real\", \"little\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：real 是 q13 正解改 side；little 放不進改 thing（side／thing 文法可通）",
+        "resolution": "改為 [\"隊伍；線\", \"白色的\", \"邊\", \"東西\"]（原 [\"隊伍；線\", \"白色的\", \"真的\", \"小的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

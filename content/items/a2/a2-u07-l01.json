@@ -138,13 +138,13 @@
       "stemEn": "It's raining. Put on your ____.",
       "stemZh": "在下雨了，穿上你的雨衣。",
       "options": [
-        "comb",
+        "apron",
         "raincoat",
         "diamond",
         "sock"
       ],
       "optionGlossZh": [
-        "梳子",
+        "圍裙",
         "雨衣",
         "鑽石",
         "襪子"
@@ -160,13 +160,13 @@
         "comb",
         "glove",
         "scarf",
-        "raincoat"
+        "umbrella"
       ],
       "optionGlossZh": [
         "梳子",
         "手套",
         "圍巾",
-        "雨衣"
+        "雨傘"
       ],
       "answer": 0
     },
@@ -273,6 +273,42 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"她買了那枚漂亮的鑽石戒指\"（原 \"她買了鑽石戒指\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：comb 是 q13 正解，改本課 sweater",
+        "resolution": "改為 [\"sweater\", \"raincoat\", \"diamond\", \"sock\"]（原 [\"comb\", \"raincoat\", \"diamond\", \"sock\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：comb 是 q13 正解，改本課 sweater",
+        "resolution": "改為 [\"毛衣\", \"雨衣\", \"鑽石\", \"襪子\"]（原 [\"梳子\", \"雨衣\", \"鑽石\", \"襪子\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：raincoat 是 q12 正解，改 umbrella",
+        "resolution": "改為 [\"comb\", \"glove\", \"scarf\", \"umbrella\"]（原 [\"comb\", \"glove\", \"scarf\", \"raincoat\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：raincoat 是 q12 正解，改 umbrella",
+        "resolution": "改為 [\"梳子\", \"手套\", \"圍巾\", \"雨傘\"]（原 [\"梳子\", \"手套\", \"圍巾\", \"雨衣\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：It's raining. Put on your sweater. 只看英文說得通（下雨天冷）；換成 apron，與下雨無關，語意不通",
+        "resolution": "改為 [\"apron\", \"raincoat\", \"diamond\", \"sock\"]（原 [\"sweater\", \"raincoat\", \"diamond\", \"sock\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：It's raining. Put on your sweater. 只看英文說得通（下雨天冷）；換成 apron，與下雨無關，語意不通",
+        "resolution": "改為 [\"圍裙\", \"雨衣\", \"鑽石\", \"襪子\"]（原 [\"毛衣\", \"雨衣\", \"鑽石\", \"襪子\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

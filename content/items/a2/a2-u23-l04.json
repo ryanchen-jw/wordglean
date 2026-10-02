@@ -25,8 +25,8 @@
       "id": "a2-u23-l04-q02",
       "type": "wordCard",
       "word": "commitment",
-      "exampleEn": "Thank you for your commitment to the team.",
-      "exampleZh": "謝謝你對球隊的投入。",
+      "exampleEn": "He made a commitment to call his mom every week.",
+      "exampleZh": "他承諾每週都會打電話給媽媽。",
       "glossZh": "承諾；投入",
       "distractorsZh": [
         "抱怨",
@@ -64,8 +64,8 @@
       "id": "a2-u23-l04-q05",
       "type": "wordCard",
       "word": "secret",
-      "exampleEn": "The secret of this cake is fresh butter.",
-      "exampleZh": "這個蛋糕的秘訣是新鮮奶油。",
+      "exampleEn": "Our surprise party for Dad is a secret.",
+      "exampleZh": "我們要給爸爸的驚喜派對是個秘密。",
       "glossZh": "秘密；秘訣",
       "distractorsZh": [
         "價格",
@@ -157,13 +157,13 @@
       "options": [
         "commitment",
         "prefer",
-        "oppose",
+        "concern",
         "doubt"
       ],
       "optionGlossZh": [
         "承諾",
         "比較喜歡",
-        "反對",
+        "擔心",
         "懷疑"
       ],
       "answer": 3
@@ -325,6 +325,42 @@
         "message": "執行長最終複審修正：祕／秘統一用「秘」",
         "resolution": "改為 \"哥哥告訴作者什麼秘密？\"（原 \"哥哥告訴作者什麼祕密？\"）",
         "resolvedAt": "2026-10-02T19:13:41Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「承諾」；與 q14 閱讀、q16 造句（X is a big commitment，投入義）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"He made a commitment to call his mom every week.\"（原 \"Thank you for your commitment to the team.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「承諾」；與 q14 閱讀、q16 造句（X is a big commitment，投入義）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"他承諾每週都會打電話給媽媽。\"（原 \"謝謝你對球隊的投入。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「秘密」；與 q08（Can you keep a secret?）、q12（不洩漏朋友秘密）、q14 閱讀（哥哥說秘密）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Our surprise party for Dad is a secret.\"（原 \"The secret of this cake is fresh butter.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「秘密」；與 q08（Can you keep a secret?）、q12（不洩漏朋友秘密）、q14 閱讀（哥哥說秘密）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"我們要給爸爸的驚喜派對是個秘密。\"（原 \"這個蛋糕的秘訣是新鮮奶油。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：oppose 與 q12 共用，改名詞 concern，使兩個干擾項可放 no ___ that",
+        "resolution": "改為 [\"commitment\", \"prefer\", \"concern\", \"doubt\"]（原 [\"commitment\", \"prefer\", \"oppose\", \"doubt\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：oppose 與 q12 共用，改名詞 concern，使兩個干擾項可放 no ___ that",
+        "resolution": "改為 [\"承諾\", \"比較喜歡\", \"擔心\", \"懷疑\"]（原 [\"承諾\", \"比較喜歡\", \"反對\", \"懷疑\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

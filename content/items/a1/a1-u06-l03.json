@@ -150,13 +150,13 @@
       "stemZh": "我在廚房煮晚餐。",
       "options": [
         "tool",
-        "key",
+        "box",
         "kitchen",
         "machine"
       ],
       "optionGlossZh": [
         "工具",
-        "鑰匙",
+        "箱子",
         "廚房",
         "機器"
       ],
@@ -168,13 +168,13 @@
       "stemEn": "I use a ____ to open the door.",
       "stemZh": "我用鑰匙開門。",
       "options": [
-        "kitchen",
+        "bedroom",
         "garden",
         "key",
         "hall"
       ],
       "optionGlossZh": [
-        "廚房",
+        "臥室",
         "花園",
         "鑰匙",
         "走廊"
@@ -369,6 +369,42 @@
         "message": "執行長裁示：正解長度名次分布：a1-u06-l03-q15#1 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"二樓爸爸的臥室裡\",\"廚房的大桌子下面\",\"房子後面的院子\"]（原 [\"二樓爸爸的臥室裡\",\"廚房裡\",\"房子後面的院子\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：key 是 q14 正解，改同課名詞 yard",
+        "resolution": "改為 [\"tool\", \"yard\", \"kitchen\", \"machine\"]（原 [\"tool\", \"key\", \"kitchen\", \"machine\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：key 是 q14 正解，改同課名詞 yard",
+        "resolution": "改為 [\"工具\", \"院子\", \"廚房\", \"機器\"]（原 [\"工具\", \"鑰匙\", \"廚房\", \"機器\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kitchen 是 q13 正解，改同課名詞 bedroom；避開 tool（也對）",
+        "resolution": "改為 [\"bedroom\", \"garden\", \"key\", \"hall\"]（原 [\"kitchen\", \"garden\", \"key\", \"hall\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kitchen 是 q13 正解，改同課名詞 bedroom；避開 tool（也對）",
+        "resolution": "改為 [\"臥室\", \"花園\", \"鑰匙\", \"走廊\"]（原 [\"廚房\", \"花園\", \"鑰匙\", \"走廊\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：yard 代入成 I cook dinner in the yard.（院子烤肉）說得通；換成 box，cook dinner in the box 語意不通",
+        "resolution": "改為 [\"tool\", \"box\", \"kitchen\", \"machine\"]（原 [\"tool\", \"yard\", \"kitchen\", \"machine\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：yard 代入成 I cook dinner in the yard.（院子烤肉）說得通；換成 box，cook dinner in the box 語意不通",
+        "resolution": "改為 [\"工具\", \"箱子\", \"廚房\", \"機器\"]（原 [\"工具\", \"院子\", \"廚房\", \"機器\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

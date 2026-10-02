@@ -154,13 +154,13 @@
         "seventeen",
         "eighty",
         "nineteen",
-        "August"
+        "twelve"
       ],
       "optionGlossZh": [
         "十七",
         "八十",
         "十九",
-        "八月"
+        "十二"
       ],
       "answer": 1
     },
@@ -172,13 +172,13 @@
       "options": [
         "April",
         "August",
-        "eighty",
+        "autumn",
         "ninety"
       ],
       "optionGlossZh": [
         "四月",
         "八月",
-        "八十",
+        "秋天",
         "九十"
       ],
       "answer": 0
@@ -273,6 +273,30 @@
         "message": "執行長第②③關裁示修正：第③關 D5：月份選項首字大寫",
         "resolution": "改前：\"august\"；改後：\"August\"",
         "resolvedAt": "2026-10-02T13:22:38Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：August 與 q14 共用改 twelve（避開 seventy、ninety 也算很老）",
+        "resolution": "改為 [\"seventeen\", \"eighty\", \"nineteen\", \"twelve\"]（原 [\"seventeen\", \"eighty\", \"nineteen\", \"August\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：August 與 q14 共用改 twelve（避開 seventy、ninety 也算很老）",
+        "resolution": "改為 [\"十七\", \"八十\", \"十九\", \"十二\"]（原 [\"十七\", \"八十\", \"十九\", \"八月\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：eighty 是 q13 正解改 autumn，使兩個干擾項可放入空格",
+        "resolution": "改為 [\"April\", \"August\", \"autumn\", \"ninety\"]（原 [\"April\", \"August\", \"eighty\", \"ninety\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：eighty 是 q13 正解改 autumn，使兩個干擾項可放入空格",
+        "resolution": "改為 [\"四月\", \"八月\", \"秋天\", \"九十\"]（原 [\"四月\", \"八月\", \"八十\", \"九十\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

@@ -151,15 +151,15 @@
       "stemEn": "Choose true or ____.",
       "stemZh": "選對或錯。",
       "options": [
-        "correct",
+        "terrible",
         "false",
-        "pink",
+        "fair",
         "row"
       ],
       "optionGlossZh": [
-        "正確的",
+        "糟糕的",
         "錯誤的",
-        "粉紅色的",
+        "公平的",
         "排"
       ],
       "answer": 1
@@ -172,13 +172,13 @@
       "options": [
         "correct",
         "pink",
-        "row",
+        "brown",
         "gray"
       ],
       "optionGlossZh": [
         "正確的",
         "粉紅色的",
-        "排",
+        "棕色的",
         "灰色的"
       ],
       "answer": 0
@@ -298,6 +298,30 @@
         "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
         "resolution": "改前：\"correct 放在 be 動詞後面\"；改後：\"否定可用 is not、isn't 等\"",
         "resolvedAt": "2026-10-02T13:22:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：correct 是 q14 正解、pink 與 q14 共用，改形容詞 terrible、fair；row 留本題",
+        "resolution": "改為 [\"terrible\", \"false\", \"fair\", \"row\"]（原 [\"correct\", \"false\", \"pink\", \"row\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：correct 是 q14 正解、pink 與 q14 共用，改形容詞 terrible、fair；row 留本題",
+        "resolution": "改為 [\"糟糕的\", \"錯誤的\", \"公平的\", \"排\"]（原 [\"正確的\", \"錯誤的\", \"粉紅色的\", \"排\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：row 與 q13 共用且放不進空格，改形容詞 brown，四選項同為形容詞（避開 excellent 也通）",
+        "resolution": "改為 [\"correct\", \"pink\", \"brown\", \"gray\"]（原 [\"correct\", \"pink\", \"row\", \"gray\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：row 與 q13 共用且放不進空格，改形容詞 brown，四選項同為形容詞（避開 excellent 也通）",
+        "resolution": "改為 [\"正確的\", \"粉紅色的\", \"棕色的\", \"灰色的\"]（原 [\"正確的\", \"粉紅色的\", \"排\", \"灰色的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

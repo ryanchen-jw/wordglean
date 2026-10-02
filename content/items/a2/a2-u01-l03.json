@@ -82,7 +82,7 @@
       "word": "yeah",
       "exampleEn": "Yeah, I like it too.",
       "exampleZh": "對啊，我也喜歡。",
-      "glossZh": "（口語）是；對啊",
+      "glossZh": "對啊；（口語）是",
       "distractorsZh": [
         "不是",
         "謝謝",
@@ -152,15 +152,15 @@
       "stemEn": "Look! A big dog is running ____ us.",
       "stemZh": "你看！一隻大狗正朝我們跑過來。",
       "options": [
-        "during",
-        "since",
-        "till",
+        "while",
+        "without",
+        "against",
         "toward"
       ],
       "optionGlossZh": [
-        "在⋯期間",
-        "自從",
-        "直到",
+        "當⋯的時候",
+        "沒有",
+        "與⋯對抗",
         "朝著"
       ],
       "answer": 3
@@ -173,14 +173,14 @@
       "options": [
         "Actually",
         "Although",
-        "Perhaps",
-        "Yeah"
+        "Because",
+        "Since"
       ],
       "optionGlossZh": [
         "其實",
         "雖然",
-        "也許",
-        "對啊"
+        "因為",
+        "既然；因為"
       ],
       "answer": 1
     },
@@ -288,6 +288,48 @@
         "message": "執行長第②③關裁示修正：中譯同步（actually 補上對比對象）",
         "resolution": "改為 \"Lisa 和 Kevin 想去河對岸那家新開的餐廳吃吃看。雖然在下雨，他們還是走路過去。到了以後，餐廳已經客滿了。Lisa 說：「也許我們明天可以再來。」Kevin 說：「對啊，不過明天大概又會客滿。」最後他們回家自己煮晚餐。他們原本以為不會太好吃，沒想到其實非常好吃！\"（原 \"Lisa 和 Kevin 想去河對岸那家新開的餐廳吃吃看。雖然在下雨，他們還是走路過去。到了以後，餐廳已經客滿了。Lisa 說：「也許我們明天可以再來。」Kevin 說：「對啊，不過明天大概又會客滿。」最後他們回家自己煮晚餐。其實，那頓飯很好吃！\"）",
         "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"對啊；（口語）是\"（原 \"（口語）是；對啊\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：till 超範圍；since 改給 q14 用；during 放不進 running ___ us；三者改本單元介系詞 among、without、against",
+        "resolution": "改為 [\"among\", \"without\", \"against\", \"toward\"]（原 [\"during\", \"since\", \"till\", \"toward\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：till 超範圍；since 改給 q14 用；during 放不進 running ___ us；三者改本單元介系詞 among、without、against",
+        "resolution": "改為 [\"在⋯之中\", \"沒有\", \"與⋯對抗\", \"朝著\"]（原 [\"在⋯期間\", \"自從\", \"直到\", \"朝著\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：Perhaps、Yeah 是副詞放不進子句前，改連接詞 Because、Since（文法成立，語意與 still 衝突）",
+        "resolution": "改為 [\"Actually\", \"Although\", \"Because\", \"Since\"]（原 [\"Actually\", \"Although\", \"Perhaps\", \"Yeah\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：Perhaps、Yeah 是副詞放不進子句前，改連接詞 Because、Since（文法成立，語意與 still 衝突）",
+        "resolution": "改為 [\"其實\", \"雖然\", \"因為\", \"既然；因為\"]（原 [\"其實\", \"雖然\", \"也許\", \"對啊\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：A big dog is running among us. 只看英文說得通（狗在我們之間跑）；among 換成 while，後面不能接 us，文法不通",
+        "resolution": "改為 [\"while\", \"without\", \"against\", \"toward\"]（原 [\"among\", \"without\", \"against\", \"toward\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：A big dog is running among us. 只看英文說得通（狗在我們之間跑）；among 換成 while，後面不能接 us，文法不通",
+        "resolution": "改為 [\"當⋯的時候\", \"沒有\", \"與⋯對抗\", \"朝著\"]（原 [\"在⋯之中\", \"沒有\", \"與⋯對抗\", \"朝著\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

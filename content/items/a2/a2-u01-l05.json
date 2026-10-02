@@ -155,14 +155,14 @@
       "stemZh": "沒有米飯了，所以我們改吃麵包。",
       "options": [
         "forward",
-        "ahead",
-        "apart",
+        "rather",
+        "exactly",
         "instead"
       ],
       "optionGlossZh": [
         "向前",
-        "在前面",
-        "分開",
+        "寧願",
+        "正好",
         "作為替代"
       ],
       "answer": 3
@@ -173,15 +173,15 @@
       "stemEn": "Is ____ sitting in this seat?",
       "stemZh": "這個位子有人坐嗎？",
       "options": [
-        "exactly",
+        "everyone",
         "somebody",
-        "rather",
+        "nothing",
         "herself"
       ],
       "optionGlossZh": [
-        "正好",
+        "每個人",
         "某人",
-        "寧願",
+        "什麼都沒有",
         "她自己"
       ],
       "answer": 1
@@ -278,6 +278,42 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"向前\",\"在前面\",\"分開\",\"作為替代\"]（原 [\"向前\",\"她自己\",\"無論什麼\",\"作為替代\"]）",
         "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：ahead、apart 超範圍，改 later、alone",
+        "resolution": "改為 [\"forward\", \"later\", \"alone\", \"instead\"]（原 [\"forward\", \"ahead\", \"apart\", \"instead\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：ahead、apart 超範圍，改 later、alone",
+        "resolution": "改為 [\"向前\", \"之後\", \"獨自地\", \"作為替代\"]（原 [\"向前\", \"在前面\", \"分開\", \"作為替代\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：exactly、rather 放不進 Is ___ sitting，改代名詞 everyone、nothing（文法成立，靠語意排除）",
+        "resolution": "改為 [\"everyone\", \"somebody\", \"nothing\", \"herself\"]（原 [\"exactly\", \"somebody\", \"rather\", \"herself\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：exactly、rather 放不進 Is ___ sitting，改代名詞 everyone、nothing（文法成立，靠語意排除）",
+        "resolution": "改為 [\"每個人\", \"某人\", \"什麼都沒有\", \"她自己\"]（原 [\"正好\", \"某人\", \"寧願\", \"她自己\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：so we ate bread later.／so we ate bread alone.（＝只吃麵包）只看英文都說得通；換成 rather、exactly，放句尾不成句",
+        "resolution": "改為 [\"forward\", \"rather\", \"exactly\", \"instead\"]（原 [\"forward\", \"later\", \"alone\", \"instead\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：so we ate bread later.／so we ate bread alone.（＝只吃麵包）只看英文都說得通；換成 rather、exactly，放句尾不成句",
+        "resolution": "改為 [\"向前\", \"寧願\", \"正好\", \"作為替代\"]（原 [\"向前\", \"之後\", \"獨自地\", \"作為替代\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

@@ -152,15 +152,15 @@
       "stemZh": "快七點了，我們回家吧。",
       "options": [
         "almost",
-        "nothing",
-        "anything",
-        "someone"
+        "behind",
+        "between",
+        "under"
       ],
       "optionGlossZh": [
         "幾乎",
-        "什麼都沒有",
-        "任何事物",
-        "某人"
+        "在⋯後面",
+        "在⋯之間",
+        "在⋯下面"
       ],
       "answer": 0
     },
@@ -173,13 +173,13 @@
         "nothing",
         "anything",
         "someone",
-        "behind"
+        "already"
       ],
       "optionGlossZh": [
         "什麼都沒有",
         "任何事物",
         "某人",
-        "在⋯後面"
+        "已經"
       ],
       "answer": 1
     },
@@ -262,6 +262,31 @@
     },
     "glossVerdicts": {},
     "issues": [],
-    "resolvedAfterFinalReview": []
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：nothing、anything、someone 與 q14 共用，改 behind、between、under（避開 already、around、maybe 也通）",
+        "resolution": "改為 [\"almost\", \"behind\", \"between\", \"under\"]（原 [\"almost\", \"nothing\", \"anything\", \"someone\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：nothing、anything、someone 與 q14 共用，改 behind、between、under（避開 already、around、maybe 也通）",
+        "resolution": "改為 [\"幾乎\", \"在⋯後面\", \"在⋯之間\", \"在⋯下面\"]（原 [\"幾乎\", \"什麼都沒有\", \"任何事物\", \"某人\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：behind 移給 q13，本題改 already",
+        "resolution": "改為 [\"nothing\", \"anything\", \"someone\", \"already\"]（原 [\"nothing\", \"anything\", \"someone\", \"behind\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：behind 移給 q13，本題改 already",
+        "resolution": "改為 [\"什麼都沒有\", \"任何事物\", \"某人\", \"已經\"]（原 [\"什麼都沒有\", \"任何事物\", \"某人\", \"在⋯後面\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      }
+    ]
   }
 }

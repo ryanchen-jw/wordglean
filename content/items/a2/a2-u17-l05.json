@@ -152,13 +152,13 @@
       "stemEn": "Run, eat and sleep are all ____.",
       "stemZh": "run、eat 和 sleep 都是動詞。",
       "options": [
-        "schoolchildren",
+        "comparatives",
         "nouns",
         "adjectives",
         "verbs"
       ],
       "optionGlossZh": [
-        "學童",
+        "比較級",
         "名詞",
         "形容詞",
         "動詞"
@@ -171,16 +171,16 @@
       "stemEn": "We have a ____ in math class every Monday.",
       "stemZh": "我們每週一的數學課都有小考。",
       "options": [
-        "noun",
+        "campus",
         "singular",
         "quiz",
-        "adjective"
+        "semester"
       ],
       "optionGlossZh": [
-        "名詞",
+        "校園",
         "單數",
         "小考",
-        "形容詞"
+        "學期"
       ],
       "answer": 2
     },
@@ -293,6 +293,30 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"這裡很多學童走路上學。\"（原 \"學童們參觀了博物館。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：schoolchildren 不在課綱可辨識詞形，改本課字 comparatives",
+        "resolution": "改為 [\"comparatives\", \"nouns\", \"adjectives\", \"verbs\"]（原 [\"schoolchildren\", \"nouns\", \"adjectives\", \"verbs\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：schoolchildren 不在課綱可辨識詞形，改本課字 comparatives",
+        "resolution": "改為 [\"比較級\", \"名詞\", \"形容詞\", \"動詞\"]（原 [\"學童\", \"名詞\", \"形容詞\", \"動詞\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：noun、adjective 與 q13 共用，改本單元名詞 campus、semester",
+        "resolution": "改為 [\"campus\", \"singular\", \"quiz\", \"semester\"]（原 [\"noun\", \"singular\", \"quiz\", \"adjective\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：noun、adjective 與 q13 共用，改本單元名詞 campus、semester",
+        "resolution": "改為 [\"校園\", \"單數\", \"小考\", \"學期\"]（原 [\"名詞\", \"單數\", \"小考\", \"形容詞\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

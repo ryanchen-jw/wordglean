@@ -174,16 +174,16 @@
       "stemEn": "Could you ____ how this machine works?",
       "stemZh": "你可以說明一下這台機器怎麼運作嗎？",
       "options": [
-        "knowledge",
+        "hate",
         "explain",
         "writing",
-        "mistake"
+        "celebrate"
       ],
       "optionGlossZh": [
-        "知識",
+        "討厭",
         "說明",
         "寫作",
-        "錯誤"
+        "慶祝"
       ],
       "answer": 1
     },
@@ -272,6 +272,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u17-l02-q15#0 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"每天下課後多去圖書館看書\",\"每天晚上睡前寫一篇日記\",\"交作業前再慢慢讀一遍\"]（原 [\"多去圖書館\",\"每天晚上睡前寫一篇日記\",\"交作業前再慢慢讀一遍\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：knowledge、mistake 放不進 Could you ____ how 動詞位置，改 imagine、judge（能代入、靠詞義排除；show、describe 會變也對故不用）（實作端複核：Could you imagine how… 本身是通順問句，改 hate）",
+        "resolution": "改為 [\"hate\", \"explain\", \"writing\", \"judge\"]（原 [\"knowledge\", \"explain\", \"writing\", \"mistake\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：knowledge、mistake 放不進 Could you ____ how 動詞位置，改 imagine、judge（能代入、靠詞義排除；show、describe 會變也對故不用）（實作端複核：Could you imagine how… 本身是通順問句，改 hate）",
+        "resolution": "改為 [\"討厭\", \"說明\", \"寫作\", \"評斷\"]（原 [\"知識\", \"說明\", \"寫作\", \"錯誤\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：judge 代入「Could you judge how this machine works?」情境上說得通（評估運作情形），換成 celebrate：「Could you celebrate how this machine works?」文法通、作為請求語意不通",
+        "resolution": "改為 [\"hate\", \"explain\", \"writing\", \"celebrate\"]（原 [\"hate\", \"explain\", \"writing\", \"judge\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：judge 代入「Could you judge how this machine works?」情境上說得通（評估運作情形），換成 celebrate：「Could you celebrate how this machine works?」文法通、作為請求語意不通",
+        "resolution": "改為 [\"討厭\", \"說明\", \"寫作\", \"慶祝\"]（原 [\"討厭\", \"說明\", \"寫作\", \"評斷\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

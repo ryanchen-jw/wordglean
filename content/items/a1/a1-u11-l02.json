@@ -95,7 +95,7 @@
       "word": "officer",
       "exampleEn": "The officer at the airport asks me some questions.",
       "exampleZh": "機場的官員問了我一些問題。",
-      "glossZh": "（機場、警察等）人員；官員",
+      "glossZh": "官員；人員（機場、警察等）",
       "distractorsZh": [
         "醫生",
         "店員",
@@ -152,16 +152,16 @@
       "stemEn": "I put my money in the ____.",
       "stemZh": "我把錢存在銀行。",
       "options": [
-        "sign",
+        "field",
         "street",
         "bank",
-        "officer"
+        "town"
       ],
       "optionGlossZh": [
-        "標誌",
+        "田野",
         "街道",
         "銀行",
-        "官員"
+        "小鎮"
       ],
       "answer": 2
     },
@@ -317,6 +317,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"門口的一面大旗子\"（原 \"一面旗子\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"官員；人員（機場、警察等）\"（原 \"（機場、警察等）人員；官員\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sign/officer 與 q14 共用，換 field/town（地點名詞）",
+        "resolution": "改為 [\"field\", \"street\", \"bank\", \"town\"]（原 [\"sign\", \"street\", \"bank\", \"officer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sign/officer 與 q14 共用，換 field/town（地點名詞）",
+        "resolution": "改為 [\"田野\", \"街道\", \"銀行\", \"小鎮\"]（原 [\"標誌\", \"街道\", \"銀行\", \"官員\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

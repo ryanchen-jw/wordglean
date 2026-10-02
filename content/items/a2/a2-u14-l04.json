@@ -108,7 +108,7 @@
       "word": "stomachache",
       "exampleEn": "My little brother often gets a stomachache before tests.",
       "exampleZh": "我弟弟考試前常常肚子痛。",
-      "glossZh": "胃痛；肚子痛",
+      "glossZh": "肚子痛；胃痛",
       "distractorsZh": [
         "頭痛",
         "背痛",
@@ -172,14 +172,14 @@
       "stemZh": "我站起來太快，覺得頭暈。",
       "options": [
         "belly",
-        "ankle",
-        "toothache",
+        "lazy",
+        "thirsty",
         "dizzy"
       ],
       "optionGlossZh": [
         "肚子",
-        "腳踝",
-        "牙痛",
+        "懶惰的",
+        "口渴的",
         "頭暈的"
       ],
       "answer": 3
@@ -389,6 +389,24 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"Mia 錯過了回家的最後一班公車\"（原 \"Mia 錯過了公車\"）",
         "resolvedAt": "2026-10-02T17:56:46Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"肚子痛；胃痛\"（原 \"胃痛；肚子痛\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：ankle 與 q13 共用；原本無干擾項放得進 felt ____，ankle、toothache 改形容詞 lazy、thirsty（能代入、靠詞義排除）",
+        "resolution": "改為 [\"belly\", \"lazy\", \"thirsty\", \"dizzy\"]（原 [\"belly\", \"ankle\", \"toothache\", \"dizzy\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：ankle 與 q13 共用；原本無干擾項放得進 felt ____，ankle、toothache 改形容詞 lazy、thirsty（能代入、靠詞義排除）",
+        "resolution": "改為 [\"肚子\", \"懶惰的\", \"口渴的\", \"頭暈的\"]（原 [\"肚子\", \"腳踝\", \"牙痛\", \"頭暈的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

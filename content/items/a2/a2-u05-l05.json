@@ -159,15 +159,15 @@
       "stemZh": "這門課程是給六十歲以上的人上的。",
       "options": [
         "aged",
-        "orphan",
-        "granny",
-        "penfriend"
+        "called",
+        "from",
+        "granddad"
       ],
       "optionGlossZh": [
         "⋯歲的",
-        "孤兒",
-        "奶奶",
-        "筆友"
+        "被稱為",
+        "從",
+        "爺爺"
       ],
       "answer": 0
     },
@@ -311,6 +311,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u05-l05-q15#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"每週教她做好吃的英國家常菜\",\"送她去英國的一所大學讀書\",\"幫她在英國找了一個筆友\"]（原 [\"教她做菜\",\"送她去英國的大學讀書了\",\"幫她在英國找了一個筆友\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：orphan 與 q14 正解同字、granny、penfriend 與 q14 共用；改 around、from（可放進 people ___ sixty）與本單元 granddad（實作端複核：people around sixty and over 也說得通，around 改 called）",
+        "resolution": "改為 [\"aged\", \"called\", \"from\", \"granddad\"]（原 [\"aged\", \"orphan\", \"granny\", \"penfriend\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：orphan 與 q14 正解同字、granny、penfriend 與 q14 共用；改 around、from（可放進 people ___ sixty）與本單元 granddad（實作端複核：people around sixty and over 也說得通，around 改 called）",
+        "resolution": "改為 [\"⋯歲的\", \"被稱為\", \"從\", \"爺爺\"]（原 [\"⋯歲的\", \"孤兒\", \"奶奶\", \"筆友\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

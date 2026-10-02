@@ -184,14 +184,14 @@
       "stemEn": "My son is only five. He is very ____.",
       "stemZh": "我兒子才五歲，年紀還很小。",
       "options": [
-        "side",
-        "case",
+        "old",
+        "new",
         "young",
         "thing"
       ],
       "optionGlossZh": [
-        "邊",
-        "情形",
+        "老的",
+        "新的",
         "年輕的；年幼的",
         "東西"
       ],
@@ -438,6 +438,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"兩個人都有養一隻\"（原 \"兩人都有養\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：side、case 與 q14 共用，改 old、big（文法可通、語意不對）；避開 small（年紀小也可能被當對）",
+        "resolution": "改為 [\"old\", \"big\", \"young\", \"thing\"]（原 [\"side\", \"case\", \"young\", \"thing\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：side、case 與 q14 共用，改 old、big（文法可通、語意不對）；避開 small（年紀小也可能被當對）",
+        "resolution": "改為 [\"老的\", \"大的\", \"年輕的；年幼的\", \"東西\"]（原 [\"邊\", \"情形\", \"年輕的；年幼的\", \"東西\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：big 代入成 My son is only five. He is very big.（以年齡來說很高大）說得通；換成 new，He is very new 語意不通",
+        "resolution": "改為 [\"old\", \"new\", \"young\", \"thing\"]（原 [\"old\", \"big\", \"young\", \"thing\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：big 代入成 My son is only five. He is very big.（以年齡來說很高大）說得通；換成 new，He is very new 語意不通",
+        "resolution": "改為 [\"老的\", \"新的\", \"年輕的；年幼的\", \"東西\"]（原 [\"老的\", \"大的\", \"年輕的；年幼的\", \"東西\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

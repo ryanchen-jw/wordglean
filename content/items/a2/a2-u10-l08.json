@@ -68,7 +68,7 @@
       "word": "melon",
       "exampleEn": "Melon is my favorite summer fruit.",
       "exampleZh": "哈密瓜是我最愛的夏季水果。",
-      "glossZh": "甜瓜；哈密瓜",
+      "glossZh": "哈密瓜；甜瓜",
       "distractorsZh": [
         "蘋果",
         "香蕉",
@@ -158,15 +158,15 @@
       "stemZh": "你的馬鈴薯要水煮的還是炸的？",
       "options": [
         "boiled",
-        "chili",
+        "wet",
         "melon",
-        "jelly"
+        "thirsty"
       ],
       "optionGlossZh": [
         "水煮的",
-        "辣椒",
+        "濕的",
         "哈密瓜",
-        "果凍"
+        "口渴的"
       ],
       "answer": 0
     },
@@ -309,6 +309,36 @@
         "message": "執行長裁示：正解長度名次分布：a2-u10-l08-q09 目標第 1 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"Lemonade\",\"Cola\",\"Hot tea\"]（原 [\"Lemonade\",\"Cola\",\"Tea\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"哈密瓜；甜瓜\"（原 \"甜瓜；哈密瓜\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：jelly 與 q12 共用改 thirsty；chili 放不進 potatoes ____ or fried，改形容詞 raw，兩個干擾項可代入、靠詞義排除",
+        "resolution": "改為 [\"boiled\", \"raw\", \"melon\", \"thirsty\"]（原 [\"boiled\", \"chili\", \"melon\", \"jelly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：jelly 與 q12 共用改 thirsty；chili 放不進 potatoes ____ or fried，改形容詞 raw，兩個干擾項可代入、靠詞義排除",
+        "resolution": "改為 [\"水煮的\", \"生的\", \"哈密瓜\", \"口渴的\"]（原 [\"水煮的\", \"辣椒\", \"哈密瓜\", \"果凍\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：raw 代入「Do you want your potatoes raw or fried?」英文也可成立（生／炸二選一），換成 wet：「potatoes wet or fried」文法通但不是烹調選項，語意不通",
+        "resolution": "改為 [\"boiled\", \"wet\", \"melon\", \"thirsty\"]（原 [\"boiled\", \"raw\", \"melon\", \"thirsty\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：raw 代入「Do you want your potatoes raw or fried?」英文也可成立（生／炸二選一），換成 wet：「potatoes wet or fried」文法通但不是烹調選項，語意不通",
+        "resolution": "改為 [\"水煮的\", \"濕的\", \"哈密瓜\", \"口渴的\"]（原 [\"水煮的\", \"生的\", \"哈密瓜\", \"口渴的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

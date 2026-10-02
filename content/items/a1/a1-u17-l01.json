@@ -38,8 +38,8 @@
       "id": "a1-u17-l01-q03",
       "type": "wordCard",
       "word": "get",
-      "exampleEn": "Where can I get a ticket?",
-      "exampleZh": "我在哪裡可以買到票？",
+      "exampleEn": "The kids get presents on their birthdays.",
+      "exampleZh": "孩子們生日時會得到禮物。",
       "glossZh": "得到；買到",
       "distractorsZh": [
         "丟掉",
@@ -90,8 +90,8 @@
       "id": "a1-u17-l01-q07",
       "type": "wordCard",
       "word": "take",
-      "exampleEn": "Take your umbrella with you.",
-      "exampleZh": "帶著你的雨傘。",
+      "exampleEn": "Which pen do you want to take?",
+      "exampleZh": "你想拿哪一支筆？",
       "glossZh": "拿；帶走",
       "distractorsZh": [
         "丟",
@@ -163,13 +163,13 @@
       "stemZh": "我不知道他的電話號碼。",
       "options": [
         "make",
-        "come",
+        "brush",
         "go",
         "know"
       ],
       "optionGlossZh": [
         "做",
-        "來",
+        "刷",
         "去",
         "知道"
       ],
@@ -182,13 +182,13 @@
       "stemZh": "你可以來我家吃晚餐嗎？",
       "options": [
         "come",
-        "know",
+        "see",
         "think",
         "say"
       ],
       "optionGlossZh": [
         "來",
-        "知道",
+        "看見",
         "想",
         "說"
       ],
@@ -316,6 +316,66 @@
         "message": "執行長第②③關裁示修正：第③關 S19：不加性別",
         "resolution": "改前：\"她們在公園看到什麼？\"；改後：\"他們在公園看到什麼？\"",
         "resolvedAt": "2026-10-02T12:42:23Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 get＝得到；與 q11 我昨天買到車換了主詞＋情境＋句型；與 q18 get up／get home 詞義不同",
+        "resolution": "改為 \"The kids get presents on their birthdays.\"（原 \"Where can I get a ticket?\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 get＝得到；與 q11 我昨天買到車換了主詞＋情境＋句型；與 q18 get up／get home 詞義不同",
+        "resolution": "改為 \"孩子們生日時會得到禮物。\"（原 \"我在哪裡可以買到票？\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 take＝拿；與 q12 拍照、q16 閱讀散步換了主詞＋情境＋句型（且詞義不同）",
+        "resolution": "改為 \"Which pen do you want to take?\"（原 \"Take your umbrella with you.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 take＝拿；與 q12 拍照、q16 閱讀散步換了主詞＋情境＋句型（且詞義不同）",
+        "resolution": "改為 \"你想拿哪一支筆？\"（原 \"帶著你的雨傘。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：come 是 q15 正解改 take",
+        "resolution": "改為 [\"make\", \"take\", \"go\", \"know\"]（原 [\"make\", \"come\", \"go\", \"know\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：come 是 q15 正解改 take",
+        "resolution": "改為 [\"做\", \"拿\", \"去\", \"知道\"]（原 [\"做\", \"來\", \"去\", \"知道\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：know 是 q14 正解改 see",
+        "resolution": "改為 [\"come\", \"see\", \"think\", \"say\"]（原 [\"come\", \"know\", \"think\", \"say\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：know 是 q14 正解改 see",
+        "resolution": "改為 [\"來\", \"看見\", \"想\", \"說\"]（原 [\"來\", \"知道\", \"想\", \"說\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：take 代入「I don't take his phone number.」情境上說得通（不記下他的號碼），換成 brush（I don't brush his phone number. 語意不通）",
+        "resolution": "改為 [\"make\", \"brush\", \"go\", \"know\"]（原 [\"make\", \"take\", \"go\", \"know\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：take 代入「I don't take his phone number.」情境上說得通（不記下他的號碼），換成 brush（I don't brush his phone number. 語意不通）",
+        "resolution": "改為 [\"做\", \"刷\", \"去\", \"知道\"]（原 [\"做\", \"拿\", \"去\", \"知道\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

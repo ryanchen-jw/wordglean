@@ -149,14 +149,14 @@
       "stemEn": "My glass is ____ of water.",
       "stemZh": "我的杯子裝滿了水。",
       "options": [
-        "type",
-        "easy",
+        "true",
+        "sure",
         "special",
         "full"
       ],
       "optionGlossZh": [
-        "種類",
-        "容易的",
+        "真實的",
+        "確定的",
         "特別的",
         "滿的"
       ],
@@ -399,6 +399,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"先上網買一張入場票\"（原 \"買一張票\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：type、easy 放不進 ___ of water，改 free、sure（free of／sure of 文法可通、語意不對）",
+        "resolution": "改為 [\"free\", \"sure\", \"special\", \"full\"]（原 [\"type\", \"easy\", \"special\", \"full\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：type、easy 放不進 ___ of water，改 free、sure（free of／sure of 文法可通、語意不對）",
+        "resolution": "改為 [\"沒有⋯的\", \"確定的\", \"特別的\", \"滿的\"]（原 [\"種類\", \"容易的\", \"特別的\", \"滿的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：free 代入成 My glass is free of water.（杯裡沒水）說得通；換成 true，My glass is true of water 語意不通",
+        "resolution": "改為 [\"true\", \"sure\", \"special\", \"full\"]（原 [\"free\", \"sure\", \"special\", \"full\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：free 代入成 My glass is free of water.（杯裡沒水）說得通；換成 true，My glass is true of water 語意不通",
+        "resolution": "改為 [\"真實的\", \"確定的\", \"特別的\", \"滿的\"]（原 [\"沒有⋯的\", \"確定的\", \"特別的\", \"滿的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

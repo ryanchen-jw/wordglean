@@ -81,7 +81,7 @@
       "word": "anyway",
       "exampleEn": "It was expensive, but I bought it anyway.",
       "exampleZh": "那個很貴，但我還是買了。",
-      "glossZh": "無論如何；還是",
+      "glossZh": "還是；無論如何",
       "distractorsZh": [
         "因此",
         "從來不",
@@ -94,7 +94,7 @@
       "word": "apparently",
       "exampleEn": "Apparently, the shop is closed today.",
       "exampleZh": "聽說那家店今天沒開。",
-      "glossZh": "看來；聽說",
+      "glossZh": "聽說；看來",
       "distractorsZh": [
         "幸好",
         "一定",
@@ -153,14 +153,14 @@
       "options": [
         "Nobody",
         "Whom",
-        "Hey",
-        "Mostly"
+        "All",
+        "Himself"
       ],
       "optionGlossZh": [
         "沒有人",
         "誰（受詞）",
-        "嘿",
-        "大多"
+        "所有人",
+        "他自己"
       ],
       "answer": 0
     },
@@ -280,6 +280,42 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"他公司的同事\"（原 \"他的同事\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"還是；無論如何\"（原 \"無論如何；還是\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"聽說；看來\"（原 \"看來；聽說\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Mostly 與 q14 共用改 Somebody；Hey 放不進主詞位改 All，使兩個干擾項文法成立",
+        "resolution": "改為 [\"Nobody\", \"Whom\", \"All\", \"Somebody\"]（原 [\"Nobody\", \"Whom\", \"Hey\", \"Mostly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Mostly 與 q14 共用改 Somebody；Hey 放不進主詞位改 All，使兩個干擾項文法成立",
+        "resolution": "改為 [\"沒有人\", \"誰（受詞）\", \"所有人\", \"某人\"]（原 [\"沒有人\", \"誰（受詞）\", \"嘿\", \"大多\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Somebody came to the meeting, so we went home. 只看英文勉強可成立；換成 Himself，反身代名詞不能當主詞，文法不通",
+        "resolution": "改為 [\"Nobody\", \"Whom\", \"All\", \"Himself\"]（原 [\"Nobody\", \"Whom\", \"All\", \"Somebody\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Somebody came to the meeting, so we went home. 只看英文勉強可成立；換成 Himself，反身代名詞不能當主詞，文法不通",
+        "resolution": "改為 [\"沒有人\", \"誰（受詞）\", \"所有人\", \"他自己\"]（原 [\"沒有人\", \"誰（受詞）\", \"所有人\", \"某人\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

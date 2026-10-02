@@ -153,13 +153,13 @@
       "options": [
         "left",
         "ready",
-        "size",
+        "nice",
         "blue"
       ],
       "optionGlossZh": [
         "左邊的",
         "準備好的",
-        "尺寸",
+        "好的",
         "藍色的"
       ],
       "answer": 1
@@ -171,15 +171,15 @@
       "stemZh": "這件襯衫有大一點的尺寸嗎？",
       "options": [
         "size",
-        "dark",
+        "color",
         "green",
-        "nice"
+        "room"
       ],
       "optionGlossZh": [
         "尺寸",
-        "暗的",
-        "綠色的",
-        "好的"
+        "顏色",
+        "綠色",
+        "房間"
       ],
       "answer": 0
     },
@@ -292,6 +292,30 @@
         "message": "執行長第②③關裁示修正：第③關 D13：翻譯題不與單字卡例句相同",
         "resolution": "改前：\"寫 Is the dinner ready? 也可接受\"；改後：\"寫 Are you ready to go? 也正確\"",
         "resolvedAt": "2026-10-02T13:22:41Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：size 是 q14 正解改 nice",
+        "resolution": "改為 [\"left\", \"ready\", \"nice\", \"blue\"]（原 [\"left\", \"ready\", \"size\", \"blue\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：size 是 q14 正解改 nice",
+        "resolution": "改為 [\"左邊的\", \"準備好的\", \"好的\", \"藍色的\"]（原 [\"左邊的\", \"準備好的\", \"尺寸\", \"藍色的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：nice 移給 q13；dark、nice 為形容詞放不進名詞空格，改 color、room，四選項同為名詞",
+        "resolution": "改為 [\"size\", \"color\", \"green\", \"room\"]（原 [\"size\", \"dark\", \"green\", \"nice\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：nice 移給 q13；dark、nice 為形容詞放不進名詞空格，改 color、room，四選項同為名詞",
+        "resolution": "改為 [\"尺寸\", \"顏色\", \"綠色\", \"房間\"]（原 [\"尺寸\", \"暗的\", \"綠色的\", \"好的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

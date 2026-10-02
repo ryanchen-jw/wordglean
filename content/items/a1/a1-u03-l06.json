@@ -173,16 +173,16 @@
       "stemEn": "I will see you ____ morning.",
       "stemZh": "明天早上見。",
       "options": [
-        "evening",
+        "ago",
         "tomorrow",
         "afternoon",
-        "nine"
+        "half"
       ],
       "optionGlossZh": [
-        "傍晚",
+        "⋯以前",
         "明天",
         "下午",
-        "九"
+        "一半"
       ],
       "answer": 1
     },
@@ -392,6 +392,30 @@
         "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
         "resolution": "改前：[\"Jenny\"]；改後：[\"May\",\"Saturday\",\"Sunday\",\"Jenny\"]",
         "resolvedAt": "2026-10-02T12:39:25Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：evening 與 q13 共用改 this；nine 放不進改 one（this／one morning 文法可通、非「明天」）",
+        "resolution": "改為 [\"this\", \"tomorrow\", \"afternoon\", \"one\"]（原 [\"evening\", \"tomorrow\", \"afternoon\", \"nine\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：evening 與 q13 共用改 this；nine 放不進改 one（this／one morning 文法可通、非「明天」）",
+        "resolution": "改為 [\"這個\", \"明天\", \"下午\", \"某一個\"]（原 [\"傍晚\", \"明天\", \"下午\", \"九\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：this、one 代入成 I will see you this morning／one morning. 都說得通；換成 ago、half，see you ago/half morning 文法不通",
+        "resolution": "改為 [\"ago\", \"tomorrow\", \"afternoon\", \"half\"]（原 [\"this\", \"tomorrow\", \"afternoon\", \"one\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：this、one 代入成 I will see you this morning／one morning. 都說得通；換成 ago、half，see you ago/half morning 文法不通",
+        "resolution": "改為 [\"⋯以前\", \"明天\", \"下午\", \"一半\"]（原 [\"這個\", \"明天\", \"下午\", \"某一個\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

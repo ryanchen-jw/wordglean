@@ -174,13 +174,13 @@
       "stemZh": "考試前，我們會複習所有的課。",
       "options": [
         "scientist",
-        "writer",
+        "letter",
         "review",
         "conversation"
       ],
       "optionGlossZh": [
         "科學家",
-        "作家",
+        "信",
         "複習",
         "對話"
       ],
@@ -320,6 +320,18 @@
         "message": "執行長第②③關裁示修正：專有名詞宣告統一（有級距的字不再宣告）",
         "resolution": "改前：[\"Anna\",\"English\"]；改後：[\"Anna\",\"Lin\",\"April\",\"English\"]",
         "resolvedAt": "2026-10-02T12:42:16Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：writer 是 q13 正解，換 letter",
+        "resolution": "改為 [\"scientist\", \"letter\", \"review\", \"conversation\"]（原 [\"scientist\", \"writer\", \"review\", \"conversation\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：writer 是 q13 正解，換 letter",
+        "resolution": "改為 [\"科學家\", \"信\", \"複習\", \"對話\"]（原 [\"科學家\", \"作家\", \"複習\", \"對話\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

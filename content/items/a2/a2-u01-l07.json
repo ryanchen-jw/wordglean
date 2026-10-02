@@ -30,7 +30,7 @@
       "word": "anymore",
       "exampleEn": "She doesn't live here anymore.",
       "exampleZh": "她已經不住在這裡了。",
-      "glossZh": "（不）再；已經（不）",
+      "glossZh": "不再；再也（用於否定句）",
       "distractorsZh": [
         "仍然",
         "剛剛",
@@ -153,15 +153,15 @@
       "stemEn": "I was so tired that I could ____ walk.",
       "stemZh": "我累到幾乎走不動了。",
       "options": [
-        "easily",
+        "possibly",
         "hardly",
-        "quickly",
+        "still",
         "truly"
       ],
       "optionGlossZh": [
-        "輕易地",
+        "可能",
         "幾乎不",
-        "很快地",
+        "仍然",
         "真正地"
       ],
       "answer": 1
@@ -295,6 +295,48 @@
         "message": "執行長裁示：正解長度名次分布：a2-u01-l07-q15#1 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"很普通，跟平常的假期差不多\",\"可能是他們最棒的一次\",\"天氣一直很差\"]（原 [\"很普通，跟平常差不多\",\"可能是他們最棒的一次\",\"天氣很差\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"不再；再也（用於否定句）\"（原 \"（不）再；已經（不）\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；非本單元字不跨課重複當干擾項：easily 超範圍改本單元 possibly；quickly 他課已用改 still",
+        "resolution": "改為 [\"possibly\", \"hardly\", \"still\", \"truly\"]（原 [\"easily\", \"hardly\", \"quickly\", \"truly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；非本單元字不跨課重複當干擾項：easily 超範圍改本單元 possibly；quickly 他課已用改 still",
+        "resolution": "改為 [\"可能\", \"幾乎不\", \"仍然\", \"真正地\"]（原 [\"輕易地\", \"幾乎不\", \"很快地\", \"真正地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：anymore 放不進句尾，改本單元 somewhere（文法成立，靠語意排除）",
+        "resolution": "改為 [\"somewhere\", \"himself\", \"ourselves\", \"except\"]（原 [\"anymore\", \"himself\", \"ourselves\", \"except\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：anymore 放不進句尾，改本單元 somewhere（文法成立，靠語意排除）",
+        "resolution": "改為 [\"在某處\", \"他自己\", \"我們自己\", \"除了\"]（原 [\"不再\", \"他自己\", \"我們自己\", \"除了\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We cooked the whole dinner somewhere. 只看英文文法語意都可成立；換成 anymore，只能用於否定句，文法不通",
+        "resolution": "改為 [\"anymore\", \"himself\", \"ourselves\", \"except\"]（原 [\"somewhere\", \"himself\", \"ourselves\", \"except\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We cooked the whole dinner somewhere. 只看英文文法語意都可成立；換成 anymore，只能用於否定句，文法不通",
+        "resolution": "改為 [\"不再\", \"他自己\", \"我們自己\", \"除了\"]（原 [\"在某處\", \"他自己\", \"我們自己\", \"除了\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

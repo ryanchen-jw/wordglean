@@ -77,8 +77,8 @@
       "id": "a2-u22-l01-q06",
       "type": "wordCard",
       "word": "part",
-      "exampleEn": "Cut the cake into eight parts.",
-      "exampleZh": "把蛋糕切成八塊。",
+      "exampleEn": "Part of the road is closed today.",
+      "exampleZh": "今天這條路有一部分封閉了。",
       "glossZh": "部分；一份",
       "distractorsZh": [
         "全部",
@@ -162,13 +162,13 @@
       "stemEn": "The baby is only fifty ____ long.",
       "stemZh": "這個寶寶只有五十公分長。",
       "options": [
-        "grams",
+        "minutes",
         "liters",
         "centimeters",
         "kilometers"
       ],
       "optionGlossZh": [
-        "公克",
+        "分鐘",
         "公升",
         "公分",
         "公里"
@@ -181,15 +181,15 @@
       "stemEn": "This letter is very light. It is only twenty ____.",
       "stemZh": "這封信很輕，只有二十公克。",
       "options": [
-        "liters",
+        "parts",
         "grams",
-        "few",
+        "hours",
         "least"
       ],
       "optionGlossZh": [
-        "公升",
+        "部分",
         "公克",
-        "很少的",
+        "小時",
         "最少的"
       ],
       "answer": 1
@@ -339,6 +339,42 @@
         "message": "執行長最終複審修正：干擾項「說故事的作者」中文不自然，改「作者本人」；正解改為第 2 長，名次分布與異常值仍合格",
         "resolution": "改為 [\"作者本人\",\"作者的爸爸媽媽\",\"作者的弟弟\"]（原 [\"說故事的作者\",\"作者的爸爸媽媽\",\"作者的弟弟\"]）",
         "resolvedAt": "2026-10-02T19:13:41Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「部分」；與 q16 閱讀、q18 造句（favorite part of…）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Part of the road is closed today.\"（原 \"Cut the cake into eight parts.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「部分」；與 q16 閱讀、q18 造句（favorite part of…）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"今天這條路有一部分封閉了。\"（原 \"把蛋糕切成八塊。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：grams 是 q15 正解改 minutes；liters 由 q15 移除後不再共用",
+        "resolution": "改為 [\"minutes\", \"liters\", \"centimeters\", \"kilometers\"]（原 [\"grams\", \"liters\", \"centimeters\", \"kilometers\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：grams 是 q15 正解改 minutes；liters 由 q15 移除後不再共用",
+        "resolution": "改為 [\"分鐘\", \"公升\", \"公分\", \"公里\"]（原 [\"公克\", \"公升\", \"公分\", \"公里\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：liters 與 q14 共用改 parts；few 放不進 twenty ___ 改 hours，使兩個干擾項文法成立",
+        "resolution": "改為 [\"parts\", \"grams\", \"hours\", \"least\"]（原 [\"liters\", \"grams\", \"few\", \"least\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/14/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：liters 與 q14 共用改 parts；few 放不進 twenty ___ 改 hours，使兩個干擾項文法成立",
+        "resolution": "改為 [\"部分\", \"公克\", \"小時\", \"最少的\"]（原 [\"公升\", \"公克\", \"很少的\", \"最少的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

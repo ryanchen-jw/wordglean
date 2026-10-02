@@ -153,13 +153,13 @@
       "options": [
         "convenience",
         "wool",
-        "silently",
+        "automatic",
         "correctly"
       ],
       "optionGlossZh": [
         "便利",
         "羊毛",
-        "安靜地",
+        "自動的",
         "正確地"
       ],
       "answer": 1
@@ -170,15 +170,15 @@
       "stemEn": "You don't need to bring food. It's ____.",
       "stemZh": "你不用帶食物來，沒有必要。",
       "options": [
-        "automatic",
+        "important",
         "colorful",
-        "noisy",
+        "sunny",
         "unnecessary"
       ],
       "optionGlossZh": [
-        "自動的",
+        "重要的",
         "色彩鮮豔的",
-        "吵鬧的",
+        "晴朗的",
         "不必要的"
       ],
       "answer": 3
@@ -328,6 +328,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u03-l01-q15#0 目標第 1 長、消除單題異常值（改了選項 1、3，含正解措辭、意思不變）",
         "resolution": "改為 [\"一家便利商店\",\"一家咖啡店\",\"一間餐廳\"]（原 [\"便利商店\",\"一家咖啡店\",\"餐廳\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：silently 放不進 your ___ hat，改形容詞 automatic",
+        "resolution": "改為 [\"convenience\", \"wool\", \"automatic\", \"correctly\"]（原 [\"convenience\", \"wool\", \"silently\", \"correctly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：silently 放不進 your ___ hat，改形容詞 automatic",
+        "resolution": "改為 [\"便利\", \"羊毛\", \"自動的\", \"正確地\"]（原 [\"便利\", \"羊毛\", \"安靜地\", \"正確地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：noisy 超範圍改 sunny；automatic 讓給 q13 用，改 important",
+        "resolution": "改為 [\"important\", \"colorful\", \"sunny\", \"unnecessary\"]（原 [\"automatic\", \"colorful\", \"noisy\", \"unnecessary\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：noisy 超範圍改 sunny；automatic 讓給 q13 用，改 important",
+        "resolution": "改為 [\"重要的\", \"色彩鮮豔的\", \"晴朗的\", \"不必要的\"]（原 [\"自動的\", \"色彩鮮豔的\", \"吵鬧的\", \"不必要的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

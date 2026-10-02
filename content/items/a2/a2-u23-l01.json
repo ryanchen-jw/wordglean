@@ -171,13 +171,13 @@
         "possible",
         "consider",
         "sense",
-        "fact"
+        "copy"
       ],
       "optionGlossZh": [
         "可能的",
         "考慮",
-        "感覺",
-        "事實"
+        "察覺",
+        "抄襲"
       ],
       "answer": 1
     },
@@ -296,6 +296,18 @@
         "message": "執行長第②③關裁示修正：自檢：opencc 會把「只是」誤改成「隻是」，換說法",
         "resolution": "改為 \"那是事實，還是你自己的想法？\"（原 \"那是事實，還是只是你的想法？\"）",
         "resolvedAt": "2026-10-02T18:31:57Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fact 與 q13 共用，改動詞 copy，連同 sense 共兩個干擾項可接 ___ my idea",
+        "resolution": "改為 [\"possible\", \"consider\", \"sense\", \"copy\"]（原 [\"possible\", \"consider\", \"sense\", \"fact\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fact 與 q13 共用，改動詞 copy，連同 sense 共兩個干擾項可接 ___ my idea",
+        "resolution": "改為 [\"可能的\", \"考慮\", \"察覺\", \"抄襲\"]（原 [\"可能的\", \"考慮\", \"感覺\", \"事實\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

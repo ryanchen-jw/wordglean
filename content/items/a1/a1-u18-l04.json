@@ -82,7 +82,7 @@
       "word": "lovely",
       "exampleEn": "What a lovely day!",
       "exampleZh": "天氣真好！",
-      "glossZh": "可愛的；美好的",
+      "glossZh": "美好的；可愛的",
       "distractorsZh": [
         "可怕的",
         "無聊的",
@@ -139,16 +139,16 @@
       "stemEn": "The children are very ____ about the party tomorrow.",
       "stemZh": "孩子們對明天的派對非常興奮。",
       "options": [
-        "lucky",
+        "lovely",
         "exciting",
         "excited",
-        "luck"
+        "funny"
       ],
       "optionGlossZh": [
-        "幸運的",
+        "可愛的",
         "令人興奮的",
         "興奮的",
-        "運氣"
+        "好笑的"
       ],
       "answer": 2
     },
@@ -158,16 +158,16 @@
       "stemEn": "I found ten dollars on the street. I am very ____!",
       "stemZh": "我在街上撿到十美元，我真幸運！",
       "options": [
-        "luck",
+        "angry",
         "lucky",
         "sad",
-        "exciting"
+        "interested"
       ],
       "optionGlossZh": [
-        "運氣",
+        "生氣的",
         "幸運的",
         "難過的",
-        "令人興奮的"
+        "感興趣的"
       ],
       "answer": 1
     },
@@ -305,6 +305,36 @@
         "message": "執行長裁示：正解長度名次分布：a1-u18-l04-q14#0 目標第 3 長、消除單題異常值（改了選項 1、2）",
         "resolution": "改為 [\"去參加學校考試\",\"搬家到新的城市\",\"第一次去日本\"]（原 [\"參加考試\",\"搬家\",\"第一次去日本\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"美好的；可愛的\"（原 \"可愛的；美好的\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lucky 是 q13 正解改 lovely；luck 與 q13 共用改 funny",
+        "resolution": "改為 [\"lovely\", \"exciting\", \"excited\", \"funny\"]（原 [\"lucky\", \"exciting\", \"excited\", \"luck\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lucky 是 q13 正解改 lovely；luck 與 q13 共用改 funny",
+        "resolution": "改為 [\"可愛的\", \"令人興奮的\", \"興奮的\", \"好笑的\"]（原 [\"幸運的\", \"令人興奮的\", \"興奮的\", \"運氣\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：luck、exciting 與 q12 共用，改形容詞 angry、interested，四選項同為形容詞",
+        "resolution": "改為 [\"angry\", \"lucky\", \"sad\", \"interested\"]（原 [\"luck\", \"lucky\", \"sad\", \"exciting\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：luck、exciting 與 q12 共用，改形容詞 angry、interested，四選項同為形容詞",
+        "resolution": "改為 [\"生氣的\", \"幸運的\", \"難過的\", \"感興趣的\"]（原 [\"運氣\", \"幸運的\", \"難過的\", \"令人興奮的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

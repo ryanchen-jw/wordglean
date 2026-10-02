@@ -19,7 +19,7 @@
       "exampleZh": "我每天很早起床。",
       "glossZh": "早；提早",
       "distractorsZh": [
-        "晚；遲",
+        "晚",
         "很快",
         "剛才"
       ]
@@ -108,7 +108,7 @@
       "word": "period",
       "exampleEn": "I have a math class in the first period.",
       "exampleZh": "我第一節有數學課。",
-      "glossZh": "（上課的）一節；時段",
+      "glossZh": "一節課；時段",
       "distractorsZh": [
         "考試",
         "午餐",
@@ -152,14 +152,14 @@
       "stemEn": "The train leaves at six. Please don't be ____.",
       "stemZh": "火車六點開，請不要遲到。",
       "options": [
-        "moment",
-        "half",
+        "early",
+        "first",
         "late",
         "second"
       ],
       "optionGlossZh": [
-        "片刻",
-        "一半",
+        "早；提早",
+        "第一的",
         "遲的",
         "第二的"
       ],
@@ -337,6 +337,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"英文和音樂課\"（原 \"英文課\"）",
         "resolvedAt": "2026-10-02T17:55:24Z"
+      },
+      {
+        "path": "items/0/distractorsZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 [\"晚\", \"很快\", \"剛才\"]（原 [\"晚；遲\", \"很快\", \"剛才\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"一節課；時段\"（原 \"（上課的）一節；時段\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：moment 是 q14 正解、half 與 q14 共用，改 early、first，四選項皆形容詞；避開 sorry",
+        "resolution": "改為 [\"early\", \"first\", \"late\", \"second\"]（原 [\"moment\", \"half\", \"late\", \"second\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：moment 是 q14 正解、half 與 q14 共用，改 early、first，四選項皆形容詞；避開 sorry",
+        "resolution": "改為 [\"早；提早\", \"第一的\", \"遲的\", \"第二的\"]（原 [\"片刻\", \"一半\", \"遲的\", \"第二的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

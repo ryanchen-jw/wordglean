@@ -25,8 +25,8 @@
       "id": "a2-u27-l06-q02",
       "type": "wordCard",
       "word": "pleasing",
-      "exampleEn": "The music in this cafe is very pleasing.",
-      "exampleZh": "這家咖啡店的音樂很悅耳。",
+      "exampleEn": "My parents found my test results very pleasing.",
+      "exampleZh": "我爸媽對我的考試成績很滿意。",
       "glossZh": "令人愉快的；悅耳的",
       "distractorsZh": [
         "吵鬧的",
@@ -139,13 +139,13 @@
         "pleasing",
         "unforgettable",
         "dishonest",
-        "kindly"
+        "brave"
       ],
       "optionGlossZh": [
         "令人愉快的",
         "難忘的",
         "不誠實的",
-        "親切的"
+        "勇敢的"
       ],
       "answer": 2
     },
@@ -155,16 +155,16 @@
       "stemEn": "A ____ old woman showed me the way to the station.",
       "stemZh": "一位和藹的老太太告訴我去車站的路。",
       "options": [
-        "grace",
+        "square",
         "laziness",
         "kindly",
-        "amused"
+        "wooden"
       ],
       "optionGlossZh": [
-        "優雅",
+        "方形的",
         "懶惰",
         "和藹的",
-        "覺得好笑的"
+        "木製的"
       ],
       "answer": 2
     },
@@ -295,6 +295,66 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"我奶奶說的故事讓人難忘。\"（原 \"見到我最喜歡的歌手，真令人難忘。\"）",
         "resolvedAt": "2026-10-02T18:49:56Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「令人愉快的」；與 q14 閱讀（花園的顏色很賞心悅目）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"It was a pleasing day: sunny, warm and quiet.\"（原 \"The music in this cafe is very pleasing.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「令人愉快的」；與 q14 閱讀（花園的顏色很賞心悅目）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"那是令人愉快的一天：晴朗、溫暖又安靜。\"（原 \"這家咖啡店的音樂很悅耳。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kindly 是 q13 正解，改本單元形容詞 brave",
+        "resolution": "改為 [\"pleasing\", \"unforgettable\", \"dishonest\", \"brave\"]（原 [\"pleasing\", \"unforgettable\", \"dishonest\", \"kindly\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kindly 是 q13 正解，改本單元形容詞 brave",
+        "resolution": "改為 [\"令人愉快的\", \"難忘的\", \"不誠實的\", \"勇敢的\"]（原 [\"令人愉快的\", \"難忘的\", \"不誠實的\", \"親切的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：grace 放不進、amused 接 A 冠詞洩題，改子音開頭形容詞 greedy、silly",
+        "resolution": "改為 [\"greedy\", \"laziness\", \"kindly\", \"silly\"]（原 [\"grace\", \"laziness\", \"kindly\", \"amused\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：grace 放不進、amused 接 A 冠詞洩題，改子音開頭形容詞 greedy、silly",
+        "resolution": "改為 [\"貪心的\", \"懶惰\", \"和藹的\", \"愚蠢的\"]（原 [\"優雅\", \"懶惰\", \"和藹的\", \"覺得好笑的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：a pleasing day 不是自然搭配，改用修飾結果的用法",
+        "resolution": "改為 \"My parents found my test results very pleasing.\"（原 \"It was a pleasing day: sunny, warm and quiet.\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：a pleasing day 不是自然搭配，改用修飾結果的用法",
+        "resolution": "改為 \"我爸媽對我的考試成績很滿意。\"（原 \"那是令人愉快的一天：晴朗、溫暖又安靜。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「A silly old woman showed me the way…」與「A greedy old woman…」都成立；silly 換 wooden、greedy 換 square，用於人語意不通",
+        "resolution": "改為 [\"square\", \"laziness\", \"kindly\", \"wooden\"]（原 [\"greedy\", \"laziness\", \"kindly\", \"silly\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「A silly old woman showed me the way…」與「A greedy old woman…」都成立；silly 換 wooden、greedy 換 square，用於人語意不通",
+        "resolution": "改為 [\"方形的\", \"懶惰\", \"和藹的\", \"木製的\"]（原 [\"貪心的\", \"懶惰\", \"和藹的\", \"愚蠢的\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

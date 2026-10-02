@@ -142,13 +142,13 @@
         "shampoo",
         "raincoat",
         "sunglasses",
-        "toothbrush"
+        "belt"
       ],
       "optionGlossZh": [
         "洗髮精",
         "雨衣",
         "太陽眼鏡",
-        "牙刷"
+        "皮帶"
       ],
       "answer": 2
     },
@@ -160,14 +160,14 @@
       "options": [
         "perfume",
         "earring",
-        "bra",
-        "sunglasses"
+        "scarf",
+        "diamond"
       ],
       "optionGlossZh": [
         "香水",
         "耳環",
-        "胸罩",
-        "太陽眼鏡"
+        "圍巾",
+        "鑽石"
       ],
       "answer": 0
     },
@@ -322,6 +322,54 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"她把新的太陽眼鏡弄丟了\"（原 \"她弄丟了太陽眼鏡\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：toothbrush 超範圍，改本單元 sweater",
+        "resolution": "改為 [\"shampoo\", \"raincoat\", \"sunglasses\", \"sweater\"]（原 [\"shampoo\", \"raincoat\", \"sunglasses\", \"toothbrush\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：toothbrush 超範圍，改本單元 sweater",
+        "resolution": "改為 [\"洗髮精\", \"雨衣\", \"太陽眼鏡\", \"毛衣\"]（原 [\"洗髮精\", \"雨衣\", \"太陽眼鏡\", \"牙刷\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sunglasses 是 q12 正解，改本單元 diamond",
+        "resolution": "改為 [\"perfume\", \"earring\", \"bra\", \"diamond\"]（原 [\"perfume\", \"earring\", \"bra\", \"sunglasses\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sunglasses 是 q12 正解，改本單元 diamond",
+        "resolution": "改為 [\"香水\", \"耳環\", \"胸罩\", \"鑽石\"]（原 [\"香水\", \"耳環\", \"胸罩\", \"太陽眼鏡\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項不可一眼排除：指定：bra 換成本單元 scarf；She wears a little scarf... It smells nice. 圍巾不會有香味，語意不通",
+        "resolution": "改為 [\"perfume\", \"earring\", \"scarf\", \"diamond\"]（原 [\"perfume\", \"earring\", \"bra\", \"diamond\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項不可一眼排除：指定：bra 換成本單元 scarf；She wears a little scarf... It smells nice. 圍巾不會有香味，語意不通",
+        "resolution": "改為 [\"香水\", \"耳環\", \"圍巾\", \"鑽石\"]（原 [\"香水\", \"耳環\", \"胸罩\", \"鑽石\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：只看英文：It's very sunny. Put on your sweater. 天冷的晴天也說得通，sweater 換成本單元的 belt（晴天要戴的不是皮帶）",
+        "resolution": "改為 [\"shampoo\", \"raincoat\", \"sunglasses\", \"belt\"]（原 [\"shampoo\", \"raincoat\", \"sunglasses\", \"sweater\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：只看英文：It's very sunny. Put on your sweater. 天冷的晴天也說得通，sweater 換成本單元的 belt（晴天要戴的不是皮帶）",
+        "resolution": "改為 [\"洗髮精\", \"雨衣\", \"太陽眼鏡\", \"皮帶\"]（原 [\"洗髮精\", \"雨衣\", \"太陽眼鏡\", \"毛衣\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

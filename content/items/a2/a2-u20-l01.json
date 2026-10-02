@@ -38,8 +38,8 @@
       "id": "a2-u20-l01-q03",
       "type": "wordCard",
       "word": "suggest",
-      "exampleEn": "My friend suggested a good restaurant.",
-      "exampleZh": "我朋友推薦了一家好餐廳。",
+      "exampleEn": "What do you suggest I buy for my mom?",
+      "exampleZh": "你建議我買什麼給我媽媽？",
       "glossZh": "建議；推薦",
       "distractorsZh": [
         "拒絕",
@@ -79,11 +79,11 @@
       "word": "sound",
       "exampleEn": "That sounds like a great idea!",
       "exampleZh": "聽起來是個很棒的主意！",
-      "glossZh": "聲音；聽起來",
+      "glossZh": "聽起來；聲音",
       "distractorsZh": [
-        "顏色；看起來",
-        "味道；嚐起來",
-        "形狀；摸起來"
+        "看起來",
+        "嚐起來",
+        "摸起來"
       ]
     },
     {
@@ -105,7 +105,7 @@
       "word": "argue",
       "exampleEn": "My parents never argue in front of us.",
       "exampleZh": "我爸媽從不在我們面前吵架。",
-      "glossZh": "爭論；吵架",
+      "glossZh": "吵架；爭論",
       "distractorsZh": [
         "道歉",
         "唱歌",
@@ -163,13 +163,13 @@
       "stemZh": "氣象報告說明天會下雨。",
       "options": [
         "sound",
-        "voice",
+        "song",
         "report",
         "rumor"
       ],
       "optionGlossZh": [
         "聲音",
-        "嗓音",
+        "歌曲",
         "報告",
         "謠言"
       ],
@@ -297,6 +297,48 @@
         "message": "執行長裁示：正解長度名次分布：a2-u20-l01-q16#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"爭論老師要離開的謠言\",\"討論下週的考試\",\"一起看影片\"]（原 [\"爭論老師要離開的謠言\",\"討論考試\",\"看影片\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「建議」；與 q16 老師建議查證、q18 I suggest 搭公車／去海灘換了主詞＋情境（買禮物）＋句型（wh 疑問句）。",
+        "resolution": "改為 \"What do you suggest I buy for my mom?\"（原 \"My friend suggested a good restaurant.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「建議」；與 q16 老師建議查證、q18 I suggest 搭公車／去海灘換了主詞＋情境（買禮物）＋句型（wh 疑問句）。",
+        "resolution": "改為 \"你建議我買什麼給我媽媽？\"（原 \"我朋友推薦了一家好餐廳。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"聽起來；聲音\"（原 \"聲音；聽起來\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/distractorsZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 [\"看起來\", \"嚐起來\", \"摸起來\"]（原 [\"顏色；看起來\", \"味道；嚐起來\", \"形狀；摸起來\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"吵架；爭論\"（原 \"爭論；吵架\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：voice 是 q15 正解，改 song",
+        "resolution": "改為 [\"sound\", \"song\", \"report\", \"rumor\"]（原 [\"sound\", \"voice\", \"report\", \"rumor\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：voice 是 q15 正解，改 song",
+        "resolution": "改為 [\"聲音\", \"歌曲\", \"報告\", \"謠言\"]（原 [\"聲音\", \"嗓音\", \"報告\", \"謠言\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

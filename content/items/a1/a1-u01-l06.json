@@ -79,8 +79,8 @@
       "id": "a1-u01-l06-q06",
       "type": "wordCard",
       "word": "them",
-      "exampleEn": "I have two cats. I love them.",
-      "exampleZh": "我有兩隻貓，我很愛牠們。",
+      "exampleEn": "My friends are very nice. I often play with them.",
+      "exampleZh": "我的朋友人都很好，我常常和他們一起玩。",
       "glossZh": "他們；牠們（受詞）",
       "distractorsZh": [
         "我們",
@@ -170,15 +170,15 @@
       "stemEn": "My grandparents live near the sea. I love ____ very much.",
       "stemZh": "我的祖父母住在海邊附近，我非常愛他們。",
       "options": [
-        "some",
-        "there",
-        "so",
+        "we",
+        "they",
+        "me",
         "them"
       ],
       "optionGlossZh": [
-        "一些",
-        "那裡",
-        "所以",
+        "我們",
+        "他們（主詞）",
+        "我（受詞）",
         "他們（受詞）"
       ],
       "answer": 3
@@ -305,6 +305,42 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「紅色的」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:47:49Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 them＝他們（指人）；與 q15 閱讀（澆花）換了主詞＋情境＋句型（實作端複核：kind 形容詞「親切」屬 A2 詞義，改 nice）",
+        "resolution": "改為 \"My friends are very nice. I often play with them.\"（原 \"I have two cats. I love them.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 them＝他們（指人）；與 q15 閱讀（澆花）換了主詞＋情境＋句型（實作端複核：kind 形容詞「親切」屬 A2 詞義，改 nice）",
+        "resolution": "改為 \"我的朋友人都很好，我常常和他們一起玩。\"（原 \"我有兩隻貓，我很愛牠們。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：so 是 q13 正解；改成四個受格代名詞（只靠前句祖父母判斷）；避開 it（可指海）",
+        "resolution": "改為 [\"her\", \"you\", \"me\", \"them\"]（原 [\"some\", \"there\", \"so\", \"them\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：so 是 q13 正解；改成四個受格代名詞（只靠前句祖父母判斷）；避開 it（可指海）",
+        "resolution": "改為 [\"她\", \"你\", \"我（受詞）\", \"他們（受詞）\"]（原 [\"一些\", \"那裡\", \"所以\", \"他們（受詞）\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：主 session 裁定：you、her 代入成 I love you/her very much. 只看英文本身成立；換成主格 we、they，I love we/they very much 文法不通",
+        "resolution": "改為 [\"we\", \"they\", \"me\", \"them\"]（原 [\"her\", \"you\", \"me\", \"them\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：主 session 裁定：you、her 代入成 I love you/her very much. 只看英文本身成立；換成主格 we、they，I love we/they very much 文法不通",
+        "resolution": "改為 [\"我們\", \"他們（主詞）\", \"我（受詞）\", \"他們（受詞）\"]（原 [\"她\", \"你\", \"我（受詞）\", \"他們（受詞）\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

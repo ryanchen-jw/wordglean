@@ -14,8 +14,8 @@
       "id": "a1-u18-l02-q01",
       "type": "wordCard",
       "word": "worry",
-      "exampleEn": "Money is my biggest worry.",
-      "exampleZh": "錢是我最大的煩惱。",
+      "exampleEn": "My mother worries when I come home late.",
+      "exampleZh": "我晚回家時，媽媽會擔心。",
       "glossZh": "擔心；煩惱",
       "distractorsZh": [
         "希望",
@@ -55,7 +55,7 @@
       "word": "smile",
       "exampleEn": "She has a lovely smile.",
       "exampleZh": "她的笑容很好看。",
-      "glossZh": "微笑；笑容",
+      "glossZh": "笑容；微笑",
       "distractorsZh": [
         "眼淚",
         "聲音",
@@ -141,13 +141,13 @@
         "interesting",
         "interested",
         "alone",
-        "worry"
+        "happy"
       ],
       "optionGlossZh": [
         "有趣的",
         "感興趣的",
-        "獨自地",
-        "煩惱"
+        "獨自的",
+        "快樂的"
       ],
       "answer": 1
     },
@@ -160,13 +160,13 @@
         "dream",
         "smile",
         "worry",
-        "alone"
+        "memory"
       ],
       "optionGlossZh": [
         "夢想",
         "笑容",
         "煩惱",
-        "獨自地"
+        "記憶"
       ],
       "answer": 0
     },
@@ -327,6 +327,48 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「錢」由位置 0 移到 1（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:45:36Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 worry＝擔心（動詞）；與 q10 Don't worry 祈使句、q14 閱讀 his only worry is money 換了主詞＋情境＋句型",
+        "resolution": "改為 \"My mother worries when I come home late.\"（原 \"Money is my biggest worry.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 worry＝擔心（動詞）；與 q10 Don't worry 祈使句、q14 閱讀 his only worry is money 換了主詞＋情境＋句型",
+        "resolution": "改為 \"我晚回家時，媽媽會擔心。\"（原 \"錢是我最大的煩惱。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"笑容；微笑\"（原 \"微笑；笑容\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：worry 與 q13 共用改形容詞 happy；alone 留本題",
+        "resolution": "改為 [\"interesting\", \"interested\", \"alone\", \"happy\"]（原 [\"interesting\", \"interested\", \"alone\", \"worry\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：worry 與 q13 共用改形容詞 happy；alone 留本題",
+        "resolution": "改為 [\"有趣的\", \"感興趣的\", \"獨自的\", \"快樂的\"]（原 [\"有趣的\", \"感興趣的\", \"獨自地\", \"煩惱\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：alone 與 q12 共用改名詞 memory，四選項同為名詞",
+        "resolution": "改為 [\"dream\", \"smile\", \"worry\", \"memory\"]（原 [\"dream\", \"smile\", \"worry\", \"alone\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：alone 與 q12 共用改名詞 memory，四選項同為名詞",
+        "resolution": "改為 [\"夢想\", \"笑容\", \"煩惱\", \"記憶\"]（原 [\"夢想\", \"笑容\", \"煩惱\", \"獨自地\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

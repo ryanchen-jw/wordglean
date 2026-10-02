@@ -32,7 +32,7 @@
       "word": "bus station",
       "exampleEn": "The bus station is next to the train station.",
       "exampleZh": "客運站就在火車站旁邊。",
-      "glossZh": "公車總站；客運站",
+      "glossZh": "客運站；公車總站",
       "distractorsZh": [
         "火車站",
         "機場",
@@ -141,15 +141,15 @@
       "stemEn": "Wait for the bus at the ____ over there.",
       "stemZh": "在那邊的公車站牌等公車。",
       "options": [
-        "tour guide",
+        "guidebook",
         "bus stop",
-        "driver's license",
+        "petrol station",
         "motorway"
       ],
       "optionGlossZh": [
-        "導遊",
+        "旅遊指南",
         "公車站牌",
-        "駕照",
+        "加油站",
         "高速公路"
       ],
       "answer": 1
@@ -160,16 +160,16 @@
       "stemEn": "Our ____ told us about the history of the castle.",
       "stemZh": "我們的導遊跟我們介紹了這座城堡的歷史。",
       "options": [
-        "petrol station",
+        "bus station",
         "tour guide",
-        "bus stop",
-        "motorway"
+        "roundabout",
+        "highway"
       ],
       "optionGlossZh": [
-        "加油站",
+        "客運站",
         "導遊",
-        "公車站牌",
-        "高速公路"
+        "圓環",
+        "公路"
       ],
       "answer": 1
     },
@@ -282,6 +282,48 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節",
         "resolution": "改為 \"A tour guide from the hotel\"（原 \"A tour guide\"）",
         "resolvedAt": "2026-10-02T17:42:01Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"客運站；公車總站\"（原 \"公車總站；客運站\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tour guide 是 q13 正解改 traffic light；driver's license 改 petrol station（地點類放得進 at the ____）；motorway 留本題、q13 另換",
+        "resolution": "改為 [\"traffic light\", \"bus stop\", \"petrol station\", \"motorway\"]（原 [\"tour guide\", \"bus stop\", \"driver's license\", \"motorway\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tour guide 是 q13 正解改 traffic light；driver's license 改 petrol station（地點類放得進 at the ____）；motorway 留本題、q13 另換",
+        "resolution": "改為 [\"紅綠燈\", \"公車站牌\", \"加油站\", \"高速公路\"]（原 [\"導遊\", \"公車站牌\", \"駕照\", \"高速公路\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bus stop 是 q12 正解改 roundabout；petrol station、motorway 與 q12 共用改 bus station、highway",
+        "resolution": "改為 [\"bus station\", \"tour guide\", \"roundabout\", \"highway\"]（原 [\"petrol station\", \"tour guide\", \"bus stop\", \"motorway\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bus stop 是 q12 正解改 roundabout；petrol station、motorway 與 q12 共用改 bus station、highway",
+        "resolution": "改為 [\"客運站\", \"導遊\", \"圓環\", \"公路\"]（原 [\"加油站\", \"導遊\", \"公車站牌\", \"高速公路\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/11/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：traffic light 代入「Wait for the bus at the traffic light over there.」情境上說得通，換成本單元 guidebook：「wait for the bus at the guidebook」文法通、語意不通",
+        "resolution": "改為 [\"guidebook\", \"bus stop\", \"petrol station\", \"motorway\"]（原 [\"traffic light\", \"bus stop\", \"petrol station\", \"motorway\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/11/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：traffic light 代入「Wait for the bus at the traffic light over there.」情境上說得通，換成本單元 guidebook：「wait for the bus at the guidebook」文法通、語意不通",
+        "resolution": "改為 [\"旅遊指南\", \"公車站牌\", \"加油站\", \"高速公路\"]（原 [\"紅綠燈\", \"公車站牌\", \"加油站\", \"高速公路\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

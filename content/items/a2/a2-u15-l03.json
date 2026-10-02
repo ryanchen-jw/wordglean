@@ -157,16 +157,16 @@
       "stemEn": "Nobody knows who he is. He is a ____ man.",
       "stemZh": "沒有人知道他是誰，他是個神秘的男人。",
       "options": [
-        "tune",
+        "magic",
         "mysterious",
-        "romance",
-        "dancer"
+        "musical",
+        "balloon"
       ],
       "optionGlossZh": [
-        "曲調",
+        "魔法的",
         "神秘的",
-        "愛情故事",
-        "舞者"
+        "音樂的",
+        "氣球"
       ],
       "answer": 1
     },
@@ -303,6 +303,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u15-l03-q14#1 目標第 2 長、消除單題異常值（改了選項 1、3）",
         "resolution": "改為 [\"一場魔術和三位舞者的表演\",\"天使和農夫的愛情短劇\",\"一首快樂的歌\"]（原 [\"一場魔術\",\"天使和農夫的愛情短劇\",\"一首歌\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：tune、romance 與 q12 共用、dancer 是 q12 正解；改本單元 magic、musical（形容詞可代入）與 balloon",
+        "resolution": "改為 [\"magic\", \"mysterious\", \"musical\", \"balloon\"]（原 [\"tune\", \"mysterious\", \"romance\", \"dancer\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：tune、romance 與 q12 共用、dancer 是 q12 正解；改本單元 magic、musical（形容詞可代入）與 balloon",
+        "resolution": "改為 [\"魔法的\", \"神秘的\", \"音樂的\", \"氣球\"]（原 [\"曲調\", \"神秘的\", \"愛情故事\", \"舞者\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

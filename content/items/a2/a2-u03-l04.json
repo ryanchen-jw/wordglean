@@ -14,8 +14,8 @@
       "id": "a2-u03-l04-q01",
       "type": "wordCard",
       "word": "significant",
-      "exampleEn": "There was a significant change in prices this year.",
-      "exampleZh": "今年的物價有很明顯的變化。",
+      "exampleEn": "Getting my first job was a significant event in my life.",
+      "exampleZh": "得到第一份工作是我人生中的重大事件。",
       "glossZh": "重大的；明顯的",
       "distractorsZh": [
         "微小的",
@@ -172,14 +172,14 @@
       "options": [
         "clearly",
         "simple",
-        "similar",
-        "quality"
+        "silently",
+        "loudly"
       ],
       "optionGlossZh": [
         "清楚地",
         "簡單的",
-        "相似的",
-        "品質"
+        "安靜地",
+        "大聲地"
       ],
       "answer": 0
     },
@@ -281,6 +281,42 @@
         "message": "執行長第②③關裁示修正：中譯同步",
         "resolution": "改為 \"去年，我家這條街開了兩家咖啡店。一開始，它們看起來很像，都很小，擺著簡單的桌椅。但兩家的品質差很多：其中一家的咖啡明顯比較好喝，很快就受到歡迎。另一家常常沒有客人，現在已經關門了。\"（原 \"去年，我家這條街開了兩家咖啡店。一開始，它們看起來很像，都很小，擺著簡單的桌椅。但兩家有一個很大的差別：其中一家非常重視品質。它的咖啡明顯比較好喝，很快就受到歡迎。另一家常常沒有客人，現在已經關門了。\"）",
         "resolvedAt": "2026-10-02T13:20:50Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「重大的」；與 q15 閱讀（兩家咖啡店品質差異）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"Getting my first job was a significant event in my life.\"（原 \"There was a significant change in prices this year.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範「重大的」；與 q15 閱讀（兩家咖啡店品質差異）換了主詞＋情境＋句型。",
+        "resolution": "改為 \"得到第一份工作是我人生中的重大事件。\"（原 \"今年的物價有很明顯的變化。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：similar 與 q13 共用改 smoothly；quality 放不進 write more ___ 改副詞 loudly，使兩個干擾項文法成立",
+        "resolution": "改為 [\"clearly\", \"simple\", \"smoothly\", \"loudly\"]（原 [\"clearly\", \"simple\", \"similar\", \"quality\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：similar 與 q13 共用改 smoothly；quality 放不進 write more ___ 改副詞 loudly，使兩個干擾項文法成立",
+        "resolution": "改為 [\"清楚地\", \"簡單的\", \"順暢地\", \"大聲地\"]（原 [\"清楚地\", \"簡單的\", \"相似的\", \"品質\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：I can't read your writing. Please write more smoothly. 只看英文可說得通（字寫得流暢一點）；換成 silently，寫得安靜與看不懂字無關，語意不通",
+        "resolution": "改為 [\"clearly\", \"simple\", \"silently\", \"loudly\"]（原 [\"clearly\", \"simple\", \"smoothly\", \"loudly\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：I can't read your writing. Please write more smoothly. 只看英文可說得通（字寫得流暢一點）；換成 silently，寫得安靜與看不懂字無關，語意不通",
+        "resolution": "改為 [\"清楚地\", \"簡單的\", \"安靜地\", \"大聲地\"]（原 [\"清楚地\", \"簡單的\", \"順暢地\", \"大聲地\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

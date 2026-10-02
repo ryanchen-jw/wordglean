@@ -51,13 +51,13 @@
       "id": "a2-u26-l01-q04",
       "type": "wordCard",
       "word": "spread",
-      "exampleEn": "The spread of phones changed our lives.",
-      "exampleZh": "手機的普及改變了我們的生活。",
+      "exampleEn": "The news spread quickly around the school.",
+      "exampleZh": "這個消息很快就在學校傳開了。",
       "glossZh": "傳播；普及；蔓延",
       "distractorsZh": [
-        "價格",
-        "顏色",
-        "聲音"
+        "收集",
+        "打破",
+        "藏起來"
       ]
     },
     {
@@ -149,13 +149,13 @@
       "stemEn": "Every year, my whole family ____ at Grandma's house for New Year.",
       "stemZh": "每年過年，我們全家都會在奶奶家團聚。",
       "options": [
-        "disappears",
+        "spreads",
         "operates",
         "survives",
         "gathers"
       ],
       "optionGlossZh": [
-        "消失",
+        "散開",
         "操作",
         "存活",
         "聚集"
@@ -168,16 +168,16 @@
       "stemEn": "I got a small ____ on my hand from the hot pan.",
       "stemZh": "我的手被熱鍋燙出一個小傷。",
       "options": [
-        "gather",
-        "survive",
+        "wave",
+        "cross",
         "burn",
-        "operate"
+        "star"
       ],
       "optionGlossZh": [
-        "聚集",
-        "存活",
+        "波浪",
+        "十字記號",
         "燙傷",
-        "操作"
+        "星星"
       ],
       "answer": 2
     },
@@ -332,6 +332,60 @@
         "message": "執行長裁示：正解長度名次分布：a2-u26-l01-q15#1 目標第 1 長、消除單題異常值（改了選項 3）",
         "resolution": "改為 [\"強風把露營椅吹壞了\",\"有動物跑進來\",\"下了一場大雨\"]（原 [\"強風把露營椅吹壞了\",\"有動物跑進來\",\"下大雨\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"普及；傳播；蔓延\"（原 \"傳播；普及；蔓延\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：disappears 為下一課字超範圍，改本課 spreads",
+        "resolution": "改為 [\"spreads\", \"operates\", \"survives\", \"gathers\"]（原 [\"disappears\", \"operates\", \"survives\", \"gathers\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：disappears 為下一課字超範圍，改本課 spreads",
+        "resolution": "改為 [\"散開\", \"操作\", \"存活\", \"聚集\"]（原 [\"消失\", \"操作\", \"存活\", \"聚集\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：gather（q13 正解）、survive、operate 與 q13 共用且為動詞，改名詞 wave、cross、star，四選項同為名詞",
+        "resolution": "改為 [\"wave\", \"cross\", \"burn\", \"star\"]（原 [\"gather\", \"survive\", \"burn\", \"operate\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：gather（q13 正解）、survive、operate 與 q13 共用且為動詞，改名詞 wave、cross、star，四選項同為名詞",
+        "resolution": "改為 [\"波浪\", \"十字記號\", \"燙傷\", \"星星\"]（原 [\"聚集\", \"存活\", \"燙傷\", \"操作\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"傳播；普及；蔓延\"（原 \"普及；傳播；蔓延\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"The news spread quickly around the school.\"（原 \"The spread of phones changed our lives.\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
+        "resolution": "改為 \"這個消息很快就在學校傳開了。\"（原 \"手機的普及改變了我們的生活。\"）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/3/distractorsZh",
+        "message": "執行長裁示：後期規則補正：第二輪複審 FIX 連動：第一義改為動詞「傳播」，干擾項改成同詞性動詞，避免詞性洩題",
+        "resolution": "改為 [\"收集\", \"打破\", \"藏起來\"]（原 [\"價格\", \"顏色\", \"聲音\"]）",
+        "resolvedAt": "2026-10-02T21:00:47Z"
       }
     ]
   }

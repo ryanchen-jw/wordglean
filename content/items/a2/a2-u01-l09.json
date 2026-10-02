@@ -153,13 +153,13 @@
       "options": [
         "done",
         "further",
-        "theirs",
+        "alright",
         "been"
       ],
       "optionGlossZh": [
         "做完的",
         "更多的",
-        "他們的",
+        "還好",
         "去過；一直是"
       ],
       "answer": 0
@@ -358,6 +358,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u01-l09-q10 目標第 3 長、消除單題異常值（改了選項 2）",
         "resolution": "改為 [\"Their house\",\"Our small house\",\"My friend's house\"]（原 [\"Their house\",\"Our house\",\"My friend's house\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：theirs 放不進 I am almost ___，改本單元形容詞 alright",
+        "resolution": "改為 [\"done\", \"further\", \"alright\", \"been\"]（原 [\"done\", \"further\", \"theirs\", \"been\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：theirs 放不進 I am almost ___，改本單元形容詞 alright",
+        "resolution": "改為 [\"做完的\", \"更多的\", \"還好\", \"去過；一直是\"]（原 [\"做完的\", \"更多的\", \"他們的\", \"去過；一直是\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

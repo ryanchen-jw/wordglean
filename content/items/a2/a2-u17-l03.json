@@ -18,9 +18,9 @@
       "exampleZh": "這個電視節目有趣又有教育意義。",
       "glossZh": "有教育意義的；教育的",
       "distractorsZh": [
-        "無聊的",
-        "危險的",
-        "昂貴的"
+        "沒有意義的",
+        "讓人害怕的",
+        "價格昂貴的"
       ]
     },
     {
@@ -55,7 +55,7 @@
       "word": "explanation",
       "exampleEn": "The teacher's explanation was very clear.",
       "exampleZh": "老師的說明非常清楚。",
-      "glossZh": "解釋；說明",
+      "glossZh": "說明；解釋",
       "distractorsZh": [
         "邀請",
         "禮物",
@@ -151,15 +151,15 @@
       "stemEn": "Your answer is wrong. There is an ____ in the third line.",
       "stemZh": "你的答案錯了，第三行有一個錯誤。",
       "options": [
-        "atom",
+        "idea",
         "essay",
-        "explanation",
+        "education",
         "error"
       ],
       "optionGlossZh": [
-        "原子",
+        "想法",
         "短文",
-        "說明",
+        "教育",
         "錯誤"
       ],
       "answer": 3
@@ -170,15 +170,15 @@
       "stemEn": "After four years at university, she will ____ in June.",
       "stemZh": "讀了四年大學後，她將在六月畢業。",
       "options": [
-        "chemical",
+        "explain",
         "graduate",
-        "meaning",
+        "retire",
         "scientific"
       ],
       "optionGlossZh": [
-        "化學的",
+        "解釋",
         "畢業",
-        "意義",
+        "退休",
         "科學的"
       ],
       "answer": 1
@@ -286,6 +286,54 @@
         "message": "執行長裁示：正解長度名次分布：a2-u17-l03-q10 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"A science show for kids\",\"A music show\",\"A movie for kids\"]（原 [\"A science show for kids\",\"A music show for families\",\"A movie\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/0/distractorsZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 [\"沒有意義的\", \"讓人害怕的\", \"價格昂貴的\"]（原 [\"無聊的\", \"危險的\", \"昂貴的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"說明；解釋\"（原 \"解釋；說明\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：atom 為 a2-u17-l04 超範圍，改母音開頭 idea（保住 an 不洩題）",
+        "resolution": "改為 [\"idea\", \"essay\", \"explanation\", \"error\"]（原 [\"atom\", \"essay\", \"explanation\", \"error\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：atom 為 a2-u17-l04 超範圍，改母音開頭 idea（保住 an 不洩題）",
+        "resolution": "改為 [\"想法\", \"短文\", \"說明\", \"錯誤\"]（原 [\"原子\", \"短文\", \"說明\", \"錯誤\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：chemical、meaning 放不進 will ____ 動詞位置，改 explain、retire（能代入、靠詞義排除；marry 會變也對故不用）",
+        "resolution": "改為 [\"explain\", \"graduate\", \"retire\", \"scientific\"]（原 [\"chemical\", \"graduate\", \"meaning\", \"scientific\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：chemical、meaning 放不進 will ____ 動詞位置，改 explain、retire（能代入、靠詞義排除；marry 會變也對故不用）",
+        "resolution": "改為 [\"解釋\", \"畢業\", \"退休\", \"科學的\"]（原 [\"化學的\", \"畢業\", \"意義\", \"科學的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：explanation 代入「Your answer is wrong. There is an explanation in the third line.」英文說得通（第三行有解說），換成本單元 education：「an education in the third line」文法通、語意不通",
+        "resolution": "改為 [\"idea\", \"essay\", \"education\", \"error\"]（原 [\"idea\", \"essay\", \"explanation\", \"error\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：explanation 代入「Your answer is wrong. There is an explanation in the third line.」英文說得通（第三行有解說），換成本單元 education：「an education in the third line」文法通、語意不通",
+        "resolution": "改為 [\"想法\", \"短文\", \"教育\", \"錯誤\"]（原 [\"想法\", \"短文\", \"說明\", \"錯誤\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

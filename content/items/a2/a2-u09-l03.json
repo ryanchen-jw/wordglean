@@ -17,7 +17,7 @@
       "word": "chairman",
       "exampleEn": "The chairman opened the meeting at nine.",
       "exampleZh": "董事長九點宣佈會議開始。",
-      "glossZh": "主席；董事長",
+      "glossZh": "董事長；主席",
       "distractorsZh": [
         "會計",
         "司機",
@@ -108,7 +108,7 @@
       "word": "appointment",
       "exampleEn": "I have an appointment at the bank at ten.",
       "exampleZh": "我十點在銀行有約。",
-      "glossZh": "約會；預約",
+      "glossZh": "預約；約會",
       "distractorsZh": [
         "帳戶",
         "收據",
@@ -152,13 +152,13 @@
       "stemEn": "He is sixty-five and tired of working, so he wants to ____.",
       "stemZh": "他六十五歲了，工作得很累，所以想退休。",
       "options": [
-        "work",
+        "earn",
         "train",
         "retire",
         "hurry"
       ],
       "optionGlossZh": [
-        "工作",
+        "賺錢",
         "訓練",
         "退休",
         "趕快"
@@ -437,6 +437,30 @@
         "message": "執行長裁示：正解長度均衡：干擾項補細節，意思仍與短文不符",
         "resolution": "改為 \"大銀行的資深職員\"（原 \"銀行職員\"）",
         "resolvedAt": "2026-10-02T17:45:24Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"董事長；主席\"（原 \"主席；董事長\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"預約；約會\"（原 \"約會；預約\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：work 已在他課當非本單元干擾項，改本單元字 earn",
+        "resolution": "改為 [\"earn\", \"train\", \"retire\", \"hurry\"]（原 [\"work\", \"train\", \"retire\", \"hurry\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：work 已在他課當非本單元干擾項，改本單元字 earn",
+        "resolution": "改為 [\"賺錢\", \"訓練\", \"退休\", \"趕快\"]（原 [\"工作\", \"訓練\", \"退休\", \"趕快\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

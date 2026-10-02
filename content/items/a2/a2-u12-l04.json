@@ -49,7 +49,7 @@
       "word": "abroad",
       "exampleEn": "My uncle lives abroad, so I only see him once a year.",
       "exampleZh": "我叔叔住在國外，所以我一年只見到他一次。",
-      "glossZh": "到國外；在國外",
+      "glossZh": "在國外；到國外",
       "distractorsZh": [
         "在家",
         "在附近",
@@ -62,7 +62,7 @@
       "word": "architecture",
       "exampleEn": "My sister studies architecture at university.",
       "exampleZh": "我姊姊在大學念建築。",
-      "glossZh": "建築（風格）；建築學",
+      "glossZh": "建築學；建築風格",
       "distractorsZh": [
         "歷史",
         "食物",
@@ -177,15 +177,15 @@
       "stemEn": "Please use the side ____. The front door is closed.",
       "stemZh": "請走側門入口，前門關起來了。",
       "options": [
-        "abroad",
+        "bench",
         "entrance",
-        "royal",
+        "statue",
         "architecture"
       ],
       "optionGlossZh": [
-        "到國外",
+        "長椅",
         "入口",
-        "王室的",
+        "雕像",
         "建築"
       ],
       "answer": 1
@@ -347,6 +347,30 @@
         "message": "執行長裁示：正解長度名次分布：a2-u12-l04-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"古老的建築，尤其是王室的城堡\",\"當地的起司和麵包\",\"在城裡逛街購物\"]（原 [\"古老的建築，尤其是王室的城堡\",\"當地的食物，尤其是起司和麵包\",\"購物\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"在國外；到國外\"（原 \"到國外；在國外\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"建築學；建築風格\"（原 \"建築（風格）；建築學\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：abroad、royal 放不進 the side ____ 名詞位置，改本單元名詞 bench、statue，成四選項同詞性",
+        "resolution": "改為 [\"bench\", \"entrance\", \"statue\", \"architecture\"]（原 [\"abroad\", \"entrance\", \"royal\", \"architecture\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：abroad、royal 放不進 the side ____ 名詞位置，改本單元名詞 bench、statue，成四選項同詞性",
+        "resolution": "改為 [\"長椅\", \"入口\", \"雕像\", \"建築\"]（原 [\"到國外\", \"入口\", \"王室的\", \"建築\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

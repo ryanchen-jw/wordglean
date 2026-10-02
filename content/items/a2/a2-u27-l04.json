@@ -168,16 +168,16 @@
       "stemEn": "Big dogs ____ my little brother.",
       "stemZh": "大狗會把我弟弟嚇壞。",
       "options": [
-        "uneasy",
+        "invent",
         "pity",
         "terrify",
-        "lively"
+        "regret"
       ],
       "optionGlossZh": [
-        "不安的",
-        "可惜",
+        "發明",
+        "同情",
         "使非常害怕",
-        "有活力的"
+        "後悔"
       ],
       "answer": 2
     },
@@ -296,6 +296,30 @@
         "message": "執行長第②③關裁示修正：配合例句修改",
         "resolution": "改為 \"我們班有很多活潑的學生。\"（原 \"我們這條街晚上很熱鬧。\"）",
         "resolvedAt": "2026-10-02T18:32:44Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：uneasy、lively 放不進 Big dogs ___ my brother，改本單元動詞 confuse、regret",
+        "resolution": "改為 [\"confuse\", \"pity\", \"terrify\", \"regret\"]（原 [\"uneasy\", \"pity\", \"terrify\", \"lively\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：uneasy、lively 放不進 Big dogs ___ my brother，改本單元動詞 confuse、regret",
+        "resolution": "改為 [\"使困惑\", \"同情\", \"使非常害怕\", \"後悔\"]（原 [\"不安的\", \"可惜\", \"使非常害怕\", \"有活力的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Big dogs confuse my little brother.」完全成立，confuse 換成 invent，「大狗發明我弟弟」語意不通",
+        "resolution": "改為 [\"invent\", \"pity\", \"terrify\", \"regret\"]（原 [\"confuse\", \"pity\", \"terrify\", \"regret\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Big dogs confuse my little brother.」完全成立，confuse 換成 invent，「大狗發明我弟弟」語意不通",
+        "resolution": "改為 [\"發明\", \"同情\", \"使非常害怕\", \"後悔\"]（原 [\"使困惑\", \"同情\", \"使非常害怕\", \"後悔\"]）",
+        "resolvedAt": "2026-10-02T20:59:47Z"
       }
     ]
   }

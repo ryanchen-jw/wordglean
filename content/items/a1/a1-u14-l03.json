@@ -153,14 +153,14 @@
       "stemZh": "我們隊表現很好，贏了比賽。",
       "options": [
         "won",
-        "music",
-        "picture",
+        "caught",
+        "spent",
         "news"
       ],
       "optionGlossZh": [
         "贏",
-        "音樂",
-        "照片",
+        "接住",
+        "花（時間）",
         "新聞"
       ],
       "answer": 0
@@ -172,15 +172,15 @@
       "stemZh": "看這裡！我想幫你拍張照。",
       "options": [
         "star",
-        "news",
+        "poster",
         "picture",
-        "music"
+        "story"
       ],
       "optionGlossZh": [
         "明星",
-        "新聞",
+        "海報",
         "照片",
-        "音樂"
+        "故事"
       ],
       "answer": 2
     },
@@ -377,6 +377,30 @@
         "message": "執行長裁示：正解長度名次分布：a1-u14-l03-q15#0 目標第 1 長、消除單題異常值（改了選項 2、3）",
         "resolution": "改為 [\"一位知名的足球員\",\"他和教練的合照\",\"他的隊友們\"]（原 [\"一位知名的足球員\",\"他和教練、隊友的合照\",\"他的隊友\"]）",
         "resolvedAt": "2026-10-02T18:37:43Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：music 與 q14 共用、picture 是 q14 正解，換過去式動詞 caught/spent，兩個可放進空格",
+        "resolution": "改為 [\"won\", \"caught\", \"spent\", \"news\"]（原 [\"won\", \"music\", \"picture\", \"news\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：music 與 q14 共用、picture 是 q14 正解，換過去式動詞 caught/spent，兩個可放進空格",
+        "resolution": "改為 [\"贏\", \"接住\", \"花（時間）\", \"新聞\"]（原 [\"贏\", \"音樂\", \"照片\", \"新聞\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：news/music 與 q13 共用且不可數放不進 a ____，換可數名詞 poster/story",
+        "resolution": "改為 [\"star\", \"poster\", \"picture\", \"story\"]（原 [\"star\", \"news\", \"picture\", \"music\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：news/music 與 q13 共用且不可數放不進 a ____，換可數名詞 poster/story",
+        "resolution": "改為 [\"明星\", \"海報\", \"照片\", \"故事\"]（原 [\"明星\", \"新聞\", \"照片\", \"音樂\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

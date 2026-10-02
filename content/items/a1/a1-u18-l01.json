@@ -107,7 +107,7 @@
       "word": "memory",
       "exampleEn": "I have happy memories of my school days.",
       "exampleZh": "我有求學時期的快樂回憶。",
-      "glossZh": "記憶；回憶",
+      "glossZh": "回憶；記憶",
       "distractorsZh": [
         "夢想",
         "計畫",
@@ -151,13 +151,13 @@
       "stemEn": "I ____ sick today. I want to stay in bed.",
       "stemZh": "我今天覺得不舒服，想待在床上。",
       "options": [
-        "hope",
+        "like",
         "believe",
         "feel",
         "memory"
       ],
       "optionGlossZh": [
-        "希望",
+        "喜歡",
         "相信",
         "覺得",
         "回憶"
@@ -172,14 +172,14 @@
       "options": [
         "hope",
         "character",
-        "happy",
-        "believe"
+        "money",
+        "music"
       ],
       "optionGlossZh": [
         "希望",
         "個性",
-        "開心的",
-        "相信"
+        "錢",
+        "音樂"
       ],
       "answer": 0
     },
@@ -353,6 +353,36 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「跟孫子們玩的時候」由位置 1 移到 0（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:45:33Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
+        "resolution": "改為 \"回憶；記憶\"（原 \"記憶；回憶\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hope 是 q14 正解改 like；believe 留本題、q14 改掉",
+        "resolution": "改為 [\"like\", \"believe\", \"feel\", \"memory\"]（原 [\"hope\", \"believe\", \"feel\", \"memory\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hope 是 q14 正解改 like；believe 留本題、q14 改掉",
+        "resolution": "改為 [\"喜歡\", \"相信\", \"覺得\", \"回憶\"]（原 [\"希望\", \"相信\", \"覺得\", \"回憶\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：believe 與 q13 共用、happy 放不進空格，改名詞 money、music，使本題四選項同為名詞",
+        "resolution": "改為 [\"hope\", \"character\", \"money\", \"music\"]（原 [\"hope\", \"character\", \"happy\", \"believe\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：believe 與 q13 共用、happy 放不進空格，改名詞 money、music，使本題四選項同為名詞",
+        "resolution": "改為 [\"希望\", \"個性\", \"錢\", \"音樂\"]（原 [\"希望\", \"個性\", \"開心的\", \"相信\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

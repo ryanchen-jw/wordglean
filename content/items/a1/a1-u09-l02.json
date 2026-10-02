@@ -151,15 +151,15 @@
       "stemEn": "This ____ has two pockets.",
       "stemZh": "這件襯衫有兩個口袋。",
       "options": [
-        "tall",
+        "hat",
         "shirt",
-        "fat",
+        "shoe",
         "clothes"
       ],
       "optionGlossZh": [
-        "高的",
+        "帽子",
         "襯衫",
-        "胖的",
+        "鞋子",
         "衣服"
       ],
       "answer": 1
@@ -170,15 +170,15 @@
       "stemEn": "He is very ____, so his bed is very long.",
       "stemZh": "他很高，所以他的床很長。",
       "options": [
-        "hat",
+        "kind",
         "fat",
-        "pocket",
+        "pretty",
         "tall"
       ],
       "optionGlossZh": [
-        "帽子",
+        "親切的",
         "胖的",
-        "口袋",
+        "漂亮的",
         "高的"
       ],
       "answer": 3
@@ -369,6 +369,30 @@
         "message": "執行長第②③關裁示修正：G1 正解位置改以 sha256(題位 id) 各題位獨立抽取",
         "resolution": "正解「白色」由位置 1 移到 2（選項集合不變；審題員判題索引同步重對應）",
         "resolvedAt": "2026-10-02T12:40:42Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：tall 是 q14 正解、fat 與 q14 共用，換 hat/shoe（可放進 This ____ has）",
+        "resolution": "改為 [\"hat\", \"shirt\", \"shoe\", \"clothes\"]（原 [\"tall\", \"shirt\", \"fat\", \"clothes\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：tall 是 q14 正解、fat 與 q14 共用，換 hat/shoe（可放進 This ____ has）",
+        "resolution": "改為 [\"帽子\", \"襯衫\", \"鞋子\", \"衣服\"]（原 [\"高的\", \"襯衫\", \"胖的\", \"衣服\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：hat/pocket 是名詞放不進 very ____，換 kind/pretty，四項皆形容詞",
+        "resolution": "改為 [\"kind\", \"fat\", \"pretty\", \"tall\"]（原 [\"hat\", \"fat\", \"pocket\", \"tall\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/13/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：hat/pocket 是名詞放不進 very ____，換 kind/pretty，四項皆形容詞",
+        "resolution": "改為 [\"親切的\", \"胖的\", \"漂亮的\", \"高的\"]（原 [\"帽子\", \"胖的\", \"口袋\", \"高的\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }

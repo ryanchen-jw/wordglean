@@ -66,8 +66,8 @@
       "id": "a1-u19-l03-q05",
       "type": "wordCard",
       "word": "around",
-      "exampleEn": "We walk around the park.",
-      "exampleZh": "我們繞著公園走。",
+      "exampleEn": "There are tall trees around the house.",
+      "exampleZh": "房子周圍有高大的樹。",
       "glossZh": "在⋯周圍；繞著",
       "distractorsZh": [
         "穿過",
@@ -107,7 +107,7 @@
       "word": "yet",
       "exampleEn": "I have not finished my homework yet.",
       "exampleZh": "我還沒寫完功課。",
-      "glossZh": "（否定句）還；尚",
+      "glossZh": "還；尚（用於否定句）",
       "distractorsZh": [
         "已經",
         "剛剛",
@@ -152,13 +152,13 @@
       "stemZh": "你準備好了嗎？還沒。",
       "options": [
         "yet",
-        "both",
+        "off",
         "around",
         "under"
       ],
       "optionGlossZh": [
         "還",
-        "兩者都",
+        "關著的",
         "周圍",
         "在⋯下面"
       ],
@@ -286,6 +286,36 @@
         "message": "執行長第②③關裁示修正：第③關 D2：參考答案要說「你有」",
         "resolution": "改前：\"There are a lot of trees near my home.\"；改後：\"I have a lot of toy cars.\"",
         "resolvedAt": "2026-10-02T13:22:32Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 around＝在⋯周圍；與 q15 閱讀繞街區遛狗換了主詞＋情境＋句型",
+        "resolution": "改為 \"There are tall trees around the house.\"（原 \"We walk around the park.\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 around＝在⋯周圍；與 q15 閱讀繞街區遛狗換了主詞＋情境＋句型",
+        "resolution": "改為 \"房子周圍有高大的樹。\"（原 \"我們繞著公園走。\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
+        "resolution": "改為 \"還；尚（用於否定句）\"（原 \"（否定句）還；尚\"）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/options",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：both 是 q14 正解改 off（避開 really 也通）",
+        "resolution": "改為 [\"yet\", \"off\", \"around\", \"under\"]（原 [\"yet\", \"both\", \"around\", \"under\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/12/optionGlossZh",
+        "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：both 是 q14 正解改 off（避開 really 也通）",
+        "resolution": "改為 [\"還\", \"關著的\", \"周圍\", \"在⋯下面\"]（原 [\"還\", \"兩者都\", \"周圍\", \"在⋯下面\"]）",
+        "resolvedAt": "2026-10-02T20:32:34Z"
       }
     ]
   }
