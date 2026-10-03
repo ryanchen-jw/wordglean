@@ -7,7 +7,8 @@
 | 路徑 | 授權 |
 |---|---|
 | `schema/`、`scripts/`、`test/` | AGPL-3.0（程式碼，同 repo 根 `LICENSE`） |
-| `curriculum/*.json`、`curriculum/STATS.md`、`placement/placement.json`（及日後的題庫 JSON） | 衍生自 lexicon 的級距與多益旗標，**依 `data/LICENSES.md` 各來源條款**（CEFR-J 衍生級距適用 CEFR-J 條款、不是 CC BY-SA；Octanove、TSL／NGSL 為 CC BY-SA 4.0） |
+| `items/`（題庫 JSON） | 一律 **CC BY-SA 4.0**（同 repo 根 `NOTICE` 與 `content/README.md`） |
+| `curriculum/*.json`、`curriculum/STATS.md`、`placement/placement.json`（課綱與分級題本） | 衍生自 lexicon 的級距與多益旗標，**依 `data/LICENSES.md` 各來源條款**（CEFR-J 衍生級距適用 CEFR-J 條款、不是 CC BY-SA；Octanove、TSL／NGSL 為 CC BY-SA 4.0） |
 
 不要把課綱資料寫死成單一授權；整體授權表述待創辦人裁示後以 `data/LICENSES.md` 為準。
 
