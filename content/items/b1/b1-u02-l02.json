@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u02-l02",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:56:24Z",
+  "properNouns": [
+    "Kenting",
+    "Tom",
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "b1-u02-l02-q01",
+      "type": "wordCard",
+      "word": "sometimes",
+      "exampleEn": "I sometimes walk to work when the weather is nice.",
+      "exampleZh": "天氣好的時候，我有時候會走路上班。",
+      "glossZh": "有時候",
+      "distractorsZh": [
+        "總是",
+        "從不",
+        "永遠"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q02",
+      "type": "wordCard",
+      "word": "season",
+      "exampleEn": "Summer is the busiest season for hotels in Kenting.",
+      "exampleZh": "夏天是墾丁飯店最忙的季節。",
+      "glossZh": "季節",
+      "distractorsZh": [
+        "月份",
+        "假期",
+        "週末"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q03",
+      "type": "wordCard",
+      "word": "current",
+      "exampleEn": "What is your current address?",
+      "exampleZh": "你目前的地址是什麼？",
+      "glossZh": "目前的；現在的",
+      "distractorsZh": [
+        "以前的",
+        "未來的",
+        "每年的"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q04",
+      "type": "wordCard",
+      "word": "suddenly",
+      "exampleEn": "Suddenly, all the lights in the office went out.",
+      "exampleZh": "突然間，辦公室所有的燈都熄了。",
+      "glossZh": "突然",
+      "distractorsZh": [
+        "慢慢地",
+        "最後",
+        "定期地"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q05",
+      "type": "wordCard",
+      "word": "eventually",
+      "exampleEn": "After waiting for an hour, we eventually got a table.",
+      "exampleZh": "等了一個小時後，我們終於有位子了。",
+      "glossZh": "最後；終於",
+      "distractorsZh": [
+        "首先",
+        "突然",
+        "有時"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q06",
+      "type": "wordCard",
+      "word": "immediately",
+      "exampleEn": "Please call me immediately if the package arrives.",
+      "exampleZh": "包裹一到，請立刻打電話給我。",
+      "glossZh": "立刻；馬上",
+      "distractorsZh": [
+        "最後",
+        "偶爾",
+        "稍後"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q07",
+      "type": "wordCard",
+      "word": "previous",
+      "exampleEn": "The previous owner of this car took good care of it.",
+      "exampleZh": "這輛車的前任車主很愛惜它。",
+      "glossZh": "先前的；上一個",
+      "distractorsZh": [
+        "下一個",
+        "目前的",
+        "最後的"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q08",
+      "type": "wordCard",
+      "word": "annual",
+      "exampleEn": "The annual sale starts next Monday.",
+      "exampleZh": "年度特賣下星期一開始。",
+      "glossZh": "每年的；年度的",
+      "distractorsZh": [
+        "每月的",
+        "每週的",
+        "臨時的"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "The train stopped suddenly, and everyone looked up from their phones.",
+      "sentenceZh": "火車突然停下來，大家都從手機上抬起頭來。"
+    },
+    {
+      "id": "b1-u02-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Our previous office was small, but the current one has a big kitchen.",
+      "audioZh": "我們先前的辦公室很小，但現在這間有一個大廚房。",
+      "questionZh": "說話者現在的辦公室有什麼？",
+      "options": [
+        "Two meeting rooms.",
+        "A small kitchen.",
+        "A big garden.",
+        "A big kitchen."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u02-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "The company's annual party is usually held in December.",
+      "sentenceZh": "公司的年度派對通常在十二月舉行。"
+    },
+    {
+      "id": "b1-u02-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "The team worked hard and eventually finished the job.",
+      "sentenceZh": "這個團隊很努力，最後完成了工作。"
+    },
+    {
+      "id": "b1-u02-l02-q13",
+      "type": "mcq",
+      "stemEn": "When the fire alarm rang, everyone left the building ____.",
+      "stemZh": "火災警報響起時，大家立刻離開了大樓。",
+      "options": [
+        "sometimes",
+        "immediately",
+        "lately",
+        "annually"
+      ],
+      "optionGlossZh": [
+        "有時候",
+        "立刻",
+        "最近",
+        "每年"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u02-l02-q14",
+      "type": "mcq",
+      "stemEn": "Spring is my favorite ____ because the weather is warm.",
+      "stemZh": "春天是我最喜歡的季節，因為天氣很溫暖。",
+      "options": [
+        "deadline",
+        "month",
+        "season",
+        "weekend"
+      ],
+      "optionGlossZh": [
+        "截止期限",
+        "月份",
+        "季節",
+        "週末"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u02-l02-q15",
+      "type": "reading",
+      "passageEn": "Tom's company holds its annual meeting every December, the busiest season of the year. This year, his manager suddenly had to fly to Japan, so Tom had to lead the meeting. Tom sometimes feels nervous in front of many people, so he immediately read the notes from the previous meeting and practiced at home. The meeting went well, and eventually his manager called to thank him. Tom now enjoys his current job even more.",
+      "passageZh": "Tom 的公司每年十二月舉行年度會議，那是一年中最忙的季節。今年他的經理突然必須飛去日本，所以 Tom 得主持會議。Tom 在很多人面前有時候會緊張，所以他立刻讀了上次會議的筆記，並在家裡練習。會議很順利，最後經理打電話來謝謝他。Tom 現在更喜歡他目前的工作了。",
+      "questions": [
+        {
+          "questionZh": "Tom 為什麼要主持會議？",
+          "options": [
+            "經理請了假在家休息",
+            "經理突然要飛去日本",
+            "他自己想試試看",
+            "同事們全都去旅行了"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Tom 怎麼準備這場會議？",
+          "options": [
+            "請經理一步一步教他",
+            "讀上次會議筆記，在家練習",
+            "每天和同事一起練習報告",
+            "上網找別人做過的報告來看"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q16",
+      "type": "translate",
+      "promptZh": "他昨天聽到消息後，立刻回家了。",
+      "hintWords": [
+        "immediately"
+      ],
+      "referenceEn": [
+        "He went home immediately after he heard the news yesterday.",
+        "After hearing the news yesterday, he immediately went home."
+      ],
+      "rubricZh": [
+        "immediately 表示「立刻」，可放在動詞前、句尾或句首（例如 Immediately after…）",
+        "「聽到消息後」可用 after＋子句或 after＋動名詞（例如 after he heard、after hearing）",
+        "昨天的事用過去式（例如 went、heard）"
+      ]
+    },
+    {
+      "id": "b1-u02-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "sometimes",
+      "instructionZh": "用 sometimes 造一個句子，說說一件你有時候會做的事。",
+      "referenceEn": [
+        "I sometimes cook dinner for my family.",
+        "Sometimes I read in bed until midnight."
+      ],
+      "rubricZh": [
+        "sometimes 表示「有時候」",
+        "可放在一般動詞前、be 動詞後或句首（例如 I sometimes cook、Sometimes I go…）",
+        "說習慣多用現在簡單式，其他合理時態也接受",
+        "主詞是自己（I）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:30:18Z",
+    "verdicts": {
+      "b1-u02-l02-q10": [
+        3
+      ],
+      "b1-u02-l02-q13": [
+        1
+      ],
+      "b1-u02-l02-q14": [
+        2
+      ],
+      "b1-u02-l02-q15#0": [
+        1
+      ],
+      "b1-u02-l02-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：要點補上 immediately 可放句首",
+        "resolution": "改前：\"immediately 表示「立刻」，可放在動詞前或句尾\"；改後：\"immediately 表示「立刻」，可放在動詞前、句尾或句首（例如 Immediately after…）\"",
+        "resolvedAt": "2026-10-02T15:35:54Z"
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：參考答案 2 和單字卡 sometimes 例句主詞、句型相近，換情境",
+        "resolution": "改前：\"Sometimes I go to the gym after work.\"；改後：\"Sometimes I read in bed until midnight.\"",
+        "resolvedAt": "2026-10-02T15:35:54Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正：執行長裁示（b2b1）：評分要點不寫死時態，題目沒有時間標記時收所有合理時態",
+        "resolution": "改前：\"說的是習慣，用現在簡單式\"；改後：\"說習慣多用現在簡單式，其他合理時態也接受\"",
+        "resolvedAt": "2026-10-02T15:43:43Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"經理請假在家休息\"；改後：\"經理請了假在家休息\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"同事們都去旅行了\"；改後：\"同事們全都去旅行了\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"請經理教他\"；改後：\"請經理一步一步教他\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"讀上次會議的筆記並在家練習\"；改後：\"讀上次會議筆記，在家練習\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"和同事一起練習\"；改後：\"每天和同事一起練習報告\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"上網找別人的報告\"；改後：\"上網找別人做過的報告來看\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：address、office 與題意無關，換 month、weekend",
+        "resolution": "改前：\"address\"；改後：\"deadline\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：address、office 與題意無關，換 month、weekend",
+        "resolution": "改前：\"deadline\"；改後：\"month\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：address、office 與題意無關，換 month、weekend",
+        "resolution": "改前：\"office\"；改後：\"weekend\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：address、office 與題意無關，換 month、weekend",
+        "resolution": "改前：\"地址\"；改後：\"截止期限\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：address、office 與題意無關，換 month、weekend",
+        "resolution": "改前：\"截止期限\"；改後：\"月份\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：address、office 與題意無關，換 month、weekend",
+        "resolution": "改前：\"辦公室\"；改後：\"週末\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"最後；終於\"；改後：\"終於；最後\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"終於；最後\"；改後：\"最後；終於\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u20-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:10:57Z",
+  "properNouns": [
+    "Rosa"
+  ],
+  "items": [
+    {
+      "id": "b1-u20-l01-q01",
+      "type": "wordCard",
+      "word": "clinic",
+      "exampleEn": "There is a small clinic next to the school.",
+      "exampleZh": "學校旁邊有一間小診所。",
+      "glossZh": "診所",
+      "distractorsZh": [
+        "銀行",
+        "書店",
+        "郵局"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q02",
+      "type": "wordCard",
+      "word": "prescription",
+      "exampleEn": "This medicine is only sold with a prescription.",
+      "exampleZh": "這種藥只憑處方販售。",
+      "glossZh": "處方；處方箋",
+      "distractorsZh": [
+        "收據",
+        "帳單",
+        "地圖"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q03",
+      "type": "wordCard",
+      "word": "fitness",
+      "exampleEn": "The hotel has a fitness room on the top floor.",
+      "exampleZh": "飯店頂樓有一間健身房。",
+      "glossZh": "健身；體能",
+      "distractorsZh": [
+        "財富",
+        "名聲",
+        "運氣"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q04",
+      "type": "wordCard",
+      "word": "flu",
+      "exampleEn": "Many students were absent because of the flu.",
+      "exampleZh": "很多學生因為流感請假。",
+      "glossZh": "流行性感冒；流感",
+      "distractorsZh": [
+        "颱風",
+        "考試",
+        "假期"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q05",
+      "type": "wordCard",
+      "word": "yoga",
+      "exampleEn": "A new yoga studio opened near the station.",
+      "exampleZh": "車站附近新開了一間瑜伽教室。",
+      "glossZh": "瑜伽",
+      "distractorsZh": [
+        "游泳",
+        "跑步",
+        "跳舞"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q06",
+      "type": "wordCard",
+      "word": "pharmacy",
+      "exampleEn": "The pharmacy on the corner is open until ten.",
+      "exampleZh": "轉角的藥局開到十點。",
+      "glossZh": "藥局；藥房",
+      "distractorsZh": [
+        "麵包店",
+        "書店",
+        "銀行"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q07",
+      "type": "wordCard",
+      "word": "disable",
+      "exampleEn": "You can disable the sound on your phone in the settings.",
+      "exampleZh": "你可以在設定裡關閉手機的聲音。",
+      "glossZh": "停用；關閉；使失去功能",
+      "distractorsZh": [
+        "修理",
+        "購買",
+        "下載"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q08",
+      "type": "wordCard",
+      "word": "foot",
+      "exampleEn": "These new shoes hurt my left foot.",
+      "exampleZh": "這雙新鞋讓我的左腳很痛。",
+      "glossZh": "腳",
+      "distractorsZh": [
+        "手",
+        "頭",
+        "背"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q09",
+      "type": "wordCard",
+      "word": "treatment",
+      "exampleEn": "The hospital offers free treatment to children.",
+      "exampleZh": "這家醫院為兒童提供免費治療。",
+      "glossZh": "治療；對待",
+      "distractorsZh": [
+        "午餐",
+        "課程",
+        "玩具"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "The clinic opens at nine on Saturdays.",
+      "sentenceZh": "這間診所星期六九點開門。"
+    },
+    {
+      "id": "b1-u20-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "Our yoga class moves to Room 5 next week because the floor in Room 2 is being fixed.",
+      "audioZh": "因為 2 號教室的地板在修，我們的瑜伽課下週改到 5 號教室。",
+      "questionZh": "下週的瑜伽課在哪裡上？",
+      "options": [
+        "In the park outside.",
+        "In Room 2.",
+        "In Room 5.",
+        "In the gym downstairs."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u20-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Wash your hands often during flu season.",
+      "sentenceZh": "流感季節要常洗手。"
+    },
+    {
+      "id": "b1-u20-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "My little brother can stand on one foot for a minute.",
+      "sentenceZh": "我弟弟可以單腳站一分鐘。"
+    },
+    {
+      "id": "b1-u20-l01-q14",
+      "type": "mcq",
+      "stemEn": "You can buy medicine at the ____ next to the station.",
+      "stemZh": "你可以在車站旁邊的藥局買藥。",
+      "options": [
+        "pharmacy",
+        "fitness",
+        "yoga",
+        "treatment"
+      ],
+      "optionGlossZh": [
+        "藥局",
+        "體能",
+        "瑜伽",
+        "治療"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u20-l01-q15",
+      "type": "mcq",
+      "stemEn": "This button will ____ the alarm for ten minutes.",
+      "stemZh": "這個按鈕會讓警報停用十分鐘。",
+      "options": [
+        "promote",
+        "clinic",
+        "examine",
+        "disable"
+      ],
+      "optionGlossZh": [
+        "推廣",
+        "診所",
+        "檢查",
+        "停用"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u20-l01-q16",
+      "type": "reading",
+      "passageEn": "Last winter, Rosa caught the flu and stayed home for a week. When she felt better, she visited a small clinic near her apartment, and the doctor wrote her a prescription. She picked up the medicine at the pharmacy downstairs. Later, to improve her fitness, she joined a yoga class. The teacher showed her how to stand on one foot. She also gets treatment for her back once a month. She takes public transport to the class because parking is hard to find.",
+      "passageZh": "去年冬天，Rosa 得了流感，在家休息了一個星期。好一點之後，她去了公寓附近的一間小診所，醫生幫她開了處方。她在樓下的藥局拿了藥。後來，為了增強體能，她報名了瑜伽課。老師教她怎麼單腳站立。她每個月也會去做一次背部的治療。她搭大眾運輸去上課，因為停車位很難找。",
+      "questions": [
+        {
+          "questionZh": "Rosa 在哪裡拿藥？",
+          "options": [
+            "醫院的一樓",
+            "診所的櫃台",
+            "樓下的藥局",
+            "公司附近的藥局"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "Rosa 為什麼參加瑜伽課？",
+          "options": [
+            "為了交新朋友",
+            "為了增強體能",
+            "醫生要她去",
+            "公司同事一起報名的"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q17",
+      "type": "translate",
+      "promptZh": "我得了流感，今天不能去上班。",
+      "hintWords": [
+        "flu"
+      ],
+      "referenceEn": [
+        "I have the flu, so I can't go to work today.",
+        "I've got the flu and can't go to work today."
+      ],
+      "rubricZh": [
+        "flu 表示「流感」，例如 have the flu、get the flu 等說法",
+        "「不能去上班」可寫，例如 can't go to work 等",
+        "時態配合內容（多用現在式）"
+      ]
+    },
+    {
+      "id": "b1-u20-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "yoga",
+      "instructionZh": "用 yoga 造一個句子，說說你做瑜伽的習慣或看法。",
+      "referenceEn": [
+        "I do yoga for twenty minutes before bed.",
+        "I think yoga is a good way to relax."
+      ],
+      "rubricZh": [
+        "yoga 表示「瑜伽」，是不可數名詞，例如 do yoga、a yoga class 等說法",
+        "說的是自己的習慣或看法（例如 I、my）",
+        "時態配合內容（例如現在簡單式、現在完成式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u20-l01-q11": [
+        2
+      ],
+      "b1-u20-l01-q14": [
+        0
+      ],
+      "b1-u20-l01-q15": [
+        3
+      ],
+      "b1-u20-l01-q16#0": [
+        2
+      ],
+      "b1-u20-l01-q16#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/2/glossZh",
+        "message": "B1 第 3 批審查裁示修正：第②關：例句是健身房，釋義改「健身；體能」",
+        "resolution": "改前：\"健康；體能\"；改後：\"健身；體能\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/15/passageEn",
+        "message": "B1 第 3 批審查裁示修正：第②關：back treatment 不自然，改 gets treatment for her back",
+        "resolution": "改前：\"Last winter, Rosa caught the flu and stayed home for a week. When she felt better, she visited a small clinic near her apartment, and the doctor wrote her a prescription. She picked up the medicine at the pharmacy downstairs. Later, to improve her fitness, she joined a yoga class. The teacher showed her how to stand on one foot. She also goes for a back treatment once a month. She takes public transport to the class because parking is hard to find.\"；改後：\"Last winter, Rosa caught the flu and stayed home for a week. When she felt better, she visited a small clinic near her apartment, and the doctor wrote her a prescription. She picked up the medicine at the pharmacy downstairs. Later, to improve her fitness, she joined a yoga class. The teacher showed her how to stand on one foot. She also gets treatment for her back once a month. She takes public transport to the class because parking is hard to find.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/17/referenceEn/0",
+        "message": "B1 第 3 批審查裁示修正：第③關 FIX（§11.17）：參考答案 1 是願望，改 I do yoga for twenty minutes before bed.",
+        "resolution": "改前：\"I have never tried yoga, but I want to.\"；改後：\"I do yoga for twenty minutes before bed.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/6",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似 S8：不改——disable 教「停用」義可避開敏感題材，審查員也建議維持",
+        "resolution": "不改（理由見說明）",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：prescription、flu 換成 u03 學過的動詞 promote、examine",
+        "resolution": "改前：\"flu\"；改後：\"promote\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/14/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：prescription、flu 換成 u03 學過的動詞 promote、examine",
+        "resolution": "改前：\"prescription\"；改後：\"fitness\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/14/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：prescription、flu 換成 u03 學過的動詞 promote、examine",
+        "resolution": "改前：\"fitness\"；改後：\"examine\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：prescription、flu 換成 u03 學過的動詞 promote、examine",
+        "resolution": "改前：\"流感\"；改後：\"推廣\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：prescription、flu 換成 u03 學過的動詞 promote、examine",
+        "resolution": "改前：\"處方\"；改後：\"體能\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：prescription、flu 換成 u03 學過的動詞 promote、examine",
+        "resolution": "改前：\"體能\"；改後：\"檢查\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/14/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：fitness→clinic",
+        "resolution": "改前：\"fitness\"；改後：\"clinic\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：fitness→clinic",
+        "resolution": "改前：\"體能\"；改後：\"診所\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "B1 第 3 批審查裁示修正：情境對照表重判（§11.4）：單字卡與造句都是「做瑜伽的習慣」，改 Yoga mats are on sale this week.",
+        "resolution": "改前：\"My mother does yoga every morning.\"；改後：\"Yoga mats are on sale this week.\"",
+        "resolvedAt": "2026-10-02T19:48:03Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "B1 第 3 批審查裁示修正：情境對照表重判（§11.4）：單字卡與造句都是「做瑜伽的習慣」，改 Yoga mats are on sale this week.",
+        "resolution": "改前：\"我媽媽每天早上做瑜伽。\"；改後：\"瑜伽墊這週特價。\"",
+        "resolvedAt": "2026-10-02T19:48:03Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "B1 第 3 批審查裁示修正：情境對照表重判（§11.4）：單字卡與造句都是「做瑜伽的習慣」，改 Yoga mats are on sale this week.",
+        "resolution": "改前：\"Yoga mats are on sale this week.\"；改後：\"A new yoga studio opened near the station.\"",
+        "resolvedAt": "2026-10-02T19:48:09Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "B1 第 3 批審查裁示修正：情境對照表重判（§11.4）：單字卡與造句都是「做瑜伽的習慣」，改 Yoga mats are on sale this week.",
+        "resolution": "改前：\"瑜伽墊這週特價。\"；改後：\"車站附近新開了一間瑜伽教室。\"",
+        "resolvedAt": "2026-10-02T19:48:09Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"流行性感冒；流感\"；改後：\"流感；流行性感冒\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"使失去功能；停用；關閉\"；改後：\"關閉；使失去功能；停用\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"流感；流行性感冒\"；改後：\"流行性感冒；流感\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"關閉；使失去功能；停用\"；改後：\"停用；關閉；使失去功能\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      }
+    ]
+  }
+}

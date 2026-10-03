@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u37-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T22:18:40Z",
+  "properNouns": [
+    "Amy"
+  ],
+  "items": [
+    {
+      "id": "b1-u37-l01-q01",
+      "type": "wordCard",
+      "word": "scary",
+      "exampleEn": "Some kids find thunder scary.",
+      "exampleZh": "有些小孩覺得打雷很可怕。",
+      "glossZh": "可怕的；嚇人的",
+      "distractorsZh": [
+        "好笑的",
+        "感人的",
+        "無聊的"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q02",
+      "type": "wordCard",
+      "word": "rage",
+      "exampleEn": "He was shaking with rage.",
+      "exampleZh": "他憤怒得發抖。",
+      "glossZh": "憤怒；盛怒",
+      "distractorsZh": [
+        "恐懼",
+        "寒冷",
+        "興奮"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q03",
+      "type": "wordCard",
+      "word": "hopefully",
+      "exampleEn": "We'll arrive by noon, hopefully.",
+      "exampleZh": "希望我們中午前能到。",
+      "glossZh": "但願；希望",
+      "distractorsZh": [
+        "可惜",
+        "顯然",
+        "幸好"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q04",
+      "type": "wordCard",
+      "word": "ridiculous",
+      "exampleEn": "You look ridiculous in that giant hat.",
+      "exampleZh": "你戴那頂大帽子看起來好荒謬。",
+      "glossZh": "荒謬的；可笑的",
+      "distractorsZh": [
+        "時髦的",
+        "可愛的",
+        "正式的"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q05",
+      "type": "wordCard",
+      "word": "talented",
+      "exampleEn": "The school is looking for talented students to join the band.",
+      "exampleZh": "學校正在找有才華的學生加入樂團。",
+      "glossZh": "有才華的；有天賦的",
+      "distractorsZh": [
+        "有名的",
+        "害羞的",
+        "年老的"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q06",
+      "type": "wordCard",
+      "word": "glory",
+      "exampleEn": "The old palace still shows the glory of the past.",
+      "exampleZh": "那座古老的宮殿仍展現著昔日的榮耀。",
+      "glossZh": "榮耀；光榮",
+      "distractorsZh": [
+        "失望",
+        "沉默",
+        "疲憊"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q07",
+      "type": "wordCard",
+      "word": "calm",
+      "exampleEn": "My mom is always calm, even in an emergency.",
+      "exampleZh": "我媽媽總是很冷靜，即使遇到緊急狀況也一樣。",
+      "glossZh": "冷靜的；平靜的",
+      "distractorsZh": [
+        "緊張的",
+        "生氣的",
+        "興奮的"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q08",
+      "type": "wordCard",
+      "word": "discourage",
+      "exampleEn": "Don't let one bad grade discourage you.",
+      "exampleZh": "別讓一次考不好讓你洩氣。",
+      "glossZh": "使洩氣；勸阻",
+      "distractorsZh": [
+        "鼓勵",
+        "提醒",
+        "稱讚"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Hopefully, the bus won't be late today.",
+      "sentenceZh": "但願今天公車不會誤點。"
+    },
+    {
+      "id": "b1-u37-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "The sea was calm this morning, so we went out in a small boat.",
+      "audioZh": "今天早上海面很平靜，所以我們搭小船出海。",
+      "questionZh": "他們為什麼能搭小船出海？",
+      "options": [
+        "It was early.",
+        "A friend lent them a boat.",
+        "It was sunny.",
+        "The sea was calm."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u37-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "He was talented at drawing even as a child.",
+      "sentenceZh": "他從小就很有繪畫天分。"
+    },
+    {
+      "id": "b1-u37-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The rule sounds ridiculous to me.",
+      "sentenceZh": "這條規定在我聽來很荒謬。"
+    },
+    {
+      "id": "b1-u37-l01-q13",
+      "type": "mcq",
+      "stemEn": "The dark forest at night was really ____; my little brother cried.",
+      "stemZh": "夜晚漆黑的森林真的很可怕，我弟弟都哭了。",
+      "options": [
+        "scary",
+        "talented",
+        "persuasive",
+        "rational"
+      ],
+      "optionGlossZh": [
+        "可怕的",
+        "有才華的",
+        "有說服力的",
+        "理性的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u37-l01-q14",
+      "type": "mcq",
+      "stemEn": "The rain didn't ____ us from going hiking.",
+      "stemZh": "這場雨沒有讓我們打消去健行的念頭。",
+      "options": [
+        "glory",
+        "analyze",
+        "resolve",
+        "discourage"
+      ],
+      "optionGlossZh": [
+        "榮耀",
+        "分析",
+        "解決",
+        "使洩氣"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u37-l01-q15",
+      "type": "reading",
+      "passageEn": "Last month, my friend Amy took part in a city swimming race. She is a talented swimmer, but she was nervous. \"It's scary to swim in front of so many people,\" she said. I told her to stay calm and enjoy it. Some kids laughed at her ridiculous swimming cap with a big flower on it, but she didn't let them discourage her. When the race started, she swam beautifully. Her last turn was unbelievable. In the end, she won first prize and enjoyed her moment of glory. One boy who lost the race left in a rage, but later he said sorry. Hopefully, Amy will swim in the race again next year.",
+      "passageZh": "上個月，我的朋友 Amy 參加了全市的游泳比賽。她是一位很有天分的泳者，但她很緊張。她說：「在這麼多人面前游泳好可怕。」我叫她保持冷靜，好好享受。有些小孩笑她那頂上面有一朵大花的荒謬泳帽，但她沒讓他們打擊她的信心。比賽一開始，她就表現得非常出色。她最後一個轉身令人難以置信。最後，她得了第一名，享受了屬於她的榮耀時刻。一個比賽輸了的男生怒氣沖沖地離開，但後來他道歉了。希望 Amy 明年還會參加這場比賽。",
+      "questions": [
+        {
+          "questionZh": "Amy 為什麼緊張？",
+          "options": [
+            "前一天晚上完全沒有時間練習",
+            "擔心比賽那天的水會太冷",
+            "在很多人面前游泳很可怕",
+            "她的泳鏡在比賽前弄壞了"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "輸了比賽的男生後來怎麼做？",
+          "options": [
+            "後來道歉了",
+            "再也不來學校了",
+            "跟老師告狀說比賽不公平",
+            "向 Amy 要了簽名"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q16",
+      "type": "translate",
+      "promptZh": "希望明天會是晴天。",
+      "hintWords": [
+        "hopefully"
+      ],
+      "referenceEn": [
+        "Hopefully, it will be sunny tomorrow.",
+        "Hopefully, tomorrow will be sunny."
+      ],
+      "rubricZh": [
+        "hopefully 表示「但願、希望」，例如 Hopefully, … 等說法",
+        "時態配合內容（例如說未來的事用 will、be going to 等）"
+      ]
+    },
+    {
+      "id": "b1-u37-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "talented",
+      "instructionZh": "用 talented 造一個句子，說說一位你認識的有才華的人。",
+      "referenceEn": [
+        "My cousin is a talented piano player.",
+        "I think my best friend is very talented at drawing."
+      ],
+      "rubricZh": [
+        "talented 表示「有才華的」，例如 a talented singer 等說法",
+        "說的是自己認識的人（例如 my）",
+        "時態配合內容（例如現在簡單式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:46:56Z",
+    "verdicts": {
+      "b1-u37-l01-q10": [
+        3
+      ],
+      "b1-u37-l01-q13": [
+        0
+      ],
+      "b1-u37-l01-q14": [
+        3
+      ],
+      "b1-u37-l01-q15#0": [
+        2
+      ],
+      "b1-u37-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 18（我判照改）：球隊光榮返鄉與 u37-l03、l07 同屬球隊勝利，改成宮殿展現昔日榮耀",
+        "resolution": "改前：\"The team returned home in glory.\"；改後：\"The old palace still shows the glory of the past.\"",
+        "resolvedAt": "2026-10-02T23:02:52Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 18（我判照改）：球隊光榮返鄉與 u37-l03、l07 同屬球隊勝利，改成宮殿展現昔日榮耀",
+        "resolution": "改前：\"球隊光榮地返鄉。\"；改後：\"那座古老的宮殿仍展現著昔日的榮耀。\"",
+        "resolvedAt": "2026-10-02T23:02:52Z"
+      },
+      {
+        "path": "items/13/stemEn",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 17（我判照改）：卡、mcq、閱讀三處都是 let…discourage，mcq 改成勸阻義",
+        "resolution": "改前：\"The coach told us not to let one loss ____ us.\"；改後：\"The rain didn't ____ us from going hiking.\"",
+        "resolvedAt": "2026-10-02T23:02:52Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 17（我判照改）：卡、mcq、閱讀三處都是 let…discourage，mcq 改成勸阻義",
+        "resolution": "改前：\"教練告訴我們不要因為一場敗仗而洩氣。\"；改後：\"這場雨沒有讓我們打消去健行的念頭。\"",
+        "resolvedAt": "2026-10-02T23:02:52Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（說未來的事用 will）\"；改後：\"時態配合內容（例如說未來的事用 will、be going to 等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（多用現在簡單式）\"；改後：\"時態配合內容（例如現在簡單式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「電影恐怖到睡不著」與 mcq「森林可怕到弟弟哭了」同為可怕的東西引起害怕反應、句型相同；改成有些小孩覺得打雷可怕",
+        "resolution": "改前：\"The movie was so scary that I couldn't sleep.\"；改後：\"Some kids find thunder scary.\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「電影恐怖到睡不著」與 mcq「森林可怕到弟弟哭了」同為可怕的東西引起害怕反應、句型相同；改成有些小孩覺得打雷可怕",
+        "resolution": "改前：\"那部電影恐怖到我睡不著。\"；改後：\"有些小孩覺得打雷很可怕。\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 She is a talented young singer 與閱讀、造句 X is a talented dancer／piano player 句型相同、只換名詞；改成學校在找有才華的學生加入樂團",
+        "resolution": "改前：\"She is a talented young singer.\"；改後：\"The school is looking for talented students to join the band.\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 She is a talented young singer 與閱讀、造句 X is a talented dancer／piano player 句型相同、只換名詞；改成學校在找有才華的學生加入樂團",
+        "resolution": "改前：\"她是一位有才華的年輕歌手。\"；改後：\"學校正在找有才華的學生加入樂團。\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/8/sentenceEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：聽打「希望明年再見到你」與閱讀「希望 Amy 明年再…」同為 Hopefully … again next year，改成但願公車今天不誤點",
+        "resolution": "改前：\"Hopefully, we'll see you again next year.\"；改後：\"Hopefully, the bus won't be late today.\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/8/sentenceZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：聽打「希望明年再見到你」與閱讀「希望 Amy 明年再…」同為 Hopefully … again next year，改成但願公車今天不誤點",
+        "resolution": "改前：\"希望明年能再見到你。\"；改後：\"但願今天公車不會誤點。\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"Last month, our school held a talent show. My friend Amy is a talented dancer, but she was nervous. \\\"It's scary to dance in front of everyone,\\\" she said. I told her to stay calm and enjoy it. Some students laughed at her ridiculous clothes, but she didn't let them discourage her. When the music started, she danced beautifully. Her last move was unbelievable. In the end, she won first prize and enjoyed her moment of glory. One boy who lost the contest left in a rage, but later he said sorry. Hopefully, Amy will dance again next year.\"；改後：\"Last month, my friend Amy took part in a city swimming race. She is a talented swimmer, but she was nervous. \\\"It's scary to swim in front of so many people,\\\" she said. I told her to stay calm and enjoy it. Some kids laughed at her ridiculous swimming cap with a big flower on it, but she didn't let them discourage her. When the race started, she swam beautifully. Her last turn was unbelievable. In the end, she won first prize and enjoyed her moment of glory. One boy who lost the race left in a rage, but later he said sorry. Hopefully, Amy will swim in the race again next year.\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"上個月，我們學校舉辦了一場才藝表演。我的朋友 Amy 是一位很有才華的舞者，但她很緊張。她說：「在大家面前跳舞好可怕。」我叫她保持冷靜，好好享受。有些同學笑她那身荒謬的衣服，但她沒讓他們打擊她的信心。音樂一響，她就跳得非常美。她最後一個動作令人難以置信。最後，她得了第一名，享受了屬於她的榮耀時刻。一個比賽輸了的男生怒氣沖沖地離開，但後來他道歉了。希望 Amy 明年會再上台跳舞。\"；改後：\"上個月，我的朋友 Amy 參加了全市的游泳比賽。她是一位很有天分的泳者，但她很緊張。她說：「在這麼多人面前游泳好可怕。」我叫她保持冷靜，好好享受。有些小孩笑她那頂上面有一朵大花的荒謬泳帽，但她沒讓他們打擊她的信心。比賽一開始，她就游得非常漂亮。她最後一個轉身令人難以置信。最後，她得了第一名，享受了屬於她的榮耀時刻。一個比賽輸了的男生怒氣沖沖地離開，但後來他道歉了。希望 Amy 明年還會參加這場比賽。\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"擔心音樂會在中途突然停下來\"；改後：\"前一天晚上完全沒有時間練習\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"前一天晚上完全沒有時間練習\"；改後：\"擔心比賽那天的水會太冷\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"在大家面前跳舞很可怕\"；改後：\"在很多人面前游泳很可怕\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"她的鞋子在比賽前弄壞了\"；改後：\"她的泳鏡在比賽前弄壞了\"",
+        "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：才藝表演與 u37-l03 閱讀的班級話劇同為舞台演出，改成全市游泳比賽；第 1 小題同步",
+        "resolution": "改前：\"上個月，我的朋友 Amy 參加了全市的游泳比賽。她是一位很有天分的泳者，但她很緊張。她說：「在這麼多人面前游泳好可怕。」我叫她保持冷靜，好好享受。有些小孩笑她那頂上面有一朵大花的荒謬泳帽，但她沒讓他們打擊她的信心。比賽一開始，她就游得非常漂亮。她最後一個轉身令人難以置信。最後，她得了第一名，享受了屬於她的榮耀時刻。一個比賽輸了的男生怒氣沖沖地離開，但後來他道歉了。希望 Amy 明年還會參加這場比賽。\"；改後：\"上個月，我的朋友 Amy 參加了全市的游泳比賽。她是一位很有天分的泳者，但她很緊張。她說：「在這麼多人面前游泳好可怕。」我叫她保持冷靜，好好享受。有些小孩笑她那頂上面有一朵大花的荒謬泳帽，但她沒讓他們打擊她的信心。比賽一開始，她就表現得非常出色。她最後一個轉身令人難以置信。最後，她得了第一名，享受了屬於她的榮耀時刻。一個比賽輸了的男生怒氣沖沖地離開，但後來他道歉了。希望 Amy 明年還會參加這場比賽。\"",
+        "resolvedAt": "2026-10-02T23:38:45Z"
+      }
+    ]
+  }
+}

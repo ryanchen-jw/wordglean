@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u15-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T17:06:36Z",
+  "properNouns": [
+    "Brightway"
+  ],
+  "items": [
+    {
+      "id": "b1-u15-l01-q01",
+      "type": "wordCard",
+      "word": "consumption",
+      "exampleEn": "This new car has low fuel consumption.",
+      "exampleZh": "這輛新車很省油。",
+      "glossZh": "消耗（量）；消費",
+      "distractorsZh": [
+        "價格",
+        "品質",
+        "溫度"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q02",
+      "type": "wordCard",
+      "word": "merchant",
+      "exampleEn": "The merchant sold silk and spices to other countries.",
+      "exampleZh": "那位商人把絲綢和香料賣到其他國家。",
+      "glossZh": "商人",
+      "distractorsZh": [
+        "農夫",
+        "水手",
+        "士兵"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q03",
+      "type": "wordCard",
+      "word": "salesman",
+      "exampleEn": "The salesman showed us three different cars.",
+      "exampleZh": "那位業務員帶我們看了三輛不同的車。",
+      "glossZh": "推銷員；業務員",
+      "distractorsZh": [
+        "修車師傅",
+        "司機",
+        "警衛"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q04",
+      "type": "wordCard",
+      "word": "shopper",
+      "exampleEn": "The mall was full of shoppers on Saturday.",
+      "exampleZh": "星期六購物中心擠滿了購物的人。",
+      "glossZh": "購物者；顧客",
+      "distractorsZh": [
+        "遊客",
+        "學生",
+        "員工"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q05",
+      "type": "wordCard",
+      "word": "warranty",
+      "exampleEn": "The TV has a two-year warranty.",
+      "exampleZh": "這台電視有兩年保固。",
+      "glossZh": "保固；保證書",
+      "distractorsZh": [
+        "說明書",
+        "收據",
+        "折價券"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q06",
+      "type": "wordCard",
+      "word": "refund",
+      "exampleEn": "I asked for a refund because the shoes were too small.",
+      "exampleZh": "因為鞋子太小，我要求退款。",
+      "glossZh": "退款；退還",
+      "distractorsZh": [
+        "折扣",
+        "收據",
+        "禮物"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q07",
+      "type": "wordCard",
+      "word": "checkout",
+      "exampleEn": "There was a long line at the checkout.",
+      "exampleZh": "結帳櫃台大排長龍。",
+      "glossZh": "結帳櫃台；結帳",
+      "distractorsZh": [
+        "入口",
+        "停車場",
+        "電梯"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q08",
+      "type": "wordCard",
+      "word": "goods",
+      "exampleEn": "The ship carried goods from many different countries.",
+      "exampleZh": "那艘船載運來自許多不同國家的貨物。",
+      "glossZh": "商品；貨物",
+      "distractorsZh": [
+        "服務",
+        "廣告",
+        "員工"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Please keep your receipt if you want a refund.",
+      "sentenceZh": "如果你想退款，請保留收據。"
+    },
+    {
+      "id": "b1-u15-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "The printer is still under warranty, so the shop will repair it for free.",
+      "audioZh": "這台印表機還在保固期內，所以店家會免費修理。",
+      "questionZh": "店家為什麼會免費修理印表機？",
+      "options": [
+        "It is still under warranty.",
+        "It is the newest model in the shop.",
+        "The shop made a mistake with it.",
+        "The owner is a close friend of theirs."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u15-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "The salesman was polite but talked too much.",
+      "sentenceZh": "那位業務員很有禮貌，但話太多了。"
+    },
+    {
+      "id": "b1-u15-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Shoppers can pay at the self-service checkout.",
+      "sentenceZh": "購物者可以在自助結帳區付款。"
+    },
+    {
+      "id": "b1-u15-l01-q13",
+      "type": "mcq",
+      "stemEn": "If the shirt has a hole, you can return it and get a ____.",
+      "stemZh": "如果襯衫有破洞，你可以退貨並拿回退款。",
+      "options": [
+        "merchant",
+        "checkout",
+        "refund",
+        "shopper"
+      ],
+      "optionGlossZh": [
+        "商人",
+        "結帳櫃台",
+        "退款",
+        "購物者"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u15-l01-q14",
+      "type": "mcq",
+      "stemEn": "People here drink a lot of coffee, so coffee ____ is high.",
+      "stemZh": "這裡的人喝很多咖啡，所以咖啡的消費量很高。",
+      "options": [
+        "salesman",
+        "goods",
+        "consumption",
+        "warranty"
+      ],
+      "optionGlossZh": [
+        "業務員",
+        "商品",
+        "消費量",
+        "保固"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u15-l01-q15",
+      "type": "reading",
+      "passageEn": "Notice to all shoppers: From May 1, Brightway will open three new self-service checkouts. Our sales staff will still be happy to help you choose goods. All our televisions and fridges come with a one-year warranty. Our new fridges use less power, so your power consumption will go down. We also sell goods from local merchants. If you are not happy with an item, you can get a full refund within 30 days. Please keep your receipt.",
+      "passageZh": "各位顧客請注意：從 5 月 1 日起，Brightway 將新設三台自助結帳機。我們的銷售人員仍然很樂意協助您挑選商品。所有電視和冰箱都附一年保固。我們的新款冰箱比較省電，能降低您的用電量。我們也販售本地商人的商品。如果您對商品不滿意，30 天內可以全額退款。請保留您的收據。",
+      "questions": [
+        {
+          "questionZh": "對商品不滿意的話，多久內可以全額退款？",
+          "options": [
+            "7 天內",
+            "14 天內",
+            "30 天內",
+            "一年內"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "新款冰箱有什麼好處？",
+          "options": [
+            "比較省電",
+            "比較便宜",
+            "保固比較長",
+            "容量比較大"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q16",
+      "type": "translate",
+      "promptZh": "這家店的結帳櫃台在哪裡？",
+      "hintWords": [
+        "checkout"
+      ],
+      "referenceEn": [
+        "Where is the checkout in this shop?",
+        "Where can I find the checkout in this store?"
+      ],
+      "rubricZh": [
+        "checkout 表示「結帳櫃台」",
+        "問地點的寫法都可以（例如 Where is…?、Where can I find…?）",
+        "時態配合內容（例如問地點多用現在簡單式）"
+      ]
+    },
+    {
+      "id": "b1-u15-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "merchant",
+      "instructionZh": "用 merchant 造一個句子，描述一位商人做的生意。",
+      "referenceEn": [
+        "My uncle is a rice merchant, so he knows many farmers.",
+        "My grandfather was a tea merchant."
+      ],
+      "rubricZh": [
+        "merchant 表示「商人」，多指做買賣、批發的人",
+        "寫出這位商人買賣的是什麼",
+        "時態配合內容（例如說過去的事用過去式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T17:34:30Z",
+    "verdicts": {
+      "b1-u15-l01-q10": [
+        0
+      ],
+      "b1-u15-l01-q13": [
+        2
+      ],
+      "b1-u15-l01-q14": [
+        2
+      ],
+      "b1-u15-l01-q15#0": [
+        2
+      ],
+      "b1-u15-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長 b1b2 裁示修正：第③關 FIX：consumption 單字卡和 mcq 同句型（X consumption is high），換情境與句型",
+        "resolution": "改前：\"Water consumption is higher in summer.\"；改後：\"This new car has low fuel consumption.\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長 b1b2 裁示修正：第③關 FIX：consumption 單字卡和 mcq 同句型（X consumption is high），換情境與句型",
+        "resolution": "改前：\"夏天的用水量比較高。\"；改後：\"這輛新車很省油。\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長 b1b2 裁示修正：第③關 FIX：要點封閉清單",
+        "resolution": "改前：\"問地點可用 Where is…? 或 Where can I find…?\"；改後：\"問地點的寫法都可以（例如 Where is…?、Where can I find…?）\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/16/referenceEn/0",
+        "message": "執行長 b1b2 裁示修正：第③關疑似 S5（採納）：參考答案 1 和單字卡同主詞 The merchant、同為商人買賣貨物，換主詞",
+        "resolution": "改前：\"The merchant buys rice from farmers and sells it in the city.\"；改後：\"My uncle is a rice merchant, so he knows many farmers.\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"The shop made a mistake.\"；改後：\"The shop made a mistake with it.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"It is a new model.\"；改後：\"It is the newest model in the shop.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"The owner is a friend.\"；改後：\"The owner is a close friend of theirs.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"推銷員；業務員\"；改後：\"業務員；推銷員\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"保固；保證書\"；改後：\"保證書；保固\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"商品；貨物\"；改後：\"貨物；商品\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"業務員；推銷員\"；改後：\"推銷員；業務員\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"保證書；保固\"；改後：\"保固；保證書\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"貨物；商品\"；改後：\"商品；貨物\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"Always keep the warranty in a safe place.\"；改後：\"The TV has a two-year warranty.\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"保證書一定要收在安全的地方。\"；改後：\"這台電視有兩年保固。\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      }
+    ]
+  }
+}

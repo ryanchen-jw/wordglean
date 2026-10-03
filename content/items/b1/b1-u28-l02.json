@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u28-l02",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T20:30:48Z",
+  "properNouns": [
+    "Mia"
+  ],
+  "items": [
+    {
+      "id": "b1-u28-l02-q01",
+      "type": "wordCard",
+      "word": "president",
+      "exampleEn": "The company's president gave a short speech.",
+      "exampleZh": "公司總裁發表了簡短的演說。",
+      "glossZh": "總裁；總統；會長",
+      "distractorsZh": [
+        "秘書",
+        "司機",
+        "顧客"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q02",
+      "type": "wordCard",
+      "word": "policy",
+      "exampleEn": "The government changed its policy on school lunches.",
+      "exampleZh": "政府改變了學校午餐的政策。",
+      "glossZh": "政策；規定",
+      "distractorsZh": [
+        "價格",
+        "地址",
+        "菜單"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q03",
+      "type": "wordCard",
+      "word": "administration",
+      "exampleEn": "She works in the hospital administration office.",
+      "exampleZh": "她在醫院的行政辦公室工作。",
+      "glossZh": "行政；管理",
+      "distractorsZh": [
+        "廚房",
+        "倉庫",
+        "停車場"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q04",
+      "type": "wordCard",
+      "word": "defense",
+      "exampleEn": "The castle walls were the town's main defense.",
+      "exampleZh": "城牆是小鎮主要的防衛。",
+      "glossZh": "防守；防衛",
+      "distractorsZh": [
+        "進攻",
+        "速度",
+        "運氣"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q05",
+      "type": "wordCard",
+      "word": "security",
+      "exampleEn": "Security at the airport is very strict.",
+      "exampleZh": "機場的安檢很嚴格。",
+      "glossZh": "安全；保全",
+      "distractorsZh": [
+        "交通",
+        "天氣",
+        "食物"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q06",
+      "type": "wordCard",
+      "word": "election",
+      "exampleEn": "Voting in the election starts at eight a.m.",
+      "exampleZh": "選舉投票上午八點開始。",
+      "glossZh": "選舉",
+      "distractorsZh": [
+        "比賽",
+        "會議",
+        "典禮"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q07",
+      "type": "wordCard",
+      "word": "legal",
+      "exampleEn": "Selling alcohol to children is not legal.",
+      "exampleZh": "賣酒給兒童是不合法的。",
+      "glossZh": "合法的；法律的",
+      "distractorsZh": [
+        "危險的",
+        "昂貴的",
+        "流行的"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q08",
+      "type": "wordCard",
+      "word": "weapon",
+      "exampleEn": "The museum shows weapons from long ago.",
+      "exampleZh": "博物館展示很久以前的武器。",
+      "glossZh": "武器",
+      "distractorsZh": [
+        "工具",
+        "玩具",
+        "樂器"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "Please show your ticket to security.",
+      "sentenceZh": "請向保全人員出示你的票。"
+    },
+    {
+      "id": "b1-u28-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Our store's return policy has changed: you now have thirty days to bring things back.",
+      "audioZh": "本店的退貨政策改了：現在你有三十天可以把東西拿回來退。",
+      "questionZh": "新的退貨政策是什麼？",
+      "options": [
+        "Returns are not allowed.",
+        "You can return things only if they are not used.",
+        "You must pay a small fee.",
+        "You have thirty days to return things."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u28-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "Is it legal to park here at night?",
+      "sentenceZh": "晚上在這裡停車合法嗎？"
+    },
+    {
+      "id": "b1-u28-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "The school administration is on the first floor.",
+      "sentenceZh": "學校行政處在一樓。"
+    },
+    {
+      "id": "b1-u28-l02-q13",
+      "type": "mcq",
+      "stemEn": "You can't bring a ____ on the plane.",
+      "stemZh": "你不能帶武器上飛機。",
+      "options": [
+        "weapon",
+        "president",
+        "policy",
+        "defense"
+      ],
+      "optionGlossZh": [
+        "武器",
+        "總統",
+        "政策",
+        "防衛"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u28-l02-q14",
+      "type": "mcq",
+      "stemEn": "The ____ results will be on the news tonight.",
+      "stemZh": "選舉結果今晚會在新聞上公布。",
+      "options": [
+        "administration",
+        "election",
+        "postcard",
+        "authority"
+      ],
+      "optionGlossZh": [
+        "行政",
+        "選舉",
+        "明信片",
+        "權力"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u28-l02-q15",
+      "type": "reading",
+      "passageEn": "Last week, our chess club held an election to choose a new president. A girl named Mia won. She promised a new policy: a coach will come once a month to teach us. Mia is only fifteen, but no rule says a president must be older, so her win was completely legal. She says a good defense is the best weapon in chess. She also asked the school administration for a bigger room, and now a security guard opens it for us on Saturdays. Mia hopes our club can win the city tournament next year.",
+      "passageZh": "上週，我們的西洋棋社舉行選舉，選出新社長。一個叫 Mia 的女孩當選了。她承諾一項新政策：每個月請一位教練來指導我們。Mia 才十五歲，但沒有規定說社長一定要比較年長，所以她當選完全合法。她說好的防守是下西洋棋最好的武器。她也向學校行政單位要了一間比較大的教室，現在每週六都有一位保全人員幫我們開門。Mia 希望我們社團明年能贏得全市錦標賽。",
+      "questions": [
+        {
+          "questionZh": "Mia 承諾了什麼新政策？",
+          "options": [
+            "每月請教練來指導",
+            "會員每週都可以免費借棋盤",
+            "每次比賽都提供免費的點心",
+            "讓社團每年辦兩次大型比賽"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "現在誰在星期六幫社團開門？",
+          "options": [
+            "學校的保全人員",
+            "社團的老師",
+            "新的社長",
+            "行政人員"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q16",
+      "type": "translate",
+      "promptZh": "那支球隊靠防守贏球。",
+      "hintWords": [
+        "defense"
+      ],
+      "referenceEn": [
+        "That team wins with its defense.",
+        "The team won because of its defense."
+      ],
+      "rubricZh": [
+        "defense 表示「防守」，例如 a strong defense 等說法",
+        "時態配合內容（例如說一般情況用現在簡單式等）"
+      ]
+    },
+    {
+      "id": "b1-u28-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "policy",
+      "instructionZh": "用 policy 造一個句子，說說你學校或公司的一項規定。",
+      "referenceEn": [
+        "My school has a policy of no phones in class.",
+        "My company has a good holiday policy."
+      ],
+      "rubricZh": [
+        "policy 表示「政策、規定」，例如 a no-phones policy 等說法",
+        "說的是自己學校或公司的事（例如 my school）",
+        "時態配合內容（例如現在簡單式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:46:56Z",
+    "verdicts": {
+      "b1-u28-l02-q10": [
+        3
+      ],
+      "b1-u28-l02-q13": [
+        0
+      ],
+      "b1-u28-l02-q14": [
+        1
+      ],
+      "b1-u28-l02-q15#0": [
+        0
+      ],
+      "b1-u28-l02-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（例如說一般情況用現在簡單式）\"；改後：\"時態配合內容（例如說一般情況用現在簡單式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（多用現在簡單式）\"；改後：\"時態配合內容（例如現在簡單式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 The hotel has a no-pets policy 與造句 My school has a policy of no phones 句型、情境相同，只換名詞；改成政府改變學校午餐政策",
+        "resolution": "改前：\"The hotel has a no-pets policy.\"；改後：\"The government changed its policy on school lunches.\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 The hotel has a no-pets policy 與造句 My school has a policy of no phones 句型、情境相同，只換名詞；改成政府改變學校午餐政策",
+        "resolution": "改前：\"這家旅館有禁止攜帶寵物的政策。\"；改後：\"政府改變了學校午餐的政策。\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「我們隊防守很強」與翻譯「那支球隊靠防守贏球」同為球隊防守；改成城牆是小鎮的防衛",
+        "resolution": "改前：\"Our team's defense was very strong today.\"；改後：\"The castle walls were the town's main defense.\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「我們隊防守很強」與翻譯「那支球隊靠防守贏球」同為球隊防守；改成城牆是小鎮的防衛",
+        "resolution": "改前：\"我們隊今天的防守很強。\"；改後：\"城牆是小鎮主要的防衛。\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/13/stemEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「班上選班長」與閱讀「棋社選社長」同事件，改成選舉結果上新聞；干擾項 inspection 代入也通，換成 postcard",
+        "resolution": "改前：\"Our class held an ____ to choose a class leader.\"；改後：\"The ____ results will be on the news tonight.\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「班上選班長」與閱讀「棋社選社長」同事件，改成選舉結果上新聞；干擾項 inspection 代入也通，換成 postcard",
+        "resolution": "改前：\"我們班舉行選舉來選班長。\"；改後：\"選舉結果今晚會在新聞上公布。\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「班上選班長」與閱讀「棋社選社長」同事件，改成選舉結果上新聞；干擾項 inspection 代入也通，換成 postcard",
+        "resolution": "改前：\"inspection\"；改後：\"postcard\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「班上選班長」與閱讀「棋社選社長」同事件，改成選舉結果上新聞；干擾項 inspection 代入也通，換成 postcard",
+        "resolution": "改前：\"檢查\"；改後：\"明信片\"",
+        "resolvedAt": "2026-10-02T23:21:23Z"
+      }
+    ]
+  }
+}

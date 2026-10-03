@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u21-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:35:09Z",
+  "properNouns": [
+    "Kato"
+  ],
+  "items": [
+    {
+      "id": "b1-u21-l01-q01",
+      "type": "wordCard",
+      "word": "ward",
+      "exampleEn": "Visiting hours in the children's ward end at eight.",
+      "exampleZh": "兒童病房的探病時間到八點。",
+      "glossZh": "病房",
+      "distractorsZh": [
+        "餐廳",
+        "辦公室",
+        "停車場"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q02",
+      "type": "wordCard",
+      "word": "tablet",
+      "exampleEn": "This tablet has a bigger screen than my phone.",
+      "exampleZh": "這台平板的螢幕比我的手機大。",
+      "glossZh": "平板電腦；藥片",
+      "distractorsZh": [
+        "手錶",
+        "相機",
+        "鍵盤"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q03",
+      "type": "wordCard",
+      "word": "insurance",
+      "exampleEn": "Car insurance is expensive for young drivers.",
+      "exampleZh": "年輕駕駛的汽車保險很貴。",
+      "glossZh": "保險",
+      "distractorsZh": [
+        "停車費",
+        "罰款",
+        "稅金"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q04",
+      "type": "wordCard",
+      "word": "specialist",
+      "exampleEn": "She is a specialist in old furniture.",
+      "exampleZh": "她是老家具方面的專家。",
+      "glossZh": "專家；專科醫師",
+      "distractorsZh": [
+        "新手",
+        "客人",
+        "學生"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q05",
+      "type": "wordCard",
+      "word": "ambulance",
+      "exampleEn": "Ambulances can drive through red lights.",
+      "exampleZh": "救護車可以闖紅燈。",
+      "glossZh": "救護車",
+      "distractorsZh": [
+        "計程車",
+        "公車",
+        "卡車"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q06",
+      "type": "wordCard",
+      "word": "vet",
+      "exampleEn": "My cousin works as a vet in the countryside.",
+      "exampleZh": "我表親在鄉下當獸醫。",
+      "glossZh": "獸醫",
+      "distractorsZh": [
+        "廚師",
+        "司機",
+        "農夫"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q07",
+      "type": "listenType",
+      "sentenceEn": "Did you remember to buy travel insurance?",
+      "sentenceZh": "你記得買旅遊保險了嗎？"
+    },
+    {
+      "id": "b1-u21-l01-q08",
+      "type": "listenChoice",
+      "audioEn": "The vet's office is closed on Sunday, but you can call this number if your pet is sick.",
+      "audioZh": "動物醫院星期天休息，但寵物生病的話可以打這支電話。",
+      "questionZh": "寵物生病而動物醫院休息時，可以怎麼做？",
+      "options": [
+        "Wait until Monday morning.",
+        "Call the number.",
+        "Go to the pet shop nearby.",
+        "Email the vet."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u21-l01-q09",
+      "type": "shadowing",
+      "sentenceEn": "The specialist will see you at ten.",
+      "sentenceZh": "專科醫師十點會幫你看診。"
+    },
+    {
+      "id": "b1-u21-l01-q10",
+      "type": "shadowing",
+      "sentenceEn": "An ambulance came quickly after the accident.",
+      "sentenceZh": "事故發生後，救護車很快就來了。"
+    },
+    {
+      "id": "b1-u21-l01-q11",
+      "type": "mcq",
+      "stemEn": "Her ____ pays for a hospital stay.",
+      "stemZh": "她的保險會支付住院的費用。",
+      "options": [
+        "ward",
+        "insurance",
+        "tablet",
+        "vet"
+      ],
+      "optionGlossZh": [
+        "病房",
+        "保險",
+        "平板電腦",
+        "獸醫"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u21-l01-q12",
+      "type": "mcq",
+      "stemEn": "Mr. Kato is a heart ____ at the city hospital.",
+      "stemZh": "Kato 先生是市立醫院的心臟專科醫師。",
+      "options": [
+        "specialist",
+        "ambulance",
+        "symptom",
+        "remedy"
+      ],
+      "optionGlossZh": [
+        "專科醫師",
+        "救護車",
+        "症狀",
+        "療法"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u21-l01-q13",
+      "type": "reading",
+      "passageEn": "To all staff: Starting next month, our company will offer new health insurance. It pays for hospital stays, visits to a specialist, and the cost of an ambulance. It also pays for treatment for injuries at work. If you stay in a hospital ward, you will not have to pay. Pets are not included, so please continue to pay your own vet bills. For questions, use the form on your tablet or call Mr. Kato's office.",
+      "passageZh": "全體員工請注意：從下個月起，公司將提供新的健康保險。保險支付住院、看專科醫師以及救護車的費用，也支付工作受傷的治療費用。如果住在醫院病房，你不需要付錢。寵物不在保險範圍內，所以獸醫的帳單請繼續自行支付。有問題請用平板上的表單，或打電話到 Kato 先生的辦公室。",
+      "questions": [
+        {
+          "questionZh": "新保險不包含什麼？",
+          "options": [
+            "寵物看獸醫的費用",
+            "請專科醫師看診的費用",
+            "救護車的費用",
+            "工作受傷的治療"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "新保險什麼時候開始？",
+          "options": [
+            "明年",
+            "下個星期",
+            "下個月",
+            "今天"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q14",
+      "type": "translate",
+      "promptZh": "我的狗生病了，我得帶牠去看獸醫。",
+      "hintWords": [
+        "vet"
+      ],
+      "referenceEn": [
+        "My dog is sick, so I have to take it to the vet.",
+        "My dog is ill, and I need to take it to the vet."
+      ],
+      "rubricZh": [
+        "vet 表示「獸醫」，例如 take … to the vet 等說法",
+        "動物可用 it 指稱",
+        "時態配合內容（多用現在式）"
+      ]
+    },
+    {
+      "id": "b1-u21-l01-q15",
+      "type": "makeSentence",
+      "targetWord": "tablet",
+      "instructionZh": "用 tablet 造一個句子，說說你怎麼使用平板電腦。",
+      "referenceEn": [
+        "I watch movies on my tablet before bed.",
+        "I use my tablet to read books on the train."
+      ],
+      "rubricZh": [
+        "tablet 在這裡表示「平板電腦」，例如 on my tablet 等說法",
+        "說的是自己的習慣（例如 I、my）",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u21-l01-q08": [
+        1
+      ],
+      "b1-u21-l01-q11": [
+        1
+      ],
+      "b1-u21-l01-q12": [
+        0
+      ],
+      "b1-u21-l01-q13#0": [
+        0
+      ],
+      "b1-u21-l01-q13#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/7/audioEn",
+        "message": "B1 第 3 批審查裁示修正：第②關＋第③關疑似：The vet 改 The vet's office",
+        "resolution": "改前：\"The vet is closed on Sunday, but you can call this number if your pet is sick.\"；改後：\"The vet's office is closed on Sunday, but you can call this number if your pet is sick.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/10/stemEn",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似（cover「支付」義）：改 pays for",
+        "resolution": "改前：\"Her ____ covers the cost of a hospital stay.\"；改後：\"Her ____ pays for a hospital stay.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/passageEn",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似（cover「支付」義）：改 pays for，中譯同步",
+        "resolution": "改前：\"To all staff: Starting next month, our company will offer new health insurance. It covers hospital stays, visits to a specialist, and the cost of an ambulance. It also covers treatment for injuries at work. If you stay in a hospital ward, you will not have to pay. Pets are not included, so please continue to pay your own vet bills. For questions, use the form on your tablet or call Mr. Kato's office.\"；改後：\"To all staff: Starting next month, our company will offer new health insurance. It pays for hospital stays, visits to a specialist, and the cost of an ambulance. It also pays for treatment for injuries at work. If you stay in a hospital ward, you will not have to pay. Pets are not included, so please continue to pay your own vet bills. For questions, use the form on your tablet or call Mr. Kato's office.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/passageZh",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似（cover「支付」義）：改 pays for，中譯同步",
+        "resolution": "改前：\"全體員工請注意：從下個月起，公司將提供新的健康保險。保險涵蓋住院、看專科醫師以及救護車的費用，也涵蓋工作受傷的治療。如果住在醫院病房，你不需要付錢。寵物不在保險範圍內，所以獸醫的帳單請繼續自行支付。有問題請用平板上的表單，或打電話到 Kato 先生的辦公室。\"；改後：\"全體員工請注意：從下個月起，公司將提供新的健康保險。保險支付住院、看專科醫師以及救護車的費用，也支付工作受傷的治療費用。如果住在醫院病房，你不需要付錢。寵物不在保險範圍內，所以獸醫的帳單請繼續自行支付。有問題請用平板上的表單，或打電話到 Kato 先生的辦公室。\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/1",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似（tablet 藥片義）：不改——平板電腦義是本課四題的共同情境，釋義已並列藥片",
+        "resolution": "不改（理由見說明）",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/11/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：ward→symptom、tablet→remedy",
+        "resolution": "改前：\"ward\"；改後：\"symptom\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/11/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：ward→symptom、tablet→remedy",
+        "resolution": "改前：\"tablet\"；改後：\"remedy\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：ward→symptom、tablet→remedy",
+        "resolution": "改前：\"病房\"；改後：\"症狀\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：ward→symptom、tablet→remedy",
+        "resolution": "改前：\"平板電腦\"；改後：\"療法\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      }
+    ]
+  }
+}

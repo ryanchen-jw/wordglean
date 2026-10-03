@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u25-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:50:50Z",
+  "properNouns": [
+    "Sara"
+  ],
+  "items": [
+    {
+      "id": "b1-u25-l01-q01",
+      "type": "wordCard",
+      "word": "lab",
+      "exampleEn": "We wear white coats in the lab.",
+      "exampleZh": "我們在實驗室穿白袍。",
+      "glossZh": "實驗室",
+      "distractorsZh": [
+        "圖書館",
+        "體育館",
+        "餐廳"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q02",
+      "type": "wordCard",
+      "word": "satellite",
+      "exampleEn": "This phone can find your location using a satellite.",
+      "exampleZh": "這支手機可以用衛星找到你的位置。",
+      "glossZh": "衛星；人造衛星",
+      "distractorsZh": [
+        "電池",
+        "鏡頭",
+        "螢幕"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q03",
+      "type": "wordCard",
+      "word": "scholarship",
+      "exampleEn": "Only three students get this scholarship every year.",
+      "exampleZh": "每年只有三位學生能拿到這筆獎學金。",
+      "glossZh": "獎學金",
+      "distractorsZh": [
+        "獎牌",
+        "比賽",
+        "假期"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q04",
+      "type": "wordCard",
+      "word": "assignment",
+      "exampleEn": "Late assignments will lose five points.",
+      "exampleZh": "遲交的作業會扣五分。",
+      "glossZh": "作業；任務",
+      "distractorsZh": [
+        "假期",
+        "禮物",
+        "考卷"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q05",
+      "type": "wordCard",
+      "word": "instructor",
+      "exampleEn": "The driving instructor was very patient.",
+      "exampleZh": "那位駕訓班教練非常有耐心。",
+      "glossZh": "教練；講師",
+      "distractorsZh": [
+        "學生",
+        "司機",
+        "乘客"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q06",
+      "type": "wordCard",
+      "word": "physics",
+      "exampleEn": "Physics is the hardest subject for me.",
+      "exampleZh": "物理是我最難的科目。",
+      "glossZh": "物理；物理學",
+      "distractorsZh": [
+        "歷史",
+        "音樂",
+        "美術"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q07",
+      "type": "wordCard",
+      "word": "questionnaire",
+      "exampleEn": "The questionnaire has twenty questions.",
+      "exampleZh": "這份問卷有二十個問題。",
+      "glossZh": "問卷",
+      "distractorsZh": [
+        "收據",
+        "菜單",
+        "地圖"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q08",
+      "type": "wordCard",
+      "word": "guidance",
+      "exampleEn": "With her teacher's guidance, she chose a good career.",
+      "exampleZh": "在老師的指導下，她選了一份好職業。",
+      "glossZh": "指導；輔導",
+      "distractorsZh": [
+        "壓力",
+        "批評",
+        "獎金"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "The science lab is on the second floor.",
+      "sentenceZh": "科學實驗室在二樓。"
+    },
+    {
+      "id": "b1-u25-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Please finish the questionnaire and give it to the front desk before you leave.",
+      "audioZh": "請填完問卷，離開前交給櫃台。",
+      "questionZh": "填完問卷後要交給誰？",
+      "options": [
+        "The front desk.",
+        "The teacher in Room 3.",
+        "Your boss.",
+        "The guard."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u25-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "The new instructor teaches yoga on Tuesdays.",
+      "sentenceZh": "新來的教練每週二教瑜伽。"
+    },
+    {
+      "id": "b1-u25-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "My brother is studying physics at university.",
+      "sentenceZh": "我哥哥在大學念物理。"
+    },
+    {
+      "id": "b1-u25-l01-q13",
+      "type": "mcq",
+      "stemEn": "I can't go out tonight; I have to finish my history ____.",
+      "stemZh": "我今晚不能出門，得把歷史作業寫完。",
+      "options": [
+        "instructor",
+        "scholarship",
+        "physics",
+        "assignment"
+      ],
+      "optionGlossZh": [
+        "講師",
+        "獎學金",
+        "物理",
+        "作業"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u25-l01-q14",
+      "type": "mcq",
+      "stemEn": "A ____ moves around the Earth and sends back pictures.",
+      "stemZh": "衛星繞著地球轉，並把照片傳回來。",
+      "options": [
+        "lab",
+        "satellite",
+        "questionnaire",
+        "guidance"
+      ],
+      "optionGlossZh": [
+        "實驗室",
+        "衛星",
+        "問卷",
+        "指導"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u25-l01-q15",
+      "type": "reading",
+      "passageEn": "Sara wants to become an engineer. Last year, she won a scholarship from a big company, and she received it at a ceremony. Now she studies physics at a university and spends many hours in the lab. Her instructor gives the class a difficult assignment every week. This term, her team is helping to build a small satellite. Sara also filled in a questionnaire about student life. She says the guidance of her teachers has been very important.",
+      "passageZh": "Sara 想成為工程師。去年，她拿到一家大公司提供的獎學金，還在典禮上領獎。現在她在大學念物理，花很多時間待在實驗室。她的講師每週都給全班一份很難的作業。這學期，她的團隊正在幫忙建造一顆小衛星。Sara 也填了一份關於學生生活的問卷。她說老師們的指導一直都很重要。",
+      "questions": [
+        {
+          "questionZh": "Sara 的團隊這學期在做什麼？",
+          "options": [
+            "寫一本物理書",
+            "設計新的手機",
+            "研究天氣變化",
+            "幫忙建造一顆小衛星"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "獎學金是誰提供的？",
+          "options": [
+            "她就讀的大學",
+            "一家大公司",
+            "市政府的教育局",
+            "她的物理老師"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q16",
+      "type": "translate",
+      "promptZh": "我的物理作業還沒寫完。",
+      "hintWords": [
+        "assignment"
+      ],
+      "referenceEn": [
+        "I haven't finished my physics assignment yet.",
+        "My physics assignment isn't finished yet."
+      ],
+      "rubricZh": [
+        "assignment 表示「作業」，可數名詞，例如 finish an assignment 等說法",
+        "時態配合內容（例如現在完成式 haven't finished 等）"
+      ]
+    },
+    {
+      "id": "b1-u25-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "guidance",
+      "instructionZh": "用 guidance 造一個句子，說說誰給過你指導或建議。",
+      "referenceEn": [
+        "My parents gave me a lot of guidance when I was in high school.",
+        "I asked my teacher for guidance about my studies."
+      ],
+      "rubricZh": [
+        "guidance 表示「指導、輔導」，是不可數名詞，例如 give guidance、ask for guidance 等說法",
+        "說的是自己的經驗（例如 I、my）",
+        "時態配合內容（例如說過去的事用過去式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u25-l01-q10": [
+        0
+      ],
+      "b1-u25-l01-q13": [
+        3
+      ],
+      "b1-u25-l01-q14": [
+        1
+      ],
+      "b1-u25-l01-q15#0": [
+        3
+      ],
+      "b1-u25-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：temperature 跨課重複，換本課字 instructor",
+        "resolution": "改前：\"physics\"；改後：\"instructor\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：temperature 跨課重複，換本課字 instructor",
+        "resolution": "改前：\"temperature\"；改後：\"satellite\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：temperature 跨課重複，換本課字 instructor",
+        "resolution": "改前：\"satellite\"；改後：\"physics\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：temperature 跨課重複，換本課字 instructor",
+        "resolution": "改前：\"物理\"；改後：\"講師\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：temperature 跨課重複，換本課字 instructor",
+        "resolution": "改前：\"溫度\"；改後：\"衛星\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：temperature 跨課重複，換本課字 instructor",
+        "resolution": "改前：\"衛星\"；改後：\"物理\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：physics→questionnaire",
+        "resolution": "改前：\"physics\"；改後：\"questionnaire\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：physics→questionnaire",
+        "resolution": "改前：\"物理\"；改後：\"問卷\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：satellite→scholarship",
+        "resolution": "改前：\"satellite\"；改後：\"scholarship\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：satellite→scholarship",
+        "resolution": "改前：\"衛星\"；改後：\"獎學金\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      }
+    ]
+  }
+}

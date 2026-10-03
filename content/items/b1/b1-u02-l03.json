@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u02-l03",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:56:25Z",
+  "properNouns": [
+    "Lisa",
+    "Daniel"
+  ],
+  "items": [
+    {
+      "id": "b1-u02-l03-q01",
+      "type": "wordCard",
+      "word": "session",
+      "exampleEn": "Our training session starts at nine and ends at noon.",
+      "exampleZh": "我們的訓練課程九點開始、中午結束。",
+      "glossZh": "（一段）課程；場次",
+      "distractorsZh": [
+        "截止期限",
+        "季節",
+        "地址"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q02",
+      "type": "wordCard",
+      "word": "currently",
+      "exampleEn": "The manager is currently out of the office.",
+      "exampleZh": "經理目前不在辦公室。",
+      "glossZh": "目前；現在",
+      "distractorsZh": [
+        "以前",
+        "最後",
+        "很少"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q03",
+      "type": "wordCard",
+      "word": "frequently",
+      "exampleEn": "This bus stops frequently, so the trip takes a long time.",
+      "exampleZh": "這班公車很常停靠，所以這趟路要花很久。",
+      "glossZh": "經常；頻繁地",
+      "distractorsZh": [
+        "很少",
+        "突然",
+        "永久地"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q04",
+      "type": "wordCard",
+      "word": "era",
+      "exampleEn": "Many people miss the era before the internet.",
+      "exampleZh": "很多人懷念網路出現以前的那個時代。",
+      "glossZh": "時代；年代",
+      "distractorsZh": [
+        "季節",
+        "場合",
+        "期限"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q05",
+      "type": "wordCard",
+      "word": "initial",
+      "exampleEn": "My initials are on all my books.",
+      "exampleZh": "我所有的書上都有我的姓名縮寫。",
+      "glossZh": "姓名首字母；縮寫",
+      "distractorsZh": [
+        "簽名",
+        "地址",
+        "頁碼"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q06",
+      "type": "wordCard",
+      "word": "immediate",
+      "exampleEn": "We need an immediate answer from the customer.",
+      "exampleZh": "我們需要客戶立即的答覆。",
+      "glossZh": "立即的；馬上的",
+      "distractorsZh": [
+        "長期的",
+        "以前的",
+        "每年的"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q07",
+      "type": "wordCard",
+      "word": "occasion",
+      "exampleEn": "A birthday is a special occasion for the whole family.",
+      "exampleZh": "生日對全家人來說是個特別的日子。",
+      "glossZh": "場合；（特別的）時刻",
+      "distractorsZh": [
+        "季節",
+        "地址",
+        "時代"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q08",
+      "type": "wordCard",
+      "word": "rarely",
+      "exampleEn": "My father rarely watches TV.",
+      "exampleZh": "我爸爸很少看電視。",
+      "glossZh": "很少；難得",
+      "distractorsZh": [
+        "經常",
+        "總是",
+        "立刻"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q09",
+      "type": "listenType",
+      "sentenceEn": "I currently work at a bank near the train station.",
+      "sentenceZh": "我目前在火車站附近的一家銀行上班。"
+    },
+    {
+      "id": "b1-u02-l03-q10",
+      "type": "listenChoice",
+      "audioEn": "Lisa rarely eats out, but she cooks at home frequently.",
+      "audioZh": "Lisa 很少在外面吃，但她經常在家煮飯。",
+      "questionZh": "Lisa 平常怎麼吃飯？",
+      "options": [
+        "She often eats out at restaurants.",
+        "She never cooks.",
+        "She eats at her office.",
+        "She usually cooks at home."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u02-l03-q11",
+      "type": "shadowing",
+      "sentenceEn": "We wore our best clothes for the occasion.",
+      "sentenceZh": "為了這個場合，我們穿上最好的衣服。"
+    },
+    {
+      "id": "b1-u02-l03-q12",
+      "type": "shadowing",
+      "sentenceEn": "The new rule had an immediate effect on our work.",
+      "sentenceZh": "新規定對我們的工作產生了立即的影響。"
+    },
+    {
+      "id": "b1-u02-l03-q13",
+      "type": "mcq",
+      "stemEn": "My brother lives abroad, so I ____ see him.",
+      "stemZh": "我哥哥住在國外，所以我很少見到他。",
+      "options": [
+        "immediately",
+        "frequently",
+        "currently",
+        "rarely"
+      ],
+      "optionGlossZh": [
+        "立刻",
+        "經常",
+        "目前",
+        "很少"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u02-l03-q14",
+      "type": "mcq",
+      "stemEn": "Please sign the form or write your ____ in the box.",
+      "stemZh": "請在表格上簽名，或在方格裡寫上你的姓名縮寫。",
+      "options": [
+        "seasons",
+        "initials",
+        "sessions",
+        "eras"
+      ],
+      "optionGlossZh": [
+        "季節",
+        "姓名縮寫",
+        "課程；場次",
+        "時代"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u02-l03-q15",
+      "type": "reading",
+      "passageEn": "Daniel is currently a student at a cooking school. He has two sessions every day, one in the morning and one in the afternoon. He frequently cooks for his classmates, but he rarely cooks for special occasions. Last week, his teacher asked him to make a cake for her wedding. At first, he said no because he was nervous. But his classmates gave him immediate help, and the cake was a big success.",
+      "passageZh": "Daniel 目前是烹飪學校的學生。他每天有兩堂課，一堂在早上，一堂在下午。他經常煮東西給同學吃，但很少為特別的場合下廚。上星期，老師請他為她的婚禮做一個蛋糕。一開始他因為緊張而拒絕了。不過同學們立刻幫他，結果蛋糕非常成功。",
+      "questions": [
+        {
+          "questionZh": "Daniel 每天有幾堂課？",
+          "options": [
+            "一堂",
+            "兩堂",
+            "三堂",
+            "四堂"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "Daniel 一開始為什麼拒絕？",
+          "options": [
+            "因為他太忙",
+            "因為他不會做蛋糕",
+            "因為同學不幫忙",
+            "因為他很緊張"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q16",
+      "type": "translate",
+      "promptZh": "在那個時代，很少人有電腦。",
+      "hintWords": [
+        "era"
+      ],
+      "referenceEn": [
+        "In that era, few people had computers.",
+        "Very few people had computers in that era.",
+        "In that era, people rarely had computers."
+      ],
+      "rubricZh": [
+        "era 表示「時代」，例如 in that era 等說法",
+        "過去的事用過去式（例如 had、owned）",
+        "「很少人」可寫 few people、not many people，或用 rarely 等"
+      ]
+    },
+    {
+      "id": "b1-u02-l03-q17",
+      "type": "makeSentence",
+      "targetWord": "frequently",
+      "instructionZh": "用 frequently 造一個句子，說說你經常去的地方或經常做的事。",
+      "referenceEn": [
+        "I frequently go to the park near my home.",
+        "I visit my grandparents frequently."
+      ],
+      "rubricZh": [
+        "frequently 表示「經常」",
+        "可放在一般動詞前或句尾（例如 I frequently go…、…visit them frequently）",
+        "說習慣多用現在簡單式，其他合理時態也接受",
+        "主詞是自己（I）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:30:18Z",
+    "verdicts": {
+      "b1-u02-l03-q10": [
+        3
+      ],
+      "b1-u02-l03-q13": [
+        3
+      ],
+      "b1-u02-l03-q14": [
+        1
+      ],
+      "b1-u02-l03-q15#0": [
+        1
+      ],
+      "b1-u02-l03-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長第②③關裁示修正：第②關：initial 詞性疑慮——執行長已裁「照課綱詞性教」（B1 只列名詞），維持教名詞 initials「姓名縮寫」",
+        "resolution": "不改（理由見說明）",
+        "resolvedAt": "2026-10-02T15:35:54Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正：執行長裁示（b2b1）：評分要點不寫死時態，題目沒有時間標記時收所有合理時態",
+        "resolution": "改前：\"說的是習慣，用現在簡單式\"；改後：\"說習慣多用現在簡單式，其他合理時態也接受\"",
+        "resolvedAt": "2026-10-02T15:43:43Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：評分要點封閉清單——「可寫 A 或 B」「常用 X」一律改成「例如…等」，全級腳本掃描修正",
+        "resolution": "改前：\"era 表示「時代」，常說 in that era\"；改後：\"era 表示「時代」，例如 in that era 等說法\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"She eats at her office.\"；改後：\"She often eats out at restaurants.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"She often eats out.\"；改後：\"She never cooks.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"She never cooks.\"；改後：\"She eats at her office.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"姓名首字母；縮寫\"；改後：\"縮寫；姓名首字母\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"縮寫；姓名首字母\"；改後：\"姓名首字母；縮寫\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      }
+    ]
+  }
+}

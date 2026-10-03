@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u39-l02",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T22:20:54Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u39-l02-q01",
+      "type": "wordCard",
+      "word": "bark",
+      "exampleEn": "Some animals eat bark in winter.",
+      "exampleZh": "冬天時，有些動物會吃樹皮。",
+      "glossZh": "樹皮；吠聲",
+      "distractorsZh": [
+        "樹葉",
+        "樹根",
+        "樹枝"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q02",
+      "type": "wordCard",
+      "word": "breeding",
+      "exampleEn": "Breeding dogs takes a lot of time and money.",
+      "exampleZh": "繁殖狗需要花很多時間和金錢。",
+      "glossZh": "繁殖；飼養",
+      "distractorsZh": [
+        "遷徙",
+        "冬眠",
+        "狩獵"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q03",
+      "type": "wordCard",
+      "word": "volcano",
+      "exampleEn": "Some people live close to a volcano.",
+      "exampleZh": "有些人住在火山附近。",
+      "glossZh": "火山",
+      "distractorsZh": [
+        "冰山",
+        "沙漠",
+        "峽谷"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q04",
+      "type": "wordCard",
+      "word": "reef",
+      "exampleEn": "Many colorful fish live around the reef.",
+      "exampleZh": "許多色彩繽紛的魚住在礁石周圍。",
+      "glossZh": "礁石；暗礁",
+      "distractorsZh": [
+        "沙灘",
+        "河口",
+        "島嶼"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q05",
+      "type": "wordCard",
+      "word": "freezing",
+      "exampleEn": "Don't touch the freezing metal with wet hands.",
+      "exampleZh": "別用濕的手去碰冰冷的金屬。",
+      "glossZh": "極冷的；冰凍的",
+      "distractorsZh": [
+        "炎熱的",
+        "潮濕的",
+        "涼爽的"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q06",
+      "type": "wordCard",
+      "word": "turtle",
+      "exampleEn": "My little brother keeps a turtle as a pet.",
+      "exampleZh": "我弟弟養了一隻烏龜當寵物。",
+      "glossZh": "烏龜；海龜",
+      "distractorsZh": [
+        "青蛙",
+        "螃蟹",
+        "鯨魚"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q07",
+      "type": "wordCard",
+      "word": "flock",
+      "exampleEn": "The farmer has a large flock of sheep.",
+      "exampleZh": "農夫有一大群羊。",
+      "glossZh": "（鳥、羊的）群",
+      "distractorsZh": [
+        "一隻",
+        "一對",
+        "一窩"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q08",
+      "type": "wordCard",
+      "word": "mule",
+      "exampleEn": "Mules can carry heavy things on mountain roads.",
+      "exampleZh": "騾子能在山路上載運重物。",
+      "glossZh": "騾子",
+      "distractorsZh": [
+        "駱駝",
+        "綿羊",
+        "公牛"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "It's freezing in here! Close the window.",
+      "sentenceZh": "這裡好冷！把窗戶關上。"
+    },
+    {
+      "id": "b1-u39-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "We can't swim near the reef today because the waves are too big.",
+      "audioZh": "今天浪太大，我們不能在礁石附近游泳。",
+      "questionZh": "為什麼今天不能在礁石附近游泳？",
+      "options": [
+        "There are fish.",
+        "The water is cold.",
+        "It is too late.",
+        "The waves are too big."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u39-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "A flock of ducks swam across the lake.",
+      "sentenceZh": "一群鴨子游過湖面。"
+    },
+    {
+      "id": "b1-u39-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "Smoke is coming out of the volcano.",
+      "sentenceZh": "火山正在冒煙。"
+    },
+    {
+      "id": "b1-u39-l02-q13",
+      "type": "mcq",
+      "stemEn": "The ____ is so old that its shell is covered with green plants.",
+      "stemZh": "那隻烏龜太老了，殼上長滿了綠色植物。",
+      "options": [
+        "turtle",
+        "mule",
+        "reef",
+        "volcano"
+      ],
+      "optionGlossZh": [
+        "烏龜",
+        "騾子",
+        "礁石",
+        "火山"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u39-l02-q14",
+      "type": "mcq",
+      "stemEn": "It was ____ last night, so the water outside turned to ice.",
+      "stemZh": "昨晚冷得要命，外面的水都結冰了。",
+      "options": [
+        "festive",
+        "scenic",
+        "freezing",
+        "breeding"
+      ],
+      "optionGlossZh": [
+        "節日的",
+        "風景優美的",
+        "極冷的",
+        "繁殖"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u39-l02-q15",
+      "type": "reading",
+      "passageEn": "Last summer, my family visited a small island with an old volcano. The volcano has not been active for many years. In the morning, we went diving near a reef and saw a big sea turtle swimming slowly. In the afternoon, we walked up the hill, but the path was too steep for us, so a farmer let us ride his mule. On the way, a flock of birds flew over our heads. The farmer told us that spring is the breeding season for these birds. He also showed us that the bark of some trees can be used to make baskets. At night, the wind was freezing, and we sat close to the fire.",
+      "passageZh": "去年夏天，我們全家去了一座有古老火山的小島。那座火山已經很多年沒有活動了。早上，我們在礁石附近潛水，看到一隻大海龜在水中慢慢前進。下午我們往山上走，但小路對我們來說太陡了，所以一位農夫讓我們騎他的騾子。路上，一群鳥從我們頭上飛過。農夫告訴我們，春天是這些鳥的繁殖季節。他還告訴我們，有些樹的樹皮可以用來編籃子。晚上，風冷得刺骨，我們靠著火坐在一起。",
+      "questions": [
+        {
+          "questionZh": "他們在礁石附近看到什麼？",
+          "options": [
+            "一條很長的海蛇",
+            "一艘沉在海底的舊船",
+            "一隻大海龜",
+            "一群五顏六色的小魚"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "為什麼農夫讓他們騎騾子？",
+          "options": [
+            "因為小路對他們來說太陡了",
+            "因為他們走錯了路，天色又快黑了",
+            "因為騾子需要運動",
+            "因為他們走得太慢"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q16",
+      "type": "translate",
+      "promptZh": "那頭騾子拒絕往前走。",
+      "hintWords": [
+        "mule"
+      ],
+      "referenceEn": [
+        "The mule refused to move forward.",
+        "The mule refused to go forward."
+      ],
+      "rubricZh": [
+        "mule 表示「騾子」，例如 ride a mule 等說法",
+        "時態配合內容（例如說過去的事用過去式等）"
+      ]
+    },
+    {
+      "id": "b1-u39-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "freezing",
+      "instructionZh": "用 freezing 造一個句子，說說一次你覺得非常冷的經驗。",
+      "referenceEn": [
+        "It was freezing when I went to the mountains last winter.",
+        "My hands were freezing after I played in the snow."
+      ],
+      "rubricZh": [
+        "freezing 表示「極冷的」，例如 It's freezing 等說法",
+        "說的是自己的經驗（例如 I、my）",
+        "時態配合內容（例如說過去的事用過去式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:46:56Z",
+    "verdicts": {
+      "b1-u39-l02-q10": [
+        3
+      ],
+      "b1-u39-l02-q13": [
+        0
+      ],
+      "b1-u39-l02-q14": [
+        2
+      ],
+      "b1-u39-l02-q15#0": [
+        2
+      ],
+      "b1-u39-l02-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（說過去的事用過去式）\"；改後：\"時態配合內容（例如說過去的事用過去式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（例如說過去的事用過去式）\"；改後：\"時態配合內容（例如說過去的事用過去式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 The bark of this old tree… 與閱讀 the bark of some trees… 主詞、句型相同；改成狗叫聲把我吵醒（第二義）",
+        "resolution": "改前：\"The bark of this old tree is very rough.\"；改後：\"The dog's bark woke me up.\"",
+        "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 The bark of this old tree… 與閱讀 the bark of some trees… 主詞、句型相同；改成狗叫聲把我吵醒（第二義）",
+        "resolution": "改前：\"這棵老樹的樹皮很粗糙。\"；改後：\"狗叫聲把我吵醒了。\"",
+        "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 My hands are freezing 與造句 My hands were freezing… 句型、情境相同；改成在冰冷的海裡游泳",
+        "resolution": "改前：\"My hands are freezing; let's go inside.\"；改後：\"We went for a swim in the freezing sea.\"",
+        "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 My hands are freezing 與造句 My hands were freezing… 句型、情境相同；改成在冰冷的海裡游泳",
+        "resolution": "改前：\"我的手冷得要命，我們進去吧。\"；改後：\"我們在冰冷的海裡游了泳。\"",
+        "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「天上那群鳥」與閱讀「一群鳥從頭上飛過」同事件，改成一群鴨子游過湖面",
+        "resolution": "改前：\"Look at that flock of birds in the sky!\"；改後：\"A flock of ducks swam across the lake.\"",
+        "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「天上那群鳥」與閱讀「一群鳥從頭上飛過」同事件，改成一群鴨子游過湖面",
+        "resolution": "改前：\"看天上那群鳥！\"；改後：\"一群鴨子游過湖面。\"",
+        "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 My hands are freezing 與造句 My hands were freezing… 句型、情境相同；改成別用濕手碰冰冷的金屬",
+        "resolution": "改前：\"We went for a swim in the freezing sea.\"；改後：\"Don't touch the freezing metal with wet hands.\"",
+        "resolvedAt": "2026-10-02T23:43:47Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 My hands are freezing 與造句 My hands were freezing… 句型、情境相同；改成別用濕手碰冰冷的金屬",
+        "resolution": "改前：\"我們在冰冷的海裡游了泳。\"；改後：\"別用濕的手去碰冰冷的金屬。\"",
+        "resolvedAt": "2026-10-02T23:43:47Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「樹皮」，並避開同課其他題的情境",
+        "resolution": "改前：\"The dog's bark woke me up.\"；改後：\"Deer sometimes eat bark in winter.\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「樹皮」，並避開同課其他題的情境",
+        "resolution": "改前：\"狗叫聲把我吵醒了。\"；改後：\"冬天時，鹿有時會吃樹皮。\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/0/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「樹皮」，並避開同課其他題的情境",
+        "resolution": "改前：\"Deer sometimes eat bark in winter.\"；改後：\"Some animals eat bark in winter.\"",
+        "resolvedAt": "2026-10-03T00:28:36Z"
+      },
+      {
+        "path": "items/0/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「樹皮」，並避開同課其他題的情境",
+        "resolution": "改前：\"冬天時，鹿有時會吃樹皮。\"；改後：\"冬天時，有些動物會吃樹皮。\"",
+        "resolvedAt": "2026-10-03T00:28:36Z"
+      }
+    ]
+  }
+}

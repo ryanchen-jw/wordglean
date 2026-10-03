@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u03-l10",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:56:39Z",
+  "properNouns": [
+    "Taiwanese",
+    "Japanese"
+  ],
+  "items": [
+    {
+      "id": "b1-u03-l10-q01",
+      "type": "wordCard",
+      "word": "defend",
+      "exampleEn": "The players worked together to defend their goal.",
+      "exampleZh": "球員們齊心協力守住自己的球門。",
+      "glossZh": "防守；保衛；為⋯辯護",
+      "distractorsZh": [
+        "攻擊",
+        "放棄",
+        "離開"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q02",
+      "type": "wordCard",
+      "word": "ensure",
+      "exampleEn": "Please ensure that your name is on every page.",
+      "exampleZh": "請確認每一頁上都有你的名字。",
+      "glossZh": "確保；確定",
+      "distractorsZh": [
+        "懷疑",
+        "忘記",
+        "假設"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q03",
+      "type": "wordCard",
+      "word": "slip",
+      "exampleEn": "The glass slipped out of my hand and broke.",
+      "exampleZh": "杯子從我手中滑落，摔破了。",
+      "glossZh": "滑倒；滑動",
+      "distractorsZh": [
+        "跳起",
+        "爬行",
+        "站穩"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q04",
+      "type": "wordCard",
+      "word": "combination",
+      "exampleEn": "A combination of rain and wind made the trip hard.",
+      "exampleZh": "雨加上風，讓這趟旅程很辛苦。",
+      "glossZh": "組合；結合",
+      "distractorsZh": [
+        "差別",
+        "順序",
+        "價格"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q05",
+      "type": "wordCard",
+      "word": "eliminate",
+      "exampleEn": "We must eliminate all the mistakes before printing.",
+      "exampleZh": "印之前我們必須消除所有錯誤。",
+      "glossZh": "消除；排除；淘汰",
+      "distractorsZh": [
+        "增加",
+        "發現",
+        "記錄"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q06",
+      "type": "wordCard",
+      "word": "rely",
+      "exampleEn": "She is a friend you can always rely on.",
+      "exampleZh": "她是個你隨時都可以依賴的朋友。",
+      "glossZh": "依賴；信賴",
+      "distractorsZh": [
+        "懷疑",
+        "批評",
+        "等待"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q07",
+      "type": "wordCard",
+      "word": "attract",
+      "exampleEn": "The festival attracts thousands of visitors every year.",
+      "exampleZh": "這個節慶每年吸引數千名遊客。",
+      "glossZh": "吸引",
+      "distractorsZh": [
+        "趕走",
+        "阻止",
+        "拒絕"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q08",
+      "type": "wordCard",
+      "word": "stir",
+      "exampleEn": "Stir the soup slowly for two minutes.",
+      "exampleZh": "把湯慢慢攪拌兩分鐘。",
+      "glossZh": "攪拌",
+      "distractorsZh": [
+        "加熱",
+        "倒出",
+        "切開"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q09",
+      "type": "listenType",
+      "sentenceEn": "Many people rely on their phones to find their way.",
+      "sentenceZh": "很多人依賴手機來找路。"
+    },
+    {
+      "id": "b1-u03-l10-q10",
+      "type": "listenChoice",
+      "audioEn": "I slipped on the stairs this morning, but luckily I was not hurt.",
+      "audioZh": "我今天早上在樓梯上滑了一跤，還好沒受傷。",
+      "questionZh": "說話者今天早上發生了什麼事？",
+      "options": [
+        "Missed the bus to work.",
+        "Lost a key at home.",
+        "Fell off a bike on the road.",
+        "Slipped on the stairs."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u03-l10-q11",
+      "type": "shadowing",
+      "sentenceEn": "The new rules ensure that everyone gets a fair chance.",
+      "sentenceZh": "新規定確保每個人都有公平的機會。"
+    },
+    {
+      "id": "b1-u03-l10-q12",
+      "type": "shadowing",
+      "sentenceEn": "Bright colors attract the attention of young children.",
+      "sentenceZh": "鮮豔的顏色會吸引小孩子的注意。"
+    },
+    {
+      "id": "b1-u03-l10-q13",
+      "type": "mcq",
+      "stemEn": "Add some sugar and ____ the tea with a spoon.",
+      "stemZh": "加一點糖，再用湯匙攪拌茶。",
+      "options": [
+        "stir",
+        "defend",
+        "attract",
+        "eliminate"
+      ],
+      "optionGlossZh": [
+        "攪拌",
+        "防守",
+        "吸引",
+        "消除"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u03-l10-q14",
+      "type": "mcq",
+      "stemEn": "This dish is a great ____ of sweet and sour flavors.",
+      "stemZh": "這道菜把酸甜兩種味道結合得很好。",
+      "options": [
+        "connection",
+        "combination",
+        "protection",
+        "failure"
+      ],
+      "optionGlossZh": [
+        "連線",
+        "組合；結合",
+        "保護",
+        "失敗"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u03-l10-q15",
+      "type": "reading",
+      "passageEn": "Our town's night market has changed a lot. To attract more young visitors, it added food stands with an interesting combination of Taiwanese and Japanese dishes. The town also wanted to ensure safety, so it eliminated the problem of blocked paths. Some shop owners defended the traditional way, but most agreed to the changes. Today, many families rely on the market for cheap dinners. But be careful: the stone floor is easy to slip on after rain.",
+      "passageZh": "我們鎮上的夜市改變了很多。為了吸引更多年輕遊客，夜市增加了一些攤位，賣台式和日式料理的有趣組合。鎮公所也想確保安全，所以解決了通道被擋住的問題。有些店家為傳統做法辯護，但大部分都同意改變。現在很多家庭依賴夜市解決便宜的晚餐。不過要小心：雨後石頭地面很容易滑倒。",
+      "questions": [
+        {
+          "questionZh": "夜市為了吸引年輕遊客做了什麼？",
+          "options": [
+            "延長整個夜市的營業時間",
+            "增加台日組合攤位",
+            "降低所有攤位的價格",
+            "舉辦一場大型音樂表演"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "文章提醒大家注意什麼？",
+          "options": [
+            "雨後石頭地很滑",
+            "晚上人很多容易走散",
+            "每個攤位都只收現金",
+            "附近停車位很少"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q16",
+      "type": "translate",
+      "promptZh": "你不能只依賴別人。",
+      "hintWords": [
+        "rely"
+      ],
+      "referenceEn": [
+        "You can't just rely on other people.",
+        "You can't rely only on others."
+      ],
+      "rubricZh": [
+        "rely on＋人、事物等，表示「依賴」，on 不可少",
+        "「不能」可寫 can't、should not 等",
+        "「別人」可寫 other people、others 等"
+      ]
+    },
+    {
+      "id": "b1-u03-l10-q17",
+      "type": "makeSentence",
+      "targetWord": "ensure",
+      "instructionZh": "用 ensure 造一個句子，說說你出門前會確保做好的一件事。",
+      "referenceEn": [
+        "I always ensure that the door is locked before I leave.",
+        "I ensure the lights are off before I go out."
+      ],
+      "rubricZh": [
+        "ensure 表示「確保」，後面常接 that 子句（that 可省略）",
+        "說習慣多用現在簡單式，其他合理時態也接受",
+        "主詞是自己（I）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:30:18Z",
+    "verdicts": {
+      "b1-u03-l10-q10": [
+        3
+      ],
+      "b1-u03-l10-q13": [
+        0
+      ],
+      "b1-u03-l10-q14": [
+        1
+      ],
+      "b1-u03-l10-q15#0": [
+        1
+      ],
+      "b1-u03-l10-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：ensure 單字卡和造句參考答案同為出門前確認門窗，換情境",
+        "resolution": "改前：\"Please ensure that all windows are closed before you leave.\"；改後：\"Please ensure that your name is on every page.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：ensure 單字卡和造句參考答案同為出門前確認門窗，換情境",
+        "resolution": "改前：\"離開前請確認所有窗戶都關好了。\"；改後：\"請確認每一頁上都有你的名字。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：combination 單字卡和 mcq 都是「食物＝a nice combination of A and B」",
+        "resolution": "改前：\"The cake is a nice combination of chocolate and fruit.\"；改後：\"A combination of rain and wind made the trip hard.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：combination 單字卡和 mcq 都是「食物＝a nice combination of A and B」",
+        "resolution": "改前：\"這個蛋糕把巧克力和水果搭配得很好。\"；改後：\"雨加上風，讓這趟旅程很辛苦。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：rely 單字卡和翻譯參考答案主詞、句型相近",
+        "resolution": "改前：\"You can rely on him to finish the job.\"；改後：\"Many farmers rely on the rain in spring.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：rely 單字卡和翻譯參考答案主詞、句型相近",
+        "resolution": "改前：\"你可以信賴他會把工作完成。\"；改後：\"很多農夫仰賴春天的雨水。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：攤位用 eliminate 生硬，改成 eliminated the problem of blocked paths",
+        "resolution": "改前：\"Our town's night market has changed a lot. To attract more young visitors, it added food stands with an interesting combination of Taiwanese and Japanese dishes. The town also wanted to ensure safety, so it eliminated stands that blocked the paths. Some older shop owners defended the traditional way, but most agreed to the changes. Today, many families rely on the market for cheap dinners. But be careful: the stone floor is easy to slip on after rain.\"；改後：\"Our town's night market has changed a lot. To attract more young visitors, it added food stands with an interesting combination of Taiwanese and Japanese dishes. The town also wanted to ensure safety, so it eliminated the problem of blocked paths. Some shop owners defended the traditional way, but most agreed to the changes. Today, many families rely on the market for cheap dinners. But be careful: the stone floor is easy to slip on after rain.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：中文不通順；中譯同步",
+        "resolution": "改前：\"我們鎮上的夜市改變了很多。為了吸引更多年輕遊客，夜市增加了一些攤位，賣台日料理有趣的組合。鎮公所也想確保安全，所以撤掉了擋住通道的攤位。有些年長的店家為傳統做法辯護，但大部分都同意改變。現在很多家庭依賴夜市解決便宜的晚餐。不過要小心：雨後石頭地面很容易滑倒。\"；改後：\"我們鎮上的夜市改變了很多。為了吸引更多年輕遊客，夜市增加了一些攤位，賣台式和日式料理的有趣組合。鎮公所也想確保安全，所以解決了通道被擋住的問題。有些店家為傳統做法辯護，但大部分都同意改變。現在很多家庭依賴夜市解決便宜的晚餐。不過要小心：雨後石頭地面很容易滑倒。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：執行長裁示（b2b1）：評分要點不寫死時態，題目沒有時間標記時收所有合理時態",
+        "resolution": "改前：\"習慣用現在簡單式\"；改後：\"說習慣多用現在簡單式，其他合理時態也接受\"",
+        "resolvedAt": "2026-10-02T15:43:43Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長最終複審修正：雷同（§11.4）：修正後卡片和聽打、閱讀都成「Many＋複數名詞＋rely on」，改示範「信賴」",
+        "resolution": "改前：\"Many farmers rely on the rain in spring.\"；改後：\"She is a friend you can always rely on.\"",
+        "resolvedAt": "2026-10-02T16:46:37Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長最終複審修正：雷同（§11.4）：修正後卡片和聽打、閱讀都成「Many＋複數名詞＋rely on」，改示範「信賴」",
+        "resolution": "改前：\"很多農夫仰賴春天的雨水。\"；改後：\"她是個你隨時都可以信賴的朋友。\"",
+        "resolvedAt": "2026-10-02T16:46:37Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"延長營業時間\"；改後：\"延長整個夜市的營業時間\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"增加賣台日料理組合的攤位\"；改後：\"增加台日料理組合攤位\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"降低所有價格\"；改後：\"降低所有攤位的價格\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"雨後石頭地面容易滑倒\"；改後：\"雨後石頭地很滑\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"晚上人多容易走散\"；改後：\"晚上人很多容易走散\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"攤位只收現金\"；改後：\"每個攤位都只收現金\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：評分要點封閉清單——「可寫 A 或 B」「常用 X」一律改成「例如…等」，全級腳本掃描修正",
+        "resolution": "改前：\"rely on＋人或事物，表示「依賴」，on 不可少\"；改後：\"rely on＋人、事物等，表示「依賴」，on 不可少\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Fell off a bike.\"；改後：\"Missed the bus.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Missed the bus.\"；改後：\"Lost a key.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Lost a key.\"；改後：\"Fell off a bike on the road.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"Missed the bus.\"；改後：\"Missed the bus to work.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"Lost a key.\"；改後：\"Lost a key at home.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"增加台日料理組合攤位\"；改後：\"增加台日組合攤位\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"舉辦音樂表演\"；改後：\"舉辦一場大型音樂表演\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"依賴；信賴\"；改後：\"信賴；依賴\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"信賴；依賴\"；改後：\"依賴；信賴\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"她是個你隨時都可以信賴的朋友。\"；改後：\"她是個你隨時都可以依賴的朋友。\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      }
+    ]
+  }
+}

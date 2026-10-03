@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u19-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:26:07Z",
+  "properNouns": [
+    "Seaview",
+    "Ortega"
+  ],
+  "items": [
+    {
+      "id": "b1-u19-l01-q01",
+      "type": "wordCard",
+      "word": "reservation",
+      "exampleEn": "Reservations are not needed for lunch.",
+      "exampleZh": "午餐不需要訂位。",
+      "glossZh": "預訂；預約",
+      "distractorsZh": [
+        "收據",
+        "菜單",
+        "折扣"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q02",
+      "type": "wordCard",
+      "word": "visa",
+      "exampleEn": "Her visa runs out next month.",
+      "exampleZh": "她的簽證下個月到期。",
+      "glossZh": "簽證",
+      "distractorsZh": [
+        "護照",
+        "機票",
+        "駕照"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q03",
+      "type": "wordCard",
+      "word": "passport",
+      "exampleEn": "My passport photo looks terrible.",
+      "exampleZh": "我的護照照片拍得很糟。",
+      "glossZh": "護照",
+      "distractorsZh": [
+        "簽證",
+        "車票",
+        "學生證"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q04",
+      "type": "wordCard",
+      "word": "resort",
+      "exampleEn": "The resort has three pools and a private beach.",
+      "exampleZh": "這個度假村有三座泳池和一片私人海灘。",
+      "glossZh": "度假村；度假勝地",
+      "distractorsZh": [
+        "醫院",
+        "工廠",
+        "監獄"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q05",
+      "type": "wordCard",
+      "word": "cancel",
+      "exampleEn": "They cancelled the meeting at the last minute.",
+      "exampleZh": "他們在最後一刻取消了會議。",
+      "glossZh": "取消",
+      "distractorsZh": [
+        "延後",
+        "安排",
+        "參加"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q06",
+      "type": "wordCard",
+      "word": "customs",
+      "exampleEn": "The customs area was very crowded this morning.",
+      "exampleZh": "今天早上海關區非常擁擠。",
+      "glossZh": "海關",
+      "distractorsZh": [
+        "機場大廳",
+        "候機室",
+        "免稅店"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q07",
+      "type": "listenType",
+      "sentenceEn": "Please confirm your reservation by email.",
+      "sentenceZh": "請用電子郵件確認您的預訂。"
+    },
+    {
+      "id": "b1-u19-l01-q08",
+      "type": "listenChoice",
+      "audioEn": "Your morning flight has been cancelled, but we can put you on the next one at four.",
+      "audioZh": "您早上的班機取消了，不過我們可以幫您改搭四點那一班。",
+      "questionZh": "新的班機是幾點？",
+      "options": [
+        "At ten tomorrow morning.",
+        "At four p.m.",
+        "At noon tomorrow.",
+        "At eight tonight."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u19-l01-q09",
+      "type": "shadowing",
+      "sentenceEn": "The resort is popular with families in summer.",
+      "sentenceZh": "這個度假村夏天很受家庭歡迎。"
+    },
+    {
+      "id": "b1-u19-l01-q10",
+      "type": "shadowing",
+      "sentenceEn": "At customs, they checked every bag carefully.",
+      "sentenceZh": "在海關，他們仔細檢查每一個包包。"
+    },
+    {
+      "id": "b1-u19-l01-q11",
+      "type": "mcq",
+      "stemEn": "I lost my ____, so I can't fly abroad until I get a new one.",
+      "stemZh": "我弄丟了護照，所以拿到新的之前都不能出國。",
+      "options": [
+        "resort",
+        "passport",
+        "runway",
+        "customs"
+      ],
+      "optionGlossZh": [
+        "度假村",
+        "護照",
+        "跑道",
+        "海關"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u19-l01-q12",
+      "type": "mcq",
+      "stemEn": "The airline had to ____ the flight because of the snow.",
+      "stemZh": "航空公司因為下雪不得不取消班機。",
+      "options": [
+        "devastate",
+        "hang",
+        "visa",
+        "cancel"
+      ],
+      "optionGlossZh": [
+        "摧毀",
+        "懸掛",
+        "簽證",
+        "取消"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u19-l01-q13",
+      "type": "reading",
+      "passageEn": "Dear Ms. Ortega, thank you for your reservation at the Seaview Resort. Your room is booked from June 3 to June 7. Guests from some countries need a visa, so please check this before you travel. Bring your passport to the front desk when you arrive. After you go through customs at the airport, our free bus will take you to the resort. It leaves the terminal every hour. If you need to cancel, please tell us three days before your arrival.",
+      "passageZh": "Ortega 女士您好，感謝您預訂 Seaview 度假村。您的房間訂在 6 月 3 日到 6 月 7 日。來自某些國家的旅客需要簽證，出發前請先確認。抵達時請攜帶護照到櫃台。在機場通過海關後，我們的免費接駁車會載您到度假村，接駁車每小時從航廈發車一班。如需取消，請在抵達前三天告知我們。",
+      "questions": [
+        {
+          "questionZh": "抵達度假村時要在櫃台出示什麼？",
+          "options": [
+            "機票收據",
+            "訂房確認信",
+            "信用卡",
+            "護照"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "如果要取消，什麼時候要通知度假村？",
+          "options": [
+            "抵達當天早上",
+            "抵達前一個星期",
+            "抵達前三天",
+            "出發前一個月"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q14",
+      "type": "translate",
+      "promptZh": "我想把訂位改到星期五。",
+      "hintWords": [
+        "reservation"
+      ],
+      "referenceEn": [
+        "I'd like to change my reservation to Friday.",
+        "I want to move my reservation to Friday."
+      ],
+      "rubricZh": [
+        "reservation 表示「預訂、訂位」",
+        "「改到星期五」可寫，例如 change／move … to Friday 等",
+        "想要可寫，例如 I'd like to…、I want to… 等"
+      ]
+    },
+    {
+      "id": "b1-u19-l01-q15",
+      "type": "makeSentence",
+      "targetWord": "customs",
+      "instructionZh": "用 customs 造一個句子，說說你過海關的經驗或看法。",
+      "referenceEn": [
+        "It took us an hour to go through customs.",
+        "I had to open my suitcase at customs."
+      ],
+      "rubricZh": [
+        "customs 表示「海關」，例如 go through customs、at customs 等說法",
+        "說的是自己的經驗或看法（例如 I、we）",
+        "時態配合內容（例如說過去的經驗用過去式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u19-l01-q08": [
+        1
+      ],
+      "b1-u19-l01-q11": [
+        1
+      ],
+      "b1-u19-l01-q12": [
+        3
+      ],
+      "b1-u19-l01-q13#0": [
+        3
+      ],
+      "b1-u19-l01-q13#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/11/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：visa、resort 換成 u03 學過的動詞 devastate、hang",
+        "resolution": "改前：\"customs\"；改後：\"devastate\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/11/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：visa、resort 換成 u03 學過的動詞 devastate、hang",
+        "resolution": "改前：\"visa\"；改後：\"hang\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/11/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：visa、resort 換成 u03 學過的動詞 devastate、hang",
+        "resolution": "改前：\"resort\"；改後：\"customs\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：visa、resort 換成 u03 學過的動詞 devastate、hang",
+        "resolution": "改前：\"海關\"；改後：\"摧毀\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：visa、resort 換成 u03 學過的動詞 devastate、hang",
+        "resolution": "改前：\"簽證\"；改後：\"懸掛\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：visa、resort 換成 u03 學過的動詞 devastate、hang",
+        "resolution": "改前：\"度假村\"；改後：\"海關\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/11/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：customs→visa",
+        "resolution": "改前：\"customs\"；改後：\"visa\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：customs→visa",
+        "resolution": "改前：\"海關\"；改後：\"簽證\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長補充規則（只看英文）自查修正：執行長補充規則（只看英文）自查修正：干擾項放進英文句子仍可成立，換成明顯不通的字：reservation→runway",
+        "resolution": "改前：\"reservation\"；改後：\"runway\"",
+        "resolvedAt": "2026-10-02T22:16:29Z"
+      },
+      {
+        "path": "items/10/optionGlossZh/2",
+        "message": "執行長補充規則（只看英文）自查修正：執行長補充規則（只看英文）自查修正：干擾項放進英文句子仍可成立，換成明顯不通的字：reservation→runway",
+        "resolution": "改前：\"預訂\"；改後：\"跑道\"",
+        "resolvedAt": "2026-10-02T22:16:29Z"
+      }
+    ]
+  }
+}

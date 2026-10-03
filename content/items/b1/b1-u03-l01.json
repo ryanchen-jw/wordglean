@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u03-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:56:35Z",
+  "properNouns": [
+    "Taipei"
+  ],
+  "items": [
+    {
+      "id": "b1-u03-l01-q01",
+      "type": "wordCard",
+      "word": "obtain",
+      "exampleEn": "It is not easy to obtain tickets for this concert.",
+      "exampleZh": "這場演唱會的票不容易取得。",
+      "glossZh": "取得；獲得",
+      "distractorsZh": [
+        "放棄",
+        "遺失",
+        "借出"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q02",
+      "type": "wordCard",
+      "word": "distribution",
+      "exampleEn": "The distribution of the free books starts at ten.",
+      "exampleZh": "免費書籍十點開始發放。",
+      "glossZh": "分發；分配",
+      "distractorsZh": [
+        "收集",
+        "生產",
+        "販賣"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q03",
+      "type": "wordCard",
+      "word": "absorb",
+      "exampleEn": "This towel absorbs water quickly.",
+      "exampleZh": "這條毛巾吸水很快。",
+      "glossZh": "吸收",
+      "distractorsZh": [
+        "放出",
+        "擠壓",
+        "滴下"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q04",
+      "type": "wordCard",
+      "word": "interrupt",
+      "exampleEn": "Please don't interrupt me while I'm on the phone.",
+      "exampleZh": "我在講電話時請不要打斷我。",
+      "glossZh": "打斷；打擾",
+      "distractorsZh": [
+        "幫助",
+        "回答",
+        "等候"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q05",
+      "type": "wordCard",
+      "word": "exit",
+      "exampleEn": "Please leave the building by the nearest exit.",
+      "exampleZh": "請從最近的出口離開大樓。",
+      "glossZh": "出口",
+      "distractorsZh": [
+        "入口",
+        "樓梯",
+        "窗戶"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q06",
+      "type": "wordCard",
+      "word": "protective",
+      "exampleEn": "Workers must wear protective glasses in the factory.",
+      "exampleZh": "工人在工廠裡必須戴護目鏡。",
+      "glossZh": "保護的；防護的",
+      "distractorsZh": [
+        "透明的",
+        "昂貴的",
+        "舒適的"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q07",
+      "type": "wordCard",
+      "word": "clip",
+      "exampleEn": "She used a clip to hold the papers together.",
+      "exampleZh": "她用夾子把文件夾在一起。",
+      "glossZh": "夾子；迴紋針",
+      "distractorsZh": [
+        "膠帶",
+        "釘子",
+        "繩子"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q08",
+      "type": "wordCard",
+      "word": "slot",
+      "exampleEn": "Put a coin in the slot, and the machine will give you a ticket.",
+      "exampleZh": "把硬幣投入投幣口，機器就會給你一張票。",
+      "glossZh": "投入口；狹縫",
+      "distractorsZh": [
+        "按鈕",
+        "螢幕",
+        "把手"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Sorry to interrupt, but your taxi is waiting outside.",
+      "sentenceZh": "抱歉打擾一下，你的計程車在外面等了。"
+    },
+    {
+      "id": "b1-u03-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "When the fire alarm rings, avoid the elevator and use the exit at the end of the hall.",
+      "audioZh": "火災警報響的時候，不要搭電梯，從走廊盡頭的出口離開。",
+      "questionZh": "火災警報響時應該怎麼做？",
+      "options": [
+        "Take the elevator down to the first floor.",
+        "Use the exit at the end of the hall.",
+        "Wait quietly in the office until help comes.",
+        "Call the front desk right away."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u03-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "The food distribution will be in the park on Sunday.",
+      "sentenceZh": "食物發放會在星期天於公園進行。"
+    },
+    {
+      "id": "b1-u03-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The door opens when you push your card into the slot.",
+      "sentenceZh": "把卡片插進卡槽，門就會打開。"
+    },
+    {
+      "id": "b1-u03-l01-q13",
+      "type": "mcq",
+      "stemEn": "Plants ____ water through their roots.",
+      "stemZh": "植物透過根部吸收水分。",
+      "options": [
+        "absorb",
+        "interrupt",
+        "exit",
+        "lend"
+      ],
+      "optionGlossZh": [
+        "吸收",
+        "打斷",
+        "離開",
+        "借出"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u03-l01-q14",
+      "type": "mcq",
+      "stemEn": "You must wear ____ gloves when you work with hot metal.",
+      "stemZh": "處理高溫金屬時，你必須戴防護手套。",
+      "options": [
+        "protective",
+        "continual",
+        "former",
+        "occasional"
+      ],
+      "optionGlossZh": [
+        "防護的",
+        "不斷的",
+        "以前的",
+        "偶爾的"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u03-l01-q15",
+      "type": "reading",
+      "passageEn": "Our office building has a new security system. Every worker must obtain a new card from the front desk. To open the main door, you push your card into the slot under the screen. The distribution of the cards will finish on Friday. If you lose your card, wait at the side door and call the front desk. Please wear your card on your shirt with a clip so everyone can see it. Sorry to interrupt your busy week, and thank you for your help.",
+      "passageZh": "我們的辦公大樓有新的門禁系統。每位員工都必須到櫃台領取新卡。要打開大門，就把卡片插進螢幕下方的卡槽。卡片會在星期五發完。如果你的卡遺失了，請到側門等候，並打電話給櫃台。請用夾子把卡片別在上衣上，讓大家都看得到。抱歉在忙碌的一週打擾大家，謝謝各位配合。",
+      "questions": [
+        {
+          "questionZh": "新卡片什麼時候發完？",
+          "options": [
+            "星期一",
+            "今天",
+            "下個月",
+            "星期五"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "卡片遺失的話要怎麼做？",
+          "options": [
+            "請同事幫忙開門",
+            "到側門打電話給櫃台",
+            "到總公司重新申請",
+            "在大門口那裡等警衛"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q16",
+      "type": "translate",
+      "promptZh": "很抱歉打斷你們的談話。",
+      "hintWords": [
+        "interrupt"
+      ],
+      "referenceEn": [
+        "I'm sorry to interrupt your conversation.",
+        "Sorry for interrupting your talk."
+      ],
+      "rubricZh": [
+        "interrupt 表示「打斷」，後面可直接接受詞（例如 interrupt your conversation）",
+        "「很抱歉⋯」可寫 I'm sorry to…、Sorry for＋動名詞等",
+        "「談話」可寫 conversation、talk 等"
+      ]
+    },
+    {
+      "id": "b1-u03-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "obtain",
+      "instructionZh": "用 obtain 造一個句子，說說你曾經在哪裡取得某樣東西（例如證件、資料或票）。",
+      "referenceEn": [
+        "I obtained my passport at an office in Taipei.",
+        "I obtained the information from the library website."
+      ],
+      "rubricZh": [
+        "obtain 表示「取得、獲得」，後面接取得的東西",
+        "過去的經驗可用過去式或現在完成式（例如 obtained）",
+        "可用 at、from 等說明地點或來源",
+        "主詞是自己（I）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:30:18Z",
+    "verdicts": {
+      "b1-u03-l01-q10": [
+        1
+      ],
+      "b1-u03-l01-q13": [
+        0
+      ],
+      "b1-u03-l01-q14": [
+        0
+      ],
+      "b1-u03-l01-q15#0": [
+        3
+      ],
+      "b1-u03-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/12/options/3",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：干擾項 clip 的釋義用了動詞「夾住」（clip 只教名詞），換成 cancel",
+        "resolution": "改前：\"clip\"；改後：\"cancel\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/3",
+        "message": "執行長第②③關裁示修正：第③關疑似（採納）：干擾項 clip 的釋義用了動詞「夾住」（clip 只教名詞），換成 cancel",
+        "resolution": "改前：\"夾住\"；改後：\"取消\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：卡片遺失時的問題是進不了門，改成到側門等候並打電話（exit 已在聽選與單字卡練到）",
+        "resolution": "改前：\"Our office building has a new security system. Every worker must obtain a new card from the front desk. To open the main door, you push your card into the slot under the screen. The distribution of the cards will finish on Friday. If you lose your card, use the side exit and call the front desk. Please wear your card on your shirt with a clip so everyone can see it. Sorry to interrupt your busy week, and thank you for your help.\"；改後：\"Our office building has a new security system. Every worker must obtain a new card from the front desk. To open the main door, you push your card into the slot under the screen. The distribution of the cards will finish on Friday. If you lose your card, wait at the side door and call the front desk. Please wear your card on your shirt with a clip so everyone can see it. Sorry to interrupt your busy week, and thank you for your help.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改前：\"我們的辦公大樓有新的門禁系統。每位員工都必須到櫃台領取新卡。要打開大門，就把卡片插進螢幕下方的卡槽。卡片會在星期五發完。如果你的卡遺失了，請走側門出口並打電話給櫃台。請用夾子把卡片別在上衣上，讓大家都看得到。抱歉在忙碌的一週打擾大家，謝謝各位配合。\"；改後：\"我們的辦公大樓有新的門禁系統。每位員工都必須到櫃台領取新卡。要打開大門，就把卡片插進螢幕下方的卡槽。卡片會在星期五發完。如果你的卡遺失了，請到側門等候，並打電話給櫃台。請用夾子把卡片別在上衣上，讓大家都看得到。抱歉在忙碌的一週打擾大家，謝謝各位配合。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長第②③關裁示修正：第②關：小題正解同步短文",
+        "resolution": "改前：\"走側門出口並打電話給櫃台\"；改後：\"到側門等候並打電話給櫃台\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：執行長裁示（b2b1）：評分要點不寫死時態，題目沒有時間標記時收所有合理時態",
+        "resolution": "改前：\"過去的經驗用過去式（例如 obtained）\"；改後：\"過去的經驗可用過去式或現在完成式（例如 obtained）\"",
+        "resolvedAt": "2026-10-02T15:43:43Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"到側門等候並打電話給櫃台\"；改後：\"到側門打電話給櫃台\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"在大門口等警衛\"；改後：\"在大門口那裡等警衛\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Take the elevator down.\"；改後：\"Take the elevator down to the first floor.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Go to the exit at the end of the hall.\"；改後：\"Use the exit at the end of the hall.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"Wait in the office.\"；改後：\"Wait quietly in the office until help comes.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"Call the front desk.\"；改後：\"Call the front desk right away.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/12/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：cancel 是 u19 才教的字，換 lend",
+        "resolution": "改前：\"cancel\"；改後：\"lend\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：cancel 是 u19 才教的字，換 lend",
+        "resolution": "改前：\"取消\"；改後：\"借出\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      }
+    ]
+  }
+}

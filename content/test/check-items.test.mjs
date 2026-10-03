@@ -107,6 +107,50 @@ test('A2 第 2 批回報的 opencc 誤擋：家具、攀岩、你家什麼（家
   assert.deepEqual(checkA1(doc), []);
 });
 
+test('B1 撰寫撞到的教育部標準字形被 opencc 改成異體：布置、占、家具', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleZh = '他們用新家具布置辦公室。';
+  card(doc, 1).exampleZh = '女性占員工的一半。';
+  assert.deepEqual(checkA1(doc), []);
+});
+
+// B2 回報的 opencc 誤擋（片語錯轉：了→瞭、只→隻、導入→匯入；標準字形：公布、宣布、雇用）
+for (const [phrase, zh] of [
+  ['說明了', '他說明了遲到的原因。'],
+  ['證明了', '結果證明了他是對的。'],
+  ['唯一只', '這是唯一只要十分鐘的路線。'],
+  ['導入', '公司下個月導入新系統。'],
+  ['公布', '考試成績明天公布。'],
+  ['宣布', '經理宣布會議延期。'],
+  ['雇用', '這家店打算雇用兩個人。'],
+]) {
+  test(`B2 回報的 opencc 誤擋：${phrase}`, () => {
+    const doc = fixture('a1-u01-l01');
+    card(doc, 0).exampleZh = zh;
+    assert.deepEqual(checkA1(doc), []);
+  });
+}
+
+// B1 撰寫回報的 opencc 誤擋（片語錯轉與兩種寫法並存的字形）
+for (const [phrase, zh] of [
+  ['示範了', '老師示範了如何使用新機器。'],
+  ['老闆娘', '她是老闆娘的朋友。'],
+  ['擴展', '公司明年要把業務擴展到日本。'],
+  ['社區', '我們社區有一座小公園。'],
+  ['程序', '申請簽證的程序很長。'],
+  ['最多只有', '店裡最多只有二十個座位。'],
+  ['解雇', '他上個月被公司解雇了。'],
+  ['污染', '這條河的污染很嚴重。'],
+  ['聯繫', '有問題請和我們聯繫。'],
+  ['划槳', '我們得用力划槳才能到岸邊。'],
+]) {
+  test(`B1 回報的 opencc 誤擋：${phrase}`, () => {
+    const doc = fixture('a1-u01-l01');
+    card(doc, 0).exampleZh = zh;
+    assert.deepEqual(checkA1(doc), []);
+  });
+}
+
 test('pilot 實際產出撞到的誤擋：found（find 的過去式，A1）、café（cafe A1）、對象', () => {
   const doc = fixture('a1-u01-l01');
   card(doc, 0).exampleEn = 'I found the bag in the café.';

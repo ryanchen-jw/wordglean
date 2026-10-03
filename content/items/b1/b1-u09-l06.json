@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u09-l06",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T15:57:28Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u09-l06-q01",
+      "type": "wordCard",
+      "word": "psychological",
+      "exampleEn": "Losing a game can have a psychological effect on young players.",
+      "exampleZh": "輸球可能會對年輕球員造成心理影響。",
+      "glossZh": "心理的；精神上的",
+      "distractorsZh": [
+        "身體的",
+        "經濟的",
+        "技術的"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q02",
+      "type": "wordCard",
+      "word": "anger",
+      "exampleEn": "He could not hide his anger.",
+      "exampleZh": "他藏不住怒氣。",
+      "glossZh": "憤怒；怒氣",
+      "distractorsZh": [
+        "喜悅",
+        "害怕",
+        "驚訝"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q03",
+      "type": "wordCard",
+      "word": "whisper",
+      "exampleEn": "The children's whispers stopped when the teacher came in.",
+      "exampleZh": "老師一進來，孩子們的低語聲就停了。",
+      "glossZh": "低語；耳語",
+      "distractorsZh": [
+        "大叫",
+        "歌聲",
+        "笑聲"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q04",
+      "type": "wordCard",
+      "word": "anxiety",
+      "exampleEn": "Waiting for the test results filled her with anxiety.",
+      "exampleZh": "等待考試結果讓她非常焦慮。",
+      "glossZh": "焦慮；擔憂",
+      "distractorsZh": [
+        "自信",
+        "快樂",
+        "好奇"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q05",
+      "type": "wordCard",
+      "word": "aggressive",
+      "exampleEn": "That dog can be aggressive, so don't touch it.",
+      "exampleZh": "那隻狗可能有攻擊性，所以別摸牠。",
+      "glossZh": "有攻擊性的；積極進取的",
+      "distractorsZh": [
+        "溫和的",
+        "害羞的",
+        "懶惰的"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q06",
+      "type": "wordCard",
+      "word": "honest",
+      "exampleEn": "Please give me your honest opinion.",
+      "exampleZh": "請告訴我你真實的意見。",
+      "glossZh": "誠實的；坦白的",
+      "distractorsZh": [
+        "虛假的",
+        "禮貌的",
+        "簡短的"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q07",
+      "type": "wordCard",
+      "word": "yell",
+      "exampleEn": "We heard a loud yell from the playground.",
+      "exampleZh": "我們聽到遊樂場傳來一聲大叫。",
+      "glossZh": "叫喊；大叫",
+      "distractorsZh": [
+        "低語",
+        "笑聲",
+        "嘆氣"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q08",
+      "type": "wordCard",
+      "word": "personally",
+      "exampleEn": "Personally, I prefer tea to coffee.",
+      "exampleZh": "就我個人而言，我比較喜歡茶。",
+      "glossZh": "就個人而言；親自；本人",
+      "distractorsZh": [
+        "公開地",
+        "偶然地",
+        "最後"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "The manager came personally to say sorry to us.",
+      "sentenceZh": "經理親自來向我們道歉。"
+    },
+    {
+      "id": "b1-u09-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "Be honest with me. Did you break the window?",
+      "audioZh": "老實告訴我，是你打破窗戶的嗎？",
+      "questionZh": "說話者想知道什麼？",
+      "options": [
+        "Who cleaned the window.",
+        "Who opened the window.",
+        "Who broke the window.",
+        "Who bought the window."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u09-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "She took a deep breath to control her anger.",
+      "sentenceZh": "她深吸一口氣，控制住自己的怒氣。"
+    },
+    {
+      "id": "b1-u09-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "Some shop assistants are too aggressive, and customers don't like it.",
+      "sentenceZh": "有些店員太過咄咄逼人，顧客不喜歡。"
+    },
+    {
+      "id": "b1-u09-l06-q13",
+      "type": "mcq",
+      "stemEn": "From the next room, I heard a ____, so I knew they were telling secrets.",
+      "stemZh": "我聽到隔壁房間有人在低聲說話，就知道他們在說祕密。",
+      "options": [
+        "yell",
+        "laugh",
+        "cry",
+        "whisper"
+      ],
+      "optionGlossZh": [
+        "大叫",
+        "笑聲",
+        "哭聲",
+        "低語"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u09-l06-q14",
+      "type": "mcq",
+      "stemEn": "Thank you for being ____ with me; I needed to hear the truth.",
+      "stemZh": "謝謝你對我坦白，我需要聽到實話。",
+      "options": [
+        "careless",
+        "aggressive",
+        "psychological",
+        "honest"
+      ],
+      "optionGlossZh": [
+        "粗心的",
+        "有攻擊性的",
+        "心理的",
+        "誠實的"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u09-l06-q15",
+      "type": "reading",
+      "passageEn": "When my son started at a new school, he felt a lot of anxiety. One day, he suddenly came home with anger in his eyes. A bigger boy had been aggressive and pushed him. I decided to speak personally with his teacher. She was very honest: she had not seen it happen. The next day, she talked to both boys. Later, my son told me in a whisper that he felt safer now. The teacher said the psychological side of a new school is often harder than the lessons. Now the only yell I hear from him is a happy one when he sees his friends.",
+      "passageZh": "我兒子剛轉到新學校時非常焦慮。有一天，他突然帶著滿眼怒氣回家。一個比較高大的男孩對他很兇，還推了他。我決定親自去找他的老師談。老師很坦白：她當時沒看到。隔天，她和兩個男孩都談了話。後來，兒子小聲地告訴我，他現在覺得比較安全了。老師說，換新學校的心理層面往往比課業更難。現在我從他那裡聽到的叫聲，只剩下見到朋友時開心的大叫。",
+      "questions": [
+        {
+          "questionZh": "兒子為什麼帶著怒氣回家？",
+          "options": [
+            "他考試考不好",
+            "一個大男孩推了他",
+            "他在學校弄丟了書包",
+            "老師當著全班罵了他"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "作者做了什麼？",
+          "options": [
+            "讓兒子轉學",
+            "親自去和老師談",
+            "打電話給那個男孩的父母",
+            "什麼都沒做"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q16",
+      "type": "translate",
+      "promptZh": "就我個人而言，我覺得這個計畫很好。",
+      "hintWords": [
+        "personally"
+      ],
+      "referenceEn": [
+        "Personally, I think this plan is very good.",
+        "Personally, I feel that the plan is great."
+      ],
+      "rubricZh": [
+        "personally 放句首時加逗號，表示「就我個人而言」",
+        "後面接自己的看法，主詞用 I",
+        "可用 I think…、I feel… 等"
+      ]
+    },
+    {
+      "id": "b1-u09-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "honest",
+      "instructionZh": "用 honest 造一個句子，說說你怎麼看待誠實，或你什麼時候會很坦白。",
+      "referenceEn": [
+        "I always try to be honest with my friends.",
+        "I think it is important to be honest at work."
+      ],
+      "rubricZh": [
+        "honest 表示「誠實的、坦白的」，可用 be honest with＋人、be honest about＋事、be honest at work 等說法",
+        "可用 try to be honest、it is important to be honest 等",
+        "說的是自己的看法或習慣（例如 I think…、I always try…）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T17:34:30Z",
+    "verdicts": {
+      "b1-u09-l06-q10": [
+        2
+      ],
+      "b1-u09-l06-q13": [
+        3
+      ],
+      "b1-u09-l06-q14": [
+        3
+      ],
+      "b1-u09-l06-q15#0": [
+        1
+      ],
+      "b1-u09-l06-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長 b1b2 裁示修正：第②關：personally 此處＝本人，「私下」不精確",
+        "resolution": "改前：\"我私下不認識她，但我喜歡她的歌。\"；改後：\"我跟她本人不認識，但我喜歡她的歌。\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"一個較高大的男孩推了他\"；改後：\"一個大男孩推了他\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"他弄丟了書包\"；改後：\"他在學校弄丟了書包\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"老師罵了他\"；改後：\"老師當著全班罵了他\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長 b1b2 裁示修正：第②關＋第③關 FIX：要點 be honest with＋人與參考答案 2 矛盾",
+        "resolution": "改前：\"be honest with＋人，表示「對某人誠實」\"；改後：\"honest 表示「誠實的、坦白的」，可用 be honest with＋人、be honest about＋事、be honest at work 等說法\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長 b1b2 裁示修正：連動：「主詞用 I」改「例如」",
+        "resolution": "改前：\"說的是自己的看法或習慣（主詞用 I）\"；改後：\"說的是自己的看法或習慣（例如 I think…、I always try…）\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：sigh 是後面才教的字、song 與題意無關，換 laugh、cry",
+        "resolution": "改前：\"song\"；改後：\"yell\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：sigh 是後面才教的字、song 與題意無關，換 laugh、cry",
+        "resolution": "改前：\"yell\"；改後：\"laugh\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：sigh 是後面才教的字、song 與題意無關，換 laugh、cry",
+        "resolution": "改前：\"sigh\"；改後：\"cry\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：sigh 是後面才教的字、song 與題意無關，換 laugh、cry",
+        "resolution": "改前：\"歌曲\"；改後：\"大叫\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：sigh 是後面才教的字、song 與題意無關，換 laugh、cry",
+        "resolution": "改前：\"大叫\"；改後：\"笑聲\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：sigh 是後面才教的字、song 與題意無關，換 laugh、cry",
+        "resolution": "改前：\"嘆氣\"；改後：\"哭聲\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"憤怒；怒氣\"；改後：\"怒氣；憤怒\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"叫喊；大叫\"；改後：\"大叫；叫喊\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"就個人而言；親自；本人\"；改後：\"本人；就個人而言；親自\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"怒氣；憤怒\"；改後：\"憤怒；怒氣\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"大叫；叫喊\"；改後：\"叫喊；大叫\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/7/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"本人；就個人而言；親自\"；改後：\"就個人而言；親自；本人\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"I don't know her personally, but I like her songs.\"；改後：\"Personally, I prefer tea to coffee.\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"我跟她本人不認識，但我喜歡她的歌。\"；改後：\"就我個人而言，我比較喜歡茶。\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      }
+    ]
+  }
+}

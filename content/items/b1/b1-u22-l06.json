@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u22-l06",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:41:41Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u22-l06-q01",
+      "type": "wordCard",
+      "word": "thriller",
+      "exampleEn": "I couldn't sleep after watching that thriller.",
+      "exampleZh": "看完那部驚悚片後我睡不著。",
+      "glossZh": "驚悚片；驚悚小說",
+      "distractorsZh": [
+        "喜劇",
+        "卡通",
+        "紀錄片"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q02",
+      "type": "wordCard",
+      "word": "flute",
+      "exampleEn": "She has played the flute since she was seven.",
+      "exampleZh": "她從七歲就開始吹長笛。",
+      "glossZh": "長笛",
+      "distractorsZh": [
+        "鋼琴",
+        "鼓",
+        "小提琴"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q03",
+      "type": "wordCard",
+      "word": "trumpet",
+      "exampleEn": "The trumpet is the loudest instrument in our band.",
+      "exampleZh": "小號是我們樂團最大聲的樂器。",
+      "glossZh": "小號；喇叭",
+      "distractorsZh": [
+        "長笛",
+        "吉他",
+        "鋼琴"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q04",
+      "type": "wordCard",
+      "word": "idol",
+      "exampleEn": "He became a TV idol at the age of sixteen.",
+      "exampleZh": "他十六歲就成了電視偶像。",
+      "glossZh": "偶像",
+      "distractorsZh": [
+        "老師",
+        "鄰居",
+        "敵人"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q05",
+      "type": "wordCard",
+      "word": "magician",
+      "exampleEn": "The magician pulled a rabbit out of his hat.",
+      "exampleZh": "魔術師從帽子裡變出一隻兔子。",
+      "glossZh": "魔術師",
+      "distractorsZh": [
+        "廚師",
+        "小丑",
+        "警察"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q06",
+      "type": "wordCard",
+      "word": "wizard",
+      "exampleEn": "The old wizard in the story could turn stones into gold.",
+      "exampleZh": "故事裡的老巫師能把石頭變成金子。",
+      "glossZh": "巫師；奇才",
+      "distractorsZh": [
+        "國王",
+        "農夫",
+        "士兵"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q07",
+      "type": "wordCard",
+      "word": "guitarist",
+      "exampleEn": "The guitarist broke a string during the concert.",
+      "exampleZh": "吉他手在演唱會中弄斷了一根弦。",
+      "glossZh": "吉他手",
+      "distractorsZh": [
+        "鼓手",
+        "歌手",
+        "鋼琴家"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q08",
+      "type": "wordCard",
+      "word": "storyteller",
+      "exampleEn": "Children sat quietly around the storyteller in the library.",
+      "exampleZh": "孩子們安靜地圍坐在圖書館裡說故事的人身邊。",
+      "glossZh": "說故事的人",
+      "distractorsZh": [
+        "聽眾",
+        "讀者",
+        "作家"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q09",
+      "type": "listenType",
+      "sentenceEn": "The band is looking for a new guitarist.",
+      "sentenceZh": "樂團在找一位新的吉他手。"
+    },
+    {
+      "id": "b1-u22-l06-q10",
+      "type": "listenChoice",
+      "audioEn": "The magician's show is for children, so it starts at four in the afternoon.",
+      "audioZh": "這場魔術表演是給孩子看的，所以下午四點開始。",
+      "questionZh": "魔術表演幾點開始？",
+      "options": [
+        "At seven o'clock in the evening.",
+        "At four in the afternoon.",
+        "At ten o'clock in the morning.",
+        "At noon on Sunday."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u22-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "The music teacher plays both the flute and the trumpet.",
+      "sentenceZh": "音樂老師長笛和小號都會吹。"
+    },
+    {
+      "id": "b1-u22-l06-q12",
+      "type": "shadowing",
+      "sentenceEn": "In the book, a young wizard goes to a magic school.",
+      "sentenceZh": "在那本書裡，一位年輕的巫師去上魔法學校。"
+    },
+    {
+      "id": "b1-u22-l06-q13",
+      "type": "mcq",
+      "stemEn": "The ____ was so scary that I closed my eyes.",
+      "stemZh": "那部驚悚片恐怖到我閉上了眼睛。",
+      "options": [
+        "trumpet",
+        "thriller",
+        "flute",
+        "idol"
+      ],
+      "optionGlossZh": [
+        "小號",
+        "驚悚片",
+        "長笛",
+        "偶像"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u22-l06-q14",
+      "type": "mcq",
+      "stemEn": "My grandfather is a great ____; he knows hundreds of old tales.",
+      "stemZh": "我爺爺很會講故事，他知道好幾百個老故事。",
+      "options": [
+        "storyteller",
+        "guitarist",
+        "choir",
+        "monster"
+      ],
+      "optionGlossZh": [
+        "說故事的人",
+        "吉他手",
+        "合唱團",
+        "怪物"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u22-l06-q15",
+      "type": "reading",
+      "passageEn": "Last weekend, our town held a music and story festival. A magician did tricks with cards, and a storyteller dressed as a wizard told tales about magic animals. Later, a young band played on the main stage. The guitarist and the flute player were only fifteen, and a girl played the trumpet. Many teenagers came to see a pop singer who is their idol. Parents bought souvenirs, and in the evening, an outdoor cinema showed a thriller for older visitors.",
+      "passageZh": "上週末，我們鎮上辦了一場音樂與故事節。一位魔術師用撲克牌變魔術，一位打扮成巫師的說故事人講了魔法動物的故事。後來，一支年輕樂團在主舞台演出。吉他手和吹長笛的團員都只有十五歲，還有一個女生吹小號。很多青少年來看他們的偶像——一位流行歌手。家長們買了紀念品，晚上戶外電影院為年紀較大的觀眾放映了一部驚悚片。",
+      "questions": [
+        {
+          "questionZh": "那位說故事的人打扮成什麼？",
+          "options": [
+            "巫師",
+            "國王",
+            "大熊",
+            "公主"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "晚上的戶外電影院放映了什麼？",
+          "options": [
+            "一部動物紀錄片",
+            "一部卡通",
+            "一部喜劇片",
+            "一部驚悚片"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q16",
+      "type": "translate",
+      "promptZh": "我妹妹每天練習吹長笛。",
+      "hintWords": [
+        "flute"
+      ],
+      "referenceEn": [
+        "My sister practices the flute every day.",
+        "My younger sister practices playing the flute every day."
+      ],
+      "rubricZh": [
+        "flute 表示「長笛」，例如 play the flute、practice the flute 等說法",
+        "主詞是第三人稱單數，動詞要加 -s（例如 practices、plays）",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    },
+    {
+      "id": "b1-u22-l06-q17",
+      "type": "makeSentence",
+      "targetWord": "idol",
+      "instructionZh": "用 idol 造一個句子，說說你現在或小時候的偶像。",
+      "referenceEn": [
+        "My idol is a famous tennis player.",
+        "When I was young, my idol was a singer."
+      ],
+      "rubricZh": [
+        "idol 表示「偶像」，例如 my idol is… 等說法",
+        "說的是自己的偶像（例如 my）",
+        "時態配合內容（例如現在式、過去式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u22-l06-q10": [
+        1
+      ],
+      "b1-u22-l06-q13": [
+        1
+      ],
+      "b1-u22-l06-q14": [
+        0
+      ],
+      "b1-u22-l06-q15#0": [
+        0
+      ],
+      "b1-u22-l06-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/7/exampleEn",
+        "message": "B1 第 3 批審查裁示修正：第③關 FIX：count「重要」詞義越級，改 Children sat quietly around the storyteller in the library.",
+        "resolution": "改前：\"Good storytellers make every word count.\"；改後：\"Children sat quietly around the storyteller in the library.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "B1 第 3 批審查裁示修正：第③關 FIX：count「重要」詞義越級，改 Children sat quietly around the storyteller in the library.",
+        "resolution": "改前：\"好的說故事者讓每個字都有份量。\"；改後：\"孩子們安靜地圍坐在圖書館裡說故事的人身邊。\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：breakfast 換本課字 trumpet",
+        "resolution": "改前：\"breakfast\"；改後：\"trumpet\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：breakfast 換本課字 trumpet",
+        "resolution": "改前：\"早餐\"；改後：\"小號\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似：wizard 有「奇才」義可能成立，換 guitarist",
+        "resolution": "改前：\"wizard\"；改後：\"guitarist\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似：wizard 有「奇才」義可能成立，換 guitarist",
+        "resolution": "改前：\"巫師\"；改後：\"吉他手\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "B1 第 3 批審查裁示修正：第②關：兒童活動放驚悚片不合理，改音樂與故事節、驚悚片給年紀較大的觀眾；第③關疑似：閱讀選項形式統一",
+        "resolution": "改前：\"Last weekend, our town held a children's festival. A magician did tricks with cards, and a storyteller dressed as a wizard told tales about magic animals. Later, a young band played on the main stage. The guitarist and the flute player were only fifteen, and a girl played the trumpet. Many teenagers came to see a pop singer who is their idol. Parents bought souvenirs, and in the evening, an outdoor cinema showed a thriller.\"；改後：\"Last weekend, our town held a music and story festival. A magician did tricks with cards, and a storyteller dressed as a wizard told tales about magic animals. Later, a young band played on the main stage. The guitarist and the flute player were only fifteen, and a girl played the trumpet. Many teenagers came to see a pop singer who is their idol. Parents bought souvenirs, and in the evening, an outdoor cinema showed a thriller for older visitors.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "B1 第 3 批審查裁示修正：第②關：兒童活動放驚悚片不合理，改音樂與故事節、驚悚片給年紀較大的觀眾；第③關疑似：閱讀選項形式統一",
+        "resolution": "改前：\"上週末，我們鎮上辦了一場兒童節活動。一位魔術師用撲克牌變魔術，一位打扮成巫師的說故事人講了魔法動物的故事。後來，一支年輕樂團在主舞台演出。吉他手和吹長笛的團員都只有十五歲，還有一個女生吹小號。很多青少年來看他們的偶像——一位流行歌手。家長們買了紀念品，晚上戶外電影院放映了一部驚悚片。\"；改後：\"上週末，我們鎮上辦了一場音樂與故事節。一位魔術師用撲克牌變魔術，一位打扮成巫師的說故事人講了魔法動物的故事。後來，一支年輕樂團在主舞台演出。吉他手和吹長笛的團員都只有十五歲，還有一個女生吹小號。很多青少年來看他們的偶像——一位流行歌手。家長們買了紀念品，晚上戶外電影院為年紀較大的觀眾放映了一部驚悚片。\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "B1 第 3 批審查裁示修正：第②關：兒童活動放驚悚片不合理，改音樂與故事節、驚悚片給年紀較大的觀眾；第③關疑似：閱讀選項形式統一",
+        "resolution": "改前：\"一位巫師\"；改後：\"巫師\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "B1 第 3 批審查裁示修正：第②關：兒童活動放驚悚片不合理，改音樂與故事節、驚悚片給年紀較大的觀眾；第③關疑似：閱讀選項形式統一",
+        "resolution": "改前：\"喜劇片\"；改後：\"一部動物紀錄片\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "B1 第 3 批審查裁示修正：第②關：兒童活動放驚悚片不合理，改音樂與故事節、驚悚片給年紀較大的觀眾；第③關疑似：閱讀選項形式統一",
+        "resolution": "改前：\"一部動物紀錄片\"；改後：\"一部卡通\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "B1 第 3 批審查裁示修正：第②關：兒童活動放驚悚片不合理，改音樂與故事節、驚悚片給年紀較大的觀眾；第③關疑似：閱讀選項形式統一",
+        "resolution": "改前：\"一部卡通\"；改後：\"一部喜劇片\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "B1 第 3 批審查裁示修正：第③關 FIX：評分要點寫死 practices，改「動詞要加 -s（例如…）」",
+        "resolution": "改前：\"主詞第三人稱單數用 practices\"；改後：\"主詞是第三人稱單數，動詞要加 -s（例如 practices、plays）\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：trumpet→choir、idol→monster",
+        "resolution": "改前：\"trumpet\"；改後：\"choir\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：trumpet→choir、idol→monster",
+        "resolution": "改前：\"idol\"；改後：\"monster\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：trumpet→choir、idol→monster",
+        "resolution": "改前：\"小號\"；改後：\"合唱團\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：trumpet→choir、idol→monster",
+        "resolution": "改前：\"偶像\"；改後：\"怪物\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u03-l02",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T15:06:45Z",
+  "properNouns": [
+    "Ben",
+    "Taipei"
+  ],
+  "items": [
+    {
+      "id": "b1-u03-l02-q01",
+      "type": "wordCard",
+      "word": "dive",
+      "exampleEn": "The boys dived into the cold lake.",
+      "exampleZh": "男孩們跳進冰冷的湖裡。",
+      "glossZh": "跳水；潛水",
+      "distractorsZh": [
+        "爬上",
+        "滑倒",
+        "漂浮"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q02",
+      "type": "wordCard",
+      "word": "attain",
+      "exampleEn": "Few players attain this level of skill.",
+      "exampleZh": "很少球員能達到這種技術水準。",
+      "glossZh": "達到；獲得",
+      "distractorsZh": [
+        "放棄",
+        "改變",
+        "忘記"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q03",
+      "type": "wordCard",
+      "word": "renew",
+      "exampleEn": "You can renew your bus pass online.",
+      "exampleZh": "你可以上網續辦公車定期票。",
+      "glossZh": "續（期）；更新",
+      "distractorsZh": [
+        "取消",
+        "遺失",
+        "影印"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q04",
+      "type": "wordCard",
+      "word": "devastate",
+      "exampleEn": "The storm devastated the farmer's fruit trees.",
+      "exampleZh": "暴風雨摧毀了農夫的果樹。",
+      "glossZh": "摧毀；使極度難過",
+      "distractorsZh": [
+        "修理",
+        "保護",
+        "種植"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q05",
+      "type": "wordCard",
+      "word": "furnish",
+      "exampleEn": "They furnished the new office with modern desks.",
+      "exampleZh": "他們用新式的桌子布置新辦公室。",
+      "glossZh": "布置；為⋯配置家具",
+      "distractorsZh": [
+        "打掃",
+        "粉刷",
+        "出租"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q06",
+      "type": "wordCard",
+      "word": "accustom",
+      "exampleEn": "New workers need time to accustom themselves to the night hours.",
+      "exampleZh": "新員工需要時間讓自己習慣夜班的時間。",
+      "glossZh": "使習慣",
+      "distractorsZh": [
+        "使害怕",
+        "使厭倦",
+        "使驚訝"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q07",
+      "type": "wordCard",
+      "word": "rewrite",
+      "exampleEn": "The teacher asked me to rewrite the last part.",
+      "exampleZh": "老師要我重寫最後一段。",
+      "glossZh": "重寫；改寫",
+      "distractorsZh": [
+        "朗讀",
+        "刪除",
+        "影印"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q08",
+      "type": "wordCard",
+      "word": "fasten",
+      "exampleEn": "Please fasten your seat belt.",
+      "exampleZh": "請繫好安全帶。",
+      "glossZh": "繫緊；扣緊",
+      "distractorsZh": [
+        "解開",
+        "剪斷",
+        "拉長"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "We had to rewrite the whole report after the meeting.",
+      "sentenceZh": "開完會後，我們得把整份報告重寫。"
+    },
+    {
+      "id": "b1-u03-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "My gym membership ends this month, so I will renew it on Saturday.",
+      "audioZh": "我的健身房會員這個月到期，所以我星期六會去續約。",
+      "questionZh": "說話者星期六要做什麼？",
+      "options": [
+        "Stop going to the gym.",
+        "Join a new gym.",
+        "Renew the gym membership.",
+        "Buy new sports clothes."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u03-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "The team was devastated when they lost the final game.",
+      "sentenceZh": "輸掉決賽時，整個隊伍極度難過。"
+    },
+    {
+      "id": "b1-u03-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "He is now accustomed to getting up at six.",
+      "sentenceZh": "他現在已經習慣六點起床了。"
+    },
+    {
+      "id": "b1-u03-l02-q13",
+      "type": "mcq",
+      "stemEn": "Please ____ your coat; it's windy outside.",
+      "stemZh": "請把外套扣好，外面風很大。",
+      "options": [
+        "furnish",
+        "accustom",
+        "renew",
+        "fasten"
+      ],
+      "optionGlossZh": [
+        "布置",
+        "使習慣",
+        "更新",
+        "扣緊"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u03-l02-q14",
+      "type": "mcq",
+      "stemEn": "She practiced every day to ____ a high score on the test.",
+      "stemZh": "她每天練習，為了在考試中拿到高分。",
+      "options": [
+        "attain",
+        "devastate",
+        "dive",
+        "rewrite"
+      ],
+      "optionGlossZh": [
+        "達到；獲得",
+        "摧毀",
+        "潛水",
+        "重寫"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u03-l02-q15",
+      "type": "reading",
+      "passageEn": "Last year, Ben moved from Taipei to a small town by the sea. At first, it was hard for him to accustom himself to the quiet life. He rented an old house and slowly furnished it with things from local shops. He also learned to dive, and now he dives near the town every weekend. Ben works from home as a writer. His first book did not sell well, and the news devastated him. But he rewrote it, and he hopes to attain his goal this time.",
+      "passageZh": "去年，Ben 從台北搬到海邊的一個小鎮。一開始，他很難讓自己習慣安靜的生活。他租了一間老房子，慢慢用當地商店買的東西布置。他也學會了潛水，現在每個週末都在鎮上附近潛水。Ben 在家當作家。他的第一本書賣得不好，這個消息讓他非常難過。不過他把書重寫了，希望這次能達成目標。",
+      "questions": [
+        {
+          "questionZh": "Ben 怎麼布置他租的房子？",
+          "options": [
+            "用當地買的東西慢慢布置",
+            "請朋友幫他設計",
+            "從台北搬家具過去",
+            "屋主早就已經都布置好了"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "Ben 的第一本書賣得不好之後，他做了什麼？",
+          "options": [
+            "把書重寫",
+            "放棄寫作",
+            "搬回台北",
+            "開始教潛水"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q16",
+      "type": "translate",
+      "promptZh": "我花了一段時間才習慣這裡的天氣。",
+      "hintWords": [
+        "accustom"
+      ],
+      "referenceEn": [
+        "It took me some time to get accustomed to the weather here.",
+        "It took me a while to accustom myself to the weather here."
+      ],
+      "rubricZh": [
+        "可用 get accustomed to 或 accustom oneself to 等",
+        "to 是介系詞，後面接名詞或動名詞（例如 the weather、living here），不接原形動詞",
+        "「花了一段時間」可寫 It took me some time、It took me a while 等",
+        "寫成 get used to 意思也正確"
+      ]
+    },
+    {
+      "id": "b1-u03-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "renew",
+      "instructionZh": "用 renew 造一個句子，說說你最近續過或即將更新的東西（例如證件、會員）。",
+      "referenceEn": [
+        "I renewed my library card last week.",
+        "I am going to renew my driving license next month."
+      ],
+      "rubricZh": [
+        "renew 表示「更新、續（期）」，後面接證件、會員或合約等",
+        "已發生的事用過去式（例如 renewed），未來可用 will、be going to 等",
+        "主詞是自己（I）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:30:18Z",
+    "verdicts": {
+      "b1-u03-l02-q10": [
+        2
+      ],
+      "b1-u03-l02-q13": [
+        3
+      ],
+      "b1-u03-l02-q14": [
+        0
+      ],
+      "b1-u03-l02-q15#0": [
+        0
+      ],
+      "b1-u03-l02-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關連帶：閱讀改用 attain his goal，單字卡換成另一種情境避免雷同",
+        "resolution": "改前：\"She worked hard to attain her goal.\"；改後：\"Few players attain this level of skill.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關連帶：閱讀改用 attain his goal，單字卡換成另一種情境避免雷同",
+        "resolution": "改前：\"她努力工作來達成目標。\"；改後：\"很少球員能達到這種技術水準。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：第②關：貓當 accustom oneself 的主詞生硬，改以人為主詞；並避開閱讀與翻譯的情境",
+        "resolution": "改前：\"Our cat is slowly accustoming itself to the new house.\"；改後：\"New workers need time to accustom themselves to the night hours.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：第②關：貓當 accustom oneself 的主詞生硬，改以人為主詞；並避開閱讀與翻譯的情境",
+        "resolution": "改前：\"我們的貓正慢慢習慣新家。\"；改後：\"新員工需要時間讓自己習慣夜班的時間。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關：attain success 少見，改 attain his goal",
+        "resolution": "改前：\"Last year, Ben moved from Taipei to a small town by the sea. At first, it was hard for him to accustom himself to the quiet life. He rented an old house and slowly furnished it with things from local shops. He also learned to dive, and now he dives near the town every weekend. Ben works from home as a writer. His first book did not sell well, and the news devastated him. But he rewrote it, and he hopes to attain success this time.\"；改後：\"Last year, Ben moved from Taipei to a small town by the sea. At first, it was hard for him to accustom himself to the quiet life. He rented an old house and slowly furnished it with things from local shops. He also learned to dive, and now he dives near the town every weekend. Ben works from home as a writer. His first book did not sell well, and the news devastated him. But he rewrote it, and he hopes to attain his goal this time.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：中譯同步",
+        "resolution": "改前：\"去年，Ben 從台北搬到海邊的一個小鎮。一開始，他很難讓自己習慣安靜的生活。他租了一間老房子，慢慢用當地商店買的東西布置。他也學會了潛水，現在每個週末都在鎮上附近潛水。Ben 在家當作家。他的第一本書賣得不好，這個消息讓他非常難過。不過他把書重寫了，希望這次能獲得成功。\"；改後：\"去年，Ben 從台北搬到海邊的一個小鎮。一開始，他很難讓自己習慣安靜的生活。他租了一間老房子，慢慢用當地商店買的東西布置。他也學會了潛水，現在每個週末都在鎮上附近潛水。Ben 在家當作家。他的第一本書賣得不好，這個消息讓他非常難過。不過他把書重寫了，希望這次能達成目標。\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第③關 FIX：參考答案 2 和單字卡 renew my passport 雷同（並避開聽選的健身房會員）",
+        "resolution": "改前：\"I am going to renew my passport next month.\"；改後：\"I am going to renew my driving license next month.\"",
+        "resolvedAt": "2026-10-02T15:37:25Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長最終複審修正：雷同（§11.4）：第③關 FIX 沒修好——參考答案 2 只換了證件，改單字卡（換主詞、句型、情境）",
+        "resolution": "改前：\"I need to renew my passport before the trip.\"；改後：\"You can renew your bus pass online.\"",
+        "resolvedAt": "2026-10-02T16:46:37Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長最終複審修正：雷同（§11.4）：第③關 FIX 沒修好——參考答案 2 只換了證件，改單字卡（換主詞、句型、情境）",
+        "resolution": "改前：\"出國前我得換發新的護照。\"；改後：\"你可以上網續辦公車定期票。\"",
+        "resolvedAt": "2026-10-02T16:46:37Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"用當地商店買的東西慢慢布置\"；改後：\"用當地買的東西慢慢布置\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"從台北搬家具過去\"；改後：\"請朋友幫他設計\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"請朋友幫他設計\"；改後：\"從台北搬家具過去\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"屋主已經布置好了\"；改後：\"屋主早就已經都布置好了\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：評分要點封閉清單——「可寫 A 或 B」「常用 X」一律改成「例如…等」，全級腳本掃描修正",
+        "resolution": "改前：\"to 後面接名詞或動名詞\"；改後：\"to 後面接名詞、動名詞等\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Join a new gym.\"；改後：\"Stop going to the gym.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Stop going to the gym.\"；改後：\"Join a new gym.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Buy new sports clothes.\"；改後：\"Buy some new sports clothes for the gym.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"Buy some new sports clothes for the gym.\"；改後：\"Buy new sports clothes.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 2：to 是介系詞，這是文法規則不是封閉清單，加「等」會收錯答案",
+        "resolution": "改前：\"to 後面接名詞、動名詞等\"；改後：\"to 是介系詞，後面接名詞或動名詞（例如 the weather、living here），不接原形動詞\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：furnish→devastate",
+        "resolution": "改前：\"furnish\"；改後：\"devastate\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：furnish→devastate",
+        "resolution": "改前：\"布置\"；改後：\"摧毀\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/2/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"更新；續（期）\"；改後：\"續（期）；更新\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：attain→accustom",
+        "resolution": "改前：\"renew\"；改後：\"furnish\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：attain→accustom",
+        "resolution": "改前：\"furnish\"；改後：\"accustom\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：attain→accustom",
+        "resolution": "改前：\"attain\"；改後：\"renew\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：attain→accustom",
+        "resolution": "改前：\"更新\"；改後：\"布置\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：attain→accustom",
+        "resolution": "改前：\"布置\"；改後：\"使習慣\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：attain→accustom",
+        "resolution": "改前：\"達到\"；改後：\"更新\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：fasten→dive",
+        "resolution": "改前：\"fasten\"；改後：\"dive\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：fasten→dive",
+        "resolution": "改前：\"繫緊\"；改後：\"潛水\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      }
+    ]
+  }
+}

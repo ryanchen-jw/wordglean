@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u32-l02",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T22:21:08Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u32-l02-q01",
+      "type": "wordCard",
+      "word": "commercial",
+      "exampleEn": "This is a commercial building, not a home.",
+      "exampleZh": "這是一棟商業大樓，不是住家。",
+      "glossZh": "商業的",
+      "distractorsZh": [
+        "住宅的",
+        "農業的",
+        "宗教的"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q02",
+      "type": "wordCard",
+      "word": "agreement",
+      "exampleEn": "My parents and I made an agreement about screen time.",
+      "exampleZh": "我和爸媽針對使用螢幕的時間達成了協議。",
+      "glossZh": "協議；同意",
+      "distractorsZh": [
+        "帳單",
+        "收據",
+        "廣告"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q03",
+      "type": "wordCard",
+      "word": "conduct",
+      "exampleEn": "The teacher praised the students' good conduct.",
+      "exampleZh": "老師稱讚學生們良好的行為。",
+      "glossZh": "行為；舉止",
+      "distractorsZh": [
+        "成績",
+        "字跡",
+        "穿著"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q04",
+      "type": "wordCard",
+      "word": "department",
+      "exampleEn": "Which department do you work in?",
+      "exampleZh": "你在哪個部門工作？",
+      "glossZh": "部門；系",
+      "distractorsZh": [
+        "城市",
+        "樓層",
+        "班級"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q05",
+      "type": "wordCard",
+      "word": "leadership",
+      "exampleEn": "Leadership is an important skill for managers.",
+      "exampleZh": "領導能力是經理的重要技能。",
+      "glossZh": "領導；領導能力",
+      "distractorsZh": [
+        "運氣",
+        "外表",
+        "年齡"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q06",
+      "type": "wordCard",
+      "word": "document",
+      "exampleEn": "This document is written in three languages.",
+      "exampleZh": "這份文件是用三種語言寫成的。",
+      "glossZh": "文件",
+      "distractorsZh": [
+        "地圖",
+        "照片",
+        "雜誌"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q07",
+      "type": "wordCard",
+      "word": "content",
+      "exampleEn": "I like the design of this magazine, but not its content.",
+      "exampleZh": "我喜歡這本雜誌的設計，但不喜歡它的內容。",
+      "glossZh": "內容",
+      "distractorsZh": [
+        "時間",
+        "價格",
+        "長度"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q08",
+      "type": "wordCard",
+      "word": "producer",
+      "exampleEn": "The film's producer was very happy with the result.",
+      "exampleZh": "這部電影的製作人對結果很滿意。",
+      "glossZh": "製作人；生產者",
+      "distractorsZh": [
+        "觀眾",
+        "演員",
+        "影評人"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "This agreement is three pages long.",
+      "sentenceZh": "這份協議有三頁長。"
+    },
+    {
+      "id": "b1-u32-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "Please sign the document and return it to the sales department by Monday.",
+      "audioZh": "請在文件上簽名，並在星期一前交回業務部。",
+      "questionZh": "文件要交到哪裡？",
+      "options": [
+        "The sales department.",
+        "The manager's home address.",
+        "The front desk downstairs.",
+        "The office next to the lift."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u32-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "Please put the documents in the blue folder.",
+      "sentenceZh": "請把文件放進藍色資料夾。"
+    },
+    {
+      "id": "b1-u32-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "Commercial flights stopped because of the storm.",
+      "sentenceZh": "因為暴風雨，商業航班停飛了。"
+    },
+    {
+      "id": "b1-u32-l02-q13",
+      "type": "mcq",
+      "stemEn": "The ____ of this website is very useful for students.",
+      "stemZh": "這個網站的內容對學生很有用。",
+      "options": [
+        "leadership",
+        "conduct",
+        "content",
+        "commercial"
+      ],
+      "optionGlossZh": [
+        "領導",
+        "行為",
+        "內容",
+        "商業的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u32-l02-q14",
+      "type": "mcq",
+      "stemEn": "The two companies reached a final ____ after many meetings.",
+      "stemZh": "兩家公司在多次開會後達成了最終協議。",
+      "options": [
+        "producer",
+        "agreement",
+        "department",
+        "document"
+      ],
+      "optionGlossZh": [
+        "製作人",
+        "協議",
+        "部門",
+        "文件"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u32-l02-q15",
+      "type": "reading",
+      "passageEn": "Our department signed an agreement with a TV producer to make a short commercial video about our company. The producer sent us a long document that explained the content of the video. The video will also show our new slogan. Under the leadership of our manager, the team finished the work in two weeks. The agreement also had rules about staff conduct during filming: for example, no phones were allowed.",
+      "passageZh": "我們部門和一位電視製作人簽了協議，要拍一支介紹公司的商業短片。製作人寄給我們一份很長的文件，說明影片的內容。影片也會呈現我們的新標語。在經理的領導下，團隊兩週就完成了工作。協議裡也有關於員工在拍攝期間行為的規定：例如，不准使用手機。",
+      "questions": [
+        {
+          "questionZh": "那份文件說明了什麼？",
+          "options": [
+            "製作人的個人經歷",
+            "拍攝的地點和時間",
+            "每個人的薪水",
+            "影片的內容"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "拍攝期間員工不能做什麼？",
+          "options": [
+            "在攝影棚裡吃東西",
+            "穿公司的制服",
+            "使用手機",
+            "和製作人聊天"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q16",
+      "type": "translate",
+      "promptZh": "她的爸爸是一位電視製作人。",
+      "hintWords": [
+        "producer"
+      ],
+      "referenceEn": [
+        "Her father is a TV producer.",
+        "Her dad is a producer on TV."
+      ],
+      "rubricZh": [
+        "producer 表示「製作人」，可數名詞，例如 a TV producer 等說法",
+        "時態配合內容（例如現在簡單式等）"
+      ]
+    },
+    {
+      "id": "b1-u32-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "leadership",
+      "instructionZh": "用 leadership 造一個句子，說說你認識的人或你自己的領導能力。",
+      "referenceEn": [
+        "My captain has strong leadership skills.",
+        "I learned leadership when I was class leader."
+      ],
+      "rubricZh": [
+        "leadership 表示「領導、領導能力」，是不可數名詞，例如 leadership skills 等說法",
+        "說的是自己或認識的人（例如 I、my）",
+        "時態配合內容（例如現在簡單式、過去式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:46:56Z",
+    "verdicts": {
+      "b1-u32-l02-q10": [
+        0
+      ],
+      "b1-u32-l02-q13": [
+        2
+      ],
+      "b1-u32-l02-q14": [
+        1
+      ],
+      "b1-u32-l02-q15#0": [
+        3
+      ],
+      "b1-u32-l02-q15#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（多用現在簡單式）\"；改後：\"時態配合內容（例如現在簡單式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「協議寫著六月前付款」與閱讀「協議也規定拍攝時的行為」同為協議條款、主詞相同；改成我和爸媽約定螢幕時間",
+        "resolution": "改前：\"The agreement says that we must pay by June.\"；改後：\"My parents and I made an agreement about screen time.\"",
+        "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「協議寫著六月前付款」與閱讀「協議也規定拍攝時的行為」同為協議條款、主詞相同；改成我和爸媽約定螢幕時間",
+        "resolution": "改前：\"協議上寫著我們必須在六月前付款。\"；改後：\"我和爸媽針對使用螢幕的時間達成了協議。\"",
+        "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 Please read this document… 與聽選 Please sign the document…、跟讀 Please put the documents… 同為處理公文的祈使句；改成文件用三種語言寫成",
+        "resolution": "改前：\"Please read this document before the meeting.\"；改後：\"This document is written in three languages.\"",
+        "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 Please read this document… 與聽選 Please sign the document…、跟讀 Please put the documents… 同為處理公文的祈使句；改成文件用三種語言寫成",
+        "resolution": "改前：\"請在會議前讀完這份文件。\"；改後：\"這份文件是用三種語言寫成的。\"",
+        "resolvedAt": "2026-10-02T23:27:50Z"
+      }
+    ]
+  }
+}

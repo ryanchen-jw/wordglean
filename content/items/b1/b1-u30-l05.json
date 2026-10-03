@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u30-l05",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T22:14:23Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u30-l05-q01",
+      "type": "wordCard",
+      "word": "headline",
+      "exampleEn": "The news headline was about a big storm.",
+      "exampleZh": "新聞標題是關於一場大暴風雨。",
+      "glossZh": "標題；頭條",
+      "distractorsZh": [
+        "照片",
+        "廣告",
+        "日期"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q02",
+      "type": "wordCard",
+      "word": "announcement",
+      "exampleEn": "Did you hear the announcement? The concert has been canceled.",
+      "exampleZh": "你聽到廣播了嗎？音樂會取消了。",
+      "glossZh": "宣布；公告",
+      "distractorsZh": [
+        "問題",
+        "抱怨",
+        "道歉"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q03",
+      "type": "wordCard",
+      "word": "broadcast",
+      "exampleEn": "We watched the broadcast of the concert on TV.",
+      "exampleZh": "我們在電視上看了那場演唱會的轉播。",
+      "glossZh": "廣播；轉播",
+      "distractorsZh": [
+        "門票",
+        "海報",
+        "唱片"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q04",
+      "type": "wordCard",
+      "word": "virtual",
+      "exampleEn": "In this game, you live in a virtual world.",
+      "exampleZh": "在這個遊戲裡，你生活在一個虛擬世界。",
+      "glossZh": "虛擬的；線上的",
+      "distractorsZh": [
+        "真實的",
+        "古老的",
+        "危險的"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q05",
+      "type": "wordCard",
+      "word": "disk",
+      "exampleEn": "My old computer can't read this disk.",
+      "exampleZh": "我的舊電腦讀不了這張磁碟。",
+      "glossZh": "磁碟；光碟",
+      "distractorsZh": [
+        "信封",
+        "資料夾",
+        "筆記本"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q06",
+      "type": "wordCard",
+      "word": "scan",
+      "exampleEn": "The airport scan showed nothing strange in my bag.",
+      "exampleZh": "機場的掃描在我的包包裡沒發現任何奇怪的東西。",
+      "glossZh": "掃描",
+      "distractorsZh": [
+        "檢查表",
+        "收據",
+        "照片"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q07",
+      "type": "wordCard",
+      "word": "proclaim",
+      "exampleEn": "The king proclaimed a holiday for the whole country.",
+      "exampleZh": "國王宣布全國放假。",
+      "glossZh": "宣告；宣布",
+      "distractorsZh": [
+        "隱藏",
+        "否認",
+        "忘記"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q08",
+      "type": "wordCard",
+      "word": "update",
+      "exampleEn": "The website is updated every morning.",
+      "exampleZh": "這個網站每天早上更新。",
+      "glossZh": "更新",
+      "distractorsZh": [
+        "刪除",
+        "列印",
+        "寄出"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q09",
+      "type": "listenType",
+      "sentenceEn": "The radio broadcast starts at seven.",
+      "sentenceZh": "廣播節目七點開始。"
+    },
+    {
+      "id": "b1-u30-l05-q10",
+      "type": "listenChoice",
+      "audioEn": "Please update your phone tonight, because the old software will stop working tomorrow.",
+      "audioZh": "請今晚更新你的手機，因為舊軟體明天就不能用了。",
+      "questionZh": "為什麼今晚要更新手機？",
+      "options": [
+        "The old software will stop working.",
+        "The phone is too slow.",
+        "The battery is low.",
+        "It is free tonight."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u30-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "I keep all my old photos on a disk.",
+      "sentenceZh": "我把所有舊照片都存在一張磁碟裡。"
+    },
+    {
+      "id": "b1-u30-l05-q12",
+      "type": "shadowing",
+      "sentenceEn": "Attention, please. Here is an important announcement.",
+      "sentenceZh": "請注意，以下是一則重要公告。"
+    },
+    {
+      "id": "b1-u30-l05-q13",
+      "type": "mcq",
+      "stemEn": "I only read the ____, not the whole article.",
+      "stemZh": "我只看了標題，沒看整篇文章。",
+      "options": [
+        "broadcast",
+        "disk",
+        "scan",
+        "headline"
+      ],
+      "optionGlossZh": [
+        "轉播",
+        "磁碟",
+        "掃描",
+        "標題"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u30-l05-q14",
+      "type": "mcq",
+      "stemEn": "With these special glasses, you can visit a ____ museum without leaving home.",
+      "stemZh": "戴上這副特殊眼鏡，你不用出門就能參觀虛擬博物館。",
+      "options": [
+        "password",
+        "loud",
+        "fluent",
+        "virtual"
+      ],
+      "optionGlossZh": [
+        "密碼",
+        "大聲的",
+        "流利的",
+        "虛擬的"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u30-l05-q15",
+      "type": "reading",
+      "passageEn": "Our class visited a local radio station. In the news room, a woman was writing the headlines for the evening broadcast. She told us that she updates the news every hour. Then the manager made an announcement: the station will start a virtual tour on its website. In an old store room, we saw piles of disks with recordings from fifty years ago. A worker was making a scan of an old poster that proclaimed the opening of the station.",
+      "passageZh": "我們班參觀了一家地方廣播電台。在新聞室裡，一位女士正在為晚間廣播撰寫新聞標題。她告訴我們，她每個小時更新一次新聞。接著經理宣布了一件事：電台將在網站上推出虛擬導覽。在一間舊倉庫裡，我們看到一疊疊磁碟，裡面是五十年前的錄音。一位員工正在掃描一張舊海報，那張海報宣告了電台開播。",
+      "questions": [
+        {
+          "questionZh": "她多久更新一次新聞？",
+          "options": [
+            "每天一次",
+            "早上和晚上各一次",
+            "每個小時一次",
+            "每週一次"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "那張舊海報宣告了什麼？",
+          "options": [
+            "電台開始播音",
+            "第一家電影院開幕",
+            "一場音樂會",
+            "新的節目"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q16",
+      "type": "translate",
+      "promptZh": "他宣稱自己是全世界最好的廚師。",
+      "hintWords": [
+        "proclaim"
+      ],
+      "referenceEn": [
+        "He proclaimed himself the best cook in the world.",
+        "He proclaimed that he was the best cook in the world."
+      ],
+      "rubricZh": [
+        "proclaim 表示「宣告、聲稱」，例如 proclaim that… 等說法",
+        "時態配合內容（例如說過去的事用過去式等）"
+      ]
+    },
+    {
+      "id": "b1-u30-l05-q17",
+      "type": "makeSentence",
+      "targetWord": "virtual",
+      "instructionZh": "用 virtual 造一個句子，說說你參加過的線上活動或用過的虛擬工具。",
+      "referenceEn": [
+        "I took a virtual cooking class last month.",
+        "I sometimes meet my friends in a virtual game."
+      ],
+      "rubricZh": [
+        "virtual 表示「虛擬的、線上的」，例如 a virtual class 等說法",
+        "說的是自己的經驗（例如 I）",
+        "時態配合內容（例如說過去的事用過去式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:46:56Z",
+    "verdicts": {
+      "b1-u30-l05-q10": [
+        0
+      ],
+      "b1-u30-l05-q13": [
+        3
+      ],
+      "b1-u30-l05-q14": [
+        3
+      ],
+      "b1-u30-l05-q15#0": [
+        2
+      ],
+      "b1-u30-l05-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（例如說過去的事用過去式）\"；改後：\"時態配合內容（例如說過去的事用過去式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（例如說過去的事用過去式）\"；改後：\"時態配合內容（例如說過去的事用過去式等）\"",
+        "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「機長廣播天氣」與 u30-l02 mcq「機長宣布可解開安全帶」、u30-l07 mcq「車站廣播火車誤點」同為交通工具上的廣播；改成音樂會取消的廣播",
+        "resolution": "改前：\"The captain made an announcement about the weather.\"；改後：\"Did you hear the announcement? The concert has been canceled.\"",
+        "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「機長廣播天氣」與 u30-l02 mcq「機長宣布可解開安全帶」、u30-l07 mcq「車站廣播火車誤點」同為交通工具上的廣播；改成音樂會取消的廣播",
+        "resolution": "改前：\"機長廣播了一則關於天氣的消息。\"；改後：\"你聽到廣播了嗎？音樂會取消了。\"",
+        "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「把作品存到磁碟」與跟讀「把舊照片存在磁碟裡」同為存資料、只換名詞；改成舊電腦讀不了這張光碟",
+        "resolution": "改前：\"Save your work on this disk.\"；改後：\"My old computer can't read this disk.\"",
+        "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「把作品存到磁碟」與跟讀「把舊照片存在磁碟裡」同為存資料、只換名詞；改成舊電腦讀不了這張光碟",
+        "resolution": "改前：\"把你的作品存到這張磁碟裡。\"；改後：\"我的舊電腦讀不了這張光碟。\"",
+        "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #29：例句中譯改「磁碟」，對上第一義",
+        "resolution": "改前：\"我的舊電腦讀不了這張光碟。\"；改後：\"我的舊電腦讀不了這張磁碟。\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      }
+    ]
+  }
+}

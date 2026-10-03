@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u23-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:43:44Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u23-l01-q01",
+      "type": "wordCard",
+      "word": "athletic",
+      "exampleEn": "Athletic shoes are good for long walks.",
+      "exampleZh": "運動鞋很適合走長路。",
+      "glossZh": "運動的；擅長運動的",
+      "distractorsZh": [
+        "害羞的",
+        "懶惰的",
+        "聰明的"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q02",
+      "type": "wordCard",
+      "word": "gym",
+      "exampleEn": "The new gym near my office is open all night.",
+      "exampleZh": "我辦公室附近的新健身房整晚營業。",
+      "glossZh": "健身房；體育館",
+      "distractorsZh": [
+        "圖書館",
+        "超市",
+        "銀行"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q03",
+      "type": "wordCard",
+      "word": "spectator",
+      "exampleEn": "Thousands of spectators watched the final.",
+      "exampleZh": "數千名觀眾觀看了決賽。",
+      "glossZh": "觀眾",
+      "distractorsZh": [
+        "球員",
+        "教練",
+        "記者"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q04",
+      "type": "wordCard",
+      "word": "jog",
+      "exampleEn": "We jogged along the beach on our holiday.",
+      "exampleZh": "我們度假時沿著海灘慢跑。",
+      "glossZh": "慢跑",
+      "distractorsZh": [
+        "游泳",
+        "騎車",
+        "散步"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q05",
+      "type": "wordCard",
+      "word": "referee",
+      "exampleEn": "The referee made a bad decision in the last minute.",
+      "exampleZh": "裁判在最後一分鐘做了一個錯誤的判決。",
+      "glossZh": "裁判",
+      "distractorsZh": [
+        "教練",
+        "隊長",
+        "球迷"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q06",
+      "type": "wordCard",
+      "word": "lifeguard",
+      "exampleEn": "The lifeguard told the kids to stay away from the deep water.",
+      "exampleZh": "救生員要孩子們遠離深水區。",
+      "glossZh": "救生員",
+      "distractorsZh": [
+        "清潔員",
+        "售票員",
+        "廚師"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q07",
+      "type": "wordCard",
+      "word": "race",
+      "exampleEn": "She won the race by just one second.",
+      "exampleZh": "她只以一秒之差贏得比賽。",
+      "glossZh": "賽跑；比賽",
+      "distractorsZh": [
+        "考試",
+        "選舉",
+        "遊戲"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q08",
+      "type": "wordCard",
+      "word": "beat",
+      "exampleEn": "Nobody can beat my grandmother at chess.",
+      "exampleZh": "下西洋棋沒人贏得了我奶奶。",
+      "glossZh": "打敗；擊敗",
+      "distractorsZh": [
+        "輸給",
+        "幫助",
+        "歡迎"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "The lifeguard watches the pool all day.",
+      "sentenceZh": "救生員整天看守游泳池。"
+    },
+    {
+      "id": "b1-u23-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "The city race starts at seven, so runners should arrive by half past six.",
+      "audioZh": "市區賽跑七點開始，所以跑者應該在六點半前到。",
+      "questionZh": "跑者應該幾點前到？",
+      "options": [
+        "At seven o'clock.",
+        "At six o'clock.",
+        "By half past six.",
+        "By eight."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u23-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "The spectators stood up and cheered.",
+      "sentenceZh": "觀眾們站起來歡呼。"
+    },
+    {
+      "id": "b1-u23-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Do you want to jog with me tomorrow morning?",
+      "sentenceZh": "你明天早上想跟我一起慢跑嗎？"
+    },
+    {
+      "id": "b1-u23-l01-q13",
+      "type": "mcq",
+      "stemEn": "I lift weights at the ____ after work.",
+      "stemZh": "我下班後在健身房舉重。",
+      "options": [
+        "race",
+        "gym",
+        "referee",
+        "spectator"
+      ],
+      "optionGlossZh": [
+        "賽跑",
+        "健身房",
+        "裁判",
+        "觀眾"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u23-l01-q14",
+      "type": "mcq",
+      "stemEn": "Our team ____ the champions last night.",
+      "stemZh": "我們隊昨晚打敗了冠軍隊。",
+      "options": [
+        "beat",
+        "jogged",
+        "inhaled",
+        "delivered"
+      ],
+      "optionGlossZh": [
+        "打敗",
+        "慢跑",
+        "吸入",
+        "遞送"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u23-l01-q15",
+      "type": "reading",
+      "passageEn": "Every Saturday, our town holds a five-kilometer race in the park. Hundreds of runners take part, and many spectators come to cheer. My father is very athletic; he jogs every morning and goes to the gym twice a week. Last Saturday, he finally beat his best time. Next to the path, a lifeguard watches the lake. After the race, children play a short football game with a referee, and then there is a small outdoor concert.",
+      "passageZh": "每個星期六，我們鎮上都會在公園舉辦五公里賽跑。有好幾百名跑者參加，也有很多觀眾來加油。我爸爸很擅長運動，他每天早上慢跑，每週去健身房兩次。上星期六，他終於打破了自己的最佳成績。步道旁有一位救生員看守湖邊。賽跑結束後，孩子們會由一位裁判帶著踢一場短短的足球賽，接著還有一場小型戶外音樂會。",
+      "questions": [
+        {
+          "questionZh": "爸爸上星期六怎麼了？",
+          "options": [
+            "第一次跑完全程",
+            "跑出最佳成績",
+            "在比賽中受了點傷",
+            "幫忙當比賽的裁判"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "救生員負責什麼？",
+          "options": [
+            "看守湖邊",
+            "檢查跑者的路線",
+            "幫忙發水給跑者",
+            "在終點拍照"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q16",
+      "type": "translate",
+      "promptZh": "裁判吹哨子開始比賽。",
+      "hintWords": [
+        "referee"
+      ],
+      "referenceEn": [
+        "The referee blew the whistle to start the game.",
+        "The referee started the match with his whistle."
+      ],
+      "rubricZh": [
+        "referee 表示「裁判」",
+        "「吹哨子」可寫，例如 blow the whistle 等",
+        "時態配合內容（例如說過去的事用過去式）"
+      ]
+    },
+    {
+      "id": "b1-u23-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "gym",
+      "instructionZh": "用 gym 造一個句子，說說你去健身房的習慣或看法。",
+      "referenceEn": [
+        "I go to the gym after work on Mondays.",
+        "I don't like the gym, so I exercise at home."
+      ],
+      "rubricZh": [
+        "gym 表示「健身房」，例如 go to the gym 等說法",
+        "說的是自己的習慣或看法（例如 I）",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u23-l01-q10": [
+        2
+      ],
+      "b1-u23-l01-q13": [
+        1
+      ],
+      "b1-u23-l01-q14": [
+        0
+      ],
+      "b1-u23-l01-q15#0": [
+        1
+      ],
+      "b1-u23-l01-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/3/exampleEn",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似（§11.4）：與閱讀同為早上慢跑，改 We jogged along the beach on our holiday.",
+        "resolution": "改前：\"I jog around the park before work.\"；改後：\"We jogged along the beach on our holiday.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "B1 第 3 批審查裁示修正：第③關疑似（§11.4）：與閱讀同為早上慢跑，改 We jogged along the beach on our holiday.",
+        "resolution": "改前：\"我上班前會繞著公園慢跑。\"；改後：\"我們度假時沿著海灘慢跑。\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "B1 第 3 批審查裁示修正：第③關 FIX：sharp「整點」B2，改 At seven o'clock.",
+        "resolution": "改前：\"At six.\"；改後：\"At seven o'clock.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "B1 第 3 批審查裁示修正：第③關 FIX：sharp「整點」B2，改 At seven o'clock.",
+        "resolution": "改前：\"At seven sharp.\"；改後：\"At six.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "B1 第 3 批審查裁示修正：第②關：路跑由 referee 檢查不自然，改賽後兒童足球賽由裁判帶",
+        "resolution": "改前：\"Every Saturday, our town holds a five-kilometer race in the park. Hundreds of runners take part, and many spectators come to cheer. My father is very athletic; he jogs every morning and goes to the gym twice a week. Last Saturday, he finally beat his best time. A referee checks that every runner stays on the path, and a lifeguard watches the lake next to the path. After the race, there is a small outdoor concert.\"；改後：\"Every Saturday, our town holds a five-kilometer race in the park. Hundreds of runners take part, and many spectators come to cheer. My father is very athletic; he jogs every morning and goes to the gym twice a week. Last Saturday, he finally beat his best time. Next to the path, a lifeguard watches the lake. After the race, children play a short football game with a referee, and then there is a small outdoor concert.\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "B1 第 3 批審查裁示修正：第②關：路跑由 referee 檢查不自然，改賽後兒童足球賽由裁判帶",
+        "resolution": "改前：\"每個星期六，我們鎮上都會在公園舉辦五公里賽跑。有好幾百名跑者參加，也有很多觀眾來加油。我爸爸很擅長運動，他每天早上慢跑，每週去健身房兩次。上星期六，他終於打破了自己的最佳成績。有一位裁判確認每位跑者都沒有離開步道，還有一位救生員看守步道旁的湖。賽跑結束後，有一場小型戶外音樂會。\"；改後：\"每個星期六，我們鎮上都會在公園舉辦五公里賽跑。有好幾百名跑者參加，也有很多觀眾來加油。我爸爸很擅長運動，他每天早上慢跑，每週去健身房兩次。上星期六，他終於打破了自己的最佳成績。步道旁有一位救生員看守湖邊。賽跑結束後，孩子們會由一位裁判帶著踢一場短短的足球賽，接著還有一場小型戶外音樂會。\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：athletic 換成 u20 學過的動詞 inhaled",
+        "resolution": "改前：\"athletic\"；改後：\"inhaled\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq）：athletic 換成 u20 學過的動詞 inhaled",
+        "resolution": "改前：\"運動的\"；改後：\"吸入\"",
+        "resolvedAt": "2026-10-02T19:42:27Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：spectator→lifeguard",
+        "resolution": "改前：\"spectator\"；改後：\"lifeguard\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：spectator→lifeguard",
+        "resolution": "改前：\"觀眾\"；改後：\"救生員\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "B1 第 3 批審查裁示修正：§11.24 比例規則：At seven sharp 改 At seven o'clock 後，At six. 低於其他選項平均長度的 0.5 倍，改 At six o'clock.",
+        "resolution": "改前：\"At six.\"；改後：\"At six o'clock.\"",
+        "resolvedAt": "2026-10-02T19:49:21Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"賽跑；比賽\"；改後：\"比賽；賽跑\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "執行長最終複審修正：F8：lifeguard 換 delivered",
+        "resolution": "改前：\"lifeguard\"；改後：\"delivered\"",
+        "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "執行長最終複審修正：F8：lifeguard 換 delivered",
+        "resolution": "改前：\"救生員\"；改後：\"遞送\"",
+        "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"比賽；賽跑\"；改後：\"賽跑；比賽\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      }
+    ]
+  }
+}

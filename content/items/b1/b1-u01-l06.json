@@ -155,13 +155,13 @@
       "options": [
         "according to",
         "used to",
-        "instead of",
+        "farthest",
         "because of"
       ],
       "optionGlossZh": [
         "根據",
         "過去常常",
-        "代替",
+        "最遠地",
         "因為"
       ],
       "answer": 1
@@ -172,14 +172,14 @@
       "stemEn": "Let's walk ____ taking the bus. It's a nice day.",
       "stemZh": "我們走路去，不要搭公車吧，今天天氣很好。",
       "options": [
-        "according to",
-        "used to",
+        "farther",
+        "furthest",
         "instead of",
         "ought to"
       ],
       "optionGlossZh": [
-        "根據",
-        "過去常常",
+        "更遠地",
+        "最遠地",
         "代替；而不是",
         "應該"
       ],
@@ -338,6 +338,54 @@
         "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
         "resolution": "改前：\"很辛苦，想放棄\"；改後：\"很辛苦想放棄\"",
         "resolvedAt": "2026-10-02T18:28:08Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：according to 與 q13 重複，換本課字 farther",
+        "resolution": "改前：\"according to\"；改後：\"farther\"",
+        "resolvedAt": "2026-10-02T19:45:04Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：according to 與 q13 重複，換本課字 farther",
+        "resolution": "改前：\"根據\"；改後：\"更遠地\"",
+        "resolvedAt": "2026-10-02T19:45:04Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"代替；而不是\"；改後：\"而不是；代替\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：instead of 換本課字 farthest",
+        "resolution": "改前：\"instead of\"；改後：\"farthest\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：instead of 換本課字 farthest",
+        "resolution": "改前：\"代替\"；改後：\"最遠地\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：used to 換本課字 furthest",
+        "resolution": "改前：\"used to\"；改後：\"furthest\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：used to 換本課字 furthest",
+        "resolution": "改前：\"過去常常\"；改後：\"最遠地\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"而不是；代替\"；改後：\"代替；而不是\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
       }
     ]
   }

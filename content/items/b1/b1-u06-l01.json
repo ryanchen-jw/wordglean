@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u06-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T14:57:04Z",
+  "properNouns": [
+    "Wang"
+  ],
+  "items": [
+    {
+      "id": "b1-u06-l01-q01",
+      "type": "wordCard",
+      "word": "aspect",
+      "exampleEn": "Cost is only one aspect of the problem.",
+      "exampleZh": "費用只是這個問題的其中一個面向。",
+      "glossZh": "方面；面向",
+      "distractorsZh": [
+        "原因",
+        "結果",
+        "答案"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q02",
+      "type": "wordCard",
+      "word": "acceptance",
+      "exampleEn": "Her acceptance of the job offer made everyone happy.",
+      "exampleZh": "她接受了這份工作，讓大家都很高興。",
+      "glossZh": "接受；認可",
+      "distractorsZh": [
+        "拒絕",
+        "申請",
+        "延後"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q03",
+      "type": "wordCard",
+      "word": "meaningful",
+      "exampleEn": "Volunteering is a meaningful way to spend your weekend.",
+      "exampleZh": "當志工是度過週末很有意義的方式。",
+      "glossZh": "有意義的",
+      "distractorsZh": [
+        "無聊的",
+        "昂貴的",
+        "輕鬆的"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q04",
+      "type": "wordCard",
+      "word": "puzzle",
+      "exampleEn": "How he got the money is still a puzzle to me.",
+      "exampleZh": "他是怎麼拿到那筆錢的，對我來說仍是個謎。",
+      "glossZh": "謎；難題；拼圖",
+      "distractorsZh": [
+        "計畫",
+        "禮物",
+        "消息"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q05",
+      "type": "wordCard",
+      "word": "behalf",
+      "exampleEn": "She accepted the prize on behalf of her team.",
+      "exampleZh": "她代表她的團隊領獎。",
+      "glossZh": "（on behalf of）代表",
+      "distractorsZh": [
+        "不顧",
+        "除了",
+        "反對"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q06",
+      "type": "wordCard",
+      "word": "favorable",
+      "exampleEn": "The weather was favorable for our trip.",
+      "exampleZh": "天氣對我們的旅行很有利。",
+      "glossZh": "有利的；贊同的",
+      "distractorsZh": [
+        "負面的",
+        "簡短的",
+        "奇怪的"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q07",
+      "type": "wordCard",
+      "word": "disagreement",
+      "exampleEn": "There was a disagreement about where to eat.",
+      "exampleZh": "大家對要去哪裡吃飯意見不合。",
+      "glossZh": "意見不合；分歧",
+      "distractorsZh": [
+        "同意",
+        "決定",
+        "邀請"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q08",
+      "type": "wordCard",
+      "word": "confirmation",
+      "exampleEn": "You will get a confirmation email after you book.",
+      "exampleZh": "預訂之後，你會收到一封確認信。",
+      "glossZh": "確認；證實",
+      "distractorsZh": [
+        "邀請",
+        "抱怨",
+        "廣告"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "The weather was favorable, so the flight left on time.",
+      "sentenceZh": "天氣條件良好，所以班機準時起飛。"
+    },
+    {
+      "id": "b1-u06-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "I'm calling on behalf of Ms. Wang to change the meeting time.",
+      "audioZh": "我代表王小姐打電話來更改開會時間。",
+      "questionZh": "打電話的人代表誰？",
+      "options": [
+        "The hotel.",
+        "The manager.",
+        "Ms. Wang.",
+        "The airline."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u06-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "We had a small disagreement, but we are still good friends.",
+      "sentenceZh": "我們有過一點小爭執，但仍然是好朋友。"
+    },
+    {
+      "id": "b1-u06-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "This puzzle has one thousand pieces.",
+      "sentenceZh": "這幅拼圖有一千片。"
+    },
+    {
+      "id": "b1-u06-l01-q13",
+      "type": "mcq",
+      "stemEn": "Please wait for ____ of your booking before you pay.",
+      "stemZh": "付款前請先等候您的訂位確認。",
+      "options": [
+        "aspect",
+        "disagreement",
+        "confirmation",
+        "puzzle"
+      ],
+      "optionGlossZh": [
+        "方面",
+        "意見不合",
+        "確認",
+        "謎"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u06-l01-q14",
+      "type": "mcq",
+      "stemEn": "Helping others makes my life more ____.",
+      "stemZh": "幫助別人讓我的生活更有意義。",
+      "options": [
+        "partial",
+        "favorable",
+        "meaningful",
+        "urgent"
+      ],
+      "optionGlossZh": [
+        "部分的",
+        "有利的",
+        "有意義的",
+        "緊急的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u06-l01-q15",
+      "type": "reading",
+      "passageEn": "Our team had a long meeting about a new product. At first, there was some disagreement, because each person focused on a different aspect: price, design, or safety. How to please everyone was a real puzzle. In the end, our manager spoke on behalf of the whole team and asked the director for help. The director's response was favorable, and we got confirmation of the budget the next day. The acceptance of our plan was a meaningful moment for all of us.",
+      "passageZh": "我們團隊為了一項新產品開了很長的會。一開始大家意見有些分歧，因為每個人關注的面向不同：價格、設計或安全。要怎麼讓每個人都滿意，真是個難題。最後，經理代表整個團隊向總監求助。總監的回應很正面，隔天我們就收到預算的確認。我們的計畫被接受，對大家來說是很有意義的時刻。",
+      "questions": [
+        {
+          "questionZh": "一開始大家為什麼意見不合？",
+          "options": [
+            "大家關注點不同",
+            "預算根本就不夠大家用",
+            "經理那天剛好不在場",
+            "大家開了一天會都太累了"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "隔天團隊收到了什麼？",
+          "options": [
+            "顧客的抱怨",
+            "新的工作",
+            "一筆獎金",
+            "預算的確認"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q16",
+      "type": "translate",
+      "promptZh": "我代表公司歡迎大家。",
+      "hintWords": [
+        "behalf"
+      ],
+      "referenceEn": [
+        "On behalf of the company, I welcome everyone.",
+        "I would like to welcome you all on behalf of the company."
+      ],
+      "rubricZh": [
+        "on behalf of＋人、團體等，表示「代表⋯」",
+        "on behalf of 可放在句首、句尾等位置",
+        "「歡迎大家」可寫 welcome everyone、welcome you all 等"
+      ]
+    },
+    {
+      "id": "b1-u06-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "meaningful",
+      "instructionZh": "用 meaningful 造一個句子，說說一件你覺得很有意義的事。",
+      "referenceEn": [
+        "Teaching kids to read is meaningful work for me.",
+        "My trip to my grandmother's village was very meaningful."
+      ],
+      "rubricZh": [
+        "meaningful 表示「有意義的」，例如放在名詞前、be 動詞後等",
+        "說的是自己的經驗或看法（例如 for me、my）",
+        "時態配合內容（例如 is、was）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T15:30:18Z",
+    "verdicts": {
+      "b1-u06-l01-q10": [
+        2
+      ],
+      "b1-u06-l01-q13": [
+        2
+      ],
+      "b1-u06-l01-q14": [
+        2
+      ],
+      "b1-u06-l01-q15#0": [
+        0
+      ],
+      "b1-u06-l01-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關：director 譯「主管」與 manager 層級分不出來，改「總監」",
+        "resolution": "改前：\"我們團隊為了一項新產品開了很長的會。一開始大家意見有些分歧，因為每個人關注的面向不同：價格、設計或安全。要怎麼讓每個人都滿意，真是個難題。最後，經理代表整個團隊向主管求助。主管的回應很正面，隔天我們就收到預算的確認。我們的計畫被接受，對大家來說是很有意義的時刻。\"；改後：\"我們團隊為了一項新產品開了很長的會。一開始大家意見有些分歧，因為每個人關注的面向不同：價格、設計或安全。要怎麼讓每個人都滿意，真是個難題。最後，經理代表整個團隊向總監求助。總監的回應很正面，隔天我們就收到預算的確認。我們的計畫被接受，對大家來說是很有意義的時刻。\"",
+        "resolvedAt": "2026-10-02T15:41:26Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：評分要點封閉清單——「可寫 A 或 B」「常用 X」一律改成「例如…等」，全級腳本掃描修正",
+        "resolution": "改前：\"on behalf of＋人或團體，表示「代表⋯」\"；改後：\"on behalf of＋人、團體等，表示「代表⋯」\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：評分要點封閉清單——「可寫 A 或 B」「常用 X」一律改成「例如…等」，全級腳本掃描修正",
+        "resolution": "改前：\"on behalf of 可放句首或句尾\"；改後：\"on behalf of 可放在句首、句尾等位置\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/16/rubricZh/0",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：評分要點封閉清單——「可寫 A 或 B」「常用 X」一律改成「例如…等」，全級腳本掃描修正",
+        "resolution": "改前：\"meaningful 表示「有意義的」，可放在名詞前或 be 動詞後\"；改後：\"meaningful 表示「有意義的」，例如放在名詞前、be 動詞後等\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"每個人關注的面向不同\"；改後：\"大家關注的面向不同\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"經理不在場\"；改後：\"預算根本就不夠大家用\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"預算不夠用\"；改後：\"經理不在場\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"大家關注的面向不同\"；改後：\"大家關注點不同\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"經理不在場\"；改後：\"經理那天剛好不在場\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"大家都太累了\"；改後：\"大家開了一天會都太累了\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"有利的；贊同的\"；改後：\"贊同的；有利的\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"方面；面向\"；改後：\"面向；方面\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/0/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"面向；方面\"；改後：\"方面；面向\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"贊同的；有利的\"；改後：\"有利的；贊同的\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"We received favorable comments from our customers.\"；改後：\"The weather was favorable for our trip.\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"我們收到顧客的好評。\"；改後：\"天氣對我們的旅行很有利。\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u08-l04",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T15:55:26Z",
+  "properNouns": [
+    "Jack",
+    "Amy",
+    "Kate",
+    "Tom",
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "b1-u08-l04-q01",
+      "type": "wordCard",
+      "word": "parental",
+      "exampleEn": "Children need parental love and care.",
+      "exampleZh": "孩子需要父母的愛與照顧。",
+      "glossZh": "父母的",
+      "distractorsZh": [
+        "老師的",
+        "朋友的",
+        "鄰居的"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q02",
+      "type": "wordCard",
+      "word": "buddy",
+      "exampleEn": "Jack is my old school buddy.",
+      "exampleZh": "Jack 是我以前學校的好朋友。",
+      "glossZh": "好朋友；夥伴",
+      "distractorsZh": [
+        "老闆",
+        "鄰居",
+        "對手"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q03",
+      "type": "wordCard",
+      "word": "teammate",
+      "exampleEn": "She gets along well with all her teammates.",
+      "exampleZh": "她和所有隊友都相處得很好。",
+      "glossZh": "隊友",
+      "distractorsZh": [
+        "對手",
+        "教練",
+        "觀眾"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q04",
+      "type": "wordCard",
+      "word": "beloved",
+      "exampleEn": "She lost her beloved ring at the beach.",
+      "exampleZh": "她在海灘弄丟了心愛的戒指。",
+      "glossZh": "心愛的；深愛的",
+      "distractorsZh": [
+        "便宜的",
+        "新的",
+        "借來的"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q05",
+      "type": "wordCard",
+      "word": "newcomer",
+      "exampleEn": "The newcomer to our class is from Japan.",
+      "exampleZh": "我們班上新來的同學來自日本。",
+      "glossZh": "新來的人",
+      "distractorsZh": [
+        "老員工",
+        "訪客",
+        "主管"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q06",
+      "type": "wordCard",
+      "word": "inhabitant",
+      "exampleEn": "The island has only about five hundred inhabitants.",
+      "exampleZh": "這座島只有大約五百名居民。",
+      "glossZh": "居民；居住者",
+      "distractorsZh": [
+        "遊客",
+        "工人",
+        "學生"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q07",
+      "type": "wordCard",
+      "word": "nickname",
+      "exampleEn": "Do you have a nickname at home?",
+      "exampleZh": "你在家裡有綽號嗎？",
+      "glossZh": "綽號；暱稱",
+      "distractorsZh": [
+        "全名",
+        "姓氏",
+        "地址"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q08",
+      "type": "wordCard",
+      "word": "acquaintance",
+      "exampleEn": "I ran into an old acquaintance at the station.",
+      "exampleZh": "我在車站巧遇一位舊識。",
+      "glossZh": "認識的人；相識",
+      "distractorsZh": [
+        "親戚",
+        "好友",
+        "陌生人"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q09",
+      "type": "listenType",
+      "sentenceEn": "Every newcomer gets a buddy to help in the first month.",
+      "sentenceZh": "每位新人都會有一位夥伴在第一個月幫忙。"
+    },
+    {
+      "id": "b1-u08-l04-q10",
+      "type": "listenChoice",
+      "audioEn": "Most inhabitants of this village are farmers over sixty.",
+      "audioZh": "這個村子大部分的居民是六十歲以上的農夫。",
+      "questionZh": "這個村子的居民大多是什麼人？",
+      "options": [
+        "Young students.",
+        "Farmers over sixty.",
+        "Shop owners.",
+        "Tourists in summer."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u08-l04-q11",
+      "type": "shadowing",
+      "sentenceEn": "I passed the ball to my teammate, and he scored.",
+      "sentenceZh": "我把球傳給隊友，他就得分了。"
+    },
+    {
+      "id": "b1-u08-l04-q12",
+      "type": "shadowing",
+      "sentenceEn": "The town's beloved bakery is closing next month.",
+      "sentenceZh": "鎮上大家都很喜愛的麵包店下個月要關門了。"
+    },
+    {
+      "id": "b1-u08-l04-q13",
+      "type": "mcq",
+      "stemEn": "At school, everyone called him by his ____ instead of his real name.",
+      "stemZh": "在學校，大家都叫他的綽號，而不是本名。",
+      "options": [
+        "teammate",
+        "buddy",
+        "nickname",
+        "newcomer"
+      ],
+      "optionGlossZh": [
+        "隊友",
+        "好朋友",
+        "綽號",
+        "新來的人"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u08-l04-q14",
+      "type": "mcq",
+      "stemEn": "Tom is not really my friend; he's more of an ____ from my old job.",
+      "stemZh": "Tom 其實不算我的朋友，比較像是以前工作認識的人。",
+      "options": [
+        "inhabitant",
+        "acquaintance",
+        "uncle",
+        "invitation"
+      ],
+      "optionGlossZh": [
+        "居民",
+        "認識的人",
+        "叔叔",
+        "邀請"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u08-l04-q15",
+      "type": "reading",
+      "passageEn": "When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she knew only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \"Sunny,\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Her mother no longer has parental worries, because she can see Amy is happy.",
+      "passageZh": "去年 Amy 搬到一座小島時，她是島上兩千名居民中的新來者。一開始，她只認識幾個工作上的人。後來她加入島上的排球隊。隊友們給她取了個綽號叫「Sunny」，因為她總是笑咪咪的。其中一位隊友 Kate 很快成了她最好的朋友。現在 Amy 把這座島稱為她心愛的第二個家。她媽媽也不再有為人父母的擔心，因為看得出 Amy 很快樂。",
+      "questions": [
+        {
+          "questionZh": "Amy 剛到島上時認識哪些人？",
+          "options": [
+            "幾個工作上認識的人",
+            "很多從小認識的老朋友",
+            "她的幾位親戚",
+            "排球隊的隊員"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "隊友為什麼叫她 Sunny？",
+          "options": [
+            "因為她喜歡曬太陽",
+            "因為她來自南部",
+            "因為她排球打得很好",
+            "因為她常常笑"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q16",
+      "type": "translate",
+      "promptZh": "我是在一次派對上認識他的，我們只是點頭之交。",
+      "hintWords": [
+        "acquaintance"
+      ],
+      "referenceEn": [
+        "I met him at a party, and he is just an acquaintance.",
+        "I met him at a party; we are only acquaintances."
+      ],
+      "rubricZh": [
+        "acquaintance 表示「認識但不熟的人」，單數前面用 an",
+        "「點頭之交」可寫 just an acquaintance、only acquaintances 等",
+        "認識的經過用過去式（例如 met）"
+      ]
+    },
+    {
+      "id": "b1-u08-l04-q17",
+      "type": "makeSentence",
+      "targetWord": "nickname",
+      "instructionZh": "用 nickname 造一個句子，說說你或你朋友的綽號。",
+      "referenceEn": [
+        "My nickname at school was \"Little Fish.\"",
+        "My friends gave me the nickname \"Smile.\""
+      ],
+      "rubricZh": [
+        "nickname 表示「綽號」，可用 My nickname is…、give someone a nickname 等說法",
+        "綽號可加引號",
+        "時態配合內容（例如 is、was、gave）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T17:34:30Z",
+    "verdicts": {
+      "b1-u08-l04-q10": [
+        1
+      ],
+      "b1-u08-l04-q13": [
+        2
+      ],
+      "b1-u08-l04-q14": [
+        1
+      ],
+      "b1-u08-l04-q15#0": [
+        0
+      ],
+      "b1-u08-l04-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長 b1b2 裁示修正：第②關：parents 給 parental advice 冗贅，改 parental worries",
+        "resolution": "改前：\"When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she knew only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \\\"Sunny,\\\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Even her parents have stopped giving parental advice, because they can see she is happy.\"；改後：\"When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she knew only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \\\"Sunny,\\\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Her mother has fewer parental worries now, because she can see Amy is happy.\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長 b1b2 裁示修正：中譯同步",
+        "resolution": "改前：\"去年 Amy 搬到一座小島時，她是島上兩千名居民中的新來者。一開始，她只認識幾個工作上的人。後來她加入島上的排球隊。隊友們給她取了個綽號叫「Sunny」，因為她總是笑咪咪的。其中一位隊友 Kate 很快成了她最好的朋友。現在 Amy 把這座島稱為她心愛的第二個家。連她爸媽都不再給她父母式的叮嚀了，因為他們看得出她很快樂。\"；改後：\"去年 Amy 搬到一座小島時，她是島上兩千名居民中的新來者。一開始，她只認識幾個工作上的人。後來她加入島上的排球隊。隊友們給她取了個綽號叫「Sunny」，因為她總是笑咪咪的。其中一位隊友 Kate 很快成了她最好的朋友。現在 Amy 把這座島稱為她心愛的第二個家。她媽媽現在也少了許多為人父母的擔心，因為看得出 Amy 很快樂。\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"很多老朋友\"；改後：\"很多從小認識的老朋友\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"因為她很會打排球\"；改後：\"因為她排球打得非常好\"",
+        "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長 b1b2 裁示修正：第②關（同上；fewer 無級距，改寫）",
+        "resolution": "改前：\"When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she knew only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \\\"Sunny,\\\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Her mother has fewer parental worries now, because she can see Amy is happy.\"；改後：\"When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she knew only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \\\"Sunny,\\\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Her mother no longer has parental worries, because she can see Amy is happy.\"",
+        "resolvedAt": "2026-10-02T17:47:35Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長 b1b2 裁示修正：中譯同步",
+        "resolution": "改前：\"去年 Amy 搬到一座小島時，她是島上兩千名居民中的新來者。一開始，她只認識幾個工作上的人。後來她加入島上的排球隊。隊友們給她取了個綽號叫「Sunny」，因為她總是笑咪咪的。其中一位隊友 Kate 很快成了她最好的朋友。現在 Amy 把這座島稱為她心愛的第二個家。她媽媽現在也少了許多為人父母的擔心，因為看得出 Amy 很快樂。\"；改後：\"去年 Amy 搬到一座小島時，她是島上兩千名居民中的新來者。一開始，她只認識幾個工作上的人。後來她加入島上的排球隊。隊友們給她取了個綽號叫「Sunny」，因為她總是笑咪咪的。其中一位隊友 Kate 很快成了她最好的朋友。現在 Amy 把這座島稱為她心愛的第二個家。她媽媽也不再有為人父母的擔心，因為看得出 Amy 很快樂。\"",
+        "resolvedAt": "2026-10-02T17:47:35Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"Young students.\"；改後：\"Young students from the city.\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
+        "resolution": "改前：\"Young students from the city.\"；改後：\"Young students.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
+        "resolution": "改前：\"Tourists.\"；改後：\"Tourists in summer.\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
+        "resolution": "改前：\"她的親戚\"；改後：\"她的幾位親戚\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"因為她排球打得非常好\"；改後：\"因為她排球打得很好\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/14/questions/1/options/3",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"因為她總是笑咪咪的\"；改後：\"因為她常常笑\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：actor 與題意無關，換先前課的 invitation",
+        "resolution": "改前：\"actor\"；改後：\"invitation\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：actor 與題意無關，換先前課的 invitation",
+        "resolution": "改前：\"演員\"；改後：\"邀請\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：inhabitant→buddy",
+        "resolution": "改前：\"inhabitant\"；改後：\"acquaintance\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：inhabitant→buddy",
+        "resolution": "改前：\"acquaintance\"；改後：\"buddy\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：inhabitant→buddy",
+        "resolution": "改前：\"居民\"；改後：\"認識的人\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：inhabitant→buddy",
+        "resolution": "改前：\"認識的人\"；改後：\"好朋友\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：acquaintance→teammate",
+        "resolution": "改前：\"acquaintance\"；改後：\"teammate\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：acquaintance→teammate",
+        "resolution": "改前：\"認識的人\"；改後：\"隊友\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      }
+    ]
+  }
+}

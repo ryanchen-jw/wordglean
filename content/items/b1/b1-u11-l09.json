@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u11-l09",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T16:41:50Z",
+  "properNouns": [
+    "Taiwan"
+  ],
+  "items": [
+    {
+      "id": "b1-u11-l09-q01",
+      "type": "wordCard",
+      "word": "housework",
+      "exampleEn": "I do housework while listening to music.",
+      "exampleZh": "我邊聽音樂邊做家事。",
+      "glossZh": "家事；家務",
+      "distractorsZh": [
+        "功課",
+        "公事",
+        "運動"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q02",
+      "type": "wordCard",
+      "word": "ironing",
+      "exampleEn": "There is a big pile of ironing on the chair.",
+      "exampleZh": "椅子上堆著一大堆要燙的衣服。",
+      "glossZh": "燙衣服（這件事）；待燙的衣物",
+      "distractorsZh": [
+        "洗碗",
+        "煮飯",
+        "掃地"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q03",
+      "type": "wordCard",
+      "word": "untidy",
+      "exampleEn": "She has untidy hair in the morning.",
+      "exampleZh": "她早上頭髮亂糟糟的。",
+      "glossZh": "不整齊的；凌亂的",
+      "distractorsZh": [
+        "乾淨的",
+        "安靜的",
+        "新的"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q04",
+      "type": "wordCard",
+      "word": "duvet",
+      "exampleEn": "This duvet is too warm for summer.",
+      "exampleZh": "這條羽絨被夏天蓋太熱了。",
+      "glossZh": "羽絨被；被子",
+      "distractorsZh": [
+        "枕頭",
+        "床單",
+        "地毯"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q05",
+      "type": "wordCard",
+      "word": "dustbin",
+      "exampleEn": "Throw the old newspapers in the dustbin.",
+      "exampleZh": "把舊報紙丟進垃圾桶。",
+      "glossZh": "垃圾桶",
+      "distractorsZh": [
+        "抽屜",
+        "書架",
+        "信箱"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q06",
+      "type": "wordCard",
+      "word": "air conditioning",
+      "exampleEn": "The office has air conditioning, so it's cool in summer.",
+      "exampleZh": "辦公室有冷氣，所以夏天很涼快。",
+      "glossZh": "冷氣（系統）",
+      "distractorsZh": [
+        "暖氣",
+        "電燈",
+        "電梯"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q07",
+      "type": "wordCard",
+      "word": "bin",
+      "exampleEn": "Put the empty cans in the recycling bin.",
+      "exampleZh": "把空罐放進回收桶。",
+      "glossZh": "垃圾桶；桶；箱子",
+      "distractorsZh": [
+        "盒子",
+        "袋子",
+        "盤子"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q08",
+      "type": "wordCard",
+      "word": "central heating",
+      "exampleEn": "Central heating keeps the whole building warm.",
+      "exampleZh": "中央暖氣讓整棟大樓保持溫暖。",
+      "glossZh": "中央暖氣（系統）",
+      "distractorsZh": [
+        "冷氣",
+        "熱水器",
+        "電扇"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q09",
+      "type": "listenType",
+      "sentenceEn": "Turn off the air conditioning when you leave.",
+      "sentenceZh": "離開時請把冷氣關掉。"
+    },
+    {
+      "id": "b1-u11-l09-q10",
+      "type": "listenChoice",
+      "audioEn": "My room is untidy, so please wait while I clean it up.",
+      "audioZh": "我房間很亂，請等我整理一下。",
+      "questionZh": "說話者要對方做什麼？",
+      "options": [
+        "Wait a moment.",
+        "Clean the room.",
+        "Come back tomorrow.",
+        "Close the door."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u11-l09-q11",
+      "type": "shadowing",
+      "sentenceEn": "In winter, I sleep under a thick duvet.",
+      "sentenceZh": "冬天時我蓋厚厚的羽絨被睡覺。"
+    },
+    {
+      "id": "b1-u11-l09-q12",
+      "type": "shadowing",
+      "sentenceEn": "Ironing shirts takes me a long time.",
+      "sentenceZh": "燙襯衫要花我很多時間。"
+    },
+    {
+      "id": "b1-u11-l09-q13",
+      "type": "mcq",
+      "stemEn": "Nobody likes doing ____, but someone has to clean the house.",
+      "stemZh": "沒人喜歡做家事，但總要有人打掃房子。",
+      "options": [
+        "central heating",
+        "duvets",
+        "housework",
+        "air conditioning"
+      ],
+      "optionGlossZh": [
+        "中央暖氣",
+        "羽絨被",
+        "家事",
+        "冷氣"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u11-l09-q14",
+      "type": "mcq",
+      "stemEn": "The ____ is full; please take it out.",
+      "stemZh": "垃圾桶滿了，請拿出去倒。",
+      "options": [
+        "saucer",
+        "dustbin",
+        "ironing",
+        "basement"
+      ],
+      "optionGlossZh": [
+        "茶碟",
+        "垃圾桶",
+        "燙衣服",
+        "地下室"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u11-l09-q15",
+      "type": "reading",
+      "passageEn": "Our family shares the housework. My father does the ironing, and my mother cleans the kitchen. My job is to empty the dustbin and put the bottles in the recycling bin. My little brother is the problem: his room is always untidy, and his duvet is often on the floor. In summer, we turn on the air conditioning only at night to save money. Our house has no central heating, so in winter we wear our pullovers at home.",
+      "passageZh": "我們家分擔家事。爸爸負責燙衣服，媽媽打掃廚房。我的工作是倒垃圾，再把瓶子放進回收桶。問題在我弟弟：他的房間總是很亂，羽絨被常常掉在地上。夏天時，我們只在晚上開冷氣，為了省錢。我們家沒有中央暖氣，所以冬天在家都穿著套頭毛衣。",
+      "questions": [
+        {
+          "questionZh": "作者負責什麼家事？",
+          "options": [
+            "幫爸爸燙衣服",
+            "打掃廚房",
+            "倒垃圾、回收瓶子",
+            "幫忙整理弟弟的房間"
+          ],
+          "answer": 2
+        },
+        {
+          "questionZh": "他們家為什麼只在晚上開冷氣？",
+          "options": [
+            "晚上比較熱",
+            "冷氣壞了",
+            "白天沒人在家",
+            "為了省錢"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q16",
+      "type": "translate",
+      "promptZh": "做家事應該是全家人的責任。",
+      "hintWords": [
+        "housework"
+      ],
+      "referenceEn": [
+        "Doing housework should be the whole family's job.",
+        "Housework should be shared by the whole family."
+      ],
+      "rubricZh": [
+        "housework 是不可數名詞，不加 s",
+        "「做家事」可寫，例如 do housework、do the housework、do the chores 等",
+        "「全家人的責任」可寫 the whole family's job、shared by the whole family 等"
+      ]
+    },
+    {
+      "id": "b1-u11-l09-q17",
+      "type": "makeSentence",
+      "targetWord": "untidy",
+      "instructionZh": "用 untidy 造一個句子，說說你家裡或辦公室哪裡很亂。",
+      "referenceEn": [
+        "My desk at work is very untidy.",
+        "The kitchen gets untidy when my brother cooks."
+      ],
+      "rubricZh": [
+        "untidy 表示「凌亂的」，可放在 be、get 等動詞後或名詞前",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T17:34:30Z",
+    "verdicts": {
+      "b1-u11-l09-q10": [
+        0
+      ],
+      "b1-u11-l09-q13": [
+        2
+      ],
+      "b1-u11-l09-q14": [
+        1
+      ],
+      "b1-u11-l09-q15#0": [
+        2
+      ],
+      "b1-u11-l09-q15#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/1/glossZh",
+        "message": "執行長 b1b2 裁示修正：第③關 FIX：例句的 ironing 是「待燙的衣服」，釋義補上",
+        "resolution": "改前：\"燙衣服（這件事）\"；改後：\"燙衣服（這件事）；待燙的衣物\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長 b1b2 裁示修正：第②關＋第③關疑似 S9＋執行長裁示（事實正確）：改不涉及可查證事實的中性敘述",
+        "resolution": "改前：\"Old houses in Taiwan rarely have central heating.\"；改後：\"Our hotel room had central heating, so it was warm.\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長 b1b2 裁示修正：第②關＋第③關疑似 S9＋執行長裁示（事實正確）：改不涉及可查證事實的中性敘述",
+        "resolution": "改前：\"台灣的老房子很少有中央暖氣。\"；改後：\"我們的飯店房間有中央暖氣，所以很暖和。\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/14/questions/0/options/2",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"倒垃圾，並把瓶子放進回收桶\"；改後：\"倒垃圾、回收瓶子\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/14/questions/0/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（正解最長偏差）：正解不可是唯一最長選項——縮短正解或補足干擾項細節，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"整理弟弟的房間\"；改後：\"幫忙整理弟弟的房間\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長 b1b2 裁示修正：第③關 FIX：要點封閉清單，改「例如…等」",
+        "resolution": "改前：\"「做家事」可寫 do housework、do the housework\"；改後：\"「做家事」可寫，例如 do housework、do the housework、do the chores 等\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：情境對照表以現行檔案重做、逐列判定——central heating 單字卡和閱讀同句型（Our … has/had … central heating, so…），改單字卡",
+        "resolution": "改前：\"Our hotel room had central heating, so it was warm.\"；改後：\"Central heating keeps the whole building warm.\"",
+        "resolvedAt": "2026-10-02T17:56:58Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長 b1b2 裁示修正：執行長裁示（b1b2）：情境對照表以現行檔案重做、逐列判定——central heating 單字卡和閱讀同句型（Our … has/had … central heating, so…），改單字卡",
+        "resolution": "改前：\"我們的飯店房間有中央暖氣，所以很暖和。\"；改後：\"中央暖氣讓整棟大樓保持溫暖。\"",
+        "resolvedAt": "2026-10-02T17:56:58Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
+        "resolution": "改前：\"燙衣服\"；改後：\"幫爸爸燙衣服\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/13/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：central heating→basement",
+        "resolution": "改前：\"central heating\"；改後：\"basement\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：central heating→basement",
+        "resolution": "改前：\"中央暖氣\"；改後：\"地下室\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"箱子；桶；垃圾桶\"；改後：\"桶；箱子；垃圾桶\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/13/options/0",
+        "message": "執行長最終複審修正：F3：duvet 與 q13 的 duvets 重複，換 saucer",
+        "resolution": "改前：\"duvet\"；改後：\"saucer\"",
+        "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/0",
+        "message": "執行長最終複審修正：F3：duvet 與 q13 的 duvets 重複，換 saucer",
+        "resolution": "改前：\"羽絨被\"；改後：\"茶碟\"",
+        "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"桶；箱子；垃圾桶\"；改後：\"垃圾桶；桶；箱子\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"We keep rice in a large metal bin.\"；改後：\"Put the empty cans in the recycling bin.\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"我們把米放在一個大鐵桶裡。\"；改後：\"把空罐放進回收桶。\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      }
+    ]
+  }
+}

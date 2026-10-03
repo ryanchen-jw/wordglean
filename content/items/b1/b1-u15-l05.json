@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u15-l05",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T17:10:04Z",
+  "properNouns": [
+    "Maya"
+  ],
+  "items": [
+    {
+      "id": "b1-u15-l05-q01",
+      "type": "wordCard",
+      "word": "bank account",
+      "exampleEn": "You need a passport to open a bank account.",
+      "exampleZh": "開銀行帳戶需要護照。",
+      "glossZh": "銀行帳戶",
+      "distractorsZh": [
+        "信用卡",
+        "電子郵件帳號",
+        "會員卡"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q02",
+      "type": "wordCard",
+      "word": "cashpoint",
+      "exampleEn": "Is there a cashpoint near here?",
+      "exampleZh": "這附近有提款機嗎？",
+      "glossZh": "自動提款機",
+      "distractorsZh": [
+        "公車站",
+        "公共廁所",
+        "郵筒"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q03",
+      "type": "wordCard",
+      "word": "duty-free",
+      "exampleEn": "We bought some duty-free chocolate at the airport.",
+      "exampleZh": "我們在機場買了一些免稅巧克力。",
+      "glossZh": "免稅的",
+      "distractorsZh": [
+        "昂貴的",
+        "進口的",
+        "手工的"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q04",
+      "type": "wordCard",
+      "word": "exchange rate",
+      "exampleEn": "The exchange rate changes every day.",
+      "exampleZh": "匯率每天都在變。",
+      "glossZh": "匯率",
+      "distractorsZh": [
+        "天氣",
+        "菜單",
+        "時刻表"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q05",
+      "type": "wordCard",
+      "word": "penny",
+      "exampleEn": "This old coin is worth only a penny.",
+      "exampleZh": "這枚舊硬幣只值一便士。",
+      "glossZh": "一分錢；便士",
+      "distractorsZh": [
+        "一百元",
+        "一千元",
+        "一萬元"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q06",
+      "type": "wordCard",
+      "word": "pocket money",
+      "exampleEn": "My parents give me pocket money every week.",
+      "exampleZh": "我爸媽每週給我零用錢。",
+      "glossZh": "零用錢",
+      "distractorsZh": [
+        "學費",
+        "午餐",
+        "禮物"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q07",
+      "type": "wordCard",
+      "word": "second-hand",
+      "exampleEn": "Second-hand cars are much cheaper than new ones.",
+      "exampleZh": "二手車比新車便宜得多。",
+      "glossZh": "二手的；舊的",
+      "distractorsZh": [
+        "全新的",
+        "進口的",
+        "限量的"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q08",
+      "type": "listenType",
+      "sentenceEn": "The cashpoint at the station is out of order.",
+      "sentenceZh": "車站的提款機故障了。"
+    },
+    {
+      "id": "b1-u15-l05-q09",
+      "type": "listenChoice",
+      "audioEn": "The duty-free shops are after passport control, near Gate 5.",
+      "audioZh": "免稅店在護照查驗之後，靠近 5 號登機門。",
+      "questionZh": "免稅店在哪裡？",
+      "options": [
+        "Before passport control.",
+        "Near Gate 5.",
+        "Outside the airport.",
+        "Next to the bank."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b1-u15-l05-q10",
+      "type": "shadowing",
+      "sentenceEn": "Some children save their pocket money for a new toy.",
+      "sentenceZh": "有些孩子會存零用錢買新玩具。"
+    },
+    {
+      "id": "b1-u15-l05-q11",
+      "type": "shadowing",
+      "sentenceEn": "You can find good second-hand clothes online.",
+      "sentenceZh": "你可以在網路上找到不錯的二手衣服。"
+    },
+    {
+      "id": "b1-u15-l05-q12",
+      "type": "mcq",
+      "stemEn": "The ____ is good today, so I'll change my dollars into the local currency.",
+      "stemZh": "今天匯率不錯，所以我要把美元換成當地貨幣。",
+      "options": [
+        "cashpoint",
+        "bank account",
+        "exchange rate",
+        "lottery"
+      ],
+      "optionGlossZh": [
+        "提款機",
+        "銀行帳戶",
+        "匯率",
+        "彩券"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u15-l05-q13",
+      "type": "mcq",
+      "stemEn": "I didn't spend a single ____ on the trip.",
+      "stemZh": "這趟旅行我一毛錢都沒花。",
+      "options": [
+        "pocket money",
+        "second-hand",
+        "duty-free",
+        "penny"
+      ],
+      "optionGlossZh": [
+        "零用錢",
+        "二手的",
+        "免稅的",
+        "一分錢"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u15-l05-q14",
+      "type": "reading",
+      "passageEn": "When Maya was twelve, her parents opened a bank account for her. Every week, she put half of her pocket money into it. By sixteen, she had saved enough to buy a second-hand bicycle. Last summer, she traveled abroad for the first time. She checked the exchange rate online and took cash from a cashpoint at the airport. She did not buy anything at the duty-free shops because she wanted to save every penny. Her only treat was a takeaway pizza on the last night.",
+      "passageZh": "Maya 十二歲時，爸媽替她開了一個銀行帳戶。每個星期，她把一半的零用錢存進去。到了十六歲，她存的錢已經夠買一輛二手腳踏車。去年夏天，她第一次出國旅行。她上網查了匯率，並在機場的提款機領了現金。她在免稅店什麼都沒買，因為她想省下每一分錢。她唯一犒賞自己的，是最後一晚的一份外帶披薩。",
+      "questions": [
+        {
+          "questionZh": "Maya 每個星期把多少零用錢存進帳戶？",
+          "options": [
+            "全部",
+            "一半",
+            "四分之一",
+            "十塊錢"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "旅行時，Maya 唯一犒賞自己的是什麼？",
+          "options": [
+            "免稅巧克力",
+            "一件新衣服",
+            "外帶披薩",
+            "一頓豐盛的大餐"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q15",
+      "type": "translate",
+      "promptZh": "我在一家二手書店買了這本書。",
+      "hintWords": [
+        "second-hand"
+      ],
+      "referenceEn": [
+        "I bought this book at a second-hand bookshop.",
+        "I got this book from a second-hand bookstore."
+      ],
+      "rubricZh": [
+        "second-hand 表示「二手的」，放在名詞前",
+        "「書店」可寫，例如 bookshop、bookstore 等",
+        "時態配合內容（例如說已經發生的事用過去式）"
+      ]
+    },
+    {
+      "id": "b1-u15-l05-q16",
+      "type": "makeSentence",
+      "targetWord": "bank account",
+      "instructionZh": "用 bank account 造一個句子，說說你怎麼使用銀行帳戶。",
+      "referenceEn": [
+        "I put part of my pay into my bank account every month.",
+        "I use my bank account to pay bills online."
+      ],
+      "rubricZh": [
+        "bank account 表示「銀行帳戶」",
+        "可用 open／use a bank account、put money into… 等說法",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T17:34:30Z",
+    "verdicts": {
+      "b1-u15-l05-q09": [
+        1
+      ],
+      "b1-u15-l05-q12": [
+        2
+      ],
+      "b1-u15-l05-q13": [
+        3
+      ],
+      "b1-u15-l05-q14#0": [
+        1
+      ],
+      "b1-u15-l05-q14#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長 b1b2 裁示修正：第③關 FIX：要點封閉清單，改「例如…等」",
+        "resolution": "改前：\"「書店」可寫 bookshop 或 bookstore\"；改後：\"「書店」可寫，例如 bookshop、bookstore 等\"",
+        "resolvedAt": "2026-10-02T17:45:28Z"
+      },
+      {
+        "path": "items/13/questions/1/options/3",
+        "message": "執行長 b1b2 裁示修正：執行長更正（挑最長的期望命中率）：讓正解不落在最長選項集合裡——補足干擾項細節或縮短正解，不改正解意思、不讓干擾項成立",
+        "resolution": "改前：\"一頓大餐\"；改後：\"一頓豐盛的大餐\"",
+        "resolvedAt": "2026-10-02T17:54:20Z"
+      },
+      {
+        "path": "items/13/questions/1/options/2",
+        "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
+        "resolution": "改前：\"一份外帶披薩\"；改後：\"外帶披薩\"",
+        "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：cashpoint→pocket money",
+        "resolution": "改前：\"duty-free\"；改後：\"pocket money\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：cashpoint→pocket money",
+        "resolution": "改前：\"cashpoint\"；改後：\"second-hand\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：cashpoint→pocket money",
+        "resolution": "改前：\"second-hand\"；改後：\"duty-free\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：cashpoint→pocket money",
+        "resolution": "改前：\"免稅的\"；改後：\"零用錢\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：cashpoint→pocket money",
+        "resolution": "改前：\"提款機\"；改後：\"二手的\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：cashpoint→pocket money",
+        "resolution": "改前：\"二手的\"；改後：\"免稅的\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"一分錢；便士\"；改後：\"便士；一分錢\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/11/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：penny→lottery",
+        "resolution": "改前：\"bank account\"；改後：\"cashpoint\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/11/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：penny→lottery",
+        "resolution": "改前：\"cashpoint\"；改後：\"bank account\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/11/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：penny→lottery",
+        "resolution": "改前：\"penny\"；改後：\"lottery\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：penny→lottery",
+        "resolution": "改前：\"銀行帳戶\"；改後：\"提款機\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：penny→lottery",
+        "resolution": "改前：\"提款機\"；改後：\"銀行帳戶\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/11/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：penny→lottery",
+        "resolution": "改前：\"一分錢\"；改後：\"彩券\"",
+        "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/4/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"便士；一分錢\"；改後：\"一分錢；便士\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      }
+    ]
+  }
+}

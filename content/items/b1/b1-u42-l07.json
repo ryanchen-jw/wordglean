@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u42-l07",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T22:20:49Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u42-l07-q01",
+      "type": "wordCard",
+      "word": "noticeable",
+      "exampleEn": "There is a noticeable change in the weather.",
+      "exampleZh": "天氣有明顯的變化。",
+      "glossZh": "明顯的；顯而易見的",
+      "distractorsZh": [
+        "無聊的",
+        "危險的",
+        "安靜的"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q02",
+      "type": "wordCard",
+      "word": "damaged",
+      "exampleEn": "The damaged phone still works.",
+      "exampleZh": "那支損壞的手機還能用。",
+      "glossZh": "受損的；損壞的",
+      "distractorsZh": [
+        "嶄新的",
+        "昂貴的",
+        "乾淨的"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q03",
+      "type": "wordCard",
+      "word": "outward",
+      "exampleEn": "The birds flew outward in all directions from the tree.",
+      "exampleZh": "鳥群從樹上向四面八方飛出去。",
+      "glossZh": "向外的；外表的",
+      "distractorsZh": [
+        "向內的",
+        "向上的",
+        "快速的"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q04",
+      "type": "wordCard",
+      "word": "dangerously",
+      "exampleEn": "The boys played dangerously close to the cliff.",
+      "exampleZh": "男孩們在離懸崖很近的地方危險地玩耍。",
+      "glossZh": "危險地",
+      "distractorsZh": [
+        "安全地",
+        "小心地",
+        "慢慢地"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q05",
+      "type": "wordCard",
+      "word": "vividly",
+      "exampleEn": "The children painted the farm animals vividly.",
+      "exampleZh": "孩子們把農場動物畫得很生動。",
+      "glossZh": "生動地；鮮明地",
+      "distractorsZh": [
+        "模糊地",
+        "偶爾",
+        "匆忙地"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q06",
+      "type": "wordCard",
+      "word": "stuck",
+      "exampleEn": "The window is stuck; I can't open it.",
+      "exampleZh": "窗戶卡住了，我打不開。",
+      "glossZh": "卡住的；困住的",
+      "distractorsZh": [
+        "鎖住的",
+        "打開的",
+        "壞掉的"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q07",
+      "type": "wordCard",
+      "word": "motionless",
+      "exampleEn": "The lake was completely motionless in the early morning.",
+      "exampleZh": "清晨的湖面完全靜止不動。",
+      "glossZh": "靜止的；一動也不動的",
+      "distractorsZh": [
+        "興奮的",
+        "吵鬧的",
+        "害怕的"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q08",
+      "type": "wordCard",
+      "word": "shadowy",
+      "exampleEn": "Something moved in the shadowy corner of the room.",
+      "exampleZh": "房間陰暗的角落裡有東西在動。",
+      "glossZh": "陰暗的；模糊的",
+      "distractorsZh": [
+        "明亮的",
+        "乾淨的",
+        "寬敞的"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q09",
+      "type": "listenType",
+      "sentenceEn": "My key got stuck in the lock.",
+      "sentenceZh": "我的鑰匙卡在鎖裡了。"
+    },
+    {
+      "id": "b1-u42-l07-q10",
+      "type": "listenChoice",
+      "audioEn": "The damaged books in the library will be fixed next week.",
+      "audioZh": "圖書館裡損壞的書下週會修好。",
+      "questionZh": "下週會發生什麼事？",
+      "options": [
+        "The library will close for a month.",
+        "New books will arrive.",
+        "The library will move.",
+        "Some old books will be repaired."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u42-l07-q11",
+      "type": "shadowing",
+      "sentenceEn": "The little cat was stuck in the tree.",
+      "sentenceZh": "那隻小貓被困在樹上。"
+    },
+    {
+      "id": "b1-u42-l07-q12",
+      "type": "shadowing",
+      "sentenceEn": "The cat sat motionless, watching the bird.",
+      "sentenceZh": "貓一動也不動地坐著，盯著那隻鳥。"
+    },
+    {
+      "id": "b1-u42-l07-q13",
+      "type": "mcq",
+      "stemEn": "The truck was going ____ fast around the corner.",
+      "stemZh": "那輛卡車以危險的速度轉彎。",
+      "options": [
+        "dangerously",
+        "vividly",
+        "brightly",
+        "accidentally"
+      ],
+      "optionGlossZh": [
+        "危險地",
+        "鮮明地",
+        "明亮地",
+        "不小心地"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u42-l07-q14",
+      "type": "mcq",
+      "stemEn": "The ____ bridge must be repaired before cars can use it again.",
+      "stemZh": "那座受損的橋必須修好，車子才能再使用。",
+      "options": [
+        "outward",
+        "noticeable",
+        "damaged",
+        "motionless"
+      ],
+      "optionGlossZh": [
+        "向外的",
+        "明顯的",
+        "受損的",
+        "靜止的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u42-l07-q15",
+      "type": "reading",
+      "passageEn": "Last winter, my dad and I drove home late at night. The fog was dangerously thick. On a shadowy country road, we saw a damaged truck by the road, and there was a noticeable smell of oil. A man stood motionless next to it. My dad stopped to help. The man said he was fine, but his truck was stuck in deep mud, and one door was pushed outward and couldn't close. We called for help and waited together. We had to endure the cold for a whole hour. I still vividly remember that night.",
+      "passageZh": "去年冬天，爸爸和我深夜開車回家。霧濃得很危險。在一條陰暗的鄉間小路上，我們看到路邊有一輛受損的卡車，空氣中有一股明顯的油味。一個男人一動也不動地站在旁邊。爸爸停車下去幫忙。那個男人說他沒事，但他的卡車卡在深深的泥巴裡，有一扇車門還被往外推開、關不上。我們打電話求救，然後一起等待。我們不得不忍受寒冷整整一個小時。我到現在還鮮明地記得那一晚。",
+      "questions": [
+        {
+          "questionZh": "爸爸為什麼停車？",
+          "options": [
+            "自己的車陷進泥巴裡了",
+            "要幫路邊的男人",
+            "撞上了路邊的一輛卡車",
+            "在半路上沒有汽油了"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "那輛卡車有什麼問題？",
+          "options": [
+            "卡在泥裡，車門關不上",
+            "輪胎全部被偷走了",
+            "車上載的東西太重了",
+            "已經沒有汽油了"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q16",
+      "type": "translate",
+      "promptZh": "她把那個故事講得很生動。",
+      "hintWords": [
+        "vividly"
+      ],
+      "referenceEn": [
+        "She told the story vividly.",
+        "She told that story very vividly."
+      ],
+      "rubricZh": [
+        "vividly 表示「生動地」，例如 describe something vividly 等說法",
+        "時態配合內容（例如說過去的事用過去式等）"
+      ]
+    },
+    {
+      "id": "b1-u42-l07-q17",
+      "type": "makeSentence",
+      "targetWord": "stuck",
+      "instructionZh": "用 stuck 造一個句子，說說你曾經被卡住或困住的經驗。",
+      "referenceEn": [
+        "I was stuck in traffic for two hours last Friday.",
+        "My bag got stuck in the bus door."
+      ],
+      "rubricZh": [
+        "stuck 表示「卡住的、困住的」，例如 get stuck 等說法",
+        "說的是自己的經驗（例如 I、my）",
+        "時態配合內容（例如說過去的事用過去式等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:46:56Z",
+    "verdicts": {
+      "b1-u42-l07-q10": [
+        3
+      ],
+      "b1-u42-l07-q13": [
+        0
+      ],
+      "b1-u42-l07-q14": [
+        2
+      ],
+      "b1-u42-l07-q15#0": [
+        1
+      ],
+      "b1-u42-l07-q15#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9/audioEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫災難）：道路被洪水損壞改成被大雨損壞；正解改成不照抄音檔的 The heavy rain damaged it.",
+        "resolution": "改前：\"The road near the river was damaged by the flood, so it's closed for now.\"；改後：\"The road near the river was damaged by the heavy rain, so it's closed for now.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫災難）：道路被洪水損壞改成被大雨損壞；正解改成不照抄音檔的 The heavy rain damaged it.",
+        "resolution": "改前：\"河邊的道路被洪水損壞了，所以暫時封閉。\"；改後：\"河邊的道路被大雨損壞了，所以暫時封閉。\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫災難）：道路被洪水損壞改成被大雨損壞；正解改成不照抄音檔的 The heavy rain damaged it.",
+        "resolution": "改前：\"It is too narrow.\"；改後：\"It is being painted.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫災難）：道路被洪水損壞改成被大雨損壞；正解改成不照抄音檔的 The heavy rain damaged it.",
+        "resolution": "改前：\"It is being painted.\"；改後：\"There was a race.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫災難）：道路被洪水損壞改成被大雨損壞；正解改成不照抄音檔的 The heavy rain damaged it.",
+        "resolution": "改前：\"There was a race.\"；改後：\"It is too narrow.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫災難）：道路被洪水損壞改成被大雨損壞；正解改成不照抄音檔的 The heavy rain damaged it.",
+        "resolution": "改前：\"It was damaged by the flood.\"；改後：\"The heavy rain damaged it.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/12/stemEn",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 18（我判照改）：distinctly fast 勉強說得通，換成 brightly；sharp 的「急」義越級，拿掉 sharp",
+        "resolution": "改前：\"The truck was going ____ fast around the sharp corner.\"；改後：\"The truck was going ____ fast around the corner.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/12/stemZh",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 18（我判照改）：distinctly fast 勉強說得通，換成 brightly；sharp 的「急」義越級，拿掉 sharp",
+        "resolution": "改前：\"那輛卡車以危險的速度急轉彎。\"；改後：\"那輛卡車以危險的速度轉彎。\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/12/options/2",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 18（我判照改）：distinctly fast 勉強說得通，換成 brightly；sharp 的「急」義越級，拿掉 sharp",
+        "resolution": "改前：\"distinctly\"；改後：\"brightly\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 18（我判照改）：distinctly fast 勉強說得通，換成 brightly；sharp 的「急」義越級，拿掉 sharp",
+        "resolution": "改前：\"明顯地\"；改後：\"明亮地\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正（b1b4）：第②關：車已陷泥裡卻寫爸爸停車幫忙，邏輯不順，改成卡車陷泥、爸爸停車幫忙，車門被推開關不上；暴風雨與 u42-l08 閱讀重複，改成濃霧；煙味改油味；兩小題同步",
+        "resolution": "改前：\"Last winter, my dad and I drove home late at night in a storm. The wind was dangerously strong. Suddenly, our car got stuck in deep mud on a shadowy country road. There was a noticeable smell of smoke, and we saw a damaged truck by the road. A man stood motionless next to it. My dad stopped to help. The man said he was fine, but his truck couldn't move, and its door was pushed outward. We called for help and waited together. We had to endure the cold for a whole hour. I still vividly remember that night.\"；改後：\"Last winter, my dad and I drove home late at night. The fog was dangerously thick. On a shadowy country road, we saw a damaged truck by the road, and there was a noticeable smell of oil. A man stood motionless next to it. My dad stopped to help. The man said he was fine, but his truck was stuck in deep mud, and one door was pushed outward and couldn't close. We called for help and waited together. We had to endure the cold for a whole hour. I still vividly remember that night.\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正（b1b4）：第②關：車已陷泥裡卻寫爸爸停車幫忙，邏輯不順，改成卡車陷泥、爸爸停車幫忙，車門被推開關不上；暴風雨與 u42-l08 閱讀重複，改成濃霧；煙味改油味；兩小題同步",
+        "resolution": "改前：\"去年冬天，爸爸和我在暴風雨中深夜開車回家。風大得很危險。突然，我們的車在一條陰暗的鄉間小路上陷進了深深的泥巴裡，卡住了。空氣中有一股明顯的煙味，我們看到路邊有一輛受損的卡車。一個男人一動也不動地站在旁邊。爸爸停下來幫忙。那個男人說他沒事，但他的卡車動不了，車門也被往外推開了。我們打電話求救，然後一起等待。我們不得不忍受寒冷整整一個小時。我到現在還鮮明地記得那一晚。\"；改後：\"去年冬天，爸爸和我深夜開車回家。霧濃得很危險。在一條陰暗的鄉間小路上，我們看到路邊有一輛受損的卡車，空氣中有一股明顯的油味。一個男人一動也不動地站在旁邊。爸爸停車下去幫忙。那個男人說他沒事，但他的卡車卡在深深的泥巴裡，有一扇車門還被往外推開、關不上。我們打電話求救，然後一起等待。我們不得不忍受寒冷整整一個小時。我到現在還鮮明地記得那一晚。\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/14/questions/0/questionZh",
+        "message": "執行長第②③關裁示修正（b1b4）：第②關：車已陷泥裡卻寫爸爸停車幫忙，邏輯不順，改成卡車陷泥、爸爸停車幫忙，車門被推開關不上；暴風雨與 u42-l08 閱讀重複，改成濃霧；煙味改油味；兩小題同步",
+        "resolution": "改前：\"他們的車怎麼了？\"；改後：\"爸爸為什麼停車？\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/14/questions/0/options/0",
+        "message": "執行長第②③關裁示修正（b1b4）：第②關：車已陷泥裡卻寫爸爸停車幫忙，邏輯不順，改成卡車陷泥、爸爸停車幫忙，車門被推開關不上；暴風雨與 u42-l08 閱讀重複，改成濃霧；煙味改油味；兩小題同步",
+        "resolution": "改前：\"被一棵倒下的大樹壓壞了\"；改後：\"自己的車陷進泥巴裡了\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/14/questions/0/options/1",
+        "message": "執行長第②③關裁示修正（b1b4）：第②關：車已陷泥裡卻寫爸爸停車幫忙，邏輯不順，改成卡車陷泥、爸爸停車幫忙，車門被推開關不上；暴風雨與 u42-l08 閱讀重複，改成濃霧；煙味改油味；兩小題同步",
+        "resolution": "改前：\"陷進泥巴裡卡住了\"；改後：\"要幫路邊的男人\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長第②③關裁示修正（b1b4）：第②關：車已陷泥裡卻寫爸爸停車幫忙，邏輯不順，改成卡車陷泥、爸爸停車幫忙，車門被推開關不上；暴風雨與 u42-l08 閱讀重複，改成濃霧；煙味改油味；兩小題同步",
+        "resolution": "改前：\"車門被往外推開，車也動不了\"；改後：\"卡在泥裡，車門關不上\"",
+        "resolvedAt": "2026-10-02T23:11:18Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（說過去的事用過去式）\"；改後：\"時態配合內容（例如說過去的事用過去式等）\"",
+        "resolvedAt": "2026-10-02T23:14:34Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
+        "resolution": "改前：\"時態配合內容（例如說過去的事用過去式）\"；改後：\"時態配合內容（例如說過去的事用過去式等）\"",
+        "resolvedAt": "2026-10-02T23:14:34Z"
+      },
+      {
+        "path": "items/1/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「受損的車被拖走」與閱讀「路邊有一輛受損的卡車」同為受損車輛；改成損壞的手機還能用",
+        "resolution": "改前：\"The damaged car was taken away.\"；改後：\"The damaged phone still works.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/1/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「受損的車被拖走」與閱讀「路邊有一輛受損的卡車」同為受損車輛；改成損壞的手機還能用",
+        "resolution": "改前：\"那輛受損的車被拖走了。\"；改後：\"那支損壞的手機還能用。\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「這扇門向外開」與閱讀「一扇車門被往外推開」同為門向外、主詞相同；改成外表的平靜掩飾恐懼（第二義）",
+        "resolution": "改前：\"The door opens in an outward direction.\"；改後：\"Her outward calm hid her fear.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「這扇門向外開」與閱讀「一扇車門被往外推開」同為門向外、主詞相同；改成外表的平靜掩飾恐懼（第二義）",
+        "resolution": "改前：\"這扇門是向外開的。\"；改後：\"她外表的平靜掩飾了她的恐懼。\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「作者生動描寫古城」與翻譯「她把故事講得很生動」同為生動地敘述；改成花園色彩鮮明（第二義）",
+        "resolution": "改前：\"The writer describes the old city vividly.\"；改後：\"The garden was vividly colored with red and yellow flowers.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「作者生動描寫古城」與翻譯「她把故事講得很生動」同為生動地敘述；改成花園色彩鮮明（第二義）",
+        "resolution": "改前：\"作者生動地描寫了這座古城。\"；改後：\"花園裡開滿了紅色和黃色的花，色彩鮮明。\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/audioEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"The road near the river was damaged by the heavy rain, so it's closed for now.\"；改後：\"The damaged books in the library will be fixed next week.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/audioZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"河邊的道路被大雨損壞了，所以暫時封閉。\"；改後：\"圖書館裡損壞的書下週會修好。\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/questionZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"河邊的道路為什麼封閉？\"；改後：\"下週會發生什麼事？\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"It is being painted.\"；改後：\"The library will close for a month.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"There was a race.\"；改後：\"New books will arrive.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"It is too narrow.\"；改後：\"The library will move.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「河邊道路被大雨損壞封閉」與 u42-l06 聽選「倒樹擋路、改走別條路」同為道路阻斷公告，改成圖書館損壞的書下週修好",
+        "resolution": "改前：\"The heavy rain damaged it.\"；改後：\"Some old books will be repaired.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/11/sentenceEn",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「男子一動也不動地站在雨中」與閱讀「一個男人一動也不動地站在旁邊」同事件，改成貓一動也不動地盯著鳥",
+        "resolution": "改前：\"The man stood motionless in the rain.\"；改後：\"The cat sat motionless, watching the bird.\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/11/sentenceZh",
+        "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「男子一動也不動地站在雨中」與閱讀「一個男人一動也不動地站在旁邊」同事件，改成貓一動也不動地盯著鳥",
+        "resolution": "改前：\"那名男子一動也不動地站在雨中。\"；改後：\"貓一動也不動地坐著，盯著那隻鳥。\"",
+        "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「向外的」，並避開同課其他題的情境",
+        "resolution": "改前：\"Her outward calm hid her fear.\"；改後：\"The birds flew outward in all directions from the tree.\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「向外的」，並避開同課其他題的情境",
+        "resolution": "改前：\"她外表的平靜掩飾了她的恐懼。\"；改後：\"鳥群從樹上向四面八方飛出去。\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/4/exampleEn",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「生動地」，並避開同課其他題的情境",
+        "resolution": "改前：\"The garden was vividly colored with red and yellow flowers.\"；改後：\"The children painted the farm animals vividly.\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/4/exampleZh",
+        "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「生動地」，並避開同課其他題的情境",
+        "resolution": "改前：\"花園裡開滿了紅色和黃色的花，色彩鮮明。\"；改後：\"孩子們把農場動物畫得很生動。\"",
+        "resolvedAt": "2026-10-03T00:28:20Z"
+      }
+    ]
+  }
+}

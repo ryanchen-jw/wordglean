@@ -153,13 +153,13 @@
       "stemZh": "公車誤點了，車站裡也找不到地方坐。",
       "options": [
         "nowhere",
-        "furthermore",
+        "nonetheless",
         "altogether",
         "provided"
       ],
       "optionGlossZh": [
         "無處；哪裡都不",
-        "此外",
+        "儘管如此",
         "總共",
         "只要"
       ],
@@ -172,13 +172,13 @@
       "stemZh": "這支手機又輕又快，此外，電池可以撐兩天。",
       "options": [
         "Wherever",
-        "Nowhere",
+        "Nevertheless",
         "Mere",
         "Furthermore"
       ],
       "optionGlossZh": [
         "無論在哪裡",
-        "哪裡都不",
+        "然而",
         "僅僅的",
         "此外；而且"
       ],
@@ -303,6 +303,30 @@
         "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
         "resolution": "正解「搭公車」由位置 2 移到 0，與「開車」互換；審題員判題索引同步重對應",
         "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：furthermore 換本課字 nonetheless",
+        "resolution": "改前：\"furthermore\"；改後：\"nonetheless\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：furthermore 換本課字 nonetheless",
+        "resolution": "改前：\"此外\"；改後：\"儘管如此\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/13/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：Nowhere 換本課字 Nevertheless",
+        "resolution": "改前：\"Nowhere\"；改後：\"Nevertheless\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：Nowhere 換本課字 Nevertheless",
+        "resolution": "改前：\"哪裡都不\"；改後：\"然而\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
       }
     ]
   }

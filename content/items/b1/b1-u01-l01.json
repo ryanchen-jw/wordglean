@@ -168,13 +168,13 @@
       "options": [
         "Per",
         "Whether",
-        "Thus",
+        "Afterward",
         "Despite"
       ],
       "optionGlossZh": [
         "每",
         "是否",
-        "因此",
+        "之後",
         "儘管"
       ],
       "answer": 3
@@ -187,14 +187,14 @@
       "options": [
         "thus",
         "whoever",
-        "per",
-        "despite"
+        "including",
+        "aboard"
       ],
       "optionGlossZh": [
         "因此",
         "無論是誰",
-        "每",
-        "儘管"
+        "包括",
+        "在船上"
       ],
       "answer": 0
     },
@@ -329,6 +329,54 @@
         "message": "執行長第③關裁示修正：G1 正解位置偏誤（正解分散）",
         "resolution": "正解「三十美元」由位置 0 移到 2，與「二十美元」互換；審題員判題索引同步重對應",
         "resolvedAt": "2026-10-02T07:07:22Z"
+      },
+      {
+        "path": "items/14/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：per 與 q14 重複，換本課字 including",
+        "resolution": "改前：\"per\"；改後：\"including\"",
+        "resolvedAt": "2026-10-02T19:45:04Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：per 與 q14 重複，換本課字 including",
+        "resolution": "改前：\"每\"；改後：\"包括\"",
+        "resolvedAt": "2026-10-02T19:45:04Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"無論如何；還是\"；改後：\"還是；無論如何\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/13/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：Thus 換本課字 Afterward",
+        "resolution": "改前：\"Thus\"；改後：\"Afterward\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/13/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：Thus 換本課字 Afterward",
+        "resolution": "改前：\"因此\"；改後：\"之後\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/14/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：despite 換本課字 aboard",
+        "resolution": "改前：\"despite\"；改後：\"aboard\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：despite 換本課字 aboard",
+        "resolution": "改前：\"儘管\"；改後：\"在船上\"",
+        "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"還是；無論如何\"；改後：\"無論如何；還是\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
       }
     ]
   }

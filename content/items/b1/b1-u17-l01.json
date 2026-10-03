@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u17-l01",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:25:52Z",
+  "properNouns": [
+    "Riverton"
+  ],
+  "items": [
+    {
+      "id": "b1-u17-l01-q01",
+      "type": "wordCard",
+      "word": "architect",
+      "exampleEn": "The architect showed us a model of the new school.",
+      "exampleZh": "建築師給我們看新學校的模型。",
+      "glossZh": "建築師",
+      "distractorsZh": [
+        "工程師",
+        "律師",
+        "會計師"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q02",
+      "type": "wordCard",
+      "word": "sidewalk",
+      "exampleEn": "Please ride your bike on the road, not on the sidewalk.",
+      "exampleZh": "請在馬路上騎腳踏車，不要騎在人行道上。",
+      "glossZh": "人行道",
+      "distractorsZh": [
+        "停車場",
+        "屋頂",
+        "隧道"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q03",
+      "type": "wordCard",
+      "word": "monument",
+      "exampleEn": "Many tourists take photos in front of the old monument.",
+      "exampleZh": "很多觀光客在那座古老的紀念碑前拍照。",
+      "glossZh": "紀念碑；紀念建築",
+      "distractorsZh": [
+        "商店",
+        "飯店",
+        "車站"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q04",
+      "type": "wordCard",
+      "word": "fountain",
+      "exampleEn": "Children threw coins into the fountain and made a wish.",
+      "exampleZh": "孩子們把硬幣丟進噴水池許願。",
+      "glossZh": "噴水池；噴泉",
+      "distractorsZh": [
+        "垃圾桶",
+        "河",
+        "井"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q05",
+      "type": "wordCard",
+      "word": "firefighter",
+      "exampleEn": "The firefighters saved a cat from the roof.",
+      "exampleZh": "消防員把一隻貓從屋頂上救下來。",
+      "glossZh": "消防員",
+      "distractorsZh": [
+        "警察",
+        "醫生",
+        "郵差"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q06",
+      "type": "wordCard",
+      "word": "internationally",
+      "exampleEn": "Her paintings are known internationally.",
+      "exampleZh": "她的畫作享譽國際。",
+      "glossZh": "國際上；在國際間",
+      "distractorsZh": [
+        "在地方上",
+        "在家裡",
+        "在學校"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q07",
+      "type": "wordCard",
+      "word": "institute",
+      "exampleEn": "She teaches at an art institute.",
+      "exampleZh": "她在一所藝術學院教書。",
+      "glossZh": "學院；研究所；機構",
+      "distractorsZh": [
+        "醫院",
+        "工廠",
+        "銀行"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q08",
+      "type": "wordCard",
+      "word": "region",
+      "exampleEn": "It rains a lot in this region.",
+      "exampleZh": "這個地區常下雨。",
+      "glossZh": "地區；區域",
+      "distractorsZh": [
+        "季節",
+        "城堡",
+        "建築"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q09",
+      "type": "wordCard",
+      "word": "southern",
+      "exampleEn": "Southern cities are usually warmer.",
+      "exampleZh": "南部的城市通常比較溫暖。",
+      "glossZh": "南方的；南部的",
+      "distractorsZh": [
+        "北方的",
+        "東方的",
+        "西方的"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q10",
+      "type": "listenType",
+      "sentenceEn": "My cousin wants to be a firefighter.",
+      "sentenceZh": "我表弟想當消防員。"
+    },
+    {
+      "id": "b1-u17-l01-q11",
+      "type": "listenChoice",
+      "audioEn": "Meet me at the fountain in the town square at three.",
+      "audioZh": "三點在鎮上廣場的噴水池跟我碰面。",
+      "questionZh": "他們要在哪裡碰面？",
+      "options": [
+        "At the library.",
+        "At the station.",
+        "At the monument.",
+        "At the fountain."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u17-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "The sidewalk was wet after the rain.",
+      "sentenceZh": "雨後人行道濕濕的。"
+    },
+    {
+      "id": "b1-u17-l01-q13",
+      "type": "shadowing",
+      "sentenceEn": "The institute offers language classes at night.",
+      "sentenceZh": "這所學院晚上開設語言課程。"
+    },
+    {
+      "id": "b1-u17-l01-q14",
+      "type": "mcq",
+      "stemEn": "This bridge was designed by a famous ____.",
+      "stemZh": "這座橋是一位知名建築師設計的。",
+      "options": [
+        "architect",
+        "firefighter",
+        "monument",
+        "fountain"
+      ],
+      "optionGlossZh": [
+        "建築師",
+        "消防員",
+        "紀念碑",
+        "噴水池"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u17-l01-q15",
+      "type": "mcq",
+      "stemEn": "The company now sells its products ____, in more than thirty countries.",
+      "stemZh": "這家公司現在把產品銷往國際，超過三十個國家。",
+      "options": [
+        "eventually",
+        "immediately",
+        "region",
+        "internationally"
+      ],
+      "optionGlossZh": [
+        "最後",
+        "立刻",
+        "地區",
+        "國際上"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b1-u17-l01-q16",
+      "type": "reading",
+      "passageEn": "Welcome to Riverton, a small town in the southern region of the country. In the old square, you can see a stone monument and a large fountain. A famous architect designed the town hall, and people now come from other countries to see it. Next to it is a science institute that welcomes visitors on weekends. Delivery vans can't enter the square before 10 a.m. Every spring, the town's firefighters show their trucks to children.",
+      "passageZh": "歡迎來到 Riverton，這是位於該國南部地區的一座小鎮。在古老的廣場上，你可以看到一座石造紀念碑和一座大噴水池。一位知名建築師設計了市政廳，如今有人從其他國家專程來看。市政廳旁邊有一所科學研究機構，週末開放參觀。上午 10 點以前，送貨廂型車不能進入廣場。每年春天，鎮上的消防員會向孩子們展示他們的消防車。",
+      "questions": [
+        {
+          "questionZh": "市政廳是誰設計的？",
+          "options": [
+            "新上任的鎮長",
+            "消防隊員",
+            "一位年輕科學家",
+            "知名建築師"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "送貨廂型車什麼時候以前不能進入廣場？",
+          "options": [
+            "上午 8 點",
+            "上午 9 點",
+            "上午 10 點",
+            "中午 12 點"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q17",
+      "type": "translate",
+      "promptZh": "這個地區以水果聞名。",
+      "hintWords": [
+        "region"
+      ],
+      "referenceEn": [
+        "This region is famous for its fruit.",
+        "The region is well known for its fruit."
+      ],
+      "rubricZh": [
+        "region 表示「地區」，可數名詞",
+        "「以……聞名」可寫，例如 be famous for、be known for 等",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    },
+    {
+      "id": "b1-u17-l01-q18",
+      "type": "makeSentence",
+      "targetWord": "southern",
+      "instructionZh": "用 southern 造一個句子，說說某個地方的南部。",
+      "referenceEn": [
+        "My grandparents live in the southern part of the island.",
+        "I'd like to visit the southern coast one day."
+      ],
+      "rubricZh": [
+        "southern 表示「南方的、南部的」，放在名詞前",
+        "可用 the southern part of… 等說法",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u17-l01-q11": [
+        3
+      ],
+      "b1-u17-l01-q14": [
+        0
+      ],
+      "b1-u17-l01-q15": [
+        3
+      ],
+      "b1-u17-l01-q16#0": [
+        3
+      ],
+      "b1-u17-l01-q16#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/14/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 previously、immediately",
+        "resolution": "改前：\"region\"；改後：\"previously\"",
+        "resolvedAt": "2026-10-02T19:42:14Z"
+      },
+      {
+        "path": "items/14/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 previously、immediately",
+        "resolution": "改前：\"southern\"；改後：\"immediately\"",
+        "resolvedAt": "2026-10-02T19:42:14Z"
+      },
+      {
+        "path": "items/14/options/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 previously、immediately",
+        "resolution": "改前：\"sidewalk\"；改後：\"region\"",
+        "resolvedAt": "2026-10-02T19:42:14Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 previously、immediately",
+        "resolution": "改前：\"地區\"；改後：\"先前\"",
+        "resolvedAt": "2026-10-02T19:42:14Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 previously、immediately",
+        "resolution": "改前：\"南方的\"；改後：\"立刻\"",
+        "resolvedAt": "2026-10-02T19:42:14Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/2",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 previously、immediately",
+        "resolution": "改前：\"人行道\"；改後：\"地區\"",
+        "resolvedAt": "2026-10-02T19:42:14Z"
+      },
+      {
+        "path": "items/14/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 eventually、immediately",
+        "resolution": "改前：\"previously\"；改後：\"eventually\"",
+        "resolvedAt": "2026-10-02T19:42:38Z"
+      },
+      {
+        "path": "items/14/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（混合詞性 mcq 至少兩個干擾項文法放得進）：換成 u02 學過的副詞 eventually、immediately",
+        "resolution": "改前：\"先前\"；改後：\"最後\"",
+        "resolvedAt": "2026-10-02T19:42:38Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"學院；研究所；機構\"；改後：\"研究所；學院；機構\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/8/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"南方的；南部的\"；改後：\"南部的；南方的\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/6/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"研究所；學院；機構\"；改後：\"學院；研究所；機構\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/8/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"南部的；南方的\"；改後：\"南方的；南部的\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/6/exampleEn",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"My sister studies at a research institute.\"；改後：\"She teaches at an art institute.\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/6/exampleZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
+        "resolution": "改前：\"我姊姊在一所研究機構進修。\"；改後：\"她在一所藝術學院教書。\"",
+        "resolvedAt": "2026-10-02T20:30:15Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-u18-l06",
+  "level": "B1",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T18:01:08Z",
+  "properNouns": [],
+  "items": [
+    {
+      "id": "b1-u18-l06-q01",
+      "type": "wordCard",
+      "word": "lorry",
+      "exampleEn": "A big lorry was blocking the road.",
+      "exampleZh": "一輛大卡車擋住了馬路。",
+      "glossZh": "卡車；貨車",
+      "distractorsZh": [
+        "腳踏車",
+        "計程車",
+        "救護車"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q02",
+      "type": "wordCard",
+      "word": "backpacking",
+      "exampleEn": "Backpacking is a cheap way to see the world.",
+      "exampleZh": "背包旅行是看世界的便宜方式。",
+      "glossZh": "背包旅行",
+      "distractorsZh": [
+        "搭郵輪",
+        "住飯店",
+        "跟團旅遊"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q03",
+      "type": "wordCard",
+      "word": "check-in counter",
+      "exampleEn": "The check-in counter was very busy this morning.",
+      "exampleZh": "今天早上報到櫃台非常忙。",
+      "glossZh": "（機場的）報到櫃台",
+      "distractorsZh": [
+        "免稅店",
+        "登機門",
+        "行李轉盤"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q04",
+      "type": "wordCard",
+      "word": "check-in desk",
+      "exampleEn": "The hotel check-in desk opens at two.",
+      "exampleZh": "飯店的入住櫃台兩點開放。",
+      "glossZh": "（飯店、機場的）報到櫃台；入住櫃台",
+      "distractorsZh": [
+        "餐廳",
+        "健身房",
+        "游泳池"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q05",
+      "type": "wordCard",
+      "word": "public transport",
+      "exampleEn": "Public transport in this city is fast and cheap.",
+      "exampleZh": "這座城市的大眾運輸又快又便宜。",
+      "glossZh": "大眾運輸",
+      "distractorsZh": [
+        "私人轎車",
+        "計程車",
+        "腳踏車道"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q06",
+      "type": "wordCard",
+      "word": "traffic jam",
+      "exampleEn": "Traffic jams are common here in the morning.",
+      "exampleZh": "這裡早上常常塞車。",
+      "glossZh": "交通堵塞；塞車",
+      "distractorsZh": [
+        "停車場",
+        "加油站",
+        "紅綠燈"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q07",
+      "type": "wordCard",
+      "word": "travel agent",
+      "exampleEn": "Her mother works as a travel agent.",
+      "exampleZh": "她媽媽是旅行社人員。",
+      "glossZh": "旅行社人員；旅行代辦",
+      "distractorsZh": [
+        "飯店經理",
+        "計程車司機",
+        "導遊"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q08",
+      "type": "listenType",
+      "sentenceEn": "The lorry driver stopped for a coffee.",
+      "sentenceZh": "卡車司機停下來喝杯咖啡。"
+    },
+    {
+      "id": "b1-u18-l06-q09",
+      "type": "listenChoice",
+      "audioEn": "Sorry I'm late. There was a traffic jam on the bridge.",
+      "audioZh": "抱歉我遲到了。橋上塞車。",
+      "questionZh": "說話者為什麼遲到？",
+      "options": [
+        "There was a traffic jam.",
+        "His car broke down on the way.",
+        "He missed the early bus.",
+        "He woke up much too late."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b1-u18-l06-q10",
+      "type": "shadowing",
+      "sentenceEn": "Ask at the check-in desk if you need a taxi.",
+      "sentenceZh": "如果需要計程車，可以問入住櫃台。"
+    },
+    {
+      "id": "b1-u18-l06-q11",
+      "type": "shadowing",
+      "sentenceEn": "Many students go backpacking after they finish school.",
+      "sentenceZh": "很多學生畢業後會去背包旅行。"
+    },
+    {
+      "id": "b1-u18-l06-q12",
+      "type": "mcq",
+      "stemEn": "The ____ helped us plan our whole holiday.",
+      "stemZh": "旅行社人員幫我們規劃了整個假期。",
+      "options": [
+        "public transport",
+        "traffic jam",
+        "travel agent",
+        "check-in desk"
+      ],
+      "optionGlossZh": [
+        "大眾運輸",
+        "塞車",
+        "旅行社人員",
+        "報到櫃台"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u18-l06-q13",
+      "type": "mcq",
+      "stemEn": "At the airport, show your passport at the ____.",
+      "stemZh": "在機場時，請在報到櫃台出示護照。",
+      "options": [
+        "lorry",
+        "runway",
+        "check-in counter",
+        "carriage"
+      ],
+      "optionGlossZh": [
+        "卡車",
+        "跑道",
+        "報到櫃台",
+        "車廂"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b1-u18-l06-q14",
+      "type": "reading",
+      "passageEn": "My travel agent found a cheap flight for my backpacking trip. On the day of the trip, I took public transport to the airport because parking there is expensive. But the bus got stuck in a traffic jam behind a lorry that had broken down near the crossroads. I ran to the check-in counter just ten minutes before it closed. Next time, I will leave home much earlier.",
+      "passageZh": "旅行社的人幫我這趟背包旅行找到便宜的機票。出發那天，我搭大眾運輸去機場，因為那裡停車很貴。但公車在十字路口附近，被困在一輛故障卡車後面的車陣裡。我跑到報到櫃台時，離櫃台關閉只剩十分鐘。下次我會更早出門。",
+      "questions": [
+        {
+          "questionZh": "公車為什麼被困在車陣中？",
+          "options": [
+            "前面發生了一場車禍",
+            "前面有輛卡車故障",
+            "前面道路正在施工",
+            "下大雨讓路面淹水"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "作者趕到報到櫃台時是什麼情況？",
+          "options": [
+            "櫃台快要關閉了",
+            "櫃台還要一小時才開",
+            "櫃台已經關閉了",
+            "櫃台前大排長龍"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q15",
+      "type": "translate",
+      "promptZh": "我們在飯店的入住櫃台等了二十分鐘。",
+      "hintWords": [
+        "check-in desk"
+      ],
+      "referenceEn": [
+        "We waited at the hotel check-in desk for twenty minutes.",
+        "We waited for twenty minutes at the check-in desk of the hotel."
+      ],
+      "rubricZh": [
+        "check-in desk 表示「入住櫃台、報到櫃台」",
+        "「等了二十分鐘」寫法例如 waited for twenty minutes、waited twenty minutes 等",
+        "時態配合內容（例如說過去的事用過去式）"
+      ]
+    },
+    {
+      "id": "b1-u18-l06-q16",
+      "type": "makeSentence",
+      "targetWord": "public transport",
+      "instructionZh": "用 public transport 造一個句子，說說你使用大眾運輸的習慣。",
+      "referenceEn": [
+        "I take public transport to work every day.",
+        "I prefer public transport because I don't have a car."
+      ],
+      "rubricZh": [
+        "public transport 表示「大眾運輸」，是不可數名詞",
+        "可用 take／use public transport、by public transport 等說法",
+        "時態配合內容（多用現在簡單式）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T19:25:06Z",
+    "verdicts": {
+      "b1-u18-l06-q09": [
+        0
+      ],
+      "b1-u18-l06-q12": [
+        2
+      ],
+      "b1-u18-l06-q13": [
+        2
+      ],
+      "b1-u18-l06-q14#0": [
+        1
+      ],
+      "b1-u18-l06-q14#1": [
+        0
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/13/passageZh",
+        "message": "B1 第 3 批審查裁示修正：第②關：中譯不順，改「旅行社的人幫我這趟背包旅行找到便宜的機票」",
+        "resolution": "改前：\"我的旅行社人員幫我的背包旅行找到便宜的機票。出發那天，我搭大眾運輸去機場，因為那裡停車很貴。但公車在十字路口附近，被困在一輛故障卡車後面的車陣裡。我跑到報到櫃台時，離櫃台關閉只剩十分鐘。下次我會更早出門。\"；改後：\"旅行社的人幫我這趟背包旅行找到便宜的機票。出發那天，我搭大眾運輸去機場，因為那裡停車很貴。但公車在十字路口附近，被困在一輛故障卡車後面的車陣裡。我跑到報到櫃台時，離櫃台關閉只剩十分鐘。下次我會更早出門。\"",
+        "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/12/options/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：traffic jam→runway、public transport→carriage",
+        "resolution": "改前：\"traffic jam\"；改後：\"lorry\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：traffic jam→runway、public transport→carriage",
+        "resolution": "改前：\"lorry\"；改後：\"runway\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/options/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：traffic jam→runway、public transport→carriage",
+        "resolution": "改前：\"public transport\"；改後：\"carriage\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/0",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：traffic jam→runway、public transport→carriage",
+        "resolution": "改前：\"塞車\"；改後：\"卡車\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/1",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：traffic jam→runway、public transport→carriage",
+        "resolution": "改前：\"卡車\"；改後：\"跑道\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/12/optionGlossZh/3",
+        "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：traffic jam→runway、public transport→carriage",
+        "resolution": "改前：\"大眾運輸\"；改後：\"車廂\"",
+        "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"（飯店、機場的）報到櫃台；入住櫃台\"；改後：\"入住櫃台；（飯店、機場的）報到櫃台\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
+        "resolution": "改前：\"交通堵塞；塞車\"；改後：\"塞車；交通堵塞\"",
+        "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/3/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"入住櫃台；（飯店、機場的）報到櫃台\"；改後：\"（飯店、機場的）報到櫃台；入住櫃台\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/5/glossZh",
+        "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
+        "resolution": "改前：\"塞車；交通堵塞\"；改後：\"交通堵塞；塞車\"",
+        "resolvedAt": "2026-10-02T20:30:06Z"
+      }
+    ]
+  }
+}
