@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto'
 import { act, fireEvent, render, screen, within } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, onTestFinished, vi } from 'vitest'
 import { db } from '../../data/appDb'
 import type { LessonItemsDoc } from '../../lesson/items'
 import { MicDeniedError, type MicPermission, type Recording } from '../../speech/mic'
@@ -149,13 +149,45 @@ describe('跟讀：待錄與錄音（s04 idle／recording／busy）', () => {
     expect(await screen.findByRole('textbox')).toHaveValue('Could we push the meetings to next')
   })
 
+  // 錄滿 2 秒才按結束（不足 1 秒算錄音太短，見下）
+  const recordFor = async (ms: number) => {
+    const t0 = Date.now()
+    fireEvent.click(await screen.findByRole('button', { name: '開始錄音' }))
+    const stop = await screen.findByRole('button', { name: '結束錄音' })
+    vi.spyOn(Date, 'now').mockReturnValue(t0 + ms)
+    onTestFinished(() => {
+      vi.restoreAllMocks()
+    })
+    fireEvent.click(stop)
+  }
+
   it('轉文字失敗：回到待錄並提示再唸一次', async () => {
     const f = fakeSpeech({ heard: [new Error('worker died')] })
     renderLesson(f.services)
-    fireEvent.click(await screen.findByRole('button', { name: '開始錄音' }))
-    fireEvent.click(await screen.findByRole('button', { name: '結束錄音' }))
+    await recordFor(2000)
     expect(await screen.findByText('錄音或轉文字失敗，請再唸一次')).toBeInTheDocument()
     expect(button('開始錄音')).toBeEnabled()
+  })
+
+  // 創辦人裁示（2026-10-03）④A：按下錄音馬上結束時 MediaRecorder 偶發 EncodingError，改給專屬提示
+  it('錄音太短：解碼丟 EncodingError 時提示唸完整句', async () => {
+    const f = fakeSpeech()
+    f.services.startRecording = vi.fn(async () => ({
+      stop: () => Promise.reject(new DOMException('Unable to decode audio data', 'EncodingError')),
+      cancel: vi.fn(),
+    }))
+    renderLesson(f.services)
+    await recordFor(2000)
+    expect(await screen.findByText('錄音太短了，唸完整句再按結束')).toBeInTheDocument()
+    expect(screen.queryByText('錄音或轉文字失敗，請再唸一次')).toBeNull()
+    expect(button('開始錄音')).toBeEnabled()
+  })
+
+  it('錄音太短：不到 1 秒就結束而失敗時提示唸完整句', async () => {
+    const f = fakeSpeech({ heard: [new Error('worker died')] })
+    renderLesson(f.services)
+    await recordFor(500)
+    expect(await screen.findByText('錄音太短了，唸完整句再按結束')).toBeInTheDocument()
   })
 })
 

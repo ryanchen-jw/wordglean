@@ -21,11 +21,14 @@ import type { QuestionProps } from './types'
 import { ZhText } from './ZhText'
 
 type Ui =
-  | { kind: 'idle'; failed?: boolean }
+  | { kind: 'idle'; failed?: boolean; tooShort?: boolean }
   | { kind: 'recording'; startedAt: number }
   | { kind: 'busy' }
   | { kind: 'confirm'; recognized: string; text: string }
   | { kind: 'result'; comparison: Comparison }
+
+// 錄不到這麼久就結束而失敗，算錄音太短
+const TOO_SHORT_MS = 1000
 
 // 音量條靜止時的高度（設計 s04 recording）；錄音中依音量縮放
 const WAVE = [6, 12, 20, 14, 22, 10, 16, 6]
@@ -146,6 +149,7 @@ export function ShadowingView({
     const rec = recording.current
     if (!rec) return
     recording.current = null
+    const heldMs = ui.kind === 'recording' ? Date.now() - ui.startedAt : Infinity
     setUi({ kind: 'busy' })
     try {
       const recognized = await rec.finish()
@@ -156,7 +160,10 @@ export function ShadowingView({
         setUi({ kind: 'idle' })
       } else {
         console.error('[speech] 轉文字失敗', e)
-        setUi({ kind: 'idle', failed: true })
+        // 按下馬上結束：錄音解碼偶發 EncodingError，或錄太短而失敗，給專屬提示（創辦人裁示 2026-10-03 ④A）
+        const tooShort =
+          heldMs < TOO_SHORT_MS || (e instanceof DOMException && e.name === 'EncodingError')
+        setUi({ kind: 'idle', failed: true, tooShort })
       }
     }
   }
@@ -453,7 +460,13 @@ export function ShadowingView({
           <Mic size={30} aria-hidden="true" />
         </button>
         <span className={`text-secondary ${ui.failed ? 'text-error' : 'text-muted'}`}>
-          {t(ui.failed ? 'speak.question.failed' : 'speak.question.idleHint')}
+          {t(
+            ui.tooShort
+              ? 'speak.question.tooShort'
+              : ui.failed
+                ? 'speak.question.failed'
+                : 'speak.question.idleHint',
+          )}
         </span>
       </RecWrap>
     )

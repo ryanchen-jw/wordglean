@@ -13,6 +13,8 @@ interface Seed {
   progress?: { lessonId: string; daysAgo: number }[]
   words?: number
   due?: number
+  /** 指定字（wordId、課程來源、是否收藏），寫在合成字之後 */
+  pool?: { wordId: string; courseRefs: string[]; favorited?: boolean }[]
 }
 
 // 直接寫 IndexedDB（結構同 data/db.ts v1）；先等 App 建好資料庫，避免搶先建出空庫
@@ -57,6 +59,22 @@ async function seed(page: Page, s: Seed) {
           lastReview: null,
           courseRefs: ['a1-u01-l01'], // 有來源才算在池中（TASK-16 D3）
           favoritedAt: i % 7 === 2 ? i : null,
+          addedAt: i,
+        })
+      for (const [i, w] of (s.pool ?? []).entries())
+        tx.objectStore('wordPool').put({
+          wordId: w.wordId,
+          state: 2,
+          due: Date.now() + (i + 1) * DAY,
+          stability: 5,
+          difficulty: 5,
+          scheduledDays: 3,
+          learningSteps: 0,
+          reps: 2,
+          lapses: 0,
+          lastReview: null,
+          courseRefs: w.courseRefs,
+          favoritedAt: w.favorited ? i + 1 : null,
           addedAt: i,
         })
       await new Promise((r) => (tx.oncomplete = r))
@@ -162,6 +180,26 @@ test('s09 單字庫：空的／預設（5000 字）／熟悉度彈層', async ({
   await check(page, info, 's09-default')
   await page.getByRole('button', { name: '熟悉度：全部' }).click()
   await check(page, info, 's09-familiarity-sheet')
+})
+
+// 創辦人裁示（2026-10-03）①B：上過課的字顯示小課單字卡第一義（樣本課 a1-u01-l01）；沒上課的收藏字顯示字典義
+test('s09 單字庫：上過課的字顯示小課第一義、收藏字顯示字典義', async ({ page }, info) => {
+  await page.goto('/words')
+  await expect(page.getByText('單字庫還是空的')).toBeVisible()
+  await seed(page, {
+    pool: [
+      { wordId: 'a', courseRefs: ['a1-u01-l01'] },
+      { wordId: 'the', courseRefs: ['a1-u01-l01'] },
+      { wordId: 'postpone', courseRefs: [], favorited: true },
+    ],
+  })
+  await page.reload()
+  const list = page.getByTestId('word-list')
+  await expect(list.getByText('延遲', { exact: true })).toBeVisible()
+  await check(page, info, 's09-course-gloss')
+  await expect(list.getByText('一個、一', { exact: true })).toBeVisible()
+  await expect(list.getByText('那個、這個', { exact: true })).toBeVisible()
+  await expect(list.getByText('累加器')).toHaveCount(0)
 })
 
 // TASK-16：字典彈層三態＋疊在課程詳情上；jennyx 為假字（查無此字）

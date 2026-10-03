@@ -1,9 +1,12 @@
 import 'fake-indexeddb/auto'
 import { fireEvent, render, screen, within } from '@testing-library/react'
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { db } from '../../data/appDb'
 import type { PoolWord } from '../../data/db'
 import { DictionaryProvider } from '../../dict/DictionaryProvider'
+import type { LessonItemsDoc } from '../../lesson/items'
 import { CardState } from '../../srs/scheduler'
 import { fsDictDeps } from '../../test/dictFs'
 import { WordsScreen } from './WordsScreen'
@@ -129,6 +132,48 @@ describe('單字庫（s09）', () => {
       renderWithDict()
       fireEvent.click(await screen.findByRole('button', { name: 'agenda' }))
       expect(await screen.findByRole('dialog', { name: '單字查義' })).toBeInTheDocument()
+    })
+
+    // 創辦人裁示（2026-10-03）①B：上過課的字顯示小課單字卡的第一義，字典義只給沒有單字卡的字
+    describe('上過課的字顯示小課單字卡第一義', () => {
+      const lesson = JSON.parse(
+        readFileSync(resolve(process.cwd(), '../content/items/a1/a1-u01-l01.json'), 'utf-8'),
+      ) as LessonItemsDoc
+      const loadItems = async (id: string) => (id === 'a1-u01-l01' ? lesson : null)
+      const renderWithItems = () =>
+        render(
+          <DictionaryProvider deps={deps}>
+            <WordsScreen loadItems={loadItems} />
+          </DictionaryProvider>,
+        )
+
+      it('a 顯示「一個」、the 顯示「那個」，不是字典第一義', async () => {
+        await db.wordPool.bulkPut([word('a'), word('the')])
+        renderWithItems()
+        expect(await screen.findByText('一個')).toBeInTheDocument()
+        expect(screen.getByText('那個')).toBeInTheDocument()
+        expect(screen.queryByText('累加器')).toBeNull()
+        expect(screen.queryByText('那')).toBeNull()
+      })
+
+      it('沒上課的收藏字仍顯示字典義', async () => {
+        await db.wordPool.bulkPut([word('a'), word('postpone', { courseRefs: [], favoritedAt: 1 })])
+        renderWithItems()
+        expect(await screen.findByText('一個')).toBeInTheDocument()
+        expect(await screen.findByText('延遲')).toBeInTheDocument()
+      })
+
+      it('中文搜尋比對小課釋義', async () => {
+        await db.wordPool.bulkPut([word('a'), word('the')])
+        renderWithItems()
+        await screen.findByText('一個')
+        fireEvent.change(screen.getByRole('searchbox', { name: '搜尋英文或中文' }), {
+          target: { value: '一個' },
+        })
+        expect(listed()).toEqual(['a'])
+        fireEvent.change(screen.getByRole('searchbox'), { target: { value: '這個' } })
+        expect(listed()).toEqual(['the'])
+      })
     })
 
     it('沒有課程來源也沒收藏的字（取消收藏後）不列、不計數', async () => {

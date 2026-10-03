@@ -1,6 +1,7 @@
 // 單字庫（設計 s09）：分頁（全部／到期／收藏）＋熟悉度下拉＋英文或中文搜尋；列出中文釋義、英文字可點查義（TASK-16）
+// 中文釋義：上過課的字取小課單字卡第一義，沒有單字卡的字（收藏字）才用字典義（創辦人裁示 2026-10-03 ①B）
 import { BookOpen, ChevronDown, Search, Star } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { db } from '../../data/appDb'
 import type { PoolWord } from '../../data/db'
 import { inPool } from '../../data/repo'
@@ -11,6 +12,10 @@ import { EnglishText } from '../../dict/EnglishText'
 import { shortGloss } from '../../dict/format'
 import { glossLine } from '../../dict/gloss'
 import { t, type MessageKey } from '../../i18n/t'
+import type { LessonItemsDoc } from '../../lesson/items'
+import { loadLessonItems } from '../../lesson/load'
+import { firstSense } from '../../lesson/queue'
+import { loadReviewCards } from '../../review/session'
 import { navigate } from '../../router'
 import { TabScreen } from '../../shell/Screen'
 import { deviceTimeZone } from '../../srs/daily'
@@ -54,32 +59,54 @@ function EmptyState() {
   )
 }
 
-/** 單字池各字的中文釋義行（wordId → 釋義）；字典載入前為空表 */
-function useGlosses(words: readonly PoolWord[] | undefined): ReadonlyMap<string, string> {
+type LoadItems = (lessonId: string) => Promise<LessonItemsDoc | null>
+
+/** 列表顯示的短釋義（show）與中文搜尋比對的整行釋義（search） */
+interface Gloss {
+  show: string
+  search: string
+}
+
+/**
+ * 單字池各字的中文釋義（wordId → 釋義）：小課單字卡（只載字的來源課題目檔）優先，其餘字等字典載入後補上；
+ * 都還沒載入前為空表
+ */
+function useGlosses(
+  words: readonly PoolWord[] | undefined,
+  loadItems: LoadItems,
+): ReadonlyMap<string, Gloss> {
   const dict = useDictionary()
-  const [glosses, setGlosses] = useState<ReadonlyMap<string, string>>(new Map())
+  const [glosses, setGlosses] = useState<ReadonlyMap<string, Gloss>>(new Map())
   const key = words?.map((w) => w.wordId).join(' ')
   useEffect(() => {
-    if (!dict || !key) return
+    if (!key) return
     let alive = true
-    dict
-      .deps()
-      .then(async (deps) => {
-        const ids = key.split(' ')
-        const lines = await Promise.all(ids.map((id) => glossLine(id, deps)))
-        const map = new Map<string, string>()
-        ids.forEach((id, i) => lines[i] !== null && map.set(id, lines[i]))
+    const ids = key.split(' ')
+    // 題目檔載入失敗的課當作沒有單字卡，退回字典義
+    loadReviewCards(db, ids, (id) => loadItems(id).catch(() => null))
+      .then(async ({ cards, missing }) => {
+        const map = new Map<string, Gloss>()
+        for (const c of cards)
+          map.set(c.wordId, { show: firstSense(c.item.glossZh), search: c.item.glossZh })
+        if (dict && missing.length > 0) {
+          const deps = await dict.deps()
+          const lines = await Promise.all(missing.map((id) => glossLine(id, deps)))
+          missing.forEach(
+            (id, i) =>
+              lines[i] !== null && map.set(id, { show: shortGloss(lines[i]), search: lines[i] }),
+          )
+        }
         if (alive) setGlosses(map)
       })
       .catch((e) => console.error(e))
     return () => {
       alive = false
     }
-  }, [dict, key])
+  }, [dict, key, loadItems])
   return glosses
 }
 
-type ListProps = { words: PoolWord[]; nowMs: number; glosses: ReadonlyMap<string, string> }
+type ListProps = { words: PoolWord[]; nowMs: number; glosses: ReadonlyMap<string, Gloss> }
 
 function WordList({ words, nowMs, glosses }: ListProps) {
   const [shown, setShown] = useState(PAGE)
@@ -118,7 +145,7 @@ function WordList({ words, nowMs, glosses }: ListProps) {
                 />
                 {glosses.has(w.wordId) && (
                   <span className="max-w-full truncate text-secondary text-muted">
-                    {shortGloss(glosses.get(w.wordId)!)}
+                    {glosses.get(w.wordId)!.show}
                   </span>
                 )}
               </span>
@@ -141,7 +168,8 @@ function WordList({ words, nowMs, glosses }: ListProps) {
   )
 }
 
-export function WordsScreen() {
+/** loadItems：測試注入題目檔來源 */
+export function WordsScreen({ loadItems = loadLessonItems }: { loadItems?: LoadItems } = {}) {
   // 「現在」跟著資料一起取，資料變動時一併更新（render 內不可呼叫 Date.now）
   const data = useLiveQuery(
     // 來源歸零（取消收藏、按了復原）的字不算在池中（TASK-16 D3）
@@ -154,7 +182,11 @@ export function WordsScreen() {
   const [familiarity, setFamiliarity] = useState<Familiarity | 'all'>('all')
   const [query, setQuery] = useState('')
   const [sheetOpen, setSheetOpen] = useState(false)
-  const glosses = useGlosses(words)
+  const glosses = useGlosses(words, loadItems)
+  const searchText = useMemo(
+    () => new Map([...glosses].map(([id, g]) => [id, g.search])),
+    [glosses],
+  )
 
   const dueCount = words?.filter((w) => isDue(w, nowMs)).length ?? 0
   const summary = !words
@@ -210,7 +242,7 @@ export function WordsScreen() {
             </button>
             <WordList
               key={filterKey}
-              words={filterWords(words, { scope, familiarity, query }, nowMs, glosses)}
+              words={filterWords(words, { scope, familiarity, query }, nowMs, searchText)}
               nowMs={nowMs}
               glosses={glosses}
             />
