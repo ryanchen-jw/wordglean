@@ -138,10 +138,10 @@
       "audioZh": "手工藝市集星期六十點在學校禮堂開始。",
       "questionZh": "手工藝市集在哪裡舉行？",
       "options": [
-        "At the library.",
+        "In the school library.",
         "In the park near the station.",
-        "At the market next to the river.",
-        "In the school hall."
+        "At the town hall.",
+        "In a hall at the school."
       ],
       "answer": 3
     },
@@ -319,6 +319,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：myth→miracle",
         "resolution": "改前：\"神話\"；改後：\"奇蹟\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At the library.\"；改後：\"In the school library.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At the market next to the river.\"；改後：\"At the town hall.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"In the school hall.\"；改後：\"In a hall at the school.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

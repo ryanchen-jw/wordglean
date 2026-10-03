@@ -128,8 +128,8 @@
       "questionZh": "說話者建議做什麼？",
       "options": [
         "Buy a better map.",
-        "Ask someone for directions.",
-        "Go back to the hotel.",
+        "Ask a person the way.",
+        "Read the map again.",
         "Wait for a taxi."
       ],
       "answer": 1
@@ -428,6 +428,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：翻譯「偷偷為媽媽準備禮物」與閱讀「偷偷策劃生日驚喜」同事件，改成偷偷把狗帶進房間",
         "resolution": "改前：\"secretly 表示「偷偷地、秘密地」，例如 secretly plan… 等說法\"；改後：\"secretly 表示「偷偷地、秘密地」，例如 secretly bring… 等說法\"",
         "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Ask someone for directions.\"；改後：\"Ask a person the way.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Go back to the hotel.\"；改後：\"Read the map again.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

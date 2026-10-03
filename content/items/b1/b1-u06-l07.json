@@ -127,10 +127,10 @@
       "audioZh": "我估計大約有五十個人會來參加派對。",
       "questionZh": "說話者估計有多少人會來？",
       "options": [
-        "About five.",
+        "Exactly fifty.",
         "About fifteen.",
         "About five hundred.",
-        "About fifty."
+        "Close to fifty."
       ],
       "answer": 3
     },
@@ -303,6 +303,18 @@
         "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
         "resolution": "改前：\"計畫已經取消\"；改後：\"計畫已經被市政府取消\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"About five.\"；改後：\"Exactly fifty.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"About fifty.\"；改後：\"Close to fifty.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

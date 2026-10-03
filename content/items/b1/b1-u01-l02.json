@@ -141,10 +141,10 @@
       "audioZh": "Rachel 打電話問了三間店，但沒有一間有她想要的書。",
       "questionZh": "Rachel 找到她想要的書了嗎？",
       "options": [
-        "No, she forgot to call.",
-        "Yes, the first shop had it.",
+        "No, she called only one shop.",
+        "Yes, one of the three shops had it.",
         "Yes, she bought it online.",
-        "No, none of the shops had it."
+        "No, she couldn't get it from any shop."
       ],
       "answer": 3
     },
@@ -329,6 +329,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"不然；否則\"；改後：\"否則；不然\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"No, she forgot to call.\"；改後：\"No, she called only one shop.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Yes, the first shop had it.\"；改後：\"Yes, one of the three shops had it.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"No, none of the shops had it.\"；改後：\"No, she couldn't get it from any shop.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -125,9 +125,9 @@
       "audioZh": "洗碗機壞了，所以我們今晚得用手洗碗。",
       "questionZh": "他們今晚得怎麼洗碗？",
       "options": [
-        "With a machine.",
+        "With the dishwasher.",
         "At a restaurant.",
-        "By hand.",
+        "Without the machine.",
         "Tomorrow morning."
       ],
       "answer": 2
@@ -450,6 +450,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"鐵是一種堅固的金屬。\"；改後：\"熨斗燙到不能碰。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"With a machine.\"；改後：\"With the dishwasher.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"By hand.\"；改後：\"Without the machine.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

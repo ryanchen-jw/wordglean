@@ -125,10 +125,10 @@
       "audioZh": "我們這一帶有一座小公園、一家麵包店，還有一所很好的學校。",
       "questionZh": "說話者住的那一帶有什麼？",
       "options": [
-        "A big shopping mall and a cinema.",
-        "A park, a bakery, and a school.",
-        "A hospital and a bank.",
-        "A train station and a big hotel."
+        "A small park and a cinema.",
+        "A good school, a bakery, and a little park.",
+        "A good school and a hospital.",
+        "A bakery and a train station."
       ],
       "answer": 1
     },
@@ -337,6 +337,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"我爸媽住在南部的一個小鎮。\"；改後：\"鄉下人常常對遊客很親切。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A big shopping mall and a cinema.\"；改後：\"A small park and a cinema.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A park, a bakery, and a school.\"；改後：\"A good school, a bakery, and a little park.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A hospital and a bank.\"；改後：\"A good school and a hospital.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A train station and a big hotel.\"；改後：\"A bakery and a train station.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

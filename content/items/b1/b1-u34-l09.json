@@ -131,7 +131,7 @@
         "Wait for the elevator to be fixed.",
         "Leave the building now.",
         "Take the stairs for today.",
-        "Call the front desk."
+        "Use the elevator today."
       ],
       "answer": 2
     },
@@ -525,6 +525,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審同類問題自查（§11.27）：前一輪改寫的例句用了次要詞義，改寫成示範第一義「維修」",
         "resolution": "改前：\"舊車需要很多保養。\"；改後：\"這座舊橋每年的維修工作都很多。\"",
         "resolvedAt": "2026-10-03T00:29:37Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Call the front desk.\"；改後：\"Use the elevator today.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

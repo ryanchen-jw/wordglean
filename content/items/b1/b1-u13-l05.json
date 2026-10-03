@@ -128,9 +128,9 @@
       "questionZh": "冰箱裡有什麼？",
       "options": [
         "Some bacon.",
-        "Some lettuce.",
+        "Lots of vegetables.",
         "Some spinach.",
-        "A cabbage."
+        "One cabbage."
       ],
       "answer": 3
     },
@@ -357,6 +357,18 @@
         "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
         "resolution": "改前：\"用一些罐頭蔬菜\"；改後：\"用罐頭蔬菜\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Some lettuce.\"；改後：\"Lots of vegetables.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A cabbage.\"；改後：\"One cabbage.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

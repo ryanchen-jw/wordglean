@@ -129,8 +129,8 @@
       "options": [
         "Press the red button twice.",
         "Use a key card.",
-        "Press the green button.",
-        "Call the front desk for help."
+        "Use the green button.",
+        "Wait for the door to open."
       ],
       "answer": 2
     },
@@ -405,6 +405,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"很多小商店在漫長的雨季中生意受到影響。\"；改後：\"很多動物在非常炎熱的夏天受苦。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Press the green button.\"；改後：\"Use the green button.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Call the front desk for help.\"；改後：\"Wait for the door to open.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

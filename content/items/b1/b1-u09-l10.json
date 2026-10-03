@@ -125,10 +125,10 @@
       "audioZh": "經理稱讚整個團隊工作很努力。",
       "questionZh": "經理為什麼稱讚團隊？",
       "options": [
-        "For their hard work.",
-        "For being on time.",
-        "For their new design.",
-        "For saving money."
+        "Because they worked very hard.",
+        "Because they were on time.",
+        "Because the manager worked hard.",
+        "Because they saved money."
       ],
       "answer": 0
     },
@@ -403,6 +403,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"孩子們在餐廳裡很守規矩。\"；改後：\"孩子們在餐廳裡表現得很好。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"For their hard work.\"；改後：\"Because they worked very hard.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"For being on time.\"；改後：\"Because they were on time.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"For their new design.\"；改後：\"Because the manager worked hard.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"For saving money.\"；改後：\"Because they saved money.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

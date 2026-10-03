@@ -127,9 +127,9 @@
       "audioZh": "抱歉這裡很亂。我們這週在油漆辦公室，所以請使用會議室。",
       "questionZh": "辦公室這週為什麼很亂？",
       "options": [
-        "They are moving desks.",
-        "They are painting it.",
-        "They had a party.",
+        "They are painting the meeting room.",
+        "It's getting new paint.",
+        "They had a party this week.",
         "They are cleaning the floor."
       ],
       "answer": 1
@@ -387,6 +387,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這顆蘋果吃起來甜甜的。\"；改後：\"這顆蘋果有甜甜的味道。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"They are moving desks.\"；改後：\"They are painting the meeting room.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"They are painting it.\"；改後：\"It's getting new paint.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"They had a party.\"；改後：\"They had a party this week.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

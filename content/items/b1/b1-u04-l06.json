@@ -128,8 +128,8 @@
       "audioZh": "你可以直接打電話給經理，她的號碼在名片上。",
       "questionZh": "要怎麼聯絡經理？",
       "options": [
-        "Call her directly.",
-        "Send her a letter.",
+        "Phone her yourself.",
+        "Send her a card.",
         "Ask the front desk.",
         "Visit her office."
       ],
@@ -370,6 +370,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"東西；物體\"；改後：\"物體；東西\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Call her directly.\"；改後：\"Phone her yourself.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Send her a letter.\"；改後：\"Send her a card.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

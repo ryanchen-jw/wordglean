@@ -127,10 +127,10 @@
       "audioZh": "如果你目擊了今天早上操場上發生的事，請跟你的老師說。",
       "questionZh": "說話者請目擊者做什麼？",
       "options": [
-        "Talk to their teacher.",
+        "Tell their teacher about it.",
         "Write a short report.",
-        "Call the police at once.",
-        "Go home early."
+        "Go back to the playground.",
+        "Call the police at once."
       ],
       "answer": 0
     },
@@ -446,6 +446,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：只看英文唯一可解複核：「警方在新聞上公布 bomb 的照片」也說得通，干擾項換成 politics",
         "resolution": "改前：\"炸彈\"；改後：\"政治\"",
         "resolvedAt": "2026-10-03T00:00:43Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Talk to their teacher.\"；改後：\"Tell their teacher about it.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Call the police at once.\"；改後：\"Go back to the playground.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"Go home early.\"；改後：\"Call the police at once.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

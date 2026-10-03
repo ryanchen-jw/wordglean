@@ -129,7 +129,7 @@
       "options": [
         "They fell asleep.",
         "They sang songs together.",
-        "They ate lunch.",
+        "They missed the bus home.",
         "They played games."
       ],
       "answer": 0
@@ -321,6 +321,12 @@
         "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
         "resolution": "改前：\"跟司機吵架\"；改後：\"跟司機吵了一架\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"They ate lunch.\"；改後：\"They missed the bus home.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

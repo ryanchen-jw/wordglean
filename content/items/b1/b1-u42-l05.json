@@ -125,10 +125,10 @@
       "audioZh": "你表格上的電話號碼不正確，請再寫一次。",
       "questionZh": "說話者請對方做什麼？",
       "options": [
-        "Sign at the bottom.",
+        "Sign at the bottom of the form.",
         "Bring the form back next Monday.",
         "Call the office before five o'clock.",
-        "Write the phone number again."
+        "Fix the wrong number on the form."
       ],
       "answer": 3
     },
@@ -432,6 +432,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「不小心地」，並避開同課其他題的情境",
         "resolution": "改前：\"我們在機場意外相遇。\"；改後：\"他不小心踩到我的腳。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Sign at the bottom.\"；改後：\"Sign at the bottom of the form.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Write the phone number again.\"；改後：\"Fix the wrong number on the form.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

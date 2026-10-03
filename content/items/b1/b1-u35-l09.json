@@ -125,10 +125,10 @@
       "audioZh": "不要在這裡游泳。水看起來很深，其實很淺，而且有石頭。",
       "questionZh": "為什麼不要在這裡游泳？",
       "options": [
-        "The water is shallow.",
+        "The water isn't deep enough.",
         "The water is too cold today.",
         "There are too many fish here.",
-        "It's too deep."
+        "The water is too deep."
       ],
       "answer": 0
     },
@@ -378,6 +378,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #37：卡與翻譯同為描述景觀、同句型，改成舞者的精彩表演",
         "resolution": "改前：\"新的火車站非常壯觀。\"；改後：\"舞者們帶來一場精彩壯觀的表演。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The water is shallow.\"；改後：\"The water isn't deep enough.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It's too deep.\"；改後：\"The water is too deep.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

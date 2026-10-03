@@ -125,8 +125,8 @@
       "audioZh": "我姊姊比較喜歡靠窗的座位，所以我幫她訂了一個。",
       "questionZh": "說話者幫姊姊訂了什麼座位？",
       "options": [
-        "A window seat.",
-        "A seat near the door.",
+        "One by the window.",
+        "A window seat for the speaker.",
         "A seat in the middle row.",
         "A seat next to her friend."
       ],
@@ -414,6 +414,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「班上討論有爭議的問題、老師保持中立」與 u36-l01 閱讀（哲學課討論、意見不同沒有結論）同事件，改成家裡的電影之夜選片；兩小題同步、拿掉不再出現的 Mia",
         "resolution": "改前：\"下週再投一次\"；改後：\"各自回房間看手機\"",
         "resolvedAt": "2026-10-02T23:36:18Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A window seat.\"；改後：\"One by the window.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A seat near the door.\"；改後：\"A window seat for the speaker.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

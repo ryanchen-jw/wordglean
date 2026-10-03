@@ -126,8 +126,8 @@
       "questionZh": "說話者提醒什麼？",
       "options": [
         "Wear a warm coat.",
-        "Drink enough water.",
-        "Close all the windows.",
+        "Have plenty to drink.",
+        "Drink a lot of hot tea.",
         "Stay in bed all day."
       ],
       "answer": 1
@@ -456,6 +456,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：只看英文唯一可解複核：a colorful meeting 可解作熱鬧的會議，干擾項換成 misty",
         "resolution": "改前：\"色彩鮮豔的\"；改後：\"有霧的\"",
         "resolvedAt": "2026-10-03T00:00:43Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Drink enough water.\"；改後：\"Have plenty to drink.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Close all the windows.\"；改後：\"Drink a lot of hot tea.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

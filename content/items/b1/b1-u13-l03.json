@@ -127,10 +127,10 @@
       "audioZh": "本咖啡店不再提供塑膠吸管，但你可以索取紙吸管。",
       "questionZh": "需要吸管的話該怎麼做？",
       "options": [
-        "Drink from the bottle.",
+        "Ask for a plastic one.",
         "Buy a plastic straw.",
         "Use a spoon.",
-        "Ask for a paper straw."
+        "Request one made of paper."
       ],
       "answer": 3
     },
@@ -381,6 +381,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：deliver 是 u16 才教的字、borrow 與題意無關，換 rearrange、absorb",
         "resolution": "改前：\"遞送\"；改後：\"吸收\"",
         "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Drink from the bottle.\"；改後：\"Ask for a plastic one.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Ask for a paper straw.\"；改後：\"Request one made of paper.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

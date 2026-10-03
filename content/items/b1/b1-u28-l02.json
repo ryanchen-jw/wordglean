@@ -128,9 +128,9 @@
       "questionZh": "新的退貨政策是什麼？",
       "options": [
         "Returns are not allowed.",
-        "You can return things only if they are not used.",
+        "You have three days to return things.",
         "You must pay a small fee.",
-        "You have thirty days to return things."
+        "You can bring items back for a month."
       ],
       "answer": 3
     },
@@ -326,6 +326,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「班上選班長」與閱讀「棋社選社長」同事件，改成選舉結果上新聞；干擾項 inspection 代入也通，換成 postcard",
         "resolution": "改前：\"檢查\"；改後：\"明信片\"",
         "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"You can return things only if they are not used.\"；改後：\"You have three days to return things.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"You have thirty days to return things.\"；改後：\"You can bring items back for a month.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

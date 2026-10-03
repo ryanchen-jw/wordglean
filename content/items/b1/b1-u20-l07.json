@@ -125,9 +125,9 @@
       "audioZh": "吸菸者可以使用飯店後面的區域，但不能在花園裡。",
       "questionZh": "吸菸者可以在哪裡抽菸？",
       "options": [
-        "Near the front door.",
+        "In front of the hotel.",
         "In the garden.",
-        "Behind the hotel.",
+        "At the back of the hotel.",
         "On their balcony."
       ],
       "answer": 2
@@ -408,6 +408,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充（釋義不用詞性標記並列，統一「X；Y」，例句詞義放第一）",
         "resolution": "改前：\"咳嗽（動詞）；咳嗽聲（名詞）\"；改後：\"咳嗽；咳嗽聲\"",
         "resolvedAt": "2026-10-02T20:08:26Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Near the front door.\"；改後：\"In front of the hotel.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Behind the hotel.\"；改後：\"At the back of the hotel.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

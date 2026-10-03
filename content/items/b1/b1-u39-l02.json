@@ -125,10 +125,10 @@
       "audioZh": "今天浪太大，我們不能在礁石附近游泳。",
       "questionZh": "為什麼今天不能在礁石附近游泳？",
       "options": [
-        "There are fish.",
+        "The reef is too big.",
         "The water is cold.",
-        "It is too late.",
-        "The waves are too big."
+        "It is too late today.",
+        "The sea is too rough."
       ],
       "answer": 3
     },
@@ -348,6 +348,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「樹皮」，並避開同課其他題的情境",
         "resolution": "改前：\"冬天時，鹿有時會吃樹皮。\"；改後：\"冬天時，有些動物會吃樹皮。\"",
         "resolvedAt": "2026-10-03T00:28:36Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"There are fish.\"；改後：\"The reef is too big.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It is too late.\"；改後：\"It is too late today.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The waves are too big.\"；改後：\"The sea is too rough.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

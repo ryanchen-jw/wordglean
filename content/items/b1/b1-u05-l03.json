@@ -128,10 +128,10 @@
       "audioZh": "派對需要兩打杯子，所以請買二十四個。",
       "questionZh": "需要買幾個杯子？",
       "options": [
-        "Twelve.",
-        "Twenty-four.",
-        "Forty-two.",
-        "Twenty."
+        "Two dozen and four.",
+        "Two sets of twelve.",
+        "Forty-two in all.",
+        "Just one dozen."
       ],
       "answer": 1
     },
@@ -376,6 +376,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"他在倫敦花了五十英鎊買票。\"；改後：\"我的新小狗只有三磅重。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Twelve.\"；改後：\"Two dozen and four.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Twenty-four.\"；改後：\"Two sets of twelve.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Forty-two.\"；改後：\"Forty-two in all.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Twenty.\"；改後：\"Just one dozen.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

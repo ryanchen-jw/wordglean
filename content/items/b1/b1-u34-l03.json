@@ -125,10 +125,10 @@
       "audioZh": "如果你想轉到別的班，請在星期五前到辦公室談。",
       "questionZh": "想換班要怎麼做？",
       "options": [
-        "Talk to the office before Friday.",
-        "Ask your parents to call.",
+        "Go and see the office before Friday.",
+        "Talk to the new class on Friday.",
         "Wait until next term.",
-        "Send an email."
+        "Ask your parents to call."
       ],
       "answer": 0
     },
@@ -390,6 +390,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「水循環」與閱讀「教室裡學水循環」重複，改成四季每年依同樣的順序更替（「循環」會被 opencc 誤轉）",
         "resolution": "改前：\"四季每年都依照同樣的循環更替。\"；改後：\"四季每年都依照同樣的順序輪流更替。\"",
         "resolvedAt": "2026-10-02T23:31:26Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Talk to the office before Friday.\"；改後：\"Go and see the office before Friday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Ask your parents to call.\"；改後：\"Talk to the new class on Friday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"Send an email.\"；改後：\"Ask your parents to call.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

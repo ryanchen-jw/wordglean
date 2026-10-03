@@ -126,9 +126,9 @@
       "questionZh": "會議室可以容納幾個人？",
       "options": [
         "Twenty people.",
-        "Ten people.",
-        "Five people.",
-        "Fifteen people."
+        "No more than ten.",
+        "Only five people.",
+        "At least ten."
       ],
       "answer": 1
     },
@@ -355,6 +355,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"範圍；程度\"；改後：\"程度；範圍\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Ten people.\"；改後：\"No more than ten.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Five people.\"；改後：\"Only five people.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Fifteen people.\"；改後：\"At least ten.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

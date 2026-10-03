@@ -116,9 +116,9 @@
       "questionZh": "說話者在哪裡遇到老同學？",
       "options": [
         "At a wedding in the next town.",
-        "At the train station.",
+        "Where people catch trains.",
         "At a coffee shop.",
-        "At the airport."
+        "At their old school."
       ],
       "answer": 1
     },
@@ -380,6 +380,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「老同學放學後教我文法」與 u38-l01（姊姊幫我複習）、u38-l07（我教妹妹寫作）同為有人指導課業，改成老同學寄來一封談英文單字的電子郵件；兩小題題幹同步",
         "resolution": "改前：\"我的老同學 Kevin 現在在大學讀生物化學。上週，他寄給我一封關於英文單字的有趣電子郵件。他寫道，字首「un-」表示「不」，所以「unhappy」就是「不開心」。他也解釋，字尾「-ness」會把「kind」變成名詞「kindness」。接著他問我一個問題：「y 是母音還是子音？」答案是兩者都可以！我回信時試著用上他教的東西，但忘了加兩個逗號，還用錯了一次代名詞。Kevin 笑著說我越來越進步了。我很喜歡寫信給他。\"；改後：\"我的老同學 Kevin 現在在大學讀生物化學。上週，他寄給我一封關於英文單字的有趣電子郵件。他寫道，「unhappy」的字首表示「不」。他也解釋，字尾「-ness」會把「kind」變成名詞「kindness」。接著他問我一個問題：同一個字母可以既是母音又是子音嗎？答案是可以！我回信時試著用上他教的東西，但忘了加兩個逗號，還用錯了一次代名詞。Kevin 笑著說我越來越進步了。我很喜歡寫信給他。\"",
         "resolvedAt": "2026-10-02T23:41:33Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At the train station.\"；改後：\"Where people catch trains.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At the airport.\"；改後：\"At their old school.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

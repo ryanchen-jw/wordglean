@@ -114,9 +114,9 @@
       "audioZh": "不要把平底鍋放進洗碗機，用溫水手洗。",
       "questionZh": "平底鍋應該怎麼洗？",
       "options": [
-        "By hand with warm water.",
+        "By hand, using warm water.",
         "In the dishwasher at night.",
-        "With cold water and soap only.",
+        "By hand with cold water.",
         "Leave it in water overnight."
       ],
       "answer": 0
@@ -314,6 +314,24 @@
         "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
         "resolution": "改前：\"With cold water only.\"；改後：\"With cold water and soap only.\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"By hand with warm water.\"；改後：\"Yourself, using warm water.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"With cold water and soap only.\"；改後：\"By hand with cold water.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：審題員用語：正解改成較自然的說法",
+        "resolution": "改前：\"Yourself, using warm water.\"；改後：\"By hand, using warm water.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "市區賽跑七點開始，所以跑者應該在六點半前到。",
       "questionZh": "跑者應該幾點前到？",
       "options": [
-        "At seven o'clock.",
-        "At six o'clock.",
-        "By half past six.",
-        "By eight."
+        "By seven o'clock.",
+        "By half past seven.",
+        "No later than six thirty.",
+        "At six o'clock."
       ],
       "answer": 2
     },
@@ -355,6 +355,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"比賽；賽跑\"；改後：\"賽跑；比賽\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At seven o'clock.\"；改後：\"By seven o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At six o'clock.\"；改後：\"By half past seven.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"By half past six.\"；改後：\"No later than six thirty.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"By eight.\"；改後：\"At six o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

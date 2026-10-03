@@ -127,10 +127,10 @@
       "audioZh": "第一夫人星期五會來我們學校參訪，所以那天課上到中午。",
       "questionZh": "星期五的課上到幾點？",
       "options": [
-        "At ten.",
-        "At three.",
-        "At noon.",
-        "At two."
+        "At one o'clock.",
+        "At three o'clock.",
+        "At twelve o'clock.",
+        "At two o'clock."
       ],
       "answer": 2
     },
@@ -381,6 +381,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"他是後來才加入團隊的人，有很多東西要學。\"；改後：\"遲到的人必須在外面等到休息時間。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"At ten.\"；改後：\"At one o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"At three.\"；改後：\"At three o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At noon.\"；改後：\"At twelve o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"At two.\"；改後：\"At two o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

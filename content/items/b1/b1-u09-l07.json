@@ -128,8 +128,8 @@
       "questionZh": "說話者覺得這次住宿怎麼樣？",
       "options": [
         "The room was too small.",
-        "They had a great stay.",
-        "The staff were rude.",
+        "They really enjoyed it.",
+        "The staff did very little.",
         "The hotel was too far away."
       ],
       "answer": 1
@@ -327,6 +327,18 @@
         "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
         "resolution": "改前：\"很年輕\"；改後：\"年紀很輕\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"They had a great stay.\"；改後：\"They really enjoyed it.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The staff were rude.\"；改後：\"The staff did very little.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

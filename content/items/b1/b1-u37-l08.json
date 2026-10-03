@@ -125,10 +125,10 @@
       "audioZh": "我跟鄰居的狗玩時，我的貓會吃醋，躲到床底下。",
       "questionZh": "貓吃醋時會怎麼做？",
       "options": [
-        "It cries loudly.",
+        "It plays with the dog.",
         "It climbs onto the kitchen table.",
         "It bites the neighbor's dog.",
-        "It hides under the bed."
+        "It goes under the bed."
       ],
       "answer": 3
     },
@@ -336,6 +336,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #40：卡與 mcq、造句同為羨慕手足親戚，改成不要嫉妒別人的成功",
         "resolution": "改前：\"他嫉妒弟弟的新腳踏車。\"；改後：\"不要嫉妒別人的成功。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It cries loudly.\"；改後：\"It plays with the dog.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"It hides under the bed.\"；改後：\"It goes under the bed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

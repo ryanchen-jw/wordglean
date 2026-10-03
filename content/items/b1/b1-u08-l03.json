@@ -130,10 +130,10 @@
       "audioZh": "各位女士、先生，表演將在五分鐘後開始。",
       "questionZh": "表演什麼時候開始？",
       "options": [
-        "In five minutes.",
+        "Five minutes from now.",
         "In fifteen minutes.",
         "In one hour.",
-        "Right now."
+        "Five minutes ago."
       ],
       "answer": 0
     },
@@ -384,6 +384,18 @@
         "message": "執行長最終複審修正：F2：invitation 換 neighborhood（u08-l02）",
         "resolution": "改前：\"邀請\"；改後：\"社區\"",
         "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"In five minutes.\"；改後：\"Five minutes from now.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Right now.\"；改後：\"Five minutes ago.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

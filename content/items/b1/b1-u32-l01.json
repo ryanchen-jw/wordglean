@@ -141,8 +141,8 @@
       "questionZh": "會議改到什麼時候？",
       "options": [
         "To next Monday morning.",
-        "To Thursday this week.",
-        "To this afternoon at four.",
+        "To this coming Thursday.",
+        "To Thursday next week.",
         "To Friday evening."
       ],
       "answer": 1
@@ -339,6 +339,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 The management decided… 與閱讀 The management team believes… 主詞、句型相同；改成良好的管理幫助小店成長",
         "resolution": "改前：\"管理階層決定提早關店。\"；改後：\"良好的管理能幫助小店成長。\"",
         "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"To Thursday this week.\"；改後：\"This coming Thursday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"To this afternoon at four.\"；改後：\"To Thursday next week.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項統一用 To 開頭",
+        "resolution": "改前：\"This coming Thursday.\"；改後：\"To this coming Thursday.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
       }
     ]
   }

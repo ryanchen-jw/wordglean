@@ -125,9 +125,9 @@
       "audioZh": "再次入場時，請出示手腕上的印章。",
       "questionZh": "要怎麼再次入場？",
       "options": [
-        "Show the wrist stamp.",
-        "Buy a new ticket at the door.",
-        "Call the front desk for help.",
+        "Hold up your stamped wrist.",
+        "Show your concert ticket again.",
+        "Get a new stamp at the door.",
         "Wait outside the main gate."
       ],
       "answer": 0
@@ -313,6 +313,24 @@
         "message": "執行長最終複審修正：F10（§11.30 保健宣稱）：改 People have two lungs in their chest.",
         "resolution": "改前：\"新鮮空氣對肺很好。\"；改後：\"人的胸腔裡有兩個肺。\"",
         "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Show the wrist stamp.\"；改後：\"Hold up your stamped wrist.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Buy a new ticket at the door.\"；改後：\"Show your concert ticket again.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Call the front desk for help.\"；改後：\"Get a new stamp at the door.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

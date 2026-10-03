@@ -126,8 +126,8 @@
       "questionZh": "需要幫忙提行李時該怎麼做？",
       "options": [
         "Call a taxi company.",
-        "Ask the staff at the front desk.",
-        "Wait near the lift.",
+        "Speak to the people at reception.",
+        "Leave the bags at the front desk.",
         "Carry them yourself."
       ],
       "answer": 1
@@ -378,6 +378,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「幫我包禮物」與閱讀「一起包禮物給表弟妹」同事件，改成她把圍巾圍在脖子上（不用祈使句，避開與卡同句型）",
         "resolution": "改前：\"把圍巾圍在脖子上，外面很冷。\"；改後：\"她把溫暖的圍巾圍在脖子上。\"",
         "resolvedAt": "2026-10-02T23:31:37Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Ask the staff at the front desk.\"；改後：\"Speak to the people at reception.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Wait near the lift.\"；改後：\"Leave the bags at the front desk.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

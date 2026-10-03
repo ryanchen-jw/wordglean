@@ -131,9 +131,9 @@
       "audioZh": "這個村子大部分的居民是六十歲以上的農夫。",
       "questionZh": "這個村子的居民大多是什麼人？",
       "options": [
-        "Young students.",
-        "Farmers over sixty.",
-        "Shop owners.",
+        "Young farmers.",
+        "Older people who farm.",
+        "Shop owners over sixty.",
         "Tourists in summer."
       ],
       "answer": 1
@@ -391,6 +391,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：acquaintance→teammate",
         "resolution": "改前：\"認識的人\"；改後：\"隊友\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Young students.\"；改後：\"Young farmers.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Farmers over sixty.\"；改後：\"Older people who farm.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Shop owners.\"；改後：\"Shop owners over sixty.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -138,8 +138,8 @@
       "audioZh": "抱歉，我現在得走了，辦公室有個緊急的問題。",
       "questionZh": "說話者為什麼要離開？",
       "options": [
-        "A problem at the office.",
-        "A train that he must catch soon.",
+        "An urgent matter at work.",
+        "The office is closing now.",
         "A friend's birthday party.",
         "A forgotten bag."
       ],
@@ -356,6 +356,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"不尋常地；異常地\"；改後：\"異常地；不尋常地\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A problem at the office.\"；改後：\"An urgent matter at work.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A train that he must catch soon.\"；改後：\"The office is closing now.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

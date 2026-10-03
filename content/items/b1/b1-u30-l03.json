@@ -126,9 +126,9 @@
       "questionZh": "房卡不能用時要怎麼做？",
       "options": [
         "Call the manager's office at once.",
-        "Tell the front desk.",
+        "Let the front desk know.",
         "Wait until the next morning.",
-        "Use the stairs."
+        "Stop using the room."
       ],
       "answer": 1
     },
@@ -318,6 +318,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「教練強調團隊合作」與 mcq「老師強調閱讀的重要」同為師長強調某價值、句型相同；改成紅色突顯重要的字",
         "resolution": "改前：\"教練總是強調團隊合作。\"；改後：\"紅色突顯出最重要的字。\"",
         "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Tell the front desk.\"；改後：\"Let the front desk know.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Use the stairs.\"；改後：\"Stop using the room.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

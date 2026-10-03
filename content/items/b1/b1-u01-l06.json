@@ -129,9 +129,9 @@
       "questionZh": "Tom 現在怎麼上班？",
       "options": [
         "He rides a bike.",
-        "He drives his car.",
-        "He walks.",
-        "He takes the train."
+        "He still drives to work.",
+        "He walks there.",
+        "He goes by train."
       ],
       "answer": 3
     },
@@ -386,6 +386,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"而不是；代替\"；改後：\"代替；而不是\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He drives his car.\"；改後：\"He still drives to work.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"He walks.\"；改後：\"He walks there.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He takes the train.\"；改後：\"He goes by train.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -141,9 +141,9 @@
       "audioZh": "機器因為機械問題停了，所以工人提早回家。",
       "questionZh": "工人為什麼提早回家？",
       "options": [
-        "It was a holiday.",
-        "The boss was away.",
-        "The machine had a problem.",
+        "The workers had a holiday.",
+        "The boss went home early.",
+        "The machine wasn't working.",
         "It rained heavily all morning."
       ],
       "answer": 2
@@ -359,6 +359,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長裁示（單字卡作答選項只顯示釋義第一義）：釋義第一義改為本課例句所教的詞義",
         "resolution": "改前：\"專用的；獨家的；獨有的\"；改後：\"獨家的；專用的；獨有的\"",
         "resolvedAt": "2026-10-02T19:58:16Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It was a holiday.\"；改後：\"The workers had a holiday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The boss was away.\"；改後：\"The boss went home early.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The machine had a problem.\"；改後：\"The machine wasn't working.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

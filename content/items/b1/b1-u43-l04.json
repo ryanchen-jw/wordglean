@@ -127,10 +127,10 @@
       "audioZh": "暴風雨時我妹妹嚇壞了，整晚都躲在床底下。",
       "questionZh": "妹妹在暴風雨時怎麼了？",
       "options": [
-        "She stood at the window.",
-        "She hid under her bed.",
+        "She hid under the table.",
+        "She got under her bed.",
         "She went outside.",
-        "She sang loudly."
+        "She slept all night."
       ],
       "answer": 1
     },
@@ -410,6 +410,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：翻譯「媽媽因為我沒做功課罵我」與閱讀「她罵我罵得不公平」同事件，改成她從來不罵學生",
         "resolution": "改前：\"時態配合內容（例如說過去的事用過去式等）\"；改後：\"時態配合內容（例如現在簡單式等）\"",
         "resolvedAt": "2026-10-02T23:54:43Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"She stood at the window.\"；改後：\"She hid under the table.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"She hid under her bed.\"；改後：\"She got under her bed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"She sang loudly.\"；改後：\"She slept all night.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

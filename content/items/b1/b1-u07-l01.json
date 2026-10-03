@@ -125,10 +125,10 @@
       "audioZh": "我們今年銷售額上升，但成本更高，造成了小小的虧損。",
       "questionZh": "這家公司今年的結果如何？",
       "options": [
-        "Fast growth.",
+        "Sales went down this year.",
         "No change at all.",
-        "A small loss.",
-        "A big success."
+        "They lost a little money.",
+        "Higher sales and no loss."
       ],
       "answer": 2
     },
@@ -373,6 +373,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這家店位在靠近三所學校的絕佳位置。\"；改後：\"我們需要一個策略上的計畫來贏得更多顧客。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Fast growth.\"；改後：\"Sales went down this year.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A small loss.\"；改後：\"They lost a little money.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A big success.\"；改後：\"Higher sales and no loss.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

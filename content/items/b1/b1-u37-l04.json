@@ -128,10 +128,10 @@
       "audioZh": "電影的結局讓所有人都震驚了，沒人想到主角竟然是壞人。",
       "questionZh": "為什麼觀眾很震驚？",
       "options": [
-        "The music was loud.",
+        "Everyone expected the ending.",
         "The movie was too long.",
-        "The theater was cold.",
-        "The hero turned out to be the bad guy."
+        "The hero died at the end.",
+        "The good guy was really the bad one."
       ],
       "answer": 3
     },
@@ -423,6 +423,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示（干擾項不可跨課重複）：react 已在 u40-l05 當過干擾項，換成 arise",
         "resolution": "改前：\"反應\"；改後：\"出現\"",
         "resolvedAt": "2026-10-02T23:57:28Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The music was loud.\"；改後：\"Everyone expected the ending.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The theater was cold.\"；改後：\"The hero died at the end.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The hero turned out to be the bad guy.\"；改後：\"The good guy was really the bad one.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

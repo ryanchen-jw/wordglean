@@ -125,10 +125,10 @@
       "audioZh": "如果你想在五月請一天有薪假，請把名字寫在公告欄上。",
       "questionZh": "想在五月請有薪假要怎麼做？",
       "options": [
-        "Fill in a form at the front desk.",
+        "Write your name on a form.",
         "Send an email to the manager's office.",
         "Talk to the manager before the end of April.",
-        "Write your name on the noticeboard."
+        "Add your name to the noticeboard."
       ],
       "answer": 3
     },
@@ -360,6 +360,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「和店家談更好的價格」與閱讀「經理談到更低的價格」同事件，改成工人想和老闆協商縮短工時",
         "resolution": "改前：\"我們需要和那家店談一個更好的價格。\"；改後：\"工人們想和老闆協商縮短工時。\"",
         "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Fill in a form at the front desk.\"；改後：\"Write your name on a form.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Write your name on the noticeboard.\"；改後：\"Add your name to the noticeboard.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

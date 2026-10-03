@@ -125,9 +125,9 @@
       "audioZh": "我弟弟很怕閃電，所以暴風雨時會躲進被子裡。",
       "questionZh": "弟弟怕閃電，所以會怎麼做？",
       "options": [
-        "He runs to his parents' room.",
+        "He hides under his bed.",
         "He watches it from the window.",
-        "He hides under his blanket.",
+        "He covers himself with a blanket.",
         "He turns on all the lights."
       ],
       "answer": 2
@@ -396,6 +396,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：與 u26-l02 同為天候關閉公告，改成弟弟怕閃電躲進被子",
         "resolution": "改前：\"The water is too dirty.\"；改後：\"He turns on all the lights.\"",
         "resolvedAt": "2026-10-02T23:17:59Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He runs to his parents' room.\"；改後：\"He hides under his bed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He hides under his blanket.\"；改後：\"He covers himself with a blanket.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

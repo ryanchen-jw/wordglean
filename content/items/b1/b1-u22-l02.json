@@ -138,9 +138,9 @@
       "audioZh": "馬戲團七點開演，但請早點來買票。",
       "questionZh": "為什麼要早點到？",
       "options": [
-        "To buy tickets.",
+        "To pay for tickets.",
+        "To get good seats.",
         "To meet the clowns.",
-        "To get a map.",
         "To eat first."
       ],
       "answer": 0
@@ -367,6 +367,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"天氣有了劇烈的變化。\"；改後：\"那位演員在最後發表了一段很有戲劇性的演說。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"To buy tickets.\"；改後：\"To pay for tickets.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"To meet the clowns.\"；改後：\"To get good seats.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"To get a map.\"；改後：\"To meet the clowns.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

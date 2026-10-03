@@ -144,9 +144,9 @@
       "audioZh": "會議改到星期四，截止期限現在改成下星期一。",
       "questionZh": "截止期限改到什麼時候？",
       "options": [
-        "Next Friday.",
+        "Next Thursday.",
         "This Thursday.",
-        "Next Monday.",
+        "Monday of next week.",
         "Tomorrow morning."
       ],
       "answer": 2
@@ -350,6 +350,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"很快；不久\"；改後：\"不久；很快\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Next Friday.\"；改後：\"Next Thursday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Next Monday.\"；改後：\"Monday of next week.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

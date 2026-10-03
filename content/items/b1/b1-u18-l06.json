@@ -112,10 +112,10 @@
       "audioZh": "抱歉我遲到了。橋上塞車。",
       "questionZh": "說話者為什麼遲到？",
       "options": [
-        "There was a traffic jam.",
-        "His car broke down on the way.",
-        "He missed the early bus.",
-        "He woke up much too late."
+        "Too many cars on the bridge.",
+        "The bridge was closed.",
+        "The speaker missed the bus.",
+        "The speaker woke up late."
       ],
       "answer": 0
     },
@@ -318,6 +318,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"塞車；交通堵塞\"；改後：\"交通堵塞；塞車\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"There was a traffic jam.\"；改後：\"Too many cars on the bridge.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"His car broke down on the way.\"；改後：\"The bridge was closed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"He missed the early bus.\"；改後：\"The speaker missed the bus.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He woke up much too late.\"；改後：\"The speaker woke up late.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

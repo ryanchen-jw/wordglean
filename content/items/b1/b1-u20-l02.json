@@ -140,10 +140,10 @@
       "audioZh": "那位籃球員手指受傷了，所以星期六不會上場。",
       "questionZh": "那位球員為什麼星期六不上場？",
       "options": [
-        "He is very sick.",
+        "He hurt his foot.",
         "He has a family trip.",
-        "He hurt his finger.",
-        "His team lost."
+        "His finger is injured.",
+        "His team won't play."
       ],
       "answer": 2
     },
@@ -442,6 +442,24 @@
         "message": "執行長最終複審修正：執行長澄清：單字卡改示範鳥的胸部後，聽打改回雞胸肉情境，避免與單字卡同情境",
         "resolution": "改前：\"這隻鳥的胸前是鮮紅色的。\"；改後：\"我們吃了烤雞胸肉配飯。\"",
         "resolvedAt": "2026-10-02T20:31:44Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He is very sick.\"；改後：\"He hurt his foot.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He hurt his finger.\"；改後：\"His finger is injured.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"His team lost.\"；改後：\"His team won't play.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

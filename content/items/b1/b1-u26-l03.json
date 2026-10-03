@@ -125,9 +125,9 @@
       "audioZh": "登山客應該在三點前登頂，因為冬天天黑得早。",
       "questionZh": "為什麼要在三點前登頂？",
       "options": [
-        "It gets dark early in winter.",
-        "The weather will change.",
-        "The café closes then.",
+        "Night comes early in winter.",
+        "It gets cold early in winter.",
+        "The summit closes at three.",
         "There is a strong wind."
       ],
       "answer": 0
@@ -288,6 +288,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「花六小時登頂」與造句參考答案「去年夏天登頂」同為登頂、主詞同為說話者；改成山頂終年積雪",
         "resolution": "改前：\"我們花了六個小時才登上山頂。\"；改後：\"山頂終年積雪。\"",
         "resolvedAt": "2026-10-02T23:17:59Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"It gets dark early in winter.\"；改後：\"Night comes early in winter.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The weather will change.\"；改後：\"It gets cold early in winter.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The café closes then.\"；改後：\"The summit closes at three.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

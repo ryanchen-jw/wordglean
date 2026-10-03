@@ -125,10 +125,10 @@
       "audioZh": "她穿了一件藍色長禮服去參加晚宴，大家都很喜歡。",
       "questionZh": "她穿什麼去參加晚宴？",
       "options": [
-        "A long blue gown.",
-        "A short red dress.",
-        "A white shirt.",
-        "A black suit."
+        "A long blue dress.",
+        "A short blue gown.",
+        "A long red dress.",
+        "A blue shirt."
       ],
       "answer": 0
     },
@@ -349,6 +349,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"冬天早上有件暖和的晨袍很舒服。\"；改後：\"她穿了一件藍色長禮服去參加派對。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A long blue gown.\"；改後：\"A long blue dress.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A short red dress.\"；改後：\"A short blue gown.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A white shirt.\"；改後：\"A long red dress.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A black suit.\"；改後：\"A blue shirt.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

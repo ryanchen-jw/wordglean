@@ -125,9 +125,9 @@
       "audioZh": "請在文件上簽名，並在星期一前交回業務部。",
       "questionZh": "文件要交到哪裡？",
       "options": [
-        "The sales department.",
+        "The sales team's office.",
         "The manager's home address.",
-        "The front desk downstairs.",
+        "The manager, by Monday.",
         "The office next to the lift."
       ],
       "answer": 0
@@ -294,6 +294,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 Please read this document… 與聽選 Please sign the document…、跟讀 Please put the documents… 同為處理公文的祈使句；改成文件用三種語言寫成",
         "resolution": "改前：\"請在會議前讀完這份文件。\"；改後：\"這份文件是用三種語言寫成的。\"",
         "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The sales department.\"；改後：\"The sales team's office.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The front desk downstairs.\"；改後：\"The manager, by Monday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -112,10 +112,10 @@
       "audioZh": "抱歉打擾了，我們需要檢查您房間裡的燈。",
       "questionZh": "說話者為什麼來打擾？",
       "options": [
-        "To check the lights.",
+        "To look at the lights.",
         "To clean the room.",
         "To bring towels.",
-        "To deliver food to the guests."
+        "To check the heater in the room."
       ],
       "answer": 0
     },
@@ -438,6 +438,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"球隊在決賽中慘敗。\"；改後：\"那場火對森林造成毀滅性的影響。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"To check the lights.\"；改後：\"To look at the lights.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"To deliver food to the guests.\"；改後：\"To check the heater in the room.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

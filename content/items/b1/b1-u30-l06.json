@@ -125,9 +125,9 @@
       "audioZh": "請把說明大聲念出來，讓大家都聽得到。",
       "questionZh": "為什麼要大聲念出說明？",
       "options": [
-        "So everyone can hear.",
-        "Because the teacher can't see well.",
-        "Because it is a speaking test.",
+        "So the whole group can hear.",
+        "Because the teacher can't hear well.",
+        "Because it is a reading test.",
         "Because the room is very dark."
       ],
       "answer": 0
@@ -288,6 +288,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「店家在報紙上登廣告」與 mcq「公司在電視和網路上打廣告」同事件、句型相同；改成海報宣傳免費音樂會",
         "resolution": "改前：\"這家店在地方報紙上刊登廣告。\"；改後：\"這張海報宣傳公園裡的一場免費音樂會。\"",
         "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"So everyone can hear.\"；改後：\"So the whole group can hear.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Because the teacher can't see well.\"；改後：\"Because the teacher can't hear well.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Because it is a speaking test.\"；改後：\"Because it is a reading test.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -127,9 +127,9 @@
       "audioZh": "她粗心地把手機留在公車上，現在找不到了。",
       "questionZh": "她的手機怎麼了？",
       "options": [
-        "It was stolen at school.",
+        "Someone took it on the bus.",
         "It fell into the water.",
-        "She left it on the bus by mistake.",
+        "She forgot it on the bus.",
         "Her brother broke it."
       ],
       "answer": 2
@@ -350,6 +350,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「內心深處的」，並避開同課其他題的情境",
         "resolution": "改前：\"城堡最裡面的房間是國王的臥室。\"；改後：\"他從不跟任何人分享內心深處的秘密。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It was stolen at school.\"；改後：\"Someone took it on the bus.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"She left it on the bus by mistake.\"；改後：\"She forgot it on the bus.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

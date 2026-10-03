@@ -102,8 +102,8 @@
       "questionZh": "寵物生病而動物醫院休息時，可以怎麼做？",
       "options": [
         "Wait until Monday morning.",
-        "Call the number.",
-        "Go to the pet shop nearby.",
+        "Phone the number given.",
+        "Go to the vet's office.",
         "Email the vet."
       ],
       "answer": 1
@@ -295,6 +295,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：ward→symptom、tablet→remedy",
         "resolution": "改前：\"平板電腦\"；改後：\"療法\"",
         "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/7/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Call the number.\"；改後：\"Phone the number given.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/7/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Go to the pet shop nearby.\"；改後：\"Go to the vet's office.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

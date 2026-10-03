@@ -140,10 +140,10 @@
       "audioZh": "新圖書館所有人都可以使用，每天早上七點開門。",
       "questionZh": "新圖書館每天幾點開門？",
       "options": [
-        "At eight.",
-        "At nine.",
-        "At seven.",
-        "At ten."
+        "Seven in the evening.",
+        "Eight every morning.",
+        "Seven in the morning.",
+        "Nine every morning."
       ],
       "answer": 2
     },
@@ -352,6 +352,48 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這幅畫逼真得像一張照片。\"；改後：\"星期五前完成這份工作實際嗎？\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At eight.\"；改後：\"At seven in the evening.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At nine.\"；改後：\"At eight every morning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At seven.\"；改後：\"Seven in the morning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At ten.\"；改後：\"At nine every morning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項開頭格式統一",
+        "resolution": "改前：\"At seven in the evening.\"；改後：\"Seven in the evening.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/10/options/1",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項開頭格式統一",
+        "resolution": "改前：\"At eight every morning.\"；改後：\"Eight every morning.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項開頭格式統一",
+        "resolution": "改前：\"At nine every morning.\"；改後：\"Nine every morning.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
       }
     ]
   }

@@ -125,9 +125,9 @@
       "audioZh": "我壓力好大，電腦壞了，報告明天就要交。",
       "questionZh": "說話者為什麼覺得壓力大？",
       "options": [
-        "The computer broke, and the report is due.",
+        "A broken computer and a report deadline.",
         "A friend is moving to another country soon.",
-        "The speaker has to move to a new house.",
+        "The report was due yesterday.",
         "The weather is too hot."
       ],
       "answer": 0
@@ -432,6 +432,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #43：與 u43-l01 閱讀同為考試多壓力大，改成電腦壞了報告明天要交",
         "resolution": "改前：\"Many tests and a report this week.\"；改後：\"The computer broke, and the report is due.\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The computer broke, and the report is due.\"；改後：\"A broken computer and a report deadline.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The speaker has to move to a new house.\"；改後：\"The report was due yesterday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

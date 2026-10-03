@@ -125,10 +125,10 @@
       "audioZh": "水壺冒出的蒸汽讓火災警報器響了。",
       "questionZh": "是什麼讓火災警報器響了？",
       "options": [
-        "A burning candle.",
-        "Smoke from the oven.",
-        "Steam from the kettle.",
-        "A broken heater."
+        "A fire in the kitchen.",
+        "Smoke from the kettle.",
+        "The boiling kettle.",
+        "A broken alarm."
       ],
       "answer": 2
     },
@@ -421,6 +421,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"圓木；原木；紀錄\"；改後：\"原木；圓木；紀錄\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A burning candle.\"；改後：\"A fire in the kitchen.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Smoke from the oven.\"；改後：\"Smoke from the kettle.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Steam from the kettle.\"；改後：\"The boiling kettle.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A broken heater.\"；改後：\"A broken alarm.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

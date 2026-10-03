@@ -125,9 +125,9 @@
       "audioZh": "我星期六不能參加旅行，因為我得上班。",
       "questionZh": "說話者為什麼不能參加星期六的旅行？",
       "options": [
-        "Because of money.",
-        "Because of the weather.",
-        "Because of work.",
+        "Because of the money.",
+        "Because the trip is on Sunday.",
+        "Because of a job.",
         "Because of a party."
       ],
       "answer": 2
@@ -355,6 +355,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"不固定的；不規則的\"；改後：\"不規則的；不固定的\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Because of money.\"；改後：\"Because of the money.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Because of the weather.\"；改後：\"Because the trip is on Sunday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Because of work.\"；改後：\"Because of a job.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

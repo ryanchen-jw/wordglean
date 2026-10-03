@@ -140,8 +140,8 @@
       "options": [
         "Write the number down on a piece of paper.",
         "Send a message to the office manager.",
-        "Dial again in five minutes.",
-        "Speak much more loudly."
+        "End the call and try again later.",
+        "Speak more loudly for five minutes."
       ],
       "answer": 2
     },
@@ -349,6 +349,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：聽打「爸爸辦公室還在用舊傳真機」與閱讀「辦公室角落的舊傳真機發出怪聲」同事件，改成可以用傳真寄給我嗎",
         "resolution": "改前：\"我爸爸的辦公室還在用一台舊傳真機。\"；改後：\"你可以用傳真寄給我嗎？\"",
         "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/10/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Dial again in five minutes.\"；改後：\"End the call and try again later.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Speak much more loudly.\"；改後：\"Speak more loudly for five minutes.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

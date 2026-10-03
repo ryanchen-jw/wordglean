@@ -115,7 +115,7 @@
       "questionZh": "飯店離機場多遠？",
       "options": [
         "Three miles.",
-        "Twenty miles.",
+        "Ten miles.",
         "Thirty miles.",
         "Two miles."
       ],
@@ -284,6 +284,12 @@
         "message": "執行長最終複審修正：執行長最終複審 FIX 1（選項長度名次）：正解改到雜湊決定的長度名次",
         "resolution": "改前：\"Ten miles.\"；改後：\"Twenty miles.\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Twenty miles.\"；改後：\"Ten miles.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

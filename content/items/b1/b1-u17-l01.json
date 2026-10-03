@@ -140,10 +140,10 @@
       "audioZh": "三點在鎮上廣場的噴水池跟我碰面。",
       "questionZh": "他們要在哪裡碰面？",
       "options": [
-        "At the library.",
+        "At the town library.",
         "At the station.",
         "At the monument.",
-        "At the fountain."
+        "Beside the fountain."
       ],
       "answer": 3
     },
@@ -364,6 +364,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"我姊姊在一所研究機構進修。\"；改後：\"她在一所藝術學院教書。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/10/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At the library.\"；改後：\"At the town library.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/10/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At the fountain.\"；改後：\"Beside the fountain.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

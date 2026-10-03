@@ -117,9 +117,9 @@
       "questionZh": "他們為什麼沒辦法轉台？",
       "options": [
         "The TV in the living room is broken.",
-        "There is no power in the house.",
+        "The kids broke the remote control.",
         "The kids are asleep in their room.",
-        "The remote control is lost."
+        "Nobody can find the remote."
       ],
       "answer": 3
     },
@@ -388,6 +388,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"洗手盆；洗臉盆\"；改後：\"洗臉盆；洗手盆\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"There is no power in the house.\"；改後：\"The kids broke the remote control.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The remote control is lost.\"；改後：\"Nobody can find the remote.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

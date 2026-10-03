@@ -128,10 +128,10 @@
       "audioZh": "我的姪女和姪子這個週末要來我們家住。",
       "questionZh": "這個週末誰要來住？",
       "options": [
-        "The speaker's parents and their dog.",
+        "The speaker's niece and her friend.",
         "Two friends from the speaker's work.",
-        "A new neighbor from next door.",
-        "The speaker's niece and nephew."
+        "The speaker's nephew and his dog.",
+        "The children of the speaker's sister or brother."
       ],
       "answer": 3
     },
@@ -340,6 +340,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"外甥；姪子\"；改後：\"姪子；外甥\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The speaker's parents and their dog.\"；改後：\"The speaker's niece and her friend.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A new neighbor from next door.\"；改後：\"The speaker's nephew and his dog.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The speaker's niece and nephew.\"；改後：\"The children of the speaker's sister or brother.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

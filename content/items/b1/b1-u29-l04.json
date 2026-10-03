@@ -127,9 +127,9 @@
       "audioZh": "教堂後面的古老墳墓上刻有名字和日期，但有些很難看清楚。",
       "questionZh": "古老墳墓上有什麼？",
       "options": [
-        "Flowers and candles.",
-        "Photos and maps.",
-        "Names and dates.",
+        "Names and photos.",
+        "Dates and flowers.",
+        "Dates and names.",
         "Nothing at all."
       ],
       "answer": 2
@@ -386,6 +386,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「神父為新船祝福」與閱讀「祭司為作物祝福」同事件，改成奶奶祈求上天保佑全家（gods 越級，改用已教的 heaven）",
         "resolution": "改前：\"很多人到廟裡請神明保佑他們的孩子。\"；改後：\"奶奶總是祈求上天保佑我們全家。\"",
         "resolvedAt": "2026-10-02T23:24:13Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Flowers and candles.\"；改後：\"Names and photos.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Photos and maps.\"；改後：\"Dates and flowers.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Names and dates.\"；改後：\"Dates and names.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

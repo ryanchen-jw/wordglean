@@ -125,9 +125,9 @@
       "audioZh": "待在室內！龍捲風來了，十分鐘內就會到這裡。",
       "questionZh": "說話者要大家做什麼？",
       "options": [
-        "Go out and take photos.",
+        "Go out in ten minutes.",
         "Drive to the next town.",
-        "Stay inside.",
+        "Don't go outdoors.",
         "Close all the shops."
       ],
       "answer": 2
@@ -372,6 +372,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「海豚在船邊嬉戲」與閱讀「一群海豚在船邊玩」同事件，改成小海豚在海裡跟著媽媽好幾年（加 in the sea，排除駱駝）",
         "resolution": "改前：\"那隻海豚躍出水面，在船邊嬉戲。\"；改後：\"小海豚會在海裡跟在媽媽身邊好幾年。\"",
         "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Go out and take photos.\"；改後：\"Go out in ten minutes.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Stay inside.\"；改後：\"Don't go outdoors.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

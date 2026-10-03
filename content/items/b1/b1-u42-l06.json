@@ -127,7 +127,7 @@
       "options": [
         "A tree is blocking the road.",
         "The road is being painted.",
-        "There is a big race.",
+        "The park is closed.",
         "The school moved."
       ],
       "answer": 0
@@ -372,6 +372,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：參考答案 2「冰箱裡的水果爛了」與 mcq「冰箱裡的蛋爛了」同事件，改成垃圾桶的腐臭味",
         "resolution": "改前：\"The fruit in our fridge went rotten while we were away.\"；改後：\"The rotten smell from the trash can made me feel sick.\"",
         "resolvedAt": "2026-10-02T23:51:49Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"There is a big race.\"；改後：\"The park is closed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

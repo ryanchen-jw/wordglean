@@ -128,9 +128,9 @@
       "audioZh": "Peter 忘了帶傘，結果在回家路上淋濕了。",
       "questionZh": "Peter 為什麼淋濕了？",
       "options": [
-        "He forgot his umbrella.",
-        "He fell into the river.",
-        "He washed his car.",
+        "He didn't have his umbrella.",
+        "He fell on the way home.",
+        "His umbrella was broken.",
         "He went swimming."
       ],
       "answer": 0
@@ -346,6 +346,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：underneath 換本課字 goodness",
         "resolution": "改前：\"在⋯底下\"；改後：\"天啊\"",
         "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He forgot his umbrella.\"；改後：\"He didn't have his umbrella.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He fell into the river.\"；改後：\"He fell on the way home.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He washed his car.\"；改後：\"His umbrella was broken.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

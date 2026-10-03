@@ -128,10 +128,10 @@
       "audioZh": "經理因為讓顧客久等而向他們道歉。",
       "questionZh": "經理為什麼道歉？",
       "options": [
-        "Because of the long wait.",
+        "Because customers waited a long time.",
         "Because the food was cold.",
-        "Because of a wrong bill.",
-        "Because the shop closed early."
+        "Because the manager had to wait.",
+        "Because the customers were rude."
       ],
       "answer": 0
     },
@@ -502,6 +502,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"他非常懂得欣賞老音樂。\"；改後：\"我們送他一份小禮物表達感謝。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Because of the long wait.\"；改後：\"Because customers waited a long time.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Because of a wrong bill.\"；改後：\"Because the manager had to wait.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Because the shop closed early.\"；改後：\"Because the customers were rude.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

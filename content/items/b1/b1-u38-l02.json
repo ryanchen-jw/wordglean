@@ -126,9 +126,9 @@
       "questionZh": "進教室前會發生什麼事？",
       "options": [
         "You will get a free pen and some paper.",
-        "Your ID will be checked.",
-        "Phones will be taken.",
-        "You must pay first."
+        "Someone will look at your ID.",
+        "You will get a new ID.",
+        "The examiner will enter first."
       ],
       "answer": 1
     },
@@ -336,6 +336,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「孩子們在全班面前背詩」與閱讀「每個學生都要背一首短詩」同事件；改成演員把台詞背得一字不差",
         "resolution": "改前：\"孩子們在全班面前背誦了一首詩。\"；改後：\"那位演員把台詞背得一字不差。\"",
         "resolvedAt": "2026-10-02T23:41:19Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Your ID will be checked.\"；改後：\"Someone will look at your ID.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Phones will be taken.\"；改後：\"You will get a new ID.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"You must pay first.\"；改後：\"The examiner will enter first.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

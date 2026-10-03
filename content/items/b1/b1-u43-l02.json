@@ -126,8 +126,8 @@
       "questionZh": "說話者為什麼很惱火？",
       "options": [
         "The brother ate all the cake in the fridge.",
-        "The brother used the computer.",
-        "The computer was broken.",
+        "The computer was used without permission.",
+        "The brother asked to use the computer.",
         "The homework was lost."
       ],
       "answer": 1
@@ -324,6 +324,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「孩子們好奇地看著盒子」與閱讀「小男孩好奇地看著我們」同事件，改成「那是什麼？」她好奇地問",
         "resolution": "改前：\"孩子們好奇地看著那個奇怪的盒子。\"；改後：\"「那是什麼？」她好奇地問。\"",
         "resolvedAt": "2026-10-02T23:54:43Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The brother used the computer.\"；改後：\"The computer was used without permission.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The computer was broken.\"；改後：\"The brother asked to use the computer.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

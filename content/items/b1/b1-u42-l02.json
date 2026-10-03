@@ -125,9 +125,9 @@
       "audioZh": "別買那支錶。它看起來閃亮又新，但其實是假的。",
       "questionZh": "說話者為什麼叫對方別買？",
       "options": [
-        "The store is closing very soon.",
+        "The watch looks old.",
         "The watch is much too expensive.",
-        "The watch is fake.",
+        "The watch isn't real.",
         "It is too big."
       ],
       "answer": 2
@@ -348,6 +348,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #3：upward 是 u42-l03 才教的字（同級未教），換成已教的 freely",
         "resolution": "改前：\"向上地\"；改後：\"自由地\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The store is closing very soon.\"；改後：\"The watch looks old.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The watch is fake.\"；改後：\"The watch isn't real.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -125,8 +125,8 @@
       "audioZh": "我很期待開始新工作，但也有點緊張。",
       "questionZh": "說話者對新工作有什麼感覺？",
       "options": [
-        "Eager but a little nervous.",
-        "Bored and tired.",
+        "Excited but a bit worried.",
+        "Not eager at all.",
         "Angry and sad.",
         "Not interested in the new job at all."
       ],
@@ -331,6 +331,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"那隻走失的狗看起來又絕望又餓。\"；改後：\"她極度渴望再見到家人。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Eager but a little nervous.\"；改後：\"Excited but a bit worried.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Bored and tired.\"；改後：\"Not eager at all.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

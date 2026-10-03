@@ -125,10 +125,10 @@
       "audioZh": "開始實驗前，請仔細閱讀說明並戴上護目鏡。",
       "questionZh": "實驗開始前要先做什麼？",
       "options": [
-        "Ask the teacher for help.",
-        "Clean all the tables.",
+        "Read the instructions aloud.",
+        "Read the steps and clean your glasses.",
         "Turn off the lights.",
-        "Read the instructions and wear glasses."
+        "Check the directions and protect your eyes."
       ],
       "answer": 3
     },
@@ -354,6 +354,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"教書；教學\"；改後：\"教學；教書\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Ask the teacher for help.\"；改後：\"Read the instructions aloud.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Clean all the tables.\"；改後：\"Clean the safety glasses.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Read the instructions and wear glasses.\"；改後：\"Check the directions and protect your eyes.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：最終複審 FIX：干擾項改成同樣兩件事、前半對後半錯，正解不再是唯一兩件事的選項",
+        "resolution": "改前：\"Clean the safety glasses.\"；改後：\"Read the steps and clean your glasses.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
       }
     ]
   }

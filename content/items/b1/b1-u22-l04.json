@@ -125,10 +125,10 @@
       "audioZh": "合唱團這個月星期二和星期四晚上練習。",
       "questionZh": "合唱團這個月什麼時候練習？",
       "options": [
-        "Every Monday night.",
-        "Tuesday and Thursday evenings.",
-        "Saturday mornings.",
-        "Only on Fridays."
+        "Tuesday and Thursday mornings.",
+        "Tuesday and Thursday nights.",
+        "Only on Tuesday evenings.",
+        "Every Monday night."
       ],
       "answer": 1
     },
@@ -347,6 +347,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"雪中的城堡看起來很夢幻。\"；改後：\"故事裡，女孩找到一枚有魔力的戒指。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Every Monday night.\"；改後：\"Tuesday and Thursday mornings.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Tuesday and Thursday evenings.\"；改後：\"Tuesday and Thursday nights.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Saturday mornings.\"；改後：\"Only on Tuesday evenings.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"Only on Fridays.\"；改後：\"Every Monday night.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

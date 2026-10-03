@@ -125,9 +125,9 @@
       "audioZh": "抱歉，我分不出這些罐子裡哪個是鹽、哪個是糖。",
       "questionZh": "說話者分不出什麼？",
       "options": [
-        "Which bus goes to the park.",
-        "Salt and sugar.",
-        "The colors on the map.",
+        "Where the salt jar is.",
+        "Which jar has salt and which has sugar.",
+        "The colors of the jars.",
         "The songs on the radio."
       ],
       "answer": 1
@@ -378,6 +378,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「考試的不確定讓大家緊張」與閱讀「事情充滿不確定，弟弟很緊張」同為不確定導致緊張；改成這個年紀對未來不確定很正常",
         "resolution": "改前：\"考試的不確定性讓大家都很緊張。\"；改後：\"在你這個年紀，對未來感到不確定是很正常的。\"",
         "resolvedAt": "2026-10-02T23:36:18Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Which bus goes to the park.\"；改後：\"Where the salt jar is.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Salt and sugar.\"；改後：\"Which jar has salt and which has sugar.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The colors on the map.\"；改後：\"The colors of the jars.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

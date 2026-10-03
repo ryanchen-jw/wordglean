@@ -128,10 +128,10 @@
       "audioZh": "我今天早上在樓梯上滑了一跤，還好沒受傷。",
       "questionZh": "說話者今天早上發生了什麼事？",
       "options": [
-        "Missed the bus to work.",
+        "Got hurt on the stairs.",
         "Lost a key at home.",
         "Fell off a bike on the road.",
-        "Slipped on the stairs."
+        "Slipped but didn't get hurt."
       ],
       "answer": 3
     },
@@ -436,6 +436,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"她是個你隨時都可以信賴的朋友。\"；改後：\"她是個你隨時都可以依賴的朋友。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Missed the bus to work.\"；改後：\"Got hurt on the stairs.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Slipped on the stairs.\"；改後：\"Slipped but didn't get hurt.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

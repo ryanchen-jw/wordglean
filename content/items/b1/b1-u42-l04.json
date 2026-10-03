@@ -127,9 +127,9 @@
       "audioZh": "抱歉，桌子黏黏的，有人把果汁灑在上面。",
       "questionZh": "桌子為什麼黏黏的？",
       "options": [
-        "Someone spilled juice on it.",
+        "Some juice fell on it.",
         "A child dropped some ice cream on it.",
-        "The waiter put too much honey on it.",
+        "Someone spilled honey on it.",
         "It was just painted."
       ],
       "answer": 0
@@ -386,6 +386,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：只看英文唯一可解複核：hot and awesome 口語上也說得通，干擾項換成 ivory",
         "resolution": "改前：\"圓形的\"；改後：\"奇怪地\"",
         "resolvedAt": "2026-10-03T00:00:43Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Someone spilled juice on it.\"；改後：\"Some juice fell on it.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The waiter put too much honey on it.\"；改後：\"Someone spilled honey on it.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

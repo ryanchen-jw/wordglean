@@ -127,9 +127,9 @@
       "audioZh": "請在星期五前交作文的開頭段落，其餘部分下週交。",
       "questionZh": "星期五前要交什麼？",
       "options": [
-        "The introduction of the composition.",
+        "The first part of the composition.",
         "The whole composition.",
-        "A list of new phrases.",
+        "The rest of the composition.",
         "A short book report."
       ],
       "answer": 0
@@ -344,6 +344,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"開始讀這本書前先讀導言。\"；改後：\"我來介紹一下：這是我的朋友 Ken。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The introduction of the composition.\"；改後：\"The first part of the composition.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A list of new phrases.\"；改後：\"The rest of the composition.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

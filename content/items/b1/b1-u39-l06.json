@@ -125,10 +125,10 @@
       "audioZh": "暴風雪停了，孩子們跑到外面玩雪。",
       "questionZh": "暴風雪停了以後，孩子們做什麼？",
       "options": [
-        "Went to bed early.",
+        "Stayed inside during the storm.",
         "Watched TV at home.",
-        "Made some hot soup.",
-        "Played in the snow."
+        "Ran to the shop.",
+        "Went out to have fun."
       ],
       "answer": 3
     },
@@ -396,6 +396,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：參考答案 2「預報說會下雨」與閱讀「預報說會是晴天」同句型同事件，改成天氣預報幫我決定穿什麼",
         "resolution": "改前：\"The weather forecast said it would rain, so I took an umbrella.\"；改後：\"The weather forecast helps me decide what to wear.\"",
         "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"Went to bed early.\"；改後：\"Stayed inside during the storm.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Made some hot soup.\"；改後：\"Ran to the shop.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Played in the snow.\"；改後：\"Went out to have fun.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

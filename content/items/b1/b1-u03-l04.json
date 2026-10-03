@@ -127,10 +127,10 @@
       "audioZh": "開會前，請把舊海報拿掉，把新的掛在牆上。",
       "questionZh": "開會前要做什麼？",
       "options": [
+        "Hang the old posters again.",
         "Clean the meeting room.",
-        "Paint the wall.",
-        "Hang the new posters.",
-        "Print the old posters again."
+        "Replace the old posters.",
+        "Take the posters down after the meeting."
       ],
       "answer": 2
     },
@@ -345,6 +345,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"保養一台舊車要花很多錢。\"；改後：\"她在會議中一直維持冷靜的語氣。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Clean the meeting room.\"；改後：\"Hang the old posters again.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Paint the wall.\"；改後：\"Clean the meeting room.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Hang the new posters.\"；改後：\"Replace the old posters.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Print the old posters again.\"；改後：\"Take the posters down after the meeting.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

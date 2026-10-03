@@ -114,10 +114,10 @@
       "audioZh": "小學畢業後，我去讀家附近的一所中學。",
       "questionZh": "說話者小學畢業後去了哪裡？",
       "options": [
-        "A big university.",
+        "A primary school near home.",
         "A school in another city far away.",
         "A music school in the next town.",
-        "A secondary school near home."
+        "A high school close to home."
       ],
       "answer": 3
     },
@@ -469,6 +469,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「我教妹妹寫作」與 u38-l01、l05 同為指導課業，改成全班找出告示牌上的標點錯誤、我寫信請鎮公所修正；兩小題同步",
         "resolution": "改前：\"Last week, a new sign went up near the primary school in our town, and my class found three mistakes on it. First, the sentence \\\"Please drive slowly\\\" had no full stop. Second, the question \\\"Where is the park\\\" had no question mark. Third, the sign said \\\"a old park.\\\" We use \\\"an,\\\" not \\\"a,\\\" before words that begin with a vowel sound; both are indefinite articles. I'm in secondary school now, so my teacher asked me to write a short email to the town office. I used a modal verb to be polite: \\\"Could you please fix the sign?\\\" The office said they would look into it. \\\"Look into\\\" is a phrasal verb that means \\\"check.\\\" Two days later, the sign was fixed!\"；改後：\"Last week, a new sign went up near the primary school in our town, and my class found three mistakes on it. First, the sentence \\\"Please drive slowly\\\" had no full stop. Second, the question \\\"Where is the park\\\" had no question mark. Third, the sign said \\\"a old park.\\\" We use \\\"an,\\\" not \\\"a,\\\" before words that begin with a vowel sound; each of them is an indefinite article. I'm in secondary school now, so my teacher asked me to write a short email to the town office. I used a modal verb to be polite: \\\"Could you please fix the sign?\\\" The office said they would look into it. \\\"Look into\\\" is a phrasal verb that means \\\"check.\\\" Two days later, the sign was fixed!\"",
         "resolvedAt": "2026-10-02T23:41:33Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A big university.\"；改後：\"A primary school near home.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A secondary school near home.\"；改後：\"A high school close to home.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

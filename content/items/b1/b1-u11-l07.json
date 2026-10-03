@@ -125,9 +125,9 @@
       "audioZh": "住在室內的貓通常活得比較久。",
       "questionZh": "住在室內的貓通常怎麼樣？",
       "options": [
-        "They are bigger and heavier.",
-        "They live longer.",
-        "They sleep less at night.",
+        "They usually go outdoors.",
+        "They have longer lives.",
+        "They live shorter lives.",
         "They eat more food."
       ],
       "answer": 1
@@ -360,6 +360,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：freezer→tank",
         "resolution": "改前：\"餡料\"；改後：\"蠟\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"They are bigger and heavier.\"；改後：\"They usually go outdoors.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"They live longer.\"；改後：\"They have longer lives.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"They sleep less at night.\"；改後：\"They live shorter lives.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

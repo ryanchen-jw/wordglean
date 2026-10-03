@@ -127,9 +127,9 @@
       "audioZh": "圖書館週末需要志工，可以在櫃台報名。",
       "questionZh": "要在哪裡報名？",
       "options": [
-        "At the front desk.",
-        "On the website.",
-        "By calling them.",
+        "At the library's front counter.",
+        "On the library website.",
+        "By calling the library.",
         "At the school office."
       ],
       "answer": 0
@@ -369,6 +369,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"生病；疾病\"；改後：\"疾病；生病\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At the front desk.\"；改後：\"At the library's front counter.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"On the website.\"；改後：\"On the library website.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"By calling them.\"；改後：\"By calling the library.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

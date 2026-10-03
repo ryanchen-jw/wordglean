@@ -127,9 +127,9 @@
       "audioZh": "我弟弟在課堂上把老師叫成「媽媽」，覺得好尷尬。",
       "questionZh": "弟弟為什麼覺得尷尬？",
       "options": [
-        "He fell asleep during the math test.",
+        "His mom came to his class.",
         "He forgot his homework at home again.",
-        "He called his teacher \"Mom.\"",
+        "He used the wrong name for his teacher.",
         "He lost his shoes."
       ],
       "answer": 2
@@ -332,6 +332,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「高興」，並避開同課其他題的情境",
         "resolution": "改前：\"在湖裡游泳是夏天的樂事之一。\"；改後：\"她打開信時，高興全寫在臉上。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He fell asleep during the math test.\"；改後：\"His mom came to his class.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He called his teacher \\\"Mom.\\\"\"；改後：\"He used the wrong name for his teacher.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

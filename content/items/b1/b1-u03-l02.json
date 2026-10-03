@@ -128,9 +128,9 @@
       "audioZh": "我的健身房會員這個月到期，所以我星期六會去續約。",
       "questionZh": "說話者星期六要做什麼？",
       "options": [
-        "Stop going to the gym.",
+        "End the gym membership.",
         "Join a new gym.",
-        "Renew the gym membership.",
+        "Sign up for the gym again.",
         "Buy new sports clothes."
       ],
       "answer": 2
@@ -449,6 +449,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：fasten→dive",
         "resolution": "改前：\"繫緊\"；改後：\"潛水\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Stop going to the gym.\"；改後：\"End the gym membership.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Renew the gym membership.\"；改後：\"Sign up for the gym again.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

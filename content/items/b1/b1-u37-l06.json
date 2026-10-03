@@ -127,10 +127,10 @@
       "audioZh": "魔術表演讓我很驚訝，那個人讓一輛車消失了！",
       "questionZh": "魔術師做了什麼？",
       "options": [
-        "He turned a bird into a cat.",
-        "He made a car disappear.",
+        "He made a cat disappear.",
+        "A car was there, then it wasn't.",
         "He flew over the people watching.",
-        "He sang a song."
+        "He drove a car on stage."
       ],
       "answer": 1
     },
@@ -386,6 +386,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「在冷水裡游泳真傻」與閱讀「伸手摸魚掉進水池很傻」同事件，改成別傻了帶把傘",
         "resolution": "改前：\"在這麼冷的水裡游泳真傻。\"；改後：\"別傻了，帶把傘吧。\"",
         "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He turned a bird into a cat.\"；改後：\"He made a cat disappear.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He made a car disappear.\"；改後：\"A car was there, then it wasn't.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He sang a song.\"；改後：\"He drove a car on stage.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

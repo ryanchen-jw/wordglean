@@ -126,8 +126,8 @@
       "questionZh": "每個小孩拿到的蛋糕怎麼樣？",
       "options": [
         "A bigger piece.",
-        "The same size.",
-        "Nothing at all.",
+        "An equal piece.",
+        "A different size.",
         "Two pieces."
       ],
       "answer": 1
@@ -325,6 +325,18 @@
         "message": "執行長最終複審修正：F5（非本單元字跨課重複）：attract、ignore 換 increase、divide",
         "resolution": "改前：\"忽視\"；改後：\"分\"",
         "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The same size.\"；改後：\"An equal piece.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Nothing at all.\"；改後：\"A different size.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

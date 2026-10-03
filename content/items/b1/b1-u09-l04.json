@@ -129,9 +129,9 @@
       "audioZh": "他弄壞了弟弟的玩具，覺得很內疚。",
       "questionZh": "他為什麼覺得內疚？",
       "options": [
-        "He broke his brother's toy.",
+        "He damaged his brother's toy.",
         "He ate his brother's cake.",
-        "He was late for school.",
+        "His brother broke his toy.",
         "He lost his brother's book."
       ],
       "answer": 0
@@ -353,6 +353,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"西洋棋是動腦的遊戲，不是靠體力的。\"；改後：\"這部電影講的是一個男人的心理問題。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He broke his brother's toy.\"；改後：\"He damaged his brother's toy.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He was late for school.\"；改後：\"His brother broke his toy.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

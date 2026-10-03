@@ -126,8 +126,8 @@
       "questionZh": "他們為什麼得等人幫忙？",
       "options": [
         "They lost their map.",
-        "The motor stopped working.",
-        "The weather was bad.",
+        "The boat's engine broke down.",
+        "The boat was too small.",
         "They ran out of food."
       ],
       "answer": 1
@@ -385,6 +385,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充（釋義不用詞性標記並列，統一「X；Y」，例句詞義放第一）",
         "resolution": "改前：\"運輸；交通工具；運送（動詞）\"；改後：\"運輸；交通工具；運送\"",
         "resolvedAt": "2026-10-02T20:08:26Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The motor stopped working.\"；改後：\"The boat's engine broke down.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The weather was bad.\"；改後：\"The boat was too small.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

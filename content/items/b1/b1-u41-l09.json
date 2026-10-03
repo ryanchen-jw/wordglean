@@ -112,9 +112,9 @@
       "audioZh": "戶外音樂會由於強風而取消了。",
       "questionZh": "音樂會為什麼取消了？",
       "options": [
-        "The singer was ill.",
+        "It was too cold outdoors.",
         "Few tickets were sold.",
-        "Because of the strong wind.",
+        "It was too windy.",
         "The stage broke."
       ],
       "answer": 2
@@ -365,6 +365,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「爺爺很愛重述老笑話」與造句「我喜歡重述好笑的故事給弟弟聽」同事件、句型相同，也有長者刻板印象；改成電影重述一個有名的老故事",
         "resolution": "改前：\"爺爺很愛重述他的老笑話。\"；改後：\"這部電影重述了一個有名的老故事。\"",
         "resolvedAt": "2026-10-02T23:48:40Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The singer was ill.\"；改後：\"It was too cold outdoors.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Because of the strong wind.\"；改後：\"It was too windy.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

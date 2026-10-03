@@ -125,10 +125,10 @@
       "audioZh": "今晚帶點防蚊的東西，因為我們要在湖邊露營。",
       "questionZh": "為什麼今晚要帶防蚊的東西？",
       "options": [
-        "The guide asked everyone to.",
+        "We'll swim in the lake tonight.",
         "It will rain all night long.",
         "The shop is closed tomorrow.",
-        "We'll camp by the lake."
+        "We'll stay near the lake tonight."
       ],
       "answer": 3
     },
@@ -294,6 +294,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「蚊子叮我」與閱讀「晚上蚊子很可怕」同為被蚊子騷擾，主詞同為蚊子，只換句型；改成蚊子在靜水產卵",
         "resolution": "改前：\"一隻蚊子叮了我的手臂。\"；改後：\"蚊子在靜止的水裡產卵。\"",
         "resolvedAt": "2026-10-02T23:17:59Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The guide asked everyone to.\"；改後：\"We'll swim in the lake tonight.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"We'll camp by the lake.\"；改後：\"We'll stay near the lake tonight.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

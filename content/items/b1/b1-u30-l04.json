@@ -126,9 +126,9 @@
       "questionZh": "為什麼簡報會晚開始？",
       "options": [
         "The speaker's train is running late.",
-        "The room is not ready.",
-        "The guests are late.",
-        "Lunch is late."
+        "The room isn't set up yet.",
+        "The guests are not ready.",
+        "The room is too small."
       ],
       "answer": 1
     },
@@ -282,6 +282,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
         "resolution": "改前：\"時態配合內容（多用現在簡單式）\"；改後：\"時態配合內容（例如現在簡單式等）\"",
         "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The room is not ready.\"；改後：\"The room isn't set up yet.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The guests are late.\"；改後：\"The guests are not ready.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Lunch is late.\"；改後：\"The room is too small.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

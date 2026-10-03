@@ -129,8 +129,8 @@
       "options": [
         "As soon as the concert begins tonight.",
         "Only during the break between the songs.",
-        "After the band says it's OK.",
-        "Before the show starts."
+        "Once the band allows it.",
+        "Before the band says it's OK."
       ],
       "answer": 2
     },
@@ -380,6 +380,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：「車站擴音器說火車誤點」與 u30-l02 mcq 機長廣播重複，改成教室擴音器太大聲",
         "resolution": "改前：\"車站的擴音器說我們的火車誤點了。\"；改後：\"教室裡的擴音器太大聲了，請轉小聲一點。\"",
         "resolvedAt": "2026-10-02T23:25:46Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"After the band says it's OK.\"；改後：\"Once the band allows it.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Before the show starts.\"；改後：\"Before the band says it's OK.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

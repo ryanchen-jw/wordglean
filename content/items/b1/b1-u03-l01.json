@@ -128,8 +128,8 @@
       "questionZh": "火災警報響時應該怎麼做？",
       "options": [
         "Take the elevator down to the first floor.",
-        "Use the exit at the end of the hall.",
-        "Wait quietly in the office until help comes.",
+        "Go out through the exit down the hall.",
+        "Wait at the end of the hall for help.",
         "Call the front desk right away."
       ],
       "answer": 1
@@ -352,6 +352,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：cancel 是 u19 才教的字，換 lend",
         "resolution": "改前：\"取消\"；改後：\"借出\"",
         "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Use the exit at the end of the hall.\"；改後：\"Go out through the exit down the hall.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Wait quietly in the office until help comes.\"；改後：\"Wait at the end of the hall for help.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

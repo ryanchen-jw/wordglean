@@ -128,9 +128,9 @@
       "questionZh": "學生星期三可以做什麼？",
       "options": [
         "Play in the gym.",
-        "Eat a free lunch.",
+        "Eat a free lunch with Ms. Wang.",
         "Leave school early.",
-        "Talk to Ms. Wang about problems."
+        "Get help with problems from Ms. Wang."
       ],
       "answer": 3
     },
@@ -410,6 +410,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「偵探一天內找到小偷」與閱讀「偵探查出誰拿了錢」同事件，改成書裡的偵探總是戴黑帽子",
         "resolution": "改前：\"偵探看了線索，一天之內就找到了小偷。\"；改後：\"這本書裡的偵探總是戴著一頂黑帽子。\"",
         "resolvedAt": "2026-10-02T23:45:15Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Eat a free lunch.\"；改後：\"Eat a free lunch with Ms. Wang.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Talk to Ms. Wang about problems.\"；改後：\"Get help with problems from Ms. Wang.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

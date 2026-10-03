@@ -126,9 +126,9 @@
       "questionZh": "六歲以下的孩子入園要怎麼做？",
       "options": [
         "Buy a ticket online a few days before.",
-        "Get a free ticket at the front desk.",
-        "Pay the full price at the door.",
-        "Bring a student card."
+        "Get a ticket from the desk without paying.",
+        "Pay half price at the front desk.",
+        "Enter with no ticket at all."
       ],
       "answer": 1
     },
@@ -390,6 +390,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「入場」，並避開同課其他題的情境",
         "resolution": "改前：\"她被一所好大學錄取了。\"；改後：\"警衛在入場前檢查了我們的票。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Get a free ticket at the front desk.\"；改後：\"Get a ticket from the desk without paying.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Pay the full price at the door.\"；改後：\"Pay half price at the front desk.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Bring a student card.\"；改後：\"Enter with no ticket at all.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

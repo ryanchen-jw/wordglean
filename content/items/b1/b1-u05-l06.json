@@ -125,9 +125,9 @@
       "audioZh": "會議大約會開兩個小時，所以我們準時開始吧。",
       "questionZh": "會議大約會開多久？",
       "options": [
-        "About two hours.",
+        "Around two hours.",
         "About one hour.",
-        "About three hours.",
+        "Exactly two hours.",
         "About thirty minutes."
       ],
       "answer": 0
@@ -361,6 +361,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：minor→brief",
         "resolution": "改前：\"較小的\"；改後：\"簡短的\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"About two hours.\"；改後：\"Around two hours.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"About three hours.\"；改後：\"Exactly two hours.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

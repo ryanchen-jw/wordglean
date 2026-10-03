@@ -125,9 +125,9 @@
       "audioZh": "因為天候惡劣，道路都封閉了，今天所有課程都改成線上上課。",
       "questionZh": "今天的課怎麼上？",
       "options": [
-        "All online today.",
+        "Over the internet.",
         "In the school hall, as usual.",
-        "There are no classes.",
+        "There are no classes today.",
         "At the library."
       ],
       "answer": 0
@@ -324,6 +324,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：卡「大雨造成道路問題」與聽選「天候惡劣道路封閉」同事件；改成球隊在最後一分鐘犯了嚴重的錯",
         "resolution": "改前：\"大雨在道路上造成了嚴重的問題。\"；改後：\"球隊在最後一分鐘犯了一個嚴重的錯誤。\"",
         "resolvedAt": "2026-10-02T23:33:47Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"All online today.\"；改後：\"Over the internet.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"There are no classes.\"；改後：\"There are no classes today.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

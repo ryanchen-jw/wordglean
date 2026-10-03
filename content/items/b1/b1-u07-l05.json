@@ -125,10 +125,10 @@
       "audioZh": "新火車站開幕後，這個小鎮的觀光就開始蓬勃發展。",
       "questionZh": "這個小鎮的觀光熱潮是什麼時候開始的？",
       "options": [
-        "When a big hotel was built.",
+        "When a new hotel opened.",
         "When a movie was made there.",
-        "When a music festival started.",
-        "When a new train station opened."
+        "When the old train station closed.",
+        "After the town got a new station."
       ],
       "answer": 3
     },
@@ -337,6 +337,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"改造；轉變\"；改後：\"轉變；改造\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"When a big hotel was built.\"；改後：\"When a new hotel opened.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"When a music festival started.\"；改後：\"When the old train station closed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"When a new train station opened.\"；改後：\"After the town got a new station.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

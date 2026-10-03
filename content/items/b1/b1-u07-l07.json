@@ -115,10 +115,10 @@
       "audioZh": "新經理的第一年表現極糟，所以公司請他離開。",
       "questionZh": "公司為什麼請新經理離開？",
       "options": [
-        "He was always late.",
+        "He was new to the company.",
         "He wanted more money from the company.",
         "His first year went very badly.",
-        "He moved abroad."
+        "He asked to leave the company."
       ],
       "answer": 2
     },
@@ -363,6 +363,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"天色看起來要變壞了，帶把傘吧。\"；改後：\"那隻狗發出帶有威脅的聲音。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He was always late.\"；改後：\"He was new to the company.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He moved abroad.\"；改後：\"He asked to leave the company.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

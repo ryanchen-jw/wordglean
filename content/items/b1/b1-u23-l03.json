@@ -112,10 +112,10 @@
       "audioZh": "游泳比賽改到星期天，因為泳池需要清理。",
       "questionZh": "游泳比賽為什麼改期？",
       "options": [
-        "There's no sponsor.",
-        "It will rain.",
-        "A swimmer is sick.",
-        "The pool needs cleaning."
+        "The pool is closed on Sunday.",
+        "The weather will be bad that day.",
+        "A swimmer is sick and can't race.",
+        "The pool has to be cleaned."
       ],
       "answer": 3
     },
@@ -341,6 +341,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"游泳選手；游泳者\"；改後：\"游泳者；游泳選手\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"There's no sponsor.\"；改後：\"The pool is closed on Sunday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"It will rain.\"；改後：\"The weather will be bad that day.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A swimmer is sick.\"；改後：\"A swimmer is sick and can't race.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The pool needs cleaning.\"；改後：\"The pool has to be cleaned.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

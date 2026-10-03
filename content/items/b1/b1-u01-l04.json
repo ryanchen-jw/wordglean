@@ -127,10 +127,10 @@
       "audioZh": "天氣很差，不過 Daniel 還是去公園跑步了。",
       "questionZh": "天氣不好時，Daniel 做了什麼？",
       "options": [
-        "He went shopping.",
+        "He went to a café.",
         "He stayed at home.",
-        "He went running.",
-        "He watched TV."
+        "He still ran.",
+        "He sat in the park."
       ],
       "answer": 2
     },
@@ -327,6 +327,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：Nowhere 換本課字 Nevertheless",
         "resolution": "改前：\"哪裡都不\"；改後：\"然而\"",
         "resolvedAt": "2026-10-02T20:00:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He went shopping.\"；改後：\"He went to a café.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He went running.\"；改後：\"He still ran.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He watched TV.\"；改後：\"He sat in the park.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

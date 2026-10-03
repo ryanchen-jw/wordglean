@@ -125,10 +125,10 @@
       "audioZh": "星期二會有工人來安裝新的冷氣。",
       "questionZh": "星期二會有人來做什麼？",
       "options": [
-        "Paint the bedroom.",
+        "Fix the old air conditioning.",
         "Check all the windows in the house.",
         "Clean the kitchen.",
-        "Install the air conditioning."
+        "Put in a new cooling system."
       ],
       "answer": 3
     },
@@ -336,6 +336,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示（不寫醫療場景）：護理師協助身體不舒服的球迷，改成工作人員協助帶寶寶的女士找座位",
         "resolution": "改前：\"我叔叔是我們本地足球隊的忠實支持者，這支球隊名聲很好。去年，市政府開始建造新體育場，他以志工身分幫忙安裝座位。準備工作花了三個月。這段期間球隊輸了好幾場比賽，不過很快就恢復了水準。開幕那天，我陪他去看第一場比賽。他試著忍住不買新球衣，結果最後還是買了一件。比賽中，體育場的一位護理師協助了一名身體不舒服的球迷。\"；改後：\"我叔叔是我們本地足球隊的忠實支持者，這支球隊名聲很好。去年，市政府開始建造新體育場，他以志工身分幫忙安裝座位。準備工作花了三個月。這段期間球隊輸了好幾場比賽，不過很快就恢復了水準。開幕那天，我陪他去看第一場比賽。他試著忍住不買新球衣，結果最後還是買了一件。比賽中，體育場的一位工作人員協助一位帶著寶寶的女士找到座位。\"",
         "resolvedAt": "2026-10-02T23:30:50Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Paint the bedroom.\"；改後：\"Fix the old air conditioning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Install the air conditioning.\"；改後：\"Put in a new cooling system.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

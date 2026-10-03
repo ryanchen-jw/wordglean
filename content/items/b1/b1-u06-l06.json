@@ -127,9 +127,9 @@
       "audioZh": "請看一下我的提案，星期五前把意見寄給我。",
       "questionZh": "說話者希望對方星期五前做什麼？",
       "options": [
-        "Send comments on the proposal.",
+        "Say what they think of the plan.",
         "Write a new proposal for Friday.",
-        "Call the manager about the plan.",
+        "Send the proposal to the manager.",
         "Book a meeting room."
       ],
       "answer": 0
@@ -441,6 +441,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這本書的結尾出人意料。\"；改後：\"科學家們得出了一個明確的結論。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Send comments on the proposal.\"；改後：\"Say what they think of the plan.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Call the manager about the plan.\"；改後：\"Send the proposal to the manager.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

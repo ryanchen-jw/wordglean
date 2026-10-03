@@ -129,10 +129,10 @@
       "audioZh": "請拿繃帶和一些水來，Tom 在廚房割傷了手。",
       "questionZh": "Tom 怎麼了？",
       "options": [
-        "He has a fever.",
+        "He cut his foot.",
         "He hurt his ankle.",
-        "He cut his hand.",
-        "He fell asleep."
+        "His hand has a cut.",
+        "He burned his hand."
       ],
       "answer": 2
     },
@@ -351,6 +351,24 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：exhausted→genetic",
         "resolution": "改前：\"精疲力竭的\"；改後：\"遺傳的\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He has a fever.\"；改後：\"He cut his foot.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He cut his hand.\"；改後：\"His hand has a cut.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He fell asleep.\"；改後：\"He burned his hand.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

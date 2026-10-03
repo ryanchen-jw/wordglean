@@ -128,10 +128,10 @@
       "audioZh": "遺失物可以在晚上六點前到主辦公室領取。",
       "questionZh": "遺失物可以在哪裡領取？",
       "options": [
-        "In the library.",
+        "At the main gate.",
         "At the bus station downtown.",
         "At the front gate after six.",
-        "At the main office."
+        "At the central office."
       ],
       "answer": 3
     },
@@ -321,6 +321,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：卡「竊案受害者報警」與 u28-l01 閱讀「腳踏車被偷去報案」同事件；改成動物是污染的受害者",
         "resolution": "改前：\"竊案的受害者向警方報案。\"；改後：\"動物常常是污染的受害者。\"",
         "resolvedAt": "2026-10-02T23:21:23Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"In the library.\"；改後：\"At the main gate.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At the main office.\"；改後：\"At the central office.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

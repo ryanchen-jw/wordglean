@@ -125,10 +125,10 @@
       "audioZh": "圖書館將在星期五中午公布海報比賽的得獎者。",
       "questionZh": "什麼時候公布得獎者？",
       "options": [
-        "On Monday.",
-        "Tomorrow morning.",
-        "At noon on Friday.",
-        "Tonight."
+        "Friday at ten.",
+        "Thursday at noon.",
+        "Friday at twelve.",
+        "Monday at noon."
       ],
       "answer": 2
     },
@@ -324,6 +324,48 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #30：釋義已是「網路」在前，干擾項換成同類的電視台、報紙、收音機",
         "resolution": "改前：\"司機\"；改後：\"收音機\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"On Monday.\"；改後：\"Friday morning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Tomorrow morning.\"；改後：\"Tomorrow at noon.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At noon on Friday.\"；改後：\"Friday, at twelve o'clock.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Tonight.\"；改後：\"Monday at noon.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項統一成「X at Y」格式、正解不再獨帶逗號",
+        "resolution": "改前：\"Friday morning.\"；改後：\"Friday at ten.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項統一成「X at Y」格式、正解不再獨帶逗號",
+        "resolution": "改前：\"Friday, at twelve o'clock.\"；改後：\"Friday at twelve.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：重新盲答回饋：音檔沒說今天星期幾，「明天中午」可能成立，改成音檔明確否定的時間",
+        "resolution": "改前：\"Tomorrow at noon.\"；改後：\"Thursday at noon.\"",
+        "resolvedAt": "2026-10-03T02:42:03Z"
       }
     ]
   }

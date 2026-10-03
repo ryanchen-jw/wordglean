@@ -125,9 +125,9 @@
       "audioZh": "地震時，我們躲在桌子底下，直到搖晃停止。",
       "questionZh": "地震時他們做了什麼？",
       "options": [
-        "Called their friends to check.",
+        "Hid under the stairs.",
         "Ran out of the house quickly.",
-        "Hid under the table.",
+        "Took cover under a table.",
         "Stood next to the windows."
       ],
       "answer": 2
@@ -378,6 +378,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「這種鳥絕種，一百年沒人見過」與閱讀告示牌同一句內容重複，改成保護動物以免絕種",
         "resolution": "改前：\"這種鳥已經絕種了，一百年來沒有人見過。\"；改後：\"我們必須保護這些動物，否則牠們會絕種。\"",
         "resolvedAt": "2026-10-02T23:43:39Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Called their friends to check.\"；改後：\"Hid under the stairs.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Hid under the table.\"；改後：\"Took cover under a table.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

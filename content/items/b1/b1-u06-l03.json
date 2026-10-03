@@ -127,8 +127,8 @@
       "audioZh": "我以為那家店星期天有開，結果沒開。",
       "questionZh": "說話者星期天遇到什麼事？",
       "options": [
-        "The shop was very busy.",
-        "The shop was closed.",
+        "The shop was open.",
+        "The shop wasn't open.",
         "The shop had moved.",
         "The shop had a sale."
       ],
@@ -399,6 +399,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"以為；假定\"；改後：\"假定；以為\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The shop was very busy.\"；改後：\"The shop was open.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The shop was closed.\"；改後：\"The shop wasn't open.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

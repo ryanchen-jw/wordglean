@@ -125,8 +125,8 @@
       "audioZh": "新生請注意：歡迎演講九點在大禮堂開始，午餐在中午。",
       "questionZh": "歡迎演講在哪裡、幾點開始？",
       "options": [
-        "In the laboratory.",
-        "In the library.",
+        "In the main hall at noon.",
+        "In the library at nine.",
         "In the gym at ten.",
         "In the main hall at nine."
       ],
@@ -342,6 +342,30 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：compound→curriculum",
         "resolution": "改前：\"化合物\"；改後：\"課程\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"In the laboratory.\"；改後：\"In the main hall at noon.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"In the library.\"；改後：\"In the library at nine.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"In the main hall at nine.\"；改後：\"Nine o'clock, in the main hall.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項統一成「In X at Y」句型",
+        "resolution": "改前：\"Nine o'clock, in the main hall.\"；改後：\"In the main hall at nine.\"",
+        "resolvedAt": "2026-10-03T02:39:49Z"
       }
     ]
   }

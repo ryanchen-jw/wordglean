@@ -125,9 +125,9 @@
       "audioZh": "那艘船一年只開往那座遙遠的小島兩次，春天和秋天各一次。",
       "questionZh": "那艘船一年去小島幾次？",
       "options": [
-        "Every weekend.",
+        "Only in spring.",
         "Once a month on Sundays.",
-        "Twice a year.",
+        "Once in spring and once in fall.",
         "Once a year."
       ],
       "answer": 2
@@ -324,6 +324,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 This watch is very accurate 與聽打 The map is not very accurate 句型相同、只換名詞；改成填表時給準確的答案",
         "resolution": "改前：\"這支手錶非常準確。\"；改後：\"填表時盡量給出準確的答案。\"",
         "resolvedAt": "2026-10-02T23:33:47Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Every weekend.\"；改後：\"Only in spring.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Twice a year.\"；改後：\"Once in spring and once in fall.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

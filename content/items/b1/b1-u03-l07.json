@@ -128,10 +128,10 @@
       "audioZh": "圖書館延長了開放時間，所以現在十點才關門。",
       "questionZh": "圖書館現在幾點關門？",
       "options": [
-        "At ten.",
-        "At eight.",
-        "At nine.",
-        "At six."
+        "Ten o'clock, later than before.",
+        "Ten o'clock, the same as before.",
+        "Nine o'clock, earlier than before.",
+        "It opens at ten now."
       ],
       "answer": 0
     },
@@ -328,6 +328,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"把蛋和麵粉放在碗裡混合。\"；改後：\"這支新手機結合了相機和音樂播放器。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At ten.\"；改後：\"Ten o'clock, later than before.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At eight.\"；改後：\"Ten o'clock, the same as before.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"At nine.\"；改後：\"Nine o'clock, earlier than before.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At six.\"；改後：\"It opens at ten now.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -126,8 +126,8 @@
       "questionZh": "說話者不希望對方做什麼？",
       "options": [
         "Read the story aloud.",
-        "Tell the ending.",
-        "Close the book.",
+        "Say how the story ends.",
+        "Tell the start of the story.",
         "Borrow the book."
       ],
       "answer": 1
@@ -396,6 +396,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #34：bust a record 不是慣用說法，改成舊耳機壞了",
         "resolution": "改前：\"我們隊以兩秒之差打破了舊紀錄。\"；改後：\"我的舊耳機壞了，所以我需要買新的。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Tell the ending.\"；改後：\"Say how the story ends.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Close the book.\"；改後：\"Tell the start of the story.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -129,9 +129,9 @@
       "audioZh": "我問他準備好了沒，他點頭回答。",
       "questionZh": "他怎麼回答？",
       "options": [
-        "He laughed.",
+        "He said he wasn't ready.",
         "He said no.",
-        "He gave a nod.",
+        "He nodded his head.",
         "He shook his head."
       ],
       "answer": 2
@@ -389,6 +389,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這項研究的結果讓大家很驚訝。\"；改後：\"這項研究的發現讓大家很驚訝。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"He laughed.\"；改後：\"He said he wasn't ready.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"He gave a nod.\"；改後：\"He nodded his head.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

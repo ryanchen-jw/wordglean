@@ -125,9 +125,9 @@
       "audioZh": "只有員工可以看這封郵件，因為這是內部訊息。",
       "questionZh": "誰可以看這封郵件？",
       "options": [
-        "Only the staff.",
+        "Only the workers.",
         "All the customers.",
-        "Anyone online.",
+        "Anyone with an email.",
         "Only the manager."
       ],
       "answer": 0
@@ -361,6 +361,18 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：active→worth",
         "resolution": "改前：\"寬的\"；改後：\"值得的\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Only the staff.\"；改後：\"Only the workers.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Anyone online.\"；改後：\"Anyone with an email.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

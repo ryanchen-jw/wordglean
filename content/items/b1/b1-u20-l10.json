@@ -127,9 +127,9 @@
       "audioZh": "我今天不能來開會，搬箱子讓我背痛得很厲害。",
       "questionZh": "說話者為什麼不能來開會？",
       "options": [
-        "A bad backache.",
+        "Their back hurts a lot.",
+        "Too many boxes to lift.",
         "A bad earache.",
-        "A family trip.",
         "A problem with their car."
       ],
       "answer": 0
@@ -410,6 +410,24 @@
         "message": "執行長補充規則（只看英文）自查修正：執行長補充規則（只看英文）自查修正：干擾項放進英文句子仍可成立，換成明顯不通的字：allergic→genetic",
         "resolution": "改前：\"過敏的\"；改後：\"遺傳的\"",
         "resolvedAt": "2026-10-02T22:16:29Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"A bad backache.\"；改後：\"Their back hurts a lot.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"A bad earache.\"；改後：\"Too many boxes to lift.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"A family trip.\"；改後：\"A bad earache.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

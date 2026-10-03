@@ -125,10 +125,10 @@
       "audioZh": "我們有一個會計師的職缺，請在月底前寄來履歷。",
       "questionZh": "這家公司在找什麼人？",
       "options": [
-        "A cook for the café.",
+        "A cook for the company.",
         "A driver for the manager.",
         "A cleaner for the office.",
-        "Someone to work as an accountant."
+        "An accountant for the company."
       ],
       "answer": 3
     },
@@ -282,6 +282,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：卡「鎮上很多年輕人失業」與 u33-l02 閱讀「鎮上失業率很高」同事件；改成失業讓人無聊又孤單",
         "resolution": "改前：\"鎮上很多年輕人失業。\"；改後：\"失業可能讓人覺得無聊又孤單。\"",
         "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"A cook for the café.\"；改後：\"A cook for the company.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Someone to work as an accountant.\"；改後：\"An accountant for the company.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

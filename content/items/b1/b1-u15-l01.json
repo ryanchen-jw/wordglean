@@ -127,9 +127,9 @@
       "audioZh": "這台印表機還在保固期內，所以店家會免費修理。",
       "questionZh": "店家為什麼會免費修理印表機？",
       "options": [
-        "It is still under warranty.",
+        "Its warranty hasn't ended yet.",
         "It is the newest model in the shop.",
-        "The shop made a mistake with it.",
+        "The shop broke the printer.",
         "The owner is a close friend of theirs."
       ],
       "answer": 0
@@ -357,6 +357,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"保證書一定要收在安全的地方。\"；改後：\"這台電視有兩年保固。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"It is still under warranty.\"；改後：\"Its warranty hasn't ended yet.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The shop made a mistake with it.\"；改後：\"The shop broke the printer.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

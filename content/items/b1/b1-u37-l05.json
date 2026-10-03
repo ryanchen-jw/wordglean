@@ -126,9 +126,9 @@
       "questionZh": "說話者為什麼覺得羞愧？",
       "options": [
         "Broke a friend's phone.",
-        "Forgot a birthday.",
-        "Was late for a party.",
-        "Told a teacher a lie about homework."
+        "Didn't remember a friend's birthday.",
+        "Forgot a friend's name.",
+        "Was late for a birthday party."
       ],
       "answer": 1
     },
@@ -372,6 +372,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡「違背承諾感到羞愧」與翻譯「為說謊感到羞愧」句型相同、同為道德上的過失；改成你沒什麼好羞愧的",
         "resolution": "改前：\"他對自己違背了承諾感到羞愧。\"；改後：\"你沒有什麼好羞愧的。\"",
         "resolvedAt": "2026-10-02T23:38:36Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Forgot a birthday.\"；改後：\"Didn't remember a friend's birthday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Was late for a party.\"；改後：\"Forgot a friend's name.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Told a teacher a lie about homework.\"；改後：\"Was late for a birthday party.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -125,9 +125,9 @@
       "audioZh": "水壺的水開了，我現在來泡茶。",
       "questionZh": "說話者現在要做什麼？",
       "options": [
-        "Buy a kettle.",
-        "Wash the dishes.",
-        "Make tea.",
+        "Buy a new kettle.",
+        "Wash the tea cups.",
+        "Prepare some tea.",
         "Go to bed."
       ],
       "answer": 2
@@ -469,6 +469,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"別聽他的，他在胡說八道。\"；改後：\"請把垃圾丟進垃圾桶。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Buy a kettle.\"；改後：\"Buy a new kettle.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Wash the dishes.\"；改後：\"Wash the tea cups.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Make tea.\"；改後：\"Prepare some tea.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

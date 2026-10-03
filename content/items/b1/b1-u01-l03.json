@@ -130,9 +130,9 @@
       "audioZh": "每當 Helen 覺得有壓力時，她就會到樹下散步很久。",
       "questionZh": "Helen 有壓力時會做什麼？",
       "options": [
-        "She goes for a walk.",
-        "She calls her friends.",
-        "She goes to sleep.",
+        "She walks for a long time.",
+        "She sits under the trees.",
+        "She goes for a long drive.",
         "She eats something sweet."
       ],
       "answer": 0
@@ -334,6 +334,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"而且；此外\"；改後：\"此外；而且\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"She goes for a walk.\"；改後：\"She walks for a long time.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"She calls her friends.\"；改後：\"She sits under the trees.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"She goes to sleep.\"；改後：\"She goes for a long drive.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

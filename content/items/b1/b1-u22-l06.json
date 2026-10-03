@@ -125,10 +125,10 @@
       "audioZh": "這場魔術表演是給孩子看的，所以下午四點開始。",
       "questionZh": "魔術表演幾點開始？",
       "options": [
-        "At seven o'clock in the evening.",
-        "At four in the afternoon.",
-        "At ten o'clock in the morning.",
-        "At noon on Sunday."
+        "At four in the morning.",
+        "At four p.m.",
+        "At ten in the morning.",
+        "At seven in the evening."
       ],
       "answer": 1
     },
@@ -367,6 +367,30 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（同課兩題 mcq 不共用干擾項）：trumpet→choir、idol→monster",
         "resolution": "改前：\"偶像\"；改後：\"怪物\"",
         "resolvedAt": "2026-10-02T19:45:14Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"At seven o'clock in the evening.\"；改後：\"At four in the morning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"At four in the afternoon.\"；改後：\"At four p.m.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"At ten o'clock in the morning.\"；改後：\"At ten in the morning.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
+        "resolution": "改前：\"At noon on Sunday.\"；改後：\"At seven in the evening.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

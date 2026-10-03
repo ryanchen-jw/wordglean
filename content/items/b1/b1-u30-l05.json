@@ -125,10 +125,10 @@
       "audioZh": "請今晚更新你的手機，因為舊軟體明天就不能用了。",
       "questionZh": "為什麼今晚要更新手機？",
       "options": [
-        "The old software will stop working.",
-        "The phone is too slow.",
+        "The old system won't work after today.",
+        "The phone will stop working tonight.",
         "The battery is low.",
-        "It is free tonight."
+        "The new software is free tonight."
       ],
       "answer": 0
     },
@@ -306,6 +306,24 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #29：例句中譯改「磁碟」，對上第一義",
         "resolution": "改前：\"我的舊電腦讀不了這張光碟。\"；改後：\"我的舊電腦讀不了這張磁碟。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The old software will stop working.\"；改後：\"The old system won't work after today.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The phone is too slow.\"；改後：\"The phone will stop working tonight.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It is free tonight.\"；改後：\"The new software is free tonight.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

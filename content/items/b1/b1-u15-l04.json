@@ -114,8 +114,8 @@
       "audioZh": "要預訂房間，請先付五十美元押金，離開時會退還給你。",
       "questionZh": "押金什麼時候會退還？",
       "options": [
-        "When you leave.",
-        "Right away.",
+        "At the end of the stay.",
+        "When you book the room.",
         "After one month.",
         "It is never returned."
       ],
@@ -344,6 +344,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"忙了一整天後，泡個熱水澡真是一大享受。\"；改後：\"昂貴的手錶是奢侈品。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"When you leave.\"；改後：\"At the end of the stay.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Right away.\"；改後：\"When you book the room.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

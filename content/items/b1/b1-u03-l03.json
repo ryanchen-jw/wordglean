@@ -127,8 +127,8 @@
       "audioZh": "辦公室星期一不開放，因為我們得重新擺放所有的家具。",
       "questionZh": "辦公室星期一為什麼不開放？",
       "options": [
-        "To rearrange the furniture.",
-        "To clean the windows.",
+        "To change where the furniture goes.",
+        "To buy all new furniture.",
         "Because it is a holiday.",
         "To move to a new building."
       ],
@@ -485,6 +485,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這份工作需要經常出差。\"；改後：\"這起事故涉及兩輛車。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"To rearrange the furniture.\"；改後：\"To change where the furniture goes.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"To clean the windows.\"；改後：\"To buy all new furniture.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

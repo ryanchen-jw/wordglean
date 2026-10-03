@@ -125,9 +125,9 @@
       "audioZh": "化學考試從星期二改到星期五，因為實驗室在清理。",
       "questionZh": "化學考試為什麼延期？",
       "options": [
-        "The teacher is sick.",
-        "The lab is being cleaned.",
-        "It's a holiday.",
+        "The teacher is sick on Tuesday.",
+        "There's cleaning in the lab.",
+        "Friday is a holiday.",
         "Students asked for it."
       ],
       "answer": 1
@@ -390,6 +390,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"平面設計是我們學院很熱門的科目。\"；改後：\"這本書用圖像來說明步驟。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The teacher is sick.\"；改後：\"The teacher is sick on Tuesday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The lab is being cleaned.\"；改後：\"There's cleaning in the lab.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"It's a holiday.\"；改後：\"Friday is a holiday.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "僧侶們早上要靜修，所以遊客只能在午餐後進入。",
       "questionZh": "遊客什麼時候可以進去？",
       "options": [
-        "Only on weekends.",
+        "Only before lunch.",
         "Early in the morning.",
         "Any time they like.",
-        "After lunch."
+        "In the afternoon."
       ],
       "answer": 3
     },
@@ -330,6 +330,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同單元不可重複同一事件類型」：卡「村莊擺脫壞國王」與 u29-l06 閱讀「女神把人民從殘暴國王手中解放」同事件；改成鳥兒從籠子裡被放出來",
         "resolution": "改前：\"這部電影講述一個村莊從一位壞國王手中解放的故事。\"；改後：\"鳥兒從籠子裡被放出來，孩子們歡呼起來。\"",
         "resolvedAt": "2026-10-02T23:23:51Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Only on weekends.\"；改後：\"Only before lunch.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"After lunch.\"；改後：\"In the afternoon.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

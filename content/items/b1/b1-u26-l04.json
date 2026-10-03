@@ -126,8 +126,8 @@
       "questionZh": "為什麼要穿好走的鞋？",
       "options": [
         "The tour is three hours long.",
-        "The cave floor is very cold.",
-        "The path is full of mud.",
+        "The cave path is full of water.",
+        "The way is wet and dirty.",
         "There are sharp rocks inside."
       ],
       "answer": 2
@@ -330,6 +330,18 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 There are fish in the pond behind our house 與造句 There is a small pond in the park near my home 句型、情境相同，只換地點；改成池塘冬天結冰可溜冰",
         "resolution": "改前：\"我們家後面的池塘裡有魚。\"；改後：\"池塘冬天會結冰，人們在上面溜冰。\"",
         "resolvedAt": "2026-10-02T23:17:59Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"The cave floor is very cold.\"；改後：\"The cave path is full of water.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"The path is full of mud.\"；改後：\"The way is wet and dirty.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "這間公寓的收納空間不夠，所以我們把箱子放在床底下。",
       "questionZh": "他們把箱子放在哪裡？",
       "options": [
-        "In the kitchen.",
-        "Under the bed.",
-        "On the roof.",
-        "In the car."
+        "On the bed.",
+        "Under where they sleep.",
+        "In the storage room.",
+        "Outside the apartment."
       ],
       "answer": 1
     },
@@ -349,6 +349,30 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"水管；管子\"；改後：\"管子；水管\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"In the kitchen.\"；改後：\"On the bed.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Under the bed.\"；改後：\"Under where they sleep.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"On the roof.\"；改後：\"In the storage room.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"In the car.\"；改後：\"Outside the apartment.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }

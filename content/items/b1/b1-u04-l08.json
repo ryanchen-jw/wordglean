@@ -128,10 +128,10 @@
       "audioZh": "這家店今天肯定沒開，我們明天再來吧。",
       "questionZh": "說話者建議怎麼做？",
       "options": [
-        "Come back tomorrow.",
-        "Wait outside.",
+        "Return the next day.",
+        "Wait until it opens today.",
         "Go to another shop.",
-        "Call the owner."
+        "Come back later today."
       ],
       "answer": 0
     },
@@ -358,6 +358,24 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"這張桌子是實木做的。\"；改後：\"這座老橋仍然非常堅固。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
+        "resolution": "改前：\"Come back tomorrow.\"；改後：\"Return the next day.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Wait outside.\"；改後：\"Wait until it opens today.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
+        "resolution": "改前：\"Call the owner.\"；改後：\"Come back later today.\"",
+        "resolvedAt": "2026-10-03T01:50:05Z"
       }
     ]
   }
