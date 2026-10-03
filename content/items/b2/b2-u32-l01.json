@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u32-l01",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T23:32:26Z",
+  "properNouns": [
+    "Taichung",
+    "South",
+    "America",
+    "Su",
+    "Japan"
+  ],
+  "items": [
+    {
+      "id": "b2-u32-l01-q01",
+      "type": "wordCard",
+      "word": "outlet",
+      "exampleEn": "The brand opened its first outlet in Taichung last year.",
+      "exampleZh": "這個品牌去年在台中開了第一家暢貨店。",
+      "glossZh": "暢貨中心；插座；出路",
+      "distractorsZh": [
+        "加油站",
+        "郵局",
+        "銀行"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q02",
+      "type": "wordCard",
+      "word": "packet",
+      "exampleEn": "Each packet of flower seeds costs fifty dollars.",
+      "exampleZh": "每一小包花的種子賣五十元。",
+      "glossZh": "小包；一包",
+      "distractorsZh": [
+        "一箱",
+        "一桶",
+        "一卡車"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q03",
+      "type": "wordCard",
+      "word": "unload",
+      "exampleEn": "It took three hours to unload the ship.",
+      "exampleZh": "卸下那艘船的貨花了三個小時。",
+      "glossZh": "卸貨；卸下",
+      "distractorsZh": [
+        "裝貨",
+        "修理",
+        "清洗"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q04",
+      "type": "wordCard",
+      "word": "stock",
+      "exampleEn": "The shop keeps a large stock of winter coats.",
+      "exampleZh": "那家店備有大量冬季外套的庫存。",
+      "glossZh": "存貨；庫存；股票",
+      "distractorsZh": [
+        "訂單",
+        "收據",
+        "帳單"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q05",
+      "type": "wordCard",
+      "word": "purchase",
+      "exampleEn": "Please keep your receipt in case you want to return your purchase.",
+      "exampleZh": "請保留收據，以免您想退回所購買的商品。",
+      "glossZh": "購買；購買的東西",
+      "distractorsZh": [
+        "退貨",
+        "租借",
+        "修理"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q06",
+      "type": "wordCard",
+      "word": "import",
+      "exampleEn": "Imported cheese is quite expensive here.",
+      "exampleZh": "進口起司在這裡相當貴。",
+      "glossZh": "進口；輸入",
+      "distractorsZh": [
+        "出口",
+        "生產",
+        "丟棄"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q07",
+      "type": "wordCard",
+      "word": "supplier",
+      "exampleEn": "The restaurant changed its fish supplier last month.",
+      "exampleZh": "那家餐廳上個月換了魚貨供應商。",
+      "glossZh": "供應商",
+      "distractorsZh": [
+        "顧客",
+        "房東",
+        "競爭者"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q08",
+      "type": "wordCard",
+      "word": "shipping",
+      "exampleEn": "The company pays extra for faster shipping.",
+      "exampleZh": "那家公司多付錢，讓貨送得更快。",
+      "glossZh": "運送；運費",
+      "distractorsZh": [
+        "包裝",
+        "廣告",
+        "維修"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q09",
+      "type": "listenType",
+      "sentenceEn": "Workers unload the trucks at the back of the supermarket every morning.",
+      "sentenceZh": "工人每天早上在超市後面卸貨。"
+    },
+    {
+      "id": "b2-u32-l01-q10",
+      "type": "listenChoice",
+      "audioEn": "Sorry, that jacket is out of stock in your size, but we can order one for you.",
+      "audioZh": "抱歉，那件夾克您的尺寸已經沒貨了，但我們可以幫您訂一件。",
+      "questionZh": "店員說那件夾克怎麼了？",
+      "options": [
+        "Half price this week only",
+        "Can't be ordered any more",
+        "Sold out in that size",
+        "Available only in dark red"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u32-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "The country imports more oil than any other product.",
+      "sentenceZh": "這個國家進口最多的產品是石油。"
+    },
+    {
+      "id": "b2-u32-l01-q12",
+      "type": "shadowing",
+      "sentenceEn": "Shipping is free for orders over one thousand dollars.",
+      "sentenceZh": "訂單超過一千元就免運費。"
+    },
+    {
+      "id": "b2-u32-l01-q13",
+      "type": "mcq",
+      "stemEn": "Our main ____ of paper raised its prices, so we are looking for a cheaper one.",
+      "stemZh": "我們主要的紙張供應商漲價了，所以我們正在找比較便宜的。",
+      "options": [
+        "shipping",
+        "packet",
+        "supplier",
+        "stock"
+      ],
+      "optionGlossZh": [
+        "運送",
+        "小包",
+        "供應商",
+        "存貨"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u32-l01-q14",
+      "type": "mcq",
+      "stemEn": "You can ____ tickets from the machine at the station.",
+      "stemZh": "你可以在車站的機器購買車票。",
+      "options": [
+        "import",
+        "unload",
+        "purchase",
+        "outlet"
+      ],
+      "optionGlossZh": [
+        "進口",
+        "卸貨",
+        "購買",
+        "暢貨中心"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u32-l01-q15",
+      "type": "reading",
+      "passageEn": "Every Monday, Ms. Su checks the stock in her small kitchen shop. If something is running low, she places an order with her supplier. Most of her pots and knives are imported from Japan, so shipping can take two weeks. Last month, a big order arrived on a Friday evening, and her son helped her unload the boxes. One box was full of small packets of tea, which she had not ordered. When she called the supplier, they told her to keep the tea as a gift. Ms. Su is also thinking of opening a second shop in the new outlet mall near the airport, where customers can make a purchase online and collect it at the shop the same day. She will pay for it with a small loan.",
+      "passageZh": "每個星期一，蘇小姐都會檢查她那家小廚具店的存貨。如果有東西快賣完了，她就向供應商下訂單。她的鍋子和刀子大多是從日本進口的，所以運送可能要兩個星期。上個月，一批大訂單在星期五晚上送到，她兒子幫她卸下箱子。其中一箱裝滿了小包的茶葉，那是她沒有訂的。她打電話給供應商，對方說茶葉就留著當禮物。蘇小姐也在考慮到機場附近新開的暢貨中心開第二家店，顧客可以在網路上購買，當天到店取貨。她會用一筆小額貸款來支付開店費用。",
+      "questions": [
+        {
+          "questionZh": "為什麼運送可能要兩個星期？",
+          "options": [
+            "供應商只有週五才送貨",
+            "商品大多從日本進口",
+            "司機常常遲到",
+            "訂單太大了"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "那箱沒有訂的茶葉後來怎麼處理？",
+          "options": [
+            "退回給供應商",
+            "供應商讓她留著當禮物",
+            "送給她兒子",
+            "放在店裡賣"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q16",
+      "type": "translate",
+      "promptZh": "這是我這個月買過最貴的東西。",
+      "hintWords": [
+        "purchase"
+      ],
+      "referenceEn": [
+        "This is my most expensive purchase this month.",
+        "This is the most expensive purchase I have made this month."
+      ],
+      "rubricZh": [
+        "「買過的東西」要用到 purchase（例如 my most expensive purchase、my biggest purchase 等）",
+        "最高級寫法不限（例如 the most expensive、the biggest 等）"
+      ]
+    },
+    {
+      "id": "b2-u32-l01-q17",
+      "type": "makeSentence",
+      "targetWord": "outlet",
+      "instructionZh": "用 outlet 造一個句子，說說你去過的暢貨中心，或在那裡買過的東西。",
+      "referenceEn": [
+        "I bought cheap running shoes at an outlet near the highway.",
+        "I like shopping at the outlet mall because the prices are lower."
+      ],
+      "rubricZh": [
+        "句子要用到 outlet",
+        "outlet 的用法，例如 an outlet mall、an outlet store 等",
+        "時態配合內容（例如 bought、like 等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:55:00Z",
+    "verdicts": {
+      "b2-u32-l01-q10": [
+        2
+      ],
+      "b2-u32-l01-q13": [
+        2
+      ],
+      "b2-u32-l01-q14": [
+        2
+      ],
+      "b2-u32-l01-q15#0": [
+        1
+      ],
+      "b2-u32-l01-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/7/exampleEn",
+        "message": "執行長第②③關裁示修正：單字卡第一義與例句一致（b2cd1 裁示）；與跟讀同主詞同情境",
+        "resolution": "改前：\"The shipping costs more than the book itself.\"；改後：\"The company pays extra for faster shipping.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/exampleZh",
+        "message": "執行長第②③關裁示修正：單字卡第一義與例句一致（b2cd1 裁示）；與跟讀同主詞同情境",
+        "resolution": "改前：\"運費比書本身還貴。\"；改後：\"那家公司多付錢，讓貨送得更快。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/options/0",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Made of real leather\"；改後：\"Half price this week only\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Half price this week\"；改後：\"Can't be ordered any more\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"None in that size\"；改後：\"Sold out in that size\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/options/3",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Available only in red\"；改後：\"Available only in dark red\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：跟讀與閱讀同為「商品從某國進口」",
+        "resolution": "改前：\"We import most of our coffee beans from South America.\"；改後：\"The country imports more oil than any other product.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：跟讀與閱讀同為「商品從某國進口」",
+        "resolution": "改前：\"我們大部分的咖啡豆都是從南美洲進口的。\"；改後：\"這個國家進口最多的產品是石油。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/13/stemEn",
+        "message": "執行長第②③關裁示修正：情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：mcq 與閱讀同為網路購買",
+        "resolution": "改前：\"You can ____ tickets online or at the station.\"；改後：\"You can ____ tickets from the machine at the station.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正：情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：mcq 與閱讀同為網路購買",
+        "resolution": "改前：\"你可以在網路上或車站購買車票。\"；改後：\"你可以在車站的機器購買車票。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第②關 issue：邏輯補清楚（網購、店取）；第②關 issue",
+        "resolution": "改前：\"Every Monday, Ms. Su checks the stock in her small kitchen shop. If something is running low, she places an order with her supplier. Most of her pots and knives are imported from Japan, so shipping can take two weeks. Last month, a big order arrived on a Friday evening, and her son helped her unload the boxes. One box was full of small packets of tea, which she had not ordered. When she called the supplier, they told her to keep the tea as a gift. Ms. Su is also thinking of opening a second shop in the new outlet mall near the airport, where customers can make a purchase online and pick it up the same day. She will pay for it with a small loan.\"；改後：\"Every Monday, Ms. Su checks the stock in her small kitchen shop. If something is running low, she places an order with her supplier. Most of her pots and knives are imported from Japan, so shipping can take two weeks. Last month, a big order arrived on a Friday evening, and her son helped her unload the boxes. One box was full of small packets of tea, which she had not ordered. When she called the supplier, they told her to keep the tea as a gift. Ms. Su is also thinking of opening a second shop in the new outlet mall near the airport, where customers can make a purchase online and collect it at the shop the same day. She will pay for it with a small loan.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第②關 issue：邏輯補清楚（網購、店取）；第②關 issue",
+        "resolution": "改前：\"每個星期一，蘇小姐都會檢查她那家小廚具店的存貨。如果有東西快賣完了，她就向供應商下訂單。她的鍋子和刀子大多是從日本進口的，所以運送可能要兩個星期。上個月，一批大訂單在星期五晚上送到，她兒子幫她卸下箱子。其中一箱裝滿了小包的茶葉，那是她沒有訂的。她打電話給供應商，對方說茶葉就留著當禮物。蘇小姐也在考慮到機場附近新開的暢貨中心開第二家店，顧客可以在網路上購買，當天取貨。她會用一筆小額貸款來支付開店費用。\"；改後：\"每個星期一，蘇小姐都會檢查她那家小廚具店的存貨。如果有東西快賣完了，她就向供應商下訂單。她的鍋子和刀子大多是從日本進口的，所以運送可能要兩個星期。上個月，一批大訂單在星期五晚上送到，她兒子幫她卸下箱子。其中一箱裝滿了小包的茶葉，那是她沒有訂的。她打電話給供應商，對方說茶葉就留著當禮物。蘇小姐也在考慮到機場附近新開的暢貨中心開第二家店，顧客可以在網路上購買，當天到店取貨。她會用一筆小額貸款來支付開店費用。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/promptZh",
+        "message": "執行長第②③關裁示修正：第②關 issue／第③關疑似（照審查建議改） 15：中文不自然",
+        "resolution": "改前：\"這是我這個月最大的一筆購買。\"；改後：\"這是我這個月買過最貴的東西。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/referenceEn/0",
+        "message": "執行長第②③關裁示修正：第②關 issue／第③關疑似（照審查建議改） 15：中文不自然",
+        "resolution": "改前：\"This is my biggest purchase this month.\"；改後：\"This is my most expensive purchase this month.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第②關 issue／第③關疑似（照審查建議改） 15：中文不自然",
+        "resolution": "改前：\"This is the biggest purchase I have made this month.\"；改後：\"This is the most expensive purchase I have made this month.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/rubricZh/0",
+        "message": "執行長第②③關裁示修正：第②關 issue／第③關疑似（照審查建議改） 15：中文不自然",
+        "resolution": "改前：\"「購買（的東西）」可寫，例如 purchase 等\"；改後：\"「買過的東西」要用到 purchase（例如 my most expensive purchase、my biggest purchase 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：第②關 issue／第③關疑似（照審查建議改） 15：中文不自然",
+        "resolution": "改前：\"最高級（例如 my biggest purchase、the largest purchase 等）\"；改後：\"最高級寫法不限（例如 the most expensive、the biggest 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
+        "resolution": "改前：\"常見搭配（例如 an outlet mall、an outlet store 等）\"；改後：\"outlet 的用法，例如 an outlet mall、an outlet store 等\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
+        "resolution": "改前：\"時態配合內容（例如 bought、like）\"；改後：\"時態配合內容（例如 bought、like 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/promptZh",
+        "message": "第②關 issue 結案：中文不自然：「這是我這個月最大的一筆購買」不是台灣慣用說法，建議「這是我這個月買過最貴的東西」或「最大的一筆消費」。",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "第②關 issue 結案：疑似邏輯小瑕疵：在 outlet mall 的實體店「顧客可以在網路上購買、當天取貨」，敘述可通但略牽強，可再確認。",
+        "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      }
+    ]
+  }
+}

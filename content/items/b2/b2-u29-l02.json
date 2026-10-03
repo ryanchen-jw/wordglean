@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u29-l02",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-02T23:32:08Z",
+  "properNouns": [
+    "Ho"
+  ],
+  "items": [
+    {
+      "id": "b2-u29-l02-q01",
+      "type": "wordCard",
+      "word": "trainee",
+      "exampleEn": "The trainee pilot flew a small plane for the first time.",
+      "exampleZh": "那位見習飛行員第一次駕駛小飛機。",
+      "glossZh": "實習生；受訓者",
+      "distractorsZh": [
+        "教練",
+        "主管",
+        "顧客"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q02",
+      "type": "wordCard",
+      "word": "veteran",
+      "exampleEn": "The team needs a mix of young players and veterans.",
+      "exampleZh": "這支球隊需要年輕球員和老將搭配。",
+      "glossZh": "老手；資深人員；退伍軍人",
+      "distractorsZh": [
+        "新手",
+        "觀眾",
+        "對手"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q03",
+      "type": "wordCard",
+      "word": "personnel",
+      "exampleEn": "All personnel must wear a badge inside the building.",
+      "exampleZh": "所有人員在大樓內都必須配戴識別證。",
+      "glossZh": "人員；人事部門",
+      "distractorsZh": [
+        "設備",
+        "產品",
+        "預算"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q04",
+      "type": "wordCard",
+      "word": "retirement",
+      "exampleEn": "The company gave him a gold watch on his retirement.",
+      "exampleZh": "他退休時，公司送了他一支金錶。",
+      "glossZh": "退休",
+      "distractorsZh": [
+        "升遷",
+        "面試",
+        "畢業"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q05",
+      "type": "wordCard",
+      "word": "salary",
+      "exampleEn": "Her salary is paid on the last day of every month.",
+      "exampleZh": "她的薪水在每個月的最後一天發放。",
+      "glossZh": "薪水；月薪",
+      "distractorsZh": [
+        "房租",
+        "稅金",
+        "學費"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q06",
+      "type": "wordCard",
+      "word": "wage",
+      "exampleEn": "Restaurant workers here earn an hourly wage plus tips.",
+      "exampleZh": "這裡的餐廳員工領時薪，另外還有小費。",
+      "glossZh": "工資；時薪",
+      "distractorsZh": [
+        "房租",
+        "罰款",
+        "利息"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q07",
+      "type": "wordCard",
+      "word": "dismiss",
+      "exampleEn": "The company dismissed two workers for stealing.",
+      "exampleZh": "公司因為偷竊解僱了兩名員工。",
+      "glossZh": "解僱；不予理會",
+      "distractorsZh": [
+        "錄取",
+        "表揚",
+        "升遷"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q08",
+      "type": "wordCard",
+      "word": "earnings",
+      "exampleEn": "Her earnings from the shop are enough to support her family.",
+      "exampleZh": "她開店的收入足以養活一家人。",
+      "glossZh": "收入；所得",
+      "distractorsZh": [
+        "支出",
+        "債務",
+        "損失"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q09",
+      "type": "listenType",
+      "sentenceEn": "The new trainees will spend their first week in the kitchen.",
+      "sentenceZh": "新來的實習生第一週會待在廚房。"
+    },
+    {
+      "id": "b2-u29-l02-q10",
+      "type": "listenChoice",
+      "audioEn": "After forty years of teaching, my father is enjoying his retirement by the sea.",
+      "audioZh": "教了四十年書之後，我父親正在海邊享受退休生活。",
+      "questionZh": "說話者的父親退休後在做什麼？",
+      "options": [
+        "Taking it easy near the beach",
+        "Still teaching part-time",
+        "Writing a book on teaching",
+        "Working at a bank"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u29-l02-q11",
+      "type": "shadowing",
+      "sentenceEn": "He works two jobs because his wage is quite low.",
+      "sentenceZh": "他做兩份工作，因為他的工資相當低。"
+    },
+    {
+      "id": "b2-u29-l02-q12",
+      "type": "shadowing",
+      "sentenceEn": "The manager dismissed my idea without even listening to it.",
+      "sentenceZh": "經理連聽都沒聽就否定了我的點子。"
+    },
+    {
+      "id": "b2-u29-l02-q13",
+      "type": "mcq",
+      "stemEn": "The company's ____ department is in charge of hiring new staff and planning training.",
+      "stemZh": "公司的人事部門負責招募新員工和規劃訓練。",
+      "options": [
+        "veteran",
+        "retirement",
+        "earnings",
+        "personnel"
+      ],
+      "optionGlossZh": [
+        "老手",
+        "退休",
+        "收入",
+        "人事"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b2-u29-l02-q14",
+      "type": "mcq",
+      "stemEn": "The new job offers a higher ____ and more holidays, so she is happy to change companies.",
+      "stemZh": "新工作提供更高的薪水和更多假期，所以她很樂意換公司。",
+      "options": [
+        "trainee",
+        "salary",
+        "resignation",
+        "dismiss"
+      ],
+      "optionGlossZh": [
+        "實習生",
+        "薪水",
+        "辭呈",
+        "解僱"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b2-u29-l02-q15",
+      "type": "reading",
+      "passageEn": "After thirty-five years at the same factory, Mr. Ho is a true veteran. Next month, he will begin his retirement, and the personnel office is planning a small party for him. Mr. Ho started as a trainee earning a very low wage, but he worked hard and became a supervisor. Over the years, his salary grew, and he saved part of his earnings every month. In all those years, the factory never had to dismiss a single worker, and Mr. Ho is proud of that. Now he wants to travel with his wife and spend more time with his family.",
+      "passageZh": "在同一家工廠工作了三十五年，何先生是個名副其實的老手。下個月他就要退休了，人事室正在為他籌備一場小型派對。何先生從工資很低的實習生做起，但他工作努力，後來當上了主管。這些年來，他的薪水逐漸增加，他每個月都會存下一部分收入。這些年來，工廠從來不必解僱任何一位員工，何先生對此感到很驕傲。現在他想和太太一起旅行，多花點時間陪家人。",
+      "questions": [
+        {
+          "questionZh": "何先生剛進工廠時是什麼情況？",
+          "options": [
+            "只做週末的班",
+            "已經是工廠主管",
+            "在人事室工作",
+            "是領很低工資的實習生"
+          ],
+          "answer": 3
+        },
+        {
+          "questionZh": "何先生對工廠的哪一點感到驕傲？",
+          "options": [
+            "產品賣到很多國家",
+            "沒解僱過任何人",
+            "是全鎮最大的工廠",
+            "老闆每年都會發獎金"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q16",
+      "type": "translate",
+      "promptZh": "這家公司今年的收入比去年高了百分之十。",
+      "hintWords": [
+        "earnings"
+      ],
+      "referenceEn": [
+        "The company's earnings this year are ten percent higher than last year.",
+        "This year, the company's earnings rose by ten percent compared with last year."
+      ],
+      "rubricZh": [
+        "「收入」可寫，例如 earnings 等",
+        "比較的寫法不限（例如 ten percent higher than、rose by ten percent 等）",
+        "時態配合內容（例如 are、rose 等）"
+      ]
+    },
+    {
+      "id": "b2-u29-l02-q17",
+      "type": "makeSentence",
+      "targetWord": "retirement",
+      "instructionZh": "用 retirement 造一個句子，說說你希望退休後做什麼，或你認識的人退休後在做什麼。",
+      "referenceEn": [
+        "After my retirement, I hope to open a small bookshop.",
+        "I want to travel around the world after my retirement."
+      ],
+      "rubricZh": [
+        "句子要用到 retirement",
+        "retirement 的用法，例如 after my retirement、in retirement、spend his retirement 等",
+        "時態合理（例如 hope、spends 等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:55:00Z",
+    "verdicts": {
+      "b2-u29-l02-q10": [
+        0
+      ],
+      "b2-u29-l02-q13": [
+        3
+      ],
+      "b2-u29-l02-q14": [
+        1
+      ],
+      "b2-u29-l02-q15#0": [
+        3
+      ],
+      "b2-u29-l02-q15#1": [
+        1
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/9/options/0",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Living by the sea and relaxing\"；改後：\"Taking it easy near the beach\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/options/1",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Teaching part-time\"；改後：\"Still teaching part-time\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/options/2",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Writing a book\"；改後：\"Writing a book on teaching\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/13/stemEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：與 u29-l01 q14「離開銀行工作」同事件",
+        "resolution": "改前：\"She left the bank because the ____ was too low to pay her rent.\"；改後：\"The new job offers a higher ____ and more holidays, so she is happy to change companies.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/13/stemZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：與 u29-l01 q14「離開銀行工作」同事件",
+        "resolution": "改前：\"她離開那家銀行，因為薪水太低，付不起房租。\"；改後：\"新工作提供更高的薪水和更多假期，所以她很樂意換公司。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/passageEn",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"After thirty-five years at the same factory, Mr. Ho is a true veteran. Next month, he will begin his retirement, and the personnel office is planning a small party for him. Mr. Ho started as a trainee earning a very low wage, but he worked hard and became a supervisor. Over the years, his salary grew, and he saved part of his earnings every month. He remembers a time when the factory almost had to dismiss half of its workers, but the owners found new customers in Japan and saved everyone's jobs. Now he wants to travel with his wife and spend more time with his family.\"；改後：\"After thirty-five years at the same factory, Mr. Ho is a true veteran. Next month, he will begin his retirement, and the personnel office is planning a small party for him. Mr. Ho started as a trainee earning a very low wage, but he worked hard and became a supervisor. Over the years, his salary grew, and he saved part of his earnings every month. In all those years, the factory never had to dismiss a single worker, and Mr. Ho is proud of that. Now he wants to travel with his wife and spend more time with his family.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/passageZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"在同一家工廠工作了三十五年，何先生是個名副其實的老手。下個月他就要退休了，人事室正在為他籌備一場小型派對。何先生從工資很低的實習生做起，但他工作努力，後來當上了主管。這些年來，他的薪水逐漸增加，他每個月都會存下一部分收入。他記得有一段時間，工廠差點得解僱一半的員工，但老闆們在日本找到了新客戶，保住了大家的工作。現在他想和太太一起旅行，多花點時間陪家人。\"；改後：\"在同一家工廠工作了三十五年，何先生是個名副其實的老手。下個月他就要退休了，人事室正在為他籌備一場小型派對。何先生從工資很低的實習生做起，但他工作努力，後來當上了主管。這些年來，他的薪水逐漸增加，他每個月都會存下一部分收入。這些年來，工廠從來不必解僱任何一位員工，何先生對此感到很驕傲。現在他想和太太一起旅行，多花點時間陪家人。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/questions/1/questionZh",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"工廠為什麼最後不必解僱一半員工？\"；改後：\"何先生對工廠的哪一點感到驕傲？\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/questions/1/options/0",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"員工同意減薪\"；改後：\"產品賣到很多國家\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/questions/1/options/1",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"老闆在日本找到了新客戶\"；改後：\"沒解僱過任何人\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/questions/1/options/2",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"政府提供補助\"；改後：\"是全鎮最大的工廠\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/questions/1/options/3",
+        "message": "執行長第②③關裁示修正：第③關 FIX：閱讀與 u29-l01 同為「公司差點裁員」",
+        "resolution": "改前：\"何先生借錢給工廠\"；改後：\"老闆每年都會發獎金\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/rubricZh/2",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
+        "resolution": "改前：\"時態配合內容（例如 are、rose）\"；改後：\"時態配合內容（例如 are、rose 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16/referenceEn/1",
+        "message": "執行長第②③關裁示修正：第③關 FIX：要點「常見搭配」改寫；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽選同為親人退休後的活動",
+        "resolution": "改前：\"My uncle spends his retirement growing vegetables in the countryside.\"；改後：\"I want to travel around the world after my retirement.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16/rubricZh/1",
+        "message": "執行長第②③關裁示修正：第③關 FIX：要點「常見搭配」改寫；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽選同為親人退休後的活動",
+        "resolution": "改前：\"常見搭配（例如 after my retirement、in retirement、spend his retirement 等）\"；改後：\"retirement 的用法，例如 after my retirement、in retirement、spend his retirement 等\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16/rubricZh/2",
+        "message": "執行長第②③關裁示修正：第③關 FIX：要點「常見搭配」改寫；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽選同為親人退休後的活動",
+        "resolution": "改前：\"時態配合內容（例如 hope、spends）\"；改後：\"時態合理（例如 hope、spends 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      }
+    ]
+  }
+}

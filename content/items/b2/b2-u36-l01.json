@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u36-l01",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-03T00:24:35Z",
+  "properNouns": [
+    "Amy",
+    "English",
+    "Japanese",
+    "Chinese"
+  ],
+  "items": [
+    {
+      "id": "b2-u36-l01-q01",
+      "type": "wordCard",
+      "word": "physician",
+      "exampleEn": "The town has only one physician, so she is always busy.",
+      "exampleZh": "鎮上只有一位醫師，所以她總是很忙。",
+      "glossZh": "醫師；內科醫生",
+      "distractorsZh": [
+        "律師",
+        "建築師",
+        "會計師"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q02",
+      "type": "wordCard",
+      "word": "pharmacist",
+      "exampleEn": "Our pharmacist speaks English, Japanese and Chinese.",
+      "exampleZh": "我們的藥師會說英文、日文和中文。",
+      "glossZh": "藥師；藥劑師",
+      "distractorsZh": [
+        "廚師",
+        "理髮師",
+        "攝影師"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q03",
+      "type": "wordCard",
+      "word": "therapy",
+      "exampleEn": "He goes to speech therapy every Tuesday after school.",
+      "exampleZh": "他每週二放學後去上語言治療課。",
+      "glossZh": "治療；療法",
+      "distractorsZh": [
+        "訓練",
+        "比賽",
+        "休假"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q04",
+      "type": "wordCard",
+      "word": "therapist",
+      "exampleEn": "A good therapist listens carefully and never laughs at your problems.",
+      "exampleZh": "好的治療師會仔細傾聽，從不嘲笑你的問題。",
+      "glossZh": "治療師",
+      "distractorsZh": [
+        "教練",
+        "法官",
+        "司機"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q05",
+      "type": "wordCard",
+      "word": "vaccine",
+      "exampleEn": "The first vaccine was made more than two hundred years ago.",
+      "exampleZh": "第一種疫苗在兩百多年前就做出來了。",
+      "glossZh": "疫苗",
+      "distractorsZh": [
+        "維他命",
+        "繃帶",
+        "口罩"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q06",
+      "type": "wordCard",
+      "word": "hospitalize",
+      "exampleEn": "Most patients who are hospitalized here stay for less than three days.",
+      "exampleZh": "在這裡住院的病人大多住不到三天。",
+      "glossZh": "使住院",
+      "distractorsZh": [
+        "使退休",
+        "使搬家",
+        "使入學"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q07",
+      "type": "listenType",
+      "sentenceEn": "The pharmacist at the corner shop knows everyone in the neighborhood.",
+      "sentenceZh": "街角那家店的藥師認識附近的每一個人。"
+    },
+    {
+      "id": "b2-u36-l01-q08",
+      "type": "listenChoice",
+      "audioEn": "Our manager was hospitalized for two days, so the meeting has been moved to next Monday.",
+      "audioZh": "我們經理住院兩天，所以會議改到下星期一。",
+      "questionZh": "會議為什麼改期？",
+      "options": [
+        "The manager was on a trip abroad",
+        "The manager was in hospital",
+        "The room was being cleaned",
+        "Too many people were away"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b2-u36-l01-q09",
+      "type": "shadowing",
+      "sentenceEn": "The hospital offers art therapy classes on Wednesday afternoons.",
+      "sentenceZh": "這家醫院每週三下午有藝術治療課程。"
+    },
+    {
+      "id": "b2-u36-l01-q10",
+      "type": "shadowing",
+      "sentenceEn": "My cousin works as a physical therapist at a sports center.",
+      "sentenceZh": "我表哥在一間運動中心當物理治療師。"
+    },
+    {
+      "id": "b2-u36-l01-q11",
+      "type": "mcq",
+      "stemEn": "The ____ must be kept cold, so the truck that carries it has a fridge.",
+      "stemZh": "疫苗必須冷藏，所以運送疫苗的卡車有冰箱。",
+      "options": [
+        "pharmacist",
+        "therapist",
+        "physician",
+        "vaccine"
+      ],
+      "optionGlossZh": [
+        "藥師",
+        "治療師",
+        "醫師",
+        "疫苗"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b2-u36-l01-q12",
+      "type": "mcq",
+      "stemEn": "Last winter, about two hundred people in our town were ____ because of the flu.",
+      "stemZh": "去年冬天，我們鎮上約有兩百人因流感住院。",
+      "options": [
+        "exhibited",
+        "hospitalized",
+        "unloaded",
+        "therapy"
+      ],
+      "optionGlossZh": [
+        "展出",
+        "住院",
+        "卸下",
+        "治療"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b2-u36-l01-q13",
+      "type": "reading",
+      "passageEn": "When Amy was twelve, her grandmother was hospitalized after a fall. Amy visited her every day and watched the hospital staff at work. The physician checked her grandmother each morning, and a pharmacist explained her medicine to the family. But Amy was most interested in the therapist who helped her grandmother walk again. The therapy took three months, and it was slow and tiring, but the therapist always made the exercises entertaining. Today, Amy is studying to become a therapist herself. Last week, her class visited a lab where scientists are developing a new vaccine, and Amy said it was the most interesting day of the year.",
+      "passageZh": "Amy 十二歲時，奶奶跌倒後住進了醫院。Amy 每天去看她，觀察醫院的工作人員工作。醫師每天早上幫奶奶檢查，藥師向家人說明她的用藥。但 Amy 最感興趣的，是幫助奶奶重新走路的治療師。治療花了三個月，過程緩慢又累人，但治療師總能讓那些運動變得很有趣。如今，Amy 正在讀書，準備自己也成為一名治療師。上週，她的班級參觀了一間科學家正在研發新疫苗的實驗室，Amy 說那是她今年最有趣的一天。",
+      "questions": [
+        {
+          "questionZh": "治療師怎麼讓治療比較輕鬆？",
+          "options": [
+            "讓運動變得有趣",
+            "每天只做五分鐘的運動",
+            "讓奶奶在家自己做運動",
+            "請家人一起陪奶奶運動"
+          ],
+          "answer": 0
+        },
+        {
+          "questionZh": "上週 Amy 的班級去了哪裡？",
+          "options": [
+            "城裡最大的一間藥局",
+            "奶奶以前住的那家醫院",
+            "研發疫苗的實驗室",
+            "一所有名的護理學校"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q14",
+      "type": "translate",
+      "promptZh": "她的父親是一位在鄉下行醫三十年的醫師。",
+      "hintWords": [
+        "physician"
+      ],
+      "referenceEn": [
+        "Her father is a physician who has worked in the countryside for thirty years.",
+        "Her father has been a physician in the countryside for thirty years."
+      ],
+      "rubricZh": [
+        "「醫師」可寫，例如 physician、doctor 等",
+        "持續到現在的事，時態配合內容（例如 has worked、has been 等）"
+      ]
+    },
+    {
+      "id": "b2-u36-l01-q15",
+      "type": "makeSentence",
+      "targetWord": "pharmacist",
+      "instructionZh": "用 pharmacist 造一個句子，說說你家或公司附近的一位藥師。",
+      "referenceEn": [
+        "The pharmacist near my home opens her shop at seven every morning.",
+        "There is a friendly pharmacist at the shop next to my office."
+      ],
+      "rubricZh": [
+        "句子要用到 pharmacist",
+        "時態配合內容（例如 remembers、is 等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:55:00Z",
+    "verdicts": {
+      "b2-u36-l01-q08": [
+        1
+      ],
+      "b2-u36-l01-q11": [
+        3
+      ],
+      "b2-u36-l01-q12": [
+        1
+      ],
+      "b2-u36-l01-q13#0": [
+        0
+      ],
+      "b2-u36-l01-q13#1": [
+        2
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 8：避免意外傷病情境",
+        "resolution": "改前：\"He had six months of speech therapy after the accident.\"；改後：\"He goes to speech therapy every Tuesday after school.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 8：避免意外傷病情境",
+        "resolution": "改前：\"那次意外之後，他做了六個月的語言治療。\"；改後：\"他每週二放學後去上語言治療課。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/3/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 10：卡與跟讀同在講治療師在哪工作；最終複審 FIX #12：卡和閱讀同為讀書成為治療師，改成好治療師的樣子",
+        "resolution": "改前：\"Therapists often work in schools as well as hospitals.\"；改後：\"A good therapist listens carefully and never laughs at your problems.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/3/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 10：卡與跟讀同在講治療師在哪工作；最終複審 FIX #12：卡和閱讀同為讀書成為治療師，改成好治療師的樣子",
+        "resolution": "改前：\"治療師除了在醫院，也常在學校工作。\"；改後：\"好的治療師會仔細傾聽，從不嘲笑你的問題。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/5/exampleEn",
+        "message": "執行長第②③關裁示修正：最終複審 FIX #13：卡和聽選同為有人住院→活動取消或改期，改卡",
+        "resolution": "改前：\"The singer was hospitalized and had to cancel her concert.\"；改後：\"Most patients who are hospitalized here stay for less than three days.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/5/exampleZh",
+        "message": "執行長第②③關裁示修正：最終複審 FIX #13：卡和聽選同為有人住院→活動取消或改期，改卡",
+        "resolution": "改前：\"那位歌手住院了，只好取消演唱會。\"；改後：\"在這裡住院的病人大多住不到三天。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/audioEn",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"My grandfather was hospitalized for a week, but he is back home now and feeling fine.\"；改後：\"Our manager was hospitalized for two days, so the meeting has been moved to next Monday.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/audioZh",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"我爺爺住院一個星期，不過他現在已經回家，感覺很好。\"；改後：\"我們經理住院兩天，所以會議改到下星期一。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/questionZh",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"說話者的爺爺現在怎麼樣？\"；改後：\"會議為什麼改期？\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/options/0",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"Still staying in the hospital\"；改後：\"The manager was on a trip abroad\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/options/1",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"Home and feeling well\"；改後：\"The manager was in hospital\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/options/2",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"Moving to a new city\"；改後：\"The room was being cleaned\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/options/3",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）；原音檔「爺爺住院」與閱讀「奶奶住院」同事件，改寫（第③關 FIX）",
+        "resolution": "改前：\"Living abroad\"；改後：\"Too many people were away\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/10/stemEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 9：mcq 與閱讀同為科學家研發疫苗；用語",
+        "resolution": "改前：\"Scientists are working on a new ____ against the flu.\"；改後：\"The ____ must be kept cold, so the truck that carries it has a fridge.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/10/stemZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 9：mcq 與閱讀同為科學家研發疫苗；用語",
+        "resolution": "改前：\"科學家正在研發一種新的流感疫苗。\"；改後：\"疫苗必須冷藏，所以運送疫苗的卡車有冰箱。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/11/stemEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 8：避免車禍情境；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：mcq 與閱讀同為家人住院",
+        "resolution": "改前：\"After the car accident, the driver was ____ for three days.\"；改後：\"Last winter, about two hundred people in our town were ____ because of the flu.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/11/stemZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 8：避免車禍情境；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：mcq 與閱讀同為家人住院",
+        "resolution": "改前：\"車禍之後，那位司機住院了三天。\"；改後：\"去年冬天，我們鎮上約有兩百人因流感住院。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/referenceEn/0",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽打同為藥師認識大家",
+        "resolution": "改前：\"The pharmacist near my home always remembers my name.\"；改後：\"The pharmacist near my home opens her shop at seven every morning.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽打同為藥師認識大家",
+        "resolution": "改前：\"時態配合內容（例如 remembers、is）\"；改後：\"時態配合內容（例如 remembers、is 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      }
+    ]
+  }
+}

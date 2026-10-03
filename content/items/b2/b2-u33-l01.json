@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-u33-l01",
+  "level": "B2",
+  "promptVersion": "claude-dev.gen-lesson.v3",
+  "model": "claude-dev",
+  "author": "claude-dev",
+  "authoredAt": "2026-10-03T00:24:30Z",
+  "properNouns": [
+    "Tainan",
+    "Germany"
+  ],
+  "items": [
+    {
+      "id": "b2-u33-l01-q01",
+      "type": "wordCard",
+      "word": "recipe",
+      "exampleEn": "I followed the recipe exactly, but the cake still failed.",
+      "exampleZh": "我完全照著食譜做，蛋糕還是失敗了。",
+      "glossZh": "食譜；秘訣",
+      "distractorsZh": [
+        "菜單",
+        "收據",
+        "帳單"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q02",
+      "type": "wordCard",
+      "word": "hospitality",
+      "exampleEn": "The villagers showed us great hospitality and invited us for dinner.",
+      "exampleZh": "村民熱情款待我們，還邀我們吃晚餐。",
+      "glossZh": "熱情款待；餐旅（業）",
+      "distractorsZh": [
+        "冷漠",
+        "競爭",
+        "懷疑"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q03",
+      "type": "wordCard",
+      "word": "cocktail",
+      "exampleEn": "This cocktail is made with orange juice and lemon.",
+      "exampleZh": "這杯雞尾酒是用柳橙汁和檸檬調成的。",
+      "glossZh": "雞尾酒；雞尾酒會",
+      "distractorsZh": [
+        "果汁",
+        "咖啡",
+        "礦泉水"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q04",
+      "type": "wordCard",
+      "word": "bartender",
+      "exampleEn": "Working as a bartender, he often finishes work at three a.m.",
+      "exampleZh": "他當調酒師，常常凌晨三點才下班。",
+      "glossZh": "調酒師；酒保",
+      "distractorsZh": [
+        "廚師",
+        "收銀員",
+        "清潔工"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q05",
+      "type": "wordCard",
+      "word": "nightclub",
+      "exampleEn": "My aunt met my uncle at a nightclub thirty years ago.",
+      "exampleZh": "我阿姨三十年前在一家夜店認識了我姨丈。",
+      "glossZh": "夜店；夜總會",
+      "distractorsZh": [
+        "圖書館",
+        "健身房",
+        "早餐店"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q06",
+      "type": "wordCard",
+      "word": "brewery",
+      "exampleEn": "The brewery offers tours where visitors can see how beer is made.",
+      "exampleZh": "那家啤酒廠提供導覽，讓參觀者看看啤酒是怎麼釀的。",
+      "glossZh": "啤酒廠；釀酒廠",
+      "distractorsZh": [
+        "麵包店",
+        "造紙廠",
+        "發電廠"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q07",
+      "type": "wordCard",
+      "word": "catering",
+      "exampleEn": "The school's catering staff prepare eight hundred lunches a day.",
+      "exampleZh": "學校的餐飲人員每天準備八百份午餐。",
+      "glossZh": "外燴；餐飲承辦",
+      "distractorsZh": [
+        "清潔服務",
+        "搬家服務",
+        "洗衣服務"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q08",
+      "type": "listenType",
+      "sentenceEn": "Many hospitality workers have to work on holidays.",
+      "sentenceZh": "很多餐旅業的工作人員假日都得上班。"
+    },
+    {
+      "id": "b2-u33-l01-q09",
+      "type": "listenChoice",
+      "audioEn": "The catering company will bring lunch for fifty people to the meeting room at noon.",
+      "audioZh": "外燴公司中午會送五十人份的午餐到會議室。",
+      "questionZh": "外燴公司中午會做什麼？",
+      "options": [
+        "Deliver food for a large group",
+        "Set up a coffee bar in the meeting room",
+        "Cook dinner for fifty",
+        "Clean the kitchen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b2-u33-l01-q10",
+      "type": "shadowing",
+      "sentenceEn": "The bartender has worked at this hotel for twenty years.",
+      "sentenceZh": "那位調酒師已經在這家飯店工作了二十年。"
+    },
+    {
+      "id": "b2-u33-l01-q11",
+      "type": "shadowing",
+      "sentenceEn": "This recipe for pineapple cake uses very little sugar.",
+      "sentenceZh": "這份鳳梨酥食譜只用很少的糖。"
+    },
+    {
+      "id": "b2-u33-l01-q12",
+      "type": "mcq",
+      "stemEn": "The concert hall has its own ____ service for parties after the show.",
+      "stemZh": "那座音樂廳有自己的外燴服務，供演出後的派對使用。",
+      "options": [
+        "recipe",
+        "brewery",
+        "nightclub",
+        "catering"
+      ],
+      "optionGlossZh": [
+        "食譜",
+        "釀酒廠",
+        "夜店",
+        "外燴"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b2-u33-l01-q13",
+      "type": "mcq",
+      "stemEn": "She studied ____ management and now runs a hotel by the sea.",
+      "stemZh": "她讀的是餐旅管理，現在在海邊經營一家飯店。",
+      "options": [
+        "bartender",
+        "cocktail",
+        "hospitality",
+        "lucrative"
+      ],
+      "optionGlossZh": [
+        "調酒師",
+        "雞尾酒",
+        "餐旅",
+        "賺錢的"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b2-u33-l01-q14",
+      "type": "reading",
+      "passageEn": "Last weekend, my cousin held her wedding party at an old brewery that has been turned into a restaurant. The owners are famous for their hospitality: every guest was welcomed at the door with a smile. A catering team cooked dishes from my grandmother's recipes, which my cousin had sent them a month before. Near the windows, a young bartender made colorful cocktails, and he also had fruit drinks for the children. After dinner, some of my cousin's friends wanted to go to a nightclub, but most guests stayed and danced in the garden. The restaurant gets its vegetables from a local supplier, so everything felt fresh.",
+      "passageZh": "上週末，我表姊在一座改建成餐廳的老釀酒廠舉辦婚宴。老闆們以熱情款待聞名：每位賓客一到門口都受到笑臉迎接。外燴團隊照著我奶奶的食譜做菜，那些食譜是表姊一個月前寄給他們的。窗邊有一位年輕的調酒師調出繽紛的雞尾酒，也為孩子們準備了果汁飲料。晚餐後，表姊有些朋友想去夜店，但大部分賓客都留下來在花園裡跳舞。這家餐廳向當地的供應商購買蔬菜，所以每樣東西都很新鮮。",
+      "questions": [
+        {
+          "questionZh": "外燴團隊做的菜有什麼特別？",
+          "options": [
+            "全部都是素食",
+            "照著奶奶的食譜做的",
+            "用進口的食材",
+            "由新郎親手做"
+          ],
+          "answer": 1
+        },
+        {
+          "questionZh": "晚餐後大部分賓客做了什麼？",
+          "options": [
+            "喝雞尾酒",
+            "回家休息",
+            "去夜店玩",
+            "留在花園裡跳舞"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q15",
+      "type": "translate",
+      "promptZh": "你可以把這道湯的食譜寄給我嗎？",
+      "hintWords": [
+        "recipe"
+      ],
+      "referenceEn": [
+        "Could you send me the recipe for this soup?",
+        "Can you send me this soup's recipe?"
+      ],
+      "rubricZh": [
+        "「食譜」可寫，例如 recipe 等",
+        "recipe 的用法，例如 the recipe for this soup 等",
+        "請求句（例如 Could you…?、Can you…? 等）"
+      ]
+    },
+    {
+      "id": "b2-u33-l01-q16",
+      "type": "makeSentence",
+      "targetWord": "brewery",
+      "instructionZh": "用 brewery 造一個句子，說說你參觀過或聽說過的一家釀酒廠。",
+      "referenceEn": [
+        "I once visited an old brewery in Germany with my friends.",
+        "There is a small brewery in my town that makes beer from local rice."
+      ],
+      "rubricZh": [
+        "句子要用到 brewery",
+        "時態配合內容（例如 visited、makes 等）"
+      ]
+    }
+  ],
+  "judge": {
+    "judgedBy": "claude-reviewer",
+    "reviewedAt": "2026-10-02T22:55:00Z",
+    "verdicts": {
+      "b2-u33-l01-q09": [
+        0
+      ],
+      "b2-u33-l01-q12": [
+        3
+      ],
+      "b2-u33-l01-q13": [
+        2
+      ],
+      "b2-u33-l01-q14#0": [
+        1
+      ],
+      "b2-u33-l01-q14#1": [
+        3
+      ]
+    },
+    "glossVerdicts": {},
+    "issues": [],
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/2/exampleEn",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 3：例句是 cocktail party（第二義）",
+        "resolution": "改前：\"The hotel holds a cocktail party for new guests every Friday.\"；改後：\"This cocktail is made with orange juice and lemon.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/2/exampleZh",
+        "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 3：例句是 cocktail party（第二義）",
+        "resolution": "改前：\"飯店每週五都會為新房客舉辦雞尾酒會。\"；改後：\"這杯雞尾酒是用柳橙汁和檸檬調成的。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/sentenceEn",
+        "message": "執行長第②③關裁示修正：情境表逐列人工重判：單字卡與他題事件類型相同，改寫卡例句（b1b4／b2cd1 裁示）：卡與聽打同為「旅途中受到熱情款待」；最終複審 FIX #9：聽打和閱讀同為店家以熱情款待聞名，改成餐旅業員工假日上班",
+        "resolution": "改前：\"Thank you for your warm hospitality during our visit to Tainan.\"；改後：\"Many hospitality workers have to work on holidays.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/7/sentenceZh",
+        "message": "執行長第②③關裁示修正：情境表逐列人工重判：單字卡與他題事件類型相同，改寫卡例句（b1b4／b2cd1 裁示）：卡與聽打同為「旅途中受到熱情款待」；最終複審 FIX #9：聽打和閱讀同為店家以熱情款待聞名，改成餐旅業員工假日上班",
+        "resolution": "改前：\"謝謝你們在我們到台南期間的熱情款待。\"；改後：\"很多餐旅業的工作人員假日都得上班。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/8/options/0",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Bring lunch for fifty people\"；改後：\"Deliver food for a large group\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/8/options/1",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Set up a coffee bar in the lobby\"；改後：\"Set up a coffee bar in the meeting room\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/8/options/2",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Clean the kitchen\"；改後：\"Cook dinner for fifty\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/8/options/3",
+        "message": "執行長第②③關裁示修正：聽選正解不可照抄音檔：正解換說法、干擾項沿用音檔字詞（b2cd1 裁示）",
+        "resolution": "改前：\"Cook a dinner\"；改後：\"Clean the kitchen\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/sentenceEn",
+        "message": "執行長第②③關裁示修正：同課兩題情境重複（第③關同課重複表）：跟讀與閱讀同為調酒師調無酒精果汁",
+        "resolution": "改前：\"The bartender made me a fruit drink without any alcohol.\"；改後：\"The bartender has worked at this hotel for twenty years.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/9/sentenceZh",
+        "message": "執行長第②③關裁示修正：同課兩題情境重複（第③關同課重複表）：跟讀與閱讀同為調酒師調無酒精果汁",
+        "resolution": "改前：\"調酒師幫我調了一杯不含酒精的果汁飲料。\"；改後：\"那位調酒師已經在這家飯店工作了二十年。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/10/sentenceEn",
+        "message": "執行長第②③關裁示修正：同課兩題情境重複（第③關同課重複表）：跟讀與閱讀同為奶奶的食譜",
+        "resolution": "改前：\"My grandmother's recipe for pineapple cake is a family secret.\"；改後：\"This recipe for pineapple cake uses very little sugar.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/10/sentenceZh",
+        "message": "執行長第②③關裁示修正：同課兩題情境重複（第③關同課重複表）：跟讀與閱讀同為奶奶的食譜",
+        "resolution": "改前：\"我奶奶的鳳梨酥食譜是家族祕密。\"；改後：\"這份鳳梨酥食譜只用很少的糖。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/11/stemEn",
+        "message": "執行長第②③關裁示修正：同課兩題情境重複（第③關同課重複表）：mcq 與閱讀同為婚宴請外燴；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：mcq 與聽選同為公司會議請外燴",
+        "resolution": "改前：\"The company hired a ____ service to provide food for the wedding.\"；改後：\"The concert hall has its own ____ service for parties after the show.\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/11/stemZh",
+        "message": "執行長第②③關裁示修正：同課兩題情境重複（第③關同課重複表）：mcq 與閱讀同為婚宴請外燴；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：mcq 與聽選同為公司會議請外燴",
+        "resolution": "改前：\"那家公司請了外燴服務來提供婚禮的餐點。\"；改後：\"那座音樂廳有自己的外燴服務，供演出後的派對使用。\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
+        "resolution": "改前：\"常見搭配（例如 the recipe for this soup 等）\"；改後：\"recipe 的用法，例如 the recipe for this soup 等\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15/rubricZh/1",
+        "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
+        "resolution": "改前：\"時態配合內容（例如 visited、makes）\"；改後：\"時態配合內容（例如 visited、makes 等）\"",
+        "resolvedAt": "2026-10-03T01:02:23Z"
+      }
+    ]
+  }
+}
