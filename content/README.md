@@ -13,7 +13,8 @@ LinguaApp 的課程結構（級距 → 主題單元 → 小課）、題庫 JSON�
 
 題庫與課程資料的授權**和程式碼分開**：
 
-- 題庫 JSON（`items/`）：**CC BY-SA 4.0**——衍生自 CC BY-SA 單字表（Octanove C1/C2、TSL／NGSL）；題目由開發端撰寫。
+- 題庫 JSON（`items/`）的題目文字（例句、選項、短文、翻譯、評分要點）：由開發端撰寫，採 **CC BY-SA 4.0**。
+- 選字與分級依據的來源不在上述 CC BY-SA 4.0 範圍內，各依原授權：CEFR-J（CEFR-J 條款，不是 CC BY-SA）；Octanove、TSL、NGSL（CC BY-SA 4.0）；ECDICT（MIT）。條款與引用格式見 `data/LICENSES.md`。
 - 課綱與分級測驗題本（`curriculum/`、`placement/`）：依 `data/LICENSES.md` 各來源條款（CEFR-J 衍生級距適用 CEFR-J 條款，不是 CC BY-SA）。
 - 程式碼（`schema/`、`scripts/`、`test/`）：AGPL-3.0，同 repo 根 `LICENSE`。
 
@@ -21,11 +22,11 @@ LinguaApp 的課程結構（級距 → 主題單元 → 小課）、題庫 JSON�
 
 ## 出處標示
 
-轉用或改作題庫時，請依 CC BY-SA 4.0 標示：
+轉用或改作題庫的題目文字時，請依 CC BY-SA 4.0 標示：
 
-> LinguaApp 題庫，CC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/）。單字級距與清單出處見 LinguaApp `NOTICE` 與 `data/LICENSES.md`。
+> LinguaApp 題庫題目文字，CC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/）。選字與分級依據的來源各依原授權，見 LinguaApp `NOTICE` 與 `data/LICENSES.md`。
 
-並以相同授權釋出改作內容；原單字表的引用格式（CEFR-J、Octanove、TSL、NGSL、ECDICT）照 `data/LICENSES.md` 保留。
+並以相同授權釋出改作的題目文字。選字與分級依據的來源（CEFR-J、Octanove、TSL、NGSL、ECDICT）依各自的原授權處理，引用格式照 `data/LICENSES.md` 保留。
 
 ## 檢查
 

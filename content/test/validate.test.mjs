@@ -127,6 +127,16 @@ test('MISSING_WORD：C2 字（ubiquitous、esoteric）與 light 的 B1 動詞不
   assert.deepEqual(run(load()), []);
 });
 
+test('EXCLUDED_WORD：課綱排除字被排進小課要報錯；拿掉後也不報 MISSING_WORD', () => {
+  const d = load();
+  const opts = { exclude: ['monday'] };
+  const errors = validateCurriculum([d.a1, d.a2], d.lexicon, d.topics, opts);
+  assert.deepEqual(errors.map((e) => e.code), ['EXCLUDED_WORD']);
+  assert.match(errors[0].message, /monday/);
+  d.a1.units[0].lessons[0].words = d.a1.units[0].lessons[0].words.filter((w) => w !== 'monday');
+  assert.deepEqual(validateCurriculum([d.a1, d.a2], d.lexicon, d.topics, opts), []);
+});
+
 test('validateTopics：主題 id 重複、級距引用未定義主題、缺 C1', () => {
   const t = fixture('valid/topics.json');
   t.topics.push({ ...t.topics[0] });

@@ -7,8 +7,11 @@
 // 4. 單元順序：先排每個主題的第一個單元（依 topics.json 該級主題順序），再排各主題的第二個單元，依此類推；
 //    高頻、多益常考字因此集中在每級前段。
 // 5. ID 依最終順序編號：單元 a1-u01、小課 a1-u01-l01。
+// 6. 課綱排除字（offensive.mjs 的 CURRICULUM_EXCLUDED_WORDS）照常參與排序與切課，切好後才從所在小課剔除；
+//    只有含排除字的那課少字，其他字不跨課位移。
 
 import { headwordInfo } from './lexicon.mjs';
+import { CURRICULUM_EXCLUDED_WORDS } from './offensive.mjs';
 import { LEVELS, UNIT_MAX_LESSONS, lessonCount } from './rules.mjs';
 
 const PART_NUMERALS = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
@@ -40,7 +43,8 @@ function compareWords(info) {
   };
 }
 
-export function allocate(wordTopics, lexicon, topics) {
+export function allocate(wordTopics, lexicon, topics, { exclude = CURRICULUM_EXCLUDED_WORDS } = {}) {
+  const excluded = new Set(exclude);
   const info = headwordInfo(lexicon);
   const titles = new Map(topics.topics.map((t) => [t.id, t.titleZh]));
   const byOrder = compareWords(info);
@@ -74,7 +78,7 @@ export function allocate(wordTopics, lexicon, topics) {
         id: unitId,
         topic: p.topic,
         titleZh: p.total > 1 ? `${titles.get(p.topic)}（${PART_NUMERALS[p.part]}）` : titles.get(p.topic),
-        lessons: p.lessons.map((words, li) => ({ id: `${unitId}-l${pad(li + 1)}`, words })),
+        lessons: p.lessons.map((words, li) => ({ id: `${unitId}-l${pad(li + 1)}`, words: words.filter((w) => !excluded.has(w)) })),
       };
     });
     return { schemaVersion: 1, level, units };

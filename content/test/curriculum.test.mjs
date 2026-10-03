@@ -23,3 +23,8 @@ test('A1–C1 級距檔 validator 全綠', () => {
 test('已提交的級距檔＝排課器現在的產出（改了分類或 lexicon 就要重跑 build-curriculum）', () => {
   assert.deepEqual(allocate(wordTopics, lexicon, topics), levels);
 });
+
+test('創辦人裁示（2026-10-03）：gook、retard 移出課綱，不在任何級距檔', () => {
+  const placed = levels.flatMap((d) => d.units.flatMap((u) => u.lessons.flatMap((l) => l.words)));
+  assert.deepEqual(placed.filter((w) => w === 'gook' || w === 'retard'), []);
+});

@@ -4,6 +4,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { allocate } from '../scripts/lib/allocate.mjs';
+import { CURRICULUM_EXCLUDED_WORDS } from '../scripts/lib/offensive.mjs';
 import { curriculumStats } from '../scripts/lib/stats.mjs';
 import { validateCurriculum, validateWordTopics } from '../scripts/lib/validate.mjs';
 
@@ -184,4 +185,18 @@ test('統計：每級規模、多益常考字覆蓋（排在 A1／B1、僅 C2、
   // C2 詞條 3 筆（rare、lofty、b07#adj）涉及 3 字；rare、lofty 全為 C2 → 排除 2；b07 有 B1 詞性 → 隨 B1 排入
   assert.deepEqual(stats.c2, { entries: 3, headwords: 3, headwordsExcluded: 2, headwordsPlacedLower: 1 });
   assert.deepEqual(stats.caseMerges, ['May／may']);
+});
+
+test('課綱排除字（創辦人裁示 2026-10-03）：排課照常佔位、產出時剔除——只有含排除字的課少一字，其他課不位移', () => {
+  const lexicon = words('a', 16);
+  const byTopic = { alpha: lexicon.map((e) => e.headword) };
+  const doc = allocate({ schemaVersion: 1, levels: { A1: byTopic } }, lexicon, topicsFor(), { exclude: ['a03'] })[0];
+  assert.deepEqual(doc.units[0].lessons.map((l) => l.words), [
+    ['a01', 'a02', 'a04', 'a05', 'a06', 'a07', 'a08'],
+    ['a09', 'a10', 'a11', 'a12', 'a13', 'a14', 'a15', 'a16'],
+  ]);
+});
+
+test('課綱排除字：預設清單＝gook、retard', () => {
+  assert.deepEqual(CURRICULUM_EXCLUDED_WORDS, ['gook', 'retard']);
 });

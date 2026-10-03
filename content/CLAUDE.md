@@ -7,10 +7,10 @@
 | 路徑 | 授權 |
 |---|---|
 | `schema/`、`scripts/`、`test/` | AGPL-3.0（程式碼，同 repo 根 `LICENSE`） |
-| `items/`（題庫 JSON） | 一律 **CC BY-SA 4.0**（同 repo 根 `NOTICE` 與 `content/README.md`） |
+| `items/`（題庫 JSON） | 題目文字（例句、選項、短文、翻譯、評分要點）由開發端撰寫，採 **CC BY-SA 4.0**；選字與分級依據的來源不在此範圍，各依原授權（見 `data/LICENSES.md`）（同 repo 根 `NOTICE` 與 `content/README.md`） |
 | `curriculum/*.json`、`curriculum/STATS.md`、`placement/placement.json`（課綱與分級題本） | 衍生自 lexicon 的級距與多益旗標，**依 `data/LICENSES.md` 各來源條款**（CEFR-J 衍生級距適用 CEFR-J 條款、不是 CC BY-SA；Octanove、TSL／NGSL 為 CC BY-SA 4.0） |
 
-不要把課綱資料寫死成單一授權；整體授權表述待創辦人裁示後以 `data/LICENSES.md` 為準。
+不要把課綱資料寫死成單一授權；整體授權表述已裁（2026-10-03）：題目文字採 CC BY-SA 4.0，選字與分級依據的來源各依原授權，以 `data/LICENSES.md` 為準。
 
 ## 檔案
 
@@ -30,7 +30,7 @@
 | `scripts/validate-curriculum.mjs` | 只檢查現有級距檔 | — |
 | `placement/placement.json` | 分級測驗題本（TASK-17）：A1–C1 各 30 個候選真字＋200 個假字池 | **產生，勿手改** |
 | `scripts/lib/pseudoword.mjs` | 假字產生器（參考 Wuggy 方法自己實作，規則見檔頭與 `docs/verification/2026-10-02-task17-placement-evidence/proposal.md` §4） | 人 |
-| `scripts/lib/offensive.mjs` | 分級測驗排除字：真字的冒犯／粗俗字名單（整字）、假字的不雅字串（子字串）；自訂名單、附分類理由 | 人 |
+| `scripts/lib/offensive.mjs` | 分級測驗排除字：真字的冒犯／粗俗字名單（整字）、假字的不雅字串（子字串）；自訂名單、附分類理由。另有課綱排除字 `CURRICULUM_EXCLUDED_WORDS`（創辦人裁示 2026-10-03：gook、retard） | 人 |
 | `scripts/lib/placement.mjs` | 題本組裝 `buildPlacement(lexicon, dictWords)`、讀 ECDICT 切片 `loadDictWords` | 人 |
 | `scripts/build-placement.mjs` | 產生 `placement/placement.json` | — |
 | `eval/llm-eval-set.json` | TASK-15 批改模型評測題組（40 句錯句＋必修錯誤點） | 人 |
@@ -43,6 +43,7 @@
 - 排課：同主題內多益常考字優先、再依詞頻（ECDICT frq）高到低；每主題切成每課 6–10 字；超過 10 課的主題拆成多個單元（標題加（一）（二））；每級先排各主題第一單元，再排第二單元。
 - **ID 上線後凍結**：單元 `a1-u01`、小課 `a1-u01-l03` 由排序位置產生，改分類或主題順序會讓 ID 對應的內容位移。上線（有使用者進度）後若要改課綱，必須另訂遷移方式，不可直接重排。
 - 每個主題在某級的字數必須切得出合法小課：不能是 1–5 或 11 字（`TOPIC_SIZE`）。
+- **課綱排除字**（`offensive.mjs` 的 `CURRICULUM_EXCLUDED_WORDS`）：仍留在 `word-topics.json` 佔位、照常參與排序與切課，切好後才從所在小課剔除——只有那課少一字，其他字不跨課位移。不排進小課，也不報 `MISSING_WORD`。
 
 ### validator 錯誤代碼
 
@@ -58,6 +59,7 @@
 | `LESSON_SIZE` | 小課字數不在 6–10 |
 | `MISSING_WORD` | A1–C1 有字沒被排課（或沒被分類）；少了整個級距檔或分類檔少一級也會報 |
 | `TOPIC_SIZE` | 分類檔中某主題字數切不出合法小課 |
+| `EXCLUDED_WORD` | 課綱排除字被排進小課 |
 
 ## 主題清單出處代碼（`sources`）
 

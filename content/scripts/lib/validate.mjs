@@ -4,6 +4,7 @@
 import { readFileSync } from 'node:fs';
 import Ajv2020 from 'ajv/dist/2020.js';
 import { headwordLevels } from './lexicon.mjs';
+import { CURRICULUM_EXCLUDED_WORDS } from './offensive.mjs';
 import { LESSON_MAX_WORDS, LESSON_MIN_WORDS, LEVELS, lessonCount } from './rules.mjs';
 
 const loadSchema = (name) =>
@@ -89,7 +90,9 @@ export function validateWordTopics(wordTopics, lexicon, topics) {
   return errors;
 }
 
-export function validateCurriculum(levels, lexicon, topics) {
+// exclude＝課綱排除字：不得排進小課，也不報 MISSING_WORD。
+export function validateCurriculum(levels, lexicon, topics, { exclude = CURRICULUM_EXCLUDED_WORDS } = {}) {
+  const excluded = new Set(exclude);
   const errors = [];
   levels.forEach((doc, i) => errors.push(...schemaErrors(checkLevelSchema, doc, `levels/${i}`)));
   errors.push(...validateTopics(topics));
@@ -146,6 +149,9 @@ export function validateCurriculum(levels, lexicon, topics) {
             return;
           }
           introducedAt.set(word, lesson.id);
+          if (excluded.has(word)) {
+            errors.push({ code: 'EXCLUDED_WORD', path: wordPath, message: `「${word}」是課綱排除字，不可排進小課` });
+          }
           const expected = wordLevel.get(word);
           if (expected === undefined) {
             errors.push({ code: 'UNKNOWN_WORD', path: wordPath, message: `「${word}」不是 lexicon 中有級距的 headword` });
@@ -162,7 +168,7 @@ export function validateCurriculum(levels, lexicon, topics) {
   });
 
   for (const [word, level] of wordLevel) {
-    if (LEVELS.includes(level) && !introducedAt.has(word)) {
+    if (LEVELS.includes(level) && !introducedAt.has(word) && !excluded.has(word)) {
       errors.push({ code: 'MISSING_WORD', path: level, message: `${level} 的「${word}」未被任何小課引入` });
     }
   }

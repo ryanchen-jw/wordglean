@@ -22,19 +22,6 @@
       ]
     },
     {
-      "id": "b2-u45-l05-q02",
-      "type": "wordCard",
-      "word": "gook",
-      "exampleEn": "There was some green gook at the bottom of the pond.",
-      "exampleZh": "池塘底部有一些綠色黏糊糊的髒東西。",
-      "glossZh": "黏稠物（另有種族歧視用法，切勿用來指人）",
-      "distractorsZh": [
-        "清澈的泉水",
-        "細小的沙粒",
-        "乾燥的落葉"
-      ]
-    },
-    {
       "id": "b2-u45-l05-q03",
       "type": "wordCard",
       "word": "skylark",
@@ -151,23 +138,23 @@
       "answer": 0
     },
     {
-      "id": "b2-u45-l05-q13",
+      "id": "b2-u45-l05-q17",
       "type": "mcq",
-      "stemEn": "After we cleaned out the old pipe, our hands were covered in black ____.",
-      "stemZh": "我們把那根舊水管清乾淨後，雙手沾滿了黑色黏糊糊的髒東西。",
+      "stemEn": "The ____ butterfly that landed on our flowers had orange, brown and black wings.",
+      "stemZh": "停在我們花上的那隻玳瑁花色蝴蝶，翅膀有橘、棕、黑三種顏色。",
       "options": [
-        "gook",
-        "glacis",
-        "tortoiseshell",
-        "sunbeam"
+        "sandstone",
+        "breezy",
+        "undersea",
+        "tortoiseshell"
       ],
       "optionGlossZh": [
-        "黏稠物",
-        "緩坡",
-        "玳瑁殼",
-        "一道陽光"
+        "砂岩",
+        "有微風的",
+        "海底的",
+        "玳瑁花色"
       ],
-      "answer": 0
+      "answer": 3
     },
     {
       "id": "b2-u45-l05-q14",
@@ -240,14 +227,14 @@
       "b2-u45-l05-q12": [
         0
       ],
-      "b2-u45-l05-q13": [
-        0
-      ],
       "b2-u45-l05-q14#0": [
         3
       ],
       "b2-u45-l05-q14#1": [
         0
+      ],
+      "b2-u45-l05-q17": [
+        3
       ]
     },
     "glossVerdicts": {},
@@ -318,6 +305,24 @@
         "message": "第②關 issue 結案：glacis 主要是築城術語（斜堤），用來描述天然岩石緩坡（a smooth glacis of rock slopes down to the beach）屬罕見用法，疑似不道地；建議例句改城堡斜堤情境（如聽打句那樣）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/4 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "創辦人裁示：移出課綱：gook 移出 B2 課綱，刪除其單字卡（索引為刪除前；本條起各紀錄的 items/N 以刪除後為準，先前紀錄以刪除前為準）",
+        "resolution": "刪除 b2-u45-l05-q02（wordCard）。改前：word \"gook\"、exampleEn \"There was some green gook at the bottom of the pond.\"、glossZh \"黏稠物（另有種族歧視用法，切勿用來指人）\"；改後：無",
+        "resolvedAt": "2026-10-03T05:50:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "創辦人裁示：移出課綱：刪除以 gook 為正解的 mcq（索引為刪除前）",
+        "resolution": "刪除 b2-u45-l05-q13。改前：stemEn \"After we cleaned out the old pipe, our hands were covered in black ____.\"、options [\"gook\",\"glacis\",\"tortoiseshell\",\"sunbeam\"]、answer 0；改後：無（判題結果一併刪除）",
+        "resolvedAt": "2026-10-03T05:50:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "創辦人裁示：移出課綱：題型配比 mcq 應為 2 題，以本課目標字 tortoiseshell 補 1 題（四選項皆可放進空格、只能靠詞義判斷；干擾項取本單元先前課的字）",
+        "resolution": "新增 b2-u45-l05-q17。改前：無；改後：stemEn \"The ____ butterfly that landed on our flowers had orange, brown and black wings.\"、options [\"sandstone\",\"breezy\",\"undersea\",\"tortoiseshell\"]、answer 3（sha256(題 id) 決定正解位置）",
+        "resolvedAt": "2026-10-03T05:50:00Z"
       }
     ]
   }

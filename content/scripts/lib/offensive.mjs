@@ -16,6 +16,10 @@ export const OFFENSIVE_WORDS = [
   'rape', 'suicide',
 ];
 
+// 課綱排除字（創辦人裁示 2026-10-03）：辱罵義遠比課綱所教的義項常見，不排進任何小課。
+// 排課器照常讓它們在 word-topics.json 佔位、產出時才剔除，其他字不因此跨課位移（見 allocate.mjs 規則 6）。
+export const CURRICULUM_EXCLUDED_WORDS = ['gook', 'retard'];
+
 // 假字（OFFENSIVE_SUBSTRINGS，子字串比對）：產生出的假字含這些字串即丟，避免拼出近似髒話的字
 export const OFFENSIVE_SUBSTRINGS = [
   'fuck', 'shit', 'cunt', 'nigg', 'fag', 'slut', 'whore', 'rape', 'porn', 'piss', 'cock', 'dick',
