@@ -1,14 +1,14 @@
 # TASK-1～23 驗證報告（2026-10-01 full-build）
 
 > 可再現：每個數字都附「重跑指令」。本檔隨各卡 squash-merge 逐段 append。
-> 最後整併：2026-10-03（台北），main HEAD `15661df`。事實來源：`.claude/daily-plan/sessions/acceptance-report-1001-full-build.html`（決策用 HTML）、各卡 backlog、git log；HTML 較舊之處以執行長 10-03 補充為準。
+> 最後整併：2026-10-03（台北），main HEAD 為 8f46cc7 之後的 docs commit（TASK-9 隔離複驗於 `8f46cc7` 執行）。事實來源：`.claude/daily-plan/sessions/acceptance-report-1001-full-build.html`（決策用 HTML）、各卡 backlog、git log；HTML 較舊之處以執行長 10-03 補充為準。
 
 ## TL;DR
 
-- 23 張卡：Done 18、In Review 1（TASK-15，只差 AC#4 免費模型評測）、題庫完成 1（TASK-9，984 課全數進 main、AC#1～#4 證據齊，待執行長勾卡）、未開工 3（TASK-21／22／23，等前置卡）。花費 $0。
-- 題庫 984 課、16,629 題全數進 main（A1 135、A2 158、B1 269、B2 304、C1 118）；全庫 `--require-judge` 全綠。**剔除 0 題**（0／16,629）；豁免 8 處（見 TASK-9 節）。題庫花費 $0，授權 CC BY-SA 4.0，隨機 40 題抽樣已附。
+- 23 張卡：Done 19（含 TASK-9，隔離複驗 PASS）、In Review 1（TASK-15，只差 AC#4 免費模型評測）、未開工 3（TASK-21／22／23，等前置卡）。花費 $0。
+- 題庫 984 課、16,629 題全數進 main（A1 135、A2 158、B1 269、B2 304、C1 118）；全庫 `--require-judge` 全綠。**剔除 0 題**（0／16,629）；豁免 8 處（見 TASK-9 節）。題庫花費 $0，授權 CC BY-SA 4.0，隨機 40 題抽樣已附。B1 聽選題 200 題改為「正解換句話說、干擾項沿用音檔字」（8f46cc7）；A1、A2 維持字面辨認。
 - 每張 Done 卡都經隔離驗收官實跑＋突變紅證；有 UI 的卡另有兩引擎走查。題庫走三關（盲審、課綱審查、最終複審）＋執行長親審，全部由 Claude 進行，沒有人類語言專家複核。
-- 全部 commit 只在本機 main，未 push、未部署（G7）。待創辦人裁示 1 項：B2 的 gook、retard 有辱罵義，目前只教中性義並加警語，是否移出課綱。
+- 全部 commit 只在本機 main，未 push、未部署（G7）。待創辦人裁示 2 項：①B2 的 gook、retard 有辱罵義，目前只教中性義並加警語，是否移出課綱；②課綱來源含 CEFR-J（不是 CC BY-SA），題庫整體標 CC BY-SA 4.0 的表述要不要維持。
 
 ## 總覽
 
@@ -22,7 +22,7 @@
 | TASK-6 | feat（單字資料管線） | Done | 2cc3f62／規格 22ed253 | data pytest 30/30（無原始檔模式 28＋2 skip）；重建 602 檔 sha256 0 差異；冷啟動最大 50.2ms；Oxford 守衛 4 種植入皆紅 | N/A |
 | TASK-7 | feat（課綱骨架） | Done | 5474515 | content 測試 41/41；validator 全綠；重建 sha256 一致；獨立重算重複／越界／漏排皆 0 | N/A |
 | TASK-8 | feat（題庫管線＋pilot） | Done | 11ec9d7 | pilot 16 課 274 題檢查器全綠；守衛突變皆紅 | N/A |
-| TASK-9 | content（題庫全量） | 全量進 main（AC 證據齊，待勾卡） | 837a688、61224a2、a201dd3、055c008、0461d4d、3901a67、9e10282、d4be088、541022a、15661df（App 端 a60f26b） | 984／984 課、16,629 題；三關審定；剔除 0 | 執行長親審（見 TASK-9 節） |
+| TASK-9 | content（題庫全量） | Done（隔離複驗 PASS） | 837a688、61224a2、a201dd3、055c008、0461d4d、3901a67、9e10282、d4be088、541022a、15661df、8f46cc7（App 端 a60f26b） | 984／984 課、16,629 題；三關審定；剔除 0；check-items 全綠、npm test 209/209 | 執行長親審（見 TASK-9 節） |
 | TASK-10 | feat（本機資料層＋FSRS） | Done | e4ee37f | vitest 40/40（預設、UTC、Asia/Taipei 三時區）；typecheck／lint／build 綠；4 突變皆紅 | N/A（無 UI） |
 | TASK-11 | feat（App 外殼） | Done | a407e8b | 單元 219–220、e2e 42–44 過 2 跳、e2e:sync 12/12；守衛突變皆紅 | 兩引擎；P0×2＋320 寬溢出已修 |
 | TASK-12 | feat（題型引擎＋讀類） | Done | 54301fc | e2e 68 過 2 略；引擎 5 種突變皆紅 | 兩引擎；第一輪 FAIL 後修正 |
@@ -233,7 +233,7 @@
 - **證據**：`docs/pending/2026-10-02-task15-openrouter/`（proposal、dry-run）
 - **重跑**：`cd app && npm test && npx playwright test --workers=1`
 
-## TASK-9 · 題庫全量產生——A1 至 C1（全量進 main）
+## TASK-9 · 題庫全量產生——A1 至 C1（Done）
 
 - **範圍**：課綱 984 課、16,629 題（A1 135 課 2,278 題、A2 158 課 2,663 題、B1 269 課 4,560 題、B2 304 課 5,153 題、C1 118 課 1,975 題），全部由開發端 Claude 撰寫。G5 授權執行長代審。
 - **984 課全數進 main**：
@@ -250,12 +250,15 @@
   | B2 u45～u53 | 71 | d4be088 |
   | B2 u25～u44 | 80 | 541022a |
   | 授權（NOTICE、content/README）與 40 題抽樣 | — | 15661df |
+  | B1 聽選換句話說補正（200 題 listenChoice 改選項） | — | 8f46cc7 |
 
   App 端配合：單字卡與複習卡作答選項只顯示第一義、去括號註記（a60f26b）。
 - **自動檢查**：全庫 984 課 `check-items --require-judge` 全綠；content `npm test` 209／209；單字卡第一義去重 7,773 張 0 重複（541022a）。
 - **花費**：$0。題庫流程不呼叫外部 LLM（0 次 OpenRouter），逐課逐輪記錄在帳本 `content/items/_runs/claude-dev-pilot.json`（984 課，每課含撰寫起訖與每輪檢查器錯誤數）。
 - **授權**：題庫 JSON（`content/items/`）一律 CC BY-SA 4.0，寫入 repo 根 `NOTICE` 與 `content/README.md`（15661df）；課綱與分級題本依 `data/LICENSES.md`。
 - **抽樣**：隨機 40 題（每級 8 題、八種題型各 1 題，固定種子）在 `docs/verification/2026-10-01-full-build-item-sample.md`。
+- **狀態**：Done。backlog TASK-9 已標 Done、AC 全勾。
+- **隔離複驗 verdict：PASS**（HEAD `8f46cc7`）——AC#1～#4 全部 ✅；984 課對應課綱、16,629 題、剔除 0；`check-items` 全綠、content `npm test` 209/209；40 題抽樣與現行 JSON 一致。
 - **AC 進度**：#1 全部小課有題目、自動檢查全綠、剔除 ≤1%——剔除 0（0／16,629）｜#2 花費 ≤ 上限、逐批記錄——$0，帳本如上｜#3 隨機抽 40 題——已附｜#4 授權寫入 NOTICE 與 content/README——已寫（15661df）。
 
 ### 每級三關結果
@@ -273,6 +276,9 @@
 | B2 u45～u53（71 課） | d4be088 | 235／120 題位，0 多解 | 第 1 批修 352 處、第 2 批修 240 處，全修 | 第 1 批追加修 49 處、第 2 批 FIX 11，全修；改動 46 題重新盲答全一致 | 4 課 |
 | C1 u01～u35（87 課） | 3901a67 | 240／195 題位，0 多解 | 64＋91＝155 條全修 | FIX 4／11，全修 | 7 課 |
 | C1 u36～u39（31 課） | 0461d4d | 155 題位 0 多解（另 50 條意見全修） | 27 條全修 | FIX 6，全修；改動 48＋2 題只看英文重新盲答全一致 | 3 課 |
+| B1 聽選換句話說補正（200 題） | 8f46cc7 | 三輪修正後，改動題只看英文重新盲答全一致 | 只改 listenChoice 選項：正解換句話說、干擾項沿用音檔字；音檔、題目、正解位置不動 | FIX 全修 | 3 課 |
+
+A1、A2 聽選維持字面辨認（初級聽辨適性），不在補正範圍。
 
 ### 剔除清單
 
@@ -318,7 +324,8 @@
   - a2-u26「常用動作（二）」
   - c1-u22 主題寫政府、政治、法律，實際是宗教字
 - 課綱誤植 1 處：C1 的 chauffer 應為 chauffeur。曾授權改課綱，但 lexicon 沒有 chauffeur、課綱測試擋下，已撤回；c1-u12-l02 照現況教（ECDICT「小型輕便爐」，註明舊式、罕用），之後在 data 層處理。
-- **待創辦人裁示**：B2 的 gook、retard 有辱罵義，目前只教中性義（黏稠物；動詞「延緩」）並在釋義加警語、不放進人物情境；是否從課綱移除待裁示（d4be088）。
+- **待創辦人裁示 ①**：B2 的 gook、retard 有辱罵義，目前只教中性義（黏稠物；動詞「延緩」）並在釋義加警語、不放進人物情境；是否從課綱移除待裁示（d4be088）。
+- **待創辦人裁示 ②**：題庫整體授權表述——課綱來源含 CEFR-J（不是 CC BY-SA），題庫整體標 CC BY-SA 4.0（15661df），是否維持。
 - referent：lexicon 只標名詞，題目只教名詞（形容詞用法極少見，屬課綱層面）。
 - wornout：lexicon 的 headword 寫成 wornout，單字卡保留 headword，例句與其他題寫 worn out，釋義註明「應寫 worn out」；lexicon 不動（data 層備查）。
 - zh-guard 豁免累計 51 詞（`content/scripts/lib/zh-guard.mjs` 的 `TWP_ACCEPTED`；TASK-9 前 13 詞，TASK-9 期間新增 38 詞，B1、B2 新增者各附先紅後綠測試）。這些是 opencc 會改寫、但台灣本來就通行的寫法；其餘誤擋一律改寫迴避、沒有加豁免。豁免清單是否收斂移交 TASK-22。
