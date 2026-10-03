@@ -41,6 +41,18 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
   使用範圍：data/dict/（音標、釋義、詞形對照）與 lexicon 的 freqRank、glossZh
   修改：中文釋義經 OpenCC s2twp 轉台灣正體（少數誤轉詞以 data/scripts/zh_fixups.tsv 修正）並截斷；丟棄 oxford、collins、tag 等欄；未使用 lemma.en.txt
 
+== content/（題庫與課程）==
+
+- 題庫 JSON（content/items/）
+  授權：CC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/），因衍生自下列 CC BY-SA 單字表
+  衍生來源：每課的生字與級距取自課綱（content/curriculum/），課綱由 data/lexicon/lexicon.json 排課產生——
+            級距來自 CEFR-J Wordlist 1.5（CEFR-J 條款，非 CC BY-SA）與 Octanove C1/C2（CC BY-SA 4.0），
+            多益常考字旗標來自 TSL 1.2（CC BY-SA 4.0），NGSL 1.2 旗標（CC BY-SA 4.0）同在 lexicon 中；
+            出題時提供給撰寫端的釋義參考取自 ECDICT（MIT）。各來源引用格式見上節與 data/LICENSES.md
+  撰寫：題目（例句、選項、短文、中文翻譯、評分重點）由開發端撰寫（各課檔的 author 欄），非取自上列來源
+- 課綱與分級測驗題本（content/curriculum/、content/placement/）依 data/LICENSES.md 各來源條款（見 content/CLAUDE.md「授權分界」）
+- 程式碼（app/、content/scripts/、content/schema/、content/test/ 等）仍為 AGPL-3.0（見 LICENSE）
+
 == 移植的程式碼 ==
 
 - LibreLingo answer-corrector（AGPL-3.0-or-later），Copyright LibreLingo contributors
