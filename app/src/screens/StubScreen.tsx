@@ -1,4 +1,4 @@
-// 尚未開放的目的地（小課、複習、分級測驗、授權頁）：TASK-17／18／21 接上前的暫時頁
+// 尚未開放的目的地（小課、複習、分級測驗、模型下載）：接上前的暫時頁
 import { t } from '../i18n/t'
 import { navigate } from '../router'
 import { SubScreen } from '../shell/Screen'

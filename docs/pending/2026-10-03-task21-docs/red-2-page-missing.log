@@ -1,0 +1,40 @@
+
+ RUN  v5.0.3 C:/Projects/LinguaApp/.claude/worktrees/task-21-docs/app
+
+ ❯ src/screens/about/LicensesScreen.test.tsx (3 tests | 1 failed) 86ms
+   ❯ 授權與致謝頁 ↔ NOTICE (2)
+     × 頁面列出的條目與 NOTICE 完全一致（NOTICE 多一條或頁面少一條都失敗） 49ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/screens/about/LicensesScreen.test.tsx > 授權與致謝頁 ↔ NOTICE > 頁面列出的條目與 NOTICE 完全一致（NOTICE 多一條或頁面少一條都失敗）
+AssertionError: expected [ Array(27) ] to deeply equal [ Array(28) ]
+
+- Expected
++ Received
+
+@@ -23,8 +23,7 @@
+    "Plus Jakarta Sans",
+    "React 19",
+    "supabase-js",
+    "ts-fsrs",
+    "Lucide",
+-   "Workbox",
+    "LibriSpeech ASR corpus",
+  ]
+
+ ❯ src/screens/about/LicensesScreen.test.tsx:42:27
+     40|   it('頁面列出的條目與 NOTICE 完全一致（NOTICE 多一條或頁面少一條都失敗）', () => {
+     41|     render(<LicensesScreen />)
+     42|     expect(pageEntries()).toEqual(noticeEntries(NOTICE))
+       |                           ^
+     43|   })
+     44|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  18:10:36
+   Duration  1.76s (environment 64%, setup 13%, transform 10%, import 8%, tests 5%)
+

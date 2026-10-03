@@ -1,0 +1,88 @@
+## 自架 (a) 演練  2026-10-03 18:19:40  cwd=<乾淨 clone>
+$ node --version
+v22.20.0
+rc=0
+
+$ npm ci
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@asamuzakjp/css-color@7.1.2',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@asamuzakjp/dom-selector@9.2.2',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'jsdom@30.1.1',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'w3c-xmlserializer@6.0.0',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.20.0', npm: '10.9.3' }
+npm warn EBADENGINE }
+npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 578 packages, and audited 579 packages in 23s
+
+157 packages are looking for funding
+  run `npm fund` for details
+
+3 high severity vulnerabilities
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+rc=0
+
+$ npm run build
+
+> linguaapp@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 3646 modules transformed.
+rendering chunks...
+computing gzip size...
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.16s
+
+PWA v1.3.0
+mode      generateSW
+precache  2589 entries (28504.62 KiB)
+files generated
+[PLUGIN_TIMINGS] JavaScript callbacks ran for 21.4s. The build took 6.1s. Callbacks such as `closeBundle` run after the build ends, so callback time can be more than build time.
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite-plugin-pwa:build closeBundle (100%, 18.5s, 1 call)
+Additional callback time came from the callbacks below and from callbacks under 1s.
+4 callbacks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+  - plugin vite:asset load (1587 calls)
+  - plugin vite:css transform (4 calls)
+  - plugin @tailwindcss/vite:generate:build transform (4 calls)
+  … and 1 more
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+rc=0
+
+done
+$ npm run preview
+
+> linguaapp@0.0.0 preview
+> vite preview
+
+  ➜  Local:   http://localhost:5288/
+  ➜  Network: use --host to expose
+設定頁（Pixel 模擬）含「未登入：進度只存在這支手機」：1；含「登入以同步進度」：0
+直接開 /about/licenses 的標題："授權與致謝"
+（Ctrl+C 停止預覽；5288 殘留監聽：0）

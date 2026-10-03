@@ -1,0 +1,87 @@
+## 本機模擬完整部署演練  2026-10-03 18:44:19  cwd=<乾淨 clone>
+啟動前容器：0 個 supabase_*
+$ npx --yes supabase@2.118.0 start
+Starting database from backup...
+{"DB_URL":"postgresql://postgres:postgres@127.0.0.1:55422/postgres","API_URL":"http://127.0.0.1:55421","REST_URL":"http://127.0.0.1:55421/rest/v1","GRAPHQL_URL":"http://127.0.0.1:55421/graphql/v1","PUBLISHABLE_KEY":"…（略）","SECRET_KEY":"…（略）","JWT_SECRET":"…（略）","ANON_KEY":"…（略）","SERVICE_ROLE_KEY":"…（略）","MAILPIT_URL":"http://127.0.0.1:55424","INBUCKET_URL":"http://127.0.0.1:55424","message":""}
+A new version of Supabase CLI is available: v2.119.0 (currently installed v2.118.0)
+We recommend updating regularly for new features and bug fixes: https://supabase.com/docs/guides/cli/getting-started#updating-the-supabase-cli
+rc=0
+
+$ npx --yes supabase@2.118.0 status -o env | grep -E '^(API_URL|ANON_KEY)='
+ANON_KEY="eyJhbGciOiJI…（略）
+API_URL="http://127.0.0.1:55421"
+API_URL=http://127.0.0.1:55421（指南寫 http://127.0.0.1:55421）
+$ VITE_SUPABASE_URL=http://127.0.0.1:55421 VITE_SUPABASE_ANON_KEY=<ANON_KEY> npm run build
+
+> linguaapp@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 3646 modules transformed.
+rendering chunks...
+computing gzip size...
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.06s
+
+PWA v1.3.0
+mode      generateSW
+precache  2589 entries (28505.05 KiB)
+files generated
+[PLUGIN_TIMINGS] JavaScript callbacks ran for 19.9s. The build took 6.0s. Callbacks such as `closeBundle` run after the build ends, so callback time can be more than build time.
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite-plugin-pwa:build closeBundle (100%, 16.7s, 1 call)
+  - plugin @tailwindcss/vite:generate:build transform (23%, 1.4s, 4 calls)
+Additional callback time came from the callbacks below and from callbacks under 1s.
+3 callbacks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+  - plugin vite:asset load (1587 calls)
+  - plugin vite:css transform (4 calls)
+  - plugin vite:worker-import-meta-url transform (2 calls)
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+rc=0
+$ npm run preview
+
+> linguaapp@0.0.0 preview
+> vite preview
+
+  ➜  Local:   http://localhost:5288/
+  ➜  Network: use --host to expose
+步驟 3-1/3-2：設定頁點「登入以同步進度」、輸入 t21-walk-1791024259@example.com、按「寄驗證碼」
+### Ran Playwright code
+```js
+await (async page => {
+  await page.getByRole('button', { name: '登入以同步進度' }).click()
+  await page.getByLabel('Email').fill('t21-walk-1791024259@example.com')
+  await page.getByRole('button', { name: '寄驗證碼' }).click()
+  await page.getByText('輸入寄到').waitFor()
+}
+)(page);
+```
+rc=0
+Mailpit 收到：主旨「LinguaApp 登入驗證碼」
+步驟 3-3：Mailpit（http://127.0.0.1:55424）取得 6 位數驗證碼：有
+### Ran Playwright code
+```js
+await (async page => {
+  await page.getByLabel(/輸入寄到/).fill('340041')
+  await page.getByRole('button', { name: '登入', exact: true }).click()
+  await page.getByText('已登入：t21-walk-1791024259@example.com').waitFor()
+}
+)(page);
+```
+rc=0
+步驟 3-4：帳號區文字："已登入：t21-walk-1791024259@example.com\n\n登出" 
+（預覽已停止；5288 殘留監聽：0）
+$ npx --yes supabase@2.118.0 stop
+{"project_id_filter":"linguaapp","backup":true,"message":"Stopped supabase local development setup."}
+A new version of Supabase CLI is available: v2.119.0 (currently installed v2.118.0)
+We recommend updating regularly for new features and bug fixes: https://supabase.com/docs/guides/cli/getting-started#updating-the-supabase-cli
+rc=0
+
+停止後容器：0 個 supabase_*

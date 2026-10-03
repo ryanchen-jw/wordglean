@@ -68,19 +68,30 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
 - OpenCC（Apache-2.0）：https://github.com/BYVoid/OpenCC — 使用範圍：建置時（data/scripts/）以 PyPI opencc 1.4.2 的 s2twp 轉換 ECDICT 釋義，不隨 app 散布；授權全文見 data/licenses/OpenCC-Apache-2.0.txt
 - Dexie.js（Apache-2.0）：https://github.com/dexie/Dexie.js — 使用範圍：本機 IndexedDB 資料層（app/src/data/）
   NOTICE 原文：Copyright (c) 2014-2017 David Fahlander. Licensed under the Apache License, Version 2.0.
-- 高音質發音（Kokoro 選配，TASK-13；只在使用者選用並下載後於瀏覽器 Worker 執行，app/src/speech/kokoro.worker.ts）：
+高音質發音（Kokoro 選配，TASK-13；只在使用者選用並下載後於瀏覽器 Worker 執行，app/src/speech/kokoro.worker.ts）：
   - kokoro-js 1.2.1（Apache-2.0）：https://github.com/hexgrad/kokoro（kokoro.js）
-  - @huggingface/transformers 3.8.1（Apache-2.0）：https://github.com/huggingface/transformers.js；內含 onnxruntime-web（MIT）的 wasm，隨 app 從本站提供（與 TASK-14 共用同一份）
+  - @huggingface/transformers 3.8.1（Apache-2.0）：https://github.com/huggingface/transformers.js（與 TASK-14 共用同一份）
+  - onnxruntime-web（MIT）：https://github.com/microsoft/onnxruntime——@huggingface/transformers 內含的推論引擎 wasm，隨 app 從本站提供（與 TASK-14 共用同一份）
   - phonemizer 1.2.1（npm 標 Apache-2.0）：https://github.com/xenova/phonemizer.js——內含編譯成 WebAssembly 的 eSpeak NG
   - eSpeak NG（GPL-3.0-or-later）：https://github.com/espeak-ng/espeak-ng——經 phonemizer 隨程式散布；GPL-3.0 與本專案 AGPL-3.0 相容（AGPL-3.0 第 13 條）
   - 模型 Kokoro-82M（Apache-2.0）：https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX——不隨程式散布，使用者下載時直接取自 Hugging Face
-- 語音辨識（跟讀，TASK-14；Moonshine 在瀏覽器 Worker 執行，app/src/speech/stt.worker.ts）：
-  - 與高音質發音共用上列 @huggingface/transformers 3.8.1 與 onnxruntime-web 的 wasm
+語音辨識（跟讀，TASK-14；Moonshine 在瀏覽器 Worker 執行，app/src/speech/stt.worker.ts；與高音質發音共用上列 @huggingface/transformers 3.8.1 與 onnxruntime-web 的 wasm）：
   - moonshine-web 範例（Apache-2.0）：https://github.com/huggingface/transformers.js-examples/tree/main/moonshine-web——
     app/src/speech/sttEngine.ts 改寫自其 worker（裝置偵測、依裝置分精度、暖機、推論鏈）
   - 模型 Moonshine tiny（MIT，Useful Sensors）ONNX 版 onnx-community/moonshine-tiny-ONNX——不隨程式散布，
     使用者第一次跟讀時直接取自 Hugging Face、存在本機快取
-- 其餘 npm 相依套件的授權見 app/package-lock.json 與各套件自身的授權檔
+介面字體（自 host，依 unicode-range 分片隨 app 從本站提供；app/src/main.tsx，經 Fontsource 套件 @fontsource-variable/* 5.3.0 取得）：
+  - Noto Sans TC（OFL-1.1）：Copyright Google Inc.；https://github.com/notofonts/noto-cjk——中文介面字
+  - Noto Sans（OFL-1.1）：Copyright 2022 The Noto Project Authors（https://github.com/notofonts/latin-greek-cyrillic）——英文內文字
+  - Plus Jakarta Sans（OFL-1.1）：Copyright 2020 The Plus Jakarta Sans Project Authors（https://github.com/tokotype/PlusJakartaSans）——英文標題字
+  授權全文：https://openfontlicense.org（各套件內 LICENSE 檔）
+其他執行期套件（隨 app 散布）：
+  - React 19（MIT）：https://github.com/facebook/react——介面框架
+  - supabase-js（MIT）：https://github.com/supabase/supabase-js——登入與同步（只在自架者設定 Supabase 時使用）
+  - ts-fsrs（MIT）：Copyright (c) 2026 Open Spaced Repetition；https://github.com/open-spaced-repetition/ts-fsrs——間隔重複排程（FSRS）
+  - Lucide（ISC；部分圖示源自 Feather，MIT）：https://github.com/lucide-icons/lucide——介面圖示
+  - Workbox（MIT）：https://github.com/GoogleChrome/workbox——離線快取（由 vite-plugin-pwa 產生的 service worker 使用）
+其餘 npm 相依套件的授權見 app/package-lock.json 與各套件自身的授權檔。
 
 == 測試資料（不隨 app 散布）==
 

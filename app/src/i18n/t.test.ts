@@ -28,7 +28,16 @@ const ALLOWED_LATIN = new Set([
   'Fi',
   'sk',
   'or',
+  // TASK-21 隱私說明、授權頁：授權名、服務名、檔名
+  'AGPL',
+  'Supabase',
+  'Hugging',
+  'Face',
+  'NOTICE',
 ])
+
+// credits＝授權與致謝頁的出處條目（來源名、授權名、著作權行），依原文保留、不翻譯，不受英文字串檢查
+const ATTRIBUTION_REGION = 'credits.'
 
 // 底線開頭（_status、_pendingG3）是中繼欄位，不是文案
 function allStrings(node: unknown, path = ''): [string, string][] {
@@ -58,11 +67,13 @@ describe('zh-TW.json', () => {
   })
 
   it('除允許清單外沒有英文介面字串', () => {
-    const offenders = allStrings(messages).flatMap(([path, text]) =>
-      (text.replace(/\{\w+\}/g, '').match(/[A-Za-z][A-Za-z0-9]*/g) ?? [])
-        .filter((w) => !ALLOWED_LATIN.has(w))
-        .map((w) => `${path}: ${w}`),
-    )
+    const offenders = allStrings(messages)
+      .filter(([path]) => !path.startsWith(ATTRIBUTION_REGION))
+      .flatMap(([path, text]) =>
+        (text.replace(/\{\w+\}/g, '').match(/[A-Za-z][A-Za-z0-9]*/g) ?? [])
+          .filter((w) => !ALLOWED_LATIN.has(w))
+          .map((w) => `${path}: ${w}`),
+      )
     expect(offenders).toEqual([])
   })
 
