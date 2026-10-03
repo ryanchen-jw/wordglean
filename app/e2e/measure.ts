@@ -1,32 +1,16 @@
 // 手機版量測（harness 06 三件套＋介面字串）：一般 e2e、視覺 smoke、e2e-sync 共用同一套量法，避免標準不一
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 import type { Page } from '@playwright/test'
 
-// 允許出現在介面文字中的英文（產品名、服務名、級距、單位）；英文學習內容以 lang="en"（音標 en-fonipa）標示、不掃
+// 允許出現在介面文字中的英文：介面文案的白名單與 i18n 守衛（src/i18n/t.test.ts）共用 src/i18n/allowedLatin.json；
+// 另加只會出現在畫面、不在文案裡的：字典彈層的級距標籤 C2（Octanove）、選項字母標（components.md §3、設計 s05／s07）。
+// 英文學習內容以 lang="en"（音標 en-fonipa）標示、不掃
 export const ALLOWED_LATIN = [
-  'LinguaApp',
-  'OpenRouter',
-  'ETS',
-  'CEFR',
-  'A1',
-  'A2',
-  'B1',
-  'B2',
-  'C1',
-  'C2', // 字典彈層的級距標籤（Octanove C2）
-  'ECDICT', // 字典彈層「資料來源：ECDICT」
-  'MB',
-  'WebGPU',
-  'AI',
-  'Safari',
-  'App', // 與 src/i18n/t.test.ts 白名單一致（system.error.dataLoad「請重新開啟 App」）
-  // TASK-21 隱私說明、授權頁（與 src/i18n/t.test.ts 一致）；授權頁的出處條目由 about-visual.spec 另行放行
-  'AGPL',
-  'Supabase',
-  'Hugging',
-  'Face',
-  'NOTICE',
-  'Email',
-  // 選項字母標（components.md §3、設計 s05／s07）
+  ...(JSON.parse(
+    readFileSync(resolve(import.meta.dirname, '../src/i18n/allowedLatin.json'), 'utf-8'),
+  ) as string[]),
+  'C2',
   'A',
   'B',
   'C',

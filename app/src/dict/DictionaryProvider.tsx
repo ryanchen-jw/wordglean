@@ -1,5 +1,5 @@
 // 字典彈層的狀態與 Toast；掛在 App 根層，全 App 的 <EnglishText> 共用（設計 s08）
-import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { useCallback, useMemo, useRef, useState, type ReactNode } from 'react'
 import { db } from '../data/appDb'
 import { addFavorite, removeFavorite } from '../data/repo'
 import { t } from '../i18n/t'
@@ -16,11 +16,6 @@ export function DictionaryProvider({ children, deps = appDictDeps }: Props) {
   const [toastWord, setToastWord] = useState<string | null>(null)
   const active = useRef<HTMLElement | null>(null)
   const seq = useRef(0)
-
-  // 開 App 就先載單字總表，第一次點字不用等
-  useEffect(() => {
-    deps().catch((e) => console.error(e))
-  }, [deps])
 
   const open = useCallback(
     ({ token, sentenceStart, el }: OpenRequest) => {

@@ -6,6 +6,7 @@ import type { PoolWord } from '../../data/db'
 import { inPool } from '../../data/repo'
 import { useLiveQuery } from '../../data/useLiveQuery'
 import { useDictionary } from '../../dict/context'
+import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { shortGloss } from '../../dict/format'
 import { glossLine } from '../../dict/gloss'
@@ -112,7 +113,7 @@ function WordList({ words, nowMs, glosses }: ListProps) {
               {/* 英文字優先：同一行放不下時中文釋義換到下一行，各自過長才截斷 */}
               <span className="flex min-w-0 flex-wrap items-baseline gap-x-3 py-1.5">
                 <EnglishText
-                  text={w.wordId}
+                  text={displayWord(w.wordId)}
                   className="max-w-full truncate font-en font-semibold"
                 />
                 {glosses.has(w.wordId) && (

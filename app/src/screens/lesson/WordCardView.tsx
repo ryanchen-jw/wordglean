@@ -1,6 +1,7 @@
 // 單字卡（設計 s07、components.md §11）：英文字＋發音，四個中文釋義點選即判定；「看例句提示」用過就評 Hard
 import { Info, Volume2 } from 'lucide-react'
 import { useState } from 'react'
+import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { WordCardItem } from '../../lesson/items'
@@ -35,7 +36,7 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
         <Card className="justify-items-center gap-2 px-5 py-7 text-center">
           {/* 作答前不可點（會直接看到答案）；作答後改為可點查義（G2） */}
           <EnglishText
-            text={item.word}
+            text={displayWord(item.word)}
             disabled={answered ? undefined : 'all'}
             className="font-en text-display font-semibold break-words"
           />
@@ -85,7 +86,7 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
                 t('lesson.wordCard.right', { gloss: item.glossZh })
               ) : (
                 <>
-                  <span lang="en">{item.word}</span>
+                  <span lang="en">{displayWord(item.word)}</span>
                   {t('lesson.wordCard.isGloss', { gloss: item.glossZh })}
                 </>
               )

@@ -167,7 +167,7 @@ test('s04 模型：下載前（D4）／下載中 42%／下載失敗／準備中'
   await expect(page.getByText('需要下載語音辨識模型')).toBeVisible()
   await expectColor(
     page,
-    page.getByRole('button', { name: '語音辨識模型下載中，暫時無法錄音' }),
+    page.getByRole('button', { name: '模型下載完才能錄音' }),
     'backgroundColor',
     '--lg-disabled-bg',
   )
@@ -181,7 +181,8 @@ test('s04 模型：下載前（D4）／下載中 42%／下載失敗／準備中'
 
   await speech(page, 'setModel', { kind: 'failed' })
   await expect(page.getByRole('button', { name: '下載中斷・重試' })).toBeVisible()
-  await expectColor(page, fill, 'backgroundColor', '--lg-error')
+  const failedFill = page.getByRole('progressbar', { name: '下載中斷' }).locator('div')
+  await expectColor(page, failedFill, 'backgroundColor', '--lg-error')
   await check(page, info, 's04-download-failed')
 
   await speech(page, 'setModel', { kind: 'loading' })

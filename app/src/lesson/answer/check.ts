@@ -164,9 +164,12 @@ function sentenceVariants(tokens: string[]): Word[][] {
 const bare = (token: string) => token.replace(/^[^\p{L}\p{N}$]+|[^\p{L}\p{N}%]+$/gu, '')
 
 export function checkTyped(input: string, expected: string): TypedCheck {
-  // NFKC：全形英數、標點與全形空白（中文輸入法常見）先轉半形
-  const inTokens = splitWords(input.normalize('NFKC'))
-  const exTokens = splitWords(expected.normalize('NFKC'))
+  // NFKC：全形英數、標點與全形空白（中文輸入法常見）先轉半形；標點後緊接著字（中文輸入法的「，」「。」常不留空白）也斷開，
+  // 數字間的千分位逗點與時間冒號不斷
+  const words = (s: string) =>
+    splitWords(s.normalize('NFKC').replace(/([,;:!?。、])(?=[^\s\d])/g, '$1 '))
+  const inTokens = words(input)
+  const exTokens = words(expected)
   const ins = sentenceVariants(inTokens)
   const exs = sentenceVariants(exTokens)
 

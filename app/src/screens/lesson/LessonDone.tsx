@@ -1,5 +1,6 @@
 // 小課完成頁（設計 s14、components.md §14）：整頁、只說學了什麼與答對幾題；無星星、分數動畫、連續天數
 import { ChevronRight } from 'lucide-react'
+import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { SettleSummary } from '../../lesson/session'
@@ -32,7 +33,7 @@ export function LessonDone({ summary, subtitle, wrongScheduled }: Props) {
               {summary.newWords.map((w, i) => (
                 <span key={w}>
                   {i > 0 && '・'}
-                  <EnglishText text={w} />
+                  <EnglishText text={displayWord(w)} />
                 </span>
               ))}
             </p>

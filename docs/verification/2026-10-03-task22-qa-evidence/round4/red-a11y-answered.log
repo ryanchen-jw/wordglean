@@ -1,0 +1,246 @@
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] [PLUGIN_TIMINGS] JavaScript callbacks ran for 16.9s. The build took 4.0s. Callbacks such as `closeBundle` run after the build ends, so callback time can be more than build time.
+[WebServer] The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+[WebServer]   - plugin vite-plugin-pwa:build closeBundle (100%, 14.1s, 1 call)
+[WebServer] Additional callback time came from the callbacks below and from callbacks under 1s.
+[WebServer] 4 callbacks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+[WebServer]   - plugin vite:asset load (606 calls)
+[WebServer]   - plugin vite:css transform (4 calls)
+[WebServer]   - plugin @tailwindcss/vite:generate:build transform (4 calls)
+[WebServer]   … and 1 more
+[WebServer] See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+[WebServer] 
+Running 12 tests using 2 workers
+  x   2 [webkit-iphone15] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 (1.5s)
+  x   1 [webkit-iphone15] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（light） › 選擇題答錯後 (6.3s)
+  x   4 [webkit-iphone15] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 (1.5s)
+  x   5 [webkit-iphone15] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（dark） › 選擇題答錯後 (5.5s)
+  x   3 [webkit-iphone15] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（light） › 複習答錯後 (13.7s)
+  x   7 [chromium-pixel7] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 (819ms)
+  x   8 [chromium-pixel7] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（light） › 選擇題答錯後 (1.9s)
+  x   9 [chromium-pixel7] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（light） › 複習答錯後 (3.9s)
+  x  10 [chromium-pixel7] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 (634ms)
+  x   6 [webkit-iphone15] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（dark） › 複習答錯後 (12.3s)
+  x  11 [chromium-pixel7] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（dark） › 選擇題答錯後 (1.9s)
+  x  12 [chromium-pixel7] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（dark） › 複習答錯後 (3.5s)
+  1) [webkit-iphone15] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 ────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      50 |       await answer(page, 1, true)
+      51 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 52 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      53 |     })
+      54 |
+      55 |     test('選擇題答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:52:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-小課第-1-題（看字選意）答錯後-webkit-iphone15\error-context.md
+  2) [webkit-iphone15] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（light） › 選擇題答錯後 ──────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit",
+    + ]
+      60 |       await answer(page, MCQ_STEP, true)
+      61 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 62 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      63 |     })
+      64 |
+      65 |     test('複習答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:62:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-選擇題答錯後-webkit-iphone15\error-context.md
+  3) [webkit-iphone15] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（light） › 複習答錯後 ───────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      70 |       await page.getByRole('radio').filter({ hasNotText: right }).first().click()
+      71 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 72 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      73 |     })
+      74 |   })
+      75 | }
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:72:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-複習答錯後-webkit-iphone15\error-context.md
+  4) [webkit-iphone15] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 ─────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      50 |       await answer(page, 1, true)
+      51 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 52 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      53 |     })
+      54 |
+      55 |     test('選擇題答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:52:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-小課第-1-題（看字選意）答錯後-webkit-iphone15\error-context.md
+  5) [webkit-iphone15] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（dark） › 選擇題答錯後 ───────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit",
+    + ]
+      60 |       await answer(page, MCQ_STEP, true)
+      61 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 62 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      63 |     })
+      64 |
+      65 |     test('複習答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:62:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-選擇題答錯後-webkit-iphone15\error-context.md
+  6) [webkit-iphone15] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（dark） › 複習答錯後 ────────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      70 |       await page.getByRole('radio').filter({ hasNotText: right }).first().click()
+      71 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 72 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      73 |     })
+      74 |   })
+      75 | }
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:72:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-複習答錯後-webkit-iphone15\error-context.md
+  7) [chromium-pixel7] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 ────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      50 |       await answer(page, 1, true)
+      51 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 52 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      53 |     })
+      54 |
+      55 |     test('選擇題答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:52:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-小課第-1-題（看字選意）答錯後-chromium-pixel7\error-context.md
+  8) [chromium-pixel7] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（light） › 選擇題答錯後 ──────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit",
+    + ]
+      60 |       await answer(page, MCQ_STEP, true)
+      61 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 62 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      63 |     })
+      64 |
+      65 |     test('複習答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:62:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-選擇題答錯後-chromium-pixel7\error-context.md
+  9) [chromium-pixel7] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（light） › 複習答錯後 ───────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      70 |       await page.getByRole('radio').filter({ hasNotText: right }).first().click()
+      71 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 72 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      73 |     })
+      74 |   })
+      75 | }
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:72:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-複習答錯後-chromium-pixel7\error-context.md
+  10) [chromium-pixel7] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 ────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      50 |       await answer(page, 1, true)
+      51 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 52 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      53 |     })
+      54 |
+      55 |     test('選擇題答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:52:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-小課第-1-題（看字選意）答錯後-chromium-pixel7\error-context.md
+  11) [chromium-pixel7] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（dark） › 選擇題答錯後 ──────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1 > .font-en.text-content[lang=\"en\"] > .relative.rounded-sm.text-inherit",
+    + ]
+      60 |       await answer(page, MCQ_STEP, true)
+      61 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 62 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      63 |     })
+      64 |
+      65 |     test('複習答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:62:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-選擇題答錯後-chromium-pixel7\error-context.md
+  12) [chromium-pixel7] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（dark） › 複習答錯後 ───────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(3) > .min-w-0.flex-1、.py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1",
+    + ]
+      70 |       await page.getByRole('radio').filter({ hasNotText: right }).first().click()
+      71 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 72 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      73 |     })
+      74 |   })
+      75 | }
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:72:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-複習答錯後-chromium-pixel7\error-context.md
+  12 failed
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 ─────────
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（light） › 選擇題答錯後 ───────────────────
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（light） › 複習答錯後 ────────────────────
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 ──────────
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（dark） › 選擇題答錯後 ────────────────────
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（dark） › 複習答錯後 ─────────────────────
+    [chromium-pixel7] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 ─────────
+    [chromium-pixel7] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（light） › 選擇題答錯後 ───────────────────
+    [chromium-pixel7] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（light） › 複習答錯後 ────────────────────
+    [chromium-pixel7] › e2e\a11y-answered.spec.ts:48:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 ──────────
+    [chromium-pixel7] › e2e\a11y-answered.spec.ts:55:5 › 作答後 axe（dark） › 選擇題答錯後 ────────────────────
+    [chromium-pixel7] › e2e\a11y-answered.spec.ts:65:5 › 作答後 axe（dark） › 複習答錯後 ─────────────────────

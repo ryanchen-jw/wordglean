@@ -96,8 +96,9 @@ export const WRITE_STEPS: number[] = STEPS.flatMap((s, i) => (s.write !== undefi
 export const count = (page: Page, n: number) =>
   expect(page.getByText(`${n}／${STEPS.length}`, { exact: true })).toBeVisible()
 
-// 寫作題自評按鈕按下即進下一題；之後那一次 next() 不再按「繼續」
-let advanced = false
+// 寫作題自評按鈕按下即進下一題；之後那一次 next() 不再按「繼續」。
+// 以頁面為單位記錄：answer 後沒接 next 時，記號不會帶到別的頁面（別的測試）
+const advanced = new WeakSet<Page>()
 
 /**
  * 作答第 n 題（從 1 起）；wrong＝選第一個錯誤選項。不按「繼續」。
@@ -111,7 +112,7 @@ export async function answer(page: Page, n: number, wrong = false) {
     await page.getByRole('button', { name: '送出批改' }).click()
     await expect(page.getByText('跟參考答案比一比，意思一樣嗎？')).toBeVisible()
     await page.getByRole('button', { name: wrong ? '我寫錯了' : '我寫對了' }).click()
-    advanced = true
+    advanced.add(page)
     return
   }
   if (s.typed !== undefined)
@@ -124,10 +125,7 @@ export async function answer(page: Page, n: number, wrong = false) {
 }
 
 export async function next(page: Page) {
-  if (advanced) {
-    advanced = false
-    return
-  }
+  if (advanced.delete(page)) return
   await page.getByRole('button', { name: '繼續' }).click()
 }
 

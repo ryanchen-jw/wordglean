@@ -1,40 +1,12 @@
 import { describe, expect, it } from 'vitest'
+import allowedLatin from './allowedLatin.json'
 import messages from './zh-TW.json'
 import { t } from './t'
 
-// 允許出現在介面文案中的英文字（產品名、服務名、級距、單位）
-const ALLOWED_LATIN = new Set([
-  'LinguaApp',
-  'OpenRouter',
-  // 多益對照出處（TASK-17 結果頁「僅供參考」）
-  'ETS',
-  'CEFR',
-  'A1',
-  'A2',
-  'B1',
-  'B2',
-  'C1',
-  'ECDICT', // 字典彈層「資料來源：ECDICT」（設計 s08）
-  'MB',
-  'WebGPU',
-  'AI',
-  'Safari',
-  // TASK-4 G3 定稿文案中的英文字
-  'App',
-  'Email',
-  'Google',
-  'ECDICT',
-  'Wi',
-  'Fi',
-  'sk',
-  'or',
-  // TASK-21 隱私說明、授權頁：授權名、服務名、檔名
-  'AGPL',
-  'Supabase',
-  'Hugging',
-  'Face',
-  'NOTICE',
-])
+// 允許出現在介面文案中的英文字（產品名、服務名、級距、單位、定稿文案中的 Email／Google／Wi-Fi／sk-or，
+// TASK-21 隱私說明與授權頁的 AGPL／Supabase／Hugging Face／NOTICE）；
+// 與 e2e 手機量測（e2e/measure.ts）共用同一份清單
+const ALLOWED_LATIN = new Set(allowedLatin)
 
 // credits＝授權與致謝頁的出處條目（來源名、授權名、著作權行），依原文保留、不翻譯，不受英文字串檢查
 const ATTRIBUTION_REGION = 'credits.'

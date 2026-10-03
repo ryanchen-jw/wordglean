@@ -47,6 +47,18 @@ describe('完全相同與大小寫、標點、空白', () => {
       checkTyped('Ｔｈｅ ｂｏｏｋ ｉｓ ｏｎ ｔｈｅ ｂａｇ', 'The book is in the bag.').fixes,
     ).toEqual([{ from: 'on', to: 'in' }])
   })
+
+  it('全形標點後沒有空白（中文輸入法常見）也算斷字（TASK-22 移交 TASK-13 P2）', () => {
+    ok('Lisa，stay calm', 'Lisa, stay calm.')
+    ok('Yes，I do。You don’t', "Yes, I do. You don't.")
+    ok('Really？She asked', 'Really? She asked.')
+    ok('Lisa,stay calm', 'Lisa, stay calm.')
+    ok('I have 1,000 books', 'I have one thousand books.')
+    ok('at 10:30', 'at ten thirty.')
+    expect(checkTyped('Lisa，stey calm', 'Lisa, stay calm.').fixes).toEqual([
+      { from: 'stey', to: 'stay' },
+    ])
+  })
 })
 
 describe('拼錯一律算錯並標錯字（設計 s03 答錯）', () => {

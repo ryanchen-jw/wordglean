@@ -107,6 +107,8 @@ export function ShadowingView({
 
   const startRec = async () => {
     if (starting.current || recording.current) return
+    // 按得到錄音鈕＝人還在這題：跳過時存檔與前進都失敗而留在原題，旗標要復位，否則錄音會被立刻停掉（TASK-14 複驗 P2）
+    gone.current = false
     starting.current = true
     try {
       let take: { finish(): Promise<string>; cancel(): void }
@@ -423,7 +425,13 @@ export function ShadowingView({
           type="button"
           disabled
           className={recCls.busy}
-          aria-label={t(needsDownload ? 'speak.download.aria' : 'speak.question.preparing')}
+          aria-label={t(
+            model.kind === 'downloading'
+              ? 'speak.download.aria'
+              : needsDownload
+                ? 'speak.download.hint'
+                : 'speak.question.preparing',
+          )}
         >
           <Mic size={30} aria-hidden="true" />
         </button>
@@ -532,7 +540,7 @@ function ModelCard({ state, onDownload }: { state: SttState; onDownload: () => v
       <div role="status" className="flex items-center justify-between gap-2">
         <span className="flex min-w-0 items-center gap-1.5 font-bold">
           <Download size={20} aria-hidden="true" className="flex-none" />
-          {t(downloading || failed ? 'download.stt.title' : 'speak.download.titleIdle')}
+          {t(downloading ? 'download.stt.title' : 'speak.download.titleIdle')}
         </span>
         {downloading && (
           <span className="text-caption text-muted tabular-nums">
@@ -552,7 +560,7 @@ function ModelCard({ state, onDownload }: { state: SttState; onDownload: () => v
       {(downloading || failed) && (
         <div
           role="progressbar"
-          aria-label={t('download.stt.title')}
+          aria-label={t(failed ? 'download.status.failed' : 'download.stt.title')}
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={failed ? undefined : pct}

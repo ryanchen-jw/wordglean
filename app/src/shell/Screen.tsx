@@ -1,6 +1,6 @@
 // 畫面外框：TabScreen＝有底部導覽的分頁（今天／課程／單字庫）；SubScreen＝有返回鍵、無導覽的子頁（設定等）
 import { ArrowLeft, WifiOff } from 'lucide-react'
-import type { ReactNode } from 'react'
+import { useId, type ReactNode } from 'react'
 import { t } from '../i18n/t'
 import { goBack } from '../router'
 import { BottomNav } from './BottomNav'
@@ -72,7 +72,20 @@ export function FlowScreen({
   )
 }
 
-export function SubScreen({ title, children }: { title: string; children: ReactNode }) {
+/**
+ * reading：純閱讀的長文頁（隱私說明、授權與致謝）——捲動區裡沒有可聚焦的控件，鍵盤使用者捲不動；
+ * 讓 main 本身可聚焦並以頁面標題命名（WCAG 2.1.1，axe scrollable-region-focusable）。其他子頁不變
+ */
+export function SubScreen({
+  title,
+  reading = false,
+  children,
+}: {
+  title: string
+  reading?: boolean
+  children: ReactNode
+}) {
+  const id = useId()
   return (
     <div className={frame}>
       <header className={headerPad}>
@@ -85,10 +98,18 @@ export function SubScreen({ title, children }: { title: string; children: ReactN
           >
             <ArrowLeft size={20} aria-hidden="true" />
           </button>
-          <h1 className={titleCls}>{title}</h1>
+          <h1 id={id} className={titleCls}>
+            {title}
+          </h1>
         </div>
       </header>
-      <main className={mainCls}>{children}</main>
+      {reading ? (
+        <main className={mainCls} tabIndex={0} aria-labelledby={id}>
+          {children}
+        </main>
+      ) : (
+        <main className={mainCls}>{children}</main>
+      )}
     </div>
   )
 }

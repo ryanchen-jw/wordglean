@@ -208,6 +208,37 @@ describe('載入與崩潰旗標', () => {
     expect(workers).toHaveLength(0)
   })
 
+  it('播放時載入：10 秒內沒有任何回音就失敗，不用等 90 秒（TASK-22 移交 TASK-13 P2）', async () => {
+    vi.useFakeTimers()
+    try {
+      const { hq, workers } = await downloaded()
+      const p = hq.load()
+      const rejected = expect(p).rejects.toThrow('逾時')
+      await vi.advanceTimersByTimeAsync(10_000)
+      await rejected
+      expect(workers[0].terminated).toBe(true)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('播放時載入：10 秒內有回音後改回一般逾時（90 秒沒進度才失敗）', async () => {
+    vi.useFakeTimers()
+    try {
+      const { hq, workers } = await downloaded()
+      let failed = false
+      void hq.load().catch(() => (failed = true))
+      await vi.advanceTimersByTimeAsync(9_000)
+      workers[0].emit({ type: 'progress', progress: 0.5 })
+      await vi.advanceTimersByTimeAsync(80_000)
+      expect(failed).toBe(false)
+      await vi.advanceTimersByTimeAsync(10_000)
+      expect(failed).toBe(true)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
   it('載入失敗：旗標清掉、狀態維持已下載（不是下載問題）', async () => {
     const { hq, workers, deps } = await downloaded()
     const p = hq.load()
@@ -249,6 +280,20 @@ describe('合成與快取', () => {
     await engine.speak('Hello.', 1)
     expect(workers[0].sent).toHaveLength(before)
     expect(played).toHaveLength(2)
+  })
+
+  it('合成久無回應（30 秒）：reject 並結束 Worker，下次重開（TASK-22 移交 TASK-13 P2）', async () => {
+    vi.useFakeTimers()
+    try {
+      const { engine, workers } = await ready()
+      const p = engine.speak('Hello.', 1)
+      const rejected = expect(p).rejects.toThrow('逾時')
+      await vi.advanceTimersByTimeAsync(30_000)
+      await rejected
+      expect(workers[0].terminated).toBe(true)
+    } finally {
+      vi.useRealTimers()
+    }
   })
 
   it('合成失敗：reject（交給發音服務退回內建聲音）', async () => {

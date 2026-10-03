@@ -1,0 +1,60 @@
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Running 16 tests using 2 workers
+  ok  2 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (5.9s)
+  ok  1 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (6.0s)
+  ok  3 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (7.8s)
+  ok  4 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (7.8s)
+  ok  5 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (5.8s)
+  ok  6 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (5.8s)
+  ok  7 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (6.0s)
+  ok  8 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (6.0s)
+  ok  9 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (8.2s)
+  ok 10 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (7.7s)
+  ok 12 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (6.0s)
+  ok 11 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (6.2s)
+  ok 14 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (6.1s)
+  x  13 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (6.4s)
+  ok 15 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 (7.3s)
+  x  16 [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 (7.4s)
+  1) [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 ──────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：strong > .min-w-0、strong > .min-w-0 > span[lang=\"en\"]、.gap-1.text-text.grid > span > span:nth-child(1)、span:nth-child(1) > span[lang=\"en\"]、span > span:nth-child(2)、span > span:nth-child(2) > span[lang=\"en\"]",
+    + ]
+      61 |       await answer(page, MCQ_STEP, true)
+      62 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 63 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      64 |     })
+      65 |
+      66 |     test('複習答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:63:38
+    Error Context: test-results\a11y-answered-作答後-axe（light）-選擇題答錯後-webkit-iphone15-repeat6\error-context.md
+  2) [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 ───────────────────
+    Error: expect(received).toEqual(expected) // deep equality
+    - Expected  - 1
+    + Received  + 3
+    - Array []
+    + Array [
+    +   "color-contrast（serious）：strong > .min-w-0、strong > .min-w-0 > span[lang=\"en\"]、.gap-1.text-text.grid > span > span:nth-child(1)、span:nth-child(1) > span[lang=\"en\"]、span > span:nth-child(2)、span > span:nth-child(2) > span[lang=\"en\"]",
+    + ]
+      61 |       await answer(page, MCQ_STEP, true)
+      62 |       await expect(page.locator('[data-choice="dim"]').first()).toBeVisible()
+    > 63 |       expect(await axeSerious(page)).toEqual([])
+         |                                      ^
+      64 |     })
+      65 |
+      66 |     test('複習答錯後', async ({ page }) => {
+        at C:\Projects\LinguaApp\.claude\worktrees\task-22-qa\app\e2e\a11y-answered.spec.ts:63:38
+    Error Context: test-results\a11y-answered-作答後-axe（dark）-選擇題答錯後-webkit-iphone15-repeat7\error-context.md
+  2 failed
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（light） › 選擇題答錯後 ───────────────────
+    [webkit-iphone15] › e2e\a11y-answered.spec.ts:56:5 › 作答後 axe（dark） › 選擇題答錯後 ────────────────────
+  14 passed (1.3m)

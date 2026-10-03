@@ -58,3 +58,10 @@ describe('授權與致謝頁 ↔ NOTICE', () => {
     expect(screen.getByText(/lemma\.en\.txt/)).toHaveTextContent('沒有使用')
   })
 })
+
+describe('純閱讀頁的鍵盤捲動（TASK-22 無障礙：axe scrollable-region-focusable）', () => {
+  it('授權與致謝的捲動區可用鍵盤聚焦，並以頁面標題命名', () => {
+    render(<LicensesScreen />)
+    expect(screen.getByRole('main', { name: '授權與致謝' })).toHaveAttribute('tabindex', '0')
+  })
+})

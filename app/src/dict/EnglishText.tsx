@@ -30,6 +30,11 @@ export function EnglishText({ text, disabled, onLookup, className = '' }: Englis
   const resolveKey = `${disabledKey}
 ${text}`
 
+  // 畫面出現可點英文字才預先載入字典（第一次點字不用等）；首頁等沒有英文字的畫面不載（TASK-22 效能預算：字典延遲載入）
+  useEffect(() => {
+    dict?.deps().catch((e) => console.error(e))
+  }, [dict])
+
   useEffect(() => {
     if (!dict || !disabledKey) return
     let alive = true

@@ -12,7 +12,8 @@ const byState: Record<ChoiceState, string> = {
   selected: 'border-2 border-primary bg-surface px-[13px] py-[9px]',
   correct: 'border-2 border-correct bg-correct-bg px-[13px] py-[9px]',
   wrong: 'border-2 border-error bg-error-bg px-[13px] py-[9px]',
-  dim: 'border border-line bg-surface px-3.5 py-2.5 text-disabled-text',
+  // 淡化（非選中、非正解）：文字用 muted（≥4.5:1，內含可點查義的英文字），以虛線框區分、不只靠變淡（TASK-22 AC3）
+  dim: 'border border-dashed border-border bg-surface px-3.5 py-2.5 text-muted',
 }
 const badgeBy: Record<ChoiceState, string> = {
   default: 'border-border text-muted',

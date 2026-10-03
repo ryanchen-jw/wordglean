@@ -197,3 +197,23 @@ describe('收藏（s08 已收藏＋提示）', () => {
     }
   })
 })
+
+describe('字典延遲載入（TASK-22 效能預算）', () => {
+  it('畫面上沒有可點英文字時不載字典；第一個英文字出現才預先載入', async () => {
+    const spy = vi.fn(deps)
+    const { rerender } = render(
+      <DictionaryProvider deps={spy}>
+        <p>今天</p>
+      </DictionaryProvider>,
+    )
+    await act(async () => {})
+    expect(spy).not.toHaveBeenCalled()
+
+    rerender(
+      <DictionaryProvider deps={spy}>
+        <EnglishText text="the" />
+      </DictionaryProvider>,
+    )
+    await waitFor(() => expect(spy).toHaveBeenCalled())
+  })
+})

@@ -6,7 +6,7 @@ import { CREDIT_SECTIONS } from './credits'
 
 export function LicensesScreen() {
   return (
-    <SubScreen title={t('licenses.page.title')}>
+    <SubScreen title={t('licenses.page.title')} reading>
       <div data-testid="screen-licenses" className="contents">
         <p className="text-secondary text-muted">{t('licenses.page.intro')}</p>
         {CREDIT_SECTIONS.map((section) => (

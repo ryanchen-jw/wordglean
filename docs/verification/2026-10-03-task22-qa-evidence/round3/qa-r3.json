@@ -1,0 +1,1470 @@
+{
+  "webkit": {
+    "console": [],
+    "requests": [],
+    "states": {
+      "01-home-first": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "02-placement-group": {
+        "url": "http://localhost:5389/placement",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "03-placement-result": {
+        "url": "http://localhost:5389/placement",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "04-home-default": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "05-course": {
+        "url": "http://localhost:5389/course",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "06-lesson-detail": {
+        "url": "http://localhost:5389/course",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "07-dict-sheet": {
+        "url": "http://localhost:5389/course",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-1-the": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "10-lesson-feedback": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              ".py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1 ::   Element has insufficient color contrast of 3.48 (foreground color: #8c877d, background color: #fffcf5, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of"
+            ],
+            "count": 1
+          },
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-3-be": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-4-and": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-5-of": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-6-a": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-7-in": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-8-to": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-9-have": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-10-選出最適合的字": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-11-中翻英": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "09-write-selfgrade": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-13-造句": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-14-閱讀理解": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "11-lesson-done": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "12-review": {
+        "url": "http://localhost:5389/review?lesson=a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "13-home-done": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "14-words": {
+        "url": "http://localhost:5389/words",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "15-settings": {
+        "url": "http://localhost:5389/settings",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "19-about": {
+        "url": "http://localhost:5389/about",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "20-privacy": {
+        "url": "http://localhost:5389/about/privacy",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "21-licenses": {
+        "url": "http://localhost:5389/about/licenses",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [
+            "J",
+            "Wordlist",
+            "Version",
+            "J",
+            "CC",
+            "BY",
+            "SA",
+            "Yukio",
+            "Tono",
+            "Octanove",
+            "Vocabulary",
+            "Profile",
+            "ver",
+            "CC",
+            "BY",
+            "SA",
+            "Octanove",
+            "Labs",
+            "TSL",
+            "CC",
+            "BY",
+            "SA",
+            "TOEIC",
+            "Service",
+            "List",
+            "Browne",
+            "Culligan",
+            "NGSL",
+            "CC",
+            "BY",
+            "SA",
+            "New",
+            "General",
+            "Service",
+            "List",
+            "Browne",
+            "Culligan",
+            "Phillips",
+            "J",
+            "MIT",
+            "Copyright",
+            "c",
+            "Linwei",
+            "OpenCC",
+            "lemma",
+            "en",
+            "txt",
+            "JSON",
+            "CC",
+            "BY",
+            "SA",
+            "J",
+            "J",
+            "CC",
+            "BY",
+            "SA",
+            "LibreLingo",
+            "answer",
+            "corrector",
+            "later",
+            "Copyright",
+            "LibreLingo",
+            "contributors",
+            "LibreLingo",
+            "OpenCC",
+            "Apache",
+            "Dexie",
+            "js",
+            "Apache",
+            "Copyright",
+            "c",
+            "David",
+            "Fahlander",
+            "kokoro",
+            "js",
+            "Apache",
+            "huggingface",
+            "transformers",
+            "Apache",
+            "onnxruntime",
+            "web",
+            "MIT",
+            "huggingface",
+            "transformers",
+            "phonemizer",
+            "Apache",
+            "eSpeak",
+            "NG",
+            "eSpeak",
+            "NG",
+            "GPL",
+            "later",
+            "phonemizer",
+            "GPL",
+            "Kokoro",
+            "M",
+            "Apache",
+            "moonshine",
+            "web",
+            "Apache",
+            "Moonshine",
+            "tiny",
+            "MIT",
+            "Useful",
+            "Sensors",
+            "Noto",
+            "Sans",
+            "TC",
+            "OFL",
+            "Copyright",
+            "Inc",
+            "Noto",
+            "Sans",
+            "OFL",
+            "Copyright",
+            "The",
+            "Noto",
+            "Project",
+            "Authors",
+            "Plus",
+            "Jakarta",
+            "Sans",
+            "OFL",
+            "Copyright",
+            "The",
+            "Plus",
+            "Jakarta",
+            "Sans",
+            "Project",
+            "Authors",
+            "React",
+            "MIT",
+            "supabase",
+            "js",
+            "MIT",
+            "ts",
+            "fsrs",
+            "MIT",
+            "Copyright",
+            "c",
+            "Open",
+            "Spaced",
+            "Repetition",
+            "FSRS",
+            "Lucide",
+            "ISC",
+            "Feather",
+            "MIT",
+            "Workbox",
+            "MIT",
+            "LibriSpeech",
+            "ASR",
+            "corpus",
+            "CC",
+            "BY",
+            "Vassil",
+            "Panayotov",
+            "Guoguo",
+            "Chen",
+            "Daniel",
+            "Povey",
+            "Sanjeev",
+            "Khudanpur"
+          ],
+          "bodyColors": []
+        }
+      },
+      "16-settings-dark": {
+        "url": "http://localhost:5389/settings",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "17-home-dark": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "18-lesson-dark": {
+        "url": "http://localhost:5389/lesson/a1-u01-l02",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      }
+    }
+  },
+  "chromium": {
+    "console": [
+      "[warning] No available adapters. @ http://localhost:5389/",
+      "[warning] No available adapters. @ http://localhost:5389/course",
+      "[warning] No available adapters. @ http://localhost:5389/lesson/a1-u01-l01",
+      "[warning] No available adapters. @ http://localhost:5389/lesson/a1-u01-l01",
+      "[warning] No available adapters. @ http://localhost:5389/",
+      "[warning] No available adapters. @ http://localhost:5389/words",
+      "[warning] No available adapters. @ http://localhost:5389/settings",
+      "[warning] No available adapters. @ http://localhost:5389/settings",
+      "[warning] No available adapters. @ http://localhost:5389/about/licenses",
+      "[warning] No available adapters. @ http://localhost:5389/settings",
+      "[warning] No available adapters. @ http://localhost:5389/settings",
+      "[warning] No available adapters. @ http://localhost:5389/",
+      "[warning] No available adapters. @ http://localhost:5389/lesson/a1-u01-l02"
+    ],
+    "requests": [],
+    "states": {
+      "01-home-first": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "02-placement-group": {
+        "url": "http://localhost:5389/placement",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "03-placement-result": {
+        "url": "http://localhost:5389/placement",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "04-home-default": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "05-course": {
+        "url": "http://localhost:5389/course",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "06-lesson-detail": {
+        "url": "http://localhost:5389/course",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "07-dict-sheet": {
+        "url": "http://localhost:5389/course",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-1-the": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "10-lesson-feedback": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              ".py-2\\.5.text-disabled-text[data-choice=\"dim\"]:nth-child(4) > .min-w-0.flex-1 ::   Element has insufficient color contrast of 3.48 (foreground color: #8c877d, background color: #fffcf5, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of"
+            ],
+            "count": 1
+          },
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-3-be": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-4-and": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-5-of": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-6-a": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-7-in": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-8-to": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-9-have": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-10-聽音打字": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-11-跟讀": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "help": "All page content should be contained by landmarks",
+            "nodes": [
+              ".justify-items-center > .text-secondary ::   Some page content is not contained by landmarks"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-12-選出最適合的字": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-13-中翻英": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "09-write-selfgrade": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-15-聽音選答": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-16-造句": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "08-lesson-17-閱讀理解": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "11-lesson-done": {
+        "url": "http://localhost:5389/lesson/a1-u01-l01",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "12-review": {
+        "url": "http://localhost:5389/review?lesson=a1-u01-l01",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "13-home-done": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "14-words": {
+        "url": "http://localhost:5389/words",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "15-settings": {
+        "url": "http://localhost:5389/settings",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "19-about": {
+        "url": "http://localhost:5389/about",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "20-privacy": {
+        "url": "http://localhost:5389/about/privacy",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "21-licenses": {
+        "url": "http://localhost:5389/about/licenses",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [
+            "J",
+            "Wordlist",
+            "Version",
+            "J",
+            "CC",
+            "BY",
+            "SA",
+            "Yukio",
+            "Tono",
+            "Octanove",
+            "Vocabulary",
+            "Profile",
+            "ver",
+            "CC",
+            "BY",
+            "SA",
+            "Octanove",
+            "Labs",
+            "TSL",
+            "CC",
+            "BY",
+            "SA",
+            "TOEIC",
+            "Service",
+            "List",
+            "Browne",
+            "Culligan",
+            "NGSL",
+            "CC",
+            "BY",
+            "SA",
+            "New",
+            "General",
+            "Service",
+            "List",
+            "Browne",
+            "Culligan",
+            "Phillips",
+            "J",
+            "MIT",
+            "Copyright",
+            "c",
+            "Linwei",
+            "OpenCC",
+            "lemma",
+            "en",
+            "txt",
+            "JSON",
+            "CC",
+            "BY",
+            "SA",
+            "J",
+            "J",
+            "CC",
+            "BY",
+            "SA",
+            "LibreLingo",
+            "answer",
+            "corrector",
+            "later",
+            "Copyright",
+            "LibreLingo",
+            "contributors",
+            "LibreLingo",
+            "OpenCC",
+            "Apache",
+            "Dexie",
+            "js",
+            "Apache",
+            "Copyright",
+            "c",
+            "David",
+            "Fahlander",
+            "kokoro",
+            "js",
+            "Apache",
+            "huggingface",
+            "transformers",
+            "Apache",
+            "onnxruntime",
+            "web",
+            "MIT",
+            "huggingface",
+            "transformers",
+            "phonemizer",
+            "Apache",
+            "eSpeak",
+            "NG",
+            "eSpeak",
+            "NG",
+            "GPL",
+            "later",
+            "phonemizer",
+            "GPL",
+            "Kokoro",
+            "M",
+            "Apache",
+            "moonshine",
+            "web",
+            "Apache",
+            "Moonshine",
+            "tiny",
+            "MIT",
+            "Useful",
+            "Sensors",
+            "Noto",
+            "Sans",
+            "TC",
+            "OFL",
+            "Copyright",
+            "Inc",
+            "Noto",
+            "Sans",
+            "OFL",
+            "Copyright",
+            "The",
+            "Noto",
+            "Project",
+            "Authors",
+            "Plus",
+            "Jakarta",
+            "Sans",
+            "OFL",
+            "Copyright",
+            "The",
+            "Plus",
+            "Jakarta",
+            "Sans",
+            "Project",
+            "Authors",
+            "React",
+            "MIT",
+            "supabase",
+            "js",
+            "MIT",
+            "ts",
+            "fsrs",
+            "MIT",
+            "Copyright",
+            "c",
+            "Open",
+            "Spaced",
+            "Repetition",
+            "FSRS",
+            "Lucide",
+            "ISC",
+            "Feather",
+            "MIT",
+            "Workbox",
+            "MIT",
+            "LibriSpeech",
+            "ASR",
+            "corpus",
+            "CC",
+            "BY",
+            "Vassil",
+            "Panayotov",
+            "Guoguo",
+            "Chen",
+            "Daniel",
+            "Povey",
+            "Sanjeev",
+            "Khudanpur"
+          ],
+          "bodyColors": []
+        }
+      },
+      "16-settings-dark": {
+        "url": "http://localhost:5389/settings",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "17-home-dark": {
+        "url": "http://localhost:5389/",
+        "axe": [],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      },
+      "18-lesson-dark": {
+        "url": "http://localhost:5389/lesson/a1-u01-l02",
+        "axe": [
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "help": "Page should contain a level-one heading",
+            "nodes": [
+              "html ::   Page must have a level-one heading"
+            ],
+            "count": 1
+          }
+        ],
+        "measure": {
+          "overflow": [],
+          "wrapped": [],
+          "small": [],
+          "latin": [],
+          "bodyColors": []
+        }
+      }
+    }
+  }
+}

@@ -100,3 +100,38 @@ describe('單字卡：選項只顯示第一義、回饋顯示完整釋義（TASK
     expect(screen.getByRole('status')).toHaveTextContent('be 是「是；保持（某種狀態）」')
   })
 })
+
+describe('單字卡：顯示英文原本的大小寫（TASK-22 移交①）', () => {
+  it('題庫 word＝i：卡面與答錯回饋都顯示 I', async () => {
+    const i: WordCardItem = {
+      id: 'a1-u01-l02-q02',
+      type: 'wordCard',
+      word: 'i',
+      exampleEn: 'I like tea.',
+      exampleZh: '我喜歡茶。',
+      glossZh: '我',
+      distractorsZh: ['你', '他', '它'],
+    }
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <WordCardView
+          item={i}
+          step={{
+            key: 'k',
+            itemId: i.id,
+            type: 'wordCard',
+            srsWord: 'i',
+            choice: { options: ['我', '你', '他', '它'], answer: 0 },
+          }}
+          onAnswer={() => {}}
+          onContinue={() => {}}
+        />
+      </DictionaryProvider>,
+    )
+    const card = screen.getByText('I', { selector: '[lang="en"], [lang="en"] *' })
+    expect(card).toBeInTheDocument()
+    expect(screen.queryByText('i', { exact: true })).toBeNull()
+    fireEvent.click(screen.getByRole('radio', { name: /你/ }))
+    expect(await screen.findByRole('status')).toHaveTextContent(/^I/)
+  })
+})

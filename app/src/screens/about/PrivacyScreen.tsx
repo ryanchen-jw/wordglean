@@ -6,7 +6,7 @@ import { PRIVACY_ITEMS } from './privacyItems'
 
 export function PrivacyScreen() {
   return (
-    <SubScreen title={t('privacy.page.title')}>
+    <SubScreen title={t('privacy.page.title')} reading>
       <div data-testid="screen-privacy" className="contents">
         <p className="rounded-control bg-hint-bg px-3.5 py-2.5 text-secondary text-hint">
           {t('privacy.page.disclaimer')}

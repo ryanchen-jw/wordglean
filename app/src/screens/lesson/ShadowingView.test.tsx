@@ -272,8 +272,10 @@ describe('跟讀：跳過、麥克風、模型下載', () => {
     renderLesson(f.services)
     expect(await screen.findByText('需要下載語音辨識模型')).toBeInTheDocument()
     expect(screen.getByText('約 50–80MB，只需下載一次，之後不用網路也能跟讀。')).toBeInTheDocument()
-    expect(button('語音辨識模型下載中，暫時無法錄音')).toBeDisabled()
-    expect(screen.getByText('模型下載完才能錄音')).toBeInTheDocument()
+    // 還沒開始下載：錄音鈕不說「下載中」（TASK-22 移交 G3①）
+    expect(button('模型下載完才能錄音')).toBeDisabled()
+    expect(screen.getByText('模型下載完才能錄音', { selector: 'span' })).toBeInTheDocument()
+    expect(screen.queryByText(/下載中/)).toBeNull()
     expect(button('先跳過這題')).toBeInTheDocument()
     expect(f.stt.load).not.toHaveBeenCalled()
 
@@ -283,6 +285,7 @@ describe('跟讀：跳過、麥克風、模型下載', () => {
     // 換狀態後畫面在下一次 render 才更新（訂閱可能晚於 set），一律等畫面出現
     expect(await screen.findByText('語音辨識模型下載中')).toBeInTheDocument()
     expect(screen.getByText('42%')).toBeInTheDocument()
+    expect(button('語音辨識模型下載中，暫時無法錄音')).toBeDisabled()
     expect(screen.getByRole('progressbar', { name: '語音辨識模型下載中' })).toHaveAttribute(
       'aria-valuenow',
       '42',
@@ -294,7 +297,13 @@ describe('跟讀：跳過、麥克風、模型下載', () => {
     ).toBeInTheDocument()
 
     act(() => f.set({ kind: 'failed' }))
-    fireEvent.click(await screen.findByRole('button', { name: '下載中斷・重試' }))
+    // 下載失敗：標題與進度條、錄音鈕都不再說「下載中」（TASK-22 移交 G3①）
+    await screen.findByRole('button', { name: '下載中斷・重試' })
+    expect(screen.getByText('需要下載語音辨識模型')).toBeInTheDocument()
+    expect(screen.getByRole('progressbar', { name: '下載中斷' })).toBeInTheDocument()
+    expect(button('模型下載完才能錄音')).toBeDisabled()
+    expect(screen.queryByText(/下載中(?!斷)/)).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '下載中斷・重試' }))
     expect(f.stt.load).toHaveBeenCalledTimes(2)
     act(() => f.set({ kind: 'ready' }))
     expect(await screen.findByRole('button', { name: '開始錄音' })).toBeEnabled()
@@ -467,6 +476,24 @@ describe('驗收修正（2026-10-02 隔離驗收 P1／P2）', () => {
     await vi.waitFor(() => expect(errors).toHaveBeenCalled())
     click('離開')
     expect(await screen.findByRole('alertdialog')).toHaveTextContent('要離開這一課嗎？')
+  })
+
+  it('移交（TASK-14 複驗 P2）跳過時存檔與前進都失敗：留在這題，之後仍能開始錄音', async () => {
+    const errors = vi.spyOn(console, 'error').mockImplementation(() => {})
+    const f = fakeSpeech()
+    renderLesson(f.services)
+    await screen.findByRole('button', { name: '開始錄音' })
+    const tx = vi
+      .spyOn(db, 'transaction')
+      .mockImplementation((() => Promise.reject(new Error('寫入失敗'))) as never)
+    click('現在不方便說話（這題先跳過）')
+    await vi.waitFor(() =>
+      expect(errors).toHaveBeenCalledWith('[lesson] 無法前進到下一題', expect.anything()),
+    )
+    tx.mockRestore()
+    expect(screen.getByText('1／2')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: '開始錄音' }))
+    expect(await screen.findByRole('button', { name: '結束錄音' })).toBeInTheDocument()
   })
 
   function pendingMic() {

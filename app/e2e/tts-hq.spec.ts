@@ -3,6 +3,7 @@
 // 模擬支援 WebGPU 的手機（navigator.gpu 替身）；Hugging Face／jsDelivr 一律攔下回失敗，絕不真的下載 310MB
 import { expect, test, type BrowserContext, type Page } from '@playwright/test'
 import { LESSON, playTo } from './lesson.js'
+import { measureMobile } from './measure.js'
 import { fakeSystemVoice, lastSpoken } from './speech.js'
 
 // Service Worker 會接手請求、讓攔截失效；本檔不需要離線能力
@@ -106,6 +107,8 @@ test('設定：下載前告知 310MB；下載失敗顯示「下載中斷・重�
   const dialog = page.getByRole('alertdialog')
   await expect(dialog).toContainText('下載高音質發音？')
   await expect(dialog).toContainText('約 310MB，建議連上 Wi-Fi 再下載')
+  // 定稿文案裡的英文（Wi-Fi）與 i18n 守衛同一份白名單，手機量測不誤判（TASK-22 移交）
+  expect((await measureMobile(page)).latin).toEqual([])
   await dialog.getByRole('button', { name: '下載', exact: true }).click()
   await expect(page.getByRole('button', { name: '下載中斷・重試' })).toBeVisible({
     timeout: 30_000,

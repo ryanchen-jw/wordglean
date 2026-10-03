@@ -29,3 +29,11 @@ describe('隱私說明', () => {
     expect(MD.match(/^## /gm)).toHaveLength(PRIVACY_ITEMS.length)
   })
 })
+
+describe('純閱讀頁的鍵盤捲動（TASK-22 無障礙：axe scrollable-region-focusable）', () => {
+  it('隱私說明的捲動區可用鍵盤聚焦，並以頁面標題命名', () => {
+    render(<PrivacyScreen />)
+    const main = screen.getByRole('main', { name: '隱私說明' })
+    expect(main).toHaveAttribute('tabindex', '0')
+  })
+})
