@@ -8,7 +8,7 @@
 - 23 張卡：Done 19（含 TASK-9，隔離複驗 PASS）、In Review 1（TASK-15，只差 AC#4 免費模型評測）、未開工 3（TASK-21／22／23，等前置卡）。花費 $0。
 - 題庫 984 課、16,629 題全數進 main（A1 135、A2 158、B1 269、B2 304、C1 118）；全庫 `--require-judge` 全綠。**剔除 0 題**（0／16,629）；豁免 8 處（見 TASK-9 節）。題庫花費 $0，授權 CC BY-SA 4.0，隨機 40 題抽樣已附。B1 聽選題 200 題改為「正解換句話說、干擾項沿用音檔字」（8f46cc7）；A1、A2 維持字面辨認。
 - 每張 Done 卡都經隔離驗收官實跑＋突變紅證；有 UI 的卡另有兩引擎走查。題庫走三關（盲審、課綱審查、最終複審）＋執行長親審，全部由 Claude 進行，沒有人類語言專家複核。
-- 全部 commit 只在本機 main，未 push、未部署（G7）。待創辦人裁示 2 項：①B2 的 gook、retard 有辱罵義，目前只教中性義並加警語，是否移出課綱；②課綱來源含 CEFR-J（不是 CC BY-SA），題庫整體標 CC BY-SA 4.0 的表述要不要維持。
+- 全部 commit 只在本機 main，未 push、未部署（G7）。創辦人裁示 2 項（10-03）皆選 B，已併入 215ae3e：①B2 的 gook、retard 移出課綱；②題庫授權改為「題目文字 CC BY-SA 4.0、選字與分級依原來源授權」。目前無待裁示。
 
 ## 總覽
 
@@ -324,8 +324,8 @@ A1、A2 聽選維持字面辨認（初級聽辨適性），不在補正範圍。
   - a2-u26「常用動作（二）」
   - c1-u22 主題寫政府、政治、法律，實際是宗教字
 - 課綱誤植 1 處：C1 的 chauffer 應為 chauffeur。曾授權改課綱，但 lexicon 沒有 chauffeur、課綱測試擋下，已撤回；c1-u12-l02 照現況教（ECDICT「小型輕便爐」，註明舊式、罕用），之後在 data 層處理。
-- **待創辦人裁示 ①**：B2 的 gook、retard 有辱罵義，目前只教中性義（黏稠物；動詞「延緩」）並在釋義加警語、不放進人物情境；是否從課綱移除待裁示（d4be088）。
-- **待創辦人裁示 ②**：題庫整體授權表述——課綱來源含 CEFR-J（不是 CC BY-SA），題庫整體標 CC BY-SA 4.0（15661df），是否維持。
+- **已裁 B ①（10-03，215ae3e）**：gook、retard 移出 B2 課綱。排課器新增課綱排除字（offensive.mjs 的 CURRICULUM_EXCLUDED_WORDS，照常佔位切課、切好後才剔除；validator 新增 EXCLUDED_WORD），只動 b2-u45-l05、b2-u53-l07 兩課各少一字，其他 982 課不動。刪 3 題（b2-u45-l05-q02、q13，b2-u53-l07-q06），補 b2-u45-l05-q17（tortoiseshell），b2-u53-l07-q15 短文改一句；改動題只看英文重新盲答全一致；check-items 984 課全綠、content npm test 213/213、app 795 通過；重產課綱與檔案一致。對照表 docs/pending/2026-10-02-item-bank-full/founder-ruling-gook-retard.md。
+- **已裁 B ②（10-03，215ae3e）**：NOTICE、content/README、content/CLAUDE.md 改為「題目文字 CC BY-SA 4.0；選字與分級依據的來源（CEFR-J 條款、Octanove／TSL／NGSL CC BY-SA 4.0、ECDICT MIT）不在此範圍、各依原授權，見 data/LICENSES.md」。
 - referent：lexicon 只標名詞，題目只教名詞（形容詞用法極少見，屬課綱層面）。
 - wornout：lexicon 的 headword 寫成 wornout，單字卡保留 headword，例句與其他題寫 worn out，釋義註明「應寫 worn out」；lexicon 不動（data 層備查）。
 - zh-guard 豁免累計 51 詞（`content/scripts/lib/zh-guard.mjs` 的 `TWP_ACCEPTED`；TASK-9 前 13 詞，TASK-9 期間新增 38 詞，B1、B2 新增者各附先紅後綠測試）。這些是 opencc 會改寫、但台灣本來就通行的寫法；其餘誤擋一律改寫迴避、沒有加豁免。豁免清單是否收斂移交 TASK-22。
