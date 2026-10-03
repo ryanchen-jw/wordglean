@@ -151,6 +151,14 @@ for (const [phrase, zh] of [
   });
 }
 
+test('B2 b2d 回報的 opencc 誤擋：游擊、游標、管弦', () => {
+  const doc = fixture('a1-u01-l01');
+  card(doc, 0).exampleZh = '那本歷史書描述游擊隊如何在夜裡穿越山區。';
+  card(doc, 1).exampleZh = '把游標移到這個按鈕上。';
+  card(doc, 2).exampleZh = '我們去聽了一場管弦樂團的演出。';
+  assert.deepEqual(checkA1(doc), []);
+});
+
 test('pilot 實際產出撞到的誤擋：found（find 的過去式，A1）、café（cafe A1）、對象', () => {
   const doc = fixture('a1-u01-l01');
   card(doc, 0).exampleEn = 'I found the bag in the café.';
