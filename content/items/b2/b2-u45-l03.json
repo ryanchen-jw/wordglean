@@ -218,16 +218,19 @@
     },
     {
       "id": "b2-u45-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "beagle",
-      "instructionZh": "用 beagle 造一個句子，說說你認識或看過的一隻米格魯。",
+      "type": "translate",
+      "promptZh": "我表哥的米格魯每天早上都會叫他起床。",
+      "hintWords": [
+        "beagle"
+      ],
       "referenceEn": [
-        "My neighbor has a beagle that barks at the postman every day.",
-        "I once saw a tiny beagle sleeping in a shopping bag."
+        "My cousin's beagle wakes him up every morning.",
+        "Every morning, my cousin's beagle wakes him up."
       ],
       "rubricZh": [
-        "句子要用到 beagle（例如 a beagle、my beagle）",
-        "時態配合內容（例如 has、saw 等）"
+        "beagle 表示「米格魯」（例如 my cousin's beagle、the beagle my cousin has 等）",
+        "「叫他起床」可寫，例如 wakes him up、gets him out of bed 等",
+        "動詞配合主詞與時態（例如 wakes、will wake 等）"
       ]
     }
   ],
@@ -277,6 +280,12 @@
         "message": "執行長第②③關裁示修正：最終複審 FIX 1：聽選正解照抄音檔；改考 barks 的換句話說，干擾項沿用 afraid、cats",
         "resolution": "改前：[\"Cats\", \"Birds\", \"Big dogs\", \"Strangers\"]；改後：[\"She gets noisy\", \"She runs away from them\", \"She is afraid of them\", \"She chases the cats\"]",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（beagle）原位換成翻譯題，沿用題 id b2-u45-l03-q16；目標字沿用 beagle",
+        "resolution": "改為 translate：promptZh「我表哥的米格魯每天早上都會叫他起床。」、hintWords [\"beagle\"]、referenceEn [\"My cousin's beagle wakes him up every morning.\",\"Every morning, my cousin's beagle wakes him up.\"]、rubricZh [\"beagle 表示「米格魯」（例如 my cousin's beagle、the beagle my cousin has 等）\",\"「叫他起床」可寫，例如 wakes him up、gets him out of bed 等\",\"動詞配合主詞與時態（例如 wakes、will wake 等）\"]（原 makeSentence：instructionZh「用 beagle 造一個句子，說說你認識或看過的一隻米格魯。」、referenceEn [\"My neighbor has a beagle that barks at the postman every day.\",\"I once saw a tiny beagle sleeping in a shopping bag.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

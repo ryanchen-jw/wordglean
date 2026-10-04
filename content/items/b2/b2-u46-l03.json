@@ -229,17 +229,19 @@
     },
     {
       "id": "b2-u46-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "spokeswoman",
-      "instructionZh": "用 spokeswoman 造一個句子，說說某家公司或機構的女發言人說了什麼。",
+      "type": "translate",
+      "promptZh": "這家博物館請了一位女發言人來應付媒體。",
+      "hintWords": [
+        "spokeswoman"
+      ],
       "referenceEn": [
-        "A spokeswoman for the zoo said the baby elephant was healthy.",
-        "The bank's spokeswoman said that the new online service would start next month."
+        "The museum has hired a spokeswoman to deal with the media.",
+        "The museum hired a spokeswoman to handle the media."
       ],
       "rubricZh": [
-        "句子要用到 spokeswoman（例如 a spokeswoman for…、the bank's spokeswoman）",
-        "說了什麼可用不同方式表達，例如引述、轉述（said that…）等",
-        "時態配合內容（例如 said、says 等）"
+        "spokeswoman 表示「女發言人」（例如 a spokeswoman 等）",
+        "「應付媒體」可寫，例如 deal with the media、handle the media 等",
+        "時態可用過去式或現在完成式（例如 hired、has hired 等）"
       ]
     }
   ],
@@ -301,6 +303,12 @@
         "message": "執行長第②③關裁示修正：裁示「評分要點不寫死結構」全批掃描：表語用法也正確",
         "resolution": "改前：\"要用 corrupt 修飾名詞（例如 a corrupt mayor）\"；改後：\"要用 corrupt（例如 a corrupt mayor、a mayor who was corrupt 等）\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（spokeswoman）原位換成翻譯題，沿用題 id b2-u46-l03-q17；目標字沿用 spokeswoman",
+        "resolution": "改為 translate：promptZh「這家博物館請了一位女發言人來應付媒體。」、hintWords [\"spokeswoman\"]、referenceEn [\"The museum has hired a spokeswoman to deal with the media.\",\"The museum hired a spokeswoman to handle the media.\"]、rubricZh [\"spokeswoman 表示「女發言人」（例如 a spokeswoman 等）\",\"「應付媒體」可寫，例如 deal with the media、handle the media 等\",\"時態可用過去式或現在完成式（例如 hired、has hired 等）\"]（原 makeSentence：instructionZh「用 spokeswoman 造一個句子，說說某家公司或機構的女發言人說了什麼。」、referenceEn [\"A spokeswoman for the zoo said the baby elephant was healthy.\",\"The bank's spokeswoman said that the new online service would start next month.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

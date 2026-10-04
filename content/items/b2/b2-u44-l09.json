@@ -231,17 +231,19 @@
     },
     {
       "id": "b2-u44-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "misfortune",
-      "instructionZh": "用 misfortune 造一個句子，說說一次你很倒楣的經驗。",
+      "type": "translate",
+      "promptZh": "他總是把自己的不幸怪罪到別人身上。",
+      "hintWords": [
+        "misfortune"
+      ],
       "referenceEn": [
-        "I had the misfortune of missing the last train home.",
-        "By some misfortune, my phone fell into the lake."
+        "He always blames other people for his own misfortune.",
+        "He always blames others for his misfortune."
       ],
       "rubricZh": [
-        "句子要用到 misfortune",
-        "misfortune 的用法，例如 had the misfortune of、by some misfortune 等",
-        "時態合理（例如 had、fell 等）"
+        "misfortune 表示「不幸、厄運」（例如 his own misfortune 等）",
+        "「怪罪到別人身上」可寫，例如 blame others for…、blame other people for… 等",
+        "always 位置不扣分；時態可用現在式或過去式（例如 blames、blamed 等）"
       ]
     }
   ],
@@ -315,6 +317,12 @@
         "message": "執行長第②③關裁示修正：第③關 B FIX #36：和 l03 q14 同為當地人慷慨捐助；第 2 批最終複審 FIX #9：nervously 只看英文也說得通",
         "resolution": "改前：\"緊張地\"；改後：\"用力地\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（misfortune）原位換成翻譯題，沿用題 id b2-u44-l09-q17；目標字沿用 misfortune",
+        "resolution": "改為 translate：promptZh「他總是把自己的不幸怪罪到別人身上。」、hintWords [\"misfortune\"]、referenceEn [\"He always blames other people for his own misfortune.\",\"He always blames others for his misfortune.\"]、rubricZh [\"misfortune 表示「不幸、厄運」（例如 his own misfortune 等）\",\"「怪罪到別人身上」可寫，例如 blame others for…、blame other people for… 等\",\"always 位置不扣分；時態可用現在式或過去式（例如 blames、blamed 等）\"]（原 makeSentence：instructionZh「用 misfortune 造一個句子，說說一次你很倒楣的經驗。」、referenceEn [\"I had the misfortune of missing the last train home.\",\"By some misfortune, my phone fell into the lake.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

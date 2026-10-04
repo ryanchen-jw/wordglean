@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u12-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "amuse",
-      "instructionZh": "用 amuse 造一個句子，說說什麼事情會讓你覺得好笑或開心。",
+      "type": "translate",
+      "promptZh": "我爺爺的老笑話總是能逗我們開心。",
+      "hintWords": [
+        "amuse"
+      ],
       "referenceEn": [
-        "My cat's strange habits always amuse me.",
-        "Old comedy movies still amuse me after many years."
+        "My grandfather's old jokes always amuse us.",
+        "We are always amused by my grandpa's old jokes."
       ],
       "rubricZh": [
-        "句子要用到 amuse（例如 amuse me、be amused by…）",
-        "句子要說到你自己"
+        "amuse 表示「逗樂、使開心」（例如 amuse us、be amused by 等）",
+        "always 位置不扣分；主詞是 jokes 時動詞不加 s",
+        "「爺爺」可寫，例如 grandfather、grandpa 等"
       ]
     }
   ],
@@ -452,6 +455,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"hesitation 常用 without hesitation、without any hesitation\",\"「答應」可寫 agree、say yes 等\"]；改後：[\"hesitation 的用法，例如 without hesitation、without any hesitation 等\",\"「答應」可寫，例如 agree、say yes 等\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（amuse）原位換成翻譯題，沿用題 id b2-u12-l01-q17；目標字沿用 amuse",
+        "resolution": "改為 translate：promptZh「我爺爺的老笑話總是能逗我們開心。」、hintWords [\"amuse\"]、referenceEn [\"My grandfather's old jokes always amuse us.\",\"We are always amused by my grandpa's old jokes.\"]、rubricZh [\"amuse 表示「逗樂、使開心」（例如 amuse us、be amused by 等）\",\"always 位置不扣分；主詞是 jokes 時動詞不加 s\",\"「爺爺」可寫，例如 grandfather、grandpa 等\"]（原 makeSentence：instructionZh「用 amuse 造一個句子，說說什麼事情會讓你覺得好笑或開心。」、referenceEn [\"My cat's strange habits always amuse me.\",\"Old comedy movies still amuse me after many years.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

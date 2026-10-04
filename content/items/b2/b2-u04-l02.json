@@ -230,16 +230,18 @@
     },
     {
       "id": "b2-u04-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "catalog",
-      "instructionZh": "用 catalog 造一個句子，說說你怎麼用目錄挑選或訂購東西。",
+      "type": "translate",
+      "promptZh": "這本型錄裡的價格都已經過時了。",
+      "hintWords": [
+        "catalog"
+      ],
       "referenceEn": [
-        "I chose a new sofa from the store's online catalog.",
-        "I always look through the catalog before I go shopping."
+        "The prices in this catalog are already out of date.",
+        "All the prices in this catalog are out of date now."
       ],
       "rubricZh": [
-        "句子要用到 catalog（例如 the catalog、an online catalog；英式拼法 catalogue 也正確）",
-        "句子要說到你自己怎麼使用目錄"
+        "catalog 指商品型錄（例如 this catalog 等；拼成 catalogue 也正確）",
+        "「過時」可寫，例如 out of date、old、no longer correct 等"
       ]
     }
   ],
@@ -433,6 +435,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，賣掉公司後成為 salesperson／shopkeeper 也說得通",
         "resolution": "改前：\"店主\"；改後：\"青少年\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（catalog）原位換成翻譯題，沿用題 id b2-u04-l02-q17；目標字沿用 catalog",
+        "resolution": "改為 translate：promptZh「這本型錄裡的價格都已經過時了。」、hintWords [\"catalog\"]、referenceEn [\"The prices in this catalog are already out of date.\",\"All the prices in this catalog are out of date now.\"]、rubricZh [\"catalog 指商品型錄（例如 this catalog 等；拼成 catalogue 也正確）\",\"「過時」可寫，例如 out of date、old、no longer correct 等\"]（原 makeSentence：instructionZh「用 catalog 造一個句子，說說你怎麼用目錄挑選或訂購東西。」、referenceEn [\"I chose a new sofa from the store's online catalog.\",\"I always look through the catalog before I go shopping.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

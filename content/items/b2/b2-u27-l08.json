@@ -220,17 +220,19 @@
     },
     {
       "id": "b2-u27-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "humanize",
-      "instructionZh": "用 humanize 造一個句子，說說一家公司或一種產品怎麼讓人覺得更有人情味。",
+      "type": "translate",
+      "promptZh": "這家公司用植物和溫暖的顏色，讓辦公室更有人情味。",
+      "hintWords": [
+        "humanize"
+      ],
       "referenceEn": [
-        "The bank tried to humanize its service by letting customers talk to real people.",
-        "Cute robots help humanize technology for children."
+        "The company uses plants and warm colors to humanize its offices.",
+        "The company has humanized its offices with plants and warm colors."
       ],
       "rubricZh": [
-        "句子要用到 humanize",
-        "humanize 後面接受詞（例如 humanize its service、humanize technology 等）",
-        "時態配合內容（例如 tried、help 等）"
+        "humanize 指使更有人情味（例如 humanize its offices 等）",
+        "時態可用現在式、過去式或現在完成式（例如 uses、used、has humanized 等）",
+        "「用…」可寫，例如 uses… to…、with… 等"
       ]
     }
   ],
@@ -346,6 +348,12 @@
         "message": "第②關 issue 結案：'She loves Shakespearean comedies more than his sad plays' 的 his 沒有先行詞（句中無 Shakespeare 名詞），文法上指涉不清；且 sad plays 中譯成「悲劇」稍過度。建議改 'She loves Shakespeare's comedies more than his tragedies' 以外的寫法，如 'She prefers Shakespearean comedies to Shakespearean tragedies.'",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（humanize）原位換成翻譯題，沿用題 id b2-u27-l08-q16；目標字沿用 humanize",
+        "resolution": "改為 translate：promptZh「這家公司用植物和溫暖的顏色，讓辦公室更有人情味。」、hintWords [\"humanize\"]、referenceEn [\"The company uses plants and warm colors to humanize its offices.\",\"The company has humanized its offices with plants and warm colors.\"]、rubricZh [\"humanize 指使更有人情味（例如 humanize its offices 等）\",\"時態可用現在式、過去式或現在完成式（例如 uses、used、has humanized 等）\",\"「用…」可寫，例如 uses… to…、with… 等\"]（原 makeSentence：instructionZh「用 humanize 造一個句子，說說一家公司或一種產品怎麼讓人覺得更有人情味。」、referenceEn [\"The bank tried to humanize its service by letting customers talk to real people.\",\"Cute robots help humanize technology for children.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

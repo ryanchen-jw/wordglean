@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u47-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "spare",
-      "instructionZh": "用 spare 造一個句子，說說你空閒時做什麼，或你會準備哪些備用的東西。",
+      "type": "translate",
+      "promptZh": "你有多餘的筆可以借我嗎？",
+      "hintWords": [
+        "spare"
+      ],
       "referenceEn": [
-        "In my spare time, I like to go cycling by the river.",
-        "I always carry a spare pair of socks in my sports bag."
+        "Do you have a spare pen I could borrow?",
+        "Have you got a spare pen that I can borrow?"
       ],
       "rubricZh": [
-        "句子要用到 spare（例如 spare time、a spare pair of socks）",
-        "spare 也可當動詞，例如 spare some time 等"
+        "spare 放在名詞前，表示「多餘的、備用的」（例如 a spare pen 等）",
+        "「借我」可寫，例如 I could borrow、lend me 等",
+        "問句可用 Do you have、Have you got 等"
       ]
     }
   ],
@@ -336,6 +339,12 @@
         "message": "執行長第②③關裁示修正：重新盲答：干擾項「It started right at noon」無法嚴格排除（音檔只說雨中午停），換成音檔明確否定的內容（比賽在雨停後晚一小時開始）",
         "resolution": "改前：\"It started right at noon\"；改後：\"It began in the rain\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（spare）原位換成翻譯題，沿用題 id b2-u47-l01-q17；目標字沿用 spare",
+        "resolution": "改為 translate：promptZh「你有多餘的筆可以借我嗎？」、hintWords [\"spare\"]、referenceEn [\"Do you have a spare pen I could borrow?\",\"Have you got a spare pen that I can borrow?\"]、rubricZh [\"spare 放在名詞前，表示「多餘的、備用的」（例如 a spare pen 等）\",\"「借我」可寫，例如 I could borrow、lend me 等\",\"問句可用 Do you have、Have you got 等\"]（原 makeSentence：instructionZh「用 spare 造一個句子，說說你空閒時做什麼，或你會準備哪些備用的東西。」、referenceEn [\"In my spare time, I like to go cycling by the river.\",\"I always carry a spare pair of socks in my sports bag.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

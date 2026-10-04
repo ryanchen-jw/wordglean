@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u24-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "elect",
-      "instructionZh": "用 elect 造一個句子，說說你參加過的班級或社團選舉。",
+      "type": "translate",
+      "promptZh": "這個村子每四年選一次村長。",
+      "hintWords": [
+        "elect"
+      ],
       "referenceEn": [
-        "My classmates elected me as class leader in high school.",
-        "I was elected leader of my book club last year."
+        "This village elects a new head every four years.",
+        "Every four years, the people in this village elect a village head."
       ],
       "rubricZh": [
-        "句子要用到 elect",
-        "時態合理即可"
+        "elect 指選出（例如 elect a village head 等）；寫被動 a village head is elected 也正確",
+        "固定發生的事用現在式；「村長」可寫，例如 village head、village leader 等"
       ]
     }
   ],
@@ -419,6 +421,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，The commission asked each witness 也說得通",
         "resolution": "改前：\"委員會\"；改後：\"強制實施\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（elect）原位換成翻譯題，沿用題 id b2-u24-l05-q17；目標字沿用 elect",
+        "resolution": "改為 translate：promptZh「這個村子每四年選一次村長。」、hintWords [\"elect\"]、referenceEn [\"This village elects a new head every four years.\",\"Every four years, the people in this village elect a village head.\"]、rubricZh [\"elect 指選出（例如 elect a village head 等）；寫被動 a village head is elected 也正確\",\"固定發生的事用現在式；「村長」可寫，例如 village head、village leader 等\"]（原 makeSentence：instructionZh「用 elect 造一個句子，說說你參加過的班級或社團選舉。」、referenceEn [\"My classmates elected me as class leader in high school.\",\"I was elected leader of my book club last year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

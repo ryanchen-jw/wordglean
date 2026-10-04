@@ -229,17 +229,19 @@
     },
     {
       "id": "b2-u27-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "supernatural",
-      "instructionZh": "用 supernatural 造一個句子，說說你喜歡或不喜歡的超自然故事、電影或遊戲。",
+      "type": "translate",
+      "promptZh": "這本小說充滿了鬼和魔法這類超自然的東西。",
+      "hintWords": [
+        "supernatural"
+      ],
       "referenceEn": [
-        "I love films about supernatural creatures like ghosts.",
-        "I don't enjoy supernatural stories, because they scare me at night."
+        "This novel is full of supernatural things like ghosts and magic.",
+        "There are many supernatural elements, such as ghosts and magic, in this novel."
       ],
       "rubricZh": [
-        "句子要用到 supernatural",
-        "supernatural 放在名詞前（例如 supernatural stories、supernatural powers 等）",
-        "時態配合內容（例如 love、don't enjoy 等）"
+        "supernatural 放名詞前，表示「超自然的」（例如 supernatural things、supernatural elements 等）",
+        "「充滿了」可寫，例如 is full of、there are many… 等",
+        "「這類」可寫，例如 like、such as 等"
       ]
     }
   ],
@@ -349,6 +351,12 @@
         "message": "第②關 issue 結案：疑似：展覽 'attracted thousands of viewers' 較不自然，展覽參觀者一般用 visitors；建議改 visitors（中譯「觀眾」可改「參觀者」）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（supernatural）原位換成翻譯題，沿用題 id b2-u27-l06-q17；目標字沿用 supernatural",
+        "resolution": "改為 translate：promptZh「這本小說充滿了鬼和魔法這類超自然的東西。」、hintWords [\"supernatural\"]、referenceEn [\"This novel is full of supernatural things like ghosts and magic.\",\"There are many supernatural elements, such as ghosts and magic, in this novel.\"]、rubricZh [\"supernatural 放名詞前，表示「超自然的」（例如 supernatural things、supernatural elements 等）\",\"「充滿了」可寫，例如 is full of、there are many… 等\",\"「這類」可寫，例如 like、such as 等\"]（原 makeSentence：instructionZh「用 supernatural 造一個句子，說說你喜歡或不喜歡的超自然故事、電影或遊戲。」、referenceEn [\"I love films about supernatural creatures like ghosts.\",\"I don't enjoy supernatural stories, because they scare me at night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

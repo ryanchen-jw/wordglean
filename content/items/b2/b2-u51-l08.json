@@ -215,16 +215,19 @@
     },
     {
       "id": "b2-u51-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "well-organized",
-      "instructionZh": "用 well-organized 造一個句子，描述一個井然有序的人、地方或活動。",
+      "type": "translate",
+      "promptZh": "這場音樂節辦得井然有序，每個節目都準時開始。",
+      "hintWords": [
+        "well-organized"
+      ],
       "referenceEn": [
-        "My mother's kitchen is very well-organized.",
-        "Our school sports day was well-organized and ended on time."
+        "The music festival was well-organized, and every show started on time.",
+        "It was a well-organized music festival; every show began on time."
       ],
       "rubricZh": [
-        "句子要用到 well-organized（例如 is very well-organized、was well-organized）",
-        "時態配合內容（例如 is、was 等）"
+        "well-organized 當形容詞（例如 was well-organized、a well-organized festival 等）",
+        "「準時開始」可寫，例如 started on time、began on time 等",
+        "時態可用過去式或現在式（例如 was、is 等）"
       ]
     }
   ],
@@ -358,6 +361,12 @@
         "message": "第②關 issue 結案：疑似邏輯：\"the teacher sometimes spoke unclearly because of the traffic noise\"——噪音讓人「聽不清楚」，不是讓教練「說得不清楚」，因果不順。建議改為 \"it was hard to hear the teacher because of the traffic noise\" 類寫法，或給 unclearly 別的原因（例如他低頭看筆記時說得不清楚）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/13 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（well-organized）原位換成翻譯題，沿用題 id b2-u51-l08-q16；目標字沿用 well-organized",
+        "resolution": "改為 translate：promptZh「這場音樂節辦得井然有序，每個節目都準時開始。」、hintWords [\"well-organized\"]、referenceEn [\"The music festival was well-organized, and every show started on time.\",\"It was a well-organized music festival; every show began on time.\"]、rubricZh [\"well-organized 當形容詞（例如 was well-organized、a well-organized festival 等）\",\"「準時開始」可寫，例如 started on time、began on time 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 well-organized 造一個句子，描述一個井然有序的人、地方或活動。」、referenceEn [\"My mother's kitchen is very well-organized.\",\"Our school sports day was well-organized and ended on time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

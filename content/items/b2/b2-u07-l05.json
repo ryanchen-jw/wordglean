@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u07-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "overly",
-      "instructionZh": "用 overly 造一個句子，說說你覺得某件事「太過」了。",
+      "type": "translate",
+      "promptZh": "這家餐廳的菜過於鹹。",
+      "hintWords": [
+        "overly"
+      ],
       "referenceEn": [
-        "I think the new rules at my company are overly strict.",
-        "I was overly nervous before my first presentation."
+        "The dishes at this restaurant are overly salty.",
+        "The food at this restaurant is overly salty."
       ],
       "rubricZh": [
-        "句子要用到 overly，放在形容詞前表示「過度地、太」（例如 overly strict、overly nervous）",
-        "句意要表示程度太過"
+        "overly 放在形容詞前，表示「過度地」（例如 overly salty 等）",
+        "「菜」可寫，例如 the dishes、the food 等；動詞配合主詞即可"
       ]
     }
   ],
@@ -401,6 +403,18 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"broadly 常用 broadly speaking，放在句首表示「大致來說」\",\"「對…很滿意」可寫 be happy with、be satisfied with 等\"]；改後：[\"broadly 表示「大致來說」，例如放在句首的 broadly speaking 等\",\"「對…很滿意」可寫，例如 be happy with、be satisfied with 等\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（overly）原位換成翻譯題，沿用題 id b2-u07-l05-q17；目標字沿用 overly",
+        "resolution": "改為 translate：promptZh「這家店的店員過於熱情，讓我有點不自在。」、hintWords [\"overly\"]、referenceEn [\"The staff in this shop are overly friendly, which makes me a little uncomfortable.\",\"The shop assistants here are overly eager, and it makes me feel a bit uncomfortable.\"]、rubricZh [\"overly 放在形容詞前，表示「過度地」（例如 overly friendly 等）\",\"「熱情」可寫，例如 friendly、eager、enthusiastic 等；staff 搭 is、are 都可以\",\"「不自在」可寫，例如 uncomfortable、uneasy 等\"]（原 makeSentence：instructionZh「用 overly 造一個句子，說說你覺得某件事「太過」了。」、referenceEn [\"I think the new rules at my company are overly strict.\",\"I was overly nervous before my first presentation.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u12-l02-q16「The staff in this shop are very friendly.」只差一個副詞，換情境",
+        "resolution": "改為 promptZh「這家餐廳的菜過於鹹。」、referenceEn [\"The dishes at this restaurant are overly salty.\",\"The food at this restaurant is overly salty.\"]、rubricZh [\"overly 放在形容詞前，表示「過度地」（例如 overly salty 等）\",\"「菜」可寫，例如 the dishes、the food 等；動詞配合主詞即可\"]（原 promptZh「這家店的店員過於熱情，讓我有點不自在。」、referenceEn [\"The staff in this shop are overly friendly, which makes me a little uncomfortable.\",\"The shop assistants here are overly eager, and it makes me feel a bit uncomfortable.\"]、rubricZh [\"overly 放在形容詞前，表示「過度地」（例如 overly friendly 等）\",\"「熱情」可寫，例如 friendly、eager、enthusiastic 等；staff 搭 is、are 都可以\",\"「不自在」可寫，例如 uncomfortable、uneasy 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

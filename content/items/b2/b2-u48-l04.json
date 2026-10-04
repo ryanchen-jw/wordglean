@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u48-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "unnatural",
-      "instructionZh": "用 unnatural 造一個句子，描述你覺得看起來或聽起來不自然的東西。",
+      "type": "translate",
+      "promptZh": "要小孩子整天坐著不動，是不自然的。",
+      "hintWords": [
+        "unnatural"
+      ],
       "referenceEn": [
-        "My smile looks unnatural in most photos.",
-        "I think the robot's voice in that film sounds cold and unnatural."
+        "It is unnatural for young children to sit still all day.",
+        "Sitting still all day is unnatural for young children."
       ],
       "rubricZh": [
-        "句子要用到 unnatural（例如 looks unnatural、sounds unnatural）",
-        "可搭配感官動詞，例如 look、sound、seem 等"
+        "unnatural 表示「不自然的、違反天性的」，句型例如 It is unnatural for… to…、Sitting … is unnatural 等",
+        "「坐著不動」可寫，例如 sit still 等",
+        "「小孩子」可寫，例如 young children、little kids 等"
       ]
     }
   ],
@@ -317,6 +320,12 @@
         "message": "第②關 issue 結案：turbulent 釋義第一義「動盪的」與例句（飛行途中氣流不穩）詞義不符，違反第一義＝例句詞義（§11.27）；應調成「（氣流、海面）不穩的；動盪的」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/6 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unnatural）原位換成翻譯題，沿用題 id b2-u48-l04-q17；目標字沿用 unnatural",
+        "resolution": "改為 translate：promptZh「要小孩子整天坐著不動，是不自然的。」、hintWords [\"unnatural\"]、referenceEn [\"It is unnatural for young children to sit still all day.\",\"Sitting still all day is unnatural for young children.\"]、rubricZh [\"unnatural 表示「不自然的、違反天性的」，句型例如 It is unnatural for… to…、Sitting … is unnatural 等\",\"「坐著不動」可寫，例如 sit still 等\",\"「小孩子」可寫，例如 young children、little kids 等\"]（原 makeSentence：instructionZh「用 unnatural 造一個句子，描述你覺得看起來或聽起來不自然的東西。」、referenceEn [\"My smile looks unnatural in most photos.\",\"I think the robot's voice in that film sounds cold and unnatural.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

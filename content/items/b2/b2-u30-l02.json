@@ -219,17 +219,19 @@
     },
     {
       "id": "b2-u30-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "contract",
-      "instructionZh": "用 contract 造一個句子，說說你簽過的一份合約（例如租屋、手機、工作）。",
+      "type": "translate",
+      "promptZh": "這位足球員和球隊續簽了三年的合約。",
+      "hintWords": [
+        "contract"
+      ],
       "referenceEn": [
-        "I signed a one-year contract when I rented my apartment.",
-        "I signed a two-year phone contract last spring."
+        "The football player signed a new three-year contract with the team.",
+        "The footballer has signed a new three-year contract with his team."
       ],
       "rubricZh": [
-        "句子要用到 contract",
-        "contract 的用法，例如 sign a contract、a one-year contract 等",
-        "說過去的經驗，時態配合內容（例如 signed、have signed 等）"
+        "「續簽合約」可寫，例如 signed a new contract、renewed his contract 等",
+        "「三年的」可寫，例如 a three-year contract、a contract for three years 等",
+        "時態可用過去式或現在完成式（例如 signed、has signed 等）"
       ]
     }
   ],
@@ -399,6 +401,12 @@
         "message": "第②關 issue 結案：題目「負責行銷工作」，評分要點把 work in 列為「負責」的可接受寫法，參考答案 1 She works in marketing 也漏掉「負責」語意；work in 只表示在行銷部門工作，不等於負責。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（contract）原位換成翻譯題，沿用題 id b2-u30-l02-q16；目標字沿用 contract",
+        "resolution": "改為 translate：promptZh「這位足球員和球隊續簽了三年的合約。」、hintWords [\"contract\"]、referenceEn [\"The football player signed a new three-year contract with the team.\",\"The footballer has signed a new three-year contract with his team.\"]、rubricZh [\"「續簽合約」可寫，例如 signed a new contract、renewed his contract 等\",\"「三年的」可寫，例如 a three-year contract、a contract for three years 等\",\"時態可用過去式或現在完成式（例如 signed、has signed 等）\"]（原 makeSentence：instructionZh「用 contract 造一個句子，說說你簽過的一份合約（例如租屋、手機、工作）。」、referenceEn [\"I signed a one-year contract when I rented my apartment.\",\"I signed a two-year phone contract last spring.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,17 +231,18 @@
     },
     {
       "id": "b2-u43-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "keen",
-      "instructionZh": "用 keen 造一個句子，說說你很想做或很熱衷的一件事。",
+      "type": "translate",
+      "promptZh": "我很想在今年學會游泳。",
+      "hintWords": [
+        "keen"
+      ],
       "referenceEn": [
-        "I'm keen to visit the mountains this summer.",
-        "My friends and I are keen to start a band."
+        "I am keen to learn to swim this year.",
+        "I'm really keen to learn how to swim this year."
       ],
       "rubricZh": [
-        "句子要用到 keen",
-        "keen 的用法，例如 keen to visit、keen on photography 等",
-        "時態合理（例如 am、are 等）"
+        "keen 的用法，例如 be keen to learn、be keen on learning 等",
+        "「學會游泳」可寫，例如 learn to swim、learn how to swim 等"
       ]
     }
   ],
@@ -291,6 +292,12 @@
         "message": "第②關 issue 結案：疑似觸及飲食／健康建議（裁示 21、30）：\"Many people underestimate how much water they need each day.\" 暗示每日飲水量的保健觀念；建議換中性情境（例如 underestimate how long the trip would take）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（keen）原位換成翻譯題，沿用題 id b2-u43-l02-q17；目標字沿用 keen",
+        "resolution": "改為 translate：promptZh「我很想在今年學會游泳。」、hintWords [\"keen\"]、referenceEn [\"I am keen to learn to swim this year.\",\"I'm really keen to learn how to swim this year.\"]、rubricZh [\"keen 的用法，例如 be keen to learn、be keen on learning 等\",\"「學會游泳」可寫，例如 learn to swim、learn how to swim 等\"]（原 makeSentence：instructionZh「用 keen 造一個句子，說說你很想做或很熱衷的一件事。」、referenceEn [\"I'm keen to visit the mountains this summer.\",\"My friends and I are keen to start a band.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

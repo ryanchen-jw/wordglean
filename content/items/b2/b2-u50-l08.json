@@ -232,16 +232,19 @@
     },
     {
       "id": "b2-u50-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "hastily",
-      "instructionZh": "用 hastily 造一個句子，說說你匆忙做某件事的經驗。",
+      "type": "translate",
+      "promptZh": "她匆忙寫了一張字條就出門了。",
+      "hintWords": [
+        "hastily"
+      ],
       "referenceEn": [
-        "I hastily ate my breakfast because I was late for school.",
-        "I wrote the email too hastily and made many mistakes."
+        "She hastily wrote a note and left the house.",
+        "She wrote a note hastily and went out."
       ],
       "rubricZh": [
-        "句子要用到 hastily 修飾動詞（例如 hastily ate、wrote … too hastily）",
-        "時態配合內容（例如 ate、wrote 等）"
+        "hastily 修飾動詞，可放動詞前或後（例如 hastily wrote、wrote … hastily 等）",
+        "「出門」可寫，例如 left the house、went out 等",
+        "時態可用過去式或現在完成式（例如 wrote、has left 等）"
       ]
     }
   ],
@@ -333,6 +336,18 @@
         "message": "第②關 issue 結案：疑似邏輯：in every page 前文沒有出現任何頁面（只提到印刷機複製品），指涉不清，且慣用 on every page；另印刷用的是墨（ink）不是染料（dye），prints pages using natural dye 不合常理，建議改 colors the pages with natural dye 之類。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hastily）原位換成翻譯題，沿用題 id b2-u50-l08-q17；目標字沿用 hastily",
+        "resolution": "改為 translate：promptZh「這份報告寫得太匆忙，裡面有很多錯誤。」、hintWords [\"hastily\"]、referenceEn [\"This report was written too hastily, so it has many mistakes.\",\"The report was written so hastily that it is full of mistakes.\"]、rubricZh [\"hastily 修飾動詞（例如 was written too hastily 等）；主動句也正確\",\"「很多錯誤」可寫，例如 many mistakes、full of mistakes、a lot of errors 等\"]（原 makeSentence：instructionZh「用 hastily 造一個句子，說說你匆忙做某件事的經驗。」、referenceEn [\"I hastily ate my breakfast because I was late for school.\",\"I wrote the email too hastily and made many mistakes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u48-l04-q16（報告草率、錯誤百出）情境相同",
+        "resolution": "改為 promptZh「她匆忙寫了一張字條就出門了。」、referenceEn [\"She hastily wrote a note and left the house.\",\"She wrote a note hastily and went out.\"]、rubricZh [\"hastily 修飾動詞，可放動詞前或後（例如 hastily wrote、wrote … hastily 等）\",\"「出門」可寫，例如 left the house、went out 等\",\"時態可用過去式或現在完成式（例如 wrote、has left 等）\"]（原 promptZh「這份報告寫得太匆忙，裡面有很多錯誤。」、referenceEn [\"This report was written too hastily, so it has many mistakes.\",\"The report was written so hastily that it is full of mistakes.\"]、rubricZh [\"hastily 修飾動詞（例如 was written too hastily 等）；主動句也正確\",\"「很多錯誤」可寫，例如 many mistakes、full of mistakes、a lot of errors 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

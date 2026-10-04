@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u50-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "roam",
-      "instructionZh": "用 roam 造一個句子，說說你喜歡在哪裡閒逛。",
+      "type": "translate",
+      "promptZh": "放學後，那些青少年常常在購物中心裡閒逛。",
+      "hintWords": [
+        "roam"
+      ],
       "referenceEn": [
-        "I like to roam around bookstores when it rains.",
-        "On weekends, I roam the night market with my friends."
+        "After school, the teenagers often roam around the shopping center.",
+        "The teenagers often roam the shopping center after school."
       ],
       "rubricZh": [
-        "句子要用到 roam（例如 roam around…、roam the night market）",
-        "roam 後面的接法，例如直接接地點、接 around 等介系詞都可以"
+        "roam 當動詞，可接 around 或直接接地點（例如 roam around the shopping center、roam the mall 等）",
+        "often 可放動詞前或句尾，位置不扣分",
+        "「購物中心」可寫，例如 shopping center、mall 等"
       ]
     }
   ],
@@ -324,6 +327,12 @@
         "message": "執行長第②③關裁示修正：最終複審提醒：中譯已改「推車」，干擾項同步",
         "resolution": "改前：\"躲到翻倒的貨車下\"；改後：\"躲到翻倒的推車下\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（roam）原位換成翻譯題，沿用題 id b2-u50-l01-q17；目標字沿用 roam",
+        "resolution": "改為 translate：promptZh「放學後，那些青少年常常在購物中心裡閒逛。」、hintWords [\"roam\"]、referenceEn [\"After school, the teenagers often roam around the shopping center.\",\"The teenagers often roam the shopping center after school.\"]、rubricZh [\"roam 當動詞，可接 around 或直接接地點（例如 roam around the shopping center、roam the mall 等）\",\"often 可放動詞前或句尾，位置不扣分\",\"「購物中心」可寫，例如 shopping center、mall 等\"]（原 makeSentence：instructionZh「用 roam 造一個句子，說說你喜歡在哪裡閒逛。」、referenceEn [\"I like to roam around bookstores when it rains.\",\"On weekends, I roam the night market with my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

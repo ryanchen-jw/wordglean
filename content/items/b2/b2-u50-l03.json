@@ -229,16 +229,18 @@
     },
     {
       "id": "b2-u50-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "unlock",
-      "instructionZh": "用 unlock 造一個句子，說說你平常怎麼開鎖或解鎖某樣東西。",
+      "type": "translate",
+      "promptZh": "這支新手機只要看一眼就能解鎖。",
+      "hintWords": [
+        "unlock"
+      ],
       "referenceEn": [
-        "I unlock my phone with a short code.",
-        "I unlock the front door with a key every evening."
+        "You can unlock this new phone just by looking at it.",
+        "This new phone can be unlocked simply by looking at it."
       ],
       "rubricZh": [
-        "句子要用到 unlock（例如 unlock my phone、to unlock my bike）",
-        "時態配合內容（例如 unlock、forget 等）"
+        "unlock 當動詞，主動句、被動句都可以（例如 you can unlock it、it can be unlocked 等）",
+        "「只要看一眼」可寫，例如 just by looking at it、simply by looking at it 等"
       ]
     }
   ],
@@ -330,6 +332,12 @@
         "message": "第②關 issue 結案：疑似拼法：smart phones 標準拼法為 smartphones（要點 rubricZh/2 也列 smart phones）；若受單字表限制，建議參考答案只用 phones。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/15 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unlock）原位換成翻譯題，沿用題 id b2-u50-l03-q17；目標字沿用 unlock",
+        "resolution": "改為 translate：promptZh「這支新手機只要看一眼就能解鎖。」、hintWords [\"unlock\"]、referenceEn [\"You can unlock this new phone just by looking at it.\",\"This new phone can be unlocked simply by looking at it.\"]、rubricZh [\"unlock 當動詞，主動句、被動句都可以（例如 you can unlock it、it can be unlocked 等）\",\"「只要看一眼」可寫，例如 just by looking at it、simply by looking at it 等\"]（原 makeSentence：instructionZh「用 unlock 造一個句子，說說你平常怎麼開鎖或解鎖某樣東西。」、referenceEn [\"I unlock my phone with a short code.\",\"I unlock the front door with a key every evening.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

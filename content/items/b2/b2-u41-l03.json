@@ -230,17 +230,19 @@
     },
     {
       "id": "b2-u41-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "ease",
-      "instructionZh": "用 ease 造一個句子，說說什麼能讓你減輕壓力或放鬆。",
+      "type": "translate",
+      "promptZh": "她說了一個笑話，緩和了會議中緊張的氣氛。",
+      "hintWords": [
+        "ease"
+      ],
       "referenceEn": [
-        "A walk in the park helps ease my stress after work.",
-        "Listening to music eases my worries before a test."
+        "She told a joke to ease the tension in the meeting.",
+        "Her joke eased the tension during the meeting."
       ],
       "rubricZh": [
-        "句子要用到 ease",
-        "ease 可當動詞或名詞（例如 ease my stress、feel at ease 等）",
-        "時態配合內容（例如 helps、eases 等）"
+        "ease 當動詞「緩和、減輕」（例如 ease the tension 等）",
+        "「緊張的氣氛」可寫，例如 the tension、the tense mood 等",
+        "時態用過去式（例如 told、eased 等）；寫 has eased 也正確"
       ]
     }
   ],
@@ -356,6 +358,12 @@
         "message": "第②關 issue 結案：中譯多加資訊：原句 \"The whole evening was devoted to music and dancing.\" 沒有「表演」，譯成「整個晚上都用來表演音樂和跳舞」多了表演義；建議「整個晚上都用在音樂和跳舞上」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ease）原位換成翻譯題，沿用題 id b2-u41-l03-q17；目標字沿用 ease",
+        "resolution": "改為 translate：promptZh「她說了一個笑話，緩和了會議中緊張的氣氛。」、hintWords [\"ease\"]、referenceEn [\"She told a joke to ease the tension in the meeting.\",\"Her joke eased the tension during the meeting.\"]、rubricZh [\"ease 當動詞「緩和、減輕」（例如 ease the tension 等）\",\"「緊張的氣氛」可寫，例如 the tension、the tense mood 等\",\"時態用過去式（例如 told、eased 等）；寫 has eased 也正確\"]（原 makeSentence：instructionZh「用 ease 造一個句子，說說什麼能讓你減輕壓力或放鬆。」、referenceEn [\"A walk in the park helps ease my stress after work.\",\"Listening to music eases my worries before a test.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

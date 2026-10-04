@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u43-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "critically",
-      "instructionZh": "用 critically 造一個句子，說說你會用挑剔或批判的眼光看待什麼東西。",
+      "type": "translate",
+      "promptZh": "每一道菜送出廚房前，這位主廚都會用挑剔的態度試吃。",
+      "hintWords": [
+        "critically"
+      ],
       "referenceEn": [
-        "I think critically about advice before I follow it.",
-        "I compare prices critically before I buy a new phone."
+        "The chef tastes every dish critically before it leaves the kitchen.",
+        "Before each dish leaves the kitchen, the chef tastes it critically."
       ],
       "rubricZh": [
-        "句子要用到 critically",
-        "critically 的用法，例如 think critically about、compare … critically 等",
-        "時態合理（例如 think、compare 等）"
+        "critically 修飾動詞，表示「挑剔地」（例如 tastes … critically 等），位置不扣分",
+        "「送出廚房」可寫，例如 leaves the kitchen、is served 等；表示習慣（例如 tastes、will taste 等）"
       ]
     }
   ],
@@ -444,6 +445,18 @@
         "message": "第②關 issue 結案：疑似：\"up to half price\" 英文不自然（慣用 up to half off／up to 50% off），且這句話的問題比較像「誤導」而非「ambiguity（有兩種解讀）」，用來示範 ambiguity 不夠貼切。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（critically）原位換成翻譯題，沿用題 id b2-u43-l03-q17；目標字沿用 critically",
+        "resolution": "改為 translate：promptZh「這位主廚會挑剔地嚐過每一道菜，才讓它送出廚房。」、hintWords [\"critically\"]、referenceEn [\"The chef tastes every dish critically before it leaves the kitchen.\",\"Before each dish leaves the kitchen, the chef tastes it critically.\"]、rubricZh [\"critically 修飾動詞，表示「挑剔地」（例如 tastes … critically 等），位置不扣分\",\"「送出廚房」可寫，例如 leaves the kitchen、is served 等；用現在式表示習慣\"]（原 makeSentence：instructionZh「用 critically 造一個句子，說說你會用挑剔或批判的眼光看待什麼東西。」、referenceEn [\"I think critically about advice before I follow it.\",\"I compare prices critically before I buy a new phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「會挑剔地嚐過」是英文直譯（§12.8）；要點只收現在式會判錯 will taste",
+        "resolution": "改為 promptZh「每一道菜送出廚房前，這位主廚都會用挑剔的態度試吃。」、referenceEn [\"The chef tastes every dish critically before it leaves the kitchen.\",\"Before each dish leaves the kitchen, the chef tastes it critically.\"]、rubricZh [\"critically 修飾動詞，表示「挑剔地」（例如 tastes … critically 等），位置不扣分\",\"「送出廚房」可寫，例如 leaves the kitchen、is served 等；表示習慣（例如 tastes、will taste 等）\"]（原 promptZh「這位主廚會挑剔地嚐過每一道菜，才讓它送出廚房。」、referenceEn [\"The chef tastes every dish critically before it leaves the kitchen.\",\"Before each dish leaves the kitchen, the chef tastes it critically.\"]、rubricZh [\"critically 修飾動詞，表示「挑剔地」（例如 tastes … critically 等），位置不扣分\",\"「送出廚房」可寫，例如 leaves the kitchen、is served 等；用現在式表示習慣\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -215,16 +215,19 @@
     },
     {
       "id": "b2-u19-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "fluency",
-      "instructionZh": "用 fluency 造一個句子，說說你怎麼提升某種語言或技能的流利度。",
+      "type": "translate",
+      "promptZh": "她說外語的流利程度讓面試官印象深刻。",
+      "hintWords": [
+        "fluency"
+      ],
       "referenceEn": [
-        "I watch foreign shows every night to build my fluency.",
-        "My fluency improved a lot after I lived abroad for a year."
+        "Her fluency in a foreign language impressed the interviewers.",
+        "The interviewers were impressed by her fluency in a foreign language."
       ],
       "rubricZh": [
-        "句子要用到 fluency",
-        "時態合理即可（例如 watch、improved）"
+        "fluency 指流利（例如 her fluency in a foreign language 等）",
+        "時態可用過去式或現在完成式（例如 impressed、has impressed 等）",
+        "可用主動或被動（例如 …impressed the interviewers、were impressed by… 等）"
       ]
     }
   ],
@@ -316,6 +319,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，avoid using synonyms 也說得通",
         "resolution": "改前：\"同義字\"；改後：\"氨\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（fluency）原位換成翻譯題，沿用題 id b2-u19-l07-q16；目標字沿用 fluency",
+        "resolution": "改為 translate：promptZh「她說外語的流利程度讓面試官印象深刻。」、hintWords [\"fluency\"]、referenceEn [\"Her fluency in a foreign language impressed the interviewers.\",\"The interviewers were impressed by her fluency in a foreign language.\"]、rubricZh [\"fluency 指流利（例如 her fluency in a foreign language 等）\",\"時態可用過去式或現在完成式（例如 impressed、has impressed 等）\",\"可用主動或被動（例如 …impressed the interviewers、were impressed by… 等）\"]（原 makeSentence：instructionZh「用 fluency 造一個句子，說說你怎麼提升某種語言或技能的流利度。」、referenceEn [\"I watch foreign shows every night to build my fluency.\",\"My fluency improved a lot after I lived abroad for a year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

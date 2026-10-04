@@ -215,32 +215,34 @@
     {
       "id": "b2-u44-l04-q16",
       "type": "translate",
-      "promptZh": "我室友對打掃完全不在乎。",
+      "promptZh": "那位老闆對員工的感受漠不關心。",
       "hintWords": [
         "indifferent"
       ],
       "referenceEn": [
-        "My roommate is totally indifferent when it comes to cleaning.",
-        "My roommate couldn't be more indifferent about cleaning."
+        "That boss is indifferent to his employees' feelings.",
+        "The boss is indifferent to how his staff feel."
       ],
       "rubricZh": [
-        "indifferent 的用法，例如 indifferent to、indifferent about 等",
-        "時態合理（例如 is、couldn't be 等）"
+        "indifferent 後面可接 to 或 about（例如 indifferent to his employees' feelings 等）",
+        "「員工的感受」可寫，例如 his employees' feelings、how his staff feel 等",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     },
     {
       "id": "b2-u44-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "yearn",
-      "instructionZh": "用 yearn 造一個句子，說說你很渴望做或很想念的事。",
+      "type": "translate",
+      "promptZh": "很多上班族渴望有更多自由的時間。",
+      "hintWords": [
+        "yearn"
+      ],
       "referenceEn": [
-        "I yearn to travel around the world one day.",
-        "I sometimes yearn for the long summer holidays of my childhood."
+        "Many office workers yearn for more free time.",
+        "Many people who work in offices yearn to have more free time."
       ],
       "rubricZh": [
-        "句子要用到 yearn",
-        "yearn 的用法，例如 yearn to travel、yearn for 等",
-        "時態合理（例如 yearn 等）"
+        "yearn 後接 for＋名詞或 to＋原形動詞（例如 yearn for more free time、yearn to have… 等）",
+        "「上班族」可寫，例如 office workers、people who work in offices 等"
       ]
     }
   ],
@@ -284,6 +286,18 @@
         "message": "執行長第②③關裁示修正：第③關 B 疑似 9（裁示照建議改）：評分要點補 indifferent to；第③關 B 疑似 9；修正輪自查：要點超過 80 字",
         "resolution": "改前：\"indifferent 的用法，例如 indifferent when it comes to、indifferent about 等\"；改後：\"indifferent 的用法，例如 indifferent to、indifferent about 等\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與 b2-u44-l02-q16（ignorant）同用 totally … when it comes to 句型（同單元字面 50%）；該題是 ignorant 唯一情境題，改本題（indifferent 另有聽選情境）；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「那位老闆對員工的感受漠不關心。」、referenceEn [\"That boss is indifferent to his employees' feelings.\",\"The boss is indifferent to how his staff feel.\"]、rubricZh [\"indifferent 後面可接 to 或 about（例如 indifferent to his employees' feelings 等）\",\"「員工的感受」可寫，例如 his employees' feelings、how his staff feel 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 promptZh「我室友對打掃完全不在乎。」、referenceEn [\"My roommate is totally indifferent when it comes to cleaning.\",\"My roommate couldn't be more indifferent about cleaning.\"]、rubricZh [\"indifferent 的用法，例如 indifferent to、indifferent about 等\",\"時態合理（例如 is、couldn't be 等）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（yearn）原位換成翻譯題，沿用題 id b2-u44-l04-q17；目標字沿用 yearn",
+        "resolution": "改為 translate：promptZh「很多上班族渴望有更多自由的時間。」、hintWords [\"yearn\"]、referenceEn [\"Many office workers yearn for more free time.\",\"Many people who work in offices yearn to have more free time.\"]、rubricZh [\"yearn 後接 for＋名詞或 to＋原形動詞（例如 yearn for more free time、yearn to have… 等）\",\"「上班族」可寫，例如 office workers、people who work in offices 等\"]（原 makeSentence：instructionZh「用 yearn 造一個句子，說說你很渴望做或很想念的事。」、referenceEn [\"I yearn to travel around the world one day.\",\"I sometimes yearn for the long summer holidays of my childhood.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

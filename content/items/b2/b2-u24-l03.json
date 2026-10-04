@@ -234,16 +234,19 @@
     },
     {
       "id": "b2-u24-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "campaign",
-      "instructionZh": "用 campaign 造一個句子，說說你參加過或看過的一項宣傳活動（例如環保、閱讀）。",
+      "type": "translate",
+      "promptZh": "這個宣傳活動是為了鼓勵大家少用塑膠。",
+      "hintWords": [
+        "campaign"
+      ],
       "referenceEn": [
-        "I joined a campaign to clean up the beach near my town.",
-        "Our company ran a campaign to get workers to take the stairs."
+        "The aim of this campaign is to get people to use less plastic.",
+        "This campaign encourages people to use less plastic."
       ],
       "rubricZh": [
-        "句子要用到 campaign",
-        "時態合理即可"
+        "campaign 指宣傳活動（例如 this campaign 等）",
+        "「鼓勵大家」可寫，例如 encourage people to…、get people to… 等",
+        "「少用」可寫，例如 use less、cut down on 等"
       ]
     }
   ],
@@ -377,6 +380,12 @@
         "message": "執行長裁示修正：釋義原則澄清後改寫例句：避開本課其他題的情境或句型",
         "resolution": "改前：\"得票最多的候選人成為讀書會的新負責人。\"；改後：\"評審選出三位候選人進入烹飪比賽的決賽。\"",
         "resolvedAt": "2026-10-02T20:24:28Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（campaign）原位換成翻譯題，沿用題 id b2-u24-l03-q17；目標字沿用 campaign",
+        "resolution": "改為 translate：promptZh「這個宣傳活動是為了鼓勵大家少用塑膠。」、hintWords [\"campaign\"]、referenceEn [\"The aim of this campaign is to get people to use less plastic.\",\"This campaign encourages people to use less plastic.\"]、rubricZh [\"campaign 指宣傳活動（例如 this campaign 等）\",\"「鼓勵大家」可寫，例如 encourage people to…、get people to… 等\",\"「少用」可寫，例如 use less、cut down on 等\"]（原 makeSentence：instructionZh「用 campaign 造一個句子，說說你參加過或看過的一項宣傳活動（例如環保、閱讀）。」、referenceEn [\"I joined a campaign to clean up the beach near my town.\",\"Our company ran a campaign to get workers to take the stairs.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

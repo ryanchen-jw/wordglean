@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u16-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "inflammation",
-      "instructionZh": "用 inflammation 造一個句子，說說你在文章或課堂上讀到關於發炎的事實（不要寫治療建議）。",
+      "type": "translate",
+      "promptZh": "發炎的時候，皮膚常常會變紅、變熱。",
+      "hintWords": [
+        "inflammation"
+      ],
       "referenceEn": [
-        "I read an article saying that inflammation is one way the body protects itself.",
-        "In biology class, I learned that inflammation can make a cut look red."
+        "When there is inflammation, the skin often becomes red and warm.",
+        "Inflammation often makes the skin red and hot."
       ],
       "rubricZh": [
-        "句子要用到 inflammation",
-        "內容是事實描述，不寫治療方法"
+        "inflammation 指「發炎」，不可數（例如 When there is inflammation、Inflammation makes… 等）",
+        "「變紅、變熱」可寫，例如 becomes red and warm、turns red and hot 等",
+        "often 位置不扣分"
       ]
     }
   ],
@@ -517,6 +520,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"cripple 當動詞是「使癱瘓、使嚴重受損」（例如 crippled the system）\",\"時態合理即可（例如 crippled、has crippled）；「郵件系統」可寫 mail system、postal system\"]；改後：[\"cripple 當動詞是「使癱瘓、使嚴重受損」（例如 crippled the system 等）\",\"時態合理即可（例如 crippled、has crippled 等）；「郵件系統」可寫，例如 mail system、postal system 等\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（inflammation）原位換成翻譯題，沿用題 id b2-u16-l06-q17；目標字沿用 inflammation",
+        "resolution": "改為 translate：promptZh「發炎的時候，皮膚常常會變紅、變熱。」、hintWords [\"inflammation\"]、referenceEn [\"When there is inflammation, the skin often becomes red and warm.\",\"Inflammation often makes the skin red and hot.\"]、rubricZh [\"inflammation 指「發炎」，不可數（例如 When there is inflammation、Inflammation makes… 等）\",\"「變紅、變熱」可寫，例如 becomes red and warm、turns red and hot 等\",\"often 位置不扣分\"]（原 makeSentence：instructionZh「用 inflammation 造一個句子，說說你在文章或課堂上讀到關於發炎的事實（不要寫治療建議）。」、referenceEn [\"I read an article saying that inflammation is one way the body protects itself.\",\"In biology class, I learned that inflammation can make a cut look red.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u09-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "destiny",
-      "instructionZh": "用 destiny 造一個句子，說說你是否相信人有天命，以及你的理由。",
+      "type": "translate",
+      "promptZh": "她相信成為歌手是她的天命。",
+      "hintWords": [
+        "destiny"
+      ],
       "referenceEn": [
-        "I don't believe in destiny, because I think we make our own choices.",
-        "I believe destiny brought my parents together, so I trust it."
+        "She believes that becoming a singer is her destiny.",
+        "She believes it is her destiny to become a singer."
       ],
       "rubricZh": [
-        "句子要用到 destiny（例如 believe in destiny、destiny brought…）",
-        "句子要說到你自己的看法；時態合理即可"
+        "destiny 指「天命、命運」（例如 is her destiny、her destiny to… 等）",
+        "「成為歌手」可寫，例如 becoming a singer、to become a singer 等"
       ]
     }
   ],
@@ -515,6 +517,12 @@
         "message": "執行長最終複審修正：只看英文自查（換字後再掃）：evolve 與 q14 的 evolved 同字",
         "resolution": "改前：\"演化\"；改後：\"穩定\"",
         "resolvedAt": "2026-10-02T20:44:58Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（destiny）原位換成翻譯題，沿用題 id b2-u09-l05-q17；目標字沿用 destiny",
+        "resolution": "改為 translate：promptZh「她相信成為歌手是她的天命。」、hintWords [\"destiny\"]、referenceEn [\"She believes that becoming a singer is her destiny.\",\"She believes it is her destiny to become a singer.\"]、rubricZh [\"destiny 指「天命、命運」（例如 is her destiny、her destiny to… 等）\",\"「成為歌手」可寫，例如 becoming a singer、to become a singer 等\"]（原 makeSentence：instructionZh「用 destiny 造一個句子，說說你是否相信人有天命，以及你的理由。」、referenceEn [\"I don't believe in destiny, because I think we make our own choices.\",\"I believe destiny brought my parents together, so I trust it.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

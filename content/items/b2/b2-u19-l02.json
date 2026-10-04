@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u19-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "learning",
-      "instructionZh": "用 learning 造一個句子，說說你喜歡的學習方式。",
+      "type": "translate",
+      "promptZh": "線上學習讓很多上班族可以在家進修。",
+      "hintWords": [
+        "learning"
+      ],
       "referenceEn": [
-        "I think learning with friends is more fun than studying alone.",
-        "For me, learning by doing works better than reading."
+        "Online learning lets many office workers study at home.",
+        "Online learning allows many working people to study from home."
       ],
       "rubricZh": [
-        "句子要用到 learning（例如 learning with friends、learning by doing）",
-        "句子要說到你自己"
+        "learning 當名詞指「學習」（例如 online learning 等）",
+        "「讓…可以」可寫，例如 let… study、allow… to study 等",
+        "「上班族」可寫，例如 office workers、working people 等"
       ]
     }
   ],
@@ -287,6 +290,12 @@
         "message": "執行長裁示修正：釋義拿掉詞性標記、改「X；Y」格式（避免與單義干擾項格式不一洩題），例句所教詞義放第一",
         "resolution": "改前：\"（v）引用（n）引文；報價\"；改後：\"引用；引文；報價\"",
         "resolvedAt": "2026-10-02T20:08:17Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（learning）原位換成翻譯題，沿用題 id b2-u19-l02-q17；目標字沿用 learning",
+        "resolution": "改為 translate：promptZh「線上學習讓很多上班族可以在家進修。」、hintWords [\"learning\"]、referenceEn [\"Online learning lets many office workers study at home.\",\"Online learning allows many working people to study from home.\"]、rubricZh [\"learning 當名詞指「學習」（例如 online learning 等）\",\"「讓…可以」可寫，例如 let… study、allow… to study 等\",\"「上班族」可寫，例如 office workers、working people 等\"]（原 makeSentence：instructionZh「用 learning 造一個句子，說說你喜歡的學習方式。」、referenceEn [\"I think learning with friends is more fun than studying alone.\",\"For me, learning by doing works better than reading.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

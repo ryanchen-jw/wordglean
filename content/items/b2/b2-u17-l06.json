@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u17-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "bookmark",
-      "instructionZh": "用 bookmark 造一個句子，說說你用書籤或瀏覽器書籤的習慣。",
+      "type": "translate",
+      "promptZh": "我把這個食譜網站加入書籤，方便以後再找。",
+      "hintWords": [
+        "bookmark"
+      ],
       "referenceEn": [
-        "I usually use an old train ticket as a bookmark.",
-        "I bookmark my favorite news websites on my laptop."
+        "I bookmarked this recipe website so I can find it again later.",
+        "I've bookmarked this recipe website so that I can find it easily later."
       ],
       "rubricZh": [
-        "句子要用到 bookmark（名詞或動詞皆可）",
-        "句子要說到你自己"
+        "bookmark 當動詞，表示「加入書籤」（例如 bookmarked this website 等）",
+        "時態可用過去式或現在完成式（例如 bookmarked、have bookmarked 等）",
+        "「方便以後再找」可寫，例如 so I can find it again later 等"
       ]
     }
   ],
@@ -308,6 +311,12 @@
         "message": "執行長裁示修正：釋義拿掉詞性標記、改「X；Y」格式（避免與單義干擾項格式不一洩題），例句所教詞義放第一",
         "resolution": "改前：\"（n）書籤（v）加入書籤\"；改後：\"書籤；加入書籤\"",
         "resolvedAt": "2026-10-02T20:08:17Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bookmark）原位換成翻譯題，沿用題 id b2-u17-l06-q17；目標字沿用 bookmark",
+        "resolution": "改為 translate：promptZh「我把這個食譜網站加入書籤，方便以後再找。」、hintWords [\"bookmark\"]、referenceEn [\"I bookmarked this recipe website so I can find it again later.\",\"I've bookmarked this recipe website so that I can find it easily later.\"]、rubricZh [\"bookmark 當動詞，表示「加入書籤」（例如 bookmarked this website 等）\",\"時態可用過去式或現在完成式（例如 bookmarked、have bookmarked 等）\",\"「方便以後再找」可寫，例如 so I can find it again later 等\"]（原 makeSentence：instructionZh「用 bookmark 造一個句子，說說你用書籤或瀏覽器書籤的習慣。」、referenceEn [\"I usually use an old train ticket as a bookmark.\",\"I bookmark my favorite news websites on my laptop.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

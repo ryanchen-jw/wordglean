@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u16-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "nostril",
-      "instructionZh": "用 nostril 造一個句子，描述動物的鼻孔或冷天、花香等讓你注意到鼻孔的感覺。",
+      "type": "translate",
+      "promptZh": "在寒冷的早晨，那頭牛的鼻孔冒出白氣。",
+      "hintWords": [
+        "nostril"
+      ],
       "referenceEn": [
-        "I could feel the cold air in my nostrils as I walked to school.",
-        "My dog's nostrils move quickly when it smells food."
+        "On a cold morning, white steam came out of the cow's nostrils.",
+        "Steam rose from the cow's nostrils in the cold morning air."
       ],
       "rubricZh": [
-        "句子要用到 nostril 或 nostrils",
-        "描述要合理；動物可用 it，也可用 he、she"
+        "nostril 指「鼻孔」，這裡用複數（例如 the cow's nostrils 等）",
+        "「冒出白氣」可寫，例如 steam came out of、steam rose from 等",
+        "時態可用過去式或現在式"
       ]
     }
   ],
@@ -431,6 +434,18 @@
         "message": "執行長最終複審修正：同步",
         "resolution": "改前：\"科學家找到了預防因缺乏維生素 A 而導致失明的方法。\"；改後：\"失明的人完全看不見。\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nostril）原位換成翻譯題，沿用題 id b2-u16-l05-q17；目標字沿用 nostril",
+        "resolution": "改為 translate：promptZh「在寒冷的早晨，那頭牛的鼻孔冒出白氣。」、hintWords [\"nostril\"]、referenceEn [\"On the cold morning, white steam came out of the cow's nostrils.\",\"Steam rose from the cow's nostrils in the cold morning air.\"]、rubricZh [\"nostril 指「鼻孔」，這裡用複數（例如 the cow's nostrils 等）\",\"「冒出白氣」可寫，例如 steam came out of、steam rose from 等\",\"時態可用過去式或現在式\"]（原 makeSentence：instructionZh「用 nostril 造一個句子，描述動物的鼻孔或冷天、花香等讓你注意到鼻孔的感覺。」、referenceEn [\"I could feel the cold air in my nostrils as I walked to school.\",\"My dog's nostrils move quickly when it smells food.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 1 前文未指明是哪個早晨，不該用 the",
+        "resolution": "改為 promptZh「在寒冷的早晨，那頭牛的鼻孔冒出白氣。」、referenceEn [\"On a cold morning, white steam came out of the cow's nostrils.\",\"Steam rose from the cow's nostrils in the cold morning air.\"]、rubricZh [\"nostril 指「鼻孔」，這裡用複數（例如 the cow's nostrils 等）\",\"「冒出白氣」可寫，例如 steam came out of、steam rose from 等\",\"時態可用過去式或現在式\"]（原 promptZh「在寒冷的早晨，那頭牛的鼻孔冒出白氣。」、referenceEn [\"On the cold morning, white steam came out of the cow's nostrils.\",\"Steam rose from the cow's nostrils in the cold morning air.\"]、rubricZh [\"nostril 指「鼻孔」，這裡用複數（例如 the cow's nostrils 等）\",\"「冒出白氣」可寫，例如 steam came out of、steam rose from 等\",\"時態可用過去式或現在式\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

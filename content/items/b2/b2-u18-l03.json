@@ -247,16 +247,19 @@
     },
     {
       "id": "b2-u18-l03-q18",
-      "type": "makeSentence",
-      "targetWord": "skateboarder",
-      "instructionZh": "用 skateboarder 造一個句子，描述你在公園或街上看到的玩滑板的人。",
+      "type": "translate",
+      "promptZh": "那位滑板選手沿著樓梯扶手滑了下來。",
+      "hintWords": [
+        "skateboarder"
+      ],
       "referenceEn": [
-        "I often see a skateboarder practicing jumps near my school.",
-        "The skateboarder I saw in the park could spin in the air."
+        "The skateboarder slid down the handrail of the stairs.",
+        "The skateboarder rode all the way down the stair handrail."
       ],
       "rubricZh": [
-        "句子要用到 skateboarder",
-        "時態合理即可（例如 see、saw）"
+        "skateboarder 指「玩滑板的人、滑板選手」（例如 the skateboarder 等）",
+        "「沿著扶手滑下來」可寫，例如 slid down the handrail、rode down the handrail 等",
+        "時態用過去式或現在完成式（例如 slid、rode 等）"
       ]
     }
   ],
@@ -384,6 +387,12 @@
         "message": "執行長最終複審修正：A 第 3 批：同步",
         "resolution": "改前：\"學習武術可以提升專注力、力量和平衡感。\"；改後：\"我表哥在運動中心教一種叫柔道的武術。\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（skateboarder）原位換成翻譯題，沿用題 id b2-u18-l03-q18；目標字沿用 skateboarder",
+        "resolution": "改為 translate：promptZh「那位滑板選手沿著樓梯扶手滑了下來。」、hintWords [\"skateboarder\"]、referenceEn [\"The skateboarder slid down the handrail of the stairs.\",\"The skateboarder rode all the way down the stair handrail.\"]、rubricZh [\"skateboarder 指「玩滑板的人、滑板選手」（例如 the skateboarder 等）\",\"「沿著扶手滑下來」可寫，例如 slid down the handrail、rode down the handrail 等\",\"時態用過去式或現在完成式（例如 slid、rode 等）\"]（原 makeSentence：instructionZh「用 skateboarder 造一個句子，描述你在公園或街上看到的玩滑板的人。」、referenceEn [\"I often see a skateboarder practicing jumps near my school.\",\"The skateboarder I saw in the park could spin in the air.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

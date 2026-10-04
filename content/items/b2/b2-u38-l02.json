@@ -208,17 +208,18 @@
     },
     {
       "id": "b2-u38-l02-q15",
-      "type": "makeSentence",
-      "targetWord": "manufacture",
-      "instructionZh": "用 manufacture 造一個句子，說說某樣東西是在哪裡或怎麼製造的。",
+      "type": "translate",
+      "promptZh": "這些手機是在越南製造的。",
+      "hintWords": [
+        "manufacture"
+      ],
       "referenceEn": [
-        "My phone was manufactured in a factory in Vietnam.",
-        "My grandfather manufactured furniture in a small workshop."
+        "These phones were manufactured in Vietnam.",
+        "These phones are manufactured in Vietnam."
       ],
       "rubricZh": [
-        "句子要用到 manufacture",
-        "可用主動或被動（例如 manufactures…、was manufactured in… 等）",
-        "時態配合內容（例如 was manufactured、manufactures 等）"
+        "manufacture 用被動式（例如 were manufactured、are manufactured 等）",
+        "時態可用過去式或現在式（例如 were、are 等）"
       ]
     }
   ],
@@ -322,6 +323,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽打同為「公司製造某物」",
         "resolution": "改前：\"時態配合內容（例如 was manufactured、manufactures）\"；改後：\"時態配合內容（例如 was manufactured、manufactures 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（manufacture）原位換成翻譯題，沿用題 id b2-u38-l02-q15；目標字沿用 manufacture",
+        "resolution": "改為 translate：promptZh「這些手機是在越南製造的。」、hintWords [\"manufacture\"]、referenceEn [\"These phones were manufactured in Vietnam.\",\"These phones are manufactured in Vietnam.\"]、rubricZh [\"manufacture 用被動式（例如 were manufactured、are manufactured 等）\",\"時態可用過去式或現在式（例如 were、are 等）\"]（原 makeSentence：instructionZh「用 manufacture 造一個句子，說說某樣東西是在哪裡或怎麼製造的。」、referenceEn [\"My phone was manufactured in a factory in Vietnam.\",\"My grandfather manufactured furniture in a small workshop.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

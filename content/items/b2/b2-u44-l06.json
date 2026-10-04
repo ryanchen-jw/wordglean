@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u44-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "despise",
-      "instructionZh": "用 despise 造一個句子，說說你非常討厭的事。",
+      "type": "translate",
+      "promptZh": "我最痛恨別人在我背後說我壞話。",
+      "hintWords": [
+        "despise"
+      ],
       "referenceEn": [
-        "I despise it when people cut in line.",
-        "I despise waking up early on weekends."
+        "I despise it when people talk about me behind my back.",
+        "I really despise people saying bad things about me behind my back."
       ],
       "rubricZh": [
-        "句子要用到 despise",
-        "despise 的用法，例如 despise it when…、despise waking up 等",
-        "時態合理（例如 despise 等）"
+        "despise 表示「非常厭惡」，後面可接名詞、it when 子句或動名詞（例如 despise it when… 等）",
+        "「在我背後說我壞話」可寫，例如 talk about me behind my back、say bad things about me 等",
+        "寫 What I despise most is… 也正確"
       ]
     }
   ],
@@ -342,6 +344,18 @@
         "message": "第②關 issue 結案：干擾項「經濟上地／技術上地／法律上地」同樣多了「地」，建議改「經濟上／技術上／法律上」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（despise）原位換成翻譯題，沿用題 id b2-u44-l06-q17；目標字沿用 despise",
+        "resolution": "改為 translate：promptZh「我最痛恨別人在我背後說我壞話。」、hintWords [\"despise\"]、referenceEn [\"I despise it when people talk about me behind my back.\",\"I really despise people saying bad things about me behind my back.\"]、rubricZh [\"despise 表示「非常厭惡」，後面可接名詞、it when 子句或動名詞（例如 despise it when… 等）\",\"「在我背後說我壞話」可寫，例如 talk about me behind my back、say bad things about me 等\"]（原 makeSentence：instructionZh「用 despise 造一個句子，說說你非常討厭的事。」、referenceEn [\"I despise it when people cut in line.\",\"I despise waking up early on weekends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「最」沒譯出，What I despise most is… 要點沒涵蓋",
+        "resolution": "改為 promptZh「我最痛恨別人在我背後說我壞話。」、referenceEn [\"I despise it when people talk about me behind my back.\",\"I really despise people saying bad things about me behind my back.\"]、rubricZh [\"despise 表示「非常厭惡」，後面可接名詞、it when 子句或動名詞（例如 despise it when… 等）\",\"「在我背後說我壞話」可寫，例如 talk about me behind my back、say bad things about me 等\",\"寫 What I despise most is… 也正確\"]（原 promptZh「我最痛恨別人在我背後說我壞話。」、referenceEn [\"I despise it when people talk about me behind my back.\",\"I really despise people saying bad things about me behind my back.\"]、rubricZh [\"despise 表示「非常厭惡」，後面可接名詞、it when 子句或動名詞（例如 despise it when… 等）\",\"「在我背後說我壞話」可寫，例如 talk about me behind my back、say bad things about me 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

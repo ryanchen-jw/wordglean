@@ -232,16 +232,19 @@
     },
     {
       "id": "b2-u10-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "pedantic",
-      "instructionZh": "用 pedantic 造一個句子，描述某個很愛挑小毛病的人或行為。",
+      "type": "translate",
+      "promptZh": "我的老師對文法非常吹毛求疵。",
+      "hintWords": [
+        "pedantic"
+      ],
       "referenceEn": [
-        "My boss can be pedantic about the format of every email.",
-        "I try not to be pedantic when I check my friends' writing."
+        "My teacher is very pedantic about grammar.",
+        "My teacher is extremely pedantic when it comes to grammar."
       ],
       "rubricZh": [
-        "句子要用到 pedantic，表示「吹毛求疵的、賣弄學問的」（例如 be pedantic about…）",
-        "描述要合理"
+        "pedantic 是形容詞，表示「吹毛求疵的」（例如 is very pedantic about… 等）",
+        "「對文法」可寫，例如 about grammar、when it comes to grammar 等",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     }
   ],
@@ -405,6 +408,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：simplification；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"簡化\"；改後：\"賣弄學問的\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pedantic）原位換成翻譯題，沿用題 id b2-u10-l04-q17；目標字沿用 pedantic",
+        "resolution": "改為 translate：promptZh「我的老師對文法非常吹毛求疵。」、hintWords [\"pedantic\"]、referenceEn [\"My teacher is very pedantic about grammar.\",\"My teacher is extremely pedantic when it comes to grammar.\"]、rubricZh [\"pedantic 是形容詞，表示「吹毛求疵的」（例如 is very pedantic about… 等）\",\"「對文法」可寫，例如 about grammar、when it comes to grammar 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 pedantic 造一個句子，描述某個很愛挑小毛病的人或行為。」、referenceEn [\"My boss can be pedantic about the format of every email.\",\"I try not to be pedantic when I check my friends' writing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

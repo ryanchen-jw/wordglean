@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u06-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "literally",
-      "instructionZh": "用 literally 造一個句子，強調某件事真的發生了（不是誇張）。",
+      "type": "translate",
+      "promptZh": "那家店真的離我家走路只要一分鐘。",
+      "hintWords": [
+        "literally"
+      ],
       "referenceEn": [
-        "I literally ran all the way to the station this morning.",
-        "I literally waited three hours for the bus yesterday."
+        "That shop is literally a one-minute walk from my house.",
+        "The shop is literally just one minute's walk from my home."
       ],
       "rubricZh": [
-        "句子要用到 literally，用來強調「真的、確實如此」（例如 literally ran、literally fell asleep）",
-        "句子內容要合理，時態正確"
+        "literally 用來強調「真的、毫不誇張」（例如 is literally a one-minute walk 等）",
+        "「走路一分鐘」可寫，例如 a one-minute walk、one minute's walk 等"
       ]
     }
   ],
@@ -425,6 +427,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"精確地\"；改後：\"有缺陷的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（literally）原位換成翻譯題，沿用題 id b2-u06-l06-q17；目標字沿用 literally",
+        "resolution": "改為 translate：promptZh「那家店真的離我家走路只要一分鐘。」、hintWords [\"literally\"]、referenceEn [\"That shop is literally a one-minute walk from my house.\",\"The shop is literally just one minute's walk from my home.\"]、rubricZh [\"literally 用來強調「真的、毫不誇張」（例如 is literally a one-minute walk 等）\",\"「走路一分鐘」可寫，例如 a one-minute walk、one minute's walk 等\"]（原 makeSentence：instructionZh「用 literally 造一個句子，強調某件事真的發生了（不是誇張）。」、referenceEn [\"I literally ran all the way to the station this morning.\",\"I literally waited three hours for the bus yesterday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

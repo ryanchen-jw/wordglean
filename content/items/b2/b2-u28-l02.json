@@ -233,17 +233,19 @@
     },
     {
       "id": "b2-u28-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "colleague",
-      "instructionZh": "用 colleague 造一個句子，說說一位同事幫過你的一件事。",
+      "type": "translate",
+      "promptZh": "這位新同事很快就記住了大家的名字。",
+      "hintWords": [
+        "colleague"
+      ],
       "referenceEn": [
-        "My colleague helped me fix my computer when it stopped working.",
-        "A colleague of mine taught me how to use the new software."
+        "The new colleague quickly learned everyone's name.",
+        "Our new colleague remembered everyone's names very quickly."
       ],
       "rubricZh": [
-        "句子要用到 colleague",
-        "寫法不限（例如 my colleague、a colleague of mine 等）",
-        "時態配合內容（例如 helped、taught 等）"
+        "「同事」可寫，例如 colleague 等；冠詞或所有格不扣分（例如 the、our 等）",
+        "「記住」可寫，例如 learned、remembered 等；quickly 位置不扣分",
+        "時態可用過去式或現在完成式（例如 learned、has learned 等）"
       ]
     }
   ],
@@ -365,6 +367,12 @@
         "message": "第②關 issue 結案：單字卡例句 'The conference room is on the third floor.' 只用到複合名詞 conference room，未呈現 conference「會議；研討會」本身的詞義；且干擾項「課程」代入可聯想成 classroom（課程室／教室在三樓）。建議換成 conference 獨立當名詞的例句（如 attend a conference）。自評疑慮 procedure 釋義「手續；流程；步驟」判可接受。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（colleague）原位換成翻譯題，沿用題 id b2-u28-l02-q17；目標字沿用 colleague",
+        "resolution": "改為 translate：promptZh「這位新同事很快就記住了大家的名字。」、hintWords [\"colleague\"]、referenceEn [\"The new colleague quickly learned everyone's name.\",\"Our new colleague remembered everyone's names very quickly.\"]、rubricZh [\"「同事」可寫，例如 colleague 等；冠詞或所有格不扣分（例如 the、our 等）\",\"「記住」可寫，例如 learned、remembered 等；quickly 位置不扣分\",\"時態可用過去式或現在完成式（例如 learned、has learned 等）\"]（原 makeSentence：instructionZh「用 colleague 造一個句子，說說一位同事幫過你的一件事。」、referenceEn [\"My colleague helped me fix my computer when it stopped working.\",\"A colleague of mine taught me how to use the new software.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

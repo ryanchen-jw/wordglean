@@ -221,17 +221,19 @@
     },
     {
       "id": "b2-u27-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "subculture",
-      "instructionZh": "用 subculture 造一個句子，說說你知道或感興趣的一種次文化（例如某種音樂、運動或收藏的愛好者）。",
+      "type": "translate",
+      "promptZh": "這座城市的街舞次文化吸引了很多年輕人。",
+      "hintWords": [
+        "subculture"
+      ],
       "referenceEn": [
-        "I am interested in the gaming subculture in Japan.",
-        "My cousin is part of a small subculture of people who collect old cameras."
+        "The street dance subculture in this city attracts many young people.",
+        "Many young people are drawn to this city's street dance subculture."
       ],
       "rubricZh": [
-        "句子要用到 subculture",
-        "寫法不限（例如 a subculture of skateboarders、the gaming subculture 等）",
-        "時態配合內容（例如 am、is 等）"
+        "subculture 指次文化（例如 the street dance subculture 等）",
+        "時態可用現在式、過去式或現在完成式（例如 attracts、attracted、has attracted 等）",
+        "主動或被動都可以（例如 attracts…、are drawn to… 等）"
       ]
     }
   ],
@@ -347,6 +349,12 @@
         "message": "第②關 issue 結案：疑似：hintWords 指定 nobility，但 rubric 把 a noble family 也列為可寫，等於不用目標字也算對；若要求用 nobility 應拿掉 a noble family，或明說不用 nobility 亦可。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（subculture）原位換成翻譯題，沿用題 id b2-u27-l07-q16；目標字沿用 subculture",
+        "resolution": "改為 translate：promptZh「這座城市的街舞次文化吸引了很多年輕人。」、hintWords [\"subculture\"]、referenceEn [\"The street dance subculture in this city attracts many young people.\",\"Many young people are drawn to this city's street dance subculture.\"]、rubricZh [\"subculture 指次文化（例如 the street dance subculture 等）\",\"時態可用現在式、過去式或現在完成式（例如 attracts、attracted、has attracted 等）\",\"主動或被動都可以（例如 attracts…、are drawn to… 等）\"]（原 makeSentence：instructionZh「用 subculture 造一個句子，說說你知道或感興趣的一種次文化（例如某種音樂、運動或收藏的愛好者）。」、referenceEn [\"I am interested in the gaming subculture in Japan.\",\"My cousin is part of a small subculture of people who collect old cameras.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

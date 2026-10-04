@@ -204,16 +204,18 @@
     },
     {
       "id": "b2-u45-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "tortoiseshell",
-      "instructionZh": "用 tortoiseshell 造一個句子，描述一樣有玳瑁花色的東西或動物。",
+      "type": "translate",
+      "promptZh": "我們家的貓是玳瑁貓。",
+      "hintWords": [
+        "tortoiseshell"
+      ],
       "referenceEn": [
-        "My sister wears glasses with tortoiseshell frames.",
-        "I have a tortoiseshell cat with orange and black fur."
+        "Our cat at home is a tortoiseshell.",
+        "We have a tortoiseshell cat at home."
       ],
       "rubricZh": [
-        "句子要用到 tortoiseshell（例如 tortoiseshell frames、a tortoiseshell cat）",
-        "時態配合內容（例如 wears、have 等）"
+        "tortoiseshell 可當名詞或放名詞前（例如 is a tortoiseshell、a tortoiseshell cat 等）",
+        "「我們家的貓」可寫，例如 our cat、our family's cat 等"
       ]
     }
   ],
@@ -323,6 +325,18 @@
         "message": "創辦人裁示：移出課綱：題型配比 mcq 應為 2 題，以本課目標字 tortoiseshell 補 1 題（四選項皆可放進空格、只能靠詞義判斷；干擾項取本單元先前課的字）",
         "resolution": "新增 b2-u45-l05-q17。改前：無；改後：stemEn \"The ____ butterfly that landed on our flowers had orange, brown and black wings.\"、options [\"sandstone\",\"breezy\",\"undersea\",\"tortoiseshell\"]、answer 3（sha256(題 id) 決定正解位置）",
         "resolvedAt": "2026-10-03T05:50:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（tortoiseshell）原位換成翻譯題，沿用題 id b2-u45-l05-q16；目標字沿用 tortoiseshell",
+        "resolution": "改為 translate：promptZh「我奶奶戴著一副玳瑁框的眼鏡。」、hintWords [\"tortoiseshell\"]、referenceEn [\"My grandmother wears glasses with tortoiseshell frames.\",\"My grandma wears a pair of tortoiseshell glasses.\"]、rubricZh [\"tortoiseshell 可放名詞前當形容詞（例如 tortoiseshell frames、tortoiseshell glasses 等）\",\"「一副眼鏡」可寫，例如 glasses、a pair of glasses 等\",\"「戴著」可寫，例如 wears、has on 等\"]（原 makeSentence：instructionZh「用 tortoiseshell 造一個句子，描述一樣有玳瑁花色的東西或動物。」、referenceEn [\"My sister wears glasses with tortoiseshell frames.\",\"I have a tortoiseshell cat with orange and black fur.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長裁示：第③關：SUS 與 u49-l01 單字卡 funky（wears … glasses with … frames）情境、句型相同",
+        "resolution": "改為 promptZh「我們家的貓是玳瑁貓。」、referenceEn [\"Our cat at home is a tortoiseshell.\",\"We have a tortoiseshell cat at home.\"]、rubricZh [\"tortoiseshell 可當名詞或放名詞前（例如 is a tortoiseshell、a tortoiseshell cat 等）\",\"「我們家的貓」可寫，例如 our cat、our family's cat 等\"]（原 promptZh「我奶奶戴著一副玳瑁框的眼鏡。」、referenceEn [\"My grandmother wears glasses with tortoiseshell frames.\",\"My grandma wears a pair of tortoiseshell glasses.\"]、rubricZh [\"tortoiseshell 可放名詞前當形容詞（例如 tortoiseshell frames、tortoiseshell glasses 等）\",\"「一副眼鏡」可寫，例如 glasses、a pair of glasses 等\",\"「戴著」可寫，例如 wears、has on 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

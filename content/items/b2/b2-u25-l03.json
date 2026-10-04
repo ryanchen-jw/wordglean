@@ -233,17 +233,19 @@
     },
     {
       "id": "b2-u25-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "listener",
-      "instructionZh": "用 listener 造一個句子，說說你覺得自己是不是一個好的傾聽者。",
+      "type": "translate",
+      "promptZh": "我奶奶是很好的傾聽者，從來不打斷別人說話。",
+      "hintWords": [
+        "listener"
+      ],
       "referenceEn": [
-        "I think I am a good listener because I never stop people while they are talking.",
-        "I am not a very good listener, because I often look at my phone."
+        "My grandmother is a good listener and never interrupts people.",
+        "My grandma is a great listener who never interrupts anyone."
       ],
       "rubricZh": [
-        "句子要用到 listener",
-        "可用形容詞修飾 listener（例如 a good listener、a patient listener 等）",
-        "時態配合內容（例如 am、think 等）"
+        "listener 這裡指傾聽的人（例如 a good listener 等）",
+        "「從來不打斷」可寫，例如 never interrupts people、never cuts people off 等",
+        "「奶奶」可寫，例如 grandmother、grandma 等"
       ]
     }
   ],
@@ -329,6 +331,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"時態配合內容（例如 am、think）\"；改後：\"時態配合內容（例如 am、think 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（listener）原位換成翻譯題，沿用題 id b2-u25-l03-q17；目標字沿用 listener",
+        "resolution": "改為 translate：promptZh「我奶奶是很好的傾聽者，從來不打斷別人說話。」、hintWords [\"listener\"]、referenceEn [\"My grandmother is a good listener and never interrupts people.\",\"My grandma is a great listener who never interrupts anyone.\"]、rubricZh [\"listener 這裡指傾聽的人（例如 a good listener 等）\",\"「從來不打斷」可寫，例如 never interrupts people、never cuts people off 等\",\"「奶奶」可寫，例如 grandmother、grandma 等\"]（原 makeSentence：instructionZh「用 listener 造一個句子，說說你覺得自己是不是一個好的傾聽者。」、referenceEn [\"I think I am a good listener because I never stop people while they are talking.\",\"I am not a very good listener, because I often look at my phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -217,16 +217,19 @@
     },
     {
       "id": "b2-u01-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "thereafter",
-      "instructionZh": "用 thereafter 造一個句子，說說你做了某件事之後接著發生的事。",
+      "type": "translate",
+      "promptZh": "會議會在九點開始，之後會提供午餐。",
+      "hintWords": [
+        "thereafter"
+      ],
       "referenceEn": [
-        "I moved to Taichung in May and found a new job shortly thereafter.",
-        "I started running every morning, and thereafter I felt much healthier."
+        "The meeting will start at nine, and lunch will be served thereafter.",
+        "The meeting will begin at nine; thereafter, lunch will be provided."
       ],
       "rubricZh": [
-        "句子要用到 thereafter，表示「在那之後」（例如 shortly thereafter、and thereafter…）",
-        "前後兩件事要有時間先後，而且是在說你自己的經歷"
+        "thereafter 表示「在那之後」，可放句尾或句首（例如 …served thereafter、Thereafter, … 等）",
+        "「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）",
+        "「提供午餐」可寫，例如 lunch will be served、lunch will be provided 等"
       ]
     }
   ],
@@ -312,6 +315,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：scarcely 為 q12 正解",
         "resolution": "改前：\"幾乎不\"；改後：\"必然地\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（thereafter）原位換成翻譯題，沿用題 id b2-u01-l03-q16；目標字沿用 thereafter",
+        "resolution": "改為 translate：promptZh「會議會在九點開始，之後會提供午餐。」、hintWords [\"thereafter\"]、referenceEn [\"The meeting will start at nine, and lunch will be served thereafter.\",\"The meeting will begin at nine; thereafter, lunch will be provided.\"]、rubricZh [\"thereafter 表示「在那之後」，可放句尾或句首（例如 …served thereafter、Thereafter, … 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）\",\"「提供午餐」可寫，例如 lunch will be served、lunch will be provided 等\"]（原 makeSentence：instructionZh「用 thereafter 造一個句子，說說你做了某件事之後接著發生的事。」、referenceEn [\"I moved to Taichung in May and found a new job shortly thereafter.\",\"I started running every morning, and thereafter I felt much healthier.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

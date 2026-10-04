@@ -218,16 +218,19 @@
     },
     {
       "id": "b2-u01-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "conversely",
-      "instructionZh": "用 conversely 造一個句子，比較兩種相反的情況（例如平日和假日的你）。",
+      "type": "translate",
+      "promptZh": "這家店平日很安靜；相反地，週末總是擠滿了人。",
+      "hintWords": [
+        "conversely"
+      ],
       "referenceEn": [
-        "On weekdays I get up at six; conversely, on weekends I sleep until ten.",
-        "I find reading on paper easy. Conversely, reading on a screen makes me tired."
+        "This shop is quiet on weekdays; conversely, it is always crowded on weekends.",
+        "The shop is quiet during the week. Conversely, it is always full of people on weekends."
       ],
       "rubricZh": [
-        "句子要用到 conversely，表示「相反地、反過來說」，前後兩部分要是相反的情況",
-        "conversely 可放在第二句句首或分號後面（例如 …; conversely, …）"
+        "conversely 帶出相反的情況，可放分號後或新句句首（例如 ; conversely,、. Conversely, 等）",
+        "「平日」可寫，例如 on weekdays、during the week 等",
+        "「擠滿了人」可寫，例如 crowded、full of people、packed 等；always 位置不扣分"
       ]
     }
   ],
@@ -385,6 +388,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"對；到\"；改後：\"雖然\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（conversely）原位換成翻譯題，沿用題 id b2-u01-l04-q16；目標字沿用 conversely",
+        "resolution": "改為 translate：promptZh「這家店平日很安靜；相反地，週末總是擠滿了人。」、hintWords [\"conversely\"]、referenceEn [\"This shop is quiet on weekdays; conversely, it is always crowded on weekends.\",\"The shop is quiet during the week. Conversely, it is always full of people on weekends.\"]、rubricZh [\"conversely 帶出相反的情況，可放分號後或新句句首（例如 ; conversely,、. Conversely, 等）\",\"「平日」可寫，例如 on weekdays、during the week 等\",\"「擠滿了人」可寫，例如 crowded、full of people、packed 等；always 位置不扣分\"]（原 makeSentence：instructionZh「用 conversely 造一個句子，比較兩種相反的情況（例如平日和假日的你）。」、referenceEn [\"On weekdays I get up at six; conversely, on weekends I sleep until ten.\",\"I find reading on paper easy. Conversely, reading on a screen makes me tired.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

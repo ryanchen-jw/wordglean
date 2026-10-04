@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u17-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "artistry",
-      "instructionZh": "用 artistry 造一個句子，說說你欣賞的一項手藝或表演。",
+      "type": "translate",
+      "promptZh": "這位廚師的手藝讓每道菜看起來都像一幅畫。",
+      "hintWords": [
+        "artistry"
+      ],
       "referenceEn": [
-        "I admire the artistry of people who make pottery by hand.",
-        "The artistry of the dancers in the show amazed me."
+        "The chef's artistry makes every dish look like a painting.",
+        "Thanks to the chef's artistry, each dish looks like a picture."
       ],
       "rubricZh": [
-        "句子要用到 artistry（例如 the artistry of…）",
-        "句子要說到你自己的感受"
+        "artistry 指「藝術技巧、手藝」，不可數（例如 the chef's artistry 等）",
+        "「看起來像一幅畫」可寫，例如 look like a painting、looks like a picture 等",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -356,6 +359,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，fourteen-line ballads 要靠文學知識才排除",
         "resolution": "改前：\"抒情歌\"；改後：\"三重奏\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（artistry）原位換成翻譯題，沿用題 id b2-u17-l04-q17；目標字沿用 artistry",
+        "resolution": "改為 translate：promptZh「這位廚師的手藝讓每道菜看起來都像一幅畫。」、hintWords [\"artistry\"]、referenceEn [\"The chef's artistry makes every dish look like a painting.\",\"Thanks to the chef's artistry, each dish looks like a picture.\"]、rubricZh [\"artistry 指「藝術技巧、手藝」，不可數（例如 the chef's artistry 等）\",\"「看起來像一幅畫」可寫，例如 look like a painting、looks like a picture 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 artistry 造一個句子，說說你欣賞的一項手藝或表演。」、referenceEn [\"I admire the artistry of people who make pottery by hand.\",\"The artistry of the dancers in the show amazed me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

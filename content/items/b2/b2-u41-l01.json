@@ -229,17 +229,18 @@
     },
     {
       "id": "b2-u41-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "rub",
-      "instructionZh": "用 rub 造一個句子，說說你什麼時候會揉或搓身體的某個部位。",
+      "type": "translate",
+      "promptZh": "他累的時候常常揉眼睛。",
+      "hintWords": [
+        "rub"
+      ],
       "referenceEn": [
-        "I rub my eyes when I feel sleepy at work.",
-        "I rub my hands together on cold mornings."
+        "He often rubs his eyes when he is tired.",
+        "When he feels tired, he often rubs his eyes."
       ],
       "rubricZh": [
-        "句子要用到 rub",
-        "rub 的用法，例如 rub my eyes、rub my hands together 等",
-        "說習慣，時態配合內容（例如 rub、often rub 等）"
+        "rub 指「揉」（例如 rubs his eyes 等）；主詞是 he，動詞配合主詞",
+        "often 位置不扣分；when 子句可放句首或句尾"
       ]
     }
   ],
@@ -265,6 +266,13 @@
     },
     "glossVerdicts": {},
     "issues": [],
-    "resolvedAfterFinalReview": []
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rub）原位換成翻譯題，沿用題 id b2-u41-l01-q17；目標字沿用 rub",
+        "resolution": "改為 translate：promptZh「他累的時候常常揉眼睛。」、hintWords [\"rub\"]、referenceEn [\"He often rubs his eyes when he is tired.\",\"When he feels tired, he often rubs his eyes.\"]、rubricZh [\"rub 指「揉」（例如 rubs his eyes 等）；主詞是 he，動詞配合主詞\",\"often 位置不扣分；when 子句可放句首或句尾\"]（原 makeSentence：instructionZh「用 rub 造一個句子，說說你什麼時候會揉或搓身體的某個部位。」、referenceEn [\"I rub my eyes when I feel sleepy at work.\",\"I rub my hands together on cold mornings.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      }
+    ]
   }
 }

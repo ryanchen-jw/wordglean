@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u44-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "clumsy",
-      "instructionZh": "用 clumsy 造一個句子，說說一次你笨手笨腳的經驗。",
+      "type": "translate",
+      "promptZh": "我剛開始學打字的時候，手指很不靈活。",
+      "hintWords": [
+        "clumsy"
+      ],
       "referenceEn": [
-        "I was clumsy with the scissors and cut the birthday card in the wrong place.",
-        "I felt clumsy in my first dance class and kept stepping on my partner's feet."
+        "When I first learned to type, my fingers were clumsy.",
+        "My fingers felt clumsy when I first started learning to type."
       ],
       "rubricZh": [
-        "句子要用到 clumsy",
-        "clumsy 的用法，例如 clumsy with the scissors、felt clumsy in 等",
-        "時態合理（例如 was、felt 等）"
+        "clumsy 表示「笨拙的、不靈活的」（例如 were clumsy、felt clumsy 等）",
+        "「剛開始學打字」可寫，例如 when I first learned to type、when I started learning to type 等"
       ]
     }
   ],
@@ -312,6 +313,12 @@
         "message": "執行長第②③關裁示修正：第③關 B FIX #30：參考答案 2 寫習慣，題目要一次經驗；第③關 B FIX #30；同課題目互比：參考答案 1 和閱讀同為 I was so clumsy that；第 2 批最終複審 FIX #3：參考答案 1 和 q10 同為笨手摔掉東西",
         "resolution": "改前：\"時態合理（例如 was、am 等）\"；改後：\"時態合理（例如 was、felt 等）\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（clumsy）原位換成翻譯題，沿用題 id b2-u44-l07-q17；目標字沿用 clumsy",
+        "resolution": "改為 translate：promptZh「我剛開始學打字的時候，手指很不靈活。」、hintWords [\"clumsy\"]、referenceEn [\"When I first learned to type, my fingers were clumsy.\",\"My fingers felt clumsy when I first started learning to type.\"]、rubricZh [\"clumsy 表示「笨拙的、不靈活的」（例如 were clumsy、felt clumsy 等）\",\"「剛開始學打字」可寫，例如 when I first learned to type、when I started learning to type 等\"]（原 makeSentence：instructionZh「用 clumsy 造一個句子，說說一次你笨手笨腳的經驗。」、referenceEn [\"I was clumsy with the scissors and cut the birthday card in the wrong place.\",\"I felt clumsy in my first dance class and kept stepping on my partner's feet.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

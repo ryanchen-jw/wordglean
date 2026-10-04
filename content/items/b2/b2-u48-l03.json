@@ -233,16 +233,18 @@
     },
     {
       "id": "b2-u48-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "elegance",
-      "instructionZh": "用 elegance 造一個句子，描述一個讓你覺得優雅的人、地方或東西。",
+      "type": "translate",
+      "promptZh": "這支手錶設計簡單，帶有一種低調的優雅。",
+      "hintWords": [
+        "elegance"
+      ],
       "referenceEn": [
-        "My grandmother always dresses with simple elegance.",
-        "I love the quiet elegance of old Japanese houses."
+        "This watch has a simple design and a quiet elegance.",
+        "The simple design of this watch gives it a quiet elegance."
       ],
       "rubricZh": [
-        "句子要用到 elegance 當名詞（例如 with simple elegance、the elegance of…）",
-        "時態配合內容（例如 dresses、love 等）"
+        "elegance 表示「優雅」（例如 a quiet elegance、simple elegance 等）",
+        "「低調的」可寫，例如 quiet、simple、understated 等"
       ]
     }
   ],
@@ -376,6 +378,12 @@
         "message": "第②關 issue 結案：疑似過嚴：要點寫死被動語態，但 They closed the old building because it was unsafe.、The old building closed because… 也是正確譯法；建議改「（例如 was closed；主動句 they closed… 也可以）」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/15 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（elegance）原位換成翻譯題，沿用題 id b2-u48-l03-q17；目標字沿用 elegance",
+        "resolution": "改為 translate：promptZh「這支手錶設計簡單，帶有一種低調的優雅。」、hintWords [\"elegance\"]、referenceEn [\"This watch has a simple design and a quiet elegance.\",\"The simple design of this watch gives it a quiet elegance.\"]、rubricZh [\"elegance 表示「優雅」（例如 a quiet elegance、simple elegance 等）\",\"「低調的」可寫，例如 quiet、simple、understated 等\"]（原 makeSentence：instructionZh「用 elegance 造一個句子，描述一個讓你覺得優雅的人、地方或東西。」、referenceEn [\"My grandmother always dresses with simple elegance.\",\"I love the quiet elegance of old Japanese houses.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

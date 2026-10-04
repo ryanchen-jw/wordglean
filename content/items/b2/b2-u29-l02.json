@@ -231,17 +231,19 @@
     },
     {
       "id": "b2-u29-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "retirement",
-      "instructionZh": "用 retirement 造一個句子，說說你希望退休後做什麼，或你認識的人退休後在做什麼。",
+      "type": "translate",
+      "promptZh": "上週五，我們為一位老同事辦了退休派對。",
+      "hintWords": [
+        "retirement"
+      ],
       "referenceEn": [
-        "After my retirement, I hope to open a small bookshop.",
-        "I want to travel around the world after my retirement."
+        "Last Friday, we had a retirement party for an old colleague.",
+        "We held a retirement party for a long-time colleague last Friday."
       ],
       "rubricZh": [
-        "句子要用到 retirement",
-        "retirement 的用法，例如 after my retirement、in retirement、spend his retirement 等",
-        "時態合理（例如 hope、spends 等）"
+        "「退休派對」可寫，例如 a retirement party 等",
+        "「辦」可寫，例如 had、held、threw 等；用過去式",
+        "「老同事」可寫，例如 an old colleague、a long-time co-worker 等"
       ]
     }
   ],
@@ -363,6 +365,12 @@
         "message": "執行長第②③關裁示修正：第③關 FIX：要點「常見搭配」改寫；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與聽選同為親人退休後的活動",
         "resolution": "改前：\"時態配合內容（例如 hope、spends）\"；改後：\"時態合理（例如 hope、spends 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（retirement）原位換成翻譯題，沿用題 id b2-u29-l02-q17；目標字沿用 retirement",
+        "resolution": "改為 translate：promptZh「上週五，我們為一位老同事辦了退休派對。」、hintWords [\"retirement\"]、referenceEn [\"Last Friday, we had a retirement party for an old colleague.\",\"We held a retirement party for a long-time colleague last Friday.\"]、rubricZh [\"「退休派對」可寫，例如 a retirement party 等\",\"「辦」可寫，例如 had、held、threw 等；用過去式\",\"「老同事」可寫，例如 an old colleague、a long-time co-worker 等\"]（原 makeSentence：instructionZh「用 retirement 造一個句子，說說你希望退休後做什麼，或你認識的人退休後在做什麼。」、referenceEn [\"After my retirement, I hope to open a small bookshop.\",\"I want to travel around the world after my retirement.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

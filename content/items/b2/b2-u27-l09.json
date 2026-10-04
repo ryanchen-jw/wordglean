@@ -218,17 +218,18 @@
     },
     {
       "id": "b2-u27-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "ungodly",
-      "instructionZh": "用 ungodly 造一個句子，說說你曾經在很不合理的時間做過的一件事。",
+      "type": "translate",
+      "promptZh": "我的鄰居昨晚三更半夜還在彈鋼琴。",
+      "hintWords": [
+        "ungodly"
+      ],
       "referenceEn": [
-        "I once finished an essay at an ungodly hour, just before sunrise.",
-        "I woke up at an ungodly hour to watch the World Cup final."
+        "My neighbor was playing the piano at an ungodly hour last night.",
+        "Last night, my neighbor played the piano until an ungodly hour."
       ],
       "rubricZh": [
-        "句子要用到 ungodly",
-        "ungodly 的用法，例如 at an ungodly hour、ungodly hours 等",
-        "說過去的經驗，時態合理（例如 finished、woke up、have woken up 等）"
+        "ungodly 常和 hour 連用，表示時間太早或太晚（例如 at an ungodly hour、until an ungodly hour 等）",
+        "昨晚的事用過去式或過去進行式（例如 played、was playing 等）"
       ]
     }
   ],
@@ -410,6 +411,12 @@
         "message": "第②關 issue 結案：中譯多加資訊：'start at an ungodly hour' 只說時間早得不合理，中譯「在天還沒亮的時候上工」加了具體時段；建議改「在早得離譜的時間上工」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（ungodly）原位換成翻譯題，沿用題 id b2-u27-l09-q16；目標字沿用 ungodly",
+        "resolution": "改為 translate：promptZh「我的鄰居昨晚三更半夜還在彈鋼琴。」、hintWords [\"ungodly\"]、referenceEn [\"My neighbor was playing the piano at an ungodly hour last night.\",\"Last night, my neighbor played the piano until an ungodly hour.\"]、rubricZh [\"ungodly 常和 hour 連用，表示時間太早或太晚（例如 at an ungodly hour、until an ungodly hour 等）\",\"昨晚的事用過去式或過去進行式（例如 played、was playing 等）\"]（原 makeSentence：instructionZh「用 ungodly 造一個句子，說說你曾經在很不合理的時間做過的一件事。」、referenceEn [\"I once finished an essay at an ungodly hour, just before sunrise.\",\"I woke up at an ungodly hour to watch the World Cup final.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

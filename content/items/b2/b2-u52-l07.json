@@ -217,16 +217,18 @@
     },
     {
       "id": "b2-u52-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "wearisome",
-      "instructionZh": "用 wearisome 造一個句子，說說一件讓你覺得很累、很厭煩的事。",
+      "type": "translate",
+      "promptZh": "這份工作很好，但每天長途通勤很累人。",
+      "hintWords": [
+        "wearisome"
+      ],
       "referenceEn": [
-        "Cleaning my room every week is wearisome.",
-        "The long bus ride to my hometown is wearisome."
+        "The job is great, but the long journey to work every day is wearisome.",
+        "The job is good, but traveling so far to work each day is wearisome."
       ],
       "rubricZh": [
-        "句子要用到 wearisome（例如 is wearisome）",
-        "說明是哪件事（例如 cleaning my room、the long bus ride 等）"
+        "wearisome 當形容詞（例如 is wearisome 等）",
+        "「每天長途通勤」可寫，例如 the long journey to work every day、the long commute 等"
       ]
     }
   ],
@@ -318,6 +320,12 @@
         "message": "第②關 issue 結案：疑似刻板印象（§11.19）：\"Having lived on a quiet farm all his life, my uncle was so unworldly that he believed every stranger's story\" 把天真、容易受騙歸因於務農／鄉下出身。建議拿掉農場背景，例如 \"My uncle was so ____ that he believed every stranger's story.\"。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/11 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（wearisome）原位換成翻譯題，沿用題 id b2-u52-l07-q16；目標字沿用 wearisome",
+        "resolution": "改為 translate：promptZh「這份工作很好，但每天長途通勤很累人。」、hintWords [\"wearisome\"]、referenceEn [\"The job is great, but the long journey to work every day is wearisome.\",\"The job is good, but traveling so far to work each day is wearisome.\"]、rubricZh [\"wearisome 當形容詞（例如 is wearisome 等）\",\"「每天長途通勤」可寫，例如 the long journey to work every day、the long commute 等\"]（原 makeSentence：instructionZh「用 wearisome 造一個句子，說說一件讓你覺得很累、很厭煩的事。」、referenceEn [\"Cleaning my room every week is wearisome.\",\"The long bus ride to my hometown is wearisome.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

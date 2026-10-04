@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u12-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "fascination",
-      "instructionZh": "用 fascination 造一個句子，說說你從小就著迷的事物。",
+      "type": "translate",
+      "promptZh": "許多遊客對這座城市的老街十分著迷。",
+      "hintWords": [
+        "fascination"
+      ],
       "referenceEn": [
-        "My fascination with space started when I was a child.",
-        "I have always had a fascination with old cars."
+        "Many tourists have a fascination with the old streets of this city.",
+        "The old streets of this city hold a great fascination for many tourists."
       ],
       "rubricZh": [
-        "句子要用到 fascination（例如 a fascination with／for… 等）",
-        "句子要說到你自己"
+        "fascination 是名詞（例如 have a fascination with、hold a fascination for 等）",
+        "寫 are fascinated by 意思也對，但本題要用 fascination",
+        "「老街」可寫，例如 the old streets 等"
       ]
     }
   ],
@@ -511,6 +514,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 fascination，常用 a fascination with／for…\",\"句子要說到你自己\"]；改後：[\"句子要用到 fascination（例如 a fascination with／for… 等）\",\"句子要說到你自己\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fascination）原位換成翻譯題，沿用題 id b2-u12-l09-q17；目標字沿用 fascination",
+        "resolution": "改為 translate：promptZh「許多遊客對這座城市的老街十分著迷。」、hintWords [\"fascination\"]、referenceEn [\"Many tourists have a fascination with the old streets of this city.\",\"The old streets of this city hold a great fascination for many tourists.\"]、rubricZh [\"fascination 是名詞（例如 have a fascination with、hold a fascination for 等）\",\"寫 are fascinated by 意思也對，但本題要用 fascination\",\"「老街」可寫，例如 the old streets 等\"]（原 makeSentence：instructionZh「用 fascination 造一個句子，說說你從小就著迷的事物。」、referenceEn [\"My fascination with space started when I was a child.\",\"I have always had a fascination with old cars.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

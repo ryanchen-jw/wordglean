@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u51-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "gaudy",
-      "instructionZh": "用 gaudy 造一個句子，描述一樣你覺得太花俏、俗氣的東西。",
+      "type": "translate",
+      "promptZh": "那棟房子被漆成俗氣的亮綠色。",
+      "hintWords": [
+        "gaudy"
+      ],
       "referenceEn": [
-        "My uncle's gaudy gold watch is too big for his wrist.",
-        "I think the gaudy lights on that building are too bright."
+        "That house was painted a gaudy bright green.",
+        "The house was painted in a gaudy shade of bright green."
       ],
       "rubricZh": [
-        "句子要用到 gaudy（例如 a gaudy gold watch、the gaudy lights）",
-        "時態配合內容（例如 is、are 等）"
+        "gaudy 可放名詞前或 be／look 後（例如 a gaudy bright green、looks gaudy 等）",
+        "「被漆成」可寫，例如 was painted、is painted 等；主動句（例如 They painted…）也正確"
       ]
     }
   ],
@@ -323,6 +325,18 @@
         "message": "第②關 issue 結案：疑似：第二義「用圖表地」中文不成語，建議「以圖像方式；用圖表」或「圖解地」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/7 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gaudy）原位換成翻譯題，沿用題 id b2-u51-l03-q17；目標字沿用 gaudy",
+        "resolution": "改為 translate：promptZh「那棟房子被漆成俗氣的亮綠色。」、hintWords [\"gaudy\"]、referenceEn [\"That house was painted a gaudy bright green.\",\"The house was painted in a gaudy shade of bright green.\"]、rubricZh [\"gaudy 當形容詞放名詞前（例如 a gaudy bright green 等）\",\"「被漆成」可寫，例如 was painted、is painted 等；主動句（例如 They painted…）也正確\"]（原 makeSentence：instructionZh「用 gaudy 造一個句子，描述一樣你覺得太花俏、俗氣的東西。」、referenceEn [\"My uncle's gaudy gold watch is too big for his wrist.\",\"I think the gaudy lights on that building are too bright.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 gaudy 放名詞前",
+        "resolution": "改為 promptZh「那棟房子被漆成俗氣的亮綠色。」、referenceEn [\"That house was painted a gaudy bright green.\",\"The house was painted in a gaudy shade of bright green.\"]、rubricZh [\"gaudy 可放名詞前或 be／look 後（例如 a gaudy bright green、looks gaudy 等）\",\"「被漆成」可寫，例如 was painted、is painted 等；主動句（例如 They painted…）也正確\"]（原 promptZh「那棟房子被漆成俗氣的亮綠色。」、referenceEn [\"That house was painted a gaudy bright green.\",\"The house was painted in a gaudy shade of bright green.\"]、rubricZh [\"gaudy 當形容詞放名詞前（例如 a gaudy bright green 等）\",\"「被漆成」可寫，例如 was painted、is painted 等；主動句（例如 They painted…）也正確\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

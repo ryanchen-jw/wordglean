@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u43-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "persuasion",
-      "instructionZh": "用 persuasion 造一個句子，說說一次你說服別人（或被說服）做某件事的經驗。",
+      "type": "translate",
+      "promptZh": "經過一番勸說，我弟弟終於答應洗碗。",
+      "hintWords": [
+        "persuasion"
+      ],
       "referenceEn": [
-        "It took me a lot of persuasion to get my friend to join the club.",
-        "With a little persuasion, I got my brother to wash the dishes."
+        "After some persuasion, my brother finally agreed to wash the dishes.",
+        "With a little persuasion, my younger brother finally agreed to do the dishes."
       ],
       "rubricZh": [
-        "句子要用到 persuasion",
-        "persuasion 的用法，例如 a lot of persuasion、with a little persuasion 等",
-        "時態合理（例如 took、got 等）"
+        "persuasion 當名詞（例如 after some persuasion、with a little persuasion 等）",
+        "「洗碗」可寫，例如 wash the dishes、do the dishes 等；時態可用過去式或現在完成式（例如 agreed、has agreed 等）"
       ]
     }
   ],
@@ -318,6 +319,12 @@
         "message": "第②關 issue 結案：評分要點把 completely changed 列為 worldview 的用法例子，但它不是 worldview 的搭配，且題目沒有「完全」；建議改為 changed my worldview、shaped my worldview 等。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（persuasion）原位換成翻譯題，沿用題 id b2-u43-l06-q17；目標字沿用 persuasion",
+        "resolution": "改為 translate：promptZh「經過一番勸說，我弟弟終於答應洗碗。」、hintWords [\"persuasion\"]、referenceEn [\"After some persuasion, my brother finally agreed to wash the dishes.\",\"With a little persuasion, my younger brother finally agreed to do the dishes.\"]、rubricZh [\"persuasion 當名詞（例如 after some persuasion、with a little persuasion 等）\",\"「洗碗」可寫，例如 wash the dishes、do the dishes 等；時態可用過去式或現在完成式（例如 agreed、has agreed 等）\"]（原 makeSentence：instructionZh「用 persuasion 造一個句子，說說一次你說服別人（或被說服）做某件事的經驗。」、referenceEn [\"It took me a lot of persuasion to get my friend to join the club.\",\"With a little persuasion, I got my brother to wash the dishes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

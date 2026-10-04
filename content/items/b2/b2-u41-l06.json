@@ -230,17 +230,19 @@
     },
     {
       "id": "b2-u41-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "flip",
-      "instructionZh": "用 flip 造一個句子，說說你會翻動或翻轉什麼東西（例如硬幣、書頁）。",
+      "type": "translate",
+      "promptZh": "我們丟硬幣來決定誰先開始。",
+      "hintWords": [
+        "flip"
+      ],
       "referenceEn": [
-        "I flip a coin when I can't decide what to eat.",
-        "I flipped through a magazine while I was waiting for the bus."
+        "We flipped a coin to decide who would go first.",
+        "We flip a coin to decide who goes first."
       ],
       "rubricZh": [
-        "句子要用到 flip",
-        "flip 的用法，例如 flip a coin、flip through a magazine 等",
-        "時態配合內容（例如 flip、flipped 等）"
+        "「丟硬幣」可寫，例如 flip a coin、flipped a coin 等",
+        "「誰先開始」可寫，例如 who goes first、who would start first 等",
+        "時態可用過去式或現在式（例如 flipped、flip 等）"
       ]
     }
   ],
@@ -332,6 +334,18 @@
         "message": "第②關 issue 結案：中文不順：「我還是嬰兒的弟弟爬進廚房」讀起來生硬，建議「我的小嬰兒弟弟爬進廚房」或「還在學爬的弟弟爬進廚房」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（flip）原位換成翻譯題，沿用題 id b2-u41-l06-q17；目標字沿用 flip",
+        "resolution": "改為 translate：promptZh「我們丟硬幣來決定誰先開始。」、hintWords [\"flip\"]、referenceEn [\"We flipped a coin to decide who would go first.\",\"We flip a coin to decide who goes first.\"]、rubricZh [\"flip a coin 表示「丟硬幣」\",\"「誰先開始」可寫，例如 who goes first、who would start first 等\",\"時態可用過去式或現在式（例如 flipped、flip 等）\"]（原 makeSentence：instructionZh「用 flip 造一個句子，說說你會翻動或翻轉什麼東西（例如硬幣、書頁）。」、referenceEn [\"I flip a coin when I can't decide what to eat.\",\"I flipped through a magazine while I was waiting for the bus.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點只列一種寫法，沒有「例如…等」（§11.23）",
+        "resolution": "改為 promptZh「我們丟硬幣來決定誰先開始。」、referenceEn [\"We flipped a coin to decide who would go first.\",\"We flip a coin to decide who goes first.\"]、rubricZh [\"「丟硬幣」可寫，例如 flip a coin、flipped a coin 等\",\"「誰先開始」可寫，例如 who goes first、who would start first 等\",\"時態可用過去式或現在式（例如 flipped、flip 等）\"]（原 promptZh「我們丟硬幣來決定誰先開始。」、referenceEn [\"We flipped a coin to decide who would go first.\",\"We flip a coin to decide who goes first.\"]、rubricZh [\"flip a coin 表示「丟硬幣」\",\"「誰先開始」可寫，例如 who goes first、who would start first 等\",\"時態可用過去式或現在式（例如 flipped、flip 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

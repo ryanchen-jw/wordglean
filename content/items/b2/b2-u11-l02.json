@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u11-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "outsider",
-      "instructionZh": "用 outsider 造一個句子，說說你曾經覺得自己像外人的經驗。",
+      "type": "translate",
+      "promptZh": "老師幫助那位新同學，讓他不再覺得自己像個外人。",
+      "hintWords": [
+        "outsider"
+      ],
       "referenceEn": [
-        "When I joined my new company, I felt like an outsider for months.",
-        "At my cousin's wedding, I was an outsider because I didn't know anyone."
+        "The teacher helped the new student so that he no longer felt like an outsider.",
+        "The teacher helped the new boy stop feeling like an outsider."
       ],
       "rubricZh": [
-        "句子要用到 outsider，表示「外人、局外人」（例如 feel like an outsider）",
-        "句子要說到你自己的經驗"
+        "outsider 指「外人、局外人」（例如 feel like an outsider 等）",
+        "「不再覺得」可寫，例如 no longer felt、stop feeling、didn't feel … anymore 等",
+        "時態可用過去式或現在完成式（例如 helped、has helped 等）"
       ]
     }
   ],
@@ -427,6 +430,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"墓地\"；改後：\"一般的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（outsider）原位換成翻譯題，沿用題 id b2-u11-l02-q17；目標字沿用 outsider",
+        "resolution": "改為 translate：promptZh「老師幫助那位新同學，讓他不再覺得自己像個外人。」、hintWords [\"outsider\"]、referenceEn [\"The teacher helped the new student so that he no longer felt like an outsider.\",\"The teacher helped the new boy stop feeling like an outsider.\"]、rubricZh [\"outsider 指「外人、局外人」（例如 feel like an outsider 等）\",\"「不再覺得」可寫，例如 no longer felt、stop feeling、didn't feel … anymore 等\",\"時態可用過去式或現在完成式（例如 helped、has helped 等）\"]（原 makeSentence：instructionZh「用 outsider 造一個句子，說說你曾經覺得自己像外人的經驗。」、referenceEn [\"When I joined my new company, I felt like an outsider for months.\",\"At my cousin's wedding, I was an outsider because I didn't know anyone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

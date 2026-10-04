@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u21-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "motorbike",
-      "instructionZh": "用 motorbike 造一個句子，說說你或認識的人騎摩托車的經驗。",
+      "type": "translate",
+      "promptZh": "我爸爸週末都在車庫裡修他的舊摩托車。",
+      "hintWords": [
+        "motorbike"
+      ],
       "referenceEn": [
-        "My older brother rides his motorbike to the office every day.",
-        "I learned to ride a motorbike when I was twenty."
+        "My dad spends his weekends fixing his old motorbike in the garage.",
+        "On weekends, my father repairs his old motorbike in the garage."
       ],
       "rubricZh": [
-        "句子要用到 motorbike",
-        "時態合理即可"
+        "motorbike 指摩托車（例如 his old motorbike 等）",
+        "習慣的事用現在式（例如 repairs、spends… fixing 等）",
+        "「修」可寫，例如 fix、repair、work on 等"
       ]
     }
   ],
@@ -299,6 +302,12 @@
         "message": "第②關 issue 結案：疑似冷僻填充干擾項：「司機助手」不是常見職稱，生硬。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/4 的 1 筆修正紀錄。",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（motorbike）原位換成翻譯題，沿用題 id b2-u21-l05-q17；目標字沿用 motorbike",
+        "resolution": "改為 translate：promptZh「我爸爸週末都在車庫裡修他的舊摩托車。」、hintWords [\"motorbike\"]、referenceEn [\"My dad spends his weekends fixing his old motorbike in the garage.\",\"On weekends, my father repairs his old motorbike in the garage.\"]、rubricZh [\"motorbike 指摩托車（例如 his old motorbike 等）\",\"習慣的事用現在式（例如 repairs、spends… fixing 等）\",\"「修」可寫，例如 fix、repair、work on 等\"]（原 makeSentence：instructionZh「用 motorbike 造一個句子，說說你或認識的人騎摩托車的經驗。」、referenceEn [\"My older brother rides his motorbike to the office every day.\",\"I learned to ride a motorbike when I was twenty.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

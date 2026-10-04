@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u52-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "unkind",
-      "instructionZh": "用 unkind 造一個句子，說說一次你覺得別人說話或做事不友善的經驗。",
+      "type": "translate",
+      "promptZh": "她對新同學很不友善，從來不跟他說話。",
+      "hintWords": [
+        "unkind"
+      ],
       "referenceEn": [
-        "It was unkind of my classmate to read my diary without asking.",
-        "Some people left unkind comments under my video."
+        "She is unkind to the new classmate and never talks to him.",
+        "She is very unkind to the new student; she never speaks to him."
       ],
       "rubricZh": [
-        "句子要用到 unkind（例如 It was unkind of…、unkind comments）",
-        "時態配合內容（例如 was、left 等）"
+        "unkind 當形容詞，常接 to＋人（例如 is unkind to the new classmate 等）",
+        "「新同學」可寫，例如 the new classmate、the new student 等",
+        "時態可用現在式、過去式或現在完成式（例如 is、was、has been 等）"
       ]
     }
   ],
@@ -331,6 +334,12 @@
         "message": "第②關 issue 結案：參考答案多加資訊：題目「不誠實可能會毀掉一段友誼」，ref1 加了 even a long、ref2 加了 easily…between two people，原文都沒有。建議 \"Dishonesty can destroy a friendship.\"。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/15 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unkind）原位換成翻譯題，沿用題 id b2-u52-l01-q17；目標字沿用 unkind",
+        "resolution": "改為 translate：promptZh「她對新同學很不友善，從來不跟他說話。」、hintWords [\"unkind\"]、referenceEn [\"She is unkind to the new classmate and never talks to him.\",\"She is very unkind to the new student; she never speaks to him.\"]、rubricZh [\"unkind 當形容詞，常接 to＋人（例如 is unkind to the new classmate 等）\",\"「新同學」可寫，例如 the new classmate、the new student 等\",\"時態可用現在式、過去式或現在完成式（例如 is、was、has been 等）\"]（原 makeSentence：instructionZh「用 unkind 造一個句子，說說一次你覺得別人說話或做事不友善的經驗。」、referenceEn [\"It was unkind of my classmate to read my diary without asking.\",\"Some people left unkind comments under my video.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

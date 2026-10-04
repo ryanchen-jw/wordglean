@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u07-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "percentage",
-      "instructionZh": "用 percentage 造一個句子，說說你的收入、時間或生活中某部分的比例。",
+      "type": "translate",
+      "promptZh": "牛奶裡水的比例很高。",
+      "hintWords": [
+        "percentage"
+      ],
       "referenceEn": [
-        "I save a small percentage of my salary every month.",
-        "A large percentage of my free time is spent reading."
+        "Milk contains a very high percentage of water.",
+        "The percentage of water in milk is very high."
       ],
       "rubricZh": [
-        "句子要用到 percentage（例如 a large／small percentage of… 等）",
-        "句子要說到你自己的生活"
+        "percentage 指百分比、比例（例如 a high percentage of、the percentage of … 等）",
+        "「含有」可寫，例如 contains、has 等"
       ]
     }
   ],
@@ -431,6 +433,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 percentage，常用 a large／small percentage of…\",\"句子要說到你自己的生活\"]；改後：[\"句子要用到 percentage（例如 a large／small percentage of… 等）\",\"句子要說到你自己的生活\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（percentage）原位換成翻譯題，沿用題 id b2-u07-l02-q17；目標字沿用 percentage",
+        "resolution": "改為 translate：promptZh「牛奶裡水的比例很高。」、hintWords [\"percentage\"]、referenceEn [\"Milk contains a very high percentage of water.\",\"The percentage of water in milk is very high.\"]、rubricZh [\"percentage 指百分比、比例（例如 a high percentage of、the percentage of … 等）\",\"「含有」可寫，例如 contains、has 等\"]（原 makeSentence：instructionZh「用 percentage 造一個句子，說說你的收入、時間或生活中某部分的比例。」、referenceEn [\"I save a small percentage of my salary every month.\",\"A large percentage of my free time is spent reading.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

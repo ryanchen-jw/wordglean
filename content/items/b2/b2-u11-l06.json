@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u11-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "sociable",
-      "instructionZh": "用 sociable 造一個句子，描述你自己或身邊某人的社交個性。",
+      "type": "translate",
+      "promptZh": "我們的貓很愛和人親近，一看到客人就會走過去。",
+      "hintWords": [
+        "sociable"
+      ],
       "referenceEn": [
-        "I am not very sociable, so I prefer small groups.",
-        "My cousin is so sociable that she talks to everyone at weddings."
+        "Our cat is very sociable and always walks over to visitors.",
+        "Our cat is so sociable that it goes up to every guest it sees."
       ],
       "rubricZh": [
-        "句子要用到 sociable，表示「愛交際的、合群的」",
-        "描述要合理"
+        "sociable 是形容詞，表示「愛和人親近、合群的」（例如 is very sociable 等）",
+        "「一看到客人就走過去」可寫，例如 walks over to visitors、goes up to every guest 等",
+        "動物可用 it 指稱；寫 he、she 也不扣分"
       ]
     }
   ],
@@ -445,6 +448,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"海豚是合群的動物，總是成群結隊地移動。\"；改後：\"在飯店工作很適合他，因為他很愛交際。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（sociable）原位換成翻譯題，沿用題 id b2-u11-l06-q17；目標字沿用 sociable",
+        "resolution": "改為 translate：promptZh「我們的貓很愛和人親近，一看到客人就會走過去。」、hintWords [\"sociable\"]、referenceEn [\"Our cat is very sociable and always walks over to visitors.\",\"Our cat is so sociable that it goes up to every guest it sees.\"]、rubricZh [\"sociable 是形容詞，表示「愛和人親近、合群的」（例如 is very sociable 等）\",\"「一看到客人就走過去」可寫，例如 walks over to visitors、goes up to every guest 等\",\"動物可用 it 指稱；寫 he、she 也不扣分\"]（原 makeSentence：instructionZh「用 sociable 造一個句子，描述你自己或身邊某人的社交個性。」、referenceEn [\"I am not very sociable, so I prefer small groups.\",\"My cousin is so sociable that she talks to everyone at weddings.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

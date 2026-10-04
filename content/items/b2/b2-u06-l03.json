@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u06-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "ideally",
-      "instructionZh": "用 ideally 造一個句子，說說你理想中的工作或生活安排。",
+      "type": "translate",
+      "promptZh": "這種植物最好放在陽光充足的地方。",
+      "hintWords": [
+        "ideally"
+      ],
       "referenceEn": [
-        "Ideally, I would like to work from home two days a week.",
-        "Ideally, I want to live near my office so I can walk to work."
+        "This plant should ideally be kept in a sunny place.",
+        "Ideally, this kind of plant should be kept somewhere sunny."
       ],
       "rubricZh": [
-        "句子要用到 ideally，常放句首加逗號，表示「理想的情況是」",
-        "句子要說到你自己的期望，常搭配 would like、want 等"
+        "ideally 表示「最好是、理想上」，可放句首或助動詞後（例如 Ideally, …、should ideally be 等）",
+        "「放」可寫，例如 kept、placed、put 等",
+        "「陽光充足的地方」可寫，例如 a sunny place、somewhere sunny 等"
       ]
     }
   ],
@@ -377,6 +380,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"理想上\"；改後：\"初步的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ideally）原位換成翻譯題，沿用題 id b2-u06-l03-q17；目標字沿用 ideally",
+        "resolution": "改為 translate：promptZh「這種植物最好放在陽光充足的地方。」、hintWords [\"ideally\"]、referenceEn [\"This plant should ideally be kept in a sunny place.\",\"Ideally, this kind of plant should be kept somewhere sunny.\"]、rubricZh [\"ideally 表示「最好是、理想上」，可放句首或助動詞後（例如 Ideally, …、should ideally be 等）\",\"「放」可寫，例如 kept、placed、put 等\",\"「陽光充足的地方」可寫，例如 a sunny place、somewhere sunny 等\"]（原 makeSentence：instructionZh「用 ideally 造一個句子，說說你理想中的工作或生活安排。」、referenceEn [\"Ideally, I would like to work from home two days a week.\",\"Ideally, I want to live near my office so I can walk to work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

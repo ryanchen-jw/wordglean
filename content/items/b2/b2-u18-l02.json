@@ -241,16 +241,19 @@
     },
     {
       "id": "b2-u18-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "sprint",
-      "instructionZh": "用 sprint 造一個句子，說說你曾經衝刺去做某件事。",
+      "type": "translate",
+      "promptZh": "最後一百公尺，她開始全力衝刺。",
+      "hintWords": [
+        "sprint"
+      ],
       "referenceEn": [
-        "I sprinted to the bus stop because I was late for school.",
-        "I once had to sprint across the airport to catch my flight."
+        "In the last hundred meters, she began to sprint as fast as she could.",
+        "She sprinted at full speed for the last hundred meters."
       ],
       "rubricZh": [
-        "句子要用到 sprint（動詞或名詞皆可）",
-        "時態合理即可（例如 sprinted、have sprinted）"
+        "sprint 當動詞，表示「衝刺」（例如 began to sprint、sprinted 等）",
+        "「全力」可寫，例如 as fast as she could、at full speed 等",
+        "時態可用過去式或現在式（例如 began、begins 等）"
       ]
     }
   ],
@@ -312,6 +315,12 @@
         "message": "執行長最終複審修正：只看英文自查（換字後再掃）：rewarded 與 u24-l01 的 reward 跨課重複",
         "resolution": "改前：\"獎勵\"；改後：\"升職\"",
         "resolvedAt": "2026-10-02T20:44:58Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（sprint）原位換成翻譯題，沿用題 id b2-u18-l02-q18；目標字沿用 sprint",
+        "resolution": "改為 translate：promptZh「最後一百公尺，她開始全力衝刺。」、hintWords [\"sprint\"]、referenceEn [\"In the last hundred meters, she began to sprint as fast as she could.\",\"She sprinted at full speed for the last hundred meters.\"]、rubricZh [\"sprint 當動詞，表示「衝刺」（例如 began to sprint、sprinted 等）\",\"「全力」可寫，例如 as fast as she could、at full speed 等\",\"時態可用過去式或現在式（例如 began、begins 等）\"]（原 makeSentence：instructionZh「用 sprint 造一個句子，說說你曾經衝刺去做某件事。」、referenceEn [\"I sprinted to the bus stop because I was late for school.\",\"I once had to sprint across the airport to catch my flight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

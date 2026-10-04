@@ -432,7 +432,7 @@ test('COMPOSITION：少一題跟讀、單字卡換成別課的字', () => {
   assert.ok(errors.some((e) => /缺：have.*多餘或重複：cat/.test(e.message)));
 });
 
-// ---- 創辦人裁示 2026-10-04：造句改翻譯（每課 2 題翻譯、0 題造句）；A2–C1 未轉換前照舊題量 ----
+// ---- 創辦人裁示 2026-10-04：造句改翻譯（每課 2 題翻譯、0 題造句）；未轉換級別（MS2TR_PENDING_LEVELS）照舊題量 ----
 
 test('compositionFor：已轉換級別 translate 2、makeSentence 0；未轉換級別（MS2TR_PENDING_LEVELS）照舊 1／1', () => {
   assert.equal(COMPOSITION.translate, 2);

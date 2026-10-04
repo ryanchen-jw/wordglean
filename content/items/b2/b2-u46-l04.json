@@ -232,16 +232,18 @@
     },
     {
       "id": "b2-u46-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "pirate",
-      "instructionZh": "用 pirate 造一個句子，說說你看過或讀過的關於海盜的電影、書或遊戲。",
+      "type": "translate",
+      "promptZh": "我弟弟最喜歡的玩具是一艘海盜船。",
+      "hintWords": [
+        "pirate"
+      ],
       "referenceEn": [
-        "I watched a funny movie about a pirate who lost his ship.",
-        "When I was young, I loved reading stories about pirates."
+        "My little brother's favorite toy is a pirate ship.",
+        "A pirate ship is my younger brother's favorite toy."
       ],
       "rubricZh": [
-        "句子要用到 pirate（例如 a pirate、pirates）",
-        "時態配合內容（例如 watched、loved 等）"
+        "pirate 可放名詞前當形容詞（例如 a pirate ship 等）",
+        "「我弟弟」可寫，例如 my little brother、my younger brother 等"
       ]
     }
   ],
@@ -339,6 +341,12 @@
         "message": "第②關 issue 結案：「a dictator ruled the region and many people lived under repression until a peace treaty was signed」邏輯不通：和平條約結束的是戰爭，不是獨裁統治；且短文出現獨裁與鎮壓，與作者自述「沉重字不進閱讀短文」不一致。建議改為 until the dictator lost power 之類，或此段改中性內容。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pirate）原位換成翻譯題，沿用題 id b2-u46-l04-q17；目標字沿用 pirate",
+        "resolution": "改為 translate：promptZh「我弟弟最喜歡的玩具是一艘海盜船。」、hintWords [\"pirate\"]、referenceEn [\"My little brother's favorite toy is a pirate ship.\",\"A pirate ship is my younger brother's favorite toy.\"]、rubricZh [\"pirate 可放名詞前當形容詞（例如 a pirate ship 等）\",\"「我弟弟」可寫，例如 my little brother、my younger brother 等\"]（原 makeSentence：instructionZh「用 pirate 造一個句子，說說你看過或讀過的關於海盜的電影、書或遊戲。」、referenceEn [\"I watched a funny movie about a pirate who lost his ship.\",\"When I was young, I loved reading stories about pirates.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

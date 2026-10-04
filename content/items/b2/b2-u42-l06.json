@@ -215,32 +215,35 @@
     {
       "id": "b2-u42-l06-q16",
       "type": "translate",
-      "promptZh": "他穿得很隨便就去參加婚禮了。",
+      "promptZh": "這家公司的員工星期五可以穿得很隨意。",
       "hintWords": [
         "casually"
       ],
       "referenceEn": [
-        "He went to the wedding dressed very casually.",
-        "He dressed very casually for the wedding."
+        "Employees at this company can dress casually on Fridays.",
+        "At this company, staff are allowed to dress casually on Fridays."
       ],
       "rubricZh": [
-        "casually 的用法，例如 dressed casually、dress casually 等",
-        "時態合理（例如 went、dressed 等）"
+        "casually 修飾動詞（例如 dress casually 等）",
+        "「可以」可寫，例如 can、are allowed to 等",
+        "「員工」可寫，例如 employees、staff、workers 等"
       ]
     },
     {
       "id": "b2-u42-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "reflective",
-      "instructionZh": "用 reflective 造一個句子，說說你看過哪些會反光的東西。",
+      "type": "translate",
+      "promptZh": "晚上騎腳踏車時，最好穿一件反光的外套。",
+      "hintWords": [
+        "reflective"
+      ],
       "referenceEn": [
-        "I often see reflective windows on new office buildings.",
-        "My watch has a reflective face that shines in the sun."
+        "You should wear a reflective jacket when you ride a bike at night.",
+        "When riding a bike at night, it is best to wear a reflective jacket."
       ],
       "rubricZh": [
-        "句子要用到 reflective",
-        "reflective 的用法，例如 reflective windows、a reflective face 等",
-        "時態合理（例如 see、has 等）"
+        "reflective 放在名詞前（例如 a reflective jacket 等）",
+        "「最好」可寫，例如 should、it is best to、had better 等",
+        "when 子句可放句首或句尾"
       ]
     }
   ],
@@ -398,6 +401,18 @@
         "message": "第②關 issue 結案：疑似邏輯牽強：腳踏車在公車上 \"held loosely by a soft belt\"——固定腳踏車通常要綁緊，「鬆鬆地固定」不合常理，看得出是為塞 loosely；建議改用 loosely 的其他情境。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b2-u42-l01-q16「She went to the party in a striking red dress.」同句型（went to＋場合＋穿著），改情境與句型；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「這家公司的員工星期五可以穿得很隨意。」、referenceEn [\"Employees at this company can dress casually on Fridays.\",\"At this company, staff are allowed to dress casually on Fridays.\"]、rubricZh [\"casually 修飾動詞（例如 dress casually 等）\",\"「可以」可寫，例如 can、are allowed to 等\",\"「員工」可寫，例如 employees、staff、workers 等\"]（原 promptZh「他穿得很隨便就去參加婚禮了。」、referenceEn [\"He went to the wedding dressed very casually.\",\"He dressed very casually for the wedding.\"]、rubricZh [\"casually 的用法，例如 dressed casually、dress casually 等\",\"時態合理（例如 went、dressed 等）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（reflective）原位換成翻譯題，沿用題 id b2-u42-l06-q17；目標字沿用 reflective",
+        "resolution": "改為 translate：promptZh「晚上騎腳踏車時，最好穿一件反光的外套。」、hintWords [\"reflective\"]、referenceEn [\"You should wear a reflective jacket when you ride a bike at night.\",\"When riding a bike at night, it is best to wear a reflective jacket.\"]、rubricZh [\"reflective 放在名詞前（例如 a reflective jacket 等）\",\"「最好」可寫，例如 should、it is best to、had better 等\",\"when 子句可放句首或句尾\"]（原 makeSentence：instructionZh「用 reflective 造一個句子，說說你看過哪些會反光的東西。」、referenceEn [\"I often see reflective windows on new office buildings.\",\"My watch has a reflective face that shines in the sun.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

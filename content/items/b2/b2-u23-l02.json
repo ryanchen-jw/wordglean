@@ -241,16 +241,19 @@
     },
     {
       "id": "b2-u23-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "climate change",
-      "instructionZh": "用 climate change 造一個句子，說說你在新聞或課堂上學到關於氣候變遷的事實。",
+      "type": "translate",
+      "promptZh": "氣候變遷讓這個地區的冬天越來越短。",
+      "hintWords": [
+        "climate change"
+      ],
       "referenceEn": [
-        "I learned that climate change is making some summers much hotter.",
-        "I read in the news that climate change is causing more floods in some countries."
+        "Climate change is making winters in this area shorter and shorter.",
+        "Because of climate change, winters in this region are getting shorter."
       ],
       "rubricZh": [
-        "句子要用到 climate change",
-        "內容是事實描述；時態合理即可"
+        "climate change 指氣候變遷，不加冠詞",
+        "「越來越短」可寫，例如 shorter and shorter、are getting shorter 等",
+        "時態可用現在進行式、現在式或現在完成式（例如 is making、makes、has made 等）"
       ]
     }
   ],
@@ -360,6 +363,18 @@
         "message": "執行長最終複審修正：A 第 3 批：評分要點補「例如」",
         "resolution": "改前：\"「減少」可寫 reduce、lower 等\"；改後：\"「減少」可寫，例如 reduce、lower 等\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（climate change）原位換成翻譯題，沿用題 id b2-u23-l02-q18；目標字沿用 climate change",
+        "resolution": "改為 translate：promptZh「氣候變遷讓這個地區的冬天越來越短。」、hintWords [\"climate change\"]、referenceEn [\"Climate change is making winters in this area shorter and shorter.\",\"Because of climate change, winters in this region are getting shorter.\"]、rubricZh [\"climate change 指氣候變遷，不加冠詞\",\"「越來越短」可寫，例如 shorter and shorter、are getting shorter 等\",\"時態用現在進行式或現在式（例如 is making、are getting 等）\"]（原 makeSentence：instructionZh「用 climate change 造一個句子，說說你在新聞或課堂上學到關於氣候變遷的事實。」、referenceEn [\"I learned that climate change is making some summers much hotter.\",\"I read in the news that climate change is causing more floods in some countries.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "執行長裁示：第③關：SUS 要點未收現在完成式（has made winters shorter）",
+        "resolution": "改為 promptZh「氣候變遷讓這個地區的冬天越來越短。」、referenceEn [\"Climate change is making winters in this area shorter and shorter.\",\"Because of climate change, winters in this region are getting shorter.\"]、rubricZh [\"climate change 指氣候變遷，不加冠詞\",\"「越來越短」可寫，例如 shorter and shorter、are getting shorter 等\",\"時態可用現在進行式、現在式或現在完成式（例如 is making、makes、has made 等）\"]（原 promptZh「氣候變遷讓這個地區的冬天越來越短。」、referenceEn [\"Climate change is making winters in this area shorter and shorter.\",\"Because of climate change, winters in this region are getting shorter.\"]、rubricZh [\"climate change 指氣候變遷，不加冠詞\",\"「越來越短」可寫，例如 shorter and shorter、are getting shorter 等\",\"時態用現在進行式或現在式（例如 is making、are getting 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

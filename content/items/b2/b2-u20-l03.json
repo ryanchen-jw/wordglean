@@ -230,16 +230,18 @@
     },
     {
       "id": "b2-u20-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "neighboring",
-      "instructionZh": "用 neighboring 造一個句子，說說你住的地方附近的城鎮或國家。",
+      "type": "translate",
+      "promptZh": "從我家的窗戶，我們可以看到鄰近的山。",
+      "hintWords": [
+        "neighboring"
+      ],
       "referenceEn": [
-        "On weekends, I often visit a neighboring town for its night market.",
-        "My parents grew up in a neighboring village, about ten minutes away."
+        "We can see the neighboring hills from our window.",
+        "From the window of our house, we can see the neighboring mountains."
       ],
       "rubricZh": [
-        "句子要用到 neighboring（例如 a neighboring town）",
-        "時態合理即可"
+        "neighboring 放在名詞前，表示「鄰近的」（例如 the neighboring mountains 等）",
+        "「山」可寫，例如 mountains、hills 等；「窗戶」單複數皆可"
       ]
     }
   ],
@@ -343,6 +345,18 @@
         "message": "執行長最終複審修正：只看英文自查（換字後再掃）：pavement 為 q14 正解",
         "resolution": "改前：\"人行道\"；改後：\"門廊\"",
         "resolvedAt": "2026-10-02T20:44:58Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（neighboring）原位換成翻譯題，沿用題 id b2-u20-l03-q17；目標字沿用 neighboring",
+        "resolution": "改為 translate：promptZh「從飯店的窗戶，我們可以看到鄰近的山。」、hintWords [\"neighboring\"]、referenceEn [\"We can see the neighboring mountains from the hotel window.\",\"From our hotel window, we can see the neighboring hills.\"]、rubricZh [\"neighboring 放在名詞前，表示「鄰近的」（例如 the neighboring mountains 等）\",\"「山」可寫，例如 mountains、hills 等；「窗戶」單複數皆可\"]（原 makeSentence：instructionZh「用 neighboring 造一個句子，說說你住的地方附近的城鎮或國家。」、referenceEn [\"On weekends, I often visit a neighboring town for its night market.\",\"My parents grew up in a neighboring village, about ten minutes away.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與同課 q16 同屬飯店情境（§12.3），換情境",
+        "resolution": "改為 promptZh「從我家的窗戶，我們可以看到鄰近的山。」、referenceEn [\"We can see the neighboring hills from our window.\",\"From the window of our house, we can see the neighboring mountains.\"]、rubricZh [\"neighboring 放在名詞前，表示「鄰近的」（例如 the neighboring mountains 等）\",\"「山」可寫，例如 mountains、hills 等；「窗戶」單複數皆可\"]（原 promptZh「從飯店的窗戶，我們可以看到鄰近的山。」、referenceEn [\"We can see the neighboring mountains from the hotel window.\",\"From our hotel window, we can see the neighboring hills.\"]、rubricZh [\"neighboring 放在名詞前，表示「鄰近的」（例如 the neighboring mountains 等）\",\"「山」可寫，例如 mountains、hills 等；「窗戶」單複數皆可\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

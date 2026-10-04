@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u08-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "philosophical",
-      "instructionZh": "用 philosophical 造一個句子，說說你遇到不順的事時看得開的態度。",
+      "type": "translate",
+      "promptZh": "那位網球選手輸掉決賽後，對結果看得很開。",
+      "hintWords": [
+        "philosophical"
+      ],
       "referenceEn": [
-        "I try to be philosophical when things don't go my way.",
-        "When I lost my wallet, I was philosophical about it and just bought a new one."
+        "After losing the final, the tennis player was philosophical about the result.",
+        "The tennis player was quite philosophical about losing the final."
       ],
       "rubricZh": [
-        "句子要用到 philosophical，表示「看得開、豁達」（例如 be philosophical about… 等）",
-        "句子要說到你自己"
+        "philosophical 表示「看得開的、豁達的」（例如 be philosophical about 等）",
+        "「輸掉決賽」可寫，例如 losing the final、lost the final 等",
+        "時態可用過去式或現在式（例如 was、is 等）"
       ]
     }
   ],
@@ -415,6 +418,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 philosophical，常用 be philosophical about…，表示「看得開、豁達」\",\"句子要說到你自己\"]；改後：[\"句子要用到 philosophical，表示「看得開、豁達」（例如 be philosophical about… 等）\",\"句子要說到你自己\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（philosophical）原位換成翻譯題，沿用題 id b2-u08-l09-q17；目標字沿用 philosophical",
+        "resolution": "改為 translate：promptZh「那位網球選手輸掉決賽後，對結果看得很開。」、hintWords [\"philosophical\"]、referenceEn [\"After losing the final, the tennis player was philosophical about the result.\",\"The tennis player was quite philosophical about losing the final.\"]、rubricZh [\"philosophical 表示「看得開的、豁達的」（例如 be philosophical about 等）\",\"「輸掉決賽」可寫，例如 losing the final、lost the final 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 philosophical 造一個句子，說說你遇到不順的事時看得開的態度。」、referenceEn [\"I try to be philosophical when things don't go my way.\",\"When I lost my wallet, I was philosophical about it and just bought a new one.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

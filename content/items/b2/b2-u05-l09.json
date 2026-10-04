@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u05-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "confront",
-      "instructionZh": "用 confront 造一個句子，說說你曾經面對的一個困難或問題。",
+      "type": "translate",
+      "promptZh": "這座城市必須面對交通越來越擁擠的問題。",
+      "hintWords": [
+        "confront"
+      ],
       "referenceEn": [
-        "I had to confront my fear of speaking in public at my first job.",
-        "Last year, I finally confronted my money problems and made a budget."
+        "The city must confront the problem of growing traffic.",
+        "The city has to confront its traffic problem, which is getting worse."
       ],
       "rubricZh": [
-        "句子要用到 confront，後面接要面對的問題或人（例如 confront my fear）",
-        "句子要說到你自己的經驗，時態合理即可"
+        "confront 後面接要面對的問題（例如 confront the problem 等）",
+        "「必須」可寫，例如 must、has to、needs to 等",
+        "「交通越來越擁擠」可寫，例如 growing traffic、traffic is getting worse 等"
       ]
     }
   ],
@@ -403,6 +406,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"illustrate 表示「（用例子、圖表）說明」，常用 use…to illustrate…、illustrate…with…\",\"「銷售額的變化」可寫 the changes in sales、how sales changed 等，過去式或現在式都可以\"]；改後：[\"illustrate 表示「（用例子、圖表）說明」，例如 use…to illustrate…、illustrate…with… 等\",\"「銷售額的變化」可寫，例如 the changes in sales、how sales changed 等；過去式或現在式都可以\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（confront）原位換成翻譯題，沿用題 id b2-u05-l09-q17；目標字沿用 confront",
+        "resolution": "改為 translate：promptZh「這座城市必須面對交通越來越擁擠的問題。」、hintWords [\"confront\"]、referenceEn [\"The city must confront the problem of growing traffic.\",\"The city has to confront its traffic problem, which is getting worse.\"]、rubricZh [\"confront 後面接要面對的問題（例如 confront the problem 等）\",\"「必須」可寫，例如 must、has to、needs to 等\",\"「交通越來越擁擠」可寫，例如 growing traffic、traffic is getting worse 等\"]（原 makeSentence：instructionZh「用 confront 造一個句子，說說你曾經面對的一個困難或問題。」、referenceEn [\"I had to confront my fear of speaking in public at my first job.\",\"Last year, I finally confronted my money problems and made a budget.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

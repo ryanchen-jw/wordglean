@@ -219,16 +219,19 @@
     },
     {
       "id": "b2-u07-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "armful",
-      "instructionZh": "用 armful 造一個句子，說說你曾經抱著一大堆東西的情況。",
+      "type": "translate",
+      "promptZh": "孩子們從院子裡抱了好幾大抱落葉進來。",
+      "hintWords": [
+        "armful"
+      ],
       "referenceEn": [
-        "I carried an armful of files to the meeting room.",
-        "I came back from the market with an armful of vegetables."
+        "The children brought in armfuls of leaves from the yard.",
+        "The children carried armfuls of fallen leaves in from the yard."
       ],
       "rubricZh": [
-        "句子要用到 armful，常用 an armful of…（例如 an armful of books）；複數 armfuls 也正確",
-        "句子要說到你自己"
+        "armful 表示「一抱之量」，多抱用 armfuls（例如 armfuls of leaves 等）",
+        "「抱進來」可寫，例如 brought in、carried in 等",
+        "時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -386,6 +389,18 @@
         "message": "執行長最終複審修正：B2 冠詞／可數性洩題：half a ____ 排除 armful",
         "resolution": "改前：\"一抱之量\"；改後：\"噸\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（armful）原位換成翻譯題，沿用題 id b2-u07-l09-q16；目標字沿用 armful",
+        "resolution": "改為 translate：promptZh「孩子們從院子裡抱了好幾大把落葉進來。」、hintWords [\"armful\"]、referenceEn [\"The children brought in armfuls of leaves from the yard.\",\"The children carried armfuls of fallen leaves in from the yard.\"]、rubricZh [\"armful 表示「一抱之量」，多抱用 armfuls（例如 armfuls of leaves 等）\",\"「抱進來」可寫，例如 brought in、carried in 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 armful 造一個句子，說說你曾經抱著一大堆東西的情況。」、referenceEn [\"I carried an armful of files to the meeting room.\",\"I came back from the market with an armful of vegetables.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 「一大把」是 handful 的量，與 armful（一抱）不符",
+        "resolution": "改為 promptZh「孩子們從院子裡抱了好幾大抱落葉進來。」、referenceEn [\"The children brought in armfuls of leaves from the yard.\",\"The children carried armfuls of fallen leaves in from the yard.\"]、rubricZh [\"armful 表示「一抱之量」，多抱用 armfuls（例如 armfuls of leaves 等）\",\"「抱進來」可寫，例如 brought in、carried in 等\",\"時態可用過去式或現在完成式\"]（原 promptZh「孩子們從院子裡抱了好幾大把落葉進來。」、referenceEn [\"The children brought in armfuls of leaves from the yard.\",\"The children carried armfuls of fallen leaves in from the yard.\"]、rubricZh [\"armful 表示「一抱之量」，多抱用 armfuls（例如 armfuls of leaves 等）\",\"「抱進來」可寫，例如 brought in、carried in 等\",\"時態可用過去式或現在完成式\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

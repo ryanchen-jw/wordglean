@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u42-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "narrowly",
-      "instructionZh": "用 narrowly 造一個句子，說說你差一點就錯過或差一點沒做到某件事的經驗。",
+      "type": "translate",
+      "promptZh": "她以不到一秒的差距輸掉了賽跑。",
+      "hintWords": [
+        "narrowly"
+      ],
       "referenceEn": [
-        "I narrowly missed the bus this morning.",
-        "I narrowly passed my math test last year."
+        "She narrowly lost the race by less than a second.",
+        "She lost the race very narrowly, by less than one second."
       ],
       "rubricZh": [
-        "句子要用到 narrowly",
-        "narrowly 的用法，例如 narrowly missed、narrowly passed 等",
-        "時態合理（例如 missed、passed 等）"
+        "narrowly 表示「以些微差距」，可放動詞前或句中（例如 narrowly lost、lost … narrowly 等）",
+        "「不到一秒」可寫，例如 by less than a second 等；時態可用過去式或現在完成式（例如 lost、has lost 等）"
       ]
     }
   ],
@@ -312,6 +313,12 @@
         "message": "第②關 issue 結案：疑似不自然：\"twisted stairs\" 描述盤旋樓梯較常說 winding stairs；twisted 易讀成「扭曲變形的樓梯」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（narrowly）原位換成翻譯題，沿用題 id b2-u42-l08-q17；目標字沿用 narrowly",
+        "resolution": "改為 translate：promptZh「她以不到一秒的差距輸掉了賽跑。」、hintWords [\"narrowly\"]、referenceEn [\"She narrowly lost the race by less than a second.\",\"She lost the race very narrowly, by less than one second.\"]、rubricZh [\"narrowly 表示「以些微差距」，可放動詞前或句中（例如 narrowly lost、lost … narrowly 等）\",\"「不到一秒」可寫，例如 by less than a second 等；時態可用過去式或現在完成式（例如 lost、has lost 等）\"]（原 makeSentence：instructionZh「用 narrowly 造一個句子，說說你差一點就錯過或差一點沒做到某件事的經驗。」、referenceEn [\"I narrowly missed the bus this morning.\",\"I narrowly passed my math test last year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

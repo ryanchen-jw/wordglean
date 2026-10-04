@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u53-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "redo",
-      "instructionZh": "用 redo 造一個句子，描述一件必須重做的事。",
+      "type": "translate",
+      "promptZh": "電腦當機了，所以我得把整份報告重做一遍。",
+      "hintWords": [
+        "redo"
+      ],
       "referenceEn": [
-        "My computer froze, so I had to redo the whole drawing.",
-        "We redid the puzzle because one piece was missing."
+        "My computer crashed, so I had to redo the whole report.",
+        "Because my computer crashed, I had to redo my entire report."
       ],
       "rubricZh": [
-        "句子要用到 redo（例如 redo the drawing、redid the puzzle）",
-        "時態配合內容（例如 redo、redid 等）"
+        "redo 當動詞（例如 had to redo the whole report 等）",
+        "「當機」可寫，例如 crashed、stopped working 等",
+        "時態配合句意（例如 crashed、has crashed、had to redo、have to redo 等）"
       ]
     }
   ],
@@ -401,6 +404,12 @@
         "message": "執行長第②③關裁示修正：修正後補修：puddle 不在 lexicon",
         "resolution": "改前：\"我踩到水坑，襪子濕透了，所以進去前我要先換掉。\"；改後：\"我踩進池塘，襪子濕透了，所以進去前我要先換掉。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（redo）原位換成翻譯題，沿用題 id b2-u53-l08-q17；目標字沿用 redo",
+        "resolution": "改為 translate：promptZh「電腦當機了，所以我得把整份報告重做一遍。」、hintWords [\"redo\"]、referenceEn [\"My computer crashed, so I had to redo the whole report.\",\"Because my computer crashed, I had to redo my entire report.\"]、rubricZh [\"redo 當動詞（例如 had to redo the whole report 等）\",\"「當機」可寫，例如 crashed、stopped working 等\",\"時態配合句意（例如 crashed、has crashed、had to redo、have to redo 等）\"]（原 makeSentence：instructionZh「用 redo 造一個句子，描述一件必須重做的事。」、referenceEn [\"My computer froze, so I had to redo the whole drawing.\",\"We redid the puzzle because one piece was missing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

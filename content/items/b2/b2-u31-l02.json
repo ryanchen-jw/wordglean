@@ -245,17 +245,19 @@
     },
     {
       "id": "b2-u31-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "payment",
-      "instructionZh": "用 payment 造一個句子，說說你平常怎麼付帳（例如現金、刷卡、手機付款）。",
+      "type": "translate",
+      "promptZh": "這家小吃店只接受現金付款。",
+      "hintWords": [
+        "payment"
+      ],
       "referenceEn": [
-        "I usually make payments with my phone at convenience stores.",
-        "I prefer cash payment at night markets."
+        "This snack shop only accepts cash payments.",
+        "This small food shop accepts payment in cash only."
       ],
       "rubricZh": [
-        "句子要用到 payment",
-        "payment 的用法，例如 make a payment、cash payment、payment by card 等",
-        "說習慣，時態合理（例如 make、prefer 等）"
+        "「現金付款」可寫，例如 cash payments、payment in cash 等",
+        "「只」可寫，例如 only accepts、in cash only 等，only 位置不扣分",
+        "「小吃店」可寫，例如 snack shop、small food shop、food stand 等"
       ]
     }
   ],
@@ -359,6 +361,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"說習慣，用現在式（例如 make、prefer）\"；改後：\"說習慣，時態合理（例如 make、prefer 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（payment）原位換成翻譯題，沿用題 id b2-u31-l02-q18；目標字沿用 payment",
+        "resolution": "改為 translate：promptZh「這家小吃店只接受現金付款。」、hintWords [\"payment\"]、referenceEn [\"This snack shop only accepts cash payments.\",\"This small food shop accepts payment in cash only.\"]、rubricZh [\"「現金付款」可寫，例如 cash payments、payment in cash 等\",\"「只」可寫，例如 only accepts、in cash only 等，only 位置不扣分\",\"「小吃店」可寫，例如 snack shop、small food shop、food stand 等\"]（原 makeSentence：instructionZh「用 payment 造一個句子，說說你平常怎麼付帳（例如現金、刷卡、手機付款）。」、referenceEn [\"I usually make payments with my phone at convenience stores.\",\"I prefer cash payment at night markets.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

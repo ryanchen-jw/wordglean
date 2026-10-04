@@ -231,17 +231,19 @@
     },
     {
       "id": "b2-u27-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "obligation",
-      "instructionZh": "用 obligation 造一個句子，說說你覺得自己對家人或社會有什麼義務。",
+      "type": "translate",
+      "promptZh": "我去那個聚會只是出於義務，不是因為我想去。",
+      "hintWords": [
+        "obligation"
+      ],
       "referenceEn": [
-        "I feel an obligation to visit my grandparents every weekend.",
-        "I think I have an obligation to keep my neighborhood clean."
+        "I went to the party only out of obligation, not because I wanted to.",
+        "I only went to the party out of a sense of obligation, not because I wanted to go."
       ],
       "rubricZh": [
-        "句子要用到 obligation",
-        "obligation 後面可接 to＋原形動詞（例如 an obligation to help 等）",
-        "時態配合內容（例如 feel、have 等）"
+        "obligation 指義務（例如 out of obligation、out of a sense of obligation 等）",
+        "時態可用過去式或現在式（例如 went、go 等）",
+        "only 位置不扣分；「不是因為」可寫，例如 not because… 等"
       ]
     }
   ],
@@ -321,6 +323,12 @@
         "message": "第②關 issue 結案：中譯多加資訊：英文 'The third was a teacher who spoke about equity' 未提性別，中譯寫「她談到公平」；建議改「這位老師談到」或「他／她」中性寫法。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（obligation）原位換成翻譯題，沿用題 id b2-u27-l03-q17；目標字沿用 obligation",
+        "resolution": "改為 translate：promptZh「我去那個聚會只是出於義務，不是因為我想去。」、hintWords [\"obligation\"]、referenceEn [\"I went to the party only out of obligation, not because I wanted to.\",\"I only went to the party out of a sense of obligation, not because I wanted to go.\"]、rubricZh [\"obligation 指義務（例如 out of obligation、out of a sense of obligation 等）\",\"時態可用過去式或現在式（例如 went、go 等）\",\"only 位置不扣分；「不是因為」可寫，例如 not because… 等\"]（原 makeSentence：instructionZh「用 obligation 造一個句子，說說你覺得自己對家人或社會有什麼義務。」、referenceEn [\"I feel an obligation to visit my grandparents every weekend.\",\"I think I have an obligation to keep my neighborhood clean.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

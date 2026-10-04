@@ -240,17 +240,19 @@
     },
     {
       "id": "b2-u34-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "accommodation",
-      "instructionZh": "用 accommodation 造一個句子，說說你旅行時喜歡住什麼樣的地方。",
+      "type": "translate",
+      "promptZh": "學校為所有參加夏令營的學生提供住宿。",
+      "hintWords": [
+        "accommodation"
+      ],
       "referenceEn": [
-        "I prefer cheap accommodation near the train station when I travel.",
-        "When I travel, I look for accommodation with a kitchen."
+        "The school provides accommodation for all students at the summer camp.",
+        "Accommodation is provided for every student who joins the summer camp."
       ],
       "rubricZh": [
-        "句子要用到 accommodation",
-        "可用單數或複數（例如 accommodation、accommodations 等）",
-        "說習慣，時態合理（例如 prefer、look for 等）"
+        "「住宿」可寫，例如 accommodation 等",
+        "「提供」可寫，例如 provides、offers、is provided for 等",
+        "「參加夏令營的學生」可寫，例如 students at the summer camp、students who join the camp 等"
       ]
     }
   ],
@@ -360,6 +362,12 @@
         "message": "第②關 issue 結案：敘事時序錯亂：先寫抵達小島、飯店超賣、經理換房，之後才寫 The landing on the island was a little scary；降落應在抵達之前，建議把降落句移到 When we arrived 之前。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（accommodation）原位換成翻譯題，沿用題 id b2-u34-l01-q17；目標字沿用 accommodation",
+        "resolution": "改為 translate：promptZh「學校為所有參加夏令營的學生提供住宿。」、hintWords [\"accommodation\"]、referenceEn [\"The school provides accommodation for all students at the summer camp.\",\"Accommodation is provided for every student who joins the summer camp.\"]、rubricZh [\"「住宿」可寫，例如 accommodation 等\",\"「提供」可寫，例如 provides、offers、is provided for 等\",\"「參加夏令營的學生」可寫，例如 students at the summer camp、students who join the camp 等\"]（原 makeSentence：instructionZh「用 accommodation 造一個句子，說說你旅行時喜歡住什麼樣的地方。」、referenceEn [\"I prefer cheap accommodation near the train station when I travel.\",\"When I travel, I look for accommodation with a kitchen.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

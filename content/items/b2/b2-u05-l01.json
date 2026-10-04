@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u05-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "overlook",
-      "instructionZh": "用 overlook 造一個句子，說說你曾經忽略的一個小細節。",
+      "type": "translate",
+      "promptZh": "這家餐廳很容易被忽略，因為它在一條小巷子裡。",
+      "hintWords": [
+        "overlook"
+      ],
       "referenceEn": [
-        "I overlooked a small mistake in my report, and my boss found it.",
-        "I once overlooked the date on a ticket and missed my train."
+        "This restaurant is easy to overlook because it is on a small side street.",
+        "It's easy to overlook this restaurant because it is down a narrow lane."
       ],
       "rubricZh": [
-        "句子要用到 overlook，表示「忽略、沒注意到」，後面接被忽略的事（例如 overlooked a mistake）",
-        "句子要說到你自己的經驗，過去的事用過去式"
+        "overlook 表示「忽略、沒注意到」（例如 easy to overlook、is often overlooked 等）",
+        "「小巷子」可寫，例如 a small side street、a narrow lane、an alley 等"
       ]
     }
   ],
@@ -431,6 +433,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"我們正在找人接替即將退休的經理。\"；改後：\"要為這個蛋糕食譜找到糖的替代品並不容易。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（overlook）原位換成翻譯題，沿用題 id b2-u05-l01-q17；目標字沿用 overlook",
+        "resolution": "改為 translate：promptZh「這家餐廳很容易被忽略，因為它在一條小巷子裡。」、hintWords [\"overlook\"]、referenceEn [\"This restaurant is easy to overlook because it is on a small side street.\",\"It's easy to overlook this restaurant because it is down a narrow lane.\"]、rubricZh [\"overlook 表示「忽略、沒注意到」（例如 easy to overlook、is often overlooked 等）\",\"「小巷子」可寫，例如 a small side street、a narrow lane、an alley 等\"]（原 makeSentence：instructionZh「用 overlook 造一個句子，說說你曾經忽略的一個小細節。」、referenceEn [\"I overlooked a small mistake in my report, and my boss found it.\",\"I once overlooked the date on a ticket and missed my train.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

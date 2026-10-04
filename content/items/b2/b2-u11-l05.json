@@ -235,16 +235,19 @@
     },
     {
       "id": "b2-u11-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "birthplace",
-      "instructionZh": "用 birthplace 造一個句子，介紹你或家人的出生地。",
+      "type": "translate",
+      "promptZh": "我爺爺八十歲時搬回了他的出生地。",
+      "hintWords": [
+        "birthplace"
+      ],
       "referenceEn": [
-        "My birthplace is a small town in the south of Taiwan.",
-        "My father's birthplace is a fishing village near Keelung."
+        "My grandfather moved back to his birthplace when he was eighty.",
+        "At the age of eighty, my grandpa moved back to his birthplace."
       ],
       "rubricZh": [
-        "句子要用到 birthplace（例如 my birthplace is…）",
-        "句子要說到你或你的家人"
+        "birthplace 指「出生地」（例如 his birthplace 等）",
+        "「搬回」用過去式（例如 moved back to、went back to live in 等）",
+        "「八十歲時」可寫，例如 when he was eighty、at the age of eighty 等"
       ]
     }
   ],
@@ -540,6 +543,12 @@
         "message": "執行長裁示修正：釋義原則澄清後改寫例句：避開本課其他題的情境或句型",
         "resolution": "改前：\"那對姊妹小時候形影不離。\"；改後：\"我爺爺和他的舊收音機形影不離，走到哪裡都帶著。\"",
         "resolvedAt": "2026-10-02T20:24:28Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（birthplace）原位換成翻譯題，沿用題 id b2-u11-l05-q17；目標字沿用 birthplace",
+        "resolution": "改為 translate：promptZh「我爺爺八十歲時搬回了他的出生地。」、hintWords [\"birthplace\"]、referenceEn [\"My grandfather moved back to his birthplace when he was eighty.\",\"At the age of eighty, my grandpa moved back to his birthplace.\"]、rubricZh [\"birthplace 指「出生地」（例如 his birthplace 等）\",\"「搬回」用過去式（例如 moved back to、went back to live in 等）\",\"「八十歲時」可寫，例如 when he was eighty、at the age of eighty 等\"]（原 makeSentence：instructionZh「用 birthplace 造一個句子，介紹你或家人的出生地。」、referenceEn [\"My birthplace is a small town in the south of Taiwan.\",\"My father's birthplace is a fishing village near Keelung.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,16 +231,18 @@
     },
     {
       "id": "b2-u08-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "obsession",
-      "instructionZh": "用 obsession 造一個句子，說說你或家人非常著迷的一件事。",
+      "type": "translate",
+      "promptZh": "我弟弟對恐龍非常著迷。",
+      "hintWords": [
+        "obsession"
+      ],
       "referenceEn": [
-        "My obsession with coffee started when I worked in a cafe.",
-        "My son has an obsession with trains."
+        "My younger brother has an obsession with dinosaurs.",
+        "My little brother has a real obsession with dinosaurs."
       ],
       "rubricZh": [
-        "句子要用到 obsession，常用 an obsession with…（例如 an obsession with trains）",
-        "句子要說到你自己或家人"
+        "obsession 常用 have an obsession with…（例如 has an obsession with dinosaurs 等）",
+        "「弟弟」可寫，例如 younger brother、little brother 等"
       ]
     }
   ],
@@ -458,6 +460,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"realization 是名詞，常用 come to the realization that…、the realization that…\",\"寫 I realized… 意思也對；「忘了帶」用過去完成式較好，過去式也可以\"]；改後：[\"realization 是名詞（例如 come to the realization that…、the realization that… 等）\",\"寫 I realized… 意思也對；「忘了帶」用過去完成式較好，過去式也可以\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（obsession）原位換成翻譯題，沿用題 id b2-u08-l10-q17；目標字沿用 obsession",
+        "resolution": "改為 translate：promptZh「我弟弟對恐龍非常著迷。」、hintWords [\"obsession\"]、referenceEn [\"My younger brother has an obsession with dinosaurs.\",\"My little brother has a real obsession with dinosaurs.\"]、rubricZh [\"obsession 常用 have an obsession with…（例如 has an obsession with dinosaurs 等）\",\"「弟弟」可寫，例如 younger brother、little brother 等\"]（原 makeSentence：instructionZh「用 obsession 造一個句子，說說你或家人非常著迷的一件事。」、referenceEn [\"My obsession with coffee started when I worked in a cafe.\",\"My son has an obsession with trains.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -236,16 +236,19 @@
     },
     {
       "id": "b2-u11-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "interpersonal",
-      "instructionZh": "用 interpersonal 造一個句子，說說人際能力在你工作或生活中的重要性。",
+      "type": "translate",
+      "promptZh": "做銷售的人需要很強的人際能力。",
+      "hintWords": [
+        "interpersonal"
+      ],
       "referenceEn": [
-        "My job needs strong interpersonal skills because I meet clients every day.",
-        "I want to improve my interpersonal skills by joining a club."
+        "People who work in sales need strong interpersonal skills.",
+        "Sales staff need to have good interpersonal skills."
       ],
       "rubricZh": [
-        "句子要用到 interpersonal（例如 interpersonal skills、interpersonal relationships 等）",
-        "句子要說到你自己"
+        "interpersonal 是形容詞，放在名詞前（例如 interpersonal skills 等）",
+        "「做銷售的人」可寫，例如 people who work in sales、sales staff 等",
+        "「很強的」可寫，例如 strong、good、excellent 等"
       ]
     }
   ],
@@ -451,6 +454,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 interpersonal，常用 interpersonal skills、interpersonal relationships\",\"句子要說到你自己\"]；改後：[\"句子要用到 interpersonal（例如 interpersonal skills、interpersonal relationships 等）\",\"句子要說到你自己\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（interpersonal）原位換成翻譯題，沿用題 id b2-u11-l03-q17；目標字沿用 interpersonal",
+        "resolution": "改為 translate：promptZh「做銷售的人需要很強的人際能力。」、hintWords [\"interpersonal\"]、referenceEn [\"People who work in sales need strong interpersonal skills.\",\"Sales staff need to have good interpersonal skills.\"]、rubricZh [\"interpersonal 是形容詞，放在名詞前（例如 interpersonal skills 等）\",\"「做銷售的人」可寫，例如 people who work in sales、sales staff 等\",\"「很強的」可寫，例如 strong、good、excellent 等\"]（原 makeSentence：instructionZh「用 interpersonal 造一個句子，說說人際能力在你工作或生活中的重要性。」、referenceEn [\"My job needs strong interpersonal skills because I meet clients every day.\",\"I want to improve my interpersonal skills by joining a club.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

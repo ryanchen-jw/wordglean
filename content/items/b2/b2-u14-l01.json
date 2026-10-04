@@ -241,16 +241,18 @@
     },
     {
       "id": "b2-u14-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "ceiling",
-      "instructionZh": "用 ceiling 造一個句子，描述你家或辦公室的天花板。",
+      "type": "translate",
+      "promptZh": "浴室的天花板在漏水。",
+      "hintWords": [
+        "ceiling"
+      ],
       "referenceEn": [
-        "The ceiling in my bedroom is painted light blue.",
-        "Our office has a very high ceiling with big windows."
+        "The ceiling in our bathroom is leaking.",
+        "Water is leaking from the ceiling in the bathroom."
       ],
       "rubricZh": [
-        "句子要用到 ceiling（例如 the ceiling in my room、a high ceiling）",
-        "描述要合理"
+        "ceiling 指「天花板」（例如 the bathroom ceiling、the ceiling in the bathroom 等）",
+        "「在漏水」可寫，例如 is leaking、has been leaking、water is coming through 等"
       ]
     }
   ],
@@ -384,6 +386,12 @@
         "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
         "resolution": "改前：\"洗衣機壞了\"；改後：\"家裡的洗衣機壞了\"",
         "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（ceiling）原位換成翻譯題，沿用題 id b2-u14-l01-q18；目標字沿用 ceiling",
+        "resolution": "改為 translate：promptZh「浴室的天花板在漏水。」、hintWords [\"ceiling\"]、referenceEn [\"The ceiling in our bathroom is leaking.\",\"Water is leaking from the ceiling in the bathroom.\"]、rubricZh [\"ceiling 指「天花板」（例如 the bathroom ceiling、the ceiling in the bathroom 等）\",\"「在漏水」可寫，例如 is leaking、has been leaking、water is coming through 等\"]（原 makeSentence：instructionZh「用 ceiling 造一個句子，描述你家或辦公室的天花板。」、referenceEn [\"The ceiling in my bedroom is painted light blue.\",\"Our office has a very high ceiling with big windows.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -234,17 +234,19 @@
     },
     {
       "id": "b2-u27-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "immigrant",
-      "instructionZh": "用 immigrant 造一個句子，說說你知道的一位移民（可以是家人、朋友或鄰居）。",
+      "type": "translate",
+      "promptZh": "她身為移民，花了三年才習慣這裡的天氣。",
+      "hintWords": [
+        "immigrant"
+      ],
       "referenceEn": [
-        "My neighbor is an immigrant from Vietnam, and she cooks amazing food.",
-        "My best friend's mother is an immigrant from Thailand who works as an engineer."
+        "As an immigrant, she took three years to get used to the weather here.",
+        "She was an immigrant, and it took her three years to get used to the weather here."
       ],
       "rubricZh": [
-        "句子要用到 immigrant",
-        "可說明來自哪裡（例如 an immigrant from Vietnam 等）",
-        "時態配合內容（例如 is、came 等）"
+        "immigrant 指移民（例如 as an immigrant 等）",
+        "「花了三年才」可寫，例如 took three years to…、it took her three years to… 等",
+        "「習慣」可寫，例如 get used to、get accustomed to 等"
       ]
     }
   ],
@@ -342,6 +344,12 @@
         "message": "執行長第②③關裁示修正：第③關疑似（照審查建議改） 8：避免移民＝餐飲的刻板印象；評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"時態配合內容（例如 is、came）\"；改後：\"時態配合內容（例如 is、came 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（immigrant）原位換成翻譯題，沿用題 id b2-u27-l02-q17；目標字沿用 immigrant",
+        "resolution": "改為 translate：promptZh「她身為移民，花了三年才習慣這裡的天氣。」、hintWords [\"immigrant\"]、referenceEn [\"As an immigrant, she took three years to get used to the weather here.\",\"She was an immigrant, and it took her three years to get used to the weather here.\"]、rubricZh [\"immigrant 指移民（例如 as an immigrant 等）\",\"「花了三年才」可寫，例如 took three years to…、it took her three years to… 等\",\"「習慣」可寫，例如 get used to、get accustomed to 等\"]（原 makeSentence：instructionZh「用 immigrant 造一個句子，說說你知道的一位移民（可以是家人、朋友或鄰居）。」、referenceEn [\"My neighbor is an immigrant from Vietnam, and she cooks amazing food.\",\"My best friend's mother is an immigrant from Thailand who works as an engineer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

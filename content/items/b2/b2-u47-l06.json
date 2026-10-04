@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u47-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "shatter",
-      "instructionZh": "用 shatter 造一個句子，說說某樣東西摔碎或某個希望破滅的情況。",
+      "type": "translate",
+      "promptZh": "那個壞消息徹底擊垮了她的信心。",
+      "hintWords": [
+        "shatter"
+      ],
       "referenceEn": [
-        "I dropped my phone, and the screen shattered.",
-        "The bad news shattered my hopes of a quick trip home."
+        "The bad news completely shattered her confidence.",
+        "Her confidence was completely shattered by the bad news."
       ],
       "rubricZh": [
-        "句子要用到 shatter（例如 the screen shattered、shattered my hopes）",
-        "時態配合內容（例如 shattered 等）"
+        "shatter 在這裡是比喻用法，表示「使破滅、擊垮」；主動或被動都可以",
+        "「徹底」可寫，例如 completely、totally 等，位置不扣分",
+        "時態可用過去式或現在完成式（例如 shattered、has shattered 等）"
       ]
     }
   ],
@@ -336,6 +339,12 @@
         "message": "執行長第②③關裁示修正：最終複審 FIX 5：聽選正解幾乎照抄音檔",
         "resolution": "改前：\"On top of the fridge\"；改後：\"Up on the fridge\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（shatter）原位換成翻譯題，沿用題 id b2-u47-l06-q17；目標字沿用 shatter",
+        "resolution": "改為 translate：promptZh「那個壞消息徹底擊垮了她的信心。」、hintWords [\"shatter\"]、referenceEn [\"The bad news completely shattered her confidence.\",\"Her confidence was completely shattered by the bad news.\"]、rubricZh [\"shatter 在這裡是比喻用法，表示「使破滅、擊垮」；主動或被動都可以\",\"「徹底」可寫，例如 completely、totally 等，位置不扣分\",\"時態可用過去式或現在完成式（例如 shattered、has shattered 等）\"]（原 makeSentence：instructionZh「用 shatter 造一個句子，說說某樣東西摔碎或某個希望破滅的情況。」、referenceEn [\"I dropped my phone, and the screen shattered.\",\"The bad news shattered my hopes of a quick trip home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u43-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "reckon",
-      "instructionZh": "用 reckon 造一個句子，說說你對接下來會發生的某件事的猜測。",
+      "type": "translate",
+      "promptZh": "我爸爸估計這台舊冰箱還能再用五年。",
+      "hintWords": [
+        "reckon"
+      ],
       "referenceEn": [
-        "I reckon it will be sunny this weekend.",
-        "I reckon my brother will be late again."
+        "My dad reckons this old fridge will last another five years.",
+        "My father reckons that the old fridge can work for five more years."
       ],
       "rubricZh": [
-        "句子要用到 reckon",
-        "reckon 的用法，例如 I reckon it will…、I reckon that… 等",
-        "時態合理（例如 reckon、will be 等）"
+        "reckon 表示「估計、認為」，動詞配合主詞（例如 reckons、reckoned 等）",
+        "「還能再用五年」可寫，例如 will last another five years、can work for five more years 等"
       ]
     }
   ],
@@ -282,6 +283,12 @@
         "message": "第②關 issue 結案：muse 釋義「沉思；冥想」：台灣「冥想」通指 meditate（靜坐冥想），與 muse（默想、反覆思索）不同，建議改「沉思；默想；反覆思索」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（reckon）原位換成翻譯題，沿用題 id b2-u43-l05-q17；目標字沿用 reckon",
+        "resolution": "改為 translate：promptZh「我爸爸估計這台舊冰箱還能再用五年。」、hintWords [\"reckon\"]、referenceEn [\"My dad reckons this old fridge will last another five years.\",\"My father reckons that the old fridge can work for five more years.\"]、rubricZh [\"reckon 表示「估計、認為」，動詞配合主詞（例如 reckons、reckoned 等）\",\"「還能再用五年」可寫，例如 will last another five years、can work for five more years 等\"]（原 makeSentence：instructionZh「用 reckon 造一個句子，說說你對接下來會發生的某件事的猜測。」、referenceEn [\"I reckon it will be sunny this weekend.\",\"I reckon my brother will be late again.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

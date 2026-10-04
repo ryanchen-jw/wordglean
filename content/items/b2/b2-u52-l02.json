@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u52-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "truthfulness",
-      "instructionZh": "用 truthfulness 造一個句子，說說你怎麼看待誠實，或某人誠實的表現。",
+      "type": "translate",
+      "promptZh": "法官懷疑這位證人說的話是否真實。",
+      "hintWords": [
+        "truthfulness"
+      ],
       "referenceEn": [
-        "I value truthfulness more than politeness in a friend.",
-        "My teacher praised my truthfulness when I admitted my mistake."
+        "The judge doubted the truthfulness of the witness's story.",
+        "The judge had doubts about the truthfulness of what the witness said."
       ],
       "rubricZh": [
-        "句子要用到 truthfulness 當名詞（例如 value truthfulness、praised my truthfulness）",
-        "時態配合內容（例如 value、praised 等）"
+        "truthfulness 當名詞（例如 the truthfulness of the witness's story 等）",
+        "「懷疑」可寫，例如 doubted、had doubts about、questioned 等",
+        "時態可用過去式或現在式（例如 doubted、doubts 等）"
       ]
     }
   ],
@@ -278,6 +281,12 @@
         "message": "執行長第②③關裁示修正：第③關 FIX 25：",
         "resolution": "改前：\"她愛指使人到對每個人發號施令，連老闆也不例外。\"；改後：\"他愛指使人到連哥哥們該怎麼做事都要管。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（truthfulness）原位換成翻譯題，沿用題 id b2-u52-l02-q17；目標字沿用 truthfulness",
+        "resolution": "改為 translate：promptZh「法官懷疑這位證人說的話是否真實。」、hintWords [\"truthfulness\"]、referenceEn [\"The judge doubted the truthfulness of the witness's story.\",\"The judge had doubts about the truthfulness of what the witness said.\"]、rubricZh [\"truthfulness 當名詞（例如 the truthfulness of the witness's story 等）\",\"「懷疑」可寫，例如 doubted、had doubts about、questioned 等\",\"時態可用過去式或現在式（例如 doubted、doubts 等）\"]（原 makeSentence：instructionZh「用 truthfulness 造一個句子，說說你怎麼看待誠實，或某人誠實的表現。」、referenceEn [\"I value truthfulness more than politeness in a friend.\",\"My teacher praised my truthfulness when I admitted my mistake.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

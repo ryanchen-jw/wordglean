@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u16-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "addict",
-      "instructionZh": "用 addict 造一個句子，說說你或身邊的人對某樣東西很著迷（輕鬆的話題，例如咖啡、遊戲、追劇）。",
+      "type": "translate",
+      "promptZh": "我奶奶是個拼圖迷，她家到處都是拼圖。",
+      "hintWords": [
+        "addict"
+      ],
       "referenceEn": [
-        "I'm a bit of a coffee addict, so I always start my day with a cup.",
-        "My sister is a TV addict who watches a whole series in one weekend."
+        "My grandmother is a puzzle addict, and there are puzzles all over her house.",
+        "My grandma is a real puzzle addict; her house is full of puzzles."
       ],
       "rubricZh": [
-        "句子要用到 addict（例如 a coffee addict）",
-        "內容要輕鬆合理"
+        "addict 這裡指「（某事物的）迷」（例如 a puzzle addict 等）",
+        "「到處都是拼圖」可寫，例如 there are puzzles all over、is full of puzzles 等"
       ]
     }
   ],
@@ -437,6 +439,12 @@
         "message": "執行長最終複審修正：B1 用字範圍：addicted 為 u16-l10 的字",
         "resolution": "改前：\"上癮的\"；改後：\"受傷的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（addict）原位換成翻譯題，沿用題 id b2-u16-l04-q17；目標字沿用 addict",
+        "resolution": "改為 translate：promptZh「我奶奶是個拼圖迷，她家到處都是拼圖。」、hintWords [\"addict\"]、referenceEn [\"My grandmother is a puzzle addict, and there are puzzles all over her house.\",\"My grandma is a real puzzle addict; her house is full of puzzles.\"]、rubricZh [\"addict 這裡指「（某事物的）迷」（例如 a puzzle addict 等）\",\"「到處都是拼圖」可寫，例如 there are puzzles all over、is full of puzzles 等\"]（原 makeSentence：instructionZh「用 addict 造一個句子，說說你或身邊的人對某樣東西很著迷（輕鬆的話題，例如咖啡、遊戲、追劇）。」、referenceEn [\"I'm a bit of a coffee addict, so I always start my day with a cup.\",\"My sister is a TV addict who watches a whole series in one weekend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u21-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "trek",
-      "instructionZh": "用 trek 造一個句子，說說你走過的一段很長的路或想去的徒步旅行。",
+      "type": "translate",
+      "promptZh": "這趟徒步旅行的最後一段路最難走。",
+      "hintWords": [
+        "trek"
+      ],
       "referenceEn": [
-        "I'd love to go on a trek through the forests of the east coast.",
-        "Last summer, I trekked up a mountain with my friends for two days."
+        "The last part of the trek was the hardest.",
+        "The final section of the trek was the most difficult."
       ],
       "rubricZh": [
-        "句子要用到 trek（名詞或動詞皆可）",
-        "時態合理即可"
+        "trek 這裡當名詞，指徒步旅行（例如 the last part of the trek 等）",
+        "「最難走」用最高級（例如 the hardest、the most difficult 等）",
+        "時態可用過去式或現在式（例如 was、is 等）"
       ]
     }
   ],
@@ -325,6 +328,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，A motorist was riding… 也說得通",
         "resolution": "改前：\"汽車駕駛人\"；改後：\"郵輪\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（trek）原位換成翻譯題，沿用題 id b2-u21-l04-q17；目標字沿用 trek",
+        "resolution": "改為 translate：promptZh「這趟徒步旅行的最後一段路最難走。」、hintWords [\"trek\"]、referenceEn [\"The last part of the trek was the hardest.\",\"The final section of the trek was the most difficult.\"]、rubricZh [\"trek 這裡當名詞，指徒步旅行（例如 the last part of the trek 等）\",\"「最難走」用最高級（例如 the hardest、the most difficult 等）\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 trek 造一個句子，說說你走過的一段很長的路或想去的徒步旅行。」、referenceEn [\"I'd love to go on a trek through the forests of the east coast.\",\"Last summer, I trekked up a mountain with my friends for two days.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

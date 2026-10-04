@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u47-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "blink",
-      "instructionZh": "用 blink 造一個句子，描述你眨眼的情況。",
+      "type": "translate",
+      "promptZh": "我的手機有新訊息時，上面的小燈會一閃一閃的。",
+      "hintWords": [
+        "blink"
+      ],
       "referenceEn": [
-        "I blinked several times when I came out of the dark cinema.",
-        "When I am tired, I blink a lot while I read."
+        "The little light on my phone blinks when I get a new message.",
+        "When I have a new message, the small light on my phone blinks."
       ],
       "rubricZh": [
-        "句子要用到 blink（例如 blinked several times、blink a lot）",
-        "時態配合內容（例如 blinked、blink 等）"
+        "blink 在這裡表示「（燈）閃爍」（例如 the light blinks、keeps blinking 等）",
+        "「有新訊息時」可寫，例如 when I get a new message、when I have a new message 等",
+        "動詞配合主詞（例如 blinks 等）"
       ]
     }
   ],
@@ -300,6 +303,12 @@
         "message": "第②關 issue 結案：音檔是說話者說「My little brother」，說話者性別不明，選項「Her brother was hungry」擅自假定說話者是女性；建議改 The speaker's brother was hungry。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/9 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（blink）原位換成翻譯題，沿用題 id b2-u47-l02-q17；目標字沿用 blink",
+        "resolution": "改為 translate：promptZh「我的手機有新訊息時，上面的小燈會一閃一閃的。」、hintWords [\"blink\"]、referenceEn [\"The little light on my phone blinks when I get a new message.\",\"When I have a new message, the small light on my phone blinks.\"]、rubricZh [\"blink 在這裡表示「（燈）閃爍」（例如 the light blinks、keeps blinking 等）\",\"「有新訊息時」可寫，例如 when I get a new message、when I have a new message 等\",\"動詞配合主詞（例如 blinks 等）\"]（原 makeSentence：instructionZh「用 blink 造一個句子，描述你眨眼的情況。」、referenceEn [\"I blinked several times when I came out of the dark cinema.\",\"When I am tired, I blink a lot while I read.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

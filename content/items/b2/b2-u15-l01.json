@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u15-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "herb",
-      "instructionZh": "用 herb 造一個句子，說說你喜歡或用過的香草。",
+      "type": "translate",
+      "promptZh": "香草最好在菜快煮好的時候再加進去。",
+      "hintWords": [
+        "herb"
+      ],
       "referenceEn": [
-        "I like to add fresh herbs to my eggs in the morning.",
-        "Mint is my favorite herb for summer drinks."
+        "It is best to add the herbs when the dish is almost ready.",
+        "Herbs should be added just before the dish is ready."
       ],
       "rubricZh": [
-        "句子要用到 herb 或 herbs（例如 fresh herbs）",
-        "句子要說到你自己"
+        "herb 指「香草」，這裡用複數（例如 the herbs、herbs 等）",
+        "「最好」可寫，例如 It is best to、should 等",
+        "「快煮好的時候」可寫，例如 when the dish is almost ready、just before … is ready 等"
       ]
     }
   ],
@@ -395,6 +398,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，cake contains crabs（過敏）也說得通",
         "resolution": "改前：\"螃蟹\"；改後：\"維生素\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（herb）原位換成翻譯題，沿用題 id b2-u15-l01-q17；目標字沿用 herb",
+        "resolution": "改為 translate：promptZh「香草最好在菜快煮好的時候再加進去。」、hintWords [\"herb\"]、referenceEn [\"It is best to add the herbs when the dish is almost ready.\",\"Herbs should be added just before the dish is ready.\"]、rubricZh [\"herb 指「香草」，這裡用複數（例如 the herbs、herbs 等）\",\"「最好」可寫，例如 It is best to、should 等\",\"「快煮好的時候」可寫，例如 when the dish is almost ready、just before … is ready 等\"]（原 makeSentence：instructionZh「用 herb 造一個句子，說說你喜歡或用過的香草。」、referenceEn [\"I like to add fresh herbs to my eggs in the morning.\",\"Mint is my favorite herb for summer drinks.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

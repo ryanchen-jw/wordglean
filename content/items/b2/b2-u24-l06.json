@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u24-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "provision",
-      "instructionZh": "用 provision 造一個句子，說說你希望住的地方提供哪些公共服務。",
+      "type": "translate",
+      "promptZh": "登山隊帶了足夠一週吃的糧食。",
+      "hintWords": [
+        "provision"
+      ],
       "referenceEn": [
-        "I wish my town had better provision for older people, such as more benches in parks.",
-        "I hope the provision of bike lanes in my city will improve."
+        "The climbing team took enough provisions for a week.",
+        "The climbers carried enough provisions to last a week."
       ],
       "rubricZh": [
-        "句子要用到 provision（例如 the provision of…、provision for… 等）",
-        "時態合理即可"
+        "provision 指糧食時用複數（例如 enough provisions 等）",
+        "時態可用過去式或現在完成式（例如 took、have taken 等）",
+        "「足夠一週」可寫，例如 for a week、to last a week 等"
       ]
     }
   ],
@@ -389,6 +392,12 @@
         "message": "執行長最終複審修正：C 單字卡改寫帶進的問題：同步",
         "resolution": "改前：\"歷史課上，我們讀了經歷大洪水的人所留下的證詞。\"；改後：\"歷史課上，我們讀了親眼看到第一列火車開進鎮上的人所留下的證詞。\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（provision）原位換成翻譯題，沿用題 id b2-u24-l06-q17；目標字沿用 provision",
+        "resolution": "改為 translate：promptZh「登山隊帶了足夠一週吃的糧食。」、hintWords [\"provision\"]、referenceEn [\"The climbing team took enough provisions for a week.\",\"The climbers carried enough provisions to last a week.\"]、rubricZh [\"provision 指糧食時用複數（例如 enough provisions 等）\",\"時態可用過去式或現在完成式（例如 took、have taken 等）\",\"「足夠一週」可寫，例如 for a week、to last a week 等\"]（原 makeSentence：instructionZh「用 provision 造一個句子，說說你希望住的地方提供哪些公共服務。」、referenceEn [\"I wish my town had better provision for older people, such as more benches in parks.\",\"I hope the provision of bike lanes in my city will improve.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

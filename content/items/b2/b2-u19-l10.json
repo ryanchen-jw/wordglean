@@ -218,16 +218,19 @@
     },
     {
       "id": "b2-u19-l10-q16",
-      "type": "makeSentence",
-      "targetWord": "native speaker",
-      "instructionZh": "用 native speaker 造一個句子，說說你和母語人士交流的經驗或想法。",
+      "type": "translate",
+      "promptZh": "就連母語人士有時也會拼錯這個字。",
+      "hintWords": [
+        "native speaker"
+      ],
       "referenceEn": [
-        "I felt nervous the first time I talked to a native speaker.",
-        "I want to practice speaking with a native speaker every week."
+        "Even native speakers sometimes spell this word wrong.",
+        "Sometimes even native speakers get the spelling of this word wrong."
       ],
       "rubricZh": [
-        "句子要用到 native speaker",
-        "時態合理即可（例如 felt、want）"
+        "native speaker 指母語人士，單複數皆可（例如 native speakers、a native speaker 等）",
+        "「拼錯」可寫，例如 spell… wrong、get the spelling wrong 等",
+        "sometimes 可放句首或動詞前，位置不扣分"
       ]
     }
   ],
@@ -325,6 +328,12 @@
         "message": "執行長最終複審修正：最終複審建議：選項只有 a hyphen 帶冠詞，形式不一致（執行長裁示）",
         "resolution": "改前：\"連字號\"；改後：\"連字號\"",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（native speaker）原位換成翻譯題，沿用題 id b2-u19-l10-q16；目標字沿用 native speaker",
+        "resolution": "改為 translate：promptZh「就連母語人士有時也會拼錯這個字。」、hintWords [\"native speaker\"]、referenceEn [\"Even native speakers sometimes spell this word wrong.\",\"Sometimes even native speakers get the spelling of this word wrong.\"]、rubricZh [\"native speaker 指母語人士，單複數皆可（例如 native speakers、a native speaker 等）\",\"「拼錯」可寫，例如 spell… wrong、get the spelling wrong 等\",\"sometimes 可放句首或動詞前，位置不扣分\"]（原 makeSentence：instructionZh「用 native speaker 造一個句子，說說你和母語人士交流的經驗或想法。」、referenceEn [\"I felt nervous the first time I talked to a native speaker.\",\"I want to practice speaking with a native speaker every week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

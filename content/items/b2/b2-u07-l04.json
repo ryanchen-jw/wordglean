@@ -230,16 +230,18 @@
     },
     {
       "id": "b2-u07-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "practically",
-      "instructionZh": "用 practically 造一個句子，說說某件事「幾乎」是怎樣。",
+      "type": "translate",
+      "promptZh": "這輛舊車現在幾乎不值錢了。",
+      "hintWords": [
+        "practically"
+      ],
       "referenceEn": [
-        "I practically live at the office during busy months.",
-        "My phone battery is practically empty, so I need to charge it."
+        "This old car is practically worthless now.",
+        "This old car is worth practically nothing now."
       ],
       "rubricZh": [
-        "句子要用到 practically，表示「幾乎」（例如 practically empty、practically every day）",
-        "句子內容要合理，時態正確"
+        "practically 表示「幾乎」（例如 practically worthless、worth practically nothing 等）",
+        "「不值錢」可寫，例如 worthless、worth nothing 等"
       ]
     }
   ],
@@ -475,6 +477,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"幾乎\"；改後：\"減去\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（practically）原位換成翻譯題，沿用題 id b2-u07-l04-q17；目標字沿用 practically",
+        "resolution": "改為 translate：promptZh「這輛舊車現在幾乎不值錢了。」、hintWords [\"practically\"]、referenceEn [\"This old car is practically worthless now.\",\"This old car is worth practically nothing now.\"]、rubricZh [\"practically 表示「幾乎」（例如 practically worthless、worth practically nothing 等）\",\"「不值錢」可寫，例如 worthless、worth nothing 等\"]（原 makeSentence：instructionZh「用 practically 造一個句子，說說某件事「幾乎」是怎樣。」、referenceEn [\"I practically live at the office during busy months.\",\"My phone battery is practically empty, so I need to charge it.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -232,16 +232,19 @@
     },
     {
       "id": "b2-u12-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "determined",
-      "instructionZh": "用 determined 造一個句子，說說你下定決心要做的一件事。",
+      "type": "translate",
+      "promptZh": "那支球隊下定決心要贏回冠軍。",
+      "hintWords": [
+        "determined"
+      ],
       "referenceEn": [
-        "I am determined to run a full race this year.",
-        "I'm determined to speak English with my clients by next summer."
+        "The team is determined to win the title back.",
+        "The team is determined to win back the championship."
       ],
       "rubricZh": [
-        "句子要用到 determined（例如 be determined to＋動詞 等）",
-        "句子要說到你自己"
+        "determined 是形容詞，常接 to＋原形動詞（例如 is determined to win 等）",
+        "時態可用現在式或過去式（例如 is、was 等）",
+        "「冠軍」可寫，例如 the title、the championship 等"
       ]
     }
   ],
@@ -471,6 +474,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 determined，常用 be determined to＋動詞\",\"句子要說到你自己\"]；改後：[\"句子要用到 determined（例如 be determined to＋動詞 等）\",\"句子要說到你自己\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（determined）原位換成翻譯題，沿用題 id b2-u12-l07-q17；目標字沿用 determined",
+        "resolution": "改為 translate：promptZh「那支球隊下定決心要贏回冠軍。」、hintWords [\"determined\"]、referenceEn [\"The team is determined to win the title back.\",\"The team is determined to win back the championship.\"]、rubricZh [\"determined 是形容詞，常接 to＋原形動詞（例如 is determined to win 等）\",\"時態可用現在式或過去式（例如 is、was 等）\",\"「冠軍」可寫，例如 the title、the championship 等\"]（原 makeSentence：instructionZh「用 determined 造一個句子，說說你下定決心要做的一件事。」、referenceEn [\"I am determined to run a full race this year.\",\"I'm determined to speak English with my clients by next summer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

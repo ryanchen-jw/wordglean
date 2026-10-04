@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u24-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "enforce",
-      "instructionZh": "用 enforce 造一個句子，說說你家、學校或公司怎麼執行某條規定。",
+      "type": "translate",
+      "promptZh": "這座城市開始嚴格執行禁止亂丟垃圾的規定。",
+      "hintWords": [
+        "enforce"
+      ],
       "referenceEn": [
-        "My parents enforce a no-phone rule during dinner.",
-        "Our office enforces a strict rule about cleaning the kitchen."
+        "The city has started to strictly enforce the rule against littering.",
+        "The city has begun enforcing its rule against littering strictly."
       ],
       "rubricZh": [
-        "句子要用到 enforce",
-        "時態合理即可"
+        "enforce 指執行規定（例如 enforce the rule 等）",
+        "時態可用現在完成式或過去式（例如 has started、started 等）",
+        "strictly 位置不扣分；「亂丟垃圾」可寫，例如 littering、dropping litter 等"
       ]
     }
   ],
@@ -425,6 +428,12 @@
         "message": "執行長最終複審修正：C 單字卡改寫帶進的問題：同步",
         "resolution": "改前：\"她以十票之差贏得學生會會長的職位。\"；改後：\"學生會會長一職開放給所有三年級學生參選。\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（enforce）原位換成翻譯題，沿用題 id b2-u24-l08-q17；目標字沿用 enforce",
+        "resolution": "改為 translate：promptZh「這座城市開始嚴格執行禁止亂丟垃圾的規定。」、hintWords [\"enforce\"]、referenceEn [\"The city has started to strictly enforce the rule against littering.\",\"The city has begun enforcing its rule against littering strictly.\"]、rubricZh [\"enforce 指執行規定（例如 enforce the rule 等）\",\"時態可用現在完成式或過去式（例如 has started、started 等）\",\"strictly 位置不扣分；「亂丟垃圾」可寫，例如 littering、dropping litter 等\"]（原 makeSentence：instructionZh「用 enforce 造一個句子，說說你家、學校或公司怎麼執行某條規定。」、referenceEn [\"My parents enforce a no-phone rule during dinner.\",\"Our office enforces a strict rule about cleaning the kitchen.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

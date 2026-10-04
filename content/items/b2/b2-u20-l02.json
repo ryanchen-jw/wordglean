@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u20-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "community",
-      "instructionZh": "用 community 造一個句子，說說你住的地方居民之間的互動。",
+      "type": "translate",
+      "promptZh": "社區居民一起把那座舊公園打掃乾淨了。",
+      "hintWords": [
+        "community"
+      ],
       "referenceEn": [
-        "The community in my area holds a market every Sunday.",
-        "I feel part of the community because my neighbors often help each other."
+        "The local community cleaned up the old park together.",
+        "People in the community worked together to clean up the old park."
       ],
       "rubricZh": [
-        "句子要用到 community",
-        "時態合理即可"
+        "community 指地方居民、社區（例如 the local community、people in the community 等）",
+        "時態可用過去式或現在完成式（例如 cleaned up、have cleaned up 等）",
+        "「打掃乾淨」可寫，例如 clean up、tidy up 等"
       ]
     }
   ],
@@ -326,6 +329,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，problems in rural areas 也成句，要靠常識才排除",
         "resolution": "改前：\"鄉村的\"；改後：\"數學的\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（community）原位換成翻譯題，沿用題 id b2-u20-l02-q18；目標字沿用 community",
+        "resolution": "改為 translate：promptZh「社區居民一起把那座舊公園打掃乾淨了。」、hintWords [\"community\"]、referenceEn [\"The local community cleaned up the old park together.\",\"People in the community worked together to clean up the old park.\"]、rubricZh [\"community 指地方居民、社區（例如 the local community、people in the community 等）\",\"時態可用過去式或現在完成式（例如 cleaned up、have cleaned up 等）\",\"「打掃乾淨」可寫，例如 clean up、tidy up 等\"]（原 makeSentence：instructionZh「用 community 造一個句子，說說你住的地方居民之間的互動。」、referenceEn [\"The community in my area holds a market every Sunday.\",\"I feel part of the community because my neighbors often help each other.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

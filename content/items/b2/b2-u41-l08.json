@@ -230,17 +230,19 @@
     },
     {
       "id": "b2-u41-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "scramble",
-      "instructionZh": "用 scramble 造一個句子，說說你看過大家爭搶某樣東西的情況。",
+      "type": "translate",
+      "promptZh": "火車門一打開，乘客就爭搶座位。",
+      "hintWords": [
+        "scramble"
+      ],
       "referenceEn": [
-        "People scrambled for seats when the train doors opened.",
-        "Shoppers scrambled for cheap shoes on the first day of the sale."
+        "When the train doors opened, the passengers scrambled for seats.",
+        "The passengers scrambled for seats as soon as the train doors opened."
       ],
       "rubricZh": [
-        "句子要用到 scramble",
-        "scramble 的用法，例如 scramble for seats、scramble to get… 等",
-        "時態配合內容（例如 scrambled、scramble 等）"
+        "scramble for 表示「爭搶」（例如 scrambled for seats 等）",
+        "「一…就」可寫，例如 when、as soon as 等，子句可放句首或句尾",
+        "時態可用過去式或現在式（例如 scrambled、scramble 等）"
       ]
     }
   ],
@@ -326,6 +328,12 @@
         "message": "第②關 issue 結案：疑似第二答案：問「每一頁要做什麼？」，音檔說 punch two holes … so we can put them in the folder，干擾項 \"Put it in a folder\" 也是每頁最後要做的事；雖然放進資料夾的主詞是 we，但學習者可能據此選它。建議題目改成「說話者請對方對每一頁做什麼？」或把該干擾項改成音檔沒提到的動作。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（scramble）原位換成翻譯題，沿用題 id b2-u41-l08-q17；目標字沿用 scramble",
+        "resolution": "改為 translate：promptZh「火車門一打開，乘客就爭搶座位。」、hintWords [\"scramble\"]、referenceEn [\"When the train doors opened, the passengers scrambled for seats.\",\"The passengers scrambled for seats as soon as the train doors opened.\"]、rubricZh [\"scramble for 表示「爭搶」（例如 scrambled for seats 等）\",\"「一…就」可寫，例如 when、as soon as 等，子句可放句首或句尾\",\"時態可用過去式或現在式（例如 scrambled、scramble 等）\"]（原 makeSentence：instructionZh「用 scramble 造一個句子，說說你看過大家爭搶某樣東西的情況。」、referenceEn [\"People scrambled for seats when the train doors opened.\",\"Shoppers scrambled for cheap shoes on the first day of the sale.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

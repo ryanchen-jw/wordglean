@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u12-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "modest",
-      "instructionZh": "用 modest 造一個句子，描述你認識的一位很謙虛或生活很樸素的人。",
+      "type": "translate",
+      "promptZh": "他們一家人住在一間樸素的小房子裡。",
+      "hintWords": [
+        "modest"
+      ],
       "referenceEn": [
-        "My best friend is very modest about her cooking, but it is amazing.",
-        "Although my uncle is rich, he lives a modest life."
+        "The family lives in a modest little house.",
+        "They live in a small, modest house."
       ],
       "rubricZh": [
-        "句子要用到 modest，表示「謙虛的」或「樸素的、不起眼的」",
-        "描述要合理"
+        "modest 這裡表示「樸素的、不起眼的」，放名詞前（例如 a modest house 等）",
+        "「一家人」可寫，例如 the family、they 等",
+        "時態可用現在式或過去式（例如 live、lived 等）"
       ]
     }
   ],
@@ -422,6 +425,12 @@
         "message": "執行長裁示修正：單字卡第一義須為例句所教詞義（App 作答選項只顯示第一義）：調整釋義順序",
         "resolution": "改前：\"溫柔地；輕輕地\"；改後：\"輕輕地；溫柔地\"",
         "resolvedAt": "2026-10-02T19:58:48Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（modest）原位換成翻譯題，沿用題 id b2-u12-l02-q17；目標字沿用 modest",
+        "resolution": "改為 translate：promptZh「他們一家人住在一間樸素的小房子裡。」、hintWords [\"modest\"]、referenceEn [\"The family lives in a modest little house.\",\"They live in a small, modest house.\"]、rubricZh [\"modest 這裡表示「樸素的、不起眼的」，放名詞前（例如 a modest house 等）\",\"「一家人」可寫，例如 the family、they 等\",\"時態可用現在式或過去式（例如 live、lived 等）\"]（原 makeSentence：instructionZh「用 modest 造一個句子，描述你認識的一位很謙虛或生活很樸素的人。」、referenceEn [\"My best friend is very modest about her cooking, but it is amazing.\",\"Although my uncle is rich, he lives a modest life.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

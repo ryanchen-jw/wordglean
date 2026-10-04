@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u16-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "neurosis",
-      "instructionZh": "用 neurosis 造一個句子，說說你在書本、課堂或電影中看到關於精神官能症的內容（中性描述即可）。",
+      "type": "translate",
+      "promptZh": "這本書介紹了佛洛伊德對精神官能症的看法。",
+      "hintWords": [
+        "neurosis"
+      ],
       "referenceEn": [
-        "Our teacher explained that the meaning of neurosis has changed over time.",
-        "I learned that the word neurosis comes from Greek."
+        "This book explains Freud's ideas about neurosis.",
+        "This book introduces Freud's views on neurosis."
       ],
       "rubricZh": [
-        "句子要用到 neurosis",
-        "內容是中性的事實描述，不寫個人病況或建議"
+        "neurosis 指「精神官能症」（例如 Freud's ideas about neurosis 等）",
+        "「介紹」可寫，例如 explains、introduces、describes 等",
+        "「看法」可寫，例如 ideas about、views on 等"
       ]
     }
   ],
@@ -470,6 +473,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，neurosis／bulimia 要靠醫學知識才排除",
         "resolution": "改前：\"暴食症\"；改後：\"藥膏\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（neurosis）原位換成翻譯題，沿用題 id b2-u16-l10-q17；目標字沿用 neurosis",
+        "resolution": "改為 translate：promptZh「這本書介紹了佛洛伊德對精神官能症的看法。」、hintWords [\"neurosis\"]、referenceEn [\"This book explains Freud's ideas about neurosis.\",\"This book introduces Freud's views on neurosis.\"]、rubricZh [\"neurosis 指「精神官能症」（例如 Freud's ideas about neurosis 等）\",\"「介紹」可寫，例如 explains、introduces、describes 等\",\"「看法」可寫，例如 ideas about、views on 等\"]（原 makeSentence：instructionZh「用 neurosis 造一個句子，說說你在書本、課堂或電影中看到關於精神官能症的內容（中性描述即可）。」、referenceEn [\"Our teacher explained that the meaning of neurosis has changed over time.\",\"I learned that the word neurosis comes from Greek.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

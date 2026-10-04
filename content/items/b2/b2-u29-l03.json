@@ -231,17 +231,18 @@
     },
     {
       "id": "b2-u29-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "recruit",
-      "instructionZh": "用 recruit 造一個句子，說說一個團體或公司想招募什麼樣的人。",
+      "type": "translate",
+      "promptZh": "我們的社團正在招募喜歡攝影的新成員。",
+      "hintWords": [
+        "recruit"
+      ],
       "referenceEn": [
-        "Our club wants to recruit more members who love hiking.",
-        "The restaurant is recruiting cooks for its new branch."
+        "Our club is recruiting new members who love photography.",
+        "Our club is now recruiting new members who enjoy taking photos."
       ],
       "rubricZh": [
-        "句子要用到 recruit",
-        "recruit 後面接要招募的人（例如 recruit members、recruit cooks 等）",
-        "時態配合內容（例如 wants to recruit、is recruiting 等）"
+        "recruit 指「招募」（例如 is recruiting、is now recruiting 等）",
+        "「喜歡攝影的」可寫，例如 who love photography、who enjoy taking photos 等"
       ]
     }
   ],
@@ -417,6 +418,18 @@
         "message": "第②關 issue 結案：疑似不自然：capability 指物的效能時多用複數 capabilities（The capabilities of this old computer are very limited），單數 + very limited 讀起來生硬。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（recruit）原位換成翻譯題，沿用題 id b2-u29-l03-q17；目標字沿用 recruit",
+        "resolution": "改為 translate：promptZh「我們的社團正在招募喜歡攝影的新成員。」、hintWords [\"recruit\"]、referenceEn [\"Our club is recruiting new members who love photography.\",\"Our club wants to recruit new members who enjoy taking photos.\"]、rubricZh [\"recruit 指「招募」（例如 is recruiting、wants to recruit 等）\",\"「喜歡攝影的」可寫，例如 who love photography、who enjoy taking photos 等\"]（原 makeSentence：instructionZh「用 recruit 造一個句子，說說一個團體或公司想招募什麼樣的人。」、referenceEn [\"Our club wants to recruit more members who love hiking.\",\"The restaurant is recruiting cooks for its new branch.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 題目「正在招募」，變體 2 wants to recruit 意思偏成「想招募」",
+        "resolution": "改為 promptZh「我們的社團正在招募喜歡攝影的新成員。」、referenceEn [\"Our club is recruiting new members who love photography.\",\"Our club is now recruiting new members who enjoy taking photos.\"]、rubricZh [\"recruit 指「招募」（例如 is recruiting、is now recruiting 等）\",\"「喜歡攝影的」可寫，例如 who love photography、who enjoy taking photos 等\"]（原 promptZh「我們的社團正在招募喜歡攝影的新成員。」、referenceEn [\"Our club is recruiting new members who love photography.\",\"Our club wants to recruit new members who enjoy taking photos.\"]、rubricZh [\"recruit 指「招募」（例如 is recruiting、wants to recruit 等）\",\"「喜歡攝影的」可寫，例如 who love photography、who enjoy taking photos 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

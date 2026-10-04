@@ -259,17 +259,18 @@
     },
     {
       "id": "b2-u35-l01-q19",
-      "type": "makeSentence",
-      "targetWord": "recreation",
-      "instructionZh": "用 recreation 造一個句子，說說你平常的休閒活動。",
+      "type": "translate",
+      "promptZh": "我爸爸休閒時喜歡去釣魚。",
+      "hintWords": [
+        "recreation"
+      ],
       "referenceEn": [
-        "For recreation, I usually go swimming on weekends.",
-        "My favorite form of recreation is reading in the park."
+        "For recreation, my dad likes to go fishing.",
+        "My dad enjoys fishing for recreation."
       ],
       "rubricZh": [
-        "句子要用到 recreation",
-        "recreation 的用法，例如 for recreation、a form of recreation 等",
-        "說習慣，時態合理（例如 go、is 等）"
+        "recreation 表示休閒（例如 for recreation 等）",
+        "「喜歡去釣魚」可寫，例如 likes to go fishing、enjoys fishing 等"
       ]
     }
   ],
@@ -355,6 +356,18 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"說習慣，用現在式（例如 go、is）\"；改後：\"說習慣，時態合理（例如 go、is 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/18",
+        "message": "創辦人裁示：造句改翻譯：造句題（recreation）原位換成翻譯題，沿用題 id b2-u35-l01-q19；目標字沿用 recreation",
+        "resolution": "改為 translate：promptZh「這個小鎮計畫在河邊蓋一座新的休閒中心。」、hintWords [\"recreation\"]、referenceEn [\"The town plans to build a new recreation center by the river.\",\"The town is going to build a new recreation center beside the river.\"]、rubricZh [\"「休閒中心」可寫，例如 recreation center、recreation centre 等\",\"「計畫」可寫，例如 plans to、is planning to、is going to 等\",\"「在河邊」可寫，例如 by the river、beside the river、next to the river 等\"]（原 makeSentence：instructionZh「用 recreation 造一個句子，說說你平常的休閒活動。」、referenceEn [\"For recreation, I usually go swimming on weekends.\",\"My favorite form of recreation is reading in the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/18",
+        "message": "執行長裁示：第③關：SUS 與同課閱讀末句（the town also opened a new recreation center）主詞、受詞相同",
+        "resolution": "改為 promptZh「我爸爸休閒時喜歡去釣魚。」、referenceEn [\"For recreation, my dad likes to go fishing.\",\"My dad enjoys fishing for recreation.\"]、rubricZh [\"recreation 表示休閒（例如 for recreation 等）\",\"「喜歡去釣魚」可寫，例如 likes to go fishing、enjoys fishing 等\"]（原 promptZh「這個小鎮計畫在河邊蓋一座新的休閒中心。」、referenceEn [\"The town plans to build a new recreation center by the river.\",\"The town is going to build a new recreation center beside the river.\"]、rubricZh [\"「休閒中心」可寫，例如 recreation center、recreation centre 等\",\"「計畫」可寫，例如 plans to、is planning to、is going to 等\",\"「在河邊」可寫，例如 by the river、beside the river、next to the river 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

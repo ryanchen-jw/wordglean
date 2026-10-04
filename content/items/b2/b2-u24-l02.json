@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u24-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "postal",
-      "instructionZh": "用 postal 造一個句子，說說你寄信、收包裹或郵局的經驗。",
+      "type": "translate",
+      "promptZh": "郵務人員每天早上十點左右把信送到我們這一區。",
+      "hintWords": [
+        "postal"
+      ],
       "referenceEn": [
-        "I used the postal service to send a gift to my aunt last month.",
-        "I always check the postal code before I send a package."
+        "Postal workers deliver mail to our area at around ten every morning.",
+        "Every morning, the postal workers bring the mail to our neighborhood at about ten."
       ],
       "rubricZh": [
-        "句子要用到 postal（例如 postal service、postal code）",
-        "時態合理即可"
+        "postal 放在名詞前，表示「郵政的」（例如 postal workers 等）",
+        "習慣的事用現在式；「送信」可寫，例如 deliver mail、bring the mail 等",
+        "「十點左右」可寫，例如 at around ten、at about ten 等"
       ]
     }
   ],
@@ -323,6 +326,12 @@
         "message": "第②關 issue 結案：\"by postal mail\" 冗贅不道地（慣用 by mail／by post）；建議改 \"I sent a birthday card to my friend, and the postal service delivered it in two days.\" 之類。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/16 的 1 筆修正紀錄。",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（postal）原位換成翻譯題，沿用題 id b2-u24-l02-q17；目標字沿用 postal",
+        "resolution": "改為 translate：promptZh「郵務人員每天早上十點左右把信送到我們這一區。」、hintWords [\"postal\"]、referenceEn [\"Postal workers deliver mail to our area at around ten every morning.\",\"Every morning, the postal workers bring the mail to our neighborhood at about ten.\"]、rubricZh [\"postal 放在名詞前，表示「郵政的」（例如 postal workers 等）\",\"習慣的事用現在式；「送信」可寫，例如 deliver mail、bring the mail 等\",\"「十點左右」可寫，例如 at around ten、at about ten 等\"]（原 makeSentence：instructionZh「用 postal 造一個句子，說說你寄信、收包裹或郵局的經驗。」、referenceEn [\"I used the postal service to send a gift to my aunt last month.\",\"I always check the postal code before I send a package.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

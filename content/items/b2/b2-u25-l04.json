@@ -229,17 +229,19 @@
     },
     {
       "id": "b2-u25-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "zoom",
-      "instructionZh": "用 zoom 造一個句子，說說你拍照時怎麼使用變焦功能。",
+      "type": "translate",
+      "promptZh": "把地圖放大，你就能看到我們飯店的位置。",
+      "hintWords": [
+        "zoom"
+      ],
       "referenceEn": [
-        "I used the zoom on my phone to take a photo of the moon.",
-        "I often use the zoom to take pictures of birds in the park."
+        "Zoom in on the map, and you can see where our hotel is.",
+        "If you zoom in on the map, you will see our hotel."
       ],
       "rubricZh": [
-        "句子要用到 zoom",
-        "zoom 當名詞（例如 use the zoom、the zoom on my camera 等）或寫 zoom in 都可以",
-        "時態配合內容（例如 used、often use 等）"
+        "zoom 當動詞時常寫 zoom in（例如 zoom in on the map 等）",
+        "句型可用祈使句＋and 或 if 子句（例如 Zoom in…, and…、If you zoom in… 等）",
+        "「看到位置」可寫，例如 see where our hotel is、see our hotel 等"
       ]
     }
   ],
@@ -307,6 +309,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"時態配合內容（例如 used、often use）\"；改後：\"時態配合內容（例如 used、often use 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（zoom）原位換成翻譯題，沿用題 id b2-u25-l04-q17；目標字沿用 zoom",
+        "resolution": "改為 translate：promptZh「把地圖放大，你就能看到我們飯店的位置。」、hintWords [\"zoom\"]、referenceEn [\"Zoom in on the map, and you can see where our hotel is.\",\"If you zoom in on the map, you will see our hotel.\"]、rubricZh [\"zoom 當動詞時常寫 zoom in（例如 zoom in on the map 等）\",\"句型可用祈使句＋and 或 if 子句（例如 Zoom in…, and…、If you zoom in… 等）\",\"「看到位置」可寫，例如 see where our hotel is、see our hotel 等\"]（原 makeSentence：instructionZh「用 zoom 造一個句子，說說你拍照時怎麼使用變焦功能。」、referenceEn [\"I used the zoom on my phone to take a photo of the moon.\",\"I often use the zoom to take pictures of birds in the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

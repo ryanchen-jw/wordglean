@@ -217,16 +217,19 @@
     },
     {
       "id": "b2-u02-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "eternally",
-      "instructionZh": "用 eternally 造一個句子，說說你會永遠感激或記得的人或事。",
+      "type": "translate",
+      "promptZh": "我奶奶永遠都那麼樂觀。",
+      "hintWords": [
+        "eternally"
+      ],
       "referenceEn": [
-        "I will be eternally grateful to my first boss.",
-        "I am eternally thankful to my parents for their support."
+        "My grandmother is eternally optimistic about life.",
+        "My grandma is eternally cheerful and positive."
       ],
       "rubricZh": [
-        "句子要用到 eternally，常放在形容詞前（例如 eternally grateful、eternally thankful）",
-        "句子要說到你自己的感受"
+        "eternally 放在形容詞前，表示「永遠地」（例如 eternally optimistic 等）",
+        "「奶奶」可寫，例如 grandmother、grandma 等",
+        "「樂觀」可寫，例如 optimistic、positive、cheerful 等；寫不寫 about life 都可以"
       ]
     }
   ],
@@ -342,6 +345,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：timeliness 為 q12 正解；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"守時\"；改後：\"過時的\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（eternally）原位換成翻譯題，沿用題 id b2-u02-l05-q16；目標字沿用 eternally",
+        "resolution": "改為 translate：promptZh「我奶奶永遠都那麼樂觀。」、hintWords [\"eternally\"]、referenceEn [\"My grandmother is eternally optimistic about life.\",\"My grandma is eternally cheerful and positive.\"]、rubricZh [\"eternally 放在形容詞前，表示「永遠地」（例如 eternally optimistic 等）\",\"「奶奶」可寫，例如 grandmother、grandma 等\",\"「樂觀」可寫，例如 optimistic、positive、cheerful 等；寫不寫 about life 都可以\"]（原 makeSentence：instructionZh「用 eternally 造一個句子，說說你會永遠感激或記得的人或事。」、referenceEn [\"I will be eternally grateful to my first boss.\",\"I am eternally thankful to my parents for their support.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

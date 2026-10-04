@@ -229,17 +229,18 @@
     },
     {
       "id": "b2-u41-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "crack",
-      "instructionZh": "用 crack 造一個句子，說說你身邊有什麼東西有裂縫或裂開了。",
+      "type": "translate",
+      "promptZh": "我的手機螢幕上有一條很長的裂縫。",
+      "hintWords": [
+        "crack"
+      ],
       "referenceEn": [
         "There is a long crack in my phone screen.",
-        "My favorite cup cracked when I washed it in hot water."
+        "My phone screen has a long crack in it."
       ],
       "rubricZh": [
-        "句子要用到 crack",
-        "crack 可當名詞或動詞（例如 a crack in…、cracked 等）",
-        "時態配合內容（例如 is、cracked 等）"
+        "crack 當名詞「裂縫」（例如 a long crack in… 等）",
+        "「有」可寫，例如 there is、has 等；介系詞寫 in 或 on 都不扣分"
       ]
     }
   ],
@@ -295,6 +296,12 @@
         "message": "第②關 issue 結案：疑似不自然：\"Our goalkeeper, who was converted from a defender last year\" 用被動 converted from 指人轉位置較生硬，常見說法是 \"who switched from defender to goalkeeper\" 或 \"a former defender\"；\"fled the rain\" 也略牽強（較自然為 left early to escape the rain）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（crack）原位換成翻譯題，沿用題 id b2-u41-l02-q17；目標字沿用 crack",
+        "resolution": "改為 translate：promptZh「我的手機螢幕上有一條很長的裂縫。」、hintWords [\"crack\"]、referenceEn [\"There is a long crack in my phone screen.\",\"My phone screen has a long crack in it.\"]、rubricZh [\"crack 當名詞「裂縫」（例如 a long crack in… 等）\",\"「有」可寫，例如 there is、has 等；介系詞寫 in 或 on 都不扣分\"]（原 makeSentence：instructionZh「用 crack 造一個句子，說說你身邊有什麼東西有裂縫或裂開了。」、referenceEn [\"There is a long crack in my phone screen.\",\"My favorite cup cracked when I washed it in hot water.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

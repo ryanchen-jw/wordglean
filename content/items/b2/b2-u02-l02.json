@@ -232,16 +232,19 @@
     },
     {
       "id": "b2-u02-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "punctual",
-      "instructionZh": "用 punctual 造一個句子，說說你或你認識的人守不守時。",
+      "type": "translate",
+      "promptZh": "我的新同事每天都很準時，從來不遲到。",
+      "hintWords": [
+        "punctual"
+      ],
       "referenceEn": [
-        "I always try to be punctual for work.",
-        "My best friend is never punctual, so I always have to wait for her."
+        "My new colleague is always punctual and is never late.",
+        "My new colleague is punctual every day and never arrives late."
       ],
       "rubricZh": [
-        "句子要用到 punctual，當形容詞用（例如 be punctual、a punctual person）",
-        "可用 always、never 等頻率副詞說明守時的程度"
+        "punctual 當形容詞，放 be 動詞後（例如 is always punctual 等）；always 位置不扣分",
+        "「同事」可寫，例如 colleague、coworker 等",
+        "「從來不遲到」可寫，例如 is never late、never arrives late、never comes in late 等"
       ]
     }
   ],
@@ -393,6 +396,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"previously 可放在動詞前或句首（例如 I previously worked…、Previously, I…）\",\"「十年」可寫 a decade 或 ten years；過去的事用過去式\"]；改後：[\"previously 可放在動詞前或句首（例如 I previously worked…、Previously, I… 等）\",\"「十年」可寫，例如 a decade、ten years 等；過去的事用過去式\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（punctual）原位換成翻譯題，沿用題 id b2-u02-l02-q17；目標字沿用 punctual",
+        "resolution": "改為 translate：promptZh「我的新同事每天都很準時，從來不遲到。」、hintWords [\"punctual\"]、referenceEn [\"My new colleague is always punctual and is never late.\",\"My new colleague is punctual every day and never arrives late.\"]、rubricZh [\"punctual 當形容詞，放 be 動詞後（例如 is always punctual 等）；always 位置不扣分\",\"「同事」可寫，例如 colleague、coworker 等\",\"「從來不遲到」可寫，例如 is never late、never arrives late、never comes in late 等\"]（原 makeSentence：instructionZh「用 punctual 造一個句子，說說你或你認識的人守不守時。」、referenceEn [\"I always try to be punctual for work.\",\"My best friend is never punctual, so I always have to wait for her.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

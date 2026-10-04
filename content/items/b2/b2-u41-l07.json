@@ -231,17 +231,20 @@
     },
     {
       "id": "b2-u41-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "tackle",
-      "instructionZh": "用 tackle 造一個句子，說說你最近處理過或正在處理的一個問題或麻煩事。",
+      "type": "translate",
+      "promptZh": "她打算下班前先把那一大堆還沒回的郵件處理掉。",
+      "hintWords": [
+        "tackle"
+      ],
       "referenceEn": [
-        "Last week, I tackled the messy cupboard in my kitchen.",
-        "I am tackling a difficult math problem for my class."
+        "Before leaving work, she planned to tackle the big pile of emails she hadn't answered.",
+        "Before she leaves the office, she plans to tackle the pile of emails she hasn't replied to."
       ],
       "rubricZh": [
-        "句子要用到 tackle",
-        "tackle 後面直接接問題或工作（例如 tackle a problem、tackle the cupboard 等）",
-        "時態配合內容（例如 tackled、am tackling 等）"
+        "tackle 指「處理、解決」（例如 tackle the pile of emails 等）",
+        "「還沒回的郵件」可寫，例如 emails she hadn't answered、emails she hasn't replied to 等",
+        "「下班前」可寫，例如 before leaving work、before she leaves the office 等",
+        "時態可用過去式或現在式（例如 planned、plans、is planning 等）"
       ]
     }
   ],
@@ -369,6 +372,18 @@
         "message": "第②關 issue 結案：疑似搭配不自然：\"He used a small computer to manipulate the sails.\" 調帆英文常說 adjust/trim the sails，用電腦 manipulate 帆也不太合帆船實況；且 manipulate 的單字卡例句是負面「操縱人」，此處義項不一致。建議改寫成較合理的操作情境（如 manipulate the controls）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tackle）原位換成翻譯題，沿用題 id b2-u41-l07-q17；目標字沿用 tackle",
+        "resolution": "改為 translate：promptZh「市政府正在設法解決交通堵塞的問題。」、hintWords [\"tackle\"]、referenceEn [\"The city government is trying to tackle the problem of traffic jams.\",\"The city is trying to tackle its traffic problem.\"]、rubricZh [\"tackle 指「處理、解決」（例如 tackle the problem 等）\",\"「正在設法」可寫，例如 is trying to、is working to 等\",\"「交通堵塞的問題」可寫，例如 the problem of traffic jams、its traffic problem 等\"]（原 makeSentence：instructionZh「用 tackle 造一個句子，說說你最近處理過或正在處理的一個問題或麻煩事。」、referenceEn [\"Last week, I tackled the messy cupboard in my kitchen.\",\"I am tackling a difficult math problem for my class.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u05-l09-q17（The city has to confront its traffic problem）主詞、情境、句型幾乎相同；審查建議句與同課聽選 q10（tackle the most difficult problem first）雷同，另換情境",
+        "resolution": "改為 promptZh「她打算下班前先把那一大堆還沒回的郵件處理掉。」、referenceEn [\"Before leaving work, she planned to tackle the big pile of emails she hadn't answered.\",\"Before she leaves the office, she plans to tackle the pile of emails she hasn't replied to.\"]、rubricZh [\"tackle 指「處理、解決」（例如 tackle the pile of emails 等）\",\"「還沒回的郵件」可寫，例如 emails she hadn't answered、emails she hasn't replied to 等\",\"「下班前」可寫，例如 before leaving work、before she leaves the office 等\",\"時態可用過去式或現在式（例如 planned、plans、is planning 等）\"]（原 promptZh「市政府正在設法解決交通堵塞的問題。」、referenceEn [\"The city government is trying to tackle the problem of traffic jams.\",\"The city is trying to tackle its traffic problem.\"]、rubricZh [\"tackle 指「處理、解決」（例如 tackle the problem 等）\",\"「正在設法」可寫，例如 is trying to、is working to 等\",\"「交通堵塞的問題」可寫，例如 the problem of traffic jams、its traffic problem 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

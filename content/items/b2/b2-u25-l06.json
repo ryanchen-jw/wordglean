@@ -217,17 +217,19 @@
     },
     {
       "id": "b2-u25-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "newsworthy",
-      "instructionZh": "用 newsworthy 造一個句子，說說你覺得最近有什麼事值得上新聞。",
+      "type": "translate",
+      "promptZh": "對當地報紙來說，新公園開幕是一件有新聞價值的事。",
+      "hintWords": [
+        "newsworthy"
+      ],
       "referenceEn": [
-        "I think the new night market in my town is newsworthy.",
-        "The opening of the new bridge in my city was really newsworthy."
+        "For the local newspaper, the opening of the new park is a newsworthy event.",
+        "The opening of the new park is newsworthy for the local paper."
       ],
       "rubricZh": [
-        "句子要用到 newsworthy",
-        "newsworthy 可放在 be 動詞後或名詞前（例如 is newsworthy、a newsworthy event 等）",
-        "時態配合內容（例如 is、was 等）"
+        "newsworthy 可放名詞前或 be 動詞後（例如 a newsworthy event、is newsworthy 等）",
+        "「新公園開幕」可寫，例如 the opening of the new park 等",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     }
   ],
@@ -379,6 +381,12 @@
         "message": "第②關 issue 結案：疑似：干擾項「計算機」在台灣雖多指計算器，但「計算機」亦為 computer 的正式譯名（計算機科學），與正解「微電腦；個人電腦」意思重疊；建議改「計算器」或其他物品。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（newsworthy）原位換成翻譯題，沿用題 id b2-u25-l06-q16；目標字沿用 newsworthy",
+        "resolution": "改為 translate：promptZh「對當地報紙來說，新公園開幕是一件有新聞價值的事。」、hintWords [\"newsworthy\"]、referenceEn [\"For the local newspaper, the opening of the new park is a newsworthy event.\",\"The opening of the new park is newsworthy for the local paper.\"]、rubricZh [\"newsworthy 可放名詞前或 be 動詞後（例如 a newsworthy event、is newsworthy 等）\",\"「新公園開幕」可寫，例如 the opening of the new park 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 newsworthy 造一個句子，說說你覺得最近有什麼事值得上新聞。」、referenceEn [\"I think the new night market in my town is newsworthy.\",\"The opening of the new bridge in my city was really newsworthy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

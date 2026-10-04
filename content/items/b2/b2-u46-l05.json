@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u46-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "patriotism",
-      "instructionZh": "用 patriotism 造一個句子，說說人們在什麼場合會表現愛國心。",
+      "type": "translate",
+      "promptZh": "國際比賽期間，很多球迷揮舞國旗來表達他們的愛國心。",
+      "hintWords": [
+        "patriotism"
+      ],
       "referenceEn": [
-        "People show their patriotism by flying flags on national holidays.",
-        "Some people show their patriotism by buying products made in their own country."
+        "During international games, many fans show their patriotism by waving flags.",
+        "Many fans wave flags to show their patriotism during international games."
       ],
       "rubricZh": [
-        "句子要用到 patriotism（例如 show their patriotism）",
-        "說明場合或方式，例如 at sports games、during the holiday 等都可以"
+        "patriotism 表示「愛國心」（例如 show their patriotism 等）",
+        "「揮舞國旗」可寫，例如 waving flags、wave their national flags 等",
+        "時態可用現在式或過去式（例如 show、showed 等）"
       ]
     }
   ],
@@ -330,6 +333,12 @@
         "message": "執行長第②③關裁示修正：最終複審 FIX 2：與單字卡同為「某地不再宰殺動物」",
         "resolution": "改前：\"那座農場不再養供屠宰的動物，現在改種蔬菜。\"；改後：\"肉品在屠宰後會經過仔細檢查。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（patriotism）原位換成翻譯題，沿用題 id b2-u46-l05-q17；目標字沿用 patriotism",
+        "resolution": "改為 translate：promptZh「國際比賽期間，很多球迷揮舞國旗來表達他們的愛國心。」、hintWords [\"patriotism\"]、referenceEn [\"During international games, many fans show their patriotism by waving flags.\",\"Many fans wave flags to show their patriotism during international games.\"]、rubricZh [\"patriotism 表示「愛國心」（例如 show their patriotism 等）\",\"「揮舞國旗」可寫，例如 waving flags、wave their national flags 等\",\"時態可用現在式或過去式（例如 show、showed 等）\"]（原 makeSentence：instructionZh「用 patriotism 造一個句子，說說人們在什麼場合會表現愛國心。」、referenceEn [\"People show their patriotism by flying flags on national holidays.\",\"Some people show their patriotism by buying products made in their own country.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

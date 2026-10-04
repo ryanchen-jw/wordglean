@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u15-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "berry",
-      "instructionZh": "用 berry 造一個句子，說說你喜歡怎麼吃莓果。",
+      "type": "translate",
+      "promptZh": "這種果醬是用三種莓果做的。",
+      "hintWords": [
+        "berry"
+      ],
       "referenceEn": [
-        "I like to put fresh berries on my yogurt in the morning.",
-        "My favorite dessert is a cake covered with mixed berries."
+        "This jam is made from three kinds of berries.",
+        "Three different berries are used to make this jam."
       ],
       "rubricZh": [
-        "句子要用到 berry 或 berries（例如 fresh berries）",
-        "句子要說到你自己"
+        "berry 指「莓果」，這裡用複數 berries",
+        "「用…做的」可寫，例如 is made from、is made with、are used to make 等",
+        "「三種」可寫，例如 three kinds of、three different 等"
       ]
     }
   ],
@@ -408,6 +411,12 @@
         "message": "執行長最終複審修正：A 第 3 批：第一義為名詞，干擾項同詞性",
         "resolution": "改前：[\"切開\",\"加熱\",\"包起來\"]；改後：[\"茄子\",\"馬鈴薯\",\"玉米\"]",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（berry）原位換成翻譯題，沿用題 id b2-u15-l02-q17；目標字沿用 berry",
+        "resolution": "改為 translate：promptZh「這種果醬是用三種莓果做的。」、hintWords [\"berry\"]、referenceEn [\"This jam is made from three kinds of berries.\",\"Three different berries are used to make this jam.\"]、rubricZh [\"berry 指「莓果」，這裡用複數 berries\",\"「用…做的」可寫，例如 is made from、is made with、are used to make 等\",\"「三種」可寫，例如 three kinds of、three different 等\"]（原 makeSentence：instructionZh「用 berry 造一個句子，說說你喜歡怎麼吃莓果。」、referenceEn [\"I like to put fresh berries on my yogurt in the morning.\",\"My favorite dessert is a cake covered with mixed berries.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

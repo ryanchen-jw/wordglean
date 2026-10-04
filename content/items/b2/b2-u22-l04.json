@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u22-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "rainbow",
-      "instructionZh": "用 rainbow 造一個句子，說說你看過彩虹的經驗。",
+      "type": "translate",
+      "promptZh": "一道彩虹有七種顏色。",
+      "hintWords": [
+        "rainbow"
+      ],
       "referenceEn": [
-        "I once saw a double rainbow from the window of a train.",
-        "After the rain stopped, I saw a bright rainbow over my school."
+        "There are seven colors in a rainbow.",
+        "A rainbow is made up of seven colors."
       ],
       "rubricZh": [
-        "句子要用到 rainbow",
-        "時態合理即可"
+        "rainbow 指彩虹，冠詞或單複數不扣分（例如 a rainbow、rainbows 等）",
+        "句型可寫，例如 There are… in a rainbow、A rainbow has… 等；一般事實用現在式"
       ]
     }
   ],
@@ -305,6 +307,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，garden is pastoral, with trees and flowers 也說得通",
         "resolution": "改前：\"田園的\"；改後：\"花苞\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rainbow）原位換成翻譯題，沿用題 id b2-u22-l04-q17；目標字沿用 rainbow",
+        "resolution": "改為 translate：promptZh「一道彩虹有七種顏色。」、hintWords [\"rainbow\"]、referenceEn [\"There are seven colors in a rainbow.\",\"A rainbow is made up of seven colors.\"]、rubricZh [\"rainbow 指彩虹，冠詞或單複數不扣分（例如 a rainbow、rainbows 等）\",\"句型可寫，例如 There are… in a rainbow、A rainbow has… 等；一般事實用現在式\"]（原 makeSentence：instructionZh「用 rainbow 造一個句子，說說你看過彩虹的經驗。」、referenceEn [\"I once saw a double rainbow from the window of a train.\",\"After the rain stopped, I saw a bright rainbow over my school.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

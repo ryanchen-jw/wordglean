@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u47-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "surrender",
-      "instructionZh": "用 surrender 造一個句子，說說你在遊戲或比賽中認輸的經驗。",
+      "type": "translate",
+      "promptZh": "入場前，請把你的手機交給工作人員。",
+      "hintWords": [
+        "surrender"
+      ],
       "referenceEn": [
-        "I surrendered after my brother won three games in a row.",
-        "When I play chess with my father, I usually surrender after twenty minutes."
+        "Please surrender your phone to the staff before you go in.",
+        "Before entering, please surrender your phones to the staff."
       ],
       "rubricZh": [
-        "句子要用到 surrender（例如 surrendered、surrender after…）",
-        "時態配合內容（例如 surrendered、surrender 等）"
+        "surrender 在這裡表示「交出」，例如 surrender your phone to the staff 等",
+        "「入場前」可寫，例如 before you go in、before entering 等，句首句尾都可以",
+        "phone 單複數不扣分"
       ]
     }
   ],
@@ -299,6 +302,12 @@
         "message": "執行長第②③關裁示修正：裁示：改教常用動詞義；weave",
         "resolution": "改前：\"My grandmother's village is famous for its baskets. Each one has such a tight weave that it can even hold water. For many years, this handicraft suffered from neglect, because young people moved to the city. Now, a small group of villagers strives to keep the tradition alive. They teach classes in an old barn, where the door is closed with a heavy wooden bolt. Last summer, I knelt beside my grandmother on the barn floor and learned to make my first basket.\"；改後：\"My grandmother's village is famous for its baskets. Each one is woven so tightly that it can even hold water. For many years, this handicraft suffered from neglect, because young people moved to the city. Now, a small group of villagers strives to keep the tradition alive. They teach classes in an old barn, where the door is closed with a heavy wooden bolt. Last summer, I knelt beside my grandmother on the barn floor and learned to make my first basket.\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（surrender）原位換成翻譯題，沿用題 id b2-u47-l03-q17；目標字沿用 surrender",
+        "resolution": "改為 translate：promptZh「入場前，請把你的手機交給工作人員。」、hintWords [\"surrender\"]、referenceEn [\"Please surrender your phone to the staff before you go in.\",\"Before entering, please surrender your phones to the staff.\"]、rubricZh [\"surrender 在這裡表示「交出」，例如 surrender your phone to the staff 等\",\"「入場前」可寫，例如 before you go in、before entering 等，句首句尾都可以\",\"phone 單複數不扣分\"]（原 makeSentence：instructionZh「用 surrender 造一個句子，說說你在遊戲或比賽中認輸的經驗。」、referenceEn [\"I surrendered after my brother won three games in a row.\",\"When I play chess with my father, I usually surrender after twenty minutes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

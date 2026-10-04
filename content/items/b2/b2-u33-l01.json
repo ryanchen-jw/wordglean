@@ -219,16 +219,19 @@
     },
     {
       "id": "b2-u33-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "brewery",
-      "instructionZh": "用 brewery 造一個句子，說說你參觀過或聽說過的一家釀酒廠。",
+      "type": "translate",
+      "promptZh": "這家釀酒廠僱用了村裡大約一半的人。",
+      "hintWords": [
+        "brewery"
+      ],
       "referenceEn": [
-        "I once visited an old brewery in Germany with my friends.",
-        "There is a small brewery in my town that makes beer from local rice."
+        "This brewery employs about half of the people in the village.",
+        "About half of the people in the village work at this brewery."
       ],
       "rubricZh": [
-        "句子要用到 brewery",
-        "時態配合內容（例如 visited、makes 等）"
+        "「釀酒廠」可寫，例如 brewery 等",
+        "「僱用了村裡大約一半的人」可寫，例如 employs about half of…、half of the people … work at 等",
+        "時態可用現在式或過去式（例如 employs、employed 等）"
       ]
     }
   ],
@@ -350,6 +353,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"時態配合內容（例如 visited、makes）\"；改後：\"時態配合內容（例如 visited、makes 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（brewery）原位換成翻譯題，沿用題 id b2-u33-l01-q16；目標字沿用 brewery",
+        "resolution": "改為 translate：promptZh「這家釀酒廠僱用了村裡大約一半的人。」、hintWords [\"brewery\"]、referenceEn [\"This brewery employs about half of the people in the village.\",\"About half of the people in the village work at this brewery.\"]、rubricZh [\"「釀酒廠」可寫，例如 brewery 等\",\"「僱用了村裡大約一半的人」可寫，例如 employs about half of…、half of the people … work at 等\",\"時態可用現在式或過去式（例如 employs、employed 等）\"]（原 makeSentence：instructionZh「用 brewery 造一個句子，說說你參觀過或聽說過的一家釀酒廠。」、referenceEn [\"I once visited an old brewery in Germany with my friends.\",\"There is a small brewery in my town that makes beer from local rice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

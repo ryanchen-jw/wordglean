@@ -232,17 +232,18 @@
     },
     {
       "id": "b2-u27-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "faith",
-      "instructionZh": "用 faith 造一個句子，說說你對某個人或某件事很有信心。",
+      "type": "translate",
+      "promptZh": "信仰對他很重要，他每個星期天都去教堂。",
+      "hintWords": [
+        "faith"
+      ],
       "referenceEn": [
-        "I have great faith in my best friend's advice.",
-        "I have faith that our team will win the next game."
+        "His faith is very important to him, and he goes to church every Sunday.",
+        "Faith is very important to him, so he goes to church every Sunday."
       ],
       "rubricZh": [
-        "句子要用到 faith",
-        "faith 後面可接 in 或 that 子句（例如 have faith in someone、have faith that … 等）",
-        "時態配合內容（例如 have、had 等）"
+        "faith 這裡指信仰（例如 his faith、faith 等）",
+        "「每個星期天」可寫，例如 every Sunday、on Sundays 等；用現在式表示習慣（例如 goes 等）"
       ]
     }
   ],
@@ -364,6 +365,18 @@
         "message": "第②關 issue 結案：疑似：「工作上的性別歧視」英文最通行是 sex discrimination／gender discrimination，sexual discrimination 雖可用但較少見、易與 sexual harassment 混淆；hint 限定 sexual 尚可接受，但 rubric 宜補一句也接受 sex／gender discrimination，避免學生寫更自然的說法被扣分。整體題材（鳥類性別差異、職場歧視違法）尺度中性，自評疑慮判定可接受。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（faith）原位換成翻譯題，沿用題 id b2-u27-l01-q17；目標字沿用 faith",
+        "resolution": "改為 translate：promptZh「她的信仰幫助她度過了很辛苦的一年。」、hintWords [\"faith\"]、referenceEn [\"Her faith helped her get through a very hard year.\",\"Her faith helped her through a very difficult year.\"]、rubricZh [\"faith 這裡指信仰（例如 her faith 等）\",\"時態可用過去式或現在完成式（例如 helped、has helped 等）\",\"「度過」可寫，例如 get through、helped her through 等\"]（原 makeSentence：instructionZh「用 faith 造一個句子，說說你對某個人或某件事很有信心。」、referenceEn [\"I have great faith in my best friend's advice.\",\"I have faith that our team will win the next game.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 2 與 u08-l10 跟讀「Her optimism helped the team through a difficult year.」骨架幾乎一樣",
+        "resolution": "改為 promptZh「信仰對他很重要，他每個星期天都去教堂。」、referenceEn [\"His faith is very important to him, and he goes to church every Sunday.\",\"Faith is very important to him, so he goes to church every Sunday.\"]、rubricZh [\"faith 這裡指信仰（例如 his faith、faith 等）\",\"「每個星期天」可寫，例如 every Sunday、on Sundays 等；用現在式表示習慣（例如 goes 等）\"]（原 promptZh「她的信仰幫助她度過了很辛苦的一年。」、referenceEn [\"Her faith helped her get through a very hard year.\",\"Her faith helped her through a very difficult year.\"]、rubricZh [\"faith 這裡指信仰（例如 her faith 等）\",\"時態可用過去式或現在完成式（例如 helped、has helped 等）\",\"「度過」可寫，例如 get through、helped her through 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

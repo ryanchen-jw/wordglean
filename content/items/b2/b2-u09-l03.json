@@ -244,16 +244,19 @@
     },
     {
       "id": "b2-u09-l03-q18",
-      "type": "makeSentence",
-      "targetWord": "fate",
-      "instructionZh": "用 fate 造一個句子，說說一件你覺得像是命運安排的事。",
+      "type": "translate",
+      "promptZh": "命運讓這兩個老朋友在同一座城市重逢。",
+      "hintWords": [
+        "fate"
+      ],
       "referenceEn": [
-        "It was fate that I met my best friend on a train.",
-        "I believe fate brought me to this city."
+        "Fate brought the two old friends together again in the same city.",
+        "Fate brought the two old friends back together in the same city."
       ],
       "rubricZh": [
-        "句子要用到 fate，表示「命運」（例如 It was fate that…、fate brought me…）",
-        "句子要說到你自己的經驗"
+        "fate 指「命運」，可當主詞（例如 Fate brought… 等）",
+        "「重逢」可寫，例如 brought … together again、brought … back together、let them meet again 等",
+        "時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -537,6 +540,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：fate、barrier；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"障礙\"；改後：\"有益的\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（fate）原位換成翻譯題，沿用題 id b2-u09-l03-q18；目標字沿用 fate",
+        "resolution": "改為 translate：promptZh「命運讓這兩個老朋友在同一座城市重逢。」、hintWords [\"fate\"]、referenceEn [\"Fate brought the two old friends together again in the same city.\",\"Fate brought the two old friends back together in the same city.\"]、rubricZh [\"fate 指「命運」，可當主詞（例如 Fate brought… 等）\",\"「重逢」可寫，例如 brought … together again、brought … back together、let them meet again 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 fate 造一個句子，說說一件你覺得像是命運安排的事。」、referenceEn [\"It was fate that I met my best friend on a train.\",\"I believe fate brought me to this city.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

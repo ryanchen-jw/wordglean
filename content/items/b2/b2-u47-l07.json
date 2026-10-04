@@ -229,16 +229,18 @@
     },
     {
       "id": "b2-u47-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "shield",
-      "instructionZh": "用 shield 當名詞造一個句子，說說某樣東西怎麼保護你。",
+      "type": "translate",
+      "promptZh": "博物館裡展示著一面古老的木製盾牌。",
+      "hintWords": [
+        "shield"
+      ],
       "referenceEn": [
-        "A thick coat is a good shield against the cold wind.",
-        "My umbrella was my only shield against the heavy rain."
+        "An old wooden shield is on display in the museum.",
+        "The museum displays an old wooden shield."
       ],
       "rubricZh": [
-        "句子要用到 shield 當名詞（例如 a shield against…）",
-        "說明它擋住什麼（例如 the cold wind、the heavy rain 等）"
+        "shield 當名詞，表示「盾牌」（例如 an old wooden shield 等）",
+        "「展示著」可寫，例如 is on display、displays 等"
       ]
     }
   ],
@@ -300,6 +302,18 @@
         "message": "執行長第②③關裁示修正：最終複審提醒：第一義已調成「防護物」，中譯同步",
         "resolution": "改前：\"太陽眼鏡就像擋住強光的盾牌。\"；改後：\"太陽眼鏡就像一層擋住強光的防護。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（shield）原位換成翻譯題，沿用題 id b2-u47-l07-q17；目標字沿用 shield",
+        "resolution": "改為 translate：promptZh「畫中那位士兵拿著一面圓形的盾牌。」、hintWords [\"shield\"]、referenceEn [\"In the painting, the soldier holds a round shield.\",\"The soldier in the painting is holding a round shield.\"]、rubricZh [\"shield 當名詞，表示「盾牌」（例如 a round shield 等）\",\"「拿著」可寫，例如 holds、is holding、carries 等\"]（原 makeSentence：instructionZh「用 shield 當名詞造一個句子，說說某樣東西怎麼保護你。」、referenceEn [\"A thick coat is a good shield against the cold wind.\",\"My umbrella was my only shield against the heavy rain.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u46-l08 單字卡 lance（畫中士兵拿著武器）主詞、情境、句型三項相同",
+        "resolution": "改為 promptZh「博物館裡展示著一面古老的木製盾牌。」、referenceEn [\"An old wooden shield is on display in the museum.\",\"The museum displays an old wooden shield.\"]、rubricZh [\"shield 當名詞，表示「盾牌」（例如 an old wooden shield 等）\",\"「展示著」可寫，例如 is on display、displays 等\"]（原 promptZh「畫中那位士兵拿著一面圓形的盾牌。」、referenceEn [\"In the painting, the soldier holds a round shield.\",\"The soldier in the painting is holding a round shield.\"]、rubricZh [\"shield 當名詞，表示「盾牌」（例如 a round shield 等）\",\"「拿著」可寫，例如 holds、is holding、carries 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

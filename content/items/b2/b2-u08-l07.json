@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u08-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "anticipate",
-      "instructionZh": "用 anticipate 造一個句子，說說你預期近期會發生的事。",
+      "type": "translate",
+      "promptZh": "這家店預期年底會非常忙碌。",
+      "hintWords": [
+        "anticipate"
+      ],
       "referenceEn": [
-        "I anticipate a lot of travel for work next year.",
-        "I don't anticipate any problems with my move next month."
+        "The shop anticipates a very busy time at the end of the year.",
+        "The store anticipates being very busy at the end of the year."
       ],
       "rubricZh": [
-        "句子要用到 anticipate，後面接名詞或 that 子句（例如 anticipate a busy year、anticipate that…）",
-        "句子要說到你自己的預期"
+        "anticipate 表示「預期」，後面可接名詞、動名詞或 that 子句",
+        "「年底」可寫，例如 at the end of the year、in December 等",
+        "寫成 The shop anticipates that it will be very busy… 也正確"
       ]
     }
   ],
@@ -413,6 +416,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：consensus 為 q13 正解；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"意識形態\"；改後：\"提議\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（anticipate）原位換成翻譯題，沿用題 id b2-u08-l07-q17；目標字沿用 anticipate",
+        "resolution": "改為 translate：promptZh「這家店預期年底會非常忙碌。」、hintWords [\"anticipate\"]、referenceEn [\"The shop anticipates a very busy time at the end of the year.\",\"The store anticipates being very busy at the end of the year.\"]、rubricZh [\"anticipate 表示「預期」，後面可接名詞、動名詞或 that 子句\",\"「年底」可寫，例如 at the end of the year、in December 等\",\"寫成 The shop anticipates that it will be very busy… 也正確\"]（原 makeSentence：instructionZh「用 anticipate 造一個句子，說說你預期近期會發生的事。」、referenceEn [\"I anticipate a lot of travel for work next year.\",\"I don't anticipate any problems with my move next month.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

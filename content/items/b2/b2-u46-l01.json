@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u46-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "offender",
-      "instructionZh": "用 offender 造一個句子，說說在交通或公共場所違反規定的人。",
+      "type": "translate",
+      "promptZh": "在這間圖書館，第一次違規的人只會收到警告。",
+      "hintWords": [
+        "offender"
+      ],
       "referenceEn": [
-        "The offender had to pay a fine for parking in a bus lane.",
-        "Offenders who smoke in the park may have to pay a fine."
+        "In this library, first-time offenders only get a warning.",
+        "First-time offenders in this library just receive a warning."
       ],
       "rubricZh": [
-        "句子要用到 offender（例如 the offender、offenders）",
-        "時態配合內容（例如 had to、may have to 等）"
+        "offender 表示「違規的人」（例如 first-time offenders 等），單複數配合句子即可",
+        "「只會收到警告」可寫，例如 only get a warning、just receive a warning 等",
+        "only、just 的位置不扣分"
       ]
     }
   ],
@@ -272,6 +275,12 @@
         "message": "執行長第②③關裁示修正：裁示「聽選正解不可照抄音檔」：正解改寫成同義說法，干擾項沿用音檔裡的字",
         "resolution": "改前：[\"Meet local business leaders\", \"Arrive at the airport\", \"Visit a local school\", \"Fly back home\"]；改後：[\"See some local company bosses\", \"Arrive in town\", \"Meet local school leaders\", \"Fly back home\"]",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（offender）原位換成翻譯題，沿用題 id b2-u46-l01-q17；目標字沿用 offender",
+        "resolution": "改為 translate：promptZh「在這間圖書館，第一次違規的人只會收到警告。」、hintWords [\"offender\"]、referenceEn [\"In this library, first-time offenders only get a warning.\",\"First-time offenders in this library just receive a warning.\"]、rubricZh [\"offender 表示「違規的人」（例如 first-time offenders 等），單複數配合句子即可\",\"「只會收到警告」可寫，例如 only get a warning、just receive a warning 等\",\"only、just 的位置不扣分\"]（原 makeSentence：instructionZh「用 offender 造一個句子，說說在交通或公共場所違反規定的人。」、referenceEn [\"The offender had to pay a fine for parking in a bus lane.\",\"Offenders who smoke in the park may have to pay a fine.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

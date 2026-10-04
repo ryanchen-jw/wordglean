@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u08-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "potentially",
-      "instructionZh": "用 potentially 造一個句子，說說某件事可能帶來的好處或壞處。",
+      "type": "translate",
+      "promptZh": "這條山路在下雨天可能很危險。",
+      "hintWords": [
+        "potentially"
+      ],
       "referenceEn": [
-        "Learning another language could potentially help me find a better job.",
-        "Driving when you are very tired is potentially dangerous."
+        "This mountain road is potentially dangerous in rainy weather.",
+        "In rainy weather, this mountain road is potentially very dangerous."
       ],
       "rubricZh": [
-        "句子要用到 potentially，修飾動詞或形容詞（例如 could potentially help、potentially dangerous）",
-        "句意要表示「可能」，不是確定會發生的事"
+        "potentially 放在形容詞前，表示「可能地、潛在地」（例如 potentially dangerous 等）",
+        "「下雨天」可寫，例如 in rainy weather、when it rains、on rainy days 等"
       ]
     }
   ],
@@ -365,6 +367,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"可能地\"；改後：\"觀點\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（potentially）原位換成翻譯題，沿用題 id b2-u08-l06-q17；目標字沿用 potentially",
+        "resolution": "改為 translate：promptZh「這條山路在下雨天可能很危險。」、hintWords [\"potentially\"]、referenceEn [\"This mountain road is potentially dangerous in rainy weather.\",\"In rainy weather, this mountain road is potentially very dangerous.\"]、rubricZh [\"potentially 放在形容詞前，表示「可能地、潛在地」（例如 potentially dangerous 等）\",\"「下雨天」可寫，例如 in rainy weather、when it rains、on rainy days 等\"]（原 makeSentence：instructionZh「用 potentially 造一個句子，說說某件事可能帶來的好處或壞處。」、referenceEn [\"Learning another language could potentially help me find a better job.\",\"Driving when you are very tired is potentially dangerous.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

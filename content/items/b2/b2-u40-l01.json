@@ -260,17 +260,19 @@
     },
     {
       "id": "b2-u40-l01-q19",
-      "type": "makeSentence",
-      "targetWord": "project",
-      "instructionZh": "用 project 造一個句子，說說你正在進行或做過的一個專案或計畫。",
+      "type": "translate",
+      "promptZh": "我們班正在進行一個清理海灘的計畫。",
+      "hintWords": [
+        "project"
+      ],
       "referenceEn": [
-        "I am working on a project to clean up the river in my town.",
-        "Last month, I started a project to design a new website for my team."
+        "Our class is working on a project to clean up the beach.",
+        "Our class is doing a project to clean the beach."
       ],
       "rubricZh": [
-        "句子要用到 project",
-        "project 可當名詞或動詞（例如 a project、be projected to 等）",
-        "時態配合內容（例如 am working on、started 等）"
+        "「計畫」可寫，例如 project 等",
+        "「正在進行」可寫，例如 is working on、is doing 等",
+        "「清理海灘」可寫，例如 to clean up the beach、to clean the beach 等"
       ]
     }
   ],
@@ -362,6 +364,12 @@
         "message": "第②關 issue 結案：不自然：The company's projection is to sell five thousand robots；projection 是預測數字，不接 is to do，建議 The company's projection is five thousand robots in the first year 或 The company projects that it will sell…。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/18",
+        "message": "創辦人裁示：造句改翻譯：造句題（project）原位換成翻譯題，沿用題 id b2-u40-l01-q19；目標字沿用 project",
+        "resolution": "改為 translate：promptZh「我們班正在進行一個清理海灘的計畫。」、hintWords [\"project\"]、referenceEn [\"Our class is working on a project to clean up the beach.\",\"Our class is doing a project to clean the beach.\"]、rubricZh [\"「計畫」可寫，例如 project 等\",\"「正在進行」可寫，例如 is working on、is doing 等\",\"「清理海灘」可寫，例如 to clean up the beach、to clean the beach 等\"]（原 makeSentence：instructionZh「用 project 造一個句子，說說你正在進行或做過的一個專案或計畫。」、referenceEn [\"I am working on a project to clean up the river in my town.\",\"Last month, I started a project to design a new website for my team.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

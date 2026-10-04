@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u11-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "peer",
-      "instructionZh": "用 peer 造一個句子，說說你和同齡人或同事之間的比較或互動。",
+      "type": "translate",
+      "promptZh": "在新公司，他很快就贏得了同事們的尊重。",
+      "hintWords": [
+        "peer"
+      ],
       "referenceEn": [
-        "Compared with my peers, I started working quite late.",
-        "I often ask my peers at work for advice."
+        "At his new company, he quickly won the respect of his peers.",
+        "He quickly earned his peers' respect at his new company."
       ],
       "rubricZh": [
-        "句子要用到 peer，表示「同儕、同齡或同等地位的人」（例如 my peers）",
-        "句子要說到你自己"
+        "peer 指「同儕、同事」（例如 his peers、the respect of his peers 等）",
+        "「贏得尊重」可寫，例如 won the respect of、earned … respect 等",
+        "時態可用過去式或現在完成式（例如 won、has won 等）"
       ]
     }
   ],
@@ -397,6 +400,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"飯店的房務人員會在客人入住前檢查每個房間。\"；改後：\"那家人的管家替他們煮飯已經二十年了。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（peer）原位換成翻譯題，沿用題 id b2-u11-l01-q17；目標字沿用 peer",
+        "resolution": "改為 translate：promptZh「在新公司，他很快就贏得了同事們的尊重。」、hintWords [\"peer\"]、referenceEn [\"At his new company, he quickly won the respect of his peers.\",\"He quickly earned his peers' respect at his new company.\"]、rubricZh [\"peer 指「同儕、同事」（例如 his peers、the respect of his peers 等）\",\"「贏得尊重」可寫，例如 won the respect of、earned … respect 等\",\"時態可用過去式或現在完成式（例如 won、has won 等）\"]（原 makeSentence：instructionZh「用 peer 造一個句子，說說你和同齡人或同事之間的比較或互動。」、referenceEn [\"Compared with my peers, I started working quite late.\",\"I often ask my peers at work for advice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

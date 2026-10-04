@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u12-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "humble",
-      "instructionZh": "用 humble 造一個句子，描述某個人很謙遜，或某件事起步卑微。",
+      "type": "translate",
+      "promptZh": "雖然他很有名，他仍然很謙虛。",
+      "hintWords": [
+        "humble"
+      ],
       "referenceEn": [
-        "My grandfather came from a humble family but built a big business.",
-        "I try to stay humble and learn from my younger colleagues."
+        "Although he is famous, he is still very humble.",
+        "He is famous, but he remains humble."
       ],
       "rubricZh": [
-        "句子要用到 humble，表示「謙遜的」或「卑微的、簡樸的」",
-        "描述要合理"
+        "humble 是形容詞，表示「謙遜的」（例如 is very humble、remains humble 等）",
+        "「雖然」可寫，例如 although、but 等（不要同時用 although 和 but）",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     }
   ],
@@ -527,6 +530,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"驕傲地\"；改後：\"放鬆\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（humble）原位換成翻譯題，沿用題 id b2-u12-l08-q17；目標字沿用 humble",
+        "resolution": "改為 translate：promptZh「雖然他很有名，他仍然很謙虛。」、hintWords [\"humble\"]、referenceEn [\"Although he is famous, he is still very humble.\",\"He is famous, but he remains humble.\"]、rubricZh [\"humble 是形容詞，表示「謙遜的」（例如 is very humble、remains humble 等）\",\"「雖然」可寫，例如 although、but 等（不要同時用 although 和 but）\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 humble 造一個句子，描述某個人很謙遜，或某件事起步卑微。」、referenceEn [\"My grandfather came from a humble family but built a big business.\",\"I try to stay humble and learn from my younger colleagues.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

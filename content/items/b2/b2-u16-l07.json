@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u16-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "microorganism",
-      "instructionZh": "用 microorganism 造一個句子，說說你知道的一種有用或有趣的微生物（事實描述即可）。",
+      "type": "translate",
+      "promptZh": "這座湖裡住著許多肉眼看不見的微生物。",
+      "hintWords": [
+        "microorganism"
+      ],
       "referenceEn": [
-        "I learned that microorganisms help turn milk into cheese.",
-        "I was surprised that microorganisms live almost everywhere, even in hot springs."
+        "Many microorganisms that you cannot see with your eyes live in this lake.",
+        "This lake is home to many microorganisms that are too small to see."
       ],
       "rubricZh": [
-        "句子要用到 microorganism 或 microorganisms",
-        "內容是合理的事實描述"
+        "microorganism 指「微生物」，這裡用複數 microorganisms",
+        "「肉眼看不見的」可寫，例如 that you cannot see with your eyes、too small to see 等",
+        "「住著」可寫，例如 live in、is home to 等"
       ]
     }
   ],
@@ -457,6 +460,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，offices empty because of polio 要靠醫學知識才排除",
         "resolution": "改前：\"小兒麻痺\"；改後：\"按摩\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（microorganism）原位換成翻譯題，沿用題 id b2-u16-l07-q17；目標字沿用 microorganism",
+        "resolution": "改為 translate：promptZh「這座湖裡住著許多肉眼看不見的微生物。」、hintWords [\"microorganism\"]、referenceEn [\"Many microorganisms that you cannot see with your eyes live in this lake.\",\"This lake is home to many microorganisms that are too small to see.\"]、rubricZh [\"microorganism 指「微生物」，這裡用複數 microorganisms\",\"「肉眼看不見的」可寫，例如 that you cannot see with your eyes、too small to see 等\",\"「住著」可寫，例如 live in、is home to 等\"]（原 makeSentence：instructionZh「用 microorganism 造一個句子，說說你知道的一種有用或有趣的微生物（事實描述即可）。」、referenceEn [\"I learned that microorganisms help turn milk into cheese.\",\"I was surprised that microorganisms live almost everywhere, even in hot springs.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

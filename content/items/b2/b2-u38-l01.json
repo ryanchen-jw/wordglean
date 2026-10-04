@@ -219,17 +219,18 @@
     },
     {
       "id": "b2-u38-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "manufacturer",
-      "instructionZh": "用 manufacturer 造一個句子，說說你知道的一家製造商和它做的產品。",
+      "type": "translate",
+      "promptZh": "這家製造商的玩具全部是用木頭做的。",
+      "hintWords": [
+        "manufacturer"
+      ],
       "referenceEn": [
-        "My laptop was made by a manufacturer in Taiwan.",
-        "There is a toy manufacturer near my home that makes wooden toys."
+        "All the toys from this manufacturer are made of wood.",
+        "This manufacturer makes all of its toys from wood."
       ],
       "rubricZh": [
-        "句子要用到 manufacturer",
-        "manufacturer 的用法，例如 a car manufacturer、a toy manufacturer 等",
-        "時態配合內容（例如 was made、makes 等）"
+        "「製造商」可寫，例如 manufacturer 等",
+        "「用木頭做的」可寫，例如 are made of wood、makes … from wood、wooden 等"
       ]
     }
   ],
@@ -381,6 +382,12 @@
         "message": "第②關 issue 結案：疑似情境牽強：紙廠 has its own small utility company（自有公用事業公司）不常見，中譯也怪；可改 has its own small power plant／water supply，或另找情境用 utility。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（manufacturer）原位換成翻譯題，沿用題 id b2-u38-l01-q16；目標字沿用 manufacturer",
+        "resolution": "改為 translate：promptZh「這家製造商的玩具全部是用木頭做的。」、hintWords [\"manufacturer\"]、referenceEn [\"All the toys from this manufacturer are made of wood.\",\"This manufacturer makes all of its toys from wood.\"]、rubricZh [\"「製造商」可寫，例如 manufacturer 等\",\"「用木頭做的」可寫，例如 are made of wood、makes … from wood、wooden 等\"]（原 makeSentence：instructionZh「用 manufacturer 造一個句子，說說你知道的一家製造商和它做的產品。」、referenceEn [\"My laptop was made by a manufacturer in Taiwan.\",\"There is a toy manufacturer near my home that makes wooden toys.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

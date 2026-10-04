@@ -241,16 +241,18 @@
     },
     {
       "id": "b2-u16-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "flesh",
-      "instructionZh": "用 flesh 造一個句子，描述水果、魚或肉的肉質。",
+      "type": "translate",
+      "promptZh": "這種瓜的果肉是橘色的，而且水分很多。",
+      "hintWords": [
+        "flesh"
+      ],
       "referenceEn": [
-        "I like fish with firm white flesh.",
-        "The flesh of a ripe mango is soft and sweet."
+        "The flesh of this melon is orange and full of water.",
+        "This kind of melon has orange flesh that is very juicy."
       ],
       "rubricZh": [
-        "句子要用到 flesh（例如 the flesh of a mango）",
-        "描述要合理"
+        "flesh 指「果肉」，不可數（例如 the flesh of this melon、has orange flesh 等）",
+        "「水分很多」可寫，例如 full of water、very juicy 等"
       ]
     }
   ],
@@ -468,6 +470,12 @@
         "message": "執行長最終複審修正：optionGlossZh 譯法偏窄：stroke 與單字卡第一義一致（執行長裁示）",
         "resolution": "改前：\"一筆\"；改後：\"中風\"",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（flesh）原位換成翻譯題，沿用題 id b2-u16-l01-q18；目標字沿用 flesh",
+        "resolution": "改為 translate：promptZh「這種瓜的果肉是橘色的，而且水分很多。」、hintWords [\"flesh\"]、referenceEn [\"The flesh of this melon is orange and full of water.\",\"This kind of melon has orange flesh that is very juicy.\"]、rubricZh [\"flesh 指「果肉」，不可數（例如 the flesh of this melon、has orange flesh 等）\",\"「水分很多」可寫，例如 full of water、very juicy 等\"]（原 makeSentence：instructionZh「用 flesh 造一個句子，描述水果、魚或肉的肉質。」、referenceEn [\"I like fish with firm white flesh.\",\"The flesh of a ripe mango is soft and sweet.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

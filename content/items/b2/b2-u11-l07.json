@@ -220,16 +220,19 @@
     },
     {
       "id": "b2-u11-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "grown-up",
-      "instructionZh": "用 grown-up 造一個句子，說說長大成人後你的想法或生活有什麼不同。",
+      "type": "translate",
+      "promptZh": "這部電影小孩和大人都很喜歡。",
+      "hintWords": [
+        "grown-up"
+      ],
       "referenceEn": [
-        "Now that I am a grown-up, I understand why my parents worked so hard.",
-        "As a grown-up, I enjoy vegetables that I hated as a child."
+        "Both children and grown-ups enjoy this movie.",
+        "This movie is loved by kids and grown-ups alike."
       ],
       "rubricZh": [
-        "句子要用到 grown-up，可當名詞（a grown-up）或形容詞（grown-up children）",
-        "句子要說到你自己"
+        "grown-up 當名詞，表示「大人」，這裡用複數（例如 grown-ups 等）",
+        "「都很喜歡」可寫，例如 Both … and … enjoy、is loved by … alike 等",
+        "「小孩」可寫，例如 children、kids 等；時態可用現在式或過去式"
       ]
     }
   ],
@@ -435,6 +438,12 @@
         "message": "執行長最終複審修正：optionGlossZh：正解依本題語境（哥哥的妻子）只寫嫂嫂",
         "resolution": "改前：[\"嫂嫂；弟媳\",\"婆婆；岳母\",\"岳父；公公\",\"姊夫；妹夫\"]；改後：[\"嫂嫂\",\"婆婆；岳母\",\"岳父；公公\",\"姊夫；妹夫\"]",
         "resolvedAt": "2026-10-02T20:48:51Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（grown-up）原位換成翻譯題，沿用題 id b2-u11-l07-q16；目標字沿用 grown-up",
+        "resolution": "改為 translate：promptZh「這部電影小孩和大人都很喜歡。」、hintWords [\"grown-up\"]、referenceEn [\"Both children and grown-ups enjoy this movie.\",\"This movie is loved by kids and grown-ups alike.\"]、rubricZh [\"grown-up 當名詞，表示「大人」，這裡用複數（例如 grown-ups 等）\",\"「都很喜歡」可寫，例如 Both … and … enjoy、is loved by … alike 等\",\"「小孩」可寫，例如 children、kids 等；時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 grown-up 造一個句子，說說長大成人後你的想法或生活有什麼不同。」、referenceEn [\"Now that I am a grown-up, I understand why my parents worked so hard.\",\"As a grown-up, I enjoy vegetables that I hated as a child.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

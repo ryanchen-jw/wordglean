@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u48-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "pointless",
-      "instructionZh": "用 pointless 造一個句子，說說一件你覺得沒有意義的事。",
+      "type": "translate",
+      "promptZh": "我覺得這條規定根本毫無意義。",
+      "hintWords": [
+        "pointless"
+      ],
       "referenceEn": [
-        "I think it is pointless to buy clothes I never wear.",
-        "Arguing about small things with my brother is pointless."
+        "I think this rule is completely pointless.",
+        "In my opinion, this rule is totally pointless."
       ],
       "rubricZh": [
-        "句子要用到 pointless（例如 it is pointless to…、is pointless）",
-        "說明是什麼事（例如 buying clothes、arguing about small things 等）"
+        "pointless 表示「沒有意義的」（例如 is completely pointless 等）",
+        "「我覺得」可寫，例如 I think、In my opinion、I feel 等",
+        "「根本」可寫，例如 completely、totally、really 等"
       ]
     }
   ],
@@ -314,6 +317,12 @@
         "message": "第②關 issue 結案：疑似：sweet bean soup／「甜豆湯」不是台灣夜市的道地說法（應為紅豆湯、綠豆湯等）；建議改 red bean soup／紅豆湯。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pointless）原位換成翻譯題，沿用題 id b2-u48-l07-q17；目標字沿用 pointless",
+        "resolution": "改為 translate：promptZh「我覺得這條規定根本毫無意義。」、hintWords [\"pointless\"]、referenceEn [\"I think this rule is completely pointless.\",\"In my opinion, this rule is totally pointless.\"]、rubricZh [\"pointless 表示「沒有意義的」（例如 is completely pointless 等）\",\"「我覺得」可寫，例如 I think、In my opinion、I feel 等\",\"「根本」可寫，例如 completely、totally、really 等\"]（原 makeSentence：instructionZh「用 pointless 造一個句子，說說一件你覺得沒有意義的事。」、referenceEn [\"I think it is pointless to buy clothes I never wear.\",\"Arguing about small things with my brother is pointless.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -233,16 +233,19 @@
     },
     {
       "id": "b2-u02-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "invariably",
-      "instructionZh": "用 invariably 造一個句子，說說某件每次都會發生的事。",
+      "type": "translate",
+      "promptZh": "這家麵包店的麵包總是在中午前就賣光了。",
+      "hintWords": [
+        "invariably"
+      ],
       "referenceEn": [
-        "When I travel by train, I invariably fall asleep.",
-        "My cat invariably sits on my keyboard when I am working."
+        "The bread at this bakery is invariably sold out before noon.",
+        "This bakery invariably sells out of bread before noon."
       ],
       "rubricZh": [
-        "句子要用到 invariably，表示「總是、每次都」，通常放在一般動詞前（例如 invariably fall asleep）",
-        "句子要描述一個重複發生的情況，常搭配 when、whenever 等"
+        "invariably 表示「總是、一向」，可放 be 動詞後或一般動詞前（例如 is invariably sold out 等）",
+        "「賣光」可寫，例如 is sold out、sells out of、is all gone 等",
+        "「中午前」可寫，例如 before noon、by noon、before lunchtime 等"
       ]
     }
   ],
@@ -346,6 +349,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"立即\"；改後：\"中午\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（invariably）原位換成翻譯題，沿用題 id b2-u02-l03-q17；目標字沿用 invariably",
+        "resolution": "改為 translate：promptZh「這家麵包店的麵包總是在中午前就賣光了。」、hintWords [\"invariably\"]、referenceEn [\"The bread at this bakery is invariably sold out before noon.\",\"This bakery invariably sells out of bread before noon.\"]、rubricZh [\"invariably 表示「總是、一向」，可放 be 動詞後或一般動詞前（例如 is invariably sold out 等）\",\"「賣光」可寫，例如 is sold out、sells out of、is all gone 等\",\"「中午前」可寫，例如 before noon、by noon、before lunchtime 等\"]（原 makeSentence：instructionZh「用 invariably 造一個句子，說說某件每次都會發生的事。」、referenceEn [\"When I travel by train, I invariably fall asleep.\",\"My cat invariably sits on my keyboard when I am working.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

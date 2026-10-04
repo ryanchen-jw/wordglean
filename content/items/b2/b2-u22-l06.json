@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u22-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "penguin",
-      "instructionZh": "用 penguin 造一個句子，說說你看過的企鵝或你對企鵝的印象。",
+      "type": "translate",
+      "promptZh": "企鵝爸爸會幫忙照顧蛋。",
+      "hintWords": [
+        "penguin"
+      ],
       "referenceEn": [
-        "I saw penguins at the zoo, and they walked in a very funny way.",
-        "I think penguins look like small people wearing black suits."
+        "Penguin fathers help take care of the eggs.",
+        "Male penguins help look after their eggs."
       ],
       "rubricZh": [
-        "句子要用到 penguin 或 penguins",
-        "時態合理即可"
+        "penguin 指企鵝，泛指用複數（例如 penguin fathers、male penguins 等）",
+        "一般事實用現在式；「照顧」可寫，例如 take care of、look after 等"
       ]
     }
   ],
@@ -275,6 +277,12 @@
         "message": "第②關 issue 結案：句構易誤讀：\"where she sometimes sees farmers riding donkeys and leads school excursions\"——and leads 可被讀成 farmers…leads，主詞不清；建議拆句（She also leads school excursions there.）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的 1 筆修正紀錄。",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（penguin）原位換成翻譯題，沿用題 id b2-u22-l06-q17；目標字沿用 penguin",
+        "resolution": "改為 translate：promptZh「企鵝爸爸會幫忙照顧蛋。」、hintWords [\"penguin\"]、referenceEn [\"Penguin fathers help take care of the eggs.\",\"Male penguins help look after their eggs.\"]、rubricZh [\"penguin 指企鵝，泛指用複數（例如 penguin fathers、male penguins 等）\",\"一般事實用現在式；「照顧」可寫，例如 take care of、look after 等\"]（原 makeSentence：instructionZh「用 penguin 造一個句子，說說你看過的企鵝或你對企鵝的印象。」、referenceEn [\"I saw penguins at the zoo, and they walked in a very funny way.\",\"I think penguins look like small people wearing black suits.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

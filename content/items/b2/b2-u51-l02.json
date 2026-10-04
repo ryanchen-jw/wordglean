@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u51-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "posh",
-      "instructionZh": "用 posh 造一個句子，描述一個你去過或看過的高級地方。",
+      "type": "translate",
+      "promptZh": "那家飯店看起來很高級，但房價其實不貴。",
+      "hintWords": [
+        "posh"
+      ],
       "referenceEn": [
-        "I once stayed in a posh hotel with a pool on the roof.",
-        "My cousin's wedding was held in a posh restaurant by the river."
+        "That hotel looks posh, but its rooms are actually not expensive.",
+        "The hotel looks very posh, but the rooms are actually quite cheap."
       ],
       "rubricZh": [
-        "句子要用到 posh（例如 a posh hotel、The restaurant was posh 等）",
-        "時態配合內容（例如 stayed、was held 等）"
+        "posh 當形容詞「高級的」（例如 looks posh 等）",
+        "「房價不貴」可寫，例如 the rooms are not expensive、the rooms are quite cheap 等",
+        "「其實」可寫，例如 actually、in fact 等，位置不扣分"
       ]
     }
   ],
@@ -277,6 +280,12 @@
         "message": "執行長第②③關裁示修正：第③關 FIX 3：評分要點不寫死結構",
         "resolution": "改前：\"句子要用到 posh 修飾名詞（例如 a posh hotel、a posh restaurant）\"；改後：\"句子要用到 posh（例如 a posh hotel、The restaurant was posh 等）\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（posh）原位換成翻譯題，沿用題 id b2-u51-l02-q17；目標字沿用 posh",
+        "resolution": "改為 translate：promptZh「那家飯店看起來很高級，但房價其實不貴。」、hintWords [\"posh\"]、referenceEn [\"That hotel looks posh, but its rooms are actually not expensive.\",\"The hotel looks very posh, but the rooms are actually quite cheap.\"]、rubricZh [\"posh 當形容詞「高級的」（例如 looks posh 等）\",\"「房價不貴」可寫，例如 the rooms are not expensive、the rooms are quite cheap 等\",\"「其實」可寫，例如 actually、in fact 等，位置不扣分\"]（原 makeSentence：instructionZh「用 posh 造一個句子，描述一個你去過或看過的高級地方。」、referenceEn [\"I once stayed in a posh hotel with a pool on the roof.\",\"My cousin's wedding was held in a posh restaurant by the river.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

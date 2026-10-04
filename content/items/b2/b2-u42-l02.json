@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u42-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "bizarre",
-      "instructionZh": "用 bizarre 造一個句子，說說你看過、聽過或夢過的一件怪事。",
+      "type": "translate",
+      "promptZh": "我昨晚做了一個很奇怪的夢。",
+      "hintWords": [
+        "bizarre"
+      ],
       "referenceEn": [
-        "I once saw a man walking a pet pig in the park, which was bizarre.",
-        "I had a bizarre dream about flying fish last night."
+        "I had a bizarre dream last night.",
+        "Last night, I had a really bizarre dream."
       ],
       "rubricZh": [
-        "句子要用到 bizarre",
-        "時態配合內容（例如 saw、had 等）"
+        "bizarre 可放名詞前或 be 動詞後（例如 a bizarre dream、was bizarre 等）",
+        "「做夢」可寫，例如 had a dream 等；用過去式；last night 可放句首或句尾"
       ]
     }
   ],
@@ -275,6 +277,18 @@
         "message": "執行長第②③關裁示修正：第③關 A FIX #16：正解中譯和題意不符；第③關 A FIX #16",
         "resolution": "改前：\"敏銳的\"；改後：\"嚴重的；迫切的\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bizarre）原位換成翻譯題，沿用題 id b2-u42-l02-q17；目標字沿用 bizarre",
+        "resolution": "改為 translate：promptZh「我昨晚做了一個很奇怪的夢。」、hintWords [\"bizarre\"]、referenceEn [\"I had a bizarre dream last night.\",\"Last night, I had a really bizarre dream.\"]、rubricZh [\"bizarre 放在名詞前（例如 a bizarre dream 等）\",\"「做夢」可寫，例如 had a dream 等；用過去式；last night 可放句首或句尾\"]（原 makeSentence：instructionZh「用 bizarre 造一個句子，說說你看過、聽過或夢過的一件怪事。」、referenceEn [\"I once saw a man walking a pet pig in the park, which was bizarre.\",\"I had a bizarre dream about flying fish last night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 bizarre 放名詞前",
+        "resolution": "改為 promptZh「我昨晚做了一個很奇怪的夢。」、referenceEn [\"I had a bizarre dream last night.\",\"Last night, I had a really bizarre dream.\"]、rubricZh [\"bizarre 可放名詞前或 be 動詞後（例如 a bizarre dream、was bizarre 等）\",\"「做夢」可寫，例如 had a dream 等；用過去式；last night 可放句首或句尾\"]（原 promptZh「我昨晚做了一個很奇怪的夢。」、referenceEn [\"I had a bizarre dream last night.\",\"Last night, I had a really bizarre dream.\"]、rubricZh [\"bizarre 放在名詞前（例如 a bizarre dream 等）\",\"「做夢」可寫，例如 had a dream 等；用過去式；last night 可放句首或句尾\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

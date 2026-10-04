@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u06-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "vital",
-      "instructionZh": "用 vital 造一個句子，說說你覺得工作或生活中極為重要的一件事。",
+      "type": "translate",
+      "promptZh": "這座橋對村民非常重要，因為那是他們唯一通往外面的路。",
+      "hintWords": [
+        "vital"
+      ],
       "referenceEn": [
-        "I think it is vital to keep a good balance between work and family.",
-        "For me, a good night's sleep is vital to doing my job well."
+        "This bridge is vital to the villagers because it is their only way out.",
+        "The bridge is vital for the people in the village because it is the only road out."
       ],
       "rubricZh": [
-        "句子要用到 vital，表示「極為重要的」（例如 is vital to／for…、It is vital to…）",
-        "句子要說到你自己的看法"
+        "vital 表示「極重要的」（例如 is vital to、is vital for 等）",
+        "「村民」可寫，例如 the villagers、the people in the village 等",
+        "「唯一通往外面的路」可寫，例如 their only way out、the only road out 等"
       ]
     }
   ],
@@ -407,6 +410,18 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：relevant 為 q13 正解",
         "resolution": "改前：\"相關的\"；改後：\"極重要的\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（vital）原位換成翻譯題，沿用題 id b2-u06-l07-q17；目標字沿用 vital",
+        "resolution": "改為 translate：promptZh「這座橋對村民非常重要，因為那是他們唯一的出路。」、hintWords [\"vital\"]、referenceEn [\"This bridge is vital to the villagers because it is their only way out.\",\"The bridge is vital for the people in the village because it is the only road out.\"]、rubricZh [\"vital 表示「極重要的」（例如 is vital to、is vital for 等）\",\"「村民」可寫，例如 the villagers、the people in the village 等\",\"「唯一的出路」可寫，例如 their only way out、the only road out 等\"]（原 makeSentence：instructionZh「用 vital 造一個句子，說說你覺得工作或生活中極為重要的一件事。」、referenceEn [\"I think it is vital to keep a good balance between work and family.\",\"For me, a good night's sleep is vital to doing my job well.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「出路」常指比喻的前途、解決辦法",
+        "resolution": "改為 promptZh「這座橋對村民非常重要，因為那是他們唯一通往外面的路。」、referenceEn [\"This bridge is vital to the villagers because it is their only way out.\",\"The bridge is vital for the people in the village because it is the only road out.\"]、rubricZh [\"vital 表示「極重要的」（例如 is vital to、is vital for 等）\",\"「村民」可寫，例如 the villagers、the people in the village 等\",\"「唯一通往外面的路」可寫，例如 their only way out、the only road out 等\"]（原 promptZh「這座橋對村民非常重要，因為那是他們唯一的出路。」、referenceEn [\"This bridge is vital to the villagers because it is their only way out.\",\"The bridge is vital for the people in the village because it is the only road out.\"]、rubricZh [\"vital 表示「極重要的」（例如 is vital to、is vital for 等）\",\"「村民」可寫，例如 the villagers、the people in the village 等\",\"「唯一的出路」可寫，例如 their only way out、the only road out 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

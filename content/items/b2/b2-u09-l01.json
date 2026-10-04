@@ -229,31 +229,35 @@
     {
       "id": "b2-u09-l01-q17",
       "type": "translate",
-      "promptZh": "這項新規定對小公司很有利。",
+      "promptZh": "這個交換計畫對兩所學校都有好處。",
       "hintWords": [
         "beneficial"
       ],
       "referenceEn": [
-        "This new rule is very beneficial to small companies.",
-        "The new rule is highly beneficial for small businesses."
+        "The exchange program was beneficial to both schools.",
+        "This exchange program has been beneficial for both schools."
       ],
       "rubricZh": [
-        "beneficial 表示「有益的、有利的」，後面接 to 或 for（例如 beneficial to small companies）",
-        "「很」可寫 very、highly 等；「規定」可寫 rule、regulation 等"
+        "beneficial 表示「有益的、有利的」，後面接 to 或 for（例如 beneficial to both schools 等）",
+        "時態可用現在式、過去式或現在完成式（例如 is、was、has been 等）",
+        "「交換計畫」可寫，例如 exchange program、exchange programme 等"
       ]
     },
     {
       "id": "b2-u09-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "threaten",
-      "instructionZh": "用 threaten 造一個句子，說說某件事可能危及你的計畫或工作。",
+      "type": "translate",
+      "promptZh": "他威脅說，如果公司不幫他加薪，他就會辭職。",
+      "hintWords": [
+        "threaten"
+      ],
       "referenceEn": [
-        "My boss threatened to cancel my project if I missed the deadline.",
-        "Rising rent threatens my plan to open a shop."
+        "He threatened to quit if the company did not raise his pay.",
+        "He threatened to leave the company unless he got a pay rise."
       ],
       "rubricZh": [
-        "句子要用到 threaten（例如 threaten to＋動詞、threaten something）",
-        "句意要表示「可能帶來壞結果」，主詞可以是事物，時態合理即可"
+        "threaten 常用 threaten to＋動詞（例如 threatened to quit 等）",
+        "「辭職」可寫，例如 quit、leave the company、resign 等",
+        "「加薪」可寫，例如 raise his pay、give him a pay rise、a raise 等；時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -519,6 +523,18 @@
         "message": "執行長最終複審修正：B1 用字範圍：developing 為 u09-l03 的字",
         "resolution": "改前：\"發展中的\"；改後：\"可疑的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：舊翻譯雷同補正：與 b2-u09-l05-q16 同單元跨課雷同（new rule／small businesses）；本題不是 beneficial 唯一情境題（另有 q11 聽選、q14 mcq），換成交換計畫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「這個交換計畫對兩所學校都有好處。」、referenceEn [\"The exchange program was beneficial to both schools.\",\"This exchange program has been beneficial for both schools.\"]、rubricZh [\"beneficial 表示「有益的、有利的」，後面接 to 或 for（例如 beneficial to both schools 等）\",\"時態可用現在式、過去式或現在完成式（例如 is、was、has been 等）\",\"「交換計畫」可寫，例如 exchange program、exchange programme 等\"]（原 promptZh「這項新規定對小公司很有利。」、referenceEn [\"This new rule is very beneficial to small companies.\",\"The new rule is highly beneficial for small businesses.\"]、rubricZh [\"beneficial 表示「有益的、有利的」，後面接 to 或 for（例如 beneficial to small companies）\",\"「很」可寫 very、highly 等；「規定」可寫 rule、regulation 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（threaten）原位換成翻譯題，沿用題 id b2-u09-l01-q18；目標字沿用 threaten",
+        "resolution": "改為 translate：promptZh「他威脅說，如果公司不幫他加薪，他就會辭職。」、hintWords [\"threaten\"]、referenceEn [\"He threatened to quit if the company did not raise his pay.\",\"He threatened to leave the company unless he got a pay rise.\"]、rubricZh [\"threaten 常用 threaten to＋動詞（例如 threatened to quit 等）\",\"「辭職」可寫，例如 quit、leave the company、resign 等\",\"「加薪」可寫，例如 raise his pay、give him a pay rise、a raise 等；時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 threaten 造一個句子，說說某件事可能危及你的計畫或工作。」、referenceEn [\"My boss threatened to cancel my project if I missed the deadline.\",\"Rising rent threatens my plan to open a shop.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

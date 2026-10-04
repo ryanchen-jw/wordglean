@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u13-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "scent",
-      "instructionZh": "用 scent 造一個句子，說說一種讓你印象深刻的香味。",
+      "type": "translate",
+      "promptZh": "這家咖啡店裡充滿了剛出爐的麵包香味。",
+      "hintWords": [
+        "scent"
+      ],
       "referenceEn": [
-        "The scent of my grandmother's cooking always makes me feel at home.",
-        "I love the scent of rain on a summer evening."
+        "This coffee shop is full of the scent of bread just out of the oven.",
+        "The scent of warm bread from the oven fills this coffee shop."
       ],
       "rubricZh": [
-        "句子要用到 scent（例如 the scent of… 等）",
-        "句子要說到你自己的感受"
+        "scent 指「香味」（例如 the scent of bread 等）",
+        "「充滿」可寫，例如 is full of、fills 等",
+        "「剛出爐的麵包」可寫，例如 bread just out of the oven、freshly baked bread 等"
       ]
     }
   ],
@@ -368,6 +371,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 scent，常用 the scent of…\",\"句子要說到你自己的感受\"]；改後：[\"句子要用到 scent（例如 the scent of… 等）\",\"句子要說到你自己的感受\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（scent）原位換成翻譯題，沿用題 id b2-u13-l02-q17；目標字沿用 scent",
+        "resolution": "改為 translate：promptZh「這家咖啡店裡充滿了剛出爐的麵包香味。」、hintWords [\"scent\"]、referenceEn [\"This coffee shop is full of the scent of bread just out of the oven.\",\"The scent of warm bread from the oven fills this coffee shop.\"]、rubricZh [\"scent 指「香味」（例如 the scent of bread 等）\",\"「充滿」可寫，例如 is full of、fills 等\",\"「剛出爐的麵包」可寫，例如 bread just out of the oven、freshly baked bread 等\"]（原 makeSentence：instructionZh「用 scent 造一個句子，說說一種讓你印象深刻的香味。」、referenceEn [\"The scent of my grandmother's cooking always makes me feel at home.\",\"I love the scent of rain on a summer evening.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

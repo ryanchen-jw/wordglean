@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u50-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "zip",
-      "instructionZh": "用 zip 當名詞造一個句子，說說你的衣服或包包拉鍊出問題的經驗。",
+      "type": "translate",
+      "promptZh": "這件洋裝的拉鍊在背後，很難自己拉上。",
+      "hintWords": [
+        "zip"
+      ],
       "referenceEn": [
-        "The zip on my suitcase broke at the airport.",
-        "The zip on my pencil case came off, so I had to buy a new one."
+        "The zip on this dress is at the back, so it's hard to close by myself.",
+        "This dress has a zip at the back, which makes it hard to do up by myself."
       ],
       "rubricZh": [
-        "句子要用到 zip 當名詞（例如 the zip on my suitcase）",
-        "時態配合內容（例如 broke、was stuck 等）"
+        "zip 當名詞「拉鍊」（例如 the zip on this dress、has a zip at the back 等）；寫 zipper 也正確",
+        "「拉上」可寫，例如 close、do up、zip up 等",
+        "「自己」可寫，例如 by myself、on my own 等"
       ]
     }
   ],
@@ -371,6 +374,12 @@
         "message": "執行長第②③關裁示修正：裁示：改教常用動詞義；hone",
         "resolution": "改前：\"磨刀石\"；改後：\"磨練\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（zip）原位換成翻譯題，沿用題 id b2-u50-l07-q17；目標字沿用 zip",
+        "resolution": "改為 translate：promptZh「這件洋裝的拉鍊在背後，很難自己拉上。」、hintWords [\"zip\"]、referenceEn [\"The zip on this dress is at the back, so it's hard to close by myself.\",\"This dress has a zip at the back, which makes it hard to do up by myself.\"]、rubricZh [\"zip 當名詞「拉鍊」（例如 the zip on this dress、has a zip at the back 等）；寫 zipper 也正確\",\"「拉上」可寫，例如 close、do up、zip up 等\",\"「自己」可寫，例如 by myself、on my own 等\"]（原 makeSentence：instructionZh「用 zip 當名詞造一個句子，說說你的衣服或包包拉鍊出問題的經驗。」、referenceEn [\"The zip on my suitcase broke at the airport.\",\"The zip on my pencil case came off, so I had to buy a new one.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

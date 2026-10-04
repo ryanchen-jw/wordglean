@@ -232,16 +232,18 @@
     },
     {
       "id": "b2-u09-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "globally",
-      "instructionZh": "用 globally 造一個句子，說說某樣在全世界都很受歡迎或通用的東西。",
+      "type": "translate",
+      "promptZh": "這首歌在全世界都很有名。",
+      "hintWords": [
+        "globally"
+      ],
       "referenceEn": [
-        "Video games are popular globally among young people.",
-        "I think coffee is enjoyed globally, from Brazil to Japan."
+        "This song is very famous globally.",
+        "The song is well known globally."
       ],
       "rubricZh": [
-        "句子要用到 globally，表示「在全球、在世界各地」（例如 sold globally、popular globally）",
-        "句意要合理"
+        "globally 表示「在全球」，可放形容詞後或句尾（例如 famous globally 等）",
+        "「很有名」可寫，例如 famous、well known、popular 等"
       ]
     }
   ],
@@ -429,6 +431,18 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"不安\"；改後：\"徹底地\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（globally）原位換成翻譯題，沿用題 id b2-u09-l07-q17；目標字沿用 globally",
+        "resolution": "改為 translate：promptZh「這首歌在全世界都很有名。」、hintWords [\"globally\"]、referenceEn [\"This song is very famous globally.\",\"The song is well known globally, not just here.\"]、rubricZh [\"globally 表示「在全球」，可放形容詞後或句尾（例如 famous globally 等）\",\"「很有名」可寫，例如 famous、well known、popular 等\"]（原 makeSentence：instructionZh「用 globally 造一個句子，說說某樣在全世界都很受歡迎或通用的東西。」、referenceEn [\"Video games are popular globally among young people.\",\"I think coffee is enjoyed globally, from Brazil to Japan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 參考答案變體 2 多了中文沒有的 not just here（§12.6）",
+        "resolution": "改為 promptZh「這首歌在全世界都很有名。」、referenceEn [\"This song is very famous globally.\",\"The song is well known globally.\"]、rubricZh [\"globally 表示「在全球」，可放形容詞後或句尾（例如 famous globally 等）\",\"「很有名」可寫，例如 famous、well known、popular 等\"]（原 promptZh「這首歌在全世界都很有名。」、referenceEn [\"This song is very famous globally.\",\"The song is well known globally, not just here.\"]、rubricZh [\"globally 表示「在全球」，可放形容詞後或句尾（例如 famous globally 等）\",\"「很有名」可寫，例如 famous、well known、popular 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

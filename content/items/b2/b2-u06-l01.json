@@ -230,16 +230,18 @@
     },
     {
       "id": "b2-u06-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "elegant",
-      "instructionZh": "用 elegant 造一個句子，描述你覺得很優雅的人、衣服或地方。",
+      "type": "translate",
+      "promptZh": "她跳舞的樣子非常優雅。",
+      "hintWords": [
+        "elegant"
+      ],
       "referenceEn": [
-        "My grandmother always looks elegant, even at home.",
-        "I had dinner at an elegant restaurant by the river last week."
+        "The way she dances is very elegant.",
+        "She dances in a very elegant way."
       ],
       "rubricZh": [
-        "句子要用到 elegant，當形容詞（例如 an elegant restaurant、looks elegant）",
-        "描述的對象要合理（人、衣著、地方、設計等）"
+        "elegant 當形容詞（例如 is very elegant、in an elegant way 等）",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -391,6 +393,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：elegant、dynamic；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"有活力的\"；改後：\"很少\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（elegant）原位換成翻譯題，沿用題 id b2-u06-l01-q17；目標字沿用 elegant",
+        "resolution": "改為 translate：promptZh「她跳舞的樣子非常優雅。」、hintWords [\"elegant\"]、referenceEn [\"The way she dances is very elegant.\",\"She dances in a very elegant way.\"]、rubricZh [\"elegant 當形容詞（例如 is very elegant、in an elegant way 等）\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 elegant 造一個句子，描述你覺得很優雅的人、衣服或地方。」、referenceEn [\"My grandmother always looks elegant, even at home.\",\"I had dinner at an elegant restaurant by the river last week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

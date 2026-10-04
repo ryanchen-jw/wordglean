@@ -231,16 +231,18 @@
     },
     {
       "id": "b2-u46-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "patriot",
-      "instructionZh": "用 patriot 造一個句子，描述一位你心目中的愛國者（真實或虛構的人物都可以）。",
+      "type": "translate",
+      "promptZh": "這位詩人被後人視為偉大的愛國者。",
+      "hintWords": [
+        "patriot"
+      ],
       "referenceEn": [
-        "Our history teacher often tells us about famous patriots from our country's past.",
-        "In the novel, the hero is a patriot who risks everything for his people."
+        "This poet is remembered as a great patriot.",
+        "People today remember this poet as a great patriot."
       ],
       "rubricZh": [
-        "句子要用到 patriot（例如 a patriot who…）",
-        "時態配合內容（例如 was、is 等）"
+        "patriot 表示「愛國者」（例如 a great patriot 等）",
+        "「被後人視為」可寫，例如 is remembered as、people today remember … as 等"
       ]
     }
   ],
@@ -422,6 +424,18 @@
         "message": "執行長第②③關裁示修正：最終複審 FIX 3：",
         "resolution": "改前：\"她努力壓抑怒氣，但臉還是漲紅了。\"；改後：\"很多人會壓抑童年時痛苦的回憶。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（patriot）原位換成翻譯題，沿用題 id b2-u46-l07-q17；目標字沿用 patriot",
+        "resolution": "改為 translate：promptZh「我爺爺說自己是個愛國者，每天早上都會升國旗。」、hintWords [\"patriot\"]、referenceEn [\"My grandfather calls himself a patriot and raises the flag every morning.\",\"My grandpa says he is a patriot, and he raises the flag every morning.\"]、rubricZh [\"patriot 表示「愛國者」（例如 calls himself a patriot、says he is a patriot 等）\",\"「升國旗」可寫，例如 raises the flag、puts up the flag 等\",\"動詞配合主詞（例如 raises、says 等）\"]（原 makeSentence：instructionZh「用 patriot 造一個句子，描述一位你心目中的愛國者（真實或虛構的人物都可以）。」、referenceEn [\"Our history teacher often tells us about famous patriots from our country's past.\",\"In the novel, the hero is a patriot who risks everything for his people.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「愛國」＋「升國旗」易連到特定國家認同（§11.14、§11.31），又把愛國綁在年長者身上（§11.19），改歷史事實句",
+        "resolution": "改為 promptZh「這位詩人被後人視為偉大的愛國者。」、referenceEn [\"This poet is remembered as a great patriot.\",\"People today remember this poet as a great patriot.\"]、rubricZh [\"patriot 表示「愛國者」（例如 a great patriot 等）\",\"「被後人視為」可寫，例如 is remembered as、people today remember … as 等\"]（原 promptZh「我爺爺說自己是個愛國者，每天早上都會升國旗。」、referenceEn [\"My grandfather calls himself a patriot and raises the flag every morning.\",\"My grandpa says he is a patriot, and he raises the flag every morning.\"]、rubricZh [\"patriot 表示「愛國者」（例如 calls himself a patriot、says he is a patriot 等）\",\"「升國旗」可寫，例如 raises the flag、puts up the flag 等\",\"動詞配合主詞（例如 raises、says 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

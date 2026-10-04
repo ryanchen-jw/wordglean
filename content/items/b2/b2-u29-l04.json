@@ -217,17 +217,18 @@
     },
     {
       "id": "b2-u29-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "skillful",
-      "instructionZh": "用 skillful 造一個句子，描述一位你覺得手藝或技術很好的人。",
+      "type": "translate",
+      "promptZh": "這位理髮師剪頭髮的技術非常熟練。",
+      "hintWords": [
+        "skillful"
+      ],
       "referenceEn": [
-        "My cousin is a skillful dancer who has won many prizes.",
-        "The barber near my home is very skillful with scissors."
+        "This barber is very skillful at cutting hair.",
+        "The barber cuts hair in a very skillful way."
       ],
       "rubricZh": [
-        "句子要用到 skillful",
-        "skillful 可放在名詞前或 be 動詞後（例如 a skillful cook、is skillful with… 等）",
-        "時態配合內容（例如 is、was 等）"
+        "skillful 可放 be 動詞後或名詞前（例如 is very skillful at 等）；寫 cuts hair very skillfully 也正確",
+        "「剪頭髮」可寫，例如 cutting hair、cuts hair 等"
       ]
     }
   ],
@@ -355,6 +356,18 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與閱讀同為熟練廚師",
         "resolution": "改前：\"時態配合內容（例如 is、was）\"；改後：\"時態配合內容（例如 is、was 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（skillful）原位換成翻譯題，沿用題 id b2-u29-l04-q16；目標字沿用 skillful",
+        "resolution": "改為 translate：promptZh「這位理髮師剪頭髮的技術非常熟練。」、hintWords [\"skillful\"]、referenceEn [\"This barber is very skillful at cutting hair.\",\"The barber cuts hair in a very skillful way.\"]、rubricZh [\"skillful 可放 be 動詞後或名詞前（例如 is very skillful at、a skillful barber 等）\",\"「剪頭髮」可寫，例如 cutting hair、cuts hair 等\"]（原 makeSentence：instructionZh「用 skillful 造一個句子，描述一位你覺得手藝或技術很好的人。」、referenceEn [\"My cousin is a skillful dancer who has won many prizes.\",\"The barber near my home is very skillful with scissors.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 常見譯法 cuts hair very skillfully 未收",
+        "resolution": "改為 promptZh「這位理髮師剪頭髮的技術非常熟練。」、referenceEn [\"This barber is very skillful at cutting hair.\",\"The barber cuts hair in a very skillful way.\"]、rubricZh [\"skillful 可放 be 動詞後或名詞前（例如 is very skillful at 等）；寫 cuts hair very skillfully 也正確\",\"「剪頭髮」可寫，例如 cutting hair、cuts hair 等\"]（原 promptZh「這位理髮師剪頭髮的技術非常熟練。」、referenceEn [\"This barber is very skillful at cutting hair.\",\"The barber cuts hair in a very skillful way.\"]、rubricZh [\"skillful 可放 be 動詞後或名詞前（例如 is very skillful at、a skillful barber 等）\",\"「剪頭髮」可寫，例如 cutting hair、cuts hair 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

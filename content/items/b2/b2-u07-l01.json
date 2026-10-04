@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u07-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "excessive",
-      "instructionZh": "用 excessive 造一個句子，說說某件事做得太過頭，或某個東西太多。",
+      "type": "translate",
+      "promptZh": "很多家長認為作業量過多。",
+      "hintWords": [
+        "excessive"
+      ],
       "referenceEn": [
-        "I think the price of this coffee is excessive.",
-        "I spend an excessive amount of time on my phone every day."
+        "Many parents think that the amount of homework is excessive.",
+        "Many parents feel the homework load is excessive."
       ],
       "rubricZh": [
-        "句子要用到 excessive，表示「過度的、過多的」（例如 an excessive amount、excessive noise）",
-        "句意要表示超過合理的程度"
+        "excessive 表示「過度的、過多的」（例如 is excessive、an excessive amount of 等）",
+        "「作業量」可寫，例如 the amount of homework、the homework load 等",
+        "「認為」可寫，例如 think、feel、believe 等"
       ]
     }
   ],
@@ -407,6 +410,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"拓寬\"；改後：\"答案\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（excessive）原位換成翻譯題，沿用題 id b2-u07-l01-q17；目標字沿用 excessive",
+        "resolution": "改為 translate：promptZh「很多家長認為作業量過多。」、hintWords [\"excessive\"]、referenceEn [\"Many parents think that the amount of homework is excessive.\",\"Many parents feel the homework load is excessive.\"]、rubricZh [\"excessive 表示「過度的、過多的」（例如 is excessive、an excessive amount of 等）\",\"「作業量」可寫，例如 the amount of homework、the homework load 等\",\"「認為」可寫，例如 think、feel、believe 等\"]（原 makeSentence：instructionZh「用 excessive 造一個句子，說說某件事做得太過頭，或某個東西太多。」、referenceEn [\"I think the price of this coffee is excessive.\",\"I spend an excessive amount of time on my phone every day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u49-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "mournful",
-      "instructionZh": "用 mournful 造一個句子，描述悲傷的聲音、音樂或表情。",
+      "type": "translate",
+      "promptZh": "風吹過那棟老房子時，發出了悲傷的聲音。",
+      "hintWords": [
+        "mournful"
+      ],
       "referenceEn": [
-        "The dog gave a mournful cry when we left the house.",
-        "I like to listen to mournful songs on rainy days."
+        "The wind made a mournful sound as it blew through the old house.",
+        "As the wind blew through the old house, it made a mournful sound."
       ],
       "rubricZh": [
-        "句子要用到 mournful（例如 a mournful cry、mournful songs）",
-        "時態配合內容（例如 gave、like 等）"
+        "mournful 可放名詞前或 be 動詞後（例如 a mournful sound、was mournful 等）",
+        "「吹過」可寫，例如 blew through、blew past 等",
+        "時態可用過去式或現在式（例如 made、makes 等）"
       ]
     }
   ],
@@ -305,6 +308,18 @@
         "message": "執行長第②③關裁示修正：最終複審 FIX 9：",
         "resolution": "改前：\"樂團要停止演出的消息在歌迷之間引起一陣騷動。\"；改後：\"公車票價突然上漲，在全市引起一陣騷動。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mournful）原位換成翻譯題，沿用題 id b2-u49-l08-q17；目標字沿用 mournful",
+        "resolution": "改為 translate：promptZh「風吹過那棟老房子時，發出了悲傷的聲音。」、hintWords [\"mournful\"]、referenceEn [\"The wind made a mournful sound as it blew through the old house.\",\"As the wind blew through the old house, it made a mournful sound.\"]、rubricZh [\"mournful 當形容詞放名詞前（例如 a mournful sound 等）\",\"「吹過」可寫，例如 blew through、blew past 等\",\"時態可用過去式或現在式（例如 made、makes 等）\"]（原 makeSentence：instructionZh「用 mournful 造一個句子，描述悲傷的聲音、音樂或表情。」、referenceEn [\"The dog gave a mournful cry when we left the house.\",\"I like to listen to mournful songs on rainy days.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 mournful 放名詞前",
+        "resolution": "改為 promptZh「風吹過那棟老房子時，發出了悲傷的聲音。」、referenceEn [\"The wind made a mournful sound as it blew through the old house.\",\"As the wind blew through the old house, it made a mournful sound.\"]、rubricZh [\"mournful 可放名詞前或 be 動詞後（例如 a mournful sound、was mournful 等）\",\"「吹過」可寫，例如 blew through、blew past 等\",\"時態可用過去式或現在式（例如 made、makes 等）\"]（原 promptZh「風吹過那棟老房子時，發出了悲傷的聲音。」、referenceEn [\"The wind made a mournful sound as it blew through the old house.\",\"As the wind blew through the old house, it made a mournful sound.\"]、rubricZh [\"mournful 當形容詞放名詞前（例如 a mournful sound 等）\",\"「吹過」可寫，例如 blew through、blew past 等\",\"時態可用過去式或現在式（例如 made、makes 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

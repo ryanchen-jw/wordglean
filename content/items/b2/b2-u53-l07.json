@@ -216,16 +216,18 @@
     },
     {
       "id": "b2-u53-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "standby",
-      "instructionZh": "用 standby 造一個句子，描述一樣備用的東西或候補的安排。",
+      "type": "translate",
+      "promptZh": "這齣戲有兩位候補演員，需要時隨時可以上台。",
+      "hintWords": [
+        "standby"
+      ],
       "referenceEn": [
-        "We always keep a standby battery in the car.",
-        "The team has a standby player for every match."
+        "The play has two standby actors who are ready to go on stage if needed.",
+        "There are two actors on standby for the play, ready to perform when needed."
       ],
       "rubricZh": [
-        "句子要用到 standby（例如 a standby battery、standby players、keep … on standby 等）",
-        "時態配合內容（例如 keep、has 等）"
+        "standby 可放名詞前或寫成 on standby（例如 two standby actors、two actors on standby 等）",
+        "「需要時隨時可以上台」可寫，例如 ready to go on stage if needed 等"
       ]
     }
   ],
@@ -335,6 +337,12 @@
         "message": "創辦人裁示：移出課綱：閱讀短文刪除 retard，改用本級以內的說法（第 1 小題「為什麼選晴天」的答案不變）",
         "resolution": "改前：\"我們選了晴天，因為潮濕的空氣會讓油漆乾得比較慢。\"；改後：\"我們選了晴天，因為油漆在潮濕的空氣中乾得比較慢。\"",
         "resolvedAt": "2026-10-03T05:50:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（standby）原位換成翻譯題，沿用題 id b2-u53-l07-q17；目標字沿用 standby",
+        "resolution": "改為 translate：promptZh「這齣戲有兩位候補演員，需要時隨時可以上台。」、hintWords [\"standby\"]、referenceEn [\"The play has two standby actors who are ready to go on stage if needed.\",\"There are two actors on standby for the play, ready to perform when needed.\"]、rubricZh [\"standby 可放名詞前或寫成 on standby（例如 two standby actors、two actors on standby 等）\",\"「需要時隨時可以上台」可寫，例如 ready to go on stage if needed 等\"]（原 makeSentence：instructionZh「用 standby 造一個句子，描述一樣備用的東西或候補的安排。」、referenceEn [\"We always keep a standby battery in the car.\",\"The team has a standby player for every match.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

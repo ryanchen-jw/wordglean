@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u02-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "temporarily",
-      "instructionZh": "用 temporarily 造一個句子，說說某個暫時的變化或安排。",
+      "type": "translate",
+      "promptZh": "我妹妹暫時住在我家，直到她找到新的公寓。",
+      "hintWords": [
+        "temporarily"
+      ],
       "referenceEn": [
-        "I am temporarily working from home while my office is being repaired.",
-        "My favorite restaurant has temporarily moved to a smaller place."
+        "My sister is temporarily staying with me until she finds a new apartment.",
+        "My younger sister is living at my place temporarily until she finds a new apartment."
       ],
       "rubricZh": [
-        "句子要用到 temporarily，修飾動詞或形容詞（例如 temporarily closed、temporarily working）",
-        "句意要表示這個狀況只是暫時的，之後會恢復或改變"
+        "temporarily 可放動詞前或句尾（例如 is temporarily staying、is living here temporarily 等）",
+        "「住在我家」可寫，例如 stay with me、live at my place 等；時態可用現在進行式或現在式",
+        "until 後面用現在式表示未來（例如 until she finds 等）"
       ]
     }
   ],
@@ -385,6 +388,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"一生\"；改後：\"承諾\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（temporarily）原位換成翻譯題，沿用題 id b2-u02-l01-q17；目標字沿用 temporarily",
+        "resolution": "改為 translate：promptZh「我妹妹暫時住在我家，直到她找到新的公寓。」、hintWords [\"temporarily\"]、referenceEn [\"My sister is temporarily staying with me until she finds a new apartment.\",\"My younger sister is living at my place temporarily until she finds a new apartment.\"]、rubricZh [\"temporarily 可放動詞前或句尾（例如 is temporarily staying、is living here temporarily 等）\",\"「住在我家」可寫，例如 stay with me、live at my place 等；時態可用現在進行式或現在式\",\"until 後面用現在式表示未來（例如 until she finds 等）\"]（原 makeSentence：instructionZh「用 temporarily 造一個句子，說說某個暫時的變化或安排。」、referenceEn [\"I am temporarily working from home while my office is being repaired.\",\"My favorite restaurant has temporarily moved to a smaller place.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

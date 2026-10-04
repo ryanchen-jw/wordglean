@@ -229,16 +229,18 @@
     },
     {
       "id": "b2-u48-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "indispensable",
-      "instructionZh": "用 indispensable 造一個句子，說說一樣你生活中不可或缺的東西。",
+      "type": "translate",
+      "promptZh": "她已經成為我們團隊中不可或缺的一員。",
+      "hintWords": [
+        "indispensable"
+      ],
       "referenceEn": [
-        "My coffee machine is indispensable to me in the morning.",
-        "For me, a good pair of shoes is indispensable when I travel."
+        "She has become an indispensable member of our team.",
+        "She is now an indispensable part of our team."
       ],
       "rubricZh": [
-        "句子要用到 indispensable（例如 is indispensable to me）",
-        "說出是什麼東西（例如 my coffee machine、a good pair of shoes 等）"
+        "indispensable 表示「不可或缺的」（例如 an indispensable member、is indispensable to us 等）",
+        "「已經成為」可寫，例如 has become、is now 等"
       ]
     }
   ],
@@ -324,6 +326,12 @@
         "message": "執行長第②③關裁示修正：裁示「評分要點不寫死結構」全批掃描：表語用法也正確",
         "resolution": "改前：\"要用 rash 修飾名詞（例如 a rash judgment、rash decisions）\"；改後：\"要用 rash（例如 a rash judgment、rash decisions、be rash 等）\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（indispensable）原位換成翻譯題，沿用題 id b2-u48-l02-q17；目標字沿用 indispensable",
+        "resolution": "改為 translate：promptZh「她已經成為我們團隊中不可或缺的一員。」、hintWords [\"indispensable\"]、referenceEn [\"She has become an indispensable member of our team.\",\"She is now an indispensable part of our team.\"]、rubricZh [\"indispensable 表示「不可或缺的」（例如 an indispensable member、is indispensable to us 等）\",\"「已經成為」可寫，例如 has become、is now 等\"]（原 makeSentence：instructionZh「用 indispensable 造一個句子，說說一樣你生活中不可或缺的東西。」、referenceEn [\"My coffee machine is indispensable to me in the morning.\",\"For me, a good pair of shoes is indispensable when I travel.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

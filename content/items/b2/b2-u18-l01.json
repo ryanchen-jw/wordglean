@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u18-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "skateboard",
-      "instructionZh": "用 skateboard 造一個句子，說說你或你認識的人玩滑板的經驗。",
+      "type": "translate",
+      "promptZh": "我弟弟從滑板上摔下來，擦傷了膝蓋。",
+      "hintWords": [
+        "skateboard"
+      ],
       "referenceEn": [
-        "I tried to ride a skateboard once, but I fell after two seconds.",
-        "My cousin rides his skateboard to school every morning."
+        "My younger brother fell off his skateboard and hurt his knee.",
+        "My little brother hurt his knee when he fell off his skateboard."
       ],
       "rubricZh": [
-        "句子要用到 skateboard（例如 ride a skateboard）",
-        "時態合理即可（例如 rides、tried）"
+        "skateboard 指「滑板」（例如 fell off his skateboard 等）",
+        "時態用過去式或現在完成式（例如 fell、hurt 等）",
+        "「擦傷」可寫，例如 hurt、scraped、cut 等"
       ]
     }
   ],
@@ -302,6 +305,12 @@
         "message": "第②關 issue 結案：疑似：籃球「scored the winning point」不自然，宜 scored the winning basket/shot；「ran long distances to build strength」宜 build stamina",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/15 的 3 筆修正紀錄。",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（skateboard）原位換成翻譯題，沿用題 id b2-u18-l01-q18；目標字沿用 skateboard",
+        "resolution": "改為 translate：promptZh「我弟弟從滑板上摔下來，擦傷了膝蓋。」、hintWords [\"skateboard\"]、referenceEn [\"My younger brother fell off his skateboard and hurt his knee.\",\"My little brother hurt his knee when he fell off his skateboard.\"]、rubricZh [\"skateboard 指「滑板」（例如 fell off his skateboard 等）\",\"時態用過去式或現在完成式（例如 fell、hurt 等）\",\"「擦傷」可寫，例如 hurt、scraped、cut 等\"]（原 makeSentence：instructionZh「用 skateboard 造一個句子，說說你或你認識的人玩滑板的經驗。」、referenceEn [\"I tried to ride a skateboard once, but I fell after two seconds.\",\"My cousin rides his skateboard to school every morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

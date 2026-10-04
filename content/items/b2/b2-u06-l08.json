@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u06-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "genuine",
-      "instructionZh": "用 genuine 造一個句子，說說某樣真的（不是假的）東西，或某人真誠的態度。",
+      "type": "translate",
+      "promptZh": "專家確認這幅畫是真跡。",
+      "hintWords": [
+        "genuine"
+      ],
       "referenceEn": [
-        "I bought a genuine leather wallet on my trip.",
-        "My manager showed genuine interest in my ideas."
+        "The expert confirmed that the painting is genuine.",
+        "Experts have confirmed that this painting is genuine."
       ],
       "rubricZh": [
-        "句子要用到 genuine，表示「真正的、真誠的」（例如 genuine leather、genuine interest）",
-        "genuine 放在名詞前或 be 動詞後都可以"
+        "genuine 表示「真的、非偽造的」（例如 is genuine、was genuine 等）",
+        "「確認」可寫，例如 confirmed、said、proved 等；時態可用過去式或現在完成式",
+        "expert 單複數都可以"
       ]
     }
   ],
@@ -431,6 +434,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"那位舞者的動作流暢自如。\"；改後：\"熔岩在非常高溫時是流動的。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（genuine）原位換成翻譯題，沿用題 id b2-u06-l08-q17；目標字沿用 genuine",
+        "resolution": "改為 translate：promptZh「專家確認這幅畫是真跡。」、hintWords [\"genuine\"]、referenceEn [\"The expert confirmed that the painting is genuine.\",\"Experts have confirmed that this painting is genuine.\"]、rubricZh [\"genuine 表示「真的、非偽造的」（例如 is genuine、was genuine 等）\",\"「確認」可寫，例如 confirmed、said、proved 等；時態可用過去式或現在完成式\",\"expert 單複數都可以\"]（原 makeSentence：instructionZh「用 genuine 造一個句子，說說某樣真的（不是假的）東西，或某人真誠的態度。」、referenceEn [\"I bought a genuine leather wallet on my trip.\",\"My manager showed genuine interest in my ideas.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

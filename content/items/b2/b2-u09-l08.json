@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u09-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "downfall",
-      "instructionZh": "用 downfall 造一個句子，說說某人或某家公司失敗、垮台的原因。",
+      "type": "translate",
+      "promptZh": "過度自信最後導致他垮台。",
+      "hintWords": [
+        "downfall"
+      ],
       "referenceEn": [
-        "Spending too much money was the company's downfall.",
-        "Pride was the downfall of the famous singer."
+        "In the end, too much confidence led to his downfall.",
+        "Being too confident was his downfall in the end."
       ],
       "rubricZh": [
-        "句子要用到 downfall（例如 X was the downfall of Y、led to Y's downfall）",
-        "句子要說明導致失敗或垮台的原因"
+        "downfall 是名詞，表示「垮台、衰敗」（例如 led to his downfall、was his downfall 等）",
+        "「過度自信」可寫，例如 too much confidence、being too confident 等",
+        "時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -398,6 +401,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"adversity 是不可數名詞，常用 in the face of adversity、in times of adversity\",\"沒有時間標記，現在式或過去式都可以\"]；改後：[\"adversity 是不可數名詞（例如 in the face of adversity、in times of adversity 等）\",\"沒有時間標記，現在式或過去式都可以\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（downfall）原位換成翻譯題，沿用題 id b2-u09-l08-q17；目標字沿用 downfall",
+        "resolution": "改為 translate：promptZh「過度自信最後導致他垮台。」、hintWords [\"downfall\"]、referenceEn [\"In the end, too much confidence led to his downfall.\",\"Being too confident was his downfall in the end.\"]、rubricZh [\"downfall 是名詞，表示「垮台、衰敗」（例如 led to his downfall、was his downfall 等）\",\"「過度自信」可寫，例如 too much confidence、being too confident 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 downfall 造一個句子，說說某人或某家公司失敗、垮台的原因。」、referenceEn [\"Spending too much money was the company's downfall.\",\"Pride was the downfall of the famous singer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

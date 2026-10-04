@@ -231,17 +231,18 @@
     },
     {
       "id": "b2-u43-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "recommendable",
-      "instructionZh": "用 recommendable 造一個句子，推薦一個你喜歡的地方或東西。",
+      "type": "translate",
+      "promptZh": "這家旅館乾淨又便宜，非常值得推薦。",
+      "hintWords": [
+        "recommendable"
+      ],
       "referenceEn": [
-        "The bakery near my school is recommendable for a quick breakfast.",
-        "I find this book recommendable to anyone learning English."
+        "This hotel is clean and cheap, so it is very recommendable.",
+        "Clean and cheap, this hotel is very recommendable."
       ],
       "rubricZh": [
-        "句子要用到 recommendable",
-        "recommendable 的用法，例如 recommendable for、recommendable to 等",
-        "時態合理（例如 is、find 等）"
+        "recommendable 可放 be 動詞後或名詞前（例如 is very recommendable、a recommendable hotel 等）",
+        "「便宜」可寫，例如 cheap、inexpensive 等"
       ]
     }
   ],
@@ -339,6 +340,18 @@
         "message": "第②關 issue 結案：疑似：\"is very recommendable\" 同上不自然，建議 highly recommendable。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（recommendable）原位換成翻譯題，沿用題 id b2-u43-l10-q17；目標字沿用 recommendable",
+        "resolution": "改為 translate：promptZh「這家旅館乾淨又便宜，非常值得推薦。」、hintWords [\"recommendable\"]、referenceEn [\"This hotel is clean and cheap, and it is highly recommendable.\",\"Clean and cheap, this hotel is very recommendable.\"]、rubricZh [\"recommendable 放在 be 動詞後（例如 is highly recommendable、very recommendable 等）\",\"「便宜」可寫，例如 cheap、inexpensive 等\"]（原 makeSentence：instructionZh「用 recommendable 造一個句子，推薦一個你喜歡的地方或東西。」、referenceEn [\"The bakery near my school is recommendable for a quick breakfast.\",\"I find this book recommendable to anyone learning English.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS highly recommendable 不道地；要點寫死放 be 動詞後",
+        "resolution": "改為 promptZh「這家旅館乾淨又便宜，非常值得推薦。」、referenceEn [\"This hotel is clean and cheap, so it is very recommendable.\",\"Clean and cheap, this hotel is very recommendable.\"]、rubricZh [\"recommendable 可放 be 動詞後或名詞前（例如 is very recommendable、a recommendable hotel 等）\",\"「便宜」可寫，例如 cheap、inexpensive 等\"]（原 promptZh「這家旅館乾淨又便宜，非常值得推薦。」、referenceEn [\"This hotel is clean and cheap, and it is highly recommendable.\",\"Clean and cheap, this hotel is very recommendable.\"]、rubricZh [\"recommendable 放在 be 動詞後（例如 is highly recommendable、very recommendable 等）\",\"「便宜」可寫，例如 cheap、inexpensive 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -220,16 +220,19 @@
     },
     {
       "id": "b2-u02-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "rush hour",
-      "instructionZh": "用 rush hour 造一個句子，說說你上下班或上下學時的交通情況。",
+      "type": "translate",
+      "promptZh": "早上尖峰時段，地鐵上擠滿了學生和上班族。",
+      "hintWords": [
+        "rush hour"
+      ],
       "referenceEn": [
-        "I always leave home early to avoid rush hour.",
-        "During rush hour, it takes me an hour to get to work."
+        "During the morning rush hour, the subway is full of students and office workers.",
+        "The subway trains are packed with students and office workers in the morning rush hour."
       ],
       "rubricZh": [
-        "句子要用到 rush hour（例如 during rush hour、avoid rush hour、in the rush hour）",
-        "句子要說到你自己的通勤情況"
+        "rush hour 前可用 during、in、at 等（例如 during the morning rush hour 等）",
+        "「擠滿」可寫，例如 full of、packed with、crowded with 等",
+        "「上班族」可寫，例如 office workers、people going to work 等"
       ]
     }
   ],
@@ -339,6 +342,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"人生無常，所以要好好享受每一天。\"；改後：\"節慶上很多攤位都是臨時性的，下週就會拆掉。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（rush hour）原位換成翻譯題，沿用題 id b2-u02-l06-q16；目標字沿用 rush hour",
+        "resolution": "改為 translate：promptZh「早上尖峰時段，地鐵上擠滿了學生和上班族。」、hintWords [\"rush hour\"]、referenceEn [\"During the morning rush hour, the subway is full of students and office workers.\",\"The subway trains are packed with students and office workers in the morning rush hour.\"]、rubricZh [\"rush hour 前可用 during、in、at 等（例如 during the morning rush hour 等）\",\"「擠滿」可寫，例如 full of、packed with、crowded with 等\",\"「上班族」可寫，例如 office workers、people going to work 等\"]（原 makeSentence：instructionZh「用 rush hour 造一個句子，說說你上下班或上下學時的交通情況。」、referenceEn [\"I always leave home early to avoid rush hour.\",\"During rush hour, it takes me an hour to get to work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

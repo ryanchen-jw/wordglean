@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u44-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "agony",
-      "instructionZh": "用 agony 造一個句子，說說一段讓你覺得很煎熬的經驗。",
+      "type": "translate",
+      "promptZh": "她在煎熬中等了整整一個星期，那封信才寄到。",
+      "hintWords": [
+        "agony"
+      ],
       "referenceEn": [
-        "Waiting at the airport during a twelve-hour delay was agony.",
-        "Sitting through the boring three-hour meeting was agony for me."
+        "She waited in agony for a whole week before the letter arrived.",
+        "For a whole week, she waited in agony for the letter to arrive."
       ],
       "rubricZh": [
-        "句子要用到 agony",
-        "agony 的用法，例如 was agony、was agony for me 等",
-        "時態合理（例如 was 等）"
+        "agony 表示「極大的痛苦、煎熬」，例如 wait in agony 等",
+        "「整整一個星期」可寫，例如 a whole week、a full week 等",
+        "「才寄到」可寫，例如 before the letter arrived、for the letter to come 等"
       ]
     }
   ],
@@ -318,6 +320,12 @@
         "message": "第②關 issue 結案：疑似：用 youthful-looking 形容高年級學生不自然（學生本來就年輕，youthful 多用於形容年紀較大者顯年輕），中譯「看起來很年輕」也因此怪；建議改成形容其他特質，或把 youthful 用在老師等成人身上。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（agony）原位換成翻譯題，沿用題 id b2-u44-l02-q17；目標字沿用 agony",
+        "resolution": "改為 translate：promptZh「她在煎熬中等了整整一個星期，那封信才寄到。」、hintWords [\"agony\"]、referenceEn [\"She waited in agony for a whole week before the letter arrived.\",\"For a whole week, she waited in agony for the letter to arrive.\"]、rubricZh [\"agony 表示「極大的痛苦、煎熬」，例如 wait in agony 等\",\"「整整一個星期」可寫，例如 a whole week、a full week 等\",\"「才寄到」可寫，例如 before the letter arrived、for the letter to come 等\"]（原 makeSentence：instructionZh「用 agony 造一個句子，說說一段讓你覺得很煎熬的經驗。」、referenceEn [\"Waiting at the airport during a twelve-hour delay was agony.\",\"Sitting through the boring three-hour meeting was agony for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u20-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "pedestrian",
-      "instructionZh": "用 pedestrian 造一個句子，說說你家附近行人走路的情況。",
+      "type": "translate",
+      "promptZh": "這條街週末只開放給行人。",
+      "hintWords": [
+        "pedestrian"
+      ],
       "referenceEn": [
-        "The street near my home has a wide path for pedestrians.",
-        "Pedestrians in my neighborhood have to be careful because cars drive fast."
+        "This street is only open to pedestrians on weekends.",
+        "On weekends, this street is open to pedestrians only."
       ],
       "rubricZh": [
-        "句子要用到 pedestrian 或 pedestrians",
-        "時態合理即可"
+        "pedestrian 指行人，這裡泛指用複數（例如 open to pedestrians 等）",
+        "「只」可寫，例如 only open to、open to… only 等，only 位置不扣分",
+        "「週末」可寫，例如 on weekends、at weekends 等"
       ]
     }
   ],
@@ -332,6 +335,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"我們在動物園外的售票亭排隊。\"；改後：\"就業博覽會上每家公司都有自己的攤位。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（pedestrian）原位換成翻譯題，沿用題 id b2-u20-l01-q18；目標字沿用 pedestrian",
+        "resolution": "改為 translate：promptZh「這條街週末只開放給行人。」、hintWords [\"pedestrian\"]、referenceEn [\"This street is only open to pedestrians on weekends.\",\"On weekends, this street is open to pedestrians only.\"]、rubricZh [\"pedestrian 指行人，這裡泛指用複數（例如 open to pedestrians 等）\",\"「只」可寫，例如 only open to、open to… only 等，only 位置不扣分\",\"「週末」可寫，例如 on weekends、at weekends 等\"]（原 makeSentence：instructionZh「用 pedestrian 造一個句子，說說你家附近行人走路的情況。」、referenceEn [\"The street near my home has a wide path for pedestrians.\",\"Pedestrians in my neighborhood have to be careful because cars drive fast.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

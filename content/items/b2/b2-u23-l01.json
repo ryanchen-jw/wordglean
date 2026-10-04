@@ -241,16 +241,18 @@
     },
     {
       "id": "b2-u23-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "energy",
-      "instructionZh": "用 energy 造一個句子，說說什麼事讓你充滿精力，或你家怎麼節約能源。",
+      "type": "translate",
+      "promptZh": "這棟新大樓用的能源只有舊大樓的一半。",
+      "hintWords": [
+        "energy"
+      ],
       "referenceEn": [
-        "A morning walk gives me energy for the whole day.",
-        "My family saves energy by turning off lights we are not using."
+        "This new building uses half as much energy as the old one.",
+        "The new building uses only half the energy of the old building."
       ],
       "rubricZh": [
-        "句子要用到 energy",
-        "時態合理即可"
+        "energy 指能源，不可數（例如 half as much energy、half the energy 等）",
+        "「只有…的一半」可寫，例如 half as much… as、half the… of、50% less… than 等"
       ]
     }
   ],
@@ -348,6 +350,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"上個世紀，人口從農村移居到城市，讓這個國家迅速改變。\"；改後：\"有些蝴蝶每年都會長途遷徙，橫越整個國家。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（energy）原位換成翻譯題，沿用題 id b2-u23-l01-q18；目標字沿用 energy",
+        "resolution": "改為 translate：promptZh「這棟新大樓用的能源只有舊大樓的一半。」、hintWords [\"energy\"]、referenceEn [\"This new building uses half as much energy as the old one.\",\"The new building uses only half the energy of the old building.\"]、rubricZh [\"energy 指能源，不可數（例如 half as much energy、half the energy 等）\",\"「只有…的一半」可寫，例如 half as much… as、half the… of、50% less… than 等\"]（原 makeSentence：instructionZh「用 energy 造一個句子，說說什麼事讓你充滿精力，或你家怎麼節約能源。」、referenceEn [\"A morning walk gives me energy for the whole day.\",\"My family saves energy by turning off lights we are not using.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

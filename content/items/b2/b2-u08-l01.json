@@ -241,16 +241,18 @@
     },
     {
       "id": "b2-u08-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "reluctant",
-      "instructionZh": "用 reluctant 造一個句子，說說你曾經不太願意做的一件事。",
+      "type": "translate",
+      "promptZh": "下雨的時候，我們家的貓很不情願出門。",
+      "hintWords": [
+        "reluctant"
+      ],
       "referenceEn": [
-        "I was reluctant to give a speech in front of so many people.",
-        "At first, I was reluctant to move to a new city."
+        "Our cat is reluctant to go outside when it rains.",
+        "When it rains, our cat is very reluctant to go out."
       ],
       "rubricZh": [
-        "句子要用到 reluctant，常用 be reluctant to＋動詞（例如 was reluctant to move）",
-        "句子要說到你自己"
+        "reluctant 表示「不情願的」，常用 be reluctant to＋動詞（例如 is reluctant to go out 等）",
+        "「出門」可寫，例如 go outside、go out 等"
       ]
     }
   ],
@@ -432,6 +434,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"警衛看到一名男子在後門附近，起了疑心。\"；改後：\"如果在車站看到可疑的包包，請告訴站務人員。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（reluctant）原位換成翻譯題，沿用題 id b2-u08-l01-q18；目標字沿用 reluctant",
+        "resolution": "改為 translate：promptZh「下雨的時候，我們家的貓很不情願出門。」、hintWords [\"reluctant\"]、referenceEn [\"Our cat is reluctant to go outside when it rains.\",\"When it rains, our cat is very reluctant to go out.\"]、rubricZh [\"reluctant 表示「不情願的」，常用 be reluctant to＋動詞（例如 is reluctant to go out 等）\",\"「出門」可寫，例如 go outside、go out 等\"]（原 makeSentence：instructionZh「用 reluctant 造一個句子，說說你曾經不太願意做的一件事。」、referenceEn [\"I was reluctant to give a speech in front of so many people.\",\"At first, I was reluctant to move to a new city.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

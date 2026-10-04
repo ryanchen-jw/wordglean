@@ -232,16 +232,19 @@
     },
     {
       "id": "b2-u01-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "likewise",
-      "instructionZh": "用 likewise 造一個句子，說說別人做了某件事，你也照著做。",
+      "type": "translate",
+      "promptZh": "她的第一本小說很受歡迎，第二本也同樣受歡迎。",
+      "hintWords": [
+        "likewise"
+      ],
       "referenceEn": [
-        "My manager left the office early, and I did likewise.",
-        "Kevin turned off his phone during the meeting, and I did likewise."
+        "Her first novel was very popular, and her second one was likewise popular.",
+        "Her first novel was very popular. Likewise, her second novel sold very well."
       ],
       "rubricZh": [
-        "句子要用到 likewise，表示「同樣地、也這樣做」（例如 do likewise、…, and likewise, I…）",
-        "前後兩件事要是同樣的動作或情況，而且第二件事是你做的"
+        "likewise 表示「同樣地」，可放動詞後或句首（例如 was likewise popular、Likewise, … 等）",
+        "「很受歡迎」可寫，例如 very popular、sold very well、a big hit 等",
+        "時態可用過去式或現在式（例如 was、is 等）"
       ]
     }
   ],
@@ -357,6 +360,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：somewhat；accordingly 為 q13 正解",
         "resolution": "改前：\"有點\"；改後：\"不幸地\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（likewise）原位換成翻譯題，沿用題 id b2-u01-l01-q17；目標字沿用 likewise",
+        "resolution": "改為 translate：promptZh「她的第一本小說很受歡迎，第二本也同樣受歡迎。」、hintWords [\"likewise\"]、referenceEn [\"Her first novel was very popular, and her second one was likewise popular.\",\"Her first novel was very popular. Likewise, her second novel sold very well.\"]、rubricZh [\"likewise 表示「同樣地」，可放動詞後或句首（例如 was likewise popular、Likewise, … 等）\",\"「很受歡迎」可寫，例如 very popular、sold very well、a big hit 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 likewise 造一個句子，說說別人做了某件事，你也照著做。」、referenceEn [\"My manager left the office early, and I did likewise.\",\"Kevin turned off his phone during the meeting, and I did likewise.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

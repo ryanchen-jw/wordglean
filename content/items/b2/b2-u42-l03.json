@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u42-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "fabulous",
-      "instructionZh": "用 fabulous 造一個句子，說說你覺得很棒的一頓飯、一個地方或一次經驗。",
+      "type": "translate",
+      "promptZh": "我們去年夏天在海邊度過了一個很棒的假期。",
+      "hintWords": [
+        "fabulous"
+      ],
       "referenceEn": [
-        "The seafood at that night market was fabulous.",
-        "We had a fabulous time at the music festival last summer."
+        "We had a fabulous holiday at the beach last summer.",
+        "Last summer, we had a fabulous vacation by the sea."
       ],
       "rubricZh": [
-        "句子要用到 fabulous",
-        "時態配合內容（例如 was、had 等）"
+        "fabulous 可放名詞前或 be 動詞後（例如 a fabulous holiday、was fabulous 等）",
+        "「假期」可寫，例如 holiday、vacation 等；「海邊」可寫，例如 at the beach、by the sea 等",
+        "用過去式（例如 had、spent 等）"
       ]
     }
   ],
@@ -281,6 +284,18 @@
         "message": "第②關 issue 結案：單字卡釋義不涵蓋例句詞義：例句 \"Pine cones fell from the trees\" 的 cone 是「毬果（松果）」，釋義「圓錐（體）；甜筒；三角錐」完全沒有這一義，第一義也對不上（裁示 27、28）。建議換例句示範圓錐／甜筒（例如 \"The party hats were shaped like cones.\"），或釋義加「毬果」並放第一。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fabulous）原位換成翻譯題，沿用題 id b2-u42-l03-q17；目標字沿用 fabulous",
+        "resolution": "改為 translate：promptZh「我們去年夏天在海邊度過了一個很棒的假期。」、hintWords [\"fabulous\"]、referenceEn [\"We had a fabulous holiday at the beach last summer.\",\"Last summer, we had a fabulous vacation by the sea.\"]、rubricZh [\"fabulous 放在名詞前（例如 a fabulous holiday 等）\",\"「假期」可寫，例如 holiday、vacation 等；「海邊」可寫，例如 at the beach、by the sea 等\",\"用過去式（例如 had、spent 等）\"]（原 makeSentence：instructionZh「用 fabulous 造一個句子，說說你覺得很棒的一頓飯、一個地方或一次經驗。」、referenceEn [\"The seafood at that night market was fabulous.\",\"We had a fabulous time at the music festival last summer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 fabulous 放名詞前",
+        "resolution": "改為 promptZh「我們去年夏天在海邊度過了一個很棒的假期。」、referenceEn [\"We had a fabulous holiday at the beach last summer.\",\"Last summer, we had a fabulous vacation by the sea.\"]、rubricZh [\"fabulous 可放名詞前或 be 動詞後（例如 a fabulous holiday、was fabulous 等）\",\"「假期」可寫，例如 holiday、vacation 等；「海邊」可寫，例如 at the beach、by the sea 等\",\"用過去式（例如 had、spent 等）\"]（原 promptZh「我們去年夏天在海邊度過了一個很棒的假期。」、referenceEn [\"We had a fabulous holiday at the beach last summer.\",\"Last summer, we had a fabulous vacation by the sea.\"]、rubricZh [\"fabulous 放在名詞前（例如 a fabulous holiday 等）\",\"「假期」可寫，例如 holiday、vacation 等；「海邊」可寫，例如 at the beach、by the sea 等\",\"用過去式（例如 had、spent 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u53-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "nourish",
-      "instructionZh": "用 nourish 造一個句子，說明什麼東西能滋養心靈、植物或動物。",
+      "type": "translate",
+      "promptZh": "好的故事能滋養孩子的想像力。",
+      "hintWords": [
+        "nourish"
+      ],
       "referenceEn": [
-        "Good music always nourishes my soul.",
-        "Reading good books nourishes the mind."
+        "Good stories can nourish a child's imagination.",
+        "A child's imagination can be nourished by good stories."
       ],
       "rubricZh": [
-        "句子要用到 nourish（例如 nourishes my soul、nourishes the mind 等）",
-        "主詞與動詞要一致（例如 music nourishes、books nourish 等）"
+        "nourish 當動詞，主動句、被動句都可以（例如 can nourish…、can be nourished by… 等）",
+        "「孩子的想像力」可寫，例如 a child's imagination、children's imagination 等",
+        "寫成現在式（例如 Good stories nourish…）也正確"
       ]
     }
   ],
@@ -329,6 +332,12 @@
         "message": "第②關 issue 結案：參考答案不自然：\"It took us five years to reach the attainment of this goal\"——reach the attainment 語意重複（attainment 已是「達成」）。建議刪掉這句，只留 ref1。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/15 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nourish）原位換成翻譯題，沿用題 id b2-u53-l03-q17；目標字沿用 nourish",
+        "resolution": "改為 translate：promptZh「好的故事能滋養孩子的想像力。」、hintWords [\"nourish\"]、referenceEn [\"Good stories can nourish a child's imagination.\",\"A child's imagination can be nourished by good stories.\"]、rubricZh [\"nourish 當動詞，主動句、被動句都可以（例如 can nourish…、can be nourished by… 等）\",\"「孩子的想像力」可寫，例如 a child's imagination、children's imagination 等\",\"寫成現在式（例如 Good stories nourish…）也正確\"]（原 makeSentence：instructionZh「用 nourish 造一個句子，說明什麼東西能滋養心靈、植物或動物。」、referenceEn [\"Good music always nourishes my soul.\",\"Reading good books nourishes the mind.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

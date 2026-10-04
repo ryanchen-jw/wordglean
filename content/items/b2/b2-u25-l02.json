@@ -232,17 +232,19 @@
     },
     {
       "id": "b2-u25-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "browse",
-      "instructionZh": "用 browse 造一個句子，說說你平常會在網路上或店裡瀏覽什麼。",
+      "type": "translate",
+      "promptZh": "我們在那家二手書店逛了一個小時。",
+      "hintWords": [
+        "browse"
+      ],
       "referenceEn": [
-        "I often browse online shops before I buy new clothes.",
-        "I like to browse in bookstores on weekends."
+        "We browsed in that second-hand bookshop for an hour.",
+        "We spent an hour browsing in that used bookstore."
       ],
       "rubricZh": [
-        "句子要用到 browse",
-        "browse 後面可接名詞、介系詞片語等（例如 browse websites、browse in a shop 等）",
-        "說平常的習慣，時態配合內容（例如 browse、often browse 等）"
+        "browse 指隨意翻看、逛（例如 browse in a bookshop、browse the shelves 等）",
+        "時態可用過去式或現在完成式（例如 browsed、have browsed 等）",
+        "「二手書店」可寫，例如 second-hand bookshop、used bookstore 等"
       ]
     }
   ],
@@ -340,6 +342,12 @@
         "message": "第②關 issue 結案：疑似：干擾項「螢幕」代入例句 My desktop is full of icons（我的螢幕滿是圖示）語意也通，學習者易誤選；建議換成與桌面無關的物件（如「印表機」）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（browse）原位換成翻譯題，沿用題 id b2-u25-l02-q17；目標字沿用 browse",
+        "resolution": "改為 translate：promptZh「我們在那家二手書店逛了一個小時。」、hintWords [\"browse\"]、referenceEn [\"We browsed in that second-hand bookshop for an hour.\",\"We spent an hour browsing in that used bookstore.\"]、rubricZh [\"browse 指隨意翻看、逛（例如 browse in a bookshop、browse the shelves 等）\",\"時態可用過去式或現在完成式（例如 browsed、have browsed 等）\",\"「二手書店」可寫，例如 second-hand bookshop、used bookstore 等\"]（原 makeSentence：instructionZh「用 browse 造一個句子，說說你平常會在網路上或店裡瀏覽什麼。」、referenceEn [\"I often browse online shops before I buy new clothes.\",\"I like to browse in bookstores on weekends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

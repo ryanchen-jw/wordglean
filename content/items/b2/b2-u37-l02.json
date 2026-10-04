@@ -205,16 +205,19 @@
     },
     {
       "id": "b2-u37-l02-q15",
-      "type": "makeSentence",
-      "targetWord": "landlady",
-      "instructionZh": "用 landlady 造一個句子，說說你遇過或聽說過的一位女房東。",
+      "type": "translate",
+      "promptZh": "我的女房東住在樓上，還養了兩隻貓。",
+      "hintWords": [
+        "landlady"
+      ],
       "referenceEn": [
-        "My landlady is very kind and fixes things quickly.",
-        "My first landlady lived downstairs and often gave me cookies."
+        "My landlady lives upstairs and has two cats.",
+        "My landlady lives on the floor above me, and she has two cats."
       ],
       "rubricZh": [
-        "句子要用到 landlady",
-        "時態配合內容（例如 is、lived 等）"
+        "「女房東」可寫，例如 landlady 等",
+        "「住在樓上」可寫，例如 lives upstairs、lives on the floor above me 等",
+        "「養了兩隻貓」可寫，例如 has two cats、keeps two cats 等"
       ]
     }
   ],
@@ -300,6 +303,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"時態配合內容（例如 is、lived）\"；改後：\"時態配合內容（例如 is、lived 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（landlady）原位換成翻譯題，沿用題 id b2-u37-l02-q15；目標字沿用 landlady",
+        "resolution": "改為 translate：promptZh「我的女房東住在樓上，還養了兩隻貓。」、hintWords [\"landlady\"]、referenceEn [\"My landlady lives upstairs and has two cats.\",\"My landlady lives on the floor above me, and she has two cats.\"]、rubricZh [\"「女房東」可寫，例如 landlady 等\",\"「住在樓上」可寫，例如 lives upstairs、lives on the floor above me 等\",\"「養了兩隻貓」可寫，例如 has two cats、keeps two cats 等\"]（原 makeSentence：instructionZh「用 landlady 造一個句子，說說你遇過或聽說過的一位女房東。」、referenceEn [\"My landlady is very kind and fixes things quickly.\",\"My first landlady lived downstairs and often gave me cookies.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u08-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "assumption",
-      "instructionZh": "用 assumption 造一個句子，說說你曾經做錯的一個假設。",
+      "type": "translate",
+      "promptZh": "這份預算是建立在銷售量會成長的假設上。",
+      "hintWords": [
+        "assumption"
+      ],
       "referenceEn": [
-        "I made the wrong assumption that my new colleague was the boss.",
-        "My assumption that the trip would be cheap turned out to be wrong."
+        "This budget is based on the assumption that sales will grow.",
+        "The budget was based on the assumption that sales would increase."
       ],
       "rubricZh": [
-        "句子要用到 assumption（例如 make an assumption、my assumption that… 等）",
-        "句子要說到你自己，並表示假設和實際情況不同"
+        "assumption 常用 the assumption that…（例如 based on the assumption that… 等）",
+        "「建立在…上」可寫，例如 is based on 等；時態可用現在式或過去式，子句配合",
+        "「成長」可寫，例如 grow、increase、go up 等"
       ]
     }
   ],
@@ -391,6 +394,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 assumption，常用 make an assumption、my assumption that…\",\"句子要說到你自己，並表示假設和實際情況不同\"]；改後：[\"句子要用到 assumption（例如 make an assumption、my assumption that… 等）\",\"句子要說到你自己，並表示假設和實際情況不同\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（assumption）原位換成翻譯題，沿用題 id b2-u08-l05-q17；目標字沿用 assumption",
+        "resolution": "改為 translate：promptZh「這份預算是建立在銷售量會成長的假設上。」、hintWords [\"assumption\"]、referenceEn [\"This budget is based on the assumption that sales will grow.\",\"The budget was based on the assumption that sales would increase.\"]、rubricZh [\"assumption 常用 the assumption that…（例如 based on the assumption that… 等）\",\"「建立在…上」可寫，例如 is based on 等；時態可用現在式或過去式，子句配合\",\"「成長」可寫，例如 grow、increase、go up 等\"]（原 makeSentence：instructionZh「用 assumption 造一個句子，說說你曾經做錯的一個假設。」、referenceEn [\"I made the wrong assumption that my new colleague was the boss.\",\"My assumption that the trip would be cheap turned out to be wrong.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

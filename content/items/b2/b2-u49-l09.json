@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u49-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "selfless",
-      "instructionZh": "用 selfless 造一個句子，描述你認識的一個無私的人或一件無私的行為。",
+      "type": "translate",
+      "promptZh": "他們的幫忙完全是無私的，從來不要求任何回報。",
+      "hintWords": [
+        "selfless"
+      ],
       "referenceEn": [
-        "My mother is selfless and always thinks of others before herself.",
-        "I will never forget my teacher's selfless help during my hardest year."
+        "Their help was completely selfless; they never asked for anything in return.",
+        "Their help was totally selfless, and they never asked for anything back."
       ],
       "rubricZh": [
-        "句子要用到 selfless（例如 is selfless、selfless help）",
-        "時態配合內容（例如 is、will never forget 等）"
+        "selfless 當形容詞（例如 was completely selfless 等）",
+        "「不要求任何回報」可寫，例如 never asked for anything in return 等",
+        "時態可用過去式或現在式（例如 was、is、asked、ask 等）"
       ]
     }
   ],
@@ -296,6 +299,12 @@
         "message": "執行長第②③關裁示修正：裁示「聽選正解不可照抄音檔」：正解改寫成同義說法，干擾項沿用音檔裡的字",
         "resolution": "改前：[\"Chicken from a can\", \"Any kind of meat at all\", \"Food from the supermarket\", \"Fish from a shop\"]；改後：[\"Chicken from a can\", \"Fish from any shop\", \"Food from the supermarket\", \"Fish bought at one place\"]",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（selfless）原位換成翻譯題，沿用題 id b2-u49-l09-q17；目標字沿用 selfless",
+        "resolution": "改為 translate：promptZh「他們的幫忙完全是無私的，從來不要求任何回報。」、hintWords [\"selfless\"]、referenceEn [\"Their help was completely selfless; they never asked for anything in return.\",\"Their help was totally selfless, and they never asked for anything back.\"]、rubricZh [\"selfless 當形容詞（例如 was completely selfless 等）\",\"「不要求任何回報」可寫，例如 never asked for anything in return 等\",\"時態可用過去式或現在式（例如 was、is、asked、ask 等）\"]（原 makeSentence：instructionZh「用 selfless 造一個句子，描述你認識的一個無私的人或一件無私的行為。」、referenceEn [\"My mother is selfless and always thinks of others before herself.\",\"I will never forget my teacher's selfless help during my hardest year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

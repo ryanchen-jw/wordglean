@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u07-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "portion",
-      "instructionZh": "用 portion 造一個句子，說說你的時間、收入的一部分，或一份食物。",
+      "type": "translate",
+      "promptZh": "這棟建築有一部分是一百多年前蓋的。",
+      "hintWords": [
+        "portion"
+      ],
       "referenceEn": [
-        "I usually save a small portion of my salary.",
-        "The portions at my favorite restaurant are too big for me."
+        "A portion of this building was built more than a hundred years ago.",
+        "One portion of the building was built over one hundred years ago."
       ],
       "rubricZh": [
-        "句子要用到 portion，表示「部分」或「（食物的）一份」（例如 a small portion of…、the portions）",
-        "句子要說到你自己的生活或經驗"
+        "portion 表示「一部分」（例如 a portion of、one portion of 等）",
+        "「蓋的」用被動（例如 was built 等）",
+        "「一百多年前」可寫，例如 more than a hundred years ago、over 100 years ago 等"
       ]
     }
   ],
@@ -487,6 +490,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"超過\"；改後：\"無限的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（portion）原位換成翻譯題，沿用題 id b2-u07-l03-q17；目標字沿用 portion",
+        "resolution": "改為 translate：promptZh「這棟建築有一部分是一百多年前蓋的。」、hintWords [\"portion\"]、referenceEn [\"A portion of this building was built more than a hundred years ago.\",\"One portion of the building was built over one hundred years ago.\"]、rubricZh [\"portion 表示「一部分」（例如 a portion of、one portion of 等）\",\"「蓋的」用被動（例如 was built 等）\",\"「一百多年前」可寫，例如 more than a hundred years ago、over 100 years ago 等\"]（原 makeSentence：instructionZh「用 portion 造一個句子，說說你的時間、收入的一部分，或一份食物。」、referenceEn [\"I usually save a small portion of my salary.\",\"The portions at my favorite restaurant are too big for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

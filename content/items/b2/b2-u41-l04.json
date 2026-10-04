@@ -233,16 +233,19 @@
     },
     {
       "id": "b2-u41-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "slam",
-      "instructionZh": "用 slam 造一個句子，說說你看過或聽過有人（或風）用力甩上門窗的情況。",
+      "type": "translate",
+      "promptZh": "我哥哥輸了比賽之後，用力甩上了房門。",
+      "hintWords": [
+        "slam"
+      ],
       "referenceEn": [
-        "My brother slammed the door when he lost the game.",
-        "The wind slammed the window shut last night."
+        "My brother slammed his bedroom door after he lost the game.",
+        "After losing the game, my older brother slammed the door of his room."
       ],
       "rubricZh": [
-        "句子要用到 slam",
-        "時態配合內容（例如 slammed、has slammed 等）"
+        "slam 指「用力甩上」（例如 slammed the door 等）",
+        "「輸了比賽之後」可寫，例如 after he lost the game、after losing the game 等，位置不限",
+        "用過去式（例如 slammed、lost 等）"
       ]
     }
   ],
@@ -298,6 +301,12 @@
         "message": "執行長第②③關裁示修正：第③關 A 疑似 5（裁示照建議改）：和 mcq 同為 plead with X to let him V；第③關 A 疑似 5（裁示照建議改）",
         "resolution": "改前：\"Leo 從巴西搬到台灣時，很難融入新學校。第一週，有些男生不讓他一起打籃球，因為他不太會說中文。Leo 沒有去求他們讓他打。他反而每天晚上獨自練習，繞著球場跑了一圈又一圈。有一天晚上，他感覺到有人在看他：原來學校的教練一直在看他練球。教練邀請他加入校隊，也很欣賞他富有創意的傳球方式。如今，Leo 的舊牛仔褲因為常跌倒，膝蓋上多了一塊補丁，但他已經是隊上最好的球員之一。\"；改後：\"Leo 從巴西搬到台灣時，很難融入新學校。第一週，有些男生不讓他一起打籃球，因為他不太會說中文。Leo 沒有去求別人給他上場的機會。他反而每天晚上獨自練習，繞著球場跑了一圈又一圈。有一天晚上，他感覺到有人在看他：原來學校的教練一直在看他練球。教練邀請他加入校隊，也很欣賞他富有創意的傳球方式。如今，Leo 的舊牛仔褲因為常跌倒，膝蓋上多了一塊補丁，但他已經是隊上最好的球員之一。\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（slam）原位換成翻譯題，沿用題 id b2-u41-l04-q17；目標字沿用 slam",
+        "resolution": "改為 translate：promptZh「我哥哥輸了比賽之後，用力甩上了房門。」、hintWords [\"slam\"]、referenceEn [\"My brother slammed his bedroom door after he lost the game.\",\"After losing the game, my older brother slammed the door of his room.\"]、rubricZh [\"slam 指「用力甩上」（例如 slammed the door 等）\",\"「輸了比賽之後」可寫，例如 after he lost the game、after losing the game 等，位置不限\",\"用過去式（例如 slammed、lost 等）\"]（原 makeSentence：instructionZh「用 slam 造一個句子，說說你看過或聽過有人（或風）用力甩上門窗的情況。」、referenceEn [\"My brother slammed the door when he lost the game.\",\"The wind slammed the window shut last night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

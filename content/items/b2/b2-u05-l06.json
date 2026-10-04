@@ -217,31 +217,35 @@
     {
       "id": "b2-u05-l06-q16",
       "type": "translate",
-      "promptZh": "因為下雨，比賽延到下週舉行。",
+      "promptZh": "那位作家的新書延後到明年春天出版。",
       "hintWords": [
         "postpone"
       ],
       "referenceEn": [
-        "Because of the rain, the game was postponed until next week.",
-        "The game has been postponed to next week because of the rain."
+        "The writer's new book has been postponed until next spring.",
+        "The publication of the writer's new book was postponed to next spring."
       ],
       "rubricZh": [
-        "postpone 常用被動（例如 was postponed、has been postponed），後面可接 until 或 to＋時間",
-        "「因為下雨」可寫 because of the rain、due to the rain 等"
+        "postpone 常用被動（例如 was postponed、has been postponed 等），後接 until、to＋時間",
+        "「延後出版」可寫，例如 the book has been postponed、the publication was postponed 等",
+        "時態可用過去式或現在完成式"
       ]
     },
     {
       "id": "b2-u05-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "alternate",
-      "instructionZh": "用 alternate 造一個句子，說說你和別人輪流做的事，或你輪流做的兩件事。",
+      "type": "translate",
+      "promptZh": "長途開車時，我和哥哥輪流開，這樣兩個人都不會太累。",
+      "hintWords": [
+        "alternate"
+      ],
       "referenceEn": [
-        "My sister and I alternate washing the dishes every night.",
-        "I alternate between running and swimming during the week."
+        "On long drives, my brother and I alternate driving so neither of us gets too tired.",
+        "My older brother and I alternate at the wheel on long trips, so neither of us gets too tired."
       ],
       "rubricZh": [
-        "句子要用到 alternate，當動詞表示「輪流、交替」（例如 alternate doing…、alternate between A and B）",
-        "句子要說到你自己"
+        "alternate 當動詞「輪流」（例如 alternate driving、alternate at the wheel 等）",
+        "「兩個人都不會太累」可寫，例如 neither of us gets too tired、nobody gets too tired 等",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -381,6 +385,18 @@
         "message": "執行長裁示修正：干擾項詞形還原後重掃（執行長裁示）：skim 為 q13 正解 skimmed 的原形；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"略讀\"；改後：\"重複\"",
         "resolvedAt": "2026-10-02T20:17:45Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與 b2-u05-l05-q16 同單元跨課雷同（next week 延期／封閉），且與同課聽選 q10（演唱會延期）同情境；換成出版延期；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「那位作家的新書延後到明年春天出版。」、referenceEn [\"The writer's new book has been postponed until next spring.\",\"The publication of the writer's new book was postponed to next spring.\"]、rubricZh [\"postpone 常用被動（例如 was postponed、has been postponed 等），後接 until、to＋時間\",\"「延後出版」可寫，例如 the book has been postponed、the publication was postponed 等\",\"時態可用過去式或現在完成式\"]（原 promptZh「因為下雨，比賽延到下週舉行。」、referenceEn [\"Because of the rain, the game was postponed until next week.\",\"The game has been postponed to next week because of the rain.\"]、rubricZh [\"postpone 常用被動（例如 was postponed、has been postponed），後面可接 until 或 to＋時間\",\"「因為下雨」可寫 because of the rain、due to the rain 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（alternate）原位換成翻譯題，沿用題 id b2-u05-l06-q17；目標字沿用 alternate",
+        "resolution": "改為 translate：promptZh「長途開車時，我和哥哥輪流開，這樣兩個人都不會太累。」、hintWords [\"alternate\"]、referenceEn [\"On long drives, my brother and I alternate driving so neither of us gets too tired.\",\"My older brother and I alternate at the wheel on long trips, so neither of us gets too tired.\"]、rubricZh [\"alternate 當動詞「輪流」（例如 alternate driving、alternate at the wheel 等）\",\"「兩個人都不會太累」可寫，例如 neither of us gets too tired、nobody gets too tired 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 alternate 造一個句子，說說你和別人輪流做的事，或你輪流做的兩件事。」、referenceEn [\"My sister and I alternate washing the dishes every night.\",\"I alternate between running and swimming during the week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

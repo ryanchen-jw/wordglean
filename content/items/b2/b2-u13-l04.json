@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u13-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "denim",
-      "instructionZh": "用 denim 造一個句子，說說你的牛仔衣物或穿搭習慣。",
+      "type": "translate",
+      "promptZh": "牛仔布很耐用，所以很適合拿來做工作服。",
+      "hintWords": [
+        "denim"
+      ],
       "referenceEn": [
-        "I wear a denim jacket almost every day in spring.",
-        "My favorite pair of denim jeans is ten years old."
+        "Denim is very strong, so it is good for work clothes.",
+        "Because denim lasts a long time, it is great for making work clothes."
       ],
       "rubricZh": [
-        "句子要用到 denim（例如 denim jacket、denim jeans、wear denim 等）",
-        "句子要說到你自己"
+        "denim 指「牛仔布」，不可數，動詞用單數（例如 Denim is… 等）",
+        "「耐用」可寫，例如 strong、lasts a long time、hard-wearing 等",
+        "「適合做工作服」可寫，例如 good for work clothes、great for making work clothes 等"
       ]
     }
   ],
@@ -347,6 +350,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 denim，常用 denim jacket、denim jeans、wear denim\",\"句子要說到你自己\"]；改後：[\"句子要用到 denim（例如 denim jacket、denim jeans、wear denim 等）\",\"句子要說到你自己\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（denim）原位換成翻譯題，沿用題 id b2-u13-l04-q17；目標字沿用 denim",
+        "resolution": "改為 translate：promptZh「牛仔布很耐用，所以很適合拿來做工作服。」、hintWords [\"denim\"]、referenceEn [\"Denim is very strong, so it is good for work clothes.\",\"Because denim lasts a long time, it is great for making work clothes.\"]、rubricZh [\"denim 指「牛仔布」，不可數，動詞用單數（例如 Denim is… 等）\",\"「耐用」可寫，例如 strong、lasts a long time、hard-wearing 等\",\"「適合做工作服」可寫，例如 good for work clothes、great for making work clothes 等\"]（原 makeSentence：instructionZh「用 denim 造一個句子，說說你的牛仔衣物或穿搭習慣。」、referenceEn [\"I wear a denim jacket almost every day in spring.\",\"My favorite pair of denim jeans is ten years old.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

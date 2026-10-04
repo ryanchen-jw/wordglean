@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u21-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "navigation",
-      "instructionZh": "用 navigation 造一個句子，說說你開車、騎車或走路時怎麼找路。",
+      "type": "translate",
+      "promptZh": "這支手機的導航在山區也能用。",
+      "hintWords": [
+        "navigation"
+      ],
       "referenceEn": [
-        "I always use the navigation system in my car when I drive somewhere new.",
-        "I am not good at navigation, so I always ask people for directions when I walk."
+        "The navigation on this phone works even in the mountains.",
+        "Navigation on this phone still works in the mountains."
       ],
       "rubricZh": [
-        "句子要用到 navigation",
-        "時態合理即可"
+        "navigation 指導航（例如 the navigation on this phone 等）",
+        "「也能用」可寫，例如 works even in…、still works in… 等",
+        "「山區」可寫，例如 in the mountains、in mountain areas 等"
       ]
     }
   ],
@@ -317,6 +320,12 @@
         "message": "執行長最終複審修正：A 第 3 批：第一義為名詞，干擾項同詞性",
         "resolution": "改前：[\"推\",\"拉\",\"按\"]；改後：[\"把手\",\"座墊\",\"車鈴\"]",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（navigation）原位換成翻譯題，沿用題 id b2-u21-l03-q17；目標字沿用 navigation",
+        "resolution": "改為 translate：promptZh「這支手機的導航在山區也能用。」、hintWords [\"navigation\"]、referenceEn [\"The navigation on this phone works even in the mountains.\",\"Navigation on this phone still works in the mountains.\"]、rubricZh [\"navigation 指導航（例如 the navigation on this phone 等）\",\"「也能用」可寫，例如 works even in…、still works in… 等\",\"「山區」可寫，例如 in the mountains、in mountain areas 等\"]（原 makeSentence：instructionZh「用 navigation 造一個句子，說說你開車、騎車或走路時怎麼找路。」、referenceEn [\"I always use the navigation system in my car when I drive somewhere new.\",\"I am not good at navigation, so I always ask people for directions when I walk.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

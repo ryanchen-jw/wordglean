@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u06-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "urgently",
-      "instructionZh": "用 urgently 造一個句子，說說你急需的某樣東西或急著要做的事。",
+      "type": "translate",
+      "promptZh": "經理緊急把大家叫來開會。",
+      "hintWords": [
+        "urgently"
+      ],
       "referenceEn": [
-        "I urgently need a new laptop because mine broke yesterday.",
-        "I had to leave work urgently when my son's school called."
+        "The manager urgently called everyone to a meeting.",
+        "The manager urgently asked everyone to come to a meeting."
       ],
       "rubricZh": [
-        "句子要用到 urgently，修飾動詞（例如 urgently need、leave urgently）",
-        "句子要說到你自己，並說明為什麼很急"
+        "urgently 修飾動詞，可放動詞前或句尾（例如 urgently called 等）",
+        "「把大家叫來開會」可寫，例如 called everyone to a meeting、asked everyone to meet 等",
+        "時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -427,6 +430,12 @@
         "message": "執行長裁示修正：釋義原則澄清後改寫例句：避開本課其他題的情境或句型",
         "resolution": "改前：\"那是個艱難的決定，但我們還是把店收了。\"；改後：\"農場生活很艱苦，尤其是冬天。\"",
         "resolvedAt": "2026-10-02T20:24:28Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（urgently）原位換成翻譯題，沿用題 id b2-u06-l04-q17；目標字沿用 urgently",
+        "resolution": "改為 translate：promptZh「經理緊急把大家叫來開會。」、hintWords [\"urgently\"]、referenceEn [\"The manager urgently called everyone to a meeting.\",\"The manager urgently asked everyone to come to a meeting.\"]、rubricZh [\"urgently 修飾動詞，可放動詞前或句尾（例如 urgently called 等）\",\"「把大家叫來開會」可寫，例如 called everyone to a meeting、asked everyone to meet 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 urgently 造一個句子，說說你急需的某樣東西或急著要做的事。」、referenceEn [\"I urgently need a new laptop because mine broke yesterday.\",\"I had to leave work urgently when my son's school called.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

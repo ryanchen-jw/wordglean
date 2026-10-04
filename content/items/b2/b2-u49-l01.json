@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u49-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "hilarious",
-      "instructionZh": "用 hilarious 造一個句子，說說一部讓你爆笑的電影、節目或一件事。",
+      "type": "translate",
+      "promptZh": "我叔叔講的笑話總是讓人爆笑。",
+      "hintWords": [
+        "hilarious"
+      ],
       "referenceEn": [
-        "I watched a hilarious cartoon with my sister last night.",
-        "The video of my dog chasing its own tail is hilarious."
+        "My uncle's jokes are always hilarious.",
+        "My uncle always tells hilarious jokes."
       ],
       "rubricZh": [
-        "句子要用到 hilarious（例如 a hilarious cartoon、is hilarious）",
-        "時態配合內容（例如 watched、is 等）"
+        "hilarious 當形容詞，可放 be 動詞後或名詞前（例如 are hilarious、hilarious jokes 等）",
+        "always 可放動詞前或 be 動詞後，位置不扣分",
+        "「叔叔」可寫，例如 uncle 等"
       ]
     }
   ],
@@ -314,6 +317,12 @@
         "message": "執行長第②③關裁示修正：裁示「情境表逐列人工判定」：重判後主詞、情境、句型換不到兩項，改寫",
         "resolution": "改前：\"我朋友 Leo 是我認識最愛冒險的人。去年，他加入了一個很有個性的舞團，雖然他從來沒跳過舞。第一次演出時他跌倒了，觀眾席裡幾個愛欺負人的傢伙還出聲嘲笑。那很丟臉，但他站起來，開開心心地跳完。觀眾都很喜歡，下半場的表演也非常精彩。現在他每次參加派對，都把這件事當成爆笑故事來講。\"；改後：\"我朋友 Leo 是我認識最愛冒險的人。去年，他加入了一個很有個性的舞團，雖然他從來沒跳過舞。第一次演出時他跌倒了，觀眾席裡幾個愛欺負人的傢伙還出聲嘲笑。那很丟臉，但他站起來，開開心心地跳完。觀眾都很喜歡，精彩的下半場在熱烈的歡呼聲中結束。現在他每次參加派對，都把這件事當成爆笑故事來講。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hilarious）原位換成翻譯題，沿用題 id b2-u49-l01-q17；目標字沿用 hilarious",
+        "resolution": "改為 translate：promptZh「我叔叔講的笑話總是讓人爆笑。」、hintWords [\"hilarious\"]、referenceEn [\"My uncle's jokes are always hilarious.\",\"My uncle always tells hilarious jokes.\"]、rubricZh [\"hilarious 當形容詞，可放 be 動詞後或名詞前（例如 are hilarious、hilarious jokes 等）\",\"always 可放動詞前或 be 動詞後，位置不扣分\",\"「叔叔」可寫，例如 uncle 等\"]（原 makeSentence：instructionZh「用 hilarious 造一個句子，說說一部讓你爆笑的電影、節目或一件事。」、referenceEn [\"I watched a hilarious cartoon with my sister last night.\",\"The video of my dog chasing its own tail is hilarious.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

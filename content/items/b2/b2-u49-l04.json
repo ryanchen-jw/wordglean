@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u49-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "bravery",
-      "instructionZh": "用 bravery 造一個句子，說說一個讓你欣賞的勇敢行為。",
+      "type": "translate",
+      "promptZh": "大家都稱讚那個男孩的勇敢，因為他把一隻小狗從河裡救了起來。",
+      "hintWords": [
+        "bravery"
+      ],
       "referenceEn": [
-        "I admire the bravery of the girl who saved a cat from the river.",
-        "My father showed great bravery when he spoke up for a stranger."
+        "Everyone praised the boy's bravery because he saved a puppy from the river.",
+        "Everyone praised the boy for his bravery after he saved a little dog from the river."
       ],
       "rubricZh": [
-        "句子要用到 bravery 當名詞（例如 the bravery of…、showed great bravery）",
-        "時態配合內容（例如 admire、showed 等）"
+        "bravery 當名詞（例如 the boy's bravery、praised him for his bravery 等）",
+        "「稱讚」可寫，例如 praised、admired 等；「救起」可寫，例如 saved、pulled … out of 等",
+        "時態配合句意（例如 praised、praise、saved 等）"
       ]
     }
   ],
@@ -314,6 +317,12 @@
         "message": "執行長第②③關裁示修正：裁示「情境表逐列人工判定」：重判後主詞、情境、句型換不到兩項，改寫（heartbreaking 與單字卡同為 It was heartbreaking to…）",
         "resolution": "改前：\"在機場和最好的朋友分開，真令人心碎。\"；改後：\"和最好的朋友在機場分開，真令人心碎。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bravery）原位換成翻譯題，沿用題 id b2-u49-l04-q17；目標字沿用 bravery",
+        "resolution": "改為 translate：promptZh「大家都稱讚那個男孩的勇敢，因為他把一隻小狗從河裡救了起來。」、hintWords [\"bravery\"]、referenceEn [\"Everyone praised the boy's bravery because he saved a puppy from the river.\",\"Everyone praised the boy for his bravery after he saved a little dog from the river.\"]、rubricZh [\"bravery 當名詞（例如 the boy's bravery、praised him for his bravery 等）\",\"「稱讚」可寫，例如 praised、admired 等；「救起」可寫，例如 saved、pulled … out of 等\",\"時態配合句意（例如 praised、praise、saved 等）\"]（原 makeSentence：instructionZh「用 bravery 造一個句子，說說一個讓你欣賞的勇敢行為。」、referenceEn [\"I admire the bravery of the girl who saved a cat from the river.\",\"My father showed great bravery when he spoke up for a stranger.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

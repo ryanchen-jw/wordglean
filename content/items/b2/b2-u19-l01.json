@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u19-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "tuition",
-      "instructionZh": "用 tuition 造一個句子，說說你上過的課或學費的情況（事實描述即可）。",
+      "type": "translate",
+      "promptZh": "這所大學明年會調漲學費。",
+      "hintWords": [
+        "tuition"
+      ],
       "referenceEn": [
-        "I paid my own tuition for a short cooking course last year.",
-        "My parents helped me with my university tuition."
+        "The university will raise its tuition next year.",
+        "This university is going to increase tuition next year."
       ],
       "rubricZh": [
-        "句子要用到 tuition（例如 pay tuition、university tuition）",
-        "時態合理即可（例如 paid、pay）"
+        "tuition 指學費（例如 raise its tuition、tuition fees 等）",
+        "「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）",
+        "「調漲」可寫，例如 raise、increase、put up 等"
       ]
     }
   ],
@@ -329,6 +332,12 @@
         "message": "第②關雙答案（faculty／seminar）：干擾項 seminar 已換成 exam（tuition 換成 translator），判題更新為唯一正解；待執行長安排重新盲答確認",
         "resolution": "改前：[1,3]；改後：[1]",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tuition）原位換成翻譯題，沿用題 id b2-u19-l01-q17；目標字沿用 tuition",
+        "resolution": "改為 translate：promptZh「這所大學明年會調漲學費。」、hintWords [\"tuition\"]、referenceEn [\"The university will raise its tuition next year.\",\"This university is going to increase tuition next year.\"]、rubricZh [\"tuition 指學費（例如 raise its tuition、tuition fees 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）\",\"「調漲」可寫，例如 raise、increase、put up 等\"]（原 makeSentence：instructionZh「用 tuition 造一個句子，說說你上過的課或學費的情況（事實描述即可）。」、referenceEn [\"I paid my own tuition for a short cooking course last year.\",\"My parents helped me with my university tuition.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

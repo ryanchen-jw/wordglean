@@ -218,16 +218,19 @@
     },
     {
       "id": "b2-u15-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "prawn",
-      "instructionZh": "用 prawn 造一個句子，說說你喜歡怎麼吃明蝦。",
+      "type": "translate",
+      "promptZh": "剝蝦殼很花時間。",
+      "hintWords": [
+        "prawn"
+      ],
       "referenceEn": [
-        "I like prawns cooked with lots of garlic and butter.",
-        "My favorite dish at the night market is fried prawns."
+        "Peeling prawns takes a lot of time.",
+        "It takes a long time to peel prawns."
       ],
       "rubricZh": [
-        "句子要用到 prawn 或 prawns",
-        "句子要說到你自己"
+        "prawn 指「明蝦、大蝦」，泛指時用複數 prawns",
+        "「剝殼」可寫，例如 peel、take the shells off 等",
+        "「很花時間」可寫，例如 takes a lot of time、It takes a long time to 等"
       ]
     }
   ],
@@ -385,6 +388,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"sparerib 通常用複數（例如 spareribs）\",\"「糖醋」可寫 sweet and sour；「很受歡迎」可寫 very popular 等\"]；改後：[\"sparerib 通常用複數（例如 spareribs 等）\",\"「糖醋」可寫，例如 sweet and sour 等；「很受歡迎」可寫，例如 very popular 等\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（prawn）原位換成翻譯題，沿用題 id b2-u15-l06-q16；目標字沿用 prawn",
+        "resolution": "改為 translate：promptZh「剝蝦殼很花時間。」、hintWords [\"prawn\"]、referenceEn [\"Peeling prawns takes a lot of time.\",\"It takes a long time to peel prawns.\"]、rubricZh [\"prawn 指「明蝦、大蝦」，泛指時用複數 prawns\",\"「剝殼」可寫，例如 peel、take the shells off 等\",\"「很花時間」可寫，例如 takes a lot of time、It takes a long time to 等\"]（原 makeSentence：instructionZh「用 prawn 造一個句子，說說你喜歡怎麼吃明蝦。」、referenceEn [\"I like prawns cooked with lots of garlic and butter.\",\"My favorite dish at the night market is fried prawns.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -220,16 +220,19 @@
     },
     {
       "id": "b2-u19-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "botany",
-      "instructionZh": "用 botany 造一個句子，說說你對植物學或植物的興趣。",
+      "type": "translate",
+      "promptZh": "這本植物學的書裡有很多漂亮的插圖。",
+      "hintWords": [
+        "botany"
+      ],
       "referenceEn": [
-        "I don't know much about botany, but I enjoy growing herbs.",
-        "I became interested in botany after visiting a large garden."
+        "This botany book has a lot of beautiful pictures.",
+        "There are many beautiful drawings in this book on botany."
       ],
       "rubricZh": [
-        "句子要用到 botany",
-        "時態合理即可（例如 enjoy、became）"
+        "botany 指植物學（例如 a botany book、a book on botany 等）",
+        "「插圖」可寫，例如 pictures、drawings、illustrations 等",
+        "句型可寫，例如 This book has…、There are… in this book 等"
       ]
     }
   ],
@@ -297,6 +300,12 @@
         "message": "第②關 issue 結案：疑似：「Our teacher's rules take some endurance at first」硬塞前課字 endurance，不自然；可改 take some getting used to",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/13 的 2 筆修正紀錄。",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（botany）原位換成翻譯題，沿用題 id b2-u19-l08-q16；目標字沿用 botany",
+        "resolution": "改為 translate：promptZh「這本植物學的書裡有很多漂亮的插圖。」、hintWords [\"botany\"]、referenceEn [\"This botany book has a lot of beautiful pictures.\",\"There are many beautiful drawings in this book on botany.\"]、rubricZh [\"botany 指植物學（例如 a botany book、a book on botany 等）\",\"「插圖」可寫，例如 pictures、drawings、illustrations 等\",\"句型可寫，例如 This book has…、There are… in this book 等\"]（原 makeSentence：instructionZh「用 botany 造一個句子，說說你對植物學或植物的興趣。」、referenceEn [\"I don't know much about botany, but I enjoy growing herbs.\",\"I became interested in botany after visiting a large garden.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

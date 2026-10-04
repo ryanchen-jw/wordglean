@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u14-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "leash",
-      "instructionZh": "用 leash 造一個句子，說說遛狗時的情況或規定。",
+      "type": "translate",
+      "promptZh": "那隻小狗咬斷了牽繩跑掉了。",
+      "hintWords": [
+        "leash"
+      ],
       "referenceEn": [
-        "I always keep my dog on a leash when we cross the street.",
-        "My neighbor's puppy pulls hard on its leash during walks."
+        "The puppy bit through its leash and ran away.",
+        "The little dog chewed through its leash and ran off."
       ],
       "rubricZh": [
-        "句子要用到 leash（例如 on a leash、pull on its leash）",
-        "描述要合理；狗可用 it，也可用 he、she"
+        "leash 指「狗的牽繩」（例如 its leash 等）",
+        "「咬斷」可寫，例如 bit through、chewed through 等",
+        "時態可用過去式或現在完成式（例如 bit、has run away 等）；動物可用 it、he、she 指稱"
       ]
     }
   ],
@@ -449,6 +452,12 @@
         "message": "執行長裁示修正：釋義原則澄清後改寫例句：避開本課其他題的情境或句型",
         "resolution": "改前：\"把外套掛在門邊的掛釘上。\"；改後：\"牆上有一排掛釘，讓孩子們掛書包。\"",
         "resolvedAt": "2026-10-02T20:24:28Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（leash）原位換成翻譯題，沿用題 id b2-u14-l04-q17；目標字沿用 leash",
+        "resolution": "改為 translate：promptZh「那隻小狗咬斷了牽繩跑掉了。」、hintWords [\"leash\"]、referenceEn [\"The puppy bit through its leash and ran away.\",\"The little dog chewed through its leash and ran off.\"]、rubricZh [\"leash 指「狗的牽繩」（例如 its leash 等）\",\"「咬斷」可寫，例如 bit through、chewed through 等\",\"時態可用過去式或現在完成式（例如 bit、has run away 等）；動物可用 it、he、she 指稱\"]（原 makeSentence：instructionZh「用 leash 造一個句子，說說遛狗時的情況或規定。」、referenceEn [\"I always keep my dog on a leash when we cross the street.\",\"My neighbor's puppy pulls hard on its leash during walks.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

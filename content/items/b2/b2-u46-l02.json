@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u46-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "bureaucracy",
-      "instructionZh": "用 bureaucracy 造一個句子，說說你辦事時遇到繁瑣手續的經驗。",
+      "type": "translate",
+      "promptZh": "申請停車證要經過很多繁瑣的手續。",
+      "hintWords": [
+        "bureaucracy"
+      ],
       "referenceEn": [
-        "I waited three hours at the city office because of all the bureaucracy.",
-        "There was so much bureaucracy that I almost gave up on my visa."
+        "Getting a parking permit involves a lot of bureaucracy.",
+        "There is a lot of bureaucracy involved in getting a parking permit."
       ],
       "rubricZh": [
-        "句子要用到 bureaucracy（例如 all the bureaucracy、so much bureaucracy）",
-        "時態配合內容（例如 waited、was 等）"
+        "bureaucracy 表示「繁瑣手續」（例如 a lot of bureaucracy 等）",
+        "「申請停車證」可寫，例如 getting a parking permit、applying for a parking permit 等",
+        "「要經過」可寫，例如 involves、there is … involved 等"
       ]
     }
   ],
@@ -326,6 +329,12 @@
         "message": "執行長第②③關裁示修正：裁示：TWP_ACCEPTED 已加入「游擊」，guerrilla 改回台灣慣用寫法",
         "resolution": "改前：\"有些小公司用打帶跑式的突襲行銷來吸引年輕顧客。\"；改後：\"有些小公司用游擊式行銷來吸引年輕顧客。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bureaucracy）原位換成翻譯題，沿用題 id b2-u46-l02-q17；目標字沿用 bureaucracy",
+        "resolution": "改為 translate：promptZh「申請停車證要經過很多繁瑣的手續。」、hintWords [\"bureaucracy\"]、referenceEn [\"Getting a parking permit involves a lot of bureaucracy.\",\"There is a lot of bureaucracy involved in getting a parking permit.\"]、rubricZh [\"bureaucracy 表示「繁瑣手續」（例如 a lot of bureaucracy 等）\",\"「申請停車證」可寫，例如 getting a parking permit、applying for a parking permit 等\",\"「要經過」可寫，例如 involves、there is … involved 等\"]（原 makeSentence：instructionZh「用 bureaucracy 造一個句子，說說你辦事時遇到繁瑣手續的經驗。」、referenceEn [\"I waited three hours at the city office because of all the bureaucracy.\",\"There was so much bureaucracy that I almost gave up on my visa.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

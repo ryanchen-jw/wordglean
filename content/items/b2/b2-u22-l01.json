@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u22-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "deer",
-      "instructionZh": "用 deer 造一個句子，說說你看過或想看的鹿。",
+      "type": "translate",
+      "promptZh": "這座島上的鹿一點也不怕人。",
+      "hintWords": [
+        "deer"
+      ],
       "referenceEn": [
-        "I fed some deer at a park when I traveled abroad.",
-        "I hope to see wild deer in the mountains one day."
+        "The deer on this island are not afraid of people at all.",
+        "The deer on this island aren't scared of people at all."
       ],
       "rubricZh": [
-        "句子要用到 deer（單複數同形）",
-        "時態合理即可"
+        "deer 單複數同形，不加 s；動詞用 are 或 is 都可以（例如 The deer… are 等）",
+        "「一點也不怕」可寫，例如 not afraid of… at all、not scared of… at all 等"
       ]
     }
   ],
@@ -335,6 +337,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"在尖峰時段，例如星期五晚上，火車票比較貴。\"；改後：\"山頂終年覆蓋著白雪。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（deer）原位換成翻譯題，沿用題 id b2-u22-l01-q17；目標字沿用 deer",
+        "resolution": "改為 translate：promptZh「這座島上的鹿一點也不怕人。」、hintWords [\"deer\"]、referenceEn [\"The deer on this island are not afraid of people at all.\",\"The deer on this island aren't scared of people at all.\"]、rubricZh [\"deer 單複數同形，不加 s；動詞用 are 或 is 都可以（例如 The deer… are 等）\",\"「一點也不怕」可寫，例如 not afraid of… at all、not scared of… at all 等\"]（原 makeSentence：instructionZh「用 deer 造一個句子，說說你看過或想看的鹿。」、referenceEn [\"I fed some deer at a park when I traveled abroad.\",\"I hope to see wild deer in the mountains one day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u53-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "animate",
-      "instructionZh": "用 animate 造一個句子，描述什麼讓一個地方或活動變得熱鬧有生氣。",
+      "type": "translate",
+      "promptZh": "她的笑話讓整個派對都熱鬧了起來。",
+      "hintWords": [
+        "animate"
+      ],
       "referenceEn": [
-        "Music always animates our family parties.",
-        "The new coach animated the tired team."
+        "Her jokes animated the whole party.",
+        "The whole party was animated by her jokes."
       ],
       "rubricZh": [
-        "句子要用到 animate（例如 animates our parties、animated the team）",
-        "時態配合內容（例如 animates、animated 等）"
+        "animate 當動詞「使活躍」，主動句、被動句都可以（例如 animated the whole party 等）",
+        "時態可用過去式或現在式（例如 animated、animate 等）"
       ]
     }
   ],
@@ -479,6 +481,12 @@
         "message": "第②關 issue 結案：疑似醫療建議（§11.11）：\"put some cream on it instead\"（蚊蟲咬傷擦藥膏）是處置建議，題目也問「說話者建議怎麼做」。建議換成非醫療情境的 itch（例如毛衣讓人發癢、改穿別件）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/9 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（animate）原位換成翻譯題，沿用題 id b2-u53-l04-q17；目標字沿用 animate",
+        "resolution": "改為 translate：promptZh「她的笑話讓整個派對都熱鬧了起來。」、hintWords [\"animate\"]、referenceEn [\"Her jokes animated the whole party.\",\"The whole party was animated by her jokes.\"]、rubricZh [\"animate 當動詞「使活躍」，主動句、被動句都可以（例如 animated the whole party 等）\",\"時態可用過去式或現在式（例如 animated、animate 等）\"]（原 makeSentence：instructionZh「用 animate 造一個句子，描述什麼讓一個地方或活動變得熱鬧有生氣。」、referenceEn [\"Music always animates our family parties.\",\"The new coach animated the tired team.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

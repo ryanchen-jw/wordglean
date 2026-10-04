@@ -232,16 +232,19 @@
     },
     {
       "id": "b2-u29-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "mentor",
-      "instructionZh": "用 mentor 造一個句子，說說一位曾經指導過你的人。",
+      "type": "translate",
+      "promptZh": "這位年輕廚師很幸運，有一位經驗豐富的導師。",
+      "hintWords": [
+        "mentor"
+      ],
       "referenceEn": [
-        "My uncle was my mentor when I started my own small business.",
-        "My piano teacher has been my mentor for many years."
+        "This young chef is lucky to have an experienced mentor.",
+        "The young chef is lucky because she has an experienced mentor."
       ],
       "rubricZh": [
-        "句子要用到 mentor",
-        "時態配合內容（例如 was、has been 等）"
+        "mentor 指「導師」（例如 have an experienced mentor 等）",
+        "「很幸運」可寫，例如 is lucky to have、is lucky because 等",
+        "廚師用 he、she 都可以，不扣分"
       ]
     }
   ],
@@ -363,6 +366,18 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）；情境表逐列人工重判：同課兩題事件類型相同，改寫（b1b4／b2cd1 裁示）：造句參考答案與跟讀同為「導師教我…」",
         "resolution": "改前：\"時態配合內容（例如 was、has been）\"；改後：\"時態配合內容（例如 was、has been 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mentor）原位換成翻譯題，沿用題 id b2-u29-l01-q17；目標字沿用 mentor",
+        "resolution": "改為 translate：promptZh「我爺爺退休後，成為好幾位年輕農夫的導師。」、hintWords [\"mentor\"]、referenceEn [\"After he retired, my grandfather became a mentor to several young farmers.\",\"My grandfather became a mentor for several young farmers after he retired.\"]、rubricZh [\"「導師」可寫，例如 a mentor to、a mentor for 等\",\"「退休後」可寫，例如 after he retired、after his retirement 等，可放句首或句尾\",\"時態可用過去式或現在完成式（例如 became、has become 等）；寫 has become 也正確\"]（原 makeSentence：instructionZh「用 mentor 造一個句子，說說一位曾經指導過你的人。」、referenceEn [\"My uncle was my mentor when I started my own small business.\",\"My piano teacher has been my mentor for many years.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u27-l02 單字卡 politically（My grandfather became … after he retired）主詞、情境、句型三項相同",
+        "resolution": "改為 promptZh「這位年輕廚師很幸運，有一位經驗豐富的導師。」、referenceEn [\"This young chef is lucky to have an experienced mentor.\",\"The young chef is lucky because she has an experienced mentor.\"]、rubricZh [\"mentor 指「導師」（例如 have an experienced mentor 等）\",\"「很幸運」可寫，例如 is lucky to have、is lucky because 等\",\"廚師用 he、she 都可以，不扣分\"]（原 promptZh「我爺爺退休後，成為好幾位年輕農夫的導師。」、referenceEn [\"After he retired, my grandfather became a mentor to several young farmers.\",\"My grandfather became a mentor for several young farmers after he retired.\"]、rubricZh [\"「導師」可寫，例如 a mentor to、a mentor for 等\",\"「退休後」可寫，例如 after he retired、after his retirement 等，可放句首或句尾\",\"時態可用過去式或現在完成式（例如 became、has become 等）；寫 has become 也正確\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u05-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "merge",
-      "instructionZh": "用 merge 造一個句子，說說兩個團體、公司或東西合併的情況。",
+      "type": "translate",
+      "promptZh": "這兩條河在城市的東邊匯合。",
+      "hintWords": [
+        "merge"
+      ],
       "referenceEn": [
-        "Last year, my running club merged with a club in the next town.",
-        "Our two small classes merged into one because there were few students."
+        "The two rivers merge on the east side of the city.",
+        "These two rivers merge to the east of the city."
       ],
       "rubricZh": [
-        "句子要用到 merge（例如 merge with…、merge into one）",
-        "句意要表示兩者合併成一個，時態合理即可"
+        "merge 表示「匯合」，可不接受詞（例如 The two rivers merge… 等）",
+        "「城市的東邊」可寫，例如 on the east side of the city、east of the city 等"
       ]
     }
   ],
@@ -437,6 +439,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"closure 是名詞，表示「封閉」（例如 a road closure、the closure of this road）\",\"「三天」可寫 three-day（放名詞前）或 for three days；寫 will be closed for three days 意思也對\"]；改後：[\"closure 是名詞，表示「封閉」（例如 a road closure、the closure of this road 等）\",\"「三天」可寫，例如 three-day（放名詞前）、for three days 等；寫 will be closed for three days 意思也對\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（merge）原位換成翻譯題，沿用題 id b2-u05-l05-q17；目標字沿用 merge",
+        "resolution": "改為 translate：promptZh「這兩條河在城市的東邊匯合。」、hintWords [\"merge\"]、referenceEn [\"The two rivers merge on the east side of the city.\",\"These two rivers merge to the east of the city.\"]、rubricZh [\"merge 表示「匯合」，可不接受詞（例如 The two rivers merge… 等）\",\"「城市的東邊」可寫，例如 on the east side of the city、east of the city 等\"]（原 makeSentence：instructionZh「用 merge 造一個句子，說說兩個團體、公司或東西合併的情況。」、referenceEn [\"Last year, my running club merged with a club in the next town.\",\"Our two small classes merged into one because there were few students.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

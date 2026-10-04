@@ -216,16 +216,19 @@
     },
     {
       "id": "b2-u52-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "bad-tempered",
-      "instructionZh": "用 bad-tempered 造一個句子，描述你自己或身邊一個脾氣不好的人或動物。",
+      "type": "translate",
+      "promptZh": "我室友沒睡飽的時候，脾氣就很差。",
+      "hintWords": [
+        "bad-tempered"
+      ],
       "referenceEn": [
-        "I become bad-tempered when I'm hungry.",
-        "Our old cat is bad-tempered and hates being picked up."
+        "My roommate is bad-tempered when he doesn't get enough sleep.",
+        "When my roommate hasn't slept enough, she gets bad-tempered."
       ],
       "rubricZh": [
-        "句子要用到 bad-tempered（例如 become bad-tempered、is bad-tempered）",
-        "時態配合內容（例如 become、is 等）"
+        "bad-tempered 當形容詞（例如 is bad-tempered、gets bad-tempered 等）",
+        "「沒睡飽」可寫，例如 doesn't get enough sleep、hasn't slept enough 等",
+        "中文沒有交代室友性別，he、she 都正確"
       ]
     }
   ],
@@ -305,6 +308,12 @@
         "message": "第②關 issue 結案：疑似不自然：\"I always have nerves before a competition\" 較少見，常見為 \"suffer from nerves\"、\"My nerves are always bad before…\"。建議 ref1 改成 \"My nerves are always bad before a competition.\" 之類。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（bad-tempered）原位換成翻譯題，沿用題 id b2-u52-l08-q16；目標字沿用 bad-tempered",
+        "resolution": "改為 translate：promptZh「我室友沒睡飽的時候，脾氣就很差。」、hintWords [\"bad-tempered\"]、referenceEn [\"My roommate is bad-tempered when he doesn't get enough sleep.\",\"When my roommate hasn't slept enough, she gets bad-tempered.\"]、rubricZh [\"bad-tempered 當形容詞（例如 is bad-tempered、gets bad-tempered 等）\",\"「沒睡飽」可寫，例如 doesn't get enough sleep、hasn't slept enough 等\",\"中文沒有交代室友性別，he、she 都正確\"]（原 makeSentence：instructionZh「用 bad-tempered 造一個句子，描述你自己或身邊一個脾氣不好的人或動物。」、referenceEn [\"I become bad-tempered when I'm hungry.\",\"Our old cat is bad-tempered and hates being picked up.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

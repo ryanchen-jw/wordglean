@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u05-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "alert",
-      "instructionZh": "用 alert 造一個句子，說說你遇到某種情況時通知了誰（或會通知誰）。",
+      "type": "translate",
+      "promptZh": "每次有人用我的卡，銀行都會傳簡訊通知我。",
+      "hintWords": [
+        "alert"
+      ],
       "referenceEn": [
-        "If I see smoke, I will alert the security guard right away.",
-        "I alerted my neighbor when I saw her window was open in the rain."
+        "My bank alerts me by text message every time my card is used.",
+        "Every time someone uses my card, my bank alerts me with a text message."
       ],
       "rubricZh": [
-        "句子要用到 alert，當動詞表示「通知、提醒」（例如 alert the guard）",
-        "句子要說清楚是什麼情況、通知了誰"
+        "alert 表示「通知」，後面接被通知的人（例如 alerts me 等）",
+        "「傳簡訊」可寫，例如 by text message、with a text、sends me a message 等",
+        "用現在式表示習慣；寫 will alert 也正確"
       ]
     }
   ],
@@ -371,6 +374,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"檢查\"；改後：\"效果\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（alert）原位換成翻譯題，沿用題 id b2-u05-l04-q17；目標字沿用 alert",
+        "resolution": "改為 translate：promptZh「每次有人用我的卡，銀行都會傳簡訊通知我。」、hintWords [\"alert\"]、referenceEn [\"My bank alerts me by text message every time my card is used.\",\"Every time someone uses my card, my bank alerts me with a text message.\"]、rubricZh [\"alert 表示「通知」，後面接被通知的人（例如 alerts me 等）\",\"「傳簡訊」可寫，例如 by text message、with a text、sends me a message 等\",\"用現在式表示習慣；寫 will alert 也正確\"]（原 makeSentence：instructionZh「用 alert 造一個句子，說說你遇到某種情況時通知了誰（或會通知誰）。」、referenceEn [\"If I see smoke, I will alert the security guard right away.\",\"I alerted my neighbor when I saw her window was open in the rain.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

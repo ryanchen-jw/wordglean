@@ -231,17 +231,19 @@
     },
     {
       "id": "b2-u42-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "muddy",
-      "instructionZh": "用 muddy 造一個句子，說說你遇過的泥濘地方，或東西被泥巴弄髒的經驗。",
+      "type": "translate",
+      "promptZh": "我弟弟踢完足球後，褲子上全是泥巴。",
+      "hintWords": [
+        "muddy"
+      ],
       "referenceEn": [
-        "My shoes got muddy when I walked through the park after the rain.",
-        "The road to my grandparents' farm becomes muddy every winter."
+        "My brother's trousers were all muddy after he played football.",
+        "After playing soccer, my little brother's pants were completely muddy."
       ],
       "rubricZh": [
-        "句子要用到 muddy",
-        "muddy 的用法，例如 get muddy、a muddy road 等",
-        "時態合理（例如 got、becomes 等）"
+        "muddy 指「沾滿泥的」（例如 were all muddy、completely muddy 等）",
+        "「褲子」可寫，例如 trousers、pants 等；「足球」可寫，例如 football、soccer 等",
+        "時態可用過去式或現在式（例如 were、are 等）"
       ]
     }
   ],
@@ -297,6 +299,12 @@
         "message": "第②關 issue 結案：中文題目不順：「她的英文有了逐漸的進步」是翻譯腔，建議「她的英文逐漸進步了」或「她的英文慢慢有進步」（參考答案與評分要點不必改）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（muddy）原位換成翻譯題，沿用題 id b2-u42-l05-q17；目標字沿用 muddy",
+        "resolution": "改為 translate：promptZh「我弟弟踢完足球後，褲子上全是泥巴。」、hintWords [\"muddy\"]、referenceEn [\"My brother's trousers were all muddy after he played football.\",\"After playing soccer, my little brother's pants were completely muddy.\"]、rubricZh [\"muddy 指「沾滿泥的」（例如 were all muddy、completely muddy 等）\",\"「褲子」可寫，例如 trousers、pants 等；「足球」可寫，例如 football、soccer 等\",\"時態可用過去式或現在式（例如 were、are 等）\"]（原 makeSentence：instructionZh「用 muddy 造一個句子，說說你遇過的泥濘地方，或東西被泥巴弄髒的經驗。」、referenceEn [\"My shoes got muddy when I walked through the park after the rain.\",\"The road to my grandparents' farm becomes muddy every winter.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

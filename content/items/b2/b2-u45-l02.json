@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u45-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "breezy",
-      "instructionZh": "用 breezy 造一個句子，描述某個地方或某個季節的天氣。",
+      "type": "translate",
+      "promptZh": "山坡上那間房子傍晚時有微風，很涼爽。",
+      "hintWords": [
+        "breezy"
+      ],
       "referenceEn": [
-        "My hometown is cool and breezy in the autumn.",
-        "I like to sit on my balcony on breezy summer evenings."
+        "The house on the hill is breezy and cool in the evenings.",
+        "In the evenings, the house on the hill is cool and breezy."
       ],
       "rubricZh": [
-        "句子要用到 breezy（例如 breezy evenings、is breezy）",
-        "breezy 是形容詞，位置例如放在名詞前（breezy evenings）、放在 be 動詞後（is breezy）等都可以"
+        "breezy 表示「有微風的」（例如 is breezy and cool 等）",
+        "「傍晚時」可寫，例如 in the evening、in the evenings 等，位置句首句尾都可以",
+        "「涼爽」可寫，例如 cool、nice and cool 等"
       ]
     }
   ],
@@ -308,6 +311,12 @@
         "message": "執行長第②③關裁示修正：裁示「聽選正解不可照抄音檔」：正解改寫成同義說法，干擾項沿用音檔裡的字",
         "resolution": "改前：[\"Dry weather all week\", \"A clear, sunny evening\", \"Heavy snow tonight\", \"Rain sometime before evening\"]；改後：[\"Dry weather all week\", \"A clear, sunny evening\", \"Strong wind this evening\", \"Wet weather later today\"]",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（breezy）原位換成翻譯題，沿用題 id b2-u45-l02-q17；目標字沿用 breezy",
+        "resolution": "改為 translate：promptZh「山坡上那間房子傍晚時有微風，很涼爽。」、hintWords [\"breezy\"]、referenceEn [\"The house on the hill is breezy and cool in the evenings.\",\"In the evenings, the house on the hill is cool and breezy.\"]、rubricZh [\"breezy 表示「有微風的」（例如 is breezy and cool 等）\",\"「傍晚時」可寫，例如 in the evening、in the evenings 等，位置句首句尾都可以\",\"「涼爽」可寫，例如 cool、nice and cool 等\"]（原 makeSentence：instructionZh「用 breezy 造一個句子，描述某個地方或某個季節的天氣。」、referenceEn [\"My hometown is cool and breezy in the autumn.\",\"I like to sit on my balcony on breezy summer evenings.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

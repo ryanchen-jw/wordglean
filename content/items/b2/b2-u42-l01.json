@@ -230,17 +230,18 @@
     },
     {
       "id": "b2-u42-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "functional",
-      "instructionZh": "用 functional 造一個句子，描述一樣你覺得很實用的東西。",
+      "type": "translate",
+      "promptZh": "這張沙發床既好看又實用。",
+      "hintWords": [
+        "functional"
+      ],
       "referenceEn": [
-        "My old backpack is not pretty, but it is very functional.",
-        "I prefer functional furniture with lots of storage space."
+        "This sofa bed is attractive and functional.",
+        "This sofa bed looks nice, and it is very functional too."
       ],
       "rubricZh": [
-        "句子要用到 functional",
-        "functional 可放在名詞前或 be 動詞後（例如 functional furniture、is functional 等）",
-        "時態配合內容（例如 is、prefer 等）"
+        "functional 指「實用的」（例如 is functional、very functional 等）",
+        "「好看」可寫，例如 attractive、looks nice、good-looking 等"
       ]
     }
   ],
@@ -278,6 +279,12 @@
         "message": "執行長第②③關裁示修正：第③關 A 疑似 10（語感類，判斷要改）：原例句像動詞 fix 的被動",
         "resolution": "改前：\"架子用堅固的螺絲固定在牆上。\"；改後：\"那間博物館的開放時間是固定的。\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（functional）原位換成翻譯題，沿用題 id b2-u42-l01-q17；目標字沿用 functional",
+        "resolution": "改為 translate：promptZh「這張沙發床既好看又實用。」、hintWords [\"functional\"]、referenceEn [\"This sofa bed is attractive and functional.\",\"This sofa bed looks nice, and it is very functional too.\"]、rubricZh [\"functional 指「實用的」（例如 is functional、very functional 等）\",\"「好看」可寫，例如 attractive、looks nice、good-looking 等\"]（原 makeSentence：instructionZh「用 functional 造一個句子，描述一樣你覺得很實用的東西。」、referenceEn [\"My old backpack is not pretty, but it is very functional.\",\"I prefer functional furniture with lots of storage space.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

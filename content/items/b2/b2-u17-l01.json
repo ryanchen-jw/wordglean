@@ -241,16 +241,19 @@
     },
     {
       "id": "b2-u17-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "icon",
-      "instructionZh": "用 icon 造一個句子，說說你手機或電腦上常用的一個圖示。",
+      "type": "translate",
+      "promptZh": "按右上角的那個圖示，就可以更改設定。",
+      "hintWords": [
+        "icon"
+      ],
       "referenceEn": [
-        "I tap the camera icon on my phone many times a day.",
-        "The weather icon on my home screen shows a little sun today."
+        "Click the icon in the top right corner to change the settings.",
+        "To change your settings, tap the icon at the top right."
       ],
       "rubricZh": [
-        "句子要用到 icon（例如 the camera icon）",
-        "句子要說到你自己的手機或電腦"
+        "icon 指「圖示」（例如 the icon in the top right corner 等）",
+        "「按」可寫，例如 click、tap、press 等",
+        "可用祈使句，也可寫 You can change the settings by clicking… 等"
       ]
     }
   ],
@@ -336,6 +339,12 @@
         "message": "執行長最終複審修正：同步",
         "resolution": "改前：\"這個故事由一位十歲的敘述者講述，所以我們透過孩子的眼睛看一切。\"；改後：\"敘述者是小說裡講故事的那個聲音。\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（icon）原位換成翻譯題，沿用題 id b2-u17-l01-q18；目標字沿用 icon",
+        "resolution": "改為 translate：promptZh「按右上角的那個圖示，就可以更改設定。」、hintWords [\"icon\"]、referenceEn [\"Click the icon in the top right corner to change the settings.\",\"To change your settings, tap the icon at the top right.\"]、rubricZh [\"icon 指「圖示」（例如 the icon in the top right corner 等）\",\"「按」可寫，例如 click、tap、press 等\",\"可用祈使句，也可寫 You can change the settings by clicking… 等\"]（原 makeSentence：instructionZh「用 icon 造一個句子，說說你手機或電腦上常用的一個圖示。」、referenceEn [\"I tap the camera icon on my phone many times a day.\",\"The weather icon on my home screen shows a little sun today.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

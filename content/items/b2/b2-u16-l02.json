@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u16-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "thigh",
-      "instructionZh": "用 thigh 造一個句子，說說運動時哪裡會酸，或你喜歡的雞腿料理。",
+      "type": "translate",
+      "promptZh": "昨晚有一隻蚊子咬了我的大腿。",
+      "hintWords": [
+        "thigh"
+      ],
       "referenceEn": [
-        "My thighs always hurt the day after I go hiking.",
-        "I like chicken thighs better than chicken breasts."
+        "A mosquito bit me on the thigh last night.",
+        "Last night, a mosquito bit my thigh."
       ],
       "rubricZh": [
-        "句子要用到 thigh 或 thighs",
-        "句子要說到你自己"
+        "thigh 指「大腿」（例如 bit me on the thigh、bit my thigh 等）",
+        "有「昨晚」，用過去式（例如 bit 等）",
+        "「昨晚」可寫，例如 last night 等，句首或句尾都可以"
       ]
     }
   ],
@@ -413,6 +416,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，His pulse dropped 也說得通",
         "resolution": "改前：\"脈搏\"；改後：\"酸\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（thigh）原位換成翻譯題，沿用題 id b2-u16-l02-q17；目標字沿用 thigh",
+        "resolution": "改為 translate：promptZh「昨晚有一隻蚊子咬了我的大腿。」、hintWords [\"thigh\"]、referenceEn [\"A mosquito bit me on the thigh last night.\",\"Last night, a mosquito bit my thigh.\"]、rubricZh [\"thigh 指「大腿」（例如 bit me on the thigh、bit my thigh 等）\",\"有「昨晚」，用過去式（例如 bit 等）\",\"「昨晚」可寫，例如 last night 等，句首或句尾都可以\"]（原 makeSentence：instructionZh「用 thigh 造一個句子，說說運動時哪裡會酸，或你喜歡的雞腿料理。」、referenceEn [\"My thighs always hurt the day after I go hiking.\",\"I like chicken thighs better than chicken breasts.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

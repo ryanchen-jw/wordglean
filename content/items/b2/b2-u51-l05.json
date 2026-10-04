@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u51-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "unbeatable",
-      "instructionZh": "用 unbeatable 造一個句子，說說你覺得無人能比的人、店或東西。",
+      "type": "translate",
+      "promptZh": "我覺得奶奶煮的雞湯好喝到沒有人比得上。",
+      "hintWords": [
+        "unbeatable"
+      ],
       "referenceEn": [
-        "My mom's fried rice is unbeatable.",
-        "In my opinion, the night market near my home has unbeatable prices."
+        "I think my grandmother's chicken soup is unbeatable.",
+        "In my opinion, my grandma's chicken soup is simply unbeatable."
       ],
       "rubricZh": [
-        "句子要用到 unbeatable（例如 is unbeatable、unbeatable prices）",
-        "可加表達看法的寫法，例如 in my opinion、I think 等"
+        "unbeatable 當形容詞（例如 is unbeatable、is simply unbeatable 等）",
+        "「我覺得」可寫，例如 I think、in my opinion 等",
+        "「奶奶」可寫，例如 grandmother、grandma 等"
       ]
     }
   ],
@@ -308,6 +311,12 @@
         "message": "第②關 issue 結案：疑似用法不符：shaken 指受到驚嚇／打擊而心神不寧（單字卡釋義也是「震驚的；心神不寧的」），用在「得獎時 looked shaken」語意偏負面、不自然；得獎的驚訝宜用 stunned／amazed，或改成負面情境再用 shaken。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unbeatable）原位換成翻譯題，沿用題 id b2-u51-l05-q17；目標字沿用 unbeatable",
+        "resolution": "改為 translate：promptZh「我覺得奶奶煮的雞湯好喝到沒有人比得上。」、hintWords [\"unbeatable\"]、referenceEn [\"I think my grandmother's chicken soup is unbeatable.\",\"In my opinion, my grandma's chicken soup is simply unbeatable.\"]、rubricZh [\"unbeatable 當形容詞（例如 is unbeatable、is simply unbeatable 等）\",\"「我覺得」可寫，例如 I think、in my opinion 等\",\"「奶奶」可寫，例如 grandmother、grandma 等\"]（原 makeSentence：instructionZh「用 unbeatable 造一個句子，說說你覺得無人能比的人、店或東西。」、referenceEn [\"My mom's fried rice is unbeatable.\",\"In my opinion, the night market near my home has unbeatable prices.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

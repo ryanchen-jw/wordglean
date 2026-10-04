@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u09-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "impulse",
-      "instructionZh": "用 impulse 造一個句子，說說你一時衝動做的一件事。",
+      "type": "translate",
+      "promptZh": "她一時衝動把頭髮剪短了。",
+      "hintWords": [
+        "impulse"
+      ],
       "referenceEn": [
-        "I bought a guitar on impulse, but I never learned to play it.",
-        "On an impulse, I booked a trip to Japan last night."
+        "She cut her hair short on impulse.",
+        "On an impulse, she had her hair cut short."
       ],
       "rubricZh": [
-        "句子要用到 impulse（例如 on impulse、on an impulse、an impulse to…）",
-        "句子要說到你自己的經驗"
+        "impulse 常用，例如 on impulse、on an impulse 等，可放句首或句尾",
+        "「把頭髮剪短」可寫，例如 cut her hair short、had her hair cut short 等",
+        "時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -397,6 +400,12 @@
         "message": "執行長正解長度裁示修正：正解長度名次分布（03:35 最終版）＋單題 0.5–2 倍離群限制：調整選項長度，正解意思不變",
         "resolution": "改前：\"新的學校\"；改後：\"讓居民上課的新學校\"",
         "resolvedAt": "2026-10-02T18:25:40Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（impulse）原位換成翻譯題，沿用題 id b2-u09-l04-q17；目標字沿用 impulse",
+        "resolution": "改為 translate：promptZh「她一時衝動把頭髮剪短了。」、hintWords [\"impulse\"]、referenceEn [\"She cut her hair short on impulse.\",\"On an impulse, she had her hair cut short.\"]、rubricZh [\"impulse 常用，例如 on impulse、on an impulse 等，可放句首或句尾\",\"「把頭髮剪短」可寫，例如 cut her hair short、had her hair cut short 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 impulse 造一個句子，說說你一時衝動做的一件事。」、referenceEn [\"I bought a guitar on impulse, but I never learned to play it.\",\"On an impulse, I booked a trip to Japan last night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

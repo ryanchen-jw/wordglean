@@ -229,16 +229,18 @@
     },
     {
       "id": "b2-u53-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "tickle",
-      "instructionZh": "用 tickle 造一個句子，描述一件讓人覺得癢或忍不住笑的事。",
+      "type": "translate",
+      "promptZh": "風一吹，我的頭髮就一直搔著我的臉。",
+      "hintWords": [
+        "tickle"
+      ],
       "referenceEn": [
-        "My cat's soft tail tickles my face in the morning.",
-        "This wool sweater tickles my neck."
+        "When the wind blows, my hair keeps tickling my face.",
+        "My hair keeps tickling my face when the wind blows."
       ],
       "rubricZh": [
-        "句子要用到 tickle（例如 tickles my face、tickles my neck 等）",
-        "時態配合內容（例如 tickle、tickled 等）"
+        "tickle 當動詞「輕輕搔、使發癢」（例如 keeps tickling my face、tickles my face 等）",
+        "「一直」可寫，例如 keeps …ing、always 等；時態配合句意（例如 blows、blew 等）"
       ]
     }
   ],
@@ -390,6 +392,18 @@
         "message": "第②關 issue 結案：順帶：選項 1 \"Put a cold cloth on the eye twice a day\"（約 39 字元）明顯長於其他選項，改題時請一併檢查 0.5～2 倍長度規則。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/9 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tickle）原位換成翻譯題，沿用題 id b2-u53-l01-q17；目標字沿用 tickle",
+        "resolution": "改為 translate：promptZh「風一吹，我的頭髮就一直搔到臉上。」、hintWords [\"tickle\"]、referenceEn [\"When the wind blows, my hair keeps tickling my face.\",\"My hair keeps tickling my face when the wind blows.\"]、rubricZh [\"tickle 當動詞「輕輕搔、使發癢」（例如 keeps tickling my face、tickles my face 等）\",\"「一直」可寫，例如 keeps …ing、always 等；時態配合句意（例如 blows、blew 等）\"]（原 makeSentence：instructionZh「用 tickle 造一個句子，描述一件讓人覺得癢或忍不住笑的事。」、referenceEn [\"My cat's soft tail tickles my face in the morning.\",\"This wool sweater tickles my neck.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「搔到臉上」不通順",
+        "resolution": "改為 promptZh「風一吹，我的頭髮就一直搔著我的臉。」、referenceEn [\"When the wind blows, my hair keeps tickling my face.\",\"My hair keeps tickling my face when the wind blows.\"]、rubricZh [\"tickle 當動詞「輕輕搔、使發癢」（例如 keeps tickling my face、tickles my face 等）\",\"「一直」可寫，例如 keeps …ing、always 等；時態配合句意（例如 blows、blew 等）\"]（原 promptZh「風一吹，我的頭髮就一直搔到臉上。」、referenceEn [\"When the wind blows, my hair keeps tickling my face.\",\"My hair keeps tickling my face when the wind blows.\"]、rubricZh [\"tickle 當動詞「輕輕搔、使發癢」（例如 keeps tickling my face、tickles my face 等）\",\"「一直」可寫，例如 keeps …ing、always 等；時態配合句意（例如 blows、blew 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

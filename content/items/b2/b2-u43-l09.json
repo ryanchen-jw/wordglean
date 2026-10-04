@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u43-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "achievable",
-      "instructionZh": "用 achievable 造一個句子，說說你的一個做得到的目標。",
+      "type": "translate",
+      "promptZh": "只要每天練習，三個月學會彈十首吉他曲是做得到的。",
+      "hintWords": [
+        "achievable"
+      ],
       "referenceEn": [
-        "Running five kilometers by summer is an achievable goal for me.",
-        "I think saving enough money for a new phone is achievable."
+        "With daily practice, learning ten songs on the guitar in three months is achievable.",
+        "If you practice every day, it is achievable to learn ten guitar songs in three months."
       ],
       "rubricZh": [
-        "句子要用到 achievable",
-        "achievable 的用法，例如 an achievable goal、is achievable 等",
-        "時態合理（例如 is、think 等）"
+        "achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）",
+        "「只要每天練習」可寫，例如 with daily practice、if you practice every day 等"
       ]
     }
   ],
@@ -306,6 +307,18 @@
         "message": "執行長第②③關裁示修正：第③關 B 疑似 5（裁示照建議改）：「至少…以上」語意重複",
         "resolution": "改前：\"每天至少練習三個小時以上\"；改後：\"每天晚上至少練習三個小時\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（achievable）原位換成翻譯題，沿用題 id b2-u43-l09-q17；目標字沿用 achievable",
+        "resolution": "改為 translate：promptZh「這家公司認為明年把銷售額提高一成是做得到的。」、hintWords [\"achievable\"]、referenceEn [\"The company thinks that raising sales by ten percent next year is achievable.\",\"The company believes a ten percent rise in sales next year is achievable.\"]、rubricZh [\"achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）\",\"「提高一成」可寫，例如 raising sales by ten percent、a ten percent rise in sales 等\"]（原 makeSentence：instructionZh「用 achievable 造一個句子，說說你的一個做得到的目標。」、referenceEn [\"Running five kilometers by summer is an achievable goal for me.\",\"I think saving enough money for a new phone is achievable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u40-l01 跟讀、u29-l02-q16 同屬公司銷售成長一成情境",
+        "resolution": "改為 promptZh「只要每天練習，三個月學會彈十首吉他曲是做得到的。」、referenceEn [\"With daily practice, learning ten songs on the guitar in three months is achievable.\",\"If you practice every day, it is achievable to learn ten guitar songs in three months.\"]、rubricZh [\"achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）\",\"「只要每天練習」可寫，例如 with daily practice、if you practice every day 等\"]（原 promptZh「這家公司認為明年把銷售額提高一成是做得到的。」、referenceEn [\"The company thinks that raising sales by ten percent next year is achievable.\",\"The company believes a ten percent rise in sales next year is achievable.\"]、rubricZh [\"achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）\",\"「提高一成」可寫，例如 raising sales by ten percent、a ten percent rise in sales 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

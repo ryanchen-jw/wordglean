@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u12-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "defy",
-      "instructionZh": "用 defy 造一個句子，說說某人違抗規定或別人期待的事。",
+      "type": "translate",
+      "promptZh": "她不顧父母的反對，決定去學藝術。",
+      "hintWords": [
+        "defy"
+      ],
       "referenceEn": [
-        "My grandmother defied her parents and went to university.",
-        "As a teenager, I sometimes defied my parents' rules about coming home early."
+        "She defied her parents and decided to study art.",
+        "Defying her parents' wishes, she decided to study art."
       ],
       "rubricZh": [
-        "句子要用到 defy（例如 defy one's parents、defy the rules）",
-        "描述要合理"
+        "defy 表示「違抗、不顧」（例如 defied her parents、defying their wishes 等）",
+        "時態可用過去式或現在完成式（例如 decided、has decided 等）",
+        "「學藝術」可寫，例如 study art、learn art 等"
       ]
     }
   ],
@@ -563,6 +566,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"vow 表示「誓言」，常用 make a vow、say their vows\",\"過去式或現在完成式都可以\"]；改後：[\"vow 表示「誓言」（例如 make a vow、say their vows 等）\",\"過去式或現在完成式都可以\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（defy）原位換成翻譯題，沿用題 id b2-u12-l06-q17；目標字沿用 defy",
+        "resolution": "改為 translate：promptZh「她不顧父母的反對，決定去學藝術。」、hintWords [\"defy\"]、referenceEn [\"She defied her parents and decided to study art.\",\"Defying her parents' wishes, she decided to study art.\"]、rubricZh [\"defy 表示「違抗、不顧」（例如 defied her parents、defying their wishes 等）\",\"時態可用過去式或現在完成式（例如 decided、has decided 等）\",\"「學藝術」可寫，例如 study art、learn art 等\"]（原 makeSentence：instructionZh「用 defy 造一個句子，說說某人違抗規定或別人期待的事。」、referenceEn [\"My grandmother defied her parents and went to university.\",\"As a teenager, I sometimes defied my parents' rules about coming home early.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

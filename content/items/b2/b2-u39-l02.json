@@ -230,17 +230,18 @@
     },
     {
       "id": "b2-u39-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "laser",
-      "instructionZh": "用 laser 造一個句子，說說你看過或用過的雷射（例如雷射筆、雷射燈光秀）。",
+      "type": "translate",
+      "promptZh": "昨晚的演唱會有一場很精彩的雷射燈光秀。",
+      "hintWords": [
+        "laser"
+      ],
       "referenceEn": [
-        "I saw an amazing laser show at a concert last year.",
-        "The shop used a laser to cut my name into a wooden sign."
+        "There was a wonderful laser show at the concert last night.",
+        "Last night's concert had an amazing laser light show."
       ],
       "rubricZh": [
-        "句子要用到 laser",
-        "laser 的用法，例如 a laser show、use a laser 等（可當名詞，也可放在名詞前）",
-        "時態合理（例如 saw、used 等）"
+        "「雷射燈光秀」可寫，例如 laser show、laser light show 等",
+        "「很精彩的」可寫，例如 wonderful、amazing、great 等；用過去式"
       ]
     }
   ],
@@ -344,6 +345,12 @@
         "message": "第②關 issue 結案：疑似不道地：nano technology 一般寫成一個字 nanotechnology；單字卡例句 Nano materials 也多寫 nanomaterials。若 lexicon 目標字是 nano，建議用 nano-sized／nanotechnology 的組合形式並確認拼寫。",
         "resolution": "不改：lexicon 目標字是 nano；為讓目標字在短文中出現，保留 nano technology 分寫（亦有此寫法），單字卡 Nano materials 同理",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（laser）原位換成翻譯題，沿用題 id b2-u39-l02-q17；目標字沿用 laser",
+        "resolution": "改為 translate：promptZh「昨晚的演唱會有一場很精彩的雷射燈光秀。」、hintWords [\"laser\"]、referenceEn [\"There was a wonderful laser show at the concert last night.\",\"Last night's concert had an amazing laser light show.\"]、rubricZh [\"「雷射燈光秀」可寫，例如 laser show、laser light show 等\",\"「很精彩的」可寫，例如 wonderful、amazing、great 等；用過去式\"]（原 makeSentence：instructionZh「用 laser 造一個句子，說說你看過或用過的雷射（例如雷射筆、雷射燈光秀）。」、referenceEn [\"I saw an amazing laser show at a concert last year.\",\"The shop used a laser to cut my name into a wooden sign.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -245,17 +245,19 @@
     },
     {
       "id": "b2-u26-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "soundtrack",
-      "instructionZh": "用 soundtrack 造一個句子，說說你喜歡的一部電影、影集或卡通的配樂。",
+      "type": "translate",
+      "promptZh": "我讀書的時候喜歡聽電影配樂。",
+      "hintWords": [
+        "soundtrack"
+      ],
       "referenceEn": [
-        "That old cartoon has a soundtrack I still listen to.",
-        "My favorite movie has a soundtrack that always makes me feel calm."
+        "I like listening to film soundtracks while I study.",
+        "When I'm studying, I like to listen to movie soundtracks."
       ],
       "rubricZh": [
-        "句子要用到 soundtrack",
-        "soundtrack 的用法，例如 has a soundtrack、the soundtrack of the film 等",
-        "時態合理（例如 has、listen 等）"
+        "soundtrack 指配樂，這裡泛指用複數（例如 film soundtracks、movie soundtracks 等）",
+        "「喜歡聽」可寫，例如 like listening to、like to listen to、enjoy listening to 等",
+        "習慣的事用現在式"
       ]
     }
   ],
@@ -383,6 +385,12 @@
         "message": "第②關 issue 結案：疑似：「管絃樂團」為異體寫法，台灣教育部與主要樂團（如國家交響樂團）通用「管弦樂團」；建議改回「管弦」並補 zh-guard 豁免。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（soundtrack）原位換成翻譯題，沿用題 id b2-u26-l01-q18；目標字沿用 soundtrack",
+        "resolution": "改為 translate：promptZh「我讀書的時候喜歡聽電影配樂。」、hintWords [\"soundtrack\"]、referenceEn [\"I like listening to film soundtracks while I study.\",\"When I'm studying, I like to listen to movie soundtracks.\"]、rubricZh [\"soundtrack 指配樂，這裡泛指用複數（例如 film soundtracks、movie soundtracks 等）\",\"「喜歡聽」可寫，例如 like listening to、like to listen to、enjoy listening to 等\",\"習慣的事用現在式\"]（原 makeSentence：instructionZh「用 soundtrack 造一個句子，說說你喜歡的一部電影、影集或卡通的配樂。」、referenceEn [\"That old cartoon has a soundtrack I still listen to.\",\"My favorite movie has a soundtrack that always makes me feel calm.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

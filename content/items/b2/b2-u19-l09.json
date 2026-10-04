@@ -207,9 +207,7 @@
       "id": "b2-u19-l09-q15",
       "type": "translate",
       "promptZh": "很多孩子在學校說的語言不是他們的母語。",
-      "hintWords": [
-        "first language"
-      ],
+      "hintWords": [],
       "referenceEn": [
         "Many children speak a language at school that is not their first language.",
         "For many children, the language they use at school is not their first language."
@@ -221,16 +219,19 @@
     },
     {
       "id": "b2-u19-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "first language",
-      "instructionZh": "用 first language 造一個句子，說說你的母語或你身邊的人的母語。",
+      "type": "translate",
+      "promptZh": "我奶奶的母語是客家話，但她也會說英文。",
+      "hintWords": [
+        "first language"
+      ],
       "referenceEn": [
-        "My first language is Chinese, and I started learning English at seven.",
-        "My best friend's first language is Hakka."
+        "My grandmother's first language is Hakka, but she can also speak English.",
+        "Hakka is my grandma's first language, but she speaks English too."
       ],
       "rubricZh": [
-        "句子要用到 first language",
-        "時態合理即可（例如 is、started）"
+        "first language 指母語（例如 her first language 等）",
+        "「也會說」可寫，例如 can also speak、speaks… too 等",
+        "「奶奶」可寫，例如 grandmother、grandma 等"
       ]
     }
   ],
@@ -310,6 +311,18 @@
         "message": "執行長最終複審修正：A 第 3 批：中譯不加「到處」",
         "resolution": "改前：\"我表妹在網路學校上課，因為她家常常到處旅行。\"；改後：\"我表妹在網路學校上課，因為她家常常旅行。\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（first language）原位換成翻譯題，沿用題 id b2-u19-l09-q16；目標字沿用 first language",
+        "resolution": "改為 translate：promptZh「我奶奶的母語是客家話，但她也會說英文。」、hintWords [\"first language\"]、referenceEn [\"My grandmother's first language is Hakka, but she can also speak English.\",\"Hakka is my grandma's first language, but she speaks English too.\"]、rubricZh [\"first language 指母語（例如 her first language 等）\",\"「也會說」可寫，例如 can also speak、speaks… too 等\",\"「奶奶」可寫，例如 grandmother、grandma 等\"]（原 makeSentence：instructionZh「用 first language 造一個句子，說說你的母語或你身邊的人的母語。」、referenceEn [\"My first language is Chinese, and I started learning English at seven.\",\"My best friend's first language is Hakka.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 first language，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 []（原 [\"first language\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

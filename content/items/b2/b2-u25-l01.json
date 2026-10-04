@@ -234,16 +234,19 @@
     },
     {
       "id": "b2-u25-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "microphone",
-      "instructionZh": "用 microphone 造一個句子，說說你在什麼場合用過麥克風。",
+      "type": "translate",
+      "promptZh": "這支麥克風壞了，所以後面的人聽不到。",
+      "hintWords": [
+        "microphone"
+      ],
       "referenceEn": [
-        "I used a microphone when I gave a speech at my sister's wedding.",
-        "I once sang into a microphone at a friend's birthday party."
+        "This microphone is broken, so the people at the back can't hear.",
+        "The microphone isn't working, so people in the back can't hear anything."
       ],
       "rubricZh": [
-        "句子要用到 microphone",
-        "時態配合內容（例如 used、have used 等）"
+        "microphone 指麥克風（例如 this microphone、the microphone 等）",
+        "「壞了」可寫，例如 is broken、isn't working、doesn't work 等",
+        "「後面的人」可寫，例如 the people at the back、people in the back 等"
       ]
     }
   ],
@@ -305,6 +308,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"時態配合內容（例如 used、have used）\"；改後：\"時態配合內容（例如 used、have used 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（microphone）原位換成翻譯題，沿用題 id b2-u25-l01-q17；目標字沿用 microphone",
+        "resolution": "改為 translate：promptZh「這支麥克風壞了，所以後面的人聽不到。」、hintWords [\"microphone\"]、referenceEn [\"This microphone is broken, so the people at the back can't hear.\",\"The microphone isn't working, so people in the back can't hear anything.\"]、rubricZh [\"microphone 指麥克風（例如 this microphone、the microphone 等）\",\"「壞了」可寫，例如 is broken、isn't working、doesn't work 等\",\"「後面的人」可寫，例如 the people at the back、people in the back 等\"]（原 makeSentence：instructionZh「用 microphone 造一個句子，說說你在什麼場合用過麥克風。」、referenceEn [\"I used a microphone when I gave a speech at my sister's wedding.\",\"I once sang into a microphone at a friend's birthday party.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

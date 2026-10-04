@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u44-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "adore",
-      "instructionZh": "用 adore 造一個句子，說說你非常喜愛的人、動物或東西。",
+      "type": "translate",
+      "promptZh": "這位老演員深受全國觀眾的喜愛。",
+      "hintWords": [
+        "adore"
+      ],
       "referenceEn": [
-        "I absolutely adore my grandmother's cooking.",
-        "I adore old movies, especially funny ones."
+        "Audiences all over the country adore this veteran actor.",
+        "This veteran actor is adored by audiences across the country."
       ],
       "rubricZh": [
-        "句子要用到 adore",
-        "adore 的用法，例如 adore someone's cooking、adore old movies 等",
-        "時態合理（例如 adore 等）"
+        "adore 表示「非常喜愛」，主動或被動都可以（例如 audiences adore him、is adored by 等）",
+        "「全國觀眾」可寫，例如 audiences all over the country、people across the country 等",
+        "「老演員」可寫，例如 veteran actor 等"
       ]
     }
   ],
@@ -294,6 +296,18 @@
         "message": "執行長第②③關裁示修正：第③關 B FIX #23：參考答案 2 主詞是狗不是你",
         "resolution": "改前：\"時態合理（例如 adore、adores 等）\"；改後：\"時態合理（例如 adore 等）\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（adore）原位換成翻譯題，沿用題 id b2-u44-l03-q17；目標字沿用 adore",
+        "resolution": "改為 translate：promptZh「這位老演員深受全國觀眾的喜愛。」、hintWords [\"adore\"]、referenceEn [\"Audiences all over the country adore this old actor.\",\"This old actor is adored by audiences across the country.\"]、rubricZh [\"adore 表示「非常喜愛」，主動或被動都可以（例如 audiences adore him、is adored by 等）\",\"「全國觀眾」可寫，例如 audiences all over the country、people across the country 等\"]（原 makeSentence：instructionZh「用 adore 造一個句子，說說你非常喜愛的人、動物或東西。」、referenceEn [\"I absolutely adore my grandmother's cooking.\",\"I adore old movies, especially funny ones.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS old actor 易讀成「年紀大的」，意思偏移並碰到年齡標籤（§11.19）",
+        "resolution": "改為 promptZh「這位老演員深受全國觀眾的喜愛。」、referenceEn [\"Audiences all over the country adore this veteran actor.\",\"This veteran actor is adored by audiences across the country.\"]、rubricZh [\"adore 表示「非常喜愛」，主動或被動都可以（例如 audiences adore him、is adored by 等）\",\"「全國觀眾」可寫，例如 audiences all over the country、people across the country 等\",\"「老演員」可寫，例如 veteran actor 等\"]（原 promptZh「這位老演員深受全國觀眾的喜愛。」、referenceEn [\"Audiences all over the country adore this old actor.\",\"This old actor is adored by audiences across the country.\"]、rubricZh [\"adore 表示「非常喜愛」，主動或被動都可以（例如 audiences adore him、is adored by 等）\",\"「全國觀眾」可寫，例如 audiences all over the country、people across the country 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -219,17 +219,19 @@
     },
     {
       "id": "b2-u25-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "communicative",
-      "instructionZh": "用 communicative 造一個句子，描述你認識的一個很善於溝通的人。",
+      "type": "translate",
+      "promptZh": "這門課的重點是溝通能力，而不是文法。",
+      "hintWords": [
+        "communicative"
+      ],
       "referenceEn": [
-        "My sister is very communicative, so she makes friends easily.",
-        "My boss is a communicative person who listens to everyone's ideas."
+        "This course focuses on communicative skills, not grammar.",
+        "The focus of this course is communicative skills rather than grammar."
       ],
       "rubricZh": [
-        "句子要用到 communicative",
-        "communicative 可放在 be 動詞後或名詞前（例如 is communicative、a communicative person 等）",
-        "時態配合內容（例如 is、was 等）"
+        "communicative 這裡表示「溝通的」，放名詞前（例如 communicative skills 等）",
+        "「重點是」可寫，例如 focuses on、the focus is… 等",
+        "「而不是」可寫，例如 not、rather than、instead of 等"
       ]
     }
   ],
@@ -357,6 +359,12 @@
         "message": "第②關 issue 結案：自評疑慮判定：單字卡 the converse（貓／動物）用法正確可保留；但短文 'the converse is often true' 是把 converse 當「相反」用，嚴格說「網路讓人較不善溝通」的反面應是 the opposite／the reverse，converse 指命題倒置。屬寬鬆用法，疑似會讓學習者學到不精確的語感，建議改 'the opposite is often true' 或改寫成真正的倒置命題。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（communicative）原位換成翻譯題，沿用題 id b2-u25-l05-q16；目標字沿用 communicative",
+        "resolution": "改為 translate：promptZh「這門課的重點是溝通能力，而不是文法。」、hintWords [\"communicative\"]、referenceEn [\"This course focuses on communicative skills, not grammar.\",\"The focus of this course is communicative skills rather than grammar.\"]、rubricZh [\"communicative 這裡表示「溝通的」，放名詞前（例如 communicative skills 等）\",\"「重點是」可寫，例如 focuses on、the focus is… 等\",\"「而不是」可寫，例如 not、rather than、instead of 等\"]（原 makeSentence：instructionZh「用 communicative 造一個句子，描述你認識的一個很善於溝通的人。」、referenceEn [\"My sister is very communicative, so she makes friends easily.\",\"My boss is a communicative person who listens to everyone's ideas.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

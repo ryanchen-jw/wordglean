@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u48-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "unrealistic",
-      "instructionZh": "用 unrealistic 造一個句子，說說你曾有過的一個不切實際的計畫或期待。",
+      "type": "translate",
+      "promptZh": "期待新員工第一週就什麼都會，是不切實際的。",
+      "hintWords": [
+        "unrealistic"
+      ],
       "referenceEn": [
-        "It was unrealistic of me to try to learn French in one month.",
-        "My plan to read fifty books in one summer was unrealistic."
+        "It is unrealistic to expect new workers to know everything in their first week.",
+        "Expecting new staff to know everything in the first week is unrealistic."
       ],
       "rubricZh": [
-        "句子要用到 unrealistic（例如 was unrealistic、It was unrealistic of me to…）",
-        "時態配合內容（例如 was、is 等）"
+        "unrealistic 表示「不切實際的」，句型例如 It is unrealistic to…、Expecting … is unrealistic 等",
+        "「新員工」可寫，例如 new workers、new staff、new employees 等",
+        "「什麼都會」可寫，例如 know everything、be able to do everything 等"
       ]
     }
   ],
@@ -362,6 +365,12 @@
         "message": "執行長第②③關裁示修正：裁示：dollars 一律譯「美元」",
         "resolution": "改前：\"我們想在一個月裡存到一百萬元，這個目標完全不切實際。\"；改後：\"我們想在一個月裡存到一百萬美元，這個目標完全不切實際。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unrealistic）原位換成翻譯題，沿用題 id b2-u48-l01-q17；目標字沿用 unrealistic",
+        "resolution": "改為 translate：promptZh「期待新員工第一週就什麼都會，是不切實際的。」、hintWords [\"unrealistic\"]、referenceEn [\"It is unrealistic to expect new workers to know everything in their first week.\",\"Expecting new staff to know everything in the first week is unrealistic.\"]、rubricZh [\"unrealistic 表示「不切實際的」，句型例如 It is unrealistic to…、Expecting … is unrealistic 等\",\"「新員工」可寫，例如 new workers、new staff、new employees 等\",\"「什麼都會」可寫，例如 know everything、be able to do everything 等\"]（原 makeSentence：instructionZh「用 unrealistic 造一個句子，說說你曾有過的一個不切實際的計畫或期待。」、referenceEn [\"It was unrealistic of me to try to learn French in one month.\",\"My plan to read fifty books in one summer was unrealistic.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

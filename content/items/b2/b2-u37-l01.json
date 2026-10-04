@@ -207,17 +207,19 @@
     },
     {
       "id": "b2-u37-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "plumber",
-      "instructionZh": "用 plumber 造一個句子，說說你家什麼時候需要（或曾經需要）請水電工。",
+      "type": "translate",
+      "promptZh": "這附近很難找到週末還願意來的水電工。",
+      "hintWords": [
+        "plumber"
+      ],
       "referenceEn": [
-        "We needed a plumber last winter because the kitchen sink was blocked.",
-        "I need a plumber because water is coming out from under the sink."
+        "It is hard to find a plumber who will come on weekends around here.",
+        "Around here, it's hard to find a plumber who works on weekends."
       ],
       "rubricZh": [
-        "句子要用到 plumber",
-        "plumber 的用法，例如 call a plumber、need a plumber 等",
-        "時態配合內容（例如 called、need 等）"
+        "「水電工」可寫，例如 plumber 等",
+        "「很難找到」可寫，例如 it is hard to find、it's difficult to find 等",
+        "「週末還願意來的」可寫，例如 who will come on weekends、who works on weekends 等"
       ]
     }
   ],
@@ -375,6 +377,18 @@
         "message": "第②關 issue 結案：中英不一致：英文 Jason enjoys gardening（上文是種菜的地），中譯「種種花草」與小題 #1 正解「在後面種菜」不一致，建議譯「做園藝／種菜」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（plumber）原位換成翻譯題，沿用題 id b2-u37-l01-q15；目標字沿用 plumber",
+        "resolution": "改為 translate：promptZh「廚房的水管漏水了，所以我們打電話找水電工。」、hintWords [\"plumber\"]、referenceEn [\"The pipe in the kitchen was leaking, so we called a plumber.\",\"We called a plumber because the kitchen pipe was leaking.\"]、rubricZh [\"「水電工」可寫，例如 plumber 等\",\"「漏水」可寫，例如 was leaking、had a leak 等\",\"時態可用過去式或現在完成式（例如 called、have called 等）\"]（原 makeSentence：instructionZh「用 plumber 造一個句子，說說你家什麼時候需要（或曾經需要）請水電工。」、referenceEn [\"We needed a plumber last winter because the kitchen sink was blocked.\",\"I need a plumber because water is coming out from under the sink.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長裁示：第③關：SUS 與 u41-l05 聽選（廚房水管出問題→叫水電工）情境、句型相同",
+        "resolution": "改為 promptZh「這附近很難找到週末還願意來的水電工。」、referenceEn [\"It is hard to find a plumber who will come on weekends around here.\",\"Around here, it's hard to find a plumber who works on weekends.\"]、rubricZh [\"「水電工」可寫，例如 plumber 等\",\"「很難找到」可寫，例如 it is hard to find、it's difficult to find 等\",\"「週末還願意來的」可寫，例如 who will come on weekends、who works on weekends 等\"]（原 promptZh「廚房的水管漏水了，所以我們打電話找水電工。」、referenceEn [\"The pipe in the kitchen was leaking, so we called a plumber.\",\"We called a plumber because the kitchen pipe was leaking.\"]、rubricZh [\"「水電工」可寫，例如 plumber 等\",\"「漏水」可寫，例如 was leaking、had a leak 等\",\"時態可用過去式或現在完成式（例如 called、have called 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

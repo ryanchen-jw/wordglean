@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u13-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "costume",
-      "instructionZh": "用 costume 造一個句子，說說你或家人穿戲服或變裝的經驗。",
+      "type": "translate",
+      "promptZh": "這部電影的服裝花了設計師整整一年才做好。",
+      "hintWords": [
+        "costume"
+      ],
       "referenceEn": [
-        "My daughter wore a princess costume to her friend's birthday party.",
-        "I dressed up in a cat costume for a Halloween party last year."
+        "The costumes for this movie took the designer a whole year to make.",
+        "It took the designer a whole year to make the costumes for this film."
       ],
       "rubricZh": [
-        "句子要用到 costume（例如 wear a … costume、in a … costume）",
-        "句子要說到你或你的家人"
+        "costume 指「戲服、服裝」，這裡用複數（例如 the costumes for this movie 等）",
+        "「花了…才做好」可寫，例如 took … a year to make、It took … to make 等",
+        "時態可用過去式或現在完成式（例如 took 等）"
       ]
     }
   ],
@@ -458,6 +461,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"博物館展示了這個國家各地區的傳統服裝。\"；改後：\"演員們在換場時換了戲服。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（costume）原位換成翻譯題，沿用題 id b2-u13-l01-q18；目標字沿用 costume",
+        "resolution": "改為 translate：promptZh「這部電影的服裝花了設計師整整一年才做好。」、hintWords [\"costume\"]、referenceEn [\"The costumes for this movie took the designer a whole year to make.\",\"It took the designer a whole year to make the costumes for this film.\"]、rubricZh [\"costume 指「戲服、服裝」，這裡用複數（例如 the costumes for this movie 等）\",\"「花了…才做好」可寫，例如 took … a year to make、It took … to make 等\",\"時態可用過去式或現在完成式（例如 took 等）\"]（原 makeSentence：instructionZh「用 costume 造一個句子，說說你或家人穿戲服或變裝的經驗。」、referenceEn [\"My daughter wore a princess costume to her friend's birthday party.\",\"I dressed up in a cat costume for a Halloween party last year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

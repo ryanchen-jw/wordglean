@@ -231,16 +231,18 @@
     },
     {
       "id": "b2-u06-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "exceptional",
-      "instructionZh": "用 exceptional 造一個句子，稱讚你認識的人或你去過的地方。",
+      "type": "translate",
+      "promptZh": "今年蘋果的品質特別好。",
+      "hintWords": [
+        "exceptional"
+      ],
       "referenceEn": [
-        "My English teacher is an exceptional speaker.",
-        "I stayed at a hotel with exceptional service in Tainan."
+        "The quality of the apples this year is exceptional.",
+        "This year's apples are of exceptional quality."
       ],
       "rubricZh": [
-        "句子要用到 exceptional，表示「卓越的、出色的」（例如 exceptional service、an exceptional speaker）",
-        "句意要是稱讚某人或某地特別好"
+        "exceptional 表示「特別好的、卓越的」（例如 is exceptional、of exceptional quality 等）",
+        "「今年的蘋果」可寫，例如 this year's apples、the apples this year 等"
       ]
     }
   ],
@@ -362,6 +364,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"分開地\"；改後：\"手動的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（exceptional）原位換成翻譯題，沿用題 id b2-u06-l02-q17；目標字沿用 exceptional",
+        "resolution": "改為 translate：promptZh「今年蘋果的品質特別好。」、hintWords [\"exceptional\"]、referenceEn [\"The quality of the apples this year is exceptional.\",\"This year's apples are of exceptional quality.\"]、rubricZh [\"exceptional 表示「特別好的、卓越的」（例如 is exceptional、of exceptional quality 等）\",\"「今年的蘋果」可寫，例如 this year's apples、the apples this year 等\"]（原 makeSentence：instructionZh「用 exceptional 造一個句子，稱讚你認識的人或你去過的地方。」、referenceEn [\"My English teacher is an exceptional speaker.\",\"I stayed at a hotel with exceptional service in Tainan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

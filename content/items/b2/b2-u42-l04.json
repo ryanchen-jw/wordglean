@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u42-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "straightforward",
-      "instructionZh": "用 straightforward 造一個句子，說說一件你覺得很簡單明瞭的事，或一個說話很直率的人。",
+      "type": "translate",
+      "promptZh": "我的老闆很直率，總是直接說出她的想法。",
+      "hintWords": [
+        "straightforward"
+      ],
       "referenceEn": [
-        "My teacher gave us straightforward instructions for the homework.",
-        "My boss is straightforward and always tells us what she thinks."
+        "My boss is very straightforward and always says what she thinks.",
+        "My boss is straightforward; she always tells us exactly what she thinks."
       ],
       "rubricZh": [
-        "句子要用到 straightforward",
-        "可指事情簡單或人直率（例如 straightforward instructions、is straightforward 等）",
-        "時態配合內容（例如 gave、is 等）"
+        "straightforward 在這裡指「直率的」（例如 is very straightforward 等）",
+        "「說出她的想法」可寫，例如 says what she thinks、tells us what she thinks 等",
+        "always 位置不扣分"
       ]
     }
   ],
@@ -294,6 +296,12 @@
         "message": "第②關 issue 結案：疑似用法不自然：\"planned every move finely\"（finely 修飾 plan 不道地，宜 carefully）；\"she played nicely\" 在比賽語境易讀成「守規矩、有禮貌地玩」，表現好宜 played well。兩處都為塞目標字而生硬。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（straightforward）原位換成翻譯題，沿用題 id b2-u42-l04-q17；目標字沿用 straightforward",
+        "resolution": "改為 translate：promptZh「我的老闆很直率，總是直接說出她的想法。」、hintWords [\"straightforward\"]、referenceEn [\"My boss is very straightforward and always says what she thinks.\",\"My boss is straightforward; she always tells us exactly what she thinks.\"]、rubricZh [\"straightforward 在這裡指「直率的」（例如 is very straightforward 等）\",\"「說出她的想法」可寫，例如 says what she thinks、tells us what she thinks 等\",\"always 位置不扣分\"]（原 makeSentence：instructionZh「用 straightforward 造一個句子，說說一件你覺得很簡單明瞭的事，或一個說話很直率的人。」、referenceEn [\"My teacher gave us straightforward instructions for the homework.\",\"My boss is straightforward and always tells us what she thinks.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

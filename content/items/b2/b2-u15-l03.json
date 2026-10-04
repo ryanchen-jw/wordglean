@@ -217,16 +217,19 @@
     },
     {
       "id": "b2-u15-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "pancake",
-      "instructionZh": "用 pancake 造一個句子，說說你喜歡怎麼吃鬆餅。",
+      "type": "translate",
+      "promptZh": "我第一次試著把鬆餅翻面時，它掉到了地上。",
+      "hintWords": [
+        "pancake"
+      ],
       "referenceEn": [
-        "I like my pancakes with butter and a little honey.",
-        "On Sunday mornings, I make pancakes for my whole family."
+        "The first time I tried to turn a pancake over, it fell on the floor.",
+        "When I first tried to flip a pancake, it landed on the floor."
       ],
       "rubricZh": [
-        "句子要用到 pancake 或 pancakes",
-        "句子要說到你自己"
+        "pancake 指「鬆餅」（例如 a pancake、the pancake 等）",
+        "「翻面」可寫，例如 turn … over、flip 等",
+        "時態用過去式（例如 tried、fell、landed 等）"
       ]
     }
   ],
@@ -420,6 +423,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：hay 為 q12 正解",
         "resolution": "改前：\"乾草\"；改後：\"椰子\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（pancake）原位換成翻譯題，沿用題 id b2-u15-l03-q16；目標字沿用 pancake",
+        "resolution": "改為 translate：promptZh「我第一次試著把鬆餅翻面時，它掉到了地上。」、hintWords [\"pancake\"]、referenceEn [\"The first time I tried to turn a pancake over, it fell on the floor.\",\"When I first tried to flip a pancake, it landed on the floor.\"]、rubricZh [\"pancake 指「鬆餅」（例如 a pancake、the pancake 等）\",\"「翻面」可寫，例如 turn … over、flip 等\",\"時態用過去式（例如 tried、fell、landed 等）\"]（原 makeSentence：instructionZh「用 pancake 造一個句子，說說你喜歡怎麼吃鬆餅。」、referenceEn [\"I like my pancakes with butter and a little honey.\",\"On Sunday mornings, I make pancakes for my whole family.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

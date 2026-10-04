@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u05-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "decorate",
-      "instructionZh": "用 decorate 造一個句子，說說你怎麼佈置家裡或辦公室。",
+      "type": "translate",
+      "promptZh": "節慶期間，街道上裝飾著五顏六色的燈。",
+      "hintWords": [
+        "decorate"
+      ],
       "referenceEn": [
-        "I decorated my bedroom wall with posters of my favorite band.",
-        "I like to decorate my living room with plants."
+        "During the festival, the streets are decorated with colorful lights.",
+        "The streets were decorated with lights of many colors for the festival."
       ],
       "rubricZh": [
-        "句子要用到 decorate，常用 decorate…with…（例如 decorate my desk with photos）",
-        "句子要說到你自己佈置的地方和東西"
+        "decorate 可用被動（例如 are decorated with、were decorated with 等）",
+        "「五顏六色的燈」可寫，例如 colorful lights、lights of many colors 等",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -431,6 +434,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：decorate 為 q14 正解",
         "resolution": "改前：\"裝飾\"；改後：\"組裝\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（decorate）原位換成翻譯題，沿用題 id b2-u05-l03-q17；目標字沿用 decorate",
+        "resolution": "改為 translate：promptZh「節慶期間，街道上裝飾著五顏六色的燈。」、hintWords [\"decorate\"]、referenceEn [\"During the festival, the streets are decorated with colorful lights.\",\"The streets were decorated with lights of many colors for the festival.\"]、rubricZh [\"decorate 可用被動（例如 are decorated with、were decorated with 等）\",\"「五顏六色的燈」可寫，例如 colorful lights、lights of many colors 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 decorate 造一個句子，說說你怎麼佈置家裡或辦公室。」、referenceEn [\"I decorated my bedroom wall with posters of my favorite band.\",\"I like to decorate my living room with plants.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

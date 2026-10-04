@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u50-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "imitation",
-      "instructionZh": "用 imitation 造一個句子，說說一次有趣的模仿或一樣仿製品。",
+      "type": "translate",
+      "promptZh": "我妹妹很會模仿我們的老師。",
+      "hintWords": [
+        "imitation"
+      ],
       "referenceEn": [
-        "My little brother does a funny imitation of our teacher.",
-        "I bought an imitation of a famous painting for my living room."
+        "My younger sister does a great imitation of our teacher.",
+        "My little sister is very good at doing imitations of our teacher."
       ],
       "rubricZh": [
-        "句子要用到 imitation（例如 a funny imitation of…、an imitation of…）",
-        "時態配合內容（例如 does、bought 等）"
+        "imitation 當名詞（例如 does a great imitation of、is good at doing imitations of 等）",
+        "「很會」可寫，例如 does a great…、is very good at… 等",
+        "「妹妹」可寫，例如 younger sister、little sister 等"
       ]
     }
   ],
@@ -300,6 +303,12 @@
         "message": "執行長第②③關裁示修正：裁示「情境表逐列人工判定」：重判後主詞、情境、句型換不到兩項，改寫（keeper 與單字卡同句型）",
         "resolution": "改前：\"公園管理員每天傍晚六點鎖上大門。\"；改後：\"如果在公園裡掉了東西，就去問管理員。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（imitation）原位換成翻譯題，沿用題 id b2-u50-l04-q17；目標字沿用 imitation",
+        "resolution": "改為 translate：promptZh「我妹妹很會模仿我們的老師。」、hintWords [\"imitation\"]、referenceEn [\"My younger sister does a great imitation of our teacher.\",\"My little sister is very good at doing imitations of our teacher.\"]、rubricZh [\"imitation 當名詞（例如 does a great imitation of、is good at doing imitations of 等）\",\"「很會」可寫，例如 does a great…、is very good at… 等\",\"「妹妹」可寫，例如 younger sister、little sister 等\"]（原 makeSentence：instructionZh「用 imitation 造一個句子，說說一次有趣的模仿或一樣仿製品。」、referenceEn [\"My little brother does a funny imitation of our teacher.\",\"I bought an imitation of a famous painting for my living room.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

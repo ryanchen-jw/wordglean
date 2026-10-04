@@ -217,16 +217,19 @@
     },
     {
       "id": "b2-u15-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "pudding",
-      "instructionZh": "用 pudding 造一個句子，說說你喜歡的布丁或甜點。",
+      "type": "translate",
+      "promptZh": "這個布丁需要放在冰箱裡冷藏兩個小時。",
+      "hintWords": [
+        "pudding"
+      ],
       "referenceEn": [
-        "My favorite pudding is the chocolate one from the shop near my house.",
-        "I sometimes make rice pudding when I want something sweet."
+        "This pudding needs to stay in the fridge for two hours.",
+        "You need to keep this pudding in the fridge for two hours."
       ],
       "rubricZh": [
-        "句子要用到 pudding",
-        "句子要說到你自己"
+        "pudding 指「布丁」（例如 this pudding 等）",
+        "「需要」可寫，例如 needs to、has to、should 等",
+        "「冰箱」可寫，例如 fridge、refrigerator 等"
       ]
     }
   ],
@@ -384,6 +387,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，健行六小時後 sleepy／relaxed 也說得通",
         "resolution": "改前：\"放鬆的\"；改後：\"辣的\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（pudding）原位換成翻譯題，沿用題 id b2-u15-l04-q16；目標字沿用 pudding",
+        "resolution": "改為 translate：promptZh「這個布丁需要放在冰箱裡冷藏兩個小時。」、hintWords [\"pudding\"]、referenceEn [\"This pudding needs to stay in the fridge for two hours.\",\"You need to keep this pudding in the fridge for two hours.\"]、rubricZh [\"pudding 指「布丁」（例如 this pudding 等）\",\"「需要」可寫，例如 needs to、has to、should 等\",\"「冰箱」可寫，例如 fridge、refrigerator 等\"]（原 makeSentence：instructionZh「用 pudding 造一個句子，說說你喜歡的布丁或甜點。」、referenceEn [\"My favorite pudding is the chocolate one from the shop near my house.\",\"I sometimes make rice pudding when I want something sweet.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

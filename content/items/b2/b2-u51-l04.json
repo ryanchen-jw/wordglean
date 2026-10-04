@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u51-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "disorderly",
-      "instructionZh": "用 disorderly 造一個句子，描述一個雜亂或沒有秩序的地方或情況。",
+      "type": "translate",
+      "promptZh": "車站裡的人群很混亂，大家都在推擠。",
+      "hintWords": [
+        "disorderly"
+      ],
       "referenceEn": [
-        "My desk becomes disorderly when I have a lot of exams.",
-        "The disorderly crowd pushed toward the stage."
+        "The crowd at the station was disorderly, and everyone was pushing.",
+        "There was a disorderly crowd at the station, with people pushing each other."
       ],
       "rubricZh": [
-        "句子要用到 disorderly（例如 becomes disorderly、the disorderly crowd）",
-        "時態配合內容（例如 becomes、pushed 等）"
+        "disorderly 當形容詞（例如 was disorderly、a disorderly crowd 等）",
+        "「推擠」可寫，例如 pushing、pushing each other 等",
+        "時態可用過去式或現在式（例如 was、is 等）"
       ]
     }
   ],
@@ -311,6 +314,12 @@
         "message": "第②關 issue 結案：疑似：「請穿著得體地去參加面試」狀語「得體地去」稍彆扭，建議「請穿著得體去參加面試」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/15 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（disorderly）原位換成翻譯題，沿用題 id b2-u51-l04-q17；目標字沿用 disorderly",
+        "resolution": "改為 translate：promptZh「車站裡的人群很混亂，大家都在推擠。」、hintWords [\"disorderly\"]、referenceEn [\"The crowd at the station was disorderly, and everyone was pushing.\",\"There was a disorderly crowd at the station, with people pushing each other.\"]、rubricZh [\"disorderly 當形容詞（例如 was disorderly、a disorderly crowd 等）\",\"「推擠」可寫，例如 pushing、pushing each other 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 disorderly 造一個句子，描述一個雜亂或沒有秩序的地方或情況。」、referenceEn [\"My desk becomes disorderly when I have a lot of exams.\",\"The disorderly crowd pushed toward the stage.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

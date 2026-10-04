@@ -218,16 +218,19 @@
     },
     {
       "id": "b2-u01-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "so-called",
-      "instructionZh": "用 so-called 造一個句子，說說某樣東西名不副實（號稱如此，其實不然）。",
+      "type": "translate",
+      "promptZh": "這間所謂的五星級飯店，房間裡竟然沒有熱水。",
+      "hintWords": [
+        "so-called"
+      ],
       "referenceEn": [
-        "I bought a so-called waterproof jacket, but I still got wet in the rain.",
-        "The so-called express train took longer than the bus."
+        "This so-called five-star hotel had no hot water in the rooms.",
+        "There was no hot water in the rooms of this so-called five-star hotel."
       ],
       "rubricZh": [
-        "句子要用到 so-called，放在名詞前面（例如 a so-called expert）",
-        "句意要表示「號稱⋯其實不然」，帶有懷疑或諷刺的語氣"
+        "so-called 放在名詞前，表示「號稱的、名不副實的」（例如 this so-called five-star hotel 等）",
+        "「沒有熱水」可寫，例如 had no hot water、there was no hot water 等",
+        "時態可用過去式或現在式（例如 had、has 等）"
       ]
     }
   ],
@@ -397,6 +400,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，Concerning the high cost of rent… 也成句",
         "resolution": "改前：\"關於\"；改後：\"對；與⋯相對\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（so-called）原位換成翻譯題，沿用題 id b2-u01-l05-q16；目標字沿用 so-called",
+        "resolution": "改為 translate：promptZh「這間所謂的五星級飯店，房間裡竟然沒有熱水。」、hintWords [\"so-called\"]、referenceEn [\"This so-called five-star hotel had no hot water in the rooms.\",\"There was no hot water in the rooms of this so-called five-star hotel.\"]、rubricZh [\"so-called 放在名詞前，表示「號稱的、名不副實的」（例如 this so-called five-star hotel 等）\",\"「沒有熱水」可寫，例如 had no hot water、there was no hot water 等\",\"時態可用過去式或現在式（例如 had、has 等）\"]（原 makeSentence：instructionZh「用 so-called 造一個句子，說說某樣東西名不副實（號稱如此，其實不然）。」、referenceEn [\"I bought a so-called waterproof jacket, but I still got wet in the rain.\",\"The so-called express train took longer than the bus.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

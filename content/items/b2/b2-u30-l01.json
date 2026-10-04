@@ -221,17 +221,19 @@
     },
     {
       "id": "b2-u30-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "cooperate",
-      "instructionZh": "用 cooperate 造一個句子，說說你曾經和別人合作完成的一件事。",
+      "type": "translate",
+      "promptZh": "兩國的科學家正在合作研究這種罕見的鳥。",
+      "hintWords": [
+        "cooperate"
+      ],
       "referenceEn": [
-        "My classmates and I cooperated to plan a school trip.",
-        "I cooperated with my neighbors to clean up our street."
+        "Scientists from the two countries are cooperating to study this rare bird.",
+        "Scientists from both countries are cooperating on a study of this rare bird."
       ],
       "rubricZh": [
-        "句子要用到 cooperate",
-        "cooperate 的用法，例如 cooperate with someone、cooperate to do something 等",
-        "說過去的經驗，時態配合內容（例如 cooperated、have cooperated 等）"
+        "cooperate 的用法，例如 cooperate to study、cooperate on a study 等",
+        "「正在」用進行式（例如 are cooperating 等）",
+        "「罕見的鳥」可寫，例如 this rare bird、this rare kind of bird 等"
       ]
     }
   ],
@@ -353,6 +355,12 @@
         "message": "第②關 issue 結案：人名前後不一致：開頭譯「陳妮娜（Nina Chen）」，後文改用「Nina」，建議統一。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（cooperate）原位換成翻譯題，沿用題 id b2-u30-l01-q16；目標字沿用 cooperate",
+        "resolution": "改為 translate：promptZh「兩國的科學家正在合作研究這種罕見的鳥。」、hintWords [\"cooperate\"]、referenceEn [\"Scientists from the two countries are cooperating to study this rare bird.\",\"Scientists from both countries are cooperating on a study of this rare bird.\"]、rubricZh [\"cooperate 的用法，例如 cooperate to study、cooperate on a study 等\",\"「正在」用進行式（例如 are cooperating 等）\",\"「罕見的鳥」可寫，例如 this rare bird、this rare kind of bird 等\"]（原 makeSentence：instructionZh「用 cooperate 造一個句子，說說你曾經和別人合作完成的一件事。」、referenceEn [\"My classmates and I cooperated to plan a school trip.\",\"I cooperated with my neighbors to clean up our street.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

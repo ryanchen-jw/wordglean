@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u10-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "trait",
-      "instructionZh": "用 trait 造一個句子，說說你自己或家人的一個個性特質。",
+      "type": "translate",
+      "promptZh": "好奇心是我女兒最明顯的特質。",
+      "hintWords": [
+        "trait"
+      ],
       "referenceEn": [
-        "Honesty is my father's best trait.",
-        "One of my traits is that I am always on time."
+        "Curiosity is my daughter's most obvious trait.",
+        "My daughter's most noticeable trait is her curiosity."
       ],
       "rubricZh": [
-        "句子要用到 trait，表示「特質、特徵」（例如 my best trait、one of my traits）",
-        "句子要描述具體的個性或特點"
+        "trait 指「特質」（例如 her most obvious trait 等）",
+        "「最明顯的」用最高級，可寫，例如 most obvious、most noticeable 等",
+        "「好奇心」可寫，例如 curiosity、her curiosity 等"
       ]
     }
   ],
@@ -536,6 +539,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"物價指數連續第三個月上升。\"；改後：\"到書後面的索引查這個字。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（trait）原位換成翻譯題，沿用題 id b2-u10-l01-q18；目標字沿用 trait",
+        "resolution": "改為 translate：promptZh「好奇心是我女兒最明顯的特質。」、hintWords [\"trait\"]、referenceEn [\"Curiosity is my daughter's most obvious trait.\",\"My daughter's most noticeable trait is her curiosity.\"]、rubricZh [\"trait 指「特質」（例如 her most obvious trait 等）\",\"「最明顯的」用最高級，可寫，例如 most obvious、most noticeable 等\",\"「好奇心」可寫，例如 curiosity、her curiosity 等\"]（原 makeSentence：instructionZh「用 trait 造一個句子，說說你自己或家人的一個個性特質。」、referenceEn [\"Honesty is my father's best trait.\",\"One of my traits is that I am always on time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

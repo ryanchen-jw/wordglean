@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u45-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "wasp",
-      "instructionZh": "用 wasp 造一個句子，說說你看到或遇到黃蜂的經驗。",
+      "type": "translate",
+      "promptZh": "我爸爸小心地把那隻黃蜂趕出窗外。",
+      "hintWords": [
+        "wasp"
+      ],
       "referenceEn": [
-        "I saw a wasp near my bedroom window this morning.",
-        "When I was a child, a wasp chased me around the garden."
+        "My father carefully chased the wasp out of the window.",
+        "My dad carefully chased the wasp out the window."
       ],
       "rubricZh": [
-        "句子要用到 wasp（例如 a wasp、wasps）",
-        "時態配合內容（例如 saw、have seen 等）"
+        "wasp 表示「黃蜂」（例如 the wasp 等）",
+        "「趕出窗外」可寫，例如 chased … out of the window、chased … out the window 等",
+        "carefully 位置不扣分；時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -283,6 +286,12 @@
         "message": "執行長第②③關裁示修正：第③關 A：疑似 17：中譯同步",
         "resolution": "改前：\"去年春天，我們一家人在南部的一座國家公園度過一個週末。第一天，我們沿著一道狹窄的峽谷健行。紅色砂岩的石壁高高聳立在我們上方，有些地方還有小瀑布從頂端落下。導遊說這片山區以前有豹，但五十年來沒有人再看過。第二天，我們去參觀公園附近的一座農場。農場主人給我們看她那隻老公羊，牠喜歡用頭去推柵門。我們離開前，她送給我們一些她花園裡的鬱金香。\"；改後：\"去年春天，我們一家人在南部的一座國家公園度過一個週末。第一天，我們沿著一道狹窄的峽谷健行。紅色砂岩的石壁高高聳立在我們上方，有些地方還有小瀑布從頂端落下。導遊說這片山區以前有豹，但五十年來沒有人再看過。第二天，我們在路邊的花攤停下來買鬱金香。花攤旁有一隻老公羊一直用頭推一道木頭柵門，老闆笑著說牠每天都這樣。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wasp）原位換成翻譯題，沿用題 id b2-u45-l01-q17；目標字沿用 wasp",
+        "resolution": "改為 translate：promptZh「我爸爸小心地把那隻黃蜂趕出窗外。」、hintWords [\"wasp\"]、referenceEn [\"My father carefully chased the wasp out of the window.\",\"My dad carefully chased the wasp out the window.\"]、rubricZh [\"wasp 表示「黃蜂」（例如 the wasp 等）\",\"「趕出窗外」可寫，例如 chased … out of the window、chased … out the window 等\",\"carefully 位置不扣分；時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 wasp 造一個句子，說說你看到或遇到黃蜂的經驗。」、referenceEn [\"I saw a wasp near my bedroom window this morning.\",\"When I was a child, a wasp chased me around the garden.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

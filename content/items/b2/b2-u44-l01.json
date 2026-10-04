@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u44-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "nervously",
-      "instructionZh": "用 nervously 造一個句子，說說一次你很緊張的經驗。",
+      "type": "translate",
+      "promptZh": "比賽開始前，她緊張地在走廊上走來走去。",
+      "hintWords": [
+        "nervously"
+      ],
       "referenceEn": [
-        "I waited nervously for my test results.",
-        "My hands shook as I nervously opened the letter."
+        "Before the race, she walked nervously up and down the hall.",
+        "She nervously walked back and forth in the hall before the race."
       ],
       "rubricZh": [
-        "句子要用到 nervously",
-        "nervously 的用法，例如 waited nervously、nervously opened 等",
-        "時態合理（例如 waited、opened 等）"
+        "nervously 修飾動作，可放動詞前或後（例如 walked nervously、nervously walked 等）",
+        "「走來走去」可寫，例如 walk up and down、walk back and forth 等",
+        "時態可用過去式或現在式（例如 walked、walks 等）"
       ]
     }
   ],
@@ -288,6 +290,12 @@
         "message": "第②關 issue 結案：疑似：「謝謝你的幫忙，請接受我真誠的感謝」謝謝／感謝重複，且原句只有一個 thanks；建議「對於你的幫忙，請接受我誠摯的謝意」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nervously）原位換成翻譯題，沿用題 id b2-u44-l01-q17；目標字沿用 nervously",
+        "resolution": "改為 translate：promptZh「比賽開始前，她緊張地在走廊上走來走去。」、hintWords [\"nervously\"]、referenceEn [\"Before the race, she walked nervously up and down the hall.\",\"She nervously walked back and forth in the hall before the race.\"]、rubricZh [\"nervously 修飾動作，可放動詞前或後（例如 walked nervously、nervously walked 等）\",\"「走來走去」可寫，例如 walk up and down、walk back and forth 等\",\"時態可用過去式或現在式（例如 walked、walks 等）\"]（原 makeSentence：instructionZh「用 nervously 造一個句子，說說一次你很緊張的經驗。」、referenceEn [\"I waited nervously for my test results.\",\"My hands shook as I nervously opened the letter.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

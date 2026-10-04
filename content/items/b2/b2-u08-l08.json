@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u08-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "hint",
-      "instructionZh": "用 hint 造一個句子，說說你給別人或別人給你的一個提示。",
+      "type": "translate",
+      "promptZh": "這道湯裡有一點點檸檬的味道。",
+      "hintWords": [
+        "hint"
+      ],
       "referenceEn": [
-        "I gave my friend a hint about her birthday present.",
-        "My boss dropped a hint that I might get a promotion."
+        "This soup has a hint of lemon.",
+        "There is a hint of lemon in this soup."
       ],
       "rubricZh": [
-        "句子要用到 hint（例如 give a hint、drop a hint、a hint about… 等）",
-        "句子要說到你自己"
+        "hint 在這裡指「一點點（味道）」（例如 a hint of lemon 等）",
+        "「湯裡有」可寫，例如 This soup has、There is … in this soup 等"
       ]
     }
   ],
@@ -473,6 +475,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"句子要用到 hint，常用 give a hint、drop a hint、a hint about…\",\"句子要說到你自己\"]；改後：[\"句子要用到 hint（例如 give a hint、drop a hint、a hint about… 等）\",\"句子要說到你自己\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hint）原位換成翻譯題，沿用題 id b2-u08-l08-q17；目標字沿用 hint",
+        "resolution": "改為 translate：promptZh「這道湯裡有一點點檸檬的味道。」、hintWords [\"hint\"]、referenceEn [\"This soup has a hint of lemon.\",\"There is a hint of lemon in this soup.\"]、rubricZh [\"hint 在這裡指「一點點（味道）」（例如 a hint of lemon 等）\",\"「湯裡有」可寫，例如 This soup has、There is … in this soup 等\"]（原 makeSentence：instructionZh「用 hint 造一個句子，說說你給別人或別人給你的一個提示。」、referenceEn [\"I gave my friend a hint about her birthday present.\",\"My boss dropped a hint that I might get a promotion.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

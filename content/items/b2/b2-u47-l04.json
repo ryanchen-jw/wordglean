@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u47-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "knot",
-      "instructionZh": "用 knot 造一個句子，說說你綁東西或打結的經驗。",
+      "type": "translate",
+      "promptZh": "每天早上，我都要花很久才能把頭髮上的結梳開。",
+      "hintWords": [
+        "knot"
+      ],
       "referenceEn": [
-        "I tied a knot in the plastic bag so nothing would fall out.",
-        "I always have trouble untying the knots in my kite string."
+        "Every morning, it takes me a long time to brush the knots out of my hair.",
+        "I spend a long time every morning brushing the knots out of my hair."
       ],
       "rubricZh": [
-        "句子要用到 knot（例如 tie a knot、the knots）",
-        "時態配合內容（例如 tied、have 等）"
+        "knot 表示「（頭髮、繩子的）結」，例如 the knots in my hair 等",
+        "「梳開」可寫，例如 brush … out of my hair、comb out the knots 等",
+        "「花很久」可寫，例如 it takes me a long time to…、I spend a long time… 等"
       ]
     }
   ],
@@ -330,6 +333,12 @@
         "message": "第②關 issue 結案：supplement 釋義第一義「補充物」與例句（字典書末的新詞增補＝附錄／增補）不對應，違反§11.27；且「補充物」易聯想保健補充品。建議釋義改「增刊；附錄；補充物」或「增補；增刊；附錄」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/6 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（knot）原位換成翻譯題，沿用題 id b2-u47-l04-q17；目標字沿用 knot",
+        "resolution": "改為 translate：promptZh「每天早上，我都要花很久才能把頭髮上的結梳開。」、hintWords [\"knot\"]、referenceEn [\"Every morning, it takes me a long time to brush the knots out of my hair.\",\"I spend a long time every morning brushing the knots out of my hair.\"]、rubricZh [\"knot 表示「（頭髮、繩子的）結」，例如 the knots in my hair 等\",\"「梳開」可寫，例如 brush … out of my hair、comb out the knots 等\",\"「花很久」可寫，例如 it takes me a long time to…、I spend a long time… 等\"]（原 makeSentence：instructionZh「用 knot 造一個句子，說說你綁東西或打結的經驗。」、referenceEn [\"I tied a knot in the plastic bag so nothing would fall out.\",\"I always have trouble untying the knots in my kite string.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

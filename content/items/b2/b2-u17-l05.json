@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u17-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "orchestral",
-      "instructionZh": "用 orchestral 造一個句子，說說你聽過或喜歡的交響樂或樂團音樂。",
+      "type": "translate",
+      "promptZh": "這首流行歌的交響樂版本比原曲還受歡迎。",
+      "hintWords": [
+        "orchestral"
+      ],
       "referenceEn": [
-        "I like listening to orchestral music while I study.",
-        "The orchestral version of my favorite song sounds amazing to me."
+        "The orchestral version of this pop song is more popular than the original.",
+        "This pop song's orchestral version has become more popular than the original one."
       ],
       "rubricZh": [
-        "句子要用到 orchestral（例如 orchestral music）",
-        "句子要說到你自己"
+        "orchestral 是形容詞，放名詞前（例如 the orchestral version 等）",
+        "「比原曲還受歡迎」用比較級（例如 more popular than the original 等）",
+        "時態可用現在式或現在完成式（例如 is、has become 等）"
       ]
     }
   ],
@@ -343,6 +346,12 @@
         "message": "執行長最終複審修正：只看英文自查：干擾項放進英文句仍說得通，cellist／vocalist bowed… 也說得通",
         "resolution": "改前：\"主唱\"；改後：\"押韻\"",
         "resolvedAt": "2026-10-02T20:43:54Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（orchestral）原位換成翻譯題，沿用題 id b2-u17-l05-q17；目標字沿用 orchestral",
+        "resolution": "改為 translate：promptZh「這首流行歌的交響樂版本比原曲還受歡迎。」、hintWords [\"orchestral\"]、referenceEn [\"The orchestral version of this pop song is more popular than the original.\",\"This pop song's orchestral version has become more popular than the original one.\"]、rubricZh [\"orchestral 是形容詞，放名詞前（例如 the orchestral version 等）\",\"「比原曲還受歡迎」用比較級（例如 more popular than the original 等）\",\"時態可用現在式或現在完成式（例如 is、has become 等）\"]（原 makeSentence：instructionZh「用 orchestral 造一個句子，說說你聽過或喜歡的交響樂或樂團音樂。」、referenceEn [\"I like listening to orchestral music while I study.\",\"The orchestral version of my favorite song sounds amazing to me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u44-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "consolation",
-      "instructionZh": "用 consolation 造一個句子，說說一件讓你得到安慰的事。",
+      "type": "translate",
+      "promptZh": "在那段難過的日子裡，我在音樂中找到了慰藉。",
+      "hintWords": [
+        "consolation"
+      ],
       "referenceEn": [
-        "The only consolation was that the rain stopped before the game.",
-        "My dog's company is a great consolation when I feel sad."
+        "During that sad time, I found consolation in music.",
+        "I found great consolation in music during that difficult time."
       ],
       "rubricZh": [
-        "句子要用到 consolation",
-        "consolation 的用法，例如 the only consolation、a great consolation 等",
-        "時態合理（例如 was、is 等）"
+        "consolation 表示「安慰、慰藉」，例如 find consolation in… 等",
+        "「那段難過的日子」可寫，例如 during that sad time、during those difficult days 等",
+        "時態可用過去式（例如 found 等）"
       ]
     }
   ],
@@ -312,6 +314,12 @@
         "message": "執行長第②③關裁示修正：第③關 B FIX #31：a honorable 冠詞洩題",
         "resolution": "改前：\"正直的\"；改後：\"令人屏息的\"",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（consolation）原位換成翻譯題，沿用題 id b2-u44-l08-q17；目標字沿用 consolation",
+        "resolution": "改為 translate：promptZh「在那段難過的日子裡，我在音樂中找到了慰藉。」、hintWords [\"consolation\"]、referenceEn [\"During that sad time, I found consolation in music.\",\"I found great consolation in music during that difficult time.\"]、rubricZh [\"consolation 表示「安慰、慰藉」，例如 find consolation in… 等\",\"「那段難過的日子」可寫，例如 during that sad time、during those difficult days 等\",\"時態可用過去式（例如 found 等）\"]（原 makeSentence：instructionZh「用 consolation 造一個句子，說說一件讓你得到安慰的事。」、referenceEn [\"The only consolation was that the rain stopped before the game.\",\"My dog's company is a great consolation when I feel sad.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

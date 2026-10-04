@@ -233,16 +233,18 @@
     },
     {
       "id": "b2-u20-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "barbershop",
-      "instructionZh": "用 barbershop 造一個句子，說說你或家人剪頭髮的地方。",
+      "type": "translate",
+      "promptZh": "那家理髮店的老闆已經在這裡幫人剪了四十年的頭髮。",
+      "hintWords": [
+        "barbershop"
+      ],
       "referenceEn": [
-        "My father goes to a small barbershop near his office every month.",
-        "There is a friendly barbershop in my neighborhood where I always get my hair cut."
+        "The owner of that barbershop has been cutting hair here for forty years.",
+        "The man who owns that barbershop has cut hair here for forty years."
       ],
       "rubricZh": [
-        "句子要用到 barbershop",
-        "時態合理即可"
+        "barbershop 指理髮店（例如 the owner of that barbershop 等）",
+        "「已經…四十年」用現在完成式或現在完成進行式（例如 has cut、has been cutting 等）"
       ]
     }
   ],
@@ -334,6 +336,12 @@
         "message": "第②關 issue 結案：polity 單字卡釋義為「政體」，閱讀中譯作「政治組織」，用詞不一；宜統一或卡片補「政治組織」義",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/14 的 6 筆修正紀錄。",
         "resolvedAt": "2026-10-02T19:53:25Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（barbershop）原位換成翻譯題，沿用題 id b2-u20-l05-q17；目標字沿用 barbershop",
+        "resolution": "改為 translate：promptZh「那家理髮店的老闆已經在這裡幫人剪了四十年的頭髮。」、hintWords [\"barbershop\"]、referenceEn [\"The owner of that barbershop has been cutting hair here for forty years.\",\"The man who owns that barbershop has cut hair here for forty years.\"]、rubricZh [\"barbershop 指理髮店（例如 the owner of that barbershop 等）\",\"「已經…四十年」用現在完成式或現在完成進行式（例如 has cut、has been cutting 等）\"]（原 makeSentence：instructionZh「用 barbershop 造一個句子，說說你或家人剪頭髮的地方。」、referenceEn [\"My father goes to a small barbershop near his office every month.\",\"There is a friendly barbershop in my neighborhood where I always get my hair cut.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

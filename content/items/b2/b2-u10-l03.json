@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u10-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "hyperbole",
-      "instructionZh": "用 hyperbole 造一個句子，舉一個日常生活中誇飾的說法。",
+      "type": "translate",
+      "promptZh": "這則廣告充滿了誇飾，你不能全信。",
+      "hintWords": [
+        "hyperbole"
+      ],
       "referenceEn": [
-        "My brother uses hyperbole when he says he has a million things to do.",
-        "Saying that a bag weighs a ton is a kind of hyperbole."
+        "This advertisement is full of hyperbole, so you can't believe all of it.",
+        "The ad is full of hyperbole; you shouldn't believe everything it says."
       ],
       "rubricZh": [
-        "句子要用到 hyperbole，表示「誇飾」（例如 That is hyperbole、use hyperbole）",
-        "要舉出合理的誇飾例子"
+        "hyperbole 指「誇飾」，常不可數（例如 full of hyperbole 等）",
+        "「不能全信」可寫，例如 can't believe all of it、shouldn't believe everything 等",
+        "「廣告」可寫，例如 advertisement、ad 等"
       ]
     }
   ],
@@ -463,6 +466,12 @@
         "message": "執行長最終複審修正：執行長親審：essentially 放進英文句也說得通，換成明顯不通的方式副詞",
         "resolution": "改前：\"基本上\"；改後：\"無禮地\"",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hyperbole）原位換成翻譯題，沿用題 id b2-u10-l03-q17；目標字沿用 hyperbole",
+        "resolution": "改為 translate：promptZh「這則廣告充滿了誇飾，你不能全信。」、hintWords [\"hyperbole\"]、referenceEn [\"This advertisement is full of hyperbole, so you can't believe all of it.\",\"The ad is full of hyperbole; you shouldn't believe everything it says.\"]、rubricZh [\"hyperbole 指「誇飾」，常不可數（例如 full of hyperbole 等）\",\"「不能全信」可寫，例如 can't believe all of it、shouldn't believe everything 等\",\"「廣告」可寫，例如 advertisement、ad 等\"]（原 makeSentence：instructionZh「用 hyperbole 造一個句子，舉一個日常生活中誇飾的說法。」、referenceEn [\"My brother uses hyperbole when he says he has a million things to do.\",\"Saying that a bag weighs a ton is a kind of hyperbole.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -215,16 +215,19 @@
     },
     {
       "id": "b2-u52-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "bothered",
-      "instructionZh": "用 bothered 造一個句子，說說一件你不在意或很在意的小事。",
+      "type": "translate",
+      "promptZh": "她看起來很煩惱，因為她找不到鑰匙了。",
+      "hintWords": [
+        "bothered"
+      ],
       "referenceEn": [
-        "I was quite bothered when my friend was late for our lunch.",
-        "I get bothered when people talk loudly on the train."
+        "She looked bothered because she couldn't find her keys.",
+        "She seemed bothered because she could not find her keys."
       ],
       "rubricZh": [
-        "句子要用到 bothered（例如 I was bothered when…、get bothered when… 等）",
-        "時態配合內容（例如 was、get 等）"
+        "bothered 當形容詞，接在 look、seem 等動詞後（例如 looked bothered 等）",
+        "「找不到」可寫，例如 couldn't find、had lost 等",
+        "時態可用過去式或現在式（例如 looked、looks 等）"
       ]
     }
   ],
@@ -274,6 +277,12 @@
         "message": "執行長第②③關裁示修正：第③關 FIX 31：",
         "resolution": "改前：[\"句子要用到 bothered（例如 I'm not bothered…、get bothered when…）\", \"時態配合內容（例如 am、get 等）\"]；改後：[\"句子要用到 bothered（例如 I was bothered when…、get bothered when… 等）\", \"時態配合內容（例如 was、get 等）\"]",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（bothered）原位換成翻譯題，沿用題 id b2-u52-l05-q16；目標字沿用 bothered",
+        "resolution": "改為 translate：promptZh「她看起來很煩惱，因為她找不到鑰匙了。」、hintWords [\"bothered\"]、referenceEn [\"She looked bothered because she couldn't find her keys.\",\"She seemed bothered because she could not find her keys.\"]、rubricZh [\"bothered 當形容詞，接在 look、seem 等動詞後（例如 looked bothered 等）\",\"「找不到」可寫，例如 couldn't find、had lost 等\",\"時態可用過去式或現在式（例如 looked、looks 等）\"]（原 makeSentence：instructionZh「用 bothered 造一個句子，說說一件你不在意或很在意的小事。」、referenceEn [\"I was quite bothered when my friend was late for our lunch.\",\"I get bothered when people talk loudly on the train.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u05-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "prohibit",
-      "instructionZh": "用 prohibit 造一個句子，說說你工作或生活的地方禁止做的一件事。",
+      "type": "translate",
+      "promptZh": "這座城市的新規定禁止商店提供免費的塑膠袋。",
+      "hintWords": [
+        "prohibit"
+      ],
       "referenceEn": [
-        "My company prohibits eating at our desks.",
-        "My school prohibits phones in class."
+        "A new rule in this city prohibits shops from giving out free plastic bags.",
+        "The city's new rule prohibits stores from offering free plastic bags."
       ],
       "rubricZh": [
-        "句子要用到 prohibit（例如 prohibits eating、is prohibited、prohibit someone from doing）",
-        "句子要說到你工作或生活的地方"
+        "prohibit 常用 prohibit…from＋動名詞（例如 prohibits shops from giving… 等）；寫成被動也正確",
+        "「提供」可寫，例如 give out、offer、provide 等",
+        "「規定」可寫，例如 rule、law、regulation 等"
       ]
     }
   ],
@@ -397,6 +400,12 @@
         "message": "執行長裁示修正：干擾項詞形還原後重掃（執行長裁示）：equipped 與 q13 的 equip 同字；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"積極地\"；改後：\"戴面具的\"",
         "resolvedAt": "2026-10-02T20:17:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（prohibit）原位換成翻譯題，沿用題 id b2-u05-l02-q17；目標字沿用 prohibit",
+        "resolution": "改為 translate：promptZh「這座城市的新規定禁止商店提供免費的塑膠袋。」、hintWords [\"prohibit\"]、referenceEn [\"A new rule in this city prohibits shops from giving out free plastic bags.\",\"The city's new rule prohibits stores from offering free plastic bags.\"]、rubricZh [\"prohibit 常用 prohibit…from＋動名詞（例如 prohibits shops from giving… 等）；寫成被動也正確\",\"「提供」可寫，例如 give out、offer、provide 等\",\"「規定」可寫，例如 rule、law、regulation 等\"]（原 makeSentence：instructionZh「用 prohibit 造一個句子，說說你工作或生活的地方禁止做的一件事。」、referenceEn [\"My company prohibits eating at our desks.\",\"My school prohibits phones in class.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -217,16 +217,19 @@
     },
     {
       "id": "b2-u15-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "pickle",
-      "instructionZh": "用 pickle 造一個句子，說說你喜不喜歡醃黃瓜或醃菜。",
+      "type": "translate",
+      "promptZh": "這家店的漢堡裡夾了很多醃黃瓜。",
+      "hintWords": [
+        "pickle"
+      ],
       "referenceEn": [
-        "I always take the pickle out of my burger.",
-        "I love eating a cold pickle with my sandwich."
+        "The burgers at this shop have a lot of pickles in them.",
+        "This shop puts lots of pickles in its burgers."
       ],
       "rubricZh": [
-        "句子要用到 pickle 或 pickles",
-        "句子要說到你自己的喜好"
+        "pickle 指「醃黃瓜」，這裡用複數（例如 a lot of pickles 等）",
+        "「漢堡裡夾了」可寫，例如 have … in them、puts … in its burgers 等",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -420,6 +423,12 @@
         "message": "執行長最終複審修正：評分要點封閉清單改「例如…等」（執行長裁示）",
         "resolution": "改前：[\"gulp（down）表示「大口吞下」（例如 gulp down the water）\",\"時態合理即可（例如 gulped、has gulped）；「冰水」可寫 ice water、cold water\"]；改後：[\"gulp（down）表示「大口吞下」（例如 gulp down the water 等）\",\"時態合理即可（例如 gulped、has gulped 等）；「冰水」可寫，例如 ice water、cold water 等\"]",
         "resolvedAt": "2026-10-02T20:48:11Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（pickle）原位換成翻譯題，沿用題 id b2-u15-l05-q16；目標字沿用 pickle",
+        "resolution": "改為 translate：promptZh「這家店的漢堡裡夾了很多醃黃瓜。」、hintWords [\"pickle\"]、referenceEn [\"The burgers at this shop have a lot of pickles in them.\",\"This shop puts lots of pickles in its burgers.\"]、rubricZh [\"pickle 指「醃黃瓜」，這裡用複數（例如 a lot of pickles 等）\",\"「漢堡裡夾了」可寫，例如 have … in them、puts … in its burgers 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 pickle 造一個句子，說說你喜不喜歡醃黃瓜或醃菜。」、referenceEn [\"I always take the pickle out of my burger.\",\"I love eating a cold pickle with my sandwich.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

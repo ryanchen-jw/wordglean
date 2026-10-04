@@ -230,17 +230,18 @@
     },
     {
       "id": "b2-u44-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "nuisance",
-      "instructionZh": "用 nuisance 造一個句子，說說一件讓你覺得很煩或很麻煩的事。",
+      "type": "translate",
+      "promptZh": "抱歉打擾你了，我不想給你添麻煩。",
+      "hintWords": [
+        "nuisance"
+      ],
       "referenceEn": [
-        "The noise from the building site next door is a nuisance.",
-        "Having to charge my phone twice a day is a real nuisance."
+        "Sorry to bother you. I don't want to be a nuisance.",
+        "I'm sorry to bother you; I don't want to make a nuisance of myself."
       ],
       "rubricZh": [
-        "句子要用到 nuisance",
-        "nuisance 的用法，例如 a nuisance、a real nuisance 等",
-        "時態合理（例如 is 等）"
+        "nuisance 表示「麻煩、討厭的人或事」（例如 be a nuisance、make a nuisance of myself 等）",
+        "「打擾你」可寫，例如 bother you、disturb you 等"
       ]
     }
   ],
@@ -296,6 +297,12 @@
         "message": "第②關 issue 結案：首句因果不通：\"We had overestimated how many rides we could do..., because the longest line was a real nuisance\"——排隊太久是「玩不了那麼多項」的原因，不是「高估」的原因；建議改成 \"We had overestimated how many rides we could do in one day: the longest line was a real nuisance...\" 或用 so 改寫。passageZh 同步。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nuisance）原位換成翻譯題，沿用題 id b2-u44-l05-q17；目標字沿用 nuisance",
+        "resolution": "改為 translate：promptZh「抱歉打擾你了，我不想給你添麻煩。」、hintWords [\"nuisance\"]、referenceEn [\"Sorry to bother you. I don't want to be a nuisance.\",\"I'm sorry to bother you; I don't want to make a nuisance of myself.\"]、rubricZh [\"nuisance 表示「麻煩、討厭的人或事」（例如 be a nuisance、make a nuisance of myself 等）\",\"「打擾你」可寫，例如 bother you、disturb you 等\"]（原 makeSentence：instructionZh「用 nuisance 造一個句子，說說一件讓你覺得很煩或很麻煩的事。」、referenceEn [\"The noise from the building site next door is a nuisance.\",\"Having to charge my phone twice a day is a real nuisance.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

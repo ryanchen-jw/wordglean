@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u52-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "heartwarming",
-      "instructionZh": "用 heartwarming 造一個句子，說說一個讓你覺得溫馨感人的故事或時刻。",
+      "type": "translate",
+      "promptZh": "看到鄰居們一起幫那位老太太搬家，真的很溫馨。",
+      "hintWords": [
+        "heartwarming"
+      ],
       "referenceEn": [
-        "My grandparents' fiftieth wedding anniversary was a heartwarming day.",
-        "The moment my dog ran to meet me at the airport was heartwarming."
+        "It was heartwarming to see the neighbors help the old lady move house.",
+        "Seeing the neighbors help the old woman move was really heartwarming."
       ],
       "rubricZh": [
-        "句子要用到 heartwarming（例如 a heartwarming day、was heartwarming 等）",
-        "時態配合內容（例如 was、is 等）"
+        "heartwarming 當形容詞（例如 It was heartwarming to see…、… was heartwarming 等）",
+        "「搬家」可寫，例如 move、move house 等",
+        "時態可用過去式或現在式（例如 was、is 等）"
       ]
     }
   ],
@@ -305,6 +308,12 @@
         "message": "第②關 issue 結案：違反第一義＝例句詞義（§11.27）：單字卡例句 \"jealously guarded his special cooking method\" 是「小心守護地」義（exampleZh 也譯「小心翼翼地守住」），但 glossZh 第一義是「嫉妒地」；App 單字卡只顯示第一義，會對不上。建議改為「小心守護地；嫉妒地」，或把例句改成嫉妒義。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/6 的修正紀錄。",
         "resolvedAt": "2026-10-03T12:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（heartwarming）原位換成翻譯題，沿用題 id b2-u52-l03-q17；目標字沿用 heartwarming",
+        "resolution": "改為 translate：promptZh「看到鄰居們一起幫那位老太太搬家，真的很溫馨。」、hintWords [\"heartwarming\"]、referenceEn [\"It was heartwarming to see the neighbors help the old lady move house.\",\"Seeing the neighbors help the old woman move was really heartwarming.\"]、rubricZh [\"heartwarming 當形容詞（例如 It was heartwarming to see…、… was heartwarming 等）\",\"「搬家」可寫，例如 move、move house 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 heartwarming 造一個句子，說說一個讓你覺得溫馨感人的故事或時刻。」、referenceEn [\"My grandparents' fiftieth wedding anniversary was a heartwarming day.\",\"The moment my dog ran to meet me at the airport was heartwarming.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

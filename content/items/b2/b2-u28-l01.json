@@ -243,17 +243,19 @@
     },
     {
       "id": "b2-u28-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "brochure",
-      "instructionZh": "用 brochure 造一個句子，說說你曾在哪裡拿到或看過一本介紹用的小冊子。",
+      "type": "translate",
+      "promptZh": "這本小冊子列出了這座城市所有的博物館。",
+      "hintWords": [
+        "brochure"
+      ],
       "referenceEn": [
-        "I picked up a brochure about city tours at the train station.",
-        "I read a hotel brochure before I booked my room."
+        "This brochure lists all the museums in the city.",
+        "All the museums in the city are listed in this brochure."
       ],
       "rubricZh": [
-        "句子要用到 brochure",
-        "可說明內容（例如 a brochure about…、a hotel brochure 等）",
-        "說過去的經驗，時態配合內容（例如 picked up、have read 等）"
+        "「小冊子」可寫，例如 brochure 等",
+        "「列出」可寫，例如 lists、are listed in、gives a list of 等",
+        "時態可用現在式或過去式（例如 lists、listed 等）"
       ]
     }
   ],
@@ -345,6 +347,12 @@
         "message": "執行長第②③關裁示修正：評分要點：不寫死時態、「常見搭配」改「X 的用法，例如…等」、例如清單補「等」（b2cd1 裁示、第③關疑似 26）",
         "resolution": "改前：\"說過去的經驗，時態配合內容（例如 picked up、have read）\"；改後：\"說過去的經驗，時態配合內容（例如 picked up、have read 等）\"",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（brochure）原位換成翻譯題，沿用題 id b2-u28-l01-q18；目標字沿用 brochure",
+        "resolution": "改為 translate：promptZh「這本小冊子列出了這座城市所有的博物館。」、hintWords [\"brochure\"]、referenceEn [\"This brochure lists all the museums in the city.\",\"All the museums in the city are listed in this brochure.\"]、rubricZh [\"「小冊子」可寫，例如 brochure 等\",\"「列出」可寫，例如 lists、are listed in、gives a list of 等\",\"時態可用現在式或過去式（例如 lists、listed 等）\"]（原 makeSentence：instructionZh「用 brochure 造一個句子，說說你曾在哪裡拿到或看過一本介紹用的小冊子。」、referenceEn [\"I picked up a brochure about city tours at the train station.\",\"I read a hotel brochure before I booked my room.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

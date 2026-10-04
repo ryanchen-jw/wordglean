@@ -228,17 +228,19 @@
     },
     {
       "id": "b2-u43-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "misunderstand",
-      "instructionZh": "用 misunderstand 造一個句子，說說一次你被誤會或誤會別人的經驗。",
+      "type": "translate",
+      "promptZh": "她誤會了我說的話，以為我不高興。",
+      "hintWords": [
+        "misunderstand"
+      ],
       "referenceEn": [
-        "My friend misunderstood my joke and got upset.",
-        "I once misunderstood the time of the party and arrived early."
+        "She misunderstood what I said and thought I was upset.",
+        "She misunderstood my words and thought that I was unhappy."
       ],
       "rubricZh": [
-        "句子要用到 misunderstand",
-        "misunderstand 的用法，例如 misunderstood my joke、misunderstood the time 等",
-        "時態合理（例如 misunderstood、got 等）"
+        "時態可用過去式或現在完成式（例如 misunderstood what I said、has misunderstood me 等）",
+        "「不高興」可寫，例如 upset、unhappy、angry 等",
+        "後半句時態配合前半句（例如 thought I was upset、thinks I'm upset 等）"
       ]
     }
   ],
@@ -396,6 +398,18 @@
         "message": "執行長第②③關裁示修正：配合同題修改",
         "resolution": "改前：1；改後：0",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（misunderstand）原位換成翻譯題，沿用題 id b2-u43-l04-q17；目標字沿用 misunderstand",
+        "resolution": "改為 translate：promptZh「她誤會了我說的話，以為我在不高興。」、hintWords [\"misunderstand\"]、referenceEn [\"She misunderstood what I said and thought I was upset.\",\"She misunderstood my words and thought that I was unhappy.\"]、rubricZh [\"時態可用過去式或現在完成式（例如 misunderstood what I said、has misunderstood me 等）\",\"「不高興」可寫，例如 upset、unhappy、angry 等\",\"用過去式（例如 thought、was 等）\"]（原 makeSentence：instructionZh「用 misunderstand 造一個句子，說說一次你被誤會或誤會別人的經驗。」、referenceEn [\"My friend misunderstood my joke and got upset.\",\"I once misunderstood the time of the party and arrived early.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 要點第 1、3 條互相矛盾（收現在完成式又規定過去式）；「以為我在不高興」不通順",
+        "resolution": "改為 promptZh「她誤會了我說的話，以為我不高興。」、referenceEn [\"She misunderstood what I said and thought I was upset.\",\"She misunderstood my words and thought that I was unhappy.\"]、rubricZh [\"時態可用過去式或現在完成式（例如 misunderstood what I said、has misunderstood me 等）\",\"「不高興」可寫，例如 upset、unhappy、angry 等\",\"後半句時態配合前半句（例如 thought I was upset、thinks I'm upset 等）\"]（原 promptZh「她誤會了我說的話，以為我在不高興。」、referenceEn [\"She misunderstood what I said and thought I was upset.\",\"She misunderstood my words and thought that I was unhappy.\"]、rubricZh [\"時態可用過去式或現在完成式（例如 misunderstood what I said、has misunderstood me 等）\",\"「不高興」可寫，例如 upset、unhappy、angry 等\",\"用過去式（例如 thought、was 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

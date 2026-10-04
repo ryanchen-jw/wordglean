@@ -229,16 +229,18 @@
     },
     {
       "id": "b2-u48-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "waterproof",
-      "instructionZh": "用 waterproof 造一個句子，說說一樣你擁有或想買的防水物品。",
+      "type": "translate",
+      "promptZh": "我的新手機是防水的，所以掉進水裡也沒關係。",
+      "hintWords": [
+        "waterproof"
+      ],
       "referenceEn": [
-        "I need a waterproof bag for my beach trip.",
-        "My boots are waterproof, so I can walk in the rain."
+        "My new phone is waterproof, so it is fine if it falls into water.",
+        "My new phone is waterproof, so dropping it in water is not a problem."
       ],
       "rubricZh": [
-        "句子要用到 waterproof（例如 a waterproof bag、are waterproof）",
-        "waterproof 可放名詞前或 be 動詞後，例如 a waterproof bag、are waterproof 等"
+        "waterproof 表示「防水的」（例如 is waterproof 等）",
+        "「掉進水裡也沒關係」可寫，例如 it is fine if it falls into water 等"
       ]
     }
   ],
@@ -354,6 +356,12 @@
         "message": "執行長第②③關裁示修正：裁示：queer 釋義加註另有現代用法（性少數群體的自稱），本課只教舊義；釋義上限 20 字故濃縮",
         "resolution": "改前：\"奇怪的（舊用法；今多指性少數）\"；改後：\"奇怪的（本課只教舊義；另為性少數自稱）\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（waterproof）原位換成翻譯題，沿用題 id b2-u48-l08-q17；目標字沿用 waterproof",
+        "resolution": "改為 translate：promptZh「我的新手機是防水的，所以掉進水裡也沒關係。」、hintWords [\"waterproof\"]、referenceEn [\"My new phone is waterproof, so it is fine if it falls into water.\",\"My new phone is waterproof, so dropping it in water is not a problem.\"]、rubricZh [\"waterproof 表示「防水的」（例如 is waterproof 等）\",\"「掉進水裡也沒關係」可寫，例如 it is fine if it falls into water 等\"]（原 makeSentence：instructionZh「用 waterproof 造一個句子，說說一樣你擁有或想買的防水物品。」、referenceEn [\"I need a waterproof bag for my beach trip.\",\"My boots are waterproof, so I can walk in the rain.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

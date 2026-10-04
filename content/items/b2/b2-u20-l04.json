@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u20-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "dorm",
-      "instructionZh": "用 dorm 造一個句子，說說你住宿舍的經驗或對宿舍生活的想法。",
+      "type": "translate",
+      "promptZh": "我妹妹下學期會搬出宿舍。",
+      "hintWords": [
+        "dorm"
+      ],
       "referenceEn": [
-        "I lived in a dorm in my first year at university, and I made many friends.",
-        "I think living in a dorm teaches you to share and be patient."
+        "My younger sister will move out of the dorm next term.",
+        "My little sister is going to move out of her dorm next semester."
       ],
       "rubricZh": [
-        "句子要用到 dorm",
-        "時態合理即可"
+        "dorm 指宿舍（例如 the dorm、her dorm 等）",
+        "「會」表示未來，可用表示未來的寫法（例如 will、be going to、is moving 等）",
+        "「下學期」可寫，例如 next term、next semester 等"
       ]
     }
   ],
@@ -398,6 +401,12 @@
         "message": "執行長裁示修正：單字卡第一義須為例句所教詞義（App 作答選項只顯示第一義）：調整釋義順序",
         "resolution": "改前：\"門口；通道；門戶\"；改後：\"門戶；門口；通道\"",
         "resolvedAt": "2026-10-02T19:58:48Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dorm）原位換成翻譯題，沿用題 id b2-u20-l04-q17；目標字沿用 dorm",
+        "resolution": "改為 translate：promptZh「我妹妹下學期會搬出宿舍。」、hintWords [\"dorm\"]、referenceEn [\"My younger sister will move out of the dorm next term.\",\"My little sister is going to move out of her dorm next semester.\"]、rubricZh [\"dorm 指宿舍（例如 the dorm、her dorm 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to、is moving 等）\",\"「下學期」可寫，例如 next term、next semester 等\"]（原 makeSentence：instructionZh「用 dorm 造一個句子，說說你住宿舍的經驗或對宿舍生活的想法。」、referenceEn [\"I lived in a dorm in my first year at university, and I made many friends.\",\"I think living in a dorm teaches you to share and be patient.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

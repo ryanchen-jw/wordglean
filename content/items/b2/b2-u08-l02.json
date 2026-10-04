@@ -241,16 +241,19 @@
     },
     {
       "id": "b2-u08-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "probable",
-      "instructionZh": "用 probable 造一個句子，說說一件你認為很可能發生的事。",
+      "type": "translate",
+      "promptZh": "這個錯誤最可能的原因是電腦太舊了。",
+      "hintWords": [
+        "probable"
+      ],
       "referenceEn": [
-        "It is probable that I will change jobs next year.",
-        "I think a small rise in my rent is probable this year."
+        "The most probable cause of the error is that the computer is too old.",
+        "The most probable reason for this mistake is the old computer."
       ],
       "rubricZh": [
-        "句子要用到 probable，常用 It is probable that…，或放在 be 動詞後（例如 is probable）",
-        "句意要表示「很可能」，時態合理"
+        "probable 表示「很可能的」（例如 the most probable cause、the most probable reason 等）",
+        "「原因」可寫，例如 cause、reason 等",
+        "「錯誤」可寫，例如 error、mistake、problem 等"
       ]
     }
   ],
@@ -432,6 +435,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"說所有青少年都很懶，是以偏概全的說法。\"；改後：\"科學家從許多小型研究的結果中做出概括。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（probable）原位換成翻譯題，沿用題 id b2-u08-l02-q18；目標字沿用 probable",
+        "resolution": "改為 translate：promptZh「這個錯誤最可能的原因是電腦太舊了。」、hintWords [\"probable\"]、referenceEn [\"The most probable cause of the error is that the computer is too old.\",\"The most probable reason for this mistake is the old computer.\"]、rubricZh [\"probable 表示「很可能的」（例如 the most probable cause、the most probable reason 等）\",\"「原因」可寫，例如 cause、reason 等\",\"「錯誤」可寫，例如 error、mistake、problem 等\"]（原 makeSentence：instructionZh「用 probable 造一個句子，說說一件你認為很可能發生的事。」、referenceEn [\"It is probable that I will change jobs next year.\",\"I think a small rise in my rent is probable this year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

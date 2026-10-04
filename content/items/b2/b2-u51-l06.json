@@ -213,31 +213,35 @@
     {
       "id": "b2-u51-l06-q16",
       "type": "translate",
-      "promptZh": "沙漠在夏天會熱得難以想像。",
+      "promptZh": "從山頂往下看，那片森林大得難以想像。",
       "hintWords": [
         "unimaginably"
       ],
       "referenceEn": [
-        "The desert gets unimaginably hot in summer.",
-        "In summer, the desert becomes unimaginably hot."
+        "From the top of the mountain, the forest looks unimaginably large.",
+        "Seen from the mountain top, the forest seems unimaginably big."
       ],
       "rubricZh": [
-        "要用 unimaginably 修飾形容詞（例如 unimaginably hot）",
-        "「變得」可寫，例如 gets、becomes、is 等"
+        "要用 unimaginably 修飾形容詞（例如 unimaginably large、unimaginably big 等）",
+        "「看起來」可寫，例如 looks、seems、is 等",
+        "時態可用現在式或過去式（例如 looks、looked 等）"
       ]
     },
     {
       "id": "b2-u51-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "unfashionable",
-      "instructionZh": "用 unfashionable 造一個句子，說說一樣你覺得過時、但你還是喜歡的東西。",
+      "type": "translate",
+      "promptZh": "現在很少人寫信了，寫信似乎已經過時。",
+      "hintWords": [
+        "unfashionable"
+      ],
       "referenceEn": [
-        "My old jacket is unfashionable, but it keeps me warm.",
-        "I still listen to some unfashionable songs from my school days because I love them."
+        "Few people write letters now; writing letters seems unfashionable.",
+        "Writing letters seems unfashionable now, and few people do it anymore."
       ],
       "rubricZh": [
-        "句子要用到 unfashionable（例如 is unfashionable、think are unfashionable）",
-        "時態配合內容（例如 is、listen 等）"
+        "unfashionable 當形容詞，接在 seem、be 等動詞後（例如 seems unfashionable 等）",
+        "「很少人」可寫，例如 few people、not many people 等",
+        "「似乎」可寫，例如 seems、looks 等"
       ]
     }
   ],
@@ -287,6 +291,18 @@
         "message": "執行長第②③關裁示修正：第③關疑似 17：題目要「你覺得過時」，參考答案的判斷者改成自己",
         "resolution": "改前：\"I still listen to songs that my friends think are unfashionable.\"；改後：\"I still listen to some unfashionable songs from my school days because I love them.\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b2-u51-l03-q16（got tanned … all summer）字面雷同（get、summer），換情境與句型；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「從山頂往下看，那片森林大得難以想像。」、referenceEn [\"From the top of the mountain, the forest looks unimaginably large.\",\"Seen from the mountain top, the forest seems unimaginably big.\"]、rubricZh [\"要用 unimaginably 修飾形容詞（例如 unimaginably large、unimaginably big 等）\",\"「看起來」可寫，例如 looks、seems、is 等\",\"時態可用現在式或過去式（例如 looks、looked 等）\"]（原 promptZh「沙漠在夏天會熱得難以想像。」、referenceEn [\"The desert gets unimaginably hot in summer.\",\"In summer, the desert becomes unimaginably hot.\"]、rubricZh [\"要用 unimaginably 修飾形容詞（例如 unimaginably hot）\",\"「變得」可寫，例如 gets、becomes、is 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unfashionable）原位換成翻譯題，沿用題 id b2-u51-l06-q17；目標字沿用 unfashionable",
+        "resolution": "改為 translate：promptZh「現在很少人寫信了，寫信似乎已經過時。」、hintWords [\"unfashionable\"]、referenceEn [\"Few people write letters now; writing letters seems unfashionable.\",\"Writing letters seems unfashionable now, and few people do it anymore.\"]、rubricZh [\"unfashionable 當形容詞，接在 seem、be 等動詞後（例如 seems unfashionable 等）\",\"「很少人」可寫，例如 few people、not many people 等\",\"「似乎」可寫，例如 seems、looks 等\"]（原 makeSentence：instructionZh「用 unfashionable 造一個句子，說說一樣你覺得過時、但你還是喜歡的東西。」、referenceEn [\"My old jacket is unfashionable, but it keeps me warm.\",\"I still listen to some unfashionable songs from my school days because I love them.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

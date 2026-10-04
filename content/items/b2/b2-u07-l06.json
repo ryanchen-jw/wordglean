@@ -231,16 +231,18 @@
     },
     {
       "id": "b2-u07-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "exceptionally",
-      "instructionZh": "用 exceptionally 造一個句子，說說某件事格外好、格外差或格外特別。",
+      "type": "translate",
+      "promptZh": "這家旅館的床格外舒服。",
+      "hintWords": [
+        "exceptionally"
+      ],
       "referenceEn": [
-        "My team worked exceptionally hard this month.",
-        "The food at my sister's wedding was exceptionally good."
+        "The beds in this hotel are exceptionally comfortable.",
+        "This hotel has exceptionally comfortable beds."
       ],
       "rubricZh": [
-        "句子要用到 exceptionally，修飾形容詞或副詞（例如 exceptionally good、exceptionally hard）",
-        "句意要表示程度特別高"
+        "exceptionally 放在形容詞前，表示「格外地」（例如 exceptionally comfortable 等）",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -422,6 +424,12 @@
         "message": "執行長裁示修正：同課兩題 mcq 不共用干擾項（執行長裁示回補）：dime；混合詞性題至少兩個干擾項放得進空格",
         "resolution": "改前：\"計算\"；改後：\"大致上\"",
         "resolvedAt": "2026-10-02T20:04:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（exceptionally）原位換成翻譯題，沿用題 id b2-u07-l06-q17；目標字沿用 exceptionally",
+        "resolution": "改為 translate：promptZh「這家旅館的床格外舒服。」、hintWords [\"exceptionally\"]、referenceEn [\"The beds in this hotel are exceptionally comfortable.\",\"This hotel has exceptionally comfortable beds.\"]、rubricZh [\"exceptionally 放在形容詞前，表示「格外地」（例如 exceptionally comfortable 等）\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 exceptionally 造一個句子，說說某件事格外好、格外差或格外特別。」、referenceEn [\"My team worked exceptionally hard this month.\",\"The food at my sister's wedding was exceptionally good.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

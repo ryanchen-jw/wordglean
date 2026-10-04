@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u16-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "scar",
-      "instructionZh": "用 scar 造一個句子，說說你或某樣東西上的一道疤痕或痕跡怎麼來的。",
+      "type": "translate",
+      "promptZh": "我爸爸的手臂上有一道長長的疤。",
+      "hintWords": [
+        "scar"
+      ],
       "referenceEn": [
-        "I have a small scar on my hand from a cooking accident.",
-        "My old guitar has a scar on the back from a bad fall."
+        "My father has a long scar on his arm.",
+        "There is a long scar on my dad's arm."
       ],
       "rubricZh": [
-        "句子要用到 scar（例如 a scar on my hand）",
-        "描述要合理"
+        "scar 指「疤痕」（例如 a long scar on his arm 等）",
+        "可寫 … has a scar on…，或 There is a scar on… 等",
+        "「爸爸」可寫，例如 father、dad 等"
       ]
     }
   ],
@@ -437,6 +440,12 @@
         "message": "執行長裁示修正：干擾項用字範圍：同級未教字換成本課、先前課或低一級以下的字",
         "resolution": "改前：\"未經治療的\"；改後：\"痛苦的\"",
         "resolvedAt": "2026-10-02T19:35:19Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（scar）原位換成翻譯題，沿用題 id b2-u16-l03-q17；目標字沿用 scar",
+        "resolution": "改為 translate：promptZh「我爸爸的手臂上有一道長長的疤。」、hintWords [\"scar\"]、referenceEn [\"My father has a long scar on his arm.\",\"There is a long scar on my dad's arm.\"]、rubricZh [\"scar 指「疤痕」（例如 a long scar on his arm 等）\",\"可寫 … has a scar on…，或 There is a scar on… 等\",\"「爸爸」可寫，例如 father、dad 等\"]（原 makeSentence：instructionZh「用 scar 造一個句子，說說你或某樣東西上的一道疤痕或痕跡怎麼來的。」、referenceEn [\"I have a small scar on my hand from a cooking accident.\",\"My old guitar has a scar on the back from a bad fall.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

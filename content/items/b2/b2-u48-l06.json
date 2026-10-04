@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u48-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "shabby",
-      "instructionZh": "用 shabby 造一個句子，描述一樣你擁有或看過的破舊東西或地方。",
+      "type": "translate",
+      "promptZh": "他們搬進了一間破舊的小公寓。",
+      "hintWords": [
+        "shabby"
+      ],
       "referenceEn": [
-        "My old school bag is shabby, but I still love it.",
-        "I once stayed in a shabby little room near the train station."
+        "They moved into a shabby little apartment.",
+        "They moved into a small, shabby apartment."
       ],
       "rubricZh": [
-        "句子要用到 shabby（例如 is shabby、a shabby little room）",
-        "時態配合內容（例如 is、stayed 等）"
+        "shabby 表示「破舊的」（例如 a shabby little apartment 等）；形容詞順序不扣分",
+        "「公寓」可寫，例如 apartment、flat 等",
+        "時態可用過去式或現在完成式（例如 moved、have moved 等）"
       ]
     }
   ],
@@ -342,6 +345,12 @@
         "message": "執行長第②③關裁示修正：裁示「情境表逐列人工判定」：重判後主詞、情境、句型換不到兩項，改寫（modernize 與單字卡同句型）",
         "resolution": "改前：\"市政府計畫將老舊的火車站現代化。\"；改後：\"我們學校去年夏天終於把電腦教室現代化了。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（shabby）原位換成翻譯題，沿用題 id b2-u48-l06-q17；目標字沿用 shabby",
+        "resolution": "改為 translate：promptZh「他們搬進了一間破舊的小公寓。」、hintWords [\"shabby\"]、referenceEn [\"They moved into a shabby little apartment.\",\"They moved into a small, shabby apartment.\"]、rubricZh [\"shabby 表示「破舊的」（例如 a shabby little apartment 等）；形容詞順序不扣分\",\"「公寓」可寫，例如 apartment、flat 等\",\"時態可用過去式或現在完成式（例如 moved、have moved 等）\"]（原 makeSentence：instructionZh「用 shabby 造一個句子，描述一樣你擁有或看過的破舊東西或地方。」、referenceEn [\"My old school bag is shabby, but I still love it.\",\"I once stayed in a shabby little room near the train station.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

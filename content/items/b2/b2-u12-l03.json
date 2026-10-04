@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u12-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "genius",
-      "instructionZh": "用 genius 造一個句子，說說你認識或欣賞的、在某方面很有天分的人。",
+      "type": "translate",
+      "promptZh": "這位老師的天賦在於能把很難的觀念講得很簡單。",
+      "hintWords": [
+        "genius"
+      ],
       "referenceEn": [
-        "My younger brother is a genius with computers.",
-        "I think my grandmother is a genius in the kitchen."
+        "This teacher's genius lies in explaining difficult ideas simply.",
+        "The genius of this teacher is that she can make hard ideas sound simple."
       ],
       "rubricZh": [
-        "句子要用到 genius（例如 a genius with…、a genius at…）",
-        "描述要合理"
+        "genius 這裡指「天賦」，不可數（例如 his genius lies in…、the genius of this teacher 等）",
+        "「在於」可寫，例如 lies in …ing、is that … 等",
+        "老師用 he、she 都可以，不扣分"
       ]
     }
   ],
@@ -481,6 +484,12 @@
         "message": "執行長最終複審修正：A 第 3 批：第一義為名詞，干擾項同詞性",
         "resolution": "改前：[\"善良的\",\"聰明的\",\"可憐的\"]；改後：[\"善良\",\"智慧\",\"希望\"]",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（genius）原位換成翻譯題，沿用題 id b2-u12-l03-q17；目標字沿用 genius",
+        "resolution": "改為 translate：promptZh「這位老師的天賦在於能把很難的觀念講得很簡單。」、hintWords [\"genius\"]、referenceEn [\"This teacher's genius lies in explaining difficult ideas simply.\",\"The genius of this teacher is that she can make hard ideas sound simple.\"]、rubricZh [\"genius 這裡指「天賦」，不可數（例如 his genius lies in…、the genius of this teacher 等）\",\"「在於」可寫，例如 lies in …ing、is that … 等\",\"老師用 he、she 都可以，不扣分\"]（原 makeSentence：instructionZh「用 genius 造一個句子，說說你認識或欣賞的、在某方面很有天分的人。」、referenceEn [\"My younger brother is a genius with computers.\",\"I think my grandmother is a genius in the kitchen.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

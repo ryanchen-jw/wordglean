@@ -230,17 +230,18 @@
     },
     {
       "id": "b2-u46-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "human rights",
-      "instructionZh": "用 human rights 造一個句子，說說你認為人人都應該享有的一項權利。",
+      "type": "translate",
+      "promptZh": "這本書用簡單的文字向孩子解釋人權。",
+      "hintWords": [
+        "human rights"
+      ],
       "referenceEn": [
-        "I think free education is one of the basic human rights.",
-        "I believe that clean water should be one of everyone's human rights."
+        "This book explains human rights to children in simple words.",
+        "This book uses simple language to explain human rights to children."
       ],
       "rubricZh": [
-        "句子要用到 human rights（例如 one of the basic human rights）",
-        "說出一項權利（例如 education、clean water 等）",
-        "可用表達看法的寫法，例如 I think、I believe 等"
+        "human rights 表示「人權」，用複數（例如 explains human rights 等）",
+        "「用簡單的文字」可寫，例如 in simple words、uses simple language 等"
       ]
     }
   ],
@@ -362,6 +363,12 @@
         "message": "第②關 issue 結案：正解「Neighbors were burgled」與音檔「Our neighbor's house was burgled」不一致（音檔是一戶鄰居，選項是複數 Neighbors），且直接照搬目標字 burgled；建議改為 Their neighbor's house was burgled 或 A neighbor's home was broken into。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/9 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（human rights）原位換成翻譯題，沿用題 id b2-u46-l09-q17；目標字沿用 human rights",
+        "resolution": "改為 translate：promptZh「這本書用簡單的文字向孩子解釋人權。」、hintWords [\"human rights\"]、referenceEn [\"This book explains human rights to children in simple words.\",\"This book uses simple language to explain human rights to children.\"]、rubricZh [\"human rights 表示「人權」，用複數（例如 explains human rights 等）\",\"「用簡單的文字」可寫，例如 in simple words、uses simple language 等\"]（原 makeSentence：instructionZh「用 human rights 造一個句子，說說你認為人人都應該享有的一項權利。」、referenceEn [\"I think free education is one of the basic human rights.\",\"I believe that clean water should be one of everyone's human rights.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

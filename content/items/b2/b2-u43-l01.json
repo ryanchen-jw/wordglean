@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u43-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "predictable",
-      "instructionZh": "用 predictable 造一個句子，說說你生活中有什麼事情很固定、很容易預料。",
+      "type": "translate",
+      "promptZh": "這座城市夏天的天氣很好預測：每天下午都會下雨。",
+      "hintWords": [
+        "predictable"
+      ],
       "referenceEn": [
-        "My weekday mornings are very predictable.",
-        "My little brother's answers are always predictable."
+        "The summer weather in this city is predictable: it rains every afternoon.",
+        "In this city, summer weather is very predictable, because it rains every afternoon."
       ],
       "rubricZh": [
-        "句子要用到 predictable",
-        "predictable 的用法，例如 very predictable、always predictable 等",
-        "時態合理（例如 are、is 等）"
+        "predictable 可放 be 動詞後或名詞前（例如 is predictable、predictable weather 等）",
+        "「每天下午都會下雨」可寫，例如 it rains every afternoon 等；用現在式表示常態"
       ]
     }
   ],
@@ -300,6 +301,18 @@
         "message": "第②關 issue 結案：疑似觸及健康／保健宣稱（裁示 30）：\"Good sleep is a strong predictor of good grades.\" 屬睡眠與成績的因果暗示；建議換成中性事實情境（例如天氣、比賽預測）。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（predictable）原位換成翻譯題，沿用題 id b2-u43-l01-q17；目標字沿用 predictable",
+        "resolution": "改為 translate：promptZh「這座城市夏天的天氣很好預測：每天下午都會下雨。」、hintWords [\"predictable\"]、referenceEn [\"The summer weather in this city is predictable: it rains every afternoon.\",\"In this city, summer weather is very predictable, because it rains every afternoon.\"]、rubricZh [\"predictable 放在 be 動詞後（例如 is predictable、very predictable 等）\",\"「每天下午都會下雨」可寫，例如 it rains every afternoon 等；用現在式表示常態\"]（原 makeSentence：instructionZh「用 predictable 造一個句子，說說你生活中有什麼事情很固定、很容易預料。」、referenceEn [\"My weekday mornings are very predictable.\",\"My little brother's answers are always predictable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 predictable 放 be 動詞後",
+        "resolution": "改為 promptZh「這座城市夏天的天氣很好預測：每天下午都會下雨。」、referenceEn [\"The summer weather in this city is predictable: it rains every afternoon.\",\"In this city, summer weather is very predictable, because it rains every afternoon.\"]、rubricZh [\"predictable 可放 be 動詞後或名詞前（例如 is predictable、predictable weather 等）\",\"「每天下午都會下雨」可寫，例如 it rains every afternoon 等；用現在式表示常態\"]（原 promptZh「這座城市夏天的天氣很好預測：每天下午都會下雨。」、referenceEn [\"The summer weather in this city is predictable: it rains every afternoon.\",\"In this city, summer weather is very predictable, because it rains every afternoon.\"]、rubricZh [\"predictable 放在 be 動詞後（例如 is predictable、very predictable 等）\",\"「每天下午都會下雨」可寫，例如 it rains every afternoon 等；用現在式表示常態\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

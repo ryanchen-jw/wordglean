@@ -228,16 +228,19 @@
     },
     {
       "id": "b2-u50-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "stagger",
-      "instructionZh": "用 stagger 造一個句子，描述你走路搖搖晃晃的一次經驗。",
+      "type": "translate",
+      "promptZh": "他抱著一個很重的箱子，搖搖晃晃地走上樓梯。",
+      "hintWords": [
+        "stagger"
+      ],
       "referenceEn": [
-        "After spinning around ten times, I staggered across the room.",
-        "When I first learned to skate, I staggered on the ice."
+        "He staggered up the stairs with a heavy box.",
+        "Carrying a heavy box, he staggered up the stairs."
       ],
       "rubricZh": [
-        "句子要用到 stagger（例如 staggered across the room、staggered on the ice 等）",
-        "時態配合內容（例如 staggered、stagger 等）"
+        "stagger 當動詞，後接方向（例如 staggered up the stairs 等）",
+        "「抱著很重的箱子」可寫，例如 with a heavy box、carrying a heavy box 等",
+        "時態可用過去式或現在式（例如 staggered、staggers 等）"
       ]
     }
   ],
@@ -335,6 +338,12 @@
         "message": "執行長第②③關裁示修正：裁示：改教常用動詞義；stagger",
         "resolution": "改前：[\"句子要用到 stagger（例如名詞 with a stagger、動詞 staggered 等）\", \"時態配合內容（例如 walked、moved 等）\"]；改後：[\"句子要用到 stagger（例如 staggered across the room、staggered on the ice 等）\", \"時態配合內容（例如 staggered、stagger 等）\"]",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stagger）原位換成翻譯題，沿用題 id b2-u50-l05-q17；目標字沿用 stagger",
+        "resolution": "改為 translate：promptZh「他抱著一個很重的箱子，搖搖晃晃地走上樓梯。」、hintWords [\"stagger\"]、referenceEn [\"He staggered up the stairs with a heavy box.\",\"Carrying a heavy box, he staggered up the stairs.\"]、rubricZh [\"stagger 當動詞，後接方向（例如 staggered up the stairs 等）\",\"「抱著很重的箱子」可寫，例如 with a heavy box、carrying a heavy box 等\",\"時態可用過去式或現在式（例如 staggered、staggers 等）\"]（原 makeSentence：instructionZh「用 stagger 造一個句子，描述你走路搖搖晃晃的一次經驗。」、referenceEn [\"After spinning around ten times, I staggered across the room.\",\"When I first learned to skate, I staggered on the ice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

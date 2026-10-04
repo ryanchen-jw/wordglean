@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u17-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "prose",
-      "instructionZh": "用 prose 造一個句子，說說你喜歡讀詩還是散文，或你欣賞的文筆。",
+      "type": "translate",
+      "promptZh": "她的文筆簡單卻很優美。",
+      "hintWords": [
+        "prose"
+      ],
       "referenceEn": [
-        "I prefer reading prose to poetry because it is easier to follow.",
-        "I admire writers whose prose is short and clear."
+        "Her prose is simple but very beautiful.",
+        "She writes prose that is simple but beautiful."
       ],
       "rubricZh": [
-        "句子要用到 prose",
-        "句子要說到你自己的喜好"
+        "prose 這裡指「文筆、散文」，不可數（例如 Her prose is…、writes … prose 等）",
+        "「簡單卻優美」可寫，例如 simple but beautiful、simple yet lovely 等",
+        "時態可用現在式或過去式"
       ]
     }
   ],
@@ -404,6 +407,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"博物館展出一些文筆優美的舊信件。\"；改後：\"大多數小說是用散文寫的，而不是韻文。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（prose）原位換成翻譯題，沿用題 id b2-u17-l02-q18；目標字沿用 prose",
+        "resolution": "改為 translate：promptZh「她的文筆簡單卻很優美。」、hintWords [\"prose\"]、referenceEn [\"Her prose is simple but very beautiful.\",\"She writes prose that is simple but beautiful.\"]、rubricZh [\"prose 這裡指「文筆、散文」，不可數（例如 Her prose is…、writes … prose 等）\",\"「簡單卻優美」可寫，例如 simple but beautiful、simple yet lovely 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 prose 造一個句子，說說你喜歡讀詩還是散文，或你欣賞的文筆。」、referenceEn [\"I prefer reading prose to poetry because it is easier to follow.\",\"I admire writers whose prose is short and clear.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

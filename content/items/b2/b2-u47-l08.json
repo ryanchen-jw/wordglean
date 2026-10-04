@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u47-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "lick",
-      "instructionZh": "用 lick 造一個句子，說說人或動物舔東西的情景。",
+      "type": "translate",
+      "promptZh": "小男孩趁冰淇淋融化前趕快舔了一口。",
+      "hintWords": [
+        "lick"
+      ],
       "referenceEn": [
-        "My dog always licks my hand when I come home.",
-        "I licked the spoon after I made the cake."
+        "The little boy quickly licked his ice cream before it melted.",
+        "Before his ice cream melted, the little boy gave it a quick lick."
       ],
       "rubricZh": [
-        "句子要用到 lick（例如 licks my hand、licked the spoon）",
-        "時態配合內容（例如 licks、licked 等）"
+        "lick 可當動詞或名詞（例如 licked his ice cream、gave it a quick lick 等）",
+        "「融化前」可寫，例如 before it melted 等",
+        "時態可用過去式（例如 licked 等）"
       ]
     }
   ],
@@ -300,6 +303,12 @@
         "message": "執行長第②③關裁示修正：裁示「評分要點不寫死結構」全批掃描：動詞寫法也正確",
         "resolution": "改前：\"要用 murmur 當名詞（例如 a murmur from…）\"；改後：\"要用 murmur（例如 a murmur from…、murmuring 等）\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（lick）原位換成翻譯題，沿用題 id b2-u47-l08-q17；目標字沿用 lick",
+        "resolution": "改為 translate：promptZh「小男孩趁冰淇淋融化前趕快舔了一口。」、hintWords [\"lick\"]、referenceEn [\"The little boy quickly licked his ice cream before it melted.\",\"Before his ice cream melted, the little boy gave it a quick lick.\"]、rubricZh [\"lick 可當動詞或名詞（例如 licked his ice cream、gave it a quick lick 等）\",\"「融化前」可寫，例如 before it melted 等\",\"時態可用過去式（例如 licked 等）\"]（原 makeSentence：instructionZh「用 lick 造一個句子，說說人或動物舔東西的情景。」、referenceEn [\"My dog always licks my hand when I come home.\",\"I licked the spoon after I made the cake.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

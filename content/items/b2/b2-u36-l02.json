@@ -205,17 +205,18 @@
     },
     {
       "id": "b2-u36-l02-q15",
-      "type": "makeSentence",
-      "targetWord": "health care",
-      "instructionZh": "用 health care 造一個句子，說說你覺得好的醫療照護應該是什麼樣子，或你家附近的醫療環境。",
+      "type": "translate",
+      "promptZh": "住在這座小島上的人很難得到好的醫療照護。",
+      "hintWords": [
+        "health care"
+      ],
       "referenceEn": [
-        "I think good health care should be close to where people live.",
-        "In my town, health care is easy to get because there are many clinics."
+        "People on this small island find it hard to get good health care.",
+        "It is difficult for people living on this small island to get good health care."
       ],
       "rubricZh": [
-        "句子要用到 health care",
-        "health care 當不可數名詞（例如 good health care、health care is… 等）",
-        "時態配合內容（例如 should be、is 等）"
+        "「醫療照護」可寫，例如 health care、healthcare 等",
+        "「很難得到」可寫，例如 find it hard to get、it is difficult for … to get 等"
       ]
     }
   ],
@@ -367,6 +368,12 @@
         "message": "第②關 issue 結案：疑似：單字卡 word 寫成小寫 x-ray，例句與翻譯題都用 X-ray；標準寫法為 X-ray，建議統一（若是 lexicon 原形則確認顯示是否大寫）。",
         "resolution": "不改：word 欄位受 lexicon headword（小寫 x-ray）限制，交 App 顯示層；例句、翻譯已用 X-ray",
         "resolvedAt": "2026-10-03T01:02:23Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（health care）原位換成翻譯題，沿用題 id b2-u36-l02-q15；目標字沿用 health care",
+        "resolution": "改為 translate：promptZh「住在這座小島上的人很難得到好的醫療照護。」、hintWords [\"health care\"]、referenceEn [\"People on this small island find it hard to get good health care.\",\"It is difficult for people living on this small island to get good health care.\"]、rubricZh [\"「醫療照護」可寫，例如 health care、healthcare 等\",\"「很難得到」可寫，例如 find it hard to get、it is difficult for … to get 等\"]（原 makeSentence：instructionZh「用 health care 造一個句子，說說你覺得好的醫療照護應該是什麼樣子，或你家附近的醫療環境。」、referenceEn [\"I think good health care should be close to where people live.\",\"In my town, health care is easy to get because there are many clinics.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

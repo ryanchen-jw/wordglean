@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u08-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "expectation",
-      "instructionZh": "用 expectation 造一個句子，說說某件事比你預期的好或差。",
+      "type": "translate",
+      "promptZh": "他的父母對他的期望很高。",
+      "hintWords": [
+        "expectation"
+      ],
       "referenceEn": [
-        "My first job did not meet my expectations.",
-        "The service at the hotel went beyond my expectations."
+        "His parents have high expectations of him.",
+        "His parents have very high expectations for him."
       ],
       "rubricZh": [
-        "句子要用到 expectation，常用複數（例如 meet my expectations、beyond my expectations）",
-        "句子要說到你自己的經驗"
+        "expectation 常用複數（例如 high expectations of、high expectations for 等）",
+        "「期望很高」可寫，例如 have high expectations of／for him 等"
       ]
     }
   ],
@@ -377,6 +379,18 @@
         "message": "執行長最終複審修正：B2 冠詞／可數性洩題：a ____ 排除 expectation、planning",
         "resolution": "改前：\"規劃\"；改後：\"概括\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（expectation）原位換成翻譯題，沿用題 id b2-u08-l04-q17；目標字沿用 expectation",
+        "resolution": "改為 translate：promptZh「他的父母對他的期望很高。」、hintWords [\"expectation\"]、referenceEn [\"His parents have high expectations of him.\",\"His parents have very high expectations for him.\"]、rubricZh [\"expectation 常用複數（例如 high expectations of、high expectations for 等）\",\"「期望很高」可寫，例如 have high expectations、expect a lot of him 等；但要用到 expectation\"]（原 makeSentence：instructionZh「用 expectation 造一個句子，說說某件事比你預期的好或差。」、referenceEn [\"My first job did not meet my expectations.\",\"The service at the hotel went beyond my expectations.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點列 expect a lot of him 又要求用 expectation，自相矛盾",
+        "resolution": "改為 promptZh「他的父母對他的期望很高。」、referenceEn [\"His parents have high expectations of him.\",\"His parents have very high expectations for him.\"]、rubricZh [\"expectation 常用複數（例如 high expectations of、high expectations for 等）\",\"「期望很高」可寫，例如 have high expectations of／for him 等\"]（原 promptZh「他的父母對他的期望很高。」、referenceEn [\"His parents have high expectations of him.\",\"His parents have very high expectations for him.\"]、rubricZh [\"expectation 常用複數（例如 high expectations of、high expectations for 等）\",\"「期望很高」可寫，例如 have high expectations、expect a lot of him 等；但要用到 expectation\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

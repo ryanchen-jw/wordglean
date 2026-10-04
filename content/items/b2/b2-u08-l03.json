@@ -243,16 +243,19 @@
     },
     {
       "id": "b2-u08-l03-q18",
-      "type": "makeSentence",
-      "targetWord": "willing",
-      "instructionZh": "用 willing 造一個句子，說說你願意為工作或家人做的一件事。",
+      "type": "translate",
+      "promptZh": "沒有人願意在週末加班。",
+      "hintWords": [
+        "willing"
+      ],
       "referenceEn": [
-        "I am willing to work late if my team needs help.",
-        "I'm willing to drive my parents to the airport at five in the morning."
+        "Nobody is willing to work overtime on weekends.",
+        "No one was willing to work extra hours on the weekend."
       ],
       "rubricZh": [
-        "句子要用到 willing，常用 be willing to＋動詞（例如 am willing to work）",
-        "句子要說到你自己"
+        "willing 常用 be willing to＋動詞（例如 is willing to work 等）",
+        "「沒有人」可寫，例如 nobody、no one 等；時態可用現在式或過去式",
+        "「加班」可寫，例如 work overtime、work extra hours 等"
       ]
     }
   ],
@@ -398,6 +401,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"推論\"；改後：\"懷疑的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（willing）原位換成翻譯題，沿用題 id b2-u08-l03-q18；目標字沿用 willing",
+        "resolution": "改為 translate：promptZh「沒有人願意在週末加班。」、hintWords [\"willing\"]、referenceEn [\"Nobody is willing to work overtime on weekends.\",\"No one was willing to work extra hours on the weekend.\"]、rubricZh [\"willing 常用 be willing to＋動詞（例如 is willing to work 等）\",\"「沒有人」可寫，例如 nobody、no one 等；時態可用現在式或過去式\",\"「加班」可寫，例如 work overtime、work extra hours 等\"]（原 makeSentence：instructionZh「用 willing 造一個句子，說說你願意為工作或家人做的一件事。」、referenceEn [\"I am willing to work late if my team needs help.\",\"I'm willing to drive my parents to the airport at five in the morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

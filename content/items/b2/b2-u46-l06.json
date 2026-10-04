@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u46-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "traitor",
-      "instructionZh": "用 traitor 造一個句子，說說故事、電影或球賽中被當成叛徒的人。",
+      "type": "translate",
+      "promptZh": "直到這本小說的結尾，我們才知道誰是叛徒。",
+      "hintWords": [
+        "traitor"
+      ],
       "referenceEn": [
-        "In the movie, the hero's best friend turns out to be a traitor.",
-        "In my favorite spy story, the traitor is the person nobody suspected."
+        "We only find out who the traitor is at the end of the novel.",
+        "At the end of the novel, we finally learn who the traitor is."
       ],
       "rubricZh": [
-        "句子要用到 traitor（例如 a traitor）",
-        "時態配合內容（例如 turns out、called 等）"
+        "traitor 表示「叛徒」（例如 who the traitor is 等）",
+        "「才知道」可寫，例如 only find out、finally learn 等；時態可用現在式或過去式",
+        "only、finally 的位置不扣分"
       ]
     }
   ],
@@ -294,6 +297,12 @@
         "message": "執行長第②③關裁示修正：第③關 A：疑似 13：與聽打「球員轉隊被罵叛徒」重複",
         "resolution": "改前：\"Some fans called the coach a traitor when he moved to another club.\"；改後：\"In my favorite spy story, the traitor is the person nobody suspected.\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（traitor）原位換成翻譯題，沿用題 id b2-u46-l06-q17；目標字沿用 traitor",
+        "resolution": "改為 translate：promptZh「直到這本小說的結尾，我們才知道誰是叛徒。」、hintWords [\"traitor\"]、referenceEn [\"We only find out who the traitor is at the end of the novel.\",\"At the end of the novel, we finally learn who the traitor is.\"]、rubricZh [\"traitor 表示「叛徒」（例如 who the traitor is 等）\",\"「才知道」可寫，例如 only find out、finally learn 等；時態可用現在式或過去式\",\"only、finally 的位置不扣分\"]（原 makeSentence：instructionZh「用 traitor 造一個句子，說說故事、電影或球賽中被當成叛徒的人。」、referenceEn [\"In the movie, the hero's best friend turns out to be a traitor.\",\"In my favorite spy story, the traitor is the person nobody suspected.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

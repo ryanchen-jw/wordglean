@@ -230,16 +230,19 @@
     },
     {
       "id": "b2-u06-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "readily",
-      "instructionZh": "用 readily 造一個句子，說說某樣東西很容易取得，或某人很樂意幫忙。",
+      "type": "translate",
+      "promptZh": "她很爽快地接受了我們的晚餐邀請。",
+      "hintWords": [
+        "readily"
+      ],
       "referenceEn": [
-        "Fresh fruit is readily available at the market near my home.",
-        "My colleague readily agreed to help me with the report."
+        "She readily accepted our invitation to dinner.",
+        "She accepted our dinner invitation very readily."
       ],
       "rubricZh": [
-        "句子要用到 readily，表示「容易地」或「樂意地」（例如 readily available、readily agreed）",
-        "句子內容要合理，時態正確"
+        "readily 表示「樂意地、爽快地」，可放動詞前或句尾（例如 readily accepted 等）",
+        "「晚餐邀請」可寫，例如 our invitation to dinner、our dinner invitation 等",
+        "時態可用過去式或現在完成式"
       ]
     }
   ],
@@ -385,6 +388,12 @@
         "message": "執行長最終複審修正：人工逐題複核（報告外）：「is ____ of」只有接 of 的形容詞放得進，原干擾項 readily、rear、flexible 都放不進",
         "resolution": "改前：\"後面的\"；改後：\"喜愛的\"",
         "resolvedAt": "2026-10-02T20:39:25Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（readily）原位換成翻譯題，沿用題 id b2-u06-l09-q17；目標字沿用 readily",
+        "resolution": "改為 translate：promptZh「她很爽快地接受了我們的晚餐邀請。」、hintWords [\"readily\"]、referenceEn [\"She readily accepted our invitation to dinner.\",\"She accepted our dinner invitation very readily.\"]、rubricZh [\"readily 表示「樂意地、爽快地」，可放動詞前或句尾（例如 readily accepted 等）\",\"「晚餐邀請」可寫，例如 our invitation to dinner、our dinner invitation 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 readily 造一個句子，說說某樣東西很容易取得，或某人很樂意幫忙。」、referenceEn [\"Fresh fruit is readily available at the market near my home.\",\"My colleague readily agreed to help me with the report.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

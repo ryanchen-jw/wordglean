@@ -230,16 +230,18 @@
     },
     {
       "id": "b2-u07-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "hugely",
-      "instructionZh": "用 hugely 造一個句子，說說某件非常成功、受歡迎或重要的事。",
+      "type": "translate",
+      "promptZh": "這兩座城市的天氣差異極大。",
+      "hintWords": [
+        "hugely"
+      ],
       "referenceEn": [
-        "My sister's cafe has become hugely popular.",
-        "Your advice was hugely helpful to me."
+        "The weather in the two cities is hugely different.",
+        "These two cities have hugely different weather."
       ],
       "rubricZh": [
-        "句子要用到 hugely，修飾形容詞或動詞（例如 hugely popular、has grown hugely）",
-        "句意要表示程度非常高"
+        "hugely 可放形容詞前或修飾動詞，表示「極其」（例如 hugely different、differs hugely 等）",
+        "「天氣差異極大」可寫，例如 the weather is hugely different、have hugely different weather 等"
       ]
     }
   ],
@@ -367,6 +369,18 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"微型的\"；改後：\"部分\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hugely）原位換成翻譯題，沿用題 id b2-u07-l08-q17；目標字沿用 hugely",
+        "resolution": "改為 translate：promptZh「這兩座城市的天氣差異極大。」、hintWords [\"hugely\"]、referenceEn [\"The weather in the two cities is hugely different.\",\"These two cities have hugely different weather.\"]、rubricZh [\"hugely 放在形容詞前，表示「極其」（例如 hugely different 等）\",\"「天氣差異極大」可寫，例如 the weather is hugely different、have hugely different weather 等\"]（原 makeSentence：instructionZh「用 hugely 造一個句子，說說某件非常成功、受歡迎或重要的事。」、referenceEn [\"My sister's cafe has become hugely popular.\",\"Your advice was hugely helpful to me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 hugely 放形容詞前，differs hugely 也正確",
+        "resolution": "改為 promptZh「這兩座城市的天氣差異極大。」、referenceEn [\"The weather in the two cities is hugely different.\",\"These two cities have hugely different weather.\"]、rubricZh [\"hugely 可放形容詞前或修飾動詞，表示「極其」（例如 hugely different、differs hugely 等）\",\"「天氣差異極大」可寫，例如 the weather is hugely different、have hugely different weather 等\"]（原 promptZh「這兩座城市的天氣差異極大。」、referenceEn [\"The weather in the two cities is hugely different.\",\"These two cities have hugely different weather.\"]、rubricZh [\"hugely 放在形容詞前，表示「極其」（例如 hugely different 等）\",\"「天氣差異極大」可寫，例如 the weather is hugely different、have hugely different weather 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

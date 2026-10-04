@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u12-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "betray",
-      "instructionZh": "用 betray 造一個句子，說說被背叛的感受，或你不願背叛別人的信任。",
+      "type": "translate",
+      "promptZh": "那位球員離開球隊、加入對手後，球迷都覺得被背叛了。",
+      "hintWords": [
+        "betray"
+      ],
       "referenceEn": [
-        "I would never betray my best friend's trust.",
-        "I felt betrayed when my colleague took credit for my work."
+        "After the player left the team to join its rival, the fans felt betrayed.",
+        "The fans felt betrayed when the player joined a rival team."
       ],
       "rubricZh": [
-        "句子要用到 betray（例如 betray someone's trust、feel betrayed）",
-        "句子要說到你自己"
+        "betray 這裡用被動或形容詞用法（例如 felt betrayed 等）",
+        "時態可用過去式（例如 felt、left、joined 等）",
+        "「對手」可寫，例如 its rival、a rival team 等"
       ]
     }
   ],
@@ -458,6 +461,12 @@
         "message": "執行長最終複審修正：B1 用字範圍：determined 為 u12-l07 的字",
         "resolution": "改前：\"堅決的\"；改後：\"敏感的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（betray）原位換成翻譯題，沿用題 id b2-u12-l05-q17；目標字沿用 betray",
+        "resolution": "改為 translate：promptZh「那位球員離開球隊、加入對手後，球迷都覺得被背叛了。」、hintWords [\"betray\"]、referenceEn [\"After the player left the team to join its rival, the fans felt betrayed.\",\"The fans felt betrayed when the player joined a rival team.\"]、rubricZh [\"betray 這裡用被動或形容詞用法（例如 felt betrayed 等）\",\"時態可用過去式（例如 felt、left、joined 等）\",\"「對手」可寫，例如 its rival、a rival team 等\"]（原 makeSentence：instructionZh「用 betray 造一個句子，說說被背叛的感受，或你不願背叛別人的信任。」、referenceEn [\"I would never betray my best friend's trust.\",\"I felt betrayed when my colleague took credit for my work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

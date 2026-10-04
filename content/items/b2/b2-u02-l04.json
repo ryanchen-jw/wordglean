@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u02-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "successive",
-      "instructionZh": "用 successive 造一個句子，說說你連續發生好幾次的事。",
+      "type": "translate",
+      "promptZh": "她連續第三個晚上留在辦公室加班。",
+      "hintWords": [
+        "successive"
+      ],
       "referenceEn": [
-        "I have been late for work on three successive days.",
-        "I have gone to the same beach for five successive summers."
+        "She worked late at the office for the third successive night.",
+        "For the third successive night, she stayed late at the office to work."
       ],
       "rubricZh": [
-        "句子要用到 successive，放在名詞前（例如 three successive days、successive years）",
-        "句意要表示事情接連發生、中間沒有中斷，而且是在說你自己"
+        "successive 放在名詞前（例如 the third successive night 等）",
+        "「加班」可寫，例如 worked late、stayed late to work、worked overtime 等",
+        "時態可用過去式或現在進行式（例如 worked、is working 等）"
       ]
     }
   ],
@@ -410,6 +413,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"出現\"；改後：\"當代的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（successive）原位換成翻譯題，沿用題 id b2-u02-l04-q17；目標字沿用 successive",
+        "resolution": "改為 translate：promptZh「她連續第三個晚上留在辦公室加班。」、hintWords [\"successive\"]、referenceEn [\"She worked late at the office for the third successive night.\",\"For the third successive night, she stayed late at the office to work.\"]、rubricZh [\"successive 放在名詞前（例如 the third successive night 等）\",\"「加班」可寫，例如 worked late、stayed late to work、worked overtime 等\",\"時態可用過去式或現在進行式（例如 worked、is working 等）\"]（原 makeSentence：instructionZh「用 successive 造一個句子，說說你連續發生好幾次的事。」、referenceEn [\"I have been late for work on three successive days.\",\"I have gone to the same beach for five successive summers.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

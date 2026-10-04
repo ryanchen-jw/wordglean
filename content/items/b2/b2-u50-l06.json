@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u50-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "lighten",
-      "instructionZh": "用 lighten 造一個句子，說說某件事讓你的心情或氣氛變輕鬆。",
+      "type": "translate",
+      "promptZh": "雨停以後，天空漸漸變亮了。",
+      "hintWords": [
+        "lighten"
+      ],
       "referenceEn": [
-        "A short walk in the park always lightens my mood.",
-        "My friend's jokes lightened the mood at the long meeting."
+        "After the rain stopped, the sky slowly began to lighten.",
+        "The sky gradually lightened after the rain stopped."
       ],
       "rubricZh": [
-        "句子要用到 lighten（例如 lightens my mood、lightened the mood）",
-        "時態配合內容（例如 lightens、lightened 等）"
+        "lighten 當不及物動詞「變亮」（例如 the sky lightened、began to lighten 等）",
+        "「漸漸」可寫，例如 slowly、gradually 等，位置不扣分",
+        "時態可用過去式或現在式（例如 lightened、lightens 等）"
       ]
     }
   ],
@@ -342,6 +345,18 @@
         "message": "執行長第②③關裁示修正：最終複審 FIX 10：",
         "resolution": "改前：\"冬天到山上旅行時，我們住在一間有大壁爐的小木屋。每天晚上，壁爐裡的熊熊火焰讓整個房間都很溫暖。我沉浸在一本長篇小說裡，弟弟則和爸媽玩牌。屋外的風把屋頂上的旗子吹得整夜啪啪作響。一週結束時，我覺得那些安靜的日子減輕了我忙碌一年的壓力。\"；改後：\"冬天到山上旅行時，我們住在一間有大壁爐的小木屋。每天晚上，壁爐裡的熊熊火焰讓整個房間都很溫暖。我沉浸在一本長篇小說裡，弟弟則和爸媽玩牌。屋外整夜靜靜地下著雪。一週結束時，我覺得那些安靜的日子減輕了我忙碌一年的壓力。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（lighten）原位換成翻譯題，沿用題 id b2-u50-l06-q17；目標字沿用 lighten",
+        "resolution": "改為 translate：promptZh「到了下午，天空漸漸變亮了。」、hintWords [\"lighten\"]、referenceEn [\"In the afternoon, the sky slowly began to lighten.\",\"The sky gradually lightened in the afternoon.\"]、rubricZh [\"lighten 當不及物動詞「變亮」（例如 the sky lightened、began to lighten 等）\",\"「漸漸」可寫，例如 slowly、gradually 等，位置不扣分\",\"時態可用過去式或現在式（例如 lightened、lightens 等）\"]（原 makeSentence：instructionZh「用 lighten 造一個句子，說說某件事讓你的心情或氣氛變輕鬆。」、referenceEn [\"A short walk in the park always lightens my mood.\",\"My friend's jokes lightened the mood at the long meeting.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「到了下午，天空漸漸變亮」情理不順",
+        "resolution": "改為 promptZh「雨停以後，天空漸漸變亮了。」、referenceEn [\"After the rain stopped, the sky slowly began to lighten.\",\"The sky gradually lightened after the rain stopped.\"]、rubricZh [\"lighten 當不及物動詞「變亮」（例如 the sky lightened、began to lighten 等）\",\"「漸漸」可寫，例如 slowly、gradually 等，位置不扣分\",\"時態可用過去式或現在式（例如 lightened、lightens 等）\"]（原 promptZh「到了下午，天空漸漸變亮了。」、referenceEn [\"In the afternoon, the sky slowly began to lighten.\",\"The sky gradually lightened in the afternoon.\"]、rubricZh [\"lighten 當不及物動詞「變亮」（例如 the sky lightened、began to lighten 等）\",\"「漸漸」可寫，例如 slowly、gradually 等，位置不扣分\",\"時態可用過去式或現在式（例如 lightened、lightens 等）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

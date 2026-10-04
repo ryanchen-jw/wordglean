@@ -228,16 +228,18 @@
     },
     {
       "id": "b2-u19-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "observer",
-      "instructionZh": "用 observer 造一個句子，說說你曾經在旁邊觀察某件事的經驗。",
+      "type": "translate",
+      "promptZh": "昨天的會議有幾位來自其他學校的觀察員。",
+      "hintWords": [
+        "observer"
+      ],
       "referenceEn": [
-        "I joined my friend's team meeting as an observer and learned a lot.",
-        "As a quiet observer, I like watching people at the train station."
+        "There were several observers from other schools at yesterday's meeting.",
+        "Several observers from other schools attended the meeting yesterday."
       ],
       "rubricZh": [
-        "句子要用到 observer（例如 as an observer）",
-        "時態合理即可（例如 joined、like）"
+        "observer 指觀察員，這裡用複數（例如 several observers、a few observers 等）",
+        "昨天的事用過去式（例如 there were、attended 等）"
       ]
     }
   ],
@@ -329,6 +331,12 @@
         "message": "執行長裁示修正：釋義原則澄清（第一義＝該級最常用、最符合單元主題，例句示範此義）：改回原順序並改寫例句",
         "resolution": "改前：\"雙胞胎有相同的親生父母，個性卻可能截然不同。\"；改後：\"生物研究幫助農民種出更強壯的植物。\"",
         "resolvedAt": "2026-10-02T20:23:11Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（observer）原位換成翻譯題，沿用題 id b2-u19-l03-q17；目標字沿用 observer",
+        "resolution": "改為 translate：promptZh「昨天的會議有幾位來自其他學校的觀察員。」、hintWords [\"observer\"]、referenceEn [\"There were several observers from other schools at yesterday's meeting.\",\"Several observers from other schools attended the meeting yesterday.\"]、rubricZh [\"observer 指觀察員，這裡用複數（例如 several observers、a few observers 等）\",\"昨天的事用過去式（例如 there were、attended 等）\"]（原 makeSentence：instructionZh「用 observer 造一個句子，說說你曾經在旁邊觀察某件事的經驗。」、referenceEn [\"I joined my friend's team meeting as an observer and learned a lot.\",\"As a quiet observer, I like watching people at the train station.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

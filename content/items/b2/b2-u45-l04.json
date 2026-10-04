@@ -218,16 +218,19 @@
     },
     {
       "id": "b2-u45-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "moonscape",
-      "instructionZh": "用 moonscape 造一個句子，描述一個你去過、看起來很荒涼的地方。",
+      "type": "translate",
+      "promptZh": "多年的採礦讓這一帶變成了像月球表面一樣的荒地。",
+      "hintWords": [
+        "moonscape"
+      ],
       "referenceEn": [
-        "The desert I visited last year looked like a moonscape.",
-        "I once hiked across gray hills that looked like a moonscape."
+        "Years of mining have turned this area into a moonscape.",
+        "After years of mining, this area has become a moonscape."
       ],
       "rubricZh": [
-        "句子要用到 moonscape（例如 looked like a moonscape）",
-        "時態配合內容（例如 looked、look 等）"
+        "moonscape 表示「像月面般的荒涼景觀」（例如 turned … into a moonscape、become a moonscape 等）",
+        "「多年的採礦」可寫，例如 years of mining 等",
+        "時態可用現在完成式或過去式（例如 have turned、turned 等）"
       ]
     }
   ],
@@ -295,6 +298,12 @@
         "message": "第②關 issue 結案：【疑慮7判定】hatching 依單元主題教「孵化」可接受（例句與閱讀一致，影線並列）；不需改。",
         "resolution": "審題員判定可接受，不改。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（moonscape）原位換成翻譯題，沿用題 id b2-u45-l04-q16；目標字沿用 moonscape",
+        "resolution": "改為 translate：promptZh「多年的採礦讓這一帶變成了像月球表面一樣的荒地。」、hintWords [\"moonscape\"]、referenceEn [\"Years of mining have turned this area into a moonscape.\",\"After years of mining, this area has become a moonscape.\"]、rubricZh [\"moonscape 表示「像月面般的荒涼景觀」（例如 turned … into a moonscape、become a moonscape 等）\",\"「多年的採礦」可寫，例如 years of mining 等\",\"時態可用現在完成式或過去式（例如 have turned、turned 等）\"]（原 makeSentence：instructionZh「用 moonscape 造一個句子，描述一個你去過、看起來很荒涼的地方。」、referenceEn [\"The desert I visited last year looked like a moonscape.\",\"I once hiked across gray hills that looked like a moonscape.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

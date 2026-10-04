@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u49-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "carefree",
-      "instructionZh": "用 carefree 造一個句子，說說你人生中一段無憂無慮的時光。",
+      "type": "translate",
+      "promptZh": "考完試之後，學生們看起來既輕鬆又無憂無慮。",
+      "hintWords": [
+        "carefree"
+      ],
       "referenceEn": [
-        "My first summer job at the beach felt carefree.",
-        "My first summer after high school was carefree and fun."
+        "After the exam, the students looked relaxed and carefree.",
+        "The students looked happy and carefree after the exam."
       ],
       "rubricZh": [
-        "句子要用到 carefree（例如 a carefree childhood、was carefree）",
-        "時態配合內容（例如 had、was 等）"
+        "carefree 當形容詞，接在 look 等動詞後（例如 looked relaxed and carefree 等）",
+        "「輕鬆」可寫，例如 relaxed、happy 等；「考完試之後」放句首或句尾都可以",
+        "時態可用過去式或現在式（例如 looked、look 等）"
       ]
     }
   ],
@@ -300,6 +303,12 @@
         "message": "第②關 issue 結案：英文不自然：The main attractiveness of the job is… 母語者會說 main attraction／appeal；attractiveness 多指外表吸引力。建議改例句，如 The attractiveness of the old town draws many visitors.。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 中 items/1 的修正紀錄。",
         "resolvedAt": "2026-10-03T09:45:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（carefree）原位換成翻譯題，沿用題 id b2-u49-l06-q17；目標字沿用 carefree",
+        "resolution": "改為 translate：promptZh「考完試之後，學生們看起來既輕鬆又無憂無慮。」、hintWords [\"carefree\"]、referenceEn [\"After the exam, the students looked relaxed and carefree.\",\"The students looked happy and carefree after the exam.\"]、rubricZh [\"carefree 當形容詞，接在 look 等動詞後（例如 looked relaxed and carefree 等）\",\"「輕鬆」可寫，例如 relaxed、happy 等；「考完試之後」放句首或句尾都可以\",\"時態可用過去式或現在式（例如 looked、look 等）\"]（原 makeSentence：instructionZh「用 carefree 造一個句子，說說你人生中一段無憂無慮的時光。」、referenceEn [\"My first summer job at the beach felt carefree.\",\"My first summer after high school was carefree and fun.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

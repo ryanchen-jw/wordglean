@@ -229,16 +229,19 @@
     },
     {
       "id": "b2-u53-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "rejoin",
-      "instructionZh": "用 rejoin 造一個句子，描述離開一段時間後，重新回到某個團體或活動。",
+      "type": "translate",
+      "promptZh": "我姊姊下個月會重新加入她以前的合唱團。",
+      "hintWords": [
+        "rejoin"
+      ],
       "referenceEn": [
-        "After a year abroad, I rejoined my old band.",
-        "She plans to rejoin the choir next month."
+        "My sister will rejoin her old choir next month.",
+        "Next month, my older sister is going to rejoin her old choir."
       ],
       "rubricZh": [
-        "句子要用到 rejoin（例如 rejoin the band、rejoined the choir）",
-        "時態配合內容（例如 rejoin、rejoined 等）"
+        "rejoin 當動詞，後接團體（例如 rejoin her old choir 等）",
+        "「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）",
+        "「姊姊」可寫，例如 sister、older sister 等"
       ]
     }
   ],
@@ -384,6 +387,12 @@
         "message": "執行長第②③關裁示修正：裁示：dollars 一律譯「美元」",
         "resolution": "改前：\"上星期五，我們學校替圖書館辦了一場義賣會，每件物品都可以競標。開始前，志工把義賣品清單用圖釘釘在牆上。第一件是一個小手工藝品，接著是一位名畫家隨手畫的塗鴉。這件作品的出價非常快。價格到五百元時，前排一個女孩脫口喊出「太棒了！」，大家都笑了。最後，一位安靜的老先生買下了它，開心地笑了。\"；改後：\"上星期五，我們學校替圖書館辦了一場義賣會，每件物品都可以競標。開始前，志工把義賣品清單用圖釘釘在牆上。第一件是一個小手工藝品，接著是一位名畫家隨手畫的塗鴉。這件作品的出價非常快。價格到五百美元時，前排一個女孩脫口喊出「太棒了！」，大家都笑了。最後，一位安靜的老先生買下了它，開心地笑了。\"",
         "resolvedAt": "2026-10-03T09:30:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rejoin）原位換成翻譯題，沿用題 id b2-u53-l02-q17；目標字沿用 rejoin",
+        "resolution": "改為 translate：promptZh「我姊姊下個月會重新加入她以前的合唱團。」、hintWords [\"rejoin\"]、referenceEn [\"My sister will rejoin her old choir next month.\",\"Next month, my older sister is going to rejoin her old choir.\"]、rubricZh [\"rejoin 當動詞，後接團體（例如 rejoin her old choir 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）\",\"「姊姊」可寫，例如 sister、older sister 等\"]（原 makeSentence：instructionZh「用 rejoin 造一個句子，描述離開一段時間後，重新回到某個團體或活動。」、referenceEn [\"After a year abroad, I rejoined my old band.\",\"She plans to rejoin the choir next month.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

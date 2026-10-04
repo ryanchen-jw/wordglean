@@ -228,17 +228,18 @@
     },
     {
       "id": "b2-u43-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "overestimate",
-      "instructionZh": "用 overestimate 造一個句子，說說一次你高估了某件事的經驗。",
+      "type": "translate",
+      "promptZh": "我高估了自己的速度，結果到半夜還在寫作業。",
+      "hintWords": [
+        "overestimate"
+      ],
       "referenceEn": [
-        "I overestimated how fast I could finish my homework.",
-        "I overestimated my free time and said yes to too many plans."
+        "I overestimated my own speed, so I was still doing homework at midnight.",
+        "Because I overestimated my speed, I was still doing my homework at midnight."
       ],
       "rubricZh": [
-        "句子要用到 overestimate",
-        "overestimate 的用法，例如 overestimated how fast、overestimated my free time 等",
-        "時態合理（例如 overestimated 等）"
+        "overestimate 的用法；時態配合句意（例如 overestimated、have overestimated 等）",
+        "「到半夜還在寫作業」可寫，例如 was still doing homework at midnight、am still doing… 等"
       ]
     }
   ],
@@ -318,6 +319,18 @@
         "message": "第②關 issue 結案：干擾項「正好地」不是自然中文（「正好」本身即副詞，不加「地」），建議換成「便宜地」以外的自然副詞，如「準時地」「誠實地」。",
         "resolution": "已修正：見本檔 resolvedAfterFinalReview 同題修正紀錄。",
         "resolvedAt": "2026-10-03T01:20:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（overestimate）原位換成翻譯題，沿用題 id b2-u43-l08-q17；目標字沿用 overestimate",
+        "resolution": "改為 translate：promptZh「我高估了自己的速度，結果到半夜還在寫作業。」、hintWords [\"overestimate\"]、referenceEn [\"I overestimated my own speed, so I was still doing homework at midnight.\",\"Because I overestimated my speed, I was still doing my homework at midnight.\"]、rubricZh [\"overestimate 的過去式 overestimated（例如 overestimated my speed 等）\",\"「到半夜還在寫作業」可寫，例如 was still doing homework at midnight 等\"]（原 makeSentence：instructionZh「用 overestimate 造一個句子，說說一次你高估了某件事的經驗。」、referenceEn [\"I overestimated how fast I could finish my homework.\",\"I overestimated my free time and said yes to too many plans.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 題目沒有時間詞，要點只收過去式 overestimated（§12.11）",
+        "resolution": "改為 promptZh「我高估了自己的速度，結果到半夜還在寫作業。」、referenceEn [\"I overestimated my own speed, so I was still doing homework at midnight.\",\"Because I overestimated my speed, I was still doing my homework at midnight.\"]、rubricZh [\"overestimate 的用法；時態配合句意（例如 overestimated、have overestimated 等）\",\"「到半夜還在寫作業」可寫，例如 was still doing homework at midnight、am still doing… 等\"]（原 promptZh「我高估了自己的速度，結果到半夜還在寫作業。」、referenceEn [\"I overestimated my own speed, so I was still doing homework at midnight.\",\"Because I overestimated my speed, I was still doing my homework at midnight.\"]、rubricZh [\"overestimate 的過去式 overestimated（例如 overestimated my speed 等）\",\"「到半夜還在寫作業」可寫，例如 was still doing homework at midnight 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

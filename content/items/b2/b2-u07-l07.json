@@ -231,16 +231,19 @@
     },
     {
       "id": "b2-u07-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "tremendously",
-      "instructionZh": "用 tremendously 造一個句子，說說你非常喜歡或讓你非常受益的某件事。",
+      "type": "translate",
+      "promptZh": "我非常欽佩我祖母的勇氣。",
+      "hintWords": [
+        "tremendously"
+      ],
       "referenceEn": [
-        "I enjoyed my trip to Japan tremendously.",
-        "Learning to cook has helped me tremendously."
+        "I admire my grandmother's courage tremendously.",
+        "I tremendously admire my grandmother for her courage."
       ],
       "rubricZh": [
-        "句子要用到 tremendously，修飾動詞或形容詞（例如 enjoyed it tremendously、tremendously helpful）",
-        "句子要說到你自己的經驗"
+        "tremendously 表示「極大地」，可放句尾或動詞前（例如 admire … tremendously 等）",
+        "「欽佩」可寫，例如 admire、respect 等",
+        "「祖母」可寫，例如 grandmother、grandma 等"
       ]
     }
   ],
@@ -428,6 +431,12 @@
         "message": "執行長最終複審修正：B3 混合詞性題至少兩個干擾項放得進空格：原本 0～1 個干擾項放得進空格",
         "resolution": "改前：\"極大地\"；改後：\"過度的\"",
         "resolvedAt": "2026-10-02T20:37:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tremendously）原位換成翻譯題，沿用題 id b2-u07-l07-q17；目標字沿用 tremendously",
+        "resolution": "改為 translate：promptZh「我非常欽佩我祖母的勇氣。」、hintWords [\"tremendously\"]、referenceEn [\"I admire my grandmother's courage tremendously.\",\"I tremendously admire my grandmother for her courage.\"]、rubricZh [\"tremendously 表示「極大地」，可放句尾或動詞前（例如 admire … tremendously 等）\",\"「欽佩」可寫，例如 admire、respect 等\",\"「祖母」可寫，例如 grandmother、grandma 等\"]（原 makeSentence：instructionZh「用 tremendously 造一個句子，說說你非常喜歡或讓你非常受益的某件事。」、referenceEn [\"I enjoyed my trip to Japan tremendously.\",\"Learning to cook has helped me tremendously.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }
