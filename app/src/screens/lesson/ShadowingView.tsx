@@ -10,6 +10,7 @@ import type { ShadowingItem } from '../../lesson/items'
 import { speak, ttsAvailable } from '../../speech/speak'
 import { compareWords, type Comparison } from '../../speech/align'
 import { MicDeniedError, type MicPermission } from '../../speech/mic'
+import { holdSfx } from '../../sound/sfx'
 import { useSpeech } from '../../speech/services'
 import type { SttState } from '../../speech/stt'
 import { Button } from '../../ui/Button'
@@ -93,6 +94,9 @@ export function ShadowingView({
       void speech.stt.load().catch(() => undefined)
   }, [model.kind, mic, moonshineBlocked, speech])
 
+  // 錄音中不播音效（創辦人試用 2026-10-04 ④）
+  useEffect(() => (ui.kind === 'recording' ? holdSfx() : undefined), [ui.kind])
+
   useEffect(() => {
     if (ui.kind !== 'recording') return
     const id = setInterval(() => setNow(Date.now()), 250)
@@ -104,7 +108,7 @@ export function ShadowingView({
     gone.current = true
     recording.current?.cancel()
     recording.current = null
-    if (!answered) onAnswer({ correct: false, usedHint: false })
+    if (!answered) onAnswer({ correct: false, usedHint: false, skipped: true })
     onContinue()
   }
 

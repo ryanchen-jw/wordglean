@@ -4,8 +4,8 @@ import Dexie from 'dexie'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { createDb, type LinguaDb } from '../data/db'
 import { buildQueue, createRegistry, READ_TYPES, type Step } from './queue'
-import type { LessonRun } from './run'
-import { answerStep, continueRun, settleLesson, startOrResume } from './session'
+import { activeKey, type LessonRun } from './run'
+import { answerRetry, answerStep, continueRun, settleLesson, startOrResume } from './session'
 import { loadFixture } from './testFixtures'
 
 const T = Date.parse('2026-10-02T08:00:00Z')
@@ -168,6 +168,27 @@ describe('結算', () => {
     await expect(settleLesson(db, run, STEPS, { nowMs: T, onSettle })).rejects.toThrow()
     expect(onSettle).not.toHaveBeenCalled()
     expect(await db.courseProgress.count()).toBe(0)
+  })
+
+  it('錯題重做（創辦人試用 2026-10-04 ⑤）：重做不寫 FSRS、不改第一次作答；中途離開重開，從重做的那題接續', async () => {
+    const wrong = ['a1-u01-l01-q02', 'a1-u01-l01-q15#1']
+    let run = await playAll(wrong)
+    run = await continueRun(db, run, T + SEC)
+    expect(run.retry).toMatchObject({ round: 1, keys: wrong, cursor: 0 })
+    const logs = await db.reviewLogs.count()
+    const q02 = STEPS.find((s) => s.key === wrong[0])!
+    run = await answerRetry(db, run, q02, { correct: true }, T + 2 * SEC)
+    expect(await db.reviewLogs.count()).toBe(logs)
+    expect(run.results[wrong[0]].correct).toBe(false)
+
+    // 答完重做題、還沒按繼續就離開：重開時跳到下一題重做
+    const again = await startOrResume(db, LESSON, STEPS, T + 3 * SEC)
+    expect(again.resumed).toBe(true)
+    expect(activeKey(again.run)).toBe(wrong[1])
+    expect(again.run.retry).toMatchObject({ round: 1, cursor: 1 })
+
+    const summary = await settleLesson(db, again.run, STEPS, { nowMs: T + 4 * SEC })
+    expect(summary).toMatchObject({ correct: 10, wrongKeys: wrong })
   })
 
   it('結算後再開同一課是新進度', async () => {

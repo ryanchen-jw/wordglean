@@ -6,11 +6,18 @@ import type { LessonItemsDoc } from '../../lesson/items'
 import { MicDeniedError, type MicPermission, type Recording } from '../../speech/mic'
 import { SpeechContext, type SpeechServices } from '../../speech/services'
 import { fakeRecognition } from '../../speech/fakeRecognition'
-import type { SttClient, SttState } from '../../speech/stt'
+import { createSttClient, type SttClient, type SttState } from '../../speech/stt'
 import { isSttUsable } from '../../speech/usable'
 import { createWebSpeech, type WebSpeech } from '../../speech/webSpeech'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
+import { holdSfx } from '../../sound/sfx'
 import { LessonScreen } from './LessonScreen'
+
+const sfxRelease = vi.hoisted(() => ({ fn: () => {} }))
+vi.mock('../../sound/sfx', async (orig) => ({
+  ...(await orig<typeof import('../../sound/sfx')>()),
+  holdSfx: vi.fn(() => sfxRelease.fn),
+}))
 
 // TASK-14 跟讀（設計 s04 七個狀態）；期望文案取自設計 s04 與 zh-TW.json。
 // 規格 §6 G2：分數以送出句為準；每次送出都記一筆辨識原文 vs 送出句（Round 1 D1），第一次送出才計分（D3）
@@ -149,6 +156,21 @@ describe('跟讀：待錄與錄音（s04 idle／recording／busy）', () => {
     expect(await screen.findByRole('textbox')).toHaveValue('Could we push the meetings to next')
   })
 
+  it('錄音中不播音效（創辦人試用 2026-10-04 ④）：開始錄音時壓住、結束錄音即放開', async () => {
+    const release = vi.fn()
+    sfxRelease.fn = release
+    vi.mocked(holdSfx).mockClear()
+    const f = fakeSpeech()
+    renderLesson(f.services)
+    fireEvent.click(await screen.findByRole('button', { name: '開始錄音' }))
+    await screen.findByRole('button', { name: '結束錄音' })
+    expect(holdSfx).toHaveBeenCalledOnce()
+    expect(release).not.toHaveBeenCalled()
+    click('結束錄音')
+    await screen.findByRole('textbox')
+    expect(release).toHaveBeenCalledOnce()
+  })
+
   // 錄滿 2 秒才按結束（不足 1 秒算錄音太短，見下）
   const recordFor = async (ms: number) => {
     const t0 = Date.now()
@@ -278,6 +300,21 @@ describe('跟讀：跳過、麥克風、模型下載', () => {
     expect(await db.speechCorrections.count()).toBe(0)
   })
 
+  it('跳過的題目進錯題重做；重做時再跳過就不再出，能完成這課（不能錄音的人不會卡住，創辦人試用 2026-10-04 ⑤）', async () => {
+    const SKIP = '現在不方便說話（這題先跳過）'
+    renderLesson(fakeSpeech().services)
+    fireEvent.click(await screen.findByRole('button', { name: SKIP }))
+    await screen.findByText('2／2')
+    fireEvent.click(await screen.findByRole('button', { name: SKIP }))
+    expect(await screen.findByText('再練一次錯題')).toBeInTheDocument()
+    expect(screen.getByText('1／2')).toBeInTheDocument()
+    expect(screen.getByText(TARGET)).toBeInTheDocument()
+    fireEvent.click(await screen.findByRole('button', { name: SKIP }))
+    await screen.findByText('2／2')
+    fireEvent.click(await screen.findByRole('button', { name: SKIP }))
+    expect(await screen.findByTestId('lesson-done')).toHaveTextContent('答對 0 題')
+  })
+
   it('未允許麥克風（s04 denied）：說明＋允許麥克風＋這題跳過；允許後回到待錄', async () => {
     const f = fakeSpeech({ mic: 'denied' })
     renderLesson(f.services)
@@ -339,6 +376,37 @@ describe('跟讀：跳過、麥克風、模型下載', () => {
     expect(f.stt.load).toHaveBeenCalledTimes(2)
     act(() => f.set({ kind: 'ready' }))
     expect(await screen.findByRole('button', { name: '開始錄音' })).toBeEnabled()
+  })
+
+  it('真的語音辨識服務：下載走到 100% 並載入完 → 不用重整、不用換題，錄音鈕可按、下載提示消失（創辦人試用 2026-10-04 ①）', async () => {
+    const posted: { id: number; cmd: string }[] = []
+    const worker = {
+      onmessage: null as ((e: MessageEvent) => void) | null,
+      onerror: null,
+      postMessage: (msg: { id: number; cmd: string }) => posted.push(msg),
+      terminate: () => {},
+    }
+    const reply = (data: unknown) => act(() => worker.onmessage?.({ data } as MessageEvent))
+    const f = fakeSpeech()
+    const services = {
+      ...f.services,
+      stt: createSttClient({
+        createWorker: () => worker as unknown as Worker,
+        isCached: async () => false,
+      }),
+    }
+    renderLesson(services)
+    fireEvent.click(await screen.findByRole('button', { name: '下載' }))
+    reply({ type: 'progress', fraction: 0.6 })
+    expect(await screen.findByText('60%')).toBeInTheDocument()
+    reply({ type: 'progress', fraction: 1 })
+    // 下載完、還在建模型：不再說「下載中」，改說準備中
+    expect(await screen.findByText('語音辨識準備中…')).toBeInTheDocument()
+    expect(screen.queryByText('語音辨識模型下載中')).toBeNull()
+    reply({ type: 'result', id: posted[0].id, result: { device: 'wasm' } })
+    expect(await screen.findByRole('button', { name: '開始錄音' })).toBeEnabled()
+    expect(screen.queryByText('模型下載完才能錄音')).toBeNull()
+    expect(screen.queryByText(/語音辨識模型/)).toBeNull()
   })
 
   it('模型已下載：進題目就自動載入，載入中顯示準備中', async () => {

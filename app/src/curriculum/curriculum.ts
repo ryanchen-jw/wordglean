@@ -32,13 +32,13 @@ export interface LessonRef {
   words: string[]
 }
 
-// ETS 官方 CEFR 對照的聽力門檻（規格 §4）；畫面上的「約多益 xxx+」為佔位，待 G3 定稿
-export const TOEIC_LISTENING: Record<Level, number> = {
-  A1: 60,
-  A2: 110,
-  B1: 275,
-  B2: 400,
-  C1: 490,
+// ETS 官方 CEFR 對照的多益總分門檻（聽力＋閱讀；創辦人試用 2026-10-04 ③由聽力分項改為總分）
+export const TOEIC_TOTAL: Record<Level, number> = {
+  A1: 120,
+  A2: 225,
+  B1: 550,
+  B2: 785,
+  C1: 945,
 }
 
 /** 小課 ID 的級距前綴（a1-u01-l03 → A1） */

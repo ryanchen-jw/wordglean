@@ -67,20 +67,48 @@ describe('createSttEngine', () => {
     expect(p.loads[0].dtype).toEqual({ encoder_model: 'fp32', decoder_model_merged: 'q4' })
   })
 
-  it('下載進度＝各檔已下載合計÷總量，只增不減；非 progress 事件忽略', async () => {
+  it('下載進度＝兩個模型檔已下載合計÷總量，只增不減；兩檔都開始下載前不回報；非 progress 事件忽略', async () => {
     const p = fakePipeline()
     const seen: number[] = []
     const engine = createSttEngine(p.fn, on('wasm'))
     const loading = engine.load((f) => seen.push(f))
     await vi.waitFor(() => expect(p.loads).toHaveLength(1))
-    p.emit({ status: 'initiate', file: 'a.onnx' })
-    p.emit({ status: 'progress', file: 'a.onnx', loaded: 50, total: 100 })
-    p.emit({ status: 'progress', file: 'b.onnx', loaded: 0, total: 300 }) // 50/400 < 0.5，不回報
-    p.emit({ status: 'progress', file: 'b.onnx', loaded: 150, total: 300 }) // 200/400 = 0.5，未超過，不回報
-    p.emit({ status: 'progress', file: 'b.onnx', loaded: 300, total: 300 }) // 350/400
-    p.emit({ status: 'progress', file: 'a.onnx', loaded: 100, total: 100 }) // 400/400
+    p.emit({ status: 'initiate', file: 'onnx/a.onnx' })
+    p.emit({ status: 'progress', file: 'onnx/a.onnx', loaded: 50, total: 100 }) // 只知道一檔，不回報
+    p.emit({ status: 'progress', file: 'onnx/b.onnx', loaded: 0, total: 300 }) // 50/400
+    p.emit({ status: 'progress', file: 'onnx/b.onnx', loaded: 150, total: 300 }) // 200/400
+    p.emit({ status: 'progress', file: 'onnx/b.onnx', loaded: 100, total: 300 }) // 退回，不回報
+    p.emit({ status: 'progress', file: 'onnx/b.onnx', loaded: 300, total: 300 }) // 350/400
+    p.emit({ status: 'progress', file: 'onnx/a.onnx', loaded: 100, total: 100 }) // 400/400
     await loading
-    expect(seen).toEqual([0.5, 0.875, 1])
+    expect(seen).toEqual([0.125, 0.5, 0.875, 1])
+  })
+
+  it('設定檔與 tokenizer 等小檔先下載完不算 100%：大的模型檔還沒開始時不回報（創辦人試用 2026-10-04 ①）', async () => {
+    const p = fakePipeline()
+    const seen: number[] = []
+    const engine = createSttEngine(p.fn, on('wasm'))
+    const loading = engine.load((f) => seen.push(f))
+    await vi.waitFor(() => expect(p.loads).toHaveLength(1))
+    // transformers.js 先抓 config／tokenizer，模型讀完設定才開始抓 onnx
+    p.emit({ status: 'progress', file: 'tokenizer.json', loaded: 2000, total: 2000 })
+    p.emit({ status: 'progress', file: 'config.json', loaded: 900, total: 900 })
+    expect(seen).toEqual([])
+    p.emit({ status: 'progress', file: 'onnx/encoder_model.onnx', loaded: 0, total: 30_000_000 })
+    p.emit({
+      status: 'progress',
+      file: 'onnx/decoder_model_merged_quantized.onnx',
+      loaded: 0,
+      total: 20_000_000,
+    })
+    p.emit({
+      status: 'progress',
+      file: 'onnx/encoder_model.onnx',
+      loaded: 15_000_000,
+      total: 30_000_000,
+    })
+    await loading
+    expect(seen).toEqual([0.3])
   })
 
   it('辨識：載入前呼叫會失敗；輸出上限依音長；去掉頭尾空白', async () => {

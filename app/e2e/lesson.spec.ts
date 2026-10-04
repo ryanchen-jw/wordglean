@@ -2,7 +2,18 @@
 // TASK-13 起聽類題也在佇列裡（能播音時，跟讀換聽音打字），TASK-15 起寫作題也在（沒有金鑰→自評）：一課 18 步，順序見 e2e/lesson.ts stepsOf；
 // 聽題本身的斷言在 listen.spec、寫作題在 openrouter.spec
 import { expect, test } from '@playwright/test'
-import { answer, count, LESSON, next, playTo, STEPS } from './lesson.js'
+import {
+  answer,
+  answerPick,
+  answerRetry,
+  count,
+  LESSON,
+  next,
+  playTo,
+  retryCount,
+  stepsOf,
+  STEPS,
+} from './lesson.js'
 import { fakeSystemVoice } from './speech.js'
 
 test.beforeEach(async ({ page }) => {
@@ -12,6 +23,8 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 回到今天', async ({ page }) => {
+  // 錯題重做多出的步數讓整課變長（每步耗時不變）：2026-10-04 webkit 單跑實測 13.0 秒（main 同流程無重做 10.7 秒，18→21 步、每步約 0.6 秒），全套 --workers=2 負載下曾到 29.3 秒貼近預設 30 秒；放寬到 60 秒，斷言不變
+  test.setTimeout(60_000)
   await page.goto(`/course?lesson=${LESSON}`)
   await page.getByRole('button', { name: '開始這一課' }).click()
   await expect(page).toHaveURL(new RegExp(`/lesson/${LESSON}$`))
@@ -74,6 +87,14 @@ test('課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 
   await answer(page, 18)
   await next(page)
 
+  // 錯題重做（創辦人試用 2026-10-04 ⑤）：答錯的 3 題依原順序再出一輪，全對才完成
+  await answerRetry(page, 2, { n: 1, total: 3 })
+  await next(page)
+  await answerRetry(page, 10, { n: 2, total: 3 })
+  await next(page)
+  await answerRetry(page, 17, { n: 3, total: 3 })
+  await next(page)
+
   const done = page.getByTestId('lesson-done')
   await expect(done.getByRole('heading', { level: 1 })).toHaveText('這一課完成了')
   await expect(done).toContainText('基礎常用字（一）・第 1 課')
@@ -94,6 +115,44 @@ test('課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 
   ).toBeVisible()
   await page.goto('/words')
   await expect(page.getByTestId('word-list').locator('[lang="en"]')).toHaveCount(8)
+})
+
+test('錯題重做：故意答錯 2 題 → 再練一次錯題（仍錯再出一輪）→ 答對 → 完成；分數只看第一次', async ({
+  page,
+}) => {
+  // 錯題重做多出的步數讓整課變長（每步耗時不變）：2026-10-04 webkit 單跑實測 12.4 秒（21 步），全套 --workers=2 負載下曾到 29.3 秒貼近預設 30 秒；放寬到 60 秒，斷言不變
+  test.setTimeout(60_000)
+  await page.goto(`/lesson/${LESSON}`)
+  for (let n = 1; n <= STEPS.length; n++) {
+    await answer(page, n, n === 2 || n === 10)
+    await next(page)
+  }
+  // 第 1 輪：兩題錯題；單字卡再錯一次
+  await answerRetry(page, 2, { n: 1, total: 2 }, true)
+  await next(page)
+  await answerRetry(page, 10, { n: 2, total: 2 })
+  await next(page)
+  // 第 2 輪：只剩仍錯的單字卡
+  await answerRetry(page, 2, { n: 1, total: 1 })
+  await next(page)
+
+  const done = page.getByTestId('lesson-done')
+  await expect(done.getByRole('heading', { level: 1 })).toHaveText('這一課完成了')
+  await expect(done).toContainText(`${STEPS.length} 題`)
+  await expect(done).toContainText(`答對 ${STEPS.length - 2} 題`)
+  // 複習排程只看第一次作答：答錯的單字卡 1 題進複習（重做答錯不再多寫一筆）
+  await expect(done).toContainText('答錯的 1 題已排進明天的複習')
+  const logs = await page.evaluate(
+    () =>
+      new Promise<number>((res) => {
+        const r = indexedDB.open('linguaapp')
+        r.onsuccess = () => {
+          const c = r.result.transaction('reviewLogs').objectStore('reviewLogs').count()
+          c.onsuccess = () => res(c.result)
+        }
+      }),
+  )
+  expect(logs).toBe(8)
 })
 
 test('中途離開（✕ → 離開）後重開，從離開的那題接續', async ({ page }) => {
@@ -134,4 +193,32 @@ test('答完還沒按繼續就重新整理：接續在下一題', async ({ page 
     .toBe(1)
   await page.reload()
   await count(page, 2)
+})
+
+test('A1 兩題翻譯（題庫原文 a1-u01-l03，造句改翻譯後）：兩題翻譯自評寫錯 → 錯題重做寫對 → 完成', async ({
+  page,
+}) => {
+  // 錯題重做多出的步數讓整課變長（每步耗時不變）：2026-10-04 webkit 單跑實測 10.6 秒（19 步），全套 --workers=2 負載下曾到 29.3 秒貼近預設 30 秒；放寬到 60 秒，斷言不變
+  test.setTimeout(60_000)
+  const L3 = 'a1-u01-l03'
+  const steps = stepsOf(L3)
+  const writes = steps.flatMap((s, i) => (s.write !== undefined ? [i] : []))
+  expect(writes).toHaveLength(2)
+  await page.goto(`/lesson/${L3}`)
+  for (const [i, s] of steps.entries()) {
+    await expect(page.getByText(`${i + 1}／${steps.length}`, { exact: true })).toBeVisible()
+    if (s.write !== undefined) await expect(page.getByText('中翻英')).toBeVisible()
+    await answerPick(page, s, s.write !== undefined)
+    await next(page)
+  }
+  // 錯題重做：兩題翻譯依原順序再出，自評寫對才完成
+  for (const [k, i] of writes.entries()) {
+    await retryCount(page, k + 1, 2)
+    await expect(page.getByText('中翻英')).toBeVisible()
+    await answerPick(page, steps[i], false)
+    await next(page)
+  }
+  const done = page.getByTestId('lesson-done')
+  await expect(done).toContainText(`${steps.length} 題`)
+  await expect(done).toContainText(`答對 ${steps.length - 2} 題`)
 })

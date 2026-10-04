@@ -1,5 +1,5 @@
 // 設定（設計 s11 預設）＋清除資料確認（s13）；AI 批改區見 AiSection（TASK-15），帳號區為 TASK-20 掛點；
-// 語音區：發音選擇與高音質發音下載（TASK-13），語音辨識下載為 TASK-14 掛點
+// 語音區：發音選擇與高音質發音下載（TASK-13），語音辨識下載為 TASK-14 掛點；音效開關（創辦人試用 2026-10-04 ④）
 import { ChevronRight, FileDown, Trash2 } from 'lucide-react'
 import { createContext, useContext, useState, useSyncExternalStore, type ReactNode } from 'react'
 import { currentLevel } from '../../curriculum/curriculum'
@@ -14,6 +14,7 @@ import { useDownloadStatus, type DownloadId } from '../../download/download'
 import { t, type MessageKey } from '../../i18n/t'
 import { navigate } from '../../router'
 import { clearPrefs, usePrefs, type Prefs } from '../../shell/prefs'
+import { setSfxEnabled, sfxEnabled } from '../../sound/sfx'
 import { stt } from '../../speech/stt'
 import { SubScreen } from '../../shell/Screen'
 import { hqVoice } from '../../speech/speak'
@@ -89,6 +90,37 @@ function Row({
   )
 }
 
+/** 開關列（音效）：整列可點、role=switch */
+function SwitchRow({
+  label,
+  on,
+  onChange,
+}: {
+  label: string
+  on: boolean
+  onChange: (on: boolean) => void
+}) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={on}
+      onClick={() => onChange(!on)}
+      className={`${rowCls} py-1.5 active:bg-primary-soft`}
+    >
+      <span>{label}</span>
+      <span
+        aria-hidden="true"
+        className={`flex h-7 w-12 flex-none items-center rounded-full p-0.5 transition-colors duration-(--lg-duration-press) ${on ? 'bg-primary' : 'bg-line'}`}
+      >
+        <span
+          className={`size-6 rounded-full bg-surface shadow-sm transition-transform duration-(--lg-duration-press) ${on ? 'translate-x-5' : ''}`}
+        />
+      </span>
+    </button>
+  )
+}
+
 function ModelRow({
   id,
   name,
@@ -132,6 +164,7 @@ export function SettingsScreen() {
   const [prefs, setPref] = usePrefs()
   const [sheet, setSheet] = useState<Sheet>(null)
   const [confirming, setConfirming] = useState(false)
+  const [sfx, setSfx] = useState(sfxEnabled)
   // 高音質發音（TASK-13 D5）：下載前告知檔案大小；未下載時選它＝導向下載
   const [confirmHq, setConfirmHq] = useState(false)
   const voice = useSyncExternalStore(hqVoice.subscribe, hqVoice.choice)
@@ -153,6 +186,7 @@ export function SettingsScreen() {
   const clearNow = async () => {
     await clearLocalData(db)
     clearPrefs()
+    setSfxEnabled(true)
     // 資料庫已刪，整個 App 重新載入回到首次開啟狀態
     location.assign('/')
   }
@@ -196,6 +230,14 @@ export function SettingsScreen() {
               label={t('settings.voice.tts')}
               value={t(voice === 'hq' ? 'settings.voice.ttsHqValue' : 'settings.voice.ttsValue')}
               onClick={() => setSheet('voice')}
+            />
+            <SwitchRow
+              label={t('settings.voice.sfx')}
+              on={sfx}
+              onChange={(on) => {
+                setSfxEnabled(on)
+                setSfx(on)
+              }}
             />
             <ModelRow
               id="tts-hq"

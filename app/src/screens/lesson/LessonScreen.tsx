@@ -19,8 +19,16 @@ import {
   WRITE_TYPES,
   type Step,
 } from '../../lesson/queue'
-import { currentKey, type LessonRun } from '../../lesson/run'
 import {
+  activeKey,
+  currentKey,
+  isAnswered,
+  proceed,
+  retryProgress,
+  type LessonRun,
+} from '../../lesson/run'
+import {
+  answerRetry,
   answerStep,
   continueRun,
   settleLesson,
@@ -30,6 +38,7 @@ import {
 import { getLink } from '../../llm/keyStore'
 import { useLiveQuery } from '../../data/useLiveQuery'
 import { goBack, navigate } from '../../router'
+import { playSfx } from '../../sound/sfx'
 import { useSpeech } from '../../speech/services'
 import { ttsAvailable } from '../../speech/speak'
 import { Button } from '../../ui/Button'
@@ -92,6 +101,7 @@ export function LessonScreen({
   const finish = useCallback(
     async (run: LessonRun, steps: Step[]) => {
       const summary = await settleLesson(db, run, steps, { nowMs: now(), onSettle })
+      playSfx('complete')
       const wordKeys = new Set(steps.filter((s) => s.srsWord !== null).map((s) => s.key))
       setPhase({
         kind: 'done',
@@ -125,7 +135,7 @@ export function LessonScreen({
       if (steps.length === 0) throw new Error(`這一課沒有可作答的題目：${lessonId}`)
       const { run } = await startOrResume(db, lessonId, steps, now())
       if (!alive) return
-      if (currentKey(run) === null) await finish(run, steps)
+      if (activeKey(run) === null) await finish(run, steps)
       // 題目取替代後的版本（帶 selfCheck 標記、換過的題型）
       else
         setPhase({ kind: 'play', items: new Map(applied.items.map((i) => [i.id, i])), steps, run })
@@ -139,10 +149,11 @@ export function LessonScreen({
     // eslint-disable-next-line react-hooks/exhaustive-deps -- 只在換課時重新載入
   }, [lessonId])
 
-  const cursor = phase.kind === 'play' ? phase.run.cursor : -1
+  const shown =
+    phase.kind === 'play' ? `${phase.run.retry?.round ?? 0}:${activeKey(phase.run)}` : ''
   useEffect(() => {
     shownAt.current = now()
-  }, [cursor, now])
+  }, [shown, now])
 
   const lessonTitle = (() => {
     for (const unit of levelDoc?.units ?? []) {
@@ -190,24 +201,37 @@ export function LessonScreen({
     )
 
   const { items, steps, run } = phase
-  const step = steps[run.cursor]
+  // 主輪做完、有錯題時進入錯題重做（創辦人試用 2026-10-04 ⑤）
+  const retrying = currentKey(run) === null
+  const step = steps.find((s) => s.key === activeKey(run))!
   const View = QUESTION_VIEWS[step.type]!
 
   // 回饋在點選當下就顯示，存檔稍後完成；「繼續」先等這次存檔，再用存好的進度往下
-  const onAnswer = ({ correct, usedHint }: { correct: boolean; usedHint: boolean }) => {
+  // 重做只存進度、不寫 FSRS、不改第一次作答；跳過（跟讀「先跳過這題」）在主輪算錯，重做時不再出
+  const onAnswer = ({
+    correct,
+    usedHint,
+    skipped,
+  }: {
+    correct: boolean
+    usedHint: boolean
+    skipped?: boolean
+  }) => {
     const at = now()
+    playSfx(correct ? 'correct' : 'wrong')
     const save = () =>
-      answerStep(db, run, step, { correct, usedHint, elapsedMs: at - shownAt.current }, at).then(
-        (next) => {
-          setPhase({ ...phase, run: next })
-          return next
-        },
-      )
+      (retrying
+        ? answerRetry(db, run, step, { correct, skipped }, at)
+        : answerStep(db, run, step, { correct, usedHint, elapsedMs: at - shownAt.current }, at)
+      ).then((next) => {
+        setPhase({ ...phase, run: next })
+        return next
+      })
     retrySave.current = save
     // 存檔失敗不可讓整課卡住：記錄後交給「繼續」重試（重複作答＝這題已存過，沿用目前進度），✕ 照常可用
     saving.current = save().catch((e: unknown) => {
       console.error('[lesson] 作答存檔失敗', e)
-      return run.results[step.key] ? run : null
+      return isAnswered(run) ? run : null
     })
   }
 
@@ -220,8 +244,9 @@ export function LessonScreen({
         saved = await retrySave.current!()
         saving.current = Promise.resolve(saved)
       }
-      if (saved.cursor === steps.length - 1) await finish(saved, steps)
-      else setPhase({ ...phase, run: await continueRun(db, saved, now()) })
+      const next = await continueRun(db, saved, now())
+      if (activeKey(next) === null) await finish(next, steps)
+      else setPhase({ ...phase, run: next })
       saving.current = null
       setStuck(false)
     } catch (e) {
@@ -233,8 +258,15 @@ export function LessonScreen({
     }
   }
 
-  // ✕ 先等作答存檔，確認框才看得到最新進度；最後一題已作答＝這課做完了，離開即結算（走查 P2）
-  const allAnswered = run.cursor === steps.length - 1 && !!run.results[step.key]
+  // ✕ 先等作答存檔，確認框才看得到最新進度；最後一題已作答且沒有錯題要重做＝這課做完了，離開即結算（走查 P2）
+  // 只在確認框開著時才推算按下「繼續」後的狀態（決定文案與離開時是否結算）
+  const afterContinue = () => (isAnswered(run) ? proceed(run, 0) : run)
+  const pending = leaving ? afterContinue() : null
+  const allAnswered = pending !== null && activeKey(pending) === null
+  const retryLeft = pending?.retry
+    ? pending.retry.keys.length - Object.keys(pending.retry.passed).length
+    : 0
+  const retryAt = retryProgress(run)
   const onLeave = async () => {
     await saving.current
     setLeaving(true)
@@ -250,7 +282,21 @@ export function LessonScreen({
 
   return (
     <div data-testid="lesson-screen" className={lessonFrameCls}>
-      <LessonHeader n={run.cursor + 1} total={steps.length} onLeave={onLeave} />
+      {retryAt ? (
+        <>
+          <LessonHeader
+            n={retryAt.n}
+            total={retryAt.total}
+            onLeave={onLeave}
+            progressLabel={t('lesson.retry.title')}
+          />
+          <p className="flex-none px-5 pb-2 text-secondary font-bold text-primary">
+            {t('lesson.retry.title')}
+          </p>
+        </>
+      ) : (
+        <LessonHeader n={run.cursor + 1} total={steps.length} onLeave={onLeave} />
+      )}
       {stuck && (
         <p role="alert" className="flex flex-none items-center gap-2 px-5 pb-2 text-secondary">
           <Info size={20} aria-hidden="true" className="flex-none text-muted" />
@@ -265,7 +311,7 @@ export function LessonScreen({
         }}
       >
         <View
-          key={step.key}
+          key={`${run.retry?.round ?? 0}:${step.key}`}
           item={items.get(step.itemId)!}
           step={step}
           onAnswer={onAnswer}
@@ -291,11 +337,13 @@ export function LessonScreen({
           body={
             allAnswered
               ? t('lesson.leave.bodyDone')
-              : t('lesson.leave.body', {
-                  done: Object.keys(run.results).length,
-                  total: steps.length,
-                  next: Object.keys(run.results).length + 1,
-                })
+              : retryLeft > 0
+                ? t('lesson.leave.bodyRetry', { left: retryLeft })
+                : t('lesson.leave.body', {
+                    done: Object.keys(run.results).length,
+                    total: steps.length,
+                    next: Object.keys(run.results).length + 1,
+                  })
           }
           safeLabel={t('lesson.leave.stay')}
           riskLabel={t('lesson.leave.leave')}

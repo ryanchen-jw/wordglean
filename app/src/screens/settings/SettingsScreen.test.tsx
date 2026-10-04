@@ -43,11 +43,26 @@ describe('設定（s11）', () => {
     )
   })
 
+  it('音效開關（創辦人試用 2026-10-04 ④）：預設開；關掉存在這台裝置，重開仍是關', async () => {
+    const view = render(<SettingsScreen />)
+    const sw = await screen.findByRole('switch', { name: '音效' })
+    expect(sw).toHaveAttribute('aria-checked', 'true')
+    fireEvent.click(sw)
+    expect(sw).toHaveAttribute('aria-checked', 'false')
+    expect(localStorage.getItem('lg.sfx')).toBe('off')
+    view.unmount()
+    render(<SettingsScreen />)
+    expect(await screen.findByRole('switch', { name: '音效' })).toHaveAttribute(
+      'aria-checked',
+      'false',
+    )
+  })
+
   it('有進度時顯示目前級距', async () => {
     await db.courseProgress.put({ lessonId: 'b2-u01-l01', completedAt: 1, updatedAt: 0 })
     render(<SettingsScreen />)
     expect(
-      await screen.findByRole('button', { name: /目前級距\s*B2｜約多益 400\+/ }),
+      await screen.findByRole('button', { name: /目前級距\s*B2｜約多益 785\+/ }),
     ).toBeInTheDocument()
   })
 
@@ -56,7 +71,7 @@ describe('設定（s11）', () => {
     await saveSettings(db, { cefrLevel: 'A2' }, 1)
     render(<SettingsScreen />)
     expect(
-      await screen.findByRole('button', { name: /目前級距\s*A2｜約多益 110\+/ }),
+      await screen.findByRole('button', { name: /目前級距\s*A2｜約多益 225\+/ }),
     ).toBeInTheDocument()
   })
 
@@ -70,16 +85,16 @@ describe('設定（s11）', () => {
         .getAllByRole('option')
         .map((o) => o.textContent),
     ).toEqual([
-      'A1｜約多益 60+',
-      'A2｜約多益 110+',
-      'B1｜約多益 275+',
-      'B2｜約多益 400+',
-      'C1｜約多益 490+',
+      'A1｜約多益 120+',
+      'A2｜約多益 225+',
+      'B1｜約多益 550+',
+      'B2｜約多益 785+',
+      'C1｜約多益 945+',
     ])
-    fireEvent.click(within(sheet).getByRole('option', { name: 'B1｜約多益 275+' }))
+    fireEvent.click(within(sheet).getByRole('option', { name: 'B1｜約多益 550+' }))
     await waitFor(async () => expect((await getSettings(db)).cefrLevel).toBe('B1'))
     expect(
-      await screen.findByRole('button', { name: /目前級距\s*B1｜約多益 275\+/ }),
+      await screen.findByRole('button', { name: /目前級距\s*B1｜約多益 550\+/ }),
     ).toBeInTheDocument()
   })
 

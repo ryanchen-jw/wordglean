@@ -7,7 +7,13 @@ import type { LessonItemsDoc } from '../../lesson/items'
 import { loadFixture } from '../../lesson/testFixtures'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
 import { fsDictDeps } from '../../test/dictFs'
+import { playSfx } from '../../sound/sfx'
 import { LessonScreen } from './LessonScreen'
+
+vi.mock('../../sound/sfx', async (orig) => ({
+  ...(await orig<typeof import('../../sound/sfx')>()),
+  playSfx: vi.fn(),
+}))
 
 // 期望文案取自設計 s05／s07／s12／s14 與 zh-TW.json；題目與釋義取自樣本課 fixture（a1-u01-l01）
 const LESSON = 'a1-u01-l01'
@@ -20,6 +26,7 @@ const doc = {
 const loadItems = async () => doc
 
 beforeEach(async () => {
+  vi.mocked(playSfx).mockClear()
   stubCurriculumFetch()
   history.replaceState(null, '', `/lesson/${LESSON}`)
   await db.delete()
@@ -30,10 +37,25 @@ const progress = () => screen.getByRole('progressbar', { name: '作答進度' })
 const count = (n: number) => screen.findByText(`${n}／12`)
 const option = (name: string) => screen.getByRole('radio', { name })
 const cont = () => fireEvent.click(screen.getByRole('button', { name: '繼續' }))
+/** 錯題重做的題號（頁首；閱讀題卡內也有「n／m」，只看頁首） */
+const retryCount = (n: number, total: number) =>
+  vi.waitFor(() => {
+    const header = document.querySelector('header')!
+    expect(within(header).getByText(`${n}／${total}`)).toBeInTheDocument()
+    expect(within(header).getByRole('progressbar', { name: '再練一次錯題' })).toHaveAttribute(
+      'aria-valuemax',
+      String(total),
+    )
+  })
 
 /** 依 fixture 的正解作答目前這題（wrong＝改選第一個錯誤選項） */
 async function answerCurrent(n: number, wrong = false) {
   await count(n)
+  await answerAt(n - 1, wrong)
+}
+
+/** 作答第 i 步（從 0 起；錯題重做時用原本的步驟位置） */
+async function answerAt(i: number, wrong = false) {
   const steps: { pick: string[]; check: boolean }[] = [
     ...doc.items.flatMap((it) => {
       // 選項只顯示第一義（全形分號前一段、去括號註記）
@@ -58,7 +80,7 @@ async function answerCurrent(n: number, wrong = false) {
       return []
     }),
   ]
-  const s = steps[n - 1]
+  const s = steps[i]
   fireEvent.click(option(s.pick[wrong ? 1 : 0]))
   if (s.check) fireEvent.click(screen.getByRole('button', { name: '檢查' }))
   await screen.findByRole('status')
@@ -172,6 +194,13 @@ describe('小課畫面（AC#2 單元層）', () => {
       await answerCurrent(n, n === 2 || n === 12)
       cont()
     }
+    // 錯題重做（創辦人試用 2026-10-04 ⑤）：兩題都做對才完成
+    await retryCount(1, 2)
+    await answerAt(1)
+    cont()
+    await retryCount(2, 2)
+    await answerAt(11)
+    cont()
     const done = await screen.findByTestId('lesson-done')
     expect(within(done).getByRole('heading', { level: 1 })).toHaveTextContent('這一課完成了')
     expect(await within(done).findByText('基礎常用字（一）・第 1 課')).toBeInTheDocument()
@@ -233,6 +262,29 @@ describe('小課畫面（AC#2 單元層）', () => {
   })
 })
 
+describe('音效（創辦人試用 2026-10-04 ④）', () => {
+  it('答對、答錯各一聲', async () => {
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
+    await answerCurrent(1)
+    expect(vi.mocked(playSfx).mock.calls).toEqual([['correct']])
+    cont()
+    await answerCurrent(2, true)
+    expect(vi.mocked(playSfx).mock.calls).toEqual([['correct'], ['wrong']])
+  })
+
+  it('做完一課：完成音效一聲', async () => {
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
+    for (let n = 1; n <= 12; n++) {
+      await answerCurrent(n)
+      cont()
+    }
+    await screen.findByTestId('lesson-done')
+    const calls = vi.mocked(playSfx).mock.calls
+    expect(calls).toHaveLength(13)
+    expect(calls.at(-1)).toEqual(['complete'])
+  })
+})
+
 describe('離開與接續（s12）', () => {
   it('✕ → 確認框：焦點在「繼續上課」，按它回到題目', async () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
@@ -282,6 +334,72 @@ describe('最後一題答完、沒按繼續就按 ✕（走查 P2）', () => {
     fireEvent.click(within(dialog).getByRole('button', { name: '離開' }))
     await vi.waitFor(async () => expect(await db.courseProgress.get(LESSON)).toBeDefined())
     expect(await db.lessonRuns.count()).toBe(0)
+    expect(onSettle).toHaveBeenCalledOnce()
+  })
+})
+
+describe('錯題重做（創辦人試用 2026-10-04 ⑤）', () => {
+  async function mainRoundWith2Wrong() {
+    for (let n = 1; n <= 12; n++) {
+      await answerCurrent(n, n === 2 || n === 12)
+      cont()
+    }
+    await retryCount(1, 2)
+  }
+
+  it('主輪答錯 2 題 → 「再練一次錯題」只出這 2 題；仍錯的再出一輪；全對才完成；分數與 FSRS 只看第一次', async () => {
+    const onSettle = vi.fn()
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />)
+    await mainRoundWith2Wrong()
+    expect(screen.getByText('再練一次錯題')).toBeInTheDocument()
+    expect(screen.getByText('be')).toBeInTheDocument()
+    const logs = await db.reviewLogs.count()
+    expect(onSettle).not.toHaveBeenCalled()
+
+    await answerAt(1)
+    cont()
+    await retryCount(2, 2)
+    await answerAt(11, true)
+    cont()
+    // 第 2 輪：只剩仍錯的那題
+    await retryCount(1, 1)
+    expect(screen.getByTestId('reading-question')).toHaveTextContent('Amy 的妹妹早上在哪裡？')
+    await answerAt(11)
+    cont()
+
+    const done = await screen.findByTestId('lesson-done')
+    expect(done).toHaveTextContent('答對 10 題')
+    expect(done).toHaveTextContent('答錯的 1 題已排進明天的複習')
+    expect(await db.reviewLogs.count()).toBe(logs)
+    expect(onSettle).toHaveBeenCalledExactlyOnceWith(
+      expect.objectContaining({ correct: 10, wrongKeys: ['a1-u01-l01-q02', 'a1-u01-l01-q15#1'] }),
+    )
+  })
+
+  it('主輪最後一題答完、有錯題就按 ✕：不結算；確認框說還有錯題要練；重開後從重做接續', async () => {
+    const onSettle = vi.fn()
+    const first = render(
+      <LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />,
+    )
+    for (let n = 1; n <= 11; n++) {
+      await answerCurrent(n, n === 2)
+      cont()
+    }
+    await answerCurrent(12)
+    fireEvent.click(screen.getByRole('button', { name: '離開' }))
+    const dialog = await screen.findByRole('alertdialog')
+    expect(dialog).toHaveTextContent('還有 1 題錯題要再練一次。進度會保留，下次接著練。')
+    fireEvent.click(within(dialog).getByRole('button', { name: '離開' }))
+    first.unmount()
+    expect(onSettle).not.toHaveBeenCalled()
+    expect(await db.courseProgress.get(LESSON)).toBeUndefined()
+
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />)
+    await retryCount(1, 1)
+    expect(screen.getByText('be')).toBeInTheDocument()
+    await answerAt(1)
+    cont()
+    await screen.findByTestId('lesson-done')
     expect(onSettle).toHaveBeenCalledOnce()
   })
 })

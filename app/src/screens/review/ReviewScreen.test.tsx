@@ -7,7 +7,20 @@ import type { LexIndex } from '../../dict/lexicon'
 import type { LessonItemsDoc } from '../../lesson/items'
 import { loadFixture } from '../../lesson/testFixtures'
 import { CardState } from '../../srs/scheduler'
+import { afterSfx, playSfx } from '../../sound/sfx'
+import { speak } from '../../speech/speak'
 import { ReviewScreen } from './ReviewScreen'
+
+vi.mock('../../sound/sfx', async (orig) => ({
+  ...(await orig<typeof import('../../sound/sfx')>()),
+  playSfx: vi.fn(),
+  afterSfx: vi.fn(async () => {}),
+}))
+vi.mock('../../speech/speak', async (orig) => ({
+  ...(await orig<typeof import('../../speech/speak')>()),
+  speak: vi.fn(async () => {}),
+  ttsAvailable: () => true,
+}))
 
 // 期望文案取自設計 s07（複習 8／24）與 zh-TW.json；題目與釋義取自樣本課 fixture（a1-u01-l01）
 const L1 = 'a1-u01-l01'
@@ -40,6 +53,38 @@ beforeEach(async () => {
 const option = (name: string) => screen.getByRole('radio', { name })
 const cont = () => fireEvent.click(screen.getByRole('button', { name: '繼續' }))
 const noNext = async () => null
+
+describe('音效與自動發音（創辦人試用 2026-10-04 ②④）', () => {
+  it('答對、答錯各一聲，作答後念一次英文字；做完顯示完成卡時播完成音', async () => {
+    vi.mocked(playSfx).mockClear()
+    vi.mocked(speak).mockClear()
+    vi.mocked(afterSfx).mockClear()
+    await db.wordPool.bulkPut([due('have', 1), due('the', 2)])
+    render(<ReviewScreen mode={{ kind: 'due', flow: false }} loadItems={loadItems} />)
+    await screen.findByText('複習 1／2')
+    fireEvent.click(option('那個、這個'))
+    expect(vi.mocked(playSfx).mock.calls).toEqual([['correct']])
+    await vi.waitFor(() => expect(speak).toHaveBeenCalledExactlyOnceWith('the'))
+    expect(afterSfx).toHaveBeenCalledOnce()
+    await screen.findByRole('status')
+    cont()
+    await screen.findByText('複習 2／2')
+    fireEvent.click(option('是'))
+    expect(vi.mocked(playSfx).mock.calls).toEqual([['correct'], ['wrong']])
+    await vi.waitFor(() => expect(speak).toHaveBeenLastCalledWith('have'))
+    await screen.findByRole('status')
+    cont()
+    await screen.findByTestId('review-done')
+    expect(vi.mocked(playSfx).mock.calls.at(-1)).toEqual(['complete'])
+  })
+
+  it('沒有到期（空的完成卡）：不播完成音', async () => {
+    vi.mocked(playSfx).mockClear()
+    render(<ReviewScreen mode={{ kind: 'due', flow: false }} loadItems={loadItems} />)
+    await screen.findByTestId('review-done')
+    expect(playSfx).not.toHaveBeenCalled()
+  })
+})
 
 describe('單獨複習（從到期複習小卡進來）', () => {
   it('依到期先後出題，頁首「複習 n／總數」；答對記 Good、答錯記 Again；做完顯示完成卡', async () => {

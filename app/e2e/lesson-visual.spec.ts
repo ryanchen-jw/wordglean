@@ -5,7 +5,7 @@
 // 資料：樣本課 fixture（A1 一課 18 步：第 9、15、18 題聽音打字（後兩題由跟讀替代）、第 12 題聽音選答、第 11／14 題寫作自評）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
-import { answer, count, LESSON, next, playTo, STEPS } from './lesson.js'
+import { answer, answerRetry, count, LESSON, next, playTo, retryCount, STEPS } from './lesson.js'
 import { fakeSystemVoice, fakeWebGpu } from './speech.js'
 import { measureMobile, overflowingChildren } from './measure.js'
 
@@ -217,12 +217,19 @@ test('s03 聽音選答答對', async ({ page }, info) => {
   await check(page, info, 's03-choice-right')
 })
 
-test('s14 完成頁', async ({ page }, info) => {
+// 錯題重做（創辦人試用 2026-10-04 ⑤）：只錯 1 題，重做 1 步即到完成頁（兩個截圖狀態合在同一趟，不另走一課）。
+// 完成頁仍要有「答錯的單字卡進複習」那行，所以錯的是單字卡；重做本身的多題、多輪由 lesson.spec 驗
+test('錯題重做：出題／答對；s14 完成頁', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
   for (let n = 1; n <= STEPS.length; n++) {
-    await answer(page, n, n === 2 || n === 10)
+    await answer(page, n, n === 2)
     await next(page)
   }
+  await retryCount(page, 1, 1)
+  await check(page, info, 'retry-question')
+  await answerRetry(page, 2, { n: 1, total: 1 })
+  await check(page, info, 'retry-right')
+  await next(page)
   await expect(page.getByTestId('lesson-done')).toBeVisible()
   await check(page, info, 's14-default')
 })
@@ -285,6 +292,17 @@ for (const c of NARROW) {
       await answer(page, n)
       await next(page)
     }
+    // 錯題重做：答錯的第 1、9、10、12 題再出一輪
+    await retryCount(page, 1, 4)
+    await check(page, info, `${c.name}-retry-question`, false)
+    await answerRetry(page, 1, { n: 1, total: 4 })
+    await next(page)
+    await answerRetry(page, 9, { n: 2, total: 4 })
+    await next(page)
+    await answerRetry(page, 10, { n: 3, total: 4 })
+    await next(page)
+    await answerRetry(page, 12, { n: 4, total: 4 })
+    await next(page)
     await expect(page.getByTestId('lesson-done')).toBeVisible()
     await check(page, info, `${c.name}-s14`, false)
   })

@@ -42,18 +42,18 @@ test(`AC#3 首次開啟 → 分級測驗 → 結果寫入設定 → 設定頁改
   await expect(page.getByTestId('placement-level')).toHaveText('B1')
   await page.getByRole('button', { name: '從 B1 開始' }).click()
   await expect(page.getByTestId('screen-home')).toHaveAttribute('data-state', 'default')
-  await expect(page.getByText('B1｜約多益 275+')).toBeVisible()
+  await expect(page.getByText('B1｜約多益 550+')).toBeVisible()
 
   // 重新載入仍在（存在 IndexedDB），設定頁可調整
   await page.goto('/settings')
-  const row = page.getByRole('button', { name: /目前級距\s*B1｜約多益 275\+/ })
+  const row = page.getByRole('button', { name: /目前級距\s*B1｜約多益 550\+/ })
   await expect(row).toBeVisible()
   await row.click()
   await page
     .getByRole('dialog', { name: '目前級距' })
-    .getByRole('option', { name: 'B2｜約多益 400+' })
+    .getByRole('option', { name: 'B2｜約多益 785+' })
     .click()
-  await expect(page.getByRole('button', { name: /目前級距\s*B2｜約多益 400\+/ })).toBeVisible()
+  await expect(page.getByRole('button', { name: /目前級距\s*B2｜約多益 785\+/ })).toBeVisible()
   await page.goto('/')
-  await expect(page.getByText('B2｜約多益 400+')).toBeVisible()
+  await expect(page.getByText('B2｜約多益 785+')).toBeVisible()
 })

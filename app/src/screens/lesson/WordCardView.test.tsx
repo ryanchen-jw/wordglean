@@ -1,13 +1,25 @@
 // G2：單字卡的測驗字作答前不可點——例句提示裡的變化形（meetings）也算；作答後全部可點
 import 'fake-indexeddb/auto'
-import { fireEvent, render, screen, within } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
+import { act, fireEvent, render, screen, within } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { DictionaryProvider } from '../../dict/DictionaryProvider'
 import type { WordCardItem } from '../../lesson/items'
 import { buildQueue, createRegistry, READ_TYPES } from '../../lesson/queue'
 import { lessonWordCards } from '../../review/session'
 import { fsDictDeps } from '../../test/dictFs'
+import { afterSfx } from '../../sound/sfx'
+import { speak, ttsAvailable } from '../../speech/speak'
 import { WordCardView } from './WordCardView'
+
+vi.mock('../../speech/speak', () => ({
+  speak: vi.fn(async () => {}),
+  ttsAvailable: vi.fn(() => true),
+}))
+vi.mock('../../sound/sfx', async (orig) => ({
+  ...(await orig<typeof import('../../sound/sfx')>()),
+  afterSfx: vi.fn(async () => {}),
+}))
+const sfxGate = { open: () => {} }
 
 const loaded = fsDictDeps()
 
@@ -133,5 +145,57 @@ describe('單字卡：顯示英文原本的大小寫（TASK-22 移交①）', ()
     expect(screen.queryByText('i', { exact: true })).toBeNull()
     fireEvent.click(screen.getByRole('radio', { name: /你/ }))
     expect(await screen.findByRole('status')).toHaveTextContent(/^I/)
+  })
+})
+
+describe('單字卡：作答後自動念一次英文字（創辦人試用 2026-10-04 ②）', () => {
+  const step = {
+    key: 'k',
+    itemId: item.id,
+    type: 'wordCard' as const,
+    srsWord: 'meeting',
+    choice: { options: ['會議', '行李', '發票', '倉庫'], answer: 0 },
+  }
+  const renderCard = (onAnswer = vi.fn()) =>
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <WordCardView item={item} step={step} onAnswer={onAnswer} onContinue={() => {}} />
+      </DictionaryProvider>,
+    )
+
+  beforeEach(() => {
+    vi.mocked(speak).mockClear()
+    vi.mocked(ttsAvailable).mockReturnValue(true)
+    sfxGate.open = () => {}
+    vi.mocked(afterSfx).mockImplementation(() => new Promise<void>((r) => (sfxGate.open = r)))
+  })
+
+  it.each([
+    ['答對', /會議/],
+    ['答錯', /行李/],
+  ])('%s：等音效播完才念（同一條發音路徑），只念一次', async (_, option) => {
+    const onAnswer = vi.fn()
+    renderCard(onAnswer)
+    fireEvent.click(screen.getByRole('radio', { name: option }))
+    expect(onAnswer).toHaveBeenCalledOnce()
+    expect(speak).not.toHaveBeenCalled()
+    await act(async () => sfxGate.open())
+    expect(speak).toHaveBeenCalledExactlyOnceWith('meeting')
+  })
+
+  it('手機不能播音（沒有喇叭鈕）：不念', async () => {
+    vi.mocked(ttsAvailable).mockReturnValue(false)
+    renderCard()
+    fireEvent.click(screen.getByRole('radio', { name: /會議/ }))
+    await act(async () => sfxGate.open())
+    expect(speak).not.toHaveBeenCalled()
+  })
+
+  it('音效還沒播完就離開這題：不再念', async () => {
+    const view = renderCard()
+    fireEvent.click(screen.getByRole('radio', { name: /會議/ }))
+    view.unmount()
+    await act(async () => sfxGate.open())
+    expect(speak).not.toHaveBeenCalled()
   })
 })

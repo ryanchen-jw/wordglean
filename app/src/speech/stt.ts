@@ -9,7 +9,7 @@ export type SttState =
   | { kind: 'notDownloaded' }
   | { kind: 'downloading'; progress: number } // 第一次下載，0–1
   | { kind: 'downloaded' } // 已在快取、還沒載入記憶體
-  | { kind: 'loading' } // 從快取載入＋暖機
+  | { kind: 'loading' } // 從快取載入＋暖機（第一次下載完也是這個狀態）
   | { kind: 'ready' }
   | { kind: 'failed' }
 
@@ -84,7 +84,13 @@ export function createSttClient({
       const w = createWorker()
       w.onmessage = ({ data }: MessageEvent<SttResponse>) => {
         if (data.type === 'progress') {
-          if (state.kind === 'downloading') set({ kind: 'downloading', progress: data.fraction })
+          // 下載完還要建模型與暖機：改報「準備中」，不停在「下載中 100%」（創辦人試用 2026-10-04 ①）
+          if (state.kind === 'downloading')
+            set(
+              data.fraction >= 1
+                ? { kind: 'loading' }
+                : { kind: 'downloading', progress: data.fraction },
+            )
           return
         }
         const p = pending.get(data.id)

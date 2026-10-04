@@ -65,6 +65,21 @@ describe('createSttClient', () => {
     expect(states).toEqual(['notDownloaded', 'downloading', 'downloading', 'ready', 'downloaded'])
   })
 
+  it('下載到 100%：改為「準備中」（不再是下載中）；載入完成即可用（創辦人試用 2026-10-04 ①）', async () => {
+    const { client, workers, states } = setup(false)
+    await client.refresh()
+    client.acquire()
+    const loading = client.load()
+    const w = workers[0]
+    w.reply({ type: 'progress', fraction: 0.5 })
+    w.reply({ type: 'progress', fraction: 1 })
+    expect(client.get()).toEqual({ kind: 'loading' })
+    w.reply({ type: 'result', id: w.last().id, result: { device: 'wasm' } })
+    await loading
+    expect(client.get()).toEqual({ kind: 'ready' })
+    expect(states).toEqual(['notDownloaded', 'downloading', 'downloading', 'loading', 'ready'])
+  })
+
   it('已下載過：載入中 → 可用；持有期間留著 Worker，放手才釋放', async () => {
     const { client, workers } = setup(true)
     await client.refresh()

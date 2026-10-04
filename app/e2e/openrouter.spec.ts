@@ -1,7 +1,7 @@
 // TASK-15 AC#1／AC#3：OpenRouter 一鍵授權（PKCE，假端點）、貼金鑰、清除金鑰、寫作題 AI 批改與失敗；
 // 全程記錄頁面請求，檢查金鑰只送往 openrouter.ai（網路面板）。openrouter.ai 全部由假端點回應、不真連網
 import { expect, test } from '@playwright/test'
-import { answer, LESSON, next, playTo, STEPS, WRITE_STEPS } from './lesson.js'
+import { answer, LESSON, next, playTo, retryCount, STEPS, WRITE_STEPS } from './lesson.js'
 import { fakeOpenRouter, FAKE_KEY, gradeOk, requestsCarryingKey } from './openrouter.js'
 import { fakeSystemVoice } from './speech.js'
 
@@ -148,6 +148,11 @@ test('寫作題：AI 批改結果（假端點）→ 下一題額度用完 → �
     await answer(page, n)
     await next(page)
   }
+  // 錯題重做（創辦人試用 2026-10-04 ⑤）：AI 判錯與批改失敗的兩題再出一輪；重做時跳過就不再出
+  await retryCount(page, 1, 2)
+  await page.getByRole('button', { name: '跳過' }).click()
+  await retryCount(page, 2, 2)
+  await page.getByRole('button', { name: '跳過' }).click()
   await expect(page.getByTestId('lesson-done')).toContainText(`${STEPS.length} 題`)
   expectKeyOnlyToOpenRouter(requestsCarryingKey(fake))
 })

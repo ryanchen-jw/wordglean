@@ -48,6 +48,7 @@ app/
 │   │                    跟讀（TASK-14）：逐字比對 align.ts、Moonshine Worker（stt*.ts）、錄音與權限 mic.ts、
 │   │                    Web Speech 後備 webSpeech.ts（需同意）；畫面經 services.ts 的 SpeechContext 取用
 │   ├── auth/、sync/     登入與同步（TASK-20）；帳號區塊掛在設定頁 AccountSection
+│   ├── sound/           音效（答對、答錯、完成一課／複習）：Web Audio 即時合成、不用音檔；設定頁可關、錄音中不播
 │   ├── llm/             OpenRouter（TASK-15）：金鑰存放（db secrets 表，不同步不匯出）、PKCE、用戶端、批改 prompt 與解析容錯、預設模型
 │   ├── ui/              Button、Card、BottomSheet、OptionSheet、ChoiceOption、FeedbackBar、ConfirmDialog、Toast
 │   ├── index.css        Tailwind 進入點（tailwindcss＋design/tokens.css＋design/theme.css）

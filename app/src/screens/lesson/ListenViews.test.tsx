@@ -119,10 +119,10 @@ describe('聽音打字', () => {
     expect(screen.getByTestId('listen-typed').querySelectorAll('mark')).toHaveLength(0)
   })
 
-  it('聽不出來：直接看答案、記為答錯', () => {
+  it('聽不出來：直接看答案、記為答錯（跳過：錯題重做時不再出，創辦人試用 2026-10-04 ⑤）', () => {
     const onAnswer = renderType()
     fireEvent.click(screen.getByRole('button', { name: '聽不出來' }))
-    expect(onAnswer).toHaveBeenCalledWith({ correct: false, usedHint: false })
+    expect(onAnswer).toHaveBeenCalledWith({ correct: false, usedHint: false, skipped: true })
     expect(screen.getByRole('status')).toHaveTextContent('答案是')
     expect(screen.getByRole('status')).toHaveTextContent('They moved the meeting to Friday.')
     expect(screen.getByRole('button', { name: '繼續' })).toBeInTheDocument()

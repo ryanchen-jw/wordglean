@@ -1,10 +1,11 @@
 // 單字卡（設計 s07、components.md §11）：英文字＋發音，四個中文釋義點選即判定；「看例句提示」用過就評 Hard
 import { Info, Volume2 } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { WordCardItem } from '../../lesson/items'
+import { afterSfx } from '../../sound/sfx'
 import { speak, ttsAvailable } from '../../speech/speak'
 import { iconBtnCls } from '../../shell/Screen'
 import { Button } from '../../ui/Button'
@@ -25,9 +26,23 @@ export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps
   // 作答前測驗字本身不可點（會直接看到答案）
   const hide = answered ? undefined : new Set([item.word.toLowerCase()])
 
+  // 離開這題後，還在等音效的自動發音就不念
+  const gone = useRef(false)
+  useEffect(() => {
+    gone.current = false
+    return () => {
+      gone.current = true
+    }
+  }, [])
+
+  // 作答（對錯都一樣）後自動念一次英文字：先讓答對／答錯音效播完，再走喇叭鈕同一條發音路徑（創辦人試用 2026-10-04 ②）
   const pick = (i: number) => {
     setPicked(i)
     onAnswer({ correct: i === answer, usedHint: hint })
+    if (ttsAvailable())
+      void afterSfx().then(() => {
+        if (!gone.current) void speak(item.word)
+      })
   }
 
   return (

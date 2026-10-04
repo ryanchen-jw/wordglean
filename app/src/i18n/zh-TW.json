@@ -225,7 +225,8 @@
       "stt": "語音辨識模型",
       "sttNote": "跟讀用・約 50–80MB",
       "hqUnsupported": "這支手機不支援高音質發音",
-      "ttsHqValue": "高音質發音"
+      "ttsHqValue": "高音質發音",
+      "sfx": "音效"
     },
     "data": {
       "title": "資料",
@@ -333,6 +334,9 @@
       "progress": "作答進度",
       "count": "{n}／{total}"
     },
+    "retry": {
+      "title": "再練一次錯題"
+    },
     "error": {
       "body": "這一課載入失敗，請回到課程再試一次。",
       "back": "回到課程"
@@ -367,6 +371,7 @@
       "title": "要離開這一課嗎？",
       "body": "已完成 {done}／{total} 題。進度會保留，下次從第 {next} 題繼續。",
       "bodyDone": "這一課已經做完了，離開後會記為完成。",
+      "bodyRetry": "還有 {left} 題錯題要再練一次。進度會保留，下次接著練。",
       "stay": "繼續上課",
       "leave": "離開"
     },
@@ -508,7 +513,7 @@
       "penalty": "勾到 {count} 個假字，結果已向下修正",
       "start": "從 {level} 開始",
       "choose": "想自己選級距",
-      "toeicNote": "多益分數指聽力分項，依 ETS 官方的 CEFR 對照，僅供參考",
+      "toeicNote": "多益分數為聽力＋閱讀總分，依 ETS 官方的 CEFR 對照，僅供參考",
       "retestHint": "勾到 {count} 個假字，這次結果不太準。建議重新測驗，或自己選級距。",
       "retest": "重新測驗"
     }

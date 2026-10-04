@@ -51,7 +51,7 @@ describe('首頁（s01）', () => {
     await waitFor(() =>
       expect(screen.getByTestId('screen-home')).toHaveAttribute('data-state', 'default'),
     )
-    expect(screen.getByText('A1｜約多益 60+')).toBeInTheDocument()
+    expect(screen.getByText('A1｜約多益 120+')).toBeInTheDocument()
   })
 
   it('預設：到期 24、下一課為 B1 基礎常用字第 2 課', async () => {
@@ -63,7 +63,7 @@ describe('首頁（s01）', () => {
     await db.wordPool.bulkPut(Array.from({ length: 24 }, (_, i) => dueWord(i)))
     render(<HomeScreen />)
     expect(await screen.findByText('先複習，再上一課・約 11 分鐘')).toBeInTheDocument()
-    expect(screen.getByText('B1｜約多益 275+')).toBeInTheDocument()
+    expect(screen.getByText('B1｜約多益 550+')).toBeInTheDocument()
     expect(screen.getByText('24')).toBeInTheDocument()
     expect(screen.getByText('約 6 分鐘')).toBeInTheDocument()
     expect(screen.getByText('基礎常用字・第 2 課')).toBeInTheDocument()

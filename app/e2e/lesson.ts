@@ -106,7 +106,31 @@ const advanced = new WeakSet<Page>()
  */
 export async function answer(page: Page, n: number, wrong = false) {
   await count(page, n)
-  const s = STEPS[n - 1]
+  await answerPick(page, STEPS[n - 1], wrong)
+}
+
+/** 錯題重做（創辦人試用 2026-10-04 ⑤）的頁首：「再練一次錯題」＋這一輪的題號 */
+export async function retryCount(page: Page, n: number, total: number) {
+  await expect(page.getByText('再練一次錯題', { exact: true })).toBeVisible()
+  await expect(page.locator('header').getByText(`${n}／${total}`, { exact: true })).toBeVisible()
+  await expect(page.getByRole('progressbar', { name: '再練一次錯題' })).toHaveAttribute(
+    'aria-valuemax',
+    String(total),
+  )
+}
+
+/** 錯題重做：作答原本第 step 題（從 1 起），此時是這一輪的 n／total */
+export async function answerRetry(
+  page: Page,
+  step: number,
+  { n, total }: { n: number; total: number },
+  wrong = false,
+) {
+  await retryCount(page, n, total)
+  await answerPick(page, STEPS[step - 1], wrong)
+}
+
+export async function answerPick(page: Page, s: Pick, wrong: boolean) {
   if (s.write !== undefined) {
     await page.getByRole('textbox', { name: '你的句子' }).fill(s.write)
     await page.getByRole('button', { name: '送出批改' }).click()

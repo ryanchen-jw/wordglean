@@ -74,6 +74,18 @@ describe('作答中（s06 input）', () => {
     expect(screen.getByRole('button', { name: '送出批改' })).toBeDisabled()
   })
 
+  it('提示字顯示英文原本的大小寫（july → July；A.M. 原樣）；送去批改的仍是題庫原字（執行長審稿補項②）', async () => {
+    const grade = vi.fn<GradeFn>(async () => ok(WRONG))
+    await saveLink(db, KEY, 'paste', Date.now())
+    const tr = writing.find((w) => w.type === 'translate')!
+    start([{ ...tr, hintWords: ['july', 'august', 'A.M.'] } as WritingItem], grade)
+    expect(await screen.findByText('July、August、A.M.')).toBeInTheDocument()
+    expect(screen.queryByText(/july/)).toBeNull()
+    await write('It is July.')
+    await vi.waitFor(() => expect(grade).toHaveBeenCalledOnce())
+    expect(grade.mock.calls[0][1].words).toEqual(['july', 'august', 'A.M.'])
+  })
+
   it('造句：題型「造句」、說明、指定字當提示字', async () => {
     start([writing[1]])
     expect(await screen.findByText('造句')).toBeInTheDocument()
@@ -116,6 +128,10 @@ describe('沒有金鑰：對照參考答案自評（AC#3、s06 nokey）', () => 
     expect(await screen.findByText('2／2')).toBeInTheDocument()
     await write('The pen on desk.')
     fireEvent.click(await screen.findByRole('button', { name: '我寫錯了' }))
+    // 錯題重做（創辦人試用 2026-10-04 ⑤）：自評寫錯的那題再出一次，寫對才完成；分數看第一次
+    expect(await screen.findByText('再練一次錯題')).toBeInTheDocument()
+    await write('The pen is on the desk.')
+    fireEvent.click(await screen.findByRole('button', { name: '我寫對了' }))
     const done = await screen.findByTestId('lesson-done')
     expect(done).toHaveTextContent('2 題')
     expect(done).toHaveTextContent('答對 1 題')
@@ -161,6 +177,12 @@ describe('有金鑰：AI 批改（s06 ai）', () => {
     expect(items).toEqual(['apple 是母音開頭，前面用 an。', '可數名詞單數前要加 a 或 an。'])
     expect(screen.getByText('由你的 OpenRouter 帳號批改')).toBeInTheDocument()
     click('我懂了，繼續')
+    expect(await screen.findByText('2／2')).toBeInTheDocument()
+    click('跳過')
+    // 判錯與跳過的都進錯題重做；重做時再跳過就不再出
+    expect(await screen.findByText('再練一次錯題')).toBeInTheDocument()
+    expect(screen.getByText('1／2')).toBeInTheDocument()
+    click('跳過')
     expect(await screen.findByText('2／2')).toBeInTheDocument()
     click('跳過')
     expect(await screen.findByTestId('lesson-done')).toHaveTextContent('答對 0 題')
@@ -266,6 +288,11 @@ describe('批改失敗（s06 fail）：保留參考答案、這題仍能完成',
     await write('I have a apple.')
     await screen.findByRole('alert')
     click('繼續')
+    // 批改失敗後繼續＝算錯、進重做；重做時批改又失敗，繼續後不再出（AI 不能用時不會卡住）
+    expect(await screen.findByText('再練一次錯題')).toBeInTheDocument()
+    await write('I have an apple.')
+    await screen.findByRole('alert')
+    click('繼續')
     expect(await screen.findByTestId('lesson-done')).toHaveTextContent('答對 0 題')
   })
 })
@@ -273,6 +300,10 @@ describe('批改失敗（s06 fail）：保留參考答案、這題仍能完成',
 describe('跳過', () => {
   it('不用寫字就能跳過，算錯', async () => {
     start([writing[0]])
+    await box()
+    click('跳過')
+    // 算錯、進錯題重做；重做時再跳過就不再出
+    expect(await screen.findByText('再練一次錯題')).toBeInTheDocument()
     await box()
     click('跳過')
     expect(await screen.findByTestId('lesson-done')).toHaveTextContent('答對 0 題')

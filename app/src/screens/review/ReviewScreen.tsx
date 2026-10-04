@@ -21,6 +21,7 @@ import { loadNextLessonId as loadNextFromCurriculum, loadTodayPlan } from '../..
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { LessonFoot, LessonHeader, LessonMain, lessonFrameCls } from '../lesson/frame'
+import { playSfx } from '../../sound/sfx'
 import { WordCardView } from '../lesson/WordCardView'
 
 export type ReviewMode = { kind: 'due'; flow: boolean } | { kind: 'practice'; lessonId: string }
@@ -67,6 +68,8 @@ export function ReviewScreen({
         return
       }
     }
+    // 有複習到字才播完成音（創辦人試用 2026-10-04 ④）；沒有到期的空完成卡不播
+    if (total > 0) playSfx('complete')
     setPhase({ kind: 'done', total, correct })
   }
 
@@ -140,6 +143,7 @@ export function ReviewScreen({
 
   const onAnswer = (a: { correct: boolean; usedHint: boolean }) => {
     const at = now()
+    playSfx(a.correct ? 'correct' : 'wrong')
     saving.current = answerReview(db, card, { ...a, elapsedMs: at - shownAt.current }, at, {
       practice: mode.kind === 'practice',
     })

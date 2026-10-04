@@ -1,7 +1,7 @@
 // 新手分級測驗（設計 s10：勾選中／結果）＋重測狀態（設計未畫，依元件規格組合）；計分見 placement/score.ts
 import { Check, ChevronRight, Info, X } from 'lucide-react'
 import { useCallback, useEffect, useState } from 'react'
-import { LEVELS, TOEIC_LISTENING, type Level } from '../../curriculum/curriculum'
+import { LEVELS, TOEIC_TOTAL, type Level } from '../../curriculum/curriculum'
 import { LevelSheet } from '../../curriculum/LevelSheet'
 import { db } from '../../data/appDb'
 import { saveSettings } from '../../data/repo'
@@ -159,7 +159,7 @@ function Result({ r, onRetest }: { r: PlacementResult; onRetest: () => void }) {
           {r.startLevel}
         </span>
         <span className="text-secondary text-muted">
-          {t('common.text.toeicApprox', { score: TOEIC_LISTENING[r.startLevel] })}
+          {t('common.text.toeicApprox', { score: TOEIC_TOTAL[r.startLevel] })}
         </span>
         <span className="text-caption text-balance text-muted">
           {t('placement.result.toeicNote')}

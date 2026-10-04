@@ -6,6 +6,8 @@
 export const MODEL_ID = 'onnx-community/moonshine-tiny-ONNX'
 export const SAMPLE_RATE = 16_000
 export const WARMUP_TOKENS = 2
+/** 要下載的模型檔數（encoder＋decoder） */
+const MODEL_FILES = 2
 
 export type Device = 'webgpu' | 'wasm'
 
@@ -62,7 +64,11 @@ export function createSttEngine(pipelineFn: PipelineFn, device: () => Promise<De
   }
 
   return {
-    /** 下載（已快取則直接讀）＋載入＋暖機；onProgress 為整體下載比例，只增不減 */
+    /**
+     * 下載（已快取則直接讀）＋載入＋暖機；onProgress 為兩個模型檔（encoder、decoder）的整體下載比例，只增不減。
+     * 只算 .onnx：transformers.js 先抓 config／tokenizer 小檔、讀完設定才開始抓模型檔，
+     * 把小檔算進去會在大檔還沒開始時就報 100%（創辦人試用 2026-10-04 ①）
+     */
     async load(onProgress: (fraction: number) => void): Promise<{ device: Device }> {
       const dev = await device()
       const files = new Map<string, { loaded: number; total: number }>()
@@ -71,8 +77,9 @@ export function createSttEngine(pipelineFn: PipelineFn, device: () => Promise<De
         dtype: DTYPES[dev],
         device: dev,
         progress_callback: (p) => {
-          if (p.status !== 'progress' || !p.file || !p.total) return
+          if (p.status !== 'progress' || !p.file?.endsWith('.onnx') || !p.total) return
           files.set(p.file, { loaded: p.loaded ?? 0, total: p.total })
+          if (files.size < MODEL_FILES) return
           let loaded = 0
           let total = 0
           for (const f of files.values()) {

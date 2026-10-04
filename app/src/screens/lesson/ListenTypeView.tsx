@@ -44,7 +44,7 @@ export function ListenTypeView({ item, onAnswer, onContinue }: QuestionProps<Lis
 
   const giveUp = () => {
     setResult('gaveUp')
-    onAnswer({ correct: false, usedHint: false })
+    onAnswer({ correct: false, usedHint: false, skipped: true })
   }
 
   const solution = (

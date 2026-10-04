@@ -4,13 +4,14 @@ import { addFromCourse, completeLesson, recordReview } from '../data/repo'
 import { gradeFor, type AnswerInput } from './grade'
 import type { Step } from './queue'
 import {
-  advance,
   createRun,
-  currentKey,
+  isAnswered,
   isComplete,
   matchesQueue,
+  proceed,
   score,
   withAnswer,
+  withRetryAnswer,
   type LessonRun,
 } from './run'
 
@@ -24,7 +25,7 @@ export interface SettleSummary {
   wrongKeys: string[]
 }
 
-/** 有對得上的存檔就接續（目前步驟已作答則直接跳下一題），否則重新開始 */
+/** 有對得上的存檔就接續（目前步驟已作答則直接跳下一題，含錯題重做），否則重新開始 */
 export async function startOrResume(
   db: LinguaDb,
   lessonId: string,
@@ -33,8 +34,7 @@ export async function startOrResume(
 ): Promise<{ run: LessonRun; resumed: boolean }> {
   const saved = await db.lessonRuns.get(lessonId)
   if (saved && matchesQueue(saved, steps)) {
-    const key = currentKey(saved)
-    const run = key !== null && saved.results[key] ? advance(saved, nowMs) : saved
+    const run = isAnswered(saved) ? proceed(saved, nowMs) : saved
     if (run !== saved) await db.lessonRuns.put(run)
     return { run, resumed: true }
   }
@@ -67,9 +67,22 @@ export async function answerStep(
   return next
 }
 
-/** 按「繼續」 */
+/** 錯題重做的作答：只存進度，不寫 FSRS、不改第一次作答（創辦人試用 2026-10-04 ⑤） */
+export async function answerRetry(
+  db: LinguaDb,
+  run: LessonRun,
+  step: Step,
+  answer: { correct: boolean; skipped?: boolean },
+  nowMs: number,
+): Promise<LessonRun> {
+  const next = withRetryAnswer(run, step.key, answer, nowMs)
+  await db.lessonRuns.put(next)
+  return next
+}
+
+/** 按「繼續」：主輪最後一題之後有錯題就進重做 */
 export async function continueRun(db: LinguaDb, run: LessonRun, nowMs: number): Promise<LessonRun> {
-  const next = advance(run, nowMs)
+  const next = proceed(run, nowMs)
   await db.lessonRuns.put(next)
   return next
 }

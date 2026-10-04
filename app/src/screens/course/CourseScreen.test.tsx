@@ -26,7 +26,7 @@ describe('課程地圖（s02）', () => {
     render(<CourseScreen />)
     expect(await screen.findByText('2／6 課')).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'B1' })).toHaveAttribute('aria-selected', 'true')
-    expect(screen.getByText('B1｜約多益 275+')).toBeInTheDocument()
+    expect(screen.getByText('B1｜約多益 550+')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /基礎常用字/ })).toHaveAttribute(
       'aria-expanded',
       'true',

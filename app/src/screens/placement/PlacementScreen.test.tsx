@@ -67,14 +67,14 @@ describe('分級測驗（s10）', () => {
     expect(counts).toEqual({ A1: 10, A2: 10, B1: 10, B2: 10, C1: 10, pseudo: 10 })
   })
 
-  it('結果：認識 A1–B1、不勾假字 → 起點 B2｜約多益 400+、五條長條、僅供參考；「從 B2 開始」寫入設定回首頁', async () => {
+  it('結果：認識 A1–B1、不勾假字 → 起點 B2｜約多益 785+、五條長條、僅供參考；「從 B2 開始」寫入設定回首頁', async () => {
     render(<PlacementScreen />)
     await answerAll((_, level) => level === 'A1' || level === 'A2' || level === 'B1')
     expect(await screen.findByText('你的起點')).toBeInTheDocument()
     expect(screen.getByTestId('placement-level')).toHaveTextContent('B2')
-    expect(screen.getByText('約多益 400+')).toBeInTheDocument()
+    expect(screen.getByText('約多益 785+')).toBeInTheDocument()
     expect(
-      screen.getByText('多益分數指聽力分項，依 ETS 官方的 CEFR 對照，僅供參考'),
+      screen.getByText('多益分數為聽力＋閱讀總分，依 ETS 官方的 CEFR 對照，僅供參考'),
     ).toBeInTheDocument()
     expect(screen.getByText('每一級你認識的字的比例')).toBeInTheDocument()
     const bars = within(screen.getByTestId('placement-bars'))
@@ -118,7 +118,7 @@ describe('分級測驗（s10）', () => {
     await answerAll(() => false)
     fireEvent.click(await screen.findByRole('button', { name: '想自己選級距' }))
     const sheet = screen.getByRole('dialog', { name: '目前級距' })
-    fireEvent.click(within(sheet).getByRole('option', { name: 'C1｜約多益 490+' }))
+    fireEvent.click(within(sheet).getByRole('option', { name: 'C1｜約多益 945+' }))
     await waitFor(async () => expect((await getSettings(db)).cefrLevel).toBe('C1'))
     expect(location.pathname).toBe('/')
   })

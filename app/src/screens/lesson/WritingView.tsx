@@ -2,6 +2,7 @@
 // 批改失敗保留參考答案讓這題能完成。對錯（執行長 D2）：AI 無錯誤＝對、自評照按鈕、跳過與失敗後繼續＝錯
 import { CircleX, Info, LoaderCircle } from 'lucide-react'
 import { Fragment, useContext, useState, type ReactNode } from 'react'
+import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { t, type MessageKey } from '../../i18n/t'
 import type { WritingItem } from '../../lesson/items'
@@ -93,8 +94,9 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
   const words = translate ? item.hintWords : [item.targetWord]
 
   // 自評、跳過、失敗後繼續：先記作答再往下（LessonScreen 的「繼續」會等這次存檔）
-  const finish = (correct: boolean) => {
-    onAnswer({ correct, usedHint: false })
+  // 跳過與批改失敗後繼續＝沒判出對錯：算錯，錯題重做時不再出（創辦人試用 2026-10-04 ⑤）
+  const finish = (correct: boolean, skipped = false) => {
+    onAnswer({ correct, usedHint: false, skipped })
     onContinue()
   }
 
@@ -142,7 +144,7 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
               <span className="text-caption text-muted">
                 {t('write.question.hintWords')}
                 <span lang="en" className="font-en">
-                  {words.join('、')}
+                  {words.map(displayWord).join('、')}
                 </span>
               </span>
             )}
@@ -161,7 +163,7 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
           />
         </LessonMain>
         <LessonFoot className="grid-cols-2">
-          <Button variant="secondary" disabled={busy} onClick={() => finish(false)}>
+          <Button variant="secondary" disabled={busy} onClick={() => finish(false, true)}>
             {t('write.question.skip')}
           </Button>
           <Button
@@ -283,7 +285,7 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
         <Button variant="secondary" onClick={() => navigate('/settings')}>
           {t('write.fail.changeModel')}
         </Button>
-        <Button onClick={() => finish(false)}>{t('lesson.feedback.continue')}</Button>
+        <Button onClick={() => finish(false, true)}>{t('lesson.feedback.continue')}</Button>
       </LessonFoot>
     </>
   )
