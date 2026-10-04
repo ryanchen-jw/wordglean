@@ -229,16 +229,17 @@
     },
     {
       "id": "b1-u11-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "gardening",
-      "instructionZh": "用 gardening 造一個句子，說說你或家人對園藝的看法或習慣。",
+      "type": "translate",
+      "promptZh": "我媽媽每個週末都花兩個小時做園藝。",
+      "hintWords": [
+        "gardening"
+      ],
       "referenceEn": [
-        "My grandfather enjoys gardening in the morning.",
-        "I think gardening is relaxing."
+        "My mother spends two hours gardening every weekend.",
+        "Every weekend, my mom spends two hours on gardening."
       ],
       "rubricZh": [
-        "gardening 是名詞「園藝」，例如當主詞、接在 enjoy、like 後等",
-        "時態配合內容（多用現在簡單式）"
+        "用 gardening 表示「園藝」（例如 spends two hours gardening、on gardening 等）"
       ]
     }
   ],
@@ -378,6 +379,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"They sleep less at night.\"；改後：\"They live shorter lives.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gardening）原位換成翻譯題，沿用題 id b1-u11-l07-q17；目標字沿用 gardening",
+        "resolution": "改為 translate：promptZh「我媽媽每個週末都花兩個小時做園藝。」、hintWords [\"gardening\"]、referenceEn [\"My mother spends two hours gardening every weekend.\",\"Every weekend, my mom spends two hours on gardening.\"]、rubricZh [\"用 gardening 表示「園藝」（例如 spends two hours gardening、on gardening 等）\"]（原 makeSentence：instructionZh「用 gardening 造一個句子，說說你或家人對園藝的看法或習慣。」、referenceEn [\"My grandfather enjoys gardening in the morning.\",\"I think gardening is relaxing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

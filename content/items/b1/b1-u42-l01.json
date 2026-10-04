@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u42-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "awkward",
-      "instructionZh": "用 awkward 造一個句子，說說一個讓你覺得尷尬的時刻。",
+      "type": "translate",
+      "promptZh": "剛出生的小馬走起路來很笨拙。",
+      "hintWords": [
+        "awkward"
+      ],
       "referenceEn": [
-        "I felt awkward when I forgot my friend's name.",
-        "It was awkward when my phone rang during the test."
+        "A newborn horse walks in an awkward way.",
+        "The newborn horse's steps were awkward."
       ],
       "rubricZh": [
-        "awkward 表示「尷尬的」，例如 feel awkward 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 awkward 表示「笨拙的」（例如 in an awkward way；寫 walked awkwardly 也正確）",
+        "時態可用 walked、walks 等"
       ]
     }
   ],
@@ -396,6 +397,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Third place, with a bronze medal.\"；改後：\"Behind two other teams.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（awkward）原位換成翻譯題，沿用題 id b1-u42-l01-q17；目標字沿用 awkward",
+        "resolution": "改為 translate：promptZh「剛出生的小馬走起路來很笨拙。」、hintWords [\"awkward\"]、referenceEn [\"The newborn horse walked in an awkward way.\",\"The newborn horse's steps were awkward.\"]、rubricZh [\"用 awkward 表示「笨拙的」（例如 in an awkward way；寫 walked awkwardly 也正確）\",\"時態可用 walked、walks 等\"]（原 makeSentence：instructionZh「用 awkward 造一個句子，說說一個讓你覺得尷尬的時刻。」、referenceEn [\"I felt awkward when I forgot my friend's name.\",\"It was awkward when my phone rang during the test.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 中文沒有時間詞、可讀成一般情況，兩個參考答案都是過去式",
+        "resolution": "改為 referenceEn [\"A newborn horse walks in an awkward way.\",\"The newborn horse's steps were awkward.\"]（原 referenceEn [\"The newborn horse walked in an awkward way.\",\"The newborn horse's steps were awkward.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

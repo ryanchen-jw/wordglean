@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u29-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "haunt",
-      "instructionZh": "用 haunt 造一個句子，說說你最常去的地方。",
+      "type": "translate",
+      "promptZh": "那家小吃店是我們以前常去的地方，現在已經關門了。",
+      "hintWords": [
+        "haunt"
+      ],
       "referenceEn": [
-        "The library near my home is my favorite haunt.",
-        "This park was my favorite haunt when I was a child."
+        "Our old haunt, a small snack shop, has closed.",
+        "The little snack shop that was our favorite haunt has closed down."
       ],
       "rubricZh": [
-        "haunt 表示「常去的地方」，例如 my favorite haunt 等說法",
-        "說的是自己的經驗（例如 my）",
-        "時態配合內容（例如現在簡單式、過去式等）"
+        "用 haunt 表示「常去的地方」（例如 our old haunt、our favorite haunt 等）",
+        "「已經關門了」可寫，例如 has closed、has closed down 等"
       ]
     }
   ],
@@ -342,6 +343,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"After lunch.\"；改後：\"In the afternoon.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（haunt）原位換成翻譯題，沿用題 id b1-u29-l05-q17；目標字沿用 haunt",
+        "resolution": "改為 translate：promptZh「那家小吃店是我們以前常去的地方，現在已經關門了。」、hintWords [\"haunt\"]、referenceEn [\"Our old haunt, a small snack shop, has closed.\",\"The little snack shop that was our favorite haunt has closed down.\"]、rubricZh [\"用 haunt 表示「常去的地方」（例如 our old haunt、our favorite haunt 等）\",\"「已經關門了」可寫，例如 has closed、has closed down 等\"]（原 makeSentence：instructionZh「用 haunt 造一個句子，說說你最常去的地方。」、referenceEn [\"The library near my home is my favorite haunt.\",\"This park was my favorite haunt when I was a child.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

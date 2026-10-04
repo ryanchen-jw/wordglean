@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u36-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "unpredictable",
-      "instructionZh": "用 unpredictable 造一個句子，說說一件難以預測的事。",
+      "type": "translate",
+      "promptZh": "山上的天氣很難預測。",
+      "hintWords": [
+        "unpredictable"
+      ],
       "referenceEn": [
-        "I think the weather in my city is unpredictable.",
-        "My little brother's moods are unpredictable."
+        "The weather in the mountains is unpredictable.",
+        "Mountain weather is very unpredictable."
       ],
       "rubricZh": [
-        "unpredictable 表示「難以預測的」，例如 unpredictable weather 等說法",
-        "說的是自己的經驗或想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 unpredictable 表示「難以預測的」"
       ]
     }
   ],
@@ -330,6 +330,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The tickets were free.\"；改後：\"The fans played in the rain.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unpredictable）原位換成翻譯題，沿用題 id b1-u36-l06-q17；目標字沿用 unpredictable",
+        "resolution": "改為 translate：promptZh「山上的天氣很難預測。」、hintWords [\"unpredictable\"]、referenceEn [\"The weather in the mountains is unpredictable.\",\"Mountain weather is very unpredictable.\"]、rubricZh [\"用 unpredictable 表示「難以預測的」\"]（原 makeSentence：instructionZh「用 unpredictable 造一個句子，說說一件難以預測的事。」、referenceEn [\"I think the weather in my city is unpredictable.\",\"My little brother's moods are unpredictable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u15-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "bank account",
-      "instructionZh": "用 bank account 造一個句子，說說你怎麼使用銀行帳戶。",
+      "type": "translate",
+      "promptZh": "薪水會直接存進你的銀行帳戶。",
+      "hintWords": [
+        "bank account"
+      ],
       "referenceEn": [
-        "I put part of my pay into my bank account every month.",
-        "I use my bank account to pay bills online."
+        "Your pay will go directly into your bank account.",
+        "Your pay will be put straight into your bank account."
       ],
       "rubricZh": [
-        "bank account 表示「銀行帳戶」",
-        "可用 open／use a bank account、put money into… 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 bank account 表示「銀行帳戶」",
+        "「直接存進」可寫，例如 go directly into、be put straight into 等"
       ]
     }
   ],
@@ -356,6 +357,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"便士；一分錢\"；改後：\"一分錢；便士\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（bank account）原位換成翻譯題，沿用題 id b1-u15-l05-q16；目標字沿用 bank account",
+        "resolution": "改為 translate：promptZh「薪水會直接存進你的銀行帳戶。」、hintWords [\"bank account\"]、referenceEn [\"Your pay will go directly into your bank account.\",\"Your pay will be put straight into your bank account.\"]、rubricZh [\"用 bank account 表示「銀行帳戶」\",\"「直接存進」可寫，例如 go directly into、be put straight into 等\"]（原 makeSentence：instructionZh「用 bank account 造一個句子，說說你怎麼使用銀行帳戶。」、referenceEn [\"I put part of my pay into my bank account every month.\",\"I use my bank account to pay bills online.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

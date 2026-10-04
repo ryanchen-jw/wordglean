@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u15-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "merchant",
-      "instructionZh": "用 merchant 造一個句子，描述一位商人做的生意。",
+      "type": "translate",
+      "promptZh": "這條街以前住了很多有錢的商人。",
+      "hintWords": [
+        "merchant"
+      ],
       "referenceEn": [
-        "My uncle is a rice merchant, so he knows many farmers.",
-        "My grandfather was a tea merchant."
+        "Many rich merchants used to live on this street.",
+        "This street used to be home to many rich merchants."
       ],
       "rubricZh": [
-        "merchant 表示「商人」，多指做買賣、批發的人",
-        "寫出這位商人買賣的是什麼",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 merchant 表示「商人」（例如 rich merchants）",
+        "「以前」可寫，例如 used to、once 等"
       ]
     }
   ],
@@ -369,6 +370,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The shop made a mistake with it.\"；改後：\"The shop broke the printer.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（merchant）原位換成翻譯題，沿用題 id b1-u15-l01-q17；目標字沿用 merchant",
+        "resolution": "改為 translate：promptZh「這條街以前住了很多有錢的商人。」、hintWords [\"merchant\"]、referenceEn [\"Many rich merchants used to live on this street.\",\"This street used to be home to many rich merchants.\"]、rubricZh [\"用 merchant 表示「商人」（例如 rich merchants）\",\"「以前」可寫，例如 used to、once 等\"]（原 makeSentence：instructionZh「用 merchant 造一個句子，描述一位商人做的生意。」、referenceEn [\"My uncle is a rice merchant, so he knows many farmers.\",\"My grandfather was a tea merchant.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

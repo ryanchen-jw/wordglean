@@ -206,17 +206,18 @@
     },
     {
       "id": "b1-u19-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "customs",
-      "instructionZh": "用 customs 造一個句子，說說你過海關的經驗或看法。",
+      "type": "translate",
+      "promptZh": "這些水果不能帶過海關。",
+      "hintWords": [
+        "customs"
+      ],
       "referenceEn": [
-        "It took us an hour to go through customs.",
-        "I had to open my suitcase at customs."
+        "You can't take this fruit through customs.",
+        "This fruit is not allowed through customs."
       ],
       "rubricZh": [
-        "customs 表示「海關」，例如 go through customs、at customs 等說法",
-        "說的是自己的經驗或看法（例如 I、we）",
-        "時態配合內容（例如說過去的經驗用過去式）"
+        "用 customs 表示「海關」（例如 through customs）",
+        "「不能帶」可寫，例如 can't take、is not allowed 等"
       ]
     }
   ],
@@ -302,6 +303,12 @@
         "message": "執行長補充規則（只看英文）自查修正：執行長補充規則（只看英文）自查修正：干擾項放進英文句子仍可成立，換成明顯不通的字：reservation→runway",
         "resolution": "改前：\"預訂\"；改後：\"跑道\"",
         "resolvedAt": "2026-10-02T22:16:29Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（customs）原位換成翻譯題，沿用題 id b1-u19-l01-q15；目標字沿用 customs",
+        "resolution": "改為 translate：promptZh「這些水果不能帶過海關。」、hintWords [\"customs\"]、referenceEn [\"You can't take this fruit through customs.\",\"This fruit is not allowed through customs.\"]、rubricZh [\"用 customs 表示「海關」（例如 through customs）\",\"「不能帶」可寫，例如 can't take、is not allowed 等\"]（原 makeSentence：instructionZh「用 customs 造一個句子，說說你過海關的經驗或看法。」、referenceEn [\"It took us an hour to go through customs.\",\"I had to open my suitcase at customs.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

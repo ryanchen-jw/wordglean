@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u04-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "unique",
-      "instructionZh": "用 unique 造一個句子，介紹一樣你覺得很獨特的東西或地方。",
+      "type": "translate",
+      "promptZh": "這座城市的建築風格很獨特。",
+      "hintWords": [
+        "unique"
+      ],
       "referenceEn": [
-        "My hometown has a unique night market.",
-        "I think this old cafe is unique."
+        "The buildings in this city have a unique style.",
+        "The style of the buildings in this city is unique."
       ],
       "rubricZh": [
-        "unique 表示「獨特的」，例如放在名詞前、be 動詞後等",
-        "unique 前面的冠詞用 a（例如 a unique taste）",
-        "句子要介紹一樣東西、一個地方等"
+        "用 unique 表示「獨特的」（例如 a unique style、is unique 等）",
+        "「建築風格」可寫，例如 the style of the buildings、the buildings have a … style 等"
       ]
     }
   ],
@@ -373,6 +374,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Anyone online.\"；改後：\"Anyone with an email.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unique）原位換成翻譯題，沿用題 id b1-u04-l07-q17；目標字沿用 unique",
+        "resolution": "改為 translate：promptZh「這座城市的建築風格很獨特。」、hintWords [\"unique\"]、referenceEn [\"The buildings in this city have a unique style.\",\"The style of the buildings in this city is unique.\"]、rubricZh [\"用 unique 表示「獨特的」（例如 a unique style、is unique 等）\",\"「建築風格」可寫，例如 the style of the buildings、the buildings have a … style 等\"]（原 makeSentence：instructionZh「用 unique 造一個句子，介紹一樣你覺得很獨特的東西或地方。」、referenceEn [\"My hometown has a unique night market.\",\"I think this old cafe is unique.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

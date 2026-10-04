@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u26-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "climate",
-      "instructionZh": "用 climate 造一個句子，說說你喜歡哪種氣候。",
+      "type": "translate",
+      "promptZh": "氣候變遷讓夏天變得越來越熱。",
+      "hintWords": [
+        "climate"
+      ],
       "referenceEn": [
-        "I like a cool, dry climate.",
-        "I don't like hot climates because I can't sleep well."
+        "Climate change is making summers hotter.",
+        "Because of climate change, summers are getting hotter and hotter."
       ],
       "rubricZh": [
-        "climate 表示「氣候」，例如 a warm climate 等說法",
-        "說的是自己的喜好（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 climate change 表示「氣候變遷」",
+        "「越來越熱」可寫，例如 hotter、hotter and hotter 等"
       ]
     }
   ],
@@ -366,6 +367,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"People riding bikes.\"；改後：\"People who like long trails.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（climate）原位換成翻譯題，沿用題 id b1-u26-l02-q17；目標字沿用 climate",
+        "resolution": "改為 translate：promptZh「氣候變遷讓夏天變得越來越熱。」、hintWords [\"climate\"]、referenceEn [\"Climate change is making summers hotter.\",\"Because of climate change, summers are getting hotter and hotter.\"]、rubricZh [\"用 climate change 表示「氣候變遷」\",\"「越來越熱」可寫，例如 hotter、hotter and hotter 等\"]（原 makeSentence：instructionZh「用 climate 造一個句子，說說你喜歡哪種氣候。」、referenceEn [\"I like a cool, dry climate.\",\"I don't like hot climates because I can't sleep well.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

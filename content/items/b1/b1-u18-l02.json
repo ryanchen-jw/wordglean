@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u18-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "transportation",
-      "instructionZh": "用 transportation 造一個句子，說說你平常使用的交通方式。",
+      "type": "translate",
+      "promptZh": "這家公司負責把水果運輸到其他國家。",
+      "hintWords": [
+        "transportation"
+      ],
       "referenceEn": [
-        "My main form of transportation is the bus.",
-        "I use public transportation to get to work every day."
+        "This company handles the transportation of fruit to other countries.",
+        "This company is in charge of the transportation of fruit to other countries."
       ],
       "rubricZh": [
-        "transportation 表示「交通、運輸」，是不可數名詞",
-        "可用 public transportation、form of transportation 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 transportation 表示「運輸」（例如 the transportation of fruit）",
+        "「負責」可寫，例如 handles、is in charge of、is responsible for 等"
       ]
     }
   ],
@@ -339,6 +340,12 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：railway→departure",
         "resolution": "改前：\"距離\"；改後：\"車輛\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（transportation）原位換成翻譯題，沿用題 id b1-u18-l02-q17；目標字沿用 transportation",
+        "resolution": "改為 translate：promptZh「這家公司負責把水果運輸到其他國家。」、hintWords [\"transportation\"]、referenceEn [\"This company handles the transportation of fruit to other countries.\",\"This company is in charge of the transportation of fruit to other countries.\"]、rubricZh [\"用 transportation 表示「運輸」（例如 the transportation of fruit）\",\"「負責」可寫，例如 handles、is in charge of、is responsible for 等\"]（原 makeSentence：instructionZh「用 transportation 造一個句子，說說你平常使用的交通方式。」、referenceEn [\"My main form of transportation is the bus.\",\"I use public transportation to get to work every day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

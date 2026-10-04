@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u29-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "civilization",
-      "instructionZh": "用 civilization 造一個句子，說說你感興趣的古代文明。",
+      "type": "translate",
+      "promptZh": "這座博物館展示了古代文明的生活用品。",
+      "hintWords": [
+        "civilization"
+      ],
       "referenceEn": [
-        "I want to learn more about old civilizations.",
-        "I think ancient civilizations were amazing."
+        "This museum shows everyday objects from ancient civilizations.",
+        "The museum displays things people used in ancient civilizations."
       ],
       "rubricZh": [
-        "civilization 表示「文明」，例如 ancient civilizations 等說法",
-        "說的是自己的興趣或看法（例如 I）",
-        "時態配合內容（例如現在簡單式、過去式等）"
+        "用 civilization 表示「文明」（單複數都可以，例如 ancient civilizations）",
+        "「展示」可寫，例如 shows、displays 等"
       ]
     }
   ],
@@ -404,6 +405,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Names and dates.\"；改後：\"Dates and names.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（civilization）原位換成翻譯題，沿用題 id b1-u29-l04-q17；目標字沿用 civilization",
+        "resolution": "改為 translate：promptZh「這座博物館展示了古代文明的生活用品。」、hintWords [\"civilization\"]、referenceEn [\"This museum shows everyday objects from ancient civilizations.\",\"The museum displays things people used in ancient civilizations.\"]、rubricZh [\"用 civilization 表示「文明」（單複數都可以，例如 ancient civilizations）\",\"「展示」可寫，例如 shows、displays 等\"]（原 makeSentence：instructionZh「用 civilization 造一個句子，說說你感興趣的古代文明。」、referenceEn [\"I want to learn more about old civilizations.\",\"I think ancient civilizations were amazing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -215,17 +215,18 @@
     },
     {
       "id": "b1-u23-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "snowboard",
-      "instructionZh": "用 snowboard 造一個句子，說說你玩滑雪板的經驗或想法。",
+      "type": "translate",
+      "promptZh": "她租了一塊滑雪板，在山上玩了一整天。",
+      "hintWords": [
+        "snowboard"
+      ],
       "referenceEn": [
-        "I want to learn to snowboard one day.",
-        "I tried to snowboard last winter, but I fell a lot."
+        "She rented a snowboard and spent the whole day on the mountain.",
+        "She rented a snowboard and used it all day on the mountain."
       ],
       "rubricZh": [
-        "snowboard 可當動詞「玩滑雪板」或名詞「滑雪板」，例如 learn to snowboard 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如過去式、現在式等）"
+        "用 snowboard 表示「滑雪板」（例如 rented a snowboard）",
+        "「玩了一整天」可寫，例如 spent the whole day、all day 等"
       ]
     }
   ],
@@ -359,6 +360,12 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：Gymnastics→Aerobics",
         "resolution": "改前：\"體操\"；改後：\"有氧運動\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（snowboard）原位換成翻譯題，沿用題 id b1-u23-l04-q16；目標字沿用 snowboard",
+        "resolution": "改為 translate：promptZh「她租了一塊滑雪板，在山上玩了一整天。」、hintWords [\"snowboard\"]、referenceEn [\"She rented a snowboard and spent the whole day on the mountain.\",\"She rented a snowboard and used it all day on the mountain.\"]、rubricZh [\"用 snowboard 表示「滑雪板」（例如 rented a snowboard）\",\"「玩了一整天」可寫，例如 spent the whole day、all day 等\"]（原 makeSentence：instructionZh「用 snowboard 造一個句子，說說你玩滑雪板的經驗或想法。」、referenceEn [\"I want to learn to snowboard one day.\",\"I tried to snowboard last winter, but I fell a lot.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

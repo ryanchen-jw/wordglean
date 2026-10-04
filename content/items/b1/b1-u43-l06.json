@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u43-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "meditate",
-      "instructionZh": "用 meditate 造一個句子，說說你或家人讓心情平靜的方法。",
+      "type": "translate",
+      "promptZh": "我姊姊每天早上冥想十分鐘。",
+      "hintWords": [
+        "meditate"
+      ],
       "referenceEn": [
-        "My dad meditates when he feels stressed.",
-        "I sometimes meditate before I go to sleep."
+        "My sister meditates for ten minutes every morning.",
+        "Every morning, my older sister meditates for ten minutes."
       ],
       "rubricZh": [
-        "meditate 表示「冥想」，例如 meditate every morning 等說法",
-        "說的是自己或家人的習慣（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 meditate 表示「冥想」"
       ]
     }
   ],
@@ -450,6 +450,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：只看英文唯一可解複核：a humorous note 也說得通，題幹補上 She was in a hurry；正解釋義改「匆忙的」",
         "resolution": "改前：\"草率的\"；改後：\"匆忙的\"",
         "resolvedAt": "2026-10-03T00:00:43Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（meditate）原位換成翻譯題，沿用題 id b1-u43-l06-q17；目標字沿用 meditate",
+        "resolution": "改為 translate：promptZh「我姊姊每天早上冥想十分鐘。」、hintWords [\"meditate\"]、referenceEn [\"My sister meditates for ten minutes every morning.\",\"Every morning, my older sister meditates for ten minutes.\"]、rubricZh [\"用 meditate 表示「冥想」\"]（原 makeSentence：instructionZh「用 meditate 造一個句子，說說你或家人讓心情平靜的方法。」、referenceEn [\"My dad meditates when he feels stressed.\",\"I sometimes meditate before I go to sleep.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

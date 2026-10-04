@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u34-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "overcome",
-      "instructionZh": "用 overcome 造一個句子，說說你克服過或想克服的困難。",
+      "type": "translate",
+      "promptZh": "我們克服了語言不通的問題，成了好朋友。",
+      "hintWords": [
+        "overcome"
+      ],
       "referenceEn": [
-        "I overcame my fear of speaking in public.",
-        "I want to overcome my fear of dogs."
+        "We overcame the language problem and became good friends.",
+        "We became good friends after we overcame the language problem."
       ],
       "rubricZh": [
-        "overcome 表示「克服」，例如 overcome a fear 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 overcome 表示「克服」（例如 overcame the language problem）"
       ]
     }
   ],
@@ -390,6 +390,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：跟讀「修復老教堂」與閱讀「修復舊船」同事件，改成一夜好眠恢復精力",
         "resolution": "改前：\"一夜好眠能恢復你的精力。\"；改後：\"一夜好眠能恢復你的體力。\"",
         "resolvedAt": "2026-10-02T23:31:26Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（overcome）原位換成翻譯題，沿用題 id b1-u34-l06-q17；目標字沿用 overcome",
+        "resolution": "改為 translate：promptZh「我們克服了語言不通的問題，成了好朋友。」、hintWords [\"overcome\"]、referenceEn [\"We overcame the language problem and became good friends.\",\"We became good friends after we overcame the language problem.\"]、rubricZh [\"用 overcome 表示「克服」（例如 overcame the language problem）\"]（原 makeSentence：instructionZh「用 overcome 造一個句子，說說你克服過或想克服的困難。」、referenceEn [\"I overcame my fear of speaking in public.\",\"I want to overcome my fear of dogs.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -234,16 +234,18 @@
     },
     {
       "id": "b1-u02-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "lifelong",
-      "instructionZh": "用 lifelong 造一個句子，說說你一輩子的興趣、朋友或目標。",
+      "type": "translate",
+      "promptZh": "她和她的鄰居是一輩子的好朋友。",
+      "hintWords": [
+        "lifelong"
+      ],
       "referenceEn": [
-        "Reading is my lifelong hobby.",
-        "I have a lifelong friend from my school days."
+        "She and her neighbor are lifelong friends.",
+        "She and her neighbor have been lifelong friends."
       ],
       "rubricZh": [
-        "lifelong 是形容詞「終身的、一輩子的」，放在名詞前（例如 a lifelong friend、my lifelong hobby）",
-        "說的是自己的興趣、朋友或目標（例如用 I、my）"
+        "用 lifelong 修飾名詞，表示「一輩子的」（例如 lifelong friends）",
+        "時態配合內容（例如 are、have been 等）"
       ]
     }
   ],
@@ -329,6 +331,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"At sunrise tomorrow.\"；改後：\"After dinner in town.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（lifelong）原位換成翻譯題，沿用題 id b1-u02-l06-q17；目標字沿用 lifelong",
+        "resolution": "改為 translate：promptZh「她和她的鄰居是一輩子的好朋友。」、hintWords [\"lifelong\"]、referenceEn [\"She and her neighbor are lifelong friends.\",\"She and her neighbor have been lifelong friends.\"]、rubricZh [\"用 lifelong 修飾名詞，表示「一輩子的」（例如 lifelong friends）\",\"時態配合內容（例如 are、have been 等）\"]（原 makeSentence：instructionZh「用 lifelong 造一個句子，說說你一輩子的興趣、朋友或目標。」、referenceEn [\"Reading is my lifelong hobby.\",\"I have a lifelong friend from my school days.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,16 +229,17 @@
     },
     {
       "id": "b1-u11-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "equipment",
-      "instructionZh": "用 equipment 造一個句子，說說你的工作、運動或興趣需要什麼設備。",
+      "type": "translate",
+      "promptZh": "這間健身房的器材都很新。",
+      "hintWords": [
+        "equipment"
+      ],
       "referenceEn": [
-        "I need a lot of equipment for camping.",
-        "My job requires special computer equipment."
+        "All the equipment in this gym is new.",
+        "The equipment in this gym is all new."
       ],
       "rubricZh": [
-        "equipment 是不可數名詞，不加 s，可用 a lot of、some 等",
-        "時態配合內容（多用現在簡單式）"
+        "用 equipment 表示「器材」（不可數，動詞用單數，例如 is new）"
       ]
     }
   ],
@@ -462,6 +463,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"By hand.\"；改後：\"Without the machine.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（equipment）原位換成翻譯題，沿用題 id b1-u11-l03-q17；目標字沿用 equipment",
+        "resolution": "改為 translate：promptZh「這間健身房的器材都很新。」、hintWords [\"equipment\"]、referenceEn [\"All the equipment in this gym is new.\",\"The equipment in this gym is all new.\"]、rubricZh [\"用 equipment 表示「器材」（不可數，動詞用單數，例如 is new）\"]（原 makeSentence：instructionZh「用 equipment 造一個句子，說說你的工作、運動或興趣需要什麼設備。」、referenceEn [\"I need a lot of equipment for camping.\",\"My job requires special computer equipment.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

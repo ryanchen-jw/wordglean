@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u06-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "principle",
-      "instructionZh": "用 principle 造一個句子，說說你做人或做事的一個原則。",
+      "type": "translate",
+      "promptZh": "這台機器的原理其實很簡單。",
+      "hintWords": [
+        "principle"
+      ],
       "referenceEn": [
-        "One of my principles is to always be on time.",
-        "I have a simple principle: never spend more than I earn."
+        "The principle behind this machine is actually very simple.",
+        "The principle of this machine is actually quite simple."
       ],
       "rubricZh": [
-        "principle 表示「原則」，可用 One of my principles is…、My principle is… 等",
-        "說的是自己的原則（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 principle 表示「原理」（例如 the principle of this machine、the principle behind it 等）",
+        "「其實」可寫，例如 actually、really 等"
       ]
     }
   ],
@@ -411,6 +412,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It was too simple.\"；改後：\"The plan was too simple.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（principle）原位換成翻譯題，沿用題 id b1-u06-l05-q17；目標字沿用 principle",
+        "resolution": "改為 translate：promptZh「這台機器的原理其實很簡單。」、hintWords [\"principle\"]、referenceEn [\"The principle behind this machine is actually very simple.\",\"The basic principle of this machine is really quite simple.\"]、rubricZh [\"用 principle 表示「原理」（例如 the principle of this machine、the principle behind it 等）\",\"「其實」可寫，例如 actually、really 等\"]（原 makeSentence：instructionZh「用 principle 造一個句子，說說你做人或做事的一個原則。」、referenceEn [\"One of my principles is to always be on time.\",\"I have a simple principle: never spend more than I earn.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 2 多了 basic、really quite 重複加強",
+        "resolution": "改為 referenceEn [\"The principle behind this machine is actually very simple.\",\"The principle of this machine is actually quite simple.\"]（原 referenceEn [\"The principle behind this machine is actually very simple.\",\"The basic principle of this machine is really quite simple.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

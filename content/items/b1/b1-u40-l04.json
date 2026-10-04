@@ -215,17 +215,17 @@
     },
     {
       "id": "b1-u40-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "mailbox",
-      "instructionZh": "用 mailbox 造一個句子，說說你的信箱裡收到過什麼。",
+      "type": "translate",
+      "promptZh": "郵差把信放進了錯誤的信箱。",
+      "hintWords": [
+        "mailbox"
+      ],
       "referenceEn": [
-        "I found a birthday card in my mailbox.",
-        "I once got a postcard from my aunt in my mailbox."
+        "The postman put the letter in the wrong mailbox.",
+        "The letter was put in the wrong mailbox by the postman."
       ],
       "rubricZh": [
-        "mailbox 表示「信箱」，例如 check the mailbox 等說法",
-        "說的是自己的經驗或習慣（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 mailbox 表示「信箱」"
       ]
     }
   ],
@@ -395,6 +395,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It gave away free gifts.\"；改後：\"Its staff bought new computers.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（mailbox）原位換成翻譯題，沿用題 id b1-u40-l04-q16；目標字沿用 mailbox",
+        "resolution": "改為 translate：promptZh「郵差把信放進了錯誤的信箱。」、hintWords [\"mailbox\"]、referenceEn [\"The postman put the letter in the wrong mailbox.\",\"The letter was put in the wrong mailbox by the postman.\"]、rubricZh [\"用 mailbox 表示「信箱」\"]（原 makeSentence：instructionZh「用 mailbox 造一個句子，說說你的信箱裡收到過什麼。」、referenceEn [\"I found a birthday card in my mailbox.\",\"I once got a postcard from my aunt in my mailbox.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

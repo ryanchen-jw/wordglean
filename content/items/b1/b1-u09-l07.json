@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u09-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "humor",
-      "instructionZh": "用 humor 造一個句子，說說你身邊誰很有幽默感。",
+      "type": "translate",
+      "promptZh": "這本書充滿了幽默感。",
+      "hintWords": [
+        "humor"
+      ],
       "referenceEn": [
-        "My father has a great sense of humor.",
-        "I like my teacher because of her humor."
+        "This book is full of humor.",
+        "This book is really full of humor."
       ],
       "rubricZh": [
-        "humor 表示「幽默」，例如 a sense of humor 等說法",
-        "可以寫你認識的任何人",
-        "時態配合內容（多用現在簡單式）"
+        "用 humor 表示「幽默」（例如 is full of humor）"
       ]
     }
   ],
@@ -339,6 +339,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The staff were rude.\"；改後：\"The staff did very little.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（humor）原位換成翻譯題，沿用題 id b1-u09-l07-q17；目標字沿用 humor",
+        "resolution": "改為 translate：promptZh「這本書充滿了幽默感。」、hintWords [\"humor\"]、referenceEn [\"This book is full of humor.\",\"This book is really full of humor.\"]、rubricZh [\"用 humor 表示「幽默」（例如 is full of humor）\"]（原 makeSentence：instructionZh「用 humor 造一個句子，說說你身邊誰很有幽默感。」、referenceEn [\"My father has a great sense of humor.\",\"I like my teacher because of her humor.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

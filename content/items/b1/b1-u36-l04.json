@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u36-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "persuade",
-      "instructionZh": "用 persuade 造一個句子，說說你曾說服某人做某件事的經驗。",
+      "type": "translate",
+      "promptZh": "銷售員說服我買了比較貴的那一台。",
+      "hintWords": [
+        "persuade"
+      ],
       "referenceEn": [
-        "I persuaded my friend to join the music club.",
-        "I once persuaded my mom to let me keep a cat."
+        "The salesman persuaded me to buy the more expensive one.",
+        "I was persuaded by the salesman to buy the more expensive one."
       ],
       "rubricZh": [
-        "persuade 表示「說服」，例如 persuade someone to… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 persuade＋人＋to＋原形動詞表示「說服」（寫 convinced me to 也正確）",
+        "「比較貴的那一台」可寫，例如 the more expensive one 等"
       ]
     }
   ],
@@ -396,6 +397,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The colors on the map.\"；改後：\"The colors of the jars.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（persuade）原位換成翻譯題，沿用題 id b1-u36-l04-q17；目標字沿用 persuade",
+        "resolution": "改為 translate：promptZh「銷售員說服我買了比較貴的那一台。」、hintWords [\"persuade\"]、referenceEn [\"The salesman persuaded me to buy the more expensive one.\",\"I was persuaded by the salesman to buy the more expensive one.\"]、rubricZh [\"用 persuade＋人＋to＋原形動詞表示「說服」（寫 convinced me to 也正確）\",\"「比較貴的那一台」可寫，例如 the more expensive one 等\"]（原 makeSentence：instructionZh「用 persuade 造一個句子，說說你曾說服某人做某件事的經驗。」、referenceEn [\"I persuaded my friend to join the music club.\",\"I once persuaded my mom to let me keep a cat.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

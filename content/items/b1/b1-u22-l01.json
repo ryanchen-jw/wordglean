@@ -244,17 +244,18 @@
     },
     {
       "id": "b1-u22-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "documentary",
-      "instructionZh": "用 documentary 造一個句子，說說你看過或想看的紀錄片。",
+      "type": "translate",
+      "promptZh": "這部紀錄片介紹海洋裡的動物。",
+      "hintWords": [
+        "documentary"
+      ],
       "referenceEn": [
-        "I watched a documentary about space last night.",
-        "I want to see a documentary about the ocean."
+        "This documentary shows animals that live in the ocean.",
+        "This documentary is about animals in the sea."
       ],
       "rubricZh": [
-        "documentary 表示「紀錄片」，例如 a documentary about… 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 documentary 表示「紀錄片」",
+        "「介紹」可寫，例如 shows、is about 等"
       ]
     }
   ],
@@ -406,6 +407,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"我妹妹很有藝術天分，每天都在畫畫。\"；改後：\"這座城市有豐富的藝術歷史。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（documentary）原位換成翻譯題，沿用題 id b1-u22-l01-q18；目標字沿用 documentary",
+        "resolution": "改為 translate：promptZh「這部紀錄片介紹海洋裡的動物。」、hintWords [\"documentary\"]、referenceEn [\"This documentary shows animals that live in the ocean.\",\"This documentary is about animals in the sea.\"]、rubricZh [\"用 documentary 表示「紀錄片」\",\"「介紹」可寫，例如 shows、is about 等\"]（原 makeSentence：instructionZh「用 documentary 造一個句子，說說你看過或想看的紀錄片。」、referenceEn [\"I watched a documentary about space last night.\",\"I want to see a documentary about the ocean.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

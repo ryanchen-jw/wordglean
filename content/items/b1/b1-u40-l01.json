@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u40-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "privacy",
-      "instructionZh": "用 privacy 造一個句子，說說你怎麼看隱私。",
+      "type": "translate",
+      "promptZh": "請尊重別人的隱私。",
+      "hintWords": [
+        "privacy"
+      ],
       "referenceEn": [
-        "I need some privacy when I study.",
-        "I keep my diary in a box for privacy."
+        "Please respect other people's privacy.",
+        "Please respect the privacy of others."
       ],
       "rubricZh": [
-        "privacy 表示「隱私」，例如 need some privacy 等說法",
-        "說的是自己的想法或習慣（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 privacy 表示「隱私」"
       ]
     }
   ],
@@ -486,6 +486,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The new bus lines.\"；改後：\"Where new buses will run.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（privacy）原位換成翻譯題，沿用題 id b1-u40-l01-q17；目標字沿用 privacy",
+        "resolution": "改為 translate：promptZh「請尊重別人的隱私。」、hintWords [\"privacy\"]、referenceEn [\"Please respect other people's privacy.\",\"Please respect the privacy of others.\"]、rubricZh [\"用 privacy 表示「隱私」\"]（原 makeSentence：instructionZh「用 privacy 造一個句子，說說你怎麼看隱私。」、referenceEn [\"I need some privacy when I study.\",\"I keep my diary in a box for privacy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

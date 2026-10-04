@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u13-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "spinach",
-      "instructionZh": "用 spinach 造一個句子，說說你喜不喜歡吃菠菜。",
+      "type": "translate",
+      "promptZh": "市場上的菠菜今天全賣完了。",
+      "hintWords": [
+        "spinach"
+      ],
       "referenceEn": [
-        "I really hate the taste of spinach.",
-        "I like spinach, so I often eat it with rice."
+        "The spinach at the market was all sold out today.",
+        "The market sold out of spinach today."
       ],
       "rubricZh": [
-        "spinach 表示「菠菜」，是不可數名詞",
-        "可說 like／eat spinach 等",
-        "時態配合內容（多用現在簡單式）"
+        "用 spinach 表示「菠菜」",
+        "「全賣完了」可寫，例如 was all sold out、sold out of 等"
       ]
     }
   ],
@@ -369,6 +370,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"A cabbage.\"；改後：\"One cabbage.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（spinach）原位換成翻譯題，沿用題 id b1-u13-l05-q17；目標字沿用 spinach",
+        "resolution": "改為 translate：promptZh「市場上的菠菜今天全賣完了。」、hintWords [\"spinach\"]、referenceEn [\"The spinach at the market was all sold out today.\",\"The market sold out of spinach today.\"]、rubricZh [\"用 spinach 表示「菠菜」\",\"「全賣完了」可寫，例如 was all sold out、sold out of 等\"]（原 makeSentence：instructionZh「用 spinach 造一個句子，說說你喜不喜歡吃菠菜。」、referenceEn [\"I really hate the taste of spinach.\",\"I like spinach, so I often eat it with rice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

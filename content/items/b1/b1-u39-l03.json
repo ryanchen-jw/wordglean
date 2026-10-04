@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u39-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "puppy",
-      "instructionZh": "用 puppy 造一個句子，說說你和小狗的經驗或願望。",
+      "type": "translate",
+      "promptZh": "這隻小狗還不到三個月大。",
+      "hintWords": [
+        "puppy"
+      ],
       "referenceEn": [
-        "I want to have a puppy someday.",
-        "I always play with my neighbor's puppy."
+        "This puppy is less than three months old.",
+        "The puppy is not even three months old."
       ],
       "rubricZh": [
-        "puppy 表示「小狗」，例如 a cute puppy 等說法",
-        "說的是自己的經驗或想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 puppy 表示「小狗」"
       ]
     }
   ],
@@ -384,6 +384,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Stay inside.\"；改後：\"Don't go outdoors.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（puppy）原位換成翻譯題，沿用題 id b1-u39-l03-q17；目標字沿用 puppy",
+        "resolution": "改為 translate：promptZh「這隻小狗還不到三個月大。」、hintWords [\"puppy\"]、referenceEn [\"This puppy is less than three months old.\",\"The puppy is not even three months old.\"]、rubricZh [\"用 puppy 表示「小狗」\"]（原 makeSentence：instructionZh「用 puppy 造一個句子，說說你和小狗的經驗或願望。」、referenceEn [\"I want to have a puppy someday.\",\"I always play with my neighbor's puppy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

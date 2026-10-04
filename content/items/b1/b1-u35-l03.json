@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u35-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "distant",
-      "instructionZh": "用 distant 造一個句子，說說一個你想去的遙遠地方。",
+      "type": "translate",
+      "promptZh": "我們聽得到遠處傳來的雷聲。",
+      "hintWords": [
+        "distant"
+      ],
       "referenceEn": [
-        "I want to visit a distant country someday.",
-        "I dream of traveling to distant islands."
+        "We can hear distant thunder.",
+        "We heard the sound of distant thunder."
       ],
       "rubricZh": [
-        "distant 表示「遙遠的」，例如 a distant country 等說法",
-        "說的是自己的想法（例如 I）",
-        "時態配合內容（例如說未來的計畫用 want to、will、be going to 等）"
+        "用 distant 表示「遠方的」（例如 distant thunder）",
+        "時態可用 can hear、could hear、heard 等"
       ]
     }
   ],
@@ -336,6 +337,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Twice a year.\"；改後：\"Once in spring and once in fall.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（distant）原位換成翻譯題，沿用題 id b1-u35-l03-q17；目標字沿用 distant",
+        "resolution": "改為 translate：promptZh「我們聽得到遠處傳來的雷聲。」、hintWords [\"distant\"]、referenceEn [\"We could hear distant thunder.\",\"We heard the sound of distant thunder.\"]、rubricZh [\"用 distant 表示「遠方的」（例如 distant thunder）\",\"時態可用 can hear、could hear、heard 等\"]（原 makeSentence：instructionZh「用 distant 造一個句子，說說一個你想去的遙遠地方。」、referenceEn [\"I want to visit a distant country someday.\",\"I dream of traveling to distant islands.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 中文「聽得到」偏現在，兩個參考答案都是過去式",
+        "resolution": "改為 referenceEn [\"We can hear distant thunder.\",\"We heard the sound of distant thunder.\"]（原 referenceEn [\"We could hear distant thunder.\",\"We heard the sound of distant thunder.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

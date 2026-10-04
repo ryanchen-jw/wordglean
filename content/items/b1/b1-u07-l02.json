@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u07-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "limit",
-      "instructionZh": "用 limit 造一個句子，說說你會限制自己做的某件事。",
+      "type": "translate",
+      "promptZh": "每位乘客的行李有重量限制。",
+      "hintWords": [
+        "limit"
+      ],
       "referenceEn": [
-        "I limit my phone time to one hour a day.",
-        "I try to limit my coffee to two cups a day."
+        "There is a weight limit for each passenger's bags.",
+        "Each passenger's bags have a weight limit."
       ],
       "rubricZh": [
-        "limit 當動詞「限制」，常用 limit A to B（例如 limit my phone time to one hour）",
-        "說的是自己的習慣（主詞用 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 limit 表示「限制」（例如 a weight limit）"
       ]
     }
   ],
@@ -465,6 +465,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"每個人都出了十美元，合買禮物送老師。\"；改後：\"隊上每個人都貢獻了好點子。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（limit）原位換成翻譯題，沿用題 id b1-u07-l02-q17；目標字沿用 limit",
+        "resolution": "改為 translate：promptZh「這條路的速限是每小時五十公里。」、hintWords [\"limit\"]、referenceEn [\"The speed limit on this road is fifty kilometers an hour.\",\"The speed limit on this road is fifty kilometers per hour.\"]、rubricZh [\"用 limit 表示「限制」（例如 the speed limit）\",\"「每小時五十公里」可寫，例如 fifty kilometers an hour、50 km per hour 等\"]（原 makeSentence：instructionZh「用 limit 造一個句子，說說你會限制自己做的某件事。」、referenceEn [\"I limit my phone time to one hour a day.\",\"I try to limit my coffee to two cups a day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u05-l08 單字卡 maximum「The maximum speed on this road is fifty.」情境、主詞、句型幾乎一樣",
+        "resolution": "改為 promptZh「每位乘客的行李有重量限制。」、referenceEn [\"There is a weight limit for each passenger's bags.\",\"Each passenger's bags have a weight limit.\"]、rubricZh [\"用 limit 表示「限制」（例如 a weight limit）\"]（原 promptZh「這條路的速限是每小時五十公里。」、referenceEn [\"The speed limit on this road is fifty kilometers an hour.\",\"The speed limit on this road is fifty kilometers per hour.\"]、rubricZh [\"用 limit 表示「限制」（例如 the speed limit）\",\"「每小時五十公里」可寫，例如 fifty kilometers an hour、50 km per hour 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u36-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "challenging",
-      "instructionZh": "用 challenging 造一個句子，說說一件對你來說有挑戰性的事。",
+      "type": "translate",
+      "promptZh": "照顧三個小孩對她來說很有挑戰性。",
+      "hintWords": [
+        "challenging"
+      ],
       "referenceEn": [
-        "Learning to swim was challenging for me.",
-        "I think math is the most challenging subject for me."
+        "Looking after three kids is challenging for her.",
+        "Taking care of three children is really challenging for her."
       ],
       "rubricZh": [
-        "challenging 表示「有挑戰性的」，例如 a challenging task 等說法",
-        "說的是自己的經驗或想法（例如 I、me）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 challenging 表示「有挑戰性的」",
+        "「照顧」可寫，例如 looking after、taking care of 等"
       ]
     }
   ],
@@ -354,6 +355,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：翻譯「據說這座橋一百年前建的」與聽選「據說古堡有三百年歷史」同為古蹟年代傳聞，改成據說明天會下雪",
         "resolution": "改前：\"時態配合內容（例如說過去的事用過去式等）\"；改後：\"時態配合內容（例如說未來的事用 will、be going to 等）\"",
         "resolvedAt": "2026-10-02T23:36:18Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（challenging）原位換成翻譯題，沿用題 id b1-u36-l05-q17；目標字沿用 challenging",
+        "resolution": "改為 translate：promptZh「照顧三個小孩對她來說很有挑戰性。」、hintWords [\"challenging\"]、referenceEn [\"Looking after three kids is challenging for her.\",\"Taking care of three children is really challenging for her.\"]、rubricZh [\"用 challenging 表示「有挑戰性的」\",\"「照顧」可寫，例如 looking after、taking care of 等\"]（原 makeSentence：instructionZh「用 challenging 造一個句子，說說一件對你來說有挑戰性的事。」、referenceEn [\"Learning to swim was challenging for me.\",\"I think math is the most challenging subject for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

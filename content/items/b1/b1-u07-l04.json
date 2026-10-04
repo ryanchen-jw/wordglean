@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u07-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "burden",
-      "instructionZh": "用 burden 造一個句子，說說一件讓你覺得是負擔的事。",
+      "type": "translate",
+      "promptZh": "高房租對年輕人來說是很大的負擔。",
+      "hintWords": [
+        "burden"
+      ],
       "referenceEn": [
-        "Paying the rent every month is a big burden for me.",
-        "I feel that too much homework is a burden."
+        "High rent is a heavy burden for young people.",
+        "High rents are a big burden for young people."
       ],
       "rubricZh": [
-        "burden 表示「負擔」，可用 a burden for／to＋人（例如 a burden for me）",
-        "說的是自己的感受（例如 I、me）",
-        "時態配合內容（例如 is、was）"
+        "用 burden 表示「負擔」（例如 a heavy burden、a big burden 等）",
+        "主詞與動詞單複數一致即可（例如 High rent is…、High rents are…）"
       ]
     }
   ],
@@ -451,6 +452,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It is very small.\"；改後：\"The winds are not strong.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（burden）原位換成翻譯題，沿用題 id b1-u07-l04-q17；目標字沿用 burden",
+        "resolution": "改為 translate：promptZh「高房租對年輕人來說是很大的負擔。」、hintWords [\"burden\"]、referenceEn [\"High rent is a heavy burden for young people.\",\"High rents are a big burden for young people.\"]、rubricZh [\"用 burden 表示「負擔」（例如 a heavy burden、a big burden 等）\",\"主詞與動詞單複數一致即可（例如 High rent is…、High rents are…）\"]（原 makeSentence：instructionZh「用 burden 造一個句子，說說一件讓你覺得是負擔的事。」、referenceEn [\"Paying the rent every month is a big burden for me.\",\"I feel that too much homework is a burden.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

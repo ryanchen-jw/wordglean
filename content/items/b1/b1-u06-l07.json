@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u06-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "estimate",
-      "instructionZh": "用 estimate 造一個句子，估計你每個月或每週在某件事上花多少錢或時間。",
+      "type": "translate",
+      "promptZh": "這只是一個大概的估計，實際的價格可能更高。",
+      "hintWords": [
+        "estimate"
+      ],
       "referenceEn": [
-        "I estimate that I spend about one hundred dollars on coffee every month.",
-        "I estimate that I read for five hours a week."
+        "This is only a rough estimate; the real price may be higher.",
+        "It is just a rough estimate. The real cost might be higher."
       ],
       "rubricZh": [
-        "estimate 表示「估計」，常接 that 子句（that 可省略）",
-        "數字前可加 about 表示大約",
-        "說的是自己的習慣（主詞用 I），時態配合內容（多用現在簡單式）"
+        "用 estimate（名詞）表示「估計」（例如 a rough estimate）",
+        "「實際的價格」可寫，例如 the real price、the real cost 等"
       ]
     }
   ],
@@ -315,6 +316,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"About fifty.\"；改後：\"Close to fifty.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（estimate）原位換成翻譯題，沿用題 id b1-u06-l07-q17；目標字沿用 estimate",
+        "resolution": "改為 translate：promptZh「這只是一個大概的估計，實際的價格可能更高。」、hintWords [\"estimate\"]、referenceEn [\"This is only a rough estimate; the real price may be higher.\",\"It is just a rough estimate. The real cost might be higher.\"]、rubricZh [\"用 estimate（名詞）表示「估計」（例如 a rough estimate）\",\"「實際的價格」可寫，例如 the real price、the real cost 等\"]（原 makeSentence：instructionZh「用 estimate 造一個句子，估計你每個月或每週在某件事上花多少錢或時間。」、referenceEn [\"I estimate that I spend about one hundred dollars on coffee every month.\",\"I estimate that I read for five hours a week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

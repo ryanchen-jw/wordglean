@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u18-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "exploration",
-      "instructionZh": "用 exploration 造一個句子，說說你對探險或太空探索的看法。",
+      "type": "translate",
+      "promptZh": "很多國家花大量的錢在太空探索上。",
+      "hintWords": [
+        "exploration"
+      ],
       "referenceEn": [
-        "I think space exploration is exciting.",
-        "The exploration of the deep sea interests me a lot."
+        "Many countries spend a lot of money on space exploration.",
+        "A lot of countries spend huge amounts of money on space exploration."
       ],
       "rubricZh": [
-        "exploration 表示「探索、探險」",
-        "可用 space exploration、the exploration of… 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 exploration 表示「探索」（例如 space exploration）",
+        "「花大量的錢」可寫，例如 spend a lot of money on、spend huge amounts of money on 等"
       ]
     }
   ],
@@ -397,6 +398,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The weather was bad.\"；改後：\"The boat was too small.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（exploration）原位換成翻譯題，沿用題 id b1-u18-l03-q17；目標字沿用 exploration",
+        "resolution": "改為 translate：promptZh「很多國家花大量的錢在太空探索上。」、hintWords [\"exploration\"]、referenceEn [\"Many countries spend a lot of money on space exploration.\",\"A lot of countries spend huge amounts of money on space exploration.\"]、rubricZh [\"用 exploration 表示「探索」（例如 space exploration）\",\"「花大量的錢」可寫，例如 spend a lot of money on、spend huge amounts of money on 等\"]（原 makeSentence：instructionZh「用 exploration 造一個句子，說說你對探險或太空探索的看法。」、referenceEn [\"I think space exploration is exciting.\",\"The exploration of the deep sea interests me a lot.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

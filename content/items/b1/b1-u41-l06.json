@@ -6,7 +6,9 @@
   "model": "claude-dev",
   "author": "claude-dev",
   "authoredAt": "2026-10-02T21:50:16Z",
-  "properNouns": [],
+  "properNouns": [
+    "Japanese"
+  ],
   "items": [
     {
       "id": "b1-u41-l06-q01",
@@ -228,17 +230,17 @@
     },
     {
       "id": "b1-u41-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "imitate",
-      "instructionZh": "用 imitate 造一個句子，說說你會模仿什麼。",
+      "type": "translate",
+      "promptZh": "這家店的設計仿效了日本的老房子。",
+      "hintWords": [
+        "imitate"
+      ],
       "referenceEn": [
-        "I can imitate the sound of a cat.",
-        "When I was little, I imitated my big sister."
+        "The design of this shop imitates old Japanese houses.",
+        "This shop's design imitates the style of old Japanese houses."
       ],
       "rubricZh": [
-        "imitate 表示「模仿」，例如 imitate a sound 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 imitate 表示「仿效」（例如 imitates old Japanese houses；寫 copies 也正確）"
       ]
     }
   ],
@@ -498,6 +500,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Some fresh milk.\"；改後：\"Butter from the shop.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（imitate）原位換成翻譯題，沿用題 id b1-u41-l06-q17；目標字沿用 imitate",
+        "resolution": "改為 translate：promptZh「這家店的設計仿效了日本的老房子。」、hintWords [\"imitate\"]、referenceEn [\"The design of this shop imitates old Japanese houses.\",\"This shop's design imitates the style of old Japanese houses.\"]、rubricZh [\"用 imitate 表示「仿效」（例如 imitates old Japanese houses；寫 copies 也正確）\"]（原 makeSentence：instructionZh「用 imitate 造一個句子，說說你會模仿什麼。」、referenceEn [\"I can imitate the sound of a cat.\",\"When I was little, I imitated my big sister.\"]）；properNouns 加 Japanese",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u05-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "height",
-      "instructionZh": "用 height 造一個句子，說說某個人或某棟建築的高度。",
+      "type": "translate",
+      "promptZh": "這兩棵樹的高度差不多。",
+      "hintWords": [
+        "height"
+      ],
       "referenceEn": [
-        "My brother is the same height as my father.",
-        "The height of my office building is about fifty meters."
+        "These two trees are about the same height.",
+        "The two trees are almost the same height."
       ],
       "rubricZh": [
-        "height 表示「高度、身高」，可用 the height of…、the same height as… 等",
-        "可以寫人、建築等",
-        "寫數字時加上單位（例如 fifty meters）"
+        "用 height 表示「高度」（例如 the same height；寫 are about as tall as each other 也正確）",
+        "「差不多」可寫，例如 about、almost、nearly 等"
       ]
     }
   ],
@@ -391,6 +392,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"請寫下你的身高和體重。\"；改後：\"這座塔高一百公尺。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（height）原位換成翻譯題，沿用題 id b1-u05-l05-q17；目標字沿用 height",
+        "resolution": "改為 translate：promptZh「這兩棵樹的高度差不多。」、hintWords [\"height\"]、referenceEn [\"These two trees are about the same height.\",\"The two trees are almost the same height.\"]、rubricZh [\"用 height 表示「高度」（例如 the same height；寫 are about as tall as each other 也正確）\",\"「差不多」可寫，例如 about、almost、nearly 等\"]（原 makeSentence：instructionZh「用 height 造一個句子，說說某個人或某棟建築的高度。」、referenceEn [\"My brother is the same height as my father.\",\"The height of my office building is about fifty meters.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

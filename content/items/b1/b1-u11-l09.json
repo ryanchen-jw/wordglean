@@ -231,16 +231,18 @@
     },
     {
       "id": "b1-u11-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "untidy",
-      "instructionZh": "用 untidy 造一個句子，說說你家裡或辦公室哪裡很亂。",
+      "type": "translate",
+      "promptZh": "他的書桌總是很凌亂，上面堆滿了紙。",
+      "hintWords": [
+        "untidy"
+      ],
       "referenceEn": [
-        "My desk at work is very untidy.",
-        "The kitchen gets untidy when my brother cooks."
+        "His desk is always untidy and covered with papers.",
+        "His desk is always untidy, with papers all over it."
       ],
       "rubricZh": [
-        "untidy 表示「凌亂的」，可放在 be、get 等動詞後或名詞前",
-        "時態配合內容（多用現在簡單式）"
+        "用 untidy 表示「凌亂的」（寫 messy 也正確）",
+        "「堆滿了紙」可寫，例如 covered with papers、with papers all over it 等"
       ]
     }
   ],
@@ -368,6 +370,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"我們把米放在一個大鐵桶裡。\"；改後：\"把空罐放進回收桶。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（untidy）原位換成翻譯題，沿用題 id b1-u11-l09-q17；目標字沿用 untidy",
+        "resolution": "改為 translate：promptZh「他的字寫得很潦草，我看不懂。」、hintWords [\"untidy\"]、referenceEn [\"His handwriting is so untidy that I can't read it.\",\"His handwriting is very untidy, and I can't read it.\"]、rubricZh [\"用 untidy 表示「凌亂的；潦草的」（例如 untidy handwriting；寫 messy 也正確）\",\"「看不懂」可寫，例如 can't read it 等\"]（原 makeSentence：instructionZh「用 untidy 造一個句子，說說你家裡或辦公室哪裡很亂。」、referenceEn [\"My desk at work is very untidy.\",\"The kitchen gets untidy when my brother cooks.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u42-l04 單字卡 messy「His handwriting is so messy…」只差一兩字；審查建議的「房間凌亂」又與同課聽選 My room is untidy 同情境，改用書桌",
+        "resolution": "改為 promptZh「他的書桌總是很凌亂，上面堆滿了紙。」、referenceEn [\"His desk is always untidy and covered with papers.\",\"His desk is always untidy, with papers all over it.\"]、rubricZh [\"用 untidy 表示「凌亂的」（寫 messy 也正確）\",\"「堆滿了紙」可寫，例如 covered with papers、with papers all over it 等\"]（原 promptZh「他的字寫得很潦草，我看不懂。」、referenceEn [\"His handwriting is so untidy that I can't read it.\",\"His handwriting is very untidy, and I can't read it.\"]、rubricZh [\"用 untidy 表示「凌亂的；潦草的」（例如 untidy handwriting；寫 messy 也正確）\",\"「看不懂」可寫，例如 can't read it 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

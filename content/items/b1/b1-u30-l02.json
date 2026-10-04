@@ -6,7 +6,10 @@
   "model": "claude-dev",
   "author": "claude-dev",
   "authoredAt": "2026-10-02T20:17:17Z",
-  "properNouns": [],
+  "properNouns": [
+    "Japan",
+    "Japanese"
+  ],
   "items": [
     {
       "id": "b1-u30-l02-q01",
@@ -228,17 +231,17 @@
     },
     {
       "id": "b1-u30-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "fluent",
-      "instructionZh": "用 fluent 造一個句子，說說你想說得流利的語言或你認識的人。",
+      "type": "translate",
+      "promptZh": "他在日本住了五年，日文說得很流利。",
+      "hintWords": [
+        "fluent"
+      ],
       "referenceEn": [
-        "I hope to become fluent in a new language.",
-        "My mother is fluent in two languages."
+        "He lived in Japan for five years, so he is fluent in Japanese.",
+        "After five years in Japan, he speaks fluent Japanese."
       ],
       "rubricZh": [
-        "fluent 表示「流利的」，例如 be fluent in… 等說法",
-        "說的是自己的想法或認識的人（例如 I、my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 fluent 表示「流利的」（例如 is fluent in…、speaks fluent… 等）"
       ]
     }
   ],
@@ -366,6 +369,12 @@
         "message": "執行長裁示：聽選換句話說補正：重新盲答回饋：音檔沒說今天星期幾，「明天中午」可能成立，改成音檔明確否定的時間",
         "resolution": "改前：\"Tomorrow at noon.\"；改後：\"Thursday at noon.\"",
         "resolvedAt": "2026-10-03T02:42:03Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fluent）原位換成翻譯題，沿用題 id b1-u30-l02-q17；目標字沿用 fluent",
+        "resolution": "改為 translate：promptZh「他在日本住了五年，日文說得很流利。」、hintWords [\"fluent\"]、referenceEn [\"He lived in Japan for five years, so he is fluent in Japanese.\",\"After five years in Japan, he speaks fluent Japanese.\"]、rubricZh [\"用 fluent 表示「流利的」（例如 is fluent in…、speaks fluent… 等）\"]（原 makeSentence：instructionZh「用 fluent 造一個句子，說說你想說得流利的語言或你認識的人。」、referenceEn [\"I hope to become fluent in a new language.\",\"My mother is fluent in two languages.\"]）；properNouns 加 Japan、Japanese",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

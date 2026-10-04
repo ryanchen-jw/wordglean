@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u28-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "duty",
-      "instructionZh": "用 duty 造一個句子，說說你在家的責任。",
+      "type": "translate",
+      "promptZh": "今天晚上哪一位警察值班？",
+      "hintWords": [
+        "duty"
+      ],
       "referenceEn": [
-        "It is my duty to wash the dishes after dinner.",
-        "Taking out the trash is my duty at home."
+        "Which police officer is on duty tonight?",
+        "Who is the police officer on duty tonight?"
       ],
       "rubricZh": [
-        "duty 表示「責任、職責」，例如 it is my duty to… 等說法",
-        "說的是自己的事（例如 my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 on duty 表示「值班」"
       ]
     }
   ],
@@ -464,6 +464,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"Go home early.\"；改後：\"Call the police at once.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（duty）原位換成翻譯題，沿用題 id b1-u28-l05-q17；目標字沿用 duty",
+        "resolution": "改為 translate：promptZh「今天晚上哪一位警察值班？」、hintWords [\"duty\"]、referenceEn [\"Which police officer is on duty tonight?\",\"Who is the police officer on duty tonight?\"]、rubricZh [\"用 on duty 表示「值班」\"]（原 makeSentence：instructionZh「用 duty 造一個句子，說說你在家的責任。」、referenceEn [\"It is my duty to wash the dishes after dinner.\",\"Taking out the trash is my duty at home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

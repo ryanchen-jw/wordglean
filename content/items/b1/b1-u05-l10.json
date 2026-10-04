@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u05-l10-q16",
-      "type": "makeSentence",
-      "targetWord": "mile",
-      "instructionZh": "用 mile 造一個句子，說說某個地方離你家多遠，或你走、跑了多遠。",
+      "type": "translate",
+      "promptZh": "他每天早上跑五英里。",
+      "hintWords": [
+        "mile"
+      ],
       "referenceEn": [
-        "My office is about five miles from my home.",
-        "I ran three miles in the park this morning."
+        "He runs five miles every morning.",
+        "Every morning, he runs five miles."
       ],
       "rubricZh": [
-        "mile 表示「英里」，數字大於一要用複數 miles",
-        "可用 from 說明距離的起點（例如 five miles from my home）",
-        "說的是自己的生活（例如 I、my）"
+        "用 miles 表示距離「英里」（例如 five miles）",
+        "「每天早上」可寫，例如 every morning、each morning 等"
       ]
     }
   ],
@@ -290,6 +291,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Twenty miles.\"；改後：\"Ten miles.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（mile）原位換成翻譯題，沿用題 id b1-u05-l10-q16；目標字沿用 mile",
+        "resolution": "改為 translate：promptZh「他每天早上跑五英里。」、hintWords [\"mile\"]、referenceEn [\"He runs five miles every morning.\",\"Every morning, he runs five miles.\"]、rubricZh [\"用 miles 表示距離「英里」（例如 five miles）\",\"「每天早上」可寫，例如 every morning、each morning 等\"]（原 makeSentence：instructionZh「用 mile 造一個句子，說說某個地方離你家多遠，或你走、跑了多遠。」、referenceEn [\"My office is about five miles from my home.\",\"I ran three miles in the park this morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u10-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "bracelet",
-      "instructionZh": "用 bracelet 造一個句子，說說你或你家人戴的手環。",
+      "type": "translate",
+      "promptZh": "這條手環是我在夜市買的。",
+      "hintWords": [
+        "bracelet"
+      ],
       "referenceEn": [
-        "My sister always wears a silver bracelet.",
-        "I got a bracelet from my best friend."
+        "I bought this bracelet at a night market.",
+        "I got this bracelet at the night market."
       ],
       "rubricZh": [
-        "bracelet 表示「手環、手鐲」",
-        "「戴」可寫 wear 等",
-        "時態配合內容（例如 wears、got）"
+        "用 bracelet 表示「手環」",
+        "「買」可寫，例如 bought、got 等"
       ]
     }
   ],
@@ -373,6 +374,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A black suit.\"；改後：\"A blue shirt.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bracelet）原位換成翻譯題，沿用題 id b1-u10-l03-q17；目標字沿用 bracelet",
+        "resolution": "改為 translate：promptZh「這條手環是我在夜市買的。」、hintWords [\"bracelet\"]、referenceEn [\"I bought this bracelet at a night market.\",\"I got this bracelet at the night market.\"]、rubricZh [\"用 bracelet 表示「手環」\",\"「買」可寫，例如 bought、got 等\"]（原 makeSentence：instructionZh「用 bracelet 造一個句子，說說你或你家人戴的手環。」、referenceEn [\"My sister always wears a silver bracelet.\",\"I got a bracelet from my best friend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

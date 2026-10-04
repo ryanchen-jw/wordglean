@@ -7,7 +7,8 @@
   "author": "claude-dev",
   "authoredAt": "2026-10-02T18:58:22Z",
   "properNouns": [
-    "Ken"
+    "Ken",
+    "English"
   ],
   "items": [
     {
@@ -230,17 +231,18 @@
     },
     {
       "id": "b1-u25-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "translate",
-      "instructionZh": "用 translate 造一個句子，說說你翻譯過或想翻譯的東西。",
+      "type": "translate",
+      "promptZh": "你可以幫我把這封信翻成英文嗎？",
+      "hintWords": [
+        "translate"
+      ],
       "referenceEn": [
-        "I once translated a song for my friend.",
-        "I want to translate my favorite book one day."
+        "Can you help me translate this letter into English?",
+        "Could you translate this letter into English for me?"
       ],
       "rubricZh": [
-        "translate 表示「翻譯」，例如 translate a song 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 translate … into 表示「翻譯成」（例如 translate this letter into English）",
+        "請求可寫，例如 Can you…、Could you… 等"
       ]
     }
   ],
@@ -356,6 +358,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A list of new phrases.\"；改後：\"The rest of the composition.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（translate）原位換成翻譯題，沿用題 id b1-u25-l06-q17；目標字沿用 translate",
+        "resolution": "改為 translate：promptZh「你可以幫我把這封信翻成英文嗎？」、hintWords [\"translate\"]、referenceEn [\"Can you help me translate this letter into English?\",\"Could you translate this letter into English for me?\"]、rubricZh [\"用 translate … into 表示「翻譯成」（例如 translate this letter into English）\",\"請求可寫，例如 Can you…、Could you… 等\"]（原 makeSentence：instructionZh「用 translate 造一個句子，說說你翻譯過或想翻譯的東西。」、referenceEn [\"I once translated a song for my friend.\",\"I want to translate my favorite book one day.\"]）；properNouns 加 English",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

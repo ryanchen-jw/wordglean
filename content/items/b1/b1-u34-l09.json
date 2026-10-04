@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u34-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "rid",
-      "instructionZh": "用 get rid of 造一個句子，說說你想丟掉或改掉的東西。",
+      "type": "translate",
+      "promptZh": "我們搬家前把舊家具都處理掉了。",
+      "hintWords": [
+        "rid"
+      ],
       "referenceEn": [
-        "I want to get rid of my old clothes.",
-        "I got rid of my habit of eating too much candy."
+        "We got rid of all our old furniture before we moved.",
+        "Before moving, we got rid of all the old furniture."
       ],
       "rubricZh": [
-        "rid 表示「擺脫、除去」，例如 get rid of… 等說法",
-        "說的是自己的經驗或想法（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 get rid of 表示「處理掉；丟掉」（例如 got rid of the old furniture）"
       ]
     }
   ],
@@ -531,6 +531,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Call the front desk.\"；改後：\"Use the elevator today.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rid）原位換成翻譯題，沿用題 id b1-u34-l09-q17；目標字沿用 rid",
+        "resolution": "改為 translate：promptZh「我們搬家前把舊家具都處理掉了。」、hintWords [\"rid\"]、referenceEn [\"We got rid of all our old furniture before we moved.\",\"Before moving, we got rid of all the old furniture.\"]、rubricZh [\"用 get rid of 表示「處理掉；丟掉」（例如 got rid of the old furniture）\"]（原 makeSentence：instructionZh「用 get rid of 造一個句子，說說你想丟掉或改掉的東西。」、referenceEn [\"I want to get rid of my old clothes.\",\"I got rid of my habit of eating too much candy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

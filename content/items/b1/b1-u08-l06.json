@@ -233,17 +233,18 @@
     },
     {
       "id": "b1-u08-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "teamwork",
-      "instructionZh": "用 teamwork 造一個句子，說說團隊合作在你的工作、學校或運動中的重要性。",
+      "type": "translate",
+      "promptZh": "這個工作需要很多團隊合作。",
+      "hintWords": [
+        "teamwork"
+      ],
       "referenceEn": [
-        "Teamwork is very important in my job.",
-        "Our class won the contest because of good teamwork."
+        "This job requires a lot of teamwork.",
+        "This job needs a lot of teamwork."
       ],
       "rubricZh": [
-        "teamwork 是不可數名詞，不加 a，也不加 s",
-        "可用 good teamwork、because of teamwork 等說法",
-        "說的是自己的經驗（例如 my job、our class）"
+        "用 teamwork 表示「團隊合作」（不可數，例如 a lot of teamwork）",
+        "「需要」可寫，例如 requires、needs 等"
       ]
     }
   ],
@@ -377,6 +378,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"傢伙（口語）；老兄\"；改後：\"老兄；傢伙（口語）\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（teamwork）原位換成翻譯題，沿用題 id b1-u08-l06-q17；目標字沿用 teamwork",
+        "resolution": "改為 translate：promptZh「這個工作需要很多團隊合作。」、hintWords [\"teamwork\"]、referenceEn [\"This job requires a lot of teamwork.\",\"This job needs a lot of teamwork.\"]、rubricZh [\"用 teamwork 表示「團隊合作」（不可數，例如 a lot of teamwork）\",\"「需要」可寫，例如 requires、needs 等\"]（原 makeSentence：instructionZh「用 teamwork 造一個句子，說說團隊合作在你的工作、學校或運動中的重要性。」、referenceEn [\"Teamwork is very important in my job.\",\"Our class won the contest because of good teamwork.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

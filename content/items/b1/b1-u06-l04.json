@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u06-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "option",
-      "instructionZh": "用 option 造一個句子，說說你上班或上學有哪些交通選擇。",
+      "type": "translate",
+      "promptZh": "我們還有其他選擇嗎？",
+      "hintWords": [
+        "option"
+      ],
       "referenceEn": [
-        "I have two options: I can take the train or ride my bike.",
-        "Taking the bus is the cheapest option for me."
+        "Do we have any other options?",
+        "Are there any other options?"
       ],
       "rubricZh": [
-        "option 表示「選擇、選項」，是可數名詞，兩個以上用 options",
-        "可用 the best option、the cheapest option 等說法",
-        "說的是自己的情況（例如 I、me）"
+        "用 option 的複數表示「選擇」（例如 other options；寫 choices 也正確）"
       ]
     }
   ],
@@ -369,6 +369,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Not enough chairs.\"；改後：\"Too few seats.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（option）原位換成翻譯題，沿用題 id b1-u06-l04-q17；目標字沿用 option",
+        "resolution": "改為 translate：promptZh「這家餐廳有很多素食的選擇。」、hintWords [\"option\"]、referenceEn [\"This restaurant has many vegetarian options.\",\"There are a lot of vegetarian options at this restaurant.\"]、rubricZh [\"用 option 的複數表示「選擇」（例如 many vegetarian options）\",\"「素食的」可寫，例如 vegetarian、meat-free 等\"]（原 makeSentence：instructionZh「用 option 造一個句子，說說你上班或上學有哪些交通選擇。」、referenceEn [\"I have two options: I can take the train or ride my bike.\",\"Taking the bus is the cheapest option for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u13-l02 跟讀「The restaurant has a vegetarian menu with many choices.」意思幾乎相同",
+        "resolution": "改為 promptZh「我們還有其他選擇嗎？」、referenceEn [\"Do we have any other options?\",\"Are there any other options?\"]、rubricZh [\"用 option 的複數表示「選擇」（例如 other options；寫 choices 也正確）\"]（原 promptZh「這家餐廳有很多素食的選擇。」、referenceEn [\"This restaurant has many vegetarian options.\",\"There are a lot of vegetarian options at this restaurant.\"]、rubricZh [\"用 option 的複數表示「選擇」（例如 many vegetarian options）\",\"「素食的」可寫，例如 vegetarian、meat-free 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

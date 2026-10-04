@@ -230,33 +230,33 @@
     {
       "id": "b1-u08-l01-q17",
       "type": "translate",
-      "promptZh": "我們想恭喜你們結婚。",
+      "promptZh": "老師恭喜每位學生順利畢業。",
       "hintWords": [
         "congratulate"
       ],
       "referenceEn": [
-        "We want to congratulate you on your marriage.",
-        "We would like to congratulate you on getting married."
+        "The teacher congratulated every student on graduating.",
+        "The teacher congratulated all the students on their graduation."
       ],
       "rubricZh": [
-        "congratulate＋人＋on＋名詞或動名詞，on 不可少（例如 congratulate you on your marriage）",
-        "「想」可寫 want to、would like to 等",
-        "「結婚」可寫 your marriage、getting married 等"
+        "用 congratulate＋人＋on 表示「恭喜某人某事」（例如 congratulated … on graduating）",
+        "時態可用 congratulated、congratulates 等"
       ]
     },
     {
       "id": "b1-u08-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "relationship",
-      "instructionZh": "用 relationship 造一個句子，說說你和某位家人或朋友的關係。",
+      "type": "translate",
+      "promptZh": "他和他的房東關係不太好。",
+      "hintWords": [
+        "relationship"
+      ],
       "referenceEn": [
-        "I have a good relationship with my sister.",
-        "My relationship with my father is very close."
+        "He doesn't have a good relationship with his landlord.",
+        "His relationship with his landlord is not very good."
       ],
       "rubricZh": [
-        "relationship 表示「關係」，例如 relationship with＋人、A and B have a … relationship 等說法",
-        "可用 good、close 等形容",
-        "說的是自己（例如 I、my）"
+        "用 relationship 表示「關係」（例如 a good relationship with…、his relationship with… 等）",
+        "「不太好」可寫，例如 not very good、not good 等"
       ]
     }
   ],
@@ -390,6 +390,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"If they clean every week.\"；改後：\"If they clean the place weekly.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（relationship）原位換成翻譯題，沿用題 id b1-u08-l01-q18；目標字沿用 relationship",
+        "resolution": "改為 translate：promptZh「他和他的房東關係不太好。」、hintWords [\"relationship\"]、referenceEn [\"He doesn't have a good relationship with his landlord.\",\"His relationship with his landlord is not very good.\"]、rubricZh [\"用 relationship 表示「關係」（例如 a good relationship with…、his relationship with… 等）\",\"「不太好」可寫，例如 not very good、not good 等\"]（原 makeSentence：instructionZh「用 relationship 造一個句子，說說你和某位家人或朋友的關係。」、referenceEn [\"I have a good relationship with my sister.\",\"My relationship with my father is very close.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u08-l06-q16 雷同（兩題都是「結婚」（get married）），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「老師恭喜每位學生順利畢業。」、referenceEn [\"The teacher congratulated every student on graduating.\",\"The teacher congratulated all the students on their graduation.\"]、rubricZh [\"用 congratulate＋人＋on 表示「恭喜某人某事」（例如 congratulated … on graduating）\",\"時態可用 congratulated、congratulates 等\"]（原 promptZh「我們想恭喜你們結婚。」、referenceEn [\"We want to congratulate you on your marriage.\",\"We would like to congratulate you on getting married.\"]、rubricZh [\"congratulate＋人＋on＋名詞或動名詞，on 不可少（例如 congratulate you on your marriage）\",\"「想」可寫 want to、would like to 等\",\"「結婚」可寫 your marriage、getting married 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

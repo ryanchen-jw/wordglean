@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u20-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "blind",
-      "instructionZh": "用 blind 造一個句子，說說你知道的、和盲人有關的一件事。",
+      "type": "translate",
+      "promptZh": "那隻導盲犬幫助失明的主人過馬路。",
+      "hintWords": [
+        "blind"
+      ],
       "referenceEn": [
-        "My neighbor is blind, and she teaches music at a school.",
-        "I once helped a blind man cross the street."
+        "The guide dog helps its blind owner cross the street.",
+        "The guide dog helped its blind owner cross the road."
       ],
       "rubricZh": [
-        "blind 表示「失明的」，例如 be blind、a blind man 等說法",
-        "寫你知道或經歷過的事",
-        "時態配合內容（例如現在簡單式、過去式等）"
+        "用 blind 表示「失明的」（例如 its blind owner）",
+        "「導盲犬」可寫，例如 guide dog 等；時態可用 helps、helped 等"
       ]
     }
   ],
@@ -333,6 +334,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"遺傳的；基因的\"；改後：\"基因的；遺傳的\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（blind）原位換成翻譯題，沿用題 id b1-u20-l04-q17；目標字沿用 blind",
+        "resolution": "改為 translate：promptZh「那隻導盲犬幫助失明的主人過馬路。」、hintWords [\"blind\"]、referenceEn [\"The guide dog helps its blind owner cross the street.\",\"The guide dog helped its blind owner cross the road.\"]、rubricZh [\"用 blind 表示「失明的」（例如 its blind owner）\",\"「導盲犬」可寫，例如 guide dog 等；時態可用 helps、helped 等\"]（原 makeSentence：instructionZh「用 blind 造一個句子，說說你知道的、和盲人有關的一件事。」、referenceEn [\"My neighbor is blind, and she teaches music at a school.\",\"I once helped a blind man cross the street.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

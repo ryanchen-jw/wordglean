@@ -233,18 +233,18 @@
     },
     {
       "id": "b1-u02-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "sometimes",
-      "instructionZh": "用 sometimes 造一個句子，說說一件你有時候會做的事。",
+      "type": "translate",
+      "promptZh": "我哥哥有時候會忘記帶鑰匙。",
+      "hintWords": [
+        "sometimes"
+      ],
       "referenceEn": [
-        "I sometimes cook dinner for my family.",
-        "Sometimes I read in bed until midnight."
+        "My brother sometimes forgets his keys.",
+        "Sometimes my brother forgets to bring his keys."
       ],
       "rubricZh": [
-        "sometimes 表示「有時候」",
-        "可放在一般動詞前、be 動詞後或句首（例如 I sometimes cook、Sometimes I go…）",
-        "說習慣多用現在簡單式，其他合理時態也接受",
-        "主詞是自己（I）"
+        "用 sometimes 表示「有時候」（例如 sometimes forgets、Sometimes my brother… 等，位置不限）",
+        "「忘記帶鑰匙」可寫，例如 forgets his keys、forgets to bring his keys 等"
       ]
     }
   ],
@@ -372,6 +372,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"終於；最後\"；改後：\"最後；終於\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（sometimes）原位換成翻譯題，沿用題 id b1-u02-l02-q17；目標字沿用 sometimes",
+        "resolution": "改為 translate：promptZh「我哥哥有時候會忘記帶鑰匙。」、hintWords [\"sometimes\"]、referenceEn [\"My brother sometimes forgets his keys.\",\"Sometimes my brother forgets to bring his keys.\"]、rubricZh [\"用 sometimes 表示「有時候」（例如 sometimes forgets、Sometimes my brother… 等，位置不限）\",\"「忘記帶鑰匙」可寫，例如 forgets his keys、forgets to bring his keys 等\"]（原 makeSentence：instructionZh「用 sometimes 造一個句子，說說一件你有時候會做的事。」、referenceEn [\"I sometimes cook dinner for my family.\",\"Sometimes I read in bed until midnight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

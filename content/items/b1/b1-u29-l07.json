@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u29-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "social networking",
-      "instructionZh": "用 social networking 造一個句子，說說你怎麼使用社群網路。",
+      "type": "translate",
+      "promptZh": "很多學生每天花好幾個小時上社群網站。",
+      "hintWords": [
+        "social networking"
+      ],
       "referenceEn": [
-        "I use social networking to keep in touch with old friends.",
-        "I don't spend much time on social networking."
+        "Many students spend hours on social networking sites every day.",
+        "A lot of students spend several hours a day on social networking sites."
       ],
       "rubricZh": [
-        "social networking 表示「社群網路、網路社交」，是不可數名詞，例如 use social networking 等說法",
-        "說的是自己的習慣（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 social networking 表示「社群網路」（例如 social networking sites）",
+        "「好幾個小時」可寫，例如 hours、several hours 等"
       ]
     }
   ],
@@ -542,6 +543,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"Your student card.\"；改後：\"Nothing; phones are given.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（social networking）原位換成翻譯題，沿用題 id b1-u29-l07-q17；目標字沿用 social networking",
+        "resolution": "改為 translate：promptZh「我奶奶最近開始學用社群網站。」、hintWords [\"social networking\"]、referenceEn [\"My grandma recently started using social networking sites.\",\"My grandmother has just started to use social networking websites.\"]、rubricZh [\"用 social networking 表示「社群網路」（例如 social networking sites）\",\"時態可用 started、has started 等\"]（原 makeSentence：instructionZh「用 social networking 造一個句子，說說你怎麼使用社群網路。」、referenceEn [\"I use social networking to keep in touch with old friends.\",\"I don't spend much time on social networking.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「奶奶開始學用社群網站」接近 §11.19（把學新科技和年長者綁在一起），換主詞與情境",
+        "resolution": "改為 promptZh「很多學生每天花好幾個小時上社群網站。」、referenceEn [\"Many students spend hours on social networking sites every day.\",\"A lot of students spend several hours a day on social networking sites.\"]、rubricZh [\"用 social networking 表示「社群網路」（例如 social networking sites）\",\"「好幾個小時」可寫，例如 hours、several hours 等\"]（原 promptZh「我奶奶最近開始學用社群網站。」、referenceEn [\"My grandma recently started using social networking sites.\",\"My grandmother has just started to use social networking websites.\"]、rubricZh [\"用 social networking 表示「社群網路」（例如 social networking sites）\",\"時態可用 started、has started 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

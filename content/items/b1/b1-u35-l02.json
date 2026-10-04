@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "normally",
-      "instructionZh": "用 normally 造一個句子，說說你週末通常會做什麼。",
+      "type": "translate",
+      "promptZh": "我平常走路上班，但今天搭了計程車。",
+      "hintWords": [
+        "normally"
+      ],
       "referenceEn": [
-        "I normally visit my grandparents on Sundays.",
-        "On weekends, I normally sleep until nine."
+        "I normally walk to work, but today I took a taxi.",
+        "Normally I walk to work, but I took a taxi today."
       ],
       "rubricZh": [
-        "normally 表示「通常」，例如 I normally… 等說法",
-        "說的是自己的習慣（例如 I）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 normally 表示「平常」（位置不限，例如 I normally…、Normally I… 等）"
       ]
     }
   ],
@@ -318,6 +318,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"At four, for a special event.\"；改後：\"Earlier, at four.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（normally）原位換成翻譯題，沿用題 id b1-u35-l02-q17；目標字沿用 normally",
+        "resolution": "改為 translate：promptZh「我平常七點起床，但今天起晚了。」、hintWords [\"normally\"]、referenceEn [\"I normally get up at seven, but today I got up late.\",\"Normally I get up at seven, but I woke up late today.\"]、rubricZh [\"用 normally 表示「平常」（位置不限，例如 I normally…、Normally I… 等）\",\"「起晚了」可寫，例如 got up late、woke up late、overslept 等\"]（原 makeSentence：instructionZh「用 normally 造一個句子，說說你週末通常會做什麼。」、referenceEn [\"I normally visit my grandparents on Sundays.\",\"On weekends, I normally sleep until nine.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 前半句與 u04-l06 單字卡 generally「I generally get up at seven.」只換副詞",
+        "resolution": "改為 promptZh「我平常走路上班，但今天搭了計程車。」、referenceEn [\"I normally walk to work, but today I took a taxi.\",\"Normally I walk to work, but I took a taxi today.\"]、rubricZh [\"用 normally 表示「平常」（位置不限，例如 I normally…、Normally I… 等）\"]（原 promptZh「我平常七點起床，但今天起晚了。」、referenceEn [\"I normally get up at seven, but today I got up late.\",\"Normally I get up at seven, but I woke up late today.\"]、rubricZh [\"用 normally 表示「平常」（位置不限，例如 I normally…、Normally I… 等）\",\"「起晚了」可寫，例如 got up late、woke up late、overslept 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

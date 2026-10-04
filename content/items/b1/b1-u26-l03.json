@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u26-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "summit",
-      "instructionZh": "用 summit 造一個句子，說說你爬過或想爬的山頂。",
+      "type": "translate",
+      "promptZh": "從山頂可以看到整座城市。",
+      "hintWords": [
+        "summit"
+      ],
       "referenceEn": [
-        "I reached the summit of a mountain last summer.",
-        "I hope to stand on the summit of a high mountain one day."
+        "You can see the whole city from the summit.",
+        "From the summit, you can see the entire city."
       ],
       "rubricZh": [
-        "summit 表示「山頂、頂峰」，例如 reach the summit 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 summit 表示「山頂」"
       ]
     }
   ],
@@ -306,6 +306,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The café closes then.\"；改後：\"The summit closes at three.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（summit）原位換成翻譯題，沿用題 id b1-u26-l03-q17；目標字沿用 summit",
+        "resolution": "改為 translate：promptZh「從山頂可以看到整座城市。」、hintWords [\"summit\"]、referenceEn [\"You can see the whole city from the summit.\",\"From the summit, you can see the entire city.\"]、rubricZh [\"用 summit 表示「山頂」\"]（原 makeSentence：instructionZh「用 summit 造一個句子，說說你爬過或想爬的山頂。」、referenceEn [\"I reached the summit of a mountain last summer.\",\"I hope to stand on the summit of a high mountain one day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u08-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "household",
-      "instructionZh": "用 household 造一個句子，說說你家裡的一件事（例如家裡有幾個人、誰做家事）。",
+      "type": "translate",
+      "promptZh": "這個社區大部分的家庭都養寵物。",
+      "hintWords": [
+        "household"
+      ],
       "referenceEn": [
-        "There are four people in my household.",
-        "In my household, my father does the cooking."
+        "Most households in this neighborhood have pets.",
+        "Most of the households in this neighborhood keep pets."
       ],
       "rubricZh": [
-        "household 表示「一戶人家、家庭」",
-        "可用 in my household、my household has… 等",
-        "說的是自己家（例如 my household）"
+        "用 household 的複數表示「家庭；住戶」（例如 most households）",
+        "「養寵物」可寫，例如 have pets、keep pets 等"
       ]
     }
   ],
@@ -361,6 +362,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A train station and a big hotel.\"；改後：\"A bakery and a train station.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（household）原位換成翻譯題，沿用題 id b1-u08-l02-q17；目標字沿用 household",
+        "resolution": "改為 translate：promptZh「這個社區大部分的家庭都養寵物。」、hintWords [\"household\"]、referenceEn [\"Most households in this neighborhood have pets.\",\"Most of the households in this neighborhood keep pets.\"]、rubricZh [\"用 household 的複數表示「家庭；住戶」（例如 most households）\",\"「養寵物」可寫，例如 have pets、keep pets 等\"]（原 makeSentence：instructionZh「用 household 造一個句子，說說你家裡的一件事（例如家裡有幾個人、誰做家事）。」、referenceEn [\"There are four people in my household.\",\"In my household, my father does the cooking.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

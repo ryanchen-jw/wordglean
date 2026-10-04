@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u34-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "interaction",
-      "instructionZh": "用 interaction 造一個句子，說說你和別人互動的經驗或看法。",
+      "type": "translate",
+      "promptZh": "這個遊戲鼓勵玩家之間的互動。",
+      "hintWords": [
+        "interaction"
+      ],
       "referenceEn": [
-        "I enjoy the interaction with customers at my part-time job.",
-        "I like interaction with people from other countries."
+        "This game encourages interaction between players.",
+        "The game encourages more interaction among players."
       ],
       "rubricZh": [
-        "interaction 表示「互動、交流」，例如 interaction with people 等說法",
-        "說的是自己的經驗或喜好（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 interaction 表示「互動」（例如 interaction between players）"
       ]
     }
   ],
@@ -390,6 +390,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Wait near the lift.\"；改後：\"Leave the bags at the front desk.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（interaction）原位換成翻譯題，沿用題 id b1-u34-l02-q17；目標字沿用 interaction",
+        "resolution": "改為 translate：promptZh「這個遊戲鼓勵玩家之間的互動。」、hintWords [\"interaction\"]、referenceEn [\"This game encourages interaction between players.\",\"The game encourages more interaction among players.\"]、rubricZh [\"用 interaction 表示「互動」（例如 interaction between players）\"]（原 makeSentence：instructionZh「用 interaction 造一個句子，說說你和別人互動的經驗或看法。」、referenceEn [\"I enjoy the interaction with customers at my part-time job.\",\"I like interaction with people from other countries.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

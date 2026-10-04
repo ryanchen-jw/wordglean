@@ -242,17 +242,18 @@
     },
     {
       "id": "b1-u04-l03-q18",
-      "type": "makeSentence",
-      "targetWord": "thorough",
-      "instructionZh": "用 thorough 造一個句子，說說你做某件事時很徹底、很仔細。",
+      "type": "translate",
+      "promptZh": "這份報告寫得很詳盡、很清楚。",
+      "hintWords": [
+        "thorough"
+      ],
       "referenceEn": [
-        "I always give my room a thorough cleaning on Sundays.",
-        "I am very thorough when I check my work."
+        "This report is very thorough and clear.",
+        "The report is thorough and very clear."
       ],
       "rubricZh": [
-        "thorough 是形容詞「徹底的、仔細的」，可放在名詞前或 be 動詞後（例如 a thorough cleaning、I am thorough）",
-        "說的是自己的做事方式（主詞用 I）",
-        "說習慣多用現在簡單式，其他合理時態也接受"
+        "用 thorough 表示「詳盡的」（例如 is very thorough；寫 detailed 也正確）",
+        "「寫得很…」可寫，例如 is very thorough、is written very clearly 等"
       ]
     }
   ],
@@ -368,6 +369,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A train that he must catch soon.\"；改後：\"The office is closing now.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（thorough）原位換成翻譯題，沿用題 id b1-u04-l03-q18；目標字沿用 thorough",
+        "resolution": "改為 translate：promptZh「這份報告寫得很詳盡、很清楚。」、hintWords [\"thorough\"]、referenceEn [\"This report is very thorough and clear.\",\"The report is thorough and very clear.\"]、rubricZh [\"用 thorough 表示「詳盡的」（例如 is very thorough；寫 detailed 也正確）\",\"「寫得很…」可寫，例如 is very thorough、is written very clearly 等\"]（原 makeSentence：instructionZh「用 thorough 造一個句子，說說你做某件事時很徹底、很仔細。」、referenceEn [\"I always give my room a thorough cleaning on Sundays.\",\"I am very thorough when I check my work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

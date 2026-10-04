@@ -216,33 +216,32 @@
     {
       "id": "b1-u13-l06-q16",
       "type": "translate",
-      "promptZh": "我不太能吃辣的食物。",
+      "promptZh": "這碗湯辣到讓我一直喝水。",
       "hintWords": [
         "spicy"
       ],
       "referenceEn": [
-        "I can't really eat spicy food.",
-        "I'm not very good at eating spicy food."
+        "This soup is so spicy that I keep drinking water.",
+        "The soup is so spicy that I have to keep drinking water."
       ],
       "rubricZh": [
-        "spicy 表示「辣的」",
-        "「不太能」可寫 can't really、not very good at 等",
-        "時態配合內容（多用現在簡單式）"
+        "用 spicy 表示「辣的」（例如 so spicy that…）",
+        "「一直喝水」可寫，例如 keep drinking water 等"
       ]
     },
     {
       "id": "b1-u13-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "juicy",
-      "instructionZh": "用 juicy 造一個句子，形容一種多汁的水果或食物。",
+      "type": "translate",
+      "promptZh": "這家餐廳的漢堡又大又多汁。",
+      "hintWords": [
+        "juicy"
+      ],
       "referenceEn": [
-        "I always buy juicy grapes at the market.",
-        "My grandmother grows juicy tomatoes in her garden."
+        "The hamburgers at this restaurant are big and juicy.",
+        "This restaurant's hamburgers are big and juicy."
       ],
       "rubricZh": [
-        "juicy 表示「多汁的」，例如放在名詞前、be 動詞後等",
-        "寫出是哪一種水果、食物等",
-        "時態配合內容（多用現在簡單式）"
+        "用 juicy 表示「多汁的」（例如 big and juicy）"
       ]
     }
   ],
@@ -388,6 +387,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Only water.\"；改後：\"Tea only, no juice.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（juicy）原位換成翻譯題，沿用題 id b1-u13-l06-q17；目標字沿用 juicy",
+        "resolution": "改為 translate：promptZh「這家餐廳的漢堡又大又多汁。」、hintWords [\"juicy\"]、referenceEn [\"The hamburgers at this restaurant are big and juicy.\",\"This restaurant's hamburgers are big and juicy.\"]、rubricZh [\"用 juicy 表示「多汁的」（例如 big and juicy）\"]（原 makeSentence：instructionZh「用 juicy 造一個句子，形容一種多汁的水果或食物。」、referenceEn [\"I always buy juicy grapes at the market.\",\"My grandmother grows juicy tomatoes in her garden.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u13-l03-q16、b1-u13-l07-q16 雷同（三題都是「吃某種食物」（eat food、really likes eating）），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「這碗湯辣到讓我一直喝水。」、referenceEn [\"This soup is so spicy that I keep drinking water.\",\"The soup is so spicy that I have to keep drinking water.\"]、rubricZh [\"用 spicy 表示「辣的」（例如 so spicy that…）\",\"「一直喝水」可寫，例如 keep drinking water 等\"]（原 promptZh「我不太能吃辣的食物。」、referenceEn [\"I can't really eat spicy food.\",\"I'm not very good at eating spicy food.\"]、rubricZh [\"spicy 表示「辣的」\",\"「不太能」可寫 can't really、not very good at 等\",\"時態配合內容（多用現在簡單式）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

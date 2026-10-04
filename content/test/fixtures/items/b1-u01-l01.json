@@ -243,17 +243,18 @@
     },
     {
       "id": "b1-u01-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "whether",
-      "instructionZh": "用 whether 造一個句子，說說你還沒決定的一件事。",
+      "type": "translate",
+      "promptZh": "她剛才問我是否需要幫忙。",
+      "hintWords": [
+        "whether"
+      ],
       "referenceEn": [
-        "I have not decided whether to take the job.",
-        "She is not sure whether she should call him."
+        "She just asked me whether I needed help.",
+        "She asked me whether I needed any help just now."
       ],
       "rubricZh": [
-        "whether 引導名詞子句，表示「是否」",
-        "可用 whether to＋原形動詞",
-        "句意表達尚未決定的事"
+        "用 whether 表示「是否」（例如 asked me whether…；寫 if 也正確）",
+        "「需要幫忙」可寫，例如 needed help、needed any help 等；時態配合「剛才」（例如 asked、has just asked 等）"
       ]
     }
   ]

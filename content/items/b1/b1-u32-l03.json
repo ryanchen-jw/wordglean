@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u32-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "noticeboard",
-      "instructionZh": "用 noticeboard 造一個句子，說說你在公告欄上看過的東西。",
+      "type": "translate",
+      "promptZh": "考試成績會貼在公告欄上。",
+      "hintWords": [
+        "noticeboard"
+      ],
       "referenceEn": [
-        "I saw an ad for a free concert on the noticeboard.",
-        "There is a poster about a lost cat on our school noticeboard."
+        "The exam results will be put up on the noticeboard.",
+        "The test results will be posted on the noticeboard."
       ],
       "rubricZh": [
-        "noticeboard 表示「公告欄」，例如 on the noticeboard 等說法",
-        "說的是自己的經驗（例如 I、our）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 noticeboard 表示「公告欄」（寫 notice board、bulletin board 也正確）",
+        "「貼」可寫，例如 put up、posted 等"
       ]
     }
   ],
@@ -372,6 +373,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Write your name on the noticeboard.\"；改後：\"Add your name to the noticeboard.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（noticeboard）原位換成翻譯題，沿用題 id b1-u32-l03-q17；目標字沿用 noticeboard",
+        "resolution": "改為 translate：promptZh「考試成績會貼在公告欄上。」、hintWords [\"noticeboard\"]、referenceEn [\"The exam results will be put up on the noticeboard.\",\"The test results will be posted on the noticeboard.\"]、rubricZh [\"用 noticeboard 表示「公告欄」（寫 notice board、bulletin board 也正確）\",\"「貼」可寫，例如 put up、posted 等\"]（原 makeSentence：instructionZh「用 noticeboard 造一個句子，說說你在公告欄上看過的東西。」、referenceEn [\"I saw an ad for a free concert on the noticeboard.\",\"There is a poster about a lost cat on our school noticeboard.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

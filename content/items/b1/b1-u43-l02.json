@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u43-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "cherish",
-      "instructionZh": "用 cherish 造一個句子，說說你最珍惜的東西或回憶。",
+      "type": "translate",
+      "promptZh": "我珍惜每一次和家人吃晚餐的機會。",
+      "hintWords": [
+        "cherish"
+      ],
       "referenceEn": [
-        "I cherish the photos of my family trips.",
-        "I will always cherish my time with my grandpa."
+        "I cherish every chance to have dinner with my family.",
+        "I cherish every dinner I have with my family."
       ],
       "rubricZh": [
-        "cherish 表示「珍惜」，例如 cherish memories 等說法",
-        "說的是自己的經驗或想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式或 will、be going to 等）"
+        "用 cherish 表示「珍惜」"
       ]
     }
   ],
@@ -336,6 +336,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The computer was broken.\"；改後：\"The brother asked to use the computer.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（cherish）原位換成翻譯題，沿用題 id b1-u43-l02-q17；目標字沿用 cherish",
+        "resolution": "改為 translate：promptZh「我珍惜每一次和家人吃晚餐的機會。」、hintWords [\"cherish\"]、referenceEn [\"I cherish every chance to have dinner with my family.\",\"I cherish every dinner I have with my family.\"]、rubricZh [\"用 cherish 表示「珍惜」\"]（原 makeSentence：instructionZh「用 cherish 造一個句子，說說你最珍惜的東西或回憶。」、referenceEn [\"I cherish the photos of my family trips.\",\"I will always cherish my time with my grandpa.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

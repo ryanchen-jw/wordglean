@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u02-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "chronological",
-      "instructionZh": "用 chronological 造一個句子，說說你會按時間順序整理哪些東西。",
+      "type": "translate",
+      "promptZh": "這間博物館的照片是按照時間順序排列的。",
+      "hintWords": [
+        "chronological"
+      ],
       "referenceEn": [
-        "I keep my photos in chronological order.",
-        "I put my old emails in chronological order."
+        "The photos in this museum are arranged in chronological order.",
+        "This museum shows its photos in chronological order."
       ],
       "rubricZh": [
-        "chronological 例如 in chronological order「按時間順序」等說法",
-        "說的是自己整理的東西（主詞用 I）",
-        "說習慣多用現在簡單式（例如 keep、put），其他合理時態也接受"
+        "用 chronological 表示「按時間順序的」（例如 in chronological order）",
+        "「排列」可寫，例如 are arranged、are shown、are put 等"
       ]
     }
   ],
@@ -339,6 +340,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"請把冰箱裡過期的牛奶丟掉。\"；改後：\"這張地圖過時了，很多路都變了。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（chronological）原位換成翻譯題，沿用題 id b1-u02-l07-q17；目標字沿用 chronological",
+        "resolution": "改為 translate：promptZh「這間博物館的照片是按照時間順序排列的。」、hintWords [\"chronological\"]、referenceEn [\"The photos in this museum are arranged in chronological order.\",\"This museum shows its photos in chronological order.\"]、rubricZh [\"用 chronological 表示「按時間順序的」（例如 in chronological order）\",\"「排列」可寫，例如 are arranged、are shown、are put 等\"]（原 makeSentence：instructionZh「用 chronological 造一個句子，說說你會按時間順序整理哪些東西。」、referenceEn [\"I keep my photos in chronological order.\",\"I put my old emails in chronological order.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

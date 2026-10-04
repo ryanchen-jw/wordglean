@@ -232,17 +232,18 @@
     },
     {
       "id": "b1-u06-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "convince",
-      "instructionZh": "用 convince 造一個句子，說說你曾經說服某人做某件事。",
+      "type": "translate",
+      "promptZh": "我們沒辦法說服她留下來。",
+      "hintWords": [
+        "convince"
+      ],
       "referenceEn": [
-        "I convinced my brother to try Japanese food.",
-        "I finally convinced my mother to buy a new phone."
+        "We couldn't convince her to stay.",
+        "We were not able to convince her to stay."
       ],
       "rubricZh": [
-        "convince＋人＋to＋原形動詞，表示「說服某人做某事」",
-        "過去的經驗可用過去式或現在完成式（例如 convinced）",
-        "主詞是自己（I）"
+        "用 convince＋人＋to＋原形動詞表示「說服某人做某事」（寫 persuade 也正確）",
+        "「沒辦法」可寫，例如 couldn't、weren't able to 等"
       ]
     }
   ],
@@ -358,6 +359,12 @@
         "message": "執行長最終複審修正：執行長裁示（片語選項長度比例）：每個選項須介於其他選項平均長度的 0.5～2 倍",
         "resolution": "改前：\"Online.\"；改後：\"Online at home.\"",
         "resolvedAt": "2026-10-02T18:25:36Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（convince）原位換成翻譯題，沿用題 id b1-u06-l08-q17；目標字沿用 convince",
+        "resolution": "改為 translate：promptZh「我們沒辦法說服她留下來。」、hintWords [\"convince\"]、referenceEn [\"We couldn't convince her to stay.\",\"We were not able to convince her to stay.\"]、rubricZh [\"用 convince＋人＋to＋原形動詞表示「說服某人做某事」（寫 persuade 也正確）\",\"「沒辦法」可寫，例如 couldn't、weren't able to 等\"]（原 makeSentence：instructionZh「用 convince 造一個句子，說說你曾經說服某人做某件事。」、referenceEn [\"I convinced my brother to try Japanese food.\",\"I finally convinced my mother to buy a new phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

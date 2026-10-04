@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u34-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "preparation",
-      "instructionZh": "用 preparation 造一個句子，說說你為某件事做的準備。",
+      "type": "translate",
+      "promptZh": "這場會議需要很多準備。",
+      "hintWords": [
+        "preparation"
+      ],
       "referenceEn": [
-        "I spent a week in preparation for the test.",
-        "My preparation for the trip took two days."
+        "This meeting needs a lot of preparation.",
+        "A lot of preparation is needed for this meeting."
       ],
       "rubricZh": [
-        "preparation 表示「準備」，例如 preparation for… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 preparation 表示「準備」（例如 a lot of preparation）"
       ]
     }
   ],
@@ -348,6 +348,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Install the air conditioning.\"；改後：\"Put in a new cooling system.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（preparation）原位換成翻譯題，沿用題 id b1-u34-l05-q17；目標字沿用 preparation",
+        "resolution": "改為 translate：promptZh「這場會議需要很多準備。」、hintWords [\"preparation\"]、referenceEn [\"This meeting needs a lot of preparation.\",\"A lot of preparation is needed for this meeting.\"]、rubricZh [\"用 preparation 表示「準備」（例如 a lot of preparation）\"]（原 makeSentence：instructionZh「用 preparation 造一個句子，說說你為某件事做的準備。」、referenceEn [\"I spent a week in preparation for the test.\",\"My preparation for the trip took two days.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

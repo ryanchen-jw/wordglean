@@ -232,17 +232,18 @@
     },
     {
       "id": "b1-u09-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "courage",
-      "instructionZh": "用 courage 造一個句子，說說一件你覺得需要勇氣的事。",
+      "type": "translate",
+      "promptZh": "她終於鼓起勇氣向老闆要求加薪。",
+      "hintWords": [
+        "courage"
+      ],
       "referenceEn": [
-        "It took courage for me to speak in front of my class.",
-        "I need courage to try new things."
+        "She finally found the courage to ask her boss for more pay.",
+        "She finally found the courage to ask her boss to pay her more."
       ],
       "rubricZh": [
-        "courage 是不可數名詞「勇氣」",
-        "可用 It takes courage to…、have the courage to… 等說法（例如 It took courage for me to…）",
-        "時態配合內容（例如 took、need）"
+        "用 courage 表示「勇氣」（例如 found the courage to…、had the courage to… 等）",
+        "「要求加薪」可寫，例如 ask for more pay、ask … to pay her more 等；寫 ask for a raise 也正確"
       ]
     }
   ],
@@ -376,6 +377,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"動力；動機\"；改後：\"動機；動力\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（courage）原位換成翻譯題，沿用題 id b1-u09-l08-q17；目標字沿用 courage",
+        "resolution": "改為 translate：promptZh「她終於鼓起勇氣向老闆要求加薪。」、hintWords [\"courage\"]、referenceEn [\"She finally found the courage to ask her boss for a raise.\",\"She finally had the courage to ask her boss for more pay.\"]、rubricZh [\"用 courage 表示「勇氣」（例如 found the courage to…、had the courage to… 等）\",\"「要求加薪」可寫，例如 ask for a raise、ask for more pay 等\"]（原 makeSentence：instructionZh「用 courage 造一個句子，說說一件你覺得需要勇氣的事。」、referenceEn [\"It took courage for me to speak in front of my class.\",\"I need courage to try new things.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS raise 名詞「加薪」高於 B1（§11.6），參考答案改 more pay，要點保留 a raise",
+        "resolution": "改為 referenceEn [\"She finally found the courage to ask her boss for more pay.\",\"She finally found the courage to ask her boss to pay her more.\"]、rubricZh [\"用 courage 表示「勇氣」（例如 found the courage to…、had the courage to… 等）\",\"「要求加薪」可寫，例如 ask for more pay、ask … to pay her more 等；寫 ask for a raise 也正確\"]（原 referenceEn [\"She finally found the courage to ask her boss for a raise.\",\"She finally had the courage to ask her boss for more pay.\"]、rubricZh [\"用 courage 表示「勇氣」（例如 found the courage to…、had the courage to… 等）\",\"「要求加薪」可寫，例如 ask for a raise、ask for more pay 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

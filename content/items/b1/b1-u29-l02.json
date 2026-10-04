@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u29-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "status",
-      "instructionZh": "用 status 造一個句子，說說你最近查過的某件事的狀態。",
+      "type": "translate",
+      "promptZh": "在這個國家，老師的社會地位很高。",
+      "hintWords": [
+        "status"
+      ],
       "referenceEn": [
-        "I checked the status of my flight this morning.",
-        "I often check the status of my online orders."
+        "Teachers have a high social status in this country.",
+        "In this country, teachers have high status in society."
       ],
       "rubricZh": [
-        "status 表示「狀態」，例如 check the status of… 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 status 表示「地位」（例如 a high social status）",
+        "「社會地位」可寫，例如 social status、status in society 等"
       ]
     }
   ],
@@ -321,6 +322,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Before noon today.\"；改後：\"Before six p.m.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（status）原位換成翻譯題，沿用題 id b1-u29-l02-q17；目標字沿用 status",
+        "resolution": "改為 translate：promptZh「在這個國家，老師的社會地位很高。」、hintWords [\"status\"]、referenceEn [\"Teachers have a high social status in this country.\",\"In this country, teachers have high status in society.\"]、rubricZh [\"用 status 表示「地位」（例如 a high social status）\",\"「社會地位」可寫，例如 social status、status in society 等\"]（原 makeSentence：instructionZh「用 status 造一個句子，說說你最近查過的某件事的狀態。」、referenceEn [\"I checked the status of my flight this morning.\",\"I often check the status of my online orders.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

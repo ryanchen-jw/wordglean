@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u15-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "consumer",
-      "instructionZh": "用 consumer 造一個句子，說說消費者的某種習慣或需要。",
+      "type": "translate",
+      "promptZh": "越來越多消費者在網路上買食物。",
+      "hintWords": [
+        "consumer"
+      ],
       "referenceEn": [
-        "Consumers today often shop online.",
-        "Most consumers compare prices before they buy something."
+        "More and more consumers buy food online.",
+        "An increasing number of consumers buy food online."
       ],
       "rubricZh": [
-        "consumer 表示「消費者」，可數名詞",
-        "泛指時多用複數 consumers",
-        "時態配合內容（多用現在簡單式）"
+        "用 consumer 的複數表示「消費者」",
+        "「越來越多」可寫，例如 more and more、an increasing number of 等"
       ]
     }
   ],
@@ -375,6 +376,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"市政府將出資興建一座新圖書館。\"；改後：\"學校有一筆幫助清寒學生的基金。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（consumer）原位換成翻譯題，沿用題 id b1-u15-l02-q17；目標字沿用 consumer",
+        "resolution": "改為 translate：promptZh「越來越多消費者在網路上買食物。」、hintWords [\"consumer\"]、referenceEn [\"More and more consumers buy food online.\",\"An increasing number of consumers buy food online.\"]、rubricZh [\"用 consumer 的複數表示「消費者」\",\"「越來越多」可寫，例如 more and more、an increasing number of 等\"]（原 makeSentence：instructionZh「用 consumer 造一個句子，說說消費者的某種習慣或需要。」、referenceEn [\"Consumers today often shop online.\",\"Most consumers compare prices before they buy something.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

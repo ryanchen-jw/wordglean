@@ -232,17 +232,17 @@
     },
     {
       "id": "b1-u09-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "weakness",
-      "instructionZh": "用 weakness 造一個句子，說說你的一個弱點。",
+      "type": "translate",
+      "promptZh": "缺乏經驗是他唯一的弱點。",
+      "hintWords": [
+        "weakness"
+      ],
       "referenceEn": [
-        "My biggest weakness is that I get nervous easily.",
-        "I have a weakness for sweet drinks."
+        "His only weakness is a lack of experience.",
+        "A lack of experience is his only weakness."
       ],
       "rubricZh": [
-        "weakness 表示「弱點」，可用 My weakness is…、have a weakness for…（很難抗拒⋯）等說法",
-        "說的是自己（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 weakness 表示「弱點」（例如 his only weakness）"
       ]
     }
   ],
@@ -280,6 +280,12 @@
         "message": "執行長 b1b2 裁示修正：第②關＋第③關疑似（採納）：警方查火災動機是犯罪＋災害情境，fire 也不會有 motive，換中性情境",
         "resolution": "改前：\"警方正在找出這場火災的動機。\"；改後：\"我們還是不知道她賣房子的動機。\"",
         "resolvedAt": "2026-10-02T17:45:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（weakness）原位換成翻譯題，沿用題 id b1-u09-l09-q17；目標字沿用 weakness",
+        "resolution": "改為 translate：promptZh「缺乏經驗是他唯一的弱點。」、hintWords [\"weakness\"]、referenceEn [\"His only weakness is a lack of experience.\",\"A lack of experience is his only weakness.\"]、rubricZh [\"用 weakness 表示「弱點」（例如 his only weakness）\"]（原 makeSentence：instructionZh「用 weakness 造一個句子，說說你的一個弱點。」、referenceEn [\"My biggest weakness is that I get nervous easily.\",\"I have a weakness for sweet drinks.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

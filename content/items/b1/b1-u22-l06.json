@@ -229,17 +229,17 @@
     },
     {
       "id": "b1-u22-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "idol",
-      "instructionZh": "用 idol 造一個句子，說說你現在或小時候的偶像。",
+      "type": "translate",
+      "promptZh": "那位歌手是很多年輕人的偶像。",
+      "hintWords": [
+        "idol"
+      ],
       "referenceEn": [
-        "My idol is a famous tennis player.",
-        "When I was young, my idol was a singer."
+        "That singer is an idol to many young people.",
+        "That singer is the idol of many young people."
       ],
       "rubricZh": [
-        "idol 表示「偶像」，例如 my idol is… 等說法",
-        "說的是自己的偶像（例如 my）",
-        "時態配合內容（例如現在式、過去式等）"
+        "用 idol 表示「偶像」（例如 an idol to…、the idol of… 等）"
       ]
     }
   ],
@@ -391,6 +391,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"At noon on Sunday.\"；改後：\"At seven in the evening.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（idol）原位換成翻譯題，沿用題 id b1-u22-l06-q17；目標字沿用 idol",
+        "resolution": "改為 translate：promptZh「那位歌手是很多年輕人的偶像。」、hintWords [\"idol\"]、referenceEn [\"That singer is an idol to many young people.\",\"That singer is the idol of many young people.\"]、rubricZh [\"用 idol 表示「偶像」（例如 an idol to…、the idol of… 等）\"]（原 makeSentence：instructionZh「用 idol 造一個句子，說說你現在或小時候的偶像。」、referenceEn [\"My idol is a famous tennis player.\",\"When I was young, my idol was a singer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

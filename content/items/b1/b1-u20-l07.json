@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u20-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "discomfort",
-      "instructionZh": "用 discomfort 造一個句子，說說讓你感到不舒服的情況。",
+      "type": "translate",
+      "promptZh": "有些人在高山上會感到不適。",
+      "hintWords": [
+        "discomfort"
+      ],
       "referenceEn": [
-        "I feel some discomfort when I sit for too long.",
-        "I felt discomfort in my back after the long flight."
+        "Some people feel discomfort high up in the mountains.",
+        "Some people feel discomfort in high mountains."
       ],
       "rubricZh": [
-        "discomfort 表示「不舒服、不適」，是名詞，例如 feel discomfort 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式、過去式等）"
+        "用 discomfort 表示「不適」（例如 feel discomfort）",
+        "「在高山上」可寫，例如 high up in the mountains、in high mountains 等"
       ]
     }
   ],
@@ -420,6 +421,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Behind the hotel.\"；改後：\"At the back of the hotel.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（discomfort）原位換成翻譯題，沿用題 id b1-u20-l07-q17；目標字沿用 discomfort",
+        "resolution": "改為 translate：promptZh「有些人在高山上會感到不適。」、hintWords [\"discomfort\"]、referenceEn [\"Some people feel discomfort high up in the mountains.\",\"Some people feel discomfort in high mountains.\"]、rubricZh [\"用 discomfort 表示「不適」（例如 feel discomfort）\",\"「在高山上」可寫，例如 high up in the mountains、in high mountains 等\"]（原 makeSentence：instructionZh「用 discomfort 造一個句子，說說讓你感到不舒服的情況。」、referenceEn [\"I feel some discomfort when I sit for too long.\",\"I felt discomfort in my back after the long flight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

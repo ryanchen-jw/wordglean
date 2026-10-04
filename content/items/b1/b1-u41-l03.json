@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u41-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "interact",
-      "instructionZh": "用 interact 造一個句子，說說你和別人互動的方式。",
+      "type": "translate",
+      "promptZh": "在這座博物館，遊客可以和展品互動。",
+      "hintWords": [
+        "interact"
+      ],
       "referenceEn": [
-        "I like to interact with people from other countries online.",
-        "I interact with my classmates in group work."
+        "In this museum, visitors can interact with the displays.",
+        "This museum lets visitors interact with the things on show."
       ],
       "rubricZh": [
-        "interact 表示「互動」，例如 interact with… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 interact with 表示「和…互動」"
       ]
     }
   ],
@@ -386,6 +386,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Family problems.\"；改後：\"Trouble within families.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（interact）原位換成翻譯題，沿用題 id b1-u41-l03-q17；目標字沿用 interact",
+        "resolution": "改為 translate：promptZh「在這座博物館，遊客可以和展品互動。」、hintWords [\"interact\"]、referenceEn [\"In this museum, visitors can interact with the displays.\",\"This museum lets visitors interact with the things on show.\"]、rubricZh [\"用 interact with 表示「和…互動」\"]（原 makeSentence：instructionZh「用 interact 造一個句子，說說你和別人互動的方式。」、referenceEn [\"I like to interact with people from other countries online.\",\"I interact with my classmates in group work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u38-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "revise",
-      "instructionZh": "用 revise 造一個句子，說說你考試前怎麼複習。",
+      "type": "translate",
+      "promptZh": "作者花了一年修改這本書。",
+      "hintWords": [
+        "revise"
+      ],
       "referenceEn": [
-        "I revise my notes every night before an exam.",
-        "I usually revise with my friends at the library."
+        "The writer spent a year revising this book.",
+        "It took the writer a year to revise the book."
       ],
       "rubricZh": [
-        "revise 表示「複習」，例如 revise for a test 等說法",
-        "說的是自己的習慣（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 revise 表示「修改」（例如 revising this book）"
       ]
     }
   ],
@@ -342,6 +342,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示（干擾項不可跨課重複）：melted 已在 u36-l01 當過干擾項，換成 deserved",
         "resolution": "改前：\"融化\"；改後：\"應得\"",
         "resolvedAt": "2026-10-02T23:57:28Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（revise）原位換成翻譯題，沿用題 id b1-u38-l01-q17；目標字沿用 revise",
+        "resolution": "改為 translate：promptZh「作者花了一年修改這本書。」、hintWords [\"revise\"]、referenceEn [\"The writer spent a year revising this book.\",\"It took the writer a year to revise the book.\"]、rubricZh [\"用 revise 表示「修改」（例如 revising this book）\"]（原 makeSentence：instructionZh「用 revise 造一個句子，說說你考試前怎麼複習。」、referenceEn [\"I revise my notes every night before an exam.\",\"I usually revise with my friends at the library.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

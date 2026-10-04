@@ -6,7 +6,9 @@
   "model": "claude-dev",
   "author": "claude-dev",
   "authoredAt": "2026-10-02T21:26:26Z",
-  "properNouns": [],
+  "properNouns": [
+    "English"
+  ],
   "items": [
     {
       "id": "b1-u38-l02-q01",
@@ -228,17 +230,17 @@
     },
     {
       "id": "b1-u38-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "spelling",
-      "instructionZh": "用 spelling 造一個句子，說說你在拼字上的經驗。",
+      "type": "translate",
+      "promptZh": "英文單字的拼法常常和讀音不一樣。",
+      "hintWords": [
+        "spelling"
+      ],
       "referenceEn": [
-        "My spelling is not very good, so I check it twice.",
-        "I got full marks on my spelling test last week."
+        "The spelling of English words is often different from how they sound.",
+        "English spelling often doesn't match how words sound."
       ],
       "rubricZh": [
-        "spelling 表示「拼字」，例如 a spelling test 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 spelling 表示「拼字；拼法」"
       ]
     }
   ],
@@ -354,6 +356,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"You must pay first.\"；改後：\"The examiner will enter first.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（spelling）原位換成翻譯題，沿用題 id b1-u38-l02-q17；目標字沿用 spelling",
+        "resolution": "改為 translate：promptZh「英文單字的拼法常常和讀音不一樣。」、hintWords [\"spelling\"]、referenceEn [\"The spelling of English words is often different from how they sound.\",\"English spelling often doesn't match how words sound.\"]、rubricZh [\"用 spelling 表示「拼字；拼法」\"]（原 makeSentence：instructionZh「用 spelling 造一個句子，說說你在拼字上的經驗。」、referenceEn [\"My spelling is not very good, so I check it twice.\",\"I got full marks on my spelling test last week.\"]）；properNouns 加 English",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

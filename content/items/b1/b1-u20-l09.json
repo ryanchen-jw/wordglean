@@ -232,16 +232,17 @@
     },
     {
       "id": "b1-u20-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "allergic",
-      "instructionZh": "用 allergic 造一個句子，說說你或家人對什麼過敏。",
+      "type": "translate",
+      "promptZh": "我的貓對某些魚過敏。",
+      "hintWords": [
+        "allergic"
+      ],
       "referenceEn": [
-        "I am allergic to cats, so I can't keep one.",
-        "My sister is allergic to some flowers."
+        "My cat is allergic to some kinds of fish.",
+        "My cat is allergic to certain fish."
       ],
       "rubricZh": [
-        "allergic 表示「過敏的」，例如 be allergic to＋名詞 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 be allergic to 表示「對…過敏」"
       ]
     }
   ],
@@ -369,6 +370,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"He fell asleep.\"；改後：\"He burned his hand.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（allergic）原位換成翻譯題，沿用題 id b1-u20-l09-q17；目標字沿用 allergic",
+        "resolution": "改為 translate：promptZh「我的貓對某些魚過敏。」、hintWords [\"allergic\"]、referenceEn [\"My cat is allergic to some kinds of fish.\",\"My cat is allergic to certain fish.\"]、rubricZh [\"用 be allergic to 表示「對…過敏」\"]（原 makeSentence：instructionZh「用 allergic 造一個句子，說說你或家人對什麼過敏。」、referenceEn [\"I am allergic to cats, so I can't keep one.\",\"My sister is allergic to some flowers.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

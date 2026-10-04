@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u08-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "babysitter",
-      "instructionZh": "用 babysitter 造一個句子，說說你當過保母的經驗，或你家請保母的經驗。",
+      "type": "translate",
+      "promptZh": "我們今晚會出去吃飯，所以找了一位保母。",
+      "hintWords": [
+        "babysitter"
+      ],
       "referenceEn": [
-        "I worked as a babysitter when I was in college.",
-        "My parents found a babysitter for my little brother."
+        "We are going out to dinner tonight, so we got a babysitter.",
+        "We found a babysitter because we are eating out tonight."
       ],
       "rubricZh": [
-        "babysitter 表示「臨時保母」",
-        "可用 work as a babysitter、find a babysitter 等說法",
-        "時態配合內容（例如 worked、found）"
+        "用 babysitter 表示「臨時保母」（例如 got a babysitter）",
+        "「找了」可寫，例如 got、found、hired 等"
       ]
     }
   ],
@@ -405,6 +406,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"At two.\"；改後：\"At two o'clock.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（babysitter）原位換成翻譯題，沿用題 id b1-u08-l07-q17；目標字沿用 babysitter",
+        "resolution": "改為 translate：promptZh「我們今晚會出去吃飯，所以找了一位保母。」、hintWords [\"babysitter\"]、referenceEn [\"We are going out to dinner tonight, so we got a babysitter.\",\"We found a babysitter because we are eating out tonight.\"]、rubricZh [\"用 babysitter 表示「臨時保母」（例如 got a babysitter）\",\"「找了」可寫，例如 got、found、hired 等\"]（原 makeSentence：instructionZh「用 babysitter 造一個句子，說說你當過保母的經驗，或你家請保母的經驗。」、referenceEn [\"I worked as a babysitter when I was in college.\",\"My parents found a babysitter for my little brother.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

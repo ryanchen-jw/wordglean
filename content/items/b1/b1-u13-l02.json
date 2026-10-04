@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u13-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "taste",
-      "instructionZh": "用 taste 造一個句子，描述一種食物或飲料的味道。",
+      "type": "translate",
+      "promptZh": "這個蛋糕吃起來像巧克力，但裡面其實沒有巧克力。",
+      "hintWords": [
+        "taste"
+      ],
       "referenceEn": [
-        "I love the taste of fresh strawberries.",
-        "This milk tastes a bit strange today."
+        "This cake tastes like chocolate, but there is no chocolate in it.",
+        "The cake tastes like chocolate, but it actually has no chocolate in it."
       ],
       "rubricZh": [
-        "taste 可當名詞（例如 the taste of…）、動詞（例如 tastes＋形容詞）等",
-        "動詞用法主詞第三人稱單數用 tastes",
-        "時態配合內容（多用現在簡單式）"
+        "用 taste 表示「嚐起來」（例如 tastes like chocolate）",
+        "「裡面其實沒有」可寫，例如 there is no … in it、it actually has no … 等"
       ]
     }
   ],
@@ -405,6 +406,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"They had a party.\"；改後：\"They had a party this week.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（taste）原位換成翻譯題，沿用題 id b1-u13-l02-q17；目標字沿用 taste",
+        "resolution": "改為 translate：promptZh「這個蛋糕吃起來像巧克力，但裡面其實沒有巧克力。」、hintWords [\"taste\"]、referenceEn [\"This cake tastes like chocolate, but there is no chocolate in it.\",\"The cake tastes like chocolate, but it actually has no chocolate in it.\"]、rubricZh [\"用 taste 表示「嚐起來」（例如 tastes like chocolate）\",\"「裡面其實沒有」可寫，例如 there is no … in it、it actually has no … 等\"]（原 makeSentence：instructionZh「用 taste 造一個句子，描述一種食物或飲料的味道。」、referenceEn [\"I love the taste of fresh strawberries.\",\"This milk tastes a bit strange today.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

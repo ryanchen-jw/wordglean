@@ -215,32 +215,32 @@
     {
       "id": "b1-u43-l08-q16",
       "type": "translate",
-      "promptZh": "她是個很健談的人。",
+      "promptZh": "我妹妹喝了咖啡以後就變得很多話。",
       "hintWords": [
         "talkative"
       ],
       "referenceEn": [
-        "She is a very talkative person.",
-        "She is a person who is very talkative."
+        "My sister becomes very talkative after she drinks coffee.",
+        "After drinking coffee, my sister gets really talkative."
       ],
       "rubricZh": [
-        "talkative 表示「健談的、愛說話的」，例如 a talkative person 等說法",
-        "時態配合內容（例如現在簡單式等）"
+        "用 talkative 表示「多話的；健談的」",
+        "「變得」可寫，例如 becomes、gets 等"
       ]
     },
     {
       "id": "b1-u43-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "overjoyed",
-      "instructionZh": "用 overjoyed 造一個句子，說說讓你欣喜若狂的一件事。",
+      "type": "translate",
+      "promptZh": "他考上大學時欣喜若狂。",
+      "hintWords": [
+        "overjoyed"
+      ],
       "referenceEn": [
-        "I was overjoyed when I passed my exam.",
-        "My family was overjoyed when our dog came home."
+        "He was overjoyed when he got into the university.",
+        "He was overjoyed to hear that the university had accepted him."
       ],
       "rubricZh": [
-        "overjoyed 表示「欣喜若狂的」，例如 be overjoyed when… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 overjoyed 表示「欣喜若狂的」"
       ]
     }
   ],
@@ -362,6 +362,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"She left it on the bus by mistake.\"；改後：\"She forgot it on the bus.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（overjoyed）原位換成翻譯題，沿用題 id b1-u43-l08-q17；目標字沿用 overjoyed",
+        "resolution": "改為 translate：promptZh「他考上大學時欣喜若狂。」、hintWords [\"overjoyed\"]、referenceEn [\"He was overjoyed when he got into the university.\",\"He was overjoyed to hear that the university had accepted him.\"]、rubricZh [\"用 overjoyed 表示「欣喜若狂的」\"]（原 makeSentence：instructionZh「用 overjoyed 造一個句子，說說讓你欣喜若狂的一件事。」、referenceEn [\"I was overjoyed when I passed my exam.\",\"My family was overjoyed when our dog came home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u43-l06-q16 雷同（兩題都是「他／她是一個很…的人」（a very … person）），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「我妹妹喝了咖啡以後就變得很多話。」、referenceEn [\"My sister becomes very talkative after she drinks coffee.\",\"After drinking coffee, my sister gets really talkative.\"]、rubricZh [\"用 talkative 表示「多話的；健談的」\",\"「變得」可寫，例如 becomes、gets 等\"]（原 promptZh「她是個很健談的人。」、referenceEn [\"She is a very talkative person.\",\"She is a person who is very talkative.\"]、rubricZh [\"talkative 表示「健談的、愛說話的」，例如 a talkative person 等說法\",\"時態配合內容（例如現在簡單式等）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

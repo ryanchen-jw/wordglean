@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u37-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "embarrassed",
-      "instructionZh": "用 embarrassed 造一個句子，說說一次讓你覺得尷尬的經驗。",
+      "type": "translate",
+      "promptZh": "她穿錯了衣服去派對，覺得很尷尬。",
+      "hintWords": [
+        "embarrassed"
+      ],
       "referenceEn": [
-        "I felt embarrassed when my phone rang in class.",
-        "I was embarrassed because I sang the wrong song."
+        "She felt embarrassed because she wore the wrong clothes to the party.",
+        "She was embarrassed that she had worn the wrong clothes to the party."
       ],
       "rubricZh": [
-        "embarrassed 表示「尷尬的」，例如 feel embarrassed 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 embarrassed 表示「尷尬的」（例如 felt embarrassed、was embarrassed 等）"
       ]
     }
   ],
@@ -344,6 +344,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"He called his teacher \\\"Mom.\\\"\"；改後：\"He used the wrong name for his teacher.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（embarrassed）原位換成翻譯題，沿用題 id b1-u37-l03-q17；目標字沿用 embarrassed",
+        "resolution": "改為 translate：promptZh「她穿錯了衣服去派對，覺得很尷尬。」、hintWords [\"embarrassed\"]、referenceEn [\"She felt embarrassed because she wore the wrong clothes to the party.\",\"She was embarrassed that she had worn the wrong clothes to the party.\"]、rubricZh [\"用 embarrassed 表示「尷尬的」（例如 felt embarrassed、was embarrassed 等）\"]（原 makeSentence：instructionZh「用 embarrassed 造一個句子，說說一次讓你覺得尷尬的經驗。」、referenceEn [\"I felt embarrassed when my phone rang in class.\",\"I was embarrassed because I sang the wrong song.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

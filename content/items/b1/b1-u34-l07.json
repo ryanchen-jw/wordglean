@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u34-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "encounter",
-      "instructionZh": "用 encounter 造一個句子，說說你曾有過的一次特別的相遇。",
+      "type": "translate",
+      "promptZh": "我們在山上遇到了一場大霧。",
+      "hintWords": [
+        "encounter"
+      ],
       "referenceEn": [
-        "I had a funny encounter with a famous singer at the airport.",
-        "My first encounter with snow was on a mountain."
+        "We encountered thick fog in the mountains.",
+        "We encountered heavy fog on the mountain."
       ],
       "rubricZh": [
-        "encounter 表示「相遇、遭遇」，例如 have an encounter with… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 encounter 表示「遭遇；遇到」（例如 encountered thick fog）",
+        "「大霧」可寫，例如 thick fog、heavy fog 等"
       ]
     }
   ],
@@ -396,6 +397,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「反駁」，並避開同課其他題的情境",
         "resolution": "改前：\"對方得分後，我們隊很快就反擊了。\"；改後：\"每次我提出想法，我哥都會反駁。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（encounter）原位換成翻譯題，沿用題 id b1-u34-l07-q17；目標字沿用 encounter",
+        "resolution": "改為 translate：promptZh「我們在山上遇到了一場大霧。」、hintWords [\"encounter\"]、referenceEn [\"We encountered thick fog in the mountains.\",\"We encountered heavy fog on the mountain.\"]、rubricZh [\"用 encounter 表示「遭遇；遇到」（例如 encountered thick fog）\",\"「大霧」可寫，例如 thick fog、heavy fog 等\"]（原 makeSentence：instructionZh「用 encounter 造一個句子，說說你曾有過的一次特別的相遇。」、referenceEn [\"I had a funny encounter with a famous singer at the airport.\",\"My first encounter with snow was on a mountain.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

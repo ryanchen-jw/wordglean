@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "shallow",
-      "instructionZh": "用 shallow 造一個句子，說說你去過的一個水很淺的地方。",
+      "type": "translate",
+      "promptZh": "這部電影的故事很膚淺。",
+      "hintWords": [
+        "shallow"
+      ],
       "referenceEn": [
-        "I played in the shallow water at the beach.",
-        "I walked in a shallow stream near my grandma's house."
+        "The story of this movie is very shallow.",
+        "This movie has a very shallow story."
       ],
       "rubricZh": [
-        "shallow 表示「淺的」，例如 shallow water 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 shallow 表示「膚淺的」"
       ]
     }
   ],
@@ -390,6 +390,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It's too deep.\"；改後：\"The water is too deep.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（shallow）原位換成翻譯題，沿用題 id b1-u35-l09-q17；目標字沿用 shallow",
+        "resolution": "改為 translate：promptZh「這部電影的故事很膚淺。」、hintWords [\"shallow\"]、referenceEn [\"The story of this movie is very shallow.\",\"This movie has a very shallow story.\"]、rubricZh [\"用 shallow 表示「膚淺的」\"]（原 makeSentence：instructionZh「用 shallow 造一個句子，說說你去過的一個水很淺的地方。」、referenceEn [\"I played in the shallow water at the beach.\",\"I walked in a shallow stream near my grandma's house.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

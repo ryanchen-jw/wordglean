@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u36-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "fantasy",
-      "instructionZh": "用 fantasy 造一個句子，說說你曾有過的一個幻想。",
+      "type": "translate",
+      "promptZh": "我哥哥很喜歡看奇幻小說。",
+      "hintWords": [
+        "fantasy"
+      ],
       "referenceEn": [
-        "I often have a fantasy about living in a big castle.",
-        "My fantasy is to travel around the world by boat."
+        "My brother loves reading fantasy novels.",
+        "My older brother really enjoys fantasy novels."
       ],
       "rubricZh": [
-        "fantasy 表示「幻想」，例如 have a fantasy about… 等說法",
-        "說的是自己的想法（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 fantasy 表示「奇幻（作品）」（例如 fantasy novels、fantasy books 等）"
       ]
     }
   ],
@@ -426,6 +426,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A seat near the door.\"；改後：\"A window seat for the speaker.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fantasy）原位換成翻譯題，沿用題 id b1-u36-l03-q17；目標字沿用 fantasy",
+        "resolution": "改為 translate：promptZh「我哥哥很喜歡看奇幻小說。」、hintWords [\"fantasy\"]、referenceEn [\"My brother loves reading fantasy novels.\",\"My older brother really enjoys fantasy novels.\"]、rubricZh [\"用 fantasy 表示「奇幻（作品）」（例如 fantasy novels、fantasy books 等）\"]（原 makeSentence：instructionZh「用 fantasy 造一個句子，說說你曾有過的一個幻想。」、referenceEn [\"I often have a fantasy about living in a big castle.\",\"My fantasy is to travel around the world by boat.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

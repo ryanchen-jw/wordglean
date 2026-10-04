@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u04-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "silent",
-      "instructionZh": "用 silent 造一個句子，說說你在什麼情況下會保持安靜。",
+      "type": "translate",
+      "promptZh": "他昨天整場會議都沒說話，保持沉默。",
+      "hintWords": [
+        "silent"
+      ],
       "referenceEn": [
-        "I stay silent when my boss is angry.",
-        "I always keep silent in the library."
+        "He stayed silent during the whole meeting yesterday.",
+        "Yesterday, he remained silent for the entire meeting."
       ],
       "rubricZh": [
-        "silent 表示「安靜的、沉默的」，常放在 stay、keep、be 等動詞後",
-        "說的是自己的習慣（主詞用 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 silent 表示「沉默的」（例如 stayed silent、kept silent、remained silent 等）",
+        "「整場會議」可寫，例如 during the whole meeting、for the entire meeting 等；時態配合「昨天」"
       ]
     }
   ],
@@ -369,6 +370,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"尖銳的；鋒利的\"；改後：\"鋒利的；尖銳的\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（silent）原位換成翻譯題，沿用題 id b1-u04-l09-q17；目標字沿用 silent",
+        "resolution": "改為 translate：promptZh「他昨天整場會議都沒說話，保持沉默。」、hintWords [\"silent\"]、referenceEn [\"He stayed silent during the whole meeting yesterday.\",\"Yesterday, he remained silent for the entire meeting.\"]、rubricZh [\"用 silent 表示「沉默的」（例如 stayed silent、kept silent、remained silent 等）\",\"「整場會議」可寫，例如 during the whole meeting、for the entire meeting 等；時態配合「昨天」\"]（原 makeSentence：instructionZh「用 silent 造一個句子，說說你在什麼情況下會保持安靜。」、referenceEn [\"I stay silent when my boss is angry.\",\"I always keep silent in the library.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

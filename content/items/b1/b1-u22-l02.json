@@ -241,17 +241,18 @@
     },
     {
       "id": "b1-u22-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "enjoyable",
-      "instructionZh": "用 enjoyable 造一個句子，說說一次愉快的經驗。",
+      "type": "translate",
+      "promptZh": "這趟火車之旅比我想像的愉快多了。",
+      "hintWords": [
+        "enjoyable"
+      ],
       "referenceEn": [
-        "My trip to the beach last summer was very enjoyable.",
-        "Cooking with my family is always enjoyable."
+        "The train trip was much more enjoyable than I expected.",
+        "The train journey was far more enjoyable than I thought."
       ],
       "rubricZh": [
-        "enjoyable 表示「令人愉快的」，例如 be enjoyable、an enjoyable trip 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 enjoyable 表示「令人愉快的」（例如 more enjoyable than…）",
+        "「比我想像的」可寫，例如 than I expected、than I thought 等"
       ]
     }
   ],
@@ -385,6 +386,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"To get a map.\"；改後：\"To meet the clowns.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（enjoyable）原位換成翻譯題，沿用題 id b1-u22-l02-q18；目標字沿用 enjoyable",
+        "resolution": "改為 translate：promptZh「這趟火車之旅比我想像的愉快多了。」、hintWords [\"enjoyable\"]、referenceEn [\"The train trip was much more enjoyable than I expected.\",\"The train journey was far more enjoyable than I thought.\"]、rubricZh [\"用 enjoyable 表示「令人愉快的」（例如 more enjoyable than…）\",\"「比我想像的」可寫，例如 than I expected、than I thought 等\"]（原 makeSentence：instructionZh「用 enjoyable 造一個句子，說說一次愉快的經驗。」、referenceEn [\"My trip to the beach last summer was very enjoyable.\",\"Cooking with my family is always enjoyable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

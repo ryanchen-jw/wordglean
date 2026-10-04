@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u17-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "vice president",
-      "instructionZh": "用 vice president 造一個句子，說說某個副總裁、副會長或副社長做的事。",
+      "type": "translate",
+      "promptZh": "我們公司的副總裁以前是一名老師。",
+      "hintWords": [
+        "vice president"
+      ],
       "referenceEn": [
-        "The vice president of our club plans all the trips.",
-        "Our company's vice president visits every branch once a year."
+        "The vice president of our company used to be a teacher.",
+        "Our company's vice president was once a teacher."
       ],
       "rubricZh": [
-        "vice president 表示「副總統、副總裁、副會長」",
-        "寫出這個人做的事",
-        "時態配合內容（多用現在簡單式）"
+        "用 vice president 表示「副總裁」",
+        "「以前是」可寫，例如 used to be、was once 等"
       ]
     }
   ],
@@ -445,6 +446,12 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：hostel→skyscraper",
         "resolution": "改前：\"青年旅館\"；改後：\"摩天大樓\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（vice president）原位換成翻譯題，沿用題 id b1-u17-l07-q17；目標字沿用 vice president",
+        "resolution": "改為 translate：promptZh「我們公司的副總裁以前是一名老師。」、hintWords [\"vice president\"]、referenceEn [\"The vice president of our company used to be a teacher.\",\"Our company's vice president was once a teacher.\"]、rubricZh [\"用 vice president 表示「副總裁」\",\"「以前是」可寫，例如 used to be、was once 等\"]（原 makeSentence：instructionZh「用 vice president 造一個句子，說說某個副總裁、副會長或副社長做的事。」、referenceEn [\"The vice president of our club plans all the trips.\",\"Our company's vice president visits every branch once a year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

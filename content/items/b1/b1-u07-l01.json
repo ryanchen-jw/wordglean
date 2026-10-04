@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u07-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "benefit",
-      "instructionZh": "用 benefit 造一個句子，說說你的工作、學校或住處的一個好處。",
+      "type": "translate",
+      "promptZh": "這筆交易對雙方都有好處。",
+      "hintWords": [
+        "benefit"
+      ],
       "referenceEn": [
-        "One benefit of my job is that I can work from home.",
-        "The biggest benefit of my school is the large library."
+        "This deal has benefits for both sides.",
+        "There are benefits for both sides in this deal."
       ],
       "rubricZh": [
-        "benefit 在這裡是名詞「好處」，可用 One benefit of… is… 等說法",
-        "說的是自己的情況（例如 my job、my school）",
-        "時態配合內容（多用現在簡單式）"
+        "benefit 表示「好處」（例如 has benefits for…；寫 benefits both sides、is good for 也正確）",
+        "「雙方」可寫，例如 both sides、both companies 等"
       ]
     }
   ],
@@ -391,6 +392,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A big success.\"；改後：\"Higher sales and no loss.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（benefit）原位換成翻譯題，沿用題 id b1-u07-l01-q17；目標字沿用 benefit",
+        "resolution": "改為 translate：promptZh「這筆交易對雙方都有好處。」、hintWords [\"benefit\"]、referenceEn [\"This deal has benefits for both sides.\",\"There are benefits for both sides in this deal.\"]、rubricZh [\"用 benefit（名詞）表示「好處」（例如 has benefits for…；寫 is good for 也正確）\",\"「雙方」可寫，例如 both sides、both companies 等\"]（原 makeSentence：instructionZh「用 benefit 造一個句子，說說你的工作、學校或住處的一個好處。」、referenceEn [\"One benefit of my job is that I can work from home.\",\"The biggest benefit of my school is the large library.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 要點寫死「benefit（名詞）」，This deal benefits both sides. 會被判錯（benefit 動詞 B2：要點照收、參考答案不放）",
+        "resolution": "改為 rubricZh [\"benefit 表示「好處」（例如 has benefits for…；寫 benefits both sides、is good for 也正確）\",\"「雙方」可寫，例如 both sides、both companies 等\"]（原 rubricZh [\"用 benefit（名詞）表示「好處」（例如 has benefits for…；寫 is good for 也正確）\",\"「雙方」可寫，例如 both sides、both companies 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u11-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "storage",
-      "instructionZh": "用 storage 造一個句子，說說你家哪裡用來收納東西。",
+      "type": "translate",
+      "promptZh": "那間小房間現在被當作儲藏室。",
+      "hintWords": [
+        "storage"
+      ],
       "referenceEn": [
-        "We use the balcony for storage.",
-        "There is not much storage space in my room."
+        "That small room is now used for storage.",
+        "We now use that small room for storage."
       ],
       "rubricZh": [
-        "storage 是不可數名詞「儲藏（空間）」",
-        "常用 use… for storage、storage space 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 storage 表示「儲藏」（例如 is used for storage）",
+        "「被當作」可寫，例如 is used for、we use … for 等"
       ]
     }
   ],
@@ -373,6 +374,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"In the car.\"；改後：\"Outside the apartment.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（storage）原位換成翻譯題，沿用題 id b1-u11-l04-q17；目標字沿用 storage",
+        "resolution": "改為 translate：promptZh「那間小房間現在被當作儲藏室。」、hintWords [\"storage\"]、referenceEn [\"That small room is now used for storage.\",\"We now use that small room for storage.\"]、rubricZh [\"用 storage 表示「儲藏」（例如 is used for storage）\",\"「被當作」可寫，例如 is used for、we use … for 等\"]（原 makeSentence：instructionZh「用 storage 造一個句子，說說你家哪裡用來收納東西。」、referenceEn [\"We use the balcony for storage.\",\"There is not much storage space in my room.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

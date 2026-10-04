@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u27-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "survival",
-      "instructionZh": "用 survival 造一個句子，說說你覺得生存最需要什麼。",
+      "type": "translate",
+      "promptZh": "對這些動物來說，乾淨的水是生存的關鍵。",
+      "hintWords": [
+        "survival"
+      ],
       "referenceEn": [
-        "I think water is the most important thing for survival.",
-        "For survival in the jungle, I would need a knife."
+        "Clean water is the key to survival for these animals.",
+        "For these animals, clean water is the key to survival."
       ],
       "rubricZh": [
-        "survival 表示「生存、存活」，是不可數名詞，例如 for survival 等說法",
-        "說的是自己的看法（例如 I think）",
-        "時態配合內容（例如現在簡單式或 would 等）"
+        "用 survival 表示「生存」（例如 the key to survival）"
       ]
     }
   ],
@@ -348,6 +348,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：情境表人工逐列判定（裁示）：卡 The survival of the village depends on fishing 與閱讀 their survival depends on a clean habitat 主詞、句型相同；改成小鳥活下來讓大家驚訝",
         "resolution": "改前：\"這個村莊的存續靠捕魚。\"；改後：\"那隻小鳥能活下來，讓大家都很驚訝。\"",
         "resolvedAt": "2026-10-02T23:19:16Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（survival）原位換成翻譯題，沿用題 id b1-u27-l01-q17；目標字沿用 survival",
+        "resolution": "改為 translate：promptZh「對這些動物來說，乾淨的水是生存的關鍵。」、hintWords [\"survival\"]、referenceEn [\"Clean water is the key to survival for these animals.\",\"For these animals, clean water is the key to survival.\"]、rubricZh [\"用 survival 表示「生存」（例如 the key to survival）\"]（原 makeSentence：instructionZh「用 survival 造一個句子，說說你覺得生存最需要什麼。」、referenceEn [\"I think water is the most important thing for survival.\",\"For survival in the jungle, I would need a knife.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u42-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "rotten",
-      "instructionZh": "用 rotten 造一個句子，說說你遇過的腐爛食物。",
+      "type": "translate",
+      "promptZh": "天氣太熱，桌上的香蕉兩天就爛了。",
+      "hintWords": [
+        "rotten"
+      ],
       "referenceEn": [
-        "I once found a rotten banana in my school bag.",
-        "The rotten smell from the trash can made me feel sick."
+        "It was so hot that the bananas on the table went rotten in two days.",
+        "Because it was so hot, the bananas on the table became rotten in two days."
       ],
       "rubricZh": [
-        "rotten 表示「腐爛的」，例如 a rotten apple 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 rotten 表示「腐爛的」（例如 went rotten、became rotten 等）"
       ]
     }
   ],
@@ -378,6 +378,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"There is a big race.\"；改後：\"The park is closed.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rotten）原位換成翻譯題，沿用題 id b1-u42-l06-q17；目標字沿用 rotten",
+        "resolution": "改為 translate：promptZh「暴風雨過後，田裡很多水果都爛了。」、hintWords [\"rotten\"]、referenceEn [\"After the storm, a lot of fruit in the fields went rotten.\",\"Much of the fruit in the fields became rotten after the storm.\"]、rubricZh [\"用 rotten 表示「腐爛的」（例如 went rotten、became rotten 等）\"]（原 makeSentence：instructionZh「用 rotten 造一個句子，說說你遇過的腐爛食物。」、referenceEn [\"I once found a rotten banana in my school bag.\",\"The rotten smell from the trash can made me feel sick.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 暴風雨造成農損接近 §12.9 災難題材，換中性情境",
+        "resolution": "改為 promptZh「天氣太熱，桌上的香蕉兩天就爛了。」、referenceEn [\"It was so hot that the bananas on the table went rotten in two days.\",\"Because it was so hot, the bananas on the table became rotten in two days.\"]、rubricZh [\"用 rotten 表示「腐爛的」（例如 went rotten、became rotten 等）\"]（原 promptZh「暴風雨過後，田裡很多水果都爛了。」、referenceEn [\"After the storm, a lot of fruit in the fields went rotten.\",\"Much of the fruit in the fields became rotten after the storm.\"]、rubricZh [\"用 rotten 表示「腐爛的」（例如 went rotten、became rotten 等）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

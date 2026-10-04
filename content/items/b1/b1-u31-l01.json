@@ -254,17 +254,18 @@
     },
     {
       "id": "b1-u31-l01-q19",
-      "type": "makeSentence",
-      "targetWord": "journal",
-      "instructionZh": "用 journal 造一個句子，說說你寫日誌或讀期刊的習慣。",
+      "type": "translate",
+      "promptZh": "她的研究發表在一份科學期刊上。",
+      "hintWords": [
+        "journal"
+      ],
       "referenceEn": [
-        "I write in my journal every night.",
-        "I kept a journal during my trip last summer."
+        "Her research was published in a science journal.",
+        "Her study appeared in a scientific journal."
       ],
       "rubricZh": [
-        "journal 表示「期刊、日誌」，例如 write in a journal 等說法",
-        "說的是自己的習慣或經驗（例如 I）",
-        "時態配合內容（例如說習慣用現在簡單式等）"
+        "用 journal 表示「期刊」",
+        "「發表」可寫，例如 was published in、appeared in 等"
       ]
     }
   ],
@@ -362,6 +363,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「公司的新商標是藍色小鳥」與閱讀「經理給她看公司的新商標」同事件，改成瓶子上有隊伍的標誌",
         "resolution": "改前：\"公司的新商標是一隻藍色小鳥。\"；改後：\"每個瓶子上都有隊伍的標誌。\"",
         "resolvedAt": "2026-10-02T23:27:50Z"
+      },
+      {
+        "path": "items/18",
+        "message": "創辦人裁示：造句改翻譯：造句題（journal）原位換成翻譯題，沿用題 id b1-u31-l01-q19；目標字沿用 journal",
+        "resolution": "改為 translate：promptZh「她的研究發表在一份科學期刊上。」、hintWords [\"journal\"]、referenceEn [\"Her research was published in a science journal.\",\"Her study appeared in a scientific journal.\"]、rubricZh [\"用 journal 表示「期刊」\",\"「發表」可寫，例如 was published in、appeared in 等\"]（原 makeSentence：instructionZh「用 journal 造一個句子，說說你寫日誌或讀期刊的習慣。」、referenceEn [\"I write in my journal every night.\",\"I kept a journal during my trip last summer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

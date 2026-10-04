@@ -232,17 +232,18 @@
     },
     {
       "id": "b1-u03-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "ensure",
-      "instructionZh": "用 ensure 造一個句子，說說你出門前會確保做好的一件事。",
+      "type": "translate",
+      "promptZh": "這位老師總是確保每個學生都聽得懂。",
+      "hintWords": [
+        "ensure"
+      ],
       "referenceEn": [
-        "I always ensure that the door is locked before I leave.",
-        "I ensure the lights are off before I go out."
+        "This teacher always ensures that every student understands.",
+        "The teacher always ensures every student can understand."
       ],
       "rubricZh": [
-        "ensure 表示「確保」，後面常接 that 子句（that 可省略）",
-        "說習慣多用現在簡單式，其他合理時態也接受",
-        "主詞是自己（I）"
+        "用 ensure 表示「確保」（that 可省略；寫 make sure 也正確）",
+        "「聽得懂」可寫，例如 understands、can understand、can follow 等"
       ]
     }
   ],
@@ -448,6 +449,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Slipped on the stairs.\"；改後：\"Slipped but didn't get hurt.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ensure）原位換成翻譯題，沿用題 id b1-u03-l10-q17；目標字沿用 ensure",
+        "resolution": "改為 translate：promptZh「這位老師總是確保每個學生都聽得懂。」、hintWords [\"ensure\"]、referenceEn [\"This teacher always ensures that every student understands.\",\"The teacher always ensures every student can understand.\"]、rubricZh [\"用 ensure 表示「確保」（that 可省略；寫 make sure 也正確）\",\"「聽得懂」可寫，例如 understands、can understand、can follow 等\"]（原 makeSentence：instructionZh「用 ensure 造一個句子，說說你出門前會確保做好的一件事。」、referenceEn [\"I always ensure that the door is locked before I leave.\",\"I ensure the lights are off before I go out.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

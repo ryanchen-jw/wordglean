@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u15-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "lottery",
-      "instructionZh": "用 lottery 造一個句子，說說你對彩券的看法。",
+      "type": "translate",
+      "promptZh": "彩券的中獎號碼每週二公布。",
+      "hintWords": [
+        "lottery"
+      ],
       "referenceEn": [
-        "I think the lottery is a waste of money.",
-        "I have never bought a lottery ticket in my life."
+        "The lottery numbers are announced every Tuesday.",
+        "They announce the lottery results every Tuesday."
       ],
       "rubricZh": [
-        "lottery 表示「彩券、樂透」",
-        "可用 buy lottery tickets、play the lottery 等說法",
-        "時態配合內容（例如說經驗可用現在完成式 have never bought）"
+        "用 lottery 表示「彩券；樂透」（例如 the lottery numbers、the lottery results 等）",
+        "「公布」可寫，例如 are announced、they announce 等"
       ]
     }
   ],
@@ -356,6 +357,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Right away.\"；改後：\"When you book the room.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（lottery）原位換成翻譯題，沿用題 id b1-u15-l04-q16；目標字沿用 lottery",
+        "resolution": "改為 translate：promptZh「彩券的中獎號碼每週二公布。」、hintWords [\"lottery\"]、referenceEn [\"The lottery numbers are announced every Tuesday.\",\"They announce the lottery results every Tuesday.\"]、rubricZh [\"用 lottery 表示「彩券；樂透」（例如 the lottery numbers、the lottery results 等）\",\"「公布」可寫，例如 are announced、they announce 等\"]（原 makeSentence：instructionZh「用 lottery 造一個句子，說說你對彩券的看法。」、referenceEn [\"I think the lottery is a waste of money.\",\"I have never bought a lottery ticket in my life.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

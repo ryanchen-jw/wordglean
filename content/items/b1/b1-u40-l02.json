@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u40-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "detective",
-      "instructionZh": "用 detective 造一個句子，說說你喜歡的偵探故事，或想像自己當偵探。",
+      "type": "translate",
+      "promptZh": "那位偵探很快就找到了遺失的項鍊。",
+      "hintWords": [
+        "detective"
+      ],
       "referenceEn": [
-        "I love reading detective stories at night.",
-        "If I were a detective, I would find my lost cat."
+        "The detective quickly found the missing necklace.",
+        "The detective found the lost necklace very quickly."
       ],
       "rubricZh": [
-        "detective 表示「偵探」，例如 a detective story 等說法",
-        "說的是自己的喜好或想像（例如 I）",
-        "時態配合內容（例如現在簡單式；想像可用 If I were…, I would… 等）"
+        "用 detective 表示「偵探」"
       ]
     }
   ],
@@ -422,6 +422,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Talk to Ms. Wang about problems.\"；改後：\"Get help with problems from Ms. Wang.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（detective）原位換成翻譯題，沿用題 id b1-u40-l02-q17；目標字沿用 detective",
+        "resolution": "改為 translate：promptZh「那位偵探很快就找到了遺失的項鍊。」、hintWords [\"detective\"]、referenceEn [\"The detective quickly found the missing necklace.\",\"The detective found the lost necklace very quickly.\"]、rubricZh [\"用 detective 表示「偵探」\"]（原 makeSentence：instructionZh「用 detective 造一個句子，說說你喜歡的偵探故事，或想像自己當偵探。」、referenceEn [\"I love reading detective stories at night.\",\"If I were a detective, I would find my lost cat.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

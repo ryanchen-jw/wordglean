@@ -233,17 +233,17 @@
     },
     {
       "id": "b1-u09-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "confidence",
-      "instructionZh": "用 confidence 造一個句子，說說什麼事讓你更有自信。",
+      "type": "translate",
+      "promptZh": "我對我們的新產品很有信心。",
+      "hintWords": [
+        "confidence"
+      ],
       "referenceEn": [
-        "Learning English gives me more confidence at work.",
-        "My confidence grew after I gave my first speech."
+        "I have a lot of confidence in our new product.",
+        "I have great confidence in our new product."
       ],
       "rubricZh": [
-        "confidence 是不可數名詞「自信」",
-        "可用 give someone confidence、my confidence grew 等說法",
-        "說的是自己的經驗（例如 me、my）"
+        "用 confidence in 表示「對…有信心」（例如 have confidence in…；寫 I am confident about 也正確）"
       ]
     }
   ],
@@ -365,6 +365,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"He was late for school.\"；改後：\"His brother broke his toy.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（confidence）原位換成翻譯題，沿用題 id b1-u09-l04-q17；目標字沿用 confidence",
+        "resolution": "改為 translate：promptZh「我對我們的新產品很有信心。」、hintWords [\"confidence\"]、referenceEn [\"I have a lot of confidence in our new product.\",\"I have great confidence in our new product.\"]、rubricZh [\"用 confidence in 表示「對…有信心」（例如 have confidence in…；寫 I am confident about 也正確）\"]（原 makeSentence：instructionZh「用 confidence 造一個句子，說說什麼事讓你更有自信。」、referenceEn [\"Learning English gives me more confidence at work.\",\"My confidence grew after I gave my first speech.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

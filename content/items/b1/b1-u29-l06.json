@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u29-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "mankind",
-      "instructionZh": "用 mankind 造一個句子，說說你覺得對人類最重要的一項發明。",
+      "type": "translate",
+      "promptZh": "這項發明改變了人類的生活方式。",
+      "hintWords": [
+        "mankind"
+      ],
       "referenceEn": [
-        "I think the phone is the most important invention for mankind.",
-        "For me, the wheel is the greatest invention in the history of mankind."
+        "This invention has changed the way mankind lives.",
+        "This invention changed mankind's way of life."
       ],
       "rubricZh": [
-        "mankind 表示「人類」，例如 for mankind 等說法",
-        "說的是自己的看法（例如 I think）",
-        "時態配合內容（例如現在簡單式、現在完成式等）"
+        "用 mankind 表示「人類」（例如 the way mankind lives）",
+        "「生活方式」可寫，例如 the way mankind lives、way of life 等；時態可用 changed、has changed 等"
       ]
     }
   ],
@@ -372,6 +373,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：第③關疑似 a-16（我判照改）：參考答案 2 沒回答「最重要的發明」，改成 For me, the wheel is the greatest invention in the history of mankind.",
         "resolution": "改前：\"The internet has changed mankind a lot.\"；改後：\"For me, the wheel is the greatest invention in the history of mankind.\"",
         "resolvedAt": "2026-10-02T23:59:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mankind）原位換成翻譯題，沿用題 id b1-u29-l06-q17；目標字沿用 mankind",
+        "resolution": "改為 translate：promptZh「這項發明改變了人類的生活方式。」、hintWords [\"mankind\"]、referenceEn [\"This invention has changed the way mankind lives.\",\"This invention changed mankind's way of life.\"]、rubricZh [\"用 mankind 表示「人類」（例如 the way mankind lives）\",\"「生活方式」可寫，例如 the way mankind lives、way of life 等；時態可用 changed、has changed 等\"]（原 makeSentence：instructionZh「用 mankind 造一個句子，說說你覺得對人類最重要的一項發明。」、referenceEn [\"I think the phone is the most important invention for mankind.\",\"For me, the wheel is the greatest invention in the history of mankind.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

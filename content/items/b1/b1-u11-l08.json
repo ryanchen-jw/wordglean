@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u11-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "knit",
-      "instructionZh": "用 knit 造一個句子，說說你或家人會不會織東西。",
+      "type": "translate",
+      "promptZh": "我姊姊正在幫她的寶寶織一件毛衣。",
+      "hintWords": [
+        "knit"
+      ],
       "referenceEn": [
-        "My mother can knit a scarf in two days.",
-        "I want to learn how to knit."
+        "My sister is knitting a sweater for her baby.",
+        "My older sister is knitting her baby a sweater."
       ],
       "rubricZh": [
-        "knit 表示「編織」，過去式寫 knitted 或 knit 都可以",
-        "可用 can knit、learn how to knit 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 knit 表示「編織」（例如 is knitting a sweater）",
+        "「毛衣」可寫，例如 sweater、jumper 等"
       ]
     }
   ],
@@ -487,6 +488,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Make tea.\"；改後：\"Prepare some tea.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（knit）原位換成翻譯題，沿用題 id b1-u11-l08-q17；目標字沿用 knit",
+        "resolution": "改為 translate：promptZh「我姊姊正在幫她的寶寶織一件毛衣。」、hintWords [\"knit\"]、referenceEn [\"My sister is knitting a sweater for her baby.\",\"My older sister is knitting her baby a sweater.\"]、rubricZh [\"用 knit 表示「編織」（例如 is knitting a sweater）\",\"「毛衣」可寫，例如 sweater、jumper 等\"]（原 makeSentence：instructionZh「用 knit 造一個句子，說說你或家人會不會織東西。」、referenceEn [\"My mother can knit a scarf in two days.\",\"I want to learn how to knit.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -213,33 +213,33 @@
     {
       "id": "b1-u09-l10-q16",
       "type": "translate",
-      "promptZh": "老闆稱讚了她的報告。",
+      "promptZh": "這部電影受到影評人的高度讚美。",
       "hintWords": [
         "praise"
       ],
       "referenceEn": [
-        "Her report got praise from the boss.",
-        "The boss gave her report a lot of praise."
+        "This movie received high praise from critics.",
+        "The movie got high praise from the critics."
       ],
       "rubricZh": [
-        "praise 當名詞「讚美」，可用 get praise、give praise 等說法",
-        "寫 The boss praised her report. 意思也正確",
-        "說的是過去的事，可用過去式（例如 got、gave）"
+        "用 praise（名詞）表示「讚美」（例如 received high praise；寫 was highly praised by critics 也正確）",
+        "「影評人」可寫，例如 critics、movie critics 等"
       ]
     },
     {
       "id": "b1-u09-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "bitter",
-      "instructionZh": "用 bitter 造一個句子，說說一件讓你心裡很難受或覺得不公平的事。",
+      "type": "translate",
+      "promptZh": "這杯咖啡太苦了，我喝不下去。",
+      "hintWords": [
+        "bitter"
+      ],
       "referenceEn": [
-        "I felt bitter when my friend told everyone my secret.",
-        "It was a bitter moment for me when I failed my driving test."
+        "This coffee is too bitter for me to drink.",
+        "This coffee is so bitter that I can't drink it."
       ],
       "rubricZh": [
-        "bitter 在這裡表示「（心裡）痛苦的、難受的」，例如 feel bitter、a bitter moment 等說法",
-        "說的是自己的經驗（例如 I、me）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 bitter 表示「（味道）苦的」（例如 too bitter、so bitter 等）",
+        "「喝不下去」可寫，例如 too … for me to drink、so … that I can't drink it 等"
       ]
     }
   ],
@@ -427,6 +427,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"For saving money.\"；改後：\"Because they saved money.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bitter）原位換成翻譯題，沿用題 id b1-u09-l10-q17；目標字沿用 bitter",
+        "resolution": "改為 translate：promptZh「這杯咖啡太苦了，我喝不下去。」、hintWords [\"bitter\"]、referenceEn [\"This coffee is too bitter for me to drink.\",\"This coffee is so bitter that I can't drink it.\"]、rubricZh [\"用 bitter 表示「（味道）苦的」（例如 too bitter、so bitter 等）\",\"「喝不下去」可寫，例如 too … for me to drink、so … that I can't drink it 等\"]（原 makeSentence：instructionZh「用 bitter 造一個句子，說說一件讓你心裡很難受或覺得不公平的事。」、referenceEn [\"I felt bitter when my friend told everyone my secret.\",\"It was a bitter moment for me when I failed my driving test.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u09-l07-q16 雷同（兩題都是「給了…很多…」（give a lot of）；本題又與同課聽選 gave praise to the whole team 同情境），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「這部電影受到影評人的高度讚美。」、referenceEn [\"This movie received high praise from critics.\",\"The movie got high praise from the critics.\"]、rubricZh [\"用 praise（名詞）表示「讚美」（例如 received high praise；寫 was highly praised by critics 也正確）\",\"「影評人」可寫，例如 critics、movie critics 等\"]（原 promptZh「老闆稱讚了她的報告。」、referenceEn [\"Her report got praise from the boss.\",\"The boss gave her report a lot of praise.\"]、rubricZh [\"praise 當名詞「讚美」，可用 get praise、give praise 等說法\",\"寫 The boss praised her report. 意思也正確\",\"說的是過去的事，可用過去式（例如 got、gave）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

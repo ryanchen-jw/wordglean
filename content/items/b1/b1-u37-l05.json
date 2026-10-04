@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u37-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "fortunate",
-      "instructionZh": "用 fortunate 造一個句子，說說一件讓你覺得很幸運的事。",
+      "type": "translate",
+      "promptZh": "我們很幸運，那天天氣很好。",
+      "hintWords": [
+        "fortunate"
+      ],
       "referenceEn": [
-        "I am fortunate to have kind parents.",
-        "I was fortunate to find my lost wallet."
+        "We were fortunate that the weather was good that day.",
+        "We were fortunate to have good weather that day."
       ],
       "rubricZh": [
-        "fortunate 表示「幸運的」，例如 be fortunate to… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 fortunate 表示「幸運的」（例如 were fortunate to…、were fortunate that… 等）"
       ]
     }
   ],
@@ -390,6 +390,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Told a teacher a lie about homework.\"；改後：\"Was late for a birthday party.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fortunate）原位換成翻譯題，沿用題 id b1-u37-l05-q17；目標字沿用 fortunate",
+        "resolution": "改為 translate：promptZh「我們很幸運，那天天氣很好。」、hintWords [\"fortunate\"]、referenceEn [\"We were fortunate that the weather was good that day.\",\"We were fortunate to have good weather that day.\"]、rubricZh [\"用 fortunate 表示「幸運的」（例如 were fortunate to…、were fortunate that… 等）\"]（原 makeSentence：instructionZh「用 fortunate 造一個句子，說說一件讓你覺得很幸運的事。」、referenceEn [\"I am fortunate to have kind parents.\",\"I was fortunate to find my lost wallet.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

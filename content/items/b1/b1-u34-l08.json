@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u34-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "adapt",
-      "instructionZh": "用 adapt 造一個句子，說說你適應某個新環境的經驗。",
+      "type": "translate",
+      "promptZh": "這部電影是從一本小說改編的。",
+      "hintWords": [
+        "adapt"
+      ],
       "referenceEn": [
-        "I adapted quickly to life in a big city.",
-        "It took me a while to adapt to the cold weather."
+        "This movie was adapted from a novel.",
+        "This film is adapted from a novel."
       ],
       "rubricZh": [
-        "adapt 表示「適應」，例如 adapt to… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 adapt 表示「改編」，這裡用被動（例如 was adapted from…）"
       ]
     }
   ],
@@ -375,6 +375,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Open a new store.\"；改後：\"Sell bags to a hundred customers.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（adapt）原位換成翻譯題，沿用題 id b1-u34-l08-q17；目標字沿用 adapt",
+        "resolution": "改為 translate：promptZh「這部電影是從一本小說改編的。」、hintWords [\"adapt\"]、referenceEn [\"This movie was adapted from a novel.\",\"This film is adapted from a novel.\"]、rubricZh [\"用 adapt 表示「改編」，這裡用被動（例如 was adapted from…）\"]（原 makeSentence：instructionZh「用 adapt 造一個句子，說說你適應某個新環境的經驗。」、referenceEn [\"I adapted quickly to life in a big city.\",\"It took me a while to adapt to the cold weather.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

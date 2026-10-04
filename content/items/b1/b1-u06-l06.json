@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u06-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "aware",
-      "instructionZh": "用 aware 造一個句子，說說一件你最近才知道或意識到的事。",
+      "type": "translate",
+      "promptZh": "很多人沒有意識到這座公園晚上會關門。",
+      "hintWords": [
+        "aware"
+      ],
       "referenceEn": [
-        "I was not aware that the shop closed early on Sundays.",
-        "I became aware of the problem only last week."
+        "Many people are not aware that this park closes at night.",
+        "Many people aren't aware that the park is closed at night."
       ],
       "rubricZh": [
-        "aware 例如 be aware of＋名詞、be aware that＋子句等說法",
-        "時態配合內容（例如 was not aware、became aware）",
-        "主詞是自己（I）"
+        "用 be aware that／of 表示「知道」（例如 are not aware that…；寫 don't know 也正確）",
+        "「晚上會關門」可寫，例如 closes at night、is closed at night 等"
       ]
     }
   ],
@@ -453,6 +454,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Call the manager about the plan.\"；改後：\"Send the proposal to the manager.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（aware）原位換成翻譯題，沿用題 id b1-u06-l06-q17；目標字沿用 aware",
+        "resolution": "改為 translate：promptZh「很多人沒有意識到這座公園晚上會關門。」、hintWords [\"aware\"]、referenceEn [\"Many people are not aware that this park closes at night.\",\"Many people aren't aware that the park is closed at night.\"]、rubricZh [\"用 be aware that／of 表示「知道」（例如 are not aware that…；寫 don't know 也正確）\",\"「晚上會關門」可寫，例如 closes at night、is closed at night 等\"]（原 makeSentence：instructionZh「用 aware 造一個句子，說說一件你最近才知道或意識到的事。」、referenceEn [\"I was not aware that the shop closed early on Sundays.\",\"I became aware of the problem only last week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

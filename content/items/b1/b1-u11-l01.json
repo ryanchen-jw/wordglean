@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u11-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "trash",
-      "instructionZh": "用 trash 造一個句子，說說你家怎麼處理垃圾。",
+      "type": "translate",
+      "promptZh": "垃圾車通常晚上八點來。",
+      "hintWords": [
+        "trash"
+      ],
       "referenceEn": [
-        "My family takes out the trash every evening.",
-        "I put the trash outside on Tuesdays."
+        "The trash truck usually comes at eight at night.",
+        "The trash truck usually comes at 8 o'clock at night."
       ],
       "rubricZh": [
-        "trash 是不可數名詞「垃圾」，不加 s",
-        "例如 take out the trash、put the trash outside 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 trash 表示「垃圾」（例如 the trash truck；寫 garbage truck 也正確）",
+        "「晚上八點」可寫，例如 at eight at night、at 8 p.m. 等"
       ]
     }
   ],
@@ -361,6 +362,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"可以借我你的橡皮擦嗎？我寫錯了。\"；改後：\"橡膠樹生長在炎熱的國家。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（trash）原位換成翻譯題，沿用題 id b1-u11-l01-q17；目標字沿用 trash",
+        "resolution": "改為 translate：promptZh「垃圾車通常晚上八點來。」、hintWords [\"trash\"]、referenceEn [\"The trash truck usually comes at eight at night.\",\"The trash truck usually comes at 8 o'clock at night.\"]、rubricZh [\"用 trash 表示「垃圾」（例如 the trash truck；寫 garbage truck 也正確）\",\"「晚上八點」可寫，例如 at eight at night、at 8 p.m. 等\"]（原 makeSentence：instructionZh「用 trash 造一個句子，說說你家怎麼處理垃圾。」、referenceEn [\"My family takes out the trash every evening.\",\"I put the trash outside on Tuesdays.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

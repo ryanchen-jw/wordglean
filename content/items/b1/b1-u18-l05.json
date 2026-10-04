@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u18-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "takeoff",
-      "instructionZh": "用 takeoff 造一個句子，說說飛機起飛時你的感覺或習慣。",
+      "type": "translate",
+      "promptZh": "起飛的時候，我一直看著窗外。",
+      "hintWords": [
+        "takeoff"
+      ],
       "referenceEn": [
-        "I always feel a little nervous during takeoff.",
-        "I like to look out of the window at takeoff."
+        "During takeoff, I kept looking out of the window.",
+        "I kept looking out of the window during takeoff."
       ],
       "rubricZh": [
-        "takeoff 表示「（飛機）起飛」",
-        "可用 during takeoff、before takeoff、at takeoff 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 takeoff 表示「起飛」（例如 during takeoff）",
+        "時態配合內容（例如 kept looking、was looking 等）"
       ]
     }
   ],
@@ -333,6 +334,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"In five minutes.\"；改後：\"Five minutes from now.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（takeoff）原位換成翻譯題，沿用題 id b1-u18-l05-q17；目標字沿用 takeoff",
+        "resolution": "改為 translate：promptZh「起飛和降落時請關掉手機。」、hintWords [\"takeoff\"]、referenceEn [\"Please turn off your phone during takeoff and landing.\",\"Please switch off your phones for takeoff and landing.\"]、rubricZh [\"用 takeoff 表示「起飛」（例如 during takeoff）\",\"「關掉」可寫，例如 turn off、switch off 等\"]（原 makeSentence：instructionZh「用 takeoff 造一個句子，說說飛機起飛時你的感覺或習慣。」、referenceEn [\"I always feel a little nervous during takeoff.\",\"I like to look out of the window at takeoff.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 原句是航空公司的具體規定（§11.21），換成不涉及規定的情境",
+        "resolution": "改為 promptZh「起飛的時候，我一直看著窗外。」、referenceEn [\"During takeoff, I kept looking out of the window.\",\"I kept looking out of the window during takeoff.\"]、rubricZh [\"用 takeoff 表示「起飛」（例如 during takeoff）\",\"時態配合內容（例如 kept looking、was looking 等）\"]（原 promptZh「起飛和降落時請關掉手機。」、referenceEn [\"Please turn off your phone during takeoff and landing.\",\"Please switch off your phones for takeoff and landing.\"]、rubricZh [\"用 takeoff 表示「起飛」（例如 during takeoff）\",\"「關掉」可寫，例如 turn off、switch off 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

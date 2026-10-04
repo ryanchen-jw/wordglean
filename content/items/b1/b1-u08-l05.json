@@ -232,17 +232,18 @@
     },
     {
       "id": "b1-u08-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "greeting",
-      "instructionZh": "用 greeting 造一個句子，說說你平常怎麼和人打招呼或送祝福。",
+      "type": "translate",
+      "promptZh": "我們每年都會寄賀卡給老朋友。",
+      "hintWords": [
+        "greeting"
+      ],
       "referenceEn": [
-        "I usually send holiday greetings to my friends by message.",
-        "My favorite greeting is a big smile."
+        "We send greeting cards to our old friends every year.",
+        "Every year, we send greeting cards to our old friends."
       ],
       "rubricZh": [
-        "greeting 表示「問候、祝福」，是可數名詞（例如 send greetings）",
-        "說的是自己的習慣（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 greeting card 表示「賀卡」（例如 send greeting cards）",
+        "「每年」可寫，例如 every year、each year 等"
       ]
     }
   ],
@@ -358,6 +359,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The speaker's niece and nephew.\"；改後：\"The children of the speaker's sister or brother.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（greeting）原位換成翻譯題，沿用題 id b1-u08-l05-q17；目標字沿用 greeting",
+        "resolution": "改為 translate：promptZh「我們每年都會寄賀卡給老朋友。」、hintWords [\"greeting\"]、referenceEn [\"We send greeting cards to our old friends every year.\",\"Every year, we send greeting cards to our old friends.\"]、rubricZh [\"用 greeting card 表示「賀卡」（例如 send greeting cards）\",\"「每年」可寫，例如 every year、each year 等\"]（原 makeSentence：instructionZh「用 greeting 造一個句子，說說你平常怎麼和人打招呼或送祝福。」、referenceEn [\"I usually send holiday greetings to my friends by message.\",\"My favorite greeting is a big smile.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

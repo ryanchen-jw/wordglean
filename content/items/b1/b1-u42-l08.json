@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u42-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "faraway",
-      "instructionZh": "用 faraway 造一個句子，說說一位住在遠方的親友。",
+      "type": "translate",
+      "promptZh": "她常常夢想去遙遠的國家旅行。",
+      "hintWords": [
+        "faraway"
+      ],
       "referenceEn": [
-        "My aunt lives in a faraway city.",
-        "I have a pen pal in a faraway country."
+        "She often dreams of traveling to faraway countries.",
+        "She often dreams about visiting faraway countries."
       ],
       "rubricZh": [
-        "faraway 表示「遙遠的」，例如 a faraway city 等說法",
-        "說的是自己的親友（例如 my、I）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 faraway 表示「遙遠的」（例如 faraway countries）"
       ]
     }
   ],
@@ -468,6 +468,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「前所未聞的」，並避開同課其他題的情境",
         "resolution": "改前：\"他的聲音太小，問題沒被聽到。\"；改後：\"二十年前，可以摺疊的手機是前所未聞的。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（faraway）原位換成翻譯題，沿用題 id b1-u42-l08-q17；目標字沿用 faraway",
+        "resolution": "改為 translate：promptZh「她常常夢想去遙遠的國家旅行。」、hintWords [\"faraway\"]、referenceEn [\"She often dreams of traveling to faraway countries.\",\"She often dreams about visiting faraway countries.\"]、rubricZh [\"用 faraway 表示「遙遠的」（例如 faraway countries）\"]（原 makeSentence：instructionZh「用 faraway 造一個句子，說說一位住在遠方的親友。」、referenceEn [\"My aunt lives in a faraway city.\",\"I have a pen pal in a faraway country.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

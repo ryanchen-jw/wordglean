@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u02-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "occasional",
-      "instructionZh": "用 occasional 造一個句子，說說你偶爾會做或偶爾會享受的事。",
+      "type": "translate",
+      "promptZh": "除了偶爾有電話打來，今天辦公室很安靜。",
+      "hintWords": [
+        "occasional"
+      ],
       "referenceEn": [
-        "I enjoy an occasional cup of coffee at night.",
-        "I take occasional trips to the beach in summer."
+        "Apart from an occasional phone call, the office was quiet today.",
+        "Except for the occasional phone call, the office was quiet today."
       ],
       "rubricZh": [
-        "occasional 是形容詞「偶爾的」，放在名詞前",
-        "單數名詞前要有冠詞（例如 an occasional trip），也可用複數（例如 occasional trips）",
-        "主詞是自己（I）"
+        "用 occasional（形容詞）修飾名詞，表示「偶爾的」（例如 an occasional phone call、the occasional call 等）",
+        "「除了」可寫，例如 apart from、except for 等；時態配合今天的事（例如 was、has been 等）"
       ]
     }
   ],
@@ -381,6 +382,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Move back to the main office.\"；改後：\"Return to the head office.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（occasional）原位換成翻譯題，沿用題 id b1-u02-l05-q17；目標字沿用 occasional",
+        "resolution": "改為 translate：promptZh「除了偶爾有電話打來，今天辦公室很安靜。」、hintWords [\"occasional\"]、referenceEn [\"Apart from an occasional phone call, the office was quiet today.\",\"Except for the occasional phone call, the office was quiet today.\"]、rubricZh [\"用 occasional（形容詞）修飾名詞，表示「偶爾的」（例如 an occasional phone call、the occasional call 等）\",\"「除了」可寫，例如 apart from、except for 等；時態配合今天的事（例如 was、has been 等）\"]（原 makeSentence：instructionZh「用 occasional 造一個句子，說說你偶爾會做或偶爾會享受的事。」、referenceEn [\"I enjoy an occasional cup of coffee at night.\",\"I take occasional trips to the beach in summer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u38-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "schoolmate",
-      "instructionZh": "用 schoolmate 造一個句子，說說你和一位同學的事。",
+      "type": "translate",
+      "promptZh": "她和兩位同學一起創立了一家公司。",
+      "hintWords": [
+        "schoolmate"
+      ],
       "referenceEn": [
-        "One of my schoolmates sits next to me in math class.",
-        "I made a birthday card for my schoolmate."
+        "She started a company with two of her schoolmates.",
+        "She and two schoolmates started a company together."
       ],
       "rubricZh": [
-        "schoolmate 表示「同學」，例如 my schoolmate 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 schoolmate 表示「同學」",
+        "「創立」可寫，例如 started、set up 等"
       ]
     }
   ],
@@ -392,6 +393,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"At the airport.\"；改後：\"At their old school.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（schoolmate）原位換成翻譯題，沿用題 id b1-u38-l05-q16；目標字沿用 schoolmate",
+        "resolution": "改為 translate：promptZh「她和兩位同學一起創立了一家公司。」、hintWords [\"schoolmate\"]、referenceEn [\"She started a company with two of her schoolmates.\",\"She and two schoolmates started a company together.\"]、rubricZh [\"用 schoolmate 表示「同學」\",\"「創立」可寫，例如 started、set up 等\"]（原 makeSentence：instructionZh「用 schoolmate 造一個句子，說說你和一位同學的事。」、referenceEn [\"One of my schoolmates sits next to me in math class.\",\"I made a birthday card for my schoolmate.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "weird",
-      "instructionZh": "用 weird 造一個句子，說說你遇過的一件怪事。",
+      "type": "translate",
+      "promptZh": "冰箱正在發出奇怪的聲音。",
+      "hintWords": [
+        "weird"
+      ],
       "referenceEn": [
-        "I saw a weird cat with blue and green eyes.",
-        "Something weird happened to me on the bus yesterday."
+        "The fridge is making a weird noise.",
+        "The fridge is making a weird sound."
       ],
       "rubricZh": [
-        "weird 表示「奇怪的」，例如 a weird noise 等說法",
-        "說的是自己的經驗（例如 I、me）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 weird 表示「奇怪的」（例如 a weird noise）"
       ]
     }
   ],
@@ -330,6 +330,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「可怕的」，並避開同課其他題的情境",
         "resolution": "改前：\"那家飯店的食物糟透了。\"；改後：\"那部電影裡有一隻有三隻眼睛的可怕怪物。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（weird）原位換成翻譯題，沿用題 id b1-u35-l07-q17；目標字沿用 weird",
+        "resolution": "改為 translate：promptZh「冰箱正在發出奇怪的聲音。」、hintWords [\"weird\"]、referenceEn [\"The fridge is making a weird noise.\",\"The fridge is making a weird sound.\"]、rubricZh [\"用 weird 表示「奇怪的」（例如 a weird noise）\"]（原 makeSentence：instructionZh「用 weird 造一個句子，說說你遇過的一件怪事。」、referenceEn [\"I saw a weird cat with blue and green eyes.\",\"Something weird happened to me on the bus yesterday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

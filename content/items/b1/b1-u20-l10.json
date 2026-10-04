@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u20-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "sneeze",
-      "instructionZh": "用 sneeze 造一個句子，說說什麼東西會讓你打噴嚏。",
+      "type": "translate",
+      "promptZh": "這些灰塵讓我一直打噴嚏。",
+      "hintWords": [
+        "sneeze"
+      ],
       "referenceEn": [
-        "Cats make me sneeze a lot.",
-        "I always sneeze when spring comes."
+        "The dust makes me sneeze again and again.",
+        "The dust kept making me sneeze."
       ],
       "rubricZh": [
-        "sneeze 表示「打噴嚏」，例如 make me sneeze 等說法",
-        "說的是自己的經驗（例如 I、me）",
-        "時態配合內容（多用現在簡單式）"
+        "用 sneeze 表示「打噴嚏」（例如 makes me sneeze）",
+        "「一直」可寫，例如 again and again、kept making me… 等；時態配合內容"
       ]
     }
   ],
@@ -428,6 +429,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"A family trip.\"；改後：\"A bad earache.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（sneeze）原位換成翻譯題，沿用題 id b1-u20-l10-q17；目標字沿用 sneeze",
+        "resolution": "改為 translate：promptZh「這些灰塵讓我一直打噴嚏。」、hintWords [\"sneeze\"]、referenceEn [\"The dust makes me sneeze again and again.\",\"The dust kept making me sneeze.\"]、rubricZh [\"用 sneeze 表示「打噴嚏」（例如 makes me sneeze）\",\"「一直」可寫，例如 again and again、kept making me… 等；時態配合內容\"]（原 makeSentence：instructionZh「用 sneeze 造一個句子，說說什麼東西會讓你打噴嚏。」、referenceEn [\"Cats make me sneeze a lot.\",\"I always sneeze when spring comes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

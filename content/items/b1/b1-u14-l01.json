@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u14-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "refreshments",
-      "instructionZh": "用 refreshments 造一個句子，說說某個活動提供的茶點。",
+      "type": "translate",
+      "promptZh": "我們準備了一些茶點給來參觀的客人。",
+      "hintWords": [
+        "refreshments"
+      ],
       "referenceEn": [
-        "Refreshments were served during the break.",
-        "At the meeting, the refreshments were tea and cookies."
+        "We prepared some refreshments for the visitors.",
+        "We have prepared refreshments for our visitors."
       ],
       "rubricZh": [
-        "refreshments 表示「茶點」，一般用複數形",
-        "可用 serve refreshments、light refreshments 等說法",
-        "時態配合內容（例如說過去的活動用過去式）"
+        "用 refreshments 表示「茶點」（複數，例如 some refreshments）",
+        "時態可用 prepared、have prepared 等"
       ]
     }
   ],
@@ -357,6 +358,12 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（干擾項）：nutritious 跨課重複、oily、sour 與題意無關，換先前學過的 serious、careless 與本課的 self-service",
         "resolution": "改前：\"酸的\"；改後：\"自助的\"",
         "resolvedAt": "2026-10-02T19:39:58Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（refreshments）原位換成翻譯題，沿用題 id b1-u14-l01-q17；目標字沿用 refreshments",
+        "resolution": "改為 translate：promptZh「我們準備了一些茶點給來參觀的客人。」、hintWords [\"refreshments\"]、referenceEn [\"We prepared some refreshments for the visitors.\",\"We have prepared refreshments for our visitors.\"]、rubricZh [\"用 refreshments 表示「茶點」（複數，例如 some refreshments）\",\"時態可用 prepared、have prepared 等\"]（原 makeSentence：instructionZh「用 refreshments 造一個句子，說說某個活動提供的茶點。」、referenceEn [\"Refreshments were served during the break.\",\"At the meeting, the refreshments were tea and cookies.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

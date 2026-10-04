@@ -244,17 +244,18 @@
     },
     {
       "id": "b1-u04-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "casual",
-      "instructionZh": "用 casual 造一個句子，說說你在什麼時候喜歡穿休閒的衣服。",
+      "type": "translate",
+      "promptZh": "這家餐廳的氣氛很輕鬆隨意。",
+      "hintWords": [
+        "casual"
+      ],
       "referenceEn": [
-        "I like to wear casual clothes on weekends.",
-        "I wear casual clothes when I meet my friends."
+        "This restaurant has a casual atmosphere.",
+        "The atmosphere in this restaurant is very casual."
       ],
       "rubricZh": [
-        "casual 是形容詞「休閒的」，放在名詞前（例如 casual clothes）",
-        "「穿」可寫 wear 等",
-        "說的是自己的習慣、喜好等（例如 I、my）"
+        "用 casual 表示「輕鬆隨意的」（例如 a casual atmosphere；寫 relaxed 也正確）",
+        "「氣氛」可寫，例如 atmosphere、feel 等"
       ]
     }
   ],
@@ -394,6 +395,12 @@
         "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項開頭格式統一",
         "resolution": "改前：\"At nine every morning.\"；改後：\"Nine every morning.\"",
         "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（casual）原位換成翻譯題，沿用題 id b1-u04-l02-q18；目標字沿用 casual",
+        "resolution": "改為 translate：promptZh「這家餐廳的氣氛很輕鬆隨意。」、hintWords [\"casual\"]、referenceEn [\"This restaurant has a casual atmosphere.\",\"The atmosphere in this restaurant is very casual.\"]、rubricZh [\"用 casual 表示「輕鬆隨意的」（例如 a casual atmosphere；寫 relaxed 也正確）\",\"「氣氛」可寫，例如 atmosphere、feel 等\"]（原 makeSentence：instructionZh「用 casual 造一個句子，說說你在什麼時候喜歡穿休閒的衣服。」、referenceEn [\"I like to wear casual clothes on weekends.\",\"I wear casual clothes when I meet my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

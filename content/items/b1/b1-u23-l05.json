@@ -215,17 +215,18 @@
     },
     {
       "id": "b1-u23-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "extreme sports",
-      "instructionZh": "用 extreme sports 造一個句子，說說你對極限運動的看法。",
+      "type": "translate",
+      "promptZh": "這個小鎮吸引了很多喜歡極限運動的遊客。",
+      "hintWords": [
+        "extreme sports"
+      ],
       "referenceEn": [
-        "I think extreme sports are too dangerous for me.",
-        "I would like to try extreme sports one day."
+        "This town attracts many visitors who enjoy extreme sports.",
+        "Many people come to this town to try extreme sports."
       ],
       "rubricZh": [
-        "extreme sports 表示「極限運動」，例如 try extreme sports 等說法",
-        "說的是自己的看法（例如 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 extreme sports 表示「極限運動」",
+        "「吸引」可寫，例如 attracts、many … come to 等"
       ]
     }
   ],
@@ -299,6 +300,12 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：goalkeeper→ice hockey",
         "resolution": "改前：\"守門員\"；改後：\"冰上曲棍球\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（extreme sports）原位換成翻譯題，沿用題 id b1-u23-l05-q16；目標字沿用 extreme sports",
+        "resolution": "改為 translate：promptZh「這個小鎮吸引了很多喜歡極限運動的遊客。」、hintWords [\"extreme sports\"]、referenceEn [\"This town attracts many visitors who enjoy extreme sports.\",\"Many people come to this town to try extreme sports.\"]、rubricZh [\"用 extreme sports 表示「極限運動」\",\"「吸引」可寫，例如 attracts、many … come to 等\"]（原 makeSentence：instructionZh「用 extreme sports 造一個句子，說說你對極限運動的看法。」、referenceEn [\"I think extreme sports are too dangerous for me.\",\"I would like to try extreme sports one day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

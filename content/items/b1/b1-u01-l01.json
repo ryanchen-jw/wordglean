@@ -229,33 +229,33 @@
     {
       "id": "b1-u01-l01-q17",
       "type": "translate",
-      "promptZh": "儘管很累，她還是完成了工作。",
+      "promptZh": "儘管年紀很大，我爺爺每天還是騎腳踏車。",
       "hintWords": [
         "despite"
       ],
       "referenceEn": [
-        "Despite being tired, she finished the work.",
-        "Despite feeling tired, she finished her work."
+        "Despite his age, my grandfather still rides a bike every day.",
+        "Despite being old, my grandpa still rides his bike every day."
       ],
       "rubricZh": [
-        "despite 後面接名詞或動名詞，不接完整句子",
-        "主要句用過去式（例如 finished、completed）",
-        "不需要再加 but"
+        "despite 後接名詞或動名詞（例如 Despite his age、Despite being old；寫 Although he is old 也正確）",
+        "「還是」可寫，例如 still 等"
       ]
     },
     {
       "id": "b1-u01-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "whether",
-      "instructionZh": "用 whether 造一個句子，說說一件你還沒決定的事。",
+      "type": "translate",
+      "promptZh": "她剛才問我是否需要幫忙。",
+      "hintWords": [
+        "whether"
+      ],
       "referenceEn": [
-        "I have not decided whether to take the job.",
-        "I am not sure whether I should call him."
+        "She just asked me whether I needed help.",
+        "She asked me whether I needed any help just now."
       ],
       "rubricZh": [
-        "whether 表示「是否」",
-        "可以用 whether to＋原形動詞",
-        "句意是還沒決定的事"
+        "用 whether 表示「是否」（例如 asked me whether…；寫 if 也正確）",
+        "「需要幫忙」可寫，例如 needed help、needed any help 等；時態配合「剛才」（例如 asked、has just asked 等）"
       ]
     }
   ],
@@ -395,6 +395,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"She took a taxi.\"；改後：\"She left the station after a while.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（whether）原位換成翻譯題，沿用題 id b1-u01-l01-q18；目標字沿用 whether",
+        "resolution": "改為 translate：promptZh「她剛才問我是否需要幫忙。」、hintWords [\"whether\"]、referenceEn [\"She just asked me whether I needed help.\",\"She asked me whether I needed any help just now.\"]、rubricZh [\"用 whether 表示「是否」（例如 asked me whether…；寫 if 也正確）\",\"「需要幫忙」可寫，例如 needed help、needed any help 等；時態配合「剛才」（例如 asked、has just asked 等）\"]（原 makeSentence：instructionZh「用 whether 造一個句子，說說一件你還沒決定的事。」、referenceEn [\"I have not decided whether to take the job.\",\"I am not sure whether I should call him.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u01-l04-q16 雷同（兩題都是「完成工作」（finish work）），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「儘管年紀很大，我爺爺每天還是騎腳踏車。」、referenceEn [\"Despite his age, my grandfather still rides a bike every day.\",\"Despite being old, my grandpa still rides his bike every day.\"]、rubricZh [\"despite 後接名詞或動名詞（例如 Despite his age、Despite being old；寫 Although he is old 也正確）\",\"「還是」可寫，例如 still 等\"]（原 promptZh「儘管很累，她還是完成了工作。」、referenceEn [\"Despite being tired, she finished the work.\",\"Despite feeling tired, she finished her work.\"]、rubricZh [\"despite 後面接名詞或動名詞，不接完整句子\",\"主要句用過去式（例如 finished、completed）\",\"不需要再加 but\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

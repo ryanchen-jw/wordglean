@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u43-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "stressed",
-      "instructionZh": "用 stressed 造一個句子，說說什麼讓你覺得有壓力。",
+      "type": "translate",
+      "promptZh": "考試快到了，很多學生都很緊張。",
+      "hintWords": [
+        "stressed"
+      ],
       "referenceEn": [
-        "I feel stressed when I'm late for something.",
-        "I was stressed before my piano contest."
+        "The exams are coming, and many students are stressed.",
+        "With exams coming soon, a lot of students feel stressed."
       ],
       "rubricZh": [
-        "stressed 表示「有壓力的」，例如 feel stressed 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 stressed 表示「有壓力的；緊張的」（例如 are stressed、feel stressed 等）"
       ]
     }
   ],
@@ -444,6 +444,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The speaker has to move to a new house.\"；改後：\"The report was due yesterday.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stressed）原位換成翻譯題，沿用題 id b1-u43-l09-q17；目標字沿用 stressed",
+        "resolution": "改為 translate：promptZh「考試快到了，很多學生都很緊張。」、hintWords [\"stressed\"]、referenceEn [\"The exams are coming, and many students are stressed.\",\"With exams coming soon, a lot of students feel stressed.\"]、rubricZh [\"用 stressed 表示「有壓力的；緊張的」（例如 are stressed、feel stressed 等）\"]（原 makeSentence：instructionZh「用 stressed 造一個句子，說說什麼讓你覺得有壓力。」、referenceEn [\"I feel stressed when I'm late for something.\",\"I was stressed before my piano contest.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

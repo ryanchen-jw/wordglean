@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u25-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "term",
-      "instructionZh": "用 term 造一個句子，說說你這學期的計畫。",
+      "type": "translate",
+      "promptZh": "這本書用了很多電腦術語，很難懂。",
+      "hintWords": [
+        "term"
+      ],
       "referenceEn": [
-        "This term, I want to read more books in the library.",
-        "I am taking an art class this term."
+        "This book uses a lot of computer terms, so it is hard to understand.",
+        "This book is hard to understand because it uses many computer terms."
       ],
       "rubricZh": [
-        "term 表示「學期」，例如 this term 等說法",
-        "說的是自己的計畫（例如 I）",
-        "時態配合內容（例如 want to、現在進行式等）"
+        "用 term 的複數表示「術語」（例如 computer terms）",
+        "「很難懂」可寫，例如 hard to understand、difficult to follow 等"
       ]
     }
   ],
@@ -306,6 +307,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The room is too cold.\"；改後：\"Not many students signed up.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（term）原位換成翻譯題，沿用題 id b1-u25-l04-q17；目標字沿用 term",
+        "resolution": "改為 translate：promptZh「這本書用了很多電腦術語，很難懂。」、hintWords [\"term\"]、referenceEn [\"This book uses a lot of computer terms, so it is hard to understand.\",\"This book is hard to understand because it uses many computer terms.\"]、rubricZh [\"用 term 的複數表示「術語」（例如 computer terms）\",\"「很難懂」可寫，例如 hard to understand、difficult to follow 等\"]（原 makeSentence：instructionZh「用 term 造一個句子，說說你這學期的計畫。」、referenceEn [\"This term, I want to read more books in the library.\",\"I am taking an art class this term.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

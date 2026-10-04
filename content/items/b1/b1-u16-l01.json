@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u16-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "parcel",
-      "instructionZh": "用 parcel 造一個句子，說說你寄或收包裹的經驗。",
+      "type": "translate",
+      "promptZh": "這個包裹太重了，我一個人搬不動。",
+      "hintWords": [
+        "parcel"
+      ],
       "referenceEn": [
-        "I sent a parcel to my cousin in another city last week.",
-        "I got a parcel from my aunt yesterday."
+        "This parcel is too heavy for me to carry alone.",
+        "The parcel is so heavy that I can't carry it by myself."
       ],
       "rubricZh": [
-        "parcel 表示「包裹」，可數名詞",
-        "可用 send／get／receive a parcel 等說法",
-        "時態配合內容（例如說過去的經驗用過去式）"
+        "用 parcel 表示「包裹」",
+        "「搬不動」可寫，例如 too heavy for me to carry、so heavy that I can't carry it 等"
       ]
     }
   ],
@@ -302,6 +303,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Tonight.\"；改後：\"Tomorrow afternoon.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（parcel）原位換成翻譯題，沿用題 id b1-u16-l01-q16；目標字沿用 parcel",
+        "resolution": "改為 translate：promptZh「這個包裹太重了，我一個人搬不動。」、hintWords [\"parcel\"]、referenceEn [\"This parcel is too heavy for me to carry alone.\",\"The parcel is so heavy that I can't carry it by myself.\"]、rubricZh [\"用 parcel 表示「包裹」\",\"「搬不動」可寫，例如 too heavy for me to carry、so heavy that I can't carry it 等\"]（原 makeSentence：instructionZh「用 parcel 造一個句子，說說你寄或收包裹的經驗。」、referenceEn [\"I sent a parcel to my cousin in another city last week.\",\"I got a parcel from my aunt yesterday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

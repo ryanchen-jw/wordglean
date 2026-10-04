@@ -231,18 +231,18 @@
     },
     {
       "id": "b1-u03-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "demand",
-      "instructionZh": "用 demand 造一個句子，說說你曾經向別人要求過什麼。",
+      "type": "translate",
+      "promptZh": "老闆要求我們在明天早上以前完成報告。",
+      "hintWords": [
+        "demand"
+      ],
       "referenceEn": [
-        "I demanded an answer from the shop.",
-        "I once demanded my money back from a hotel."
+        "The boss demanded that we finish the report by tomorrow morning.",
+        "Our boss demanded that we finish the report before tomorrow morning."
       ],
       "rubricZh": [
-        "demand 表示「（強烈地）要求」",
-        "後面可接要求的東西、to＋原形動詞或 that 子句（例如 demand an answer、demand to see the manager）",
-        "過去的經驗可用過去式或現在完成式（例如 demanded）",
-        "主詞是自己（I）"
+        "用 demand 表示「要求」（例如 demanded that we finish…；寫 asked us to finish 也正確）",
+        "時態可用 demands、demanded 等；that 子句動詞用原形或 should＋原形都可以（例如 finish、should finish）"
       ]
     }
   ],
@@ -508,6 +508,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"In big supermarkets.\"；改後：\"In large food stores.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（demand）原位換成翻譯題，沿用題 id b1-u03-l06-q17；目標字沿用 demand",
+        "resolution": "改為 translate：promptZh「老闆要求我們在明天早上以前完成報告。」、hintWords [\"demand\"]、referenceEn [\"The boss demanded that we finish the report by tomorrow morning.\",\"Our boss demanded that we finish the report before tomorrow morning.\"]、rubricZh [\"用 demand 表示「要求」（例如 demanded that we finish…；寫 asked us to finish 也正確）\",\"時態可用 demands、demanded 等；that 子句動詞用原形或 should＋原形都可以（例如 finish、should finish）\"]（原 makeSentence：instructionZh「用 demand 造一個句子，說說你曾經向別人要求過什麼。」、referenceEn [\"I demanded an answer from the shop.\",\"I once demanded my money back from a hotel.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u25-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "historical",
-      "instructionZh": "用 historical 造一個句子，說說你去過或想去的歷史景點。",
+      "type": "translate",
+      "promptZh": "這部電影是根據歷史事件改編的。",
+      "hintWords": [
+        "historical"
+      ],
       "referenceEn": [
-        "I visited a historical temple with my family.",
-        "I want to visit a historical town one day."
+        "This movie is based on a historical event.",
+        "The film is based on historical events."
       ],
       "rubricZh": [
-        "historical 表示「歷史的、有關歷史的」，例如 historical buildings 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 historical 表示「歷史的」（例如 a historical event）",
+        "「根據…改編」可寫，例如 is based on 等"
       ]
     }
   ],
@@ -378,6 +379,12 @@
         "message": "執行長裁示：聽選換句話說補正：最終複審 FIX：干擾項改成同樣兩件事、前半對後半錯，正解不再是唯一兩件事的選項",
         "resolution": "改前：\"Clean the safety glasses.\"；改後：\"Read the steps and clean your glasses.\"",
         "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（historical）原位換成翻譯題，沿用題 id b1-u25-l05-q17；目標字沿用 historical",
+        "resolution": "改為 translate：promptZh「這部電影是根據歷史事件改編的。」、hintWords [\"historical\"]、referenceEn [\"This movie is based on a historical event.\",\"The film is based on historical events.\"]、rubricZh [\"用 historical 表示「歷史的」（例如 a historical event）\",\"「根據…改編」可寫，例如 is based on 等\"]（原 makeSentence：instructionZh「用 historical 造一個句子，說說你去過或想去的歷史景點。」、referenceEn [\"I visited a historical temple with my family.\",\"I want to visit a historical town one day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

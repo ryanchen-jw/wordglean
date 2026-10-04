@@ -213,32 +213,32 @@
     {
       "id": "b1-u36-l02-q16",
       "type": "translate",
-      "promptZh": "這兩個字之間有什麼區別？",
+      "promptZh": "老闆對新人和老員工一視同仁，從不做區別。",
       "hintWords": [
         "distinction"
       ],
       "referenceEn": [
-        "What is the distinction between these two words?",
-        "What's the distinction between the two words?"
+        "The boss makes no distinction between new and long-time staff.",
+        "Our boss never makes a distinction between new staff and experienced staff."
       ],
       "rubricZh": [
-        "distinction 表示「區別」，例如 the distinction between… 等說法",
-        "時態配合內容（例如現在簡單式等）"
+        "用 make a distinction between 表示「區別對待」（例如 makes no distinction between…）",
+        "「新人和老員工」可寫，例如 new and long-time staff、new staff and experienced staff 等"
       ]
     },
     {
       "id": "b1-u36-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "unlikely",
-      "instructionZh": "用 unlikely 造一個句子，說說一件你覺得不太可能發生的事。",
+      "type": "translate",
+      "promptZh": "這麼晚了，餐廳不太可能還開著。",
+      "hintWords": [
+        "unlikely"
+      ],
       "referenceEn": [
-        "It is unlikely that I will go abroad this year.",
-        "I'm unlikely to finish this book by Friday."
+        "It's so late that the restaurant is unlikely to be open.",
+        "It is very late, so it is unlikely that the restaurant is still open."
       ],
       "rubricZh": [
-        "unlikely 表示「不太可能的」，例如 It is unlikely that… 等說法",
-        "說的是自己的情況（例如 I）",
-        "時態配合內容（例如說未來的事用 will、be going to 等）"
+        "用 unlikely 表示「不太可能的」（例如 is unlikely to be open、It is unlikely that… 等）"
       ]
     }
   ],
@@ -366,6 +366,24 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"To get free coffee.\"；改後：\"To buy another phone here.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unlikely）原位換成翻譯題，沿用題 id b1-u36-l02-q17；目標字沿用 unlikely",
+        "resolution": "改為 translate：promptZh「這麼晚了，餐廳不太可能還開著。」、hintWords [\"unlikely\"]、referenceEn [\"It's so late that the restaurant is unlikely to be open.\",\"It is very late, so it is unlikely that the restaurant is still open.\"]、rubricZh [\"用 unlikely 表示「不太可能的」（例如 is unlikely to be open、It is unlikely that… 等）\"]（原 makeSentence：instructionZh「用 unlikely 造一個句子，說說一件你覺得不太可能發生的事。」、referenceEn [\"It is unlikely that I will go abroad this year.\",\"I'm unlikely to finish this book by Friday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u36-l04-q16 雷同（兩題都是「這兩個／兩種…之間」（between these two）），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「老闆對新人和老員工一視同仁，從不做區別。」、referenceEn [\"The boss makes no distinction between new and old staff.\",\"Our boss never makes a distinction between new and old workers.\"]、rubricZh [\"用 make a distinction between 表示「區別對待」（例如 makes no distinction between…）\",\"「新人和老員工」可寫，例如 new and old staff、new and old workers 等\"]（原 promptZh「這兩個字之間有什麼區別？」、referenceEn [\"What is the distinction between these two words?\",\"What's the distinction between the two words?\"]、rubricZh [\"distinction 表示「區別」，例如 the distinction between… 等說法\",\"時態配合內容（例如現在簡單式等）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS old staff 易讀成「年紀大的員工」，意思偏移且碰到 §11.19 年齡標籤",
+        "resolution": "改為 referenceEn [\"The boss makes no distinction between new and long-time staff.\",\"Our boss never makes a distinction between new staff and experienced staff.\"]、rubricZh [\"用 make a distinction between 表示「區別對待」（例如 makes no distinction between…）\",\"「新人和老員工」可寫，例如 new and long-time staff、new staff and experienced staff 等\"]（原 referenceEn [\"The boss makes no distinction between new and old staff.\",\"Our boss never makes a distinction between new and old workers.\"]、rubricZh [\"用 make a distinction between 表示「區別對待」（例如 makes no distinction between…）\",\"「新人和老員工」可寫，例如 new and old staff、new and old workers 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

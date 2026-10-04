@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u35-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "inevitable",
-      "instructionZh": "用 inevitable 造一個句子，說說一件你覺得無法避免的事。",
+      "type": "translate",
+      "promptZh": "因為天氣變了，改變計畫是不可避免的。",
+      "hintWords": [
+        "inevitable"
+      ],
       "referenceEn": [
-        "I think it is inevitable that prices will go up.",
-        "Feeling nervous before a test is inevitable for me."
+        "Because the weather changed, a change of plan was inevitable.",
+        "A change of plan was inevitable because the weather changed."
       ],
       "rubricZh": [
-        "inevitable 表示「不可避免的」，例如 It is inevitable that… 等說法",
-        "說的是自己的經驗或想法（例如 I、me）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 inevitable 表示「不可避免的」"
       ]
     }
   ],
@@ -392,6 +392,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審同類問題自查（裁示：不調換釋義順序）：前一輪為避開情境重複把釋義順序調過，改回原順序，改寫例句示範第一義「彎道」，並避開同課其他題的情境",
         "resolution": "改前：\"曲線；彎道\"；改後：\"彎道；曲線\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（inevitable）原位換成翻譯題，沿用題 id b1-u35-l06-q17；目標字沿用 inevitable",
+        "resolution": "改為 translate：promptZh「因為天氣變了，改變計畫是不可避免的。」、hintWords [\"inevitable\"]、referenceEn [\"Because the weather changed, a change of plan was inevitable.\",\"A change of plan was inevitable because the weather changed.\"]、rubricZh [\"用 inevitable 表示「不可避免的」\"]（原 makeSentence：instructionZh「用 inevitable 造一個句子，說說一件你覺得無法避免的事。」、referenceEn [\"I think it is inevitable that prices will go up.\",\"Feeling nervous before a test is inevitable for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u03-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "tend",
-      "instructionZh": "用 tend to 造一個句子，說說你在某種情況下往往會做的事。",
+      "type": "translate",
+      "promptZh": "這裡的夏天往往又熱又多雨。",
+      "hintWords": [
+        "tend"
+      ],
       "referenceEn": [
-        "I tend to sleep late on weekends.",
-        "When I am busy, I tend to forget lunch."
+        "Summers here tend to be hot and rainy.",
+        "Summer here tends to be hot and rainy."
       ],
       "rubricZh": [
-        "tend to＋原形動詞，表示「往往、容易」",
-        "說習慣多用現在簡單式，其他合理時態也接受",
-        "主詞是自己（I）"
+        "用 tend to＋原形動詞表示「往往」（例如 tend to be；寫 are usually 也正確）",
+        "主詞與動詞單複數一致即可（例如 Summers here tend…、Summer here tends… 等）"
       ]
     }
   ],
@@ -369,6 +370,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Print the old posters again.\"；改後：\"Take the posters down after the meeting.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tend）原位換成翻譯題，沿用題 id b1-u03-l04-q17；目標字沿用 tend",
+        "resolution": "改為 translate：promptZh「這裡的夏天往往又熱又多雨。」、hintWords [\"tend\"]、referenceEn [\"Summers here tend to be hot and rainy.\",\"Summer here tends to be hot and rainy.\"]、rubricZh [\"用 tend to＋原形動詞表示「往往」（例如 tend to be；寫 are usually 也正確）\",\"主詞與動詞單複數一致即可（例如 Summers here tend…、Summer here tends… 等）\"]（原 makeSentence：instructionZh「用 tend to 造一個句子，說說你在某種情況下往往會做的事。」、referenceEn [\"I tend to sleep late on weekends.\",\"When I am busy, I tend to forget lunch.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

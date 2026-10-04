@@ -216,17 +216,18 @@
     },
     {
       "id": "b1-u07-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "prosperity",
-      "instructionZh": "用 prosperity 造一個句子，說說你對自己的城市或家鄉未來的希望。",
+      "type": "translate",
+      "promptZh": "這條新鐵路為這個地區帶來了繁榮。",
+      "hintWords": [
+        "prosperity"
+      ],
       "referenceEn": [
-        "I hope my hometown will enjoy more prosperity in the future.",
-        "I wish my city peace and prosperity."
+        "The new railway brought prosperity to this area.",
+        "The new railway has brought prosperity to the area."
       ],
       "rubricZh": [
-        "prosperity 表示「繁榮」，是不可數名詞",
-        "可用 hope、wish 表達希望（例如 I hope…、I wish my city prosperity）",
-        "說的是自己對家鄉、城市等的希望（例如 I hope…）"
+        "用 prosperity 表示「繁榮」（例如 brought prosperity to…）",
+        "時態可用 brought、has brought 等"
       ]
     }
   ],
@@ -450,6 +451,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"To deliver food to the guests.\"；改後：\"To check the heater in the room.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（prosperity）原位換成翻譯題，沿用題 id b1-u07-l06-q16；目標字沿用 prosperity",
+        "resolution": "改為 translate：promptZh「這條新鐵路為這個地區帶來了繁榮。」、hintWords [\"prosperity\"]、referenceEn [\"The new railway brought prosperity to this area.\",\"The new railway has brought prosperity to the area.\"]、rubricZh [\"用 prosperity 表示「繁榮」（例如 brought prosperity to…）\",\"時態可用 brought、has brought 等\"]（原 makeSentence：instructionZh「用 prosperity 造一個句子，說說你對自己的城市或家鄉未來的希望。」、referenceEn [\"I hope my hometown will enjoy more prosperity in the future.\",\"I wish my city peace and prosperity.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

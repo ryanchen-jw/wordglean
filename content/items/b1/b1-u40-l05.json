@@ -215,17 +215,18 @@
     },
     {
       "id": "b1-u40-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "identity card",
-      "instructionZh": "用 identity card 造一個句子，說說你什麼時候需要出示身分證。",
+      "type": "translate",
+      "promptZh": "我身分證上的照片是十年前拍的。",
+      "hintWords": [
+        "identity card"
+      ],
       "referenceEn": [
-        "I need my identity card when I open a bank account.",
-        "I showed my identity card at the airport."
+        "The photo on my identity card was taken ten years ago.",
+        "The picture on my identity card was taken ten years ago."
       ],
       "rubricZh": [
-        "identity card 表示「身分證」，例如 show your identity card 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 identity card 表示「身分證」（寫 ID card 也正確）",
+        "「照片」可寫，例如 photo、picture 等"
       ]
     }
   ],
@@ -329,6 +330,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Nobody is watching the pool.\"；改後：\"No one is there to keep watch.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（identity card）原位換成翻譯題，沿用題 id b1-u40-l05-q16；目標字沿用 identity card",
+        "resolution": "改為 translate：promptZh「我的身分證掉了，得去辦一張新的。」、hintWords [\"identity card\"]、referenceEn [\"I lost my identity card, so I need to get a new one.\",\"I have to get a new identity card because I lost mine.\"]、rubricZh [\"用 identity card 表示「身分證」（寫 ID card 也正確）\"]（原 makeSentence：instructionZh「用 identity card 造一個句子，說說你什麼時候需要出示身分證。」、referenceEn [\"I need my identity card when I open a bank account.\",\"I showed my identity card at the airport.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 與 u19-l01 mcq 題幹「I lost my ____, so … until I get a new one.」句型、情境相同；審查建議的「辦這張卡要帶身分證」又與同單元 citizenship 單字卡 You need citizenship to get… 同句型，改用證件照片情境",
+        "resolution": "改為 promptZh「我身分證上的照片是十年前拍的。」、referenceEn [\"The photo on my identity card was taken ten years ago.\",\"The picture on my identity card was taken ten years ago.\"]、rubricZh [\"用 identity card 表示「身分證」（寫 ID card 也正確）\",\"「照片」可寫，例如 photo、picture 等\"]（原 promptZh「我的身分證掉了，得去辦一張新的。」、referenceEn [\"I lost my identity card, so I need to get a new one.\",\"I have to get a new identity card because I lost mine.\"]、rubricZh [\"用 identity card 表示「身分證」（寫 ID card 也正確）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -215,17 +215,18 @@
     },
     {
       "id": "b1-u41-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "retell",
-      "instructionZh": "用 retell 造一個句子，說說你會重述哪個故事給誰聽。",
+      "type": "translate",
+      "promptZh": "老師請學生用自己的話重述這個故事。",
+      "hintWords": [
+        "retell"
+      ],
       "referenceEn": [
-        "I like to retell funny stories to my little brother.",
-        "I retold the story of my favorite movie to my friends."
+        "The teacher asked the students to retell the story in their own words.",
+        "The teacher had the students retell the story in their own words."
       ],
       "rubricZh": [
-        "retell 表示「重述」，例如 retell a story 等說法",
-        "說的是自己的經驗或習慣（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 retell 表示「重述」",
+        "「用自己的話」可寫，例如 in their own words 等"
       ]
     }
   ],
@@ -377,6 +378,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Because of the strong wind.\"；改後：\"It was too windy.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（retell）原位換成翻譯題，沿用題 id b1-u41-l09-q16；目標字沿用 retell",
+        "resolution": "改為 translate：promptZh「老師請學生用自己的話重述這個故事。」、hintWords [\"retell\"]、referenceEn [\"The teacher asked the students to retell the story in their own words.\",\"The teacher had the students retell the story in their own words.\"]、rubricZh [\"用 retell 表示「重述」\",\"「用自己的話」可寫，例如 in their own words 等\"]（原 makeSentence：instructionZh「用 retell 造一個句子，說說你會重述哪個故事給誰聽。」、referenceEn [\"I like to retell funny stories to my little brother.\",\"I retold the story of my favorite movie to my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

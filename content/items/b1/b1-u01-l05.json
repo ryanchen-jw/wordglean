@@ -232,17 +232,18 @@
     },
     {
       "id": "b1-u01-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "consequently",
-      "instructionZh": "用 consequently 造一個句子，說明一件事造成的結果。",
+      "type": "translate",
+      "promptZh": "這家店漲價了，因此客人變少了。",
+      "hintWords": [
+        "consequently"
+      ],
       "referenceEn": [
-        "It rained all day. Consequently, the game was canceled.",
-        "I forgot to set my alarm and consequently woke up late."
+        "The shop raised its prices. Consequently, it lost many customers.",
+        "The shop raised its prices and consequently lost a lot of customers."
       ],
       "rubricZh": [
-        "consequently 表示「因此；結果」",
-        "前面是原因，後面是結果",
-        "例如放在句首加逗號、放在 and 後面等"
+        "用 consequently 表示「因此」（例如 Consequently, it lost…；寫 As a result、So 也正確）",
+        "「客人變少了」可寫，例如 lost many customers、lost a lot of customers 等"
       ]
     }
   ],
@@ -364,6 +365,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"He washed his car.\"；改後：\"His umbrella was broken.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（consequently）原位換成翻譯題，沿用題 id b1-u01-l05-q17；目標字沿用 consequently",
+        "resolution": "改為 translate：promptZh「這家店漲價了，因此客人變少了。」、hintWords [\"consequently\"]、referenceEn [\"The shop raised its prices. Consequently, it lost many customers.\",\"The shop raised its prices and consequently lost a lot of customers.\"]、rubricZh [\"用 consequently 表示「因此」（例如 Consequently, it lost…；寫 As a result、So 也正確）\",\"「客人變少了」可寫，例如 lost many customers、lost a lot of customers 等\"]（原 makeSentence：instructionZh「用 consequently 造一個句子，說明一件事造成的結果。」、referenceEn [\"It rained all day. Consequently, the game was canceled.\",\"I forgot to set my alarm and consequently woke up late.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

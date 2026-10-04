@@ -245,17 +245,18 @@
     },
     {
       "id": "b1-u01-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "meanwhile",
-      "instructionZh": "用 meanwhile 造一個句子，描述兩個人同時在做的兩件事。",
+      "type": "translate",
+      "promptZh": "火車晚了一個小時。在這期間，我們在車站喝了咖啡。",
+      "hintWords": [
+        "meanwhile"
+      ],
       "referenceEn": [
-        "I washed the dishes. Meanwhile, my sister cleaned the floor.",
-        "My father was driving. Meanwhile, my mother was reading a map."
+        "The train was an hour late. Meanwhile, we had coffee at the station.",
+        "The train was one hour late. Meanwhile, we drank some coffee in the station."
       ],
       "rubricZh": [
-        "meanwhile 表示「在這期間；同時」",
-        "通常放在第二句句首，後面加逗號",
-        "兩件同時進行的事時態要合理（例如過去簡單式、過去進行式）"
+        "用 meanwhile 表示「在這期間」（例如 Meanwhile, we…；寫 In the meantime 也正確）",
+        "「喝了咖啡」可寫，例如 had coffee、drank some coffee 等；時態配合過去的事（例如 was、had 等）"
       ]
     }
   ],
@@ -347,6 +348,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"No, none of the shops had it.\"；改後：\"No, she couldn't get it from any shop.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（meanwhile）原位換成翻譯題，沿用題 id b1-u01-l02-q18；目標字沿用 meanwhile",
+        "resolution": "改為 translate：promptZh「火車晚了一個小時。在這期間，我們在車站喝了咖啡。」、hintWords [\"meanwhile\"]、referenceEn [\"The train was an hour late. Meanwhile, we had coffee at the station.\",\"The train was one hour late. Meanwhile, we drank some coffee in the station.\"]、rubricZh [\"用 meanwhile 表示「在這期間」（例如 Meanwhile, we…；寫 In the meantime 也正確）\",\"「喝了咖啡」可寫，例如 had coffee、drank some coffee 等；時態配合過去的事（例如 was、had 等）\"]（原 makeSentence：instructionZh「用 meanwhile 造一個句子，描述兩個人同時在做的兩件事。」、referenceEn [\"I washed the dishes. Meanwhile, my sister cleaned the floor.\",\"My father was driving. Meanwhile, my mother was reading a map.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

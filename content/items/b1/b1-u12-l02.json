@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u12-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "hard-working",
-      "instructionZh": "用 hard-working 造一個句子，形容你身邊一位很勤奮的人。",
+      "type": "translate",
+      "promptZh": "她是我們班上最勤奮的學生。",
+      "hintWords": [
+        "hard-working"
+      ],
       "referenceEn": [
-        "My father is the most hard-working person I know.",
-        "My hard-working sister studies until midnight."
+        "She is the most hard-working student in our class.",
+        "No one in our class is more hard-working than her."
       ],
       "rubricZh": [
-        "hard-working 表示「勤奮的」，例如放在名詞前、be 動詞後等",
-        "寫的是你認識的人",
-        "時態配合內容（多用現在簡單式）"
+        "用 hard-working 表示「勤奮的」（例如 the most hard-working student；寫 hardest-working 也正確）"
       ]
     }
   ],
@@ -327,6 +327,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"They ate lunch.\"；改後：\"They missed the bus home.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hard-working）原位換成翻譯題，沿用題 id b1-u12-l02-q17；目標字沿用 hard-working",
+        "resolution": "改為 translate：promptZh「她是我們班上最勤奮的學生。」、hintWords [\"hard-working\"]、referenceEn [\"She is the most hard-working student in our class.\",\"No one in our class is more hard-working than her.\"]、rubricZh [\"用 hard-working 表示「勤奮的」（例如 the most hard-working student；寫 hardest-working 也正確）\"]（原 makeSentence：instructionZh「用 hard-working 造一個句子，形容你身邊一位很勤奮的人。」、referenceEn [\"My father is the most hard-working person I know.\",\"My hard-working sister studies until midnight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u03-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "locate",
-      "instructionZh": "用 be located 造一個句子，說說你家或你上班、上學的地方位在哪裡。",
+      "type": "translate",
+      "promptZh": "這所大學位於一座小山上。",
+      "hintWords": [
+        "locate"
+      ],
       "referenceEn": [
-        "My home is located near a big park.",
-        "My office is located on the fifth floor of a tall building."
+        "The university is located on a small hill.",
+        "This university is located on top of a small hill."
       ],
       "rubricZh": [
-        "be located＋地點，表示「位於」（例如 is located near…）",
-        "介系詞依地點選用（例如 near、in、on）",
-        "說的是自己的家、公司或學校（例如 My home、My office）"
+        "用 be located 表示「位於」（例如 is located on…；寫 is on a small hill 也正確）"
       ]
     }
   ],
@@ -309,6 +309,18 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"創造；產生\"；改後：\"產生；創造\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（locate）原位換成翻譯題，沿用題 id b1-u03-l09-q17；目標字沿用 locate",
+        "resolution": "改為 translate：promptZh「我們的新辦公室會設在二樓。」、hintWords [\"locate\"]、referenceEn [\"Our new office will be located on the second floor.\",\"Our new office is going to be located on the second floor.\"]、rubricZh [\"用 be located 表示「位於」（例如 will be located；寫 will be on the second floor 也正確）\",\"表示未來的寫法都可以（例如 will be、is going to be 等）\"]（原 makeSentence：instructionZh「用 be located 造一個句子，說說你家或你上班、上學的地方位在哪裡。」、referenceEn [\"My home is located near a big park.\",\"My office is located on the fifth floor of a tall building.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與舊題 u11-l10-q15「Our office is on the second floor.」幾乎同句；審查建議的「飯店位於市中心」與同課單字卡 The hotel is located… 同主詞同句型，改用大學",
+        "resolution": "改為 promptZh「這所大學位於一座小山上。」、referenceEn [\"The university is located on a small hill.\",\"This university is located on top of a small hill.\"]、rubricZh [\"用 be located 表示「位於」（例如 is located on…；寫 is on a small hill 也正確）\"]（原 promptZh「我們的新辦公室會設在二樓。」、referenceEn [\"Our new office will be located on the second floor.\",\"Our new office is going to be located on the second floor.\"]、rubricZh [\"用 be located 表示「位於」（例如 will be located；寫 will be on the second floor 也正確）\",\"表示未來的寫法都可以（例如 will be、is going to be 等）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

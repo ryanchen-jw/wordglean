@@ -232,18 +232,18 @@
     },
     {
       "id": "b1-u03-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "protect",
-      "instructionZh": "用 protect 造一個句子，說說你會怎麼保護自己或你在乎的東西。",
+      "type": "translate",
+      "promptZh": "當媽媽的總是想保護自己的孩子。",
+      "hintWords": [
+        "protect"
+      ],
       "referenceEn": [
-        "I keep my money in the bank to protect it.",
-        "I use a strong password to protect my phone."
+        "Mothers always want to protect their children.",
+        "A mother always wants to protect her children."
       ],
       "rubricZh": [
-        "protect 表示「保護」，可直接接受詞（例如 protect my money）",
-        "也可用 protect A from B（例如 protect my phone from water）",
-        "例如用 to＋原形動詞說明目的，其他合理寫法也接受",
-        "主詞是自己（I）"
+        "用 protect 表示「保護」（例如 protect their children、protect her kids 等）",
+        "主詞與動詞單複數一致即可（例如 Mothers want…、A mother wants… 等）"
       ]
     }
   ],
@@ -497,6 +497,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"To clean the windows.\"；改後：\"To buy all new furniture.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（protect）原位換成翻譯題，沿用題 id b1-u03-l03-q17；目標字沿用 protect",
+        "resolution": "改為 translate：promptZh「媽媽總是想保護自己的孩子。」、hintWords [\"protect\"]、referenceEn [\"Mothers always want to protect their children.\",\"A mother always wants to protect her children.\"]、rubricZh [\"用 protect 表示「保護」（例如 protect their children、protect her kids 等）\",\"主詞與動詞單複數一致即可（例如 Mothers want…、A mother wants… 等）\"]（原 makeSentence：instructionZh「用 protect 造一個句子，說說你會怎麼保護自己或你在乎的東西。」、referenceEn [\"I keep my money in the bank to protect it.\",\"I use a strong password to protect my phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「媽媽」可讀成自己的媽媽，改成泛指",
+        "resolution": "改為 promptZh「當媽媽的總是想保護自己的孩子。」（原 promptZh「媽媽總是想保護自己的孩子。」）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

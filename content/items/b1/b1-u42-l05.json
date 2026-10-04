@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u42-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "graceful",
-      "instructionZh": "用 graceful 造一個句子，描述一個優雅的人或動物。",
+      "type": "translate",
+      "promptZh": "那位舞者的動作非常優雅。",
+      "hintWords": [
+        "graceful"
+      ],
       "referenceEn": [
-        "My cat is very graceful when she jumps.",
-        "I think my dance teacher is graceful."
+        "The dancer's movements are very graceful.",
+        "That dancer moves in a very graceful way."
       ],
       "rubricZh": [
-        "graceful 表示「優雅的」，例如 a graceful dancer 等說法",
-        "說的是自己的看法（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 graceful 表示「優雅的」（寫 moves gracefully 也正確）"
       ]
     }
   ],
@@ -444,6 +444,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Write the phone number again.\"；改後：\"Fix the wrong number on the form.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（graceful）原位換成翻譯題，沿用題 id b1-u42-l05-q17；目標字沿用 graceful",
+        "resolution": "改為 translate：promptZh「那位舞者的動作非常優雅。」、hintWords [\"graceful\"]、referenceEn [\"The dancer's movements are very graceful.\",\"That dancer moves in a very graceful way.\"]、rubricZh [\"用 graceful 表示「優雅的」（寫 moves gracefully 也正確）\"]（原 makeSentence：instructionZh「用 graceful 造一個句子，描述一個優雅的人或動物。」、referenceEn [\"My cat is very graceful when she jumps.\",\"I think my dance teacher is graceful.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

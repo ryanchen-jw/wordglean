@@ -232,17 +232,18 @@
     },
     {
       "id": "b1-u09-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "honestly",
-      "instructionZh": "用 honestly 造一個句子，老實說出你對某件事的看法。",
+      "type": "translate",
+      "promptZh": "老實說，我不記得他的名字了。",
+      "hintWords": [
+        "honestly"
+      ],
       "referenceEn": [
-        "Honestly, I prefer tea to coffee.",
-        "Honestly, I think this movie is too long."
+        "Honestly, I don't remember his name.",
+        "I honestly can't remember his name."
       ],
       "rubricZh": [
-        "honestly 表示「老實說」，例如放句首加逗號（Honestly, …），也可放在動詞前（I honestly think…）",
-        "說的是自己的看法（例如 I think…，或直接評論某件事）",
-        "時態配合內容（多用現在簡單式）"
+        "用 honestly 表示「老實說」（例如 Honestly, I…、I honestly… 等，位置不限）",
+        "「不記得」可寫，例如 don't remember、can't remember 等"
       ]
     }
   ],
@@ -520,6 +521,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Because the shop closed early.\"；改後：\"Because the customers were rude.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（honestly）原位換成翻譯題，沿用題 id b1-u09-l02-q17；目標字沿用 honestly",
+        "resolution": "改為 translate：promptZh「老實說，我不記得他的名字了。」、hintWords [\"honestly\"]、referenceEn [\"Honestly, I don't remember his name.\",\"I honestly can't remember his name.\"]、rubricZh [\"用 honestly 表示「老實說」（例如 Honestly, I…、I honestly… 等，位置不限）\",\"「不記得」可寫，例如 don't remember、can't remember 等\"]（原 makeSentence：instructionZh「用 honestly 造一個句子，老實說出你對某件事的看法。」、referenceEn [\"Honestly, I prefer tea to coffee.\",\"Honestly, I think this movie is too long.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

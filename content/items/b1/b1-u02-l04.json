@@ -231,18 +231,18 @@
     },
     {
       "id": "b1-u02-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "constantly",
-      "instructionZh": "用 constantly 造一個句子，說說一件你一直在做、停不下來的事。",
+      "type": "translate",
+      "promptZh": "昨晚，隔壁的狗一直不停地叫。",
+      "hintWords": [
+        "constantly"
+      ],
       "referenceEn": [
-        "I constantly check my phone at work.",
-        "I am constantly thinking about my next trip."
+        "Last night, the dog next door barked constantly.",
+        "The dog next door was barking constantly last night."
       ],
       "rubricZh": [
-        "constantly 表示「不斷地、一直」",
-        "可放在一般動詞前或 be 動詞後（例如 I constantly check、I am constantly thinking）",
-        "時態配合內容（例如現在簡單式、現在進行式等）",
-        "主詞是自己（I）"
+        "用 constantly 表示「不停地」（例如 barked constantly；寫 kept barking 也正確）",
+        "時態配合「昨晚」（例如 barked、was barking 等）"
       ]
     }
   ],
@@ -334,6 +334,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"次數；頻率\"；改後：\"頻率；次數\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（constantly）原位換成翻譯題，沿用題 id b1-u02-l04-q17；目標字沿用 constantly",
+        "resolution": "改為 translate：promptZh「昨晚，隔壁的狗一直不停地叫。」、hintWords [\"constantly\"]、referenceEn [\"Last night, the dog next door barked constantly.\",\"The dog next door was barking constantly last night.\"]、rubricZh [\"用 constantly 表示「不停地」（例如 barked constantly；寫 kept barking 也正確）\",\"時態配合「昨晚」（例如 barked、was barking 等）\"]（原 makeSentence：instructionZh「用 constantly 造一個句子，說說一件你一直在做、停不下來的事。」、referenceEn [\"I constantly check my phone at work.\",\"I am constantly thinking about my next trip.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

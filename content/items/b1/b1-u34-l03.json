@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u34-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "abandon",
-      "instructionZh": "用 abandon 造一個句子，說說你曾經放棄的計畫或從不放棄的事。",
+      "type": "translate",
+      "promptZh": "因為天氣太差，他們放棄了爬山的計畫。",
+      "hintWords": [
+        "abandon"
+      ],
       "referenceEn": [
-        "I abandoned my plan to learn the piano.",
-        "I never abandon a book before I finish it."
+        "They abandoned their plan to climb the mountain because of the bad weather.",
+        "Because the weather was bad, they abandoned the climbing plan."
       ],
       "rubricZh": [
-        "abandon 表示「放棄、拋棄」，例如 abandon a plan 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 abandon 表示「放棄」（例如 abandoned their plan；寫 gave up 也正確）"
       ]
     }
   ],
@@ -408,6 +408,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"Send an email.\"；改後：\"Ask your parents to call.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（abandon）原位換成翻譯題，沿用題 id b1-u34-l03-q17；目標字沿用 abandon",
+        "resolution": "改為 translate：promptZh「因為天氣太差，他們放棄了爬山的計畫。」、hintWords [\"abandon\"]、referenceEn [\"They abandoned their plan to climb the mountain because of the bad weather.\",\"Because the weather was bad, they abandoned the climbing plan.\"]、rubricZh [\"用 abandon 表示「放棄」（例如 abandoned their plan；寫 gave up 也正確）\"]（原 makeSentence：instructionZh「用 abandon 造一個句子，說說你曾經放棄的計畫或從不放棄的事。」、referenceEn [\"I abandoned my plan to learn the piano.\",\"I never abandon a book before I finish it.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,18 +231,18 @@
     },
     {
       "id": "b1-u03-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "obtain",
-      "instructionZh": "用 obtain 造一個句子，說說你曾經在哪裡取得某樣東西（例如證件、資料或票）。",
+      "type": "translate",
+      "promptZh": "你可以在大門口拿到免費的地圖。",
+      "hintWords": [
+        "obtain"
+      ],
       "referenceEn": [
-        "I obtained my passport at an office in Taipei.",
-        "I obtained the information from the library website."
+        "You can obtain a free map at the main gate.",
+        "You can obtain free maps at the main entrance."
       ],
       "rubricZh": [
-        "obtain 表示「取得、獲得」，後面接取得的東西",
-        "過去的經驗可用過去式或現在完成式（例如 obtained）",
-        "可用 at、from 等說明地點或來源",
-        "主詞是自己（I）"
+        "用 obtain 表示「取得」（例如 obtain a free map；寫 get、pick up 也正確）",
+        "「大門口」可寫，例如 the main gate、the main entrance、the front gate 等"
       ]
     }
   ],
@@ -364,6 +364,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Wait quietly in the office until help comes.\"；改後：\"Wait at the end of the hall for help.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（obtain）原位換成翻譯題，沿用題 id b1-u03-l01-q17；目標字沿用 obtain",
+        "resolution": "改為 translate：promptZh「你可以在大門口拿到免費的地圖。」、hintWords [\"obtain\"]、referenceEn [\"You can obtain a free map at the main gate.\",\"You can obtain free maps at the main entrance.\"]、rubricZh [\"用 obtain 表示「取得」（例如 obtain a free map；寫 get、pick up 也正確）\",\"「大門口」可寫，例如 the main gate、the main entrance、the front gate 等\"]（原 makeSentence：instructionZh「用 obtain 造一個句子，說說你曾經在哪裡取得某樣東西（例如證件、資料或票）。」、referenceEn [\"I obtained my passport at an office in Taipei.\",\"I obtained the information from the library website.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

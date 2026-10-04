@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u25-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "biography",
-      "instructionZh": "用 biography 造一個句子，說說你讀過或想讀的傳記。",
+      "type": "translate",
+      "promptZh": "這本傳記是她的女兒寫的。",
+      "hintWords": [
+        "biography"
+      ],
       "referenceEn": [
-        "I once read a biography of a famous football player.",
-        "I want to read a biography of my favorite singer."
+        "This biography was written by her daughter.",
+        "Her daughter wrote this biography."
       ],
       "rubricZh": [
-        "biography 表示「傳記」，例如 a biography of… 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 biography 表示「傳記」"
       ]
     }
   ],
@@ -408,6 +408,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It's a holiday.\"；改後：\"Friday is a holiday.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（biography）原位換成翻譯題，沿用題 id b1-u25-l02-q17；目標字沿用 biography",
+        "resolution": "改為 translate：promptZh「這本傳記是她的女兒寫的。」、hintWords [\"biography\"]、referenceEn [\"This biography was written by her daughter.\",\"Her daughter wrote this biography.\"]、rubricZh [\"用 biography 表示「傳記」\"]（原 makeSentence：instructionZh「用 biography 造一個句子，說說你讀過或想讀的傳記。」、referenceEn [\"I once read a biography of a famous football player.\",\"I want to read a biography of my favorite singer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

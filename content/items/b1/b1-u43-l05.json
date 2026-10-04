@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u43-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "relaxing",
-      "instructionZh": "用 relaxing 造一個句子，說說你覺得放鬆的活動。",
+      "type": "translate",
+      "promptZh": "泡個熱水澡很令人放鬆。",
+      "hintWords": [
+        "relaxing"
+      ],
       "referenceEn": [
-        "Reading in bed is relaxing for me.",
-        "I think walking by the sea is very relaxing."
+        "Taking a hot bath is very relaxing.",
+        "A hot bath is really relaxing."
       ],
       "rubricZh": [
-        "relaxing 表示「令人放鬆的」，例如 a relaxing day 等說法",
-        "說的是自己的經驗或想法（例如 I、me）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 relaxing 表示「令人放鬆的」（寫 relaxed 時主詞要是人）"
       ]
     }
   ],
@@ -450,6 +450,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"With a basket of fruit.\"；改後：\"With a gift of fruit.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（relaxing）原位換成翻譯題，沿用題 id b1-u43-l05-q17；目標字沿用 relaxing",
+        "resolution": "改為 translate：promptZh「泡個熱水澡很令人放鬆。」、hintWords [\"relaxing\"]、referenceEn [\"Taking a hot bath is very relaxing.\",\"A hot bath is really relaxing.\"]、rubricZh [\"用 relaxing 表示「令人放鬆的」（寫 relaxed 時主詞要是人）\"]（原 makeSentence：instructionZh「用 relaxing 造一個句子，說說你覺得放鬆的活動。」、referenceEn [\"Reading in bed is relaxing for me.\",\"I think walking by the sea is very relaxing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

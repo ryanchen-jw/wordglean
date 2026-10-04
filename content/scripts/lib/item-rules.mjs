@@ -13,7 +13,7 @@ export const COMPOSITION = {
 };
 
 // 過渡：題庫尚未把造句換成翻譯的級別，照舊題量（1 翻譯＋1 造句）。某級轉換完就從這裡移除。
-export const MS2TR_PENDING_LEVELS = new Set(['B1']);
+export const MS2TR_PENDING_LEVELS = new Set([]);
 
 export function compositionFor(level) {
   return MS2TR_PENDING_LEVELS.has(level) ? { ...COMPOSITION, translate: 1, makeSentence: 1 } : COMPOSITION;

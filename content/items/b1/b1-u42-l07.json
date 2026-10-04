@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u42-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "stuck",
-      "instructionZh": "用 stuck 造一個句子，說說你曾經被卡住或困住的經驗。",
+      "type": "translate",
+      "promptZh": "我們的車陷在泥巴裡了。",
+      "hintWords": [
+        "stuck"
+      ],
       "referenceEn": [
-        "I was stuck in traffic for two hours last Friday.",
-        "My bag got stuck in the bus door."
+        "Our car got stuck in the mud.",
+        "Our car is stuck in the mud."
       ],
       "rubricZh": [
-        "stuck 表示「卡住的、困住的」，例如 get stuck 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 stuck 表示「卡住的；困住的」（例如 got stuck、is stuck 等）"
       ]
     }
   ],
@@ -486,6 +486,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「生動地」，並避開同課其他題的情境",
         "resolution": "改前：\"花園裡開滿了紅色和黃色的花，色彩鮮明。\"；改後：\"孩子們把農場動物畫得很生動。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stuck）原位換成翻譯題，沿用題 id b1-u42-l07-q17；目標字沿用 stuck",
+        "resolution": "改為 translate：promptZh「我們的車陷在泥巴裡了。」、hintWords [\"stuck\"]、referenceEn [\"Our car got stuck in the mud.\",\"Our car is stuck in the mud.\"]、rubricZh [\"用 stuck 表示「卡住的；困住的」（例如 got stuck、is stuck 等）\"]（原 makeSentence：instructionZh「用 stuck 造一個句子，說說你曾經被卡住或困住的經驗。」、referenceEn [\"I was stuck in traffic for two hours last Friday.\",\"My bag got stuck in the bus door.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

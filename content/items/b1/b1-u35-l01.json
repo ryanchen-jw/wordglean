@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "practical",
-      "instructionZh": "用 practical 造一個句子，說說一個你覺得實用的東西或方法。",
+      "type": "translate",
+      "promptZh": "這雙鞋不好看，但很實用。",
+      "hintWords": [
+        "practical"
+      ],
       "referenceEn": [
-        "A small bag is very practical for going to class.",
-        "I think learning to cook is a practical skill."
+        "These shoes aren't pretty, but they are very practical.",
+        "These shoes don't look nice, but they are really practical."
       ],
       "rubricZh": [
-        "practical 表示「實用的」，例如 a practical skill 等說法",
-        "說的是自己的看法（例如 I think）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 practical 表示「實用的」"
       ]
     }
   ],
@@ -336,6 +336,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"There are no classes.\"；改後：\"There are no classes today.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（practical）原位換成翻譯題，沿用題 id b1-u35-l01-q17；目標字沿用 practical",
+        "resolution": "改為 translate：promptZh「這雙鞋不好看，但很實用。」、hintWords [\"practical\"]、referenceEn [\"These shoes aren't pretty, but they are very practical.\",\"These shoes don't look nice, but they are really practical.\"]、rubricZh [\"用 practical 表示「實用的」\"]（原 makeSentence：instructionZh「用 practical 造一個句子，說說一個你覺得實用的東西或方法。」、referenceEn [\"A small bag is very practical for going to class.\",\"I think learning to cook is a practical skill.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

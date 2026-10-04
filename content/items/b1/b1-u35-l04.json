@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "efficient",
-      "instructionZh": "用 efficient 造一個句子，說說你讀書或做事有效率的方法。",
+      "type": "translate",
+      "promptZh": "這台新冰箱比舊的省電多了。",
+      "hintWords": [
+        "efficient"
+      ],
       "referenceEn": [
-        "I am more efficient when I study in the morning.",
-        "Making a list helps me work in an efficient way."
+        "This new fridge is much more efficient than the old one.",
+        "Compared with the old fridge, this new one is much more efficient."
       ],
       "rubricZh": [
-        "efficient 表示「有效率的」，例如 be efficient 等說法",
-        "說的是自己的經驗（例如 I、me）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 efficient 表示「有效率的；省電的」（例如 much more efficient）"
       ]
     }
   ],
@@ -360,6 +360,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Tickets are cheaper than before.\"；改後：\"Buses now come every fifteen minutes.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（efficient）原位換成翻譯題，沿用題 id b1-u35-l04-q17；目標字沿用 efficient",
+        "resolution": "改為 translate：promptZh「這台新冰箱比舊的省電多了。」、hintWords [\"efficient\"]、referenceEn [\"This new fridge is much more efficient than the old one.\",\"Compared with the old fridge, this new one is much more efficient.\"]、rubricZh [\"用 efficient 表示「有效率的；省電的」（例如 much more efficient）\"]（原 makeSentence：instructionZh「用 efficient 造一個句子，說說你讀書或做事有效率的方法。」、referenceEn [\"I am more efficient when I study in the morning.\",\"Making a list helps me work in an efficient way.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

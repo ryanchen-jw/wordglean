@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u25-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "educate",
-      "instructionZh": "用 educate 造一個句子，說說你認為應該怎麼教育孩子。",
+      "type": "translate",
+      "promptZh": "這個展覽的目的是教育大眾了解海洋。",
+      "hintWords": [
+        "educate"
+      ],
       "referenceEn": [
-        "I think we should educate children to be kind.",
-        "I believe parents should educate their kids about safety."
+        "The aim of this show is to educate people about the ocean.",
+        "This show aims to educate the public about the sea."
       ],
       "rubricZh": [
-        "educate 表示「教育」，例如 educate children 等說法",
-        "說的是自己的看法（例如 I think）",
-        "時態配合內容（多用現在簡單式）"
+        "用 educate 表示「教育」（例如 educate people about…）",
+        "「目的是」可寫，例如 aims to、the aim of … is to 等"
       ]
     }
   ],
@@ -366,6 +367,12 @@
         "message": "執行長裁示：聽選換句話說補正：審題員形式線索：選項統一成「In X at Y」句型",
         "resolution": "改前：\"Nine o'clock, in the main hall.\"；改後：\"In the main hall at nine.\"",
         "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（educate）原位換成翻譯題，沿用題 id b1-u25-l07-q17；目標字沿用 educate",
+        "resolution": "改為 translate：promptZh「這個展覽的目的是教育大眾了解海洋。」、hintWords [\"educate\"]、referenceEn [\"The aim of this show is to educate people about the ocean.\",\"This show aims to educate the public about the sea.\"]、rubricZh [\"用 educate 表示「教育」（例如 educate people about…）\",\"「目的是」可寫，例如 aims to、the aim of … is to 等\"]（原 makeSentence：instructionZh「用 educate 造一個句子，說說你認為應該怎麼教育孩子。」、referenceEn [\"I think we should educate children to be kind.\",\"I believe parents should educate their kids about safety.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u37-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "memorable",
-      "instructionZh": "用 memorable 造一個句子，說說你最難忘的一天或一次經驗。",
+      "type": "translate",
+      "promptZh": "那場演唱會是我今年最難忘的經驗。",
+      "hintWords": [
+        "memorable"
+      ],
       "referenceEn": [
-        "My tenth birthday was the most memorable day of my life.",
-        "The trip to the beach with my family was memorable."
+        "That concert was the most memorable experience of the year for me.",
+        "That concert was my most memorable experience this year."
       ],
       "rubricZh": [
-        "memorable 表示「難忘的」，例如 a memorable day 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 memorable 表示「難忘的」"
       ]
     }
   ],
@@ -404,6 +404,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"He sang a song.\"；改後：\"He drove a car on stage.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（memorable）原位換成翻譯題，沿用題 id b1-u37-l06-q17；目標字沿用 memorable",
+        "resolution": "改為 translate：promptZh「那場演唱會是我今年最難忘的經驗。」、hintWords [\"memorable\"]、referenceEn [\"That concert was the most memorable experience of my year.\",\"That concert was my most memorable experience this year.\"]、rubricZh [\"用 memorable 表示「難忘的」\"]（原 makeSentence：instructionZh「用 memorable 造一個句子，說說你最難忘的一天或一次經驗。」、referenceEn [\"My tenth birthday was the most memorable day of my life.\",\"The trip to the beach with my family was memorable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 1 of my year 不道地",
+        "resolution": "改為 referenceEn [\"That concert was the most memorable experience of the year for me.\",\"That concert was my most memorable experience this year.\"]（原 referenceEn [\"That concert was the most memorable experience of my year.\",\"That concert was my most memorable experience this year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u05-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "evenly",
-      "instructionZh": "用 evenly 造一個句子，說說你會把什麼東西平均分配，或均勻地做。",
+      "type": "translate",
+      "promptZh": "油漆塗得均勻，牆壁才會好看。",
+      "hintWords": [
+        "evenly"
+      ],
       "referenceEn": [
-        "I always cut the pizza evenly for my kids.",
-        "I share the housework evenly with my brother."
+        "Paint the wall evenly, and it will look nice.",
+        "If you paint the wall evenly, it will look good."
       ],
       "rubricZh": [
-        "evenly 表示「均勻地、平均地」，常放在動詞或受詞後面（例如 cut it evenly、share it evenly）",
-        "說的是自己的習慣（主詞用 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 evenly 表示「均勻地」（例如 paint the wall evenly）",
+        "「才會好看」可寫，例如 it will look nice、so that it looks good 等"
       ]
     }
   ],
@@ -337,6 +338,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Nothing at all.\"；改後：\"A different size.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（evenly）原位換成翻譯題，沿用題 id b1-u05-l01-q17；目標字沿用 evenly",
+        "resolution": "改為 translate：promptZh「油漆塗得均勻，牆壁才會好看。」、hintWords [\"evenly\"]、referenceEn [\"Paint the wall evenly, and it will look nice.\",\"If you paint the wall evenly, it will look good.\"]、rubricZh [\"用 evenly 表示「均勻地」（例如 paint the wall evenly）\",\"「才會好看」可寫，例如 it will look nice、so that it looks good 等\"]（原 makeSentence：instructionZh「用 evenly 造一個句子，說說你會把什麼東西平均分配，或均勻地做。」、referenceEn [\"I always cut the pizza evenly for my kids.\",\"I share the housework evenly with my brother.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

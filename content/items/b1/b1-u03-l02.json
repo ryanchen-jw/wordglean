@@ -233,17 +233,18 @@
     },
     {
       "id": "b1-u03-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "renew",
-      "instructionZh": "用 renew 造一個句子，說說你最近續過或即將更新的東西（例如證件、會員）。",
+      "type": "translate",
+      "promptZh": "我忘了續借圖書館的書。",
+      "hintWords": [
+        "renew"
+      ],
       "referenceEn": [
-        "I renewed my library card last week.",
-        "I am going to renew my driving license next month."
+        "I forgot to renew my library books.",
+        "I forgot to renew the books from the library."
       ],
       "rubricZh": [
-        "renew 表示「更新、續（期）」，後面接證件、會員或合約等",
-        "已發生的事用過去式（例如 renewed），未來可用 will、be going to 等",
-        "主詞是自己（I）"
+        "用 renew 表示「續借」（例如 renew my library books）",
+        "時態可用 forgot、have forgotten 等"
       ]
     }
   ],
@@ -461,6 +462,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Renew the gym membership.\"；改後：\"Sign up for the gym again.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（renew）原位換成翻譯題，沿用題 id b1-u03-l02-q17；目標字沿用 renew",
+        "resolution": "改為 translate：promptZh「我忘了續借圖書館的書。」、hintWords [\"renew\"]、referenceEn [\"I forgot to renew my library books.\",\"I forgot to renew the books from the library.\"]、rubricZh [\"用 renew 表示「續借」（例如 renew my library books）\",\"時態可用 forgot、have forgotten 等\"]（原 makeSentence：instructionZh「用 renew 造一個句子，說說你最近續過或即將更新的東西（例如證件、會員）。」、referenceEn [\"I renewed my library card last week.\",\"I am going to renew my driving license next month.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

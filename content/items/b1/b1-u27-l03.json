@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u27-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "wasteful",
-      "instructionZh": "用 wasteful 造一個句子，說說你覺得浪費的行為。",
+      "type": "translate",
+      "promptZh": "只用一次的塑膠杯很浪費。",
+      "hintWords": [
+        "wasteful"
+      ],
       "referenceEn": [
-        "I think it is wasteful to leave the TV on all day.",
-        "Buying too many clothes is wasteful."
+        "Using plastic cups only once is wasteful.",
+        "Plastic cups that you use only once are wasteful."
       ],
       "rubricZh": [
-        "wasteful 表示「浪費的」，例如 it is wasteful to… 等說法",
-        "說的是自己的看法（例如 I think）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 wasteful 表示「浪費的」",
+        "「只用一次」可寫，例如 using … only once、that you use only once 等"
       ]
     }
   ],
@@ -330,6 +331,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It checks the weather.\"；改後：\"It checks the sea water.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wasteful）原位換成翻譯題，沿用題 id b1-u27-l03-q17；目標字沿用 wasteful",
+        "resolution": "改為 translate：promptZh「只用一次的塑膠杯很浪費。」、hintWords [\"wasteful\"]、referenceEn [\"Using plastic cups only once is wasteful.\",\"Plastic cups that you use only once are wasteful.\"]、rubricZh [\"用 wasteful 表示「浪費的」\",\"「只用一次」可寫，例如 using … only once、that you use only once 等\"]（原 makeSentence：instructionZh「用 wasteful 造一個句子，說說你覺得浪費的行為。」、referenceEn [\"I think it is wasteful to leave the TV on all day.\",\"Buying too many clothes is wasteful.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

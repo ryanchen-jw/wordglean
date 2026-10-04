@@ -233,17 +233,18 @@
     },
     {
       "id": "b1-u03-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "adopt",
-      "instructionZh": "用 adopt 造一個句子，說說你想採用的新習慣或方法，或想收養的動物。",
+      "type": "translate",
+      "promptZh": "那個男孩是在三歲時被收養的。",
+      "hintWords": [
+        "adopt"
+      ],
       "referenceEn": [
-        "I want to adopt a healthier way of eating.",
-        "I hope to adopt a dog next year."
+        "The boy was adopted when he was three.",
+        "That boy was adopted at the age of three."
       ],
       "rubricZh": [
-        "adopt 可表示「採用（方法、習慣）」、「收養（動物）」等意思",
-        "想做的事可用 want to、hope to、would like to 等",
-        "主詞是自己（I）"
+        "用 adopt 表示「收養」，這裡用被動（例如 was adopted）",
+        "「三歲時」可寫，例如 when he was three、at the age of three、at three 等"
       ]
     }
   ],
@@ -401,6 +402,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"He gave a nod.\"；改後：\"He nodded his head.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（adopt）原位換成翻譯題，沿用題 id b1-u03-l08-q17；目標字沿用 adopt",
+        "resolution": "改為 translate：promptZh「那個男孩是在三歲時被收養的。」、hintWords [\"adopt\"]、referenceEn [\"The boy was adopted when he was three.\",\"That boy was adopted at the age of three.\"]、rubricZh [\"用 adopt 表示「收養」，這裡用被動（例如 was adopted）\",\"「三歲時」可寫，例如 when he was three、at the age of three、at three 等\"]（原 makeSentence：instructionZh「用 adopt 造一個句子，說說你想採用的新習慣或方法，或想收養的動物。」、referenceEn [\"I want to adopt a healthier way of eating.\",\"I hope to adopt a dog next year.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

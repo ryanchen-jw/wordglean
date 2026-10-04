@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u43-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "easygoing",
-      "instructionZh": "用 easygoing 造一個句子，描述一位個性隨和的人。",
+      "type": "translate",
+      "promptZh": "我的新鄰居很隨和，很少為小事煩惱。",
+      "hintWords": [
+        "easygoing"
+      ],
       "referenceEn": [
-        "My best friend is easygoing and fun to be with.",
-        "My grandma is an easygoing person who laughs a lot."
+        "My new neighbor is easygoing and rarely worries about small things.",
+        "My new neighbor is very easygoing; small things rarely bother him."
       ],
       "rubricZh": [
-        "easygoing 表示「隨和的」，例如 an easygoing person 等說法",
-        "說的是自己認識的人（例如 my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 easygoing 表示「隨和的」",
+        "鄰居用 he、she 都可以"
       ]
     }
   ],
@@ -446,6 +447,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） C：例句改用了次要詞義，照裁示不調換釋義順序，改寫例句示範第一義「隨和的」，並避開同課其他題的情境",
         "resolution": "改前：\"島上的生活步調慢又悠閒。\"；改後：\"隨和的人很快就能交到朋友。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（easygoing）原位換成翻譯題，沿用題 id b1-u43-l07-q17；目標字沿用 easygoing",
+        "resolution": "改為 translate：promptZh「我的新鄰居很隨和，很少為小事煩惱。」、hintWords [\"easygoing\"]、referenceEn [\"My new neighbor is easygoing and rarely worries about small things.\",\"My new neighbor is very easygoing; small things rarely bother him.\"]、rubricZh [\"用 easygoing 表示「隨和的」\",\"鄰居用 he、she 都可以\"]（原 makeSentence：instructionZh「用 easygoing 造一個句子，描述一位個性隨和的人。」、referenceEn [\"My best friend is easygoing and fun to be with.\",\"My grandma is an easygoing person who laughs a lot.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

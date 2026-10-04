@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u32-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "leadership",
-      "instructionZh": "用 leadership 造一個句子，說說你認識的人或你自己的領導能力。",
+      "type": "translate",
+      "promptZh": "在她的領導下，球隊贏得了冠軍。",
+      "hintWords": [
+        "leadership"
+      ],
       "referenceEn": [
-        "My captain has strong leadership skills.",
-        "I learned leadership when I was class leader."
+        "Under her leadership, the team won the championship.",
+        "Under her leadership, the team became champions."
       ],
       "rubricZh": [
-        "leadership 表示「領導、領導能力」，是不可數名詞，例如 leadership skills 等說法",
-        "說的是自己或認識的人（例如 I、my）",
-        "時態配合內容（例如現在簡單式、過去式等）"
+        "用 leadership 表示「領導」（例如 under her leadership）",
+        "「贏得冠軍」可寫，例如 won the championship、became champions 等"
       ]
     }
   ],
@@ -306,6 +307,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The front desk downstairs.\"；改後：\"The manager, by Monday.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（leadership）原位換成翻譯題，沿用題 id b1-u32-l02-q17；目標字沿用 leadership",
+        "resolution": "改為 translate：promptZh「在她的領導下，球隊贏得了冠軍。」、hintWords [\"leadership\"]、referenceEn [\"Under her leadership, the team won the championship.\",\"Under her leadership, the team became champions.\"]、rubricZh [\"用 leadership 表示「領導」（例如 under her leadership）\",\"「贏得冠軍」可寫，例如 won the championship、became champions 等\"]（原 makeSentence：instructionZh「用 leadership 造一個句子，說說你認識的人或你自己的領導能力。」、referenceEn [\"My captain has strong leadership skills.\",\"I learned leadership when I was class leader.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

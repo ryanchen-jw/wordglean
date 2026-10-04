@@ -234,17 +234,18 @@
     },
     {
       "id": "b1-u01-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "moreover",
-      "instructionZh": "用 moreover 造兩個句子，說明你喜歡某個地方的兩個理由。",
+      "type": "translate",
+      "promptZh": "這份工作離我家很近。此外，薪水也不錯。",
+      "hintWords": [
+        "moreover"
+      ],
       "referenceEn": [
-        "This cafe is quiet. Moreover, the coffee is cheap.",
-        "The park is quiet. Moreover, it is close to my home."
+        "This job is close to my home. Moreover, the pay is good.",
+        "The job is near my home. Moreover, it pays well."
       ],
       "rubricZh": [
-        "moreover 用來補充另一個理由",
-        "通常放在第二句句首，後面加逗號",
-        "前後兩句的意思方向一致"
+        "用 moreover 補充同方向的理由（例如 Moreover, the pay…；寫 Furthermore、Also 也正確）",
+        "「薪水不錯」可寫，例如 the pay is good、it pays well 等"
       ]
     }
   ],
@@ -352,6 +353,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"She goes to sleep.\"；改後：\"She goes for a long drive.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（moreover）原位換成翻譯題，沿用題 id b1-u01-l03-q17；目標字沿用 moreover",
+        "resolution": "改為 translate：promptZh「這份工作離我家很近。此外，薪水也不錯。」、hintWords [\"moreover\"]、referenceEn [\"This job is close to my home. Moreover, the pay is good.\",\"The job is near my home. Moreover, it pays well.\"]、rubricZh [\"用 moreover 補充同方向的理由（例如 Moreover, the pay…；寫 Furthermore、Also 也正確）\",\"「薪水不錯」可寫，例如 the pay is good、it pays well 等\"]（原 makeSentence：instructionZh「用 moreover 造兩個句子，說明你喜歡某個地方的兩個理由。」、referenceEn [\"This cafe is quiet. Moreover, the coffee is cheap.\",\"The park is quiet. Moreover, it is close to my home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

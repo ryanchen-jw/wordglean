@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u01-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "nevertheless",
-      "instructionZh": "用 nevertheless 造兩個句子，說一件不順利但你仍然做到的事。",
+      "type": "translate",
+      "promptZh": "這家餐廳很貴。儘管如此，每天晚上還是坐滿了客人。",
+      "hintWords": [
+        "nevertheless"
+      ],
       "referenceEn": [
-        "I was very tired. Nevertheless, I finished my homework.",
-        "The road was busy. Nevertheless, we arrived on time."
+        "This restaurant is expensive. Nevertheless, it is full every night.",
+        "This restaurant is expensive. Nevertheless, it is full of customers every night."
       ],
       "rubricZh": [
-        "nevertheless 表示「儘管如此」",
-        "前一句是不利的情況，後一句是儘管如此仍然發生的事",
-        "通常放在第二句句首，後面加逗號"
+        "用 nevertheless 表示「儘管如此」（例如 Nevertheless, it is full…；寫 However、Still 也正確）",
+        "「坐滿了客人」可寫，例如 is full、is full of customers 等"
       ]
     }
   ],
@@ -345,6 +346,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"He watched TV.\"；改後：\"He sat in the park.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nevertheless）原位換成翻譯題，沿用題 id b1-u01-l04-q17；目標字沿用 nevertheless",
+        "resolution": "改為 translate：promptZh「這家餐廳很貴。儘管如此，每天晚上還是坐滿了客人。」、hintWords [\"nevertheless\"]、referenceEn [\"This restaurant is expensive. Nevertheless, it is full every night.\",\"This restaurant is expensive. Nevertheless, it is full of customers every night.\"]、rubricZh [\"用 nevertheless 表示「儘管如此」（例如 Nevertheless, it is full…；寫 However、Still 也正確）\",\"「坐滿了客人」可寫，例如 is full、is full of customers 等\"]（原 makeSentence：instructionZh「用 nevertheless 造兩個句子，說一件不順利但你仍然做到的事。」、referenceEn [\"I was very tired. Nevertheless, I finished my homework.\",\"The road was busy. Nevertheless, we arrived on time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

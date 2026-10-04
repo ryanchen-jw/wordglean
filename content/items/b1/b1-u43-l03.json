@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u43-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "amusing",
-      "instructionZh": "用 amusing 造一個句子，說說一件你覺得好笑的事。",
+      "type": "translate",
+      "promptZh": "他的笑話很有趣，大家都笑了。",
+      "hintWords": [
+        "amusing"
+      ],
       "referenceEn": [
-        "My cat's habits are very amusing.",
-        "I read an amusing story about a talking dog."
+        "His jokes were so amusing that everyone laughed.",
+        "His jokes were very amusing, and everybody laughed."
       ],
       "rubricZh": [
-        "amusing 表示「有趣的、好笑的」，例如 an amusing story 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 amusing 表示「有趣的；好笑的」",
+        "時態配合內容（例如 were、are 等）"
       ]
     }
   ],
@@ -408,6 +409,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"His ice cream fell on the floor.\"；改後：\"He dropped his ice cream.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（amusing）原位換成翻譯題，沿用題 id b1-u43-l03-q17；目標字沿用 amusing",
+        "resolution": "改為 translate：promptZh「他把旅行中發生的趣事說給我們聽。」、hintWords [\"amusing\"]、referenceEn [\"He told us an amusing story about his trip.\",\"He told us some amusing things that happened on his trip.\"]、rubricZh [\"用 amusing 表示「有趣的；好笑的」\"]（原 makeSentence：instructionZh「用 amusing 造一個句子，說說一件你覺得好笑的事。」、referenceEn [\"My cat's habits are very amusing.\",\"I read an amusing story about a talking dog.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與 u35-l05 跟讀「He told us an incredible story about his trip…」只換形容詞",
+        "resolution": "改為 promptZh「他的笑話很有趣，大家都笑了。」、referenceEn [\"His jokes were so amusing that everyone laughed.\",\"His jokes were very amusing, and everybody laughed.\"]、rubricZh [\"用 amusing 表示「有趣的；好笑的」\",\"時態配合內容（例如 were、are 等）\"]（原 promptZh「他把旅行中發生的趣事說給我們聽。」、referenceEn [\"He told us an amusing story about his trip.\",\"He told us some amusing things that happened on his trip.\"]、rubricZh [\"用 amusing 表示「有趣的；好笑的」\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

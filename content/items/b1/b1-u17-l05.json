@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u17-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "emperor",
-      "instructionZh": "用 emperor 造一個句子，說說你知道或讀過的一位皇帝。",
+      "type": "translate",
+      "promptZh": "他十歲就當上了皇帝。",
+      "hintWords": [
+        "emperor"
+      ],
       "referenceEn": [
-        "I read a story about a kind emperor.",
-        "I learned that this emperor built many roads and canals."
+        "He became emperor when he was only ten.",
+        "He became emperor at the age of ten."
       ],
       "rubricZh": [
-        "emperor 表示「皇帝」",
-        "可寫你讀過、看過、學過等的內容",
-        "時態配合內容（例如說歷史用過去式）"
+        "用 emperor 表示「皇帝」（例如 became emperor；寫 became the emperor 也正確）",
+        "「十歲」可寫，例如 when he was ten、at the age of ten 等"
       ]
     }
   ],
@@ -355,6 +356,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Next to the crossing.\"；改後：\"Beside the crossing.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（emperor）原位換成翻譯題，沿用題 id b1-u17-l05-q17；目標字沿用 emperor",
+        "resolution": "改為 translate：promptZh「他十歲就當上了皇帝。」、hintWords [\"emperor\"]、referenceEn [\"He became emperor when he was only ten.\",\"He became emperor at the age of ten.\"]、rubricZh [\"用 emperor 表示「皇帝」（例如 became emperor；寫 became the emperor 也正確）\",\"「十歲」可寫，例如 when he was ten、at the age of ten 等\"]（原 makeSentence：instructionZh「用 emperor 造一個句子，說說你知道或讀過的一位皇帝。」、referenceEn [\"I read a story about a kind emperor.\",\"I learned that this emperor built many roads and canals.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

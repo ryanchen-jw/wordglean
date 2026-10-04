@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u41-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "bore",
-      "instructionZh": "用 bore 造一個句子，說說什麼事情會讓你覺得無聊。",
+      "type": "translate",
+      "promptZh": "他一直講他的工作，讓大家覺得很無聊。",
+      "hintWords": [
+        "bore"
+      ],
       "referenceEn": [
-        "Waiting in line always bores me.",
-        "Math class sometimes bores me, but I still listen."
+        "He talked about his job all the time and bored everyone.",
+        "He kept talking about his job, which bored everyone."
       ],
       "rubricZh": [
-        "bore 表示「使厭煩、使無聊」，例如 … bores me 等說法",
-        "說的是自己的感受（例如 me）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 bore 表示「使厭煩」（例如 bored everyone）"
       ]
     }
   ],
@@ -414,6 +414,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It was late.\"；改後：\"The movie ended early.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bore）原位換成翻譯題，沿用題 id b1-u41-l05-q17；目標字沿用 bore",
+        "resolution": "改為 translate：promptZh「他一直講他的工作，讓大家覺得很無聊。」、hintWords [\"bore\"]、referenceEn [\"He talked about his job all the time and bored everyone.\",\"He kept talking about his job, which bored everyone.\"]、rubricZh [\"用 bore 表示「使厭煩」（例如 bored everyone）\"]（原 makeSentence：instructionZh「用 bore 造一個句子，說說什麼事情會讓你覺得無聊。」、referenceEn [\"Waiting in line always bores me.\",\"Math class sometimes bores me, but I still listen.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -6,7 +6,10 @@
   "model": "claude-dev",
   "author": "claude-dev",
   "authoredAt": "2026-10-02T18:39:42Z",
-  "properNouns": [],
+  "properNouns": [
+    "Christmas",
+    "Eve"
+  ],
   "items": [
     {
       "id": "b1-u22-l04-q01",
@@ -228,16 +231,17 @@
     },
     {
       "id": "b1-u22-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "choir",
-      "instructionZh": "用 choir 造一個句子，說說你或認識的人參加合唱團的經驗。",
+      "type": "translate",
+      "promptZh": "教堂的合唱團每年聖誕夜都會唱歌。",
+      "hintWords": [
+        "choir"
+      ],
       "referenceEn": [
-        "I sang in a choir when I was in high school.",
-        "My aunt has sung in a choir for twenty years."
+        "The church choir sings every year on Christmas Eve.",
+        "Every Christmas Eve, the church choir sings."
       ],
       "rubricZh": [
-        "choir 表示「合唱團」，例如 sing in a choir 等說法",
-        "時態配合內容（例如過去式、現在完成式等）"
+        "用 choir 表示「合唱團」（例如 the church choir）"
       ]
     }
   ],
@@ -371,6 +375,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"Only on Fridays.\"；改後：\"Every Monday night.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（choir）原位換成翻譯題，沿用題 id b1-u22-l04-q17；目標字沿用 choir",
+        "resolution": "改為 translate：promptZh「教堂的合唱團每年聖誕夜都會唱歌。」、hintWords [\"choir\"]、referenceEn [\"The church choir sings every year on Christmas Eve.\",\"Every Christmas Eve, the church choir sings.\"]、rubricZh [\"用 choir 表示「合唱團」（例如 the church choir）\"]（原 makeSentence：instructionZh「用 choir 造一個句子，說說你或認識的人參加合唱團的經驗。」、referenceEn [\"I sang in a choir when I was in high school.\",\"My aunt has sung in a choir for twenty years.\"]）；properNouns 加 Christmas、Eve",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

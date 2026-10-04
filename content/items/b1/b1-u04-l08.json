@@ -8,7 +8,8 @@
   "authoredAt": "2026-10-02T14:56:49Z",
   "properNouns": [
     "Taipei",
-    "Taiwan"
+    "Taiwan",
+    "English"
   ],
   "items": [
     {
@@ -232,17 +233,18 @@
     },
     {
       "id": "b1-u04-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "essential",
-      "instructionZh": "用 essential 造一個句子，說說一樣對你來說不可缺少的東西。",
+      "type": "translate",
+      "promptZh": "做這份工作，良好的英文能力是必要的。",
+      "hintWords": [
+        "essential"
+      ],
       "referenceEn": [
-        "Coffee is essential for me in the morning.",
-        "My phone is essential for my work."
+        "Good English is essential for this job.",
+        "Good English skills are essential in this job."
       ],
       "rubricZh": [
-        "essential 表示「必要的、不可缺少的」，常用 be essential for／to（例如 essential for me）",
-        "說的是自己生活中的東西（例如 me、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 essential 表示「必要的」（例如 is essential for、are essential in 等）",
+        "「良好的英文能力」可寫，例如 good English、good English skills 等"
       ]
     }
   ],
@@ -376,6 +378,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Call the owner.\"；改後：\"Come back later today.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（essential）原位換成翻譯題，沿用題 id b1-u04-l08-q17；目標字沿用 essential",
+        "resolution": "改為 translate：promptZh「做這份工作，良好的英文能力是必要的。」、hintWords [\"essential\"]、referenceEn [\"Good English is essential for this job.\",\"Good English skills are essential in this job.\"]、rubricZh [\"用 essential 表示「必要的」（例如 is essential for、are essential in 等）\",\"「良好的英文能力」可寫，例如 good English、good English skills 等\"]（原 makeSentence：instructionZh「用 essential 造一個句子，說說一樣對你來說不可缺少的東西。」、referenceEn [\"Coffee is essential for me in the morning.\",\"My phone is essential for my work.\"]）；properNouns 加 English",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

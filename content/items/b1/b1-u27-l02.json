@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u27-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "recycling",
-      "instructionZh": "用 recycling 造一個句子，說說你家怎麼做回收。",
+      "type": "translate",
+      "promptZh": "這棟大樓的回收區在地下室。",
+      "hintWords": [
+        "recycling"
+      ],
       "referenceEn": [
-        "My family does recycling every week.",
-        "I take our recycling to the bins on Sunday."
+        "The recycling area of this building is in the basement.",
+        "This building's recycling area is in the basement."
       ],
       "rubricZh": [
-        "recycling 表示「回收」，例如 do recycling 等說法",
-        "說的是自己的經驗（例如 I、my family）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 recycling 表示「資源回收」（例如 the recycling area）"
       ]
     }
   ],
@@ -300,6 +300,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審 FIX（b1b4-final） #44：rich（豐富）義較高，rich ecosystem 改 healthy ecosystem",
         "resolution": "改前：\"我阿姨是一位環保人士，在一個保育團體工作。她的團隊保護我們城市附近的一座湖。這座湖有豐富的生態系統：魚、鳥、昆蟲和微小的生物都互相依賴。去年，這個團體蓋了一間小溫室來種本地植物，之後再把它們種到湖邊。阿姨說保護這座湖很重要，因為它有生態價值。她也在辦公室推動了一個回收計畫。因為她，我開始對生態學感興趣，現在我想在大學讀這個科目。\"；改後：\"我阿姨是一位環保人士，在一個保育團體工作。她的團隊保護我們城市附近的一座湖。這座湖有健康的生態系統：魚、鳥、昆蟲和微小的生物都互相依賴。去年，這個團體蓋了一間小溫室來種本地植物，之後再把它們種到湖邊。阿姨說保護這座湖很重要，因為它有生態價值。她也在辦公室推動了一個回收計畫。因為她，我開始對生態學感興趣，現在我想在大學讀這個科目。\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（recycling）原位換成翻譯題，沿用題 id b1-u27-l02-q17；目標字沿用 recycling",
+        "resolution": "改為 translate：promptZh「這棟大樓的回收區在地下室。」、hintWords [\"recycling\"]、referenceEn [\"The recycling area of this building is in the basement.\",\"This building's recycling area is in the basement.\"]、rubricZh [\"用 recycling 表示「資源回收」（例如 the recycling area）\"]（原 makeSentence：instructionZh「用 recycling 造一個句子，說說你家怎麼做回收。」、referenceEn [\"My family does recycling every week.\",\"I take our recycling to the bins on Sunday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

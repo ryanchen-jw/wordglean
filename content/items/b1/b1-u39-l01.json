@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u39-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "spider",
-      "instructionZh": "用 spider 造一個句子，說說你對蜘蛛的感覺或經驗。",
+      "type": "translate",
+      "promptZh": "蜘蛛有八隻腳，不是六隻。",
+      "hintWords": [
+        "spider"
+      ],
       "referenceEn": [
-        "I am afraid of big spiders.",
-        "I once found a spider in my shoe."
+        "A spider has eight legs, not six.",
+        "Spiders have eight legs, not six."
       ],
       "rubricZh": [
-        "spider 表示「蜘蛛」，例如 a big spider 等說法",
-        "說的是自己的經驗或感覺（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 spider 表示「蜘蛛」（單複數都可以）"
       ]
     }
   ],
@@ -366,6 +366,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A big storm.\"；改後：\"A big storm after nine.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（spider）原位換成翻譯題，沿用題 id b1-u39-l01-q17；目標字沿用 spider",
+        "resolution": "改為 translate：promptZh「蜘蛛有八隻腳，不是六隻。」、hintWords [\"spider\"]、referenceEn [\"A spider has eight legs, not six.\",\"Spiders have eight legs, not six.\"]、rubricZh [\"用 spider 表示「蜘蛛」（單複數都可以）\"]（原 makeSentence：instructionZh「用 spider 造一個句子，說說你對蜘蛛的感覺或經驗。」、referenceEn [\"I am afraid of big spiders.\",\"I once found a spider in my shoe.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

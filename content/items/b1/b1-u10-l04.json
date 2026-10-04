@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u10-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "stylish",
-      "instructionZh": "用 stylish 造一個句子，形容你認識的人或你喜歡的地方很有型。",
+      "type": "translate",
+      "promptZh": "這家咖啡店裡面布置得很時髦。",
+      "hintWords": [
+        "stylish"
+      ],
       "referenceEn": [
-        "My aunt always looks stylish.",
-        "I like this stylish little cafe."
+        "The inside of this cafe is very stylish.",
+        "This cafe looks very stylish inside."
       ],
       "rubricZh": [
-        "stylish 表示「時髦的、有型的」，可放在名詞前或 look、be 等動詞後",
-        "可以寫人、地方等",
-        "時態配合內容（多用現在簡單式）"
+        "用 stylish 表示「時髦的；有型的」（例如 very stylish）"
       ]
     }
   ],
@@ -327,6 +327,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"捲毛的；捲曲的\"；改後：\"捲曲的；捲毛的\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stylish）原位換成翻譯題，沿用題 id b1-u10-l04-q17；目標字沿用 stylish",
+        "resolution": "改為 translate：promptZh「這家咖啡店裡面布置得很時髦。」、hintWords [\"stylish\"]、referenceEn [\"The inside of this cafe is very stylish.\",\"This cafe looks very stylish inside.\"]、rubricZh [\"用 stylish 表示「時髦的；有型的」（例如 very stylish）\"]（原 makeSentence：instructionZh「用 stylish 造一個句子，形容你認識的人或你喜歡的地方很有型。」、referenceEn [\"My aunt always looks stylish.\",\"I like this stylish little cafe.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

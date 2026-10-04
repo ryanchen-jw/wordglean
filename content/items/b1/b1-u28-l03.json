@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u28-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "civil",
-      "instructionZh": "用 civil 造一個句子，說說你怎麼和別人保持禮貌。",
+      "type": "translate",
+      "promptZh": "我們的鄰居不太熱情，但至少很有禮貌。",
+      "hintWords": [
+        "civil"
+      ],
       "referenceEn": [
-        "I try to stay civil when people are rude to me.",
-        "I stay civil with my neighbors, even when they are noisy."
+        "Our neighbor isn't very warm, but he is at least civil.",
+        "Our neighbor is not very warm, but at least she is civil."
       ],
       "rubricZh": [
-        "civil 表示「有禮貌的」，例如 stay civil、be civil to… 等說法",
-        "說的是自己的做法或看法（例如 I、we）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 civil 表示「（至少）有禮貌的」（例如 he is civil；寫 polite 也正確）",
+        "「至少」可寫，例如 at least 等；he、she 都可以"
       ]
     }
   ],
@@ -333,6 +334,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"At the main office.\"；改後：\"At the central office.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（civil）原位換成翻譯題，沿用題 id b1-u28-l03-q17；目標字沿用 civil",
+        "resolution": "改為 translate：promptZh「我們的鄰居不太熱情，但至少很有禮貌。」、hintWords [\"civil\"]、referenceEn [\"Our neighbor isn't very warm, but he is at least civil.\",\"Our neighbor is not very warm, but at least she is civil.\"]、rubricZh [\"用 civil 表示「（至少）有禮貌的」（例如 he is civil；寫 polite 也正確）\",\"「至少」可寫，例如 at least 等；he、she 都可以\"]（原 makeSentence：instructionZh「用 civil 造一個句子，說說你怎麼和別人保持禮貌。」、referenceEn [\"I try to stay civil when people are rude to me.\",\"I stay civil with my neighbors, even when they are noisy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

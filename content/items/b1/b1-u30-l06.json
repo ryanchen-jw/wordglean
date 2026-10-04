@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u30-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "blog",
-      "instructionZh": "用 blog 造一個句子，說說你常看或想寫的部落格。",
+      "type": "translate",
+      "promptZh": "她每週在部落格上分享她煮的菜。",
+      "hintWords": [
+        "blog"
+      ],
       "referenceEn": [
-        "I read a blog about football every day.",
-        "I want to start a blog about my cat."
+        "She shares the dishes she cooks on her blog every week.",
+        "Every week, she writes about her cooking on her blog."
       ],
       "rubricZh": [
-        "blog 表示「部落格」，可數名詞，例如 read a blog、start a blog 等說法",
-        "說的是自己的習慣或想法（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 blog 表示「部落格」（例如 on her blog）",
+        "「分享」可寫，例如 shares、writes about、posts 等"
       ]
     }
   ],
@@ -306,6 +307,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Because it is a speaking test.\"；改後：\"Because it is a reading test.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（blog）原位換成翻譯題，沿用題 id b1-u30-l06-q17；目標字沿用 blog",
+        "resolution": "改為 translate：promptZh「她每週在部落格上分享她煮的菜。」、hintWords [\"blog\"]、referenceEn [\"She shares the dishes she cooks on her blog every week.\",\"Every week, she writes about her cooking on her blog.\"]、rubricZh [\"用 blog 表示「部落格」（例如 on her blog）\",\"「分享」可寫，例如 shares、writes about、posts 等\"]（原 makeSentence：instructionZh「用 blog 造一個句子，說說你常看或想寫的部落格。」、referenceEn [\"I read a blog about football every day.\",\"I want to start a blog about my cat.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

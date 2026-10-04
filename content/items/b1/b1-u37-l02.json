@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u37-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "curiosity",
-      "instructionZh": "用 curiosity 造一個句子，說說一件讓你感到好奇的事。",
+      "type": "translate",
+      "promptZh": "出於好奇，他問了那位老人很多問題。",
+      "hintWords": [
+        "curiosity"
+      ],
       "referenceEn": [
-        "I have a lot of curiosity about space.",
-        "I have always had a curiosity about other countries."
+        "Out of curiosity, he asked the old man many questions.",
+        "He asked the old man a lot of questions out of curiosity."
       ],
       "rubricZh": [
-        "curiosity 表示「好奇心」，例如 curiosity about… 等說法",
-        "說的是自己的經驗或想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 out of curiosity 表示「出於好奇」"
       ]
     }
   ],
@@ -396,6 +396,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Very encouraging.\"；改後：\"It was very promising.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（curiosity）原位換成翻譯題，沿用題 id b1-u37-l02-q17；目標字沿用 curiosity",
+        "resolution": "改為 translate：promptZh「出於好奇，他問了那位老人很多問題。」、hintWords [\"curiosity\"]、referenceEn [\"Out of curiosity, he asked the old man many questions.\",\"He asked the old man a lot of questions out of curiosity.\"]、rubricZh [\"用 out of curiosity 表示「出於好奇」\"]（原 makeSentence：instructionZh「用 curiosity 造一個句子，說說一件讓你感到好奇的事。」、referenceEn [\"I have a lot of curiosity about space.\",\"I have always had a curiosity about other countries.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

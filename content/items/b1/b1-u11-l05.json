@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u11-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "candle",
-      "instructionZh": "用 candle 造一個句子，說說你什麼時候會點蠟燭。",
+      "type": "translate",
+      "promptZh": "她吹熄了蛋糕上的蠟燭。",
+      "hintWords": [
+        "candle"
+      ],
       "referenceEn": [
-        "I light candles when I take a bath.",
-        "I light candles on my friends' birthday cakes."
+        "She blew out the candles on the cake.",
+        "She blew out the candles on her cake."
       ],
       "rubricZh": [
-        "candle 表示「蠟燭」",
-        "「點蠟燭」可寫，例如 light a candle、light candles 等",
-        "時態配合內容（多用現在簡單式）"
+        "用 candle 表示「蠟燭」（單複數都可以，例如 the candles on the cake）",
+        "「吹熄」可寫，例如 blew out 等"
       ]
     }
   ],
@@ -445,6 +446,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"A broken heater.\"；改後：\"A broken alarm.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（candle）原位換成翻譯題，沿用題 id b1-u11-l05-q17；目標字沿用 candle",
+        "resolution": "改為 translate：promptZh「她吹熄了蛋糕上的蠟燭。」、hintWords [\"candle\"]、referenceEn [\"She blew out the candles on the cake.\",\"She blew out the candles on her cake.\"]、rubricZh [\"用 candle 表示「蠟燭」（單複數都可以，例如 the candles on the cake）\",\"「吹熄」可寫，例如 blew out 等\"]（原 makeSentence：instructionZh「用 candle 造一個句子，說說你什麼時候會點蠟燭。」、referenceEn [\"I light candles when I take a bath.\",\"I light candles on my friends' birthday cakes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

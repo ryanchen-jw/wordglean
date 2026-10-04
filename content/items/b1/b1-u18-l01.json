@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u18-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "motorcycle",
-      "instructionZh": "用 motorcycle 造一個句子，說說你騎機車的經驗或看法。",
+      "type": "translate",
+      "promptZh": "這條路禁止機車通行。",
+      "hintWords": [
+        "motorcycle"
+      ],
       "referenceEn": [
-        "I learned to ride a motorcycle when I was eighteen.",
-        "I think riding a motorcycle in the rain is dangerous."
+        "Motorcycles are not allowed on this road.",
+        "Motorcycles can't use this road."
       ],
       "rubricZh": [
-        "motorcycle 表示「摩托車、機車」",
-        "可用 ride a motorcycle、by motorcycle 等說法",
-        "時態配合內容（例如說過去的經驗用過去式）"
+        "用 motorcycle 的複數表示「機車」",
+        "「禁止通行」可寫，例如 are not allowed on、can't use 等"
       ]
     }
   ],
@@ -345,6 +346,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"星期五傍晚公車總站很擁擠。\"；改後：\"這座機場有兩個航廈。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（motorcycle）原位換成翻譯題，沿用題 id b1-u18-l01-q17；目標字沿用 motorcycle",
+        "resolution": "改為 translate：promptZh「這條路禁止機車通行。」、hintWords [\"motorcycle\"]、referenceEn [\"Motorcycles are not allowed on this road.\",\"Motorcycles can't use this road.\"]、rubricZh [\"用 motorcycle 的複數表示「機車」\",\"「禁止通行」可寫，例如 are not allowed on、can't use 等\"]（原 makeSentence：instructionZh「用 motorcycle 造一個句子，說說你騎機車的經驗或看法。」、referenceEn [\"I learned to ride a motorcycle when I was eighteen.\",\"I think riding a motorcycle in the rain is dangerous.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

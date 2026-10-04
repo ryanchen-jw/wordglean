@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u42-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "gorgeous",
-      "instructionZh": "用 gorgeous 造一個句子，描述你見過最美的東西或地方。",
+      "type": "translate",
+      "promptZh": "從飯店房間可以看到很美的海景。",
+      "hintWords": [
+        "gorgeous"
+      ],
       "referenceEn": [
-        "The beach near my grandma's house is gorgeous.",
-        "I saw a gorgeous sunset last summer."
+        "There is a gorgeous view of the sea from the hotel room.",
+        "The hotel room has a gorgeous sea view."
       ],
       "rubricZh": [
-        "gorgeous 表示「極美的」，例如 a gorgeous view 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 gorgeous 表示「極美的」（例如 a gorgeous view）"
       ]
     }
   ],
@@ -360,6 +360,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The watch is fake.\"；改後：\"The watch isn't real.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gorgeous）原位換成翻譯題，沿用題 id b1-u42-l02-q17；目標字沿用 gorgeous",
+        "resolution": "改為 translate：promptZh「從飯店房間可以看到很美的海景。」、hintWords [\"gorgeous\"]、referenceEn [\"There is a gorgeous view of the sea from the hotel room.\",\"The hotel room has a gorgeous sea view.\"]、rubricZh [\"用 gorgeous 表示「極美的」（例如 a gorgeous view）\"]（原 makeSentence：instructionZh「用 gorgeous 造一個句子，描述你見過最美的東西或地方。」、referenceEn [\"The beach near my grandma's house is gorgeous.\",\"I saw a gorgeous sunset last summer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

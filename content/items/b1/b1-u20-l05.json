@@ -229,17 +229,17 @@
     },
     {
       "id": "b1-u20-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "wrist",
-      "instructionZh": "用 wrist 造一個句子，說說你手腕上戴的東西或手腕的狀況。",
+      "type": "translate",
+      "promptZh": "他把手錶戴在右手腕上。",
+      "hintWords": [
+        "wrist"
+      ],
       "referenceEn": [
-        "I always wear a watch on my wrist.",
-        "My wrist hurts after I type for a long time."
+        "He wears his watch on his right wrist.",
+        "He wears a watch on his right wrist."
       ],
       "rubricZh": [
-        "wrist 表示「手腕」，例如 on my wrist 等說法",
-        "說的是自己的習慣或經驗（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 wrist 表示「手腕」（例如 on his right wrist）"
       ]
     }
   ],
@@ -331,6 +331,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Call the front desk for help.\"；改後：\"Get a new stamp at the door.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wrist）原位換成翻譯題，沿用題 id b1-u20-l05-q17；目標字沿用 wrist",
+        "resolution": "改為 translate：promptZh「他把手錶戴在右手腕上。」、hintWords [\"wrist\"]、referenceEn [\"He wears his watch on his right wrist.\",\"He wears a watch on his right wrist.\"]、rubricZh [\"用 wrist 表示「手腕」（例如 on his right wrist）\"]（原 makeSentence：instructionZh「用 wrist 造一個句子，說說你手腕上戴的東西或手腕的狀況。」、referenceEn [\"I always wear a watch on my wrist.\",\"My wrist hurts after I type for a long time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

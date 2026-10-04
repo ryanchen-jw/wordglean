@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u04-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "able",
-      "instructionZh": "用 be able to 造一個句子，說說一件你現在能做到的事，或以前做不到、現在做得到的事。",
+      "type": "translate",
+      "promptZh": "我妹妹兩歲時就能讀簡單的故事了。",
+      "hintWords": [
+        "able"
+      ],
       "referenceEn": [
-        "I am able to swim one kilometer now.",
-        "I was not able to cook before, but now I am."
+        "My sister was able to read simple stories at the age of two.",
+        "My little sister was able to read simple stories when she was two."
       ],
       "rubricZh": [
-        "be able to＋原形動詞，表示「能夠」",
-        "時態依時間而定（例如 am able to、was able to）",
-        "主詞是自己（I）"
+        "用 be able to＋原形動詞表示「能夠」（例如 was able to read；寫 could read 也正確）",
+        "「兩歲時」可寫，例如 at the age of two、when she was two 等"
       ]
     }
   ],
@@ -373,6 +374,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Because of work.\"；改後：\"Because of a job.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（able）原位換成翻譯題，沿用題 id b1-u04-l04-q17；目標字沿用 able",
+        "resolution": "改為 translate：promptZh「我妹妹兩歲時就能讀簡單的故事了。」、hintWords [\"able\"]、referenceEn [\"My sister was able to read simple stories at the age of two.\",\"My little sister was able to read simple stories when she was two.\"]、rubricZh [\"用 be able to＋原形動詞表示「能夠」（例如 was able to read；寫 could read 也正確）\",\"「兩歲時」可寫，例如 at the age of two、when she was two 等\"]（原 makeSentence：instructionZh「用 be able to 造一個句子，說說一件你現在能做到的事，或以前做不到、現在做得到的事。」、referenceEn [\"I am able to swim one kilometer now.\",\"I was not able to cook before, but now I am.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

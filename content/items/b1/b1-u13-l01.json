@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u13-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "ingredient",
-      "instructionZh": "用 ingredient 造一個句子，說說你最喜歡的一道菜需要什麼材料。",
+      "type": "translate",
+      "promptZh": "這家餐廳只用本地的食材。",
+      "hintWords": [
+        "ingredient"
+      ],
       "referenceEn": [
-        "The main ingredients of my favorite soup are tomatoes and beef.",
-        "Rice is the most important ingredient in my favorite dish, fried rice."
+        "This restaurant only uses local ingredients.",
+        "This restaurant uses only local ingredients."
       ],
       "rubricZh": [
-        "ingredient 表示「材料、成分」，是可數名詞",
-        "可用 the main ingredient(s) of／in… 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 ingredient 的複數表示「食材」（例如 local ingredients）",
+        "only 的位置不限（例如 only uses、uses only 等）"
       ]
     }
   ],
@@ -351,6 +352,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"買零食前先看一下成分表。\"；改後：\"米和魚是這道菜的主要材料。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ingredient）原位換成翻譯題，沿用題 id b1-u13-l01-q17；目標字沿用 ingredient",
+        "resolution": "改為 translate：promptZh「這家餐廳只用本地的食材。」、hintWords [\"ingredient\"]、referenceEn [\"This restaurant only uses local ingredients.\",\"This restaurant uses only local ingredients.\"]、rubricZh [\"用 ingredient 的複數表示「食材」（例如 local ingredients）\",\"only 的位置不限（例如 only uses、uses only 等）\"]（原 makeSentence：instructionZh「用 ingredient 造一個句子，說說你最喜歡的一道菜需要什麼材料。」、referenceEn [\"The main ingredients of my favorite soup are tomatoes and beef.\",\"Rice is the most important ingredient in my favorite dish, fried rice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

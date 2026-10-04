@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u39-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "freezing",
-      "instructionZh": "用 freezing 造一個句子，說說一次你覺得非常冷的經驗。",
+      "type": "translate",
+      "promptZh": "湖水冰冷，沒有人敢下去游泳。",
+      "hintWords": [
+        "freezing"
+      ],
       "referenceEn": [
-        "It was freezing when I went to the mountains last winter.",
-        "My hands were freezing after I played in the snow."
+        "The lake water was freezing, so nobody dared to swim.",
+        "The water in the lake was freezing, and no one dared to go in."
       ],
       "rubricZh": [
-        "freezing 表示「極冷的」，例如 It's freezing 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 freezing 表示「極冷的」",
+        "時態配合內容（例如 was、is 等）"
       ]
     }
   ],
@@ -366,6 +367,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The waves are too big.\"；改後：\"The sea is too rough.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（freezing）原位換成翻譯題，沿用題 id b1-u39-l02-q17；目標字沿用 freezing",
+        "resolution": "改為 translate：promptZh「湖水冰冷，沒有人敢下去游泳。」、hintWords [\"freezing\"]、referenceEn [\"The lake water was freezing, so nobody dared to swim.\",\"The water in the lake was freezing, and no one dared to go in.\"]、rubricZh [\"用 freezing 表示「極冷的」\",\"時態配合內容（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 freezing 造一個句子，說說一次你覺得非常冷的經驗。」、referenceEn [\"It was freezing when I went to the mountains last winter.\",\"My hands were freezing after I played in the snow.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

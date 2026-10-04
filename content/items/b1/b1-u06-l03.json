@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u06-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "recognize",
-      "instructionZh": "用 recognize 造一個句子，說說你認出（或沒認出）某人或某樣東西的經驗。",
+      "type": "translate",
+      "promptZh": "這所大學的學位在很多國家都被認可。",
+      "hintWords": [
+        "recognize"
+      ],
       "referenceEn": [
-        "I recognized my teacher at the train station yesterday.",
-        "I didn't recognize my cousin because he was so tall."
+        "Degrees from this university are recognized in many countries.",
+        "This university's degrees are recognized in many countries."
       ],
       "rubricZh": [
-        "recognize 表示「認出」，後面直接接受詞（例如人、東西等）",
-        "過去的經驗可用過去式或現在完成式（例如 recognized、didn't recognize）",
-        "主詞是自己（I）"
+        "用 recognize 表示「認可」，這裡用被動（例如 are recognized）",
+        "「這所大學的學位」可寫，例如 degrees from this university、this university's degrees 等"
       ]
     }
   ],
@@ -411,6 +412,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The shop was closed.\"；改後：\"The shop wasn't open.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（recognize）原位換成翻譯題，沿用題 id b1-u06-l03-q17；目標字沿用 recognize",
+        "resolution": "改為 translate：promptZh「這所大學的學位在很多國家都被認可。」、hintWords [\"recognize\"]、referenceEn [\"Degrees from this university are recognized in many countries.\",\"This university's degrees are recognized in many countries.\"]、rubricZh [\"用 recognize 表示「認可」，這裡用被動（例如 are recognized）\",\"「這所大學的學位」可寫，例如 degrees from this university、this university's degrees 等\"]（原 makeSentence：instructionZh「用 recognize 造一個句子，說說你認出（或沒認出）某人或某樣東西的經驗。」、referenceEn [\"I recognized my teacher at the train station yesterday.\",\"I didn't recognize my cousin because he was so tall.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

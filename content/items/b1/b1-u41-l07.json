@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u41-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "enrich",
-      "instructionZh": "用 enrich 造一個句子，說說什麼讓你的生活更豐富。",
+      "type": "translate",
+      "promptZh": "到國外旅行豐富了他的人生。",
+      "hintWords": [
+        "enrich"
+      ],
       "referenceEn": [
-        "Reading books enriches my life.",
-        "Learning music has enriched my life a lot."
+        "Traveling abroad has enriched his life.",
+        "Travel abroad enriched his life."
       ],
       "rubricZh": [
-        "enrich 表示「使豐富」，例如 enrich my life 等說法",
-        "說的是自己的經驗或想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式或現在完成式等）"
+        "用 enrich 表示「使豐富」",
+        "時態可用 has enriched、enriched 等"
       ]
     }
   ],
@@ -408,6 +409,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Close the book.\"；改後：\"Tell the start of the story.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（enrich）原位換成翻譯題，沿用題 id b1-u41-l07-q17；目標字沿用 enrich",
+        "resolution": "改為 translate：promptZh「到國外旅行豐富了他的人生。」、hintWords [\"enrich\"]、referenceEn [\"Traveling abroad has enriched his life.\",\"Travel abroad enriched his life.\"]、rubricZh [\"用 enrich 表示「使豐富」\",\"時態可用 has enriched、enriched 等\"]（原 makeSentence：instructionZh「用 enrich 造一個句子，說說什麼讓你的生活更豐富。」、referenceEn [\"Reading books enriches my life.\",\"Learning music has enriched my life a lot.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

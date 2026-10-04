@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u26-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "wildlife",
-      "instructionZh": "用 wildlife 造一個句子，說說你看過或想看的野生動物。",
+      "type": "translate",
+      "promptZh": "請不要餵食野生動物。",
+      "hintWords": [
+        "wildlife"
+      ],
       "referenceEn": [
-        "I saw a lot of wildlife on my trip to the mountains.",
-        "I want to see wildlife in the jungle one day."
+        "Please do not feed the wildlife.",
+        "Please don't give food to the wildlife."
       ],
       "rubricZh": [
-        "wildlife 表示「野生動物」，是不可數名詞，例如 see wildlife 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 wildlife 表示「野生動物」（不可數）",
+        "「餵食」可寫，例如 feed、give food to 等"
       ]
     }
   ],
@@ -306,6 +307,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"We'll camp by the lake.\"；改後：\"We'll stay near the lake tonight.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wildlife）原位換成翻譯題，沿用題 id b1-u26-l01-q17；目標字沿用 wildlife",
+        "resolution": "改為 translate：promptZh「請不要餵食野生動物。」、hintWords [\"wildlife\"]、referenceEn [\"Please do not feed the wildlife.\",\"Please don't give food to the wildlife.\"]、rubricZh [\"用 wildlife 表示「野生動物」（不可數）\",\"「餵食」可寫，例如 feed、give food to 等\"]（原 makeSentence：instructionZh「用 wildlife 造一個句子，說說你看過或想看的野生動物。」、referenceEn [\"I saw a lot of wildlife on my trip to the mountains.\",\"I want to see wildlife in the jungle one day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

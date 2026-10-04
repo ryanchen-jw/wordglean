@@ -215,17 +215,17 @@
     },
     {
       "id": "b1-u33-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "profession",
-      "instructionZh": "用 profession 造一個句子，說說你想從事的職業。",
+      "type": "translate",
+      "promptZh": "她的父母都從事教職。",
+      "hintWords": [
+        "profession"
+      ],
       "referenceEn": [
-        "I want to choose a profession that helps people.",
-        "Nursing is the profession I want."
+        "Both of her parents are in the teaching profession.",
+        "Her parents both work in the teaching profession."
       ],
       "rubricZh": [
-        "profession 表示「職業、專業」，例如 choose a profession 等說法",
-        "說的是自己的想法（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 profession 表示「職業」（例如 the teaching profession；寫 are both teachers 也正確）"
       ]
     }
   ],
@@ -341,6 +341,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示（干擾項不可跨課重複）：delete 已在 u32-l03 當過干擾項，換成 inform",
         "resolution": "改前：\"刪除\"；改後：\"通知\"",
         "resolvedAt": "2026-10-02T23:57:28Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（profession）原位換成翻譯題，沿用題 id b1-u33-l02-q16；目標字沿用 profession",
+        "resolution": "改為 translate：promptZh「她的父母都從事教職。」、hintWords [\"profession\"]、referenceEn [\"Both of her parents are in the teaching profession.\",\"Her parents both work in the teaching profession.\"]、rubricZh [\"用 profession 表示「職業」（例如 the teaching profession；寫 are both teachers 也正確）\"]（原 makeSentence：instructionZh「用 profession 造一個句子，說說你想從事的職業。」、referenceEn [\"I want to choose a profession that helps people.\",\"Nursing is the profession I want.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

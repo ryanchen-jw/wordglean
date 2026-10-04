@@ -232,17 +232,17 @@
     },
     {
       "id": "b1-u01-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "used to",
-      "instructionZh": "用 used to 造一個句子，說一個你以前常做、現在不做的習慣。",
+      "type": "translate",
+      "promptZh": "這棟大樓以前是一家醫院。",
+      "hintWords": [
+        "used to"
+      ],
       "referenceEn": [
-        "I used to get up late, but now I get up early.",
-        "I used to drink a lot of coffee, but now I drink tea."
+        "This building used to be a hospital.",
+        "There used to be a hospital in this building."
       ],
       "rubricZh": [
-        "used to＋原形動詞，表示過去的習慣",
-        "可以用 but now 對比現在",
-        "不要寫成 use to"
+        "用 used to＋原形動詞表示「以前是（現在不是）」（例如 used to be；寫 There used to be… 也正確）"
       ]
     }
   ],
@@ -404,6 +404,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"He takes the train.\"；改後：\"He goes by train.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（used to）原位換成翻譯題，沿用題 id b1-u01-l06-q17；目標字沿用 used to",
+        "resolution": "改為 translate：promptZh「這棟大樓以前是一家醫院。」、hintWords [\"used to\"]、referenceEn [\"This building used to be a hospital.\",\"There used to be a hospital in this building.\"]、rubricZh [\"用 used to＋原形動詞表示「以前是（現在不是）」（例如 used to be；寫 There used to be… 也正確）\"]（原 makeSentence：instructionZh「用 used to 造一個句子，說一個你以前常做、現在不做的習慣。」、referenceEn [\"I used to get up late, but now I get up early.\",\"I used to drink a lot of coffee, but now I drink tea.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

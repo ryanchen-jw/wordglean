@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u12-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "routine",
-      "instructionZh": "用 routine 造一個句子，說說你的日常作息。",
+      "type": "translate",
+      "promptZh": "新的工作讓我的日常作息完全改變了。",
+      "hintWords": [
+        "routine"
+      ],
       "referenceEn": [
-        "My routine on weekdays is quite boring.",
-        "I go for a run every morning as part of my routine."
+        "My new job has completely changed my daily routine.",
+        "The new job changed my whole routine."
       ],
       "rubricZh": [
-        "routine 表示「例行公事、日常作息」",
-        "可用 my routine、part of my routine 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 routine 表示「日常作息」（例如 my daily routine）",
+        "時態可用 has changed、changed 等"
       ]
     }
   ],
@@ -387,6 +388,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"By calling them.\"；改後：\"By calling the library.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（routine）原位換成翻譯題，沿用題 id b1-u12-l01-q17；目標字沿用 routine",
+        "resolution": "改為 translate：promptZh「新的工作讓我的日常作息完全改變了。」、hintWords [\"routine\"]、referenceEn [\"My new job has completely changed my daily routine.\",\"The new job changed my whole routine.\"]、rubricZh [\"用 routine 表示「日常作息」（例如 my daily routine）\",\"時態可用 has changed、changed 等\"]（原 makeSentence：instructionZh「用 routine 造一個句子，說說你的日常作息。」、referenceEn [\"My routine on weekdays is quite boring.\",\"I go for a run every morning as part of my routine.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

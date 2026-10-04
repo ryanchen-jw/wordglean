@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u10-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "accessory",
-      "instructionZh": "用 accessory 造一個句子，說說你最常戴或用的配件。",
+      "type": "translate",
+      "promptZh": "她的包包上掛著很多可愛的小配件。",
+      "hintWords": [
+        "accessory"
+      ],
       "referenceEn": [
-        "My favorite accessory is a simple silver ring.",
-        "I usually wear a watch as my only accessory."
+        "Her bag has many cute little accessories on it.",
+        "There are a lot of cute little accessories on her bag."
       ],
       "rubricZh": [
-        "accessory 表示「配件、飾品」，是可數名詞",
-        "說的是自己的東西或習慣（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 accessory 的複數表示「配件；飾品」（例如 cute little accessories）",
+        "「掛著」可寫，例如 has … on it、there are … on her bag 等"
       ]
     }
   ],
@@ -349,6 +350,12 @@
         "message": "B1 第 3 批審查裁示修正：執行長補充規則（不可拿同課另一題的正解當干擾項）：helmet→nickname",
         "resolution": "改前：\"安全帽\"；改後：\"綽號\"",
         "resolvedAt": "2026-10-02T20:02:44Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（accessory）原位換成翻譯題，沿用題 id b1-u10-l01-q17；目標字沿用 accessory",
+        "resolution": "改為 translate：promptZh「她的包包上掛著很多可愛的小配件。」、hintWords [\"accessory\"]、referenceEn [\"Her bag has many cute little accessories on it.\",\"There are a lot of cute little accessories on her bag.\"]、rubricZh [\"用 accessory 的複數表示「配件；飾品」（例如 cute little accessories）\",\"「掛著」可寫，例如 has … on it、there are … on her bag 等\"]（原 makeSentence：instructionZh「用 accessory 造一個句子，說說你最常戴或用的配件。」、referenceEn [\"My favorite accessory is a simple silver ring.\",\"I usually wear a watch as my only accessory.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

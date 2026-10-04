@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "incredible",
-      "instructionZh": "用 incredible 造一個句子，說說你看過或經歷過最驚人的事。",
+      "type": "translate",
+      "promptZh": "她只花三個月就學會開車，真是難以置信。",
+      "hintWords": [
+        "incredible"
+      ],
       "referenceEn": [
-        "I saw an incredible sunset at the beach last summer.",
-        "The fireworks I saw last year were incredible."
+        "It is incredible that she learned to drive in only three months.",
+        "It's incredible that she learned to drive in just three months."
       ],
       "rubricZh": [
-        "incredible 表示「難以置信的、極好的」，例如 an incredible view 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 incredible 表示「難以置信的」（例如 It is incredible that…）"
       ]
     }
   ],
@@ -318,6 +318,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：聽打「讓我簡短說明規則」與閱讀「老闆簡短說明運作方式」同事件，改成雨短暫停了一下",
         "resolution": "改前：\"讓我簡短地說明一下規則。\"；改後：\"雨短暫停了一下，接著又開始下。\"",
         "resolvedAt": "2026-10-02T23:33:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（incredible）原位換成翻譯題，沿用題 id b1-u35-l05-q17；目標字沿用 incredible",
+        "resolution": "改為 translate：promptZh「她只花三個月就學會開車，真是難以置信。」、hintWords [\"incredible\"]、referenceEn [\"It is incredible that she learned to drive in only three months.\",\"It's incredible that she learned to drive in just three months.\"]、rubricZh [\"用 incredible 表示「難以置信的」（例如 It is incredible that…）\"]（原 makeSentence：instructionZh「用 incredible 造一個句子，說說你看過或經歷過最驚人的事。」、referenceEn [\"I saw an incredible sunset at the beach last summer.\",\"The fireworks I saw last year were incredible.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

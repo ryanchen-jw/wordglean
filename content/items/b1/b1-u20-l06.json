@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u20-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "workout",
-      "instructionZh": "用 workout 造一個句子，說說你的運動習慣。",
+      "type": "translate",
+      "promptZh": "這套健身運動只要三十分鐘。",
+      "hintWords": [
+        "workout"
+      ],
       "referenceEn": [
-        "My favorite workout is swimming.",
-        "I do a quick workout before I go to work."
+        "This workout only takes thirty minutes.",
+        "This workout is only thirty minutes long."
       ],
       "rubricZh": [
-        "workout 表示「健身、鍛鍊」，可數名詞，例如 do a workout 等說法",
-        "說的是自己的習慣（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 workout 表示「健身；鍛鍊」",
+        "「只要三十分鐘」可寫，例如 only takes thirty minutes、is only thirty minutes long 等"
       ]
     }
   ],
@@ -363,6 +364,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"血管；靜脈\"；改後：\"靜脈；血管\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（workout）原位換成翻譯題，沿用題 id b1-u20-l06-q17；目標字沿用 workout",
+        "resolution": "改為 translate：promptZh「這套健身運動只要三十分鐘。」、hintWords [\"workout\"]、referenceEn [\"This workout only takes thirty minutes.\",\"This workout is only thirty minutes long.\"]、rubricZh [\"用 workout 表示「健身；鍛鍊」\",\"「只要三十分鐘」可寫，例如 only takes thirty minutes、is only thirty minutes long 等\"]（原 makeSentence：instructionZh「用 workout 造一個句子，說說你的運動習慣。」、referenceEn [\"My favorite workout is swimming.\",\"I do a quick workout before I go to work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

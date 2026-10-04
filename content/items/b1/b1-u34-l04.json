@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u34-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "objective",
-      "instructionZh": "用 objective 造一個句子，說說你今年的一個目標。",
+      "type": "translate",
+      "promptZh": "這門課的主要目標是提升學生的口說能力。",
+      "hintWords": [
+        "objective"
+      ],
       "referenceEn": [
-        "My objective this year is to read more books.",
-        "One objective of mine is to get better at swimming."
+        "The main objective of this course is to improve students' speaking skills.",
+        "This course's main objective is to help students speak better."
       ],
       "rubricZh": [
-        "objective 表示「目標、目的」，例如 my objective is to… 等說法",
-        "說的是自己的目標（例如 my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 objective 表示「目標」（例如 the main objective of…）",
+        "「提升口說能力」可寫，例如 improve speaking skills、help students speak better 等"
       ]
     }
   ],
@@ -396,6 +397,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Show your ticket.\"；改後：\"Show the card to the driver.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（objective）原位換成翻譯題，沿用題 id b1-u34-l04-q17；目標字沿用 objective",
+        "resolution": "改為 translate：promptZh「這門課的主要目標是提升學生的口說能力。」、hintWords [\"objective\"]、referenceEn [\"The main objective of this course is to improve students' speaking skills.\",\"This course's main objective is to help students speak better.\"]、rubricZh [\"用 objective 表示「目標」（例如 the main objective of…）\",\"「提升口說能力」可寫，例如 improve speaking skills、help students speak better 等\"]（原 makeSentence：instructionZh「用 objective 造一個句子，說說你今年的一個目標。」、referenceEn [\"My objective this year is to read more books.\",\"One objective of mine is to get better at swimming.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

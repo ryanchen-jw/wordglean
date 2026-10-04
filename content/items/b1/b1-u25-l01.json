@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u25-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "guidance",
-      "instructionZh": "用 guidance 造一個句子，說說誰給過你指導或建議。",
+      "type": "translate",
+      "promptZh": "新員工在第一週需要很多指導。",
+      "hintWords": [
+        "guidance"
+      ],
       "referenceEn": [
-        "My parents gave me a lot of guidance when I was in high school.",
-        "I asked my teacher for guidance about my studies."
+        "New staff need a lot of guidance in their first week.",
+        "In the first week, new workers need plenty of guidance."
       ],
       "rubricZh": [
-        "guidance 表示「指導、輔導」，是不可數名詞，例如 give guidance、ask for guidance 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 guidance 表示「指導」（不可數，例如 a lot of guidance）",
+        "「新員工」可寫，例如 new staff、new workers 等"
       ]
     }
   ],
@@ -332,6 +333,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The front desk.\"；改後：\"The reception desk.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（guidance）原位換成翻譯題，沿用題 id b1-u25-l01-q17；目標字沿用 guidance",
+        "resolution": "改為 translate：promptZh「新員工在第一週需要很多指導。」、hintWords [\"guidance\"]、referenceEn [\"New staff need a lot of guidance in their first week.\",\"In the first week, new workers need plenty of guidance.\"]、rubricZh [\"用 guidance 表示「指導」（不可數，例如 a lot of guidance）\",\"「新員工」可寫，例如 new staff、new workers 等\"]（原 makeSentence：instructionZh「用 guidance 造一個句子，說說誰給過你指導或建議。」、referenceEn [\"My parents gave me a lot of guidance when I was in high school.\",\"I asked my teacher for guidance about my studies.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

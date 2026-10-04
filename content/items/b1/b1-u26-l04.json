@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u26-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "pond",
-      "instructionZh": "用 pond 造一個句子，說說你看過的池塘。",
+      "type": "translate",
+      "promptZh": "他在花園裡挖了一個小池塘來養魚。",
+      "hintWords": [
+        "pond"
+      ],
       "referenceEn": [
-        "There is a small pond in the park near my home.",
-        "I used to catch fish in a pond when I was a child."
+        "He dug a small pond in his garden for fish.",
+        "He made a small fish pond in his garden."
       ],
       "rubricZh": [
-        "pond 表示「池塘」，可數名詞，例如 a small pond 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 pond 表示「池塘」",
+        "「挖了」可寫，例如 dug、made 等"
       ]
     }
   ],
@@ -342,6 +343,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The path is full of mud.\"；改後：\"The way is wet and dirty.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pond）原位換成翻譯題，沿用題 id b1-u26-l04-q17；目標字沿用 pond",
+        "resolution": "改為 translate：promptZh「他在花園裡挖了一個小池塘來養魚。」、hintWords [\"pond\"]、referenceEn [\"He dug a small pond in his garden for fish.\",\"He made a small fish pond in his garden.\"]、rubricZh [\"用 pond 表示「池塘」\",\"「挖了」可寫，例如 dug、made 等\"]（原 makeSentence：instructionZh「用 pond 造一個句子，說說你看過的池塘。」、referenceEn [\"There is a small pond in the park near my home.\",\"I used to catch fish in a pond when I was a child.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

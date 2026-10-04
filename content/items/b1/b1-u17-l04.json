@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u17-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "geography",
-      "instructionZh": "用 geography 造一個句子，說說你對地理課或地理知識的看法。",
+      "type": "translate",
+      "promptZh": "這個地區的地理環境很適合種茶。",
+      "hintWords": [
+        "geography"
+      ],
       "referenceEn": [
-        "I find geography interesting because I love maps.",
-        "Good geography skills help me when I travel."
+        "The geography of this area is good for growing tea.",
+        "The geography of this region is perfect for growing tea."
       ],
       "rubricZh": [
-        "geography 表示「地理」，是不可數名詞",
-        "可說 geography class、study geography 等",
-        "時態配合內容（多用現在簡單式）"
+        "用 geography 表示「地理（環境）」（例如 the geography of this area）",
+        "「很適合」可寫，例如 is good for、is perfect for 等"
       ]
     }
   ],
@@ -357,6 +358,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Free maps.\"；改後：\"City maps at no cost.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（geography）原位換成翻譯題，沿用題 id b1-u17-l04-q17；目標字沿用 geography",
+        "resolution": "改為 translate：promptZh「這個地區的地理環境很適合種茶。」、hintWords [\"geography\"]、referenceEn [\"The geography of this area is good for growing tea.\",\"The geography of this region is perfect for growing tea.\"]、rubricZh [\"用 geography 表示「地理（環境）」（例如 the geography of this area）\",\"「很適合」可寫，例如 is good for、is perfect for 等\"]（原 makeSentence：instructionZh「用 geography 造一個句子，說說你對地理課或地理知識的看法。」、referenceEn [\"I find geography interesting because I love maps.\",\"Good geography skills help me when I travel.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

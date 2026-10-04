@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u38-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "motto",
-      "instructionZh": "用 motto 造一個句子，說說你的座右銘。",
+      "type": "translate",
+      "promptZh": "我們公司的座右銘是「顧客第一」。",
+      "hintWords": [
+        "motto"
+      ],
       "referenceEn": [
-        "My motto is \"Try your best every day.\"",
-        "I live by the motto \"Be kind to everyone.\""
+        "Our company's motto is \"Customers come first.\"",
+        "The motto of our company is \"Customers first.\""
       ],
       "rubricZh": [
-        "motto 表示「座右銘」，例如 My motto is… 等說法",
-        "說的是自己的想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 motto 表示「座右銘；標語」"
       ]
     }
   ],
@@ -356,6 +356,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：mcq「去百科全書裡查答案」與閱讀「用舊百科全書找資料」同事件，改成爺爺送我一套舊百科全書",
         "resolution": "改前：\"如果你不知道答案，就去百科全書裡查。\"；改後：\"爺爺送我一套有漂亮動物圖片的舊百科全書。\"",
         "resolvedAt": "2026-10-02T23:41:19Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（motto）原位換成翻譯題，沿用題 id b1-u38-l03-q17；目標字沿用 motto",
+        "resolution": "改為 translate：promptZh「我們公司的座右銘是「顧客第一」。」、hintWords [\"motto\"]、referenceEn [\"Our company's motto is \\\"Customers come first.\\\"\",\"The motto of our company is \\\"Customers first.\\\"\"]、rubricZh [\"用 motto 表示「座右銘；標語」\"]（原 makeSentence：instructionZh「用 motto 造一個句子，說說你的座右銘。」、referenceEn [\"My motto is \\\"Try your best every day.\\\"\",\"I live by the motto \\\"Be kind to everyone.\\\"\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

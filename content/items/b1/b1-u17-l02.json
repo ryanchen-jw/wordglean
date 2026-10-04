@@ -244,17 +244,18 @@
     },
     {
       "id": "b1-u17-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "border",
-      "instructionZh": "用 border 造一個句子，說說邊界附近的情況或經過邊界的經驗。",
+      "type": "translate",
+      "promptZh": "這條河是兩國之間的邊界。",
+      "hintWords": [
+        "border"
+      ],
       "referenceEn": [
-        "The small town is near the border, so many people there speak two languages.",
-        "We waited an hour at the border during our trip."
+        "This river forms the border between the two countries.",
+        "The river is the border between the two countries."
       ],
       "rubricZh": [
-        "border 表示「邊界、邊境」",
-        "可用 near the border、cross the border、at the border 等說法",
-        "時態配合內容（例如說過去的經驗用過去式）"
+        "用 border 表示「邊界」（例如 the border between…）",
+        "「是」可寫，例如 is、forms 等"
       ]
     }
   ],
@@ -370,6 +371,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Because of heavy snow last night.\"；改後：\"Because the airport is closed.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（border）原位換成翻譯題，沿用題 id b1-u17-l02-q18；目標字沿用 border",
+        "resolution": "改為 translate：promptZh「這條河是兩國之間的邊界。」、hintWords [\"border\"]、referenceEn [\"This river forms the border between the two countries.\",\"The river is the border between the two countries.\"]、rubricZh [\"用 border 表示「邊界」（例如 the border between…）\",\"「是」可寫，例如 is、forms 等\"]（原 makeSentence：instructionZh「用 border 造一個句子，說說邊界附近的情況或經過邊界的經驗。」、referenceEn [\"The small town is near the border, so many people there speak two languages.\",\"We waited an hour at the border during our trip.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

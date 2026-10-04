@@ -233,18 +233,18 @@
     },
     {
       "id": "b1-u02-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "frequently",
-      "instructionZh": "用 frequently 造一個句子，說說你經常去的地方或經常做的事。",
+      "type": "translate",
+      "promptZh": "我爺爺經常去那家書店。",
+      "hintWords": [
+        "frequently"
+      ],
       "referenceEn": [
-        "I frequently go to the park near my home.",
-        "I visit my grandparents frequently."
+        "My grandfather frequently goes to that bookstore.",
+        "My grandpa goes to that bookshop frequently."
       ],
       "rubricZh": [
-        "frequently 表示「經常」",
-        "可放在一般動詞前或句尾（例如 I frequently go…、…visit them frequently）",
-        "說習慣多用現在簡單式，其他合理時態也接受",
-        "主詞是自己（I）"
+        "用 frequently 表示「經常」（例如 frequently goes、goes … frequently 等；寫 often 也正確）",
+        "「書店」可寫，例如 bookstore、bookshop 等"
       ]
     }
   ],
@@ -318,6 +318,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"縮寫；姓名首字母\"；改後：\"姓名首字母；縮寫\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（frequently）原位換成翻譯題，沿用題 id b1-u02-l03-q17；目標字沿用 frequently",
+        "resolution": "改為 translate：promptZh「我爺爺經常去那家書店。」、hintWords [\"frequently\"]、referenceEn [\"My grandfather frequently goes to that bookstore.\",\"My grandpa goes to that bookshop frequently.\"]、rubricZh [\"用 frequently 表示「經常」（例如 frequently goes、goes … frequently 等；寫 often 也正確）\",\"「書店」可寫，例如 bookstore、bookshop 等\"]（原 makeSentence：instructionZh「用 frequently 造一個句子，說說你經常去的地方或經常做的事。」、referenceEn [\"I frequently go to the park near my home.\",\"I visit my grandparents frequently.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

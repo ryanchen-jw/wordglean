@@ -215,17 +215,17 @@
     },
     {
       "id": "b1-u40-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "legally",
-      "instructionZh": "用 legally 造一個句子，說說幾歲才可以合法做某件事。",
+      "type": "translate",
+      "promptZh": "這棟房子在法律上屬於她的哥哥。",
+      "hintWords": [
+        "legally"
+      ],
       "referenceEn": [
-        "I could legally drive when I turned eighteen.",
-        "In my country, you can legally work at sixteen."
+        "Legally, this house belongs to her brother.",
+        "This house legally belongs to her brother."
       ],
       "rubricZh": [
-        "legally 表示「合法地」，例如 legally drive 等說法",
-        "說的是自己知道的規定（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 legally 表示「法律上」（位置不限）"
       ]
     }
   ],
@@ -443,6 +443,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Only on Monday morning.\"；改後：\"Only at the front desk.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（legally）原位換成翻譯題，沿用題 id b1-u40-l03-q16；目標字沿用 legally",
+        "resolution": "改為 translate：promptZh「這棟房子在法律上屬於她的哥哥。」、hintWords [\"legally\"]、referenceEn [\"Legally, this house belongs to her brother.\",\"This house legally belongs to her brother.\"]、rubricZh [\"用 legally 表示「法律上」（位置不限）\"]（原 makeSentence：instructionZh「用 legally 造一個句子，說說幾歲才可以合法做某件事。」、referenceEn [\"I could legally drive when I turned eighteen.\",\"In my country, you can legally work at sixteen.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

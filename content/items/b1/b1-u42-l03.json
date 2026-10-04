@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u42-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "useless",
-      "instructionZh": "用 useless 造一個句子，說說一樣你覺得沒用的東西。",
+      "type": "translate",
+      "promptZh": "抱怨是沒有用的，我們得想辦法解決。",
+      "hintWords": [
+        "useless"
+      ],
       "referenceEn": [
-        "My old phone is useless because it doesn't turn on.",
-        "I think this umbrella is useless; it has a big hole."
+        "It is useless to complain; we need to find a solution.",
+        "Complaining is useless. We have to find a way to fix it."
       ],
       "rubricZh": [
-        "useless 表示「無用的」，例如 … is useless 等說法",
-        "說的是自己的東西或想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 useless 表示「沒有用的」（例如 It is useless to…、Complaining is useless 等）"
       ]
     }
   ],
@@ -384,6 +384,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Have the picnic food at home.\"；改後：\"Eat indoors instead.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（useless）原位換成翻譯題，沿用題 id b1-u42-l03-q17；目標字沿用 useless",
+        "resolution": "改為 translate：promptZh「抱怨是沒有用的，我們得想辦法解決。」、hintWords [\"useless\"]、referenceEn [\"It is useless to complain; we need to find a solution.\",\"Complaining is useless. We have to find a way to fix it.\"]、rubricZh [\"用 useless 表示「沒有用的」（例如 It is useless to…、Complaining is useless 等）\"]（原 makeSentence：instructionZh「用 useless 造一個句子，說說一樣你覺得沒用的東西。」、referenceEn [\"My old phone is useless because it doesn't turn on.\",\"I think this umbrella is useless; it has a big hole.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

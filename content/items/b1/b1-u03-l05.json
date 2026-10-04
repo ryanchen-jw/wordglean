@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u03-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "stick",
-      "instructionZh": "用 stick 造一個句子，說說你會把什麼東西貼在哪裡。",
+      "type": "translate",
+      "promptZh": "這種膠帶黏不住牆壁。",
+      "hintWords": [
+        "stick"
+      ],
       "referenceEn": [
-        "I stick notes on my computer screen.",
-        "I always stick photos of my family on the fridge."
+        "This kind of tape doesn't stick to the wall.",
+        "This tape won't stick to the wall."
       ],
       "rubricZh": [
-        "stick 表示「黏貼」，常用 stick A on B（例如 stick notes on the screen）",
-        "說習慣多用現在簡單式，其他合理時態也接受",
-        "主詞是自己（I）"
+        "用 stick 表示「黏住」（例如 stick to the wall）",
+        "「黏不住」可寫，例如 doesn't stick、won't stick 等"
       ]
     }
   ],
@@ -417,6 +418,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Call the front desk for help.\"；改後：\"Wait for the door to open.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stick）原位換成翻譯題，沿用題 id b1-u03-l05-q17；目標字沿用 stick",
+        "resolution": "改為 translate：promptZh「這種膠帶黏不住牆壁。」、hintWords [\"stick\"]、referenceEn [\"This kind of tape doesn't stick to the wall.\",\"This tape won't stick to the wall.\"]、rubricZh [\"用 stick 表示「黏住」（例如 stick to the wall）\",\"「黏不住」可寫，例如 doesn't stick、won't stick 等\"]（原 makeSentence：instructionZh「用 stick 造一個句子，說說你會把什麼東西貼在哪裡。」、referenceEn [\"I stick notes on my computer screen.\",\"I always stick photos of my family on the fridge.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

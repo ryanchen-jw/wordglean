@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u13-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "chewing gum",
-      "instructionZh": "用 chewing gum 造一個句子，說說你嚼口香糖的習慣或看法。",
+      "type": "translate",
+      "promptZh": "他的鞋底黏到了一塊口香糖。",
+      "hintWords": [
+        "chewing gum"
+      ],
       "referenceEn": [
-        "I sometimes have chewing gum after lunch.",
-        "I buy chewing gum before long bus trips."
+        "A piece of chewing gum got stuck on his shoe.",
+        "He got a piece of chewing gum stuck on the bottom of his shoe."
       ],
       "rubricZh": [
-        "chewing gum 表示「口香糖」，是不可數名詞",
-        "可用 have／buy chewing gum、a piece of chewing gum 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 chewing gum 表示「口香糖」（例如 a piece of chewing gum）",
+        "「黏到」可寫，例如 got stuck on…、stuck to… 等"
       ]
     }
   ],
@@ -332,6 +333,12 @@
         "message": "執行長裁示：聽選換句話說補正：審題員用語：正解改成較自然的說法",
         "resolution": "改前：\"Yourself, using warm water.\"；改後：\"By hand, using warm water.\"",
         "resolvedAt": "2026-10-03T02:39:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（chewing gum）原位換成翻譯題，沿用題 id b1-u13-l08-q16；目標字沿用 chewing gum",
+        "resolution": "改為 translate：promptZh「他的鞋底黏到了一塊口香糖。」、hintWords [\"chewing gum\"]、referenceEn [\"A piece of chewing gum got stuck on his shoe.\",\"He got a piece of chewing gum stuck on the bottom of his shoe.\"]、rubricZh [\"用 chewing gum 表示「口香糖」（例如 a piece of chewing gum）\",\"「黏到」可寫，例如 got stuck on…、stuck to… 等\"]（原 makeSentence：instructionZh「用 chewing gum 造一個句子，說說你嚼口香糖的習慣或看法。」、referenceEn [\"I sometimes have chewing gum after lunch.\",\"I buy chewing gum before long bus trips.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

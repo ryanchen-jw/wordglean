@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u37-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "gratitude",
-      "instructionZh": "用 gratitude 造一個句子，說說你想感謝的人。",
+      "type": "translate",
+      "promptZh": "他寫了一封信表達對醫生的感激。",
+      "hintWords": [
+        "gratitude"
+      ],
       "referenceEn": [
-        "I want to show my gratitude to my parents.",
-        "I feel great gratitude to my teacher for her help."
+        "He wrote a letter to express his gratitude to the doctor.",
+        "He wrote a letter to show his gratitude to the doctor."
       ],
       "rubricZh": [
-        "gratitude 表示「感激」，例如 show gratitude to… 等說法",
-        "說的是自己的想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 gratitude 表示「感激」（例如 his gratitude to…）",
+        "「表達」可寫，例如 express、show 等"
       ]
     }
   ],
@@ -386,6 +387,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The bike still doesn't work.\"；改後：\"The bike is still broken.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gratitude）原位換成翻譯題，沿用題 id b1-u37-l09-q17；目標字沿用 gratitude",
+        "resolution": "改為 translate：promptZh「他寫了一封信表達對醫生的感激。」、hintWords [\"gratitude\"]、referenceEn [\"He wrote a letter to express his gratitude to the doctor.\",\"He wrote a letter to show his gratitude to the doctor.\"]、rubricZh [\"用 gratitude 表示「感激」（例如 his gratitude to…）\",\"「表達」可寫，例如 express、show 等\"]（原 makeSentence：instructionZh「用 gratitude 造一個句子，說說你想感謝的人。」、referenceEn [\"I want to show my gratitude to my parents.\",\"I feel great gratitude to my teacher for her help.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u07-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "overwhelming",
-      "instructionZh": "用 overwhelming 造一個句子，說說一件讓你覺得難以招架、或感受非常強烈的事。",
+      "type": "translate",
+      "promptZh": "我收到的電子郵件多到讓我招架不住。",
+      "hintWords": [
+        "overwhelming"
+      ],
       "referenceEn": [
-        "The amount of work this week is overwhelming for me.",
-        "My first day in a new city was overwhelming."
+        "The number of emails I received was overwhelming.",
+        "The amount of email I got was overwhelming."
       ],
       "rubricZh": [
-        "overwhelming 表示「壓倒性的、難以招架的」，常放在 be 動詞後",
-        "說的是自己的經驗或感受（例如 me、my）",
-        "時態配合內容（例如 is、was）"
+        "用 overwhelming 表示「難以招架的」（例如 was overwhelming）",
+        "「…的數量」可寫，例如 the number of emails、the amount of email 等"
       ]
     }
   ],
@@ -355,6 +356,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"When a new train station opened.\"；改後：\"After the town got a new station.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（overwhelming）原位換成翻譯題，沿用題 id b1-u07-l05-q17；目標字沿用 overwhelming",
+        "resolution": "改為 translate：promptZh「我收到的電子郵件多到讓我招架不住。」、hintWords [\"overwhelming\"]、referenceEn [\"The number of emails I received was overwhelming.\",\"The amount of email I got was overwhelming.\"]、rubricZh [\"用 overwhelming 表示「難以招架的」（例如 was overwhelming）\",\"「…的數量」可寫，例如 the number of emails、the amount of email 等\"]（原 makeSentence：instructionZh「用 overwhelming 造一個句子，說說一件讓你覺得難以招架、或感受非常強烈的事。」、referenceEn [\"The amount of work this week is overwhelming for me.\",\"My first day in a new city was overwhelming.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

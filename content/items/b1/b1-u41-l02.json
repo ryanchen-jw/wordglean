@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u41-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "rescue",
-      "instructionZh": "用 rescue 造一個句子，說說一次救援的故事。",
+      "type": "translate",
+      "promptZh": "消防員從樹上救下了一隻貓。",
+      "hintWords": [
+        "rescue"
+      ],
       "referenceEn": [
-        "I once rescued my little brother's kite from a tree.",
-        "I rescued my phone just before it fell into the pool."
+        "The firefighters rescued a cat from a tree.",
+        "A cat was rescued from the tree by firefighters."
       ],
       "rubricZh": [
-        "rescue 表示「救援、解救」，例如 rescue a cat 等說法",
-        "說的是自己或家人的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 rescue 表示「救援」"
       ]
     }
   ],
@@ -474,6 +474,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審同類問題自查（§11.27）：前一輪改寫的例句用了次要詞義，改寫成示範第一義「奉獻」",
         "resolution": "改前：\"那位歌手把她的第一座獎獻給歌迷。\"；改後：\"她投入多年的時間研究海龜。\"",
         "resolvedAt": "2026-10-03T00:29:37Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rescue）原位換成翻譯題，沿用題 id b1-u41-l02-q17；目標字沿用 rescue",
+        "resolution": "改為 translate：promptZh「消防員從樹上救下了一隻貓。」、hintWords [\"rescue\"]、referenceEn [\"The firefighters rescued a cat from a tree.\",\"A cat was rescued from the tree by firefighters.\"]、rubricZh [\"用 rescue 表示「救援」\"]（原 makeSentence：instructionZh「用 rescue 造一個句子，說說一次救援的故事。」、referenceEn [\"I once rescued my little brother's kite from a tree.\",\"I rescued my phone just before it fell into the pool.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

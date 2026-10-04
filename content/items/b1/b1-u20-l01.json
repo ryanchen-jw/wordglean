@@ -244,17 +244,18 @@
     },
     {
       "id": "b1-u20-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "yoga",
-      "instructionZh": "用 yoga 造一個句子，說說你做瑜伽的習慣或看法。",
+      "type": "translate",
+      "promptZh": "我媽媽每週六早上去上瑜伽課。",
+      "hintWords": [
+        "yoga"
+      ],
       "referenceEn": [
-        "I do yoga for twenty minutes before bed.",
-        "I think yoga is a good way to relax."
+        "My mother goes to a yoga class every Saturday morning.",
+        "Every Saturday morning, my mom takes a yoga class."
       ],
       "rubricZh": [
-        "yoga 表示「瑜伽」，是不可數名詞，例如 do yoga、a yoga class 等說法",
-        "說的是自己的習慣或看法（例如 I、my）",
-        "時態配合內容（例如現在簡單式、現在完成式等）"
+        "用 yoga 表示「瑜伽」（例如 a yoga class）",
+        "「去上課」可寫，例如 goes to a class、takes a class 等"
       ]
     }
   ],
@@ -400,6 +401,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"關閉；使失去功能；停用\"；改後：\"停用；關閉；使失去功能\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（yoga）原位換成翻譯題，沿用題 id b1-u20-l01-q18；目標字沿用 yoga",
+        "resolution": "改為 translate：promptZh「我媽媽每週六早上去上瑜伽課。」、hintWords [\"yoga\"]、referenceEn [\"My mother goes to a yoga class every Saturday morning.\",\"Every Saturday morning, my mom takes a yoga class.\"]、rubricZh [\"用 yoga 表示「瑜伽」（例如 a yoga class）\",\"「去上課」可寫，例如 goes to a class、takes a class 等\"]（原 makeSentence：instructionZh「用 yoga 造一個句子，說說你做瑜伽的習慣或看法。」、referenceEn [\"I do yoga for twenty minutes before bed.\",\"I think yoga is a good way to relax.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

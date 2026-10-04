@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u30-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "edition",
-      "instructionZh": "用 edition 造一個句子，說說你有或想買的某本書或雜誌的版本。",
+      "type": "translate",
+      "promptZh": "這本字典的新版本加了很多新字。",
+      "hintWords": [
+        "edition"
+      ],
       "referenceEn": [
-        "I have the first edition of my favorite comic book.",
-        "I want to buy the new edition of this dictionary."
+        "The new edition of this dictionary has many new words.",
+        "This dictionary's new edition includes a lot of new words."
       ],
       "rubricZh": [
-        "edition 表示「版、版本」，例如 the first edition、the new edition 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 edition 表示「版本」（例如 the new edition of…）",
+        "「加了」可寫，例如 has、includes、added 等"
       ]
     }
   ],
@@ -300,6 +301,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Lunch is late.\"；改後：\"The room is too small.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（edition）原位換成翻譯題，沿用題 id b1-u30-l04-q17；目標字沿用 edition",
+        "resolution": "改為 translate：promptZh「這本字典的新版本加了很多新字。」、hintWords [\"edition\"]、referenceEn [\"The new edition of this dictionary has many new words.\",\"This dictionary's new edition includes a lot of new words.\"]、rubricZh [\"用 edition 表示「版本」（例如 the new edition of…）\",\"「加了」可寫，例如 has、includes、added 等\"]（原 makeSentence：instructionZh「用 edition 造一個句子，說說你有或想買的某本書或雜誌的版本。」、referenceEn [\"I have the first edition of my favorite comic book.\",\"I want to buy the new edition of this dictionary.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

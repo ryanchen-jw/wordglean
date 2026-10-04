@@ -6,7 +6,10 @@
   "model": "claude-dev",
   "author": "claude-dev",
   "authoredAt": "2026-10-02T16:48:18Z",
-  "properNouns": [],
+  "properNouns": [
+    "Santa",
+    "Claus"
+  ],
   "items": [
     {
       "id": "b1-u10-l02-q01",
@@ -229,17 +232,17 @@
     },
     {
       "id": "b1-u10-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "beard",
-      "instructionZh": "用 beard 造一個句子，描述你認識的一個人的鬍子。",
+      "type": "translate",
+      "promptZh": "聖誕老公公有長長的白鬍子。",
+      "hintWords": [
+        "beard"
+      ],
       "referenceEn": [
-        "My father has a short black beard.",
-        "My teacher grew a beard last winter."
+        "Santa Claus has a long white beard.",
+        "Santa Claus's beard is long and white."
       ],
       "rubricZh": [
-        "beard 表示「（下巴、臉頰的）鬍子」",
-        "常用 have a beard、grow a beard 等說法",
-        "時態配合內容（例如 has、grew）"
+        "用 beard 表示「鬍子」（例如 a long white beard）"
       ]
     }
   ],
@@ -409,6 +412,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"冬天的樹看起來光禿禿的。\"；改後：\"寶寶光著身子在洗澡。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（beard）原位換成翻譯題，沿用題 id b1-u10-l02-q17；目標字沿用 beard",
+        "resolution": "改為 translate：promptZh「聖誕老公公有長長的白鬍子。」、hintWords [\"beard\"]、referenceEn [\"Santa Claus has a long white beard.\",\"Santa Claus's beard is long and white.\"]、rubricZh [\"用 beard 表示「鬍子」（例如 a long white beard）\"]（原 makeSentence：instructionZh「用 beard 造一個句子，描述你認識的一個人的鬍子。」、referenceEn [\"My father has a short black beard.\",\"My teacher grew a beard last winter.\"]）；properNouns 加 Santa、Claus",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

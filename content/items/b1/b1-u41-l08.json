@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u41-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "repay",
-      "instructionZh": "用 repay 造一個句子，說說你想怎麼報答幫助過你的人。",
+      "type": "translate",
+      "promptZh": "我不知道要怎麼報答你的好意。",
+      "hintWords": [
+        "repay"
+      ],
       "referenceEn": [
-        "I want to repay my parents for their love.",
-        "I will repay my friend by helping her with math."
+        "I don't know how to repay your kindness.",
+        "I don't know how I can repay you for your kindness."
       ],
       "rubricZh": [
-        "repay 表示「報答、償還」，例如 repay someone for… 等說法",
-        "說的是自己的想法（例如 I、my）",
-        "時態配合內容（例如說未來的事用 will、be going to，或用 want to 表達想法等）"
+        "用 repay 表示「報答」（例如 repay your kindness、repay you for… 等）"
       ]
     }
   ],
@@ -386,6 +386,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It got very dark.\"；改後：\"The dog wanted to go home.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（repay）原位換成翻譯題，沿用題 id b1-u41-l08-q17；目標字沿用 repay",
+        "resolution": "改為 translate：promptZh「我不知道要怎麼報答你的好意。」、hintWords [\"repay\"]、referenceEn [\"I don't know how to repay your kindness.\",\"I don't know how I can repay you for your kindness.\"]、rubricZh [\"用 repay 表示「報答」（例如 repay your kindness、repay you for… 等）\"]（原 makeSentence：instructionZh「用 repay 造一個句子，說說你想怎麼報答幫助過你的人。」、referenceEn [\"I want to repay my parents for their love.\",\"I will repay my friend by helping her with math.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

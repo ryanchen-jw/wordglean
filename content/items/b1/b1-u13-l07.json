@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u13-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "mash",
-      "instructionZh": "用 mash 造一個句子，說說你會把什麼食物壓成泥。",
+      "type": "translate",
+      "promptZh": "我們晚餐吃烤雞配馬鈴薯泥。",
+      "hintWords": [
+        "mash"
+      ],
       "referenceEn": [
-        "I mash bananas to make banana bread.",
-        "I mash boiled eggs to make egg sandwiches."
+        "We had roast chicken with mashed potatoes for dinner.",
+        "For dinner, we had roast chicken and mashed potatoes."
       ],
       "rubricZh": [
-        "mash 表示「把……壓成泥」",
-        "寫出你壓的是哪一種食物",
-        "時態配合內容（多用現在簡單式）"
+        "用 mashed potatoes 表示「馬鈴薯泥」",
+        "「烤雞」可寫，例如 roast chicken、grilled chicken 等；時態可用 had、have 等"
       ]
     }
   ],
@@ -393,6 +394,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"Some gravy.\"；改後：\"Some ice cream.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mash）原位換成翻譯題，沿用題 id b1-u13-l07-q17；目標字沿用 mash",
+        "resolution": "改為 translate：promptZh「我們晚餐吃烤雞配馬鈴薯泥。」、hintWords [\"mash\"]、referenceEn [\"We had roast chicken with mashed potatoes for dinner.\",\"For dinner, we had roast chicken and mashed potatoes.\"]、rubricZh [\"用 mashed potatoes 表示「馬鈴薯泥」\",\"「烤雞」可寫，例如 roast chicken、grilled chicken 等；時態可用 had、have 等\"]（原 makeSentence：instructionZh「用 mash 造一個句子，說說你會把什麼食物壓成泥。」、referenceEn [\"I mash bananas to make banana bread.\",\"I mash boiled eggs to make egg sandwiches.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

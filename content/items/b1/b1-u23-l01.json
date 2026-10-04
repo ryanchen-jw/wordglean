@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u23-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "gym",
-      "instructionZh": "用 gym 造一個句子，說說你去健身房的習慣或看法。",
+      "type": "translate",
+      "promptZh": "下雨的時候，我們就在學校的體育館裡運動。",
+      "hintWords": [
+        "gym"
+      ],
       "referenceEn": [
-        "I go to the gym after work on Mondays.",
-        "I don't like the gym, so I exercise at home."
+        "When it rains, we exercise in the school gym.",
+        "On rainy days, we do exercise in the school gym."
       ],
       "rubricZh": [
-        "gym 表示「健身房」，例如 go to the gym 等說法",
-        "說的是自己的習慣或看法（例如 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 gym 表示「體育館」（例如 the school gym）",
+        "「運動」可寫，例如 exercise、do sports、play games 等"
       ]
     }
   ],
@@ -379,6 +380,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"By eight.\"；改後：\"At six o'clock.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gym）原位換成翻譯題，沿用題 id b1-u23-l01-q17；目標字沿用 gym",
+        "resolution": "改為 translate：promptZh「下雨的時候，我們就在學校的體育館裡運動。」、hintWords [\"gym\"]、referenceEn [\"When it rains, we exercise in the school gym.\",\"On rainy days, we do exercise in the school gym.\"]、rubricZh [\"用 gym 表示「體育館」（例如 the school gym）\",\"「運動」可寫，例如 exercise、do sports、play games 等\"]（原 makeSentence：instructionZh「用 gym 造一個句子，說說你去健身房的習慣或看法。」、referenceEn [\"I go to the gym after work on Mondays.\",\"I don't like the gym, so I exercise at home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

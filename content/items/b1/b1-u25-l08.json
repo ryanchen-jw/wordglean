@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u25-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "oral",
-      "instructionZh": "用 oral 造一個句子，說說你做過的口頭報告或口試。",
+      "type": "translate",
+      "promptZh": "爺爺常常講村裡流傳的口述故事給我們聽。",
+      "hintWords": [
+        "oral"
+      ],
       "referenceEn": [
-        "I gave an oral report about my favorite book.",
-        "I was nervous before my oral test."
+        "My grandfather often tells us the oral stories of the village.",
+        "My grandpa often tells us oral stories from the village."
       ],
       "rubricZh": [
-        "oral 表示「口頭的、口述的」，例如 an oral report 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 oral 表示「口述的；口頭流傳的」（例如 oral stories）"
       ]
     }
   ],
@@ -336,6 +336,18 @@
         "message": "執行長最終複審修正：F12：末兩句對調，讓 She 的指涉與時序清楚",
         "resolution": "改前：\"上個月，一位經驗豐富的天文學家來我們學校。她在太空中心工作了二十年。演講中，她解釋了衛星怎麼留在繞地球的軌道上。她說去太空的人必須帶氧氣，因為那裡沒有空氣。她也給我們看一台能在月球表面移動的小機器人。她告訴我們，對想從事太空科學工作的人來說，數學非常重要。演講結束後，每位學生都做了簡短的口頭報告。她說科技的變化正讓太空旅行變得更便宜。\"；改後：\"上個月，一位經驗豐富的天文學家來我們學校。她在太空中心工作了二十年。演講中，她解釋了衛星怎麼留在繞地球的軌道上。她說去太空的人必須帶氧氣，因為那裡沒有空氣。她也給我們看一台能在月球表面移動的小機器人。她告訴我們，對想從事太空科學工作的人來說，數學非常重要。她也說，科技的變化正讓太空旅行變得更便宜。演講結束後，每位學生都做了簡短的口頭報告。\"",
         "resolvedAt": "2026-10-02T20:25:41Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（oral）原位換成翻譯題，沿用題 id b1-u25-l08-q17；目標字沿用 oral",
+        "resolution": "改為 translate：promptZh「這本書是根據村裡老人的口述寫成的。」、hintWords [\"oral\"]、referenceEn [\"This book is based on the oral stories of the old people in the village.\",\"This book comes from the oral stories told by old people in the village.\"]、rubricZh [\"用 oral 表示「口述的」（例如 oral stories）\",\"「根據…寫成」可寫，例如 is based on、comes from 等\"]（原 makeSentence：instructionZh「用 oral 造一個句子，說說你做過的口頭報告或口試。」、referenceEn [\"I gave an oral report about my favorite book.\",\"I was nervous before my oral test.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與同單元 u25-l05-q17 同為「作品 is based on 來源」（§12.3）",
+        "resolution": "改為 promptZh「爺爺常常講村裡流傳的口述故事給我們聽。」、referenceEn [\"My grandfather often tells us the oral stories of the village.\",\"My grandpa often tells us oral stories from the village.\"]、rubricZh [\"用 oral 表示「口述的；口頭流傳的」（例如 oral stories）\"]（原 promptZh「這本書是根據村裡老人的口述寫成的。」、referenceEn [\"This book is based on the oral stories of the old people in the village.\",\"This book comes from the oral stories told by old people in the village.\"]、rubricZh [\"用 oral 表示「口述的」（例如 oral stories）\",\"「根據…寫成」可寫，例如 is based on、comes from 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

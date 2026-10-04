@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u30-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "blogger",
-      "instructionZh": "用 blogger 造一個句子，說說你喜歡的部落客。",
+      "type": "translate",
+      "promptZh": "那位部落客常寫關於便宜旅行的文章。",
+      "hintWords": [
+        "blogger"
+      ],
       "referenceEn": [
-        "My favorite blogger writes about cooking.",
-        "I follow a travel blogger who visits a new city every month."
+        "That blogger often writes articles about cheap travel.",
+        "That blogger often writes about traveling without spending much money."
       ],
       "rubricZh": [
-        "blogger 表示「部落客」，可數名詞，例如 a travel blogger 等說法",
-        "說的是自己的喜好（例如 my、I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 blogger 表示「部落客」",
+        "「文章」可寫，例如 articles、posts 等；寫 writes about… 也正確"
       ]
     }
   ],
@@ -392,6 +393,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Before the show starts.\"；改後：\"Before the band says it's OK.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（blogger）原位換成翻譯題，沿用題 id b1-u30-l07-q17；目標字沿用 blogger",
+        "resolution": "改為 translate：promptZh「那位部落客常寫關於便宜旅行的文章。」、hintWords [\"blogger\"]、referenceEn [\"That blogger often writes articles about cheap travel.\",\"That blogger often writes about traveling without spending much money.\"]、rubricZh [\"用 blogger 表示「部落客」\",\"「文章」可寫，例如 articles、posts 等；寫 writes about… 也正確\"]（原 makeSentence：instructionZh「用 blogger 造一個句子，說說你喜歡的部落客。」、referenceEn [\"My favorite blogger writes about cooking.\",\"I follow a travel blogger who visits a new city every month.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

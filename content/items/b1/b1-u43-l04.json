@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u43-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "terrified",
-      "instructionZh": "用 terrified 造一個句子，說說讓你非常害怕的東西。",
+      "type": "translate",
+      "promptZh": "我爸爸很怕坐飛機。",
+      "hintWords": [
+        "terrified"
+      ],
       "referenceEn": [
-        "I am terrified of big dogs.",
-        "I was terrified when I got lost in the city."
+        "My father is terrified of flying.",
+        "My dad is terrified of getting on a plane."
       ],
       "rubricZh": [
-        "terrified 表示「非常害怕的」，例如 be terrified of… 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 be terrified of 表示「非常害怕」（例如 is terrified of flying）"
       ]
     }
   ],
@@ -428,6 +428,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"She sang loudly.\"；改後：\"She slept all night.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（terrified）原位換成翻譯題，沿用題 id b1-u43-l04-q17；目標字沿用 terrified",
+        "resolution": "改為 translate：promptZh「我爸爸很怕坐飛機。」、hintWords [\"terrified\"]、referenceEn [\"My father is terrified of flying.\",\"My dad is terrified of taking planes.\"]、rubricZh [\"用 be terrified of 表示「非常害怕」（例如 is terrified of flying）\"]（原 makeSentence：instructionZh「用 terrified 造一個句子，說說讓你非常害怕的東西。」、referenceEn [\"I am terrified of big dogs.\",\"I was terrified when I got lost in the city.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 2 taking planes 不自然",
+        "resolution": "改為 referenceEn [\"My father is terrified of flying.\",\"My dad is terrified of getting on a plane.\"]（原 referenceEn [\"My father is terrified of flying.\",\"My dad is terrified of taking planes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

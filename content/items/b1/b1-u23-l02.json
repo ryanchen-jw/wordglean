@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u23-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "victory",
-      "instructionZh": "用 victory 造一個句子，說說一次讓你開心的勝利。",
+      "type": "translate",
+      "promptZh": "這場勝利對整個小鎮來說意義重大。",
+      "hintWords": [
+        "victory"
+      ],
       "referenceEn": [
-        "Winning the school race was my first real victory.",
-        "I felt very proud after my victory in the speech contest."
+        "This victory means a lot to the whole town.",
+        "The victory is very important to the whole town."
       ],
       "rubricZh": [
-        "victory 表示「勝利」，例如 a big victory、my first victory 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 victory 表示「勝利」",
+        "「意義重大」可寫，例如 means a lot to、is very important to 等"
       ]
     }
   ],
@@ -393,6 +394,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"聯賽；聯盟\"；改後：\"聯盟；聯賽\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（victory）原位換成翻譯題，沿用題 id b1-u23-l02-q17；目標字沿用 victory",
+        "resolution": "改為 translate：promptZh「這場勝利對整個小鎮來說意義重大。」、hintWords [\"victory\"]、referenceEn [\"This victory means a lot to the whole town.\",\"The victory is very important to the whole town.\"]、rubricZh [\"用 victory 表示「勝利」\",\"「意義重大」可寫，例如 means a lot to、is very important to 等\"]（原 makeSentence：instructionZh「用 victory 造一個句子，說說一次讓你開心的勝利。」、referenceEn [\"Winning the school race was my first real victory.\",\"I felt very proud after my victory in the speech contest.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

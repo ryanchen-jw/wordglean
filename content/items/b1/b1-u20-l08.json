@@ -229,16 +229,17 @@
     },
     {
       "id": "b1-u20-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "sickness",
-      "instructionZh": "用 sickness 造一個句子，說說你或家人搭車、搭船時不舒服的經驗。",
+      "type": "translate",
+      "promptZh": "這種病在這個地區很常見。",
+      "hintWords": [
+        "sickness"
+      ],
       "referenceEn": [
-        "I get car sickness when I read in the car.",
-        "My father gets travel sickness on small boats."
+        "This sickness is common in this area.",
+        "This kind of sickness is very common in this region."
       ],
       "rubricZh": [
-        "sickness 表示「（暈車、暈船等的）不適」，例如 car sickness、travel sickness 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 sickness 表示「疾病」（寫 illness、disease 也正確）"
       ]
     }
   ],
@@ -408,6 +409,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"In ten years.\"；改後：\"When the students leave.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（sickness）原位換成翻譯題，沿用題 id b1-u20-l08-q17；目標字沿用 sickness",
+        "resolution": "改為 translate：promptZh「這種病在這個地區很常見。」、hintWords [\"sickness\"]、referenceEn [\"This sickness is common in this area.\",\"This kind of sickness is very common in this region.\"]、rubricZh [\"用 sickness 表示「疾病」（寫 illness、disease 也正確）\"]（原 makeSentence：instructionZh「用 sickness 造一個句子，說說你或家人搭車、搭船時不舒服的經驗。」、referenceEn [\"I get car sickness when I read in the car.\",\"My father gets travel sickness on small boats.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

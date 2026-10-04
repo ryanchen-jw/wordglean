@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u09-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "serious",
-      "instructionZh": "用 serious 造一個句子，說說一件你很認真看待的事。",
+      "type": "translate",
+      "promptZh": "我哥哥對他的新工作很認真。",
+      "hintWords": [
+        "serious"
+      ],
       "referenceEn": [
-        "I am serious about learning English this year.",
-        "I am very serious about my job."
+        "My brother is very serious about his new job.",
+        "My older brother is really serious about his new job."
       ],
       "rubricZh": [
-        "serious 表示「認真的」，例如 be serious about＋名詞或動名詞，也可用 a serious goal 等說法",
-        "說的是自己（例如 I、my、for me）",
-        "時態配合內容（多用現在簡單式）"
+        "用 be serious about 表示「認真看待」（例如 is very serious about…；寫 takes … seriously 也正確）"
       ]
     }
   ],
@@ -375,6 +375,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The neighbor's dog.\"；改後：\"The street lights at night.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（serious）原位換成翻譯題，沿用題 id b1-u09-l03-q17；目標字沿用 serious",
+        "resolution": "改為 translate：promptZh「我哥哥對他的新工作很認真。」、hintWords [\"serious\"]、referenceEn [\"My brother is very serious about his new job.\",\"My older brother is really serious about his new job.\"]、rubricZh [\"用 be serious about 表示「認真看待」（例如 is very serious about…；寫 takes … seriously 也正確）\"]（原 makeSentence：instructionZh「用 serious 造一個句子，說說一件你很認真看待的事。」、referenceEn [\"I am serious about learning English this year.\",\"I am very serious about my job.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

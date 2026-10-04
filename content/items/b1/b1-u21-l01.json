@@ -205,17 +205,18 @@
     },
     {
       "id": "b1-u21-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "tablet",
-      "instructionZh": "用 tablet 造一個句子，說說你怎麼使用平板電腦。",
+      "type": "translate",
+      "promptZh": "我的平板電腦沒電了。",
+      "hintWords": [
+        "tablet"
+      ],
       "referenceEn": [
-        "I watch movies on my tablet before bed.",
-        "I use my tablet to read books on the train."
+        "My tablet's battery is dead.",
+        "My tablet has no battery left."
       ],
       "rubricZh": [
-        "tablet 在這裡表示「平板電腦」，例如 on my tablet 等說法",
-        "說的是自己的習慣（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 tablet 表示「平板電腦」",
+        "「沒電了」可寫，例如 battery is dead、has run out of battery、has no battery left 等"
       ]
     }
   ],
@@ -307,6 +308,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Go to the pet shop nearby.\"；改後：\"Go to the vet's office.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（tablet）原位換成翻譯題，沿用題 id b1-u21-l01-q15；目標字沿用 tablet",
+        "resolution": "改為 translate：promptZh「我的平板電腦沒電了。」、hintWords [\"tablet\"]、referenceEn [\"My tablet's battery is dead.\",\"My tablet has no battery left.\"]、rubricZh [\"用 tablet 表示「平板電腦」\",\"「沒電了」可寫，例如 battery is dead、has run out of battery、has no battery left 等\"]（原 makeSentence：instructionZh「用 tablet 造一個句子，說說你怎麼使用平板電腦。」、referenceEn [\"I watch movies on my tablet before bed.\",\"I use my tablet to read books on the train.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

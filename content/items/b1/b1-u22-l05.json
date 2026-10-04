@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u22-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "enjoyment",
-      "instructionZh": "用 enjoyment 造一個句子，說說什麼帶給你樂趣。",
+      "type": "translate",
+      "promptZh": "下雨並沒有減少我們看煙火的樂趣。",
+      "hintWords": [
+        "enjoyment"
+      ],
       "referenceEn": [
-        "Music brings me a lot of enjoyment.",
-        "I get great enjoyment from cooking for my friends."
+        "The rain did not reduce our enjoyment of the fireworks.",
+        "The rain didn't spoil our enjoyment of the fireworks."
       ],
       "rubricZh": [
-        "enjoyment 表示「樂趣」，是名詞，例如 bring enjoyment、get enjoyment from… 等說法",
-        "說的是自己的經驗（例如 I、me）",
-        "時態配合內容（多用現在簡單式）"
+        "用 enjoyment 表示「樂趣」（例如 our enjoyment of…）",
+        "「沒有減少」可寫，例如 did not reduce、did not spoil 等"
       ]
     }
   ],
@@ -350,6 +351,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"她一談到音樂，表情就生動起來。\"；改後：\"這部動畫影集很受小朋友歡迎。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（enjoyment）原位換成翻譯題，沿用題 id b1-u22-l05-q17；目標字沿用 enjoyment",
+        "resolution": "改為 translate：promptZh「下雨並沒有減少我們看煙火的樂趣。」、hintWords [\"enjoyment\"]、referenceEn [\"The rain did not reduce our enjoyment of the fireworks.\",\"The rain didn't spoil our enjoyment of the fireworks.\"]、rubricZh [\"用 enjoyment 表示「樂趣」（例如 our enjoyment of…）\",\"「沒有減少」可寫，例如 did not reduce、did not spoil 等\"]（原 makeSentence：instructionZh「用 enjoyment 造一個句子，說說什麼帶給你樂趣。」、referenceEn [\"Music brings me a lot of enjoyment.\",\"I get great enjoyment from cooking for my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

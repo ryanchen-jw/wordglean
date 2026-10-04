@@ -229,16 +229,17 @@
     },
     {
       "id": "b1-u11-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "nap",
-      "instructionZh": "用 nap 造一個句子，說說你什麼時候會小睡一下。",
+      "type": "translate",
+      "promptZh": "我爸爸每天吃完午飯後都會睡個午覺。",
+      "hintWords": [
+        "nap"
+      ],
       "referenceEn": [
-        "I take a nap on Sunday afternoons.",
-        "I sometimes have a short nap on the train."
+        "My father takes a nap after lunch every day.",
+        "Every day, my dad has a nap after lunch."
       ],
       "rubricZh": [
-        "nap 表示「小睡」，例如 take a nap、have a nap 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 nap 表示「午睡」（例如 takes a nap、has a nap 等）"
       ]
     }
   ],
@@ -378,6 +379,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"New tiles for the kitchen.\"；改後：\"Tiles for the floor of the kitchen.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nap）原位換成翻譯題，沿用題 id b1-u11-l02-q17；目標字沿用 nap",
+        "resolution": "改為 translate：promptZh「我爸爸每天吃完午飯後都會睡個午覺。」、hintWords [\"nap\"]、referenceEn [\"My father takes a nap after lunch every day.\",\"Every day, my dad has a nap after lunch.\"]、rubricZh [\"用 nap 表示「午睡」（例如 takes a nap、has a nap 等）\"]（原 makeSentence：instructionZh「用 nap 造一個句子，說說你什麼時候會小睡一下。」、referenceEn [\"I take a nap on Sunday afternoons.\",\"I sometimes have a short nap on the train.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

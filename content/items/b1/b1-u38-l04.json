@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u38-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "proverb",
-      "instructionZh": "用 proverb 造一個句子，說說一句你喜歡的諺語。",
+      "type": "translate",
+      "promptZh": "這句諺語的意思是時間很寶貴。",
+      "hintWords": [
+        "proverb"
+      ],
       "referenceEn": [
-        "My favorite proverb is \"Practice makes perfect.\"",
-        "I like the proverb \"Time is money.\""
+        "This proverb means that time is precious.",
+        "The meaning of this proverb is that time is precious."
       ],
       "rubricZh": [
-        "proverb 表示「諺語」，例如 an old proverb 等說法",
-        "說的是自己的想法（例如 I、my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 proverb 表示「諺語」"
       ]
     }
   ],
@@ -384,6 +384,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示「同一課不可重複同一事件類型」：「她最喜歡的諺語是…」與造句參考答案 My favorite proverb is… 同句型同事件，改成她常用這句諺語",
         "resolution": "改前：\"我奶奶當了三十五年的學校老師。她什麼都教：算術、閱讀，甚至一點地質學，因為她很喜歡石頭。她每週都會教學生一句諺語或慣用語。她最喜歡的諺語是「穩紮穩打才能贏得比賽」。學生考試不及格時，她從不生氣，只會說：「再試一次。」她也想出了新的教學方法。例如，她編了一首歌，幫助孩子記住五個母音。鎮上的人都說她是一位創新者。她對學生的奉獻也很有名。\"；改後：\"我奶奶當了三十五年的學校老師。她什麼都教：算術、閱讀，甚至一點地質學，因為她很喜歡石頭。她每週都會教學生一句諺語或慣用語。她常用「穩紮穩打才能贏得比賽」這句諺語。學生考試不及格時，她從不生氣，只會說：「再試一次。」她也想出了新的教學方法。例如，她編了一首歌，幫助孩子記住五個母音。鎮上的人都說她是一位創新者。她對學生的奉獻也很有名。\"",
         "resolvedAt": "2026-10-02T23:41:19Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（proverb）原位換成翻譯題，沿用題 id b1-u38-l04-q17；目標字沿用 proverb",
+        "resolution": "改為 translate：promptZh「這句諺語的意思是時間很寶貴。」、hintWords [\"proverb\"]、referenceEn [\"This proverb means that time is precious.\",\"The meaning of this proverb is that time is precious.\"]、rubricZh [\"用 proverb 表示「諺語」\"]（原 makeSentence：instructionZh「用 proverb 造一個句子，說說一句你喜歡的諺語。」、referenceEn [\"My favorite proverb is \\\"Practice makes perfect.\\\"\",\"I like the proverb \\\"Time is money.\\\"\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

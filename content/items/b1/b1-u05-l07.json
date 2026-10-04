@@ -218,17 +218,18 @@
     },
     {
       "id": "b1-u05-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "calculate",
-      "instructionZh": "用 calculate 造一個句子，說說你會計算什麼，或曾經算過什麼。",
+      "type": "translate",
+      "promptZh": "科學家算出了這顆星星離地球有多遠。",
+      "hintWords": [
+        "calculate"
+      ],
       "referenceEn": [
-        "I calculate my spending at the end of every month.",
-        "I calculated how much the trip would cost."
+        "Scientists have calculated how far this star is from the earth.",
+        "Scientists calculated how far the star is from the earth."
       ],
       "rubricZh": [
-        "calculate 表示「計算」，後面可接名詞或 how much、how many 等子句",
-        "時態配合內容（例如 calculate、calculated）",
-        "主詞是自己（I）"
+        "用 calculate 表示「計算」（例如 calculated how far…）",
+        "時態可用 calculated、have calculated 等"
       ]
     }
   ],
@@ -332,6 +333,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"一群小孩在公園裡玩。\"；改後：\"他送她一束花。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（calculate）原位換成翻譯題，沿用題 id b1-u05-l07-q16；目標字沿用 calculate",
+        "resolution": "改為 translate：promptZh「科學家算出了這顆星星離地球有多遠。」、hintWords [\"calculate\"]、referenceEn [\"Scientists have calculated how far this star is from the earth.\",\"Scientists calculated how far the star is from the earth.\"]、rubricZh [\"用 calculate 表示「計算」（例如 calculated how far…）\",\"時態可用 calculated、have calculated 等\"]（原 makeSentence：instructionZh「用 calculate 造一個句子，說說你會計算什麼，或曾經算過什麼。」、referenceEn [\"I calculate my spending at the end of every month.\",\"I calculated how much the trip would cost.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

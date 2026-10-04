@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u20-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "muscle",
-      "instructionZh": "用 muscle 造一個句子，說說你怎麼鍛鍊或使用肌肉。",
+      "type": "translate",
+      "promptZh": "搬了一整天的箱子，我全身的肌肉都很痠。",
+      "hintWords": [
+        "muscle"
+      ],
       "referenceEn": [
-        "I lift weights to make my arm muscles stronger.",
-        "My leg muscles hurt after a long hike."
+        "After moving boxes all day, all my muscles were sore.",
+        "My muscles were sore after I moved boxes all day."
       ],
       "rubricZh": [
-        "muscle 表示「肌肉」，可數名詞，例如 arm muscles、leg muscles 等",
-        "說的是自己的經驗或習慣（例如 I、my）",
-        "時態配合內容（例如現在簡單式、過去式等）"
+        "用 muscle 的複數表示「肌肉」",
+        "「很痠」可寫，例如 are sore、were sore、hurt 等"
       ]
     }
   ],
@@ -336,6 +337,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Monday at ten.\"；改後：\"Ten o'clock on Monday.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（muscle）原位換成翻譯題，沿用題 id b1-u20-l03-q17；目標字沿用 muscle",
+        "resolution": "改為 translate：promptZh「搬了一整天的箱子，我全身的肌肉都很痠。」、hintWords [\"muscle\"]、referenceEn [\"After moving boxes all day, all my muscles were sore.\",\"My muscles were sore after I moved boxes all day.\"]、rubricZh [\"用 muscle 的複數表示「肌肉」\",\"「很痠」可寫，例如 are sore、were sore、hurt 等\"]（原 makeSentence：instructionZh「用 muscle 造一個句子，說說你怎麼鍛鍊或使用肌肉。」、referenceEn [\"I lift weights to make my arm muscles stronger.\",\"My leg muscles hurt after a long hike.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

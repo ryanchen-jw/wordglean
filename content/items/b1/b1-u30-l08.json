@@ -230,17 +230,18 @@
     },
     {
       "id": "b1-u30-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "message board",
-      "instructionZh": "用 message board 造一個句子，說說你在留言板上看過或貼過的東西。",
+      "type": "translate",
+      "promptZh": "公司在公告欄上公布了新的假期。",
+      "hintWords": [
+        "message board"
+      ],
       "referenceEn": [
-        "I once found a lost dog through a message board.",
-        "I read the message board at school every morning."
+        "The company posted the new holiday dates on the message board.",
+        "The new holidays were put up on the company message board."
       ],
       "rubricZh": [
-        "message board 表示「留言板、公告欄」，例如 on the message board 等說法",
-        "說的是自己的經驗或習慣（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 message board 表示「公告欄；留言板」（寫 notice board、bulletin board 也正確）",
+        "「公布」可寫，例如 posted、put up 等"
       ]
     }
   ],
@@ -344,6 +345,18 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"To buy the old bike.\"；改後：\"To pay for the used bike.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（message board）原位換成翻譯題，沿用題 id b1-u30-l08-q17；目標字沿用 message board",
+        "resolution": "改為 translate：promptZh「公司在公告欄上公布了新的假期。」、hintWords [\"message board\"]、referenceEn [\"The company posted the new holiday dates on the message board.\",\"The new holidays were put up on the company message board.\"]、rubricZh [\"用 message board 表示「公告欄；留言板」\",\"「公布」可寫，例如 posted、put up 等\"]（原 makeSentence：instructionZh「用 message board 造一個句子，說說你在留言板上看過或貼過的東西。」、referenceEn [\"I once found a lost dog through a message board.\",\"I read the message board at school every morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 實體公告欄常譯 notice board、bulletin board，要點沒收",
+        "resolution": "改為 rubricZh [\"用 message board 表示「公告欄；留言板」（寫 notice board、bulletin board 也正確）\",\"「公布」可寫，例如 posted、put up 等\"]（原 rubricZh [\"用 message board 表示「公告欄；留言板」\",\"「公布」可寫，例如 posted、put up 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u25-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "memorize",
-      "instructionZh": "用 memorize 造一個句子，說說你怎麼背東西。",
+      "type": "translate",
+      "promptZh": "服務生把我們點的菜全都記住了，沒有寫下來。",
+      "hintWords": [
+        "memorize"
+      ],
       "referenceEn": [
-        "I memorize new words by writing them many times.",
-        "I memorize long numbers by saying them again and again."
+        "The waiter memorized our whole order without writing it down.",
+        "The waiter memorized everything we ordered and didn't write it down."
       ],
       "rubricZh": [
-        "memorize 表示「背誦、記住」，例如 memorize words 等說法",
-        "說的是自己的經驗或想法（例如 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 memorize 表示「記住」（例如 memorized our whole order）",
+        "「沒有寫下來」可寫，例如 without writing it down、didn't write it down 等"
       ]
     }
   ],
@@ -348,6 +349,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項配合調整（長度名次、0.5～2 倍、不設定說話者性別或身分）",
         "resolution": "改前：\"At nine tomorrow.\"；改後：\"Nine o'clock, as usual.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（memorize）原位換成翻譯題，沿用題 id b1-u25-l03-q17；目標字沿用 memorize",
+        "resolution": "改為 translate：promptZh「服務生把我們點的菜全都記住了，沒有寫下來。」、hintWords [\"memorize\"]、referenceEn [\"The waiter memorized our whole order without writing it down.\",\"The waiter memorized everything we ordered and didn't write it down.\"]、rubricZh [\"用 memorize 表示「記住」（例如 memorized our whole order）\",\"「沒有寫下來」可寫，例如 without writing it down、didn't write it down 等\"]（原 makeSentence：instructionZh「用 memorize 造一個句子，說說你怎麼背東西。」、referenceEn [\"I memorize new words by writing them many times.\",\"I memorize long numbers by saying them again and again.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

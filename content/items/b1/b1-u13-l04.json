@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u13-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "nutrient",
-      "instructionZh": "用 nutrient 造一個句子，說說某種食物含有營養。",
+      "type": "translate",
+      "promptZh": "這條河把養分帶給沿岸的農田。",
+      "hintWords": [
+        "nutrient"
+      ],
       "referenceEn": [
-        "Eggs are full of nutrients that help children grow.",
-        "Fish contains many nutrients that are good for the brain."
+        "The river brings nutrients to the fields along its banks.",
+        "This river carries nutrients to the fields beside it."
       ],
       "rubricZh": [
-        "nutrient 表示「營養素」，單數、複數都可以（例如 nutrients）",
-        "可用 be full of nutrients、contain nutrients 等說法",
-        "時態配合內容（多用現在簡單式）"
+        "用 nutrient 的複數表示「養分」（例如 brings nutrients to…）",
+        "「沿岸的農田」可寫，例如 the fields along its banks、the fields beside it 等"
       ]
     }
   ],
@@ -349,6 +350,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Some soup.\"；改後：\"Only soup.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nutrient）原位換成翻譯題，沿用題 id b1-u13-l04-q17；目標字沿用 nutrient",
+        "resolution": "改為 translate：promptZh「這條河把養分帶給沿岸的農田。」、hintWords [\"nutrient\"]、referenceEn [\"The river brings nutrients to the fields along its banks.\",\"This river carries nutrients to the fields beside it.\"]、rubricZh [\"用 nutrient 的複數表示「養分」（例如 brings nutrients to…）\",\"「沿岸的農田」可寫，例如 the fields along its banks、the fields beside it 等\"]（原 makeSentence：instructionZh「用 nutrient 造一個句子，說說某種食物含有營養。」、referenceEn [\"Eggs are full of nutrients that help children grow.\",\"Fish contains many nutrients that are good for the brain.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

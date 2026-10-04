@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u42-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "uplifted",
-      "instructionZh": "用 uplifted 造一個句子，說說什麼讓你覺得精神振奮。",
+      "type": "translate",
+      "promptZh": "看到大家的笑容，我覺得精神振奮。",
+      "hintWords": [
+        "uplifted"
+      ],
       "referenceEn": [
-        "I feel uplifted when I listen to my favorite songs.",
-        "I felt uplifted after my team won the game."
+        "I felt uplifted when I saw everyone's smiles.",
+        "Seeing everyone smile made me feel uplifted."
       ],
       "rubricZh": [
-        "uplifted 表示「振奮的」，例如 feel uplifted 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 uplifted 表示「振奮的」",
+        "時態配合內容（例如 felt、feel 等）"
       ]
     }
   ],
@@ -426,6 +427,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"On Tuesday instead.\"；改後：\"Tuesday, not Monday.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（uplifted）原位換成翻譯題，沿用題 id b1-u42-l09-q17；目標字沿用 uplifted",
+        "resolution": "改為 translate：promptZh「看到大家的笑容，我覺得精神振奮。」、hintWords [\"uplifted\"]、referenceEn [\"I felt uplifted when I saw everyone's smiles.\",\"Seeing everyone smile made me feel uplifted.\"]、rubricZh [\"用 uplifted 表示「振奮的」\",\"時態配合內容（例如 felt、feel 等）\"]（原 makeSentence：instructionZh「用 uplifted 造一個句子，說說什麼讓你覺得精神振奮。」、referenceEn [\"I feel uplifted when I listen to my favorite songs.\",\"I felt uplifted after my team won the game.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

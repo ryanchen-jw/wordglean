@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u41-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "scratch",
-      "instructionZh": "用 scratch 造一個句子，說說你的東西上的刮痕或一次被抓傷的經驗。",
+      "type": "translate",
+      "promptZh": "我的貓在沙發上留下了很多抓痕。",
+      "hintWords": [
+        "scratch"
+      ],
       "referenceEn": [
-        "I got a scratch on my hand from a rose.",
-        "My cat left a scratch on my arm."
+        "My cat left a lot of scratches on the sofa.",
+        "My cat made many scratches on the sofa."
       ],
       "rubricZh": [
-        "scratch 表示「刮痕、抓傷」，例如 a small scratch 等說法",
-        "說的是自己的東西或經驗（例如 my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 scratch 的複數表示「抓痕」"
       ]
     }
   ],
@@ -456,6 +456,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The car already has a scratch.\"；改後：\"The door has been damaged a little.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（scratch）原位換成翻譯題，沿用題 id b1-u41-l04-q17；目標字沿用 scratch",
+        "resolution": "改為 translate：promptZh「我的貓在沙發上留下了很多抓痕。」、hintWords [\"scratch\"]、referenceEn [\"My cat left a lot of scratches on the sofa.\",\"My cat made many scratches on the sofa.\"]、rubricZh [\"用 scratch 的複數表示「抓痕」\"]（原 makeSentence：instructionZh「用 scratch 造一個句子，說說你的東西上的刮痕或一次被抓傷的經驗。」、referenceEn [\"I got a scratch on my hand from a rose.\",\"My cat left a scratch on my arm.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

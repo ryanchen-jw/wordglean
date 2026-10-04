@@ -243,17 +243,18 @@
     },
     {
       "id": "b1-u29-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "global",
-      "instructionZh": "用 global 造一個句子，說說一個你覺得是全球性的問題或現象。",
+      "type": "translate",
+      "promptZh": "網路讓全球的溝通變得更容易。",
+      "hintWords": [
+        "global"
+      ],
       "referenceEn": [
-        "I think plastic waste is a global problem.",
-        "I believe clean water is a global need."
+        "The internet has made global communication easier.",
+        "The internet makes global communication much easier."
       ],
       "rubricZh": [
-        "global 表示「全球的、全世界的」，例如 a global problem 等說法",
-        "說的是自己的看法（例如 I think）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 global 表示「全球的」（例如 global communication）",
+        "時態可用 has made、makes 等"
       ]
     }
   ],
@@ -297,6 +298,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：裁示（評分要點不寫死時態、不寫死 will，一律「例如…等」）：時態要點改成「時態配合內容（例如…等）」",
         "resolution": "改前：\"時態配合內容（多用現在簡單式）\"；改後：\"時態配合內容（例如現在簡單式等）\"",
         "resolvedAt": "2026-10-02T23:14:24Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（global）原位換成翻譯題，沿用題 id b1-u29-l01-q18；目標字沿用 global",
+        "resolution": "改為 translate：promptZh「網路讓全球的溝通變得更容易。」、hintWords [\"global\"]、referenceEn [\"The internet has made global communication easier.\",\"The internet makes global communication much easier.\"]、rubricZh [\"用 global 表示「全球的」（例如 global communication）\",\"時態可用 has made、makes 等\"]（原 makeSentence：instructionZh「用 global 造一個句子，說說一個你覺得是全球性的問題或現象。」、referenceEn [\"I think plastic waste is a global problem.\",\"I believe clean water is a global need.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

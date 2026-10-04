@@ -6,7 +6,10 @@
   "model": "claude-dev",
   "author": "claude-dev",
   "authoredAt": "2026-10-02T20:16:05Z",
-  "properNouns": [],
+  "properNouns": [
+    "English",
+    "French"
+  ],
   "items": [
     {
       "id": "b1-u30-l01-q01",
@@ -241,17 +244,18 @@
     },
     {
       "id": "b1-u30-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "accent",
-      "instructionZh": "用 accent 造一個句子，說說你聽過的某種口音。",
+      "type": "translate",
+      "promptZh": "她說英文帶一點法國口音。",
+      "hintWords": [
+        "accent"
+      ],
       "referenceEn": [
-        "My grandmother has a strong accent from the south.",
-        "I like my teacher's accent."
+        "She speaks English with a slight French accent.",
+        "She has a slight French accent when she speaks English."
       ],
       "rubricZh": [
-        "accent 表示「口音」，例如 a strong accent 等說法",
-        "說的是自己的經驗或喜好（例如 I、my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 accent 表示「口音」（例如 with a French accent）",
+        "「一點」可寫，例如 a slight、a little 等"
       ]
     }
   ],
@@ -361,6 +365,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Speak much more loudly.\"；改後：\"Speak more loudly for five minutes.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（accent）原位換成翻譯題，沿用題 id b1-u30-l01-q18；目標字沿用 accent",
+        "resolution": "改為 translate：promptZh「她說英文帶一點法國口音。」、hintWords [\"accent\"]、referenceEn [\"She speaks English with a slight French accent.\",\"She has a slight French accent when she speaks English.\"]、rubricZh [\"用 accent 表示「口音」（例如 with a French accent）\",\"「一點」可寫，例如 a slight、a little 等\"]（原 makeSentence：instructionZh「用 accent 造一個句子，說說你聽過的某種口音。」、referenceEn [\"My grandmother has a strong accent from the south.\",\"I like my teacher's accent.\"]）；properNouns 加 English、French",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

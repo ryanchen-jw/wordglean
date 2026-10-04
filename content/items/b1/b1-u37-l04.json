@@ -231,17 +231,17 @@
     },
     {
       "id": "b1-u37-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "satisfied",
-      "instructionZh": "用 satisfied 造一個句子，說說一件你感到滿意的事。",
+      "type": "translate",
+      "promptZh": "老闆對我們的工作很滿意。",
+      "hintWords": [
+        "satisfied"
+      ],
       "referenceEn": [
-        "I am satisfied with my English grade this term.",
-        "I was satisfied with the cake I made for my mom."
+        "The boss is very satisfied with our work.",
+        "Our boss is really satisfied with our work."
       ],
       "rubricZh": [
-        "satisfied 表示「滿意的」，例如 be satisfied with… 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 be satisfied with 表示「對…滿意」"
       ]
     }
   ],
@@ -441,6 +441,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The hero turned out to be the bad guy.\"；改後：\"The good guy was really the bad one.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（satisfied）原位換成翻譯題，沿用題 id b1-u37-l04-q17；目標字沿用 satisfied",
+        "resolution": "改為 translate：promptZh「老闆對我們的工作很滿意。」、hintWords [\"satisfied\"]、referenceEn [\"The boss is very satisfied with our work.\",\"Our boss is really satisfied with our work.\"]、rubricZh [\"用 be satisfied with 表示「對…滿意」\"]（原 makeSentence：instructionZh「用 satisfied 造一個句子，說說一件你感到滿意的事。」、referenceEn [\"I am satisfied with my English grade this term.\",\"I was satisfied with the cake I made for my mom.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

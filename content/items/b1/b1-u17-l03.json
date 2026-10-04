@@ -244,17 +244,18 @@
     },
     {
       "id": "b1-u17-l03-q18",
-      "type": "makeSentence",
-      "targetWord": "union",
-      "instructionZh": "用 union 造一個句子，說說某個工會或學生會做的事。",
+      "type": "translate",
+      "promptZh": "學生會每年舉辦一場音樂會。",
+      "hintWords": [
+        "union"
+      ],
       "referenceEn": [
-        "The student union is planning a trip for new students.",
-        "The workers' union asked the company for higher pay."
+        "The student union holds a concert every year.",
+        "Every year, the student union organizes a concert."
       ],
       "rubricZh": [
-        "union 表示「工會、學生會、聯盟」",
-        "可用 the student union、join a union 等說法",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 student union 表示「學生會」（寫 student council 也正確）",
+        "「舉辦」可寫，例如 holds、organizes 等"
       ]
     }
   ],
@@ -358,6 +359,18 @@
         "message": "執行長補充規則（只看英文）自查修正：執行長補充規則（只看英文）自查修正：干擾項放進英文句子仍可成立，換成明顯不通的字：port→border",
         "resolution": "改前：\"港口\"；改後：\"地平線\"",
         "resolvedAt": "2026-10-02T22:16:29Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（union）原位換成翻譯題，沿用題 id b1-u17-l03-q18；目標字沿用 union",
+        "resolution": "改為 translate：promptZh「學生會每年舉辦一場音樂會。」、hintWords [\"union\"]、referenceEn [\"The student union holds a concert every year.\",\"Every year, the student union organizes a concert.\"]、rubricZh [\"用 student union 表示「學生會」\",\"「舉辦」可寫，例如 holds、organizes 等\"]（原 makeSentence：instructionZh「用 union 造一個句子，說說某個工會或學生會做的事。」、referenceEn [\"The student union is planning a trip for new students.\",\"The workers' union asked the company for higher pay.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "執行長裁示：第③關：SUS 台灣「學生會」常譯 student council，要點沒收",
+        "resolution": "改為 rubricZh [\"用 student union 表示「學生會」（寫 student council 也正確）\",\"「舉辦」可寫，例如 holds、organizes 等\"]（原 rubricZh [\"用 student union 表示「學生會」\",\"「舉辦」可寫，例如 holds、organizes 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

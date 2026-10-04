@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u39-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "crow",
-      "instructionZh": "用 crow 造一個句子，說說你看過的烏鴉。",
+      "type": "translate",
+      "promptZh": "幾隻烏鴉在垃圾桶旁邊找食物。",
+      "hintWords": [
+        "crow"
+      ],
       "referenceEn": [
-        "I often see crows in the park near my house.",
-        "A crow once took food from my hand."
+        "Some crows were looking for food near the trash can.",
+        "A few crows are looking for food by the trash can."
       ],
       "rubricZh": [
-        "crow 表示「烏鴉」，例如 a black crow 等說法",
-        "說的是自己的經驗（例如 I、my）",
-        "時態配合內容（例如現在簡單式或過去式等）"
+        "用 crow 的複數表示「烏鴉」",
+        "時態配合內容（例如 are looking、were looking 等）"
       ]
     }
   ],
@@ -390,6 +391,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Hid under the table.\"；改後：\"Took cover under a table.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（crow）原位換成翻譯題，沿用題 id b1-u39-l04-q17；目標字沿用 crow",
+        "resolution": "改為 translate：promptZh「幾隻烏鴉在垃圾桶旁邊找食物。」、hintWords [\"crow\"]、referenceEn [\"Some crows were looking for food near the trash can.\",\"A few crows are looking for food by the trash can.\"]、rubricZh [\"用 crow 的複數表示「烏鴉」\",\"時態配合內容（例如 are looking、were looking 等）\"]（原 makeSentence：instructionZh「用 crow 造一個句子，說說你看過的烏鴉。」、referenceEn [\"I often see crows in the park near my house.\",\"A crow once took food from my hand.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -217,17 +217,17 @@
     },
     {
       "id": "b1-u36-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "common sense",
-      "instructionZh": "用 common sense 造一個句子，說說一件你覺得是常識的事。",
+      "type": "translate",
+      "promptZh": "這不需要專業知識，只需要一點常識。",
+      "hintWords": [
+        "common sense"
+      ],
       "referenceEn": [
-        "I think it is common sense to say thank you.",
-        "I use common sense and check the weather before a trip."
+        "You don't need special knowledge for this, just a little common sense.",
+        "This doesn't need expert knowledge; it only needs some common sense."
       ],
       "rubricZh": [
-        "common sense 表示「常識」，例如 It is common sense to… 等說法",
-        "說的是自己的想法或習慣（例如 I）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 common sense 表示「常識；判斷力」（不可數，例如 a little common sense）"
       ]
     }
   ],
@@ -457,6 +457,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：最終複審同類問題自查（裁示：不調換釋義順序）：前一輪為避開情境重複把釋義順序調過，改回原順序，改寫例句示範第一義「riddled with 充滿」，並避開同課其他題的情境",
         "resolution": "改前：\"謎語；riddled with 充滿\"；改後：\"riddled with 充滿；謎語\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（common sense）原位換成翻譯題，沿用題 id b1-u36-l07-q16；目標字沿用 common sense",
+        "resolution": "改為 translate：promptZh「這不需要專業知識，只需要一點常識。」、hintWords [\"common sense\"]、referenceEn [\"You don't need special knowledge for this, just a little common sense.\",\"This doesn't need expert knowledge; it only needs some common sense.\"]、rubricZh [\"用 common sense 表示「常識；判斷力」（不可數，例如 a little common sense）\"]（原 makeSentence：instructionZh「用 common sense 造一個句子，說說一件你覺得是常識的事。」、referenceEn [\"I think it is common sense to say thank you.\",\"I use common sense and check the weather before a trip.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

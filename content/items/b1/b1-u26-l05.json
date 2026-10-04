@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u26-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "bubble",
-      "instructionZh": "用 bubble 造一個句子，說說你玩泡泡或看到氣泡的經驗。",
+      "type": "translate",
+      "promptZh": "水快煮開時會冒出小氣泡。",
+      "hintWords": [
+        "bubble"
+      ],
       "referenceEn": [
-        "I loved blowing bubbles when I was a child.",
-        "I saw bubbles rising in my glass of water."
+        "Small bubbles appear when the water is about to boil.",
+        "When the water is nearly boiling, small bubbles come up."
       ],
       "rubricZh": [
-        "bubble 表示「泡泡、氣泡」，可數名詞，例如 blow bubbles 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 bubble 的複數表示「氣泡」",
+        "「快煮開」可寫，例如 is about to boil、is nearly boiling 等"
       ]
     }
   ],
@@ -366,6 +367,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"The lifeguards go home then.\"；改後：\"The sand is too hot.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bubble）原位換成翻譯題，沿用題 id b1-u26-l05-q17；目標字沿用 bubble",
+        "resolution": "改為 translate：promptZh「水快煮開時會冒出小氣泡。」、hintWords [\"bubble\"]、referenceEn [\"Small bubbles appear when the water is about to boil.\",\"When the water is nearly boiling, small bubbles come up.\"]、rubricZh [\"用 bubble 的複數表示「氣泡」\",\"「快煮開」可寫，例如 is about to boil、is nearly boiling 等\"]（原 makeSentence：instructionZh「用 bubble 造一個句子，說說你玩泡泡或看到氣泡的經驗。」、referenceEn [\"I loved blowing bubbles when I was a child.\",\"I saw bubbles rising in my glass of water.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

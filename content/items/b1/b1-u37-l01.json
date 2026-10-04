@@ -230,17 +230,17 @@
     },
     {
       "id": "b1-u37-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "talented",
-      "instructionZh": "用 talented 造一個句子，說說一位你認識的有才華的人。",
+      "type": "translate",
+      "promptZh": "這位年輕的廚師非常有才華。",
+      "hintWords": [
+        "talented"
+      ],
       "referenceEn": [
-        "My cousin is a talented piano player.",
-        "I think my best friend is very talented at drawing."
+        "This young cook is very talented.",
+        "The young cook is extremely talented."
       ],
       "rubricZh": [
-        "talented 表示「有才華的」，例如 a talented singer 等說法",
-        "說的是自己認識的人（例如 my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 talented 表示「有才華的」"
       ]
     }
   ],
@@ -398,6 +398,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The sea was calm.\"；改後：\"There were no big waves.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（talented）原位換成翻譯題，沿用題 id b1-u37-l01-q17；目標字沿用 talented",
+        "resolution": "改為 translate：promptZh「這位年輕的廚師非常有才華。」、hintWords [\"talented\"]、referenceEn [\"This young cook is very talented.\",\"The young cook is extremely talented.\"]、rubricZh [\"用 talented 表示「有才華的」\"]（原 makeSentence：instructionZh「用 talented 造一個句子，說說一位你認識的有才華的人。」、referenceEn [\"My cousin is a talented piano player.\",\"I think my best friend is very talented at drawing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,17 @@
     },
     {
       "id": "b1-u05-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "equal",
-      "instructionZh": "用 equal 造一個句子，說說你覺得什麼應該要平等。",
+      "type": "translate",
+      "promptZh": "請把這張紙剪成四個相等的部分。",
+      "hintWords": [
+        "equal"
+      ],
       "referenceEn": [
-        "I think men and women should get equal pay.",
-        "I believe every child deserves an equal chance."
+        "Please cut this paper into four equal parts.",
+        "Cut this piece of paper into four equal pieces, please."
       ],
       "rubricZh": [
-        "equal 表示「相等的、平等的」，可放在名詞前或 be 動詞後（例如 equal pay、are equal）",
-        "可用 I think、I believe 等開頭",
-        "說的是自己的看法"
+        "用 equal 表示「相等的」（例如 four equal parts、four equal pieces 等）"
       ]
     }
   ],
@@ -373,6 +373,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Fifteen people.\"；改後：\"At least ten.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（equal）原位換成翻譯題，沿用題 id b1-u05-l04-q17；目標字沿用 equal",
+        "resolution": "改為 translate：promptZh「請把這張紙剪成四個相等的部分。」、hintWords [\"equal\"]、referenceEn [\"Please cut this paper into four equal parts.\",\"Cut this piece of paper into four equal pieces, please.\"]、rubricZh [\"用 equal 表示「相等的」（例如 four equal parts、four equal pieces 等）\"]（原 makeSentence：instructionZh「用 equal 造一個句子，說說你覺得什麼應該要平等。」、referenceEn [\"I think men and women should get equal pay.\",\"I believe every child deserves an equal chance.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

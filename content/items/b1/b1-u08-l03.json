@@ -234,17 +234,18 @@
     },
     {
       "id": "b1-u08-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "companion",
-      "instructionZh": "用 companion 造一個句子，說說誰（或什麼）是你常常一起做某件事的同伴。",
+      "type": "translate",
+      "promptZh": "我爺爺退休後，收音機成了他每天的伴。",
+      "hintWords": [
+        "companion"
+      ],
       "referenceEn": [
-        "My brother is my companion on long bike rides.",
-        "Music is my best companion when I study at night."
+        "After my grandfather retired, the radio became his daily companion.",
+        "The radio became my grandpa's daily companion after he retired."
       ],
       "rubricZh": [
-        "companion 表示「同伴」，可用 my companion on／for… 等說法",
-        "說的是自己的經驗（例如 my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 companion 表示「同伴；陪伴的東西」（例如 his daily companion）",
+        "時態可用過去式或現在完成式（例如 became、has become … since he retired 等）"
       ]
     }
   ],
@@ -396,6 +397,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Right now.\"；改後：\"Five minutes ago.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（companion）原位換成翻譯題，沿用題 id b1-u08-l03-q17；目標字沿用 companion",
+        "resolution": "改為 translate：promptZh「我爺爺退休後，收音機成了他每天的伴。」、hintWords [\"companion\"]、referenceEn [\"After my grandfather retired, the radio became his daily companion.\",\"The radio became my grandpa's daily companion after he retired.\"]、rubricZh [\"用 companion 表示「同伴；陪伴的東西」（例如 his daily companion）\",\"時態可用過去式或現在完成式（例如 became、has become … since he retired 等）\"]（原 makeSentence：instructionZh「用 companion 造一個句子，說說誰（或什麼）是你常常一起做某件事的同伴。」、referenceEn [\"My brother is my companion on long bike rides.\",\"Music is my best companion when I study at night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

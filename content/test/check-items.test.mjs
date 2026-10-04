@@ -453,12 +453,17 @@ test('造句改翻譯：A1 課出現 makeSentence → COMPOSITION（makeSentence
   assert.ok(errors.some((e) => /translate 應為 2 題，實際 1/.test(e.message)));
 });
 
-test('過渡：未轉換級別（B1）一課 1 翻譯＋1 造句仍全綠、改成 2 翻譯反而報 COMPOSITION', () => {
-  const doc = fixture('b1-u01-l01');
-  assert.deepEqual(checkB1(doc), []);
-  const ms = doc.items.findIndex((it) => it.type === 'makeSentence');
-  doc.items[ms] = { id: doc.items[ms].id, type: 'translate', promptZh: '不管天氣如何，我們都會去。', hintWords: ['whether'], referenceEn: ['We will go whether it rains or not.'], rubricZh: ['用 whether 表示「不管」'] };
-  assert.deepEqual(codes(checkB1(doc)), ['COMPOSITION items', 'COMPOSITION items']);
+// B1 已轉換；暫時把 B1 放回未轉換清單，測過渡機制本身（測完還原）。
+test('過渡：未轉換級別一課 1 翻譯＋1 造句仍全綠、2 翻譯反而報 COMPOSITION', () => {
+  MS2TR_PENDING_LEVELS.add('B1');
+  try {
+    const doc = fixture('b1-u01-l01');
+    assert.deepEqual(codes(checkB1(doc)), ['COMPOSITION items', 'COMPOSITION items']);
+    doc.items[17] = { id: 'b1-u01-l01-q18', type: 'makeSentence', targetWord: 'whether', instructionZh: '用 whether 造一個句子，說說你還沒決定的一件事。', referenceEn: ['I have not decided whether to take the job.'], rubricZh: ['whether 表示「是否」'] };
+    assert.deepEqual(checkB1(doc), []);
+  } finally {
+    MS2TR_PENDING_LEVELS.delete('B1');
+  }
 });
 
 test('TRANSLATE_HINT_DUP：同課兩題翻譯的 hintWords 有相同的本課目標字；非目標字相同不報', () => {

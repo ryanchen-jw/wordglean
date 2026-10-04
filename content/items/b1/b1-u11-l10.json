@@ -220,17 +220,18 @@
     },
     {
       "id": "b1-u11-l10-q16",
-      "type": "makeSentence",
-      "targetWord": "remote control",
-      "instructionZh": "用 remote control 造一個句子，說說你家遙控器常放的位置，或常發生的事。",
+      "type": "translate",
+      "promptZh": "我們在沙發的墊子下面找到了遙控器。",
+      "hintWords": [
+        "remote control"
+      ],
       "referenceEn": [
-        "Our remote control is always under the sofa.",
-        "My little brother always hides the remote control."
+        "We found the remote control under the sofa cushion.",
+        "We found the remote control under a cushion on the sofa."
       ],
       "rubricZh": [
-        "remote control 表示「遙控器」",
-        "可以寫位置或發生的事（例如 under the sofa、hides）",
-        "時態配合內容（多用現在簡單式）"
+        "用 remote control 表示「遙控器」",
+        "「沙發的墊子」可寫，例如 the sofa cushion、a cushion on the sofa 等"
       ]
     }
   ],
@@ -400,6 +401,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The remote control is lost.\"；改後：\"Nobody can find the remote.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（remote control）原位換成翻譯題，沿用題 id b1-u11-l10-q16；目標字沿用 remote control",
+        "resolution": "改為 translate：promptZh「我們在沙發的墊子下面找到了遙控器。」、hintWords [\"remote control\"]、referenceEn [\"We found the remote control under the sofa cushion.\",\"We found the remote control under a cushion on the sofa.\"]、rubricZh [\"用 remote control 表示「遙控器」\",\"「沙發的墊子」可寫，例如 the sofa cushion、a cushion on the sofa 等\"]（原 makeSentence：instructionZh「用 remote control 造一個句子，說說你家遙控器常放的位置，或常發生的事。」、referenceEn [\"Our remote control is always under the sofa.\",\"My little brother always hides the remote control.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

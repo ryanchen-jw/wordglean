@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u30-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "virtual",
-      "instructionZh": "用 virtual 造一個句子，說說你參加過的線上活動或用過的虛擬工具。",
+      "type": "translate",
+      "promptZh": "因為暴風雨，今天的會議改成線上進行。",
+      "hintWords": [
+        "virtual"
+      ],
       "referenceEn": [
-        "I took a virtual cooking class last month.",
-        "I sometimes meet my friends in a virtual game."
+        "Because of the storm, today's meeting will be virtual.",
+        "Because of the storm, today's meeting will be a virtual meeting."
       ],
       "rubricZh": [
-        "virtual 表示「虛擬的、線上的」，例如 a virtual class 等說法",
-        "說的是自己的經驗（例如 I）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 virtual 表示「線上的；虛擬的」（例如 a virtual meeting；寫 online 也正確）",
+        "「改成線上進行」可寫，例如 will be virtual、will be a virtual meeting 等"
       ]
     }
   ],
@@ -324,6 +325,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"It is free tonight.\"；改後：\"The new software is free tonight.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（virtual）原位換成翻譯題，沿用題 id b1-u30-l05-q17；目標字沿用 virtual",
+        "resolution": "改為 translate：promptZh「因為暴風雨，今天的會議改成線上進行。」、hintWords [\"virtual\"]、referenceEn [\"Because of the storm, today's meeting will be virtual.\",\"Today's meeting has become a virtual meeting because of the storm.\"]、rubricZh [\"用 virtual 表示「線上的；虛擬的」（例如 a virtual meeting；寫 online 也正確）\",\"「改成」可寫，例如 will be、has become 等\"]（原 makeSentence：instructionZh「用 virtual 造一個句子，說說你參加過的線上活動或用過的虛擬工具。」、referenceEn [\"I took a virtual cooking class last month.\",\"I sometimes meet my friends in a virtual game.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 2 has become a virtual meeting 不自然",
+        "resolution": "改為 referenceEn [\"Because of the storm, today's meeting will be virtual.\",\"Because of the storm, today's meeting will be a virtual meeting.\"]、rubricZh [\"用 virtual 表示「線上的；虛擬的」（例如 a virtual meeting；寫 online 也正確）\",\"「改成線上進行」可寫，例如 will be virtual、will be a virtual meeting 等\"]（原 referenceEn [\"Because of the storm, today's meeting will be virtual.\",\"Today's meeting has become a virtual meeting because of the storm.\"]、rubricZh [\"用 virtual 表示「線上的；虛擬的」（例如 a virtual meeting；寫 online 也正確）\",\"「改成」可寫，例如 will be、has become 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

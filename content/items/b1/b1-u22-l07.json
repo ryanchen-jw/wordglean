@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u22-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "chat show",
-      "instructionZh": "用 chat show 造一個句子，說說你喜歡或不喜歡的談話節目。",
+      "type": "translate",
+      "promptZh": "那位演員下週會上一個談話節目。",
+      "hintWords": [
+        "chat show"
+      ],
       "referenceEn": [
-        "I often watch a chat show before I go to bed.",
-        "I don't like chat shows because the hosts talk too much."
+        "That actor will appear on a chat show next week.",
+        "That actor is going to be on a chat show next week."
       ],
       "rubricZh": [
-        "chat show 表示「談話節目」，例如 watch a chat show 等說法",
-        "說的是自己的看法或習慣（例如 I）",
-        "時態配合內容（多用現在簡單式）"
+        "用 chat show 表示「談話節目」（寫 talk show 也正確）",
+        "表示未來的寫法都可以（例如 will appear、is going to be 等）"
       ]
     }
   ],
@@ -355,6 +356,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"科幻作品；科幻小說\"；改後：\"科幻小說；科幻作品\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（chat show）原位換成翻譯題，沿用題 id b1-u22-l07-q17；目標字沿用 chat show",
+        "resolution": "改為 translate：promptZh「那位演員下週會上一個談話節目。」、hintWords [\"chat show\"]、referenceEn [\"That actor will appear on a chat show next week.\",\"That actor is going to be on a chat show next week.\"]、rubricZh [\"用 chat show 表示「談話節目」（寫 talk show 也正確）\",\"表示未來的寫法都可以（例如 will appear、is going to be 等）\"]（原 makeSentence：instructionZh「用 chat show 造一個句子，說說你喜歡或不喜歡的談話節目。」、referenceEn [\"I often watch a chat show before I go to bed.\",\"I don't like chat shows because the hosts talk too much.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

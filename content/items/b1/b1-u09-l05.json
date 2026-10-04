@@ -233,17 +233,18 @@
     },
     {
       "id": "b1-u09-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "inspire",
-      "instructionZh": "用 inspire 造一個句子，說說一個激勵你的人或一件事。",
+      "type": "translate",
+      "promptZh": "這座城市的美景激發了那位畫家的靈感。",
+      "hintWords": [
+        "inspire"
+      ],
       "referenceEn": [
-        "My grandmother inspires me to work hard.",
-        "A trip to Japan inspired me to learn Japanese."
+        "The beautiful views of this city inspired the painter.",
+        "This city's beautiful scenery inspired the artist."
       ],
       "rubricZh": [
-        "inspire 表示「激勵、啟發」，可只接人（例如 inspires me），也可再加 to＋原形動詞",
-        "時態配合內容（例如 inspires、inspired）",
-        "說的是自己（例如 me）"
+        "用 inspire 表示「激發（靈感）」（例如 inspired the painter）",
+        "「美景」可寫，例如 beautiful views、beautiful scenery 等；「畫家」可寫，例如 painter、artist 等"
       ]
     }
   ],
@@ -335,6 +336,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Can't come to the meeting.\"；改後：\"Won't be at the meeting.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（inspire）原位換成翻譯題，沿用題 id b1-u09-l05-q17；目標字沿用 inspire",
+        "resolution": "改為 translate：promptZh「這座城市的美景激發了那位畫家的靈感。」、hintWords [\"inspire\"]、referenceEn [\"The beautiful views of this city inspired the painter.\",\"This city's beautiful scenery inspired the artist.\"]、rubricZh [\"用 inspire 表示「激發（靈感）」（例如 inspired the painter）\",\"「美景」可寫，例如 beautiful views、beautiful scenery 等；「畫家」可寫，例如 painter、artist 等\"]（原 makeSentence：instructionZh「用 inspire 造一個句子，說說一個激勵你的人或一件事。」、referenceEn [\"My grandmother inspires me to work hard.\",\"A trip to Japan inspired me to learn Japanese.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -218,16 +218,18 @@
     },
     {
       "id": "b1-u10-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "hairdresser",
-      "instructionZh": "用 hairdresser 造一個句子，說說你多久去一次美髮店，或你的美髮師。",
+      "type": "translate",
+      "promptZh": "我姊姊當美髮師已經五年了。",
+      "hintWords": [
+        "hairdresser"
+      ],
       "referenceEn": [
-        "I go to the hairdresser every two months.",
-        "My hairdresser always gives me good advice."
+        "My sister has been a hairdresser for five years.",
+        "My older sister has worked as a hairdresser for five years."
       ],
       "rubricZh": [
-        "hairdresser 表示「美髮師」；go to the hairdresser 也可指去美髮店",
-        "時態配合內容（多用現在簡單式）"
+        "用 hairdresser 表示「美髮師」",
+        "表示持續到現在（例如 has been … for five years；寫 became a hairdresser five years ago 也正確）"
       ]
     }
   ],
@@ -277,6 +279,12 @@
         "message": "執行長 b1b2 裁示修正：中譯同步；my cousin 不譯成「表姊」（原文沒有性別、長幼）",
         "resolution": "改前：\"上星期天，我們全家去參加表姊的婚禮。早上，媽媽去了美髮店，爸爸終於收起他那套舊運動服，穿上了西裝。大家都穿得很體面。奶奶戴著她最喜歡的玉項鍊，那條項鍊已經五十多年了。我穿了一件薄的套頭毛衣，但晚上還是覺得有點冷。\"；改後：\"上星期天，我們全家去參加表親的婚禮。早上，媽媽去了美髮店，爸爸終於收起他那套舊運動服，穿上了西裝。大家都穿得很體面。奶奶戴著她最喜歡的玉項鍊，那條項鍊已經五十多年了。我只穿了一件薄的套頭毛衣，所以晚上覺得有點冷。\"",
         "resolvedAt": "2026-10-02T17:45:19Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（hairdresser）原位換成翻譯題，沿用題 id b1-u10-l05-q16；目標字沿用 hairdresser",
+        "resolution": "改為 translate：promptZh「我姊姊當美髮師已經五年了。」、hintWords [\"hairdresser\"]、referenceEn [\"My sister has been a hairdresser for five years.\",\"My older sister has worked as a hairdresser for five years.\"]、rubricZh [\"用 hairdresser 表示「美髮師」\",\"表示持續到現在（例如 has been … for five years；寫 became a hairdresser five years ago 也正確）\"]（原 makeSentence：instructionZh「用 hairdresser 造一個句子，說說你多久去一次美髮店，或你的美髮師。」、referenceEn [\"I go to the hairdresser every two months.\",\"My hairdresser always gives me good advice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

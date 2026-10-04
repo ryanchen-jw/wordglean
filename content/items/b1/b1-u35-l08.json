@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u35-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "bold",
-      "instructionZh": "用 bold 造一個句子，說說你做過最大膽的事。",
+      "type": "translate",
+      "promptZh": "標題是用醒目的粗體字寫的。",
+      "hintWords": [
+        "bold"
+      ],
       "referenceEn": [
-        "I made a bold choice to change schools last year.",
-        "Singing alone on stage was a bold step for me."
+        "The title is written in bold letters.",
+        "The title is printed in big, bold letters."
       ],
       "rubricZh": [
-        "bold 表示「大膽的」，例如 a bold choice 等說法",
-        "說的是自己的經驗（例如 I、me）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 bold 表示「粗體的；醒目的」（例如 bold letters）"
       ]
     }
   ],
@@ -432,6 +432,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Wear a hat.\"；改後：\"Wear new shoes.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bold）原位換成翻譯題，沿用題 id b1-u35-l08-q17；目標字沿用 bold",
+        "resolution": "改為 translate：promptZh「標題是用醒目的粗體字寫的。」、hintWords [\"bold\"]、referenceEn [\"The title is written in bold letters.\",\"The title is printed in big, bold letters.\"]、rubricZh [\"用 bold 表示「粗體的；醒目的」（例如 bold letters）\"]（原 makeSentence：instructionZh「用 bold 造一個句子，說說你做過最大膽的事。」、referenceEn [\"I made a bold choice to change schools last year.\",\"Singing alone on stage was a bold step for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

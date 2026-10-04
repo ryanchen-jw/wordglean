@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u11-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "hammer",
-      "instructionZh": "用 hammer 造一個句子，說說你家誰會用鐵鎚，或你用鐵鎚做過什麼。",
+      "type": "translate",
+      "promptZh": "我爸爸借了鄰居的鐵鎚。",
+      "hintWords": [
+        "hammer"
+      ],
       "referenceEn": [
-        "My father uses a hammer to fix our chairs.",
-        "I used a hammer to put up a picture."
+        "My father borrowed a hammer from our neighbor.",
+        "My dad borrowed our neighbor's hammer."
       ],
       "rubricZh": [
-        "hammer 表示「鐵鎚」",
-        "例如 use a hammer to…、fix… with a hammer 等說法",
-        "時態配合內容（例如 uses、used）"
+        "用 hammer 表示「鐵鎚」",
+        "「借了」可寫，例如 borrowed a hammer from…、borrowed our neighbor's hammer 等"
       ]
     }
   ],
@@ -337,6 +338,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"有些老玩具是用錫做的。\"；改後：\"開一罐豆子當午餐。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hammer）原位換成翻譯題，沿用題 id b1-u11-l06-q17；目標字沿用 hammer",
+        "resolution": "改為 translate：promptZh「我爸爸借了鄰居的鐵鎚。」、hintWords [\"hammer\"]、referenceEn [\"My father borrowed a hammer from our neighbor.\",\"My dad borrowed our neighbor's hammer.\"]、rubricZh [\"用 hammer 表示「鐵鎚」\",\"「借了」可寫，例如 borrowed a hammer from…、borrowed our neighbor's hammer 等\"]（原 makeSentence：instructionZh「用 hammer 造一個句子，說說你家誰會用鐵鎚，或你用鐵鎚做過什麼。」、referenceEn [\"My father uses a hammer to fix our chairs.\",\"I used a hammer to put up a picture.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

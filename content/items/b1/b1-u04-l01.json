@@ -8,7 +8,9 @@
   "authoredAt": "2026-10-02T14:56:41Z",
   "properNouns": [
     "Asia",
-    "Ho"
+    "Ho",
+    "European",
+    "Europe"
   ],
   "items": [
     {
@@ -245,17 +247,18 @@
     },
     {
       "id": "b1-u04-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "resemble",
-      "instructionZh": "用 resemble 造一個句子，說說你長得像家裡的誰，或哪裡像。",
+      "type": "translate",
+      "promptZh": "這個小鎮很像一座歐洲的老城市。",
+      "hintWords": [
+        "resemble"
+      ],
       "referenceEn": [
-        "I resemble my father, especially my eyes.",
-        "People say I resemble my grandmother."
+        "This town resembles an old European city.",
+        "This small town resembles an old city in Europe."
       ],
       "rubricZh": [
-        "resemble 表示「像」，後面直接接人，不加 like 或 to（例如 resemble my father）",
-        "resemble 通常不用進行式",
-        "句子說的是自己（例如 I resemble…）"
+        "用 resemble 表示「像」，後面直接接名詞（例如 resembles an old city；寫 looks like 也正確）",
+        "「歐洲的老城市」可寫，例如 an old European city、an old city in Europe 等"
       ]
     }
   ],
@@ -377,6 +380,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"The machine had a problem.\"；改後：\"The machine wasn't working.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（resemble）原位換成翻譯題，沿用題 id b1-u04-l01-q18；目標字沿用 resemble",
+        "resolution": "改為 translate：promptZh「這個小鎮很像一座歐洲的老城市。」、hintWords [\"resemble\"]、referenceEn [\"This town resembles an old European city.\",\"This small town resembles an old city in Europe.\"]、rubricZh [\"用 resemble 表示「像」，後面直接接名詞（例如 resembles an old city；寫 looks like 也正確）\",\"「歐洲的老城市」可寫，例如 an old European city、an old city in Europe 等\"]（原 makeSentence：instructionZh「用 resemble 造一個句子，說說你長得像家裡的誰，或哪裡像。」、referenceEn [\"I resemble my father, especially my eyes.\",\"People say I resemble my grandmother.\"]）；properNouns 加 European、Europe",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

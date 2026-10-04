@@ -231,17 +231,18 @@
     },
     {
       "id": "b1-u07-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "stress",
-      "instructionZh": "用 stress 造一個句子，說說你怎麼減輕壓力。",
+      "type": "translate",
+      "promptZh": "她最近工作壓力很大。",
+      "hintWords": [
+        "stress"
+      ],
       "referenceEn": [
-        "When I feel stress, I go for a walk.",
-        "Listening to music helps me reduce stress."
+        "She has been under a lot of stress at work lately.",
+        "She is under a lot of stress at work these days."
       ],
       "rubricZh": [
-        "stress 在這裡是名詞「壓力」，不可數",
-        "可用 feel stress、reduce stress 等說法",
-        "說的是自己的習慣（例如 I、me）"
+        "用 stress 表示「壓力」（例如 under a lot of stress；寫 feels very stressed 也正確）",
+        "時態配合「最近」（例如 has been、is 等）"
       ]
     }
   ],
@@ -405,6 +406,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"蕭條；不景氣\"；改後：\"不景氣；蕭條\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stress）原位換成翻譯題，沿用題 id b1-u07-l03-q17；目標字沿用 stress",
+        "resolution": "改為 translate：promptZh「她最近工作壓力很大。」、hintWords [\"stress\"]、referenceEn [\"She has been under a lot of stress at work lately.\",\"She is under a lot of stress at work these days.\"]、rubricZh [\"用 stress 表示「壓力」（例如 under a lot of stress；寫 feels very stressed 也正確）\",\"時態配合「最近」（例如 has been、is 等）\"]（原 makeSentence：instructionZh「用 stress 造一個句子，說說你怎麼減輕壓力。」、referenceEn [\"When I feel stress, I go for a walk.\",\"Listening to music helps me reduce stress.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

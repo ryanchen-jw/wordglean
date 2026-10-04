@@ -248,17 +248,18 @@
     },
     {
       "id": "b1-u02-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "permanently",
-      "instructionZh": "用 permanently 造一個句子，說說你希望永遠住在哪裡，或永遠保持什麼習慣。",
+      "type": "translate",
+      "promptZh": "她打算永久搬到國外住。",
+      "hintWords": [
+        "permanently"
+      ],
       "referenceEn": [
-        "I want to live in Tainan permanently.",
-        "I want to keep this healthy habit permanently."
+        "She plans to move abroad permanently.",
+        "She is planning to move abroad permanently."
       ],
       "rubricZh": [
-        "permanently 表示「永久地」",
-        "通常放在動詞片語後面（例如 live here permanently），也可放在動詞前",
-        "句子主詞是自己（I）"
+        "用 permanently 表示「永久地」（例如 move abroad permanently；寫 for good 也正確）",
+        "「打算」可寫，例如 plans to、is planning to、is going to 等"
       ]
     }
   ],
@@ -362,6 +363,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Next Monday.\"；改後：\"Monday of next week.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（permanently）原位換成翻譯題，沿用題 id b1-u02-l01-q18；目標字沿用 permanently",
+        "resolution": "改為 translate：promptZh「她打算永久搬到國外住。」、hintWords [\"permanently\"]、referenceEn [\"She plans to move abroad permanently.\",\"She is planning to move abroad permanently.\"]、rubricZh [\"用 permanently 表示「永久地」（例如 move abroad permanently；寫 for good 也正確）\",\"「打算」可寫，例如 plans to、is planning to、is going to 等\"]（原 makeSentence：instructionZh「用 permanently 造一個句子，說說你希望永遠住在哪裡，或永遠保持什麼習慣。」、referenceEn [\"I want to live in Tainan permanently.\",\"I want to keep this healthy habit permanently.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

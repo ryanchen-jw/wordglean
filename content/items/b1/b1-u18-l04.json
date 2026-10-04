@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u18-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "souvenir",
-      "instructionZh": "用 souvenir 造一個句子，說說你買過或收過的紀念品。",
+      "type": "translate",
+      "promptZh": "她把旅行帶回來的紀念品放在書架上。",
+      "hintWords": [
+        "souvenir"
+      ],
       "referenceEn": [
-        "I bought a small souvenir at every station on my trip.",
-        "My friend gave me a souvenir from her trip."
+        "She keeps the souvenirs from her trips on a shelf.",
+        "She puts the souvenirs from her travels on the bookshelf."
       ],
       "rubricZh": [
-        "souvenir 表示「紀念品」，可數名詞",
-        "可用 buy／get a souvenir、as a souvenir 等說法",
-        "時態配合內容（例如說過去的事用過去式）"
+        "用 souvenir 表示「紀念品」（單複數都可以）",
+        "「放在書架上」可寫，例如 keeps … on a shelf、puts … on the bookshelf 等"
       ]
     }
   ],
@@ -373,6 +374,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Take the first turning.\"；改後：\"Turn at the first road.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（souvenir）原位換成翻譯題，沿用題 id b1-u18-l04-q17；目標字沿用 souvenir",
+        "resolution": "改為 translate：promptZh「她把旅行帶回來的紀念品放在書架上。」、hintWords [\"souvenir\"]、referenceEn [\"She keeps the souvenirs from her trips on a shelf.\",\"She puts the souvenirs from her travels on the bookshelf.\"]、rubricZh [\"用 souvenir 表示「紀念品」（單複數都可以）\",\"「放在書架上」可寫，例如 keeps … on a shelf、puts … on the bookshelf 等\"]（原 makeSentence：instructionZh「用 souvenir 造一個句子，說說你買過或收過的紀念品。」、referenceEn [\"I bought a small souvenir at every station on my trip.\",\"My friend gave me a souvenir from her trip.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

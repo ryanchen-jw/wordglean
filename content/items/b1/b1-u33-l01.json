@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u33-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "reputation",
-      "instructionZh": "用 reputation 造一個句子，說說你知道的某家店或某個人的名聲。",
+      "type": "translate",
+      "promptZh": "那家餐廳因為服務差而名聲不好。",
+      "hintWords": [
+        "reputation"
+      ],
       "referenceEn": [
-        "The bakery near my home has a great reputation.",
-        "My teacher has a reputation for being very fair."
+        "That restaurant has a bad reputation because of its poor service.",
+        "The restaurant has a poor reputation for bad service."
       ],
       "rubricZh": [
-        "reputation 表示「名聲、聲譽」，例如 have a good reputation 等說法",
-        "說的是自己知道的人或店（例如 my）",
-        "時態配合內容（例如現在簡單式等）"
+        "用 reputation 表示「名聲」（例如 a bad reputation）"
       ]
     }
   ],
@@ -294,6 +294,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"Someone to work as an accountant.\"；改後：\"An accountant for the company.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（reputation）原位換成翻譯題，沿用題 id b1-u33-l01-q17；目標字沿用 reputation",
+        "resolution": "改為 translate：promptZh「那家餐廳因為服務差而名聲不好。」、hintWords [\"reputation\"]、referenceEn [\"That restaurant has a bad reputation because of its poor service.\",\"The restaurant has a poor reputation for bad service.\"]、rubricZh [\"用 reputation 表示「名聲」（例如 a bad reputation）\"]（原 makeSentence：instructionZh「用 reputation 造一個句子，說說你知道的某家店或某個人的名聲。」、referenceEn [\"The bakery near my home has a great reputation.\",\"My teacher has a reputation for being very fair.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

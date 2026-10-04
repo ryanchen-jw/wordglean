@@ -228,17 +228,17 @@
     },
     {
       "id": "b1-u41-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "possession",
-      "instructionZh": "用 possession 造一個句子，說說你最珍惜的一樣東西。",
+      "type": "translate",
+      "promptZh": "搬家時，他只帶了幾件個人物品。",
+      "hintWords": [
+        "possession"
+      ],
       "referenceEn": [
-        "My most important possession is my bike.",
-        "My grandfather's watch is my favorite possession."
+        "When he moved, he took only a few personal possessions.",
+        "He only took a few of his possessions when he moved."
       ],
       "rubricZh": [
-        "possession 表示「擁有物、財產」，例如 my most important possession 等說法",
-        "說的是自己的東西（例如 my）",
-        "時態配合內容（例如現在簡單式；說過去的事用過去式等）"
+        "用 possession 的複數表示「財物；物品」"
       ]
     }
   ],
@@ -474,6 +474,12 @@
         "message": "執行長第②③關裁示修正（b1b4）：盲答意見：干擾項 0、1 的 her 改成和音檔一致的 you",
         "resolution": "改前：\"Give her money back.\"；改後：\"Give you your money back.\"",
         "resolvedAt": "2026-10-03T00:28:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（possession）原位換成翻譯題，沿用題 id b1-u41-l01-q17；目標字沿用 possession",
+        "resolution": "改為 translate：promptZh「搬家時，他只帶了幾件個人物品。」、hintWords [\"possession\"]、referenceEn [\"When he moved, he took only a few personal possessions.\",\"He only took a few of his possessions when he moved.\"]、rubricZh [\"用 possession 的複數表示「財物；物品」\"]（原 makeSentence：instructionZh「用 possession 造一個句子，說說你最珍惜的一樣東西。」、referenceEn [\"My most important possession is my bike.\",\"My grandfather's watch is my favorite possession.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

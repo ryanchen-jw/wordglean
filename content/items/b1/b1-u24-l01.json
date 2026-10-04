@@ -202,17 +202,18 @@
     },
     {
       "id": "b1-u24-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "celebrity",
-      "instructionZh": "用 celebrity 造一個句子，說說你喜歡或想見的名人。",
+      "type": "translate",
+      "promptZh": "她不喜歡被當成名人對待。",
+      "hintWords": [
+        "celebrity"
+      ],
       "referenceEn": [
-        "I would love to meet my favorite celebrity one day.",
-        "My favorite celebrity is a famous cook on TV."
+        "She doesn't like being treated like a celebrity.",
+        "She does not like to be treated as a celebrity."
       ],
       "rubricZh": [
-        "celebrity 表示「名人」，可數名詞，例如 meet a celebrity 等說法",
-        "說的是自己的想法（例如 I、my）",
-        "時態配合內容（多用現在簡單式）"
+        "用 celebrity 表示「名人」",
+        "「被當成…對待」可寫，例如 being treated like、to be treated as 等"
       ]
     }
   ],
@@ -340,6 +341,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：先前為對齊例句而調換的同義並列釋義改回原順序",
         "resolution": "改前：\"景點；吸引人的事物\"；改後：\"吸引人的事物；景點\"",
         "resolvedAt": "2026-10-02T20:30:06Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（celebrity）原位換成翻譯題，沿用題 id b1-u24-l01-q15；目標字沿用 celebrity",
+        "resolution": "改為 translate：promptZh「她不喜歡被當成名人對待。」、hintWords [\"celebrity\"]、referenceEn [\"She doesn't like being treated like a celebrity.\",\"She does not like to be treated as a celebrity.\"]、rubricZh [\"用 celebrity 表示「名人」\",\"「被當成…對待」可寫，例如 being treated like、to be treated as 等\"]（原 makeSentence：instructionZh「用 celebrity 造一個句子，說說你喜歡或想見的名人。」、referenceEn [\"I would love to meet my favorite celebrity one day.\",\"My favorite celebrity is a famous cook on TV.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

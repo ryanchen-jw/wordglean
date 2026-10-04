@@ -219,17 +219,18 @@
     },
     {
       "id": "b1-u07-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "transitional",
-      "instructionZh": "用 transitional 造一個句子，說說你人生中的一段過渡時期。",
+      "type": "translate",
+      "promptZh": "公司正處於一段過渡時期，很多事情還沒決定。",
+      "hintWords": [
+        "transitional"
+      ],
       "referenceEn": [
-        "Moving to Taipei was a transitional time in my life.",
-        "My first year at university was a transitional period for me."
+        "The company is in a transitional period, and many decisions have not been made yet.",
+        "The company is going through a transitional period, and many things have not been decided."
       ],
       "rubricZh": [
-        "transitional 表示「過渡的」，常和 time、period 連用",
-        "說的是自己的經驗（例如 my life、for me）",
-        "時態配合內容（例如 was、is）"
+        "用 transitional 表示「過渡的」（例如 a transitional period、a transitional stage 等）",
+        "「還沒決定」可寫，例如 have not been decided、decisions have not been made 等"
       ]
     }
   ],
@@ -375,6 +376,12 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"He moved abroad.\"；改後：\"He asked to leave the company.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（transitional）原位換成翻譯題，沿用題 id b1-u07-l07-q16；目標字沿用 transitional",
+        "resolution": "改為 translate：promptZh「公司正處於一段過渡時期，很多事情還沒決定。」、hintWords [\"transitional\"]、referenceEn [\"The company is in a transitional period, and many decisions have not been made yet.\",\"The company is going through a transitional period, and many things have not been decided.\"]、rubricZh [\"用 transitional 表示「過渡的」（例如 a transitional period、a transitional stage 等）\",\"「還沒決定」可寫，例如 have not been decided、decisions have not been made 等\"]（原 makeSentence：instructionZh「用 transitional 造一個句子，說說你人生中的一段過渡時期。」、referenceEn [\"Moving to Taipei was a transitional time in my life.\",\"My first year at university was a transitional period for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

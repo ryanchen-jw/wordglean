@@ -229,17 +229,18 @@
     },
     {
       "id": "b1-u09-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "honest",
-      "instructionZh": "用 honest 造一個句子，說說你怎麼看待誠實，或你什麼時候會很坦白。",
+      "type": "translate",
+      "promptZh": "那個男孩很誠實，把撿到的錢包交給了警察。",
+      "hintWords": [
+        "honest"
+      ],
       "referenceEn": [
-        "I always try to be honest with my friends.",
-        "I think it is important to be honest at work."
+        "The boy was honest and gave the wallet he found to the police.",
+        "The honest boy took the wallet he found to the police."
       ],
       "rubricZh": [
-        "honest 表示「誠實的、坦白的」，可用 be honest with＋人、be honest about＋事、be honest at work 等說法",
-        "可用 try to be honest、it is important to be honest 等",
-        "說的是自己的看法或習慣（例如 I think…、I always try…）"
+        "用 honest 表示「誠實的」（例如 was honest、the honest boy 等）",
+        "「撿到的錢包」可寫，例如 the wallet he found 等；時態可用 gave、has given 等"
       ]
     }
   ],
@@ -385,6 +386,12 @@
         "message": "執行長最終複審修正：執行長澄清（第一義＝該級最常用、最符合單元主題的詞義）：釋義改回最常用義在前，例句改寫成示範這個詞義",
         "resolution": "改前：\"我跟她本人不認識，但我喜歡她的歌。\"；改後：\"就我個人而言，我比較喜歡茶。\"",
         "resolvedAt": "2026-10-02T20:30:15Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（honest）原位換成翻譯題，沿用題 id b1-u09-l06-q17；目標字沿用 honest",
+        "resolution": "改為 translate：promptZh「那個男孩很誠實，把撿到的錢包交給了警察。」、hintWords [\"honest\"]、referenceEn [\"The boy was honest and gave the wallet he found to the police.\",\"The honest boy took the wallet he found to the police.\"]、rubricZh [\"用 honest 表示「誠實的」（例如 was honest、the honest boy 等）\",\"「撿到的錢包」可寫，例如 the wallet he found 等；時態可用 gave、has given 等\"]（原 makeSentence：instructionZh「用 honest 造一個句子，說說你怎麼看待誠實，或你什麼時候會很坦白。」、referenceEn [\"I always try to be honest with my friends.\",\"I think it is important to be honest at work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

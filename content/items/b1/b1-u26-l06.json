@@ -228,17 +228,18 @@
     },
     {
       "id": "b1-u26-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "beast",
-      "instructionZh": "用 beast 造一個句子，說說故事或電影裡的野獸。",
+      "type": "translate",
+      "promptZh": "傳說中，這片森林裡住著一隻可怕的野獸。",
+      "hintWords": [
+        "beast"
+      ],
       "referenceEn": [
-        "In my favorite story, a beast lives in a castle.",
-        "I was scared of the beast in that movie."
+        "According to the old story, a terrible beast lives in this forest.",
+        "In the old story, a scary beast lived in the forest."
       ],
       "rubricZh": [
-        "beast 表示「野獸」，可數名詞，例如 a terrible beast 等說法",
-        "說的是自己的經驗或喜好（例如 I、my）",
-        "時態配合內容（例如說過去的事用過去式等）"
+        "用 beast 表示「野獸」",
+        "「傳說中」可寫，例如 according to the old story、in the old story 等；時態可用 lives、lived 等"
       ]
     }
   ],
@@ -408,6 +409,12 @@
         "message": "執行長裁示：聽選換句話說補正：正解改成換句話說，不照抄音檔字面",
         "resolution": "改前：\"He hides under his blanket.\"；改後：\"He covers himself with a blanket.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（beast）原位換成翻譯題，沿用題 id b1-u26-l06-q17；目標字沿用 beast",
+        "resolution": "改為 translate：promptZh「傳說中，這片森林裡住著一隻可怕的野獸。」、hintWords [\"beast\"]、referenceEn [\"According to the old story, a terrible beast lives in this forest.\",\"In the old story, a scary beast lived in the forest.\"]、rubricZh [\"用 beast 表示「野獸」\",\"「傳說中」可寫，例如 according to the old story、in the old story 等；時態可用 lives、lived 等\"]（原 makeSentence：instructionZh「用 beast 造一個句子，說說故事或電影裡的野獸。」、referenceEn [\"In my favorite story, a beast lives in a castle.\",\"I was scared of the beast in that movie.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

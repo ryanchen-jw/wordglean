@@ -216,33 +216,33 @@
     {
       "id": "b1-u05-l03-q16",
       "type": "translate",
-      "promptZh": "我完全同意你的看法。",
+      "promptZh": "搬家之後，我的生活變得完全不一樣。",
       "hintWords": [
         "completely"
       ],
       "referenceEn": [
-        "I completely agree with your opinion.",
-        "I agree with you completely on this."
+        "My life became completely different after I moved.",
+        "After I moved, my life was completely different."
       ],
       "rubricZh": [
-        "completely 表示「完全地」，可放在動詞前或句尾（例如 I completely agree、agree completely）",
-        "「同意⋯」用 agree with（例如 agree with you、agree with your opinion）",
-        "時態配合內容（多用現在簡單式）"
+        "用 completely 表示「完全」（例如 completely different；寫 totally 也正確）",
+        "時態可用過去式或現在完成式（例如 became、has become … since I moved 等）"
       ]
     },
     {
       "id": "b1-u05-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "increasingly",
-      "instructionZh": "用 increasingly 造一個句子，說說你覺得越來越⋯的一件事。",
+      "type": "translate",
+      "promptZh": "這份工作變得越來越困難。",
+      "hintWords": [
+        "increasingly"
+      ],
       "referenceEn": [
-        "I find it increasingly hard to wake up early.",
-        "My job is getting increasingly busy."
+        "This job is becoming increasingly difficult.",
+        "The job is getting increasingly hard."
       ],
       "rubricZh": [
-        "increasingly＋形容詞，表示「越來越⋯」（例如 increasingly busy）",
-        "常和 become、get、find it 等連用",
-        "說的是自己的感受或生活（例如 I、my）"
+        "用 increasingly 表示「越來越」（例如 increasingly difficult；寫 harder and harder 也正確）",
+        "「變得」可寫，例如 is becoming、is getting 等"
       ]
     }
   ],
@@ -400,6 +400,18 @@
         "message": "執行長裁示：聽選換句話說補正：干擾項改用音檔裡的字，避免「和音檔最像的就是正解」",
         "resolution": "改前：\"Twenty.\"；改後：\"Just one dozen.\"",
         "resolvedAt": "2026-10-03T01:50:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（increasingly）原位換成翻譯題，沿用題 id b1-u05-l03-q17；目標字沿用 increasingly",
+        "resolution": "改為 translate：promptZh「這份工作變得越來越困難。」、hintWords [\"increasingly\"]、referenceEn [\"This job is becoming increasingly difficult.\",\"The job is getting increasingly hard.\"]、rubricZh [\"用 increasingly 表示「越來越」（例如 increasingly difficult；寫 harder and harder 也正確）\",\"「變得」可寫，例如 is becoming、is getting 等\"]（原 makeSentence：instructionZh「用 increasingly 造一個句子，說說你覺得越來越⋯的一件事。」、referenceEn [\"I find it increasingly hard to wake up early.\",\"My job is getting increasingly busy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u05-l02-q16、b1-u05-l04-q16 雷同（三題都是「同意某個看法」（agree）），換情境改寫；題 id、hintWords 不變",
+        "resolution": "改為 promptZh「搬家之後，我的生活變得完全不一樣。」、referenceEn [\"My life became completely different after I moved.\",\"After I moved, my life was completely different.\"]、rubricZh [\"用 completely 表示「完全」（例如 completely different；寫 totally 也正確）\",\"時態可用過去式或現在完成式（例如 became、has become … since I moved 等）\"]（原 promptZh「我完全同意你的看法。」、referenceEn [\"I completely agree with your opinion.\",\"I agree with you completely on this.\"]、rubricZh [\"completely 表示「完全地」，可放在動詞前或句尾（例如 I completely agree、agree completely）\",\"「同意⋯」用 agree with（例如 agree with you、agree with your opinion）\",\"時態配合內容（多用現在簡單式）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }
