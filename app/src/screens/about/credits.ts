@@ -8,6 +8,7 @@ export const CREDIT_SECTIONS = [
     id: 'runtime',
     credits: [
       'opencc',
+      'openccJs',
       'dexie',
       'kokoroJs',
       'transformers',

@@ -114,7 +114,8 @@ describe('complete（批改請求）', () => {
     expect(JSON.parse(init!.body as string)).toEqual({
       models: ['m1:free', 'm2:free'],
       messages: [{ role: 'user', content: 'hi' }],
-      max_tokens: 1500,
+      // 1500 時 apodex（fallback）推理就用光上限、38／40 截斷（llm-eval.md §7）
+      max_tokens: 4096,
       response_format: { type: 'json_object' },
       reasoning: { effort: 'low' },
       provider: { data_collection: 'deny' },

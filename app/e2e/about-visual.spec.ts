@@ -65,7 +65,7 @@ test('從設定頁點進「隱私說明・授權・原始碼」，再進兩個�
   await page.getByRole('button', { name: '授權與致謝' }).click()
   await expect(page).toHaveURL(/\/about\/licenses$/)
   // 頁面條目數＝NOTICE 條目數（逐條比對在單元測試 LicensesScreen.test.tsx）
-  await expect(page.getByTestId('credit-name')).toHaveCount(28)
+  await expect(page.getByTestId('credit-name')).toHaveCount(29)
   await check(page, info, 'licenses')
 })
 

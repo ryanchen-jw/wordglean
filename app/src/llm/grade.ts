@@ -4,6 +4,7 @@ import { gradeMessages, type GradeTask } from './gradePrompt'
 import type { OpenRouterLink } from './keyStore'
 import { modelChain } from './models'
 import { parseGrade, type GradeResult } from './parseGrade'
+import { localizeGrade } from './zhTw'
 
 export type GradeOutcome =
   { ok: true; result: GradeResult; model: string | null } | { ok: false; reason: FailureKind }
@@ -19,7 +20,9 @@ export async function gradeWriting(
       fetchFn,
     )
     const result = parseGrade(text, task.answer)
-    return result ? { ok: true, result, model } : { ok: false, reason: 'other' }
+    return result
+      ? { ok: true, result: await localizeGrade(result), model }
+      : { ok: false, reason: 'other' }
   } catch (e) {
     if (e instanceof OpenRouterError) return { ok: false, reason: e.kind }
     throw e

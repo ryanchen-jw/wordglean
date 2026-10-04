@@ -44,6 +44,17 @@ describe('gradeMessages', () => {
     )
   })
 
+  // 創辦人 2026-10-04 裁示 2：v2 評測 qwen 有簡體字、大陸文法術語（介詞、賓語）、整段英文解釋（llm-eval.md §7）
+  it('v3：明令台灣文法術語（點名不得用的大陸術語）、一律用中文解釋', () => {
+    expect(GRADE_PROMPT_VERSION).toBe('grade-writing.v3')
+    const system = gradeMessages(TASK)[0].content
+    expect(system).toContain('介系詞 (never 介詞)')
+    expect(system).toContain('受詞 (never 賓語)')
+    expect(system).toContain('不定詞 (never 不定式)')
+    expect(system).toContain('never Simplified Chinese characters')
+    expect(system).toContain('Write every explanation in Chinese')
+  })
+
   it('造句：說明與指定字的標籤不同；沒有提示字就不列', () => {
     const user = gradeMessages({ ...TASK, kind: 'makeSentence', words: [], level: null })[1].content
     expect(user).toContain('Task type: Write one English sentence as instructed')

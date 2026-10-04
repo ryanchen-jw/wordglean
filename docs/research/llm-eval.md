@@ -122,3 +122,39 @@ node scripts/llm-eval.mjs --report --models <同上>
 已回寫 `app/src/llm/models.ts` 的 `DEFAULT_MODELS`；README、隱私說明（repo 與 App 內）同步寫明預設模型。
 
 **fallback 風險（觀察，不改動選定）**：apodex 正確率只有 5%，失敗以解析失敗為主（38／40）。OpenRouter 只在前一個模型呼叫失敗（如 qwen 被上游 429）時才改用 fallback，而那時 apodex 多半回出解析不了的內容 → App 走既有的失敗處理（批改失敗提示、使用者可對照參考答案自己判斷），不會顯示錯誤的批改。也就是說，fallback 實際上只多一點點救回機會，主要可靠性仍取決於 qwen 的上游可用度（本次評測 qwen 43 次請求中 3 次 429）。若之後 Gemma 端點恢復可用，可補跑評測重新比較 fallback。
+
+## 9. v3 重評（創辦人 2026-10-04 裁示「1、2 都做」）
+
+### 改了什麼
+
+| 項目 | v2 | v3 |
+|---|---|---|
+| prompt 版本 | `grade-writing.v2` | `grade-writing.v3`（`app/src/llm/gradePrompt.ts`） |
+| 繁中要求（裁示 2） | 一句「Traditional Chinese with Taiwan vocabulary」 | 另列三條：所有解釋一律用中文（英文只在引用字詞時出現）；只用台灣繁體字、不得用簡體字；點名台灣文法術語（介系詞／介詞、受詞／賓語、不定詞／不定式、主詞／主語、述語／謂語、形容詞子句／定語從句等，清單在 `app/src/llm/zhTw.json` 的 terms）及「及物動詞、動名詞、子句」 |
+| App 端防護（裁示 2） | 無 | 批改結果解析後（`grade.ts` 與評測腳本共用 `localizeGrade`，`app/src/llm/zhTw.ts`），解釋欄位**含簡體專用字時**才以 opencc-js **詞級** cn→twp 轉台灣繁體（頭髮、恢復、合併由詞決定；純繁體原樣返回，免得 里長→裡長、余先生→餘先生），再換大陸文法術語（opencc 不處理，不論是否轉換都套用）。簡體專用字＝opencc 字級簡→繁表會改的字扣掉 Big5 常用字，再加 并、着。字典約 474KB gzip，**批改回應到達時才動態載入**、不在首屏（perf-budget 斷言首屏不載 cn2t）。twp 會改壞的台灣通行詞（干擾→幹擾、了解→瞭解…）以 keep 表原樣保留，與 `zh-guard.mjs` 的 TWP_ACCEPTED 一致（`content/test/zh-tw-map.test.mjs` 核對）。字典載入失敗時退回原文（術語仍換）、不擋批改，下次批改重試載入 |
+| 輸出上限（裁示 1） | `max_tokens` 1500 | **4096**；`reasoning.effort` 仍為 low（`app/src/llm/client.ts`） |
+
+**為什麼是提高上限、不是對 apodex 關推理**：v2 帳本 apodex 38／40 `finishReason: length`，32 筆空回應、6 筆 JSON 寫到一半——推理先用掉約 1,300～1,500 token 以上，輪到 JSON 時已沒有額度。App 的 fallback 是在**同一個請求**裡帶 `models: [qwen, apodex]`，`reasoning` 與 `max_tokens` 是整個請求共用的，沒辦法只對 apodex 關推理；不送 `reasoning` 則 qwen 會回到預設 xhigh（free-models.md §1）。所以保留 effort low（qwen v2 40／40 的設定）、只提高上限。apodex 的推理屬性在 free-models.md 記為「可選」（非強制、未列 effort 等級），是否遵守 low 未核；4096 是否足夠由本節真打判定。評測腳本與 App 共用 `complete()` 的預設值，兩邊必然相同。
+
+帳本只計目前版本：v2 紀錄留作歷史，v3 自動從 0 開始（乾跑確認 qwen、apodex 各 40 題待跑）。
+
+### 真打（執行長執行）
+
+```
+cd content
+node scripts/llm-eval.mjs --real --env ../.env --models qwen/qwen3.8-27b:free,apodex/apodex-1.1-mini:free
+```
+
+80 次請求；每日 50 次、留 2 次 → 至少 2 天，隔天同一條指令接續。
+
+### 要量什麼
+
+- 正確率（判錯且修對）、解析成功率：腳本彙總表。apodex 另看 `finishReason: length` 筆數是否歸零。
+- 繁中用語問題句數：評審表逐句看**防護後**的解釋（使用者看到的），簡體字、大陸用語、整段英文各記句數；原始回應（帳本 `raw`）另記 prompt 本身改善了多少（防護前的問題句數）。v2 基準：qwen 簡體 4 句、大陸用語 5 句、整段英文 1 句。
+
+### 結果
+
+| 模型 | 完成／總數 | 正確率 | 解析成功 | length 截斷 | 簡體（防護前／後） | 大陸用語（防護前／後） | 整段英文 |
+|---|---|---|---|---|---|---|---|
+| `qwen/qwen3.8-27b:free` | | | | | | | |
+| `apodex/apodex-1.1-mini:free` | | | | | | | |

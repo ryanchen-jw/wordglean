@@ -66,6 +66,7 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
 == 建置工具與執行期元件 ==
 
 - OpenCC（Apache-2.0）：https://github.com/BYVoid/OpenCC — 使用範圍：建置時（data/scripts/）以 PyPI opencc 1.4.2 的 s2twp 轉換 ECDICT 釋義，不隨 app 散布；授權全文見 data/licenses/OpenCC-Apache-2.0.txt
+- opencc-js 1.4.2（MIT；內含 OpenCC 字典資料，Apache-2.0）：Copyright (c) 2020-2021 The nk2028 Project；https://github.com/nk2028/opencc-js — 使用範圍：AI 批改解釋的簡體字與大陸用語轉台灣繁體（cn→twp，app/src/llm/zhTw.ts；批改回應到達時才載入）；字典資料衍生自 opencc-data（https://github.com/nk2028/opencc-data），授權見套件內 THIRD_PARTY_LICENSES.md
 - Dexie.js（Apache-2.0）：https://github.com/dexie/Dexie.js — 使用範圍：本機 IndexedDB 資料層（app/src/data/）
   NOTICE 原文：Copyright (c) 2014-2017 David Fahlander. Licensed under the Apache License, Version 2.0.
 高音質發音（Kokoro 選配，TASK-13；只在使用者選用並下載後於瀏覽器 Worker 執行，app/src/speech/kokoro.worker.ts）：

@@ -134,14 +134,17 @@ export interface CompletionResult {
 
 /**
  * 批改請求：models 陣列設 fallback、provider.data_collection:"deny" 只走不保留資料的提供商
- * （free-models.md §7 #6）、要求 JSON 物件輸出；推理強度 low 以免推理 token 吃光輸出上限
+ * （free-models.md §7 #6）、要求 JSON 物件輸出；推理強度 low 以免推理 token 吃光輸出上限。
+ * 輸出上限 4096：1500 時 apodex（fallback）推理就用光上限，v2 評測 38／40 截斷（llm-eval.md §7、§9）。
+ * reasoning 與 max_tokens 是整個請求共用（models fallback 走同一請求），無法只對 apodex 關推理；
+ * 不送 reasoning 會讓 qwen 回到預設 xhigh，故保留 effort low、只提高上限。評測腳本走同一個 complete() 預設值
  */
 export async function complete(
   {
     apiKey,
     models,
     messages,
-    maxTokens = 1500,
+    maxTokens = 4096,
   }: {
     apiKey: string
     models: readonly string[]

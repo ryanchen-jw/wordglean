@@ -1,8 +1,15 @@
 // 寫作批改 prompt（規格 §6：LLM 改錯並以繁中解釋語法）；輸出 JSON 欄位見 parseGrade.ts
 // 版本號隨 prompt 改動遞增，評測報告（docs/research/llm-eval.md）引用同一版
+// v3（創辦人 2026-10-04 裁示 2）：點名台灣文法術語、禁簡體與大陸用語、一律用中文解釋（llm-eval.md §9）
 import type { ChatMessage } from './client'
+import { TW_GRAMMAR_EXAMPLES, TW_GRAMMAR_TERMS } from './zhTw.ts'
 
-export const GRADE_PROMPT_VERSION = 'grade-writing.v2'
+export const GRADE_PROMPT_VERSION = 'grade-writing.v3'
+
+const TERMS = [
+  ...TW_GRAMMAR_TERMS.map(([mainland, taiwan]) => `${taiwan} (never ${mainland})`),
+  ...TW_GRAMMAR_EXAMPLES,
+].join(', ')
 
 export interface GradeTask {
   kind: 'translate' | 'makeSentence'
@@ -26,6 +33,11 @@ JSON keys:
 - "errors": array of { "original": string, "corrected": string, "explanationZh": string } — one entry per mistake, quoting the learner's exact words. Empty array if isCorrect is true.
 - "explanationZh": string — 1 to 3 short sentences explaining the key grammar point, written in Traditional Chinese with Taiwan vocabulary and phrasing (never Simplified Chinese, never mainland-China wording). Keep English words in English.
 - "levelOk": boolean — whether the learner's sentence suits the target CEFR level (not far too simple, not relying on words far above the level).
+
+Language of every explanationZh (both the per-error ones and the overall one):
+- Write every explanation in Chinese. Quote English words or phrases only where needed; never write an explanation sentence in English.
+- Use Traditional Chinese characters as used in Taiwan only — never Simplified Chinese characters.
+- Use the grammar terms taught in Taiwan schools, e.g. ${TERMS}. Never use mainland-China wording.
 
 Do not judge spelling of proper names. Do not invent errors.`
 

@@ -6,6 +6,9 @@
 //   node scripts/llm-eval.mjs --real --env ../.env --models <4 個 :free 模型，逗號分隔>
 // 彙總（不連網）：
 //   node scripts/llm-eval.mjs --report --models <同上>
+// --models 子集合：只列要跑／要彙總的模型，帳本裡其他模型的紀錄不動。例：v3 重評只跑預設與 fallback
+//   node scripts/llm-eval.mjs --real --env ../.env --models qwen/qwen3.8-27b:free,apodex/apodex-1.1-mini:free
+//   （開跑先印各模型待跑數；只計目前 prompt 版本的紀錄，升版後舊版紀錄不算已完成，自動全部重跑）
 //
 // 分日：開跑前查 GET /api/v1/key 的今日剩餘次數，只跑得完的份量；帳本已完成的（模型×題）自動略過，
 // 隔天下同一條指令就接續。今日剩餘 ≤2 收工。429：每日額度用完→整批停；上游滿載／每分鐘上限→記 rate_limited、
@@ -17,6 +20,7 @@ import { parseArgs } from 'node:util'
 import { complete } from '../../app/src/llm/client.ts'
 import { GRADE_PROMPT_VERSION, gradeMessages } from '../../app/src/llm/gradePrompt.ts'
 import { parseGrade } from '../../app/src/llm/parseGrade.ts'
+import { localizeGrade } from '../../app/src/llm/zhTw.ts'
 import {
   assertEvalModel,
   renderReviewSheet,
@@ -180,8 +184,9 @@ const RESERVE = 2
 const LIMIT = args.limit ? Number(args.limit) : Infinity
 let remaining = await freeRemaining()
 console.log(
-  `[llm-eval] 模式 ${mode}；待跑 ${queue.length}（已完成 ${doneKeys.size}）；今日免費剩 ${remaining ?? '未知'}；剩 ≤${RESERVE} 收工`,
+  `[llm-eval] 模式 ${mode}；prompt ${GRADE_PROMPT_VERSION}；待跑 ${queue.length}（已完成 ${doneKeys.size}）；今日免費剩 ${remaining ?? '未知'}；剩 ≤${RESERVE} 收工`,
 )
+for (const m of models) console.log(`[llm-eval]   ${m}：待跑 ${queue.filter((q) => q.model === m).length}`)
 
 let sent = 0
 let since = 0
@@ -209,7 +214,9 @@ while (queue.length > 0) {
   const row = { at: new Date().toISOString(), mode, prompt: GRADE_PROMPT_VERSION, set: set.version, model, id: item.id }
   try {
     const r = await complete({ apiKey, models: [model], messages: gradeMessages(toTask(item)) }, fetchFn)
-    const parsed = parseGrade(r.text, item.answer)
+    // 與 App（grade.ts）相同：解析後解釋欄位轉台灣繁體；防護前的原文留在 raw
+    const rawParsed = parseGrade(r.text, item.answer)
+    const parsed = rawParsed && (await localizeGrade(rawParsed))
     Object.assign(row, {
       status: parsed ? 'ok' : 'parse_failed',
       latencyMs: Date.now() - started,
