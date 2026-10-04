@@ -241,16 +241,18 @@
     },
     {
       "id": "a2-u08-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "refrigerator",
-      "instructionZh": "用 refrigerator 造一個句子，說說你家冰箱裡有什麼。",
+      "type": "translate",
+      "promptZh": "我們的冰箱壞了。",
+      "hintWords": [
+        "refrigerator"
+      ],
       "referenceEn": [
-        "There are some eggs and fruit in our refrigerator.",
-        "Our refrigerator is full of vegetables."
+        "Our refrigerator is broken.",
+        "Our refrigerator doesn't work."
       ],
       "rubricZh": [
-        "refrigerator 是可數名詞（例如 the refrigerator、our refrigerator）",
-        "「在冰箱裡」用 in（例如 in our refrigerator）；說「裝滿了」可寫 is full of"
+        "用 refrigerator 表示「冰箱」（寫 fridge 也正確）",
+        "「壞了」可寫，例如 is broken、doesn't work、isn't working 等"
       ]
     }
   ],
@@ -372,6 +374,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：battery 是 q15 正解，改本課 basket",
         "resolution": "改為 [\"籃子\", \"燈\", \"烤箱\", \"電梯\"]（原 [\"電池\", \"燈\", \"烤箱\", \"電梯\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（refrigerator）原位換成翻譯題，沿用題 id a2-u08-l01-q18；目標字沿用 refrigerator",
+        "resolution": "改為 translate：promptZh「我們的冰箱壞了。」、hintWords [\"refrigerator\"]、referenceEn [\"Our refrigerator is broken.\",\"Our refrigerator doesn't work.\"]、rubricZh [\"用 refrigerator 表示「冰箱」（寫 fridge 也正確）\",\"「壞了」可寫，例如 is broken、doesn't work、isn't working 等\"]（原 makeSentence：instructionZh「用 refrigerator 造一個句子，說說你家冰箱裡有什麼。」、referenceEn [\"There are some eggs and fruit in our refrigerator.\",\"Our refrigerator is full of vegetables.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

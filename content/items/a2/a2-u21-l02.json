@@ -240,16 +240,18 @@
     },
     {
       "id": "a2-u21-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "entertainment",
-      "instructionZh": "用 entertainment 造一個句子，說說你最喜歡的娛樂。",
+      "type": "translate",
+      "promptZh": "這艘船上有很多娛樂活動。",
+      "hintWords": [
+        "entertainment"
+      ],
       "referenceEn": [
-        "Watching movies is my favorite entertainment.",
-        "For me, music is the best entertainment."
+        "There is a lot of entertainment on this ship.",
+        "This ship has lots of entertainment."
       ],
       "rubricZh": [
-        "entertainment 是不可數名詞（例如 a lot of entertainment）",
-        "主詞和動詞要搭配（例如 Watching movies is）"
+        "用 entertainment 表示「娛樂」，不可數，動詞用 is（例如 There is a lot of entertainment）",
+        "「在船上」可寫，例如 on this ship、on the ship 等"
       ]
     }
   ],
@@ -347,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：audience 與 q15 共用、tradition 是 q15 正解，改本單元 scene、performance",
         "resolution": "改為 [\"編輯\", \"專欄\", \"一幕\", \"表演\"]（原 [\"編輯\", \"專欄\", \"觀眾\", \"傳統\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（entertainment）原位換成翻譯題，沿用題 id a2-u21-l02-q18；目標字沿用 entertainment",
+        "resolution": "改為 translate：promptZh「這艘船上有很多娛樂活動。」、hintWords [\"entertainment\"]、referenceEn [\"There is a lot of entertainment on this ship.\",\"This ship has lots of entertainment.\"]、rubricZh [\"用 entertainment 表示「娛樂」，不可數，動詞用 is（例如 There is a lot of entertainment）\",\"「在船上」可寫，例如 on this ship、on the ship 等\"]（原 makeSentence：instructionZh「用 entertainment 造一個句子，說說你最喜歡的娛樂。」、referenceEn [\"Watching movies is my favorite entertainment.\",\"For me, music is the best entertainment.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u24-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "chance",
-      "instructionZh": "用 chance 造一個句子，說說某件事發生的可能性，或你得到的一個機會。",
+      "type": "translate",
+      "promptZh": "我上個月有機會見到那位作家。",
+      "hintWords": [
+        "chance"
+      ],
       "referenceEn": [
-        "There is a good chance that I will pass the test.",
-        "I had a chance to meet my favorite singer."
+        "Last month, I had a chance to meet that writer.",
+        "I had the chance to meet that writer last month."
       ],
       "rubricZh": [
-        "chance 可指「可能性」或「機會」（例如 a good chance、a chance to…）",
-        "a chance to＋原形動詞（例如 a chance to meet）"
+        "用 chance 表示「機會」，過去的事用過去式（例如 had a chance to meet、got the chance to meet 等）",
+        "「作家」可寫，例如 writer、author 等"
       ]
     }
   ],
@@ -305,6 +307,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My new computer is very heavy. It can run big games.」電競電腦很重也成立，heavy 換成 sleepy，電腦「很睏」語意不通",
         "resolution": "改為 [\"強大的\", \"不確定的\", \"睏的\", \"狀況\"]（原 [\"強大的\", \"不確定的\", \"重的\", \"狀況\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（chance）原位換成翻譯題，沿用題 id a2-u24-l02-q17；目標字沿用 chance",
+        "resolution": "改為 translate：promptZh「我上個月有機會見到那位作家。」、hintWords [\"chance\"]、referenceEn [\"Last month, I had a chance to meet that writer.\",\"I had the chance to meet that writer last month.\"]、rubricZh [\"用 have a chance to 表示「有機會…」，過去的事用過去式（例如 had a chance to meet）\",\"「作家」可寫，例如 writer、author 等\"]（原 makeSentence：instructionZh「用 chance 造一個句子，說說某件事發生的可能性，或你得到的一個機會。」、referenceEn [\"There is a good chance that I will pass the test.\",\"I had a chance to meet my favorite singer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點只列 have a chance to，常見的 got the chance to 沒有明列",
+        "resolution": "rubricZh 改為 [\"用 chance 表示「機會」，過去的事用過去式（例如 had a chance to meet、got the chance to meet 等）\",\"「作家」可寫，例如 writer、author 等\"]（原 [\"用 have a chance to 表示「有機會…」，過去的事用過去式（例如 had a chance to meet）\",\"「作家」可寫，例如 writer、author 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

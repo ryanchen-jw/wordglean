@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u17-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "meaning",
-      "instructionZh": "用 meaning 造一個句子，問或說明某樣東西的意思（例如名字或標誌）。",
+      "type": "translate",
+      "promptZh": "你知道這個標誌是什麼意思嗎？",
+      "hintWords": [
+        "meaning"
+      ],
       "referenceEn": [
-        "What is the meaning of your name?",
-        "I asked my teacher about the meaning of this sign."
+        "Do you know the meaning of this sign?",
+        "Do you know the meaning of that sign?"
       ],
       "rubricZh": [
-        "meaning 表示「意思；意義」（例如 the meaning of your name）",
-        "問句可寫例如 What is the meaning of…?"
+        "用 meaning 表示「意思」（例如 the meaning of this sign）",
+        "問句用 Do you know…?，句尾用問號"
       ]
     }
   ],
@@ -334,6 +336,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：explanation 代入「Your answer is wrong. There is an explanation in the third line.」英文說得通（第三行有解說），換成本單元 education：「an education in the third line」文法通、語意不通",
         "resolution": "改為 [\"想法\", \"短文\", \"教育\", \"錯誤\"]（原 [\"想法\", \"短文\", \"說明\", \"錯誤\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（meaning）原位換成翻譯題，沿用題 id a2-u17-l03-q17；目標字沿用 meaning",
+        "resolution": "改為 translate：promptZh「你知道這個標誌是什麼意思嗎？」、hintWords [\"meaning\"]、referenceEn [\"Do you know the meaning of this sign?\",\"Do you know what the meaning of this sign is?\"]、rubricZh [\"用 meaning 表示「意思」（例如 the meaning of this sign）\",\"問句用 Do you know…?，句尾用問號\"]（原 makeSentence：instructionZh「用 meaning 造一個句子，問或說明某樣東西的意思（例如名字或標誌）。」、referenceEn [\"What is the meaning of your name?\",\"I asked my teacher about the meaning of this sign.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 2 冗長不自然，改成 that sign 的寫法",
+        "resolution": "referenceEn 改為 [\"Do you know the meaning of this sign?\",\"Do you know the meaning of that sign?\"]（原 [\"Do you know the meaning of this sign?\",\"Do you know what the meaning of this sign is?\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

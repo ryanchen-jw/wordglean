@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u04-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "include",
-      "instructionZh": "用 include 造一個句子，說說某樣東西包含了什麼。",
+      "type": "translate",
+      "promptZh": "我們的團隊包括三位老師。",
+      "hintWords": [
+        "include"
+      ],
       "referenceEn": [
-        "The price includes a free drink.",
-        "My lunch box includes rice and vegetables."
+        "Our team includes three teachers.",
+        "Our group includes three teachers."
       ],
       "rubricZh": [
-        "include 後面接被包含的東西（例如 includes a free drink）",
-        "主詞是第三人稱單數時動詞要加 s（例如 includes）"
+        "用 include 表示「包括」，主詞是單數所以動詞加 s（例如 includes）",
+        "「團隊」可寫，例如 team、group 等"
       ]
     }
   ],
@@ -320,6 +322,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：He seemed to help me with my bags. 只看英文文法語意都通；換成 spilled，He spilled to help me 語意不通",
         "resolution": "改為 [\"灑出\", \"理解\", \"主動提出\", \"放棄；辭去\"]（原 [\"似乎\", \"理解\", \"主動提出\", \"放棄；辭去\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（include）原位換成翻譯題，沿用題 id a2-u04-l02-q17；目標字沿用 include",
+        "resolution": "改為 translate：promptZh「我們的團隊包括三位老師。」、hintWords [\"include\"]、referenceEn [\"Our team includes three teachers.\",\"Our group includes three teachers.\"]、rubricZh [\"用 include 表示「包括」，主詞是單數所以動詞加 s（例如 includes）\",\"「團隊」可寫，例如 team、group 等\"]（原 makeSentence：instructionZh「用 include 造一個句子，說說某樣東西包含了什麼。」、referenceEn [\"The price includes a free drink.\",\"My lunch box includes rice and vegetables.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

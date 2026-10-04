@@ -226,16 +226,18 @@
     },
     {
       "id": "a2-u08-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "cupboard",
-      "instructionZh": "用 cupboard 造一個句子，說說櫥櫃裡放了什麼。",
+      "type": "translate",
+      "promptZh": "這個櫥櫃太小了，放不下所有的盤子。",
+      "hintWords": [
+        "cupboard"
+      ],
       "referenceEn": [
-        "We keep plates and bowls in the cupboard.",
-        "There are some cookies in the kitchen cupboard."
+        "This cupboard is too small for all the plates.",
+        "The cupboard is too small to hold all the plates."
       ],
       "rubricZh": [
-        "cupboard 是可數名詞（例如 the cupboard、a kitchen cupboard）",
-        "「在櫥櫃裡」用 in（例如 in the cupboard）"
+        "用 cupboard 表示「櫥櫃」",
+        "「太小了，放不下」可寫，例如 too small for…、too small to hold… 等"
       ]
     }
   ],
@@ -339,6 +341,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：stove 是 q14 正解，改本課 fridge",
         "resolution": "改為 [\"櫥櫃\", \"冰箱\", \"螺絲\", \"鬧鈴\"]（原 [\"櫥櫃\", \"爐子\", \"螺絲\", \"鬧鈴\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（cupboard）原位換成翻譯題，沿用題 id a2-u08-l05-q17；目標字沿用 cupboard",
+        "resolution": "改為 translate：promptZh「這個櫥櫃太小了，放不下所有的盤子。」、hintWords [\"cupboard\"]、referenceEn [\"This cupboard is too small for all the plates.\",\"The cupboard is too small to hold all the plates.\"]、rubricZh [\"用 cupboard 表示「櫥櫃」\",\"「太小了，放不下」可寫，例如 too small for…、too small to hold… 等\"]（原 makeSentence：instructionZh「用 cupboard 造一個句子，說說櫥櫃裡放了什麼。」、referenceEn [\"We keep plates and bowls in the cupboard.\",\"There are some cookies in the kitchen cupboard.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

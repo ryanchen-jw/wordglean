@@ -216,16 +216,18 @@
     },
     {
       "id": "a2-u15-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "hiking",
-      "instructionZh": "用 hiking 造一個句子，說說你去健行的經驗或計畫。",
+      "type": "translate",
+      "promptZh": "我們上星期六去健行了。",
+      "hintWords": [
+        "hiking"
+      ],
       "referenceEn": [
-        "I go hiking with my friends once a month.",
-        "We saw a lot of birds when we went hiking."
+        "We went hiking last Saturday.",
+        "Last Saturday, we went hiking."
       ],
       "rubricZh": [
-        "hiking 當名詞表示「健行」（例如 go hiking、Hiking is…）",
-        "時態配合句意（例如 go、saw）"
+        "用 go hiking 表示「去健行」，過去的事用過去式（例如 went hiking）",
+        "「上星期六」可寫，例如 last Saturday 等，放句首或句尾都可以"
       ]
     }
   ],
@@ -383,6 +385,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：chess 是 q12 正解、symphony 與 q12 共用；改 -ing 名詞 shopping、dancing、singing，四項都放得進 went ____，靠 slept in the forest 排除（hiking 會變也對故不用）",
         "resolution": "改為 [\"露營\", \"購物\", \"跳舞\", \"唱歌\"]（原 [\"露營\", \"錄音帶\", \"西洋棋\", \"交響曲\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（hiking）原位換成翻譯題，沿用題 id a2-u15-l05-q16；目標字沿用 hiking",
+        "resolution": "改為 translate：promptZh「我們上星期六去健行了。」、hintWords [\"hiking\"]、referenceEn [\"We went hiking last Saturday.\",\"Last Saturday, we went hiking.\"]、rubricZh [\"用 go hiking 表示「去健行」，過去的事用過去式（例如 went hiking）\",\"「上星期六」可寫，例如 last Saturday 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 hiking 造一個句子，說說你去健行的經驗或計畫。」、referenceEn [\"I go hiking with my friends once a month.\",\"We saw a lot of birds when we went hiking.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

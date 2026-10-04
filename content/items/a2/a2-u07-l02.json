@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u07-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "uniform",
-      "instructionZh": "用 uniform 造一個句子，說說誰需要穿制服。",
+      "type": "translate",
+      "promptZh": "我的新制服太大了。",
+      "hintWords": [
+        "uniform"
+      ],
       "referenceEn": [
-        "Nurses wear a white uniform at work.",
-        "I had to wear a uniform in high school."
+        "My new uniform is too big.",
+        "My new uniform is too large."
       ],
       "rubricZh": [
-        "uniform 是可數名詞（例如 a uniform、school uniforms）",
-        "時態配合句意（例如 wear、had to wear）"
+        "用 uniform 表示「制服」",
+        "「太大」可寫，例如 too big、too large 等"
       ]
     }
   ],
@@ -291,6 +293,12 @@
         "message": "執行長裁示：後期規則補正：單字卡釋義拿掉詞性標記，統一「X；Y」格式、例句詞義在前",
         "resolution": "改為 \"西裝；適合\"（原 \"西裝；適合（動詞）\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（uniform）原位換成翻譯題，沿用題 id a2-u07-l02-q16；目標字沿用 uniform",
+        "resolution": "改為 translate：promptZh「我的新制服太大了。」、hintWords [\"uniform\"]、referenceEn [\"My new uniform is too big.\",\"My new uniform is too large.\"]、rubricZh [\"用 uniform 表示「制服」\",\"「太大」可寫，例如 too big、too large 等\"]（原 makeSentence：instructionZh「用 uniform 造一個句子，說說誰需要穿制服。」、referenceEn [\"Nurses wear a white uniform at work.\",\"I had to wear a uniform in high school.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

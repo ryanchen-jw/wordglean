@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u04-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "roll",
-      "instructionZh": "用 roll 造一個句子，說說你需要或要買的「一捲」東西。",
+      "type": "translate",
+      "promptZh": "我在抽屜裡找到一捲膠帶。",
+      "hintWords": [
+        "roll"
+      ],
       "referenceEn": [
-        "I need to buy two rolls of toilet paper.",
-        "Can you give me a roll of tape?"
+        "I found a roll of tape in the drawer.",
+        "I found a roll of tape in the desk drawer."
       ],
       "rubricZh": [
-        "用 a roll of＋東西表示「一捲」（例如 a roll of kitchen paper）",
-        "兩捲以上用 rolls（例如 two rolls of paper）"
+        "用 a roll of 表示「一捲」（例如 a roll of tape）",
+        "時態可用過去式或現在完成式（例如 found、have found 等）",
+        "「抽屜」可寫，例如 the drawer、my drawer 等"
       ]
     }
   ],
@@ -304,6 +307,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：handle 放不進 Please ___ to，改不及物動詞 listen，使 roll、listen 兩個干擾項文法成立",
         "resolution": "改為 [\"一捲\", \"聽\", \"嘗試\", \"參閱\"]（原 [\"一捲\", \"把手\", \"嘗試\", \"參閱\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（roll）原位換成翻譯題，沿用題 id a2-u04-l09-q17；目標字沿用 roll",
+        "resolution": "改為 translate：promptZh「我在抽屜裡找到一捲膠帶。」、hintWords [\"roll\"]、referenceEn [\"I found a roll of tape in the drawer.\",\"I found a roll of tape in the desk drawer.\"]、rubricZh [\"用 a roll of 表示「一捲」（例如 a roll of tape）\",\"「找到」用過去式（例如 found）\",\"「抽屜」可寫，例如 the drawer、my drawer 等\"]（原 makeSentence：instructionZh「用 roll 造一個句子，說說你需要或要買的「一捲」東西。」、referenceEn [\"I need to buy two rolls of toilet paper.\",\"Can you give me a roll of tape?\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 中文沒有時間詞，要點只收過去式會判錯現在完成式（§11.18、§12.11）",
+        "resolution": "rubricZh 改為 [\"用 a roll of 表示「一捲」（例如 a roll of tape）\",\"時態可用過去式或現在完成式（例如 found、have found 等）\",\"「抽屜」可寫，例如 the drawer、my drawer 等\"]（原 [\"用 a roll of 表示「一捲」（例如 a roll of tape）\",\"「找到」用過去式（例如 found）\",\"「抽屜」可寫，例如 the drawer、my drawer 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

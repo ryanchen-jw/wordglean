@@ -213,32 +213,33 @@
     {
       "id": "a2-u10-l04-q16",
       "type": "translate",
-      "promptZh": "這道湯需要一點檸檬。",
+      "promptZh": "今天市場上的檸檬很便宜。",
       "hintWords": [
         "lemon"
       ],
       "referenceEn": [
-        "This soup needs a little lemon.",
-        "This soup needs some lemon."
+        "Lemons are very cheap at the market today.",
+        "The lemons at the market are cheap today."
       ],
       "rubricZh": [
-        "「檸檬」用 lemon",
-        "「一點」可寫例如 a little、some",
-        "主詞是單數，動詞要加 s（例如 needs）"
+        "用 lemon 表示「檸檬」，泛指用複數（例如 lemons）",
+        "「很便宜」可寫，例如 very cheap、cheap 等"
       ]
     },
     {
       "id": "a2-u10-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "honey",
-      "instructionZh": "用 honey 造一個句子，說說你怎麼吃蜂蜜，或把蜂蜜加在什麼裡面。",
+      "type": "translate",
+      "promptZh": "這些蜂蜜是我叔叔送的。",
+      "hintWords": [
+        "honey"
+      ],
       "referenceEn": [
-        "I like honey on my toast.",
-        "I eat honey with bread for breakfast."
+        "My uncle gave me this honey.",
+        "My uncle gave this honey to me."
       ],
       "rubricZh": [
-        "honey 是不可數名詞（例如 some honey、a little honey）",
-        "說吃法可寫例如 on my toast、with bread"
+        "honey 不可數，不加 s（例如 this honey、the honey 等）",
+        "「是我叔叔送的」可寫，例如 My uncle gave me…、is from my uncle 等"
       ]
     }
   ],
@@ -348,6 +349,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：honey 與 q13 共用；raw 為形容詞、lemon／honey 單數不可數放不進 two ____ of，改複數名詞 pans、plates、forks，只能靠詞義排除",
         "resolution": "改為 [\"平底鍋\", \"大匙\", \"盤子\", \"叉子\"]（原 [\"生的\", \"大匙\", \"檸檬\", \"蜂蜜\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（honey）原位換成翻譯題，沿用題 id a2-u10-l04-q17；目標字沿用 honey",
+        "resolution": "改為 translate：promptZh「這些蜂蜜是我叔叔送的。」、hintWords [\"honey\"]、referenceEn [\"This honey is from my uncle.\",\"My uncle gave me this honey.\"]、rubricZh [\"honey 不可數，用 this honey（不加 s）\",\"「是我叔叔送的」可寫，例如 is from my uncle、My uncle gave me… 等\"]（原 makeSentence：instructionZh「用 honey 造一個句子，說說你怎麼吃蜂蜜，或把蜂蜜加在什麼裡面。」、referenceEn [\"I like honey on my toast.\",\"I eat honey with bread for breakfast.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u10-l05-q16（carrots in this soup）共用 soup（selfcheck-translate 字面 50%）；改本題（lemon 另有聽選題情境，a2-u10-l05-q16 是 carrot 唯一翻譯情境，保留）",
+        "resolution": "改為 promptZh「今天市場上的檸檬很便宜。」、referenceEn [\"Lemons are very cheap at the market today.\",\"The lemons at the market are cheap today.\"]、rubricZh [\"用 lemon 表示「檸檬」，泛指用複數（例如 lemons）\",\"「很便宜」可寫，例如 very cheap、cheap 等\"]（原 promptZh「這道湯需要一點檸檬。」、referenceEn [\"This soup needs a little lemon.\",\"This soup needs some lemon.\"]、rubricZh [\"「檸檬」用 lemon\",\"「一點」可寫例如 a little、some\",\"主詞是單數，動詞要加 s（例如 needs）\"]）；題 id、hintWords 不變",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 this honey；變體 1 與同單元跟讀 These pears are from my uncle's farm. 句型情境幾乎一樣，改以 My uncle gave me this honey. 為主",
+        "resolution": "referenceEn 改為 [\"My uncle gave me this honey.\",\"My uncle gave this honey to me.\"]（原 [\"This honey is from my uncle.\",\"My uncle gave me this honey.\"]）；rubricZh 改為 [\"honey 不可數，不加 s（例如 this honey、the honey 等）\",\"「是我叔叔送的」可寫，例如 My uncle gave me…、is from my uncle 等\"]（原 [\"honey 不可數，用 this honey（不加 s）\",\"「是我叔叔送的」可寫，例如 is from my uncle、My uncle gave me… 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

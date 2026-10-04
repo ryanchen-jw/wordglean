@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u19-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "society",
-      "instructionZh": "用 society 造一個句子，說說社會上的一個現象，或社會需要什麼。",
+      "type": "translate",
+      "promptZh": "每個人都是社會的一份子。",
+      "hintWords": [
+        "society"
+      ],
       "referenceEn": [
-        "Many people in our society use phones all day.",
-        "Our society needs more parks for children."
+        "Everyone is a part of society.",
+        "Everybody is part of society."
       ],
       "rubricZh": [
-        "society 指「社會」（例如 our society、in society）",
-        "主詞和動詞要搭配（例如 Our society needs）"
+        "用 society 表示「社會」，泛指時前面不加 the（例如 part of society）",
+        "「一份子」可寫，例如 a part of、part of 等"
       ]
     }
   ],
@@ -347,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：law、society 與 q14 共用，改 nurse、public（皆名詞可放 call the ___）",
         "resolution": "改為 [\"護士\", \"大眾\", \"警察\", \"政府\"]（原 [\"法律\", \"社會\", \"警察\", \"政府\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（society）原位換成翻譯題，沿用題 id a2-u19-l01-q17；目標字沿用 society",
+        "resolution": "改為 translate：promptZh「每個人都是社會的一份子。」、hintWords [\"society\"]、referenceEn [\"Everyone is a part of society.\",\"Everybody is part of society.\"]、rubricZh [\"用 society 表示「社會」，泛指時前面不加 the（例如 part of society）\",\"「一份子」可寫，例如 a part of、part of 等\"]（原 makeSentence：instructionZh「用 society 造一個句子，說說社會上的一個現象，或社會需要什麼。」、referenceEn [\"Many people in our society use phones all day.\",\"Our society needs more parks for children.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

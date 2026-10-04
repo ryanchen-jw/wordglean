@@ -212,16 +212,18 @@
     },
     {
       "id": "a2-u27-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "laziness",
-      "instructionZh": "用 laziness 造一個句子，說說懶惰帶來的後果，或你怎麼對抗懶惰。",
+      "type": "translate",
+      "promptZh": "他因為懶惰而丟了工作。",
+      "hintWords": [
+        "laziness"
+      ],
       "referenceEn": [
-        "My laziness made me miss the bus.",
-        "Laziness made me late for school again."
+        "He lost his job because of his laziness.",
+        "Because of his laziness, he lost his job."
       ],
       "rubricZh": [
-        "laziness 是名詞「懶惰」；形容詞是 lazy",
-        "主詞和動詞要搭配（例如 Laziness made）"
+        "用 laziness 表示「懶惰」，because of 後面接名詞（例如 because of his laziness）",
+        "時態可用過去式或現在完成式（例如 lost、has lost 等）"
       ]
     }
   ],
@@ -355,6 +357,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「A silly old woman showed me the way…」與「A greedy old woman…」都成立；silly 換 wooden、greedy 換 square，用於人語意不通",
         "resolution": "改為 [\"方形的\", \"懶惰\", \"和藹的\", \"木製的\"]（原 [\"貪心的\", \"懶惰\", \"和藹的\", \"愚蠢的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（laziness）原位換成翻譯題，沿用題 id a2-u27-l06-q16；目標字沿用 laziness",
+        "resolution": "改為 translate：promptZh「他因為懶惰而丟了工作。」、hintWords [\"laziness\"]、referenceEn [\"He lost his job because of his laziness.\",\"Because of his laziness, he lost his job.\"]、rubricZh [\"用 laziness 表示「懶惰」，because of 後面接名詞（例如 because of his laziness）\",\"過去的事用過去式（例如 lost）\"]（原 makeSentence：instructionZh「用 laziness 造一個句子，說說懶惰帶來的後果，或你怎麼對抗懶惰。」、referenceEn [\"My laziness made me miss the bus.\",\"Laziness made me late for school again.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：自查同類（中文沒有時間詞，要點只收過去式）：加收現在完成式（§12.11）",
+        "resolution": "rubricZh 改為 [\"用 laziness 表示「懶惰」，because of 後面接名詞（例如 because of his laziness）\",\"時態可用過去式或現在完成式（例如 lost、has lost 等）\"]（原 [\"用 laziness 表示「懶惰」，because of 後面接名詞（例如 because of his laziness）\",\"過去的事用過去式（例如 lost）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

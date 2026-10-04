@@ -215,16 +215,18 @@
     },
     {
       "id": "a2-u11-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "brand",
-      "instructionZh": "用 brand 造一個句子，說說你最喜歡的牌子，或你買東西時會不會看牌子。",
+      "type": "translate",
+      "promptZh": "我們家一直都喝同一個牌子的咖啡。",
+      "hintWords": [
+        "brand"
+      ],
       "referenceEn": [
-        "My favorite brand makes good bags.",
-        "I don't buy expensive brands."
+        "My family always drinks the same brand of coffee.",
+        "Our family has always drunk the same brand of coffee."
       ],
       "rubricZh": [
-        "brand 是可數名詞（例如 a brand、my favorite brand、expensive brands）",
-        "主詞和動詞要搭配（例如 My favorite brand makes）"
+        "用 brand 表示「牌子」（例如 the same brand of coffee）",
+        "時態可用現在式或現在完成式（例如 always drinks、has always drunk 等）"
       ]
     }
   ],
@@ -442,6 +444,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：wealth 與 q12 共用；原本無干擾項放得進形容詞空格，wealth、exchange 改 broken、terrible（與 but 轉折矛盾而排除）",
         "resolution": "改為 [\"便宜的\", \"糟糕的\", \"壞掉的\", \"信用\"]（原 [\"便宜的\", \"交換\", \"財富\", \"信用\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（brand）原位換成翻譯題，沿用題 id a2-u11-l03-q16；目標字沿用 brand",
+        "resolution": "改為 translate：promptZh「我媽媽只買這個牌子的咖啡。」、hintWords [\"brand\"]、referenceEn [\"My mother only buys this brand of coffee.\",\"My mom buys only this brand of coffee.\"]、rubricZh [\"用 brand 表示「牌子」（例如 this brand of coffee）\",\"only 可放在 buys 前或後（例如 only buys、buys only 等）\",\"主詞是單數，動詞加 s（例如 buys）\"]（原 makeSentence：instructionZh「用 brand 造一個句子，說說你最喜歡的牌子，或你買東西時會不會看牌子。」、referenceEn [\"My favorite brand makes good bags.\",\"I don't buy expensive brands.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 與同課單字卡 cheap「My brother only buys cheap clothes.」同句型、同情境（§11.4），換句型與情境",
+        "resolution": "promptZh 改為 「我們家一直都喝同一個牌子的咖啡。」（原 「我媽媽只買這個牌子的咖啡。」）；referenceEn 改為 [\"My family always drinks the same brand of coffee.\",\"Our family has always drunk the same brand of coffee.\"]（原 [\"My mother only buys this brand of coffee.\",\"My mom buys only this brand of coffee.\"]）；rubricZh 改為 [\"用 brand 表示「牌子」（例如 the same brand of coffee）\",\"時態可用現在式或現在完成式（例如 always drinks、has always drunk 等）\"]（原 [\"用 brand 表示「牌子」（例如 this brand of coffee）\",\"only 可放在 buys 前或後（例如 only buys、buys only 等）\",\"主詞是單數，動詞加 s（例如 buys）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

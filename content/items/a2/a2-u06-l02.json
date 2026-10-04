@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u06-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "trouble",
-      "instructionZh": "用 have trouble 造一個句子，說說你做某件事有困難。",
+      "type": "translate",
+      "promptZh": "我弟弟在數學上有困難。",
+      "hintWords": [
+        "trouble"
+      ],
       "referenceEn": [
-        "I have trouble getting up early.",
-        "I had trouble finding a seat on the train."
+        "My brother has trouble with math.",
+        "My younger brother has trouble with math."
       ],
       "rubricZh": [
-        "have trouble 後可接例如動詞 -ing、with＋名詞（getting up、with math）",
-        "時態配合句意（例如 have、had）"
+        "用 have trouble with 表示「在…上有困難」（例如 has trouble with math）",
+        "動詞配合主詞與時態（例如 has trouble、is having trouble 等）",
+        "「弟弟」可寫，例如 brother、younger brother 等"
       ]
     }
   ],
@@ -376,6 +379,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：relaxes 超範圍，改本單元 cheers",
         "resolution": "改為 [\"使高興\", \"惹惱\", \"幫助\", \"使振奮\"]（原 [\"使高興\", \"惹惱\", \"幫助\", \"使放鬆\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（trouble）原位換成翻譯題，沿用題 id a2-u06-l02-q17；目標字沿用 trouble",
+        "resolution": "改為 translate：promptZh「我弟弟在數學上有困難。」、hintWords [\"trouble\"]、referenceEn [\"My brother has trouble with math.\",\"My younger brother has trouble with math.\"]、rubricZh [\"用 have trouble with 表示「在…上有困難」（例如 has trouble with math）\",\"主詞是單數，動詞用 has\",\"「弟弟」可寫，例如 brother、younger brother 等\"]（原 makeSentence：instructionZh「用 have trouble 造一個句子，說說你做某件事有困難。」、referenceEn [\"I have trouble getting up early.\",\"I had trouble finding a seat on the train.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死「動詞用 has」，會判錯 is having trouble",
+        "resolution": "rubricZh 改為 [\"用 have trouble with 表示「在…上有困難」（例如 has trouble with math）\",\"動詞配合主詞與時態（例如 has trouble、is having trouble 等）\",\"「弟弟」可寫，例如 brother、younger brother 等\"]（原 [\"用 have trouble with 表示「在…上有困難」（例如 has trouble with math）\",\"主詞是單數，動詞用 has\",\"「弟弟」可寫，例如 brother、younger brother 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u27-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "grateful",
-      "instructionZh": "用 grateful 造一個句子，說說你感謝的人或事。",
+      "type": "translate",
+      "promptZh": "她很感激鄰居幫她照顧狗。",
+      "hintWords": [
+        "grateful"
+      ],
       "referenceEn": [
-        "I am grateful to my parents for everything.",
-        "I am grateful for my good friends."
+        "She is grateful to her neighbor for looking after her dog.",
+        "She is grateful to her neighbor for taking care of her dog."
       ],
       "rubricZh": [
-        "grateful 常接 for＋事物、to＋人（例如 grateful for…、grateful to…）",
-        "主詞和動詞要搭配（例如 I am grateful）"
+        "用 be grateful to＋人＋for＋事 表示「感激」（例如 grateful to her neighbor for…）",
+        "「照顧」可寫，例如 looking after、taking care of 等",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     }
   ],
@@ -304,6 +307,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：confuse 放不進 I was ___，改形容詞 excited，連同 pleasant 共兩個干擾項文法成立",
         "resolution": "改為 [\"幸福\", \"失望的\", \"興奮的\", \"愉快的\"]（原 [\"幸福\", \"失望的\", \"使困惑\", \"愉快的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（grateful）原位換成翻譯題，沿用題 id a2-u27-l01-q17；目標字沿用 grateful",
+        "resolution": "改為 translate：promptZh「她很感激鄰居幫她照顧狗。」、hintWords [\"grateful\"]、referenceEn [\"She is grateful to her neighbor for looking after her dog.\",\"She is grateful to her neighbor for taking care of her dog.\"]、rubricZh [\"用 be grateful to＋人＋for＋事 表示「感激」（例如 grateful to her neighbor for…）\",\"「照顧」可寫，例如 looking after、taking care of 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 grateful 造一個句子，說說你感謝的人或事。」、referenceEn [\"I am grateful to my parents for everything.\",\"I am grateful for my good friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

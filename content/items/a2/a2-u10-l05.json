@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u10-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "cooking",
-      "instructionZh": "用 cooking 造一個句子，說說你家誰最會做菜，或你對做菜的感覺。",
+      "type": "translate",
+      "promptZh": "大家都喜歡我媽媽的廚藝。",
+      "hintWords": [
+        "cooking"
+      ],
       "referenceEn": [
-        "My grandmother's cooking is the best.",
-        "I enjoy cooking for my friends."
+        "Everyone loves my mother's cooking.",
+        "Everybody likes my mom's cooking."
       ],
       "rubricZh": [
-        "cooking 表示「烹飪；廚藝」（例如 my grandmother's cooking、enjoy cooking）",
-        "主詞和動詞要搭配（例如 My grandmother's cooking is）"
+        "用 cooking 表示「廚藝」（例如 my mother's cooking）",
+        "everyone、everybody 後面用單數動詞（例如 loves、likes 等）"
       ]
     }
   ],
@@ -394,6 +396,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：原本只有 Slice 放得進祈使句動詞位置，Soda 改本單元動詞 Bake，湊足兩個可代入的干擾項",
         "resolution": "改為 [\"切片\", \"煮沸\", \"烤\", \"烹飪\"]（原 [\"片\", \"煮沸\", \"汽水\", \"烹飪\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（cooking）原位換成翻譯題，沿用題 id a2-u10-l05-q17；目標字沿用 cooking",
+        "resolution": "改為 translate：promptZh「大家都喜歡我媽媽的廚藝。」、hintWords [\"cooking\"]、referenceEn [\"Everyone loves my mother's cooking.\",\"Everybody likes my mom's cooking.\"]、rubricZh [\"用 cooking 表示「廚藝」（例如 my mother's cooking）\",\"everyone、everybody 後面用單數動詞（例如 loves、likes 等）\"]（原 makeSentence：instructionZh「用 cooking 造一個句子，說說你家誰最會做菜，或你對做菜的感覺。」、referenceEn [\"My grandmother's cooking is the best.\",\"I enjoy cooking for my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -212,16 +212,19 @@
     },
     {
       "id": "a2-u23-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "fault",
-      "instructionZh": "用 fault 造一個句子，說說某件事是誰的錯，或安慰別人那不是他的錯。",
+      "type": "translate",
+      "promptZh": "我們遲到是我的錯。",
+      "hintWords": [
+        "fault"
+      ],
       "referenceEn": [
-        "It was my fault that we were late.",
-        "The accident was not the driver's fault."
+        "It is my fault that we are late.",
+        "It's my fault we're late."
       ],
       "rubricZh": [
-        "fault 指「過錯；責任」（例如 my fault、not your fault）",
-        "可寫例如 It was my fault that…"
+        "用 fault 表示「過錯」（例如 It is my fault）",
+        "時態可用現在式或過去式（例如 are late、were late 等）",
+        "fault 後面的 that 可加可省略"
       ]
     }
   ],
@@ -313,6 +316,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：sake 放不進 often ___ about，改動詞 sing，連同 concentrate 共兩個干擾項文法成立",
         "resolution": "改為 [\"專心\", \"過錯\", \"唱歌\", \"意見不合\"]（原 [\"專心\", \"過錯\", \"緣故\", \"意見不合\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（fault）原位換成翻譯題，沿用題 id a2-u23-l05-q16；目標字沿用 fault",
+        "resolution": "改為 translate：promptZh「我們遲到是我的錯。」、hintWords [\"fault\"]、referenceEn [\"It is my fault that we are late.\",\"It's my fault we're late.\"]、rubricZh [\"用 fault 表示「過錯」（例如 It is my fault）\",\"時態可用現在式或過去式（例如 are late、were late 等）\",\"fault 後面的 that 可加可省略\"]（原 makeSentence：instructionZh「用 fault 造一個句子，說說某件事是誰的錯，或安慰別人那不是他的錯。」、referenceEn [\"It was my fault that we were late.\",\"The accident was not the driver's fault.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

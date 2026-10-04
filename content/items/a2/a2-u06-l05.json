@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u06-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "nervous",
-      "instructionZh": "用 nervous 造一個句子，說說你什麼時候會覺得緊張。",
+      "type": "translate",
+      "promptZh": "她去年第一次上台唱歌時很緊張。",
+      "hintWords": [
+        "nervous"
+      ],
       "referenceEn": [
-        "I feel nervous when I speak in front of many people.",
-        "I was nervous before my driving test."
+        "She was nervous when she first sang on stage last year.",
+        "Last year, she felt nervous the first time she sang on stage."
       ],
       "rubricZh": [
-        "nervous 表示「緊張的」，常寫 feel nervous、be nervous（例如 feel nervous、was nervous）",
-        "可加上時間或情況（例如 when I…、before my test）"
+        "用 nervous 表示「緊張的」（例如 was nervous、felt nervous 等）",
+        "去年的事用過去式（例如 was、sang 等）",
+        "「第一次」可寫，例如 first sang、the first time、for the first time 等"
       ]
     }
   ],
@@ -356,6 +359,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：She felt great shock when her son finished school. 只看英文可成立（沒想到他能畢業）；換成 favor，felt great favor 語意不通",
         "resolution": "改為 [\"困難\", \"心情\", \"幫忙\", \"驕傲\"]（原 [\"困難\", \"心情\", \"震驚\", \"驕傲\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nervous）原位換成翻譯題，沿用題 id a2-u06-l05-q17；目標字沿用 nervous",
+        "resolution": "改為 translate：promptZh「她第一次上台唱歌時很緊張。」、hintWords [\"nervous\"]、referenceEn [\"She was very nervous when she sang on stage for the first time.\",\"She felt nervous the first time she sang on stage.\"]、rubricZh [\"用 nervous 表示「緊張的」（例如 was nervous、felt nervous 等）\",\"過去的事用過去式（例如 was、sang 等）\",\"「第一次」可寫，例如 for the first time、the first time 等\"]（原 makeSentence：instructionZh「用 nervous 造一個句子，說說你什麼時候會覺得緊張。」、referenceEn [\"I feel nervous when I speak in front of many people.\",\"I was nervous before my driving test.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 中文沒有時間詞、也可讀成即將發生的事，要點卻只收過去式；題目加時間詞「去年」",
+        "resolution": "promptZh 改為 「她去年第一次上台唱歌時很緊張。」（原 「她第一次上台唱歌時很緊張。」）；referenceEn 改為 [\"She was nervous when she first sang on stage last year.\",\"Last year, she felt nervous the first time she sang on stage.\"]（原 [\"She was very nervous when she sang on stage for the first time.\",\"She felt nervous the first time she sang on stage.\"]）；rubricZh 改為 [\"用 nervous 表示「緊張的」（例如 was nervous、felt nervous 等）\",\"去年的事用過去式（例如 was、sang 等）\",\"「第一次」可寫，例如 first sang、the first time、for the first time 等\"]（原 [\"用 nervous 表示「緊張的」（例如 was nervous、felt nervous 等）\",\"過去的事用過去式（例如 was、sang 等）\",\"「第一次」可寫，例如 for the first time、the first time 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

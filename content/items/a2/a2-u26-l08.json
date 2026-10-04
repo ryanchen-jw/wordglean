@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u26-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "lend",
-      "instructionZh": "用 lend 造一個句子，說說你借東西給別人，或請別人借東西給你。",
+      "type": "translate",
+      "promptZh": "我上週把腳踏車借給了我朋友。",
+      "hintWords": [
+        "lend"
+      ],
       "referenceEn": [
-        "I lent my notes to my classmate.",
-        "Could you lend me ten dollars?"
+        "I lent my bike to my friend last week.",
+        "Last week, I lent my friend my bike."
       ],
       "rubricZh": [
-        "lend 是「借出」（lend＋人＋物，或 lend＋物＋to＋人）",
-        "向別人借入要用 borrow"
+        "用 lend 表示「借出」，過去式是 lent",
+        "可寫 lend A to B 或 lend B A（例如 lent my bike to my friend、lent my friend my bike 等）"
       ]
     }
   ],
@@ -291,6 +293,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lend 與 q12 lent 同字，改本單元名詞 pack",
         "resolution": "改為 [\"一包\", \"捕捉器\", \"水花\", \"有條理的\"]（原 [\"借出\", \"捕捉器\", \"濺\", \"有條理的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（lend）原位換成翻譯題，沿用題 id a2-u26-l08-q16；目標字沿用 lend",
+        "resolution": "改為 translate：promptZh「我上週把腳踏車借給了我朋友。」、hintWords [\"lend\"]、referenceEn [\"I lent my bike to my friend last week.\",\"Last week, I lent my friend my bike.\"]、rubricZh [\"用 lend 表示「借出」，過去式是 lent\",\"可寫 lend A to B 或 lend B A（例如 lent my bike to my friend、lent my friend my bike 等）\"]（原 makeSentence：instructionZh「用 lend 造一個句子，說說你借東西給別人，或請別人借東西給你。」、referenceEn [\"I lent my notes to my classmate.\",\"Could you lend me ten dollars?\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

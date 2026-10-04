@@ -238,16 +238,18 @@
     },
     {
       "id": "a2-u20-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "suggest",
-      "instructionZh": "用 suggest 造一個句子，向朋友提出一個建議。",
+      "type": "translate",
+      "promptZh": "服務生建議我們試試這道菜。",
+      "hintWords": [
+        "suggest"
+      ],
       "referenceEn": [
-        "I suggest that we take the bus.",
-        "I suggest going to the beach this weekend."
+        "The waiter suggested that we try this dish.",
+        "The waiter suggested trying this dish."
       ],
       "rubricZh": [
-        "suggest 後面可接例如 that 子句或動名詞（suggest that we…、suggest going）",
-        "不寫 suggest to＋原形動詞"
+        "用 suggest 表示「建議」，後面可接 that 子句或動名詞（例如 suggested that we try、suggested trying 等）",
+        "時態可用過去式或現在式（例如 suggested、suggests 等）"
       ]
     }
   ],
@@ -339,6 +341,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：voice 是 q15 正解，改 song",
         "resolution": "改為 [\"聲音\", \"歌曲\", \"報告\", \"謠言\"]（原 [\"聲音\", \"嗓音\", \"報告\", \"謠言\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（suggest）原位換成翻譯題，沿用題 id a2-u20-l01-q18；目標字沿用 suggest",
+        "resolution": "改為 translate：promptZh「服務生建議我們試試這道菜。」、hintWords [\"suggest\"]、referenceEn [\"The waiter suggested that we try this dish.\",\"The waiter suggested trying this dish.\"]、rubricZh [\"用 suggest 表示「建議」，後面可接 that 子句或動名詞（例如 suggested that we try、suggested trying 等）\",\"時態可用過去式或現在式（例如 suggested、suggests 等）\"]（原 makeSentence：instructionZh「用 suggest 造一個句子，向朋友提出一個建議。」、referenceEn [\"I suggest that we take the bus.\",\"I suggest going to the beach this weekend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

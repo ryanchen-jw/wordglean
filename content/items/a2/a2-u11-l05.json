@@ -215,16 +215,18 @@
     },
     {
       "id": "a2-u11-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "grocery store",
-      "instructionZh": "用 grocery store 造一個句子，說說你常去的雜貨店，或你在那裡買什麼。",
+      "type": "translate",
+      "promptZh": "這家雜貨店賣很多種水果。",
+      "hintWords": [
+        "grocery store"
+      ],
       "referenceEn": [
-        "I buy fruit at the grocery store near my home.",
-        "The grocery store on my street is open until midnight."
+        "This grocery store sells many kinds of fruit.",
+        "This grocery store sells lots of different fruits."
       ],
       "rubricZh": [
-        "grocery store 是可數名詞（例如 the grocery store、a grocery store）",
-        "「在雜貨店買」可用 at（例如 at the grocery store）"
+        "用 grocery store 表示「雜貨店」，主詞是單數，動詞加 s（例如 sells）",
+        "「很多種水果」可寫，例如 many kinds of fruit、lots of different fruits 等"
       ]
     }
   ],
@@ -364,6 +366,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：cheque 是 q13 正解，改本單元名詞 wallet",
         "resolution": "改為 [\"百貨公司\", \"皮夾\", \"店員\", \"雜貨店\"]（原 [\"百貨公司\", \"支票\", \"店員\", \"雜貨店\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（grocery store）原位換成翻譯題，沿用題 id a2-u11-l05-q16；目標字沿用 grocery store",
+        "resolution": "改為 translate：promptZh「這家雜貨店賣很多種水果。」、hintWords [\"grocery store\"]、referenceEn [\"This grocery store sells many kinds of fruit.\",\"This grocery store sells lots of different fruits.\"]、rubricZh [\"用 grocery store 表示「雜貨店」，主詞是單數，動詞加 s（例如 sells）\",\"「很多種水果」可寫，例如 many kinds of fruit、lots of different fruits 等\"]（原 makeSentence：instructionZh「用 grocery store 造一個句子，說說你常去的雜貨店，或你在那裡買什麼。」、referenceEn [\"I buy fruit at the grocery store near my home.\",\"The grocery store on my street is open until midnight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

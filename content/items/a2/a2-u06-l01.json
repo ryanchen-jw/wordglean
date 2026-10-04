@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u06-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "polite",
-      "instructionZh": "用 polite 造一個句子，說說某人有禮貌的表現，或什麼是有禮貌的行為。",
+      "type": "translate",
+      "promptZh": "那位店員對每個客人都很有禮貌。",
+      "hintWords": [
+        "polite"
+      ],
       "referenceEn": [
-        "My son is always polite to older people.",
-        "It's polite to hold the door for others."
+        "The clerk is very polite to every customer.",
+        "That clerk is polite to all the customers."
       ],
       "rubricZh": [
-        "polite 表示「有禮貌的」，可寫例如 be polite to＋人、It's polite to＋原形動詞",
-        "主詞和 be 動詞要搭配（例如 My son is）"
+        "用 be polite to 表示「對…有禮貌」",
+        "「每個客人」可寫，例如 every customer、all the customers 等"
       ]
     }
   ],
@@ -352,6 +354,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：Unfortunately 超範圍，改副詞 Certainly",
         "resolution": "改為 [\"當然；確實\", \"安靜地\", \"正確地\", \"幸好\"]（原 [\"不幸地\", \"安靜地\", \"正確地\", \"幸好\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（polite）原位換成翻譯題，沿用題 id a2-u06-l01-q17；目標字沿用 polite",
+        "resolution": "改為 translate：promptZh「那位店員對每個客人都很有禮貌。」、hintWords [\"polite\"]、referenceEn [\"The clerk is very polite to every customer.\",\"That clerk is polite to all the customers.\"]、rubricZh [\"用 be polite to 表示「對…有禮貌」\",\"「每個客人」可寫，例如 every customer、all the customers 等\"]（原 makeSentence：instructionZh「用 polite 造一個句子，說說某人有禮貌的表現，或什麼是有禮貌的行為。」、referenceEn [\"My son is always polite to older people.\",\"It's polite to hold the door for others.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

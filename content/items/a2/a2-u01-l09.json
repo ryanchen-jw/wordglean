@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u01-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "further",
-      "instructionZh": "用 further 造一個句子，向別人詢問更多資訊或請求更多幫忙。",
+      "type": "translate",
+      "promptZh": "我們明天會進一步討論這個計畫。",
+      "hintWords": [
+        "further"
+      ],
       "referenceEn": [
-        "Do you have any further information about the trip?",
-        "Can you give me further help with this?"
+        "We will talk about this plan further tomorrow.",
+        "Tomorrow we will discuss this plan further."
       ],
       "rubricZh": [
-        "further 放在名詞前，表示「更多的、進一步的」（例如 further information、further help）",
-        "可以是問句或請求（例如 Do you have…?、Can you…?、Please…）"
+        "用 further 表示「進一步」（例如 talk about it further、discuss it further 等）",
+        "明天的事用表示未來的寫法（例如 will、be going to 等）",
+        "tomorrow 放句首或句尾都可以"
       ]
     }
   ],
@@ -370,6 +373,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：theirs 放不進 I am almost ___，改本單元形容詞 alright",
         "resolution": "改為 [\"做完的\", \"更多的\", \"還好\", \"去過；一直是\"]（原 [\"做完的\", \"更多的\", \"他們的\", \"去過；一直是\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（further）原位換成翻譯題，沿用題 id a2-u01-l09-q17；目標字沿用 further",
+        "resolution": "改為 translate：promptZh「我們明天會進一步討論這個計畫。」、hintWords [\"further\"]、referenceEn [\"We will talk about this plan further tomorrow.\",\"Tomorrow we will discuss this plan further.\"]、rubricZh [\"用 further 表示「進一步」（例如 talk about it further、discuss it further 等）\",\"明天的事用表示未來的寫法（例如 will、be going to 等）\",\"tomorrow 放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 further 造一個句子，向別人詢問更多資訊或請求更多幫忙。」、referenceEn [\"Do you have any further information about the trip?\",\"Can you give me further help with this?\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

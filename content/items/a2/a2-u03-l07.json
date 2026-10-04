@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u03-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "shape",
-      "instructionZh": "用 shape 造一個句子，描述一樣東西的形狀。",
+      "type": "translate",
+      "promptZh": "這座島的形狀像一顆心。",
+      "hintWords": [
+        "shape"
+      ],
       "referenceEn": [
-        "This cookie is in the shape of a star.",
-        "My new desk has a strange shape."
+        "The shape of this island is like a heart.",
+        "This island has the shape of a heart."
       ],
       "rubricZh": [
-        "shape 表示「形狀」，可寫例如 in the shape of a star、has a strange shape",
-        "主詞和動詞要搭配（例如 This cookie is、My desk has）"
+        "用 shape 表示「形狀」（例如 the shape of this island、has the shape of a heart 等）",
+        "「像一顆心」可寫，例如 is like a heart、the shape of a heart 等；寫 is shaped like a heart 也正確"
       ]
     }
   ],
@@ -359,6 +361,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：normal 是 q13 正解，改本單元 popular",
         "resolution": "改為 [\"健康的\", \"柔軟的\", \"受歡迎的\", \"慢的\"]（原 [\"健康的\", \"柔軟的\", \"正常的\", \"慢的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（shape）原位換成翻譯題，沿用題 id a2-u03-l07-q17；目標字沿用 shape",
+        "resolution": "改為 translate：promptZh「這座島的形狀像一顆心。」、hintWords [\"shape\"]、referenceEn [\"The shape of this island is like a heart.\",\"This island has the shape of a heart.\"]、rubricZh [\"用 shape 表示「形狀」（例如 the shape of this island、has the shape of a heart 等）\",\"「像一顆心」可寫，例如 is like a heart、the shape of a heart 等\"]（原 makeSentence：instructionZh「用 shape 造一個句子，描述一樣東西的形狀。」、referenceEn [\"This cookie is in the shape of a star.\",\"My new desk has a strange shape.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 最道地的 is shaped like a heart 沒有明列",
+        "resolution": "rubricZh 改為 [\"用 shape 表示「形狀」（例如 the shape of this island、has the shape of a heart 等）\",\"「像一顆心」可寫，例如 is like a heart、the shape of a heart 等；寫 is shaped like a heart 也正確\"]（原 [\"用 shape 表示「形狀」（例如 the shape of this island、has the shape of a heart 等）\",\"「像一顆心」可寫，例如 is like a heart、the shape of a heart 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

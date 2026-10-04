@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u13-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "tour",
-      "instructionZh": "用 tour 造一個句子，說說你參加過或想參加的觀光行程。",
+      "type": "translate",
+      "promptZh": "這個行程包含午餐。",
+      "hintWords": [
+        "tour"
+      ],
       "referenceEn": [
-        "I want to take a boat tour in Kaohsiung.",
-        "We went on a food tour at a night market."
+        "This tour includes lunch.",
+        "Lunch is included in this tour."
       ],
       "rubricZh": [
-        "tour 是名詞（例如 a bus tour、a food tour）",
-        "「參加行程」可寫例如 take a tour、go on a tour"
+        "用 tour 表示「觀光行程」",
+        "「包含」可寫，例如 includes、is included in 等"
       ]
     }
   ],
@@ -336,6 +338,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：path 與 q13 共用，改本單元名詞 lane",
         "resolution": "改為 [\"快車\", \"速度\", \"汽油\", \"車道\"]（原 [\"快車\", \"速度\", \"汽油\", \"小路\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tour）原位換成翻譯題，沿用題 id a2-u13-l02-q17；目標字沿用 tour",
+        "resolution": "改為 translate：promptZh「這個行程包含午餐。」、hintWords [\"tour\"]、referenceEn [\"This tour includes lunch.\",\"Lunch is included in this tour.\"]、rubricZh [\"用 tour 表示「觀光行程」\",\"「包含」可寫，例如 includes、is included in 等\"]（原 makeSentence：instructionZh「用 tour 造一個句子，說說你參加過或想參加的觀光行程。」、referenceEn [\"I want to take a boat tour in Kaohsiung.\",\"We went on a food tour at a night market.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

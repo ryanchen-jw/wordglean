@@ -231,16 +231,19 @@
     },
     {
       "id": "a2-u03-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "common",
-      "instructionZh": "用 common 造一個句子，說說在台灣很常見的一樣東西。",
+      "type": "translate",
+      "promptZh": "這種鳥在山上很常見。",
+      "hintWords": [
+        "common"
+      ],
       "referenceEn": [
-        "Convenience stores are very common in Taiwan.",
-        "Night markets are very common in Taiwan."
+        "This kind of bird is common in the mountains.",
+        "This bird is very common in the mountains."
       ],
       "rubricZh": [
-        "common 表示「常見的」，可放在 be 動詞後或名詞前（例如 are common、a common food）",
-        "主詞和動詞要搭配（例如 Convenience stores are、Rice is）"
+        "用 common 表示「常見的」（例如 is common、is very common 等）",
+        "「這種鳥」可寫，例如 this kind of bird、this bird 等",
+        "「在山上」可寫，例如 in the mountains 等"
       ]
     }
   ],
@@ -320,6 +323,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：private、single 與 q14 共用，改本單元名詞 system、model",
         "resolution": "改為 [\"系統\", \"材料\", \"模型；機型\", \"影像\"]（原 [\"私人的\", \"材料\", \"單一的\", \"影像\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（common）原位換成翻譯題，沿用題 id a2-u03-l03-q17；目標字沿用 common",
+        "resolution": "改為 translate：promptZh「這種鳥在山上很常見。」、hintWords [\"common\"]、referenceEn [\"This kind of bird is common in the mountains.\",\"This bird is very common in the mountains.\"]、rubricZh [\"用 common 表示「常見的」（例如 is common、is very common 等）\",\"「這種鳥」可寫，例如 this kind of bird、this bird 等\",\"「在山上」可寫，例如 in the mountains 等\"]（原 makeSentence：instructionZh「用 common 造一個句子，說說在台灣很常見的一樣東西。」、referenceEn [\"Convenience stores are very common in Taiwan.\",\"Night markets are very common in Taiwan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

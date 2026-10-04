@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u01-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "ahead",
-      "instructionZh": "用 ahead 造一個句子，告訴別人路要怎麼走。",
+      "type": "translate",
+      "promptZh": "前面有一家銀行。",
+      "hintWords": [
+        "ahead"
+      ],
       "referenceEn": [
-        "Go straight ahead and turn left at the bank.",
-        "Walk straight ahead, and the park is on your right."
+        "There is a bank ahead.",
+        "There's a bank up ahead."
       ],
       "rubricZh": [
-        "ahead 表示「在前面、向前」（例如 go straight ahead、the station is ahead）",
-        "指路可用祈使句（動詞原形開頭，例如 Go、Walk），也可以描述地點在前方"
+        "用 ahead 表示「在前面」（例如 ahead、up ahead、ahead of us 等）",
+        "「有一家銀行」可寫，例如 There is a bank、There's a bank 等"
       ]
     }
   ],
@@ -316,6 +318,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Somebody came to the meeting, so we went home. 只看英文勉強可成立；換成 Himself，反身代名詞不能當主詞，文法不通",
         "resolution": "改為 [\"沒有人\", \"誰（受詞）\", \"所有人\", \"他自己\"]（原 [\"沒有人\", \"誰（受詞）\", \"所有人\", \"某人\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ahead）原位換成翻譯題，沿用題 id a2-u01-l06-q17；目標字沿用 ahead",
+        "resolution": "改為 translate：promptZh「前面有一家銀行。」、hintWords [\"ahead\"]、referenceEn [\"There is a bank ahead.\",\"There's a bank up ahead.\"]、rubricZh [\"用 ahead 表示「在前面」（例如 ahead、up ahead、ahead of us 等）\",\"「有一家銀行」可寫，例如 There is a bank、There's a bank 等\"]（原 makeSentence：instructionZh「用 ahead 造一個句子，告訴別人路要怎麼走。」、referenceEn [\"Go straight ahead and turn left at the bank.\",\"Walk straight ahead, and the park is on your right.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

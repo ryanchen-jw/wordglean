@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u19-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "repair",
-      "instructionZh": "用 repair 造一個句子，說說你修過或需要修理的東西。",
+      "type": "translate",
+      "promptZh": "我爸爸自己修好了洗衣機。",
+      "hintWords": [
+        "repair"
+      ],
       "referenceEn": [
-        "My phone needs a repair.",
-        "I repaired my bike last weekend."
+        "My father repaired the washing machine himself.",
+        "My dad repaired the washing machine by himself."
       ],
       "rubricZh": [
-        "repair 可當名詞或動詞（例如 needs a repair、repaired my bike）",
-        "時態配合句意（例如 needs、repaired）"
+        "用 repair 表示「修理」，時態可用過去式或現在完成式（例如 repaired、has repaired 等）",
+        "「自己」可寫，例如 himself、by himself 等"
       ]
     }
   ],
@@ -315,6 +317,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：envelope 是 q12 正解改 freedom；fighter 與 q12 共用（且可數名詞無冠詞）改 society",
         "resolution": "改為 [\"許可\", \"自由\", \"社會\", \"修理\"]（原 [\"許可\", \"信封\", \"戰士\", \"修理\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（repair）原位換成翻譯題，沿用題 id a2-u19-l05-q16；目標字沿用 repair",
+        "resolution": "改為 translate：promptZh「我爸爸自己修好了洗衣機。」、hintWords [\"repair\"]、referenceEn [\"My father repaired the washing machine himself.\",\"My dad repaired the washing machine by himself.\"]、rubricZh [\"用 repair 表示「修理」，過去的事用過去式（例如 repaired）\",\"「自己」可寫，例如 himself、by himself 等\"]（原 makeSentence：instructionZh「用 repair 造一個句子，說說你修過或需要修理的東西。」、referenceEn [\"My phone needs a repair.\",\"I repaired my bike last weekend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：FIX 中文沒有時間詞，要點只收過去式會判錯現在完成式（§11.18、§12.11）",
+        "resolution": "rubricZh 改為 [\"用 repair 表示「修理」，時態可用過去式或現在完成式（例如 repaired、has repaired 等）\",\"「自己」可寫，例如 himself、by himself 等\"]（原 [\"用 repair 表示「修理」，過去的事用過去式（例如 repaired）\",\"「自己」可寫，例如 himself、by himself 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u20-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "contact",
-      "instructionZh": "用 contact 造一個句子，說說你怎麼和朋友或家人保持聯絡。",
+      "type": "translate",
+      "promptZh": "我們畢業以後就失去聯絡了。",
+      "hintWords": [
+        "contact"
+      ],
       "referenceEn": [
-        "I contact my grandmother every Sunday.",
-        "I stay in contact with my old friends online."
+        "We lost contact after we graduated.",
+        "We haven't been in contact since we graduated."
       ],
       "rubricZh": [
-        "contact 可當動詞或名詞（例如 contact my grandmother、stay in contact）",
-        "contact 當動詞時後面直接接人，不加 with"
+        "用 contact 表示「聯絡」（例如 lost contact、haven't been in contact 等）",
+        "時態可用過去式或現在完成式（例如 lost、haven't been 等）",
+        "「畢業以後」可寫，例如 after we graduated、since we graduated 等"
       ]
     }
   ],
@@ -304,6 +307,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My teacher gave me some good context about my essay.」只看英文說得通（老師給背景說明），context 換成 screen，給作文「好螢幕」語意不通",
         "resolution": "改為 [\"建議\", \"聲音\", \"安靜\", \"螢幕\"]（原 [\"建議\", \"聲音\", \"安靜\", \"上下文\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（contact）原位換成翻譯題，沿用題 id a2-u20-l03-q17；目標字沿用 contact",
+        "resolution": "改為 translate：promptZh「我們畢業以後就失去聯絡了。」、hintWords [\"contact\"]、referenceEn [\"We lost contact after we graduated.\",\"We haven't been in contact since we graduated.\"]、rubricZh [\"用 contact 表示「聯絡」（例如 lost contact、haven't been in contact 等）\",\"時態可用過去式或現在完成式（例如 lost、haven't been 等）\",\"「畢業以後」可寫，例如 after we graduated、since we graduated 等\"]（原 makeSentence：instructionZh「用 contact 造一個句子，說說你怎麼和朋友或家人保持聯絡。」、referenceEn [\"I contact my grandmother every Sunday.\",\"I stay in contact with my old friends online.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

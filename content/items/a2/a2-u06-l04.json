@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u06-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "surprised",
-      "instructionZh": "用 surprised 造一個句子，說說一件讓你很驚訝的事。",
+      "type": "translate",
+      "promptZh": "我很驚訝他還記得我的名字。",
+      "hintWords": [
+        "surprised"
+      ],
       "referenceEn": [
-        "I was surprised to get a letter from my old teacher.",
-        "I was surprised when my friend called me from Japan."
+        "I was surprised that he still remembered my name.",
+        "I was surprised he still remembered my name."
       ],
       "rubricZh": [
-        "可寫例如 surprised to＋原形動詞（surprised to get）、surprised when＋子句",
-        "過去的事用過去式（例如 was）"
+        "用 be surprised 表示「感到驚訝」，後面可接 that 子句（that 可省略）",
+        "時態可用過去式或現在式（例如 was surprised、remembered、am surprised、remembers 等）"
       ]
     }
   ],
@@ -359,6 +361,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：bored、sleepy 超範圍，改本單元 creative、polite",
         "resolution": "改為 [\"有創意的\", \"有禮貌的\", \"餓的\", \"驚訝的\"]（原 [\"無聊的\", \"想睡的\", \"餓的\", \"驚訝的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（surprised）原位換成翻譯題，沿用題 id a2-u06-l04-q17；目標字沿用 surprised",
+        "resolution": "改為 translate：promptZh「我很驚訝他還記得我的名字。」、hintWords [\"surprised\"]、referenceEn [\"I was surprised that he still remembered my name.\",\"I was surprised he still remembered my name.\"]、rubricZh [\"用 be surprised 表示「感到驚訝」，後面可接 that 子句（that 可省略）\",\"時態可用過去式或現在式（例如 was surprised、remembered、am surprised、remembers 等）\"]（原 makeSentence：instructionZh「用 surprised 造一個句子，說說一件讓你很驚訝的事。」、referenceEn [\"I was surprised to get a letter from my old teacher.\",\"I was surprised when my friend called me from Japan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

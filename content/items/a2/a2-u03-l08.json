@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u03-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "familiar",
-      "instructionZh": "用 familiar 造一個句子，說說某個讓你覺得熟悉的人、地方或東西。",
+      "type": "translate",
+      "promptZh": "我對這個城市不太熟悉。",
+      "hintWords": [
+        "familiar"
+      ],
       "referenceEn": [
-        "This song sounds familiar to me.",
-        "I am familiar with this part of the city."
+        "I am not very familiar with this city.",
+        "I'm not really familiar with this city."
       ],
       "rubricZh": [
-        "familiar 表示「熟悉的」，可寫例如 look familiar、sound familiar、be familiar with＋人／地方／東西",
-        "look、sound 後面接形容詞（例如 sounds familiar）"
+        "例如 be familiar with 表示「對…熟悉」；寫 This city is not very familiar to me 等也正確",
+        "「不太」可寫，例如 not very、not really 等"
       ]
     }
   ],
@@ -370,6 +372,18 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
         "resolution": "改為 \"別對每件事都那麼負面！\"（原 \"別對每件事都那麼悲觀！\"）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（familiar）原位換成翻譯題，沿用題 id a2-u03-l08-q17；目標字沿用 familiar",
+        "resolution": "改為 translate：promptZh「我對這個城市不太熟悉。」、hintWords [\"familiar\"]、referenceEn [\"I am not very familiar with this city.\",\"I'm not really familiar with this city.\"]、rubricZh [\"用 be familiar with 表示「對…熟悉」\",\"「不太」可寫，例如 not very、not really 等\"]（原 makeSentence：instructionZh「用 familiar 造一個句子，說說某個讓你覺得熟悉的人、地方或東西。」、referenceEn [\"This song sounds familiar to me.\",\"I am familiar with this part of the city.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 be familiar with，會判錯 This city is not very familiar to me",
+        "resolution": "rubricZh 改為 [\"例如 be familiar with 表示「對…熟悉」；寫 This city is not very familiar to me 等也正確\",\"「不太」可寫，例如 not very、not really 等\"]（原 [\"用 be familiar with 表示「對…熟悉」\",\"「不太」可寫，例如 not very、not really 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

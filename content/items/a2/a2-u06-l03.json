@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u06-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "crazy",
-      "instructionZh": "用 be crazy about 造一個句子，說說你非常著迷的東西。",
+      "type": "translate",
+      "promptZh": "我女兒非常迷那個歌手。",
+      "hintWords": [
+        "crazy"
+      ],
       "referenceEn": [
-        "I am crazy about Japanese food.",
-        "I'm crazy about basketball."
+        "My daughter is crazy about that singer.",
+        "My daughter is really crazy about that singer."
       ],
       "rubricZh": [
-        "be crazy about＋名詞或動名詞，表示「非常著迷」（例如 crazy about basketball、crazy about cooking）",
-        "be 動詞配合主詞（例如 I am）"
+        "用 be crazy about 表示「非常迷…」",
+        "主詞是單數，be 動詞用 is"
       ]
     }
   ],
@@ -347,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：lose 為非本單元字且他課已用，改本單元 fear",
         "resolution": "改為 [\"討厭\", \"感激\", \"避免\", \"害怕\"]（原 [\"討厭\", \"感激\", \"避免\", \"弄丟\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（crazy）原位換成翻譯題，沿用題 id a2-u06-l03-q17；目標字沿用 crazy",
+        "resolution": "改為 translate：promptZh「我女兒非常迷那個歌手。」、hintWords [\"crazy\"]、referenceEn [\"My daughter is crazy about that singer.\",\"My daughter is really crazy about that singer.\"]、rubricZh [\"用 be crazy about 表示「非常迷…」\",\"主詞是單數，be 動詞用 is\"]（原 makeSentence：instructionZh「用 be crazy about 造一個句子，說說你非常著迷的東西。」、referenceEn [\"I am crazy about Japanese food.\",\"I'm crazy about basketball.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

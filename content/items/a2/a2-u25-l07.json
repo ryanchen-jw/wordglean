@@ -217,16 +217,18 @@
     },
     {
       "id": "a2-u25-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "well-known",
-      "instructionZh": "用 well-known 造一個句子，介紹一個有名的人、地方或東西。",
+      "type": "translate",
+      "promptZh": "這個小鎮以茶聞名。",
+      "hintWords": [
+        "well-known"
+      ],
       "referenceEn": [
-        "This restaurant is well-known for its seafood.",
-        "My aunt is a well-known cook in our town."
+        "This town is well-known for its tea.",
+        "The town is well-known for its tea."
       ],
       "rubricZh": [
-        "well-known 表示「有名的」（例如 a well-known cook、well-known for…）",
-        "主詞和動詞要搭配（例如 My aunt is）"
+        "用 be well-known for 表示「以…聞名」",
+        "「茶」可寫，例如 its tea、tea 等"
       ]
     }
   ],
@@ -282,6 +284,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「This singer is marvelous in Asia. Everyone knows her.」勉強說得通，marvelous 換成 separate，「歌手在亞洲是分開的」語意不通",
         "resolution": "改為 [\"有名的\", \"分開的\", \"左側的\", \"不重要的\"]（原 [\"有名的\", \"極好的\", \"左側的\", \"不重要的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（well-known）原位換成翻譯題，沿用題 id a2-u25-l07-q16；目標字沿用 well-known",
+        "resolution": "改為 translate：promptZh「這個小鎮以茶聞名。」、hintWords [\"well-known\"]、referenceEn [\"This town is well-known for its tea.\",\"The town is well-known for its tea.\"]、rubricZh [\"用 be well-known for 表示「以…聞名」\",\"「茶」可寫，例如 its tea、tea 等\"]（原 makeSentence：instructionZh「用 well-known 造一個句子，介紹一個有名的人、地方或東西。」、referenceEn [\"This restaurant is well-known for its seafood.\",\"My aunt is a well-known cook in our town.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

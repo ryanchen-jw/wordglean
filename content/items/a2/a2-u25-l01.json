@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u25-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "used",
-      "instructionZh": "用 used 造一個句子，說說你買過或想買的二手東西。",
+      "type": "translate",
+      "promptZh": "這家店只賣二手衣服。",
+      "hintWords": [
+        "used"
+      ],
       "referenceEn": [
-        "I bought a used guitar last year.",
-        "I want to buy a used camera."
+        "This shop only sells used clothes.",
+        "This store sells only used clothes."
       ],
       "rubricZh": [
-        "used 放在名詞前表示「二手的」（例如 a used guitar）",
-        "不要和 used to（過去常常）混淆"
+        "用 used 表示「二手的」，放在名詞前（例如 used clothes）",
+        "only 可放在動詞前或後（例如 only sells、sells only 等）"
       ]
     }
   ],
@@ -298,6 +300,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：basically 放不進 in a ___，改名詞 pocket，連同 metal 共兩個干擾項文法成立",
         "resolution": "改為 [\"口袋\", \"框\", \"空的\", \"金屬\"]（原 [\"基本上\", \"框\", \"空的\", \"金屬\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（used）原位換成翻譯題，沿用題 id a2-u25-l01-q17；目標字沿用 used",
+        "resolution": "改為 translate：promptZh「這家店只賣二手衣服。」、hintWords [\"used\"]、referenceEn [\"This shop only sells used clothes.\",\"This store sells only used clothes.\"]、rubricZh [\"用 used 表示「二手的」，放在名詞前（例如 used clothes）\",\"only 可放在動詞前或後（例如 only sells、sells only 等）\"]（原 makeSentence：instructionZh「用 used 造一個句子，說說你買過或想買的二手東西。」、referenceEn [\"I bought a used guitar last year.\",\"I want to buy a used camera.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

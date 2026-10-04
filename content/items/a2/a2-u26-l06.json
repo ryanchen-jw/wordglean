@@ -212,16 +212,18 @@
     },
     {
       "id": "a2-u26-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "pretend",
-      "instructionZh": "用 pretend 造一個句子，說說你或別人假裝做某件事。",
+      "type": "translate",
+      "promptZh": "他假裝聽不懂我的話。",
+      "hintWords": [
+        "pretend"
+      ],
       "referenceEn": [
-        "When I was little, I pretended to be a teacher.",
-        "My cat pretends to sleep when I call her."
+        "He pretended not to understand me.",
+        "He pretended that he didn't understand me."
       ],
       "rubricZh": [
-        "pretend to＋原形動詞（例如 pretended to be）",
-        "時態配合句意（例如 pretended、pretends）"
+        "用 pretend 表示「假裝」（例如 pretended not to understand、pretended that… 等）",
+        "過去的事用過去式；寫現在式 pretends 也正確"
       ]
     }
   ],
@@ -349,6 +351,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：bury 是 q12 正解，改本單元名詞 chain",
         "resolution": "改為 [\"浮板\", \"戲法\", \"細繩\", \"鍊子\"]（原 [\"浮板\", \"戲法\", \"細繩\", \"埋\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（pretend）原位換成翻譯題，沿用題 id a2-u26-l06-q16；目標字沿用 pretend",
+        "resolution": "改為 translate：promptZh「他假裝聽不懂我的話。」、hintWords [\"pretend\"]、referenceEn [\"He pretended not to understand me.\",\"He pretended that he didn't understand me.\"]、rubricZh [\"用 pretend 表示「假裝」（例如 pretended not to understand、pretended that… 等）\",\"過去的事用過去式；寫現在式 pretends 也正確\"]（原 makeSentence：instructionZh「用 pretend 造一個句子，說說你或別人假裝做某件事。」、referenceEn [\"When I was little, I pretended to be a teacher.\",\"My cat pretends to sleep when I call her.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

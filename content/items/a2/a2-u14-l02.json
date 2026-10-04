@@ -240,16 +240,18 @@
     },
     {
       "id": "a2-u14-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "physical",
-      "instructionZh": "用 physical 造一個句子，說說你做的身體活動，或需要勞力的工作。",
+      "type": "translate",
+      "promptZh": "這份工作需要很多體力。",
+      "hintWords": [
+        "physical"
+      ],
       "referenceEn": [
-        "I like physical activities like hiking.",
-        "My job needs a lot of physical work."
+        "This job needs a lot of physical strength.",
+        "This job takes a lot of physical strength."
       ],
       "rubricZh": [
-        "physical 放在名詞前，表示「身體的」（例如 physical activities、physical work）",
-        "主詞和動詞要搭配（例如 My job needs）"
+        "用 physical 表示「身體的」（例如 physical strength）",
+        "「需要」可寫，例如 needs、takes 等"
       ]
     }
   ],
@@ -377,6 +379,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lip 與 q14 共用，改本課名詞 weight",
         "resolution": "改為 [\"事故\", \"身體的\", \"溫度\", \"重量\"]（原 [\"事故\", \"身體的\", \"溫度\", \"嘴唇\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（physical）原位換成翻譯題，沿用題 id a2-u14-l02-q18；目標字沿用 physical",
+        "resolution": "改為 translate：promptZh「這份工作需要很多體力。」、hintWords [\"physical\"]、referenceEn [\"This job needs a lot of physical strength.\",\"This job takes a lot of physical strength.\"]、rubricZh [\"用 physical 表示「身體的」（例如 physical strength）\",\"「需要」可寫，例如 needs、takes 等\"]（原 makeSentence：instructionZh「用 physical 造一個句子，說說你做的身體活動，或需要勞力的工作。」、referenceEn [\"I like physical activities like hiking.\",\"My job needs a lot of physical work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

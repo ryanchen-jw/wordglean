@@ -229,16 +229,19 @@
     },
     {
       "id": "a2-u05-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "wedding",
-      "instructionZh": "用 wedding 造一個句子，說說你參加過的一場婚禮。",
+      "type": "translate",
+      "promptZh": "昨天的婚禮上，很多人在跳舞。",
+      "hintWords": [
+        "wedding"
+      ],
       "referenceEn": [
-        "My best friend's wedding was very romantic.",
-        "My cousin's wedding was in a beautiful garden."
+        "Many people danced at the wedding yesterday.",
+        "At yesterday's wedding, a lot of people were dancing."
       ],
       "rubricZh": [
-        "wedding 是名詞「婚禮」（例如 my friend's wedding）",
-        "說過去的事用過去式（例如 went、was）"
+        "用 wedding 表示「婚禮」，「在婚禮上」可寫，例如 at the wedding 等",
+        "昨天的事用過去式或過去進行式（例如 danced、were dancing 等）",
+        "「很多人」可寫，例如 many people、a lot of people 等"
       ]
     }
   ],
@@ -318,6 +321,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；非本單元字不跨課重複當干擾項：teenage 超範圍改本單元 junior；rich 他課已用改 poor",
         "resolution": "改為 [\"已婚的\", \"貧窮的\", \"年長的\", \"資淺的\"]（原 [\"已婚的\", \"有錢的\", \"年長的\", \"十幾歲的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wedding）原位換成翻譯題，沿用題 id a2-u05-l03-q17；目標字沿用 wedding",
+        "resolution": "改為 translate：promptZh「昨天的婚禮上，很多人在跳舞。」、hintWords [\"wedding\"]、referenceEn [\"Many people danced at the wedding yesterday.\",\"At yesterday's wedding, a lot of people were dancing.\"]、rubricZh [\"用 wedding 表示「婚禮」，「在婚禮上」可寫，例如 at the wedding 等\",\"昨天的事用過去式或過去進行式（例如 danced、were dancing 等）\",\"「很多人」可寫，例如 many people、a lot of people 等\"]（原 makeSentence：instructionZh「用 wedding 造一個句子，說說你參加過的一場婚禮。」、referenceEn [\"My best friend's wedding was very romantic.\",\"My cousin's wedding was in a beautiful garden.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

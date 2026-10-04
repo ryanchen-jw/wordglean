@@ -226,31 +226,33 @@
     {
       "id": "a2-u21-l01-q17",
       "type": "translate",
-      "promptZh": "我最喜歡這部電影的第一幕。",
+      "promptZh": "這齣戲的第一場發生在一間廚房裡。",
       "hintWords": [
         "scene"
       ],
       "referenceEn": [
-        "I like the first scene of this film best.",
-        "The first scene is my favorite part of this film."
+        "The first scene of the play is in a kitchen.",
+        "The play's first scene takes place in a kitchen."
       ],
       "rubricZh": [
-        "「一幕」用 scene",
-        "「最喜歡」可寫例如 like … best、my favorite"
+        "用 scene 表示「（戲劇的）一場」（例如 the first scene of the play）",
+        "「發生在」可寫，例如 is in、takes place in 等"
       ]
     },
     {
       "id": "a2-u21-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "traditional",
-      "instructionZh": "用 traditional 造一個句子，說說你家的一種傳統食物、衣服或習俗。",
+      "type": "translate",
+      "promptZh": "這家店賣傳統的玩具。",
+      "hintWords": [
+        "traditional"
+      ],
       "referenceEn": [
-        "We eat traditional rice cakes at New Year.",
-        "My grandmother has a traditional Chinese dress."
+        "This shop sells traditional toys.",
+        "This store sells traditional toys."
       ],
       "rubricZh": [
-        "traditional 常放在名詞前（例如 traditional food、a traditional dress）",
-        "主詞和動詞要搭配（例如 My grandmother has）"
+        "用 traditional 表示「傳統的」，放在名詞前（例如 traditional toys）",
+        "主詞是單數，動詞加 s（例如 sells）"
       ]
     }
   ],
@@ -324,6 +326,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「At New Year, we eat boring food with our family.」文法語意皆可成立，boring 換成 rainy，「下雨的食物」語意不通",
         "resolution": "改為 [\"小蟲\", \"下雨的\", \"塑膠的\", \"傳統的\"]（原 [\"小蟲\", \"無聊的\", \"塑膠的\", \"傳統的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（traditional）原位換成翻譯題，沿用題 id a2-u21-l01-q18；目標字沿用 traditional",
+        "resolution": "改為 translate：promptZh「這家店賣傳統的玩具。」、hintWords [\"traditional\"]、referenceEn [\"This shop sells traditional toys.\",\"This store sells traditional toys.\"]、rubricZh [\"用 traditional 表示「傳統的」，放在名詞前（例如 traditional toys）\",\"主詞是單數，動詞加 s（例如 sells）\"]（原 makeSentence：instructionZh「用 traditional 造一個句子，說說你家的一種傳統食物、衣服或習俗。」、referenceEn [\"We eat traditional rice cakes at New Year.\",\"My grandmother has a traditional Chinese dress.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u21-l03-q16（a classic film）共用 film（selfcheck-translate 字面 50%）；改本題（scene 另有閱讀短文情境，a2-u21-l03-q16 保留）",
+        "resolution": "改為 promptZh「這齣戲的第一幕發生在一間廚房裡。」、referenceEn [\"The first scene of the play is in a kitchen.\",\"The play's first scene takes place in a kitchen.\"]、rubricZh [\"用 scene 表示「（戲劇的）一幕」（例如 the first scene of the play）\",\"「發生在」可寫，例如 is in、takes place in 等\"]（原 promptZh「我最喜歡這部電影的第一幕。」、referenceEn [\"I like the first scene of this film best.\",\"The first scene is my favorite part of this film.\"]、rubricZh [\"「一幕」用 scene\",\"「最喜歡」可寫例如 like … best、my favorite\"]）；題 id、hintWords 不變",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 劇場的「幕」英文通常是 act，寫 The first act 是正確譯法卻會被判錯；題目改「第一場」（對應 scene），保留戲劇情境以免與同單元 a2-u21-l03-q16 電影題雷同",
+        "resolution": "promptZh 改為 「這齣戲的第一場發生在一間廚房裡。」（原 「這齣戲的第一幕發生在一間廚房裡。」）；rubricZh 改為 [\"用 scene 表示「（戲劇的）一場」（例如 the first scene of the play）\",\"「發生在」可寫，例如 is in、takes place in 等\"]（原 [\"用 scene 表示「（戲劇的）一幕」（例如 the first scene of the play）\",\"「發生在」可寫，例如 is in、takes place in 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

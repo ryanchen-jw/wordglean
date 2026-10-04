@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u14-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "ill",
-      "instructionZh": "用 ill 造一個句子，說說某人生病的時候。",
+      "type": "translate",
+      "promptZh": "她今天生病了，所以待在家裡。",
+      "hintWords": [
+        "ill"
+      ],
       "referenceEn": [
-        "I was ill last weekend, so I stayed in bed.",
-        "My brother is ill today, so he can't go to school."
+        "She was ill today, so she stayed at home.",
+        "She stayed home today because she was ill."
       ],
       "rubricZh": [
-        "ill 是形容詞「生病的」，可放在 be 動詞或 feel、get 等動詞後（例如 was ill、felt ill、got ill）",
-        "可用 so 帶出結果（例如 so I stayed in bed）"
+        "用 ill 表示「生病的」（例如 was ill）；寫 is ill、is staying home 也正確",
+        "「待在家裡」可寫，例如 stayed at home、stayed home 等",
+        "因果可寫，例如 so、because 等"
       ]
     }
   ],
@@ -388,6 +391,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：physically、psychologist 放不進 ____ his arm 動詞位置，改 exercised、practiced（能代入、靠詞義排除；hurt、broke 會變也對故不用）",
         "resolution": "改為 [\"臉頰\", \"運動\", \"弄傷\", \"練習\"]（原 [\"臉頰\", \"身體上\", \"弄傷\", \"心理師\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ill）原位換成翻譯題，沿用題 id a2-u14-l03-q17；目標字沿用 ill",
+        "resolution": "改為 translate：promptZh「她今天生病了，所以待在家裡。」、hintWords [\"ill\"]、referenceEn [\"She was ill today, so she stayed at home.\",\"She stayed home today because she was ill.\"]、rubricZh [\"用 ill 表示「生病的」（例如 was ill）；寫 is ill、is staying home 也正確\",\"「待在家裡」可寫，例如 stayed at home、stayed home 等\",\"因果可寫，例如 so、because 等\"]（原 makeSentence：instructionZh「用 ill 造一個句子，說說某人生病的時候。」、referenceEn [\"I was ill last weekend, so I stayed in bed.\",\"My brother is ill today, so he can't go to school.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

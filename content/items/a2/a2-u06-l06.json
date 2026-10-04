@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u06-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "relax",
-      "instructionZh": "用 relax 造一個句子，說說你平常怎麼放鬆。",
+      "type": "translate",
+      "promptZh": "別擔心，放輕鬆。",
+      "hintWords": [
+        "relax"
+      ],
       "referenceEn": [
-        "I relax by listening to music.",
-        "On weekends, I relax at a cafe with a book."
+        "Don't worry. Just relax.",
+        "Relax, and don't worry."
       ],
       "rubricZh": [
-        "relax 後面可接例如 by＋動詞 -ing、地點、with＋東西（relax by listening、relax with a book）",
-        "說平常的習慣用現在式（例如 relax）"
+        "用 relax 表示「放輕鬆」，祈使句用原形動詞（例如 relax、just relax 等）",
+        "「別擔心」可寫，例如 don't worry 等"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：dance 為非本單元字且他課已用，改 study",
         "resolution": "改為 [\"工作\", \"跑步\", \"讀書\", \"放鬆\"]（原 [\"工作\", \"跑步\", \"跳舞\", \"放鬆\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（relax）原位換成翻譯題，沿用題 id a2-u06-l06-q17；目標字沿用 relax",
+        "resolution": "改為 translate：promptZh「別擔心，放輕鬆。」、hintWords [\"relax\"]、referenceEn [\"Don't worry. Just relax.\",\"Relax, and don't worry.\"]、rubricZh [\"用 relax 表示「放輕鬆」，祈使句用原形動詞（例如 relax、just relax 等）\",\"「別擔心」可寫，例如 don't worry 等\"]（原 makeSentence：instructionZh「用 relax 造一個句子，說說你平常怎麼放鬆。」、referenceEn [\"I relax by listening to music.\",\"On weekends, I relax at a cafe with a book.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

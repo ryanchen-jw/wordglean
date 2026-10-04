@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u20-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "apologize",
-      "instructionZh": "用 apologize 造一個句子，說說你向某人道歉的經驗。",
+      "type": "translate",
+      "promptZh": "他為遲到向大家道歉。",
+      "hintWords": [
+        "apologize"
+      ],
       "referenceEn": [
-        "I apologized to my mom for breaking her cup.",
-        "Last week, I apologized to my friend for forgetting her birthday."
+        "He apologized to everyone for being late.",
+        "He apologized to everybody for coming late."
       ],
       "rubricZh": [
-        "apologize 常接 to＋人、for＋事（例如 apologize to my mom for…）",
-        "for 後面接名詞或動名詞（例如 for breaking）"
+        "用 apologize to＋人＋for＋事 表示「為…向…道歉」（例如 apologized to everyone for being late）",
+        "時態可用過去式或現在完成式（例如 apologized、has apologized 等）"
       ]
     }
   ],
@@ -326,6 +328,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：website 是 q14 正解、printer 與 q14 共用，改動詞 chatted、shouted，可接 to his teacher",
         "resolution": "改為 [\"聊天\", \"道歉\", \"大喊\", \"複製\"]（原 [\"網站\", \"道歉\", \"印表機\", \"複製\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（apologize）原位換成翻譯題，沿用題 id a2-u20-l06-q17；目標字沿用 apologize",
+        "resolution": "改為 translate：promptZh「他為遲到向大家道歉。」、hintWords [\"apologize\"]、referenceEn [\"He apologized to everyone for being late.\",\"He apologized to everybody for coming late.\"]、rubricZh [\"用 apologize to＋人＋for＋事 表示「為…向…道歉」（例如 apologized to everyone for being late）\",\"過去的事用過去式（例如 apologized）\"]（原 makeSentence：instructionZh「用 apologize 造一個句子，說說你向某人道歉的經驗。」、referenceEn [\"I apologized to my mom for breaking her cup.\",\"Last week, I apologized to my friend for forgetting her birthday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：自查同類（中文沒有時間詞，要點只收過去式）：加收現在完成式（§12.11）",
+        "resolution": "rubricZh 改為 [\"用 apologize to＋人＋for＋事 表示「為…向…道歉」（例如 apologized to everyone for being late）\",\"時態可用過去式或現在完成式（例如 apologized、has apologized 等）\"]（原 [\"用 apologize to＋人＋for＋事 表示「為…向…道歉」（例如 apologized to everyone for being late）\",\"過去的事用過去式（例如 apologized）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

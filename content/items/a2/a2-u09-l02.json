@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u09-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "earn",
-      "instructionZh": "用 earn 造一個句子，說說你或家人怎麼賺錢。",
+      "type": "translate",
+      "promptZh": "她靠畫畫賺錢。",
+      "hintWords": [
+        "earn"
+      ],
       "referenceEn": [
-        "I earn extra money by teaching piano on weekends.",
-        "My brother earns a lot as an engineer."
+        "She earns money by painting.",
+        "She earns money by drawing pictures."
       ],
       "rubricZh": [
-        "earn 表示「賺（錢）」，可寫例如 earn money by＋動詞 -ing、earn a lot as＋職業",
-        "主詞第三人稱單數時動詞加 s（例如 earns）"
+        "用 earn 表示「賺（錢）」，主詞是 she，動詞加 s（例如 earns）",
+        "「靠…」可寫，例如 by painting、from her paintings 等"
       ]
     }
   ],
@@ -376,6 +378,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：captain 代入「Hi, where is the captain? I need to check in.」在郵輪情境說得通，換成本課 labor：「where is the labor」文法通、語意不通",
         "resolution": "改為 [\"獎金\", \"櫃台人員\", \"訓練\", \"勞動\"]（原 [\"獎金\", \"櫃台人員\", \"訓練\", \"船長\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（earn）原位換成翻譯題，沿用題 id a2-u09-l02-q17；目標字沿用 earn",
+        "resolution": "改為 translate：promptZh「她靠畫畫賺錢。」、hintWords [\"earn\"]、referenceEn [\"She earns money by painting.\",\"She earns money by drawing pictures.\"]、rubricZh [\"用 earn 表示「賺（錢）」，主詞是 she，動詞加 s（例如 earns）\",\"「靠…」可寫，例如 by painting、from her paintings 等\"]（原 makeSentence：instructionZh「用 earn 造一個句子，說說你或家人怎麼賺錢。」、referenceEn [\"I earn extra money by teaching piano on weekends.\",\"My brother earns a lot as an engineer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

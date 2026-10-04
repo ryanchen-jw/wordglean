@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u24-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "effect",
-      "instructionZh": "用 effect 造一個句子，說說某件事帶來的影響或效果。",
+      "type": "translate",
+      "promptZh": "這部電影的特效很棒。",
+      "hintWords": [
+        "effect"
+      ],
       "referenceEn": [
-        "The rain had a bad effect on our trip.",
-        "The new rule had a good effect on our school."
+        "The special effects in this movie are great.",
+        "This movie has great special effects."
       ],
       "rubricZh": [
-        "effect 常寫 have an effect on…（例如 a bad effect on our trip）",
-        "effect 是名詞；當動詞「影響」時可寫，例如 affect 等"
+        "用 effect 表示「效果」，「特效」可寫，例如 special effects 等",
+        "「很棒」可寫，例如 great、amazing 等"
       ]
     }
   ],
@@ -338,6 +340,12 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
         "resolution": "改為 \"她親切的話對我影響很大。\"（原 \"特效讓這部電影很刺激。\"）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（effect）原位換成翻譯題，沿用題 id a2-u24-l01-q17；目標字沿用 effect",
+        "resolution": "改為 translate：promptZh「這部電影的特效很棒。」、hintWords [\"effect\"]、referenceEn [\"The special effects in this movie are great.\",\"This movie has great special effects.\"]、rubricZh [\"用 effect 表示「效果」，「特效」可寫，例如 special effects 等\",\"「很棒」可寫，例如 great、amazing 等\"]（原 makeSentence：instructionZh「用 effect 造一個句子，說說某件事帶來的影響或效果。」、referenceEn [\"The rain had a bad effect on our trip.\",\"The new rule had a good effect on our school.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

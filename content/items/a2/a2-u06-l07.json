@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u06-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "pleased",
-      "instructionZh": "用 pleased 造一個句子，說說一件讓你很高興或滿意的事。",
+      "type": "translate",
+      "promptZh": "她對她的新家很滿意。",
+      "hintWords": [
+        "pleased"
+      ],
       "referenceEn": [
-        "I was pleased with my test results.",
-        "I am pleased to hear the good news."
+        "She is pleased with her new home.",
+        "She is very pleased with her new house."
       ],
       "rubricZh": [
-        "可寫例如 be pleased with＋事物（pleased with my results）、be pleased to＋原形動詞",
-        "時態配合句意（例如 was、am）"
+        "用 be pleased with 表示「對…滿意」",
+        "「新家」可寫，例如 new home、new house 等",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     }
   ],
@@ -320,6 +323,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：admire 是 q14 正解，改本課形容詞 gentle",
         "resolution": "改為 [\"擔心的\", \"明智的\", \"浪漫的\", \"溫柔的\"]（原 [\"擔心的\", \"明智的\", \"浪漫的\", \"欽佩\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pleased）原位換成翻譯題，沿用題 id a2-u06-l07-q17；目標字沿用 pleased",
+        "resolution": "改為 translate：promptZh「她對她的新家很滿意。」、hintWords [\"pleased\"]、referenceEn [\"She is pleased with her new home.\",\"She is very pleased with her new house.\"]、rubricZh [\"用 be pleased with 表示「對…滿意」\",\"「新家」可寫，例如 new home、new house 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 pleased 造一個句子，說說一件讓你很高興或滿意的事。」、referenceEn [\"I was pleased with my test results.\",\"I am pleased to hear the good news.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

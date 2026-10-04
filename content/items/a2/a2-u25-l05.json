@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u25-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "differently",
-      "instructionZh": "用 differently 造一個句子，說說你和別人做法或想法不同的地方。",
+      "type": "translate",
+      "promptZh": "我和我哥哥穿衣服的方式很不一樣。",
+      "hintWords": [
+        "differently"
+      ],
       "referenceEn": [
-        "My sister and I think differently about money.",
-        "I do my homework differently from my brother."
+        "My brother and I dress very differently.",
+        "My brother and I dress differently."
       ],
       "rubricZh": [
-        "differently 修飾動詞（例如 think differently）",
-        "「和⋯不同」可寫例如 differently from…"
+        "用 differently 表示「不同地」，放在動詞後（例如 dress differently）",
+        "「穿衣服的方式」可寫，例如 dress differently、wear clothes differently 等"
       ]
     }
   ],
@@ -278,6 +280,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：precise、principal 放不進 made of ___，改名詞 water、weather（實作端複核：metal、paper 代入也成立，不用）",
         "resolution": "改為 [\"水\", \"皮革\", \"天氣\", \"不同地\"]（原 [\"精確的\", \"皮革\", \"主要的\", \"不同地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（differently）原位換成翻譯題，沿用題 id a2-u25-l05-q17；目標字沿用 differently",
+        "resolution": "改為 translate：promptZh「我和我哥哥穿衣服的方式很不一樣。」、hintWords [\"differently\"]、referenceEn [\"My brother and I dress very differently.\",\"My brother and I dress differently.\"]、rubricZh [\"用 differently 表示「不同地」，放在動詞後（例如 dress differently）\",\"「穿衣服的方式」可寫，例如 dress differently、wear clothes differently 等\"]（原 makeSentence：instructionZh「用 differently 造一個句子，說說你和別人做法或想法不同的地方。」、referenceEn [\"My sister and I think differently about money.\",\"I do my homework differently from my brother.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

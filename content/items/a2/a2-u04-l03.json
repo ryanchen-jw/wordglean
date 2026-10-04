@@ -228,16 +228,19 @@
     },
     {
       "id": "a2-u04-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "send",
-      "instructionZh": "用 send 造一個句子，說說你最近寄給或傳給別人的東西。",
+      "type": "translate",
+      "promptZh": "我上個月寄了一張生日卡給我奶奶。",
+      "hintWords": [
+        "send"
+      ],
       "referenceEn": [
-        "I sent my mother some photos yesterday.",
-        "Last week, I sent a birthday card to my friend."
+        "I sent a birthday card to my grandmother last month.",
+        "Last month, I sent my grandmother a birthday card."
       ],
       "rubricZh": [
-        "說過去的事用 send 的過去式（例如 sent）",
-        "送的東西和對象可寫在 sent 後面（例如 sent my mother some photos、sent a card to my friend）"
+        "上個月的事用過去式（例如 sent）",
+        "寄給某人可寫，例如 sent a card to my grandmother、sent my grandmother a card 等",
+        "「奶奶」可寫，例如 grandmother、grandma 等"
       ]
     }
   ],
@@ -323,6 +326,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：appear、remain 與 q13 共用，改可接雙受詞的 draw、throw",
         "resolution": "改為 [\"傳送\", \"畫\", \"丟\", \"預計\"]（原 [\"傳送\", \"出現\", \"保持\", \"預計\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（send）原位換成翻譯題，沿用題 id a2-u04-l03-q17；目標字沿用 send",
+        "resolution": "改為 translate：promptZh「我上個月寄了一張生日卡給我奶奶。」、hintWords [\"send\"]、referenceEn [\"I sent a birthday card to my grandmother last month.\",\"Last month, I sent my grandmother a birthday card.\"]、rubricZh [\"上個月的事用過去式（例如 sent）\",\"寄給某人可寫，例如 sent a card to my grandmother、sent my grandmother a card 等\",\"「奶奶」可寫，例如 grandmother、grandma 等\"]（原 makeSentence：instructionZh「用 send 造一個句子，說說你最近寄給或傳給別人的東西。」、referenceEn [\"I sent my mother some photos yesterday.\",\"Last week, I sent a birthday card to my friend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

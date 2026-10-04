@@ -229,16 +229,19 @@
     },
     {
       "id": "a2-u05-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "reunion",
-      "instructionZh": "用 reunion 造一個句子，說說你參加過或想參加的團聚。",
+      "type": "translate",
+      "promptZh": "我們班十年後會辦一次同學會。",
+      "hintWords": [
+        "reunion"
+      ],
       "referenceEn": [
-        "We had a class reunion last year.",
-        "I hope to have a reunion with my old classmates."
+        "Our class will have a reunion in ten years.",
+        "Our class is going to have a reunion in ten years."
       ],
       "rubricZh": [
-        "reunion 是名詞（例如 a family reunion、a class reunion）",
-        "時態配合句意（例如 had、has、will have）"
+        "「同學會」可寫，例如 a reunion、a class reunion 等",
+        "未來的事用表示未來的寫法（例如 will、be going to 等）",
+        "「十年後」可寫，例如 in ten years 等"
       ]
     }
   ],
@@ -378,6 +381,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：anniversaries 是 q13 正解改 classmates；reunions 與 q13 共用改 adults",
         "resolution": "改為 [\"世代\", \"同班同學\", \"成年人\", \"資淺的人\"]（原 [\"世代\", \"週年紀念\", \"團聚\", \"資淺的人\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（reunion）原位換成翻譯題，沿用題 id a2-u05-l01-q17；目標字沿用 reunion",
+        "resolution": "改為 translate：promptZh「我們班十年後會辦一次同學會。」、hintWords [\"reunion\"]、referenceEn [\"Our class will have a reunion in ten years.\",\"Our class is going to have a reunion in ten years.\"]、rubricZh [\"「同學會」可寫，例如 a reunion、a class reunion 等\",\"未來的事用表示未來的寫法（例如 will、be going to 等）\",\"「十年後」可寫，例如 in ten years 等\"]（原 makeSentence：instructionZh「用 reunion 造一個句子，說說你參加過或想參加的團聚。」、referenceEn [\"We had a class reunion last year.\",\"I hope to have a reunion with my old classmates.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

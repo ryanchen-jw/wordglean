@@ -228,16 +228,19 @@
     },
     {
       "id": "a2-u04-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "return",
-      "instructionZh": "用 return 造一個句子，說說你要歸還的東西，或你要回去的地方。",
+      "type": "translate",
+      "promptZh": "他昨天把向我借的錢還給我了。",
+      "hintWords": [
+        "return"
+      ],
       "referenceEn": [
-        "I have to return these books by Friday.",
-        "I will return to Tainan next week."
+        "Yesterday he returned the money he had borrowed from me.",
+        "Yesterday, he returned the money that he borrowed from me."
       ],
       "rubricZh": [
-        "return 可表示「歸還」（例如 return the books）或「返回」（例如 return to Tainan）",
-        "返回某地要加 to（例如 return to Tainan；return home 不加 to）"
+        "用 return 表示「歸還」，昨天的事用過去式（例如 returned）",
+        "「向我借的錢」可寫，例如 the money he borrowed from me、the money that he borrowed from me 等",
+        "寫 returned the money to me、returned my money 也正確"
       ]
     }
   ],
@@ -347,6 +350,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Can you send me the salt, please? 只看英文可成立（寄鹽給我）；換成 lose，Can you lose me the salt 語意不通",
         "resolution": "改為 [\"弄丟\", \"允許\", \"遞給\", \"灑出\"]（原 [\"寄；傳送\", \"允許\", \"遞給\", \"灑出\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（return）原位換成翻譯題，沿用題 id a2-u04-l04-q17；目標字沿用 return",
+        "resolution": "改為 translate：promptZh「他昨天把向我借的錢還給我了。」、hintWords [\"return\"]、referenceEn [\"He returned the money he borrowed from me yesterday.\",\"Yesterday, he returned the money that he borrowed from me.\"]、rubricZh [\"用 return 表示「歸還」，昨天的事用過去式（例如 returned）\",\"「向我借的錢」可寫，例如 the money he borrowed from me、the money that he borrowed from me 等\",\"寫 returned the money to me、returned my money 也正確\"]（原 makeSentence：instructionZh「用 return 造一個句子，說說你要歸還的東西，或你要回去的地方。」、referenceEn [\"I have to return these books by Friday.\",\"I will return to Tainan next week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 1 的 yesterday 可讀成修飾 borrowed（昨天借的），改成 yesterday 放句首",
+        "resolution": "referenceEn 改為 [\"Yesterday he returned the money he had borrowed from me.\",\"Yesterday, he returned the money that he borrowed from me.\"]（原 [\"He returned the money he borrowed from me yesterday.\",\"Yesterday, he returned the money that he borrowed from me.\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

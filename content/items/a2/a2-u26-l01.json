@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u26-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "survive",
-      "instructionZh": "用 survive 造一個句子，說說某種動物或植物怎麼活下來。",
+      "type": "translate",
+      "promptZh": "有些植物不需要很多水也能存活。",
+      "hintWords": [
+        "survive"
+      ],
       "referenceEn": [
-        "Some plants can survive the cold winter.",
-        "Fish can't survive out of water."
+        "Some plants can survive without much water.",
+        "Some plants can survive with very little water."
       ],
       "rubricZh": [
-        "survive 可直接接名詞（例如 survive the winter）或單獨使用",
-        "can／can't＋原形動詞（例如 can survive）"
+        "用 survive 表示「存活」（例如 can survive）",
+        "「不需要很多水」可寫，例如 without much water、with very little water 等"
       ]
     }
   ],
@@ -386,6 +388,12 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX 連動：第一義改為動詞「傳播」，干擾項改成同詞性動詞，避免詞性洩題",
         "resolution": "改為 [\"收集\", \"打破\", \"藏起來\"]（原 [\"價格\", \"顏色\", \"聲音\"]）",
         "resolvedAt": "2026-10-02T21:00:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（survive）原位換成翻譯題，沿用題 id a2-u26-l01-q17；目標字沿用 survive",
+        "resolution": "改為 translate：promptZh「有些植物不需要很多水也能存活。」、hintWords [\"survive\"]、referenceEn [\"Some plants can survive without much water.\",\"Some plants can survive with very little water.\"]、rubricZh [\"用 survive 表示「存活」（例如 can survive）\",\"「不需要很多水」可寫，例如 without much water、with very little water 等\"]（原 makeSentence：instructionZh「用 survive 造一個句子，說說某種動物或植物怎麼活下來。」、referenceEn [\"Some plants can survive the cold winter.\",\"Fish can't survive out of water.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

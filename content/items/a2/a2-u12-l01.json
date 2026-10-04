@@ -244,16 +244,19 @@
     },
     {
       "id": "a2-u12-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "country",
-      "instructionZh": "用 country 造一個句子，說說你去過或想去的國家。",
+      "type": "translate",
+      "promptZh": "這個國家有很多高山。",
+      "hintWords": [
+        "country"
+      ],
       "referenceEn": [
-        "I want to visit a country in Europe someday.",
-        "Japan is my favorite country to visit."
+        "This country has many high mountains.",
+        "There are a lot of high mountains in this country."
       ],
       "rubricZh": [
-        "country 是可數名詞（例如 a country、many countries）",
-        "時態配合句意（例如 want、is、have visited）"
+        "用 country 表示「國家」",
+        "「有很多」可寫，例如 has many、There are a lot of 等",
+        "「高山」可寫，例如 high mountains、tall mountains 等"
       ]
     }
   ],
@@ -357,6 +360,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：statue、aisle 與 q14 共用且放不進 famous ____ 的副詞位置，改 easily、carefully（能代入、靠詞義排除；地點副詞如 downtown 會變也對故不用）",
         "resolution": "改為 [\"在全世界\", \"輕易地\", \"室內的\", \"小心地\"]（原 [\"在全世界\", \"雕像\", \"室內的\", \"走道\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（country）原位換成翻譯題，沿用題 id a2-u12-l01-q18；目標字沿用 country",
+        "resolution": "改為 translate：promptZh「這個國家有很多高山。」、hintWords [\"country\"]、referenceEn [\"This country has many high mountains.\",\"There are a lot of high mountains in this country.\"]、rubricZh [\"用 country 表示「國家」\",\"「有很多」可寫，例如 has many、There are a lot of 等\",\"「高山」可寫，例如 high mountains、tall mountains 等\"]（原 makeSentence：instructionZh「用 country 造一個句子，說說你去過或想去的國家。」、referenceEn [\"I want to visit a country in Europe someday.\",\"Japan is my favorite country to visit.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

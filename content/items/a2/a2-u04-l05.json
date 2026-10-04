@@ -230,16 +230,18 @@
     },
     {
       "id": "a2-u04-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "produce",
-      "instructionZh": "用 produce 造一個句子，說說某個地方或工廠生產什麼。",
+      "type": "translate",
+      "promptZh": "這些香蕉是台灣生產的。",
+      "hintWords": [
+        "produce"
+      ],
       "referenceEn": [
-        "Taiwan produces a lot of fruit.",
-        "This factory produces shoes."
+        "These bananas are produced in Taiwan.",
+        "These bananas were produced in Taiwan."
       ],
       "rubricZh": [
-        "produce 後面接產品（例如 produces shoes）",
-        "主詞是第三人稱單數時動詞要加 s（例如 produces）"
+        "用 produce 表示「生產」，可用被動寫法（例如 are produced、were produced 等）",
+        "寫成主動（例如 Taiwan produces these bananas）也正確"
       ]
     }
   ],
@@ -319,6 +321,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lands 是 q13 正解，改本單元 pulls",
         "resolution": "改為 [\"打\", \"尋找\", \"拉\", \"代表\"]（原 [\"打\", \"尋找\", \"降落\", \"代表\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（produce）原位換成翻譯題，沿用題 id a2-u04-l05-q17；目標字沿用 produce",
+        "resolution": "改為 translate：promptZh「這些香蕉是台灣生產的。」、hintWords [\"produce\"]、referenceEn [\"These bananas are produced in Taiwan.\",\"These bananas were produced in Taiwan.\"]、rubricZh [\"用 produce 表示「生產」，可用被動寫法（例如 are produced、were produced 等）\",\"寫成主動（例如 Taiwan produces these bananas）也正確\"]（原 makeSentence：instructionZh「用 produce 造一個句子，說說某個地方或工廠生產什麼。」、referenceEn [\"Taiwan produces a lot of fruit.\",\"This factory produces shoes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

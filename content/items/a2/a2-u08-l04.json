@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u08-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "furniture",
-      "instructionZh": "用 furniture 造一個句子，說說你家的傢俱。",
+      "type": "translate",
+      "promptZh": "我們搬家時，把舊傢俱送給了鄰居。",
+      "hintWords": [
+        "furniture"
+      ],
       "referenceEn": [
-        "We don't have much furniture in our small apartment.",
-        "Our furniture is old, but it is very comfortable."
+        "When we moved, we gave our old furniture to our neighbor.",
+        "We gave our old furniture to our neighbors when we moved."
       ],
       "rubricZh": [
-        "furniture 是不可數名詞（例如 some furniture、much furniture，不寫 furnitures）",
-        "說「一件傢俱」可寫 a piece of furniture"
+        "furniture 不可數，不加 s（例如 our old furniture）",
+        "過去的事用過去式（例如 moved、gave 等）",
+        "「鄰居」單數、複數都可以（例如 neighbor、neighbors 等）"
       ]
     }
   ],
@@ -346,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lock 是 q13 正解，改本單元 mirror",
         "resolution": "改為 [\"電動的\", \"傢俱\", \"水槽\", \"鏡子\"]（原 [\"電動的\", \"傢俱\", \"水槽\", \"鎖\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（furniture）原位換成翻譯題，沿用題 id a2-u08-l04-q17；目標字沿用 furniture",
+        "resolution": "改為 translate：promptZh「我們搬家時，把舊傢俱送給了鄰居。」、hintWords [\"furniture\"]、referenceEn [\"When we moved, we gave our old furniture to our neighbor.\",\"We gave our old furniture to our neighbors when we moved.\"]、rubricZh [\"furniture 不可數，不加 s（例如 our old furniture）\",\"過去的事用過去式（例如 moved、gave 等）\",\"「鄰居」單數、複數都可以（例如 neighbor、neighbors 等）\"]（原 makeSentence：instructionZh「用 furniture 造一個句子，說說你家的傢俱。」、referenceEn [\"We don't have much furniture in our small apartment.\",\"Our furniture is old, but it is very comfortable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

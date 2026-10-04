@@ -216,16 +216,18 @@
     },
     {
       "id": "a2-u13-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "guidebook",
-      "instructionZh": "用 guidebook 造一個句子，說說你旅行時怎麼用旅遊指南。",
+      "type": "translate",
+      "promptZh": "這本旅遊指南裡有很多地圖。",
+      "hintWords": [
+        "guidebook"
+      ],
       "referenceEn": [
-        "I always read a guidebook before a trip.",
-        "I use my guidebook to find good restaurants."
+        "This guidebook has a lot of maps.",
+        "There are many maps in this guidebook."
       ],
       "rubricZh": [
-        "guidebook 是可數名詞（例如 a guidebook、my guidebook）",
-        "時態配合句意（例如 read、use）"
+        "用 guidebook 表示「旅遊指南」",
+        "「有很多地圖」可寫，例如 has a lot of maps、There are many maps 等"
       ]
     }
   ],
@@ -377,6 +379,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：downtown 代入「Let's go downtown in the old town this afternoon.」英文說得通（老城區可能就是市中心），換成 tonight：「go tonight ... this afternoon」時間自相矛盾，語意不通",
         "resolution": "改為 [\"今晚\", \"到國外\", \"路面電車\", \"觀光\"]（原 [\"往市中心\", \"到國外\", \"路面電車\", \"觀光\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（guidebook）原位換成翻譯題，沿用題 id a2-u13-l04-q16；目標字沿用 guidebook",
+        "resolution": "改為 translate：promptZh「這本旅遊指南裡有很多地圖。」、hintWords [\"guidebook\"]、referenceEn [\"This guidebook has a lot of maps.\",\"There are many maps in this guidebook.\"]、rubricZh [\"用 guidebook 表示「旅遊指南」\",\"「有很多地圖」可寫，例如 has a lot of maps、There are many maps 等\"]（原 makeSentence：instructionZh「用 guidebook 造一個句子，說說你旅行時怎麼用旅遊指南。」、referenceEn [\"I always read a guidebook before a trip.\",\"I use my guidebook to find good restaurants.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

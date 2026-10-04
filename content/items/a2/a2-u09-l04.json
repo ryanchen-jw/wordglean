@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u09-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "retired",
-      "instructionZh": "用 retired 造一個句子，說說一位已經退休的家人或朋友。",
+      "type": "translate",
+      "promptZh": "那位退休的老師現在住在鄉下。",
+      "hintWords": [
+        "retired"
+      ],
       "referenceEn": [
-        "My retired father likes to cook for us.",
-        "My grandmother is retired and lives by the sea."
+        "The retired teacher now lives in the countryside.",
+        "That retired teacher lives in the countryside now."
       ],
       "rubricZh": [
-        "retired 是形容詞（例如 is retired、my retired father）",
-        "主詞和動詞要搭配（例如 My grandmother is）"
+        "用 retired 表示「退休的」，放在名詞前（例如 retired teacher）",
+        "現在的狀態用現在簡單式，動詞加 s（例如 lives）",
+        "「鄉下」可寫，例如 the countryside、the country 等"
       ]
     }
   ],
@@ -382,6 +385,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：diary 是 q13 正解改 clerk；retired、sleepless 為形容詞放不進 a ____，改 manager、secretary 成四選項同詞性",
         "resolution": "改為 [\"店員\", \"職業選手\", \"經理\", \"秘書\"]（原 [\"日記\", \"職業選手\", \"退休的\", \"睡不著的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（retired）原位換成翻譯題，沿用題 id a2-u09-l04-q17；目標字沿用 retired",
+        "resolution": "改為 translate：promptZh「那位退休的老師現在住在鄉下。」、hintWords [\"retired\"]、referenceEn [\"The retired teacher now lives in the countryside.\",\"That retired teacher lives in the countryside now.\"]、rubricZh [\"用 retired 表示「退休的」，放在名詞前（例如 retired teacher）\",\"現在的狀態用現在簡單式，動詞加 s（例如 lives）\",\"「鄉下」可寫，例如 the countryside、the country 等\"]（原 makeSentence：instructionZh「用 retired 造一個句子，說說一位已經退休的家人或朋友。」、referenceEn [\"My retired father likes to cook for us.\",\"My grandmother is retired and lives by the sea.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

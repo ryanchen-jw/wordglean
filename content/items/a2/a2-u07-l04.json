@@ -215,16 +215,19 @@
     },
     {
       "id": "a2-u07-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "handbag",
-      "instructionZh": "用 handbag 造一個句子，說說你或家人的手提包裡放了什麼。",
+      "type": "translate",
+      "promptZh": "我在公車上撿到一個黑色的手提包。",
+      "hintWords": [
+        "handbag"
+      ],
       "referenceEn": [
-        "I always keep a small mirror in my handbag.",
-        "My mother always has keys and a mirror in her handbag."
+        "I found a black handbag on the bus.",
+        "On the bus, I found a black handbag."
       ],
       "rubricZh": [
-        "handbag 是可數名詞（例如 my handbag、her handbag）",
-        "可寫例如 in my handbag、inside my handbag；寫 My handbag has … 也正確"
+        "用 handbag 表示「手提包」",
+        "時態可用過去式或現在完成式（例如 found、picked up、have found 等）",
+        "「在公車上」可寫，例如 on the bus 等，放句首或句尾都可以"
       ]
     }
   ],
@@ -328,6 +331,18 @@
         "message": "執行長裁示：正解長度名次分布：a2-u07-l04-q14#1 目標第 3 長、消除單題異常值（改了選項 1）",
         "resolution": "改為 [\"Nina 的媽媽和姊姊\",\"游泳池櫃台的工作人員\",\"她的朋友 Kate\"]（原 [\"她的媽媽\",\"游泳池櫃台的工作人員\",\"她的朋友 Kate\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（handbag）原位換成翻譯題，沿用題 id a2-u07-l04-q16；目標字沿用 handbag",
+        "resolution": "改為 translate：promptZh「我在公車上撿到一個黑色的手提包。」、hintWords [\"handbag\"]、referenceEn [\"I found a black handbag on the bus.\",\"On the bus, I found a black handbag.\"]、rubricZh [\"用 handbag 表示「手提包」\",\"「撿到」用過去式（例如 found、picked up 等）\",\"「在公車上」可寫，例如 on the bus 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 handbag 造一個句子，說說你或家人的手提包裡放了什麼。」、referenceEn [\"I always keep a small mirror in my handbag.\",\"My mother always has keys and a mirror in her handbag.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：FIX 中文沒有時間詞，要點只收過去式會判錯現在完成式（§11.18、§12.11）",
+        "resolution": "rubricZh 改為 [\"用 handbag 表示「手提包」\",\"時態可用過去式或現在完成式（例如 found、picked up、have found 等）\",\"「在公車上」可寫，例如 on the bus 等，放句首或句尾都可以\"]（原 [\"用 handbag 表示「手提包」\",\"「撿到」用過去式（例如 found、picked up 等）\",\"「在公車上」可寫，例如 on the bus 等，放句首或句尾都可以\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

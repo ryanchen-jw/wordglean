@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u19-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "freedom",
-      "instructionZh": "用 freedom 造一個句子，說說你想要哪一種自由。",
+      "type": "translate",
+      "promptZh": "上大學以後，我有了更多自由。",
+      "hintWords": [
+        "freedom"
+      ],
       "referenceEn": [
-        "I want more freedom to choose my own clothes.",
-        "I want the freedom to travel alone."
+        "After I started university, I had more freedom.",
+        "I had more freedom after I went to university."
       ],
       "rubricZh": [
-        "freedom 是不可數名詞（例如 more freedom、a lot of freedom）",
-        "可寫例如 freedom to＋原形動詞"
+        "用 freedom 表示「自由」（例如 more freedom）",
+        "過去的事用過去式（例如 had）；寫 have more freedom 也正確",
+        "「上大學」可寫，例如 started university、went to university、went to college 等"
       ]
     }
   ],
@@ -380,6 +383,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：murder 是 q14 正解，改 crime",
         "resolution": "改為 [\"緊急情況\", \"自由\", \"犯罪\", \"委員會\"]（原 [\"緊急情況\", \"自由\", \"謀殺\", \"委員會\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（freedom）原位換成翻譯題，沿用題 id a2-u19-l03-q17；目標字沿用 freedom",
+        "resolution": "改為 translate：promptZh「上大學以後，我有了更多自由。」、hintWords [\"freedom\"]、referenceEn [\"After I started university, I had more freedom.\",\"I had more freedom after I went to university.\"]、rubricZh [\"用 freedom 表示「自由」（例如 more freedom）\",\"過去的事用過去式（例如 had）；寫 have more freedom 也正確\",\"「上大學」可寫，例如 started university、went to university、went to college 等\"]（原 makeSentence：instructionZh「用 freedom 造一個句子，說說你想要哪一種自由。」、referenceEn [\"I want more freedom to choose my own clothes.\",\"I want the freedom to travel alone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

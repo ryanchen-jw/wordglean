@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u26-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "bother",
-      "instructionZh": "用 bother 造一個句子，說說什麼事會打擾你，或客氣地打擾別人。",
+      "type": "translate",
+      "promptZh": "天氣熱不會讓我困擾。",
+      "hintWords": [
+        "bother"
+      ],
       "referenceEn": [
-        "Noise bothers me when I study.",
-        "My little brother always bothers me."
+        "Hot weather doesn't bother me.",
+        "The hot weather doesn't bother me."
       ],
       "rubricZh": [
-        "bother 可接人當受詞（例如 bothers me）",
-        "客氣說法可寫例如 Sorry to bother you"
+        "用 bother 表示「使困擾」（例如 doesn't bother me）",
+        "否定配合主詞（例如 Hot weather doesn't bother me、Hot days don't bother me 等）"
       ]
     }
   ],
@@ -303,6 +305,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：passage 是 q12 正解；display 放不進空格，改可接 of 的動詞 speaks、thinks（靠詞義排除）",
         "resolution": "改為 [\"說\", \"組成\", \"投影片\", \"想\"]（原 [\"展示\", \"組成\", \"投影片\", \"通道\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（bother）原位換成翻譯題，沿用題 id a2-u26-l05-q16；目標字沿用 bother",
+        "resolution": "改為 translate：promptZh「天氣熱不會讓我困擾。」、hintWords [\"bother\"]、referenceEn [\"Hot weather doesn't bother me.\",\"The hot weather doesn't bother me.\"]、rubricZh [\"用 bother 表示「使困擾」（例如 doesn't bother me）\",\"主詞是單數，否定用 doesn't\"]（原 makeSentence：instructionZh「用 bother 造一個句子，說說什麼事會打擾你，或客氣地打擾別人。」、referenceEn [\"Noise bothers me when I study.\",\"My little brother always bothers me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 要點寫死單數主詞＋doesn't，會判錯 Hot days don't bother me",
+        "resolution": "rubricZh 改為 [\"用 bother 表示「使困擾」（例如 doesn't bother me）\",\"否定配合主詞（例如 Hot weather doesn't bother me、Hot days don't bother me 等）\"]（原 [\"用 bother 表示「使困擾」（例如 doesn't bother me）\",\"主詞是單數，否定用 doesn't\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

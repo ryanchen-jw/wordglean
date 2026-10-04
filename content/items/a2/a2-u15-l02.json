@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u15-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "hero",
-      "instructionZh": "用 hero 造一個句子，說說你心中的英雄是誰，或你喜歡的故事主角。",
+      "type": "translate",
+      "promptZh": "這部電影的主角是一隻小狗。",
+      "hintWords": [
+        "hero"
+      ],
       "referenceEn": [
-        "My grandmother is my hero because she is so brave.",
-        "The hero of my favorite book is a young farmer."
+        "The hero of this movie is a little dog.",
+        "This movie's hero is a small dog."
       ],
       "rubricZh": [
-        "hero 表示「英雄；主角」（例如 my hero、the hero of the book）",
-        "可用 because 說明原因（例如 because she is so brave）"
+        "用 hero 表示「（故事的）主角」（例如 the hero of this movie、this movie's hero 等）",
+        "「電影」可寫，例如 movie、film 等"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hero 與 q13 共用，改本單元名詞 hike",
         "resolution": "改為 [\"健行\", \"音樂的\", \"興趣\", \"節奏\"]（原 [\"英雄\", \"音樂的\", \"興趣\", \"節奏\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hero）原位換成翻譯題，沿用題 id a2-u15-l02-q17；目標字沿用 hero",
+        "resolution": "改為 translate：promptZh「這部電影的主角是一隻小狗。」、hintWords [\"hero\"]、referenceEn [\"The hero of this movie is a little dog.\",\"This movie's hero is a small dog.\"]、rubricZh [\"用 hero 表示「（故事的）主角」（例如 the hero of this movie、this movie's hero 等）\",\"「電影」可寫，例如 movie、film 等\"]（原 makeSentence：instructionZh「用 hero 造一個句子，說說你心中的英雄是誰，或你喜歡的故事主角。」、referenceEn [\"My grandmother is my hero because she is so brave.\",\"The hero of my favorite book is a young farmer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

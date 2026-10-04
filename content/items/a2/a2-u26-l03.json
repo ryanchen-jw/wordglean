@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u26-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "pursue",
-      "instructionZh": "用 pursue 造一個句子，說說你或別人想追求的夢想或目標。",
+      "type": "translate",
+      "promptZh": "我們應該追求快樂，而不是錢。",
+      "hintWords": [
+        "pursue"
+      ],
       "referenceEn": [
-        "I want to pursue my dream of becoming a singer.",
-        "My sister is pursuing her interest in art."
+        "We should pursue happiness, not money.",
+        "We should pursue happiness instead of money."
       ],
       "rubricZh": [
-        "pursue 後面接夢想或目標（例如 pursue a dream、pursue her interest）",
-        "可寫例如 want to pursue、is pursuing"
+        "用 pursue 表示「追求」",
+        "「而不是」可寫，例如 not money、instead of money、rather than money 等"
       ]
     }
   ],
@@ -310,6 +312,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：blame 與 q13 共用、organize 是 q13 正解，改名詞 mark、instrument（可放 My bike ___）",
         "resolution": "改為 [\"鏈條\", \"屬於\", \"記號\", \"儀器\"]（原 [\"鏈條\", \"屬於\", \"責怪\", \"整理\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pursue）原位換成翻譯題，沿用題 id a2-u26-l03-q17；目標字沿用 pursue",
+        "resolution": "改為 translate：promptZh「我們應該追求快樂，而不是錢。」、hintWords [\"pursue\"]、referenceEn [\"We should pursue happiness, not money.\",\"We should pursue happiness instead of money.\"]、rubricZh [\"用 pursue 表示「追求」\",\"「而不是」可寫，例如 not money、instead of money、rather than money 等\"]（原 makeSentence：instructionZh「用 pursue 造一個句子，說說你或別人想追求的夢想或目標。」、referenceEn [\"I want to pursue my dream of becoming a singer.\",\"My sister is pursuing her interest in art.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

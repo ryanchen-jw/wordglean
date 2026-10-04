@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u20-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "criticize",
-      "instructionZh": "用 criticize 造一個句子，說說被批評或批評別人的經驗。",
+      "type": "translate",
+      "promptZh": "那部新電影被很多人批評。",
+      "hintWords": [
+        "criticize"
+      ],
       "referenceEn": [
-        "My coach criticized my running.",
-        "My friend criticized my drawing last week."
+        "The new movie was criticized by many people.",
+        "Many people criticized the new movie."
       ],
       "rubricZh": [
-        "criticize 後面直接接人或事物（例如 criticize my friends）",
-        "時態配合句意（例如 criticized、criticize）"
+        "用 criticize 表示「批評」，主動或被動寫法都可以",
+        "時態可用過去式、現在完成式或現在式（例如 was criticized、has been criticized、is criticized 等）"
       ]
     }
   ],
@@ -329,6 +331,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；縮寫照實際寫法大寫：只看英文：My teacher paid／chose me to read more English books 都說得通，換成本單元的 argued、shouted（後面不能直接接 me to，文法不通）；pc 照實際寫法改 PC。能接「動詞＋me to 讀書」的字代入都說得通，這題做不到「兩個干擾項放得進空格」，比照 a1-u02-l03-q14 請求豁免",
         "resolution": "改為 [\"爭論\", \"大聲喊\", \"個人電腦\", \"建議\"]（原 [\"付錢\", \"選擇\", \"個人電腦\", \"建議\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（criticize）原位換成翻譯題，沿用題 id a2-u20-l05-q17；目標字沿用 criticize",
+        "resolution": "改為 translate：promptZh「那部新電影被很多人批評。」、hintWords [\"criticize\"]、referenceEn [\"The new movie was criticized by many people.\",\"Many people criticized the new movie.\"]、rubricZh [\"用 criticize 表示「批評」，過去的事用過去式（例如 was criticized、criticized 等）\",\"主動或被動寫法都可以；時態用現在式（例如 is criticized）也正確\"]（原 makeSentence：instructionZh「用 criticize 造一個句子，說說被批評或批評別人的經驗。」、referenceEn [\"My coach criticized my running.\",\"My friend criticized my drawing last week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：自查同類（中文沒有時間詞，要點只收過去式與現在式）：加收現在完成式（§12.11）",
+        "resolution": "rubricZh 改為 [\"用 criticize 表示「批評」，主動或被動寫法都可以\",\"時態可用過去式、現在完成式或現在式（例如 was criticized、has been criticized、is criticized 等）\"]（原 [\"用 criticize 表示「批評」，過去的事用過去式（例如 was criticized、criticized 等）\",\"主動或被動寫法都可以；時態用現在式（例如 is criticized）也正確\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

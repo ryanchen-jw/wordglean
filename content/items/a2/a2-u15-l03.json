@@ -214,16 +214,19 @@
     },
     {
       "id": "a2-u15-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "walking",
-      "instructionZh": "用 walking 造一個句子，說說你什麼時候或在哪裡散步。",
+      "type": "translate",
+      "promptZh": "我爸爸喜歡在河邊散步。",
+      "hintWords": [
+        "walking"
+      ],
       "referenceEn": [
-        "I go walking in the park after dinner.",
-        "Walking with my dog is the best part of my day."
+        "My father likes walking by the river.",
+        "My dad enjoys walking along the river."
       ],
       "rubricZh": [
-        "walking 當名詞表示「散步」（例如 go walking、Walking is…）",
-        "walking 當主詞時，動詞用單數（例如 Walking is）"
+        "用 walking 表示「散步」（例如 likes walking、enjoys walking 等）",
+        "主詞是單數，動詞加 s（例如 likes、enjoys 等）",
+        "「在河邊」可寫，例如 by the river、along the river 等"
       ]
     }
   ],
@@ -315,6 +318,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：tune、romance 與 q12 共用、dancer 是 q12 正解；改本單元 magic、musical（形容詞可代入）與 balloon",
         "resolution": "改為 [\"魔法的\", \"神秘的\", \"音樂的\", \"氣球\"]（原 [\"曲調\", \"神秘的\", \"愛情故事\", \"舞者\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（walking）原位換成翻譯題，沿用題 id a2-u15-l03-q16；目標字沿用 walking",
+        "resolution": "改為 translate：promptZh「我爸爸喜歡在河邊散步。」、hintWords [\"walking\"]、referenceEn [\"My father likes walking by the river.\",\"My dad enjoys walking along the river.\"]、rubricZh [\"用 walking 表示「散步」（例如 likes walking、enjoys walking 等）\",\"主詞是單數，動詞加 s（例如 likes、enjoys 等）\",\"「在河邊」可寫，例如 by the river、along the river 等\"]（原 makeSentence：instructionZh「用 walking 造一個句子，說說你什麼時候或在哪裡散步。」、referenceEn [\"I go walking in the park after dinner.\",\"Walking with my dog is the best part of my day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

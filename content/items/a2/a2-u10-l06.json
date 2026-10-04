@@ -212,16 +212,18 @@
     },
     {
       "id": "a2-u10-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "fried",
-      "instructionZh": "用 fried 造一個句子，說說你喜歡或不喜歡的一種油炸食物。",
+      "type": "translate",
+      "promptZh": "我不太喜歡油炸的食物。",
+      "hintWords": [
+        "fried"
+      ],
       "referenceEn": [
-        "I love fried chicken.",
-        "I don't like fried fish."
+        "I don't really like fried food.",
+        "I don't like fried food very much."
       ],
       "rubricZh": [
-        "fried 常放在食物前（例如 fried chicken），也可放在 be 動詞後（例如 The chicken was fried.）",
-        "說喜不喜歡可寫例如 I love…、I don't like…"
+        "用 fried 表示「油炸的」，放在名詞前（例如 fried food）",
+        "「不太喜歡」可寫，例如 don't really like、don't like…very much 等"
       ]
     }
   ],
@@ -367,6 +369,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：ham 與 q13 共用，改本單元字 jam",
         "resolution": "改為 [\"穀片\", \"香檳\", \"吐司\", \"果醬\"]（原 [\"穀片\", \"香檳\", \"吐司\", \"火腿\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（fried）原位換成翻譯題，沿用題 id a2-u10-l06-q16；目標字沿用 fried",
+        "resolution": "改為 translate：promptZh「我不太喜歡油炸的食物。」、hintWords [\"fried\"]、referenceEn [\"I don't really like fried food.\",\"I don't like fried food very much.\"]、rubricZh [\"用 fried 表示「油炸的」，放在名詞前（例如 fried food）\",\"「不太喜歡」可寫，例如 don't really like、don't like…very much 等\"]（原 makeSentence：instructionZh「用 fried 造一個句子，說說你喜歡或不喜歡的一種油炸食物。」、referenceEn [\"I love fried chicken.\",\"I don't like fried fish.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

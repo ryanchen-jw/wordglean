@@ -213,17 +213,18 @@
     },
     {
       "id": "a2-u02-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "regular",
-      "instructionZh": "用 regular 造一個句子，說說你規律在做的一件事。",
+      "type": "translate",
+      "promptZh": "這家咖啡店有很多常客。",
+      "hintWords": [
+        "regular"
+      ],
       "referenceEn": [
-        "I go to bed at a regular time every night.",
-        "I do regular exercise in the park."
+        "This cafe has many regular customers.",
+        "There are a lot of regular customers at this cafe."
       ],
       "rubricZh": [
-        "regular 表示「規律的、定期的」，可放在名詞前（例如 regular exercise）或 be 動詞後",
-        "說平常的習慣用現在式（例如 go、do）",
-        "句子說的是自己的事，主詞是 I"
+        "「常客」可寫，例如 regular customers 等",
+        "「有很多」可寫，例如 has many、There are a lot of 等"
       ]
     }
   ],
@@ -327,6 +328,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：final、regular 是形容詞放不進句尾，改副詞 finally、again",
         "resolution": "改為 [\"終於\", \"最近的\", \"再一次\", \"最近\"]（原 [\"最後的\", \"最近的\", \"規律的\", \"最近\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（regular）原位換成翻譯題，沿用題 id a2-u02-l02-q16；目標字沿用 regular",
+        "resolution": "改為 translate：promptZh「這家咖啡店有很多常客。」、hintWords [\"regular\"]、referenceEn [\"This cafe has many regular customers.\",\"There are a lot of regular customers at this cafe.\"]、rubricZh [\"「常客」可寫，例如 regular customers 等\",\"「有很多」可寫，例如 has many、There are a lot of 等\"]（原 makeSentence：instructionZh「用 regular 造一個句子，說說你規律在做的一件事。」、referenceEn [\"I go to bed at a regular time every night.\",\"I do regular exercise in the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

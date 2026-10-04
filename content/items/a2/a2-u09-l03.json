@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u09-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "boss",
-      "instructionZh": "用 boss 造一個句子，說說你或家人的老闆。",
+      "type": "translate",
+      "promptZh": "我的新老闆比我年輕。",
+      "hintWords": [
+        "boss"
+      ],
       "referenceEn": [
-        "My boss is very kind to everyone.",
-        "My mother's boss never comes to work late."
+        "My new boss is younger than me.",
+        "My new boss is younger than I am."
       ],
       "rubricZh": [
-        "boss 是可數名詞（例如 my boss、her boss）",
-        "主詞第三人稱單數時動詞加 s（例如 comes）"
+        "用 boss 表示「老闆」",
+        "比較用 younger than（例如 younger than me、younger than I am 等）"
       ]
     }
   ],
@@ -461,6 +463,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：work 已在他課當非本單元干擾項，改本單元字 earn",
         "resolution": "改為 [\"賺錢\", \"訓練\", \"退休\", \"趕快\"]（原 [\"工作\", \"訓練\", \"退休\", \"趕快\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（boss）原位換成翻譯題，沿用題 id a2-u09-l03-q17；目標字沿用 boss",
+        "resolution": "改為 translate：promptZh「我的新老闆比我年輕。」、hintWords [\"boss\"]、referenceEn [\"My new boss is younger than me.\",\"My new boss is younger than I am.\"]、rubricZh [\"用 boss 表示「老闆」\",\"比較用 younger than（例如 younger than me、younger than I am 等）\"]（原 makeSentence：instructionZh「用 boss 造一個句子，說說你或家人的老闆。」、referenceEn [\"My boss is very kind to everyone.\",\"My mother's boss never comes to work late.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -219,31 +219,34 @@
     {
       "id": "a2-u12-l04-q16",
       "type": "translate",
-      "promptZh": "我哥哥明年要出國工作。",
+      "promptZh": "我表姊在國外讀書。",
       "hintWords": [
         "abroad"
       ],
       "referenceEn": [
-        "My brother will work abroad next year.",
-        "My older brother is going to work abroad next year."
+        "My cousin studies abroad.",
+        "My cousin is studying abroad."
       ],
       "rubricZh": [
-        "「出國」用 abroad，前面不加 to（例如 work abroad、go abroad）",
-        "未來的事可寫例如 will、be going to"
+        "用 abroad 表示「在國外」，abroad 前面不加 in",
+        "時態可用現在簡單式或現在進行式（例如 studies、is studying 等）",
+        "「表姊」可寫，例如 cousin 等"
       ]
     },
     {
       "id": "a2-u12-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "entrance",
-      "instructionZh": "用 entrance 造一個句子，告訴別人在哪個入口見面，或入口在哪裡。",
+      "type": "translate",
+      "promptZh": "這間博物館有兩個入口。",
+      "hintWords": [
+        "entrance"
+      ],
       "referenceEn": [
-        "You can find the entrance behind the building.",
-        "Let's meet at the north entrance of the park."
+        "This museum has two entrances.",
+        "There are two entrances to this museum."
       ],
       "rubricZh": [
-        "entrance 是名詞「入口」（例如 the entrance to the park、the north entrance）",
-        "「在入口」可用 at（例如 at the north entrance）"
+        "用 entrance 表示「入口」，兩個以上用複數（例如 two entrances）",
+        "「有」可寫，例如 has、There are 等"
       ]
     }
   ],
@@ -371,6 +374,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：abroad、royal 放不進 the side ____ 名詞位置，改本單元名詞 bench、statue，成四選項同詞性",
         "resolution": "改為 [\"長椅\", \"入口\", \"雕像\", \"建築\"]（原 [\"到國外\", \"入口\", \"王室的\", \"建築\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（entrance）原位換成翻譯題，沿用題 id a2-u12-l04-q17；目標字沿用 entrance",
+        "resolution": "改為 translate：promptZh「這間博物館有兩個入口。」、hintWords [\"entrance\"]、referenceEn [\"This museum has two entrances.\",\"There are two entrances to this museum.\"]、rubricZh [\"用 entrance 表示「入口」，兩個以上用複數（例如 two entrances）\",\"「有」可寫，例如 has、There are 等\"]（原 makeSentence：instructionZh「用 entrance 造一個句子，告訴別人在哪個入口見面，或入口在哪裡。」、referenceEn [\"You can find the entrance behind the building.\",\"Let's meet at the north entrance of the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u12-l05-q16（three hundred years old）共用 old、year（selfcheck-translate 字面 40%）；改本題（abroad 另有跟讀題情境，a2-u12-l05-q16 是 mosque 唯一翻譯情境，保留）",
+        "resolution": "改為 promptZh「我表姊在國外讀書。」、referenceEn [\"My cousin studies abroad.\",\"My cousin is studying abroad.\"]、rubricZh [\"用 abroad 表示「在國外」，abroad 前面不加 in\",\"時態可用現在簡單式或現在進行式（例如 studies、is studying 等）\",\"「表姊」可寫，例如 cousin 等\"]（原 promptZh「我哥哥明年要出國工作。」、referenceEn [\"My brother will work abroad next year.\",\"My older brother is going to work abroad next year.\"]、rubricZh [\"「出國」用 abroad，前面不加 to（例如 work abroad、go abroad）\",\"未來的事可寫例如 will、be going to\"]）；題 id、hintWords 不變",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

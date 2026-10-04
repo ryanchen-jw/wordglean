@@ -215,16 +215,18 @@
     },
     {
       "id": "a2-u02-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "daily",
-      "instructionZh": "用 daily 造一個句子，說說你每天都會做的一件事。",
+      "type": "translate",
+      "promptZh": "這間博物館每天開放。",
+      "hintWords": [
+        "daily"
+      ],
       "referenceEn": [
-        "I drink a glass of milk daily.",
-        "I check the news daily."
+        "This museum is open daily.",
+        "The museum is open daily."
       ],
       "rubricZh": [
-        "daily 可放在名詞前（例如 my daily life），也可放在句尾當「每天」（例如 I walk daily）",
-        "說每天的習慣用現在式（例如 drink、walk）"
+        "用 daily 表示「每天」（例如 is open daily）",
+        "「開放」可寫，例如 is open 等"
       ]
     }
   ],
@@ -304,6 +306,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：gradually 與 q13 共用改 schedule；sudden 放不進 a two-hour ___ 改名詞 final，使兩個干擾項文法成立",
         "resolution": "改為 [\"行程\", \"延誤\", \"決賽\", \"每天的\"]（原 [\"逐漸地\", \"延誤\", \"突然的\", \"每天的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（daily）原位換成翻譯題，沿用題 id a2-u02-l03-q16；目標字沿用 daily",
+        "resolution": "改為 translate：promptZh「這間博物館每天開放。」、hintWords [\"daily\"]、referenceEn [\"This museum is open daily.\",\"The museum is open daily.\"]、rubricZh [\"用 daily 表示「每天」（例如 is open daily）\",\"「開放」可寫，例如 is open 等\"]（原 makeSentence：instructionZh「用 daily 造一個句子，說說你每天都會做的一件事。」、referenceEn [\"I drink a glass of milk daily.\",\"I check the news daily.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

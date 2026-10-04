@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u22-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "meter",
-      "instructionZh": "用 meter 造一個句子，說說某樣東西的長度、高度或距離。",
+      "type": "translate",
+      "promptZh": "這座游泳池有五十公尺長。",
+      "hintWords": [
+        "meter"
+      ],
       "referenceEn": [
-        "My bed is two meters long.",
-        "The bus stop is about a hundred meters from my home."
+        "This swimming pool is fifty meters long.",
+        "The pool is fifty meters long."
       ],
       "rubricZh": [
-        "meter 是可數名詞（例如 two meters）",
-        "可寫例如 two meters long、a hundred meters from…"
+        "用 meter 表示「公尺」，五十公尺用複數（例如 fifty meters）",
+        "長度可寫，例如 is fifty meters long 等"
       ]
     }
   ],
@@ -326,6 +328,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：pile 放不進 played ___，改副詞 fully，使兩個干擾項文法成立",
         "resolution": "改為 [\"最多\", \"大大地\", \"完全地\", \"差勁地\"]（原 [\"最多\", \"大大地\", \"一堆\", \"差勁地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（meter）原位換成翻譯題，沿用題 id a2-u22-l06-q17；目標字沿用 meter",
+        "resolution": "改為 translate：promptZh「這座游泳池有五十公尺長。」、hintWords [\"meter\"]、referenceEn [\"This swimming pool is fifty meters long.\",\"The pool is fifty meters long.\"]、rubricZh [\"用 meter 表示「公尺」，五十公尺用複數（例如 fifty meters）\",\"長度可寫，例如 is fifty meters long 等\"]（原 makeSentence：instructionZh「用 meter 造一個句子，說說某樣東西的長度、高度或距離。」、referenceEn [\"My bed is two meters long.\",\"The bus stop is about a hundred meters from my home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

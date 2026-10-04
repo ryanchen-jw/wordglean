@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u17-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "learner",
-      "instructionZh": "用 learner 造一個句子，說說你自己是怎樣的學習者。",
+      "type": "translate",
+      "promptZh": "這個網站對語言學習者很有用。",
+      "hintWords": [
+        "learner"
+      ],
       "referenceEn": [
-        "I am a slow but careful learner.",
-        "I am a better learner in the morning."
+        "This website is very useful for language learners.",
+        "This website is useful to language learners."
       ],
       "rubricZh": [
-        "learner 是可數名詞（例如 a fast learner、a careful learner）",
-        "說自己可寫例如 I am a … learner"
+        "用 learner 表示「學習者」，泛指用複數（例如 language learners）",
+        "「對…很有用」可寫，例如 useful for、useful to 等"
       ]
     }
   ],
@@ -293,6 +295,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：learners、atoms 與 q14 共用、exams 是 q14 正解；改本單元複數名詞 semesters、errors、folders（charts、essays 會變也對故不用）",
         "resolution": "改為 [\"學期\", \"錯誤\", \"資料夾\", \"章\"]（原 [\"學習者\", \"原子\", \"考試\", \"章\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（learner）原位換成翻譯題，沿用題 id a2-u17-l04-q17；目標字沿用 learner",
+        "resolution": "改為 translate：promptZh「這個網站對語言學習者很有用。」、hintWords [\"learner\"]、referenceEn [\"This website is very useful for language learners.\",\"This website is useful to language learners.\"]、rubricZh [\"用 learner 表示「學習者」，泛指用複數（例如 language learners）\",\"「對…很有用」可寫，例如 useful for、useful to 等\"]（原 makeSentence：instructionZh「用 learner 造一個句子，說說你自己是怎樣的學習者。」、referenceEn [\"I am a slow but careful learner.\",\"I am a better learner in the morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

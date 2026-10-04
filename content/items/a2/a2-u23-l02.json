@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u23-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "wonder",
-      "instructionZh": "用 wonder 造一個句子，說說你好奇想知道的事。",
+      "type": "translate",
+      "promptZh": "我媽媽想知道你明天會不會來。",
+      "hintWords": [
+        "wonder"
+      ],
       "referenceEn": [
-        "I wonder what my dog thinks about.",
-        "I often wonder what life was like long ago."
+        "My mother wonders if you will come tomorrow.",
+        "My mom wonders if you are coming tomorrow."
       ],
       "rubricZh": [
-        "wonder 後面常接 what／why／how／if 子句（例如 I wonder what…）",
-        "子句用直述句語序（例如 what my dog thinks）"
+        "用 wonder 表示「想知道」，時態可用現在式或現在進行式（例如 wonders、is wondering 等）",
+        "「會不會」可寫，例如 if you will come、if you are coming 等"
       ]
     }
   ],
@@ -273,6 +275,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：evidence 是 q13 正解，改本單元 prediction",
         "resolution": "改為 [\"注意\", \"預測\", \"擔心\", \"機會\"]（原 [\"注意\", \"證據\", \"擔心\", \"機會\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（wonder）原位換成翻譯題，沿用題 id a2-u23-l02-q16；目標字沿用 wonder",
+        "resolution": "改為 translate：promptZh「我媽媽想知道你明天會不會來。」、hintWords [\"wonder\"]、referenceEn [\"My mother wonders if you will come tomorrow.\",\"My mom wonders if you are coming tomorrow.\"]、rubricZh [\"用 wonder 表示「想知道」，主詞是單數，動詞加 s（例如 wonders）\",\"「會不會」可寫，例如 if you will come、if you are coming 等\"]（原 makeSentence：instructionZh「用 wonder 造一個句子，說說你好奇想知道的事。」、referenceEn [\"I wonder what my dog thinks about.\",\"I often wonder what life was like long ago.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：FIX 要點寫死「動詞加 s」，會判錯現在進行式 is wondering",
+        "resolution": "rubricZh 改為 [\"用 wonder 表示「想知道」，時態可用現在式或現在進行式（例如 wonders、is wondering 等）\",\"「會不會」可寫，例如 if you will come、if you are coming 等\"]（原 [\"用 wonder 表示「想知道」，主詞是單數，動詞加 s（例如 wonders）\",\"「會不會」可寫，例如 if you will come、if you are coming 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

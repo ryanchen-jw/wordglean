@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u15-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "leisure",
-      "instructionZh": "用 leisure 造一個句子，說說你空閒時間喜歡做什麼。",
+      "type": "translate",
+      "promptZh": "我沒有很多空閒時間。",
+      "hintWords": [
+        "leisure"
+      ],
       "referenceEn": [
-        "I spend my leisure time with my family.",
-        "Reading is my favorite leisure activity."
+        "I don't have much leisure time.",
+        "I do not have a lot of leisure time."
       ],
       "rubricZh": [
-        "leisure 表示「空閒；休閒」（例如 leisure time、a leisure activity）",
-        "主詞和動詞要搭配（例如 Reading is）"
+        "用 leisure time 表示「空閒時間」",
+        "time 不可數，「很多」可寫，例如 much、a lot of 等"
       ]
     }
   ],
@@ -346,6 +348,12 @@
         "message": "執行長裁示：正解長度名次分布：a2-u15-l01-q15#1 目標第 3 長、消除單題異常值（改了選項 1、2）；長度改動重新盲答 issue：干擾項「她常常到各地幫新人拍婚禮的照片」是完整句、句型和其他選項不一致，又挪用婚禮情節；改成同樣的動詞片語、不挪用短文情節",
         "resolution": "改為 [\"每個週末都帶著相機到山上去健行\",\"晚上在附近的咖啡店彈鋼琴給客人聽\",\"把 Leo 最好的照片畫成畫\"]（原 [\"去山上健行\",\"她常常到各地幫新人拍婚禮的照片\",\"把 Leo 最好的照片畫成畫\"]）",
         "resolvedAt": "2026-10-02T18:41:36Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（leisure）原位換成翻譯題，沿用題 id a2-u15-l01-q17；目標字沿用 leisure",
+        "resolution": "改為 translate：promptZh「我沒有很多空閒時間。」、hintWords [\"leisure\"]、referenceEn [\"I don't have much leisure time.\",\"I do not have a lot of leisure time.\"]、rubricZh [\"用 leisure time 表示「空閒時間」\",\"time 不可數，「很多」可寫，例如 much、a lot of 等\"]（原 makeSentence：instructionZh「用 leisure 造一個句子，說說你空閒時間喜歡做什麼。」、referenceEn [\"I spend my leisure time with my family.\",\"Reading is my favorite leisure activity.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

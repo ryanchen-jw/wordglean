@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u10-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "diet",
-      "instructionZh": "用 diet 造一個句子，說說你平常的飲食習慣。",
+      "type": "translate",
+      "promptZh": "這種鳥的飲食主要是昆蟲。",
+      "hintWords": [
+        "diet"
+      ],
       "referenceEn": [
-        "My diet has a lot of fruit and vegetables.",
-        "I don't eat much meat in my diet."
+        "The diet of this bird is mostly insects.",
+        "This bird's diet is mainly insects."
       ],
       "rubricZh": [
-        "diet 指「日常飲食」（例如 my diet、a healthy diet）",
-        "主詞和動詞要搭配（例如 My diet has）"
+        "用 diet 表示「飲食」（例如 the diet of this bird、this bird's diet 等）",
+        "「主要是」可寫，例如 mostly、mainly 等"
       ]
     }
   ],
@@ -388,6 +390,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：angry／sad 代入「I'm so angry/sad. Can I have a glass of water?」情境上說得通（情緒激動要杯水），換成 clever、rich：「I'm so rich. Can I have a glass of water?」文法通、因果不通",
         "resolution": "改為 [\"開心的\", \"口渴的\", \"聰明的\", \"有錢的\"]（原 [\"開心的\", \"口渴的\", \"生氣的\", \"難過的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（diet）原位換成翻譯題，沿用題 id a2-u10-l03-q17；目標字沿用 diet",
+        "resolution": "改為 translate：promptZh「這種鳥的飲食主要是昆蟲。」、hintWords [\"diet\"]、referenceEn [\"The diet of this bird is mostly insects.\",\"This bird's diet is mainly insects.\"]、rubricZh [\"用 diet 表示「飲食」（例如 the diet of this bird、this bird's diet 等）\",\"「主要是」可寫，例如 mostly、mainly 等\"]（原 makeSentence：instructionZh「用 diet 造一個句子，說說你平常的飲食習慣。」、referenceEn [\"My diet has a lot of fruit and vegetables.\",\"I don't eat much meat in my diet.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

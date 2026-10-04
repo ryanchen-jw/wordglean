@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u18-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "dinosaur",
-      "instructionZh": "用 dinosaur 造一個句子，說說你知道或喜歡的恐龍。",
+      "type": "translate",
+      "promptZh": "我兒子很喜歡有關恐龍的書。",
+      "hintWords": [
+        "dinosaur"
+      ],
       "referenceEn": [
-        "My favorite dinosaur has a very long neck.",
-        "Some dinosaurs were bigger than a house."
+        "My son loves books about dinosaurs.",
+        "My son really likes books about dinosaurs."
       ],
       "rubricZh": [
-        "dinosaur 是可數名詞（例如 a dinosaur、dinosaurs）",
-        "說過去的事可寫例如 were、lived"
+        "用 dinosaur 表示「恐龍」，泛指用複數（例如 dinosaurs）",
+        "「很喜歡」可寫，例如 loves、really likes 等"
       ]
     }
   ],
@@ -314,6 +316,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：harvest 與 q13 共用，改本單元複數名詞 insects（Tigers are insects 可代入、靠詞義排除；creatures、wild 會變也對故不用）",
         "resolution": "改為 [\"水下的\", \"昆蟲\", \"瀕臨絕種的\", \"沾滿沙的\"]（原 [\"水下的\", \"收成\", \"瀕臨絕種的\", \"沾滿沙的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dinosaur）原位換成翻譯題，沿用題 id a2-u18-l06-q17；目標字沿用 dinosaur",
+        "resolution": "改為 translate：promptZh「我兒子很喜歡有關恐龍的書。」、hintWords [\"dinosaur\"]、referenceEn [\"My son loves books about dinosaurs.\",\"My son really likes books about dinosaurs.\"]、rubricZh [\"用 dinosaur 表示「恐龍」，泛指用複數（例如 dinosaurs）\",\"「很喜歡」可寫，例如 loves、really likes 等\"]（原 makeSentence：instructionZh「用 dinosaur 造一個句子，說說你知道或喜歡的恐龍。」、referenceEn [\"My favorite dinosaur has a very long neck.\",\"Some dinosaurs were bigger than a house.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

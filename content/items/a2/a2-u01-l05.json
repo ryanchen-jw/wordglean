@@ -230,17 +230,19 @@
     },
     {
       "id": "a2-u01-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "rather",
-      "instructionZh": "用 would rather 造一個句子，說說兩件事當中你比較想做哪一件。",
+      "type": "translate",
+      "promptZh": "他寧願一個人工作，也不要和別人一起工作。",
+      "hintWords": [
+        "rather"
+      ],
       "referenceEn": [
-        "I'd rather read a book than watch TV.",
-        "I'd rather drink tea than coffee."
+        "He would rather work alone than with other people.",
+        "He'd rather work by himself than with others."
       ],
       "rubricZh": [
-        "would rather 後面接原形動詞（例如 would rather stay）",
-        "比較兩件事可用 than 連接（例如 rather stay home than go out）",
-        "句子說的是自己的選擇，主詞是 I"
+        "用 would rather（'d rather）…than… 表示「寧願…也不要…」",
+        "「一個人」可寫，例如 alone、by himself 等",
+        "than 後面可省略動詞（例如 than with others），也可寫完整（例如 than work with others）"
       ]
     }
   ],
@@ -314,6 +316,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：so we ate bread later.／so we ate bread alone.（＝只吃麵包）只看英文都說得通；換成 rather、exactly，放句尾不成句",
         "resolution": "改為 [\"向前\", \"寧願\", \"正好\", \"作為替代\"]（原 [\"向前\", \"之後\", \"獨自地\", \"作為替代\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rather）原位換成翻譯題，沿用題 id a2-u01-l05-q17；目標字沿用 rather",
+        "resolution": "改為 translate：promptZh「他寧願一個人工作，也不要和別人一起工作。」、hintWords [\"rather\"]、referenceEn [\"He would rather work alone than with other people.\",\"He'd rather work by himself than with others.\"]、rubricZh [\"用 would rather（'d rather）…than… 表示「寧願…也不要…」\",\"「一個人」可寫，例如 alone、by himself 等\",\"than 後面可省略動詞（例如 than with others），也可寫完整（例如 than work with others）\"]（原 makeSentence：instructionZh「用 would rather 造一個句子，說說兩件事當中你比較想做哪一件。」、referenceEn [\"I'd rather read a book than watch TV.\",\"I'd rather drink tea than coffee.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

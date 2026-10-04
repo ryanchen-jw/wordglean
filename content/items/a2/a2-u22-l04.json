@@ -228,16 +228,19 @@
     },
     {
       "id": "a2-u22-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "addition",
-      "instructionZh": "用 addition 造一個句子，說說加法，或家裡新增的成員或東西。",
+      "type": "translate",
+      "promptZh": "我弟弟還不會做加法。",
+      "hintWords": [
+        "addition"
+      ],
       "referenceEn": [
-        "My little brother is learning addition at school.",
-        "Our new cat is a nice addition to the family."
+        "My little brother can't do addition yet.",
+        "My younger brother can't do addition yet."
       ],
       "rubricZh": [
-        "addition 可指「加法」或「新增的人事物」（例如 learn addition、an addition to the family）",
-        "主詞和動詞要搭配（例如 My little brother is）"
+        "用 addition 表示「加法」（例如 do addition）",
+        "「還不會」可寫，例如 can't…yet、doesn't know how to…yet 等",
+        "「弟弟」可寫，例如 little brother、younger brother 等"
       ]
     }
   ],
@@ -377,6 +380,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Can I have enough sauce on my pizza?」文法通、語意勉強可成立，enough 換成 social，「社交的醬」語意不通",
         "resolution": "改為 [\"社交的\", \"分\", \"乾的\", \"額外的\"]（原 [\"足夠的\", \"分\", \"乾的\", \"額外的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（addition）原位換成翻譯題，沿用題 id a2-u22-l04-q17；目標字沿用 addition",
+        "resolution": "改為 translate：promptZh「這隻小貓是我們家的新成員。」、hintWords [\"addition\"]、referenceEn [\"This little cat is a new addition to our family.\",\"This small cat is the newest addition to our family.\"]、rubricZh [\"用 addition 表示「新增的成員」（例如 a new addition to our family）\",\"「新成員」可寫，例如 a new addition、the newest addition 等\"]（原 makeSentence：instructionZh「用 addition 造一個句子，說說加法，或家裡新增的成員或東西。」、referenceEn [\"My little brother is learning addition at school.\",\"Our new cat is a nice addition to the family.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 題目用的「新增的人或物」不是單字卡教的詞義（§11.5），中文「新成員」也引導不到 addition；改用單字卡詞義「加法」",
+        "resolution": "promptZh 改為 「我弟弟還不會做加法。」（原 「這隻小貓是我們家的新成員。」）；referenceEn 改為 [\"My little brother can't do addition yet.\",\"My younger brother can't do addition yet.\"]（原 [\"This little cat is a new addition to our family.\",\"This small cat is the newest addition to our family.\"]）；rubricZh 改為 [\"用 addition 表示「加法」（例如 do addition）\",\"「還不會」可寫，例如 can't…yet、doesn't know how to…yet 等\",\"「弟弟」可寫，例如 little brother、younger brother 等\"]（原 [\"用 addition 表示「新增的成員」（例如 a new addition to our family）\",\"「新成員」可寫，例如 a new addition、the newest addition 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -230,16 +230,18 @@
     },
     {
       "id": "a2-u05-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "crowded",
-      "instructionZh": "用 crowded 造一個句子，說說一個很擁擠的地方或時段。",
+      "type": "translate",
+      "promptZh": "我不喜歡擁擠的地方。",
+      "hintWords": [
+        "crowded"
+      ],
       "referenceEn": [
-        "The night market is crowded on Saturday nights.",
-        "The trains are very crowded in the morning."
+        "I don't like crowded places.",
+        "I do not like crowded places."
       ],
       "rubricZh": [
-        "crowded 表示「擁擠的」，可放在 be 動詞後或名詞前（例如 is crowded、a crowded train）",
-        "主詞和動詞要搭配（例如 The trains are）"
+        "用 crowded 表示「擁擠的」，放在名詞前（例如 crowded places）",
+        "「地方」用複數泛指（例如 places）；寫 a crowded place 也可以"
       ]
     }
   ],
@@ -301,6 +303,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：empty 超範圍，改 cold（文法成立，與找不到位子無因果）",
         "resolution": "改為 [\"冷的\", \"安靜的\", \"擁擠的\", \"乾淨的\"]（原 [\"空的\", \"安靜的\", \"擁擠的\", \"乾淨的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（crowded）原位換成翻譯題，沿用題 id a2-u05-l04-q17；目標字沿用 crowded",
+        "resolution": "改為 translate：promptZh「我不喜歡擁擠的地方。」、hintWords [\"crowded\"]、referenceEn [\"I don't like crowded places.\",\"I do not like crowded places.\"]、rubricZh [\"用 crowded 表示「擁擠的」，放在名詞前（例如 crowded places）\",\"「地方」用複數泛指（例如 places）；寫 a crowded place 也可以\"]（原 makeSentence：instructionZh「用 crowded 造一個句子，說說一個很擁擠的地方或時段。」、referenceEn [\"The night market is crowded on Saturday nights.\",\"The trains are very crowded in the morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

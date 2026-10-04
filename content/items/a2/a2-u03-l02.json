@@ -226,16 +226,18 @@
     },
     {
       "id": "a2-u03-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "low",
-      "instructionZh": "用 low 造一個句子，描述一樣很低的東西（例如價格、桌子）。",
+      "type": "translate",
+      "promptZh": "這張椅子對我來說太低了。",
+      "hintWords": [
+        "low"
+      ],
       "referenceEn": [
-        "The water in the river is very low now.",
-        "This table is too low for me."
+        "This chair is too low for me.",
+        "For me, this chair is too low."
       ],
       "rubricZh": [
-        "low 可放在 be 動詞後，也可放在名詞前（例如 The prices are low、a low table）",
-        "主詞和動詞要搭配（例如 The prices are、This table is）"
+        "用 too low 表示「太低」",
+        "「對我來說」可寫，例如 for me 等，放句首或句尾都可以"
       ]
     }
   ],
@@ -321,6 +323,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：quietly 超範圍，改本單元 correctly",
         "resolution": "改為 [\"大聲地\", \"正確地\", \"安靜地\", \"順利地\"]（原 [\"大聲地\", \"小聲地\", \"安靜地\", \"順利地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（low）原位換成翻譯題，沿用題 id a2-u03-l02-q17；目標字沿用 low",
+        "resolution": "改為 translate：promptZh「這張椅子對我來說太低了。」、hintWords [\"low\"]、referenceEn [\"This chair is too low for me.\",\"For me, this chair is too low.\"]、rubricZh [\"用 too low 表示「太低」\",\"「對我來說」可寫，例如 for me 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 low 造一個句子，描述一樣很低的東西（例如價格、桌子）。」、referenceEn [\"The water in the river is very low now.\",\"This table is too low for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

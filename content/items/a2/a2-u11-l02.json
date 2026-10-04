@@ -216,16 +216,19 @@
     },
     {
       "id": "a2-u11-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "customer",
-      "instructionZh": "用 customer 造一個句子，說說你當顧客的經驗，或某家店怎麼對待顧客。",
+      "type": "translate",
+      "promptZh": "這家店的老闆記得每位顧客的名字。",
+      "hintWords": [
+        "customer"
+      ],
       "referenceEn": [
-        "I am a regular customer at this cafe.",
-        "This cafe always has a lot of customers."
+        "The owner of this shop remembers every customer's name.",
+        "The shop owner remembers the names of all the customers."
       ],
       "rubricZh": [
-        "customer 是可數名詞（例如 a customer、its customers）",
-        "主詞和動詞要搭配（例如 This cafe has）"
+        "用 customer 表示「顧客」（例如 every customer's name、the names of all the customers 等）",
+        "主詞是單數，動詞加 s（例如 remembers、knows 等）",
+        "「老闆」可寫，例如 owner、boss 等"
       ]
     }
   ],
@@ -359,6 +362,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：production 是 q12 正解改 receipt；account 與 q12 共用改 wallet",
         "resolution": "改為 [\"划算的買賣\", \"收據\", \"預算\", \"皮夾\"]（原 [\"划算的買賣\", \"生產\", \"預算\", \"帳戶\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（customer）原位換成翻譯題，沿用題 id a2-u11-l02-q16；目標字沿用 customer",
+        "resolution": "改為 translate：promptZh「這家店的老闆記得每位顧客的名字。」、hintWords [\"customer\"]、referenceEn [\"The owner of this shop remembers every customer's name.\",\"The shop owner remembers the names of all the customers.\"]、rubricZh [\"用 customer 表示「顧客」（例如 every customer's name、the names of all the customers 等）\",\"主詞是單數，動詞加 s（例如 remembers、knows 等）\",\"「老闆」可寫，例如 owner、boss 等\"]（原 makeSentence：instructionZh「用 customer 造一個句子，說說你當顧客的經驗，或某家店怎麼對待顧客。」、referenceEn [\"I am a regular customer at this cafe.\",\"This cafe always has a lot of customers.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

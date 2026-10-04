@@ -231,16 +231,18 @@
     },
     {
       "id": "a2-u13-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "journey",
-      "instructionZh": "用 journey 造一個句子，說說一趟你記得的旅程。",
+      "type": "translate",
+      "promptZh": "祝你旅途愉快！",
+      "hintWords": [
+        "journey"
+      ],
       "referenceEn": [
-        "My first journey by plane was very exciting.",
-        "Our train journey across Taiwan was wonderful."
+        "Have a nice journey!",
+        "Have a good journey!"
       ],
       "rubricZh": [
-        "journey 表示「旅程；路程」（例如 a long journey、my first journey）",
-        "時態配合句意（例如 was）"
+        "用 journey 表示「旅途」",
+        "祝福可寫，例如 Have a nice journey、I hope you have a good journey 等"
       ]
     }
   ],
@@ -350,6 +352,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：passenger 與 q13 共用，改本單元名詞 suitcase",
         "resolution": "改為 [\"交通\", \"太空人\", \"行李箱\", \"冒險\"]（原 [\"交通\", \"太空人\", \"乘客\", \"冒險\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（journey）原位換成翻譯題，沿用題 id a2-u13-l03-q17；目標字沿用 journey",
+        "resolution": "改為 translate：promptZh「祝你旅途愉快！」、hintWords [\"journey\"]、referenceEn [\"Have a nice journey!\",\"Have a good journey!\"]、rubricZh [\"用 journey 表示「旅途」\",\"祝福可寫，例如 Have a nice journey、I hope you have a good journey 等\"]（原 makeSentence：instructionZh「用 journey 造一個句子，說說一趟你記得的旅程。」、referenceEn [\"My first journey by plane was very exciting.\",\"Our train journey across Taiwan was wonderful.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

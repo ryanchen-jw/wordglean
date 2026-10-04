@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u18-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "elephant",
-      "instructionZh": "用 elephant 造一個句子，描述大象，或說說你看過大象的經驗。",
+      "type": "translate",
+      "promptZh": "那隻大象正在河邊喝水。",
+      "hintWords": [
+        "elephant"
+      ],
       "referenceEn": [
-        "I saw an elephant at the zoo last year.",
-        "Elephants have big ears and long noses."
+        "The elephant is drinking water by the river.",
+        "That elephant is drinking water at the river."
       ],
       "rubricZh": [
-        "elephant 是可數名詞（例如 an elephant、elephants）",
-        "用不定冠詞時要用 an（例如 an elephant）"
+        "用 elephant 表示「大象」",
+        "「正在喝水」用現在進行式（例如 is drinking）",
+        "「在河邊」可寫，例如 by the river、at the river 等"
       ]
     }
   ],
@@ -310,6 +313,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：hide 代入「Don't throw away the bottles. Please hide them.」情境上說得通，換成 marry：「Please marry them.」（指瓶子）文法通、語意不通",
         "resolution": "改為 [\"使落下\", \"汙染\", \"回收\", \"和⋯結婚\"]（原 [\"使落下\", \"汙染\", \"回收\", \"藏起來\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（elephant）原位換成翻譯題，沿用題 id a2-u18-l01-q17；目標字沿用 elephant",
+        "resolution": "改為 translate：promptZh「那隻大象正在河邊喝水。」、hintWords [\"elephant\"]、referenceEn [\"The elephant is drinking water by the river.\",\"That elephant is drinking water at the river.\"]、rubricZh [\"用 elephant 表示「大象」\",\"「正在喝水」用現在進行式（例如 is drinking）\",\"「在河邊」可寫，例如 by the river、at the river 等\"]（原 makeSentence：instructionZh「用 elephant 造一個句子，描述大象，或說說你看過大象的經驗。」、referenceEn [\"I saw an elephant at the zoo last year.\",\"Elephants have big ears and long noses.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

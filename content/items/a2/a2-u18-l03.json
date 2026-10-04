@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u18-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "earth",
-      "instructionZh": "用 earth 造一個句子，說說地球，或我們可以怎麼愛護地球。",
+      "type": "translate",
+      "promptZh": "從太空看，地球是藍色的。",
+      "hintWords": [
+        "earth"
+      ],
       "referenceEn": [
-        "The earth is our only home.",
-        "We should keep the earth clean."
+        "From space, the earth looks blue.",
+        "The earth looks blue from space."
       ],
       "rubricZh": [
-        "earth 表示「地球」時常寫 the earth（寫 Earth 也可以）",
-        "主詞和動詞要搭配（例如 The earth is）"
+        "用 the earth 表示「地球」（寫 Earth 也正確）",
+        "「看起來是藍色的」可寫，例如 looks blue、is blue 等"
       ]
     }
   ],
@@ -290,6 +292,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：planet 與 q13 planets 共用，改本單元形容詞 natural，湊足兩個可代入的干擾項",
         "resolution": "改為 [\"高溫\", \"地球\", \"野生的\", \"天然的\"]（原 [\"高溫\", \"地球\", \"野生的\", \"行星\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（earth）原位換成翻譯題，沿用題 id a2-u18-l03-q17；目標字沿用 earth",
+        "resolution": "改為 translate：promptZh「從太空看，地球是藍色的。」、hintWords [\"earth\"]、referenceEn [\"From space, the earth looks blue.\",\"The earth looks blue from space.\"]、rubricZh [\"用 the earth 表示「地球」（寫 Earth 也正確）\",\"「看起來是藍色的」可寫，例如 looks blue、is blue 等\"]（原 makeSentence：instructionZh「用 earth 造一個句子，說說地球，或我們可以怎麼愛護地球。」、referenceEn [\"The earth is our only home.\",\"We should keep the earth clean.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

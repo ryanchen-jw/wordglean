@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u04-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "avoid",
-      "instructionZh": "用 avoid 造一個句子，說說你平常會避免做的一件事。",
+      "type": "translate",
+      "promptZh": "她總是避免在晚上開車。",
+      "hintWords": [
+        "avoid"
+      ],
       "referenceEn": [
-        "I avoid drinking coffee at night.",
-        "I try to avoid the crowded trains."
+        "She always avoids driving at night.",
+        "At night, she always avoids driving."
       ],
       "rubricZh": [
-        "avoid 後面接名詞或動名詞（例如 avoid the crowded trains、avoid drinking coffee），不接 to＋動詞",
-        "說平常的習慣用現在式（例如 avoid、try to avoid）"
+        "avoid 後面接動名詞（例如 avoids driving）",
+        "主詞是 she，動詞加 s（例如 avoids）",
+        "「在晚上」可寫，例如 at night 等，放句首或句尾都可以"
       ]
     }
   ],
@@ -346,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
         "resolution": "改為 \"應徵；申請\"（原 \"申請；應徵\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（avoid）原位換成翻譯題，沿用題 id a2-u04-l07-q17；目標字沿用 avoid",
+        "resolution": "改為 translate：promptZh「她總是避免在晚上開車。」、hintWords [\"avoid\"]、referenceEn [\"She always avoids driving at night.\",\"At night, she always avoids driving.\"]、rubricZh [\"avoid 後面接動名詞（例如 avoids driving）\",\"主詞是 she，動詞加 s（例如 avoids）\",\"「在晚上」可寫，例如 at night 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 avoid 造一個句子，說說你平常會避免做的一件事。」、referenceEn [\"I avoid drinking coffee at night.\",\"I try to avoid the crowded trains.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

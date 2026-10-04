@@ -238,16 +238,18 @@
     },
     {
       "id": "a2-u22-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "part",
-      "instructionZh": "用 part 造一個句子，說說你最喜歡某樣東西的哪一部分。",
+      "type": "translate",
+      "promptZh": "這本書的第一部分很無聊。",
+      "hintWords": [
+        "part"
+      ],
       "referenceEn": [
-        "My favorite part of the movie was the ending.",
-        "My favorite part of school is lunch time."
+        "The first part of this book is boring.",
+        "The first part of the book is very boring."
       ],
       "rubricZh": [
-        "part 表示「部分」（例如 the best part of…、part of…）",
-        "主詞和動詞要搭配（例如 My favorite part is）"
+        "用 part 表示「部分」（例如 the first part of this book）",
+        "「無聊」用 boring（不是 bored）"
       ]
     }
   ],
@@ -375,6 +377,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：liters 與 q14 共用改 parts；few 放不進 twenty ___ 改 hours，使兩個干擾項文法成立",
         "resolution": "改為 [\"部分\", \"公克\", \"小時\", \"最少的\"]（原 [\"公升\", \"公克\", \"很少的\", \"最少的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（part）原位換成翻譯題，沿用題 id a2-u22-l01-q18；目標字沿用 part",
+        "resolution": "改為 translate：promptZh「這本書的第一部分很無聊。」、hintWords [\"part\"]、referenceEn [\"The first part of this book is boring.\",\"The first part of the book is very boring.\"]、rubricZh [\"用 part 表示「部分」（例如 the first part of this book）\",\"「無聊」用 boring（不是 bored）\"]（原 makeSentence：instructionZh「用 part 造一個句子，說說你最喜歡某樣東西的哪一部分。」、referenceEn [\"My favorite part of the movie was the ending.\",\"My favorite part of school is lunch time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

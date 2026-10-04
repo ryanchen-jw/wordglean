@@ -240,16 +240,18 @@
     },
     {
       "id": "a2-u17-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "education",
-      "instructionZh": "用 education 造一個句子，說說你對教育的看法，或你受過的教育。",
+      "type": "translate",
+      "promptZh": "這所學校提供很好的教育。",
+      "hintWords": [
+        "education"
+      ],
       "referenceEn": [
-        "Good education can change a person's life.",
-        "My parents paid for my education."
+        "This school offers an excellent education.",
+        "This school gives students an excellent education."
       ],
       "rubricZh": [
-        "education 是不可數名詞（例如 good education、my education）",
-        "主詞和動詞要搭配（例如 Good education can change）"
+        "用 education 表示「教育」（例如 an excellent education、a very good education 等）",
+        "「提供」可寫，例如 offers、gives 等，主詞是單數，動詞加 s"
       ]
     }
   ],
@@ -317,6 +319,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：research、education 放不進 very ____ 形容詞位置，改 harmful、dangerous（能代入、與 good and 矛盾而排除）",
         "resolution": "改為 [\"課本\", \"有害的\", \"危險的\", \"合乎邏輯的\"]（原 [\"課本\", \"研究\", \"教育\", \"合乎邏輯的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（education）原位換成翻譯題，沿用題 id a2-u17-l01-q18；目標字沿用 education",
+        "resolution": "改為 translate：promptZh「這所學校提供很好的教育。」、hintWords [\"education\"]、referenceEn [\"This school offers an excellent education.\",\"This school gives students an excellent education.\"]、rubricZh [\"用 education 表示「教育」（例如 an excellent education、a very good education 等）\",\"「提供」可寫，例如 offers、gives 等，主詞是單數，動詞加 s\"]（原 makeSentence：instructionZh「用 education 造一個句子，說說你對教育的看法，或你受過的教育。」、referenceEn [\"Good education can change a person's life.\",\"My parents paid for my education.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

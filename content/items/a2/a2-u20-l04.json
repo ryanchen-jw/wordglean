@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u20-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "complain",
-      "instructionZh": "用 complain 造一個句子，說說某人常抱怨什麼。",
+      "type": "translate",
+      "promptZh": "我爸爸常常抱怨天氣太熱。",
+      "hintWords": [
+        "complain"
+      ],
       "referenceEn": [
-        "My brother always complains about his homework.",
-        "My grandmother complains when the bus is late."
+        "My father often complains that the weather is too hot.",
+        "My dad often complains about the hot weather."
       ],
       "rubricZh": [
-        "complain 常接 about＋事物（例如 complain about his homework）",
-        "時態配合句意（例如 complains、complained）"
+        "用 complain 表示「抱怨」，主詞是單數，動詞加 s（例如 complains）",
+        "後面可接 that 子句或 about＋名詞（例如 complains that…、complains about… 等）",
+        "often 可放在動詞前或句尾（例如 often complains）"
       ]
     }
   ],
@@ -316,6 +319,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：print、complain 是動詞放不進空格，改副詞 slowly、loudly，使兩個干擾項文法成立",
         "resolution": "改為 [\"慢慢地\", \"在網路上\", \"大聲地\", \"回覆\"]（原 [\"列印\", \"在網路上\", \"抱怨\", \"回覆\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（complain）原位換成翻譯題，沿用題 id a2-u20-l04-q17；目標字沿用 complain",
+        "resolution": "改為 translate：promptZh「我爸爸常常抱怨天氣太熱。」、hintWords [\"complain\"]、referenceEn [\"My father often complains that the weather is too hot.\",\"My dad often complains about the hot weather.\"]、rubricZh [\"用 complain 表示「抱怨」，主詞是單數，動詞加 s（例如 complains）\",\"後面可接 that 子句或 about＋名詞（例如 complains that…、complains about… 等）\",\"often 放在動詞前\"]（原 makeSentence：instructionZh「用 complain 造一個句子，說說某人常抱怨什麼。」、referenceEn [\"My brother always complains about his homework.\",\"My grandmother complains when the bus is late.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 often 位置",
+        "resolution": "rubricZh 改為 [\"用 complain 表示「抱怨」，主詞是單數，動詞加 s（例如 complains）\",\"後面可接 that 子句或 about＋名詞（例如 complains that…、complains about… 等）\",\"often 可放在動詞前或句尾（例如 often complains）\"]（原 [\"用 complain 表示「抱怨」，主詞是單數，動詞加 s（例如 complains）\",\"後面可接 that 子句或 about＋名詞（例如 complains that…、complains about… 等）\",\"often 放在動詞前\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

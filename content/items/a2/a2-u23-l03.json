@@ -212,16 +212,18 @@
     },
     {
       "id": "a2-u23-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "purpose",
-      "instructionZh": "用 purpose 造一個句子，說說做某件事的目的。",
+      "type": "translate",
+      "promptZh": "這個房間沒有特別的用途。",
+      "hintWords": [
+        "purpose"
+      ],
       "referenceEn": [
-        "The purpose of this trip is to see my grandparents.",
-        "The purpose of the meeting was to plan the party."
+        "This room has no special purpose.",
+        "This room doesn't have a special purpose."
       ],
       "rubricZh": [
-        "purpose 常寫 the purpose of…（例如 the purpose of this trip）",
-        "後面可接 to＋原形動詞（例如 is to see）"
+        "用 purpose 表示「用途」",
+        "「沒有」可寫，例如 has no、doesn't have a 等"
       ]
     }
   ],
@@ -289,6 +291,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「The coach told us our purpose for the next game.」教練說明下場比賽的目標，說得通；purpose 換成 evidence，「下場比賽的證據」語意不通",
         "resolution": "改為 [\"實話\", \"證據\", \"策略\", \"事務\"]（原 [\"實話\", \"目的\", \"策略\", \"事務\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（purpose）原位換成翻譯題，沿用題 id a2-u23-l03-q16；目標字沿用 purpose",
+        "resolution": "改為 translate：promptZh「這個房間沒有特別的用途。」、hintWords [\"purpose\"]、referenceEn [\"This room has no special purpose.\",\"This room doesn't have a special purpose.\"]、rubricZh [\"用 purpose 表示「用途」\",\"「沒有」可寫，例如 has no、doesn't have a 等\"]（原 makeSentence：instructionZh「用 purpose 造一個句子，說說做某件事的目的。」、referenceEn [\"The purpose of this trip is to see my grandparents.\",\"The purpose of the meeting was to plan the party.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

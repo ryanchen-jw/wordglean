@@ -212,16 +212,19 @@
     },
     {
       "id": "a2-u23-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "commitment",
-      "instructionZh": "用 commitment 造一個句子，說說一件需要長期投入的事。",
+      "type": "translate",
+      "promptZh": "學一種樂器需要很大的投入。",
+      "hintWords": [
+        "commitment"
+      ],
       "referenceEn": [
-        "Learning the piano is a big commitment.",
-        "Having a baby is a big commitment for parents."
+        "Learning an instrument is a big commitment.",
+        "Learning to play an instrument takes a big commitment."
       ],
       "rubricZh": [
-        "commitment 指「承諾；投入」（例如 a big commitment）",
-        "主詞可用動名詞（例如 Learning the piano is）"
+        "用 commitment 表示「投入」（例如 a big commitment）",
+        "「需要」可寫，例如 is、takes 等",
+        "「學一種樂器」可寫，例如 Learning an instrument、Learning to play an instrument 等"
       ]
     }
   ],
@@ -361,6 +364,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：oppose 與 q12 共用，改名詞 concern，使兩個干擾項可放 no ___ that",
         "resolution": "改為 [\"承諾\", \"比較喜歡\", \"擔心\", \"懷疑\"]（原 [\"承諾\", \"比較喜歡\", \"反對\", \"懷疑\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（commitment）原位換成翻譯題，沿用題 id a2-u23-l04-q16；目標字沿用 commitment",
+        "resolution": "改為 translate：promptZh「學一種樂器需要很大的投入。」、hintWords [\"commitment\"]、referenceEn [\"Learning an instrument is a big commitment.\",\"Learning to play an instrument takes a big commitment.\"]、rubricZh [\"用 commitment 表示「投入」（例如 a big commitment）\",\"「需要」可寫，例如 is、takes 等\",\"「學一種樂器」可寫，例如 Learning an instrument、Learning to play an instrument 等\"]（原 makeSentence：instructionZh「用 commitment 造一個句子，說說一件需要長期投入的事。」、referenceEn [\"Learning the piano is a big commitment.\",\"Having a baby is a big commitment for parents.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

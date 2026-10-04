@@ -240,16 +240,18 @@
     },
     {
       "id": "a2-u08-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "balcony",
-      "instructionZh": "用 balcony 造一個句子，說說你家的陽台，或你想要的陽台。",
+      "type": "translate",
+      "promptZh": "這間公寓沒有陽台。",
+      "hintWords": [
+        "balcony"
+      ],
       "referenceEn": [
-        "We have a small balcony with many plants.",
-        "I like to drink coffee on the balcony."
+        "This apartment doesn't have a balcony.",
+        "This apartment has no balcony."
       ],
       "rubricZh": [
-        "balcony 是可數名詞（例如 a small balcony、our balcony）",
-        "「在陽台上」用 on（例如 on the balcony）"
+        "用 balcony 表示「陽台」",
+        "「沒有」可寫，例如 doesn't have a、has no 等"
       ]
     }
   ],
@@ -377,6 +379,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My room is downstairs, on the second floor. 只看英文可成立（說話者在三樓）；換成 yesterday，My room is yesterday 語意不通",
         "resolution": "改為 [\"在樓上\", \"在外面\", \"昨天\", \"燈泡\"]（原 [\"在樓上\", \"在外面\", \"在樓下\", \"燈泡\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（balcony）原位換成翻譯題，沿用題 id a2-u08-l02-q18；目標字沿用 balcony",
+        "resolution": "改為 translate：promptZh「這間公寓沒有陽台。」、hintWords [\"balcony\"]、referenceEn [\"This apartment doesn't have a balcony.\",\"This apartment has no balcony.\"]、rubricZh [\"用 balcony 表示「陽台」\",\"「沒有」可寫，例如 doesn't have a、has no 等\"]（原 makeSentence：instructionZh「用 balcony 造一個句子，說說你家的陽台，或你想要的陽台。」、referenceEn [\"We have a small balcony with many plants.\",\"I like to drink coffee on the balcony.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u03-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "popular",
-      "instructionZh": "用 popular 造一個句子，說說一樣很受歡迎的東西或一個很受歡迎的地方。",
+      "type": "translate",
+      "promptZh": "這家餐廳很受遊客歡迎。",
+      "hintWords": [
+        "popular"
+      ],
       "referenceEn": [
-        "This park is popular with families on weekends.",
-        "Hiking is a popular hobby in Taiwan."
+        "This restaurant is popular with tourists.",
+        "This restaurant is very popular with visitors."
       ],
       "rubricZh": [
-        "popular 表示「受歡迎的」（例如 is popular with families、a popular park）",
-        "主詞和動詞要搭配（例如 This park is）"
+        "用 popular with（或 among）表示「受…歡迎」（例如 popular with tourists 等）",
+        "「遊客」可寫，例如 tourists、visitors 等"
       ]
     }
   ],
@@ -317,6 +319,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：I can't read your writing. Please write more smoothly. 只看英文可說得通（字寫得流暢一點）；換成 silently，寫得安靜與看不懂字無關，語意不通",
         "resolution": "改為 [\"清楚地\", \"簡單的\", \"安靜地\", \"大聲地\"]（原 [\"清楚地\", \"簡單的\", \"順暢地\", \"大聲地\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（popular）原位換成翻譯題，沿用題 id a2-u03-l04-q17；目標字沿用 popular",
+        "resolution": "改為 translate：promptZh「這家餐廳很受遊客歡迎。」、hintWords [\"popular\"]、referenceEn [\"This restaurant is popular with tourists.\",\"This restaurant is very popular with visitors.\"]、rubricZh [\"用 popular with（或 among）表示「受…歡迎」（例如 popular with tourists 等）\",\"「遊客」可寫，例如 tourists、visitors 等\"]（原 makeSentence：instructionZh「用 popular 造一個句子，說說一樣很受歡迎的東西或一個很受歡迎的地方。」、referenceEn [\"This park is popular with families on weekends.\",\"Hiking is a popular hobby in Taiwan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

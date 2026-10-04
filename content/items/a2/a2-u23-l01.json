@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u23-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "decide",
-      "instructionZh": "用 decide 造一個句子，說說你最近做的一個決定。",
+      "type": "translate",
+      "promptZh": "我們還沒決定去哪裡。",
+      "hintWords": [
+        "decide"
+      ],
       "referenceEn": [
-        "I decided to learn the guitar.",
-        "We decided to stay home last weekend."
+        "We haven't decided where to go yet.",
+        "We have not decided where to go yet."
       ],
       "rubricZh": [
-        "decide 後面可接 to＋原形動詞（例如 decided to learn）",
-        "時態配合內容（例如 decided、have decided）"
+        "用 decide 表示「決定」，「還沒決定」用現在完成式（例如 haven't decided）",
+        "「去哪裡」可寫，例如 where to go、where we will go 等"
       ]
     }
   ],
@@ -308,6 +310,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：fact 與 q13 共用，改動詞 copy，連同 sense 共兩個干擾項可接 ___ my idea",
         "resolution": "改為 [\"可能的\", \"考慮\", \"察覺\", \"抄襲\"]（原 [\"可能的\", \"考慮\", \"感覺\", \"事實\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（decide）原位換成翻譯題，沿用題 id a2-u23-l01-q17；目標字沿用 decide",
+        "resolution": "改為 translate：promptZh「我們還沒決定去哪裡。」、hintWords [\"decide\"]、referenceEn [\"We haven't decided where to go yet.\",\"We have not decided where to go yet.\"]、rubricZh [\"用 decide 表示「決定」，「還沒決定」用現在完成式（例如 haven't decided）\",\"「去哪裡」可寫，例如 where to go、where we will go 等\"]（原 makeSentence：instructionZh「用 decide 造一個句子，說說你最近做的一個決定。」、referenceEn [\"I decided to learn the guitar.\",\"We decided to stay home last weekend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

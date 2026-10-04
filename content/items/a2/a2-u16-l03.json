@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u16-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "climbing",
-      "instructionZh": "用 climbing 造一個句子，說說你對攀岩或爬山的想法或經驗。",
+      "type": "translate",
+      "promptZh": "這面攀岩牆是給小孩子用的。",
+      "hintWords": [
+        "climbing"
+      ],
       "referenceEn": [
-        "I tried rock climbing last summer.",
-        "My friends and I go climbing every Saturday."
+        "This climbing wall is for children.",
+        "Children can use this climbing wall."
       ],
       "rubricZh": [
-        "climbing 當名詞表示「攀登；攀岩」（例如 rock climbing、Climbing is…）",
-        "時態配合句意（例如 tried、go）"
+        "用 climbing 表示「攀岩」（例如 climbing wall）",
+        "「給小孩子用的」可寫，例如 is for children、is for kids、Children can use 等"
       ]
     }
   ],
@@ -414,6 +416,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：cycling 代入「In winter, we go cycling in the snowy mountains.」英文可能成立（冬季山地騎車），換成 swimming：冬天去積雪山上游泳語意不通",
         "resolution": "改為 [\"滑雪\", \"帆船運動\", \"游泳\", \"橄欖球\"]（原 [\"滑雪\", \"帆船運動\", \"騎腳踏車\", \"橄欖球\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（climbing）原位換成翻譯題，沿用題 id a2-u16-l03-q17；目標字沿用 climbing",
+        "resolution": "改為 translate：promptZh「這面攀岩牆是給小孩子用的。」、hintWords [\"climbing\"]、referenceEn [\"This climbing wall is for children.\",\"Children can use this climbing wall.\"]、rubricZh [\"用 climbing 表示「攀岩」（例如 climbing wall）\",\"「給小孩子用的」可寫，例如 is for children、is for kids、Children can use 等\"]（原 makeSentence：instructionZh「用 climbing 造一個句子，說說你對攀岩或爬山的想法或經驗。」、referenceEn [\"I tried rock climbing last summer.\",\"My friends and I go climbing every Saturday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

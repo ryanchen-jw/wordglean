@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u27-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "relaxed",
-      "instructionZh": "用 relaxed 造一個句子，說說讓你覺得放鬆的時候或地方。",
+      "type": "translate",
+      "promptZh": "我爸爸退休以後看起來輕鬆多了。",
+      "hintWords": [
+        "relaxed"
+      ],
       "referenceEn": [
-        "I feel relaxed when I listen to music.",
-        "I am always relaxed at my grandparents' house."
+        "My father looks much more relaxed since he retired.",
+        "Since he retired, my dad looks a lot more relaxed."
       ],
       "rubricZh": [
-        "relaxed 形容人「感到放鬆的」（例如 feel relaxed、look relaxed）",
-        "主詞和動詞要搭配（例如 I am、I feel）"
+        "用 relaxed 表示「輕鬆的」（例如 looks more relaxed）",
+        "「多了」可寫，例如 much more relaxed、a lot more relaxed 等",
+        "「退休以後」可寫，例如 since he retired 等；寫 looked … after he retired 也正確"
       ]
     }
   ],
@@ -320,6 +323,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Big dogs confuse my little brother.」完全成立，confuse 換成 invent，「大狗發明我弟弟」語意不通",
         "resolution": "改為 [\"發明\", \"同情\", \"使非常害怕\", \"後悔\"]（原 [\"使困惑\", \"同情\", \"使非常害怕\", \"後悔\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（relaxed）原位換成翻譯題，沿用題 id a2-u27-l04-q17；目標字沿用 relaxed",
+        "resolution": "改為 translate：promptZh「我爸爸退休以後看起來輕鬆多了。」、hintWords [\"relaxed\"]、referenceEn [\"My father looks much more relaxed since he retired.\",\"My dad looks a lot more relaxed after he retired.\"]、rubricZh [\"用 relaxed 表示「輕鬆的」（例如 looks more relaxed）\",\"「多了」可寫，例如 much more relaxed、a lot more relaxed 等\",\"「退休以後」可寫，例如 since he retired、after he retired 等\"]（原 makeSentence：instructionZh「用 relaxed 造一個句子，說說讓你覺得放鬆的時候或地方。」、referenceEn [\"I feel relaxed when I listen to music.\",\"I am always relaxed at my grandparents' house.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 變體 2 現在式 looks 搭 after he retired 時態不搭；要點同步",
+        "resolution": "referenceEn 改為 [\"My father looks much more relaxed since he retired.\",\"Since he retired, my dad looks a lot more relaxed.\"]（原 [\"My father looks much more relaxed since he retired.\",\"My dad looks a lot more relaxed after he retired.\"]）；rubricZh 改為 [\"用 relaxed 表示「輕鬆的」（例如 looks more relaxed）\",\"「多了」可寫，例如 much more relaxed、a lot more relaxed 等\",\"「退休以後」可寫，例如 since he retired 等；寫 looked … after he retired 也正確\"]（原 [\"用 relaxed 表示「輕鬆的」（例如 looks more relaxed）\",\"「多了」可寫，例如 much more relaxed、a lot more relaxed 等\",\"「退休以後」可寫，例如 since he retired、after he retired 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u18-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "nature",
-      "instructionZh": "用 nature 造一個句子，說說你在大自然中喜歡做的事，或你對大自然的感覺。",
+      "type": "translate",
+      "promptZh": "我爸爸週末常常去大自然裡走走。",
+      "hintWords": [
+        "nature"
+      ],
       "referenceEn": [
-        "I feel happy when I am in nature.",
-        "Hiking is my favorite way to enjoy nature."
+        "On weekends, my father often goes walking in nature.",
+        "My dad often spends time in nature on weekends."
       ],
       "rubricZh": [
-        "nature 表示「大自然」，不加 the（例如 in nature、enjoy nature）",
-        "主詞和動詞要搭配（例如 Hiking is）"
+        "用 nature 表示「大自然」，前面不加 the（例如 in nature）",
+        "習慣用現在簡單式，主詞是單數，動詞加 s（例如 goes、spends 等）",
+        "often 可放在動詞前或句尾；「週末」可寫，例如 on weekends 等"
       ]
     }
   ],
@@ -308,6 +311,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：thunderstorm、rock 與 q13 共用，改形容詞 windy、fried（能代入、靠 made only from plants 排除）",
         "resolution": "改為 [\"風大的\", \"海邊\", \"天然的\", \"油炸的\"]（原 [\"雷雨\", \"海邊\", \"天然的\", \"岩石\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（nature）原位換成翻譯題，沿用題 id a2-u18-l02-q17；目標字沿用 nature",
+        "resolution": "改為 translate：promptZh「我喜歡在大自然裡拍照。」、hintWords [\"nature\"]、referenceEn [\"I like taking photos in nature.\",\"I like to take pictures in nature.\"]、rubricZh [\"用 nature 表示「大自然」，nature 前面不加 the（例如 in nature）\",\"like 後面可接動名詞或不定詞（例如 like taking、like to take 等）\",\"「拍照」可寫，例如 take photos、take pictures 等\"]（原 makeSentence：instructionZh「用 nature 造一個句子，說說你在大自然中喜歡做的事，或你對大自然的感覺。」、referenceEn [\"I feel happy when I am in nature.\",\"Hiking is my favorite way to enjoy nature.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與同課 q16「I prefer natural food.」主詞、句型相同（I＋喜好動詞），換主詞與句型（§12.3）",
+        "resolution": "promptZh 改為 「我爸爸週末常常去大自然裡走走。」（原 「我喜歡在大自然裡拍照。」）；referenceEn 改為 [\"On weekends, my father often goes walking in nature.\",\"My dad often spends time in nature on weekends.\"]（原 [\"I like taking photos in nature.\",\"I like to take pictures in nature.\"]）；rubricZh 改為 [\"用 nature 表示「大自然」，前面不加 the（例如 in nature）\",\"習慣用現在簡單式，主詞是單數，動詞加 s（例如 goes、spends 等）\",\"often 可放在動詞前或句尾；「週末」可寫，例如 on weekends 等\"]（原 [\"用 nature 表示「大自然」，nature 前面不加 the（例如 in nature）\",\"like 後面可接動名詞或不定詞（例如 like taking、like to take 等）\",\"「拍照」可寫，例如 take photos、take pictures 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

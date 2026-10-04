@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u08-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "mirror",
-      "instructionZh": "用 mirror 造一個句子，說說你家的鏡子在哪裡，或你什麼時候會照鏡子。",
+      "type": "translate",
+      "promptZh": "她每天早上照鏡子照很久。",
+      "hintWords": [
+        "mirror"
+      ],
       "referenceEn": [
-        "There is a long mirror in my bedroom.",
-        "I always look in the mirror before work."
+        "She looks in the mirror for a long time every morning.",
+        "Every morning, she looks in the mirror for a long time."
       ],
       "rubricZh": [
-        "mirror 是可數名詞（例如 a mirror、the mirror）",
-        "「照鏡子」可寫 look in the mirror；說位置可用 There is a mirror in…"
+        "「照鏡子」可寫，例如 look in the mirror 等",
+        "習慣用現在簡單式，主詞是 she，動詞加 s（例如 looks）",
+        "「每天早上」放句首或句尾都可以"
       ]
     }
   ],
@@ -346,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：mirror、gate 放不進 help me ___ my desk，改動詞 drill、carry（文法成立，與找不到東西語意不合）",
         "resolution": "改為 [\"鑽孔\", \"整理\", \"搬\", \"公寓\"]（原 [\"鏡子\", \"整理\", \"大門\", \"公寓\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mirror）原位換成翻譯題，沿用題 id a2-u08-l03-q17；目標字沿用 mirror",
+        "resolution": "改為 translate：promptZh「她每天早上照鏡子照很久。」、hintWords [\"mirror\"]、referenceEn [\"She looks in the mirror for a long time every morning.\",\"Every morning, she looks in the mirror for a long time.\"]、rubricZh [\"「照鏡子」可寫，例如 look in the mirror 等\",\"習慣用現在簡單式，主詞是 she，動詞加 s（例如 looks）\",\"「每天早上」放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 mirror 造一個句子，說說你家的鏡子在哪裡，或你什麼時候會照鏡子。」、referenceEn [\"There is a long mirror in my bedroom.\",\"I always look in the mirror before work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

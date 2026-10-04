@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u25-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "importantly",
-      "instructionZh": "用 importantly 造一個句子，說明一件事情最重要的部分。",
+      "type": "translate",
+      "promptZh": "這份工作很有趣，更重要的是，離我家很近。",
+      "hintWords": [
+        "importantly"
+      ],
       "referenceEn": [
-        "The hotel was cheap, and more importantly, it was clean.",
-        "Most importantly, you need to be on time."
+        "This job is interesting, and more importantly, it is near my home.",
+        "The job is fun. More importantly, it's close to my home."
       ],
       "rubricZh": [
-        "importantly 常用在例如 more importantly、most importantly 等說法，放在句首或句中",
-        "後面加逗號（例如 Most importantly, …）"
+        "用 more importantly 表示「更重要的是」",
+        "「離我家很近」可寫，例如 near my home、close to my house 等"
       ]
     }
   ],
@@ -290,6 +292,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：suitable、fancy 與 q13 共用、artificial 是 q13 正解，且形容詞放不進 turn off ___，改本單元副詞，四選項同為副詞",
         "resolution": "改為 [\"強烈地\", \"廣泛地\", \"不同地\", \"自動地\"]（原 [\"適合的\", \"花俏的\", \"人造的\", \"自動地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（importantly）原位換成翻譯題，沿用題 id a2-u25-l06-q17；目標字沿用 importantly",
+        "resolution": "改為 translate：promptZh「這份工作很有趣，更重要的是，離我家很近。」、hintWords [\"importantly\"]、referenceEn [\"This job is interesting, and more importantly, it is near my home.\",\"The job is fun. More importantly, it's close to my home.\"]、rubricZh [\"用 more importantly 表示「更重要的是」\",\"「離我家很近」可寫，例如 near my home、close to my house 等\"]（原 makeSentence：instructionZh「用 importantly 造一個句子，說明一件事情最重要的部分。」、referenceEn [\"The hotel was cheap, and more importantly, it was clean.\",\"Most importantly, you need to be on time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

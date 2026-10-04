@@ -217,16 +217,19 @@
     },
     {
       "id": "a2-u13-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "tour guide",
-      "instructionZh": "用 tour guide 造一個句子，說說一位導遊，或你想不想當導遊。",
+      "type": "translate",
+      "promptZh": "導遊請我們在九點前回到巴士上。",
+      "hintWords": [
+        "tour guide"
+      ],
       "referenceEn": [
-        "Our tour guide in Japan was very funny.",
-        "I want to be a tour guide someday."
+        "The tour guide asked us to be back on the bus before nine.",
+        "The tour guide told us to return to the bus by nine."
       ],
       "rubricZh": [
-        "tour guide 是可數名詞（例如 a tour guide、our tour guide）",
-        "主詞和動詞要搭配（例如 Our tour guide was）"
+        "用 tour guide 表示「導遊」",
+        "「請我們…」可寫，例如 asked us to…、told us to… 等，後面接原形動詞",
+        "「九點前」可寫，例如 before nine、by nine 等"
       ]
     }
   ],
@@ -324,6 +327,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：traffic light 代入「Wait for the bus at the traffic light over there.」情境上說得通，換成本單元 guidebook：「wait for the bus at the guidebook」文法通、語意不通",
         "resolution": "改為 [\"旅遊指南\", \"公車站牌\", \"加油站\", \"高速公路\"]（原 [\"紅綠燈\", \"公車站牌\", \"加油站\", \"高速公路\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（tour guide）原位換成翻譯題，沿用題 id a2-u13-l05-q16；目標字沿用 tour guide",
+        "resolution": "改為 translate：promptZh「導遊請我們在九點前回到巴士上。」、hintWords [\"tour guide\"]、referenceEn [\"The tour guide asked us to be back on the bus before nine.\",\"The tour guide told us to return to the bus by nine.\"]、rubricZh [\"用 tour guide 表示「導遊」\",\"「請我們…」可寫，例如 asked us to…、told us to… 等，後面接原形動詞\",\"「九點前」可寫，例如 before nine、by nine 等\"]（原 makeSentence：instructionZh「用 tour guide 造一個句子，說說一位導遊，或你想不想當導遊。」、referenceEn [\"Our tour guide in Japan was very funny.\",\"I want to be a tour guide someday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

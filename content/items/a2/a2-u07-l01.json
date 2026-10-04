@@ -214,16 +214,19 @@
     },
     {
       "id": "a2-u07-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "sweater",
-      "instructionZh": "用 sweater 造一個句子，描述一件毛衣（例如顏色、材質或是誰送的）。",
+      "type": "translate",
+      "promptZh": "這件毛衣很暖和，可是有點重。",
+      "hintWords": [
+        "sweater"
+      ],
       "referenceEn": [
-        "My mother gave me a red sweater.",
-        "This sweater is made of wool."
+        "This sweater is warm, but it is a bit heavy.",
+        "This sweater is very warm but a little heavy."
       ],
       "rubricZh": [
-        "sweater 是可數名詞，單數前要有 a、my、this 等（例如 a red sweater）",
-        "主詞和動詞要搭配（例如 This sweater is）"
+        "用 sweater 表示「毛衣」",
+        "「有點重」可寫，例如 a bit heavy、a little heavy 等",
+        "轉折可寫，例如 but 等"
       ]
     }
   ],
@@ -309,6 +312,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：It's raining. Put on your sweater. 只看英文說得通（下雨天冷）；換成 apron，與下雨無關，語意不通",
         "resolution": "改為 [\"圍裙\", \"雨衣\", \"鑽石\", \"襪子\"]（原 [\"毛衣\", \"雨衣\", \"鑽石\", \"襪子\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（sweater）原位換成翻譯題，沿用題 id a2-u07-l01-q16；目標字沿用 sweater",
+        "resolution": "改為 translate：promptZh「這件毛衣是用羊毛做的。」、hintWords [\"sweater\"]、referenceEn [\"This sweater is made of wool.\",\"This sweater is made from wool.\"]、rubricZh [\"用 sweater 表示「毛衣」\",\"「用…做的」可寫，例如 is made of、is made from 等\"]（原 makeSentence：instructionZh「用 sweater 造一個句子，描述一件毛衣（例如顏色、材質或是誰送的）。」、referenceEn [\"My mother gave me a red sweater.\",\"This sweater is made of wool.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 與 a2-u03-l01 單字卡 wool 例句「This sweater is made of wool.」一字不差，換情境",
+        "resolution": "promptZh 改為 「這件毛衣很暖和，可是有點重。」（原 「這件毛衣是用羊毛做的。」）；referenceEn 改為 [\"This sweater is warm, but it is a bit heavy.\",\"This sweater is very warm but a little heavy.\"]（原 [\"This sweater is made of wool.\",\"This sweater is made from wool.\"]）；rubricZh 改為 [\"用 sweater 表示「毛衣」\",\"「有點重」可寫，例如 a bit heavy、a little heavy 等\",\"轉折可寫，例如 but 等\"]（原 [\"用 sweater 表示「毛衣」\",\"「用…做的」可寫，例如 is made of、is made from 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

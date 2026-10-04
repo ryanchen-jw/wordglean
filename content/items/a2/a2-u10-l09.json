@@ -214,16 +214,19 @@
     },
     {
       "id": "a2-u10-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "omelet",
-      "instructionZh": "用 omelet 造一個句子，說說你會在歐姆蛋裡放什麼，或誰會做歐姆蛋。",
+      "type": "translate",
+      "promptZh": "我爸爸每個星期天早上做歐姆蛋給我們吃。",
+      "hintWords": [
+        "omelet"
+      ],
       "referenceEn": [
-        "I put ham and cheese in my omelet.",
-        "My father makes a great omelet with onions."
+        "My father makes omelets for us every Sunday morning.",
+        "Every Sunday morning, my dad makes us omelets."
       ],
       "rubricZh": [
-        "omelet 是可數名詞（例如 an omelet、my omelet）",
-        "「放在蛋捲裡」可用 in（例如 in my omelet）"
+        "用 omelet 表示「歐姆蛋」，單數、複數都可以（例如 omelets、an omelet 等）",
+        "習慣用現在簡單式，主詞是單數，動詞加 s（例如 makes、cooks 等）",
+        "「做…給我們吃」可寫，例如 makes omelets for us、makes us omelets 等"
       ]
     }
   ],
@@ -363,6 +366,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：olive oil、main course 與 q12 共用，改本單元字 barbecue、tablespoon；fast food 已自 q12 移除",
         "resolution": "改為 [\"烤肉\", \"可樂\", \"速食\", \"大湯匙\"]（原 [\"橄欖油\", \"可樂\", \"速食\", \"主菜\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（omelet）原位換成翻譯題，沿用題 id a2-u10-l09-q16；目標字沿用 omelet",
+        "resolution": "改為 translate：promptZh「我爸爸每個星期天早上做歐姆蛋給我們吃。」、hintWords [\"omelet\"]、referenceEn [\"My father makes omelets for us every Sunday morning.\",\"Every Sunday morning, my dad makes us omelets.\"]、rubricZh [\"用 omelet 表示「歐姆蛋」，單數、複數都可以（例如 omelets、an omelet 等）\",\"習慣用現在簡單式，主詞是單數，動詞加 s（例如 makes、cooks 等）\",\"「做…給我們吃」可寫，例如 makes omelets for us、makes us omelets 等\"]（原 makeSentence：instructionZh「用 omelet 造一個句子，說說你會在歐姆蛋裡放什麼，或誰會做歐姆蛋。」、referenceEn [\"I put ham and cheese in my omelet.\",\"My father makes a great omelet with onions.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

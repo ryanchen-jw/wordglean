@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u09-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "lifestyle",
-      "instructionZh": "用 lifestyle 造一個句子，說說你現在或你想要的生活方式。",
+      "type": "translate",
+      "promptZh": "我很喜歡她簡單的生活方式。",
+      "hintWords": [
+        "lifestyle"
+      ],
       "referenceEn": [
-        "I want to have a healthier lifestyle.",
-        "My lifestyle is very busy because of work."
+        "I really like her simple lifestyle.",
+        "I like her simple lifestyle very much."
       ],
       "rubricZh": [
-        "lifestyle 是名詞「生活方式」（例如 a healthy lifestyle、my lifestyle）",
-        "主詞和動詞要搭配（例如 My lifestyle is）"
+        "用 lifestyle 表示「生活方式」",
+        "「很喜歡」可寫，例如 really like、like very much 等"
       ]
     }
   ],
@@ -354,6 +356,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：bonus 與 q14 共用，改形容詞 awake（fell ___ 靠搭配排除）",
         "resolution": "改為 [\"睡著的\", \"睏的\", \"醒著的\", \"職員\"]（原 [\"睡著的\", \"睏的\", \"獎金\", \"職員\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（lifestyle）原位換成翻譯題，沿用題 id a2-u09-l01-q17；目標字沿用 lifestyle",
+        "resolution": "改為 translate：promptZh「我很喜歡她簡單的生活方式。」、hintWords [\"lifestyle\"]、referenceEn [\"I really like her simple lifestyle.\",\"I like her simple lifestyle very much.\"]、rubricZh [\"用 lifestyle 表示「生活方式」\",\"「很喜歡」可寫，例如 really like、like very much 等\"]（原 makeSentence：instructionZh「用 lifestyle 造一個句子，說說你現在或你想要的生活方式。」、referenceEn [\"I want to have a healthier lifestyle.\",\"My lifestyle is very busy because of work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

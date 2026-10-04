@@ -214,16 +214,19 @@
     },
     {
       "id": "a2-u10-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "spaghetti",
-      "instructionZh": "用 spaghetti 造一個句子，說說你喜歡怎麼吃義大利麵，或誰常煮義大利麵。",
+      "type": "translate",
+      "promptZh": "我們昨天晚餐吃義大利麵。",
+      "hintWords": [
+        "spaghetti"
+      ],
       "referenceEn": [
-        "I like spaghetti with lots of cheese.",
-        "My sister cooks spaghetti every Saturday."
+        "We had spaghetti for dinner yesterday.",
+        "Yesterday, we ate spaghetti for dinner."
       ],
       "rubricZh": [
-        "spaghetti 是不可數名詞（例如 some spaghetti，不寫 spaghettis）",
-        "主詞和動詞要搭配（例如 My sister cooks）"
+        "用 spaghetti 表示「義大利麵」，spaghetti 不可數，不加 s",
+        "昨天的事用過去式（例如 had、ate 等）",
+        "「晚餐吃…」可寫，例如 had…for dinner、ate…for dinner 等"
       ]
     }
   ],
@@ -339,6 +342,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：raw 代入「Do you want your potatoes raw or fried?」英文也可成立（生／炸二選一），換成 wet：「potatoes wet or fried」文法通但不是烹調選項，語意不通",
         "resolution": "改為 [\"水煮的\", \"濕的\", \"哈密瓜\", \"口渴的\"]（原 [\"水煮的\", \"生的\", \"哈密瓜\", \"口渴的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（spaghetti）原位換成翻譯題，沿用題 id a2-u10-l08-q16；目標字沿用 spaghetti",
+        "resolution": "改為 translate：promptZh「我們昨天晚餐吃義大利麵。」、hintWords [\"spaghetti\"]、referenceEn [\"We had spaghetti for dinner yesterday.\",\"Yesterday, we ate spaghetti for dinner.\"]、rubricZh [\"用 spaghetti 表示「義大利麵」，spaghetti 不可數，不加 s\",\"昨天的事用過去式（例如 had、ate 等）\",\"「晚餐吃…」可寫，例如 had…for dinner、ate…for dinner 等\"]（原 makeSentence：instructionZh「用 spaghetti 造一個句子，說說你喜歡怎麼吃義大利麵，或誰常煮義大利麵。」、referenceEn [\"I like spaghetti with lots of cheese.\",\"My sister cooks spaghetti every Saturday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -199,31 +199,34 @@
     {
       "id": "a2-u27-l05-q15",
       "type": "translate",
-      "promptZh": "說實話，我不喜歡這部電影。",
+      "promptZh": "說實話，我覺得這個主意不太好。",
       "hintWords": [
         "frank"
       ],
       "referenceEn": [
-        "To be frank, I don't like this movie.",
-        "To be frank, I don't like this film."
+        "To be frank, I don't think this idea is very good.",
+        "To be frank, I don't think this is a very good idea."
       ],
       "rubricZh": [
-        "「說實話」可寫，例如 to be frank 等",
-        "to be frank 常放句首、後面加逗號（例如 To be frank, …），放句尾也可以"
+        "用 to be frank 表示「說實話」，可放句首或句尾",
+        "「我覺得…不太好」可寫，例如 I don't think…is very good、I don't think it's a good idea 等"
       ]
     },
     {
       "id": "a2-u27-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "luckily",
-      "instructionZh": "用 luckily 造一個句子，說說一件幸好發生的事。",
+      "type": "translate",
+      "promptZh": "幸好我們在下雨前到家了。",
+      "hintWords": [
+        "luckily"
+      ],
       "referenceEn": [
-        "Luckily, the rain stopped before the game.",
-        "I missed the bus, but luckily my dad drove me to school."
+        "We luckily got home before it rained.",
+        "Luckily, we got home before the rain started."
       ],
       "rubricZh": [
-        "luckily 常放句首，後面加逗號（例如 Luckily, …）",
-        "也可以放在句中（例如 but luckily…）"
+        "用 luckily 表示「幸好」，可放句首或動詞前",
+        "過去的事用過去式（例如 got home）",
+        "「下雨前」可寫，例如 before it rained、before the rain started 等"
       ]
     }
   ],
@@ -315,6 +318,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「\"Who ate my cake?\" she shouted happily.」開玩笑情境勉強成立，happily 換成 partly，「部分地大叫」語意不通",
         "resolution": "改為 [\"部分地\", \"幸好\", \"輕聲地\", \"生氣地\"]（原 [\"快樂地\", \"幸好\", \"輕聲地\", \"生氣地\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（luckily）原位換成翻譯題，沿用題 id a2-u27-l05-q16；目標字沿用 luckily",
+        "resolution": "改為 translate：promptZh「幸好我們在下雨前到家了。」、hintWords [\"luckily\"]、referenceEn [\"We luckily got home before it rained.\",\"Luckily, we got home before the rain started.\"]、rubricZh [\"用 luckily 表示「幸好」，可放句首或動詞前\",\"過去的事用過去式（例如 got home）\",\"「下雨前」可寫，例如 before it rained、before the rain started 等\"]（原 makeSentence：instructionZh「用 luckily 造一個句子，說說一件幸好發生的事。」、referenceEn [\"Luckily, the rain stopped before the game.\",\"I missed the bus, but luckily my dad drove me to school.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u27-l01-q16（disappointed with this movie）同為對電影的負面評價、共用 movie（selfcheck-translate 字面 50%）；改本題（frank 另有閱讀短文情境，a2-u27-l01-q16 保留）",
+        "resolution": "改為 promptZh「說實話，我覺得這個主意不太好。」、referenceEn [\"To be frank, I don't think this idea is very good.\",\"To be frank, I don't think this is a very good idea.\"]、rubricZh [\"用 to be frank 表示「說實話」，放句首\",\"「我覺得…不太好」可寫，例如 I don't think…is very good、I don't think it's a good idea 等\"]（原 promptZh「說實話，我不喜歡這部電影。」、referenceEn [\"To be frank, I don't like this movie.\",\"To be frank, I don't like this film.\"]、rubricZh [\"「說實話」可寫，例如 to be frank 等\",\"to be frank 常放句首、後面加逗號（例如 To be frank, …），放句尾也可以\"]）；題 id、hintWords 不變",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長裁示：第③關：SUS 要點寫死 to be frank 放句首",
+        "resolution": "rubricZh 改為 [\"用 to be frank 表示「說實話」，可放句首或句尾\",\"「我覺得…不太好」可寫，例如 I don't think…is very good、I don't think it's a good idea 等\"]（原 [\"用 to be frank 表示「說實話」，放句首\",\"「我覺得…不太好」可寫，例如 I don't think…is very good、I don't think it's a good idea 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

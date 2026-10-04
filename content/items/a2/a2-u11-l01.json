@@ -230,16 +230,19 @@
     },
     {
       "id": "a2-u11-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "inexpensive",
-      "instructionZh": "用 inexpensive 造一個句子，介紹一家便宜又不錯的店、餐廳或旅館。",
+      "type": "translate",
+      "promptZh": "我在找一間不貴的旅館。",
+      "hintWords": [
+        "inexpensive"
+      ],
       "referenceEn": [
-        "This shop sells inexpensive clothes.",
-        "I know an inexpensive hotel in Tainan."
+        "I'm looking for an inexpensive hotel.",
+        "I am looking for an inexpensive hotel."
       ],
       "rubricZh": [
-        "inexpensive 表示「不貴的」，可放名詞前或 be 動詞後（例如 an inexpensive hotel、is inexpensive）",
-        "用不定冠詞時要用 an（例如 an inexpensive hotel）"
+        "用 inexpensive 表示「不貴的」，放在名詞前（例如 an inexpensive hotel）",
+        "inexpensive 開頭是母音，前面用 an",
+        "「在找」可寫，例如 am looking for、want to find 等"
       ]
     }
   ],
@@ -331,6 +334,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：mall 與 q13 共用；原本無干擾項放得進動詞空格，mall、euro 改 told、gave（能代入、靠詞義排除）",
         "resolution": "改為 [\"告訴\", \"給\", \"花費\", \"不貴的\"]（原 [\"購物中心\", \"歐元\", \"花費\", \"不貴的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（inexpensive）原位換成翻譯題，沿用題 id a2-u11-l01-q17；目標字沿用 inexpensive",
+        "resolution": "改為 translate：promptZh「我在找一間不貴的旅館。」、hintWords [\"inexpensive\"]、referenceEn [\"I'm looking for an inexpensive hotel.\",\"I am looking for an inexpensive hotel.\"]、rubricZh [\"用 inexpensive 表示「不貴的」，放在名詞前（例如 an inexpensive hotel）\",\"inexpensive 開頭是母音，前面用 an\",\"「在找」可寫，例如 am looking for、want to find 等\"]（原 makeSentence：instructionZh「用 inexpensive 造一個句子，介紹一家便宜又不錯的店、餐廳或旅館。」、referenceEn [\"This shop sells inexpensive clothes.\",\"I know an inexpensive hotel in Tainan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

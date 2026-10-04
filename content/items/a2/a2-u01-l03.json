@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u01-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "probably",
-      "instructionZh": "用 probably 造一個句子，說說你明天大概會做的事。",
+      "type": "translate",
+      "promptZh": "他大概已經回家了。",
+      "hintWords": [
+        "probably"
+      ],
       "referenceEn": [
-        "I will probably go to bed early tomorrow.",
-        "Tomorrow I will probably eat lunch with my friends."
+        "He has probably gone home.",
+        "He probably went home already."
       ],
       "rubricZh": [
-        "probably 表示「大概、很可能」，放在句中合理的位置（例如 will probably go、I'm probably going to…）",
-        "說明天的事用表示未來的寫法（例如 will、be going to）"
+        "用 probably 表示「大概」，可放在 has 後面或動詞前（例如 has probably gone、probably went 等）",
+        "「已經回家了」時態可用現在完成式或過去式（例如 has gone home、went home already 等）"
       ]
     }
   ],
@@ -330,6 +332,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：A big dog is running among us. 只看英文說得通（狗在我們之間跑）；among 換成 while，後面不能接 us，文法不通",
         "resolution": "改為 [\"當⋯的時候\", \"沒有\", \"與⋯對抗\", \"朝著\"]（原 [\"在⋯之中\", \"沒有\", \"與⋯對抗\", \"朝著\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（probably）原位換成翻譯題，沿用題 id a2-u01-l03-q17；目標字沿用 probably",
+        "resolution": "改為 translate：promptZh「他大概已經回家了。」、hintWords [\"probably\"]、referenceEn [\"He has probably gone home.\",\"He probably went home already.\"]、rubricZh [\"用 probably 表示「大概」，可放在 has 後面或動詞前（例如 has probably gone、probably went 等）\",\"「已經回家了」時態可用現在完成式或過去式（例如 has gone home、went home already 等）\"]（原 makeSentence：instructionZh「用 probably 造一個句子，說說你明天大概會做的事。」、referenceEn [\"I will probably go to bed early tomorrow.\",\"Tomorrow I will probably eat lunch with my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

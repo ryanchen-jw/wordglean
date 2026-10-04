@@ -215,16 +215,19 @@
     },
     {
       "id": "a2-u07-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "sunglasses",
-      "instructionZh": "用 sunglasses 造一個句子，說說你什麼時候會戴太陽眼鏡。",
+      "type": "translate",
+      "promptZh": "這副太陽眼鏡是誰的？",
+      "hintWords": [
+        "sunglasses"
+      ],
       "referenceEn": [
-        "I wear sunglasses when I drive in summer.",
-        "I always wear sunglasses at the beach."
+        "Whose sunglasses are these?",
+        "Who do these sunglasses belong to?"
       ],
       "rubricZh": [
-        "sunglasses 一律用複數（例如 my sunglasses、a pair of sunglasses）",
-        "「戴」可寫例如 wear、put on（wear sunglasses、put on my sunglasses）"
+        "sunglasses 是複數，代名詞與動詞配合複數（例如 these、are、do 等）",
+        "「是誰的」可寫，例如 Whose sunglasses are these?、Whose are these sunglasses?、belong to 等",
+        "句尾用問號"
       ]
     }
   ],
@@ -370,6 +373,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：只看英文：It's very sunny. Put on your sweater. 天冷的晴天也說得通，sweater 換成本單元的 belt（晴天要戴的不是皮帶）",
         "resolution": "改為 [\"洗髮精\", \"雨衣\", \"太陽眼鏡\", \"皮帶\"]（原 [\"洗髮精\", \"雨衣\", \"太陽眼鏡\", \"毛衣\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（sunglasses）原位換成翻譯題，沿用題 id a2-u07-l03-q16；目標字沿用 sunglasses",
+        "resolution": "改為 translate：promptZh「這副太陽眼鏡是誰的？」、hintWords [\"sunglasses\"]、referenceEn [\"Whose sunglasses are these?\",\"Who do these sunglasses belong to?\"]、rubricZh [\"sunglasses 是複數，代名詞與動詞配合複數（例如 these、are、do 等）\",\"「是誰的」可寫，例如 Whose sunglasses are these?、Whose are these sunglasses?、belong to 等\",\"句尾用問號\"]（原 makeSentence：instructionZh「用 sunglasses 造一個句子，說說你什麼時候會戴太陽眼鏡。」、referenceEn [\"I wear sunglasses when I drive in summer.\",\"I always wear sunglasses at the beach.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

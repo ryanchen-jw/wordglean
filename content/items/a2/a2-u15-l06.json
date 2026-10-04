@@ -214,16 +214,19 @@
     },
     {
       "id": "a2-u15-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "video game",
-      "instructionZh": "用 video game 造一個句子，說說你或家人玩電玩的習慣。",
+      "type": "translate",
+      "promptZh": "這個電玩對我來說太難了。",
+      "hintWords": [
+        "video game"
+      ],
       "referenceEn": [
-        "I play video games for one hour after dinner.",
-        "My brother plays video games every weekend."
+        "This video game is too hard for me.",
+        "This video game is too difficult for me."
       ],
       "rubricZh": [
-        "video game 是可數名詞（例如 a video game、video games）",
-        "說習慣用現在式（例如 play、plays）"
+        "用 video game 表示「電玩」",
+        "「太難」可寫，例如 too hard、too difficult 等",
+        "「對我來說」可寫，例如 for me 等，放句首或句尾都可以"
       ]
     }
   ],
@@ -465,6 +468,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：board game 與 q12 共用，改本單元名詞 drawing（rhythm、tune 會變也對故不用）",
         "resolution": "改為 [\"歌詞\", \"MP3 播放器\", \"圖畫\", \"數位相機\"]（原 [\"歌詞\", \"MP3 播放器\", \"桌遊\", \"數位相機\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（video game）原位換成翻譯題，沿用題 id a2-u15-l06-q16；目標字沿用 video game",
+        "resolution": "改為 translate：promptZh「這個電玩對我來說太難了。」、hintWords [\"video game\"]、referenceEn [\"This video game is too hard for me.\",\"This video game is too difficult for me.\"]、rubricZh [\"用 video game 表示「電玩」\",\"「太難」可寫，例如 too hard、too difficult 等\",\"「對我來說」可寫，例如 for me 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 video game 造一個句子，說說你或家人玩電玩的習慣。」、referenceEn [\"I play video games for one hour after dinner.\",\"My brother plays video games every weekend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

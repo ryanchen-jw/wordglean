@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u25-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "usual",
-      "instructionZh": "用 usual 造一個句子，說說你平常的習慣，或今天和平常不一樣的事。",
+      "type": "translate",
+      "promptZh": "今天街上的人比平常多。",
+      "hintWords": [
+        "usual"
+      ],
       "referenceEn": [
-        "I got up earlier than usual today.",
-        "As usual, I had rice for lunch."
+        "There are more people on the street than usual today.",
+        "Today there are more people on the street than usual."
       ],
       "rubricZh": [
-        "usual 常用在 as usual、than usual（例如 earlier than usual）",
-        "時態配合句意（例如 got up、had）"
+        "用 than usual 表示「比平常」",
+        "「街上的人比較多」可寫，例如 There are more people on the street 等"
       ]
     }
   ],
@@ -344,6 +346,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My grandfather made this golden chair from an old tree.」（塗成金色）勉強成立，silver 同理；golden 換 metal、silver 換 stone，用老樹做出金屬／石頭椅子語意不通",
         "resolution": "改為 [\"金屬\", \"石頭\", \"木製的\", \"平常的\"]（原 [\"金色的\", \"銀的\", \"木製的\", \"平常的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（usual）原位換成翻譯題，沿用題 id a2-u25-l03-q17；目標字沿用 usual",
+        "resolution": "改為 translate：promptZh「今天街上的人比平常多。」、hintWords [\"usual\"]、referenceEn [\"There are more people on the street than usual today.\",\"Today there are more people on the street than usual.\"]、rubricZh [\"用 than usual 表示「比平常」\",\"「街上的人比較多」可寫，例如 There are more people on the street 等\"]（原 makeSentence：instructionZh「用 usual 造一個句子，說說你平常的習慣，或今天和平常不一樣的事。」、referenceEn [\"I got up earlier than usual today.\",\"As usual, I had rice for lunch.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

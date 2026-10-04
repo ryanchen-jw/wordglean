@@ -229,17 +229,18 @@
     },
     {
       "id": "a2-u01-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "except",
-      "instructionZh": "用 except 造一個句子，說說某一類東西你都喜歡，只有一樣例外。",
+      "type": "translate",
+      "promptZh": "這個房間除了一張床，什麼都沒有。",
+      "hintWords": [
+        "except"
+      ],
       "referenceEn": [
-        "I like all vegetables except carrots.",
-        "I like all kinds of fruit except bananas."
+        "There is nothing in this room except a bed.",
+        "This room has nothing except a bed."
       ],
       "rubricZh": [
-        "except 後面接名詞，表示「除了⋯之外」（例如 except carrots）",
-        "except 前面常是表示「全部」的說法（例如 all vegetables、every kind of fruit）",
-        "句子說的是自己的喜好，主詞是 I"
+        "用 except 表示「除了…」（例如 except a bed、except for a bed 等）",
+        "「什麼都沒有」可寫，例如 There is nothing、has nothing 等"
       ]
     }
   ],
@@ -337,6 +338,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We cooked the whole dinner somewhere. 只看英文文法語意都可成立；換成 anymore，只能用於否定句，文法不通",
         "resolution": "改為 [\"不再\", \"他自己\", \"我們自己\", \"除了\"]（原 [\"在某處\", \"他自己\", \"我們自己\", \"除了\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（except）原位換成翻譯題，沿用題 id a2-u01-l07-q17；目標字沿用 except",
+        "resolution": "改為 translate：promptZh「這個房間除了一張床，什麼都沒有。」、hintWords [\"except\"]、referenceEn [\"There is nothing in this room except a bed.\",\"This room has nothing except a bed.\"]、rubricZh [\"用 except 表示「除了…」（例如 except a bed、except for a bed 等）\",\"「什麼都沒有」可寫，例如 There is nothing、has nothing 等\"]（原 makeSentence：instructionZh「用 except 造一個句子，說說某一類東西你都喜歡，只有一樣例外。」、referenceEn [\"I like all vegetables except carrots.\",\"I like all kinds of fruit except bananas.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

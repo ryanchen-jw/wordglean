@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u24-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "influence",
-      "instructionZh": "用 influence 造一個句子，說說對你影響很大的一個人或一件事。",
+      "type": "translate",
+      "promptZh": "我選這份工作是受到我爸爸的影響。",
+      "hintWords": [
+        "influence"
+      ],
       "referenceEn": [
-        "My father had a big influence on me.",
-        "This book had a great influence on my life."
+        "I chose this job because of my father's influence.",
+        "Because of my father's influence, I chose this job."
       ],
       "rubricZh": [
-        "influence 常寫 have an influence on…（例如 a big influence on me）",
-        "時態配合句意（例如 had、has）"
+        "用 influence 表示「影響」（例如 my father's influence）",
+        "時態可用過去式或現在完成式（例如 chose、have chosen 等）",
+        "也可寫，例如 I chose this job under my father's influence 等"
       ]
     }
   ],
@@ -284,6 +287,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：solution 與 q13 共用、lack 放不進 has ___ ideas，改形容詞 traditional、cheap",
         "resolution": "改為 [\"先進的\", \"便宜的\", \"依靠\", \"傳統的\"]（原 [\"先進的\", \"缺乏\", \"依靠\", \"解決辦法\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（influence）原位換成翻譯題，沿用題 id a2-u24-l03-q17；目標字沿用 influence",
+        "resolution": "改為 translate：promptZh「我選這份工作是受到我爸爸的影響。」、hintWords [\"influence\"]、referenceEn [\"I chose this job because of my father's influence.\",\"Because of my father's influence, I chose this job.\"]、rubricZh [\"用 influence 表示「影響」（例如 my father's influence）\",\"過去的事用過去式（例如 chose）\",\"也可寫，例如 I chose this job under my father's influence 等\"]（原 makeSentence：instructionZh「用 influence 造一個句子，說說對你影響很大的一個人或一件事。」、referenceEn [\"My father had a big influence on me.\",\"This book had a great influence on my life.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：自查同類（中文沒有時間詞，要點只收過去式）：加收現在完成式（§12.11）",
+        "resolution": "rubricZh 改為 [\"用 influence 表示「影響」（例如 my father's influence）\",\"時態可用過去式或現在完成式（例如 chose、have chosen 等）\",\"也可寫，例如 I chose this job under my father's influence 等\"]（原 [\"用 influence 表示「影響」（例如 my father's influence）\",\"過去的事用過去式（例如 chose）\",\"也可寫，例如 I chose this job under my father's influence 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

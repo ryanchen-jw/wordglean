@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u19-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "independence",
-      "instructionZh": "用 independence 造一個句子，說說你什麼時候得到（或想要）更多獨立自主。",
+      "type": "translate",
+      "promptZh": "有了自己的車，我更獨立自主了。",
+      "hintWords": [
+        "independence"
+      ],
       "referenceEn": [
-        "I got more independence when I started university.",
-        "Having my own job gives me independence."
+        "Having my own car gives me more independence.",
+        "My own car gives me more independence."
       ],
       "rubricZh": [
-        "independence 是不可數名詞（例如 more independence）",
-        "說時間或原因可寫例如 when…"
+        "用 independence 表示「獨立自主」（例如 more independence）",
+        "「有了自己的車」可寫，例如 Having my own car、My own car 等",
+        "時態可用現在式或過去式（例如 gives、gave 等）"
       ]
     }
   ],
@@ -308,6 +311,12 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
         "resolution": "改為 \"警察正在找一名行為暴力的男子。\"（原 \"昨晚有一場猛烈的暴風雨。\"）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（independence）原位換成翻譯題，沿用題 id a2-u19-l04-q17；目標字沿用 independence",
+        "resolution": "改為 translate：promptZh「有了自己的車，我更獨立自主了。」、hintWords [\"independence\"]、referenceEn [\"Having my own car gives me more independence.\",\"My own car gives me more independence.\"]、rubricZh [\"用 independence 表示「獨立自主」（例如 more independence）\",\"「有了自己的車」可寫，例如 Having my own car、My own car 等\",\"時態可用現在式或過去式（例如 gives、gave 等）\"]（原 makeSentence：instructionZh「用 independence 造一個句子，說說你什麼時候得到（或想要）更多獨立自主。」、referenceEn [\"I got more independence when I started university.\",\"Having my own job gives me independence.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

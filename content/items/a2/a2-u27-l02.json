@@ -225,16 +225,17 @@
     },
     {
       "id": "a2-u27-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "ambition",
-      "instructionZh": "用 ambition 造一個句子，說說你的志向或夢想。",
+      "type": "translate",
+      "promptZh": "她的志向是成為一位醫生。",
+      "hintWords": [
+        "ambition"
+      ],
       "referenceEn": [
-        "My ambition is to travel around the world.",
-        "I have an ambition to open my own cafe."
+        "Her ambition is to become a doctor.",
+        "Her ambition is to be a doctor."
       ],
       "rubricZh": [
-        "ambition 常寫 My ambition is to＋原形動詞",
-        "可寫例如 have an ambition to…"
+        "用 ambition 表示「志向」，後面接 to＋原形動詞（例如 is to become、is to be 等）"
       ]
     }
   ],
@@ -326,6 +327,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：unfair 放不進 in perfect ___，改名詞 silence，連同 regret 共兩個干擾項文法成立",
         "resolution": "改為 [\"沉默\", \"後悔\", \"和聲\", \"快樂地\"]（原 [\"不公平的\", \"後悔\", \"和聲\", \"快樂地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ambition）原位換成翻譯題，沿用題 id a2-u27-l02-q17；目標字沿用 ambition",
+        "resolution": "改為 translate：promptZh「她的志向是成為一位醫生。」、hintWords [\"ambition\"]、referenceEn [\"Her ambition is to become a doctor.\",\"Her ambition is to be a doctor.\"]、rubricZh [\"用 ambition 表示「志向」，後面接 to＋原形動詞（例如 is to become、is to be 等）\"]（原 makeSentence：instructionZh「用 ambition 造一個句子，說說你的志向或夢想。」、referenceEn [\"My ambition is to travel around the world.\",\"I have an ambition to open my own cafe.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u05-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "female",
-      "instructionZh": "用 female 造一個句子，說說某個團隊或公司裡的女性成員。",
+      "type": "translate",
+      "promptZh": "那位女歌手的聲音很好聽。",
+      "hintWords": [
+        "female"
+      ],
       "referenceEn": [
-        "My company has many female engineers.",
-        "Our team has three female players."
+        "That female singer has a beautiful voice.",
+        "The female singer has a lovely voice."
       ],
       "rubricZh": [
-        "female 當形容詞放在名詞前（例如 female engineers、a female boss）",
-        "主詞和動詞要搭配（例如 My company has）"
+        "用 female 表示「女性的」，放在名詞前（例如 female singer）",
+        "「聲音很好聽」可寫，例如 has a beautiful voice、her voice is very nice 等"
       ]
     }
   ],
@@ -378,6 +380,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My parents got sick in 1990.／got hurt in 1990. 只看英文都說得通；換成本課 female、senior，get＋形容詞文法通但語意不通",
         "resolution": "改為 [\"女性的\", \"人群\", \"已婚的\", \"資深的\"]（原 [\"生病的\", \"人群\", \"已婚的\", \"受傷的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（female）原位換成翻譯題，沿用題 id a2-u05-l02-q17；目標字沿用 female",
+        "resolution": "改為 translate：promptZh「那位女歌手的聲音很好聽。」、hintWords [\"female\"]、referenceEn [\"That female singer has a beautiful voice.\",\"The female singer has a lovely voice.\"]、rubricZh [\"用 female 表示「女性的」，放在名詞前（例如 female singer）\",\"「聲音很好聽」可寫，例如 has a beautiful voice、her voice is very nice 等\"]（原 makeSentence：instructionZh「用 female 造一個句子，說說某個團隊或公司裡的女性成員。」、referenceEn [\"My company has many female engineers.\",\"Our team has three female players.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

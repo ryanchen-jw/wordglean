@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u17-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "plural",
-      "instructionZh": "用 plural 造一個句子，說說某個英文字的複數。",
+      "type": "translate",
+      "promptZh": "老師說我寫的複數錯了。",
+      "hintWords": [
+        "plural"
+      ],
       "referenceEn": [
-        "The plural of child is children.",
-        "Mouse has a strange plural: mice."
+        "My teacher said my plural was wrong.",
+        "The teacher said that my plural was wrong."
       ],
       "rubricZh": [
-        "plural 表示「複數」（例如 the plural of child）",
-        "主詞和動詞要搭配（例如 The plural of child is）"
+        "用 plural 表示「複數」（例如 my plural、the plural I wrote 等）",
+        "時態可用過去式或現在式（例如 said…was、says…is 等）；said 後面的 that 可加可省略"
       ]
     }
   ],
@@ -281,6 +283,18 @@
         "message": "執行長最終複審修正：重新盲答：兩個干擾項「寫日期和名字」「寫自己的名字」意思重疊，換掉後者；正解仍最短、無異常值",
         "resolution": "改為 [\"在每頁寫上日期和名字\",\"英文單字的正確拼寫方式\",\"大寫字母和標點符號\"]（原 [\"在每頁寫上日期和名字\",\"在作業上寫自己的名字\",\"大寫字母和標點符號\"]）",
         "resolvedAt": "2026-10-02T19:13:41Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（plural）原位換成翻譯題，沿用題 id a2-u17-l06-q17；目標字沿用 plural",
+        "resolution": "改為 translate：promptZh「我總是忘記這個字的複數。」、hintWords [\"plural\"]、referenceEn [\"I always forget the plural of this word.\",\"I always forget this word's plural.\"]、rubricZh [\"用 plural 表示「複數」（例如 the plural of this word、the plural form 等）\",\"習慣用現在簡單式，always 放在動詞前（例如 always forget）\"]（原 makeSentence：instructionZh「用 plural 造一個句子，說說某個英文字的複數。」、referenceEn [\"The plural of child is children.\",\"Mouse has a strange plural: mice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與同單元 a2-u17-l05 單字卡 comparative「I always forget the comparative of 'good'.」主詞、情境、句型都一樣，換主詞、情境與句型（避開同課單字卡 capital letter「Please write…」句型）",
+        "resolution": "promptZh 改為 「老師說我寫的複數錯了。」（原 「我總是忘記這個字的複數。」）；referenceEn 改為 [\"My teacher said my plural was wrong.\",\"The teacher said that my plural was wrong.\"]（原 [\"I always forget the plural of this word.\",\"I always forget this word's plural.\"]）；rubricZh 改為 [\"用 plural 表示「複數」（例如 my plural、the plural I wrote 等）\",\"時態可用過去式或現在式（例如 said…was、says…is 等）；said 後面的 that 可加可省略\"]（原 [\"用 plural 表示「複數」（例如 the plural of this word、the plural form 等）\",\"習慣用現在簡單式，always 放在動詞前（例如 always forget）\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

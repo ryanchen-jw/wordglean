@@ -225,16 +225,18 @@
     },
     {
       "id": "a2-u18-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "insect",
-      "instructionZh": "用 insect 造一個句子，說說你喜歡或害怕的一種昆蟲。",
+      "type": "translate",
+      "promptZh": "我弟弟很怕昆蟲。",
+      "hintWords": [
+        "insect"
+      ],
       "referenceEn": [
-        "I am afraid of big insects.",
-        "I like butterflies because they are beautiful."
+        "My brother is afraid of insects.",
+        "My younger brother is very afraid of insects."
       ],
       "rubricZh": [
-        "insect 是可數名詞（例如 an insect、insects）",
-        "表達喜歡或害怕可寫，例如 I like…、I am afraid of… 等"
+        "用 insect 表示「昆蟲」，泛指用複數（例如 insects）",
+        "「很怕」可寫，例如 is afraid of、is scared of 等"
       ]
     }
   ],
@@ -308,6 +310,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：dam 是 q13 正解，改本單元名詞 fog",
         "resolution": "改為 [\"鴨子\", \"陽光\", \"水災\", \"霧\"]（原 [\"鴨子\", \"陽光\", \"水災\", \"水壩\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（insect）原位換成翻譯題，沿用題 id a2-u18-l05-q17；目標字沿用 insect",
+        "resolution": "改為 translate：promptZh「我弟弟很怕昆蟲。」、hintWords [\"insect\"]、referenceEn [\"My brother is afraid of insects.\",\"My younger brother is very afraid of insects.\"]、rubricZh [\"用 insect 表示「昆蟲」，泛指用複數（例如 insects）\",\"「很怕」可寫，例如 is afraid of、is scared of 等\"]（原 makeSentence：instructionZh「用 insect 造一個句子，說說你喜歡或害怕的一種昆蟲。」、referenceEn [\"I am afraid of big insects.\",\"I like butterflies because they are beautiful.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

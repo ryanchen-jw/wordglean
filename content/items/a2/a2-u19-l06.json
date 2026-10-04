@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u19-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "stamp",
-      "instructionZh": "用 stamp 造一個句子，說說郵票，或你家人收集的東西。",
+      "type": "translate",
+      "promptZh": "我爺爺收集了很多舊郵票。",
+      "hintWords": [
+        "stamp"
+      ],
       "referenceEn": [
-        "I put a stamp on the letter.",
-        "My grandfather collects old stamps."
+        "My grandfather has collected many old stamps.",
+        "My grandpa collects a lot of old stamps."
       ],
       "rubricZh": [
-        "stamp 是可數名詞（例如 a stamp、old stamps）",
-        "時態配合句意（例如 put、collects）"
+        "用 stamp 表示「郵票」，很多用複數（例如 many old stamps）",
+        "時態可用現在式、現在完成式或過去式（例如 collects、has collected、collected 等）"
       ]
     }
   ],
@@ -339,6 +341,12 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
         "resolution": "改為 \"很久以前，一群從北方來的軍人入侵了這座小鎮。\"（原 \"每到週末，觀光客就會湧入我們的小鎮。\"）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（stamp）原位換成翻譯題，沿用題 id a2-u19-l06-q16；目標字沿用 stamp",
+        "resolution": "改為 translate：promptZh「我爺爺收集了很多舊郵票。」、hintWords [\"stamp\"]、referenceEn [\"My grandfather has collected many old stamps.\",\"My grandpa collects a lot of old stamps.\"]、rubricZh [\"用 stamp 表示「郵票」，很多用複數（例如 many old stamps）\",\"時態可用現在式、現在完成式或過去式（例如 collects、has collected、collected 等）\"]（原 makeSentence：instructionZh「用 stamp 造一個句子，說說郵票，或你家人收集的東西。」、referenceEn [\"I put a stamp on the letter.\",\"My grandfather collects old stamps.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

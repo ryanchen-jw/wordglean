@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u26-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "succeed",
-      "instructionZh": "用 succeed 造一個句子，說說成功做到某件事的經驗或方法。",
+      "type": "translate",
+      "promptZh": "他終於成功找到了一份新工作。",
+      "hintWords": [
+        "succeed"
+      ],
       "referenceEn": [
-        "I finally succeeded in passing my driving test.",
-        "You will succeed if you never give up."
+        "He finally succeeded in finding a new job.",
+        "In the end, he succeeded in finding a new job."
       ],
       "rubricZh": [
-        "succeed in＋V-ing 表示「成功做到」（例如 succeeded in passing）",
-        "時態配合句意（例如 succeeded、will succeed）"
+        "用 succeed in＋動名詞 表示「成功做到…」（例如 succeeded in finding）",
+        "時態可用過去式或現在完成式（例如 succeeded、has succeeded 等）",
+        "「終於」可寫，例如 finally、in the end 等"
       ]
     }
   ],
@@ -394,6 +397,18 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX：例句與同課跟讀 Please pour some water into my glass. 情境、句型雷同，改寫",
         "resolution": "改為 \"我妹妹在飯上倒了太多醬汁。\"（原 \"他把米倒進一個大碗裡。\"）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（succeed）原位換成翻譯題，沿用題 id a2-u26-l04-q17；目標字沿用 succeed",
+        "resolution": "改為 translate：promptZh「他終於成功找到了一份新工作。」、hintWords [\"succeed\"]、referenceEn [\"He finally succeeded in finding a new job.\",\"In the end, he succeeded in finding a new job.\"]、rubricZh [\"用 succeed in＋動名詞 表示「成功做到…」（例如 succeeded in finding）\",\"過去的事用過去式（例如 succeeded）\",\"「終於」可寫，例如 finally、in the end 等\"]（原 makeSentence：instructionZh「用 succeed 造一個句子，說說成功做到某件事的經驗或方法。」、referenceEn [\"I finally succeeded in passing my driving test.\",\"You will succeed if you never give up.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：自查同類（中文沒有時間詞，要點只收過去式）：加收現在完成式（§12.11）",
+        "resolution": "rubricZh 改為 [\"用 succeed in＋動名詞 表示「成功做到…」（例如 succeeded in finding）\",\"時態可用過去式或現在完成式（例如 succeeded、has succeeded 等）\",\"「終於」可寫，例如 finally、in the end 等\"]（原 [\"用 succeed in＋動名詞 表示「成功做到…」（例如 succeeded in finding）\",\"過去的事用過去式（例如 succeeded）\",\"「終於」可寫，例如 finally、in the end 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

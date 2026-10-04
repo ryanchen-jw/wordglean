@@ -231,16 +231,19 @@
     },
     {
       "id": "a2-u01-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "ever",
-      "instructionZh": "用 ever 問朋友一個問題：有沒有做過某件事。",
+      "type": "translate",
+      "promptZh": "這是我吃過最好吃的蛋糕。",
+      "hintWords": [
+        "ever"
+      ],
       "referenceEn": [
-        "Have you ever cooked for your whole family?",
-        "Have you ever played tennis?"
+        "This is the best cake I have ever eaten.",
+        "This is the best cake I've ever had."
       ],
       "rubricZh": [
-        "可用 Have you ever＋過去分詞問經驗（例如 been、played）；寫 Did you ever… 也可以",
-        "句子是問句，句尾用問號"
+        "用 ever 搭配完成式表示「曾經」（例如 have ever eaten、I've ever had 等）",
+        "「最好吃的蛋糕」可寫，例如 the best cake、the most delicious cake 等",
+        "cake 後面可加 that，也可以省略"
       ]
     }
   ],
@@ -314,6 +317,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；每課至少一題四選項同詞性：The food was good. Also, it was too expensive.／Usually, it was too expensive. 只看英文都說得通；換成 Together、Tomorrow（Tomorrow 與過去式 was 衝突），文法通但語意不通",
         "resolution": "改為 [\"一起\", \"明天\", \"此外\", \"然而\"]（原 [\"通常\", \"也\", \"此外\", \"然而\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ever）原位換成翻譯題，沿用題 id a2-u01-l02-q17；目標字沿用 ever",
+        "resolution": "改為 translate：promptZh「這是我吃過最好吃的蛋糕。」、hintWords [\"ever\"]、referenceEn [\"This is the best cake I have ever eaten.\",\"This is the best cake I've ever had.\"]、rubricZh [\"用 ever 搭配完成式表示「曾經」（例如 have ever eaten、I've ever had 等）\",\"「最好吃的蛋糕」可寫，例如 the best cake、the most delicious cake 等\",\"cake 後面可加 that，也可以省略\"]（原 makeSentence：instructionZh「用 ever 問朋友一個問題：有沒有做過某件事。」、referenceEn [\"Have you ever cooked for your whole family?\",\"Have you ever played tennis?\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

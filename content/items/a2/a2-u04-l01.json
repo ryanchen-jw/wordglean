@@ -225,16 +225,19 @@
     },
     {
       "id": "a2-u04-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "lose",
-      "instructionZh": "用 lose 造一個句子，說說你曾經弄丟過的東西。",
+      "type": "translate",
+      "promptZh": "我昨天在公車上弄丟了雨傘。",
+      "hintWords": [
+        "lose"
+      ],
       "referenceEn": [
-        "I lost my wallet on the bus last year.",
-        "I have lost my keys many times."
+        "I lost my umbrella on the bus yesterday.",
+        "Yesterday I lost my umbrella on the bus."
       ],
       "rubricZh": [
-        "lose 後面接弄丟的東西（例如 lost my wallet）",
-        "說過去的經驗用過去式或現在完成式（例如 lost、have lost）"
+        "昨天的事用過去式（例如 lost）",
+        "「在公車上」可寫，例如 on the bus 等",
+        "yesterday 放句首或句尾都可以"
       ]
     }
   ],
@@ -392,6 +395,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：quit、spilled 與 q13 共用，改過去分詞 taught、ordered",
         "resolution": "改為 [\"似乎\", \"教\", \"點（餐）；訂購\", \"被禁止的\"]（原 [\"似乎\", \"辭去\", \"灑出\", \"被禁止的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（lose）原位換成翻譯題，沿用題 id a2-u04-l01-q17；目標字沿用 lose",
+        "resolution": "改為 translate：promptZh「我昨天在公車上弄丟了雨傘。」、hintWords [\"lose\"]、referenceEn [\"I lost my umbrella on the bus yesterday.\",\"Yesterday I lost my umbrella on the bus.\"]、rubricZh [\"昨天的事用過去式（例如 lost）\",\"「在公車上」可寫，例如 on the bus 等\",\"yesterday 放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 lose 造一個句子，說說你曾經弄丟過的東西。」、referenceEn [\"I lost my wallet on the bus last year.\",\"I have lost my keys many times.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

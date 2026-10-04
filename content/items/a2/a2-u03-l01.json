@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u03-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "colorful",
-      "instructionZh": "用 colorful 造一個句子，描述一樣色彩鮮豔的東西。",
+      "type": "translate",
+      "promptZh": "公園裡有很多色彩鮮豔的花。",
+      "hintWords": [
+        "colorful"
+      ],
       "referenceEn": [
-        "My sister has a colorful umbrella.",
-        "The market is full of colorful fruit."
+        "There are many colorful flowers in the park.",
+        "The park has a lot of colorful flowers."
       ],
       "rubricZh": [
-        "colorful 可放在名詞前，也可放在 be 動詞後（例如 a colorful umbrella、The room is colorful）",
-        "主詞和動詞要搭配（例如 My sister has、The room is）"
+        "用 colorful 表示「色彩鮮豔的」，放在名詞前（例如 colorful flowers）",
+        "「有很多」可寫，例如 There are many、has a lot of 等"
       ]
     }
   ],
@@ -352,6 +354,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：noisy 超範圍改 sunny；automatic 讓給 q13 用，改 important",
         "resolution": "改為 [\"重要的\", \"色彩鮮豔的\", \"晴朗的\", \"不必要的\"]（原 [\"自動的\", \"色彩鮮豔的\", \"吵鬧的\", \"不必要的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（colorful）原位換成翻譯題，沿用題 id a2-u03-l01-q17；目標字沿用 colorful",
+        "resolution": "改為 translate：promptZh「公園裡有很多色彩鮮豔的花。」、hintWords [\"colorful\"]、referenceEn [\"There are many colorful flowers in the park.\",\"The park has a lot of colorful flowers.\"]、rubricZh [\"用 colorful 表示「色彩鮮豔的」，放在名詞前（例如 colorful flowers）\",\"「有很多」可寫，例如 There are many、has a lot of 等\"]（原 makeSentence：instructionZh「用 colorful 造一個句子，描述一樣色彩鮮豔的東西。」、referenceEn [\"My sister has a colorful umbrella.\",\"The market is full of colorful fruit.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

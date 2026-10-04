@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u13-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "suitcase",
-      "instructionZh": "用 suitcase 造一個句子，說說你的行李箱，或旅行時你會在行李箱裡放什麼。",
+      "type": "translate",
+      "promptZh": "這個行李箱裝不下我所有的衣服。",
+      "hintWords": [
+        "suitcase"
+      ],
       "referenceEn": [
-        "I always pack my suitcase the night before a trip.",
-        "My suitcase is full of clothes and gifts."
+        "This suitcase can't hold all my clothes.",
+        "I can't fit all my clothes in this suitcase."
       ],
       "rubricZh": [
-        "suitcase 是可數名詞（例如 my suitcase、a big suitcase）",
-        "主詞和動詞要搭配（例如 My suitcase is）"
+        "用 suitcase 表示「行李箱」",
+        "「裝不下」可寫，例如 can't hold、can't fit…in 等"
       ]
     }
   ],
@@ -348,6 +350,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：fares 是 q14 正解 fare 的變化形，改本課字 cabs",
         "resolution": "改為 [\"車道\", \"計程車\", \"煞車\", \"行李箱\"]（原 [\"車道\", \"車資\", \"煞車\", \"行李箱\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（suitcase）原位換成翻譯題，沿用題 id a2-u13-l01-q17；目標字沿用 suitcase",
+        "resolution": "改為 translate：promptZh「這個行李箱裝不下我所有的衣服。」、hintWords [\"suitcase\"]、referenceEn [\"This suitcase can't hold all my clothes.\",\"I can't fit all my clothes in this suitcase.\"]、rubricZh [\"用 suitcase 表示「行李箱」\",\"「裝不下」可寫，例如 can't hold、can't fit…in 等\"]（原 makeSentence：instructionZh「用 suitcase 造一個句子，說說你的行李箱，或旅行時你會在行李箱裡放什麼。」、referenceEn [\"I always pack my suitcase the night before a trip.\",\"My suitcase is full of clothes and gifts.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

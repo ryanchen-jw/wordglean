@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u27-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "embarrassing",
-      "instructionZh": "用 embarrassing 造一個句子，說說一件讓你尷尬的事。",
+      "type": "translate",
+      "promptZh": "在公車上睡著真的很丟臉。",
+      "hintWords": [
+        "embarrassing"
+      ],
       "referenceEn": [
-        "Falling down in front of my class was embarrassing.",
-        "It was embarrassing when I called my teacher Mom."
+        "Falling asleep on the bus is really embarrassing.",
+        "It is really embarrassing to fall asleep on the bus."
       ],
       "rubricZh": [
-        "embarrassing 形容「讓人尷尬的事」；覺得尷尬的人用 embarrassed",
-        "可寫例如 It was embarrassing when…"
+        "用 embarrassing 表示「令人尷尬的」（不是 embarrassed）",
+        "主詞可寫，例如 Falling asleep…、It is…to fall asleep… 等",
+        "時態可用現在式或過去式（例如 is、was 等）"
       ]
     }
   ],
@@ -304,6 +307,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格；每課至少一題四選項同詞性：brave 與 q13 共用、frighten 與 q13 正解同字，且三者放不進 a ___，改本單元名詞，四選項同為名詞",
         "resolution": "改為 [\"哭泣\", \"恐慌\", \"和諧\", \"詛咒\"]（原 [\"勇敢的\", \"難過地\", \"使害怕\", \"詛咒\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（embarrassing）原位換成翻譯題，沿用題 id a2-u27-l03-q17；目標字沿用 embarrassing",
+        "resolution": "改為 translate：promptZh「在公車上睡著真的很丟臉。」、hintWords [\"embarrassing\"]、referenceEn [\"Falling asleep on the bus is really embarrassing.\",\"It is really embarrassing to fall asleep on the bus.\"]、rubricZh [\"用 embarrassing 表示「令人尷尬的」（不是 embarrassed）\",\"主詞可寫，例如 Falling asleep…、It is…to fall asleep… 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 embarrassing 造一個句子，說說一件讓你尷尬的事。」、referenceEn [\"Falling down in front of my class was embarrassing.\",\"It was embarrassing when I called my teacher Mom.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

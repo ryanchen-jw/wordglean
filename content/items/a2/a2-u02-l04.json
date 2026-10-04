@@ -215,16 +215,18 @@
     },
     {
       "id": "a2-u02-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "nowadays",
-      "instructionZh": "用 nowadays 造一個句子，說說現在的生活和以前有什麼不同。",
+      "type": "translate",
+      "promptZh": "現在手機越來越貴了。",
+      "hintWords": [
+        "nowadays"
+      ],
       "referenceEn": [
-        "Nowadays, I buy most things on my phone.",
-        "Nowadays, people send messages instead of letters."
+        "Nowadays, phones are getting more and more expensive.",
+        "Phones are getting more expensive nowadays."
       ],
       "rubricZh": [
-        "nowadays 表示「現今」，放句首或句尾都可以",
-        "說現在的情況用現在式（例如 buy、send）"
+        "用 nowadays 表示「現在、現今」，放句首或句尾都可以",
+        "「越來越貴」可寫，例如 are getting more and more expensive、are getting more expensive 等"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
         "resolution": "改為 \"即溶的；立即的\"（原 \"立即的；即溶的\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（nowadays）原位換成翻譯題，沿用題 id a2-u02-l04-q16；目標字沿用 nowadays",
+        "resolution": "改為 translate：promptZh「現在手機越來越貴了。」、hintWords [\"nowadays\"]、referenceEn [\"Nowadays, phones are getting more and more expensive.\",\"Phones are getting more expensive nowadays.\"]、rubricZh [\"用 nowadays 表示「現在、現今」，放句首或句尾都可以\",\"「越來越貴」可寫，例如 are getting more and more expensive、are getting more expensive 等\"]（原 makeSentence：instructionZh「用 nowadays 造一個句子，說說現在的生活和以前有什麼不同。」、referenceEn [\"Nowadays, I buy most things on my phone.\",\"Nowadays, people send messages instead of letters.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

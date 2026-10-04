@@ -227,16 +227,18 @@
     },
     {
       "id": "a2-u25-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "unknown",
-      "instructionZh": "用 unknown 造一個句子，說說一個不為人知的人、地方或事情。",
+      "type": "translate",
+      "promptZh": "這首歌的作者不詳。",
+      "hintWords": [
+        "unknown"
+      ],
       "referenceEn": [
-        "The name of the painter is unknown.",
-        "This beach is unknown to most tourists."
+        "The writer of this song is unknown.",
+        "The person who wrote this song is unknown."
       ],
       "rubricZh": [
-        "unknown 表示「未知的；不出名的」（例如 is unknown to…）",
-        "主詞和動詞要搭配（例如 The name … is）"
+        "用 unknown 表示「未知的」（例如 is unknown）",
+        "「寫這首歌的人」可寫，例如 the writer of this song、the person who wrote this song 等"
       ]
     }
   ],
@@ -304,6 +306,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lost 與 q13 共用，改本單元形容詞 inner",
         "resolution": "改為 [\"淨的\", \"內部的\", \"裂開的\", \"未知的\"]（原 [\"淨的\", \"遺失的\", \"裂開的\", \"未知的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unknown）原位換成翻譯題，沿用題 id a2-u25-l04-q17；目標字沿用 unknown",
+        "resolution": "改為 translate：promptZh「沒有人知道這首歌是誰寫的。」、hintWords [\"unknown\"]、referenceEn [\"The writer of this song is unknown.\",\"The person who wrote this song is unknown.\"]、rubricZh [\"用 unknown 表示「未知的」（例如 is unknown）\",\"「寫這首歌的人」可寫，例如 the writer of this song、the person who wrote this song 等\"]（原 makeSentence：instructionZh「用 unknown 造一個句子，說說一個不為人知的人、地方或事情。」、referenceEn [\"The name of the painter is unknown.\",\"This beach is unknown to most tourists.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 中文「沒有人知道…是誰寫的」最直接譯成 Nobody knows who wrote…，引導不到 unknown；題目改「作者不詳」",
+        "resolution": "promptZh 改為 「這首歌的作者不詳。」（原 「沒有人知道這首歌是誰寫的。」）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

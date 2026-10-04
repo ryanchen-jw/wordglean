@@ -228,16 +228,19 @@
     },
     {
       "id": "a2-u02-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "someday",
-      "instructionZh": "用 someday 造一個句子，說說你將來想做的一件事。",
+      "type": "translate",
+      "promptZh": "我相信他總有一天會回來。",
+      "hintWords": [
+        "someday"
+      ],
       "referenceEn": [
-        "Someday I want to open my own cafe.",
-        "I hope I can buy a house by the sea someday."
+        "I believe he will come back someday.",
+        "I believe that someday he will come back."
       ],
       "rubricZh": [
-        "someday 表示「將來總有一天」，放句首或句尾都可以（例如 Someday I…、…someday）",
-        "說想做的事可用例如 want to、hope to、will"
+        "用 someday 表示「總有一天」，可放子句開頭或句尾（例如 someday he will…、…come back someday 等）",
+        "「會回來」用表示未來的寫法（例如 will come back、will return 等）",
+        "believe 後面可加 that，也可以省略"
       ]
     }
   ],
@@ -317,6 +320,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We usually eat lunch at midnight／at night. 只看英文勉強說得通（夜班）；換成 at first、at birth，文法通但語意不通",
         "resolution": "改為 [\"第一；起初\", \"出生\", \"中午\", \"早餐\"]（原 [\"午夜\", \"晚上\", \"中午\", \"早餐\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（someday）原位換成翻譯題，沿用題 id a2-u02-l01-q17；目標字沿用 someday",
+        "resolution": "改為 translate：promptZh「我相信他總有一天會回來。」、hintWords [\"someday\"]、referenceEn [\"I believe he will come back someday.\",\"I believe that someday he will come back.\"]、rubricZh [\"用 someday 表示「總有一天」，可放子句開頭或句尾（例如 someday he will…、…come back someday 等）\",\"「會回來」用表示未來的寫法（例如 will come back、will return 等）\",\"believe 後面可加 that，也可以省略\"]（原 makeSentence：instructionZh「用 someday 造一個句子，說說你將來想做的一件事。」、referenceEn [\"Someday I want to open my own cafe.\",\"I hope I can buy a house by the sea someday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

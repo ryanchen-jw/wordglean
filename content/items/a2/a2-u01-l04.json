@@ -227,17 +227,19 @@
     },
     {
       "id": "a2-u01-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "myself",
-      "instructionZh": "用 myself 造一個句子，說說一件你自己完成的事。",
+      "type": "translate",
+      "promptZh": "這張生日卡片是我自己畫的。",
+      "hintWords": [
+        "myself"
+      ],
       "referenceEn": [
-        "I cleaned my whole room myself.",
-        "I made dinner by myself yesterday."
+        "I drew this birthday card myself.",
+        "I drew this birthday card by myself."
       ],
       "rubricZh": [
-        "myself 指「我自己」，句子的主詞是 I",
-        "myself 可放在句尾（I did it myself），也可用 by myself",
-        "說已經完成的事用過去式或現在完成式（例如 cleaned、have made）"
+        "用 myself 表示「我自己」（例如 drew it myself、by myself 等）",
+        "「畫的」時態可用過去式或現在完成式（例如 drew、have drawn 等）",
+        "「生日卡片」可寫，例如 birthday card 等"
       ]
     }
   ],
@@ -365,6 +367,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：hardly、nearly 超範圍，改 never、almost",
         "resolution": "改為 [\"從不\", \"一定\", \"幾乎\", \"尤其\"]（原 [\"幾乎不\", \"一定\", \"差一點\", \"尤其\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（myself）原位換成翻譯題，沿用題 id a2-u01-l04-q17；目標字沿用 myself",
+        "resolution": "改為 translate：promptZh「這張生日卡片是我自己畫的。」、hintWords [\"myself\"]、referenceEn [\"I drew this birthday card myself.\",\"I drew this birthday card by myself.\"]、rubricZh [\"用 myself 表示「我自己」（例如 drew it myself、by myself 等）\",\"「畫的」時態可用過去式或現在完成式（例如 drew、have drawn 等）\",\"「生日卡片」可寫，例如 birthday card 等\"]（原 makeSentence：instructionZh「用 myself 造一個句子，說說一件你自己完成的事。」、referenceEn [\"I cleaned my whole room myself.\",\"I made dinner by myself yesterday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

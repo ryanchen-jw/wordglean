@@ -434,11 +434,11 @@ test('COMPOSITION：少一題跟讀、單字卡換成別課的字', () => {
 
 // ---- 創辦人裁示 2026-10-04：造句改翻譯（每課 2 題翻譯、0 題造句）；A2–C1 未轉換前照舊題量 ----
 
-test('compositionFor：已轉換級別 translate 2、makeSentence 0；未轉換級別（A2–C1）照舊 1／1', () => {
+test('compositionFor：已轉換級別 translate 2、makeSentence 0；未轉換級別（B1–C1）照舊 1／1', () => {
   assert.equal(COMPOSITION.translate, 2);
   assert.equal(COMPOSITION.makeSentence, 0);
-  assert.deepEqual(compositionFor('A1'), COMPOSITION);
-  for (const level of ['A2', 'B1', 'B2', 'C1']) {
+  for (const level of ['A1', 'A2']) assert.deepEqual(compositionFor(level), COMPOSITION, level);
+  for (const level of ['B1', 'B2', 'C1']) {
     assert.deepEqual(compositionFor(level), { ...COMPOSITION, translate: 1, makeSentence: 1 }, level);
   }
 });

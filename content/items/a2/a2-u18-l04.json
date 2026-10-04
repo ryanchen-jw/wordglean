@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u18-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "landscape",
-      "instructionZh": "用 landscape 造一個句子，描述你看過的一處風景。",
+      "type": "translate",
+      "promptZh": "火車窗外的風景一直在變。",
+      "hintWords": [
+        "landscape"
+      ],
       "referenceEn": [
-        "The landscape in Hualien is beautiful.",
-        "I love the green landscape of the countryside."
+        "The landscape outside the train window keeps changing.",
+        "The landscape outside the train window is always changing."
       ],
       "rubricZh": [
-        "landscape 表示「（大片的）風景、地景」（例如 the landscape of the countryside）",
-        "主詞和動詞要搭配（例如 The landscape is）"
+        "用 landscape 表示「風景」",
+        "「一直在變」可寫，例如 keeps changing、is always changing 等"
       ]
     }
   ],
@@ -311,6 +313,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：shell、seed 與 q13 共用，改本單元名詞 lake、fog（與 hot and dry 矛盾而排除）",
         "resolution": "改為 [\"湖\", \"生物\", \"霧\", \"沙漠\"]（原 [\"殼\", \"生物\", \"種子\", \"沙漠\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（landscape）原位換成翻譯題，沿用題 id a2-u18-l04-q17；目標字沿用 landscape",
+        "resolution": "改為 translate：promptZh「這裡的風景到了晚上很不一樣。」、hintWords [\"landscape\"]、referenceEn [\"The landscape here looks very different at night.\",\"At night, the landscape here looks very different.\"]、rubricZh [\"用 landscape 表示「風景」\",\"「很不一樣」可寫，例如 looks very different、is very different 等\",\"「到了晚上」可寫，例如 at night 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 landscape 造一個句子，描述你看過的一處風景。」、referenceEn [\"The landscape in Hualien is beautiful.\",\"I love the green landscape of the countryside.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與同單元 a2-u18-l01 單字卡 scenery「The scenery here is different in winter.」主詞、句型幾乎一樣，換情境",
+        "resolution": "promptZh 改為 「火車窗外的風景一直在變。」（原 「這裡的風景到了晚上很不一樣。」）；referenceEn 改為 [\"The landscape outside the train window keeps changing.\",\"The landscape outside the train window is always changing.\"]（原 [\"The landscape here looks very different at night.\",\"At night, the landscape here looks very different.\"]）；rubricZh 改為 [\"用 landscape 表示「風景」\",\"「一直在變」可寫，例如 keeps changing、is always changing 等\"]（原 [\"用 landscape 表示「風景」\",\"「很不一樣」可寫，例如 looks very different、is very different 等\",\"「到了晚上」可寫，例如 at night 等，放句首或句尾都可以\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

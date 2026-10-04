@@ -227,16 +227,19 @@
     },
     {
       "id": "a2-u10-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "snack",
-      "instructionZh": "用 snack 造一個句子，說說你喜歡的點心，或你什麼時候吃點心。",
+      "type": "translate",
+      "promptZh": "看電影的時候，我們吃了很多零食。",
+      "hintWords": [
+        "snack"
+      ],
       "referenceEn": [
-        "My favorite snack is fruit.",
-        "I eat a snack when I feel hungry."
+        "We ate a lot of snacks during the movie.",
+        "We had lots of snacks while we watched the movie."
       ],
       "rubricZh": [
-        "snack 是可數名詞（例如 a snack、my favorite snack）",
-        "時態配合句意（例如 is、eat）"
+        "用 snack 表示「零食」，「很多零食」用複數（例如 a lot of snacks）",
+        "過去的事用過去式（例如 ate、had 等）",
+        "「看電影的時候」可寫，例如 during the movie、while we watched the movie 等"
       ]
     }
   ],
@@ -358,6 +361,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：cafeteria 是 q14 正解改 dessert；cooler 與 q14 共用改 pasta",
         "resolution": "改為 [\"果醬\", \"甜點\", \"義大利麵\", \"點心\"]（原 [\"果醬\", \"自助餐廳\", \"保冷箱\", \"點心\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（snack）原位換成翻譯題，沿用題 id a2-u10-l02-q17；目標字沿用 snack",
+        "resolution": "改為 translate：promptZh「看電影的時候，我們吃了很多零食。」、hintWords [\"snack\"]、referenceEn [\"We ate a lot of snacks during the movie.\",\"We had lots of snacks while we watched the movie.\"]、rubricZh [\"用 snack 表示「零食」，「很多零食」用複數（例如 a lot of snacks）\",\"過去的事用過去式（例如 ate、had 等）\",\"「看電影的時候」可寫，例如 during the movie、while we watched the movie 等\"]（原 makeSentence：instructionZh「用 snack 造一個句子，說說你喜歡的點心，或你什麼時候吃點心。」、referenceEn [\"My favorite snack is fruit.\",\"I eat a snack when I feel hungry.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

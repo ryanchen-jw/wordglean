@@ -214,16 +214,18 @@
     },
     {
       "id": "a2-u26-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "invent",
-      "instructionZh": "用 invent 造一個句子，說說一項你感謝的發明，或你想發明什麼。",
+      "type": "translate",
+      "promptZh": "這個新遊戲是我爺爺發明的。",
+      "hintWords": [
+        "invent"
+      ],
       "referenceEn": [
-        "I want to invent a machine that does my homework.",
-        "I am glad someone invented the phone."
+        "This new game was invented by my grandfather.",
+        "My grandfather invented this new game."
       ],
       "rubricZh": [
-        "invent 表示「發明」（例如 invented the phone）",
-        "說過去的發明用過去式（例如 invented）"
+        "用 invent 表示「發明」，過去的事用過去式（例如 was invented、invented 等）",
+        "主動或被動寫法都可以；「爺爺」可寫，例如 grandfather、grandpa 等"
       ]
     }
   ],
@@ -327,6 +329,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「Hold on to the float and climb up slowly.」泳池抓著浮板爬上去說得通，float 換成 knock，「抓住敲擊聲」語意不通",
         "resolution": "改為 [\"敲擊聲\", \"繩子\", \"波浪\", \"成功地\"]（原 [\"浮板\", \"繩子\", \"波浪\", \"成功地\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（invent）原位換成翻譯題，沿用題 id a2-u26-l07-q16；目標字沿用 invent",
+        "resolution": "改為 translate：promptZh「這個新遊戲是我爺爺發明的。」、hintWords [\"invent\"]、referenceEn [\"This new game was invented by my grandfather.\",\"My grandfather invented this new game.\"]、rubricZh [\"用 invent 表示「發明」，過去的事用過去式（例如 was invented、invented 等）\",\"主動或被動寫法都可以；「爺爺」可寫，例如 grandfather、grandpa 等\"]（原 makeSentence：instructionZh「用 invent 造一個句子，說說一項你感謝的發明，或你想發明什麼。」、referenceEn [\"I want to invent a machine that does my homework.\",\"I am glad someone invented the phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,16 +230,18 @@
     },
     {
       "id": "a2-u19-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "population",
-      "instructionZh": "用 population 造一個句子，說說你住的城市或鄉鎮的人口。",
+      "type": "translate",
+      "promptZh": "這座小島的人口不到一千人。",
+      "hintWords": [
+        "population"
+      ],
       "referenceEn": [
-        "The population of my city is about two million.",
-        "My town's population is getting smaller."
+        "The population of this small island is less than one thousand.",
+        "This small island has a population of less than a thousand."
       ],
       "rubricZh": [
-        "population 指「人口」（例如 the population of my city、a small population）",
-        "數字可寫例如 about two million"
+        "用 population 表示「人口」（例如 the population of this island、has a population of… 等）",
+        "「不到」可寫，例如 less than、under、fewer than 等"
       ]
     }
   ],
@@ -301,6 +303,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「If you have a problem with the law, talk to a teacher.」對學生而言勉強說得通，teacher 換成 window，「找窗戶談」語意不通",
         "resolution": "改為 [\"人口\", \"窗戶\", \"醫生\", \"律師\"]（原 [\"人口\", \"老師\", \"醫生\", \"律師\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（population）原位換成翻譯題，沿用題 id a2-u19-l02-q17；目標字沿用 population",
+        "resolution": "改為 translate：promptZh「這座小島的人口不到一千人。」、hintWords [\"population\"]、referenceEn [\"The population of this small island is less than one thousand.\",\"This small island has a population of less than a thousand.\"]、rubricZh [\"用 population 表示「人口」（例如 the population of this island、has a population of… 等）\",\"「不到」可寫，例如 less than、under、fewer than 等\"]（原 makeSentence：instructionZh「用 population 造一個句子，說說你住的城市或鄉鎮的人口。」、referenceEn [\"The population of my city is about two million.\",\"My town's population is getting smaller.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,19 @@
     },
     {
       "id": "a2-u04-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "discover",
-      "instructionZh": "用 discover 造一個句子，說說你曾經發現的一個地方或一樣東西。",
+      "type": "translate",
+      "promptZh": "我後來發現那個故事不是真的。",
+      "hintWords": [
+        "discover"
+      ],
       "referenceEn": [
-        "Last week, I discovered a nice cafe near my office.",
-        "I discovered an old photo in my father's desk."
+        "Later I discovered that the story was not true.",
+        "I later discovered that the story wasn't true."
       ],
       "rubricZh": [
-        "discover 後面接發現的東西（例如 discovered a nice cafe）",
-        "說過去的事用過去式（例如 discovered）"
+        "用 discover 表示「發現」，過去的事用過去式（例如 discovered）",
+        "「後來」可寫，例如 later、after that 等",
+        "discovered 後面可加 that，也可以省略；子句時態可用 was 或 is"
       ]
     }
   ],
@@ -341,6 +344,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——非本單元字不跨課重複當干擾項：forget 為非本單元字且他課已用，改本單元 avoid",
         "resolution": "改為 [\"記得\", \"發現\", \"反射\", \"避開\"]（原 [\"記得\", \"發現\", \"反射\", \"忘記\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（discover）原位換成翻譯題，沿用題 id a2-u04-l08-q17；目標字沿用 discover",
+        "resolution": "改為 translate：promptZh「我後來發現那個故事不是真的。」、hintWords [\"discover\"]、referenceEn [\"Later I discovered that the story was not true.\",\"I later discovered that the story wasn't true.\"]、rubricZh [\"用 discover 表示「發現」，過去的事用過去式（例如 discovered）\",\"「後來」可寫，例如 later、after that 等\",\"discovered 後面可加 that，也可以省略；子句時態可用 was 或 is\"]（原 makeSentence：instructionZh「用 discover 造一個句子，說說你曾經發現的一個地方或一樣東西。」、referenceEn [\"Last week, I discovered a nice cafe near my office.\",\"I discovered an old photo in my father's desk.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

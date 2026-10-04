@@ -242,16 +242,19 @@
     },
     {
       "id": "a2-u12-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "local",
-      "instructionZh": "用 local 造一個句子，介紹你家附近一個在地的地方或店。",
+      "type": "translate",
+      "promptZh": "我每天都看當地的新聞。",
+      "hintWords": [
+        "local"
+      ],
       "referenceEn": [
-        "The local market in my town is very busy.",
-        "Our local park has a big pool."
+        "I watch the local news every day.",
+        "Every day, I watch the local news."
       ],
       "rubricZh": [
-        "local 放在名詞前，表示「當地的；本地的」（例如 the local market）",
-        "主詞和動詞要搭配（例如 Our local park has）"
+        "用 local 表示「當地的」，放在名詞前（例如 the local news）",
+        "news 不可數，不加 s",
+        "「看新聞」可寫，例如 watch the news、read the news 等"
       ]
     }
   ],
@@ -397,6 +400,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：space、position 與 q14 共用；原本無干擾項放得進形容詞位置，改 indoor、national（能代入、靠詞義排除）",
         "resolution": "改為 [\"室內的\", \"本地的\", \"國家\", \"國家的\"]（原 [\"空間\", \"本地的\", \"國家\", \"位置\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（local）原位換成翻譯題，沿用題 id a2-u12-l02-q18；目標字沿用 local",
+        "resolution": "改為 translate：promptZh「我每天都看當地的新聞。」、hintWords [\"local\"]、referenceEn [\"I watch the local news every day.\",\"Every day, I watch the local news.\"]、rubricZh [\"用 local 表示「當地的」，放在名詞前（例如 the local news）\",\"news 不可數，不加 s\",\"「看新聞」可寫，例如 watch the news、read the news 等\"]（原 makeSentence：instructionZh「用 local 造一個句子，介紹你家附近一個在地的地方或店。」、referenceEn [\"The local market in my town is very busy.\",\"Our local park has a big pool.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

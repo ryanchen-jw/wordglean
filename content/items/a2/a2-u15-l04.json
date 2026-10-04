@@ -215,16 +215,18 @@
     },
     {
       "id": "a2-u15-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "singing",
-      "instructionZh": "用 singing 造一個句子，說說你或家人唱歌的情形。",
+      "type": "translate",
+      "promptZh": "她的歌聲很好聽。",
+      "hintWords": [
+        "singing"
+      ],
       "referenceEn": [
-        "My mother's singing is better than mine.",
-        "I enjoy singing in the shower."
+        "Her singing is beautiful.",
+        "Her singing is very nice."
       ],
       "rubricZh": [
-        "singing 當名詞表示「唱歌；歌聲」（例如 her singing、enjoy singing）",
-        "主詞和動詞要搭配（例如 My mother's singing is）"
+        "用 singing 表示「歌聲」（例如 her singing）",
+        "「很好聽」可寫，例如 beautiful、very nice、lovely 等"
       ]
     }
   ],
@@ -370,6 +372,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：composer 是 q12 正解，改形容詞 lonely（能代入、與 everyone laughed 矛盾而排除），湊足兩個可代入的干擾項",
         "resolution": "改為 [\"唱歌\", \"滑稽的\", \"聲音的\", \"寂寞的\"]（原 [\"唱歌\", \"滑稽的\", \"聲音的\", \"作曲家\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（singing）原位換成翻譯題，沿用題 id a2-u15-l04-q16；目標字沿用 singing",
+        "resolution": "改為 translate：promptZh「她的歌聲很好聽。」、hintWords [\"singing\"]、referenceEn [\"Her singing is beautiful.\",\"Her singing is very nice.\"]、rubricZh [\"用 singing 表示「歌聲」（例如 her singing）\",\"「很好聽」可寫，例如 beautiful、very nice、lovely 等\"]（原 makeSentence：instructionZh「用 singing 造一個句子，說說你或家人唱歌的情形。」、referenceEn [\"My mother's singing is better than mine.\",\"I enjoy singing in the shower.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

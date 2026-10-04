@@ -243,16 +243,18 @@
     },
     {
       "id": "a2-u01-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "might",
-      "instructionZh": "用 might 造一個句子，說說你這個週末可能會做的事。",
+      "type": "translate",
+      "promptZh": "我的手機可能在車上。",
+      "hintWords": [
+        "might"
+      ],
       "referenceEn": [
-        "I might go shopping with my sister this weekend.",
-        "I might stay home and watch movies on Saturday."
+        "My phone might be in the car.",
+        "My phone might be in my car."
       ],
       "rubricZh": [
-        "might 後面接原形動詞（例如 might go、might stay）",
-        "句子表達自己「可能、也許」會做的事，可加時間詞（例如 this weekend）"
+        "用 might 表示「可能」，後面接原形動詞（例如 might be）",
+        "「在車上」可寫，例如 in the car、in my car 等"
       ]
     }
   ],
@@ -344,6 +346,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We played near／beside a very strong team last Sunday. 只看英文勉強說得通（在隔壁場地比賽）；換成 along、into，介系詞片語文法通但語意不通",
         "resolution": "改為 [\"與⋯對抗\", \"沿著\", \"進入⋯裡面\", \"當⋯的時候\"]（原 [\"與⋯對抗\", \"在⋯旁邊\", \"在⋯附近\", \"當⋯的時候\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（might）原位換成翻譯題，沿用題 id a2-u01-l01-q18；目標字沿用 might",
+        "resolution": "改為 translate：promptZh「我的手機可能在車上。」、hintWords [\"might\"]、referenceEn [\"My phone might be in the car.\",\"My phone might be in my car.\"]、rubricZh [\"用 might 表示「可能」，後面接原形動詞（例如 might be）\",\"「在車上」可寫，例如 in the car、in my car 等\"]（原 makeSentence：instructionZh「用 might 造一個句子，說說你這個週末可能會做的事。」、referenceEn [\"I might go shopping with my sister this weekend.\",\"I might stay home and watch movies on Saturday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

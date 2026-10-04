@@ -229,16 +229,18 @@
     },
     {
       "id": "a2-u21-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "fiction",
-      "instructionZh": "用 fiction 造一個句子，說說你喜不喜歡讀小說，或喜歡哪一類。",
+      "type": "translate",
+      "promptZh": "圖書館的小說在二樓。",
+      "hintWords": [
+        "fiction"
+      ],
       "referenceEn": [
-        "I enjoy reading fiction before bed.",
-        "I don't read much fiction. I like history books."
+        "The fiction books are on the second floor of the library.",
+        "Fiction is on the second floor of the library."
       ],
       "rubricZh": [
-        "fiction 是不可數名詞（例如 read fiction、science fiction）",
-        "主詞和動詞要搭配（例如 I don't read）"
+        "用 fiction 表示「小說」（例如 fiction、fiction books 等）",
+        "「二樓」可寫，例如 the second floor 等"
       ]
     }
   ],
@@ -342,6 +344,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「My sister works in publishing. She makes posters for new products.」出版業也做宣傳海報，說得通；publishing 換成 tradition，「works in tradition」文法可放但語意不通",
         "resolution": "改為 [\"傳統\", \"經典的\", \"廣告業\", \"小說\"]（原 [\"出版業\", \"經典的\", \"廣告業\", \"小說\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fiction）原位換成翻譯題，沿用題 id a2-u21-l03-q17；目標字沿用 fiction",
+        "resolution": "改為 translate：promptZh「圖書館的小說在二樓。」、hintWords [\"fiction\"]、referenceEn [\"The fiction books are on the second floor of the library.\",\"Fiction is on the second floor of the library.\"]、rubricZh [\"用 fiction 表示「小說」（例如 fiction、fiction books 等）\",\"「二樓」可寫，例如 the second floor 等\"]（原 makeSentence：instructionZh「用 fiction 造一個句子，說說你喜不喜歡讀小說，或喜歡哪一類。」、referenceEn [\"I enjoy reading fiction before bed.\",\"I don't read much fiction. I like history books.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

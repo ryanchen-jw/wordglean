@@ -228,16 +228,19 @@
     },
     {
       "id": "a2-u04-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "prepare",
-      "instructionZh": "用 prepare 造一個句子，說說你為某件事做的準備。",
+      "type": "translate",
+      "promptZh": "我哥哥正在準備明天的考試。",
+      "hintWords": [
+        "prepare"
+      ],
       "referenceEn": [
-        "I prepared some food for the trip.",
-        "I am preparing for my English test."
+        "My brother is preparing for tomorrow's test.",
+        "My older brother is preparing for the test tomorrow."
       ],
       "rubricZh": [
-        "prepare 可直接接東西，也可寫 prepare for＋事情（例如 prepared some food、preparing for a test）",
-        "時態配合句意（例如 prepared、am preparing）"
+        "「正在準備」用現在進行式（例如 is preparing）",
+        "prepare for 表示「為…做準備」（例如 preparing for the test）",
+        "「考試」可寫，例如 test、exam 等；「哥哥」可寫，例如 brother、older brother 等"
       ]
     }
   ],
@@ -359,6 +362,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項只用本課、先前課或低一級字：mistake 超範圍，改本單元名詞 effort",
         "resolution": "改為 [\"努力\", \"問題\", \"成功\", \"危險\"]（原 [\"錯誤\", \"問題\", \"成功\", \"危險\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（prepare）原位換成翻譯題，沿用題 id a2-u04-l06-q17；目標字沿用 prepare",
+        "resolution": "改為 translate：promptZh「我哥哥正在準備明天的考試。」、hintWords [\"prepare\"]、referenceEn [\"My brother is preparing for tomorrow's test.\",\"My older brother is preparing for the test tomorrow.\"]、rubricZh [\"「正在準備」用現在進行式（例如 is preparing）\",\"prepare for 表示「為…做準備」（例如 preparing for the test）\",\"「考試」可寫，例如 test、exam 等；「哥哥」可寫，例如 brother、older brother 等\"]（原 makeSentence：instructionZh「用 prepare 造一個句子，說說你為某件事做的準備。」、referenceEn [\"I prepared some food for the trip.\",\"I am preparing for my English test.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

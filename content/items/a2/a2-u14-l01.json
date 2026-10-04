@@ -240,16 +240,19 @@
     },
     {
       "id": "a2-u14-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "medical",
-      "instructionZh": "用 medical 造一個句子，說說和醫學或醫療有關的人、地方或東西。",
+      "type": "translate",
+      "promptZh": "我表哥明年會開始讀醫學院。",
+      "hintWords": [
+        "medical"
+      ],
       "referenceEn": [
-        "My sister wants to go to medical school.",
-        "This hospital has new medical machines."
+        "My cousin will start medical school next year.",
+        "My cousin is going to start medical school next year."
       ],
       "rubricZh": [
-        "medical 放在名詞前，表示「醫學的；醫療的」（例如 medical school、medical machines）",
-        "主詞和動詞要搭配（例如 This hospital has）"
+        "用 medical 表示「醫學的」（例如 medical school）",
+        "明年的事用表示未來的寫法（例如 will、be going to 等）",
+        "「讀醫學院」可寫，例如 start medical school、go to medical school 等"
       ]
     }
   ],
@@ -383,6 +386,12 @@
         "message": "執行長裁示：後期規則補正：第二輪複審 FIX：第一義＝該級最常用義，例句示範第一義",
         "resolution": "改為 \"我的植物死了，因為我忘了給它們澆水。\"（原 \"我的植物枯死了，因為我忘了給它們澆水。\"）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（medical）原位換成翻譯題，沿用題 id a2-u14-l01-q18；目標字沿用 medical",
+        "resolution": "改為 translate：promptZh「我表哥明年會開始讀醫學院。」、hintWords [\"medical\"]、referenceEn [\"My cousin will start medical school next year.\",\"My cousin is going to start medical school next year.\"]、rubricZh [\"用 medical 表示「醫學的」（例如 medical school）\",\"明年的事用表示未來的寫法（例如 will、be going to 等）\",\"「讀醫學院」可寫，例如 start medical school、go to medical school 等\"]（原 makeSentence：instructionZh「用 medical 造一個句子，說說和醫學或醫療有關的人、地方或東西。」、referenceEn [\"My sister wants to go to medical school.\",\"This hospital has new medical machines.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

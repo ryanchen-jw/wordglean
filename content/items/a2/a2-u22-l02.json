@@ -240,16 +240,18 @@
     },
     {
       "id": "a2-u22-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "enough",
-      "instructionZh": "用 enough 造一個句子，說說你有沒有足夠的時間、錢或東西。",
+      "type": "translate",
+      "promptZh": "這個房間不夠大，放不下兩張床。",
+      "hintWords": [
+        "enough"
+      ],
       "referenceEn": [
-        "I don't have enough time to read.",
-        "We have enough food for the party."
+        "This room isn't big enough for two beds.",
+        "This room is not big enough for two beds."
       ],
       "rubricZh": [
-        "enough 常放在名詞前（例如 enough time、enough food）",
-        "否定可寫例如 don't have enough…"
+        "enough 修飾形容詞時放在後面（例如 big enough）；寫 not enough space for two beds 等也正確",
+        "「放不下兩張床」可寫，例如 for two beds、to hold two beds 等"
       ]
     }
   ],
@@ -335,6 +337,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：「I was so hungry that I ate the wrong cake by myself!」餓到拿錯蛋糕吃情境可成立，wrong 換成 windy，「風大的蛋糕」語意不通",
         "resolution": "改為 [\"風大的\", \"整個的\", \"相同的\", \"幾個\"]（原 [\"錯的\", \"整個的\", \"相同的\", \"幾個\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（enough）原位換成翻譯題，沿用題 id a2-u22-l02-q18；目標字沿用 enough",
+        "resolution": "改為 translate：promptZh「這個房間不夠大，放不下兩張床。」、hintWords [\"enough\"]、referenceEn [\"This room isn't big enough for two beds.\",\"This room is not big enough for two beds.\"]、rubricZh [\"enough 放在形容詞後面（例如 big enough）\",\"「放不下兩張床」可寫，例如 for two beds、to hold two beds 等\"]（原 makeSentence：instructionZh「用 enough 造一個句子，說說你有沒有足夠的時間、錢或東西。」、referenceEn [\"I don't have enough time to read.\",\"We have enough food for the party.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "執行長裁示：第③關：SUS 要點寫死 enough 位置，會判錯 not enough space for two beds",
+        "resolution": "rubricZh 改為 [\"enough 修飾形容詞時放在後面（例如 big enough）；寫 not enough space for two beds 等也正確\",\"「放不下兩張床」可寫，例如 for two beds、to hold two beds 等\"]（原 [\"enough 放在形容詞後面（例如 big enough）\",\"「放不下兩張床」可寫，例如 for two beds、to hold two beds 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }

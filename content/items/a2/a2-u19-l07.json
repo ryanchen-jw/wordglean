@@ -218,16 +218,19 @@
     },
     {
       "id": "a2-u19-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "police officer",
-      "instructionZh": "用 police officer 造一個句子，說說警察的工作，或你遇過的一位警察。",
+      "type": "translate",
+      "promptZh": "我叔叔當了二十年的警察。",
+      "hintWords": [
+        "police officer"
+      ],
       "referenceEn": [
-        "A police officer helped me find my way.",
-        "Police officers work day and night."
+        "My uncle has been a police officer for twenty years.",
+        "My uncle was a police officer for twenty years."
       ],
       "rubricZh": [
-        "police officer 是可數名詞（例如 a police officer、police officers）",
-        "時態配合句意（例如 helped、work）"
+        "用 police officer 表示「警察」",
+        "時態可用現在完成式或過去式（例如 has been、was 等）",
+        "「二十年」用 for twenty years"
       ]
     }
   ],
@@ -331,6 +334,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——縮寫照實際寫法大寫：縮寫照實際寫法：id 改 ID",
         "resolution": "改為 [\"policeman\", \"ID\", \"first name\", \"police officer\"]（原 [\"policeman\", \"id\", \"first name\", \"police officer\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（police officer）原位換成翻譯題，沿用題 id a2-u19-l07-q16；目標字沿用 police officer",
+        "resolution": "改為 translate：promptZh「我叔叔當了二十年的警察。」、hintWords [\"police officer\"]、referenceEn [\"My uncle has been a police officer for twenty years.\",\"My uncle was a police officer for twenty years.\"]、rubricZh [\"用 police officer 表示「警察」\",\"時態可用現在完成式或過去式（例如 has been、was 等）\",\"「二十年」用 for twenty years\"]（原 makeSentence：instructionZh「用 police officer 造一個句子，說說警察的工作，或你遇過的一位警察。」、referenceEn [\"A police officer helped me find my way.\",\"Police officers work day and night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

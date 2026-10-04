@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u16-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "challenge",
-      "instructionZh": "用 challenge 造一個句子，說說一件對你來說很困難的事。",
+      "type": "translate",
+      "promptZh": "學一種新語言是很大的挑戰。",
+      "hintWords": [
+        "challenge"
+      ],
       "referenceEn": [
-        "Speaking English in public is a challenge for me.",
-        "My new job is a big challenge."
+        "Learning a new language is a big challenge.",
+        "It is a big challenge to learn a new language."
       ],
       "rubricZh": [
-        "challenge 是名詞「挑戰」（例如 a big challenge、a challenge for me）",
-        "主詞和動詞要搭配（例如 My new job is）"
+        "用 challenge 表示「挑戰」（例如 a big challenge）",
+        "主詞可寫，例如 Learning…、It is…to learn… 等"
       ]
     }
   ],
@@ -323,6 +325,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：stadium 與 q14 共用，改本課名詞 challenge（athlete 會變也對故不用）",
         "resolution": "改為 [\"挑戰\", \"跑者\", \"溜冰鞋\", \"高爾夫球\"]（原 [\"體育場\", \"跑者\", \"溜冰鞋\", \"高爾夫球\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（challenge）原位換成翻譯題，沿用題 id a2-u16-l01-q17；目標字沿用 challenge",
+        "resolution": "改為 translate：promptZh「學一種新語言是很大的挑戰。」、hintWords [\"challenge\"]、referenceEn [\"Learning a new language is a big challenge.\",\"It is a big challenge to learn a new language.\"]、rubricZh [\"用 challenge 表示「挑戰」（例如 a big challenge）\",\"主詞可寫，例如 Learning…、It is…to learn… 等\"]（原 makeSentence：instructionZh「用 challenge 造一個句子，說說一件對你來說很困難的事。」、referenceEn [\"Speaking English in public is a challenge for me.\",\"My new job is a big challenge.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

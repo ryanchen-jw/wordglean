@@ -210,32 +210,33 @@
     {
       "id": "a2-u03-l05-q16",
       "type": "translate",
-      "promptZh": "我房間裡有太多東西了。",
+      "promptZh": "我的車裡有太多東西了。",
       "hintWords": [
         "stuff"
       ],
       "referenceEn": [
-        "There is too much stuff in my room.",
-        "I have too much stuff in my room."
+        "There is too much stuff in my car.",
+        "I have too much stuff in my car."
       ],
       "rubricZh": [
-        "stuff 是不可數名詞，用 too much stuff（不寫 too many stuffs）",
-        "句型可寫例如 There is…、I have…",
-        "寫 too many things 意思相同，也正確"
+        "用 stuff 表示「東西」，stuff 不可數（例如 too much stuff）",
+        "「有太多」可寫，例如 There is too much、I have too much 等"
       ]
     },
     {
       "id": "a2-u03-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "style",
-      "instructionZh": "用 style 造一個句子，說說你喜歡的穿衣或居家風格。",
+      "type": "translate",
+      "promptZh": "這棟老房子的風格很特別。",
+      "hintWords": [
+        "style"
+      ],
       "referenceEn": [
-        "I like a simple style for my home.",
-        "My favorite style is modern and simple."
+        "The style of this old house is very special.",
+        "This old house has a very special style."
       ],
       "rubricZh": [
-        "style 表示「風格、款式」（例如 a simple style、my favorite style）",
-        "說自己的喜好可用例如 I like…、My favorite style is…"
+        "用 style 表示「風格」（例如 the style of this house、has a special style 等）",
+        "「很特別」可寫，例如 very special、very unusual 等"
       ]
     }
   ],
@@ -297,6 +298,18 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
         "resolution": "改為 \"款式；風格\"（原 \"風格；款式\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（style）原位換成翻譯題，沿用題 id a2-u03-l05-q17；目標字沿用 style",
+        "resolution": "改為 translate：promptZh「這棟老房子的風格很特別。」、hintWords [\"style\"]、referenceEn [\"The style of this old house is very special.\",\"This old house has a very special style.\"]、rubricZh [\"用 style 表示「風格」（例如 the style of this house、has a special style 等）\",\"「很特別」可寫，例如 very special、very unusual 等\"]（原 makeSentence：instructionZh「用 style 造一個句子，說說你喜歡的穿衣或居家風格。」、referenceEn [\"I like a simple style for my home.\",\"My favorite style is modern and simple.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u03-l03-q16（single room）共用 room、同在房間情境（selfcheck-translate 字面 50%）；改本題（a2-u03-l03-q16 是 single 唯一情境題，保留）",
+        "resolution": "改為 promptZh「我的車裡有太多東西了。」、referenceEn [\"There is too much stuff in my car.\",\"I have too much stuff in my car.\"]、rubricZh [\"用 stuff 表示「東西」，stuff 不可數（例如 too much stuff）\",\"「有太多」可寫，例如 There is too much、I have too much 等\"]（原 promptZh「我房間裡有太多東西了。」、referenceEn [\"There is too much stuff in my room.\",\"I have too much stuff in my room.\"]、rubricZh [\"stuff 是不可數名詞，用 too much stuff（不寫 too many stuffs）\",\"句型可寫例如 There is…、I have…\",\"寫 too many things 意思相同，也正確\"]）；題 id、hintWords 不變",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

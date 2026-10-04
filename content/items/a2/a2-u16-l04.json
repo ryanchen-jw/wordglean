@@ -215,16 +215,19 @@
     },
     {
       "id": "a2-u16-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "snowboarding",
-      "instructionZh": "用 snowboarding 造一個句子，說說你試過或想試的冬季運動。",
+      "type": "translate",
+      "promptZh": "我去年冬天第一次玩單板滑雪。",
+      "hintWords": [
+        "snowboarding"
+      ],
       "referenceEn": [
-        "I want to try snowboarding someday.",
-        "Snowboarding is harder than skiing for me."
+        "I tried snowboarding for the first time last winter.",
+        "Last winter, I tried snowboarding for the first time."
       ],
       "rubricZh": [
-        "snowboarding 當名詞（例如 try snowboarding、go snowboarding、Snowboarding is…）",
-        "比較可用例如 harder than"
+        "用 snowboarding 表示「單板滑雪」（例如 tried snowboarding、went snowboarding 等）",
+        "過去的事用過去式（例如 tried、went 等）",
+        "「第一次」可寫，例如 for the first time 等"
       ]
     }
   ],
@@ -346,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：footballer 是 q13 正解、surfing 與 q13 共用；改本單元球類 hockey、cricket，四項都能接 play",
         "resolution": "改為 [\"羽毛球\", \"桌球\", \"曲棍球\", \"板球\"]（原 [\"羽毛球\", \"桌球\", \"衝浪\", \"足球員\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（snowboarding）原位換成翻譯題，沿用題 id a2-u16-l04-q16；目標字沿用 snowboarding",
+        "resolution": "改為 translate：promptZh「我去年冬天第一次玩單板滑雪。」、hintWords [\"snowboarding\"]、referenceEn [\"I tried snowboarding for the first time last winter.\",\"Last winter, I tried snowboarding for the first time.\"]、rubricZh [\"用 snowboarding 表示「單板滑雪」（例如 tried snowboarding、went snowboarding 等）\",\"過去的事用過去式（例如 tried、went 等）\",\"「第一次」可寫，例如 for the first time 等\"]（原 makeSentence：instructionZh「用 snowboarding 造一個句子，說說你試過或想試的冬季運動。」、referenceEn [\"I want to try snowboarding someday.\",\"Snowboarding is harder than skiing for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

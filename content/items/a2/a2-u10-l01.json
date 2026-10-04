@@ -228,16 +228,18 @@
     },
     {
       "id": "a2-u10-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "dessert",
-      "instructionZh": "用 dessert 造一個句子，說說你最喜歡的甜點。",
+      "type": "translate",
+      "promptZh": "這家餐廳的甜點很有名。",
+      "hintWords": [
+        "dessert"
+      ],
       "referenceEn": [
-        "My favorite dessert is chocolate cake.",
-        "I always want ice cream for dessert."
+        "The desserts at this restaurant are famous.",
+        "This restaurant's desserts are very famous."
       ],
       "rubricZh": [
-        "dessert 表示「甜點」（例如 for dessert、my favorite dessert）",
-        "主詞和動詞要搭配（例如 My favorite dessert is）"
+        "用 dessert 表示「甜點」，單數、複數都可以（例如 desserts）",
+        "「很有名」可寫，例如 are famous、are very famous、is famous for 等"
       ]
     }
   ],
@@ -329,6 +331,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：chef、pasta 為名詞放不進 to ____ 動詞空格，改 drink、spill（能代入、靠搭配排除）",
         "resolution": "改為 [\"喝\", \"烤\", \"胡椒\", \"灑出\"]（原 [\"廚師\", \"烤\", \"胡椒\", \"義大利麵\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dessert）原位換成翻譯題，沿用題 id a2-u10-l01-q17；目標字沿用 dessert",
+        "resolution": "改為 translate：promptZh「這家餐廳的甜點很有名。」、hintWords [\"dessert\"]、referenceEn [\"The desserts at this restaurant are famous.\",\"This restaurant is famous for its desserts.\"]、rubricZh [\"用 dessert 表示「甜點」，單數、複數都可以（例如 desserts）\",\"「很有名」可寫，例如 are famous、is famous for 等\"]（原 makeSentence：instructionZh「用 dessert 造一個句子，說說你最喜歡的甜點。」、referenceEn [\"My favorite dessert is chocolate cake.\",\"I always want ice cream for dessert.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 變體 2 與同單元 a2-u10-l02 單字卡 seafood「This restaurant is famous for its seafood.」只差一個字",
+        "resolution": "referenceEn 改為 [\"The desserts at this restaurant are famous.\",\"This restaurant's desserts are very famous.\"]（原 [\"The desserts at this restaurant are famous.\",\"This restaurant is famous for its desserts.\"]）；rubricZh 改為 [\"用 dessert 表示「甜點」，單數、複數都可以（例如 desserts）\",\"「很有名」可寫，例如 are famous、are very famous、is famous for 等\"]（原 [\"用 dessert 表示「甜點」，單數、複數都可以（例如 desserts）\",\"「很有名」可寫，例如 are famous、is famous for 等\"]）",
+        "resolvedAt": "2026-10-04T12:00:00Z"
       }
     ]
   }
