@@ -230,16 +230,18 @@
     },
     {
       "id": "c1-u04-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "rarity",
-      "instructionZh": "用 rarity 造一個句子，說說在你的生活中很少發生的事。",
+      "type": "translate",
+      "promptZh": "在這家熱門餐廳，有空位是很難得的事。",
+      "hintWords": [
+        "rarity"
+      ],
       "referenceEn": [
-        "For me, a free weekend is a rarity these days.",
-        "Eating breakfast at home is a rarity in my busy week."
+        "At this popular restaurant, an empty table is a rarity.",
+        "An empty table is a real rarity at this popular restaurant."
       ],
       "rubricZh": [
-        "rarity 表示「罕見的事物」，用法例如 is a rarity、a real rarity 等",
-        "句子要說到你自己的生活"
+        "「很難得的事」用 rarity（例如 is a rarity、a real rarity 等）",
+        "「空位」可寫，例如 an empty table、a free table、a free seat 等"
       ]
     }
   ],
@@ -307,6 +309,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：rarity 表示「罕見的事物」，用法例如 is a rarity、a real rarity 等",
         "resolvedAt": "2026-10-02T21:54:19Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rarity）原位換成翻譯題，沿用題 id c1-u04-l05-q17；目標字沿用 rarity",
+        "resolution": "改為 translate：promptZh「在這家熱門餐廳，有空位是很難得的事。」、hintWords [\"rarity\"]、referenceEn [\"At this popular restaurant, an empty table is a rarity.\",\"An empty table is a real rarity at this popular restaurant.\"]、rubricZh [\"「很難得的事」用 rarity（例如 is a rarity、a real rarity 等）\",\"「空位」可寫，例如 an empty table、a free table、a free seat 等\"]（原 makeSentence：instructionZh「用 rarity 造一個句子，說說在你的生活中很少發生的事。」、referenceEn [\"For me, a free weekend is a rarity these days.\",\"Eating breakfast at home is a rarity in my busy week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -204,16 +204,20 @@
     },
     {
       "id": "c1-u27-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "haggle",
-      "instructionZh": "用 haggle 造一個句子，說說你殺價的經驗。",
+      "type": "translate",
+      "promptZh": "她在二手車行跟業務員殺價，省了一大筆錢。",
+      "hintWords": [
+        "haggle"
+      ],
       "referenceEn": [
-        "I haggled with the seller and got the bag for half the price.",
-        "I am not good at haggling, so I usually pay the full price."
+        "She haggled with the salesman at the used car shop and saved a lot of money.",
+        "At the second-hand car shop, she haggled with the salesperson and saved a large amount of money."
       ],
       "rubricZh": [
-        "haggle 是不及物動詞，用法例如 haggle over the price、haggle with someone 等",
-        "句子要說到你自己的經驗"
+        "「殺價」用 haggle，可接 with＋人、over／about＋價錢（例如 haggled with the salesman 等）",
+        "「二手車行」可寫，例如 used car shop、second-hand car shop 等",
+        "「省了一大筆錢」可寫，例如 saved a lot of money 等",
+        "時態配合內容（例如 haggled、has saved 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -281,6 +285,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：haggle 是不及物動詞，用法例如 haggle over the price、haggle with someone 等／句子要說到你自己的經驗",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（haggle）原位換成翻譯題，沿用題 id c1-u27-l01-q15；目標字沿用 haggle",
+        "resolution": "改為 translate：promptZh「她在二手車行跟業務員殺價，省了一大筆錢。」、hintWords [\"haggle\"]、referenceEn [\"She haggled with the salesman at the used car shop and saved a lot of money.\",\"At the second-hand car shop, she haggled with the salesperson and saved a large amount of money.\"]、rubricZh [\"「殺價」用 haggle，可接 with＋人、over／about＋價錢（例如 haggled with the salesman 等）\",\"「二手車行」可寫，例如 used car shop、second-hand car shop 等\",\"「省了一大筆錢」可寫，例如 saved a lot of money 等\",\"時態配合內容（例如 haggled、has saved 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 haggle 造一個句子，說說你殺價的經驗。」、referenceEn [\"I haggled with the seller and got the bag for half the price.\",\"I am not good at haggling, so I usually pay the full price.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

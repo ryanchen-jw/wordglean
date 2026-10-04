@@ -258,16 +258,19 @@
     },
     {
       "id": "c1-u01-l01-q19",
-      "type": "makeSentence",
-      "targetWord": "apt to",
-      "instructionZh": "用 be apt to 造一個句子，說說你自己容易發生的某個習慣或狀況。",
+      "type": "translate",
+      "promptZh": "這台舊印表機在潮濕的天氣裡容易故障。",
+      "hintWords": [
+        "apt to"
+      ],
       "referenceEn": [
-        "I am apt to forget my keys when I leave home in a hurry.",
-        "I am apt to talk too fast when I feel nervous."
+        "This old printer is apt to break down in wet weather.",
+        "The old printer is apt to stop working when the weather is damp."
       ],
       "rubricZh": [
-        "用 be apt to＋原形動詞表示「容易⋯、往往會⋯」（例如 am apt to forget 等）",
-        "句子說的是你自己的習慣或狀況"
+        "「容易⋯」用 be apt to＋原形動詞（例如 is apt to break down 等）",
+        "「故障」可寫，例如 break down、stop working 等",
+        "「潮濕的天氣」可寫，例如 wet weather、damp weather、when it is wet 等"
       ]
     }
   ],
@@ -329,6 +332,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：用 be apt to＋原形動詞表示「容易⋯、往往會⋯」（例如 am apt to forget 等）",
         "resolvedAt": "2026-10-02T21:54:00Z"
+      },
+      {
+        "path": "items/18",
+        "message": "創辦人裁示：造句改翻譯：造句題（apt to）原位換成翻譯題，沿用題 id c1-u01-l01-q19；目標字沿用 apt to",
+        "resolution": "改為 translate：promptZh「這台舊印表機在潮濕的天氣裡容易故障。」、hintWords [\"apt to\"]、referenceEn [\"This old printer is apt to break down in wet weather.\",\"The old printer is apt to stop working when the weather is damp.\"]、rubricZh [\"「容易⋯」用 be apt to＋原形動詞（例如 is apt to break down 等）\",\"「故障」可寫，例如 break down、stop working 等\",\"「潮濕的天氣」可寫，例如 wet weather、damp weather、when it is wet 等\"]（原 makeSentence：instructionZh「用 be apt to 造一個句子，說說你自己容易發生的某個習慣或狀況。」、referenceEn [\"I am apt to forget my keys when I leave home in a hurry.\",\"I am apt to talk too fast when I feel nervous.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

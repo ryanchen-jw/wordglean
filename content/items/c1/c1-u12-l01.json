@@ -218,16 +218,18 @@
     },
     {
       "id": "c1-u12-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "appliance",
-      "instructionZh": "用 appliance 造一個句子，說說你家裡最常用的一樣家電。",
+      "type": "translate",
+      "promptZh": "這間二手店專門修理老舊的家電。",
+      "hintWords": [
+        "appliance"
+      ],
       "referenceEn": [
-        "The appliance I use most at home is my rice cooker.",
-        "My most useful kitchen appliance is a small oven."
+        "This second-hand shop specializes in repairing old appliances.",
+        "The second-hand shop mainly repairs old household appliances."
       ],
       "rubricZh": [
-        "appliance 表示「家電」（例如 the appliance I use most、a kitchen appliance 等）",
-        "句子要說到你自己家裡的家電"
+        "「家電」用 appliance 的複數（例如 old appliances、household appliances 等）",
+        "「專門」可寫，例如 specializes in、mainly 等"
       ]
     }
   ],
@@ -289,6 +291,12 @@
         "message": "執行長最終複審修正：最終複審 3：sedentary 新卡與閱讀、跟讀都是「工作讓人很少活動」，句型也相近",
         "resolution": "卡改成與工作無關的 Reading and watching TV are sedentary hobbies.",
         "resolvedAt": "2026-10-02T22:11:23Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（appliance）原位換成翻譯題，沿用題 id c1-u12-l01-q16；目標字沿用 appliance",
+        "resolution": "改為 translate：promptZh「這間二手店專門修理老舊的家電。」、hintWords [\"appliance\"]、referenceEn [\"This second-hand shop specializes in repairing old appliances.\",\"The second-hand shop mainly repairs old household appliances.\"]、rubricZh [\"「家電」用 appliance 的複數（例如 old appliances、household appliances 等）\",\"「專門」可寫，例如 specializes in、mainly 等\"]（原 makeSentence：instructionZh「用 appliance 造一個句子，說說你家裡最常用的一樣家電。」、referenceEn [\"The appliance I use most at home is my rice cooker.\",\"My most useful kitchen appliance is a small oven.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

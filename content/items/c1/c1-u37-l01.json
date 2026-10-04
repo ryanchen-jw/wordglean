@@ -231,17 +231,19 @@
     },
     {
       "id": "c1-u37-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "homely",
-      "instructionZh": "用 homely 造一個句子，描述一個讓你覺得溫馨、樸實的地方。",
+      "type": "translate",
+      "promptZh": "這間咖啡館的布置很溫馨，就像朋友家的客廳。",
+      "hintWords": [
+        "homely"
+      ],
       "referenceEn": [
-        "I love the homely kitchen at my aunt's house.",
-        "I prefer small, homely hotels to big modern ones."
+        "This cafe has a homely feel, like a friend's living room.",
+        "The cafe is decorated in a homely style, just like a friend's living room."
       ],
       "rubricZh": [
-        "homely 在這裡表示「溫馨樸實的」，常放名詞前（例如 a homely kitchen）",
-        "描述的是地方（美式英語用 homely 形容人時指「相貌平平」，不適合本題）",
-        "時態配合內容（例如 love、prefer、loved）"
+        "「溫馨」用 homely（例如 a homely feel、a homely style 等）",
+        "「布置」可寫，例如 decorated、feel 等",
+        "「就像」可寫，例如 like、just like 等"
       ]
     }
   ],
@@ -285,6 +287,12 @@
         "message": "執行長第②③關裁示修正：第③關 2-E：評分要點寫死位置",
         "resolution": "改為 「複雜難懂的」用 convoluted，位置例如 be 動詞後、名詞前（convoluted terms）等（原 「複雜難懂的」用 convoluted，可放在 be 動詞後或名詞前）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（homely）原位換成翻譯題，沿用題 id c1-u37-l01-q17；目標字沿用 homely",
+        "resolution": "改為 translate：promptZh「這間咖啡館的布置很溫馨，就像朋友家的客廳。」、hintWords [\"homely\"]、referenceEn [\"This cafe has a homely feel, like a friend's living room.\",\"The cafe is decorated in a homely style, just like a friend's living room.\"]、rubricZh [\"「溫馨」用 homely（例如 a homely feel、a homely style 等）\",\"「布置」可寫，例如 decorated、feel 等\",\"「就像」可寫，例如 like、just like 等\"]（原 makeSentence：instructionZh「用 homely 造一個句子，描述一個讓你覺得溫馨、樸實的地方。」、referenceEn [\"I love the homely kitchen at my aunt's house.\",\"I prefer small, homely hotels to big modern ones.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

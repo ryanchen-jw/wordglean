@@ -219,16 +219,18 @@
     },
     {
       "id": "c1-u17-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "suburban",
-      "instructionZh": "用 suburban 造一個句子，說說你喜歡或不喜歡住在郊區的理由。",
+      "type": "translate",
+      "promptZh": "這家人上個月從市中心搬到了郊區的一棟房子。",
+      "hintWords": [
+        "suburban"
+      ],
       "referenceEn": [
-        "I like suburban life because the streets are quiet and safe.",
-        "I don't enjoy living in a suburban area because I have to drive everywhere."
+        "Last month, the family moved from the city center to a suburban house.",
+        "The family moved out of the city center into a house in a suburban area last month."
       ],
       "rubricZh": [
-        "suburban 是形容詞，位置有彈性（例如 suburban life、a suburban area、is suburban 等）",
-        "句子要說出你自己的理由"
+        "「郊區的」用 suburban（例如 a suburban house、a suburban area 等）",
+        "有「上個月」，用過去式（例如 moved 等）"
       ]
     }
   ],
@@ -272,6 +274,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：suburban 是形容詞，位置有彈性（例如 suburban life、a suburban area、is suburban 等）／句子要說出你自己的理由",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（suburban）原位換成翻譯題，沿用題 id c1-u17-l01-q16；目標字沿用 suburban",
+        "resolution": "改為 translate：promptZh「這家人上個月從市中心搬到了郊區的一棟房子。」、hintWords [\"suburban\"]、referenceEn [\"Last month, the family moved from the city center to a suburban house.\",\"The family moved out of the city center into a house in a suburban area last month.\"]、rubricZh [\"「郊區的」用 suburban（例如 a suburban house、a suburban area 等）\",\"有「上個月」，用過去式（例如 moved 等）\"]（原 makeSentence：instructionZh「用 suburban 造一個句子，說說你喜歡或不喜歡住在郊區的理由。」、referenceEn [\"I like suburban life because the streets are quiet and safe.\",\"I don't enjoy living in a suburban area because I have to drive everywhere.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

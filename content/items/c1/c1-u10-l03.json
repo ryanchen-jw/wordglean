@@ -231,16 +231,19 @@
     },
     {
       "id": "c1-u10-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "crave",
-      "instructionZh": "用 crave 造一個句子，說說你在某種情況下特別渴望的東西。",
+      "type": "translate",
+      "promptZh": "在城市住久了，他渴望安靜的鄉村生活。",
+      "hintWords": [
+        "crave"
+      ],
       "referenceEn": [
-        "When I study late at night, I crave something sweet.",
-        "After a busy week at work, I crave a quiet day at home."
+        "He has lived in the city for years and now craves a quiet life in the countryside.",
+        "Having lived in the city for so long, he craves the peace of country life."
       ],
       "rubricZh": [
-        "crave 是及物動詞，表示「渴望」（例如 crave something sweet 等）",
-        "句子要說到你自己"
+        "「渴望」用 crave＋名詞（例如 craves a quiet life 等）",
+        "「鄉村生活」可寫，例如 life in the countryside、country life 等",
+        "時態配合內容（例如 craves、has started to crave 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -296,6 +299,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：crave 是及物動詞，表示「渴望」（例如 crave something sweet 等）",
         "resolvedAt": "2026-10-02T21:54:53Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（crave）原位換成翻譯題，沿用題 id c1-u10-l03-q17；目標字沿用 crave",
+        "resolution": "改為 translate：promptZh「在城市住久了，他渴望安靜的鄉村生活。」、hintWords [\"crave\"]、referenceEn [\"He has lived in the city for years and now craves a quiet life in the countryside.\",\"Having lived in the city for so long, he craves the peace of country life.\"]、rubricZh [\"「渴望」用 crave＋名詞（例如 craves a quiet life 等）\",\"「鄉村生活」可寫，例如 life in the countryside、country life 等\",\"時態配合內容（例如 craves、has started to crave 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 crave 造一個句子，說說你在某種情況下特別渴望的東西。」、referenceEn [\"When I study late at night, I crave something sweet.\",\"After a busy week at work, I crave a quiet day at home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

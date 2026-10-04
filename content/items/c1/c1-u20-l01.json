@@ -244,16 +244,19 @@
     },
     {
       "id": "c1-u20-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "comply",
-      "instructionZh": "用 comply 造一個句子，說說你在生活中會遵守的一條規定。",
+      "type": "translate",
+      "promptZh": "那位球員拒絕遵守裁判的指示，被罰下場。",
+      "hintWords": [
+        "comply"
+      ],
       "referenceEn": [
-        "I always comply with the library's rule about keeping quiet.",
-        "When I ride my scooter, I comply with the speed limit."
+        "The player refused to comply with the referee's instructions and was sent off.",
+        "After refusing to comply with the referee's orders, the player was sent off."
       ],
       "rubricZh": [
-        "comply 表示「遵守」，用法例如 comply with the rules、comply with the law 等",
-        "句子要說到你自己的生活"
+        "「遵守」用 comply with（例如 comply with the referee's instructions 等）",
+        "「被罰下場」可寫，例如 was sent off、was sent off the field 等",
+        "時態配合內容（例如 refused、was sent off 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -315,6 +318,12 @@
         "message": "執行長最終複審修正：最終複審 4：聽打改成歌手遭騷擾，與同單元 u20-l02 harass 卡事件相同",
         "resolution": "聽打改 Many online games now let players report harassment from other players.",
         "resolvedAt": "2026-10-02T22:11:25Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（comply）原位換成翻譯題，沿用題 id c1-u20-l01-q18；目標字沿用 comply",
+        "resolution": "改為 translate：promptZh「那位球員拒絕遵守裁判的指示，被罰下場。」、hintWords [\"comply\"]、referenceEn [\"The player refused to comply with the referee's instructions and was sent off.\",\"After refusing to comply with the referee's orders, the player was sent off.\"]、rubricZh [\"「遵守」用 comply with（例如 comply with the referee's instructions 等）\",\"「被罰下場」可寫，例如 was sent off、was sent off the field 等\",\"時態配合內容（例如 refused、was sent off 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 comply 造一個句子，說說你在生活中會遵守的一條規定。」、referenceEn [\"I always comply with the library's rule about keeping quiet.\",\"When I ride my scooter, I comply with the speed limit.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,16 +229,18 @@
     },
     {
       "id": "c1-u04-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "impervious",
-      "instructionZh": "用 impervious to 造一個句子，說說你或你的某樣東西不受什麼影響。",
+      "type": "translate",
+      "promptZh": "這種塗料不透水，很適合用在浴室。",
+      "hintWords": [
+        "impervious"
+      ],
       "referenceEn": [
-        "My hiking boots are impervious to water.",
-        "My old watch is impervious to water, so I wear it when I swim."
+        "This paint is impervious to water, so it is good for bathrooms.",
+        "This paint is impervious to water, which makes it ideal for bathrooms."
       ],
       "rubricZh": [
-        "impervious to＋名詞表示「不受⋯影響、不透⋯」（例如 impervious to water 等）",
-        "句子要說到你自己或你的東西"
+        "「不透水」用 impervious to water（例如 is impervious to water 等）",
+        "「很適合用在浴室」可寫，例如 good for bathrooms、ideal for bathrooms 等"
       ]
     }
   ],
@@ -294,6 +296,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：impervious to＋名詞表示「不受⋯影響、不透⋯」（例如 impervious to water 等）",
         "resolvedAt": "2026-10-02T21:54:21Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（impervious）原位換成翻譯題，沿用題 id c1-u04-l07-q17；目標字沿用 impervious",
+        "resolution": "改為 translate：promptZh「這種塗料不透水，很適合用在浴室。」、hintWords [\"impervious\"]、referenceEn [\"This paint is impervious to water, so it is good for bathrooms.\",\"This paint is impervious to water, which makes it ideal for bathrooms.\"]、rubricZh [\"「不透水」用 impervious to water（例如 is impervious to water 等）\",\"「很適合用在浴室」可寫，例如 good for bathrooms、ideal for bathrooms 等\"]（原 makeSentence：instructionZh「用 impervious to 造一個句子，說說你或你的某樣東西不受什麼影響。」、referenceEn [\"My hiking boots are impervious to water.\",\"My old watch is impervious to water, so I wear it when I swim.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

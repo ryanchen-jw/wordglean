@@ -242,16 +242,18 @@
     },
     {
       "id": "c1-u06-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "conviction",
-      "instructionZh": "用 conviction 造一個句子，說說你堅信的一件事。",
+      "type": "translate",
+      "promptZh": "他堅信每個孩子都應該學會游泳。",
+      "hintWords": [
+        "conviction"
+      ],
       "referenceEn": [
-        "It is my strong conviction that everyone should learn to cook.",
-        "I have a deep conviction that reading every day makes life richer."
+        "It is his firm conviction that every child should learn to swim.",
+        "He has a strong conviction that all children should learn to swim."
       ],
       "rubricZh": [
-        "conviction 表示「堅定的信念」（例如 It is my conviction that…、a conviction that… 等）",
-        "句子說的是你自己的信念"
+        "「堅信」用 conviction（例如 it is his firm conviction that…、a strong conviction that… 等）",
+        "「應該」可寫，例如 should、ought to 等"
       ]
     }
   ],
@@ -307,6 +309,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：conviction 表示「堅定的信念」（例如 It is my conviction that…、a conviction that… 等）",
         "resolvedAt": "2026-10-02T21:54:27Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（conviction）原位換成翻譯題，沿用題 id c1-u06-l01-q18；目標字沿用 conviction",
+        "resolution": "改為 translate：promptZh「他堅信每個孩子都應該學會游泳。」、hintWords [\"conviction\"]、referenceEn [\"It is his firm conviction that every child should learn to swim.\",\"He has a strong conviction that all children should learn to swim.\"]、rubricZh [\"「堅信」用 conviction（例如 it is his firm conviction that…、a strong conviction that… 等）\",\"「應該」可寫，例如 should、ought to 等\"]（原 makeSentence：instructionZh「用 conviction 造一個句子，說說你堅信的一件事。」、referenceEn [\"It is my strong conviction that everyone should learn to cook.\",\"I have a deep conviction that reading every day makes life richer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

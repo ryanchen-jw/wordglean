@@ -231,17 +231,19 @@
     },
     {
       "id": "c1-u37-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "dynamically",
-      "instructionZh": "用 dynamically 造一個句子，描述某個人做事充滿活力，或某件事不斷變化的樣子。",
+      "type": "translate",
+      "promptZh": "這位年輕的指揮家指揮樂團時充滿活力。",
+      "hintWords": [
+        "dynamically"
+      ],
       "referenceEn": [
-        "Our teacher teaches so dynamically that no one falls asleep in class.",
-        "I like coaches who lead their teams dynamically."
+        "The young conductor leads the orchestra very dynamically.",
+        "The young conductor conducts the orchestra dynamically."
       ],
       "rubricZh": [
-        "dynamically 是副詞，修飾動詞（例如 teaches dynamically、lead…dynamically 等）",
-        "可指「充滿活力地」，也可指「動態地、不斷變化地」",
-        "時態配合內容（例如 teaches、like、taught）"
+        "「充滿活力地」用 dynamically（例如 leads the orchestra dynamically 等）",
+        "「指揮」可寫，例如 leads、conducts 等",
+        "時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -291,6 +293,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"表面上\",\"極其\",\"驚人地\",\"慷慨地\"]（原 [\"表面上\",\"極其\",\"驚人地\",\"簡樸的\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dynamically）原位換成翻譯題，沿用題 id c1-u37-l02-q17；目標字沿用 dynamically",
+        "resolution": "改為 translate：promptZh「這位年輕的指揮家指揮樂團時充滿活力。」、hintWords [\"dynamically\"]、referenceEn [\"The young conductor leads the orchestra very dynamically.\",\"The young conductor conducts the orchestra dynamically.\"]、rubricZh [\"「充滿活力地」用 dynamically（例如 leads the orchestra dynamically 等）\",\"「指揮」可寫，例如 leads、conducts 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 dynamically 造一個句子，描述某個人做事充滿活力，或某件事不斷變化的樣子。」、referenceEn [\"Our teacher teaches so dynamically that no one falls asleep in class.\",\"I like coaches who lead their teams dynamically.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

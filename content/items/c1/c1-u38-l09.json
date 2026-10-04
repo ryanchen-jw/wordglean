@@ -229,17 +229,19 @@
     },
     {
       "id": "c1-u38-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "commendation",
-      "instructionZh": "用 commendation 造一個句子，說說某人因為什麼事受到表揚。",
+      "type": "translate",
+      "promptZh": "這位消防員因為救出受困的小貓而獲得表揚。",
+      "hintWords": [
+        "commendation"
+      ],
       "referenceEn": [
-        "My sister received a commendation from her school for helping new students.",
-        "Our team got a commendation for finishing the project early."
+        "The firefighter received a commendation for rescuing a trapped kitten.",
+        "The firefighter was given a commendation for saving a kitten that was stuck."
       ],
       "rubricZh": [
-        "commendation 表示「表揚」，例如 receive a commendation for…、get a commendation 等",
-        "時態配合內容（例如 received、got）",
-        "要說出受表揚的原因（例如 for helping new students）"
+        "「表揚」用 commendation（例如 received a commendation for… 等）",
+        "「救出受困的小貓」可寫，例如 rescuing a trapped kitten、saving a kitten that was stuck 等",
+        "時態配合內容（例如 received、was given 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -295,6 +297,12 @@
         "message": "執行長裁示修正（3-C 第 17 條：同單元不同課不重複同一情境）：中譯同步",
         "resolution": "改為 星期天，一股濃濃的倦怠感讓我在床上賴到中午。（原 午餐後，一股倦怠感籠罩了整間辦公室。）",
         "resolvedAt": "2026-10-02T20:59:24Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（commendation）原位換成翻譯題，沿用題 id c1-u38-l09-q17；目標字沿用 commendation",
+        "resolution": "改為 translate：promptZh「這位消防員因為救出受困的小貓而獲得表揚。」、hintWords [\"commendation\"]、referenceEn [\"The firefighter received a commendation for rescuing a trapped kitten.\",\"The firefighter was given a commendation for saving a kitten that was stuck.\"]、rubricZh [\"「表揚」用 commendation（例如 received a commendation for… 等）\",\"「救出受困的小貓」可寫，例如 rescuing a trapped kitten、saving a kitten that was stuck 等\",\"時態配合內容（例如 received、was given 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 commendation 造一個句子，說說某人因為什麼事受到表揚。」、referenceEn [\"My sister received a commendation from her school for helping new students.\",\"Our team got a commendation for finishing the project early.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

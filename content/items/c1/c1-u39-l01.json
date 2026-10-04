@@ -232,17 +232,18 @@
     },
     {
       "id": "c1-u39-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "impish",
-      "instructionZh": "用 impish 造一個句子，描述某個人或動物頑皮淘氣的樣子。",
+      "type": "translate",
+      "promptZh": "這位喜劇演員有一種頑皮的幽默感。",
+      "hintWords": [
+        "impish"
+      ],
       "referenceEn": [
-        "My nephew gets an impish smile whenever he is planning a joke.",
-        "Our impish puppy hides my socks under the sofa."
+        "This comedian has an impish sense of humor.",
+        "The comedian's sense of humor is impish."
       ],
       "rubricZh": [
-        "impish 是形容詞，常放名詞前（例如 an impish smile、our impish puppy）",
-        "內容要說出頑皮的表現",
-        "時態配合內容（例如 gets、hides）"
+        "「頑皮的」用 impish（例如 an impish sense of humor 等）",
+        "「幽默感」可寫，例如 sense of humor 等"
       ]
     }
   ],
@@ -298,6 +299,12 @@
         "message": "執行長第②③關裁示修正：第③關 2-E：評分要點「常寫」未用「例如」",
         "resolution": "改為 「疏忽的」用 neglectful，例如 be neglectful of his family 等（原 「疏忽的」用 neglectful，常寫 be neglectful of＋對象）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（impish）原位換成翻譯題，沿用題 id c1-u39-l01-q17；目標字沿用 impish",
+        "resolution": "改為 translate：promptZh「這位喜劇演員有一種頑皮的幽默感。」、hintWords [\"impish\"]、referenceEn [\"This comedian has an impish sense of humor.\",\"The comedian's sense of humor is impish.\"]、rubricZh [\"「頑皮的」用 impish（例如 an impish sense of humor 等）\",\"「幽默感」可寫，例如 sense of humor 等\"]（原 makeSentence：instructionZh「用 impish 造一個句子，描述某個人或動物頑皮淘氣的樣子。」、referenceEn [\"My nephew gets an impish smile whenever he is planning a joke.\",\"Our impish puppy hides my socks under the sofa.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

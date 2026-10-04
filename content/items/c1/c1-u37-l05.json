@@ -218,16 +218,19 @@
     },
     {
       "id": "c1-u37-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "exotically",
-      "instructionZh": "用 exotically 造一個句子，描述某樣東西帶有異國風情的樣子。",
+      "type": "translate",
+      "promptZh": "對我們來說，這首曲子聽起來充滿異國風情，非常美。",
+      "hintWords": [
+        "exotically"
+      ],
       "referenceEn": [
-        "My aunt's living room is exotically decorated with lamps from Morocco.",
-        "I bought an exotically patterned scarf at the night market."
+        "To us, the piece of music sounded exotically beautiful.",
+        "This tune sounded exotically beautiful to us."
       ],
       "rubricZh": [
-        "exotically 是副詞，常修飾過去分詞或形容詞（例如 exotically decorated、exotically patterned 等）",
-        "時態配合內容（例如 is、bought）"
+        "「充滿異國風情」用 exotically 修飾形容詞（例如 exotically beautiful 等）",
+        "「曲子」可寫，例如 piece of music、tune、song 等",
+        "時態配合內容（例如 sounded、sounds 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -379,6 +382,12 @@
         "message": "執行長最終複審修正：第 2 條：dominantly 卡片釋義已改為「支配性地」，選項釋義同步",
         "resolution": "改為 [\"支配性地\",\"表面上\",\"線性地\",\"令人信服地\"]（原 [\"主要地\",\"表面上\",\"線性地\",\"令人信服地\"]）",
         "resolvedAt": "2026-10-02T21:14:50Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（exotically）原位換成翻譯題，沿用題 id c1-u37-l05-q16；目標字沿用 exotically",
+        "resolution": "改為 translate：promptZh「對我們來說，這首曲子聽起來充滿異國風情，非常美。」、hintWords [\"exotically\"]、referenceEn [\"To us, the piece of music sounded exotically beautiful.\",\"This tune sounded exotically beautiful to us.\"]、rubricZh [\"「充滿異國風情」用 exotically 修飾形容詞（例如 exotically beautiful 等）\",\"「曲子」可寫，例如 piece of music、tune、song 等\",\"時態配合內容（例如 sounded、sounds 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 exotically 造一個句子，描述某樣東西帶有異國風情的樣子。」、referenceEn [\"My aunt's living room is exotically decorated with lamps from Morocco.\",\"I bought an exotically patterned scarf at the night market.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

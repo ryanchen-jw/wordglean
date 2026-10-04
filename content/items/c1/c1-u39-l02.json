@@ -232,17 +232,19 @@
     },
     {
       "id": "c1-u39-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "naturalness",
-      "instructionZh": "用 naturalness 造一個句子，稱讚某個人、作品或聲音的自然。",
+      "type": "translate",
+      "promptZh": "評審稱讚這位年輕演員表演得很自然。",
+      "hintWords": [
+        "naturalness"
+      ],
       "referenceEn": [
-        "I like the naturalness of the actors in this TV series.",
-        "The naturalness of her voice makes the song special."
+        "The judges praised the naturalness of the young actor's performance.",
+        "The naturalness of the young actor's acting won praise from the judges."
       ],
       "rubricZh": [
-        "naturalness 是名詞，例如 the naturalness of the actors、her naturalness 等",
-        "內容要說出稱讚的對象",
-        "時態配合內容（例如 like、makes）"
+        "「自然」用名詞 naturalness（例如 the naturalness of the performance 等）",
+        "「稱讚」可寫，例如 praised、won praise from 等",
+        "時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -334,6 +336,12 @@
         "message": "執行長最終複審修正：中譯同步",
         "resolution": "改為 在軍中，抗命是非常嚴重的事。（原 拒絕主管的直接指示，可能會被視為不服從上級。）",
         "resolvedAt": "2026-10-02T21:14:50Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（naturalness）原位換成翻譯題，沿用題 id c1-u39-l02-q17；目標字沿用 naturalness",
+        "resolution": "改為 translate：promptZh「評審稱讚這位年輕演員表演得很自然。」、hintWords [\"naturalness\"]、referenceEn [\"The judges praised the naturalness of the young actor's performance.\",\"The naturalness of the young actor's acting won praise from the judges.\"]、rubricZh [\"「自然」用名詞 naturalness（例如 the naturalness of the performance 等）\",\"「稱讚」可寫，例如 praised、won praise from 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 naturalness 造一個句子，稱讚某個人、作品或聲音的自然。」、referenceEn [\"I like the naturalness of the actors in this TV series.\",\"The naturalness of her voice makes the song special.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

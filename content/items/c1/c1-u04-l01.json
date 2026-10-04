@@ -231,16 +231,19 @@
     },
     {
       "id": "c1-u04-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "notable",
-      "instructionZh": "用 notable 造一個句子，介紹你的城市或家鄉值得注意的某個特色。",
+      "type": "translate",
+      "promptZh": "這座小鎮以它的溫泉聞名。",
+      "hintWords": [
+        "notable"
+      ],
       "referenceEn": [
-        "My hometown is notable for its night markets.",
-        "One notable thing about my city is its many old temples."
+        "This small town is notable for its hot springs.",
+        "This little town is notable for its hot springs."
       ],
       "rubricZh": [
-        "notable 表示「值得注意的、著名的」（例如 is notable for its night markets、one notable thing 等）",
-        "句子要說到你自己的城市或家鄉"
+        "「以⋯聞名」用 notable（例如 is notable for…、is particularly notable for… 等）",
+        "「溫泉」可寫，例如 hot springs 等",
+        "「小鎮」可寫，例如 small town、little town 等"
       ]
     }
   ],
@@ -296,6 +299,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：notable 表示「值得注意的、著名的」（例如 is notable for its night markets、one notable thing 等）",
         "resolvedAt": "2026-10-02T21:54:14Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（notable）原位換成翻譯題，沿用題 id c1-u04-l01-q17；目標字沿用 notable",
+        "resolution": "改為 translate：promptZh「這座小鎮以它的溫泉聞名。」、hintWords [\"notable\"]、referenceEn [\"This small town is notable for its hot springs.\",\"One notable thing about this small town is its hot springs.\"]、rubricZh [\"「以⋯聞名」用 notable（例如 is notable for…、one notable thing about… 等）\",\"「溫泉」可寫，例如 hot springs 等\",\"「小鎮」可寫，例如 small town、little town 等\"]（原 makeSentence：instructionZh「用 notable 造一個句子，介紹你的城市或家鄉值得注意的某個特色。」、referenceEn [\"My hometown is notable for its night markets.\",\"One notable thing about my city is its many old temples.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：c1-u04-l01-q17 SUS 變體 2 只說「值得一提」，沒有「以⋯聞名」的意思",
+        "resolution": "改為 referenceEn [\"This small town is notable for its hot springs.\",\"This little town is notable for its hot springs.\"]、rubricZh [\"「以⋯聞名」用 notable（例如 is notable for…、is particularly notable for… 等）\",\"「溫泉」可寫，例如 hot springs 等\",\"「小鎮」可寫，例如 small town、little town 等\"]（原 referenceEn [\"This small town is notable for its hot springs.\",\"One notable thing about this small town is its hot springs.\"]、rubricZh [\"「以⋯聞名」用 notable（例如 is notable for…、one notable thing about… 等）\",\"「溫泉」可寫，例如 hot springs 等\",\"「小鎮」可寫，例如 small town、little town 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

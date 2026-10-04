@@ -228,16 +228,18 @@
     },
     {
       "id": "c1-u06-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "realism",
-      "instructionZh": "用 realism 造一個句子，說說你欣賞某部作品或某個人的哪一點。",
+      "type": "translate",
+      "promptZh": "規劃這次旅行時，我們需要多一點務實的態度。",
+      "hintWords": [
+        "realism"
+      ],
       "referenceEn": [
-        "I admire the realism of this film because it shows daily life honestly.",
-        "I admire my mother's realism; she always plans for possible problems."
+        "We need a bit more realism when we plan this trip.",
+        "When planning this trip, we need a little more realism."
       ],
       "rubricZh": [
-        "realism 可表示「寫實」或「務實的態度」（例如 the realism of the film、my mother's realism 等）",
-        "句子要說出你自己的看法"
+        "「務實的態度」用 realism（例如 a bit more realism、a little more realism 等）",
+        "「規劃這次旅行時」可寫，例如 when we plan this trip、when planning this trip 等，放句首或句尾皆可"
       ]
     }
   ],
@@ -287,6 +289,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：realism 可表示「寫實」或「務實的態度」（例如 the realism of the film、my mother's realism 等）",
         "resolvedAt": "2026-10-02T21:54:29Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（realism）原位換成翻譯題，沿用題 id c1-u06-l03-q17；目標字沿用 realism",
+        "resolution": "改為 translate：promptZh「規劃這次旅行時，我們需要多一點務實的態度。」、hintWords [\"realism\"]、referenceEn [\"We need a bit more realism when we plan this trip.\",\"When planning this trip, we need a little more realism.\"]、rubricZh [\"「務實的態度」用 realism（例如 a bit more realism、a little more realism 等）\",\"「規劃這次旅行時」可寫，例如 when we plan this trip、when planning this trip 等，放句首或句尾皆可\"]（原 makeSentence：instructionZh「用 realism 造一個句子，說說你欣賞某部作品或某個人的哪一點。」、referenceEn [\"I admire the realism of this film because it shows daily life honestly.\",\"I admire my mother's realism; she always plans for possible problems.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

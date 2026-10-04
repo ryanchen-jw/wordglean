@@ -202,16 +202,19 @@
     },
     {
       "id": "c1-u34-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "portable",
-      "instructionZh": "用 portable 造一個句子，說說一樣你常帶著走的電子產品。",
+      "type": "translate",
+      "promptZh": "這位街頭藝人帶著一台可攜式電子琴到處表演。",
+      "hintWords": [
+        "portable"
+      ],
       "referenceEn": [
-        "I keep a small portable fan on my desk at work.",
-        "I use a small portable keyboard with my tablet."
+        "The street performer carries a portable keyboard and plays everywhere.",
+        "The street musician takes a portable keyboard to perform in many places."
       ],
       "rubricZh": [
-        "portable 是形容詞，表示「可攜帶的、隨身的」（例如 a portable speaker 等）",
-        "句子要說到你自己的東西"
+        "「可攜式的」用 portable（例如 a portable keyboard 等）",
+        "「街頭藝人」可寫，例如 street performer、street musician 等",
+        "「到處表演」可寫，例如 plays everywhere、performs in many places 等"
       ]
     }
   ],
@@ -267,6 +270,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：personalize 是及物動詞，表示「個人化、打造專屬」（例如 personalize your page 等）／「讓你」可寫，例如 lets you、allows you to、you can 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（portable）原位換成翻譯題，沿用題 id c1-u34-l01-q15；目標字沿用 portable",
+        "resolution": "改為 translate：promptZh「這位街頭藝人帶著一台可攜式電子琴到處表演。」、hintWords [\"portable\"]、referenceEn [\"The street performer carries a portable keyboard and plays everywhere.\",\"The street musician takes a portable keyboard to perform in many places.\"]、rubricZh [\"「可攜式的」用 portable（例如 a portable keyboard 等）\",\"「街頭藝人」可寫，例如 street performer、street musician 等\",\"「到處表演」可寫，例如 plays everywhere、performs in many places 等\"]（原 makeSentence：instructionZh「用 portable 造一個句子，說說一樣你常帶著走的電子產品。」、referenceEn [\"I keep a small portable fan on my desk at work.\",\"I use a small portable keyboard with my tablet.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

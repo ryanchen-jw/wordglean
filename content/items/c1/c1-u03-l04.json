@@ -233,17 +233,19 @@
     },
     {
       "id": "c1-u03-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "maneuver",
-      "instructionZh": "用 maneuver 當動詞造一個句子，描述你在狹窄或擁擠的地方小心移動某樣東西。",
+      "type": "translate",
+      "promptZh": "工人們小心地把鋼琴移過狹窄的門口。",
+      "hintWords": [
+        "maneuver"
+      ],
       "referenceEn": [
-        "I maneuvered my car into a very small parking space.",
-        "I had to maneuver my suitcase through the crowded station."
+        "The workers carefully maneuvered the piano through the narrow doorway.",
+        "The workers maneuvered the piano carefully through the narrow door."
       ],
       "rubricZh": [
-        "maneuver 當動詞表示「小心地操控、移動」（例如 maneuvered my car into… 等）",
-        "句子說的是你自己",
-        "時態配合內容（例如 maneuvered、had to maneuver 等）"
+        "「小心地移過」用 maneuver＋受詞＋介系詞片語（例如 maneuvered the piano through… 等）",
+        "「小心地」可寫，例如 carefully，放動詞前或句中皆可",
+        "「門口」可寫，例如 doorway、door 等；時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -323,6 +325,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：maneuver 當動詞表示「小心地操控、移動」（例如 maneuvered my car into… 等）／時態配合內容（例如 maneuvered、had to maneuver 等）",
         "resolvedAt": "2026-10-02T21:54:10Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（maneuver）原位換成翻譯題，沿用題 id c1-u03-l04-q17；目標字沿用 maneuver",
+        "resolution": "改為 translate：promptZh「工人們小心地把鋼琴移過狹窄的門口。」、hintWords [\"maneuver\"]、referenceEn [\"The workers carefully maneuvered the piano through the narrow doorway.\",\"The workers maneuvered the piano carefully through the narrow door.\"]、rubricZh [\"「小心地移過」用 maneuver＋受詞＋介系詞片語（例如 maneuvered the piano through… 等）\",\"「小心地」可寫，例如 carefully，放動詞前或句中皆可\",\"「門口」可寫，例如 doorway、door 等；時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 maneuver 當動詞造一個句子，描述你在狹窄或擁擠的地方小心移動某樣東西。」、referenceEn [\"I maneuvered my car into a very small parking space.\",\"I had to maneuver my suitcase through the crowded station.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

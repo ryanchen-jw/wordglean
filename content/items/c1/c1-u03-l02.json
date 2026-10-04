@@ -229,17 +229,19 @@
     },
     {
       "id": "c1-u03-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "clutch",
-      "instructionZh": "用 clutch 當動詞造一個句子，描述你緊緊抓著某樣東西的情景。",
+      "type": "translate",
+      "promptZh": "那位登山客緊緊抓著繩子，慢慢爬下陡坡。",
+      "hintWords": [
+        "clutch"
+      ],
       "referenceEn": [
-        "I clutched my bag tightly on the crowded train.",
-        "I clutched the rail when the boat started to shake."
+        "The climber clutched the rope and slowly climbed down the steep slope.",
+        "The climber slowly climbed down the steep slope, clutching the rope tightly."
       ],
       "rubricZh": [
-        "clutch 當動詞表示「緊抓」（例如 clutched my bag 等）",
-        "句子說的是你自己",
-        "時態配合內容（例如 clutched、clutch 等）"
+        "「緊緊抓著」用 clutch（例如 clutched the rope、clutching the rope tightly 等）",
+        "「爬下陡坡」可寫，例如 climbed down the steep slope、went down the steep hill 等",
+        "時態配合內容（例如 clutched、clutches、was clutching 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -307,6 +309,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：clutch 當動詞表示「緊抓」（例如 clutched my bag 等）／時態配合內容（例如 clutched、clutch 等）",
         "resolvedAt": "2026-10-02T21:54:07Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（clutch）原位換成翻譯題，沿用題 id c1-u03-l02-q17；目標字沿用 clutch",
+        "resolution": "改為 translate：promptZh「那位登山客緊緊抓著繩子，慢慢爬下陡坡。」、hintWords [\"clutch\"]、referenceEn [\"The climber clutched the rope and slowly climbed down the steep slope.\",\"The climber slowly climbed down the steep slope, clutching the rope tightly.\"]、rubricZh [\"「緊緊抓著」用 clutch（例如 clutched the rope、clutching the rope tightly 等）\",\"「爬下陡坡」可寫，例如 climbed down the steep slope、went down the steep hill 等\",\"時態配合內容（例如 clutched、clutches、was clutching 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 clutch 當動詞造一個句子，描述你緊緊抓著某樣東西的情景。」、referenceEn [\"I clutched my bag tightly on the crowded train.\",\"I clutched the rail when the boat started to shake.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

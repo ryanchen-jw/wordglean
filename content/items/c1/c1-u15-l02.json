@@ -243,16 +243,19 @@
     },
     {
       "id": "c1-u15-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "artistically",
-      "instructionZh": "用 artistically 造一個句子，評論一部你喜歡的作品或一個地方。",
+      "type": "translate",
+      "promptZh": "這本書的插畫在藝術上很出色，但故事有點無聊。",
+      "hintWords": [
+        "artistically"
+      ],
       "referenceEn": [
-        "Artistically, this film is the most beautiful one I have seen.",
-        "I think the new museum is artistically impressive."
+        "The pictures in this book are artistically excellent, but the story is a bit boring.",
+        "Artistically, the book's illustrations are excellent, but the story is rather dull."
       ],
       "rubricZh": [
-        "artistically 表示「在藝術上」，位置有彈性（例如 Artistically, …、is artistically designed 等）",
-        "句子要說出你自己的評論"
+        "「在藝術上」用 artistically，位置有彈性（例如 artistically excellent、Artistically, … 等）",
+        "「插畫」可寫，例如 pictures、illustrations、drawings 等",
+        "「有點無聊」可寫，例如 a bit boring、rather dull 等"
       ]
     }
   ],
@@ -332,6 +335,12 @@
         "message": "執行長第②③關裁示修正：自查：my uncle 譯「叔叔」多加了父系資訊",
         "resolution": "例句改 My neighbor",
         "resolvedAt": "2026-10-02T21:48:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（artistically）原位換成翻譯題，沿用題 id c1-u15-l02-q18；目標字沿用 artistically",
+        "resolution": "改為 translate：promptZh「這本書的插畫在藝術上很出色，但故事有點無聊。」、hintWords [\"artistically\"]、referenceEn [\"The pictures in this book are artistically excellent, but the story is a bit boring.\",\"Artistically, the book's illustrations are excellent, but the story is rather dull.\"]、rubricZh [\"「在藝術上」用 artistically，位置有彈性（例如 artistically excellent、Artistically, … 等）\",\"「插畫」可寫，例如 pictures、illustrations、drawings 等\",\"「有點無聊」可寫，例如 a bit boring、rather dull 等\"]（原 makeSentence：instructionZh「用 artistically 造一個句子，評論一部你喜歡的作品或一個地方。」、referenceEn [\"Artistically, this film is the most beautiful one I have seen.\",\"I think the new museum is artistically impressive.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

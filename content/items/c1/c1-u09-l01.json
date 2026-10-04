@@ -249,16 +249,19 @@
     },
     {
       "id": "c1-u09-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "descent",
-      "instructionZh": "用 descent 造一個句子，說說你家族的血統或祖先來自哪裡。",
+      "type": "translate",
+      "promptZh": "飛機開始下降時，我們從窗戶看到了整座城市的燈光。",
+      "hintWords": [
+        "descent"
+      ],
       "referenceEn": [
-        "On my mother's side, I am of Japanese descent.",
-        "My family is of Hakka descent, and we still speak some Hakka at home."
+        "As the plane began its descent, we could see the lights of the whole city.",
+        "We saw the city lights through the window as the plane started its descent."
       ],
       "rubricZh": [
-        "be of＋形容詞＋descent 表示「有⋯血統」（例如 of Japanese descent 等）",
-        "句子要說到你自己或你的家族"
+        "「下降」用名詞 descent（例如 began its descent、started its descent 等）",
+        "「從窗戶看到」可寫，例如 could see…、saw…through the window 等",
+        "時態配合內容（例如 began、started 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -344,6 +347,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：be of＋形容詞＋descent 表示「有⋯血統」（例如 of Japanese descent 等）",
         "resolvedAt": "2026-10-02T21:54:48Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（descent）原位換成翻譯題，沿用題 id c1-u09-l01-q18；目標字沿用 descent",
+        "resolution": "改為 translate：promptZh「飛機開始下降時，請繫好安全帶。」、hintWords [\"descent\"]、referenceEn [\"Please fasten your seat belt when the plane begins its descent.\",\"When the plane starts its descent, please fasten your seat belt.\"]、rubricZh [\"「下降」用名詞 descent（例如 begins its descent、starts its descent 等）\",\"「繫好安全帶」可寫，例如 fasten your seat belt、put on your seat belt 等\"]（原 makeSentence：instructionZh「用 descent 造一個句子，說說你家族的血統或祖先來自哪裡。」、referenceEn [\"On my mother's side, I am of Japanese descent.\",\"My family is of Hakka descent, and we still speak some Hakka at home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "執行長裁示：第③關：c1-u09-l01-q18 FIX 「請繫好安全帶」是航空公司規定句（§11.21），改成不涉及規定的情境",
+        "resolution": "改為 promptZh \"飛機開始下降時，我們從窗戶看到了整座城市的燈光。\"、referenceEn [\"As the plane began its descent, we could see the lights of the whole city.\",\"We saw the city lights through the window as the plane started its descent.\"]、rubricZh [\"「下降」用名詞 descent（例如 began its descent、started its descent 等）\",\"「從窗戶看到」可寫，例如 could see…、saw…through the window 等\",\"時態配合內容（例如 began、started 等）；過去式、現在完成式都正確\"]（原 promptZh \"飛機開始下降時，請繫好安全帶。\"、referenceEn [\"Please fasten your seat belt when the plane begins its descent.\",\"When the plane starts its descent, please fasten your seat belt.\"]、rubricZh [\"「下降」用名詞 descent（例如 begins its descent、starts its descent 等）\",\"「繫好安全帶」可寫，例如 fasten your seat belt、put on your seat belt 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -206,16 +206,18 @@
     },
     {
       "id": "c1-u30-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "sequel",
-      "instructionZh": "用 sequel 造一個句子，說說你希望哪部電影或小說出續集。",
+      "type": "translate",
+      "promptZh": "這家遊戲公司正在開發那款熱門遊戲的續集。",
+      "hintWords": [
+        "sequel"
+      ],
       "referenceEn": [
-        "I hope there will be a sequel to my favorite cartoon.",
-        "I want to read the sequel to the book I finished last week."
+        "The game company is developing a sequel to that popular game.",
+        "The game company is working on a sequel to that popular game."
       ],
       "rubricZh": [
-        "sequel 是可數名詞，表示「續集」，用法例如 a sequel to…、the sequel 等",
-        "句子要說到你自己的喜好"
+        "「續集」用 sequel（例如 a sequel to that popular game 等）",
+        "「開發」可寫，例如 developing、working on、making 等"
       ]
     }
   ],
@@ -277,6 +279,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：sequel 是可數名詞，表示「續集」，用法例如 a sequel to…、the sequel 等／句子要說到你自己的喜好",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（sequel）原位換成翻譯題，沿用題 id c1-u30-l01-q15；目標字沿用 sequel",
+        "resolution": "改為 translate：promptZh「這家遊戲公司正在開發那款熱門遊戲的續集。」、hintWords [\"sequel\"]、referenceEn [\"The game company is developing a sequel to that popular game.\",\"The game company is working on a sequel to that popular game.\"]、rubricZh [\"「續集」用 sequel（例如 a sequel to that popular game 等）\",\"「開發」可寫，例如 developing、working on、making 等\"]（原 makeSentence：instructionZh「用 sequel 造一個句子，說說你希望哪部電影或小說出續集。」、referenceEn [\"I hope there will be a sequel to my favorite cartoon.\",\"I want to read the sequel to the book I finished last week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

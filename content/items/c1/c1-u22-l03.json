@@ -230,16 +230,19 @@
     },
     {
       "id": "c1-u22-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "brainwash",
-      "instructionZh": "用 brainwash 造一個句子，說說你覺得廣告或網路怎麼影響人的想法。",
+      "type": "translate",
+      "promptZh": "別讓那些誇張的廣告把你洗腦了。",
+      "hintWords": [
+        "brainwash"
+      ],
       "referenceEn": [
-        "I think some ads try to brainwash children into wanting expensive toys.",
-        "We should not let online videos brainwash us into thinking everyone else is perfect."
+        "Don't let those exaggerated ads brainwash you.",
+        "Do not let those exaggerated advertisements brainwash you."
       ],
       "rubricZh": [
-        "brainwash 是及物動詞，表示「洗腦」，用法例如 brainwash someone、brainwash someone into doing… 等",
-        "句子要說到你自己的看法"
+        "「洗腦」用 brainwash（例如 brainwash you 等）",
+        "「誇張的廣告」可寫，例如 exaggerated ads、exaggerated advertisements 等",
+        "「別讓」可寫，例如 Don't let、Do not allow…to 等"
       ]
     }
   ],
@@ -313,6 +316,12 @@
         "message": "執行長最終複審修正：最終複審 7：mcq 與 bequeath 卡都是 bequeath N to 公共機構",
         "resolution": "題幹改用「留給後人」義、雙受詞句型 Earlier generations ____ us many beautiful old buildings.，代入後只有 bequeathed 成立",
         "resolvedAt": "2026-10-02T22:11:28Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（brainwash）原位換成翻譯題，沿用題 id c1-u22-l03-q17；目標字沿用 brainwash",
+        "resolution": "改為 translate：promptZh「別讓那些誇張的廣告把你洗腦了。」、hintWords [\"brainwash\"]、referenceEn [\"Don't let those exaggerated ads brainwash you.\",\"Do not let those exaggerated advertisements brainwash you.\"]、rubricZh [\"「洗腦」用 brainwash（例如 brainwash you 等）\",\"「誇張的廣告」可寫，例如 exaggerated ads、exaggerated advertisements 等\",\"「別讓」可寫，例如 Don't let、Do not allow…to 等\"]（原 makeSentence：instructionZh「用 brainwash 造一個句子，說說你覺得廣告或網路怎麼影響人的想法。」、referenceEn [\"I think some ads try to brainwash children into wanting expensive toys.\",\"We should not let online videos brainwash us into thinking everyone else is perfect.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

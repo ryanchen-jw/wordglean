@@ -205,16 +205,18 @@
     },
     {
       "id": "c1-u25-l02-q15",
-      "type": "makeSentence",
-      "targetWord": "collaborator",
-      "instructionZh": "用 collaborator 造一個句子，說說你曾經和誰一起完成一件事。",
+      "type": "translate",
+      "promptZh": "這位導演和她多年的合作夥伴一起拍了這部紀錄片。",
+      "hintWords": [
+        "collaborator"
+      ],
       "referenceEn": [
-        "Amy and I were collaborators on a school play.",
-        "My cousin was my collaborator when we made a short film."
+        "The director made this documentary together with her collaborator of many years.",
+        "The director and her long-term collaborator made this documentary together."
       ],
       "rubricZh": [
-        "collaborator 是可數名詞，表示「合作者」（例如 my collaborator、a close collaborator 等）",
-        "句子要說到你自己的經驗"
+        "「合作夥伴」用 collaborator（例如 her long-term collaborator 等）",
+        "「拍了」可寫，例如 made、filmed 等"
       ]
     }
   ],
@@ -258,6 +260,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：commercially 是副詞，表示「在商業上」（例如 commercially successful 等）／「賣出一百萬套」可寫，例如 sold a million copies、sold one million copies 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（collaborator）原位換成翻譯題，沿用題 id c1-u25-l02-q15；目標字沿用 collaborator",
+        "resolution": "改為 translate：promptZh「這位導演和她多年的合作夥伴一起拍了這部紀錄片。」、hintWords [\"collaborator\"]、referenceEn [\"The director made this documentary together with her collaborator of many years.\",\"The director and her long-term collaborator made this documentary together.\"]、rubricZh [\"「合作夥伴」用 collaborator（例如 her long-term collaborator 等）\",\"「拍了」可寫，例如 made、filmed 等\"]（原 makeSentence：instructionZh「用 collaborator 造一個句子，說說你曾經和誰一起完成一件事。」、referenceEn [\"Amy and I were collaborators on a school play.\",\"My cousin was my collaborator when we made a short film.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

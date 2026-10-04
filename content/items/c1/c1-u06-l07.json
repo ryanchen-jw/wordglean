@@ -230,16 +230,19 @@
     },
     {
       "id": "c1-u06-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "envisage",
-      "instructionZh": "用 envisage 造一個句子，說說你設想自己五年後的生活。",
+      "type": "translate",
+      "promptZh": "她設想自己五年後開一家小書店。",
+      "hintWords": [
+        "envisage"
+      ],
       "referenceEn": [
-        "I envisage myself running a small cafe in five years.",
-        "In five years, I envisage living closer to my parents."
+        "She envisages opening a small bookshop in five years.",
+        "She envisages that she will open a small bookshop five years from now."
       ],
       "rubricZh": [
-        "envisage 可接名詞、動名詞或 that 子句，表示「設想」（例如 envisage living…、envisage that I will… 等）",
-        "句子要說到你自己"
+        "「設想」用 envisage，可接動名詞或 that 子句（例如 envisages opening…、envisages that she will… 等）",
+        "「五年後」可寫，例如 in five years、five years from now 等",
+        "「小書店」可寫，例如 a small bookshop、a little bookstore 等"
       ]
     }
   ],
@@ -295,6 +298,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：envisage 可接名詞、動名詞或 that 子句，表示「設想」（例如 envisage living…、envisage that I will… 等）",
         "resolvedAt": "2026-10-02T21:54:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（envisage）原位換成翻譯題，沿用題 id c1-u06-l07-q17；目標字沿用 envisage",
+        "resolution": "改為 translate：promptZh「市長設想十年後市中心不再有汽車。」、hintWords [\"envisage\"]、referenceEn [\"The mayor envisages a city center without cars in ten years.\",\"The mayor envisages that there will be no cars in the city center in ten years.\"]、rubricZh [\"「設想」用 envisage，可接名詞或 that 子句（例如 envisages a city center without cars 等）\",\"「十年後」可寫，例如 in ten years、ten years from now 等\"]（原 makeSentence：instructionZh「用 envisage 造一個句子，說說你設想自己五年後的生活。」、referenceEn [\"I envisage myself running a small cafe in five years.\",\"In five years, I envisage living closer to my parents.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：c1-u06-l07-q17 SUS 與同課單字卡 architects envisage a park 同為規劃者設想城市空間、句型相同，換到個人生活情境",
+        "resolution": "改為 promptZh \"她設想自己五年後開一家小書店。\"、referenceEn [\"She envisages opening a small bookshop in five years.\",\"She envisages that she will open a small bookshop five years from now.\"]、rubricZh [\"「設想」用 envisage，可接動名詞或 that 子句（例如 envisages opening…、envisages that she will… 等）\",\"「五年後」可寫，例如 in five years、five years from now 等\",\"「小書店」可寫，例如 a small bookshop、a little bookstore 等\"]（原 promptZh \"市長設想十年後市中心不再有汽車。\"、referenceEn [\"The mayor envisages a city center without cars in ten years.\",\"The mayor envisages that there will be no cars in the city center in ten years.\"]、rubricZh [\"「設想」用 envisage，可接名詞或 that 子句（例如 envisages a city center without cars 等）\",\"「十年後」可寫，例如 in ten years、ten years from now 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

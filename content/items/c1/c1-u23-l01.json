@@ -219,16 +219,19 @@
     },
     {
       "id": "c1-u23-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "liaison",
-      "instructionZh": "用 liaison 造一個句子，說說你在學校或工作中當過的聯絡角色。",
+      "type": "translate",
+      "promptZh": "她在這次活動中擔任主辦單位和志工之間的聯絡人。",
+      "hintWords": [
+        "liaison"
+      ],
       "referenceEn": [
-        "Last year, I was the liaison between my class and the teachers.",
-        "In my club, I act as a liaison with the student council."
+        "At this event, she acted as the liaison between the organizers and the volunteers.",
+        "She served as a liaison between the organizers and the volunteers at the event."
       ],
       "rubricZh": [
-        "liaison 是名詞，表示「聯絡人、聯絡」（例如 act as a liaison、the liaison between A and B 等）",
-        "句子要說到你自己的經驗"
+        "「聯絡人」用 liaison（例如 the liaison between A and B 等）",
+        "「擔任」可寫，例如 acted as、served as、was 等",
+        "時態配合內容（例如 acted、is acting 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -284,6 +287,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：oversee 是及物動詞，表示「監督、管理」（例如 oversee the training 等）／「新進員工」可寫，例如 new staff、new employees 等／「負責」可直接用 oversee，也可寫，例如 be responsible for、be in charge of 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（liaison）原位換成翻譯題，沿用題 id c1-u23-l01-q16；目標字沿用 liaison",
+        "resolution": "改為 translate：promptZh「她在這次活動中擔任主辦單位和志工之間的聯絡人。」、hintWords [\"liaison\"]、referenceEn [\"At this event, she acted as the liaison between the organizers and the volunteers.\",\"She served as a liaison between the organizers and the volunteers at the event.\"]、rubricZh [\"「聯絡人」用 liaison（例如 the liaison between A and B 等）\",\"「擔任」可寫，例如 acted as、served as、was 等\",\"時態配合內容（例如 acted、is acting 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 liaison 造一個句子，說說你在學校或工作中當過的聯絡角色。」、referenceEn [\"Last year, I was the liaison between my class and the teachers.\",\"In my club, I act as a liaison with the student council.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -249,16 +249,19 @@
     },
     {
       "id": "c1-u22-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "sacrifice",
-      "instructionZh": "用 sacrifice 造一個句子，說說你或家人為了某件事做出的犧牲。",
+      "type": "translate",
+      "promptZh": "這位網球選手犧牲了所有假期，每天都在球場上練習。",
+      "hintWords": [
+        "sacrifice"
+      ],
       "referenceEn": [
-        "My mother sacrificed her weekends to help me with my studies.",
-        "I sacrificed sleep to finish my project on time."
+        "The tennis player sacrificed every holiday to practice on the court every day.",
+        "The tennis player made a big sacrifice, spending every holiday training on the court."
       ],
       "rubricZh": [
-        "sacrifice 可當動詞或名詞，表示「犧牲」（例如 sacrifice sleep、make sacrifices 等）",
-        "句子要說到你或家人的經驗"
+        "「犧牲」可用動詞或名詞 sacrifice（例如 sacrificed every holiday、made a sacrifice 等）",
+        "「練習」可寫，例如 practice、train 等",
+        "時態配合內容（例如 sacrificed、has sacrificed 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -332,6 +335,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：customary 表示「習慣上的、依慣例的」，用法例如 it is customary to…、… is customary 等／「紅包」可寫，例如 red envelopes、red packets 等／「過年」可寫，例如 Chinese New Year、the Lunar New Year 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（sacrifice）原位換成翻譯題，沿用題 id c1-u22-l01-q18；目標字沿用 sacrifice",
+        "resolution": "改為 translate：promptZh「這位網球選手犧牲了所有假期，每天都在球場上練習。」、hintWords [\"sacrifice\"]、referenceEn [\"The tennis player sacrificed every holiday to practice on the court every day.\",\"The tennis player made a big sacrifice, spending every holiday training on the court.\"]、rubricZh [\"「犧牲」可用動詞或名詞 sacrifice（例如 sacrificed every holiday、made a sacrifice 等）\",\"「練習」可寫，例如 practice、train 等\",\"時態配合內容（例如 sacrificed、has sacrificed 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 sacrifice 造一個句子，說說你或家人為了某件事做出的犧牲。」、referenceEn [\"My mother sacrificed her weekends to help me with my studies.\",\"I sacrificed sleep to finish my project on time.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

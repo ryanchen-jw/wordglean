@@ -228,16 +228,19 @@
     },
     {
       "id": "c1-u18-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "chilly",
-      "instructionZh": "用 chilly 造一個句子，描述讓你覺得有點冷的天氣或地方。",
+      "type": "translate",
+      "promptZh": "她對新同事的態度很冷淡。",
+      "hintWords": [
+        "chilly"
+      ],
       "referenceEn": [
-        "My office is always chilly because the air conditioning is too strong.",
-        "I feel chilly when I get up early on winter mornings."
+        "She is rather chilly toward her new colleague.",
+        "Her manner toward the new colleague is quite chilly."
       ],
       "rubricZh": [
-        "chilly 表示「寒冷的、涼颼颼的」，位置有彈性（例如 is always chilly、feel chilly、a chilly morning 等）",
-        "句子要說到你自己"
+        "「冷淡」可用 chilly 表示態度（例如 is chilly toward…、a chilly manner 等）",
+        "時態配合內容（例如 is、was 等）；過去式、現在完成式都正確",
+        "「很」可寫，例如 rather、quite、very 等"
       ]
     }
   ],
@@ -287,6 +290,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：chilly 表示「寒冷的、涼颼颼的」，位置有彈性（例如 is always chilly、feel chilly、a chilly morning 等）／句子要說到你自己",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（chilly）原位換成翻譯題，沿用題 id c1-u18-l01-q17；目標字沿用 chilly",
+        "resolution": "改為 translate：promptZh「她對新同事的態度很冷淡。」、hintWords [\"chilly\"]、referenceEn [\"She is rather chilly toward her new colleague.\",\"Her manner toward the new colleague is quite chilly.\"]、rubricZh [\"「冷淡」可用 chilly 表示態度（例如 is chilly toward…、a chilly manner 等）\",\"時態配合內容（例如 is、was 等）；過去式、現在完成式都正確\",\"「很」可寫，例如 rather、quite、very 等\"]（原 makeSentence：instructionZh「用 chilly 造一個句子，描述讓你覺得有點冷的天氣或地方。」、referenceEn [\"My office is always chilly because the air conditioning is too strong.\",\"I feel chilly when I get up early on winter mornings.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

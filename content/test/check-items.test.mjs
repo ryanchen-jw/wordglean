@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
 import { loadCheckContext } from '../scripts/lib/items-context.mjs';
-import { COMPOSITION, compositionFor } from '../scripts/lib/item-rules.mjs';
+import { COMPOSITION, MS2TR_PENDING_LEVELS, compositionFor } from '../scripts/lib/item-rules.mjs';
 
 const base = loadCheckContext({ allowlist: 'no-such-file.json' });
 const fixture = (name) => JSON.parse(readFileSync(new URL(`./fixtures/items/${name}.json`, import.meta.url), 'utf8'));
@@ -434,12 +434,13 @@ test('COMPOSITION：少一題跟讀、單字卡換成別課的字', () => {
 
 // ---- 創辦人裁示 2026-10-04：造句改翻譯（每課 2 題翻譯、0 題造句）；A2–C1 未轉換前照舊題量 ----
 
-test('compositionFor：已轉換級別 translate 2、makeSentence 0；未轉換級別（B1–C1）照舊 1／1', () => {
+test('compositionFor：已轉換級別 translate 2、makeSentence 0；未轉換級別（MS2TR_PENDING_LEVELS）照舊 1／1', () => {
   assert.equal(COMPOSITION.translate, 2);
   assert.equal(COMPOSITION.makeSentence, 0);
-  for (const level of ['A1', 'A2']) assert.deepEqual(compositionFor(level), COMPOSITION, level);
-  for (const level of ['B1', 'B2', 'C1']) {
-    assert.deepEqual(compositionFor(level), { ...COMPOSITION, translate: 1, makeSentence: 1 }, level);
+  assert.ok(!MS2TR_PENDING_LEVELS.has('A1'));
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1']) {
+    const expected = MS2TR_PENDING_LEVELS.has(level) ? { ...COMPOSITION, translate: 1, makeSentence: 1 } : COMPOSITION;
+    assert.deepEqual(compositionFor(level), expected, level);
   }
 });
 

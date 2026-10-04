@@ -232,16 +232,18 @@
     },
     {
       "id": "c1-u04-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "closeness",
-      "instructionZh": "用 closeness 造一個句子，說說你和某個人之間的親近關係。",
+      "type": "translate",
+      "promptZh": "這支球隊的成功，來自球員之間的親密關係。",
+      "hintWords": [
+        "closeness"
+      ],
       "referenceEn": [
-        "I value the closeness I have with my older sister.",
-        "The closeness between my best friend and me has lasted twenty years."
+        "The team's success comes from the closeness between its players.",
+        "The closeness among the players is the reason for the team's success."
       ],
       "rubricZh": [
-        "closeness 是名詞，表示「親近、親密」（例如 the closeness I have with…、the closeness between… 等）",
-        "句子要說到你自己和某個人的關係"
+        "「親密關係」用 closeness（例如 the closeness between the players 等）",
+        "「來自」可寫，例如 comes from、is the reason for、is due to 等"
       ]
     }
   ],
@@ -309,6 +311,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：closeness 是名詞，表示「親近、親密」（例如 the closeness I have with…、the closeness between… 等）",
         "resolvedAt": "2026-10-02T21:54:18Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（closeness）原位換成翻譯題，沿用題 id c1-u04-l04-q17；目標字沿用 closeness",
+        "resolution": "改為 translate：promptZh「這支球隊的成功，來自球員之間的親密關係。」、hintWords [\"closeness\"]、referenceEn [\"The team's success comes from the closeness between its players.\",\"The closeness among the players is the reason for the team's success.\"]、rubricZh [\"「親密關係」用 closeness（例如 the closeness between the players 等）\",\"「來自」可寫，例如 comes from、is the reason for、is due to 等\"]（原 makeSentence：instructionZh「用 closeness 造一個句子，說說你和某個人之間的親近關係。」、referenceEn [\"I value the closeness I have with my older sister.\",\"The closeness between my best friend and me has lasted twenty years.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

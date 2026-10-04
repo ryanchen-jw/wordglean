@@ -216,17 +216,18 @@
     },
     {
       "id": "c1-u37-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "removed",
-      "instructionZh": "用 removed（常寫成 far removed from）造一個句子，說說某件事和你原本想像的差很多。",
+      "type": "translate",
+      "promptZh": "這部電影和原著小說的內容相差甚遠。",
+      "hintWords": [
+        "removed"
+      ],
       "referenceEn": [
-        "The job was far removed from what I had imagined.",
-        "The final design was far removed from my first sketch."
+        "The film is far removed from the original novel.",
+        "The movie's story is far removed from the novel it is based on."
       ],
       "rubricZh": [
-        "removed from 表示「與⋯相差甚遠、遠離」，常加 far（例如 far removed from what I had imagined）",
-        "時態配合內容（例如 was、is）",
-        "內容和自己的經驗有關（例如 I、my）"
+        "「相差甚遠」用 far removed from（例如 is far removed from the original novel 等）",
+        "「原著小說」可寫，例如 the original novel、the novel it is based on 等"
       ]
     }
   ],
@@ -288,6 +289,12 @@
         "message": "執行長第②③關裁示修正：第③關 3-D：正解多了原文沒有的「準備離開」",
         "resolution": "改為 所有人到大門口集合（原 所有人到大門口集合準備離開）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（removed）原位換成翻譯題，沿用題 id c1-u37-l04-q16；目標字沿用 removed",
+        "resolution": "改為 translate：promptZh「這部電影和原著小說的內容相差甚遠。」、hintWords [\"removed\"]、referenceEn [\"The film is far removed from the original novel.\",\"The movie's story is far removed from the novel it is based on.\"]、rubricZh [\"「相差甚遠」用 far removed from（例如 is far removed from the original novel 等）\",\"「原著小說」可寫，例如 the original novel、the novel it is based on 等\"]（原 makeSentence：instructionZh「用 removed（常寫成 far removed from）造一個句子，說說某件事和你原本想像的差很多。」、referenceEn [\"The job was far removed from what I had imagined.\",\"The final design was far removed from my first sketch.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

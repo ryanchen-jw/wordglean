@@ -232,17 +232,18 @@
     },
     {
       "id": "c1-u38-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "gusto",
-      "instructionZh": "用 gusto 造一個句子，描述你很投入、興致勃勃地做某件事。",
+      "type": "translate",
+      "promptZh": "合唱團的成員們興致勃勃地唱完了最後一首歌。",
+      "hintWords": [
+        "gusto"
+      ],
       "referenceEn": [
-        "I sang my favorite song with gusto at my sister's wedding.",
-        "I cleaned the whole house with gusto before the party."
+        "The choir members sang the last song with great gusto.",
+        "With gusto, the members of the choir sang their final song."
       ],
       "rubricZh": [
-        "gusto 是名詞，例如 with gusto、with great gusto 等，用來修飾動作",
-        "說的是自己做的事，時態配合內容（例如 sang、cleaned）",
-        "主詞是自己（I）"
+        "「興致勃勃地」用 with gusto（例如 with great gusto 等），位置有彈性",
+        "「合唱團的成員」可寫，例如 the choir members、the members of the choir 等"
       ]
     }
   ],
@@ -298,6 +299,12 @@
         "message": "執行長第②③關裁示修正：第③關 2-E：評分要點「常用 A 或 B」",
         "resolution": "改為 gusto 是名詞，例如 with gusto、with great gusto 等，用來修飾動作（原 gusto 是名詞，常用 with gusto 或 with great gusto 修飾動作）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gusto）原位換成翻譯題，沿用題 id c1-u38-l04-q17；目標字沿用 gusto",
+        "resolution": "改為 translate：promptZh「合唱團的成員們興致勃勃地唱完了最後一首歌。」、hintWords [\"gusto\"]、referenceEn [\"The choir members sang the last song with great gusto.\",\"With gusto, the members of the choir sang their final song.\"]、rubricZh [\"「興致勃勃地」用 with gusto（例如 with great gusto 等），位置有彈性\",\"「合唱團的成員」可寫，例如 the choir members、the members of the choir 等\"]（原 makeSentence：instructionZh「用 gusto 造一個句子，描述你很投入、興致勃勃地做某件事。」、referenceEn [\"I sang my favorite song with gusto at my sister's wedding.\",\"I cleaned the whole house with gusto before the party.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

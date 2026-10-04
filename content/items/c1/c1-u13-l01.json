@@ -203,16 +203,19 @@
     },
     {
       "id": "c1-u13-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "munch",
-      "instructionZh": "用 munch 造一個句子，說說你做某件事時喜歡邊吃什麼。",
+      "type": "translate",
+      "promptZh": "看電影時，坐我旁邊的人一直大聲嚼爆米花。",
+      "hintWords": [
+        "munch"
+      ],
       "referenceEn": [
-        "I like to munch popcorn while I watch movies.",
-        "I often munch on apples when I work late."
+        "During the film, the person next to me kept munching popcorn loudly.",
+        "The person sitting beside me munched popcorn noisily all through the movie."
       ],
       "rubricZh": [
-        "munch 表示「津津有味地吃、大聲嚼」（例如 munch popcorn、munch on apples 等）",
-        "句子要說到你自己"
+        "「嚼」用 munch（例如 kept munching popcorn、munched on popcorn 等）",
+        "「大聲」可寫，例如 loudly、noisily 等",
+        "時態配合內容（例如 kept munching、munched 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -286,6 +289,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：munch 表示「津津有味地吃、大聲嚼」（例如 munch popcorn、munch on apples 等）／句子要說到你自己",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（munch）原位換成翻譯題，沿用題 id c1-u13-l01-q15；目標字沿用 munch",
+        "resolution": "改為 translate：promptZh「看電影時，坐我旁邊的人一直大聲嚼爆米花。」、hintWords [\"munch\"]、referenceEn [\"During the film, the person next to me kept munching popcorn loudly.\",\"The person sitting beside me munched popcorn noisily all through the movie.\"]、rubricZh [\"「嚼」用 munch（例如 kept munching popcorn、munched on popcorn 等）\",\"「大聲」可寫，例如 loudly、noisily 等\",\"時態配合內容（例如 kept munching、munched 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 munch 造一個句子，說說你做某件事時喜歡邊吃什麼。」、referenceEn [\"I like to munch popcorn while I watch movies.\",\"I often munch on apples when I work late.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

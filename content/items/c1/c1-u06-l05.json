@@ -228,16 +228,18 @@
     },
     {
       "id": "c1-u06-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "realist",
-      "instructionZh": "用 realist 造一個句子，說說你在某件事上是不是一個務實的人。",
+      "type": "translate",
+      "promptZh": "談到預算，我們的經理是個非常務實的人。",
+      "hintWords": [
+        "realist"
+      ],
       "referenceEn": [
-        "I am a realist, so I always plan for delays when I travel.",
-        "When it comes to money, I am very much a realist."
+        "When it comes to budgets, our manager is very much a realist.",
+        "Our manager is a true realist when it comes to the budget."
       ],
       "rubricZh": [
-        "realist 表示「務實的人、現實主義者」（例如 I am a realist、very much a realist 等）",
-        "句子要說到你自己"
+        "「務實的人」用 realist（例如 very much a realist、a true realist 等）",
+        "「談到預算」可寫，例如 when it comes to budgets、when it comes to the budget 等，放句首或句尾皆可"
       ]
     }
   ],
@@ -293,6 +295,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：realist 表示「務實的人、現實主義者」（例如 I am a realist、very much a realist 等）",
         "resolvedAt": "2026-10-02T21:54:31Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（realist）原位換成翻譯題，沿用題 id c1-u06-l05-q17；目標字沿用 realist",
+        "resolution": "改為 translate：promptZh「談到預算，我們的經理是個非常務實的人。」、hintWords [\"realist\"]、referenceEn [\"When it comes to budgets, our manager is very much a realist.\",\"Our manager is a true realist when it comes to the budget.\"]、rubricZh [\"「務實的人」用 realist（例如 very much a realist、a true realist 等）\",\"「談到預算」可寫，例如 when it comes to budgets、when it comes to the budget 等，放句首或句尾皆可\"]（原 makeSentence：instructionZh「用 realist 造一個句子，說說你在某件事上是不是一個務實的人。」、referenceEn [\"I am a realist, so I always plan for delays when I travel.\",\"When it comes to money, I am very much a realist.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

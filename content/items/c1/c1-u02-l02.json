@@ -215,16 +215,19 @@
     },
     {
       "id": "c1-u02-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "antiquated",
-      "instructionZh": "用 antiquated 造一個句子，描述你覺得已經過時的某樣東西或做法。",
+      "type": "translate",
+      "promptZh": "很多年輕人覺得寫信是一種過時的溝通方式。",
+      "hintWords": [
+        "antiquated"
+      ],
       "referenceEn": [
-        "I think paying bills by check is an antiquated habit.",
-        "My old laptop feels antiquated compared with my new phone."
+        "Many young people think letter writing is an antiquated way to communicate.",
+        "Many young people see writing letters as an antiquated way of communicating."
       ],
       "rubricZh": [
-        "antiquated 是形容詞，表示「過時的、老舊的」（例如 an antiquated habit、feels antiquated 等）",
-        "句子要說出你覺得過時的東西或做法"
+        "antiquated 表示「過時的」（例如 an antiquated way 等）",
+        "「寫信」可寫，例如 writing letters、letter writing 等",
+        "「覺得」可寫，例如 think、feel、see…as 等"
       ]
     }
   ],
@@ -286,6 +289,12 @@
         "message": "執行長最終複審修正：最終複審提醒 5：評分要點「可寫 date back to、date from 等（例如…等）」少了「可寫，例如」",
         "resolution": "改「可寫，例如 date back to、date from、dates back to antiquity 等」",
         "resolvedAt": "2026-10-02T22:11:43Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（antiquated）原位換成翻譯題，沿用題 id c1-u02-l02-q16；目標字沿用 antiquated",
+        "resolution": "改為 translate：promptZh「很多年輕人覺得寫信是一種過時的溝通方式。」、hintWords [\"antiquated\"]、referenceEn [\"Many young people think letter writing is an antiquated way to communicate.\",\"Many young people see writing letters as an antiquated way of communicating.\"]、rubricZh [\"antiquated 表示「過時的」（例如 an antiquated way 等）\",\"「寫信」可寫，例如 writing letters、letter writing 等\",\"「覺得」可寫，例如 think、feel、see…as 等\"]（原 makeSentence：instructionZh「用 antiquated 造一個句子，描述你覺得已經過時的某樣東西或做法。」、referenceEn [\"I think paying bills by check is an antiquated habit.\",\"My old laptop feels antiquated compared with my new phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,17 +231,18 @@
     },
     {
       "id": "c1-u38-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "wryly",
-      "instructionZh": "用 wryly 造一個句子，描述你遇到不順利的事時苦笑或自嘲的樣子。",
+      "type": "translate",
+      "promptZh": "那位廚師自嘲地說，他做的第一個蛋糕連他的狗都不吃。",
+      "hintWords": [
+        "wryly"
+      ],
       "referenceEn": [
-        "I smiled wryly when my umbrella broke after five minutes of rain.",
-        "When the bus left without me, I laughed wryly and started walking."
+        "The chef said wryly that even his dog would not eat his first cake.",
+        "The chef joked wryly that his first cake was so bad that even his dog refused it."
       ],
       "rubricZh": [
-        "wryly 是副詞，常修飾 smile、laugh、say 等動詞（例如 smiled wryly）",
-        "說的是自己的經驗，時態配合內容（例如 smiled、laughed）",
-        "主詞是自己（I）"
+        "「自嘲地」用 wryly（例如 said wryly、joked wryly 等）",
+        "時態配合內容（例如 said、would not eat 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -333,6 +334,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"財務上\",\"正式地\",\"互相地\",\"苦笑地\"]（原 [\"財務上\",\"自願地\",\"互相地\",\"苦笑地\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wryly）原位換成翻譯題，沿用題 id c1-u38-l02-q17；目標字沿用 wryly",
+        "resolution": "改為 translate：promptZh「那位廚師自嘲地說，他做的第一個蛋糕連他的狗都不吃。」、hintWords [\"wryly\"]、referenceEn [\"The chef said wryly that even his dog would not eat his first cake.\",\"The chef joked wryly that his first cake was so bad that even his dog refused it.\"]、rubricZh [\"「自嘲地」用 wryly（例如 said wryly、joked wryly 等）\",\"時態配合內容（例如 said、would not eat 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 wryly 造一個句子，描述你遇到不順利的事時苦笑或自嘲的樣子。」、referenceEn [\"I smiled wryly when my umbrella broke after five minutes of rain.\",\"When the bus left without me, I laughed wryly and started walking.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

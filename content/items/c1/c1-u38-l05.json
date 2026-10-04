@@ -231,17 +231,19 @@
     },
     {
       "id": "c1-u38-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "unwavering",
-      "instructionZh": "用 unwavering 造一個句子，說說你的某個堅定信念，或某人給你的堅定支持。",
+      "type": "translate",
+      "promptZh": "那隻狗對主人的忠誠堅定不移，牠每天都在車站等主人回家。",
+      "hintWords": [
+        "unwavering"
+      ],
       "referenceEn": [
-        "My belief that hard work pays off is unwavering.",
-        "My parents' support for my dream has always been unwavering."
+        "The dog's loyalty to its owner was unwavering; it waited at the station for him every day.",
+        "With unwavering loyalty, the dog waited at the station for its owner every day."
       ],
       "rubricZh": [
-        "unwavering 是形容詞，可放 be 動詞後或名詞前（例如 unwavering support）",
-        "時態配合內容（例如 is、has been）",
-        "內容和自己有關（例如 my belief、my parents）"
+        "「堅定不移」用 unwavering（例如 unwavering loyalty、was unwavering 等）",
+        "「等主人回家」可寫，例如 waited for its owner、waited for the owner to come home 等",
+        "時態配合內容（例如 was、waited、is、waits 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -297,6 +299,12 @@
         "message": "執行長第②③關裁示修正：第②關：「很大的圓融」搭配不當",
         "resolution": "改為 要告訴朋友他的點子不好，說話得很圓融才行。（原 要告訴朋友他的點子不好，需要很大的圓融。）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unwavering）原位換成翻譯題，沿用題 id c1-u38-l05-q17；目標字沿用 unwavering",
+        "resolution": "改為 translate：promptZh「那隻狗對主人的忠誠堅定不移，牠每天都在車站等主人回家。」、hintWords [\"unwavering\"]、referenceEn [\"The dog's loyalty to its owner was unwavering; it waited at the station for him every day.\",\"With unwavering loyalty, the dog waited at the station for its owner every day.\"]、rubricZh [\"「堅定不移」用 unwavering（例如 unwavering loyalty、was unwavering 等）\",\"「等主人回家」可寫，例如 waited for its owner、waited for the owner to come home 等\",\"時態配合內容（例如 was、waited、is、waits 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 unwavering 造一個句子，說說你的某個堅定信念，或某人給你的堅定支持。」、referenceEn [\"My belief that hard work pays off is unwavering.\",\"My parents' support for my dream has always been unwavering.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

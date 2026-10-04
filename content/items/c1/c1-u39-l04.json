@@ -231,17 +231,19 @@
     },
     {
       "id": "c1-u39-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "ecstatically",
-      "instructionZh": "用 ecstatically 造一個句子，描述你某次欣喜若狂的經驗。",
+      "type": "translate",
+      "promptZh": "得知自己考上了夢想中的大學，她欣喜若狂地打電話給爸媽。",
+      "hintWords": [
+        "ecstatically"
+      ],
       "referenceEn": [
-        "I jumped ecstatically when I heard that I had passed the exam.",
-        "I hugged my best friend ecstatically at the airport after two years apart."
+        "When she learned she had got into her dream university, she ecstatically called her parents.",
+        "After hearing that her dream university had accepted her, she called her parents ecstatically."
       ],
       "rubricZh": [
-        "ecstatically 是副詞，修飾動作（例如 jumped ecstatically、hugged…ecstatically）",
-        "說的是過去的經驗，時態配合內容（例如 jumped、hugged）",
-        "主詞是自己（I）"
+        "「欣喜若狂地」用 ecstatically，位置有彈性",
+        "「考上」可寫，例如 got into、was accepted by 等",
+        "說的是已發生的事，時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -291,6 +293,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"下垂的\",\"平靜無事的\",\"極難的\",\"圓融得體的\"]（原 [\"下垂的\",\"平靜無事的\",\"極難的\",\"慘淡地\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ecstatically）原位換成翻譯題，沿用題 id c1-u39-l04-q17；目標字沿用 ecstatically",
+        "resolution": "改為 translate：promptZh「得知自己考上了夢想中的大學，她欣喜若狂地打電話給爸媽。」、hintWords [\"ecstatically\"]、referenceEn [\"When she learned she had got into her dream university, she ecstatically called her parents.\",\"After hearing that her dream university had accepted her, she called her parents ecstatically.\"]、rubricZh [\"「欣喜若狂地」用 ecstatically，位置有彈性\",\"「考上」可寫，例如 got into、was accepted by 等\",\"說的是已發生的事，時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 ecstatically 造一個句子，描述你某次欣喜若狂的經驗。」、referenceEn [\"I jumped ecstatically when I heard that I had passed the exam.\",\"I hugged my best friend ecstatically at the airport after two years apart.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -232,17 +232,19 @@
     },
     {
       "id": "c1-u38-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "glumly",
-      "instructionZh": "用 glumly 造一個句子，描述你某次悶悶不樂的樣子。",
+      "type": "translate",
+      "promptZh": "小男孩悶悶不樂地看著他的冰淇淋掉在地上。",
+      "hintWords": [
+        "glumly"
+      ],
       "referenceEn": [
-        "I walked home glumly after missing the last bus.",
-        "I glumly looked at my test score and put the paper away."
+        "The little boy watched glumly as his ice cream fell on the ground.",
+        "The little boy glumly watched his ice cream drop to the ground."
       ],
       "rubricZh": [
-        "glumly 是副詞，修飾動詞（例如 walked home glumly、glumly looked at）",
-        "說的是自己的經驗，時態配合內容（例如 walked、looked）",
-        "主詞是自己（I）"
+        "「悶悶不樂地」用 glumly，位置有彈性（例如 watched glumly、glumly watched 等）",
+        "「掉在地上」可寫，例如 fell on the ground、drop to the ground 等",
+        "時態配合內容（例如 watched 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長第②③關裁示修正：干擾項同步（去掉遺產意味）",
         "resolution": "改為 [\"How to share the cost of a new house.\",\"Who would get the old car.\",\"Where to go on holiday.\",\"Which school to attend.\"]（原 [\"How to divide the money from the house.\",\"Who would get the old car.\",\"Where to go on holiday.\",\"Which school to attend.\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（glumly）原位換成翻譯題，沿用題 id c1-u38-l08-q17；目標字沿用 glumly",
+        "resolution": "改為 translate：promptZh「小男孩悶悶不樂地看著他的冰淇淋掉在地上。」、hintWords [\"glumly\"]、referenceEn [\"The little boy watched glumly as his ice cream fell on the ground.\",\"The little boy glumly watched his ice cream drop to the ground.\"]、rubricZh [\"「悶悶不樂地」用 glumly，位置有彈性（例如 watched glumly、glumly watched 等）\",\"「掉在地上」可寫，例如 fell on the ground、drop to the ground 等\",\"時態配合內容（例如 watched 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 glumly 造一個句子，描述你某次悶悶不樂的樣子。」、referenceEn [\"I walked home glumly after missing the last bus.\",\"I glumly looked at my test score and put the paper away.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

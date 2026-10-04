@@ -215,16 +215,19 @@
     },
     {
       "id": "c1-u14-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "adrenaline",
-      "instructionZh": "用 adrenaline 造一個句子，說說一次讓你感到刺激、腎上腺素上升的經驗。",
+      "type": "translate",
+      "promptZh": "比賽最後一分鐘，球員們全身充滿了腎上腺素。",
+      "hintWords": [
+        "adrenaline"
+      ],
       "referenceEn": [
-        "I felt a rush of adrenaline before my first public speech.",
-        "Watching a close football match always gets my adrenaline going."
+        "In the last minute of the match, the players were full of adrenaline.",
+        "During the final minute of the game, adrenaline was pumping through the players' veins."
       ],
       "rubricZh": [
-        "adrenaline 表示「腎上腺素；刺激感」（例如 a rush of adrenaline、gets my adrenaline going 等）",
-        "句子要說到你自己的經驗"
+        "「充滿腎上腺素」可寫，例如 were full of adrenaline、adrenaline was pumping 等",
+        "「比賽最後一分鐘」可寫，例如 in the last minute of the match 等",
+        "時態配合內容（例如 were、are 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -268,6 +271,18 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：adrenaline 表示「腎上腺素；刺激感」（例如 a rush of adrenaline、gets my adrenaline going 等）／句子要說到你自己的經驗",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（adrenaline）原位換成翻譯題，沿用題 id c1-u14-l01-q16；目標字沿用 adrenaline",
+        "resolution": "改為 translate：promptZh「比賽最後一分鐘，球員們全身充滿了腎上腺素。」、hintWords [\"adrenaline\"]、referenceEn [\"In the last minute of the match, the players were full of adrenaline.\",\"During the final minute of the game, adrenaline was pumping through the players.\"]、rubricZh [\"「充滿腎上腺素」可寫，例如 were full of adrenaline、adrenaline was pumping 等\",\"「比賽最後一分鐘」可寫，例如 in the last minute of the match 等\",\"時態配合內容（例如 were、are 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 adrenaline 造一個句子，說說一次讓你感到刺激、腎上腺素上升的經驗。」、referenceEn [\"I felt a rush of adrenaline before my first public speech.\",\"Watching a close football match always gets my adrenaline going.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：c1-u14-l01-q16 SUS 變體 2 pumping through the players 不自然，改慣用 through…veins",
+        "resolution": "改為 referenceEn [\"In the last minute of the match, the players were full of adrenaline.\",\"During the final minute of the game, adrenaline was pumping through the players' veins.\"]（原 referenceEn [\"In the last minute of the match, the players were full of adrenaline.\",\"During the final minute of the game, adrenaline was pumping through the players.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

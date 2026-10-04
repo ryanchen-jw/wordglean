@@ -231,16 +231,18 @@
     },
     {
       "id": "c1-u10-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "individuality",
-      "instructionZh": "用 individuality 造一個句子，說說你如何表現自己的個人特色。",
+      "type": "translate",
+      "promptZh": "這位設計師的作品充滿個人特色。",
+      "hintWords": [
+        "individuality"
+      ],
       "referenceEn": [
-        "I show my individuality through the colorful socks I wear.",
-        "I express my individuality by decorating my room in my own style."
+        "This designer's work is full of individuality.",
+        "The designer's works show a lot of individuality."
       ],
       "rubricZh": [
-        "individuality 表示「個性、個人特色」（例如 show my individuality、express my individuality 等）",
-        "句子要說到你自己"
+        "「個人特色」用 individuality（例如 full of individuality、show individuality 等）",
+        "「作品」可寫，例如 work、works、designs 等"
       ]
     }
   ],
@@ -314,6 +316,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：individuality 表示「個性、個人特色」（例如 show my individuality、express my individuality 等）",
         "resolvedAt": "2026-10-02T21:54:57Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（individuality）原位換成翻譯題，沿用題 id c1-u10-l06-q17；目標字沿用 individuality",
+        "resolution": "改為 translate：promptZh「這位設計師的作品充滿個人特色。」、hintWords [\"individuality\"]、referenceEn [\"This designer's work is full of individuality.\",\"The designer's works show a lot of individuality.\"]、rubricZh [\"「個人特色」用 individuality（例如 full of individuality、show individuality 等）\",\"「作品」可寫，例如 work、works、designs 等\"]（原 makeSentence：instructionZh「用 individuality 造一個句子，說說你如何表現自己的個人特色。」、referenceEn [\"I show my individuality through the colorful socks I wear.\",\"I express my individuality by decorating my room in my own style.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,16 +230,20 @@
     },
     {
       "id": "c1-u08-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "anthropology",
-      "instructionZh": "用 anthropology 造一個句子，說說你對人類學的興趣或看法。",
+      "type": "translate",
+      "promptZh": "我姊姊在大學主修人類學。",
+      "hintWords": [
+        "anthropology"
+      ],
       "referenceEn": [
-        "I have always been interested in anthropology, especially old customs.",
-        "If I could go back to school, I would study anthropology."
+        "My older sister majored in anthropology at university.",
+        "My older sister is majoring in anthropology at university."
       ],
       "rubricZh": [
-        "anthropology 是不可數名詞，表示「人類學」，前面不加冠詞（例如 study anthropology 等）",
-        "句子要說到你自己的興趣或看法"
+        "「人類學」用 anthropology（例如 majored in anthropology 等）",
+        "「主修」可寫，例如 majored in、is majoring in、studied…as her main subject 等",
+        "時態配合內容（例如 majored、majors 等）；過去式、現在完成式都正確",
+        "「姊姊」可寫，例如 my older sister、my sister 等"
       ]
     }
   ],
@@ -307,6 +311,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：anthropology 是不可數名詞，表示「人類學」，前面不加冠詞（例如 study anthropology 等）",
         "resolvedAt": "2026-10-02T21:54:42Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（anthropology）原位換成翻譯題，沿用題 id c1-u08-l02-q17；目標字沿用 anthropology",
+        "resolution": "改為 translate：promptZh「我姊姊在大學主修人類學。」、hintWords [\"anthropology\"]、referenceEn [\"My older sister majored in anthropology at university.\",\"My sister studied anthropology as her main subject in college.\"]、rubricZh [\"「人類學」用 anthropology（例如 majored in anthropology 等）\",\"「主修」可寫，例如 majored in、studied…as her main subject 等\",\"時態配合內容（例如 majored、majors 等）；過去式、現在完成式都正確\",\"「姊姊」可寫，例如 my older sister、my sister 等\"]（原 makeSentence：instructionZh「用 anthropology 造一個句子，說說你對人類學的興趣或看法。」、referenceEn [\"I have always been interested in anthropology, especially old customs.\",\"If I could go back to school, I would study anthropology.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：c1-u08-l02-q17 SUS 題目無時間詞，可讀成姊姊現在還在念大學，參考答案補現在進行式",
+        "resolution": "改為 referenceEn [\"My older sister majored in anthropology at university.\",\"My older sister is majoring in anthropology at university.\"]、rubricZh [\"「人類學」用 anthropology（例如 majored in anthropology 等）\",\"「主修」可寫，例如 majored in、is majoring in、studied…as her main subject 等\",\"時態配合內容（例如 majored、majors 等）；過去式、現在完成式都正確\",\"「姊姊」可寫，例如 my older sister、my sister 等\"]（原 referenceEn [\"My older sister majored in anthropology at university.\",\"My sister studied anthropology as her main subject in college.\"]、rubricZh [\"「人類學」用 anthropology（例如 majored in anthropology 等）\",\"「主修」可寫，例如 majored in、studied…as her main subject 等\",\"時態配合內容（例如 majored、majors 等）；過去式、現在完成式都正確\",\"「姊姊」可寫，例如 my older sister、my sister 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

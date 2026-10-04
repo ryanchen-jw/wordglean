@@ -233,16 +233,19 @@
     },
     {
       "id": "c1-u21-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "depict",
-      "instructionZh": "用 depict 造一個句子，說說一部你喜歡的電影、書或畫描繪了什麼。",
+      "type": "translate",
+      "promptZh": "她只用幾筆就把那隻貓畫得栩栩如生。",
+      "hintWords": [
+        "depict"
+      ],
       "referenceEn": [
-        "My favorite painting depicts a quiet street after the rain.",
-        "The book I am reading depicts life in a big city long ago."
+        "With just a few lines, she depicted the cat vividly.",
+        "She depicted the cat vividly with only a few lines."
       ],
       "rubricZh": [
-        "depict 是及物動詞，表示「描繪、描寫」（例如 depicts a street、depicts life in… 等）",
-        "句子要說到你喜歡的作品"
+        "「畫得栩栩如生」用 depict（例如 depicted the cat vividly 等）",
+        "「只用幾筆」可寫，例如 with just a few lines、with only a few lines 等，放句首或句尾皆可",
+        "時態配合內容（例如 depicted、depicts 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -310,6 +313,18 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：portray 表示「把…描繪成」，用法例如 portray A as B、be portrayed as 等／「紀錄片」可寫，例如 documentary、film 等／「友善的地方」可寫，例如 a friendly place、a welcoming place 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（depict）原位換成翻譯題，沿用題 id c1-u21-l01-q17；目標字沿用 depict",
+        "resolution": "改為 translate：promptZh「這幅壁畫描繪了農夫在田裡收割稻子的情景。」、hintWords [\"depict\"]、referenceEn [\"This wall painting depicts farmers harvesting rice in the fields.\",\"The painting on the wall depicts a scene of farmers cutting rice in the fields.\"]、rubricZh [\"「描繪」用 depict（例如 depicts farmers harvesting rice 等）\",\"「壁畫」可寫，例如 wall painting、the painting on the wall 等\",\"「收割稻子」可寫，例如 harvesting rice、cutting rice 等\"]（原 makeSentence：instructionZh「用 depict 造一個句子，說說一部你喜歡的電影、書或畫描繪了什麼。」、referenceEn [\"My favorite painting depicts a quiet street after the rain.\",\"The book I am reading depicts life in a big city long ago.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：c1-u21-l01-q17 SUS 與同課 q16「紀錄片把城市描繪成⋯」同為作品描繪某事、句型相同（§12.3），換成人＋depict",
+        "resolution": "改為 promptZh \"她只用幾筆就把那隻貓畫得栩栩如生。\"、referenceEn [\"With just a few lines, she depicted the cat vividly.\",\"She depicted the cat vividly with only a few lines.\"]、rubricZh [\"「畫得栩栩如生」用 depict（例如 depicted the cat vividly 等）\",\"「只用幾筆」可寫，例如 with just a few lines、with only a few lines 等，放句首或句尾皆可\",\"時態配合內容（例如 depicted、depicts 等）；過去式、現在完成式都正確\"]（原 promptZh \"這幅壁畫描繪了農夫在田裡收割稻子的情景。\"、referenceEn [\"This wall painting depicts farmers harvesting rice in the fields.\",\"The painting on the wall depicts a scene of farmers cutting rice in the fields.\"]、rubricZh [\"「描繪」用 depict（例如 depicts farmers harvesting rice 等）\",\"「壁畫」可寫，例如 wall painting、the painting on the wall 等\",\"「收割稻子」可寫，例如 harvesting rice、cutting rice 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,17 +231,20 @@
     },
     {
       "id": "c1-u38-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "enterprising",
-      "instructionZh": "用 enterprising 造一個句子，描述一位你認識、很有進取心或創業頭腦的人。",
+      "type": "translate",
+      "promptZh": "幾個有進取心的學生在校園裡開了一家二手書店。",
+      "hintWords": [
+        "enterprising"
+      ],
       "referenceEn": [
-        "My enterprising cousin turned her hobby into a small bakery.",
-        "I admire my enterprising neighbor, who started a cleaning business at sixty."
+        "A few enterprising students opened a second-hand bookshop on campus.",
+        "Some enterprising students started a used bookshop on the campus."
       ],
       "rubricZh": [
-        "enterprising 是形容詞，常放名詞前（例如 my enterprising cousin）",
-        "內容要說出這個人做了什麼有進取心的事",
-        "時態配合內容（例如 turned、admire、started）"
+        "「有進取心的」用 enterprising（例如 enterprising students 等）",
+        "「開了」可寫，例如 opened、started、set up 等",
+        "「二手書店」可寫，例如 a second-hand bookshop、a used bookstore 等",
+        "時態配合內容（例如 opened、have opened 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -279,6 +282,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"全神貫注的\",\"引人入勝的\",\"有進取心的\",\"無私的\"]（原 [\"全神貫注的\",\"引人入勝的\",\"有進取心的\",\"厭惡\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（enterprising）原位換成翻譯題，沿用題 id c1-u38-l03-q17；目標字沿用 enterprising",
+        "resolution": "改為 translate：promptZh「幾個有進取心的學生在校園裡開了一家二手書店。」、hintWords [\"enterprising\"]、referenceEn [\"A few enterprising students opened a second-hand bookshop on campus.\",\"Some enterprising students started a used bookshop on the campus.\"]、rubricZh [\"「有進取心的」用 enterprising（例如 enterprising students 等）\",\"「開了」可寫，例如 opened、started、set up 等\",\"「二手書店」可寫，例如 a second-hand bookshop、a used bookstore 等\",\"時態配合內容（例如 opened、have opened 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 enterprising 造一個句子，描述一位你認識、很有進取心或創業頭腦的人。」、referenceEn [\"My enterprising cousin turned her hobby into a small bakery.\",\"I admire my enterprising neighbor, who started a cleaning business at sixty.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

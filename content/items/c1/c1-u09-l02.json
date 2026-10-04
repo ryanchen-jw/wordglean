@@ -233,16 +233,18 @@
     },
     {
       "id": "c1-u09-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "rapport",
-      "instructionZh": "用 rapport 造一個句子，說說你和某個人如何建立融洽的關係。",
+      "type": "translate",
+      "promptZh": "她和鄰居們相處得很融洽。",
+      "hintWords": [
+        "rapport"
+      ],
       "referenceEn": [
-        "I built a good rapport with my neighbors by sharing fruit from my garden.",
-        "I have a great rapport with my manager because we both love hiking."
+        "She has a good rapport with her neighbors.",
+        "She and her neighbors have a great rapport."
       ],
       "rubricZh": [
-        "rapport 表示「融洽的關係」（例如 built a good rapport with…、have a rapport with… 等）",
-        "句子要說到你自己和某個人的關係"
+        "「相處融洽」用 rapport（例如 has a good rapport with…、have a great rapport 等）",
+        "「鄰居們」可寫，例如 her neighbors 等"
       ]
     }
   ],
@@ -316,6 +318,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：rapport 表示「融洽的關係」（例如 built a good rapport with…、have a rapport with… 等）",
         "resolvedAt": "2026-10-02T21:54:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rapport）原位換成翻譯題，沿用題 id c1-u09-l02-q17；目標字沿用 rapport",
+        "resolution": "改為 translate：promptZh「她和鄰居們相處得很融洽。」、hintWords [\"rapport\"]、referenceEn [\"She has a good rapport with her neighbors.\",\"She and her neighbors have a great rapport.\"]、rubricZh [\"「相處融洽」用 rapport（例如 has a good rapport with…、have a great rapport 等）\",\"「鄰居們」可寫，例如 her neighbors 等\"]（原 makeSentence：instructionZh「用 rapport 造一個句子，說說你和某個人如何建立融洽的關係。」、referenceEn [\"I built a good rapport with my neighbors by sharing fruit from my garden.\",\"I have a great rapport with my manager because we both love hiking.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,17 +229,19 @@
     },
     {
       "id": "c1-u03-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "oblige",
-      "instructionZh": "用 be obliged to 或 feel obliged to 造一個句子，說說你在工作或生活中不得不做的事。",
+      "type": "translate",
+      "promptZh": "上週因為同事生病，我不得不一個人完成整份報告。",
+      "hintWords": [
+        "oblige"
+      ],
       "referenceEn": [
-        "I am obliged to wear a uniform at work.",
-        "I felt obliged to help my neighbor move to a new apartment."
+        "Last week, I was obliged to finish the whole report alone because my colleague was sick.",
+        "My colleague was ill last week, so I was obliged to finish the entire report by myself."
       ],
       "rubricZh": [
-        "be obliged to、feel obliged to 後接原形動詞，表示「（因規定或情理）不得不」（例如 am obliged to wear 等）",
-        "句子說的是你自己",
-        "時態配合內容（例如 am、felt 等）"
+        "「不得不」用 be obliged to＋原形動詞（例如 was obliged to finish 等），也可寫 felt obliged to 等",
+        "「一個人」可寫，例如 alone、by myself、on my own 等",
+        "有「上週」，用過去式（例如 was obliged、was sick 等）"
       ]
     }
   ],
@@ -301,6 +303,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：be obliged to、feel obliged to 後接原形動詞，表示「（因規定或情理）不得不」（例如 am obliged to wear 等）／時態配合內容（例如 am、felt 等）",
         "resolvedAt": "2026-10-02T21:54:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（oblige）原位換成翻譯題，沿用題 id c1-u03-l01-q17；目標字沿用 oblige",
+        "resolution": "改為 translate：promptZh「上週因為同事生病，我不得不一個人完成整份報告。」、hintWords [\"oblige\"]、referenceEn [\"Last week, I was obliged to finish the whole report alone because my colleague was sick.\",\"My colleague was ill last week, so I was obliged to finish the entire report by myself.\"]、rubricZh [\"「不得不」用 be obliged to＋原形動詞（例如 was obliged to finish 等），也可寫 felt obliged to 等\",\"「一個人」可寫，例如 alone、by myself、on my own 等\",\"有「上週」，用過去式（例如 was obliged、was sick 等）\"]（原 makeSentence：instructionZh「用 be obliged to 或 feel obliged to 造一個句子，說說你在工作或生活中不得不做的事。」、referenceEn [\"I am obliged to wear a uniform at work.\",\"I felt obliged to help my neighbor move to a new apartment.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

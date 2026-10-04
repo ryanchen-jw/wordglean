@@ -233,16 +233,19 @@
     },
     {
       "id": "c1-u38-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "fiend",
-      "instructionZh": "用 fiend 造一個句子，說說你或你認識的人對某件事的狂熱。",
+      "type": "translate",
+      "promptZh": "我的同事是個解謎狂，她每天午休都在解謎題。",
+      "hintWords": [
+        "fiend"
+      ],
       "referenceEn": [
-        "My uncle is a gardening fiend who spends every weekend outside.",
-        "My best friend is a movie fiend; she watches at least three films a week."
+        "My colleague is a puzzle fiend; she spends every lunch break solving puzzles.",
+        "My colleague is a puzzle fiend who does puzzles during her lunch break every day."
       ],
       "rubricZh": [
-        "fiend 在這裡表示「⋯狂、狂熱者」，常寫成 a＋事物＋fiend（例如 a gardening fiend、a movie fiend 等）",
-        "時態配合內容（例如 is、spends、watches）"
+        "「⋯狂」用 fiend（例如 a puzzle fiend 等）",
+        "「午休」可寫，例如 lunch break、lunch hour 等",
+        "「解謎題」可寫，例如 solving puzzles、does puzzles 等"
       ]
     }
   ],
@@ -280,6 +283,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"諷刺地\",\"漫無目的地\",\"天真地\",\"兇狠地\"]（原 [\"諷刺地\",\"漫無目的地\",\"天真地\",\"令人不安的\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fiend）原位換成翻譯題，沿用題 id c1-u38-l07-q17；目標字沿用 fiend",
+        "resolution": "改為 translate：promptZh「我的同事是個解謎狂，她每天午休都在解謎題。」、hintWords [\"fiend\"]、referenceEn [\"My colleague is a puzzle fiend; she spends every lunch break solving puzzles.\",\"My colleague is a puzzle fiend who does puzzles during her lunch break every day.\"]、rubricZh [\"「⋯狂」用 fiend（例如 a puzzle fiend 等）\",\"「午休」可寫，例如 lunch break、lunch hour 等\",\"「解謎題」可寫，例如 solving puzzles、does puzzles 等\"]（原 makeSentence：instructionZh「用 fiend 造一個句子，說說你或你認識的人對某件事的狂熱。」、referenceEn [\"My uncle is a gardening fiend who spends every weekend outside.\",\"My best friend is a movie fiend; she watches at least three films a week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

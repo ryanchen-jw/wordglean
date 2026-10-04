@@ -232,16 +232,18 @@
     },
     {
       "id": "c1-u20-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "injustice",
-      "instructionZh": "用 injustice 造一個句子，說說一件你覺得不公平的事。",
+      "type": "translate",
+      "promptZh": "這部電影講述一位記者揭發社會不公的故事。",
+      "hintWords": [
+        "injustice"
+      ],
       "referenceEn": [
-        "It felt like an injustice when my brother got a bigger piece of cake.",
-        "I think it is an injustice that some children are not able to go to school."
+        "The film tells the story of a reporter who exposes social injustice.",
+        "This movie is about a journalist who reveals injustice in society."
       ],
       "rubricZh": [
-        "injustice 是名詞，表示「不公平、不公正的事」（例如 an injustice、a sense of injustice 等）",
-        "句子要說到一件你覺得不公平的事"
+        "「社會不公」用 injustice，例如 social injustice、injustice in society 等",
+        "「揭發」可寫，例如 exposes、reveals、uncovers 等"
       ]
     }
   ],
@@ -309,6 +311,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：bureaucratic 是形容詞，表示「官僚的、手續繁瑣的」（例如 a bureaucratic process 等）／「申請補助」可寫，例如 applying for the grant、the grant application 等／「等了半年」可寫，例如 waited six months、waited half a year 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（injustice）原位換成翻譯題，沿用題 id c1-u20-l02-q17；目標字沿用 injustice",
+        "resolution": "改為 translate：promptZh「這部電影講述一位記者揭發社會不公的故事。」、hintWords [\"injustice\"]、referenceEn [\"The film tells the story of a reporter who exposes social injustice.\",\"This movie is about a journalist who reveals injustice in society.\"]、rubricZh [\"「社會不公」用 injustice，例如 social injustice、injustice in society 等\",\"「揭發」可寫，例如 exposes、reveals、uncovers 等\"]（原 makeSentence：instructionZh「用 injustice 造一個句子，說說一件你覺得不公平的事。」、referenceEn [\"It felt like an injustice when my brother got a bigger piece of cake.\",\"I think it is an injustice that some children are not able to go to school.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

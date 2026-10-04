@@ -215,17 +215,19 @@
     },
     {
       "id": "c1-u12-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "conservatory",
-      "instructionZh": "用 conservatory 造一個句子，說說如果你家有玻璃溫室，你會拿來做什麼。",
+      "type": "translate",
+      "promptZh": "她十八歲時進入一所有名的音樂學院。",
+      "hintWords": [
+        "conservatory"
+      ],
       "referenceEn": [
-        "If I had a conservatory, I would grow tomatoes all year.",
-        "I would like a conservatory where I could read in the winter sun."
+        "She entered a famous music conservatory at the age of eighteen.",
+        "At eighteen, she went to a well-known conservatory to study music."
       ],
       "rubricZh": [
-        "conservatory 在這裡指「（附屬於住家的）玻璃溫室」",
-        "談假設的情況可寫，例如 If I had…, I would…、I would like… 等",
-        "句子要說到你自己"
+        "「音樂學院」用 conservatory（例如 a music conservatory、a conservatory 等）",
+        "「進入」可寫，例如 entered、went to、was accepted by 等",
+        "「十八歲時」可寫，例如 at eighteen、at the age of eighteen 等"
       ]
     }
   ],
@@ -281,6 +283,12 @@
         "message": "執行長第②③關裁示修正：短文「an old iron chauffer that was once used to heat water」承上，使用冷僻詞義；學習者查任何常用字典多半查不到此義。",
         "resolution": "執行長裁示撤回更正：閱讀維持舊鐵爐（chauffer）情境，誤植由執行長列報告、改在 data 層處理",
         "resolvedAt": "2026-10-02T21:53:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（conservatory）原位換成翻譯題，沿用題 id c1-u12-l02-q16；目標字沿用 conservatory",
+        "resolution": "改為 translate：promptZh「她十八歲時進入一所有名的音樂學院。」、hintWords [\"conservatory\"]、referenceEn [\"She entered a famous music conservatory at the age of eighteen.\",\"At eighteen, she went to a well-known conservatory to study music.\"]、rubricZh [\"「音樂學院」用 conservatory（例如 a music conservatory、a conservatory 等）\",\"「進入」可寫，例如 entered、went to、was accepted by 等\",\"「十八歲時」可寫，例如 at eighteen、at the age of eighteen 等\"]（原 makeSentence：instructionZh「用 conservatory 造一個句子，說說如果你家有玻璃溫室，你會拿來做什麼。」、referenceEn [\"If I had a conservatory, I would grow tomatoes all year.\",\"I would like a conservatory where I could read in the winter sun.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

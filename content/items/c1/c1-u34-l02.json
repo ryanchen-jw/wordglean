@@ -203,16 +203,18 @@
     },
     {
       "id": "c1-u34-l02-q15",
-      "type": "makeSentence",
-      "targetWord": "gadget",
-      "instructionZh": "用 gadget 造一個句子，說說你最喜歡或最想要的一個小裝置。",
+      "type": "translate",
+      "promptZh": "這家店賣各種給旅客用的小裝置。",
+      "hintWords": [
+        "gadget"
+      ],
       "referenceEn": [
-        "My favorite gadget is a tiny light that clips onto my book.",
-        "I want a gadget that can find my keys when I lose them."
+        "This shop sells all kinds of gadgets for travelers.",
+        "The store sells many different travel gadgets."
       ],
       "rubricZh": [
-        "gadget 是可數名詞，表示「小玩意、小裝置」（例如 a useful gadget、kitchen gadgets 等）",
-        "句子要說到你自己喜歡或想要的東西"
+        "「小裝置」用 gadget 的複數（例如 gadgets for travelers、travel gadgets 等）",
+        "「各種」可寫，例如 all kinds of、many different 等"
       ]
     }
   ],
@@ -262,6 +264,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：recharge 可指幫電器充電，也可指人「恢復精力」（例如 go out to recharge 等）／「週末」可寫，例如 on weekends、at the weekend 等／「去山上走走」可寫，例如 go walking in the mountains、walk in the mountains 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（gadget）原位換成翻譯題，沿用題 id c1-u34-l02-q15；目標字沿用 gadget",
+        "resolution": "改為 translate：promptZh「這家店賣各種給旅客用的小裝置。」、hintWords [\"gadget\"]、referenceEn [\"This shop sells all kinds of gadgets for travelers.\",\"The store sells many different travel gadgets.\"]、rubricZh [\"「小裝置」用 gadget 的複數（例如 gadgets for travelers、travel gadgets 等）\",\"「各種」可寫，例如 all kinds of、many different 等\"]（原 makeSentence：instructionZh「用 gadget 造一個句子，說說你最喜歡或最想要的一個小裝置。」、referenceEn [\"My favorite gadget is a tiny light that clips onto my book.\",\"I want a gadget that can find my keys when I lose them.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

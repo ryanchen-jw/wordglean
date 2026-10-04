@@ -245,16 +245,19 @@
     },
     {
       "id": "c1-u29-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "itinerary",
-      "instructionZh": "用 itinerary 造一個句子，說說你下一趟旅行的行程安排。",
+      "type": "translate",
+      "promptZh": "我們的行程很緊湊，每天都會參觀三個景點。",
+      "hintWords": [
+        "itinerary"
+      ],
       "referenceEn": [
-        "My itinerary for next summer includes three days in Tokyo.",
-        "I am still planning the itinerary for my trip to the mountains next month."
+        "Our itinerary is very tight; we visit three places every day.",
+        "We have a busy itinerary, with three sights to see each day."
       ],
       "rubricZh": [
-        "itinerary 是可數名詞，表示「行程（表）」（例如 a detailed itinerary、plan an itinerary 等）",
-        "句子要說到你自己的旅行"
+        "「行程」用 itinerary（例如 our itinerary、a busy itinerary 等）",
+        "「很緊湊」可寫，例如 very tight、busy、packed 等",
+        "「景點」可寫，例如 places、sights 等"
       ]
     }
   ],
@@ -334,6 +337,12 @@
         "message": "執行長最終複審修正：最終複審提醒 4：checked 譯「仔細核對」多了「仔細」",
         "resolution": "刪去「仔細」",
         "resolvedAt": "2026-10-02T22:11:38Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（itinerary）原位換成翻譯題，沿用題 id c1-u29-l01-q18；目標字沿用 itinerary",
+        "resolution": "改為 translate：promptZh「我們的行程很緊湊，每天都會參觀三個景點。」、hintWords [\"itinerary\"]、referenceEn [\"Our itinerary is very tight; we visit three places every day.\",\"We have a busy itinerary, with three sights to see each day.\"]、rubricZh [\"「行程」用 itinerary（例如 our itinerary、a busy itinerary 等）\",\"「很緊湊」可寫，例如 very tight、busy、packed 等\",\"「景點」可寫，例如 places、sights 等\"]（原 makeSentence：instructionZh「用 itinerary 造一個句子，說說你下一趟旅行的行程安排。」、referenceEn [\"My itinerary for next summer includes three days in Tokyo.\",\"I am still planning the itinerary for my trip to the mountains next month.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

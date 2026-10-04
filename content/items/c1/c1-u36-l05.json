@@ -219,17 +219,19 @@
     },
     {
       "id": "c1-u36-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "roundup",
-      "instructionZh": "用 roundup 造一個句子，說說你平常怎麼掌握新聞或資訊的重點。",
+      "type": "translate",
+      "promptZh": "這個網站每週五會用電子郵件寄出一週科技新聞的摘要。",
+      "hintWords": [
+        "roundup"
+      ],
       "referenceEn": [
-        "I listen to a short news roundup on my way to work.",
-        "Every Sunday, I read a roundup of the week's sports news."
+        "Every Friday, this website sends out an email with a roundup of the week's technology news.",
+        "This website sends readers a weekly roundup of technology news by email every Friday."
       ],
       "rubricZh": [
-        "roundup 表示「摘要、綜合報導」，常寫 a roundup of＋內容或 a news roundup 等",
-        "說的是平常的習慣，時態配合內容（例如 listen、read）",
-        "主詞是自己（I）"
+        "「摘要」用 roundup（例如 a roundup of the week's technology news 等）",
+        "「用電子郵件寄出」可寫，例如 sends out an email with…、sends…by email 等",
+        "說的是固定的習慣，時態配合內容"
       ]
     }
   ],
@@ -267,6 +269,12 @@
         "message": "執行長第②③關裁示修正：第③關 2-E：評分要點「可寫」未用「例如」",
         "resolution": "改為 「雕出」用 chisel，例如 chisel this statue out of marble、chisel…from a piece of marble 等（原 「雕出」用 chisel，可寫 chisel＋作品＋out of／from＋材料）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（roundup）原位換成翻譯題，沿用題 id c1-u36-l05-q16；目標字沿用 roundup",
+        "resolution": "改為 translate：promptZh「這個網站每週五會用電子郵件寄出一週科技新聞的摘要。」、hintWords [\"roundup\"]、referenceEn [\"Every Friday, this website sends out an email with a roundup of the week's technology news.\",\"This website sends readers a weekly roundup of technology news by email every Friday.\"]、rubricZh [\"「摘要」用 roundup（例如 a roundup of the week's technology news 等）\",\"「用電子郵件寄出」可寫，例如 sends out an email with…、sends…by email 等\",\"說的是固定的習慣，時態配合內容\"]（原 makeSentence：instructionZh「用 roundup 造一個句子，說說你平常怎麼掌握新聞或資訊的重點。」、referenceEn [\"I listen to a short news roundup on my way to work.\",\"Every Sunday, I read a roundup of the week's sports news.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

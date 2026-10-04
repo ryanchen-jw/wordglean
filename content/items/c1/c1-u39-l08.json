@@ -218,17 +218,19 @@
     },
     {
       "id": "c1-u39-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "exhilarate",
-      "instructionZh": "用 exhilarate 造一個句子，說說什麼樣的活動會讓你感到興奮。",
+      "type": "translate",
+      "promptZh": "觀眾的歡呼聲讓所有球員都振奮起來。",
+      "hintWords": [
+        "exhilarate"
+      ],
       "referenceEn": [
-        "Riding my bike down a long hill always exhilarates me.",
-        "Swimming in the cold sea in the morning exhilarates me."
+        "The crowd's cheers exhilarated all the players.",
+        "All the players were exhilarated by the cheering of the crowd."
       ],
       "rubricZh": [
-        "exhilarate 表示「使興奮」，例如 活動＋exhilarates me，或被動 I am exhilarated by＋活動 等",
-        "時態配合內容（例如 exhilarates、exhilarated）",
-        "說的是讓自己興奮的活動（例如 …exhilarates me、I am exhilarated by…）"
+        "「使振奮」用 exhilarate（例如 exhilarated the players、were exhilarated by… 等）",
+        "「歡呼聲」可寫，例如 cheers、cheering 等",
+        "時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -350,6 +352,12 @@
         "message": "執行長最終複審修正：中譯同步",
         "resolution": "改為 那名實習廚師對主廚態度不服從，被調去洗碗。（原 那位年輕演員對導演態度不服從，結果被換掉了。）",
         "resolvedAt": "2026-10-02T21:14:50Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（exhilarate）原位換成翻譯題，沿用題 id c1-u39-l08-q16；目標字沿用 exhilarate",
+        "resolution": "改為 translate：promptZh「觀眾的歡呼聲讓所有球員都振奮起來。」、hintWords [\"exhilarate\"]、referenceEn [\"The crowd's cheers exhilarated all the players.\",\"All the players were exhilarated by the cheering of the crowd.\"]、rubricZh [\"「使振奮」用 exhilarate（例如 exhilarated the players、were exhilarated by… 等）\",\"「歡呼聲」可寫，例如 cheers、cheering 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 exhilarate 造一個句子，說說什麼樣的活動會讓你感到興奮。」、referenceEn [\"Riding my bike down a long hill always exhilarates me.\",\"Swimming in the cold sea in the morning exhilarates me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -215,16 +215,19 @@
     },
     {
       "id": "c1-u14-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "stimuli",
-      "instructionZh": "用 stimuli 造一個句子，說說哪些刺激會讓你分心或提神。",
+      "type": "translate",
+      "promptZh": "動物園的工作人員每天給動物新的玩具，提供不同的刺激。",
+      "hintWords": [
+        "stimuli"
+      ],
       "referenceEn": [
-        "Loud music and bright lights are stimuli that make it hard for me to study.",
-        "I work best when there are few stimuli around me, like in a quiet library."
+        "The zoo staff give the animals new toys every day to provide different stimuli.",
+        "Every day, zoo workers give the animals new toys as fresh stimuli."
       ],
       "rubricZh": [
-        "stimuli 是 stimulus 的複數，表示「刺激」，動詞要配合複數（例如 stimuli that make…、these stimuli are 等）",
-        "句子要說到你自己"
+        "「刺激」用複數名詞 stimuli（例如 different stimuli、fresh stimuli 等）",
+        "「工作人員」可寫，例如 staff、workers 等；主詞與動詞單複數配合皆可（例如 staff give、staff gives 等）",
+        "說的是習慣，時態配合內容"
       ]
     }
   ],
@@ -286,6 +289,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：stimuli 是 stimulus 的複數，表示「刺激」，動詞要配合複數（例如 stimuli that make…、these stimuli are 等）／句子要說到你自己",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（stimuli）原位換成翻譯題，沿用題 id c1-u14-l02-q16；目標字沿用 stimuli",
+        "resolution": "改為 translate：promptZh「動物園的工作人員每天給動物新的玩具，提供不同的刺激。」、hintWords [\"stimuli\"]、referenceEn [\"The zoo staff give the animals new toys every day to provide different stimuli.\",\"Every day, zoo workers give the animals new toys as fresh stimuli.\"]、rubricZh [\"「刺激」用複數名詞 stimuli（例如 different stimuli、fresh stimuli 等）\",\"「工作人員」可寫，例如 staff、workers 等；主詞與動詞單複數配合皆可（例如 staff give、staff gives 等）\",\"說的是習慣，時態配合內容\"]（原 makeSentence：instructionZh「用 stimuli 造一個句子，說說哪些刺激會讓你分心或提神。」、referenceEn [\"Loud music and bright lights are stimuli that make it hard for me to study.\",\"I work best when there are few stimuli around me, like in a quiet library.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

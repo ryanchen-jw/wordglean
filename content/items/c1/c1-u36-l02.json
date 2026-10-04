@@ -232,17 +232,18 @@
     },
     {
       "id": "c1-u36-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "rendering",
-      "instructionZh": "用 rendering 造一個句子，說說你聽過或看過的某個演出或改編版本。",
+      "type": "translate",
+      "promptZh": "建築師給我們看了新圖書館的電腦示意圖。",
+      "hintWords": [
+        "rendering"
+      ],
       "referenceEn": [
-        "I loved the band's rendering of an old folk song.",
-        "I once heard a slow piano rendering of my favorite pop song."
+        "The architect showed us a computer rendering of the new library.",
+        "We were shown a computer rendering of the new library by the architect."
       ],
       "rubricZh": [
-        "rendering 表示「演出、詮釋」，常寫成 rendering of＋作品（例如 a rendering of an old song）",
-        "時態配合內容（例如 loved、heard、love）",
-        "主詞是自己（I）"
+        "「示意圖」用 rendering（例如 a computer rendering of the new library 等）",
+        "時態配合內容（例如 showed、were shown 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -268,6 +269,13 @@
     },
     "glossVerdicts": {},
     "issues": [],
-    "resolvedAfterFinalReview": []
+    "resolvedAfterFinalReview": [
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rendering）原位換成翻譯題，沿用題 id c1-u36-l02-q17；目標字沿用 rendering",
+        "resolution": "改為 translate：promptZh「建築師給我們看了新圖書館的電腦示意圖。」、hintWords [\"rendering\"]、referenceEn [\"The architect showed us a computer rendering of the new library.\",\"We were shown a computer rendering of the new library by the architect.\"]、rubricZh [\"「示意圖」用 rendering（例如 a computer rendering of the new library 等）\",\"時態配合內容（例如 showed、were shown 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 rendering 造一個句子，說說你聽過或看過的某個演出或改編版本。」、referenceEn [\"I loved the band's rendering of an old folk song.\",\"I once heard a slow piano rendering of my favorite pop song.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      }
+    ]
   }
 }

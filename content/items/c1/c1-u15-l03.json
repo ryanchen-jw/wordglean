@@ -234,17 +234,19 @@
     },
     {
       "id": "c1-u15-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "unmusical",
-      "instructionZh": "用 unmusical 造一個句子，說說你或家人在音樂方面的能力。",
+      "type": "translate",
+      "promptZh": "那隻鸚鵡的叫聲又大又不悅耳。",
+      "hintWords": [
+        "unmusical"
+      ],
       "referenceEn": [
-        "Nobody in my family is unmusical; we all play an instrument.",
-        "I used to think I was unmusical, but now I enjoy singing in a choir."
+        "The parrot's cry is loud and unmusical.",
+        "That parrot has a loud, unmusical voice."
       ],
       "rubricZh": [
-        "unmusical 表示「不懂音樂的、沒有音樂細胞的」（例如 so unmusical that…、was unmusical 等）",
-        "句子要說到你自己或家人",
-        "時態配合內容（例如 is、used to think 等）"
+        "「不悅耳」用 unmusical（例如 loud and unmusical、an unmusical voice 等）",
+        "「叫聲」可寫，例如 cry、call、voice 等",
+        "時態配合內容（例如 is、was 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -300,6 +302,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：unmusical 表示「不懂音樂的、沒有音樂細胞的」（例如 so unmusical that…、was unmusical 等）／句子要說到你自己或家人／時態配合內容（例如 is、used to think 等）",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（unmusical）原位換成翻譯題，沿用題 id c1-u15-l03-q17；目標字沿用 unmusical",
+        "resolution": "改為 translate：promptZh「那隻鸚鵡的叫聲又大又不悅耳。」、hintWords [\"unmusical\"]、referenceEn [\"The parrot's cry is loud and unmusical.\",\"That parrot has a loud, unmusical voice.\"]、rubricZh [\"「不悅耳」用 unmusical（例如 loud and unmusical、an unmusical voice 等）\",\"「叫聲」可寫，例如 cry、call、voice 等\",\"時態配合內容（例如 is、was 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 unmusical 造一個句子，說說你或家人在音樂方面的能力。」、referenceEn [\"Nobody in my family is unmusical; we all play an instrument.\",\"I used to think I was unmusical, but now I enjoy singing in a choir.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

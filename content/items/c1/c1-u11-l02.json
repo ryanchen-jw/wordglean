@@ -217,17 +217,19 @@
     },
     {
       "id": "c1-u11-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "bouquet",
-      "instructionZh": "用 bouquet 造一個句子，說說你送過或收過的一束花。",
+      "type": "translate",
+      "promptZh": "畢業典禮那天，同學們送給老師一大束向日葵。",
+      "hintWords": [
+        "bouquet"
+      ],
       "referenceEn": [
-        "I gave my mother a bouquet of sunflowers on her birthday.",
-        "I once received a bouquet of roses after a concert."
+        "On graduation day, the students gave their teacher a big bouquet of sunflowers.",
+        "The students gave the teacher a large bouquet of sunflowers at the graduation ceremony."
       ],
       "rubricZh": [
-        "bouquet 表示「花束」，用法例如 a bouquet of roses、a bouquet of flowers 等",
-        "句子要說到你自己的經驗",
-        "時態配合內容（例如 gave、received 等）"
+        "「一大束」用 bouquet（例如 a big bouquet of sunflowers 等）",
+        "「畢業典禮那天」可寫，例如 on graduation day、at the graduation ceremony 等",
+        "時態配合內容（例如 gave 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -259,6 +261,12 @@
         "message": "執行長最終複審修正：最終複審 1、2：評分要點 q15、q16 漏改（spec 已改但題目檔未重寫）",
         "resolution": "重寫本課，q15、q16 評分要點改成「例如…等」與「bouquet 的用法，例如…等」",
         "resolvedAt": "2026-10-02T22:11:40Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（bouquet）原位換成翻譯題，沿用題 id c1-u11-l02-q16；目標字沿用 bouquet",
+        "resolution": "改為 translate：promptZh「畢業典禮那天，同學們送給老師一大束向日葵。」、hintWords [\"bouquet\"]、referenceEn [\"On graduation day, the students gave their teacher a big bouquet of sunflowers.\",\"The students gave the teacher a large bouquet of sunflowers at the graduation ceremony.\"]、rubricZh [\"「一大束」用 bouquet（例如 a big bouquet of sunflowers 等）\",\"「畢業典禮那天」可寫，例如 on graduation day、at the graduation ceremony 等\",\"時態配合內容（例如 gave 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 bouquet 造一個句子，說說你送過或收過的一束花。」、referenceEn [\"I gave my mother a bouquet of sunflowers on her birthday.\",\"I once received a bouquet of roses after a concert.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

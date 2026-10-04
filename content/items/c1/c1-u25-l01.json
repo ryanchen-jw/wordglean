@@ -203,16 +203,19 @@
     },
     {
       "id": "c1-u25-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "swap",
-      "instructionZh": "用 swap 造一個句子，說說你曾經和別人交換過的東西。",
+      "type": "translate",
+      "promptZh": "孩子們在學校交換了自己喜歡的漫畫書。",
+      "hintWords": [
+        "swap"
+      ],
       "referenceEn": [
-        "I swapped my sandwich for my friend's apple at lunch.",
-        "My sister and I often swap clothes."
+        "The children swapped their favorite comic books at school.",
+        "At school, the kids swapped their favorite comics with each other."
       ],
       "rubricZh": [
-        "swap 當動詞表示「交換」，用法例如 swap A for B、swap clothes 等",
-        "句子要說到你自己的經驗"
+        "「交換」用 swap（例如 swapped comic books、swapped…with each other 等）",
+        "「漫畫書」可寫，例如 comic books、comics 等",
+        "說的是已發生的事，時態配合內容（例如 swapped 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -262,6 +265,12 @@
         "message": "執行長最終複審修正：最終複審 8：同詞性題 coverage 不可數，放不進 a ____，可數性洩題",
         "resolution": "coverage 換成可數的 flashback（u15-l01），代入後語意不通",
         "resolvedAt": "2026-10-02T22:11:29Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（swap）原位換成翻譯題，沿用題 id c1-u25-l01-q15；目標字沿用 swap",
+        "resolution": "改為 translate：promptZh「孩子們在學校交換了自己喜歡的漫畫書。」、hintWords [\"swap\"]、referenceEn [\"The children swapped their favorite comic books at school.\",\"At school, the kids swapped their favorite comics with each other.\"]、rubricZh [\"「交換」用 swap（例如 swapped comic books、swapped…with each other 等）\",\"「漫畫書」可寫，例如 comic books、comics 等\",\"說的是已發生的事，時態配合內容（例如 swapped 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 swap 造一個句子，說說你曾經和別人交換過的東西。」、referenceEn [\"I swapped my sandwich for my friend's apple at lunch.\",\"My sister and I often swap clothes.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

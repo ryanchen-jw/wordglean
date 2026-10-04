@@ -229,16 +229,19 @@
     },
     {
       "id": "c1-u36-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "congregate",
-      "instructionZh": "用 congregate 造一個句子，描述你常看到人或動物聚集在某個地方的情景。",
+      "type": "translate",
+      "promptZh": "每天傍晚，附近的居民都會聚集在廟前下棋。",
+      "hintWords": [
+        "congregate"
+      ],
       "referenceEn": [
-        "Students often congregate around the coffee machine before class.",
-        "On weekend mornings, I see runners congregate at the park gate before a race."
+        "Every evening, people from the neighborhood congregate in front of the temple to play chess.",
+        "Local residents congregate outside the temple every evening to play chess."
       ],
       "rubricZh": [
-        "congregate 不接受詞，表示「聚集」，常接地點（例如 around the machine、near the fountain 等）",
-        "描述常見的情景，時態配合內容（例如 congregate、congregated）"
+        "「聚集」用 congregate（例如 congregate in front of the temple 等）",
+        "「附近的居民」可寫，例如 people from the neighborhood、local residents 等",
+        "說的是習慣，時態配合內容"
       ]
     }
   ],
@@ -288,6 +291,12 @@
         "message": "執行長第②③關裁示修正：第③關 3-A#1：閱讀句與 gush 卡同主詞（水）同句型",
         "resolution": "改為 My grandfather spends most weekends tinkering with old radios in his garage. The place is full of clutter: boxes of wires, battered tools and newspapers he refuses to discard. Last winter, a mouse moved in and started to gnaw through the wires. Grandpa tried a spray that was supposed to repel mice, but it did not work. In the end, our cat solved the problem. She hid behind a box for an hour and then pounced. A week later, a pipe burst and sent water gushing across the floor. Neighbors congregated in the adjoining yard to watch Grandpa and my father carry everything outside.（原 My grandfather spends most weekends tinkering with old radios in his garage. The place is full of clutter: boxes of wires, battered tools and newspapers he refuses to discard. Last winter, a mouse moved in and started to gnaw through the wires. Grandpa tried a spray that was supposed to repel mice, but it did not work. In the end, our cat solved the problem. She hid behind a box for an hour and then pounced. A week later, a pipe burst and water gushed across the floor. Neighbors congregated in the adjoining yard to watch Grandpa and my father carry everything outside.）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（congregate）原位換成翻譯題，沿用題 id c1-u36-l03-q17；目標字沿用 congregate",
+        "resolution": "改為 translate：promptZh「每天傍晚，附近的居民都會聚集在廟前下棋。」、hintWords [\"congregate\"]、referenceEn [\"Every evening, people from the neighborhood congregate in front of the temple to play chess.\",\"Local residents congregate outside the temple every evening to play chess.\"]、rubricZh [\"「聚集」用 congregate（例如 congregate in front of the temple 等）\",\"「附近的居民」可寫，例如 people from the neighborhood、local residents 等\",\"說的是習慣，時態配合內容\"]（原 makeSentence：instructionZh「用 congregate 造一個句子，描述你常看到人或動物聚集在某個地方的情景。」、referenceEn [\"Students often congregate around the coffee machine before class.\",\"On weekend mornings, I see runners congregate at the park gate before a race.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

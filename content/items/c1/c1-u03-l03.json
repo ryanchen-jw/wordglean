@@ -229,16 +229,19 @@
     },
     {
       "id": "c1-u03-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "rotate",
-      "instructionZh": "用 rotate 造一個句子，說說你和別人輪流做某件事。",
+      "type": "translate",
+      "promptZh": "這間工廠的工人每週輪流上夜班。",
+      "hintWords": [
+        "rotate"
+      ],
       "referenceEn": [
-        "My roommates and I rotate the cleaning every week.",
-        "At work, we rotate the late shifts among five people."
+        "The workers in this factory rotate the night shifts every week.",
+        "Every week, the factory workers rotate the night shifts."
       ],
       "rubricZh": [
-        "rotate 表示「輪流（做）」，後面可接要輪流的工作（例如 rotate the cleaning 等）",
-        "句子要說到你自己（例如主詞含 I 或 we 等）"
+        "「輪流」用 rotate（例如 rotate the night shifts、rotate through night shifts 等）",
+        "「夜班」可寫，例如 night shifts、late shifts 等",
+        "「每週」可寫，例如 every week、each week，放句首或句尾皆可"
       ]
     }
   ],
@@ -318,6 +321,18 @@
         "message": "執行長最終複審修正：最終複審提醒 5：評分要點「（例如主詞含 I 或 we）」沒有「等」",
         "resolution": "補「等」",
         "resolvedAt": "2026-10-02T22:11:41Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（rotate）原位換成翻譯題，沿用題 id c1-u03-l03-q17；目標字沿用 rotate",
+        "resolution": "改為 translate：promptZh「這間工廠的工人每週輪流上夜班。」、hintWords [\"rotate\"]、referenceEn [\"The workers in this factory rotate the night shifts every week.\",\"Every week, the factory workers rotate the night shifts.\"]、rubricZh [\"「輪流」用 rotate＋受詞（例如 rotate the night shifts 等）\",\"「夜班」可寫，例如 night shifts、late shifts 等\",\"「每週」可寫，例如 every week、each week，放句首或句尾皆可\"]（原 makeSentence：instructionZh「用 rotate 造一個句子，說說你和別人輪流做某件事。」、referenceEn [\"My roommates and I rotate the cleaning every week.\",\"At work, we rotate the late shifts among five people.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：c1-u03-l03-q17 SUS 要點寫死 rotate 及物用法，未收 rotate through、不及物等",
+        "resolution": "改為 rubricZh [\"「輪流」用 rotate（例如 rotate the night shifts、rotate through night shifts 等）\",\"「夜班」可寫，例如 night shifts、late shifts 等\",\"「每週」可寫，例如 every week、each week，放句首或句尾皆可\"]（原 rubricZh [\"「輪流」用 rotate＋受詞（例如 rotate the night shifts 等）\",\"「夜班」可寫，例如 night shifts、late shifts 等\",\"「每週」可寫，例如 every week、each week，放句首或句尾皆可\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

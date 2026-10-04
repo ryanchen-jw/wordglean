@@ -216,16 +216,18 @@
     },
     {
       "id": "c1-u19-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "sustainable",
-      "instructionZh": "用 sustainable 造一個句子，說說你生活中一個比較環保、能長久持續的習慣。",
+      "type": "translate",
+      "promptZh": "這家咖啡店只用可永續生產的咖啡豆。",
+      "hintWords": [
+        "sustainable"
+      ],
       "referenceEn": [
-        "Taking my own bag when I go shopping is a small sustainable habit.",
-        "I try to buy sustainable products, such as clothes made from recycled cotton."
+        "This cafe only uses coffee beans that are grown in a sustainable way.",
+        "The cafe uses only sustainable coffee beans."
       ],
       "rubricZh": [
-        "sustainable 表示「可持續的、永續的」，位置有彈性（例如 a sustainable habit、is sustainable 等）",
-        "句子要說到你自己的習慣"
+        "「可永續生產的」用 sustainable（例如 sustainable coffee beans、grown in a sustainable way 等）",
+        "「只用」可寫，例如 only uses、uses only 等"
       ]
     }
   ],
@@ -281,6 +283,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：sustainable 表示「可持續的、永續的」，位置有彈性（例如 a sustainable habit、is sustainable 等）／句子要說到你自己的習慣",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（sustainable）原位換成翻譯題，沿用題 id c1-u19-l01-q16；目標字沿用 sustainable",
+        "resolution": "改為 translate：promptZh「這家咖啡店只用可永續生產的咖啡豆。」、hintWords [\"sustainable\"]、referenceEn [\"This cafe only uses coffee beans that are grown in a sustainable way.\",\"The cafe uses only sustainable coffee beans.\"]、rubricZh [\"「可永續生產的」用 sustainable（例如 sustainable coffee beans、grown in a sustainable way 等）\",\"「只用」可寫，例如 only uses、uses only 等\"]（原 makeSentence：instructionZh「用 sustainable 造一個句子，說說你生活中一個比較環保、能長久持續的習慣。」、referenceEn [\"Taking my own bag when I go shopping is a small sustainable habit.\",\"I try to buy sustainable products, such as clothes made from recycled cotton.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

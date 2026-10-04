@@ -217,16 +217,19 @@
     },
     {
       "id": "c1-u26-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "extravagance",
-      "instructionZh": "用 extravagance 造一個句子，說說一件你覺得很奢侈的事。",
+      "type": "translate",
+      "promptZh": "為寵物辦生日派對，在很多人眼中是一種奢侈。",
+      "hintWords": [
+        "extravagance"
+      ],
       "referenceEn": [
-        "For me, taking a taxi to school is an extravagance.",
-        "My one extravagance is buying fresh flowers every week."
+        "In many people's eyes, throwing a birthday party for a pet is an extravagance.",
+        "Many people see a birthday party for a pet as an extravagance."
       ],
       "rubricZh": [
-        "extravagance 是名詞，表示「奢侈（的行為或東西）」（例如 an extravagance、my one extravagance 等）",
-        "句子要說到你自己的看法或經驗"
+        "「一種奢侈」用 an extravagance（例如 is an extravagance 等）",
+        "「在很多人眼中」可寫，例如 in many people's eyes、many people see…as 等",
+        "「辦生日派對」可寫，例如 throwing a birthday party、having a birthday party 等"
       ]
     }
   ],
@@ -294,6 +297,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：cost-effective 是形容詞，表示「划算的、有成本效益的」（例如 more cost-effective 等）／「用網路開會」可寫，例如 online meetings、holding meetings online 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（extravagance）原位換成翻譯題，沿用題 id c1-u26-l01-q16；目標字沿用 extravagance",
+        "resolution": "改為 translate：promptZh「為寵物辦生日派對，在很多人眼中是一種奢侈。」、hintWords [\"extravagance\"]、referenceEn [\"In many people's eyes, throwing a birthday party for a pet is an extravagance.\",\"Many people see a birthday party for a pet as an extravagance.\"]、rubricZh [\"「一種奢侈」用 an extravagance（例如 is an extravagance 等）\",\"「在很多人眼中」可寫，例如 in many people's eyes、many people see…as 等\",\"「辦生日派對」可寫，例如 throwing a birthday party、having a birthday party 等\"]（原 makeSentence：instructionZh「用 extravagance 造一個句子，說說一件你覺得很奢侈的事。」、referenceEn [\"For me, taking a taxi to school is an extravagance.\",\"My one extravagance is buying fresh flowers every week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

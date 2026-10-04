@@ -204,16 +204,18 @@
     },
     {
       "id": "c1-u33-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "durable",
-      "instructionZh": "用 durable 造一個句子，說說你用了很久、很耐用的一樣東西。",
+      "type": "translate",
+      "promptZh": "他們的友誼很持久，已經維持了四十年。",
+      "hintWords": [
+        "durable"
+      ],
       "referenceEn": [
-        "My watch is so durable that it still works after twenty years.",
-        "My old suitcase is very durable; it has been to ten countries."
+        "Their friendship has proved durable; it has lasted forty years.",
+        "They have a durable friendship that has lasted for forty years."
       ],
       "rubricZh": [
-        "durable 是形容詞，表示「耐用的」（例如 durable shoes、a durable phone 等）",
-        "句子要說到你自己的東西"
+        "「持久的」用 durable（例如 a durable friendship、has proved durable 等）",
+        "「維持了四十年」可寫，例如 has lasted forty years、has lasted for forty years 等"
       ]
     }
   ],
@@ -275,6 +277,12 @@
         "message": "執行長最終複審修正：最終複審 10：suspension 新卡與閱讀都是「出了問題，工廠運作暫停」",
         "resolution": "卡改 The company announced a one-month suspension of sales of its new phone.",
         "resolvedAt": "2026-10-02T22:11:51Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（durable）原位換成翻譯題，沿用題 id c1-u33-l01-q15；目標字沿用 durable",
+        "resolution": "改為 translate：promptZh「他們的友誼很持久，已經維持了四十年。」、hintWords [\"durable\"]、referenceEn [\"Their friendship has proved durable; it has lasted forty years.\",\"They have a durable friendship that has lasted for forty years.\"]、rubricZh [\"「持久的」用 durable（例如 a durable friendship、has proved durable 等）\",\"「維持了四十年」可寫，例如 has lasted forty years、has lasted for forty years 等\"]（原 makeSentence：instructionZh「用 durable 造一個句子，說說你用了很久、很耐用的一樣東西。」、referenceEn [\"My watch is so durable that it still works after twenty years.\",\"My old suitcase is very durable; it has been to ten countries.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

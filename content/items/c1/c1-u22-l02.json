@@ -232,16 +232,18 @@
     },
     {
       "id": "c1-u22-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "altruism",
-      "instructionZh": "用 altruism 造一個句子，說說你看過或做過的一個無私助人的例子。",
+      "type": "translate",
+      "promptZh": "科學家發現，有些動物也會表現出利他行為。",
+      "hintWords": [
+        "altruism"
+      ],
       "referenceEn": [
-        "My neighbor shows real altruism by cooking for elderly people every week.",
-        "Last year, I gave my umbrella to a stranger in the rain, a small act of altruism."
+        "Scientists have found that some animals also show altruism.",
+        "Scientists have discovered that altruism exists in some animals too."
       ],
       "rubricZh": [
-        "altruism 是不可數名詞，表示「利他精神、無私」（例如 an act of altruism、show altruism 等）",
-        "句子要說到你看過或做過的例子"
+        "「利他行為」用 altruism（例如 show altruism 等）",
+        "「發現」可寫，例如 have found、discovered 等；時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -303,6 +305,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：prophetic 是形容詞，表示「有先見之明的、預言的」（例如 seems prophetic、prophetic words 等）／「現在看來」可寫，例如 now seems、now looks 等／「十年前說的話」可寫，例如 what he said ten years ago、his words from ten years ago 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（altruism）原位換成翻譯題，沿用題 id c1-u22-l02-q17；目標字沿用 altruism",
+        "resolution": "改為 translate：promptZh「科學家發現，有些動物也會表現出利他行為。」、hintWords [\"altruism\"]、referenceEn [\"Scientists have found that some animals also show altruism.\",\"Scientists have discovered that altruism exists in some animals too.\"]、rubricZh [\"「利他行為」用 altruism（例如 show altruism 等）\",\"「發現」可寫，例如 have found、discovered 等；時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 altruism 造一個句子，說說你看過或做過的一個無私助人的例子。」、referenceEn [\"My neighbor shows real altruism by cooking for elderly people every week.\",\"Last year, I gave my umbrella to a stranger in the rain, a small act of altruism.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

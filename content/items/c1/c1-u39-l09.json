@@ -8,7 +8,8 @@
   "authoredAt": "2026-10-02T20:16:07Z",
   "properNouns": [
     "Ella",
-    "Kato"
+    "Kato",
+    "English"
   ],
   "items": [
     {
@@ -219,17 +220,19 @@
     },
     {
       "id": "c1-u39-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "self-conscious",
-      "instructionZh": "用 self-conscious 造一個句子，說說什麼情況會讓你覺得難為情。",
+      "type": "translate",
+      "promptZh": "第一次用英文開會時，他很怕說錯，覺得很難為情。",
+      "hintWords": [
+        "self-conscious"
+      ],
       "referenceEn": [
-        "I feel self-conscious when people watch me eat.",
-        "I get self-conscious whenever someone takes a photo of me."
+        "At his first meeting in English, he was self-conscious and afraid of making mistakes.",
+        "He felt self-conscious at his first English meeting because he was afraid of saying something wrong."
       ],
       "rubricZh": [
-        "self-conscious 是形容詞，例如 feel／be self-conscious、self-conscious about… 等",
-        "說的是自己的感受，時態配合內容（例如 feel、get）",
-        "主詞是自己（I）"
+        "「難為情」用 self-conscious（例如 was self-conscious、felt self-conscious 等）",
+        "「怕說錯」可寫，例如 afraid of making mistakes、afraid of saying something wrong 等",
+        "說的是已發生的事，時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -345,6 +348,12 @@
         "message": "執行長第②③關裁示修正：第③關 2-E：評分要點「常接」未用「例如」（最終複審更正：先前誤貼 q15 的 remorsefully 要點，已改回 self-conscious 要點）",
         "resolution": "改為 self-conscious 是形容詞，例如 feel／be self-conscious、self-conscious about… 等（原 self-conscious 是形容詞，常接在 feel、get、be 之後（也可加 about＋事物））",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（self-conscious）原位換成翻譯題，沿用題 id c1-u39-l09-q16；目標字沿用 self-conscious",
+        "resolution": "改為 translate：promptZh「第一次用英文開會時，他很怕說錯，覺得很難為情。」、hintWords [\"self-conscious\"]、referenceEn [\"At his first meeting in English, he was self-conscious and afraid of making mistakes.\",\"He felt self-conscious at his first English meeting because he was afraid of saying something wrong.\"]、rubricZh [\"「難為情」用 self-conscious（例如 was self-conscious、felt self-conscious 等）\",\"「怕說錯」可寫，例如 afraid of making mistakes、afraid of saying something wrong 等\",\"說的是已發生的事，時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 self-conscious 造一個句子，說說什麼情況會讓你覺得難為情。」、referenceEn [\"I feel self-conscious when people watch me eat.\",\"I get self-conscious whenever someone takes a photo of me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,19 @@
     },
     {
       "id": "c1-u10-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "conscientious",
-      "instructionZh": "用 conscientious 造一個句子，說說你在工作或學習上認真負責的地方。",
+      "type": "translate",
+      "promptZh": "這位認真負責的警衛每天晚上都會確認每扇門都鎖好了。",
+      "hintWords": [
+        "conscientious"
+      ],
       "referenceEn": [
-        "I am conscientious about answering every email on the same day.",
-        "As a conscientious student, I always finish my homework early."
+        "The conscientious guard checks that every door is locked each night.",
+        "Every night, the conscientious security guard makes sure all the doors are locked."
       ],
       "rubricZh": [
-        "conscientious 表示「認真負責的」（例如 am conscientious about…、a conscientious student 等）",
-        "句子要說到你自己"
+        "「認真負責的」用 conscientious（例如 the conscientious guard 等）",
+        "「確認⋯鎖好了」可寫，例如 checks that every door is locked、makes sure… 等",
+        "說的是習慣，時態配合內容（例如 checks、makes sure 等）"
       ]
     }
   ],
@@ -293,6 +296,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：conscientious 表示「認真負責的」（例如 am conscientious about…、a conscientious student 等）",
         "resolvedAt": "2026-10-02T21:55:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（conscientious）原位換成翻譯題，沿用題 id c1-u10-l08-q17；目標字沿用 conscientious",
+        "resolution": "改為 translate：promptZh「這位認真負責的警衛每天晚上都會確認每扇門都鎖好了。」、hintWords [\"conscientious\"]、referenceEn [\"The conscientious guard checks that every door is locked each night.\",\"Every night, the conscientious security guard makes sure all the doors are locked.\"]、rubricZh [\"「認真負責的」用 conscientious（例如 the conscientious guard 等）\",\"「確認⋯鎖好了」可寫，例如 checks that every door is locked、makes sure… 等\",\"說的是習慣，時態配合內容（例如 checks、makes sure 等）\"]（原 makeSentence：instructionZh「用 conscientious 造一個句子，說說你在工作或學習上認真負責的地方。」、referenceEn [\"I am conscientious about answering every email on the same day.\",\"As a conscientious student, I always finish my homework early.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

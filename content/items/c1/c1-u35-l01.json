@@ -205,16 +205,19 @@
     },
     {
       "id": "c1-u35-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "rediscover",
-      "instructionZh": "用 rediscover 造一個句子，說說你重新找回的一個興趣或東西。",
+      "type": "translate",
+      "promptZh": "搬家時，她在箱子裡重新發現了小時候寫的日記。",
+      "hintWords": [
+        "rediscover"
+      ],
       "referenceEn": [
-        "Last summer, I rediscovered my old guitar and started playing again.",
-        "I rediscovered how much I enjoy swimming."
+        "While moving house, she rediscovered the diary she had written as a child.",
+        "When she moved, she rediscovered her childhood diary in a box."
       ],
       "rubricZh": [
-        "rediscover 是及物動詞，表示「重新發現、重新找回」（例如 rediscover a hobby 等）",
-        "句子要說到你自己的經驗"
+        "「重新發現」用 rediscover（例如 rediscovered her diary 等）",
+        "「小時候寫的日記」可寫，例如 the diary she had written as a child、her childhood diary 等",
+        "說的是已發生的事，時態配合內容（例如 rediscovered 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -264,6 +267,12 @@
         "message": "執行長最終複審修正：最終複審 11：同詞性題 renown、exploitation 不可數，放不進 a simple ____",
         "resolution": "換成可數的 pioneer（本課）、subordinate（u24），代入後語意不通",
         "resolvedAt": "2026-10-02T22:11:34Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（rediscover）原位換成翻譯題，沿用題 id c1-u35-l01-q15；目標字沿用 rediscover",
+        "resolution": "改為 translate：promptZh「搬家時，她在箱子裡重新發現了小時候寫的日記。」、hintWords [\"rediscover\"]、referenceEn [\"While moving house, she rediscovered the diary she had written as a child.\",\"When she moved, she rediscovered her childhood diary in a box.\"]、rubricZh [\"「重新發現」用 rediscover（例如 rediscovered her diary 等）\",\"「小時候寫的日記」可寫，例如 the diary she had written as a child、her childhood diary 等\",\"說的是已發生的事，時態配合內容（例如 rediscovered 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 rediscover 造一個句子，說說你重新找回的一個興趣或東西。」、referenceEn [\"Last summer, I rediscovered my old guitar and started playing again.\",\"I rediscovered how much I enjoy swimming.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

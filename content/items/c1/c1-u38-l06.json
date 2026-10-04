@@ -232,17 +232,18 @@
     },
     {
       "id": "c1-u38-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "temperamental",
-      "instructionZh": "用 temperamental 造一個句子，描述某台時好時壞的機器，或某個喜怒無常的人。",
+      "type": "translate",
+      "promptZh": "這位歌手喜怒無常，工作人員都很怕她。",
+      "hintWords": [
+        "temperamental"
+      ],
       "referenceEn": [
-        "My laptop is temperamental and sometimes shuts down for no reason.",
-        "My little brother becomes temperamental when he is hungry."
+        "The singer is so temperamental that the staff are all afraid of her.",
+        "The singer is temperamental, and all the staff are scared of her."
       ],
       "rubricZh": [
-        "temperamental 是形容詞，可形容人（喜怒無常）或機器（時好時壞）",
-        "時態配合內容（例如 is、becomes）",
-        "內容要說出時好時壞或情緒多變的情況"
+        "「喜怒無常」用 temperamental（例如 so temperamental that…、is temperamental 等）",
+        "「工作人員都很怕她」可寫，例如 the staff are all afraid of her 等"
       ]
     }
   ],
@@ -304,6 +305,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"幻滅\",\"興奮\",\"諷刺\",\"奉承\"]（原 [\"幻滅\",\"興奮\",\"熱情\",\"奉承\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（temperamental）原位換成翻譯題，沿用題 id c1-u38-l06-q17；目標字沿用 temperamental",
+        "resolution": "改為 translate：promptZh「這位歌手喜怒無常，工作人員都很怕她。」、hintWords [\"temperamental\"]、referenceEn [\"The singer is so temperamental that the staff are all afraid of her.\",\"The singer is temperamental, and all the staff are scared of her.\"]、rubricZh [\"「喜怒無常」用 temperamental（例如 so temperamental that…、is temperamental 等）\",\"「工作人員都很怕她」可寫，例如 the staff are all afraid of her 等\"]（原 makeSentence：instructionZh「用 temperamental 造一個句子，描述某台時好時壞的機器，或某個喜怒無常的人。」、referenceEn [\"My laptop is temperamental and sometimes shuts down for no reason.\",\"My little brother becomes temperamental when he is hungry.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

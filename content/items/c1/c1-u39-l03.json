@@ -231,17 +231,19 @@
     },
     {
       "id": "c1-u39-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "animatedly",
-      "instructionZh": "用 animatedly 造一個句子，描述你和別人熱烈談論某件事的情景。",
+      "type": "translate",
+      "promptZh": "那位導遊生動地講解這座城堡的歷史。",
+      "hintWords": [
+        "animatedly"
+      ],
       "referenceEn": [
-        "My friends and I talked animatedly about the concert on the way home.",
-        "I chatted animatedly with my sister about our holiday plans."
+        "The guide talked animatedly about the history of the castle.",
+        "Our guide explained the castle's history animatedly."
       ],
       "rubricZh": [
-        "animatedly 是副詞，常修飾 talk、chat、discuss 等動詞（例如 talked animatedly）",
-        "時態配合內容（例如 talked、chatted）",
-        "內容和自己有關（例如 I、my friends and I）"
+        "「生動地」用 animatedly，位置有彈性",
+        "「講解」可寫，例如 talked about、explained、described 等",
+        "時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -303,6 +305,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"認真盡責地\",\"極差地\",\"狼吞虎嚥地\",\"興高采烈地\"]（原 [\"愛出風頭的人\",\"極差地\",\"狼吞虎嚥地\",\"興高采烈地\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（animatedly）原位換成翻譯題，沿用題 id c1-u39-l03-q17；目標字沿用 animatedly",
+        "resolution": "改為 translate：promptZh「那位導遊生動地講解這座城堡的歷史。」、hintWords [\"animatedly\"]、referenceEn [\"The guide talked animatedly about the history of the castle.\",\"Our guide explained the castle's history animatedly.\"]、rubricZh [\"「生動地」用 animatedly，位置有彈性\",\"「講解」可寫，例如 talked about、explained、described 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 animatedly 造一個句子，描述你和別人熱烈談論某件事的情景。」、referenceEn [\"My friends and I talked animatedly about the concert on the way home.\",\"I chatted animatedly with my sister about our holiday plans.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

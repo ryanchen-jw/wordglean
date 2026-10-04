@@ -243,16 +243,19 @@
     },
     {
       "id": "c1-u15-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "quest",
-      "instructionZh": "用 quest 造一個句子，說說你正在追尋的一件事。",
+      "type": "translate",
+      "promptZh": "那位科學家一生都在追尋更乾淨的能源。",
+      "hintWords": [
+        "quest"
+      ],
       "referenceEn": [
-        "I am on a quest to find the best coffee in Taipei.",
-        "My quest this year is to learn how to swim."
+        "The scientist spent a lifetime on a quest for cleaner energy.",
+        "The scientist's life was one long quest for a cleaner kind of energy."
       ],
       "rubricZh": [
-        "quest 表示「追尋、探索」，用法例如 be on a quest to find…、my quest for… 等",
-        "句子要說到你自己"
+        "「追尋」用 quest（例如 a quest for cleaner energy 等）",
+        "「一生」可寫，例如 a lifetime、his whole life、her whole life 等",
+        "時態配合內容（例如 spent、has spent 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -302,6 +305,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：quest 表示「追尋、探索」，用法例如 be on a quest to find…、my quest for… 等／句子要說到你自己",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（quest）原位換成翻譯題，沿用題 id c1-u15-l01-q18；目標字沿用 quest",
+        "resolution": "改為 translate：promptZh「那位科學家一生都在追尋更乾淨的能源。」、hintWords [\"quest\"]、referenceEn [\"The scientist spent a lifetime on a quest for cleaner energy.\",\"The scientist's life was one long quest for a cleaner kind of energy.\"]、rubricZh [\"「追尋」用 quest（例如 a quest for cleaner energy 等）\",\"「一生」可寫，例如 a lifetime、his whole life、her whole life 等\",\"時態配合內容（例如 spent、has spent 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 quest 造一個句子，說說你正在追尋的一件事。」、referenceEn [\"I am on a quest to find the best coffee in Taipei.\",\"My quest this year is to learn how to swim.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

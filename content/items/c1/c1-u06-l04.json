@@ -230,17 +230,18 @@
     },
     {
       "id": "c1-u06-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "intuition",
-      "instructionZh": "用 intuition 造一個句子，說說你憑直覺做決定的一次經驗。",
+      "type": "translate",
+      "promptZh": "選擇室友時，我常常相信自己的直覺。",
+      "hintWords": [
+        "intuition"
+      ],
       "referenceEn": [
-        "I followed my intuition and took the job in Taipei.",
-        "My intuition told me not to buy that used car, and I was right."
+        "When I choose a roommate, I often trust my intuition.",
+        "I often follow my intuition when choosing a roommate."
       ],
       "rubricZh": [
-        "intuition 表示「直覺」（例如 follow my intuition、my intuition told me… 等）",
-        "句子要說到你自己的經驗",
-        "時態配合內容（例如 followed、told 等）"
+        "「相信直覺」可寫，例如 trust my intuition、follow my intuition、rely on my intuition 等",
+        "「常常」可寫，例如 often、usually，位置有彈性"
       ]
     }
   ],
@@ -284,6 +285,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：intuition 表示「直覺」（例如 follow my intuition、my intuition told me… 等）／時態配合內容（例如 followed、told 等）",
         "resolvedAt": "2026-10-02T21:54:30Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（intuition）原位換成翻譯題，沿用題 id c1-u06-l04-q17；目標字沿用 intuition",
+        "resolution": "改為 translate：promptZh「選擇室友時，我常常相信自己的直覺。」、hintWords [\"intuition\"]、referenceEn [\"When I choose a roommate, I often trust my intuition.\",\"I often follow my intuition when choosing a roommate.\"]、rubricZh [\"「相信直覺」可寫，例如 trust my intuition、follow my intuition、rely on my intuition 等\",\"「常常」可寫，例如 often、usually，位置有彈性\"]（原 makeSentence：instructionZh「用 intuition 造一個句子，說說你憑直覺做決定的一次經驗。」、referenceEn [\"I followed my intuition and took the job in Taipei.\",\"My intuition told me not to buy that used car, and I was right.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

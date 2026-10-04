@@ -228,16 +228,18 @@
     },
     {
       "id": "c1-u11-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "gem",
-      "instructionZh": "用 gem 造一個句子，介紹一個你覺得是「寶」的地方或東西。",
+      "type": "translate",
+      "promptZh": "這家小餐館是當地人才知道的私房好店。",
+      "hintWords": [
+        "gem"
+      ],
       "referenceEn": [
-        "This small bookshop is a hidden gem in my neighborhood.",
-        "My grandmother's old recipe book is a real gem."
+        "This small restaurant is a hidden gem that only local people know about.",
+        "Only locals know about this little restaurant; it's a real gem."
       ],
       "rubricZh": [
-        "gem 可比喻「珍貴的人或物」（例如 a hidden gem、a real gem 等）",
-        "句子要說到你自己知道的地方或東西"
+        "「私房好店」用 gem，例如 a hidden gem、a real gem 等",
+        "「當地人」可寫，例如 local people、locals 等"
       ]
     }
   ],
@@ -293,6 +295,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：gem 可比喻「珍貴的人或物」（例如 a hidden gem、a real gem 等）／句子要說到你自己知道的地方或東西",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（gem）原位換成翻譯題，沿用題 id c1-u11-l01-q17；目標字沿用 gem",
+        "resolution": "改為 translate：promptZh「這家小餐館是當地人才知道的私房好店。」、hintWords [\"gem\"]、referenceEn [\"This small restaurant is a hidden gem that only local people know about.\",\"Only locals know about this little restaurant; it's a real gem.\"]、rubricZh [\"「私房好店」用 gem，例如 a hidden gem、a real gem 等\",\"「當地人」可寫，例如 local people、locals 等\"]（原 makeSentence：instructionZh「用 gem 造一個句子，介紹一個你覺得是「寶」的地方或東西。」、referenceEn [\"This small bookshop is a hidden gem in my neighborhood.\",\"My grandmother's old recipe book is a real gem.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

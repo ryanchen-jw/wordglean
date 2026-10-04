@@ -233,17 +233,19 @@
     },
     {
       "id": "c1-u38-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "agreeable",
-      "instructionZh": "用 agreeable 造一個句子，描述一個讓你覺得愉快的地方、天氣或經驗。",
+      "type": "translate",
+      "promptZh": "經理欣然同意了我們延長午休的提議。",
+      "hintWords": [
+        "agreeable"
+      ],
       "referenceEn": [
-        "We had an agreeable afternoon walking along the river.",
-        "I find the weather in autumn very agreeable."
+        "The manager was agreeable to our idea of a longer lunch break.",
+        "Our manager was agreeable to the suggestion of extending the lunch break."
       ],
       "rubricZh": [
-        "agreeable 表示「令人愉快的」，位置例如名詞前（an agreeable afternoon）、be 動詞後等",
-        "時態配合內容（例如 had、find）",
-        "內容和自己的經驗有關（例如 I、we）"
+        "「欣然同意」用 be agreeable to＋名詞（例如 was agreeable to our idea 等）",
+        "「延長午休」可寫，例如 a longer lunch break、extending the lunch break 等",
+        "「提議」可寫，例如 idea、suggestion、proposal 等"
       ]
     }
   ],
@@ -335,6 +337,12 @@
         "message": "執行長第②③關裁示修正：第③關 2-E：評分要點寫死位置",
         "resolution": "改為 agreeable 表示「令人愉快的」，位置例如名詞前（an agreeable afternoon）、be 動詞後等（原 agreeable 在這裡表示「令人愉快的」，可放名詞前或 be 動詞、find＋受詞之後）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（agreeable）原位換成翻譯題，沿用題 id c1-u38-l01-q17；目標字沿用 agreeable",
+        "resolution": "改為 translate：promptZh「經理欣然同意了我們延長午休的提議。」、hintWords [\"agreeable\"]、referenceEn [\"The manager was agreeable to our idea of a longer lunch break.\",\"Our manager was agreeable to the suggestion of extending the lunch break.\"]、rubricZh [\"「欣然同意」用 be agreeable to＋名詞（例如 was agreeable to our idea 等）\",\"「延長午休」可寫，例如 a longer lunch break、extending the lunch break 等\",\"「提議」可寫，例如 idea、suggestion、proposal 等\"]（原 makeSentence：instructionZh「用 agreeable 造一個句子，描述一個讓你覺得愉快的地方、天氣或經驗。」、referenceEn [\"We had an agreeable afternoon walking along the river.\",\"I find the weather in autumn very agreeable.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

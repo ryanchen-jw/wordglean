@@ -218,17 +218,18 @@
     },
     {
       "id": "c1-u02-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "duration",
-      "instructionZh": "用 duration 造一個句子，說說在某件事進行的整段期間，你做了什麼或不做什麼。",
+      "type": "translate",
+      "promptZh": "整趟航程中，那個嬰兒都在睡覺。",
+      "hintWords": [
+        "duration"
+      ],
       "referenceEn": [
-        "I turn off my phone for the duration of a movie.",
-        "I stayed with my aunt for the duration of my summer course."
+        "The baby slept for the whole duration of the flight.",
+        "The baby was asleep for the duration of the flight."
       ],
       "rubricZh": [
-        "duration 的用法，例如 for the duration of the movie 等，表示「在⋯的整段期間」",
-        "句子說的是你自己",
-        "時態配合內容即可（例如 turn off、stayed 等）"
+        "「整趟⋯中」用 duration（例如 for the duration of、throughout the duration of 等）",
+        "「在睡覺」可寫，例如 slept、was asleep、was sleeping 等"
       ]
     }
   ],
@@ -308,6 +309,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：duration 的用法，例如 for the duration of the movie 等，表示「在⋯的整段期間」／時態配合內容即可（例如 turn off、stayed 等）",
         "resolvedAt": "2026-10-02T21:54:02Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（duration）原位換成翻譯題，沿用題 id c1-u02-l01-q16；目標字沿用 duration",
+        "resolution": "改為 translate：promptZh「整趟航程中，那個嬰兒都在睡覺。」、hintWords [\"duration\"]、referenceEn [\"The baby slept for the whole duration of the flight.\",\"The baby was asleep for the duration of the flight.\"]、rubricZh [\"「整趟⋯中」用 for the duration of（例如 for the duration of the flight 等）\",\"「在睡覺」可寫，例如 slept、was asleep、was sleeping 等\"]（原 makeSentence：instructionZh「用 duration 造一個句子，說說在某件事進行的整段期間，你做了什麼或不做什麼。」、referenceEn [\"I turn off my phone for the duration of a movie.\",\"I stayed with my aunt for the duration of my summer course.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：c1-u02-l01-q16 SUS 要點寫死介系詞 for，未收 throughout the duration of",
+        "resolution": "改為 rubricZh [\"「整趟⋯中」用 duration（例如 for the duration of、throughout the duration of 等）\",\"「在睡覺」可寫，例如 slept、was asleep、was sleeping 等\"]（原 rubricZh [\"「整趟⋯中」用 for the duration of（例如 for the duration of the flight 等）\",\"「在睡覺」可寫，例如 slept、was asleep、was sleeping 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

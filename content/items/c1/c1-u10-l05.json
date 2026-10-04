@@ -230,16 +230,19 @@
     },
     {
       "id": "c1-u10-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "avid",
-      "instructionZh": "用 avid 造一個句子，說說你熱衷的嗜好。",
+      "type": "translate",
+      "promptZh": "我爸爸熱衷釣魚，每個週末都去海邊。",
+      "hintWords": [
+        "avid"
+      ],
       "referenceEn": [
-        "I am an avid fan of hiking, and I climb a mountain every month.",
-        "As an avid reader, I always carry a book on the train."
+        "My father is an avid fisherman who goes to the sea every weekend.",
+        "My dad is an avid fan of fishing and goes to the beach every weekend."
       ],
       "rubricZh": [
-        "avid 表示「熱衷的」，用法例如 an avid fan、an avid reader 等",
-        "句子要說到你自己的嗜好"
+        "「熱衷的」用 avid（例如 an avid fisherman、an avid fan of fishing 等）",
+        "「每個週末」可寫，例如 every weekend、on weekends 等",
+        "「海邊」可寫，例如 the sea、the beach、the coast 等"
       ]
     }
   ],
@@ -319,6 +322,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：avid 表示「熱衷的」，用法例如 an avid fan、an avid reader 等",
         "resolvedAt": "2026-10-02T21:54:56Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（avid）原位換成翻譯題，沿用題 id c1-u10-l05-q17；目標字沿用 avid",
+        "resolution": "改為 translate：promptZh「我爸爸熱衷釣魚，每個週末都去海邊。」、hintWords [\"avid\"]、referenceEn [\"My father is an avid fisherman who goes to the sea every weekend.\",\"My dad is an avid fan of fishing and goes to the beach every weekend.\"]、rubricZh [\"「熱衷的」用 avid（例如 an avid fisherman、an avid fan of fishing 等）\",\"「每個週末」可寫，例如 every weekend、on weekends 等\",\"「海邊」可寫，例如 the sea、the beach、the coast 等\"]（原 makeSentence：instructionZh「用 avid 造一個句子，說說你熱衷的嗜好。」、referenceEn [\"I am an avid fan of hiking, and I climb a mountain every month.\",\"As an avid reader, I always carry a book on the train.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

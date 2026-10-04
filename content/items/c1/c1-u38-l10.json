@@ -232,17 +232,19 @@
     },
     {
       "id": "c1-u38-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "headstrong",
-      "instructionZh": "用 headstrong 造一個句子，描述你認識的某個固執任性的人或動物。",
+      "type": "translate",
+      "promptZh": "那匹馬很固執，不肯讓任何人騎。",
+      "hintWords": [
+        "headstrong"
+      ],
       "referenceEn": [
-        "My younger brother is too headstrong to ask anyone for directions.",
-        "My headstrong cat refuses to eat anything except fish."
+        "The horse is headstrong and won't let anyone ride it.",
+        "That headstrong horse refuses to let anyone ride it."
       ],
       "rubricZh": [
-        "headstrong 是形容詞，可放 be 動詞後或名詞前（例如 my headstrong cat）",
-        "內容要說出固執任性的表現（例如 refuses to…、too headstrong to…）",
-        "時態配合內容（例如 is、refuses）"
+        "「固執」用 headstrong（例如 is headstrong、that headstrong horse 等）",
+        "「不肯」可寫，例如 won't、refuses to 等",
+        "時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長第②③關裁示修正：第②關：干擾項詞性格式與正解不對稱",
         "resolution": "改為 [\"乖巧地；稍微地；善良地\",\"害怕地；勉強地；溫柔地\",\"誠懇地；普通地；正直地\"]（原 [\"乖巧地；稍微\",\"害怕地；勉強\",\"誠懇地；普通\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（headstrong）原位換成翻譯題，沿用題 id c1-u38-l10-q17；目標字沿用 headstrong",
+        "resolution": "改為 translate：promptZh「那匹馬很固執，不肯讓任何人騎。」、hintWords [\"headstrong\"]、referenceEn [\"The horse is headstrong and won't let anyone ride it.\",\"That headstrong horse refuses to let anyone ride it.\"]、rubricZh [\"「固執」用 headstrong（例如 is headstrong、that headstrong horse 等）\",\"「不肯」可寫，例如 won't、refuses to 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 headstrong 造一個句子，描述你認識的某個固執任性的人或動物。」、referenceEn [\"My younger brother is too headstrong to ask anyone for directions.\",\"My headstrong cat refuses to eat anything except fish.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

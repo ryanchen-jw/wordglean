@@ -234,16 +234,19 @@
     },
     {
       "id": "c1-u10-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "quirk",
-      "instructionZh": "用 quirk 造一個句子，說說你自己的一個小怪癖。",
+      "type": "translate",
+      "promptZh": "我室友有個怪癖：他吃飯前一定要把盤子裡的食物排整齊。",
+      "hintWords": [
+        "quirk"
+      ],
       "referenceEn": [
-        "One of my quirks is that I always sit in the same seat on the bus.",
-        "I have a strange quirk: I can only sleep with socks on."
+        "My roommate has a strange quirk: he always arranges the food on his plate before he eats.",
+        "One of my roommate's quirks is that he must line up the food on his plate before eating."
       ],
       "rubricZh": [
-        "quirk 表示「怪癖」（例如 one of my quirks、a strange quirk 等）",
-        "句子要說到你自己"
+        "「怪癖」用 quirk（例如 has a quirk、one of his quirks 等）",
+        "「排整齊」可寫，例如 arranges、lines up 等",
+        "「一定要」可寫，例如 always、must、has to 等"
       ]
     }
   ],
@@ -311,6 +314,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：quirk 表示「怪癖」（例如 one of my quirks、a strange quirk 等）",
         "resolvedAt": "2026-10-02T21:55:01Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（quirk）原位換成翻譯題，沿用題 id c1-u10-l09-q17；目標字沿用 quirk",
+        "resolution": "改為 translate：promptZh「我室友有個怪癖：他吃飯前一定要把盤子裡的食物排整齊。」、hintWords [\"quirk\"]、referenceEn [\"My roommate has a strange quirk: he always arranges the food on his plate before he eats.\",\"One of my roommate's quirks is that he must line up the food on his plate before eating.\"]、rubricZh [\"「怪癖」用 quirk（例如 has a quirk、one of his quirks 等）\",\"「排整齊」可寫，例如 arranges、lines up 等\",\"「一定要」可寫，例如 always、must、has to 等\"]（原 makeSentence：instructionZh「用 quirk 造一個句子，說說你自己的一個小怪癖。」、referenceEn [\"One of my quirks is that I always sit in the same seat on the bus.\",\"I have a strange quirk: I can only sleep with socks on.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

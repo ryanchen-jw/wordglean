@@ -216,16 +216,19 @@
     },
     {
       "id": "c1-u17-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "suburbia",
-      "instructionZh": "用 suburbia 造一個句子，說說你對郊區生活的看法或經驗。",
+      "type": "translate",
+      "promptZh": "這部小說描寫郊區生活的寂寞。",
+      "hintWords": [
+        "suburbia"
+      ],
       "referenceEn": [
-        "I grew up in suburbia, so I love quiet streets and big gardens.",
-        "To me, life in suburbia seems peaceful but a little boring."
+        "This novel describes the loneliness of life in suburbia.",
+        "The novel is about how lonely life in suburbia can be."
       ],
       "rubricZh": [
-        "suburbia 是不可數名詞，表示「郊區（生活）」（例如 in suburbia、life in suburbia 等）",
-        "句子要說到你自己的看法或經驗"
+        "「郊區生活」用 suburbia，例如 life in suburbia 等",
+        "「描寫」可寫，例如 describes、is about、shows 等",
+        "「寂寞」可寫，例如 loneliness、how lonely… 等"
       ]
     }
   ],
@@ -305,6 +308,12 @@
         "message": "執行長最終複審修正：最終複審提醒 4：bedroom 譯「房間」",
         "resolution": "改譯「臥室」",
         "resolvedAt": "2026-10-02T22:11:36Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（suburbia）原位換成翻譯題，沿用題 id c1-u17-l02-q16；目標字沿用 suburbia",
+        "resolution": "改為 translate：promptZh「這部小說描寫郊區生活的寂寞。」、hintWords [\"suburbia\"]、referenceEn [\"This novel describes the loneliness of life in suburbia.\",\"The novel is about how lonely life in suburbia can be.\"]、rubricZh [\"「郊區生活」用 suburbia，例如 life in suburbia 等\",\"「描寫」可寫，例如 describes、is about、shows 等\",\"「寂寞」可寫，例如 loneliness、how lonely… 等\"]（原 makeSentence：instructionZh「用 suburbia 造一個句子，說說你對郊區生活的看法或經驗。」、referenceEn [\"I grew up in suburbia, so I love quiet streets and big gardens.\",\"To me, life in suburbia seems peaceful but a little boring.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

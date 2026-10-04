@@ -218,16 +218,19 @@
     },
     {
       "id": "c1-u37-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "fiddly",
-      "instructionZh": "用 fiddly 造一個句子，說說一件你覺得很繁瑣、需要手巧的事。",
+      "type": "translate",
+      "promptZh": "組裝這個模型很費工，因為有很多細小的零件。",
+      "hintWords": [
+        "fiddly"
+      ],
       "referenceEn": [
-        "I find threading a needle really fiddly.",
-        "Wrapping small gifts nicely is a fiddly job for me."
+        "Putting this model together is fiddly because it has lots of tiny parts.",
+        "This model is fiddly to build, with many small pieces."
       ],
       "rubricZh": [
-        "fiddly 是形容詞，可放 be 動詞或 find＋受詞後，也可放名詞前（例如 a fiddly job）",
-        "說的是自己覺得繁瑣的事，時態配合內容（例如 find、is）"
+        "「很費工」用 fiddly（例如 is fiddly、fiddly to build 等）",
+        "「組裝」可寫，例如 putting…together、build 等",
+        "「零件」可寫，例如 parts、pieces 等"
       ]
     }
   ],
@@ -277,6 +280,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"輪廓分明的\",\"繁瑣費工的\",\"不尖刻的\",\"花俏的\"]（原 [\"輪廓分明的\",\"繁瑣費工的\",\"不尖刻的\",\"鬆弛地\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（fiddly）原位換成翻譯題，沿用題 id c1-u37-l06-q16；目標字沿用 fiddly",
+        "resolution": "改為 translate：promptZh「組裝這個模型很費工，因為有很多細小的零件。」、hintWords [\"fiddly\"]、referenceEn [\"Putting this model together is fiddly because it has lots of tiny parts.\",\"This model is fiddly to build, with many small pieces.\"]、rubricZh [\"「很費工」用 fiddly（例如 is fiddly、fiddly to build 等）\",\"「組裝」可寫，例如 putting…together、build 等\",\"「零件」可寫，例如 parts、pieces 等\"]（原 makeSentence：instructionZh「用 fiddly 造一個句子，說說一件你覺得很繁瑣、需要手巧的事。」、referenceEn [\"I find threading a needle really fiddly.\",\"Wrapping small gifts nicely is a fiddly job for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

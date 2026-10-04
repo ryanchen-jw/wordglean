@@ -232,17 +232,18 @@
     },
     {
       "id": "c1-u08-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "elaborate",
-      "instructionZh": "用 elaborate 當形容詞造一個句子，說說你做過的一頓精心準備的餐或一個精心的計畫。",
+      "type": "translate",
+      "promptZh": "這位作家為她的小說設計了一個複雜的地下城市。",
+      "hintWords": [
+        "elaborate"
+      ],
       "referenceEn": [
-        "I once cooked an elaborate dinner for my parents' anniversary.",
-        "I made an elaborate plan for my first trip to Japan."
+        "The writer created an elaborate underground city for her novel.",
+        "For her novel, the writer designed an elaborate underground city."
       ],
       "rubricZh": [
-        "elaborate 當形容詞表示「精心的、精緻複雜的」（例如 an elaborate dinner 等）",
-        "句子要說到你自己",
-        "時態配合內容（例如 cooked、made 等）"
+        "「複雜的、精心的」用 elaborate（例如 an elaborate underground city 等）",
+        "「設計了」可寫，例如 created、designed、invented 等"
       ]
     }
   ],
@@ -298,6 +299,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：elaborate 當形容詞表示「精心的、精緻複雜的」（例如 an elaborate dinner 等）／時態配合內容（例如 cooked、made 等）",
         "resolvedAt": "2026-10-02T21:54:41Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（elaborate）原位換成翻譯題，沿用題 id c1-u08-l01-q17；目標字沿用 elaborate",
+        "resolution": "改為 translate：promptZh「這位作家為她的小說設計了一個複雜的地下城市。」、hintWords [\"elaborate\"]、referenceEn [\"The writer created an elaborate underground city for her novel.\",\"For her novel, the writer designed an elaborate city under the ground.\"]、rubricZh [\"「複雜的、精心的」用 elaborate（例如 an elaborate underground city 等）\",\"「設計了」可寫，例如 created、designed、invented 等\"]（原 makeSentence：instructionZh「用 elaborate 當形容詞造一個句子，說說你做過的一頓精心準備的餐或一個精心的計畫。」、referenceEn [\"I once cooked an elaborate dinner for my parents' anniversary.\",\"I made an elaborate plan for my first trip to Japan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：c1-u08-l01-q17 SUS 變體 2 an elaborate city under the ground 不道地",
+        "resolution": "改為 referenceEn [\"The writer created an elaborate underground city for her novel.\",\"For her novel, the writer designed an elaborate underground city.\"]（原 referenceEn [\"The writer created an elaborate underground city for her novel.\",\"For her novel, the writer designed an elaborate city under the ground.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

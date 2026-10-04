@@ -232,17 +232,19 @@
     },
     {
       "id": "c1-u39-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "impishly",
-      "instructionZh": "用 impishly 造一個句子，描述某個人或動物頑皮地做某件事。",
+      "type": "translate",
+      "promptZh": "那隻猴子頑皮地搶走了遊客手上的香蕉。",
+      "hintWords": [
+        "impishly"
+      ],
       "referenceEn": [
-        "My niece impishly hid my glasses in the fridge.",
-        "The kitten looked at me impishly before it pushed my cup off the table."
+        "The monkey impishly grabbed the banana from the tourist's hand.",
+        "The monkey impishly took a banana right out of the tourist's hand."
       ],
       "rubricZh": [
-        "impishly 是副詞，修飾動作（例如 impishly hid、looked at me impishly）",
-        "內容要說出頑皮的行為",
-        "時態配合內容（例如 hid、looked）"
+        "「頑皮地」用 impishly，位置有彈性",
+        "「搶走」可寫，例如 grabbed、took 等",
+        "說的是已發生的事，時態配合內容；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -370,6 +372,12 @@
         "message": "執行長最終複審修正：正解是殘句、其他選項是完整句，格式不一致成為猜題線索，改成完整句",
         "resolution": "改為 [\"It had a lot of sharp, narrow turns.\",\"It was flat and the same for hours.\",\"It was crowded with big, noisy trucks.\",\"It was closed for repairs all day.\"]（原 [\"It had a lot of sharp, narrow turns.\",\"Flat and the same for hours.\",\"It was crowded with big, noisy trucks.\",\"It was closed for repairs all day.\"]）",
         "resolvedAt": "2026-10-02T21:17:18Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（impishly）原位換成翻譯題，沿用題 id c1-u39-l06-q17；目標字沿用 impishly",
+        "resolution": "改為 translate：promptZh「那隻猴子頑皮地搶走了遊客手上的香蕉。」、hintWords [\"impishly\"]、referenceEn [\"The monkey impishly grabbed the banana from the tourist's hand.\",\"The monkey impishly took a banana right out of the tourist's hand.\"]、rubricZh [\"「頑皮地」用 impishly，位置有彈性\",\"「搶走」可寫，例如 grabbed、took 等\",\"說的是已發生的事，時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 impishly 造一個句子，描述某個人或動物頑皮地做某件事。」、referenceEn [\"My niece impishly hid my glasses in the fridge.\",\"The kitten looked at me impishly before it pushed my cup off the table.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

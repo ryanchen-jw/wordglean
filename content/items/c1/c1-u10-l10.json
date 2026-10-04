@@ -230,16 +230,19 @@
     },
     {
       "id": "c1-u10-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "tranquil",
-      "instructionZh": "用 tranquil 造一個句子，描述一個讓你覺得寧靜的地方。",
+      "type": "translate",
+      "promptZh": "這間寺廟位在山上，環境非常寧靜。",
+      "hintWords": [
+        "tranquil"
+      ],
       "referenceEn": [
-        "My favorite tranquil place is a small beach near my hometown.",
-        "I find the park near my office tranquil in the early morning."
+        "The temple sits on a hill, and its surroundings are very tranquil.",
+        "Located on a mountain, the temple has a very tranquil setting."
       ],
       "rubricZh": [
-        "tranquil 表示「寧靜的」，位置有彈性（例如 a tranquil place、find…tranquil 等）",
-        "句子要說到你自己"
+        "「寧靜」用 tranquil（例如 very tranquil、a tranquil setting 等）",
+        "「環境」可寫，例如 surroundings、setting 等",
+        "「山上」可寫，例如 on a hill、on a mountain 等"
       ]
     }
   ],
@@ -313,6 +316,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：tranquil 表示「寧靜的」，位置有彈性（例如 a tranquil place、find…tranquil 等）",
         "resolvedAt": "2026-10-02T21:55:02Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（tranquil）原位換成翻譯題，沿用題 id c1-u10-l10-q17；目標字沿用 tranquil",
+        "resolution": "改為 translate：promptZh「這間寺廟位在山上，環境非常寧靜。」、hintWords [\"tranquil\"]、referenceEn [\"The temple sits on a hill, and its surroundings are very tranquil.\",\"Located on a mountain, the temple has a very tranquil setting.\"]、rubricZh [\"「寧靜」用 tranquil（例如 very tranquil、a tranquil setting 等）\",\"「環境」可寫，例如 surroundings、setting 等\",\"「山上」可寫，例如 on a hill、on a mountain 等\"]（原 makeSentence：instructionZh「用 tranquil 造一個句子，描述一個讓你覺得寧靜的地方。」、referenceEn [\"My favorite tranquil place is a small beach near my hometown.\",\"I find the park near my office tranquil in the early morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

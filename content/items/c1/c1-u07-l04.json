@@ -215,16 +215,19 @@
     },
     {
       "id": "c1-u07-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "degrading",
-      "instructionZh": "用 degrading 造一個句子，說說你覺得哪種對待別人的方式很貶低人。",
+      "type": "translate",
+      "promptZh": "她覺得每次上廁所都得向主管報告，實在很有辱人格。",
+      "hintWords": [
+        "degrading"
+      ],
       "referenceEn": [
-        "I think it is degrading to make staff wait outside in the rain.",
-        "I find it degrading when people shout at waiters."
+        "She found it degrading to report every bathroom break to her manager.",
+        "Having to tell her manager about every bathroom break felt degrading to her."
       ],
       "rubricZh": [
-        "degrading 表示「有辱人格的、貶低人的」（例如 it is degrading to…、I find it degrading when… 等）",
-        "句子要說出你自己的看法"
+        "「有辱人格」用 degrading（例如 found it degrading、felt degrading 等）",
+        "「向主管報告」可寫，例如 report…to her manager、tell her manager about… 等",
+        "時態配合內容（例如 found、finds 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -292,6 +295,18 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：degrading 表示「有辱人格的、貶低人的」（例如 it is degrading to…、I find it degrading when… 等）",
         "resolvedAt": "2026-10-02T21:54:40Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（degrading）原位換成翻譯題，沿用題 id c1-u07-l04-q16；目標字沿用 degrading",
+        "resolution": "改為 translate：promptZh「那則廣告對女性的描繪帶有貶低意味，引起許多抱怨。」、hintWords [\"degrading\"]、referenceEn [\"The advertisement's degrading picture of women caused many complaints.\",\"Many people complained that the advertisement was degrading to women.\"]、rubricZh [\"「帶有貶低意味」用 degrading（例如 a degrading picture、degrading to women 等）\",\"「引起許多抱怨」可寫，例如 caused many complaints、many people complained 等\"]（原 makeSentence：instructionZh「用 degrading 造一個句子，說說你覺得哪種對待別人的方式很貶低人。」、referenceEn [\"I think it is degrading to make staff wait outside in the rain.\",\"I find it degrading when people shout at waiters.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：c1-u07-l04-q16 SUS 題材碰到性別刻板印象（§12.9），換中性情境；審查建議句「在大家面前被罵」與同課跟讀 q11 Being shouted at in front of colleagues is degrading. 幾乎同句（§11.4），改用另一情境",
+        "resolution": "改為 promptZh \"她覺得每次上廁所都得向主管報告，實在很有辱人格。\"、referenceEn [\"She found it degrading to report every bathroom break to her manager.\",\"Having to tell her manager about every bathroom break felt degrading to her.\"]、rubricZh [\"「有辱人格」用 degrading（例如 found it degrading、felt degrading 等）\",\"「向主管報告」可寫，例如 report…to her manager、tell her manager about… 等\",\"時態配合內容（例如 found、finds 等）；過去式、現在完成式都正確\"]（原 promptZh \"那則廣告對女性的描繪帶有貶低意味，引起許多抱怨。\"、referenceEn [\"The advertisement's degrading picture of women caused many complaints.\",\"Many people complained that the advertisement was degrading to women.\"]、rubricZh [\"「帶有貶低意味」用 degrading（例如 a degrading picture、degrading to women 等）\",\"「引起許多抱怨」可寫，例如 caused many complaints、many people complained 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

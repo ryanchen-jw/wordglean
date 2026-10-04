@@ -230,16 +230,19 @@
     },
     {
       "id": "c1-u08-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "mythological",
-      "instructionZh": "用 mythological 造一個句子，說說你知道或喜歡的某個神話人物或生物。",
+      "type": "translate",
+      "promptZh": "這部電影的主角是一隻神話中的巨鳥。",
+      "hintWords": [
+        "mythological"
+      ],
       "referenceEn": [
-        "My favorite mythological creature is a horse with wings.",
-        "I enjoy reading about mythological heroes from Greece."
+        "The hero of this film is a giant mythological bird.",
+        "The main character in this movie is a huge mythological bird."
       ],
       "rubricZh": [
-        "mythological 是形容詞，表示「神話的」（例如 a mythological creature、mythological stories 等）",
-        "句子要說到你自己的喜好或認識"
+        "「神話中的」用 mythological（例如 a mythological bird 等）",
+        "「主角」可寫，例如 hero、main character 等",
+        "「巨」可寫，例如 giant、huge 等"
       ]
     }
   ],
@@ -301,6 +304,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：mythological 是形容詞，表示「神話的」（例如 a mythological creature、mythological stories 等）",
         "resolvedAt": "2026-10-02T21:54:45Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mythological）原位換成翻譯題，沿用題 id c1-u08-l04-q17；目標字沿用 mythological",
+        "resolution": "改為 translate：promptZh「這部電影的主角是一隻神話中的巨鳥。」、hintWords [\"mythological\"]、referenceEn [\"The hero of this film is a giant mythological bird.\",\"The main character in this movie is a huge mythological bird.\"]、rubricZh [\"「神話中的」用 mythological（例如 a mythological bird 等）\",\"「主角」可寫，例如 hero、main character 等\",\"「巨」可寫，例如 giant、huge 等\"]（原 makeSentence：instructionZh「用 mythological 造一個句子，說說你知道或喜歡的某個神話人物或生物。」、referenceEn [\"My favorite mythological creature is a horse with wings.\",\"I enjoy reading about mythological heroes from Greece.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

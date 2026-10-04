@@ -229,16 +229,19 @@
     },
     {
       "id": "c1-u18-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "pinnacle",
-      "instructionZh": "用 pinnacle 造一個句子，說說你人生或工作中的一個巔峰時刻。",
+      "type": "translate",
+      "promptZh": "這座城市在十九世紀達到繁榮的頂點。",
+      "hintWords": [
+        "pinnacle"
+      ],
       "referenceEn": [
-        "Finishing my first marathon was the pinnacle of my sporting life.",
-        "For me, the pinnacle of my career was leading a team of twenty people."
+        "The city reached the pinnacle of its success in the nineteenth century.",
+        "In the nineteenth century, the city was at the pinnacle of its wealth."
       ],
       "rubricZh": [
-        "pinnacle 可比喻「巔峰、頂點」，用法例如 the pinnacle of my career、reach the pinnacle 等",
-        "句子要說到你自己"
+        "「頂點」用 pinnacle（例如 the pinnacle of its success 等）",
+        "「繁榮」可寫，例如 success、wealth、power 等",
+        "說的是過去的事，用過去式（例如 reached、was 等）"
       ]
     }
   ],
@@ -282,6 +285,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：pinnacle 可比喻「巔峰、頂點」，用法例如 the pinnacle of my career、reach the pinnacle 等／句子要說到你自己",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pinnacle）原位換成翻譯題，沿用題 id c1-u18-l02-q17；目標字沿用 pinnacle",
+        "resolution": "改為 translate：promptZh「這座城市在十九世紀達到繁榮的頂點。」、hintWords [\"pinnacle\"]、referenceEn [\"The city reached the pinnacle of its success in the nineteenth century.\",\"In the nineteenth century, the city was at the pinnacle of its wealth.\"]、rubricZh [\"「頂點」用 pinnacle（例如 the pinnacle of its success 等）\",\"「繁榮」可寫，例如 success、wealth、power 等\",\"說的是過去的事，用過去式（例如 reached、was 等）\"]（原 makeSentence：instructionZh「用 pinnacle 造一個句子，說說你人生或工作中的一個巔峰時刻。」、referenceEn [\"Finishing my first marathon was the pinnacle of my sporting life.\",\"For me, the pinnacle of my career was leading a team of twenty people.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

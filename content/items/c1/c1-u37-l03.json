@@ -231,17 +231,18 @@
     },
     {
       "id": "c1-u37-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "blankness",
-      "instructionZh": "用 blankness 造一個句子，描述一片空白，或你腦中一片空白的感覺。",
+      "type": "translate",
+      "promptZh": "聽到這個消息後，他的臉上只剩一片茫然。",
+      "hintWords": [
+        "blankness"
+      ],
       "referenceEn": [
-        "During the exam, a sudden blankness filled my mind.",
-        "I stared at the blankness of the empty page for an hour."
+        "After he heard the news, his face showed nothing but blankness.",
+        "When he heard the news, a blankness came over his face."
       ],
       "rubricZh": [
-        "blankness 是名詞，表示「空白、茫然」（例如 a sudden blankness、the blankness of the page 等）",
-        "時態配合內容（例如 felt、stared、feel）",
-        "可描述空白的事物或自己腦中的空白（例如 the blankness of the page、a sudden blankness）"
+        "「茫然」用名詞 blankness（例如 nothing but blankness、a blankness came over his face 等）",
+        "說的是已發生的事，時態配合內容（例如 heard、showed 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -309,6 +310,12 @@
         "message": "執行長第②③關裁示修正：同步",
         "resolution": "改為 [\"Make coffee for the staff.\",\"Clean the office floor without help.\",\"Open the front door.\",\"Answer the phone calls.\"]（原 [\"She helped her dad cook.\",\"She finished a puzzle without any help.\",\"She read a short story.\",\"She drew a picture of a cat.\"]）",
         "resolvedAt": "2026-10-02T20:54:05Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（blankness）原位換成翻譯題，沿用題 id c1-u37-l03-q17；目標字沿用 blankness",
+        "resolution": "改為 translate：promptZh「聽到這個消息後，他的臉上只剩一片茫然。」、hintWords [\"blankness\"]、referenceEn [\"After he heard the news, his face showed nothing but blankness.\",\"When he heard the news, a blankness came over his face.\"]、rubricZh [\"「茫然」用名詞 blankness（例如 nothing but blankness、a blankness came over his face 等）\",\"說的是已發生的事，時態配合內容（例如 heard、showed 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 blankness 造一個句子，描述一片空白，或你腦中一片空白的感覺。」、referenceEn [\"During the exam, a sudden blankness filled my mind.\",\"I stared at the blankness of the empty page for an hour.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

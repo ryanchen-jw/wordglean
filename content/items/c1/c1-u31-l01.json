@@ -216,16 +216,19 @@
     },
     {
       "id": "c1-u31-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "remedial",
-      "instructionZh": "用 remedial 造一個句子，說說你或朋友上過的補救課程。",
+      "type": "translate",
+      "promptZh": "這家公司採取了補救措施，修正帳單上的錯誤。",
+      "hintWords": [
+        "remedial"
+      ],
       "referenceEn": [
-        "I took a remedial writing course when I started college.",
-        "My friend needed remedial help with her writing."
+        "The company took remedial action to correct the mistakes on the bills.",
+        "The company took remedial steps to fix the errors in the bills."
       ],
       "rubricZh": [
-        "remedial 是形容詞，表示「補救的」（例如 remedial classes、remedial help 等）",
-        "句子要說到你或朋友的經驗"
+        "「補救措施」用 remedial，例如 remedial action、remedial steps、remedial measures 等",
+        "「修正」可寫，例如 correct、fix 等",
+        "說的是已發生的事，時態配合內容（例如 took 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -299,6 +302,12 @@
         "message": "執行長最終複審修正：最終複審 9：翻譯參考答案與 psychiatrist 卡都是「某人的職業是精神科醫師」；評分要點例子與參考答案對不上",
         "resolution": "翻譯改「那位精神科醫師寫了一本給青少年看的小說」，參考答案與評分要點同步",
         "resolvedAt": "2026-10-02T22:11:54Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（remedial）原位換成翻譯題，沿用題 id c1-u31-l01-q16；目標字沿用 remedial",
+        "resolution": "改為 translate：promptZh「這家公司採取了補救措施，修正帳單上的錯誤。」、hintWords [\"remedial\"]、referenceEn [\"The company took remedial action to correct the mistakes on the bills.\",\"The company took remedial steps to fix the errors in the bills.\"]、rubricZh [\"「補救措施」用 remedial，例如 remedial action、remedial steps、remedial measures 等\",\"「修正」可寫，例如 correct、fix 等\",\"說的是已發生的事，時態配合內容（例如 took 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 remedial 造一個句子，說說你或朋友上過的補救課程。」、referenceEn [\"I took a remedial writing course when I started college.\",\"My friend needed remedial help with her writing.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

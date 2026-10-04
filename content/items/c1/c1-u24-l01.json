@@ -244,16 +244,18 @@
     },
     {
       "id": "c1-u24-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "apprentice",
-      "instructionZh": "用 apprentice 造一個句子，說說你想跟誰學一門手藝。",
+      "type": "translate",
+      "promptZh": "他十六歲時跟著一位木匠當學徒。",
+      "hintWords": [
+        "apprentice"
+      ],
       "referenceEn": [
-        "I would like to be an apprentice to a famous chef.",
-        "If I could, I would work as an apprentice in a bike shop."
+        "At sixteen, he became an apprentice to a carpenter.",
+        "When he was sixteen, he worked as an apprentice to a carpenter."
       ],
       "rubricZh": [
-        "apprentice 是名詞，表示「學徒」（例如 be an apprentice to…、work as an apprentice 等）",
-        "句子要說到你自己的想法"
+        "「當學徒」用 apprentice（例如 became an apprentice to、worked as an apprentice to 等）",
+        "「十六歲時」可寫，例如 at sixteen、when he was sixteen 等"
       ]
     }
   ],
@@ -315,6 +317,12 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：occupational 是形容詞，表示「職業的、職業上的」（例如 occupational risks、occupational safety 等）／「噪音」可寫，例如 noise、loud noise 等／「職業風險」可寫，例如 occupational risk、occupational hazard 等",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（apprentice）原位換成翻譯題，沿用題 id c1-u24-l01-q18；目標字沿用 apprentice",
+        "resolution": "改為 translate：promptZh「他十六歲時跟著一位木匠當學徒。」、hintWords [\"apprentice\"]、referenceEn [\"At sixteen, he became an apprentice to a carpenter.\",\"When he was sixteen, he worked as an apprentice to a carpenter.\"]、rubricZh [\"「當學徒」用 apprentice（例如 became an apprentice to、worked as an apprentice to 等）\",\"「十六歲時」可寫，例如 at sixteen、when he was sixteen 等\"]（原 makeSentence：instructionZh「用 apprentice 造一個句子，說說你想跟誰學一門手藝。」、referenceEn [\"I would like to be an apprentice to a famous chef.\",\"If I could, I would work as an apprentice in a bike shop.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

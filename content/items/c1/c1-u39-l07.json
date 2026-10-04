@@ -216,17 +216,19 @@
     },
     {
       "id": "c1-u39-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "gruelling",
-      "instructionZh": "用 gruelling 造一個句子，描述一次讓你非常累的經驗。",
+      "type": "translate",
+      "promptZh": "這場越野賽跑全程四十公里，非常累人。",
+      "hintWords": [
+        "gruelling"
+      ],
       "referenceEn": [
-        "I had a gruelling day of exams and went to bed at eight.",
-        "Moving house in the summer heat was gruelling for me."
+        "The forty-kilometer cross-country race is extremely gruelling.",
+        "The cross-country race covers forty kilometers and is really gruelling."
       ],
       "rubricZh": [
-        "gruelling 是形容詞，例如放名詞前（a gruelling day）、be 動詞後（was gruelling）等；美式拼法 grueling 也正確",
-        "說的是自己的經驗，時態配合內容（例如 had、was）",
-        "內容和自己有關（例如 I、for me）"
+        "「非常累人」用 gruelling（例如 extremely gruelling 等；拼成 grueling 也正確）",
+        "「越野賽跑」可寫，例如 cross-country race 等",
+        "「全程四十公里」可寫，例如 forty-kilometer、covers forty kilometers 等"
       ]
     }
   ],
@@ -306,6 +308,12 @@
         "message": "執行長裁示修正（3-C 第 17 條：同單元不同課不重複同一情境）：中譯同步",
         "resolution": "改為 長長的隊伍慢吞吞地朝售票處移動。（原 吃完豐盛的午餐後，整間辦公室的人都懶洋洋地工作到三點。）",
         "resolvedAt": "2026-10-02T20:59:24Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（gruelling）原位換成翻譯題，沿用題 id c1-u39-l07-q16；目標字沿用 gruelling",
+        "resolution": "改為 translate：promptZh「這場越野賽跑全程四十公里，非常累人。」、hintWords [\"gruelling\"]、referenceEn [\"The forty-kilometer cross-country race is extremely gruelling.\",\"The cross-country race covers forty kilometers and is really gruelling.\"]、rubricZh [\"「非常累人」用 gruelling（例如 extremely gruelling 等；拼成 grueling 也正確）\",\"「越野賽跑」可寫，例如 cross-country race 等\",\"「全程四十公里」可寫，例如 forty-kilometer、covers forty kilometers 等\"]（原 makeSentence：instructionZh「用 gruelling 造一個句子，描述一次讓你非常累的經驗。」、referenceEn [\"I had a gruelling day of exams and went to bed at eight.\",\"Moving house in the summer heat was gruelling for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

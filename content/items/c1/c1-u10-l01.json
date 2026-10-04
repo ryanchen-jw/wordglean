@@ -231,17 +231,18 @@
     },
     {
       "id": "c1-u10-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "complimentary",
-      "instructionZh": "用 complimentary 造一個句子，說說你得到過的免費招待或別人給你的讚美。",
+      "type": "translate",
+      "promptZh": "這家航空公司提供乘客免費的耳機。",
+      "hintWords": [
+        "complimentary"
+      ],
       "referenceEn": [
-        "The hotel gave me a complimentary breakfast on my birthday.",
-        "My boss made some complimentary remarks about my report."
+        "This airline offers passengers complimentary headphones.",
+        "The airline gives its passengers complimentary headphones."
       ],
       "rubricZh": [
-        "complimentary 可表示「免費贈送的」或「讚美的」（例如 a complimentary breakfast 等）",
-        "句子要說到你自己的經驗",
-        "時態配合內容（例如 gave、made 等）"
+        "「免費的」用 complimentary（例如 complimentary headphones 等）",
+        "「提供」可寫，例如 offers、gives、provides 等"
       ]
     }
   ],
@@ -303,6 +304,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：complimentary 可表示「免費贈送的」或「讚美的」（例如 a complimentary breakfast 等）／時態配合內容（例如 gave、made 等）",
         "resolvedAt": "2026-10-02T21:54:50Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（complimentary）原位換成翻譯題，沿用題 id c1-u10-l01-q17；目標字沿用 complimentary",
+        "resolution": "改為 translate：promptZh「這家航空公司提供乘客免費的耳機。」、hintWords [\"complimentary\"]、referenceEn [\"This airline offers passengers complimentary headphones.\",\"The airline gives its passengers complimentary headphones.\"]、rubricZh [\"「免費的」用 complimentary（例如 complimentary headphones 等）\",\"「提供」可寫，例如 offers、gives、provides 等\"]（原 makeSentence：instructionZh「用 complimentary 造一個句子，說說你得到過的免費招待或別人給你的讚美。」、referenceEn [\"The hotel gave me a complimentary breakfast on my birthday.\",\"My boss made some complimentary remarks about my report.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

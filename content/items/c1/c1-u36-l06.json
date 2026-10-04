@@ -216,17 +216,19 @@
     },
     {
       "id": "c1-u36-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "gushing",
-      "instructionZh": "用 gushing 造一個句子，描述水流湧出的樣子，或某人過分熱情的言語。",
+      "type": "translate",
+      "promptZh": "她站在瀑布前，看著湧出的水。",
+      "hintWords": [
+        "gushing"
+      ],
       "referenceEn": [
-        "The gushing river was too dangerous to cross after the storm.",
-        "I could hear gushing water from the broken pipe upstairs."
+        "She stood by the waterfall, watching the gushing water.",
+        "She stood in front of the waterfall and watched the gushing water."
       ],
       "rubricZh": [
-        "gushing 可放名詞前（例如 gushing water），也可用進行式等（例如 water was gushing from…）",
-        "可指水流湧出，也可指過分熱情的言語（例如 gushing praise）",
-        "時態配合內容（例如 was、could hear）"
+        "「湧出的」用 gushing（例如 the gushing water 等）",
+        "「站在瀑布前」可寫，例如 stood by the waterfall、stood in front of the waterfall 等",
+        "時態配合內容（例如 stood、watched 等）；過去式、現在完成式都正確"
       ]
     }
   ],
@@ -282,6 +284,18 @@
         "message": "執行長第②③關裁示修正：第②關：評分要點過嚴（只收名詞前用法）",
         "resolution": "改為 gushing 可放名詞前（例如 gushing water），也可用進行式等（例如 water was gushing from…）（原 gushing 是形容詞，放在名詞前（例如 gushing water、a gushing river））",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（gushing）原位換成翻譯題，沿用題 id c1-u36-l06-q16；目標字沿用 gushing",
+        "resolution": "改為 translate：promptZh「水管破了，湧出的水淹沒了整個地下室。」、hintWords [\"gushing\"]、referenceEn [\"A pipe broke, and the gushing water flooded the whole basement.\",\"The gushing water from the broken pipe flooded the entire basement.\"]、rubricZh [\"「湧出的」用 gushing（例如 the gushing water 等）\",\"「淹沒」可寫，例如 flooded、filled 等\",\"說的是已發生的事，時態配合內容（例如 broke、flooded 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 gushing 造一個句子，描述水流湧出的樣子，或某人過分熱情的言語。」、referenceEn [\"The gushing river was too dangerous to cross after the storm.\",\"I could hear gushing water from the broken pipe upstairs.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：c1-u36-l06-q16 SUS 居家淹水接近災難題材（§12.9），換中性情境",
+        "resolution": "改為 promptZh \"她站在瀑布前，看著湧出的水。\"、referenceEn [\"She stood by the waterfall, watching the gushing water.\",\"She stood in front of the waterfall and watched the gushing water.\"]、rubricZh [\"「湧出的」用 gushing（例如 the gushing water 等）\",\"「站在瀑布前」可寫，例如 stood by the waterfall、stood in front of the waterfall 等\",\"時態配合內容（例如 stood、watched 等）；過去式、現在完成式都正確\"]（原 promptZh \"水管破了，湧出的水淹沒了整個地下室。\"、referenceEn [\"A pipe broke, and the gushing water flooded the whole basement.\",\"The gushing water from the broken pipe flooded the entire basement.\"]、rubricZh [\"「湧出的」用 gushing（例如 the gushing water 等）\",\"「淹沒」可寫，例如 flooded、filled 等\",\"說的是已發生的事，時態配合內容（例如 broke、flooded 等）；過去式、現在完成式都正確\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

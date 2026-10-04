@@ -231,16 +231,19 @@
     },
     {
       "id": "c1-u04-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "oddity",
-      "instructionZh": "用 oddity 造一個句子，說說你身邊某個奇特的人或東西。",
+      "type": "translate",
+      "promptZh": "這間博物館收藏了許多來自世界各地的奇特物品。",
+      "hintWords": [
+        "oddity"
+      ],
       "referenceEn": [
-        "I own an oddity: a clock that runs backwards.",
-        "My uncle is a bit of an oddity in our family because he never uses a phone."
+        "This museum has a collection of oddities from around the world.",
+        "The museum holds many oddities from all over the world."
       ],
       "rubricZh": [
-        "oddity 表示「怪事、古怪的人或物」（例如 an oddity、a bit of an oddity 等）",
-        "句子要說到你身邊的人或東西"
+        "「奇特物品」用 oddity 的複數 oddities（例如 a collection of oddities 等）",
+        "「收藏了」可寫，例如 has a collection of、holds、keeps 等",
+        "「世界各地」可寫，例如 around the world、all over the world 等"
       ]
     }
   ],
@@ -290,6 +293,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：oddity 表示「怪事、古怪的人或物」（例如 an oddity、a bit of an oddity 等）",
         "resolvedAt": "2026-10-02T21:54:20Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（oddity）原位換成翻譯題，沿用題 id c1-u04-l06-q17；目標字沿用 oddity",
+        "resolution": "改為 translate：promptZh「這間博物館收藏了許多來自世界各地的奇特物品。」、hintWords [\"oddity\"]、referenceEn [\"This museum has a collection of oddities from around the world.\",\"The museum holds many oddities from all over the world.\"]、rubricZh [\"「奇特物品」用 oddity 的複數 oddities（例如 a collection of oddities 等）\",\"「收藏了」可寫，例如 has a collection of、holds、keeps 等\",\"「世界各地」可寫，例如 around the world、all over the world 等\"]（原 makeSentence：instructionZh「用 oddity 造一個句子，說說你身邊某個奇特的人或東西。」、referenceEn [\"I own an oddity: a clock that runs backwards.\",\"My uncle is a bit of an oddity in our family because he never uses a phone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -232,17 +232,18 @@
     },
     {
       "id": "c1-u03-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "mingle",
-      "instructionZh": "用 mingle 造一個句子，說說你在聚會或活動中和別人交流的情形。",
+      "type": "translate",
+      "promptZh": "在這部電影裡，真實的歷史和虛構的故事混合在一起。",
+      "hintWords": [
+        "mingle"
+      ],
       "referenceEn": [
-        "At the wedding, I mingled with guests I had never met before.",
-        "I usually mingle with my colleagues at the company dinner."
+        "In this film, real history mingles with fiction.",
+        "This film mingles real history with invented stories."
       ],
       "rubricZh": [
-        "mingle with＋人表示「（在社交場合）和⋯交流、打成一片」（例如 mingled with the guests 等）",
-        "句子說的是你自己",
-        "時態配合內容（例如 mingled、mingle 等）"
+        "「混合」用 mingle（例如 history mingles with fiction、mingles A with B 等）",
+        "「虛構的故事」可寫，例如 fiction、invented stories 等"
       ]
     }
   ],
@@ -310,6 +311,12 @@
         "message": "執行長 c1b2 裁示修正：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長 c1b2 裁示（第 1 批一併改）統一改成「例如…等」或「X 的用法，例如…等」：mingle with＋人表示「（在社交場合）和⋯交流、打成一片」（例如 mingled with the guests 等）／時態配合內容（例如 mingled、mingle 等）",
         "resolvedAt": "2026-10-02T21:54:13Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（mingle）原位換成翻譯題，沿用題 id c1-u03-l06-q17；目標字沿用 mingle",
+        "resolution": "改為 translate：promptZh「在這部電影裡，真實的歷史和虛構的故事混合在一起。」、hintWords [\"mingle\"]、referenceEn [\"In this film, real history mingles with fiction.\",\"This film mingles real history with invented stories.\"]、rubricZh [\"「混合」用 mingle（例如 history mingles with fiction、mingles A with B 等）\",\"「虛構的故事」可寫，例如 fiction、invented stories 等\"]（原 makeSentence：instructionZh「用 mingle 造一個句子，說說你在聚會或活動中和別人交流的情形。」、referenceEn [\"At the wedding, I mingled with guests I had never met before.\",\"I usually mingle with my colleagues at the company dinner.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

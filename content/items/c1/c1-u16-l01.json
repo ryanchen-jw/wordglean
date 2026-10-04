@@ -218,16 +218,19 @@
     },
     {
       "id": "c1-u16-l01-q16",
-      "type": "makeSentence",
-      "targetWord": "stamina",
-      "instructionZh": "用 stamina 造一個句子，說說你在某件事上的耐力。",
+      "type": "translate",
+      "promptZh": "我同事一天連續教了六堂課，她的體力真好。",
+      "hintWords": [
+        "stamina"
+      ],
       "referenceEn": [
-        "I don't have the stamina to hike for more than three hours.",
-        "Swimming every week has given me more stamina."
+        "My colleague taught six classes in a row; she really has a lot of stamina.",
+        "My colleague has great stamina: she taught six lessons in a row."
       ],
       "rubricZh": [
-        "stamina 表示「耐力、體力」，是不可數名詞（例如 the stamina to…、more stamina 等）",
-        "句子要說到你自己"
+        "「體力」用 stamina（例如 has great stamina、a lot of stamina 等）",
+        "「連續」可寫，例如 in a row、one after another 等",
+        "「堂課」可寫，例如 classes、lessons 等"
       ]
     }
   ],
@@ -271,6 +274,18 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：stamina 表示「耐力、體力」，是不可數名詞（例如 the stamina to…、more stamina 等）／句子要說到你自己",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（stamina）原位換成翻譯題，沿用題 id c1-u16-l01-q16；目標字沿用 stamina",
+        "resolution": "改為 translate：promptZh「我同事連續上了六堂課，她的體力真好。」、hintWords [\"stamina\"]、referenceEn [\"My colleague taught six classes in a row; she really has a lot of stamina.\",\"My colleague has great stamina: she taught six lessons in a row.\"]、rubricZh [\"「體力」用 stamina（例如 has great stamina、a lot of stamina 等）\",\"「連續」可寫，例如 in a row、one after another 等\",\"「堂課」可寫，例如 classes、lessons 等\"]（原 makeSentence：instructionZh「用 stamina 造一個句子，說說你在某件事上的耐力。」、referenceEn [\"I don't have the stamina to hike for more than three hours.\",\"Swimming every week has given me more stamina.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：c1-u16-l01-q16 FIX 「上了六堂課」可讀成教課或去上課（§12.8），題目改「教了」",
+        "resolution": "改為 promptZh \"我同事一天連續教了六堂課，她的體力真好。\"（原 promptZh \"我同事連續上了六堂課，她的體力真好。\"）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -202,16 +202,19 @@
     },
     {
       "id": "c1-u28-l01-q15",
-      "type": "makeSentence",
-      "targetWord": "tastebud",
-      "instructionZh": "用 tastebud（可用複數 tastebuds）造一個句子，說說一種讓你味蕾很開心的食物。",
+      "type": "translate",
+      "promptZh": "這位廚師的料理總是能給客人的味蕾帶來驚喜。",
+      "hintWords": [
+        "tastebud"
+      ],
       "referenceEn": [
-        "Fresh mango always makes my tastebuds happy.",
-        "My tastebuds love anything with lemon in it."
+        "This chef's dishes always give the guests' tastebuds a pleasant surprise.",
+        "The chef's cooking never fails to surprise the guests' tastebuds."
       ],
       "rubricZh": [
-        "tastebud 是可數名詞，表示「味蕾」（例如 my tastebuds、the tastebuds 等）",
-        "句子要說到你自己喜歡的食物"
+        "「味蕾」用 tastebuds（例如 the guests' tastebuds 等；寫成 taste buds 也正確）",
+        "「帶來驚喜」可寫，例如 give…a pleasant surprise、surprise 等",
+        "「料理」可寫，例如 dishes、cooking、food 等"
       ]
     }
   ],
@@ -273,6 +276,18 @@
         "message": "執行長第②③關裁示修正：第③關：評分要點有「可寫 X 等」沒有「例如」、「常用 X」或寫死位置、時態（§11.23）",
         "resolution": "依執行長裁示統一改成「例如…等」或「X 的用法，例如…等」：tastebud 是可數名詞，表示「味蕾」（例如 my tastebuds、the tastebuds 等）／句子要說到你自己喜歡的食物",
         "resolvedAt": "2026-10-02T21:45:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "創辦人裁示：造句改翻譯：造句題（tastebud）原位換成翻譯題，沿用題 id c1-u28-l01-q15；目標字沿用 tastebud",
+        "resolution": "改為 translate：promptZh「這位廚師的料理總是能給客人的味蕾帶來驚喜。」、hintWords [\"tastebud\"]、referenceEn [\"This chef's dishes always bring surprises to the guests' tastebuds.\",\"The chef's cooking never fails to surprise the guests' tastebuds.\"]、rubricZh [\"「味蕾」用 tastebuds（例如 the guests' tastebuds 等；寫成 taste buds 也正確）\",\"「帶來驚喜」可寫，例如 bring surprises to、surprise 等\",\"「料理」可寫，例如 dishes、cooking、food 等\"]（原 makeSentence：instructionZh「用 tastebud（可用複數 tastebuds）造一個句子，說說一種讓你味蕾很開心的食物。」、referenceEn [\"Fresh mango always makes my tastebuds happy.\",\"My tastebuds love anything with lemon in it.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "執行長裁示：第③關：c1-u28-l01-q15 SUS 變體 1 bring surprises to the guests' tastebuds 不道地",
+        "resolution": "改為 referenceEn [\"This chef's dishes always give the guests' tastebuds a pleasant surprise.\",\"The chef's cooking never fails to surprise the guests' tastebuds.\"]、rubricZh [\"「味蕾」用 tastebuds（例如 the guests' tastebuds 等；寫成 taste buds 也正確）\",\"「帶來驚喜」可寫，例如 give…a pleasant surprise、surprise 等\",\"「料理」可寫，例如 dishes、cooking、food 等\"]（原 referenceEn [\"This chef's dishes always bring surprises to the guests' tastebuds.\",\"The chef's cooking never fails to surprise the guests' tastebuds.\"]、rubricZh [\"「味蕾」用 tastebuds（例如 the guests' tastebuds 等；寫成 taste buds 也正確）\",\"「帶來驚喜」可寫，例如 bring surprises to、surprise 等\",\"「料理」可寫，例如 dishes、cooking、food 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

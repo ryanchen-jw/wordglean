@@ -231,17 +231,19 @@
     },
     {
       "id": "c1-u36-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "stray",
-      "instructionZh": "用 stray 造一個句子，說說你做事或說話時偏離原本方向的經驗。",
+      "type": "translate",
+      "promptZh": "健行時千萬不要偏離步道。",
+      "hintWords": [
+        "stray"
+      ],
       "referenceEn": [
-        "I sometimes stray from my shopping list when I see something on sale.",
-        "During the hike, I strayed from the path and got lost for a while."
+        "When you go hiking, never stray from the trail.",
+        "Don't stray from the path when you are hiking."
       ],
       "rubricZh": [
-        "stray 當動詞表示「偏離、走離」，常接 from（例如 stray from the path、stray from my list 等）",
-        "時態配合內容（例如 stray、strayed）",
-        "主詞是自己（I）"
+        "「偏離」用 stray from（例如 stray from the trail 等）",
+        "「千萬不要」可寫，例如 never、don't 等",
+        "「步道」可寫，例如 trail、path 等"
       ]
     }
   ],
@@ -279,6 +281,12 @@
         "message": "執行長第②③關裁示修正：選項釋義同步",
         "resolution": "改為 [\"擦亮\",\"搶救\",\"躲避\",\"咬緊\"]（原 [\"使麻木\",\"搶救\",\"躲避\",\"咬緊\"]）",
         "resolvedAt": "2026-10-02T20:50:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stray）原位換成翻譯題，沿用題 id c1-u36-l01-q17；目標字沿用 stray",
+        "resolution": "改為 translate：promptZh「健行時千萬不要偏離步道。」、hintWords [\"stray\"]、referenceEn [\"When you go hiking, never stray from the trail.\",\"Don't stray from the path when you are hiking.\"]、rubricZh [\"「偏離」用 stray from（例如 stray from the trail 等）\",\"「千萬不要」可寫，例如 never、don't 等\",\"「步道」可寫，例如 trail、path 等\"]（原 makeSentence：instructionZh「用 stray 造一個句子，說說你做事或說話時偏離原本方向的經驗。」、referenceEn [\"I sometimes stray from my shopping list when I see something on sale.\",\"During the hike, I strayed from the path and got lost for a while.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -254,16 +254,18 @@
     },
     {
       "id": "c1-u32-l01-q19",
-      "type": "makeSentence",
-      "targetWord": "refurbish",
-      "instructionZh": "用 refurbish 造一個句子，說說你希望整修家裡或學校的哪個地方。",
+      "type": "translate",
+      "promptZh": "這家店把舊手機翻新後再便宜賣出。",
+      "hintWords": [
+        "refurbish"
+      ],
       "referenceEn": [
-        "I would like to refurbish my bedroom with brighter colors.",
-        "I think our school should refurbish the old gym."
+        "This shop refurbishes old phones and sells them at low prices.",
+        "The shop refurbishes used phones and then sells them for less."
       ],
       "rubricZh": [
-        "refurbish 是及物動詞，表示「翻新、整修」（例如 refurbish a room 等）",
-        "句子要說到你自己的想法"
+        "「翻新」用 refurbish（例如 refurbishes old phones 等）",
+        "「便宜賣出」可寫，例如 sells them at low prices、sells them for less 等"
       ]
     }
   ],
@@ -313,6 +315,12 @@
         "message": "執行長第②③關裁示修正：干擾項 screenplay／tastebud／blockbuster 與「天花板漏水，請人檢查___」語意完全無關，一眼排除（§11-26）。",
         "resolution": "干擾項換成居家與外表單元的已教名詞 bouquet、flask、utensil，只看英文時代入 check the ____ 都不通",
         "resolvedAt": "2026-10-02T21:55:21Z"
+      },
+      {
+        "path": "items/18",
+        "message": "創辦人裁示：造句改翻譯：造句題（refurbish）原位換成翻譯題，沿用題 id c1-u32-l01-q19；目標字沿用 refurbish",
+        "resolution": "改為 translate：promptZh「這家店把舊手機翻新後再便宜賣出。」、hintWords [\"refurbish\"]、referenceEn [\"This shop refurbishes old phones and sells them at low prices.\",\"The shop refurbishes used phones and then sells them for less.\"]、rubricZh [\"「翻新」用 refurbish（例如 refurbishes old phones 等）\",\"「便宜賣出」可寫，例如 sells them at low prices、sells them for less 等\"]（原 makeSentence：instructionZh「用 refurbish 造一個句子，說說你希望整修家裡或學校的哪個地方。」、referenceEn [\"I would like to refurbish my bedroom with brighter colors.\",\"I think our school should refurbish the old gym.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }
