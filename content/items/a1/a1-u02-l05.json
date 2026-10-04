@@ -237,16 +237,18 @@
     },
     {
       "id": "a1-u02-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "hometown",
-      "instructionZh": "用 hometown 造一個句子，說說你的家鄉。",
+      "type": "translate",
+      "promptZh": "我每年夏天都回家鄉。",
+      "hintWords": [
+        "hometown"
+      ],
       "referenceEn": [
-        "My hometown is Tainan.",
-        "My hometown is a small town near the sea."
+        "I go back to my hometown every summer.",
+        "Every summer, I go back to my hometown."
       ],
       "rubricZh": [
-        "用 my hometown 表示「我的家鄉」（例如 My hometown is…、I love my hometown）",
-        "可說家鄉在哪裡或是什麼樣的地方（例如 is Tainan、is a small town）"
+        "「回家鄉」可寫，例如 go back to my hometown、visit my hometown 等",
+        "習慣性的事用現在簡單式（例如 go、visit）"
       ]
     }
   ],
@@ -428,6 +430,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Spy 與 q13 共用，改 Thank（祈使句文法可通，與 Greet 共兩個）；避開 Pardon（也通）",
         "resolution": "改為 [\"你好\", \"迎接\", \"原諒（excuse me）\", \"感謝\"]（原 [\"你好\", \"迎接\", \"原諒（excuse me）\", \"間諜\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hometown）原位換成翻譯題，沿用題 id a1-u02-l05-q17；目標字沿用 hometown",
+        "resolution": "改為 translate：promptZh「我每年夏天都回家鄉。」、hintWords [\"hometown\"]、referenceEn [\"I go back to my hometown every summer.\",\"Every summer, I go back to my hometown.\"]、rubricZh [\"「回家鄉」可寫，例如 go back to my hometown、visit my hometown 等\",\"習慣性的事用現在簡單式（例如 go、visit）\"]（原 makeSentence：instructionZh「用 hometown 造一個句子，說說你的家鄉。」、referenceEn [\"My hometown is Tainan.\",\"My hometown is a small town near the sea.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

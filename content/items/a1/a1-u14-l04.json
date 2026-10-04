@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u14-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "draw",
-      "instructionZh": "用 draw 造一個句子，說說你會畫或喜歡畫什麼。",
+      "type": "translate",
+      "promptZh": "請在紙上畫一棵樹。",
+      "hintWords": [
+        "draw"
+      ],
       "referenceEn": [
-        "I like to draw flowers.",
-        "I can draw a cat."
+        "Please draw a tree on the paper.",
+        "Draw a tree on the paper, please."
       ],
       "rubricZh": [
-        "draw 後面接畫的內容（例如 draw flowers）",
-        "can、like to 後面接動詞原形（例如 can draw、like to draw）"
+        "draw 後面接畫的內容（例如 draw a tree）",
+        "請求可寫，例如 Please draw…、Draw …, please 等"
       ]
     }
   ],
@@ -371,6 +373,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：stage 與 q14 共用，換動詞 catch，兩個干擾項可放進空格",
         "resolution": "改為 [\"丟\", \"畫\", \"得分\", \"接住\"]（原 [\"丟\", \"畫\", \"得分\", \"舞台\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（draw）原位換成翻譯題，沿用題 id a1-u14-l04-q17；目標字沿用 draw",
+        "resolution": "改為 translate：promptZh「請在紙上畫一棵樹。」、hintWords [\"draw\"]、referenceEn [\"Please draw a tree on the paper.\",\"Draw a tree on the paper, please.\"]、rubricZh [\"draw 後面接畫的內容（例如 draw a tree）\",\"請求可寫，例如 Please draw…、Draw …, please 等\"]（原 makeSentence：instructionZh「用 draw 造一個句子，說說你會畫或喜歡畫什麼。」、referenceEn [\"I like to draw flowers.\",\"I can draw a cat.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

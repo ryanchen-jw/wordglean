@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u08-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "cook",
-      "instructionZh": "用 cook 造一個句子，說說你會煮的一道菜，或你家誰負責煮飯。",
+      "type": "translate",
+      "promptZh": "我爸爸很會做菜。",
+      "hintWords": [
+        "cook"
+      ],
       "referenceEn": [
-        "I can cook chicken soup.",
-        "My mother cooks dinner every day."
+        "My father cooks very well.",
+        "My dad cooks really well."
       ],
       "rubricZh": [
-        "cook 後面可接菜名或餐點（例如 cook dinner、cook chicken soup），也可單獨用（例如 I like to cook）",
-        "動詞配合主詞（例如 I can cook、My mother cooks）"
+        "「很會做菜」可寫，例如 cooks very well、cooks really well、is good at cooking 等",
+        "「爸爸」可寫，例如 father、dad 等；動詞配合主詞"
       ]
     }
   ],
@@ -377,6 +379,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：My father likes to celebrate for the family on Sunday. 只看英文勉強說得通，celebrate 換成 shower（文法可放、為家人淋浴語意不通），drink、shower 兩個動詞放得進空格",
         "resolution": "改為 [\"雞肉\", \"喝\", \"淋浴\", \"煮；做飯\"]（原 [\"雞肉\", \"喝\", \"慶祝\", \"煮；做飯\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（cook）原位換成翻譯題，沿用題 id a1-u08-l04-q17；目標字沿用 cook",
+        "resolution": "改為 translate：promptZh「我爸爸很會做菜。」、hintWords [\"cook\"]、referenceEn [\"My father cooks very well.\",\"My dad cooks really well.\"]、rubricZh [\"「很會做菜」可寫，例如 cooks very well、cooks really well、is good at cooking 等\",\"「爸爸」可寫，例如 father、dad 等；動詞配合主詞\"]（原 makeSentence：instructionZh「用 cook 造一個句子，說說你會煮的一道菜，或你家誰負責煮飯。」、referenceEn [\"I can cook chicken soup.\",\"My mother cooks dinner every day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

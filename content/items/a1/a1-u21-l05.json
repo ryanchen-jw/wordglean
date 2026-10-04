@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u21-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "terrible",
-      "instructionZh": "用 terrible 造一個句子，說說很糟的天氣、食物或一天。",
+      "type": "translate",
+      "promptZh": "這家餐廳的食物很難吃。",
+      "hintWords": [
+        "terrible"
+      ],
       "referenceEn": [
-        "The weather was terrible yesterday.",
-        "I had a terrible day at work."
+        "The food at this restaurant is terrible.",
+        "The food in this restaurant is terrible."
       ],
       "rubricZh": [
-        "terrible 放在 be 動詞後面或名詞前面（例如 was terrible、a terrible day）",
-        "過去的事用過去式"
+        "terrible 放在 be 動詞後面（例如 is terrible）；寫 is very bad 也正確",
+        "「這家餐廳的食物」可寫，例如 the food at this restaurant、the food in this restaurant 等"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：row 與 q13 共用且放不進空格，改形容詞 brown，四選項同為形容詞（避開 excellent 也通）",
         "resolution": "改為 [\"正確的\", \"粉紅色的\", \"棕色的\", \"灰色的\"]（原 [\"正確的\", \"粉紅色的\", \"排\", \"灰色的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（terrible）原位換成翻譯題，沿用題 id a1-u21-l05-q17；目標字沿用 terrible",
+        "resolution": "改為 translate：promptZh「這家餐廳的食物很難吃。」、hintWords [\"terrible\"]、referenceEn [\"The food at this restaurant is terrible.\",\"The food in this restaurant is terrible.\"]、rubricZh [\"terrible 放在 be 動詞後面（例如 is terrible）；寫 is very bad 也正確\",\"「這家餐廳的食物」可寫，例如 the food at this restaurant、the food in this restaurant 等\"]（原 makeSentence：instructionZh「用 terrible 造一個句子，說說很糟的天氣、食物或一天。」、referenceEn [\"The weather was terrible yesterday.\",\"I had a terrible day at work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

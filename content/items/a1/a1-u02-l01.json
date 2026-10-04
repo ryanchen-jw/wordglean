@@ -219,8 +219,7 @@
       "type": "translate",
       "promptZh": "那位女士住在台北。",
       "hintWords": [
-        "woman",
-        "live"
+        "woman"
       ],
       "referenceEn": [
         "That woman lives in Taipei.",
@@ -234,17 +233,18 @@
     },
     {
       "id": "a1-u02-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "live",
-      "instructionZh": "用 live 造一個句子，說說你住在哪裡。",
+      "type": "translate",
+      "promptZh": "他們住在海邊。",
+      "hintWords": [
+        "live"
+      ],
       "referenceEn": [
-        "I live in Taipei.",
-        "I live in a small town with my parents."
+        "They live near the sea.",
+        "They live by the sea."
       ],
       "rubricZh": [
-        "live 的形式配合主詞（例如 I live、My family lives）",
-        "地點前用介系詞（例如 in Taipei、near the station）",
-        "可以補充和誰住（例如 with my family），沒寫也正確"
+        "live 配合主詞（例如 They live）",
+        "「海邊」可寫，例如 near the sea、by the sea 等"
       ]
     }
   ],
@@ -396,6 +396,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：woman、man 單數放不進 Many ___（文法洩題）；改成複數名詞 byes、worlds、lives；避開 men、women（也通）",
         "resolution": "改為 [\"再見\", \"世界\", \"人們\", \"生活；生命\"]（原 [\"女人\", \"男人\", \"人們\", \"生活\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（live）原位換成翻譯題，沿用題 id a1-u02-l01-q17；目標字沿用 live",
+        "resolution": "改為 translate：promptZh「他們住在海邊。」、hintWords [\"live\"]、referenceEn [\"They live near the sea.\",\"They live by the sea.\"]、rubricZh [\"live 配合主詞（例如 They live）\",\"「海邊」可寫，例如 near the sea、by the sea 等\"]（原 makeSentence：instructionZh「用 live 造一個句子，說說你住在哪裡。」、referenceEn [\"I live in Taipei.\",\"I live in a small town with my parents.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 live，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 [\"woman\"]（原 [\"woman\",\"live\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

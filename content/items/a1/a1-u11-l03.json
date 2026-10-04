@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u11-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "farm",
-      "instructionZh": "用 farm 造一個句子，說說農場上有什麼，或你去農場的經驗。",
+      "type": "translate",
+      "promptZh": "那位農夫每天早上在農場工作。",
+      "hintWords": [
+        "farm"
+      ],
       "referenceEn": [
-        "There are many cows on the farm.",
-        "I visited a farm with my family."
+        "The farmer works on the farm every morning.",
+        "Every morning, the farmer works on the farm."
       ],
       "rubricZh": [
-        "「在農場上」常用 on the farm；說去農場可用 visit a farm、go to a farm 等",
-        "時態配合內容（例如過去的經驗用過去式 visited）"
+        "「在農場」可寫，例如 on the farm、at the farm 等",
+        "習慣性的事用現在簡單式（例如 works）"
       ]
     }
   ],
@@ -332,6 +334,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：farmer 是 q14 正解，換 officer",
         "resolution": "改為 [\"轉角\", \"和平\", \"選票\", \"官員\"]（原 [\"轉角\", \"和平\", \"選票\", \"農夫\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（farm）原位換成翻譯題，沿用題 id a1-u11-l03-q17；目標字沿用 farm",
+        "resolution": "改為 translate：promptZh「那位農夫每天早上在農場工作。」、hintWords [\"farm\"]、referenceEn [\"The farmer works on the farm every morning.\",\"Every morning, the farmer works on the farm.\"]、rubricZh [\"「在農場」可寫，例如 on the farm、at the farm 等\",\"習慣性的事用現在簡單式（例如 works）\"]（原 makeSentence：instructionZh「用 farm 造一個句子，說說農場上有什麼，或你去農場的經驗。」、referenceEn [\"There are many cows on the farm.\",\"I visited a farm with my family.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -231,17 +231,18 @@
     },
     {
       "id": "a1-u02-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "introduce",
-      "instructionZh": "用 introduce 造一個句子，說你要把某個人介紹給大家。",
+      "type": "translate",
+      "promptZh": "老師把新同學介紹給全班。",
+      "hintWords": [
+        "introduce"
+      ],
       "referenceEn": [
-        "I want to introduce my friend Ken to everyone.",
-        "Let me introduce my brother, Leo."
+        "The teacher introduces the new student to the class.",
+        "The teacher introduced the new student to the class."
       ],
       "rubricZh": [
-        "introduce 後面接被介紹的人（例如 introduce my friend Ken）",
-        "介紹給誰可用 to（例如 to everyone、to you all），沒寫也正確",
-        "開頭可用 I want to…、Let me…、I would like to… 等"
+        "introduce 後面接被介紹的人，介紹給誰用 to（例如 introduce the new student to the class）",
+        "題目沒有時間，現在式或過去式（例如 introduces、introduced）都正確"
       ]
     }
   ],
@@ -441,6 +442,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：指定必修：Need 換成本課已教的 Sorry，Sorry you very much! 明顯不通（本題免「兩個放得進」）",
         "resolution": "改為 [\"感謝\", \"抱歉的\", \"個人的\", \"介紹\"]（原 [\"感謝\", \"需要\", \"個人的\", \"介紹\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（introduce）原位換成翻譯題，沿用題 id a1-u02-l03-q17；目標字沿用 introduce",
+        "resolution": "改為 translate：promptZh「老師把新同學介紹給全班。」、hintWords [\"introduce\"]、referenceEn [\"The teacher introduces the new student to the class.\",\"The teacher introduced the new student to the class.\"]、rubricZh [\"introduce 後面接被介紹的人，介紹給誰用 to（例如 introduce the new student to the class）\",\"題目沒有時間，現在式或過去式（例如 introduces、introduced）都正確\"]（原 makeSentence：instructionZh「用 introduce 造一個句子，說你要把某個人介紹給大家。」、referenceEn [\"I want to introduce my friend Ken to everyone.\",\"Let me introduce my brother, Leo.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

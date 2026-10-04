@@ -231,17 +231,18 @@
     },
     {
       "id": "a1-u12-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "travel",
-      "instructionZh": "用 travel 造一個句子，說說你喜歡怎麼旅行或想去哪裡旅行。",
+      "type": "translate",
+      "promptZh": "他們今年夏天會開車去花蓮旅行。",
+      "hintWords": [
+        "travel"
+      ],
       "referenceEn": [
-        "I like to travel by train.",
-        "I want to travel to Japan with my family."
+        "They will travel to Hualien by car this summer.",
+        "This summer, they will travel to Hualien by car."
       ],
       "rubricZh": [
-        "「搭⋯旅行」可用 travel by（例如 by train）",
-        "「去某地旅行」可用 travel to（例如 travel to Japan）",
-        "動詞配合主詞和時態"
+        "「去某地旅行」可寫，例如 travel to Hualien 等",
+        "「開車」可寫，例如 by car、drive 等；未來可寫，例如 will、be going to 等"
       ]
     }
   ],
@@ -345,6 +346,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：seat 與 q14 共用；兩題原都無四選項同詞性，改為四個動詞 stay/visit/change",
         "resolution": "改為 [\"停留\", \"抵達\", \"拜訪\", \"換（車、機）\"]（原 [\"座位\", \"抵達\", \"飯店\", \"旅行\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（travel）原位換成翻譯題，沿用題 id a1-u12-l02-q17；目標字沿用 travel",
+        "resolution": "改為 translate：promptZh「他們今年夏天要開車去花蓮旅行。」、hintWords [\"travel\"]、referenceEn [\"They will travel to Hualien by car this summer.\",\"This summer, they will travel to Hualien by car.\"]、rubricZh [\"「去某地旅行」可寫，例如 travel to Hualien 等\",\"「開車」可寫，例如 by car、drive 等；未來可寫，例如 will、be going to 等\"]（原 makeSentence：instructionZh「用 travel 造一個句子，說說你喜歡怎麼旅行或想去哪裡旅行。」、referenceEn [\"I like to travel by train.\",\"I want to travel to Japan with my family.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8），改「會」",
+        "resolution": "改為 promptZh「他們今年夏天會開車去花蓮旅行。」（原「他們今年夏天要開車去花蓮旅行。」）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

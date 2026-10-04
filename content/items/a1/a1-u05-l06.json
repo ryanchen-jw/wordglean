@@ -226,17 +226,18 @@
     },
     {
       "id": "a1-u05-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "color",
-      "instructionZh": "用 color 造一個句子，說說你最喜歡的顏色。",
+      "type": "translate",
+      "promptZh": "我很喜歡這朵花的顏色。",
+      "hintWords": [
+        "color"
+      ],
       "referenceEn": [
-        "My favorite color is blue.",
-        "I like the color green best."
+        "I really like the color of this flower.",
+        "I like the color of this flower very much."
       ],
       "rubricZh": [
-        "「最喜歡的顏色」可寫 my favorite color（英式拼法 favourite colour 也正確）",
-        "顏色名稱可放在 be 動詞後面或當主詞（例如 My favorite color is blue、Blue is my favorite color）",
-        "寫 I like the color blue best.、Blue is my favorite color. 等也正確"
+        "「這朵花的顏色」可寫，例如 the color of this flower、this flower's color 等（英式拼法 colour 也正確）",
+        "「很喜歡」可寫，例如 really like、like … very much、love 等"
       ]
     }
   ],
@@ -370,6 +371,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：red 代入成 Sorry, this is the red bus. I want the number 5 bus. 說得通；換成 easy，the easy bus 語意不通",
         "resolution": "改為 [\"錯的\", \"容易的\", \"短的\", \"近的\"]（原 [\"錯的\", \"紅色的\", \"短的\", \"近的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（color）原位換成翻譯題，沿用題 id a1-u05-l06-q17；目標字沿用 color",
+        "resolution": "改為 translate：promptZh「我很喜歡這朵花的顏色。」、hintWords [\"color\"]、referenceEn [\"I really like the color of this flower.\",\"I like the color of this flower very much.\"]、rubricZh [\"「這朵花的顏色」可寫，例如 the color of this flower、this flower's color 等（英式拼法 colour 也正確）\",\"「很喜歡」可寫，例如 really like、like … very much、love 等\"]（原 makeSentence：instructionZh「用 color 造一個句子，說說你最喜歡的顏色。」、referenceEn [\"My favorite color is blue.\",\"I like the color green best.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

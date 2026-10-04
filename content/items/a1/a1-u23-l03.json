@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u23-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "miss",
-      "instructionZh": "用 miss 造一個句子，說說你錯過或想念的人事物。",
+      "type": "translate",
+      "promptZh": "她很想念她的家鄉。",
+      "hintWords": [
+        "miss"
+      ],
       "referenceEn": [
-        "I missed the bus yesterday.",
-        "I miss my family in Tainan."
+        "She misses her hometown very much.",
+        "She really misses her hometown."
       ],
       "rubricZh": [
-        "miss 可表示「錯過」（例如 miss the bus）或「想念」（例如 miss my family）",
-        "過去的事用過去式（例如 missed）"
+        "miss 表示「想念」，直接接受詞（例如 misses her hometown）",
+        "「很」可寫，例如 very much、really、a lot 等"
       ]
     }
   ],
@@ -364,6 +366,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：drop、fill、push 三字皆與 q13 共用，改 listen、fight、agree",
         "resolution": "改為 [\"聽\", \"吵架\", \"同意\", \"專心\"]（原 [\"掉下\", \"裝滿\", \"推\", \"專心\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（miss）原位換成翻譯題，沿用題 id a1-u23-l03-q17；目標字沿用 miss",
+        "resolution": "改為 translate：promptZh「她很想念她的家鄉。」、hintWords [\"miss\"]、referenceEn [\"She misses her hometown very much.\",\"She really misses her hometown.\"]、rubricZh [\"miss 表示「想念」，直接接受詞（例如 misses her hometown）\",\"「很」可寫，例如 very much、really、a lot 等\"]（原 makeSentence：instructionZh「用 miss 造一個句子，說說你錯過或想念的人事物。」、referenceEn [\"I missed the bus yesterday.\",\"I miss my family in Tainan.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

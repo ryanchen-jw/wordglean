@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u12-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "holiday",
-      "instructionZh": "用 holiday 造一個句子，說說你放假時通常做什麼。",
+      "type": "translate",
+      "promptZh": "放假時我們會去看祖父母。",
+      "hintWords": [
+        "holiday"
+      ],
       "referenceEn": [
-        "On holidays, I sleep late.",
-        "I visit my grandparents on holidays."
+        "We visit our grandparents on holidays.",
+        "On holidays, we visit our grandparents."
       ],
       "rubricZh": [
-        "「在假日」可用 on holidays、on a holiday、during the holiday 等",
-        "習慣性的事用現在簡單式"
+        "「放假時」可寫，例如 on holidays、on a holiday 等",
+        "visit 後面直接接人，不加 to；寫 will visit 也正確"
       ]
     }
   ],
@@ -297,6 +299,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：wheel 是 q13 正解，換 truck",
         "resolution": "改為 [\"卡車\", \"票\", \"水手\", \"假日\"]（原 [\"輪子\", \"票\", \"水手\", \"假日\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（holiday）原位換成翻譯題，沿用題 id a1-u12-l04-q16；目標字沿用 holiday",
+        "resolution": "改為 translate：promptZh「放假時我們會去看祖父母。」、hintWords [\"holiday\"]、referenceEn [\"We visit our grandparents on holidays.\",\"On holidays, we visit our grandparents.\"]、rubricZh [\"「放假時」可寫，例如 on holidays、on a holiday 等\",\"visit 後面直接接人，不加 to；寫 will visit 也正確\"]（原 makeSentence：instructionZh「用 holiday 造一個句子，說說你放假時通常做什麼。」、referenceEn [\"On holidays, I sleep late.\",\"I visit my grandparents on holidays.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -226,16 +226,19 @@
     },
     {
       "id": "a1-u20-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "A.M.",
-      "instructionZh": "用 A.M.（上午）造一個句子，說說你早上幾點做某件事。",
+      "type": "translate",
+      "promptZh": "我的飛機早上六點起飛。",
+      "hintWords": [
+        "A.M."
+      ],
       "referenceEn": [
-        "I get up at 6 A.M.",
-        "My class starts at 8 A.M."
+        "My plane leaves at 6 A.M.",
+        "My plane leaves at six A.M."
       ],
       "rubricZh": [
-        "a.m. 放在時間後面（例如 6 a.m.），不再加 in the morning",
-        "寫 a.m.、am、A.M. 都正確"
+        "a.m. 放在時間後面（例如 6 a.m.），不再加 in the morning；寫 a.m.、am、A.M. 都正確",
+        "寫 at six in the morning 也正確",
+        "「起飛」可寫，例如 leaves、takes off 等"
       ]
     }
   ],
@@ -297,6 +300,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：eighty 是 q13 正解改 autumn，使兩個干擾項可放入空格",
         "resolution": "改為 [\"四月\", \"八月\", \"秋天\", \"九十\"]（原 [\"四月\", \"八月\", \"八十\", \"九十\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（A.M.）原位換成翻譯題，沿用題 id a1-u20-l03-q17；目標字沿用 A.M.",
+        "resolution": "改為 translate：promptZh「我的飛機早上六點起飛。」、hintWords [\"A.M.\"]、referenceEn [\"My plane leaves at 6 A.M.\",\"My plane leaves at six A.M.\"]、rubricZh [\"a.m. 放在時間後面（例如 6 a.m.），不再加 in the morning；寫 a.m.、am、A.M. 都正確\",\"「起飛」可寫，例如 leaves、takes off 等\"]（原 makeSentence：instructionZh「用 A.M.（上午）造一個句子，說說你早上幾點做某件事。」、referenceEn [\"I get up at 6 A.M.\",\"My class starts at 8 A.M.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點未收 at six in the morning",
+        "resolution": "改為 rubricZh [\"a.m. 放在時間後面（例如 6 a.m.），不再加 in the morning；寫 a.m.、am、A.M. 都正確\",\"寫 at six in the morning 也正確\",\"「起飛」可寫，例如 leaves、takes off 等\"]（原 [\"a.m. 放在時間後面（例如 6 a.m.），不再加 in the morning；寫 a.m.、am、A.M. 都正確\",\"「起飛」可寫，例如 leaves、takes off 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

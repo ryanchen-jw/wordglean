@@ -217,16 +217,18 @@
     },
     {
       "id": "a1-u08-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "cake",
-      "instructionZh": "用 cake 造一個句子，說說你喜歡的蛋糕，或你什麼時候吃蛋糕。",
+      "type": "translate",
+      "promptZh": "我媽媽正在做一個生日蛋糕。",
+      "hintWords": [
+        "cake"
+      ],
       "referenceEn": [
-        "I love chocolate cake.",
-        "We eat cake on my birthday."
+        "My mother is making a birthday cake.",
+        "My mom is making a birthday cake."
       ],
       "rubricZh": [
-        "泛指蛋糕時不加 a（例如 I love cake）；說種類可加名稱（例如 chocolate cake）",
-        "一整個蛋糕用 a cake，一塊用 a piece of cake"
+        "「正在做」用現在進行式（例如 is making）",
+        "一整個蛋糕用 a cake（例如 a birthday cake）；「做」寫 make 或 bake 都正確"
       ]
     }
   ],
@@ -384,6 +386,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Good morning! Lunch is ready. Come and eat. 上午近中午時也說得通，Lunch 換成 Dinner，早上說晚餐好了語意不通",
         "resolution": "改為 [\"晚餐\", \"早餐\", \"早上\", \"餓的\"]（原 [\"午餐\", \"早餐\", \"早上\", \"餓的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（cake）原位換成翻譯題，沿用題 id a1-u08-l07-q16；目標字沿用 cake",
+        "resolution": "改為 translate：promptZh「我媽媽正在做一個生日蛋糕。」、hintWords [\"cake\"]、referenceEn [\"My mother is making a birthday cake.\",\"My mom is making a birthday cake.\"]、rubricZh [\"「正在做」用現在進行式（例如 is making）\",\"一整個蛋糕用 a cake（例如 a birthday cake）；「做」寫 make 或 bake 都正確\"]（原 makeSentence：instructionZh「用 cake 造一個句子，說說你喜歡的蛋糕，或你什麼時候吃蛋糕。」、referenceEn [\"I love chocolate cake.\",\"We eat cake on my birthday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

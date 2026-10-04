@@ -214,7 +214,6 @@
       "type": "translate",
       "promptZh": "我的嗜好是打籃球。",
       "hintWords": [
-        "hobby",
         "basketball"
       ],
       "referenceEn": [
@@ -228,16 +227,18 @@
     },
     {
       "id": "a1-u14-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "hobby",
-      "instructionZh": "用 hobby 造一個句子，說說你的嗜好。",
+      "type": "translate",
+      "promptZh": "我奶奶有很多嗜好。",
+      "hintWords": [
+        "hobby"
+      ],
       "referenceEn": [
-        "My hobby is cooking.",
-        "My hobby is playing the guitar."
+        "My grandmother has many hobbies.",
+        "My grandma has a lot of hobbies."
       ],
       "rubricZh": [
-        "可用 My hobby is＋動名詞（例如 My hobby is cooking），或 I have a hobby… 等",
-        "樂器前常加 the（例如 play the guitar），球類運動不加"
+        "「很多嗜好」用複數（例如 many hobbies、a lot of hobbies）",
+        "動詞配合主詞（例如 has）"
       ]
     }
   ],
@@ -383,6 +384,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hobby 是 q13 正解，換 bath",
         "resolution": "改為 [\"野餐\", \"衝浪\", \"泡澡\", \"棒球\"]（原 [\"野餐\", \"衝浪\", \"嗜好\", \"棒球\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（hobby）原位換成翻譯題，沿用題 id a1-u14-l01-q17；目標字沿用 hobby",
+        "resolution": "改為 translate：promptZh「我奶奶有很多嗜好。」、hintWords [\"hobby\"]、referenceEn [\"My grandmother has many hobbies.\",\"My grandma has a lot of hobbies.\"]、rubricZh [\"「很多嗜好」用複數（例如 many hobbies、a lot of hobbies）\",\"動詞配合主詞（例如 has）\"]（原 makeSentence：instructionZh「用 hobby 造一個句子，說說你的嗜好。」、referenceEn [\"My hobby is cooking.\",\"My hobby is playing the guitar.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 hobby，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 [\"basketball\"]（原 [\"hobby\",\"basketball\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

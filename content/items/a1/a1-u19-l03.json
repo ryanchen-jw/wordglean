@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u19-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "lot",
-      "instructionZh": "用 a lot of 造一個句子，說說你有很多的東西。",
+      "type": "translate",
+      "promptZh": "這個城市有很多公園。",
+      "hintWords": [
+        "lot"
+      ],
       "referenceEn": [
-        "I have a lot of books.",
-        "I have a lot of toy cars."
+        "This city has a lot of parks.",
+        "There are a lot of parks in this city."
       ],
       "rubricZh": [
-        "a lot of 後面可接可數複數名詞或不可數名詞（例如 a lot of books、a lot of water）",
-        "寫 lots of 也正確"
+        "a lot of 後面接複數名詞（例如 a lot of parks）；寫 lots of、many 也正確",
+        "可寫，例如 This city has…、There are … in this city 等"
       ]
     }
   ],
@@ -316,6 +318,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：both 是 q14 正解改 off（避開 really 也通）",
         "resolution": "改為 [\"還\", \"關著的\", \"周圍\", \"在⋯下面\"]（原 [\"還\", \"兩者都\", \"周圍\", \"在⋯下面\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（lot）原位換成翻譯題，沿用題 id a1-u19-l03-q17；目標字沿用 lot",
+        "resolution": "改為 translate：promptZh「這個城市有很多公園。」、hintWords [\"lot\"]、referenceEn [\"This city has a lot of parks.\",\"There are a lot of parks in this city.\"]、rubricZh [\"a lot of 後面接複數名詞（例如 a lot of parks）；寫 lots of、many 也正確\",\"可寫，例如 This city has…、There are … in this city 等\"]（原 makeSentence：instructionZh「用 a lot of 造一個句子，說說你有很多的東西。」、referenceEn [\"I have a lot of books.\",\"I have a lot of toy cars.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

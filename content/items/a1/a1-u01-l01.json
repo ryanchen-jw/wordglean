@@ -229,17 +229,18 @@
     },
     {
       "id": "a1-u01-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "the",
-      "instructionZh": "用 the 造一個句子，說說房間裡某樣東西在哪裡。",
+      "type": "translate",
+      "promptZh": "請關窗戶。",
+      "hintWords": [
+        "the"
+      ],
       "referenceEn": [
-        "The pen is on the desk.",
-        "The bag is under the chair."
+        "Please close the window.",
+        "Close the window, please."
       ],
       "rubricZh": [
-        "用 the 指說話雙方都知道的東西",
-        "句子有主詞和動詞",
-        "說明東西的位置（例如用 on、under、in）"
+        "「窗戶」指眼前那扇，可寫，例如 the window、the windows 等",
+        "請求可寫，例如 Please close…、Could you close… 等"
       ]
     }
   ],
@@ -355,6 +356,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：of 是 q13 正解、and 與 q13 共用，改 be、have；保留 to。全課可用字只有 8 個，同詞性與混合題兩條件無解（見回報）",
         "resolution": "改為 [\"是\", \"到\", \"有\", \"在⋯裡\"]（原 [\"⋯的\", \"到\", \"和\", \"在⋯裡\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（the）原位換成翻譯題，沿用題 id a1-u01-l01-q17；目標字沿用 the",
+        "resolution": "改為 translate：promptZh「請關窗戶。」、hintWords [\"the\"]、referenceEn [\"Please close the window.\",\"Close the window, please.\"]、rubricZh [\"「窗戶」指眼前那扇，可寫，例如 the window、the windows 等\",\"請求可寫，例如 Please close…、Could you close… 等\"]（原 makeSentence：instructionZh「用 the 造一個句子，說說房間裡某樣東西在哪裡。」、referenceEn [\"The pen is on the desk.\",\"The bag is under the chair.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

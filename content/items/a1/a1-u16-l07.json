@@ -214,17 +214,18 @@
     },
     {
       "id": "a1-u16-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "topic",
-      "instructionZh": "用 topic 造一個句子，說說你喜歡聊的話題。",
+      "type": "translate",
+      "promptZh": "這本雜誌每週有不同的主題。",
+      "hintWords": [
+        "topic"
+      ],
       "referenceEn": [
-        "My favorite topic is food.",
-        "I like to talk about the topic of travel."
+        "This magazine has a different topic every week.",
+        "Every week, this magazine has a different topic."
       ],
       "rubricZh": [
-        "可用 My favorite topic is…，或 talk about the topic of… 等",
-        "單數 topic 前面要加冠詞或所有格（例如 the topic、my favorite topic）",
-        "用複數泛指也正確（例如 I like topics about food.）"
+        "topic 前面加冠詞（例如 a different topic）；複數 different topics 也正確",
+        "習慣性的事用現在簡單式（例如 has）"
       ]
     }
   ],
@@ -352,6 +353,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：desk 是 q12 正解，換 rule",
         "resolution": "改為 [\"影本\", \"資料夾\", \"主題\", \"規則\"]（原 [\"影本\", \"資料夾\", \"主題\", \"書桌\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（topic）原位換成翻譯題，沿用題 id a1-u16-l07-q16；目標字沿用 topic",
+        "resolution": "改為 translate：promptZh「這本雜誌每週有不同的主題。」、hintWords [\"topic\"]、referenceEn [\"This magazine has a different topic every week.\",\"Every week, this magazine has a different topic.\"]、rubricZh [\"topic 前面加冠詞（例如 a different topic）；複數 different topics 也正確\",\"習慣性的事用現在簡單式（例如 has）\"]（原 makeSentence：instructionZh「用 topic 造一個句子，說說你喜歡聊的話題。」、referenceEn [\"My favorite topic is food.\",\"I like to talk about the topic of travel.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

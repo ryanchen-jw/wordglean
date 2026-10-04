@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u19-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "all right",
-      "instructionZh": "用 all right 造一個句子，問候別人或說自己沒事。",
+      "type": "translate",
+      "promptZh": "別擔心，我沒事。",
+      "hintWords": [
+        "all right"
+      ],
       "referenceEn": [
-        "Is your grandma all right?",
-        "We are all right, thank you."
+        "Don't worry, I'm all right.",
+        "Don't worry. I am all right."
       ],
       "rubricZh": [
-        "all right 可用來問候（Are you all right?）或回答（I am all right）",
-        "寫 alright 也接受"
+        "「沒事」可寫，例如 I'm all right、I am all right、I'm OK 等（alright 也接受）",
+        "「別擔心」可寫，例如 Don't worry 等"
       ]
     }
   ],
@@ -313,6 +315,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：are 與 q13 共用改 a（a／an 辨析）；does 是 q13 正解改 each；did 與 q13 Does／Do 同詞元改 much",
         "resolution": "改為 [\"一個\", \"一\", \"很多\", \"每個\"]（原 [\"是\", \"一\", \"do 的過去式\", \"do 的第三人稱單數\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（all right）原位換成翻譯題，沿用題 id a1-u19-l08-q17；目標字沿用 all right",
+        "resolution": "改為 translate：promptZh「別擔心，我沒事。」、hintWords [\"all right\"]、referenceEn [\"Don't worry, I'm all right.\",\"Don't worry. I am all right.\"]、rubricZh [\"「沒事」可寫，例如 I'm all right、I am all right、I'm OK 等（alright 也接受）\",\"「別擔心」可寫，例如 Don't worry 等\"]（原 makeSentence：instructionZh「用 all right 造一個句子，問候別人或說自己沒事。」、referenceEn [\"Is your grandma all right?\",\"We are all right, thank you.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

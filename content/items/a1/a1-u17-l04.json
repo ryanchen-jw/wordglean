@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u17-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "start",
-      "instructionZh": "用 start 造一個句子，說說你幾點開始上班、上課或做某件事。",
+      "type": "translate",
+      "promptZh": "我妹妹昨天開始學畫畫。",
+      "hintWords": [
+        "start"
+      ],
       "referenceEn": [
-        "I start work at nine.",
-        "My English class starts at seven."
+        "My sister started to learn drawing yesterday.",
+        "My sister started learning to draw yesterday."
       ],
       "rubricZh": [
-        "start 後面可接名詞或動名詞（例如 start work、start cooking）",
-        "時間點前用 at；動詞配合主詞（例如 My class starts）"
+        "start 後面可接 to＋原形或動名詞（例如 started to learn、started learning）",
+        "昨天的事用過去式（例如 started）；「妹妹」可寫，例如 sister、little sister 等"
       ]
     }
   ],
@@ -389,6 +391,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Point 代入「Point left at the corner.」文法通、勉強可解為在轉角往左指，換成 Know（Know left at the corner. 語意不通）",
         "resolution": "改為 [\"轉彎\", \"出示\", \"知道\", \"呼叫\"]（原 [\"轉彎\", \"出示\", \"指\", \"呼叫\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（start）原位換成翻譯題，沿用題 id a1-u17-l04-q17；目標字沿用 start",
+        "resolution": "改為 translate：promptZh「我們這個星期六要開始上游泳課。」、hintWords [\"start\"]、referenceEn [\"We will start swimming lessons this Saturday.\",\"We are going to start swimming lessons this Saturday.\"]、rubricZh [\"start 後面可接名詞或動名詞（例如 start swimming lessons、start learning to swim）\",\"未來可寫，例如 will、be going to 等\"]（原 makeSentence：instructionZh「用 start 造一個句子，說說你幾點開始上班、上課或做某件事。」、referenceEn [\"I start work at nine.\",\"My English class starts at seven.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8）；SUS 與同單元 a1-u17-l03-q18「X＋begin/start＋this＋星期幾」同句型，換情境與句型（§11.4／§12.3）",
+        "resolution": "改為 promptZh「我妹妹昨天開始學畫畫。」（原「我們這個星期六要開始上游泳課。」）、referenceEn [\"My sister started to learn drawing yesterday.\",\"My sister started learning to draw yesterday.\"]（原 [\"We will start swimming lessons this Saturday.\",\"We are going to start swimming lessons this Saturday.\"]）、rubricZh [\"start 後面可接 to＋原形或動名詞（例如 started to learn、started learning）\",\"昨天的事用過去式（例如 started）；「妹妹」可寫，例如 sister、little sister 等\"]（原 [\"start 後面可接名詞或動名詞（例如 start swimming lessons、start learning to swim）\",\"未來可寫，例如 will、be going to 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

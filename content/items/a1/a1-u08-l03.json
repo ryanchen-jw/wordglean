@@ -231,16 +231,18 @@
     },
     {
       "id": "a1-u08-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "eat",
-      "instructionZh": "用 eat 造一個句子，說說你常吃的一種食物。",
+      "type": "translate",
+      "promptZh": "牛吃草。",
+      "hintWords": [
+        "eat"
+      ],
       "referenceEn": [
-        "I eat rice every day.",
-        "I often eat fish for dinner."
+        "Cows eat grass.",
+        "A cow eats grass."
       ],
       "rubricZh": [
-        "eat 後面直接接食物（例如 eat rice）",
-        "習慣性的事用現在簡單式（例如 I eat、I often eat）"
+        "泛指牛可寫，例如 Cows eat…、A cow eats… 等",
+        "動詞配合主詞（例如 cows eat、a cow eats）"
       ]
     }
   ],
@@ -398,6 +400,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：water/cup 與 q13 共用、eat 是 q13 正解，換 juice/candy/salad，四選項皆名詞",
         "resolution": "改為 [\"果汁\", \"糖果\", \"沙拉\", \"食物\"]（原 [\"水\", \"杯子\", \"吃\", \"食物\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（eat）原位換成翻譯題，沿用題 id a1-u08-l03-q17；目標字沿用 eat",
+        "resolution": "改為 translate：promptZh「牛吃草。」、hintWords [\"eat\"]、referenceEn [\"Cows eat grass.\",\"A cow eats grass.\"]、rubricZh [\"泛指牛可寫，例如 Cows eat…、A cow eats… 等\",\"動詞配合主詞（例如 cows eat、a cow eats）\"]（原 makeSentence：instructionZh「用 eat 造一個句子，說說你常吃的一種食物。」、referenceEn [\"I eat rice every day.\",\"I often eat fish for dinner.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

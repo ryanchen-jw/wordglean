@@ -217,31 +217,33 @@
     {
       "id": "a1-u02-l02-q16",
       "type": "translate",
-      "promptZh": "你的工作是什麼？",
+      "promptZh": "他在一家銀行有一份工作。",
       "hintWords": [
         "job"
       ],
       "referenceEn": [
-        "What is your job?",
-        "What's your job?"
+        "He has a job at a bank.",
+        "He has a job in a bank."
       ],
       "rubricZh": [
-        "問句可寫 What is your job?、What's your job? 等",
-        "寫 What do you do? 問職業，意思相同也正確"
+        "「有一份工作」可寫，例如 has a job 等；寫 works at a bank 也正確",
+        "「在銀行」可寫，例如 at a bank、in a bank 等"
       ]
     },
     {
       "id": "a1-u02-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "age",
-      "instructionZh": "用 age 造一個句子，說說你和某個人年紀一樣。",
+      "type": "translate",
+      "promptZh": "這個年紀的孩子很喜歡玩。",
+      "hintWords": [
+        "age"
+      ],
       "referenceEn": [
-        "I am the same age as my cousin.",
-        "My friend Tom and I are the same age."
+        "Kids at this age love to play.",
+        "Children at this age love to play."
       ],
       "rubricZh": [
-        "「同年紀」可用 the same age（例如 the same age as my cousin、Tom and I are the same age）",
-        "be 動詞配合主詞（例如 I am、Tom and I are）"
+        "「這個年紀」可寫，例如 at this age 等",
+        "「很喜歡玩」可寫，例如 love to play、love playing、like playing a lot 等"
       ]
     }
   ],
@@ -387,6 +389,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：kid 代入成 Hi, my kid is Amy.（家長介紹孩子）說得通；換成 man，my man is Amy（Amy 是女生名）語意不通",
         "resolution": "改為 [\"年齡\", \"男人\", \"名字\", \"人\"]（原 [\"年齡\", \"小孩\", \"名字\", \"人\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（age）原位換成翻譯題，沿用題 id a1-u02-l02-q17；目標字沿用 age",
+        "resolution": "改為 translate：promptZh「這個年紀的孩子很喜歡玩。」、hintWords [\"age\"]、referenceEn [\"Kids at this age love to play.\",\"Children at this age love to play.\"]、rubricZh [\"「這個年紀」可寫，例如 at this age 等\",\"「很喜歡玩」可寫，例如 love to play、love playing、like playing a lot 等\"]（原 makeSentence：instructionZh「用 age 造一個句子，說說你和某個人年紀一樣。」、referenceEn [\"I am the same age as my cousin.\",\"My friend Tom and I are the same age.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u02-l05-q16（What's your…?；該題是 nationality 唯一情境題，保留） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
+        "resolution": "改為 promptZh「他在一家銀行工作。」、referenceEn [\"He has a job at a bank.\",\"He has a job in a bank.\"]、rubricZh [\"「有一份工作」可寫，例如 has a job 等；寫 works at a bank 也正確\",\"「在銀行」可寫，例如 at a bank、in a bank 等\"]（原 promptZh「你的工作是什麼？」、referenceEn [\"What is your job?\",\"What's your job?\"]、rubricZh [\"問句可寫 What is your job?、What's your job? 等\",\"寫 What do you do? 問職業，意思相同也正確\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 題目「在一家銀行工作」與參考答案 has a job 不對應，題目改成「有一份工作」",
+        "resolution": "改為 promptZh「他在一家銀行有一份工作。」（原「他在一家銀行工作。」）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

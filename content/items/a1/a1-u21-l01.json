@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u21-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "dark",
-      "instructionZh": "用 dark 造一個句子，描述暗的地方或深色的東西。",
+      "type": "translate",
+      "promptZh": "她有一頭深色的長髮。",
+      "hintWords": [
+        "dark"
+      ],
       "referenceEn": [
-        "It is very dark in the room.",
-        "She has dark hair."
+        "She has long dark hair.",
+        "Her hair is long and dark."
       ],
       "rubricZh": [
-        "dark 可形容光線暗（例如 It is dark）或顏色深（例如 dark hair、dark blue）",
-        "dark 放在 be 動詞後面或名詞前面"
+        "dark 可形容顏色深（例如 dark hair）",
+        "可寫，例如 She has long dark hair、Her hair is long and dark 等"
       ]
     }
   ],
@@ -316,6 +318,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：nice 移給 q13；dark、nice 為形容詞放不進名詞空格，改 color、room，四選項同為名詞",
         "resolution": "改為 [\"尺寸\", \"顏色\", \"綠色\", \"房間\"]（原 [\"尺寸\", \"暗的\", \"綠色的\", \"好的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dark）原位換成翻譯題，沿用題 id a1-u21-l01-q17；目標字沿用 dark",
+        "resolution": "改為 translate：promptZh「她有一頭深色的長髮。」、hintWords [\"dark\"]、referenceEn [\"She has long dark hair.\",\"Her hair is long and dark.\"]、rubricZh [\"dark 可形容顏色深（例如 dark hair）\",\"可寫，例如 She has long dark hair、Her hair is long and dark 等\"]（原 makeSentence：instructionZh「用 dark 造一個句子，描述暗的地方或深色的東西。」、referenceEn [\"It is very dark in the room.\",\"She has dark hair.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

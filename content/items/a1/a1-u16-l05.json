@@ -231,17 +231,18 @@
     },
     {
       "id": "a1-u16-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "answer",
-      "instructionZh": "用 answer 造一個句子（當名詞或動詞都可以），說說回答問題的事。",
+      "type": "translate",
+      "promptZh": "他沒有回答我的問題。",
+      "hintWords": [
+        "answer"
+      ],
       "referenceEn": [
-        "I know the answer to this question.",
-        "I always answer my emails quickly."
+        "He did not answer my question.",
+        "He didn't answer my question."
       ],
       "rubricZh": [
-        "answer 當名詞常用 the answer to…（例如 the answer to this question）",
-        "answer 當動詞直接接受詞（例如 answer my emails）",
-        "動詞配合主詞和時態"
+        "answer 當動詞直接接受詞（例如 answer my question）",
+        "否定可寫，例如 did not answer、didn't answer、hasn't answered 等"
       ]
     }
   ],
@@ -303,6 +304,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：list 與 q14 的 lists 同字共用，換 word",
         "resolution": "改為 [\"例子\", \"字\", \"科學\", \"頁\"]（原 [\"例子\", \"清單\", \"科學\", \"頁\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（answer）原位換成翻譯題，沿用題 id a1-u16-l05-q17；目標字沿用 answer",
+        "resolution": "改為 translate：promptZh「他沒有回答我的問題。」、hintWords [\"answer\"]、referenceEn [\"He did not answer my question.\",\"He didn't answer my question.\"]、rubricZh [\"answer 當動詞直接接受詞（例如 answer my question）\",\"過去的事用過去式否定（例如 did not answer、didn't answer）\"]（原 makeSentence：instructionZh「用 answer 造一個句子（當名詞或動詞都可以），說說回答問題的事。」、referenceEn [\"I know the answer to this question.\",\"I always answer my emails quickly.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 題目沒有時間詞，要點寫死過去式會判錯現在完成式（§11.18）",
+        "resolution": "改為 rubricZh [\"answer 當動詞直接接受詞（例如 answer my question）\",\"否定可寫，例如 did not answer、didn't answer、hasn't answered 等\"]（原 [\"answer 當動詞直接接受詞（例如 answer my question）\",\"過去的事用過去式否定（例如 did not answer、didn't answer）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

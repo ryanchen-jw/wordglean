@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u21-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "dirty",
-      "instructionZh": "用 dirty 造一個句子，說說髒掉的東西。",
+      "type": "translate",
+      "promptZh": "別把髒衣服放在床上。",
+      "hintWords": [
+        "dirty"
+      ],
       "referenceEn": [
-        "My car is very dirty.",
-        "Please wash your dirty hands."
+        "Don't put dirty clothes on the bed.",
+        "Do not put your dirty clothes on the bed."
       ],
       "rubricZh": [
-        "dirty 放在 be 動詞後面或名詞前面（例如 is dirty、dirty hands）",
-        "動詞配合主詞"
+        "dirty 放在名詞前（例如 dirty clothes）",
+        "否定命令可寫，例如 Don't put…、Please don't put… 等"
       ]
     }
   ],
@@ -358,6 +360,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：purple 代入「Start on a purple page.」說得通（彩色頁的筆記本），換成 rude（a rude page 語意不通）",
         "resolution": "改為 [\"沒禮貌的\", \"關閉的\", \"空白的\", \"壞掉的\"]（原 [\"紫色的\", \"關閉的\", \"空白的\", \"壞掉的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dirty）原位換成翻譯題，沿用題 id a1-u21-l06-q17；目標字沿用 dirty",
+        "resolution": "改為 translate：promptZh「別把髒衣服放在床上。」、hintWords [\"dirty\"]、referenceEn [\"Don't put dirty clothes on the bed.\",\"Do not put your dirty clothes on the bed.\"]、rubricZh [\"dirty 放在名詞前（例如 dirty clothes）\",\"否定命令可寫，例如 Don't put…、Please don't put… 等\"]（原 makeSentence：instructionZh「用 dirty 造一個句子，說說髒掉的東西。」、referenceEn [\"My car is very dirty.\",\"Please wash your dirty hands.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

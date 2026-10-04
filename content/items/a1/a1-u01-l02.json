@@ -230,17 +230,18 @@
     },
     {
       "id": "a1-u01-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "with",
-      "instructionZh": "用 with 造一個句子，說說你常和誰一起做某件事。",
+      "type": "translate",
+      "promptZh": "她和她媽媽住在一起。",
+      "hintWords": [
+        "with"
+      ],
       "referenceEn": [
-        "I eat dinner with my family.",
-        "I walk to school with my friend."
+        "She lives with her mother.",
+        "She lives with her mom."
       ],
       "rubricZh": [
-        "用 with 表示「和⋯一起」",
-        "句子有主詞和動詞",
-        "with 後面接人"
+        "「和⋯住在一起」可寫，例如 lives with her mother、lives with her mom 等",
+        "主詞是「她」，動詞配合主詞（例如 lives）"
       ]
     }
   ],
@@ -350,6 +351,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：with 是 q13 正解改 to；he 改 of，使四選項皆介系詞",
         "resolution": "改為 [\"給；為了\", \"在⋯上面\", \"到\", \"⋯的\"]（原 [\"給；為了\", \"在⋯上面\", \"和⋯一起\", \"他\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（with）原位換成翻譯題，沿用題 id a1-u01-l02-q17；目標字沿用 with",
+        "resolution": "改為 translate：promptZh「她和她媽媽住在一起。」、hintWords [\"with\"]、referenceEn [\"She lives with her mother.\",\"She lives with her mom.\"]、rubricZh [\"「和⋯住在一起」可寫，例如 lives with her mother、lives with her mom 等\",\"主詞是「她」，動詞配合主詞（例如 lives）\"]（原 makeSentence：instructionZh「用 with 造一個句子，說說你常和誰一起做某件事。」、referenceEn [\"I eat dinner with my family.\",\"I walk to school with my friend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

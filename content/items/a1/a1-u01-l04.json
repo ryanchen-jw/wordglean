@@ -217,7 +217,6 @@
       "promptZh": "她不會說英文。",
       "hintWords": [
         "she",
-        "can",
         "not"
       ],
       "referenceEn": [
@@ -231,17 +230,18 @@
     },
     {
       "id": "a1-u01-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "can",
-      "instructionZh": "用 can 造一個句子，說說你會做的一件事。",
+      "type": "translate",
+      "promptZh": "你可以坐這裡。",
+      "hintWords": [
+        "can"
+      ],
       "referenceEn": [
-        "I can ride a bike.",
-        "I can cook eggs."
+        "You can sit here.",
+        "You can take this seat."
       ],
       "rubricZh": [
-        "用 can 表示「會；能」",
-        "can 後面接原形動詞",
-        "句子有主詞"
+        "用 can 表示「可以」（例如 can sit）；寫 may 也正確",
+        "「坐這裡」可寫，例如 sit here、take this seat 等"
       ]
     }
   ],
@@ -345,6 +345,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：not 代入成 Would you like rice not bread?（要飯不要麵包）只看英文可成立；換成 the，rice the bread 文法不通",
         "resolution": "改為 [\"⋯的\", \"或者；還是\", \"這個；那個\", \"從\"]（原 [\"⋯的\", \"或者；還是\", \"不\", \"從\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（can）原位換成翻譯題，沿用題 id a1-u01-l04-q17；目標字沿用 can",
+        "resolution": "改為 translate：promptZh「你可以坐這裡。」、hintWords [\"can\"]、referenceEn [\"You can sit here.\",\"You can take this seat.\"]、rubricZh [\"用 can 表示「可以」（例如 can sit）；寫 may 也正確\",\"「坐這裡」可寫，例如 sit here、take this seat 等\"]（原 makeSentence：instructionZh「用 can 造一個句子，說說你會做的一件事。」、referenceEn [\"I can ride a bike.\",\"I can cook eggs.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 can，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 [\"she\",\"not\"]（原 [\"she\",\"can\",\"not\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u18-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "alone",
-      "instructionZh": "用 alone 造一個句子，說說你喜歡或不喜歡一個人做的事。",
+      "type": "translate",
+      "promptZh": "我不喜歡一個人在家。",
+      "hintWords": [
+        "alone"
+      ],
       "referenceEn": [
-        "I like to eat lunch alone.",
-        "I don't like to go to the movies alone."
+        "I don't like to be home alone.",
+        "I don't like being at home alone."
       ],
       "rubricZh": [
-        "alone 常放在句尾（例如 eat lunch alone、live alone）",
-        "可用 like／don't like to…、I … alone 等句型"
+        "alone 常放在句尾（例如 be home alone）",
+        "like 後面接 to＋原形、動名詞都正確（例如 like to be、like being）"
       ]
     }
   ],
@@ -369,6 +371,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：alone 與 q12 共用改名詞 memory，四選項同為名詞",
         "resolution": "改為 [\"夢想\", \"笑容\", \"煩惱\", \"記憶\"]（原 [\"夢想\", \"笑容\", \"煩惱\", \"獨自地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（alone）原位換成翻譯題，沿用題 id a1-u18-l02-q16；目標字沿用 alone",
+        "resolution": "改為 translate：promptZh「我不喜歡一個人在家。」、hintWords [\"alone\"]、referenceEn [\"I don't like to be home alone.\",\"I don't like being at home alone.\"]、rubricZh [\"alone 常放在句尾（例如 be home alone）\",\"like 後面接 to＋原形、動名詞都正確（例如 like to be、like being）\"]（原 makeSentence：instructionZh「用 alone 造一個句子，說說你喜歡或不喜歡一個人做的事。」、referenceEn [\"I like to eat lunch alone.\",\"I don't like to go to the movies alone.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

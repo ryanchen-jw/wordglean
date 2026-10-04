@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u06-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "window",
-      "instructionZh": "用 window 造一個句子，說說你房間或辦公室的窗戶。",
+      "type": "translate",
+      "promptZh": "窗外有一棵大樹。",
+      "hintWords": [
+        "window"
+      ],
       "referenceEn": [
-        "My room has a big window.",
-        "I can see a park from my window."
+        "There is a big tree outside the window.",
+        "Outside the window, there is a big tree."
       ],
       "rubricZh": [
-        "window 前面加冠詞或所有格（例如 a big window、my window）",
-        "動詞配合主詞（例如 My room has、I can see）"
+        "「窗外」可寫，例如 outside the window、outside my window 等",
+        "可寫，例如 There is a big tree…、I can see a big tree… 等"
       ]
     }
   ],
@@ -334,6 +336,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：window 是 q14 正解，改同單元名詞 towel；避開 box（a box of milk 也對）",
         "resolution": "改為 [\"毛巾\", \"牆\", \"地板\", \"玻璃杯\"]（原 [\"窗戶\", \"牆\", \"地板\", \"玻璃杯\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（window）原位換成翻譯題，沿用題 id a1-u06-l02-q17；目標字沿用 window",
+        "resolution": "改為 translate：promptZh「窗外有一棵大樹。」、hintWords [\"window\"]、referenceEn [\"There is a big tree outside the window.\",\"Outside the window, there is a big tree.\"]、rubricZh [\"「窗外」可寫，例如 outside the window、outside my window 等\",\"可寫，例如 There is a big tree…、I can see a big tree… 等\"]（原 makeSentence：instructionZh「用 window 造一個句子，說說你房間或辦公室的窗戶。」、referenceEn [\"My room has a big window.\",\"I can see a park from my window.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u14-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "fan",
-      "instructionZh": "用 fan 造一個句子，說說你是誰（或什麼）的粉絲。",
+      "type": "translate",
+      "promptZh": "我爸爸是那支棒球隊的球迷。",
+      "hintWords": [
+        "fan"
+      ],
       "referenceEn": [
-        "I am a big fan of this band.",
-        "I am a fan of Japanese food."
+        "My father is a fan of that baseball team.",
+        "My dad is a big fan of that baseball team."
       ],
       "rubricZh": [
-        "「是⋯的粉絲」例如 a fan of this band；用所有格（例如 his fan、Amy's fan）也正確",
-        "可加 big 加強語氣（例如 a big fan），沒加也正確"
+        "「是⋯的球迷」可寫，例如 a fan of that baseball team、a big fan of … 等",
+        "「爸爸」可寫，例如 father、dad 等"
       ]
     }
   ],
@@ -317,6 +319,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：coach 是 q14 正解、fan 與 q14 共用，換 video/song",
         "resolution": "改為 [\"影片\", \"報紙\", \"營隊\", \"歌曲\"]（原 [\"教練\", \"報紙\", \"營隊\", \"粉絲\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（fan）原位換成翻譯題，沿用題 id a1-u14-l06-q17；目標字沿用 fan",
+        "resolution": "改為 translate：promptZh「我爸爸是那支棒球隊的球迷。」、hintWords [\"fan\"]、referenceEn [\"My father is a fan of that baseball team.\",\"My dad is a big fan of that baseball team.\"]、rubricZh [\"「是⋯的球迷」可寫，例如 a fan of that baseball team、a big fan of … 等\",\"「爸爸」可寫，例如 father、dad 等\"]（原 makeSentence：instructionZh「用 fan 造一個句子，說說你是誰（或什麼）的粉絲。」、referenceEn [\"I am a big fan of this band.\",\"I am a fan of Japanese food.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

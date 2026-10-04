@@ -242,16 +242,18 @@
     },
     {
       "id": "a1-u05-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "own",
-      "instructionZh": "用 own 造一個句子，說說某樣你自己擁有、不跟別人共用的東西。",
+      "type": "translate",
+      "promptZh": "我哥哥有自己的車。",
+      "hintWords": [
+        "own"
+      ],
       "referenceEn": [
-        "I have my own room.",
-        "I have my own desk at work."
+        "My brother has his own car.",
+        "My older brother has his own car."
       ],
       "rubricZh": [
-        "own 放在所有格後面、接名詞（例如 my own room）；寫 … is my own 也正確",
-        "用動詞 own 表示「擁有」（例如 I own a bike）也正確"
+        "own 放在所有格後面（例如 his own car）",
+        "「哥哥」可寫，例如 brother、older brother、big brother 等"
       ]
     }
   ],
@@ -415,6 +417,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：指定必修：often 代入成 She plays the piano very often. 說得通；換成 own，plays the piano very own 文法不通",
         "resolution": "改為 [\"高的\", \"大的\", \"很好地\", \"自己的\"]（原 [\"高的\", \"大的\", \"很好地\", \"常常\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（own）原位換成翻譯題，沿用題 id a1-u05-l01-q18；目標字沿用 own",
+        "resolution": "改為 translate：promptZh「我哥哥有自己的車。」、hintWords [\"own\"]、referenceEn [\"My brother has his own car.\",\"My older brother has his own car.\"]、rubricZh [\"own 放在所有格後面（例如 his own car）\",\"「哥哥」可寫，例如 brother、older brother、big brother 等\"]（原 makeSentence：instructionZh「用 own 造一個句子，說說某樣你自己擁有、不跟別人共用的東西。」、referenceEn [\"I have my own room.\",\"I have my own desk at work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

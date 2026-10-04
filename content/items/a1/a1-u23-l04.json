@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u23-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "finish",
-      "instructionZh": "用 finish 造一個句子，說說你幾點完成某件事。",
+      "type": "translate",
+      "promptZh": "你寫完作業了嗎？",
+      "hintWords": [
+        "finish"
+      ],
       "referenceEn": [
-        "I finish lunch at one.",
-        "I finished my homework at eight."
+        "Did you finish your homework?",
+        "Have you finished your homework?"
       ],
       "rubricZh": [
-        "finish 後面可接名詞或動名詞（例如 finish work、finish eating）",
-        "時態配合內容（例如習慣用現在簡單式，已完成的事用過去式）"
+        "finish 後面接名詞或動名詞（例如 finish your homework）",
+        "問是否完成可寫，例如 Did you finish…、Have you finished… 等"
       ]
     }
   ],
@@ -365,6 +367,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：imagine 是 q13 正解改 finish（避開 shake 可指奶昔也通）",
         "resolution": "改為 [\"猜測\", \"帳單\", \"笑聲\", \"結尾\"]（原 [\"猜\", \"帳單\", \"笑\", \"想像\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（finish）原位換成翻譯題，沿用題 id a1-u23-l04-q17；目標字沿用 finish",
+        "resolution": "改為 translate：promptZh「你寫完作業了嗎？」、hintWords [\"finish\"]、referenceEn [\"Did you finish your homework?\",\"Have you finished your homework?\"]、rubricZh [\"finish 後面接名詞或動名詞（例如 finish your homework）\",\"問是否完成可寫，例如 Did you finish…、Have you finished… 等\"]（原 makeSentence：instructionZh「用 finish 造一個句子，說說你幾點完成某件事。」、referenceEn [\"I finish lunch at one.\",\"I finished my homework at eight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

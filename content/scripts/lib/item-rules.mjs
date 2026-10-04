@@ -1,15 +1,23 @@
 // 題庫數量與長度規則（proposal 決策 1）。改規則只改本檔。
 
 // 每課題量（單字卡另計：該課每個新字一張）。
+// 創辦人裁示 2026-10-04：造句沒有標準答案，拿掉；每課改為 2 題翻譯（schema 保留 makeSentence 供 App 相容）。
 export const COMPOSITION = {
   listenType: 1,
   listenChoice: 1,
   shadowing: 2,
   mcq: 2,
   reading: 1,
-  translate: 1,
-  makeSentence: 1,
+  translate: 2,
+  makeSentence: 0,
 };
+
+// 過渡：題庫尚未把造句換成翻譯的級別，照舊題量（1 翻譯＋1 造句）。某級轉換完就從這裡移除。
+export const MS2TR_PENDING_LEVELS = new Set(['A2', 'B1', 'B2', 'C1']);
+
+export function compositionFor(level) {
+  return MS2TR_PENDING_LEVELS.has(level) ? { ...COMPOSITION, translate: 1, makeSentence: 1 } : COMPOSITION;
+}
 
 // 英文句字數範圍（例句、聽打、跟讀、聽選音檔、選擇題題幹、參考答案）。
 export const SENTENCE_WORDS = {

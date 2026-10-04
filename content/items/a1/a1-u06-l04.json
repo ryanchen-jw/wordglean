@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u06-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "wash",
-      "instructionZh": "用 wash 造一個句子，說說你會洗的東西。",
+      "type": "translate",
+      "promptZh": "我爸爸星期天洗車。",
+      "hintWords": [
+        "wash"
+      ],
       "referenceEn": [
-        "I wash my car on Sunday.",
-        "I wash the dishes after dinner."
+        "My father washes the car on Sundays.",
+        "My dad washes the car on Sunday."
       ],
       "rubricZh": [
-        "wash 後面直接接要洗的東西（例如 wash the dishes、wash my car）",
-        "時態配合內容（例如習慣用現在簡單式）"
+        "wash 後面直接接要洗的東西（例如 washes the car）；動詞配合主詞",
+        "「星期天」可寫，例如 on Sundays、on Sunday 等"
       ]
     }
   ],
@@ -359,6 +361,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：noise 是 q14 正解、shelf 與 q14 共用；改動詞 kiss、close（文法可通、語意不對）；避開 brush（刷杯子也可能被當對）",
         "resolution": "改為 [\"鈴\", \"親吻\", \"關上\", \"洗\"]（原 [\"鈴\", \"噪音\", \"架子\", \"洗\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wash）原位換成翻譯題，沿用題 id a1-u06-l04-q17；目標字沿用 wash",
+        "resolution": "改為 translate：promptZh「我爸爸星期天洗車。」、hintWords [\"wash\"]、referenceEn [\"My father washes the car on Sundays.\",\"My dad washes the car on Sunday.\"]、rubricZh [\"wash 後面直接接要洗的東西（例如 washes the car）；動詞配合主詞\",\"「星期天」可寫，例如 on Sundays、on Sunday 等\"]（原 makeSentence：instructionZh「用 wash 造一個句子，說說你會洗的東西。」、referenceEn [\"I wash my car on Sunday.\",\"I wash the dishes after dinner.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

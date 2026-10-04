@@ -231,16 +231,18 @@
     },
     {
       "id": "a1-u03-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "weekend",
-      "instructionZh": "用 weekend 造一個句子，說說你這個週末要做什麼。",
+      "type": "translate",
+      "promptZh": "這個週末我會打掃房子。",
+      "hintWords": [
+        "weekend"
+      ],
       "referenceEn": [
-        "I will visit my grandmother this weekend.",
-        "This weekend, I am going to the beach."
+        "I am going to clean the house this weekend.",
+        "I will clean the house this weekend."
       ],
       "rubricZh": [
-        "「這個週末」用 this weekend，前面不加 on（放句首或句尾都可以）",
-        "未來的計畫用表示未來的寫法（例如 will、be going to、現在進行式）"
+        "「這個週末」例如 this weekend 等，前面不加 on，放句首、句尾都可以",
+        "未來的計畫可寫，例如 will、be going to 等"
       ]
     }
   ],
@@ -416,6 +418,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：this、one 代入成 I will see you this morning／one morning. 都說得通；換成 ago、half，see you ago/half morning 文法不通",
         "resolution": "改為 [\"⋯以前\", \"明天\", \"下午\", \"一半\"]（原 [\"這個\", \"明天\", \"下午\", \"某一個\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（weekend）原位換成翻譯題，沿用題 id a1-u03-l06-q17；目標字沿用 weekend",
+        "resolution": "改為 translate：promptZh「這個週末我要打掃房子。」、hintWords [\"weekend\"]、referenceEn [\"I am going to clean the house this weekend.\",\"I will clean the house this weekend.\"]、rubricZh [\"「這個週末」例如 this weekend 等，前面不加 on，放句首、句尾都可以\",\"未來的計畫可寫，例如 will、be going to 等\"]（原 makeSentence：instructionZh「用 weekend 造一個句子，說說你這個週末要做什麼。」、referenceEn [\"I will visit my grandmother this weekend.\",\"This weekend, I am going to the beach.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8），改「會」",
+        "resolution": "改為 promptZh「這個週末我會打掃房子。」（原「這個週末我要打掃房子。」）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

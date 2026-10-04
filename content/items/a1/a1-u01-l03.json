@@ -232,17 +232,18 @@
     },
     {
       "id": "a1-u01-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "but",
-      "instructionZh": "用 but 造一個句子，說說你喜歡和不喜歡的兩樣食物。",
+      "type": "translate",
+      "promptZh": "這家店很小，但是很乾淨。",
+      "hintWords": [
+        "but"
+      ],
       "referenceEn": [
-        "I like apples, but I do not like bananas.",
-        "I like rice, but I do not like fish."
+        "This shop is small, but it is clean.",
+        "This shop is small, but it's very clean."
       ],
       "rubricZh": [
-        "用 but 連接意思相反的兩部分",
-        "表達不喜歡時可用 do not（don't）like",
-        "but 後面可以是完整句子，也可以是省略寫法（例如 but not bananas）"
+        "用 but 連接意思相反的兩部分；but 後面寫完整句子或省略寫法（例如 but clean）都正確",
+        "「這家店」可寫，例如 this shop、this store 等"
       ]
     }
   ],
@@ -350,6 +351,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：but 是 q13 正解改 in；we 改 on，使四選項皆介系詞；避開 for／to（也通）",
         "resolution": "改為 [\"在\", \"在⋯裡面\", \"從；來自\", \"在⋯上面\"]（原 [\"在\", \"但是\", \"從；來自\", \"我們\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（but）原位換成翻譯題，沿用題 id a1-u01-l03-q17；目標字沿用 but",
+        "resolution": "改為 translate：promptZh「這家店很小，但是很乾淨。」、hintWords [\"but\"]、referenceEn [\"This shop is small, but it is clean.\",\"This shop is small, but it's very clean.\"]、rubricZh [\"用 but 連接意思相反的兩部分；but 後面寫完整句子或省略寫法（例如 but clean）都正確\",\"「這家店」可寫，例如 this shop、this store 等\"]（原 makeSentence：instructionZh「用 but 造一個句子，說說你喜歡和不喜歡的兩樣食物。」、referenceEn [\"I like apples, but I do not like bananas.\",\"I like rice, but I do not like fish.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

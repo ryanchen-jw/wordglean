@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u23-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "practice",
-      "instructionZh": "用 practice 造一個句子，說說你常練習的事。",
+      "type": "translate",
+      "promptZh": "那個樂團每週六練習。",
+      "hintWords": [
+        "practice"
+      ],
       "referenceEn": [
-        "I practice the piano every day.",
-        "I practice English with my friends."
+        "The band practices every Saturday.",
+        "The band practices on Saturdays."
       ],
       "rubricZh": [
-        "practice 後面可接名詞或動名詞（例如 practice English、practice speaking）",
-        "習慣性的事用現在簡單式"
+        "practice 可單獨當動詞（例如 The band practices…）；英式 practises 也正確",
+        "「每週六」可寫，例如 every Saturday、on Saturdays 等"
       ]
     }
   ],
@@ -286,6 +288,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：agree 是 q13 正解改 break（避開 pick、carry 也通）",
         "resolution": "改為 [\"弄壞\", \"選擇\", \"練習\", \"活動\"]（原 [\"同意\", \"選擇\", \"練習\", \"活動\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（practice）原位換成翻譯題，沿用題 id a1-u23-l02-q17；目標字沿用 practice",
+        "resolution": "改為 translate：promptZh「那個樂團每週六練習。」、hintWords [\"practice\"]、referenceEn [\"The band practices every Saturday.\",\"The band practices on Saturdays.\"]、rubricZh [\"practice 可單獨當動詞（例如 The band practices…）；英式 practises 也正確\",\"「每週六」可寫，例如 every Saturday、on Saturdays 等\"]（原 makeSentence：instructionZh「用 practice 造一個句子，說說你常練習的事。」、referenceEn [\"I practice the piano every day.\",\"I practice English with my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

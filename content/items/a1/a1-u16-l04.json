@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u16-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "note",
-      "instructionZh": "用 note 造一個句子，說說你上課或開會時做筆記的習慣。",
+      "type": "translate",
+      "promptZh": "我可以看一下你的筆記嗎？",
+      "hintWords": [
+        "note"
+      ],
       "referenceEn": [
-        "I take notes in every class.",
-        "I write notes in my notebook at meetings."
+        "Can I see your notes?",
+        "Can I look at your notes?"
       ],
       "rubricZh": [
-        "「做筆記」可用 take notes、write notes 等",
-        "習慣性的事用現在簡單式"
+        "「筆記」可寫，例如 notes、note 等",
+        "請求可寫，例如 Can I see…、Can I look at…、May I… 等"
       ]
     }
   ],
@@ -347,6 +349,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：The teacher writes the new words on the test. 只看英文也成立（把新單字出在考卷上），test 換成 idea，寫在主意上語意不通",
         "resolution": "改為 [\"黑板\", \"主意\", \"科技\", \"科目\"]（原 [\"黑板\", \"考試\", \"科技\", \"科目\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（note）原位換成翻譯題，沿用題 id a1-u16-l04-q17；目標字沿用 note",
+        "resolution": "改為 translate：promptZh「我可以看一下你的筆記嗎？」、hintWords [\"note\"]、referenceEn [\"Can I see your notes?\",\"Can I look at your notes?\"]、rubricZh [\"「筆記」可寫，例如 notes、note 等\",\"請求可寫，例如 Can I see…、Can I look at…、May I… 等\"]（原 makeSentence：instructionZh「用 note 造一個句子，說說你上課或開會時做筆記的習慣。」、referenceEn [\"I take notes in every class.\",\"I write notes in my notebook at meetings.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

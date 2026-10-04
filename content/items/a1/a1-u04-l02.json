@@ -231,16 +231,18 @@
     },
     {
       "id": "a1-u04-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "brother",
-      "instructionZh": "用 brother 造一個句子，說說你的兄弟（或朋友的兄弟）。",
+      "type": "translate",
+      "promptZh": "我弟弟喜歡踢足球。",
+      "hintWords": [
+        "brother"
+      ],
       "referenceEn": [
-        "I have one brother. He is ten.",
-        "My brother is a cop."
+        "My little brother likes to play soccer.",
+        "My younger brother likes playing soccer."
       ],
       "rubricZh": [
-        "brother 可指哥哥或弟弟（也可寫 older／younger brother、big／little brother）",
-        "動詞配合主詞（例如 My brother is、I have）"
+        "「弟弟」可寫，例如 little brother、younger brother、brother 等",
+        "「踢足球」可寫，例如 play soccer、play football 等；like 後面接 to＋原形、動名詞都正確"
       ]
     }
   ],
@@ -344,6 +346,12 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：切開後第一段與干擾項長度、格式一致（括號註記移到第二段或刪除；干擾項補同等具體度）",
         "resolution": "改為 [\"兄弟或姊妹\", \"兒子或女兒\", \"叔叔或阿姨\"]（原 [\"兄弟\", \"子女\", \"鄰居\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（brother）原位換成翻譯題，沿用題 id a1-u04-l02-q17；目標字沿用 brother",
+        "resolution": "改為 translate：promptZh「我弟弟喜歡踢足球。」、hintWords [\"brother\"]、referenceEn [\"My little brother likes to play soccer.\",\"My younger brother likes playing soccer.\"]、rubricZh [\"「弟弟」可寫，例如 little brother、younger brother、brother 等\",\"「踢足球」可寫，例如 play soccer、play football 等；like 後面接 to＋原形、動名詞都正確\"]（原 makeSentence：instructionZh「用 brother 造一個句子，說說你的兄弟（或朋友的兄弟）。」、referenceEn [\"I have one brother. He is ten.\",\"My brother is a cop.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -1,7 +1,7 @@
 // 乾跑用的決定性假模型：不碰網路、不需金鑰。產出只為走通整條管線（解析、判題、檢查、寫檔、記帳），
 // 內容是固定句型、不代表題目品質。句子只用 A1 字，任何級距的課都能通過用字檢查。
 
-import { PASSAGE_WORDS } from './item-rules.mjs';
+import { PASSAGE_WORDS, compositionFor } from './item-rules.mjs';
 import { estimateTokens, messagesTokens } from './pricing.mjs';
 
 const SENTENCE = 'We read a book in class today.';
@@ -45,13 +45,15 @@ function fakeLesson(lesson) {
         ],
       },
       { type: 'translate', promptZh: SENTENCE_ZH, hintWords: [words[0]], referenceEn: [SENTENCE], rubricZh: ['時態用過去式'] },
-      {
-        type: 'makeSentence',
-        targetWord: words[0],
-        instructionZh: `用「${words[0]}」造一個句子。`,
-        referenceEn: [`We read the word "${words[0]}" in class today.`],
-        rubricZh: ['句子有主詞和動詞'],
-      },
+      compositionFor(lesson.level).makeSentence
+        ? {
+            type: 'makeSentence',
+            targetWord: words[0],
+            instructionZh: `用「${words[0]}」造一個句子。`,
+            referenceEn: [`We read the word "${words[0]}" in class today.`],
+            rubricZh: ['句子有主詞和動詞'],
+          }
+        : { type: 'translate', promptZh: SENTENCE_ZH, hintWords: [words[1]], referenceEn: [SENTENCE], rubricZh: ['時態用過去式'] },
     ],
   };
 }

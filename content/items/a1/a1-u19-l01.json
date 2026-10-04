@@ -226,16 +226,18 @@
     },
     {
       "id": "a1-u19-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "really",
-      "instructionZh": "用 really 造一個句子，說說你非常喜歡的東西。",
+      "type": "translate",
+      "promptZh": "我真的很想念我的家人。",
+      "hintWords": [
+        "really"
+      ],
       "referenceEn": [
-        "I really like ice cream.",
-        "I really love this song."
+        "I really miss my family.",
+        "I miss my family very much."
       ],
       "rubricZh": [
-        "really 可放在一般動詞前（例如 really like）或形容詞前（例如 really good）",
-        "動詞配合主詞和時態"
+        "really 可放在一般動詞前（例如 really miss）；寫 miss … very much、miss … a lot 等也正確",
+        "「想念」用 miss，後面直接接人"
       ]
     }
   ],
@@ -297,6 +299,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Much、Most、Too 皆與 q14 共用，改副詞 Really、How、Very（How 文法可放入，避開也通的 When）",
         "resolution": "改為 [\"真的\", \"為什麼\", \"怎麼\", \"非常\"]（原 [\"很多\", \"為什麼\", \"大多數的\", \"也\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（really）原位換成翻譯題，沿用題 id a1-u19-l01-q17；目標字沿用 really",
+        "resolution": "改為 translate：promptZh「我真的很想念我的家人。」、hintWords [\"really\"]、referenceEn [\"I really miss my family.\",\"I really miss my family very much.\"]、rubricZh [\"really 放在一般動詞前（例如 really miss）\",\"「想念」用 miss，後面直接接人\"]（原 makeSentence：instructionZh「用 really 造一個句子，說說你非常喜歡的東西。」、referenceEn [\"I really like ice cream.\",\"I really love this song.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 變體 2 really 與 very much 重複加強，不自然",
+        "resolution": "改為 referenceEn [\"I really miss my family.\",\"I miss my family very much.\"]（原 [\"I really miss my family.\",\"I really miss my family very much.\"]）、rubricZh [\"really 可放在一般動詞前（例如 really miss）；寫 miss … very much、miss … a lot 等也正確\",\"「想念」用 miss，後面直接接人\"]（原 [\"really 放在一般動詞前（例如 really miss）\",\"「想念」用 miss，後面直接接人\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

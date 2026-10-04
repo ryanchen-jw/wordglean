@@ -231,16 +231,18 @@
     },
     {
       "id": "a1-u07-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "stay",
-      "instructionZh": "用 stay 造一個句子，說說你週末會待在哪裡。",
+      "type": "translate",
+      "promptZh": "今晚我們住在一家小旅館。",
+      "hintWords": [
+        "stay"
+      ],
       "referenceEn": [
-        "I stay at home on the weekend.",
-        "This weekend, I will stay with my grandparents."
+        "We are staying at a small hotel tonight.",
+        "We will stay at a small hotel tonight."
       ],
       "rubricZh": [
-        "stay 後面接地點（例如 stay at home、stay home、stay in Taipei）或用 with 接人",
-        "時態配合內容（例如習慣用現在簡單式；未來的計畫用 will 等）"
+        "stay 後面接地點（例如 stay at a small hotel、stay in a small hotel）",
+        "今晚的事可寫，例如 are staying、will stay 等"
       ]
     }
   ],
@@ -398,6 +400,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：work、meet 代入成 Can you work here for a minute?／Can you meet here for a minute? 說得通；換成 excuse、thank（及物動詞缺受詞，文法不通）",
         "resolution": "改為 [\"原諒\", \"等待\", \"感謝\", \"生意\"]（原 [\"工作\", \"等待\", \"見面\", \"生意\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（stay）原位換成翻譯題，沿用題 id a1-u07-l01-q17；目標字沿用 stay",
+        "resolution": "改為 translate：promptZh「今晚我們住在一家小旅館。」、hintWords [\"stay\"]、referenceEn [\"We are staying at a small hotel tonight.\",\"We will stay at a small hotel tonight.\"]、rubricZh [\"stay 後面接地點（例如 stay at a small hotel、stay in a small hotel）\",\"今晚的事可寫，例如 are staying、will stay 等\"]（原 makeSentence：instructionZh「用 stay 造一個句子，說說你週末會待在哪裡。」、referenceEn [\"I stay at home on the weekend.\",\"This weekend, I will stay with my grandparents.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

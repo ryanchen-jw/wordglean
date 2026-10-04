@@ -227,17 +227,18 @@
     },
     {
       "id": "a1-u01-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "some",
-      "instructionZh": "用 some 造一個句子，說說你想要或擁有的一些東西。",
+      "type": "translate",
+      "promptZh": "桌上有一些花。",
+      "hintWords": [
+        "some"
+      ],
       "referenceEn": [
-        "I want some milk.",
-        "I have some books in my bag."
+        "There are some flowers on the table.",
+        "Some flowers are on the table."
       ],
       "rubricZh": [
-        "用 some 表示「一些」",
-        "可數名詞用複數（books）",
-        "句子有主詞和動詞"
+        "用 some 表示「一些」，可數名詞用複數（例如 some flowers）",
+        "可寫，例如 There are some flowers…、Some flowers are… 等"
       ]
     }
   ],
@@ -341,6 +342,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：主 session 裁定：you、her 代入成 I love you/her very much. 只看英文本身成立；換成主格 we、they，I love we/they very much 文法不通",
         "resolution": "改為 [\"我們\", \"他們（主詞）\", \"我（受詞）\", \"他們（受詞）\"]（原 [\"她\", \"你\", \"我（受詞）\", \"他們（受詞）\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（some）原位換成翻譯題，沿用題 id a1-u01-l06-q17；目標字沿用 some",
+        "resolution": "改為 translate：promptZh「桌上有一些花。」、hintWords [\"some\"]、referenceEn [\"There are some flowers on the table.\",\"Some flowers are on the table.\"]、rubricZh [\"用 some 表示「一些」，可數名詞用複數（例如 some flowers）\",\"可寫，例如 There are some flowers…、Some flowers are… 等\"]（原 makeSentence：instructionZh「用 some 造一個句子，說說你想要或擁有的一些東西。」、referenceEn [\"I want some milk.\",\"I have some books in my bag.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

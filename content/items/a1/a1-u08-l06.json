@@ -213,16 +213,18 @@
     },
     {
       "id": "a1-u08-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "tea",
-      "instructionZh": "用 tea 造一個句子，說說你喝茶的習慣。",
+      "type": "translate",
+      "promptZh": "這家店的茶很有名。",
+      "hintWords": [
+        "tea"
+      ],
       "referenceEn": [
-        "I drink green tea every afternoon.",
-        "I like my tea with milk."
+        "The tea in this shop is very famous.",
+        "This shop is famous for its tea."
       ],
       "rubricZh": [
-        "泛指茶時通常不加 a（例如 I drink tea）；點一杯茶可說 a cup of tea",
-        "習慣性的事用現在簡單式"
+        "「很有名」可寫，例如 is very famous、is famous for its tea 等",
+        "泛指茶時不加 a；「這家店」可寫，例如 this shop、this store 等"
       ]
     }
   ],
@@ -368,6 +370,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Would you like butter or sugar in your coffee? 只看英文也說得通（奶油咖啡確有其事），butter 換成 tomato，番茄加咖啡語意不通",
         "resolution": "改為 [\"起司\", \"鮮奶油\", \"番茄\", \"果汁\"]（原 [\"起司\", \"鮮奶油\", \"奶油\", \"果汁\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（tea）原位換成翻譯題，沿用題 id a1-u08-l06-q16；目標字沿用 tea",
+        "resolution": "改為 translate：promptZh「這家店的茶很有名。」、hintWords [\"tea\"]、referenceEn [\"The tea in this shop is very famous.\",\"This shop is famous for its tea.\"]、rubricZh [\"「很有名」可寫，例如 is very famous、is famous for its tea 等\",\"泛指茶時不加 a；「這家店」可寫，例如 this shop、this store 等\"]（原 makeSentence：instructionZh「用 tea 造一個句子，說說你喝茶的習慣。」、referenceEn [\"I drink green tea every afternoon.\",\"I like my tea with milk.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

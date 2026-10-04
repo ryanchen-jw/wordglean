@@ -226,16 +226,18 @@
     },
     {
       "id": "a1-u05-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "important",
-      "instructionZh": "用 important 造一個句子，說說對你很重要的一件事或一個人。",
+      "type": "translate",
+      "promptZh": "明天有一場重要的考試。",
+      "hintWords": [
+        "important"
+      ],
       "referenceEn": [
-        "My family is very important to me.",
-        "My job is important to me."
+        "There is an important test tomorrow.",
+        "We have an important test tomorrow."
       ],
       "rubricZh": [
-        "important 放在 be 動詞後面或名詞前面（例如 is important、an important day）",
-        "「對我很重要」可用 important to me 或 important for me"
+        "important 放在名詞前（例如 an important test）；important 前面用 an",
+        "可寫，例如 There is an important test…、We have an important test… 等；寫 exam 也正確"
       ]
     }
   ],
@@ -459,6 +461,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：real 是 q13 正解改 side；little 放不進改 thing（side／thing 文法可通）",
         "resolution": "改為 [\"隊伍；線\", \"白色的\", \"邊\", \"東西\"]（原 [\"隊伍；線\", \"白色的\", \"真的\", \"小的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（important）原位換成翻譯題，沿用題 id a1-u05-l03-q17；目標字沿用 important",
+        "resolution": "改為 translate：promptZh「明天有一場重要的考試。」、hintWords [\"important\"]、referenceEn [\"There is an important test tomorrow.\",\"We have an important test tomorrow.\"]、rubricZh [\"important 放在名詞前（例如 an important test）；important 前面用 an\",\"可寫，例如 There is an important test…、We have an important test… 等；寫 exam 也正確\"]（原 makeSentence：instructionZh「用 important 造一個句子，說說對你很重要的一件事或一個人。」、referenceEn [\"My family is very important to me.\",\"My job is important to me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

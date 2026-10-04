@@ -218,16 +218,18 @@
     },
     {
       "id": "a1-u04-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "uncle",
-      "instructionZh": "用 uncle 造一個句子，說說你的一位叔叔、伯伯或舅舅。",
+      "type": "translate",
+      "promptZh": "我們這個月會去看叔叔。",
+      "hintWords": [
+        "uncle"
+      ],
       "referenceEn": [
-        "My uncle lives in Taipei.",
-        "My uncle is a cook at a hotel."
+        "We will visit our uncle this month.",
+        "We are going to visit our uncle this month."
       ],
       "rubricZh": [
-        "可寫 my uncle、Uncle Ken，或 I have an uncle… 等",
-        "動詞配合主詞（例如 My uncle lives、I have）"
+        "「去看」可寫，例如 visit our uncle、go to see our uncle 等；所有格寫 our、my 等都正確",
+        "未來的計畫可寫，例如 will、be going to 等"
       ]
     }
   ],
@@ -379,6 +381,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：Boyfriend 與 q12 共用、Celebration 放不進；改 Aunt、Sorry（Aunt Tom／Sorry Tom 文法可通）；避開 Hi、Hello（也通）",
         "resolution": "改為 [\"阿姨\", \"親愛的\", \"女朋友\", \"抱歉\"]（原 [\"慶祝活動\", \"親愛的\", \"女朋友\", \"男朋友\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（uncle）原位換成翻譯題，沿用題 id a1-u04-l05-q16；目標字沿用 uncle",
+        "resolution": "改為 translate：promptZh「我們這個月要去看叔叔。」、hintWords [\"uncle\"]、referenceEn [\"We will visit our uncle this month.\",\"We are going to visit our uncle this month.\"]、rubricZh [\"「去看」可寫，例如 visit our uncle、go to see our uncle 等；所有格寫 our、my 等都正確\",\"未來的計畫可寫，例如 will、be going to 等\"]（原 makeSentence：instructionZh「用 uncle 造一個句子，說說你的一位叔叔、伯伯或舅舅。」、referenceEn [\"My uncle lives in Taipei.\",\"My uncle is a cook at a hotel.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8），改「會」",
+        "resolution": "改為 promptZh「我們這個月會去看叔叔。」（原「我們這個月要去看叔叔。」）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -214,16 +214,19 @@
     },
     {
       "id": "a1-u15-l07-q16",
-      "type": "makeSentence",
-      "targetWord": "rose",
-      "instructionZh": "用 rose 造一個句子，說說你喜歡的花或送花的經驗。",
+      "type": "translate",
+      "promptZh": "這些玫瑰有很香的味道。",
+      "hintWords": [
+        "rose"
+      ],
       "referenceEn": [
-        "I like red roses.",
-        "I gave my mother a rose on her birthday."
+        "These roses have a nice smell.",
+        "These roses have a sweet smell."
       ],
       "rubricZh": [
-        "泛指玫瑰用複數 roses",
-        "送花可用 give someone a rose 或 give a rose to someone（過去式 gave）"
+        "smell 當名詞「氣味」（例如 have a nice smell）；多朵玫瑰用複數（these roses）",
+        "「很香的味道」可寫，例如 a nice smell、a sweet smell、a good smell 等",
+        "寫 These roses smell nice、smell sweet 等也正確"
       ]
     }
   ],
@@ -303,6 +306,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：frog 與 q12 共用；兩題原都無四選項同詞性，改為四個形容詞 cold/sunny/cool",
         "resolution": "改為 [\"冷的\", \"有霧的\", \"晴朗的\", \"涼爽的\"]（原 [\"玫瑰\", \"有霧的\", \"老虎\", \"青蛙\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（rose）原位換成翻譯題，沿用題 id a1-u15-l07-q16；目標字沿用 rose",
+        "resolution": "改為 translate：promptZh「這些玫瑰聞起來很香。」、hintWords [\"rose\"]、referenceEn [\"These roses smell very nice.\",\"These roses smell good.\"]、rubricZh [\"多朵玫瑰用複數（these roses）\",\"「聞起來很香」可寫，例如 smell nice、smell good、smell sweet 等\"]（原 makeSentence：instructionZh「用 rose 造一個句子，說說你喜歡的花或送花的經驗。」、referenceEn [\"I like red roses.\",\"I gave my mother a rose on her birthday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 依 §10③ 視 smell 動詞「聞起來」（B1）為越級，改名詞「氣味」（A1）寫法",
+        "resolution": "改為 promptZh「這些玫瑰有很香的味道。」（原「這些玫瑰聞起來很香。」）、referenceEn [\"These roses have a nice smell.\",\"These roses have a sweet smell.\"]（原 [\"These roses smell very nice.\",\"These roses smell good.\"]）、rubricZh [\"smell 當名詞「氣味」（例如 have a nice smell）；多朵玫瑰用複數（these roses）\",\"「很香的味道」可寫，例如 a nice smell、a sweet smell、a good smell 等\"]（原 [\"多朵玫瑰用複數（these roses）\",\"「聞起來很香」可寫，例如 smell nice、smell good、smell sweet 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/rubricZh",
+        "message": "執行長親審：要點比參考答案嚴——These roses smell nice/sweet.（smell 動詞）是正確譯法卻可能被判錯；只放寬要點，動詞 smell 雖標 B1 批改照收，參考答案仍用名詞",
+        "resolution": "改為 [\"smell 當名詞「氣味」（例如 have a nice smell）；多朵玫瑰用複數（these roses）\",\"「很香的味道」可寫，例如 a nice smell、a sweet smell、a good smell 等\",\"寫 These roses smell nice、smell sweet 等也正確\"]（原 [\"smell 當名詞「氣味」（例如 have a nice smell）；多朵玫瑰用複數（these roses）\",\"「很香的味道」可寫，例如 a nice smell、a sweet smell、a good smell 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

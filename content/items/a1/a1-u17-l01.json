@@ -239,16 +239,19 @@
     },
     {
       "id": "a1-u17-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "get",
-      "instructionZh": "用 get 造一個句子（例如 get up、get home、get a gift），說說你的日常。",
+      "type": "translate",
+      "promptZh": "你幾點到家？",
+      "hintWords": [
+        "get"
+      ],
       "referenceEn": [
-        "I get up at six every day.",
-        "I get home at seven after work."
+        "What time do you get home?",
+        "When do you get home?"
       ],
       "rubricZh": [
-        "get 可以搭配很多詞（例如 get up、get home、get a gift），用法合理即可",
-        "習慣性的事用現在簡單式"
+        "「到家」可寫，例如 get home 等，home 前面不加 to",
+        "問平常可寫，例如 What time do you…、When do you… 等",
+        "問今天這一次可寫，例如 What time will you get home? 等"
       ]
     }
   ],
@@ -376,6 +379,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：take 代入「I don't take his phone number.」情境上說得通（不記下他的號碼），換成 brush（I don't brush his phone number. 語意不通）",
         "resolution": "改為 [\"做\", \"刷\", \"去\", \"知道\"]（原 [\"做\", \"拿\", \"去\", \"知道\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（get）原位換成翻譯題，沿用題 id a1-u17-l01-q18；目標字沿用 get",
+        "resolution": "改為 translate：promptZh「你幾點到家？」、hintWords [\"get\"]、referenceEn [\"What time do you get home?\",\"When do you get home?\"]、rubricZh [\"「到家」可寫，例如 get home 等，home 前面不加 to\",\"問時間可寫，例如 What time…、When… 等\"]（原 makeSentence：instructionZh「用 get 造一個句子（例如 get up、get home、get a gift），說說你的日常。」、referenceEn [\"I get up at six every day.\",\"I get home at seven after work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "執行長裁示：第③關：SUS 「你幾點到家？」也可指今天這一次，要點加 will 變體",
+        "resolution": "改為 rubricZh [\"「到家」可寫，例如 get home 等，home 前面不加 to\",\"問平常可寫，例如 What time do you…、When do you… 等\",\"問今天這一次可寫，例如 What time will you get home? 等\"]（原 [\"「到家」可寫，例如 get home 等，home 前面不加 to\",\"問時間可寫，例如 What time…、When… 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u12-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "vacation",
-      "instructionZh": "用 vacation 造一個句子，說說你想去或去過哪裡度假。",
+      "type": "translate",
+      "promptZh": "老師這個月在度假。",
+      "hintWords": [
+        "vacation"
+      ],
       "referenceEn": [
-        "I want to go to Japan on vacation.",
-        "I went to the beach on my vacation."
+        "The teacher is on vacation this month.",
+        "Our teacher is on vacation this month."
       ],
       "rubricZh": [
-        "「去度假」可用 go on vacation、on vacation 等",
-        "時態配合內容（例如想做的事用 want to；過去的事用過去式）"
+        "「在度假」可寫，例如 is on vacation 等（英式 is on holiday 也正確）",
+        "「這個月」用 this month"
       ]
     }
   ],
@@ -361,6 +363,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：vacation 是 q14 正解，換 airplane",
         "resolution": "改為 [\"路\", \"噴射機\", \"飛機\", \"汽車\"]（原 [\"路\", \"噴射機\", \"假期\", \"汽車\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（vacation）原位換成翻譯題，沿用題 id a1-u12-l01-q17；目標字沿用 vacation",
+        "resolution": "改為 translate：promptZh「老師這個月在度假。」、hintWords [\"vacation\"]、referenceEn [\"The teacher is on vacation this month.\",\"Our teacher is on vacation this month.\"]、rubricZh [\"「在度假」可寫，例如 is on vacation 等（英式 is on holiday 也正確）\",\"「這個月」用 this month\"]（原 makeSentence：instructionZh「用 vacation 造一個句子，說說你想去或去過哪裡度假。」、referenceEn [\"I want to go to Japan on vacation.\",\"I went to the beach on my vacation.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

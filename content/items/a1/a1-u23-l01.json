@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u23-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "join",
-      "instructionZh": "用 join 造一個句子，說說你想參加的社團或活動。",
+      "type": "translate",
+      "promptZh": "她想加入我們的讀書會。",
+      "hintWords": [
+        "join"
+      ],
       "referenceEn": [
-        "I want to join the swimming club.",
-        "Can I join your game?"
+        "She wants to join our book club.",
+        "She would like to join our book club."
       ],
       "rubricZh": [
-        "join 後面可直接接團體或活動（例如 join the club、join us）；參加活動說 join in the game 也正確",
-        "「想參加」可用 want to join、would like to join 等"
+        "join 後面直接接團體（例如 join our book club）",
+        "「想」可寫，例如 wants to、would like to 等"
       ]
     }
   ],
@@ -322,6 +324,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：mind、action 與 q13 共用，改動詞 cut、kill；care 留本題",
         "resolution": "改為 [\"搬；拿\", \"切\", \"殺死\", \"照顧\"]（原 [\"搬；拿\", \"心思\", \"動作\", \"照顧\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（join）原位換成翻譯題，沿用題 id a1-u23-l01-q17；目標字沿用 join",
+        "resolution": "改為 translate：promptZh「她想加入我們的讀書會。」、hintWords [\"join\"]、referenceEn [\"She wants to join our book club.\",\"She would like to join our book club.\"]、rubricZh [\"join 後面直接接團體（例如 join our book club）\",\"「想」可寫，例如 wants to、would like to 等\"]（原 makeSentence：instructionZh「用 join 造一個句子，說說你想參加的社團或活動。」、referenceEn [\"I want to join the swimming club.\",\"Can I join your game?\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

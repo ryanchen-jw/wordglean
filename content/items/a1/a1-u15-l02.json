@@ -226,16 +226,18 @@
     },
     {
       "id": "a1-u15-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "animal",
-      "instructionZh": "用 animal 造一個句子，說說你最喜歡的動物。",
+      "type": "translate",
+      "promptZh": "動物園裡有很多動物。",
+      "hintWords": [
+        "animal"
+      ],
       "referenceEn": [
-        "My favorite animal is the cat.",
-        "I love dogs. They are my favorite animals."
+        "There are many animals in the zoo.",
+        "The zoo has many animals."
       ],
       "rubricZh": [
-        "「最喜歡的動物」可用 my favorite animal",
-        "泛指動物可用複數（例如 animals、dogs）"
+        "泛指動物用複數（animals）",
+        "可寫，例如 There are many animals in the zoo、The zoo has a lot of animals 等"
       ]
     }
   ],
@@ -339,6 +341,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原只有 hot 放得進空格，bird 換 sunny",
         "resolution": "改為 [\"海\", \"熱的\", \"冷的\", \"晴朗的\"]（原 [\"海\", \"熱的\", \"冷的\", \"鳥\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（animal）原位換成翻譯題，沿用題 id a1-u15-l02-q17；目標字沿用 animal",
+        "resolution": "改為 translate：promptZh「動物園裡有很多動物。」、hintWords [\"animal\"]、referenceEn [\"There are many animals in the zoo.\",\"The zoo has many animals.\"]、rubricZh [\"泛指動物用複數（animals）\",\"可寫，例如 There are many animals in the zoo、The zoo has a lot of animals 等\"]（原 makeSentence：instructionZh「用 animal 造一個句子，說說你最喜歡的動物。」、referenceEn [\"My favorite animal is the cat.\",\"I love dogs. They are my favorite animals.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

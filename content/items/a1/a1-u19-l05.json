@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u19-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "near",
-      "instructionZh": "用 near 造一個句子，說說你家附近有什麼。",
+      "type": "translate",
+      "promptZh": "這附近有醫院嗎？",
+      "hintWords": [
+        "near"
+      ],
       "referenceEn": [
-        "There is a park near my home.",
-        "I live near a big supermarket."
+        "Is there a hospital near here?",
+        "Is there any hospital near here?"
       ],
       "rubricZh": [
-        "near 後面通常直接接地點（例如 near my home）",
-        "可用 There is… near…、I live near… 等"
+        "near 後面接地點（例如 near here）",
+        "問「有沒有」可寫，例如 Is there a…、Is there any… 等"
       ]
     }
   ],
@@ -329,6 +331,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Else 是 q14 正解改 Each（避開 What 也通）",
         "resolution": "改為 [\"每個\", \"也\", \"任何人\", \"誰的\"]（原 [\"別的\", \"也\", \"任何人\", \"誰的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（near）原位換成翻譯題，沿用題 id a1-u19-l05-q17；目標字沿用 near",
+        "resolution": "改為 translate：promptZh「這附近有醫院嗎？」、hintWords [\"near\"]、referenceEn [\"Is there a hospital near here?\",\"Is there any hospital near here?\"]、rubricZh [\"near 後面接地點（例如 near here）\",\"問「有沒有」可寫，例如 Is there a…、Is there any… 等\"]（原 makeSentence：instructionZh「用 near 造一個句子，說說你家附近有什麼。」、referenceEn [\"There is a park near my home.\",\"I live near a big supermarket.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

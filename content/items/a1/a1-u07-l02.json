@@ -226,16 +226,18 @@
     },
     {
       "id": "a1-u07-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "sleep",
-      "instructionZh": "用 sleep 造一個句子，說說你每天睡多久或幾點睡。",
+      "type": "translate",
+      "promptZh": "寶寶正在睡覺。",
+      "hintWords": [
+        "sleep"
+      ],
       "referenceEn": [
-        "I sleep seven hours every night.",
-        "I usually go to sleep at eleven."
+        "The baby is sleeping.",
+        "The baby is sleeping now."
       ],
       "rubricZh": [
-        "習慣性的事用現在簡單式（例如 I sleep）",
-        "時數或時間可用 hours、at、from…to、around 等（例如 seven hours、at eleven、from eleven to seven）"
+        "「正在睡覺」用現在進行式（例如 is sleeping）；寫 is asleep 也正確",
+        "「寶寶」可寫，例如 the baby、my baby 等"
       ]
     }
   ],
@@ -387,6 +389,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：special、different 代入成 his business is very special/different 說得通；換成 short、wrong，his business is very short/wrong 文法通、語意不通",
         "resolution": "改為 [\"成功的\", \"短的\", \"會議\", \"錯的\"]（原 [\"成功的\", \"特別的\", \"會議\", \"不同的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（sleep）原位換成翻譯題，沿用題 id a1-u07-l02-q17；目標字沿用 sleep",
+        "resolution": "改為 translate：promptZh「寶寶正在睡覺。」、hintWords [\"sleep\"]、referenceEn [\"The baby is sleeping.\",\"The baby is sleeping now.\"]、rubricZh [\"「正在睡覺」用現在進行式（例如 is sleeping）\",\"「寶寶」可寫，例如 the baby、my baby 等\"]（原 makeSentence：instructionZh「用 sleep 造一個句子，說說你每天睡多久或幾點睡。」、referenceEn [\"I sleep seven hours every night.\",\"I usually go to sleep at eleven.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點未收 is asleep",
+        "resolution": "改為 rubricZh [\"「正在睡覺」用現在進行式（例如 is sleeping）；寫 is asleep 也正確\",\"「寶寶」可寫，例如 the baby、my baby 等\"]（原 [\"「正在睡覺」用現在進行式（例如 is sleeping）\",\"「寶寶」可寫，例如 the baby、my baby 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

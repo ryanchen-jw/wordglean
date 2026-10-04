@@ -226,16 +226,18 @@
     },
     {
       "id": "a1-u09-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "clothes",
-      "instructionZh": "用 clothes 造一個句子，說說你喜歡穿什麼樣的衣服。",
+      "type": "translate",
+      "promptZh": "我的衣服都在箱子裡。",
+      "hintWords": [
+        "clothes"
+      ],
       "referenceEn": [
-        "I like black clothes.",
-        "I like clothes with pockets."
+        "All my clothes are in the box.",
+        "My clothes are all in the box."
       ],
       "rubricZh": [
-        "clothes 一定是複數，不說 a clothes",
-        "動詞配合主詞（例如 I like、I wear）"
+        "clothes 一定是複數，動詞用 are",
+        "「都」可寫，例如 All my clothes…、My clothes are all… 等"
       ]
     }
   ],
@@ -393,6 +395,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：hat/pocket 是名詞放不進 very ____，換 kind/pretty，四項皆形容詞",
         "resolution": "改為 [\"親切的\", \"胖的\", \"漂亮的\", \"高的\"]（原 [\"帽子\", \"胖的\", \"口袋\", \"高的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（clothes）原位換成翻譯題，沿用題 id a1-u09-l02-q17；目標字沿用 clothes",
+        "resolution": "改為 translate：promptZh「我的衣服都在箱子裡。」、hintWords [\"clothes\"]、referenceEn [\"All my clothes are in the box.\",\"My clothes are all in the box.\"]、rubricZh [\"clothes 一定是複數，動詞用 are\",\"「都」可寫，例如 All my clothes…、My clothes are all… 等\"]（原 makeSentence：instructionZh「用 clothes 造一個句子，說說你喜歡穿什麼樣的衣服。」、referenceEn [\"I like black clothes.\",\"I like clothes with pockets.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

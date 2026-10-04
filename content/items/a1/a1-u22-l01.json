@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u22-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "famous",
-      "instructionZh": "用 famous 造一個句子，說說一個有名的人或地方。",
+      "type": "translate",
+      "promptZh": "這座寺廟很有名。",
+      "hintWords": [
+        "famous"
+      ],
       "referenceEn": [
-        "This singer is famous in Taiwan.",
-        "Paris is a famous city."
+        "This temple is very famous.",
+        "This temple is famous."
       ],
       "rubricZh": [
-        "famous 放在 be 動詞後面或名詞前面（例如 is famous、a famous singer）",
-        "「在某地有名」可用 famous in…"
+        "famous 放在 be 動詞後面（例如 is famous）",
+        "「很」可寫，例如 very 等，沒寫也正確"
       ]
     }
   ],
@@ -325,6 +327,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：paint 代入「I paint toy cars. I have fifty of them.」說得通（模型塗裝嗜好），換成 spell；wash 代入「I wash toy cars.」情境上也說得通，換成 answer（I answer toy cars 文法通、語意不通）（實作端複核：smoke 涉及抽菸題材，改 answer）",
         "resolution": "改為 [\"拼寫\", \"照片\", \"回答\", \"收集\"]（原 [\"畫\", \"照片\", \"洗\", \"收集\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（famous）原位換成翻譯題，沿用題 id a1-u22-l01-q17；目標字沿用 famous",
+        "resolution": "改為 translate：promptZh「這座寺廟很有名。」、hintWords [\"famous\"]、referenceEn [\"This temple is very famous.\",\"This temple is famous.\"]、rubricZh [\"famous 放在 be 動詞後面（例如 is famous）\",\"「很」可寫，例如 very 等，沒寫也正確\"]（原 makeSentence：instructionZh「用 famous 造一個句子，說說一個有名的人或地方。」、referenceEn [\"This singer is famous in Taiwan.\",\"Paris is a famous city.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

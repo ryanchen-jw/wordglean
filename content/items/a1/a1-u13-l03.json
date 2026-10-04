@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u13-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "healthy",
-      "instructionZh": "用 healthy 造一個句子，說說你怎麼保持健康，或誰很健康。",
+      "type": "translate",
+      "promptZh": "這些小貓都很健康。",
+      "hintWords": [
+        "healthy"
+      ],
       "referenceEn": [
-        "I eat vegetables to stay healthy.",
-        "My father is very healthy."
+        "These little cats are all healthy.",
+        "All these little cats are healthy."
       ],
       "rubricZh": [
-        "healthy 是形容詞，放在 be 動詞後面或名詞前面（例如 is healthy、healthy food）",
-        "「保持健康」可用 stay healthy、keep healthy 等"
+        "healthy 放在 be 動詞後面（例如 are healthy）",
+        "「都」可寫，例如 all 等；「小貓」可寫，例如 little cats、kittens 等"
       ]
     }
   ],
@@ -358,6 +360,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：medicine 是 q13 正解；改為四個形容詞 handsome/ugly/cute，靠詞義選 healthy",
         "resolution": "改為 [\"英俊的\", \"健康的\", \"醜的\", \"可愛的\"]（原 [\"藥\", \"健康的\", \"骨頭\", \"脖子\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（healthy）原位換成翻譯題，沿用題 id a1-u13-l03-q17；目標字沿用 healthy",
+        "resolution": "改為 translate：promptZh「這些小貓都很健康。」、hintWords [\"healthy\"]、referenceEn [\"These little cats are all healthy.\",\"All these little cats are healthy.\"]、rubricZh [\"healthy 放在 be 動詞後面（例如 are healthy）\",\"「都」可寫，例如 all 等；「小貓」可寫，例如 little cats、kittens 等\"]（原 makeSentence：instructionZh「用 healthy 造一個句子，說說你怎麼保持健康，或誰很健康。」、referenceEn [\"I eat vegetables to stay healthy.\",\"My father is very healthy.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

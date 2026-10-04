@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u15-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "pet",
-      "instructionZh": "用 pet 造一個句子，說說你養（或想養）的寵物。",
+      "type": "translate",
+      "promptZh": "我的寵物是一隻小白兔。",
+      "hintWords": [
+        "pet"
+      ],
       "referenceEn": [
-        "I have a pet cat.",
-        "I want a pet dog."
+        "My pet is a little white rabbit.",
+        "My pet is a small white rabbit."
       ],
       "rubricZh": [
-        "pet 可放在動物名稱前（例如 a pet cat），也可單獨當名詞（例如 I have a pet）",
-        "動詞配合主詞（例如 I have、I want）"
+        "pet 當名詞（例如 My pet is…）",
+        "「小白兔」可寫，例如 a little white rabbit、a small white rabbit 等"
       ]
     }
   ],
@@ -360,6 +362,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Take an umbrella. It is snowy today.（下雪也撐傘）與 It is sunny today.（撐傘遮陽）只看英文都說得通；snowy 換 sweet、sunny 換 tired，形容詞文法可放但天氣語意不通",
         "resolution": "改為 [\"下雨的\", \"累的\", \"甜的\", \"火\"]（原 [\"下雨的\", \"晴朗的\", \"下雪的\", \"火\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（pet）原位換成翻譯題，沿用題 id a1-u15-l01-q17；目標字沿用 pet",
+        "resolution": "改為 translate：promptZh「我的寵物是一隻小白兔。」、hintWords [\"pet\"]、referenceEn [\"My pet is a little white rabbit.\",\"My pet is a small white rabbit.\"]、rubricZh [\"pet 當名詞（例如 My pet is…）\",\"「小白兔」可寫，例如 a little white rabbit、a small white rabbit 等\"]（原 makeSentence：instructionZh「用 pet 造一個句子，說說你養（或想養）的寵物。」、referenceEn [\"I have a pet cat.\",\"I want a pet dog.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

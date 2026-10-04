@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u04-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "visit",
-      "instructionZh": "用 visit 造一個句子，說說你會去探望的一位家人或朋友。",
+      "type": "translate",
+      "promptZh": "很多人夏天去參觀那座寺廟。",
+      "hintWords": [
+        "visit"
+      ],
       "referenceEn": [
-        "I visit my grandmother every Sunday.",
-        "I will visit my friend in Tainan this weekend."
+        "Many people visit that temple in summer.",
+        "In summer, many people visit the temple."
       ],
       "rubricZh": [
-        "visit 後面直接接人或地點，不加 to（例如 visit my grandmother）；寫 go to see my grandmother 也正確",
-        "時態配合內容（例如習慣用現在簡單式；未來的計畫用 will、be going to 等）"
+        "visit 後面直接接地點，不加 to（例如 visit the temple）；寫 go to the temple 也正確",
+        "「那座寺廟」可寫，例如 that temple、the temple 等"
       ]
     }
   ],
@@ -367,6 +369,12 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 share＝分享；與 q16 翻譯（請求分蛋糕）、q15 閱讀（一起吃飯）換了主詞＋情境＋句型",
         "resolution": "改為 \"我弟弟喜歡和我分享他的玩具。\"（原 \"我可以跟你共用雨傘嗎？\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（visit）原位換成翻譯題，沿用題 id a1-u04-l03-q17；目標字沿用 visit",
+        "resolution": "改為 translate：promptZh「很多人夏天去參觀那座寺廟。」、hintWords [\"visit\"]、referenceEn [\"Many people visit that temple in summer.\",\"In summer, many people visit the temple.\"]、rubricZh [\"visit 後面直接接地點，不加 to（例如 visit the temple）；寫 go to the temple 也正確\",\"「那座寺廟」可寫，例如 that temple、the temple 等\"]（原 makeSentence：instructionZh「用 visit 造一個句子，說說你會去探望的一位家人或朋友。」、referenceEn [\"I visit my grandmother every Sunday.\",\"I will visit my friend in Tainan this weekend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

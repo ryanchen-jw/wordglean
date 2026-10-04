@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u17-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "bring",
-      "instructionZh": "用 bring 造一個句子，說說你明天要帶什麼。",
+      "type": "translate",
+      "promptZh": "我可以帶我的狗來嗎？",
+      "hintWords": [
+        "bring"
+      ],
       "referenceEn": [
-        "I will bring my lunch tomorrow.",
-        "Tomorrow, I am going to bring a cake for my team."
+        "Can I bring my dog?",
+        "May I bring my dog?"
       ],
       "rubricZh": [
-        "bring 後面接帶的東西（例如 bring my lunch），帶給誰可用 for 或 to",
-        "明天的事用表示未來的寫法（例如 will、be going to）"
+        "bring 後面接帶的東西（例如 bring my dog）",
+        "請求許可可寫，例如 Can I…、May I… 等"
       ]
     }
   ],
@@ -320,6 +322,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：happen、watch 與 q13 共用且動詞放不進名詞空格，三個干擾項改名詞 stand、stop、point",
         "resolution": "改為 [\"攤子\", \"停靠站\", \"點\", \"盡頭\"]（原 [\"發生\", \"放\", \"看\", \"盡頭\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（bring）原位換成翻譯題，沿用題 id a1-u17-l05-q17；目標字沿用 bring",
+        "resolution": "改為 translate：promptZh「我可以帶我的狗來嗎？」、hintWords [\"bring\"]、referenceEn [\"Can I bring my dog?\",\"May I bring my dog?\"]、rubricZh [\"bring 後面接帶的東西（例如 bring my dog）\",\"請求許可可寫，例如 Can I…、May I… 等\"]（原 makeSentence：instructionZh「用 bring 造一個句子，說說你明天要帶什麼。」、referenceEn [\"I will bring my lunch tomorrow.\",\"Tomorrow, I am going to bring a cake for my team.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

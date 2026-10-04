@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u14-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "game",
-      "instructionZh": "用 game 造一個句子，說說你喜歡玩或看的遊戲、比賽。",
+      "type": "translate",
+      "promptZh": "比賽七點開始。",
+      "hintWords": [
+        "game"
+      ],
       "referenceEn": [
-        "I like to play games on my phone.",
-        "I watched a baseball game yesterday."
+        "The game starts at seven.",
+        "The game begins at seven o'clock."
       ],
       "rubricZh": [
-        "「玩遊戲」可用 play a game、play games",
-        "「看比賽」可用 watch a game"
+        "「七點」可寫，例如 at seven、at seven o'clock 等",
+        "「開始」可寫，例如 starts、begins 等；「比賽」寫 game 或 match 都正確"
       ]
     }
   ],
@@ -348,6 +350,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：team 是 q13 正解、cinema 與 q13 共用，換 poster/picnic",
         "resolution": "改為 [\"海報\", \"遊戲\", \"故事\", \"野餐\"]（原 [\"隊伍\", \"遊戲\", \"故事\", \"電影院\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（game）原位換成翻譯題，沿用題 id a1-u14-l02-q17；目標字沿用 game",
+        "resolution": "改為 translate：promptZh「比賽七點開始。」、hintWords [\"game\"]、referenceEn [\"The game starts at seven.\",\"The game begins at seven o'clock.\"]、rubricZh [\"「七點」可寫，例如 at seven、at seven o'clock 等\",\"「開始」可寫，例如 starts、begins 等；「比賽」寫 game 或 match 都正確\"]（原 makeSentence：instructionZh「用 game 造一個句子，說說你喜歡玩或看的遊戲、比賽。」、referenceEn [\"I like to play games on my phone.\",\"I watched a baseball game yesterday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u13-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "doctor",
-      "instructionZh": "用 doctor 造一個句子，說說你認識的醫生，或醫生在做什麼。",
+      "type": "translate",
+      "promptZh": "醫生在二樓。",
+      "hintWords": [
+        "doctor"
+      ],
       "referenceEn": [
-        "My aunt is a doctor at a big hospital.",
-        "The doctor is talking to a nurse."
+        "The doctor is on the second floor.",
+        "The doctor's office is on the second floor."
       ],
       "rubricZh": [
-        "doctor 前面加冠詞或所有格（例如 a doctor、the doctor、my doctor）",
-        "動詞配合主詞和時態"
+        "「二樓」可寫，例如 the second floor 等（英式 the first floor 也正確）",
+        "doctor 前加冠詞或所有格，例如 the doctor、my doctor 等"
       ]
     }
   ],
@@ -426,6 +428,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原無干擾項放得進 My arm ____，doctor/brain 換動詞 smells/lives",
         "resolution": "改為 [\"痛\", \"發出氣味\", \"活著\", \"肩膀\"]（原 [\"痛\", \"醫生\", \"大腦\", \"肩膀\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（doctor）原位換成翻譯題，沿用題 id a1-u13-l02-q17；目標字沿用 doctor",
+        "resolution": "改為 translate：promptZh「醫生在二樓。」、hintWords [\"doctor\"]、referenceEn [\"The doctor is on the second floor.\",\"The doctor's office is on the second floor.\"]、rubricZh [\"「二樓」可寫，例如 the second floor 等（英式 the first floor 也正確）\",\"doctor 前面加 the\"]（原 makeSentence：instructionZh「用 doctor 造一個句子，說說你認識的醫生，或醫生在做什麼。」、referenceEn [\"My aunt is a doctor at a big hospital.\",\"The doctor is talking to a nurse.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點「doctor 前面加 the」寫死",
+        "resolution": "改為 rubricZh [\"「二樓」可寫，例如 the second floor 等（英式 the first floor 也正確）\",\"doctor 前加冠詞或所有格，例如 the doctor、my doctor 等\"]（原 [\"「二樓」可寫，例如 the second floor 等（英式 the first floor 也正確）\",\"doctor 前面加 the\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

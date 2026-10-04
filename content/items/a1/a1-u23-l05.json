@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u23-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "jump",
-      "instructionZh": "用 jump 造一個句子，說說誰（或什麼動物）會跳。",
+      "type": "translate",
+      "promptZh": "那隻青蛙跳進了河裡。",
+      "hintWords": [
+        "jump"
+      ],
       "referenceEn": [
-        "My dog can jump very high.",
-        "The kids jump into the pool."
+        "The frog jumped into the river.",
+        "That frog jumped into the river."
       ],
       "rubricZh": [
-        "jump 可接 into、over、on 等表示方向（例如 jump into the pool）",
-        "can 後面接動詞原形"
+        "jump 可接 into 表示方向（例如 jumped into the river）",
+        "過去的事用過去式（例如 jumped）"
       ]
     }
   ],
@@ -428,6 +430,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hides 是 q13 正解、judges 與 q13 共用，改 kills、fills（避開 carries、pushes 也通）",
         "resolution": "改為 [\"殺死\", \"裝滿\", \"吹\", \"攀爬\"]（原 [\"評斷\", \"躲藏\", \"吹\", \"攀爬\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（jump）原位換成翻譯題，沿用題 id a1-u23-l05-q17；目標字沿用 jump",
+        "resolution": "改為 translate：promptZh「那隻青蛙跳進了河裡。」、hintWords [\"jump\"]、referenceEn [\"The frog jumped into the river.\",\"That frog jumped into the river.\"]、rubricZh [\"jump 可接 into 表示方向（例如 jumped into the river）\",\"過去的事用過去式（例如 jumped）\"]（原 makeSentence：instructionZh「用 jump 造一個句子，說說誰（或什麼動物）會跳。」、referenceEn [\"My dog can jump very high.\",\"The kids jump into the pool.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

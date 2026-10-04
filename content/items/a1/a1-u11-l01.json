@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u11-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "town",
-      "instructionZh": "用 town 造一個句子，說說你住的或你喜歡的一個小鎮。",
+      "type": "translate",
+      "promptZh": "這個小鎮晚上很安靜。",
+      "hintWords": [
+        "town"
+      ],
       "referenceEn": [
-        "I live in a small town near the sea.",
-        "My hometown is a quiet town."
+        "This town is very quiet at night.",
+        "This town is quiet at night."
       ],
       "rubricZh": [
-        "town 前面加冠詞、所有格或形容詞（例如 a small town、my town）",
-        "「住在」用 live in；也可描述小鎮（例如 My town is quiet）"
+        "「這個小鎮」可寫，例如 this town、this small town 等",
+        "「晚上」可寫，例如 at night、in the evening 等"
       ]
     }
   ],
@@ -340,6 +342,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：office/war 與 q14 共用，換 town/cafe（地點名詞，靠詞義排除）",
         "resolution": "改為 [\"小鎮\", \"咖啡店\", \"動物園\", \"建築物\"]（原 [\"辦公室\", \"戰爭\", \"動物園\", \"建築物\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（town）原位換成翻譯題，沿用題 id a1-u11-l01-q17；目標字沿用 town",
+        "resolution": "改為 translate：promptZh「這個小鎮晚上很安靜。」、hintWords [\"town\"]、referenceEn [\"This town is very quiet at night.\",\"This town is quiet at night.\"]、rubricZh [\"「這個小鎮」可寫，例如 this town、this small town 等\",\"「晚上」可寫，例如 at night、in the evening 等\"]（原 makeSentence：instructionZh「用 town 造一個句子，說說你住的或你喜歡的一個小鎮。」、referenceEn [\"I live in a small town near the sea.\",\"My hometown is a quiet town.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

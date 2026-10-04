@@ -201,9 +201,7 @@
       "id": "a1-u15-l04-q15",
       "type": "translate",
       "promptZh": "明天天氣怎麼樣？",
-      "hintWords": [
-        "weather"
-      ],
+      "hintWords": [],
       "referenceEn": [
         "What will the weather be like tomorrow?",
         "How will the weather be tomorrow?"
@@ -215,16 +213,18 @@
     },
     {
       "id": "a1-u15-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "weather",
-      "instructionZh": "用 weather 造一個句子，說說今天或你家鄉的天氣。",
+      "type": "translate",
+      "promptZh": "這裡的天氣一直都很溫暖。",
+      "hintWords": [
+        "weather"
+      ],
       "referenceEn": [
-        "The weather is very hot today.",
-        "The weather in my hometown is warm."
+        "The weather here is always warm.",
+        "The weather is always warm here."
       ],
       "rubricZh": [
-        "weather 前面常加 the（例如 The weather is…）",
-        "weather 是不可數名詞，前面不加 a"
+        "weather 前面加 the，不加 a",
+        "always 可放在 be 動詞或助動詞後（例如 is always warm、has always been warm）"
       ]
     }
   ],
@@ -280,6 +280,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：leaf 與 q12 共用，換 horse",
         "resolution": "改為 [\"馬\", \"雨\", \"熊\", \"天氣\"]（原 [\"葉子\", \"雨\", \"熊\", \"天氣\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（weather）原位換成翻譯題，沿用題 id a1-u15-l04-q16；目標字沿用 weather",
+        "resolution": "改為 translate：promptZh「這裡的天氣一直都很溫暖。」、hintWords [\"weather\"]、referenceEn [\"The weather here is always warm.\",\"The weather is always warm here.\"]、rubricZh [\"weather 前面加 the，不加 a\",\"always 放在 be 動詞後面（例如 is always warm）\"]（原 makeSentence：instructionZh「用 weather 造一個句子，說說今天或你家鄉的天氣。」、referenceEn [\"The weather is very hot today.\",\"The weather in my hometown is warm.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 weather，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 []（原 [\"weather\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 要點寫死 always 位置，會判錯 has always been warm",
+        "resolution": "改為 rubricZh [\"weather 前面加 the，不加 a\",\"always 可放在 be 動詞或助動詞後（例如 is always warm、has always been warm）\"]（原 [\"weather 前面加 the，不加 a\",\"always 放在 be 動詞後面（例如 is always warm）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

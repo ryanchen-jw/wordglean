@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u22-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "festival",
-      "instructionZh": "用 festival 造一個句子，說說你喜歡的節日或慶典。",
+      "type": "translate",
+      "promptZh": "這個節慶有很多好吃的食物。",
+      "hintWords": [
+        "festival"
+      ],
       "referenceEn": [
-        "My favorite festival is Chinese New Year.",
-        "There is a big music festival in my city."
+        "There is a lot of good food at this festival.",
+        "This festival has a lot of good food."
       ],
       "rubricZh": [
-        "festival 前面可加 a、the 或所有格（例如 a music festival）",
-        "動詞配合主詞和時態"
+        "festival 前面加 this、the 等",
+        "可寫，例如 There is a lot of good food at…、This festival has… 等；「好吃」寫 delicious 也正確"
       ]
     }
   ],
@@ -304,6 +306,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：ghost 與 q13 共用改 piano",
         "resolution": "改為 [\"球棒\", \"吉他\", \"鋼琴\", \"比賽\"]（原 [\"球棒\", \"吉他\", \"鬼\", \"比賽\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（festival）原位換成翻譯題，沿用題 id a1-u22-l04-q17；目標字沿用 festival",
+        "resolution": "改為 translate：promptZh「這個節慶有很多好吃的食物。」、hintWords [\"festival\"]、referenceEn [\"There is a lot of good food at this festival.\",\"This festival has a lot of good food.\"]、rubricZh [\"festival 前面加 this、the 等\",\"可寫，例如 There is a lot of good food at…、This festival has… 等；「好吃」寫 delicious 也正確\"]（原 makeSentence：instructionZh「用 festival 造一個句子，說說你喜歡的節日或慶典。」、referenceEn [\"My favorite festival is Chinese New Year.\",\"There is a big music festival in my city.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

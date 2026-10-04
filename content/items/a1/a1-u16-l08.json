@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u16-l08-q16",
-      "type": "makeSentence",
-      "targetWord": "suggestion",
-      "instructionZh": "用 suggestion 造一個句子，給朋友一個建議，或說說你收到的建議。",
+      "type": "translate",
+      "promptZh": "謝謝你的建議。",
+      "hintWords": [
+        "suggestion"
+      ],
       "referenceEn": [
-        "My suggestion is to take the bus.",
-        "My teacher has a good suggestion for me."
+        "Thank you for your suggestion.",
+        "Thanks for your suggestion."
       ],
       "rubricZh": [
-        "可用 My suggestion is…，或 have a suggestion、give a suggestion 等",
-        "動詞配合主詞和時態"
+        "道謝可寫，例如 Thank you for…、Thanks for… 等",
+        "suggestion 單數、複數都正確（例如 your suggestion、your suggestions）"
       ]
     }
   ],
@@ -333,6 +335,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：sum 是 q12 正解改 desk；pen 留本題、q12 改掉",
         "resolution": "改為 [\"書桌\", \"數學\", \"筆\", \"建議\"]（原 [\"總和\", \"數學\", \"筆\", \"建議\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（suggestion）原位換成翻譯題，沿用題 id a1-u16-l08-q16；目標字沿用 suggestion",
+        "resolution": "改為 translate：promptZh「謝謝你的建議。」、hintWords [\"suggestion\"]、referenceEn [\"Thank you for your suggestion.\",\"Thanks for your suggestion.\"]、rubricZh [\"道謝可寫，例如 Thank you for…、Thanks for… 等\",\"suggestion 單數、複數都正確（例如 your suggestion、your suggestions）\"]（原 makeSentence：instructionZh「用 suggestion 造一個句子，給朋友一個建議，或說說你收到的建議。」、referenceEn [\"My suggestion is to take the bus.\",\"My teacher has a good suggestion for me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

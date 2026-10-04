@@ -234,16 +234,18 @@
     },
     {
       "id": "a1-u04-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "friend",
-      "instructionZh": "用 friend 造一個句子，介紹你的一位朋友。",
+      "type": "translate",
+      "promptZh": "我的朋友送了我一本書。",
+      "hintWords": [
+        "friend"
+      ],
       "referenceEn": [
-        "My friend Ken is a teacher.",
-        "Anna is my best friend."
+        "My friend gave me a book.",
+        "My friend gave a book to me."
       ],
       "rubricZh": [
-        "可用 my friend 接名字（例如 my friend Ken），或寫 … is my friend、I have a friend… 等",
-        "動詞配合主詞（例如 Ken is、I have）"
+        "「送了」用過去式（例如 gave）",
+        "可寫，例如 gave me a book、gave a book to me 等"
       ]
     }
   ],
@@ -425,6 +427,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：there、early 代入成 My brother and I often play there／play early. 說得通；換成 once、always，與 often 矛盾、語意不通",
         "resolution": "改為 [\"一次\", \"一起\", \"今天\", \"總是\"]（原 [\"提早\", \"一起\", \"今天\", \"那裡\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（friend）原位換成翻譯題，沿用題 id a1-u04-l01-q17；目標字沿用 friend",
+        "resolution": "改為 translate：promptZh「我的朋友送了我一本書。」、hintWords [\"friend\"]、referenceEn [\"My friend gave me a book.\",\"My friend gave a book to me.\"]、rubricZh [\"「送了」用過去式（例如 gave）\",\"可寫，例如 gave me a book、gave a book to me 等\"]（原 makeSentence：instructionZh「用 friend 造一個句子，介紹你的一位朋友。」、referenceEn [\"My friend Ken is a teacher.\",\"Anna is my best friend.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

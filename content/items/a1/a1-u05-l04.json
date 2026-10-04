@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u05-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "better",
-      "instructionZh": "用 better 造一個句子，比較兩樣東西，說哪一個比較好。",
+      "type": "translate",
+      "promptZh": "他比我會游泳。",
+      "hintWords": [
+        "better"
+      ],
       "referenceEn": [
-        "Tea is better than coffee.",
-        "My new phone is better than my old one."
+        "He swims better than me.",
+        "He swims better than I do."
       ],
       "rubricZh": [
-        "better 是 good（或 well）的比較級，前面不再加 more",
-        "比較的對象常用 than 帶出（例如 better than coffee）；寫 This one is better. 不帶 than 也正確"
+        "better 是 well 的比較級，前面不再加 more",
+        "than 後面可寫，例如 than me、than I do 等"
       ]
     }
   ],
@@ -385,6 +387,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：bad、free 代入成 I feel bad today／I feel free today. Yesterday I was sick. 說得通；換成 white、long，I feel white/long today 語意不通",
         "resolution": "改為 [\"重要的\", \"比較好的\", \"白色的\", \"長的\"]（原 [\"重要的\", \"比較好的\", \"有空的\", \"糟的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（better）原位換成翻譯題，沿用題 id a1-u05-l04-q17；目標字沿用 better",
+        "resolution": "改為 translate：promptZh「他比我會游泳。」、hintWords [\"better\"]、referenceEn [\"He swims better than me.\",\"He swims better than I do.\"]、rubricZh [\"better 是 well 的比較級，前面不再加 more\",\"than 後面可寫，例如 than me、than I do 等\"]（原 makeSentence：instructionZh「用 better 造一個句子，比較兩樣東西，說哪一個比較好。」、referenceEn [\"Tea is better than coffee.\",\"My new phone is better than my old one.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

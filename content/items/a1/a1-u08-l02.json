@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u08-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "cafe",
-      "instructionZh": "用 cafe 造一個句子，說說你喜歡的一家咖啡店。",
+      "type": "translate",
+      "promptZh": "那家咖啡店的老闆很年輕。",
+      "hintWords": [
+        "cafe"
+      ],
       "referenceEn": [
-        "I like the cafe near my office.",
-        "There is a nice cafe on my street."
+        "The owner of that cafe is very young.",
+        "That cafe's owner is very young."
       ],
       "rubricZh": [
-        "cafe 前面加冠詞、所有格或 this／that（例如 a cafe、the cafe、my favorite cafe、this cafe）",
-        "可說咖啡店在哪裡或有什麼好（例如 near my office、has great coffee）"
+        "「那家咖啡店的老闆」可寫，例如 the owner of that cafe、that cafe's owner 等",
+        "「很年輕」可寫，例如 young、very young 等"
       ]
     }
   ],
@@ -341,6 +343,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：cafe 與 q13 共用、cookie 放不進；改形容詞 hungry、bad（文法可通、語意不對）",
         "resolution": "改為 [\"餓的\", \"糟的\", \"美味的\", \"三明治\"]（原 [\"餅乾\", \"咖啡店\", \"美味的\", \"三明治\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（cafe）原位換成翻譯題，沿用題 id a1-u08-l02-q17；目標字沿用 cafe",
+        "resolution": "改為 translate：promptZh「那家咖啡店的老闆很年輕。」、hintWords [\"cafe\"]、referenceEn [\"The owner of that cafe is very young.\",\"That cafe's owner is very young.\"]、rubricZh [\"「那家咖啡店的老闆」可寫，例如 the owner of that cafe、that cafe's owner 等\",\"「很年輕」可寫，例如 young、very young 等\"]（原 makeSentence：instructionZh「用 cafe 造一個句子，說說你喜歡的一家咖啡店。」、referenceEn [\"I like the cafe near my office.\",\"There is a nice cafe on my street.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

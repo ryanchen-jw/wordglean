@@ -239,16 +239,18 @@
     },
     {
       "id": "a1-u06-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "room",
-      "instructionZh": "用 room 造一個句子，描述你的房間。",
+      "type": "translate",
+      "promptZh": "我常在房間裡聽音樂。",
+      "hintWords": [
+        "room"
+      ],
       "referenceEn": [
-        "My room is small but clean.",
-        "There is a big bed in my room."
+        "I often listen to music in my room.",
+        "In my room, I often listen to music."
       ],
       "rubricZh": [
-        "room 前面加所有格或冠詞（例如 my room、a big room）",
-        "可用 There is…、My room is…、My room has… 等來描述"
+        "「在房間裡」可寫，例如 in my room 等",
+        "often 可放在一般動詞前（例如 often listen）或句尾；listen 後面接 to"
       ]
     }
   ],
@@ -358,6 +360,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：vase、garbage 與 q14 共用，改同課名詞 room、house",
         "resolution": "改為 [\"房間\", \"毛巾\", \"房子\", \"門\"]（原 [\"花瓶\", \"毛巾\", \"垃圾\", \"門\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（room）原位換成翻譯題，沿用題 id a1-u06-l01-q18；目標字沿用 room",
+        "resolution": "改為 translate：promptZh「我常在房間裡聽音樂。」、hintWords [\"room\"]、referenceEn [\"I often listen to music in my room.\",\"In my room, I often listen to music.\"]、rubricZh [\"「在房間裡」可寫，例如 in my room 等\",\"often 放在一般動詞前（例如 often listen）；listen 後面接 to\"]（原 makeSentence：instructionZh「用 room 造一個句子，描述你的房間。」、referenceEn [\"My room is small but clean.\",\"There is a big bed in my room.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/17",
+        "message": "執行長裁示：第③關：SUS 要點寫死 often 位置（§11.1）",
+        "resolution": "改為 rubricZh [\"「在房間裡」可寫，例如 in my room 等\",\"often 可放在一般動詞前（例如 often listen）或句尾；listen 後面接 to\"]（原 [\"「在房間裡」可寫，例如 in my room 等\",\"often 放在一般動詞前（例如 often listen）；listen 後面接 to\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

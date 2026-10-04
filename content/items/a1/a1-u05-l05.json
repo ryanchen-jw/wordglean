@@ -225,17 +225,18 @@
     },
     {
       "id": "a1-u05-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "special",
-      "instructionZh": "用 special 造一個句子，說說對你很特別的一天、一個人或一樣東西。",
+      "type": "translate",
+      "promptZh": "這家餐廳今晚有一道特別的菜。",
+      "hintWords": [
+        "special"
+      ],
       "referenceEn": [
-        "My birthday is a special day for me.",
-        "This watch is special to me."
+        "This restaurant has a special dish tonight.",
+        "Tonight, this restaurant has a special dish."
       ],
       "rubricZh": [
-        "special 例如放在名詞前面（a special day）或 be 動詞後面（is special）",
-        "feel special、look special 也正確",
-        "「對我很特別」可用 special to me 或 special for me"
+        "special 放在名詞前（例如 a special dish）",
+        "「特別的菜」可寫，例如 a special dish、a special meal 等"
       ]
     }
   ],
@@ -423,6 +424,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：free 代入成 My glass is free of water.（杯裡沒水）說得通；換成 true，My glass is true of water 語意不通",
         "resolution": "改為 [\"真實的\", \"確定的\", \"特別的\", \"滿的\"]（原 [\"沒有⋯的\", \"確定的\", \"特別的\", \"滿的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（special）原位換成翻譯題，沿用題 id a1-u05-l05-q17；目標字沿用 special",
+        "resolution": "改為 translate：promptZh「這家餐廳今晚有一道特別的菜。」、hintWords [\"special\"]、referenceEn [\"This restaurant has a special dish tonight.\",\"Tonight, this restaurant has a special dish.\"]、rubricZh [\"special 放在名詞前（例如 a special dish）\",\"「特別的菜」可寫，例如 a special dish、a special meal 等\"]（原 makeSentence：instructionZh「用 special 造一個句子，說說對你很特別的一天、一個人或一樣東西。」、referenceEn [\"My birthday is a special day for me.\",\"This watch is special to me.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

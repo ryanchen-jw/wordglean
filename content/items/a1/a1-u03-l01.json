@@ -242,16 +242,18 @@
     },
     {
       "id": "a1-u03-l01-q18",
-      "type": "makeSentence",
-      "targetWord": "first",
-      "instructionZh": "用 first 造一個句子，說說你的第一份工作、第一天上學或其他「第一」的事。",
+      "type": "translate",
+      "promptZh": "這是我第一次坐飛機。",
+      "hintWords": [
+        "first"
+      ],
       "referenceEn": [
-        "My first job was at a cafe.",
-        "My first day at school was fun."
+        "This is my first time on a plane.",
+        "It is my first time on a plane."
       ],
       "rubricZh": [
-        "first 常放在名詞前（例如 my first job、the first day）；當副詞用（例如 I came here first）也正確",
-        "時態配合內容（例如過去的事用 was，現在的事用 is）"
+        "first 放在名詞前（例如 my first time）",
+        "「坐飛機」可寫，例如 on a plane、on an airplane 等"
       ]
     }
   ],
@@ -463,6 +465,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：主 session 裁定：only 代入成 Today is the only day of my new job.（一日工作）說得通；換成 two，the two day 文法不通",
         "resolution": "改為 [\"現在\", \"一\", \"二\", \"第一的\"]（原 [\"現在\", \"一\", \"唯一的\", \"第一的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（first）原位換成翻譯題，沿用題 id a1-u03-l01-q18；目標字沿用 first",
+        "resolution": "改為 translate：promptZh「這是我第一次坐飛機。」、hintWords [\"first\"]、referenceEn [\"This is my first time on a plane.\",\"It is my first time on a plane.\"]、rubricZh [\"first 放在名詞前（例如 my first time）\",\"「坐飛機」可寫，例如 on a plane、on an airplane 等\"]（原 makeSentence：instructionZh「用 first 造一個句子，說說你的第一份工作、第一天上學或其他「第一」的事。」、referenceEn [\"My first job was at a cafe.\",\"My first day at school was fun.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

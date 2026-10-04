@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u20-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "autumn",
-      "instructionZh": "用 autumn 造一個句子，說說你喜歡秋天的什麼。",
+      "type": "translate",
+      "promptZh": "秋天的時候樹葉會變紅。",
+      "hintWords": [
+        "autumn"
+      ],
       "referenceEn": [
-        "I like autumn because it is cool.",
-        "In autumn, I like to walk in the park."
+        "In autumn, the leaves turn red.",
+        "The leaves turn red in autumn."
       ],
       "rubricZh": [
-        "「在秋天」例如 in autumn、in the autumn（本題須用 autumn）",
-        "可用 because 說原因"
+        "「在秋天」可寫，例如 in autumn、in the autumn、in fall 等",
+        "「變紅」可寫，例如 turn red、become red 等"
       ]
     }
   ],
@@ -308,6 +310,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——干擾項不可一眼排除：三個數字干擾項與四季列舉明顯無關，eighteen、sixteen 改時間名詞 evening、March",
         "resolution": "改為 [\"秋天\", \"傍晚\", \"十三\", \"三月\"]（原 [\"秋天\", \"十八\", \"十三\", \"十六\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（autumn）原位換成翻譯題，沿用題 id a1-u20-l02-q17；目標字沿用 autumn",
+        "resolution": "改為 translate：promptZh「秋天的時候樹葉會變紅。」、hintWords [\"autumn\"]、referenceEn [\"In autumn, the leaves turn red.\",\"The leaves turn red in autumn.\"]、rubricZh [\"「在秋天」可寫，例如 in autumn、in the autumn、in fall 等\",\"「變紅」可寫，例如 turn red、become red 等\"]（原 makeSentence：instructionZh「用 autumn 造一個句子，說說你喜歡秋天的什麼。」、referenceEn [\"I like autumn because it is cool.\",\"In autumn, I like to walk in the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

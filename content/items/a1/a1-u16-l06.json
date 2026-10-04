@@ -231,16 +231,18 @@
     },
     {
       "id": "a1-u16-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "conversation",
-      "instructionZh": "用 conversation 造一個句子，說說你和誰聊天。",
+      "type": "translate",
+      "promptZh": "我和計程車司機聊了一下。",
+      "hintWords": [
+        "conversation"
+      ],
       "referenceEn": [
-        "I had a nice conversation with my neighbor today.",
-        "I like to have conversations with my friends in English."
+        "I had a short conversation with the taxi driver.",
+        "I had a short conversation with my taxi driver."
       ],
       "rubricZh": [
-        "「和某人聊天」可用 have a conversation with（例如 with my neighbor）",
-        "時態配合內容（例如今天已發生的事用 had）"
+        "「和某人聊天」可寫，例如 have a conversation with、talk with 等",
+        "過去的事用過去式（例如 had）"
       ]
     }
   ],
@@ -332,6 +334,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：writer 是 q13 正解，換 letter",
         "resolution": "改為 [\"科學家\", \"信\", \"複習\", \"對話\"]（原 [\"科學家\", \"作家\", \"複習\", \"對話\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（conversation）原位換成翻譯題，沿用題 id a1-u16-l06-q17；目標字沿用 conversation",
+        "resolution": "改為 translate：promptZh「我和計程車司機聊了一下。」、hintWords [\"conversation\"]、referenceEn [\"I had a short conversation with the taxi driver.\",\"I had a short conversation with my taxi driver.\"]、rubricZh [\"「和某人聊天」可寫，例如 have a conversation with、talk with 等\",\"過去的事用過去式（例如 had）\"]（原 makeSentence：instructionZh「用 conversation 造一個句子，說說你和誰聊天。」、referenceEn [\"I had a nice conversation with my neighbor today.\",\"I like to have conversations with my friends in English.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

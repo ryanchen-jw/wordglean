@@ -227,17 +227,18 @@
     },
     {
       "id": "a1-u01-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "the",
-      "instructionZh": "用 the 造一個句子，說說房間裡的一樣東西在哪裡。",
+      "type": "translate",
+      "promptZh": "那支筆在桌上。",
+      "hintWords": [
+        "the"
+      ],
       "referenceEn": [
         "The pen is on the desk.",
-        "The bag is under the chair."
+        "The pen is on the table."
       ],
       "rubricZh": [
-        "正確使用 the 指特定的東西",
-        "句子有主詞和動詞",
-        "用介系詞說明位置"
+        "用 the 指說話雙方都知道的那支筆（例如 the pen）等",
+        "說明位置，例如 on the desk、on the table 等"
       ]
     }
   ]

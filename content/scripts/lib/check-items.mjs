@@ -6,13 +6,13 @@ import { CEFR_ORDER } from './lexicon.mjs';
 import { extractMultiwords, tokenize, wordLevel } from './english.mjs';
 import { checkZh } from './zh-guard.mjs';
 import {
-  COMPOSITION,
   GLOSS_MAX_CHARS,
   LEGACY_PROMPTS,
   PASSAGE_WORDS,
   PASSAGE_ZH_MAX_CHARS,
   SENTENCE_WORDS,
   ZH_MAX_CHARS,
+  compositionFor,
   countWords,
 } from './item-rules.mjs';
 
@@ -66,9 +66,18 @@ export function checkLessonItems(doc, ctx) {
   // 題量
   const counts = {};
   for (const item of doc.items) counts[item.type] = (counts[item.type] ?? 0) + 1;
-  for (const [type, want] of Object.entries(COMPOSITION)) {
+  for (const [type, want] of Object.entries(compositionFor(lesson.level))) {
     if ((counts[type] ?? 0) !== want) push('COMPOSITION', 'items', `${type} 應為 ${want} 題，實際 ${counts[type] ?? 0}`);
   }
+  // 同課兩題翻譯不可練同一個本課目標字（創辦人裁示 2026-10-04：第二題翻譯沿用被取代造句題的 targetWord）
+  const hintTargets = new Set();
+  doc.items.forEach((item, i) => {
+    if (item.type !== 'translate') return;
+    const targets = [...new Set(item.hintWords.filter((w) => lesson.words.includes(w.toLowerCase())))];
+    const dup = targets.filter((w) => hintTargets.has(w.toLowerCase()));
+    if (dup.length) push('TRANSLATE_HINT_DUP', `items/${i}/hintWords`, `與同課前一題翻譯的提示字重複本課目標字：${dup.join(', ')}`);
+    for (const w of targets) hintTargets.add(w.toLowerCase());
+  });
   const cardWords = doc.items.filter((it) => it.type === 'wordCard').map((it) => it.word);
   const missing = lesson.words.filter((w) => !cardWords.includes(w));
   const extra = cardWords.filter((w, k) => !lesson.words.includes(w) || cardWords.indexOf(w) !== k);

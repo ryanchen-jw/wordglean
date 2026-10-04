@@ -213,34 +213,33 @@
     {
       "id": "a1-u01-l05-q16",
       "type": "translate",
-      "promptZh": "如果你累了，我會幫你。",
+      "promptZh": "如果你有問題，可以問我。",
       "hintWords": [
-        "if",
-        "will"
+        "if"
       ],
       "referenceEn": [
-        "If you are tired, I will help you.",
-        "I will help you if you are tired."
+        "If you have a question, you can ask me.",
+        "You can ask me if you have a question."
       ],
       "rubricZh": [
-        "用 if 表示「如果」",
-        "if 子句用現在式（例如 are、feel）",
-        "主要句用 will 表示「會」"
+        "用 if 表示「如果」，if 子句用現在式（例如 If you have…）",
+        "「可以問我」可寫，例如 can ask me 等；if 子句放句首或句尾都可以"
       ]
     },
     {
       "id": "a1-u01-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "will",
-      "instructionZh": "用 will 造一個句子，說說你這個週末要做的事。",
+      "type": "translate",
+      "promptZh": "銀行明天會開。",
+      "hintWords": [
+        "will"
+      ],
       "referenceEn": [
-        "I will visit my grandmother this weekend.",
-        "I will play ball with my friends on Saturday."
+        "The bank will be open tomorrow.",
+        "The bank will open tomorrow."
       ],
       "rubricZh": [
-        "用 will 表示未來要做的事",
-        "will 後面接原形動詞",
-        "可以加上時間詞（例如 this weekend、on Saturday）"
+        "表示未來可寫，例如 will be open、will open、is going to open 等",
+        "「銀行」可寫，例如 the bank、banks 等"
       ]
     }
   ],
@@ -338,6 +337,30 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：What 代入成 What is your English teacher?（問國籍、身分）只看英文可成立；換成 Her，Her is your English teacher? 文法不通",
         "resolution": "改為 [\"她的\", \"他的\", \"誰\", \"所有的\"]（原 [\"什麼\", \"他的\", \"誰\", \"所有的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（will）原位換成翻譯題，沿用題 id a1-u01-l05-q17；目標字沿用 will",
+        "resolution": "改為 translate：promptZh「銀行明天會開。」、hintWords [\"will\"]、referenceEn [\"The bank will be open tomorrow.\",\"The bank will open tomorrow.\"]、rubricZh [\"表示未來可寫，例如 will be open、will open、is going to open 等\",\"「銀行」前面加 the\"]（原 makeSentence：instructionZh「用 will 造一個句子，說說你這個週末要做的事。」、referenceEn [\"I will visit my grandmother this weekend.\",\"I will play ball with my friends on Saturday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 will，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 [\"if\"]（原 [\"if\",\"will\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u01-l08-q16（tired）、a1-u01-l10-q16（help） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
+        "resolution": "改為 promptZh「如果你有問題，可以問我。」、referenceEn [\"If you have a question, you can ask me.\",\"You can ask me if you have a question.\"]、rubricZh [\"用 if 表示「如果」，if 子句用現在式（例如 If you have…）\",\"「可以問我」可寫，例如 can ask me 等；if 子句放句首或句尾都可以\"]（原 promptZh「如果你累了，我會幫你。」、referenceEn [\"If you are tired, I will help you.\",\"I will help you if you are tired.\"]、rubricZh [\"用 if 表示「如果」\",\"if 子句用現在式（例如 are、feel）\",\"主要句用 will 表示「會」\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點「銀行前面加 the」寫死，泛指 banks 也正確",
+        "resolution": "改為 rubricZh [\"表示未來可寫，例如 will be open、will open、is going to open 等\",\"「銀行」可寫，例如 the bank、banks 等\"]（原 [\"表示未來可寫，例如 will be open、will open、is going to open 等\",\"「銀行」前面加 the\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

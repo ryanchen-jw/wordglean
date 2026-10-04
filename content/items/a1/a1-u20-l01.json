@@ -224,16 +224,18 @@
     },
     {
       "id": "a1-u20-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "yesterday",
-      "instructionZh": "用 yesterday 造一個句子，說說你昨天做了什麼。",
+      "type": "translate",
+      "promptZh": "昨天下了一整天的雨。",
+      "hintWords": [
+        "yesterday"
+      ],
       "referenceEn": [
-        "I watched a movie yesterday.",
-        "Yesterday, I visited my grandmother."
+        "It rained all day yesterday.",
+        "Yesterday it rained all day."
       ],
       "rubricZh": [
-        "昨天的事用過去式（例如 watched、visited）",
-        "yesterday 放句首或句尾都可以"
+        "昨天的事用過去式（例如 rained）",
+        "「一整天」可寫，例如 all day 等"
       ]
     }
   ],
@@ -325,6 +327,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：always 代入「I was at home always.」文法與語意皆可成立，換成 now（I was at home now. 過去式配 now 語意矛盾；tomorrow 已被他課使用）",
         "resolution": "改為 [\"很快\", \"昨天\", \"十二\", \"現在\"]（原 [\"很快\", \"昨天\", \"十二\", \"總是\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（yesterday）原位換成翻譯題，沿用題 id a1-u20-l01-q17；目標字沿用 yesterday",
+        "resolution": "改為 translate：promptZh「昨天下了一整天的雨。」、hintWords [\"yesterday\"]、referenceEn [\"It rained all day yesterday.\",\"Yesterday it rained all day.\"]、rubricZh [\"昨天的事用過去式（例如 rained）\",\"「一整天」可寫，例如 all day 等\"]（原 makeSentence：instructionZh「用 yesterday 造一個句子，說說你昨天做了什麼。」、referenceEn [\"I watched a movie yesterday.\",\"Yesterday, I visited my grandmother.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

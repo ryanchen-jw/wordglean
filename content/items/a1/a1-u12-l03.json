@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u12-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "ride",
-      "instructionZh": "用 ride 造一個句子，說說你會騎或搭的交通工具。",
+      "type": "translate",
+      "promptZh": "我們昨天在海邊騎馬。",
+      "hintWords": [
+        "ride"
+      ],
       "referenceEn": [
-        "I ride my bike to work.",
-        "I ride the bus to school every day."
+        "We rode horses on the beach yesterday.",
+        "Yesterday, we rode horses on the beach."
       ],
       "rubricZh": [
-        "ride 後面接交通工具或動物（例如 ride a bike、ride the bus、ride a horse）",
-        "動詞配合主詞和時態（例如 I ride、I rode）"
+        "ride 後面接動物或交通工具（例如 ride horses、ride a horse）",
+        "昨天的事用過去式（例如 rode）"
       ]
     }
   ],
@@ -317,6 +319,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：Can you drive a horse? 英文可指駕馬（車），只看英文也成立；drive 換成 email（文法可放、語意不通），仍有 email、fly 兩個動詞放得進空格",
         "resolution": "改為 [\"寄電子郵件\", \"騎\", \"小船\", \"飛\"]（原 [\"駕駛\", \"騎\", \"小船\", \"飛\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（ride）原位換成翻譯題，沿用題 id a1-u12-l03-q17；目標字沿用 ride",
+        "resolution": "改為 translate：promptZh「我們昨天在海邊騎馬。」、hintWords [\"ride\"]、referenceEn [\"We rode horses on the beach yesterday.\",\"Yesterday, we rode horses on the beach.\"]、rubricZh [\"ride 後面接動物或交通工具（例如 ride horses、ride a horse）\",\"昨天的事用過去式（例如 rode）\"]（原 makeSentence：instructionZh「用 ride 造一個句子，說說你會騎或搭的交通工具。」、referenceEn [\"I ride my bike to work.\",\"I ride the bus to school every day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -247,16 +247,18 @@
     },
     {
       "id": "a1-u03-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "never",
-      "instructionZh": "用 never 造一個句子，說說一件你從來不做的事。",
+      "type": "translate",
+      "promptZh": "我爸爸從來不喝咖啡。",
+      "hintWords": [
+        "never"
+      ],
       "referenceEn": [
-        "I never eat breakfast.",
-        "I never drink coffee at night."
+        "My father never drinks coffee.",
+        "My dad never drinks coffee."
       ],
       "rubricZh": [
-        "never 常放在一般動詞前、be 動詞後（例如 I never eat、I am never late）",
-        "never 本身就是否定，句子不再加 not"
+        "never 放在一般動詞前（例如 never drinks），句子不再加 not",
+        "「爸爸」可寫，例如 father、dad 等；動詞配合主詞（drinks）"
       ]
     }
   ],
@@ -390,6 +392,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：today 與 q14 共用，改 year，四選項皆名詞",
         "resolution": "改為 [\"年\", \"夜晚\", \"號碼\", \"月\"]（原 [\"今天\", \"夜晚\", \"號碼\", \"月\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（never）原位換成翻譯題，沿用題 id a1-u03-l02-q18；目標字沿用 never",
+        "resolution": "改為 translate：promptZh「我爸爸從來不喝咖啡。」、hintWords [\"never\"]、referenceEn [\"My father never drinks coffee.\",\"My dad never drinks coffee.\"]、rubricZh [\"never 放在一般動詞前（例如 never drinks），句子不再加 not\",\"「爸爸」可寫，例如 father、dad 等；動詞配合主詞（drinks）\"]（原 makeSentence：instructionZh「用 never 造一個句子，說說一件你從來不做的事。」、referenceEn [\"I never eat breakfast.\",\"I never drink coffee at night.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

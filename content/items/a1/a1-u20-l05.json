@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u20-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "october",
-      "instructionZh": "用 October 造一個句子，說說十月的天氣或你十月的計畫。",
+      "type": "translate",
+      "promptZh": "我們十月會搬到新家。",
+      "hintWords": [
+        "october"
+      ],
       "referenceEn": [
-        "The weather is cool in October.",
-        "I will visit my aunt in October."
+        "We will move to a new house in October.",
+        "We are going to move to a new house in October."
       ],
       "rubricZh": [
         "月份前用 in（例如 in October）",
-        "動詞配合主詞和時態"
+        "未來可寫，例如 will、be going to 等"
       ]
     }
   ],
@@ -330,6 +332,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：September 是 q14 正解改 December",
         "resolution": "改為 [\"星期天\", \"星期二\", \"十月\", \"十二月\"]（原 [\"星期天\", \"星期二\", \"十月\", \"九月\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（october）原位換成翻譯題，沿用題 id a1-u20-l05-q17；目標字沿用 october",
+        "resolution": "改為 translate：promptZh「我們十月要搬到新家。」、hintWords [\"october\"]、referenceEn [\"We will move to a new house in October.\",\"We are going to move to a new house in October.\"]、rubricZh [\"月份前用 in（例如 in October）\",\"未來可寫，例如 will、be going to 等\"]（原 makeSentence：instructionZh「用 October 造一個句子，說說十月的天氣或你十月的計畫。」、referenceEn [\"The weather is cool in October.\",\"I will visit my aunt in October.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8），改「會」",
+        "resolution": "改為 promptZh「我們十月會搬到新家。」（原「我們十月要搬到新家。」）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

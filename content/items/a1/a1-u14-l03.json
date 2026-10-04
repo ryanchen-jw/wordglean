@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u14-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "movie",
-      "instructionZh": "用 movie 造一個句子，說說你喜歡的電影或你最近看的電影。",
+      "type": "translate",
+      "promptZh": "那部電影是關於一隻狗的故事。",
+      "hintWords": [
+        "movie"
+      ],
       "referenceEn": [
-        "I watched a funny movie yesterday.",
-        "My favorite movie is about a dog."
+        "That movie is about a dog.",
+        "The movie is about a dog."
       ],
       "rubricZh": [
-        "「看電影」可用 watch a movie、see a movie 等",
-        "時態配合內容（例如過去的事用過去式 watched）"
+        "「關於」可寫，例如 is about 等",
+        "「那部電影」可寫，例如 that movie、the movie 等"
       ]
     }
   ],
@@ -401,6 +403,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：news/music 與 q13 共用且不可數放不進 a ____，換可數名詞 poster/story",
         "resolution": "改為 [\"明星\", \"海報\", \"照片\", \"故事\"]（原 [\"明星\", \"新聞\", \"照片\", \"音樂\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（movie）原位換成翻譯題，沿用題 id a1-u14-l03-q17；目標字沿用 movie",
+        "resolution": "改為 translate：promptZh「我和家人每個星期五晚上看電影。」、hintWords [\"movie\"]、referenceEn [\"My family and I watch a movie every Friday night.\",\"Every Friday night, my family and I watch a movie.\"]、rubricZh [\"「看電影」可寫，例如 watch a movie、see a movie 等\",\"習慣性的事用現在簡單式\"]（原 makeSentence：instructionZh「用 movie 造一個句子，說說你喜歡的電影或你最近看的電影。」、referenceEn [\"I watched a funny movie yesterday.\",\"My favorite movie is about a dog.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 與同單元 a1-u14-l02-q16「今晚去看電影」同情境（§12.3），換情境",
+        "resolution": "改為 promptZh「那部電影是關於一隻狗的故事。」（原「我和家人每個星期五晚上看電影。」）、referenceEn [\"That movie is about a dog.\",\"The movie is about a dog.\"]（原 [\"My family and I watch a movie every Friday night.\",\"Every Friday night, my family and I watch a movie.\"]）、rubricZh [\"「關於」可寫，例如 is about 等\",\"「那部電影」可寫，例如 that movie、the movie 等\"]（原 [\"「看電影」可寫，例如 watch a movie、see a movie 等\",\"習慣性的事用現在簡單式\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

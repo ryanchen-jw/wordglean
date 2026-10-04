@@ -3,7 +3,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { loadCheckContext } from '../scripts/lib/items-context.mjs';
-import { overlap, similarPairs, skeleton, skeletonPairs, stemLeaks } from '../scripts/lib/similarity-lemma.mjs';
+import { overlap, similarPairs, skeleton, skeletonPairs, stemLeaks, translatePairs } from '../scripts/lib/similarity-lemma.mjs';
 
 const ctx = loadCheckContext({ allowlist: 'no-such-file.json' });
 
@@ -74,4 +74,55 @@ test('skeletonPairs 只列出同骨架的情境句', () => {
     ],
   };
   assert.deepEqual(skeletonPairs(doc, ctx).map((p) => p.where), ['q02 listenType']);
+});
+
+// ---- 創辦人裁示 2026-10-04 造句改翻譯：翻譯題彼此不雷同（同課兩題、同單元跨課） ----
+
+const tr = (id, ...referenceEn) => ({ id, type: 'translate', promptZh: '…', hintWords: [], referenceEn, rubricZh: ['…'] });
+const lessonDoc = (lessonId, ...items) => ({ lessonId, items });
+
+test('translatePairs：共同實詞 ≥40% 列出——同課兩題、同單元跨課都比；不同單元不比', () => {
+  const docs = [
+    lessonDoc('a1-u01-l01', tr('a1-u01-l01-q16', 'I have an apple and a banana.'), tr('a1-u01-l01-q17', 'She has two apples and a cup of milk.')),
+    lessonDoc('a1-u01-l02', tr('a1-u01-l02-q16', 'My brother likes bananas.'), tr('a1-u01-l02-q17', 'The pen is on the desk.')),
+    lessonDoc('a1-u02-l01', tr('a1-u02-l01-q16', 'The pen is on the desk.'), tr('a1-u02-l01-q17', 'We play ball in the park.')),
+  ];
+  const pairs = translatePairs(docs, ctx, 0.4).map((p) => `${p.a}|${p.b}|${p.scope}|${p.reason}`).sort();
+  assert.deepEqual(pairs, [
+    'a1-u01-l01-q16|a1-u01-l01-q17|lesson|字面', // apple 共用
+    'a1-u01-l01-q16|a1-u01-l02-q16|unit|字面', // banana 共用
+  ]);
+});
+
+test('translatePairs：同課兩題句型骨架相同（實詞換成 X）也列出；跨課不比句型', () => {
+  const docs = [
+    lessonDoc('a1-u01-l01', tr('a1-u01-l01-q16', 'The pen is on the desk.'), tr('a1-u01-l01-q17', 'The cat is on the bed.')),
+    lessonDoc('a1-u01-l02', tr('a1-u01-l02-q16', 'The book is on the chair.'), tr('a1-u01-l02-q17', 'We play ball in the park.')),
+  ];
+  const pairs = translatePairs(docs, ctx, 0.4).map((p) => `${p.a}|${p.b}|${p.scope}|${p.reason}`).sort();
+  assert.deepEqual(pairs, ['a1-u01-l01-q16|a1-u01-l01-q17|lesson|句型']);
+});
+
+test('translatePairs：字面比對扣除兩題的提示字（同單字卡自查扣目標字）', () => {
+  const withHint = (item, hintWords) => ({ ...item, hintWords });
+  const docs = [
+    lessonDoc(
+      'a1-u14-l01',
+      withHint(tr('a1-u14-l01-q16', 'My hobby is basketball.'), ['basketball']),
+      withHint(tr('a1-u14-l01-q17', 'My grandmother has many hobbies.'), ['hobby']),
+    ),
+  ];
+  assert.deepEqual(translatePairs(docs, ctx, 0.4), []);
+  docs[0].items[1].hintWords = [];
+  assert.deepEqual(translatePairs(docs, ctx, 0.4).map((p) => p.shared), [['hobby']]);
+});
+
+test('translatePairs：提示字只從共同字扣除、分母不縮小（否則只剩一兩個實詞的句子會被放大成 100%）', () => {
+  const withHint = (item, hintWords) => ({ ...item, hintWords });
+  const docs = [
+    lessonDoc('a1-u08-l01', withHint(tr('a1-u08-l01-q16', 'I am hungry. I want some soup.'), ['hungry', 'soup'])),
+    lessonDoc('a1-u08-l03', withHint(tr('a1-u08-l03-q16', 'I want fish for dinner.'), ['fish', 'dinner'])),
+  ];
+  // 共同字 want（非提示字）÷ 較短句實詞 3（want fish dinner）＝33%，不報
+  assert.deepEqual(translatePairs(docs, ctx, 0.4), []);
 });

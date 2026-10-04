@@ -213,33 +213,33 @@
     {
       "id": "a1-u01-l08-q16",
       "type": "translate",
-      "promptZh": "我很累，因為我昨天很晚睡。",
+      "promptZh": "他沒來，因為他生病了。",
       "hintWords": [
         "because"
       ],
       "referenceEn": [
-        "I am tired because I went to bed late yesterday.",
-        "I'm tired because I went to bed late yesterday."
+        "He didn't come because he was sick.",
+        "He did not come because he was sick."
       ],
       "rubricZh": [
         "用 because 說明原因",
-        "昨天的事用過去式（例如 went to bed late、stayed up late）",
-        "「很晚睡」可寫 went to bed late 或 stayed up late"
+        "過去的事用過去式（例如 didn't come、was sick）；寫 He isn't here because he is sick 等也正確"
       ]
     },
     {
       "id": "a1-u01-l08-q17",
-      "type": "makeSentence",
-      "targetWord": "also",
-      "instructionZh": "用 also 造一個句子，說說你喜歡的另一樣東西。",
+      "type": "translate",
+      "promptZh": "我姊姊也是老師。",
+      "hintWords": [
+        "also"
+      ],
       "referenceEn": [
-        "I like music. I also like sports.",
-        "I like tea. I also like milk."
+        "My sister is also a teacher.",
+        "My older sister is also a teacher."
       ],
       "rubricZh": [
-        "also 放在一般動詞前、be 動詞後",
-        "表示「也」的意思",
-        "句子有主詞和動詞"
+        "also 放在 be 動詞後面（例如 is also a teacher）；寫 is a teacher too 也正確",
+        "「姊姊」可寫，例如 sister、older sister、big sister 等"
       ]
     }
   ],
@@ -389,6 +389,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：these 與 q13 共用；its、our 放不進空格；改 when、if、but 四選項皆連接詞；避開 and、because",
         "resolution": "改為 [\"當⋯時\", \"如果\", \"然後\", \"但是\"]（原 [\"這些\", \"它的\", \"然後\", \"我們的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（also）原位換成翻譯題，沿用題 id a1-u01-l08-q17；目標字沿用 also",
+        "resolution": "改為 translate：promptZh「我姊姊也是老師。」、hintWords [\"also\"]、referenceEn [\"My sister is also a teacher.\",\"My older sister is also a teacher.\"]、rubricZh [\"also 放在 be 動詞後面（例如 is also a teacher）；寫 is a teacher too 也正確\",\"「姊姊」可寫，例如 sister、older sister、big sister 等\"]（原 makeSentence：instructionZh「用 also 造一個句子，說說你喜歡的另一樣東西。」、referenceEn [\"I like music. I also like sports.\",\"I like tea. I also like milk.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u01-l06-q16（go） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
+        "resolution": "改為 promptZh「他沒來，因為他生病了。」、referenceEn [\"He didn't come because he was sick.\",\"He did not come because he was sick.\"]、rubricZh [\"用 because 說明原因\",\"過去的事用過去式（例如 didn't come、was sick）；寫 He isn't here because he is sick 等也正確\"]（原 promptZh「我很累，因為我昨天很晚睡。」、referenceEn [\"I am tired because I went to bed late yesterday.\",\"I'm tired because I went to bed late yesterday.\"]、rubricZh [\"用 because 說明原因\",\"昨天的事用過去式（例如 went to bed late、stayed up late）\",\"「很晚睡」可寫 went to bed late 或 stayed up late\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

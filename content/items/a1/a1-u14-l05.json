@@ -215,7 +215,6 @@
       "type": "translate",
       "promptZh": "我很喜歡唱歌。",
       "hintWords": [
-        "enjoy",
         "sing"
       ],
       "referenceEn": [
@@ -229,16 +228,19 @@
     },
     {
       "id": "a1-u14-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "enjoy",
-      "instructionZh": "用 enjoy 造一個句子，說說你喜歡做的事。",
+      "type": "translate",
+      "promptZh": "我們昨天在海灘玩得很開心。",
+      "hintWords": [
+        "enjoy"
+      ],
       "referenceEn": [
-        "I enjoy cooking for my family.",
-        "I enjoy walking in the park."
+        "We enjoyed our time at the beach yesterday.",
+        "Yesterday, we enjoyed our time at the beach."
       ],
       "rubricZh": [
-        "enjoy 後面接名詞或動名詞（例如 enjoy music、enjoy cooking），不接 to＋原形",
-        "動詞配合主詞和時態"
+        "enjoy 後面接名詞或動名詞（例如 enjoyed our time、enjoyed the beach）",
+        "寫，例如 had a lot of fun、had a great time 等也正確",
+        "昨天的事用過去式（例如 enjoyed）"
       ]
     }
   ],
@@ -312,6 +314,24 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：radio 與 q14 共用；混合詞性題原無干擾項放得進空格，ball/radio 換動詞 win/play",
         "resolution": "改為 [\"贏\", \"歌曲\", \"玩\", \"享受\"]（原 [\"球\", \"歌曲\", \"收音機\", \"享受\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（enjoy）原位換成翻譯題，沿用題 id a1-u14-l05-q17；目標字沿用 enjoy",
+        "resolution": "改為 translate：promptZh「我們昨天在海灘玩得很開心。」、hintWords [\"enjoy\"]、referenceEn [\"We enjoyed our time at the beach yesterday.\",\"Yesterday, we enjoyed our time at the beach.\"]、rubricZh [\"enjoy 後面接名詞或動名詞（例如 enjoyed our time、enjoyed the beach）；寫 had a lot of fun 也正確\",\"昨天的事用過去式（例如 enjoyed）\"]（原 makeSentence：instructionZh「用 enjoy 造一個句子，說說你喜歡做的事。」、referenceEn [\"I enjoy cooking for my family.\",\"I enjoy walking in the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 enjoy，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 [\"sing\"]（原 [\"enjoy\",\"sing\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點未明列 had a great time",
+        "resolution": "改為 rubricZh [\"enjoy 後面接名詞或動名詞（例如 enjoyed our time、enjoyed the beach）\",\"寫，例如 had a lot of fun、had a great time 等也正確\",\"昨天的事用過去式（例如 enjoyed）\"]（原 [\"enjoy 後面接名詞或動名詞（例如 enjoyed our time、enjoyed the beach）；寫 had a lot of fun 也正確\",\"昨天的事用過去式（例如 enjoyed）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

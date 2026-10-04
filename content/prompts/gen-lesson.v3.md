@@ -37,7 +37,7 @@ Output format (JSON, no comments, no markdown):
     {"type": "mcq", "stemEn": "<sentence with exactly one ____ blank>", "stemZh": "<translation of the completed sentence>", "options": ["<4 English options>"], "optionGlossZh": ["<meaning of each option, same order>"], "answer": 0},
     {"type": "reading", "passageEn": "...", "passageZh": "...", "questions": [{"questionZh": "<繁體中文問題>", "options": ["<繁體中文>", "<繁體中文>", "<繁體中文>"], "answer": 0}, {"questionZh": "...", "options": ["..."], "answer": 1}]},
     {"type": "translate", "promptZh": "<Chinese sentence to translate>", "hintWords": ["<lesson word>"], "referenceEn": ["<1–3 acceptable translations>"], "rubricZh": ["<2–4 grading points in Chinese>"]},
-    {"type": "makeSentence", "targetWord": "<lesson word>", "instructionZh": "<what kind of sentence to write, in Chinese>", "referenceEn": ["<1–3 sample sentences>"], "rubricZh": ["<2–4 grading points in Chinese>"]}
+    {"type": "translate", "promptZh": "<another Chinese sentence to translate>", "hintWords": ["<a different lesson word>"], "referenceEn": ["<1–3 acceptable translations>"], "rubricZh": ["<2–4 grading points in Chinese>"]}
   ]
 }
 "answer" is the zero-based index of the correct option. Vary the position of the correct answer.
@@ -63,7 +63,6 @@ Produce exactly these items, in this order:
 - 2 × shadowing
 - 2 × mcq: the blank tests one of the new words; all 4 options are English words or short phrases.
 - 1 × reading: one passage with exactly 2 questions (3 or 4 Traditional Chinese options each).
-- 1 × translate
-- 1 × makeSentence
+- 2 × translate: the two items use different new words in hintWords, with different situations and sentence patterns.
 
 Every non-wordCard item should use at least one new word. Use as many of the new words as possible across the lesson.

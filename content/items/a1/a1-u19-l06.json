@@ -224,16 +224,17 @@
     },
     {
       "id": "a1-u19-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "inside",
-      "instructionZh": "用 inside 造一個句子，說說某個東西在哪裡面，或你在室內做的事。",
+      "type": "translate",
+      "promptZh": "盒子裡面有什麼？",
+      "hintWords": [
+        "inside"
+      ],
       "referenceEn": [
-        "My keys are inside my bag.",
-        "I stay inside when it rains."
+        "What is inside the box?",
+        "What's inside the box?"
       ],
       "rubricZh": [
-        "inside 可當介系詞接地點（例如 inside my bag），也可單獨用（例如 stay inside）",
-        "動詞配合主詞和時態"
+        "inside 當介系詞接地點（例如 inside the box）；寫 in the box 也正確"
       ]
     }
   ],
@@ -277,6 +278,12 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
         "resolution": "改為 \"可以；好\"（原 \"好；可以\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（inside）原位換成翻譯題，沿用題 id a1-u19-l06-q17；目標字沿用 inside",
+        "resolution": "改為 translate：promptZh「盒子裡面有什麼？」、hintWords [\"inside\"]、referenceEn [\"What is inside the box?\",\"What's inside the box?\"]、rubricZh [\"inside 當介系詞接地點（例如 inside the box）；寫 in the box 也正確\"]（原 makeSentence：instructionZh「用 inside 造一個句子，說說某個東西在哪裡面，或你在室內做的事。」、referenceEn [\"My keys are inside my bag.\",\"I stay inside when it rains.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

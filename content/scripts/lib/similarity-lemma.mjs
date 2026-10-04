@@ -108,6 +108,45 @@ export function skeletonPairs(doc, ctx) {
   return pairs;
 }
 
+// 翻譯題彼此雷同（創辦人裁示 2026-10-04 造句改翻譯，每課 2 題翻譯）：參考答案兩兩比對（各變體取最高）。
+//   字面：共同實詞（不計兩題的提示字）÷ 較短句實詞 ≥ threshold——同課兩題、同單元跨課都比。
+//         提示字只從分子扣、分母照算，避免一兩個實詞的短句被放大成 100%。
+//         （提示字撞本課目標字由檢查器 TRANSLATE_HINT_DUP 另管。）
+//   句型：實詞換成 X（連續合併）後的骨架相同——只比同課兩題（跨課的 A1 短句骨架天生常撞，只會產生噪音）。
+// 回傳 [{ a, b, scope: 'lesson'|'unit', reason: '字面'|'句型', ratio, shared, sentences }]。
+const pattern = (text) =>
+  (text.toLowerCase().replaceAll('’', "'").match(/[a-z0-9]+(?:'[a-z]+)?/g) ?? [])
+    .map((t) => (STOPWORDS.has(t) ? t : 'X'))
+    .join(' ')
+    .replace(/X( X)+/g, 'X');
+
+export function translatePairs(docs, ctx, threshold = 0.4) {
+  const all = docs.flatMap((doc) =>
+    doc.items.filter((it) => it.type === 'translate').map((it) => ({ it, lesson: doc.lessonId, unit: doc.lessonId.replace(/-l\d+$/, '') })),
+  );
+  const out = [];
+  for (let i = 0; i < all.length; i++) {
+    for (let j = i + 1; j < all.length; j++) {
+      const [x, y] = [all[i], all[j]];
+      const scope = x.lesson === y.lesson ? 'lesson' : x.unit === y.unit ? 'unit' : null;
+      if (!scope) continue;
+      let best = null;
+      const hints = new Set([...x.it.hintWords, ...y.it.hintWords].flatMap((h) => h.toLowerCase().split(/[\s-]+/)).map((w) => lemmatize(w, ctx)));
+      for (const s of x.it.referenceEn) {
+        for (const t of y.it.referenceEn) {
+          const o = overlap(s, t, ctx);
+          const shared = o.shared.filter((w) => !hints.has(w));
+          const r = { shared, ratio: o.shared.length ? (o.ratio * shared.length) / o.shared.length : 0 };
+          if (r.ratio >= threshold && (!best || r.ratio > best.ratio)) best = { reason: '字面', ratio: r.ratio, shared: r.shared, sentences: [s, t] };
+          if (!best && scope === 'lesson' && pattern(s) === pattern(t)) best = { reason: '句型', ratio: r.ratio, shared: [pattern(s)], sentences: [s, t] };
+        }
+      }
+      if (best) out.push({ a: x.it.id, b: y.it.id, scope, ...best });
+    }
+  }
+  return out;
+}
+
 // mcq 題幹不可出現正解字或其變形（§11.15）：比原形。
 export function stemLeaks(doc, ctx) {
   return doc.items

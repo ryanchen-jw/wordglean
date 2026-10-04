@@ -215,17 +215,18 @@
     },
     {
       "id": "a1-u18-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "sad",
-      "instructionZh": "用 sad 造一個句子，說說什麼事讓你難過。",
+      "type": "translate",
+      "promptZh": "這是一個很悲傷的故事。",
+      "hintWords": [
+        "sad"
+      ],
       "referenceEn": [
-        "I am sad when it rains on the weekend.",
-        "I was sad when my dog was sick."
+        "This is a very sad story.",
+        "This story is very sad."
       ],
       "rubricZh": [
-        "sad 可放在 be 動詞或 feel 後（例如 I am sad、I feel sad）",
-        "也可用 make me sad（例如 Rainy days make me sad.）",
-        "可用 when 或 because 說原因"
+        "sad 放在名詞前面或 be 動詞後面（例如 a sad story、is sad）",
+        "可寫，例如 This is a very sad story、This story is very sad 等"
       ]
     }
   ],
@@ -335,6 +336,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：luck、exciting 與 q12 共用，改形容詞 angry、interested，四選項同為形容詞",
         "resolution": "改為 [\"生氣的\", \"幸運的\", \"難過的\", \"感興趣的\"]（原 [\"運氣\", \"幸運的\", \"難過的\", \"令人興奮的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（sad）原位換成翻譯題，沿用題 id a1-u18-l04-q16；目標字沿用 sad",
+        "resolution": "改為 translate：promptZh「這是一個很悲傷的故事。」、hintWords [\"sad\"]、referenceEn [\"This is a very sad story.\",\"This story is very sad.\"]、rubricZh [\"sad 放在名詞前面或 be 動詞後面（例如 a sad story、is sad）\",\"可寫，例如 This is a very sad story、This story is very sad 等\"]（原 makeSentence：instructionZh「用 sad 造一個句子，說說什麼事讓你難過。」、referenceEn [\"I am sad when it rains on the weekend.\",\"I was sad when my dog was sick.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

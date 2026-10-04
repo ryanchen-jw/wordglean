@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u22-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "princess",
-      "instructionZh": "用 princess 造一個句子，說說故事或電影裡的公主。",
+      "type": "translate",
+      "promptZh": "這本書是關於一位公主的故事。",
+      "hintWords": [
+        "princess"
+      ],
       "referenceEn": [
-        "In the story, the princess has a white horse.",
-        "My daughter wants to be a princess."
+        "This book is about a princess.",
+        "This story is about a princess."
       ],
       "rubricZh": [
-        "princess 前面加 a、the 等（例如 the princess）",
-        "動詞配合主詞（例如 The princess has）"
+        "「關於」可寫，例如 is about 等",
+        "princess 前面加 a、the 等"
       ]
     }
   ],
@@ -339,6 +341,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：kite 是 q12 正解、fairy／princess 與 q12 共用，改 photo、album、festival",
         "resolution": "改為 [\"DVD 光碟\", \"照片\", \"專輯\", \"慶典\"]（原 [\"DVD 光碟\", \"風箏\", \"仙女\", \"公主\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（princess）原位換成翻譯題，沿用題 id a1-u22-l06-q16；目標字沿用 princess",
+        "resolution": "改為 translate：promptZh「這本書是關於一位公主的故事。」、hintWords [\"princess\"]、referenceEn [\"This book is about a princess.\",\"This story is about a princess.\"]、rubricZh [\"「關於」可寫，例如 is about 等\",\"princess 前面加 a、the 等\"]（原 makeSentence：instructionZh「用 princess 造一個句子，說說故事或電影裡的公主。」、referenceEn [\"In the story, the princess has a white horse.\",\"My daughter wants to be a princess.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

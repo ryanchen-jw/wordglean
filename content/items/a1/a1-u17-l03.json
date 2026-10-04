@@ -223,31 +223,34 @@
     {
       "id": "a1-u17-l03-q17",
       "type": "translate",
-      "promptZh": "你可以幫我嗎？",
+      "promptZh": "我每天幫媽媽洗碗。",
       "hintWords": [
         "help"
       ],
       "referenceEn": [
-        "Can you help me?",
-        "Could you help me, please?"
+        "I help my mother wash the dishes every day.",
+        "Every day, I help my mom wash the dishes."
       ],
       "rubricZh": [
-        "請求幫忙可用 Can you…?、Could you…? 等",
-        "help 後面直接接人（例如 help me）"
+        "help 後面接人再接動詞原形（例如 help my mother wash the dishes）；help … with 也正確",
+        "習慣性的事用現在簡單式；「媽媽」可寫，例如 mother、mom 等"
       ]
     },
     {
       "id": "a1-u17-l03-q18",
-      "type": "makeSentence",
-      "targetWord": "begin",
-      "instructionZh": "用 begin 造一個句子，說說某件事幾點或什麼時候開始。",
+      "type": "translate",
+      "promptZh": "暑假這個星期五開始。",
+      "hintWords": [
+        "begin"
+      ],
       "referenceEn": [
-        "My work begins at nine.",
-        "The movie begins at seven tonight."
+        "Summer vacation begins this Friday.",
+        "The summer vacation begins this Friday."
       ],
       "rubricZh": [
-        "說幾點用 at（例如 at nine）；星期用 on、月份用 in（例如 on Monday、in May）",
-        "動詞配合主詞和時態（例如 My work begins、The class began）"
+        "動詞配合主詞（例如 begins）；寫 starts 也正確",
+        "「這個星期五」可寫，例如 this Friday、on Friday 等",
+        "「暑假」可寫，例如 summer vacation、the summer holidays 等"
       ]
     }
   ],
@@ -321,6 +324,18 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝該級最常用義：釋義維持最常用義在前，改寫例句示範第一義：示範 leave＝離開；與 q11 六點出門看電影、q12 七點出發上學換了主詞＋情境＋句型",
         "resolution": "改為 \"離開房間時要關燈。\"（原 \"公車八點開。\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（begin）原位換成翻譯題，沿用題 id a1-u17-l03-q18；目標字沿用 begin",
+        "resolution": "改為 translate：promptZh「暑假這個星期五開始。」、hintWords [\"begin\"]、referenceEn [\"Summer vacation begins this Friday.\",\"The summer vacation begins this Friday.\"]、rubricZh [\"動詞配合主詞（例如 begins）；寫 starts 也正確\",\"「這個星期五」可寫，例如 this Friday、on Friday 等\",\"「暑假」可寫，例如 summer vacation、the summer holidays 等\"]（原 makeSentence：instructionZh「用 begin 造一個句子，說說某件事幾點或什麼時候開始。」、referenceEn [\"My work begins at nine.\",\"The movie begins at seven tonight.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u17-l06-q16（please；本題又與單字卡 Can you help me with this box? 雷同） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
+        "resolution": "改為 promptZh「我每天幫媽媽洗碗。」、referenceEn [\"I help my mother wash the dishes every day.\",\"Every day, I help my mom wash the dishes.\"]、rubricZh [\"help 後面接人再接動詞原形（例如 help my mother wash the dishes）；help … with 也正確\",\"習慣性的事用現在簡單式；「媽媽」可寫，例如 mother、mom 等\"]（原 promptZh「你可以幫我嗎？」、referenceEn [\"Can you help me?\",\"Could you help me, please?\"]、rubricZh [\"請求幫忙可用 Can you…?、Could you…? 等\",\"help 後面直接接人（例如 help me）\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

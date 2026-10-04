@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u16-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "read",
-      "instructionZh": "用 read 造一個句子，說說你喜歡讀什麼或什麼時候讀。",
+      "type": "translate",
+      "promptZh": "我女兒喜歡在睡前讀故事。",
+      "hintWords": [
+        "read"
+      ],
       "referenceEn": [
-        "I read the news on my phone every morning.",
-        "I like to read books before bed."
+        "My daughter likes to read stories before bed.",
+        "My daughter likes reading stories before bed."
       ],
       "rubricZh": [
-        "read 後面接讀的東西（例如 read books、read the news）",
-        "時態配合內容（例如習慣用現在簡單式）"
+        "like 後面接 to＋原形或動名詞（例如 likes to read、likes reading）",
+        "「睡前」可寫，例如 before bed、before she goes to bed 等"
       ]
     }
   ],
@@ -331,6 +333,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：history 與 q13 共用，換 question；book、question 可放進 a good ____",
         "resolution": "改為 [\"資訊\", \"主意\", \"書\", \"問題\"]（原 [\"資訊\", \"主意\", \"書\", \"歷史\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（read）原位換成翻譯題，沿用題 id a1-u16-l02-q17；目標字沿用 read",
+        "resolution": "改為 translate：promptZh「我女兒喜歡在睡前讀故事。」、hintWords [\"read\"]、referenceEn [\"My daughter likes to read stories before bed.\",\"My daughter likes reading stories before bed.\"]、rubricZh [\"like 後面接 to＋原形或動名詞（例如 likes to read、likes reading）\",\"「睡前」可寫，例如 before bed、before she goes to bed 等\"]（原 makeSentence：instructionZh「用 read 造一個句子，說說你喜歡讀什麼或什麼時候讀。」、referenceEn [\"I read the news on my phone every morning.\",\"I like to read books before bed.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

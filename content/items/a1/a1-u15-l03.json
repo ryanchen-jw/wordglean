@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u15-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "cool",
-      "instructionZh": "用 cool 造一個句子，說說涼爽的天氣或涼的東西。",
+      "type": "translate",
+      "promptZh": "請把這瓶水放在陰涼的地方。",
+      "hintWords": [
+        "cool"
+      ],
       "referenceEn": [
-        "It is cool in the morning.",
-        "I like to drink cool water in summer."
+        "Please keep this bottle of water in a cool place.",
+        "Please put this bottle of water in a cool place."
       ],
       "rubricZh": [
-        "cool 是形容詞，放在 be 動詞後面或名詞前面（例如 It is cool、cool water）",
-        "說天氣可用 It is cool、The weather is cool 等"
+        "「陰涼的地方」可寫，例如 a cool place 等",
+        "「放在」可寫，例如 keep、put 等"
       ]
     }
   ],
@@ -294,6 +296,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：ice 是 q13 正解；改為四個形容詞 hot/cold/snowy，靠詞義選 cool",
         "resolution": "改為 [\"熱的\", \"冷的\", \"涼爽的\", \"下雪的\"]（原 [\"河\", \"冰\", \"涼爽的\", \"馬\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（cool）原位換成翻譯題，沿用題 id a1-u15-l03-q17；目標字沿用 cool",
+        "resolution": "改為 translate：promptZh「請把這瓶水放在涼快的地方。」、hintWords [\"cool\"]、referenceEn [\"Please keep this bottle of water in a cool place.\",\"Please put this bottle of water in a cool place.\"]、rubricZh [\"「涼快的地方」可寫，例如 a cool place 等\",\"「放在」可寫，例如 keep、put 等\"]（原 makeSentence：instructionZh「用 cool 造一個句子，說說涼爽的天氣或涼的東西。」、referenceEn [\"It is cool in the morning.\",\"I like to drink cool water in summer.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 「涼快的地方」不道地，改台灣常用「陰涼的地方」",
+        "resolution": "改為 promptZh「請把這瓶水放在陰涼的地方。」（原「請把這瓶水放在涼快的地方。」）、rubricZh [\"「陰涼的地方」可寫，例如 a cool place 等\",\"「放在」可寫，例如 keep、put 等\"]（原 [\"「涼快的地方」可寫，例如 a cool place 等\",\"「放在」可寫，例如 keep、put 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

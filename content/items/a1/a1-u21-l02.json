@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u21-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "beautiful",
-      "instructionZh": "用 beautiful 造一個句子，描述美麗的地方或東西。",
+      "type": "translate",
+      "promptZh": "這座城市晚上很美。",
+      "hintWords": [
+        "beautiful"
+      ],
       "referenceEn": [
-        "Taiwan has many beautiful mountains.",
-        "This is a beautiful song."
+        "This city is beautiful at night.",
+        "This city is very beautiful at night."
       ],
       "rubricZh": [
-        "beautiful 放在名詞前面或 be 動詞後面（例如 a beautiful song、is beautiful）",
-        "動詞配合主詞"
+        "beautiful 放在 be 動詞後面（例如 is beautiful）",
+        "「晚上」可寫，例如 at night、in the evening 等"
       ]
     }
   ],
@@ -334,6 +336,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：gold 代入「Open the gold door. Someone is there.」完全說得通（金色的門），換成 glad（the glad door 語意不通）",
         "resolution": "改為 [\"高興的\", \"前面的\", \"活的\", \"很快地\"]（原 [\"金色的\", \"前面的\", \"活的\", \"很快地\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（beautiful）原位換成翻譯題，沿用題 id a1-u21-l02-q17；目標字沿用 beautiful",
+        "resolution": "改為 translate：promptZh「這座城市晚上很美。」、hintWords [\"beautiful\"]、referenceEn [\"This city is beautiful at night.\",\"This city is very beautiful at night.\"]、rubricZh [\"beautiful 放在 be 動詞後面（例如 is beautiful）\",\"「晚上」可寫，例如 at night、in the evening 等\"]（原 makeSentence：instructionZh「用 beautiful 造一個句子，描述美麗的地方或東西。」、referenceEn [\"Taiwan has many beautiful mountains.\",\"This is a beautiful song.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

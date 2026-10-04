@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u10-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "shopping",
-      "instructionZh": "用 shopping 造一個句子，說說你多常去購物或去哪裡購物。",
+      "type": "translate",
+      "promptZh": "今天下午我們去購物吧。",
+      "hintWords": [
+        "shopping"
+      ],
       "referenceEn": [
-        "I go shopping every Saturday.",
-        "I like shopping at the supermarket near my home."
+        "Let's go shopping this afternoon.",
+        "This afternoon, let's go shopping."
       ],
       "rubricZh": [
-        "「去購物」用 go shopping（不寫成 go to shopping；I like to go shopping 正確）",
-        "習慣性的事用現在簡單式"
+        "「去購物」用 go shopping（不寫成 go to shopping）",
+        "「今天下午」可寫，例如 this afternoon 等"
       ]
     }
   ],
@@ -399,6 +401,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sale 是 q12 正解、shopping 與 q12 共用，換 store/bookstore，四項皆可放進 I have a ____",
         "resolution": "改為 [\"美元\", \"商店\", \"書店\", \"信用卡\"]（原 [\"美元\", \"特價\", \"購物\", \"信用卡\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（shopping）原位換成翻譯題，沿用題 id a1-u10-l03-q16；目標字沿用 shopping",
+        "resolution": "改為 translate：promptZh「今天下午我們去購物吧。」、hintWords [\"shopping\"]、referenceEn [\"Let's go shopping this afternoon.\",\"This afternoon, let's go shopping.\"]、rubricZh [\"「去購物」用 go shopping（不寫成 go to shopping）\",\"「今天下午」可寫，例如 this afternoon 等\"]（原 makeSentence：instructionZh「用 shopping 造一個句子，說說你多常去購物或去哪裡購物。」、referenceEn [\"I go shopping every Saturday.\",\"I like shopping at the supermarket near my home.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

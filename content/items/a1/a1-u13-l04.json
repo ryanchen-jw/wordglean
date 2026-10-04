@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u13-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "sick",
-      "instructionZh": "用 sick 造一個句子，說說你生病時會做什麼。",
+      "type": "translate",
+      "promptZh": "我的狗病了。",
+      "hintWords": [
+        "sick"
+      ],
       "referenceEn": [
-        "When I am sick, I stay in bed.",
-        "I drink a lot of water when I am sick."
+        "My dog is sick.",
+        "My dog got sick."
       ],
       "rubricZh": [
-        "「生病時」可用 when I am sick、when I feel sick、when I get sick 等",
-        "sick 是形容詞，放在 be 動詞、feel、get 等後面（例如 am sick、feel sick、get sick）"
+        "「病了」可寫，例如 is sick、got sick 等",
+        "sick 是形容詞，放在 be 動詞、get 等後面（例如 is sick、got sick）"
       ]
     }
   ],
@@ -382,6 +384,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——混合詞性題至少兩個干擾項放得進空格：混合詞性題原無干擾項放得進 I can't ____，smoking/sick 換動詞 exercise/drive",
         "resolution": "改為 [\"運動\", \"發燒\", \"呼吸\", \"開車\"]（原 [\"抽菸\", \"發燒\", \"呼吸\", \"生病的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（sick）原位換成翻譯題，沿用題 id a1-u13-l04-q17；目標字沿用 sick",
+        "resolution": "改為 translate：promptZh「我的狗病了。」、hintWords [\"sick\"]、referenceEn [\"My dog is sick.\",\"My dog got sick.\"]、rubricZh [\"「病了」可寫，例如 is sick、got sick 等\",\"sick 是形容詞，放在 be 動詞、get 等後面（例如 is sick、got sick）\"]（原 makeSentence：instructionZh「用 sick 造一個句子，說說你生病時會做什麼。」、referenceEn [\"When I am sick, I stay in bed.\",\"I drink a lot of water when I am sick.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

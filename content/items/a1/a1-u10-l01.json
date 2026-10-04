@@ -228,17 +228,18 @@
     },
     {
       "id": "a1-u10-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "spend",
-      "instructionZh": "用 spend 造一個句子，說說你把錢或時間花在什麼上。",
+      "type": "translate",
+      "promptZh": "我每天花一個小時走路上班。",
+      "hintWords": [
+        "spend"
+      ],
       "referenceEn": [
-        "I spend a lot of money on food.",
-        "I spend two hours on homework every day."
+        "I spend an hour walking to work every day.",
+        "Every day, I spend one hour walking to work."
       ],
       "rubricZh": [
-        "「花錢（時間）在⋯上」可用 spend … on（例如 spend money on food）",
-        "也可用 spend＋時間＋動名詞（例如 spend two hours cooking）",
-        "時態配合內容"
+        "spend＋時間＋動名詞（例如 spend an hour walking）；寫 It takes me an hour to walk to work 也正確",
+        "「一個小時」可寫，例如 an hour、one hour 等"
       ]
     }
   ],
@@ -402,6 +403,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：sell 是 q13 正解、spend 為動詞，換名詞 phone/key，四項皆名詞",
         "resolution": "改為 [\"零錢\", \"書店\", \"電話\", \"鑰匙\"]（原 [\"零錢\", \"書店\", \"花費\", \"賣\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（spend）原位換成翻譯題，沿用題 id a1-u10-l01-q17；目標字沿用 spend",
+        "resolution": "改為 translate：promptZh「我每天花一個小時走路上班。」、hintWords [\"spend\"]、referenceEn [\"I spend an hour walking to work every day.\",\"Every day, I spend one hour walking to work.\"]、rubricZh [\"spend＋時間＋動名詞（例如 spend an hour walking）\",\"「一個小時」可寫，例如 an hour、one hour 等\"]（原 makeSentence：instructionZh「用 spend 造一個句子，說說你把錢或時間花在什麼上。」、referenceEn [\"I spend a lot of money on food.\",\"I spend two hours on homework every day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點未收 It takes me … to 的寫法",
+        "resolution": "改為 rubricZh [\"spend＋時間＋動名詞（例如 spend an hour walking）；寫 It takes me an hour to walk to work 也正確\",\"「一個小時」可寫，例如 an hour、one hour 等\"]（原 [\"spend＋時間＋動名詞（例如 spend an hour walking）\",\"「一個小時」可寫，例如 an hour、one hour 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

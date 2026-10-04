@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u03-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "early",
-      "instructionZh": "用 early 造一個句子，說說你很早做的一件事。",
+      "type": "translate",
+      "promptZh": "那家店昨天很早就關門了。",
+      "hintWords": [
+        "early"
+      ],
       "referenceEn": [
-        "I get up early on Monday.",
-        "I go to work early every day."
+        "That shop closed early yesterday.",
+        "The shop closed early yesterday."
       ],
       "rubricZh": [
-        "early 常放在動詞片語後面（例如 get up early、go to work early）",
-        "時態配合內容（例如習慣用現在簡單式；昨天的事用過去式）"
+        "「很早就關門」可寫，例如 closed early、closed very early 等",
+        "昨天的事用過去式（例如 closed）；「那家店」可寫，例如 that shop、the store 等"
       ]
     }
   ],
@@ -361,6 +363,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：moment 是 q14 正解、half 與 q14 共用，改 early、first，四選項皆形容詞；避開 sorry",
         "resolution": "改為 [\"早；提早\", \"第一的\", \"遲的\", \"第二的\"]（原 [\"片刻\", \"一半\", \"遲的\", \"第二的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（early）原位換成翻譯題，沿用題 id a1-u03-l04-q17；目標字沿用 early",
+        "resolution": "改為 translate：promptZh「那家店昨天很早就關門了。」、hintWords [\"early\"]、referenceEn [\"That shop closed early yesterday.\",\"The shop closed early yesterday.\"]、rubricZh [\"「很早就關門」可寫，例如 closed early、closed very early 等\",\"昨天的事用過去式（例如 closed）；「那家店」可寫，例如 that shop、the store 等\"]（原 makeSentence：instructionZh「用 early 造一個句子，說說你很早做的一件事。」、referenceEn [\"I get up early on Monday.\",\"I go to work early every day.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

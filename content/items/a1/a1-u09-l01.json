@@ -214,7 +214,6 @@
       "type": "translate",
       "promptZh": "她穿著一件漂亮的洋裝。",
       "hintWords": [
-        "wear",
         "pretty"
       ],
       "referenceEn": [
@@ -227,17 +226,18 @@
     },
     {
       "id": "a1-u09-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "wear",
-      "instructionZh": "用 wear 造一個句子，說說你上班或上學通常穿什麼。",
+      "type": "translate",
+      "promptZh": "你明天要穿什麼去派對？",
+      "hintWords": [
+        "wear"
+      ],
       "referenceEn": [
-        "I usually wear jeans to school.",
-        "I wear a white shirt to work."
+        "What will you wear to the party tomorrow?",
+        "What are you going to wear to the party tomorrow?"
       ],
       "rubricZh": [
-        "wear 後面直接接衣物（例如 wear jeans）",
-        "習慣性的事用現在簡單式",
-        "「穿去上班（上學）」可用 to work、to school"
+        "「要穿」可寫，例如 will wear、are going to wear 等",
+        "「去派對」可寫，例如 to the party、for the party 等"
       ]
     }
   ],
@@ -359,6 +359,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：I like to share jeans and a white shirt.（和家人共穿）只看英文勉強說得通，share 換成 greet，向牛仔褲打招呼語意不通，cook、greet 兩個動詞放得進空格",
         "resolution": "改為 [\"煮\", \"漂亮的\", \"穿\", \"打招呼\"]（原 [\"煮\", \"漂亮的\", \"穿\", \"共用\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（wear）原位換成翻譯題，沿用題 id a1-u09-l01-q17；目標字沿用 wear",
+        "resolution": "改為 translate：promptZh「你明天要穿什麼去派對？」、hintWords [\"wear\"]、referenceEn [\"What will you wear to the party tomorrow?\",\"What are you going to wear to the party tomorrow?\"]、rubricZh [\"「要穿」可寫，例如 will wear、are going to wear 等\",\"「去派對」可寫，例如 to the party、for the party 等\"]（原 makeSentence：instructionZh「用 wear 造一個句子，說說你上班或上學通常穿什麼。」、referenceEn [\"I usually wear jeans to school.\",\"I wear a white shirt to work.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15/hintWords",
+        "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 wear，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
+        "resolution": "改為 [\"pretty\"]（原 [\"wear\",\"pretty\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

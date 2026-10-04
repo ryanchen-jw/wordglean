@@ -216,16 +216,18 @@
     },
     {
       "id": "a1-u10-l02-q16",
-      "type": "makeSentence",
-      "targetWord": "price",
-      "instructionZh": "用 price 造一個句子，說說某樣東西的價格。",
+      "type": "translate",
+      "promptZh": "價格在背面。",
+      "hintWords": [
+        "price"
+      ],
       "referenceEn": [
-        "The price of this phone is very high.",
-        "The price is ten dollars."
+        "The price is on the back.",
+        "The price is written on the back."
       ],
       "rubricZh": [
-        "「⋯的價格」例如用 the price of（例如 the price of this phone、The price is ten dollars）",
-        "價格高低例如用 high、low（用 expensive、cheap 形容東西本身也可以）"
+        "「價格」用 the price 等",
+        "「在背面」可寫，例如 on the back、is written on the back 等"
       ]
     }
   ],
@@ -407,6 +409,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：price 是 q12 正解，換 waiter（人物名詞，靠詞義排除）",
         "resolution": "改為 [\"卡片\", \"服務生\", \"訂單\", \"老闆\"]（原 [\"卡片\", \"價格\", \"點餐\", \"老闆\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（price）原位換成翻譯題，沿用題 id a1-u10-l02-q16；目標字沿用 price",
+        "resolution": "改為 translate：promptZh「價格在背面。」、hintWords [\"price\"]、referenceEn [\"The price is on the back.\",\"The price is written on the back.\"]、rubricZh [\"「價格」用 the price 等\",\"「在背面」可寫，例如 on the back、is written on the back 等\"]（原 makeSentence：instructionZh「用 price 造一個句子，說說某樣東西的價格。」、referenceEn [\"The price of this phone is very high.\",\"The price is ten dollars.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

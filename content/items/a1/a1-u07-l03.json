@@ -212,16 +212,18 @@
     },
     {
       "id": "a1-u07-l03-q16",
-      "type": "makeSentence",
-      "targetWord": "habit",
-      "instructionZh": "用 habit 造一個句子，說說你的一個好習慣或壞習慣。",
+      "type": "translate",
+      "promptZh": "我爸爸有晚餐後散步的習慣。",
+      "hintWords": [
+        "habit"
+      ],
       "referenceEn": [
-        "I have a good habit. I drink water every morning.",
-        "Eating late at night is my bad habit."
+        "My father has a habit of walking after dinner.",
+        "My dad has a habit of walking after dinner."
       ],
       "rubricZh": [
-        "可說 I have a good／bad habit，或 … is a good／bad habit、My habit is… 等",
-        "習慣的內容可用現在簡單式或動名詞（例如 I drink water…、eating late）"
+        "可寫，例如 has a habit of walking…、He has a habit. He walks… 等",
+        "「散步」可寫，例如 walk、take a walk、go for a walk 等"
       ]
     }
   ],
@@ -367,6 +369,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——每課至少一題四選項同詞性：busy 非名詞，改同單元名詞 skill，四選項皆名詞",
         "resolution": "改為 [\"習慣\", \"郵件\", \"技能\", \"密碼\"]（原 [\"習慣\", \"郵件\", \"忙碌的\", \"密碼\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（habit）原位換成翻譯題，沿用題 id a1-u07-l03-q16；目標字沿用 habit",
+        "resolution": "改為 translate：promptZh「我爸爸有晚餐後散步的習慣。」、hintWords [\"habit\"]、referenceEn [\"My father has a habit of walking after dinner.\",\"My dad has a habit of walking after dinner.\"]、rubricZh [\"可寫，例如 has a habit of walking…、He has a habit. He walks… 等\",\"「散步」可寫，例如 walk、take a walk、go for a walk 等\"]（原 makeSentence：instructionZh「用 habit 造一個句子，說說你的一個好習慣或壞習慣。」、referenceEn [\"I have a good habit. I drink water every morning.\",\"Eating late at night is my bad habit.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

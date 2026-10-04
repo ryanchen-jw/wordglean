@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u22-l02-q17",
-      "type": "makeSentence",
-      "targetWord": "dance",
-      "instructionZh": "用 dance 造一個句子，說說誰會跳舞或你什麼時候跳舞。",
+      "type": "translate",
+      "promptZh": "孩子們正在公園裡跳舞。",
+      "hintWords": [
+        "dance"
+      ],
       "referenceEn": [
-        "My sister can dance very well.",
-        "We dance at parties."
+        "The children are dancing in the park.",
+        "The kids are dancing in the park."
       ],
       "rubricZh": [
-        "dance 可當動詞（例如 can dance）或名詞（例如 a dance）",
-        "動詞配合主詞和時態"
+        "「正在跳舞」用現在進行式（例如 are dancing）",
+        "「孩子們」可寫，例如 children、kids 等"
       ]
     }
   ],
@@ -278,6 +280,12 @@
         "message": "執行長裁示：後期規則補正：單字卡第一義＝例句詞義：只調換釋義順序",
         "resolution": "改為 \"游泳池；水池\"（原 \"水池；游泳池\"）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（dance）原位換成翻譯題，沿用題 id a1-u22-l02-q17；目標字沿用 dance",
+        "resolution": "改為 translate：promptZh「孩子們正在公園裡跳舞。」、hintWords [\"dance\"]、referenceEn [\"The children are dancing in the park.\",\"The kids are dancing in the park.\"]、rubricZh [\"「正在跳舞」用現在進行式（例如 are dancing）\",\"「孩子們」可寫，例如 children、kids 等\"]（原 makeSentence：instructionZh「用 dance 造一個句子，說說誰會跳舞或你什麼時候跳舞。」、referenceEn [\"My sister can dance very well.\",\"We dance at parties.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

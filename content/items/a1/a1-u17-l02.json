@@ -241,17 +241,18 @@
     },
     {
       "id": "a1-u17-l02-q18",
-      "type": "makeSentence",
-      "targetWord": "look",
-      "instructionZh": "用 look 造一個句子（例如 look at、look for、look happy）。",
+      "type": "translate",
+      "promptZh": "你看起來很開心。",
+      "hintWords": [
+        "look"
+      ],
       "referenceEn": [
-        "Look at that big bird!",
-        "I am looking for my keys.",
-        "You look happy today."
+        "You look very happy.",
+        "You look so happy."
       ],
       "rubricZh": [
-        "look 可接 at（看）、for（找），或接形容詞表示「看起來」（例如 look happy）",
-        "動詞配合主詞和時態"
+        "look 後面接形容詞表示「看起來」（例如 look happy）",
+        "「很開心」可寫，例如 very happy、so happy 等"
       ]
     }
   ],
@@ -361,6 +362,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：tell 是 q14 正解改 try",
         "resolution": "改為 [\"嘗試\", \"給\", \"找到\", \"打電話給\"]（原 [\"告訴\", \"給\", \"找到\", \"打電話給\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/17",
+        "message": "創辦人裁示：造句改翻譯：造句題（look）原位換成翻譯題，沿用題 id a1-u17-l02-q18；目標字沿用 look",
+        "resolution": "改為 translate：promptZh「你看起來很開心。」、hintWords [\"look\"]、referenceEn [\"You look very happy.\",\"You look so happy.\"]、rubricZh [\"look 後面接形容詞表示「看起來」（例如 look happy）\",\"「很開心」可寫，例如 very happy、so happy 等\"]（原 makeSentence：instructionZh「用 look 造一個句子（例如 look at、look for、look happy）。」、referenceEn [\"Look at that big bird!\",\"I am looking for my keys.\",\"You look happy today.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

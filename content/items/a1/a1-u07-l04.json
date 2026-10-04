@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u07-l04-q16",
-      "type": "makeSentence",
-      "targetWord": "hurry",
-      "instructionZh": "用 hurry 造一個句子，說說你很趕時間的情況。",
+      "type": "translate",
+      "promptZh": "快一點，電影要開始了！",
+      "hintWords": [
+        "hurry"
+      ],
       "referenceEn": [
-        "I am in a hurry. I have a meeting at nine.",
-        "Sorry, I can't talk. I am in a hurry."
+        "Hurry up! The movie is starting.",
+        "Hurry! The movie is going to start."
       ],
       "rubricZh": [
-        "「趕時間」可用 be in a hurry（例如 I am in a hurry）",
-        "也可用動詞 hurry（例如 I have to hurry）"
+        "hurry 當動詞可寫，例如 Hurry up!、Hurry! 等",
+        "「電影要開始了」可寫，例如 The movie is starting、The movie is going to start 等"
       ]
     }
   ],
@@ -393,6 +395,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：busy 代入成 It is twelve at night, but the baby is busy.（還在玩）說得通；換成 true，the baby is true 語意不通",
         "resolution": "改為 [\"匆忙\", \"醒著的\", \"真實的\", \"能走動的\"]（原 [\"匆忙\", \"醒著的\", \"忙碌的\", \"能走動的\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（hurry）原位換成翻譯題，沿用題 id a1-u07-l04-q16；目標字沿用 hurry",
+        "resolution": "改為 translate：promptZh「快一點，公車要走了！」、hintWords [\"hurry\"]、referenceEn [\"Hurry up! The bus is leaving.\",\"Hurry! The bus is going to leave.\"]、rubricZh [\"hurry 當動詞可寫，例如 Hurry up!、Hurry! 等\",\"「公車要走了」可寫，例如 The bus is leaving、The bus is going to leave 等\"]（原 makeSentence：instructionZh「用 hurry 造一個句子，說說你很趕時間的情況。」、referenceEn [\"I am in a hurry. I have a meeting at nine.\",\"Sorry, I can't talk. I am in a hurry.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 與同課跟讀 q11「Hurry up! The bus is coming.」幾乎同句（§11.4），換情境",
+        "resolution": "改為 promptZh「快一點，電影要開始了！」（原「快一點，公車要走了！」）、referenceEn [\"Hurry up! The movie is starting.\",\"Hurry! The movie is going to start.\"]（原 [\"Hurry up! The bus is leaving.\",\"Hurry! The bus is going to leave.\"]）、rubricZh [\"hurry 當動詞可寫，例如 Hurry up!、Hurry! 等\",\"「電影要開始了」可寫，例如 The movie is starting、The movie is going to start 等\"]（原 [\"hurry 當動詞可寫，例如 Hurry up!、Hurry! 等\",\"「公車要走了」可寫，例如 The bus is leaving、The bus is going to leave 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -227,17 +227,18 @@
     },
     {
       "id": "a1-u08-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "vegetable",
-      "instructionZh": "用 vegetable 造一個句子，說說你喜歡或不喜歡的蔬菜。",
+      "type": "translate",
+      "promptZh": "她每天去超市買蔬菜。",
+      "hintWords": [
+        "vegetable"
+      ],
       "referenceEn": [
-        "I like green vegetables.",
-        "I don't like vegetables very much."
+        "She buys vegetables at the supermarket every day.",
+        "Every day, she buys vegetables at the supermarket."
       ],
       "rubricZh": [
-        "泛指蔬菜時用複數 vegetables（例如 I like vegetables、green vegetables）",
-        "可再補充蔬菜名稱（例如 Beans are my favorite vegetable.）",
-        "否定可用 don't（例如 I don't like vegetables）"
+        "泛指蔬菜用複數（vegetables）",
+        "動詞配合主詞（例如 buys、goes to the supermarket to buy）"
       ]
     }
   ],
@@ -413,6 +414,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：meat/vegetable 與 q13 共用，換 candy/chicken；meal 可數用法不通換 juice，四項皆可放進空格",
         "resolution": "改為 [\"糖果\", \"雞肉\", \"水果\", \"果汁\"]（原 [\"肉\", \"蔬菜\", \"水果\", \"一餐\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（vegetable）原位換成翻譯題，沿用題 id a1-u08-l05-q17；目標字沿用 vegetable",
+        "resolution": "改為 translate：promptZh「她每天去超市買蔬菜。」、hintWords [\"vegetable\"]、referenceEn [\"She buys vegetables at the supermarket every day.\",\"Every day, she buys vegetables at the supermarket.\"]、rubricZh [\"泛指蔬菜用複數（vegetables）\",\"動詞配合主詞（例如 buys、goes to the supermarket to buy）\"]（原 makeSentence：instructionZh「用 vegetable 造一個句子，說說你喜歡或不喜歡的蔬菜。」、referenceEn [\"I like green vegetables.\",\"I don't like vegetables very much.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

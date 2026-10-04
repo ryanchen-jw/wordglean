@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u11-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "park",
-      "instructionZh": "用 park 造一個句子，說說你在公園做什麼。",
+      "type": "translate",
+      "promptZh": "公園星期一不開放。",
+      "hintWords": [
+        "park"
+      ],
       "referenceEn": [
-        "I walk my dog in the park.",
-        "I like to run in the park in the morning."
+        "The park is closed on Mondays.",
+        "The park is not open on Mondays."
       ],
       "rubricZh": [
-        "「在公園」例如 in the park（at the park 也正確）",
-        "動詞配合主詞和時態"
+        "「不開放」可寫，例如 is closed、is not open 等",
+        "「星期一」可寫，例如 on Mondays、on Monday 等"
       ]
     }
   ],
@@ -326,6 +328,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：factory/flag 與 q14 共用、palace 是 q14 正解，換 hospital/temple/bank",
         "resolution": "改為 [\"醫院\", \"圖書館\", \"寺廟\", \"銀行\"]（原 [\"工廠\", \"圖書館\", \"宮殿\", \"旗子\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（park）原位換成翻譯題，沿用題 id a1-u11-l04-q17；目標字沿用 park",
+        "resolution": "改為 translate：promptZh「公園星期一不開放。」、hintWords [\"park\"]、referenceEn [\"The park is closed on Mondays.\",\"The park is not open on Mondays.\"]、rubricZh [\"「不開放」可寫，例如 is closed、is not open 等\",\"「星期一」可寫，例如 on Mondays、on Monday 等\"]（原 makeSentence：instructionZh「用 park 造一個句子，說說你在公園做什麼。」、referenceEn [\"I walk my dog in the park.\",\"I like to run in the park in the morning.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

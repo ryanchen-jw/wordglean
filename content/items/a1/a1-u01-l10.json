@@ -228,17 +228,18 @@
     },
     {
       "id": "a1-u01-l10-q17",
-      "type": "makeSentence",
-      "targetWord": "after",
-      "instructionZh": "用 after 造一個句子，說說你在某件事之後會做什麼。",
+      "type": "translate",
+      "promptZh": "她下班後會打電話給你。",
+      "hintWords": [
+        "after"
+      ],
       "referenceEn": [
-        "I play ball after school.",
-        "I take a shower after dinner."
+        "She will call you after work.",
+        "After work, she will call you."
       ],
       "rubricZh": [
-        "用 after 表示「在⋯之後」",
-        "after 後面可接名詞、動名詞或子句（after school、after eating、after I eat dinner）",
-        "句子有主詞和動詞"
+        "用 after 表示「在⋯之後」（例如 after work）",
+        "未來的事可寫，例如 will call、is going to call 等"
       ]
     }
   ],
@@ -352,6 +353,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：will 代入成 You look tired. You will go to bed early.（命令語氣）說得通；換成 also，前後句接不上、語意不通",
         "resolution": "改為 [\"仍然\", \"應該\", \"也\", \"在⋯上方\"]（原 [\"仍然\", \"應該\", \"將會\", \"在⋯上方\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（after）原位換成翻譯題，沿用題 id a1-u01-l10-q17；目標字沿用 after",
+        "resolution": "改為 translate：promptZh「她下班後會打電話給你。」、hintWords [\"after\"]、referenceEn [\"She will call you after work.\",\"After work, she will call you.\"]、rubricZh [\"用 after 表示「在⋯之後」（例如 after work）\",\"未來的事可寫，例如 will call、is going to call 等\"]（原 makeSentence：instructionZh「用 after 造一個句子，說說你在某件事之後會做什麼。」、referenceEn [\"I play ball after school.\",\"I take a shower after dinner.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

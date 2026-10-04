@@ -229,17 +229,18 @@
     },
     {
       "id": "a1-u01-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "only",
-      "instructionZh": "用 only 造一個句子，說說某樣東西你只有一個（或只有一點點）。",
+      "type": "translate",
+      "promptZh": "她只喝水。",
+      "hintWords": [
+        "only"
+      ],
       "referenceEn": [
-        "I have only one pen.",
-        "There is only one cat in my house."
+        "She only drinks water.",
+        "She drinks only water."
       ],
       "rubricZh": [
-        "用 only 表示「只有」",
-        "only 可放在數量前（only one pen）或動詞前（I only have…）",
-        "句子有主詞和動詞"
+        "only 可放在動詞前（例如 only drinks）或名詞前（例如 drinks only water）",
+        "主詞是「她」，動詞配合主詞（例如 drinks）"
       ]
     }
   ],
@@ -395,6 +396,12 @@
         "message": "執行長裁示：後期規則補正：mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：There are these／those students in the classroom. 勉強合文法，換成本單元已教、放進空格明顯不通的 into、than（適用「只看英文唯一可解」優先，免混合詞性題與同詞性題條件）",
         "resolution": "改為 [\"進入\", \"它的\", \"比\", \"許多\"]（原 [\"這些\", \"它的\", \"那些\", \"許多\"]）",
         "resolvedAt": "2026-10-02T21:05:08Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（only）原位換成翻譯題，沿用題 id a1-u01-l09-q17；目標字沿用 only",
+        "resolution": "改為 translate：promptZh「她只喝水。」、hintWords [\"only\"]、referenceEn [\"She only drinks water.\",\"She drinks only water.\"]、rubricZh [\"only 可放在動詞前（例如 only drinks）或名詞前（例如 drinks only water）\",\"主詞是「她」，動詞配合主詞（例如 drinks）\"]（原 makeSentence：instructionZh「用 only 造一個句子，說說某樣東西你只有一個（或只有一點點）。」、referenceEn [\"I have only one pen.\",\"There is only one cat in my house.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

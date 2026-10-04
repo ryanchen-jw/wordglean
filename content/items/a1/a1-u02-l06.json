@@ -221,16 +221,18 @@
     },
     {
       "id": "a1-u02-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "last name",
-      "instructionZh": "用 last name 造一個句子，說說你姓什麼。",
+      "type": "translate",
+      "promptZh": "請在這裡寫下你的姓。",
+      "hintWords": [
+        "last name"
+      ],
       "referenceEn": [
-        "My last name is Chen.",
-        "My last name is Lin."
+        "Please write your last name here.",
+        "Write your last name here, please."
       ],
       "rubricZh": [
-        "「姓」用 last name（例如 My last name is Chen.）",
-        "也可寫 Chen is my last name. 這類句型"
+        "「姓」可寫，例如 last name、family name 等",
+        "請求可寫，例如 Please write…、Write … here, please 等"
       ]
     }
   ],
@@ -418,6 +420,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：good morning 與 q12 共用，改同單元名詞 hometown",
         "resolution": "改為 [\"太太\", \"姓\", \"家鄉\", \"國籍\"]（原 [\"太太\", \"姓\", \"早安\", \"國籍\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（last name）原位換成翻譯題，沿用題 id a1-u02-l06-q16；目標字沿用 last name",
+        "resolution": "改為 translate：promptZh「請在這裡寫下你的姓。」、hintWords [\"last name\"]、referenceEn [\"Please write your last name here.\",\"Write your last name here, please.\"]、rubricZh [\"「姓」可寫，例如 last name、family name 等\",\"請求可寫，例如 Please write…、Write … here, please 等\"]（原 makeSentence：instructionZh「用 last name 造一個句子，說說你姓什麼。」、referenceEn [\"My last name is Chen.\",\"My last name is Lin.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

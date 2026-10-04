@@ -225,16 +225,18 @@
     },
     {
       "id": "a1-u21-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "slow",
-      "instructionZh": "用 slow 造一個句子，說說很慢的東西或人。",
+      "type": "translate",
+      "promptZh": "這個時鐘慢了五分鐘。",
+      "hintWords": [
+        "slow"
+      ],
       "referenceEn": [
-        "The bus is very slow today.",
-        "My computer is too slow."
+        "This clock is five minutes slow.",
+        "The clock is five minutes slow."
       ],
       "rubricZh": [
-        "slow 是形容詞，放在 be 動詞後面或名詞前面（例如 is slow、a slow bus）",
-        "動詞配合主詞和時態"
+        "「慢了五分鐘」可寫，例如 is five minutes slow 等",
+        "「這個時鐘」可寫，例如 this clock、the clock 等"
       ]
     }
   ],
@@ -308,6 +310,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：strange 移給 q13，本題改 clean（避開 slow 也通）",
         "resolution": "改為 [\"乾淨的\", \"厚的\", \"薄的\", \"直直地\"]（原 [\"奇怪的\", \"厚的\", \"薄的\", \"直直地\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（slow）原位換成翻譯題，沿用題 id a1-u21-l04-q17；目標字沿用 slow",
+        "resolution": "改為 translate：promptZh「這個時鐘慢了五分鐘。」、hintWords [\"slow\"]、referenceEn [\"This clock is five minutes slow.\",\"The clock is five minutes slow.\"]、rubricZh [\"「慢了五分鐘」可寫，例如 is five minutes slow 等\",\"「這個時鐘」可寫，例如 this clock、the clock 等\"]（原 makeSentence：instructionZh「用 slow 造一個句子，說說很慢的東西或人。」、referenceEn [\"The bus is very slow today.\",\"My computer is too slow.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

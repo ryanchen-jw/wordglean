@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u15-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "lion",
-      "instructionZh": "用 lion 造一個句子，說說獅子的樣子，或你在哪裡看過獅子。",
+      "type": "translate",
+      "promptZh": "那隻獅子在睡覺。",
+      "hintWords": [
+        "lion"
+      ],
       "referenceEn": [
-        "A lion is big and strong.",
-        "I saw a lion at the zoo."
+        "That lion is sleeping.",
+        "The lion is sleeping."
       ],
       "rubricZh": [
-        "可用 A lion is…、Lions are… 等描述獅子",
-        "過去看過用過去式（例如 saw）"
+        "「在睡覺」用現在進行式（例如 is sleeping）",
+        "「那隻獅子」可寫，例如 that lion、the lion 等"
       ]
     }
   ],
@@ -303,6 +305,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：snake 是 q13 正解，換 bear",
         "resolution": "改為 [\"獅子\", \"熊\", \"兔子\", \"蜜蜂\"]（原 [\"獅子\", \"蛇\", \"兔子\", \"蜜蜂\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（lion）原位換成翻譯題，沿用題 id a1-u15-l06-q16；目標字沿用 lion",
+        "resolution": "改為 translate：promptZh「那隻獅子在睡覺。」、hintWords [\"lion\"]、referenceEn [\"That lion is sleeping.\",\"The lion is sleeping.\"]、rubricZh [\"「在睡覺」用現在進行式（例如 is sleeping）\",\"「那隻獅子」可寫，例如 that lion、the lion 等\"]（原 makeSentence：instructionZh「用 lion 造一個句子，說說獅子的樣子，或你在哪裡看過獅子。」、referenceEn [\"A lion is big and strong.\",\"I saw a lion at the zoo.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

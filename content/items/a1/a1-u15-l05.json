@@ -212,16 +212,18 @@
     },
     {
       "id": "a1-u15-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "beach",
-      "instructionZh": "用 beach 造一個句子，說說你在海灘做什麼，或想去哪個海灘。",
+      "type": "translate",
+      "promptZh": "海灘上有很多人。",
+      "hintWords": [
+        "beach"
+      ],
       "referenceEn": [
-        "I like to walk on the beach.",
-        "I play volleyball at the beach with my friends."
+        "There are many people on the beach.",
+        "The beach is full of people."
       ],
       "rubricZh": [
-        "「在海灘」可用 on the beach 或 at the beach",
-        "動詞配合主詞和時態"
+        "「在海灘上」可寫，例如 on the beach、at the beach 等",
+        "可寫，例如 There are many people…、The beach is full of people 等"
       ]
     }
   ],
@@ -301,6 +303,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：We swim in the sea and play at the hill. 海邊有山丘時勉強說得通，hill 換成 sky，在天空玩語意不通",
         "resolution": "改為 [\"天空\", \"海灘\", \"牛\", \"石頭\"]（原 [\"小山\", \"海灘\", \"牛\", \"石頭\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（beach）原位換成翻譯題，沿用題 id a1-u15-l05-q16；目標字沿用 beach",
+        "resolution": "改為 translate：promptZh「海灘上有很多人。」、hintWords [\"beach\"]、referenceEn [\"There are many people on the beach.\",\"The beach is full of people.\"]、rubricZh [\"「在海灘上」可寫，例如 on the beach、at the beach 等\",\"可寫，例如 There are many people…、The beach is full of people 等\"]（原 makeSentence：instructionZh「用 beach 造一個句子，說說你在海灘做什麼，或想去哪個海灘。」、referenceEn [\"I like to walk on the beach.\",\"I play volleyball at the beach with my friends.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

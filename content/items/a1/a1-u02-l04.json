@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u02-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "thanks",
-      "instructionZh": "用 thanks 造一個句子，向朋友道謝。",
+      "type": "translate",
+      "promptZh": "謝謝，我現在好多了。",
+      "hintWords": [
+        "thanks"
+      ],
       "referenceEn": [
-        "Thanks for the gift!",
-        "Thanks for your help, Tina."
+        "Thanks, I feel much better now.",
+        "Thanks. I am much better now."
       ],
       "rubricZh": [
-        "thanks 後面可用 for 接感謝的事（例如 for the gift、for your help）",
-        "只寫 Thanks a lot!、Thanks, Amy! 這類短句也正確"
+        "道謝可寫，例如 Thanks、Thanks a lot 等",
+        "「好多了」可寫，例如 much better、a lot better 等；用 feel 或 be 動詞都正確"
       ]
     }
   ],
@@ -426,6 +428,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：welcome 是 q13 正解、thanks 讓給 q13；改 person、world 四選項皆名詞",
         "resolution": "改為 [\"人\", \"自我\", \"先生（尊稱）\", \"世界\"]（原 [\"歡迎\", \"自我\", \"先生（尊稱）\", \"謝謝\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（thanks）原位換成翻譯題，沿用題 id a1-u02-l04-q17；目標字沿用 thanks",
+        "resolution": "改為 translate：promptZh「謝謝，我現在好多了。」、hintWords [\"thanks\"]、referenceEn [\"Thanks, I feel much better now.\",\"Thanks. I am much better now.\"]、rubricZh [\"道謝可寫，例如 Thanks、Thanks a lot 等\",\"「好多了」可寫，例如 much better、a lot better 等；用 feel 或 be 動詞都正確\"]（原 makeSentence：instructionZh「用 thanks 造一個句子，向朋友道謝。」、referenceEn [\"Thanks for the gift!\",\"Thanks for your help, Tina.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

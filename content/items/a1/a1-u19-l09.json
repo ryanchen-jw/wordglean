@@ -224,16 +224,18 @@
     },
     {
       "id": "a1-u19-l09-q17",
-      "type": "makeSentence",
-      "targetWord": "each other",
-      "instructionZh": "用 each other 造一個句子，說說你和某人互相做的事。",
+      "type": "translate",
+      "promptZh": "那兩個孩子正看著對方。",
+      "hintWords": [
+        "each other"
+      ],
       "referenceEn": [
-        "My sister and I help each other.",
-        "We call each other every week."
+        "The two kids are looking at each other.",
+        "The two children are looking at each other."
       ],
       "rubricZh": [
-        "each other 放在動詞後面當受詞（例如 help each other）",
-        "主詞是兩個人以上（例如 We、My sister and I）"
+        "each other 放在動詞或介系詞後面當受詞（例如 look at each other）",
+        "「正」用現在進行式（例如 are looking）"
       ]
     }
   ],
@@ -301,6 +303,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：has 與 q13 共用、was 是 q13 正解，改代名詞 ours、mine，可放進受詞位置",
         "resolution": "改為 [\"我們的\", \"彼此\", \"我的\", \"正在做\"]（原 [\"有\", \"彼此\", \"是（過去式）\", \"正在做\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（each other）原位換成翻譯題，沿用題 id a1-u19-l09-q17；目標字沿用 each other",
+        "resolution": "改為 translate：promptZh「那兩個孩子正看著對方。」、hintWords [\"each other\"]、referenceEn [\"The two kids are looking at each other.\",\"The two children are looking at each other.\"]、rubricZh [\"each other 放在動詞或介系詞後面當受詞（例如 look at each other）\",\"「正」用現在進行式（例如 are looking）\"]（原 makeSentence：instructionZh「用 each other 造一個句子，說說你和某人互相做的事。」、referenceEn [\"My sister and I help each other.\",\"We call each other every week.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

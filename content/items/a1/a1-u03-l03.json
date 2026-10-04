@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u03-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "often",
-      "instructionZh": "用 often 造一個句子，說說你常常做的一件事。",
+      "type": "translate",
+      "promptZh": "這裡夏天常常下雨。",
+      "hintWords": [
+        "often"
+      ],
       "referenceEn": [
-        "I often read books at night.",
-        "I often go to the park on Sunday."
+        "It often rains here in summer.",
+        "In summer, it often rains here."
       ],
       "rubricZh": [
-        "often 常放在一般動詞前、be 動詞後（例如 I often read、I am often busy），放句尾也正確",
-        "習慣性的事用現在簡單式"
+        "often 可放在一般動詞前（例如 often rains）或句尾",
+        "「下雨」可寫，例如 it rains、we have rain 等；習慣性的事用現在簡單式"
       ]
     }
   ],
@@ -382,6 +384,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：later、after 代入成 He left ten minutes later／ten minutes after. 都說得通；換成 once（文法勉強、語意不通）、now（不通）",
         "resolution": "改為 [\"⋯以前\", \"常常\", \"一次\", \"現在\"]（原 [\"⋯以前\", \"常常\", \"之後；待會\", \"之後\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（often）原位換成翻譯題，沿用題 id a1-u03-l03-q17；目標字沿用 often",
+        "resolution": "改為 translate：promptZh「這裡夏天常常下雨。」、hintWords [\"often\"]、referenceEn [\"It often rains here in summer.\",\"In summer, it often rains here.\"]、rubricZh [\"often 放在一般動詞前（例如 often rains）\",\"「下雨」可寫，例如 it rains、we have rain 等；習慣性的事用現在簡單式\"]（原 makeSentence：instructionZh「用 often 造一個句子，說說你常常做的一件事。」、referenceEn [\"I often read books at night.\",\"I often go to the park on Sunday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "執行長裁示：第③關：SUS 要點寫死 often 位置（§11.1）",
+        "resolution": "改為 rubricZh [\"often 可放在一般動詞前（例如 often rains）或句尾\",\"「下雨」可寫，例如 it rains、we have rain 等；習慣性的事用現在簡單式\"]（原 [\"often 放在一般動詞前（例如 often rains）\",\"「下雨」可寫，例如 it rains、we have rain 等；習慣性的事用現在簡單式\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

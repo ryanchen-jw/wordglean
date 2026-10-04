@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u16-l09-q16",
-      "type": "makeSentence",
-      "targetWord": "spell",
-      "instructionZh": "用 spell 造一個句子，問別人或說說某個字怎麼拼。",
+      "type": "translate",
+      "promptZh": "你可以把你的地址拼給我聽嗎？",
+      "hintWords": [
+        "spell"
+      ],
       "referenceEn": [
-        "How do you spell your name?",
-        "I can spell the word dictionary."
+        "Can you spell your address for me?",
+        "Could you spell your address for me?"
       ],
       "rubricZh": [
-        "問拼法可用 How do you spell…?",
-        "spell 後面接要拼的字（例如 spell your name）"
+        "spell 後面接要拼的字（例如 spell your address）",
+        "請求可寫，例如 Can you…、Could you… 等"
       ]
     }
   ],
@@ -303,6 +305,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：copy 代入「How do you copy your last name?」情境上說得通，換成 wash（How do you wash your last name? 語意不通）",
         "resolution": "改為 [\"鉛筆\", \"洗\", \"拼寫\", \"畫底線\"]（原 [\"鉛筆\", \"抄寫\", \"拼寫\", \"畫底線\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（spell）原位換成翻譯題，沿用題 id a1-u16-l09-q16；目標字沿用 spell",
+        "resolution": "改為 translate：promptZh「你可以把你的地址拼給我聽嗎？」、hintWords [\"spell\"]、referenceEn [\"Can you spell your address for me?\",\"Could you spell your address for me?\"]、rubricZh [\"spell 後面接要拼的字（例如 spell your address）\",\"請求可寫，例如 Can you…、Could you… 等\"]（原 makeSentence：instructionZh「用 spell 造一個句子，問別人或說說某個字怎麼拼。」、referenceEn [\"How do you spell your name?\",\"I can spell the word dictionary.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

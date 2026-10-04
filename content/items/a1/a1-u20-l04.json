@@ -213,31 +213,33 @@
     {
       "id": "a1-u20-l04-q16",
       "type": "translate",
-      "promptZh": "我們星期一見。",
+      "promptZh": "我們星期一有考試。",
       "hintWords": [
         "Monday"
       ],
       "referenceEn": [
-        "See you on Monday.",
-        "Let's meet on Monday."
+        "We have a test on Monday.",
+        "On Monday, we have a test."
       ],
       "rubricZh": [
         "星期前用 on（例如 on Monday）",
-        "「見」可用 See you、meet 等"
+        "「考試」可寫，例如 test、exam 等"
       ]
     },
     {
       "id": "a1-u20-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "july",
-      "instructionZh": "用 July 造一個句子，說說你七月要做或常做的事。",
+      "type": "translate",
+      "promptZh": "七月很熱。",
+      "hintWords": [
+        "july"
+      ],
       "referenceEn": [
-        "I go to the beach in July.",
-        "My vacation starts in July."
+        "July is very hot.",
+        "It is very hot in July."
       ],
       "rubricZh": [
-        "月份前用 in（例如 in July）",
-        "月份首字母大寫（寫成小寫不扣分）"
+        "月份首字母大寫（寫成小寫不扣分）",
+        "可寫，例如 July is very hot、It is very hot in July 等"
       ]
     }
   ],
@@ -275,6 +277,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：Monday 與 q13 共用改 November",
         "resolution": "改為 [\"十二月\", \"二月\", \"一月\", \"十一月\"]（原 [\"十二月\", \"二月\", \"一月\", \"星期一\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（july）原位換成翻譯題，沿用題 id a1-u20-l04-q17；目標字沿用 july",
+        "resolution": "改為 translate：promptZh「七月很熱。」、hintWords [\"july\"]、referenceEn [\"July is very hot.\",\"It is very hot in July.\"]、rubricZh [\"月份首字母大寫（寫成小寫不扣分）\",\"可寫，例如 July is very hot、It is very hot in July 等\"]（原 makeSentence：instructionZh「用 July 造一個句子，說說你七月要做或常做的事。」、referenceEn [\"I go to the beach in July.\",\"My vacation starts in July.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u20-l05-q16（See you on…） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
+        "resolution": "改為 promptZh「我們星期一有考試。」、referenceEn [\"We have a test on Monday.\",\"On Monday, we have a test.\"]、rubricZh [\"星期前用 on（例如 on Monday）\",\"「考試」可寫，例如 test、exam 等\"]（原 promptZh「我們星期一見。」、referenceEn [\"See you on Monday.\",\"Let's meet on Monday.\"]、rubricZh [\"星期前用 on（例如 on Monday）\",\"「見」可用 See you、meet 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

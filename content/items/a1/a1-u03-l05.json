@@ -229,17 +229,18 @@
     },
     {
       "id": "a1-u03-l05-q17",
-      "type": "makeSentence",
-      "targetWord": "usually",
-      "instructionZh": "用 usually 造一個句子，說說你週末通常做什麼。",
+      "type": "translate",
+      "promptZh": "我媽媽週日通常煮午餐。",
+      "hintWords": [
+        "usually"
+      ],
       "referenceEn": [
-        "I usually sleep late on the weekend.",
-        "On the weekend, I usually go to the park."
+        "My mother usually cooks lunch on Sundays.",
+        "On Sundays, my mom usually cooks lunch."
       ],
       "rubricZh": [
-        "usually 常放在一般動詞前（例如 usually go），也可放句首（例如 Usually, I …）",
-        "習慣性的事用現在簡單式",
-        "「週末」可寫 on the weekend、on weekends 等"
+        "usually 放在一般動詞前（例如 usually cooks），也可放句首",
+        "「週日」可寫，例如 on Sundays、on Sunday 等；「媽媽」可寫，例如 mother、mom 等"
       ]
     }
   ],
@@ -391,6 +392,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）；同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：later、today 代入成 Let's watch a movie later／today. 都說得通；換成 never、always，Let's watch a movie never/always 文法通但語意不通（never／always 從 q13 移來，免同課共用）",
         "resolution": "改為 [\"從不\", \"總是\", \"春天\", \"今晚\"]（原 [\"待會\", \"今天\", \"春天\", \"今晚\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（usually）原位換成翻譯題，沿用題 id a1-u03-l05-q17；目標字沿用 usually",
+        "resolution": "改為 translate：promptZh「我媽媽週日通常煮午餐。」、hintWords [\"usually\"]、referenceEn [\"My mother usually cooks lunch on Sundays.\",\"On Sundays, my mom usually cooks lunch.\"]、rubricZh [\"usually 放在一般動詞前（例如 usually cooks），也可放句首\",\"「週日」可寫，例如 on Sundays、on Sunday 等；「媽媽」可寫，例如 mother、mom 等\"]（原 makeSentence：instructionZh「用 usually 造一個句子，說說你週末通常做什麼。」、referenceEn [\"I usually sleep late on the weekend.\",\"On the weekend, I usually go to the park.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

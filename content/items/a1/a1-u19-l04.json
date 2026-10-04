@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u19-l04-q17",
-      "type": "makeSentence",
-      "targetWord": "maybe",
-      "instructionZh": "用 maybe 造一個句子，說說你週末可能會做的事。",
+      "type": "translate",
+      "promptZh": "也許她在圖書館。",
+      "hintWords": [
+        "maybe"
+      ],
       "referenceEn": [
-        "Maybe I will go to the beach this weekend.",
-        "Maybe we can watch a movie on Saturday."
+        "Maybe she is in the library.",
+        "Maybe she's at the library."
       ],
       "rubricZh": [
-        "maybe 常放句首（例如 Maybe I will…）",
-        "未來可能的事可用 will、can 等"
+        "maybe 常放句首（例如 Maybe she is…）",
+        "「在圖書館」可寫，例如 in the library、at the library 等"
       ]
     }
   ],
@@ -286,6 +288,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：behind 移給 q13，本題改 already",
         "resolution": "改為 [\"什麼都沒有\", \"任何事物\", \"某人\", \"已經\"]（原 [\"什麼都沒有\", \"任何事物\", \"某人\", \"在⋯後面\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（maybe）原位換成翻譯題，沿用題 id a1-u19-l04-q17；目標字沿用 maybe",
+        "resolution": "改為 translate：promptZh「也許她在圖書館。」、hintWords [\"maybe\"]、referenceEn [\"Maybe she is in the library.\",\"Maybe she's at the library.\"]、rubricZh [\"maybe 常放句首（例如 Maybe she is…）\",\"「在圖書館」可寫，例如 in the library、at the library 等\"]（原 makeSentence：instructionZh「用 maybe 造一個句子，說說你週末可能會做的事。」、referenceEn [\"Maybe I will go to the beach this weekend.\",\"Maybe we can watch a movie on Saturday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -215,16 +215,18 @@
     },
     {
       "id": "a1-u04-l06-q16",
-      "type": "makeSentence",
-      "targetWord": "grandma",
-      "instructionZh": "用 grandma 造一個句子，說說你的奶奶或外婆。",
+      "type": "translate",
+      "promptZh": "奶奶喜歡在花園裡種花。",
+      "hintWords": [
+        "grandma"
+      ],
       "referenceEn": [
-        "My grandma likes to cook.",
-        "Grandma lives with my family."
+        "Grandma likes to grow flowers in the garden.",
+        "My grandma likes growing flowers in her garden."
       ],
       "rubricZh": [
-        "grandma 是 grandmother 的口語說法，可加 my，也可直接當稱呼",
-        "動詞配合主詞（例如 My grandma likes、I love）"
+        "「種花」可寫，例如 grow flowers 等",
+        "like 後面接 to＋原形、動名詞都正確（例如 likes to grow、likes growing）；「花園」前可加 the、her 等"
       ]
     }
   ],
@@ -382,6 +384,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：mum 與 q12 共用改 aunt；mommy 改 grandma，四選項皆名詞；避開 grandparent（也對）",
         "resolution": "改為 [\"阿姨\", \"奶奶；外婆\", \"爺爺\", \"（兒語）爸爸\"]（原 [\"（英式）媽媽\", \"（兒語）媽媽\", \"爺爺\", \"（兒語）爸爸\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（grandma）原位換成翻譯題，沿用題 id a1-u04-l06-q16；目標字沿用 grandma",
+        "resolution": "改為 translate：promptZh「奶奶喜歡在花園裡種花。」、hintWords [\"grandma\"]、referenceEn [\"Grandma likes to grow flowers in the garden.\",\"My grandma likes growing flowers in her garden.\"]、rubricZh [\"「種花」可寫，例如 grow flowers 等\",\"like 後面接 to＋原形、動名詞都正確（例如 likes to grow、likes growing）；「花園」前可加 the、her 等\"]（原 makeSentence：instructionZh「用 grandma 造一個句子，說說你的奶奶或外婆。」、referenceEn [\"My grandma likes to cook.\",\"Grandma lives with my family.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

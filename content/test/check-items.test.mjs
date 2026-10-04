@@ -7,6 +7,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
 import { loadCheckContext } from '../scripts/lib/items-context.mjs';
+import { COMPOSITION, compositionFor } from '../scripts/lib/item-rules.mjs';
 
 const base = loadCheckContext({ allowlist: 'no-such-file.json' });
 const fixture = (name) => JSON.parse(readFileSync(new URL(`./fixtures/items/${name}.json`, import.meta.url), 'utf8'));
@@ -429,6 +430,46 @@ test('COMPOSITION：少一題跟讀、單字卡換成別課的字', () => {
   assert.deepEqual(codes(errors), ['COMPOSITION items', 'COMPOSITION items']);
   assert.ok(errors.some((e) => /shadowing 應為 2 題，實際 1/.test(e.message)));
   assert.ok(errors.some((e) => /缺：have.*多餘或重複：cat/.test(e.message)));
+});
+
+// ---- 創辦人裁示 2026-10-04：造句改翻譯（每課 2 題翻譯、0 題造句）；A2–C1 未轉換前照舊題量 ----
+
+test('compositionFor：已轉換級別 translate 2、makeSentence 0；未轉換級別（A2–C1）照舊 1／1', () => {
+  assert.equal(COMPOSITION.translate, 2);
+  assert.equal(COMPOSITION.makeSentence, 0);
+  assert.deepEqual(compositionFor('A1'), COMPOSITION);
+  for (const level of ['A2', 'B1', 'B2', 'C1']) {
+    assert.deepEqual(compositionFor(level), { ...COMPOSITION, translate: 1, makeSentence: 1 }, level);
+  }
+});
+
+test('造句改翻譯：A1 課出現 makeSentence → COMPOSITION（makeSentence 應為 0、translate 應為 2）', () => {
+  const doc = fixture('a1-u01-l01');
+  doc.items[16] = { id: 'a1-u01-l01-q17', type: 'makeSentence', targetWord: 'the', instructionZh: '用 the 造一個句子，說說房間裡的一樣東西在哪裡。', referenceEn: ['The pen is on the desk.'], rubricZh: ['句子有主詞和動詞'] };
+  const errors = checkA1(doc);
+  assert.deepEqual(codes(errors), ['COMPOSITION items', 'COMPOSITION items']);
+  assert.ok(errors.some((e) => /makeSentence 應為 0 題，實際 1/.test(e.message)));
+  assert.ok(errors.some((e) => /translate 應為 2 題，實際 1/.test(e.message)));
+});
+
+test('過渡：未轉換級別（B1）一課 1 翻譯＋1 造句仍全綠、改成 2 翻譯反而報 COMPOSITION', () => {
+  const doc = fixture('b1-u01-l01');
+  assert.deepEqual(checkB1(doc), []);
+  const ms = doc.items.findIndex((it) => it.type === 'makeSentence');
+  doc.items[ms] = { id: doc.items[ms].id, type: 'translate', promptZh: '不管天氣如何，我們都會去。', hintWords: ['whether'], referenceEn: ['We will go whether it rains or not.'], rubricZh: ['用 whether 表示「不管」'] };
+  assert.deepEqual(codes(checkB1(doc)), ['COMPOSITION items', 'COMPOSITION items']);
+});
+
+test('TRANSLATE_HINT_DUP：同課兩題翻譯的 hintWords 有相同的本課目標字；非目標字相同不報', () => {
+  const doc = fixture('a1-u01-l01');
+  doc.items[16].hintWords = [...doc.items[16].hintWords, 'have'];
+  const errors = checkA1(doc);
+  assert.deepEqual(codes(errors), ['TRANSLATE_HINT_DUP items/16/hintWords']);
+  assert.match(errors[0].message, /have/);
+  const ok = fixture('a1-u01-l01');
+  ok.items[15].hintWords = [...ok.items[15].hintWords, 'desk'];
+  ok.items[16].hintWords = [...ok.items[16].hintWords, 'desk'];
+  assert.deepEqual(checkA1(ok), []);
 });
 
 test('LESSON_MISMATCH：檔內 lessonId 與課綱不符', () => {

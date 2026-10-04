@@ -228,16 +228,18 @@
     },
     {
       "id": "a1-u18-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "memory",
-      "instructionZh": "用 memory 造一個句子，說說你的一個美好回憶。",
+      "type": "translate",
+      "promptZh": "我奶奶的記憶力很好。",
+      "hintWords": [
+        "memory"
+      ],
       "referenceEn": [
-        "I have a happy memory of my first trip to Japan.",
-        "My best memory is my tenth birthday party."
+        "My grandmother has a good memory.",
+        "My grandma has a very good memory."
       ],
       "rubricZh": [
-        "可用 I have a … memory of…，或 My best memory is… 等",
-        "說回憶裡的事可用過去式"
+        "「記憶力很好」可寫，例如 has a good memory 等",
+        "動詞配合主詞（例如 has）"
       ]
     }
   ],
@@ -383,6 +385,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；每課至少一題四選項同詞性：believe 與 q13 共用、happy 放不進空格，改名詞 money、music，使本題四選項同為名詞",
         "resolution": "改為 [\"希望\", \"個性\", \"錢\", \"音樂\"]（原 [\"希望\", \"個性\", \"開心的\", \"相信\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（memory）原位換成翻譯題，沿用題 id a1-u18-l01-q17；目標字沿用 memory",
+        "resolution": "改為 translate：promptZh「我奶奶的記憶力很好。」、hintWords [\"memory\"]、referenceEn [\"My grandmother has a good memory.\",\"My grandma has a very good memory.\"]、rubricZh [\"「記憶力很好」可寫，例如 has a good memory 等\",\"動詞配合主詞（例如 has）\"]（原 makeSentence：instructionZh「用 memory 造一個句子，說說你的一個美好回憶。」、referenceEn [\"I have a happy memory of my first trip to Japan.\",\"My best memory is my tenth birthday party.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

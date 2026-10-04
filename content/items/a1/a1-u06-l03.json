@@ -226,16 +226,18 @@
     },
     {
       "id": "a1-u06-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "kitchen",
-      "instructionZh": "用 kitchen 造一個句子，說說你家的廚房，或你在廚房做什麼。",
+      "type": "translate",
+      "promptZh": "我們家的廚房很小。",
+      "hintWords": [
+        "kitchen"
+      ],
       "referenceEn": [
-        "I cook in the kitchen every night.",
-        "Our kitchen is small but clean."
+        "Our kitchen is very small.",
+        "The kitchen in our house is small."
       ],
       "rubricZh": [
-        "kitchen 前面加冠詞或所有格（例如 in the kitchen、a small kitchen、our kitchen）",
-        "動詞配合主詞（例如 I cook、Our kitchen is、We have）"
+        "「我們家的廚房」可寫，例如 our kitchen、the kitchen in our house 等",
+        "「很小」可寫，例如 small、very small 等"
       ]
     }
   ],
@@ -405,6 +407,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：yard 代入成 I cook dinner in the yard.（院子烤肉）說得通；換成 box，cook dinner in the box 語意不通",
         "resolution": "改為 [\"工具\", \"箱子\", \"廚房\", \"機器\"]（原 [\"工具\", \"院子\", \"廚房\", \"機器\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（kitchen）原位換成翻譯題，沿用題 id a1-u06-l03-q17；目標字沿用 kitchen",
+        "resolution": "改為 translate：promptZh「我們家的廚房很小。」、hintWords [\"kitchen\"]、referenceEn [\"Our kitchen is very small.\",\"The kitchen in our house is small.\"]、rubricZh [\"「我們家的廚房」可寫，例如 our kitchen、the kitchen in our house 等\",\"「很小」可寫，例如 small、very small 等\"]（原 makeSentence：instructionZh「用 kitchen 造一個句子，說說你家的廚房，或你在廚房做什麼。」、referenceEn [\"I cook in the kitchen every night.\",\"Our kitchen is small but clean.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

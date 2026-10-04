@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u17-l06-q17",
-      "type": "makeSentence",
-      "targetWord": "plan",
-      "instructionZh": "用 plan 造一個句子，說說你週末或假期的計畫。",
+      "type": "translate",
+      "promptZh": "我們計畫星期天去動物園。",
+      "hintWords": [
+        "plan"
+      ],
       "referenceEn": [
-        "My plan for the weekend is to visit my grandmother.",
-        "I have a plan. I will go to the beach on Sunday."
+        "We plan to go to the zoo on Sunday.",
+        "We are planning to visit the zoo on Sunday."
       ],
       "rubricZh": [
-        "可用 My plan is to…，或 I have a plan… 等",
-        "未來的事用表示未來的寫法（例如 will、be going to）"
+        "plan 當動詞（例如 plan to go、are planning to visit）；寫 have a plan to… 也正確",
+        "「去動物園」可寫，例如 go to the zoo、visit the zoo 等"
       ]
     }
   ],
@@ -328,6 +330,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：build 與 q13 共用改 plan",
         "resolution": "改為 [\"計畫\", \"開\", \"說\", \"記得\"]（原 [\"建造\", \"開\", \"說\", \"記得\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（plan）原位換成翻譯題，沿用題 id a1-u17-l06-q17；目標字沿用 plan",
+        "resolution": "改為 translate：promptZh「我們計畫星期天去動物園。」、hintWords [\"plan\"]、referenceEn [\"We plan to go to the zoo on Sunday.\",\"We are planning to visit the zoo on Sunday.\"]、rubricZh [\"plan 當動詞（例如 plan to go、are planning to visit）；寫 have a plan to… 也正確\",\"「去動物園」可寫，例如 go to the zoo、visit the zoo 等\"]（原 makeSentence：instructionZh「用 plan 造一個句子，說說你週末或假期的計畫。」、referenceEn [\"My plan for the weekend is to visit my grandmother.\",\"I have a plan. I will go to the beach on Sunday.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

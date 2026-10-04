@@ -214,16 +214,18 @@
     },
     {
       "id": "a1-u18-l05-q16",
-      "type": "makeSentence",
-      "targetWord": "boring",
-      "instructionZh": "用 boring 造一個句子，說說你覺得無聊的事。",
+      "type": "translate",
+      "promptZh": "排隊等很久很無聊。",
+      "hintWords": [
+        "boring"
+      ],
       "referenceEn": [
-        "Waiting for the bus is boring.",
-        "I think this TV program is boring."
+        "Waiting in line for a long time is boring.",
+        "It is boring to wait in line for a long time."
       ],
       "rubricZh": [
-        "boring 形容讓人覺得無聊的事物（例如 The movie is boring）",
-        "可用動名詞當主詞（例如 Waiting for the bus is boring）"
+        "boring 形容讓人覺得無聊的事",
+        "可寫，例如 Waiting in line for a long time is boring、It is boring to wait… 等"
       ]
     }
   ],
@@ -297,6 +299,18 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：lazy、shy、lonely 三字皆與 q12 共用，改 funny、sad、clever",
         "resolution": "改為 [\"好笑的\", \"難過的\", \"聰明的\", \"嚴格的\"]（原 [\"懶惰的\", \"害羞的\", \"寂寞的\", \"嚴格的\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/15",
+        "message": "創辦人裁示：造句改翻譯：造句題（boring）原位換成翻譯題，沿用題 id a1-u18-l05-q16；目標字沿用 boring",
+        "resolution": "改為 translate：promptZh「排隊等很久很無聊。」、hintWords [\"boring\"]、referenceEn [\"Waiting in a long line is boring.\",\"It is boring to wait in a long line.\"]、rubricZh [\"boring 形容讓人覺得無聊的事\",\"可寫，例如 Waiting in a long line is boring、It is boring to wait… 等\"]（原 makeSentence：instructionZh「用 boring 造一個句子，說說你覺得無聊的事。」、referenceEn [\"Waiting for the bus is boring.\",\"I think this TV program is boring.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "執行長裁示：第③關：SUS 「排隊等很久」譯成 a long line 意思偏移，改 wait in line for a long time",
+        "resolution": "改為 referenceEn [\"Waiting in line for a long time is boring.\",\"It is boring to wait in line for a long time.\"]（原 [\"Waiting in a long line is boring.\",\"It is boring to wait in a long line.\"]）、rubricZh [\"boring 形容讓人覺得無聊的事\",\"可寫，例如 Waiting in line for a long time is boring、It is boring to wait… 等\"]（原 [\"boring 形容讓人覺得無聊的事\",\"可寫，例如 Waiting in a long line is boring、It is boring to wait… 等\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

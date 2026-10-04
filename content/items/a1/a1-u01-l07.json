@@ -231,17 +231,18 @@
     },
     {
       "id": "a1-u01-l07-q17",
-      "type": "makeSentence",
-      "targetWord": "than",
-      "instructionZh": "用 than 造一個句子，比較兩個人或兩樣東西。",
+      "type": "translate",
+      "promptZh": "今天比昨天冷。",
+      "hintWords": [
+        "than"
+      ],
       "referenceEn": [
-        "My cat is smaller than my dog.",
-        "My bag is bigger than your bag."
+        "Today is colder than yesterday.",
+        "It is colder today than yesterday."
       ],
       "rubricZh": [
-        "比較級加 than（smaller than）",
-        "比較的兩邊要清楚",
-        "句子有主詞和動詞（be 動詞或一般動詞都可以）"
+        "比較級加 than（例如 colder than）",
+        "可寫，例如 Today is colder than yesterday、It is colder today than yesterday 等"
       ]
     }
   ],
@@ -381,6 +382,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：from／by 代入成 The dog runs from the house／runs by the house when it rains 都說得通；換成 of（文法不通）、on（狗在屋子上跑，語意不通）",
         "resolution": "改為 [\"⋯的\", \"和⋯一起\", \"進入⋯裡面\", \"在⋯上面\"]（原 [\"從\", \"和⋯一起\", \"進入⋯裡面\", \"經過\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（than）原位換成翻譯題，沿用題 id a1-u01-l07-q17；目標字沿用 than",
+        "resolution": "改為 translate：promptZh「今天比昨天冷。」、hintWords [\"than\"]、referenceEn [\"Today is colder than yesterday.\",\"It is colder today than yesterday.\"]、rubricZh [\"比較級加 than（例如 colder than）\",\"可寫，例如 Today is colder than yesterday、It is colder today than yesterday 等\"]（原 makeSentence：instructionZh「用 than 造一個句子，比較兩個人或兩樣東西。」、referenceEn [\"My cat is smaller than my dog.\",\"My bag is bigger than your bag.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

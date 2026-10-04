@@ -230,16 +230,18 @@
     },
     {
       "id": "a1-u16-l03-q17",
-      "type": "makeSentence",
-      "targetWord": "teach",
-      "instructionZh": "用 teach 造一個句子，說說誰教你什麼，或你會教別人什麼。",
+      "type": "translate",
+      "promptZh": "誰教你彈鋼琴的？",
+      "hintWords": [
+        "teach"
+      ],
       "referenceEn": [
-        "My father teaches me to swim.",
-        "I can teach you how to cook rice."
+        "Who taught you to play the piano?",
+        "Who taught you the piano?"
       ],
       "rubricZh": [
-        "teach 後面可接人和科目（例如 teach me English），或 teach someone to＋原形、how to…",
-        "動詞配合主詞和時態（例如 My father teaches、taught）"
+        "teach 後面接人和要教的內容（例如 taught you to play the piano）",
+        "問過去的事用過去式（taught）"
       ]
     }
   ],
@@ -307,6 +309,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項；混合詞性題至少兩個干擾項放得進空格：result 與 q13 共用；混合詞性題原無干擾項放得進空格，paper/result 換動詞 reads/writes（實作端複核：reads、writes English 代入也說得通，改 eats、underlines——文法成立、詞義不通）",
         "resolution": "改為 [\"吃\", \"課\", \"教\", \"在⋯下面畫線\"]（原 [\"紙\", \"課\", \"教\", \"結果\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（teach）原位換成翻譯題，沿用題 id a1-u16-l03-q17；目標字沿用 teach",
+        "resolution": "改為 translate：promptZh「誰教你彈鋼琴的？」、hintWords [\"teach\"]、referenceEn [\"Who taught you to play the piano?\",\"Who taught you the piano?\"]、rubricZh [\"teach 後面接人和要教的內容（例如 taught you to play the piano）\",\"問過去的事用過去式（taught）\"]（原 makeSentence：instructionZh「用 teach 造一個句子，說說誰教你什麼，或你會教別人什麼。」、referenceEn [\"My father teaches me to swim.\",\"I can teach you how to cook rice.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

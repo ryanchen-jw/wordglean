@@ -227,16 +227,18 @@
     },
     {
       "id": "a1-u13-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "health",
-      "instructionZh": "用 health 造一個句子，說說什麼對健康好或不好。",
+      "type": "translate",
+      "promptZh": "我媽媽很注意她的健康。",
+      "hintWords": [
+        "health"
+      ],
       "referenceEn": [
-        "Fruit is good for your health.",
-        "Smoking is bad for your health."
+        "My mother cares about her health.",
+        "My mom takes care of her health."
       ],
       "rubricZh": [
-        "「對健康好／不好」可用 good／bad for … health（例如 good for your health）",
-        "health 前面常加所有格（例如 your health、my health）"
+        "「注意健康」可寫，例如 cares about her health、takes care of her health 等",
+        "動詞配合主詞（例如 cares、takes）；「媽媽」可寫，例如 mother、mom 等"
       ]
     }
   ],
@@ -340,6 +342,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——同課兩題 mcq 不共用干擾項、不拿另一題正解當干擾項：hand 與 q14 共用，換 body",
         "resolution": "改為 [\"身體\", \"健康\", \"臉\", \"頭痛\"]（原 [\"手\", \"健康\", \"臉\", \"頭痛\"]）",
         "resolvedAt": "2026-10-02T20:32:34Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（health）原位換成翻譯題，沿用題 id a1-u13-l01-q17；目標字沿用 health",
+        "resolution": "改為 translate：promptZh「我媽媽很注意她的健康。」、hintWords [\"health\"]、referenceEn [\"My mother cares about her health.\",\"My mom takes care of her health.\"]、rubricZh [\"「注意健康」可寫，例如 cares about her health、takes care of her health 等\",\"動詞配合主詞（例如 cares、takes）；「媽媽」可寫，例如 mother、mom 等\"]（原 makeSentence：instructionZh「用 health 造一個句子，說說什麼對健康好或不好。」、referenceEn [\"Fruit is good for your health.\",\"Smoking is bad for your health.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }

@@ -229,16 +229,18 @@
     },
     {
       "id": "a1-u08-l01-q17",
-      "type": "makeSentence",
-      "targetWord": "apple",
-      "instructionZh": "用 apple 造一個句子，說說你多常吃蘋果或什麼時候吃。",
+      "type": "translate",
+      "promptZh": "這些蘋果來自山上的一座農場。",
+      "hintWords": [
+        "apple"
+      ],
       "referenceEn": [
-        "I eat an apple every day.",
-        "I often eat apples after dinner."
+        "These apples come from a farm in the mountains.",
+        "These apples are from a farm in the mountains."
       ],
       "rubricZh": [
-        "一顆蘋果用 an apple（母音開頭用 an）",
-        "泛指蘋果時用複數 apples（例如 I like apples）"
+        "「這些蘋果」用複數（these apples）",
+        "「來自」可寫，例如 come from、are from 等"
       ]
     }
   ],
@@ -348,6 +350,12 @@
         "message": "執行長裁示：後期規則補正：mcq 干擾項——mcq 只看英文就要唯一可解（作答前不顯示中文題幹）：free 代入成 I am free. Can we eat now?（有空了）說得通；換成 sure，I am sure. Can we eat now? 前後接不上",
         "resolution": "改為 [\"餓的\", \"飽的\", \"確定的\", \"蘋果\"]（原 [\"餓的\", \"飽的\", \"有空的\", \"蘋果\"]）",
         "resolvedAt": "2026-10-02T20:59:47Z"
+      },
+      {
+        "path": "items/16",
+        "message": "創辦人裁示：造句改翻譯：造句題（apple）原位換成翻譯題，沿用題 id a1-u08-l01-q17；目標字沿用 apple",
+        "resolution": "改為 translate：promptZh「這些蘋果來自山上的一座農場。」、hintWords [\"apple\"]、referenceEn [\"These apples come from a farm in the mountains.\",\"These apples are from a farm in the mountains.\"]、rubricZh [\"「這些蘋果」用複數（these apples）\",\"「來自」可寫，例如 come from、are from 等\"]（原 makeSentence：instructionZh「用 apple 造一個句子，說說你多常吃蘋果或什麼時候吃。」、referenceEn [\"I eat an apple every day.\",\"I often eat apples after dinner.\"]）",
+        "resolvedAt": "2026-10-04T00:00:00Z"
       }
     ]
   }
