@@ -32,12 +32,12 @@ describe('looksLikeKey（設計 s11-keyerr：應以 sk-or- 開頭）', () => {
 })
 
 describe('貼金鑰／清除金鑰', () => {
-  it('第一次存：去頭尾空白、預設模型 google/gemma-4-31b-it:free、記來源與時間', async () => {
+  it('第一次存：去頭尾空白、預設模型 qwen/qwen3.8-27b:free、記來源與時間', async () => {
     await saveLink(db, `  ${KEY} `, 'paste', T)
     expect(await getLink(db)).toEqual({
       key: 'openrouter',
       apiKey: KEY,
-      model: 'google/gemma-4-31b-it:free',
+      model: 'qwen/qwen3.8-27b:free',
       via: 'paste',
       linkedAt: T,
     })
@@ -45,11 +45,11 @@ describe('貼金鑰／清除金鑰', () => {
 
   it('重新連結保留已選的模型', async () => {
     await saveLink(db, KEY, 'paste', T)
-    await setModel(db, 'qwen/qwen3.8-27b:free')
+    await setModel(db, 'apodex/apodex-1.1-mini:free')
     await saveLink(db, 'sk-or-v1-ffffffffffffffff', 'oauth', T + 1)
     expect(await getLink(db)).toMatchObject({
       apiKey: 'sk-or-v1-ffffffffffffffff',
-      model: 'qwen/qwen3.8-27b:free',
+      model: 'apodex/apodex-1.1-mini:free',
       via: 'oauth',
     })
   })

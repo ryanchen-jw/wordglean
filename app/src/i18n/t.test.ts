@@ -4,7 +4,7 @@ import messages from './zh-TW.json'
 import { t } from './t'
 
 // 允許出現在介面文案中的英文字（產品名、服務名、級距、單位、定稿文案中的 Email／Google／Wi-Fi／sk-or，
-// TASK-21 隱私說明與授權頁的 AGPL／Supabase／Hugging Face／NOTICE）；
+// TASK-21 隱私說明與授權頁的 AGPL／Supabase／Hugging Face／NOTICE，隱私說明的預設模型名 Qwen3.8）；
 // 與 e2e 手機量測（e2e/measure.ts）共用同一份清單
 const ALLOWED_LATIN = new Set(allowedLatin)
 

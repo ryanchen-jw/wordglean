@@ -49,7 +49,7 @@ describe('貼上 OpenRouter 金鑰', () => {
     expect(await getLink(db)).toEqual({
       key: 'openrouter',
       apiKey: KEY,
-      model: 'google/gemma-4-31b-it:free',
+      model: 'qwen/qwen3.8-27b:free',
       via: 'paste',
       linkedAt: T,
     })

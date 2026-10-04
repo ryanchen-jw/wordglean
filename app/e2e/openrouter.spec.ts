@@ -126,7 +126,7 @@ test('寫作題：AI 批改結果（假端點）→ 下一題額度用完 → �
   await expect(page.getByText('由你的 OpenRouter 帳號批改')).toBeVisible()
   const sent = fake.requests.find((r) => r.url === 'https://openrouter.ai/api/v1/chat/completions')!
   expect(JSON.parse(sent.body)).toMatchObject({
-    models: ['google/gemma-4-31b-it:free', 'qwen/qwen3.8-27b:free'],
+    models: ['qwen/qwen3.8-27b:free', 'apodex/apodex-1.1-mini:free'],
     provider: { data_collection: 'deny' },
   })
   await page.getByRole('button', { name: '我懂了，繼續' }).click()

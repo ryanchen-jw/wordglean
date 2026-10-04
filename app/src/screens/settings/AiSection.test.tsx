@@ -12,8 +12,8 @@ const text = { input_modalities: ['text'], output_modalities: ['text'] }
 const MODELS = {
   data: [
     {
-      id: 'google/gemma-4-31b-it:free',
-      name: 'Google: Gemma 4 31B (free)',
+      id: 'qwen/qwen3.8-27b:free',
+      name: 'Qwen: Qwen3.8 27B (free)',
       pricing: { prompt: '0', completion: '0' },
       architecture: text,
     },
@@ -108,7 +108,7 @@ describe('已連結（s11 已授權）', () => {
     const list = await screen.findByRole('listbox', { name: '模型' })
     const options = within(list).getAllByRole('option')
     expect(options.map((o) => o.textContent)).toEqual([
-      'Google: Gemma 4 31B (free)・免費',
+      'Qwen: Qwen3.8 27B (free)・免費',
       'OpenAI: GPT X・每百萬詞元 輸入 2.5／輸出 10 美元',
     ])
     expect(options[0]).toHaveAttribute('aria-selected', 'true')

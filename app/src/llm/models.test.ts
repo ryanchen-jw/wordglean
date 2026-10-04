@@ -2,6 +2,10 @@ import { describe, expect, it } from 'vitest'
 import { availableModel, DEFAULT_MODELS, modelChain } from './models'
 
 describe('預設模型（free-models.md §7 #6：只用免費、提供商不訓練）', () => {
+  it('評測選定（llm-eval.md §8）：預設 Qwen3.8 27B、fallback Apodex 1.1 Mini', () => {
+    expect(DEFAULT_MODELS).toEqual(['qwen/qwen3.8-27b:free', 'apodex/apodex-1.1-mini:free'])
+  })
+
   it('預設鏈全是 :free、不含 NVIDIA（執行長 D1）', () => {
     expect(DEFAULT_MODELS.length).toBeGreaterThanOrEqual(2)
     for (const m of DEFAULT_MODELS) {
