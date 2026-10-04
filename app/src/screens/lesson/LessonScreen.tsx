@@ -72,8 +72,12 @@ export function LessonScreen({
 }: Props) {
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
   const [leaving, setLeaving] = useState(false)
+  // 作答存檔或前進失敗：顯示提示，再按「繼續」重試（非安全來源 randomUUID 事故）
+  const [stuck, setStuck] = useState(false)
   const busy = useRef(false)
-  const saving = useRef<Promise<LessonRun> | null>(null)
+  // 存檔結果；null＝存檔失敗，「繼續」會用 retrySave 重存一次
+  const saving = useRef<Promise<LessonRun | null> | null>(null)
+  const retrySave = useRef<(() => Promise<LessonRun>) | null>(null)
   const shownAt = useRef(0)
   const levelDoc = useLevelDoc(levelOfLessonId(lessonId))
   // 讀取中為 undefined；沒有金鑰為 null（寫作題據此決定 AI 批改或自評）
@@ -192,35 +196,38 @@ export function LessonScreen({
   // 回饋在點選當下就顯示，存檔稍後完成；「繼續」先等這次存檔，再用存好的進度往下
   const onAnswer = ({ correct, usedHint }: { correct: boolean; usedHint: boolean }) => {
     const at = now()
-    saving.current = answerStep(
-      db,
-      run,
-      step,
-      { correct, usedHint, elapsedMs: at - shownAt.current },
-      at,
-    )
-      .then((next) => {
-        setPhase({ ...phase, run: next })
-        return next
-      })
-      // 存檔失敗（或重複作答）不可讓整課卡住：記錄後退回目前進度，「繼續」與 ✕ 照常可用
-      .catch((e: unknown) => {
-        console.error('[lesson] 作答存檔失敗', e)
-        return run
-      })
+    const save = () =>
+      answerStep(db, run, step, { correct, usedHint, elapsedMs: at - shownAt.current }, at).then(
+        (next) => {
+          setPhase({ ...phase, run: next })
+          return next
+        },
+      )
+    retrySave.current = save
+    // 存檔失敗不可讓整課卡住：記錄後交給「繼續」重試（重複作答＝這題已存過，沿用目前進度），✕ 照常可用
+    saving.current = save().catch((e: unknown) => {
+      console.error('[lesson] 作答存檔失敗', e)
+      return run.results[step.key] ? run : null
+    })
   }
 
   const onContinue = async () => {
     if (busy.current || !saving.current) return
     busy.current = true
     try {
-      const saved = await saving.current
-      saving.current = null
+      let saved = await saving.current
+      if (!saved) {
+        saved = await retrySave.current!()
+        saving.current = Promise.resolve(saved)
+      }
       if (saved.cursor === steps.length - 1) await finish(saved, steps)
       else setPhase({ ...phase, run: await continueRun(db, saved, now()) })
+      saving.current = null
+      setStuck(false)
     } catch (e) {
-      // 例：這題的作答沒存成功（advance 拒絕）；留在這題，✕ 仍可離開
+      // 例：重試存檔仍失敗、或前進寫入失敗；留在這題顯示提示，「繼續」可再試，✕ 仍可離開
       console.error('[lesson] 無法前進到下一題', e)
+      setStuck(true)
     } finally {
       busy.current = false
     }
@@ -244,6 +251,12 @@ export function LessonScreen({
   return (
     <div data-testid="lesson-screen" className={lessonFrameCls}>
       <LessonHeader n={run.cursor + 1} total={steps.length} onLeave={onLeave} />
+      {stuck && (
+        <p role="alert" className="flex flex-none items-center gap-2 px-5 pb-2 text-secondary">
+          <Info size={20} aria-hidden="true" className="flex-none text-muted" />
+          {t('system.error.generic')}
+        </p>
+      )}
       <WritingEnvContext
         value={{
           link,

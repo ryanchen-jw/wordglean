@@ -299,6 +299,26 @@ describe('載入失敗', () => {
   })
 })
 
+describe('作答存檔失敗（非安全來源 randomUUID 事故）', () => {
+  it('按「繼續」不可靜靜卡住：顯示錯誤提示、留在這題；再按「繼續」重試存檔即前進', async () => {
+    const errors = vi.spyOn(console, 'error').mockImplementation(() => {})
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
+    await count(1)
+    const tx = vi
+      .spyOn(db, 'transaction')
+      .mockImplementation((() => Promise.reject(new Error('寫入失敗'))) as never)
+    await answerCurrent(1)
+    await vi.waitFor(() => expect(errors).toHaveBeenCalled())
+    await act(async () => cont())
+    expect(await screen.findByRole('alert')).toHaveTextContent('出了點問題，請再試一次。')
+    expect(screen.getByText('1／12')).toBeInTheDocument()
+    tx.mockRestore()
+    await act(async () => cont())
+    await count(2)
+    expect(screen.queryByRole('alert')).not.toBeInTheDocument()
+  })
+})
+
 // TASK-16 接上可點查義版 EnglishText：G2 裁示「會洩漏答案的字作答前不可點，作答後全部改為可點」
 describe('小課的可點英文字（G2）', () => {
   const loaded = fsDictDeps()

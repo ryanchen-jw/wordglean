@@ -2,6 +2,7 @@
 import type { LinguaDb, OutboxEntry, PoolWord, Settings, SpeechCorrection } from './db'
 import { CardState, createScheduler, DEFAULT_RETENTION, type Grade } from '../srs/scheduler'
 import { dayBoundsUtc, deviceTimeZone, localDayKey, newWordQuota } from '../srs/daily'
+import { uuid } from './uuid'
 
 export const DEFAULT_SETTINGS: Settings = {
   id: 'local',
@@ -101,7 +102,7 @@ export async function recordReview(
     if (!row) throw new Error(`單字不在池中：${wordId}`)
     const { desiredRetention } = await getSettings(db)
     const { card, log } = createScheduler(desiredRetention).review(row, grade, nowMs)
-    const id = crypto.randomUUID()
+    const id = uuid()
     await db.wordPool.put({ ...row, ...card })
     await db.reviewLogs.add({ id, wordId, ...log })
     await enqueue(db, 'wordPool', wordId)
@@ -115,7 +116,7 @@ export async function addSpeechCorrection(
   entry: Omit<SpeechCorrection, 'id' | 'createdAt'>,
   nowMs: number,
 ): Promise<void> {
-  const id = crypto.randomUUID()
+  const id = uuid()
   await db.transaction('rw', db.speechCorrections, db.outbox, async () => {
     await db.speechCorrections.add({ id, ...entry, createdAt: nowMs })
     await enqueue(db, 'speechCorrections', id)
