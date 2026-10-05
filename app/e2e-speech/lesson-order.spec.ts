@@ -18,18 +18,26 @@ test('能跟讀：一課含 2 題跟讀，依穿插順序走完到完成頁', as
     String(SPEECH_STEPS.length),
   )
   // 期望值：fixture 第 11、12 題為跟讀（I have a cup of tea.／We go to the park on Sunday.），
-  // 穿插後落在第 10、14 步（8 張單字卡後：聽音打字、跟讀、選擇題、中翻英｜聽音選答、跟讀、選擇題、造句｜閱讀 2 小題）
-  expect(SPEECH_STEPS.length).toBe(18)
+  // 穿插後落在第 12、16 步（8 張單字卡、每 4 張後一題配對（ca42edf）共 10 步後：聽音打字、跟讀、選擇題、中翻英｜
+  // 聽音選答、跟讀、選擇題、造句｜閱讀 2 小題）
+  expect(SPEECH_STEPS.length).toBe(20)
   expect(
     SPEECH_STEPS.flatMap((s, i) => (s.shadowing !== undefined ? [[i + 1, s.shadowing]] : [])),
   ).toEqual([
-    [10, 'I have a cup of tea.'],
-    [14, 'We go to the park on Sunday.'],
+    [12, 'I have a cup of tea.'],
+    [16, 'We go to the park on Sunday.'],
   ])
   for (let n = 1; n <= SPEECH_STEPS.length; n++) {
     const s = SPEECH_STEPS[n - 1]
     if (s.shadowing !== undefined) await expect(page.getByText(s.shadowing)).toBeVisible()
     await answerStep(page, n)
+  }
+  // 錯題重做（創辦人試用 2026-10-04 ⑤）：跳過＝首答算錯，兩題跟讀依原順序再出一輪；重做中再跳過就不再出，進完成頁
+  await expect(page.getByText('再練一次錯題')).toBeVisible()
+  for (const [i, sentence] of ['I have a cup of tea.', 'We go to the park on Sunday.'].entries()) {
+    await expect(page.getByText(`${i + 1}／2`, { exact: true })).toBeVisible()
+    await expect(page.getByText(sentence)).toBeVisible()
+    await page.getByRole('button', { name: /跳過/ }).click()
   }
   await expect(page.getByTestId('lesson-done')).toBeVisible()
 })

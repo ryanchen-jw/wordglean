@@ -1,0 +1,83 @@
+[2m[WebServer] [22m[33m[plugin builtin:vite-reporter] [33;1m
+[2m[WebServer] [22m(!) Some chunks are larger than 500 kB after minification. Consider:
+[2m[WebServer] [22m- Using dynamic import() to code-split the application
+[2m[WebServer] [22m- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[2m[WebServer] [22m- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[0m[39m
+[2mRunning [22m1[2m test using [22m1[2m worker[22m
+0.2s console.info [lesson] 能力替代 [Object, Object]
+0.5s gpu=adapter
+1.8s worker http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+1.8s clicked download
+2.1s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/config.json
+2.1s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer.json
+2.1s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer_config.json
+2.1s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fconfig.json=&etag=%223b8918edc926194c698c6d3255adac22b50251f6%22
+2.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+2.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+2.1s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22a712a75cf20ba1c6e6f1761f2b612c7ecc44ffa0%22
+2.2s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/preprocessor_config.json
+2.2s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%223e2e6918436f479b267467608eccc4ade30c251c%22
+2.2s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/preprocessor_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22e519add8190c4ef53802d1d593b7973c12ae68c9%22
+2.3s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+2.3s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+2.4s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/generation_config.json
+2.4s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/onnx/encoder_model.onnx
+2.4s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx
+2.4s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/generation_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22b45f5d83177964a069f943e80225213bd724200f%22
+9.5s reqdone https://us.aws.cdn.hf.co/xet-bridge-us/675ce378dfdaa78daa9a8883/39e7d8f8f035b3ea17943a4e4c2b33c202dbb23d76ff2305f1bd7844c23d896e?…
+9.7s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+10.0s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+10.5s console.error [0;93m2026-10-05 19:53:13.343299 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+10.5s console.error [0;93m2026-10-05 19:53:13.347099 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+10.8s reqdone https://us.aws.cdn.hf.co/xet-bridge-us/675ce378dfdaa78daa9a8883/2f409052bb57a6c8c1782751a97cad25a63059505b765c2060eb71685f235bc3?…
+10.8s UI preparing
+11.6s console.error [0;93m2026-10-05 19:53:14.408199 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+11.6s console.error [0;93m2026-10-05 19:53:14.408599 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+13.7s UI record enabled
+13.7s worker closed http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+13.7s cached run 1: goto
+13.8s console.info [lesson] 能力替代 [Object, Object]
+13.8s cached run 1: at shadowing
+13.9s worker http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+14.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.5s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+15.1s console.error [0;93m2026-10-05 19:53:17.891798 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+15.1s console.error [0;93m2026-10-05 19:53:17.895898 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+16.0s console.error [0;93m2026-10-05 19:53:18.836598 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+16.0s console.error [0;93m2026-10-05 19:53:18.837298 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+17.8s cached run 1: record enabled
+17.8s worker closed http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+17.9s cached run 2: goto
+17.9s console.info [lesson] 能力替代 [Object, Object]
+18.0s cached run 2: at shadowing
+18.0s worker http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+18.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+18.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+18.2s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+18.2s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+18.8s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+19.5s console.error [0;93m2026-10-05 19:53:22.314599 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+19.5s console.error [0;93m2026-10-05 19:53:22.316098 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+19.9s console.error [0;93m2026-10-05 19:53:22.770498 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+19.9s console.error [0;93m2026-10-05 19:53:22.771099 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+21.4s cached run 2: record enabled
+21.4s worker closed http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+21.5s cached run 3: goto
+21.6s console.info [lesson] 能力替代 [Object, Object]
+21.6s cached run 3: at shadowing
+21.7s worker http://localhost:5318/assets/stt.worker-Bw3cHbXS.js
+21.9s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+21.9s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+22.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+22.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+22.4s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+22.5s console.error [0;93m2026-10-05 19:53:25.382499 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+22.5s console.error [0;93m2026-10-05 19:53:25.383799 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+23.4s console.error [0;93m2026-10-05 19:53:26.273699 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+23.4s console.error [0;93m2026-10-05 19:53:26.275400 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+25.6s cached run 3: record enabled
+  [32mok[39m [2m1 [22m[chrome-webgpu] › e2e-speech\diag-load.spec.ts:8:1 › diag: 下載→準備中→可錄音 耗時[2m (25.9s)[22m
+[32m  1 passed[39m[2m (42.8s)[22m

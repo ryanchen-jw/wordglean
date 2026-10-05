@@ -1,0 +1,239 @@
+[2m[WebServer] [22m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 4.6s of this 4.6s build (100%).
+[2m[WebServer] [22mThe slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+[2m[WebServer] [22m  - plugin externalize-deps resolveId (100%, 4.6s, 6 calls)
+[2m[WebServer] [22mSee https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+[2m[WebServer] [22m
+[2m[WebServer] [22m[33m[plugin builtin:vite-reporter] [33;1m
+[2m[WebServer] [22m(!) Some chunks are larger than 500 kB after minification. Consider:
+[2m[WebServer] [22m- Using dynamic import() to code-split the application
+[2m[WebServer] [22m- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[2m[WebServer] [22m- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[0m[39m
+[2m[WebServer] [22m[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 7.2s. The build took 3.8s. Callbacks such as `closeBundle` run after the build ends, so callback time can be more than build time.
+[2m[WebServer] [22mThe slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+[2m[WebServer] [22m  - plugin vite-plugin-pwa:build closeBundle (100%, 4.7s, 1 call)
+[2m[WebServer] [22mAdditional callback time came from the callbacks below and from callbacks under 1s.
+[2m[WebServer] [22m4 callbacks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+[2m[WebServer] [22m  - plugin vite:asset load (607 calls)
+[2m[WebServer] [22m  - plugin vite:css transform (4 calls)
+[2m[WebServer] [22m  - plugin @tailwindcss/vite:generate:build transform (4 calls)
+[2m[WebServer] [22m  … and 1 more
+[2m[WebServer] [22mSee https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+[2m[WebServer] [22m[39m
+[2mRunning [22m1[2m test using [22m1[2m worker[22m
+0.3s console.info [lesson] 能力替代 [Object, Object]
+0.5s gpu=adapter
+2.4s clicked download
+2.4s worker http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+2.5s console.log [DIAG] device webgpu 30
+2.5s console.log [DIAG] cb initiate tokenizer.json 33
+2.5s console.log [DIAG] cb initiate tokenizer_config.json 34
+2.5s console.log [DIAG] cb initiate config.json 35
+2.5s console.log [DIAG] cb initiate preprocessor_config.json 35
+2.8s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer.json
+2.8s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/config.json
+2.8s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/preprocessor_config.json
+2.8s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer_config.json
+2.8s console.log [DIAG] cb download config.json 277
+2.8s console.log [DIAG] cb download tokenizer.json 278
+2.8s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+2.8s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fconfig.json=&etag=%223b8918edc926194c698c6d3255adac22b50251f6%22
+2.8s console.log [DIAG] cb done config.json 280
+2.8s console.log [DIAG] cb initiate onnx/encoder_model.onnx 282
+2.8s console.log [DIAG] cb initiate onnx/decoder_model_merged_q4.onnx 282
+2.8s console.log [DIAG] cb initiate generation_config.json 282
+2.8s console.log [DIAG] cb download preprocessor_config.json 313
+2.8s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/preprocessor_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22e519add8190c4ef53802d1d593b7973c12ae68c9%22
+2.8s console.log [DIAG] cb done preprocessor_config.json 315
+2.8s console.log [DIAG] cb initiate tokenizer.json 315
+2.8s console.log [DIAG] cb initiate tokenizer_config.json 315
+2.8s console.log [DIAG] cb initiate preprocessor_config.json 315
+2.8s console.log [DIAG] cb download preprocessor_config.json 318
+2.8s console.log [DIAG] cb done preprocessor_config.json 319
+2.8s console.log [DIAG] cb download tokenizer_config.json 322
+2.8s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+2.8s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%223e2e6918436f479b267467608eccc4ade30c251c%22
+2.8s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22a712a75cf20ba1c6e6f1761f2b612c7ecc44ffa0%22
+2.8s console.log [DIAG] cb done tokenizer.json 349
+2.9s console.log [DIAG] cb done tokenizer_config.json 375
+3.0s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx
+3.0s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/generation_config.json
+3.0s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/onnx/encoder_model.onnx
+3.0s console.log [DIAG] cb download generation_config.json 500
+3.0s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/generation_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22b45f5d83177964a069f943e80225213bd724200f%22
+3.0s console.log [DIAG] cb done generation_config.json 502
+3.0s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer_config.json
+3.0s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer.json
+3.0s console.log [DIAG] cb download tokenizer_config.json 550
+3.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+3.0s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22a712a75cf20ba1c6e6f1761f2b612c7ecc44ffa0%22
+3.0s console.log [DIAG] cb download tokenizer.json 552
+3.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+3.0s console.log [DIAG] cb done tokenizer_config.json 552
+3.1s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%223e2e6918436f479b267467608eccc4ade30c251c%22
+3.1s console.log [DIAG] cb done tokenizer.json 615
+3.5s console.log [DIAG] cb download onnx/decoder_model_merged_q4.onnx 973
+3.5s console.log [DIAG] cb download onnx/encoder_model.onnx 992
+10.1s reqdone https://us.aws.cdn.hf.co/xet-bridge-us/675ce378dfdaa78daa9a8883/39e7d8f8f035b3ea17943a4e4c2b33c202dbb23d76ff2305f1bd7844c23d896e?…
+10.4s console.log [DIAG] cb done onnx/encoder_model.onnx 7893
+10.5s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+10.8s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+11.6s console.error [0;93m2026-10-05 19:41:10.242698 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+11.6s console.error [0;93m2026-10-05 19:41:10.247798 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+11.8s reqdone https://us.aws.cdn.hf.co/xet-bridge-us/675ce378dfdaa78daa9a8883/2f409052bb57a6c8c1782751a97cad25a63059505b765c2060eb71685f235bc3?…
+12.0s console.log [DIAG] cb done onnx/decoder_model_merged_q4.onnx 9495
+12.0s UI preparing
+12.8s console.error [0;93m2026-10-05 19:41:11.494098 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+12.8s console.error [0;93m2026-10-05 19:41:11.494598 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+13.1s console.log [DIAG] cb ready undefined 10655
+13.1s console.log [DIAG] pipeline ready 10655
+14.2s console.log [DIAG] warmup done 11741
+14.4s UI record enabled
+14.4s worker closed http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+14.5s cached run 1: goto
+14.5s console.info [lesson] 能力替代 [Object, Object]
+14.6s cached run 1: at shadowing
+14.6s worker http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+14.7s console.log [DIAG] device webgpu 19
+14.7s console.log [DIAG] cb initiate tokenizer.json 21
+14.7s console.log [DIAG] cb initiate tokenizer_config.json 22
+14.7s console.log [DIAG] cb initiate config.json 23
+14.7s console.log [DIAG] cb initiate preprocessor_config.json 23
+14.7s console.log [DIAG] cb download tokenizer.json 25
+14.7s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.7s console.log [DIAG] cb download tokenizer_config.json 25
+14.7s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.7s console.log [DIAG] cb download config.json 26
+14.7s console.log [DIAG] cb download preprocessor_config.json 26
+14.7s console.log [DIAG] cb done tokenizer.json 32
+14.7s console.log [DIAG] cb done tokenizer_config.json 64
+14.8s console.log [DIAG] cb done config.json 113
+14.8s console.log [DIAG] cb initiate onnx/encoder_model.onnx 114
+14.8s console.log [DIAG] cb initiate onnx/decoder_model_merged_q4.onnx 115
+14.8s console.log [DIAG] cb initiate generation_config.json 115
+14.8s console.log [DIAG] cb done preprocessor_config.json 115
+14.8s console.log [DIAG] cb initiate tokenizer.json 116
+14.8s console.log [DIAG] cb initiate tokenizer_config.json 116
+14.8s console.log [DIAG] cb initiate preprocessor_config.json 116
+14.8s console.log [DIAG] cb download onnx/encoder_model.onnx 117
+14.8s console.log [DIAG] cb download onnx/decoder_model_merged_q4.onnx 117
+14.8s console.log [DIAG] cb download generation_config.json 118
+14.8s console.log [DIAG] cb download tokenizer.json 118
+14.8s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.8s console.log [DIAG] cb download tokenizer_config.json 119
+14.8s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+14.8s console.log [DIAG] cb download preprocessor_config.json 119
+14.8s console.log [DIAG] cb done generation_config.json 129
+14.8s console.log [DIAG] cb done tokenizer_config.json 130
+14.8s console.log [DIAG] cb done preprocessor_config.json 147
+14.9s console.log [DIAG] cb done tokenizer.json 182
+14.9s console.log [DIAG] cb done onnx/encoder_model.onnx 263
+14.9s console.log [DIAG] cb done onnx/decoder_model_merged_q4.onnx 266
+15.2s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+15.8s console.error [0;93m2026-10-05 19:41:14.509899 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+15.8s console.error [0;93m2026-10-05 19:41:14.517499 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+16.7s console.error [0;93m2026-10-05 19:41:15.350799 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+16.7s console.error [0;93m2026-10-05 19:41:15.351399 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+17.1s console.log [DIAG] cb ready undefined 2373
+17.1s console.log [DIAG] pipeline ready 2373
+18.2s console.log [DIAG] warmup done 3508
+18.5s cached run 1: record enabled
+18.5s worker closed http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+18.6s cached run 2: goto
+18.7s console.info [lesson] 能力替代 [Object, Object]
+18.7s cached run 2: at shadowing
+18.7s worker http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+18.8s console.log [DIAG] device webgpu 23
+18.8s console.log [DIAG] cb initiate tokenizer.json 26
+18.8s console.log [DIAG] cb initiate tokenizer_config.json 27
+18.8s console.log [DIAG] cb initiate config.json 28
+18.8s console.log [DIAG] cb initiate preprocessor_config.json 28
+18.8s console.log [DIAG] cb download tokenizer.json 31
+18.8s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+18.8s console.log [DIAG] cb download tokenizer_config.json 40
+18.8s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+18.8s console.log [DIAG] cb download config.json 40
+18.8s console.log [DIAG] cb download preprocessor_config.json 42
+18.8s console.log [DIAG] cb done tokenizer.json 42
+18.9s console.log [DIAG] cb done tokenizer_config.json 83
+18.9s console.log [DIAG] cb done config.json 137
+18.9s console.log [DIAG] cb initiate onnx/encoder_model.onnx 138
+18.9s console.log [DIAG] cb initiate onnx/decoder_model_merged_q4.onnx 139
+18.9s console.log [DIAG] cb initiate generation_config.json 139
+18.9s console.log [DIAG] cb done preprocessor_config.json 139
+18.9s console.log [DIAG] cb initiate tokenizer.json 139
+18.9s console.log [DIAG] cb initiate tokenizer_config.json 140
+18.9s console.log [DIAG] cb initiate preprocessor_config.json 140
+18.9s console.log [DIAG] cb download onnx/encoder_model.onnx 141
+19.0s console.log [DIAG] cb download onnx/decoder_model_merged_q4.onnx 142
+19.0s console.log [DIAG] cb download generation_config.json 143
+19.0s console.log [DIAG] cb download tokenizer.json 143
+19.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+19.0s console.log [DIAG] cb download tokenizer_config.json 144
+19.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+19.0s console.log [DIAG] cb download preprocessor_config.json 145
+19.0s console.log [DIAG] cb done generation_config.json 198
+19.0s console.log [DIAG] cb done tokenizer_config.json 199
+19.0s console.log [DIAG] cb done preprocessor_config.json 200
+19.0s console.log [DIAG] cb done tokenizer.json 223
+19.1s console.log [DIAG] cb done onnx/encoder_model.onnx 328
+19.1s console.log [DIAG] cb done onnx/decoder_model_merged_q4.onnx 331
+19.5s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+19.6s console.error [0;93m2026-10-05 19:41:18.298599 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+19.6s console.error [0;93m2026-10-05 19:41:18.299798 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+20.8s console.error [0;93m2026-10-05 19:41:19.456898 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+20.8s console.error [0;93m2026-10-05 19:41:19.458599 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+21.1s console.log [DIAG] cb ready undefined 2304
+21.1s console.log [DIAG] pipeline ready 2304
+22.2s console.log [DIAG] warmup done 3440
+22.6s cached run 2: record enabled
+22.7s worker closed http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+22.8s cached run 3: goto
+22.8s console.info [lesson] 能力替代 [Object, Object]
+22.9s cached run 3: at shadowing
+23.0s worker http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+23.1s console.log [DIAG] device webgpu 30
+23.1s console.log [DIAG] cb initiate tokenizer.json 33
+23.1s console.log [DIAG] cb initiate tokenizer_config.json 34
+23.1s console.log [DIAG] cb initiate config.json 34
+23.1s console.log [DIAG] cb initiate preprocessor_config.json 35
+23.1s console.log [DIAG] cb download tokenizer.json 38
+23.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+23.1s console.log [DIAG] cb download tokenizer_config.json 46
+23.1s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+23.1s console.log [DIAG] cb download config.json 46
+23.1s console.log [DIAG] cb download preprocessor_config.json 47
+23.1s console.log [DIAG] cb done tokenizer.json 47
+23.1s console.log [DIAG] cb done tokenizer_config.json 88
+23.2s console.log [DIAG] cb done config.json 133
+23.2s console.log [DIAG] cb initiate onnx/encoder_model.onnx 134
+23.2s console.log [DIAG] cb initiate onnx/decoder_model_merged_q4.onnx 135
+23.2s console.log [DIAG] cb initiate generation_config.json 135
+23.2s console.log [DIAG] cb done preprocessor_config.json 135
+23.2s console.log [DIAG] cb initiate tokenizer.json 135
+23.2s console.log [DIAG] cb initiate tokenizer_config.json 136
+23.2s console.log [DIAG] cb initiate preprocessor_config.json 136
+23.2s console.log [DIAG] cb download onnx/encoder_model.onnx 137
+23.2s console.log [DIAG] cb download onnx/decoder_model_merged_q4.onnx 137
+23.2s console.log [DIAG] cb download generation_config.json 138
+23.2s console.log [DIAG] cb download tokenizer.json 139
+23.2s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+23.2s console.log [DIAG] cb download tokenizer_config.json 141
+23.2s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+23.2s console.log [DIAG] cb download preprocessor_config.json 142
+23.2s console.log [DIAG] cb done generation_config.json 150
+23.2s console.log [DIAG] cb done tokenizer_config.json 166
+23.2s console.log [DIAG] cb done preprocessor_config.json 166
+23.2s console.log [DIAG] cb done tokenizer.json 170
+23.4s console.log [DIAG] cb done onnx/encoder_model.onnx 312
+23.4s console.log [DIAG] cb done onnx/decoder_model_merged_q4.onnx 314
+23.7s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+23.9s console.error [0;93m2026-10-05 19:41:22.562998 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+23.9s console.error [0;93m2026-10-05 19:41:22.565298 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+24.6s console.error [0;93m2026-10-05 19:41:23.297098 [W:onnxruntime:, session_state.cc:1280 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+24.6s console.error [0;93m2026-10-05 19:41:23.298898 [W:onnxruntime:, session_state.cc:1282 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+25.0s console.log [DIAG] cb ready undefined 1923
+25.0s console.log [DIAG] pipeline ready 1923
+26.2s console.log [DIAG] warmup done 3145
+26.4s cached run 3: record enabled
+  [32mok[39m [2m1 [22m[chrome-webgpu] › e2e-speech\diag-load.spec.ts:8:1 › diag: 下載→準備中→可錄音 耗時[2m (31.8s)[22m
+[32m  1 passed[39m[2m (1.2m)[22m

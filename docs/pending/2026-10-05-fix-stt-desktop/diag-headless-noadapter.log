@@ -1,0 +1,84 @@
+[2m[WebServer] [22m[33m[plugin builtin:vite-reporter] [33;1m
+[2m[WebServer] [22m(!) Some chunks are larger than 500 kB after minification. Consider:
+[2m[WebServer] [22m- Using dynamic import() to code-split the application
+[2m[WebServer] [22m- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[2m[WebServer] [22m- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[0m[39m
+[2m[WebServer] [22m[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 35.3s. The build took 5.3s. Callbacks such as `closeBundle` run after the build ends, so callback time can be more than build time.
+[2m[WebServer] [22mThe slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+[2m[WebServer] [22m  - plugin vite-plugin-pwa:build closeBundle (100%, 32.2s, 1 call)
+[2m[WebServer] [22mAdditional callback time came from the callbacks below and from callbacks under 1s.
+[2m[WebServer] [22m4 callbacks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+[2m[WebServer] [22m  - plugin vite:asset load (607 calls)
+[2m[WebServer] [22m  - plugin vite:css transform (4 calls)
+[2m[WebServer] [22m  - plugin @tailwindcss/vite:generate:build transform (4 calls)
+[2m[WebServer] [22m  … and 1 more
+[2m[WebServer] [22mSee https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+[2m[WebServer] [22m[39m
+[2mRunning [22m1[2m test using [22m1[2m worker[22m
+0.2s console.warning No available adapters.
+0.2s console.warning No available adapters.
+0.2s gpu=null-adapter
+0.2s console.info [lesson] 能力替代 [Object, Object]
+3.4s console.warning No available adapters.
+3.5s worker http://localhost:5318/assets/stt.worker-Bnu7w7ME.js
+3.5s clicked download
+3.7s console.log [DIAG] device wasm 5
+3.7s console.log [DIAG] cb initiate tokenizer.json 7
+3.7s console.log [DIAG] cb initiate tokenizer_config.json 8
+3.7s console.log [DIAG] cb initiate config.json 8
+3.7s console.log [DIAG] cb initiate preprocessor_config.json 9
+6.7s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/preprocessor_config.json
+6.7s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer_config.json
+6.7s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/config.json
+6.7s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer.json
+7.0s console.log [DIAG] cb download tokenizer_config.json 3284
+7.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+7.0s console.log [DIAG] cb download config.json 3288
+7.0s console.log [DIAG] cb download preprocessor_config.json 3289
+7.0s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22a712a75cf20ba1c6e6f1761f2b612c7ecc44ffa0%22
+7.0s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fconfig.json=&etag=%223b8918edc926194c698c6d3255adac22b50251f6%22
+7.0s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/preprocessor_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22e519add8190c4ef53802d1d593b7973c12ae68c9%22
+7.0s console.log [DIAG] cb download tokenizer.json 3300
+7.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+7.0s console.log [DIAG] cb done tokenizer_config.json 3302
+7.0s console.log [DIAG] cb done config.json 3302
+7.0s console.log [DIAG] cb initiate onnx/encoder_model.onnx 3306
+7.0s console.log [DIAG] cb initiate onnx/decoder_model_merged_quantized.onnx 3306
+7.0s console.log [DIAG] cb initiate generation_config.json 3306
+7.0s console.log [DIAG] cb done preprocessor_config.json 3307
+7.0s console.log [DIAG] cb initiate tokenizer.json 3307
+7.0s console.log [DIAG] cb initiate tokenizer_config.json 3307
+7.0s console.log [DIAG] cb initiate preprocessor_config.json 3307
+7.0s console.log [DIAG] cb download tokenizer_config.json 3310
+7.0s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+7.0s console.log [DIAG] cb download preprocessor_config.json 3312
+7.0s console.log [DIAG] cb done tokenizer_config.json 3313
+7.0s console.log [DIAG] cb done preprocessor_config.json 3314
+7.1s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%223e2e6918436f479b267467608eccc4ade30c251c%22
+7.1s console.log [DIAG] cb done tokenizer.json 3460
+7.2s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/tokenizer.json
+7.2s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/onnx/decoder_model_merged_quantized.onnx
+7.2s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/generation_config.json
+7.3s reqdone https://huggingface.co/onnx-community/moonshine-tiny-ONNX/resolve/main/onnx/encoder_model.onnx
+7.3s console.log [DIAG] cb download tokenizer.json 3608
+7.3s console.warning Unable to determine content-length from response headers. Will expand buffer when needed.
+7.3s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/tokenizer.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%223e2e6918436f479b267467608eccc4ade30c251c%22
+7.3s console.log [DIAG] cb done tokenizer.json 3648
+7.4s console.log [DIAG] cb download generation_config.json 3767
+7.4s reqdone https://huggingface.co/api/resolve-cache/models/onnx-community/moonshine-tiny-ONNX/a6da1241cd305dcd64eab1edbd615f2bb9aabb95/generation_config.json?%2Fonnx-community%2Fmoonshine-tiny-ONNX%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22b45f5d83177964a069f943e80225213bd724200f%22
+7.4s console.log [DIAG] cb done generation_config.json 3769
+7.7s console.log [DIAG] cb download onnx/encoder_model.onnx 4022
+7.7s console.log [DIAG] cb download onnx/decoder_model_merged_quantized.onnx 4025
+12.2s reqdone https://us.aws.cdn.hf.co/xet-bridge-us/675ce378dfdaa78daa9a8883/95212792850dd77d8e1c07b8d30973c793b98acaa60f91175a2670e5dc4e7872?…
+12.3s console.log [DIAG] cb done onnx/decoder_model_merged_quantized.onnx 8621
+12.5s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+14.2s reqdone http://localhost:5318/assets/ort-wasm-simd-threaded.jsep-B0T3yYHD.wasm
+14.5s reqdone https://us.aws.cdn.hf.co/xet-bridge-us/675ce378dfdaa78daa9a8883/39e7d8f8f035b3ea17943a4e4c2b33c202dbb23d76ff2305f1bd7844c23d896e?…
+14.6s UI preparing
+14.8s console.log [DIAG] cb done onnx/encoder_model.onnx 11134
+15.5s console.log [DIAG] cb ready undefined 11785
+15.5s console.log [DIAG] pipeline ready 11787
+15.7s console.log [DIAG] warmup done 12009
+15.8s UI record enabled
+  [32mok[39m [2m1 [22m[desktop-webgpu] › e2e-speech\diag-load.spec.ts:8:1 › diag: 下載→準備中→可錄音 耗時[2m (18.2s)[22m
+[32m  1 passed[39m[2m (1.3m)[22m

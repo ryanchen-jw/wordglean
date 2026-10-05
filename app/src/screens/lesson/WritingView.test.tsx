@@ -1,10 +1,10 @@
 import 'fake-indexeddb/auto'
-import { fireEvent, render, screen, within } from '@testing-library/react'
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
 import type { LessonItemsDoc, WritingItem } from '../../lesson/items'
 import { loadFixture } from '../../lesson/testFixtures'
-import type { GradeOutcome } from '../../llm/grade'
+import { gradeWriting, type GradeOutcome } from '../../llm/grade'
 import { saveLink } from '../../llm/keyStore'
 import type { GradeResult } from '../../llm/parseGrade'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
@@ -154,15 +154,19 @@ describe('有金鑰：AI 批改（s06 ai）', () => {
     const busy = await screen.findByRole('button', { name: '批改中…' })
     expect(busy).toBeDisabled()
     expect(busy).toHaveAttribute('aria-busy', 'true')
-    expect(grade).toHaveBeenCalledWith(expect.objectContaining({ apiKey: KEY }), {
-      kind: 'translate',
-      promptZh: '我有一個蘋果和一根香蕉。',
-      words: ['have', 'and'],
-      referenceEn: ['I have an apple and a banana.'],
-      rubricZh: ['用 have 表示「有」', 'apple 前用 an、banana 前用 a', '用 and 連接兩樣東西'],
-      level: 'A1',
-      answer: 'I have a apple and a banana.',
-    })
+    expect(grade).toHaveBeenCalledWith(
+      expect.objectContaining({ apiKey: KEY }),
+      {
+        kind: 'translate',
+        promptZh: '我有一個蘋果和一根香蕉。',
+        words: ['have', 'and'],
+        referenceEn: ['I have an apple and a banana.'],
+        rubricZh: ['用 have 表示「有」', 'apple 前用 an、banana 前用 a', '用 and 連接兩樣東西'],
+        level: 'A1',
+        answer: 'I have a apple and a banana.',
+      },
+      expect.any(AbortSignal),
+    )
     resolve(ok(WRONG))
     expect(await screen.findByText('建議寫法')).toBeInTheDocument()
   })
@@ -261,6 +265,33 @@ describe('批改失敗（s06 fail）：保留參考答案、這題仍能完成',
     })
   })
 
+  it('批改一直沒回應：逾時轉批改失敗（保留參考答案、可繼續），不停在批改中（創辦人試用 2026-10-05）', async () => {
+    const hanging = (() => new Promise<Response>(() => {})) as unknown as typeof fetch
+    start([writing[0]], (link, task, signal) =>
+      gradeWriting(link, task, hanging, { signal, timeoutMs: 50 }),
+    )
+    await write('I have a apple.')
+    expect(screen.getByRole('button', { name: '批改中…' })).toBeDisabled()
+    expect(await screen.findByRole('alert')).toHaveTextContent(
+      'AI 這次沒有給出可用的結果。可以先對照參考答案，或稍後再試。',
+    )
+    expect(screen.getByText('I have an apple and a banana.')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '繼續' })).toBeEnabled()
+  })
+
+  it('批改中離開畫面：取消批改請求', async () => {
+    let sent: AbortSignal | undefined
+    start([writing[0]], (_link, _task, signal) => {
+      sent = signal
+      return new Promise<GradeOutcome>(() => {})
+    })
+    await write('I have a apple.')
+    await screen.findByRole('button', { name: '批改中…' })
+    expect(sent?.aborted).toBe(false)
+    cleanup()
+    expect(sent?.aborted).toBe(true)
+  })
+
   it('批改函式拋例外也當失敗', async () => {
     start([writing[0]], async () => {
       throw new Error('boom')
@@ -294,6 +325,45 @@ describe('批改失敗（s06 fail）：保留參考答案、這題仍能完成',
     await screen.findByRole('alert')
     click('繼續')
     expect(await screen.findByTestId('lesson-done')).toHaveTextContent('答對 0 題')
+  })
+})
+
+// 創辦人試用 2026-10-05：批改結果畫面看不到原本的中文題目，沒辦法對照。三種結果畫面最上方都留作答時那張題目卡
+describe('結果畫面保留原題（題型、中文題目、提示字）', () => {
+  async function questionCardOnTop() {
+    const zh = await screen.findByText('我有一個蘋果和一根香蕉。')
+    let card = zh.parentElement!
+    while (!card.textContent?.includes('中翻英')) card = card.parentElement!
+    expect(card).not.toHaveTextContent('你的句子')
+    expect(within(card).getByText('have、and').parentElement).toHaveTextContent(
+      /^提示字：have、and$/,
+    )
+    // 題目卡在「你的句子」之前
+    const yours = screen.getByText('你的句子')
+    expect(card.compareDocumentPosition(yours) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+  }
+
+  it('AI 批改結果', async () => {
+    await saveLink(db, KEY, 'paste', Date.now())
+    start([writing[0]], async () => ok(WRONG))
+    await write('I have a apple and a banana.')
+    await screen.findByText('建議寫法')
+    await questionCardOnTop()
+  })
+
+  it('批改失敗', async () => {
+    await saveLink(db, KEY, 'paste', Date.now())
+    start([writing[0]], async () => ({ ok: false, reason: 'other' }))
+    await write('I have a apple and a banana.')
+    await screen.findByRole('alert')
+    await questionCardOnTop()
+  })
+
+  it('沒有金鑰自評', async () => {
+    start([writing[0]])
+    await write('I have a apple and a banana.')
+    await screen.findByText('跟參考答案比一比，意思一樣嗎？')
+    await questionCardOnTop()
   })
 })
 

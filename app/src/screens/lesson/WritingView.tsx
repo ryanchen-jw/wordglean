@@ -1,7 +1,7 @@
 // 寫作題（設計 s06）：中翻英／造句。有金鑰送 AI 批改；沒有金鑰（或題目標了 selfCheck）對照參考答案自評；
 // 批改失敗保留參考答案讓這題能完成。對錯（執行長 D2）：AI 無錯誤＝對、自評照按鈕、跳過與失敗後繼續＝錯
 import { CircleX, Info, LoaderCircle } from 'lucide-react'
-import { Fragment, useContext, useState, type ReactNode } from 'react'
+import { Fragment, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { t, type MessageKey } from '../../i18n/t'
@@ -92,6 +92,13 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
   const answer = text.trim()
   const translate = item.type === 'translate'
   const words = translate ? item.hintWords : [item.targetWord]
+  // 離開題目或畫面時中止批改請求（創辦人試用 2026-10-05）
+  const leaving = useRef(new AbortController())
+  useEffect(() => {
+    const ctrl = new AbortController()
+    leaving.current = ctrl
+    return () => ctrl.abort()
+  }, [])
 
   // 自評、跳過、失敗後繼續：先記作答再往下（LessonScreen 的「繼續」會等這次存檔）
   // 跳過與批改失敗後繼續＝沒判出對錯：算錯，錯題重做時不再出（創辦人試用 2026-10-04 ⑤）
@@ -114,10 +121,12 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
       level,
       answer,
     }
-    const out = await grade(link, task).catch(() => ({
+    const { signal } = leaving.current
+    const out = await grade(link, task, signal).catch(() => ({
       ok: false as const,
       reason: 'other' as const,
     }))
+    if (signal.aborted) return
     if (out.ok) {
       onAnswer({ correct: out.result.isCorrect, usedHint: false })
       setPhase({ kind: 'ai', result: out.result })
@@ -128,27 +137,32 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
       })
   }
 
+  // 題目卡：作答時與三種結果畫面（AI 批改、自評、批改失敗）都放最上方，方便對照（創辦人試用 2026-10-05）
+  const question = (
+    <Card>
+      <span className="text-secondary text-muted">
+        {t(translate ? 'lesson.type.translate' : 'lesson.type.sentence')}
+      </span>
+      <p className="text-title-sm">
+        <ZhText text={translate ? item.promptZh : item.instructionZh} />
+      </p>
+      {words.length > 0 && (
+        <span className="text-caption text-muted">
+          {t('write.question.hintWords')}
+          <span lang="en" className="font-en">
+            {words.map(displayWord).join('、')}
+          </span>
+        </span>
+      )}
+    </Card>
+  )
+
   if (phase.kind === 'input' || phase.kind === 'grading') {
     const busy = phase.kind === 'grading'
     return (
       <>
         <LessonMain>
-          <Card>
-            <span className="text-secondary text-muted">
-              {t(translate ? 'lesson.type.translate' : 'lesson.type.sentence')}
-            </span>
-            <p className="text-title-sm">
-              <ZhText text={translate ? item.promptZh : item.instructionZh} />
-            </p>
-            {words.length > 0 && (
-              <span className="text-caption text-muted">
-                {t('write.question.hintWords')}
-                <span lang="en" className="font-en">
-                  {words.map(displayWord).join('、')}
-                </span>
-              </span>
-            )}
-          </Card>
+          {question}
           <textarea
             lang="en"
             aria-label={t('write.question.yours')}
@@ -197,6 +211,7 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
     return (
       <>
         <LessonMain>
+          {question}
           {yours(result.errors.map((e) => e.original))}
           {result.isCorrect ? (
             <FeedbackBar tone="ok" title={t('lesson.feedback.right')} />
@@ -237,6 +252,7 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
     return (
       <>
         <LessonMain>
+          {question}
           {yours()}
           <References item={item} />
           <p className="font-bold">{t('write.nokey.prompt')}</p>
@@ -268,6 +284,7 @@ export function WritingView({ item, onAnswer, onContinue }: QuestionProps<Writin
   return (
     <>
       <LessonMain>
+        {question}
         {yours()}
         <div
           role="alert"

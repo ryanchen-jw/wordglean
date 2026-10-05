@@ -4,7 +4,12 @@ import { gradeWriting, type GradeOutcome } from '../../llm/grade'
 import type { GradeTask } from '../../llm/gradePrompt'
 import type { OpenRouterLink } from '../../llm/keyStore'
 
-export type GradeFn = (link: OpenRouterLink, task: GradeTask) => Promise<GradeOutcome>
+/** signal：離開題目時中止批改請求 */
+export type GradeFn = (
+  link: OpenRouterLink,
+  task: GradeTask,
+  signal?: AbortSignal,
+) => Promise<GradeOutcome>
 
 export interface WritingEnv {
   /** undefined＝讀取中；null＝沒有金鑰 */
@@ -16,5 +21,5 @@ export interface WritingEnv {
 export const WritingEnvContext = createContext<WritingEnv>({
   link: null,
   level: null,
-  grade: (link, task) => gradeWriting(link, task),
+  grade: (link, task, signal) => gradeWriting(link, task, fetch, { signal }),
 })

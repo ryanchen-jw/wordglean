@@ -125,6 +125,27 @@ describe('字典 chunk 載入失敗（離線、部署換版後舊 chunk 不在�
   })
 })
 
+describe('字典 chunk 一直載不完（網路很慢）：不卡住批改（創辦人試用 2026-10-05）', () => {
+  afterEach(() => {
+    vi.useRealTimers()
+    vi.doUnmock('opencc-js/preset/cn2t')
+    vi.resetModules()
+  })
+
+  it('最多等 5 秒，之後解釋保留原文（術語仍換）', async () => {
+    vi.resetModules()
+    vi.doMock('opencc-js/preset/cn2t', () => new Promise(() => {}))
+    vi.useFakeTimers()
+    const zhTw = await import('./zhTw')
+    let out: string | null = null
+    void zhTw.toTaiwanZh('介詞 to 后面接动名词').then((s) => (out = s))
+    await vi.advanceTimersByTimeAsync(4_900)
+    expect(out).toBeNull()
+    await vi.advanceTimersByTimeAsync(100)
+    expect(out).toBe('介系詞 to 后面接动名词')
+  })
+})
+
 describe('localizeGrade', () => {
   it('整體說明與各錯誤點的解釋都轉；英文欄位、isCorrect、levelOk 不動', async () => {
     const r = await localizeGrade({

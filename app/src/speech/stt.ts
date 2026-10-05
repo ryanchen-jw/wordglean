@@ -49,10 +49,13 @@ export function createSttClient({
   createWorker,
   isCached,
   mark = noMark,
+  loadTimeoutMs = 60_000,
 }: {
   createWorker: () => WorkerLike
   isCached: () => Promise<boolean>
   mark?: LoadingMark
+  /** 載入期間多久沒有任何回音（下載進度或完成）就算失敗；下載中每次進度重新計時（比照 TASK-13 高音質發音） */
+  loadTimeoutMs?: number
 }): SttClient {
   let state: SttState = { kind: 'unknown' }
   const listeners = new Set<() => void>()
@@ -66,6 +69,16 @@ export function createSttClient({
   let holders = 0
   let seq = 0
   const pending = new Map<number, { resolve: (v: unknown) => void; reject: (e: Error) => void }>()
+  // 載入逾時：建模型或暖機卡住時 Worker 不會回任何訊息，不能讓「準備中」無限停留（創辦人試用 2026-10-05）
+  let idle: ReturnType<typeof setTimeout> | undefined
+  const arm = () => {
+    clearTimeout(idle)
+    idle = setTimeout(() => {
+      worker?.terminate()
+      worker = null
+      rejectAll(new Error('語音辨識載入逾時'))
+    }, loadTimeoutMs)
+  }
 
   const rejectAll = (e: Error) => {
     for (const p of pending.values()) p.reject(e)
@@ -84,6 +97,7 @@ export function createSttClient({
       const w = createWorker()
       w.onmessage = ({ data }: MessageEvent<SttResponse>) => {
         if (data.type === 'progress') {
+          if (loading) arm()
           // 下載完還要建模型與暖機：改報「準備中」，不停在「下載中 100%」（創辦人試用 2026-10-04 ①）
           if (state.kind === 'downloading')
             set(
@@ -133,6 +147,7 @@ export function createSttClient({
       if (loading) return loading
       set(state.kind === 'downloaded' ? { kind: 'loading' } : { kind: 'downloading', progress: 0 })
       mark.set(true)
+      arm()
       loading = call({ cmd: 'load' })
         .then(
           () => {
@@ -146,6 +161,7 @@ export function createSttClient({
           },
         )
         .finally(() => {
+          clearTimeout(idle)
           loading = null
           mark.set(false)
         })

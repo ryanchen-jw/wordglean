@@ -69,8 +69,23 @@ function converter(): Promise<Convert> {
 const replaceTerms = (text: string) =>
   TW_GRAMMAR_TERMS.reduce((s, [from, to]) => s.replaceAll(from, to), text)
 
+/** 先開始載入字典（批改送出時呼叫，與請求同時進行） */
+export function preloadTaiwanZh(): void {
+  void converter()
+}
+
+// 字典一直載不完（網路很慢）也不能卡住批改結果：最多等 5 秒，之後這次退回原文（術語仍換）
+const CONVERTER_WAIT_MS = 5_000
+
 export async function toTaiwanZh(text: string): Promise<string> {
-  return replaceTerms((await converter())(text))
+  let timer: ReturnType<typeof setTimeout> | undefined
+  const convert = await Promise.race([
+    converter(),
+    new Promise<Convert>((resolve) => {
+      timer = setTimeout(() => resolve((s) => s), CONVERTER_WAIT_MS)
+    }),
+  ]).finally(() => clearTimeout(timer))
+  return replaceTerms(convert(text))
 }
 
 /** 批改結果的解釋欄位（整體與各錯誤點）轉台灣繁體；英文欄位不動 */

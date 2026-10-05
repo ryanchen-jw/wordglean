@@ -1,7 +1,7 @@
 // 跟讀 e2e 共用：能跟讀（stt）時的小課出題順序照 TASK-18 穿插規則（e2e/lesson.ts stepsOf）；
 // 內建聲音一律用替身（e2e/speech.ts），兩引擎都有聽類題、順序一致
 import { expect, type Page } from '@playwright/test'
-import { LESSON, stepsOf } from '../e2e/lesson.js'
+import { answerMatching, LESSON, stepsOf } from '../e2e/lesson.js'
 
 export const SPEECH_STEPS = stepsOf(LESSON, { stt: true })
 export const FIRST_SHADOWING = SPEECH_STEPS.findIndex((s) => s.shadowing !== undefined) + 1
@@ -24,6 +24,12 @@ export async function answerStep(page: Page, n: number) {
     await page.getByRole('button', { name: '送出批改' }).click()
     await expect(page.getByText('跟參考答案比一比，意思一樣嗎？')).toBeVisible()
     await page.getByRole('button', { name: '我寫對了' }).click()
+    return
+  }
+  // 配對題（ca42edf）：照 e2e/lesson.ts answerPick 依序配好四對再繼續
+  if (s.match !== undefined) {
+    await answerMatching(page, s.match)
+    await page.getByRole('button', { name: '繼續' }).click()
     return
   }
   if (s.typed !== undefined)

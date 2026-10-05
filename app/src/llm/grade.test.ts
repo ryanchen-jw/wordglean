@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { gradeWriting } from './grade'
 import { GRADE_PROMPT_VERSION, gradeMessages, type GradeTask } from './gradePrompt'
 
@@ -110,5 +110,49 @@ describe('gradeWriting', () => {
     )
     expect(await gradeWriting(LINK, TASK, quota)).toEqual({ ok: false, reason: 'quota' })
     expect(quota).toHaveBeenCalledOnce()
+  })
+})
+
+// 創辦人試用 2026-10-05：送出後一直停在「批改中…」。免費模型帶推理可能很慢、fallback 也可能排隊，請求要有上限
+describe('gradeWriting 逾時與取消', () => {
+  beforeEach(() => vi.useFakeTimers())
+  afterEach(() => vi.useRealTimers())
+
+  /** 永遠不回應；中止時照 fetch 規格以 AbortError 拒絕 */
+  const hanging = vi.fn(
+    (_url: string, init?: RequestInit) =>
+      new Promise<Response>((_, reject) =>
+        init?.signal?.addEventListener('abort', () =>
+          reject(new DOMException('aborted', 'AbortError')),
+        ),
+      ),
+  )
+
+  it('60 秒沒回應 → 失敗（other），並中止請求', async () => {
+    let done: unknown = null
+    void gradeWriting(LINK, TASK, hanging as unknown as typeof fetch).then((o) => (done = o))
+    await vi.advanceTimersByTimeAsync(59_000)
+    expect(done).toBeNull()
+    await vi.advanceTimersByTimeAsync(1_000)
+    expect(done).toEqual({ ok: false, reason: 'other' })
+    expect(hanging.mock.calls.at(-1)![1]!.signal!.aborted).toBe(true)
+  })
+
+  it('連中止都不理的 fetch（或回應本文讀不完）也在 60 秒轉失敗', async () => {
+    const deaf = vi.fn(() => new Promise<Response>(() => {}))
+    let done: unknown = null
+    void gradeWriting(LINK, TASK, deaf as unknown as typeof fetch).then((o) => (done = o))
+    await vi.advanceTimersByTimeAsync(60_000)
+    expect(done).toEqual({ ok: false, reason: 'other' })
+  })
+
+  it('呼叫端取消（離開題目）：中止請求', async () => {
+    const leave = new AbortController()
+    void gradeWriting(LINK, TASK, hanging as unknown as typeof fetch, { signal: leave.signal })
+    await vi.advanceTimersByTimeAsync(0)
+    const sent = hanging.mock.calls.at(-1)![1]!.signal!
+    expect(sent.aborted).toBe(false)
+    leave.abort()
+    expect(sent.aborted).toBe(true)
   })
 })

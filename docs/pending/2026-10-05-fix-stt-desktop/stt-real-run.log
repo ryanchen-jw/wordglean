@@ -1,0 +1,11 @@
+[2m[WebServer] [22m[33m[plugin builtin:vite-reporter] [33;1m
+[2m[WebServer] [22m(!) Some chunks are larger than 500 kB after minification. Consider:
+[2m[WebServer] [22m- Using dynamic import() to code-split the application
+[2m[WebServer] [22m- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[2m[WebServer] [22m- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[0m[39m
+
+[2mRunning [22m1[2m test using [22m1[2m worker[22m
+
+  [32mok[39m [2m1 [22m[chromium-stt-real] › e2e-speech\stt-real.spec.ts:28:1 › 真模型：跟讀錄音全程不上傳（AC#4）＋10 句預錄音檔逐字正確率（AC#2）[2m (47.9s)[22m
+
+[32m  1 passed[39m[2m (1.1m)[22m

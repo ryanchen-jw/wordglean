@@ -1,5 +1,5 @@
 // 語音辨識服務（主執行緒端）：下載／載入狀態、分時載入（沒人持有就釋放 Worker）、辨識；Worker 為假
-import { describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { createSttClient, sttDownloadStatus, type SttState } from './stt'
 
 class FakeWorker {
@@ -158,6 +158,85 @@ describe('createSttClient', () => {
     w.onerror?.({} as ErrorEvent)
     await expect(text).rejects.toThrow('Worker')
     await flush()
+  })
+})
+
+// 創辦人試用 2026-10-05：停在「準備中」不動。Worker 不回應（建模型或暖機卡住）不能無限等，比照 TASK-13 高音質發音的載入逾時
+describe('載入逾時（準備中不無限停留）', () => {
+  function timed(cached: boolean) {
+    const workers: FakeWorker[] = []
+    const client = createSttClient({
+      createWorker: () => {
+        const w = new FakeWorker()
+        workers.push(w)
+        return w as unknown as Worker
+      },
+      isCached: async () => cached,
+    })
+    return { client, workers }
+  }
+
+  beforeEach(() => vi.useFakeTimers())
+  afterEach(() => vi.useRealTimers())
+
+  it('已下載、載入後 Worker 一直不回應：60 秒轉失敗、釋放 Worker；之後可重試', async () => {
+    const { client, workers } = timed(true)
+    await client.refresh()
+    client.acquire()
+    const loading = client.load()
+    const settled = loading.catch((e: Error) => e)
+    expect(client.get()).toEqual({ kind: 'loading' })
+    await vi.advanceTimersByTimeAsync(59_000)
+    expect(client.get()).toEqual({ kind: 'loading' })
+    await vi.advanceTimersByTimeAsync(1_000)
+    expect(await settled).toBeInstanceOf(Error)
+    expect(client.get()).toEqual({ kind: 'failed' })
+    expect(workers[0].terminated).toBe(true)
+    void client.load().catch(() => undefined)
+    expect(workers).toHaveLength(2)
+  })
+
+  it('下載到 100% 後（準備中）一直不回應：從最後一次進度起 60 秒轉失敗', async () => {
+    const { client, workers } = timed(false)
+    await client.refresh()
+    client.acquire()
+    const settled = client.load().catch((e: Error) => e)
+    const w = workers[0]
+    await vi.advanceTimersByTimeAsync(50_000)
+    w.reply({ type: 'progress', fraction: 0.5 })
+    await vi.advanceTimersByTimeAsync(50_000)
+    w.reply({ type: 'progress', fraction: 1 })
+    expect(client.get()).toEqual({ kind: 'loading' })
+    await vi.advanceTimersByTimeAsync(59_000)
+    expect(client.get()).toEqual({ kind: 'loading' })
+    await vi.advanceTimersByTimeAsync(1_000)
+    expect(await settled).toBeInstanceOf(Error)
+    expect(client.get()).toEqual({ kind: 'failed' })
+    expect(w.terminated).toBe(true)
+  })
+
+  it('載入成功：可用，之後不會再逾時', async () => {
+    const { client, workers } = timed(true)
+    await client.refresh()
+    client.acquire()
+    const loading = client.load()
+    const w = workers[0]
+    w.reply({ type: 'result', id: w.last().id, result: { device: 'wasm' } })
+    await loading
+    await vi.advanceTimersByTimeAsync(120_000)
+    expect(client.get()).toEqual({ kind: 'ready' })
+    expect(w.terminated).toBe(false)
+  })
+
+  it('載入中 Worker 執行錯誤：轉失敗、釋放 Worker', async () => {
+    const { client, workers } = timed(true)
+    await client.refresh()
+    client.acquire()
+    const settled = client.load().catch((e: Error) => e)
+    workers[0].onerror?.({} as ErrorEvent)
+    expect(await settled).toBeInstanceOf(Error)
+    expect(client.get()).toEqual({ kind: 'failed' })
+    expect(workers[0].terminated).toBe(true)
   })
 })
 

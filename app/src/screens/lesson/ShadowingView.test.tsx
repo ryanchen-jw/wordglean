@@ -409,6 +409,38 @@ describe('跟讀：跳過、麥克風、模型下載', () => {
     expect(screen.queryByText(/語音辨識模型/)).toBeNull()
   })
 
+  it('真的語音辨識服務：準備中 Worker 一直不回應 → 逾時轉下載失敗，可重試、提出瀏覽器後備（創辦人試用 2026-10-05）', async () => {
+    const workers: { terminated: boolean }[] = []
+    const rec = fakeRecognition({ texts: [] })
+    const f = fakeSpeech({ web: createWebSpeech(() => rec.Ctor) })
+    const services = {
+      ...f.services,
+      stt: createSttClient({
+        createWorker: () => {
+          const w = {
+            terminated: false,
+            onmessage: null,
+            onerror: null,
+            postMessage: () => {},
+            terminate: () => {
+              w.terminated = true
+            },
+          }
+          workers.push(w)
+          return w as unknown as Worker
+        },
+        isCached: async () => true,
+        loadTimeoutMs: 50,
+      }),
+    }
+    renderLesson(services)
+    expect(await screen.findByText('語音辨識準備中…')).toBeInTheDocument()
+    expect(await screen.findByRole('button', { name: '下載中斷・重試' })).toBeInTheDocument()
+    expect(screen.queryByText('語音辨識準備中…')).toBeNull()
+    expect(screen.getByRole('button', { name: '改用瀏覽器的語音辨識' })).toBeInTheDocument()
+    expect(workers[0].terminated).toBe(true)
+  })
+
   it('模型已下載：進題目就自動載入，載入中顯示準備中', async () => {
     const f = fakeSpeech({ model: 'downloaded' })
     renderLesson(f.services)

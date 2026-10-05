@@ -145,15 +145,19 @@ export async function complete(
     models,
     messages,
     maxTokens = 4096,
+    signal,
   }: {
     apiKey: string
     models: readonly string[]
     messages: readonly ChatMessage[]
     maxTokens?: number
+    /** 中止請求（逾時、離開題目） */
+    signal?: AbortSignal
   },
   fetchFn: typeof fetch = fetch,
 ): Promise<CompletionResult> {
   const res = await send(fetchFn, `${OPENROUTER_API}/chat/completions`, {
+    signal,
     method: 'POST',
     headers: { ...auth(apiKey), 'Content-Type': 'application/json', 'X-Title': 'LinguaApp' },
     body: JSON.stringify({

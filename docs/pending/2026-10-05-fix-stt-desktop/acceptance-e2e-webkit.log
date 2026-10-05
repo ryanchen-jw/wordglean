@@ -1,0 +1,153 @@
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Running 123 tests using 1 worker
+  ok   1 [webkit-iphone15] › e2e\a11y-answered.spec.ts:50:5 › 作答後 axe（light） › 小課第 1 題（看字選意）答錯後 (5.0s)
+  ok   2 [webkit-iphone15] › e2e\a11y-answered.spec.ts:57:5 › 作答後 axe（light） › 選擇題答錯後 (8.7s)
+  ok   3 [webkit-iphone15] › e2e\a11y-answered.spec.ts:67:5 › 作答後 axe（light） › 複習答錯後 (16.9s)
+  ok   4 [webkit-iphone15] › e2e\a11y-answered.spec.ts:50:5 › 作答後 axe（dark） › 小課第 1 題（看字選意）答錯後 (3.7s)
+  ok   5 [webkit-iphone15] › e2e\a11y-answered.spec.ts:57:5 › 作答後 axe（dark） › 選擇題答錯後 (8.4s)
+  ok   6 [webkit-iphone15] › e2e\a11y-answered.spec.ts:67:5 › 作答後 axe（dark） › 複習答錯後 (15.8s)
+  ok   7 [webkit-iphone15] › e2e\about-visual.spec.ts:53:1 › 從設定頁點進「隱私說明・授權・原始碼」，再進兩個子頁 (2.5s)
+  ok   8 [webkit-iphone15] › e2e\about-visual.spec.ts:78:5 › 320 寬・特大字級 › about (815ms)
+  ok   9 [webkit-iphone15] › e2e\about-visual.spec.ts:78:5 › 320 寬・特大字級 › privacy (1.0s)
+  ok  10 [webkit-iphone15] › e2e\about-visual.spec.ts:78:5 › 320 寬・特大字級 › licenses (3.6s)
+  ok  11 [webkit-iphone15] › e2e\about-visual.spec.ts:87:5 › 深色 › about (1.0s)
+  ok  12 [webkit-iphone15] › e2e\about-visual.spec.ts:87:5 › 深色 › privacy (2.5s)
+  ok  13 [webkit-iphone15] › e2e\about-visual.spec.ts:87:5 › 深色 › licenses (2.3s)
+  ok  14 [webkit-iphone15] › e2e\dictionary.spec.ts:45:1 › AC#2：課程詳情點字→彈層→收藏→單字庫出現（有星號） (3.6s)
+  -   15 [webkit-iphone15] › e2e\dictionary.spec.ts:73:1 › 離線：查從未載入過的切片（service worker 預快取）
+  -   16 [webkit-iphone15] › e2e\dictionary.spec.ts:144:1 › AC#3：彈層開啟延遲 <150ms（chromium，字典已快取）
+  ok  17 [webkit-iphone15] › e2e\icon-color.spec.ts:31:5 › light › 字典彈層發音鈕＝primary（設計 s08） (2.6s)
+  ok  18 [webkit-iphone15] › e2e\icon-color.spec.ts:48:5 › light › 其他圖示鈕：首頁設定＝text、子頁返回＝text、小課離開＝text、單字卡發音＝primary (2.3s)
+  ok  19 [webkit-iphone15] › e2e\icon-color.spec.ts:69:5 › light › 安裝卡關閉鈕＝muted（webkit 顯示 iOS 說明卡） (1.1s)
+  ok  20 [webkit-iphone15] › e2e\icon-color.spec.ts:31:5 › dark › 字典彈層發音鈕＝primary（設計 s08） (3.7s)
+  ok  21 [webkit-iphone15] › e2e\icon-color.spec.ts:48:5 › dark › 其他圖示鈕：首頁設定＝text、子頁返回＝text、小課離開＝text、單字卡發音＝primary (1.6s)
+  ok  22 [webkit-iphone15] › e2e\icon-color.spec.ts:69:5 › dark › 安裝卡關閉鈕＝muted（webkit 顯示 iOS 說明卡） (1.1s)
+  ok  23 [webkit-iphone15] › e2e\lesson-helpers.spec.ts:7:1 › 寫作題作答後沒呼叫 next，換一個頁面時 next 仍會按「繼續」 (25.2s)
+  ok  24 [webkit-iphone15] › e2e\lesson-visual.spec.ts:39:1 › s07 單字卡：出題／例句提示／答對／答錯 (5.0s)
+  ok  25 [webkit-iphone15] › e2e\lesson-visual.spec.ts:54:3 › 答題後選項底色＝correct-bg／error-bg（light） (1.5s)
+  ok  26 [webkit-iphone15] › e2e\lesson-visual.spec.ts:54:3 › 答題後選項底色＝correct-bg／error-bg（dark） (3.2s)
+  ok  27 [webkit-iphone15] › e2e\lesson-visual.spec.ts:83:3 › s03 狀態色＝token（light） (9.7s)
+  ok  28 [webkit-iphone15] › e2e\lesson-visual.spec.ts:83:3 › s03 狀態色＝token（dark） (8.3s)
+  ok  29 [webkit-iphone15] › e2e\lesson-visual.spec.ts:151:1 › s05 選擇題：已選未檢查／答錯／答對 (9.7s)
+  ok  30 [webkit-iphone15] › e2e\lesson-visual.spec.ts:167:1 › s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認 (12.6s)
+  ok  31 [webkit-iphone15] › e2e\lesson-visual.spec.ts:183:1 › s03 聽音打字：內建聲音＋第一次提示／作答中／答錯；第二次不再提示 (8.3s)
+  ok  32 [webkit-iphone15] › e2e\lesson-visual.spec.ts:195:1 › s03 聽不出來；聽音選答答對／答錯 (14.8s)
+  ok  33 [webkit-iphone15] › e2e\lesson-visual.spec.ts:213:1 › s03 聽音選答答對 (7.7s)
+  ok  34 [webkit-iphone15] › e2e\lesson-visual.spec.ts:222:1 › 錯題重做：出題／答對；s14 完成頁 (14.2s)
+  ok  35 [webkit-iphone15] › e2e\lesson-visual.spec.ts:244:3 › 窄螢幕／特大字級 320-md：單字卡答錯、聽題答錯、選擇題答錯、閱讀、離開確認、完成頁 (18.9s)
+  ok  36 [webkit-iphone15] › e2e\lesson-visual.spec.ts:244:3 › 窄螢幕／特大字級 320-xl：單字卡答錯、聽題答錯、選擇題答錯、閱讀、離開確認、完成頁 (34.8s)
+  ok  37 [webkit-iphone15] › e2e\lesson-visual.spec.ts:244:3 › 窄螢幕／特大字級 375-xl：單字卡答錯、聽題答錯、選擇題答錯、閱讀、離開確認、完成頁 (21.4s)
+  ok  38 [webkit-iphone15] › e2e\lesson.spec.ts:25:1 › 課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 回到今天 (15.9s)
+  ok  39 [webkit-iphone15] › e2e\lesson.spec.ts:120:1 › 錯題重做：故意答錯 2 題 → 再練一次錯題（仍錯再出一輪）→ 答對 → 完成；分數只看第一次 (13.1s)
+  ok  40 [webkit-iphone15] › e2e\lesson.spec.ts:158:1 › 中途離開（✕ → 離開）後重開，從離開的那題接續 (4.5s)
+  ok  41 [webkit-iphone15] › e2e\lesson.spec.ts:173:1 › 答完還沒按繼續就重新整理：接續在下一題 (2.2s)
+  ok  42 [webkit-iphone15] › e2e\lesson.spec.ts:198:1 › A1 兩題翻譯（題庫原文 a1-u01-l03，造句改翻譯後）：兩題翻譯自評寫錯 → 錯題重做寫對 → 完成 (11.1s)
+  ok  43 [webkit-iphone15] › e2e\listen.spec.ts:14:1 › 聽音打字：播放／慢速、拼錯算錯並標錯字、寬鬆比對算對；聽音選答：答錯與正解 (10.6s)
+  ok  44 [webkit-iphone15] › e2e\listen.spec.ts:71:1 › 聽音打字：大小寫、標點、彎引號不計算對；聽音選答答對 (6.9s)
+  ok  45 [webkit-iphone15] › e2e\listen.spec.ts:88:1 › 聽不出來：直接看答案、可繼續下一題 (5.6s)
+  ok  46 [webkit-iphone15] › e2e\listen.spec.ts:98:1 › 沒有 WebGPU 的手機：不顯示「到設定開啟高音質」的首次提示 (4.9s)
+  ok  47 [webkit-iphone15] › e2e\narrow.spec.ts:76:5 › 320-md › s09 單字庫 (1.3s)
+  ok  48 [webkit-iphone15] › e2e\narrow.spec.ts:87:5 › 320-md › s08 字典彈層：查到、已收藏＋提示、查無此字（TASK-16） (7.9s)
+  ok  49 [webkit-iphone15] › e2e\narrow.spec.ts:114:5 › 320-md › s11 設定 (2.2s)
+  ok  50 [webkit-iphone15] › e2e\narrow.spec.ts:122:5 › 320-md › s10 分級測驗：勾選中、結果（勾到假字）、重測、選級距彈層 (17.6s)
+  ok  51 [webkit-iphone15] › e2e\narrow.spec.ts:151:5 › 320-md › s13 清除確認：彈窗在視窗內 (2.3s)
+  ok  52 [webkit-iphone15] › e2e\narrow.spec.ts:76:5 › 320-xl › s09 單字庫 (7.0s)
+  ok  53 [webkit-iphone15] › e2e\narrow.spec.ts:87:5 › 320-xl › s08 字典彈層：查到、已收藏＋提示、查無此字（TASK-16） (9.3s)
+  ok  54 [webkit-iphone15] › e2e\narrow.spec.ts:114:5 › 320-xl › s11 設定 (1.6s)
+  ok  55 [webkit-iphone15] › e2e\narrow.spec.ts:122:5 › 320-xl › s10 分級測驗：勾選中、結果（勾到假字）、重測、選級距彈層 (17.8s)
+  ok  56 [webkit-iphone15] › e2e\narrow.spec.ts:151:5 › 320-xl › s13 清除確認：彈窗在視窗內 (2.2s)
+  ok  57 [webkit-iphone15] › e2e\narrow.spec.ts:76:5 › 375-xl › s09 單字庫 (1.8s)
+  ok  58 [webkit-iphone15] › e2e\narrow.spec.ts:87:5 › 375-xl › s08 字典彈層：查到、已收藏＋提示、查無此字（TASK-16） (7.6s)
+  ok  59 [webkit-iphone15] › e2e\narrow.spec.ts:114:5 › 375-xl › s11 設定 (1.8s)
+  ok  60 [webkit-iphone15] › e2e\narrow.spec.ts:122:5 › 375-xl › s10 分級測驗：勾選中、結果（勾到假字）、重測、選級距彈層 (18.4s)
+  ok  61 [webkit-iphone15] › e2e\narrow.spec.ts:151:5 › 375-xl › s13 清除確認：彈窗在視窗內 (2.3s)
+  ok  62 [webkit-iphone15] › e2e\narrow.spec.ts:168:1 › 320×480 特大：清除失敗時彈窗不超出視窗、錯誤訊息可見 (2.9s)
+  ok  63 [webkit-iphone15] › e2e\narrow.spec.ts:203:1 › 320 標準：OpenRouter 主鈕折行不留孤字、左右內距 ≥16px (900ms)
+  -   64 [webkit-iphone15] › e2e\offline-lesson.spec.ts:8:1 › 斷網後從首頁上完一課，首頁顯示今天完成，重新載入仍在
+  -   65 [webkit-iphone15] › e2e\offline.spec.ts:5:1 › 離線重開：首頁、單字庫、課程地圖都可進入，首頁顯示離線提示
+  ok  66 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 320-xl：付費模型 一般 id 不溢出 (1.9s)
+  ok  67 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 320-xl：付費模型 極長 id 不溢出 (2.5s)
+  ok  68 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 360-md：付費模型 一般 id 不溢出 (1.8s)
+  ok  69 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 360-md：付費模型 極長 id 不溢出 (2.0s)
+  ok  70 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 375-xl-dark：付費模型 一般 id 不溢出 (1.8s)
+  ok  71 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 375-xl-dark：付費模型 極長 id 不溢出 (2.0s)
+  ok  72 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 375-md：付費模型 一般 id 不溢出 (1.8s)
+  ok  73 [webkit-iphone15] › e2e\openrouter-narrow.spec.ts:19:5 › 375-md：付費模型 極長 id 不溢出 (1.7s)
+  ok  74 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:76:1 › s06 寫：作答中／沒有金鑰（降級） (7.0s)
+  ok  75 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:86:1 › s06 寫：AI 批改結果／批改失敗（額度用完） (9.5s)
+  ok  76 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:111:1 › s11 設定 AI 區：預設／已連結／模型清單／解除確認／貼金鑰錯誤 (4.4s)
+  ok  77 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:157:3 › 320 特大字級 › s06 三種結果畫面：原題在最上方、捲動後內容不被截斷 (10.5s)
+  ok  78 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:198:3 › 320 特大字級 › s06 AI 批改／沒有金鑰、s11 已連結與貼金鑰錯誤不破版 (13.2s)
+  ok  79 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:229:3 › 深色 › s06 AI 批改、s11 已連結（深色） (8.1s)
+  ok  80 [webkit-iphone15] › e2e\openrouter.spec.ts:36:1 › 一鍵授權（PKCE）：授權頁 → 回呼換金鑰 → 已連結、額度；verifier 對得上 challenge (2.1s)
+  ok  81 [webkit-iphone15] › e2e\openrouter.spec.ts:58:1 › 貼金鑰：格式錯 → 欄位下方紅字；正確 → 驗證後已連結，重新整理仍在 (1.6s)
+  ok  82 [webkit-iphone15] › e2e\openrouter.spec.ts:78:1 › 清除金鑰：解除連結（二次確認）→ 未設定、本機不再有金鑰 (1.4s)
+  ok  83 [webkit-iphone15] › e2e\openrouter.spec.ts:92:1 › 寫作題：AI 批改結果（假端點）→ 下一題額度用完 → 批改失敗保留參考答案 (11.7s)
+  ok  84 [webkit-iphone15] › e2e\openrouter.spec.ts:160:1 › 沒有金鑰：寫作題對照參考答案自評、提示去設定（AC#3） (6.8s)
+  ok  85 [webkit-iphone15] › e2e\openrouter.spec.ts:179:3 › 一鍵授權失敗：授權碼錯（假端點換金鑰回 403） (757ms)
+  ok  86 [webkit-iphone15] › e2e\openrouter.spec.ts:179:3 › 一鍵授權失敗：verifier 不見（換了分頁） (1.6s)
+  ok  87 [webkit-iphone15] › e2e\perf-budget.spec.ts:11:1 › 首屏 JS ≤ 200KB gzip，且不載字典、單字總表、語音模型 (1.7s)
+  ok  88 [webkit-iphone15] › e2e\placement-cards.spec.ts:23:3 › P1-1 字卡底色（light）：勾選＝primary-soft、未勾選＝surface (868ms)
+  ok  89 [webkit-iphone15] › e2e\placement-cards.spec.ts:23:3 › P1-1 字卡底色（dark）：勾選＝primary-soft、未勾選＝surface (5.0s)
+  ok  90 [webkit-iphone15] › e2e\placement-cards.spec.ts:56:1 › P1-2 長字不斷字、不溢出（最長字題本 × 六種寬度／字級，五組全查） (15.2s)
+[AC#3] items=60 ui=4.1s total=184.1s realtime=false
+  ok  91 [webkit-iphone15] › e2e\placement.spec.ts:15:1 › AC#3 首次開啟 → 分級測驗 → 結果寫入設定 → 設定頁改級距（每題 3 秒模擬） (6.5s)
+  ok  92 [webkit-iphone15] › e2e\review-visual.spec.ts:42:1 › 複習：出題／答對／答錯／完成卡 (15.4s)
+  ok  93 [webkit-iphone15] › e2e\review-visual.spec.ts:66:1 › 沒有到期的單字：空狀態完成卡 (2.5s)
+  ok  94 [webkit-iphone15] › e2e\review-visual.spec.ts:72:1 › 再複習一次剛學的字：練習出題 (9.7s)
+  ok  95 [webkit-iphone15] › e2e\review-visual.spec.ts:83:3 › 複習答題後選項底色＝correct-bg／error-bg（light） (10.2s)
+  ok  96 [webkit-iphone15] › e2e\review-visual.spec.ts:83:3 › 複習答題後選項底色＝correct-bg／error-bg（dark） (9.7s)
+  ok  97 [webkit-iphone15] › e2e\review-visual.spec.ts:118:3 › 窄螢幕／特大字級 320-md：複習答錯、完成卡、空狀態 (15.9s)
+  ok  98 [webkit-iphone15] › e2e\review-visual.spec.ts:118:3 › 窄螢幕／特大字級 320-xl：複習答錯、完成卡、空狀態 (14.8s)
+  ok  99 [webkit-iphone15] › e2e\review-visual.spec.ts:118:3 › 窄螢幕／特大字級 375-xl：複習答錯、完成卡、空狀態 (16.7s)
+  ok 100 [webkit-iphone15] › e2e\shell.spec.ts:4:1 › 首次開啟到首頁、單字庫、設定，返回首頁 (1.5s)
+  ok 101 [webkit-iphone15] › e2e\smoke.spec.ts:4:1 › 首頁可開、service worker 註冊成功並完成 precache (6.9s)
+  ok 102 [webkit-iphone15] › e2e\smoke.spec.ts:14:1 › 未設定 Supabase 的建置：設定頁沒有登入入口（TASK-20 AC#3） (6.6s)
+  -  103 [webkit-iphone15] › e2e\smoke.spec.ts:22:1 › 離線重新載入仍可開
+  ok 104 [webkit-iphone15] › e2e\today.spec.ts:11:1 › AC#3：今天的學習——先複習到期的 8 個字，再接下一課，結算後首頁數字更新 (24.4s)
+  ok 105 [webkit-iphone15] › e2e\today.spec.ts:50:1 › AC#4：手機不能播音、不能辨識語音、沒有金鑰時仍能完成一課 (9.2s)
+  ok 106 [webkit-iphone15] › e2e\today.spec.ts:67:1 › 完成頁「再複習一次剛學的字」：練習本課 8 個字，不影響今天的複習數 (11.1s)
+  -  107 [webkit-iphone15] › e2e\tts-hq.spec.ts:46:1 › 高音質載入失敗：這一句改用手機內建聲音念、出現提示；說明改回「手機內建聲音」
+  -  108 [webkit-iphone15] › e2e\tts-hq.spec.ts:78:1 › 上次載入到一半分頁被關掉（崩潰旗標還在）：不再載入，直接用內建聲音並提示
+  ok 109 [webkit-iphone15] › e2e\tts-hq.spec.ts:95:1 › 設定：下載前告知 310MB；下載失敗顯示「下載中斷・重試」，發音仍是內建聲音 (2.0s)
+  -  110 [webkit-iphone15] › e2e\tts-hq.spec.ts:131:1 › Worker 檔載不到（404）：已選高音質按播放，仍以內建聲音念出並提示
+  ok 111 [webkit-iphone15] › e2e\tts-hq.spec.ts:150:1 › Worker 檔載不到（404）：設定頁下載顯示「下載中斷・重試」 (1.2s)
+  ok 112 [webkit-iphone15] › e2e\tts-hq.spec.ts:163:1 › 沒有 WebGPU 的手機：高音質列顯示不支援、發音選單只有內建聲音 (759ms)
+  ok 113 [webkit-iphone15] › e2e\visual-smoke.spec.ts:110:1 › s01 首頁：第一次開啟／預設／新課暫停／今天都完成／離線 (9.3s)
+  ok 114 [webkit-iphone15] › e2e\visual-smoke.spec.ts:154:1 › s02 課程地圖：預設／點開某一課 (2.3s)
+  ok 115 [webkit-iphone15] › e2e\visual-smoke.spec.ts:171:1 › s09 單字庫：空的／預設（5000 字）／熟悉度彈層 (1.3m)
+  ok 116 [webkit-iphone15] › e2e\visual-smoke.spec.ts:186:1 › s09 單字庫：上過課的字顯示小課第一義、收藏字顯示字典義 (3.1s)
+  ok 117 [webkit-iphone15] › e2e\visual-smoke.spec.ts:206:1 › s08 字典彈層：查到／已收藏＋提示／查無此字／疊在課程詳情上 (6.5s)
+  ok 118 [webkit-iphone15] › e2e\visual-smoke.spec.ts:236:1 › s11 設定：預設（上／下半）／每日新字數彈層／深色 (6.7s)
+  ok 119 [webkit-iphone15] › e2e\visual-smoke.spec.ts:251:1 › s13 清除資料確認：未勾選／已勾選 (2.4s)
+  ok 120 [webkit-iphone15] › e2e\visual-smoke.spec.ts:261:1 › 安裝卡：iOS 說明（webkit）／安裝鈕（chromium） (1.9s)
+  x  121 [webkit-iphone15] › e2e\visual-smoke.spec.ts:280:1 › s10 分級測驗：勾選中／結果（勾到假字）／選級距彈層／重測 (14.3s)
+  x  122 [webkit-iphone15] › e2e\visual-smoke.spec.ts:312:3 › 系統深色模式 › 首頁、課程、單字庫（深色） (0ms)
+  x  123 [webkit-iphone15] › e2e\visual-smoke.spec.ts:324:3 › 系統深色模式 › 分級測驗（深色）：勾選中、結果 (0ms)
+  1) [webkit-iphone15] › e2e\visual-smoke.spec.ts:280:1 › s10 分級測驗：勾選中／結果（勾到假字）／選級距彈層／重測 ───────────
+    Error: page.goto: Could not connect to server
+    Call log:
+      - navigating to "http://localhost:5328/placement", waiting until "load"
+      299 |   await expect(page.getByRole('dialog', { name: '目前級距' })).toBeVisible()
+      300 |   await check(page, info, 's10-levelsheet')
+    > 301 |   await page.goto('/placement')
+          |              ^
+      302 |   await answerAll(page, () => true)
+      303 |   await expect(
+      304 |     page.getByText('勾到 10 個假字，這次結果不太準。建議重新測驗，或自己選級距。'),
+        at C:\Projects\LinguaApp\.claude\worktrees\fix-stt-desktop\app\e2e\visual-smoke.spec.ts:301:14
+    Error Context: test-results\visual-smoke-s10-分級測驗：勾選中／結果（勾到假字）／選級距彈層／重測-webkit-iphone15\error-context.md
+  2) [webkit-iphone15] › e2e\visual-smoke.spec.ts:312:3 › 系統深色模式 › 首頁、課程、單字庫（深色） ───────────────────
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+  3) [webkit-iphone15] › e2e\visual-smoke.spec.ts:324:3 › 系統深色模式 › 分級測驗（深色）：勾選中、結果 ─────────────────
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+  3 failed
+    [webkit-iphone15] › e2e\visual-smoke.spec.ts:280:1 › s10 分級測驗：勾選中／結果（勾到假字）／選級距彈層／重測 ────────────
+    [webkit-iphone15] › e2e\visual-smoke.spec.ts:312:3 › 系統深色模式 › 首頁、課程、單字庫（深色） ────────────────────
+    [webkit-iphone15] › e2e\visual-smoke.spec.ts:324:3 › 系統深色模式 › 分級測驗（深色）：勾選中、結果 ──────────────────
+  8 skipped
+  112 passed (15.4m)

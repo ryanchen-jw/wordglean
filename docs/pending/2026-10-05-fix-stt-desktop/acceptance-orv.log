@@ -1,0 +1,30 @@
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] [PLUGIN_TIMINGS] JavaScript callbacks ran for 13.1s. The build took 3.4s. Callbacks such as `closeBundle` run after the build ends, so callback time can be more than build time.
+[WebServer] The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+[WebServer]   - plugin vite-plugin-pwa:build closeBundle (100%, 10.9s, 1 call)
+[WebServer] Additional callback time came from the callbacks below and from callbacks under 1s.
+[WebServer] 4 callbacks are listed without a time. Their calls overlapped, so the time inside one call includes work from other calls. To find their cost, profile the build with `node --cpu-prof`:
+[WebServer]   - plugin vite:asset load (607 calls)
+[WebServer]   - plugin vite:css transform (4 calls)
+[WebServer]   - plugin @tailwindcss/vite:generate:build transform (4 calls)
+[WebServer]   … and 1 more
+[WebServer] See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+[WebServer] 
+Running 12 tests using 1 worker
+  ok  1 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:76:1 › s06 寫：作答中／沒有金鑰（降級） (7.4s)
+  ok  2 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:86:1 › s06 寫：AI 批改結果／批改失敗（額度用完） (9.7s)
+  ok  3 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:111:1 › s11 設定 AI 區：預設／已連結／模型清單／解除確認／貼金鑰錯誤 (5.4s)
+  ok  4 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:157:3 › 320 特大字級 › s06 三種結果畫面：原題在最上方、捲動後內容不被截斷 (10.3s)
+  ok  5 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:198:3 › 320 特大字級 › s06 AI 批改／沒有金鑰、s11 已連結與貼金鑰錯誤不破版 (9.6s)
+  ok  6 [webkit-iphone15] › e2e\openrouter-visual.spec.ts:229:3 › 深色 › s06 AI 批改、s11 已連結（深色） (8.4s)
+  ok  7 [chromium-pixel7] › e2e\openrouter-visual.spec.ts:76:1 › s06 寫：作答中／沒有金鑰（降級） (4.5s)
+  ok  8 [chromium-pixel7] › e2e\openrouter-visual.spec.ts:86:1 › s06 寫：AI 批改結果／批改失敗（額度用完） (4.7s)
+  ok  9 [chromium-pixel7] › e2e\openrouter-visual.spec.ts:111:1 › s11 設定 AI 區：預設／已連結／模型清單／解除確認／貼金鑰錯誤 (3.6s)
+  ok 10 [chromium-pixel7] › e2e\openrouter-visual.spec.ts:157:3 › 320 特大字級 › s06 三種結果畫面：原題在最上方、捲動後內容不被截斷 (4.5s)
+  ok 11 [chromium-pixel7] › e2e\openrouter-visual.spec.ts:198:3 › 320 特大字級 › s06 AI 批改／沒有金鑰、s11 已連結與貼金鑰錯誤不破版 (5.0s)
+  ok 12 [chromium-pixel7] › e2e\openrouter-visual.spec.ts:229:3 › 深色 › s06 AI 批改、s11 已連結（深色） (3.6s)
+  12 passed (1.8m)

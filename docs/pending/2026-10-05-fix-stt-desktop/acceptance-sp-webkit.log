@@ -1,0 +1,41 @@
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Running 10 tests using 1 worker
+  x   1 [webkit-iphone15] › e2e-speech\lesson-order.spec.ts:8:1 › 能跟讀：一課含 2 題跟讀，依穿插順序走完到完成頁 (16.5s)
+  ok  2 [webkit-iphone15] › e2e-speech\regressions.spec.ts:8:1 › 送出後再唸一次再跳過：前進到下一題、✕ 仍可叫出離開確認框、沒有頁面錯誤 (9.4s)
+  ok  3 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:86:3 › s04 錄音流程：待錄／錄音中／轉文字中／確認／結果（錯、對）＋狀態色（light） (14.6s)
+  ok  4 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:86:3 › s04 錄音流程：待錄／錄音中／轉文字中／確認／結果（錯、對）＋狀態色（dark） (19.3s)
+  ok  5 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:156:1 › s04 未允許麥克風：外框與圖示 error、底 surface (10.4s)
+  ok  6 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:165:1 › s04 模型：下載前（D4）／下載中 42%／下載失敗／準備中 (13.3s)
+  ok  7 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:194:1 › s04 模型載入失敗：提出瀏覽器語音辨識後備＋同意框 (13.9s)
+  ok  8 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:214:3 › 窄螢幕／特大字級 320-md：待錄、下載中、確認、結果、未允許麥克風 (12.7s)
+  ok  9 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:214:3 › 窄螢幕／特大字級 320-xl：待錄、下載中、確認、結果、未允許麥克風 (10.2s)
+  ok 10 [webkit-iphone15] › e2e-speech\speech-visual.spec.ts:214:3 › 窄螢幕／特大字級 375-xl：待錄、下載中、確認、結果、未允許麥克風 (9.6s)
+  1) [webkit-iphone15] › e2e-speech\lesson-order.spec.ts:8:1 › 能跟讀：一課含 2 題跟讀，依穿插順序走完到完成頁 ───────────
+    Error: expect(locator).toBeVisible() failed
+    Locator: getByTestId('lesson-done')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+    Call log:
+      - Expect "toBeVisible" getByTestId('lesson-done') with timeout 5000ms
+      - waiting for getByTestId('lesson-done')
+      32 |     await answerStep(page, n)
+      33 |   }
+    > 34 |   await expect(page.getByTestId('lesson-done')).toBeVisible()
+         |                                                 ^
+      35 | })
+      36 |
+        at C:\Projects\LinguaApp\.claude\worktrees\fix-stt-desktop\app\e2e-speech\lesson-order.spec.ts:34:49
+    Error Context: test-results\speech\lesson-order-能跟讀：一課含-2-題跟讀，依穿插順序走完到完成頁-webkit-iphone15\error-context.md
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\speech\lesson-order-能跟讀：一課含-2-題跟讀，依穿插順序走完到完成頁-webkit-iphone15\trace.zip
+    Usage:
+        npx playwright show-trace test-results\speech\lesson-order-能跟讀：一課含-2-題跟讀，依穿插順序走完到完成頁-webkit-iphone15\trace.zip
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+  1 failed
+    [webkit-iphone15] › e2e-speech\lesson-order.spec.ts:8:1 › 能跟讀：一課含 2 題跟讀，依穿插順序走完到完成頁 ────────────
+  9 passed (2.7m)

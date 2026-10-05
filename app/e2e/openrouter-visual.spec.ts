@@ -131,8 +131,69 @@ test('s11 設定 AI 區：預設／已連結／模型清單／解除確認／貼
   await check(page, info, 's11-unlink-confirm')
 })
 
+// 結果畫面最上方是原題卡（創辦人試用 2026-10-05）；內容超過一屏時 main 捲到頂看得到整張原題、捲到底看得到最後一張卡
+async function scrollsWhole(page: Page, name: string, zh: string) {
+  const main = page.locator('main')
+  await expect(main.locator(':scope > :first-child')).toContainText(zh)
+  const r = await main.evaluate((m) => {
+    const box = () => m.getBoundingClientRect()
+    m.scrollTop = 0
+    const first = m.firstElementChild!.getBoundingClientRect()
+    const top = first.top >= box().top - 1
+    m.scrollTop = m.scrollHeight
+    const last = m.lastElementChild!.getBoundingClientRect()
+    const bottom = last.bottom <= box().bottom + 1
+    m.scrollTop = 0
+    return { top, bottom, scrolls: m.scrollHeight > m.clientHeight }
+  })
+  expect.soft(r.top, `${name}：捲到頂原題卡不被截斷`).toBe(true)
+  expect.soft(r.bottom, `${name}：捲到底最後一張卡不被截斷`).toBe(true)
+  return r.scrolls
+}
+
 test.describe('320 特大字級', () => {
   test.use({ viewport: { width: 320, height: 640 } })
+
+  test('s06 三種結果畫面：原題在最上方、捲動後內容不被截斷', async ({ page }, info) => {
+    test.setTimeout(120_000)
+    await page.addInitScript(() => localStorage.setItem('lg.textSize', 'xl'))
+    // 沒有金鑰：自評
+    await toWriting(page)
+    await submit(page)
+    await expect(page.getByText('跟參考答案比一比，意思一樣嗎？')).toBeVisible()
+    await check(page, info, '320-xl-s06-nokey-question', false)
+    const scrolled = [await scrollsWhole(page, 'nokey', '我有一個蘋果和一根香蕉。')]
+
+    // AI 批改結果（小課進度已存：重開接續在第一題寫作題）
+    fake.grades = [
+      gradeOk(AI_RESULT),
+      {
+        status: 429,
+        body: { error: { code: 429, message: 'Rate limit exceeded: free-models-per-day' } },
+      },
+    ]
+    await link(page)
+    await page.goto(`/lesson/${LESSON}`)
+    await submit(page)
+    await expect(page.getByText('建議寫法')).toBeVisible()
+    await check(page, info, '320-xl-s06-ai-question', false)
+    scrolled.push(await scrollsWhole(page, 'ai', '我有一個蘋果和一根香蕉。'))
+
+    // 批改失敗
+    await page.getByRole('button', { name: '我懂了，繼續' }).click()
+    for (let n = WRITE_STEPS[0] + 1; n < WRITE_STEPS[1]; n++) {
+      await answer(page, n)
+      await next(page)
+    }
+    await submit(page, 'The pen is on the desk.')
+    await expect(page.getByRole('alert')).toBeVisible()
+    await check(page, info, '320-xl-s06-fail-question', false)
+    scrolled.push(
+      await scrollsWhole(page, 'fail', '用 the 造一個句子，說說房間裡的一樣東西在哪裡。'),
+    )
+    // 320 特大字級下三種結果都超過一屏，捲動斷言才有意義
+    expect(scrolled).toEqual([true, true, true])
+  })
 
   test('s06 AI 批改／沒有金鑰、s11 已連結與貼金鑰錯誤不破版', async ({ page }, info) => {
     test.setTimeout(120_000)
