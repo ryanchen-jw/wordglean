@@ -1,9 +1,9 @@
 // 小課出題順序（TASK-18）：能力替代 → 題目轉步驟（queue.ts）→ 穿插
 import { applyCapabilities, type Capabilities, type CapabilityChange } from './capabilities'
-import type { ItemType, LessonItemsDoc } from './items'
-import { buildQueue, type Registry, type Skipped, type Step } from './queue'
+import type { LessonItemsDoc } from './items'
+import { buildQueue, type Registry, type Skipped, type Step, type StepType } from './queue'
 
-const SKILL_ORDER: readonly ItemType[][] = [
+const SKILL_ORDER: readonly StepType[][] = [
   ['listenType', 'listenChoice'],
   ['shadowing'],
   ['mcq', 'reading'],

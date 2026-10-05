@@ -34,7 +34,7 @@ beforeEach(async () => {
 })
 
 const progress = () => screen.getByRole('progressbar', { name: '作答進度' })
-const count = (n: number) => screen.findByText(`${n}／12`)
+const count = (n: number) => screen.findByText(`${n}／14`)
 const option = (name: string) => screen.getByRole('radio', { name })
 const cont = () => fireEvent.click(screen.getByRole('button', { name: '繼續' }))
 /** 錯題重做的題號（頁首；閱讀題卡內也有「n／m」，只看頁首） */
@@ -54,8 +54,27 @@ async function answerCurrent(n: number, wrong = false) {
   await answerAt(n - 1, wrong)
 }
 
-/** 作答第 i 步（從 0 起；錯題重做時用原本的步驟位置） */
+const sense = (g: string) => g.split('；')[0].replace(/（[^）]*）/g, '')
+const cardsOf = doc.items.filter((it) => it.type === 'wordCard')
+
+/** 配完一題配對（創辦人 2026-10-05 裁示一）；wrong＝先配錯一次 */
+async function matchAll(cards: typeof cardsOf, wrong = false) {
+  await screen.findByText('把英文和中文配成一對')
+  const btn = (name: string) => fireEvent.click(screen.getByRole('button', { name }))
+  if (wrong) {
+    btn(cards[0].word)
+    btn(sense(cards[1].glossZh))
+  }
+  for (const c of cards) {
+    btn(c.word)
+    btn(sense(c.glossZh))
+  }
+  await screen.findByRole('button', { name: '繼續' })
+}
+
+/** 作答第 i 步（從 0 起；錯題重做時用原本的步驟位置）；第 5、10 步是配對（每 4 張單字卡後） */
 async function answerAt(i: number, wrong = false) {
+  if (i === 4 || i === 9) return matchAll(cardsOf.slice(i === 4 ? 0 : 4, i === 4 ? 4 : 8), wrong)
   const steps: { pick: string[]; check: boolean }[] = [
     ...doc.items.flatMap((it) => {
       // 選項只顯示第一義（全形分號前一段、去括號註記）
@@ -80,21 +99,21 @@ async function answerAt(i: number, wrong = false) {
       return []
     }),
   ]
-  const s = steps[i]
+  const s = steps[i - (i > 9 ? 2 : i > 4 ? 1 : 0)]
   fireEvent.click(option(s.pick[wrong ? 1 : 0]))
   if (s.check) fireEvent.click(screen.getByRole('button', { name: '檢查' }))
   await screen.findByRole('status')
 }
 
 describe('小課畫面（AC#2 單元層）', () => {
-  it('單字卡出題：英文字、四個中文釋義、例句提示鈕、進度 1／12', async () => {
+  it('單字卡出題：英文字、四個中文釋義、例句提示鈕、進度 1／14', async () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
     expect(await screen.findByText('the')).toHaveAttribute('lang', 'en')
     expect(screen.getByText('選出這個字的意思')).toBeInTheDocument()
     expect(screen.getAllByRole('radio')).toHaveLength(4)
     expect(screen.getByRole('button', { name: '看例句提示' })).toBeInTheDocument()
     expect(progress()).toHaveAttribute('aria-valuenow', '1')
-    expect(progress()).toHaveAttribute('aria-valuemax', '12')
+    expect(progress()).toHaveAttribute('aria-valuemax', '14')
   })
 
   it('單字卡答對：點選即判定，回饋「正確：釋義」＋例句＋中譯，其他選項停用', async () => {
@@ -147,11 +166,11 @@ describe('小課畫面（AC#2 單元層）', () => {
 
   it('選擇題：選了才能檢查；答錯回饋「答案是 A：of」＋兩個選項的釋義', async () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
-    for (let n = 1; n <= 8; n++) {
+    for (let n = 1; n <= 10; n++) {
       await answerCurrent(n)
       cont()
     }
-    await count(9)
+    await count(11)
     expect(screen.getByText('選出最適合的字')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: '檢查' })).toBeDisabled()
     fireEvent.click(option('in'))
@@ -164,11 +183,11 @@ describe('小課畫面（AC#2 單元層）', () => {
 
   it('閱讀理解：題號 1／2、看中文翻譯可展開收起、答錯回饋含正解', async () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
-    for (let n = 1; n <= 10; n++) {
+    for (let n = 1; n <= 12; n++) {
       await answerCurrent(n)
       cont()
     }
-    await count(11)
+    await count(13)
     expect(screen.getByText('閱讀理解')).toBeInTheDocument()
     // 題號與題目以全形空白分隔；toHaveTextContent 會把它正規化成一般空白
     const question = screen.getByTestId('reading-question')
@@ -183,15 +202,15 @@ describe('小課畫面（AC#2 單元層）', () => {
     fireEvent.click(screen.getByRole('button', { name: '檢查' }))
     expect(await screen.findByRole('status')).toHaveTextContent('答案是 B：兩個')
     cont()
-    await count(12)
+    await count(14)
     expect(screen.getByTestId('reading-question')).toHaveTextContent('2／2 Amy 的妹妹早上在哪裡？')
   })
 
-  it('全部做完 → 完成頁：單元名、新字 8 個、12 題答對 10 題、答錯的單字卡 1 題進複習；onSettle 收到摘要', async () => {
+  it('全部做完 → 完成頁：單元名、新字 8 個、14 題（含配對 2 題）答對 12 題、答錯的單字卡 1 題進複習；onSettle 收到摘要', async () => {
     const onSettle = vi.fn()
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />)
-    for (let n = 1; n <= 12; n++) {
-      await answerCurrent(n, n === 2 || n === 12)
+    for (let n = 1; n <= 14; n++) {
+      await answerCurrent(n, n === 2 || n === 14)
       cont()
     }
     // 錯題重做（創辦人試用 2026-10-04 ⑤）：兩題都做對才完成
@@ -199,15 +218,15 @@ describe('小課畫面（AC#2 單元層）', () => {
     await answerAt(1)
     cont()
     await retryCount(2, 2)
-    await answerAt(11)
+    await answerAt(13)
     cont()
     const done = await screen.findByTestId('lesson-done')
     expect(within(done).getByRole('heading', { level: 1 })).toHaveTextContent('這一課完成了')
     expect(await within(done).findByText('基礎常用字（一）・第 1 課')).toBeInTheDocument()
     expect(done).toHaveTextContent('新學的 8 個字已加入單字庫，明天開始複習')
     expect(done).toHaveTextContent('the・be・and・of・a・in・to・have')
-    expect(done).toHaveTextContent('12 題')
-    expect(done).toHaveTextContent('答對 10 題')
+    expect(done).toHaveTextContent('14 題')
+    expect(done).toHaveTextContent('答對 12 題')
     expect(done).toHaveTextContent('答錯的 1 題已排進明天的複習')
     expect(onSettle).toHaveBeenCalledOnce()
     expect(await db.courseProgress.get(LESSON)).toBeDefined()
@@ -218,7 +237,7 @@ describe('小課畫面（AC#2 單元層）', () => {
     expect(location.pathname + location.search).toBe(`/review?lesson=${LESSON}`)
   })
 
-  it('TTS／STT／金鑰皆不可用（AC#4）：聽說題略過，讀類 12 題照常出', async () => {
+  it('TTS／STT／金鑰皆不可用（AC#4）：聽說題略過，讀類 12 題（＋配對 2 題）照常出', async () => {
     render(
       <LessonScreen
         lessonId={LESSON}
@@ -229,7 +248,7 @@ describe('小課畫面（AC#2 單元層）', () => {
     expect(await count(1)).toBeInTheDocument()
   })
 
-  it('能播音（TASK-13）：聽類兩題進佇列，跟讀換成聽音打字（語音辨識未接上），穿插在第 9 題聽音打字、第 11 題聽音選答，一課 16 步', async () => {
+  it('能播音（TASK-13）：聽類兩題進佇列，跟讀換成聽音打字（語音辨識未接上），穿插在第 11 題聽音打字、第 13 題聽音選答，一課 18 步（含配對 2 題）', async () => {
     render(
       <LessonScreen
         lessonId={LESSON}
@@ -237,27 +256,28 @@ describe('小課畫面（AC#2 單元層）', () => {
         capabilities={{ tts: true, stt: false, llmKey: false }}
       />,
     )
-    expect(await screen.findByText('1／16')).toBeInTheDocument()
-    const glosses = doc.items.flatMap((it) =>
-      it.type === 'wordCard' ? [it.glossZh.split('；')[0].replace(/（[^）]*）/g, '')] : [],
-    )
-    for (const [i, gloss] of glosses.entries()) {
-      await screen.findByText(`${i + 1}／16`)
-      fireEvent.click(option(gloss))
+    expect(await screen.findByText('1／18')).toBeInTheDocument()
+    for (const [i, c] of cardsOf.entries()) {
+      await screen.findByText(`${i + 1 + (i >= 4 ? 1 : 0)}／18`)
+      fireEvent.click(option(sense(c.glossZh)))
       await screen.findByRole('status')
       cont()
+      if (i === 3 || i === 7) {
+        await matchAll(cardsOf.slice(i - 3, i + 1))
+        cont()
+      }
     }
-    expect(await screen.findByText('9／16')).toBeInTheDocument()
+    expect(await screen.findByText('11／18')).toBeInTheDocument()
     expect(screen.getByText('聽音打字')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: '聽不出來' }))
     cont()
-    expect(await screen.findByText('10／16')).toBeInTheDocument()
+    expect(await screen.findByText('12／18')).toBeInTheDocument()
     expect(screen.getByText('選出最適合的字')).toBeInTheDocument()
     fireEvent.click(option('of'))
     fireEvent.click(screen.getByRole('button', { name: '檢查' }))
     await screen.findByRole('status')
     cont()
-    expect(await screen.findByText('11／16')).toBeInTheDocument()
+    expect(await screen.findByText('13／18')).toBeInTheDocument()
     expect(screen.getByText('聽音選答')).toBeInTheDocument()
   })
 })
@@ -274,13 +294,14 @@ describe('音效（創辦人試用 2026-10-04 ④）', () => {
 
   it('做完一課：完成音效一聲', async () => {
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
-    for (let n = 1; n <= 12; n++) {
+    for (let n = 1; n <= 14; n++) {
       await answerCurrent(n)
       cont()
     }
     await screen.findByTestId('lesson-done')
     const calls = vi.mocked(playSfx).mock.calls
-    expect(calls).toHaveLength(13)
+    // 12 題各一聲＋配對 2 題每對各一聲（4×2）＋完成
+    expect(calls).toHaveLength(21)
     expect(calls.at(-1)).toEqual(['complete'])
   })
 })
@@ -294,7 +315,7 @@ describe('離開與接續（s12）', () => {
     fireEvent.click(screen.getByRole('button', { name: '離開' }))
     const dialog = await screen.findByRole('alertdialog')
     expect(dialog).toHaveTextContent('要離開這一課嗎？')
-    expect(dialog).toHaveTextContent('已完成 1／12 題。進度會保留，下次從第 2 題繼續。')
+    expect(dialog).toHaveTextContent('已完成 1／14 題。進度會保留，下次從第 2 題繼續。')
     expect(within(dialog).getByRole('button', { name: '繼續上課' })).toHaveFocus()
     fireEvent.click(within(dialog).getByRole('button', { name: '繼續上課' }))
     expect(screen.queryByRole('alertdialog')).toBeNull()
@@ -314,7 +335,7 @@ describe('離開與接續（s12）', () => {
     first.unmount()
 
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
-    expect(await screen.findByText('3／12')).toBeInTheDocument()
+    expect(await screen.findByText('3／14')).toBeInTheDocument()
     expect(screen.getByText('and')).toBeInTheDocument()
   })
 })
@@ -323,11 +344,11 @@ describe('最後一題答完、沒按繼續就按 ✕（走查 P2）', () => {
   it('確認框說明會記為完成；按離開即結算（記完成、清進度、呼叫 onSettle）', async () => {
     const onSettle = vi.fn()
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />)
-    for (let n = 1; n <= 11; n++) {
+    for (let n = 1; n <= 13; n++) {
       await answerCurrent(n)
       cont()
     }
-    await answerCurrent(12)
+    await answerCurrent(14)
     fireEvent.click(screen.getByRole('button', { name: '離開' }))
     const dialog = await screen.findByRole('alertdialog')
     expect(dialog).toHaveTextContent('這一課已經做完了，離開後會記為完成。')
@@ -340,8 +361,8 @@ describe('最後一題答完、沒按繼續就按 ✕（走查 P2）', () => {
 
 describe('錯題重做（創辦人試用 2026-10-04 ⑤）', () => {
   async function mainRoundWith2Wrong() {
-    for (let n = 1; n <= 12; n++) {
-      await answerCurrent(n, n === 2 || n === 12)
+    for (let n = 1; n <= 14; n++) {
+      await answerCurrent(n, n === 2 || n === 14)
       cont()
     }
     await retryCount(1, 2)
@@ -359,20 +380,20 @@ describe('錯題重做（創辦人試用 2026-10-04 ⑤）', () => {
     await answerAt(1)
     cont()
     await retryCount(2, 2)
-    await answerAt(11, true)
+    await answerAt(13, true)
     cont()
     // 第 2 輪：只剩仍錯的那題
     await retryCount(1, 1)
     expect(screen.getByTestId('reading-question')).toHaveTextContent('Amy 的妹妹早上在哪裡？')
-    await answerAt(11)
+    await answerAt(13)
     cont()
 
     const done = await screen.findByTestId('lesson-done')
-    expect(done).toHaveTextContent('答對 10 題')
+    expect(done).toHaveTextContent('答對 12 題')
     expect(done).toHaveTextContent('答錯的 1 題已排進明天的複習')
     expect(await db.reviewLogs.count()).toBe(logs)
     expect(onSettle).toHaveBeenCalledExactlyOnceWith(
-      expect.objectContaining({ correct: 10, wrongKeys: ['a1-u01-l01-q02', 'a1-u01-l01-q15#1'] }),
+      expect.objectContaining({ correct: 12, wrongKeys: ['a1-u01-l01-q02', 'a1-u01-l01-q15#1'] }),
     )
   })
 
@@ -381,11 +402,11 @@ describe('錯題重做（創辦人試用 2026-10-04 ⑤）', () => {
     const first = render(
       <LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />,
     )
-    for (let n = 1; n <= 11; n++) {
+    for (let n = 1; n <= 13; n++) {
       await answerCurrent(n, n === 2)
       cont()
     }
-    await answerCurrent(12)
+    await answerCurrent(14)
     fireEvent.click(screen.getByRole('button', { name: '離開' }))
     const dialog = await screen.findByRole('alertdialog')
     expect(dialog).toHaveTextContent('還有 1 題錯題要再練一次。進度會保留，下次接著練。')
@@ -429,7 +450,7 @@ describe('作答存檔失敗（非安全來源 randomUUID 事故）', () => {
     await vi.waitFor(() => expect(errors).toHaveBeenCalled())
     await act(async () => cont())
     expect(await screen.findByRole('alert')).toHaveTextContent('出了點問題，請再試一次。')
-    expect(screen.getByText('1／12')).toBeInTheDocument()
+    expect(screen.getByText('1／14')).toBeInTheDocument()
     tx.mockRestore()
     await act(async () => cont())
     await count(2)
@@ -462,15 +483,15 @@ describe('小課的可點英文字（G2）', () => {
 
   it('選擇題：作答前選項是單選、字不可點；檢查後選項的字可點', async () => {
     renderWithDict()
-    for (let n = 1; n <= 8; n++) {
+    for (let n = 1; n <= 10; n++) {
       await answerCurrent(n)
       cont()
     }
-    await count(9)
+    await count(11)
     const mcq = doc.items.find((it) => it.type === 'mcq')!
     const answerText = mcq.type === 'mcq' ? mcq.options[mcq.answer] : ''
     expect(screen.queryAllByRole('button', { name: answerText })).toEqual([])
-    await answerCurrent(9)
+    await answerCurrent(11)
     expect(screen.getAllByRole('button', { name: answerText }).length).toBeGreaterThan(0)
   })
 })

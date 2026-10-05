@@ -2,7 +2,17 @@
 // 時間以 page.clock 固定：第一天上完 a1-u01-l01，第二天早上開 App（樣本課 fixture，見 playwright.config.ts）
 import { expect, test } from '@playwright/test'
 import { LESSON } from './lesson.js'
-import { DAY1, GLOSS, learnThenNextDay, NEXT, playLesson, REVIEW_ORDER } from './today.js'
+import {
+  DAY1,
+  GLOSS,
+  learnThenNextDay,
+  NEXT,
+  playLesson,
+  REVIEW_ORDER,
+  REVIEW_TOTAL,
+  reviewMatching,
+  reviewPos,
+} from './today.js'
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('lg.installDismissed', '1'))
@@ -27,11 +37,14 @@ test('AC#3：今天的學習——先複習到期的 8 個字，再接下一課�
   await page.getByRole('button', { name: '開始今天的學習' }).click()
   await expect(page).toHaveURL(/\/review\?flow=today$/)
   for (const [i, word] of REVIEW_ORDER.entries()) {
-    await expect(page.getByText(`複習 ${i + 1}／8`, { exact: true })).toBeVisible()
+    await expect(
+      page.getByText(`複習 ${reviewPos(i)}／${REVIEW_TOTAL}`, { exact: true }),
+    ).toBeVisible()
     await expect(page.getByTestId('review-screen').locator('[lang="en"]').first()).toHaveText(word)
     await page.getByRole('radio', { name: GLOSS.get(word)!, exact: true }).click()
     await expect(page.getByRole('status')).toContainText('正確')
     await page.getByRole('button', { name: '繼續' }).click()
+    await reviewMatching(page, i)
   }
 
   // 複習完直接接下一課
@@ -58,10 +71,11 @@ test('AC#4：手機不能播音、不能辨識語音、沒有金鑰時仍能完�
   await expect(page.getByRole('button', { name: '發音' })).toHaveCount(0)
   await expect(page.getByRole('progressbar', { name: '作答進度' })).toHaveAttribute(
     'aria-valuemax',
-    '14',
+    '16',
   )
   await playLesson(page, LESSON)
-  await expect(page.getByTestId('lesson-done')).toContainText('答對 14 題')
+  // 讀寫 14 題＋配對 2 題（創辦人 2026-10-05 裁示一）
+  await expect(page.getByTestId('lesson-done')).toContainText('答對 16 題')
 })
 
 test('完成頁「再複習一次剛學的字」：練習本課 8 個字，不影響今天的複習數', async ({ page }) => {

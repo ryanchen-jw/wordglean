@@ -10,6 +10,8 @@ import { t } from '../../i18n/t'
 import type { LessonItem, LessonItemsDoc } from '../../lesson/items'
 import { loadLessonItems } from '../../lesson/load'
 import { buildLessonQueue } from '../../lesson/assemble'
+import { buildDemoQueue } from '../../lesson/demo'
+import { withMatching } from '../../lesson/matching'
 import { detectCapabilities, type Capabilities } from '../../lesson/capabilities'
 import {
   createRegistry,
@@ -31,6 +33,7 @@ import {
   answerRetry,
   answerStep,
   continueRun,
+  practiceSession,
   settleLesson,
   startOrResume,
   type SettleSummary,
@@ -62,6 +65,8 @@ type Props = {
   onSettle?: (summary: SettleSummary) => void
   /** 寫作題批改（TASK-15）；預設瀏覽器直呼 OpenRouter */
   grade?: GradeFn
+  /** 示範課（創辦人 2026-10-05 裁示二）：lessonId＝題目來源課；練習模式、不寫任何資料；startType＝從該題型開始 */
+  demo?: { startType: string | null }
 }
 
 type Phase =
@@ -78,6 +83,7 @@ export function LessonScreen({
   capabilities,
   onSettle,
   grade,
+  demo,
 }: Props) {
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
   const [leaving, setLeaving] = useState(false)
@@ -93,6 +99,18 @@ export function LessonScreen({
   const link = useLiveQuery(() => getLink(db), [db])
   const writingEnv = useContext(WritingEnvContext)
   const speech = useSpeech()
+  // 示範課只在記憶體裡作答；一般小課寫資料庫（FSRS、進度、完成課）
+  const session = demo
+    ? practiceSession
+    : {
+        start: (id: string, steps: readonly Step[], nowMs: number) =>
+          startOrResume(db, id, steps, nowMs).then((r) => r.run),
+        answer: answerStep.bind(null, db),
+        answerRetry: answerRetry.bind(null, db),
+        continueRun: continueRun.bind(null, db),
+        settle: (run: LessonRun, steps: readonly Step[]) =>
+          settleLesson(db, run, steps, { nowMs: now(), onSettle }),
+      }
 
   // 這一課有跟讀題：整課期間留著語音辨識 Worker，離開小課才釋放（分時載入，TASK-14）
   const hasShadowing = phase.kind === 'play' && phase.steps.some((s) => s.type === 'shadowing')
@@ -100,16 +118,17 @@ export function LessonScreen({
 
   const finish = useCallback(
     async (run: LessonRun, steps: Step[]) => {
-      const summary = await settleLesson(db, run, steps, { nowMs: now(), onSettle })
+      const summary = await session.settle(run, steps)
       playSfx('complete')
       const wordKeys = new Set(steps.filter((s) => s.srsWord !== null).map((s) => s.key))
       setPhase({
         kind: 'done',
         summary,
-        wrongScheduled: summary.wrongKeys.filter((k) => wordKeys.has(k)).length,
+        wrongScheduled: demo ? 0 : summary.wrongKeys.filter((k) => wordKeys.has(k)).length,
       })
     },
-    [db, now, onSettle],
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- session 由 db、now、onSettle、demo 決定
+    [db, now, onSettle, demo],
   )
 
   useEffect(() => {
@@ -119,21 +138,25 @@ export function LessonScreen({
       if (!doc) throw new Error(`沒有這一課的題目：${lessonId}`)
       // 有無 OpenRouter 金鑰（TASK-15）：沒有時寫作題依替代規則改自評（selfCheck）
       const hasKey = (await getLink(db)) !== null
+      const caps = capabilities ?? detectCapabilities(ttsAvailable, speech.sttUsable, () => hasKey)
+      // 示範課：跟讀一律出（不換成聽音打字），不能錄音時由跟讀畫面引導或跳過
       const {
         steps,
         skipped,
         changes,
         doc: applied,
-      } = buildLessonQueue(
-        doc,
-        registry,
-        capabilities ?? detectCapabilities(ttsAvailable, speech.sttUsable, () => hasKey),
-      )
+      } = demo
+        ? buildDemoQueue(doc, registry, { ...caps, stt: true }, demo.startType)
+        : (() => {
+            const built = buildLessonQueue(doc, registry, caps)
+            // 每 4 張單字卡後插一題配對（創辦人 2026-10-05 裁示一）
+            return { ...built, steps: withMatching(built.steps, built.doc) }
+          })()
       // 能力不足的替代、未支援的題型（聽說寫，TASK-13～15）略過；記錄供除錯
       if (changes.length) console.info('[lesson] 能力替代', changes)
       if (skipped.length) console.info('[lesson] 略過的題目', skipped)
       if (steps.length === 0) throw new Error(`這一課沒有可作答的題目：${lessonId}`)
-      const { run } = await startOrResume(db, lessonId, steps, now())
+      const run = await session.start(lessonId, steps, now())
       if (!alive) return
       if (activeKey(run) === null) await finish(run, steps)
       // 題目取替代後的版本（帶 selfCheck 標記、換過的題型）
@@ -212,17 +235,19 @@ export function LessonScreen({
     correct,
     usedHint,
     skipped,
+    silent,
   }: {
     correct: boolean
     usedHint: boolean
     skipped?: boolean
+    silent?: boolean
   }) => {
     const at = now()
-    playSfx(correct ? 'correct' : 'wrong')
+    if (!silent) playSfx(correct ? 'correct' : 'wrong')
     const save = () =>
       (retrying
-        ? answerRetry(db, run, step, { correct, skipped }, at)
-        : answerStep(db, run, step, { correct, usedHint, elapsedMs: at - shownAt.current }, at)
+        ? session.answerRetry(run, step, { correct, skipped }, at)
+        : session.answer(run, step, { correct, usedHint, elapsedMs: at - shownAt.current }, at)
       ).then((next) => {
         setPhase({ ...phase, run: next })
         return next
@@ -244,7 +269,7 @@ export function LessonScreen({
         saved = await retrySave.current!()
         saving.current = Promise.resolve(saved)
       }
-      const next = await continueRun(db, saved, now())
+      const next = await session.continueRun(saved, now())
       if (activeKey(next) === null) await finish(next, steps)
       else setPhase({ ...phase, run: next })
       saving.current = null
@@ -269,7 +294,9 @@ export function LessonScreen({
   const retryAt = retryProgress(run)
   const onLeave = async () => {
     await saving.current
-    setLeaving(true)
+    // 示範課不存進度也不記完成：直接離開，不問
+    if (demo) goBack()
+    else setLeaving(true)
   }
   const leave = async () => {
     if (allAnswered) {
@@ -317,6 +344,7 @@ export function LessonScreen({
           onAnswer={onAnswer}
           onContinue={onContinue}
           onSpeech={({ recognized, submitted }) => {
+            if (demo) return
             const it = items.get(step.itemId)!
             addSpeechCorrection(
               db,

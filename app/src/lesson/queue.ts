@@ -19,16 +19,27 @@ export interface Choice {
   answer: number
 }
 
+/** 步驟題型：題目檔的題型＋App 端組的配對題（創辦人 2026-10-05 裁示一，lesson/matching.ts） */
+export type StepType = ItemType | 'matching'
+
+/** 配對題的一對：英文字與中文第一義 */
+export interface MatchPair {
+  word: string
+  gloss: string
+}
+
 /** 一個作答步驟；進度條與完成頁的題數都以步驟計（閱讀每小題一步） */
 export interface Step {
   key: string
   itemId: string
-  type: ItemType
+  type: StepType
   /** 作答後寫入 FSRS 的字（新字同時入池）；null＝只計分（D2：只有單字卡寫入） */
   srsWord: string | null
   choice?: Choice
   /** 閱讀小題索引 */
   questionIndex?: number
+  /** 配對題的四對（英文順序）；itemId＝第一個字的單字卡 */
+  pairs?: MatchPair[]
 }
 
 export interface ItemTypeDef<I extends LessonItem = LessonItem> {
@@ -54,7 +65,7 @@ export function createRegistry(defs: readonly ItemTypeDef[]): Registry {
 }
 
 // FNV-1a 32 位元；只用來讓同一題的選項順序固定（續作時不變），不求亂度品質
-function hash(s: string): number {
+export function hash(s: string): number {
   let h = 0x811c9dc5
   for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 0x01000193)
   return h >>> 0

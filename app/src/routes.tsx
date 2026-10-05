@@ -17,6 +17,7 @@ import { PlacementScreen } from './screens/placement/PlacementScreen'
 import { SettingsScreen } from './screens/settings/SettingsScreen'
 import { StubScreen } from './screens/StubScreen'
 import { WordsScreen } from './screens/words/WordsScreen'
+import { DEMO_SOURCE } from './lesson/demo'
 
 // 尚未開放：模型下載（TASK-13／14）
 const STUB_PATHS = /^\/models$/
@@ -52,6 +53,15 @@ export function AppRoutes() {
   if (pathname === '/about') return <AboutScreen />
   if (pathname === '/about/privacy') return <PrivacyScreen />
   if (pathname === '/about/licenses') return <LicensesScreen />
+  // 示範課（創辦人 2026-10-05 裁示二）：所有題型一課走完、練習模式；不接結算同步，App 內沒有入口
+  if (pathname === '/lesson/demo')
+    return (
+      <LessonScreen
+        key={location.search}
+        lessonId={DEMO_SOURCE}
+        demo={{ startType: new URLSearchParams(location.search).get('type') }}
+      />
+    )
   const lesson = LESSON_PATH.exec(pathname)
   if (lesson) return <LessonScreen key={lesson[1]} lessonId={lesson[1]} onSettle={onLessonSettle} />
   if (pathname === '/review')

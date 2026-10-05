@@ -1,8 +1,9 @@
-// 題型畫面登記表：與引擎的題型登記（lesson/queue.ts READ／LISTEN／SPEAK／WRITE_TYPES）成對
+// 題型畫面登記表：與引擎的題型登記（lesson/queue.ts READ／LISTEN／SPEAK／WRITE_TYPES）成對；配對題由 lesson/matching.ts 組
 import type { ComponentType } from 'react'
-import type { ItemType } from '../../lesson/items'
+import type { StepType } from '../../lesson/queue'
 import { ListenChoiceView } from './ListenChoiceView'
 import { ListenTypeView } from './ListenTypeView'
+import { MatchingView } from './MatchingView'
 import { McqView } from './McqView'
 import { ReadingView } from './ReadingView'
 import { ShadowingView } from './ShadowingView'
@@ -10,7 +11,7 @@ import type { QuestionProps } from './types'
 import { WordCardView } from './WordCardView'
 import { WritingView } from './WritingView'
 
-export const QUESTION_VIEWS: Partial<Record<ItemType, ComponentType<QuestionProps>>> = {
+export const QUESTION_VIEWS: Partial<Record<StepType, ComponentType<QuestionProps>>> = {
   wordCard: WordCardView as ComponentType<QuestionProps>,
   mcq: McqView as ComponentType<QuestionProps>,
   reading: ReadingView as ComponentType<QuestionProps>,
@@ -19,4 +20,5 @@ export const QUESTION_VIEWS: Partial<Record<ItemType, ComponentType<QuestionProp
   shadowing: ShadowingView as ComponentType<QuestionProps>,
   translate: WritingView as ComponentType<QuestionProps>,
   makeSentence: WritingView as ComponentType<QuestionProps>,
+  matching: MatchingView,
 }

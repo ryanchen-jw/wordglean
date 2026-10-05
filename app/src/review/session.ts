@@ -4,6 +4,7 @@ import type { LexIndex } from '../dict/lexicon'
 import { recordReview } from '../data/repo'
 import { gradeFor, type AnswerInput } from '../lesson/grade'
 import type { LessonItemsDoc, WordCardItem } from '../lesson/items'
+import { matchingGroups, matchingStep } from '../lesson/matching'
 import { lessonWordCardType, type Step } from '../lesson/queue'
 import type { Grade } from '../srs/scheduler'
 import { favoriteCard } from './favoriteCard'
@@ -56,6 +57,27 @@ export async function loadReviewCards(
     else missing.push(wordId)
   }
   return { cards, missing }
+}
+
+/** 複習的一題：字卡，或每 4 張字卡後的配對（創辦人 2026-10-05 裁示一；不寫 FSRS） */
+export type ReviewEntry = { kind: 'card'; card: ReviewCard } | { kind: 'matching'; step: Step }
+
+/** 每 4 張字卡後插一題配對（用那 4 個字）；最後不足 4 張不出 */
+export function withReviewMatching(cards: readonly ReviewCard[]): ReviewEntry[] {
+  const after = new Map(
+    matchingGroups(cards.length, { fill: false }).map((g, k) => [
+      g.after,
+      matchingStep(
+        `matching#${k + 1}`,
+        g.members.map((m) => cards[m].item),
+      ),
+    ]),
+  )
+  return cards.flatMap((card, i): ReviewEntry[] => {
+    const step = after.get(i)
+    const entry: ReviewEntry = { kind: 'card', card }
+    return step ? [entry, { kind: 'matching', step }] : [entry]
+  })
 }
 
 /** 本課的單字卡（完成頁「再複習一次剛學的字」） */

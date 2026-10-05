@@ -15,6 +15,8 @@ interface Pick {
   shadowing?: string
   /** 寫作題（TASK-15，e2e 沒有金鑰→對照參考答案自評）：要寫的句子（參考答案第一句） */
   write?: string
+  /** 配對題（創辦人 2026-10-05 裁示一）：四對 [英文, 中文第一義] */
+  match?: [string, string][]
 }
 
 export const WRONG_TYPED = 'x'
@@ -41,6 +43,8 @@ export const readFixture = (lessonId: string) =>
     ),
   ) as FixtureDoc
 
+const sense = (g: string) => g.split('；')[0].replace(/（[^）]*）/g, '')
+
 const rest = (opts: string[], answer: number) => [
   opts[answer],
   ...opts.filter((_, i) => i !== answer),
@@ -57,14 +61,7 @@ export const stepsOf = (lessonId: string, { tts = true, stt = false } = {}): Pic
   const toSteps = (it: FixtureDoc['items'][number]): Pick[] => {
     if (it.type === 'wordCard')
       // 選項只顯示第一義（全形分號前一段、去括號註記）
-      return [
-        {
-          options: [it.glossZh!, ...it.distractorsZh!].map((g) =>
-            g.split('；')[0].replace(/（[^）]*）/g, ''),
-          ),
-          check: false,
-        },
-      ]
+      return [{ options: [it.glossZh!, ...it.distractorsZh!].map(sense), check: false }]
     if (it.type === 'mcq' || it.type === 'listenChoice')
       return [{ options: rest(it.options!, it.answer!), check: true }]
     if (it.type === 'listenType') return [{ options: [], check: true, typed: it.sentenceEn! }]
@@ -81,7 +78,19 @@ export const stepsOf = (lessonId: string, { tts = true, stt = false } = {}): Pic
     ['mcq', 'reading'],
     ['translate', 'makeSentence'],
   ].map((types) => items.filter((it) => types.includes(it.type)))
-  const out = items.filter((it) => it.type === 'wordCard').flatMap(toSteps)
+  // 單字卡在前；每 4 張後一題配對（最後不足 4 張用前面的字補滿；全課不足 4 張不出）
+  const cards = items.filter((it) => it.type === 'wordCard')
+  const out: Pick[] = []
+  const matchOf = (group: typeof cards): Pick => ({
+    options: [],
+    check: false,
+    match: group.map((c) => [c.word!, sense(c.glossZh!)]),
+  })
+  for (const [i, c] of cards.entries()) {
+    out.push(...toSteps(c))
+    if ((i + 1) % 4 === 0) out.push(matchOf(cards.slice(i - 3, i + 1)))
+    else if (i === cards.length - 1 && cards.length > 4) out.push(matchOf(cards.slice(-4)))
+  }
   for (let round = 0; groups.some((g) => round < g.length); round++)
     for (const g of groups) if (round < g.length) out.push(...toSteps(g[round]))
   return out
@@ -131,6 +140,10 @@ export async function answerRetry(
 }
 
 export async function answerPick(page: Page, s: Pick, wrong: boolean) {
+  if (s.match !== undefined) {
+    await answerMatching(page, s.match, wrong)
+    return
+  }
   if (s.write !== undefined) {
     await page.getByRole('textbox', { name: '你的句子' }).fill(s.write)
     await page.getByRole('button', { name: '送出批改' }).click()
@@ -160,4 +173,23 @@ export async function playTo(page: Page, n: number) {
     await next(page)
   }
   await count(page, n)
+}
+
+/** 配對題：依序把四對配好；wrong＝先把第一個英文配到第二個中文（配錯一次＝這題答錯）。配完出現「繼續」 */
+export async function answerMatching(page: Page, pairs: [string, string][], wrong = false) {
+  await expect(page.getByText('把英文和中文配成一對')).toBeVisible()
+  const tile = (name: string) => page.getByRole('button', { name, exact: true })
+  // 英文依顯示大小寫（例：i → I），不分大小寫找（題庫字只有字母）
+  const enTile = (word: string) => page.getByRole('button', { name: new RegExp(`^${word}$`, 'i') })
+  if (wrong) {
+    await enTile(pairs[0][0]).click()
+    await tile(pairs[1][1]).click()
+    await expect(enTile(pairs[0][0])).toHaveAttribute('data-match', 'wrong')
+  }
+  for (const [en, zh] of pairs) {
+    await enTile(en).click()
+    await tile(zh).click()
+    await expect(enTile(en)).toBeDisabled()
+  }
+  await expect(page.getByRole('button', { name: '繼續' })).toBeVisible()
 }

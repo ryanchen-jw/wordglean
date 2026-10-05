@@ -1,6 +1,6 @@
 // 今日動線 e2e 共用（TASK-18）：以 page.clock 固定時間，第一天上完樣本課、第二天早上有 8 個字到期
 import { expect, type Page } from '@playwright/test'
-import { LESSON, readFixture, stepsOf } from './lesson.js'
+import { answerMatching, LESSON, readFixture, stepsOf } from './lesson.js'
 
 export const DAY = 86_400_000
 export const DAY1 = Date.parse('2026-10-05T01:00:00Z') // 台北 09:00
@@ -19,7 +19,9 @@ export async function playLesson(page: Page, lessonId: string) {
       await page.getByRole('button', { name: '我寫對了' }).click()
       continue
     }
-    if (s.typed !== undefined)
+    // 配對（創辦人 2026-10-05 裁示一）：四對配完出現「繼續」
+    if (s.match !== undefined) await answerMatching(page, s.match)
+    else if (s.typed !== undefined)
       await page.getByRole('textbox', { name: '把聽到的英文打在這裡' }).fill(s.typed)
     else await page.getByRole('radio', { name: s.options[0], exact: true }).click()
     if (s.check) await page.getByRole('button', { name: '檢查' }).click()
@@ -43,3 +45,22 @@ export const GLOSS = new Map(
     .map((it) => [it.word!, it.glossZh!.split('；')[0].replace(/（[^）]*）/g, '')]),
 )
 export const REVIEW_ORDER = [...GLOSS.keys()].sort()
+
+/** 到期複習的題數：8 張字卡＋每 4 張後一題配對（創辦人 2026-10-05 裁示一） */
+export const REVIEW_TOTAL = 10
+
+/** 到期複習第 i 張字卡（從 0 起）在頁首的題號 */
+export const reviewPos = (i: number) => i + 1 + Math.floor(i / 4)
+
+/** 到期複習：剛做完第 i 張字卡（已按「繼續」）；滿 4 張就把配對做完並按「繼續」 */
+export async function reviewMatching(page: Page, i: number) {
+  if ((i + 1) % 4 !== 0) return
+  await expect(
+    page.getByText(`複習 ${reviewPos(i) + 1}／${REVIEW_TOTAL}`, { exact: true }),
+  ).toBeVisible()
+  await answerMatching(
+    page,
+    REVIEW_ORDER.slice(i - 3, i + 1).map((w) => [w, GLOSS.get(w)!]),
+  )
+  await page.getByRole('button', { name: '繼續' }).click()
+}

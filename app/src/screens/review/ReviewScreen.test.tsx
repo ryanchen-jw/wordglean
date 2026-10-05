@@ -4,7 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
 import type { PoolWord } from '../../data/db'
 import type { LexIndex } from '../../dict/lexicon'
-import type { LessonItemsDoc } from '../../lesson/items'
+import type { LessonItemsDoc, WordCardItem } from '../../lesson/items'
 import { loadFixture } from '../../lesson/testFixtures'
 import { CardState } from '../../srs/scheduler'
 import { afterSfx, playSfx } from '../../sound/sfx'
@@ -250,5 +250,64 @@ describe('收藏字複習卡（沒有課程來源）', () => {
     expect(fb).toHaveTextContent('正確：河, 江')
     expect(fb.querySelectorAll('[lang="en"]')).toHaveLength(0)
     expect((await db.reviewLogs.toArray()).map((l) => [l.wordId, l.rating])).toEqual([['river', 3]])
+  })
+})
+
+describe('配對題（創辦人 2026-10-05 裁示一：複習也要加）', () => {
+  const sense = (g: string) => g.split('；')[0].replace(/（[^）]*）/g, '')
+  const glossOf = (w: string) =>
+    (docs[L1].items.find((i) => i.type === 'wordCard' && i.word === w) as WordCardItem).glossZh
+  const btn = (name: string) => screen.getByRole('button', { name })
+
+  it('每做 4 張到期字卡插一題配對（那 4 個字）；配對不寫 FSRS；剩不足 4 張不出；完成卡只數字卡', async () => {
+    await db.wordPool.bulkPut([
+      due('the', 5),
+      due('be', 4),
+      due('and', 3),
+      due('of', 2),
+      due('have', 1),
+    ])
+    render(<ReviewScreen mode={{ kind: 'due', flow: false }} loadItems={loadItems} />)
+    const words = ['the', 'be', 'and', 'of']
+    for (const [i, w] of words.entries()) {
+      await screen.findByText(`複習 ${i + 1}／6`)
+      fireEvent.click(option(sense(glossOf(w))))
+      await screen.findByRole('status')
+      cont()
+    }
+    await screen.findByText('複習 5／6')
+    expect(screen.getByText('把英文和中文配成一對')).toBeInTheDocument()
+    expect(await db.reviewLogs.count()).toBe(4)
+    vi.mocked(playSfx).mockClear()
+    fireEvent.click(btn('the'))
+    fireEvent.click(btn(sense(glossOf('be'))))
+    for (const w of words) {
+      fireEvent.click(btn(w))
+      fireEvent.click(btn(sense(glossOf(w))))
+    }
+    // 每配一對各一聲（配錯一聲），完成時不再多播
+    expect(vi.mocked(playSfx).mock.calls).toEqual([
+      ['wrong'],
+      ['correct'],
+      ['correct'],
+      ['correct'],
+      ['correct'],
+    ])
+    cont()
+    await screen.findByText('複習 6／6')
+    expect(await db.reviewLogs.count()).toBe(4)
+    fireEvent.click(option(sense(glossOf('have'))))
+    await screen.findByRole('status')
+    cont()
+    const done = await screen.findByTestId('review-done')
+    expect(done).toHaveTextContent('5 個字')
+    expect(done).toHaveTextContent('答對 5 個')
+    expect(await db.reviewLogs.count()).toBe(5)
+  })
+
+  it('不足 4 張到期字卡：不出配對', async () => {
+    await db.wordPool.bulkPut([due('the', 3), due('be', 2), due('and', 1)])
+    render(<ReviewScreen mode={{ kind: 'due', flow: false }} loadItems={loadItems} />)
+    expect(await screen.findByText('複習 1／3')).toBeInTheDocument()
   })
 })

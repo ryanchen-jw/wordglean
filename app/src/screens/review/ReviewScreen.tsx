@@ -13,7 +13,9 @@ import {
   answerReview,
   lessonWordCards,
   loadReviewCards,
+  withReviewMatching,
   type ReviewCard,
+  type ReviewEntry,
 } from '../../review/session'
 import { goBack, navigate } from '../../router'
 import { deviceTimeZone } from '../../srs/daily'
@@ -22,6 +24,7 @@ import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { LessonFoot, LessonHeader, LessonMain, lessonFrameCls } from '../lesson/frame'
 import { playSfx } from '../../sound/sfx'
+import { MatchingView } from '../lesson/MatchingView'
 import { WordCardView } from '../lesson/WordCardView'
 
 export type ReviewMode = { kind: 'due'; flow: boolean } | { kind: 'practice'; lessonId: string }
@@ -39,7 +42,7 @@ type Props = {
 type Phase =
   | { kind: 'loading' }
   | { kind: 'error' }
-  | { kind: 'play'; cards: ReviewCard[]; index: number; correct: number }
+  | { kind: 'play'; entries: ReviewEntry[]; index: number; correct: number }
   | { kind: 'done'; total: number; correct: number }
   | { kind: 'leaving' }
 
@@ -89,7 +92,17 @@ export function ReviewScreen({
       }
       if (!alive) return
       if (cards.length === 0) await finish(0, 0)
-      else setPhase({ kind: 'play', cards, index: 0, correct: 0 })
+      // 到期複習：每 4 張字卡後插一題配對（創辦人 2026-10-05 裁示一）；「再複習一次剛學的字」不插
+      else
+        setPhase({
+          kind: 'play',
+          entries:
+            mode.kind === 'due'
+              ? withReviewMatching(cards)
+              : cards.map((card) => ({ kind: 'card', card })),
+          index: 0,
+          correct: 0,
+        })
     })().catch((e) => {
       console.error(e)
       if (alive) setPhase({ kind: 'error' })
@@ -138,15 +151,25 @@ export function ReviewScreen({
       </div>
     )
 
-  const { cards, correct } = phase
-  const card = cards[phase.index]
+  const { entries, correct } = phase
+  const entry = entries[phase.index]
+  // 完成卡只數字卡（配對不是一個字、不寫 FSRS）
+  const total = entries.filter((e) => e.kind === 'card').length
 
-  const onAnswer = (a: { correct: boolean; usedHint: boolean }) => {
+  const onAnswer = (a: { correct: boolean; usedHint: boolean; silent?: boolean }) => {
+    if (entry.kind === 'matching') {
+      saving.current = Promise.resolve()
+      return
+    }
     const at = now()
-    playSfx(a.correct ? 'correct' : 'wrong')
-    saving.current = answerReview(db, card, { ...a, elapsedMs: at - shownAt.current }, at, {
-      practice: mode.kind === 'practice',
-    })
+    if (!a.silent) playSfx(a.correct ? 'correct' : 'wrong')
+    saving.current = answerReview(
+      db,
+      entry.card,
+      { correct: a.correct, usedHint: a.usedHint, elapsedMs: at - shownAt.current },
+      at,
+      { practice: mode.kind === 'practice' },
+    )
     setPhase({ ...phase, correct: correct + (a.correct ? 1 : 0) })
   }
 
@@ -156,7 +179,7 @@ export function ReviewScreen({
     try {
       await saving.current
       saving.current = null
-      if (phase.index === cards.length - 1) await finish(cards.length, correct)
+      if (phase.index === entries.length - 1) await finish(total, correct)
       else setPhase({ ...phase, index: phase.index + 1 })
     } finally {
       busy.current = false
@@ -173,18 +196,27 @@ export function ReviewScreen({
     <div data-testid="review-screen" className={lessonFrameCls}>
       <LessonHeader
         n={phase.index + 1}
-        total={cards.length}
-        count={t('review.frame.count', { n: phase.index + 1, total: cards.length })}
+        total={entries.length}
+        count={t('review.frame.count', { n: phase.index + 1, total: entries.length })}
         progressLabel={t('review.frame.progress')}
         onLeave={onLeave}
       />
-      <WordCardView
-        key={card.step.key}
-        item={card.item}
-        step={card.step}
-        onAnswer={onAnswer}
-        onContinue={onContinue}
-      />
+      {entry.kind === 'card' ? (
+        <WordCardView
+          key={entry.card.step.key}
+          item={entry.card.item}
+          step={entry.card.step}
+          onAnswer={onAnswer}
+          onContinue={onContinue}
+        />
+      ) : (
+        <MatchingView
+          key={entry.step.key}
+          step={entry.step}
+          onAnswer={onAnswer}
+          onContinue={onContinue}
+        />
+      )}
     </div>
   )
 }

@@ -109,3 +109,31 @@ export async function settleLesson(
   onSettle?.(summary)
   return summary
 }
+
+/**
+ * 練習模式（示範課 /lesson/demo，創辦人 2026-10-05 裁示二）：進度只留在記憶體，
+ * 不寫 FSRS、單字池、作答紀錄、小課進度、完成課，也不觸發同步；介面與上面寫資料庫的函式相同（少了 db）
+ */
+export const practiceSession = {
+  start: async (lessonId: string, steps: readonly Step[], nowMs: number) =>
+    createRun(lessonId, steps, nowMs),
+  answer: async (run: LessonRun, step: Step, input: AnswerInput, nowMs: number) =>
+    withAnswer(run, step.key, { ...input, grade: null }, nowMs),
+  answerRetry: async (
+    run: LessonRun,
+    step: Step,
+    answer: { correct: boolean; skipped?: boolean },
+    nowMs: number,
+  ) => withRetryAnswer(run, step.key, answer, nowMs),
+  continueRun: async (run: LessonRun, nowMs: number) => proceed(run, nowMs),
+  async settle(run: LessonRun): Promise<SettleSummary> {
+    if (!isComplete(run)) throw new Error('還有題目沒作答')
+    return {
+      lessonId: run.lessonId,
+      ...score(run),
+      // 沒有字入池、沒有排進複習：完成頁不顯示「已加入單字庫」「已排進明天的複習」
+      newWords: [],
+      wrongKeys: run.stepKeys.filter((k) => !run.results[k].correct),
+    }
+  },
+}

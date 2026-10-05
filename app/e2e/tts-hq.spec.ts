@@ -54,8 +54,9 @@ test('高音質載入失敗：這一句改用手機內建聲音念、出現提�
   await page.reload()
   await expect(page.getByRole('button', { name: /^發音\s*高音質發音$/ })).toBeVisible()
 
-  await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  // 示範課直接進聽音打字：小課前面的配對題點英文就會發音（創辦人 2026-10-05 裁示一），高音質會在聽題前就先失敗退回
+  await page.goto('/lesson/demo?type=listenType')
+  await expect(page.getByText('聽句子，把聽到的英文打出來')).toBeVisible()
   // 選用高音質時不顯示「手機內建聲音」說明與第一次提示條
   await expect(page.getByText('手機內建聲音', { exact: true })).toHaveCount(0)
   await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
@@ -67,7 +68,7 @@ test('高音質載入失敗：這一句改用手機內建聲音念、出現提�
   await expect
     .poll(() => lastSpoken(page))
     .toEqual({
-      text: 'The book is in the bag.',
+      text: 'We have lunch at twelve.',
       rate: 1,
       lang: 'en-US',
     })
@@ -85,7 +86,7 @@ test('上次載入到一半分頁被關掉（崩潰旗標還在）：不再載�
   await chooseHq(page, browserName)
   await page.evaluate(() => sessionStorage.setItem('lg.ttsHqLoading', '1'))
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
   await page.getByRole('button', { name: '播放', exact: true }).click()
   await expect(page.getByTestId('hq-failed')).toBeVisible()
   await expect.poll(() => lastSpoken(page)).toMatchObject({ text: 'The book is in the bag.' })
@@ -137,13 +138,14 @@ test('Worker 檔載不到（404）：已選高音質按播放，仍以內建聲�
   const hits = await workerNotFound(context)
   await webGpuPhone(page)
   await chooseHq(page, browserName)
-  await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  // 同上：直接進聽音打字，這一聲是第一次發音
+  await page.goto('/lesson/demo?type=listenType')
+  await expect(page.getByTestId('hq-failed')).toHaveCount(0)
   await page.getByRole('button', { name: '播放', exact: true }).click()
   await expect(page.getByTestId('hq-failed')).toHaveText('高音質發音無法使用，已改用手機內建聲音', {
     timeout: 30_000,
   })
-  await expect.poll(() => lastSpoken(page)).toMatchObject({ text: 'The book is in the bag.' })
+  await expect.poll(() => lastSpoken(page)).toMatchObject({ text: 'We have lunch at twelve.' })
   expect(hits.length).toBeGreaterThan(0)
 })
 

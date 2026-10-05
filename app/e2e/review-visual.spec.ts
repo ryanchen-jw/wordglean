@@ -6,7 +6,15 @@ import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
 import { LESSON } from './lesson.js'
 import { measureMobile, overflowingChildren } from './measure.js'
-import { DAY1, GLOSS, learnThenNextDay, playLesson, REVIEW_ORDER } from './today.js'
+import {
+  DAY1,
+  GLOSS,
+  learnThenNextDay,
+  playLesson,
+  REVIEW_ORDER,
+  REVIEW_TOTAL,
+  reviewMatching,
+} from './today.js'
 
 async function check(page: Page, info: TestInfo, name: string, strict = true) {
   await page.waitForTimeout(300) // 等回饋動畫（200ms）結束
@@ -43,7 +51,7 @@ test('複習：出題／答對／答錯／完成卡', async ({ page }, info) => 
   test.setTimeout(90_000)
   await learnThenNextDay(page)
   await page.goto('/review')
-  await expect(page.getByText('複習 1／8', { exact: true })).toBeVisible()
+  await expect(page.getByText(`複習 1／${REVIEW_TOTAL}`, { exact: true })).toBeVisible()
   await check(page, info, 'review-question')
   await page.getByRole('radio', { name: GLOSS.get(REVIEW_ORDER[0])!, exact: true }).click()
   await check(page, info, 'review-right')
@@ -52,9 +60,11 @@ test('複習：出題／答對／答錯／完成卡', async ({ page }, info) => 
   await expect(page.getByRole('status')).toContainText(`${REVIEW_ORDER[1]} 是「`)
   await check(page, info, 'review-wrong')
   await page.getByRole('button', { name: '繼續' }).click()
-  for (const word of REVIEW_ORDER.slice(2)) {
+  for (const [i, word] of REVIEW_ORDER.entries()) {
+    if (i < 2) continue
     await page.getByRole('radio', { name: GLOSS.get(word)!, exact: true }).click()
     await page.getByRole('button', { name: '繼續' }).click()
+    await reviewMatching(page, i)
   }
   const done = page.getByTestId('review-done')
   await expect(done).toContainText('複習完成')
@@ -131,9 +141,11 @@ for (const c of NARROW) {
     await check(page, info, `${c.name}-review-wrong`, false)
     await expect(page.getByRole('button', { name: '繼續' })).toBeInViewport()
     await page.getByRole('button', { name: '繼續' }).click()
-    for (const word of REVIEW_ORDER.slice(1)) {
+    for (const [i, word] of REVIEW_ORDER.entries()) {
+      if (i < 1) continue
       await page.getByRole('radio', { name: GLOSS.get(word)!, exact: true }).click()
       await page.getByRole('button', { name: '繼續' }).click()
+      await reviewMatching(page, i)
     }
     await expect(page.getByTestId('review-done')).toBeVisible()
     await check(page, info, `${c.name}-review-done`, false)

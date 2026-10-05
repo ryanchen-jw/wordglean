@@ -1,4 +1,4 @@
-// TASK-13 AC#3：聽音打字、聽音選答在兩個手機 project 作答（樣本課第 9、10 題）。
+// TASK-13 AC#3：聽音打字、聽音選答在兩個手機 project 作答（樣本課第 11、14 題；第 5、10 題是配對）。
 // 手機內建聲音以替身記錄呼叫（e2e/speech.ts）：斷言念的句子、語速與語言
 import { expect, test } from '@playwright/test'
 import { answer, count, LESSON, next, playTo } from './lesson.js'
@@ -15,7 +15,7 @@ test('聽音打字：播放／慢速、拼錯算錯並標錯字、寬鬆比對�
   page,
 }) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
 
   // 出題：題型、說明、內建聲音、第一次的高音質提示；沒輸入時不能檢查
   await expect(page.getByText('聽音打字')).toBeVisible()
@@ -46,14 +46,14 @@ test('聽音打字：播放／慢速、拼錯算錯並標錯字、寬鬆比對�
   await expect(page.getByTestId('listen-typed').locator('mark')).toHaveText(['bags'])
   await expect(page.getByRole('button', { name: '再聽一次' })).toBeVisible()
   await next(page)
-  // TASK-18 穿插：第 10 題是選擇題、第 11 題寫作（TASK-15，自評），第 12 題才是聽音選答
-  await answer(page, 10)
+  // TASK-18 穿插：第 12 題是選擇題、第 13 題寫作（TASK-15，自評），第 14 題才是聽音選答
+  await answer(page, 12)
   await next(page)
-  await answer(page, 11)
+  await answer(page, 13)
   await next(page)
 
   // 聽音選答
-  await count(page, 12)
+  await count(page, 14)
   await expect(page.getByText('聽音選答')).toBeVisible()
   await expect(page.getByText('Tom 有什麼？')).toBeVisible()
   await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
@@ -65,21 +65,21 @@ test('聽音打字：播放／慢速、拼錯算錯並標錯字、寬鬆比對�
   await expect(status).toContainText('答案是 A：A dog and a cat')
   await expect(status).toContainText('Tom 有一隻狗和一隻貓。')
   await next(page)
-  await count(page, 13)
+  await count(page, 15)
 })
 
 test('聽音打字：大小寫、標點、彎引號不計算對；聽音選答答對', async ({ page }) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
   await page.getByRole('textbox', { name: '把聽到的英文打在這裡' }).fill('the BOOK is in the bag')
   await page.getByRole('button', { name: '檢查' }).click()
   await expect(page.getByRole('status')).toContainText('正確')
   await next(page)
-  await answer(page, 10)
+  await answer(page, 12)
   await next(page)
-  await answer(page, 11)
+  await answer(page, 13)
   await next(page)
-  await count(page, 12)
+  await count(page, 14)
   await page.getByRole('radio', { name: 'A dog and a cat', exact: true }).click()
   await page.getByRole('button', { name: '檢查' }).click()
   await expect(page.getByRole('status')).toContainText('正確')
@@ -87,12 +87,12 @@ test('聽音打字：大小寫、標點、彎引號不計算對；聽音選答�
 
 test('聽不出來：直接看答案、可繼續下一題', async ({ page }) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
   await page.getByRole('button', { name: '聽不出來' }).click()
   await expect(page.getByRole('status')).toContainText('答案是')
   await expect(page.getByRole('status')).toContainText('The book is in the bag.')
   await next(page)
-  await count(page, 10)
+  await count(page, 12)
 })
 
 test('沒有 WebGPU 的手機：不顯示「到設定開啟高音質」的首次提示', async ({ page }) => {
@@ -100,7 +100,7 @@ test('沒有 WebGPU 的手機：不顯示「到設定開啟高音質」的首次
   await page.goto('/settings')
   await expect(page.getByText('這支手機不支援高音質發音')).toBeVisible()
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
   await expect(page.getByText('聽音打字')).toBeVisible()
   await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
 })

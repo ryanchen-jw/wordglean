@@ -2,7 +2,7 @@
 // 每個狀態截圖 attach＋具名檔存 test-results/（gitignored），斷言 06 三件套＋英文介面字串＋body 色；
 // 另在 320 標準／320 特大／375 特大下量溢出、折行與卡片內子元素溢出（比照 narrow.spec）。
 // TASK-13：s03 聽音打字（作答中／內建聲音＋第一次提示／答錯／聽不出來）、聽音選答（答對／答錯）。
-// 資料：樣本課 fixture（A1 一課 18 步：第 9、15、18 題聽音打字（後兩題由跟讀替代）、第 12 題聽音選答、第 11／14 題寫作自評）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
+// 資料：樣本課 fixture（A1 一課 20 步：第 5、10 題配對、第 11、17、20 題聽音打字（後兩題由跟讀替代）、第 14 題聽音選答、第 13／16 題寫作自評）；最長的選項與回饋文字取 fixture 原文（mock＝真實題目格式）
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
 import { answer, answerRetry, count, LESSON, next, playTo, retryCount, STEPS } from './lesson.js'
@@ -83,7 +83,7 @@ for (const theme of ['light', 'dark'] as const) {
   test(`s03 狀態色＝token（${theme}）`, async ({ page }) => {
     await page.addInitScript((th) => localStorage.setItem('lg.theme', th), theme)
     await page.goto(`/lesson/${LESSON}`)
-    await playTo(page, 9)
+    await playTo(page, 11)
     const style = (sel: string, prop: 'backgroundColor' | 'color') =>
       page
         .locator(sel)
@@ -128,11 +128,11 @@ for (const theme of ['light', 'dark'] as const) {
       await token('--lg-error-bg'),
     )
 
-    // 穿插：第 10 題是選擇題、第 11 題寫作（TASK-15，沒有金鑰→自評），第 12 題才是聽音選答（TASK-18）
+    // 穿插：第 12 題是選擇題、第 13 題寫作（TASK-15，沒有金鑰→自評），第 14 題才是聽音選答（TASK-18）
     await next(page)
-    await answer(page, 10)
+    await answer(page, 12)
     await next(page)
-    await answer(page, 11)
+    await answer(page, 13)
     await next(page)
     await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
     await page.getByRole('button', { name: '檢查' }).click()
@@ -150,23 +150,23 @@ for (const theme of ['light', 'dark'] as const) {
 
 test('s05 選擇題：已選未檢查／答錯／答對', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 10)
+  await playTo(page, 12)
   await page.getByRole('radio', { name: 'in', exact: true }).click()
   await check(page, info, 's05-mc-selected')
   await page.getByRole('button', { name: '檢查' }).click()
   await check(page, info, 's05-mc-wrong')
   await next(page)
-  await answer(page, 11)
-  await next(page)
-  await answer(page, 12)
-  await next(page)
   await answer(page, 13)
+  await next(page)
+  await answer(page, 14)
+  await next(page)
+  await answer(page, 15)
   await check(page, info, 's05-mc-right')
 })
 
 test('s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 16)
+  await playTo(page, 18)
   await page.getByRole('radio', { name: '兩個', exact: true }).click()
   await check(page, info, 's05-reading')
   await page.getByRole('button', { name: '看中文翻譯' }).click()
@@ -182,7 +182,7 @@ test('s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認
 
 test('s03 聽音打字：內建聲音＋第一次提示／作答中／答錯；第二次不再提示', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
   await expect(page.getByTestId('hq-voice-hint')).toBeVisible()
   await check(page, info, 's03-voice')
   await page.getByRole('textbox').fill('The book is on a bag')
@@ -194,15 +194,15 @@ test('s03 聽音打字：內建聲音＋第一次提示／作答中／答錯；�
 
 test('s03 聽不出來；聽音選答答對／答錯', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 9)
+  await playTo(page, 11)
   await page.getByRole('button', { name: '聽不出來' }).click()
   await check(page, info, 's03-giveup')
   await next(page)
-  await answer(page, 10)
+  await answer(page, 12)
   await next(page)
-  await answer(page, 11)
+  await answer(page, 13)
   await next(page)
-  await count(page, 12)
+  await count(page, 14)
   await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
   await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
   await check(page, info, 's03-choice-selected')
@@ -212,8 +212,8 @@ test('s03 聽不出來；聽音選答答對／答錯', async ({ page }, info) =>
 
 test('s03 聽音選答答對', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
-  await playTo(page, 12)
-  await answer(page, 12)
+  await playTo(page, 14)
+  await answer(page, 14)
   await check(page, info, 's03-choice-right')
 })
 
@@ -255,25 +255,25 @@ for (const c of NARROW) {
     await answer(page, 1, true)
     await check(page, info, `${c.name}-s07-wrong`, false)
     await next(page)
-    for (let n = 2; n <= 8; n++) {
+    for (let n = 2; n <= 10; n++) {
       await answer(page, n)
       await next(page)
     }
-    await count(page, 9)
+    await count(page, 11)
     await check(page, info, `${c.name}-s03-voice`, false)
     await page.getByRole('textbox').fill('The book is on a bag')
     await page.getByRole('button', { name: '檢查' }).click()
     await check(page, info, `${c.name}-s03-wrong`, false)
     await next(page)
-    await answer(page, 10, true)
+    await answer(page, 12, true)
     await check(page, info, `${c.name}-s05-mc-wrong`, false)
     await next(page)
-    await answer(page, 11)
+    await answer(page, 13)
     await next(page)
-    await answer(page, 12, true)
+    await answer(page, 14, true)
     await check(page, info, `${c.name}-s03-choice-wrong`, false)
     await next(page)
-    for (let n = 13; n <= 15; n++) {
+    for (let n = 15; n <= 17; n++) {
       await answer(page, n)
       await next(page)
     }
@@ -288,20 +288,20 @@ for (const c of NARROW) {
     expect(box.y).toBeGreaterThanOrEqual(0)
     expect(box.y + box.height).toBeLessThanOrEqual(c.height)
     await page.getByRole('button', { name: '繼續上課' }).click()
-    for (let n = 16; n <= STEPS.length; n++) {
+    for (let n = 18; n <= STEPS.length; n++) {
       await answer(page, n)
       await next(page)
     }
-    // 錯題重做：答錯的第 1、9、10、12 題再出一輪
+    // 錯題重做：答錯的第 1、11、12、14 題再出一輪
     await retryCount(page, 1, 4)
     await check(page, info, `${c.name}-retry-question`, false)
     await answerRetry(page, 1, { n: 1, total: 4 })
     await next(page)
-    await answerRetry(page, 9, { n: 2, total: 4 })
+    await answerRetry(page, 11, { n: 2, total: 4 })
     await next(page)
-    await answerRetry(page, 10, { n: 3, total: 4 })
+    await answerRetry(page, 12, { n: 3, total: 4 })
     await next(page)
-    await answerRetry(page, 12, { n: 4, total: 4 })
+    await answerRetry(page, 14, { n: 4, total: 4 })
     await next(page)
     await expect(page.getByTestId('lesson-done')).toBeVisible()
     await check(page, info, `${c.name}-s14`, false)
