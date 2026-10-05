@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linguaapp.local/schema/phrases.schema.json",
+  "title": "片語表（data/phrases/phrases.json，本專案自編，CC BY-SA 4.0）",
+  "description": "片語動詞與常用搭配（TASK-24）。依 phrase 排序、不重複；語意規則（組成字、級距、去重）由 data/tests/test_phrases.py 檢查。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "phrases"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/phrase" }
+    }
+  },
+  "$defs": {
+    "level": { "enum": ["A1", "A2", "B1", "B2", "C1"] },
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phrase", "type", "cefr", "glossZh", "components", "separable", "topic"],
+      "properties": {
+        "phrase": {
+          "description": "小寫片語，也是查表與 FSRS 卡片的鍵",
+          "type": "string",
+          "pattern": "^[a-z]+( [a-z]+)+$"
+        },
+        "type": {
+          "description": "pv＝片語動詞；collocation＝常用搭配（含固定介系詞片語）",
+          "enum": ["pv", "collocation"]
+        },
+        "cefr": { "$ref": "#/$defs/level" },
+        "glossZh": {
+          "description": "繁中釋義（台灣用語，開發端撰寫）；多義以全形分號分隔",
+          "type": "string",
+          "minLength": 1
+        },
+        "components": {
+          "description": "依序對應片語每個字的 lexicon headword（詞形還原後，例：dishes→dish）；先修檢查用",
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "pattern": "^[a-z]+$" }
+        },
+        "separable": {
+          "description": "受詞可插在片語中間（give it up、take sth into account）；開發端判斷，供題目檢查用",
+          "type": "boolean"
+        },
+        "topic": {
+          "description": "例句情境的主題（content/curriculum/topics.json 的 id）；不用來分單元",
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "downgradedFrom": {
+          "description": "人工下調前的級距（組成字最高級距）；只限生活常用片語（創辦人裁示 2026-10-05），理由見 TASK-24 plan",
+          "$ref": "#/$defs/level"
+        }
+      }
+    }
+  }
+}

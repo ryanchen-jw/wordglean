@@ -11,9 +11,10 @@ import { fileURLToPath } from 'node:url';
 const cli = fileURLToPath(new URL('../scripts/validate-curriculum.mjs', import.meta.url));
 const lexicon = fileURLToPath(new URL('./fixtures/lexicon.json', import.meta.url));
 const validDir = fileURLToPath(new URL('./fixtures/valid', import.meta.url));
+const phrases = fileURLToPath(new URL('./fixtures/phrases-empty.json', import.meta.url));
 
 const runCli = (dir) =>
-  spawnSync(process.execPath, [cli, '--lexicon', lexicon, '--dir', dir], { encoding: 'utf8' });
+  spawnSync(process.execPath, [cli, '--lexicon', lexicon, '--phrases', phrases, '--dir', dir], { encoding: 'utf8' });
 
 test('合法目錄：exit 0、印全綠', () => {
   const r = runCli(validDir);

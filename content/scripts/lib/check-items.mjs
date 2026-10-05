@@ -12,8 +12,10 @@ import {
   PASSAGE_ZH_MAX_CHARS,
   SENTENCE_WORDS,
   ZH_MAX_CHARS,
+  PHRASE_ITEMS_PENDING_LEVELS,
   compositionFor,
   countWords,
+  isPhraseLessonId,
 } from './item-rules.mjs';
 
 const schema = JSON.parse(readFileSync(new URL('../../schema/lesson-items.schema.json', import.meta.url), 'utf8'));
@@ -374,3 +376,19 @@ export function checkAnswerLongest(docs, minCount = 20, ranges = { 3: [0.21, 0.4
 
 // 會讓該課不合格的錯誤（排除 notice 提示）。
 export const blockingErrors = (errors) => errors.filter((e) => !e.notice);
+
+// 課綱的每一課都要有題檔（MISSING_ITEMS）。過渡期：PHRASE_ITEMS_PENDING_LEVELS 級別的片語課略過，只回報課數。
+// lessons＝loadLessons() 的 Map；withItems＝有題檔的課號集合。
+export function checkItemCoverage(lessons, withItems, pendingLevels = PHRASE_ITEMS_PENDING_LEVELS) {
+  const errors = [];
+  let pending = 0;
+  for (const lesson of lessons.values()) {
+    if (withItems.has(lesson.id)) continue;
+    if (isPhraseLessonId(lesson.id) && pendingLevels.has(lesson.level)) {
+      pending += 1;
+      continue;
+    }
+    errors.push({ code: 'MISSING_ITEMS', path: lesson.id, message: `課綱有 ${lesson.id}，題庫沒有題檔` });
+  }
+  return { errors, pending };
+}

@@ -18,15 +18,17 @@
 |---|---|---|
 | `curriculum/topics.json` | 主題定義（中英標題、domain、涵蓋範圍、出處）＋各級依序使用的主題 | 人 |
 | `curriculum/word-topics.json` | 字→主題人工分類：級距 → 主題 → 字（小寫 headword） | 人 |
-| `curriculum/{a1,a2,b1,b2,c1}.json` | 各級距檔（單元、小課、每課新字） | **產生，勿手改** |
+| `curriculum/phrase-units.json` | 片語單元（TASK-24）：每級片語單元的插入點（`after` 主題單元）與各課片語；片語表在 `data/phrases/phrases.json` | 人 |
+| `curriculum/{a1,a2,b1,b2,c1}.json` | 各級距檔（主題單元與片語單元、小課、每課新字或片語） | **產生，勿手改** |
 | `curriculum/STATS.md` | 統計報告（規模、多益常考字覆蓋、C2 排除、大小寫合併） | **產生，勿手改** |
-| `schema/*.schema.json` | 級距檔、主題清單、字→主題分類三份 JSON Schema（2020-12） | 人 |
+| `schema/*.schema.json` | 級距檔、主題清單、字→主題分類、片語單元、題目檔的 JSON Schema（2020-12） | 人 |
 | `scripts/lib/lexicon.mjs` | 讀 lexicon 的唯一入口（lexicon 欄位變了只改這裡） | 人 |
 | `scripts/lib/rules.mjs` | 數量規則：每課 6–10 字（目標 8）、每單元最多 10 課 | 人 |
 | `scripts/lib/validate.mjs` | `validateCurriculum`、`validateTopics`、`validateWordTopics` | 人 |
 | `scripts/lib/allocate.mjs` | 排課器 `allocate(wordTopics, lexicon, topics)`（規則見檔頭） | 人 |
+| `scripts/lib/phrases.mjs` | 讀片語表的唯一入口 `phraseTable`、片語單元插入 `insertPhraseUnits(levels, phraseUnits)`（規則見檔頭） | 人 |
 | `scripts/lib/stats.mjs` | `curriculumStats`、`renderStats` | 人 |
-| `scripts/build-curriculum.mjs` | 檢查分類 → 排課 → validator → 寫級距檔與 STATS.md | — |
+| `scripts/build-curriculum.mjs` | 檢查分類與 phrase-units → 排課 → 插入片語單元 → validator → 寫級距檔與 STATS.md | — |
 | `scripts/validate-curriculum.mjs` | 只檢查現有級距檔 | — |
 | `placement/placement.json` | 分級測驗題本（TASK-17）：A1–C1 各 30 個候選真字＋200 個假字池 | **產生，勿手改** |
 | `scripts/lib/pseudoword.mjs` | 假字產生器（參考 Wuggy 方法自己實作，規則見檔頭與 `docs/verification/2026-10-02-task17-placement-evidence/proposal.md` §4） | 人 |
@@ -43,6 +45,8 @@
 - 排課：同主題內多益常考字優先、再依詞頻（ECDICT frq）高到低；每主題切成每課 6–10 字；超過 10 課的主題拆成多個單元（標題加（一）（二））；每級先排各主題第一單元，再排第二單元。
 - **ID 上線後凍結**：單元 `a1-u01`、小課 `a1-u01-l03` 由排序位置產生，改分類或主題順序會讓 ID 對應的內容位移。上線（有使用者進度）後若要改課綱，必須另訂遷移方式，不可直接重排。
 - 每個主題在某級的字數必須切得出合法小課：不能是 1–5 或 11 字（`TOPIC_SIZE`）。
+- **片語單元**（TASK-24）：主題單元排好後，依 `phrase-units.json` 插在指定主題單元之後；ID `b1-p01`、`b1-p01-l01` 依該級片語單元順序產生，主題單元的 ID 與字一律不動（`test/curriculum.test.mjs` 以插入前的雜湊守住）。插入點與分課寫死在檔內、不隨主題課數重算。單元帶 `kind: "phrase"`、沒有 `topic`；每課 6–10 個片語；同級組成字必須在片語單元之前的主題課已引入。A1 沒有片語單元。
+- 題庫過渡（TASK-24）：`check-items` 全量檢查時要求課綱每課都有題檔（`MISSING_ITEMS`），但 `item-rules.mjs` 的 `PHRASE_ITEMS_PENDING_LEVELS` 列出的級別，片語課沒題檔只計數不報錯；某級片語課題目寫完就從清單移除。
 - **課綱排除字**（`offensive.mjs` 的 `CURRICULUM_EXCLUDED_WORDS`）：仍留在 `word-topics.json` 佔位、照常參與排序與切課，切好後才從所在小課剔除——只有那課少一字，其他字不跨課位移。不排進小課，也不報 `MISSING_WORD`。
 
 ### validator 錯誤代碼
@@ -60,6 +64,11 @@
 | `MISSING_WORD` | A1–C1 有字沒被排課（或沒被分類）；少了整個級距檔或分類檔少一級也會報 |
 | `TOPIC_SIZE` | 分類檔中某主題字數切不出合法小課 |
 | `EXCLUDED_WORD` | 課綱排除字被排進小課 |
+| `UNKNOWN_PHRASE` | 片語單元的課有不在片語表的片語 |
+| `PHRASE_PREREQ` | 片語的同級組成字在該片語單元之前還沒引入；或組成字高於片語級距但沒標 `downgradedFrom`；或組成字不在 A1–C1 課綱 |
+| `MISSING_PHRASE` | 片語表中有片語沒排進任何片語單元 |
+
+片語單元也套用 `DUPLICATE_ID`、`ID_MISMATCH`（另查 `kind: "phrase"`↔`-pNN`）、`LEVEL_MISMATCH`（片語級距≠所在級距）、`LESSON_SIZE`、`DUPLICATE_INTRO`。
 
 ## 主題清單出處代碼（`sources`）
 
@@ -81,7 +90,7 @@ npm test                         # 單元＋整合測試（含「已提交級距
 node scripts/build-curriculum.mjs   # 改了 topics.json／word-topics.json／lexicon 後重建；輸出位元組可重現
 npm run validate                 # 只檢查現有級距檔
 node scripts/build-placement.mjs    # 改了 lexicon／data/dict／產生器後重建分級測驗題本（位元組可重現）
-# 皆可加 --lexicon <file> --dir <curriculum dir>
+# 皆可加 --lexicon <file> --dir <curriculum dir>；build／validate 另可加 --phrases <file>
 ```
 
 改分類的流程：編輯 `word-topics.json`（把字移到別的主題列）→ `node scripts/build-curriculum.mjs` → `npm test` → 一起提交分類檔、級距檔與 STATS.md。

@@ -1,17 +1,19 @@
-// 課綱統計：每級單元／小課／字數、多益常考字覆蓋率、未排課字數。
+// 課綱統計：每級單元／小課／字數、多益常考字覆蓋率、未排課字數；片語單元（TASK-24）另計，不混入主題單元的數字。
 
 import { headwordLevels, normalizeHeadword } from './lexicon.mjs';
+import { isPhraseUnit } from './phrases.mjs';
 
 export function curriculumStats(levels, lexicon, topics) {
   const domainOf = new Map(topics.topics.map((t) => [t.id, t.domain]));
   const placedAt = new Map();
   const perLevel = levels.map((doc) => {
-    const sizes = doc.units.flatMap((u) => u.lessons.map((l) => l.words.length));
-    for (const u of doc.units) for (const l of u.lessons) for (const w of l.words) placedAt.set(w, doc.level);
+    const units = doc.units.filter((u) => !isPhraseUnit(u));
+    const sizes = units.flatMap((u) => u.lessons.map((l) => l.words.length));
+    for (const u of units) for (const l of u.lessons) for (const w of l.words) placedAt.set(w, doc.level);
     return {
       level: doc.level,
-      units: doc.units.length,
-      toeicUnits: doc.units.filter((u) => domainOf.get(u.topic) === 'toeic').length,
+      units: units.length,
+      toeicUnits: units.filter((u) => domainOf.get(u.topic) === 'toeic').length,
       lessons: sizes.length,
       words: sizes.reduce((a, b) => a + b, 0),
       minLessonWords: Math.min(...sizes),
@@ -41,8 +43,21 @@ export function curriculumStats(levels, lexicon, topics) {
   }
   const caseMerges = [...casings.values()].filter((s) => s.size > 1).map((s) => [...s].sort().join('／')).sort();
 
+  const phrases = levels.map((doc) => {
+    const units = doc.units.filter(isPhraseUnit);
+    const sizes = units.flatMap((u) => u.lessons.map((l) => l.words.length));
+    return {
+      level: doc.level,
+      units: units.length,
+      lessons: sizes.length,
+      phrases: sizes.reduce((a, b) => a + b, 0),
+      after: units.map((u) => doc.units[doc.units.indexOf(u) - 1].id),
+    };
+  });
+
   return {
     perLevel,
+    phrases,
     total: {
       units: perLevel.reduce((a, l) => a + l.units, 0),
       lessons: perLevel.reduce((a, l) => a + l.lessons, 0),
@@ -73,7 +88,8 @@ export function curriculumStats(levels, lexicon, topics) {
 const pct = (n, d) => `${((n / d) * 100).toFixed(1)}%`;
 
 export function renderStats(stats, source) {
-  const { perLevel, total, toeic, c2, caseMerges } = stats;
+  const { perLevel, phrases, total, toeic, c2, caseMerges } = stats;
+  const phraseTotal = (key) => phrases.reduce((a, l) => a + l[key], 0);
   const lines = [
     '# 課綱統計',
     '',
@@ -89,7 +105,16 @@ export function renderStats(stats, source) {
     ),
     `| 合計 | ${total.units} | ${perLevel.reduce((a, l) => a + l.toeicUnits, 0)} | ${total.lessons} | ${total.words} | |`,
     '',
-    '「字」＝小寫 headword；同一拼字的多個詞性只算一次，放在其最低級距。',
+    '「字」＝小寫 headword；同一拼字的多個詞性只算一次，放在其最低級距。上表只算主題單元，片語單元見下節。',
+    '',
+    '## 片語單元',
+    '',
+    '片語表 `data/phrases/phrases.json`，插入點與分課 `curriculum/phrase-units.json`。',
+    '',
+    '| 級距 | 片語單元數 | 小課數 | 片語數 | 插在哪些主題單元之後 |',
+    '|---|---|---|---|---|',
+    ...phrases.map((l) => `| ${l.level} | ${l.units} | ${l.lessons} | ${l.phrases} | ${l.after.join('、') || '—'} |`),
+    `| 合計 | ${phraseTotal('units')} | ${phraseTotal('lessons')} | ${phraseTotal('phrases')} | |`,
     '',
     '## 多益常考字（TSL）覆蓋',
     '',

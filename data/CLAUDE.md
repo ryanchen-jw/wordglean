@@ -31,6 +31,9 @@
   - 查找：對 `manifest.prefixLengths` 由長到短取鍵——前 n 個字母小寫、非 a–z 記 `_`、不足 n 補 `_`——第一個存在於 `manifest.shards` 的鍵即為切片。參考實作 `bench/lookup.html`。
   - 收錄（篩選）：不含空格，且有詞頻（frq 或 bnc）、或出現在 ECDICT `exchange` 詞形關係、或在 lexicon 內。
   - 單片 gzip 上限 200KB（超過會自動加長前綴再切；`build.py` 結尾 assert）。
+- `phrases/phrases.json`（TASK-24，本專案自編、CC BY-SA 4.0，**人工維護**，不由 build.py 產生）：`{schemaVersion, phrases[]}`，依 `phrase` 排序。欄位：`phrase`（小寫、含空格，也是查表鍵）、`type`（pv／collocation）、`cefr`（A2–C1）、`glossZh`、`components`（依序對應每個字的 lexicon headword，詞形還原後）、`separable`（受詞可插中間）、`topic`（content 主題 id，只供例句情境）、`downgradedFrom`（人工下調前的級距，選填）。結構見 `phrases/phrases.schema.json`，語意規則與允許的下調清單見 `tests/test_phrases.py`。
+  - 定級：級距 ≥ 組成字最高級距；人工下調只限生活常用片語（創辦人裁示 2026-10-05），必須標 `downgradedFrom`。
+  - 不與 lexicon 已有的多字詞重複；組成字都要在 A1–C1 課綱。
 - `reports/stats.json`：統計；`reports/sample30.md`、`reports/sample50-zh.md`：人工比對抽樣；`reports/bench-cold.json`：冷啟動延遲。
 
 ## 處理規則

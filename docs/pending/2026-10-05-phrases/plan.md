@@ -201,3 +201,33 @@ App 端已核對（背景調查結果，以下行號為調查時的位置）：
 7. 自編片語表的授權：CC BY-SA 4.0（建議）。
 8. 中段插入後，已上到後面的帳號「下一課」會跳回前面的片語課。建議上線前接受、不處理。
 9. WordsScreen 的多字詞 bug：併入 W5 一起修，或另外處理。
+
+---
+
+## 8. 第 2 階段 W1／W2 定稿（2026-10-05）
+
+依創辦人裁示（10-05「照建議」）與執行長裁示：資料獨立放 `data/phrases/phrases.json`（CC BY-SA 4.0，已登記 `data/LICENSES.md`）；18 個片語單元、68 課；固定介系詞片語納入；中段插入造成「下一課」跳回片語課，上線前接受。
+
+### 8.1 手動下調清單
+
+逐一檢查 468 個片語：只有 2 個的級距是被組成字拉高的（定級依據寫「依組成字上調」），其餘 466 個的級距都由常見度下限決定、組成字不高於片語級距，不在下調範圍。兩個都屬生活常用，全部下調：
+
+| 片語 | 原級距 | 下調後 | 拉高它的組成字 | 理由 |
+|---|---|---|---|---|
+| do the laundry | B2 | A2 | laundry（B2） | 日常家務，和已在 A2 的 do the dishes、do homework 同一類；整個片語當一個單位教，學習者不必先學 laundry |
+| hang out | B1 | A2 | hang（B1） | 青少年與朋友間最常用的說法之一（約朋友出去玩），A2 的家人朋友主題就會用到；整個片語當一個單位教 |
+
+資料上以 `downgradedFrom` 標示；validator 只對有標的片語放行「組成字級距高於片語」（`PHRASE_PREREQ`），`data/tests/test_phrases.py` 鎖住下調清單只有這兩個。課綱單字不搬動。
+
+### 8.2 資料欄位定稿
+
+- `components`：依序對應片語每個字的 lexicon headword；字本身有級距就用本身（lay off 用 lay，不還原成 lie），否則用 ECDICT 詞形表的原形（dishes→dish、costs→cost）。
+- `separable`：受詞可插在片語中間（give it up、take it into account、give sb a ride）。依片語釋義所指的義項判斷，共 146 個；屬開發端判斷，W3 寫題目檢查時可再調整。
+- `topic`：沿用草稿，只供例句情境；content 測試確認都是 topics.json 的主題。
+
+### 8.3 排課結果
+
+- 插入點照 §4.1 公式重算，與 §4.1 的表完全一致；`content/curriculum/phrase-units.json` 寫死插入點與分課。
+- 分課做法（一次性產生，之後人工維護）：先算每個片語最早能排的片語單元（同級組成字已教過）；依單元順序填課，晚到的片語先占位，其餘照草稿順序（常見度高者先）；單元內片語動詞在前、同動詞相鄰，再平均切成每課 6–7 個。
+- 先修規則讓 18 個片語排得比第一個片語單元晚（§4.1 估 19 個，差異來自組成字改用詞形還原後的實際 headword）：A2 的 belong to、get lost（級末）、make a mistake（第 3）、get dressed（第 2）；B1 的 calm down、get rid of、waste time（第 4）、make a reservation、on foot（第 3）；B2 的 go bankrupt、make a profit、out of stock、sign a contract、stock up on、submit an application、work overtime（第 4）、phase out、wipe out（第 2）。
+- 各級：A2 4 單元 15 課 104 個、B1 5 單元 20 課 138 個、B2 6 單元 22 課 151 個、C1 3 單元 11 課 75 個。

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://linguaapp.local/schema/curriculum-level.schema.json",
   "title": "課綱級距檔（一個 CEFR 級距一檔：content/curriculum/<level>.json）",
-  "description": "級距 → 主題單元 → 小課。陣列順序即學習順序。小課的 words 是新引入的字（小寫 headword）。",
+  "description": "級距 → 單元（主題單元或片語單元）→ 小課。陣列順序即學習順序。主題單元小課的 words 是新引入的字（小寫 headword）；片語單元（kind＝phrase，TASK-24）小課的 words 是片語（data/phrases/phrases.json 的 phrase）。",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "level", "units"],
@@ -19,15 +19,19 @@
     "unit": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "topic", "titleZh", "lessons"],
+      "required": ["id", "titleZh", "lessons"],
       "properties": {
         "id": {
-          "description": "例：a1-u01；上線後凍結（學習進度引用）",
+          "description": "例：主題單元 a1-u01、片語單元 b1-p01；上線後凍結（學習進度引用）。u／p 與 kind 的一致由 validator 檢查（ID_MISMATCH）",
           "type": "string",
-          "pattern": "^(a1|a2|b1|b2|c1)-u[0-9]{2}$"
+          "pattern": "^(a1|a2|b1|b2|c1)-(u|p)[0-9]{2}$"
+        },
+        "kind": {
+          "description": "片語單元才有，值為 phrase；主題單元省略",
+          "const": "phrase"
         },
         "topic": {
-          "description": "topics.json 的主題 id",
+          "description": "topics.json 的主題 id；主題單元必填（validator 查 UNKNOWN_TOPIC），片語單元沒有",
           "type": "string",
           "pattern": "^[a-z][a-z0-9-]*$"
         },
@@ -45,12 +49,12 @@
       "required": ["id", "words"],
       "properties": {
         "id": {
-          "description": "例：a1-u01-l03；上線後凍結",
+          "description": "例：a1-u01-l03、b1-p01-l02；上線後凍結",
           "type": "string",
-          "pattern": "^(a1|a2|b1|b2|c1)-u[0-9]{2}-l[0-9]{2}$"
+          "pattern": "^(a1|a2|b1|b2|c1)-(u|p)[0-9]{2}-l[0-9]{2}$"
         },
         "words": {
-          "description": "本課新引入的字（小寫 headword）；字數範圍由 validator 檢查（LESSON_SIZE）",
+          "description": "本課新引入的字（小寫 headword）或片語；數量範圍由 validator 檢查（LESSON_SIZE）",
           "type": "array",
           "minItems": 1,
           "items": { "type": "string", "minLength": 1 }

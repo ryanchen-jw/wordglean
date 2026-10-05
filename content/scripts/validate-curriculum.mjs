@@ -1,4 +1,4 @@
-// 用法：node scripts/validate-curriculum.mjs [--lexicon <file>] [--dir <curriculum dir>]
+// 用法：node scripts/validate-curriculum.mjs [--lexicon <file>] [--phrases <file>] [--dir <curriculum dir>]
 // 讀 <dir>/topics.json 與存在的 <dir>/{a1,a2,b1,b2,c1}.json（缺檔＝該級的字報 MISSING_WORD；檔名須與檔內 level 一致）；無錯 exit 0，有錯逐條印出、exit 1。
 
 import { existsSync, readFileSync } from 'node:fs';
@@ -11,6 +11,7 @@ const contentRoot = fileURLToPath(new URL('..', import.meta.url));
 const { values } = parseArgs({
   options: {
     lexicon: { type: 'string', default: resolve(contentRoot, '../data/lexicon/lexicon.json') },
+    phrases: { type: 'string', default: resolve(contentRoot, '../data/phrases/phrases.json') },
     dir: { type: 'string', default: resolve(contentRoot, 'curriculum') },
   },
 });
@@ -21,7 +22,9 @@ const levelFiles = ['a1', 'a2', 'b1', 'b2', 'c1']
   .filter((file) => existsSync(file));
 
 const docs = levelFiles.map(readJson);
-const errors = validateCurriculum(docs, readJson(values.lexicon), readJson(join(values.dir, 'topics.json')));
+const errors = validateCurriculum(docs, readJson(values.lexicon), readJson(join(values.dir, 'topics.json')), {
+  phrases: readJson(values.phrases),
+});
 docs.forEach((doc, i) => {
   const file = basename(levelFiles[i]);
   if (`${String(doc.level).toLowerCase()}.json` !== file) {

@@ -15,6 +15,12 @@ export const COMPOSITION = {
 // 過渡：題庫尚未把造句換成翻譯的級別，照舊題量（1 翻譯＋1 造句）。某級轉換完就從這裡移除。
 export const MS2TR_PENDING_LEVELS = new Set([]);
 
+// 過渡（TASK-24）：片語課已排進課綱、題目還沒寫（W4）的級別。這些級別的片語課（<級>-pNN-lNN）沒有題檔不算錯；
+// 某級的片語課題目寫完就從這裡移除，之後缺題檔即報 MISSING_ITEMS。
+export const PHRASE_ITEMS_PENDING_LEVELS = new Set(['A2', 'B1', 'B2', 'C1']);
+
+export const isPhraseLessonId = (lessonId) => /^[abc][12]-p\d{2}-l\d{2}$/.test(lessonId);
+
 export function compositionFor(level) {
   return MS2TR_PENDING_LEVELS.has(level) ? { ...COMPOSITION, translate: 1, makeSentence: 1 } : COMPOSITION;
 }

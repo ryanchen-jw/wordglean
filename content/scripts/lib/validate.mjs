@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 import Ajv2020 from 'ajv/dist/2020.js';
 import { headwordLevels } from './lexicon.mjs';
 import { CURRICULUM_EXCLUDED_WORDS } from './offensive.mjs';
+import { isPhraseUnit, phraseTable } from './phrases.mjs';
 import { LESSON_MAX_WORDS, LESSON_MIN_WORDS, LEVELS, lessonCount } from './rules.mjs';
 
 const loadSchema = (name) =>
@@ -14,6 +15,7 @@ const ajv = new Ajv2020({ allErrors: true });
 const checkLevelSchema = ajv.compile(loadSchema('curriculum-level.schema.json'));
 const checkTopicsSchema = ajv.compile(loadSchema('topics.schema.json'));
 const checkWordTopicsSchema = ajv.compile(loadSchema('word-topics.schema.json'));
+const checkPhraseUnitsSchema = ajv.compile(loadSchema('phrase-units.schema.json'));
 
 function schemaErrors(check, data, basePath) {
   if (check(data)) return [];
@@ -90,9 +92,15 @@ export function validateWordTopics(wordTopics, lexicon, topics) {
   return errors;
 }
 
+export function validatePhraseUnits(phraseUnits) {
+  return schemaErrors(checkPhraseUnitsSchema, phraseUnits, 'phraseUnits');
+}
+
 // exclude＝課綱排除字：不得排進小課，也不報 MISSING_WORD。
-export function validateCurriculum(levels, lexicon, topics, { exclude = CURRICULUM_EXCLUDED_WORDS } = {}) {
+// phrases＝data/phrases/phrases.json（TASK-24）：片語單元的課查這張表；表中每個 A1–C1 片語都要排進片語單元。
+export function validateCurriculum(levels, lexicon, topics, { exclude = CURRICULUM_EXCLUDED_WORDS, phrases = { phrases: [] } } = {}) {
   const excluded = new Set(exclude);
+  const phraseOf = phraseTable(phrases);
   const errors = [];
   levels.forEach((doc, i) => errors.push(...schemaErrors(checkLevelSchema, doc, `levels/${i}`)));
   errors.push(...validateTopics(topics));
@@ -118,6 +126,13 @@ export function validateCurriculum(levels, lexicon, topics, { exclude = CURRICUL
       checkId(unit.id, unitPath);
       if (!unit.id.startsWith(`${prefix}-`)) {
         errors.push({ code: 'ID_MISMATCH', path: unitPath, message: `單元 ${unit.id} 不屬於 ${doc.level}` });
+      }
+      if (isPhraseUnit(unit) !== /-p\d{2}$/.test(unit.id)) {
+        errors.push({ code: 'ID_MISMATCH', path: unitPath, message: `單元 ${unit.id}：片語單元（kind＝phrase）的 ID 用 -pNN、主題單元用 -uNN` });
+      }
+      if (isPhraseUnit(unit)) {
+        checkPhraseLessons(unit, unitPath);
+        return;
       }
       if (!topicLevels[doc.level].includes(unit.topic)) {
         errors.push({ code: 'UNKNOWN_TOPIC', path: unitPath, message: `${doc.level} 未列主題：${unit.topic}` });
@@ -172,5 +187,54 @@ export function validateCurriculum(levels, lexicon, topics, { exclude = CURRICUL
       errors.push({ code: 'MISSING_WORD', path: level, message: `${level} 的「${word}」未被任何小課引入` });
     }
   }
+  for (const [phrase, entry] of phraseOf) {
+    if (LEVELS.includes(entry.cefr) && !introducedAt.has(phrase)) {
+      errors.push({ code: 'MISSING_PHRASE', path: entry.cefr, message: `${entry.cefr} 的片語「${phrase}」未排進任何片語單元` });
+    }
+  }
   return errors;
+
+  // 片語單元：查片語表、級距一致、課的大小；同級組成字必須在本單元之前的主題課已引入（PHRASE_PREREQ），
+  // 組成字級距高於片語者只容許人工下調的片語（downgradedFrom）。
+  function checkPhraseLessons(unit, unitPath) {
+    const level = unit.id.slice(0, 2).toUpperCase();
+    unit.lessons.forEach((lesson, si) => {
+      const lessonPath = `${unitPath}/lessons/${si}`;
+      checkId(lesson.id, lessonPath);
+      if (!lesson.id.startsWith(`${unit.id}-`)) {
+        errors.push({ code: 'ID_MISMATCH', path: lessonPath, message: `小課 ${lesson.id} 不屬於 ${unit.id}` });
+      }
+      const n = lesson.words.length;
+      if (n < LESSON_MIN_WORDS || n > LESSON_MAX_WORDS) {
+        errors.push({ code: 'LESSON_SIZE', path: lessonPath, message: `${lesson.id} 有 ${n} 個片語，應為 ${LESSON_MIN_WORDS}–${LESSON_MAX_WORDS}` });
+      }
+      lesson.words.forEach((phrase, wi) => {
+        const path = `${lessonPath}/words/${wi}`;
+        if (introducedAt.has(phrase)) {
+          errors.push({ code: 'DUPLICATE_INTRO', path, message: `「${phrase}」已在 ${introducedAt.get(phrase)} 引入` });
+          return;
+        }
+        const entry = phraseOf.get(phrase);
+        if (!entry) {
+          errors.push({ code: 'UNKNOWN_PHRASE', path, message: `「${phrase}」不在片語表` });
+          return;
+        }
+        if (entry.cefr !== level) {
+          errors.push({ code: 'LEVEL_MISMATCH', path, message: `片語「${phrase}」屬 ${entry.cefr}，不應出現在 ${level}` });
+        }
+        for (const c of entry.components) {
+          const cl = wordLevel.get(c);
+          const rank = LEVELS.indexOf(cl);
+          if (rank === -1) {
+            errors.push({ code: 'PHRASE_PREREQ', path, message: `「${phrase}」的組成字「${c}」不在 A1–C1 課綱` });
+          } else if (rank > LEVELS.indexOf(level)) {
+            if (!entry.downgradedFrom) errors.push({ code: 'PHRASE_PREREQ', path, message: `「${phrase}」的組成字「${c}」屬 ${cl}，高於片語級距 ${level}` });
+          } else if (cl === level && !introducedAt.has(c) && !excluded.has(c)) {
+            errors.push({ code: 'PHRASE_PREREQ', path, message: `「${phrase}」的組成字「${c}」在本片語單元之前尚未引入` });
+          }
+        }
+        introducedAt.set(phrase, lesson.id);
+      });
+    });
+  }
 }

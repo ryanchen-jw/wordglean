@@ -1,10 +1,11 @@
 // 用法：node scripts/check-items.mjs [--require-judge] [--dir <items dir>] [--lexicon <file>] [--dict <dir>] [--curriculum <dir>] [--allowlist <file>] [檔案…]
-// 未指定檔案＝檢查 <dir>/<level>/*.json 全部。無錯 exit 0；有錯逐條印出、exit 1。
+// 未指定檔案＝檢查 <dir>/<level>/*.json 全部，並查課綱每課都有題檔（MISSING_ITEMS；片語課過渡規則見 item-rules.mjs
+// 的 PHRASE_ITEMS_PENDING_LEVELS）。無錯 exit 0；有錯逐條印出、exit 1。
 
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
 import { parseArgs } from 'node:util';
-import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from './lib/check-items.mjs';
+import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkItemCoverage, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from './lib/check-items.mjs';
 import { DEFAULT_PATHS, loadCheckContext } from './lib/items-context.mjs';
 
 const { values, positionals } = parseArgs({
@@ -49,5 +50,15 @@ for (const e of [...checkLevelAnswerPositions(docs), ...checkUnitAnswerPositions
   console.error(`${e.code}	${e.path}	${e.message}`);
   total += 1;
 }
-console.log(`檢查 ${files.length} 課：${total ? `${total} 個錯誤` : '全綠'}${notices ? `（另有 ${notices} 個提示：舊格式缺 TASK-12 欄位）` : ''}`);
+let pending = 0;
+if (!positionals.length) {
+  const coverage = checkItemCoverage(ctx.lessons, new Set(files.map((f) => basename(f, '.json'))));
+  for (const e of coverage.errors) console.error(`${e.code}	${e.path}	${e.message}`);
+  total += coverage.errors.length;
+  pending = coverage.pending;
+}
+console.log(
+  `檢查 ${files.length} 課：${total ? `${total} 個錯誤` : '全綠'}${notices ? `（另有 ${notices} 個提示：舊格式缺 TASK-12 欄位）` : ''}` +
+    (pending ? `；${pending} 堂片語課尚未產題（過渡，見 PHRASE_ITEMS_PENDING_LEVELS）` : ''),
+);
 process.exitCode = total ? 1 : 0;

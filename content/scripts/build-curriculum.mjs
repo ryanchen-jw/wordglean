@@ -1,5 +1,6 @@
-// 用法：node scripts/build-curriculum.mjs [--lexicon <file>] [--dir <curriculum dir>]
-// 讀 <dir>/topics.json、<dir>/word-topics.json 與 lexicon，產生 <dir>/{a1,a2,b1,b2,c1}.json 與 <dir>/STATS.md。
+// 用法：node scripts/build-curriculum.mjs [--lexicon <file>] [--phrases <file>] [--dir <curriculum dir>]
+// 讀 <dir>/topics.json、<dir>/word-topics.json、<dir>/phrase-units.json、lexicon 與片語表，產生 <dir>/{a1,a2,b1,b2,c1}.json 與 <dir>/STATS.md。
+// 主題單元由 allocate() 排出，片語單元（TASK-24）再依 phrase-units.json 插入。
 // 先檢查分類檔、產生後再跑 validateCurriculum；任一有錯即逐條印出、exit 1、不寫檔。輸出位元組可重現。
 
 import { createHash } from 'node:crypto';
@@ -8,13 +9,15 @@ import { join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { allocate } from './lib/allocate.mjs';
+import { insertPhraseUnits } from './lib/phrases.mjs';
 import { curriculumStats, renderStats } from './lib/stats.mjs';
-import { validateCurriculum, validateWordTopics } from './lib/validate.mjs';
+import { validateCurriculum, validatePhraseUnits, validateWordTopics } from './lib/validate.mjs';
 
 const contentRoot = fileURLToPath(new URL('..', import.meta.url));
 const { values } = parseArgs({
   options: {
     lexicon: { type: 'string', default: resolve(contentRoot, '../data/lexicon/lexicon.json') },
+    phrases: { type: 'string', default: resolve(contentRoot, '../data/phrases/phrases.json') },
     dir: { type: 'string', default: resolve(contentRoot, 'curriculum') },
   },
 });
@@ -24,6 +27,8 @@ const lexicon = JSON.parse(lexiconBytes.toString('utf8'));
 const readJson = (name) => JSON.parse(readFileSync(join(values.dir, name), 'utf8'));
 const topics = readJson('topics.json');
 const wordTopics = readJson('word-topics.json');
+const phraseUnits = readJson('phrase-units.json');
+const phrases = JSON.parse(readFileSync(values.phrases, 'utf8'));
 
 function fail(errors) {
   for (const e of errors) console.error(`${e.code}\t${e.path}\t${e.message}`);
@@ -31,11 +36,11 @@ function fail(errors) {
   process.exit(1);
 }
 
-const tagErrors = validateWordTopics(wordTopics, lexicon, topics);
+const tagErrors = [...validateWordTopics(wordTopics, lexicon, topics), ...validatePhraseUnits(phraseUnits)];
 if (tagErrors.length) fail(tagErrors);
 
-const levels = allocate(wordTopics, lexicon, topics);
-const errors = validateCurriculum(levels, lexicon, topics);
+const levels = insertPhraseUnits(allocate(wordTopics, lexicon, topics), phraseUnits);
+const errors = validateCurriculum(levels, lexicon, topics, { phrases });
 if (errors.length) fail(errors);
 
 // 每課的字放同一行，其餘照 JSON.stringify 兩格縮排。

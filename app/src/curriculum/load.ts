@@ -19,6 +19,8 @@ export function loadLevel(level: Level): Promise<LevelDoc> {
         if (!res.ok) throw new Error(`課綱載入失敗：${level} ${res.status}`)
         return res.json() as Promise<LevelDoc>
       })
+      // 片語單元（TASK-24，ID <級>-pNN）尚無題目、App 也還沒支援；W5 前先略過，課程地圖與「下一課」都只看主題單元
+      .then((d) => ({ ...d, units: d.units.filter((u) => !('kind' in u)) }))
     doc.catch(() => cache.delete(level))
     cache.set(level, doc)
   }

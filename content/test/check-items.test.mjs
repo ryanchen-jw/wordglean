@@ -4,10 +4,10 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
+import { readdirSync, readFileSync } from 'node:fs';
+import { blockingErrors, checkAnswerLongest, checkAnswerPositionPatterns, checkItemCoverage, checkLessonItems, checkLevelAnswerPositions, checkUnitAnswerPositions } from '../scripts/lib/check-items.mjs';
 import { loadCheckContext } from '../scripts/lib/items-context.mjs';
-import { COMPOSITION, MS2TR_PENDING_LEVELS, compositionFor } from '../scripts/lib/item-rules.mjs';
+import { COMPOSITION, MS2TR_PENDING_LEVELS, PHRASE_ITEMS_PENDING_LEVELS, compositionFor } from '../scripts/lib/item-rules.mjs';
 
 const base = loadCheckContext({ allowlist: 'no-such-file.json' });
 const fixture = (name) => JSON.parse(readFileSync(new URL(`./fixtures/items/${name}.json`, import.meta.url), 'utf8'));
@@ -672,4 +672,25 @@ test('最終審後修正條目可標記已複審（rechecked：by＋at）；rech
   doc.judge.resolvedAfterFinalReview[0].rechecked = { by: '執行長第③關' };
   const errors = checkA1(doc);
   assert.ok(errors.length > 0 && errors.every((e) => e.code === 'SCHEMA'));
+});
+
+// ---- TASK-24：課綱每課都要有題檔；片語課在 PHRASE_ITEMS_PENDING_LEVELS 的級別過渡期略過 ----
+test('checkItemCoverage：主題課缺題檔 → MISSING_ITEMS；待產題級別的片語課只計數；移出待產題後片語課也要有題檔', () => {
+  const lessons = new Map(
+    [['a2-u01-l01', 'A2'], ['a2-u01-l02', 'A2'], ['a2-p01-l01', 'A2'], ['b1-p01-l01', 'B1']].map(([id, level]) => [id, { id, level }]),
+  );
+  assert.deepEqual(checkItemCoverage(lessons, new Set(['a2-u01-l01']), new Set(['A2', 'B1'])), {
+    errors: [{ code: 'MISSING_ITEMS', path: 'a2-u01-l02', message: '課綱有 a2-u01-l02，題庫沒有題檔' }],
+    pending: 2,
+  });
+  const done = checkItemCoverage(lessons, new Set(['a2-u01-l01', 'a2-u01-l02', 'b1-p01-l01']), new Set(['A2']));
+  assert.deepEqual(done, { errors: [], pending: 1 });
+  assert.deepEqual(codes(checkItemCoverage(lessons, new Set(['a2-u01-l01', 'a2-u01-l02']), new Set(['B1'])).errors), ['MISSING_ITEMS a2-p01-l01']);
+  // 預設待產題級別：A2–C1（片語課全部尚未產題）
+  assert.deepEqual([...PHRASE_ITEMS_PENDING_LEVELS], ['A2', 'B1', 'B2', 'C1']);
+});
+
+test('正式課綱：主題課全有題檔、片語課 68 堂全在過渡清單內', () => {
+  const ids = new Set(['a1', 'a2', 'b1', 'b2', 'c1'].flatMap((l) => readdirSync(new URL(`../items/${l}/`, import.meta.url)).map((f) => f.replace(/\.json$/, ''))));
+  assert.deepEqual(checkItemCoverage(base.lessons, ids), { errors: [], pending: 68 });
 });

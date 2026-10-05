@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linguaapp.local/schema/phrase-units.schema.json",
+  "title": "片語單元插入點與分課（content/curriculum/phrase-units.json，人工維護）",
+  "description": "級距 → 依序的片語單元。每個單元插在 after 指定的主題單元之後，lessons 是各課的片語（data/phrases/phrases.json 的 phrase）。單元與小課 ID 由 build-curriculum 依陣列順序產生（b1-p01、b1-p01-l01），上線後凍結。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "levels"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "propertyNames": { "enum": ["A1", "A2", "B1", "B2", "C1"] },
+      "patternProperties": {
+        "^(A1|A2|B1|B2|C1)$": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 99,
+          "items": { "$ref": "#/$defs/unit" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["after", "lessons"],
+      "properties": {
+        "after": {
+          "description": "插在這個主題單元之後（同級）",
+          "type": "string",
+          "pattern": "^(a1|a2|b1|b2|c1)-u[0-9]{2}$"
+        },
+        "lessons": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  }
+}
