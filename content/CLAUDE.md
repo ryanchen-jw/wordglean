@@ -70,6 +70,27 @@
 
 片語單元也套用 `DUPLICATE_ID`、`ID_MISMATCH`（另查 `kind: "phrase"`↔`-pNN`）、`LEVEL_MISMATCH`（片語級距≠所在級距）、`LESSON_SIZE`、`DUPLICATE_INTRO`。
 
+## 片語課（TASK-24）的題庫檢查
+
+片語課＝課號 `<級>-pNN-lNN`（plan：`docs/pending/2026-10-05-phrases/plan.md`）；片語表經 `phrases.mjs` 的 `phraseTable` 讀 `data/phrases/phrases.json`（`check-items --phrases` 可改路徑，檔案不存在＝空表）。題量同主題課：每片語一張卡＋9 題（配對題由 App 從單字卡組，不進題庫）。
+
+**片語比對規則**（`scripts/lib/phrase-match.mjs`，檢查器與相似度骨架共用）：
+1. 逐字比對，不跨子句（遇 `. , ; : ! ?`、引號、括號斷開）。
+2. 每個成分接受詞形變化：ECDICT 詞形表或規則還原的原形＝成分即算（gave up、giving up、looked forward to）；小品詞沒有變化形，give in 不會對到 give up。
+3. 片語裡的 `your`／`one's` 代表任一所有格（do your best ↔ did my best）；冠詞照原字。
+4. 片語表標 `separable: true` 的，第 1 個成分後可插入 1–3 個字當受詞（pick it up、turn the light on、picked my little brother up）；插入 4 字以上或片語不可分離時不算。
+5. 不收插入形容詞或省略冠詞（made an important decision 不算 make a decision）——撰寫時照片語原樣寫。
+
+**檢查器代碼**（只在片語課）：
+
+| 代碼 | 意思 |
+|---|---|
+| `PHRASE_MISSING` | 片語卡例句沒用到該片語；聽打、聽選音檔、跟讀句沒有任何本課片語；mcq 正解不是完整的本課片語（只填動詞或拆開都不算）；翻譯 hintWords 沒有本課片語，或某個參考答案沒用到提示片語。閱讀不要求 |
+| `PHRASE_GLOSS` | 片語卡 glossZh：義項要用全形「；」分隔、受詞位置寫「⋯」（不用 `…`、`...`、半形 `;` `,`）；第一義去括號後不可為空，且要等於片語表 glossZh 的第一義（片語表本身用 `…`，比對時 `…`＝`⋯`） |
+| `OVER_LEVEL`（擴充） | 片語課用到片語表中高於本課級距的片語（照片語自己的級距，組成字都低也一樣）。主題課不查片語表 |
+
+所有課的用字級距檢查另加一輪：lexicon 含空格的多字詞也認詞形變化（pertains to＝pertain to）。相似度自查的句型骨架（`similarity-lemma.mjs` 的 `skeleton`）目標為多字詞時以整個片語為單位，後接類別取片語最後一字之後；只出現動詞（give up 卡 vs "gave the book"）不算同目標。
+
 ## 主題清單出處代碼（`sources`）
 
 | 代碼 | 出處 | 一手核對 |

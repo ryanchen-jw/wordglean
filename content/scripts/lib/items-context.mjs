@@ -5,6 +5,7 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { headwordLevels } from './lexicon.mjs';
 import { createDictLemmas } from './english.mjs';
+import { phraseTable } from './phrases.mjs';
 
 export const CONTENT_ROOT = fileURLToPath(new URL('../..', import.meta.url));
 export const DEFAULT_PATHS = {
@@ -13,6 +14,7 @@ export const DEFAULT_PATHS = {
   curriculum: resolve(CONTENT_ROOT, 'curriculum'),
   allowlist: resolve(CONTENT_ROOT, 'items/allowlist.json'),
   items: resolve(CONTENT_ROOT, 'items'),
+  phrases: resolve(CONTENT_ROOT, '../data/phrases/phrases.json'),
 };
 
 const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'));
@@ -40,6 +42,12 @@ export function loadLessons(curriculumDir) {
   return lessons;
 }
 
+// 片語表（TASK-24）：data/phrases/phrases.json（{ schemaVersion, phrases: [...] }）經 phrases.mjs 唯一入口 → Map<片語, 條目>；檔案不存在＝空表
+export function loadPhrases(file) {
+  if (!existsSync(file)) return new Map();
+  return phraseTable(readJson(file));
+}
+
 // allowlist.json：{ "words": [{ "word": 小寫, "reason": 說明 }] }
 export function loadAllowlist(file) {
   if (!existsSync(file)) return new Set();
@@ -54,6 +62,7 @@ export function loadCheckContext(paths = {}) {
     levels: headwordLevels(lexiconEntries),
     lemmas: createDictLemmas(p.dict),
     allowlist: loadAllowlist(p.allowlist),
+    phrases: loadPhrases(p.phrases),
     lessons: loadLessons(p.curriculum),
     topics: readJson(join(p.curriculum, 'topics.json')),
   };

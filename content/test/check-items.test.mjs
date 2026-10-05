@@ -674,6 +674,130 @@ test('最終審後修正條目可標記已複審（rechecked：by＋at）；rech
   assert.ok(errors.length > 0 && errors.every((e) => e.code === 'SCHEMA'));
 });
 
+// ---- TASK-24 片語課（課號 -pNN-，plan：docs/pending/2026-10-05-phrases/plan.md §5） ----
+// 片語表＝真實 data/phrases/phrases.json（2026-10-05 W1 實檔：give up／pick up／turn on 為 A2 可分離、take a photo A2、put up with B1 且組成字皆 A1）。
+
+const P_CTX = base;
+const A2_P01 = { id: 'a2-p01-l01', level: 'A2', words: ['give up', 'pick up', 'turn on', 'take a photo'] };
+const checkP = (doc, extra = {}) => checkLessonItems(doc, { ...P_CTX, lesson: A2_P01, ...extra });
+const phraseFixture = () => fixture('a2-p01-l01');
+
+test('片語課樣本：全綠（例句用 gave up、turn the light on 等詞形與分離寫法也算出現目標片語）', () => {
+  assert.equal(P_CTX.phrases.get('give up').cefr, 'A2');
+  assert.deepEqual(checkP(phraseFixture()), []);
+});
+
+test('片語課題量同主題課：每片語一張卡＋9 題（配對由 App 從單字卡組，不進題庫）', () => {
+  const doc = phraseFixture();
+  doc.items.splice(3, 1); // 拿掉 take a photo 的卡
+  doc.items.splice(6, 1); // 拿掉一題跟讀
+  const errors = checkP(doc);
+  assert.deepEqual(codes(errors), ['COMPOSITION items', 'COMPOSITION items']);
+  assert.ok(errors.some((e) => /缺：take a photo/.test(e.message)));
+  assert.ok(errors.some((e) => /shadowing 應為 2 題，實際 1/.test(e.message)));
+});
+
+test('PHRASE_MISSING：片語卡例句沒用到該片語（只用到動詞 give 不算）', () => {
+  const doc = phraseFixture();
+  doc.items[0].exampleEn = 'Tom gave the piano to his sister.';
+  const errors = checkP(doc);
+  assert.deepEqual(codes(errors), ['PHRASE_MISSING items/0/exampleEn']);
+  assert.match(errors[0].message, /give up/);
+});
+
+test('PHRASE_MISSING：聽打、聽選音檔、跟讀句沒有任何本課片語；閱讀不要求', () => {
+  const doc = phraseFixture();
+  doc.items[4].sentenceEn = 'She went to school with her son.';
+  doc.items[5].audioEn = 'Amy looked at the old bridge.';
+  doc.items[6].sentenceEn = 'Do not stop, you can do it.';
+  doc.items[10].passageEn = doc.items[10].passageEn.replace('took a photo of it', 'looked at it');
+  assert.deepEqual(codes(checkP(doc)), ['PHRASE_MISSING items/4/sentenceEn', 'PHRASE_MISSING items/5/audioEn', 'PHRASE_MISSING items/6/sentenceEn']);
+});
+
+test('PHRASE_MISSING：mcq 正解必須是整個本課片語（可變化，不可只填動詞、不可拆開）', () => {
+  const onlyVerb = phraseFixture();
+  onlyVerb.items[8].stemEn = 'The test was very hard, but she did not ____ up.';
+  onlyVerb.items[8].options = ['give', 'pick', 'turn', 'take'];
+  assert.deepEqual(codes(checkP(onlyVerb)), ['PHRASE_MISSING items/8/options/0']);
+  const split = phraseFixture();
+  split.items[9].options[2] = 'picked it up';
+  split.items[9].stemEn = 'I saw my phone on the floor and ____.';
+  assert.deepEqual(codes(checkP(split)), ['PHRASE_MISSING items/9/options/2']);
+});
+
+test('PHRASE_MISSING：翻譯 hintWords 要有本課片語、每個參考答案都要用到（可變化、可分離）', () => {
+  const noHint = phraseFixture();
+  noHint.items[11].hintWords = ['smoke'];
+  assert.deepEqual(codes(checkP(noHint)), ['PHRASE_MISSING items/11/hintWords']);
+  const noRef = phraseFixture();
+  noRef.items[12].referenceEn[1] = 'Please open the TV.';
+  const errors = checkP(noRef);
+  assert.deepEqual(codes(errors), ['PHRASE_MISSING items/12/referenceEn/1']);
+  assert.match(errors[0].message, /turn on/);
+});
+
+test('主題課不套片語課規則：A1 樣本課不受影響', () => {
+  assert.deepEqual(checkLessonItems(fixture('a1-u01-l01'), { ...P_CTX, lesson: A1_L01 }), []);
+});
+
+test('PHRASE_GLOSS：片語卡釋義用全形「；」分隔義項、受詞位置寫「⋯」', () => {
+  const doc = phraseFixture();
+  doc.items[1].glossZh = '撿起;接（人）';
+  doc.items[0].glossZh = '放棄...';
+  doc.items[3].glossZh = '拍照…';
+  const errors = checkP(doc);
+  assert.deepEqual(codes(errors), ['PHRASE_GLOSS items/0/glossZh', 'PHRASE_GLOSS items/1/glossZh', 'PHRASE_GLOSS items/3/glossZh']);
+  const msg = (path) => errors.find((e) => e.path === path).message;
+  assert.match(msg('items/0/glossZh'), /不用 … 或 \.\.\./);
+  assert.match(msg('items/1/glossZh'), /不用半形/);
+  assert.match(msg('items/3/glossZh'), /不用 … 或 \.\.\./);
+  // 第一義對得上片語表時，後面義項的格式照樣擋
+  const later = phraseFixture();
+  later.items[1].glossZh = '撿起；接（人）, 拿';
+  later.items[3].glossZh = '拍照；拍⋯的照片...';
+  const laterErrors = checkP(later);
+  assert.deepEqual(codes(laterErrors), ['PHRASE_GLOSS items/1/glossZh', 'PHRASE_GLOSS items/3/glossZh']);
+  assert.doesNotMatch(laterErrors.map((e) => e.message).join('\n'), /第一義/);
+});
+
+test('PHRASE_GLOSS：第一義（App 單字卡與配對題顯示的那一義）要等於片語表的第一義、去括號後不可為空', () => {
+  const doc = phraseFixture();
+  doc.items[0].glossZh = '拋棄；放棄';
+  doc.items[2].glossZh = '（電器、燈）；打開';
+  const errors = checkP(doc);
+  assert.deepEqual(codes(errors), ['PHRASE_GLOSS items/0/glossZh', 'PHRASE_GLOSS items/2/glossZh']);
+  assert.match(errors[0].message, /第一義「拋棄」≠ 片語表第一義「放棄」/);
+  assert.match(errors[1].message, /去掉括號註解後是空的/);
+  const more = phraseFixture();
+  more.items[1].glossZh = '撿起；接（人）；學會';
+  assert.deepEqual(checkP(more), []);
+  // 真實片語表的受詞位置寫「…」（do without＝沒有…也行）：卡片寫「⋯」視為同一義
+  const ellipsis = phraseFixture();
+  Object.assign(ellipsis.items[0], { word: 'do without', exampleEn: 'We can do without a car.', glossZh: '沒有⋯也行' });
+  const lesson = { ...A2_P01, words: ['do without', 'pick up', 'turn on', 'take a photo'] };
+  assert.equal(P_CTX.phrases.get('do without').glossZh, '沒有…也行');
+  assert.deepEqual(checkP(ellipsis, { lesson }).filter((e) => e.code === 'PHRASE_GLOSS'), []);
+  ellipsis.items[0].glossZh = '沒有⋯也可以';
+  assert.deepEqual(codes(checkP(ellipsis, { lesson }).filter((e) => e.code === 'PHRASE_GLOSS')), ['PHRASE_GLOSS items/0/glossZh']);
+});
+
+test('片語課用字範圍：用到片語表中高於本課的片語（put up with B1，組成字皆 A1）→ OVER_LEVEL，含詞形變化', () => {
+  const doc = phraseFixture();
+  doc.items[6].sentenceEn = "Don't give up, I can't put up with it.";
+  doc.items[7].sentenceEn = 'Please turn on the radio, she puts up with the noise.';
+  const errors = checkP(doc);
+  assert.deepEqual(codes(errors), ['OVER_LEVEL items/6/sentenceEn', 'OVER_LEVEL items/7/sentenceEn']);
+  assert.match(errors[0].message, /put up with\(B1\)/);
+});
+
+test('lexicon 多字詞也認詞形變化：pertains to＝pertain to（C1；pertain 無級距）在 B1 課報 OVER_LEVEL、不是 UNLEVELED', () => {
+  const doc = fixture('b1-u01-l01');
+  card(doc, 0).exampleEn = 'This rule pertains to everyone, whether young or old.';
+  const errors = checkB1(doc);
+  assert.deepEqual(codes(errors), ['OVER_LEVEL items/0/exampleEn']);
+  assert.match(errors[0].message, /pertain to\(C1\)/);
+});
+
 // ---- TASK-24：課綱每課都要有題檔；片語課在 PHRASE_ITEMS_PENDING_LEVELS 的級別過渡期略過 ----
 test('checkItemCoverage：主題課缺題檔 → MISSING_ITEMS；待產題級別的片語課只計數；移出待產題後片語課也要有題檔', () => {
   const lessons = new Map(

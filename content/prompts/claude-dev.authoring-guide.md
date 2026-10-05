@@ -206,3 +206,26 @@ A1 第 1–3 批、A2 第 1–2 批、B1 第 1–2 批、B2 第 1 批三關審�
 10. **改動留痕**：每處改動記在該課 `judge.resolvedAfterFinalReview`，message 開頭寫「創辦人裁示：造句改翻譯：」。
 11. **中文沒有時間詞時，時態要點要收過去式與現在完成式等合理寫法**：要限定時態，就在中文題目加時間詞（§1、§11.18）。
     ✗ A1 u16-l05「他沒有回答我的問題。」＋要點只收過去式——He hasn't answered my question. 會被判錯；A2 u04-l09「我在抽屜裡找到一捲膠帶。」＋要點「『找到』用過去式（例如 found）」——I've found a roll of tape in the drawer. 會被判錯 ✓ 要點「時態可用過去式或現在完成式（例如 didn't answer、hasn't answered；found、have found 等）」；或題目加時間詞（「我昨天在抽屜裡找到…」）再只收過去式
+
+## 13. 片語課（TASK-24）
+
+片語課＝課號 `<級>-pNN-lNN`，每課的「字」是片語（片語動詞與搭配，來自 `data/phrases/phrases.json`）。題量、題型與主題課相同：每個片語一張卡＋9 題（聽打 1、聽選 1、跟讀 2、選擇 2、閱讀 1、翻譯 2）；配對題由 App 從片語卡自動組，不寫進題庫。§1–§12 照常適用，本節是片語課另外要守的。檢查器的片語比對規則（詞形變化、可分離片語插入 1–3 字）見 `content/CLAUDE.md`「片語課的題庫檢查」。
+
+1. **片語卡**：`word` 寫片語原形（片語表的鍵，小寫）。例句要用到整個片語，而且用的是 `glossZh` 第一義那個意思；可以變化詞形（gave up、is looking forward to）。`glossZh` 的第一義照抄片語表的第一義（App 單字卡選項與配對題只顯示第一義），要多列義項就用全形「；」接在後面；受詞位置寫「⋯」（為⋯負責），補充說明用全形括號（上（車、船））。檢查器 `PHRASE_GLOSS` 會擋。干擾釋義優先用**同動詞的其他片語**的意思（give up 卡配 give in「讓步」、give out「分發」），其次同小品詞的片語；不用一眼就能排除的意思。
+   ✗ glossZh「放棄...」「撿起;接（人）」 ✓「放棄」「撿起；接（人）」
+2. **目標片語要出現在題目裡**（檢查器 `PHRASE_MISSING`）：聽打、聽選音檔、跟讀每句至少一個本課片語；閱讀短文盡量帶入、不強制。§11.3「目標字要有情境」照常：每個片語除了卡片，至少再出現在一題有句子的題目。
+3. **選擇題：空格填整個片語，不可只看小品詞就猜到**。
+   - 正解要是完整的片語（可以變化詞形，例如 gave up），不可只挖空動詞或只挖空小品詞；檢查器會擋。
+   - 四個選項都是片語，**同一種結構**：都可接受詞或都不接、時態變化一致（gave up／gave in／picked up／turned on），不可只有一個選項的形式放得進空格。
+   - 選項要混用「同動詞不同小品詞」與「同小品詞不同動詞」（give up／give in／pick up／turn up）：只看動詞或只看小品詞都排除不完。
+   - 題幹不可留下只跟正解搭配的介系詞或受詞線索：空格後接 to＋動名詞時，干擾項也要是以 to 結尾的片語，或乾脆改寫題幹；空格後接受詞時，四個選項都要能接受詞。
+   - 搭配題（make a decision、take a photo）的干擾項換動詞（do／take／have a decision），考的是「哪個動詞」，題幹不可出現能推出動詞的字。
+   ✗ "I'm looking forward ____ seeing you."（只挖 to，看介系詞就會）；"She ____ the TV."，選項 turned on／gave up／got up／sat down（只有 turned on 能接受詞） ✓ "She ____ the TV."，選項 turned on／turned up／picked up／gave up（都能接受詞，靠語意判斷）
+4. **翻譯題**：`hintWords` 放整個片語原形（"give up"，不拆字），每題至少一個本課片語；每個參考答案變體都要用到提示片語（可以變化詞形、可分離的可以把受詞插在中間）。評分要點寫「用片語表達，例如 gave up smoking 等」，同義的單字說法（quit）要不要收，在要點寫明；不收就在中文題目裡讓意思明確指向片語。兩題翻譯練不同片語（`TRANSLATE_HINT_DUP`）。
+5. **可分離片語**（片語表 `separable: true`，例如 pick up、turn on、give up）：
+   - 受詞是代名詞時**一定要放中間**（pick it up，不寫 pick up it）；受詞是名詞時兩種位置都對，題目裡兩種都要出現過。
+   - 中間只放 1–3 個字的短受詞（turn the light on、picked my little brother up）；更長的受詞放片語後面，否則檢查器認不出片語。
+   - 選擇題的正解一律寫成不分開的形式（空格只有一個），不出「把片語拆開」的句子。
+   - 翻譯參考答案兩種位置都正確時，兩種都列成變體（Please turn on the TV.／Please turn the TV on.），評分要點寫明受詞可放中間或後面。
+   - 不可分離的片語（look forward to、put up with、get on the bus 的 get on）不可把受詞插在中間。
+6. **用字範圍**：除了單字級距，片語表裡高於本課級距的片語也不可用（例如 A2 片語課不用 B1 的 put up with，即使 put、up、with 都是 A1）；檢查器以 `OVER_LEVEL` 擋。同級還沒教到的片語，比照 §11.26 不當干擾項、盡量不寫進情境句。檢查器分不出字面用法：A2 片語課寫 "I sleep in a small room." 或 "We work on Sundays." 會被當成 sleep in（B1）、work on（B2）擋下——換個說法（"My room is small."、"We work every Sunday."），不要為了過檢查器寫出不自然的句子。

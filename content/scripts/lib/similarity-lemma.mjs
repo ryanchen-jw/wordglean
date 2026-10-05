@@ -3,6 +3,7 @@
 // 共同實詞數 ÷ 兩句實詞數的較小者。比率只是篩選，≥門檻的句對要人工確認「主詞、情境、句型至少換兩項」。
 
 import { ruleLemmas } from './english.mjs';
+import { findPhrase } from './phrase-match.mjs';
 
 export const STOPWORDS = new Set(
   ('a an the and or but so to of in on at for with from by as is are was were be been being am do does did have has had ' +
@@ -83,10 +84,19 @@ const PREPOSITIONS = new Set('on in at to for from with about into by'.split(' '
 const classOf = (t) => (PRONOUNS.has(t) ? 'PRON' : QUANTITY.has(t) || /^\d/.test(t) ? 'QTY' : DETERMINERS.has(t) ? 'DET' : 'N');
 const nextClass = (t) => (t === undefined ? 'END' : t === 'that' ? 'THAT' : PRONOUNS.has(t) || DETERMINERS.has(t) ? 'NP' : QUANTITY.has(t) || /^\d/.test(t) ? 'QTY' : PREPOSITIONS.has(t) ? t : 'W');
 
+// 片語目標（TASK-24，含空格）：整個片語當目標字，用 phrase-match 找（詞形變化；片語表標 separable 的可分離），
+// 後接類別取片語最後一個字之後的詞。只有動詞、沒有整個片語（give up 卡 vs "gave the book"）不算。
+function phraseEnd(text, phrase, ctx) {
+  const [hit] = findPhrase(text, phrase, { lemmas: ctx.lemmas, separable: !!ctx.phrases?.get(phrase)?.separable });
+  if (!hit) return -1;
+  const before = text.slice(0, hit.at(-1).end).toLowerCase().replaceAll('’', "'").match(/[a-z0-9]+(?:'[a-z]+)?/g) ?? [];
+  return before.length - 1;
+}
+
 export function skeleton(text, target, ctx) {
   const toks = text.toLowerCase().replaceAll('’', "'").match(/[a-z0-9]+(?:'[a-z]+)?/g) ?? [];
-  const t = target.toLowerCase().split(/\s+/)[0];
-  const at = toks.findIndex((w) => w === t || lemmatize(w, ctx) === t);
+  const t = target.toLowerCase().trim();
+  const at = t.includes(' ') ? phraseEnd(text, t, ctx) : toks.findIndex((w) => w === t || lemmatize(w, ctx) === t);
   if (at < 0) return null;
   const start = toks.findIndex((w) => !SKIP_START.has(w));
   const next = nextClass(toks[at + 1]);

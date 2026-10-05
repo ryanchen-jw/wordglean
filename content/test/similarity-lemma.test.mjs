@@ -76,6 +76,29 @@ test('skeletonPairs 只列出同骨架的情境句', () => {
   assert.deepEqual(skeletonPairs(doc, ctx).map((p) => p.where), ['q02 listenType']);
 });
 
+// ---- TASK-24 片語課：骨架以整個片語為目標（不再只取第一個字） ----
+
+test('句型骨架（片語）：目標＝整個片語、後接類別取片語最後一字之後；同動詞的別的片語或單用動詞不算', () => {
+  assert.equal(skeleton('We gave up the plan.', 'give up', ctx), 'PRON|give up|NP');
+  assert.equal(skeleton('They gave the book to her.', 'give up', ctx), null); // 只有 give，沒有 give up
+  assert.equal(skeleton('We gave in to the plan.', 'give up', ctx), null);
+  assert.equal(skeleton('I am looking forward to the trip.', 'look forward to', ctx), 'PRON|look forward to|NP');
+  // 可分離寫法（真實片語表 pick up 為 separable）也找得到片語，後接類別取 up 之後
+  assert.equal(skeleton('She picked it up at the station.', 'pick up', ctx), 'PRON|pick up|at');
+  assert.equal(skeleton('She picked it up at the station.', 'pick up', { ...ctx, phrases: new Map() }), null); // 沒有片語表＝不可分離
+});
+
+test('skeletonPairs（片語）：give up 卡不會和只出現 give 的句子配成對', () => {
+  const doc = {
+    items: [
+      { id: 'x-q01', type: 'wordCard', word: 'give up', exampleEn: 'We gave up the plan.' },
+      { id: 'x-q02', type: 'listenType', sentenceEn: 'They gave the book to her.' },
+      { id: 'x-q03', type: 'shadowing', sentenceEn: 'I never give up my dream.' },
+    ],
+  };
+  assert.deepEqual(skeletonPairs(doc, ctx).map((p) => p.where), ['q03 shadowing']);
+});
+
 // ---- 創辦人裁示 2026-10-04 造句改翻譯：翻譯題彼此不雷同（同課兩題、同單元跨課） ----
 
 const tr = (id, ...referenceEn) => ({ id, type: 'translate', promptZh: '…', hintWords: [], referenceEn, rubricZh: ['…'] });

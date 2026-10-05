@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import Ajv2020 from 'ajv/dist/2020.js';
 import { CEFR_ORDER } from './lexicon.mjs';
 import { extractMultiwords, tokenize, wordLevel } from './english.mjs';
+import { extractPhrases, hasPhrase, isPhraseForm } from './phrase-match.mjs';
 import { checkZh } from './zh-guard.mjs';
 import {
   GLOSS_MAX_CHARS,
@@ -46,15 +47,48 @@ function choiceQuestions(item, i) {
 
 const asList = (value) => (Array.isArray(value) ? value : [value]);
 
-// ctx：{ lesson: {id, level, words}, levels: Map<小寫headword, CEFR>, lemmas(word)→原形[], allowlist: Set, requireJudge }
+// 片語課（TASK-24）：課號 <級>-pNN-lNN（plan §4.2）。
+export const isPhraseLesson = (lessonId) => /^[a-c][12]-p\d{2}-l\d{2}$/.test(lessonId);
+
+// lexicon 含空格的多字詞（第二輪比對詞形變化用；第一輪 extractMultiwords 只比原字）。依 levels 快取。
+const lexMultiwordCache = new WeakMap();
+function lexMultiwords(levels) {
+  if (!lexMultiwordCache.has(levels)) {
+    lexMultiwordCache.set(levels, [...levels.keys()].filter((w) => / /.test(w)).map((phrase) => ({ phrase, separable: false })));
+  }
+  return lexMultiwordCache.get(levels);
+}
+
+// 片語卡釋義格式（PHRASE_GLOSS）：義項以全形「；」分隔、受詞位置寫「⋯」（同既有題庫多數寫法）；
+// 第一義（App 單字卡選項與配對題只顯示這一義，見 app/src/lesson/queue.ts firstSense）去掉括號註解後不可為空，
+// 且要等於片語表 glossZh 的第一義——片語表定的是這個片語要教的義項。
+const firstSense = (gloss) => gloss.split('；')[0].replace(/（[^）]*）/g, '').trim();
+const normalizeSense = (s) => s.replace(/…|\.\.\./g, '⋯').replace(/\s/g, '');
+function phraseGlossProblems(gloss, entry) {
+  const out = [];
+  if (/[;,]/.test(gloss)) out.push('義項用全形「；」分隔，不用半形 ; ,');
+  if (/…|\.\.\./.test(gloss)) out.push('受詞位置寫「⋯」，不用 … 或 ...');
+  const first = firstSense(gloss);
+  if (!first.replace(/⋯/g, '')) out.push('第一義去掉括號註解後是空的');
+  else if (entry && normalizeSense(first) !== normalizeSense(firstSense(entry.glossZh))) {
+    out.push(`第一義「${first}」≠ 片語表第一義「${firstSense(entry.glossZh)}」`);
+  }
+  return out;
+}
+
+// ctx：{ lesson: {id, level, words}, levels: Map<小寫headword, CEFR>, lemmas(word)→原形[], allowlist: Set,
+//        phrases: Map<小寫片語, 片語表條目>（片語課用）, requireJudge }
 export function checkLessonItems(doc, ctx) {
   if (!checkSchema(doc)) {
     return checkSchema.errors.map((e) => ({ code: 'SCHEMA', path: e.instancePath || '/', message: e.message }));
   }
   const errors = [];
   const push = (code, path, message, extra = {}) => errors.push({ code, path, message, ...extra });
-  const { lesson, levels, lemmas, allowlist = new Set(), requireJudge = false } = ctx;
+  const { lesson, levels, lemmas, allowlist = new Set(), phrases = new Map(), requireJudge = false } = ctx;
   const lessonRank = CEFR_ORDER.indexOf(lesson.level);
+  const phraseLesson = isPhraseLesson(lesson.id);
+  // 片語課才查片語表：表中片語照片語自己的級距判（組成字都低也一樣）；主題課不查（plan §2：片語級距≥組成字）。
+  const phraseEntries = [...lexMultiwords(levels), ...(phraseLesson ? [...phrases.values()].map((p) => ({ phrase: p.phrase.toLowerCase(), separable: !!p.separable })) : [])];
 
   if (doc.lessonId !== lesson.id) push('LESSON_MISMATCH', 'lessonId', `檔內 ${doc.lessonId}≠課綱 ${lesson.id}`);
   if (doc.level !== lesson.level) push('LESSON_MISMATCH', 'level', `檔內 ${doc.level}≠課綱 ${lesson.level}`);
@@ -90,12 +124,20 @@ export function checkLessonItems(doc, ctx) {
   // 用字級距
   const properNouns = new Set(doc.properNouns);
   const checkEnglish = (text, path) => {
-    const { phrases, rest } = extractMultiwords(text, levels);
+    const first = extractMultiwords(text, levels);
+    // 第二輪：多字詞與片語表的詞形變化、可分離寫法（pertains to、gave up、pick it up）
+    const second = extractPhrases(first.rest, phraseEntries, { lemmas });
+    const rest = second.rest;
     const over = new Set();
     const unleveled = new Set();
     // 片語：取「片語級距」與「組成字最高級」的較低者——out of（A2）由 out、of（A1）組成，A1 課可用；
-    // 組成字有任一無級距（according to 的 according）就照片語級距。
-    for (const phrase of phrases) {
+    // 組成字有任一無級距（according to 的 according）就照片語級距。片語表的片語（只在片語課比對）照片語表級距。
+    for (const phrase of [...first.phrases, ...second.phrases]) {
+      const entry = phraseLesson && !levels.has(phrase) ? phrases.get(phrase) : undefined;
+      if (entry) {
+        if (CEFR_ORDER.indexOf(entry.cefr) > lessonRank) over.add(`${phrase}(${entry.cefr})`);
+        continue;
+      }
       const parts = phrase.split(' ').map((w) => wordLevel(w, levels, lemmas));
       const partsRank = parts.includes(null) ? Infinity : Math.max(...parts.map((l) => CEFR_ORDER.indexOf(l)));
       const rank = Math.min(CEFR_ORDER.indexOf(levels.get(phrase)), partsRank);
@@ -158,6 +200,36 @@ export function checkLessonItems(doc, ctx) {
       push('MCQ_OPTIONS', `items/${i}/stemEn`, '題幹須恰有一個 ____');
     }
   });
+
+  // 片語課（TASK-24 plan §5）：目標片語要出現在對應的題目裡（詞形變化、可分離寫法皆算，比對規則見 phrase-match.mjs）
+  if (phraseLesson) {
+    const opts = (phrase) => ({ lemmas, separable: !!phrases.get(phrase)?.separable });
+    const anyTarget = (text) => lesson.words.some((w) => hasPhrase(text, w, opts(w)));
+    const targets = lesson.words.join('、');
+    doc.items.forEach((item, i) => {
+      if (item.type === 'wordCard') {
+        if (!hasPhrase(item.exampleEn, item.word, opts(item.word))) push('PHRASE_MISSING', `items/${i}/exampleEn`, `例句沒用到片語 ${item.word}`);
+        if (item.glossZh !== undefined) {
+          const problems = phraseGlossProblems(item.glossZh, phrases.get(item.word));
+          if (problems.length) push('PHRASE_GLOSS', `items/${i}/glossZh`, `片語卡釋義：${problems.join('；')}`);
+        }
+      }
+      const sentenceKey = { listenType: 'sentenceEn', shadowing: 'sentenceEn', listenChoice: 'audioEn' }[item.type];
+      if (sentenceKey && !anyTarget(item[sentenceKey])) push('PHRASE_MISSING', `items/${i}/${sentenceKey}`, `句子沒有本課片語（${targets}）`);
+      // mcq 的空格填整個片語（plan §5）：正解要恰為某個本課片語的一個詞形，不可只填動詞、不可拆開
+      if (item.type === 'mcq' && !lesson.words.some((w) => isPhraseForm(item.options[item.answer] ?? '', w, { lemmas }))) {
+        push('PHRASE_MISSING', `items/${i}/options/${item.answer}`, `mcq 正解「${item.options[item.answer]}」不是完整的本課片語（${targets}）`);
+      }
+      if (item.type === 'translate') {
+        const hinted = lesson.words.filter((w) => item.hintWords.some((h) => h.toLowerCase() === w));
+        if (!hinted.length) push('PHRASE_MISSING', `items/${i}/hintWords`, `hintWords 沒有本課片語（${targets}）`);
+        item.referenceEn.forEach((ref, k) => {
+          const absent = hinted.filter((w) => !hasPhrase(ref, w, opts(w)));
+          if (absent.length) push('PHRASE_MISSING', `items/${i}/referenceEn/${k}`, `參考答案沒用到提示片語 ${absent.join(', ')}`);
+        });
+      }
+    });
+  }
 
   // TASK-12 單字卡四選一欄位：v3 起必填；v1／v2 舊檔缺欄只列提示（notice）。
   const legacy = LEGACY_PROMPTS.has(doc.promptVersion);

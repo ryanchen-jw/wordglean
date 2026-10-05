@@ -1,4 +1,4 @@
-// 用法：node scripts/check-items.mjs [--require-judge] [--dir <items dir>] [--lexicon <file>] [--dict <dir>] [--curriculum <dir>] [--allowlist <file>] [檔案…]
+// 用法：node scripts/check-items.mjs [--require-judge] [--dir <items dir>] [--lexicon <file>] [--dict <dir>] [--curriculum <dir>] [--allowlist <file>] [--phrases <file>] [檔案…]
 // 未指定檔案＝檢查 <dir>/<level>/*.json 全部，並查課綱每課都有題檔（MISSING_ITEMS；片語課過渡規則見 item-rules.mjs
 // 的 PHRASE_ITEMS_PENDING_LEVELS）。無錯 exit 0；有錯逐條印出、exit 1。
 
@@ -17,6 +17,7 @@ const { values, positionals } = parseArgs({
     dict: { type: 'string', default: DEFAULT_PATHS.dict },
     curriculum: { type: 'string', default: DEFAULT_PATHS.curriculum },
     allowlist: { type: 'string', default: DEFAULT_PATHS.allowlist },
+    phrases: { type: 'string', default: DEFAULT_PATHS.phrases },
   },
 });
 
