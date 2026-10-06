@@ -1,9 +1,11 @@
 // 首頁「今天」（設計 s01）：預設／今天都完成／新課暫停／第一次開啟；離線提示條由外框處理
 import { ChevronRight, CircleCheck, Info, Settings } from 'lucide-react'
+import { lazy, Suspense } from 'react'
 import { nextLesson, type Level } from '../../curriculum/curriculum'
 import { levelLabel } from '../../curriculum/levelLabel'
 import { useLevelDoc } from '../../curriculum/load'
 import { db } from '../../data/appDb'
+import { GrowthSkeleton } from '../../growth/GrowthSkeleton'
 import { saveSettings } from '../../data/repo'
 import { useLiveQuery } from '../../data/useLiveQuery'
 import { t } from '../../i18n/t'
@@ -15,6 +17,14 @@ import { deviceTimeZone } from '../../srs/daily'
 import { Button } from '../../ui/Button'
 import { Card, CardLink, cardTitleCls } from '../../ui/Card'
 import { buildHomeModel, LESSON_MINUTES, loadHomeDbInput, type HomeModel } from './homeModel'
+
+// 我的成長（TASK-26）：計算與明細延遲載入，不佔首屏 bundle；載入前顯示佔位
+const GrowthCard = lazy(() => import('../../growth/GrowthCard'))
+const growth = (
+  <Suspense fallback={<GrowthSkeleton />}>
+    <GrowthCard />
+  </Suspense>
+)
 
 const numCls = 'text-display leading-[1.1] font-bold tabular-nums'
 
@@ -119,6 +129,7 @@ function HomeBody({ m }: { m: HomeModel }) {
   if (m.state === 'done')
     return (
       <>
+        {growth}
         <Card>
           <div className="flex items-center gap-2 text-correct">
             <CircleCheck size={20} aria-hidden="true" />
@@ -147,6 +158,7 @@ function HomeBody({ m }: { m: HomeModel }) {
         : t('home.today.summaryLesson', { min: m.totalMinutes })
   return (
     <>
+      {growth}
       <Card>
         <h2 className={cardTitleCls}>{t('home.today.title')}</h2>
         <p className="text-secondary text-muted">{summary}</p>

@@ -2,6 +2,7 @@
 // 已出版的版本只能往後追加，不可就地修改（db.test.ts 以凍結 fixture 守住 v1）
 import Dexie, { type EntityTable, type Transaction } from 'dexie'
 import type { Level } from '../curriculum/curriculum'
+import type { GrowthRecord } from '../growth/growth'
 import type { LessonRun } from '../lesson/run'
 import type { FsrsFields, ReviewEntry } from '../srs/scheduler'
 
@@ -79,6 +80,7 @@ export type LinguaDb = Dexie & {
   syncMeta: EntityTable<SyncMeta, 'key'>
   lessonRuns: EntityTable<LessonRun, 'lessonId'>
   secrets: EntityTable<SecretRow, 'key'>
+  growth: EntityTable<GrowthRecord, 'key'>
 }
 
 export interface SchemaVersion {
@@ -104,6 +106,8 @@ export const SCHEMA_VERSIONS: readonly SchemaVersion[] = Object.freeze<SchemaVer
   { version: 3, stores: { lessonRuns: 'lessonId' } },
   // TASK-15：OpenRouter 金鑰與選定模型；只存本機、不同步、不匯出
   { version: 4, stores: { secrets: 'key' } },
+  // TASK-26：首頁成長卡達到過的最高程度（只升不降）；只存本機、不同步（雲端無對應欄位）、不匯出
+  { version: 5, stores: { growth: 'key' } },
 ])
 
 export const DB_NAME = 'linguaapp'

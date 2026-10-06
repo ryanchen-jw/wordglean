@@ -120,11 +120,15 @@ describe('schema 版本', () => {
     expect(SCHEMA_VERSIONS[3]).toEqual({ version: 4, stores: { secrets: 'key' } })
   })
 
+  it('v5 只追加成長紀錄表（TASK-26，只存本機）', () => {
+    expect(SCHEMA_VERSIONS[4]).toEqual({ version: 5, stores: { growth: 'key' } })
+  })
+
   it('全新開啟後各表可用', async () => {
     const db = createDb(freshName())
     await db.open()
     expect(db.tables.map((t) => t.name).sort()).toEqual(
-      [...TABLES, 'outbox', 'syncMeta', 'lessonRuns', 'secrets'].sort(),
+      [...TABLES, 'outbox', 'syncMeta', 'lessonRuns', 'secrets', 'growth'].sort(),
     )
     db.close()
   })

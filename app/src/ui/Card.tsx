@@ -11,14 +11,32 @@ export function Card({ tight, className = '', children }: Props) {
   return <div className={`${base} ${pad[tight ? 'tight' : 'normal']} ${className}`}>{children}</div>
 }
 
+const press =
+  'transition-[transform,background-color] duration-(--lg-duration-press) ease-standard active:scale-(--lg-press-scale) active:bg-primary-soft'
+
 export function CardLink({ to, tight, className = '', children }: Props & { to: string }) {
   return (
-    <Link
-      to={to}
-      className={`${base} ${pad[tight ? 'tight' : 'normal']} transition-[transform,background-color] duration-(--lg-duration-press) ease-standard active:scale-(--lg-press-scale) active:bg-primary-soft ${className}`}
-    >
+    <Link to={to} className={`${base} ${pad[tight ? 'tight' : 'normal']} ${press} ${className}`}>
       {children}
     </Link>
+  )
+}
+
+/** 整張可點、開彈層（不換頁）的卡片 */
+export function CardButton({
+  onClick,
+  tight,
+  className = '',
+  children,
+}: Props & { onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`${base} ${pad[tight ? 'tight' : 'normal']} ${press} text-left ${className}`}
+    >
+      {children}
+    </button>
   )
 }
 
