@@ -810,11 +810,11 @@ test('checkItemCoverage：主題課缺題檔 → MISSING_ITEMS；待產題級別
   const done = checkItemCoverage(lessons, new Set(['a2-u01-l01', 'a2-u01-l02', 'b1-p01-l01']), new Set(['A2']));
   assert.deepEqual(done, { errors: [], pending: 1 });
   assert.deepEqual(codes(checkItemCoverage(lessons, new Set(['a2-u01-l01', 'a2-u01-l02']), new Set(['B1'])).errors), ['MISSING_ITEMS a2-p01-l01']);
-  // 預設待產題級別：B2、C1（A2、B1 片語課已產題，TASK-24 W4）
-  assert.deepEqual([...PHRASE_ITEMS_PENDING_LEVELS], ['B2', 'C1']);
+  // 預設待產題級別：無（四級片語課皆已產題，TASK-24 W4）
+  assert.deepEqual([...PHRASE_ITEMS_PENDING_LEVELS], []);
 });
 
-test('正式課綱：主題課與 A2、B1 片語課全有題檔、B2、C1 片語課 33 堂在過渡清單內', () => {
+test('正式課綱：主題課與片語課全有題檔、過渡清單為空', () => {
   const ids = new Set(['a1', 'a2', 'b1', 'b2', 'c1'].flatMap((l) => readdirSync(new URL(`../items/${l}/`, import.meta.url)).map((f) => f.replace(/\.json$/, ''))));
-  assert.deepEqual(checkItemCoverage(base.lessons, ids), { errors: [], pending: 33 });
+  assert.deepEqual(checkItemCoverage(base.lessons, ids), { errors: [], pending: 0 });
 });
