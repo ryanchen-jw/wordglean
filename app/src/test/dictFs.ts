@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { buildLexIndex, type LexRow } from '../dict/lexicon'
 import type { LookupDeps } from '../dict/lookup'
+import { toPhrases, type Phrase } from '../dict/phrases'
 import { createShardStore, type Shard } from '../dict/shards'
 
 // npm test 的 cwd 是 app/
@@ -18,5 +19,12 @@ export function fsDictDeps(): LookupDeps {
     async (key) => JSON.parse(readFileSync(resolve(dir, `${key}.json`), 'utf-8')) as Shard,
   )
   const rows = JSON.parse(readFileSync(resolve(DATA, 'lexicon/lexicon.json'), 'utf-8')) as LexRow[]
-  return { shards, lex: buildLexIndex(rows) }
+  const phrases = toPhrases(
+    (
+      JSON.parse(readFileSync(resolve(DATA, 'phrases/phrases.json'), 'utf-8')) as {
+        phrases: Phrase[]
+      }
+    ).phrases,
+  )
+  return { shards, lex: buildLexIndex(rows, phrases), phrases }
 }

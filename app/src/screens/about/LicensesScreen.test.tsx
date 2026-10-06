@@ -54,6 +54,11 @@ describe('授權與致謝頁 ↔ NOTICE', () => {
       '模型 Moonshine tiny',
     ])
       expect(names).toContain(must)
+    // 片語表（TASK-24，創辦人核可文案 2026-10-06）：單字資料一節、ECDICT 之後
+    const data = names.slice(0, names.indexOf('題庫 JSON'))
+    expect(data.at(-1)).toBe('片語表')
+    const row = screen.getAllByTestId('credit-name').at(data.length - 1)!.parentElement!
+    expect(row).toHaveTextContent(/^片語表授權：CC BY-SA 4\.0拾字自編$/)
     // ECDICT 的 lemma.en.txt：NOTICE 記載「未使用」，頁面要照實說明
     expect(screen.getByText(/lemma\.en\.txt/)).toHaveTextContent('沒有使用')
   })

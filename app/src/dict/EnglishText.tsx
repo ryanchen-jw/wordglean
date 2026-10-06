@@ -1,6 +1,7 @@
 // 可點英文字（components.md §12）：每個英文字包成按鈕、點了開字典彈層；平常無裝飾，
 // 按下與彈層開啟期間（data-active）上 primary-soft 底；會洩漏答案的字作答前不可點、不可聚焦
 // disabled 以原形比對（meetings、went 也算 meeting、go）；原形還原完成前整段先不可點，寧可多擋不漏擋
+// disabled 含片語（give up）時，句中該片語的各字（gave it up 的 gave、up）都不可點
 import { useEffect, useState, type MouseEvent } from 'react'
 import { useDictionary } from './context'
 import { baseForms } from './lookup'
@@ -43,12 +44,25 @@ ${text}`
       .deps()
       .then(async (deps) => {
         const set = new Set<number>()
+        const tks = tokenize(text)
         await Promise.all(
-          tokenize(text).map(async (tk, i) => {
+          tks.map(async (tk, i) => {
             if (tk.kind !== 'word') return
             for (const f of await baseForms(tk.text, deps)) if (words.has(f)) set.add(i)
           }),
         )
+        // 片語（TASK-24）：句中出現的片語（含變化形、可分離）各字都不可點
+        const phrases = [...words].filter((w) => w.includes(' '))
+        if (phrases.length > 0) {
+          const separable = new Map(deps.phrases.map((p) => [p.phrase, p.separable]))
+          const { phraseSpans } = await import('./phrases')
+          const spans = await phraseSpans(
+            tks,
+            phrases.map((phrase) => ({ phrase, separable: separable.get(phrase) ?? false })),
+            deps.shards,
+          )
+          for (const s of spans) for (const i of s.at) set.add(i)
+        }
         if (alive) setBlocked({ key: resolveKey, set })
       })
       .catch((e) => console.error(e))
@@ -72,7 +86,12 @@ ${text}`
           // Safari 點按鈕不會給焦點；先聚焦，彈層關閉時才能把焦點還給這個字
           e.currentTarget.focus()
           onLookup?.(tk.text)
-          dict!.open({ token: tk.text, sentenceStart: tk.sentenceStart, el: e.currentTarget })
+          dict!.open({
+            token: tk.text,
+            sentenceStart: tk.sentenceStart,
+            el: e.currentTarget,
+            context: { tokens, index: i },
+          })
         }
         return (
           <button key={i} type="button" data-en-word="" className={wordCls} onClick={onClick}>

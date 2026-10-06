@@ -11,11 +11,12 @@ import { Button } from '../ui/Button'
 import { formatPhonetic, parseGloss, sharedPos } from './format'
 import type { LexInfo } from './lexicon'
 import type { LookupResult } from './lookup'
+import type { Phrase } from './phrases'
 
 export type SheetView =
   | { status: 'loading'; token: string }
   | { status: 'error'; token: string }
-  | { status: 'done'; result: LookupResult; info: LexInfo | null }
+  | { status: 'done'; result: LookupResult; info: LexInfo | null; phrases: readonly Phrase[] }
 
 type Props = {
   view: SheetView
@@ -59,6 +60,35 @@ function FavoriteButton({
       <Star size={20} aria-hidden="true" className="flex-none" />
       {t('dict.favorite.add')}
     </Button>
+  )
+}
+
+/** 被點的字屬於片語時（TASK-24）：片語＋「片語」與級距標籤、發音、釋義、收藏（以片語為鍵），放在單字之前 */
+function PhraseFound({ phrase, onFavorite }: { phrase: Phrase } & Pick<Props, 'onFavorite'>) {
+  return (
+    <section data-testid="dict-phrase" className="grid gap-3 border-b border-line pb-4">
+      <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
+        <h2 lang="en" className={headCls}>
+          {phrase.phrase}
+        </h2>
+        <span className="flex flex-none gap-1.5 pt-1.5">
+          <span className={tagCls}>{t('dict.sheet.phrase')}</span>
+          <span className={tagCls}>{phrase.cefr}</span>
+        </span>
+      </div>
+      <div className="-my-1 flex items-center gap-x-3">
+        <p className="min-w-0 flex-1 font-zh-tr text-body">{phrase.glossZh}</p>
+        <button
+          type="button"
+          aria-label={t('dict.sheet.speak')}
+          className={`${iconBtnCls} text-primary`}
+          onClick={() => speak(phrase.phrase)}
+        >
+          <Volume2 size={20} aria-hidden="true" />
+        </button>
+      </div>
+      <FavoriteButton headword={phrase.phrase} onFavorite={onFavorite} />
+    </section>
   )
 }
 
@@ -156,8 +186,18 @@ export function DictionarySheet({ view, onClose, onFavorite }: Props) {
   return (
     <BottomSheet label={t('dict.sheet.label')} onClose={onClose}>
       <div data-testid="dict-sheet" className="grid min-w-0 gap-3">
+        {view.status === 'done' &&
+          view.phrases.map((p) => (
+            <PhraseFound key={p.phrase} phrase={p} onFavorite={onFavorite} />
+          ))}
         {body}
-        <p className={sourceCls}>{t('dict.sheet.source')}</p>
+        <p className={sourceCls}>
+          {t(
+            view.status === 'done' && view.phrases.length > 0
+              ? 'dict.sheet.sourceWithPhrase'
+              : 'dict.sheet.source',
+          )}
+        </p>
       </div>
     </BottomSheet>
   )

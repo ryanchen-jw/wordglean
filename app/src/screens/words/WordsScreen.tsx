@@ -77,11 +77,12 @@ function useGlosses(
 ): ReadonlyMap<string, Gloss> {
   const dict = useDictionary()
   const [glosses, setGlosses] = useState<ReadonlyMap<string, Gloss>>(new Map())
-  const key = words?.map((w) => w.wordId).join(' ')
+  // 以換行接：多字詞與片語（ice cream、give up）本身含空白
+  const key = words?.map((w) => w.wordId).join('\n')
   useEffect(() => {
     if (!key) return
     let alive = true
-    const ids = key.split(' ')
+    const ids = key.split('\n')
     // 題目檔載入失敗的課當作沒有單字卡，退回字典義
     loadReviewCards(db, ids, (id) => loadItems(id).catch(() => null))
       .then(async ({ cards, missing }) => {

@@ -199,3 +199,50 @@ describe('單字卡：作答後自動念一次英文字（創辦人試用 2026-1
     expect(speak).not.toHaveBeenCalled()
   })
 })
+
+describe('片語卡（TASK-24 W5）', () => {
+  const giveUp: WordCardItem = {
+    id: 'a2-p01-l01-q01',
+    type: 'wordCard',
+    word: 'give up',
+    exampleEn: 'She gave it up last year.',
+    exampleZh: '她去年放棄了。',
+    glossZh: '放棄',
+    distractorsZh: ['讓步', '分發', '撿起'],
+  }
+  const step = {
+    key: 'k',
+    itemId: giveUp.id,
+    type: 'wordCard' as const,
+    srsWord: 'give up',
+    choice: { options: ['放棄', '讓步', '分發', '撿起'], answer: 0 },
+  }
+
+  beforeEach(() => {
+    vi.mocked(speak).mockClear()
+    vi.mocked(ttsAvailable).mockReturnValue(true)
+    vi.mocked(afterSfx).mockImplementation(async () => {})
+  })
+
+  it('整串顯示、整串發音；例句提示裡的片語（變化形、拆開）作答前不可點，作答後可點', async () => {
+    render(
+      <DictionaryProvider deps={() => Promise.resolve(loaded)}>
+        <WordCardView item={giveUp} step={step} onAnswer={() => {}} onContinue={() => {}} />
+      </DictionaryProvider>,
+    )
+    expect(screen.getByText('give up')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: '發音' }))
+    expect(speak).toHaveBeenLastCalledWith('give up')
+
+    fireEvent.click(screen.getByRole('button', { name: '看例句提示' }))
+    const hint = screen.getByTestId('wordcard-hint')
+    expect(await within(hint).findByRole('button', { name: 'last' })).toBeInTheDocument()
+    expect(within(hint).getByRole('button', { name: 'it' })).toBeInTheDocument()
+    expect(within(hint).queryByRole('button', { name: 'gave' })).toBeNull()
+    expect(within(hint).queryByRole('button', { name: 'up' })).toBeNull()
+
+    fireEvent.click(screen.getByRole('radio', { name: /放棄/ }))
+    expect(await screen.findByRole('button', { name: 'gave' })).toBeInTheDocument()
+    expect(screen.getAllByRole('button', { name: 'up' }).length).toBeGreaterThan(0)
+  })
+})

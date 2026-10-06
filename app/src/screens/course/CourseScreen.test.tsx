@@ -86,6 +86,31 @@ describe('課程地圖（s02）', () => {
     expect(screen.getByRole('tab', { name: 'B1' })).toHaveAttribute('aria-selected', 'true')
   })
 
+  it('片語單元（TASK-24）照課綱順序出現、標「片語」；主題單元沒有標籤', async () => {
+    await completeLessons('a2-u06-l05')
+    render(<CourseScreen />)
+    const unit = await screen.findByRole('button', { name: '常用片語（一） 片語 0／4 課' })
+    expect(unit).toHaveAttribute('aria-expanded', 'false')
+    expect(within(unit).getByText('片語')).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /^情緒與個性（一） \d+／\d+ 課$/ }),
+    ).toBeInTheDocument()
+    // 片語單元在 a2-u06 之後、a2-u07 之前
+    const titles = screen
+      .getAllByRole('heading', { level: 2 })
+      .map((h) => h.textContent)
+      .filter((s) => /情緒與個性（一）|常用片語（一）|外表與衣著/.test(s ?? ''))
+    expect(titles).toEqual(['情緒與個性（一）', '常用片語（一）', '外表與衣著'])
+  })
+
+  it('片語課詳情列出片語、可點查義', async () => {
+    history.replaceState(null, '', '/course?lesson=a2-p01-l01')
+    render(<CourseScreen />)
+    const sheet = await screen.findByRole('dialog', { name: '小課詳情' })
+    expect(within(sheet).getByRole('heading')).toHaveTextContent('常用片語（一）・第 1 課')
+    expect(within(sheet).getByText(/^clean up・come in・come back/)).toBeInTheDocument()
+  })
+
   it('從首頁帶 ?lesson= 進來直接開該課詳情', async () => {
     history.replaceState(null, '', '/course?lesson=b1-u02-l01')
     render(<CourseScreen />)

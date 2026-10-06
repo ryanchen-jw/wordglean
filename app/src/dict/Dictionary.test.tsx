@@ -153,6 +153,73 @@ describe('字典彈層（s08）', () => {
   })
 })
 
+describe('片語（TASK-24 W5）', () => {
+  it('點片語中的字：先顯示片語的意思（片語、標籤、級距、釋義），再顯示單字的意思', async () => {
+    renderText({ text: 'She gave it up last year.' })
+    fireEvent.click(word('up'))
+    const dlg = within(await sheet())
+    const phrase = await dlg.findByTestId('dict-phrase')
+    expect(within(phrase).getByRole('heading', { name: 'give up' })).toBeInTheDocument()
+    expect(within(phrase).getByText('片語')).toBeInTheDocument()
+    expect(within(phrase).getByText('A2')).toBeInTheDocument()
+    expect(within(phrase).getByText('放棄')).toBeInTheDocument()
+    expect(within(phrase).getByRole('button', { name: '發音' })).toBeInTheDocument()
+    const headings = dlg.getAllByRole('heading').map((h) => h.textContent)
+    expect(headings).toEqual(['give up', 'up'])
+  })
+
+  it('點變化形：片語照原形顯示，單字照常顯示原形提示', async () => {
+    renderText({ text: 'She gave up smoking.' })
+    fireEvent.click(word('gave'))
+    const dlg = within(await sheet())
+    expect(await dlg.findByRole('heading', { name: 'give up' })).toBeInTheDocument()
+    expect(await dlg.findByText('gave → 原形 give')).toBeInTheDocument()
+  })
+
+  it('不屬於片語的字沒有片語區；資料來源維持原字樣', async () => {
+    renderText({ text: 'She gave it up last year.' })
+    fireEvent.click(word('year'))
+    const dlg = within(await sheet())
+    await dlg.findByRole('heading', { name: 'year' })
+    expect(dlg.queryByTestId('dict-phrase')).toBeNull()
+    expect(dlg.getByText('資料來源：ECDICT')).toBeInTheDocument()
+  })
+
+  it('有片語區時資料來源註明片語自編（創辦人核可文案 2026-10-06）', async () => {
+    renderText({ text: 'She gave it up last year.' })
+    fireEvent.click(word('up'))
+    const dlg = within(await sheet())
+    await dlg.findByTestId('dict-phrase')
+    expect(dlg.getByText('資料來源：ECDICT；片語：拾字自編（CC BY-SA 4.0）')).toBeInTheDocument()
+    expect(dlg.queryByText('資料來源：ECDICT')).toBeNull()
+  })
+
+  it('收藏片語：單字池以片語字串為鍵', async () => {
+    renderText({ text: 'She gave up smoking.' })
+    fireEvent.click(word('up'))
+    const phrase = within(await within(await sheet()).findByTestId('dict-phrase'))
+    fireEvent.click(phrase.getByRole('button', { name: '加入收藏單字庫' }))
+    expect(
+      await phrase.findByRole('button', { name: '已在收藏單字庫（點一下取消）' }),
+    ).toBeInTheDocument()
+    expect((await db.wordPool.get('give up'))?.favoritedAt).toEqual(expect.any(Number))
+    expect(await db.wordPool.get('up')).toBeUndefined()
+  })
+
+  it('作答前隱藏片語：片語的各個字（含變化形、可分離）不可點，插入的受詞與其他字可點', async () => {
+    renderText({ text: 'She gave it up last year.', disabled: new Set(['give up']) })
+    expect(await screen.findByRole('button', { name: 'last' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'it' })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'gave' })).toBeNull()
+    expect(screen.queryByRole('button', { name: 'up' })).toBeNull()
+  })
+
+  it('作答前隱藏片語：只出現片語的一部分時不擋（up 單獨出現）', async () => {
+    renderText({ text: 'Look up there.', disabled: new Set(['give up']) })
+    expect(await screen.findByRole('button', { name: 'up' })).toBeInTheDocument()
+  })
+})
+
 describe('收藏（s08 已收藏＋提示）', () => {
   it('加入收藏：進單字池（原形）、按鈕變已收藏、Toast「已加入收藏」；復原後取消收藏', async () => {
     renderText({ text: 'our meetings' })

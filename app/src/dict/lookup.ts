@@ -2,6 +2,7 @@
 // 順序：be 動詞小表 → 本身是單字總表的字 → 變化形表（ECDICT exchange）→ 字典本身的條目 → 去字尾規則
 import { cefrRank, type LexIndex } from './lexicon'
 import { BE_FORMS, ruleCandidates, stripClitic } from './lemmatize'
+import type { Phrase } from './phrases'
 import type { Shard, ShardStore } from './shards'
 
 /** 命中來源：self＝顯示的就是這個字本身；table＝變化形表還原；rule＝規則還原 */
@@ -20,6 +21,8 @@ export type LookupResult =
 export interface LookupDeps {
   shards: ShardStore
   lex: LexIndex
+  /** 片語表（TASK-24）：點字查片語、作答前隱藏片語 */
+  phrases: readonly Phrase[]
 }
 
 /** 去掉前後標點（保留 students' 的所有格撇號） */

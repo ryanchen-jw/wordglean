@@ -9,9 +9,11 @@ export interface LessonDoc {
   words: string[]
 }
 
+/** 主題單元 <級>-uNN；片語單元（TASK-24）<級>-pNN 帶 kind: 'phrase'、沒有 topic，小課的 words 是片語 */
 export interface UnitDoc {
   id: string
-  topic: string
+  kind?: 'phrase'
+  topic?: string
   titleZh: string
   lessons: LessonDoc[]
 }

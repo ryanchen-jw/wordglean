@@ -69,6 +69,21 @@ describe('配對步驟', () => {
     })
   })
 
+  it('片語卡（TASK-24）：英文整串、中文取片語第一義（題庫第一義＝片語表第一義，PHRASE_GLOSS 守住）', () => {
+    const step = matchingStep('matching#1', [
+      card(1, 'give up', '放棄'),
+      card(2, 'pick up', '撿起；接（人）'),
+      card(3, 'look after', '照顧'),
+      card(4, 'take care of', '照顧；處理'),
+    ])
+    expect(step.pairs).toEqual([
+      { word: 'give up', gloss: '放棄' },
+      { word: 'pick up', gloss: '撿起' },
+      { word: 'look after', gloss: '照顧' },
+      { word: 'take care of', gloss: '照顧' },
+    ])
+  })
+
   it('中文排列固定（續作不變），是四個 pair 的重排', () => {
     const step = matchingStep('matching#1', [
       card(1, 'a', '一'),

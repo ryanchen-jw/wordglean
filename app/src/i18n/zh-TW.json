@@ -119,7 +119,8 @@
       "progress": "{done}／{total} 課",
       "current": "目前這課",
       "lesson": "第 {n} 課",
-      "expand": "{from}–{to}　展開"
+      "expand": "{from}–{to}　展開",
+      "phraseTag": "片語"
     },
     "sheet": {
       "label": "小課詳情",
@@ -319,7 +320,9 @@
       "notFound": "字典裡沒有這個字（可能是人名或專有名詞）",
       "loadFailed": "字典載入失敗。請關閉後再點一次這個字。",
       "toeic": "多益常考",
-      "source": "資料來源：ECDICT"
+      "phrase": "片語",
+      "source": "資料來源：ECDICT",
+      "sourceWithPhrase": "資料來源：ECDICT；片語：拾字自編（CC BY-SA 4.0）"
     },
     "favorite": {
       "add": "加入收藏單字庫",
@@ -659,6 +662,11 @@
       "name": "ECDICT",
       "license": "MIT",
       "note": "Copyright (c) 2025 Linwei。查字的音標、釋義與詞形對照；中文釋義經 OpenCC 轉成繁體中文並截短。沒有使用 ECDICT 的 lemma.en.txt。"
+    },
+    "phrases": {
+      "name": "片語表",
+      "license": "CC BY-SA 4.0",
+      "note": "拾字自編"
     },
     "items": {
       "name": "題庫 JSON",

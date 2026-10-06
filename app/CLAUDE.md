@@ -34,12 +34,14 @@ app/
 │   ├── shell/           外框（頁首、底部導覽、離線條）、外觀／字級偏好、加到主畫面提示
 │   ├── screens/         home／course／words／settings／lesson／review 畫面與其推導模型（*Model.ts）
 │   ├── lesson/          題型引擎（TASK-12）：題目型別、佇列與題型登記、FSRS 評分對應、小課進度（續作）、
-│   │                    結算；題目檔以獨立 json 資產載入（E2E 建置 VITE_ITEM_FIXTURES=true 改讀 fixtures/）
+│   │                    結算；題目檔以獨立 json 資產載入（E2E 建置 VITE_ITEM_FIXTURES=true 改讀 fixtures/）；
+│   │                    題目檔對照表 itemUrls.ts 只以 import() 取得（不進首屏，build 的 check-entry-lazy 守住）
 │   │                    能力替代規則與穿插（capabilities.ts、assemble.ts，TASK-18）
 │   ├── today/           今日學習組裝（TASK-18）：到期複習＋下一課、受每日新字上限與暫停門檻約束
 │   ├── review/          單字複習（TASK-18）：卡片取自來源課題目檔，收藏字以單字總表出卡；作答寫 FSRS；練習模式不寫
 │   ├── dict/            字典（TASK-16）：可點英文字 EnglishText、字典彈層 DictionaryProvider、詞形還原與查找；
-│   │                    字典切片（data/dict）與單字總表（data/lexicon）以獨立 json 資產預快取、不內嵌進 bundle
+│   │                    字典切片（data/dict）、單字總表（data/lexicon）、片語表（data/phrases，phrases.ts：點字查片語、
+│   │                    比對規則同 content 的 phrase-match）以獨立 json 資產預快取、不內嵌進 bundle
 │   ├── curriculum/      課綱型別與查詢；課綱檔以獨立 json 資產載入（不併進程式碼 bundle）
 │   ├── data/            Dexie 資料層、appDb.ts（App 唯一 db 實例）、匯出／清除
 │   ├── download/        模型下載狀態型別與進度元件（高音質發音、語音辨識皆已接真下載）
@@ -80,6 +82,8 @@ app/
   - `listen.spec`＝聽音打字／聽音選答；`tts-hq.spec`＝高音質發音強制失敗退回、下載失敗、崩潰旗標（攔下 Hugging Face／jsDelivr，不真的下載；WebKit 的 Cache Storage 不跨導覽保留，「已下載」狀態只在 chromium 驗）；內建聲音以 `e2e/speech.ts` 替身記錄呼叫。
   - `openrouter.spec`＝一鍵授權（PKCE）／貼金鑰／清除金鑰／寫作題 AI 批改與失敗，openrouter.ai 全由假端點（`e2e/openrouter.ts`）回應，並檢查金鑰只送往 openrouter.ai；`openrouter-visual.spec`＝s06 寫作四態、s11 AI 區視覺 smoke。兩者封鎖 service worker（其請求不經 page.route）。
   - `matching.spec`＝配對題（App 端組題，lesson/matching.ts）：小課每 4 張單字卡後一題、配錯進錯題重做、複習每 4 張到期卡後一題、四態截圖與窄螢幕；`demo.spec`＝示範課 `/lesson/demo`（所有題型一課、`?type=` 從該題型開始、練習模式不寫任何本機資料、App 內無入口）。
+  - `perf-budget.spec`＝首屏 JS gzip 預算（創辦人裁示 2026-10-06）：超過 200KB 只警告（輸出數字與「⚠ 警告」、測試照過），超過 300KB 才失敗；字典、單字總表、片語表、語音模型不得出現在首屏請求。片語表與題目檔對照表不得內嵌進首屏 JS 另由 `npm run build` 最後的 `scripts/check-entry-lazy.mjs` 守住。
+  - `phrases.spec`＝片語課（TASK-24）：課程地圖片語單元、走完片語樣本課（含配對）、點片語中的字看到片語義（含可分離）、收藏片語進單字庫，三畫面截圖。
   - `lesson.spec`＝小課讀類三題型走完一課與續作；`lesson-visual.spec`＝小課各狀態截圖與窄螢幕／特大字級量測。e2e 的 webServer 帶 `VITE_ITEM_FIXTURES=true`，題目來源為 `src/lesson/fixtures/items/` 的樣本課。
   - 已知：WebKit（Windows build）原生 IndexedDB 一次寫 5000 筆約 77 秒（測試準備成本），該案例時限放寬到 150 秒。
   - 已知限制：Playwright 的 WebKit（Windows build）在 `setOffline` 後 reload 會丟 internal error，離線重載只在 chromium 驗。

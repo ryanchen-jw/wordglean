@@ -176,6 +176,33 @@ describe('收藏字的複習卡（沒有課程來源，TASK-16 併入後）', ()
     expect(missing).toEqual(['ghostword', 'zzz'])
   })
 
+  it('收藏片語（TASK-24）：中文取片語表，干擾項取同級其他片語；FSRS 以片語字串為鍵', async () => {
+    const phrase = (cefr: LexInfo['cefr'], glossZh: string): LexInfo => ({
+      ...info(cefr, glossZh),
+      phrase: true,
+    })
+    const withPhrases: LexIndex = new Map([
+      ...lex,
+      // 沒有詞性的單字：不可當片語的干擾項
+      ['okay', info('A2', '好')],
+      ['hello', info('A2', '你好')],
+      ['thanks', info('A2', '謝謝')],
+      ['give up', phrase('A2', '放棄')],
+      ['pick up', phrase('A2', '撿起；接（人）')],
+      ['look after', phrase('A2', '照顧')],
+      ['clean up', phrase('A2', '打掃乾淨')],
+      ['give in', phrase('B1', '屈服；讓步')],
+    ])
+    await addFavorite(db, 'give up', T)
+    const { cards } = await loadReviewCards(db, ['give up'], loadItems, async () => withPhrases)
+    expect(cards[0].wordId).toBe('give up')
+    expect(cards[0].item).toMatchObject({ word: 'give up', glossZh: '放棄' })
+    expect([...cards[0].item.distractorsZh].sort()).toEqual(
+      ['撿起；接（人）', '照顧', '打掃乾淨'].sort(),
+    )
+    expect(cards[0].step).toMatchObject({ type: 'wordCard', srsWord: 'give up' })
+  })
+
   it('全是課程字時不載入單字總表；課程卡優先於收藏卡', async () => {
     await addFromCourse(db, 'have', L1, T)
     await addFavorite(db, 'have', T)

@@ -1,12 +1,15 @@
 // 全 App 共用一個字典彈層：<DictionaryProvider> 掛在 App 根層，<EnglishText> 透過本 context 開彈層
 import { createContext, useContext } from 'react'
 import type { LookupDeps } from './lookup'
+import type { Token } from './tokenize'
 
 export interface OpenRequest {
   token: string
   sentenceStart: boolean
   /** 被點的字；彈層開啟期間標示、關閉後焦點還給它 */
   el: HTMLElement
+  /** 被點的字所在的整段文字與它的 token 索引：查這個字屬於哪個片語（TASK-24） */
+  context?: { tokens: readonly Token[]; index: number }
 }
 
 export interface DictionaryApi {

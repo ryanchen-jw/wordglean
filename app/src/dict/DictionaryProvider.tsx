@@ -18,7 +18,7 @@ export function DictionaryProvider({ children, deps = appDictDeps }: Props) {
   const seq = useRef(0)
 
   const open = useCallback(
-    ({ token, sentenceStart, el }: OpenRequest) => {
+    ({ token, sentenceStart, el, context }: OpenRequest) => {
       active.current?.removeAttribute('data-active')
       el.setAttribute('data-active', '')
       active.current = el
@@ -26,9 +26,16 @@ export function DictionaryProvider({ children, deps = appDictDeps }: Props) {
       setView({ status: 'loading', token })
       deps()
         .then(async (d) => {
-          const result = await lookupWord(token, { sentenceStart }, d)
+          const [result, phrases] = await Promise.all([
+            lookupWord(token, { sentenceStart }, d),
+            context
+              ? import('./phrases').then((m) =>
+                  m.phrasesAt(context.tokens, context.index, d.phrases, d.shards),
+                )
+              : [],
+          ])
           const info = result.found ? (d.lex.get(result.headword.toLowerCase()) ?? null) : null
-          if (seq.current === id) setView({ status: 'done', result, info })
+          if (seq.current === id) setView({ status: 'done', result, info, phrases })
         })
         .catch((e) => {
           console.error(e)

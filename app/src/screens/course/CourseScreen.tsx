@@ -92,7 +92,14 @@ function UnitCard({
         onClick={onToggle}
         className="-m-2 flex min-h-11 items-center justify-between gap-3 rounded-xl p-2 text-left active:bg-primary-soft"
       >
-        <h2 className={cardTitleCls}>{unit.titleZh}</h2>
+        <span className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+          <h2 className={cardTitleCls}>{unit.titleZh}</h2>
+          {unit.kind === 'phrase' && (
+            <span className="inline-flex flex-none items-center rounded-chip border border-primary px-2 py-1 text-caption leading-none text-primary">
+              {t('course.unit.phraseTag')}
+            </span>
+          )}
+        </span>{' '}
         <span className="inline-flex flex-none items-center gap-1 text-caption text-muted">
           {progress}
           {expanded ? (

@@ -67,13 +67,14 @@ export default defineConfig({
         '../content/placement',
         '../data/dict',
         '../data/lexicon',
+        '../data/phrases',
       ],
     },
   },
   // data/ 依來源授權分檔（data/LICENSES.md），小檔也不得內嵌進程式碼 bundle，一律輸出成獨立資產
   build: {
     assetsInlineLimit: (file) =>
-      /\/data\/(dict|lexicon)\/[^/]+\.json$/.test(file) ? false : undefined,
+      /\/data\/(dict|lexicon|phrases)\/[^/]+\.json$/.test(file) ? false : undefined,
   },
   preview: { port: 5288, strictPort: true },
   // 高音質發音 Worker（TASK-13，TASK-14 語音辨識 Worker 同）內有動態 import，需用 ES module worker

@@ -176,6 +176,43 @@ describe('單字庫（s09）', () => {
       })
     })
 
+    // 既有 bug（TASK-24 W5 修）：多字詞被空白拆開，查不到單字卡釋義
+    it('多字詞（ice cream）與片語照整個字串取小課單字卡釋義', async () => {
+      const card = (word: string, glossZh: string, n: number) => ({
+        id: `a1-u09-l01-q0${n}`,
+        type: 'wordCard' as const,
+        word,
+        exampleEn: `${word}.`,
+        exampleZh: '例句。',
+        glossZh,
+        distractorsZh: ['甲', '乙', '丙'],
+      })
+      const doc: LessonItemsDoc = {
+        schemaVersion: 1,
+        lessonId: 'a1-u09-l01',
+        level: 'A1',
+        items: [card('ice cream', '冰淇淋', 1), card('give up', '放棄；屈服', 2)],
+      }
+      await db.wordPool.bulkPut([
+        word('ice cream', { courseRefs: ['a1-u09-l01'] }),
+        word('give up', { courseRefs: ['a1-u09-l01'] }),
+      ])
+      render(
+        <DictionaryProvider deps={deps}>
+          <WordsScreen loadItems={async (id) => (id === 'a1-u09-l01' ? doc : null)} />
+        </DictionaryProvider>,
+      )
+      expect(await screen.findByText('冰淇淋')).toBeInTheDocument()
+      expect(screen.getByText('放棄')).toBeInTheDocument()
+    })
+
+    it('收藏的片語（沒有課程來源）顯示片語表釋義', async () => {
+      await db.wordPool.bulkPut([word('look after', { courseRefs: [], favoritedAt: 1 })])
+      renderWithDict()
+      expect(await screen.findByText('照顧')).toBeInTheDocument()
+      expect(listed()).toEqual(['look after'])
+    })
+
     it('沒有課程來源也沒收藏的字（取消收藏後）不列、不計數', async () => {
       await db.wordPool.bulkPut([word('meeting'), word('agenda', { courseRefs: [] })])
       renderWithDict()
