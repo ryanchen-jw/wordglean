@@ -10,7 +10,12 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg'],
+      includeAssets: [
+        'favicon.svg',
+        'icons/favicon-32.png',
+        'icons/favicon-16.png',
+        'icons/apple-touch-icon.png',
+      ],
       workbox: {
         // 課綱、字典切片（597 片）、單字總表等 json 資產一併預快取：離線可開課程地圖、可查字（TASK-16 D1）
         globPatterns: ['**/*.{js,css,html,json,svg,png}'],
@@ -40,17 +45,23 @@ export default defineConfig({
           },
         ],
       },
-      // 佔位圖示，設計定版（TASK-3）後替換
+      // 品牌定版（TASK-25）：any＝圓角四角透明，maskable＝滿版、字卡縮進安全範圍；原檔與產生腳本見 scripts/brand-icons.mjs
       manifest: {
-        name: 'LinguaApp',
-        short_name: 'LinguaApp',
+        name: '拾字',
+        short_name: '拾字',
         lang: 'zh-Hant-TW',
         display: 'standalone',
         theme_color: '#f6f1e7',
         background_color: '#f6f1e7',
         icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          {
+            src: 'icons/icon-maskable-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
         ],
       },
     }),

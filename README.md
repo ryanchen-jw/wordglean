@@ -1,4 +1,6 @@
-# LinguaApp
+# 拾字（Wordglean）
+
+*Glean a word a day*
 
 給母語是繁體中文的學習者的英文學習手機版 Web App：聽、說、讀、寫四種練習，加上間隔重複複習。開源、免費，不登入也能完整使用。
 

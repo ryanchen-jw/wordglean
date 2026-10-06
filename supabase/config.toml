@@ -245,11 +245,11 @@ otp_expiry = 3600
 
 # TASK-20：登入信改寄 6 碼驗證碼（預設範本只有連結）；新帳號走 confirmation、既有帳號走 magic_link
 [auth.email.template.confirmation]
-subject = "LinguaApp 登入驗證碼"
+subject = "拾字 登入驗證碼"
 content_path = "./supabase/templates/otp.html"
 
 [auth.email.template.magic_link]
-subject = "LinguaApp 登入驗證碼"
+subject = "拾字 登入驗證碼"
 content_path = "./supabase/templates/otp.html"
 
 # Uncomment to customize email template

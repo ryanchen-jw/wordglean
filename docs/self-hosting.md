@@ -1,6 +1,6 @@
 # 自架指南
 
-LinguaApp 是純前端的 PWA：沒有自己的後端程式，登入與同步交給 Supabase。你可以選兩種部署：
+拾字（Wordglean）是純前端的 PWA：沒有自己的後端程式，登入與同步交給 Supabase。你可以選兩種部署：
 
 | | (a) 最小部署 | (b) 完整部署 |
 |---|---|---|
@@ -170,7 +170,7 @@ npm run preview    # http://localhost:5288
 
 1. 用手機尺寸的瀏覽器開啟 `http://localhost:5288/settings`，「帳號與同步」區出現「登入以同步進度」。
 2. 點它，輸入任一 Email（例如 `test@example.com`），按「寄驗證碼」。
-3. 本機不會真的寄信：開啟 `http://127.0.0.1:55424`（Mailpit），在「LinguaApp 登入驗證碼」信中找到 6 位數驗證碼。
+3. 本機不會真的寄信：開啟 `http://127.0.0.1:55424`（Mailpit），在「拾字 登入驗證碼」信中找到 6 位數驗證碼。
 4. 回到 App 輸入驗證碼並登入，帳號區顯示「已登入：test@example.com」。
 
 ### 4. 收尾
@@ -194,4 +194,4 @@ npx --yes supabase@2.118.0 db push   # 有新的 migration 時（完整部署）
 
 ## 授權義務
 
-LinguaApp 的程式碼以 AGPL-3.0 授權。你修改程式後架站給別人使用時，必須讓使用者能取得你修改後的原始碼——建置時設定 `VITE_SOURCE_URL`，App 內就會顯示連結。題庫題目文字採 CC BY-SA 4.0，單字資料依各來源原授權（見 `NOTICE` 與 `data/LICENSES.md`）。自架站的隱私說明請依你實際的設定調整（見 `docs/privacy.md` 最後一節）。
+拾字的程式碼以 AGPL-3.0 授權。你修改程式後架站給別人使用時，必須讓使用者能取得你修改後的原始碼——建置時設定 `VITE_SOURCE_URL`，App 內就會顯示連結。題庫題目文字採 CC BY-SA 4.0，單字資料依各來源原授權（見 `NOTICE` 與 `data/LICENSES.md`）。自架站的隱私說明請依你實際的設定調整（見 `docs/privacy.md` 最後一節）。

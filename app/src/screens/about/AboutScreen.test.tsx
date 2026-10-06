@@ -28,6 +28,15 @@ describe('隱私說明・授權・原始碼（TASK-21）', () => {
   })
 })
 
+describe('品牌字樣（TASK-25）', () => {
+  it('顯示「拾字」與英文名 Wordglean，圖示為裝飾（不進無障礙樹）', () => {
+    render(<AboutScreen />)
+    const brand = screen.getByTestId('about-brand')
+    expect(brand).toHaveTextContent('拾字Wordglean')
+    expect(brand.querySelector('.lg-brand-icon')).toHaveAttribute('aria-hidden', 'true')
+  })
+})
+
 describe('原始碼連結（VITE_SOURCE_URL）', () => {
   it('有設定網址時顯示「查看原始碼」連結，另開分頁', () => {
     render(<AboutScreen sourceUrl="https://example.org/linguaapp" />)

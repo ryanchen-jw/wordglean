@@ -42,6 +42,19 @@
     appearance: none;
   }
 
+  /* 關於頁品牌字樣（TASK-25）：圖示跟著深淺色（data-theme 優先，不設時跟隨系統） */
+  .lg-brand-icon {
+    background: url('/icons/src/icon.svg') center / contain no-repeat;
+  }
+  :root[data-theme='dark'] .lg-brand-icon {
+    background-image: url('/icons/src/icon-dark.svg');
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) .lg-brand-icon {
+      background-image: url('/icons/src/icon-dark.svg');
+    }
+  }
+
   /* 焦點只在鍵盤操作時顯示（components.md 共通規則） */
   :focus-visible {
     outline: 3px solid var(--lg-focus);

@@ -49,6 +49,11 @@ describe('zh-TW.json', () => {
     expect(offenders).toEqual([])
   })
 
+  // TASK-25 產品名定版為「拾字」（Wordglean）；程式資料夾、套件名等識別字仍叫 LinguaApp，但不出現在介面
+  it('介面文案不再出現舊產品名 LinguaApp', () => {
+    expect(allStrings(messages).filter(([, text]) => text.includes('LinguaApp'))).toEqual([])
+  })
+
   it('key 遵守 <畫面>.<區塊>.<用途> 三層', () => {
     const bad = allStrings(messages)
       .map(([path]) => path)

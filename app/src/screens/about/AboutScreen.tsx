@@ -22,6 +22,18 @@ export function AboutScreen({ sourceUrl = ENV_SOURCE_URL }: { sourceUrl?: string
   return (
     <SubScreen title={t('about.page.title')}>
       <div data-testid="screen-about" className="contents">
+        {/* 品牌字樣（TASK-25）：圖示是 CSS 背景、依深淺色切換（index.css 的 lg-brand-icon） */}
+        <div data-testid="about-brand" className="flex items-center gap-3 py-2">
+          <span aria-hidden="true" className="lg-brand-icon size-12 flex-none" />
+          <p className="flex items-baseline gap-3">
+            <span className="font-heading text-title font-bold text-text">
+              {t('about.brand.zh')}
+            </span>
+            <span lang="en" className="font-en text-secondary font-semibold text-muted">
+              {t('about.brand.en')}
+            </span>
+          </p>
+        </div>
         <div className="grid">
           {LINKS.map((link) => (
             <button

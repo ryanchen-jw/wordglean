@@ -159,7 +159,7 @@ export async function complete(
   const res = await send(fetchFn, `${OPENROUTER_API}/chat/completions`, {
     signal,
     method: 'POST',
-    headers: { ...auth(apiKey), 'Content-Type': 'application/json', 'X-Title': 'LinguaApp' },
+    headers: { ...auth(apiKey), 'Content-Type': 'application/json', 'X-Title': 'Wordglean' },
     body: JSON.stringify({
       models,
       messages,

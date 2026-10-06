@@ -188,7 +188,7 @@ test('320×480 特大：清除失敗時彈窗不超出視窗、錯誤訊息可�
   await page.getByText('我了解資料無法復原').click()
   await page.getByRole('button', { name: '清除資料' }).click()
   const alert = page.getByRole('alert')
-  await expect(alert).toHaveText('清除沒有完成。如果其他分頁也開著 LinguaApp，請先關掉再試一次。')
+  await expect(alert).toHaveText('清除沒有完成。如果其他分頁也開著拾字，請先關掉再試一次。')
   await check(page, info, '320-xl-s13-failed')
   const dialog = page.getByRole('alertdialog')
   const box = (await dialog.boundingBox())!

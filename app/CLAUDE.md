@@ -61,7 +61,7 @@ app/
 ├── e2e/                 Playwright 測試
 ├── e2e-sync/            需本機 Supabase 的 e2e（TASK-20 登入同步）
 ├── e2e-speech/          跟讀 e2e（TASK-14）；fixtures/librispeech 為 CC BY 4.0 測試音檔（不隨 app 散布，見 NOTICE）
-├── public/icons/        PWA 佔位圖示（192／512，TASK-3 後替換）
+├── public/icons/        PWA 圖示與 favicon（TASK-25 定版；src/＝SVG 原檔，`node scripts/brand-icons.mjs` 重產）
 ├── vite.config.ts       Vite＋Tailwind＋PWA＋Vitest 設定、dev／preview 埠
 ├── playwright.config.ts 兩個手機 project 與 webServer
 └── tsconfig.{app,node,e2e}.json
