@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拾字登入狀態設計稿</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* 版面：審稿頁用 App 自己的色票，手機畫面可切淺色／深色；每個方案並排已登入與未登入 */
+:root {
+  --bg: #f6f1e7; --surface: #fffcf5; --soft: #e3e9f2; --text: #1e2329; --muted: #595e66;
+  --line: #e3dccd; --border: #8f8778; --primary: #22467a; --on-primary: #ffffff; --correct: #2c6b3f;
+  --font: 'Noto Sans TC', 'Noto Sans CJK TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1a17; --surface: #25231f; --soft: #263247; --text: #ece6da; --muted: #aba394;
+    --line: #3a3731; --border: #7a7366; --primary: #9db8e3; --on-primary: #14223a; --correct: #8fcb9b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1a17; --surface: #25231f; --soft: #263247; --text: #ece6da; --muted: #aba394;
+  --line: #3a3731; --border: #7a7366; --primary: #9db8e3; --on-primary: #14223a; --correct: #8fcb9b;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 20px 64px; display: grid; gap: 44px; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: 1.75rem; line-height: 1.3; text-wrap: balance; }
+h2 { font-size: 1.25rem; line-height: 1.35; text-wrap: balance; }
+.lead { color: var(--muted); max-width: 62ch; margin-top: 8px; }
+.top { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; justify-content: space-between; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.seg button { font: inherit; font-size: .9375rem; min-height: 44px; padding: 0 18px; border: 0; background: transparent; color: var(--text); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+section { display: grid; gap: 16px; }
+.head { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.tag { font-size: .8125rem; font-weight: 700; color: var(--on-primary); background: var(--primary); border-radius: 999px; padding: 2px 10px; }
+.note { color: var(--muted); max-width: 62ch; }
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 340px)); gap: 20px; }
+figure { margin: 0; display: grid; gap: 8px; }
+figcaption { font-size: .9375rem; font-weight: 500; }
+/* 手機畫面 */
+.phone {
+  --p-bg: #f6f1e7; --p-surface: #fffcf5; --p-soft: #e3e9f2; --p-text: #1e2329; --p-muted: #595e66;
+  --p-line: #e3dccd; --p-border: #8f8778; --p-primary: #22467a; --p-on: #ffffff; --p-correct: #2c6b3f;
+  background: var(--p-bg); color: var(--p-text); border: 1px solid var(--line); border-radius: 24px; padding: 20px 16px 16px; display: grid; gap: 14px;
+}
+.phones-dark .phone {
+  --p-bg: #1b1a17; --p-surface: #25231f; --p-soft: #263247; --p-text: #ece6da; --p-muted: #aba394;
+  --p-line: #3a3731; --p-border: #7a7366; --p-primary: #9db8e3; --p-on: #14223a; --p-correct: #8fcb9b;
+}
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.bar h3 { font-size: 2.125rem; line-height: 1.2; font-weight: 700; }
+.sub { font-size: .9375rem; color: var(--p-muted); margin-top: 2px; }
+.acts { display: flex; align-items: center; gap: 2px; flex: none; }
+.ib { width: 44px; height: 44px; display: grid; place-items: center; color: var(--p-text); position: relative; flex: none; }
+.ib svg { width: 22px; height: 22px; }
+.av { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-size: 1rem; font-weight: 700; background: var(--p-primary); color: var(--p-on); overflow: hidden; }
+.av svg { width: 34px; height: 34px; }
+.av.out { background: transparent; color: var(--p-muted); border: 1.5px solid var(--p-border); }
+.av.out svg { width: 20px; height: 20px; }
+.dot { position: absolute; top: 8px; right: 8px; width: 11px; height: 11px; border-radius: 50%; background: var(--p-correct); border: 2px solid var(--p-bg); }
+.card { background: var(--p-surface); border: 1px solid var(--p-line); border-radius: 20px; padding: 16px; display: grid; gap: 6px; }
+.card b { font-size: 1.25rem; }
+.card span { font-size: .9375rem; color: var(--p-muted); }
+.cta { background: var(--p-primary); color: var(--p-on); border-radius: 14px; font-weight: 700; text-align: center; padding: 11px; margin-top: 6px; }
+/* 比較與決定 */
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 600px; font-size: .9375rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font-weight: 700; }
+.ask { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px; display: grid; gap: 10px; }
+.ask ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+@media (max-width: 420px) { .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <div>
+      <h1>拾字：首頁怎麼顯示登入狀態</h1>
+      <p class="lead">TASK-28 設計稿。範例用手機版首頁的真實版面與文字，頭像範例字是「治」。請選一個方案，定案前不會動程式。</p>
+    </div>
+    <div class="seg" role="group" aria-label="手機畫面色彩">
+      <button type="button" id="mode-light" aria-pressed="true">淺色</button>
+      <button type="button" id="mode-dark" aria-pressed="false">深色</button>
+    </div>
+  </header>
+
+  <div id="phones" style="display:grid;gap:44px">
+    <section>
+      <div class="head"><h2>方案 A：頭像取代齒輪</h2><span class="tag">推薦</span></div>
+      <p class="note">右上角只有一個按鈕，點了都進設定。未登入時的外框人形，看起來就像「還沒登入」。</p>
+      <div class="pair" data-option="a"></div>
+    </section>
+    <section>
+      <div class="head"><h2>方案 B：保留齒輪，旁邊加頭像</h2></div>
+      <p class="note">設定入口完全不變。兩個按鈕都進設定，所以有點重複。未登入時畫面和現在一樣。</p>
+      <div class="pair" data-option="b"></div>
+    </section>
+    <section>
+      <div class="head"><h2>方案 C：齒輪加綠點</h2></div>
+      <p class="note">改動最小，但綠點只靠顏色和位置傳達，第一次看到的人不一定懂，色覺差異者也較難分辨。</p>
+      <div class="pair" data-option="c"></div>
+    </section>
+    <section>
+      <div class="head"><h2>頭像內容（方案 A、B 適用）</h2></div>
+      <p class="note">大頭貼這張只是示意圖案，實際會顯示 Google 帳號照片。</p>
+      <div class="pair" data-option="content"></div>
+    </section>
+  </div>
+
+  <section>
+    <h2>三個方案比較</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th scope="col">方案</th><th scope="col">看得出登入狀態</th><th scope="col">要重新學嗎</th><th scope="col">相對成本</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">A 頭像取代齒輪</th><td>很清楚</td><td>少了齒輪，要知道點頭像進設定</td><td>低</td></tr>
+          <tr><th scope="row">B 齒輪＋頭像</th><td>登入後清楚</td><td>不用</td><td>低</td></tr>
+          <tr><th scope="row">C 齒輪加綠點</th><td>不夠明確</td><td>不用，但要猜綠點的意思</td><td>最低</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ask">
+    <h2>請回覆三件事</h2>
+    <ol>
+      <li><strong>方案：</strong>A、B 或 C。我推薦 A。</li>
+      <li><strong>頭像內容：</strong>首字或 Google 大頭貼。我推薦首字，不必連到 Google 取圖，隱私說明也不用改。</li>
+      <li><strong>位置：</strong>只放首頁，或課程、單字庫也放。我推薦只放首頁，其他頁面目前沒有這個位置。</li>
+    </ol>
+    <p class="note">新文案要逐字審，只有螢幕閱讀器會念，畫面上看不到。提案：已登入念「帳號與設定，已登入」，未登入念「設定，未登入」。</p>
+  </section>
+</main>
+<script>
+const gear = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>';
+const person = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>';
+const photo = '<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#c98f5a"/><circle cx="17" cy="13" r="6.5" fill="#f3d6b5"/><path d="M4 34c1-9 6.500-13 13-13s12 4 13 13z" fill="#2f5d62"/></svg>';
+const initial = '<span class="av">治</span>';
+const out = '<span class="av out">' + person + '</span>';
+const actions = {
+  aIn: '<span class="ib">' + initial + '</span>',
+  aOut: '<span class="ib">' + out + '</span>',
+  bIn: '<span class="ib">' + initial + '</span><span class="ib">' + gear + '</span>',
+  bOut: '<span class="ib">' + gear + '</span>',
+  cIn: '<span class="ib">' + gear + '<i class="dot"></i></span>',
+  cOut: '<span class="ib">' + gear + '</span>',
+  photo: '<span class="ib"><span class="av">' + photo + '</span></span>'
+};
+function phone(act) {
+  return '<div class="phone"><div class="bar"><div><h3>今天</h3><p class="sub">A2 | 約多益 225+</p></div><div class="acts">' + act + '</div></div>' +
+    '<div class="card"><b>我的成長</b><span>A1 | 約多益 120+</span><span>已學單字 9　記得的字 9</span></div>' +
+    '<div class="card"><b>今天的學習</b><span>先複習，再上一課・約 7 分鐘</span><div class="cta">開始今天的學習</div></div></div>';
+}
+const fig = (cap, act) => '<figure><figcaption>' + cap + '</figcaption>' + phone(act) + '</figure>';
+const fill = {
+  a: fig('已登入', actions.aIn) + fig('未登入', actions.aOut),
+  b: fig('已登入', actions.bIn) + fig('未登入', actions.bOut),
+  c: fig('已登入', actions.cIn) + fig('未登入', actions.cOut),
+  content: fig('帳號首字（推薦）', actions.aIn) + fig('Google 大頭貼（示意）', actions.photo)
+};
+document.querySelectorAll('[data-option]').forEach(el => { el.innerHTML = fill[el.dataset.option]; });
+const box = document.getElementById('phones');
+const light = document.getElementById('mode-light');
+const dark = document.getElementById('mode-dark');
+function setMode(isDark) {
+  box.classList.toggle('phones-dark', isDark);
+  light.setAttribute('aria-pressed', String(!isDark));
+  dark.setAttribute('aria-pressed', String(isDark));
+}
+light.addEventListener('click', () => setMode(false));
+dark.addEventListener('click', () => setMode(true));
+</script>
+</body>
+</html>
