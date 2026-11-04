@@ -1,4 +1,4 @@
-// OpenRouter 用戶端（瀏覽器直呼；伺服器永不碰金鑰）。只打 https://openrouter.ai/api/v1/*；不自動重試
+// OpenRouter 用戶端（瀏覽器直呼；伺服器永不碰金鑰）。只打 https://openrouter.ai/api/v1/*；每次呼叫只送一個請求
 // 端點與欄位：models（公開、免金鑰）、key（每日免費額度 free_model_daily_requests）、chat/completions；
 // 錯誤碼：https://openrouter.ai/docs/api/reference/errors-and-debugging（2026-10-02 查）
 export const OPENROUTER_ORIGIN = 'https://openrouter.ai'
@@ -133,12 +133,11 @@ export interface CompletionResult {
 }
 
 /**
- * 批改請求：models 陣列設 fallback、provider.data_collection:"deny" 只走不保留資料的提供商
- * （free-models.md §7 #6）、要求 JSON 物件輸出；推理強度 low 以免推理 token 吃光輸出上限。
- * 輸出上限 4096：1500 時 apodex（fallback）推理就用光上限，v2 評測 38／40 截斷（llm-eval.md §7、§9）。
- * reasoning 與 max_tokens 是整個請求共用（models fallback 走同一請求），無法只對 apodex 關推理；
- * 不送 reasoning 會讓 qwen 回到預設 xhigh，故保留 effort low、只提高上限。評測腳本走同一個 complete() 預設值。
- * 2026-11-05 換模型後：現行預設鏈的端點 supported_parameters 皆含 reasoning、response_format、max_tokens，未改動這些參數
+ * 批改請求：models 陣列設 fallback、要求 JSON 物件輸出；推理強度 low 以免推理 token 吃光輸出上限。
+ * 不篩提供商（創辦人 2026-11-05 裁示：自動切換優先於隱私篩選），批改內容可能送到會保留或訓練的提供商。
+ * 輸出上限 4096：舊 fallback apodex 在 1500 時推理就用光上限，v2 評測 38／40 截斷（llm-eval.md §7、§9）。
+ * reasoning 與 max_tokens 是整個請求共用（models fallback 走同一請求），無法逐模型設定。評測腳本走同一個 complete() 預設值。
+ * 現行預設鏈的公開清單 supported_parameters 皆含 reasoning、response_format、max_tokens（2026-11-05 查）
  */
 export async function complete(
   {
@@ -167,7 +166,6 @@ export async function complete(
       max_tokens: maxTokens,
       response_format: { type: 'json_object' },
       reasoning: { effort: 'low' },
-      provider: { data_collection: 'deny' },
     }),
   })
   if (!res.ok) await fail(res)

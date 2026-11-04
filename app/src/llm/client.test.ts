@@ -99,7 +99,7 @@ describe('complete（批改請求）', () => {
   const ok = (content: unknown, model = 'qwen/qwen3.8-27b:free') =>
     Response.json({ model, choices: [{ message: { content }, finish_reason: 'stop' }] })
 
-  it('送往 chat/completions：Bearer、models fallback、data_collection deny、JSON 輸出', async () => {
+  it('送往 chat/completions：Bearer、models fallback、JSON 輸出、不帶 provider 篩選', async () => {
     const fetchFn = vi.fn<(url: string, init?: RequestInit) => Promise<Response>>(async () =>
       ok('{"a":1}', 'qwen/qwen3.8-27b:free'),
     )
@@ -118,7 +118,6 @@ describe('complete（批改請求）', () => {
       max_tokens: 4096,
       response_format: { type: 'json_object' },
       reasoning: { effort: 'low' },
-      provider: { data_collection: 'deny' },
     })
   })
 

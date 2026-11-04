@@ -126,13 +126,9 @@ test('寫作題：AI 批改結果（假端點）→ 下一題額度用完 → �
   await expect(page.getByText('由你的 OpenRouter 帳號批改')).toBeVisible()
   const sent = fake.requests.find((r) => r.url === 'https://openrouter.ai/api/v1/chat/completions')!
   expect(JSON.parse(sent.body)).toMatchObject({
-    models: [
-      'google/gemma-4-31b-it:free',
-      'google/gemma-4-26b-a4b-it:free',
-      'xingchen-agi/xing4.0-29b-a4b:free',
-    ],
-    provider: { data_collection: 'deny' },
+    models: ['google/gemma-4-31b-it:free', 'xingchen-agi/xing4.0-29b-a4b:free', 'openrouter/free'],
   })
+  expect(JSON.parse(sent.body)).not.toHaveProperty('provider')
   await page.getByRole('button', { name: '我懂了，繼續' }).click()
   // 穿插順序：中翻英與造句之間還有聽、讀各一題
   for (let n = WRITE_STEPS[0] + 1; n < WRITE_STEPS[1]; n++) {

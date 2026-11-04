@@ -93,13 +93,14 @@ describe('gradeWriting', () => {
     expect(JSON.parse(fetchFn.mock.calls[0][1]!.body as string).models).toEqual([
       'qwen/qwen3.8-27b:free',
       'google/gemma-4-31b-it:free',
-      'xingchen-agi/xing4.0-29b-a4b:free',
+      'openrouter/free',
     ])
   })
 
-  it('回應解析不了 → other；HTTP 錯誤照分類；只呼叫一次（不自動重試）', async () => {
+  it('回應解析不了 → 換一批再試一次，仍不行回 other；額度用完照分類、只呼叫一次', async () => {
     const bad = vi.fn(async () => reply('I think it is fine.'))
     expect(await gradeWriting(LINK, TASK, bad)).toEqual({ ok: false, reason: 'other' })
+    expect(bad).toHaveBeenCalledTimes(2)
     const quota = vi.fn(
       async () =>
         new Response(

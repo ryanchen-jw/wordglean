@@ -29,6 +29,12 @@ export const MODELS = [
     architecture: text,
   },
   {
+    id: 'openrouter/free',
+    name: 'Free Models Router',
+    pricing: { prompt: '0', completion: '0' },
+    architecture: text,
+  },
+  {
     id: 'anthropic/claude-sonnet-x',
     name: 'Anthropic: Claude Sonnet X',
     pricing: { prompt: '0.000003', completion: '0.000015' },
