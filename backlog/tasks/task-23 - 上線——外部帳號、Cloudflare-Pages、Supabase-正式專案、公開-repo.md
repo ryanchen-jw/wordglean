@@ -32,3 +32,12 @@ ordinal: 23000
 - [ ] #4 每日喚醒排程設定並驗證觸發一次
 - [ ] #5 G7 創辦人明示後 push 公開 repo；push 的 commit sha 記回卡
 <!-- AC:END -->
+
+## Comments
+<!-- COMMENTS:BEGIN -->
+---
+created: 2026-10-03 23:55
+---
+創辦人裁示（10-03）：「刪除雲端帳號資料」功能與隱私聯絡方式不做，本卡不納入。上線部署必設 VITE_SOURCE_URL（AGPL §13，見 docs/self-hosting.md）。
+---
+<!-- COMMENTS:END -->

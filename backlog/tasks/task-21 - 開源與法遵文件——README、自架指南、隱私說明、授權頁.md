@@ -1,10 +1,10 @@
 ---
 id: TASK-21
 title: 開源與法遵文件——README、自架指南、隱私說明、授權頁
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
-updated_date: '2026-10-01 18:00'
+updated_date: '2026-10-03 11:14'
 labels:
   - workspace
   - app
@@ -28,7 +28,16 @@ ordinal: 21000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 自架指南由一個乾淨環境照做一次可跑起來（本機模擬 Pages 與本機 Supabase）
-- [ ] #2 授權與致謝頁涵蓋 NOTICE 全部條目，有測試比對兩者一致
-- [ ] #3 Artifact 逐字審交付，停 In Review 等創辦人審定
+- [x] #1 自架指南由一個乾淨環境照做一次可跑起來（本機模擬 Pages 與本機 Supabase）
+- [x] #2 授權與致謝頁涵蓋 NOTICE 全部條目，有測試比對兩者一致
+- [x] #3 Artifact 逐字審交付，停 In Review 等創辦人審定
 <!-- AC:END -->
+
+## Comments
+<!-- COMMENTS:BEGIN -->
+---
+created: 2026-10-03 20:00
+---
+Done（main 5283f26）。AC#3：創辦人 10-03 裁示「TASK-21 不用我逐字審，先照你建議」→ 改由執行長審稿，不做 Artifact 逐字審。隔離驗收 PASS：乾淨副本照自架指南跑通最小部署與本機 Supabase（Email 驗證碼登入成功）；NOTICE 守衛雙向紅證；app 806／e2e 211／content 213 全綠。代決：①原始碼網址改建置變數 VITE_SOURCE_URL，官方站網址待 TASK-23 填；②新文案不加 _pendingG3；③「刪除雲端帳號資料」功能與隱私聯絡方式不在本卡，列上線前待辦。備查：NOTICE 開頭「骨架…待補」字樣已過時（P2）；全新 volume 首次啟動自動套 migration 未實測（共用 volume）。
+---
+<!-- COMMENTS:END -->
