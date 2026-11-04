@@ -18,13 +18,14 @@ export type EnglishTextProps = {
 }
 
 // button 排版上是不可分割的行內方塊，方塊前後一律可斷行，字與緊鄰的標點會被拆到兩行。
-// 緊鄰標點與字包進 inline-flex 同一列；標點在按鈕外，不可點也不進無障礙名稱。
-// 字＋標點放不下一行時按鈕縮窄、字在按鈕內折行（min-w-0），標點留在最後一行末端，不溢出
-const gluedCls = 'inline-flex max-w-full'
+// 緊鄰標點與字包進不折行的行內 span；標點在按鈕外，不可點也不進無障礙名稱。
+// 不可用 inline-flex：flex 子項的 display 會變 block，按鈕就不再算行內文字（axe target-size 會量它與同段其他字）。
+// 字＋標點放不下一行時按鈕讓出標點的寬度（見下方 maxWidth）、字在按鈕內折行，標點接在最後一行，不溢出
+const gluedCls = 'whitespace-nowrap'
 
 // 上下各 6px 透明點擊延伸（不影響行高），讓行內字的點擊高度接近 44px；比容器寬的長字在按鈕內折行
 const wordCls =
-  'relative max-w-full min-w-0 rounded-sm text-start wrap-break-word text-inherit before:absolute before:inset-x-0 before:-inset-y-1.5 before:content-[""] active:bg-primary-soft data-active:bg-primary-soft data-active:shadow-[inset_0_-2px_0_var(--lg-primary)] focus-visible:outline-3 focus-visible:outline-focus'
+  'relative max-w-full rounded-sm text-start wrap-break-word text-inherit before:absolute before:inset-x-0 before:-inset-y-1.5 before:content-[""] active:bg-primary-soft data-active:bg-primary-soft data-active:shadow-[inset_0_-2px_0_var(--lg-primary)] focus-visible:outline-3 focus-visible:outline-focus'
 
 export function EnglishText({ text, disabled, onLookup, className = '' }: EnglishTextProps) {
   const dict = useDictionary()
@@ -106,17 +107,25 @@ ${text}`
             context: { tokens, index: i },
           })
         }
+        const punct = before.length + after.length
         const button = (
-          <button key={i} type="button" data-en-word="" className={wordCls} onClick={onClick}>
+          <button
+            key={i}
+            type="button"
+            data-en-word=""
+            className={punct ? `${wordCls} whitespace-normal` : wordCls}
+            style={punct ? { maxWidth: `calc(100% - ${punct}ch)` } : undefined}
+            onClick={onClick}
+          >
             {tk.text}
           </button>
         )
-        if (!before && !after) return button
+        if (!punct) return button
         return (
           <span key={i} className={gluedCls}>
-            {before && <span className="shrink-0">{before}</span>}
+            {before}
             {button}
-            {after && <span className="shrink-0 self-end">{after}</span>}
+            {after}
           </span>
         )
       })}
