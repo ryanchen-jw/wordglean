@@ -55,7 +55,7 @@ describe('未連結（s11 預設）', () => {
     expect(await screen.findByText('狀態：未設定')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: '用 OpenRouter 帳號一鍵授權' })).toBeInTheDocument()
     expect(screen.getByText('金鑰只存在這支手機，不會傳到我們的伺服器')).toBeInTheDocument()
-    expect(screen.getByText('寫作題的句子只會送到你選的 OpenRouter 模型')).toBeInTheDocument()
+    expect(screen.getByText('寫作題的句子只會送到 OpenRouter')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: '改用貼上金鑰' }))
     expect(location.pathname).toBe('/openrouter')
   })
