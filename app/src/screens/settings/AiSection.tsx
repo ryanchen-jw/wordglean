@@ -1,19 +1,22 @@
 // 設定頁 AI 批改區（設計 s11 預設／已連結）：一鍵授權（PKCE）、改用貼上金鑰、模型選擇（標價格與是否免費）、
-// 今日免費額度、解除連結（二次確認）。金鑰只存這支手機
+// 今日免費額度、測試目前模型、解除連結（二次確認）。金鑰只存這支手機
 import { Check, ChevronRight, CircleCheck, KeyRound, LoaderCircle, Lock } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { db as appDb } from '../../data/appDb'
 import type { LinguaDb } from '../../data/db'
 import { useLiveQuery } from '../../data/useLiveQuery'
-import { t } from '../../i18n/t'
-import { fetchKeyInfo, listModels, type ModelInfo } from '../../llm/client'
-import { clearLink, getLink, setModel } from '../../llm/keyStore'
+import { t, type MessageKey } from '../../i18n/t'
+import { fetchKeyInfo, listModels, type FailureKind, type ModelInfo } from '../../llm/client'
+import { gradeWriting } from '../../llm/grade'
+import type { GradeTask } from '../../llm/gradePrompt'
+import { clearLink, getLink, setModel, type OpenRouterLink } from '../../llm/keyStore'
 import { beginAuth } from '../../llm/pkce'
 import { clearOauthFailed, oauthFailed } from '../../llm/startup'
 import { navigate } from '../../router'
 import { BottomSheet } from '../../ui/BottomSheet'
 import { Button } from '../../ui/Button'
 import { ConfirmDialog } from '../../ui/ConfirmDialog'
+import modelTestTask from './modelTestTask.json'
 
 type Props = {
   db?: LinguaDb
@@ -103,6 +106,88 @@ function ModelSheet({
         </ul>
       )}
     </BottomSheet>
+  )
+}
+
+const TEST_FAILURE: Record<FailureKind, MessageKey> = {
+  quota: 'settings.ai.testQuota',
+  keyInvalid: 'settings.ai.testKeyInvalid',
+  network: 'settings.ai.testNetwork',
+  other: 'settings.ai.testOther',
+}
+
+type TestState =
+  | { kind: 'running' }
+  | { kind: 'ok'; model: string; seconds: string }
+  | { kind: 'fail'; reason: FailureKind }
+
+/** 測試目前模型（TASK-29）：與實際批改同一條路徑真打一次，解析成功才算可用；不重試、不寫任何本機資料 */
+function ModelTest({
+  link: { apiKey, model },
+  fetchFn,
+}: {
+  link: Pick<OpenRouterLink, 'apiKey' | 'model'>
+  fetchFn: typeof fetch
+}) {
+  const [state, setState] = useState<TestState | null>(null)
+  const running = useRef<AbortController | null>(null)
+
+  // 離開畫面、換金鑰或換模型就中止：舊請求的結果不能算到新選擇頭上
+  useEffect(() => () => running.current?.abort(), [apiKey, model])
+
+  const run = async () => {
+    if (running.current) return
+    const controller = new AbortController()
+    const { signal } = controller
+    running.current = controller
+    setState({ kind: 'running' })
+    const start = performance.now()
+    const out = await gradeWriting({ apiKey, model }, modelTestTask as GradeTask, fetchFn, {
+      signal,
+    }).catch(() => ({ ok: false as const, reason: 'other' as const }))
+    running.current = null
+    if (signal.aborted) setState(null)
+    else if (out.ok)
+      setState({
+        kind: 'ok',
+        model: out.model ?? model,
+        seconds: ((performance.now() - start) / 1000).toFixed(1),
+      })
+    else setState({ kind: 'fail', reason: out.reason })
+  }
+
+  const busy = state?.kind === 'running'
+  // 模型 id 是服務方的英文名稱：標 lang="en"，切開文案前後段
+  const [before, after] =
+    state?.kind === 'ok'
+      ? t('settings.ai.testOk', { model: '\n', seconds: state.seconds }).split('\n')
+      : []
+  const tone =
+    state?.kind === 'ok' ? 'text-correct' : state?.kind === 'fail' ? 'text-error' : 'text-muted'
+  return (
+    <div>
+      <Button variant="secondary" disabled={busy} aria-busy={busy} onClick={run}>
+        {t('settings.ai.testButton')}
+      </Button>
+      <p className="mt-1.5 text-caption text-muted">{t('settings.ai.testNote')}</p>
+      {/* 結果區常駐（空的時不占位）：live region 要先在畫面上，內容變動才念得出來 */}
+      <p role="status" className={`mt-1.5 text-secondary break-words empty:mt-0 ${tone}`}>
+        {busy && (
+          <span className="flex items-center gap-2">
+            <LoaderCircle size={20} aria-hidden="true" className="flex-none animate-spin" />
+            {t('settings.ai.testRunning')}
+          </span>
+        )}
+        {state?.kind === 'ok' && (
+          <>
+            {before}
+            <span lang="en">{state.model}</span>
+            {after}
+          </>
+        )}
+        {state?.kind === 'fail' && t(TEST_FAILURE[state.reason])}
+      </p>
+    </div>
   )
 }
 
@@ -214,6 +299,7 @@ export function AiSection({
           {t('settings.ai.quota', { count: remaining })}
         </span>
       )}
+      <ModelTest link={link} fetchFn={fetchFn} />
       <Button variant="danger" onClick={() => setConfirming(true)}>
         {t('settings.ai.unlink')}
       </Button>

@@ -1,8 +1,16 @@
 // TASK-15 AC#1／AC#3：OpenRouter 一鍵授權（PKCE，假端點）、貼金鑰、清除金鑰、寫作題 AI 批改與失敗；
 // 全程記錄頁面請求，檢查金鑰只送往 openrouter.ai（網路面板）。openrouter.ai 全部由假端點回應、不真連網
-import { expect, test } from '@playwright/test'
+import { expect, test, type Page } from '@playwright/test'
 import { answer, LESSON, next, playTo, retryCount, STEPS, WRITE_STEPS } from './lesson.js'
-import { fakeOpenRouter, FAKE_KEY, gradeOk, requestsCarryingKey } from './openrouter.js'
+import { measureMobile, overflowingChildren } from './measure.js'
+import {
+  fakeOpenRouter,
+  FAKE_KEY,
+  gradeOk,
+  MODELS,
+  requestsCarryingKey,
+  type FakeOpenRouter,
+} from './openrouter.js'
 import { fakeSystemVoice } from './speech.js'
 
 // service worker 發出的請求不經 page.route；封鎖它，確保每個請求都被假端點攔到、也都被記錄
@@ -155,6 +163,98 @@ test('寫作題：AI 批改結果（假端點）→ 下一題額度用完 → �
   await page.getByRole('button', { name: '跳過' }).click()
   await expect(page.getByTestId('lesson-done')).toContainText(`${STEPS.length} 題`)
   expectKeyOnlyToOpenRouter(requestsCarryingKey(fake))
+})
+
+// TASK-29：與批改同一條路徑真打（假端點）；窄螢幕特大字級、極長模型 id 不溢出
+test.describe('測試目前模型', () => {
+  const BUTTON = { name: '測試目前模型' }
+  const LONG_ID = MODELS.reduce((a, b) => (b.id.length > a.id.length ? b : a)).id
+  const OK = gradeOk({
+    isCorrect: false,
+    corrected: 'I really like music.',
+    errors: [],
+    explanationZh: 'very 不能直接修飾動詞。',
+    levelOk: true,
+  })
+
+  async function linkKey(page: Page) {
+    await page.goto('/openrouter')
+    await page.getByLabel('金鑰').fill(FAKE_KEY)
+    await page.getByRole('button', { name: '驗證並儲存' }).click()
+    await expect(page.getByText('已連結')).toBeVisible()
+  }
+
+  const chats = (fake: FakeOpenRouter) => fake.requests.filter((r) => r.url.includes('/chat/'))
+
+  test('未連結不顯示；成功顯示模型與秒數、失敗顯示原因，金鑰只送往 openrouter.ai', async ({
+    page,
+  }) => {
+    const fake = await fakeOpenRouter(page)
+    await page.goto('/settings')
+    await expect(page.getByText('狀態：未設定')).toBeVisible()
+    await expect(page.getByRole('button', BUTTON)).toHaveCount(0)
+
+    fake.grades = [
+      OK,
+      {
+        status: 429,
+        body: { error: { code: 429, message: 'Rate limit exceeded: free-models-per-day' } },
+      },
+    ]
+    await linkKey(page)
+    const button = page.getByRole('button', BUTTON)
+    const status = page.getByTestId('ai-linked').getByRole('status')
+    await expect(button.locator('xpath=following-sibling::p').first()).toHaveText(
+      '測試會實際送出批改，可能用掉免費額度或費用。',
+    )
+    await button.click()
+    await expect(status).toHaveText(/^可以使用：google\/gemma-4-31b-it:free（\d+\.\d 秒）$/)
+    expect(JSON.parse(chats(fake)[0].body).messages[1].content).toContain('I very like music.')
+    await button.click()
+    await expect(status).toHaveText('今日免費額度已用完。')
+    expect(chats(fake)).toHaveLength(2)
+    expectKeyOnlyToOpenRouter(requestsCarryingKey(fake))
+  })
+
+  test('測試中按鈕不可按；離開設定頁中止請求', async ({ page }) => {
+    await fakeOpenRouter(page)
+    await linkKey(page)
+    // 不回應：停在進行中，直到頁面中止請求
+    await page.route('**/api/v1/chat/completions', () => {})
+    const button = page.getByRole('button', BUTTON)
+    await button.click()
+    await expect(page.getByRole('status')).toHaveText('測試中…')
+    await expect(button).toBeDisabled()
+    const aborted = page.waitForEvent('requestfailed', (r) => r.url().includes('/chat/'))
+    await page.getByRole('button', { name: '返回' }).click()
+    await expect(button).toHaveCount(0)
+    await aborted
+  })
+
+  for (const c of [
+    { name: '320 特大字級淺色', width: 320, height: 640, theme: 'light' },
+    { name: '375 特大字級深色', width: 375, height: 812, theme: 'dark' },
+  ] as const)
+    test(`${c.name}：極長模型 id 的結果不溢出，按鈕至少 44px`, async ({ page }) => {
+      await page.setViewportSize({ width: c.width, height: c.height })
+      await page.addInitScript((theme) => {
+        localStorage.setItem('lg.textSize', 'xl')
+        localStorage.setItem('lg.theme', theme)
+      }, c.theme)
+      const fake = await fakeOpenRouter(page)
+      fake.grades = [{ body: { ...(OK.body as object), model: LONG_ID } }]
+      await linkKey(page)
+      await page.getByRole('button', BUTTON).click()
+      await expect(page.getByRole('status')).toContainText(LONG_ID)
+      const m = await measureMobile(page)
+      expect(m.overflow, '整頁橫向溢出').toEqual([])
+      expect(m.small, '可點目標 <44px').toEqual([])
+      expect(m.wrapped, '單行控件折行').toEqual([])
+      expect(
+        await overflowingChildren(page, '[data-testid="ai-linked"]'),
+        'AI 卡子元素溢出',
+      ).toEqual([])
+    })
 })
 
 test('沒有金鑰：寫作題對照參考答案自評、提示去設定（AC#3）', async ({ page }) => {

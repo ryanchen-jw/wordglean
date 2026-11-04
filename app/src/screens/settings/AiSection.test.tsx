@@ -1,8 +1,8 @@
 import 'fake-indexeddb/auto'
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
-import { getLink, saveLink } from '../../llm/keyStore'
+import { getLink, saveLink, setModel } from '../../llm/keyStore'
 import { markOauthFailed } from '../../llm/startup'
 import { AiSection } from './AiSection'
 
@@ -26,9 +26,13 @@ const MODELS = {
   ],
 }
 
-function fakeOpenRouter({ remaining = 37 }: { remaining?: number | null } = {}) {
-  return vi.fn<typeof fetch>(async (input) => {
+function fakeOpenRouter({
+  remaining = 37,
+  chat,
+}: { remaining?: number | null; chat?: typeof fetch } = {}) {
+  return vi.fn<typeof fetch>(async (input, init) => {
     const url = String(input)
+    if (url === 'https://openrouter.ai/api/v1/chat/completions' && chat) return chat(input, init)
     if (url === 'https://openrouter.ai/api/v1/key')
       return Response.json({
         data: remaining === null ? {} : { free_model_daily_requests: { remaining } },
@@ -124,7 +128,7 @@ describe('已連結（s11 已授權）', () => {
         : Response.json({ data: {} }),
     )
     render(<AiSection fetchFn={fetchFn} />)
-    fireEvent.click(await screen.findByRole('button', { name: /模型/ }))
+    fireEvent.click(await screen.findByRole('button', { name: /模型\s*免費模型/ }))
     expect(await screen.findByRole('alert')).toHaveTextContent('讀不到模型清單，請稍後再試。')
   })
 
@@ -143,5 +147,219 @@ describe('已連結（s11 已授權）', () => {
     fireEvent.click(within(dialog).getByRole('button', { name: '解除連結' }))
     expect(await screen.findByText('狀態：未設定')).toBeInTheDocument()
     expect(await getLink(db)).toBeNull()
+  })
+})
+
+describe('測試目前模型（TASK-29）', () => {
+  const CHAT = 'https://openrouter.ai/api/v1/chat/completions'
+  const BUTTON = { name: '測試目前模型' }
+  const GRADE = {
+    isCorrect: false,
+    corrected: 'I really like music.',
+    errors: [{ original: 'very like', corrected: 'really like', explanationZh: '說明' }],
+    explanationZh: '說明',
+    levelOk: true,
+  }
+  const graded = (model = 'xingchen-agi/xing4.0-29b-a4b:free') =>
+    Response.json({
+      model,
+      choices: [{ message: { content: JSON.stringify(GRADE) }, finish_reason: 'stop' }],
+    })
+  /** 像真 fetch：不回應，直到 signal 中止才拒絕 */
+  const hanging = () =>
+    vi.fn<typeof fetch>(
+      (_input, init) =>
+        new Promise((_resolve, reject) => {
+          init?.signal?.addEventListener('abort', () =>
+            reject(new DOMException('Aborted', 'AbortError')),
+          )
+        }),
+    )
+  const chatCalls = (fetchFn: ReturnType<typeof fakeOpenRouter>) =>
+    fetchFn.mock.calls.filter(([url]) => String(url) === CHAT)
+  const snapshot = async () =>
+    Object.fromEntries(
+      await Promise.all(db.tables.map(async (x) => [x.name, await x.toArray()] as const)),
+    )
+
+  afterEach(() => {
+    vi.restoreAllMocks()
+  })
+
+  it('未連結：不顯示按鈕與說明', async () => {
+    render(<AiSection fetchFn={fakeOpenRouter()} />)
+    await screen.findByText('狀態：未設定')
+    expect(screen.queryByRole('button', BUTTON)).toBeNull()
+    expect(screen.queryByText('測試會實際送出批改，可能用掉免費額度或費用。')).toBeNull()
+  })
+
+  describe('已連結', () => {
+    beforeEach(async () => {
+      await saveLink(db, KEY, 'oauth', 1)
+    })
+
+    it('進頁只顯示按鈕與說明、不自動打；結果區已在畫面上且為空', async () => {
+      const chat = vi.fn<typeof fetch>(async () => graded())
+      render(<AiSection fetchFn={fakeOpenRouter({ chat })} />)
+      expect(await screen.findByRole('button', BUTTON)).toBeEnabled()
+      expect(screen.getByText('測試會實際送出批改，可能用掉免費額度或費用。')).toBeInTheDocument()
+      expect(screen.getByRole('status')).toBeEmptyDOMElement()
+      expect(chat).not.toHaveBeenCalled()
+    })
+
+    it('成功：走批改請求、固定測試句，顯示實際回應的模型與秒數', async () => {
+      let clock = 1000
+      vi.spyOn(performance, 'now').mockImplementation(() => clock)
+      const chat = vi.fn<typeof fetch>(async () => {
+        clock += 3240
+        return graded()
+      })
+      render(<AiSection fetchFn={fakeOpenRouter({ chat })} />)
+      fireEvent.click(await screen.findByRole('button', BUTTON))
+      expect(screen.getByRole('status')).toHaveTextContent('測試中…')
+      await waitFor(() =>
+        expect(screen.getByRole('status').textContent).toBe(
+          '可以使用：xingchen-agi/xing4.0-29b-a4b:free（3.2 秒）',
+        ),
+      )
+      expect(screen.getByText('xingchen-agi/xing4.0-29b-a4b:free')).toHaveAttribute('lang', 'en')
+      const [, init] = chat.mock.calls[0]
+      expect((init?.headers as Record<string, string>).Authorization).toBe(`Bearer ${KEY}`)
+      const body = JSON.parse(init?.body as string) as {
+        models: string[]
+        messages: { role: string; content: string }[]
+      }
+      expect(body.models[0]).toBe('google/gemma-4-31b-it:free')
+      expect(body.messages[1].content).toContain('"""I very like music."""')
+    })
+
+    it('回應沒帶 model：顯示選定的模型', async () => {
+      const chat: typeof fetch = async () =>
+        Response.json({
+          choices: [{ message: { content: JSON.stringify(GRADE) }, finish_reason: 'stop' }],
+        })
+      render(<AiSection fetchFn={fakeOpenRouter({ chat })} />)
+      fireEvent.click(await screen.findByRole('button', BUTTON))
+      await waitFor(() =>
+        expect(screen.getByRole('status').textContent).toMatch(
+          /^可以使用：google\/gemma-4-31b-it:free（\d+\.\d 秒）$/,
+        ),
+      )
+    })
+
+    it.each<[string, typeof fetch, string, number]>([
+      [
+        'quota（每日免費額度）',
+        async () =>
+          Response.json(
+            { error: { code: 429, message: 'Rate limit exceeded: free-models-per-day' } },
+            { status: 429 },
+          ),
+        '今日免費額度已用完。',
+        1,
+      ],
+      [
+        'keyInvalid',
+        async () => Response.json({ error: { code: 401, message: 'No auth' } }, { status: 401 }),
+        '金鑰無效，請重新連結 OpenRouter。',
+        1,
+      ],
+      [
+        'network',
+        () => Promise.reject(new TypeError('Failed to fetch')),
+        '連不上網路，請檢查連線後再試。',
+        1,
+      ],
+      [
+        'other（上游忙碌）',
+        async () => Response.json({ error: { code: 503, message: 'busy' } }, { status: 503 }),
+        '目前的模型都在忙碌或沒有回應，請稍後再試。',
+        2,
+      ],
+      [
+        'other（HTTP 200 但解析不出批改結果＝不算可用）',
+        async () =>
+          Response.json({
+            model: 'google/gemma-4-31b-it:free',
+            choices: [{ message: { content: 'not json' }, finish_reason: 'stop' }],
+          }),
+        '目前的模型都在忙碌或沒有回應，請稍後再試。',
+        2,
+      ],
+    ])(
+      '失敗 %s：顯示該原因的文案，按鈕恢復；只有批改流程本身的換一批會多送',
+      async (_name, chat, message, sent) => {
+        const log = (['log', 'info', 'warn', 'error', 'debug'] as const).map((m) =>
+          vi.spyOn(console, m),
+        )
+        const fetchFn = fakeOpenRouter({ chat })
+        render(<AiSection fetchFn={fetchFn} />)
+        fireEvent.click(await screen.findByRole('button', BUTTON))
+        await waitFor(() => expect(screen.getByRole('status').textContent).toBe(message))
+        expect(screen.getByRole('button', BUTTON)).toBeEnabled()
+        expect(chatCalls(fetchFn)).toHaveLength(sent)
+        expect(JSON.stringify(log.flatMap((spy) => spy.mock.calls))).not.toContain(KEY)
+      },
+    )
+
+    it('測試中不可重複送出；結果留到下次測試才換', async () => {
+      const replies: ((r: Response) => void)[] = []
+      const fetchFn = fakeOpenRouter({
+        chat: () => new Promise((resolve) => replies.push(resolve)),
+      })
+      render(<AiSection fetchFn={fetchFn} />)
+      const button = await screen.findByRole('button', BUTTON)
+      fireEvent.click(button)
+      fireEvent.click(button)
+      expect(button).toBeDisabled()
+      expect(button).toHaveAttribute('aria-busy', 'true')
+      await waitFor(() => expect(replies).toHaveLength(1))
+      fireEvent.click(button)
+      expect(chatCalls(fetchFn)).toHaveLength(1)
+
+      replies[0](graded())
+      await waitFor(() => expect(button).toBeEnabled())
+      expect(screen.getByRole('status')).toHaveTextContent('可以使用：')
+
+      // 第二次：舊結果換成進行中，只多一次請求
+      fireEvent.click(button)
+      expect(screen.getByRole('status')).toHaveTextContent('測試中…')
+      await waitFor(() => expect(replies).toHaveLength(2))
+      replies[1](Response.json({ error: { code: 401, message: 'No auth' } }, { status: 401 }))
+      await waitFor(() =>
+        expect(screen.getByRole('status').textContent).toBe('金鑰無效，請重新連結 OpenRouter。'),
+      )
+    })
+
+    it('卸載（離開設定頁）中止請求', async () => {
+      const chat = hanging()
+      const view = render(<AiSection fetchFn={fakeOpenRouter({ chat })} />)
+      fireEvent.click(await screen.findByRole('button', BUTTON))
+      await waitFor(() => expect(chat).toHaveBeenCalledOnce())
+      const signal = chat.mock.calls[0][1]?.signal as AbortSignal
+      expect(signal.aborted).toBe(false)
+      view.unmount()
+      expect(signal.aborted).toBe(true)
+    })
+
+    it('測試中換模型：中止舊請求、不把舊模型的結果算到新模型頭上', async () => {
+      const chat = hanging()
+      render(<AiSection fetchFn={fakeOpenRouter({ chat })} />)
+      fireEvent.click(await screen.findByRole('button', BUTTON))
+      await waitFor(() => expect(chat).toHaveBeenCalledOnce())
+      await setModel(db, 'openai/gpt-x')
+      await waitFor(() => expect(screen.getByRole('button', BUTTON)).toBeEnabled())
+      expect((chat.mock.calls[0][1]?.signal as AbortSignal).aborted).toBe(true)
+      expect(screen.getByRole('status')).toBeEmptyDOMElement()
+    })
+
+    it('測試不改選定模型、不寫入本機任何資料（回應的模型與選定不同時亦然）', async () => {
+      const before = await snapshot()
+      render(<AiSection fetchFn={fakeOpenRouter({ chat: async () => graded() })} />)
+      fireEvent.click(await screen.findByRole('button', BUTTON))
+      await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent('可以使用：'))
+      expect(await snapshot()).toEqual(before)
+      expect((await getLink(db))?.model).toBe('google/gemma-4-31b-it:free')
+    })
   })
 })
