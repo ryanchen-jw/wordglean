@@ -253,7 +253,7 @@ describe('收藏（s08 已收藏＋提示）', () => {
     fireEvent.click(word('agenda'))
     const dlg = within(await sheet())
     const add = await dlg.findByRole('button', { name: '加入收藏單字庫' })
-    // 只假 Toast 用的 setTimeout：fake-indexeddb 靠 setImmediate 排程，一起假掉時收藏的交易會被同步推進而提早結束
+    // 只假 Toast 用的 setTimeout。實測：連 setImmediate（fake-indexeddb 的排程）一起假時收藏寫入失敗 5／450 次，只假 setTimeout 時 0／450；確切機制未證實
     vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] })
     try {
       fireEvent.click(add)
