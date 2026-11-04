@@ -6,7 +6,7 @@ import { fakeOpenRouter, FAKE_KEY, MODELS } from './openrouter.js'
 
 test.use({ serviceWorkers: 'block' })
 
-const PAID = MODELS.filter((m) => !m.id.endsWith(':free'))
+const PAID = MODELS.filter((m) => !m.id.endsWith(':free') && m.id !== 'openrouter/free')
 const CASES = [
   { name: '320-xl', width: 320, height: 640, textSize: 'xl', theme: 'light' },
   { name: '360-md', width: 360, height: 740, textSize: 'md', theme: 'light' },
