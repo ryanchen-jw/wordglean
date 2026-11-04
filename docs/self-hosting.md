@@ -104,7 +104,7 @@ npx --yes supabase@2.118.0 db push
 | 項目 | 設定 |
 |---|---|
 | URL Configuration → Site URL | 你的站台網址，例如 `https://<你的專案>.pages.dev` |
-| URL Configuration → Redirect URLs | 同上（Google 登入完成後回到這裡） |
+| URL Configuration → Redirect URLs | 站台網址加 `/settings`，例如 `https://<你的專案>.pages.dev/settings`（Google 登入完成後回到設定頁；只填站台網址的話登入不會生效） |
 | Sign In / Providers → Email | 開啟；App 用 6 位數驗證碼登入，不用密碼 |
 | Email Templates → Magic Link 與 Confirm signup | 信件內容要包含 `{{ .Token }}`（驗證碼），可直接貼 `supabase/templates/otp.html` 的內容 |
 | SMTP Settings | 建議設定自己的寄信服務：Supabase 內建寄信每小時只能寄很少封，只適合測試 |

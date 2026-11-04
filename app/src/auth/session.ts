@@ -43,7 +43,8 @@ export async function createAuthSession(config: AuthConfig, db: LinguaDb): Promi
       check(
         client.auth.signInWithOAuth({
           provider: 'google',
-          options: { redirectTo: window.location.origin },
+          // 回設定頁而非首頁：首頁不載入本模組（維持不進首屏），回首頁就沒有 client 能讀網址裡的 token
+          options: { redirectTo: `${window.location.origin}/settings` },
         }),
       ),
     async signOut() {

@@ -13,6 +13,7 @@ const fake = vi.hoisted(() => ({
   userId: 'user-y',
   signOut: null as unknown as ReturnType<typeof vi.fn>,
   from: null as unknown as ReturnType<typeof vi.fn>,
+  signInWithOAuth: null as unknown as ReturnType<typeof vi.fn>,
 }))
 
 vi.mock('@supabase/supabase-js', () => ({
@@ -26,6 +27,7 @@ vi.mock('@supabase/supabase-js', () => ({
         return { data: { subscription: { unsubscribe() {} } } }
       },
       signOut: fake.signOut,
+      signInWithOAuth: fake.signInWithOAuth,
     },
     from: fake.from,
   }),
@@ -71,6 +73,22 @@ describe('登入接線：登入方式', () => {
     const auth = await createAuthSession({ ...config, google: true, email: false }, db)
     expect(auth.google).toBe(true)
     expect(auth.email).toBe(false)
+  })
+})
+
+describe('登入接線：Google 登入', () => {
+  it('登入完成後回到設定頁：首頁不載入 Supabase，回首頁會讀不到網址裡的 token', async () => {
+    reset()
+    fake.signInWithOAuth = vi.fn(async () => ({ error: null }))
+    const db = await freshDb()
+    const auth = await createAuthSession({ ...config, google: true }, db)
+
+    await auth.signInWithGoogle()
+
+    expect(fake.signInWithOAuth).toHaveBeenCalledWith({
+      provider: 'google',
+      options: { redirectTo: 'http://localhost:3000/settings' },
+    })
   })
 })
 
