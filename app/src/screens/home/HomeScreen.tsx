@@ -1,6 +1,8 @@
 // 首頁「今天」（設計 s01）：預設／今天都完成／新課暫停／第一次開啟；離線提示條由外框處理
 import { ChevronRight, CircleCheck, Info, Settings } from 'lucide-react'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useState } from 'react'
+import { authConfigFromEnv } from '../../auth/config'
+import { readSignedInAccount } from '../../auth/signedInAccount'
 import { nextLesson, type Level } from '../../curriculum/curriculum'
 import { levelLabel } from '../../curriculum/levelLabel'
 import { useLevelDoc } from '../../curriculum/load'
@@ -187,18 +189,41 @@ function HomeSkeleton() {
 
 export function HomeScreen() {
   const { model, level } = useHomeModel()
+  // 掛載時讀一次即可：路由切換會重新掛載首頁，在設定頁登入或登出後回來就是新狀態
+  const [account] = useState(() => readSignedInAccount(authConfigFromEnv(import.meta.env)))
+  const gear = (
+    <Link
+      to="/settings"
+      className={`${iconBtnCls} text-text`}
+      aria-label={t('home.header.settings')}
+    >
+      <Settings size={20} aria-hidden="true" />
+    </Link>
+  )
   return (
     <TabScreen
       title={t('home.header.title')}
       subtitle={model && (model.state === 'first' ? t('home.header.unplaced') : levelLabel(level))}
       action={
-        <Link
-          to="/settings"
-          className={`${iconBtnCls} text-text`}
-          aria-label={t('home.header.settings')}
-        >
-          <Settings size={20} aria-hidden="true" />
-        </Link>
+        account ? (
+          <div className="flex flex-none items-center gap-0.5">
+            <Link
+              to="/settings"
+              className={iconBtnCls}
+              aria-label={t('account.panel.signedIn', { email: account.identity })}
+            >
+              <span
+                aria-hidden="true"
+                className="grid size-8.5 place-items-center overflow-hidden rounded-full bg-primary text-body leading-none font-bold text-on-primary"
+              >
+                {account.initial}
+              </span>
+            </Link>
+            {gear}
+          </div>
+        ) : (
+          gear
+        )
       }
     >
       <div data-testid="screen-home" data-state={model?.state ?? 'loading'} className="contents">

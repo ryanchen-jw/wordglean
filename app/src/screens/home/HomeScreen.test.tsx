@@ -1,9 +1,11 @@
 import 'fake-indexeddb/auto'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
 import { getSettings } from '../../data/repo'
 import type { PoolWord } from '../../data/db'
+import { navigate } from '../../router'
+import { AppRoutes } from '../../routes'
 import { CardState } from '../../srs/scheduler'
 import { stubCurriculumFetch } from '../../test/curriculumFetch'
 import { HomeScreen } from './HomeScreen'
@@ -108,5 +110,98 @@ describe('首頁（s01）', () => {
     expect(screen.getByText('明天約有 0 個單字到期。')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: '再上一課（選用）' })).toBeInTheDocument()
     expect(screen.getByText('新課 1／1')).toBeInTheDocument()
+  })
+})
+
+describe('右上角登入頭像（TASK-28）', () => {
+  const FIRST_RUN_TEXT = '先花 5 分鐘找出你的起點'
+  const SESSION_KEY = 'sb-abcdefgh-auth-token'
+  const signIn = (user: unknown) =>
+    localStorage.setItem(
+      SESSION_KEY,
+      JSON.stringify({ access_token: 'a', refresh_token: 'r', expires_at: 1, user }),
+    )
+
+  beforeEach(() => {
+    localStorage.clear()
+    vi.stubEnv('VITE_SUPABASE_URL', 'https://abcdefgh.supabase.co')
+    vi.stubEnv('VITE_SUPABASE_ANON_KEY', 'anon')
+    vi.stubEnv('VITE_AUTH_GOOGLE', 'true')
+  })
+  afterEach(() => vi.unstubAllEnvs())
+
+  it('已登入：頭像顯示首字、在齒輪左側，都連到設定頁', async () => {
+    signIn({ email: 'ryan@example.com', user_metadata: { full_name: '陳治平' } })
+    render(<HomeScreen />)
+    await screen.findByText(FIRST_RUN_TEXT)
+    const avatar = screen.getByRole('link', { name: '已登入：ryan@example.com' })
+    const gear = screen.getByRole('link', { name: '設定' })
+    expect(avatar).toHaveTextContent('陳')
+    expect(avatar).toHaveAttribute('href', '/settings')
+    expect(gear).toHaveAttribute('href', '/settings')
+    expect(avatar.compareDocumentPosition(gear)).toBe(Node.DOCUMENT_POSITION_FOLLOWING)
+  })
+
+  it('點頭像進設定頁', async () => {
+    signIn({ email: 'ryan@example.com' })
+    render(<HomeScreen />)
+    fireEvent.click(await screen.findByRole('link', { name: '已登入：ryan@example.com' }))
+    expect(location.pathname).toBe('/settings')
+  })
+
+  it('沒有 email：aria-label 用名字', async () => {
+    signIn({ user_metadata: { name: '小明' } })
+    render(<HomeScreen />)
+    expect(await screen.findByRole('link', { name: '已登入：小明' })).toHaveTextContent('小')
+  })
+
+  it('未登入：頁首 DOM 與沒設定 Supabase 時完全相同、齒輪直接在標題列裡', async () => {
+    render(<HomeScreen />)
+    await screen.findByText(FIRST_RUN_TEXT)
+    const signedOut = screen.getByRole('banner').innerHTML
+    const gear = screen.getByRole('link', { name: '設定' })
+    expect(gear.parentElement?.querySelector('h1')).toHaveTextContent('今天')
+    expect(screen.getAllByRole('link', { name: /已登入|設定/ })).toHaveLength(1)
+    cleanup()
+
+    vi.unstubAllEnvs()
+    render(<HomeScreen />)
+    await screen.findByText(FIRST_RUN_TEXT)
+    expect(screen.getByRole('banner').innerHTML).toBe(signedOut)
+  })
+
+  it('沒設定 Supabase：即使存著 session 也不顯示', async () => {
+    signIn({ email: 'ryan@example.com' })
+    vi.unstubAllEnvs()
+    render(<HomeScreen />)
+    await screen.findByText(FIRST_RUN_TEXT)
+    expect(screen.queryByRole('link', { name: /已登入/ })).toBeNull()
+  })
+
+  it('session 內容壞掉：首頁照常、不顯示頭像', async () => {
+    localStorage.setItem(SESSION_KEY, '{not json')
+    render(<HomeScreen />)
+    await screen.findByText(FIRST_RUN_TEXT)
+    expect(screen.queryByRole('link', { name: /已登入/ })).toBeNull()
+  })
+
+  it('離開首頁再回來就反映登入狀態，不必重新整理', async () => {
+    render(<AppRoutes />)
+    await screen.findByText(FIRST_RUN_TEXT)
+    expect(screen.queryByRole('link', { name: /已登入/ })).toBeNull()
+
+    // 在設定頁登入
+    act(() => navigate('/settings'))
+    expect(screen.queryByTestId('screen-home')).toBeNull()
+    signIn({ email: 'ryan@example.com' })
+    act(() => navigate('/'))
+    expect(await screen.findByRole('link', { name: '已登入：ryan@example.com' })).toBeVisible()
+
+    // 在設定頁登出
+    act(() => navigate('/settings'))
+    localStorage.removeItem(SESSION_KEY)
+    act(() => navigate('/'))
+    await screen.findByText(FIRST_RUN_TEXT)
+    expect(screen.queryByRole('link', { name: /已登入/ })).toBeNull()
   })
 })
