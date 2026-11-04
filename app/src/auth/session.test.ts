@@ -49,7 +49,7 @@ afterEach(async () => {
   }
 })
 
-const config = { url: 'http://127.0.0.1:55421', anonKey: 'anon', google: false }
+const config = { url: 'http://127.0.0.1:55421', anonKey: 'anon', google: false, email: true }
 const signedInAsY = { user: { id: 'user-y', email: 'y@test.local' } }
 
 function reset() {
@@ -63,6 +63,16 @@ function reset() {
     throw new Error('offline')
   })
 }
+
+describe('登入接線：登入方式', () => {
+  it('把設定的登入方式帶給畫面', async () => {
+    reset()
+    const db = await freshDb()
+    const auth = await createAuthSession({ ...config, google: true, email: false }, db)
+    expect(auth.google).toBe(true)
+    expect(auth.email).toBe(false)
+  })
+})
 
 describe('登入接線：換帳號保護', () => {
   it('本機資料已綁定帳號 X，以 Y 登入：不連雲端、把 Y 登出並通知畫面', async () => {

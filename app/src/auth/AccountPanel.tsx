@@ -123,6 +123,33 @@ export function AccountPanel({ auth }: { auth: AuthApi }) {
     )
   }
 
+  const googleButton = auth.google && (
+    <button
+      type="button"
+      data-testid="login-google"
+      className={secondary}
+      disabled={busy}
+      aria-busy={busy}
+      onClick={() => void run(auth.signInWithGoogle)}
+    >
+      {t('account.panel.google')}
+    </button>
+  )
+
+  // 只開 Google：沒有 Email 表單；account.panel.error 提到驗證碼，這裡改用通用錯誤文案
+  if (!auth.email) {
+    return (
+      <section className="flex w-full flex-col gap-3">
+        {error && (
+          <p id="login-error" data-testid="login-error" role="alert" className="text-error">
+            {t('system.error.generic')}
+          </p>
+        )}
+        {googleButton}
+      </section>
+    )
+  }
+
   // 錯誤訊息放在觸發它的輸入框正下方（components.md 共通規則）；TODO(TASK-11)：錯誤圖示
   const errorText = error && (
     <p id="login-error" data-testid="login-error" role="alert" className="text-error">
@@ -188,18 +215,7 @@ export function AccountPanel({ auth }: { auth: AuthApi }) {
           </button>
         </form>
       )}
-      {auth.google && step === 'email' && (
-        <button
-          type="button"
-          data-testid="login-google"
-          className={secondary}
-          disabled={busy}
-          aria-busy={busy}
-          onClick={() => void run(auth.signInWithGoogle)}
-        >
-          {t('account.panel.google')}
-        </button>
-      )}
+      {step === 'email' && googleButton}
     </section>
   )
 }

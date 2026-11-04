@@ -7,6 +7,7 @@ function fakeAuth(over: Partial<AuthApi> = {}) {
   let listener: Parameters<AuthApi['subscribe']>[0] = () => {}
   const auth: AuthApi = {
     google: false,
+    email: true,
     sendCode: vi.fn(async () => {}),
     verifyCode: vi.fn(async () => {}),
     signInWithGoogle: vi.fn(async () => {}),
@@ -89,6 +90,43 @@ describe('登入面板', () => {
     fireEvent.click(screen.getByTestId('login-entry'))
     fireEvent.click(screen.getByTestId('login-google'))
     expect(on.auth.signInWithGoogle).toHaveBeenCalled()
+  })
+
+  describe('只開 Google（VITE_AUTH_EMAIL=false）', () => {
+    const googleOnly = (over: Partial<AuthApi> = {}) =>
+      fakeAuth({ google: true, email: false, ...over })
+
+    it('點登入入口後只有 Google 按鈕，沒有 Email 表單', () => {
+      const { auth } = googleOnly()
+      render(<AccountPanel auth={auth} />)
+      fireEvent.click(screen.getByTestId('login-entry'))
+      expect(screen.queryByTestId('login-email')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('login-send')).not.toBeInTheDocument()
+      expect(screen.queryByText('Email')).not.toBeInTheDocument()
+      expect(screen.queryByText('寄驗證碼')).not.toBeInTheDocument()
+      fireEvent.click(screen.getByRole('button', { name: '使用 Google 登入' }))
+      expect(auth.signInWithGoogle).toHaveBeenCalled()
+      expect(auth.sendCode).not.toHaveBeenCalled()
+    })
+
+    it('Google 失敗：顯示錯誤，且不提「驗證碼」', async () => {
+      const { auth } = googleOnly({
+        signInWithGoogle: vi.fn(async () => Promise.reject(new Error('x'))),
+      })
+      render(<AccountPanel auth={auth} />)
+      fireEvent.click(screen.getByTestId('login-entry'))
+      fireEvent.click(screen.getByTestId('login-google'))
+      expect(await screen.findByTestId('login-error')).toHaveTextContent('出了點問題，請再試一次。')
+      expect(screen.getByTestId('login-google')).toBeEnabled()
+    })
+
+    it('已用 Email 登入過的帳號：仍顯示帳號、可登出', async () => {
+      const { auth, setUser } = googleOnly()
+      render(<AccountPanel auth={auth} />)
+      setUser('me@test.local')
+      expect(screen.getByTestId('account-email')).toHaveTextContent('me@test.local')
+      expect(screen.getByTestId('logout')).toBeInTheDocument()
+    })
   })
 
   it('登出成功：回到未登入', async () => {

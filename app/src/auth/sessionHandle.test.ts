@@ -9,7 +9,7 @@ const fake = vi.hoisted(() => ({
 }))
 vi.mock('./session', () => ({ createAuthSession: (...args: unknown[]) => fake.create(...args) }))
 
-const config = { url: 'http://127.0.0.1:55421', anonKey: 'anon', google: false }
+const config = { url: 'http://127.0.0.1:55421', anonKey: 'anon', google: false, email: true }
 const db = {} as LinguaDb
 
 let handle: typeof import('./sessionHandle')

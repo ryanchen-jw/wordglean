@@ -7,6 +7,7 @@ import type { AuthConfig } from './config'
 
 export interface AuthApi {
   google: boolean
+  email: boolean
   sendCode(email: string): Promise<void>
   verifyCode(email: string, code: string): Promise<void>
   signInWithGoogle(): Promise<void>
@@ -34,6 +35,7 @@ export async function createAuthSession(config: AuthConfig, db: LinguaDb): Promi
 
   return {
     google: config.google,
+    email: config.email,
     sendCode: (email) =>
       check(client.auth.signInWithOtp({ email, options: { shouldCreateUser: true } })),
     verifyCode: (email, token) => check(client.auth.verifyOtp({ email, token, type: 'email' })),

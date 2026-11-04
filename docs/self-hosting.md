@@ -27,13 +27,14 @@ node --version   # v22.x
 
 ## 建置時讀取的環境變數
 
-App 只在**建置時**讀這四個變數（範例檔 `app/.env.example`；登入相關見 `app/src/auth/config.ts`），會被寫進前端程式、任何人都看得到，所以只能放公開值：
+App 只在**建置時**讀這五個變數（範例檔 `app/.env.example`；登入相關見 `app/src/auth/config.ts`），會被寫進前端程式、任何人都看得到，所以只能放公開值：
 
 | 變數 | 用途 | 沒設定時 |
 |---|---|---|
 | `VITE_SUPABASE_URL` | Supabase 專案網址 | 不顯示登入，App 照常可用 |
 | `VITE_SUPABASE_ANON_KEY` | Supabase 的 anon（公開）金鑰；資料由 RLS 保護 | 同上（兩個都要有才會啟用登入） |
 | `VITE_AUTH_GOOGLE` | 設成 `true` 才顯示「使用 Google 登入」 | 只有 Email 驗證碼登入 |
+| `VITE_AUTH_EMAIL` | 設成 `false` 才隱藏 Email 驗證碼登入（其他值都視為開啟）。若 `VITE_AUTH_GOOGLE` 不是 `true`，就沒有任何登入方式，App 視同沒設定 Supabase（不顯示登入、不同步）。這個變數只隱藏介面；要真正停用，請另外關閉 Supabase 的 Email provider | 維持 Email 驗證碼登入 |
 | `VITE_SOURCE_URL` | 你的原始碼網址；設定 →「隱私說明・授權・原始碼」顯示「查看原始碼」連結 | 只顯示授權說明、沒有連結 |
 
 **關於 `VITE_SOURCE_URL`**：AGPL-3.0 第 13 條要求，透過網路提供修改版給別人使用時，要讓使用者能取得對應的原始碼。請填**你自己的** repo 網址（含你的修改），不要填上游 LinguaApp 的網址。兩種部署都建議設定。
@@ -119,6 +120,7 @@ npx --yes supabase@2.118.0 db push
 | `VITE_SUPABASE_URL` | `https://<你的 Project ref>.supabase.co` |
 | `VITE_SUPABASE_ANON_KEY` | anon public key |
 | `VITE_AUTH_GOOGLE` | `true`（有設定 Google 登入時才加） |
+| `VITE_AUTH_EMAIL` | `false`（只想開 Google 登入時才加） |
 | `VITE_SOURCE_URL` | 你的 repo 網址 |
 
 其餘建置設定同 (a)。改了環境變數之後要重新部署一次（變數是在建置時寫進程式的）。
