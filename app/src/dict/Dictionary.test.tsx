@@ -253,7 +253,8 @@ describe('收藏（s08 已收藏＋提示）', () => {
     fireEvent.click(word('agenda'))
     const dlg = within(await sheet())
     const add = await dlg.findByRole('button', { name: '加入收藏單字庫' })
-    vi.useFakeTimers()
+    // 只假 Toast 用的 setTimeout：fake-indexeddb 靠 setImmediate 排程，一起假掉時收藏的交易會被同步推進而提早結束
+    vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] })
     try {
       fireEvent.click(add)
       expect(screen.getByRole('status')).toHaveTextContent('已加入收藏')
@@ -262,6 +263,27 @@ describe('收藏（s08 已收藏＋提示）', () => {
     } finally {
       vi.useRealTimers()
     }
+    // 等寫入完成才結束，不留交易給下一個測試
+    await waitFor(async () =>
+      expect((await db.wordPool.get('agenda'))?.favoritedAt).toEqual(expect.any(Number)),
+    )
+  })
+
+  it('收藏寫入失敗：不留「已加入收藏」，改提示出錯；按鈕仍是未收藏', async () => {
+    const consoleError = vi.spyOn(console, 'error').mockImplementation(() => {})
+    renderText({ text: 'agenda' })
+    fireEvent.click(word('agenda'))
+    const dlg = within(await sheet())
+    const add = await dlg.findByRole('button', { name: '加入收藏單字庫' })
+    db.close()
+    fireEvent.click(add)
+    await waitFor(() =>
+      expect(screen.getByRole('status')).toHaveTextContent('出了點問題，請再試一次。'),
+    )
+    expect(within(screen.getByRole('status')).queryByRole('button', { name: '復原' })).toBeNull()
+    expect(dlg.getByRole('button', { name: '加入收藏單字庫' })).toBeInTheDocument()
+    expect(consoleError).toHaveBeenCalled()
+    consoleError.mockRestore()
   })
 })
 

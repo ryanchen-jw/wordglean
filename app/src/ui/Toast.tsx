@@ -1,11 +1,13 @@
 // Toast（components.md §8）：反色、role=status 不搶焦點、4 秒後消失、可帶一個文字動作；
 // 有底部彈層開著時改出現在畫面上方，避免蓋住彈層內容
-import { CircleCheck } from 'lucide-react'
+import { CircleCheck, type LucideIcon } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 export const TOAST_MS = 4000
 
 type Props = {
+  /** 預設打勾；錯誤提示傳別的圖示 */
+  icon?: LucideIcon
   message: string
   action?: { label: string; onClick: () => void }
   /** top＝底部彈層開著時；bottom＝浮在底部導覽上方 */
@@ -13,7 +15,7 @@ type Props = {
   onDismiss: () => void
 }
 
-export function Toast({ message, action, placement, onDismiss }: Props) {
+export function Toast({ icon: Icon = CircleCheck, message, action, placement, onDismiss }: Props) {
   const dismissRef = useRef(onDismiss)
   useEffect(() => {
     dismissRef.current = onDismiss
@@ -33,7 +35,7 @@ export function Toast({ message, action, placement, onDismiss }: Props) {
           : 'bottom-[calc(env(safe-area-inset-bottom)+72px)]'
       }`}
     >
-      <CircleCheck size={20} aria-hidden="true" className="flex-none" />
+      <Icon size={20} aria-hidden="true" className="flex-none" />
       <span className="min-w-0 flex-1">{message}</span>
       {action && (
         <button
