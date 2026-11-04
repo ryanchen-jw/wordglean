@@ -206,6 +206,60 @@ describe('小課畫面（AC#2 單元層）', () => {
     expect(screen.getByTestId('reading-question')).toHaveTextContent('2／2 Amy 的妹妹早上在哪裡？')
   })
 
+  it.each([
+    ['答錯', '一個', '答案是 B：兩個'],
+    ['答對', '兩個', '正確'],
+  ])('閱讀理解：%s後仍可切換中文翻譯，aria-expanded 跟著變', async (_, pick, feedback) => {
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
+    for (let n = 1; n <= 12; n++) {
+      await answerCurrent(n)
+      cont()
+    }
+    await count(13)
+    fireEvent.click(option(pick))
+    fireEvent.click(screen.getByRole('button', { name: '檢查' }))
+    expect(await screen.findByRole('status')).toHaveTextContent(feedback)
+    expect(screen.queryByTestId('reading-translation')).toBeNull()
+
+    const show = screen.getByRole('button', { name: '看中文翻譯' })
+    expect(show).toHaveAttribute('aria-expanded', 'false')
+    fireEvent.click(show)
+    expect(screen.getByTestId('reading-translation')).toHaveTextContent('Amy 十歲。')
+    const hide = screen.getByRole('button', { name: '收起中文翻譯' })
+    expect(hide).toHaveAttribute('aria-expanded', 'true')
+    fireEvent.click(hide)
+    expect(screen.queryByTestId('reading-translation')).toBeNull()
+    expect(screen.getByRole('button', { name: '看中文翻譯' })).toHaveAttribute(
+      'aria-expanded',
+      'false',
+    )
+    // 切換不影響回饋與「繼續」
+    expect(screen.getByRole('status')).toHaveTextContent(feedback)
+    cont()
+    await count(14)
+  })
+
+  it.each([
+    ['答錯', '一個'],
+    ['答對', '兩個'],
+  ])('閱讀理解：作答前展開的翻譯，%s後維持展開', async (_, pick) => {
+    render(<LessonScreen lessonId={LESSON} loadItems={loadItems} />)
+    for (let n = 1; n <= 12; n++) {
+      await answerCurrent(n)
+      cont()
+    }
+    await count(13)
+    fireEvent.click(screen.getByRole('button', { name: '看中文翻譯' }))
+    fireEvent.click(option(pick))
+    fireEvent.click(screen.getByRole('button', { name: '檢查' }))
+    await screen.findByRole('status')
+    expect(screen.getByTestId('reading-translation')).toHaveTextContent('Amy 十歲。')
+    expect(screen.getByRole('button', { name: '收起中文翻譯' })).toHaveAttribute(
+      'aria-expanded',
+      'true',
+    )
+  })
+
   it('全部做完 → 完成頁：單元名、新字 8 個、14 題（含配對 2 題）答對 12 題、答錯的單字卡 1 題進複習；onSettle 收到摘要', async () => {
     const onSettle = vi.fn()
     render(<LessonScreen lessonId={LESSON} loadItems={loadItems} onSettle={onSettle} />)

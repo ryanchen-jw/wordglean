@@ -11,6 +11,9 @@ import { LessonFoot, LessonMain } from './frame'
 import { ZhText } from './ZhText'
 import { choiceState, LETTERS, type QuestionProps } from './types'
 
+// 設計比例 1:1.4；左欄至少容得下按鈕文字（窄螢幕特大字級不折行）
+const footColsCls = 'grid-cols-[minmax(max-content,1fr)_1.4fr]'
+
 export function ReadingView({ item, step, onAnswer, onContinue }: QuestionProps<ReadingItem>) {
   const { options, answer } = step.choice!
   const qi = step.questionIndex ?? 0
@@ -29,6 +32,12 @@ export function ReadingView({ item, step, onAnswer, onContinue }: QuestionProps<
     setPicked(selected)
     onAnswer({ correct: selected === answer, usedHint: false })
   }
+
+  const zhToggle = (
+    <Button variant="secondary" aria-expanded={showZh} onClick={() => setShowZh((v) => !v)}>
+      {t(showZh ? 'lesson.reading.hideTranslation' : 'lesson.reading.showTranslation')}
+    </Button>
+  )
 
   return (
     <>
@@ -82,14 +91,15 @@ export function ReadingView({ item, step, onAnswer, onContinue }: QuestionProps<
               }
             />
           )}
-          <Button onClick={onContinue}>{t('lesson.feedback.continue')}</Button>
+          {/* 按鈕列自成一格：長回饋文字不參與 max-content 欄寬計算 */}
+          <div className={`grid gap-2.5 ${footColsCls}`}>
+            {zhToggle}
+            <Button onClick={onContinue}>{t('lesson.feedback.continue')}</Button>
+          </div>
         </LessonFoot>
       ) : (
-        // 設計比例 1:1.4；左欄至少容得下按鈕文字（窄螢幕特大字級不折行）
-        <LessonFoot className="grid-cols-[minmax(max-content,1fr)_1.4fr]">
-          <Button variant="secondary" aria-expanded={showZh} onClick={() => setShowZh((v) => !v)}>
-            {t(showZh ? 'lesson.reading.hideTranslation' : 'lesson.reading.showTranslation')}
-          </Button>
+        <LessonFoot className={footColsCls}>
+          {zhToggle}
           <Button disabled={selected === null} onClick={check}>
             {t('lesson.choice.check')}
           </Button>
