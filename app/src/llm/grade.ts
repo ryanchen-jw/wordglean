@@ -4,6 +4,7 @@ import { gradeMessages, type GradeTask } from './gradePrompt'
 import type { OpenRouterLink } from './keyStore'
 import { modelChain } from './models'
 import { parseGrade, type GradeResult } from './parseGrade'
+import { knownModels } from './startup'
 import { localizeGrade, preloadTaiwanZh } from './zhTw'
 
 export type GradeOutcome =
@@ -25,7 +26,7 @@ async function request(
     const { text, model } = await complete(
       {
         apiKey: link.apiKey,
-        models: modelChain(link.model),
+        models: modelChain(link.model, knownModels()),
         messages: gradeMessages(task),
         signal,
       },

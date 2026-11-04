@@ -92,7 +92,8 @@ describe('gradeWriting', () => {
     })
     expect(JSON.parse(fetchFn.mock.calls[0][1]!.body as string).models).toEqual([
       'qwen/qwen3.8-27b:free',
-      'apodex/apodex-1.1-mini:free',
+      'google/gemma-4-31b-it:free',
+      'xingchen-agi/xing4.0-29b-a4b:free',
     ])
   })
 

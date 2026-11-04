@@ -7,7 +7,7 @@ import '@fontsource-variable/noto-sans'
 import './index.css'
 import App from './App.tsx'
 import { db } from './data/appDb'
-import { refreshModel } from './llm/startup'
+import { refreshModel, refreshModelIfStale } from './llm/startup'
 import { applyPrefs, readPrefs } from './shell/prefs'
 import { watchFirstInteraction } from './sound/sfx'
 
@@ -19,6 +19,10 @@ watchFirstInteraction()
 
 // 已連結 OpenRouter 時確認選定的模型還在（下架就換回預設）；失敗不影響使用
 void refreshModel(db).catch((e: unknown) => console.warn('[openrouter] 模型檢查失敗', e))
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible') return
+  void refreshModelIfStale(db).catch((e: unknown) => console.warn('[openrouter] 模型檢查失敗', e))
+})
 
 // e2e 專用測試掛鉤（TASK-20）；一般建置此判斷為常數 false，整段被移除
 if (import.meta.env.VITE_E2E_HOOKS === 'true') void import('./testHooks')

@@ -32,12 +32,12 @@ describe('looksLikeKey（設計 s11-keyerr：應以 sk-or- 開頭）', () => {
 })
 
 describe('貼金鑰／清除金鑰', () => {
-  it('第一次存：去頭尾空白、預設模型 qwen/qwen3.8-27b:free、記來源與時間', async () => {
+  it('第一次存：去頭尾空白、預設模型 google/gemma-4-31b-it:free、記來源與時間', async () => {
     await saveLink(db, `  ${KEY} `, 'paste', T)
     expect(await getLink(db)).toEqual({
       key: 'openrouter',
       apiKey: KEY,
-      model: 'qwen/qwen3.8-27b:free',
+      model: 'google/gemma-4-31b-it:free',
       via: 'paste',
       linkedAt: T,
     })

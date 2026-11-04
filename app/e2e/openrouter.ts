@@ -11,14 +11,20 @@ export type GradeReply = { status?: number; body: unknown }
 const text = { input_modalities: ['text'], output_modalities: ['text'] }
 export const MODELS = [
   {
-    id: 'qwen/qwen3.8-27b:free',
-    name: 'Qwen: Qwen3.8 27B (free)',
+    id: 'google/gemma-4-31b-it:free',
+    name: 'Google: Gemma 4 31B (free)',
     pricing: { prompt: '0', completion: '0' },
     architecture: text,
   },
   {
-    id: 'apodex/apodex-1.1-mini:free',
-    name: 'Apodex: Apodex 1.1 Mini (free)',
+    id: 'google/gemma-4-26b-a4b-it:free',
+    name: 'Google: Gemma 4 26B A4B (free)',
+    pricing: { prompt: '0', completion: '0' },
+    architecture: text,
+  },
+  {
+    id: 'xingchen-agi/xing4.0-29b-a4b:free',
+    name: 'XingChen: Xing 4.0 29B A4B (free)',
     pricing: { prompt: '0', completion: '0' },
     architecture: text,
   },
@@ -39,7 +45,7 @@ export const MODELS = [
 
 export const gradeOk = (result: unknown): GradeReply => ({
   body: {
-    model: 'qwen/qwen3.8-27b:free',
+    model: 'google/gemma-4-31b-it:free',
     choices: [{ message: { content: JSON.stringify(result) }, finish_reason: 'stop' }],
   },
 })
