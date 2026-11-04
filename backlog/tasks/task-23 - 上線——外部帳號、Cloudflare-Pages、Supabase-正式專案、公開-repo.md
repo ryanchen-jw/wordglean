@@ -28,7 +28,7 @@ ordinal: 23000
 <!-- AC:BEGIN -->
 - [ ] #1 G6 清單交付創辦人（每項附操作步驟截圖或連結），帳號就緒後填入環境變數（不進 repo）
 - [ ] #2 正式站部署成功，部署後唯讀走查兩引擎截圖無異常
-- [ ] #3 Google 與 Email 驗證碼登入在正式站各成功一次
+- [ ] #3 Google 登入在正式站成功一次；Email 驗證碼入口在正式站不出現
 - [ ] #4 每日喚醒排程設定並驗證觸發一次
 - [ ] #5 G7 創辦人明示後 push 公開 repo；push 的 commit sha 記回卡
 <!-- AC:END -->
@@ -39,5 +39,9 @@ ordinal: 23000
 created: 2026-10-03 23:55
 ---
 創辦人裁示（10-03）：「刪除雲端帳號資料」功能與隱私聯絡方式不做，本卡不納入。上線部署必設 VITE_SOURCE_URL（AGPL §13，見 docs/self-hosting.md）。
+---
+created: 2026-11-04 15:50
+---
+創辦人裁示（11-04）：repo 為 ryanchen-jw/wordglean（先私有，公開仍走 G7）；commit 歷史保留原 Gmail 作者信箱、不改寫；正式站用 pages.dev，只開 Google 登入（VITE_AUTH_GOOGLE=true、VITE_AUTH_EMAIL=false），不設 SMTP。
 ---
 <!-- COMMENTS:END -->
