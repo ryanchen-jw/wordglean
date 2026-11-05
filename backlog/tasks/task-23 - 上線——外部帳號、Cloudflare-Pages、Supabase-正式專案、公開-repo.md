@@ -1,7 +1,7 @@
 ---
 id: TASK-23
 title: 上線——外部帳號、Cloudflare Pages、Supabase 正式專案、公開 repo
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-10-01 16:00'
 labels:
@@ -26,10 +26,10 @@ ordinal: 23000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 G6 清單交付創辦人（每項附操作步驟截圖或連結），帳號就緒後填入環境變數（不進 repo）
-- [ ] #2 正式站部署成功，部署後唯讀走查兩引擎截圖無異常
-- [ ] #3 Google 登入在正式站成功一次；Email 驗證碼入口在正式站不出現
-- [ ] #4 每日喚醒排程設定並驗證觸發一次
+- [x] #1 G6 清單交付創辦人（每項附操作步驟截圖或連結），帳號就緒後填入環境變數（不進 repo）
+- [x] #2 正式站部署成功，部署後唯讀走查兩引擎截圖無異常
+- [x] #3 Google 登入在正式站成功一次；Email 驗證碼入口在正式站不出現
+- [x] #4 每日喚醒排程設定並驗證觸發一次
 - [ ] #5 G7 創辦人明示後 push 公開 repo；push 的 commit sha 記回卡
 <!-- AC:END -->
 

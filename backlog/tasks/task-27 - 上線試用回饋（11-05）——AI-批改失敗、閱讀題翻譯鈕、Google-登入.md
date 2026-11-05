@@ -1,7 +1,7 @@
 ---
 id: TASK-27
 title: 上線試用回饋（11-05）——AI 批改失敗、閱讀題翻譯鈕、Google 登入
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-04 18:02'
 labels:
@@ -27,9 +27,18 @@ ordinal: 27000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 AI 批改以 App 同一份程式真打成功並解析出繁中結果，根因寫回本卡
-- [ ] #2 預設模型全部下架時會自動改用仍存在的免費模型且 Google 優先；手動選定且仍存在的模型不被更換；有對應測試
-- [ ] #3 閱讀理解答對與答錯後都能展開與收起中文翻譯，手機雙引擎截圖確認
-- [ ] #4 正式站 Google 登入成功：設定頁顯示已登入，重新整理後仍登入
-- [ ] #5 零回歸：lint、typecheck、相關單元測試、build 通過；正式站部署後走查登入與批改
+- [x] #1 AI 批改以 App 同一份程式真打成功並解析出繁中結果，根因寫回本卡
+- [x] #2 預設模型全部下架時會自動改用仍存在的免費模型且 Google 優先；手動選定且仍存在的模型不被更換；有對應測試
+- [x] #3 閱讀理解答對與答錯後都能展開與收起中文翻譯，手機雙引擎截圖確認
+- [x] #4 正式站 Google 登入成功：設定頁顯示已登入，重新整理後仍登入
+- [x] #5 零回歸：lint、typecheck、相關單元測試、build 通過；正式站部署後走查登入與批改
 <!-- AC:END -->
+
+## Comments
+<!-- COMMENTS:BEGIN -->
+---
+created: 2026-11-05 05:00
+---
+結案（11-05）：根因是舊預設模型下架、Gemma 被上游 429 且舊鏈無有效備援（用開發端金鑰重現，非手機紀錄）。預設鏈改 gemma31、xing4.0、openrouter/free，整批失敗自動換一批；創辦人裁示隱私不作條件，已更新隱私文案。真機驗過批改、閱讀翻譯、Google 登入。走查另見閱讀短文行首逗號：標點修正造成 axe 與 visual-smoke 回歸，已還原（de16a1b），候選修法存 docs/pending/candidate-nowrap-wbr.patch，未修。
+---
+<!-- COMMENTS:END -->
