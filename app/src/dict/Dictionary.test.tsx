@@ -43,46 +43,6 @@ describe('可點英文字', () => {
     ])
   })
 
-  it('標點跟字綁在一起但不進按鈕：按鈕名稱只有字、文字內容與原文相同', () => {
-    const text = `Every Saturday, they (the "two") don't stop... red,blue well-known 5-day 3rd.`
-    const { container } = renderText({ text })
-    expect(screen.getAllByRole('button').map((b) => b.textContent)).toEqual([
-      'Every',
-      'Saturday',
-      'they',
-      'the',
-      'two',
-      "don't",
-      'stop',
-      'red',
-      'blue',
-      'well-known',
-      'day',
-      'rd',
-    ])
-    expect(container.querySelector('[lang=en]')?.textContent).toBe(text)
-    expect(word('Saturday').parentElement?.textContent).toBe('Saturday,')
-    expect(word('the').parentElement?.textContent).toBe('(the')
-    expect(word('two').parentElement?.textContent).toBe('"two")')
-    expect(word('rd').parentElement?.textContent).toBe('3rd.')
-    // 沒有緊鄰標點的字不多包一層
-    expect(word('they').parentElement).toHaveAttribute('lang', 'en')
-  })
-
-  it('點綁了標點的字：查的是字本身，開字典', async () => {
-    const onLookup = vi.fn()
-    renderText({ text: 'Every Saturday, they go.', onLookup })
-    fireEvent.click(word('Saturday'))
-    expect(onLookup).toHaveBeenCalledWith('Saturday')
-    await sheet()
-  })
-
-  it('不可點的字：標點照常保留，沒有多餘的按鈕', () => {
-    const { container } = renderText({ text: 'Every Saturday, they (go).', disabled: 'all' })
-    expect(screen.queryAllByRole('button')).toEqual([])
-    expect(container.querySelector('[lang=en]')?.textContent).toBe('Every Saturday, they (go).')
-  })
-
   it('會洩漏答案的字作答前不可點、不可聚焦；all＝整段不可點', async () => {
     const { unmount } = renderText({
       text: 'The meeting was moved.',

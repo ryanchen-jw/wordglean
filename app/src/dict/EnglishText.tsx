@@ -5,7 +5,7 @@
 import { useEffect, useState, type MouseEvent } from 'react'
 import { useDictionary } from './context'
 import { baseForms } from './lookup'
-import { splitOther, tokenize } from './tokenize'
+import { tokenize } from './tokenize'
 
 export type EnglishTextProps = {
   /** 純文字；標點與數字不可點 */
@@ -17,15 +17,9 @@ export type EnglishTextProps = {
   className?: string
 }
 
-// button 排版上是不可分割的行內方塊，方塊前後一律可斷行，字與緊鄰的標點會被拆到兩行。
-// 緊鄰標點與字包進不折行的行內 span；標點在按鈕外，不可點也不進無障礙名稱。
-// 不可用 inline-flex：flex 子項的 display 會變 block，按鈕就不再算行內文字（axe target-size 會量它與同段其他字）。
-// 字＋標點放不下一行時按鈕讓出標點的寬度（見下方 maxWidth）、字在按鈕內折行，標點接在最後一行，不溢出
-const gluedCls = 'whitespace-nowrap'
-
-// 上下各 6px 透明點擊延伸（不影響行高），讓行內字的點擊高度接近 44px；比容器寬的長字在按鈕內折行
+// 上下各 6px 透明點擊延伸（不影響行高），讓行內字的點擊高度接近 44px
 const wordCls =
-  'relative max-w-full rounded-sm text-start wrap-break-word text-inherit before:absolute before:inset-x-0 before:-inset-y-1.5 before:content-[""] active:bg-primary-soft data-active:bg-primary-soft data-active:shadow-[inset_0_-2px_0_var(--lg-primary)] focus-visible:outline-3 focus-visible:outline-focus'
+  'relative rounded-sm text-inherit before:absolute before:inset-x-0 before:-inset-y-1.5 before:content-[""] active:bg-primary-soft data-active:bg-primary-soft data-active:shadow-[inset_0_-2px_0_var(--lg-primary)] focus-visible:outline-3 focus-visible:outline-focus'
 
 export function EnglishText({ text, disabled, onLookup, className = '' }: EnglishTextProps) {
   const dict = useDictionary()
@@ -84,18 +78,10 @@ ${text}`
     return blocked?.key !== resolveKey || blocked.set.has(i)
   }
 
-  const parts = (i: number) => {
-    const tk = tokens[i]
-    return tk?.kind === 'other' ? splitOther(tk.text, i > 0, i < tokens.length - 1) : null
-  }
-
   return (
-    <span lang="en" className={`min-w-0 ${className}`}>
+    <span lang="en" className={className}>
       {tokens.map((tk, i) => {
-        if (tk.kind === 'other') return parts(i)!.mid
-        const before = parts(i - 1)?.trail ?? ''
-        const after = parts(i + 1)?.lead ?? ''
-        if (isDisabled(tk.text, i)) return before + tk.text + after
+        if (tk.kind === 'other' || isDisabled(tk.text, i)) return tk.text
         const onClick = (e: MouseEvent<HTMLButtonElement>) => {
           // Safari 點按鈕不會給焦點；先聚焦，彈層關閉時才能把焦點還給這個字
           e.currentTarget.focus()
@@ -107,26 +93,10 @@ ${text}`
             context: { tokens, index: i },
           })
         }
-        const punct = before.length + after.length
-        const button = (
-          <button
-            key={i}
-            type="button"
-            data-en-word=""
-            className={punct ? `${wordCls} whitespace-normal` : wordCls}
-            style={punct ? { maxWidth: `calc(100% - ${punct}ch)` } : undefined}
-            onClick={onClick}
-          >
+        return (
+          <button key={i} type="button" data-en-word="" className={wordCls} onClick={onClick}>
             {tk.text}
           </button>
-        )
-        if (!punct) return button
-        return (
-          <span key={i} className={gluedCls}>
-            {before}
-            {button}
-            {after}
-          </span>
         )
       })}
     </span>

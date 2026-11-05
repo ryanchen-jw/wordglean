@@ -1,33 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { shardKey } from './shards'
-import { splitOther, tokenize } from './tokenize'
-
-describe('splitOther（緊鄰單字的標點要跟著字走）', () => {
-  const cases: [string, boolean, boolean, [string, string, string]][] = [
-    [', ', true, true, [',', ' ', '']],
-    [',', true, true, [',', '', '']], // word,word
-    ['/', true, true, ['/', '', '']], // and/or
-    ['—', true, true, ['—', '', '']], // wait—now
-    ['... ', true, true, ['...', ' ', '']],
-    ['...', true, false, ['...', '', '']],
-    [' (', true, true, ['', ' ', '(']],
-    ['(', false, true, ['', '', '(']],
-    [')(', true, true, [')', '', '(']],
-    [', "', true, true, [',', ' ', '"']], // said, "hello
-    ['," ', true, true, [',"', ' ', '']], // hello," he
-    ['“', true, true, ['', '', '“']],
-    [' 3', true, true, ['', ' ', '3']], // 3rd
-    [' 5-', true, true, ['', ' ', '5-']], // 5-day
-    ['. 7. ', true, true, ['.', ' 7. ', '']], // 數字留在中段，照一般文字斷行
-    [' — ', true, true, ['', ' — ', '']], // 前後有空白的破折號
-    ['123', false, false, ['', '123', '']],
-    ['. 7', true, false, ['.', ' 7', '']],
-    ['5 ', false, true, ['', '5 ', '']],
-  ]
-  it.each(cases)('%j', (text, hasPrev, hasNext, [lead, mid, trail]) => {
-    expect(splitOther(text, hasPrev, hasNext)).toEqual({ lead, mid, trail })
-  })
-})
+import { tokenize } from './tokenize'
 
 describe('tokenize', () => {
   it('字與標點分開，原文可完整拼回', () => {
