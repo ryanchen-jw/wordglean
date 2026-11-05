@@ -1,7 +1,7 @@
 ---
 id: TASK-23
 title: 上線——外部帳號、Cloudflare Pages、Supabase 正式專案、公開 repo
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-10-01 16:00'
 labels:
@@ -30,7 +30,7 @@ ordinal: 23000
 - [x] #2 正式站部署成功，部署後唯讀走查兩引擎截圖無異常
 - [x] #3 Google 登入在正式站成功一次；Email 驗證碼入口在正式站不出現
 - [x] #4 每日喚醒排程設定並驗證觸發一次
-- [ ] #5 G7 創辦人明示後 push 公開 repo；push 的 commit sha 記回卡
+- [x] #5 G7 創辦人明示後 push 公開 repo；push 的 commit sha 記回卡
 <!-- AC:END -->
 
 ## Comments
@@ -43,5 +43,10 @@ created: 2026-10-03 23:55
 created: 2026-11-04 15:50
 ---
 創辦人裁示（11-04）：repo 為 ryanchen-jw/wordglean（先私有，公開仍走 G7）；commit 歷史保留原 Gmail 作者信箱、不改寫；正式站用 pages.dev，只開 Google 登入（VITE_AUTH_GOOGLE=true、VITE_AUTH_EMAIL=false），不設 SMTP。
+---
+---
+created: 2026-11-05 06:00
+---
+結案（11-05）：開源前掃描通過（99 commits，gitleaks＋trufflehog＋比對，無真實機密），創辦人核准後 repo 公開，當時 main 為 efd314d。正式站維持 wordglean.pages.dev（免費，不用公司網域）。已開 secret scanning 與 push protection、main 禁 force push 與刪除、外部貢獻者 PR 需核准。掃描報告 P2 未處理項：docs/pending 截圖未進 .gitignore、NOTICE 待補字樣、授權表未列 docs/prototypes/.claude。
 ---
 <!-- COMMENTS:END -->
