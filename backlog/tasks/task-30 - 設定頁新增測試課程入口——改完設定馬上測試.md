@@ -1,9 +1,10 @@
 ---
 id: TASK-30
 title: 設定頁新增測試課程入口——改完設定馬上測試
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-07 07:42'
+updated_date: '2026-11-07 08:20'
 labels:
   - app
 dependencies: []
@@ -44,10 +45,19 @@ dev-flow 情境：小功能（UI 入口）。
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 設定頁「其他」群組有「測試課程」列，位於「關於」上方；首頁與課程頁仍沒有連到 /lesson/demo 的入口
-- [ ] #2 點開彈層顯示八個選項，順序與文字符合描述；選中翻英會進 /lesson/demo?type=translate 並顯示中翻英題；選全部題型從第一題開始
-- [ ] #3 從測試課程離開或走完後回到設定頁
-- [ ] #4 走完測試課程後本機資料庫不變（沿用 demo.spec 的快照斷言）
-- [ ] #5 e2e 守衛已改成新規則（設定頁有入口、其餘頁無）；受影響的單元與 e2e 兩引擎皆綠，lint、typecheck、build 皆過
-- [ ] #6 兩引擎手機截圖含設定列與彈層，320 寬與特大字級無溢出、可點目標至少 44px
+- [x] #1 設定頁「其他」群組有「測試課程」列，位於「關於」上方；首頁與課程頁仍沒有連到 /lesson/demo 的入口
+- [x] #2 點開彈層顯示八個選項，順序與文字符合描述；選中翻英會進 /lesson/demo?type=translate 並顯示中翻英題；選全部題型從第一題開始
+- [x] #3 從測試課程離開或走完後回到設定頁
+- [x] #4 走完測試課程後本機資料庫不變（沿用 demo.spec 的快照斷言）
+- [x] #5 e2e 守衛已改成新規則（設定頁有入口、其餘頁無）；受影響的單元與 e2e 兩引擎皆綠，lint、typecheck、build 皆過
+- [x] #6 兩引擎手機截圖含設定列與彈層，320 寬與特大字級無溢出、可點目標至少 44px
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-07 08:20
+---
+2026-11-07 驗收通過：獨立驗收官 15 條全過（unit 1120 passed、e2e 91 passed／5 skipped、0 failed）。 ★ 完成頁「再練習」走完回首頁，不回設定頁，未改。
+---
+<!-- COMMENTS:END -->
