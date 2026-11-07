@@ -37,8 +37,20 @@ const TEXT_SIZES: { value: Prefs['textSize']; label: MessageKey }[] = [
   { value: 'lg', label: 'settings.appearance.textSizeLg' },
   { value: 'xl', label: 'settings.appearance.textSizeXl' },
 ]
+// 測試課程（創辦人 2026-11-07，TASK-30）：改完設定直接進示範課；value＝?type=，全部題型不帶
+const TEST_LESSON_ALL = 'all'
+const TEST_LESSONS: { value: string; label: MessageKey }[] = [
+  { value: TEST_LESSON_ALL, label: 'settings.other.testLessonAll' },
+  { value: 'matching', label: 'settings.other.testLessonMatching' },
+  { value: 'mcq', label: 'settings.other.testLessonMcq' },
+  { value: 'reading', label: 'settings.other.testLessonReading' },
+  { value: 'listenType', label: 'settings.other.testLessonListenType' },
+  { value: 'listenChoice', label: 'settings.other.testLessonListenChoice' },
+  { value: 'shadowing', label: 'settings.other.testLessonShadowing' },
+  { value: 'translate', label: 'settings.other.testLessonTranslate' },
+]
 
-type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | 'voice' | null
+type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | 'voice' | 'testLesson' | null
 
 const rowCls =
   'flex min-h-13 w-full items-center justify-between gap-3 border border-t-0 border-line bg-surface px-4 text-left first:rounded-t-2xl first:border-t last:rounded-b-2xl'
@@ -277,6 +289,7 @@ export function SettingsScreen() {
           </section>
 
           <Group title={t('settings.other.title')}>
+            <Row label={t('settings.other.testLesson')} onClick={() => setSheet('testLesson')} />
             <Row label={t('settings.other.about')} onClick={() => navigate('/about')} />
           </Group>
         </div>
@@ -327,6 +340,17 @@ export function SettingsScreen() {
           ]}
           selected={voice}
           onSelect={pickVoice}
+          onClose={close}
+        />
+      )}
+      {sheet === 'testLesson' && (
+        <OptionSheet
+          label={t('settings.other.testLessonSheet')}
+          options={TEST_LESSONS.map((x) => ({ value: x.value, label: t(x.label) }))}
+          selected={null}
+          onSelect={(v) =>
+            navigate(v === TEST_LESSON_ALL ? '/lesson/demo' : `/lesson/demo?type=${v}`)
+          }
           onClose={close}
         />
       )}

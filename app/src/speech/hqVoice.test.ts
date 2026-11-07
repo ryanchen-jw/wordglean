@@ -3,6 +3,7 @@
 import { describe, expect, it, vi } from 'vitest'
 import { createHqVoice, type HqDeps } from './hqVoice'
 import type { WorkerIn, WorkerLike, WorkerOut } from './kokoroProtocol'
+import { createTts, type Rate } from './tts'
 
 class FakeWorker implements WorkerLike {
   sent: WorkerIn[] = []
@@ -302,5 +303,173 @@ describe('合成與快取', () => {
     await flush()
     workers[0].emit({ type: 'speakError', id: 1, message: 'oom' })
     await expect(p).rejects.toThrow('oom')
+  })
+})
+
+describe('等待中重複按：以最後一次為準（TASK-31）', () => {
+  async function ready(over: Partial<HqDeps> = {}) {
+    const s = setup(over)
+    s.deps.storage.setItem('lg.ttsHq.downloaded', '1')
+    await s.hq.init()
+    const p = s.hq.load()
+    s.workers[0].emit({ type: 'ready' })
+    return { ...s, engine: await p }
+  }
+  const speaks = (w: FakeWorker) => w.sent.flatMap((m) => (m.type === 'speak' ? [m] : []))
+  // 模擬發音服務的一次按鈕：先 cancel 再 speak
+  const press = (
+    e: { cancel(): void; speak(t: string, r: Rate): Promise<void> },
+    text: string,
+    rate: Rate = 1,
+  ) => {
+    e.cancel()
+    return e.speak(text, rate)
+  }
+
+  it('合成中連按同一句：只送一次合成、只念一次', async () => {
+    const { engine, workers, played } = await ready()
+    const a = press(engine, 'Hello.')
+    await flush()
+    const b = press(engine, 'Hello.')
+    await flush()
+    const c = press(engine, 'Hello.')
+    await flush()
+    expect(speaks(workers[0])).toHaveLength(1)
+    workers[0].emit({ type: 'audio', id: 1, wav: new ArrayBuffer(4) })
+    await Promise.all([a, b, c])
+    expect(played).toHaveLength(1)
+  })
+
+  it('語速不同算不同的一句：各自合成，只念最後按的', async () => {
+    const { engine, workers, played } = await ready()
+    const a = press(engine, 'Hello.', 1)
+    await flush()
+    const b = press(engine, 'Hello.', 0.8)
+    await flush()
+    workers[0].emit({ type: 'audio', id: 1, wav: new ArrayBuffer(4) })
+    await a
+    await flush()
+    expect(speaks(workers[0]).at(-1)).toMatchObject({ text: 'Hello.', speed: 0.8 })
+    const wavB = new ArrayBuffer(8)
+    workers[0].emit({ type: 'audio', id: 2, wav: wavB })
+    await b
+    expect(played).toEqual([wavB])
+  })
+
+  it('合成中改按另一句：舊句不出聲（音檔仍存快取），只念最後按的', async () => {
+    const audioCache = new Map<string, ArrayBuffer>()
+    const { engine, workers, played } = await ready({ audioCache })
+    const a = press(engine, 'A.')
+    await flush()
+    const b = press(engine, 'B.')
+    await flush()
+    const wavA = new ArrayBuffer(4)
+    workers[0].emit({ type: 'audio', id: 1, wav: wavA })
+    await a
+    expect(played).toEqual([])
+    expect(audioCache.get('1|A.')).toBe(wavA)
+    await flush()
+    const wavB = new ArrayBuffer(8)
+    workers[0].emit({ type: 'audio', id: 2, wav: wavB })
+    await b
+    expect(played).toEqual([wavB])
+  })
+
+  it('讀快取還沒回來就被取代：舊句不送合成也不出聲', async () => {
+    const wavB = new ArrayBuffer(8)
+    const { engine, workers, played } = await ready({
+      audioCache: {
+        get: async (key) => (key === '1|B.' ? wavB : undefined),
+        set: () => {},
+      },
+    })
+    await Promise.all([press(engine, 'A.'), press(engine, 'B.')])
+    expect(speaks(workers[0])).toHaveLength(0)
+    expect(played).toEqual([wavB])
+  })
+
+  it('連按多句：一次只送一句，輪到時已被取代的不送；排隊時間不算進合成逾時', async () => {
+    vi.useFakeTimers()
+    try {
+      const { engine, workers, played } = await ready()
+      const all = [press(engine, 'A.')]
+      await vi.advanceTimersByTimeAsync(0)
+      all.push(press(engine, 'B.'))
+      await vi.advanceTimersByTimeAsync(0)
+      all.push(press(engine, 'C.'))
+      await vi.advanceTimersByTimeAsync(0)
+      // A 合成中、B 已被 C 取代：Worker 只收到 A
+      expect(speaks(workers[0]).map((m) => m.text)).toEqual(['A.'])
+      await vi.advanceTimersByTimeAsync(25_000)
+      workers[0].emit({ type: 'audio', id: 1, wav: new ArrayBuffer(4) })
+      await vi.advanceTimersByTimeAsync(0)
+      expect(speaks(workers[0]).map((m) => m.text)).toEqual(['A.', 'C.'])
+      // C 排隊的 25 秒不算：再過 25 秒（從按下算已 50 秒）也不逾時
+      await vi.advanceTimersByTimeAsync(25_000)
+      expect(workers[0].terminated).toBe(false)
+      const wavC = new ArrayBuffer(8)
+      workers[0].emit({ type: 'audio', id: 2, wav: wavC })
+      await Promise.all(all)
+      expect(played).toEqual([wavC])
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('真的合成卡住：共用同一次合成時仍在 30 秒後逾時失敗', async () => {
+    vi.useFakeTimers()
+    try {
+      const { engine, workers } = await ready()
+      const a = press(engine, 'Hello.')
+      await vi.advanceTimersByTimeAsync(0)
+      const b = press(engine, 'Hello.')
+      const rejected = Promise.all([
+        expect(a).rejects.toThrow('逾時'),
+        expect(b).rejects.toThrow('逾時'),
+      ])
+      await vi.advanceTimersByTimeAsync(30_000)
+      await rejected
+      expect(workers[0].terminated).toBe(true)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('正在播放時再按同一句：停掉重念一次（維持現有行為）', async () => {
+    const stop = vi.fn()
+    const played: ArrayBuffer[] = []
+    const { engine, workers } = await ready({
+      play: (wav) => {
+        played.push(wav)
+        return { done: new Promise<void>(() => {}), stop }
+      },
+    })
+    void press(engine, 'Hello.')
+    await flush()
+    workers[0].emit({ type: 'audio', id: 1, wav: new ArrayBuffer(4) })
+    await flush()
+    expect(played).toHaveLength(1)
+    void press(engine, 'Hello.')
+    await flush()
+    expect(stop).toHaveBeenCalledTimes(1)
+    expect(played).toHaveLength(2)
+    expect(speaks(workers[0])).toHaveLength(1)
+  })
+
+  it('發音服務接真引擎：模型載入中連按三次，載入完只合成一次、只念一次', async () => {
+    const { hq, workers, played } = setup()
+    const tts = createTts({
+      system: { speak: vi.fn(() => Promise.resolve()), cancel: vi.fn() },
+      loadHq: () => hq.load(),
+      wantHq: () => true,
+    })
+    const all = [tts.speak('Hello.'), tts.speak('Hello.'), tts.speak('Hello.')]
+    await flush()
+    workers[0].emit({ type: 'ready' })
+    await flush()
+    expect(speaks(workers[0])).toHaveLength(1)
+    workers[0].emit({ type: 'audio', id: 1, wav: new ArrayBuffer(4) })
+    await Promise.all(all)
+    expect(played).toHaveLength(1)
   })
 })

@@ -192,6 +192,7 @@ export function LessonScreen({
         summary={phase.summary}
         subtitle={lessonTitle}
         wrongScheduled={phase.wrongScheduled}
+        demo={demo !== undefined}
       />
     )
 

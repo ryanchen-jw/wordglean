@@ -57,7 +57,7 @@ async function write(page: Page, text: string) {
   await page.getByRole('button', { name: '我寫對了' }).click()
 }
 
-async function shot(page: Page, info: TestInfo, name: string) {
+async function shot(page: Page, info: TestInfo, name: string, container = 'main') {
   await page.waitForTimeout(300)
   const png = await page.screenshot()
   await info.attach(name, { body: png, contentType: 'image/png' })
@@ -65,7 +65,7 @@ async function shot(page: Page, info: TestInfo, name: string) {
   const m = await measureMobile(page)
   expect.soft(m.overflow, `${name}：橫向溢出`).toEqual([])
   expect.soft(m.small, `${name}：可點目標 <44px`).toEqual([])
-  expect.soft(await overflowingChildren(page, 'main'), `${name}：main 子元素溢出`).toEqual([])
+  expect.soft(await overflowingChildren(page, container), `${name}：子元素溢出`).toEqual([])
 }
 
 test('/lesson/demo 依序走完所有題型（單字卡、配對、選擇、閱讀、聽打、聽選、跟讀、翻譯兩題）；資料庫沒有變化', async ({
@@ -154,10 +154,74 @@ test('/lesson/demo?type=shadowing 直接從跟讀開始；做完資料庫沒有�
     expect(after[table], table).toEqual(before[table])
 })
 
-test('App 內沒有示範課的入口：課程、設定頁都不連到 /lesson/demo', async ({ page }) => {
-  for (const path of ['/', '/course', '/settings']) {
-    await page.goto(path)
-    await expect(page.locator('main')).toBeVisible()
-    await expect(page.locator('a[href*="/lesson/demo"]')).toHaveCount(0)
+// 入口（創辦人 2026-11-07 改變 10-05 裁示，TASK-30）：只開在設定頁，首頁與課程頁仍不連
+const openTestLesson = async (page: Page) => {
+  await page.goto('/settings')
+  await page.getByRole('button', { name: '測試課程' }).click()
+  return page.getByRole('dialog', { name: '從哪個題型開始' })
+}
+
+test('示範課入口只在設定頁：「關於」上方有測試課程；首頁與課程頁沒有', async ({ page }, info) => {
+  await page.goto('/')
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('今天')
+  await expect(page.locator('a[href*="/lesson/demo"]')).toHaveCount(0)
+  await expect(page.getByText('測試課程')).toHaveCount(0)
+
+  await page.goto('/course')
+  await expect(page.getByRole('button', { name: /基礎常用字（一）/ })).toBeVisible()
+  await expect(page.locator('a[href*="/lesson/demo"]')).toHaveCount(0)
+  await expect(page.getByText('測試課程')).toHaveCount(0)
+
+  await page.goto('/settings')
+  const row = page.getByRole('button', { name: '測試課程' })
+  await row.scrollIntoViewIfNeeded()
+  const rowBox = (await row.boundingBox())!
+  const aboutBox = (await page.getByRole('button', { name: /隱私說明/ }).boundingBox())!
+  expect(rowBox.y + rowBox.height).toBeLessThanOrEqual(aboutBox.y + 1)
+  await shot(page, info, 'settings-test-lesson-row')
+  await row.click()
+  await expect(page.getByRole('dialog', { name: '從哪個題型開始' })).toBeVisible()
+  await shot(page, info, 'settings-test-lesson-sheet', '[role="listbox"]')
+})
+
+test('測試課程：八個選項依序、各進到對應題型；離開回設定頁', async ({ page }) => {
+  test.setTimeout(90_000)
+  const options: [string, string, number, string | null][] = [
+    ['全部題型', '', 13, null],
+    ['配對', '?type=matching', 9, '把英文和中文配成一對'],
+    ['選擇題', '?type=mcq', 8, '選出最適合的字'],
+    ['閱讀', '?type=reading', 7, '閱讀理解'],
+    ['聽音打字', '?type=listenType', 5, '聽句子，把聽到的英文打出來'],
+    ['聽音選答', '?type=listenChoice', 4, '聽音選答'],
+    ['跟讀', '?type=shadowing', 3, '聽一次，再唸出這句'],
+    ['中翻英（AI 批改）', '?type=translate', 2, '中翻英'],
+  ]
+  const sheet = await openTestLesson(page)
+  await expect(sheet.getByRole('option')).toHaveText(options.map(([label]) => label))
+  await page.keyboard.press('Escape')
+
+  for (const [label, search, total, text] of options) {
+    await page.getByRole('button', { name: '測試課程' }).click()
+    await sheet.getByRole('option', { name: label, exact: true }).click()
+    await expect(page).toHaveURL(new RegExp(`/lesson/demo${search.replace('?', '\\?')}$`))
+    await header(page, 1, total)
+    if (text) await expect(page.getByText(text, { exact: true }).first()).toBeVisible()
+    await page.getByRole('button', { name: '離開' }).click()
+    await expect(page).toHaveURL(/\/settings$/)
+    await expect(page.getByTestId('screen-settings')).toBeAttached()
   }
+})
+
+test('從設定頁走完測試課程（中翻英）：資料庫沒有變化', async ({ page }) => {
+  const sheet = await openTestLesson(page)
+  const before = await snapshot(page)
+  await sheet.getByRole('option', { name: '中翻英（AI 批改）' }).click()
+  await header(page, 1, 2)
+  await write(page, 'This is his bike.')
+  await header(page, 2, 2)
+  await write(page, 'This shop is small, but it is clean.')
+  await expect(page.getByTestId('lesson-done')).toContainText('2 題')
+  expect(await snapshot(page)).toEqual(before)
+  await page.getByTestId('lesson-done').getByRole('button', { name: '返回' }).click()
+  await expect(page).toHaveURL(/\/settings$/)
 })

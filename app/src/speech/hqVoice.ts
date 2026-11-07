@@ -64,6 +64,10 @@ export function createHqVoice(deps: HqDeps) {
     { resolve: (wav: ArrayBuffer) => void; reject: (e: Error) => void }
   >()
   let playing: { stop: () => void } | null = null
+  // 最後一次請求：等待中（讀快取、合成）被取代的請求靠比對它得知自己不該出聲
+  let latest: { key: string } | null = null
+  const synthesizing = new Map<string, Promise<ArrayBuffer | undefined>>()
+  let synthTail: Promise<unknown> = Promise.resolve()
   // 目前 Worker 的失敗處理（合成逾時也走這裡）
   let failWorker: ((err: Error) => void) | null = null
 
@@ -117,14 +121,17 @@ export function createHqVoice(deps: HqDeps) {
     return ready
   }
 
-  const engine: VoiceEngine = {
-    async speak(text: string, rate: Rate) {
-      const key = `${rate}|${text}`
-      let wav = await deps.audioCache.get(key)
-      if (!wav) {
+  // Worker 依序合成，一起送的話排隊時間會算進合成逾時：一次只送一句，輪到時已被取代的就不送。
+  // 同一句（文字＋語速）合成中再按，共用同一次
+  function synthesize(key: string, text: string, rate: Rate) {
+    const running = synthesizing.get(key)
+    if (running) return running
+    const job = synthTail
+      .then(async () => {
+        if (latest?.key !== key) return undefined
         const id = nextId++
         let timer: ReturnType<typeof setTimeout> | undefined
-        wav = await new Promise<ArrayBuffer>((resolve, reject) => {
+        const wav = await new Promise<ArrayBuffer>((resolve, reject) => {
           pending.set(id, { resolve, reject })
           worker!.postMessage({ type: 'speak', id, text, speed: rate })
           timer = setTimeout(
@@ -133,12 +140,28 @@ export function createHqVoice(deps: HqDeps) {
           )
         }).finally(() => clearTimeout(timer))
         await deps.audioCache.set(key, wav)
-      }
+        return wav
+      })
+      .finally(() => synthesizing.delete(key))
+    synthesizing.set(key, job)
+    synthTail = job.catch(() => {})
+    return job
+  }
+
+  const engine: VoiceEngine = {
+    async speak(text: string, rate: Rate) {
+      const key = `${rate}|${text}`
+      const request = (latest = { key })
+      let wav = await deps.audioCache.get(key)
+      if (request !== latest) return
+      wav ??= await synthesize(key, text, rate)
+      if (request !== latest || !wav) return
       const p = deps.play(wav)
       playing = p
       await p.done
     },
     cancel() {
+      latest = null
       playing?.stop()
       playing = null
     },

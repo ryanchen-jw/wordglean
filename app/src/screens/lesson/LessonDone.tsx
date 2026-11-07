@@ -4,7 +4,7 @@ import { displayWord } from '../../dict/displayCase'
 import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { SettleSummary } from '../../lesson/session'
-import { navigate } from '../../router'
+import { goBack, navigate } from '../../router'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { LessonFoot, LessonMain, lessonFrameCls } from './frame'
@@ -14,9 +14,11 @@ type Props = {
   subtitle: string | null
   /** 答錯且已進複習排程的題數（只有單字卡會進排程，偏差 #3） */
   wrongScheduled: number
+  /** 示範課：主按鈕回上一頁（從設定頁進來就回設定頁） */
+  demo?: boolean
 }
 
-export function LessonDone({ summary, subtitle, wrongScheduled }: Props) {
+export function LessonDone({ summary, subtitle, wrongScheduled, demo }: Props) {
   return (
     <div data-testid="lesson-done" className={lessonFrameCls}>
       <header className="grid flex-none gap-0.5 px-5 pt-[calc(env(safe-area-inset-top)+6px)] pb-2.5">
@@ -53,7 +55,11 @@ export function LessonDone({ summary, subtitle, wrongScheduled }: Props) {
         </Card>
       </LessonMain>
       <LessonFoot>
-        <Button onClick={() => navigate('/', { replace: true })}>{t('lesson.done.home')}</Button>
+        {demo ? (
+          <Button onClick={goBack}>{t('common.action.back')}</Button>
+        ) : (
+          <Button onClick={() => navigate('/', { replace: true })}>{t('lesson.done.home')}</Button>
+        )}
         {/* 只練習本課新字、不寫排程（TASK-18 D5） */}
         <Button
           variant="text"
