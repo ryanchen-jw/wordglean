@@ -1,9 +1,10 @@
 ---
 id: TASK-32
 title: 發音等待中或念的途中離開畫面，舊句仍會念出
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-07 09:11'
+updated_date: '2026-11-07 09:37'
 labels:
   - app
 dependencies: []
@@ -40,11 +41,20 @@ dev-flow 情境：修 bug（先紅後綠）。
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 高音質載入或合成中離開頁面（含返回）：該句完全不出聲（先有失敗的重現測試，修後轉綠）
-- [ ] #2 小課中按聽力播放後、念出前就換到下一題：舊句不出聲
-- [ ] #3 關閉字典彈層：等待中或正在念的該字停止
-- [ ] #4 念的途中離開畫面：立即停止（內建聲音與高音質皆然）
-- [ ] #5 被取消的請求不退回內建聲音、不提示、不把高音質判為失敗；下一次發音正常
-- [ ] #6 下一個畫面自己發起的發音（如單字卡自動發音）不被前一個畫面的卸載取消
-- [ ] #7 TASK-31 的既有測試全綠；lint、typecheck、npm test、build 過；listen、tts-hq、lesson、matching e2e 兩引擎皆綠
+- [x] #1 高音質載入或合成中離開頁面（含返回）：該句完全不出聲（先有失敗的重現測試，修後轉綠）
+- [x] #2 小課中按聽力播放後、念出前就換到下一題：舊句不出聲
+- [x] #3 關閉字典彈層：等待中或正在念的該字停止
+- [x] #4 念的途中離開畫面：立即停止（內建聲音與高音質皆然）
+- [x] #5 被取消的請求不退回內建聲音、不提示、不把高音質判為失敗；下一次發音正常
+- [x] #6 下一個畫面自己發起的發音（如單字卡自動發音）不被前一個畫面的卸載取消
+- [x] #7 TASK-31 的既有測試全綠；lint、typecheck、npm test、build 過；listen、tts-hq、lesson、matching e2e 兩引擎皆綠
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-07 09:37
+---
+2026-11-07 驗收通過：獨立驗收官 7 條全過（unit 1130 passed、e2e 53 passed／7 skipped，skip 皆 WebKit tts-hq 既有限制）。★ 所有發音須經 useSpeak，直接呼叫 speak 可能被前一元件卸載誤停。
+---
+<!-- COMMENTS:END -->
