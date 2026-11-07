@@ -53,7 +53,7 @@ export function AppRoutes() {
   if (pathname === '/about') return <AboutScreen />
   if (pathname === '/about/privacy') return <PrivacyScreen />
   if (pathname === '/about/licenses') return <LicensesScreen />
-  // 示範課（創辦人 2026-10-05 裁示二）：所有題型一課走完、練習模式；不接結算同步，App 內沒有入口
+  // 示範課（創辦人 2026-10-05 裁示二）：所有題型一課走完、練習模式；不接結算同步；入口只在設定頁「測試課程」（TASK-30）
   if (pathname === '/lesson/demo')
     return (
       <LessonScreen

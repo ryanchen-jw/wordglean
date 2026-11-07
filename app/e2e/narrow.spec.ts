@@ -119,6 +119,22 @@ for (const c of CASES) {
       await check(page, info, `${c.name}-s11-voice`)
     })
 
+    test('s11 測試課程列與彈層（八個選項捲到底）', async ({ page }, info) => {
+      await page.goto('/settings')
+      const row = page.getByRole('button', { name: '測試課程' })
+      await row.scrollIntoViewIfNeeded()
+      await check(page, info, `${c.name}-s11-test-lesson-row`)
+      await row.click()
+      const sheet = page.getByRole('dialog', { name: '從哪個題型開始' })
+      await check(page, info, `${c.name}-s11-test-lesson-sheet`)
+      const last = sheet.getByRole('option', { name: '中翻英（AI 批改）' })
+      await last.scrollIntoViewIfNeeded()
+      await expect(last).toBeInViewport()
+      await check(page, info, `${c.name}-s11-test-lesson-sheet-end`)
+      // 量選項清單：彈層的拖曳把手刻意滿版（-mx-5）
+      expect(await overflowingChildren(page, '[role="listbox"]'), '選項伸出彈層').toEqual([])
+    })
+
     test('s10 分級測驗：勾選中、結果（勾到假字）、重測、選級距彈層', async ({ page }, info) => {
       // 走兩輪 60 題（作答＋重測）；WebKit 在本機負載高時單輪約 15 秒，預設 30 秒不夠（非 UI 逾時，AC#3 計時另驗）
       test.setTimeout(90_000)

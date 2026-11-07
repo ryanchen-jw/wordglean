@@ -58,6 +58,43 @@ describe('設定（s11）', () => {
     )
   })
 
+  it('測試課程（TASK-30）：在「關於」上方；彈層八個選項依序，未預選任何一個', async () => {
+    render(<SettingsScreen />)
+    const row = screen.getByRole('button', { name: '測試課程' })
+    expect(row.nextElementSibling).toBe(screen.getByRole('button', { name: /隱私說明/ }))
+    fireEvent.click(row)
+    const options = within(screen.getByRole('dialog', { name: '從哪個題型開始' })).getAllByRole(
+      'option',
+    )
+    expect(options.map((o) => o.textContent)).toEqual([
+      '全部題型',
+      '配對',
+      '選擇題',
+      '閱讀',
+      '聽音打字',
+      '聽音選答',
+      '跟讀',
+      '中翻英（AI 批改）',
+    ])
+    expect(options.filter((o) => o.getAttribute('aria-selected') === 'true')).toEqual([])
+  })
+
+  it.each([
+    ['全部題型', '/lesson/demo'],
+    ['配對', '/lesson/demo?type=matching'],
+    ['選擇題', '/lesson/demo?type=mcq'],
+    ['閱讀', '/lesson/demo?type=reading'],
+    ['聽音打字', '/lesson/demo?type=listenType'],
+    ['聽音選答', '/lesson/demo?type=listenChoice'],
+    ['跟讀', '/lesson/demo?type=shadowing'],
+    ['中翻英（AI 批改）', '/lesson/demo?type=translate'],
+  ])('測試課程：選「%s」→ 進 %s', (label, url) => {
+    render(<SettingsScreen />)
+    fireEvent.click(screen.getByRole('button', { name: '測試課程' }))
+    fireEvent.click(screen.getByRole('option', { name: label }))
+    expect(location.pathname + location.search).toBe(url)
+  })
+
   it('有進度時顯示目前級距', async () => {
     await db.courseProgress.put({ lessonId: 'b2-u01-l01', completedAt: 1, updatedAt: 0 })
     render(<SettingsScreen />)

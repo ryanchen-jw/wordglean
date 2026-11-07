@@ -81,7 +81,7 @@ app/
   - `today.spec`＝今日動線（`page.clock` 固定時間：第一天上課、第二天先複習再接下一課、首頁數字更新）與三能力皆不可用仍完成一課；`review-visual.spec`＝複習各狀態截圖、狀態色 computed 斷言、窄螢幕／特大字級（共用 `e2e/today.ts`）。
   - `listen.spec`＝聽音打字／聽音選答；`tts-hq.spec`＝高音質發音強制失敗退回、下載失敗、崩潰旗標（攔下 Hugging Face／jsDelivr，不真的下載；WebKit 的 Cache Storage 不跨導覽保留，「已下載」狀態只在 chromium 驗）；內建聲音以 `e2e/speech.ts` 替身記錄呼叫。
   - `openrouter.spec`＝一鍵授權（PKCE）／貼金鑰／清除金鑰／寫作題 AI 批改與失敗，openrouter.ai 全由假端點（`e2e/openrouter.ts`）回應，並檢查金鑰只送往 openrouter.ai；`openrouter-visual.spec`＝s06 寫作四態、s11 AI 區視覺 smoke。兩者封鎖 service worker（其請求不經 page.route）。
-  - `matching.spec`＝配對題（App 端組題，lesson/matching.ts）：小課每 4 張單字卡後一題、配錯進錯題重做、複習每 4 張到期卡後一題、四態截圖與窄螢幕；`demo.spec`＝示範課 `/lesson/demo`（所有題型一課、`?type=` 從該題型開始、練習模式不寫任何本機資料、App 內無入口）。
+  - `matching.spec`＝配對題（App 端組題，lesson/matching.ts）：小課每 4 張單字卡後一題、配錯進錯題重做、複習每 4 張到期卡後一題、四態截圖與窄螢幕；`demo.spec`＝示範課 `/lesson/demo`（所有題型一課、`?type=` 從該題型開始、練習模式不寫任何本機資料、入口只在設定頁「測試課程」）。
   - `perf-budget.spec`＝首屏 JS gzip 預算（創辦人裁示 2026-10-06）：超過 200KB 只警告（輸出數字與「⚠ 警告」、測試照過），超過 300KB 才失敗；字典、單字總表、片語表、語音模型不得出現在首屏請求。片語表與題目檔對照表不得內嵌進首屏 JS 另由 `npm run build` 最後的 `scripts/check-entry-lazy.mjs` 守住。
   - `phrases.spec`＝片語課（TASK-24）：課程地圖片語單元、走完片語樣本課（含配對）、點片語中的字看到片語義（含可分離）、收藏片語進單字庫，三畫面截圖。
   - `lesson.spec`＝小課讀類三題型走完一課與續作；`lesson-visual.spec`＝小課各狀態截圖與窄螢幕／特大字級量測。e2e 的 webServer 帶 `VITE_ITEM_FIXTURES=true`，題目來源為 `src/lesson/fixtures/items/` 的樣本課。
