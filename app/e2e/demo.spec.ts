@@ -222,4 +222,6 @@ test('從設定頁走完測試課程（中翻英）：資料庫沒有變化', as
   await write(page, 'This shop is small, but it is clean.')
   await expect(page.getByTestId('lesson-done')).toContainText('2 題')
   expect(await snapshot(page)).toEqual(before)
+  await page.getByTestId('lesson-done').getByRole('button', { name: '返回' }).click()
+  await expect(page).toHaveURL(/\/settings$/)
 })
