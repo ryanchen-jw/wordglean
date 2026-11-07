@@ -14,6 +14,7 @@ import { WordCardView } from './WordCardView'
 vi.mock('../../speech/speak', () => ({
   speak: vi.fn(async () => {}),
   ttsAvailable: vi.fn(() => true),
+  tts: { cancel: vi.fn() },
 }))
 vi.mock('../../sound/sfx', async (orig) => ({
   ...(await orig<typeof import('../../sound/sfx')>()),

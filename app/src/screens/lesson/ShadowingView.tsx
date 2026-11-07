@@ -7,7 +7,8 @@ import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } fro
 import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { ShadowingItem } from '../../lesson/items'
-import { speak, ttsAvailable } from '../../speech/speak'
+import { ttsAvailable } from '../../speech/speak'
+import { useSpeak } from '../../speech/useSpeak'
 import { compareWords, type Comparison } from '../../speech/align'
 import { MicDeniedError, type MicPermission } from '../../speech/mic'
 import { holdSfx } from '../../sound/sfx'
@@ -57,6 +58,8 @@ export function ShadowingView({
   onContinue,
   onSpeech,
 }: QuestionProps<ShadowingItem>) {
+  // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
+  const speak = useSpeak()
   const speech = useSpeech()
   const model = useSyncExternalStore(speech.stt.subscribe, speech.stt.get)
   const [mic, setMic] = useState<MicPermission | null>(null)

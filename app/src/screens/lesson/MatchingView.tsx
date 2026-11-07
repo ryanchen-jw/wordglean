@@ -5,7 +5,8 @@ import { displayWord } from '../../dict/displayCase'
 import { t } from '../../i18n/t'
 import { matchingOrder } from '../../lesson/matching'
 import { playSfx } from '../../sound/sfx'
-import { speak, ttsAvailable } from '../../speech/speak'
+import { ttsAvailable } from '../../speech/speak'
+import { useSpeak } from '../../speech/useSpeak'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { LessonFoot, LessonMain } from './frame'
@@ -56,6 +57,8 @@ export function MatchingView({
   onAnswer,
   onContinue,
 }: Pick<QuestionProps, 'step' | 'onAnswer' | 'onContinue'>) {
+  // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
+  const speak = useSpeak()
   const pairs = step.pairs!
   const zhOrder = useMemo(() => matchingOrder(step), [step])
   const [selEn, setSelEn] = useState<number | null>(null)

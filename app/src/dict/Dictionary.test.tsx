@@ -5,6 +5,7 @@ import { act, fireEvent, render, screen, waitFor, within } from '@testing-librar
 import { useState } from 'react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../data/appDb'
+import { tts } from '../speech/speak'
 import { fsDictDeps } from '../test/dictFs'
 import { BottomSheet } from '../ui/BottomSheet'
 import { TOAST_MS } from '../ui/Toast'
@@ -129,6 +130,20 @@ describe('字典彈層（s08）', () => {
     await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull())
     expect(word('meeting')).not.toHaveAttribute('data-active')
     expect(word('meeting')).toHaveFocus()
+  })
+
+  it('按了發音後關閉彈層：停止該字的發音（TASK-32）', async () => {
+    const cancel = vi.spyOn(tts, 'cancel')
+    renderText({ text: 'weekly meeting' })
+    fireEvent.click(word('meeting'))
+    const dlg = within(await sheet())
+    await dlg.findByRole('heading', { name: 'meeting' })
+    fireEvent.click(dlg.getByRole('button', { name: '發音' }))
+    expect(cancel).not.toHaveBeenCalled()
+    fireEvent.keyDown(document, { key: 'Escape' })
+    await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull())
+    expect(cancel).toHaveBeenCalledTimes(1)
+    cancel.mockRestore()
   })
 
   it('疊在其他彈層上：Esc 只關字典彈層', async () => {

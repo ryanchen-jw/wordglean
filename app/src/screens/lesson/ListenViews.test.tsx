@@ -7,6 +7,7 @@ import { ListenChoiceView } from './ListenChoiceView'
 import { ListenTypeView } from './ListenTypeView'
 
 const speak = vi.fn()
+const cancel = vi.fn()
 let hqFailed = false
 let engine: 'system' | 'hq' = 'system'
 let hqStatus: { kind: string } = { kind: 'notDownloaded' }
@@ -16,6 +17,7 @@ vi.mock('../../speech/speak', () => ({
   speak: (...args: unknown[]) => speak(...args),
   hqVoice: { status: () => hqStatus },
   tts: {
+    cancel: () => cancel(),
     engine: () => engine,
     hqFailed: () => hqFailed,
     onNotice: (l: () => void) => {
@@ -190,6 +192,16 @@ describe('連按時的忙碌標示（TASK-31）', () => {
     expect(play).toHaveAttribute('aria-busy', 'true')
     await act(async () => finish[1]())
     expect(play).not.toHaveAttribute('aria-busy', 'true')
+  })
+})
+
+describe('換下一題時停止發音（TASK-32）', () => {
+  it('按了播放後題目卸載（換題、離開）：取消這一句', () => {
+    cancel.mockClear()
+    renderType()
+    fireEvent.click(screen.getByRole('button', { name: '播放' }))
+    cleanup()
+    expect(cancel).toHaveBeenCalledTimes(1)
   })
 })
 

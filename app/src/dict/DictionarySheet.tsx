@@ -5,7 +5,7 @@ import { db } from '../data/appDb'
 import { useLiveQuery } from '../data/useLiveQuery'
 import { t } from '../i18n/t'
 import { iconBtnCls } from '../shell/Screen'
-import { speak } from '../speech/speak'
+import { useSpeak } from '../speech/useSpeak'
 import { BottomSheet } from '../ui/BottomSheet'
 import { Button } from '../ui/Button'
 import { formatPhonetic, parseGloss, sharedPos } from './format'
@@ -65,6 +65,8 @@ function FavoriteButton({
 
 /** 被點的字屬於片語時（TASK-24）：片語＋「片語」與級距標籤、發音、釋義、收藏（以片語為鍵），放在單字之前 */
 function PhraseFound({ phrase, onFavorite }: { phrase: Phrase } & Pick<Props, 'onFavorite'>) {
+  // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
+  const speak = useSpeak()
   return (
     <section data-testid="dict-phrase" className="grid gap-3 border-b border-line pb-4">
       <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
@@ -100,6 +102,8 @@ function Found({
   result: Extract<LookupResult, { found: true }>
   info: LexInfo | null
 }) {
+  // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
+  const speak = useSpeak()
   const { query, headword, entry } = result
   const lines = parseGloss(entry.lines)
   const pos = sharedPos(lines)

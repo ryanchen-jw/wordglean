@@ -173,6 +173,59 @@ describe('createTts', () => {
     })
   })
 
+  describe('取消（離開畫面，TASK-32）', () => {
+    it('模型載入中取消：載入完不念、不退回內建聲音、不提示；下一次發音正常', async () => {
+      const hq = engine()
+      let finish = () => {}
+      const loadHq = vi.fn(() => new Promise<VoiceEngine>((r) => (finish = () => r(hq))))
+      const system = engine()
+      const tts = createTts({ system, loadHq, wantHq: () => true })
+      const notice = vi.fn()
+      tts.onNotice(notice)
+      const a = tts.speak('A.')
+      tts.cancel()
+      finish()
+      expect(await a).toBe('superseded')
+      expect(hq.speak).not.toHaveBeenCalled()
+      expect(system.speak).not.toHaveBeenCalled()
+      expect(notice).not.toHaveBeenCalled()
+      expect(tts.hqFailed()).toBe(false)
+      expect(await tts.speak('B.')).toBe('hq')
+      expect(hq.speak.mock.calls).toEqual([['B.', 1]])
+    })
+
+    it('高音質合成或念的途中取消：停止高音質；因取消而失敗也不退回、不判失敗', async () => {
+      const system = engine()
+      const hq = engine()
+      let failA = () => {}
+      hq.speak.mockImplementationOnce(
+        () => new Promise<void>((_, reject) => (failA = () => reject(new Error('stopped')))),
+      )
+      const tts = createTts({ system, loadHq: () => Promise.resolve(hq), wantHq: () => true })
+      const notice = vi.fn()
+      tts.onNotice(notice)
+      const a = tts.speak('A.')
+      await vi.waitFor(() => expect(hq.speak).toHaveBeenCalledTimes(1))
+      vi.mocked(hq.cancel).mockClear()
+      tts.cancel()
+      await vi.waitFor(() => expect(hq.cancel).toHaveBeenCalledTimes(1))
+      failA()
+      expect(await a).toBe('superseded')
+      expect(system.speak).not.toHaveBeenCalled()
+      expect(notice).not.toHaveBeenCalled()
+      expect(tts.hqFailed()).toBe(false)
+    })
+
+    it('內建聲音念的途中取消：立即停止', async () => {
+      const system = engine()
+      const tts = createTts({ system, wantHq: () => false })
+      await tts.speak('A.')
+      vi.mocked(system.cancel).mockClear()
+      tts.cancel()
+      expect(system.cancel).toHaveBeenCalledTimes(1)
+    })
+  })
+
   it('播放新的一句前先停掉正在念的', async () => {
     const system = engine()
     const tts = createTts({ system, wantHq: () => false })

@@ -2,8 +2,9 @@
 import { Info, Turtle, Volume2 } from 'lucide-react'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { t } from '../../i18n/t'
-import { hqVoice, speak, tts } from '../../speech/speak'
+import { hqVoice, tts } from '../../speech/speak'
 import type { Rate } from '../../speech/tts'
+import { useSpeak } from '../../speech/useSpeak'
 import { Card } from '../../ui/Card'
 
 const HINT_SEEN_KEY = 'lg.ttsHqHintSeen'
@@ -28,6 +29,8 @@ export function ListenCard({
   const [engine, setEngine] = useState(() => tts.engine())
   useEffect(() => tts.onNotice(() => setEngine(tts.engine())), [])
   const system = engine === 'system'
+  // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
+  const speak = useSpeak()
   // 用高音質時要先載入模型、合成，可能等好幾秒：念完前播放鈕標示忙碌（內建聲音立即開始念，不標示）
   const [busy, setBusy] = useState(false)
   const lastPlay = useRef(0)

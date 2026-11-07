@@ -22,6 +22,8 @@ export interface TtsDeps {
 export interface Tts {
   /** 以最後一次呼叫為準：等待中被後來的呼叫取代的不出聲，正常結束並回 'superseded' */
   speak(text: string, opts?: { rate?: Rate }): Promise<EngineId | 'none' | 'superseded'>
+  /** 取消（離開畫面用）：等待中的請求都不出聲、回 'superseded'，正在念的立即停止；不算高音質失敗 */
+  cancel(): void
   /** 目前會用哪個引擎（題目卡顯示「手機內建聲音」用） */
   engine(): EngineId
   /** 高音質這次開啟內已失敗、改用內建聲音 */
@@ -67,6 +69,14 @@ export function createTts({ system, loadHq, wantHq }: TtsDeps): Tts {
         }
       }
       return viaSystem(text, rate)
+    },
+    cancel() {
+      latest++
+      system?.cancel()
+      void hq?.then(
+        (engine) => engine.cancel(),
+        () => {},
+      )
     },
     engine: () => (hqOn() ? 'hq' : 'system'),
     hqFailed: () => hqBroken,

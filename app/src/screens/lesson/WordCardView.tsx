@@ -6,7 +6,8 @@ import { EnglishText } from '../../dict/EnglishText'
 import { t } from '../../i18n/t'
 import type { WordCardItem } from '../../lesson/items'
 import { afterSfx } from '../../sound/sfx'
-import { speak, ttsAvailable } from '../../speech/speak'
+import { ttsAvailable } from '../../speech/speak'
+import { useSpeak } from '../../speech/useSpeak'
 import { iconBtnCls } from '../../shell/Screen'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
@@ -17,6 +18,8 @@ import { ZhText } from './ZhText'
 import { choiceState, LETTERS, type QuestionProps } from './types'
 
 export function WordCardView({ item, step, onAnswer, onContinue }: QuestionProps<WordCardItem>) {
+  // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
+  const speak = useSpeak()
   const { options, answer } = step.choice!
   const [picked, setPicked] = useState<number | null>(null)
   const [hint, setHint] = useState(false)

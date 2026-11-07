@@ -166,6 +166,7 @@ test('Worker 檔載不到（404）：設定頁下載顯示「下載中斷・重�
 type KokoroLog = {
   speaks: { text: string; speed: number }[]
   plays: number
+  pauses: number
   finishLoad: () => void
   endAudio: () => void
 }
@@ -173,11 +174,18 @@ const kokoroLog = () => (window as unknown as { __kokoro: KokoroLog }).__kokoro
 const finishLoad = (page: Page) => page.evaluate(`(${kokoroLog})().finishLoad()`)
 const endAudio = (page: Page) => page.evaluate(`(${kokoroLog})().endAudio()`)
 const plays = (page: Page) => page.evaluate<number>(`(${kokoroLog})().plays`)
+const pauses = (page: Page) => page.evaluate<number>(`(${kokoroLog})().pauses`)
 const synths = (page: Page) => page.evaluate<KokoroLog['speaks']>(`(${kokoroLog})().speaks`)
 
 async function fakeSlowKokoro(page: Page) {
   await page.addInitScript(() => {
-    const log = { speaks: [] as unknown[], plays: 0, finishLoad: () => {}, endAudio: () => {} }
+    const log = {
+      speaks: [] as unknown[],
+      plays: 0,
+      pauses: 0,
+      finishLoad: () => {},
+      endAudio: () => {},
+    }
     class FakeWorker {
       onmessage: ((e: { data: unknown }) => void) | null = null
       onerror = null
@@ -200,7 +208,9 @@ async function fakeSlowKokoro(page: Page) {
         log.endAudio = () => this.onended?.()
         return Promise.resolve()
       }
-      pause() {}
+      pause() {
+        log.pauses++
+      }
     }
     Object.assign(window, { __kokoro: log, Worker: FakeWorker, Audio: FakeAudio })
   })
@@ -243,6 +253,71 @@ for (const { name, slowLast, speed } of [
     await expect(page.getByTestId('hq-failed')).toHaveCount(0)
   })
 }
+
+// TASK-32：按了播放、模型還在載入就離開（換下一題、離開這一課）：舊句不合成、不出聲；新畫面的發音照常
+const CHOICE_AUDIO = 'Tom is from Japan, but he lives here now.'
+
+test('模型載入中換到下一題：舊句不出聲，下一題的播放照常念、不判失敗', async ({
+  page,
+  context,
+  browserName,
+}) => {
+  await blockModelHosts(context)
+  await webGpuPhone(page)
+  await fakeSlowKokoro(page)
+  await chooseHq(page, browserName)
+  await page.goto('/lesson/demo?type=listenType')
+  await expect(page.getByText('聽句子，把聽到的英文打出來')).toBeVisible()
+
+  await page.getByRole('button', { name: '播放', exact: true }).click()
+  await page.getByRole('button', { name: '聽不出來' }).click()
+  await page.getByRole('button', { name: '繼續' }).click()
+  await expect(page.getByText('聽音選答').first()).toBeVisible()
+  // 換題後還沒按新的播放就載入完：舊句不能在這時合成或出聲（未修前約數十毫秒內就會念出）
+  await finishLoad(page)
+  await page.waitForTimeout(1000)
+  expect(await synths(page)).toEqual([])
+  expect(await plays(page)).toBe(0)
+
+  await page.getByRole('button', { name: '播放', exact: true }).click()
+  await expect.poll(() => plays(page)).toBe(1)
+  expect(await synths(page)).toEqual([{ text: CHOICE_AUDIO, speed: 1 }])
+  expect(await spokenList(page)).toEqual([])
+  await expect(page.getByTestId('hq-failed')).toHaveCount(0)
+})
+
+test('模型載入中離開這一課：舊句不出聲；回來再按照常念，念的途中離開立即停止', async ({
+  page,
+  context,
+  browserName,
+}) => {
+  await blockModelHosts(context)
+  await webGpuPhone(page)
+  await fakeSlowKokoro(page)
+  await chooseHq(page, browserName)
+  await page.reload()
+  const open = async (label: string) => {
+    await page.getByRole('button', { name: '測試課程' }).click()
+    await page.getByRole('option', { name: label, exact: true }).click()
+  }
+
+  await open('聽音打字')
+  await page.getByRole('button', { name: '播放', exact: true }).click()
+  await page.getByRole('button', { name: '離開' }).click()
+  await expect(page.getByTestId('screen-settings')).toBeAttached()
+  await finishLoad(page)
+
+  await open('聽音選答')
+  await page.getByRole('button', { name: '播放', exact: true }).click()
+  await expect.poll(() => plays(page)).toBe(1)
+  expect(await synths(page)).toEqual([{ text: CHOICE_AUDIO, speed: 1 }])
+  expect(await pauses(page)).toBe(0)
+  await page.getByRole('button', { name: '離開' }).click()
+  await expect(page.getByTestId('screen-settings')).toBeAttached()
+  await expect.poll(() => pauses(page)).toBe(1)
+  expect(await spokenList(page)).toEqual([])
+  await expect(page.getByTestId('hq-failed')).toHaveCount(0)
+})
 
 test('沒有 WebGPU 的手機：高音質列顯示不支援、發音選單只有內建聲音', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('lg.installDismissed', '1'))
