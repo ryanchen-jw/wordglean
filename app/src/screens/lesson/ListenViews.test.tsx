@@ -177,6 +177,22 @@ describe('無障礙與裝置能力（驗收 P2）', () => {
   })
 })
 
+describe('連按時的忙碌標示（TASK-31）', () => {
+  it('舊請求先結束不解除忙碌，最後一次請求結束才解除', async () => {
+    engine = 'hq'
+    const finish: (() => void)[] = []
+    speak.mockImplementation(() => new Promise<void>((resolve) => finish.push(resolve)))
+    renderType()
+    const play = screen.getByRole('button', { name: '播放' })
+    fireEvent.click(play)
+    fireEvent.click(play)
+    await act(async () => finish[0]())
+    expect(play).toHaveAttribute('aria-busy', 'true')
+    await act(async () => finish[1]())
+    expect(play).not.toHaveAttribute('aria-busy', 'true')
+  })
+})
+
 describe('高音質發音失敗的提示（AC#2）', () => {
   it('收到失敗通知時出現「已改用手機內建聲音」', () => {
     renderType()

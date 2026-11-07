@@ -4,7 +4,7 @@
 import { expect, test, type BrowserContext, type Page } from '@playwright/test'
 import { LESSON, playTo } from './lesson.js'
 import { measureMobile } from './measure.js'
-import { fakeSystemVoice, lastSpoken } from './speech.js'
+import { fakeSystemVoice, lastSpoken, spokenList } from './speech.js'
 
 // Service Worker 會接手請求、讓攔截失效；本檔不需要離線能力
 test.use({ serviceWorkers: 'block' })
@@ -161,6 +161,88 @@ test('Worker 檔載不到（404）：設定頁下載顯示「下載中斷・重�
   })
   expect(hits.length).toBeGreaterThan(0)
 })
+
+// TASK-31：模型載入慢時連按。假 Worker 把載入停住、由測試放行；假 Audio 只記錄，不下載也不發聲
+type KokoroLog = {
+  speaks: { text: string; speed: number }[]
+  plays: number
+  finishLoad: () => void
+  endAudio: () => void
+}
+const kokoroLog = () => (window as unknown as { __kokoro: KokoroLog }).__kokoro
+const finishLoad = (page: Page) => page.evaluate(`(${kokoroLog})().finishLoad()`)
+const endAudio = (page: Page) => page.evaluate(`(${kokoroLog})().endAudio()`)
+const plays = (page: Page) => page.evaluate<number>(`(${kokoroLog})().plays`)
+const synths = (page: Page) => page.evaluate<KokoroLog['speaks']>(`(${kokoroLog})().speaks`)
+
+async function fakeSlowKokoro(page: Page) {
+  await page.addInitScript(() => {
+    const log = { speaks: [] as unknown[], plays: 0, finishLoad: () => {}, endAudio: () => {} }
+    class FakeWorker {
+      onmessage: ((e: { data: unknown }) => void) | null = null
+      onerror = null
+      onmessageerror = null
+      postMessage(m: { type: string; id: number; text: string; speed: number }) {
+        if (m.type === 'load') log.finishLoad = () => this.onmessage?.({ data: { type: 'ready' } })
+        else {
+          log.speaks.push({ text: m.text, speed: m.speed })
+          const reply = { type: 'audio', id: m.id, wav: new ArrayBuffer(8) }
+          setTimeout(() => this.onmessage?.({ data: reply }), 0)
+        }
+      }
+      terminate() {}
+    }
+    class FakeAudio {
+      onended: (() => void) | null = null
+      onerror = null
+      play() {
+        log.plays++
+        log.endAudio = () => this.onended?.()
+        return Promise.resolve()
+      }
+      pause() {}
+    }
+    Object.assign(window, { __kokoro: log, Worker: FakeWorker, Audio: FakeAudio })
+  })
+}
+
+for (const { name, slowLast, speed } of [
+  { name: '連按同一句', slowLast: false, speed: 1 },
+  { name: '最後改按慢速（語速不同算另一句）', slowLast: true, speed: 0.8 },
+]) {
+  test(`模型載入中${name}：載入完只合成、只念最後一次；忙碌標示持續到念完`, async ({
+    page,
+    context,
+    browserName,
+  }) => {
+    await blockModelHosts(context)
+    await webGpuPhone(page)
+    await fakeSlowKokoro(page)
+    await chooseHq(page, browserName)
+    await page.goto('/lesson/demo?type=listenType')
+    await expect(page.getByText('聽句子，把聽到的英文打出來')).toBeVisible()
+
+    const play = page.getByRole('button', { name: '播放', exact: true })
+    await play.click()
+    await play.click()
+    await play.click()
+    if (slowLast) await page.getByRole('button', { name: '慢速播放' }).click()
+    // 發音鈕全程可按，等待中標示忙碌
+    await expect(play).toBeEnabled()
+    await expect(play).toHaveAttribute('aria-busy', 'true')
+
+    await finishLoad(page)
+    await expect.poll(() => plays(page)).toBeGreaterThan(0)
+    await expect(play).toHaveAttribute('aria-busy', 'true')
+
+    await endAudio(page)
+    await expect(play).not.toHaveAttribute('aria-busy', 'true')
+    expect(await plays(page)).toBe(1)
+    expect(await synths(page)).toEqual([{ text: 'We have lunch at twelve.', speed }])
+    expect(await spokenList(page)).toEqual([])
+    await expect(page.getByTestId('hq-failed')).toHaveCount(0)
+  })
+}
 
 test('沒有 WebGPU 的手機：高音質列顯示不支援、發音選單只有內建聲音', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('lg.installDismissed', '1'))

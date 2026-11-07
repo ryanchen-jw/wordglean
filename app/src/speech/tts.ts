@@ -20,7 +20,8 @@ export interface TtsDeps {
 }
 
 export interface Tts {
-  speak(text: string, opts?: { rate?: Rate }): Promise<EngineId | 'none'>
+  /** 以最後一次呼叫為準：等待中被後來的呼叫取代的不出聲，正常結束並回 'superseded' */
+  speak(text: string, opts?: { rate?: Rate }): Promise<EngineId | 'none' | 'superseded'>
   /** 目前會用哪個引擎（題目卡顯示「手機內建聲音」用） */
   engine(): EngineId
   /** 高音質這次開啟內已失敗、改用內建聲音 */
@@ -31,6 +32,7 @@ export interface Tts {
 export function createTts({ system, loadHq, wantHq }: TtsDeps): Tts {
   let hq: Promise<VoiceEngine> | null = null
   let hqBroken = false
+  let latest = 0
   const listeners = new Set<(n: TtsNotice) => void>()
 
   const hqOn = () => !hqBroken && !!loadHq && wantHq()
@@ -48,15 +50,19 @@ export function createTts({ system, loadHq, wantHq }: TtsDeps): Tts {
 
   return {
     async speak(text, { rate = 1 } = {}) {
+      const request = ++latest
       system?.cancel()
       if (hqOn()) {
         try {
           hq ??= loadHq!()
           const engine = await hq
+          if (request !== latest) return 'superseded'
           engine.cancel()
           await engine.speak(text, rate)
-          return 'hq'
+          return request === latest ? 'hq' : 'superseded'
         } catch {
+          // 被取代的請求失敗不算數：高音質真的壞了，最後一句也會失敗，由它退回並提示
+          if (request !== latest) return 'superseded'
           if (!hqBroken) fallBack()
         }
       }

@@ -1,6 +1,6 @@
 // 聽類兩題型共用（設計 s03）：題目卡（題型、播放鈕、慢速播放、手機內建聲音說明）與第一次出現的高音質提示條
 import { Info, Turtle, Volume2 } from 'lucide-react'
-import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { t } from '../../i18n/t'
 import { hqVoice, speak, tts } from '../../speech/speak'
 import type { Rate } from '../../speech/tts'
@@ -30,11 +30,15 @@ export function ListenCard({
   const system = engine === 'system'
   // 用高音質時要先載入模型、合成，可能等好幾秒：念完前播放鈕標示忙碌（內建聲音立即開始念，不標示）
   const [busy, setBusy] = useState(false)
+  const lastPlay = useRef(0)
   const play = (rate?: Rate) => {
     const p = Promise.resolve(rate ? speak(text, { rate }) : speak(text))
     if (tts.engine() !== 'hq') return
+    const mine = ++lastPlay.current
     setBusy(true)
-    void p.finally(() => setBusy(false))
+    void p.finally(() => {
+      if (mine === lastPlay.current) setBusy(false)
+    })
   }
   return (
     <Card className="justify-items-center text-center">

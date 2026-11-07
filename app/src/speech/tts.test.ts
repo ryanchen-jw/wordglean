@@ -86,6 +86,93 @@ describe('createTts', () => {
     expect(loadHq).toHaveBeenCalledTimes(1)
   })
 
+  describe('等待中重複按：以最後一次為準（TASK-31）', () => {
+    function slowLoad() {
+      const hq = engine()
+      let finish: (ok: boolean) => void = () => {}
+      const loadHq = vi.fn(
+        () =>
+          new Promise<VoiceEngine>((resolve, reject) => {
+            finish = (ok) => (ok ? resolve(hq) : reject(new Error('load failed')))
+          }),
+      )
+      return { hq, loadHq, finish: (ok: boolean) => finish(ok) }
+    }
+
+    it('模型載入中連按同一句三次：載入完只念一次', async () => {
+      const { hq, loadHq, finish } = slowLoad()
+      const tts = createTts({ system: engine(), loadHq, wantHq: () => true })
+      const all = [tts.speak('A.'), tts.speak('A.'), tts.speak('A.')]
+      finish(true)
+      await Promise.all(all)
+      expect(loadHq).toHaveBeenCalledTimes(1)
+      expect(hq.speak).toHaveBeenCalledTimes(1)
+    })
+
+    it('模型載入中改按另一句：只念最後按的那一句，舊句不出聲', async () => {
+      const { hq, loadHq, finish } = slowLoad()
+      const tts = createTts({ system: engine(), loadHq, wantHq: () => true })
+      const all = [tts.speak('A.'), tts.speak('B.', { rate: 0.8 })]
+      finish(true)
+      await Promise.all(all)
+      expect(hq.speak.mock.calls).toEqual([['B.', 0.8]])
+    })
+
+    it('模型載入失敗：只有最後一句退回內建聲音、提示一次；舊請求的 promise 也正常結束', async () => {
+      const { loadHq, finish } = slowLoad()
+      const system = engine()
+      const tts = createTts({ system, loadHq, wantHq: () => true })
+      const notice = vi.fn()
+      tts.onNotice(notice)
+      const all = [tts.speak('A.'), tts.speak('B.'), tts.speak('C.')]
+      finish(false)
+      await Promise.all(all)
+      expect(system.speak.mock.calls).toEqual([['C.', 1]])
+      expect(notice).toHaveBeenCalledTimes(1)
+      expect(tts.hqFailed()).toBe(true)
+    })
+
+    it('被取代的舊句合成失敗：不念舊句、不判高音質失敗，最後一句照念', async () => {
+      const system = engine()
+      const hq = engine()
+      let failA = () => {}
+      let finishB = () => {}
+      hq.speak.mockImplementation((text: string) =>
+        text === 'A.'
+          ? new Promise<void>((_, reject) => (failA = () => reject(new Error('oom'))))
+          : new Promise<void>((resolve) => (finishB = resolve)),
+      )
+      const tts = createTts({ system, loadHq: () => Promise.resolve(hq), wantHq: () => true })
+      const notice = vi.fn()
+      tts.onNotice(notice)
+      const a = tts.speak('A.')
+      await vi.waitFor(() => expect(hq.speak).toHaveBeenCalledTimes(1))
+      const b = tts.speak('B.')
+      await vi.waitFor(() => expect(hq.speak).toHaveBeenCalledTimes(2))
+      failA()
+      await a
+      finishB()
+      expect(await b).toBe('hq')
+      expect(system.speak).not.toHaveBeenCalled()
+      expect(notice).not.toHaveBeenCalled()
+      expect(tts.hqFailed()).toBe(false)
+    })
+
+    it('最後一句合成失敗：這一句退回內建聲音並提示一次', async () => {
+      const system = engine()
+      const tts = createTts({
+        system,
+        loadHq: () => Promise.resolve(engine(true)),
+        wantHq: () => true,
+      })
+      const notice = vi.fn()
+      tts.onNotice(notice)
+      await Promise.all([tts.speak('A.'), tts.speak('B.')])
+      expect(system.speak.mock.calls).toEqual([['B.', 1]])
+      expect(notice).toHaveBeenCalledTimes(1)
+    })
+  })
+
   it('播放新的一句前先停掉正在念的', async () => {
     const system = engine()
     const tts = createTts({ system, wantHq: () => false })
