@@ -44,7 +44,7 @@ dev-flow 情境：調查＋修 bug。
 <!-- AC:BEGIN -->
 - [ ] #1 各失敗路徑在設定頁的呈現已逐一列出，且沒有任何一條會在失敗後表現成未下載而無限跳回下載確認框（有單元測試）
 - [ ] #2 失敗時顯示明確的失敗狀態；最近一次失敗紀錄（階段、訊息、時間）寫入 localStorage
-- [ ] #3 C:/Program Files/Git/debug/voice 診斷頁顯示需求列出的各項資訊，App 內沒有連到它的入口
+- [ ] #3 /debug/voice 診斷頁顯示需求列出的各項資訊，App 內沒有連到它的入口
 - [ ] #4 回報含根因推斷與第二階段方案（成本、取捨）
 - [ ] #5 lint、typecheck、npm test、build 過；tts-hq、listen e2e 綠；TASK-31／32 測試全綠
 <!-- AC:END -->
