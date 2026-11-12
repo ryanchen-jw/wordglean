@@ -10,7 +10,7 @@ import { clearLocalData, exportData } from '../../data/localData'
 import { getSettings, saveSettings } from '../../data/repo'
 import { useLiveQuery } from '../../data/useLiveQuery'
 import { DownloadProgress } from '../../download/DownloadProgress'
-import { useDownloadStatus, type DownloadId } from '../../download/download'
+import { useDownloadStatus, type DownloadId, type HqFailReason } from '../../download/download'
 import { t, type MessageKey } from '../../i18n/t'
 import { navigate } from '../../router'
 import { clearPrefs, usePrefs, type Prefs } from '../../shell/prefs'
@@ -49,6 +49,13 @@ const TEST_LESSONS: { value: string; label: MessageKey }[] = [
   { value: 'shadowing', label: 'settings.other.testLessonShadowing' },
   { value: 'translate', label: 'settings.other.testLessonTranslate' },
 ]
+
+const HQ_FAILED_REASON: Record<HqFailReason, MessageKey> = {
+  worker: 'settings.voice.hqFailedWorker',
+  error: 'settings.voice.hqFailedError',
+  timeout: 'settings.voice.hqFailedTimeout',
+  crashed: 'settings.voice.hqFailedCrashed',
+}
 
 type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | 'voice' | 'testLesson' | null
 
@@ -147,11 +154,19 @@ function ModelRow({
   onRetry: () => void
 }) {
   const status = useDownloadStatus(id)
+  // 有原因的失敗（高音質發音，TASK-34）：說明改成失敗原因
+  const reason = status.kind === 'failed' ? status.reason : undefined
   return (
     <div className={rowCls}>
       <span className="grid min-w-0 leading-[1.35]">
         {name}
-        <span className="text-caption text-muted">{note}</span>
+        {reason ? (
+          <span className="text-caption text-error" data-testid={`${id}-failed-reason`}>
+            {t(HQ_FAILED_REASON[reason])}
+          </span>
+        ) : (
+          <span className="text-caption text-muted">{note}</span>
+        )}
       </span>
       <DownloadProgress status={status} label={name} onStart={onStart} onRetry={onRetry} />
     </div>
@@ -182,6 +197,8 @@ export function SettingsScreen() {
   const voice = useSyncExternalStore(hqVoice.subscribe, hqVoice.choice)
   const hqStatus = useDownloadStatus('tts-hq')
   const close = () => setSheet(null)
+  // 失敗時選單不列高音質（TASK-34）：不再導向下載確認框誘導重試，失敗原因與重試在下方高音質列
+  const hqPickable = hqStatus.kind !== 'unsupported' && hqStatus.kind !== 'failed'
   const pickVoice = (v: VoiceChoice) => {
     if (v === 'hq' && hqStatus.kind !== 'downloaded') setConfirmHq(true)
     else hqVoice.setChoice(v)
@@ -334,9 +351,7 @@ export function SettingsScreen() {
           label={t('settings.voice.tts')}
           options={[
             { value: 'system', label: t('settings.voice.ttsValue') },
-            ...(hqStatus.kind === 'unsupported'
-              ? []
-              : [{ value: 'hq' as const, label: t('settings.voice.ttsHq') }]),
+            ...(hqPickable ? [{ value: 'hq' as const, label: t('settings.voice.ttsHq') }] : []),
           ]}
           selected={voice}
           onSelect={pickVoice}

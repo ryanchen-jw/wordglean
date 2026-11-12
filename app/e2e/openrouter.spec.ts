@@ -83,6 +83,88 @@ test('貼金鑰：格式錯 → 欄位下方紅字；正確 → 驗證後已連�
   expectKeyOnlyToOpenRouter(requestsCarryingKey(fake))
 })
 
+// TASK-33：已連結時直接改用另一種方式。先存一把「舊金鑰」＋已選的付費模型，切換後看金鑰、方式、模型
+const OLD_KEY = 'sk-or-v1-e2eold00000000000000000000000000000000'
+const PAID = 'anthropic/claude-sonnet-x'
+
+async function seedLink(page: Page, via: 'oauth' | 'paste') {
+  await page.goto('/settings')
+  await expect(page.getByText('狀態：未設定')).toBeVisible()
+  await page.evaluate(
+    (row) =>
+      new Promise<void>((res, rej) => {
+        const r = indexedDB.open('linguaapp')
+        r.onsuccess = () => {
+          const tx = r.result.transaction('secrets', 'readwrite')
+          tx.objectStore('secrets').put(row)
+          tx.oncomplete = () => (r.result.close(), res())
+          tx.onerror = () => rej(tx.error)
+        }
+      }),
+    { key: 'openrouter', apiKey: OLD_KEY, model: PAID, via, linkedAt: 1 },
+  )
+  await page.reload()
+  await expect(page.getByText('已連結')).toBeVisible()
+}
+
+test.describe('已連結時改用另一種連結方式（TASK-33）', () => {
+  test('貼金鑰 → 改用帳號授權：金鑰換新、方式改 oauth、模型保留，回設定頁已連結', async ({
+    page,
+  }) => {
+    await fakeOpenRouter(page)
+    await seedLink(page, 'paste')
+    await expect(page.getByRole('button', { name: '改用貼上金鑰' })).toHaveCount(0)
+    await page.getByRole('button', { name: '用 OpenRouter 帳號一鍵授權' }).click()
+    await page.waitForURL(/\/openrouter\/callback\?code=/)
+    await expect(page).toHaveURL(/\/settings$/)
+    await expect(page.getByText('已連結')).toBeVisible()
+    await expect(page.getByRole('button', { name: new RegExp(`模型\\s*${PAID}`) })).toBeVisible()
+    await expect(page.getByRole('button', { name: '改用貼上金鑰' })).toBeVisible()
+    expect(await secretsInDb(page)).toMatchObject([{ apiKey: FAKE_KEY, via: 'oauth', model: PAID }])
+  })
+
+  test('帳號授權 → 改用貼上金鑰：貼錯後離開原連結不變；貼對後金鑰換新、模型保留', async ({
+    page,
+  }) => {
+    await fakeOpenRouter(page)
+    await seedLink(page, 'oauth')
+    const before = await secretsInDb(page)
+    await expect(page.getByRole('button', { name: '用 OpenRouter 帳號一鍵授權' })).toHaveCount(0)
+    await page.getByRole('button', { name: '改用貼上金鑰' }).click()
+    await expect(page).toHaveURL(/\/openrouter$/)
+    await page.getByLabel('金鑰').fill('3f9a-not-a-key')
+    await page.getByRole('button', { name: '驗證並儲存' }).click()
+    await expect(page.getByRole('alert')).toBeVisible()
+    await page.goBack()
+    await expect(page).toHaveURL(/\/settings$/)
+    await expect(page.getByText('已連結')).toBeVisible()
+    expect(await secretsInDb(page)).toEqual(before)
+
+    await page.getByRole('button', { name: '改用貼上金鑰' }).click()
+    await page.getByLabel('金鑰').fill(FAKE_KEY)
+    await page.getByRole('button', { name: '驗證並儲存' }).click()
+    await expect(page).toHaveURL(/\/settings$/)
+    await expect(page.getByText('已連結')).toBeVisible()
+    await expect(page.getByText('今日免費額度剩 37 次')).toBeVisible()
+    await expect(page.getByRole('button', { name: '用 OpenRouter 帳號一鍵授權' })).toBeVisible()
+    expect(await secretsInDb(page)).toMatchObject([{ apiKey: FAKE_KEY, via: 'paste', model: PAID }])
+  })
+
+  test('貼金鑰 → 改用帳號授權被拒：回設定頁仍已連結、顯示授權沒有完成、原連結不變', async ({
+    page,
+  }) => {
+    await fakeOpenRouter(page)
+    await seedLink(page, 'paste')
+    const before = await secretsInDb(page)
+    await page.evaluate(() => sessionStorage.setItem('linguaapp.openrouter.pkce', 'v'.repeat(43)))
+    await page.goto('/openrouter/callback?code=wrong-code')
+    await expect(page).toHaveURL(/\/settings$/)
+    await expect(page.getByRole('alert')).toHaveText('授權沒有完成，請再試一次。')
+    await expect(page.getByText('已連結')).toBeVisible()
+    expect(await secretsInDb(page)).toEqual(before)
+  })
+})
+
 test('清除金鑰：解除連結（二次確認）→ 未設定、本機不再有金鑰', async ({ page }) => {
   await fakeOpenRouter(page)
   await page.goto('/openrouter')

@@ -131,6 +131,26 @@ test('s11 設定 AI 區：預設／已連結／模型清單／解除確認／貼
   await check(page, info, 's11-unlink-confirm')
 })
 
+// TASK-33：已連結區依連結方式顯示另一種方式的入口（貼金鑰連結→一鍵授權；帳號授權連結→改用貼上金鑰）
+async function linkedBothWays(page: Page, info: TestInfo, prefix: string) {
+  await link(page)
+  const oauth = page.getByRole('button', { name: '用 OpenRouter 帳號一鍵授權' })
+  await expect(oauth).toBeVisible()
+  // 入口在已連結區下半部：捲到畫面內，截圖才拍得到
+  await oauth.scrollIntoViewIfNeeded()
+  await check(page, info, `${prefix}-linked-paste`)
+  await oauth.click()
+  await page.waitForURL(/\/openrouter\/callback\?code=/)
+  const paste = page.getByRole('button', { name: '改用貼上金鑰' })
+  await expect(paste).toBeVisible()
+  await paste.scrollIntoViewIfNeeded()
+  await check(page, info, `${prefix}-linked-oauth`)
+}
+
+test('s11 已連結：兩種連結方式的切換入口', async ({ page }, info) => {
+  await linkedBothWays(page, info, 's11')
+})
+
 // 結果畫面最上方是原題卡（創辦人試用 2026-10-05）；內容超過一屏時 main 捲到頂看得到整張原題、捲到底看得到最後一張卡
 async function scrollsWhole(page: Page, name: string, zh: string) {
   const main = page.locator('main')
@@ -193,6 +213,11 @@ test.describe('320 特大字級', () => {
     )
     // 320 特大字級下三種結果都超過一屏，捲動斷言才有意義
     expect(scrolled).toEqual([true, true, true])
+  })
+
+  test('s11 已連結兩種連結方式不破版', async ({ page }, info) => {
+    await page.addInitScript(() => localStorage.setItem('lg.textSize', 'xl'))
+    await linkedBothWays(page, info, '320-xl-s11')
   })
 
   test('s06 AI 批改／沒有金鑰、s11 已連結與貼金鑰錯誤不破版', async ({ page }, info) => {
