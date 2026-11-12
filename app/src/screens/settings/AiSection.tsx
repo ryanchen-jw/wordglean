@@ -300,6 +300,30 @@ export function AiSection({
         </span>
       )}
       <ModelTest link={link} fetchFn={fetchFn} />
+      {/* 改用另一種連結方式（TASK-33）：成功才覆寫金鑰（saveLink 保留模型）；取消或失敗原連結不動 */}
+      {link.via === 'oauth' ? (
+        <Button variant="text" onClick={() => navigate('/openrouter')}>
+          {t('settings.ai.pasteKey')}
+          <ChevronRight size={20} aria-hidden="true" />
+        </Button>
+      ) : (
+        <Button
+          variant="text"
+          data-multiline
+          className="text-left"
+          disabled={starting}
+          aria-busy={starting}
+          onClick={authorize}
+        >
+          {t('settings.ai.oauthButton')}
+          <ChevronRight size={20} aria-hidden="true" className="flex-none" />
+        </Button>
+      )}
+      {failed && (
+        <p role="alert" className="text-secondary text-error">
+          {t('settings.ai.oauthFail')}
+        </p>
+      )}
       <Button variant="danger" onClick={() => setConfirming(true)}>
         {t('settings.ai.unlink')}
       </Button>

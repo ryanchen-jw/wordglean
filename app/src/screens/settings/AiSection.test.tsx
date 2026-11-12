@@ -150,6 +150,39 @@ describe('已連結（s11 已授權）', () => {
   })
 })
 
+describe('已連結時改用另一種連結方式（TASK-33）', () => {
+  it('帳號授權連結：顯示「改用貼上金鑰」、不顯示一鍵授權；按下前往貼金鑰頁、連結不變', async () => {
+    await saveLink(db, KEY, 'oauth', 1)
+    render(<AiSection fetchFn={fakeOpenRouter()} />)
+    await screen.findByText('已連結')
+    expect(screen.queryByRole('button', { name: '用 OpenRouter 帳號一鍵授權' })).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '改用貼上金鑰' }))
+    expect(location.pathname).toBe('/openrouter')
+    expect(await getLink(db)).toMatchObject({ apiKey: KEY, via: 'oauth' })
+  })
+
+  it('貼金鑰連結：顯示一鍵授權入口、不顯示「改用貼上金鑰」；按下前往授權頁、連結不變', async () => {
+    await saveLink(db, KEY, 'paste', 1)
+    const go = vi.fn()
+    render(<AiSection fetchFn={fakeOpenRouter()} go={go} />)
+    await screen.findByText('已連結')
+    expect(screen.queryByRole('button', { name: '改用貼上金鑰' })).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '用 OpenRouter 帳號一鍵授權' }))
+    await waitFor(() => expect(go).toHaveBeenCalledOnce())
+    expect(new URL(go.mock.calls[0][0] as string).pathname).toBe('/auth')
+    expect(await getLink(db)).toMatchObject({ apiKey: KEY, via: 'paste' })
+  })
+
+  it('改用帳號授權失敗回來：仍是已連結、顯示一次「授權沒有完成」', async () => {
+    await saveLink(db, KEY, 'paste', 1)
+    markOauthFailed()
+    render(<AiSection fetchFn={fakeOpenRouter()} />)
+    await screen.findByText('已連結')
+    expect(screen.getByRole('alert')).toHaveTextContent('授權沒有完成，請再試一次。')
+    expect(sessionStorage.getItem('linguaapp.openrouter.oauthFailed')).toBeNull()
+  })
+})
+
 describe('測試目前模型（TASK-29）', () => {
   const CHAT = 'https://openrouter.ai/api/v1/chat/completions'
   const BUTTON = { name: '測試目前模型' }

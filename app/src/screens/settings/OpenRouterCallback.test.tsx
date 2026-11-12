@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto'
 import { render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../../data/appDb'
-import { getLink } from '../../llm/keyStore'
+import { getLink, saveLink, setModel } from '../../llm/keyStore'
 import { oauthFailed } from '../../llm/startup'
 import { OpenRouterCallback } from './OpenRouterCallback'
 
@@ -50,6 +50,48 @@ describe('OAuth PKCE 回呼', () => {
     render(<OpenRouterCallback fetchFn={vi.fn<typeof fetch>(impl)} />)
     await vi.waitFor(() => expect(location.pathname).toBe('/settings'))
     expect(await getLink(db)).toBeNull()
+    expect(oauthFailed()).toBe(true)
+  })
+})
+
+describe('已用貼金鑰連結時改用帳號授權（TASK-33）', () => {
+  const OLD = 'sk-or-v1-pasted-0123456789'
+  beforeEach(async () => {
+    await saveLink(db, OLD, 'paste', 1)
+    await setModel(db, 'openai/gpt-x')
+  })
+
+  it('成功：換成新金鑰、連結方式改為 oauth、已選模型保留', async () => {
+    at('?code=abc123')
+    sessionStorage.setItem('linguaapp.openrouter.pkce', VERIFIER)
+    const fetchFn = vi.fn<typeof fetch>(async () => Response.json({ key: 'sk-or-v1-from-oauth' }))
+    render(<OpenRouterCallback fetchFn={fetchFn} now={() => T} />)
+    await vi.waitFor(() => expect(location.pathname).toBe('/settings'))
+    expect(await getLink(db)).toEqual({
+      key: 'openrouter',
+      apiKey: 'sk-or-v1-from-oauth',
+      model: 'openai/gpt-x',
+      via: 'oauth',
+      linkedAt: T,
+    })
+  })
+
+  it.each([
+    ['使用者取消（沒有 code）', '', async () => Response.json({ key: 'x' })],
+    ['授權被拒', '?code=abc', async () => new Response('{}', { status: 403 })],
+  ])('%s：原連結完全不變', async (_, search, impl) => {
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+    at(search)
+    sessionStorage.setItem('linguaapp.openrouter.pkce', VERIFIER)
+    render(<OpenRouterCallback fetchFn={vi.fn<typeof fetch>(impl)} />)
+    await vi.waitFor(() => expect(location.pathname).toBe('/settings'))
+    expect(await getLink(db)).toEqual({
+      key: 'openrouter',
+      apiKey: OLD,
+      model: 'openai/gpt-x',
+      via: 'paste',
+      linkedAt: 1,
+    })
     expect(oauthFailed()).toBe(true)
   })
 })
