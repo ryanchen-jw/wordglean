@@ -117,7 +117,7 @@ describe('下載', () => {
     hq.startDownload()
     workers[0].emit({ type: 'error', message: 'network' })
     await flush()
-    expect(hq.status()).toEqual({ kind: 'failed' })
+    expect(hq.status()).toEqual({ kind: 'failed', reason: 'error' })
     expect(workers[0].terminated).toBe(true)
     expect(hq.choice()).toBe('system')
     hq.startDownload()
@@ -140,7 +140,7 @@ describe('Worker 本身載入失敗（驗收 P1：App 更新後離線開啟，Wo
     hq.startDownload()
     workers[0].fail()
     await flush()
-    expect(hq.status()).toEqual({ kind: 'failed' })
+    expect(hq.status()).toEqual({ kind: 'failed', reason: 'worker' })
     expect(workers[0].terminated).toBe(true)
     hq.startDownload()
     expect(workers).toHaveLength(2)
@@ -162,7 +162,7 @@ describe('Worker 本身載入失敗（驗收 P1：App 更新後離線開啟，Wo
     hq.startDownload()
     workers[0].onmessageerror!(new MessageEvent('messageerror'))
     await flush()
-    expect(hq.status()).toEqual({ kind: 'failed' })
+    expect(hq.status()).toEqual({ kind: 'failed', reason: 'worker' })
   })
 
   it('一段時間沒有任何回音（逾時）：失敗；有進度就重新計時', async () => {
@@ -176,11 +176,109 @@ describe('Worker 本身載入失敗（驗收 P1：App 更新後離線開啟，Wo
       await vi.advanceTimersByTimeAsync(900)
       expect(hq.status()).toEqual({ kind: 'downloading', progress: 0.1 })
       await vi.advanceTimersByTimeAsync(200)
-      expect(hq.status()).toEqual({ kind: 'failed' })
+      expect(hq.status()).toEqual({ kind: 'failed', reason: 'timeout' })
       expect(workers[0].terminated).toBe(true)
     } finally {
       vi.useRealTimers()
     }
+  })
+})
+
+// TASK-34：iPhone 下載到 100% 後又跳回下載提示、無限循環——失敗不得表現成「未下載」，最近一次失敗存 localStorage
+describe('失敗路徑不退回未下載（TASK-34）', () => {
+  const lastFailure = (s: Storage) => JSON.parse(s.getItem('lg.ttsHq.lastFailure') ?? 'null')
+
+  it('下載後模型載入失敗（Worker 回報 error）：失敗附原因，記下階段、訊息、時間', async () => {
+    const { hq, workers, deps } = setup()
+    await hq.init()
+    hq.startDownload()
+    workers[0].emit({ type: 'progress', progress: 1 })
+    workers[0].emit({ type: 'error', message: 'Error: no available backend found' })
+    await flush()
+    expect(hq.status()).toEqual({ kind: 'failed', reason: 'error' })
+    expect(lastFailure(deps.storage)).toEqual({
+      stage: 'download',
+      reason: 'error',
+      message: 'Error: no available backend found',
+      at: expect.stringMatching(/^\d{4}-\d\d-\d\dT/),
+    })
+  })
+
+  it('Worker onerror：原因 worker，訊息帶瀏覽器給的錯誤', async () => {
+    const { hq, workers, deps } = setup()
+    await hq.init()
+    hq.startDownload()
+    workers[0].onerror!(new ErrorEvent('error', { message: 'Out of memory' }))
+    await flush()
+    expect(hq.status()).toEqual({ kind: 'failed', reason: 'worker' })
+    expect(lastFailure(deps.storage)).toMatchObject({ stage: 'download', reason: 'worker' })
+    expect(lastFailure(deps.storage).message).toContain('Out of memory')
+  })
+
+  it('下載失敗後重開 App：仍是失敗（不是未下載）', async () => {
+    const first = setup()
+    await first.hq.init()
+    first.hq.startDownload()
+    first.workers[0].emit({ type: 'error', message: 'x' })
+    await flush()
+    const again = createHqVoice({ ...first.deps })
+    expect(again.status()).toEqual({ kind: 'failed', reason: 'error' })
+    await again.init()
+    expect(again.status()).toEqual({ kind: 'failed', reason: 'error' })
+  })
+
+  it('下載途中頁面被系統關掉（重開時下載旗標還在）：失敗、原因 crashed，旗標清掉', async () => {
+    const first = setup()
+    await first.hq.init()
+    first.hq.startDownload()
+    first.workers[0].emit({ type: 'progress', progress: 1 })
+    // 頁面在這裡被關掉：沒有 ready 也沒有 error
+    const again = createHqVoice({ ...first.deps })
+    await again.init()
+    expect(again.status()).toEqual({ kind: 'failed', reason: 'crashed' })
+    expect(lastFailure(first.deps.storage)).toMatchObject({ stage: 'download', reason: 'crashed' })
+    expect(first.deps.storage.getItem('lg.ttsHq.booting')).toBeNull()
+  })
+
+  it('失敗後按重試成功：已下載並選用高音質', async () => {
+    const { hq, workers } = setup()
+    await hq.init()
+    hq.startDownload()
+    workers[0].emit({ type: 'error', message: 'x' })
+    await flush()
+    hq.startDownload()
+    workers[1].emit({ type: 'ready' })
+    await flush()
+    expect(hq.status()).toEqual({ kind: 'downloaded' })
+    expect(hq.choice()).toBe('hq')
+  })
+
+  it('啟動時找不到快取的模型：未下載（要重新下載是真的），並記下 cacheMissing', async () => {
+    const { hq, deps } = setup({ modelCached: async () => false })
+    deps.storage.setItem('lg.ttsHq.downloaded', '1')
+    await hq.init()
+    expect(hq.status()).toEqual({ kind: 'notDownloaded' })
+    expect(lastFailure(deps.storage)).toMatchObject({ stage: 'init', reason: 'cacheMissing' })
+  })
+
+  it('已下載、播放時載入失敗：狀態維持已下載，記下 load 階段', async () => {
+    const { hq, workers, deps } = setup()
+    deps.storage.setItem('lg.ttsHq.downloaded', '1')
+    await hq.init()
+    const p = hq.load()
+    workers[0].emit({ type: 'error', message: 'device lost' })
+    await expect(p).rejects.toThrow()
+    expect(hq.status()).toEqual({ kind: 'downloaded' })
+    expect(lastFailure(deps.storage)).toMatchObject({ stage: 'load', reason: 'error' })
+  })
+
+  it('播放時載入、上次分頁被關掉：記下 load 階段 crashed', async () => {
+    const { hq, deps } = setup()
+    deps.storage.setItem('lg.ttsHq.downloaded', '1')
+    deps.session.setItem('lg.ttsHqLoading', '1')
+    await hq.init()
+    await expect(hq.load()).rejects.toThrow()
+    expect(lastFailure(deps.storage)).toMatchObject({ stage: 'load', reason: 'crashed' })
   })
 })
 

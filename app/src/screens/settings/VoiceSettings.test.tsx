@@ -101,6 +101,29 @@ describe('設定・語音（s11）', () => {
     expect(voiceRow()).toHaveTextContent('手機內建聲音（預設）')
   })
 
+  // TASK-34：失敗後選高音質不再跳下載確認框（iPhone 無限循環）；失敗原因顯示在高音質列
+  it.each([
+    ['worker', '載入失敗：瀏覽器無法啟動高音質發音'],
+    ['error', '下載或載入時發生錯誤'],
+    ['timeout', '載入失敗：等太久沒有回應'],
+    ['crashed', '載入失敗：載入途中頁面被手機關掉，可能是記憶體不夠'],
+  ] as const)(
+    '失敗（%s）：列上顯示原因與重試；發音選單沒有高音質、不跳下載確認框',
+    async (reason, text) => {
+      state.status = { kind: 'failed', reason }
+      render(<SettingsScreen />)
+      expect(await screen.findByTestId('tts-hq-failed-reason')).toHaveTextContent(text)
+      expect(screen.queryByText('約 310MB・需支援 WebGPU 的手機')).toBeNull()
+      expect(screen.getByRole('button', { name: '下載中斷・重試' })).toBeInTheDocument()
+      fireEvent.click(voiceRow())
+      expect(screen.getAllByRole('option').map((o) => o.textContent)).toEqual([
+        '手機內建聲音（預設）',
+      ])
+      expect(screen.queryByRole('alertdialog')).toBeNull()
+      expect(startDownload).not.toHaveBeenCalled()
+    },
+  )
+
   it('不支援的手機：高音質列顯示「這支手機不支援高音質發音」、選單沒有高音質', async () => {
     state.status = { kind: 'unsupported' }
     render(<SettingsScreen />)

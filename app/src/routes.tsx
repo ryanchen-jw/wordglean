@@ -8,6 +8,7 @@ import { AboutScreen } from './screens/about/AboutScreen'
 import { LicensesScreen } from './screens/about/LicensesScreen'
 import { PrivacyScreen } from './screens/about/PrivacyScreen'
 import { CourseScreen } from './screens/course/CourseScreen'
+import { VoiceDiagnosticsScreen } from './screens/debug/VoiceDiagnosticsScreen'
 import { HomeScreen } from './screens/home/HomeScreen'
 import { LessonScreen } from './screens/lesson/LessonScreen'
 import { ReviewScreen, type ReviewMode } from './screens/review/ReviewScreen'
@@ -53,6 +54,8 @@ export function AppRoutes() {
   if (pathname === '/about') return <AboutScreen />
   if (pathname === '/about/privacy') return <PrivacyScreen />
   if (pathname === '/about/licenses') return <LicensesScreen />
+  // 高音質發音診斷（TASK-34）：內部工具，App 內沒有入口
+  if (pathname === '/debug/voice') return <VoiceDiagnosticsScreen />
   // 示範課（創辦人 2026-10-05 裁示二）：所有題型一課走完、練習模式；不接結算同步；入口只在設定頁「測試課程」（TASK-30）
   if (pathname === '/lesson/demo')
     return (

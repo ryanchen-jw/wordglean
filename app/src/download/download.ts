@@ -5,11 +5,15 @@ import { hqVoice } from '../speech/speak'
 
 export type DownloadId = 'tts-hq' | 'stt'
 
+/** 高音質發音失敗的原因類型（TASK-34）：worker＝Worker 起不來或崩潰、error＝下載或模型載入回報錯誤、
+ * timeout＝久無回音、crashed＝載入途中頁面被系統關掉（重開後才知道） */
+export type HqFailReason = 'worker' | 'error' | 'timeout' | 'crashed'
+
 export type DownloadStatus =
   | { kind: 'notDownloaded' }
   | { kind: 'downloading'; progress: number } // 0–1
   | { kind: 'downloaded' }
-  | { kind: 'failed' }
+  | { kind: 'failed'; reason?: HqFailReason }
   | { kind: 'unsupported' } // 這支手機不能用（高音質發音需要 WebGPU）
 
 const NOT_DOWNLOADED: DownloadStatus = { kind: 'notDownloaded' }
