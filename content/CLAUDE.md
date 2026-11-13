@@ -8,6 +8,8 @@
 |---|---|
 | `schema/`、`scripts/`、`test/` | AGPL-3.0（程式碼，同 repo 根 `LICENSE`） |
 | `items/`（題庫 JSON） | 題目文字（例句、選項、短文、翻譯、評分要點）由開發端撰寫，採 **CC BY-SA 4.0**；選字與分級依據的來源不在此範圍，各依原授權（見 `data/LICENSES.md`）（同 repo 根 `NOTICE` 與 `content/README.md`） |
+| `audio/`（預產發音音檔包，TASK-35） | **CC BY-SA 4.0**（句子音檔衍生自題目文字）；以 Kokoro-82M（Apache-2.0，音色 af_heart）在開發端產生，見 repo 根 `NOTICE` |
+| `audio-gen/` | AGPL-3.0（產生音檔的程式碼） |
 | `curriculum/*.json`、`curriculum/STATS.md`、`placement/placement.json`（課綱與分級題本） | 衍生自 lexicon 的級距與多益旗標，**依 `data/LICENSES.md` 各來源條款**（CEFR-J 衍生級距適用 CEFR-J 條款、不是 CC BY-SA；Octanove、TSL／NGSL 為 CC BY-SA 4.0） |
 
 不要把課綱資料寫死成單一授權；整體授權表述已裁（2026-10-03）：題目文字採 CC BY-SA 4.0，選字與分級依據的來源各依原授權，以 `data/LICENSES.md` 為準。
@@ -35,6 +37,8 @@
 | `scripts/lib/offensive.mjs` | 分級測驗排除字：真字的冒犯／粗俗字名單（整字）、假字的不雅字串（子字串）；自訂名單、附分類理由。另有課綱排除字 `CURRICULUM_EXCLUDED_WORDS`（創辦人裁示 2026-10-03：gook、retard） | 人 |
 | `scripts/lib/placement.mjs` | 題本組裝 `buildPlacement(lexicon, dictWords)`、讀 ECDICT 切片 `loadDictWords` | 人 |
 | `scripts/build-placement.mjs` | 產生 `placement/placement.json` | — |
+| `audio/<級>/<課>.lga`、`audio/dict/dNNN.lga` | 預產發音音檔包（TASK-35）：一課一包（單字卡的字或片語、聽打／跟讀句、聽選音檔）＋字典專用包（`data/dict` 中含連字號的字，依雜湊分 512 包）。MP3 單聲道 24 kHz 48 kbps、頭尾靜音裁切；格式見 `app/src/speech/clipPack.ts`，要發音的文字與正規化見 `app/src/speech/clipKey.ts` | **產生，勿手改** |
+| `audio-gen/build-audio.mjs` | 產生音檔包（獨立 package，需 `npm ci` 與 PATH 上的 ffmpeg；不在 content 的依賴裡）：只補新增或變更的文字、文字沒變的課不重寫；空閒記憶體 <2.5 GB 停（重跑會接續）。單一行程最快（多行程互搶 CPU 反而慢） | — |
 | `eval/llm-eval-set.json` | TASK-15 批改模型評測題組（40 句錯句＋必修錯誤點） | 人 |
 | `scripts/lib/llm-eval.mjs`、`scripts/llm-eval.mjs` | 批改模型評測：`:free` 硬守衛、評分、分日接續；prompt 與解析器直接 import `app/src/llm/*.ts`（Node 22 型別剝除）。用法與規則見 `docs/research/llm-eval.md` | — |
 
@@ -112,6 +116,13 @@ node scripts/build-curriculum.mjs   # 改了 topics.json／word-topics.json／le
 npm run validate                 # 只檢查現有級距檔
 node scripts/build-placement.mjs    # 改了 lexicon／data/dict／產生器後重建分級測驗題本（位元組可重現）
 # 皆可加 --lexicon <file> --dir <curriculum dir>；build／validate 另可加 --phrases <file>
+
+# 預產發音音檔（TASK-35）：改了題目檔或 data/dict 後補產生（npm test 的 audio.test.mjs 會列出待重產的課）
+cd audio-gen && npm ci
+node build-audio.mjs --check        # 不載模型，只列待產生／待重產
+node build-audio.mjs                # 課程音檔
+node build-audio.mjs --dict         # 字典專用包（含連字號的字）
+node build-audio.mjs --items ../../app/src/lesson/fixtures/items --out ../../app/src/lesson/fixtures/audio   # e2e 樣本課
 ```
 
 改分類的流程：編輯 `word-topics.json`（把字移到別的主題列）→ `node scripts/build-curriculum.mjs` → `npm test` → 一起提交分類檔、級距檔與 STATS.md。

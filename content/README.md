@@ -15,8 +15,9 @@ LinguaApp 的課程結構（級距 → 主題單元 → 小課）、題庫 JSON�
 
 - 題庫 JSON（`items/`）的題目文字（例句、選項、短文、翻譯、評分要點）：由開發端撰寫，採 **CC BY-SA 4.0**。
 - 選字與分級依據的來源不在上述 CC BY-SA 4.0 範圍內，各依原授權：CEFR-J（CEFR-J 條款，不是 CC BY-SA）；Octanove、TSL、NGSL（CC BY-SA 4.0）；ECDICT（MIT）。條款與引用格式見 `data/LICENSES.md`。
+- 發音音檔（`audio/`）：以 Kokoro-82M（Apache-2.0，音色 af_heart）在開發端預先產生，句子音檔衍生自題目文字，採 **CC BY-SA 4.0**。
 - 課綱與分級測驗題本（`curriculum/`、`placement/`）：依 `data/LICENSES.md` 各來源條款（CEFR-J 衍生級距適用 CEFR-J 條款，不是 CC BY-SA）。
-- 程式碼（`schema/`、`scripts/`、`test/`）：AGPL-3.0，同 repo 根 `LICENSE`。
+- 程式碼（`schema/`、`scripts/`、`test/`、`audio-gen/`）：AGPL-3.0，同 repo 根 `LICENSE`。
 
 各來源與修改說明見 repo 根 `NOTICE`「content/（題庫與課程）」一節。
 
