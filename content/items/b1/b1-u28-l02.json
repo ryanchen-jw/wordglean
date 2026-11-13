@@ -127,10 +127,10 @@
       "audioZh": "本店的退貨政策改了：現在你有三十天可以把東西拿回來退。",
       "questionZh": "新的退貨政策是什麼？",
       "options": [
-        "Returns are not allowed.",
-        "You have three days to return things.",
-        "You must pay a small fee.",
-        "You can bring items back for a month."
+        "Returns are not allowed",
+        "You have three days to return things",
+        "You must pay a small fee",
+        "You can bring items back for a month"
       ],
       "answer": 3
     },
@@ -143,8 +143,8 @@
     {
       "id": "b1-u28-l02-q12",
       "type": "shadowing",
-      "sentenceEn": "The school administration is on the first floor.",
-      "sentenceZh": "學校行政處在一樓。"
+      "sentenceEn": "The school administration office is on the first floor.",
+      "sentenceZh": "學校行政辦公室在一樓。"
     },
     {
       "id": "b1-u28-l02-q13",
@@ -187,8 +187,8 @@
     {
       "id": "b1-u28-l02-q15",
       "type": "reading",
-      "passageEn": "Last week, our chess club held an election to choose a new president. A girl named Mia won. She promised a new policy: a coach will come once a month to teach us. Mia is only fifteen, but no rule says a president must be older, so her win was completely legal. She says a good defense is the best weapon in chess. She also asked the school administration for a bigger room, and now a security guard opens it for us on Saturdays. Mia hopes our club can win the city tournament next year.",
-      "passageZh": "上週，我們的西洋棋社舉行選舉，選出新社長。一個叫 Mia 的女孩當選了。她承諾一項新政策：每個月請一位教練來指導我們。Mia 才十五歲，但沒有規定說社長一定要比較年長，所以她當選完全合法。她說好的防守是下西洋棋最好的武器。她也向學校行政單位要了一間比較大的教室，現在每週六都有一位保全人員幫我們開門。Mia 希望我們社團明年能贏得全市錦標賽。",
+      "passageEn": "Last week, our chess club held an election to choose a new president. A girl named Mia won. She promised a new policy: a coach will come once a month to teach us. Mia is only fifteen, but everyone agreed that the election was fair. She says a good defense is the best weapon in chess. She also asked the school administration for a bigger room, and now a security guard opens it for us on Saturdays. Mia hopes our club can win the city tournament next year.",
+      "passageZh": "上週，我們的西洋棋社舉行選舉，選出新社長。一個叫 Mia 的女孩當選了。她承諾一項新政策：每個月請一位教練來指導我們。Mia 才十五歲，但大家都同意這次選舉很公平。她說好的防守是下西洋棋最好的武器。她也向學校行政單位要了一間比較大的教室，現在每週六都有一位保全人員幫我們開門。Mia 希望我們社團明年能贏得全市錦標賽。",
       "questions": [
         {
           "questionZh": "Mia 承諾了什麼新政策？",
@@ -345,6 +345,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（policy）原位換成翻譯題，沿用題 id b1-u28-l02-q17；目標字沿用 policy",
         "resolution": "改為 translate：promptZh「我們公司的規定允許員工星期五在家工作。」、hintWords [\"policy\"]、referenceEn [\"Our company's policy allows staff to work from home on Fridays.\",\"Our company has a policy that lets staff work from home on Fridays.\"]、rubricZh [\"用 policy 表示「規定；政策」\",\"「允許」可寫，例如 allows … to、lets … 等\"]（原 makeSentence：instructionZh「用 policy 造一個句子，說說你學校或公司的一項規定。」、referenceEn [\"My school has a policy of no phones in class.\",\"My company has a good holiday policy.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "派對結束後，廚房一團亂，到處都是髒盤子。",
       "questionZh": "派對結束後，廚房怎麼了？",
       "options": [
-        "It was too small.",
-        "It was locked.",
-        "It was being painted.",
-        "It was a complete mess."
+        "It was too small",
+        "It was locked",
+        "It was being painted",
+        "It was a complete mess"
       ],
       "answer": 3
     },
@@ -302,6 +302,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（impervious）原位換成翻譯題，沿用題 id c1-u04-l07-q17；目標字沿用 impervious",
         "resolution": "改為 translate：promptZh「這種塗料不透水，很適合用在浴室。」、hintWords [\"impervious\"]、referenceEn [\"This paint is impervious to water, so it is good for bathrooms.\",\"This paint is impervious to water, which makes it ideal for bathrooms.\"]、rubricZh [\"「不透水」用 impervious to water（例如 is impervious to water 等）\",\"「很適合用在浴室」可寫，例如 good for bathrooms、ideal for bathrooms 等\"]（原 makeSentence：instructionZh「用 impervious to 造一個句子，說說你或你的某樣東西不受什麼影響。」、referenceEn [\"My hiking boots are impervious to water.\",\"My old watch is impervious to water, so I wear it when I swim.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

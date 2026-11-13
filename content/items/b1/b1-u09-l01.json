@@ -125,10 +125,10 @@
       "audioZh": "我很期待開始新工作，但也有點緊張。",
       "questionZh": "說話者對新工作有什麼感覺？",
       "options": [
-        "Excited but a bit worried.",
-        "Not eager at all.",
-        "Angry and sad.",
-        "Not interested in the new job at all."
+        "Excited but a bit worried",
+        "Not eager at all",
+        "Angry and sad",
+        "Not interested in the new job at all"
       ],
       "answer": 0
     },
@@ -355,6 +355,12 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u09-l03-q16 雷同（兩題都是「謝謝你的…」（thank you for）；本題又與同課聽打 Thanks for your patience 幾乎同句），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「我妹妹學鋼琴沒有耐心，一個月就放棄了。」、referenceEn [\"My sister had no patience for piano lessons and gave up after a month.\",\"My little sister didn't have the patience to learn the piano, so she quit after one month.\"]、rubricZh [\"用 patience 表示「耐心」（例如 had no patience for…、didn't have the patience to… 等）\",\"「放棄」可寫，例如 gave up、quit、stopped 等\"]（原 promptZh「我很感謝你的耐心。」、referenceEn [\"Thank you very much for your patience.\",\"I really appreciate your patience.\"]、rubricZh [\"patience 是不可數名詞「耐心」\",\"「感謝你的⋯」可寫 thank you for your… 等\",\"其他表達感謝的寫法也正確（例如 I appreciate your patience.、Thanks for being so patient.）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

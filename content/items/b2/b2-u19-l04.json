@@ -77,8 +77,8 @@
       "id": "b2-u19-l04-q06",
       "type": "wordCard",
       "word": "clause",
-      "exampleEn": "My teacher said my sentence was too long and should be split into two clauses.",
-      "exampleZh": "老師說我的句子太長，應該拆成兩個子句。",
+      "exampleEn": "My teacher said my sentence had too many clauses and should be split in two.",
+      "exampleZh": "老師說我的句子子句太多，應該拆成兩句。",
       "glossZh": "子句；（合約）條款",
       "distractorsZh": [
         "簽名",
@@ -218,7 +218,7 @@
         "clause"
       ],
       "referenceEn": [
-        "There is a clause about how to cancel it in the contract.",
+        "There is a clause in the contract about how to cancel it.",
         "The contract has a clause about how to cancel it."
       ],
       "rubricZh": [
@@ -374,6 +374,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（astronomy）原位換成翻譯題，沿用題 id b2-u19-l04-q17；目標字沿用 astronomy",
         "resolution": "改為 translate：promptZh「天文學幫助我們更了解宇宙。」、hintWords [\"astronomy\"]、referenceEn [\"Astronomy helps us understand the universe better.\",\"Astronomy helps us learn more about the universe.\"]、rubricZh [\"astronomy 指天文學，不加冠詞\",\"「更了解」可寫，例如 understand… better、learn more about… 等\",\"時態用現在式（例如 helps 等）；寫 has helped 也正確\"]（原 makeSentence：instructionZh「用 astronomy 造一個句子，說說你對天文學的興趣或經驗。」、referenceEn [\"I became interested in astronomy after I saw a shooting star.\",\"I'm not very good at astronomy, but I love looking at the moon.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -187,7 +187,7 @@
     {
       "id": "b2-u51-l02-q15",
       "type": "reading",
-      "passageEn": "From the outside, our city's new science hall looks rather unattractive, but inside it is full of surprises. Visitors are asked to touch everything, and the tactile displays are popular with both children and blind visitors. You can feel the softness of a bird's feathers or hold a replica of a cold, inert rock from the moon. One room uses giant fans to show the elemental power of wind. In the last room, a guide with a resonant voice tells stories about the stars.",
+      "passageEn": "From the outside, our city's new science museum looks rather unattractive, but inside it is full of surprises. Visitors are asked to touch everything, and the tactile displays are popular with both children and blind visitors. You can feel the softness of a bird's feathers or hold a replica of a cold, inert rock from the moon. One room uses giant fans to show the elemental power of wind. In the last room, a guide with a resonant voice tells stories about the stars.",
       "passageZh": "從外面看，我們市裡新的科學館不太好看，但裡面充滿驚喜。館方請參觀者盡量觸摸每樣東西，這些可觸摸的展品很受小孩和視障參觀者歡迎。你可以摸摸鳥羽毛的柔軟，或拿起一塊冰冷、靜止不動的月球岩石複製品。有一間展室用巨大的風扇展現風的自然力量。最後一間展室裡，一位聲音洪亮的導覽員講著星星的故事。",
       "questions": [
         {
@@ -286,6 +286,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（posh）原位換成翻譯題，沿用題 id b2-u51-l02-q17；目標字沿用 posh",
         "resolution": "改為 translate：promptZh「那家飯店看起來很高級，但房價其實不貴。」、hintWords [\"posh\"]、referenceEn [\"That hotel looks posh, but its rooms are actually not expensive.\",\"The hotel looks very posh, but the rooms are actually quite cheap.\"]、rubricZh [\"posh 當形容詞「高級的」（例如 looks posh 等）\",\"「房價不貴」可寫，例如 the rooms are not expensive、the rooms are quite cheap 等\",\"「其實」可寫，例如 actually、in fact 等，位置不扣分\"]（原 makeSentence：instructionZh「用 posh 造一個句子，描述一個你去過或看過的高級地方。」、referenceEn [\"I once stayed in a posh hotel with a pool on the roof.\",\"My cousin's wedding was held in a posh restaurant by the river.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

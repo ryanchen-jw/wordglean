@@ -29,7 +29,7 @@
       "id": "a1-u20-l05-q02",
       "type": "wordCard",
       "word": "p.m.",
-      "exampleEn": "The meeting is at 3 P.M.",
+      "exampleEn": "The meeting is at 3 p.m.",
       "exampleZh": "會議在下午三點。",
       "glossZh": "下午；晚上",
       "distractorsZh": [
@@ -119,7 +119,7 @@
     {
       "id": "a1-u20-l05-q09",
       "type": "listenType",
-      "sentenceEn": "The shop closes at 9 P.M. on Sunday.",
+      "sentenceEn": "The shop closes at 9 p.m. on Sunday.",
       "sentenceZh": "這家店星期天晚上九點關門。"
     },
     {
@@ -188,7 +188,7 @@
     {
       "id": "a1-u20-l05-q15",
       "type": "reading",
-      "passageEn": "Mia has a busy week. On Tuesday and Thursday, she has English class at 7 P.M. On Wednesday, she plays tennis. On Saturday, she works at a cafe. On Sunday, she is free. In October, she will go to Japan for a week.",
+      "passageEn": "Mia has a busy week. On Tuesday and Thursday, she has English class at 7 p.m. On Wednesday, she plays tennis. On Saturday, she works at a cafe. On Sunday, she is free. In October, she will go to Japan for a week.",
       "passageZh": "Mia 這週很忙。星期二和星期四晚上七點，她有英文課。星期三她打網球，星期六在咖啡店打工。星期天她有空。十月時，她會去日本一個星期。",
       "questions": [
         {
@@ -219,7 +219,7 @@
         "Saturday"
       ],
       "referenceEn": [
-        "See you at 7 P.M. on Saturday.",
+        "See you at 7 p.m. on Saturday.",
         "Let's meet at seven on Saturday night."
       ],
       "rubricZh": [
@@ -344,6 +344,30 @@
         "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8），改「會」",
         "resolution": "改為 promptZh「我們十月會搬到新家。」（原「我們十月要搬到新家。」）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

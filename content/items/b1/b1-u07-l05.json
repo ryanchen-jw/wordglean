@@ -125,10 +125,10 @@
       "audioZh": "新火車站開幕後，這個小鎮的觀光就開始蓬勃發展。",
       "questionZh": "這個小鎮的觀光熱潮是什麼時候開始的？",
       "options": [
-        "When a new hotel opened.",
-        "When a movie was made there.",
-        "When the old train station closed.",
-        "After the town got a new station."
+        "When a new hotel opened",
+        "When a movie was made there",
+        "When the old train station closed",
+        "After the town got a new station"
       ],
       "answer": 3
     },
@@ -362,6 +362,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（overwhelming）原位換成翻譯題，沿用題 id b1-u07-l05-q17；目標字沿用 overwhelming",
         "resolution": "改為 translate：promptZh「我收到的電子郵件多到讓我招架不住。」、hintWords [\"overwhelming\"]、referenceEn [\"The number of emails I received was overwhelming.\",\"The amount of email I got was overwhelming.\"]、rubricZh [\"用 overwhelming 表示「難以招架的」（例如 was overwhelming）\",\"「…的數量」可寫，例如 the number of emails、the amount of email 等\"]（原 makeSentence：instructionZh「用 overwhelming 造一個句子，說說一件讓你覺得難以招架、或感受非常強烈的事。」、referenceEn [\"The amount of work this week is overwhelming for me.\",\"My first day in a new city was overwhelming.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

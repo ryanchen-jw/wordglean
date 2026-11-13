@@ -25,7 +25,7 @@
       "id": "b1-u33-l01-q02",
       "type": "wordCard",
       "word": "accountant",
-      "exampleEn": "Our accountant checks the company's money every month.",
+      "exampleEn": "Our accountant checks the company's accounts every month.",
       "exampleZh": "我們的會計師每個月檢查公司的帳目。",
       "glossZh": "會計師",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "我們有一個會計師的職缺，請在月底前寄來履歷。",
       "questionZh": "這家公司在找什麼人？",
       "options": [
-        "A cook for the company.",
-        "A driver for the manager.",
-        "A cleaner for the office.",
-        "An accountant for the company."
+        "A cook for the company",
+        "A driver for the manager",
+        "A cleaner for the office",
+        "An accountant for the company"
       ],
       "answer": 3
     },
@@ -235,7 +235,7 @@
       ],
       "referenceEn": [
         "That restaurant has a bad reputation because of its poor service.",
-        "The restaurant has a poor reputation for bad service."
+        "The restaurant has a reputation for bad service."
       ],
       "rubricZh": [
         "用 reputation 表示「名聲」（例如 a bad reputation）"
@@ -300,6 +300,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（reputation）原位換成翻譯題，沿用題 id b1-u33-l01-q17；目標字沿用 reputation",
         "resolution": "改為 translate：promptZh「那家餐廳因為服務差而名聲不好。」、hintWords [\"reputation\"]、referenceEn [\"That restaurant has a bad reputation because of its poor service.\",\"The restaurant has a poor reputation for bad service.\"]、rubricZh [\"用 reputation 表示「名聲」（例如 a bad reputation）\"]（原 makeSentence：instructionZh「用 reputation 造一個句子，說說你知道的某家店或某個人的名聲。」、referenceEn [\"The bakery near my home has a great reputation.\",\"My teacher has a reputation for being very fair.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

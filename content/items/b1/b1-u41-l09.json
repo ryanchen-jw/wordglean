@@ -112,10 +112,10 @@
       "audioZh": "戶外音樂會由於強風而取消了。",
       "questionZh": "音樂會為什麼取消了？",
       "options": [
-        "It was too cold outdoors.",
-        "Few tickets were sold.",
-        "It was too windy.",
-        "The stage broke."
+        "It was too cold outdoors",
+        "Few tickets were sold",
+        "It was too windy",
+        "The stage broke"
       ],
       "answer": 2
     },
@@ -384,6 +384,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（retell）原位換成翻譯題，沿用題 id b1-u41-l09-q16；目標字沿用 retell",
         "resolution": "改為 translate：promptZh「老師請學生用自己的話重述這個故事。」、hintWords [\"retell\"]、referenceEn [\"The teacher asked the students to retell the story in their own words.\",\"The teacher had the students retell the story in their own words.\"]、rubricZh [\"用 retell 表示「重述」\",\"「用自己的話」可寫，例如 in their own words 等\"]（原 makeSentence：instructionZh「用 retell 造一個句子，說說你會重述哪個故事給誰聽。」、referenceEn [\"I like to retell funny stories to my little brother.\",\"I retold the story of my favorite movie to my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

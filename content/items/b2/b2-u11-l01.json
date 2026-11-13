@@ -107,7 +107,7 @@
       "word": "mate",
       "exampleEn": "He went to watch the football match with his mates.",
       "exampleZh": "他和朋友們一起去看足球賽。",
-      "glossZh": "夥伴；朋友；配偶",
+      "glossZh": "夥伴；朋友；配偶；（英式：朋友義）",
       "distractorsZh": [
         "敵人",
         "老師",
@@ -187,7 +187,7 @@
     {
       "id": "b2-u11-l01-q15",
       "type": "reading",
-      "passageEn": "My grandparents' engagement lasted three years because they were saving for a house. After they married, my grandmother worked as a housekeeper for a rich family that still had several servants. When my mother was an infant, my grandparents also decided to adopt a little boy from a relative's family: my uncle Tom. Some neighbors were reluctant to accept the idea at first, but my grandparents raised both children with love. My uncle says his school mates never treated him differently. Today, many of my peers find it hard to believe that my grandparents never even considered divorce in sixty years.",
+      "passageEn": "My grandparents' engagement lasted three years because they were saving for a house. After they married, my grandmother worked as a housekeeper for a rich family that still had several servants. When my mother was an infant, my grandparents also decided to adopt a little boy from a relative's family: my uncle Tom. Some neighbors were reluctant to accept the idea at first, but my grandparents raised both children with love. My uncle says his mates at school never treated him differently. Today, many of my peers find it hard to believe that my grandparents never even considered divorce in sixty years.",
       "passageZh": "我祖父母訂婚了三年，因為他們在存錢買房子。婚後，祖母在一個仍然有好幾個僕人的有錢人家當管家。我媽媽還是嬰兒時，祖父母又決定收養一個親戚家的小男孩，也就是我的舅舅 Tom。有些鄰居起初不太能接受，但祖父母用愛撫養兩個孩子長大。舅舅說，學校的同學從來沒有用不同的眼光看他。如今，我很多同齡的朋友都很難相信，我祖父母結婚六十年來從沒想過要離婚。",
       "questions": [
         {
@@ -406,6 +406,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（peer）原位換成翻譯題，沿用題 id b2-u11-l01-q17；目標字沿用 peer",
         "resolution": "改為 translate：promptZh「在新公司，他很快就贏得了同事們的尊重。」、hintWords [\"peer\"]、referenceEn [\"At his new company, he quickly won the respect of his peers.\",\"He quickly earned his peers' respect at his new company.\"]、rubricZh [\"peer 指「同儕、同事」（例如 his peers、the respect of his peers 等）\",\"「贏得尊重」可寫，例如 won the respect of、earned … respect 等\",\"時態可用過去式或現在完成式（例如 won、has won 等）\"]（原 makeSentence：instructionZh「用 peer 造一個句子，說說你和同齡人或同事之間的比較或互動。」、referenceEn [\"Compared with my peers, I started working quite late.\",\"I often ask my peers at work for advice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

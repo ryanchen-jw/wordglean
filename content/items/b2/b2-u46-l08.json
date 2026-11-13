@@ -185,8 +185,8 @@
     {
       "id": "b2-u46-l08-q15",
       "type": "reading",
-      "passageEn": "Last weekend, our town held a history festival in the castle park. In the morning, actors dressed as soldiers from long ago rode horses and showed how people once fought with lances. Near the gate, children bombarded a guide with questions about the old guns. In the afternoon, the modern part of the show began: a team of paratroopers jumped from a plane and landed right in the middle of the park. It was quite a spectacle, and the crowd cheered loudly.",
-      "passageZh": "上週末，我們鎮在城堡公園舉辦了一場歷史節。早上，演員打扮成古代士兵騎著馬，示範以前的人怎麼用長矛作戰。大門旁，孩子們圍著導覽員，連番問起那些古老火炮的問題。下午，表演的現代部分登場：一隊傘兵從飛機上跳下，正好降落在公園中央。那場面十分壯觀，觀眾大聲歡呼。",
+      "passageEn": "Last weekend, our town held a history festival in the castle park. In the morning, actors dressed as soldiers from long ago rode horses and showed how people once fought with lances. Near the gate, children bombarded a guide with questions about the old guns on the castle walls. In the afternoon, the modern part of the show began: a team of paratroopers jumped from a plane and landed right in the middle of the park. It was quite a spectacle, and the crowd cheered loudly.",
+      "passageZh": "上週末，我們鎮在城堡公園舉辦了一場歷史節。早上，演員打扮成古代士兵騎著馬，示範以前的人怎麼用長矛作戰。大門旁，孩子們圍著導覽員，連番問起城牆上那些古老火炮的問題。下午，表演的現代部分登場：一隊傘兵從飛機上跳下，正好降落在公園中央。那場面十分壯觀，觀眾大聲歡呼。",
       "questions": [
         {
           "questionZh": "早上的表演內容是什麼？",
@@ -356,6 +356,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unjustly）原位換成翻譯題，沿用題 id b2-u46-l08-q17；目標字沿用 unjustly",
         "resolution": "改為 translate：promptZh「老師冤枉了他，以為窗戶是他打破的。」、hintWords [\"unjustly\"]、referenceEn [\"The teacher unjustly blamed him for breaking the window.\",\"The teacher blamed him unjustly for the broken window.\"]、rubricZh [\"unjustly 表示「不公正地、冤枉地」，可放動詞前或後（例如 unjustly blamed、blamed him unjustly 等）\",\"「以為窗戶是他打破的」可寫，例如 blamed him for breaking the window 等\"]（原 makeSentence：instructionZh「用 unjustly 造一個句子，說說某人被不公平對待的情況。」、referenceEn [\"I was unjustly blamed for breaking the window.\",\"The new worker was treated unjustly because he was young.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

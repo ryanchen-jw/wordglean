@@ -125,10 +125,10 @@
       "audioZh": "市區賽跑七點開始，所以跑者應該在六點半前到。",
       "questionZh": "跑者應該幾點前到？",
       "options": [
-        "By seven o'clock.",
-        "By half past seven.",
-        "No later than six thirty.",
-        "At six o'clock."
+        "By seven o'clock",
+        "By half past seven",
+        "No later than six thirty",
+        "At six o'clock"
       ],
       "answer": 2
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u23-l01-q15",
       "type": "reading",
-      "passageEn": "Every Saturday, our town holds a five-kilometer race in the park. Hundreds of runners take part, and many spectators come to cheer. My father is very athletic; he jogs every morning and goes to the gym twice a week. Last Saturday, he finally beat his best time. Next to the path, a lifeguard watches the lake. After the race, children play a short football game with a referee, and then there is a small outdoor concert.",
-      "passageZh": "每個星期六，我們鎮上都會在公園舉辦五公里賽跑。有好幾百名跑者參加，也有很多觀眾來加油。我爸爸很擅長運動，他每天早上慢跑，每週去健身房兩次。上星期六，他終於打破了自己的最佳成績。步道旁有一位救生員看守湖邊。賽跑結束後，孩子們會由一位裁判帶著踢一場短短的足球賽，接著還有一場小型戶外音樂會。",
+      "passageEn": "Every Saturday, our town holds a five-kilometer race in the park. Hundreds of runners take part, and many spectators come to cheer. My father is very athletic; he jogs every morning and goes to the gym twice a week. Last Saturday, he finally beat his best time. Next to the path, a lifeguard watches the swimmers in the lake. After the race, children play a short soccer game with a referee, and then there is a small outdoor concert.",
+      "passageZh": "每個星期六，我們鎮上都會在公園舉辦五公里賽跑。有好幾百名跑者參加，也有很多觀眾來加油。我爸爸很擅長運動，他每天早上慢跑，每週去健身房兩次。上星期六，他終於打破了自己的最佳成績。步道旁有一位救生員看守在湖裡游泳的人。賽跑結束後，孩子們會由一位裁判帶著踢一場短短的足球賽，接著還有一場小型戶外音樂會。",
       "questions": [
         {
           "questionZh": "爸爸上星期六怎麼了？",
@@ -386,6 +386,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（gym）原位換成翻譯題，沿用題 id b1-u23-l01-q17；目標字沿用 gym",
         "resolution": "改為 translate：promptZh「下雨的時候，我們就在學校的體育館裡運動。」、hintWords [\"gym\"]、referenceEn [\"When it rains, we exercise in the school gym.\",\"On rainy days, we do exercise in the school gym.\"]、rubricZh [\"用 gym 表示「體育館」（例如 the school gym）\",\"「運動」可寫，例如 exercise、do sports、play games 等\"]（原 makeSentence：instructionZh「用 gym 造一個句子，說說你去健身房的習慣或看法。」、referenceEn [\"I go to the gym after work on Mondays.\",\"I don't like the gym, so I exercise at home.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

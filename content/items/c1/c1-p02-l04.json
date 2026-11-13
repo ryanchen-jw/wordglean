@@ -53,8 +53,8 @@
       "id": "c1-p02-l04-q04",
       "type": "wordCard",
       "word": "wind down",
-      "exampleEn": "The company is slowly winding its overseas business down.",
-      "exampleZh": "這家公司正逐步結束海外的業務。",
+      "exampleEn": "The company's overseas business was losing money, so the owners slowly wound it down.",
+      "exampleZh": "這家公司的海外業務一直虧錢，所以老闆們逐步把它結束了。",
       "glossZh": "逐步結束；放鬆",
       "distractorsZh": [
         "加速",
@@ -130,7 +130,7 @@
     {
       "id": "c1-p02-l04-q11",
       "type": "shadowing",
-      "sentenceEn": "Mobile phones ushered in a new way of shopping.",
+      "sentenceEn": "Cell phones ushered in a new way of shopping.",
       "sentenceZh": "手機開創了一種新的購物方式。"
     },
     {
@@ -174,8 +174,8 @@
     {
       "id": "c1-p02-l04-q14",
       "type": "reading",
-      "passageEn": "For two years, a team of scientists at our university has been conducting research on how city noise affects birds. They recorded bird songs in quiet parks and next to busy roads all over the city. The data suggest that birds near traffic sing at a higher pitch. However, Professor Kao, the leader of the team, says the results are not yet strong enough to draw a conclusion. The project will wind down next spring, and after that the team plans to write its findings up for a well-known science journal.",
-      "passageZh": "兩年來，我們大學的一組科學家一直在研究城市噪音對鳥類的影響。他們在全市安靜的公園和車多的馬路旁錄下鳥叫聲。資料顯示，靠近車流的鳥叫聲音調比較高。不過，團隊的負責人高教授說，目前的結果還不足以下結論。這個計畫會在明年春天逐步結束，之後團隊打算把研究發現寫成報告，投稿到一份知名的科學期刊。",
+      "passageEn": "For two years, a team of scientists at our university has been conducting research on how city noise affects birds. They recorded bird songs in quiet parks and next to busy roads all over the city. The data suggest that birds near traffic sing at a higher pitch. However, Professor Kao, the leader of the team, says the results are not yet strong enough to draw a conclusion. The project will wind down next spring, and after that the team plans to collect its findings and write them up for a well-known science journal.",
+      "passageZh": "兩年來，我們大學的一組科學家一直在研究城市噪音對鳥類的影響。他們在全市安靜的公園和車多的馬路旁錄下鳥叫聲。資料顯示，靠近車流的鳥叫聲音調比較高。不過，團隊的負責人高教授說，目前的結果還不足以下結論。這個計畫會在明年春天逐步結束，之後團隊打算整理研究發現並寫成報告，投稿到一份知名的科學期刊。",
       "questions": [
         {
           "questionZh": "科學家在研究什麼？",
@@ -296,6 +296,36 @@
         "message": "執行長第③關裁示修正：FIX：沒有時間詞，時態要點收現在完成式（§12.11）；收不用片語的說法（裁示 1）",
         "resolution": "改前：[\"用片語表達「透露消息」，例如 tipped off the reporters 等；受詞可放在 off 的前面或後面\",\"時態可用過去式或過去完成式（例如 tipped off、had tipped off 等）\",\"「事先」可寫，例如 in advance、beforehand 等\"]；改後：[\"建議用片語表達「透露消息」（例如 tipped off the reporters 等）\",\"不用片語但意思正確也算對（例如 told、warned the reporters、leaked the news to the reporters 等）\",\"時態可用過去式、過去完成式或現在完成式（例如 tipped off、had tipped off、has tipped off 等）\",\"「事先」可寫，例如 in advance、beforehand 等\"]",
         "resolvedAt": "2026-10-06T00:34:56Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（片語補句（代名詞拆開））、exampleZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

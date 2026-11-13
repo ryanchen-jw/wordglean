@@ -144,7 +144,7 @@
       "id": "a1-u01-l02-q12",
       "type": "shadowing",
       "sentenceEn": "I go to school with my sister.",
-      "sentenceZh": "我和妹妹一起去上學。"
+      "sentenceZh": "我和我的姊妹一起去上學。"
     },
     {
       "id": "a1-u01-l02-q13",
@@ -187,8 +187,8 @@
     {
       "id": "a1-u01-l02-q15",
       "type": "reading",
-      "passageEn": "Amy has a new friend. His name is Leo. He lives near her house. On Saturday, Amy goes to the park with Leo. They play with a ball. Then they eat ice cream. Amy says, \"It is a good day for me.\"",
-      "passageZh": "Amy 有一個新朋友，他的名字叫 Leo。他住在她家附近。星期六，Amy 和 Leo 一起去公園。他們玩球，然後吃冰淇淋。Amy 說：「今天對我來說是很棒的一天。」",
+      "passageEn": "Amy has a new friend. His name is Leo. He lives near her house. On Saturday, Amy goes to the park with Leo. They play with a ball. Then they eat ice cream. Amy says, \"Today is a great day!\"",
+      "passageZh": "Amy 有一個新朋友，他的名字叫 Leo。他住在她家附近。星期六，Amy 和 Leo 一起去公園。他們玩球，然後吃冰淇淋。Amy 說：「今天真是很棒的一天！」",
       "questions": [
         {
           "questionZh": "Leo 住在哪裡？",
@@ -357,6 +357,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（with）原位換成翻譯題，沿用題 id a1-u01-l02-q17；目標字沿用 with",
         "resolution": "改為 translate：promptZh「她和她媽媽住在一起。」、hintWords [\"with\"]、referenceEn [\"She lives with her mother.\",\"She lives with her mom.\"]、rubricZh [\"「和⋯住在一起」可寫，例如 lives with her mother、lives with her mom 等\",\"主詞是「她」，動詞配合主詞（例如 lives）\"]（原 makeSentence：instructionZh「用 with 造一個句子，說說你常和誰一起做某件事。」、referenceEn [\"I eat dinner with my family.\",\"I walk to school with my friend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

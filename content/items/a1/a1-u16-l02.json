@@ -128,9 +128,9 @@
       "audioZh": "我們去圖書館讀書吧，那裡有很多歷史書。",
       "questionZh": "說話者為什麼想去圖書館讀書？",
       "options": [
-        "It has free coffee.",
-        "It is near home.",
-        "It has many history books."
+        "It has free coffee",
+        "It is near home",
+        "It has many history books"
       ],
       "answer": 2
     },
@@ -339,6 +339,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（read）原位換成翻譯題，沿用題 id a1-u16-l02-q17；目標字沿用 read",
         "resolution": "改為 translate：promptZh「我女兒喜歡在睡前讀故事。」、hintWords [\"read\"]、referenceEn [\"My daughter likes to read stories before bed.\",\"My daughter likes reading stories before bed.\"]、rubricZh [\"like 後面接 to＋原形或動名詞（例如 likes to read、likes reading）\",\"「睡前」可寫，例如 before bed、before she goes to bed 等\"]（原 makeSentence：instructionZh「用 read 造一個句子，說說你喜歡讀什麼或什麼時候讀。」、referenceEn [\"I read the news on my phone every morning.\",\"I like to read books before bed.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

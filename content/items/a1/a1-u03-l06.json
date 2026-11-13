@@ -190,7 +190,7 @@
       "id": "a1-u03-l06-q15",
       "type": "reading",
       "passageEn": "It is winter now, and this weekend is cold. On Saturday afternoon, Jenny goes to a movie with her sister. The movie starts at a quarter past two. In the evening, they eat hot soup at home. Tomorrow is Sunday, and they will visit their aunt.",
-      "passageZh": "現在是冬天，這個週末很冷。星期六下午，Jenny 和她妹妹去看電影，電影兩點十五分開始。晚上她們在家喝熱湯。明天是星期天，她們要去看阿姨。",
+      "passageZh": "現在是冬天，這個週末很冷。星期六下午，Jenny 和她的姊妹去看電影，電影兩點十五分開始。晚上她們在家喝熱湯。明天是星期天，她們要去看阿姨。",
       "questions": [
         {
           "questionZh": "電影幾點開始？",
@@ -430,6 +430,12 @@
         "message": "執行長裁示：第③關：FIX 題目「要」可讀成 want 或 will（§12.8），改「會」",
         "resolution": "改為 promptZh「這個週末我會打掃房子。」（原「這個週末我要打掃房子。」）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "如果房卡不能用了，請通知櫃台。",
       "questionZh": "房卡不能用時要怎麼做？",
       "options": [
-        "Call the manager's office at once.",
-        "Let the front desk know.",
-        "Wait until the next morning.",
-        "Stop using the room."
+        "Call the manager's office at once",
+        "Let the front desk know",
+        "Wait until the next morning",
+        "Stop using the room"
       ],
       "answer": 1
     },
@@ -337,6 +337,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ad）原位換成翻譯題，沿用題 id b1-u30-l03-q17；目標字沿用 ad",
         "resolution": "改為 translate：promptZh「我在報紙上登了一則廣告，想賣掉我的舊車。」、hintWords [\"ad\"]、referenceEn [\"I put an ad in the newspaper to sell my old car.\",\"I placed an ad in the paper because I want to sell my old car.\"]、rubricZh [\"用 ad 表示「廣告」（寫 advertisement 也正確）\",\"「登了」可寫，例如 put、placed 等\"]（原 makeSentence：instructionZh「用 ad 造一個句子，說說你看過的一則廣告。」、referenceEn [\"I saw an ad for a new game on TV.\",\"I remember an old ad with a talking dog.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

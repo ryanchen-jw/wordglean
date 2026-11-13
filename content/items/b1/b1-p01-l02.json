@@ -111,8 +111,8 @@
       "id": "b1-p01-l02-q09",
       "type": "listenChoice",
       "audioEn": "It took my brother months to get over losing the final game.",
-      "audioZh": "我哥哥花了好幾個月才走出輸掉決賽的心情。",
-      "questionZh": "說話的人的哥哥怎麼了？",
+      "audioZh": "我的兄弟花了好幾個月才走出輸掉決賽的心情。",
+      "questionZh": "說話的人的兄弟怎麼了？",
       "options": [
         "He won the final easily",
         "He quit the team the next week",
@@ -173,7 +173,7 @@
     {
       "id": "b1-p01-l02-q14",
       "type": "reading",
-      "passageEn": "Mia was nervous on her first day at her new school, but she soon got along with her classmates. In science class, the teacher handed out a list of topics for a group report. Mia's group could not agree. Two boys wanted to write about the sea, but Mia wanted to write about birds. After a long talk, Mia gave in and said, \"Fine, let's go ahead with the sea.\" The report caused some stress, but the group got an A. Finally, Mia got over her worry about the new school.",
+      "passageEn": "Mia was nervous on her first day at her new school, but she soon got along with her classmates. In science class, the teacher handed out a list of topics for a group report. Mia's group could not agree. Two boys wanted to write about the sea, but Mia wanted to write about birds. After a long talk, Mia gave in and said, \"Fine, let's go ahead and write about the sea.\" The report caused some stress, but the group got an A. Finally, Mia got over her worry about the new school.",
       "passageZh": "Mia 第一天到新學校時很緊張，但她很快就和同學處得很好。自然課時，老師發下一份小組報告的主題清單。Mia 那組意見不合。兩個男生想寫海洋，但 Mia 想寫鳥類。討論了很久之後，Mia 讓步了，說：「好吧，我們就開始寫海洋吧。」這份報告帶來一些壓力，但小組拿到了 A。最後，Mia 不再擔心新學校的事了。",
       "questions": [
         {
@@ -382,6 +382,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 5 題位（b1-p01-l02-q09、b1-p01-l02-q12、b1-p01-l02-q13、b1-p01-l02-q14#0、b1-p01-l02-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

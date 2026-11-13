@@ -129,10 +129,10 @@
       "audioZh": "我問他準備好了沒，他點頭回答。",
       "questionZh": "他怎麼回答？",
       "options": [
-        "He said he wasn't ready.",
-        "He said no.",
-        "He nodded his head.",
-        "He shook his head."
+        "He said he wasn't ready",
+        "He said no",
+        "He nodded his head",
+        "He shook his head"
       ],
       "answer": 2
     },
@@ -408,6 +408,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（adopt）原位換成翻譯題，沿用題 id b1-u03-l08-q17；目標字沿用 adopt",
         "resolution": "改為 translate：promptZh「那個男孩是在三歲時被收養的。」、hintWords [\"adopt\"]、referenceEn [\"The boy was adopted when he was three.\",\"That boy was adopted at the age of three.\"]、rubricZh [\"用 adopt 表示「收養」，這裡用被動（例如 was adopted）\",\"「三歲時」可寫，例如 when he was three、at the age of three、at three 等\"]（原 makeSentence：instructionZh「用 adopt 造一個句子，說說你想採用的新習慣或方法，或想收養的動物。」、referenceEn [\"I want to adopt a healthier way of eating.\",\"I hope to adopt a dog next year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

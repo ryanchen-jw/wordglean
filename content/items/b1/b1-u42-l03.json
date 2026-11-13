@@ -125,10 +125,10 @@
       "audioZh": "下雨會讓我們的野餐計畫變複雜，所以我們在家吃吧。",
       "questionZh": "說話者建議怎麼做？",
       "options": [
-        "Have the picnic in the rain.",
-        "Eat indoors instead.",
-        "Wait until noon.",
-        "Buy umbrellas."
+        "Have the picnic in the rain",
+        "Eat indoors instead",
+        "Wait until noon",
+        "Buy umbrellas"
       ],
       "answer": 1
     },
@@ -141,7 +141,7 @@
     {
       "id": "b1-u42-l03-q12",
       "type": "shadowing",
-      "sentenceEn": "The thief was notorious in the whole city.",
+      "sentenceEn": "The thief was notorious all over the city.",
       "sentenceZh": "那個小偷在全城惡名昭彰。"
     },
     {
@@ -185,7 +185,7 @@
     {
       "id": "b1-u42-l03-q15",
       "type": "reading",
-      "passageEn": "Last summer, I visited a cave where early humans lived thousands of years ago. The walls were covered with vivid paintings of animals. Our guide explained that the people used primitive tools; to us, the tools look useless, but they were very important then. Inside the cave, there was a peculiar smell, like old wet stone. We also saw the bones of an extinct animal. The path inside went in an upward direction, so walking was hard. One part of the cave is notorious for its many bats. The guide said that leaving the path would complicate the tour, because people could get lost. At the end, a group of children sang beautifully at the entrance of the cave.",
+      "passageEn": "Last summer, I visited a cave where early humans lived thousands of years ago. The walls were covered with vivid paintings of animals. Our guide explained that the people used primitive tools; to us, the tools look useless, but they were very important then. Inside the cave, there was a peculiar smell, like old wet stone. We also saw the bones of an extinct animal. The path inside went upward, so walking was hard. One part of the cave is notorious for its many bats. The guide said that leaving the path would complicate the tour, because people could get lost. At the end of the tour, a group of children sang beautifully at the entrance of the cave.",
       "passageZh": "去年夏天，我參觀了一個幾千年前早期人類住過的洞穴。牆上布滿了鮮明的動物壁畫。導覽員解釋說，那些人使用原始的工具；在我們看來，那些工具好像沒什麼用，但在當時非常重要。洞穴裡有一股奇怪的味道，像是潮濕的老石頭。我們還看到一種已經絕種的動物的骨頭。裡面的小路一路往上，所以很難走。洞穴的某一區因為蝙蝠很多而惡名昭彰。導覽員說，離開步道會讓參觀變複雜，因為有人可能會迷路。最後，一群孩子在洞口唱歌，唱得很美。",
       "questions": [
         {
@@ -390,6 +390,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（useless）原位換成翻譯題，沿用題 id b1-u42-l03-q17；目標字沿用 useless",
         "resolution": "改為 translate：promptZh「抱怨是沒有用的，我們得想辦法解決。」、hintWords [\"useless\"]、referenceEn [\"It is useless to complain; we need to find a solution.\",\"Complaining is useless. We have to find a way to fix it.\"]、rubricZh [\"用 useless 表示「沒有用的」（例如 It is useless to…、Complaining is useless 等）\"]（原 makeSentence：instructionZh「用 useless 造一個句子，說說一樣你覺得沒用的東西。」、referenceEn [\"My old phone is useless because it doesn't turn on.\",\"I think this umbrella is useless; it has a big hole.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -127,9 +127,9 @@
       "audioZh": "銀行大排長龍，我晚點再來。",
       "questionZh": "說話者為什麼要晚點再來？",
       "options": [
-        "The bank is closed.",
-        "The line is long.",
-        "It is late."
+        "The bank is closed",
+        "The line is long",
+        "It is late"
       ],
       "answer": 1
     },
@@ -137,7 +137,7 @@
       "id": "a1-u05-l03-q11",
       "type": "shadowing",
       "sentenceEn": "My brother has a little white cat.",
-      "sentenceZh": "我哥哥有一隻小白貓。"
+      "sentenceZh": "我的兄弟有一隻小白貓。"
     },
     {
       "id": "a1-u05-l03-q12",
@@ -467,6 +467,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（important）原位換成翻譯題，沿用題 id a1-u05-l03-q17；目標字沿用 important",
         "resolution": "改為 translate：promptZh「明天有一場重要的考試。」、hintWords [\"important\"]、referenceEn [\"There is an important test tomorrow.\",\"We have an important test tomorrow.\"]、rubricZh [\"important 放在名詞前（例如 an important test）；important 前面用 an\",\"可寫，例如 There is an important test…、We have an important test… 等；寫 exam 也正確\"]（原 makeSentence：instructionZh「用 important 造一個句子，說說對你很重要的一件事或一個人。」、referenceEn [\"My family is very important to me.\",\"My job is important to me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

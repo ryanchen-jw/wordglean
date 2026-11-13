@@ -64,7 +64,7 @@
       "id": "b2-u41-l01-q05",
       "type": "wordCard",
       "word": "withdraw",
-      "exampleEn": "Two players withdrew from the race because of the heat.",
+      "exampleEn": "Two runners withdrew from the race because of the heat.",
       "exampleZh": "兩名選手因為天氣太熱退出了比賽。",
       "glossZh": "退出；撤回；提（款）",
       "distractorsZh": [
@@ -185,7 +185,7 @@
     {
       "id": "b2-u41-l01-q15",
       "type": "reading",
-      "passageEn": "My great-grandmother founded a small wool shop in our town in 1950. In the back room, she used to spin wool by hand on an old wooden wheel. Today my aunt runs the shop. Last winter, sales were falling, so she decided to alter the way the shop works. She started online classes that teach people how to knit, and the classes soon yielded more money than the shop itself. A small machine in the shop also detects when the air is too wet for the wool. My aunt still rubs her hands together before every class, a habit she learned from her grandmother.",
+      "passageEn": "My great-grandmother founded a small wool shop in our town in 1950. In the back room, she used to spin wool by hand on an old wooden wheel. Today my aunt runs the shop. Last winter, sales were falling, so she decided to alter the way the shop works. She started online classes that teach people how to knit, and the classes soon yielded more money than the shop itself. A small machine in the shop also detects when the air is too damp for the wool. My aunt still rubs her hands together before every class, a habit she learned from her grandmother.",
       "passageZh": "我的曾祖母在 1950 年於鎮上開了一家小毛線店。在後面的房間裡，她以前會用一台舊木輪手工紡羊毛。現在這家店由我阿姨經營。去年冬天銷售量下滑，所以她決定改變店的經營方式。她開了教人編織的線上課程，這些課很快就賺得比店面本身還多。店裡還有一台小機器，能偵測空氣對毛線來說是不是太潮濕。阿姨每次上課前仍會搓搓雙手，這是她從奶奶那裡學來的習慣。",
       "questions": [
         {
@@ -272,6 +272,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rub）原位換成翻譯題，沿用題 id b2-u41-l01-q17；目標字沿用 rub",
         "resolution": "改為 translate：promptZh「他累的時候常常揉眼睛。」、hintWords [\"rub\"]、referenceEn [\"He often rubs his eyes when he is tired.\",\"When he feels tired, he often rubs his eyes.\"]、rubricZh [\"rub 指「揉」（例如 rubs his eyes 等）；主詞是 he，動詞配合主詞\",\"often 位置不扣分；when 子句可放句首或句尾\"]（原 makeSentence：instructionZh「用 rub 造一個句子，說說你什麼時候會揉或搓身體的某個部位。」、referenceEn [\"I rub my eyes when I feel sleepy at work.\",\"I rub my hands together on cold mornings.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

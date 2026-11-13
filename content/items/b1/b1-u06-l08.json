@@ -124,14 +124,14 @@
     {
       "id": "b1-u06-l08-q10",
       "type": "listenChoice",
-      "audioEn": "The meeting room is busy, so the alternative is to meet in the cafe.",
+      "audioEn": "The meeting room is being used, so the alternative is to meet in the cafe.",
       "audioZh": "會議室有人在用，所以另一個選擇是在咖啡店碰面。",
       "questionZh": "他們可能會在哪裡開會？",
       "options": [
-        "In the cafe.",
-        "In the meeting room.",
-        "At the hotel.",
-        "Online at home."
+        "In the cafe",
+        "In the meeting room",
+        "At the hotel",
+        "Online at home"
       ],
       "answer": 0
     },
@@ -365,6 +365,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（convince）原位換成翻譯題，沿用題 id b1-u06-l08-q17；目標字沿用 convince",
         "resolution": "改為 translate：promptZh「我們沒辦法說服她留下來。」、hintWords [\"convince\"]、referenceEn [\"We couldn't convince her to stay.\",\"We were not able to convince her to stay.\"]、rubricZh [\"用 convince＋人＋to＋原形動詞表示「說服某人做某事」（寫 persuade 也正確）\",\"「沒辦法」可寫，例如 couldn't、weren't able to 等\"]（原 makeSentence：instructionZh「用 convince 造一個句子，說說你曾經說服某人做某件事。」、referenceEn [\"I convinced my brother to try Japanese food.\",\"I finally convinced my mother to buy a new phone.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -124,7 +124,7 @@
     {
       "id": "c1-u25-l02-q11",
       "type": "mcq",
-      "stemEn": "The company's ____ helped pay for the new football stadium.",
+      "stemEn": "The company's ____ helped pay for the new soccer stadium.",
       "stemZh": "這家公司的贊助幫忙支付了新足球場的費用。",
       "options": [
         "pinnacle",
@@ -266,6 +266,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（collaborator）原位換成翻譯題，沿用題 id c1-u25-l02-q15；目標字沿用 collaborator",
         "resolution": "改為 translate：promptZh「這位導演和她多年的合作夥伴一起拍了這部紀錄片。」、hintWords [\"collaborator\"]、referenceEn [\"The director made this documentary together with her collaborator of many years.\",\"The director and her long-term collaborator made this documentary together.\"]、rubricZh [\"「合作夥伴」用 collaborator（例如 her long-term collaborator 等）\",\"「拍了」可寫，例如 made、filmed 等\"]（原 makeSentence：instructionZh「用 collaborator 造一個句子，說說你曾經和誰一起完成一件事。」、referenceEn [\"Amy and I were collaborators on a school play.\",\"My cousin was my collaborator when we made a short film.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

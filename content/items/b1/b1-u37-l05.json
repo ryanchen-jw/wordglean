@@ -125,10 +125,10 @@
       "audioZh": "我好羞愧，又忘了我最好朋友的生日。",
       "questionZh": "說話者為什麼覺得羞愧？",
       "options": [
-        "Broke a friend's phone.",
-        "Didn't remember a friend's birthday.",
-        "Forgot a friend's name.",
-        "Was late for a birthday party."
+        "Broke a friend's phone",
+        "Didn't remember a friend's birthday",
+        "Forgot a friend's name",
+        "Was late for a birthday party"
       ],
       "answer": 1
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u37-l05-q15",
       "type": "reading",
-      "passageEn": "Last summer, my family visited a magnificent old castle. My uncle, who is a big tease, told my little cousin that a ghost lived there. My cousin believed him and was scared. He started to cry, and the other visitors looked at us. My uncle felt ashamed, said sorry, and admitted the story was nonsense. Later, the guide told us the true story of the castle: long ago, a young prince lived there, and when his plan to build a great bridge failed, he fell into despair. The guide said there was still a feeling of sadness in the rooms. We felt fortunate that we could visit such a beautiful place. At the end, my cousin laughed wildly when my uncle slipped on the wet floor.",
+      "passageEn": "Last summer, my family visited a magnificent old castle. My uncle, who is a big tease, told my little cousin that a ghost lived there. My cousin believed him and was scared. He started to cry, and the other visitors looked at us. My uncle felt ashamed, said sorry, and admitted the story was nonsense. Later, the guide told us the true story of the castle: long ago, a young prince lived there, and when his plan to build a great bridge failed, he fell into despair. The guide said there was still a feeling of sadness in the rooms. We felt fortunate that we could visit such a beautiful place. At the end of our visit, my cousin laughed wildly when my uncle slipped on the wet floor.",
       "passageZh": "去年夏天，我們全家參觀了一座壯麗的古堡。我叔叔很愛捉弄人，他告訴我的小表弟那裡住著一個鬼。表弟信以為真，嚇壞了，哭了起來，其他遊客都看著我們。叔叔覺得很羞愧，向他道歉，承認那個故事是胡說的。後來，導覽員告訴我們城堡的真實故事：很久以前，一位年輕的王子住在那裡，他建造一座大橋的計畫失敗後，就陷入了絕望。導覽員說，房間裡至今還有一股悲傷的氣氛。我們覺得很幸運，能參觀這麼美的地方。最後，叔叔在濕地板上滑了一跤，表弟笑得好瘋狂。",
       "questions": [
         {
@@ -396,6 +396,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fortunate）原位換成翻譯題，沿用題 id b1-u37-l05-q17；目標字沿用 fortunate",
         "resolution": "改為 translate：promptZh「我們很幸運，那天天氣很好。」、hintWords [\"fortunate\"]、referenceEn [\"We were fortunate that the weather was good that day.\",\"We were fortunate to have good weather that day.\"]、rubricZh [\"用 fortunate 表示「幸運的」（例如 were fortunate to…、were fortunate that… 等）\"]（原 makeSentence：instructionZh「用 fortunate 造一個句子，說說一件讓你覺得很幸運的事。」、referenceEn [\"I am fortunate to have kind parents.\",\"I was fortunate to find my lost wallet.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

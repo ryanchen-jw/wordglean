@@ -125,10 +125,10 @@
       "audioZh": "上車前，請把這張卡片綁在你的包包上。",
       "questionZh": "上車前要做什麼？",
       "options": [
-        "Show the card to the driver.",
-        "Turn off your phone.",
-        "Put the card on your bag.",
-        "Wash your hands."
+        "Show the card to the driver",
+        "Turn off your phone",
+        "Put the card on your bag",
+        "Wash your hands"
       ],
       "answer": 2
     },
@@ -403,6 +403,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（objective）原位換成翻譯題，沿用題 id b1-u34-l04-q17；目標字沿用 objective",
         "resolution": "改為 translate：promptZh「這門課的主要目標是提升學生的口說能力。」、hintWords [\"objective\"]、referenceEn [\"The main objective of this course is to improve students' speaking skills.\",\"This course's main objective is to help students speak better.\"]、rubricZh [\"用 objective 表示「目標」（例如 the main objective of…）\",\"「提升口說能力」可寫，例如 improve speaking skills、help students speak better 等\"]（原 makeSentence：instructionZh「用 objective 造一個句子，說說你今年的一個目標。」、referenceEn [\"My objective this year is to read more books.\",\"One objective of mine is to get better at swimming.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

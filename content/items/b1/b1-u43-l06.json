@@ -125,10 +125,10 @@
       "audioZh": "我出門時需要一個值得信賴的人幫我保管家裡的鑰匙。",
       "questionZh": "說話者需要什麼樣的人？",
       "options": [
-        "Someone who can cook dinner.",
-        "Someone who lives far away.",
-        "A person who loves dogs.",
-        "Someone to trust."
+        "Someone who can cook dinner",
+        "Someone who lives far away",
+        "A person who loves dogs",
+        "Someone to trust"
       ],
       "answer": 3
     },
@@ -141,8 +141,8 @@
     {
       "id": "b1-u43-l06-q12",
       "type": "shadowing",
-      "sentenceEn": "I couldn't move from fright.",
-      "sentenceZh": "我嚇得動彈不得。"
+      "sentenceEn": "The loud noise gave me a fright.",
+      "sentenceZh": "那聲巨響把我嚇了一跳。"
     },
     {
       "id": "b1-u43-l06-q13",
@@ -185,8 +185,8 @@
     {
       "id": "b1-u43-l06-q15",
       "type": "reading",
-      "passageEn": "Last month, my family decided to adopt a puppy. On the way to the animal shelter, my little brother talked excitedly in the car. The staff said they only give pets to trustworthy families, so they asked us many questions. We didn't want to make a hasty choice, so we looked at every dog. Then we saw an adorable brown puppy. When my brother tried to touch it, it jumped up and gave him a fright! But they soon became friends. When we went outside, the dazzle of the sun made the puppy close its eyes. My brother's eagerness to take care of the puppy surprised my parents. Dogs are faithful animals, and now the puppy sits quietly next to my mom when she meditates.",
-      "passageZh": "上個月，我們家決定領養一隻小狗。去動物收容所的路上，我弟弟在車上興奮地說個不停。工作人員說他們只把寵物交給值得信賴的家庭，所以問了我們很多問題。我們不想做草率的決定，所以把每隻狗都看了一遍。接著我們看到一隻好可愛的棕色小狗。弟弟想摸牠時，牠突然跳起來，把弟弟嚇了一跳！但他們很快就成了朋友。我們走到外面時，耀眼的陽光讓小狗閉上了眼睛。弟弟照顧小狗的熱切讓爸媽很驚訝。狗是忠誠的動物，現在媽媽冥想時，小狗都會安靜地坐在她身邊。",
+      "passageEn": "Last month, my family decided to adopt a puppy. On the way to the animal shelter, my little brother talked excitedly in the car. The staff said they only give pets to trustworthy families, so they asked us many questions. We didn't want to make a hasty choice, so we looked at every dog. Then we saw an adorable brown puppy. When my brother tried to touch it, it jumped up and gave him a fright! But they soon became friends. When we went outside, the dazzle of the sun made the puppy close its eyes. My brother's eagerness to take care of the puppy surprised my parents. Now the puppy is a faithful friend, and it sits quietly next to my mom when she meditates.",
+      "passageZh": "上個月，我們家決定領養一隻小狗。去動物收容所的路上，我弟弟在車上興奮地說個不停。工作人員說他們只把寵物交給值得信賴的家庭，所以問了我們很多問題。我們不想做草率的決定，所以把每隻狗都看了一遍。接著我們看到一隻好可愛的棕色小狗。弟弟想摸牠時，牠突然跳起來，把弟弟嚇了一跳！但他們很快就成了朋友。我們走到外面時，耀眼的陽光讓小狗閉上了眼睛。弟弟照顧小狗的熱切讓爸媽很驚訝。現在小狗是忠實的好朋友，媽媽冥想時，牠都會安靜地坐在她身邊。",
       "questions": [
         {
           "questionZh": "工作人員為什麼問他們很多問題？",
@@ -456,6 +456,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（meditate）原位換成翻譯題，沿用題 id b1-u43-l06-q17；目標字沿用 meditate",
         "resolution": "改為 translate：promptZh「我姊姊每天早上冥想十分鐘。」、hintWords [\"meditate\"]、referenceEn [\"My sister meditates for ten minutes every morning.\",\"Every morning, my older sister meditates for ten minutes.\"]、rubricZh [\"用 meditate 表示「冥想」\"]（原 makeSentence：instructionZh「用 meditate 造一個句子，說說你或家人讓心情平靜的方法。」、referenceEn [\"My dad meditates when he feels stressed.\",\"I sometimes meditate before I go to sleep.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -129,7 +129,7 @@
       "options": [
         "Visit relatives",
         "Go camping",
-        "Play football",
+        "Play soccer",
         "Go fishing together"
       ],
       "answer": 3
@@ -448,6 +448,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（caring）原位換成翻譯題，沿用題 id b2-u11-l04-q17；目標字沿用 caring",
         "resolution": "改為 translate：promptZh「我的主管很體貼，總是記得我們每個人的生日。」、hintWords [\"caring\"]、referenceEn [\"My manager is very caring and always remembers everyone's birthday.\",\"My boss is a caring person who always remembers our birthdays.\"]、rubricZh [\"caring 是形容詞，表示「體貼的、有愛心的」（例如 is very caring、a caring person 等）\",\"「記得每個人的生日」可寫，例如 remembers everyone's birthday、remembers our birthdays 等\",\"always 位置不扣分；主詞代名詞用 he 或 she 都可以\"]（原 makeSentence：instructionZh「用 caring 造一個句子，描述你身邊一位很有愛心或很體貼的人。」、referenceEn [\"My grandmother is the most caring person I know.\",\"I have a caring manager who always asks how I am doing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

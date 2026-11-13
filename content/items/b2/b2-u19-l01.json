@@ -185,11 +185,11 @@
     {
       "id": "b2-u19-l01-q15",
       "type": "reading",
-      "passageEn": "My sister is studying in the language faculty at a university abroad. Her tuition is high, so she also works part-time as a translator for a small travel company. Last week, she attended a seminar on the history of translation, where a professor showed old correspondence between writers in different countries. The professor instructed the students to translate one letter for homework. My sister says the work is challenging but rewarding. On weekends, she relaxes by running a circuit around the campus lake to train for her first marathon, and she often sends us photos of the lake at sunset.",
-      "passageZh": "我姊姊在國外一所大學的語言學院念書。她的學費很高，所以她也在一家小旅行社兼職當譯者。上週，她參加了一場關於翻譯歷史的研討會，一位教授展示了不同國家作家之間的往來信件。教授指示學生把其中一封信翻譯出來當作業。姊姊說這份工作很有挑戰性，但很有收穫。週末，她會繞著校園湖跑一圈來放鬆，順便為她的第一場馬拉松做準備，也常寄給我們湖上夕陽的照片。",
+      "passageEn": "My sister is studying in the faculty of languages at a university abroad. Her tuition is high, so she also works part-time as a translator for a small travel company. Last week, she attended a seminar on the history of translation, where a professor showed old correspondence between writers in different countries. The professor instructed the students to translate one letter for homework. My sister says the work is challenging but rewarding. On weekends, she relaxes by running a circuit around the campus lake to train for her first marathon, and she often sends us photos of the lake at sunset.",
+      "passageZh": "我的姊妹在國外一所大學的語言學院念書。她的學費很高，所以她也在一家小旅行社兼職當譯者。上週，她參加了一場關於翻譯歷史的研討會，一位教授展示了不同國家作家之間的往來信件。教授指示學生把其中一封信翻譯出來當作業。我的姊妹說這份工作很有挑戰性，但很有收穫。週末，她會繞著校園湖跑一圈來放鬆，順便為她的第一場馬拉松做準備，也常寄給我們湖上夕陽的照片。",
       "questions": [
         {
-          "questionZh": "姊姊為什麼要兼職當譯者？",
+          "questionZh": "作者的姊妹為什麼要兼職當譯者？",
           "options": [
             "因為學費很高",
             "因為教授要求她做",
@@ -218,11 +218,11 @@
         "correspondence"
       ],
       "referenceEn": [
-        "We kept up correspondence with that company for several years.",
+        "We kept up a correspondence with that company for several years.",
         "We were in correspondence with the company for years."
       ],
       "rubricZh": [
-        "correspondence 指通信（例如 keep up correspondence with、be in correspondence with）",
+        "correspondence 指通信（例如 keep up a correspondence with、be in correspondence with）",
         "時態合理即可（例如 kept、have kept）"
       ]
     },
@@ -338,6 +338,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tuition）原位換成翻譯題，沿用題 id b2-u19-l01-q17；目標字沿用 tuition",
         "resolution": "改為 translate：promptZh「這所大學明年會調漲學費。」、hintWords [\"tuition\"]、referenceEn [\"The university will raise its tuition next year.\",\"This university is going to increase tuition next year.\"]、rubricZh [\"tuition 指學費（例如 raise its tuition、tuition fees 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）\",\"「調漲」可寫，例如 raise、increase、put up 等\"]（原 makeSentence：instructionZh「用 tuition 造一個句子，說說你上過的課或學費的情況（事實描述即可）。」、referenceEn [\"I paid my own tuition for a short cooking course last year.\",\"My parents helped me with my university tuition.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、rubricZh[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

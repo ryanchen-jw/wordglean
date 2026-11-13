@@ -51,8 +51,8 @@
       "id": "b1-u20-l03-q04",
       "type": "wordCard",
       "word": "symptom",
-      "exampleEn": "Every illness has different symptoms.",
-      "exampleZh": "每種疾病有不同的症狀。",
+      "exampleEn": "Different illnesses have different symptoms.",
+      "exampleZh": "不同的疾病有不同的症狀。",
       "glossZh": "症狀",
       "distractorsZh": [
         "原因",
@@ -125,10 +125,10 @@
       "audioZh": "我們的孕婦游泳課星期一十點開始。",
       "questionZh": "孕婦游泳課什麼時候開始？",
       "options": [
-        "Ten o'clock on Monday.",
-        "Monday at two.",
-        "Tuesday at ten.",
-        "Friday afternoon."
+        "Ten o'clock on Monday",
+        "Monday at two",
+        "Tuesday at ten",
+        "Friday afternoon"
       ],
       "answer": 0
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u20-l03-q15",
       "type": "reading",
-      "passageEn": "My grandfather is eighty, and he is very active. Last year, he had surgery on his hip after a fall. The first symptom was a pain when he walked. Now he does exercises to keep his muscles strong. His hearing is not very good, so we speak loudly to him. The doctor says his good health is partly in his genes. This spring, my aunt is pregnant, and Grandpa can't wait to meet the baby. The baby will be born this summer in another city, and Grandpa has already packed his luggage for the trip.",
-      "passageZh": "我爺爺八十歲了，而且很活躍。去年他跌倒後動了髖部手術。最早的症狀是走路會痛。現在他做運動讓肌肉保持強壯。他的聽力不太好，所以我們跟他說話很大聲。醫生說他身體好，一部分是來自基因。今年春天，我阿姨懷孕了，爺爺等不及要見寶寶。寶寶會在今年夏天於另一個城市出生，爺爺已經為這趟旅程把行李打包好了。",
+      "passageEn": "My grandfather is eighty, and he is very active. Last year, he had surgery on his hip after a fall. The first symptom was a pain when he walked. Now he does exercises to keep his muscles strong. His hearing is not very good, so we speak loudly to him. The doctor says his good health is partly in his genes. My aunt is pregnant, and Grandpa can't wait to meet the baby. The baby will be born this summer in another city, and Grandpa has already packed his luggage for the trip.",
+      "passageZh": "我爺爺八十歲了，而且很活躍。去年他跌倒後動了髖部手術。最早的症狀是走路會痛。現在他做運動讓肌肉保持強壯。他的聽力不太好，所以我們跟他說話很大聲。醫生說他身體好，一部分是來自基因。我阿姨懷孕了，爺爺等不及要見寶寶。寶寶會在今年夏天於另一個城市出生，爺爺已經為這趟旅程把行李打包好了。",
       "questions": [
         {
           "questionZh": "爺爺去年為什麼動手術？",
@@ -343,6 +343,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（muscle）原位換成翻譯題，沿用題 id b1-u20-l03-q17；目標字沿用 muscle",
         "resolution": "改為 translate：promptZh「搬了一整天的箱子，我全身的肌肉都很痠。」、hintWords [\"muscle\"]、referenceEn [\"After moving boxes all day, all my muscles were sore.\",\"My muscles were sore after I moved boxes all day.\"]、rubricZh [\"用 muscle 的複數表示「肌肉」\",\"「很痠」可寫，例如 are sore、were sore、hurt 等\"]（原 makeSentence：instructionZh「用 muscle 造一個句子，說說你怎麼鍛鍊或使用肌肉。」、referenceEn [\"I lift weights to make my arm muscles stronger.\",\"My leg muscles hurt after a long hike.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

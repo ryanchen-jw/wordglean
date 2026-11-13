@@ -125,10 +125,10 @@
       "audioZh": "開始實驗前，請仔細閱讀說明並戴上護目鏡。",
       "questionZh": "實驗開始前要先做什麼？",
       "options": [
-        "Read the instructions aloud.",
-        "Read the steps and clean your glasses.",
-        "Turn off the lights.",
-        "Check the directions and protect your eyes."
+        "Read the instructions aloud",
+        "Read the steps and clean your glasses",
+        "Turn off the lights",
+        "Check the directions and protect your eyes"
       ],
       "answer": 3
     },
@@ -385,6 +385,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（historical）原位換成翻譯題，沿用題 id b1-u25-l05-q17；目標字沿用 historical",
         "resolution": "改為 translate：promptZh「這部電影是根據歷史事件改編的。」、hintWords [\"historical\"]、referenceEn [\"This movie is based on a historical event.\",\"The film is based on historical events.\"]、rubricZh [\"用 historical 表示「歷史的」（例如 a historical event）\",\"「根據…改編」可寫，例如 is based on 等\"]（原 makeSentence：instructionZh「用 historical 造一個句子，說說你去過或想去的歷史景點。」、referenceEn [\"I visited a historical temple with my family.\",\"I want to visit a historical town one day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

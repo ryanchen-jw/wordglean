@@ -174,8 +174,8 @@
     {
       "id": "b2-u01-l03-q14",
       "type": "reading",
-      "passageEn": "Last month, our team stayed at a new hotel for a three-day training course. Considering the low price, we did not expect much. However, the rooms were undoubtedly clean and comfortable. There were only two problems. Firstly, the internet was slow. Secondly, the restaurant closed at eight, so we could scarcely find dinner after our evening classes. The manager evidently heard our complaints on the first night, because the next day the kitchen stayed open until ten. Thereafter, everything went smoothly. By the end of the course, we were utterly exhausted but happy, and we all agreed to come back next year.",
-      "passageZh": "上個月，我們團隊住進一家新飯店，參加為期三天的訓練課程。考慮到價格很低，我們本來沒有太大期待。不過，房間無疑既乾淨又舒適。只有兩個問題。第一，網路很慢。第二，餐廳八點就關了，所以晚上上完課後我們幾乎找不到晚餐吃。經理顯然在第一晚聽到了我們的抱怨，因為隔天廚房開到十點。此後一切都很順利。課程結束時，我們累壞了但很開心，大家都同意明年還要再來。",
+      "passageEn": "Last month, our team stayed at a new hotel for a three-day training course. Considering the low price, we did not expect much. However, it was undoubtedly a good choice: the rooms were clean and comfortable. There were only two problems. Firstly, the internet was slow. Secondly, the restaurant closed at eight, so we could scarcely find anywhere to eat after our evening classes. The manager evidently heard our complaints on the first night, because the next day the kitchen stayed open until ten. Thereafter, everything went smoothly. By the end of the course, we were utterly exhausted but happy, and we all agreed to come back next year.",
+      "passageZh": "上個月，我們團隊住進一家新飯店，參加為期三天的訓練課程。考慮到價格很低，我們本來沒有太大期待。不過，這無疑是個好選擇：房間既乾淨又舒適。只有兩個問題。第一，網路很慢。第二，餐廳八點就關了，所以晚上上完課後我們幾乎找不到晚餐吃。經理顯然在第一晚聽到了我們的抱怨，因為隔天廚房開到十點。此後一切都很順利。課程結束時，我們累壞了但很開心，大家都同意明年還要再來。",
       "questions": [
         {
           "questionZh": "這家飯店有哪兩個問題？",
@@ -321,6 +321,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（thereafter）原位換成翻譯題，沿用題 id b2-u01-l03-q16；目標字沿用 thereafter",
         "resolution": "改為 translate：promptZh「會議會在九點開始，之後會提供午餐。」、hintWords [\"thereafter\"]、referenceEn [\"The meeting will start at nine, and lunch will be served thereafter.\",\"The meeting will begin at nine; thereafter, lunch will be provided.\"]、rubricZh [\"thereafter 表示「在那之後」，可放句尾或句首（例如 …served thereafter、Thereafter, … 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to 等）\",\"「提供午餐」可寫，例如 lunch will be served、lunch will be provided 等\"]（原 makeSentence：instructionZh「用 thereafter 造一個句子，說說你做了某件事之後接著發生的事。」、referenceEn [\"I moved to Taichung in May and found a new job shortly thereafter.\",\"I started running every morning, and thereafter I felt much healthier.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -220,7 +220,8 @@
         "not"
       ],
       "referenceEn": [
-        "She can't speak English."
+        "She can't speak English.",
+        "She cannot speak English."
       ],
       "rubricZh": [
         "主詞用 she",
@@ -357,6 +358,12 @@
         "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 can，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
         "resolution": "改為 [\"she\",\"not\"]（原 [\"she\",\"can\",\"not\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：referenceEn（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

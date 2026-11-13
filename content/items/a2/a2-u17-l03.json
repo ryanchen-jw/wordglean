@@ -67,7 +67,7 @@
       "type": "wordCard",
       "word": "graduate",
       "exampleEn": "We had a big party when my brother graduated.",
-      "exampleZh": "我哥哥畢業時，我們辦了一場大派對。",
+      "exampleZh": "我的兄弟畢業時，我們辦了一場大派對。",
       "glossZh": "畢業",
       "distractorsZh": [
         "入學",
@@ -167,7 +167,7 @@
     {
       "id": "a2-u17-l03-q14",
       "type": "mcq",
-      "stemEn": "After four years at university, she will ____ in June.",
+      "stemEn": "After four years of college, she will ____ in June.",
       "stemZh": "讀了四年大學後，她將在六月畢業。",
       "options": [
         "explain",
@@ -186,8 +186,8 @@
     {
       "id": "a2-u17-l03-q15",
       "type": "reading",
-      "passageEn": "Next month, Kevin will graduate from university. Before that, he had to write a long essay about clean water. He did scientific tests on water from a river near a factory and found chemical problems. He also made an educational video about it for children. His teacher liked the essay, but she found one small error in a chart. After he graduates, he wants to work for a water company.",
-      "passageZh": "Kevin 下個月就要大學畢業了。在那之前，他得寫一篇關於乾淨用水的長篇報告。他對工廠附近一條河的河水做了科學檢驗，發現了化學方面的問題。他也為小朋友拍了一支關於這件事的教育影片。老師很喜歡這篇報告，不過她在一張圖表裡發現了一個小錯誤。畢業後，他想去自來水公司工作。",
+      "passageEn": "Next month, Kevin will graduate from university. For his last class, he had to write a long essay about clean water. He did scientific tests on water from a river near a factory and found chemical problems. He also made an educational video about it for children. His teacher liked the essay, but she found one small error in a chart. After he graduates, he wants to work for a water company.",
+      "passageZh": "Kevin 下個月就要大學畢業了。最後一門課，他得寫一篇關於乾淨用水的長篇報告。他對工廠附近一條河的河水做了科學檢驗，發現了化學方面的問題。他也為小朋友拍了一支關於這件事的教育影片。老師很喜歡這篇報告，不過她在一張圖表裡發現了一個小錯誤。畢業後，他想去自來水公司工作。",
       "questions": [
         {
           "questionZh": "Kevin 下個月要做什麼？",
@@ -348,6 +348,24 @@
         "message": "執行長裁示：第③關：SUS 變體 2 冗長不自然，改成 that sign 的寫法",
         "resolution": "referenceEn 改為 [\"Do you know the meaning of this sign?\",\"Do you know the meaning of that sign?\"]（原 [\"Do you know the meaning of this sign?\",\"Do you know what the meaning of this sign is?\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

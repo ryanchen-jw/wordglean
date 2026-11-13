@@ -112,10 +112,10 @@
       "audioZh": "我們在很多事情上意見分歧，但我們總是尊重彼此。",
       "questionZh": "說話者和對方之間是什麼情況？",
       "options": [
-        "They work in the same office.",
-        "They never argue at all.",
-        "They often disagree.",
-        "They are twins."
+        "They work in the same office",
+        "They never argue at all",
+        "They often disagree",
+        "They are twins"
       ],
       "answer": 2
     },
@@ -172,8 +172,8 @@
     {
       "id": "c1-u07-l04-q14",
       "type": "reading",
-      "passageEn": "Scientists studying a mountain lake noticed that its water had become more acidic over twenty years. The change was affecting the fish detrimentally, and their numbers were falling. Two research teams proposed different solutions, and the divergence between their plans led to long debates. One team wanted to add a natural mineral for the neutralization of the acid; the other worried that this would only hide the problem. After months of scrutiny, the two teams' views stopped diverging. Both teams agreed to do both: treat the water and reduce pollution from nearby farms.",
-      "passageZh": "研究一座高山湖泊的科學家發現，湖水在二十年間變得越來越酸。這個變化對魚類造成不利的影響，魚的數量不斷減少。兩組研究團隊提出不同的解決方法，兩個計畫之間的分歧引發了長時間的爭論。一組想加入一種天然礦物來中和酸性；另一組則擔心這樣只會掩蓋問題。經過幾個月的仔細檢視，兩組的看法不再分歧。兩組都同意兩件事都做：處理湖水，同時減少附近農場造成的汙染。",
+      "passageEn": "Scientists studying a mountain lake noticed that its water had become more acidic over twenty years. The change was affecting the fish detrimentally, and their numbers were falling. Two research teams proposed different solutions, and the divergence between their plans led to long debates. One team wanted to add a natural mineral for the neutralization of the acid; the other worried that this would only hide the problem. After months of scrutiny, the two teams' views stopped diverging. In the end, they agreed to do both: treat the water and reduce pollution from nearby farms.",
+      "passageZh": "研究一座高山湖泊的科學家發現，湖水在二十年間變得越來越酸。這個變化對魚類造成不利的影響，魚的數量不斷減少。兩組研究團隊提出不同的解決方法，兩個計畫之間的分歧引發了長時間的爭論。一組想加入一種天然礦物來中和酸性；另一組則擔心這樣只會掩蓋問題。經過幾個月的仔細檢視，兩組的看法不再分歧。最後，他們同意兩件事都做：處理湖水，同時減少附近農場造成的汙染。",
       "questions": [
         {
           "questionZh": "湖水發生了什麼變化？",
@@ -307,6 +307,18 @@
         "message": "執行長裁示：第③關：c1-u07-l04-q16 SUS 題材碰到性別刻板印象（§12.9），換中性情境；審查建議句「在大家面前被罵」與同課跟讀 q11 Being shouted at in front of colleagues is degrading. 幾乎同句（§11.4），改用另一情境",
         "resolution": "改為 promptZh \"她覺得每次上廁所都得向主管報告，實在很有辱人格。\"、referenceEn [\"She found it degrading to report every bathroom break to her manager.\",\"Having to tell her manager about every bathroom break felt degrading to her.\"]、rubricZh [\"「有辱人格」用 degrading（例如 found it degrading、felt degrading 等）\",\"「向主管報告」可寫，例如 report…to her manager、tell her manager about… 等\",\"時態配合內容（例如 found、finds 等）；過去式、現在完成式都正確\"]（原 promptZh \"那則廣告對女性的描繪帶有貶低意味，引起許多抱怨。\"、referenceEn [\"The advertisement's degrading picture of women caused many complaints.\",\"Many people complained that the advertisement was degrading to women.\"]、rubricZh [\"「帶有貶低意味」用 degrading（例如 a degrading picture、degrading to women 等）\",\"「引起許多抱怨」可寫，例如 caused many complaints、many people complained 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -15,7 +15,7 @@
       "id": "a1-u01-l08-q01",
       "type": "wordCard",
       "word": "how",
-      "exampleEn": "How do you go to work?",
+      "exampleEn": "How do you get to work?",
       "exampleZh": "你怎麼去上班？",
       "glossZh": "怎麼；如何",
       "distractorsZh": [
@@ -188,7 +188,7 @@
       "id": "a1-u01-l08-q15",
       "type": "reading",
       "passageEn": "Our family has a cat. Its name is Momo. Every morning, Momo eats its food and then sleeps in the sun. My sister also loves Momo. She gives it more food because it is always hungry. How happy Momo is!",
-      "passageZh": "我們家有一隻貓，牠的名字叫 Momo。每天早上，Momo 吃完飯後就在陽光下睡覺。我妹妹也很愛 Momo，她會多給牠一些食物，因為牠總是很餓。Momo 真是幸福啊！",
+      "passageZh": "我們家有一隻貓，牠的名字叫 Momo。每天早上，Momo 吃完飯後就在陽光下睡覺。我的姊妹也很愛 Momo，她會多給牠一些食物，因為牠總是很餓。Momo 真是幸福啊！",
       "questions": [
         {
           "questionZh": "Momo 吃完早餐後做什麼？",
@@ -200,7 +200,7 @@
           "answer": 1
         },
         {
-          "questionZh": "妹妹為什麼多給 Momo 食物？",
+          "questionZh": "作者的姊妹為什麼多給 Momo 食物？",
           "options": [
             "因為今天是牠生日",
             "因為牠生病了",
@@ -401,6 +401,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u01-l06-q16（go） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
         "resolution": "改為 promptZh「他沒來，因為他生病了。」、referenceEn [\"He didn't come because he was sick.\",\"He did not come because he was sick.\"]、rubricZh [\"用 because 說明原因\",\"過去的事用過去式（例如 didn't come、was sick）；寫 He isn't here because he is sick 等也正確\"]（原 promptZh「我很累，因為我昨天很晚睡。」、referenceEn [\"I am tired because I went to bed late yesterday.\",\"I'm tired because I went to bed late yesterday.\"]、rubricZh [\"用 because 說明原因\",\"昨天的事用過去式（例如 went to bed late、stayed up late）\",\"「很晚睡」可寫 went to bed late 或 stayed up late\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

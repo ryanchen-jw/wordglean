@@ -66,8 +66,8 @@
       "id": "b2-u16-l07-q05",
       "type": "wordCard",
       "word": "influenza",
-      "exampleEn": "The word influenza comes from Italian.",
-      "exampleZh": "Influenza（流感）這個字源自義大利文。",
+      "exampleEn": "Influenza spreads quickly in crowded places in winter.",
+      "exampleZh": "冬天時，流感在人多的地方傳播得很快。",
       "glossZh": "流行性感冒；流感",
       "distractorsZh": [
         "瘧疾",
@@ -187,7 +187,7 @@
     {
       "id": "b2-u16-l07-q15",
       "type": "reading",
-      "passageEn": "Last month, our class visited a science museum with a special exhibition on medicine. One room showed how microorganisms were first seen under a microscope. One display showed herbs that people used as medicine long ago. Another explained how the polio vaccine changed the lives of millions of children. We also learned that influenza changes every year, so scientists must keep updating vaccines. A model of the human body showed how medicine given through an intravenous line enters the bloodstream directly. Near the exit, a poster thanked people who give blood, since they make transfusions possible. Our guide also reminded us that untreated water can carry germs. I left the museum with a new respect for science.",
+      "passageEn": "Last month, our class visited a science museum with a special exhibition on medicine. One room showed how microorganisms were first seen under a microscope. A second display showed herbs that people used as medicine long ago. Another explained how the polio vaccine changed the lives of millions of children. We also learned that influenza changes every year, so scientists must keep updating vaccines. A model of the human body showed how medicine given through an intravenous line enters the bloodstream directly. Near the exit, a poster thanked people who give blood, since they make transfusions possible. Our guide also reminded us that untreated water can carry germs. I left the museum with a new respect for science.",
       "passageZh": "上個月，我們班去參觀一間有醫學特展的科學博物館。有一間展示人們最早如何在顯微鏡下看到微生物。有個展區展示古人當作藥用的香草。另一間說明小兒麻痺疫苗如何改變了數百萬兒童的生活。我們也學到流感每年都會變化，所以科學家必須不斷更新疫苗。一個人體模型展示了經由靜脈注射給的藥如何直接進入血液。出口附近有一張海報感謝捐血者，因為有他們的付出，輸血才得以實現。導覽員也提醒我們，未經處理的水可能帶有病菌。離開博物館時，我對科學多了一份敬意。",
       "questions": [
         {
@@ -236,12 +236,12 @@
         "microorganism"
       ],
       "referenceEn": [
-        "Many microorganisms that you cannot see with your eyes live in this lake.",
+        "Many microorganisms that you cannot see with the naked eye live in this lake.",
         "This lake is home to many microorganisms that are too small to see."
       ],
       "rubricZh": [
         "microorganism 指「微生物」，這裡用複數 microorganisms",
-        "「肉眼看不見的」可寫，例如 that you cannot see with your eyes、too small to see 等",
+        "「肉眼看不見的」可寫，例如 that you cannot see with the naked eye、too small to see 等",
         "「住著」可寫，例如 live in、is home to 等"
       ]
     }
@@ -466,6 +466,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（microorganism）原位換成翻譯題，沿用題 id b2-u16-l07-q17；目標字沿用 microorganism",
         "resolution": "改為 translate：promptZh「這座湖裡住著許多肉眼看不見的微生物。」、hintWords [\"microorganism\"]、referenceEn [\"Many microorganisms that you cannot see with your eyes live in this lake.\",\"This lake is home to many microorganisms that are too small to see.\"]、rubricZh [\"microorganism 指「微生物」，這裡用複數 microorganisms\",\"「肉眼看不見的」可寫，例如 that you cannot see with your eyes、too small to see 等\",\"「住著」可寫，例如 live in、is home to 等\"]（原 makeSentence：instructionZh「用 microorganism 造一個句子，說說你知道的一種有用或有趣的微生物（事實描述即可）。」、referenceEn [\"I learned that microorganisms help turn milk into cheese.\",\"I was surprised that microorganisms live almost everywhere, even in hot springs.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、rubricZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（題庫外問題）、exampleZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

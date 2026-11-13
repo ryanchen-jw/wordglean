@@ -188,7 +188,7 @@
     {
       "id": "b2-u17-l04-q15",
       "type": "reading",
-      "passageEn": "Last winter, a small idea in our town began to snowball. A café owner invited a few friends to share poems and songs on Friday nights. At first, only ten people came. One woman read a sonnet she had written about her lazy cat, and a young man read a long poem, stanza by stanza. Soon a reggae band joined, bringing their own amplifier, and their vocalist had a voice like warm honey. A local essayist wrote about the evenings in the newspaper, praising the artistry of the performers. Now the café is packed every week, and people even stand in the doorway.",
+      "passageEn": "Last winter, a small idea in our town began to snowball. A cafe owner invited a few friends to share poems and songs on Friday nights. At first, only ten people came. One woman read a sonnet she had written about her lazy cat, and a young man read a long poem, stanza by stanza. Soon a reggae band joined, bringing their own amplifier, and their vocalist had a voice like warm honey. A local essayist wrote about the evenings in the newspaper, praising the artistry of the performers. Now the cafe is packed every week, and people even stand in the doorway.",
       "passageZh": "去年冬天，我們鎮上的一個小點子開始像滾雪球般擴大。一位咖啡店老闆邀請幾個朋友，在星期五晚上分享詩和歌。一開始只來了十個人。有位女士朗讀了她寫她家懶貓的十四行詩，一位年輕人則一節一節地朗讀一首長詩。很快地，一個雷鬼樂團加入了，自備音箱，他們的主唱嗓音像溫暖的蜂蜜。一位在地散文家在報紙上寫了這些夜晚，稱讚表演者的藝術技巧。現在這家咖啡店每週都擠滿了人，大家甚至站在門口。",
       "questions": [
         {
@@ -365,6 +365,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（artistry）原位換成翻譯題，沿用題 id b2-u17-l04-q17；目標字沿用 artistry",
         "resolution": "改為 translate：promptZh「這位廚師的手藝讓每道菜看起來都像一幅畫。」、hintWords [\"artistry\"]、referenceEn [\"The chef's artistry makes every dish look like a painting.\",\"Thanks to the chef's artistry, each dish looks like a picture.\"]、rubricZh [\"artistry 指「藝術技巧、手藝」，不可數（例如 the chef's artistry 等）\",\"「看起來像一幅畫」可寫，例如 look like a painting、looks like a picture 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 artistry 造一個句子，說說你欣賞的一項手藝或表演。」、referenceEn [\"I admire the artistry of people who make pottery by hand.\",\"The artistry of the dancers in the show amazed me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

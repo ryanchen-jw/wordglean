@@ -185,7 +185,7 @@
     {
       "id": "b2-u22-l06-q15",
       "type": "reading",
-      "passageEn": "My cousin is an ecologist who studies birds along the southern coastline. In her latest report, she explains how a bird's beak shape matches the food it eats. Some birds have long, thin beaks for catching fish, while others have short, strong ones for breaking seeds. Last winter, a small landslide covered part of the beach with rocks, so she had to move her camp. She now works near a quiet bay full of pebbles, where she sometimes sees farmers riding donkeys. She also leads school excursions there. She jokes that the only animals she has never seen there are crocodiles and penguins.",
+      "passageEn": "My cousin is an ecologist who studies birds along the southern coastline. In her latest report, she explains how a bird's beak shape matches the food it eats. Some birds have long, thin beaks for catching fish, while others have short, strong ones for cracking seeds. Last winter, a small landslide covered part of the beach with rocks, so she had to move her camp. She now works near a quiet bay full of pebbles, where she sometimes sees farmers riding donkeys. She also leads school excursions there. She jokes that the only animals she has never seen there are crocodiles and penguins.",
       "passageZh": "我表姊是生態學家，研究南部海岸線上的鳥類。在她最新的報告裡，她說明鳥嘴的形狀如何配合牠吃的食物。有些鳥的嘴又長又細，適合抓魚；有些則又短又強壯，適合敲開種子。去年冬天，一場小山崩讓一部分海灘覆滿了石頭，所以她必須把營地搬走。她現在在一個滿是鵝卵石的寧靜海灣工作，有時會看到農夫騎著驢子經過，她也會在那裡帶學校的戶外教學。她開玩笑說，那裡唯一沒見過的動物就是鱷魚和企鵝。",
       "questions": [
         {
@@ -283,6 +283,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（penguin）原位換成翻譯題，沿用題 id b2-u22-l06-q17；目標字沿用 penguin",
         "resolution": "改為 translate：promptZh「企鵝爸爸會幫忙照顧蛋。」、hintWords [\"penguin\"]、referenceEn [\"Penguin fathers help take care of the eggs.\",\"Male penguins help look after their eggs.\"]、rubricZh [\"penguin 指企鵝，泛指用複數（例如 penguin fathers、male penguins 等）\",\"一般事實用現在式；「照顧」可寫，例如 take care of、look after 等\"]（原 makeSentence：instructionZh「用 penguin 造一個句子，說說你看過的企鵝或你對企鵝的印象。」、referenceEn [\"I saw penguins at the zoo, and they walked in a very funny way.\",\"I think penguins look like small people wearing black suits.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

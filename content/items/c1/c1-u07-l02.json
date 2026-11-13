@@ -115,8 +115,8 @@
     {
       "id": "c1-u07-l02-q09",
       "type": "listenType",
-      "sentenceEn": "Heavy traffic impeded the bus, so we arrived late.",
-      "sentenceZh": "交通擁擠拖慢了公車，所以我們遲到了。"
+      "sentenceEn": "Heavy traffic impeded our progress, so we arrived late.",
+      "sentenceZh": "交通擁擠拖慢了我們的行程，所以我們遲到了。"
     },
     {
       "id": "c1-u07-l02-q10",
@@ -125,10 +125,10 @@
       "audioZh": "網路購物的興起，導致許多小書店倒閉。",
       "questionZh": "網路購物興起造成了什麼結果？",
       "options": [
-        "Many small bookshops closed.",
-        "Books became cheaper.",
-        "More people read.",
-        "Shops got bigger."
+        "Many small bookshops closed",
+        "Books became cheaper",
+        "More people read",
+        "Shops got bigger"
       ],
       "answer": 0
     },
@@ -185,7 +185,7 @@
     {
       "id": "c1-u07-l02-q15",
       "type": "reading",
-      "passageEn": "When the town's only factory closed ten years ago, its demise caused a huge upheaval. Hundreds of workers lost their jobs, and many young people moved away. A later report implicated poor management, not falling demand, in the closure. Since then, the town has worked hard to recover. Volunteers have cleaned up the river, reversing years of degradation caused by the factory. Some people argue that small towns are inherently weak because they depend on one employer. However, new cafes and a weekend market now attract visitors. Few people could envisage such a recovery, but the town feels alive again.",
+      "passageEn": "When the town's only factory closed ten years ago, its demise caused a huge upheaval. Hundreds of workers lost their jobs, and many young people moved away. A later report implicated poor management, not falling demand, in the closure. Since then, the town has worked hard to recover. Volunteers have cleaned up the river, reversing years of degradation caused by the factory. Some people argue that small towns are inherently weak because they depend on one employer. However, new cafes and a weekend market now attract visitors. Few people could have envisaged such a recovery, but the town feels alive again.",
       "passageZh": "十年前鎮上唯一的工廠關閉，它的倒閉帶來巨大的變動。數百名工人失業，許多年輕人也搬走了。後來的一份報告指出，關廠的原因是管理不善，而不是需求下滑。從那之後，小鎮努力復甦。志工清理了河川，扭轉了工廠多年來對環境造成的破壞。有些人主張，小鎮本質上就很脆弱，因為它們依賴單一的僱主。然而，新開的咖啡館和週末市集現在吸引了遊客。很少人能想像小鎮會這樣復甦，但它現在又重新充滿活力。",
       "questions": [
         {
@@ -314,6 +314,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（impede）原位換成翻譯題，沿用題 id c1-u07-l02-q17；目標字沿用 impede",
         "resolution": "改為 translate：promptZh「昨天的濃霧妨礙了機場的航班起降。」、hintWords [\"impede\"]、referenceEn [\"Yesterday, thick fog impeded flights at the airport.\",\"Flights at the airport were impeded by thick fog yesterday.\"]、rubricZh [\"「妨礙」用 impede（例如 impeded flights、were impeded by 等）\",\"「濃霧」可寫，例如 thick fog、heavy fog 等\",\"「航班起降」可寫，例如 flights、planes taking off and landing 等；有「昨天」，用過去式\"]（原 makeSentence：instructionZh「用 impede 造一個句子，說說什麼事情妨礙了你的學習或工作。」、referenceEn [\"Noise from the street often impedes my studying at night.\",\"A slow computer impedes my work every day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

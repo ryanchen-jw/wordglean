@@ -129,10 +129,10 @@
       "audioZh": "我們看完日落再離開海灘，到鎮上吃晚餐吧。",
       "questionZh": "說話者建議什麼時候離開海灘？",
       "options": [
-        "Before the sunset.",
-        "Once the sun has gone down.",
-        "After dinner in town.",
-        "At noon after lunch."
+        "Before the sunset",
+        "Once the sun has gone down",
+        "After dinner in town",
+        "At noon after lunch"
       ],
       "answer": 1
     },
@@ -337,6 +337,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lifelong）原位換成翻譯題，沿用題 id b1-u02-l06-q17；目標字沿用 lifelong",
         "resolution": "改為 translate：promptZh「她和她的鄰居是一輩子的好朋友。」、hintWords [\"lifelong\"]、referenceEn [\"She and her neighbor are lifelong friends.\",\"She and her neighbor have been lifelong friends.\"]、rubricZh [\"用 lifelong 修飾名詞，表示「一輩子的」（例如 lifelong friends）\",\"時態配合內容（例如 are、have been 等）\"]（原 makeSentence：instructionZh「用 lifelong 造一個句子，說說你一輩子的興趣、朋友或目標。」、referenceEn [\"Reading is my lifelong hobby.\",\"I have a lifelong friend from my school days.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

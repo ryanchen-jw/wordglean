@@ -55,7 +55,7 @@
       "word": "fortnight",
       "exampleEn": "We are going on holiday for a fortnight.",
       "exampleZh": "我們要去度假兩星期。",
-      "glossZh": "兩星期",
+      "glossZh": "兩星期；（英式）",
       "distractorsZh": [
         "兩個月",
         "兩天",
@@ -92,8 +92,8 @@
       "id": "b1-u02-l07-q07",
       "type": "wordCard",
       "word": "out-of-date",
-      "exampleEn": "This map is out-of-date; many roads have changed.",
-      "exampleZh": "這張地圖過時了，很多路都變了。",
+      "exampleEn": "This is an out-of-date map; many roads have changed.",
+      "exampleZh": "這是一張過時的地圖，很多路都變了。",
       "glossZh": "過時的；過期的",
       "distractorsZh": [
         "最新的",
@@ -127,10 +127,10 @@
       "audioZh": "辦公室的印表機一直出問題，所以我們上星期買了一台新的。",
       "questionZh": "辦公室上星期為什麼買新的印表機？",
       "options": [
-        "The old one was too slow.",
-        "The office moved to a bigger new place.",
-        "It kept having problems.",
-        "Someone took the old one."
+        "The old one was too slow",
+        "The office moved to a bigger new place",
+        "It kept having problems",
+        "Someone took the old one"
       ],
       "answer": 2
     },
@@ -346,6 +346,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（chronological）原位換成翻譯題，沿用題 id b1-u02-l07-q17；目標字沿用 chronological",
         "resolution": "改為 translate：promptZh「這間博物館的照片是按照時間順序排列的。」、hintWords [\"chronological\"]、referenceEn [\"The photos in this museum are arranged in chronological order.\",\"This museum shows its photos in chronological order.\"]、rubricZh [\"用 chronological 表示「按時間順序的」（例如 in chronological order）\",\"「排列」可寫，例如 are arranged、are shown、are put 等\"]（原 makeSentence：instructionZh「用 chronological 造一個句子，說說你會按時間順序整理哪些東西。」、referenceEn [\"I keep my photos in chronological order.\",\"I put my old emails in chronological order.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

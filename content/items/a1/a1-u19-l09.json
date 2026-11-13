@@ -125,9 +125,9 @@
       "audioZh": "抱歉，我得走了，我兒子在等我。",
       "questionZh": "說話者為什麼要走？",
       "options": [
-        "I am late for work.",
-        "I am sick.",
-        "My son is waiting."
+        "I am late for work",
+        "I am sick",
+        "My son is waiting"
       ],
       "answer": 2
     },
@@ -184,8 +184,8 @@
     {
       "id": "a1-u19-l09-q15",
       "type": "reading",
-      "passageEn": "Yesterday was a busy day. My brother and I had a test in the morning. We were tired, but we helped each other with our homework. Today is Saturday. My brother has a soccer game, so I have to get up early. What am I doing now? I'm watching his game!",
-      "passageZh": "昨天很忙。我和我哥哥早上有考試。我們很累，但還是互相幫忙寫功課。今天是星期六，我哥哥有一場足球賽，所以我得早起。我現在在做什麼？我在看他的比賽！",
+      "passageEn": "Yesterday was a busy day. My brother and I had a test in the morning. We were tired, but we helped each other with our homework. Today is Saturday. My brother has a soccer game, so I had to get up early. What am I doing now? I'm watching his game!",
+      "passageZh": "昨天很忙。我和我的兄弟早上有考試。我們很累，但還是互相幫忙寫功課。今天是星期六，我的兄弟有一場足球賽，所以我得早起。我現在在做什麼？我在看他的比賽！",
       "questions": [
         {
           "questionZh": "昨天早上他們有什麼？",
@@ -200,7 +200,7 @@
           "questionZh": "說話者現在在做什麼？",
           "options": [
             "準備明天的英文考試",
-            "看哥哥的足球比賽",
+            "看兄弟的足球比賽",
             "在家裡睡覺"
           ],
           "answer": 1
@@ -309,6 +309,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（each other）原位換成翻譯題，沿用題 id a1-u19-l09-q17；目標字沿用 each other",
         "resolution": "改為 translate：promptZh「那兩個孩子正看著對方。」、hintWords [\"each other\"]、referenceEn [\"The two kids are looking at each other.\",\"The two children are looking at each other.\"]、rubricZh [\"each other 放在動詞或介系詞後面當受詞（例如 look at each other）\",\"「正」用現在進行式（例如 are looking）\"]（原 makeSentence：instructionZh「用 each other 造一個句子，說說你和某人互相做的事。」、referenceEn [\"My sister and I help each other.\",\"We call each other every week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].options[1]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

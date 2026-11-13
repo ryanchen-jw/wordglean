@@ -139,7 +139,7 @@
       "id": "a2-u21-l03-q11",
       "type": "shadowing",
       "sentenceEn": "My brother loves science fiction movies.",
-      "sentenceZh": "我哥哥很愛科幻電影。"
+      "sentenceZh": "我的兄弟很愛科幻電影。"
     },
     {
       "id": "a2-u21-l03-q12",
@@ -150,7 +150,7 @@
     {
       "id": "a2-u21-l03-q13",
       "type": "mcq",
-      "stemEn": "The painter is drawing a ____ of the queen.",
+      "stemEn": "The painter is painting a ____ of the queen.",
       "stemZh": "畫家正在畫女王的肖像。",
       "options": [
         "custom",
@@ -170,7 +170,7 @@
       "id": "a2-u21-l03-q14",
       "type": "mcq",
       "stemEn": "My sister works in ____. She makes posters for new products.",
-      "stemZh": "我姊姊在廣告業工作，她替新產品做海報。",
+      "stemZh": "我的姊妹在廣告業工作，她替新產品做海報。",
       "options": [
         "tradition",
         "classic",
@@ -350,6 +350,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fiction）原位換成翻譯題，沿用題 id a2-u21-l03-q17；目標字沿用 fiction",
         "resolution": "改為 translate：promptZh「圖書館的小說在二樓。」、hintWords [\"fiction\"]、referenceEn [\"The fiction books are on the second floor of the library.\",\"Fiction is on the second floor of the library.\"]、rubricZh [\"用 fiction 表示「小說」（例如 fiction、fiction books 等）\",\"「二樓」可寫，例如 the second floor 等\"]（原 makeSentence：instructionZh「用 fiction 造一個句子，說說你喜不喜歡讀小說，或喜歡哪一類。」、referenceEn [\"I enjoy reading fiction before bed.\",\"I don't read much fiction. I like history books.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

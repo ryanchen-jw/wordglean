@@ -141,10 +141,10 @@
       "audioZh": "儘管延誤了很久，Lisa 仍然保持冷靜，等下一班火車。",
       "questionZh": "Lisa 遇到延誤時怎麼做？",
       "options": [
-        "She got upset about the long delay.",
-        "She waited quietly for another train.",
-        "She left the station after a while.",
-        "She called her boss."
+        "She got upset about the long delay",
+        "She waited quietly for another train",
+        "She left the station after a while",
+        "She called her boss"
       ],
       "answer": 1
     },
@@ -201,7 +201,7 @@
     {
       "id": "b1-u01-l01-q16",
       "type": "reading",
-      "passageEn": "Last Saturday, Kevin and his family took a boat trip around the island. Everyone, including his grandmother, was aboard by eight o'clock. Despite the strong wind, the trip was calm. Kevin did not know whether there would be any food on the boat, so he brought sandwiches. Afterward, his family thanked him. The trip cost thirty dollars per person, and Kevin said it was worth it.",
+      "passageEn": "Last Saturday, Kevin and his family took a boat trip around the island. Everyone, including his grandmother, was aboard by eight o'clock. Despite the strong wind, the boat ride was smooth. Kevin did not know whether there would be any food on the boat, so he brought sandwiches. Afterward, his family thanked him. The trip cost thirty dollars per person, and Kevin said it was worth it.",
       "passageZh": "上星期六，Kevin 和家人搭船環島旅遊。八點前，所有人都上船了，包括他的奶奶。儘管風很大，航程還算平穩。Kevin 不知道船上會不會有吃的，所以帶了三明治。後來，家人都向他道謝。這趟行程每人三十美元，Kevin 說很值得。",
       "questions": [
         {
@@ -407,6 +407,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u01-l04-q16 雷同（兩題都是「完成工作」（finish work）），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「儘管年紀很大，我爺爺每天還是騎腳踏車。」、referenceEn [\"Despite his age, my grandfather still rides a bike every day.\",\"Despite being old, my grandpa still rides his bike every day.\"]、rubricZh [\"despite 後接名詞或動名詞（例如 Despite his age、Despite being old；寫 Although he is old 也正確）\",\"「還是」可寫，例如 still 等\"]（原 promptZh「儘管很累，她還是完成了工作。」、referenceEn [\"Despite being tired, she finished the work.\",\"Despite feeling tired, she finished her work.\"]、rubricZh [\"despite 後面接名詞或動名詞，不接完整句子\",\"主要句用過去式（例如 finished、completed）\",\"不需要再加 but\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

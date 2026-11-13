@@ -115,7 +115,7 @@
     {
       "id": "b2-u16-l08-q09",
       "type": "listenType",
-      "sentenceEn": "The light enters the eye and forms an image on the retina.",
+      "sentenceEn": "Light enters the eye and forms an image on the retina.",
       "sentenceZh": "光線進入眼睛，在視網膜上形成影像。"
     },
     {
@@ -185,8 +185,8 @@
     {
       "id": "b2-u16-l08-q15",
       "type": "reading",
-      "passageEn": "My cousin works at a public health office, and she told me about her job. During the pandemic, her team checked that hospitals had sanitary conditions and helped people in quarantine get food and supplies. The work was exhausting, and she often came home covered in perspiration after long days in protective clothing. Now her team studies other topics, such as how stimulants in coffee and energy drinks affect sleep and how children get enough nourishment at school. She also mentioned a new eye test that takes a picture of the retina. She says the job is hard, but she loves feeling useful, and her favorite treat after work is still a big mango.",
-      "passageZh": "我表姊在公共衛生單位工作，她跟我聊了她的工作。疫情期間，她的團隊檢查醫院的衛生狀況是否合格，並協助被隔離的人取得食物和物資。工作非常累人，在防護衣裡熬過漫長的一天後，她回家時常常滿身是汗。現在她的團隊研究其他主題，例如咖啡和能量飲料裡的刺激物如何影響睡眠，以及孩子在學校能否獲得足夠的營養。她也提到一種新的眼睛檢查，會拍下視網膜的照片。她說這份工作很辛苦，但她喜歡覺得自己有用，而她下班後最愛的點心依然是一顆大芒果。",
+      "passageEn": "My cousin works at a public health office, and she told me about her job. During the pandemic, her team checked that hospitals had sanitary conditions and helped people in quarantine get food and supplies. The work was exhausting, and she often came home covered in perspiration after long days in protective clothing. Now her team studies other topics, such as how stimulants in coffee and energy drinks affect sleep and how children get enough nourishment at school. She also mentioned a new eye test that takes a picture of the retina. She says the job is hard, but she loves feeling useful. After a long day at work, her favorite treat is a big mango.",
+      "passageZh": "我表姊在公共衛生單位工作，她跟我聊了她的工作。疫情期間，她的團隊檢查醫院的衛生狀況是否合格，並協助被隔離的人取得食物和物資。工作非常累人，在防護衣裡熬過漫長的一天後，她回家時常常滿身是汗。現在她的團隊研究其他主題，例如咖啡和能量飲料裡的刺激物如何影響睡眠，以及孩子在學校能否獲得足夠的營養。她也提到一種新的眼睛檢查，會拍下視網膜的照片。她說這份工作很辛苦，但她喜歡覺得自己有用。忙了一整天下班後，她最愛的點心是一顆大芒果。",
       "questions": [
         {
           "questionZh": "疫情期間，表姊的團隊做了什麼？",
@@ -470,6 +470,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pandemic）原位換成翻譯題，沿用題 id b2-u16-l08-q17；目標字沿用 pandemic",
         "resolution": "改為 translate：promptZh「疫情期間，很多婚禮都延期了。」、hintWords [\"pandemic\"]、referenceEn [\"Many weddings were put off during the pandemic.\",\"During the pandemic, lots of weddings were postponed.\"]、rubricZh [\"pandemic 指「（疾病的）全球大流行」（例如 during the pandemic 等）\",\"「延期」可寫，例如 were put off、were postponed、were delayed 等\",\"時態可用過去式或現在完成式（例如 were postponed、have been postponed 等）；時間詞位置不扣分\"]（原 makeSentence：instructionZh「用 pandemic 造一個句子，說說疫情期間社會上的一個改變（例如遠距上課）。」、referenceEn [\"During the pandemic, many schools moved their classes online.\",\"After the pandemic, many shops started to offer delivery.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -15,7 +15,7 @@
       "id": "b2-u09-l03-q01",
       "type": "wordCard",
       "word": "disorder",
-      "exampleEn": "Disorder broke out at the station when all the trains were cancelled.",
+      "exampleEn": "Disorder broke out at the station when all the trains were canceled.",
       "exampleZh": "所有列車都取消時，車站裡一片混亂。",
       "glossZh": "雜亂；混亂",
       "distractorsZh": [
@@ -201,7 +201,7 @@
     {
       "id": "b2-u09-l03-q16",
       "type": "reading",
-      "passageEn": "When Ben took over his father's bakery, the kitchen was in disorder and the business was losing money. He decided to change its fate. First, he studied the market and found that the main barrier to growth was the shop's dull image. So he started a small revolution: he added coffee, free internet, and seasonal variations of the classic breads. The bakery slowly evolved into a popular meeting place, and sales rose considerably. Two years later, Ben planned an expansion into a second shop in a developing part of the city. Many customers say these radical changes saved the shop.",
+      "passageEn": "When Ben took over his father's bakery, the kitchen was in disorder and the business was losing money. He decided to change its fate. First, he studied the market and found that the main barrier to growth was the shop's dull image. So he started a small revolution: he added coffee, free internet, and seasonal variations of the classic breads. The bakery slowly evolved into a popular meeting place, and sales rose considerably. Two years later, Ben planned an expansion: a second shop in a developing part of the city. Many customers say these radical changes saved the shop.",
       "passageZh": "Ben 接手父親的麵包店時，廚房一團亂，生意也在虧錢。他決定改變麵包店的命運。首先，他研究市場，發現成長的主要障礙是店面形象太沉悶。於是他發起一場小小的革命：增加咖啡、免費網路，還推出經典麵包的季節變化款。麵包店慢慢變成熱門的聚會場所，業績也大幅成長。兩年後，Ben 計畫擴張，在城裡一個發展中的地區開第二家店。很多顧客說，這些徹底的改變救了這家店。",
       "questions": [
         {
@@ -546,6 +546,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fate）原位換成翻譯題，沿用題 id b2-u09-l03-q18；目標字沿用 fate",
         "resolution": "改為 translate：promptZh「命運讓這兩個老朋友在同一座城市重逢。」、hintWords [\"fate\"]、referenceEn [\"Fate brought the two old friends together again in the same city.\",\"Fate brought the two old friends back together in the same city.\"]、rubricZh [\"fate 指「命運」，可當主詞（例如 Fate brought… 等）\",\"「重逢」可寫，例如 brought … together again、brought … back together、let them meet again 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 fate 造一個句子，說說一件你覺得像是命運安排的事。」、referenceEn [\"It was fate that I met my best friend on a train.\",\"I believe fate brought me to this city.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

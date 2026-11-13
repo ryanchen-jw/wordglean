@@ -185,8 +185,8 @@
     {
       "id": "b2-u53-l03-q15",
       "type": "reading",
-      "passageEn": "Last month, my company moved to a new office downtown. Two movers arrived early and carried every desk down the stairs of our old building. The new office has much better accessibility, with wide doors and an elevator, so a colleague who uses a wheelchair can get around easily. Our manager reorganized the teams so that people who work together now sit together, and the kitchen is small but cozy. On the first afternoon, I heard a loud yawn from the next desk. Everyone was tired, but the move went well.",
-      "passageZh": "上個月，我的公司搬到市中心的新辦公室。兩位搬家工人一早就到了，把每張桌子從舊大樓的樓梯搬下去。新辦公室的無障礙設計好多了，門很寬又有電梯，所以一位坐輪椅的同事可以輕鬆地四處移動。經理重新編組團隊，讓一起工作的人坐在一起，茶水間雖小但很溫馨。第一天下午，我聽到隔壁座位傳來一聲大大的哈欠。大家都累了，但搬遷很順利。",
+      "passageEn": "Last month, my company moved to a new office downtown. Two movers arrived early and carried every desk down the stairs of our old building. The new office has much better accessibility, with wide doors and an elevator, so a colleague who uses a wheelchair can get around easily. Our manager reorganized the teams so that people who work together now sit together. The kitchen is small but cozy. On the first afternoon, I heard a loud yawn from the next desk. Everyone was tired, but the move went well.",
+      "passageZh": "上個月，我的公司搬到市中心的新辦公室。兩位搬家工人一早就到了，把每張桌子從舊大樓的樓梯搬下去。新辦公室的無障礙設計好多了，門很寬又有電梯，所以一位坐輪椅的同事可以輕鬆地四處移動。經理重新編組團隊，讓一起工作的人坐在一起。茶水間雖小但很溫馨。第一天下午，我聽到隔壁座位傳來一聲大大的哈欠。大家都累了，但搬遷很順利。",
       "questions": [
         {
           "questionZh": "搬家工人做了什麼？",
@@ -338,6 +338,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nourish）原位換成翻譯題，沿用題 id b2-u53-l03-q17；目標字沿用 nourish",
         "resolution": "改為 translate：promptZh「好的故事能滋養孩子的想像力。」、hintWords [\"nourish\"]、referenceEn [\"Good stories can nourish a child's imagination.\",\"A child's imagination can be nourished by good stories.\"]、rubricZh [\"nourish 當動詞，主動句、被動句都可以（例如 can nourish…、can be nourished by… 等）\",\"「孩子的想像力」可寫，例如 a child's imagination、children's imagination 等\",\"寫成現在式（例如 Good stories nourish…）也正確\"]（原 makeSentence：instructionZh「用 nourish 造一個句子，說明什麼東西能滋養心靈、植物或動物。」、referenceEn [\"Good music always nourishes my soul.\",\"Reading good books nourishes the mind.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

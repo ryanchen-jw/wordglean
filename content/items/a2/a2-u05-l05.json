@@ -193,7 +193,7 @@
     {
       "id": "a2-u05-l05-q15",
       "type": "reading",
-      "passageEn": "Granny Chen is eighty years old. She was an orphan, so she grew up without a family. When she was ten, her teacher, Ms. Lin, found her a penfriend in England. The two girls wrote letters to each other for seventy years! Today, Granny has a big family. She often reads the old letters to her granddaughter and calls her \"sweetheart\".",
+      "passageEn": "Granny Chen is eighty years old. She was an orphan, so she grew up without a family. When she was ten, her teacher, Ms. Lin, found her a penfriend in England. The two girls wrote letters to each other for seventy years! Today, Granny has a big family. She often reads the old letters to her granddaughter and calls her \"sweetheart.\"",
       "passageZh": "陳奶奶今年八十歲。她是個孤兒，從小沒有家人。她十歲的時候，她的老師林女士幫她在英國找了一個筆友。兩個女孩互相寫信寫了七十年！現在奶奶有一個大家庭。她常常把那些舊信唸給孫女聽，還叫孫女「親愛的」。",
       "questions": [
         {
@@ -332,6 +332,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（penfriend）原位換成翻譯題，沿用題 id a2-u05-l05-q17；目標字沿用 penfriend",
         "resolution": "改為 translate：promptZh「我的筆友下個月會來看我。」、hintWords [\"penfriend\"]、referenceEn [\"My penfriend will come to see me next month.\",\"My penfriend is going to visit me next month.\"]、rubricZh [\"用 penfriend 表示「筆友」\",\"下個月的事用表示未來的寫法（例如 will、be going to 等）\",\"「來看我」可寫，例如 come to see me、visit me 等\"]（原 makeSentence：instructionZh「用 penfriend 造一個句子，說說你想交（或曾經有過）的筆友。」、referenceEn [\"I would like a penfriend from Canada.\",\"I had a penfriend in Korea when I was young.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

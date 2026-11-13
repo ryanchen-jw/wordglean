@@ -127,10 +127,10 @@
       "audioZh": "第一夫人星期五會來我們學校參訪，所以那天課上到中午。",
       "questionZh": "星期五的課上到幾點？",
       "options": [
-        "At one o'clock.",
-        "At three o'clock.",
-        "At twelve o'clock.",
-        "At two o'clock."
+        "At one o'clock",
+        "At three o'clock",
+        "At twelve o'clock",
+        "At two o'clock"
       ],
       "answer": 2
     },
@@ -412,6 +412,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（babysitter）原位換成翻譯題，沿用題 id b1-u08-l07-q17；目標字沿用 babysitter",
         "resolution": "改為 translate：promptZh「我們今晚會出去吃飯，所以找了一位保母。」、hintWords [\"babysitter\"]、referenceEn [\"We are going out to dinner tonight, so we got a babysitter.\",\"We found a babysitter because we are eating out tonight.\"]、rubricZh [\"用 babysitter 表示「臨時保母」（例如 got a babysitter）\",\"「找了」可寫，例如 got、found、hired 等\"]（原 makeSentence：instructionZh「用 babysitter 造一個句子，說說你當過保母的經驗，或你家請保母的經驗。」、referenceEn [\"I worked as a babysitter when I was in college.\",\"My parents found a babysitter for my little brother.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

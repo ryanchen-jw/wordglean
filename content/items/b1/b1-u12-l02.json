@@ -123,14 +123,14 @@
     {
       "id": "b1-u12-l02-q10",
       "type": "listenChoice",
-      "audioEn": "The trip was tiring, so most of the kids fell into a doze on the bus home.",
+      "audioEn": "The trip was tiring, so most of the kids dozed off on the bus home.",
       "audioZh": "這趟旅行很累人，所以回程的公車上大多數孩子都打起瞌睡。",
       "questionZh": "回程的公車上，大多數孩子怎麼了？",
       "options": [
-        "They fell asleep.",
-        "They sang songs together.",
-        "They missed the bus home.",
-        "They played games."
+        "They fell asleep",
+        "They sang songs together",
+        "They missed the bus home",
+        "They played games"
       ],
       "answer": 0
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u12-l02-q15",
       "type": "reading",
-      "passageEn": "My cousin Ben is a hard-working nurse. He has a full-time job at a hospital, and he also works part-time at a bookstore on Sundays. His working hours are long and irregular, and the work is very tiring. Last month, he fell into a doze on the bus and missed his stop. His family is worried that overwork will hurt his health, so he plans to take a long holiday this summer.",
+      "passageEn": "My cousin Ben is a hard-working nurse. He has a full-time job at a hospital, and he also works part-time at a bookstore on Sundays. His working hours are long and irregular, and the work is very tiring. Last month, he dozed off on the bus and missed his stop. His family is worried that overwork will hurt his health, so he plans to take a long holiday this summer.",
       "passageZh": "我表哥 Ben 是一位勤奮的護理師。他在醫院有一份全職工作，星期天還在書店兼職。他的工作時間又長又不固定，工作也很累人。上個月，他在公車上打瞌睡，坐過了站。家人擔心過度工作會傷害他的健康，所以他打算今年夏天放個長假。",
       "questions": [
         {
@@ -333,6 +333,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hard-working）原位換成翻譯題，沿用題 id b1-u12-l02-q17；目標字沿用 hard-working",
         "resolution": "改為 translate：promptZh「她是我們班上最勤奮的學生。」、hintWords [\"hard-working\"]、referenceEn [\"She is the most hard-working student in our class.\",\"No one in our class is more hard-working than her.\"]、rubricZh [\"用 hard-working 表示「勤奮的」（例如 the most hard-working student；寫 hardest-working 也正確）\"]（原 makeSentence：instructionZh「用 hard-working 造一個句子，形容你身邊一位很勤奮的人。」、referenceEn [\"My father is the most hard-working person I know.\",\"My hard-working sister studies until midnight.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

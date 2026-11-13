@@ -54,8 +54,8 @@
       "id": "b1-u08-l05-q04",
       "type": "wordCard",
       "word": "respectable",
-      "exampleEn": "He wore a respectable suit to the interview.",
-      "exampleZh": "他穿了一套體面的西裝去面試。",
+      "exampleEn": "He wanted to look respectable, so he wore a suit to the interview.",
+      "exampleZh": "他想看起來體面一點，所以穿了西裝去面試。",
       "glossZh": "體面的；值得尊敬的",
       "distractorsZh": [
         "破舊的",
@@ -118,8 +118,8 @@
     {
       "id": "b1-u08-l05-q09",
       "type": "listenType",
-      "sentenceEn": "My sister just had a newborn son, so I'm an uncle now.",
-      "sentenceZh": "我姊姊剛生了一個兒子，所以我現在當舅舅了。"
+      "sentenceEn": "My sister has a newborn son, so I'm an uncle now.",
+      "sentenceZh": "我的姊妹有個剛出生的兒子，所以我現在當舅舅了。"
     },
     {
       "id": "b1-u08-l05-q10",
@@ -128,10 +128,10 @@
       "audioZh": "我的姪女和姪子這個週末要來我們家住。",
       "questionZh": "這個週末誰要來住？",
       "options": [
-        "The speaker's niece and her friend.",
-        "Two friends from the speaker's work.",
-        "The speaker's nephew and his dog.",
-        "The children of the speaker's sister or brother."
+        "The speaker's niece and her friend",
+        "Two friends from the speaker's work",
+        "The speaker's nephew and his dog",
+        "The children of the speaker's sister or brother"
       ],
       "answer": 3
     },
@@ -188,8 +188,8 @@
     {
       "id": "b1-u08-l05-q15",
       "type": "reading",
-      "passageEn": "My cousin Linda got married last spring. Her parents are divorced, but both of them came to the wedding and sat at the same table. Linda met her husband through online dating three years ago. He is a quiet, respectable man who currently teaches music. My little niece and nephew carried the flowers. After the party, guests wrote warm greetings in a book. The couple spent their honeymoon in Japan. Now Linda is busy buying clothes for a newborn baby: her own!",
-      "passageZh": "我表姊 Linda 去年春天結婚了。她的父母離婚了，但兩人都來參加婚禮，還坐在同一桌。Linda 三年前透過網路交友認識她先生。他是一位安靜又體面的人，目前在教音樂。我的小姪女和小姪子負責拿花。派對結束後，客人在本子上寫下溫暖的祝福。這對新人去日本度蜜月。現在 Linda 正忙著為一個新生兒買衣服——她自己的寶寶！",
+      "passageEn": "My cousin Linda got married last spring. Her parents are divorced, but both of them came to the wedding and sat at the same table. Linda met her husband through online dating three years ago. He is a quiet, respectable man who currently teaches music. My little niece and nephew carried the flowers. After the party, guests wrote warm greetings in a guest book. The couple spent their honeymoon in Japan. Now Linda is busy buying clothes for a newborn baby: her own!",
+      "passageZh": "我表姊 Linda 去年春天結婚了。她的父母離婚了，但兩人都來參加婚禮，還坐在同一桌。Linda 三年前透過網路交友認識她先生。他是一位安靜又體面的人，目前在教音樂。我的小姪女和小姪子負責拿花。派對結束後，客人在簽名簿上寫下溫暖的祝福。這對新人去日本度蜜月。現在 Linda 正忙著為一個新生兒買衣服——她自己的寶寶！",
       "questions": [
         {
           "questionZh": "Linda 和先生是怎麼認識的？",
@@ -365,6 +365,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（greeting）原位換成翻譯題，沿用題 id b1-u08-l05-q17；目標字沿用 greeting",
         "resolution": "改為 translate：promptZh「我們每年都會寄賀卡給老朋友。」、hintWords [\"greeting\"]、referenceEn [\"We send greeting cards to our old friends every year.\",\"Every year, we send greeting cards to our old friends.\"]、rubricZh [\"用 greeting card 表示「賀卡」（例如 send greeting cards）\",\"「每年」可寫，例如 every year、each year 等\"]（原 makeSentence：instructionZh「用 greeting 造一個句子，說說你平常怎麼和人打招呼或送祝福。」、referenceEn [\"I usually send holiday greetings to my friends by message.\",\"My favorite greeting is a big smile.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

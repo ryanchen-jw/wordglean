@@ -172,7 +172,7 @@
     {
       "id": "c1-u19-l01-q14",
       "type": "reading",
-      "passageEn": "Our school has started a project to become more sustainable. Students noticed that the old classrooms used energy unsustainably: lights stayed on all day, and fans ran even in empty rooms. Now each class has two students who switch things off. To conserve electricity while keeping the air fresh, the school improved natural ventilation by opening windows on both sides of each room. In the garden, students grow vegetable seedlings and add crushed egg shells to the soil to neutralize acid. The head teacher says the old habits were simply unsustainable.",
+      "passageEn": "Our school has started a project to become more sustainable. Students noticed that the old classrooms used energy unsustainably: lights stayed on all day, and fans ran even in empty rooms. Now each class has two students who switch things off. To conserve electricity while keeping the air fresh, the school improved natural ventilation by opening windows on both sides of each room. In the garden, students grow vegetable seedlings and add crushed egg shells to the soil to neutralize acid. The principal says the old habits were simply unsustainable.",
       "passageZh": "我們學校開始了一項計畫，讓學校變得更永續。學生發現，舊教室用電的方式根本無法持續：燈整天開著，連空教室的電扇都在轉。現在每班都有兩位同學負責關電。為了節省用電、同時保持空氣清新，學校打開每間教室兩側的窗戶，改善自然通風。在菜園裡，學生種下蔬菜幼苗，並在土裡加入壓碎的蛋殼來中和酸性。校長說，舊的習慣根本無法持續下去。",
       "questions": [
         {
@@ -289,6 +289,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sustainable）原位換成翻譯題，沿用題 id c1-u19-l01-q16；目標字沿用 sustainable",
         "resolution": "改為 translate：promptZh「這家咖啡店只用可永續生產的咖啡豆。」、hintWords [\"sustainable\"]、referenceEn [\"This cafe only uses coffee beans that are grown in a sustainable way.\",\"The cafe uses only sustainable coffee beans.\"]、rubricZh [\"「可永續生產的」用 sustainable（例如 sustainable coffee beans、grown in a sustainable way 等）\",\"「只用」可寫，例如 only uses、uses only 等\"]（原 makeSentence：instructionZh「用 sustainable 造一個句子，說說你生活中一個比較環保、能長久持續的習慣。」、referenceEn [\"Taking my own bag when I go shopping is a small sustainable habit.\",\"I try to buy sustainable products, such as clothes made from recycled cotton.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

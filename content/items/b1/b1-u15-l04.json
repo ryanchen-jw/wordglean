@@ -114,10 +114,10 @@
       "audioZh": "要預訂房間，請先付五十美元押金，離開時會退還給你。",
       "questionZh": "押金什麼時候會退還？",
       "options": [
-        "At the end of the stay.",
-        "When you book the room.",
-        "After one month.",
-        "It is never returned."
+        "At the end of the stay",
+        "When you book the room",
+        "After one month",
+        "It is never returned"
       ],
       "answer": 0
     },
@@ -363,6 +363,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lottery）原位換成翻譯題，沿用題 id b1-u15-l04-q16；目標字沿用 lottery",
         "resolution": "改為 translate：promptZh「彩券的中獎號碼每週二公布。」、hintWords [\"lottery\"]、referenceEn [\"The lottery numbers are announced every Tuesday.\",\"They announce the lottery results every Tuesday.\"]、rubricZh [\"用 lottery 表示「彩券；樂透」（例如 the lottery numbers、the lottery results 等）\",\"「公布」可寫，例如 are announced、they announce 等\"]（原 makeSentence：instructionZh「用 lottery 造一個句子，說說你對彩券的看法。」、referenceEn [\"I think the lottery is a waste of money.\",\"I have never bought a lottery ticket in my life.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

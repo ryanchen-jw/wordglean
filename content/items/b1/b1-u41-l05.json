@@ -125,10 +125,10 @@
       "audioZh": "我差點睡著。那部電影讓我覺得很無聊，所以我提早離開了。",
       "questionZh": "說話者為什麼提早離開？",
       "options": [
-        "The speaker fell asleep.",
-        "A friend needed help at home.",
-        "The film wasn't interesting.",
-        "The movie ended early."
+        "The speaker fell asleep",
+        "A friend needed help at home",
+        "The film wasn't interesting",
+        "The movie ended early"
       ],
       "answer": 2
     },
@@ -186,7 +186,7 @@
       "id": "b1-u41-l05-q15",
       "type": "reading",
       "passageEn": "Last summer, our family went camping by a lake. On the first evening, my dad gave my little brother a quick trim because his hair was too long. My sister said the long drive had bored her, but she cheered up when we lit the fire. The fire illuminated our faces. Suddenly, we heard a loud bang: a pot had fallen off the table. My brother laughed so hard that he almost choked on his juice. Later, as we walked back from the lake in the dark, I bumped into a tree and tumbled onto the grass. My dad reminded us never to swim at night, because people can drown. The next morning was glorious and sunny.",
-      "passageZh": "去年夏天，我們全家去湖邊露營。第一天傍晚，爸爸幫我弟弟稍微修剪了頭髮，因為他的頭髮太長了。我姊姊說長途車程讓她很無聊，但我們生起營火後，她就開心起來了。火光照亮了我們的臉。突然，我們聽到砰的一聲巨響：一個鍋子從桌上掉了下來。弟弟笑得太厲害，差點被果汁嗆到。後來，我們在黑暗中從湖邊走回來時，我撞到一棵樹，滾倒在草地上。爸爸提醒我們晚上絕對不要游泳，因為可能會溺水。第二天早上陽光燦爛，天氣美好極了。",
+      "passageZh": "去年夏天，我們全家去湖邊露營。第一天傍晚，爸爸幫我弟弟稍微修剪了頭髮，因為他的頭髮太長了。我的姊妹說長途車程讓她很無聊，但我們生起營火後，她就開心起來了。火光照亮了我們的臉。突然，我們聽到砰的一聲巨響：一個鍋子從桌上掉了下來。弟弟笑得太厲害，差點被果汁嗆到。後來，我們在黑暗中從湖邊走回來時，我撞到一棵樹，滾倒在草地上。爸爸提醒我們晚上絕對不要游泳，因為可能會溺水。第二天早上陽光燦爛，天氣美好極了。",
       "questions": [
         {
           "questionZh": "突然的巨響是怎麼來的？",
@@ -420,6 +420,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bore）原位換成翻譯題，沿用題 id b1-u41-l05-q17；目標字沿用 bore",
         "resolution": "改為 translate：promptZh「他一直講他的工作，讓大家覺得很無聊。」、hintWords [\"bore\"]、referenceEn [\"He talked about his job all the time and bored everyone.\",\"He kept talking about his job, which bored everyone.\"]、rubricZh [\"用 bore 表示「使厭煩」（例如 bored everyone）\"]（原 makeSentence：instructionZh「用 bore 造一個句子，說說什麼事情會讓你覺得無聊。」、referenceEn [\"Waiting in line always bores me.\",\"Math class sometimes bores me, but I still listen.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

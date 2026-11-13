@@ -27,8 +27,8 @@
       "id": "a2-p03-l04-q02",
       "type": "wordCard",
       "word": "take a shower",
-      "exampleEn": "The water is too cold to take a shower.",
-      "exampleZh": "水太冷了，沒辦法淋浴。",
+      "exampleEn": "The water is too cold, so I can't take a shower.",
+      "exampleZh": "水太冷了，我沒辦法淋浴。",
       "glossZh": "淋浴",
       "distractorsZh": [
         "泡澡",
@@ -173,7 +173,7 @@
     {
       "id": "a2-p03-l04-q14",
       "type": "reading",
-      "passageEn": "Last Sunday, my family went to the beach. Dad's car was broken, so we took a bus there. We took a walk along the beach, and I took a photo of a big ship. In the afternoon, Mom made a phone call to Grandma and told her about our day. In the evening, we ate out at a small restaurant. When we got back home, I took a bath and slept very well.",
+      "passageEn": "Last Sunday, my family went to the beach. Dad's car wasn't working, so we took a bus there. We took a walk along the beach, and I took a photo of a big ship. In the afternoon, Mom made a phone call to Grandma and told her about our day. In the evening, we ate out at a small restaurant. When we got back home, I took a bath and slept very well.",
       "passageZh": "上星期天，我們全家去海邊。爸爸的車壞了，所以我們搭公車去。我們沿著海灘散步，我拍了一張大船的照片。下午，媽媽打電話給奶奶，跟她說我們這一天的事。晚上，我們在一家小餐廳吃飯。回到家以後，我泡了個澡，睡得很好。",
       "questions": [
         {
@@ -279,6 +279,18 @@
         "message": "執行長第③關裁示修正：裁示 1：翻譯要點收不用片語但正確的說法（FIX：have a bath）",
         "resolution": "改為 \"建議用片語表達，例如 take a bath、taking a bath 等；不用片語但意思正確的說法（例如 have a bath、bathe 等）也算對\"（原 \"「泡澡」用片語表達，例如 take a bath、taking a bath 等\"）",
         "resolvedAt": "2026-10-05T17:59:17Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

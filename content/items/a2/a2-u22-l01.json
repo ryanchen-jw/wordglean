@@ -197,7 +197,7 @@
     {
       "id": "a2-u22-l01-q16",
       "type": "reading",
-      "passageEn": "Last weekend, my family went hiking. The path was eight kilometers long. My parents and I each carried two liters of water, and my bag was about five kilograms. My little brother carried the least, only a few snacks. At the top, the view was beautiful. That was my favorite part of the day. A sign there said, \"About one million people visit this mountain every year.\" I also found a small stone of only a few grams.",
+      "passageEn": "Last weekend, my family went hiking. The path was eight kilometers long. My parents and I each carried two liters of water, and my bag was about five kilograms. My little brother carried the least, only a few snacks. At the top, the view was beautiful. That was my favorite part of the day. A sign there said, \"About one million people visit this mountain every year.\" I also found a small stone that weighed only a few grams.",
       "passageZh": "上週末，我們全家去健行。步道長八公里。我和爸媽各帶了兩公升的水，我的包包大約五公斤重。我弟弟背得最少，只有幾包零食。山頂的景色很美，那是我一天中最喜歡的部分。那裡的牌子寫著：「每年大約有一百萬人來爬這座山。」我還撿到一顆只有幾公克重的小石頭。",
       "questions": [
         {
@@ -383,6 +383,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（part）原位換成翻譯題，沿用題 id a2-u22-l01-q18；目標字沿用 part",
         "resolution": "改為 translate：promptZh「這本書的第一部分很無聊。」、hintWords [\"part\"]、referenceEn [\"The first part of this book is boring.\",\"The first part of the book is very boring.\"]、rubricZh [\"用 part 表示「部分」（例如 the first part of this book）\",\"「無聊」用 boring（不是 bored）\"]（原 makeSentence：instructionZh「用 part 造一個句子，說說你最喜歡某樣東西的哪一部分。」、referenceEn [\"My favorite part of the movie was the ending.\",\"My favorite part of school is lunch time.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

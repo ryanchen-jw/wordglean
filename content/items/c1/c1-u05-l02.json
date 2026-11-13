@@ -138,10 +138,10 @@
       "audioZh": "沙發太大了，搬不進門，所以我們只好把沙發腳拆掉。",
       "questionZh": "他們為什麼得拆掉沙發腳？",
       "options": [
-        "It was wet.",
-        "It was broken.",
-        "It was too heavy to lift.",
-        "It was too big."
+        "It was wet",
+        "It was broken",
+        "It was too heavy to lift",
+        "It was too big"
       ],
       "answer": 3
     },
@@ -198,8 +198,8 @@
     {
       "id": "c1-u05-l02-q16",
       "type": "reading",
-      "passageEn": "The number of electric scooters in our city has grown at a staggering rate. Five years ago, there were only a few hundred; now there are tens of thousands. Rental companies have proliferated, and some people believe the market is limitless. However, the scooters are bulky and often block sidewalks, and photos of them lying on the ground have circulated widely online. They are also only marginally cheaper than buses, and their effect on traffic has been negligible. Accidents have heightened public concern about safety. Still, many young workers find them immensely convenient for short trips.",
-      "passageZh": "我們城市裡的電動滑板車數量以驚人的速度成長。五年前只有幾百台，現在已經有好幾萬台。租車公司激增，有些人認為這個市場沒有極限。然而，滑板車又大又笨重，常常擋住人行道，它們倒在地上的照片也在網路上廣為流傳。它們也只比公車便宜一點點，對交通的影響則微不足道。一些事故讓大眾更加擔心安全問題。儘管如此，許多年輕上班族覺得短程移動用滑板車非常方便。",
+      "passageEn": "The number of electric scooters in our city has grown at a staggering rate. Five years ago, there were only a few hundred; now there are tens of thousands. Rental companies have proliferated, and some people believe the market is limitless. However, the scooters are bulky and often block sidewalks, and photos of them lying on the ground have circulated widely online. Renting one is also only marginally cheaper than taking the bus, and their effect on traffic has been negligible. Accidents have heightened public concern about safety. Still, many young workers find them immensely convenient for short trips.",
+      "passageZh": "我們城市裡的電動滑板車數量以驚人的速度成長。五年前只有幾百台，現在已經有好幾萬台。租車公司激增，有些人認為這個市場沒有極限。然而，滑板車又大又笨重，常常擋住人行道，它們倒在地上的照片也在網路上廣為流傳。租一台也只比搭公車便宜一點點，對交通的影響則微不足道。一些事故讓大眾更加擔心安全問題。儘管如此，許多年輕上班族覺得短程移動用滑板車非常方便。",
       "questions": [
         {
           "questionZh": "電動滑板車的價格和公車相比如何？",
@@ -316,6 +316,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（limitless）原位換成翻譯題，沿用題 id c1-u05-l02-q18；目標字沿用 limitless",
         "resolution": "改為 translate：promptZh「小孩子的想像力似乎是無限的。」、hintWords [\"limitless\"]、referenceEn [\"Children's imagination seems to be limitless.\",\"The imagination of young children appears limitless.\"]、rubricZh [\"「無限的」用 limitless（例如 seems limitless 等）\",\"「似乎」可寫，例如 seems、appears 等\",\"「小孩子」可寫，例如 children、young children、kids 等\"]（原 makeSentence：instructionZh「用 limitless 造一個句子，說說某樣你覺得好像沒有極限的東西。」、referenceEn [\"I feel that my curiosity about space is limitless.\",\"To me, the choices in a big bookstore seem limitless.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

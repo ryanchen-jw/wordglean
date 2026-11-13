@@ -130,7 +130,7 @@
       "id": "a2-u26-l08-q11",
       "type": "shadowing",
       "sentenceEn": "My sister is very organized. Her room is always clean.",
-      "sentenceZh": "我姊姊很有條理，她的房間總是很乾淨。"
+      "sentenceZh": "我的姊妹很有條理，她的房間總是很乾淨。"
     },
     {
       "id": "a2-u26-l08-q12",
@@ -299,6 +299,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lend）原位換成翻譯題，沿用題 id a2-u26-l08-q16；目標字沿用 lend",
         "resolution": "改為 translate：promptZh「我上週把腳踏車借給了我朋友。」、hintWords [\"lend\"]、referenceEn [\"I lent my bike to my friend last week.\",\"Last week, I lent my friend my bike.\"]、rubricZh [\"用 lend 表示「借出」，過去式是 lent\",\"可寫 lend A to B 或 lend B A（例如 lent my bike to my friend、lent my friend my bike 等）\"]（原 makeSentence：instructionZh「用 lend 造一個句子，說說你借東西給別人，或請別人借東西給你。」、referenceEn [\"I lent my notes to my classmate.\",\"Could you lend me ten dollars?\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

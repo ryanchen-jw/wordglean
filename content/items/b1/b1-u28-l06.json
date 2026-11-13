@@ -13,7 +13,7 @@
       "type": "wordCard",
       "word": "accuse",
       "exampleEn": "She accused her brother of eating her cake.",
-      "exampleZh": "她指控弟弟吃掉了她的蛋糕。",
+      "exampleZh": "她指控她的兄弟吃掉了她的蛋糕。",
       "glossZh": "指控；控告",
       "distractorsZh": [
         "稱讚",
@@ -125,10 +125,10 @@
       "audioZh": "五月到九月之間，狗不准進入海灘。",
       "questionZh": "狗什麼時候不能去海灘？",
       "options": [
-        "From September to May.",
-        "Only on weekends in summer.",
-        "From May to September.",
-        "When the lifeguards are working."
+        "From September to May",
+        "Only on weekends in summer",
+        "From May to September",
+        "When the lifeguards are working"
       ],
       "answer": 2
     },
@@ -432,6 +432,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（immigration）原位換成翻譯題，沿用題 id b1-u28-l06-q17；目標字沿用 immigration",
         "resolution": "改為 translate：promptZh「在入境檢查時，他們問了我很多問題。」、hintWords [\"immigration\"]、referenceEn [\"At immigration, they asked me a lot of questions.\",\"They asked me many questions at immigration.\"]、rubricZh [\"用 immigration 表示「入境檢查」（例如 at immigration）\"]（原 makeSentence：instructionZh「用 immigration 造一個句子，說說你出入境的經驗。」、referenceEn [\"I waited at immigration for an hour last summer.\",\"The line at immigration was very long when I arrived.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

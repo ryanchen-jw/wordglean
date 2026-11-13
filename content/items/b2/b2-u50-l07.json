@@ -64,8 +64,8 @@
       "id": "b2-u50-l07-q05",
       "type": "wordCard",
       "word": "overlap",
-      "exampleEn": "Because of an overlap in the schedule, two meetings were in the same room.",
-      "exampleZh": "因為行程重疊，兩場會議排在同一個房間。",
+      "exampleEn": "Because of an overlap in the schedule, two meetings were booked in the same room at the same time.",
+      "exampleZh": "因為行程重疊，兩場會議被排在同一時間、同一個房間。",
       "glossZh": "重疊；重複部分",
       "distractorsZh": [
         "空檔",
@@ -90,8 +90,8 @@
       "id": "b2-u50-l07-q07",
       "type": "wordCard",
       "word": "zip",
-      "exampleEn": "This bag has a zip inside for small things like keys.",
-      "exampleZh": "這個包包裡面有一個拉鍊袋，可以放鑰匙之類的小東西。",
+      "exampleEn": "The inside pocket of this bag has a zip, so small things like keys won't fall out.",
+      "exampleZh": "這個包包的內袋有拉鍊，鑰匙之類的小東西就不會掉出來。",
       "glossZh": "拉鍊",
       "distractorsZh": [
         "鈕扣",
@@ -185,8 +185,8 @@
     {
       "id": "b2-u50-l07-q15",
       "type": "reading",
-      "passageEn": "Last summer, we visited an island with a volcano. Our guide told us that the last eruption happened about seventy years ago, and that the black rocks under our feet were old lava. She also said that the tourist season and the rainy season overlap, so many visitors get wet. At one point, a group of loud tourists caused an intrusion into a quiet bird area, and she politely asked them to leave. On the way back, a fast boat overtook our small ferry.",
-      "passageZh": "去年夏天，我們去了一座有火山的島。導遊告訴我們，上一次噴發大約在七十年前，我們腳下的黑色岩石就是以前的熔岩。她也說，觀光季和雨季重疊，所以很多遊客都會淋溼。途中有一群吵鬧的遊客闖進安靜的賞鳥區，她很有禮貌地請他們離開。回程時，一艘快艇超過了我們的小渡輪。",
+      "passageEn": "Last summer, we visited an island with a volcano. Our guide told us that the last eruption happened about seventy years ago, and that the black rocks under our feet were old lava. She also said that the tourist season and the rainy season overlap, so many visitors get wet. At one point, a group of loud tourists walked into a quiet bird-watching area, and she politely asked them to leave because their intrusion was scaring the birds. On the way back, a fast boat overtook our small ferry.",
+      "passageZh": "去年夏天，我們去了一座有火山的島。導遊告訴我們，上一次噴發大約在七十年前，我們腳下的黑色岩石就是以前的熔岩。她也說，觀光季和雨季重疊，所以很多遊客都會淋溼。途中有一群吵鬧的遊客闖進安靜的賞鳥區，因為他們的闖入嚇到了鳥，她很有禮貌地請他們離開。回程時，一艘快艇超過了我們的小渡輪。",
       "questions": [
         {
           "questionZh": "為什麼很多遊客會淋溼？",
@@ -234,7 +234,7 @@
         "zip"
       ],
       "referenceEn": [
-        "The zip on this dress is at the back, so it's hard to close by myself.",
+        "The zip on this dress is at the back, so it's hard to zip up by myself.",
         "This dress has a zip at the back, which makes it hard to do up by myself."
       ],
       "rubricZh": [
@@ -380,6 +380,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（zip）原位換成翻譯題，沿用題 id b2-u50-l07-q17；目標字沿用 zip",
         "resolution": "改為 translate：promptZh「這件洋裝的拉鍊在背後，很難自己拉上。」、hintWords [\"zip\"]、referenceEn [\"The zip on this dress is at the back, so it's hard to close by myself.\",\"This dress has a zip at the back, which makes it hard to do up by myself.\"]、rubricZh [\"zip 當名詞「拉鍊」（例如 the zip on this dress、has a zip at the back 等）；寫 zipper 也正確\",\"「拉上」可寫，例如 close、do up、zip up 等\",\"「自己」可寫，例如 by myself、on my own 等\"]（原 makeSentence：instructionZh「用 zip 當名詞造一個句子，說說你的衣服或包包拉鍊出問題的經驗。」、referenceEn [\"The zip on my suitcase broke at the airport.\",\"The zip on my pencil case came off, so I had to buy a new one.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

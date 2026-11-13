@@ -137,8 +137,8 @@
     {
       "id": "b2-u07-l08-q11",
       "type": "shadowing",
-      "sentenceEn": "The forest is so densely planted that little light reaches the ground.",
-      "sentenceZh": "森林的樹種得非常密，幾乎沒有陽光照到地面。"
+      "sentenceEn": "The trees in this forest grow so densely that little light reaches the ground.",
+      "sentenceZh": "這座森林的樹長得非常密，幾乎沒有陽光照到地面。"
     },
     {
       "id": "b2-u07-l08-q12",
@@ -381,6 +381,12 @@
         "message": "執行長裁示：第③關：SUS 要點寫死 hugely 放形容詞前，differs hugely 也正確",
         "resolution": "改為 promptZh「這兩座城市的天氣差異極大。」、referenceEn [\"The weather in the two cities is hugely different.\",\"These two cities have hugely different weather.\"]、rubricZh [\"hugely 可放形容詞前或修飾動詞，表示「極其」（例如 hugely different、differs hugely 等）\",\"「天氣差異極大」可寫，例如 the weather is hugely different、have hugely different weather 等\"]（原 promptZh「這兩座城市的天氣差異極大。」、referenceEn [\"The weather in the two cities is hugely different.\",\"These two cities have hugely different weather.\"]、rubricZh [\"hugely 放在形容詞前，表示「極其」（例如 hugely different 等）\",\"「天氣差異極大」可寫，例如 the weather is hugely different、have hugely different weather 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

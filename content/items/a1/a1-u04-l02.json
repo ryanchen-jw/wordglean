@@ -147,7 +147,7 @@
       "id": "a1-u04-l02-q12",
       "type": "shadowing",
       "sentenceEn": "The baby has two brothers.",
-      "sentenceZh": "這個寶寶有兩個哥哥。"
+      "sentenceZh": "這個寶寶有兩個兄弟。"
     },
     {
       "id": "a1-u04-l02-q13",
@@ -352,6 +352,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（brother）原位換成翻譯題，沿用題 id a1-u04-l02-q17；目標字沿用 brother",
         "resolution": "改為 translate：promptZh「我弟弟喜歡踢足球。」、hintWords [\"brother\"]、referenceEn [\"My little brother likes to play soccer.\",\"My younger brother likes playing soccer.\"]、rubricZh [\"「弟弟」可寫，例如 little brother、younger brother、brother 等\",\"「踢足球」可寫，例如 play soccer、play football 等；like 後面接 to＋原形、動名詞都正確\"]（原 makeSentence：instructionZh「用 brother 造一個句子，說說你的兄弟（或朋友的兄弟）。」、referenceEn [\"I have one brother. He is ten.\",\"My brother is a cop.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

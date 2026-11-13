@@ -185,8 +185,8 @@
     {
       "id": "b2-u08-l08-q15",
       "type": "reading",
-      "passageEn": "Our book club recently read a novel about a young woman facing a difficult dilemma: whether to take over her father's small shop or follow her dream of becoming a painter. At first, she is intent on leaving the town. The writer gives readers small hints that she will change her mind, and the old shop becomes a metaphor for family. Near the end, there is a surprising revelation: her father had once given up his own dream for her. Some members found it hard to conceive of making such a choice. One member, who had disliked the book at first, conceded that the ending was superb. Everyone was convinced it was the best book we had read this year.",
-      "passageZh": "我們的讀書會最近讀了一本小說，講一位年輕女子面臨艱難的兩難：要接手父親的小店，還是追求當畫家的夢想。一開始，她一心想離開小鎮。作者給了讀者一些小小的暗示，透露她會改變心意，而那家老店也成了家庭的隱喻。接近結尾時，出現一個令人驚訝的揭露：她父親曾經為了她放棄自己的夢想。有些成員很難想像自己做出這樣的選擇。一位起初不喜歡這本書的成員也承認結局非常出色。大家都深信這是我們今年讀過最好的一本書。",
+      "passageEn": "Our book club recently read a novel about a young woman facing a difficult dilemma: whether to take over her father's small shop or follow her dream of becoming a painter. At first, she is intent on leaving her hometown. The writer gives readers small hints that she will change her mind, and the old shop becomes a metaphor for family. Near the end, there is a surprising revelation: her father had once given up his own dream for her. Some members found it hard to conceive of making such a choice. One member, who had disliked the book at first, conceded that the ending was superb. Everyone was convinced it was the best book we had read this year.",
+      "passageZh": "我們的讀書會最近讀了一本小說，講一位年輕女子面臨艱難的兩難：要接手父親的小店，還是追求當畫家的夢想。一開始，她一心想離開家鄉。作者給了讀者一些小小的暗示，透露她會改變心意，而那家老店也成了家庭的隱喻。接近結尾時，出現一個令人驚訝的揭露：她父親曾經為了她放棄自己的夢想。有些成員很難想像自己做出這樣的選擇。一位起初不喜歡這本書的成員也承認結局非常出色。大家都深信這是我們今年讀過最好的一本書。",
       "questions": [
         {
           "questionZh": "女主角面臨什麼兩難？",
@@ -481,6 +481,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hint）原位換成翻譯題，沿用題 id b2-u08-l08-q17；目標字沿用 hint",
         "resolution": "改為 translate：promptZh「這道湯裡有一點點檸檬的味道。」、hintWords [\"hint\"]、referenceEn [\"This soup has a hint of lemon.\",\"There is a hint of lemon in this soup.\"]、rubricZh [\"hint 在這裡指「一點點（味道）」（例如 a hint of lemon 等）\",\"「湯裡有」可寫，例如 This soup has、There is … in this soup 等\"]（原 makeSentence：instructionZh「用 hint 造一個句子，說說你給別人或別人給你的一個提示。」、referenceEn [\"I gave my friend a hint about her birthday present.\",\"My boss dropped a hint that I might get a promotion.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

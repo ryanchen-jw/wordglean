@@ -54,7 +54,7 @@
       "type": "wordCard",
       "word": "dancer",
       "exampleEn": "My sister wants to be a dancer.",
-      "exampleZh": "我妹妹想當舞者。",
+      "exampleZh": "我的姊妹想當舞者。",
       "glossZh": "舞者",
       "distractorsZh": [
         "歌手",
@@ -324,6 +324,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（walking）原位換成翻譯題，沿用題 id a2-u15-l03-q16；目標字沿用 walking",
         "resolution": "改為 translate：promptZh「我爸爸喜歡在河邊散步。」、hintWords [\"walking\"]、referenceEn [\"My father likes walking by the river.\",\"My dad enjoys walking along the river.\"]、rubricZh [\"用 walking 表示「散步」（例如 likes walking、enjoys walking 等）\",\"主詞是單數，動詞加 s（例如 likes、enjoys 等）\",\"「在河邊」可寫，例如 by the river、along the river 等\"]（原 makeSentence：instructionZh「用 walking 造一個句子，說說你什麼時候或在哪裡散步。」、referenceEn [\"I go walking in the park after dinner.\",\"Walking with my dog is the best part of my day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

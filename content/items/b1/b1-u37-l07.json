@@ -127,10 +127,10 @@
       "audioZh": "這張地圖好難懂，我們還是找人問路吧。",
       "questionZh": "說話者建議做什麼？",
       "options": [
-        "Buy a better map.",
-        "Ask a person the way.",
-        "Read the map again.",
-        "Wait for a taxi."
+        "Buy a better map",
+        "Ask a person the way",
+        "Read the map again",
+        "Wait for a taxi"
       ],
       "answer": 1
     },
@@ -138,7 +138,7 @@
       "id": "b1-u37-l07-q11",
       "type": "shadowing",
       "sentenceEn": "He secretly read his sister's diary.",
-      "sentenceZh": "他偷偷看了姊姊的日記。"
+      "sentenceZh": "他偷偷看了他姊妹的日記。"
     },
     {
       "id": "b1-u37-l07-q12",
@@ -451,6 +451,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u37-l04-q16 雷同（兩題都用「帶來／帶進」（bring）），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「她偷偷地為媽媽準備了生日蛋糕。」、referenceEn [\"She secretly made a birthday cake for her mother.\",\"She made her mom a birthday cake secretly.\"]、rubricZh [\"用 secretly 表示「偷偷地」（位置不限，例如 secretly made、made … secretly 等）\"]（原 promptZh「他偷偷地把狗帶進了房間。」、referenceEn [\"He secretly brought the dog into his room.\",\"He brought the dog into his room secretly.\"]、rubricZh [\"secretly 表示「偷偷地、秘密地」，例如 secretly bring… 等說法\",\"時態配合內容（例如說過去的事用過去式等）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

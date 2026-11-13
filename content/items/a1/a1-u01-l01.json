@@ -107,7 +107,7 @@
       "type": "wordCard",
       "word": "have",
       "exampleEn": "I have two brothers.",
-      "exampleZh": "我有兩個哥哥。",
+      "exampleZh": "我有兩個兄弟。",
       "glossZh": "有；擁有",
       "distractorsZh": [
         "是",
@@ -188,14 +188,14 @@
       "id": "a1-u01-l01-q15",
       "type": "reading",
       "passageEn": "Ben is ten. He has a sister and a dog. They live in a small house. In the morning, Ben and his sister walk to school. The dog stays at home with their father.",
-      "passageZh": "Ben 十歲。他有一個妹妹和一隻狗。他們住在一間小房子裡。早上，Ben 和妹妹走路上學。狗和爸爸待在家裡。",
+      "passageZh": "Ben 十歲。他有一個姊妹和一隻狗。他們住在一間小房子裡。早上，Ben 和他的姊妹走路上學。狗和爸爸待在家裡。",
       "questions": [
         {
           "questionZh": "Ben 有什麼？",
           "options": [
             "兩隻小狗和一個哥哥",
             "一個哥哥和一隻小貓",
-            "一個妹妹和一隻狗"
+            "一個姊妹和一隻狗"
           ],
           "answer": 2
         },
@@ -362,6 +362,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（the）原位換成翻譯題，沿用題 id a1-u01-l01-q17；目標字沿用 the",
         "resolution": "改為 translate：promptZh「請關窗戶。」、hintWords [\"the\"]、referenceEn [\"Please close the window.\",\"Close the window, please.\"]、rubricZh [\"「窗戶」指眼前那扇，可寫，例如 the window、the windows 等\",\"請求可寫，例如 Please close…、Could you close… 等\"]（原 makeSentence：instructionZh「用 the 造一個句子，說說房間裡某樣東西在哪裡。」、referenceEn [\"The pen is on the desk.\",\"The bag is under the chair.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].options[2]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

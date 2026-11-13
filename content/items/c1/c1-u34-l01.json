@@ -159,8 +159,8 @@
     {
       "id": "c1-u34-l01-q13",
       "type": "reading",
-      "passageEn": "Our school library recently tested a new self-service machine for borrowing books. Students can personalize the screen with their favorite colors, and a reader checks the magnetic strip in each book. During the first week, the machine malfunctioned twice when too many students used it at once. The company that made it then added more buffer memory so that it could handle more requests at the same time. The library also bought portable reading lamps made of light synthetic material. Most students now prefer the machine to waiting in line at the front desk.",
-      "passageZh": "我們學校圖書館最近試用了一台新的自助借書機。學生可以用自己喜歡的顏色設定專屬畫面，讀取器會檢查每本書裡的磁條。第一週，太多學生同時使用時，機器故障了兩次。製造商隨後增加了更多緩衝記憶體，讓它能同時處理更多請求。圖書館還買了用輕巧合成材料製成的隨身閱讀燈。現在大多數學生都比較喜歡用機器，而不是在櫃台排隊。",
+      "passageEn": "Our school library recently tested a new self-service machine for borrowing books. Students can personalize the screen with their favorite colors, and the machine reads the magnetic strip in each book. During the first week, the machine malfunctioned twice when too many students used it at once. The company that made it then added more buffer memory so that it could handle more requests at the same time. The library also bought portable reading lamps made of light synthetic material. Most students now prefer using the machine to waiting in line at the front desk.",
+      "passageZh": "我們學校圖書館最近試用了一台新的自助借書機。學生可以用自己喜歡的顏色設定專屬畫面，機器會讀取每本書裡的磁條。第一週，太多學生同時使用時，機器故障了兩次。製造商隨後增加了更多緩衝記憶體，讓它能同時處理更多請求。圖書館還買了用輕巧合成材料製成的隨身閱讀燈。現在大多數學生都比較喜歡用機器，而不是在櫃台排隊。",
       "questions": [
         {
           "questionZh": "機器第一週為什麼故障？",
@@ -276,6 +276,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（portable）原位換成翻譯題，沿用題 id c1-u34-l01-q15；目標字沿用 portable",
         "resolution": "改為 translate：promptZh「這位街頭藝人帶著一台可攜式電子琴到處表演。」、hintWords [\"portable\"]、referenceEn [\"The street performer carries a portable keyboard and plays everywhere.\",\"The street musician takes a portable keyboard to perform in many places.\"]、rubricZh [\"「可攜式的」用 portable（例如 a portable keyboard 等）\",\"「街頭藝人」可寫，例如 street performer、street musician 等\",\"「到處表演」可寫，例如 plays everywhere、performs in many places 等\"]（原 makeSentence：instructionZh「用 portable 造一個句子，說說一樣你常帶著走的電子產品。」、referenceEn [\"I keep a small portable fan on my desk at work.\",\"I use a small portable keyboard with my tablet.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -127,9 +127,9 @@
       "audioZh": "抱歉，我們今天沒營業，請明天再來。",
       "questionZh": "店今天怎麼了？",
       "options": [
-        "It is very busy.",
-        "It is open late.",
-        "It is closed."
+        "It is very busy",
+        "It is open late",
+        "It is closed"
       ],
       "answer": 2
     },
@@ -366,6 +366,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（dirty）原位換成翻譯題，沿用題 id a1-u21-l06-q17；目標字沿用 dirty",
         "resolution": "改為 translate：promptZh「別把髒衣服放在床上。」、hintWords [\"dirty\"]、referenceEn [\"Don't put dirty clothes on the bed.\",\"Do not put your dirty clothes on the bed.\"]、rubricZh [\"dirty 放在名詞前（例如 dirty clothes）\",\"否定命令可寫，例如 Don't put…、Please don't put… 等\"]（原 makeSentence：instructionZh「用 dirty 造一個句子，說說髒掉的東西。」、referenceEn [\"My car is very dirty.\",\"Please wash your dirty hands.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

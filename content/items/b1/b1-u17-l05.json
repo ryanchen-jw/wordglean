@@ -125,10 +125,10 @@
       "audioZh": "往港口的公車站在麵包店附近的穿越道旁邊。",
       "questionZh": "往港口的公車站在哪裡？",
       "options": [
-        "At the harbor.",
-        "Inside the bakery.",
-        "Near the bank.",
-        "Beside the crossing."
+        "At the harbor",
+        "Inside the bakery",
+        "Near the bank",
+        "Beside the crossing"
       ],
       "answer": 3
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u17-l05-q15",
       "type": "reading",
-      "passageEn": "Long ago, settlers came to this northwestern coast and built a small harbor. Later, they dug a canal to carry goods to towns further from the sea. An emperor once visited and called the place \"a haven of peace\". Today, a crossing near the harbor helps people walk safely to the canal, which is a popular place for photos. Fishing boats still bring fresh fish to the harbor every morning, and restaurants nearby serve it at lunch.",
+      "passageEn": "Long ago, settlers came to this northwestern coast and built a small harbor. Later, they dug a canal to carry goods to towns further from the sea. An emperor once visited and called the place \"a haven of peace.\" Today, a crossing near the harbor helps people walk safely to the canal, which is a popular place for photos. Fishing boats still bring fresh fish to the harbor every morning, and restaurants nearby serve it at lunch.",
       "passageZh": "很久以前，移民來到這片西北海岸，建了一座小港口。後來他們挖了一條運河，把貨物運到離海較遠的城鎮。曾有一位皇帝來訪，稱這裡是「和平的避風港」。如今，港口附近有一條行人穿越道，讓人可以安全走到運河邊，那裡是熱門的拍照地點。漁船仍然每天早上把新鮮的魚運到港口，附近的餐廳在午餐時供應。",
       "questions": [
         {
@@ -362,6 +362,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（emperor）原位換成翻譯題，沿用題 id b1-u17-l05-q17；目標字沿用 emperor",
         "resolution": "改為 translate：promptZh「他十歲就當上了皇帝。」、hintWords [\"emperor\"]、referenceEn [\"He became emperor when he was only ten.\",\"He became emperor at the age of ten.\"]、rubricZh [\"用 emperor 表示「皇帝」（例如 became emperor；寫 became the emperor 也正確）\",\"「十歲」可寫，例如 when he was ten、at the age of ten 等\"]（原 makeSentence：instructionZh「用 emperor 造一個句子，說說你知道或讀過的一位皇帝。」、referenceEn [\"I read a story about a kind emperor.\",\"I learned that this emperor built many roads and canals.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

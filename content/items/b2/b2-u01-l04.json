@@ -17,7 +17,7 @@
       "word": "amongst",
       "exampleEn": "This book is popular amongst young office workers.",
       "exampleZh": "這本書在年輕上班族之間很受歡迎。",
-      "glossZh": "在⋯之中；在⋯之間",
+      "glossZh": "在⋯之中；在⋯之間；（英式）",
       "distractorsZh": [
         "在⋯之上",
         "在⋯之後",
@@ -105,7 +105,7 @@
     {
       "id": "b2-u01-l04-q08",
       "type": "listenType",
-      "sentenceEn": "Admittedly, the hotel was far from the center, but the rooms were lovely.",
+      "sentenceEn": "Admittedly, the hotel was far from the city center, but the rooms were lovely.",
       "sentenceZh": "誠然，那家飯店離市中心很遠，但房間很漂亮。"
     },
     {
@@ -394,6 +394,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（conversely）原位換成翻譯題，沿用題 id b2-u01-l04-q16；目標字沿用 conversely",
         "resolution": "改為 translate：promptZh「這家店平日很安靜；相反地，週末總是擠滿了人。」、hintWords [\"conversely\"]、referenceEn [\"This shop is quiet on weekdays; conversely, it is always crowded on weekends.\",\"The shop is quiet during the week. Conversely, it is always full of people on weekends.\"]、rubricZh [\"conversely 帶出相反的情況，可放分號後或新句句首（例如 ; conversely,、. Conversely, 等）\",\"「平日」可寫，例如 on weekdays、during the week 等\",\"「擠滿了人」可寫，例如 crowded、full of people、packed 等；always 位置不扣分\"]（原 makeSentence：instructionZh「用 conversely 造一個句子，比較兩種相反的情況（例如平日和假日的你）。」、referenceEn [\"On weekdays I get up at six; conversely, on weekends I sleep until ten.\",\"I find reading on paper easy. Conversely, reading on a screen makes me tired.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

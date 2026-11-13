@@ -125,10 +125,10 @@
       "audioZh": "待在室內！龍捲風來了，十分鐘內就會到這裡。",
       "questionZh": "說話者要大家做什麼？",
       "options": [
-        "Go out in ten minutes.",
-        "Drive to the next town.",
-        "Don't go outdoors.",
-        "Close all the shops."
+        "Go out in ten minutes",
+        "Drive to the next town",
+        "Don't go outdoors",
+        "Close all the shops"
       ],
       "answer": 2
     },
@@ -166,7 +166,7 @@
     {
       "id": "b1-u39-l03-q14",
       "type": "mcq",
-      "stemEn": "A baby ____ swims next to its mother in the sea for years.",
+      "stemEn": "A baby ____ stays close to its mother in the sea for years.",
       "stemZh": "小海豚會在海裡跟在媽媽身邊好幾年。",
       "options": [
         "dolphin",
@@ -390,6 +390,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（puppy）原位換成翻譯題，沿用題 id b1-u39-l03-q17；目標字沿用 puppy",
         "resolution": "改為 translate：promptZh「這隻小狗還不到三個月大。」、hintWords [\"puppy\"]、referenceEn [\"This puppy is less than three months old.\",\"The puppy is not even three months old.\"]、rubricZh [\"用 puppy 表示「小狗」\"]（原 makeSentence：instructionZh「用 puppy 造一個句子，說說你和小狗的經驗或願望。」、referenceEn [\"I want to have a puppy someday.\",\"I always play with my neighbor's puppy.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

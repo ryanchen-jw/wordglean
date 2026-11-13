@@ -127,10 +127,10 @@
       "audioZh": "我阿姨是一位專門處理家庭問題的律師。",
       "questionZh": "阿姨專門處理什麼？",
       "options": [
-        "Problems with old houses.",
-        "Trouble within families.",
-        "Car accidents.",
-        "Shop rules."
+        "Problems with old houses",
+        "Trouble within families",
+        "Car accidents",
+        "Shop rules"
       ],
       "answer": 1
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u41-l03-q15",
       "type": "reading",
-      "passageEn": "On my first day at a new school, I didn't know anyone. I hesitated at the door of my classroom. When I finally walked in, I stumbled over a bag and almost fell. Everyone laughed, and I felt embarrassed, but a girl named Ella helped me up. Later, I found out that she wants to specialize in science when she grows up, just like me. In science class, we watched salt dissolve in water. Ella and I interacted a lot during the class, and we became friends. My little sister thinks I have a crush on her, but she is just my best friend. Our class also united to plan a party, and we explored the surrounding park together.",
-      "passageZh": "轉學第一天，我誰也不認識。我在教室門口猶豫了一下。終於走進去時，我被一個書包絆了一下，差點跌倒。大家都笑了，我覺得好尷尬，但一個叫 Ella 的女生扶我起來。後來我發現，她長大後想專攻科學，就跟我一樣。自然課上，我們看著鹽在水裡溶解。課堂上 Ella 和我有很多互動，我們成了朋友。我妹妹以為我暗戀她，但她只是我最好的朋友。我們班也團結起來籌備一場派對，還一起去探索了周圍的公園。",
+      "passageEn": "On my first day at a new school, I didn't know anyone. I hesitated at the door of my classroom. When I finally walked in, I stumbled over a bag and almost fell. Everyone laughed, and I felt embarrassed, but a girl named Ella helped me up. Later, I found out that she wants to specialize in science when she grows up, just like me. In science class, we watched salt dissolve in water. Ella and I interacted a lot during the class, and we became friends. My little sister thinks I have a crush on Ella, but she is just my best friend. Our class also united to plan a party, and we explored the surrounding area together.",
+      "passageZh": "轉學第一天，我誰也不認識。我在教室門口猶豫了一下。終於走進去時，我被一個書包絆了一下，差點跌倒。大家都笑了，我覺得好尷尬，但一個叫 Ella 的女生扶我起來。後來我發現，她長大後想專攻科學，就跟我一樣。自然課上，我們看著鹽在水裡溶解。課堂上 Ella 和我有很多互動，我們成了朋友。我妹妹以為我暗戀 Ella，但她只是我最好的朋友。我們班也團結起來籌備一場派對，還一起去探索了周圍一帶。",
       "questions": [
         {
           "questionZh": "作者走進教室時發生了什麼事？",
@@ -392,6 +392,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（interact）原位換成翻譯題，沿用題 id b1-u41-l03-q17；目標字沿用 interact",
         "resolution": "改為 translate：promptZh「在這座博物館，遊客可以和展品互動。」、hintWords [\"interact\"]、referenceEn [\"In this museum, visitors can interact with the displays.\",\"This museum lets visitors interact with the things on show.\"]、rubricZh [\"用 interact with 表示「和…互動」\"]（原 makeSentence：instructionZh「用 interact 造一個句子，說說你和別人互動的方式。」、referenceEn [\"I like to interact with people from other countries online.\",\"I interact with my classmates in group work.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

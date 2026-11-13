@@ -174,10 +174,10 @@
       "id": "a1-u22-l06-q14",
       "type": "reading",
       "passageEn": "For her birthday, Nina gets a DVD about a fairy and a princess. Her brother gives her a bright yellow kite. Her grandfather gives her an old CD player and some CDs. In the afternoon, they all swim in the swimming pool. It is a wonderful birthday.",
-      "passageZh": "Nina 生日時收到一片關於仙女和公主的 DVD。哥哥送她一個亮黃色的風箏，爺爺送她一台舊的 CD 播放器和幾張 CD。下午他們全都去游泳池游泳。真是個美好的生日。",
+      "passageZh": "Nina 生日時收到一片關於仙女和公主的 DVD。她的兄弟送她一個亮黃色的風箏，爺爺送她一台舊的 CD 播放器和幾張 CD。下午他們全都去游泳池游泳。真是個美好的生日。",
       "questions": [
         {
-          "questionZh": "哥哥送 Nina 什麼？",
+          "questionZh": "Nina 的兄弟送她什麼？",
           "options": [
             "CD 播放器",
             "DVD 光碟",
@@ -347,6 +347,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（princess）原位換成翻譯題，沿用題 id a1-u22-l06-q16；目標字沿用 princess",
         "resolution": "改為 translate：promptZh「這本書是關於一位公主的故事。」、hintWords [\"princess\"]、referenceEn [\"This book is about a princess.\",\"This story is about a princess.\"]、rubricZh [\"「關於」可寫，例如 is about 等\",\"princess 前面加 a、the 等\"]（原 makeSentence：instructionZh「用 princess 造一個句子，說說故事或電影裡的公主。」、referenceEn [\"In the story, the princess has a white horse.\",\"My daughter wants to be a princess.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

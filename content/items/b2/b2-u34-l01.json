@@ -50,7 +50,7 @@
       "id": "b2-u34-l01-q03",
       "type": "wordCard",
       "word": "route",
-      "exampleEn": "We chose the coast route because the views are better.",
+      "exampleEn": "We chose the coastal route because the views are better.",
       "exampleZh": "我們選了沿海的路線，因為風景比較好。",
       "glossZh": "路線",
       "distractorsZh": [
@@ -368,6 +368,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（accommodation）原位換成翻譯題，沿用題 id b2-u34-l01-q17；目標字沿用 accommodation",
         "resolution": "改為 translate：promptZh「學校為所有參加夏令營的學生提供住宿。」、hintWords [\"accommodation\"]、referenceEn [\"The school provides accommodation for all students at the summer camp.\",\"Accommodation is provided for every student who joins the summer camp.\"]、rubricZh [\"「住宿」可寫，例如 accommodation 等\",\"「提供」可寫，例如 provides、offers、is provided for 等\",\"「參加夏令營的學生」可寫，例如 students at the summer camp、students who join the camp 等\"]（原 makeSentence：instructionZh「用 accommodation 造一個句子，說說你旅行時喜歡住什麼樣的地方。」、referenceEn [\"I prefer cheap accommodation near the train station when I travel.\",\"When I travel, I look for accommodation with a kitchen.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

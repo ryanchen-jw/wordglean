@@ -188,8 +188,8 @@
     {
       "id": "b2-u41-l05-q15",
       "type": "reading",
-      "passageEn": "Last month, I joined a weekend woodcarving class at the community center. The teacher, Mr. Ho, showed us how to grip the knife firmly and carve slowly, always moving the blade away from the body. On the first day, I ripped my sleeve on a sharp corner of the table, but nobody laughed. The class was held in an old kitchen, so we hung our coats on metal hooks above the old sink. After each class, we had to drain the water from the cleaning bucket. During the third lesson, the lights went out, and the class was suspended for half an hour. Mr. Ho praised the originality of my design, which really boosted my confidence. Now I am carving a small bird for my mother.",
-      "passageZh": "上個月，我參加了活動中心的週末木雕課。老師何先生示範怎麼牢牢握住刀子、慢慢地雕，刀刃總是朝外、遠離身體。第一天，我的袖子被桌子尖尖的角勾破了，但沒有人笑我。上課地點是一間舊廚房，所以我們把外套掛在舊水槽上方的金屬掛鉤上。每次下課後，我們都得把清潔水桶裡的水倒掉。第三堂課時停電了，課程暫停了半個小時。何老師稱讚我的設計很有原創性，這真的讓我更有信心。現在我正在雕一隻小鳥要送給媽媽。",
+      "passageEn": "Last month, I joined a weekend woodcarving class at the community center. The teacher, Mr. Ho, showed us how to grip the knife firmly and carve slowly, always moving the blade away from the body. On the first day, I ripped my sleeve on a sharp corner of the table, but nobody laughed. The class was held in an old kitchen, and we hung our coats on metal hooks above the old sink. After each class, we had to drain the water from the cleaning bucket. During the third lesson, the lights went out, and the class was suspended for half an hour. Mr. Ho praised the originality of my design, which really boosted my confidence. Now I am carving a small bird for my mother.",
+      "passageZh": "上個月，我參加了活動中心的週末木雕課。老師何先生示範怎麼牢牢握住刀子、慢慢地雕，刀刃總是朝外、遠離身體。第一天，我的袖子被桌子尖尖的角勾破了，但沒有人笑我。上課地點是一間舊廚房，我們把外套掛在舊水槽上方的金屬掛鉤上。每次下課後，我們都得把清潔水桶裡的水倒掉。第三堂課時停電了，課程暫停了半個小時。何老師稱讚我的設計很有原創性，這真的讓我更有信心。現在我正在雕一隻小鳥要送給媽媽。",
       "questions": [
         {
           "questionZh": "第三堂課發生了什麼事？",
@@ -365,6 +365,12 @@
         "message": "執行長裁示：第③關：SUS 與同課閱讀末句（carving a small bird for my mother）幾乎同一件事，改用釋義並列的「切（肉）」義",
         "resolution": "改為 promptZh「爸爸在餐桌上切烤雞。」、referenceEn [\"Dad carved the roast chicken at the table.\",\"My father carved the roast chicken at the dinner table.\"]、rubricZh [\"carve 這裡指「切（肉）」（例如 carved the roast chicken 等）\",\"時態可用過去式或現在式（例如 carved、carves 等）\"]（原 promptZh「我爺爺用一塊木頭雕了一隻小鳥給我。」、referenceEn [\"My grandfather carved a little bird out of wood for me.\",\"My grandpa carved a small bird from a piece of wood for me.\"]、rubricZh [\"carve 的用法，例如 carved a bird out of wood、carved … from a piece of wood 等\",\"時態可用過去式或現在完成式（例如 carved、has carved 等）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

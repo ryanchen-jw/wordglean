@@ -112,10 +112,10 @@
       "audioZh": "我們辦公室還在用老舊的電腦系統，所以報告要花好幾個小時才印得出來。",
       "questionZh": "報告為什麼要花好幾個小時才印得出來？",
       "options": [
-        "The computers are very old.",
-        "The printer is out of paper.",
-        "Nobody knows how to print.",
-        "The reports are very long."
+        "The computers are very old",
+        "The printer is out of paper",
+        "Nobody knows how to print",
+        "The reports are very long"
       ],
       "answer": 0
     },
@@ -153,8 +153,8 @@
     {
       "id": "c1-u02-l02-q13",
       "type": "mcq",
-      "stemEn": "The factory announced the ____ of production at its old plant.",
-      "stemZh": "工廠宣佈舊廠停止生產。",
+      "stemEn": "The company announced the ____ of production at its old factory.",
+      "stemZh": "公司宣佈舊工廠停止生產。",
       "options": [
         "ceaselessly",
         "antiquity",
@@ -172,7 +172,7 @@
     {
       "id": "c1-u02-l02-q14",
       "type": "reading",
-      "passageEn": "The town museum is small, but it holds coins and pots from antiquity. For years, it used antiquated display cases that let in dust, and visitors complained that the labels were hard to read. Last spring, the museum closed for two months. The cessation of normal activities gave the staff a welcome respite from the ceaseless flow of school groups, and they used the time to install new cases and clearer labels. The work was principally paid for by local families. There was one small lapse: nobody told the schools beforehand, so a few teachers arrived with their classes at a closed door.",
+      "passageEn": "The town museum is small, but it holds coins and pots from antiquity. For years, it used antiquated display cases that let in dust, and visitors complained that the labels were hard to read. Last spring, the museum closed for two months. The cessation of normal activities gave the staff a welcome respite from the ceaseless flow of school groups, and they used the time to install new cases and clearer labels. The work was principally paid for by local families. There was one small lapse: nobody told the schools beforehand, so a few teachers arrived with their classes to find the doors closed.",
       "passageZh": "鎮上的博物館很小，但收藏了古代的錢幣和陶器。多年來，館內使用的老舊展示櫃會進灰塵，參觀者也抱怨標示很難看懂。去年春天，博物館休館兩個月。平常的活動暫停，讓工作人員從絡繹不絕的學校團體中得到難得的喘息，他們利用這段時間裝設了新的展示櫃和更清楚的標示。這項工程主要由當地家庭出資。過程中有一個小疏失：沒有人事先通知學校，所以有幾位老師帶著學生來到館前，卻吃了閉門羹。",
       "questions": [
         {
@@ -295,6 +295,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（antiquated）原位換成翻譯題，沿用題 id c1-u02-l02-q16；目標字沿用 antiquated",
         "resolution": "改為 translate：promptZh「很多年輕人覺得寫信是一種過時的溝通方式。」、hintWords [\"antiquated\"]、referenceEn [\"Many young people think letter writing is an antiquated way to communicate.\",\"Many young people see writing letters as an antiquated way of communicating.\"]、rubricZh [\"antiquated 表示「過時的」（例如 an antiquated way 等）\",\"「寫信」可寫，例如 writing letters、letter writing 等\",\"「覺得」可寫，例如 think、feel、see…as 等\"]（原 makeSentence：instructionZh「用 antiquated 造一個句子，描述你覺得已經過時的某樣東西或做法。」、referenceEn [\"I think paying bills by check is an antiquated habit.\",\"My old laptop feels antiquated compared with my new phone.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

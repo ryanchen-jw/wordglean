@@ -185,8 +185,8 @@
     {
       "id": "b2-u06-l06-q15",
       "type": "reading",
-      "passageEn": "The old theater in our city was once a grand building, but for years it was in poor condition. Last year, the city decided to repair it, despite the high cost. The designers said that keeping its original style was crucial, so they studied old photos and copied every detail precisely. Admittedly, the fundamental problem was money: the work needed a constant supply of funds. Some people thought it was odd to spend so much on an old building, but the mayor was consistent in her support. When the theater opened again, some people literally cried with joy. Today, it is the pride of the city.",
-      "passageZh": "我們城市的老劇院曾經是一棟宏偉的建築，但多年來狀況很差。去年，市政府不顧高昂的成本，決定整修它。設計師們說，保留原本的風格非常關鍵，所以他們研究老照片，把每個細節都精確地複製出來。不可否認，最根本的問題是錢：這項工程需要源源不斷的資金。有些人覺得花這麼多錢在一棟舊建築上很奇怪，但市長始終如一地支持。劇院重新開幕時，有些人真的喜極而泣。如今，它是這座城市的驕傲。",
+      "passageEn": "The old theater in our city was once a grand building, but for years it was in poor condition. Last year, the city decided to repair it, despite the high cost. The designers said that keeping its original style was crucial, so they studied old photos and copied every detail precisely. The fundamental problem, however, was money: the work needed a constant supply of funds. Some people thought it was odd to spend so much on an old building, but the mayor was consistent in her support. When the theater opened again, some people literally cried with joy. Today, it is the pride of the city.",
+      "passageZh": "我們城市的老劇院曾經是一棟宏偉的建築，但多年來狀況很差。去年，市政府不顧高昂的成本，決定整修它。設計師們說，保留原本的風格非常關鍵，所以他們研究老照片，把每個細節都精確地複製出來。不過，最根本的問題是錢：這項工程需要源源不斷的資金。有些人覺得花這麼多錢在一棟舊建築上很奇怪，但市長始終如一地支持。劇院重新開幕時，有些人真的喜極而泣。如今，它是這座城市的驕傲。",
       "questions": [
         {
           "questionZh": "設計師為什麼研究老照片？",
@@ -433,6 +433,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（literally）原位換成翻譯題，沿用題 id b2-u06-l06-q17；目標字沿用 literally",
         "resolution": "改為 translate：promptZh「那家店真的離我家走路只要一分鐘。」、hintWords [\"literally\"]、referenceEn [\"That shop is literally a one-minute walk from my house.\",\"The shop is literally just one minute's walk from my home.\"]、rubricZh [\"literally 用來強調「真的、毫不誇張」（例如 is literally a one-minute walk 等）\",\"「走路一分鐘」可寫，例如 a one-minute walk、one minute's walk 等\"]（原 makeSentence：instructionZh「用 literally 造一個句子，強調某件事真的發生了（不是誇張）。」、referenceEn [\"I literally ran all the way to the station this morning.\",\"I literally waited three hours for the bus yesterday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

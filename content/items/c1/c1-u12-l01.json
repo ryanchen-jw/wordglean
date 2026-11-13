@@ -15,7 +15,7 @@
       "id": "c1-u12-l01-q01",
       "type": "wordCard",
       "word": "appliance",
-      "exampleEn": "Turn off all electrical appliances before you go on holiday.",
+      "exampleEn": "Turn off all electrical appliances before you go on vacation.",
       "exampleZh": "出門度假前，把所有電器的電源都關掉。",
       "glossZh": "家電；（電器）用具",
       "distractorsZh": [
@@ -105,8 +105,8 @@
     {
       "id": "c1-u12-l01-q08",
       "type": "listenType",
-      "sentenceEn": "We bought a new washing machine and two other kitchen appliances.",
-      "sentenceZh": "我們買了一台新洗衣機和另外兩樣廚房家電。"
+      "sentenceEn": "We bought a new fridge and two other kitchen appliances.",
+      "sentenceZh": "我們買了一台新冰箱和另外兩樣廚房家電。"
     },
     {
       "id": "c1-u12-l01-q09",
@@ -297,6 +297,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（appliance）原位換成翻譯題，沿用題 id c1-u12-l01-q16；目標字沿用 appliance",
         "resolution": "改為 translate：promptZh「這間二手店專門修理老舊的家電。」、hintWords [\"appliance\"]、referenceEn [\"This second-hand shop specializes in repairing old appliances.\",\"The second-hand shop mainly repairs old household appliances.\"]、rubricZh [\"「家電」用 appliance 的複數（例如 old appliances、household appliances 等）\",\"「專門」可寫，例如 specializes in、mainly 等\"]（原 makeSentence：instructionZh「用 appliance 造一個句子，說說你家裡最常用的一樣家電。」、referenceEn [\"The appliance I use most at home is my rice cooker.\",\"My most useful kitchen appliance is a small oven.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

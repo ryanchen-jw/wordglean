@@ -110,14 +110,14 @@
     {
       "id": "b1-u36-l07-q09",
       "type": "listenChoice",
-      "audioEn": "Use your common sense: don't leave your bag alone at the airport.",
+      "audioEn": "Use your common sense: don't leave your bag by itself at the airport.",
       "audioZh": "運用常識：在機場不要把包包放著不管。",
       "questionZh": "說話者提醒什麼？",
       "options": [
-        "Always keep your bag with you.",
-        "Keep your ticket in your bag.",
-        "Arrive early at the airport.",
-        "Ask someone to help you."
+        "Always keep your bag with you",
+        "Keep your ticket in your bag",
+        "Arrive early at the airport",
+        "Ask someone to help you"
       ],
       "answer": 0
     },
@@ -463,6 +463,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（common sense）原位換成翻譯題，沿用題 id b1-u36-l07-q16；目標字沿用 common sense",
         "resolution": "改為 translate：promptZh「這不需要專業知識，只需要一點常識。」、hintWords [\"common sense\"]、referenceEn [\"You don't need special knowledge for this, just a little common sense.\",\"This doesn't need expert knowledge; it only needs some common sense.\"]、rubricZh [\"用 common sense 表示「常識；判斷力」（不可數，例如 a little common sense）\"]（原 makeSentence：instructionZh「用 common sense 造一個句子，說說一件你覺得是常識的事。」、referenceEn [\"I think it is common sense to say thank you.\",\"I use common sense and check the weather before a trip.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

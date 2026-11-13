@@ -127,10 +127,10 @@
       "audioZh": "火災警報響的時候，不要搭電梯，從走廊盡頭的出口離開。",
       "questionZh": "火災警報響時應該怎麼做？",
       "options": [
-        "Take the elevator down to the first floor.",
-        "Go out through the exit down the hall.",
-        "Wait at the end of the hall for help.",
-        "Call the front desk right away."
+        "Take the elevator down to the first floor",
+        "Go out through the exit down the hall",
+        "Wait at the end of the hall for help",
+        "Call the front desk right away"
       ],
       "answer": 1
     },
@@ -221,7 +221,7 @@
       ],
       "referenceEn": [
         "I'm sorry to interrupt your conversation.",
-        "Sorry for interrupting your talk."
+        "Sorry for interrupting your conversation."
       ],
       "rubricZh": [
         "interrupt 表示「打斷」，後面可直接接受詞（例如 interrupt your conversation）",
@@ -370,6 +370,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（obtain）原位換成翻譯題，沿用題 id b1-u03-l01-q17；目標字沿用 obtain",
         "resolution": "改為 translate：promptZh「你可以在大門口拿到免費的地圖。」、hintWords [\"obtain\"]、referenceEn [\"You can obtain a free map at the main gate.\",\"You can obtain free maps at the main entrance.\"]、rubricZh [\"用 obtain 表示「取得」（例如 obtain a free map；寫 get、pick up 也正確）\",\"「大門口」可寫，例如 the main gate、the main entrance、the front gate 等\"]（原 makeSentence：instructionZh「用 obtain 造一個句子，說說你曾經在哪裡取得某樣東西（例如證件、資料或票）。」、referenceEn [\"I obtained my passport at an office in Taipei.\",\"I obtained the information from the library website.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

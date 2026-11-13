@@ -15,8 +15,8 @@
       "id": "a1-u05-l02-q01",
       "type": "wordCard",
       "word": "case",
-      "exampleEn": "Is it raining? In that case, let's stay home.",
-      "exampleZh": "在下雨嗎？那我們就待在家吧。",
+      "exampleEn": "It is raining. In that case, let's stay home.",
+      "exampleZh": "下雨了。那我們就待在家吧。",
       "glossZh": "情形；情況",
       "distractorsZh": [
         "地方",
@@ -150,8 +150,8 @@
     {
       "id": "a1-u05-l02-q12",
       "type": "shadowing",
-      "sentenceEn": "Are you busy today? In that case, let's meet tomorrow.",
-      "sentenceZh": "你今天很忙嗎？那我們明天見吧。"
+      "sentenceEn": "So you are busy today. In that case, let's meet tomorrow.",
+      "sentenceZh": "所以你今天很忙。那我們明天見吧。"
     },
     {
       "id": "a1-u05-l02-q13",
@@ -476,6 +476,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u05-l06-q16（answer；本題又與單字卡 Your answer is right. 雷同） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
         "resolution": "改為 promptZh「沒錯，你說得對。」、referenceEn [\"Yes, you are right.\",\"Yes, you're right.\"]、rubricZh [\"「你說得對」可寫，例如 you are right、you're right 等；寫 correct 也正確\",\"「沒錯」可寫，例如 Yes、That's right 等\"]（原 promptZh「我的答案是對的嗎？」、referenceEn [\"Is my answer right?\",\"Is my answer correct?\"]、rubricZh [\"問句把 be 動詞放在主詞前面（例如 Is my answer…?）\",\"「對的」可用 right 或 correct\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

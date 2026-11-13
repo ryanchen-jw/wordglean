@@ -186,7 +186,7 @@
     {
       "id": "a1-u19-l03-q15",
       "type": "reading",
-      "passageEn": "Lisa has a dog and a cat. Both of them sleep under her bed. Every evening, she walks the dog around the block. Her cat stays home. Lisa says the cat is not ready for a walk yet. They walk until it gets dark.",
+      "passageEn": "Lisa has a dog and a cat. Both of them sleep under her bed. Every evening, she walks the dog around the block. Her cat stays home. Lisa says the cat is not ready for a walk yet. Lisa and the dog walk until it gets dark.",
       "passageZh": "Lisa 有一隻狗和一隻貓，牠們都睡在她的床底下。每天傍晚，她都帶狗繞著街區散步，貓則待在家裡。Lisa 說貓還沒準備好去散步。她和狗一直走到天黑。",
       "questions": [
         {
@@ -324,6 +324,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lot）原位換成翻譯題，沿用題 id a1-u19-l03-q17；目標字沿用 lot",
         "resolution": "改為 translate：promptZh「這個城市有很多公園。」、hintWords [\"lot\"]、referenceEn [\"This city has a lot of parks.\",\"There are a lot of parks in this city.\"]、rubricZh [\"a lot of 後面接複數名詞（例如 a lot of parks）；寫 lots of、many 也正確\",\"可寫，例如 This city has…、There are … in this city 等\"]（原 makeSentence：instructionZh「用 a lot of 造一個句子，說說你有很多的東西。」、referenceEn [\"I have a lot of books.\",\"I have a lot of toy cars.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

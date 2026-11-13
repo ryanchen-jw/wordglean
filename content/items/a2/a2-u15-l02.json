@@ -186,7 +186,7 @@
     {
       "id": "a2-u15-l02-q15",
       "type": "reading",
-      "passageEn": "Nina has many interests. She loves reading, especially mystery novels. Her favorite hero is a clever old lady who solves strange problems. Nina is also musical. She can play the guitar and has a good sense of rhythm. On her bedroom wall, there are her own drawings and an old photograph of her grandmother.",
+      "passageEn": "Nina has many interests. She loves reading, especially mystery novels. Her favorite hero is a clever old lady who solves strange problems. Nina is also musical. She can play the guitar and has a good sense of rhythm. On her bedroom wall, there are some of her own drawings and an old photograph of her grandmother.",
       "passageZh": "Nina 有很多興趣。她很愛看書，尤其是推理小說。她最喜歡的主角是一位會解開怪事的聰明老太太。Nina 也很有音樂天分，會彈吉他，節奏感也很好。她房間的牆上有她自己畫的圖，還有一張她奶奶的老照片。",
       "questions": [
         {
@@ -330,6 +330,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hero）原位換成翻譯題，沿用題 id a2-u15-l02-q17；目標字沿用 hero",
         "resolution": "改為 translate：promptZh「這部電影的主角是一隻小狗。」、hintWords [\"hero\"]、referenceEn [\"The hero of this movie is a little dog.\",\"This movie's hero is a small dog.\"]、rubricZh [\"用 hero 表示「（故事的）主角」（例如 the hero of this movie、this movie's hero 等）\",\"「電影」可寫，例如 movie、film 等\"]（原 makeSentence：instructionZh「用 hero 造一個句子，說說你心中的英雄是誰，或你喜歡的故事主角。」、referenceEn [\"My grandmother is my hero because she is so brave.\",\"The hero of my favorite book is a young farmer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

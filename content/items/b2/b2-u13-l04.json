@@ -51,8 +51,8 @@
       "id": "b2-u13-l04-q04",
       "type": "wordCard",
       "word": "bikini",
-      "exampleEn": "Bikinis first became popular more than seventy years ago.",
-      "exampleZh": "比基尼在七十多年前開始流行。",
+      "exampleEn": "Bikinis first appeared about eighty years ago.",
+      "exampleZh": "比基尼大約在八十年前首次出現。",
       "glossZh": "比基尼泳裝",
       "distractorsZh": [
         "睡衣",
@@ -115,7 +115,7 @@
     {
       "id": "b2-u13-l04-q09",
       "type": "listenType",
-      "sentenceEn": "She has long, dark eyelashes just like her mother.",
+      "sentenceEn": "She has long, dark eyelashes just like her mother's.",
       "sentenceZh": "她有一雙跟媽媽一樣又長又黑的睫毛。"
     },
     {
@@ -135,8 +135,8 @@
     {
       "id": "b2-u13-l04-q11",
       "type": "shadowing",
-      "sentenceEn": "You can hardly see the stitches on this bag made by hand.",
-      "sentenceZh": "這個手工包包上的針腳幾乎看不出來。"
+      "sentenceEn": "The stitches on this bag were made by hand, but you can hardly see them.",
+      "sentenceZh": "這個包包上的針腳是手工縫的，但幾乎看不出來。"
     },
     {
       "id": "b2-u13-l04-q12",
@@ -166,8 +166,8 @@
     {
       "id": "b2-u13-l04-q14",
       "type": "mcq",
-      "stemEn": "The old cat is very ____, so there is fur all over the house.",
-      "stemZh": "那隻老貓毛很多，所以家裡到處都是貓毛。",
+      "stemEn": "The giant spider had long, ____ legs, so I was too scared to touch it.",
+      "stemZh": "那隻大蜘蛛的腳又長又多毛，我嚇得不敢碰牠。",
       "options": [
         "hairy",
         "tidy",
@@ -186,20 +186,20 @@
       "id": "b2-u13-l04-q15",
       "type": "reading",
       "passageEn": "Before my sister's wedding, the whole family got busy. The hair stylist's schedule was flexible, so she came to our house at six in the morning. My sister has a pale complexion, so the stylist chose soft pink colors and gently curled her eyelashes. My brother, who usually wears only denim, put on a suit for the first time in years. Our hairy dog even got a bow tie! The day before, my sister picked up her rings from the jeweler, and my grandmother added a few last stitches to her dress. After the wedding, my sister flew off on a beach holiday with nothing in her bag but a bikini and a book.",
-      "passageZh": "姊姊婚禮前，全家人都忙了起來。髮型師的時間很有彈性，所以早上六點就來到我們家。姊姊膚色白皙，於是髮型師選了柔和的粉色系，還輕輕地幫她把睫毛夾翹。平常只穿牛仔服的哥哥，好幾年來第一次穿上西裝。連我們家那隻毛茸茸的狗都戴上了領結！婚禮前一天，姊姊去珠寶店取了戒指，奶奶也在她的禮服上縫了最後幾針。婚禮過後，姊姊飛去海灘度假，包包裡只帶了一套比基尼和一本書。",
+      "passageZh": "我的姊妹婚禮前，全家人都忙了起來。髮型師的時間很有彈性，所以早上六點就來到我們家。我的姊妹膚色白皙，於是髮型師選了柔和的粉色系，還輕輕地幫她把睫毛夾翹。平常只穿牛仔服的兄弟，好幾年來第一次穿上西裝。連我們家那隻毛茸茸的狗都戴上了領結！婚禮前一天，我的姊妹去珠寶店取了戒指，奶奶也在她的禮服上縫了最後幾針。婚禮過後，我的姊妹飛去海灘度假，包包裡只帶了一套比基尼和一本書。",
       "questions": [
         {
           "questionZh": "髮型師為什麼選柔和的粉色系？",
           "options": [
             "因為婚禮在春天",
-            "因為姊姊喜歡粉紅色",
-            "因為姊姊膚色白皙",
+            "因為作者的姊妹喜歡粉紅色",
+            "因為作者的姊妹膚色白皙",
             "因為媽媽要求的"
           ],
           "answer": 2
         },
         {
-          "questionZh": "婚禮前一天，姊姊做了什麼？",
+          "questionZh": "婚禮前一天，作者的姊妹做了什麼？",
           "options": [
             "到珠寶店取戒指",
             "去海邊度假",
@@ -356,6 +356,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（denim）原位換成翻譯題，沿用題 id b2-u13-l04-q17；目標字沿用 denim",
         "resolution": "改為 translate：promptZh「牛仔布很耐用，所以很適合拿來做工作服。」、hintWords [\"denim\"]、referenceEn [\"Denim is very strong, so it is good for work clothes.\",\"Because denim lasts a long time, it is great for making work clothes.\"]、rubricZh [\"denim 指「牛仔布」，不可數，動詞用單數（例如 Denim is… 等）\",\"「耐用」可寫，例如 strong、lasts a long time、hard-wearing 等\",\"「適合做工作服」可寫，例如 good for work clothes、great for making work clothes 等\"]（原 makeSentence：instructionZh「用 denim 造一個句子，說說你的牛仔衣物或穿搭習慣。」、referenceEn [\"I wear a denim jacket almost every day in spring.\",\"My favorite pair of denim jeans is ten years old.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].options[1]（中譯長幼）、questions[0].options[2]（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -16,7 +16,7 @@
       "type": "wordCard",
       "word": "wickedly",
       "exampleEn": "He smiled wickedly as he hid his sister's shoes.",
-      "exampleZh": "他一邊藏起妹妹的鞋子，一邊壞壞地笑著。",
+      "exampleZh": "他一邊藏起他姊妹的鞋子，一邊壞壞地笑著。",
       "glossZh": "頑皮使壞地；極其（好笑等）；邪惡地",
       "distractorsZh": [
         "乖巧地；稍微地；善良地",
@@ -128,10 +128,10 @@
       "audioZh": "經過漫長又折磨人的攀爬，山頂的景色讓一切都值得了。",
       "questionZh": "說話者覺得爬山的過程怎麼樣？",
       "options": [
-        "It was short and easy for everyone.",
-        "It was very hard and painful.",
-        "It was boring because there was nothing to see.",
-        "It was quite relaxing."
+        "It was short and easy for everyone",
+        "It was very hard and painful",
+        "It was boring because there was nothing to see",
+        "It was quite relaxing"
       ],
       "answer": 1
     },
@@ -144,7 +144,7 @@
     {
       "id": "c1-u38-l10-q12",
       "type": "shadowing",
-      "sentenceEn": "The new café is refreshingly quiet compared with the busy shops nearby.",
+      "sentenceEn": "The new cafe is refreshingly quiet compared with the busy shops nearby.",
       "sentenceZh": "和附近熱鬧的店比起來，這家新咖啡館安靜得令人耳目一新。"
     },
     {
@@ -330,6 +330,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（headstrong）原位換成翻譯題，沿用題 id c1-u38-l10-q17；目標字沿用 headstrong",
         "resolution": "改為 translate：promptZh「那匹馬很固執，不肯讓任何人騎。」、hintWords [\"headstrong\"]、referenceEn [\"The horse is headstrong and won't let anyone ride it.\",\"That headstrong horse refuses to let anyone ride it.\"]、rubricZh [\"「固執」用 headstrong（例如 is headstrong、that headstrong horse 等）\",\"「不肯」可寫，例如 won't、refuses to 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 headstrong 造一個句子，描述你認識的某個固執任性的人或動物。」、referenceEn [\"My younger brother is too headstrong to ask anyone for directions.\",\"My headstrong cat refuses to eat anything except fish.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

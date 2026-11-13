@@ -14,8 +14,8 @@
       "id": "b1-u29-l07-q01",
       "type": "wordCard",
       "word": "reunification",
-      "exampleEn": "The reunification of the two schools created one large school.",
-      "exampleZh": "兩所學校重新合併成一所大型學校。",
+      "exampleEn": "The reunification of the two villages, which were once one town, took many years.",
+      "exampleZh": "這兩個原本是同一個鎮的村子，花了很多年才重新合併。",
       "glossZh": "重聚；重新結合",
       "distractorsZh": [
         "分手",
@@ -127,10 +127,10 @@
       "audioZh": "我們的社群網路課七點開始，你需要帶自己的手機。",
       "questionZh": "上課要帶什麼？",
       "options": [
-        "Some paper and a pen.",
-        "Your personal phone.",
-        "A photo of yourself.",
-        "Nothing; phones are given."
+        "Some paper and a pen",
+        "Your personal phone",
+        "A photo of yourself",
+        "Nothing; phones are given"
       ],
       "answer": 1
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u29-l07-q15",
       "type": "reading",
-      "passageEn": "Last month, my grandmother's family was finally reunified after twenty years apart. When she was young, her two brothers moved to different countries. Thanks to social networking, my cousin found them online, and the reunification took place in my grandmother's hometown. My aunt believes in an old superstition, so she chose a \"lucky\" date for the dinner. Her older brother, a quiet man of great piety, prayed before the meal. Over dinner, they talked about the hard old days, when a cruel landlord oppressed the poor families in their village. My aunt used to be anti phones at the dinner table, but that night she let everyone take photos.",
-      "passageZh": "上個月，我奶奶一家人在分開二十年後終於重新團聚了。奶奶年輕時，她的兩個兄弟搬到了不同的國家。多虧了社群網路，我的表親在網路上找到了他們，團聚就在奶奶的家鄉舉行。我阿姨相信一個古老的迷信，所以挑了一個「吉利」的日子吃飯。她的哥哥是個安靜又非常虔誠的人，飯前做了禱告。吃飯時，他們聊起以前的苦日子，那時一個殘暴的地主壓迫村裡的窮苦人家。阿姨以前反對在餐桌上用手機，但那天晚上她讓大家盡情拍照。",
+      "passageEn": "Last month, my grandmother's family was finally reunified after twenty years apart. Twenty years ago, her two brothers moved to different countries. Thanks to social networking, my cousin found them online, and the reunification took place in my grandmother's hometown. My aunt believes in an old superstition, so she chose a \"lucky\" date for the dinner. My grandmother's older brother, a quiet man of great piety, prayed before the meal. Over dinner, they talked about the hard old days, when a cruel landlord oppressed the poor families in their village. My aunt used to be anti phones at the dinner table, but that night she let everyone take photos.",
+      "passageZh": "上個月，我奶奶一家人在分開二十年後終於重新團聚了。二十年前，奶奶的兩個兄弟搬到了不同的國家。多虧了社群網路，我的表親在網路上找到了他們，團聚就在奶奶的家鄉舉行。我阿姨相信一個古老的迷信，所以挑了一個「吉利」的日子吃飯。奶奶的哥哥是個安靜又非常虔誠的人，飯前做了禱告。吃飯時，他們聊起以前的苦日子，那時一個殘暴的地主壓迫村裡的窮苦人家。阿姨以前反對在餐桌上用手機，但那天晚上她讓大家盡情拍照。",
       "questions": [
         {
           "questionZh": "家人是怎麼找到奶奶的兩個兄弟的？",
@@ -555,6 +555,24 @@
         "message": "執行長裁示：第③關：SUS 「奶奶開始學用社群網站」接近 §11.19（把學新科技和年長者綁在一起），換主詞與情境",
         "resolution": "改為 promptZh「很多學生每天花好幾個小時上社群網站。」、referenceEn [\"Many students spend hours on social networking sites every day.\",\"A lot of students spend several hours a day on social networking sites.\"]、rubricZh [\"用 social networking 表示「社群網路」（例如 social networking sites）\",\"「好幾個小時」可寫，例如 hours、several hours 等\"]（原 promptZh「我奶奶最近開始學用社群網站。」、referenceEn [\"My grandma recently started using social networking sites.\",\"My grandmother has just started to use social networking websites.\"]、rubricZh [\"用 social networking 表示「社群網路」（例如 social networking sites）\",\"時態可用 started、has started 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

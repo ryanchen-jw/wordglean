@@ -25,8 +25,8 @@
       "id": "b1-u40-l04-q02",
       "type": "wordCard",
       "word": "prohibition",
-      "exampleEn": "The city's new prohibition made some people angry.",
-      "exampleZh": "市政府的新禁令讓一些人很生氣。",
+      "exampleEn": "The city's new prohibition on smoking made some people angry.",
+      "exampleZh": "市政府新的禁菸令讓一些人很生氣。",
       "glossZh": "禁令；禁止",
       "distractorsZh": [
         "許可",
@@ -112,10 +112,10 @@
       "audioZh": "今天早上電腦故障讓銀行癱瘓，沒有人能領錢。",
       "questionZh": "銀行今天早上怎麼了？",
       "options": [
-        "It closed for a holiday.",
-        "Nobody could get their money.",
-        "It moved to a new building.",
-        "Its staff bought new computers."
+        "It closed for a holiday",
+        "Nobody could get their money",
+        "It moved to a new building",
+        "Its staff bought new computers"
       ],
       "answer": 1
     },
@@ -401,6 +401,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（mailbox）原位換成翻譯題，沿用題 id b1-u40-l04-q16；目標字沿用 mailbox",
         "resolution": "改為 translate：promptZh「郵差把信放進了錯誤的信箱。」、hintWords [\"mailbox\"]、referenceEn [\"The postman put the letter in the wrong mailbox.\",\"The letter was put in the wrong mailbox by the postman.\"]、rubricZh [\"用 mailbox 表示「信箱」\"]（原 makeSentence：instructionZh「用 mailbox 造一個句子，說說你的信箱裡收到過什麼。」、referenceEn [\"I found a birthday card in my mailbox.\",\"I once got a postcard from my aunt in my mailbox.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -68,8 +68,8 @@
       "id": "a2-u05-l01-q05",
       "type": "wordCard",
       "word": "human",
-      "exampleEn": "Dogs can understand some human language.",
-      "exampleZh": "狗能聽懂一些人類的語言。",
+      "exampleEn": "Dogs can understand some human words.",
+      "exampleZh": "狗能聽懂人類說的一些字。",
       "glossZh": "人類的",
       "distractorsZh": [
         "動物的",
@@ -387,6 +387,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（reunion）原位換成翻譯題，沿用題 id a2-u05-l01-q17；目標字沿用 reunion",
         "resolution": "改為 translate：promptZh「我們班十年後會辦一次同學會。」、hintWords [\"reunion\"]、referenceEn [\"Our class will have a reunion in ten years.\",\"Our class is going to have a reunion in ten years.\"]、rubricZh [\"「同學會」可寫，例如 a reunion、a class reunion 等\",\"未來的事用表示未來的寫法（例如 will、be going to 等）\",\"「十年後」可寫，例如 in ten years 等\"]（原 makeSentence：instructionZh「用 reunion 造一個句子，說說你參加過或想參加的團聚。」、referenceEn [\"We had a class reunion last year.\",\"I hope to have a reunion with my old classmates.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

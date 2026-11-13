@@ -137,8 +137,8 @@
     {
       "id": "b2-u46-l01-q11",
       "type": "shadowing",
-      "sentenceEn": "Our town legislature voted to build a new library.",
-      "sentenceZh": "我們鎮的議會投票通過興建一座新圖書館。"
+      "sentenceEn": "The legislature voted to build a new national library.",
+      "sentenceZh": "立法機關投票通過興建一座新的國家圖書館。"
     },
     {
       "id": "b2-u46-l01-q12",
@@ -281,6 +281,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（offender）原位換成翻譯題，沿用題 id b2-u46-l01-q17；目標字沿用 offender",
         "resolution": "改為 translate：promptZh「在這間圖書館，第一次違規的人只會收到警告。」、hintWords [\"offender\"]、referenceEn [\"In this library, first-time offenders only get a warning.\",\"First-time offenders in this library just receive a warning.\"]、rubricZh [\"offender 表示「違規的人」（例如 first-time offenders 等），單複數配合句子即可\",\"「只會收到警告」可寫，例如 only get a warning、just receive a warning 等\",\"only、just 的位置不扣分\"]（原 makeSentence：instructionZh「用 offender 造一個句子，說說在交通或公共場所違反規定的人。」、referenceEn [\"The offender had to pay a fine for parking in a bus lane.\",\"Offenders who smoke in the park may have to pay a fine.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

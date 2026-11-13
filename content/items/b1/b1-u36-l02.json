@@ -12,7 +12,7 @@
       "id": "b1-u36-l02-q01",
       "type": "wordCard",
       "word": "approval",
-      "exampleEn": "The plan got the approval of everyone.",
+      "exampleEn": "The plan got everyone's approval.",
       "exampleZh": "這個計畫得到了所有人的同意。",
       "glossZh": "同意；認可；贊成",
       "distractorsZh": [
@@ -103,8 +103,8 @@
       "id": "b1-u36-l02-q08",
       "type": "wordCard",
       "word": "distinction",
-      "exampleEn": "Even their mom can't see any distinction between the twins.",
-      "exampleZh": "連媽媽都看不出那對雙胞胎有什麼區別。",
+      "exampleEn": "There is a clear distinction between the two words.",
+      "exampleZh": "這兩個字之間有明顯的區別。",
       "glossZh": "區別；差別；優異",
       "distractorsZh": [
         "關係",
@@ -125,10 +125,10 @@
       "audioZh": "留好你的收據，那是你在這裡買手機的證明。",
       "questionZh": "為什麼要留著收據？",
       "options": [
-        "It has the phone's price.",
-        "You can use it to win a prize next week.",
-        "To buy another phone here.",
-        "It proves where you bought it."
+        "It has the phone's price",
+        "You can use it to win a prize next week",
+        "To buy another phone here",
+        "It proves where you bought it"
       ],
       "answer": 3
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u36-l02-q15",
       "type": "reading",
-      "passageEn": "Our class wanted to raise awareness of plastic waste at school. First, we needed the headteacher's approval. She liked our idea, but she wanted proof that students really cared. So we tried to get three hundred students to sign their names in one week. It seemed unlikely at first, but we did it! We then made posters that showed the distinction between things you can recycle and things you can't. There's no guarantee that everyone will change, but the results were spectacular: the amount of plastic in our trash fell by half. Many students told us the posters gave them a new insight. At the end, each of us wrote a short reflection on what we had learned.",
+      "passageEn": "Our class wanted to raise awareness of plastic waste at school. First, we needed the headteacher's approval. She liked our idea, but she wanted proof that students really cared. So we tried to get three hundred students to sign their names in one week. It seemed unlikely at first, but we did it! We then made posters that showed the distinction between things you can recycle and things you can't. There's no guarantee that everyone will change, but the results were spectacular: the amount of plastic in our trash fell by half. Many students told us the posters gave them a new insight. Finally, each of us wrote a short reflection on what we had learned.",
       "passageZh": "我們班想提高全校對塑膠垃圾的意識。首先，我們需要校長的同意。她喜歡我們的點子，但想要證據證明學生真的在乎。所以我們試著在一週內讓三百名學生簽名。起初這看起來不太可能，但我們做到了！接著我們做了海報，說明可回收和不可回收物品之間的區別。不能保證每個人都會改變，但成果非常驚人：我們垃圾裡的塑膠量減少了一半。許多同學告訴我們，這些海報讓他們有了新的認識。最後，我們每個人都寫了一篇簡短的反思，談談自己學到了什麼。",
       "questions": [
         {
@@ -384,6 +384,30 @@
         "message": "執行長裁示：第③關：SUS old staff 易讀成「年紀大的員工」，意思偏移且碰到 §11.19 年齡標籤",
         "resolution": "改為 referenceEn [\"The boss makes no distinction between new and long-time staff.\",\"Our boss never makes a distinction between new staff and experienced staff.\"]、rubricZh [\"用 make a distinction between 表示「區別對待」（例如 makes no distinction between…）\",\"「新人和老員工」可寫，例如 new and long-time staff、new staff and experienced staff 等\"]（原 referenceEn [\"The boss makes no distinction between new and old staff.\",\"Our boss never makes a distinction between new and old workers.\"]、rubricZh [\"用 make a distinction between 表示「區別對待」（例如 makes no distinction between…）\",\"「新人和老員工」可寫，例如 new and old staff、new and old workers 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

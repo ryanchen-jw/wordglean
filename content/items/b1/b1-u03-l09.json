@@ -127,10 +127,10 @@
       "audioZh": "團隊下週會推出網站，但連結還沒準備好。",
       "questionZh": "什麼東西還沒準備好？",
       "options": [
-        "The website design.",
-        "The link.",
-        "The new phone.",
-        "The meeting room."
+        "The website design",
+        "The link",
+        "The new phone",
+        "The meeting room"
       ],
       "answer": 1
     },
@@ -321,6 +321,12 @@
         "message": "執行長裁示：第③關：SUS 與舊題 u11-l10-q15「Our office is on the second floor.」幾乎同句；審查建議的「飯店位於市中心」與同課單字卡 The hotel is located… 同主詞同句型，改用大學",
         "resolution": "改為 promptZh「這所大學位於一座小山上。」、referenceEn [\"The university is located on a small hill.\",\"This university is located on top of a small hill.\"]、rubricZh [\"用 be located 表示「位於」（例如 is located on…；寫 is on a small hill 也正確）\"]（原 promptZh「我們的新辦公室會設在二樓。」、referenceEn [\"Our new office will be located on the second floor.\",\"Our new office is going to be located on the second floor.\"]、rubricZh [\"用 be located 表示「位於」（例如 will be located；寫 will be on the second floor 也正確）\",\"表示未來的寫法都可以（例如 will be、is going to be 等）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -128,10 +128,10 @@
       "audioZh": "棉質襯衫比較便宜，但絲質的比較柔軟。",
       "questionZh": "絲質襯衫有什麼優點？",
       "options": [
-        "It is cheaper.",
-        "It is softer.",
-        "It is warmer.",
-        "It is bigger."
+        "It is cheaper",
+        "It is softer",
+        "It is warmer",
+        "It is bigger"
       ],
       "answer": 1
     },
@@ -222,7 +222,7 @@
       ],
       "referenceEn": [
         "She pinned a flower to her shirt.",
-        "She often pins a flower onto her shirt."
+        "She pinned a flower onto her shirt."
       ],
       "rubricZh": [
         "pin 當動詞「用別針別住」，例如 pin A to／on B 等說法",
@@ -418,6 +418,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（beard）原位換成翻譯題，沿用題 id b1-u10-l02-q17；目標字沿用 beard",
         "resolution": "改為 translate：promptZh「聖誕老公公有長長的白鬍子。」、hintWords [\"beard\"]、referenceEn [\"Santa Claus has a long white beard.\",\"Santa Claus's beard is long and white.\"]、rubricZh [\"用 beard 表示「鬍子」（例如 a long white beard）\"]（原 makeSentence：instructionZh「用 beard 造一個句子，描述你認識的一個人的鬍子。」、referenceEn [\"My father has a short black beard.\",\"My teacher grew a beard last winter.\"]）；properNouns 加 Santa、Claus",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

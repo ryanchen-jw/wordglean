@@ -127,10 +127,10 @@
       "audioZh": "這家麵包店早上賣新鮮麵包，下午賣蛋糕。",
       "questionZh": "這家麵包店下午賣什麼？",
       "options": [
-        "Sandwiches.",
-        "Bread.",
-        "Coffee.",
-        "Cakes."
+        "Sandwiches",
+        "Bread",
+        "Coffee",
+        "Cakes"
       ],
       "answer": 3
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u13-l01-q15",
       "type": "reading",
-      "passageEn": "Amy works part-time at a small bakery near her school. Every morning, she helps the owner choose the freshest ingredients. Their most popular item is a light and tasty tuna pie. The owner cares about nutrition, so she uses less sugar and more vegetables. On Fridays, Amy also helps grill sausages outside for customers. She writes every new flavor they try in a little notebook.",
+      "passageEn": "Amy works part-time at a small bakery near her school. Every morning, she helps the owner choose the freshest ingredients. Their most popular item is a light and tasty tuna pie. The owner cares about nutrition, so she uses less sugar and more vegetables. On Fridays, Amy also helps grill sausages outside for customers. She writes down every new flavor they try in a little notebook.",
       "passageZh": "Amy 在學校附近的一家小麵包店兼職。每天早上，她幫老闆挑選最新鮮的食材。店裡最受歡迎的是一種清爽又好吃的鮪魚派。老闆很在意營養，所以她少放糖、多放蔬菜。每個星期五，Amy 也幫忙在店外為客人烤香腸。她們每試一種新口味，她都會記在一本小筆記本裡。",
       "questions": [
         {
@@ -358,6 +358,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ingredient）原位換成翻譯題，沿用題 id b1-u13-l01-q17；目標字沿用 ingredient",
         "resolution": "改為 translate：promptZh「這家餐廳只用本地的食材。」、hintWords [\"ingredient\"]、referenceEn [\"This restaurant only uses local ingredients.\",\"This restaurant uses only local ingredients.\"]、rubricZh [\"用 ingredient 的複數表示「食材」（例如 local ingredients）\",\"only 的位置不限（例如 only uses、uses only 等）\"]（原 makeSentence：instructionZh「用 ingredient 造一個句子，說說你最喜歡的一道菜需要什麼材料。」、referenceEn [\"The main ingredients of my favorite soup are tomatoes and beef.\",\"Rice is the most important ingredient in my favorite dish, fried rice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

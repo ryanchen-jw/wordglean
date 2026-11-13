@@ -40,7 +40,7 @@
       "word": "tin",
       "exampleEn": "Open a tin of beans for lunch.",
       "exampleZh": "開一罐豆子當午餐。",
-      "glossZh": "罐；罐頭；錫",
+      "glossZh": "罐；罐頭；錫；（英式：罐、罐頭義）",
       "distractorsZh": [
         "袋",
         "瓶",
@@ -125,10 +125,10 @@
       "audioZh": "我們的帳篷濕了，所以改在小屋裡過夜。",
       "questionZh": "他們晚上睡在哪裡？",
       "options": [
-        "At a hotel.",
-        "In the tent.",
-        "In the car.",
-        "In the hut."
+        "At a hotel",
+        "In the tent",
+        "In the car",
+        "In the hut"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u11-l06-q15",
       "type": "reading",
-      "passageEn": "Last summer, we spent three days at a lodge in the mountains. The lodge was simple but impressive, with a big wooden hall. Behind it, there was a small hut where the owner kept his tools, like a hammer and some saws. Every morning, we washed our faces in a metal basin. The air was cool and damp, so our clothes never dried. On the way home, we stopped at a fruit stall and bought a tin of local tea.",
-      "passageZh": "去年夏天，我們在山上的一間山莊住了三天。山莊很簡樸，但令人印象深刻，有一個大大的木造大廳。後面有一間小屋，主人把鐵鎚、鋸子等工具放在裡面。每天早上，我們在一個金屬臉盆裡洗臉。空氣涼爽又潮濕，所以我們的衣服一直都乾不了。回家路上，我們在一個水果攤停下來，買了一罐當地的茶。",
+      "passageEn": "Last summer, we spent three days at a lodge in the mountains. The lodge was simple but impressive, with a big wooden hall. Behind it, there was a small hut where the owner kept his tools, like a hammer and some saws. Every morning, we washed our faces in a metal basin. The air was cool and damp, so our clothes never dried. On the way home, we stopped at a roadside stall and bought a tin of local tea.",
+      "passageZh": "去年夏天，我們在山上的一間山莊住了三天。山莊很簡樸，但令人印象深刻，有一個大大的木造大廳。後面有一間小屋，主人把鐵鎚、鋸子等工具放在裡面。每天早上，我們在一個金屬臉盆裡洗臉。空氣涼爽又潮濕，所以我們的衣服一直都乾不了。回家路上，我們在一個路邊攤停下來，買了一罐當地的茶。",
       "questions": [
         {
           "questionZh": "每天早上他們在哪裡洗臉？",
@@ -344,6 +344,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hammer）原位換成翻譯題，沿用題 id b1-u11-l06-q17；目標字沿用 hammer",
         "resolution": "改為 translate：promptZh「我爸爸借了鄰居的鐵鎚。」、hintWords [\"hammer\"]、referenceEn [\"My father borrowed a hammer from our neighbor.\",\"My dad borrowed our neighbor's hammer.\"]、rubricZh [\"用 hammer 表示「鐵鎚」\",\"「借了」可寫，例如 borrowed a hammer from…、borrowed our neighbor's hammer 等\"]（原 makeSentence：instructionZh「用 hammer 造一個句子，說說你家誰會用鐵鎚，或你用鐵鎚做過什麼。」、referenceEn [\"My father uses a hammer to fix our chairs.\",\"I used a hammer to put up a picture.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

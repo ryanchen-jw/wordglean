@@ -128,10 +128,10 @@
       "audioZh": "這個計畫太貴了嗎？正好相反，我認為它會省錢。",
       "questionZh": "說話者對這個計畫有什麼看法？",
       "options": [
-        "It is too expensive.",
-        "It will save money.",
-        "It is too slow.",
-        "It needs more people."
+        "It is too expensive",
+        "It will save money",
+        "It is too slow",
+        "It needs more people"
       ],
       "answer": 1
     },
@@ -359,6 +359,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（worthwhile）原位換成翻譯題，沿用題 id b1-u06-l02-q17；目標字沿用 worthwhile",
         "resolution": "改為 translate：promptZh「這門課很難，但我覺得很值得。」、hintWords [\"worthwhile\"]、referenceEn [\"This course is hard, but I think it is worthwhile.\",\"The course is difficult, but I feel it is worthwhile.\"]、rubricZh [\"用 worthwhile 表示「值得的」（例如 it is worthwhile；寫 worth it、worth taking 也正確）\",\"「我覺得」可寫，例如 I think、I feel 等\"]（原 makeSentence：instructionZh「用 worthwhile 造一個句子，說說一件你覺得值得花時間做的事。」、referenceEn [\"I think learning to cook is worthwhile.\",\"For me, reading the news every morning is worthwhile.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -12,8 +12,8 @@
       "id": "b1-u04-l04-q01",
       "type": "wordCard",
       "word": "definite",
-      "exampleEn": "Her face showed a definite change after she heard the news.",
-      "exampleZh": "她聽到消息後，臉上有了明顯的變化。",
+      "exampleEn": "There was a definite change in her mood after she heard the news.",
+      "exampleZh": "她聽到消息後，心情有了明顯的變化。",
       "glossZh": "明確的；確定的",
       "distractorsZh": [
         "模糊的",
@@ -125,10 +125,10 @@
       "audioZh": "我星期六不能參加旅行，因為我得上班。",
       "questionZh": "說話者為什麼不能參加星期六的旅行？",
       "options": [
-        "Because of the money.",
-        "Because the trip is on Sunday.",
-        "Because of a job.",
-        "Because of a party."
+        "Because of the money",
+        "Because the trip is on Sunday",
+        "Because of work",
+        "Because of a party"
       ],
       "answer": 2
     },
@@ -380,6 +380,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（able）原位換成翻譯題，沿用題 id b1-u04-l04-q17；目標字沿用 able",
         "resolution": "改為 translate：promptZh「我妹妹兩歲時就能讀簡單的故事了。」、hintWords [\"able\"]、referenceEn [\"My sister was able to read simple stories at the age of two.\",\"My little sister was able to read simple stories when she was two.\"]、rubricZh [\"用 be able to＋原形動詞表示「能夠」（例如 was able to read；寫 could read 也正確）\",\"「兩歲時」可寫，例如 at the age of two、when she was two 等\"]（原 makeSentence：instructionZh「用 be able to 造一個句子，說說一件你現在能做到的事，或以前做不到、現在做得到的事。」、referenceEn [\"I am able to swim one kilometer now.\",\"I was not able to cook before, but now I am.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

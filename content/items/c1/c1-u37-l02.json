@@ -127,10 +127,10 @@
       "audioZh": "回家的旅程平靜無事；火車準時出發，還提早十分鐘到站。",
       "questionZh": "回家的旅程如何？",
       "options": [
-        "The train was delayed for two hours.",
-        "Nothing special happened.",
-        "They had to change trains twice.",
-        "It was very noisy."
+        "The train was delayed for two hours",
+        "Nothing special happened",
+        "They had to change trains twice",
+        "It was very noisy"
       ],
       "answer": 1
     },
@@ -299,6 +299,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（dynamically）原位換成翻譯題，沿用題 id c1-u37-l02-q17；目標字沿用 dynamically",
         "resolution": "改為 translate：promptZh「這位年輕的指揮家指揮樂團時充滿活力。」、hintWords [\"dynamically\"]、referenceEn [\"The young conductor leads the orchestra very dynamically.\",\"The young conductor conducts the orchestra dynamically.\"]、rubricZh [\"「充滿活力地」用 dynamically（例如 leads the orchestra dynamically 等）\",\"「指揮」可寫，例如 leads、conducts 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 dynamically 造一個句子，描述某個人做事充滿活力，或某件事不斷變化的樣子。」、referenceEn [\"Our teacher teaches so dynamically that no one falls asleep in class.\",\"I like coaches who lead their teams dynamically.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -135,8 +135,8 @@
       "id": "b2-u08-l02-q11",
       "type": "listenChoice",
       "audioEn": "My sister is unsure about the date, so she will check her calendar first.",
-      "audioZh": "我妹妹不確定日期，所以她會先查行事曆。",
-      "questionZh": "說話者的妹妹接下來會做什麼？",
+      "audioZh": "我的姊妹不確定日期，所以她會先查行事曆。",
+      "questionZh": "說話者的姊妹接下來會做什麼？",
       "options": [
         "Call the boss right now",
         "Cancel the meeting today",
@@ -148,8 +148,8 @@
     {
       "id": "b2-u08-l02-q12",
       "type": "shadowing",
-      "sentenceEn": "The economic outlook for next year looks better.",
-      "sentenceZh": "明年的經濟前景看起來比較好。"
+      "sentenceEn": "The economic outlook for next year is brighter.",
+      "sentenceZh": "明年的經濟前景比較光明。"
     },
     {
       "id": "b2-u08-l02-q13",
@@ -198,8 +198,8 @@
     {
       "id": "b2-u08-l02-q16",
       "type": "reading",
-      "passageEn": "Our team recently read a report about young workers. It said they have a positive outlook on work but are unsure about their long-term future. However, some of the findings seemed to contradict our own experience. For example, the report claimed that young people change jobs every year, which is a generalization; many of our young staff have stayed for five years or more. After a careful discussion, our comprehension of the problem improved. It is probable that the report studied only a few companies. Still, the fact that so many companies shared the report signifies something important: keeping good staff is an imperative. The manager now wants us to reconsider how we support new workers.",
-      "passageZh": "我們團隊最近讀了一份關於年輕員工的報告。報告說他們對工作抱持正面的看法，但對長期的未來不太確定。不過，有些發現似乎和我們自己的經驗互相矛盾。例如，報告說年輕人每年都換工作，這是以偏概全；我們公司很多年輕員工都待了五年以上。經過仔細討論，我們對這個問題的理解更深了。這份報告很可能只研究了少數幾家公司。儘管如此，這麼多公司轉傳這份報告，代表一件重要的事：留住好員工是必要的任務。經理現在要我們重新考慮該如何支持新進員工。",
+      "passageEn": "Our team recently read a report about young workers. It said they have a positive outlook on work but are unsure about their long-term future. However, some of the findings seemed to contradict our own experience. For example, the report claimed that young people change jobs every year, which is a generalization; many of our young staff have stayed for five years or more. After a careful discussion, our comprehension of the report improved. It is probable that the report studied only a few companies. Still, the fact that so many companies shared the report signifies something important: keeping good staff is an imperative. The manager now wants us to reconsider how we support new workers.",
+      "passageZh": "我們團隊最近讀了一份關於年輕員工的報告。報告說他們對工作抱持正面的看法，但對長期的未來不太確定。不過，有些發現似乎和我們自己的經驗互相矛盾。例如，報告說年輕人每年都換工作，這是以偏概全；我們公司很多年輕員工都待了五年以上。經過仔細討論，我們對這份報告的理解更深了。這份報告很可能只研究了少數幾家公司。儘管如此，這麼多公司轉傳這份報告，代表一件重要的事：留住好員工是必要的任務。經理現在要我們重新考慮該如何支持新進員工。",
       "questions": [
         {
           "questionZh": "報告說年輕員工對未來有什麼想法？",
@@ -441,6 +441,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（probable）原位換成翻譯題，沿用題 id b2-u08-l02-q18；目標字沿用 probable",
         "resolution": "改為 translate：promptZh「這個錯誤最可能的原因是電腦太舊了。」、hintWords [\"probable\"]、referenceEn [\"The most probable cause of the error is that the computer is too old.\",\"The most probable reason for this mistake is the old computer.\"]、rubricZh [\"probable 表示「很可能的」（例如 the most probable cause、the most probable reason 等）\",\"「原因」可寫，例如 cause、reason 等\",\"「錯誤」可寫，例如 error、mistake、problem 等\"]（原 makeSentence：instructionZh「用 probable 造一個句子，說說一件你認為很可能發生的事。」、referenceEn [\"It is probable that I will change jobs next year.\",\"I think a small rise in my rent is probable this year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

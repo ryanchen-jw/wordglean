@@ -127,10 +127,10 @@
       "audioZh": "請看一下我的提案，星期五前把意見寄給我。",
       "questionZh": "說話者希望對方星期五前做什麼？",
       "options": [
-        "Say what they think of the plan.",
-        "Write a new proposal for Friday.",
-        "Send the proposal to the manager.",
-        "Book a meeting room."
+        "Say what they think of the plan",
+        "Write a new proposal for Friday",
+        "Send the proposal to the manager",
+        "Book a meeting room"
       ],
       "answer": 0
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u06-l06-q15",
       "type": "reading",
-      "passageEn": "Last month, Helen made a proposal to her boss: the office should use less paper. To demonstrate the problem, she showed that the office used approximately two thousand sheets of paper a week. Her boss acknowledged the problem, but at first he was not aware of how much it cost. After reading her report, he concluded that she was right. Nobody could deny the numbers. The conclusion was simple: from next month, all reports will be online. The boss also recommended Helen for a pay rise.",
+      "passageEn": "Last month, Helen made a proposal to her boss: the office should use less paper. To demonstrate the problem, she showed that the office used approximately two thousand sheets of paper a week. Her boss acknowledged the problem, but at first he was not aware of how much it cost. After reading her report, he concluded that she was right. Nobody could deny the numbers. The conclusion was simple: from next month, all reports will be online. The boss also recommended Helen for a pay raise.",
       "passageZh": "上個月，Helen 向老闆提了一個建議：辦公室應該少用紙。為了說明問題，她指出辦公室每週大約用掉兩千張紙。老闆承認有這個問題，但一開始並不知道要花多少錢。看完她的報告後，他認定她是對的。沒有人能否認這些數字。結論很簡單：從下個月起，所有報告都放在網路上。老闆還推薦 Helen 加薪。",
       "questions": [
         {
@@ -460,6 +460,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（aware）原位換成翻譯題，沿用題 id b1-u06-l06-q17；目標字沿用 aware",
         "resolution": "改為 translate：promptZh「很多人沒有意識到這座公園晚上會關門。」、hintWords [\"aware\"]、referenceEn [\"Many people are not aware that this park closes at night.\",\"Many people aren't aware that the park is closed at night.\"]、rubricZh [\"用 be aware that／of 表示「知道」（例如 are not aware that…；寫 don't know 也正確）\",\"「晚上會關門」可寫，例如 closes at night、is closed at night 等\"]（原 makeSentence：instructionZh「用 aware 造一個句子，說說一件你最近才知道或意識到的事。」、referenceEn [\"I was not aware that the shop closed early on Sundays.\",\"I became aware of the problem only last week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

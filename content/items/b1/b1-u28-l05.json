@@ -127,10 +127,10 @@
       "audioZh": "如果你目擊了今天早上操場上發生的事，請跟你的老師說。",
       "questionZh": "說話者請目擊者做什麼？",
       "options": [
-        "Tell their teacher about it.",
-        "Write a short report.",
-        "Go back to the playground.",
-        "Call the police at once."
+        "Tell their teacher about it",
+        "Write a short report",
+        "Go back to the playground",
+        "Call the police at once"
       ],
       "answer": 0
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u28-l05-q15",
       "type": "reading",
-      "passageEn": "Here is the news from our town paper this week. First, workers found an old bomb from a war long ago at a building site. The police closed the street, and experts made it safe. Second, a woman who witnessed a man painting on the walls of the town hall at night helped the police catch the criminal. Third, the state governor gave our school a grant to build a new library and hire a librarian. Our class representative, Tom, thanked him in a short speech. Tom said it is every student's duty to take care of the new books. A local politician also came, but she did not speak.",
+      "passageEn": "Here is the news from our town paper this week. First, workers found an old bomb from a war long ago at a construction site. The police closed the street, and experts made it safe. Second, a woman who witnessed a man painting on the walls of the town hall at night helped the police catch the criminal. Third, the state governor gave our school a grant to build a new library and hire a librarian. Our class representative, Tom, thanked him in a short speech. Tom said it is every student's duty to take care of the new books. A local politician also came, but she did not speak.",
       "passageZh": "以下是本週鎮上報紙的新聞。第一，工人在一處工地發現一枚很久以前戰爭留下的舊炸彈。警方封鎖了街道，專家把它處理得安全了。第二，一位女士目擊有人半夜在鎮公所的牆上塗鴉，幫警方抓到了這名罪犯。第三，州長給了我們學校一筆補助金，用來蓋新圖書館再聘請圖書館員。我們的班代 Tom 發表簡短的演說向他道謝。Tom 說愛護新書是每個學生的責任。一位地方政治人物也來了，但她沒有發言。",
       "questions": [
         {
@@ -470,6 +470,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（duty）原位換成翻譯題，沿用題 id b1-u28-l05-q17；目標字沿用 duty",
         "resolution": "改為 translate：promptZh「今天晚上哪一位警察值班？」、hintWords [\"duty\"]、referenceEn [\"Which police officer is on duty tonight?\",\"Who is the police officer on duty tonight?\"]、rubricZh [\"用 on duty 表示「值班」\"]（原 makeSentence：instructionZh「用 duty 造一個句子，說說你在家的責任。」、referenceEn [\"It is my duty to wash the dishes after dinner.\",\"Taking out the trash is my duty at home.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

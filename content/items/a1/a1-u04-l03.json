@@ -69,7 +69,7 @@
       "type": "wordCard",
       "word": "sister",
       "exampleEn": "My sister lives in Japan.",
-      "exampleZh": "我姊姊住在日本。",
+      "exampleZh": "我的姊妹住在日本。",
       "glossZh": "姊妹（姊姊或妹妹）",
       "distractorsZh": [
         "兄弟",
@@ -120,7 +120,7 @@
       "id": "a1-u04-l03-q09",
       "type": "listenType",
       "sentenceEn": "My sister and her husband visit us often.",
-      "sentenceZh": "我姊姊和姊夫常來看我們。"
+      "sentenceZh": "我的姊妹和她先生常來看我們。"
     },
     {
       "id": "a1-u04-l03-q10",
@@ -189,10 +189,10 @@
       "id": "a1-u04-l03-q15",
       "type": "reading",
       "passageEn": "Every summer, my sister visits us with her husband and their daughter. They are our guests for two weeks. My sister always brings presents for my kids. We share many meals, and we play games together at night.",
-      "passageZh": "每年夏天，我姊姊會和她先生還有女兒來我們家。他們會在我們家作客兩個星期。我姊姊總是帶禮物給我的孩子。我們一起吃很多頓飯，晚上一起玩遊戲。",
+      "passageZh": "每年夏天，我的姊妹會和她先生還有女兒來我們家。他們會在我們家作客兩個星期。我的姊妹總是帶禮物給我的孩子。我們一起吃很多頓飯，晚上一起玩遊戲。",
       "questions": [
         {
-          "questionZh": "姊姊一家每年夏天在說話者家住多久？",
+          "questionZh": "作者的姊妹一家每年夏天在說話者家住多久？",
           "options": [
             "一個星期",
             "兩個星期",
@@ -201,7 +201,7 @@
           "answer": 1
         },
         {
-          "questionZh": "姊姊總是帶什麼來？",
+          "questionZh": "作者的姊妹總是帶什麼來？",
           "options": [
             "一些新鮮的水果",
             "一個很大的生日蛋糕",
@@ -375,6 +375,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（visit）原位換成翻譯題，沿用題 id a1-u04-l03-q17；目標字沿用 visit",
         "resolution": "改為 translate：promptZh「很多人夏天去參觀那座寺廟。」、hintWords [\"visit\"]、referenceEn [\"Many people visit that temple in summer.\",\"In summer, many people visit the temple.\"]、rubricZh [\"visit 後面直接接地點，不加 to（例如 visit the temple）；寫 go to the temple 也正確\",\"「那座寺廟」可寫，例如 that temple、the temple 等\"]（原 makeSentence：instructionZh「用 visit 造一個句子，說說你會去探望的一位家人或朋友。」、referenceEn [\"I visit my grandmother every Sunday.\",\"I will visit my friend in Tainan this weekend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

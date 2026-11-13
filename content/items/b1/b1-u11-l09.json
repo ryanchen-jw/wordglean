@@ -68,7 +68,7 @@
       "word": "dustbin",
       "exampleEn": "Throw the old newspapers in the dustbin.",
       "exampleZh": "把舊報紙丟進垃圾桶。",
-      "glossZh": "垃圾桶",
+      "glossZh": "垃圾桶；（英式）",
       "distractorsZh": [
         "抽屜",
         "書架",
@@ -127,10 +127,10 @@
       "audioZh": "我房間很亂，請等我整理一下。",
       "questionZh": "說話者要對方做什麼？",
       "options": [
-        "Wait a moment.",
-        "Clean the room.",
-        "Come back tomorrow.",
-        "Close the door."
+        "Wait a moment",
+        "Clean the room",
+        "Come back tomorrow",
+        "Close the door"
       ],
       "answer": 0
     },
@@ -382,6 +382,18 @@
         "message": "執行長裁示：第③關：SUS 與 u42-l04 單字卡 messy「His handwriting is so messy…」只差一兩字；審查建議的「房間凌亂」又與同課聽選 My room is untidy 同情境，改用書桌",
         "resolution": "改為 promptZh「他的書桌總是很凌亂，上面堆滿了紙。」、referenceEn [\"His desk is always untidy and covered with papers.\",\"His desk is always untidy, with papers all over it.\"]、rubricZh [\"用 untidy 表示「凌亂的」（寫 messy 也正確）\",\"「堆滿了紙」可寫，例如 covered with papers、with papers all over it 等\"]（原 promptZh「他的字寫得很潦草，我看不懂。」、referenceEn [\"His handwriting is so untidy that I can't read it.\",\"His handwriting is very untidy, and I can't read it.\"]、rubricZh [\"用 untidy 表示「凌亂的；潦草的」（例如 untidy handwriting；寫 messy 也正確）\",\"「看不懂」可寫，例如 can't read it 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

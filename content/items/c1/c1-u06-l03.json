@@ -125,10 +125,10 @@
       "audioZh": "那位男士聲稱店家向他收了兩次錢，但他沒有收據。",
       "questionZh": "那位男士聲稱什麼？",
       "options": [
-        "The price was wrong.",
-        "He lost his bag.",
-        "The shop was closed.",
-        "He paid twice."
+        "The price was wrong",
+        "He lost his bag",
+        "The shop was closed",
+        "He paid twice"
       ],
       "answer": 3
     },
@@ -295,6 +295,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（realism）原位換成翻譯題，沿用題 id c1-u06-l03-q17；目標字沿用 realism",
         "resolution": "改為 translate：promptZh「規劃這次旅行時，我們需要多一點務實的態度。」、hintWords [\"realism\"]、referenceEn [\"We need a bit more realism when we plan this trip.\",\"When planning this trip, we need a little more realism.\"]、rubricZh [\"「務實的態度」用 realism（例如 a bit more realism、a little more realism 等）\",\"「規劃這次旅行時」可寫，例如 when we plan this trip、when planning this trip 等，放句首或句尾皆可\"]（原 makeSentence：instructionZh「用 realism 造一個句子，說說你欣賞某部作品或某個人的哪一點。」、referenceEn [\"I admire the realism of this film because it shows daily life honestly.\",\"I admire my mother's realism; she always plans for possible problems.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

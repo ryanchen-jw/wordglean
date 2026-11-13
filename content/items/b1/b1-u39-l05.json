@@ -125,10 +125,10 @@
       "audioZh": "今天又熱又潮濕，記得多喝水。",
       "questionZh": "說話者提醒什麼？",
       "options": [
-        "Wear a warm coat.",
-        "Have plenty to drink.",
-        "Drink a lot of hot tea.",
-        "Stay in bed all day."
+        "Wear a warm coat",
+        "Have plenty to drink",
+        "Drink a lot of hot tea",
+        "Stay in bed all day"
       ],
       "answer": 1
     },
@@ -474,6 +474,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（kitten）原位換成翻譯題，沿用題 id b1-u39-l05-q17；目標字沿用 kitten",
         "resolution": "改為 translate：promptZh「我們在公園裡發現了一隻迷路的小貓。」、hintWords [\"kitten\"]、referenceEn [\"We found a lost kitten in the park.\",\"We found a kitten that was lost in the park.\"]、rubricZh [\"用 kitten 表示「小貓」\"]（原 makeSentence：instructionZh「用 kitten 造一個句子，說說你和小貓的經驗或願望。」、referenceEn [\"I found a lost kitten near my school.\",\"I want to take care of a kitten.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

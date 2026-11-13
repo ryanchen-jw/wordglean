@@ -138,7 +138,7 @@
       "id": "b1-p04-l03-q12",
       "type": "mcq",
       "stemEn": "My cat ____ after my brother gave her lots of snacks.",
-      "stemZh": "我哥哥給我的貓很多零食之後，牠變胖了。",
+      "stemZh": "我的兄弟給我的貓很多零食之後，牠變胖了。",
       "options": [
         "put on weight",
         "lost weight",
@@ -175,8 +175,8 @@
     {
       "id": "b1-p04-l03-q14",
       "type": "reading",
-      "passageEn": "Grandpa Wang is seventy, and he makes a living by selling rice and soup at the night market. He makes an effort to greet every customer by name. He doesn't make much money, but he loves his job. Every evening, his grandson helps him and pays attention to the prices. The boy also helps him count the money. The boy is saving up for a new bike, and they spend time together talking about everything.",
-      "passageZh": "王爺爺七十歲了，他靠在夜市賣飯和湯謀生。他努力叫出每位客人的名字跟他們打招呼。他賺的錢不多，但他很愛這份工作。每天晚上，他的孫子都來幫忙，並且注意價錢。孫子也會幫他數錢。孫子正在存錢買新腳踏車，祖孫倆一起聊天，什麼都聊。",
+      "passageEn": "Grandpa Wang is seventy, and he makes a living by selling rice and soup at the night market. He makes an effort to greet every customer by name. He doesn't make much money, but he loves his job. Every evening, his grandson helps him and pays attention to the prices. The boy also helps him count the money. The boy is saving up for a new bike. When the market is quiet, they spend time together talking about everything.",
+      "passageZh": "王爺爺七十歲了，他靠在夜市賣飯和湯謀生。他努力叫出每位客人的名字跟他們打招呼。他賺的錢不多，但他很愛這份工作。每天晚上，他的孫子都來幫忙，並且注意價錢。孫子也會幫他數錢。孫子正在存錢買新腳踏車。夜市人少的時候，祖孫倆就一起聊天，什麼都聊。",
       "questions": [
         {
           "questionZh": "王爺爺靠什麼謀生？",
@@ -378,6 +378,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 3 題位（b1-p04-l03-q13、b1-p04-l03-q14#0、b1-p04-l03-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

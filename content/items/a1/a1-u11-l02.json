@@ -187,8 +187,8 @@
     {
       "id": "a1-u11-l02-q15",
       "type": "reading",
-      "passageEn": "Welcome to our town! The bank is on Park Street, near the old church. The hospital is on the other side of the street. Look for the big red sign. The man at the door can help you.",
-      "passageZh": "歡迎來到我們鎮上！銀行在公園街上，靠近那座老教堂。醫院在街道的另一邊，找那個紅色的大招牌就對了。門口的那位先生可以幫你。",
+      "passageEn": "Welcome to our town! The bank is on Park Street, near the old church. The hospital is on the other side of the street. Look for the big red sign. The man at the door of the hospital can help you.",
+      "passageZh": "歡迎來到我們鎮上！銀行在公園街上，靠近那座老教堂。醫院在街道的另一邊，找那個紅色的大招牌就對了。醫院門口的那位先生可以幫你。",
       "questions": [
         {
           "questionZh": "銀行在哪裡？",
@@ -343,6 +343,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（street）原位換成翻譯題，沿用題 id a1-u11-l02-q17；目標字沿用 street",
         "resolution": "改為 translate：promptZh「這條街上有很多商店。」、hintWords [\"street\"]、referenceEn [\"There are many shops on this street.\",\"This street has many shops.\"]、rubricZh [\"「在街上」常用 on（例如 on this street）\",\"可寫，例如 There are many shops…、This street has… 等；「商店」寫 shops 或 stores 都正確\"]（原 makeSentence：instructionZh「用 street 造一個句子，說說你家附近的一條街。」、referenceEn [\"There are many shops on my street.\",\"I live on a quiet street.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

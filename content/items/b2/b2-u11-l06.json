@@ -106,7 +106,7 @@
       "type": "wordCard",
       "word": "brother-in-law",
       "exampleEn": "We are spending the holiday at my brother-in-law's farm.",
-      "exampleZh": "我們要在我姊夫的農場度假。",
+      "exampleZh": "我們要在我姻親兄弟的農場度假。",
       "glossZh": "姊夫、妹夫等姻親兄弟",
       "distractorsZh": [
         "堂哥",
@@ -187,11 +187,11 @@
     {
       "id": "b2-u11-l06-q15",
       "type": "reading",
-      "passageEn": "Last spring, my sister married a man from a small island, and I visited his family for the first time. My new brother-in-law is very sociable, and the islanders welcomed us with a big dinner. His grandmother, a quiet woman whom everyone calls Madam Lu, told us about old customs. Long ago, she said, families on the island prepared a dowry of cloth and pots for their daughters. She also talked about filial duty: young people there still visit their parents every weekend. I enjoyed the trip tremendously and promised to visit again soon.",
-      "passageZh": "去年春天，我姊姊嫁給一位來自小島的男人，我第一次去拜訪他的家人。我的新姊夫很愛交際，島民們用一頓豐盛的晚餐歡迎我們。他的奶奶是一位安靜的婦人，大家都叫她呂女士，她跟我們講了一些老習俗。她說，很久以前，島上的人家會為女兒準備布料和鍋子當嫁妝。她也談到孝道：那裡的年輕人至今仍然每個週末都回去看父母。我非常喜歡這趟旅行，也答應很快會再去。",
+      "passageEn": "Last spring, my sister married a man from a small island, and I visited his family for the first time. My new brother-in-law is very sociable, and the islanders welcomed us with a big dinner. His grandmother, a quiet woman whom everyone calls Mrs. Lu, told us about old customs. Long ago, she said, families on the island prepared a dowry of cloth and pots for their daughters. She also talked about filial duty: young people there still visit their parents every weekend. I enjoyed the trip tremendously and promised to visit again soon.",
+      "passageZh": "去年春天，我的姊妹嫁給一位來自小島的男人，我第一次去拜訪他的家人。我姊妹的新婚丈夫很愛交際，島民們用一頓豐盛的晚餐歡迎我們。他的奶奶是一位安靜的婦人，大家都叫她呂女士，她跟我們講了一些老習俗。她說，很久以前，島上的人家會為女兒準備布料和鍋子當嫁妝。她也談到孝道：那裡的年輕人至今仍然每個週末都回去看父母。我非常喜歡這趟旅行，也答應很快會再去。",
       "questions": [
         {
-          "questionZh": "作者的新姊夫是什麼樣的人？",
+          "questionZh": "作者姊妹的新婚丈夫是什麼樣的人？",
           "options": [
             "很喜歡和別人交際",
             "有點害羞內向",
@@ -454,6 +454,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sociable）原位換成翻譯題，沿用題 id b2-u11-l06-q17；目標字沿用 sociable",
         "resolution": "改為 translate：promptZh「我們的貓很愛和人親近，一看到客人就會走過去。」、hintWords [\"sociable\"]、referenceEn [\"Our cat is very sociable and always walks over to visitors.\",\"Our cat is so sociable that it goes up to every guest it sees.\"]、rubricZh [\"sociable 是形容詞，表示「愛和人親近、合群的」（例如 is very sociable 等）\",\"「一看到客人就走過去」可寫，例如 walks over to visitors、goes up to every guest 等\",\"動物可用 it 指稱；寫 he、she 也不扣分\"]（原 makeSentence：instructionZh「用 sociable 造一個句子，描述你自己或身邊某人的社交個性。」、referenceEn [\"I am not very sociable, so I prefer small groups.\",\"My cousin is so sociable that she talks to everyone at weddings.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

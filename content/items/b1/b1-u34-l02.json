@@ -125,10 +125,10 @@
       "audioZh": "如果你需要幫忙提行李，請洽詢櫃台的工作人員。",
       "questionZh": "需要幫忙提行李時該怎麼做？",
       "options": [
-        "Call a taxi company.",
-        "Speak to the people at reception.",
-        "Leave the bags at the front desk.",
-        "Carry them yourself."
+        "Call a taxi company",
+        "Speak to the people at reception",
+        "Leave the bags at the front desk",
+        "Carry them yourself"
       ],
       "answer": 1
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u34-l02-q15",
       "type": "reading",
-      "passageEn": "Last winter, my grandmother hurt her arm, but she has fully recovered now. While she was getting better, she needed assistance with cooking, so I visited her every day. One day, we wrapped presents together for my cousins. She told me about her village, an old settlement by the river that was built three hundred years ago. She said there is a big gap between life then and life now. Before I left, I had to drag a heavy bag of rubbish out to the street. My teacher said my observations about Grandma's life would make a good essay, and that interaction between young and old people is good for both sides.",
+      "passageEn": "Last winter, my grandmother hurt her arm, but she has fully recovered now. While she was getting better, she needed assistance with cooking, so I visited her every day. One day, we wrapped presents together for my cousins. She told me about her village, an old settlement by the river that was built three hundred years ago. She said there is a big gap between life then and life now. Before I left, I had to drag a heavy bag of trash out to the street. My teacher said my observations about Grandma's life would make a good essay, and that interaction between young and old people is good for both sides.",
       "passageZh": "去年冬天，我奶奶傷了手臂，不過現在已經完全康復了。她在復原期間需要人幫忙煮飯，所以我每天都去看她。有一天，我們一起替表親們包禮物。她跟我說起她的村子，那是河邊一個三百年前建立的古老聚落。她說以前的生活和現在差距很大。離開前，我得把一大袋垃圾拖到街上。老師說，我對奶奶生活的觀察可以寫成一篇好文章，而且年輕人和年長者之間的互動對雙方都有好處。",
       "questions": [
         {
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "She recovered from her cold quickly.",
-        "She quickly recovered from the cold."
+        "She quickly recovered from her cold."
       ],
       "rubricZh": [
         "recover 表示「恢復、康復」，例如 recover from a cold 等說法",
@@ -396,6 +396,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（interaction）原位換成翻譯題，沿用題 id b1-u34-l02-q17；目標字沿用 interaction",
         "resolution": "改為 translate：promptZh「這個遊戲鼓勵玩家之間的互動。」、hintWords [\"interaction\"]、referenceEn [\"This game encourages interaction between players.\",\"The game encourages more interaction among players.\"]、rubricZh [\"用 interaction 表示「互動」（例如 interaction between players）\"]（原 makeSentence：instructionZh「用 interaction 造一個句子，說說你和別人互動的經驗或看法。」、referenceEn [\"I enjoy the interaction with customers at my part-time job.\",\"I like interaction with people from other countries.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

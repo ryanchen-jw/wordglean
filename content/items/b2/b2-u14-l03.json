@@ -232,7 +232,7 @@
       ],
       "referenceEn": [
         "Please press these empty cardboard boxes flat before you recycle them.",
-        "Please make these cardboard boxes flat before recycling them."
+        "Please fold these empty cardboard boxes flat before recycling them."
       ],
       "rubricZh": [
         "cardboard 可當形容詞用（例如 cardboard boxes 等）",
@@ -423,6 +423,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hedge）原位換成翻譯題，沿用題 id b2-u14-l03-q18；目標字沿用 hedge",
         "resolution": "改為 translate：promptZh「我們的鄰居每個月修剪一次樹籬。」、hintWords [\"hedge\"]、referenceEn [\"Our neighbor cuts the hedge once a month.\",\"Our neighbor trims the hedge every month.\"]、rubricZh [\"hedge 指「樹籬」（例如 the hedge、their hedge 等）\",\"「修剪」可寫，例如 cut、trim 等；主詞單數時動詞加 s\",\"「每個月一次」可寫，例如 once a month、every month 等\"]（原 makeSentence：instructionZh「用 hedge 造一個句子，描述你看過的一排樹籬。」、referenceEn [\"I walk past a neat green hedge on my way to work.\",\"There is a low hedge in front of my apartment building.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

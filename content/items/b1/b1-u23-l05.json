@@ -112,10 +112,10 @@
       "audioZh": "溜冰課在星期六十點，費用是十五元。",
       "questionZh": "溜冰課要多少錢？",
       "options": [
-        "Ten dollars.",
-        "Twenty-five dollars.",
-        "Fifteen dollars.",
-        "It's free."
+        "Ten dollars",
+        "Twenty-five dollars",
+        "Fifteen dollars",
+        "It's free"
       ],
       "answer": 2
     },
@@ -306,6 +306,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（extreme sports）原位換成翻譯題，沿用題 id b1-u23-l05-q16；目標字沿用 extreme sports",
         "resolution": "改為 translate：promptZh「這個小鎮吸引了很多喜歡極限運動的遊客。」、hintWords [\"extreme sports\"]、referenceEn [\"This town attracts many visitors who enjoy extreme sports.\",\"Many people come to this town to try extreme sports.\"]、rubricZh [\"用 extreme sports 表示「極限運動」\",\"「吸引」可寫，例如 attracts、many … come to 等\"]（原 makeSentence：instructionZh「用 extreme sports 造一個句子，說說你對極限運動的看法。」、referenceEn [\"I think extreme sports are too dangerous for me.\",\"I would like to try extreme sports one day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

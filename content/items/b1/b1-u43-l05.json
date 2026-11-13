@@ -51,8 +51,8 @@
       "id": "b1-u43-l05-q04",
       "type": "wordCard",
       "word": "warmly",
-      "exampleEn": "The audience cheered warmly at the end of the show.",
-      "exampleZh": "表演結束時，觀眾熱烈地歡呼。",
+      "exampleEn": "The audience applauded warmly at the end of the show.",
+      "exampleZh": "表演結束時，觀眾熱烈地鼓掌。",
       "glossZh": "熱情地；溫暖地",
       "distractorsZh": [
         "冷淡地",
@@ -77,7 +77,7 @@
       "id": "b1-u43-l05-q06",
       "type": "wordCard",
       "word": "mischief",
-      "exampleEn": "The teacher stopped the boys' mischief.",
+      "exampleEn": "The teacher put an end to the boys' mischief.",
       "exampleZh": "老師制止了男孩們的惡作劇。",
       "glossZh": "惡作劇；調皮搗蛋",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "我們的新鄰居帶著一籃水果熱情地歡迎我們。",
       "questionZh": "新鄰居怎麼歡迎他們？",
       "options": [
-        "With a basket of flowers.",
-        "With a big dinner party.",
-        "With a short letter.",
-        "With a gift of fruit."
+        "With a basket of flowers",
+        "With a big dinner party",
+        "With a short letter",
+        "With a gift of fruit"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u43-l05-q15",
       "type": "reading",
-      "passageEn": "Last weekend, we visited my grandparents in the countryside. They hugged us warmly at the door. Grandma had lovingly cooked all my favorite dishes. My little cousins were full of mischief: they hid my shoes and laughed. To my annoyance, it took me an hour to find them. In the afternoon, we sat in the gorgeous garden, which was very relaxing. Then Grandpa waited anxiously for a phone call from my aunt, who was having a baby. When the call came, everyone was pleasantly surprised: it was twins! Later, my cousin admitted that hiding my shoes was a little shameful, and he said sorry.",
-      "passageZh": "上週末，我們去鄉下探望爺爺奶奶。他們在門口熱情地擁抱我們。奶奶慈愛地煮了我所有最愛吃的菜。我的小表弟們非常調皮搗蛋：他們把我的鞋子藏起來，還哈哈大笑。讓我惱怒的是，我花了一個小時才找到鞋子。下午，我們坐在美極了的花園裡，非常令人放鬆。接著，爺爺焦急地等著阿姨打來的電話，因為她快生寶寶了。電話打來時，大家都又驚又喜：是雙胞胎！後來，我表弟承認藏我的鞋子有點丟臉，還向我道了歉。",
+      "passageEn": "Last weekend, we visited my grandparents in the countryside. They hugged us warmly at the door. Grandma had lovingly cooked all my favorite dishes. My little cousins were full of mischief: they hid my shoes and laughed. To my annoyance, it took me an hour to find them. In the afternoon, we sat in the gorgeous garden, which was very relaxing. Then Grandpa waited anxiously for a phone call from my aunt, who was having a baby. When the call came, everyone was pleasantly surprised: it was twins! Later, one of my cousins admitted that hiding my shoes was a little shameful, and he said sorry.",
+      "passageZh": "上週末，我們去鄉下探望爺爺奶奶。他們在門口熱情地擁抱我們。奶奶慈愛地煮了我所有最愛吃的菜。我的小表弟們非常調皮搗蛋：他們把我的鞋子藏起來，還哈哈大笑。讓我惱怒的是，我花了一個小時才找到鞋子。下午，我們坐在美極了的花園裡，非常令人放鬆。接著，爺爺焦急地等著阿姨打來的電話，因為她快生寶寶了。電話打來時，大家都又驚又喜：是雙胞胎！後來，其中一個表弟承認藏我的鞋子有點丟臉，還向我道了歉。",
       "questions": [
         {
           "questionZh": "小表弟們做了什麼惡作劇？",
@@ -456,6 +456,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（relaxing）原位換成翻譯題，沿用題 id b1-u43-l05-q17；目標字沿用 relaxing",
         "resolution": "改為 translate：promptZh「泡個熱水澡很令人放鬆。」、hintWords [\"relaxing\"]、referenceEn [\"Taking a hot bath is very relaxing.\",\"A hot bath is really relaxing.\"]、rubricZh [\"用 relaxing 表示「令人放鬆的」（寫 relaxed 時主詞要是人）\"]（原 makeSentence：instructionZh「用 relaxing 造一個句子，說說你覺得放鬆的活動。」、referenceEn [\"Reading in bed is relaxing for me.\",\"I think walking by the sea is very relaxing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

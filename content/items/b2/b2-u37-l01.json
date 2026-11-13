@@ -163,7 +163,7 @@
     {
       "id": "b2-u37-l01-q13",
       "type": "reading",
-      "passageEn": "When Jason moved to the city for work, he could not afford to buy a home, so he looked for a rental. He found a small apartment next to an outpatient clinic and signed a one-year lease. The building was once a rich family's mansion, and it still has beautiful old windows. However, the pipes are very old, and Jason has called the plumber three times this year. Behind the building, there is a small plot of land where people who live there can grow vegetables, and Jason enjoys gardening after work. Although he likes the apartment, he hopes his next residence will be a little closer to his office.",
+      "passageEn": "When Jason moved to the city for work, he could not afford to buy a home, so he looked for a rental. He found a small apartment next to an outpatient clinic and signed a one-year lease. The building was once a rich family's mansion, and it still has beautiful old windows. However, the pipes are very old, and Jason has had to call a plumber three times this year. Behind the building, there is a small plot of land where people who live there can grow vegetables, and Jason enjoys gardening after work. Although he likes the apartment, he hopes his next residence will be a little closer to his office.",
       "passageZh": "Jason 為了工作搬到城裡時，買不起房子，所以找了出租的房子。他在一間門診診所旁邊找到一間小公寓，簽了一年的租約。這棟建築以前是一戶有錢人家的宅邸，到現在還保有漂亮的老窗戶。不過，水管非常老舊，Jason 今年已經叫了三次水電工。大樓後面有一小塊地，住戶可以在那裡種菜，Jason 下班後很喜歡在那裡種菜。雖然他喜歡這間公寓，但他希望下一個住處能離公司近一點。",
       "questions": [
         {
@@ -389,6 +389,12 @@
         "message": "執行長裁示：第③關：SUS 與 u41-l05 聽選（廚房水管出問題→叫水電工）情境、句型相同",
         "resolution": "改為 promptZh「這附近很難找到週末還願意來的水電工。」、referenceEn [\"It is hard to find a plumber who will come on weekends around here.\",\"Around here, it's hard to find a plumber who works on weekends.\"]、rubricZh [\"「水電工」可寫，例如 plumber 等\",\"「很難找到」可寫，例如 it is hard to find、it's difficult to find 等\",\"「週末還願意來的」可寫，例如 who will come on weekends、who works on weekends 等\"]（原 promptZh「廚房的水管漏水了，所以我們打電話找水電工。」、referenceEn [\"The pipe in the kitchen was leaking, so we called a plumber.\",\"We called a plumber because the kitchen pipe was leaking.\"]、rubricZh [\"「水電工」可寫，例如 plumber 等\",\"「漏水」可寫，例如 was leaking、had a leak 等\",\"時態可用過去式或現在完成式（例如 called、have called 等）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

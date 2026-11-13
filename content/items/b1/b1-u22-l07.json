@@ -126,9 +126,9 @@
       "questionZh": "新影集什麼時候開播？",
       "options": [
         "This Friday at nine p.m.",
-        "Next Monday at nine.",
-        "Next Saturday at seven.",
-        "Tonight at ten."
+        "Next Monday at nine",
+        "Next Saturday at seven",
+        "Tonight at ten"
       ],
       "answer": 1
     },
@@ -362,6 +362,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（chat show）原位換成翻譯題，沿用題 id b1-u22-l07-q17；目標字沿用 chat show",
         "resolution": "改為 translate：promptZh「那位演員下週會上一個談話節目。」、hintWords [\"chat show\"]、referenceEn [\"That actor will appear on a chat show next week.\",\"That actor is going to be on a chat show next week.\"]、rubricZh [\"用 chat show 表示「談話節目」（寫 talk show 也正確）\",\"表示未來的寫法都可以（例如 will appear、is going to be 等）\"]（原 makeSentence：instructionZh「用 chat show 造一個句子，說說你喜歡或不喜歡的談話節目。」、referenceEn [\"I often watch a chat show before I go to bed.\",\"I don't like chat shows because the hosts talk too much.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

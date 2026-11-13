@@ -127,10 +127,10 @@
       "audioZh": "魔術表演讓我很驚訝，那個人讓一輛車消失了！",
       "questionZh": "魔術師做了什麼？",
       "options": [
-        "He made a cat disappear.",
-        "A car was there, then it wasn't.",
-        "He flew over the people watching.",
-        "He drove a car on stage."
+        "He made a cat disappear",
+        "A car was there, then it wasn't",
+        "He flew over the people watching",
+        "He drove a car on stage"
       ],
       "answer": 1
     },
@@ -416,6 +416,12 @@
         "message": "執行長裁示：第③關：SUS 變體 1 of my year 不道地",
         "resolution": "改為 referenceEn [\"That concert was the most memorable experience of the year for me.\",\"That concert was my most memorable experience this year.\"]（原 referenceEn [\"That concert was the most memorable experience of my year.\",\"That concert was my most memorable experience this year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

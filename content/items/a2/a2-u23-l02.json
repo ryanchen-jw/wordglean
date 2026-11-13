@@ -174,7 +174,7 @@
       "id": "a2-u23-l02-q14",
       "type": "reading",
       "passageEn": "Last year, my sister got an opportunity to study abroad. It was a hard choice for her. My parents' biggest concern was money, and she also wondered if she would feel lonely. She thought about it for weeks. In the end, she decided to go. Now she is at a university in Canada, and she says it was the right choice. Her teachers there pay a lot of attention to every student.",
-      "passageZh": "去年，我姊姊得到一個出國留學的機會。這對她來說是個困難的選擇。爸媽最大的擔心是錢，她自己也在想會不會覺得孤單。她考慮了好幾個星期，最後決定出國。現在她在加拿大的一所大學念書，她說那是正確的選擇。那裡的老師對每個學生都很關注。",
+      "passageZh": "去年，我的姊妹得到一個出國留學的機會。這對她來說是個困難的選擇。爸媽最大的擔心是錢，她自己也在想會不會覺得孤單。她考慮了好幾個星期，最後決定出國。現在她在加拿大的一所大學念書，她說那是正確的選擇。那裡的老師對每個學生都很關注。",
       "questions": [
         {
           "questionZh": "爸媽最大的擔心是什麼？",
@@ -186,7 +186,7 @@
           "answer": 1
         },
         {
-          "questionZh": "姊姊現在在哪裡？",
+          "questionZh": "作者的姊妹現在在哪裡？",
           "options": [
             "加拿大的一所大學",
             "台灣的家裡",
@@ -287,6 +287,12 @@
         "message": "執行長裁示：第③關：FIX 要點寫死「動詞加 s」，會判錯現在進行式 is wondering",
         "resolution": "rubricZh 改為 [\"用 wonder 表示「想知道」，時態可用現在式或現在進行式（例如 wonders、is wondering 等）\",\"「會不會」可寫，例如 if you will come、if you are coming 等\"]（原 [\"用 wonder 表示「想知道」，主詞是單數，動詞加 s（例如 wonders）\",\"「會不會」可寫，例如 if you will come、if you are coming 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

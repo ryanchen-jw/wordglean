@@ -221,11 +221,11 @@
       ],
       "referenceEn": [
         "The company will implement a new leave policy next month.",
-        "Next month, the company is going to implement a new holiday system."
+        "Next month, the company is going to implement a new holiday policy."
       ],
       "rubricZh": [
         "implement 後面接政策、計畫等（例如 implement a new policy）",
-        "「會實施」可用 will、be going to 等表示未來的寫法；「休假制度」可寫 leave policy、holiday system 等"
+        "「會實施」可用 will、be going to 等表示未來的寫法；「休假制度」可寫 leave policy、holiday policy 等"
       ]
     },
     {
@@ -352,6 +352,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（enhance）原位換成翻譯題，沿用題 id b2-u05-l08-q17；目標字沿用 enhance",
         "resolution": "改為 translate：promptZh「這次的訓練大大提升了員工的溝通能力。」、hintWords [\"enhance\"]、referenceEn [\"The training greatly enhanced the staff's communication skills.\",\"This training has greatly enhanced our employees' communication skills.\"]、rubricZh [\"enhance 後面接被提升的東西（例如 enhanced the staff's skills 等）\",\"「大大」可寫，例如 greatly、a lot 等，位置不扣分\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 enhance 造一個句子，說說你做了什麼來提升某樣東西（例如技能、外觀）。」、referenceEn [\"I take online classes to enhance my English skills.\",\"I fixed the old windows to enhance the value of my apartment.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]、rubricZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

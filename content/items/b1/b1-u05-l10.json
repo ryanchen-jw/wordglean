@@ -114,10 +114,10 @@
       "audioZh": "飯店離機場三英里，所以搭計程車大約十分鐘。",
       "questionZh": "飯店離機場多遠？",
       "options": [
-        "Three miles.",
-        "Ten miles.",
-        "Thirty miles.",
-        "Two miles."
+        "Three miles",
+        "Ten miles",
+        "Thirty miles",
+        "Two miles"
       ],
       "answer": 0
     },
@@ -297,6 +297,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（mile）原位換成翻譯題，沿用題 id b1-u05-l10-q16；目標字沿用 mile",
         "resolution": "改為 translate：promptZh「他每天早上跑五英里。」、hintWords [\"mile\"]、referenceEn [\"He runs five miles every morning.\",\"Every morning, he runs five miles.\"]、rubricZh [\"用 miles 表示距離「英里」（例如 five miles）\",\"「每天早上」可寫，例如 every morning、each morning 等\"]（原 makeSentence：instructionZh「用 mile 造一個句子，說說某個地方離你家多遠，或你走、跑了多遠。」、referenceEn [\"My office is about five miles from my home.\",\"I ran three miles in the park this morning.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

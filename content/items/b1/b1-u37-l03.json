@@ -127,10 +127,10 @@
       "audioZh": "我弟弟在課堂上把老師叫成「媽媽」，覺得好尷尬。",
       "questionZh": "弟弟為什麼覺得尷尬？",
       "options": [
-        "His mom came to his class.",
-        "He forgot his homework at home again.",
-        "He used the wrong name for his teacher.",
-        "He lost his shoes."
+        "His mom came to his class",
+        "He forgot his homework at home again",
+        "He used the wrong name for his teacher",
+        "He lost his shoes"
       ],
       "answer": 2
     },
@@ -144,7 +144,7 @@
       "id": "b1-u37-l03-q12",
       "type": "shadowing",
       "sentenceEn": "She felt emotionally closer to her sister after the trip.",
-      "sentenceZh": "那趟旅行後，她在情感上和姊姊更親近了。"
+      "sentenceZh": "那趟旅行後，她在情感上和她的姊妹更親近了。"
     },
     {
       "id": "b1-u37-l03-q13",
@@ -187,7 +187,7 @@
     {
       "id": "b1-u37-l03-q15",
       "type": "reading",
-      "passageEn": "Our class put on a play last month. The story took place in an imaginary land. I played a cruel queen, but in real life I'm shy, so at first I felt embarrassed on stage. One classmate, Tom, kept boasting that he was the best actor. During the play, Tom forgot his lines, and everyone laughed. I helped him by saying his lines for him. After the show, the audience cheered with delight. Our teacher said the play was a triumph. Tom thanked me with real warmth, and I learned that his boasting came from feeling nervous. The play had a simple charm that everyone loved. At the end, I felt emotionally tired but happy.",
+      "passageEn": "Our class put on a play last month. The story took place in an imaginary land. I played a cruel queen, but in real life I'm shy, so at first I felt embarrassed on stage. One classmate, Tom, kept boasting that he was the best actor. During the play, Tom forgot his lines, and everyone laughed. I helped him by saying his lines for him. After the show, the audience cheered with delight. Our teacher said the play was a triumph. Tom thanked me with real warmth, and I learned that his boasting came from feeling nervous. The play had a simple charm that everyone loved. In the end, I felt emotionally tired but happy.",
       "passageZh": "上個月，我們班演了一齣戲。故事發生在一片想像中的土地上。我演一個殘忍的皇后，但現實中我很害羞，所以一開始在台上覺得很尷尬。同學 Tom 一直吹噓自己是最好的演員。演出時，Tom 忘了台詞，大家都笑了。我替他說出台詞幫了他。演出結束後，觀眾開心地歡呼。老師說這齣戲大獲成功。Tom 真心熱情地向我道謝，我也明白了他的吹噓其實是因為緊張。這齣戲有一種樸實的魅力，大家都很喜歡。最後，我情緒上很疲累，但很開心。",
       "questions": [
         {
@@ -350,6 +350,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（embarrassed）原位換成翻譯題，沿用題 id b1-u37-l03-q17；目標字沿用 embarrassed",
         "resolution": "改為 translate：promptZh「她穿錯了衣服去派對，覺得很尷尬。」、hintWords [\"embarrassed\"]、referenceEn [\"She felt embarrassed because she wore the wrong clothes to the party.\",\"She was embarrassed that she had worn the wrong clothes to the party.\"]、rubricZh [\"用 embarrassed 表示「尷尬的」（例如 felt embarrassed、was embarrassed 等）\"]（原 makeSentence：instructionZh「用 embarrassed 造一個句子，說說一次讓你覺得尷尬的經驗。」、referenceEn [\"I felt embarrassed when my phone rang in class.\",\"I was embarrassed because I sang the wrong song.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

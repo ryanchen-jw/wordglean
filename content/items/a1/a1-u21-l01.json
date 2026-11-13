@@ -127,9 +127,9 @@
       "audioZh": "這雙鞋的顏色很好看，但尺寸不對。",
       "questionZh": "這雙鞋有什麼問題？",
       "options": [
-        "The size is wrong.",
-        "The color is ugly.",
-        "They are too expensive."
+        "The size is wrong",
+        "The color is ugly",
+        "They are too expensive"
       ],
       "answer": 0
     },
@@ -186,8 +186,8 @@
     {
       "id": "a1-u21-l01-q15",
       "type": "reading",
-      "passageEn": "Tom wants a new shirt. He likes blue, but the shop only has green and dark red shirts. He puts on a green one, but the size is too small. The woman at the shop is very nice. She says, \"Come back on Friday. The blue shirts will be ready then.\"",
-      "passageZh": "Tom 想買一件新襯衫。他喜歡藍色，但店裡只有綠色和深紅色的。他穿上一件綠色的，可是尺寸太小。店裡的女士人很好，她說：「星期五再來吧，那時藍色的襯衫就準備好了。」",
+      "passageEn": "Tom wants a new shirt. He likes blue, but the shop only has green and dark red shirts. He puts on a green one, but it is too small. The woman at the shop is very nice. She says, \"Come back on Friday. We will have blue shirts then.\"",
+      "passageZh": "Tom 想買一件新襯衫。他喜歡藍色，但店裡只有綠色和深紅色的。他穿上一件綠色的，可是太小了。店裡的女士人很好，她說：「星期五再來吧，那時我們就會有藍色的襯衫了。」",
       "questions": [
         {
           "questionZh": "Tom 喜歡什麼顏色？",
@@ -324,6 +324,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（dark）原位換成翻譯題，沿用題 id a1-u21-l01-q17；目標字沿用 dark",
         "resolution": "改為 translate：promptZh「她有一頭深色的長髮。」、hintWords [\"dark\"]、referenceEn [\"She has long dark hair.\",\"Her hair is long and dark.\"]、rubricZh [\"dark 可形容顏色深（例如 dark hair）\",\"可寫，例如 She has long dark hair、Her hair is long and dark 等\"]（原 makeSentence：instructionZh「用 dark 造一個句子，描述暗的地方或深色的東西。」、referenceEn [\"It is very dark in the room.\",\"She has dark hair.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

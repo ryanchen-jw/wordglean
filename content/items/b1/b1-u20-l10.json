@@ -127,10 +127,10 @@
       "audioZh": "我今天不能來開會，搬箱子讓我背痛得很厲害。",
       "questionZh": "說話者為什麼不能來開會？",
       "options": [
-        "Their back hurts a lot.",
-        "Too many boxes to lift.",
-        "A bad earache.",
-        "A problem with their car."
+        "Their back hurts a lot",
+        "Too many boxes to lift",
+        "A bad earache",
+        "A problem with their car"
       ],
       "answer": 0
     },
@@ -435,6 +435,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sneeze）原位換成翻譯題，沿用題 id b1-u20-l10-q17；目標字沿用 sneeze",
         "resolution": "改為 translate：promptZh「這些灰塵讓我一直打噴嚏。」、hintWords [\"sneeze\"]、referenceEn [\"The dust makes me sneeze again and again.\",\"The dust kept making me sneeze.\"]、rubricZh [\"用 sneeze 表示「打噴嚏」（例如 makes me sneeze）\",\"「一直」可寫，例如 again and again、kept making me… 等；時態配合內容\"]（原 makeSentence：instructionZh「用 sneeze 造一個句子，說說什麼東西會讓你打噴嚏。」、referenceEn [\"Cats make me sneeze a lot.\",\"I always sneeze when spring comes.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

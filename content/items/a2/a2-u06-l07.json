@@ -122,7 +122,7 @@
       "id": "a2-u06-l07-q10",
       "type": "listenChoice",
       "audioEn": "We watched a horror movie last night, and my sister couldn't sleep.",
-      "audioZh": "我們昨晚看了一部恐怖片，我妹妹嚇得睡不著。",
+      "audioZh": "我們昨晚看了一部恐怖片，我的姊妹嚇得睡不著。",
       "questionZh": "他們昨晚看了什麼電影？",
       "options": [
         "A horror movie",
@@ -184,8 +184,8 @@
     {
       "id": "a2-u06-l07-q15",
       "type": "reading",
-      "passageEn": "My grandparents have been married for fifty years. My grandfather is a gentle and wise man. Every year, he plans something romantic for their anniversary. Last year, he took Grandma to the restaurant where they had their first date. Grandma was very pleased. When it started to rain, she was upset. \"Don't worry,\" Grandpa said, and he opened a big umbrella. I really admire them.",
-      "passageZh": "我爺爺奶奶已經結婚五十年了。爺爺是個溫柔又有智慧的人。每年結婚紀念日，他都會安排浪漫的活動。去年，他帶奶奶去他們第一次約會的那家餐廳。奶奶非常高興。開始下雨的時候，她很心煩。爺爺說：「別擔心。」然後撐開一把大傘。我真的很欽佩他們。",
+      "passageEn": "My grandparents have been married for fifty years. My grandfather is a gentle and wise man. Every year, he plans something romantic for their anniversary. Last year, he took Grandma to the restaurant where they had their first date. Grandma was very pleased. When it started to rain on the way home, she was upset. \"Don't worry,\" Grandpa said, and he opened a big umbrella. I really admire them.",
+      "passageZh": "我爺爺奶奶已經結婚五十年了。爺爺是個溫柔又有智慧的人。每年結婚紀念日，他都會安排浪漫的活動。去年，他帶奶奶去他們第一次約會的那家餐廳。奶奶非常高興。回家路上開始下雨時，她很心煩。爺爺說：「別擔心。」然後撐開一把大傘。我真的很欽佩他們。",
       "questions": [
         {
           "questionZh": "去年爺爺帶奶奶去哪裡？",
@@ -329,6 +329,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pleased）原位換成翻譯題，沿用題 id a2-u06-l07-q17；目標字沿用 pleased",
         "resolution": "改為 translate：promptZh「她對她的新家很滿意。」、hintWords [\"pleased\"]、referenceEn [\"She is pleased with her new home.\",\"She is very pleased with her new house.\"]、rubricZh [\"用 be pleased with 表示「對…滿意」\",\"「新家」可寫，例如 new home、new house 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 pleased 造一個句子，說說一件讓你很高興或滿意的事。」、referenceEn [\"I was pleased with my test results.\",\"I am pleased to hear the good news.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

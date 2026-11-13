@@ -27,8 +27,8 @@
       "id": "b2-u19-l05-q02",
       "type": "wordCard",
       "word": "bracket",
-      "exampleEn": "Brackets look like two curved lines around a word.",
-      "exampleZh": "括號看起來像圍住一個字的兩條弧線。",
+      "exampleEn": "Brackets are always used in pairs, one on each side of the extra words.",
+      "exampleZh": "括號一定成對使用，分別放在補充字詞的兩邊。",
       "glossZh": "括號；托架；（收入等）級距",
       "distractorsZh": [
         "逗號",
@@ -66,8 +66,8 @@
       "id": "b2-u19-l05-q05",
       "type": "wordCard",
       "word": "colon",
-      "exampleEn": "The time on the clock was written as 7:30, with a colon in the middle.",
-      "exampleZh": "時鐘上的時間寫成 7:30，中間有一個冒號。",
+      "exampleEn": "The meeting time was written as 7:30, with a colon in the middle.",
+      "exampleZh": "會議時間寫成 7:30，中間有一個冒號。",
       "glossZh": "冒號",
       "distractorsZh": [
         "句號",
@@ -128,7 +128,7 @@
       "questionZh": "說話者哪兩天不能參加練習？",
       "options": [
         "Mondays and Fridays",
-        "On Mondays and Wednesdays",
+        "Mondays and Wednesdays",
         "Tuesdays and Thursdays",
         "Saturdays and Sundays"
       ],
@@ -327,6 +327,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tutor）原位換成翻譯題，沿用題 id b2-u19-l05-q17；目標字沿用 tutor",
         "resolution": "改為 translate：promptZh「她週末當家教，教一個小學生數學。」、hintWords [\"tutor\"]、referenceEn [\"She tutors a primary school student in math on weekends.\",\"On weekends, she tutors an elementary school student in math.\"]、rubricZh [\"tutor 可當動詞「當家教、輔導」（例如 tutors a student in math 等）；寫 works as a tutor for… 也正確\",\"習慣的事用現在式；「小學生」可寫，例如 primary school student、elementary school student 等\"]（原 makeSentence：instructionZh「用 tutor 造一個句子，說說你當過或請過家教的經驗。」、referenceEn [\"I had a tutor for chemistry when I was in high school.\",\"I tutor a neighbor's son in English every Saturday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

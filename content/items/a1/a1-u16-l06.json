@@ -43,8 +43,8 @@
       "id": "a1-u16-l06-q03",
       "type": "wordCard",
       "word": "speech",
-      "exampleEn": "The teacher gives a speech on the first day.",
-      "exampleZh": "老師在第一天發表演說。",
+      "exampleEn": "The teacher gives a speech on the first day of school.",
+      "exampleZh": "老師在開學第一天發表演說。",
       "glossZh": "演講；演說",
       "distractorsZh": [
         "考試",
@@ -56,7 +56,7 @@
       "id": "a1-u16-l06-q04",
       "type": "wordCard",
       "word": "conversation",
-      "exampleEn": "We have a long conversation on the phone.",
+      "exampleEn": "We had a long conversation on the phone.",
       "exampleZh": "我們在電話裡聊了很久。",
       "glossZh": "對話；談話",
       "distractorsZh": [
@@ -189,7 +189,7 @@
     {
       "id": "a1-u16-l06-q15",
       "type": "reading",
-      "passageEn": "Our class did a survey about reading. We asked fifty students. Most of them are big readers, and they love the stories of one writer, Anna Lin. In April, Anna Lin will give a speech at our school. We want to have a conversation with her.",
+      "passageEn": "Our class did a survey about reading. We asked fifty students. Most of them are big readers, and they love the stories by one writer, Anna Lin. In April, Anna Lin will give a speech at our school. We want to have a conversation with her.",
       "passageZh": "我們班做了一個關於閱讀的調查，問了五十個學生。他們大多很愛看書，而且都喜歡作家 Anna Lin 的故事。四月時，Anna Lin 會來我們學校演講。我們想和她聊聊。",
       "questions": [
         {
@@ -340,6 +340,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（conversation）原位換成翻譯題，沿用題 id a1-u16-l06-q17；目標字沿用 conversation",
         "resolution": "改為 translate：promptZh「我和計程車司機聊了一下。」、hintWords [\"conversation\"]、referenceEn [\"I had a short conversation with the taxi driver.\",\"I had a short conversation with my taxi driver.\"]、rubricZh [\"「和某人聊天」可寫，例如 have a conversation with、talk with 等\",\"過去的事用過去式（例如 had）\"]（原 makeSentence：instructionZh「用 conversation 造一個句子，說說你和誰聊天。」、referenceEn [\"I had a nice conversation with my neighbor today.\",\"I like to have conversations with my friends in English.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

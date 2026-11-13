@@ -147,7 +147,7 @@
     {
       "id": "b2-u42-l03-q13",
       "type": "mcq",
-      "stemEn": "The window is made of ____ plastic, so you can see what's inside the box.",
+      "stemEn": "The window on the box is made of ____ plastic, so you can see what's inside.",
       "stemZh": "盒子的窗是用透明塑膠做的，所以你看得到裡面有什麼。",
       "options": [
         "transparent",
@@ -296,6 +296,12 @@
         "message": "執行長裁示：第③關：SUS 要點寫死 fabulous 放名詞前",
         "resolution": "改為 promptZh「我們去年夏天在海邊度過了一個很棒的假期。」、referenceEn [\"We had a fabulous holiday at the beach last summer.\",\"Last summer, we had a fabulous vacation by the sea.\"]、rubricZh [\"fabulous 可放名詞前或 be 動詞後（例如 a fabulous holiday、was fabulous 等）\",\"「假期」可寫，例如 holiday、vacation 等；「海邊」可寫，例如 at the beach、by the sea 等\",\"用過去式（例如 had、spent 等）\"]（原 promptZh「我們去年夏天在海邊度過了一個很棒的假期。」、referenceEn [\"We had a fabulous holiday at the beach last summer.\",\"Last summer, we had a fabulous vacation by the sea.\"]、rubricZh [\"fabulous 放在名詞前（例如 a fabulous holiday 等）\",\"「假期」可寫，例如 holiday、vacation 等；「海邊」可寫，例如 at the beach、by the sea 等\",\"用過去式（例如 had、spent 等）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

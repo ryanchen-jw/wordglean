@@ -90,8 +90,8 @@
       "id": "c1-u07-l03-q07",
       "type": "wordCard",
       "word": "divergent",
-      "exampleEn": "Divergent paths in the forest led to two different lakes.",
-      "exampleZh": "森林裡的分岔小路通往兩座不同的湖。",
+      "exampleEn": "The two sisters took divergent paths after high school: one became a doctor, and the other became a singer.",
+      "exampleZh": "這對姊妹高中畢業後走上不同的路：一個成了醫生，另一個成了歌手。",
       "glossZh": "分歧的；不同的",
       "distractorsZh": [
         "一致的",
@@ -125,10 +125,10 @@
       "audioZh": "每年夏天，都有大批家庭離開城市到海邊去。",
       "questionZh": "每年夏天會發生什麼事？",
       "options": [
-        "City prices go down sharply.",
-        "Many families move into the city.",
-        "The beaches close for repairs.",
-        "Families leave the city."
+        "City prices go down sharply",
+        "Many families move into the city",
+        "The beaches close for repairs",
+        "Families leave the city"
       ],
       "answer": 3
     },
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "Long-term sleep deprivation can affect a person's judgment.",
-        "Sleep deprivation over a long time can affect your judgment."
+        "Sleep deprivation over a long period can affect your judgment."
       ],
       "rubricZh": [
         "「睡眠不足」可寫，例如 sleep deprivation、deprivation of sleep 等",
@@ -310,6 +310,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（resilient）原位換成翻譯題，沿用題 id c1-u07-l03-q17；目標字沿用 resilient",
         "resolution": "改為 translate：promptZh「這個小鎮的經濟很有韌性，很快就從困境中恢復了。」、hintWords [\"resilient\"]、referenceEn [\"The town's economy is resilient and recovered quickly from hard times.\",\"This small town has a resilient economy, and it soon recovered from its difficulties.\"]、rubricZh [\"「有韌性」用 resilient（例如 is resilient、a resilient economy 等）\",\"「很快恢復」可寫，例如 recovered quickly、soon recovered 等\",\"「困境」可寫，例如 hard times、difficulties 等\",\"時態配合內容（例如 recovered、has recovered 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 resilient 造一個句子，描述一個很有韌性的人（可以是你自己）。」、referenceEn [\"I have become more resilient since I started living alone.\",\"My grandmother is the most resilient person I know.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

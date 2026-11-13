@@ -125,10 +125,10 @@
       "audioZh": "我們這一帶有一座小公園、一家麵包店，還有一所很好的學校。",
       "questionZh": "說話者住的那一帶有什麼？",
       "options": [
-        "A small park and a cinema.",
-        "A good school, a bakery, and a little park.",
-        "A good school and a hospital.",
-        "A bakery and a train station."
+        "A small park and a movie theater",
+        "A good school, a bakery, and a little park",
+        "A good school and a hospital",
+        "A bakery and a train station"
       ],
       "answer": 1
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u08-l02-q15",
       "type": "reading",
-      "passageEn": "Every spring, our neighborhood holds a cleaning day. Each household sends at least one person. This year, there were approximately eighty participants, from young children to old folk. The event shows respect for the place where we live, and it builds a bond between neighbors. Even the resident cat at the corner shop came to watch! Everyone who participated got a free lunch from the bakery.",
-      "passageZh": "每年春天，我們這一帶都會舉辦一次清潔日。每戶人家至少派一個人參加。今年大約有八十位參加者，從小孩到老人都有。這個活動表達了我們對居住環境的尊重，也建立了鄰居之間的情誼。連街角商店那隻常駐的貓都來看熱鬧！每位參加的人都拿到麵包店提供的免費午餐。",
+      "passageEn": "Every spring, our neighborhood holds a cleaning day. Each household sends at least one person. This year, there were approximately eighty participants, from young children to old folk. The event shows respect for the place where we live, and it builds a bond between neighbors. Even the resident cat at the corner shop came to watch! Everyone who participated got a free lunch from a local bakery.",
+      "passageZh": "每年春天，我們這一帶都會舉辦一次清潔日。每戶人家至少派一個人參加。今年大約有八十位參加者，從小孩到老人都有。這個活動表達了我們對居住環境的尊重，也建立了鄰居之間的情誼。連街角商店那隻常駐的貓都來看熱鬧！每位參加的人都拿到附近一家麵包店提供的免費午餐。",
       "questions": [
         {
           "questionZh": "每戶人家至少要派幾個人參加？",
@@ -368,6 +368,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（household）原位換成翻譯題，沿用題 id b1-u08-l02-q17；目標字沿用 household",
         "resolution": "改為 translate：promptZh「這個社區大部分的家庭都養寵物。」、hintWords [\"household\"]、referenceEn [\"Most households in this neighborhood have pets.\",\"Most of the households in this neighborhood keep pets.\"]、rubricZh [\"用 household 的複數表示「家庭；住戶」（例如 most households）\",\"「養寵物」可寫，例如 have pets、keep pets 等\"]（原 makeSentence：instructionZh「用 household 造一個句子，說說你家裡的一件事（例如家裡有幾個人、誰做家事）。」、referenceEn [\"There are four people in my household.\",\"In my household, my father does the cooking.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -128,10 +128,10 @@
       "audioZh": "櫃台人員和藹地笑了笑，要我們別擔心晚到的事。",
       "questionZh": "櫃台人員的態度如何？",
       "options": [
-        "The receptionist was very rude.",
-        "The receptionist was annoyed that we were late.",
-        "The receptionist was kind and gentle.",
-        "The receptionist ignored us."
+        "The receptionist was very rude",
+        "The receptionist was annoyed that we were late",
+        "The receptionist was kind and gentle",
+        "The receptionist ignored us"
       ],
       "answer": 2
     },
@@ -169,7 +169,7 @@
     {
       "id": "c1-u39-l02-q14",
       "type": "mcq",
-      "stemEn": "He looked ____ at my old phone, as if it were rubbish, and then showed me his new one.",
+      "stemEn": "He looked ____ at my old phone, as if it were trash, and then showed me his new one.",
       "stemZh": "他輕蔑地看了看我的舊手機，好像那是垃圾一樣，然後秀出他的新手機。",
       "options": [
         "scornfully",
@@ -188,7 +188,7 @@
     {
       "id": "c1-u39-l02-q15",
       "type": "reading",
-      "passageEn": "The young director Nina had the unenviable job of shooting a whole scene inside a tiny elevator. Her lead actor, Max, suffered from claustrophobia, so she reassured him and tactfully suggested short takes with the doors opened between them. One crew member, however, refused to follow her schedule and laughed scornfully at her plan. The producer called it insubordination and sent him home. The child actor in the film, a cheerful little imp, kept everyone's spirits up between takes. Critics later praised the naturalness of the acting, and the producer smiled benignly when Nina won an award for the film.",
+      "passageEn": "The young director Nina had the unenviable job of shooting a whole scene inside a tiny elevator. Her lead actor, Max, suffered from claustrophobia, so she reassured him and tactfully suggested short takes with the doors open between them. One crew member, however, refused to follow her schedule and laughed scornfully at her plan. The producer called it insubordination and sent him home. The child actor in the film, a cheerful little imp, kept everyone's spirits up between takes. Critics later praised the naturalness of the acting, and the producer smiled benignly when Nina won an award for the film.",
       "passageZh": "年輕導演 Nina 接下一份吃力不討好的工作：整場戲都要在一部狹小的電梯裡拍。她的男主角 Max 有幽閉恐懼症，所以她先安撫他，再得體地建議每次拍短一點，中間把電梯門打開。不過，有一位劇組人員不肯照她的時間表做，還輕蔑地嘲笑她的計畫。製片說這是不服從上級，把他送回家。片中的童星是個開朗的小淘氣鬼，在拍攝空檔讓大家保持好心情。後來影評人稱讚演出非常自然；Nina 因這部片得獎時，製片和藹地笑了。",
       "questions": [
         {
@@ -342,6 +342,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（naturalness）原位換成翻譯題，沿用題 id c1-u39-l02-q17；目標字沿用 naturalness",
         "resolution": "改為 translate：promptZh「評審稱讚這位年輕演員表演得很自然。」、hintWords [\"naturalness\"]、referenceEn [\"The judges praised the naturalness of the young actor's performance.\",\"The naturalness of the young actor's acting won praise from the judges.\"]、rubricZh [\"「自然」用名詞 naturalness（例如 the naturalness of the performance 等）\",\"「稱讚」可寫，例如 praised、won praise from 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 naturalness 造一個句子，稱讚某個人、作品或聲音的自然。」、referenceEn [\"I like the naturalness of the actors in this TV series.\",\"The naturalness of her voice makes the song special.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,14 +125,14 @@
     {
       "id": "c1-u08-l01-q10",
       "type": "listenChoice",
-      "audioEn": "The anthropologist lived with the village people for two years to study their customs.",
+      "audioEn": "The anthropologist lived with the villagers for two years to study their customs.",
       "audioZh": "那位人類學家和村民一起生活了兩年，研究他們的習俗。",
       "questionZh": "這位人類學家做了什麼？",
       "options": [
-        "Built a school for the children.",
-        "Taught at a university abroad.",
-        "Wrote a book about cooking.",
-        "Lived in the village."
+        "Built a school for the children",
+        "Taught at a university abroad",
+        "Wrote a book about cooking",
+        "Lived in the village"
       ],
       "answer": 3
     },
@@ -311,6 +311,12 @@
         "message": "執行長裁示：第③關：c1-u08-l01-q17 SUS 變體 2 an elaborate city under the ground 不道地",
         "resolution": "改為 referenceEn [\"The writer created an elaborate underground city for her novel.\",\"For her novel, the writer designed an elaborate underground city.\"]（原 referenceEn [\"The writer created an elaborate underground city for her novel.\",\"For her novel, the writer designed an elaborate city under the ground.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

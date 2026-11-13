@@ -129,10 +129,10 @@
       "audioZh": "抱歉，我明天早上無法參加會議。",
       "questionZh": "說話者明天早上會怎樣？",
       "options": [
-        "Will be late for the meeting.",
-        "Won't be at the meeting.",
-        "Will lead the meeting.",
-        "Needs a ride to the meeting."
+        "Will be late for the meeting",
+        "Won't be at the meeting",
+        "Will lead the meeting",
+        "Needs a ride to the meeting"
       ],
       "answer": 1
     },
@@ -223,7 +223,7 @@
       ],
       "referenceEn": [
         "I was unable to go out yesterday because of the rain.",
-        "Because it was raining yesterday, I was unable to leave home."
+        "Because it was raining yesterday, I was unable to leave the house."
       ],
       "rubricZh": [
         "be unable to＋原形動詞，表示「無法⋯」",
@@ -342,6 +342,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（inspire）原位換成翻譯題，沿用題 id b1-u09-l05-q17；目標字沿用 inspire",
         "resolution": "改為 translate：promptZh「這座城市的美景激發了那位畫家的靈感。」、hintWords [\"inspire\"]、referenceEn [\"The beautiful views of this city inspired the painter.\",\"This city's beautiful scenery inspired the artist.\"]、rubricZh [\"用 inspire 表示「激發（靈感）」（例如 inspired the painter）\",\"「美景」可寫，例如 beautiful views、beautiful scenery 等；「畫家」可寫，例如 painter、artist 等\"]（原 makeSentence：instructionZh「用 inspire 造一個句子，說說一個激勵你的人或一件事。」、referenceEn [\"My grandmother inspires me to work hard.\",\"A trip to Japan inspired me to learn Japanese.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

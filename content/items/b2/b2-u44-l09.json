@@ -188,7 +188,7 @@
     {
       "id": "b2-u44-l09-q15",
       "type": "reading",
-      "passageEn": "Last Friday, our school held the final of its English debate contest. Mina, a quiet girl from my class, was surprisingly eloquent, and her arguments were clear and coherent. When the judges named her team the winner, she was ecstatic and hugged everyone. The other team was dissatisfied with the result at first, but their captain generously shook hands with Mina and praised her speech. Everyone agreed that this was admirable. At the end, our principal said that losing is no disgrace if you have done your best.",
+      "passageEn": "Last Friday, our school held the final of its English debate contest. Mina, a quiet girl from my class, was surprisingly eloquent, and her arguments were clear and coherent. When the judges named her team the winner, she was ecstatic and hugged everyone. The other team was dissatisfied with the result at first, but their captain generously shook hands with Mina and praised her speech. Everyone agreed that this was admirable. At the end of the contest, our principal said that losing is no disgrace if you have done your best.",
       "passageZh": "上週五，我們學校舉辦了英語辯論比賽的決賽。我班上安靜的女生 Mina 口才出奇地好，論點清楚又有條理。評審說她的隊伍獲勝時，她欣喜若狂，抱了每一個人。另一隊一開始對結果不滿意，但他們的隊長大方地和 Mina 握手，還稱讚她的發言。大家都認為這很令人欽佩。最後，校長說，只要盡了力，輸了也不丟臉。",
       "questions": [
         {
@@ -323,6 +323,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（misfortune）原位換成翻譯題，沿用題 id b2-u44-l09-q17；目標字沿用 misfortune",
         "resolution": "改為 translate：promptZh「他總是把自己的不幸怪罪到別人身上。」、hintWords [\"misfortune\"]、referenceEn [\"He always blames other people for his own misfortune.\",\"He always blames others for his misfortune.\"]、rubricZh [\"misfortune 表示「不幸、厄運」（例如 his own misfortune 等）\",\"「怪罪到別人身上」可寫，例如 blame others for…、blame other people for… 等\",\"always 位置不扣分；時態可用現在式或過去式（例如 blames、blamed 等）\"]（原 makeSentence：instructionZh「用 misfortune 造一個句子，說說一次你很倒楣的經驗。」、referenceEn [\"I had the misfortune of missing the last train home.\",\"By some misfortune, my phone fell into the lake.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

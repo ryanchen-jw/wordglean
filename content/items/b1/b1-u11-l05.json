@@ -125,10 +125,10 @@
       "audioZh": "水壺冒出的蒸汽讓火災警報器響了。",
       "questionZh": "是什麼讓火災警報器響了？",
       "options": [
-        "A fire in the kitchen.",
-        "Smoke from the kettle.",
-        "The boiling kettle.",
-        "A broken alarm."
+        "A fire in the kitchen",
+        "Smoke from the kettle",
+        "The boiling kettle",
+        "A broken alarm"
       ],
       "answer": 2
     },
@@ -186,7 +186,7 @@
       "id": "b1-u11-l05-q15",
       "type": "reading",
       "passageEn": "Every winter, my family stays in a mountain cabin for a week. Each evening, my father carries logs inside and builds a fire. The old carpet in front of the fire is soft and warm. We drink hot tea and watch the steam rise from our cups. My mother lights candles on the table, and my sister knits a pullover with long needles. In the morning, we have bread with jam from a big glass jar. It is a simple life, but we love it.",
-      "passageZh": "每年冬天，我們全家都會在山上的小木屋住一個星期。每天傍晚，爸爸把木柴搬進屋裡生火。火爐前的舊地毯又軟又暖和。我們喝熱茶，看著杯子冒出熱氣。媽媽在桌上點起蠟燭，妹妹用長棒針織一件套頭毛衣。早上，我們從一個大玻璃罐裡挖果醬配麵包吃。生活很簡單，但我們很喜歡。",
+      "passageZh": "每年冬天，我們全家都會在山上的小木屋住一個星期。每天傍晚，爸爸把木柴搬進屋裡生火。火爐前的舊地毯又軟又暖和。我們喝熱茶，看著杯子冒出熱氣。媽媽在桌上點起蠟燭，我的姊妹用長棒針織一件套頭毛衣。早上，我們從一個大玻璃罐裡挖果醬配麵包吃。生活很簡單，但我們很喜歡。",
       "questions": [
         {
           "questionZh": "每天傍晚爸爸做什麼？",
@@ -199,7 +199,7 @@
           "answer": 2
         },
         {
-          "questionZh": "妹妹在做什麼？",
+          "questionZh": "作者的姊妹在做什麼？",
           "options": [
             "在火爐旁讀故事書",
             "煮一壺熱茶",
@@ -452,6 +452,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（candle）原位換成翻譯題，沿用題 id b1-u11-l05-q17；目標字沿用 candle",
         "resolution": "改為 translate：promptZh「她吹熄了蛋糕上的蠟燭。」、hintWords [\"candle\"]、referenceEn [\"She blew out the candles on the cake.\",\"She blew out the candles on her cake.\"]、rubricZh [\"用 candle 表示「蠟燭」（單複數都可以，例如 the candles on the cake）\",\"「吹熄」可寫，例如 blew out 等\"]（原 makeSentence：instructionZh「用 candle 造一個句子，說說你什麼時候會點蠟燭。」、referenceEn [\"I light candles when I take a bath.\",\"I light candles on my friends' birthday cakes.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

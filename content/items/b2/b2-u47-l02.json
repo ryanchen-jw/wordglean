@@ -104,7 +104,7 @@
       "type": "wordCard",
       "word": "straighten",
       "exampleEn": "My sister uses a special tool to straighten her hair.",
-      "exampleZh": "我姊姊用一種特殊工具把頭髮弄直。",
+      "exampleZh": "我的姊妹用一種特殊工具把頭髮弄直。",
       "glossZh": "弄直；整理",
       "distractorsZh": [
         "弄捲",
@@ -309,6 +309,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（blink）原位換成翻譯題，沿用題 id b2-u47-l02-q17；目標字沿用 blink",
         "resolution": "改為 translate：promptZh「我的手機有新訊息時，上面的小燈會一閃一閃的。」、hintWords [\"blink\"]、referenceEn [\"The little light on my phone blinks when I get a new message.\",\"When I have a new message, the small light on my phone blinks.\"]、rubricZh [\"blink 在這裡表示「（燈）閃爍」（例如 the light blinks、keeps blinking 等）\",\"「有新訊息時」可寫，例如 when I get a new message、when I have a new message 等\",\"動詞配合主詞（例如 blinks 等）\"]（原 makeSentence：instructionZh「用 blink 造一個句子，描述你眨眼的情況。」、referenceEn [\"I blinked several times when I came out of the dark cinema.\",\"When I am tired, I blink a lot while I read.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

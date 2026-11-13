@@ -184,8 +184,8 @@
     {
       "id": "a2-u22-l06-q15",
       "type": "reading",
-      "passageEn": "Last weekend, we helped my uncle move to a new apartment. The elevator could take six people max, and it was too small for big boxes, so we carried load after load of boxes up the stairs. In the kitchen, there was a pile of plates. My uncle's new sofa was two meters long, and it was a few inches too wide for the door! In the end, my back hurt badly, but my uncle said our help made the day much easier.",
-      "passageZh": "上週末，我們幫叔叔搬到新公寓。電梯頂多能載六個人，也放不下大箱子，所以我們一趟又一趟地把箱子搬上樓梯。廚房裡有一疊盤子。叔叔的新沙發有兩公尺長，比門寬了幾英吋！最後，我的背痛得很厲害，不過叔叔說有我們幫忙，這一天輕鬆了很多。",
+      "passageEn": "Last weekend, we helped my uncle move to a new apartment. The elevator could take six people max, and it was too small for big boxes, so we carried load after load of boxes up the stairs. In the kitchen, we put all the plates in a pile. My uncle's new sofa was two meters long, and it was a few inches too wide for the door! In the end, my back hurt badly, but my uncle said our help made the day much easier.",
+      "passageZh": "上週末，我們幫叔叔搬到新公寓。電梯頂多能載六個人，也放不下大箱子，所以我們一趟又一趟地把箱子搬上樓梯。在廚房裡，我們把所有盤子疊成一疊。叔叔的新沙發有兩公尺長，比門寬了幾英吋！最後，我的背痛得很厲害，不過叔叔說有我們幫忙，這一天輕鬆了很多。",
       "questions": [
         {
           "questionZh": "電梯最多能載幾個人？",
@@ -334,6 +334,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（meter）原位換成翻譯題，沿用題 id a2-u22-l06-q17；目標字沿用 meter",
         "resolution": "改為 translate：promptZh「這座游泳池有五十公尺長。」、hintWords [\"meter\"]、referenceEn [\"This swimming pool is fifty meters long.\",\"The pool is fifty meters long.\"]、rubricZh [\"用 meter 表示「公尺」，五十公尺用複數（例如 fifty meters）\",\"長度可寫，例如 is fifty meters long 等\"]（原 makeSentence：instructionZh「用 meter 造一個句子，說說某樣東西的長度、高度或距離。」、referenceEn [\"My bed is two meters long.\",\"The bus stop is about a hundred meters from my home.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

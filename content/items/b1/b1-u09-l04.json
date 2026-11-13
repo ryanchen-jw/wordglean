@@ -29,8 +29,8 @@
       "id": "b1-u09-l04-q02",
       "type": "wordCard",
       "word": "mental",
-      "exampleEn": "The film is about a man's mental problems.",
-      "exampleZh": "這部電影講的是一個男人的心理問題。",
+      "exampleEn": "The film is about a man's mental health problems.",
+      "exampleZh": "這部電影講的是一個男人的心理健康問題。",
       "glossZh": "心理的；智力的",
       "distractorsZh": [
         "身體的",
@@ -126,13 +126,13 @@
       "id": "b1-u09-l04-q10",
       "type": "listenChoice",
       "audioEn": "He felt guilty because he broke his brother's toy.",
-      "audioZh": "他弄壞了弟弟的玩具，覺得很內疚。",
+      "audioZh": "他弄壞了他兄弟的玩具，覺得很內疚。",
       "questionZh": "他為什麼覺得內疚？",
       "options": [
-        "He damaged his brother's toy.",
-        "He ate his brother's cake.",
-        "His brother broke his toy.",
-        "He lost his brother's book."
+        "He damaged his brother's toy",
+        "He ate his brother's cake",
+        "His brother broke his toy",
+        "He lost his brother's book"
       ],
       "answer": 0
     },
@@ -371,6 +371,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（confidence）原位換成翻譯題，沿用題 id b1-u09-l04-q17；目標字沿用 confidence",
         "resolution": "改為 translate：promptZh「我對我們的新產品很有信心。」、hintWords [\"confidence\"]、referenceEn [\"I have a lot of confidence in our new product.\",\"I have great confidence in our new product.\"]、rubricZh [\"用 confidence in 表示「對…有信心」（例如 have confidence in…；寫 I am confident about 也正確）\"]（原 makeSentence：instructionZh「用 confidence 造一個句子，說說什麼事讓你更有自信。」、referenceEn [\"Learning English gives me more confidence at work.\",\"My confidence grew after I gave my first speech.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

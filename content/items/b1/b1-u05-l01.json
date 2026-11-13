@@ -38,7 +38,7 @@
       "id": "b1-u05-l01-q03",
       "type": "wordCard",
       "word": "partial",
-      "exampleEn": "We got only a partial refund for the cancelled flight.",
+      "exampleEn": "We got only a partial refund for the canceled flight.",
       "exampleZh": "被取消的班機，我們只拿到部分退款。",
       "glossZh": "部分的",
       "distractorsZh": [
@@ -121,14 +121,14 @@
     {
       "id": "b1-u05-l01-q10",
       "type": "listenChoice",
-      "audioEn": "The cake was divided evenly, so each child got the same size.",
+      "audioEn": "The cake was divided evenly, so each child got a piece of the same size.",
       "audioZh": "蛋糕切得很平均，所以每個小孩拿到的大小都一樣。",
       "questionZh": "每個小孩拿到的蛋糕怎麼樣？",
       "options": [
-        "A bigger piece.",
-        "An equal piece.",
-        "A different size.",
-        "Two pieces."
+        "A bigger piece",
+        "An equal piece",
+        "A different size",
+        "Two pieces"
       ],
       "answer": 1
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u05-l01-q15",
       "type": "reading",
-      "passageEn": "Our family wanted to reduce our water use. My father did a quick calculation: we were using about ninety gallons of water a day! That was a tremendous amount. So we made a plan to minimize waste. We take shorter showers, and we give the remainder of our drinking water to the plants. We also share the housework evenly. After one month, we saw a partial success: our water bill dropped by twenty percent.",
-      "passageZh": "我們家想減少用水量。爸爸很快算了一下：我們一天大約用九十加侖的水！那是非常大的量。所以我們訂了一個減少浪費的計畫。我們縮短洗澡時間，把剩下的飲用水拿去澆植物。我們也平均分擔家事。一個月後，我們看到部分的成效：水費降了百分之二十。",
+      "passageEn": "Our family wanted to reduce our water use. My father did a quick calculation: we were using about ninety gallons of water a day! That was a tremendous amount. So we made a plan to minimize waste. We take shorter showers, and we give the remainder of our drinking water to the plants. We divide it evenly, so every plant gets some. After one month, we saw a partial success: our water bill dropped by twenty percent.",
+      "passageZh": "我們家想減少用水量。爸爸很快算了一下：我們一天大約用九十加侖的水！那是非常大的量。所以我們訂了一個減少浪費的計畫。我們縮短洗澡時間，把剩下的飲用水拿去澆植物。我們把這些水平均分配，讓每株植物都喝得到。一個月後，我們看到部分的成效：水費降了百分之二十。",
       "questions": [
         {
           "questionZh": "爸爸算出全家一天大約用多少水？",
@@ -344,6 +344,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（evenly）原位換成翻譯題，沿用題 id b1-u05-l01-q17；目標字沿用 evenly",
         "resolution": "改為 translate：promptZh「油漆塗得均勻，牆壁才會好看。」、hintWords [\"evenly\"]、referenceEn [\"Paint the wall evenly, and it will look nice.\",\"If you paint the wall evenly, it will look good.\"]、rubricZh [\"用 evenly 表示「均勻地」（例如 paint the wall evenly）\",\"「才會好看」可寫，例如 it will look nice、so that it looks good 等\"]（原 makeSentence：instructionZh「用 evenly 造一個句子，說說你會把什麼東西平均分配，或均勻地做。」、referenceEn [\"I always cut the pizza evenly for my kids.\",\"I share the housework evenly with my brother.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

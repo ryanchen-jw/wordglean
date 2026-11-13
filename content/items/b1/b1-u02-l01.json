@@ -135,7 +135,7 @@
       "id": "b1-u02-l01-q10",
       "type": "listenType",
       "sentenceEn": "My sister has been very busy lately because of her new job.",
-      "sentenceZh": "我姊姊最近因為新工作非常忙。"
+      "sentenceZh": "我的姊妹最近因為新工作非常忙。"
     },
     {
       "id": "b1-u02-l01-q11",
@@ -144,10 +144,10 @@
       "audioZh": "會議改到星期四，截止期限現在改成下星期一。",
       "questionZh": "截止期限改到什麼時候？",
       "options": [
-        "Next Thursday.",
-        "This Thursday.",
-        "Monday of next week.",
-        "Tomorrow morning."
+        "Next Thursday",
+        "This Thursday",
+        "Monday of next week",
+        "Tomorrow morning"
       ],
       "answer": 2
     },
@@ -237,7 +237,7 @@
         "lately"
       ],
       "referenceEn": [
-        "She has often worked late lately.",
+        "She has been working late a lot lately.",
         "Lately, she has often stayed late at work."
       ],
       "rubricZh": [
@@ -369,6 +369,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（permanently）原位換成翻譯題，沿用題 id b1-u02-l01-q18；目標字沿用 permanently",
         "resolution": "改為 translate：promptZh「她打算永久搬到國外住。」、hintWords [\"permanently\"]、referenceEn [\"She plans to move abroad permanently.\",\"She is planning to move abroad permanently.\"]、rubricZh [\"用 permanently 表示「永久地」（例如 move abroad permanently；寫 for good 也正確）\",\"「打算」可寫，例如 plans to、is planning to、is going to 等\"]（原 makeSentence：instructionZh「用 permanently 造一個句子，說說你希望永遠住在哪裡，或永遠保持什麼習慣。」、referenceEn [\"I want to live in Tainan permanently.\",\"I want to keep this healthy habit permanently.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

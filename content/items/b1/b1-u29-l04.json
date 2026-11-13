@@ -40,8 +40,8 @@
       "id": "b1-u29-l04-q03",
       "type": "wordCard",
       "word": "bishop",
-      "exampleEn": "In chess, each player has two bishops.",
-      "exampleZh": "下西洋棋時，每位玩家有兩個主教。",
+      "exampleEn": "The bishop is the leader of the churches in this area.",
+      "exampleZh": "主教是這個地區各教會的領袖。",
       "glossZh": "主教",
       "distractorsZh": [
         "國王",
@@ -127,10 +127,10 @@
       "audioZh": "教堂後面的古老墳墓上刻有名字和日期，但有些很難看清楚。",
       "questionZh": "古老墳墓上有什麼？",
       "options": [
-        "Names and photos.",
-        "Dates and flowers.",
-        "Dates and names.",
-        "Nothing at all."
+        "Names and photos",
+        "Dates and flowers",
+        "Dates and names",
+        "Nothing at all"
       ],
       "answer": 2
     },
@@ -168,7 +168,7 @@
     {
       "id": "b1-u29-l04-q14",
       "type": "mcq",
-      "stemEn": "My grandmother always asks heaven to ____ our family.",
+      "stemEn": "My grandmother always prays that heaven will ____ our family.",
       "stemZh": "奶奶總是祈求上天保佑我們全家。",
       "options": [
         "bless",
@@ -187,8 +187,8 @@
     {
       "id": "b1-u29-l04-q15",
       "type": "reading",
-      "passageEn": "Our history class learned about an ancient civilization that lived by a great river. The people believed the river was sacred, and their kings said that their power was divine. Priests held ceremonies to bless the crops. When an important person died, the grave was filled with gold and food. Our teacher said these people also wrote one of the first sets of laws, an early kind of constitution. Today, their buildings belong to all of humanity. After class, I played chess with my friend, but I lost because I forgot to protect my bishop.",
-      "passageZh": "我們的歷史課學到一個住在大河邊的古代文明。當時的人相信那條河是神聖的，國王們也說自己的權力是神授的。祭司會舉行儀式，祈求作物受到保佑。重要人物死後，墳墓裡會放滿金子和食物。老師說，這些人也寫下了最早的一批法律，算是一種早期的憲法。如今，他們的建築屬於全人類。下課後，我和朋友下西洋棋，但我輸了，因為我忘了保護我的主教。",
+      "passageEn": "Our history class learned about an ancient civilization that developed along a great river. The people believed the river was sacred, and their kings said that their power was divine. Priests held ceremonies to bless the crops. When an important person died, their grave was filled with gold and food. Our teacher said these people also wrote one of the first sets of laws, an early kind of constitution. Centuries later, a bishop built a church next to one of their old temples. Today, their buildings belong to all of humanity.",
+      "passageZh": "我們的歷史課學到一個在大河沿岸發展起來的古代文明。當時的人相信那條河是神聖的，國王們也說自己的權力是神授的。祭司會舉行儀式，祈求作物受到保佑。重要人物死後，墳墓裡會放滿金子和食物。老師說，這些人也寫下了最早的一批法律，算是一種早期的憲法。幾百年後，一位主教在他們一座古老的神廟旁蓋了一間教堂。如今，他們的建築屬於全人類。",
       "questions": [
         {
           "questionZh": "當時的人怎麼看待那條大河？",
@@ -201,12 +201,12 @@
           "answer": 0
         },
         {
-          "questionZh": "作者為什麼輸了西洋棋？",
+          "questionZh": "後來是誰在古老的神廟旁蓋了教堂？",
           "options": [
-            "一直在想歷史課的事",
-            "朋友下棋下得太快",
-            "忘了保護主教",
-            "時間不夠用"
+            "一位國王",
+            "一群祭司",
+            "一位主教",
+            "作者的老師"
           ],
           "answer": 2
         }
@@ -411,6 +411,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（civilization）原位換成翻譯題，沿用題 id b1-u29-l04-q17；目標字沿用 civilization",
         "resolution": "改為 translate：promptZh「這座博物館展示了古代文明的生活用品。」、hintWords [\"civilization\"]、referenceEn [\"This museum shows everyday objects from ancient civilizations.\",\"The museum displays things people used in ancient civilizations.\"]、rubricZh [\"用 civilization 表示「文明」（單複數都可以，例如 ancient civilizations）\",\"「展示」可寫，例如 shows、displays 等\"]（原 makeSentence：instructionZh「用 civilization 造一個句子，說說你感興趣的古代文明。」、referenceEn [\"I want to learn more about old civilizations.\",\"I think ancient civilizations were amazing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[1].options、questions[1].questionZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

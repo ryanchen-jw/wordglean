@@ -12,8 +12,8 @@
       "id": "b2-u42-l02-q01",
       "type": "wordCard",
       "word": "balanced",
-      "exampleEn": "The table is not balanced because one leg is shorter.",
-      "exampleZh": "這張桌子不平，因為有一隻腳比較短。",
+      "exampleEn": "Keep the tray balanced so the cups don't fall off.",
+      "exampleZh": "把托盤端平，杯子才不會掉下來。",
       "glossZh": "平衡的；均衡的；公正的",
       "distractorsZh": [
         "傾斜的",
@@ -185,7 +185,7 @@
     {
       "id": "b2-u42-l02-q15",
       "type": "reading",
-      "passageEn": "Last Friday, a distinguished scientist who has devoted thirty years to studying animals gave a talk at our school. She began with a bizarre fact: some frogs freeze in winter and come back to life in spring. She also explained that dogs have an acute sense of smell, remarkably stronger than ours. Her talk was well balanced, with funny stories and serious information. Near the end, her face became grim as she showed photos of forests that had been cut down. Then the fire alarm went off for a test, and the talk ended abruptly. Luckily, the tickets for her next talk are reasonably priced, so we can attend it too.",
+      "passageEn": "Last Friday, a distinguished scientist who has devoted thirty years to studying animals gave a talk at our school. She began with a bizarre fact: some frogs freeze in winter and come back to life in spring. She also explained that dogs have a remarkably acute sense of smell, much stronger than ours. Her talk was well balanced, with funny stories and serious information. Near the end, her face became grim as she showed photos of forests that had been cut down. Then the fire alarm went off for a test, and the talk ended abruptly. Luckily, the tickets for her next talk are reasonably priced, so we can attend it too.",
       "passageZh": "上週五，一位投入三十年研究動物的傑出科學家到我們學校演講。她一開始先講了一個怪異的事實：有些青蛙冬天會結凍，到了春天又活過來。她也說明狗的嗅覺非常敏銳，比我們人類強得多。她的演講內容很平衡，既有有趣的故事，也有嚴肅的資訊。快結束時，她放了森林被砍伐的照片，臉色變得很凝重。接著火災警報器因為測試響了起來，演講就突然結束了。幸好她下一場演講的票價很合理，所以我們也能去聽。",
       "questions": [
         {
@@ -289,6 +289,18 @@
         "message": "執行長裁示：第③關：SUS 要點寫死 bizarre 放名詞前",
         "resolution": "改為 promptZh「我昨晚做了一個很奇怪的夢。」、referenceEn [\"I had a bizarre dream last night.\",\"Last night, I had a really bizarre dream.\"]、rubricZh [\"bizarre 可放名詞前或 be 動詞後（例如 a bizarre dream、was bizarre 等）\",\"「做夢」可寫，例如 had a dream 等；用過去式；last night 可放句首或句尾\"]（原 promptZh「我昨晚做了一個很奇怪的夢。」、referenceEn [\"I had a bizarre dream last night.\",\"Last night, I had a really bizarre dream.\"]、rubricZh [\"bizarre 放在名詞前（例如 a bizarre dream 等）\",\"「做夢」可寫，例如 had a dream 等；用過去式；last night 可放句首或句尾\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

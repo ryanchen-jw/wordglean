@@ -42,7 +42,7 @@
       "word": "homely",
       "exampleEn": "My grandmother cooks simple, homely meals.",
       "exampleZh": "我奶奶煮的是簡單的家常菜。",
-      "glossZh": "家常的；溫馨樸實的",
+      "glossZh": "家常的；樸實的（英式；美式指相貌平庸）",
       "distractorsZh": [
         "華麗的；奢華的",
         "昂貴的；高檔的",
@@ -127,10 +127,10 @@
       "audioZh": "新市場的價格低得驚人，所以我們裝了滿滿兩袋水果。",
       "questionZh": "新市場的價格怎麼樣？",
       "options": [
-        "Surprisingly low.",
-        "A little higher than usual.",
-        "About the same as before.",
-        "Too high for most families."
+        "Surprisingly low",
+        "A little higher than usual",
+        "About the same as before",
+        "Too high for most families"
       ],
       "answer": 0
     },
@@ -187,7 +187,7 @@
     {
       "id": "c1-u37-l01-q15",
       "type": "reading",
-      "passageEn": "When Amy took over her parents' small hotel, the old website was a problem. Its instructions for booking a room were so convoluted that many guests gave up in the middle. The photos were crudely cut from magazines, and the text was hardly readable on a phone. A designer suggested a showy new style with moving pictures and bright colors, but Amy wanted something homely that matched the quiet rooms. In the end, she chose simplicity: short, clear text and a few photos, cleanly arranged on a white background. The results were startlingly good, and bookings doubled within two months. Her father, who speaks in a staccato way when he is excited, kept saying, \"Good. Very good. Well done.\"",
+      "passageEn": "When Amy took over her parents' small hotel, the old website was a problem. Its instructions for booking a room were so convoluted that many guests gave up before they had finished. The photos were crudely cut from magazines, and the text was hardly readable on a phone. A designer suggested a showy new style with animations and bright colors, but Amy wanted something homely that matched the quiet rooms. In the end, she chose simplicity: short, clear text and a few photos, cleanly arranged on a white background. The results were startlingly good, and bookings doubled within two months. Her father, who speaks in a staccato way when he is excited, kept saying, \"Good. Very good. Well done.\"",
       "passageZh": "Amy 接手父母的小旅館時，舊網站是個大問題。訂房的說明複雜到很多客人做到一半就放棄了。照片是從雜誌上粗糙地剪下來的，文字在手機上幾乎無法閱讀。一位設計師建議改成有動畫、色彩鮮豔的花俏風格，但 Amy 想要的是溫馨樸實、和安靜房間相襯的感覺。最後她選擇了簡單：簡短清楚的文字加上幾張照片，乾淨俐落地排在白色背景上。結果好得驚人，兩個月內訂房就加倍了。她父親一興奮說話就會短促斷續，一直說：「好。很好。做得好。」",
       "questions": [
         {
@@ -293,6 +293,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（homely）原位換成翻譯題，沿用題 id c1-u37-l01-q17；目標字沿用 homely",
         "resolution": "改為 translate：promptZh「這間咖啡館的布置很溫馨，就像朋友家的客廳。」、hintWords [\"homely\"]、referenceEn [\"This cafe has a homely feel, like a friend's living room.\",\"The cafe is decorated in a homely style, just like a friend's living room.\"]、rubricZh [\"「溫馨」用 homely（例如 a homely feel、a homely style 等）\",\"「布置」可寫，例如 decorated、feel 等\",\"「就像」可寫，例如 like、just like 等\"]（原 makeSentence：instructionZh「用 homely 造一個句子，描述一個讓你覺得溫馨、樸實的地方。」、referenceEn [\"I love the homely kitchen at my aunt's house.\",\"I prefer small, homely hotels to big modern ones.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

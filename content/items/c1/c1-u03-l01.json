@@ -127,7 +127,7 @@
       "options": [
         "Reading glasses",
         "A set of house keys",
-        "A new mobile phone",
+        "A new cell phone",
         "A return train ticket"
       ],
       "answer": 0
@@ -166,7 +166,7 @@
     {
       "id": "c1-u03-l01-q14",
       "type": "mcq",
-      "stemEn": "The rules ____ all visitors to wear a helmet on the building site.",
+      "stemEn": "The rules ____ all visitors to wear a helmet on the construction site.",
       "stemZh": "規定要求所有訪客在工地都必須戴安全帽。",
       "options": [
         "oblige",
@@ -309,6 +309,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（oblige）原位換成翻譯題，沿用題 id c1-u03-l01-q17；目標字沿用 oblige",
         "resolution": "改為 translate：promptZh「上週因為同事生病，我不得不一個人完成整份報告。」、hintWords [\"oblige\"]、referenceEn [\"Last week, I was obliged to finish the whole report alone because my colleague was sick.\",\"My colleague was ill last week, so I was obliged to finish the entire report by myself.\"]、rubricZh [\"「不得不」用 be obliged to＋原形動詞（例如 was obliged to finish 等），也可寫 felt obliged to 等\",\"「一個人」可寫，例如 alone、by myself、on my own 等\",\"有「上週」，用過去式（例如 was obliged、was sick 等）\"]（原 makeSentence：instructionZh「用 be obliged to 或 feel obliged to 造一個句子，說說你在工作或生活中不得不做的事。」、referenceEn [\"I am obliged to wear a uniform at work.\",\"I felt obliged to help my neighbor move to a new apartment.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

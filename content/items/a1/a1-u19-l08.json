@@ -45,7 +45,7 @@
       "type": "wordCard",
       "word": "'s",
       "exampleEn": "She's my sister.",
-      "exampleZh": "她是我妹妹。",
+      "exampleZh": "她是我的姊妹。",
       "glossZh": "is 的縮寫（she's、it's）",
       "distractorsZh": [
         "am 的縮寫",
@@ -153,7 +153,7 @@
       "id": "a1-u19-l08-q13",
       "type": "mcq",
       "stemEn": "____ your brother play the guitar?",
-      "stemZh": "你哥哥會彈吉他嗎？",
+      "stemZh": "你的兄弟會彈吉他嗎？",
       "options": [
         "Does",
         "Are",
@@ -191,7 +191,7 @@
       "id": "a1-u19-l08-q15",
       "type": "reading",
       "passageEn": "Hi, I'm Ben, and this is my sister Amy. She's ten, and I'm twelve. We're from Tainan. Yesterday, we did our homework together. Does Amy like math? No, but she is not bad at it. She likes art. She wants to draw pictures every day.",
-      "passageZh": "嗨，我是 Ben，這是我妹妹 Amy。她十歲，我十二歲，我們來自台南。昨天我們一起寫功課。Amy 喜歡數學嗎？不喜歡，不過她數學還不錯。她喜歡美術，想每天都畫畫。",
+      "passageZh": "嗨，我是 Ben，這是我的姊妹 Amy。她十歲，我十二歲，我們來自台南。昨天我們一起寫功課。Amy 喜歡數學嗎？不喜歡，不過她數學還不錯。她喜歡美術，想每天都畫畫。",
       "questions": [
         {
           "questionZh": "Ben 幾歲？",
@@ -321,6 +321,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（all right）原位換成翻譯題，沿用題 id a1-u19-l08-q17；目標字沿用 all right",
         "resolution": "改為 translate：promptZh「別擔心，我沒事。」、hintWords [\"all right\"]、referenceEn [\"Don't worry, I'm all right.\",\"Don't worry. I am all right.\"]、rubricZh [\"「沒事」可寫，例如 I'm all right、I am all right、I'm OK 等（alright 也接受）\",\"「別擔心」可寫，例如 Don't worry 等\"]（原 makeSentence：instructionZh「用 all right 造一個句子，問候別人或說自己沒事。」、referenceEn [\"Is your grandma all right?\",\"We are all right, thank you.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

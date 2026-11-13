@@ -125,10 +125,10 @@
       "audioZh": "這條項鍊五十元，但手環只要二十元。",
       "questionZh": "項鍊多少錢？",
       "options": [
-        "Twenty dollars.",
-        "Fifty dollars.",
-        "Fifteen dollars.",
-        "Seventy dollars."
+        "Twenty dollars",
+        "Fifty dollars",
+        "Fifteen dollars",
+        "Seventy dollars"
       ],
       "answer": 1
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u10-l01-q15",
       "type": "reading",
-      "passageEn": "Last weekend, I helped my aunt clean out her old wardrobe. Inside, we found many garments from forty years ago, including a dress with very long sleeves. We also found a box of accessories: a gold necklace, an old purse, and a wristwatch that still worked. My aunt said each object had a unique story. She was young and lean back then, so none of the clothes fit her now! In the end, she gave me the wristwatch, and I wear it every day.",
-      "passageZh": "上週末，我幫阿姨整理她的舊衣櫃。我們在裡面找到很多四十年前的衣服，包括一件袖子很長的洋裝。我們還找到一盒配件：一條金項鍊、一個舊錢包，還有一支還會走的手錶。阿姨說每樣東西都有獨特的故事。她那時又年輕又瘦，所以現在那些衣服都穿不下了！最後，她把手錶送給我，我每天都戴著。",
+      "passageEn": "Last weekend, I helped my aunt clean out her old wardrobe. Inside, we found many garments from forty years ago, including a dress with very long sleeves. We also found a box of accessories: a gold necklace, an old purse, and a wristwatch that still worked. My aunt said each object had its own story. She was young and lean back then, so none of the clothes fit her now! In the end, she gave me the wristwatch, and I wear it every day.",
+      "passageZh": "上週末，我幫阿姨整理她的舊衣櫃。我們在裡面找到很多四十年前的衣服，包括一件袖子很長的洋裝。我們還找到一盒配件：一條金項鍊、一個舊錢包，還有一支還會走的手錶。阿姨說每樣東西都有自己的故事。她那時又年輕又瘦，所以現在那些衣服都穿不下了！最後，她把手錶送給我，我每天都戴著。",
       "questions": [
         {
           "questionZh": "作者和阿姨在盒子裡找到什麼？",
@@ -356,6 +356,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（accessory）原位換成翻譯題，沿用題 id b1-u10-l01-q17；目標字沿用 accessory",
         "resolution": "改為 translate：promptZh「她的包包上掛著很多可愛的小配件。」、hintWords [\"accessory\"]、referenceEn [\"Her bag has many cute little accessories on it.\",\"There are a lot of cute little accessories on her bag.\"]、rubricZh [\"用 accessory 的複數表示「配件；飾品」（例如 cute little accessories）\",\"「掛著」可寫，例如 has … on it、there are … on her bag 等\"]（原 makeSentence：instructionZh「用 accessory 造一個句子，說說你最常戴或用的配件。」、referenceEn [\"My favorite accessory is a simple silver ring.\",\"I usually wear a watch as my only accessory.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

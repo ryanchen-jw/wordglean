@@ -129,10 +129,10 @@
       "audioZh": "圖書館延長了開放時間，所以現在十點才關門。",
       "questionZh": "圖書館現在幾點關門？",
       "options": [
-        "Ten o'clock, later than before.",
-        "Ten o'clock, the same as before.",
-        "Nine o'clock, earlier than before.",
-        "It opens at ten now."
+        "Ten o'clock, later than before",
+        "Ten o'clock, the same as before",
+        "Nine o'clock, earlier than before",
+        "It opens at ten now"
       ],
       "answer": 0
     },
@@ -365,6 +365,12 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u03-l03-q16 雷同（兩題都是「這個問題」（problem）），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「他昨天在街上完全不理我。」、referenceEn [\"He completely ignored me on the street yesterday.\",\"Yesterday, he ignored me completely on the street.\"]、rubricZh [\"用 ignore 表示「不理會」（例如 ignored me）\",\"時態配合「昨天」（例如 ignored、was ignoring 等）\"]（原 promptZh「你不應該忽視這個問題。」、referenceEn [\"You should not ignore this problem.\",\"You shouldn't ignore this problem.\"]、rubricZh [\"ignore 表示「忽視」，後面直接接受詞（例如 ignore this problem）\",\"「不應該」可寫 should not、shouldn't 等\",\"寫 must not 語氣較強，也可接受\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

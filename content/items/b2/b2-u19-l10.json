@@ -43,7 +43,7 @@
       "word": "inverted commas",
       "exampleEn": "In British English, quotation marks are often called inverted commas.",
       "exampleZh": "在英式英文裡，quotation marks 常被稱為 inverted commas。",
-      "glossZh": "（英）引號",
+      "glossZh": "引號；（英式）",
       "distractorsZh": [
         "括號",
         "逗號",
@@ -176,7 +176,7 @@
       "id": "b2-u19-l10-q14",
       "type": "reading",
       "passageEn": "At my brother's boarding school, the housemaster also teaches English writing. This term, she asked students to write the same story three times. First, they wrote it in the first person, as if it happened to them. Then they rewrote it in the second person, speaking directly to the reader. Finally, they used the third person, like a news report. She also checked their punctuation carefully, from inverted commas to the correct use of a semicolon. A native speaker from the local university visited the class and praised their work. My brother said finishing the project felt like winning a trophy.",
-      "passageZh": "在我弟弟的寄宿學校，舍監也教英文寫作。這學期，她要學生把同一個故事寫三次。第一次用第一人稱，好像故事發生在自己身上。接著用第二人稱改寫，直接對讀者說話。最後用第三人稱，像新聞報導一樣。她也仔細檢查標點，從引號到分號的正確用法都不放過。一位當地大學的母語人士來班上參觀，稱讚了他們的作品。弟弟說完成這項作業的感覺就像贏得一座獎盃。",
+      "passageZh": "在我兄弟的寄宿學校，舍監也教英文寫作。這學期，她要學生把同一個故事寫三次。第一次用第一人稱，好像故事發生在自己身上。接著用第二人稱改寫，直接對讀者說話。最後用第三人稱，像新聞報導一樣。她也仔細檢查標點，從引號到分號的正確用法都不放過。一位當地大學的母語人士來班上參觀，稱讚了他們的作品。我的兄弟說完成這項作業的感覺就像贏得一座獎盃。",
       "questions": [
         {
           "questionZh": "第二次改寫用的是哪一種人稱？",
@@ -334,6 +334,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（native speaker）原位換成翻譯題，沿用題 id b2-u19-l10-q16；目標字沿用 native speaker",
         "resolution": "改為 translate：promptZh「就連母語人士有時也會拼錯這個字。」、hintWords [\"native speaker\"]、referenceEn [\"Even native speakers sometimes spell this word wrong.\",\"Sometimes even native speakers get the spelling of this word wrong.\"]、rubricZh [\"native speaker 指母語人士，單複數皆可（例如 native speakers、a native speaker 等）\",\"「拼錯」可寫，例如 spell… wrong、get the spelling wrong 等\",\"sometimes 可放句首或動詞前，位置不扣分\"]（原 makeSentence：instructionZh「用 native speaker 造一個句子，說說你和母語人士交流的經驗或想法。」、referenceEn [\"I felt nervous the first time I talked to a native speaker.\",\"I want to practice speaking with a native speaker every week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

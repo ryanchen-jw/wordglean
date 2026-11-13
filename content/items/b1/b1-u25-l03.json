@@ -14,7 +14,7 @@
       "word": "revision",
       "exampleEn": "I need to do some revision for my history test.",
       "exampleZh": "我需要為歷史考試做一些複習。",
-      "glossZh": "複習；修改",
+      "glossZh": "複習；修改；（英式：複習義）",
       "distractorsZh": [
         "假期",
         "運動",
@@ -25,8 +25,8 @@
       "id": "b1-u25-l03-q02",
       "type": "wordCard",
       "word": "usage",
-      "exampleEn": "Phone usage is not allowed during the test.",
-      "exampleZh": "考試時禁止使用手機。",
+      "exampleEn": "Phone usage goes up a lot during school holidays.",
+      "exampleZh": "學校放假期間，手機的使用量大幅增加。",
       "glossZh": "使用；用量",
       "distractorsZh": [
         "價格",
@@ -125,10 +125,10 @@
       "audioZh": "圖書館員說圖書館今天會提早在六點關門，所以請在那之前還書。",
       "questionZh": "圖書館今天幾點關門？",
       "options": [
-        "Six o'clock tomorrow.",
-        "Six o'clock, earlier than usual.",
-        "Nine o'clock, as usual.",
-        "At noon on Sunday."
+        "Six o'clock tomorrow",
+        "Six o'clock, earlier than usual",
+        "Nine o'clock, as usual",
+        "At noon on Sunday"
       ],
       "answer": 1
     },
@@ -355,6 +355,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（memorize）原位換成翻譯題，沿用題 id b1-u25-l03-q17；目標字沿用 memorize",
         "resolution": "改為 translate：promptZh「服務生把我們點的菜全都記住了，沒有寫下來。」、hintWords [\"memorize\"]、referenceEn [\"The waiter memorized our whole order without writing it down.\",\"The waiter memorized everything we ordered and didn't write it down.\"]、rubricZh [\"用 memorize 表示「記住」（例如 memorized our whole order）\",\"「沒有寫下來」可寫，例如 without writing it down、didn't write it down 等\"]（原 makeSentence：instructionZh「用 memorize 造一個句子，說說你怎麼背東西。」、referenceEn [\"I memorize new words by writing them many times.\",\"I memorize long numbers by saying them again and again.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

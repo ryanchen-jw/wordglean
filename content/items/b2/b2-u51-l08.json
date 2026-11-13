@@ -172,11 +172,11 @@
     {
       "id": "b2-u51-l08-q14",
       "type": "reading",
-      "passageEn": "My sister started driving lessons last month. Her teacher is calm and well-organized, and every lesson has a clear plan. On the first day, she held the steering wheel so tightly that her hands hurt. At a busy intersection, the teacher sometimes spoke unclearly while he looked down at his notes, so she had to ask him to repeat things. She also had to watch out for every pedestrian. After two hours, she came home worn out but proud.",
-      "passageZh": "我姊姊上個月開始上駕訓課。她的教練冷靜又有條理，每堂課都有清楚的計畫。第一天，她把方向盤握得太緊，手都痛了。在車多的十字路口，教練有時低頭看筆記，說話不太清楚，她只好請他再說一遍。她也得留意每一位行人。兩個小時後，她回到家累壞了，但很得意。",
+      "passageEn": "My sister started driving lessons last month. Her teacher is calm and well-organized, and every lesson has a clear plan. On the first day, she held the steering wheel so tightly that her hands hurt. Sometimes the teacher spoke unclearly while he looked down at his notes, so she had to ask him to repeat things. At busy intersections, she also had to watch out for every pedestrian. After two hours, she came home worn out but proud.",
+      "passageZh": "我的姊妹上個月開始上駕訓課。她的教練冷靜又有條理，每堂課都有清楚的計畫。第一天，她把方向盤握得太緊，手都痛了。教練有時低頭看筆記，說話不太清楚，她只好請他再說一遍。在車多的十字路口，她也得留意每一位行人。兩個小時後，她回到家累壞了，但很得意。",
       "questions": [
         {
-          "questionZh": "第一天姊姊的手為什麼會痛？",
+          "questionZh": "第一天作者姊妹的手為什麼會痛？",
           "options": [
             "她不小心撞到門",
             "天氣太冷",
@@ -367,6 +367,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（well-organized）原位換成翻譯題，沿用題 id b2-u51-l08-q16；目標字沿用 well-organized",
         "resolution": "改為 translate：promptZh「這場音樂節辦得井然有序，每個節目都準時開始。」、hintWords [\"well-organized\"]、referenceEn [\"The music festival was well-organized, and every show started on time.\",\"It was a well-organized music festival; every show began on time.\"]、rubricZh [\"well-organized 當形容詞（例如 was well-organized、a well-organized festival 等）\",\"「準時開始」可寫，例如 started on time、began on time 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 well-organized 造一個句子，描述一個井然有序的人、地方或活動。」、referenceEn [\"My mother's kitchen is very well-organized.\",\"Our school sports day was well-organized and ended on time.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

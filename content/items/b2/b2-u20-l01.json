@@ -81,7 +81,7 @@
       "word": "underground",
       "exampleEn": "The museum keeps its oldest paintings in an underground room.",
       "exampleZh": "博物館把最古老的畫作存放在地下室。",
-      "glossZh": "地下的；（英）地鐵",
+      "glossZh": "地下的；地鐵；（英式：地鐵義）",
       "distractorsZh": [
         "屋頂的",
         "戶外的",
@@ -118,8 +118,8 @@
       "id": "b2-u20-l01-q09",
       "type": "wordCard",
       "word": "pedestrian",
-      "exampleEn": "The pedestrian stopped to ask me the way to the train station.",
-      "exampleZh": "那位行人停下來向我問去火車站的路。",
+      "exampleEn": "The bus stopped to let a pedestrian cross the street.",
+      "exampleZh": "公車停下來讓一位行人過馬路。",
       "glossZh": "行人；行人的",
       "distractorsZh": [
         "司機",
@@ -200,8 +200,8 @@
     {
       "id": "b2-u20-l01-q16",
       "type": "reading",
-      "passageEn": "Last month, our town held its first food festival, and it was a big success. The organizers chose the old dock as the venue, because it has plenty of space and a view of the sea. More than fifty booths sold food from all over the country, and some cooks even came from the suburbs of the capital. To keep visitors safe, the main road was closed to cars, so the whole area became a pedestrian zone. Police officers stood at every intersection to guide traffic. The festival even made the nationwide news, and the organizers are already planning next year's event.",
-      "passageZh": "上個月，我們鎮上舉辦了第一屆美食節，非常成功。主辦單位選擇舊碼頭當場地，因為那裡空間很大，又看得到海景。五十多個攤位販賣來自全國各地的美食，有些廚師甚至從首都的郊區前來。為了遊客的安全，主要道路禁止汽車通行，整個區域變成行人徒步區。每個路口都有警察指揮交通。美食節甚至上了全國新聞，主辦單位已經在規劃明年的活動。",
+      "passageEn": "Last month, our town held its first food festival, and it was a big success. The organizers chose the old dock as the venue, because it has plenty of space and a view of the sea. More than fifty booths sold food from all over the country, and some cooks even came from the suburbs of the capital. To keep visitors safe, the main road was closed to cars, so the whole area became a pedestrian zone. Police officers stood at every intersection to direct traffic. The festival was even reported nationwide, and the organizers are already planning next year's event.",
+      "passageZh": "上個月，我們鎮上舉辦了第一屆美食節，非常成功。主辦單位選擇舊碼頭當場地，因為那裡空間很大，又看得到海景。五十多個攤位販賣來自全國各地的美食，有些廚師甚至從首都的郊區前來。為了遊客的安全，主要道路禁止汽車通行，整個區域變成行人徒步區。每個路口都有警察指揮交通。美食節甚至在全國各地都有報導，主辦單位已經在規劃明年的活動。",
       "questions": [
         {
           "questionZh": "主辦單位為什麼選舊碼頭當場地？",
@@ -341,6 +341,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pedestrian）原位換成翻譯題，沿用題 id b2-u20-l01-q18；目標字沿用 pedestrian",
         "resolution": "改為 translate：promptZh「這條街週末只開放給行人。」、hintWords [\"pedestrian\"]、referenceEn [\"This street is only open to pedestrians on weekends.\",\"On weekends, this street is open to pedestrians only.\"]、rubricZh [\"pedestrian 指行人，這裡泛指用複數（例如 open to pedestrians 等）\",\"「只」可寫，例如 only open to、open to… only 等，only 位置不扣分\",\"「週末」可寫，例如 on weekends、at weekends 等\"]（原 makeSentence：instructionZh「用 pedestrian 造一個句子，說說你家附近行人走路的情況。」、referenceEn [\"The street near my home has a wide path for pedestrians.\",\"Pedestrians in my neighborhood have to be careful because cars drive fast.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

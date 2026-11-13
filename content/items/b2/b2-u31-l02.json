@@ -28,8 +28,8 @@
       "id": "b2-u31-l02-q02",
       "type": "wordCard",
       "word": "debit",
-      "exampleEn": "The money for the phone bill is taken by automatic debit each month.",
-      "exampleZh": "電話費每個月都用自動扣款的方式繳付。",
+      "exampleEn": "We pay the phone bill by automatic debit each month.",
+      "exampleZh": "我們每個月用自動扣款繳電話費。",
       "glossZh": "扣款；借方",
       "distractorsZh": [
         "存款",
@@ -68,7 +68,7 @@
       "type": "wordCard",
       "word": "loan",
       "exampleEn": "I paid back the loan from my brother in six months.",
-      "exampleZh": "我在六個月內還清了跟哥哥借的錢。",
+      "exampleZh": "我在六個月內還清了跟我的兄弟借的錢。",
       "glossZh": "貸款；借款",
       "distractorsZh": [
         "存款",
@@ -119,7 +119,7 @@
       "id": "b2-u31-l02-q09",
       "type": "wordCard",
       "word": "saving",
-      "exampleEn": "Turning off the lights brought a saving of ten percent on our bill.",
+      "exampleEn": "Turning off the lights led to a saving of ten percent on our bill.",
       "exampleZh": "隨手關燈讓我們的帳單省了百分之十。",
       "glossZh": "節省（的量）；存款",
       "distractorsZh": [
@@ -201,7 +201,7 @@
     {
       "id": "b2-u31-l02-q16",
       "type": "reading",
-      "passageEn": "Mr. and Mrs. Lu own a large tea estate in the mountains. Ten years ago, they decided to turn part of it into a small hotel. They used their savings and took out a loan from a local bank. Two investors from Taipei also joined the venture, each making an investment of five million dollars. At first, revenue was low, and the couple worried about the monthly payments to the bank. To keep costs down, they chose economical solar lights and hired local workers. Today, the hotel is full almost every weekend. Guests can pay by cash, credit card or debit card.",
+      "passageEn": "Mr. and Mrs. Lu own a large tea estate in the mountains. Ten years ago, they decided to turn part of it into a small hotel. They used their savings and took out a loan from a local bank. Two investors from Taipei also joined the venture, each making an investment of five million dollars. At first, revenue was low, and the couple worried about the monthly payments to the bank. To keep costs down, they chose economical solar lights and hired local workers. Today, the hotel is full almost every weekend. Guests can pay in cash or by credit or debit card.",
       "passageZh": "呂先生和呂太太在山上擁有一大片茶園。十年前，他們決定把其中一部分改成一間小旅館。他們用了自己的存款，也向地方銀行申請了貸款。兩位台北的投資人也加入了這項事業，各投資五百萬元。一開始營收很低，夫妻倆很擔心每個月要付給銀行的款項。為了壓低成本，他們選用省錢的太陽能燈，並僱用當地的員工。如今，旅館幾乎每個週末都客滿。客人可以用現金、信用卡或金融卡付款。",
       "questions": [
         {
@@ -367,6 +367,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（payment）原位換成翻譯題，沿用題 id b2-u31-l02-q18；目標字沿用 payment",
         "resolution": "改為 translate：promptZh「這家小吃店只接受現金付款。」、hintWords [\"payment\"]、referenceEn [\"This snack shop only accepts cash payments.\",\"This small food shop accepts payment in cash only.\"]、rubricZh [\"「現金付款」可寫，例如 cash payments、payment in cash 等\",\"「只」可寫，例如 only accepts、in cash only 等，only 位置不扣分\",\"「小吃店」可寫，例如 snack shop、small food shop、food stand 等\"]（原 makeSentence：instructionZh「用 payment 造一個句子，說說你平常怎麼付帳（例如現金、刷卡、手機付款）。」、referenceEn [\"I usually make payments with my phone at convenience stores.\",\"I prefer cash payment at night markets.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

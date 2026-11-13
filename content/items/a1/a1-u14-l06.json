@@ -80,8 +80,8 @@
       "id": "a1-u14-l06-q06",
       "type": "wordCard",
       "word": "camp",
-      "exampleEn": "The children go to summer camp.",
-      "exampleZh": "孩子們去參加夏令營。",
+      "exampleEn": "The children go to summer camp every year.",
+      "exampleZh": "孩子們每年都去參加夏令營。",
       "glossZh": "營隊；營地",
       "distractorsZh": [
         "學校",
@@ -138,7 +138,7 @@
       "id": "a1-u14-l06-q11",
       "type": "shadowing",
       "sentenceEn": "My sister is a fan of this band.",
-      "sentenceZh": "我姊姊是這個樂團的粉絲。"
+      "sentenceZh": "我的姊妹是這個樂團的粉絲。"
     },
     {
       "id": "a1-u14-l06-q12",
@@ -187,7 +187,7 @@
     {
       "id": "a1-u14-l06-q15",
       "type": "reading",
-      "passageEn": "Mr. Wu is an art fan. He has a big collection of paintings in his home. Every Sunday, he goes to the art club in town. He also teaches a painting class at a summer camp for children. Many newspapers write about him.",
+      "passageEn": "Mr. Wu is a big fan of art. He has a big collection of paintings in his home. Every Sunday, he goes to the art club in town. He also teaches a painting class at a summer camp for children. Many newspapers write about him.",
       "passageZh": "吳先生是藝術迷。他家裡收藏了很多畫作。每個星期天，他都去鎮上的美術社。他也在兒童夏令營教繪畫課。很多報紙都報導過他。",
       "questions": [
         {
@@ -325,6 +325,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fan）原位換成翻譯題，沿用題 id a1-u14-l06-q17；目標字沿用 fan",
         "resolution": "改為 translate：promptZh「我爸爸是那支棒球隊的球迷。」、hintWords [\"fan\"]、referenceEn [\"My father is a fan of that baseball team.\",\"My dad is a big fan of that baseball team.\"]、rubricZh [\"「是⋯的球迷」可寫，例如 a fan of that baseball team、a big fan of … 等\",\"「爸爸」可寫，例如 father、dad 等\"]（原 makeSentence：instructionZh「用 fan 造一個句子，說說你是誰（或什麼）的粉絲。」、referenceEn [\"I am a big fan of this band.\",\"I am a fan of Japanese food.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

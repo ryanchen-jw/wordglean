@@ -67,8 +67,8 @@
       "id": "b1-u30-l02-q05",
       "type": "wordCard",
       "word": "fluent",
-      "exampleEn": "She spoke in fluent, clear sentences.",
-      "exampleZh": "她用流利又清楚的句子說話。",
+      "exampleEn": "Her speech was fluent and clear.",
+      "exampleZh": "她說話流利又清楚。",
       "glossZh": "流利的",
       "distractorsZh": [
         "安靜的",
@@ -106,7 +106,7 @@
       "id": "b1-u30-l02-q08",
       "type": "wordCard",
       "word": "announce",
-      "exampleEn": "Our teacher announced that the test was cancelled.",
+      "exampleEn": "Our teacher announced that the test was canceled.",
       "exampleZh": "老師宣布考試取消了。",
       "glossZh": "宣布；公布",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "圖書館將在星期五中午公布海報比賽的得獎者。",
       "questionZh": "什麼時候公布得獎者？",
       "options": [
-        "Friday at ten.",
-        "Thursday at noon.",
-        "Friday at twelve.",
-        "Monday at noon."
+        "Friday at ten",
+        "Thursday at noon",
+        "Friday at twelve",
+        "Monday at noon"
       ],
       "answer": 2
     },
@@ -375,6 +375,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fluent）原位換成翻譯題，沿用題 id b1-u30-l02-q17；目標字沿用 fluent",
         "resolution": "改為 translate：promptZh「他在日本住了五年，日文說得很流利。」、hintWords [\"fluent\"]、referenceEn [\"He lived in Japan for five years, so he is fluent in Japanese.\",\"After five years in Japan, he speaks fluent Japanese.\"]、rubricZh [\"用 fluent 表示「流利的」（例如 is fluent in…、speaks fluent… 等）\"]（原 makeSentence：instructionZh「用 fluent 造一個句子，說說你想說得流利的語言或你認識的人。」、referenceEn [\"I hope to become fluent in a new language.\",\"My mother is fluent in two languages.\"]）；properNouns 加 Japan、Japanese",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

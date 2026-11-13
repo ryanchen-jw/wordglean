@@ -127,10 +127,10 @@
       "audioZh": "派對上浪費了那麼多食物，讓我奶奶很震驚。",
       "questionZh": "什麼事讓奶奶很震驚？",
       "options": [
-        "The music was loud.",
-        "The guests arrived very late.",
-        "So much food was wasted.",
-        "The room was cold."
+        "The music was loud",
+        "The guests arrived very late",
+        "So much food was wasted",
+        "The room was cold"
       ],
       "answer": 2
     },
@@ -322,6 +322,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tranquil）原位換成翻譯題，沿用題 id c1-u10-l10-q17；目標字沿用 tranquil",
         "resolution": "改為 translate：promptZh「這間寺廟位在山上，環境非常寧靜。」、hintWords [\"tranquil\"]、referenceEn [\"The temple sits on a hill, and its surroundings are very tranquil.\",\"Located on a mountain, the temple has a very tranquil setting.\"]、rubricZh [\"「寧靜」用 tranquil（例如 very tranquil、a tranquil setting 等）\",\"「環境」可寫，例如 surroundings、setting 等\",\"「山上」可寫，例如 on a hill、on a mountain 等\"]（原 makeSentence：instructionZh「用 tranquil 造一個句子，描述一個讓你覺得寧靜的地方。」、referenceEn [\"My favorite tranquil place is a small beach near my hometown.\",\"I find the park near my office tranquil in the early morning.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

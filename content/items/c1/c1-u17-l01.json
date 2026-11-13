@@ -81,7 +81,7 @@
       "id": "c1-u17-l01-q06",
       "type": "wordCard",
       "word": "quarry",
-      "exampleEn": "Trucks carry rocks from the quarry to the building site.",
+      "exampleEn": "Trucks carry rocks from the quarry to the construction site.",
       "exampleZh": "卡車把石頭從採石場運到工地。",
       "glossZh": "採石場",
       "distractorsZh": [
@@ -280,6 +280,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（suburban）原位換成翻譯題，沿用題 id c1-u17-l01-q16；目標字沿用 suburban",
         "resolution": "改為 translate：promptZh「這家人上個月從市中心搬到了郊區的一棟房子。」、hintWords [\"suburban\"]、referenceEn [\"Last month, the family moved from the city center to a suburban house.\",\"The family moved out of the city center into a house in a suburban area last month.\"]、rubricZh [\"「郊區的」用 suburban（例如 a suburban house、a suburban area 等）\",\"有「上個月」，用過去式（例如 moved 等）\"]（原 makeSentence：instructionZh「用 suburban 造一個句子，說說你喜歡或不喜歡住在郊區的理由。」、referenceEn [\"I like suburban life because the streets are quiet and safe.\",\"I don't enjoy living in a suburban area because I have to drive everywhere.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "我們的新公車系統更有效率：現在每五分鐘就有一班公車。",
       "questionZh": "新的公車系統有什麼改變？",
       "options": [
-        "The buses are much bigger now.",
-        "Buses come more often.",
-        "Buses now come every fifteen minutes.",
-        "The drivers are much nicer now."
+        "The buses are much bigger now",
+        "Buses come more often",
+        "Buses now come every fifteen minutes",
+        "The drivers are much nicer now"
       ],
       "answer": 1
     },
@@ -141,7 +141,7 @@
     {
       "id": "b1-u35-l04-q12",
       "type": "shadowing",
-      "sentenceEn": "Please fill in the form properly.",
+      "sentenceEn": "Please fill out the form properly.",
       "sentenceZh": "請把表格正確填好。"
     },
     {
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "The customers of this restaurant are diverse.",
-        "This restaurant has diverse customers."
+        "This restaurant has a diverse group of customers."
       ],
       "rubricZh": [
         "diverse 表示「多元的」，例如 a diverse group 等說法",
@@ -366,6 +366,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（efficient）原位換成翻譯題，沿用題 id b1-u35-l04-q17；目標字沿用 efficient",
         "resolution": "改為 translate：promptZh「這台新冰箱比舊的省電多了。」、hintWords [\"efficient\"]、referenceEn [\"This new fridge is much more efficient than the old one.\",\"Compared with the old fridge, this new one is much more efficient.\"]、rubricZh [\"用 efficient 表示「有效率的；省電的」（例如 much more efficient）\"]（原 makeSentence：instructionZh「用 efficient 造一個句子，說說你讀書或做事有效率的方法。」、referenceEn [\"I am more efficient when I study in the morning.\",\"Making a list helps me work in an efficient way.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -64,8 +64,8 @@
       "id": "b2-u16-l04-q05",
       "type": "wordCard",
       "word": "chemotherapy",
-      "exampleEn": "The word chemotherapy is made from 'chemical' and 'therapy'.",
-      "exampleZh": "chemotherapy 這個字由「chemical」和「therapy」兩個字組成。",
+      "exampleEn": "After her chemotherapy ended, my aunt went back to work.",
+      "exampleZh": "化療結束後，我阿姨回去上班了。",
       "glossZh": "化學治療；化療",
       "distractorsZh": [
         "物理治療",
@@ -90,7 +90,7 @@
       "id": "b2-u16-l04-q07",
       "type": "wordCard",
       "word": "exhaustion",
-      "exampleEn": "The farmer worked until exhaustion to bring in the harvest before the rain.",
+      "exampleEn": "The farmer worked to the point of exhaustion to bring in the harvest before the rain.",
       "exampleZh": "那位農夫拚命工作到筋疲力盡，趕在下雨前收成。",
       "glossZh": "筋疲力盡；耗盡",
       "distractorsZh": [
@@ -125,7 +125,7 @@
       "audioZh": "我手臂上的這塊瘀青，是昨晚撞到門弄的。",
       "questionZh": "說話者怎麼弄出瘀青的？",
       "options": [
-        "Played football",
+        "Played soccer",
         "Fell off a bike",
         "Walked into a door",
         "Hit a table"
@@ -445,6 +445,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（addict）原位換成翻譯題，沿用題 id b2-u16-l04-q17；目標字沿用 addict",
         "resolution": "改為 translate：promptZh「我奶奶是個拼圖迷，她家到處都是拼圖。」、hintWords [\"addict\"]、referenceEn [\"My grandmother is a puzzle addict, and there are puzzles all over her house.\",\"My grandma is a real puzzle addict; her house is full of puzzles.\"]、rubricZh [\"addict 這裡指「（某事物的）迷」（例如 a puzzle addict 等）\",\"「到處都是拼圖」可寫，例如 there are puzzles all over、is full of puzzles 等\"]（原 makeSentence：instructionZh「用 addict 造一個句子，說說你或身邊的人對某樣東西很著迷（輕鬆的話題，例如咖啡、遊戲、追劇）。」、referenceEn [\"I'm a bit of a coffee addict, so I always start my day with a cup.\",\"My sister is a TV addict who watches a whole series in one weekend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（題庫外問題）、exampleZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

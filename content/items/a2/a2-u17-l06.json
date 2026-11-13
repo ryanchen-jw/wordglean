@@ -95,7 +95,7 @@
       "word": "headteacher",
       "exampleEn": "The headteacher gave a speech on the first day.",
       "exampleZh": "校長在開學第一天致詞。",
-      "glossZh": "（中小學）校長",
+      "glossZh": "（中小學）校長；（英式）",
       "distractorsZh": [
         "班長",
         "家長",
@@ -169,7 +169,7 @@
       "id": "a2-u17-l06-q14",
       "type": "mcq",
       "stemEn": "My sister is fifteen. She goes to ____.",
-      "stemZh": "我姊姊十五歲，她在讀高中。",
+      "stemZh": "我的姊妹十五歲，她在讀高中。",
       "options": [
         "high school",
         "plural",
@@ -234,11 +234,11 @@
         "plural"
       ],
       "referenceEn": [
-        "My teacher said my plural was wrong.",
-        "The teacher said that my plural was wrong."
+        "My teacher said the plural I wrote was wrong.",
+        "The teacher said that I got the plural wrong."
       ],
       "rubricZh": [
-        "用 plural 表示「複數」（例如 my plural、the plural I wrote 等）",
+        "用 plural 表示「複數」（例如 the plural I wrote、got the plural wrong 等）",
         "時態可用過去式或現在式（例如 said…was、says…is 等）；said 後面的 that 可加可省略"
       ]
     }
@@ -295,6 +295,24 @@
         "message": "執行長裁示：第③關：SUS 與同單元 a2-u17-l05 單字卡 comparative「I always forget the comparative of 'good'.」主詞、情境、句型都一樣，換主詞、情境與句型（避開同課單字卡 capital letter「Please write…」句型）",
         "resolution": "promptZh 改為 「老師說我寫的複數錯了。」（原 「我總是忘記這個字的複數。」）；referenceEn 改為 [\"My teacher said my plural was wrong.\",\"The teacher said that my plural was wrong.\"]（原 [\"I always forget the plural of this word.\",\"I always forget this word's plural.\"]）；rubricZh 改為 [\"用 plural 表示「複數」（例如 my plural、the plural I wrote 等）\",\"時態可用過去式或現在式（例如 said…was、says…is 等）；said 後面的 that 可加可省略\"]（原 [\"用 plural 表示「複數」（例如 the plural of this word、the plural form 等）\",\"習慣用現在簡單式，always 放在動詞前（例如 always forget）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]、rubricZh[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

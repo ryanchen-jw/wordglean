@@ -185,7 +185,7 @@
       "id": "a2-u18-l03-q15",
       "type": "reading",
       "passageEn": "Last summer, we went camping in a forest near the mountains. During the day, the heat was strong, so we sat in the shade of tall trees. We saw wild birds and a big tree with roots above the ground. The first night, we lay under the stars, and my brother said, \"The earth is just one small planet.\" The next night, a storm came, and we slept in the car.",
-      "passageZh": "去年夏天，我們在山邊的一片森林裡露營。白天熱得很，所以我們坐在高大樹木的樹蔭下。我們看到了野鳥，還有一棵根長在地面上的大樹。第一晚，我們躺在星空下，我哥哥說：「地球只是一顆小小的行星。」第二晚來了一場暴風雨，我們就睡在車上。",
+      "passageZh": "去年夏天，我們在山邊的一片森林裡露營。白天熱得很，所以我們坐在高大樹木的樹蔭下。我們看到了野鳥，還有一棵根長在地面上的大樹。第一晚，我們躺在星空下，我的兄弟說：「地球只是一顆小小的行星。」第二晚來了一場暴風雨，我們就睡在車上。",
       "questions": [
         {
           "questionZh": "白天他們為什麼坐在樹蔭下？",
@@ -298,6 +298,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（earth）原位換成翻譯題，沿用題 id a2-u18-l03-q17；目標字沿用 earth",
         "resolution": "改為 translate：promptZh「從太空看，地球是藍色的。」、hintWords [\"earth\"]、referenceEn [\"From space, the earth looks blue.\",\"The earth looks blue from space.\"]、rubricZh [\"用 the earth 表示「地球」（寫 Earth 也正確）\",\"「看起來是藍色的」可寫，例如 looks blue、is blue 等\"]（原 makeSentence：instructionZh「用 earth 造一個句子，說說地球，或我們可以怎麼愛護地球。」、referenceEn [\"The earth is our only home.\",\"We should keep the earth clean.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

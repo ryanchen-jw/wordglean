@@ -188,7 +188,7 @@
     {
       "id": "c1-u20-l02-q15",
       "type": "reading",
-      "passageEn": "Lena studies law at the country's premier university. On weekends, she volunteers at a free legal help center in an impoverished part of the city. Many visitors come with tedious, bureaucratic problems, such as forms that were rejected three times in a row. Others have more serious stories. One man said his landlord kept harassing him to leave his flat. Lena listened carefully and helped him fill in a complaint form. She also reads history books about persecution, because she believes that small injustices, if ignored, can grow into large ones.",
+      "passageEn": "Lena studies law at the country's premier university. On weekends, she volunteers at a free legal help center in an impoverished part of the city. Many visitors come with tedious, bureaucratic problems, such as forms that were rejected three times in a row. Others have more serious stories. One man said his landlord kept harassing him to leave his apartment. Lena listened carefully and helped him fill in a complaint form. She also reads history books about persecution, because she believes that small injustices, if ignored, can grow into large ones.",
       "passageZh": "Lena 在國內頂尖的大學讀法律。週末時，她在城裡一個貧困地區的免費法律諮詢中心當志工。許多來訪者帶著繁瑣又官僚的問題，例如表格連續被退件了三次。也有人的處境更嚴重。一名男子說，房東一直騷擾他，逼他搬出公寓。Lena 仔細聽他說，並幫他填寫申訴表。她也會讀關於迫害的歷史書，因為她相信，小小的不公平如果被忽視，可能會演變成很大的不公。",
       "questions": [
         {
@@ -317,6 +317,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（injustice）原位換成翻譯題，沿用題 id c1-u20-l02-q17；目標字沿用 injustice",
         "resolution": "改為 translate：promptZh「這部電影講述一位記者揭發社會不公的故事。」、hintWords [\"injustice\"]、referenceEn [\"The film tells the story of a reporter who exposes social injustice.\",\"This movie is about a journalist who reveals injustice in society.\"]、rubricZh [\"「社會不公」用 injustice，例如 social injustice、injustice in society 等\",\"「揭發」可寫，例如 exposes、reveals、uncovers 等\"]（原 makeSentence：instructionZh「用 injustice 造一個句子，說說一件你覺得不公平的事。」、referenceEn [\"It felt like an injustice when my brother got a bigger piece of cake.\",\"I think it is an injustice that some children are not able to go to school.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

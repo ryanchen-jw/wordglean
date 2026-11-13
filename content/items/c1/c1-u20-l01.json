@@ -27,7 +27,7 @@
       "id": "c1-u20-l01-q02",
       "type": "wordCard",
       "word": "comply",
-      "exampleEn": "Most shops quickly complied when the new rule began.",
+      "exampleEn": "Most shops quickly complied when the new rule took effect.",
       "exampleZh": "新規定上路後，大多數商店都很快配合遵守了。",
       "glossZh": "遵守；服從",
       "distractorsZh": [
@@ -200,7 +200,7 @@
     {
       "id": "c1-u20-l01-q16",
       "type": "reading",
-      "passageEn": "Last month, Mia called the town hall because the lights on her street had been broken for weeks. A clerk explained that the street was outside the town's jurisdiction, so the repair had to be requested from the next district. Mia also learned why nothing had happened earlier: the neighbors' association had split into two factions, one wanting new lamps and the other wanting the old ones fixed. In the end, a volunteer corps of retired electricians offered to help. They made sure every lamp would comply with safety rules, and the district agreed to pay for the parts.",
+      "passageEn": "Last month, Mia called the town hall because the lights on her street had been broken for weeks. A clerk explained that the street was outside the town's jurisdiction, so the repair had to be requested from the next district. Mia also learned why nothing had happened earlier: the neighborhood association had split into two factions, one wanting new lamps and the other wanting the old ones fixed. In the end, a volunteer corps of retired electricians offered to help. They made sure every lamp would comply with safety rules, and the district agreed to pay for the parts.",
       "passageZh": "上個月，Mia 打電話到鎮公所，因為她家那條街的路燈已經壞了好幾週。一位職員說明，那條街不在本鎮的管轄範圍內，所以必須向隔壁區申請維修。Mia 也知道了為什麼一直沒有進展：住戶協會分裂成兩派，一派想換新燈，另一派想把舊燈修好。最後，一支由退休電工組成的志工隊主動提供協助。他們確保每一盞燈都符合安全規定，區公所也同意負擔零件的費用。",
       "questions": [
         {
@@ -233,7 +233,7 @@
         "conform"
       ],
       "referenceEn": [
-        "All parcels must conform to the post office's size rules.",
+        "All packages must conform to the post office's size rules.",
         "Every package has to conform to the size limits of the post office."
       ],
       "rubricZh": [
@@ -324,6 +324,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（comply）原位換成翻譯題，沿用題 id c1-u20-l01-q18；目標字沿用 comply",
         "resolution": "改為 translate：promptZh「那位球員拒絕遵守裁判的指示，被罰下場。」、hintWords [\"comply\"]、referenceEn [\"The player refused to comply with the referee's instructions and was sent off.\",\"After refusing to comply with the referee's orders, the player was sent off.\"]、rubricZh [\"「遵守」用 comply with（例如 comply with the referee's instructions 等）\",\"「被罰下場」可寫，例如 was sent off、was sent off the field 等\",\"時態配合內容（例如 refused、was sent off 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 comply 造一個句子，說說你在生活中會遵守的一條規定。」、referenceEn [\"I always comply with the library's rule about keeping quiet.\",\"When I ride my scooter, I comply with the speed limit.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

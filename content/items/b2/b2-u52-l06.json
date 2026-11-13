@@ -174,7 +174,7 @@
     {
       "id": "b2-u52-l06-q14",
       "type": "reading",
-      "passageEn": "Every December, our office holds a small gift exchange. This year, my colleague Dave was unenthusiastic at first and joked that he was a scrooge who hated spending money. The rules bewildered some new workers, because every gift had to cost less than ten dollars and be useful at work. Two quarrelsome colleagues argued about who should open the first gift, and our manager crossly told them to stop. In the end, Dave gave the best gift: a cup with everyone's names on it.",
+      "passageEn": "Every December, our office holds a small gift exchange. This year, my colleague Dave was unenthusiastic at first and joked that he was a scrooge who hated spending money. The rules bewildered some new workers, because every gift had to cost less than ten dollars and be useful at work. Two quarrelsome colleagues argued about who should open the first gift, and our manager crossly told them to stop. In the end, Dave gave the best gift: a mug with everyone's names on it.",
       "passageZh": "每年十二月，我們辦公室都會舉辦小型交換禮物。今年，我的同事 Dave 一開始興趣缺缺，還開玩笑說自己是個討厭花錢的吝嗇鬼。規則把一些新同事弄糊塗了，因為每份禮物都要低於十美元，而且要在工作上用得到。兩位愛吵架的同事為了誰先拆第一份禮物爭執起來，經理生氣地叫他們停下。最後，Dave 送了最棒的禮物：一個印著大家名字的杯子。",
       "questions": [
         {
@@ -285,6 +285,12 @@
         "message": "執行長裁示：第③關：SUS 與 u51-l04-q16（Please dress suitably for the interview）主詞、情境、句型三項相同",
         "resolution": "改為 promptZh「他雖然沒什麼錢，卻總是穿得很體面。」、referenceEn [\"He doesn't have much money, but he always dresses respectably.\",\"Although he has little money, he is always respectably dressed.\"]、rubricZh [\"respectably 修飾動詞或分詞（例如 dresses respectably、is respectably dressed 等）\",\"「雖然…卻」可寫，例如 but、although 等；always 位置不扣分\"]（原 promptZh「去參加婚禮時，請穿得體面一點。」、referenceEn [\"Please dress respectably when you go to the wedding.\",\"Please be respectably dressed for the wedding.\"]、rubricZh [\"respectably 修飾動詞或分詞（例如 dress respectably、be respectably dressed 等）\",\"「去參加婚禮時」可寫，例如 when you go to the wedding、for the wedding 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

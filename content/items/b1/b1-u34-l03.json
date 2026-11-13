@@ -125,10 +125,10 @@
       "audioZh": "如果你想轉到別的班，請在星期五前到辦公室談。",
       "questionZh": "想換班要怎麼做？",
       "options": [
-        "Go and see the office before Friday.",
-        "Talk to the new class on Friday.",
-        "Wait until next term.",
-        "Ask your parents to call."
+        "Go to the office before Friday",
+        "Talk to the new class on Friday",
+        "Wait until next term",
+        "Ask your parents to call"
       ],
       "answer": 0
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u34-l03-q15",
       "type": "reading",
-      "passageEn": "An old factory in our town was abandoned for twenty years. Last year, a group of artists decided to transform it into an art center for local people. A grant from the city enabled them to buy paint and tools. They arranged the big rooms so that each artist had a small studio, and they made one room into a classroom where children learn about the water cycle. Some artists transferred from a center in another city to help. As the work advanced, more and more people joined. Everyone agrees that the artists deserve our thanks.",
+      "passageEn": "An old factory in our town had been abandoned for twenty years. Last year, a group of artists decided to transform it into an art center for local people. A grant from the city enabled them to buy paint and tools. They arranged the big rooms so that each artist had a small studio, and they made one room into a classroom where children learn about the water cycle. Some artists transferred from a center in another city to help. As the work advanced, more and more people joined. Everyone agrees that the artists deserve our thanks.",
       "passageZh": "我們鎮上有一座舊工廠荒廢了二十年。去年，一群藝術家決定把它改造成給當地人的藝術中心。市政府的補助讓他們能買油漆和各種工具。他們把大房間安排好，讓每位藝術家都有一間小工作室，還把其中一間變成教室，讓孩子學習水在大自然中如何不斷變化。有些藝術家從另一個城市的中心轉過來幫忙。隨著工作進展，越來越多人加入。大家都同意這些藝術家值得我們感謝。",
       "questions": [
         {
@@ -414,6 +414,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（abandon）原位換成翻譯題，沿用題 id b1-u34-l03-q17；目標字沿用 abandon",
         "resolution": "改為 translate：promptZh「因為天氣太差，他們放棄了爬山的計畫。」、hintWords [\"abandon\"]、referenceEn [\"They abandoned their plan to climb the mountain because of the bad weather.\",\"Because the weather was bad, they abandoned the climbing plan.\"]、rubricZh [\"用 abandon 表示「放棄」（例如 abandoned their plan；寫 gave up 也正確）\"]（原 makeSentence：instructionZh「用 abandon 造一個句子，說說你曾經放棄的計畫或從不放棄的事。」、referenceEn [\"I abandoned my plan to learn the piano.\",\"I never abandon a book before I finish it.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

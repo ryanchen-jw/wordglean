@@ -29,7 +29,7 @@
       "word": "trousers",
       "exampleEn": "He is wearing black trousers.",
       "exampleZh": "他穿著黑色長褲。",
-      "glossZh": "（英式）長褲",
+      "glossZh": "長褲；（英式）",
       "distractorsZh": [
         "襯衫",
         "裙子",
@@ -359,6 +359,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（glasses）原位換成翻譯題，沿用題 id a1-u09-l04-q16；目標字沿用 glasses",
         "resolution": "改為 translate：promptZh「我找不到我的眼鏡。」、hintWords [\"glasses\"]、referenceEn [\"I can't find my glasses.\",\"I don't know where my glasses are.\"]、rubricZh [\"glasses 是複數（例如 my glasses are）\",\"「找不到」可寫，例如 can't find、don't know where … are 等\"]（原 makeSentence：instructionZh「用 glasses 造一個句子，說說你或你身邊的人戴眼鏡的情況。」、referenceEn [\"I wear glasses at work.\",\"My father wears glasses when he reads.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

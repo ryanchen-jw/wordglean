@@ -189,7 +189,7 @@
     {
       "id": "a2-u01-l02-q15",
       "type": "reading",
-      "passageEn": "Ben's grandfather is eighty years old. Though he lives far from the city, he never feels lonely. He has lived in the same small village since 1970, and he knows everyone there. Among all his neighbors, he is the oldest. He still does everything himself. However, he does not drive now, so Ben visits him every Sunday.",
+      "passageEn": "Ben's grandfather is eighty years old. Though he lives far from the city, he never feels lonely. He has lived in the same small village since 1970, and he knows everyone there. Among all his neighbors, he is the oldest. He still does everything himself. However, he does not drive anymore, so Ben visits him every Sunday.",
       "passageZh": "Ben 的爺爺八十歲了。雖然他住得離城市很遠，卻從不覺得寂寞。他從 1970 年起就住在同一個小村莊，認識那裡的每一個人。在所有鄰居當中，他年紀最大。他還是什麼事都自己做。不過他現在不開車了，所以 Ben 每個星期天都去看他。",
       "questions": [
         {
@@ -323,6 +323,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ever）原位換成翻譯題，沿用題 id a2-u01-l02-q17；目標字沿用 ever",
         "resolution": "改為 translate：promptZh「這是我吃過最好吃的蛋糕。」、hintWords [\"ever\"]、referenceEn [\"This is the best cake I have ever eaten.\",\"This is the best cake I've ever had.\"]、rubricZh [\"用 ever 搭配完成式表示「曾經」（例如 have ever eaten、I've ever had 等）\",\"「最好吃的蛋糕」可寫，例如 the best cake、the most delicious cake 等\",\"cake 後面可加 that，也可以省略\"]（原 makeSentence：instructionZh「用 ever 問朋友一個問題：有沒有做過某件事。」、referenceEn [\"Have you ever cooked for your whole family?\",\"Have you ever played tennis?\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

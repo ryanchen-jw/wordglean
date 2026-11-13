@@ -77,8 +77,8 @@
       "id": "b2-u47-l08-q06",
       "type": "wordCard",
       "word": "stride",
-      "exampleEn": "The tall runner strode ahead of the others.",
-      "exampleZh": "那位高個子跑者大步走在其他人前面。",
+      "exampleEn": "The tall man strode ahead of the others.",
+      "exampleZh": "那個高個子男人大步走在其他人前面。",
       "glossZh": "大步走；邁步",
       "distractorsZh": [
         "爬行",
@@ -309,6 +309,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lick）原位換成翻譯題，沿用題 id b2-u47-l08-q17；目標字沿用 lick",
         "resolution": "改為 translate：promptZh「小男孩趁冰淇淋融化前趕快舔了一口。」、hintWords [\"lick\"]、referenceEn [\"The little boy quickly licked his ice cream before it melted.\",\"Before his ice cream melted, the little boy gave it a quick lick.\"]、rubricZh [\"lick 可當動詞或名詞（例如 licked his ice cream、gave it a quick lick 等）\",\"「融化前」可寫，例如 before it melted 等\",\"時態可用過去式（例如 licked 等）\"]（原 makeSentence：instructionZh「用 lick 造一個句子，說說人或動物舔東西的情景。」、referenceEn [\"My dog always licks my hand when I come home.\",\"I licked the spoon after I made the cake.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

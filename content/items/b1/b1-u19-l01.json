@@ -67,7 +67,7 @@
       "id": "b1-u19-l01-q05",
       "type": "wordCard",
       "word": "cancel",
-      "exampleEn": "They cancelled the meeting at the last minute.",
+      "exampleEn": "They canceled the meeting at the last minute.",
       "exampleZh": "他們在最後一刻取消了會議。",
       "glossZh": "取消",
       "distractorsZh": [
@@ -98,14 +98,14 @@
     {
       "id": "b1-u19-l01-q08",
       "type": "listenChoice",
-      "audioEn": "Your morning flight has been cancelled, but we can put you on the next one at four.",
+      "audioEn": "Your morning flight has been canceled, but we can put you on the next one at four.",
       "audioZh": "您早上的班機取消了，不過我們可以幫您改搭四點那一班。",
       "questionZh": "新的班機是幾點？",
       "options": [
-        "At ten tomorrow morning.",
+        "At ten tomorrow morning",
         "At four p.m.",
-        "At noon tomorrow.",
-        "At eight tonight."
+        "At noon tomorrow",
+        "At eight tonight"
       ],
       "answer": 1
     },
@@ -309,6 +309,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（customs）原位換成翻譯題，沿用題 id b1-u19-l01-q15；目標字沿用 customs",
         "resolution": "改為 translate：promptZh「這些水果不能帶過海關。」、hintWords [\"customs\"]、referenceEn [\"You can't take this fruit through customs.\",\"This fruit is not allowed through customs.\"]、rubricZh [\"用 customs 表示「海關」（例如 through customs）\",\"「不能帶」可寫，例如 can't take、is not allowed 等\"]（原 makeSentence：instructionZh「用 customs 造一個句子，說說你過海關的經驗或看法。」、referenceEn [\"It took us an hour to go through customs.\",\"I had to open my suitcase at customs.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

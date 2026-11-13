@@ -188,8 +188,8 @@
     {
       "id": "b2-u08-l10-q15",
       "type": "reading",
-      "passageEn": "When Leo started his first company, he received rejection after rejection from banks. People told him it was only a stereotype that young business owners always fail, but he still felt the banks' doubts. His friends admired his optimism, although some thought his work had become an obsession. One day, he had an important realization: his product was good, but he had never clearly specified who it was for. He rewrote his plan thoroughly, with a thoughtful focus on small cafes. Ironically, the bank that had first said no became his biggest supporter.",
-      "passageZh": "Leo 剛創辦第一家公司時，一次又一次被銀行拒絕。大家告訴他，「年輕老闆一定會失敗」只是刻板印象，但他還是感受到銀行的懷疑。朋友們佩服他的樂觀，不過也有人覺得他對工作已經到了著迷的地步。有一天，他領悟到一件重要的事：他的產品很好，但他從來沒有明確說明產品是給誰用的。他徹底重寫了計畫，仔細地把目標放在小咖啡店上。諷刺的是，當初第一個拒絕他的銀行，後來成了他最大的支持者。",
+      "passageEn": "When Leo started his first company, he received rejection after rejection from banks. People told him it was only a stereotype that young business owners always fail, but he still felt the banks' doubts. His friends admired his optimism, although some thought his work had become an obsession. One day, he had an important realization: his product was good, but he had never clearly specified who it was for. He gave his plan a thoughtful rewrite, focusing on small cafes. Ironically, the bank that had first said no became his biggest supporter.",
+      "passageZh": "Leo 剛創辦第一家公司時，一次又一次被銀行拒絕。大家告訴他，「年輕老闆一定會失敗」只是刻板印象，但他還是感受到銀行的懷疑。朋友們佩服他的樂觀，不過也有人覺得他對工作已經到了著迷的地步。有一天，他領悟到一件重要的事：他的產品很好，但他從來沒有明確說明產品是給誰用的。他用心地重寫了計畫，把目標放在小咖啡店上。諷刺的是，當初第一個拒絕他的銀行，後來成了他最大的支持者。",
       "questions": [
         {
           "questionZh": "Leo 後來領悟到什麼？",
@@ -466,6 +466,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（obsession）原位換成翻譯題，沿用題 id b2-u08-l10-q17；目標字沿用 obsession",
         "resolution": "改為 translate：promptZh「我弟弟對恐龍非常著迷。」、hintWords [\"obsession\"]、referenceEn [\"My younger brother has an obsession with dinosaurs.\",\"My little brother has a real obsession with dinosaurs.\"]、rubricZh [\"obsession 常用 have an obsession with…（例如 has an obsession with dinosaurs 等）\",\"「弟弟」可寫，例如 younger brother、little brother 等\"]（原 makeSentence：instructionZh「用 obsession 造一個句子，說說你或家人非常著迷的一件事。」、referenceEn [\"My obsession with coffee started when I worked in a cafe.\",\"My son has an obsession with trains.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

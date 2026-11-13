@@ -138,29 +138,29 @@
       "audioZh": "我們的導遊對經過的每棟建築的歷史都非常熟悉。",
       "questionZh": "導遊有什麼特點？",
       "options": [
-        "The guide spoke softly.",
-        "The guide was fast.",
-        "The guide was late.",
-        "The guide knew a lot."
+        "The guide spoke softly",
+        "The guide was fast",
+        "The guide was late",
+        "The guide knew a lot"
       ],
       "answer": 3
     },
     {
       "id": "c1-u06-l01-q12",
       "type": "shadowing",
-      "sentenceEn": "Please read the explanatory notes before you fill in the form.",
+      "sentenceEn": "Please read the explanatory notes before you fill out the form.",
       "sentenceZh": "填表之前，請先閱讀說明。"
     },
     {
       "id": "c1-u06-l01-q13",
       "type": "shadowing",
-      "sentenceEn": "In the worst scenario, the flight will be delayed until tomorrow.",
+      "sentenceEn": "In the worst-case scenario, the flight will be delayed until tomorrow.",
       "sentenceZh": "最壞的情況是，班機會延到明天。"
     },
     {
       "id": "c1-u06-l01-q14",
       "type": "mcq",
-      "stemEn": "Applicants must meet three ____: experience, language skills, and a driving license.",
+      "stemEn": "Applicants must meet three ____: experience, language skills, and a driver's license.",
       "stemZh": "應徵者必須符合三項標準：經驗、語言能力和駕照。",
       "options": [
         "convictions",
@@ -315,6 +315,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（conviction）原位換成翻譯題，沿用題 id c1-u06-l01-q18；目標字沿用 conviction",
         "resolution": "改為 translate：promptZh「他堅信每個孩子都應該學會游泳。」、hintWords [\"conviction\"]、referenceEn [\"It is his firm conviction that every child should learn to swim.\",\"He has a strong conviction that all children should learn to swim.\"]、rubricZh [\"「堅信」用 conviction（例如 it is his firm conviction that…、a strong conviction that… 等）\",\"「應該」可寫，例如 should、ought to 等\"]（原 makeSentence：instructionZh「用 conviction 造一個句子，說說你堅信的一件事。」、referenceEn [\"It is my strong conviction that everyone should learn to cook.\",\"I have a deep conviction that reading every day makes life richer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

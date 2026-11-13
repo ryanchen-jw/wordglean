@@ -14,7 +14,7 @@
       "id": "a1-u16-l07-q01",
       "type": "wordCard",
       "word": "grade",
-      "exampleEn": "My daughter is in grade two.",
+      "exampleEn": "My daughter is in second grade.",
       "exampleZh": "我女兒讀二年級。",
       "glossZh": "年級",
       "distractorsZh": [
@@ -129,7 +129,7 @@
     {
       "id": "a1-u16-l07-q11",
       "type": "shadowing",
-      "sentenceEn": "My son is in grade four.",
+      "sentenceEn": "My son is in fourth grade.",
       "sentenceZh": "我兒子讀四年級。"
     },
     {
@@ -359,6 +359,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（topic）原位換成翻譯題，沿用題 id a1-u16-l07-q16；目標字沿用 topic",
         "resolution": "改為 translate：promptZh「這本雜誌每週有不同的主題。」、hintWords [\"topic\"]、referenceEn [\"This magazine has a different topic every week.\",\"Every week, this magazine has a different topic.\"]、rubricZh [\"topic 前面加冠詞（例如 a different topic）；複數 different topics 也正確\",\"習慣性的事用現在簡單式（例如 has）\"]（原 makeSentence：instructionZh「用 topic 造一個句子，說說你喜歡聊的話題。」、referenceEn [\"My favorite topic is food.\",\"I like to talk about the topic of travel.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

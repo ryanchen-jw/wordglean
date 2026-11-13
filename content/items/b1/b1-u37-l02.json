@@ -125,10 +125,10 @@
       "audioZh": "你這學期的表現很令人鼓舞，繼續保持！",
       "questionZh": "說話者覺得對方這學期表現如何？",
       "options": [
-        "Hard to judge.",
-        "It was not good enough.",
-        "Much too slow.",
-        "It was very promising."
+        "Hard to judge",
+        "It was not good enough",
+        "Much too slow",
+        "It was very promising"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u37-l02-q15",
       "type": "reading",
-      "passageEn": "Last month, I read a tragic novel about a poor young girl who had to leave her family and work in a big city. The story made me feel depressed for a few days, and I had a lot of sympathy for the girl. But the ending was encouraging: a kind old woman took care of her, and the girl later became a doctor. When the book came out, it caused a sensation, and many people talked about it. My curiosity made me look up the writer online. She said she wrote the book to help people stay mentally strong in hard times. The book also gave me a new insight into how people get through hard times. My mom, who is always supportive, bought me the writer's next book.",
-      "passageZh": "上個月，我讀了一本悲慘的小說，講一個貧窮的小女孩不得不離開家人、到大城市工作的故事。這個故事讓我沮喪了好幾天，我非常同情那個女孩。不過結局令人鼓舞：一位善良的老太太照顧她，女孩後來成了醫生。這本書出版時引起了轟動，很多人都在討論。好奇心讓我上網查了作者的資料。她說她寫這本書，是為了幫助人們在困難時保持心理上的堅強。這本書也讓我對人們如何度過難關有了新的認識。總是很支持我的媽媽，買了這位作者的下一本書給我。",
+      "passageEn": "Last month, I read a tragic novel about a poor young girl who had to leave her family and work in a big city. The story made me feel depressed for a few days, and I had a lot of sympathy for the girl. But the ending was encouraging: a kind old woman took care of her, and the girl later became a doctor. When the book came out, it caused a sensation, and many people talked about it. My curiosity made me look up the writer online. She said she wrote the book to help people stay mentally strong in hard times. The book also gave me a new insight into the lives of poor families. My mom, who is always supportive, bought me the writer's next book.",
+      "passageZh": "上個月，我讀了一本悲慘的小說，講一個貧窮的小女孩不得不離開家人、到大城市工作的故事。這個故事讓我沮喪了好幾天，我非常同情那個女孩。不過結局令人鼓舞：一位善良的老太太照顧她，女孩後來成了醫生。這本書出版時引起了轟動，很多人都在討論。好奇心讓我上網查了作者的資料。她說她寫這本書，是為了幫助人們在困難時保持心理上的堅強。這本書也讓我對貧困家庭的生活有了新的認識。總是很支持我的媽媽，買了這位作者的下一本書給我。",
       "questions": [
         {
           "questionZh": "讀完故事後作者有什麼感覺？",
@@ -402,6 +402,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（curiosity）原位換成翻譯題，沿用題 id b1-u37-l02-q17；目標字沿用 curiosity",
         "resolution": "改為 translate：promptZh「出於好奇，他問了那位老人很多問題。」、hintWords [\"curiosity\"]、referenceEn [\"Out of curiosity, he asked the old man many questions.\",\"He asked the old man a lot of questions out of curiosity.\"]、rubricZh [\"用 out of curiosity 表示「出於好奇」\"]（原 makeSentence：instructionZh「用 curiosity 造一個句子，說說一件讓你感到好奇的事。」、referenceEn [\"I have a lot of curiosity about space.\",\"I have always had a curiosity about other countries.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

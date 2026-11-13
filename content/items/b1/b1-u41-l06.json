@@ -53,8 +53,8 @@
       "id": "b1-u41-l06-q04",
       "type": "wordCard",
       "word": "hop",
-      "exampleEn": "With one happy hop, she reached the door.",
-      "exampleZh": "她開心地一跳就到了門口。",
+      "exampleEn": "The little girl gave a happy hop when she saw her dad.",
+      "exampleZh": "小女孩看到爸爸時開心地跳了一下。",
       "glossZh": "跳躍；單腳跳",
       "distractorsZh": [
         "飛行",
@@ -106,7 +106,7 @@
       "type": "wordCard",
       "word": "imitate",
       "exampleEn": "My brother can imitate our teacher's voice.",
-      "exampleZh": "我弟弟會模仿我們老師的聲音。",
+      "exampleZh": "我的兄弟會模仿我們老師的聲音。",
       "glossZh": "模仿；仿效",
       "distractorsZh": [
         "錄下",
@@ -127,10 +127,10 @@
       "audioZh": "我們沒有奶油，蛋糕裡就用油來代替吧。",
       "questionZh": "他們要用什麼代替奶油？",
       "options": [
-        "A little more sugar.",
-        "Oil instead of butter.",
-        "Butter from the shop.",
-        "Two more eggs."
+        "A little more sugar",
+        "Oil instead of butter",
+        "Butter from the shop",
+        "Two more eggs"
       ],
       "answer": 1
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u41-l06-q15",
       "type": "reading",
-      "passageEn": "My grandfather has a small farm in the hills, where he cultivates vegetables and fruit. He has a strong attachment to the farm because his father worked there, too. Last summer, I stayed with him. Every morning, a little bird came to the window and moved toward us with a small hop. Grandpa taught me to imitate its song. One day, Grandpa showed me how to inject liquid food into the soil around the young trees. When Grandpa's farm worker was sick, I worked as his substitute for a week. I wasn't prepared for such hard work, but Grandpa said that helping others is a good deed. He thanked me with real gratitude.",
+      "passageEn": "My grandfather has a small farm in the hills, where he cultivates vegetables and fruit. He has a strong attachment to the farm because his father worked there, too. Last summer, I stayed with him. Every morning, a little bird came to the window and moved toward us with a small hop. Grandpa taught me to imitate its song. One day, Grandpa showed me how to inject liquid plant food into the ground around the young trees. When Grandpa's farm worker was sick, I worked as his substitute for a week. I wasn't prepared for such hard work, but Grandpa said that helping others is a good deed. He thanked me with real gratitude.",
       "passageZh": "我爺爺在山上有一座小農場，種植蔬菜和水果。他非常依戀這座農場，因為他的父親以前也在這裡工作。去年夏天，我和他住在一起。每天早上，都有一隻小鳥來到窗前，輕輕一跳朝我們靠近。爺爺教我模仿牠的歌聲。有一天，爺爺教我怎麼把液肥注入小樹周圍的土裡。爺爺的農場工人生病時，我代替他工作了一個星期。我還沒準備好做這麼辛苦的工作，但爺爺說幫助別人是好的行為。他滿懷感激地向我道謝。",
       "questions": [
         {
@@ -506,6 +506,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（imitate）原位換成翻譯題，沿用題 id b1-u41-l06-q17；目標字沿用 imitate",
         "resolution": "改為 translate：promptZh「這家店的設計仿效了日本的老房子。」、hintWords [\"imitate\"]、referenceEn [\"The design of this shop imitates old Japanese houses.\",\"This shop's design imitates the style of old Japanese houses.\"]、rubricZh [\"用 imitate 表示「仿效」（例如 imitates old Japanese houses；寫 copies 也正確）\"]（原 makeSentence：instructionZh「用 imitate 造一個句子，說說你會模仿什麼。」、referenceEn [\"I can imitate the sound of a cat.\",\"When I was little, I imitated my big sister.\"]）；properNouns 加 Japanese",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

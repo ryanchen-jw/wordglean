@@ -187,7 +187,7 @@
     {
       "id": "b2-u52-l01-q15",
       "type": "reading",
-      "passageEn": "This season, my favorite cooking show has a new cook called Kurt. Kurt is talented but arrogant, and his conceit annoys everyone. In every episode, he talks about how great he is, which seems a little narcissistic. Last week, he was unkind to a quiet young cook and cruelly laughed at her cake. Then he foolishly tried to hide a burnt dish, and the judges soon found out about his dishonesty. The audience cheered when the quiet cook won the round.",
+      "passageEn": "This season, my favorite cooking show has a new cook called Kurt. Kurt is talented but arrogant, and his conceit annoys everyone. In every episode, he talks about how great he is, which seems a little narcissistic. Last week, he was unkind to a quiet young cook and cruelly laughed at her cake. Then he foolishly tried to hide a burned dish, and the judges soon found out about his dishonesty. The audience cheered when the quiet cook won the round.",
       "passageZh": "這一季，我最喜歡的烹飪節目來了一位新廚師叫 Kurt。Kurt 很有才華但很傲慢，他的自負讓大家都很受不了。每一集他都在講自己有多厲害，看起來有點自戀。上週，他對一位安靜的年輕廚師很不友善，還刻薄地嘲笑她的蛋糕。接著他又愚蠢地想藏起一盤燒焦的菜，評審很快就發現他不誠實。那位安靜的廚師贏得這一回合時，觀眾都歡呼了。",
       "questions": [
         {
@@ -340,6 +340,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unkind）原位換成翻譯題，沿用題 id b2-u52-l01-q17；目標字沿用 unkind",
         "resolution": "改為 translate：promptZh「她對新同學很不友善，從來不跟他說話。」、hintWords [\"unkind\"]、referenceEn [\"She is unkind to the new classmate and never talks to him.\",\"She is very unkind to the new student; she never speaks to him.\"]、rubricZh [\"unkind 當形容詞，常接 to＋人（例如 is unkind to the new classmate 等）\",\"「新同學」可寫，例如 the new classmate、the new student 等\",\"時態可用現在式、過去式或現在完成式（例如 is、was、has been 等）\"]（原 makeSentence：instructionZh「用 unkind 造一個句子，說說一次你覺得別人說話或做事不友善的經驗。」、referenceEn [\"It was unkind of my classmate to read my diary without asking.\",\"Some people left unkind comments under my video.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

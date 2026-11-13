@@ -66,7 +66,7 @@
       "id": "b2-u28-l04-q05",
       "type": "wordCard",
       "word": "clerical",
-      "exampleEn": "He got a clerical job at the city hall after he graduated.",
+      "exampleEn": "He got a clerical job at city hall after he graduated.",
       "exampleZh": "他畢業後在市政府找到一份文書工作。",
       "glossZh": "文書的；辦事員的",
       "distractorsZh": [
@@ -187,7 +187,7 @@
     {
       "id": "b2-u28-l04-q15",
       "type": "reading",
-      "passageEn": "Our company recently upgraded its facilities for online meetings. Each meeting room now has a camera and a microphone for video conferencing, so staff who work from home can still join. After every meeting, the system makes a transcript of what people said, and everyone can download the handout too. The timing of this change was perfect, because many staff stayed home with colds last winter. Some managers were worried about privacy, so new staff must use the system under supervision at first. Workers can consult the technical team when there is a problem, and the clerical staff send the transcripts to clients. A local institution helped pay for the project.",
+      "passageEn": "Our company recently upgraded its facilities for online meetings. Each meeting room now has a camera and a microphone for video conferencing, so staff who work from home can still join. After every meeting, the system makes a transcript of what people said, and everyone can download the meeting handouts too. The timing of this change was perfect, because many staff stayed home with colds last winter. Some managers were worried about privacy, so new staff must use the system under supervision at first. Workers can consult the technical team when there is a problem, and the clerical staff send the transcripts to clients. A local institution helped pay for the project.",
       "passageZh": "我們公司最近升級了線上會議的設施。現在每間會議室都有一台攝影機和一支麥克風可以進行視訊會議，所以在家工作的員工也能參加。每場會議結束後，系統會把大家說的話做成文字紀錄，每個人也都可以下載講義。這次改變的時機剛剛好，因為去年冬天很多員工感冒在家。有些主管擔心隱私問題，所以新進員工一開始必須在有人監督的情況下使用這套系統。員工遇到問題時可以請教技術團隊，文書人員則負責把文字紀錄寄給客戶。地方上的一個機構也出資協助這個計畫。",
       "questions": [
         {
@@ -443,6 +443,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（consult）原位換成翻譯題，沿用題 id b2-u28-l04-q17；目標字沿用 consult",
         "resolution": "改為 translate：promptZh「如果你不確定這個字的意思，可以查字典。」、hintWords [\"consult\"]、referenceEn [\"If you are not sure what this word means, you can consult a dictionary.\",\"You can consult a dictionary if you don't know the meaning of this word.\"]、rubricZh [\"consult 在這裡指「查閱」（例如 consult a dictionary 等）\",\"「不確定意思」可寫，例如 are not sure what it means、don't know the meaning 等\",\"if 子句可放句首或句尾\"]（原 makeSentence：instructionZh「用 consult 造一個句子，說說你做重要決定前，會先請教誰或查什麼資料。」、referenceEn [\"I always consult my parents before I make a big decision.\",\"I consult a dictionary when I am not sure about a word.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -115,7 +115,7 @@
     {
       "id": "c1-p03-l02-q10",
       "type": "shadowing",
-      "sentenceEn": "In light of recent events, the trip has been cancelled.",
+      "sentenceEn": "In light of recent events, the trip has been canceled.",
       "sentenceZh": "鑑於最近發生的事，這趟旅行取消了。"
     },
     {
@@ -159,8 +159,8 @@
     {
       "id": "c1-p03-l02-q13",
       "type": "reading",
-      "passageEn": "Last month, our school held a public meeting on whether students should still wear uniforms. In light of rising costs for families, several parents made a case for allowing ordinary clothes. A teacher then pointed out something nobody had considered: what would happen on cold days when some students could not afford warm coats? After two hours of discussion, the meeting reached a consensus to keep uniforms but offer them at a lower price. In the wake of the decision, a local shop agreed to sell them without making a profit.",
-      "passageZh": "上個月，我們學校舉辦了一場公開會議，討論學生是否還要穿制服。鑑於家庭開銷增加，好幾位家長主張讓學生穿一般的衣服。接著，一位老師指出一件大家都沒想到的事：天冷時，有些學生買不起保暖的外套，那該怎麼辦？經過兩個小時的討論，會議達成共識：保留制服，但用較低的價格提供。這個決定公布之後，當地一家商店同意以不賺錢的價格販售制服。",
+      "passageEn": "Last month, our school held a public meeting on whether students should still wear uniforms. In light of rising costs for families, several parents made a case for allowing ordinary clothes. A teacher then raised a question that nobody else had considered: would students who could not afford fashionable clothes feel left out? After two hours of discussion, the meeting reached a consensus to keep uniforms but offer them at a lower price. In the wake of the decision, a local shop agreed to sell them without making a profit.",
+      "passageZh": "上個月，我們學校舉辦了一場公開會議，討論學生是否還要穿制服。鑑於家庭開銷增加，好幾位家長主張讓學生穿一般的衣服。接著，一位老師提出一個大家都沒想到的問題：買不起時髦衣服的學生，會不會覺得被冷落？經過兩個小時的討論，會議達成共識：保留制服，但用較低的價格提供。這個決定公布之後，當地一家商店同意以不賺錢的價格販售制服。",
       "questions": [
         {
           "questionZh": "家長為什麼主張讓學生穿便服？",
@@ -310,6 +310,24 @@
         "message": "執行長第③關裁示修正：FIX：翻譯要點收不用片語的正確說法（裁示 1）",
         "resolution": "改前：[\"用片語表達「鑑於」，例如 in light of this new information 等，可放句首或句尾\",\"「應該」可寫，例如 should、ought to 等\",\"「計畫」可寫，例如 our plan、the plan 等\"]；改後：[\"建議用片語表達「鑑於」（例如 in light of this new information 等；in the light of 也正確）\",\"不用片語但意思正確也算對（例如 given、considering、in view of this new information 等）\",\"「應該」可寫，例如 should、ought to 等\",\"「計畫」可寫，例如 our plan、the plan 等\"]",
         "resolvedAt": "2026-10-06T00:34:56Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

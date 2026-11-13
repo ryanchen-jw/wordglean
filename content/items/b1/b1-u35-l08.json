@@ -125,10 +125,10 @@
       "audioZh": "比賽開始前，把鞋帶綁緊。",
       "questionZh": "說話者提醒什麼？",
       "options": [
-        "Run as fast as you can.",
-        "Start the race slowly.",
-        "Wear new shoes.",
-        "Tie your shoes well."
+        "Run as fast as you can",
+        "Start the race slowly",
+        "Wear new shoes",
+        "Tie your shoes well"
       ],
       "answer": 3
     },
@@ -438,6 +438,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bold）原位換成翻譯題，沿用題 id b1-u35-l08-q17；目標字沿用 bold",
         "resolution": "改為 translate：promptZh「標題是用醒目的粗體字寫的。」、hintWords [\"bold\"]、referenceEn [\"The title is written in bold letters.\",\"The title is printed in big, bold letters.\"]、rubricZh [\"用 bold 表示「粗體的；醒目的」（例如 bold letters）\"]（原 makeSentence：instructionZh「用 bold 造一個句子，說說你做過最大膽的事。」、referenceEn [\"I made a bold choice to change schools last year.\",\"Singing alone on stage was a bold step for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

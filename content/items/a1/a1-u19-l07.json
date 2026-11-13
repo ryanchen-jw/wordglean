@@ -185,10 +185,10 @@
       "id": "a1-u19-l07-q15",
       "type": "reading",
       "passageEn": "After the party, there are cups everywhere. My sister finds a blue cup beside the sofa. She says, \"This is mine.\" There is a red one under the table. \"Is it yours?\" I ask my brother. He says, \"No, it is Mom's. Ours are in the kitchen.\"",
-      "passageZh": "派對結束後，到處都是杯子。我姊姊在沙發旁邊找到一個藍色杯子，她說：「這是我的。」桌子底下有一個紅色的。我問我哥哥：「這是你的嗎？」他說：「不是，那是媽媽的。我們的在廚房。」",
+      "passageZh": "派對結束後，到處都是杯子。我的姊妹在沙發旁邊找到一個藍色杯子，她說：「這是我的。」桌子底下有一個紅色的。我問我的兄弟：「這是你的嗎？」他說：「不是，那是媽媽的。我們的在廚房。」",
       "questions": [
         {
-          "questionZh": "姊姊在哪裡找到她的杯子？",
+          "questionZh": "作者的姊妹在哪裡找到她的杯子？",
           "options": [
             "沙發旁邊",
             "桌子底下",
@@ -310,6 +310,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ours）原位換成翻譯題，沿用題 id a1-u19-l07-q17；目標字沿用 ours",
         "resolution": "改為 translate：promptZh「他們的狗比我們的大。」、hintWords [\"ours\"]、referenceEn [\"Their dog is bigger than ours.\",\"Their dog is larger than ours.\"]、rubricZh [\"ours 單獨當名詞用，後面不再接名詞（例如 than ours）；寫 than our dog 也正確\",\"比較級加 than（例如 bigger than）\"]（原 makeSentence：instructionZh「用 ours 造一個句子，說說某樣東西是你們家的。」、referenceEn [\"That white car is ours.\",\"This garden is ours.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

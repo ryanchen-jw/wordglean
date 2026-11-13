@@ -128,10 +128,10 @@
       "audioZh": "電影的結局讓所有人都震驚了，沒人想到主角竟然是壞人。",
       "questionZh": "為什麼觀眾很震驚？",
       "options": [
-        "Everyone expected the ending.",
-        "The movie was too long.",
-        "The hero died at the end.",
-        "The good guy was really the bad one."
+        "Everyone expected the ending",
+        "The movie was too long",
+        "The hero died at the end",
+        "The good guy was really the bad one"
       ],
       "answer": 3
     },
@@ -447,6 +447,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（satisfied）原位換成翻譯題，沿用題 id b1-u37-l04-q17；目標字沿用 satisfied",
         "resolution": "改為 translate：promptZh「老闆對我們的工作很滿意。」、hintWords [\"satisfied\"]、referenceEn [\"The boss is very satisfied with our work.\",\"Our boss is really satisfied with our work.\"]、rubricZh [\"用 be satisfied with 表示「對…滿意」\"]（原 makeSentence：instructionZh「用 satisfied 造一個句子，說說一件你感到滿意的事。」、referenceEn [\"I am satisfied with my English grade this term.\",\"I was satisfied with the cake I made for my mom.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

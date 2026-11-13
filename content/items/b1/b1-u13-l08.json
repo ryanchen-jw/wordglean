@@ -81,7 +81,7 @@
       "word": "courgette",
       "exampleEn": "Courgettes are easy to grow in summer.",
       "exampleZh": "櫛瓜在夏天很好種。",
-      "glossZh": "櫛瓜",
+      "glossZh": "櫛瓜；（英式）",
       "distractorsZh": [
         "南瓜",
         "茄子",
@@ -114,10 +114,10 @@
       "audioZh": "不要把平底鍋放進洗碗機，用溫水手洗。",
       "questionZh": "平底鍋應該怎麼洗？",
       "options": [
-        "By hand, using warm water.",
-        "In the dishwasher at night.",
-        "By hand with cold water.",
-        "Leave it in water overnight."
+        "By hand, using warm water",
+        "In the dishwasher at night",
+        "By hand with cold water",
+        "Leave it in water overnight"
       ],
       "answer": 0
     },
@@ -174,8 +174,8 @@
     {
       "id": "b1-u13-l08-q14",
       "type": "reading",
-      "passageEn": "Kai works in the staff canteen of a large company. Every morning, he cuts courgettes and heats oil in a huge frying pan. Some workers say the food is tasteless, so Kai now adds more spices. In the afternoon, he works like a barman and sells drinks. His favorite is a sweet drink made with flower nectar and lemon. His workplace is noisy, but he loves it.",
-      "passageZh": "Kai 在一家大公司的員工餐廳工作。每天早上，他切櫛瓜，在一個巨大的平底鍋裡熱油。有些員工說菜沒味道，所以 Kai 現在會多加一些香料。下午，他像酒保一樣賣飲料。他最喜歡的是一種用花蜜和檸檬做的甜飲料。他的工作場所很吵，但他很喜歡。",
+      "passageEn": "Kai works in the staff canteen of a large company. Every morning, he cuts courgettes and heats oil in a huge frying pan. Some workers say the food is tasteless, so Kai now adds more spices. In the afternoon, he works as a barman and sells drinks. His favorite is a sweet drink made with flower nectar and lemon. His workplace is noisy, but he loves it.",
+      "passageZh": "Kai 在一家大公司的員工餐廳工作。每天早上，他切櫛瓜，在一個巨大的平底鍋裡熱油。有些員工說菜沒味道，所以 Kai 現在會多加一些香料。下午，他當酒保賣飲料。他最喜歡的是一種用花蜜和檸檬做的甜飲料。他的工作場所很吵，但他很喜歡。",
       "questions": [
         {
           "questionZh": "有些員工對餐點有什麼意見？",
@@ -191,7 +191,7 @@
           "questionZh": "下午 Kai 做什麼？",
           "options": [
             "幫忙煮員工晚餐",
-            "像酒保一樣賣飲料",
+            "當酒保賣飲料",
             "去市場買新鮮蔬菜",
             "把廚房打掃乾淨"
           ],
@@ -339,6 +339,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（chewing gum）原位換成翻譯題，沿用題 id b1-u13-l08-q16；目標字沿用 chewing gum",
         "resolution": "改為 translate：promptZh「他的鞋底黏到了一塊口香糖。」、hintWords [\"chewing gum\"]、referenceEn [\"A piece of chewing gum got stuck on his shoe.\",\"He got a piece of chewing gum stuck on the bottom of his shoe.\"]、rubricZh [\"用 chewing gum 表示「口香糖」（例如 a piece of chewing gum）\",\"「黏到」可寫，例如 got stuck on…、stuck to… 等\"]（原 makeSentence：instructionZh「用 chewing gum 造一個句子，說說你嚼口香糖的習慣或看法。」、referenceEn [\"I sometimes have chewing gum after lunch.\",\"I buy chewing gum before long bus trips.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[1].options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

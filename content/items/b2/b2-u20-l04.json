@@ -188,8 +188,8 @@
     {
       "id": "b2-u20-l04-q15",
       "type": "reading",
-      "passageEn": "This summer, I joined a history tour of an old port city. Our first stop was the old ghetto, a historic area where a small community once lived. Today, it is a quiet area full of cafés and bookshops. Next, we walked to the stone gateway that once protected the city. Our guide pointed out the city's proximity to the sea and explained why trade made it rich. In the afternoon, we took a boat to visit a small offshore island. That night, I stayed in a student dorm on the outskirts of town, which was cheap and surprisingly cozy.",
-      "passageZh": "今年夏天，我參加了一個古老港口城市的歷史導覽。第一站是舊的聚居區，那是一個歷史街區，以前有一個小社群住在那裡。如今，那裡是一個寧靜的地區，到處都是咖啡館和書店。接著，我們走到以前保護城市的石造城門。導覽員指出這座城市鄰近海洋，並解釋貿易為什麼讓它富裕起來。下午，我們搭船去參觀一座離岸的小島。那天晚上，我住在鎮外圍的學生宿舍，價格便宜，而且出乎意料地溫馨。",
+      "passageEn": "This summer, I joined a history tour of an old port city. Our first stop was the old ghetto, a historic area where a small community once lived. Today, it is a quiet area full of cafes and bookshops. Next, we walked through the stone gateway that once led into the city. Our guide pointed out the city's proximity to the sea and explained why trade made it rich. In the afternoon, we took a boat to visit a small offshore island. That night, I stayed in a student dorm on the outskirts of town, which was cheap and surprisingly cozy.",
+      "passageZh": "今年夏天，我參加了一個古老港口城市的歷史導覽。第一站是舊的聚居區，那是一個歷史街區，以前有一個小社群住在那裡。如今，那裡是一個寧靜的地區，到處都是咖啡館和書店。接著，我們穿過以前通往城內的石造城門。導覽員指出這座城市鄰近海洋，並解釋貿易為什麼讓它富裕起來。下午，我們搭船去參觀一座離岸的小島。那天晚上，我住在鎮外圍的學生宿舍，價格便宜，而且出乎意料地溫馨。",
       "questions": [
         {
           "questionZh": "那個舊聚居區如今是什麼樣子？",
@@ -407,6 +407,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（dorm）原位換成翻譯題，沿用題 id b2-u20-l04-q17；目標字沿用 dorm",
         "resolution": "改為 translate：promptZh「我妹妹下學期會搬出宿舍。」、hintWords [\"dorm\"]、referenceEn [\"My younger sister will move out of the dorm next term.\",\"My little sister is going to move out of her dorm next semester.\"]、rubricZh [\"dorm 指宿舍（例如 the dorm、her dorm 等）\",\"「會」表示未來，可用表示未來的寫法（例如 will、be going to、is moving 等）\",\"「下學期」可寫，例如 next term、next semester 等\"]（原 makeSentence：instructionZh「用 dorm 造一個句子，說說你住宿舍的經驗或對宿舍生活的想法。」、referenceEn [\"I lived in a dorm in my first year at university, and I made many friends.\",\"I think living in a dorm teaches you to share and be patient.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -187,8 +187,8 @@
     {
       "id": "b2-u39-l02-q15",
       "type": "reading",
-      "passageEn": "Last weekend, I visited a technology fair in Taipei. At the first stand, a manufacturer showed a tiny transistor made with nano technology, so small that we needed a special camera to see it. Next, I tried a virtual reality game in which I walked on the moon. A company that makes weather radar explained how it can follow storms from hundreds of kilometers away. Another stand sold laser tools that measure a room in seconds. Children could join a short programming class and make a robot dance. I also bought a smart thermometer for my kitchen. Visitors had to wear antistatic gloves before touching the components on display.",
-      "passageZh": "上週末，我去參觀了台北的一場科技展。在第一個攤位，一家製造商展示了用奈米技術做成的微小電晶體，小到我們得用特殊的相機才看得到。接著，我玩了一個虛擬實境遊戲，在遊戲裡我在月球上走路。一家生產氣象雷達的公司解釋了雷達如何追蹤幾百公里外的暴風雨。另一個攤位賣能在幾秒內量出房間大小的雷射工具。孩子們可以參加簡短的程式課，讓機器人跳舞。我還買了一支廚房用的智慧溫度計。參觀者摸展示的零件前，必須先戴上抗靜電手套。",
+      "passageEn": "Last weekend, I visited a technology fair in Taipei. At the first stand, a manufacturer showed a tiny transistor made with nano technology, so small that we needed a special microscope to see it. Next, I tried a virtual reality game in which I walked on the moon. A company that makes weather radar explained how it can follow storms from hundreds of kilometers away. Another stand sold laser tools that measure a room in seconds. Children could join a short programming class and make a robot dance. I also bought a smart thermometer for my kitchen. Visitors had to wear antistatic gloves before touching the components on display.",
+      "passageZh": "上週末，我去參觀了台北的一場科技展。在第一個攤位，一家製造商展示了用奈米技術做成的微小電晶體，小到我們得用特殊的顯微鏡才看得到。接著，我玩了一個虛擬實境遊戲，在遊戲裡我在月球上走路。一家生產氣象雷達的公司解釋了雷達如何追蹤幾百公里外的暴風雨。另一個攤位賣能在幾秒內量出房間大小的雷射工具。孩子們可以參加簡短的程式課，讓機器人跳舞。我還買了一支廚房用的智慧溫度計。參觀者摸展示的零件前，必須先戴上抗靜電手套。",
       "questions": [
         {
           "questionZh": "作者在虛擬實境遊戲裡做了什麼？",
@@ -351,6 +351,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（laser）原位換成翻譯題，沿用題 id b2-u39-l02-q17；目標字沿用 laser",
         "resolution": "改為 translate：promptZh「昨晚的演唱會有一場很精彩的雷射燈光秀。」、hintWords [\"laser\"]、referenceEn [\"There was a wonderful laser show at the concert last night.\",\"Last night's concert had an amazing laser light show.\"]、rubricZh [\"「雷射燈光秀」可寫，例如 laser show、laser light show 等\",\"「很精彩的」可寫，例如 wonderful、amazing、great 等；用過去式\"]（原 makeSentence：instructionZh「用 laser 造一個句子，說說你看過或用過的雷射（例如雷射筆、雷射燈光秀）。」、referenceEn [\"I saw an amazing laser show at a concert last year.\",\"The shop used a laser to cut my name into a wooden sign.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -186,7 +186,7 @@
     {
       "id": "a2-u10-l05-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, Mia took a cooking class. First, the teacher showed them how to boil water and cook carrots, peas and mushrooms. Then they cut tomatoes into thin slices. At the end, everyone made a big bowl of vegetable soup. Mia ate it with a spoon and drank a cold soda. \"I'll cook this for my family!\" she said.",
+      "passageEn": "Last Saturday, Mia took a cooking class. First, the teacher showed them how to boil water and cook carrots, peas and mushrooms. Then they cut tomatoes into thin slices. At the end of the class, everyone made a big bowl of vegetable soup. Mia ate it with a spoon and drank a cold soda. \"I'll cook this for my family!\" she said.",
       "passageZh": "上週六，Mia 上了一堂烹飪課。老師先教大家怎麼燒開水，以及怎麼煮紅蘿蔔、豌豆和蘑菇。接著他們把番茄切成薄片。最後，每個人都做了一大碗蔬菜湯。Mia 用湯匙喝湯，還喝了一杯冰汽水。她說：「我要煮這道湯給家人吃！」",
       "questions": [
         {
@@ -402,6 +402,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cooking）原位換成翻譯題，沿用題 id a2-u10-l05-q17；目標字沿用 cooking",
         "resolution": "改為 translate：promptZh「大家都喜歡我媽媽的廚藝。」、hintWords [\"cooking\"]、referenceEn [\"Everyone loves my mother's cooking.\",\"Everybody likes my mom's cooking.\"]、rubricZh [\"用 cooking 表示「廚藝」（例如 my mother's cooking）\",\"everyone、everybody 後面用單數動詞（例如 loves、likes 等）\"]（原 makeSentence：instructionZh「用 cooking 造一個句子，說說你家誰最會做菜，或你對做菜的感覺。」、referenceEn [\"My grandmother's cooking is the best.\",\"I enjoy cooking for my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

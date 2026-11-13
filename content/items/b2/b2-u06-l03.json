@@ -148,7 +148,7 @@
       "id": "b2-u06-l03-q13",
       "type": "mcq",
       "stemEn": "My sister and her husband are very ____; they rarely argue.",
-      "stemZh": "我姊姊和姊夫很合得來，很少吵架。",
+      "stemZh": "我的姊妹和她先生很合得來，很少吵架。",
       "options": [
         "oval",
         "elegant",
@@ -386,6 +386,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ideally）原位換成翻譯題，沿用題 id b2-u06-l03-q17；目標字沿用 ideally",
         "resolution": "改為 translate：promptZh「這種植物最好放在陽光充足的地方。」、hintWords [\"ideally\"]、referenceEn [\"This plant should ideally be kept in a sunny place.\",\"Ideally, this kind of plant should be kept somewhere sunny.\"]、rubricZh [\"ideally 表示「最好是、理想上」，可放句首或助動詞後（例如 Ideally, …、should ideally be 等）\",\"「放」可寫，例如 kept、placed、put 等\",\"「陽光充足的地方」可寫，例如 a sunny place、somewhere sunny 等\"]（原 makeSentence：instructionZh「用 ideally 造一個句子，說說你理想中的工作或生活安排。」、referenceEn [\"Ideally, I would like to work from home two days a week.\",\"Ideally, I want to live near my office so I can walk to work.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

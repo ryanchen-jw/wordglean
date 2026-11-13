@@ -115,7 +115,7 @@
     {
       "id": "c1-u03-l05-q09",
       "type": "listenType",
-      "sentenceEn": "The children played football in the yard during recess.",
+      "sentenceEn": "The children played soccer in the yard during recess.",
       "sentenceZh": "孩子們下課時在院子裡踢足球。"
     },
     {
@@ -290,6 +290,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（conjure）原位換成翻譯題，沿用題 id c1-u03-l05-q17；目標字沿用 conjure",
         "resolution": "改為 translate：promptZh「這張老照片讓我想起童年住過的小鎮。」、hintWords [\"conjure\"]、referenceEn [\"This old photo conjures up the small town where I lived as a child.\",\"This old photograph conjures up memories of the small town I grew up in.\"]、rubricZh [\"「讓我想起」用 conjure up（例如 conjures up the town、conjures up memories of… 等）\",\"「童年住過的小鎮」可寫，例如 the town where I lived as a child、the town I grew up in 等\",\"時態可用現在式或過去式（例如 conjures up、conjured up 等）\"]（原 makeSentence：instructionZh「用 conjure up 造一個句子，說說某個味道、聲音或地方讓你想起什麼。」、referenceEn [\"The smell of rain always conjures up memories of my school days.\",\"For me, the sound of the sea conjures up summer holidays with my family.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

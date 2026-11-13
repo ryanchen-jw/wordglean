@@ -107,7 +107,7 @@
       "type": "wordCard",
       "word": "november",
       "exampleEn": "It gets cold in November.",
-      "exampleZh": "十一月天氣變冷了。",
+      "exampleZh": "十一月天氣會變冷。",
       "glossZh": "十一月",
       "distractorsZh": [
         "十二月",
@@ -187,8 +187,8 @@
     {
       "id": "a1-u20-l04-q15",
       "type": "reading",
-      "passageEn": "The first half of our school year is from September to January. The second half is from February to June. In July, we have a long summer vacation. In December, there is a big school party. This year, my birthday in November is on a Monday!",
-      "passageZh": "我們學年的上半段從九月到一月，下半段從二月到六月。七月我們有很長的暑假。十二月學校有一場大派對。今年我十一月的生日剛好是星期一！",
+      "passageEn": "The first half of our school year is from September to January. The second half is from February to June. In July, we have a long summer vacation. In December, there is a big school party. My birthday is in November, and this year it is on a Monday!",
+      "passageZh": "我們學年的上半段從九月到一月，下半段從二月到六月。七月我們有很長的暑假。十二月學校有一場大派對。我的生日在十一月，今年剛好是星期一！",
       "questions": [
         {
           "questionZh": "學年的下半段是哪幾個月？",
@@ -289,6 +289,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 a1-u20-l05-q16（See you on…） 的參考答案雷同（selfcheck-translate），依 §11.4／§12 換情境與句型；題 id 與 hintWords 不變",
         "resolution": "改為 promptZh「我們星期一有考試。」、referenceEn [\"We have a test on Monday.\",\"On Monday, we have a test.\"]、rubricZh [\"星期前用 on（例如 on Monday）\",\"「考試」可寫，例如 test、exam 等\"]（原 promptZh「我們星期一見。」、referenceEn [\"See you on Monday.\",\"Let's meet on Monday.\"]、rubricZh [\"星期前用 on（例如 on Monday）\",\"「見」可用 See you、meet 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

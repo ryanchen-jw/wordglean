@@ -125,10 +125,10 @@
       "audioZh": "星期二會有工人來安裝新的冷氣。",
       "questionZh": "星期二會有人來做什麼？",
       "options": [
-        "Fix the old air conditioning.",
-        "Check all the windows in the house.",
-        "Clean the kitchen.",
-        "Put in a new cooling system."
+        "Fix the old air conditioning",
+        "Check all the windows in the house",
+        "Clean the kitchen",
+        "Put in a new cooling system"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u34-l05-q15",
       "type": "reading",
-      "passageEn": "My uncle is a big supporter of our local football team, which has a good reputation. Last year, the city started to construct a new stadium, and he helped install the seats as a volunteer. The preparation took three months. During this time, our team lost several games, but its recovery was quick. On the opening day, I accompanied him to the first game. He tried to resist buying a new team shirt, but in the end he bought one. During the game, a staff member at the stadium assisted a woman with a baby to find her seat.",
-      "passageZh": "我叔叔是我們本地足球隊的忠實支持者，這支球隊名聲很好。去年，市政府開始建造新體育場，他以志工身分幫忙安裝座位。準備工作花了三個月。這段期間球隊輸了好幾場比賽，不過很快就恢復了水準。開幕那天，我陪他去看第一場比賽。他試著忍住不買新球衣，結果最後還是買了一件。比賽中，體育場的一位工作人員協助一位帶著寶寶的女士找到座位。",
+      "passageEn": "My uncle is a big supporter of our local soccer team, which has a good reputation. Last year, the city started to construct a new stadium, and he helped install the seats as a volunteer. The preparations for the opening day took three months. During this time, our team lost several games, but its recovery was quick. On the opening day, I accompanied him to the first game. He tried to resist buying a new team shirt, but in the end he bought one. During the game, a staff member at the stadium assisted a woman with a baby in finding her seat.",
+      "passageZh": "我叔叔是我們本地足球隊的忠實支持者，這支球隊名聲很好。去年，市政府開始建造新體育場，他以志工身分幫忙安裝座位。開幕的準備工作花了三個月。這段期間球隊輸了好幾場比賽，不過很快就恢復了水準。開幕那天，我陪他去看第一場比賽。他試著忍住不買新球衣，結果最後還是買了一件。比賽中，體育場的一位工作人員協助一位帶著寶寶的女士找到座位。",
       "questions": [
         {
           "questionZh": "叔叔當志工時做了什麼？",
@@ -354,6 +354,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（preparation）原位換成翻譯題，沿用題 id b1-u34-l05-q17；目標字沿用 preparation",
         "resolution": "改為 translate：promptZh「這場會議需要很多準備。」、hintWords [\"preparation\"]、referenceEn [\"This meeting needs a lot of preparation.\",\"A lot of preparation is needed for this meeting.\"]、rubricZh [\"用 preparation 表示「準備」（例如 a lot of preparation）\"]（原 makeSentence：instructionZh「用 preparation 造一個句子，說說你為某件事做的準備。」、referenceEn [\"I spent a week in preparation for the test.\",\"My preparation for the trip took two days.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

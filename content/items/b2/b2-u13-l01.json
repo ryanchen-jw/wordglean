@@ -67,7 +67,7 @@
       "type": "wordCard",
       "word": "salon",
       "exampleEn": "My sister works at a hair salon downtown.",
-      "exampleZh": "我姊姊在市中心的美髮沙龍工作。",
+      "exampleZh": "我的姊妹在市中心的美髮沙龍工作。",
       "glossZh": "（美髮、美容）沙龍；店",
       "distractorsZh": [
         "銀行",
@@ -200,8 +200,8 @@
     {
       "id": "b2-u13-l01-q16",
       "type": "reading",
-      "passageEn": "Last month, I visited a small clothing factory in my hometown. The owner showed me how they choose each fabric: they pull hard on every fiber to test its strength. The factory makes elegant outfits for office workers, but its best-selling product is a dress with a soft belt at the waist. Visitors must wear a badge, and photos are not allowed. At the end of the tour, I tried on a costume they had made for a local theater, and everyone laughed. The owner said many hair salons in the city also order uniforms from them.",
-      "passageZh": "上個月，我參觀了家鄉一間小型成衣工廠。老闆示範他們如何挑選布料：用力拉扯每一根纖維，測試它的強度。工廠為上班族製作高雅的套裝，但最暢銷的是一款腰間繫著柔軟腰帶的洋裝。參觀者必須配戴識別證，而且不准拍照。參觀結束時，我試穿了他們為當地劇場做的一套戲服，大家都笑了。老闆說，市區很多美髮沙龍也向他們訂製制服。",
+      "passageEn": "Last month, I visited a small clothing factory in my hometown. The owner showed me how they choose each fabric: they pull hard on a few fibers to test their strength. The factory makes elegant outfits for office workers, but its best-selling product is a dress with a soft belt at the waist. Visitors must wear a badge, and photos are not allowed. At the end of the tour, I tried on a costume they had made for a local theater, and everyone laughed. The owner said many hair salons in the city also order uniforms from them.",
+      "passageZh": "上個月，我參觀了家鄉一間小型成衣工廠。老闆示範他們如何挑選布料：用力拉扯幾根纖維，測試它們的強度。工廠為上班族製作高雅的套裝，但最暢銷的是一款腰間繫著柔軟腰帶的洋裝。參觀者必須配戴識別證，而且不准拍照。參觀結束時，我試穿了他們為當地劇場做的一套戲服，大家都笑了。老闆說，市區很多美髮沙龍也向他們訂製制服。",
       "questions": [
         {
           "questionZh": "工廠怎麼挑選布料？",
@@ -467,6 +467,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（costume）原位換成翻譯題，沿用題 id b2-u13-l01-q18；目標字沿用 costume",
         "resolution": "改為 translate：promptZh「這部電影的服裝花了設計師整整一年才做好。」、hintWords [\"costume\"]、referenceEn [\"The costumes for this movie took the designer a whole year to make.\",\"It took the designer a whole year to make the costumes for this film.\"]、rubricZh [\"costume 指「戲服、服裝」，這裡用複數（例如 the costumes for this movie 等）\",\"「花了…才做好」可寫，例如 took … a year to make、It took … to make 等\",\"時態可用過去式或現在完成式（例如 took 等）\"]（原 makeSentence：instructionZh「用 costume 造一個句子，說說你或家人穿戲服或變裝的經驗。」、referenceEn [\"My daughter wore a princess costume to her friend's birthday party.\",\"I dressed up in a cat costume for a Halloween party last year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -83,7 +83,7 @@
       "type": "wordCard",
       "word": "sister-in-law",
       "exampleEn": "I am meeting my sister-in-law for lunch tomorrow.",
-      "exampleZh": "我明天要和我嫂嫂一起吃午餐。",
+      "exampleZh": "我明天要和我的姻親姊妹一起吃午餐。",
       "glossZh": "嫂嫂、弟媳等姻親姊妹",
       "distractorsZh": [
         "表姊",
@@ -158,8 +158,8 @@
     {
       "id": "b2-u11-l07-q13",
       "type": "mcq",
-      "stemEn": "My parents call my wife their ____.",
-      "stemZh": "我爸媽稱我太太為他們的媳婦。",
+      "stemEn": "In my family, my wife is my parents' ____.",
+      "stemZh": "在我家，我太太是我爸媽的媳婦。",
       "options": [
         "habitant",
         "son-in-law",
@@ -444,6 +444,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（grown-up）原位換成翻譯題，沿用題 id b2-u11-l07-q16；目標字沿用 grown-up",
         "resolution": "改為 translate：promptZh「這部電影小孩和大人都很喜歡。」、hintWords [\"grown-up\"]、referenceEn [\"Both children and grown-ups enjoy this movie.\",\"This movie is loved by kids and grown-ups alike.\"]、rubricZh [\"grown-up 當名詞，表示「大人」，這裡用複數（例如 grown-ups 等）\",\"「都很喜歡」可寫，例如 Both … and … enjoy、is loved by … alike 等\",\"「小孩」可寫，例如 children、kids 等；時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 grown-up 造一個句子，說說長大成人後你的想法或生活有什麼不同。」、referenceEn [\"Now that I am a grown-up, I understand why my parents worked so hard.\",\"As a grown-up, I enjoy vegetables that I hated as a child.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemEn（套用後檢查器修正）、stemZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

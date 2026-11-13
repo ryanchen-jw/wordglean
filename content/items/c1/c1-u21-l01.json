@@ -107,7 +107,7 @@
       "id": "c1-u21-l01-q08",
       "type": "wordCard",
       "word": "popularization",
-      "exampleEn": "The popularization of mobile phones changed how we read the news.",
+      "exampleEn": "The popularization of cell phones changed how we read the news.",
       "exampleZh": "手機的普及改變了我們看新聞的方式。",
       "glossZh": "普及；通俗化",
       "distractorsZh": [
@@ -151,7 +151,7 @@
     {
       "id": "c1-u21-l01-q13",
       "type": "mcq",
-      "stemEn": "The TV ____ of the football final reached millions of people.",
+      "stemEn": "The TV ____ of the soccer final reached millions of people.",
       "stemZh": "足球決賽的電視轉播觸及了數百萬人。",
       "options": [
         "coverage",
@@ -189,8 +189,8 @@
     {
       "id": "c1-u21-l01-q15",
       "type": "reading",
-      "passageEn": "Ana Lee won renown for her portrayal of a village doctor in a popular TV drama. The show depicts the doctor as tired, funny and sometimes wrong, and many viewers say this depiction feels more real than older dramas. Critics also praise the series for its part in the popularization of local history, since each episode is based on a true story. The show's director is reputed to rewrite scenes the night before filming. He says that the media coverage after the first season was the biggest surprise of his career.",
-      "passageZh": "Ana Lee 因為在一部熱門電視劇中飾演村醫而成名。這部劇把醫生描寫成會累、很有趣、有時也會犯錯的人，許多觀眾說，這樣的描寫比舊的戲劇更真實。評論家也稱讚這部影集讓地方歷史普及，因為每一集都改編自真實故事。據說這部劇的導演常在拍攝前一晚改寫場景。他說，第一季播出後的媒體報導，才是他職業生涯中最大的驚喜。",
+      "passageEn": "Ana Lee won renown for her portrayal of a village doctor in a popular TV drama. The show depicts the doctor as tired, funny and sometimes wrong, and many viewers say this depiction feels more real than those in older dramas. Critics also praise the series for its part in the popularization of local history, since each episode is based on a true story. The show's director is reputed to rewrite scenes the night before filming. He says that the media coverage after the first season was the biggest surprise of his career.",
+      "passageZh": "Ana Lee 因為在一部熱門電視劇中飾演村醫而成名。這部劇把醫生描寫成會累、很有趣、有時也會犯錯的人，許多觀眾說，這樣的描寫比舊戲劇裡的更真實。評論家也稱讚這部影集讓地方歷史普及，因為每一集都改編自真實故事。據說這部劇的導演常在拍攝前一晚改寫場景。他說，第一季播出後的媒體報導，才是他職業生涯中最大的驚喜。",
       "questions": [
         {
           "questionZh": "很多觀眾覺得這部劇對醫生的描寫怎麼樣？",
@@ -325,6 +325,24 @@
         "message": "執行長裁示：第③關：c1-u21-l01-q17 SUS 與同課 q16「紀錄片把城市描繪成⋯」同為作品描繪某事、句型相同（§12.3），換成人＋depict",
         "resolution": "改為 promptZh \"她只用幾筆就把那隻貓畫得栩栩如生。\"、referenceEn [\"With just a few lines, she depicted the cat vividly.\",\"She depicted the cat vividly with only a few lines.\"]、rubricZh [\"「畫得栩栩如生」用 depict（例如 depicted the cat vividly 等）\",\"「只用幾筆」可寫，例如 with just a few lines、with only a few lines 等，放句首或句尾皆可\",\"時態配合內容（例如 depicted、depicts 等）；過去式、現在完成式都正確\"]（原 promptZh \"這幅壁畫描繪了農夫在田裡收割稻子的情景。\"、referenceEn [\"This wall painting depicts farmers harvesting rice in the fields.\",\"The painting on the wall depicts a scene of farmers cutting rice in the fields.\"]、rubricZh [\"「描繪」用 depict（例如 depicts farmers harvesting rice 等）\",\"「壁畫」可寫，例如 wall painting、the painting on the wall 等\",\"「收割稻子」可寫，例如 harvesting rice、cutting rice 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

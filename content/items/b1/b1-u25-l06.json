@@ -93,7 +93,7 @@
       "id": "b1-u25-l06-q07",
       "type": "wordCard",
       "word": "introduction",
-      "exampleEn": "Let me make an introduction: this is my friend Ken.",
+      "exampleEn": "Let me do the introductions: this is my friend Ken.",
       "exampleZh": "我來介紹一下：這是我的朋友 Ken。",
       "glossZh": "介紹；導言",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "請在星期五前交作文的開頭段落，其餘部分下週交。",
       "questionZh": "星期五前要交什麼？",
       "options": [
-        "The first part of the composition.",
-        "The whole composition.",
-        "The rest of the composition.",
-        "A short book report."
+        "The first part of the composition",
+        "The whole composition",
+        "The rest of the composition",
+        "A short book report"
       ],
       "answer": 0
     },
@@ -364,6 +364,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（translate）原位換成翻譯題，沿用題 id b1-u25-l06-q17；目標字沿用 translate",
         "resolution": "改為 translate：promptZh「你可以幫我把這封信翻成英文嗎？」、hintWords [\"translate\"]、referenceEn [\"Can you help me translate this letter into English?\",\"Could you translate this letter into English for me?\"]、rubricZh [\"用 translate … into 表示「翻譯成」（例如 translate this letter into English）\",\"請求可寫，例如 Can you…、Could you… 等\"]（原 makeSentence：instructionZh「用 translate 造一個句子，說說你翻譯過或想翻譯的東西。」、referenceEn [\"I once translated a song for my friend.\",\"I want to translate my favorite book one day.\"]）；properNouns 加 English",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -190,7 +190,7 @@
     {
       "id": "b2-u25-l01-q15",
       "type": "reading",
-      "passageEn": "Last week, our company held an online meeting with a partner in Japan. Everyone joined from a laptop, and an interpreter translated between Chinese and Japanese. At first, the transmission was poor, and the Japanese team could not hear us. Our manager's microphone was broken, so he borrowed mine. After that, the system could transmit our voices clearly. During the meeting, the Japanese partners asked for feedback on their new product. They also talked about how social media could help sell it in Taiwan. When the meeting ended, a messenger arrived at our office with samples of the product, and we tried them right away.",
+      "passageEn": "Last week, our company held an online meeting with a partner in Japan. Everyone joined on their own laptop, and an interpreter translated between Chinese and Japanese. At first, the transmission was poor, and the Japanese team could not hear us. Our manager's microphone was broken, so he borrowed mine. After that, the system could transmit our voices clearly. During the meeting, the Japanese partners asked for feedback on their new product. They also talked about how social media could help sell it in Taiwan. When the meeting ended, a messenger arrived at our office with samples of the product, and we tried them right away.",
       "passageZh": "上週，我們公司和一家日本的合作夥伴開了線上會議。每個人都用筆記型電腦加入，一位口譯員在中文和日文之間翻譯。一開始傳輸不好，日本團隊聽不到我們的聲音。我們經理的麥克風壞了，所以他借了我的。之後，系統就能清楚地傳送我們的聲音。會議中，日本夥伴請大家對他們的新產品提供意見。他們也談到社群媒體可以怎麼幫助這項產品在台灣銷售。會議結束時，一位信差把產品樣品送到我們辦公室，我們馬上就試用了。",
       "questions": [
         {
@@ -314,6 +314,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（microphone）原位換成翻譯題，沿用題 id b2-u25-l01-q17；目標字沿用 microphone",
         "resolution": "改為 translate：promptZh「這支麥克風壞了，所以後面的人聽不到。」、hintWords [\"microphone\"]、referenceEn [\"This microphone is broken, so the people at the back can't hear.\",\"The microphone isn't working, so people in the back can't hear anything.\"]、rubricZh [\"microphone 指麥克風（例如 this microphone、the microphone 等）\",\"「壞了」可寫，例如 is broken、isn't working、doesn't work 等\",\"「後面的人」可寫，例如 the people at the back、people in the back 等\"]（原 makeSentence：instructionZh「用 microphone 造一個句子，說說你在什麼場合用過麥克風。」、referenceEn [\"I used a microphone when I gave a speech at my sister's wedding.\",\"I once sang into a microphone at a friend's birthday party.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

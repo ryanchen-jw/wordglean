@@ -143,10 +143,10 @@
       "audioZh": "機器因為機械問題停了，所以工人提早回家。",
       "questionZh": "工人為什麼提早回家？",
       "options": [
-        "The workers had a holiday.",
-        "The boss went home early.",
-        "The machine wasn't working.",
-        "It rained heavily all morning."
+        "The workers had a holiday",
+        "The boss went home early",
+        "The machine wasn't working",
+        "It rained heavily all morning"
       ],
       "answer": 2
     },
@@ -386,6 +386,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（resemble）原位換成翻譯題，沿用題 id b1-u04-l01-q18；目標字沿用 resemble",
         "resolution": "改為 translate：promptZh「這個小鎮很像一座歐洲的老城市。」、hintWords [\"resemble\"]、referenceEn [\"This town resembles an old European city.\",\"This small town resembles an old city in Europe.\"]、rubricZh [\"用 resemble 表示「像」，後面直接接名詞（例如 resembles an old city；寫 looks like 也正確）\",\"「歐洲的老城市」可寫，例如 an old European city、an old city in Europe 等\"]（原 makeSentence：instructionZh「用 resemble 造一個句子，說說你長得像家裡的誰，或哪裡像。」、referenceEn [\"I resemble my father, especially my eyes.\",\"People say I resemble my grandmother.\"]）；properNouns 加 European、Europe",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

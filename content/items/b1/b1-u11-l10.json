@@ -57,7 +57,7 @@
       "word": "ground floor",
       "exampleEn": "The shop is on the ground floor, next to the entrance.",
       "exampleZh": "那家店在一樓，入口旁邊。",
-      "glossZh": "（英）一樓；地面層",
+      "glossZh": "一樓；地面層；（英式）",
       "distractorsZh": [
         "頂樓",
         "地下室",
@@ -116,10 +116,10 @@
       "audioZh": "孩子們又把遙控器弄丟了，所以我們沒辦法轉台。",
       "questionZh": "他們為什麼沒辦法轉台？",
       "options": [
-        "The TV in the living room is broken.",
-        "The kids broke the remote control.",
-        "The kids are asleep in their room.",
-        "Nobody can find the remote."
+        "The TV in the living room is broken",
+        "The kids broke the remote control",
+        "The kids are asleep in their room",
+        "Nobody can find the remote"
       ],
       "answer": 3
     },
@@ -176,8 +176,8 @@
     {
       "id": "b1-u11-l10-q14",
       "type": "reading",
-      "passageEn": "We just rented a house in London. On the ground floor, there is a kitchen with a small washbowl by the back door. My mother already found a place for her mixing bowls and pots. The first floor has two bedrooms, and the first-floor windows look out on a park. In my room, there is an old chest of drawers that the last family left. The living room is relatively large, and the TV even came with a remote control.",
-      "passageZh": "我們剛在倫敦租了一棟房子。一樓有廚房，後門旁邊有一個小洗手盆。媽媽已經幫她的攪拌碗和鍋子找好地方放了。二樓有兩間臥室，二樓的窗戶望出去是一座公園。我房間裡有一個前一家人留下的舊五斗櫃。客廳相對寬敞，電視甚至還附了遙控器。",
+      "passageEn": "We just rented a house in London. On the ground floor, there is a kitchen with a small washbowl by the back door. My mother already found a place for her mixing bowls and pots. The first floor has two bedrooms, and the first-floor windows look out on a park. In my room, there is an old chest of drawers that the last family left. The living room is relatively large, and there is a TV with a remote control.",
+      "passageZh": "我們剛在倫敦租了一棟房子。一樓有廚房，後門旁邊有一個小洗手盆。媽媽已經幫她的攪拌碗和鍋子找好地方放了。二樓有兩間臥室，二樓的窗戶望出去是一座公園。我房間裡有一個前一家人留下的舊五斗櫃。客廳相對寬敞，還有一台附遙控器的電視。",
       "questions": [
         {
           "questionZh": "臥室在哪一層？",
@@ -407,6 +407,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（remote control）原位換成翻譯題，沿用題 id b1-u11-l10-q16；目標字沿用 remote control",
         "resolution": "改為 translate：promptZh「我們在沙發的墊子下面找到了遙控器。」、hintWords [\"remote control\"]、referenceEn [\"We found the remote control under the sofa cushion.\",\"We found the remote control under a cushion on the sofa.\"]、rubricZh [\"用 remote control 表示「遙控器」\",\"「沙發的墊子」可寫，例如 the sofa cushion、a cushion on the sofa 等\"]（原 makeSentence：instructionZh「用 remote control 造一個句子，說說你家遙控器常放的位置，或常發生的事。」、referenceEn [\"Our remote control is always under the sofa.\",\"My little brother always hides the remote control.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

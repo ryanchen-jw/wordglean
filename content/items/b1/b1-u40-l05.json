@@ -66,7 +66,7 @@
       "word": "postman",
       "exampleEn": "The postman comes at ten every morning.",
       "exampleZh": "郵差每天早上十點來。",
-      "glossZh": "郵差",
+      "glossZh": "郵差；（英式）",
       "distractorsZh": [
         "司機",
         "警衛",
@@ -112,10 +112,10 @@
       "audioZh": "六點以後這裡禁止游泳，因為沒有人看守泳池。",
       "questionZh": "為什麼六點以後禁止游泳？",
       "options": [
-        "No one is there to keep watch.",
-        "The water becomes too cold at night.",
-        "The pool is cleaned every evening at six.",
-        "It gets too dark to see."
+        "No one is there to keep watch",
+        "The water becomes too cold at night",
+        "The pool is cleaned every evening at six",
+        "It gets too dark to see"
       ],
       "answer": 0
     },
@@ -342,6 +342,18 @@
         "message": "執行長裁示：第③關：SUS 與 u19-l01 mcq 題幹「I lost my ____, so … until I get a new one.」句型、情境相同；審查建議的「辦這張卡要帶身分證」又與同單元 citizenship 單字卡 You need citizenship to get… 同句型，改用證件照片情境",
         "resolution": "改為 promptZh「我身分證上的照片是十年前拍的。」、referenceEn [\"The photo on my identity card was taken ten years ago.\",\"The picture on my identity card was taken ten years ago.\"]、rubricZh [\"用 identity card 表示「身分證」（寫 ID card 也正確）\",\"「照片」可寫，例如 photo、picture 等\"]（原 promptZh「我的身分證掉了，得去辦一張新的。」、referenceEn [\"I lost my identity card, so I need to get a new one.\",\"I have to get a new identity card because I lost mine.\"]、rubricZh [\"用 identity card 表示「身分證」（寫 ID card 也正確）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "請在星期五前用書面報告把答案交給我，不要用電話。",
       "questionZh": "說話者要大家怎麼交答案？",
       "options": [
-        "In person at the next meeting.",
-        "By phone, before Friday.",
-        "In a written report.",
-        "By text message tonight."
+        "In person at the next meeting",
+        "By phone, before Friday",
+        "In a written report",
+        "By text message tonight"
       ],
       "answer": 2
     },
@@ -336,6 +336,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（weird）原位換成翻譯題，沿用題 id b1-u35-l07-q17；目標字沿用 weird",
         "resolution": "改為 translate：promptZh「冰箱正在發出奇怪的聲音。」、hintWords [\"weird\"]、referenceEn [\"The fridge is making a weird noise.\",\"The fridge is making a weird sound.\"]、rubricZh [\"用 weird 表示「奇怪的」（例如 a weird noise）\"]（原 makeSentence：instructionZh「用 weird 造一個句子，說說你遇過的一件怪事。」、referenceEn [\"I saw a weird cat with blue and green eyes.\",\"Something weird happened to me on the bus yesterday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

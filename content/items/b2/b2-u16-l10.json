@@ -41,8 +41,8 @@
       "id": "b2-u16-l10-q03",
       "type": "wordCard",
       "word": "addicted",
-      "exampleEn": "The addicted game player forgot to eat lunch again.",
-      "exampleZh": "那個打電玩上癮的玩家又忘了吃午餐。",
+      "exampleEn": "He is so addicted to computer games that he often forgets to eat lunch.",
+      "exampleZh": "他打電玩上癮到常常忘了吃午餐。",
       "glossZh": "上癮的；著迷的",
       "distractorsZh": [
         "厭倦的",
@@ -238,11 +238,11 @@
       ],
       "referenceEn": [
         "This book explains Freud's ideas about neurosis.",
-        "This book introduces Freud's views on neurosis."
+        "This book presents Freud's views on neurosis."
       ],
       "rubricZh": [
         "neurosis 指「精神官能症」（例如 Freud's ideas about neurosis 等）",
-        "「介紹」可寫，例如 explains、introduces、describes 等",
+        "「介紹」可寫，例如 explains、presents、describes 等",
         "「看法」可寫，例如 ideas about、views on 等"
       ]
     }
@@ -479,6 +479,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（neurosis）原位換成翻譯題，沿用題 id b2-u16-l10-q17；目標字沿用 neurosis",
         "resolution": "改為 translate：promptZh「這本書介紹了佛洛伊德對精神官能症的看法。」、hintWords [\"neurosis\"]、referenceEn [\"This book explains Freud's ideas about neurosis.\",\"This book introduces Freud's views on neurosis.\"]、rubricZh [\"neurosis 指「精神官能症」（例如 Freud's ideas about neurosis 等）\",\"「介紹」可寫，例如 explains、introduces、describes 等\",\"「看法」可寫，例如 ideas about、views on 等\"]（原 makeSentence：instructionZh「用 neurosis 造一個句子，說說你在書本、課堂或電影中看到關於精神官能症的內容（中性描述即可）。」、referenceEn [\"Our teacher explained that the meaning of neurosis has changed over time.\",\"I learned that the word neurosis comes from Greek.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]、rubricZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

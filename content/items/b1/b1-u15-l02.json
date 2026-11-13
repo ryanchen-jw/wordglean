@@ -127,10 +127,10 @@
       "audioZh": "博物館星期天免費，其他日子收五美元。",
       "questionZh": "星期一去博物館要付多少錢？",
       "options": [
-        "Nothing at all.",
-        "Twenty dollars.",
-        "Five dollars.",
-        "Twelve dollars."
+        "Nothing at all",
+        "Twenty dollars",
+        "Five dollars",
+        "Twelve dollars"
       ],
       "answer": 2
     },
@@ -382,6 +382,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（consumer）原位換成翻譯題，沿用題 id b1-u15-l02-q17；目標字沿用 consumer",
         "resolution": "改為 translate：promptZh「越來越多消費者在網路上買食物。」、hintWords [\"consumer\"]、referenceEn [\"More and more consumers buy food online.\",\"An increasing number of consumers buy food online.\"]、rubricZh [\"用 consumer 的複數表示「消費者」\",\"「越來越多」可寫，例如 more and more、an increasing number of 等\"]（原 makeSentence：instructionZh「用 consumer 造一個句子，說說消費者的某種習慣或需要。」、referenceEn [\"Consumers today often shop online.\",\"Most consumers compare prices before they buy something.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

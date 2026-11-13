@@ -128,10 +128,10 @@
       "audioZh": "行程突然改變，讓整個團隊好幾天都心神不寧。",
       "questionZh": "行程突然改變對團隊有什麼影響？",
       "options": [
-        "It let the team leave work early on Friday.",
-        "It made the team feel uneasy.",
-        "It gave them more time.",
-        "It cost them a client."
+        "It let the team leave work early on Friday",
+        "It made the team feel uneasy",
+        "It gave them more time",
+        "It cost them a client"
       ],
       "answer": 1
     },
@@ -275,6 +275,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rendering）原位換成翻譯題，沿用題 id c1-u36-l02-q17；目標字沿用 rendering",
         "resolution": "改為 translate：promptZh「建築師給我們看了新圖書館的電腦示意圖。」、hintWords [\"rendering\"]、referenceEn [\"The architect showed us a computer rendering of the new library.\",\"We were shown a computer rendering of the new library by the architect.\"]、rubricZh [\"「示意圖」用 rendering（例如 a computer rendering of the new library 等）\",\"時態配合內容（例如 showed、were shown 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 rendering 造一個句子，說說你聽過或看過的某個演出或改編版本。」、referenceEn [\"I loved the band's rendering of an old folk song.\",\"I once heard a slow piano rendering of my favorite pop song.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

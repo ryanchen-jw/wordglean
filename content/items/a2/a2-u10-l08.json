@@ -42,7 +42,7 @@
       "word": "jelly",
       "exampleEn": "Put the jelly in the fridge for two hours.",
       "exampleZh": "把果凍放進冰箱冰兩個小時。",
-      "glossZh": "果凍",
+      "glossZh": "果凍；（英式）",
       "distractorsZh": [
         "冰淇淋",
         "蛋糕",
@@ -173,8 +173,8 @@
     {
       "id": "a2-u10-l08-q14",
       "type": "reading",
-      "passageEn": "Every Friday night is food night at Tom's house. Last week, his mother made a chicken curry with a little chili, and his father cooked spaghetti. For dessert, they had melon and orange jelly. The kids drank lemonade. Tom's grandmother doesn't eat chili, so she only had boiled vegetables and rice.",
-      "passageZh": "每週五晚上是 Tom 家的美食之夜。上週，他媽媽做了加一點辣椒的雞肉咖哩，爸爸煮了義大利麵。甜點是哈密瓜和柳橙果凍。孩子們喝檸檬水。Tom 的奶奶不吃辣椒，所以她只吃了水煮蔬菜和白飯。",
+      "passageEn": "Every Friday night, Tom's family has a big dinner. Last week, his mother made a chicken curry with a little chili, and his father cooked spaghetti. For dessert, they had melon and orange jelly. The kids drank lemonade. Tom's grandmother doesn't eat chili, so she only had boiled vegetables and rice.",
+      "passageZh": "每週五晚上，Tom 家都會吃一頓豐盛的晚餐。上週，他媽媽做了加一點辣椒的雞肉咖哩，爸爸煮了義大利麵。甜點是哈密瓜和柳橙果凍。孩子們喝檸檬水。Tom 的奶奶不吃辣椒，所以她只吃了水煮蔬菜和白飯。",
       "questions": [
         {
           "questionZh": "Tom 的媽媽做了什麼？",
@@ -348,6 +348,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spaghetti）原位換成翻譯題，沿用題 id a2-u10-l08-q16；目標字沿用 spaghetti",
         "resolution": "改為 translate：promptZh「我們昨天晚餐吃義大利麵。」、hintWords [\"spaghetti\"]、referenceEn [\"We had spaghetti for dinner yesterday.\",\"Yesterday, we ate spaghetti for dinner.\"]、rubricZh [\"用 spaghetti 表示「義大利麵」，spaghetti 不可數，不加 s\",\"昨天的事用過去式（例如 had、ate 等）\",\"「晚餐吃…」可寫，例如 had…for dinner、ate…for dinner 等\"]（原 makeSentence：instructionZh「用 spaghetti 造一個句子，說說你喜歡怎麼吃義大利麵，或誰常煮義大利麵。」、referenceEn [\"I like spaghetti with lots of cheese.\",\"My sister cooks spaghetti every Saturday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

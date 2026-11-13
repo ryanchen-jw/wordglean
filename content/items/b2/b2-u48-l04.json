@@ -25,8 +25,8 @@
       "id": "b2-u48-l04-q02",
       "type": "wordCard",
       "word": "bony",
-      "exampleEn": "This fish is very bony, so eat it slowly.",
-      "exampleZh": "這條魚刺很多，要慢慢吃。",
+      "exampleEn": "This fish is very bony, so eat it carefully.",
+      "exampleZh": "這條魚刺很多，要小心吃。",
       "glossZh": "多刺的；骨瘦如柴的",
       "distractorsZh": [
         "多汁的",
@@ -51,7 +51,7 @@
       "id": "b2-u48-l04-q04",
       "type": "wordCard",
       "word": "tan",
-      "exampleEn": "He wore tan trousers and a white shirt.",
+      "exampleEn": "He wore tan pants and a white shirt.",
       "exampleZh": "他穿著黃褐色的長褲和白襯衫。",
       "glossZh": "黃褐色；（曬黑的）膚色",
       "distractorsZh": [
@@ -126,7 +126,7 @@
       "questionZh": "搭船行程怎麼了？",
       "options": [
         "It was put off for a day",
-        "It was cancelled for good",
+        "It was canceled for good",
         "It left early in the morning",
         "It was moved to the afternoon"
       ],
@@ -186,13 +186,13 @@
       "id": "b2-u48-l04-q15",
       "type": "reading",
       "passageEn": "After two weeks at a summer camp by the lake, my brother came home with a deep tan and a bag full of dirty clothes. He said the first few days were turbulent: it rained every afternoon, and the wind knocked down two tents. The leaders were strict, and sloppy work in the kitchen meant extra cleaning. On the last day, they went on an excursion across the lake on a rectangular wooden boat they had built. He was visibly proud when he told us about it.",
-      "passageZh": "在湖邊的夏令營待了兩週後，我弟弟曬得黝黑地回家，還帶了一袋髒衣服。他說頭幾天很混亂：每天下午都下雨，風還吹倒了兩頂帳篷。輔導員很嚴格，廚房工作做得草率就得額外打掃。最後一天，他們搭著自己做的長方形木船到湖對岸遠足。他跟我們講這件事時，看得出來非常得意。",
+      "passageZh": "在湖邊的夏令營待了兩週後，我的兄弟曬得黝黑地回家，還帶了一袋髒衣服。他說頭幾天很混亂：每天下午都下雨，風還吹倒了兩頂帳篷。輔導員很嚴格，廚房工作做得草率就得額外打掃。最後一天，他們搭著自己做的長方形木船到湖對岸遠足。他跟我們講這件事時，看得出來非常得意。",
       "questions": [
         {
           "questionZh": "夏令營頭幾天發生了什麼事？",
           "options": [
             "輔導員帶大家去爬山",
-            "弟弟生病一直待在帳篷裡",
+            "作者的兄弟生病一直待在帳篷裡",
             "大家在湖裡游泳比賽",
             "每天下雨、帳篷被吹倒"
           ],
@@ -326,6 +326,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unnatural）原位換成翻譯題，沿用題 id b2-u48-l04-q17；目標字沿用 unnatural",
         "resolution": "改為 translate：promptZh「要小孩子整天坐著不動，是不自然的。」、hintWords [\"unnatural\"]、referenceEn [\"It is unnatural for young children to sit still all day.\",\"Sitting still all day is unnatural for young children.\"]、rubricZh [\"unnatural 表示「不自然的、違反天性的」，句型例如 It is unnatural for… to…、Sitting … is unnatural 等\",\"「坐著不動」可寫，例如 sit still 等\",\"「小孩子」可寫，例如 young children、little kids 等\"]（原 makeSentence：instructionZh「用 unnatural 造一個句子，描述你覺得看起來或聽起來不自然的東西。」、referenceEn [\"My smile looks unnatural in most photos.\",\"I think the robot's voice in that film sounds cold and unnatural.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].options[1]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

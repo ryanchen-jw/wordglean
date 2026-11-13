@@ -186,7 +186,7 @@
     {
       "id": "a2-u25-l04-q15",
       "type": "reading",
-      "passageEn": "Last summer, my friends and I went hiking to a remote village. On the way, we got lost because our map was old. A kind farmer showed us the way to the village square. There, an old man told us about an unknown lake near the village. Our group was split: some wanted to go, but others were too tired. In the end, we all went, and the lake was beautiful.",
+      "passageEn": "Last summer, my friends and I hiked to a remote village. On the way, we got lost because our map was old. A kind farmer showed us the way to the village square. There, an old man told us about an unknown lake near the village. Our group was split: some wanted to go, but others were too tired. In the end, we all went, and the lake was beautiful.",
       "passageZh": "去年夏天，我和朋友們去健行，要到一個偏遠的村莊。途中因為地圖太舊，我們迷路了。一位好心的農夫帶我們到村裡的廣場。在那裡，一位老先生告訴我們村子附近有一座不為人知的湖。我們這群人意見分歧：有人想去，有人太累了。最後大家還是一起去了，那座湖很美。",
       "questions": [
         {
@@ -318,6 +318,12 @@
         "message": "執行長裁示：第③關：SUS 中文「沒有人知道…是誰寫的」最直接譯成 Nobody knows who wrote…，引導不到 unknown；題目改「作者不詳」",
         "resolution": "promptZh 改為 「這首歌的作者不詳。」（原 「沒有人知道這首歌是誰寫的。」）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

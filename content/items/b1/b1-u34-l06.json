@@ -125,10 +125,10 @@
       "audioZh": "請前往 5 號登機門，您的班機正在登機。",
       "questionZh": "旅客應該做什麼？",
       "options": [
-        "Go to Gate 5.",
-        "Wait for the next flight.",
-        "Call the airline's office.",
-        "Buy a new ticket."
+        "Go to Gate 5",
+        "Wait for the next flight",
+        "Call the airline's office",
+        "Buy a new ticket"
       ],
       "answer": 0
     },
@@ -396,6 +396,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（overcome）原位換成翻譯題，沿用題 id b1-u34-l06-q17；目標字沿用 overcome",
         "resolution": "改為 translate：promptZh「我們克服了語言不通的問題，成了好朋友。」、hintWords [\"overcome\"]、referenceEn [\"We overcame the language problem and became good friends.\",\"We became good friends after we overcame the language problem.\"]、rubricZh [\"用 overcome 表示「克服」（例如 overcame the language problem）\"]（原 makeSentence：instructionZh「用 overcome 造一個句子，說說你克服過或想克服的困難。」、referenceEn [\"I overcame my fear of speaking in public.\",\"I want to overcome my fear of dogs.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

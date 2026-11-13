@@ -14,9 +14,9 @@
       "id": "b1-u05-l07-q01",
       "type": "wordCard",
       "word": "rank",
-      "exampleEn": "Our school's rank went up to third this year.",
-      "exampleZh": "我們學校的排名今年升到第三。",
-      "glossZh": "排名；等級；地位",
+      "exampleEn": "She rose to the rank of manager in only two years.",
+      "exampleZh": "她只花兩年就升到了經理的職位。",
+      "glossZh": "等級；地位；排名",
       "distractorsZh": [
         "薪水",
         "年齡",
@@ -92,8 +92,8 @@
       "id": "b1-u05-l07-q07",
       "type": "wordCard",
       "word": "scope",
-      "exampleEn": "This plan is outside the scope of our team.",
-      "exampleZh": "這個計畫超出我們團隊負責的範圍。",
+      "exampleEn": "This question is outside the scope of today's meeting.",
+      "exampleZh": "這個問題超出今天會議的範圍。",
       "glossZh": "範圍；（發揮的）餘地",
       "distractorsZh": [
         "目的",
@@ -114,10 +114,10 @@
       "audioZh": "在這個市場，一串香蕉只要一美元。",
       "questionZh": "在這個市場，一串香蕉多少錢？",
       "options": [
-        "Two dollars.",
-        "One dollar.",
-        "Ten dollars.",
-        "Fifty cents."
+        "Two dollars",
+        "One dollar",
+        "Ten dollars",
+        "Fifty cents"
       ],
       "answer": 1
     },
@@ -339,6 +339,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（calculate）原位換成翻譯題，沿用題 id b1-u05-l07-q16；目標字沿用 calculate",
         "resolution": "改為 translate：promptZh「科學家算出了這顆星星離地球有多遠。」、hintWords [\"calculate\"]、referenceEn [\"Scientists have calculated how far this star is from the earth.\",\"Scientists calculated how far the star is from the earth.\"]、rubricZh [\"用 calculate 表示「計算」（例如 calculated how far…）\",\"時態可用 calculated、have calculated 等\"]（原 makeSentence：instructionZh「用 calculate 造一個句子，說說你會計算什麼，或曾經算過什麼。」、referenceEn [\"I calculate my spending at the end of every month.\",\"I calculated how much the trip would cost.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh、glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

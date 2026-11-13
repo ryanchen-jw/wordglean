@@ -127,10 +127,10 @@
       "audioZh": "新機器人可以獨力把整間辦公室的地板清乾淨。",
       "questionZh": "新機器人能做什麼？",
       "options": [
-        "Make coffee for the staff.",
-        "Clean the office floor without help.",
-        "Open the front door.",
-        "Answer the phone calls."
+        "Make coffee for the staff",
+        "Clean the office floor without help",
+        "Open the front door",
+        "Answer the phone calls"
       ],
       "answer": 1
     },
@@ -149,8 +149,8 @@
     {
       "id": "c1-u37-l03-q13",
       "type": "mcq",
-      "stemEn": "At the bottom of the box we found a few ____ apples, dry and full of lines.",
-      "stemZh": "我們在箱子底部發現幾顆乾癟起皺的蘋果，又乾又滿是紋路。",
+      "stemEn": "At the bottom of the box we found a few ____ apples, dry and covered in tiny lines.",
+      "stemZh": "我們在箱子底部發現幾顆乾癟起皺的蘋果，又乾又布滿細紋。",
       "options": [
         "wizened",
         "untangled",
@@ -187,7 +187,7 @@
     {
       "id": "c1-u37-l03-q15",
       "type": "reading",
-      "passageEn": "Nora restores old photographs at the city museum. Her latest job was a picture of a market, taken in 1925, that had been badly damaged by water. At first she saw only blankness where the faces should be. Working slowly with fairly rudimentary software, and largely unassisted, she rebuilt the image piece by piece. She did not work linearly from left to right; instead, she started with the clearest parts. After a month, the market was recognizably the same street that still exists today. A row of wizened apples sat on one stall, and a man in a dark coat stood somberly beside it. When the photo went on display, interest grew explosively online. Even the old frame, its wires finally untangled, was cleaned and kept.",
+      "passageEn": "Nora restores old photographs at the city museum. Her latest job was a picture of a market, taken in 1925, that had been badly damaged by water. At first she saw only blankness where the faces should have been. Working slowly with fairly rudimentary software, and largely unassisted, she rebuilt the image piece by piece. She did not work linearly from left to right; instead, she started with the clearest parts. After a month, the market was recognizably the same street that still exists today. A row of wizened apples sat on one stall, and a man in a dark coat stood somberly beside it. When the photo went on display, interest grew explosively online. Even the old frame, its wires finally untangled, was cleaned and kept.",
       "passageZh": "Nora 在市立博物館修復老照片。她最近的工作是一張 1925 年拍的市場照片，照片曾被水嚴重損壞。一開始，原本該是人臉的地方她只看到一片空白。她用相當陽春的軟體，幾乎獨力地慢慢工作，一塊一塊地把影像重建起來。她不是從左到右按順序修，而是從最清楚的部分開始。一個月後，照片上的市場已明顯看得出就是今天仍在的那條街。一個攤位上擺著一排乾癟起皺的蘋果，旁邊站著一位穿深色外套、神情嚴肅的男子。照片展出後，網路上的關注爆炸性地增加。就連那個舊相框，纏住的鐵絲也終於解開，清理乾淨後保留了下來。",
       "questions": [
         {
@@ -316,6 +316,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（blankness）原位換成翻譯題，沿用題 id c1-u37-l03-q17；目標字沿用 blankness",
         "resolution": "改為 translate：promptZh「聽到這個消息後，他的臉上只剩一片茫然。」、hintWords [\"blankness\"]、referenceEn [\"After he heard the news, his face showed nothing but blankness.\",\"When he heard the news, a blankness came over his face.\"]、rubricZh [\"「茫然」用名詞 blankness（例如 nothing but blankness、a blankness came over his face 等）\",\"說的是已發生的事，時態配合內容（例如 heard、showed 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 blankness 造一個句子，描述一片空白，或你腦中一片空白的感覺。」、referenceEn [\"During the exam, a sudden blankness filled my mind.\",\"I stared at the blankness of the empty page for an hour.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

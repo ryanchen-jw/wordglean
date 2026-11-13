@@ -175,8 +175,8 @@
     {
       "id": "b1-p03-l02-q14",
       "type": "reading",
-      "passageEn": "Last summer, our uncle Ben visited us and drove my sister and me to the mountains. On the way, he pulled over in a small town so we could look around. We found a little shop that sold bags made by hand. My sister had saved up for months, so she bought one. Uncle Ben set off for home two days later, and we went to the train station to see him off.",
-      "passageZh": "去年夏天，Ben 叔叔來看我們，開車載我和姊姊去山上。途中，他在一個小鎮靠邊停車，讓我們四處看看。我們找到一家賣手工包包的小店。姊姊已經存了好幾個月的錢，所以買了一個。兩天後 Ben 叔叔出發回家，我們去火車站為他送行。",
+      "passageEn": "Last summer, our uncle Ben visited us and drove my sister and me to the mountains. On the way, he pulled over in a small town so we could look around. We found a little shop that sold bags made by hand. My sister had saved up for months, so she bought one. Uncle Ben set off for home two days later, and we stood outside the house to see him off.",
+      "passageZh": "去年夏天，Ben 叔叔來看我們，開車載我和我的姊妹去山上。途中，他在一個小鎮靠邊停車，讓我們四處看看。我們找到一家賣手工包包的小店。我的姊妹已經存了好幾個月的錢，所以買了一個。兩天後 Ben 叔叔出發回家，我們站在屋外為他送行。",
       "questions": [
         {
           "questionZh": "叔叔為什麼在小鎮停車？",
@@ -188,7 +188,7 @@
           "answer": 2
         },
         {
-          "questionZh": "姊姊怎麼有錢買包包？",
+          "questionZh": "作者的姊妹怎麼有錢買包包？",
           "options": [
             "叔叔送她當生日禮物",
             "她存了好幾個月的錢",
@@ -347,6 +347,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 4 題位（b1-p03-l02-q12、b1-p03-l02-q13、b1-p03-l02-q14#0、b1-p03-l02-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

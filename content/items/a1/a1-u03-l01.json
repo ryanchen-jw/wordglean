@@ -200,7 +200,7 @@
     {
       "id": "a1-u03-l01-q16",
       "type": "reading",
-      "passageEn": "Today is May 1. It is the first day of my new job. I get up at six o'clock and take the bus at seven. Work starts at eight. Now it is twelve o'clock, and I am having lunch with two new friends. I like my job.",
+      "passageEn": "Today is May 1. It is the first day of my new job. I got up at six o'clock and took the bus at seven. Work starts at eight. Now it is twelve o'clock, and I am having lunch with two new friends. I like my job.",
       "passageZh": "今天是五月一日，是我新工作的第一天。我六點起床，七點搭公車。工作八點開始。現在是十二點，我正和兩位新朋友吃午餐。我喜歡我的工作。",
       "questions": [
         {
@@ -471,6 +471,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（first）原位換成翻譯題，沿用題 id a1-u03-l01-q18；目標字沿用 first",
         "resolution": "改為 translate：promptZh「這是我第一次坐飛機。」、hintWords [\"first\"]、referenceEn [\"This is my first time on a plane.\",\"It is my first time on a plane.\"]、rubricZh [\"first 放在名詞前（例如 my first time）\",\"「坐飛機」可寫，例如 on a plane、on an airplane 等\"]（原 makeSentence：instructionZh「用 first 造一個句子，說說你的第一份工作、第一天上學或其他「第一」的事。」、referenceEn [\"My first job was at a cafe.\",\"My first day at school was fun.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

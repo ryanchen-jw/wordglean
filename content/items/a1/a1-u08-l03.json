@@ -16,7 +16,7 @@
       "id": "a1-u08-l03-q01",
       "type": "wordCard",
       "word": "hamburger",
-      "exampleEn": "I want a hamburger and a coke.",
+      "exampleEn": "I want a hamburger and a Coke.",
       "exampleZh": "我要一個漢堡和一杯可樂。",
       "glossZh": "漢堡",
       "distractorsZh": [
@@ -406,6 +406,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（eat）原位換成翻譯題，沿用題 id a1-u08-l03-q17；目標字沿用 eat",
         "resolution": "改為 translate：promptZh「牛吃草。」、hintWords [\"eat\"]、referenceEn [\"Cows eat grass.\",\"A cow eats grass.\"]、rubricZh [\"泛指牛可寫，例如 Cows eat…、A cow eats… 等\",\"動詞配合主詞（例如 cows eat、a cow eats）\"]（原 makeSentence：instructionZh「用 eat 造一個句子，說說你常吃的一種食物。」、referenceEn [\"I eat rice every day.\",\"I often eat fish for dinner.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

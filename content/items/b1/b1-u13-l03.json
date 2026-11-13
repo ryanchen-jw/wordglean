@@ -123,14 +123,14 @@
     {
       "id": "b1-u13-l03-q10",
       "type": "listenChoice",
-      "audioEn": "Our café no longer gives out plastic straws, but you can ask for a paper one.",
+      "audioEn": "Our cafe no longer gives out plastic straws, but you can ask for a paper one.",
       "audioZh": "本咖啡店不再提供塑膠吸管，但你可以索取紙吸管。",
       "questionZh": "需要吸管的話該怎麼做？",
       "options": [
-        "Ask for a plastic one.",
-        "Buy a plastic straw.",
-        "Use a spoon.",
-        "Request one made of paper."
+        "Ask for a plastic one",
+        "Buy a plastic straw",
+        "Use a spoon",
+        "Request one made of paper"
       ],
       "answer": 3
     },
@@ -400,6 +400,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（blend）原位換成翻譯題，沿用題 id b1-u13-l03-q17；目標字沿用 blend",
         "resolution": "改為 translate：promptZh「把所有的材料混合均勻，再放進烤箱。」、hintWords [\"blend\"]、referenceEn [\"Blend all the ingredients well, then put them in the oven.\",\"Blend all the ingredients together, and then put everything in the oven.\"]、rubricZh [\"用 blend 表示「混合」（例如 blend all the ingredients；寫 mix 也正確）\",\"「再放進烤箱」可寫，例如 then put them in the oven 等\"]（原 makeSentence：instructionZh「用 blend 造一個句子，說說你會把哪些食物打在一起。」、referenceEn [\"I often blend bananas with yogurt for breakfast.\",\"I blend apples with milk for my little sister.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

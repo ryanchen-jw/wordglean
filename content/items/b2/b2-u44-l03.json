@@ -51,8 +51,8 @@
       "id": "b2-u44-l03-q04",
       "type": "wordCard",
       "word": "compassionate",
-      "exampleEn": "A compassionate neighbor brought us food when we moved in.",
-      "exampleZh": "我們剛搬來時，一位好心的鄰居送食物給我們。",
+      "exampleEn": "A compassionate neighbor brought us food when my father lost his job.",
+      "exampleZh": "我爸爸失業時，一位好心的鄰居送食物給我們。",
       "glossZh": "有同情心的；體恤人的",
       "distractorsZh": [
         "冷漠的",
@@ -127,8 +127,8 @@
       "options": [
         "She spends every morning in bed",
         "She buys new flowers every morning",
-        "Takes care of her plants",
-        "Goes for a long walk"
+        "She takes care of her plants",
+        "She goes for a long walk"
       ],
       "answer": 2
     },
@@ -308,6 +308,18 @@
         "message": "執行長裁示：第③關：SUS old actor 易讀成「年紀大的」，意思偏移並碰到年齡標籤（§11.19）",
         "resolution": "改為 promptZh「這位老演員深受全國觀眾的喜愛。」、referenceEn [\"Audiences all over the country adore this veteran actor.\",\"This veteran actor is adored by audiences across the country.\"]、rubricZh [\"adore 表示「非常喜愛」，主動或被動都可以（例如 audiences adore him、is adored by 等）\",\"「全國觀眾」可寫，例如 audiences all over the country、people across the country 等\",\"「老演員」可寫，例如 veteran actor 等\"]（原 promptZh「這位老演員深受全國觀眾的喜愛。」、referenceEn [\"Audiences all over the country adore this old actor.\",\"This old actor is adored by audiences across the country.\"]、rubricZh [\"adore 表示「非常喜愛」，主動或被動都可以（例如 audiences adore him、is adored by 等）\",\"「全國觀眾」可寫，例如 audiences all over the country、people across the country 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

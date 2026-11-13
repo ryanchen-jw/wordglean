@@ -67,7 +67,7 @@
       "type": "wordCard",
       "word": "reminder",
       "exampleEn": "My phone gave me a reminder about my sister's birthday.",
-      "exampleZh": "我的手機提醒我姊姊的生日到了。",
+      "exampleZh": "我的手機提醒我姊妹的生日到了。",
       "glossZh": "提醒（的通知）",
       "distractorsZh": [
         "收據",
@@ -353,6 +353,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（brochure）原位換成翻譯題，沿用題 id b2-u28-l01-q18；目標字沿用 brochure",
         "resolution": "改為 translate：promptZh「這本小冊子列出了這座城市所有的博物館。」、hintWords [\"brochure\"]、referenceEn [\"This brochure lists all the museums in the city.\",\"All the museums in the city are listed in this brochure.\"]、rubricZh [\"「小冊子」可寫，例如 brochure 等\",\"「列出」可寫，例如 lists、are listed in、gives a list of 等\",\"時態可用現在式或過去式（例如 lists、listed 等）\"]（原 makeSentence：instructionZh「用 brochure 造一個句子，說說你曾在哪裡拿到或看過一本介紹用的小冊子。」、referenceEn [\"I picked up a brochure about city tours at the train station.\",\"I read a hotel brochure before I booked my room.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

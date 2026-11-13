@@ -41,7 +41,7 @@
       "type": "wordCard",
       "word": "soccer",
       "exampleEn": "My brother watches soccer on TV.",
-      "exampleZh": "我哥哥看電視上的足球比賽。",
+      "exampleZh": "我的兄弟看電視上的足球比賽。",
       "glossZh": "足球",
       "distractorsZh": [
         "籃球",
@@ -396,6 +396,12 @@
         "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 hobby，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
         "resolution": "改為 [\"basketball\"]（原 [\"hobby\",\"basketball\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

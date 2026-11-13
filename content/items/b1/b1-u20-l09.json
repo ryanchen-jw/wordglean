@@ -16,7 +16,7 @@
       "id": "b1-u20-l09-q01",
       "type": "wordCard",
       "word": "exhausted",
-      "exampleEn": "Exhausted students fell asleep on the bus.",
+      "exampleEn": "The exhausted students fell asleep on the bus.",
       "exampleZh": "累壞的學生們在公車上睡著了。",
       "glossZh": "精疲力竭的",
       "distractorsZh": [
@@ -107,7 +107,7 @@
       "id": "b1-u20-l09-q08",
       "type": "wordCard",
       "word": "doc",
-      "exampleEn": "Thanks, doc, I feel much better now.",
+      "exampleEn": "Thanks, doc. I feel much better now.",
       "exampleZh": "謝謝你，醫生，我現在覺得好多了。",
       "glossZh": "醫生（口語）",
       "distractorsZh": [
@@ -129,10 +129,10 @@
       "audioZh": "請拿繃帶和一些水來，Tom 在廚房割傷了手。",
       "questionZh": "Tom 怎麼了？",
       "options": [
-        "He cut his foot.",
-        "He hurt his ankle.",
-        "His hand has a cut.",
-        "He burned his hand."
+        "He cut his foot",
+        "He hurt his ankle",
+        "His hand has a cut",
+        "He burned his hand"
       ],
       "answer": 2
     },
@@ -376,6 +376,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（allergic）原位換成翻譯題，沿用題 id b1-u20-l09-q17；目標字沿用 allergic",
         "resolution": "改為 translate：promptZh「我的貓對某些魚過敏。」、hintWords [\"allergic\"]、referenceEn [\"My cat is allergic to some kinds of fish.\",\"My cat is allergic to certain fish.\"]、rubricZh [\"用 be allergic to 表示「對…過敏」\"]（原 makeSentence：instructionZh「用 allergic 造一個句子，說說你或家人對什麼過敏。」、referenceEn [\"I am allergic to cats, so I can't keep one.\",\"My sister is allergic to some flowers.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

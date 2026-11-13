@@ -167,7 +167,7 @@
       "id": "b2-u43-l07-q14",
       "type": "mcq",
       "stemEn": "My brother tried to ____ my point, but he had no facts.",
-      "stemZh": "我哥哥想反駁我的論點，但他拿不出任何事實。",
+      "stemZh": "我的兄弟想反駁我的論點，但他拿不出任何事實。",
       "options": [
         "misunderstand",
         "generalize",
@@ -325,6 +325,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（exaggeration）原位換成翻譯題，沿用題 id b2-u43-l07-q17；目標字沿用 exaggeration",
         "resolution": "改為 translate：promptZh「他的故事裡有很多誇張的地方。」、hintWords [\"exaggeration\"]、referenceEn [\"There is a lot of exaggeration in his story.\",\"His story is full of exaggeration.\"]、rubricZh [\"exaggeration 當名詞（例如 a lot of exaggeration、full of exaggeration 等）\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 exaggeration 造一個句子，說說你聽過或說過的一個誇張說法。」、referenceEn [\"My brother said he ate a whole cake, which was an exaggeration.\",\"Calling my room a mess is a bit of an exaggeration.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

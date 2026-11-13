@@ -134,7 +134,7 @@
     {
       "id": "b2-u23-l01-q11",
       "type": "listenChoice",
-      "audioEn": "Please don't throw paint cans in the bin; they are hazardous and need special collection.",
+      "audioEn": "Please don't throw paint cans in the trash; they are hazardous and need special collection.",
       "audioZh": "請不要把油漆罐丟進垃圾桶，那是有害物品，需要特別回收。",
       "questionZh": "油漆罐為什麼不能丟進垃圾桶？",
       "options": [
@@ -198,8 +198,8 @@
     {
       "id": "b2-u23-l01-q16",
       "type": "reading",
-      "passageEn": "Our school recently studied a wetland near the city. It is ecologically rich, and it is an important stop during the spring migration of many birds. However, the wetland faces several problems. Traffic exhaust and fumes from a nearby factory affect the air, and some hazardous waste has been found near the water. Our teacher explained that if the water is contaminated, fish die and birds lose their food, which can lead to starvation. The good news is that volunteers now clean the surroundings every month, and the city plans to use more clean energy in the area.",
-      "passageZh": "我們學校最近研究了城市附近的一片濕地。那裡生態豐富，是許多鳥類春季遷徙時的重要中繼站。不過，這片濕地面臨幾個問題。交通廢氣和附近工廠排放的氣體影響了空氣，水邊也發現了一些有害廢棄物。老師說明，如果水受到汙染，魚會死掉，鳥類就會失去食物，可能因此挨餓。好消息是，現在志工每個月都會清理周遭環境，市政府也計畫在這一帶使用更多乾淨能源。",
+      "passageEn": "Our school recently studied a wetland near the city. It is ecologically rich, and it is an important stop during the spring migration of many birds. However, the wetland faces several problems. Traffic exhaust and fumes from a nearby factory pollute the air, and some hazardous waste has been found near the water. Our teacher explained that if the water is contaminated, fish die and birds lose their food, which can lead to starvation. The good news is that volunteers now clean up the wetland and its surroundings every month, and the city plans to use more clean energy in the area.",
+      "passageZh": "我們學校最近研究了城市附近的一片濕地。那裡生態豐富，是許多鳥類春季遷徙時的重要中繼站。不過，這片濕地面臨幾個問題。交通廢氣和附近工廠排放的氣體汙染了空氣，水邊也發現了一些有害廢棄物。老師說明，如果水受到汙染，魚會死掉，鳥類就會失去食物，可能因此挨餓。好消息是，現在志工每個月都會清理濕地及周遭環境，市政府也計畫在這一帶使用更多乾淨能源。",
       "questions": [
         {
           "questionZh": "這片濕地對鳥類有什麼重要性？",
@@ -356,6 +356,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（energy）原位換成翻譯題，沿用題 id b2-u23-l01-q18；目標字沿用 energy",
         "resolution": "改為 translate：promptZh「這棟新大樓用的能源只有舊大樓的一半。」、hintWords [\"energy\"]、referenceEn [\"This new building uses half as much energy as the old one.\",\"The new building uses only half the energy of the old building.\"]、rubricZh [\"energy 指能源，不可數（例如 half as much energy、half the energy 等）\",\"「只有…的一半」可寫，例如 half as much… as、half the… of、50% less… than 等\"]（原 makeSentence：instructionZh「用 energy 造一個句子，說說什麼事讓你充滿精力，或你家怎麼節約能源。」、referenceEn [\"A morning walk gives me energy for the whole day.\",\"My family saves energy by turning off lights we are not using.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -122,7 +122,7 @@
       "id": "b2-u44-l07-q10",
       "type": "listenChoice",
       "audioEn": "My clumsy brother dropped the cake on the way to the party.",
-      "audioZh": "我那笨手笨腳的哥哥在去派對的路上把蛋糕摔了。",
+      "audioZh": "我那笨手笨腳的兄弟在去派對的路上把蛋糕摔了。",
       "questionZh": "去派對的路上發生了什麼事？",
       "options": [
         "The cake was eaten",
@@ -319,6 +319,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（clumsy）原位換成翻譯題，沿用題 id b2-u44-l07-q17；目標字沿用 clumsy",
         "resolution": "改為 translate：promptZh「我剛開始學打字的時候，手指很不靈活。」、hintWords [\"clumsy\"]、referenceEn [\"When I first learned to type, my fingers were clumsy.\",\"My fingers felt clumsy when I first started learning to type.\"]、rubricZh [\"clumsy 表示「笨拙的、不靈活的」（例如 were clumsy、felt clumsy 等）\",\"「剛開始學打字」可寫，例如 when I first learned to type、when I started learning to type 等\"]（原 makeSentence：instructionZh「用 clumsy 造一個句子，說說一次你笨手笨腳的經驗。」、referenceEn [\"I was clumsy with the scissors and cut the birthday card in the wrong place.\",\"I felt clumsy in my first dance class and kept stepping on my partner's feet.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

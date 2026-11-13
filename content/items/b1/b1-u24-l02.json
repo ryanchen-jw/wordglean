@@ -99,10 +99,10 @@
       "audioZh": "中場休息時可以在大廳買點心，但不能帶進去。",
       "questionZh": "中場休息時可以做什麼？",
       "options": [
-        "Take photos of the actors onstage.",
-        "Get food in the hall.",
-        "Eat snacks inside the theater.",
-        "Meet the actors in the hall."
+        "Take photos of the actors onstage",
+        "Get food in the hall",
+        "Eat snacks inside the theater",
+        "Meet the actors in the hall"
       ],
       "answer": 1
     },
@@ -383,6 +383,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nightlife）原位換成翻譯題，沿用題 id b1-u24-l02-q15；目標字沿用 nightlife",
         "resolution": "改為 translate：promptZh「這一區的夜生活到凌晨三點才結束。」、hintWords [\"nightlife\"]、referenceEn [\"The nightlife in this area doesn't end until three in the morning.\",\"In this area, the nightlife goes on until three in the morning.\"]、rubricZh [\"用 nightlife 表示「夜生活」\",\"「到凌晨三點才結束」可寫，例如 doesn't end until three in the morning、goes on until 3 a.m. 等\"]（原 makeSentence：instructionZh「用 nightlife 造一個句子，說說你住的地方的夜生活。」、referenceEn [\"My town has almost no nightlife.\",\"My city has a lot of nightlife near the river.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

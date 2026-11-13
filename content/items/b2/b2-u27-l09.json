@@ -175,8 +175,8 @@
     {
       "id": "b2-u27-l09-q14",
       "type": "reading",
-      "passageEn": "Two hundred years ago, our valley was a quiet preindustrial place where most people grew rice and raised pigs. The land belonged to a nobleman, who was known as a godly man and gave food to the poor every winter. Then the country began to industrialize, and large factories appeared along the river. Workers had to start at an ungodly hour and stand at noisy machines for twelve hours a day, and the factories contaminated the river. Some writers at that time said the factories dehumanized people. Today, the old factory is a museum. In its basement, visitors can even see stone tools left by prehumans, which were found when the factory was built.",
-      "passageZh": "兩百年前，我們的山谷是一個寧靜、尚未工業化的地方，大多數人種稻、養豬。這片土地屬於一位貴族，他以虔誠聞名，每年冬天都會送食物給窮人。後來國家開始工業化，河邊出現了大型工廠。工人必須在早得離譜的時間上工，一天站在吵鬧的機器旁十二個小時，工廠也汙染了河水。當時有些作家說，工廠讓人失去了人性。如今，那座老工廠成了博物館。在它的地下室，參觀者甚至可以看到早期人類祖先留下的石器，那是蓋工廠時發現的。",
+      "passageEn": "Two hundred years ago, our valley was a quiet preindustrial place where most people grew rice and raised pigs. The land belonged to a nobleman, who was known as a godly man and gave food to the poor every winter. Then the country began to industrialize, and large factories appeared along the river. Workers had to start at an ungodly hour and stand at noisy machines for twelve hours a day, and the factories contaminated the river. Some writers at that time said the factories dehumanized people. Today, one of the old factories is a museum. In its basement, visitors can even see stone tools left by prehumans, which were found when the factory was built.",
+      "passageZh": "兩百年前，我們的山谷是一個寧靜、尚未工業化的地方，大多數人種稻、養豬。這片土地屬於一位貴族，他以虔誠聞名，每年冬天都會送食物給窮人。後來國家開始工業化，河邊出現了大型工廠。工人必須在早得離譜的時間上工，一天站在吵鬧的機器旁十二個小時，工廠也汙染了河水。當時有些作家說，工廠讓人失去了人性。如今，其中一座老工廠成了博物館。在它的地下室，參觀者甚至可以看到早期人類祖先留下的石器，那是蓋工廠時發現的。",
       "questions": [
         {
           "questionZh": "那位貴族每年冬天會做什麼？",
@@ -417,6 +417,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ungodly）原位換成翻譯題，沿用題 id b2-u27-l09-q16；目標字沿用 ungodly",
         "resolution": "改為 translate：promptZh「我的鄰居昨晚三更半夜還在彈鋼琴。」、hintWords [\"ungodly\"]、referenceEn [\"My neighbor was playing the piano at an ungodly hour last night.\",\"Last night, my neighbor played the piano until an ungodly hour.\"]、rubricZh [\"ungodly 常和 hour 連用，表示時間太早或太晚（例如 at an ungodly hour、until an ungodly hour 等）\",\"昨晚的事用過去式或過去進行式（例如 played、was playing 等）\"]（原 makeSentence：instructionZh「用 ungodly 造一個句子，說說你曾經在很不合理的時間做過的一件事。」、referenceEn [\"I once finished an essay at an ungodly hour, just before sunrise.\",\"I woke up at an ungodly hour to watch the World Cup final.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

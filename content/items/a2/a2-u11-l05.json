@@ -17,7 +17,7 @@
       "word": "cheque",
       "exampleEn": "My grandfather still writes cheques.",
       "exampleZh": "我爺爺到現在還在開支票。",
-      "glossZh": "支票",
+      "glossZh": "支票；（英式）",
       "distractorsZh": [
         "現金",
         "信用卡",
@@ -54,8 +54,8 @@
       "id": "a2-u11-l05-q04",
       "type": "wordCard",
       "word": "grocery store",
-      "exampleEn": "There is a grocery store under our apartment.",
-      "exampleZh": "我們公寓樓下有一家雜貨店。",
+      "exampleEn": "There is a grocery store in our apartment building.",
+      "exampleZh": "我們住的公寓大樓裡有一家雜貨店。",
       "glossZh": "雜貨店；食品店",
       "distractorsZh": [
         "書店",
@@ -95,7 +95,7 @@
       "word": "shop assistant",
       "exampleEn": "She works as a shop assistant on weekends.",
       "exampleZh": "她週末當店員。",
-      "glossZh": "店員",
+      "glossZh": "店員；（英式）",
       "distractorsZh": [
         "經理",
         "顧客",
@@ -372,6 +372,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（grocery store）原位換成翻譯題，沿用題 id a2-u11-l05-q16；目標字沿用 grocery store",
         "resolution": "改為 translate：promptZh「這家雜貨店賣很多種水果。」、hintWords [\"grocery store\"]、referenceEn [\"This grocery store sells many kinds of fruit.\",\"This grocery store sells lots of different fruits.\"]、rubricZh [\"用 grocery store 表示「雜貨店」，主詞是單數，動詞加 s（例如 sells）\",\"「很多種水果」可寫，例如 many kinds of fruit、lots of different fruits 等\"]（原 makeSentence：instructionZh「用 grocery store 造一個句子，說說你常去的雜貨店，或你在那裡買什麼。」、referenceEn [\"I buy fruit at the grocery store near my home.\",\"The grocery store on my street is open until midnight.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

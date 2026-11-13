@@ -174,7 +174,7 @@
     {
       "id": "a1-u18-l04-q14",
       "type": "reading",
-      "passageEn": "Amy is excited. Tomorrow she will go to Japan for the first time. Her mother says, \"Good luck! You are lucky to have this trip.\" Amy is glad, but she is also a little sad. Her cat can't come with her.",
+      "passageEn": "Amy is excited. Tomorrow she will go to Japan for the first time. Her mother says, \"Good luck! You are lucky to go on this trip.\" Amy is glad, but she is also a little sad. Her cat can't come with her.",
       "passageZh": "Amy 很興奮，她明天要第一次去日本。她媽媽說：「祝你一路順利！你能去這趟旅行真幸運。」Amy 很高興，但也有一點難過，因為她的貓不能跟她一起去。",
       "questions": [
         {
@@ -342,6 +342,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sad）原位換成翻譯題，沿用題 id a1-u18-l04-q16；目標字沿用 sad",
         "resolution": "改為 translate：promptZh「這是一個很悲傷的故事。」、hintWords [\"sad\"]、referenceEn [\"This is a very sad story.\",\"This story is very sad.\"]、rubricZh [\"sad 放在名詞前面或 be 動詞後面（例如 a sad story、is sad）\",\"可寫，例如 This is a very sad story、This story is very sad 等\"]（原 makeSentence：instructionZh「用 sad 造一個句子，說說什麼事讓你難過。」、referenceEn [\"I am sad when it rains on the weekend.\",\"I was sad when my dog was sick.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

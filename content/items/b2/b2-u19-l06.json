@@ -12,8 +12,8 @@
       "id": "b2-u19-l06-q01",
       "type": "wordCard",
       "word": "biotechnology",
-      "exampleEn": "My sister hopes to study biotechnology at university.",
-      "exampleZh": "我姊姊希望在大學念生物科技。",
+      "exampleEn": "My sister hopes to study biotechnology in college.",
+      "exampleZh": "我的姊妹希望在大學念生物科技。",
       "glossZh": "生物科技",
       "distractorsZh": [
         "資訊科技",
@@ -25,8 +25,8 @@
       "id": "b2-u19-l06-q02",
       "type": "wordCard",
       "word": "sulfur",
-      "exampleEn": "Hot springs often smell of sulfur, like old eggs.",
-      "exampleZh": "溫泉常有硫磺味，聞起來像放久的蛋。",
+      "exampleEn": "Hot springs often smell of sulfur, like rotten eggs.",
+      "exampleZh": "溫泉常有硫磺味，聞起來像臭雞蛋。",
       "glossZh": "硫；硫磺",
       "distractorsZh": [
         "鹽",
@@ -356,6 +356,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（elective）原位換成翻譯題，沿用題 id b2-u19-l06-q17；目標字沿用 elective",
         "resolution": "改為 translate：promptZh「我弟弟這學期修了一門攝影選修課。」、hintWords [\"elective\"]、referenceEn [\"My younger brother is taking a photography elective this term.\",\"This term, my little brother is taking an elective in photography.\"]、rubricZh [\"elective 指選修課（例如 a photography elective、an elective in photography 等）\",\"時態可用現在進行式、過去式或現在完成式（例如 is taking、took、has chosen 等）\",\"「弟弟」可寫，例如 younger brother、little brother、brother 等\"]（原 makeSentence：instructionZh「用 elective 造一個句子，說說你上過或想上的一門選修課。」、referenceEn [\"I took a cooking elective in high school and loved it.\",\"If I could choose an elective, I would pick film studies.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

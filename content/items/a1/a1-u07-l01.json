@@ -56,7 +56,7 @@
       "id": "a1-u07-l01-q04",
       "type": "wordCard",
       "word": "business",
-      "exampleEn": "My uncle sells shoes. His business is very good.",
+      "exampleEn": "My uncle sells shoes. His business is doing very well.",
       "exampleZh": "我叔叔賣鞋子，他的生意很好。",
       "glossZh": "生意；公司",
       "distractorsZh": [
@@ -95,7 +95,7 @@
       "id": "a1-u07-l01-q07",
       "type": "wordCard",
       "word": "role",
-      "exampleEn": "She has an important role in the team.",
+      "exampleEn": "She has an important role on the team.",
       "exampleZh": "她在團隊裡扮演重要的角色。",
       "glossZh": "角色；職責",
       "distractorsZh": [
@@ -406,6 +406,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stay）原位換成翻譯題，沿用題 id a1-u07-l01-q17；目標字沿用 stay",
         "resolution": "改為 translate：promptZh「今晚我們住在一家小旅館。」、hintWords [\"stay\"]、referenceEn [\"We are staying at a small hotel tonight.\",\"We will stay at a small hotel tonight.\"]、rubricZh [\"stay 後面接地點（例如 stay at a small hotel、stay in a small hotel）\",\"今晚的事可寫，例如 are staying、will stay 等\"]（原 makeSentence：instructionZh「用 stay 造一個句子，說說你週末會待在哪裡。」、referenceEn [\"I stay at home on the weekend.\",\"This weekend, I will stay with my grandparents.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

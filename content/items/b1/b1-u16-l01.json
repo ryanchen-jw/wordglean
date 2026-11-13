@@ -16,7 +16,7 @@
       "word": "parcel",
       "exampleEn": "The parcel arrived two days late.",
       "exampleZh": "包裹晚了兩天才到。",
-      "glossZh": "包裹；郵包",
+      "glossZh": "包裹；郵包；（英式）",
       "distractorsZh": [
         "信件",
         "帳單",
@@ -114,10 +114,10 @@
       "audioZh": "你的包裹明天九點到中午之間送達，所以辦公室要有人在。",
       "questionZh": "包裹什麼時候送達？",
       "options": [
-        "Next week.",
-        "Tomorrow afternoon.",
-        "Tomorrow morning.",
-        "This afternoon."
+        "Next week",
+        "Tomorrow afternoon",
+        "Tomorrow morning",
+        "This afternoon"
       ],
       "answer": 2
     },
@@ -309,6 +309,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（parcel）原位換成翻譯題，沿用題 id b1-u16-l01-q16；目標字沿用 parcel",
         "resolution": "改為 translate：promptZh「這個包裹太重了，我一個人搬不動。」、hintWords [\"parcel\"]、referenceEn [\"This parcel is too heavy for me to carry alone.\",\"The parcel is so heavy that I can't carry it by myself.\"]、rubricZh [\"用 parcel 表示「包裹」\",\"「搬不動」可寫，例如 too heavy for me to carry、so heavy that I can't carry it 等\"]（原 makeSentence：instructionZh「用 parcel 造一個句子，說說你寄或收包裹的經驗。」、referenceEn [\"I sent a parcel to my cousin in another city last week.\",\"I got a parcel from my aunt yesterday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

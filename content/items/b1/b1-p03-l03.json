@@ -54,7 +54,7 @@
       "type": "wordCard",
       "word": "sleep in",
       "exampleEn": "My brother often sleeps in and misses breakfast.",
-      "exampleZh": "我哥哥常常睡懶覺，錯過早餐。",
+      "exampleZh": "我的兄弟常常睡懶覺，錯過早餐。",
       "glossZh": "睡懶覺",
       "distractorsZh": [
         "熬夜",
@@ -173,7 +173,7 @@
     {
       "id": "b1-p03-l03-q14",
       "type": "reading",
-      "passageEn": "Every year our town holds a food festival, and the tickets always sell out fast. This year my friend Ken and I set out at six in the morning to wait in line. Ken usually sleeps in on weekends, so he was very tired. Many other people showed up early too. Inside, Ken tried to show off by carrying three plates at once. One plate fell, and he had to sort out the mess. We ended up laughing about it all day.",
+      "passageEn": "Every year our town holds a food festival, and the tickets always sell out fast. This year my friend Ken and I set out at six in the morning to wait in line. Ken usually sleeps in on weekends, so he was very tired. Many other people showed up early too. Inside, Ken tried to show off by carrying three plates at once. One plate fell, and he had to clean up the mess. We ended up laughing about it all day.",
       "passageZh": "我們鎮上每年都會舉辦美食節，票總是很快就賣完。今年我和朋友 Ken 早上六點就出發去排隊。Ken 週末通常會睡懶覺，所以他很累。很多人也很早就到了。進場後，Ken 想炫耀一次端三個盤子。結果有一個盤子掉了，他只好收拾殘局。我們最後為這件事笑了一整天。",
       "questions": [
         {
@@ -381,6 +381,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 5 題位（b1-p03-l03-q09、b1-p03-l03-q12、b1-p03-l03-q13、b1-p03-l03-q14#0、b1-p03-l03-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

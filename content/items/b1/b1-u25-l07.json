@@ -125,10 +125,10 @@
       "audioZh": "新生請注意：歡迎演講九點在大禮堂開始，午餐在中午。",
       "questionZh": "歡迎演講在哪裡、幾點開始？",
       "options": [
-        "In the main hall at noon.",
-        "In the library at nine.",
-        "In the gym at ten.",
-        "In the main hall at nine."
+        "In the main hall at noon",
+        "In the library at nine",
+        "In the gym at ten",
+        "In the main hall at nine"
       ],
       "answer": 3
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u25-l07-q15",
       "type": "reading",
-      "passageEn": "My older sister is a freshman at a science university. She says the lectures are much longer than in high school. Her favorite class is chemistry, and she spends three hours a week in the laboratory. Last week, she made a simple compound from two materials and wrote down its formula. In another class, she learned how scientists measure radiation from the sun. Her first examination is next month, so she studies every night. She wants to become a teacher one day.",
+      "passageEn": "My older sister is a freshman at a science university. She says the lectures are much longer than the classes in high school. Her favorite class is chemistry, and she spends three hours a week in the laboratory. Last week, she made a simple compound from two materials and wrote down its formula. In another class, she learned how scientists measure radiation from the sun. Her first examination is next month, so she studies every night. She wants to become a teacher one day.",
       "passageZh": "我姊姊是一所理工大學的新生。她說大學的課比高中長很多。她最喜歡的課是化學，每週要在實驗室待三個小時。上星期，她用兩種材料做出一種簡單的化合物，並寫下它的化學式。在另一門課，她學到科學家怎麼測量來自太陽的輻射。她的第一次考試在下個月，所以她每天晚上都在讀書。她希望有一天能當老師。",
       "questions": [
         {
@@ -373,6 +373,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（educate）原位換成翻譯題，沿用題 id b1-u25-l07-q17；目標字沿用 educate",
         "resolution": "改為 translate：promptZh「這個展覽的目的是教育大眾了解海洋。」、hintWords [\"educate\"]、referenceEn [\"The aim of this show is to educate people about the ocean.\",\"This show aims to educate the public about the sea.\"]、rubricZh [\"用 educate 表示「教育」（例如 educate people about…）\",\"「目的是」可寫，例如 aims to、the aim of … is to 等\"]（原 makeSentence：instructionZh「用 educate 造一個句子，說說你認為應該怎麼教育孩子。」、referenceEn [\"I think we should educate children to be kind.\",\"I believe parents should educate their kids about safety.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

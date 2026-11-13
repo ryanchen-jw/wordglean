@@ -125,10 +125,10 @@
       "audioZh": "住在室內的貓通常活得比較久。",
       "questionZh": "住在室內的貓通常怎麼樣？",
       "options": [
-        "They usually go outdoors.",
-        "They have longer lives.",
-        "They live shorter lives.",
-        "They eat more food."
+        "They usually go outdoors",
+        "They have longer lives",
+        "They live shorter lives",
+        "They eat more food"
       ],
       "answer": 1
     },
@@ -385,6 +385,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（gardening）原位換成翻譯題，沿用題 id b1-u11-l07-q17；目標字沿用 gardening",
         "resolution": "改為 translate：promptZh「我媽媽每個週末都花兩個小時做園藝。」、hintWords [\"gardening\"]、referenceEn [\"My mother spends two hours gardening every weekend.\",\"Every weekend, my mom spends two hours on gardening.\"]、rubricZh [\"用 gardening 表示「園藝」（例如 spends two hours gardening、on gardening 等）\"]（原 makeSentence：instructionZh「用 gardening 造一個句子，說說你或家人對園藝的看法或習慣。」、referenceEn [\"My grandfather enjoys gardening in the morning.\",\"I think gardening is relaxing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

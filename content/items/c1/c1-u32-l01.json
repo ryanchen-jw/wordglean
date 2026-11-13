@@ -51,7 +51,7 @@
       "id": "c1-u32-l01-q04",
       "type": "wordCard",
       "word": "plumbing",
-      "exampleEn": "The plumbing in our flat makes strange noises at night.",
+      "exampleEn": "The plumbing in our apartment makes strange noises at night.",
       "exampleZh": "我們公寓的水管晚上會發出奇怪的聲響。",
       "glossZh": "水管系統；管線工程",
       "distractorsZh": [
@@ -64,7 +64,7 @@
       "id": "c1-u32-l01-q05",
       "type": "wordCard",
       "word": "demolition",
-      "exampleEn": "Many people were sad about the demolition of the cinema.",
+      "exampleEn": "Many people were sad about the demolition of the movie theater.",
       "exampleZh": "很多人為電影院被拆除感到難過。",
       "glossZh": "拆除；拆毀",
       "distractorsZh": [
@@ -154,7 +154,7 @@
         "In the dining room inside",
         "Out on the verandah",
         "In the kitchen",
-        "At a nearby café"
+        "At a nearby cafe"
       ],
       "answer": 1
     },
@@ -192,7 +192,7 @@
     {
       "id": "c1-u32-l01-q16",
       "type": "mcq",
-      "stemEn": "The owners plan to ____ the old cinema and open it again next year.",
+      "stemEn": "The owners plan to ____ the old movie theater and open it again next year.",
       "stemZh": "屋主打算翻新那家老電影院，明年重新開幕。",
       "options": [
         "profess",
@@ -321,6 +321,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（refurbish）原位換成翻譯題，沿用題 id c1-u32-l01-q19；目標字沿用 refurbish",
         "resolution": "改為 translate：promptZh「這家店把舊手機翻新後再便宜賣出。」、hintWords [\"refurbish\"]、referenceEn [\"This shop refurbishes old phones and sells them at low prices.\",\"The shop refurbishes used phones and then sells them for less.\"]、rubricZh [\"「翻新」用 refurbish（例如 refurbishes old phones 等）\",\"「便宜賣出」可寫，例如 sells them at low prices、sells them for less 等\"]（原 makeSentence：instructionZh「用 refurbish 造一個句子，說說你希望整修家裡或學校的哪個地方。」、referenceEn [\"I would like to refurbish my bedroom with brighter colors.\",\"I think our school should refurbish the old gym.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

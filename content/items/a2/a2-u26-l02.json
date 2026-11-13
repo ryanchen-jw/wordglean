@@ -148,7 +148,7 @@
     {
       "id": "a2-u26-l02-q13",
       "type": "mcq",
-      "stemEn": "My father always wears his ____ to the office.",
+      "stemEn": "My father always wears a ____ to the office.",
       "stemZh": "我爸爸上班總是打著他的領帶。",
       "options": [
         "function",
@@ -186,7 +186,7 @@
     {
       "id": "a2-u26-l02-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, my little sister's cat disappeared. We started a search right away. Our cat often goes out to explore, so we walked down every street near our home, and Dad reminded us to look under the cars. In the evening, we found the lost cat in my music room. It was sleeping in the box of my old instrument, a guitar! Dad laughed and said, \"Next time, let's look at home first.\"",
+      "passageEn": "Last Saturday, my little sister's cat disappeared. We started a search right away. Our cat often goes out to explore, so we walked down every street near our home, and Dad reminded us to look under the cars. In the evening, we found the lost cat in my music room. It was sleeping in the case of my old instrument, a guitar! Dad laughed and said, \"Next time, let's look at home first.\"",
       "passageZh": "上週六，我妹妹的貓不見了。我們馬上開始找。我們的貓常常跑出去到處探索，所以我們走遍家附近的每一條街，爸爸還提醒我們看看車子底下。到了傍晚，我們在我的音樂房裡找到那隻走失的貓。牠正睡在我舊樂器——一把吉他——的盒子裡！爸爸笑著說：「下次我們先在家裡找吧。」",
       "questions": [
         {
@@ -343,6 +343,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u26-l06-q15（playing with a float）共用 play（selfcheck-translate 字面 50%）；改本題（instrument 另有閱讀短文情境，a2-u26-l06-q15 是 float 唯一情境題，保留）",
         "resolution": "改為 promptZh「你最喜歡哪一種樂器？」、referenceEn [\"Which instrument do you like best?\",\"Which instrument do you like the most?\"]、rubricZh [\"用 instrument 表示「樂器」\",\"「最喜歡」可寫，例如 like best、like the most 等；寫 What is your favorite instrument? 也正確\",\"句尾用問號\"]（原 promptZh「你會演奏什麼樂器嗎？」、referenceEn [\"Can you play any instruments?\",\"Do you play an instrument?\"]、rubricZh [\"「樂器」用 instrument\",\"「演奏」可寫例如 play\"]）；題 id、hintWords 不變",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

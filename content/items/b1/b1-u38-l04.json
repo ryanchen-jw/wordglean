@@ -125,10 +125,10 @@
       "audioZh": "我們村裡的學校需要一位會教音樂的新老師。",
       "questionZh": "村裡的學校需要什麼樣的人？",
       "options": [
-        "A driver for the school bus.",
-        "A teacher who speaks three languages.",
-        "A teacher for the music classes.",
-        "A cook for school lunches."
+        "A driver for the school bus",
+        "A teacher who speaks three languages",
+        "A teacher for the music classes",
+        "A cook for school lunches"
       ],
       "answer": 2
     },
@@ -390,6 +390,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（proverb）原位換成翻譯題，沿用題 id b1-u38-l04-q17；目標字沿用 proverb",
         "resolution": "改為 translate：promptZh「這句諺語的意思是時間很寶貴。」、hintWords [\"proverb\"]、referenceEn [\"This proverb means that time is precious.\",\"The meaning of this proverb is that time is precious.\"]、rubricZh [\"用 proverb 表示「諺語」\"]（原 makeSentence：instructionZh「用 proverb 造一個句子，說說一句你喜歡的諺語。」、referenceEn [\"My favorite proverb is \\\"Practice makes perfect.\\\"\",\"I like the proverb \\\"Time is money.\\\"\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

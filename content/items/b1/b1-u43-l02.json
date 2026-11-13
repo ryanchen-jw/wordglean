@@ -103,8 +103,8 @@
       "id": "b1-u43-l02-q08",
       "type": "wordCard",
       "word": "cherish",
-      "exampleEn": "We should cherish clean water.",
-      "exampleZh": "我們應該珍惜乾淨的水。",
+      "exampleEn": "We should cherish our friends.",
+      "exampleZh": "我們應該珍惜朋友。",
       "glossZh": "珍惜；珍愛",
       "distractorsZh": [
         "浪費",
@@ -122,13 +122,13 @@
       "id": "b1-u43-l02-q10",
       "type": "listenChoice",
       "audioEn": "I was really annoyed. My brother used my computer without asking.",
-      "audioZh": "我真的很惱火，我弟弟沒問就用了我的電腦。",
+      "audioZh": "我真的很惱火，我的兄弟沒問就用了我的電腦。",
       "questionZh": "說話者為什麼很惱火？",
       "options": [
-        "The brother ate all the cake in the fridge.",
-        "The computer was used without permission.",
-        "The brother asked to use the computer.",
-        "The homework was lost."
+        "The brother ate all the cake in the fridge",
+        "The computer was used without permission",
+        "The brother asked to use the computer",
+        "The homework was lost"
       ],
       "answer": 1
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u43-l02-q15",
       "type": "reading",
-      "passageEn": "Last year, my school's basketball team lost every game, and many people said we were hopeless. Our coach never got annoyed. He always spoke to us politely and told us to be courageous. Before the final game, he said, \"Don't be afraid to disappoint anyone. Just enjoy the game.\" During the game, a little boy in the crowd watched us curiously. We played boldly and won by one point! After the game, the boy said he wanted to play basketball, too. I'm thankful for that season, and I will always cherish those memories.",
+      "passageEn": "Last year, my school's basketball team lost every game, and many people said we were hopeless. Our coach never got annoyed. He always spoke to us politely and told us to be courageous. Before the final game, he said, \"Don't worry about disappointing anyone. Just enjoy the game.\" During the game, a little boy in the crowd watched us curiously. We played boldly and won by one point! After the game, the boy said he wanted to play basketball, too. I'm thankful for that season, and I will always cherish those memories.",
       "passageZh": "去年，我們學校的籃球隊每場比賽都輸，很多人說我們毫無希望。我們的教練從不惱怒。他總是很有禮貌地跟我們說話，要我們勇敢。最後一場比賽前，他說：「別怕讓任何人失望，好好享受比賽就好。」比賽時，觀眾席上一個小男孩好奇地看著我們。我們大膽地打，以一分之差贏了！比賽結束後，那個男孩說他也想打籃球。我很感謝那個球季，也會永遠珍惜那些回憶。",
       "questions": [
         {
@@ -342,6 +342,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cherish）原位換成翻譯題，沿用題 id b1-u43-l02-q17；目標字沿用 cherish",
         "resolution": "改為 translate：promptZh「我珍惜每一次和家人吃晚餐的機會。」、hintWords [\"cherish\"]、referenceEn [\"I cherish every chance to have dinner with my family.\",\"I cherish every dinner I have with my family.\"]、rubricZh [\"用 cherish 表示「珍惜」\"]（原 makeSentence：instructionZh「用 cherish 造一個句子，說說你最珍惜的東西或回憶。」、referenceEn [\"I cherish the photos of my family trips.\",\"I will always cherish my time with my grandpa.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

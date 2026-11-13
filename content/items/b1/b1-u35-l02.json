@@ -125,10 +125,10 @@
       "audioZh": "博物館通常開到六點，但今天因為特別活動四點就關門。",
       "questionZh": "博物館今天幾點關門？",
       "options": [
-        "It is closed all day.",
-        "At six, as usual.",
-        "At five thirty.",
-        "Earlier, at four."
+        "It is closed all day",
+        "At six, as usual",
+        "At five thirty",
+        "Earlier, at four"
       ],
       "answer": 3
     },
@@ -330,6 +330,12 @@
         "message": "執行長裁示：第③關：SUS 前半句與 u04-l06 單字卡 generally「I generally get up at seven.」只換副詞",
         "resolution": "改為 promptZh「我平常走路上班，但今天搭了計程車。」、referenceEn [\"I normally walk to work, but today I took a taxi.\",\"Normally I walk to work, but I took a taxi today.\"]、rubricZh [\"用 normally 表示「平常」（位置不限，例如 I normally…、Normally I… 等）\"]（原 promptZh「我平常七點起床，但今天起晚了。」、referenceEn [\"I normally get up at seven, but today I got up late.\",\"Normally I get up at seven, but I woke up late today.\"]、rubricZh [\"用 normally 表示「平常」（位置不限，例如 I normally…、Normally I… 等）\",\"「起晚了」可寫，例如 got up late、woke up late、overslept 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -25,7 +25,7 @@
       "id": "b1-u30-l04-q02",
       "type": "wordCard",
       "word": "engineering",
-      "exampleEn": "He studied engineering at university.",
+      "exampleEn": "He studied engineering in college.",
       "exampleZh": "他在大學念工程。",
       "glossZh": "工程；工程學",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "我們的簡報會晚點開始，因為場地還沒準備好。",
       "questionZh": "為什麼簡報會晚開始？",
       "options": [
-        "The speaker's train is running late.",
-        "The room isn't set up yet.",
-        "The guests are not ready.",
-        "The room is too small."
+        "The speaker's train is running late",
+        "The room isn't set up yet",
+        "The guests are not ready",
+        "The room is too small"
       ],
       "answer": 1
     },
@@ -147,7 +147,7 @@
     {
       "id": "b1-u30-l04-q13",
       "type": "mcq",
-      "stemEn": "Which ____ is the football game on tonight?",
+      "stemEn": "Which ____ is the soccer game on tonight?",
       "stemZh": "今晚的足球賽在哪個頻道播？",
       "options": [
         "gesture",
@@ -186,7 +186,7 @@
       "id": "b1-u30-l04-q15",
       "type": "reading",
       "passageEn": "Last week, my sister gave a presentation about engineering at her school. She talked about how electronic toys are made, and she showed a graph of how many toys break every year. She put special emphasis on safety. She used many hand gestures, and her voice was loud and clear. Her teacher said it was good enough for a TV channel for students. After class, she bought the new edition of her favorite science magazine.",
-      "passageZh": "上週，我姊姊在學校做了一場關於工程的簡報。她講電子玩具是怎麼做出來的，還用一張圖表說明每年有多少玩具壞掉。她特別強調安全。她用了很多手勢，聲音又大又清楚。老師說她的簡報好到可以在給學生看的頻道上播出。下課後，她買了最喜歡的科學雜誌新的一期。",
+      "passageZh": "上週，我的姊妹在學校做了一場關於工程的簡報。她講電子玩具是怎麼做出來的，還用一張圖表說明每年有多少玩具壞掉。她特別強調安全。她用了很多手勢，聲音又大又清楚。老師說她的簡報好到可以在給學生看的頻道上播出。下課後，她買了最喜歡的科學雜誌新的一期。",
       "questions": [
         {
           "questionZh": "她特別強調什麼？",
@@ -307,6 +307,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（edition）原位換成翻譯題，沿用題 id b1-u30-l04-q17；目標字沿用 edition",
         "resolution": "改為 translate：promptZh「這本字典的新版本加了很多新字。」、hintWords [\"edition\"]、referenceEn [\"The new edition of this dictionary has many new words.\",\"This dictionary's new edition includes a lot of new words.\"]、rubricZh [\"用 edition 表示「版本」（例如 the new edition of…）\",\"「加了」可寫，例如 has、includes、added 等\"]（原 makeSentence：instructionZh「用 edition 造一個句子，說說你有或想買的某本書或雜誌的版本。」、referenceEn [\"I have the first edition of my favorite comic book.\",\"I want to buy the new edition of this dictionary.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

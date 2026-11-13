@@ -125,17 +125,17 @@
       "audioZh": "暴風雪停了，孩子們跑到外面玩雪。",
       "questionZh": "暴風雪停了以後，孩子們做什麼？",
       "options": [
-        "Stayed inside during the storm.",
-        "Watched TV at home.",
-        "Ran to the shop.",
-        "Went out to have fun."
+        "Stayed inside during the storm",
+        "Watched TV at home",
+        "Ran to the shop",
+        "Went out to have fun"
       ],
       "answer": 3
     },
     {
       "id": "b1-u39-l06-q11",
       "type": "shadowing",
-      "sentenceEn": "A small café sits on the mountaintop.",
+      "sentenceEn": "A small cafe sits on the mountaintop.",
       "sentenceZh": "山頂上有一家小咖啡館。"
     },
     {
@@ -185,7 +185,7 @@
     {
       "id": "b1-u39-l06-q15",
       "type": "reading",
-      "passageEn": "Last winter, my class took a trip to the mountains. The weather forecast said it would be sunny, so we set off early. When we reached the mountaintop, the view was amazing. But suddenly, the sky turned dark, and a snowstorm came. We heard a thunderous sound far away. We waited in a small cabin and shivered all night. The next morning, there was frost on every window. On the way home, we stopped at a town by the sea. The air smelled of seawater and seaweed. There was also a small animal park, where we fed a giraffe. It was a trip we will never forget.",
+      "passageEn": "Last winter, my class took a trip to the mountains. The weather forecast said it would be sunny, so we set off early. When we reached the mountaintop, the view was amazing. But suddenly, the sky turned dark, and a snowstorm came. We heard a thunderous sound far away. We waited in a small cabin and shivered all night. The next morning, there was frost on every window. On the way home, we stopped at a town by the sea. The air smelled of seawater and seaweed. There was also a small zoo, where we fed a giraffe. It was a trip we will never forget.",
       "passageZh": "去年冬天，我們班去山上旅行。天氣預報說會是晴天，所以我們一早就出發了。我們到達山頂時，景色美極了。但天空突然變暗，暴風雪來了。我們聽到遠處傳來雷鳴般的聲音。我們在一間小木屋裡等待，冷得整夜發抖。第二天早上，每扇窗戶上都結了霜。回家途中，我們在一個海邊小鎮停留。空氣中有海水和海藻的味道。那裡還有一座小型動物園，我們餵了一隻長頸鹿。那是一趟我們永遠不會忘記的旅行。",
       "questions": [
         {
@@ -427,6 +427,24 @@
         "message": "執行長裁示：第③關：SUS 與 u02-l06 mcq 題幹「According to the ____, it will be cold this weekend.」句型、時間都一樣",
         "resolution": "改為 promptZh「我每天早上出門前都會看天氣預報。」、referenceEn [\"I check the weather forecast every morning before I go out.\",\"Every morning, I check the weather forecast before I leave home.\"]、rubricZh [\"用 weather forecast 表示「天氣預報」\",\"「看」可寫，例如 check、look at 等\"]（原 promptZh「根據天氣預報，這個週末會有暴風雨。」、referenceEn [\"According to the weather forecast, there will be a storm this weekend.\",\"The weather forecast says a storm is coming this weekend.\"]、rubricZh [\"用 weather forecast 表示「天氣預報」\",\"「根據」可寫，例如 according to、the weather forecast says 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

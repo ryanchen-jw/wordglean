@@ -18,7 +18,7 @@
       "id": "b2-u24-l03-q01",
       "type": "wordCard",
       "word": "federal",
-      "exampleEn": "Federal workers will get a small pay rise next year.",
+      "exampleEn": "Federal workers will get a small raise next year.",
       "exampleZh": "聯邦政府的員工明年會小幅加薪。",
       "glossZh": "聯邦的",
       "distractorsZh": [
@@ -57,8 +57,8 @@
       "id": "b2-u24-l03-q04",
       "type": "wordCard",
       "word": "candidate",
-      "exampleEn": "The judges chose three candidates for the final round of the cooking contest.",
-      "exampleZh": "評審選出三位候選人進入烹飪比賽的決賽。",
+      "exampleEn": "The company invited three candidates back for a second interview.",
+      "exampleZh": "公司請三位應徵者回來參加第二次面試。",
       "glossZh": "候選人；應徵者",
       "distractorsZh": [
         "顧客",
@@ -109,7 +109,7 @@
       "id": "b2-u24-l03-q08",
       "type": "wordCard",
       "word": "united",
-      "exampleEn": "Football fans from both cities sang together, united by their love of the game.",
+      "exampleEn": "Soccer fans from both cities sang together, united by their love of the game.",
       "exampleZh": "兩座城市的足球迷一起唱歌，因為對這項運動的熱愛而團結在一起。",
       "glossZh": "團結的；聯合的；一致的",
       "distractorsZh": [
@@ -386,6 +386,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（campaign）原位換成翻譯題，沿用題 id b2-u24-l03-q17；目標字沿用 campaign",
         "resolution": "改為 translate：promptZh「這個宣傳活動是為了鼓勵大家少用塑膠。」、hintWords [\"campaign\"]、referenceEn [\"The aim of this campaign is to get people to use less plastic.\",\"This campaign encourages people to use less plastic.\"]、rubricZh [\"campaign 指宣傳活動（例如 this campaign 等）\",\"「鼓勵大家」可寫，例如 encourage people to…、get people to… 等\",\"「少用」可寫，例如 use less、cut down on 等\"]（原 makeSentence：instructionZh「用 campaign 造一個句子，說說你參加過或看過的一項宣傳活動（例如環保、閱讀）。」、referenceEn [\"I joined a campaign to clean up the beach near my town.\",\"Our company ran a campaign to get workers to take the stairs.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

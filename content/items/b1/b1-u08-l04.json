@@ -121,7 +121,7 @@
     {
       "id": "b1-u08-l04-q09",
       "type": "listenType",
-      "sentenceEn": "Every newcomer gets a buddy to help in the first month.",
+      "sentenceEn": "Every newcomer gets a buddy to help them in the first month.",
       "sentenceZh": "每位新人都會有一位夥伴在第一個月幫忙。"
     },
     {
@@ -131,10 +131,10 @@
       "audioZh": "這個村子大部分的居民是六十歲以上的農夫。",
       "questionZh": "這個村子的居民大多是什麼人？",
       "options": [
-        "Young farmers.",
-        "Older people who farm.",
-        "Shop owners over sixty.",
-        "Tourists in summer."
+        "Young farmers",
+        "Older people who farm",
+        "Shop owners over sixty",
+        "Tourists in summer"
       ],
       "answer": 1
     },
@@ -191,7 +191,7 @@
     {
       "id": "b1-u08-l04-q15",
       "type": "reading",
-      "passageEn": "When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she knew only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \"Sunny,\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Her mother no longer has parental worries, because she can see Amy is happy.",
+      "passageEn": "When Amy moved to a small island last year, she was a newcomer among its two thousand inhabitants. Initially, she had only a few acquaintances from her job. Then she joined the island's volleyball team. Her teammates gave her a nickname, \"Sunny,\" because she always smiled. One of them, Kate, soon became her best buddy. Now Amy calls the island her beloved second home. Her mother no longer has parental worries, because she can see Amy is happy.",
       "passageZh": "去年 Amy 搬到一座小島時，她是島上兩千名居民中的新來者。一開始，她只認識幾個工作上的人。後來她加入島上的排球隊。隊友們給她取了個綽號叫「Sunny」，因為她總是笑咪咪的。其中一位隊友 Kate 很快成了她最好的朋友。現在 Amy 把這座島稱為她心愛的第二個家。她媽媽也不再有為人父母的擔心，因為看得出 Amy 很快樂。",
       "questions": [
         {
@@ -416,6 +416,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nickname）原位換成翻譯題，沿用題 id b1-u08-l04-q17；目標字沿用 nickname",
         "resolution": "改為 translate：promptZh「我們班上每個人都有綽號。」、hintWords [\"nickname\"]、referenceEn [\"Everyone in our class has a nickname.\",\"Each person in our class has a nickname.\"]、rubricZh [\"用 nickname 表示「綽號」（例如 has a nickname）\",\"「每個人」可寫，例如 everyone、each person、everybody 等\"]（原 makeSentence：instructionZh「用 nickname 造一個句子，說說你或你朋友的綽號。」、referenceEn [\"My nickname at school was \\\"Little Fish.\\\"\",\"My friends gave me the nickname \\\"Smile.\\\"\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

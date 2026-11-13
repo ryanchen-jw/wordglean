@@ -189,8 +189,8 @@
     {
       "id": "a2-u03-l03-q15",
       "type": "reading",
-      "passageEn": "Helen wants to sell her old camera online. First, she takes a photo of it. The image is very clear, and she writes the details. The camera is made of a strong material, and it is likely to work for many more years. Soon, a man sends her a private message: \"Are you certain it works well?\" \"Yes,\" she writes. \"It has no problems at all.\"",
-      "passageZh": "Helen 想在網路上賣掉她的舊相機。她先幫它拍照，照片很清楚，再寫下詳細資料。這台相機是用堅固的材料做的，很可能還可以用很多年。很快地，有一位男士傳私人訊息給她：「妳確定它很好用嗎？」她回覆：「是的，它完全沒有問題。」",
+      "passageEn": "Helen wants to sell her old camera online. First, she takes a photo of it. The image is very clear, and she writes a short description. The camera is made of a strong material, and it is likely to work for many more years. Soon, a man sends her a private message: \"Are you certain it works well?\" \"Yes,\" she writes. \"It has no problems at all.\"",
+      "passageZh": "Helen 想在網路上賣掉她的舊相機。她先幫它拍照，照片很清楚，再寫一段簡短的說明。這台相機是用堅固的材料做的，很可能還可以用很多年。很快地，有一位男士傳私人訊息給她：「妳確定它很好用嗎？」她回覆：「是的，它完全沒有問題。」",
       "questions": [
         {
           "questionZh": "Helen 想做什麼？",
@@ -329,6 +329,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（common）原位換成翻譯題，沿用題 id a2-u03-l03-q17；目標字沿用 common",
         "resolution": "改為 translate：promptZh「這種鳥在山上很常見。」、hintWords [\"common\"]、referenceEn [\"This kind of bird is common in the mountains.\",\"This bird is very common in the mountains.\"]、rubricZh [\"用 common 表示「常見的」（例如 is common、is very common 等）\",\"「這種鳥」可寫，例如 this kind of bird、this bird 等\",\"「在山上」可寫，例如 in the mountains 等\"]（原 makeSentence：instructionZh「用 common 造一個句子，說說在台灣很常見的一樣東西。」、referenceEn [\"Convenience stores are very common in Taiwan.\",\"Night markets are very common in Taiwan.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -140,10 +140,10 @@
       "audioZh": "因為 2 號教室的地板在修，我們的瑜伽課下週改到 5 號教室。",
       "questionZh": "下週的瑜伽課在哪裡上？",
       "options": [
-        "In the park outside.",
-        "In Room 2.",
-        "In Room 5.",
-        "In the gym downstairs."
+        "In the park outside",
+        "In Room 2",
+        "In Room 5",
+        "In the gym downstairs"
       ],
       "answer": 2
     },
@@ -407,6 +407,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（yoga）原位換成翻譯題，沿用題 id b1-u20-l01-q18；目標字沿用 yoga",
         "resolution": "改為 translate：promptZh「我媽媽每週六早上去上瑜伽課。」、hintWords [\"yoga\"]、referenceEn [\"My mother goes to a yoga class every Saturday morning.\",\"Every Saturday morning, my mom takes a yoga class.\"]、rubricZh [\"用 yoga 表示「瑜伽」（例如 a yoga class）\",\"「去上課」可寫，例如 goes to a class、takes a class 等\"]（原 makeSentence：instructionZh「用 yoga 造一個句子，說說你做瑜伽的習慣或看法。」、referenceEn [\"I do yoga for twenty minutes before bed.\",\"I think yoga is a good way to relax.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

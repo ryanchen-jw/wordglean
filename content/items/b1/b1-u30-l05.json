@@ -125,10 +125,10 @@
       "audioZh": "請今晚更新你的手機，因為舊軟體明天就不能用了。",
       "questionZh": "為什麼今晚要更新手機？",
       "options": [
-        "The old system won't work after today.",
-        "The phone will stop working tonight.",
-        "The battery is low.",
-        "The new software is free tonight."
+        "The old system won't work after today",
+        "The phone will stop working tonight",
+        "The battery is low",
+        "The new software is free tonight"
       ],
       "answer": 0
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u30-l05-q15",
       "type": "reading",
-      "passageEn": "Our class visited a local radio station. In the news room, a woman was writing the headlines for the evening broadcast. She told us that she updates the news every hour. Then the manager made an announcement: the station will start a virtual tour on its website. In an old store room, we saw piles of disks with recordings from fifty years ago. A worker was making a scan of an old poster that proclaimed the opening of the station.",
+      "passageEn": "Our class visited a local radio station. In the newsroom, a woman was writing the headlines for the evening broadcast. She told us that she updates the news every hour. Then the manager made an announcement: the station will start a virtual tour on its website. In an old store room, we saw piles of disks with recordings from fifty years ago. A worker was making a scan of an old poster that proclaimed the opening of the station.",
       "passageZh": "我們班參觀了一家地方廣播電台。在新聞室裡，一位女士正在為晚間廣播撰寫新聞標題。她告訴我們，她每個小時更新一次新聞。接著經理宣布了一件事：電台將在網站上推出虛擬導覽。在一間舊倉庫裡，我們看到一疊疊磁碟，裡面是五十年前的錄音。一位員工正在掃描一張舊海報，那張海報宣告了電台開播。",
       "questions": [
         {
@@ -337,6 +337,18 @@
         "message": "執行長裁示：第③關：SUS 變體 2 has become a virtual meeting 不自然",
         "resolution": "改為 referenceEn [\"Because of the storm, today's meeting will be virtual.\",\"Because of the storm, today's meeting will be a virtual meeting.\"]、rubricZh [\"用 virtual 表示「線上的；虛擬的」（例如 a virtual meeting；寫 online 也正確）\",\"「改成線上進行」可寫，例如 will be virtual、will be a virtual meeting 等\"]（原 referenceEn [\"Because of the storm, today's meeting will be virtual.\",\"Today's meeting has become a virtual meeting because of the storm.\"]、rubricZh [\"用 virtual 表示「線上的；虛擬的」（例如 a virtual meeting；寫 online 也正確）\",\"「改成」可寫，例如 will be、has become 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

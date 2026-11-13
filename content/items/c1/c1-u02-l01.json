@@ -67,8 +67,8 @@
       "id": "c1-u02-l01-q05",
       "type": "wordCard",
       "word": "continuity",
-      "exampleEn": "The film has a continuity problem: his shirt changes color between scenes.",
-      "exampleZh": "這部電影有前後不連貫的問題：他的襯衫在兩個場景之間變了顏色。",
+      "exampleEn": "The film has a continuity problem: the actor's shirt changes color between scenes.",
+      "exampleZh": "這部電影有前後不連貫的問題：那位演員的襯衫在兩個場景之間變了顏色。",
       "glossZh": "連續性；連貫",
       "distractorsZh": [
         "多樣性",
@@ -115,10 +115,10 @@
       "audioZh": "屋頂整修期間，博物館將暫停開放。",
       "questionZh": "博物館為什麼要暫停開放？",
       "options": [
-        "It is moving to a new place.",
-        "It has too few visitors.",
-        "The staff are on holiday.",
-        "The roof is being repaired."
+        "It is moving to a new place",
+        "It has too few visitors",
+        "The staff are on vacation",
+        "The roof is being repaired"
       ],
       "answer": 3
     },
@@ -321,6 +321,18 @@
         "message": "執行長裁示：第③關：c1-u02-l01-q16 SUS 要點寫死介系詞 for，未收 throughout the duration of",
         "resolution": "改為 rubricZh [\"「整趟⋯中」用 duration（例如 for the duration of、throughout the duration of 等）\",\"「在睡覺」可寫，例如 slept、was asleep、was sleeping 等\"]（原 rubricZh [\"「整趟⋯中」用 for the duration of（例如 for the duration of the flight 等）\",\"「在睡覺」可寫，例如 slept、was asleep、was sleeping 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

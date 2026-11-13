@@ -40,7 +40,7 @@
       "id": "c1-u10-l07-q03",
       "type": "wordCard",
       "word": "prolific",
-      "exampleEn": "This apple tree is prolific; it gives hundreds of apples a year.",
+      "exampleEn": "This apple tree is prolific; it produces hundreds of apples a year.",
       "exampleZh": "這棵蘋果樹很會結果，一年能結好幾百顆蘋果。",
       "glossZh": "多產的；豐富的",
       "distractorsZh": [
@@ -127,18 +127,18 @@
       "audioZh": "她是一位多產的作家，已經出版了四十本小說。",
       "questionZh": "關於這位作家，下列何者正確？",
       "options": [
-        "She writes only one book a decade.",
-        "She has written many books.",
-        "She is famous for her short poems.",
-        "She writes for children."
+        "She writes only one book a decade",
+        "She has written many books",
+        "She is famous for her short poems",
+        "She writes for children"
       ],
       "answer": 1
     },
     {
       "id": "c1-u10-l07-q11",
       "type": "shadowing",
-      "sentenceEn": "My brother is a football fanatic who never misses a match.",
-      "sentenceZh": "我哥是個足球迷，從不錯過任何一場比賽。"
+      "sentenceEn": "My brother is a soccer fanatic who never misses a match.",
+      "sentenceZh": "我的兄弟是個足球迷，從不錯過任何一場比賽。"
     },
     {
       "id": "c1-u10-l07-q12",
@@ -310,6 +310,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fanatic）原位換成翻譯題，沿用題 id c1-u10-l07-q17；目標字沿用 fanatic",
         "resolution": "改為 translate：promptZh「她是個打掃狂，家裡每樣東西都擺得整整齊齊。」、hintWords [\"fanatic\"]、referenceEn [\"She is a cleaning fanatic, so everything in her home is perfectly neat.\",\"She is a fanatic about cleaning; everything in her house is in perfect order.\"]、rubricZh [\"「⋯狂」用 fanatic（例如 a cleaning fanatic、a fanatic about cleaning 等）\",\"「擺得整整齊齊」可寫，例如 perfectly neat、in perfect order、in its place 等\"]（原 makeSentence：instructionZh「用 fanatic 造一個句子，說說你或你認識的人對什麼事很狂熱。」、referenceEn [\"I am a coffee fanatic and try a new cafe every week.\",\"My father is a golf fanatic who plays every Sunday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

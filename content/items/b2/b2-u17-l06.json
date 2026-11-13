@@ -145,13 +145,13 @@
       "id": "b2-u17-l06-q12",
       "type": "shadowing",
       "sentenceEn": "In the school band, my brother plays the cornet.",
-      "sentenceZh": "在學校樂隊裡，我弟弟吹短號。"
+      "sentenceZh": "在學校樂隊裡，我的兄弟吹短號。"
     },
     {
       "id": "b2-u17-l06-q13",
       "type": "mcq",
       "stemEn": "In the novel, a small ____ about the detective's sister slowly becomes important.",
-      "stemZh": "小說裡，一段關於偵探妹妹的次要情節漸漸變得重要。",
+      "stemZh": "小說裡，一段關於偵探的姊妹的次要情節漸漸變得重要。",
       "options": [
         "subplot",
         "cornet",
@@ -317,6 +317,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bookmark）原位換成翻譯題，沿用題 id b2-u17-l06-q17；目標字沿用 bookmark",
         "resolution": "改為 translate：promptZh「我把這個食譜網站加入書籤，方便以後再找。」、hintWords [\"bookmark\"]、referenceEn [\"I bookmarked this recipe website so I can find it again later.\",\"I've bookmarked this recipe website so that I can find it easily later.\"]、rubricZh [\"bookmark 當動詞，表示「加入書籤」（例如 bookmarked this website 等）\",\"時態可用過去式或現在完成式（例如 bookmarked、have bookmarked 等）\",\"「方便以後再找」可寫，例如 so I can find it again later 等\"]（原 makeSentence：instructionZh「用 bookmark 造一個句子，說說你用書籤或瀏覽器書籤的習慣。」、referenceEn [\"I usually use an old train ticket as a bookmark.\",\"I bookmark my favorite news websites on my laptop.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

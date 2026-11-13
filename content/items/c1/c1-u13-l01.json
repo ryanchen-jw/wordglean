@@ -99,10 +99,10 @@
       "audioZh": "我兒子是個非常愛讀書的人，每兩天就讀完一本書。",
       "questionZh": "說話者的兒子有什麼特點？",
       "options": [
-        "He eats a lot.",
-        "He reads books very quickly.",
-        "He writes long stories every week.",
-        "He hates reading."
+        "He eats a lot",
+        "He reads a lot of books",
+        "He writes long stories every week",
+        "He hates reading"
       ],
       "answer": 1
     },
@@ -121,8 +121,8 @@
     {
       "id": "c1-u13-l01-q11",
       "type": "mcq",
-      "stemEn": "Each cookie gives you about ninety ____ of energy.",
-      "stemZh": "每片餅乾大約提供九十卡路里的熱量。",
+      "stemEn": "Each small cookie contains about ninety ____.",
+      "stemZh": "每片小餅乾大約含有九十卡路里。",
       "options": [
         "degrees",
         "liters",
@@ -159,8 +159,8 @@
     {
       "id": "c1-u13-l01-q13",
       "type": "reading",
-      "passageEn": "Every Sunday, my father makes pancakes for the whole family. He mixes the batter the night before, so it is ready when we wake up. My little brother has a voracious appetite and can eat six pancakes in a row. My mother prefers half a grapefruit and some yogurt. Last week, my older sister read the side of the chocolate sauce bottle and was surprised by the number of calories, so she read it out loud to all of us. My father also cooks sausages slowly until they are succulently tender. We all sit together and munch happily for an hour. For us, Sunday breakfast is pure bliss.",
-      "passageZh": "每個星期天，我爸爸都會為全家做鬆餅。他前一天晚上就先調好麵糊，這樣我們起床時就準備好了。我弟弟食量驚人，一口氣可以吃六片鬆餅。我媽媽比較喜歡吃半顆葡萄柚配優格。上週，我姊姊看了巧克力醬瓶身上的資訊，被它的熱量嚇了一跳，就大聲讀給我們全家聽。爸爸也會把香腸慢慢煎到鮮嫩多汁。我們全家坐在一起，開心地吃上一個小時。對我們來說，星期天的早餐就是最大的幸福。",
+      "passageEn": "Every Sunday, my father makes pancakes for the whole family. He mixes the batter the night before, so it is ready when we wake up. My little brother has a voracious appetite and can eat six pancakes in a row. My mother prefers half a grapefruit and some yogurt. Last week, my older sister read the label on the chocolate sauce bottle and was surprised by the number of calories, so she read it out loud to all of us. My father also cooks sausages slowly until they are succulently tender. We all sit together and munch happily for an hour. For us, Sunday breakfast is pure bliss.",
+      "passageZh": "每個星期天，我爸爸都會為全家做鬆餅。他前一天晚上就先調好麵糊，這樣我們起床時就準備好了。我弟弟食量驚人，一口氣可以吃六片鬆餅。我媽媽比較喜歡吃半顆葡萄柚配優格。上週，我姊姊看了巧克力醬瓶上的標示，被它的熱量嚇了一跳，就大聲讀給我們全家聽。爸爸也會把香腸慢慢煎到鮮嫩多汁。我們全家坐在一起，開心地吃上一個小時。對我們來說，星期天的早餐就是最大的幸福。",
       "questions": [
         {
           "questionZh": "爸爸為什麼前一晚就先調好麵糊？",
@@ -295,6 +295,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（munch）原位換成翻譯題，沿用題 id c1-u13-l01-q15；目標字沿用 munch",
         "resolution": "改為 translate：promptZh「看電影時，坐我旁邊的人一直大聲嚼爆米花。」、hintWords [\"munch\"]、referenceEn [\"During the film, the person next to me kept munching popcorn loudly.\",\"The person sitting beside me munched popcorn noisily all through the movie.\"]、rubricZh [\"「嚼」用 munch（例如 kept munching popcorn、munched on popcorn 等）\",\"「大聲」可寫，例如 loudly、noisily 等\",\"時態配合內容（例如 kept munching、munched 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 munch 造一個句子，說說你做某件事時喜歡邊吃什麼。」、referenceEn [\"I like to munch popcorn while I watch movies.\",\"I often munch on apples when I work late.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemEn（套用後檢查器修正）、stemZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

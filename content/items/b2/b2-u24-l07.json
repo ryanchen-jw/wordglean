@@ -90,7 +90,7 @@
       "id": "b2-u24-l07-q07",
       "type": "wordCard",
       "word": "ban",
-      "exampleEn": "The football club banned fans who threw bottles onto the field.",
+      "exampleEn": "The soccer club banned fans who threw bottles onto the field.",
       "exampleZh": "那家足球俱樂部禁止向場內丟瓶子的球迷進場。",
       "glossZh": "禁止；禁令",
       "distractorsZh": [
@@ -166,7 +166,7 @@
     {
       "id": "b2-u24-l07-q14",
       "type": "mcq",
-      "stemEn": "Is a long queue a ____ excuse for being late to an interview?",
+      "stemEn": "Is a long line a ____ excuse for being late to an interview?",
       "stemZh": "排隊排很久，算是面試遲到的正當理由嗎？",
       "options": [
         "banned",
@@ -218,8 +218,8 @@
         "ban"
       ],
       "referenceEn": [
-        "This café bans smoking anywhere inside.",
-        "Smoking is banned inside this café."
+        "This cafe bans smoking anywhere inside.",
+        "Smoking is banned inside this cafe."
       ],
       "rubricZh": [
         "ban 可當動詞或名詞（例如 bans smoking、is banned、a ban on smoking 等）",
@@ -373,6 +373,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（legitimate）原位換成翻譯題，沿用題 id b2-u24-l07-q17；目標字沿用 legitimate",
         "resolution": "改為 translate：promptZh「他的抱怨很合理，經理應該聽一聽。」、hintWords [\"legitimate\"]、referenceEn [\"His complaint is legitimate, so the manager should listen to it.\",\"He has a legitimate complaint, and the manager should listen to him.\"]、rubricZh [\"legitimate 表示「正當的、合理的」，可放名詞前或 be 動詞後（例如 a legitimate complaint 等）\",\"「應該」可寫，例如 should、ought to 等\"]（原 makeSentence：instructionZh「用 legitimate 造一個句子，說說你覺得什麼是請假或改期的正當理由。」、referenceEn [\"I think a family emergency is a legitimate reason to miss a class.\",\"Bad weather is a legitimate reason to change our travel plans.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

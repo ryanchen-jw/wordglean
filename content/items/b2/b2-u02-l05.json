@@ -40,8 +40,8 @@
       "id": "b2-u02-l05-q03",
       "type": "wordCard",
       "word": "everlasting",
-      "exampleEn": "The two old friends made an everlasting promise to stay in touch.",
-      "exampleZh": "兩位老朋友許下永遠保持聯絡的承諾。",
+      "exampleEn": "The old couple believed in everlasting love.",
+      "exampleZh": "那對老夫妻相信永恆的愛。",
       "glossZh": "永恆的；永久的",
       "distractorsZh": [
         "短暫的",
@@ -104,8 +104,8 @@
     {
       "id": "b2-u02-l05-q08",
       "type": "listenType",
-      "sentenceEn": "Punctuality is the first thing our new manager checks.",
-      "sentenceZh": "守時是我們新經理最先檢查的事。"
+      "sentenceEn": "Punctuality is the first thing our new manager cares about.",
+      "sentenceZh": "守時是我們新經理最在意的事。"
     },
     {
       "id": "b2-u02-l05-q09",
@@ -351,6 +351,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（eternally）原位換成翻譯題，沿用題 id b2-u02-l05-q16；目標字沿用 eternally",
         "resolution": "改為 translate：promptZh「我奶奶永遠都那麼樂觀。」、hintWords [\"eternally\"]、referenceEn [\"My grandmother is eternally optimistic about life.\",\"My grandma is eternally cheerful and positive.\"]、rubricZh [\"eternally 放在形容詞前，表示「永遠地」（例如 eternally optimistic 等）\",\"「奶奶」可寫，例如 grandmother、grandma 等\",\"「樂觀」可寫，例如 optimistic、positive、cheerful 等；寫不寫 about life 都可以\"]（原 makeSentence：instructionZh「用 eternally 造一個句子，說說你會永遠感激或記得的人或事。」、referenceEn [\"I will be eternally grateful to my first boss.\",\"I am eternally thankful to my parents for their support.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

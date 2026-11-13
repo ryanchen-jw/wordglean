@@ -28,7 +28,7 @@
       "type": "wordCard",
       "word": "vegetarian",
       "exampleEn": "My sister is vegetarian, so she never eats meat.",
-      "exampleZh": "我姊姊吃素，所以她從不吃肉。",
+      "exampleZh": "我的姊妹吃素，所以她從不吃肉。",
       "glossZh": "素食的；素食者",
       "distractorsZh": [
         "挑食的",
@@ -127,10 +127,10 @@
       "audioZh": "抱歉這裡很亂。我們這週在油漆辦公室，所以請使用會議室。",
       "questionZh": "辦公室這週為什麼很亂？",
       "options": [
-        "They are painting the meeting room.",
-        "It's getting new paint.",
-        "They had a party this week.",
-        "They are cleaning the floor."
+        "They are painting the meeting room",
+        "It's getting new paint",
+        "They had a party this week",
+        "They are cleaning the floor"
       ],
       "answer": 1
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u13-l02-q15",
       "type": "reading",
-      "passageEn": "Last summer, a cinema hired Leo for a part-time job. Every evening, he made popcorn and sold drinks in small cartons. Some customers asked for vegetarian snacks, so the manager added cheese rolls from a local baker. Leo liked their taste, but he often ate too many. At the end of each night, he had to clean up the mess under the seats. The work was tiring, but he enjoyed it.",
+      "passageEn": "Last summer, a movie theater hired Leo for a part-time job. Every evening, he made popcorn and sold drinks in small cartons. Some customers asked for vegetarian snacks, so the manager added cheese rolls from a local baker. Leo liked their taste, but he often ate too many. At the end of each night, he had to clean up the mess under the seats. The work was tiring, but he enjoyed it.",
       "passageZh": "去年夏天，一家電影院雇用 Leo 做兼職工作。每天晚上，他做爆米花，賣小紙盒裝的飲料。有些客人想要素食點心，所以經理加賣了一位當地麵包師傅做的起司捲。Leo 喜歡起司捲的味道，但他常常吃太多。每天晚上收工時，他得清理座位底下的髒亂。這份工作很累人，但他做得很開心。",
       "questions": [
         {
@@ -412,6 +412,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（taste）原位換成翻譯題，沿用題 id b1-u13-l02-q17；目標字沿用 taste",
         "resolution": "改為 translate：promptZh「這個蛋糕吃起來像巧克力，但裡面其實沒有巧克力。」、hintWords [\"taste\"]、referenceEn [\"This cake tastes like chocolate, but there is no chocolate in it.\",\"The cake tastes like chocolate, but it actually has no chocolate in it.\"]、rubricZh [\"用 taste 表示「嚐起來」（例如 tastes like chocolate）\",\"「裡面其實沒有」可寫，例如 there is no … in it、it actually has no … 等\"]（原 makeSentence：instructionZh「用 taste 造一個句子，描述一種食物或飲料的味道。」、referenceEn [\"I love the taste of fresh strawberries.\",\"This milk tastes a bit strange today.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

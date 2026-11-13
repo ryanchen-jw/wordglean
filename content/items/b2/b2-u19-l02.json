@@ -128,7 +128,7 @@
         "Moved to Friday",
         "Moved to an online class",
         "Given by another teacher",
-        "Cancelled for good"
+        "Canceled for good"
       ],
       "answer": 0
     },
@@ -185,8 +185,8 @@
     {
       "id": "b2-u19-l02-q15",
       "type": "reading",
-      "passageEn": "Our class took a field trip to a technical college last week. A friendly lecturer showed us around the labs. In one room, students were looking at plant cells under a microscope. In another, they studied how an oil refinery turns oil from the ground into fuel. The lecturer quoted an old saying: 'Learning never exhausts the mind.' She explained that it takes years to master a skill, but every step counts. Before we left, she encouraged us to familiarize ourselves with different careers. One student said he wanted to earn a diploma in engineering, just like his grandfather, who is a legend in our family.",
-      "passageZh": "上週我們班去一所技術學院校外教學。一位親切的講師帶我們參觀實驗室。在一間教室裡，學生正用顯微鏡觀察植物細胞。另一間則在研究煉油廠如何把原油變成燃料。講師引用了一句老話：「學習永遠不會讓頭腦疲倦。」她說明，要精通一項技能得花好幾年，但每一步都算數。離開前，她鼓勵我們多去熟悉各種職業。一位同學說他想拿到工程學的文憑，就像他爺爺一樣，他爺爺是我們家族裡的傳奇人物。",
+      "passageEn": "Our class took a field trip to a technical college last week. A friendly lecturer showed us around the labs. In one room, students were looking at plant cells under a microscope. In another, they studied how an oil refinery turns oil from the ground into fuel. The lecturer quoted an old saying: 'Learning never exhausts the mind.' She explained that it takes years to master a skill, but every step counts. Before we left, she encouraged us to familiarize ourselves with different careers. One student said he wanted to earn a diploma in engineering, just like his grandfather, who is a legend in his family.",
+      "passageZh": "上週我們班去一所技術學院校外教學。一位親切的講師帶我們參觀實驗室。在一間教室裡，學生正用顯微鏡觀察植物細胞。另一間則在研究煉油廠如何把原油變成燃料。講師引用了一句老話：「學習永遠不會讓頭腦疲倦。」她說明，要精通一項技能得花好幾年，但每一步都算數。離開前，她鼓勵我們多去熟悉各種職業。一位同學說他想拿到工程學的文憑，就像他爺爺一樣，他爺爺是他們家族裡的傳奇人物。",
       "questions": [
         {
           "questionZh": "講師引用了什麼話？",
@@ -296,6 +296,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（learning）原位換成翻譯題，沿用題 id b2-u19-l02-q17；目標字沿用 learning",
         "resolution": "改為 translate：promptZh「線上學習讓很多上班族可以在家進修。」、hintWords [\"learning\"]、referenceEn [\"Online learning lets many office workers study at home.\",\"Online learning allows many working people to study from home.\"]、rubricZh [\"learning 當名詞指「學習」（例如 online learning 等）\",\"「讓…可以」可寫，例如 let… study、allow… to study 等\",\"「上班族」可寫，例如 office workers、working people 等\"]（原 makeSentence：instructionZh「用 learning 造一個句子，說說你喜歡的學習方式。」、referenceEn [\"I think learning with friends is more fun than studying alone.\",\"For me, learning by doing works better than reading.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

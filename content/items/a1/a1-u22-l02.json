@@ -121,7 +121,7 @@
     {
       "id": "a1-u22-l02-q10",
       "type": "listenChoice",
-      "audioEn": "The football match is on Saturday. It will be fun!",
+      "audioEn": "The soccer match is on Saturday. It will be fun!",
       "audioZh": "足球比賽在星期六，一定會很好玩！",
       "questionZh": "足球比賽在哪一天？",
       "options": [
@@ -286,6 +286,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（dance）原位換成翻譯題，沿用題 id a1-u22-l02-q17；目標字沿用 dance",
         "resolution": "改為 translate：promptZh「孩子們正在公園裡跳舞。」、hintWords [\"dance\"]、referenceEn [\"The children are dancing in the park.\",\"The kids are dancing in the park.\"]、rubricZh [\"「正在跳舞」用現在進行式（例如 are dancing）\",\"「孩子們」可寫，例如 children、kids 等\"]（原 makeSentence：instructionZh「用 dance 造一個句子，說說誰會跳舞或你什麼時候跳舞。」、referenceEn [\"My sister can dance very well.\",\"We dance at parties.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

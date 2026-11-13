@@ -53,7 +53,7 @@
       "id": "b2-u42-l01-q04",
       "type": "wordCard",
       "word": "fierce",
-      "exampleEn": "The two teams had a fierce fight for first place.",
+      "exampleEn": "The two teams had a fierce battle for first place.",
       "exampleZh": "兩隊為了爭奪第一名打得非常激烈。",
       "glossZh": "激烈的；兇猛的",
       "distractorsZh": [
@@ -79,8 +79,8 @@
       "id": "b2-u42-l01-q06",
       "type": "wordCard",
       "word": "rim",
-      "exampleEn": "Tall grass grows along the rim of the lake.",
-      "exampleZh": "湖的邊緣長滿了高高的草。",
+      "exampleEn": "The rim of this bowl is painted blue.",
+      "exampleZh": "這個碗的碗緣漆成藍色。",
       "glossZh": "邊緣；（眼鏡）框",
       "distractorsZh": [
         "把手",
@@ -285,6 +285,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（functional）原位換成翻譯題，沿用題 id b2-u42-l01-q17；目標字沿用 functional",
         "resolution": "改為 translate：promptZh「這張沙發床既好看又實用。」、hintWords [\"functional\"]、referenceEn [\"This sofa bed is attractive and functional.\",\"This sofa bed looks nice, and it is very functional too.\"]、rubricZh [\"functional 指「實用的」（例如 is functional、very functional 等）\",\"「好看」可寫，例如 attractive、looks nice、good-looking 等\"]（原 makeSentence：instructionZh「用 functional 造一個句子，描述一樣你覺得很實用的東西。」、referenceEn [\"My old backpack is not pretty, but it is very functional.\",\"I prefer functional furniture with lots of storage space.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

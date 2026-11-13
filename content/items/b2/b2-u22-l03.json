@@ -77,8 +77,8 @@
       "id": "b2-u22-l03-q06",
       "type": "wordCard",
       "word": "mist",
-      "exampleEn": "Mist rose from the hot spring as the cold evening came.",
-      "exampleZh": "寒冷的傍晚降臨時，溫泉冒出陣陣霧氣。",
+      "exampleEn": "Mist rose from the hot spring as the evening grew cold.",
+      "exampleZh": "傍晚天氣轉冷時，溫泉冒出陣陣霧氣。",
       "glossZh": "薄霧；霧氣",
       "distractorsZh": [
         "雨",
@@ -302,6 +302,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（coral）原位換成翻譯題，沿用題 id b2-u22-l03-q17；目標字沿用 coral",
         "resolution": "改為 translate：promptZh「海水變暖讓很多珊瑚失去了顏色。」、hintWords [\"coral\"]、referenceEn [\"Warmer sea water has caused a lot of coral to lose its color.\",\"Because the sea is getting warmer, much of the coral has lost its color.\"]、rubricZh [\"coral 通常不可數（例如 a lot of coral、much of the coral 等）；寫 many corals 也正確\",\"時態可用現在完成式或過去式（例如 has lost、lost 等）\",\"「海水變暖」可寫，例如 warmer sea water、the sea is getting warmer 等\"]（原 makeSentence：instructionZh「用 coral 造一個句子，說說你看過的珊瑚或對保護珊瑚的想法。」、referenceEn [\"I saw beautiful coral when I went diving last summer.\",\"I think we should protect coral because many fish live there.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

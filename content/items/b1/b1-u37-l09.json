@@ -127,10 +127,10 @@
       "audioZh": "我好挫折，我花了兩個小時修這台腳踏車，它還是不能用。",
       "questionZh": "說話者為什麼覺得挫折？",
       "options": [
-        "The bike is still broken.",
-        "The speaker lost the bike keys again.",
-        "The shop was closed for two hours.",
-        "It started to rain hard."
+        "The bike is still broken",
+        "The speaker lost the bike keys again",
+        "The shop was closed for two hours",
+        "It started to rain hard"
       ],
       "answer": 0
     },
@@ -220,8 +220,8 @@
         "mourn"
       ],
       "referenceEn": [
-        "The whole town mourned the loss of the old cinema.",
-        "The town mourned the closing of its old cinema."
+        "The whole town mourned the loss of the old movie theater.",
+        "The town mourned the closing of its old movie theater."
       ],
       "rubricZh": [
         "mourn 表示「哀悼、惋惜」，例如 mourn the loss of… 等說法",
@@ -393,6 +393,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（gratitude）原位換成翻譯題，沿用題 id b1-u37-l09-q17；目標字沿用 gratitude",
         "resolution": "改為 translate：promptZh「他寫了一封信表達對醫生的感激。」、hintWords [\"gratitude\"]、referenceEn [\"He wrote a letter to express his gratitude to the doctor.\",\"He wrote a letter to show his gratitude to the doctor.\"]、rubricZh [\"用 gratitude 表示「感激」（例如 his gratitude to…）\",\"「表達」可寫，例如 express、show 等\"]（原 makeSentence：instructionZh「用 gratitude 造一個句子，說說你想感謝的人。」、referenceEn [\"I want to show my gratitude to my parents.\",\"I feel great gratitude to my teacher for her help.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

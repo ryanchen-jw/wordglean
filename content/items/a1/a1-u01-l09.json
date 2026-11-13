@@ -54,7 +54,7 @@
       "type": "wordCard",
       "word": "only",
       "exampleEn": "I have only one brother.",
-      "exampleZh": "我只有一個哥哥。",
+      "exampleZh": "我只有一個兄弟。",
       "glossZh": "只有；僅僅",
       "distractorsZh": [
         "也",
@@ -124,8 +124,8 @@
       "id": "a1-u01-l09-q10",
       "type": "listenChoice",
       "audioEn": "Ken has only one sister. She is very young.",
-      "audioZh": "Ken 只有一個妹妹，她年紀很小。",
-      "questionZh": "Ken 有幾個妹妹？",
+      "audioZh": "Ken 只有一個姊妹，她年紀很小。",
+      "questionZh": "Ken 有幾個姊妹？",
       "options": [
         "One",
         "Two",
@@ -186,8 +186,8 @@
     {
       "id": "a1-u01-l09-q15",
       "type": "reading",
-      "passageEn": "Ken lives in a very small town. There are not many shops here. There is only one school and no cinema. Ken likes his town because the people are very nice. After school, he goes back home and helps his mother.",
-      "passageZh": "Ken 住在一個非常小的城鎮，這裡的商店不多，只有一間學校，也沒有電影院。Ken 喜歡他的城鎮，因為這裡的人都很好。放學後，他會回家幫媽媽的忙。",
+      "passageEn": "Ken lives in a very small town. There are not many shops in the town. There is only one school and no movie theater. Ken likes his town because the people are very nice. After school, he goes back home and helps his mother.",
+      "passageZh": "Ken 住在一個非常小的城鎮，鎮上的商店不多，只有一間學校，也沒有電影院。Ken 喜歡他的城鎮，因為這裡的人都很好。放學後，他會回家幫媽媽的忙。",
       "questions": [
         {
           "questionZh": "Ken 的城鎮有幾間學校？",
@@ -402,6 +402,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（only）原位換成翻譯題，沿用題 id a1-u01-l09-q17；目標字沿用 only",
         "resolution": "改為 translate：promptZh「她只喝水。」、hintWords [\"only\"]、referenceEn [\"She only drinks water.\",\"She drinks only water.\"]、rubricZh [\"only 可放在動詞前（例如 only drinks）或名詞前（例如 drinks only water）\",\"主詞是「她」，動詞配合主詞（例如 drinks）\"]（原 makeSentence：instructionZh「用 only 造一個句子，說說某樣東西你只有一個（或只有一點點）。」、referenceEn [\"I have only one pen.\",\"There is only one cat in my house.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

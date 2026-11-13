@@ -185,8 +185,8 @@
     {
       "id": "b2-u15-l01-q15",
       "type": "reading",
-      "passageEn": "Our cooking class this week was about a simple seaside meal. First, the teacher showed us how to clean fresh crab and cook it with garlic and a teaspoon of butter before serving it on a large tray. Then we made bread from wheat flour and chopped some herbs from the school garden to put on top. For dessert, we baked cookies with honey and nuts. The teacher explained that different foods contain different vitamins, so it's fun to cook with many colors. At the end, a student laughed because he had been chewing gum the whole class and forgot to taste anything!",
-      "passageZh": "這週的烹飪課主題是簡單的海邊料理。首先，老師示範怎麼清理新鮮螃蟹，再用大蒜和一茶匙奶油下去煮，最後盛在大托盤上。接著我們用小麥麵粉做麵包，並切了學校菜園的香草撒在上面。甜點是加了蜂蜜和堅果的餅乾。老師解釋說，不同的食物含有不同的維他命，所以用很多顏色的食材來做菜很有趣。下課時，有個學生笑了出來，因為他整堂課都在嚼口香糖，忘了嘗任何東西！",
+      "passageEn": "Our cooking class this week was about a simple seaside meal. First, the teacher showed us how to clean fresh crab and cook it with garlic and a teaspoon of butter before serving it on a large tray. Then we made bread from wheat flour and chopped some herbs from the school garden to put on top. For dessert, we baked cookies with honey and nuts. The teacher explained that different foods contain different vitamins, and that cooking with many colors makes a meal more fun. At the end of the lesson, a student laughed because he had been chewing gum the whole class and forgot to taste anything!",
+      "passageZh": "這週的烹飪課主題是簡單的海邊料理。首先，老師示範怎麼清理新鮮螃蟹，再用大蒜和一茶匙奶油下去煮，最後盛在大托盤上。接著我們用小麥麵粉做麵包，並切了學校菜園的香草撒在上面。甜點是加了蜂蜜和堅果的餅乾。老師解釋說，不同的食物含有不同的維他命，也說用很多顏色的食材來做菜會更有趣。下課時，有個學生笑了出來，因為他整堂課都在嚼口香糖，忘了嘗任何東西！",
       "questions": [
         {
           "questionZh": "麵包上面撒了什麼？",
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "Please put your gum in the trash can, not under the desk.",
-        "Please throw your gum in the bin instead of sticking it under the table."
+        "Please throw your gum in the trash instead of sticking it under the table."
       ],
       "rubricZh": [
         "gum 指口香糖，不可數（例如 your gum）",
@@ -404,6 +404,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（herb）原位換成翻譯題，沿用題 id b2-u15-l01-q17；目標字沿用 herb",
         "resolution": "改為 translate：promptZh「香草最好在菜快煮好的時候再加進去。」、hintWords [\"herb\"]、referenceEn [\"It is best to add the herbs when the dish is almost ready.\",\"Herbs should be added just before the dish is ready.\"]、rubricZh [\"herb 指「香草」，這裡用複數（例如 the herbs、herbs 等）\",\"「最好」可寫，例如 It is best to、should 等\",\"「快煮好的時候」可寫，例如 when the dish is almost ready、just before … is ready 等\"]（原 makeSentence：instructionZh「用 herb 造一個句子，說說你喜歡或用過的香草。」、referenceEn [\"I like to add fresh herbs to my eggs in the morning.\",\"Mint is my favorite herb for summer drinks.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

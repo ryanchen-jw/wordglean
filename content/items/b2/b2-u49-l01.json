@@ -137,14 +137,14 @@
     {
       "id": "b2-u49-l01-q11",
       "type": "shadowing",
-      "sentenceEn": "The boat ride through the fast river was thrilling but a little scary.",
-      "sentenceZh": "搭船穿過湍急的河流既刺激又有點可怕。"
+      "sentenceEn": "The boat ride down the fast river was thrilling but a little scary.",
+      "sentenceZh": "沿著湍急的河流順流而下的那趟船程既刺激又有點可怕。"
     },
     {
       "id": "b2-u49-l01-q12",
       "type": "shadowing",
       "sentenceEn": "My brother is adventurous and always wants to try new food.",
-      "sentenceZh": "我哥哥很愛冒險，總是想嘗試新的食物。"
+      "sentenceZh": "我的兄弟很愛冒險，總是想嘗試新的食物。"
     },
     {
       "id": "b2-u49-l01-q13",
@@ -187,8 +187,8 @@
     {
       "id": "b2-u49-l01-q15",
       "type": "reading",
-      "passageEn": "My friend Leo is the most adventurous person I know. Last year, he joined a funky dance group, even though he had never danced before. At his first show, he fell over, and a few bullies in the audience shouted taunts. It was humiliating, but he got up and finished the dance cheerfully. The audience loved it, and the thrilling second half ended with loud cheers. Now he tells the story as a hilarious joke at every party.",
-      "passageZh": "我朋友 Leo 是我認識最愛冒險的人。去年，他加入了一個很有個性的舞團，雖然他從來沒跳過舞。第一次演出時他跌倒了，觀眾席裡幾個愛欺負人的傢伙還出聲嘲笑。那很丟臉，但他站起來，開開心心地跳完。觀眾都很喜歡，精彩的下半場在熱烈的歡呼聲中結束。現在他每次參加派對，都把這件事當成爆笑故事來講。",
+      "passageEn": "My friend Leo is the most adventurous person I know. Last year, he joined a funky dance group, even though he had never danced before. At his first show, he fell over, and a few bullies in the audience shouted taunts. It was humiliating, but he got up and finished the dance cheerfully. The audience loved it, and the thrilling second half of the show ended with loud cheers. Now he tells the story as a hilarious joke at every party.",
+      "passageZh": "我朋友 Leo 是我認識最愛冒險的人。去年，他加入了一個很有個性的舞團，雖然他從來沒跳過舞。第一次演出時他跌倒了，觀眾席裡幾個愛欺負人的傢伙還出聲嘲笑。那很丟臉，但他站起來，開開心心地跳完。觀眾都很喜歡，演出精彩的下半場在熱烈的歡呼聲中結束。現在他每次參加派對，都把這件事當成爆笑故事來講。",
       "questions": [
         {
           "questionZh": "Leo 跌倒後怎麼做？",
@@ -323,6 +323,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hilarious）原位換成翻譯題，沿用題 id b2-u49-l01-q17；目標字沿用 hilarious",
         "resolution": "改為 translate：promptZh「我叔叔講的笑話總是讓人爆笑。」、hintWords [\"hilarious\"]、referenceEn [\"My uncle's jokes are always hilarious.\",\"My uncle always tells hilarious jokes.\"]、rubricZh [\"hilarious 當形容詞，可放 be 動詞後或名詞前（例如 are hilarious、hilarious jokes 等）\",\"always 可放動詞前或 be 動詞後，位置不扣分\",\"「叔叔」可寫，例如 uncle 等\"]（原 makeSentence：instructionZh「用 hilarious 造一個句子，說說一部讓你爆笑的電影、節目或一件事。」、referenceEn [\"I watched a hilarious cartoon with my sister last night.\",\"The video of my dog chasing its own tail is hilarious.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -79,7 +79,7 @@
       "id": "c1-u15-l02-q06",
       "type": "wordCard",
       "word": "climactic",
-      "exampleEn": "In the climactic moment of the game, she scored the winning goal.",
+      "exampleEn": "At the climactic moment of the game, she scored the winning goal.",
       "exampleZh": "在比賽最高潮的時刻，她踢進了致勝的一球。",
       "glossZh": "高潮的；最關鍵的",
       "distractorsZh": [
@@ -181,7 +181,7 @@
     {
       "id": "c1-u15-l02-q15",
       "type": "mcq",
-      "stemEn": "The show included a funny ____ of a famous football coach.",
+      "stemEn": "The show included a funny ____ of a famous soccer coach.",
       "stemZh": "表演中有一段模仿知名足球教練的爆笑橋段。",
       "options": [
         "artistically",
@@ -200,7 +200,7 @@
     {
       "id": "c1-u15-l02-q16",
       "type": "reading",
-      "passageEn": "The students' end-of-year show began as a pure farce, full of silly costumes and loud jokes. The audience loved one boy's impersonation of the head teacher, which was so accurate that even the head teacher laughed. However, the second half surprised everyone with its pathos: a girl read a letter to her grandmother, who lives far away, and many parents cried. The show ended with a climactic performance of a violin concerto by the school's most gifted student, and the audience burst into spontaneous applause. Artistically, it was the best show the school had ever produced. Photos of the night were later printed in the school's old darkroom.",
+      "passageEn": "The students' end-of-year show began as a pure farce, full of silly costumes and loud jokes. The audience loved one boy's impersonation of the principal, which was so accurate that even the principal laughed. However, the second half surprised everyone with its pathos: a girl read a letter to her grandmother, who lives far away, and many parents cried. The show ended with a climactic performance of a violin concerto by the school's most gifted student, and the audience burst into spontaneous applause. Artistically, it was the best show the school had ever produced. Photos of the night were later printed in the school's old darkroom.",
       "passageZh": "學生的期末表演一開始完全是一場鬧劇，滿是搞笑的服裝和吵鬧的笑話。觀眾很喜歡一個男生模仿校長，他模仿得太像了，連校長本人都笑了。不過，下半場的感人之處讓大家意外：一個女孩朗讀一封給住在遠方的奶奶的信，很多家長都哭了。表演最後，由學校最有天分的學生演奏小提琴協奏曲，把氣氛推到最高點，觀眾自發地熱烈鼓掌。就藝術表現而言，這是學校有史以來最好的一場表演。當晚的照片後來在學校的老暗房裡沖洗出來。",
       "questions": [
         {
@@ -341,6 +341,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（artistically）原位換成翻譯題，沿用題 id c1-u15-l02-q18；目標字沿用 artistically",
         "resolution": "改為 translate：promptZh「這本書的插畫在藝術上很出色，但故事有點無聊。」、hintWords [\"artistically\"]、referenceEn [\"The pictures in this book are artistically excellent, but the story is a bit boring.\",\"Artistically, the book's illustrations are excellent, but the story is rather dull.\"]、rubricZh [\"「在藝術上」用 artistically，位置有彈性（例如 artistically excellent、Artistically, … 等）\",\"「插畫」可寫，例如 pictures、illustrations、drawings 等\",\"「有點無聊」可寫，例如 a bit boring、rather dull 等\"]（原 makeSentence：instructionZh「用 artistically 造一個句子，評論一部你喜歡的作品或一個地方。」、referenceEn [\"Artistically, this film is the most beautiful one I have seen.\",\"I think the new museum is artistically impressive.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

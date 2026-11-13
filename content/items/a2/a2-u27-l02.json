@@ -185,7 +185,7 @@
       "id": "a2-u27-l02-q15",
       "type": "reading",
       "passageEn": "Last night, the power went out during dinner. My little brother was in a panic. \"It's so dark!\" he said. My sister made silly faces with her phone light, and we all laughed happily. Later, my brother said, \"I was a fool to be so afraid.\" It was unfair that the power went out on my birthday, but it became my favorite birthday. We sang together in harmony.",
-      "passageZh": "昨晚吃晚餐時停電了。我弟弟驚慌失措，說：「好暗喔！」我姊姊拿手機的光做鬼臉，我們全都開心地笑了。後來弟弟說：「我剛才那麼害怕真是太傻了。」在我生日這天停電實在很不公平，但那反而成了我最喜歡的一次生日。我們一起唱歌，和聲很和諧。",
+      "passageZh": "昨晚吃晚餐時停電了。我弟弟驚慌失措，說：「好暗喔！」我的姊妹拿手機的光做鬼臉，我們全都開心地笑了。後來弟弟說：「我剛才那麼害怕真是太傻了。」在我生日這天停電實在很不公平，但那反而成了我最喜歡的一次生日。我們一起唱歌，和聲很和諧。",
       "questions": [
         {
           "questionZh": "停電時弟弟怎麼了？",
@@ -333,6 +333,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ambition）原位換成翻譯題，沿用題 id a2-u27-l02-q17；目標字沿用 ambition",
         "resolution": "改為 translate：promptZh「她的志向是成為一位醫生。」、hintWords [\"ambition\"]、referenceEn [\"Her ambition is to become a doctor.\",\"Her ambition is to be a doctor.\"]、rubricZh [\"用 ambition 表示「志向」，後面接 to＋原形動詞（例如 is to become、is to be 等）\"]（原 makeSentence：instructionZh「用 ambition 造一個句子，說說你的志向或夢想。」、referenceEn [\"My ambition is to travel around the world.\",\"I have an ambition to open my own cafe.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

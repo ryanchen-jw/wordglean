@@ -143,7 +143,7 @@
     {
       "id": "b2-u45-l02-q12",
       "type": "shadowing",
-      "sentenceEn": "Dandelions grow almost everywhere, even between the stones of the pavement.",
+      "sentenceEn": "Dandelions grow almost everywhere, even between the stones of the sidewalk.",
       "sentenceZh": "蒲公英幾乎到處都能生長，連人行道的石塊縫隙裡也有。"
     },
     {
@@ -220,13 +220,13 @@
         "deforestation"
       ],
       "referenceEn": [
-        "Deforestation in this area has made many birds lose their homes.",
+        "Deforestation in this area has caused many birds to lose their homes.",
         "Because of deforestation in this area, many birds have lost their homes."
       ],
       "rubricZh": [
         "要用 deforestation 當名詞（例如 deforestation in this area）",
         "「失去了家」可寫，例如 lose their homes、have lost their homes 等",
-        "時態合理即可（例如 has made、caused）"
+        "時態合理即可（例如 has caused、caused）"
       ]
     },
     {
@@ -317,6 +317,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（breezy）原位換成翻譯題，沿用題 id b2-u45-l02-q17；目標字沿用 breezy",
         "resolution": "改為 translate：promptZh「山坡上那間房子傍晚時有微風，很涼爽。」、hintWords [\"breezy\"]、referenceEn [\"The house on the hill is breezy and cool in the evenings.\",\"In the evenings, the house on the hill is cool and breezy.\"]、rubricZh [\"breezy 表示「有微風的」（例如 is breezy and cool 等）\",\"「傍晚時」可寫，例如 in the evening、in the evenings 等，位置句首句尾都可以\",\"「涼爽」可寫，例如 cool、nice and cool 等\"]（原 makeSentence：instructionZh「用 breezy 造一個句子，描述某個地方或某個季節的天氣。」、referenceEn [\"My hometown is cool and breezy in the autumn.\",\"I like to sit on my balcony on breezy summer evenings.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、rubricZh[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

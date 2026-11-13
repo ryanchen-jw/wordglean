@@ -123,14 +123,14 @@
     {
       "id": "b1-u06-l05-q10",
       "type": "listenChoice",
-      "audioEn": "The manager refused our plan because it would cost too much.",
+      "audioEn": "The manager refused to accept our plan because it would cost too much.",
       "audioZh": "經理拒絕了我們的計畫，因為花費太高。",
       "questionZh": "經理為什麼拒絕這個計畫？",
       "options": [
-        "It was too expensive.",
-        "It would take too long.",
-        "The plan was too simple.",
-        "Nobody liked it."
+        "It was too expensive",
+        "It would take too long",
+        "The plan was too simple",
+        "Nobody liked it"
       ],
       "answer": 0
     },
@@ -187,13 +187,13 @@
     {
       "id": "b1-u06-l05-q15",
       "type": "reading",
-      "passageEn": "Mr. Su started a small bakery ten years ago with a clear vision: to make healthy bread at a fair price. His main principle is never to use cheap materials. Many people told him he would fail, but he refused to listen. At first, food critics made only a few comments about his shop. Now his bakery has a strong presence in the city, with five stores and numerous regular customers. His belief in good bread has proved right, and he thinks his business still has great potential.",
-      "passageZh": "蘇先生十年前開了一家小麵包店，他有一個清楚的願景：用合理的價格做健康的麵包。他最主要的原則是絕不用便宜的材料。很多人說他會失敗，但他拒絕聽信。一開始，美食評論家對他的店只有寥寥幾句評論。現在他的麵包店在城裡很有存在感，有五家分店和許多常客。他對好麵包的信念證明是對的，而且他認為自己的生意還有很大的潛力。",
+      "passageEn": "Mr. Su started a small bakery ten years ago with a clear vision: to make healthy bread at a fair price. His main principle is never to use cheap ingredients. Many people told him he would fail, but he refused to listen. At first, food critics made only a few comments about his shop. Now his bakery has a strong presence in the city, with five stores and numerous regular customers. His belief in good bread has proved right, and he thinks his business still has great potential.",
+      "passageZh": "蘇先生十年前開了一家小麵包店，他有一個清楚的願景：用合理的價格做健康的麵包。他最主要的原則是絕不用便宜的食材。很多人說他會失敗，但他拒絕聽信。一開始，美食評論家對他的店只有寥寥幾句評論。現在他的麵包店在城裡很有存在感，有五家分店和許多常客。他對好麵包的信念證明是對的，而且他認為自己的生意還有很大的潛力。",
       "questions": [
         {
           "questionZh": "蘇先生最主要的原則是什麼？",
           "options": [
-            "不用便宜材料",
+            "不用便宜食材",
             "每天推出新口味",
             "只在早上的時候營業",
             "價格一定要是最低的"
@@ -424,6 +424,18 @@
         "message": "執行長裁示：第③關：SUS 變體 2 多了 basic、really quite 重複加強",
         "resolution": "改為 referenceEn [\"The principle behind this machine is actually very simple.\",\"The principle of this machine is actually quite simple.\"]（原 referenceEn [\"The principle behind this machine is actually very simple.\",\"The basic principle of this machine is really quite simple.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[0].options[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

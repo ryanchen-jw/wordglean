@@ -77,8 +77,8 @@
       "id": "b2-u23-l02-q06",
       "type": "wordCard",
       "word": "climate change",
-      "exampleEn": "Scientists use old ice to learn how climate change happened in the past.",
-      "exampleZh": "科學家利用古老的冰層，研究過去的氣候變遷是怎麼發生的。",
+      "exampleEn": "Scientists study ancient ice to learn about climate change in the past.",
+      "exampleZh": "科學家研究古老的冰層，以了解過去的氣候變遷。",
       "glossZh": "氣候變遷",
       "distractorsZh": [
         "季節交替",
@@ -148,8 +148,8 @@
     {
       "id": "b2-u23-l02-q12",
       "type": "shadowing",
-      "sentenceEn": "Old heaters can produce carbon monoxide when they are not working well.",
-      "sentenceZh": "老舊暖爐運作不良時，可能會產生一氧化碳。"
+      "sentenceEn": "Old gas heaters can produce carbon monoxide when they are not working well.",
+      "sentenceZh": "老舊的燃氣暖爐運作不良時，可能會產生一氧化碳。"
     },
     {
       "id": "b2-u23-l02-q13",
@@ -160,7 +160,7 @@
     {
       "id": "b2-u23-l02-q14",
       "type": "mcq",
-      "stemEn": "Gray clouds rose from the tall ____ of the old power station.",
+      "stemEn": "Gray smoke rose from the tall ____ of the old power station.",
       "stemZh": "灰色的煙霧從老發電廠高高的煙囪裡升起。",
       "options": [
         "crater",
@@ -375,6 +375,24 @@
         "message": "執行長裁示：第③關：SUS 要點未收現在完成式（has made winters shorter）",
         "resolution": "改為 promptZh「氣候變遷讓這個地區的冬天越來越短。」、referenceEn [\"Climate change is making winters in this area shorter and shorter.\",\"Because of climate change, winters in this region are getting shorter.\"]、rubricZh [\"climate change 指氣候變遷，不加冠詞\",\"「越來越短」可寫，例如 shorter and shorter、are getting shorter 等\",\"時態可用現在進行式、現在式或現在完成式（例如 is making、makes、has made 等）\"]（原 promptZh「氣候變遷讓這個地區的冬天越來越短。」、referenceEn [\"Climate change is making winters in this area shorter and shorter.\",\"Because of climate change, winters in this region are getting shorter.\"]、rubricZh [\"climate change 指氣候變遷，不加冠詞\",\"「越來越短」可寫，例如 shorter and shorter、are getting shorter 等\",\"時態用現在進行式或現在式（例如 is making、are getting 等）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

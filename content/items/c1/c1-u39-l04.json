@@ -127,10 +127,10 @@
       "audioZh": "那件新外套貴得離譜，所以我在網路上買了一件比較便宜的。",
       "questionZh": "說話者為什麼沒買那件新外套？",
       "options": [
-        "It felt too heavy to wear.",
-        "It did not come in the right size.",
-        "The color looked different in daylight.",
-        "It cost far too much money."
+        "It felt too heavy to wear",
+        "It did not come in the right size",
+        "The color looked different in daylight",
+        "It cost far too much money"
       ],
       "answer": 3
     },
@@ -187,8 +187,8 @@
     {
       "id": "c1-u39-l04-q15",
       "type": "reading",
-      "passageEn": "My brother Owen supports our local football team fanatically. Last season, however, the team played dismally and lost eight games in a row. The coach blamed the defenders, who had marked their opponents negligently. Owen, who is temperamentally unable to stay quiet, wrote a letter to the club. In it, he stated baldly that the ticket prices were ludicrously high for such poor football. The last match of the season was against the league leaders, and a fiendish schedule meant the players had only two days to rest. Still, they won 2-1. Owen ran around the living room ecstatically and spontaneously hugged our grandmother.",
-      "passageZh": "我哥哥 Owen 狂熱地支持我們當地的足球隊。不過上一季，球隊表現慘淡，連輸了八場。教練怪罪後衛，說他們防守時太疏忽。Owen 天性就是沒辦法保持沉默，於是寫了一封信給球會。他在信中直截了當地說，以這麼差的球賽水準來說，票價高得離譜。本季最後一場對手是聯賽龍頭，而極度緊湊的賽程讓球員只有兩天可以休息。儘管如此，他們還是以二比一獲勝。Owen 欣喜若狂地在客廳裡跑來跑去，還一時興起抱住了我們的奶奶。",
+      "passageEn": "My brother Owen supports our local soccer team fanatically. Last season, however, the team played dismally and lost eight games in a row. The coach blamed the defenders, who had marked their opponents negligently. Owen, who is temperamentally unable to stay quiet, wrote a letter to the club. In it, he stated baldly that the ticket prices were ludicrously high for such poor soccer. The last match of the season was against the league leaders, and a fiendish schedule meant the players had only two days to rest. Still, they won 2-1. Owen ran around the living room ecstatically and spontaneously hugged our grandmother.",
+      "passageZh": "我的兄弟 Owen 狂熱地支持我們當地的足球隊。不過上一季，球隊表現慘淡，連輸了八場。教練怪罪後衛，說他們防守時太疏忽。Owen 天性就是沒辦法保持沉默，於是寫了一封信給球會。他在信中直截了當地說，以這麼差的球賽水準來說，票價高得離譜。本季最後一場對手是聯賽龍頭，而極度緊湊的賽程讓球員只有兩天可以休息。儘管如此，他們還是以二比一獲勝。Owen 欣喜若狂地在客廳裡跑來跑去，還一時興起抱住了我們的奶奶。",
       "questions": [
         {
           "questionZh": "Owen 在信中說了什麼？",
@@ -299,6 +299,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ecstatically）原位換成翻譯題，沿用題 id c1-u39-l04-q17；目標字沿用 ecstatically",
         "resolution": "改為 translate：promptZh「得知自己考上了夢想中的大學，她欣喜若狂地打電話給爸媽。」、hintWords [\"ecstatically\"]、referenceEn [\"When she learned she had got into her dream university, she ecstatically called her parents.\",\"After hearing that her dream university had accepted her, she called her parents ecstatically.\"]、rubricZh [\"「欣喜若狂地」用 ecstatically，位置有彈性\",\"「考上」可寫，例如 got into、was accepted by 等\",\"說的是已發生的事，時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 ecstatically 造一個句子，描述你某次欣喜若狂的經驗。」、referenceEn [\"I jumped ecstatically when I heard that I had passed the exam.\",\"I hugged my best friend ecstatically at the airport after two years apart.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

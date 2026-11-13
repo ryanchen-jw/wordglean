@@ -186,8 +186,8 @@
     {
       "id": "a1-u18-l01-q15",
       "type": "reading",
-      "passageEn": "My grandmother is eighty, but she has a strong character. She has many memories of her school days. Those were hard years, but she always had hope. Today, she feels happy when she plays with us. I believe she is the strongest woman in my family.",
-      "passageZh": "我奶奶八十歲了，但她的個性很堅強。她有很多求學時期的回憶。那些年很辛苦，但她一直懷抱希望。現在，她跟我們一起玩的時候就覺得很快樂。我相信她是我們家最堅強的女人。",
+      "passageEn": "My grandmother is eighty, and she has a strong character. She has many memories of her school days. Those were hard years, but she always had hope. Today, she feels happy when she plays with us. I believe she is the strongest woman in my family.",
+      "passageZh": "我奶奶八十歲了，她的個性很堅強。她有很多求學時期的回憶。那些年很辛苦，但她一直懷抱希望。現在，她跟我們一起玩的時候就覺得很快樂。我相信她是我們家最堅強的女人。",
       "questions": [
         {
           "questionZh": "奶奶有很多關於什麼的回憶？",
@@ -391,6 +391,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（memory）原位換成翻譯題，沿用題 id a1-u18-l01-q17；目標字沿用 memory",
         "resolution": "改為 translate：promptZh「我奶奶的記憶力很好。」、hintWords [\"memory\"]、referenceEn [\"My grandmother has a good memory.\",\"My grandma has a very good memory.\"]、rubricZh [\"「記憶力很好」可寫，例如 has a good memory 等\",\"動詞配合主詞（例如 has）\"]（原 makeSentence：instructionZh「用 memory 造一個句子，說說你的一個美好回憶。」、referenceEn [\"I have a happy memory of my first trip to Japan.\",\"My best memory is my tenth birthday party.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

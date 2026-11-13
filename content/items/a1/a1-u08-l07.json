@@ -155,7 +155,7 @@
     {
       "id": "a1-u08-l07-q13",
       "type": "mcq",
-      "stemEn": "I love the ____ of hot bread.",
+      "stemEn": "I love the ____ of warm bread.",
       "stemZh": "我很喜歡剛出爐麵包的香味。",
       "options": [
         "chocolate",
@@ -392,6 +392,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cake）原位換成翻譯題，沿用題 id a1-u08-l07-q16；目標字沿用 cake",
         "resolution": "改為 translate：promptZh「我媽媽正在做一個生日蛋糕。」、hintWords [\"cake\"]、referenceEn [\"My mother is making a birthday cake.\",\"My mom is making a birthday cake.\"]、rubricZh [\"「正在做」用現在進行式（例如 is making）\",\"一整個蛋糕用 a cake（例如 a birthday cake）；「做」寫 make 或 bake 都正確\"]（原 makeSentence：instructionZh「用 cake 造一個句子，說說你喜歡的蛋糕，或你什麼時候吃蛋糕。」、referenceEn [\"I love chocolate cake.\",\"We eat cake on my birthday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -14,7 +14,7 @@
       "word": "lorry",
       "exampleEn": "A big lorry was blocking the road.",
       "exampleZh": "一輛大卡車擋住了馬路。",
-      "glossZh": "卡車；貨車",
+      "glossZh": "卡車；貨車；（英式）",
       "distractorsZh": [
         "腳踏車",
         "計程車",
@@ -112,10 +112,10 @@
       "audioZh": "抱歉我遲到了。橋上塞車。",
       "questionZh": "說話者為什麼遲到？",
       "options": [
-        "Too many cars on the bridge.",
-        "The bridge was closed.",
-        "The speaker missed the bus.",
-        "The speaker woke up late."
+        "Too many cars on the bridge",
+        "The bridge was closed",
+        "The speaker missed the bus",
+        "The speaker woke up late"
       ],
       "answer": 0
     },
@@ -349,6 +349,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（public transport）原位換成翻譯題，沿用題 id b1-u18-l06-q16；目標字沿用 public transport",
         "resolution": "改為 translate：promptZh「如果你沒有車，搭大眾運輸去那裡也很方便。」、hintWords [\"public transport\"]、referenceEn [\"If you don't have a car, it is easy to get there by public transport.\",\"Without a car, you can still get there easily by public transport.\"]、rubricZh [\"用 public transport 表示「大眾運輸」（例如 by public transport；寫 public transportation 也正確）\",\"「很方便」可寫，例如 it is easy to、easily 等\"]（原 makeSentence：instructionZh「用 public transport 造一個句子，說說你使用大眾運輸的習慣。」、referenceEn [\"I take public transport to work every day.\",\"I prefer public transport because I don't have a car.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

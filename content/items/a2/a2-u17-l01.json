@@ -199,7 +199,7 @@
     {
       "id": "a2-u17-l01-q16",
       "type": "reading",
-      "passageEn": "Amy is in her first semester at university. The campus is big, and at first she often got lost. Her textbooks are expensive, so she buys used ones. She keeps her notes in different folders. Her teacher is doing research on education in small villages, and Amy helps him. \"It's a great experience,\" she says.",
+      "passageEn": "Amy is in her first semester of college. The campus is big, and at first she often got lost. Her textbooks are expensive, so she buys used ones. She keeps her notes in different folders. Her teacher is doing research on education in small villages, and Amy helps him. \"It's a great experience,\" she says.",
       "passageZh": "Amy 正在讀大學的第一個學期。校園很大，一開始她常常迷路。她的課本很貴，所以她都買二手的。她把筆記分別放在不同的資料夾裡。她的老師正在研究小村莊的教育，Amy 會幫他的忙。她說：「這是很棒的經驗。」",
       "questions": [
         {
@@ -325,6 +325,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（education）原位換成翻譯題，沿用題 id a2-u17-l01-q18；目標字沿用 education",
         "resolution": "改為 translate：promptZh「這所學校提供很好的教育。」、hintWords [\"education\"]、referenceEn [\"This school offers an excellent education.\",\"This school gives students an excellent education.\"]、rubricZh [\"用 education 表示「教育」（例如 an excellent education、a very good education 等）\",\"「提供」可寫，例如 offers、gives 等，主詞是單數，動詞加 s\"]（原 makeSentence：instructionZh「用 education 造一個句子，說說你對教育的看法，或你受過的教育。」、referenceEn [\"Good education can change a person's life.\",\"My parents paid for my education.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

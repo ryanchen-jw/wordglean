@@ -7,7 +7,8 @@
   "author": "claude-dev",
   "authoredAt": "2026-10-02T13:52:30Z",
   "properNouns": [
-    "Europe"
+    "Europe",
+    "Canada"
   ],
   "items": [
     {
@@ -107,7 +108,7 @@
       "word": "car park",
       "exampleEn": "The car park was full, so we parked on the street.",
       "exampleZh": "停車場滿了，所以我們把車停在路邊。",
-      "glossZh": "停車場",
+      "glossZh": "停車場；（英式）",
       "distractorsZh": [
         "加油站",
         "公車站",
@@ -148,7 +149,7 @@
     {
       "id": "a2-u12-l05-q13",
       "type": "mcq",
-      "stemEn": "After school, the kids play football on the ____.",
+      "stemEn": "After school, the kids play soccer on the ____.",
       "stemZh": "放學後，孩子們在操場上踢足球。",
       "options": [
         "playground",
@@ -167,19 +168,19 @@
     {
       "id": "a2-u12-l05-q14",
       "type": "mcq",
-      "stemEn": "We drove along the ____ coast for two days.",
-      "stemZh": "我們沿著太平洋海岸開了兩天車。",
+      "stemEn": "My aunt moved ____ and now lives in Canada.",
+      "stemZh": "我阿姨搬到海外，現在住在加拿大。",
       "options": [
-        "Pacific",
         "overseas",
-        "royal",
-        "national"
+        "downstairs",
+        "upstairs",
+        "royal"
       ],
       "optionGlossZh": [
-        "太平洋的",
         "在海外",
-        "皇家的",
-        "國家的"
+        "在樓下",
+        "在樓上",
+        "皇家的"
       ],
       "answer": 0
     },
@@ -361,6 +362,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（castle）原位換成翻譯題，沿用題 id a2-u12-l05-q17；目標字沿用 castle",
         "resolution": "改為 translate：promptZh「從城堡的頂端可以看到整座城市。」、hintWords [\"castle\"]、referenceEn [\"You can see the whole city from the top of the castle.\",\"From the top of the castle, you can see the whole city.\"]、rubricZh [\"用 castle 表示「城堡」\",\"「可以看到」可寫，例如 you can see、we can see 等\",\"「從城堡的頂端」可寫，例如 from the top of the castle 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 castle 造一個句子，說說你去過或想去的城堡。」、referenceEn [\"I want to visit an old castle in Europe.\",\"We took many photos at the castle.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemEn（題庫外問題）、stemZh（題庫外問題）、options（題庫外問題）、optionGlossZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

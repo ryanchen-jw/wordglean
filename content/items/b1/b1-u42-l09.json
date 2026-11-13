@@ -38,8 +38,8 @@
       "id": "b1-u42-l09-q03",
       "type": "wordCard",
       "word": "auxiliary",
-      "exampleEn": "The school bus has an auxiliary door at the back.",
-      "exampleZh": "校車後面有一扇備用的門。",
+      "exampleEn": "The boat has a small auxiliary engine.",
+      "exampleZh": "這艘船有一具小型的輔助引擎。",
       "glossZh": "備用的；輔助的",
       "distractorsZh": [
         "主要的",
@@ -77,8 +77,8 @@
       "id": "b1-u42-l09-q06",
       "type": "wordCard",
       "word": "brand-new",
-      "exampleEn": "The house looks brand-new after the painting.",
-      "exampleZh": "粉刷之後，房子看起來像全新的一樣。",
+      "exampleEn": "The old house looks brand-new after we painted it.",
+      "exampleZh": "我們粉刷之後，那間老房子看起來像全新的一樣。",
       "glossZh": "全新的",
       "distractorsZh": [
         "二手的",
@@ -125,18 +125,18 @@
       "audioZh": "抱歉，星期一早上我不方便。我們可以改星期二見面嗎？",
       "questionZh": "說話者希望什麼時候見面？",
       "options": [
-        "Tuesday, not Monday.",
-        "On Monday after lunch.",
-        "On Wednesday morning.",
-        "Next month."
+        "Tuesday, not Monday",
+        "On Monday after lunch",
+        "On Wednesday morning",
+        "Next month"
       ],
       "answer": 0
     },
     {
       "id": "b1-u42-l09-q11",
       "type": "shadowing",
-      "sentenceEn": "The uniform is navy blue with white lines.",
-      "sentenceZh": "制服是海軍藍配白線條。"
+      "sentenceEn": "The uniform is navy blue with white stripes.",
+      "sentenceZh": "制服是海軍藍配白色條紋。"
     },
     {
       "id": "b1-u42-l09-q12",
@@ -433,6 +433,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（uplifted）原位換成翻譯題，沿用題 id b1-u42-l09-q17；目標字沿用 uplifted",
         "resolution": "改為 translate：promptZh「看到大家的笑容，我覺得精神振奮。」、hintWords [\"uplifted\"]、referenceEn [\"I felt uplifted when I saw everyone's smiles.\",\"Seeing everyone smile made me feel uplifted.\"]、rubricZh [\"用 uplifted 表示「振奮的」\",\"時態配合內容（例如 felt、feel 等）\"]（原 makeSentence：instructionZh「用 uplifted 造一個句子，說說什麼讓你覺得精神振奮。」、referenceEn [\"I feel uplifted when I listen to my favorite songs.\",\"I felt uplifted after my team won the game.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -128,10 +128,10 @@
       "audioZh": "老師說了那個笑話，全班都大笑起來。",
       "questionZh": "老師說笑話後，全班怎麼了？",
       "options": [
-        "They all cried.",
-        "They all left.",
-        "They all laughed.",
-        "They were silent."
+        "They all cried",
+        "They all left",
+        "They all laughed",
+        "They were silent"
       ],
       "answer": 2
     },
@@ -188,7 +188,7 @@
     {
       "id": "b1-u09-l09-q15",
       "type": "reading",
-      "passageEn": "Our office soccer team had a terrible start this year. We lost five games, and there was a lot of confusion about who should play where. After each game, our coach just gave a sigh. Then Kai, our new team leader, found our biggest weakness: we did not talk on the field. He held short meetings to motivate everyone, and he was always reliable and calm. His only motive was to have fun together. Last week, we finally won. The excitement and laughter after the game were absolutely wonderful.",
+      "passageEn": "Our office soccer team had a terrible start this year. We lost five games, and there was a lot of confusion about who should play where. After each game, our coach just gave a sigh. Then Kai, our new team captain, found our biggest weakness: we did not talk on the field. He held short meetings to motivate everyone, and he was always reliable and calm. His only motive was for all of us to have fun. Last week, we finally won. The excitement and laughter after the game were absolutely wonderful.",
       "passageZh": "我們公司的足球隊今年開局很糟。我們輸了五場，大家對誰該踢什麼位置一頭霧水。每次比賽後，教練只是嘆氣。後來新隊長 Kai 找出我們最大的弱點：我們在場上不溝通。他開簡短的會議激勵大家，而且總是可靠又冷靜。他唯一的動機就是大家一起開心。上星期，我們終於贏了。賽後的興奮和笑聲真是太棒了。",
       "questions": [
         {
@@ -286,6 +286,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（weakness）原位換成翻譯題，沿用題 id b1-u09-l09-q17；目標字沿用 weakness",
         "resolution": "改為 translate：promptZh「缺乏經驗是他唯一的弱點。」、hintWords [\"weakness\"]、referenceEn [\"His only weakness is a lack of experience.\",\"A lack of experience is his only weakness.\"]、rubricZh [\"用 weakness 表示「弱點」（例如 his only weakness）\"]（原 makeSentence：instructionZh「用 weakness 造一個句子，說說你的一個弱點。」、referenceEn [\"My biggest weakness is that I get nervous easily.\",\"I have a weakness for sweet drinks.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

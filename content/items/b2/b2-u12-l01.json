@@ -16,7 +16,7 @@
       "type": "wordCard",
       "word": "spite",
       "exampleEn": "He broke his sister's toy out of spite.",
-      "exampleZh": "他出於惡意弄壞了妹妹的玩具。",
+      "exampleZh": "他出於惡意弄壞了他姊妹的玩具。",
       "glossZh": "惡意（in spite of 儘管）",
       "distractorsZh": [
         "好意",
@@ -188,7 +188,7 @@
     {
       "id": "b2-u12-l01-q15",
       "type": "reading",
-      "passageEn": "When our team planned a weekend trip, everyone had different ideas. Kim wanted the thrill of mountain climbing, while Sam preferred pure relaxation at a hot spring. In the end, they agreed on a lake house where people could do both. Sam, the most dependable person in our office, booked everything as soon as the plan was decided. On the first night, Kim amused everyone with stories about her childhood. The owner of the lake house treated us with great courtesy and even brought us fresh fruit. When we got home, our manager enthusiastically suggested making the trip a yearly event, and the most sociable members agreed at once.",
+      "passageEn": "When our team planned a weekend trip, everyone had different ideas. Kim wanted the thrill of mountain climbing, while Sam preferred pure relaxation at a hot spring. In the end, we agreed on a lake house where people could do both. Sam, the most dependable person in our office, booked everything as soon as the plan was decided. On the first night, Kim amused everyone with stories about her childhood. The owner of the lake house treated us with great courtesy and even brought us fresh fruit. When we got home, our manager enthusiastically suggested making the trip a yearly event, and the most sociable members agreed at once.",
       "passageZh": "我們團隊規劃週末旅行時，每個人的想法都不一樣。Kim 想要登山的刺激，Sam 則比較想在溫泉純粹放鬆。最後，大家選了一間湖邊小屋，兩種活動都能做。Sam 是我們辦公室最可靠的人，計畫一確定，Sam 就把所有事情都訂好了。第一晚，Kim 講她小時候的故事，逗得大家很開心。湖邊小屋的主人待我們非常有禮，還送來新鮮水果。回家後，經理熱情地提議把這趟旅行變成每年的活動，幾個最愛交際的同事馬上贊成。",
       "questions": [
         {
@@ -461,6 +461,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（amuse）原位換成翻譯題，沿用題 id b2-u12-l01-q17；目標字沿用 amuse",
         "resolution": "改為 translate：promptZh「我爺爺的老笑話總是能逗我們開心。」、hintWords [\"amuse\"]、referenceEn [\"My grandfather's old jokes always amuse us.\",\"We are always amused by my grandpa's old jokes.\"]、rubricZh [\"amuse 表示「逗樂、使開心」（例如 amuse us、be amused by 等）\",\"always 位置不扣分；主詞是 jokes 時動詞不加 s\",\"「爺爺」可寫，例如 grandfather、grandpa 等\"]（原 makeSentence：instructionZh「用 amuse 造一個句子，說說什麼事情會讓你覺得好笑或開心。」、referenceEn [\"My cat's strange habits always amuse me.\",\"Old comedy movies still amuse me after many years.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

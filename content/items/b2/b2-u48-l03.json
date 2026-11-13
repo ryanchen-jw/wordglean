@@ -94,7 +94,7 @@
       "id": "b2-u48-l03-q07",
       "type": "wordCard",
       "word": "preferably",
-      "exampleEn": "Preferably, the new assistant should speak English and Spanish.",
+      "exampleEn": "The new assistant should preferably speak English and Spanish.",
       "exampleZh": "新助理最好會說英語和西班牙語。",
       "glossZh": "最好是；寧可",
       "distractorsZh": [
@@ -107,7 +107,7 @@
       "id": "b2-u48-l03-q08",
       "type": "wordCard",
       "word": "salty",
-      "exampleEn": "The sea air felt salty on my lips.",
+      "exampleEn": "The sea air tasted salty on my lips.",
       "exampleZh": "海風吹在嘴唇上感覺鹹鹹的。",
       "glossZh": "鹹的；含鹽的",
       "distractorsZh": [
@@ -384,6 +384,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（elegance）原位換成翻譯題，沿用題 id b2-u48-l03-q17；目標字沿用 elegance",
         "resolution": "改為 translate：promptZh「這支手錶設計簡單，帶有一種低調的優雅。」、hintWords [\"elegance\"]、referenceEn [\"This watch has a simple design and a quiet elegance.\",\"The simple design of this watch gives it a quiet elegance.\"]、rubricZh [\"elegance 表示「優雅」（例如 a quiet elegance、simple elegance 等）\",\"「低調的」可寫，例如 quiet、simple、understated 等\"]（原 makeSentence：instructionZh「用 elegance 造一個句子，描述一個讓你覺得優雅的人、地方或東西。」、referenceEn [\"My grandmother always dresses with simple elegance.\",\"I love the quiet elegance of old Japanese houses.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

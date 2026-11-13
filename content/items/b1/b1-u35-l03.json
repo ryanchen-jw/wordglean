@@ -125,10 +125,10 @@
       "audioZh": "那艘船一年只開往那座遙遠的小島兩次，春天和秋天各一次。",
       "questionZh": "那艘船一年去小島幾次？",
       "options": [
-        "Only in spring.",
-        "Once a month on Sundays.",
-        "Once in spring and once in fall.",
-        "Once a year."
+        "Only in spring",
+        "Once a month on Sundays",
+        "Once in spring and once in fall",
+        "Only once a year"
       ],
       "answer": 2
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u35-l03-q15",
       "type": "reading",
-      "passageEn": "My grandparents live in a distant village in the mountains. The road there is rough, so the trip takes four hours. Last summer, I stayed with them for a month. It took me a few days to adapt to life without the internet. Life there was not complicated at all. People grew their own food, and water came naturally from a mountain stream. My grandpa has a remarkable skill: his guesses about the weather are always accurate. He just looks at the sky. The people in the village have mutual respect: when one family needs help, everyone comes. Similarly, when someone has good news, the whole village celebrates.",
-      "passageZh": "我的爺爺奶奶住在山裡一個遙遠的村子。去那裡的路很崎嶇，所以路程要四個小時。去年夏天，我在他們家住了一個月。我花了幾天才適應沒有網路的生活。那裡的生活一點也不複雜。人們自己種食物，水自然地從山上的溪流流下來。我爺爺有一項非凡的本領：他對天氣的猜測總是很準確。他只要看看天空就知道。村裡的人互相尊重：一家需要幫忙時，大家都會來。同樣地，有人有好消息時，全村都會一起慶祝。",
+      "passageEn": "My grandparents live in a distant village in the mountains. The road there is rough, so the trip takes four hours. Last summer, I stayed with them for a month. It took me a few days to adapt to life without the internet. Life there was not complicated at all. People grew their own food, and their water came from a mountain stream, so it was naturally clean. My grandpa has a remarkable skill: his guesses about the weather are always accurate. He just looks at the sky. The people in the village have mutual respect: when one family needs help, everyone comes. Similarly, when someone has good news, the whole village celebrates.",
+      "passageZh": "我的爺爺奶奶住在山裡一個遙遠的村子。去那裡的路很崎嶇，所以路程要四個小時。去年夏天，我在他們家住了一個月。我花了幾天才適應沒有網路的生活。那裡的生活一點也不複雜。人們自己種食物，他們的水來自山上的溪流，天然就很乾淨。我爺爺有一項非凡的本領：他對天氣的猜測總是很準確。他只要看看天空就知道。村裡的人互相尊重：一家需要幫忙時，大家都會來。同樣地，有人有好消息時，全村都會一起慶祝。",
       "questions": [
         {
           "questionZh": "為什麼到村子要花四個小時？",
@@ -349,6 +349,24 @@
         "message": "執行長裁示：第③關：SUS 中文「聽得到」偏現在，兩個參考答案都是過去式",
         "resolution": "改為 referenceEn [\"We can hear distant thunder.\",\"We heard the sound of distant thunder.\"]（原 referenceEn [\"We could hear distant thunder.\",\"We heard the sound of distant thunder.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：options[3]（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

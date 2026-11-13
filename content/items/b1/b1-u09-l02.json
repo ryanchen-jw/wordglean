@@ -54,7 +54,7 @@
       "id": "b1-u09-l02-q04",
       "type": "wordCard",
       "word": "disappointment",
-      "exampleEn": "To our disappointment, the concert was cancelled.",
+      "exampleEn": "To our disappointment, the concert was canceled.",
       "exampleZh": "令我們失望的是，音樂會取消了。",
       "glossZh": "失望；令人失望的事",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "經理因為讓顧客久等而向他們道歉。",
       "questionZh": "經理為什麼道歉？",
       "options": [
-        "Because customers waited a long time.",
-        "Because the food was cold.",
-        "Because the manager had to wait.",
-        "Because the customers were rude."
+        "Because customers waited a long time",
+        "Because the food was cold",
+        "Because the manager had to wait",
+        "Because the customers were rude"
       ],
       "answer": 0
     },
@@ -188,8 +188,8 @@
     {
       "id": "b1-u09-l02-q15",
       "type": "reading",
-      "passageEn": "Last week, our team leader, Nora, left the company after ten years. She had always been loyal and hard-working. She has always been ambitious, and her new job is in Singapore. Many of us felt disappointment when we heard the news. At her farewell lunch, we gave her a card to show our appreciation. Honestly, it was a terrific party. Nora even made a short apology for leaving so suddenly. Some of us are still cautious about the new team leader, but he seems nice.",
-      "passageZh": "上星期，我們的組長 Nora 在待了十年之後離開了公司。她一直都很忠誠又努力。她一向很有抱負，她的新工作在新加坡。我們很多人聽到消息時都很失望。在她的歡送午餐上，我們送她一張卡片表達感謝。老實說，那是一場很棒的派對。Nora 甚至為自己這麼突然離開而簡短地道歉。我們有些人對新組長還是有點保留，但他看起來人不錯。",
+      "passageEn": "Last week, our team leader, Nora, left the company after ten years. She had always been loyal and hard-working. But she was also ambitious, so she took a new job in Singapore. Many of us felt disappointment when we heard the news. At her farewell lunch, we gave her a card to show our appreciation. Honestly, it was a terrific party. Nora even made a short apology for leaving so suddenly. Some of us are still cautious about the new team leader, but he seems nice.",
+      "passageZh": "上星期，我們的組長 Nora 在待了十年之後離開了公司。她一直都很忠誠又努力。但她也很有抱負，所以接下了新加坡的一份新工作。我們很多人聽到消息時都很失望。在她的歡送午餐上，我們送她一張卡片表達感謝。老實說，那是一場很棒的派對。Nora 甚至為自己這麼突然離開而簡短地道歉。我們有些人對新組長還是有點保留，但他看起來人不錯。",
       "questions": [
         {
           "questionZh": "Nora 為什麼離開公司？",
@@ -527,6 +527,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（honestly）原位換成翻譯題，沿用題 id b1-u09-l02-q17；目標字沿用 honestly",
         "resolution": "改為 translate：promptZh「老實說，我不記得他的名字了。」、hintWords [\"honestly\"]、referenceEn [\"Honestly, I don't remember his name.\",\"I honestly can't remember his name.\"]、rubricZh [\"用 honestly 表示「老實說」（例如 Honestly, I…、I honestly… 等，位置不限）\",\"「不記得」可寫，例如 don't remember、can't remember 等\"]（原 makeSentence：instructionZh「用 honestly 造一個句子，老實說出你對某件事的看法。」、referenceEn [\"Honestly, I prefer tea to coffee.\",\"Honestly, I think this movie is too long.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

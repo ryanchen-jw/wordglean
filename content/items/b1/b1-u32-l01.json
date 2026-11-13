@@ -81,7 +81,7 @@
       "word": "bulletin",
       "exampleEn": "The news bulletin comes on at nine.",
       "exampleZh": "新聞快報九點播出。",
-      "glossZh": "公告；新聞快報",
+      "glossZh": "新聞快報；公告",
       "distractorsZh": [
         "廣告",
         "影集",
@@ -106,7 +106,7 @@
       "type": "wordCard",
       "word": "firm",
       "exampleEn": "My brother works for a law firm.",
-      "exampleZh": "我哥哥在一家律師事務所工作。",
+      "exampleZh": "我的兄弟在一家律師事務所工作。",
       "glossZh": "公司；堅定的",
       "distractorsZh": [
         "學校",
@@ -140,10 +140,10 @@
       "audioZh": "Lee 先生今天沒來，所以他和顧問的會議改到本週四。",
       "questionZh": "會議改到什麼時候？",
       "options": [
-        "To next Monday morning.",
-        "To this coming Thursday.",
-        "To Thursday next week.",
-        "To Friday evening."
+        "To next Monday morning",
+        "To this coming Thursday",
+        "To Thursday next week",
+        "To Friday evening"
       ],
       "answer": 1
     },
@@ -162,8 +162,8 @@
     {
       "id": "b1-u32-l01-q14",
       "type": "mcq",
-      "stemEn": "Please leave your coat at the ____ when you arrive at the hotel.",
-      "stemZh": "到飯店時請把外套寄放在接待處。",
+      "stemEn": "Please leave your room key at ____ when you go out.",
+      "stemZh": "外出時請把房間鑰匙留在接待處。",
       "options": [
         "bulletin",
         "reception",
@@ -233,8 +233,8 @@
         "management"
       ],
       "referenceEn": [
-        "He studied management at university.",
-        "He studied management in college."
+        "He studied management in college.",
+        "He majored in management in college."
       ],
       "rubricZh": [
         "management 表示「管理」，例如 study management 等說法",
@@ -364,6 +364,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（organization）原位換成翻譯題，沿用題 id b1-u32-l01-q18；目標字沿用 organization",
         "resolution": "改為 translate：promptZh「這個組織幫助無家可歸的人找工作。」、hintWords [\"organization\"]、referenceEn [\"This organization helps homeless people find jobs.\",\"The organization helps people without homes to find work.\"]、rubricZh [\"用 organization 表示「組織；機構」\",\"「無家可歸的人」可寫，例如 homeless people、people without homes 等\"]（原 makeSentence：instructionZh「用 organization 造一個句子，說說你知道或想加入的組織。」、referenceEn [\"I want to join an organization that cleans beaches.\",\"My aunt works for an organization that helps children.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

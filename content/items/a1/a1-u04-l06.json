@@ -83,7 +83,7 @@
       "word": "mum",
       "exampleEn": "My mum works at a bank.",
       "exampleZh": "我媽媽在銀行上班。",
-      "glossZh": "（英式）媽媽",
+      "glossZh": "媽媽；（英式）",
       "distractorsZh": [
         "爸爸",
         "姊姊",
@@ -390,6 +390,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（grandma）原位換成翻譯題，沿用題 id a1-u04-l06-q16；目標字沿用 grandma",
         "resolution": "改為 translate：promptZh「奶奶喜歡在花園裡種花。」、hintWords [\"grandma\"]、referenceEn [\"Grandma likes to grow flowers in the garden.\",\"My grandma likes growing flowers in her garden.\"]、rubricZh [\"「種花」可寫，例如 grow flowers 等\",\"like 後面接 to＋原形、動名詞都正確（例如 likes to grow、likes growing）；「花園」前可加 the、her 等\"]（原 makeSentence：instructionZh「用 grandma 造一個句子，說說你的奶奶或外婆。」、referenceEn [\"My grandma likes to cook.\",\"Grandma lives with my family.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

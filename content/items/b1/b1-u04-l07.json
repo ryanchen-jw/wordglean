@@ -125,10 +125,10 @@
       "audioZh": "只有員工可以看這封郵件，因為這是內部訊息。",
       "questionZh": "誰可以看這封郵件？",
       "options": [
-        "Only the workers.",
-        "All the customers.",
-        "Anyone with an email.",
-        "Only the manager."
+        "Only the workers",
+        "All the customers",
+        "Anyone with an email",
+        "Only the manager"
       ],
       "answer": 0
     },
@@ -380,6 +380,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unique）原位換成翻譯題，沿用題 id b1-u04-l07-q17；目標字沿用 unique",
         "resolution": "改為 translate：promptZh「這座城市的建築風格很獨特。」、hintWords [\"unique\"]、referenceEn [\"The buildings in this city have a unique style.\",\"The style of the buildings in this city is unique.\"]、rubricZh [\"用 unique 表示「獨特的」（例如 a unique style、is unique 等）\",\"「建築風格」可寫，例如 the style of the buildings、the buildings have a … style 等\"]（原 makeSentence：instructionZh「用 unique 造一個句子，介紹一樣你覺得很獨特的東西或地方。」、referenceEn [\"My hometown has a unique night market.\",\"I think this old cafe is unique.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

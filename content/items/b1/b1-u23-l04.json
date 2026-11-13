@@ -112,10 +112,10 @@
       "audioZh": "有氧課現在改在星期三晚上，不是星期一早上了。",
       "questionZh": "有氧課現在什麼時候上？",
       "options": [
-        "Wednesday evenings.",
-        "Monday mornings as before.",
-        "Every weekend afternoon.",
-        "Friday nights."
+        "Wednesday evenings",
+        "Monday mornings as before",
+        "Every weekend afternoon",
+        "Friday nights"
       ],
       "answer": 0
     },
@@ -172,8 +172,8 @@
     {
       "id": "b1-u23-l04-q14",
       "type": "reading",
-      "passageEn": "Our sports club offers many activities. Climbers can practice on a high wall inside the building, and children can learn gymnastics on Saturdays. There is an aerobics class with loud music every evening. In winter, the club takes members to the mountains to snowboard, and in summer, it runs diving trips to a small island. An outdoor jogging group meets at six every morning. Above all, the coaches teach good sportsmanship.",
-      "passageZh": "我們的運動俱樂部提供很多活動。攀爬者可以在館內的高牆上練習，孩子們每週六可以學體操。每天晚上都有一堂配著大聲音樂的有氧課。冬天，俱樂部帶會員到山上玩滑雪板；夏天則舉辦到小島的潛水之旅。一個戶外慢跑團每天早上六點集合。最重要的是，教練們會教大家好的運動家精神。",
+      "passageEn": "Our sports club offers many activities. Climbers can practice on a climbing wall inside the building, and children can learn gymnastics on Saturdays. There is an aerobics class with loud music every evening. In winter, the club takes members to the mountains to snowboard, and in summer, it runs diving trips to a small island. An outdoor jogging group meets at six every morning. Above all, the coaches teach good sportsmanship.",
+      "passageZh": "我們的運動俱樂部提供很多活動。攀爬者可以在館內的攀岩牆上練習，孩子們每週六可以學體操。每天晚上都有一堂配著大聲音樂的有氧課。冬天，俱樂部帶會員到山上玩滑雪板；夏天則舉辦到小島的潛水之旅。一個戶外慢跑團每天早上六點集合。最重要的是，教練們會教大家好的運動家精神。",
       "questions": [
         {
           "questionZh": "孩子們星期六可以學什麼？",
@@ -366,6 +366,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（snowboard）原位換成翻譯題，沿用題 id b1-u23-l04-q16；目標字沿用 snowboard",
         "resolution": "改為 translate：promptZh「她租了一塊滑雪板，在山上玩了一整天。」、hintWords [\"snowboard\"]、referenceEn [\"She rented a snowboard and spent the whole day on the mountain.\",\"She rented a snowboard and used it all day on the mountain.\"]、rubricZh [\"用 snowboard 表示「滑雪板」（例如 rented a snowboard）\",\"「玩了一整天」可寫，例如 spent the whole day、all day 等\"]（原 makeSentence：instructionZh「用 snowboard 造一個句子，說說你玩滑雪板的經驗或想法。」、referenceEn [\"I want to learn to snowboard one day.\",\"I tried to snowboard last winter, but I fell a lot.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

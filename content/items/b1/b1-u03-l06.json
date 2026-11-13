@@ -40,7 +40,7 @@
       "id": "b1-u03-l06-q03",
       "type": "wordCard",
       "word": "observe",
-      "exampleEn": "Scientists observe the birds from a small hut.",
+      "exampleEn": "Scientists observe birds from a small hut.",
       "exampleZh": "科學家從一間小屋裡觀察鳥類。",
       "glossZh": "觀察；注意到",
       "distractorsZh": [
@@ -94,7 +94,7 @@
       "word": "lift",
       "exampleEn": "This box is too heavy for me to lift.",
       "exampleZh": "這個箱子太重了，我抬不動。",
-      "glossZh": "抬起；舉起；便車",
+      "glossZh": "抬起；舉起；便車；（英式：便車義）",
       "distractorsZh": [
         "推開",
         "拖著",
@@ -127,10 +127,10 @@
       "audioZh": "我們下個月會在大型超市推廣我們的新茶。",
       "questionZh": "他們下個月要在哪裡推廣新茶？",
       "options": [
-        "In small shops near schools.",
-        "In small supermarkets.",
-        "In large food stores.",
-        "At the train station."
+        "In small shops near schools",
+        "In small supermarkets",
+        "In large food stores",
+        "At the train station"
       ],
       "answer": 2
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u03-l06-q15",
       "type": "reading",
-      "passageEn": "Mr. Huang has observed birds for twenty years. He first gained an interest in birds when he was a boy. Last year, he settled in a small village near the mountains, where many rare birds live. He now gives talks to promote the protection of these birds. People have started to associate the village with bird watching, and there is a growing demand for local guides. Mr. Huang hopes young people will lift their eyes from their phones and enjoy nature.",
+      "passageEn": "Mr. Huang has observed birds for twenty years. He first became interested in birds when he was a boy. Last year, he settled in a small village near the mountains, where many rare birds live. He now gives talks to promote the protection of these birds. People have started to associate the village with bird watching, and there is a growing demand for local guides. Mr. Huang hopes young people will lift their eyes from their phones and enjoy nature.",
       "passageZh": "黃先生觀察鳥類已經二十年了。他小時候就開始對鳥產生興趣。去年，他在山區附近的一個小村子定居，那裡住著許多稀有的鳥。他現在會去演講，推廣保護這些鳥類。人們開始把這個村子和賞鳥聯想在一起，對當地導覽員的需求也越來越大。黃先生希望年輕人能把眼睛從手機上抬起來，好好欣賞大自然。",
       "questions": [
         {
@@ -514,6 +514,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（demand）原位換成翻譯題，沿用題 id b1-u03-l06-q17；目標字沿用 demand",
         "resolution": "改為 translate：promptZh「老闆要求我們在明天早上以前完成報告。」、hintWords [\"demand\"]、referenceEn [\"The boss demanded that we finish the report by tomorrow morning.\",\"Our boss demanded that we finish the report before tomorrow morning.\"]、rubricZh [\"用 demand 表示「要求」（例如 demanded that we finish…；寫 asked us to finish 也正確）\",\"時態可用 demands、demanded 等；that 子句動詞用原形或 should＋原形都可以（例如 finish、should finish）\"]（原 makeSentence：instructionZh「用 demand 造一個句子，說說你曾經向別人要求過什麼。」、referenceEn [\"I demanded an answer from the shop.\",\"I once demanded my money back from a hotel.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

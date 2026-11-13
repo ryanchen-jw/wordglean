@@ -152,7 +152,7 @@
       "id": "a1-u01-l03-q13",
       "type": "mcq",
       "stemEn": "I like milk, ____ my sister does not.",
-      "stemZh": "我喜歡牛奶，但是我妹妹不喜歡。",
+      "stemZh": "我喜歡牛奶，但是我的姊妹不喜歡。",
       "options": [
         "this",
         "for",
@@ -190,10 +190,10 @@
       "id": "a1-u01-l03-q15",
       "type": "reading",
       "passageEn": "Kevin and his brother are from Japan. They live in Taipei now. Every Saturday, they go to the park at nine. Kevin likes to play ball, but his brother likes to read. We often see them there.",
-      "passageZh": "Kevin 和他的弟弟來自日本，他們現在住在台北。每個星期六，他們九點去公園。Kevin 喜歡打球，但他弟弟喜歡看書。我們常在那裡看到他們。",
+      "passageZh": "Kevin 和他的兄弟來自日本，他們現在住在台北。每個星期六，他們九點去公園。Kevin 喜歡打球，但他的兄弟喜歡看書。我們常在那裡看到他們。",
       "questions": [
         {
-          "questionZh": "Kevin 和弟弟星期六幾點去公園？",
+          "questionZh": "Kevin 和他的兄弟星期六幾點去公園？",
           "options": [
             "九點",
             "七點",
@@ -202,7 +202,7 @@
           "answer": 0
         },
         {
-          "questionZh": "Kevin 的弟弟喜歡做什麼？",
+          "questionZh": "Kevin 的兄弟喜歡做什麼？",
           "options": [
             "打球",
             "看書",
@@ -357,6 +357,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（but）原位換成翻譯題，沿用題 id a1-u01-l03-q17；目標字沿用 but",
         "resolution": "改為 translate：promptZh「這家店很小，但是很乾淨。」、hintWords [\"but\"]、referenceEn [\"This shop is small, but it is clean.\",\"This shop is small, but it's very clean.\"]、rubricZh [\"用 but 連接意思相反的兩部分；but 後面寫完整句子或省略寫法（例如 but clean）都正確\",\"「這家店」可寫，例如 this shop、this store 等\"]（原 makeSentence：instructionZh「用 but 造一個句子，說說你喜歡和不喜歡的兩樣食物。」、referenceEn [\"I like apples, but I do not like bananas.\",\"I like rice, but I do not like fish.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

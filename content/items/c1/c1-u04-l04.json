@@ -129,10 +129,10 @@
       "audioZh": "我們很多員工現在每週有三天遠端工作。",
       "questionZh": "這段話在說什麼？",
       "options": [
-        "Staff work longer hours.",
-        "Many work from home.",
-        "It is closing.",
-        "Staff travel abroad a lot."
+        "Staff work longer hours",
+        "Many work from home",
+        "It is closing",
+        "Staff travel abroad a lot"
       ],
       "answer": 1
     },
@@ -223,7 +223,7 @@
       ],
       "referenceEn": [
         "I'm not remotely interested in sports.",
-        "I am not even remotely interested in sport."
+        "I am not even remotely interested in sports."
       ],
       "rubricZh": [
         "not remotely＋形容詞表示「一點也不」（例如 not remotely interested 等）",
@@ -317,6 +317,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（closeness）原位換成翻譯題，沿用題 id c1-u04-l04-q17；目標字沿用 closeness",
         "resolution": "改為 translate：promptZh「這支球隊的成功，來自球員之間的親密關係。」、hintWords [\"closeness\"]、referenceEn [\"The team's success comes from the closeness between its players.\",\"The closeness among the players is the reason for the team's success.\"]、rubricZh [\"「親密關係」用 closeness（例如 the closeness between the players 等）\",\"「來自」可寫，例如 comes from、is the reason for、is due to 等\"]（原 makeSentence：instructionZh「用 closeness 造一個句子，說說你和某個人之間的親近關係。」、referenceEn [\"I value the closeness I have with my older sister.\",\"The closeness between my best friend and me has lasted twenty years.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

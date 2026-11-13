@@ -111,7 +111,7 @@
       "id": "b2-p04-l04-q09",
       "type": "listenChoice",
       "audioEn": "I've had to work overtime every day this week, so I'm going to sleep all weekend.",
-      "audioZh": "我這週每天都得加班，所以週末我要睡一整天。",
+      "audioZh": "我這週每天都得加班，所以整個週末我都要拿來睡覺。",
       "questionZh": "說話者這個週末打算做什麼？",
       "options": [
         "Rest at home and get some sleep",
@@ -296,6 +296,12 @@
         "message": "執行長第③關裁示修正：要點超過 80 字元上限，縮短措辭",
         "resolution": "改前：\"不用片語但意思正確也算對（例如 applied to the bank、handed in an application、sent an application 等）\"；改後：\"不用片語但意思正確也算對（例如 applied to the bank、handed in / sent an application 等）\"",
         "resolvedAt": "2026-10-06T00:31:24Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

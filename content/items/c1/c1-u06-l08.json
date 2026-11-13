@@ -127,10 +127,10 @@
       "audioZh": "別陷在細枝末節裡，要專注在這個計畫的主要目標上。",
       "questionZh": "說話者建議怎麼做？",
       "options": [
-        "Ask the manager for more time.",
-        "Check every small detail twice.",
-        "Focus on the main goals.",
-        "Stop working early."
+        "Ask the manager for more time",
+        "Check every small detail twice",
+        "Focus on the main goals",
+        "Stop working early"
       ],
       "answer": 2
     },
@@ -221,7 +221,7 @@
       ],
       "referenceEn": [
         "He always worries about the minutiae.",
-        "He is always worried about the minutiae of things."
+        "He is always worried about the minutiae."
       ],
       "rubricZh": [
         "minutiae 表示「細枝末節」，是複數名詞（例如 the minutiae 等）",
@@ -310,6 +310,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（norms）原位換成翻譯題，沿用題 id c1-u06-l08-q17；目標字沿用 norms",
         "resolution": "改為 translate：promptZh「新來的員工通常需要幾週才能了解辦公室的規範。」、hintWords [\"norms\"]、referenceEn [\"New employees usually need a few weeks to learn the office norms.\",\"It usually takes new staff a few weeks to understand the norms of the office.\"]、rubricZh [\"「規範」用 norms（例如 the office norms、the norms of the office 等）\",\"「了解」可寫，例如 learn、understand、get used to 等\",\"「新來的員工」可寫，例如 new employees、new staff 等\"]（原 makeSentence：instructionZh「用 norms 造一個句子，說說你家鄉或你工作場所的某個規範。」、referenceEn [\"In my hometown, social norms say you should greet your neighbors.\",\"One of the norms in my office is that nobody eats at their desk.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

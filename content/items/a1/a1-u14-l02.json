@@ -31,7 +31,7 @@
       "word": "cinema",
       "exampleEn": "Let's go to the cinema tonight.",
       "exampleZh": "我們今晚去電影院吧。",
-      "glossZh": "電影院",
+      "glossZh": "電影院；（英式）",
       "distractorsZh": [
         "圖書館",
         "體育館",
@@ -220,7 +220,7 @@
       ],
       "referenceEn": [
         "Let's go to the cinema tonight.",
-        "Let's go to a movie tonight."
+        "Let's see a movie at the cinema tonight."
       ],
       "rubricZh": [
         "提議可用 Let's 等",
@@ -356,6 +356,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（game）原位換成翻譯題，沿用題 id a1-u14-l02-q17；目標字沿用 game",
         "resolution": "改為 translate：promptZh「比賽七點開始。」、hintWords [\"game\"]、referenceEn [\"The game starts at seven.\",\"The game begins at seven o'clock.\"]、rubricZh [\"「七點」可寫，例如 at seven、at seven o'clock 等\",\"「開始」可寫，例如 starts、begins 等；「比賽」寫 game 或 match 都正確\"]（原 makeSentence：instructionZh「用 game 造一個句子，說說你喜歡玩或看的遊戲、比賽。」、referenceEn [\"I like to play games on my phone.\",\"I watched a baseball game yesterday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

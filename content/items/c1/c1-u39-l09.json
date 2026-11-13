@@ -116,10 +116,10 @@
       "audioZh": "他看著破掉的花瓶，懊悔地向奶奶道歉。",
       "questionZh": "他對奶奶做了什麼？",
       "options": [
-        "He bought her a new vase.",
-        "He said sorry.",
-        "He blamed the cat for it.",
-        "He hid the pieces quickly."
+        "He bought her a new vase",
+        "He said sorry",
+        "He blamed the cat for it",
+        "He hid the pieces quickly"
       ],
       "answer": 1
     },
@@ -354,6 +354,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（self-conscious）原位換成翻譯題，沿用題 id c1-u39-l09-q16；目標字沿用 self-conscious",
         "resolution": "改為 translate：promptZh「第一次用英文開會時，他很怕說錯，覺得很難為情。」、hintWords [\"self-conscious\"]、referenceEn [\"At his first meeting in English, he was self-conscious and afraid of making mistakes.\",\"He felt self-conscious at his first English meeting because he was afraid of saying something wrong.\"]、rubricZh [\"「難為情」用 self-conscious（例如 was self-conscious、felt self-conscious 等）\",\"「怕說錯」可寫，例如 afraid of making mistakes、afraid of saying something wrong 等\",\"說的是已發生的事，時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 self-conscious 造一個句子，說說什麼情況會讓你覺得難為情。」、referenceEn [\"I feel self-conscious when people watch me eat.\",\"I get self-conscious whenever someone takes a photo of me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

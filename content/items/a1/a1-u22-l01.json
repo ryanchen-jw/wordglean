@@ -18,7 +18,7 @@
       "type": "wordCard",
       "word": "band",
       "exampleEn": "My brother plays in a band.",
-      "exampleZh": "我哥哥在樂團裡演奏。",
+      "exampleZh": "我的兄弟在樂團裡演奏。",
       "glossZh": "樂團",
       "distractorsZh": [
         "球隊",
@@ -84,7 +84,7 @@
       "word": "football",
       "exampleEn": "They play football after school.",
       "exampleZh": "他們放學後踢足球。",
-      "glossZh": "足球；美式足球",
+      "glossZh": "足球；美式足球；（英式：足球義）",
       "distractorsZh": [
         "籃球",
         "棒球",
@@ -190,7 +190,7 @@
       "id": "a1-u22-l01-q15",
       "type": "reading",
       "passageEn": "Mia's hobbies are art and music. She paints pictures of the blue sea, and she plays the guitar in a band. On the weekend, she goes to the theater with her friends. She also collects photos of famous actors. Her brother does not like art. He likes football.",
-      "passageZh": "Mia 的嗜好是藝術和音樂。她畫藍色大海的圖，也在樂團裡彈吉他。週末她和朋友去劇院。她也收集知名演員的照片。她哥哥不喜歡藝術，他喜歡足球。",
+      "passageZh": "Mia 的嗜好是藝術和音樂。她畫藍色大海的圖，也在樂團裡彈吉他。週末她和朋友去劇院。她也收集知名演員的照片。她的兄弟不喜歡藝術，他喜歡足球。",
       "questions": [
         {
           "questionZh": "Mia 畫什麼？",
@@ -333,6 +333,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（famous）原位換成翻譯題，沿用題 id a1-u22-l01-q17；目標字沿用 famous",
         "resolution": "改為 translate：promptZh「這座寺廟很有名。」、hintWords [\"famous\"]、referenceEn [\"This temple is very famous.\",\"This temple is famous.\"]、rubricZh [\"famous 放在 be 動詞後面（例如 is famous）\",\"「很」可寫，例如 very 等，沒寫也正確\"]（原 makeSentence：instructionZh「用 famous 造一個句子，說說一個有名的人或地方。」、referenceEn [\"This singer is famous in Taiwan.\",\"Paris is a famous city.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

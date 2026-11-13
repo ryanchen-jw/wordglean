@@ -119,7 +119,7 @@
       "id": "b1-u28-l03-q09",
       "type": "listenType",
       "sentenceEn": "My brother wants to study politics.",
-      "sentenceZh": "我哥哥想讀政治。"
+      "sentenceZh": "我的兄弟想讀政治。"
     },
     {
       "id": "b1-u28-l03-q10",
@@ -128,10 +128,10 @@
       "audioZh": "遺失物可以在晚上六點前到主辦公室領取。",
       "questionZh": "遺失物可以在哪裡領取？",
       "options": [
-        "At the main gate.",
-        "At the bus station downtown.",
-        "At the front gate after six.",
-        "At the central office."
+        "At the main gate",
+        "At the bus station downtown",
+        "At the front gate after six",
+        "At the central office"
       ],
       "answer": 3
     },
@@ -188,7 +188,7 @@
     {
       "id": "b1-u28-l03-q15",
       "type": "reading",
-      "passageEn": "Two neighbors on my street, Mr. Lee and Mrs. Wu, had a conflict about a tall tree. The tree was on Mr. Lee's property, but its leaves fell into Mrs. Wu's garden. Mr. Lee wanted to preserve the tree, and Mrs. Wu wanted it gone. It felt like a long battle! Still, they stayed civil. There was never any shouting or violence. At first, Mrs. Wu said she felt like a victim. In the end, a friend helped them talk, and they agreed to cut the tree a little for safety. My dad, who never talks about politics, says this is how all problems should be solved.",
+      "passageEn": "Two neighbors on my street, Mr. Lee and Mrs. Wu, had a conflict about a tall tree. The tree was on Mr. Lee's property, but its leaves fell into Mrs. Wu's garden. Mr. Lee wanted to preserve the tree, and Mrs. Wu wanted it gone. It felt like a long battle! Still, they stayed civil. There was never any shouting or violence. At first, Mrs. Wu said she felt like a victim. In the end, a friend helped them talk, and they agreed to trim the tree a little for safety. My dad, who never talks about politics, says this is how all problems should be solved.",
       "passageZh": "我們街上的兩位鄰居 Lee 先生和 Wu 太太，為了一棵高大的樹起了衝突。那棵樹在 Lee 先生的土地上，但葉子會掉進 Wu 太太的花園。Lee 先生想保留那棵樹，Wu 太太則想把它弄走。感覺像一場漫長的戰役！不過，他們一直保持禮貌，從來沒有大吼大叫或動手。一開始，Wu 太太說她覺得自己是受害者。最後，一位朋友幫他們好好談，他們同意為了安全把樹修剪一點。從不談政治的爸爸說，所有的問題都應該這樣解決。",
       "questions": [
         {
@@ -340,6 +340,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（civil）原位換成翻譯題，沿用題 id b1-u28-l03-q17；目標字沿用 civil",
         "resolution": "改為 translate：promptZh「我們的鄰居不太熱情，但至少很有禮貌。」、hintWords [\"civil\"]、referenceEn [\"Our neighbor isn't very warm, but he is at least civil.\",\"Our neighbor is not very warm, but at least she is civil.\"]、rubricZh [\"用 civil 表示「（至少）有禮貌的」（例如 he is civil；寫 polite 也正確）\",\"「至少」可寫，例如 at least 等；he、she 都可以\"]（原 makeSentence：instructionZh「用 civil 造一個句子，說說你怎麼和別人保持禮貌。」、referenceEn [\"I try to stay civil when people are rude to me.\",\"I stay civil with my neighbors, even when they are noisy.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

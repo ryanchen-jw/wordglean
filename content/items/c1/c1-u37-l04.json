@@ -112,18 +112,18 @@
       "audioZh": "我們新經理的想法，和這家公司一向的做事方式相差甚遠。",
       "questionZh": "說話者認為新經理的想法怎麼樣？",
       "options": [
-        "They copy another company's plan.",
-        "They are exactly what we need now.",
-        "They are easy to put into practice.",
-        "They are very different from the company's usual way."
+        "They copy another company's plan",
+        "They are exactly what we need now",
+        "They are easy to put into practice",
+        "They are very different from the company's usual way"
       ],
       "answer": 3
     },
     {
       "id": "c1-u37-l04-q10",
       "type": "shadowing",
-      "sentenceEn": "Open the door and let out some of the stuffiness from the meeting room.",
-      "sentenceZh": "把門打開，讓會議室裡的悶熱散出去一些。"
+      "sentenceEn": "Open the door to get rid of some of the stuffiness in the meeting room.",
+      "sentenceZh": "把門打開，消除一點會議室裡的悶熱。"
     },
     {
       "id": "c1-u37-l04-q11",
@@ -172,8 +172,8 @@
     {
       "id": "c1-u37-l04-q14",
       "type": "reading",
-      "passageEn": "Last July, our team visited a tropical garden as part of a staff outing. The bus was crowded, and its stuffiness made everyone sleepy. Once inside the garden, however, we woke up quickly. Huge, pendulous fruits hung from the trees, and a guide explained that the plants were robustly built to survive heavy storms. Mosquitoes were everywhere, so we covered our arms with insect repellant. The tour was tautly organized, and it ended exactly on time. Afterwards, we were supposed to meet at the gate, but people wandered off chaotically to buy drinks, take photos and mingle with other visitors. The day felt far removed from our usual office routine, and everyone agreed it was a success.",
-      "passageZh": "去年七月，我們團隊參加員工旅遊，去參觀一座熱帶植物園。巴士很擠，車裡悶熱不通風，大家都昏昏欲睡。不過一進到植物園，我們很快就醒了。樹上垂掛著巨大的果實，導覽員解釋說，這些植物長得很強健，才能撐過強烈的暴風雨。到處都是蚊子，所以我們在手臂上擦了防蚊液。導覽安排得很緊湊，準時結束。之後我們本來應該在大門口集合，但大家亂七八糟地散開，去買飲料、拍照，還跟其他遊客聊天。這一天和我們平常的辦公室生活截然不同，大家都覺得很成功。",
+      "passageEn": "Last July, our team visited a tropical garden as part of a staff outing. The bus was crowded, and its stuffiness made everyone sleepy. Once inside the garden, however, we woke up quickly. Huge, pendulous fruits hung from the trees, and a guide explained that the plants grew robustly enough to survive heavy storms. Mosquitoes were everywhere, so we covered our arms with insect repellant. The tour was tautly organized, and it ended exactly on time. Afterwards, we were supposed to meet at the gate, but people wandered off chaotically to buy drinks, take photos and mingle with other visitors. The day felt far removed from our usual office routine, and everyone agreed it was a success.",
+      "passageZh": "去年七月，我們團隊參加員工旅遊，去參觀一座熱帶植物園。巴士很擠，車裡悶熱不通風，大家都昏昏欲睡。不過一進到植物園，我們很快就醒了。樹上垂掛著巨大的果實，導覽員解釋說，這些植物長得很強健，足以撐過強烈的暴風雨。到處都是蚊子，所以我們在手臂上擦了防蚊液。導覽安排得很緊湊，準時結束。之後我們本來應該在大門口集合，但大家亂七八糟地散開，去買飲料、拍照，還跟其他遊客聊天。這一天和我們平常的辦公室生活截然不同，大家都覺得很成功。",
       "questions": [
         {
           "questionZh": "導覽員說這些植物為什麼長得那麼強健？",
@@ -295,6 +295,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（removed）原位換成翻譯題，沿用題 id c1-u37-l04-q16；目標字沿用 removed",
         "resolution": "改為 translate：promptZh「這部電影和原著小說的內容相差甚遠。」、hintWords [\"removed\"]、referenceEn [\"The film is far removed from the original novel.\",\"The movie's story is far removed from the novel it is based on.\"]、rubricZh [\"「相差甚遠」用 far removed from（例如 is far removed from the original novel 等）\",\"「原著小說」可寫，例如 the original novel、the novel it is based on 等\"]（原 makeSentence：instructionZh「用 removed（常寫成 far removed from）造一個句子，說說某件事和你原本想像的差很多。」、referenceEn [\"The job was far removed from what I had imagined.\",\"The final design was far removed from my first sketch.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

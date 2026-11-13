@@ -126,7 +126,7 @@
     {
       "id": "b2-u02-l03-q10",
       "type": "listenChoice",
-      "audioEn": "The bus is scheduled to leave at seven, but it invariably arrives late.",
+      "audioEn": "The bus is scheduled to leave at seven, but it invariably leaves late.",
       "audioZh": "這班公車預定七點出發，但它總是遲到。",
       "questionZh": "關於這班公車，說話者說了什麼？",
       "options": [
@@ -190,8 +190,8 @@
     {
       "id": "b2-u02-l03-q15",
       "type": "reading",
-      "passageEn": "Every year, the town of Lukang holds a festival of lights. The festival is an enduring tradition: it began more than a century ago and continued even in wartime. The old town square, formerly a busy market, is the center of the event. This year's festival is scheduled for this coming weekend, and the forthcoming program includes music and dance. Visitors invariably arrive early to find a good spot, and some even wait from dawn. When thousands of lights are turned on at seven, the whole square instantly turns bright and warm. Admittedly, the square gets very crowded, but many visitors say it is the most beautiful night of the year.",
-      "passageZh": "鹿港每年都會舉辦燈會。這個節慶是歷久不衰的傳統：它始於一百多年前，連戰時都沒有中斷。老城廣場以前是熱鬧的市場，現在是活動的中心。今年的燈會預定在這個週末舉行，即將推出的節目包括音樂和舞蹈。遊客總是很早就到，想找個好位置，有些人甚至從黎明就開始等。晚上七點，成千上萬盞燈一點亮，整個廣場立刻變得明亮又溫暖。不可否認，廣場會非常擁擠，但很多遊客說那是一年中最美的夜晚。",
+      "passageEn": "Every year, the town of Lukang holds a festival of lights. The festival has become an enduring tradition, and many local families come back to it every year. The old town square, formerly a busy market, is the center of the event. This year's festival is scheduled for this coming weekend, and the forthcoming program includes music and dance. Visitors invariably arrive early to find a good spot, and some even wait from dawn. When thousands of lights are turned on at seven, the whole square instantly turns bright and warm. Admittedly, the square gets very crowded, but many visitors say it is the most beautiful night of the year.",
+      "passageZh": "鹿港每年都會舉辦燈會。這個節慶已成為歷久不衰的傳統，很多在地家庭每年都會回來參加。老城廣場以前是熱鬧的市場，現在是活動的中心。今年的燈會預定在這個週末舉行，即將推出的節目包括音樂和舞蹈。遊客總是很早就到，想找個好位置，有些人甚至從黎明就開始等。晚上七點，成千上萬盞燈一點亮，整個廣場立刻變得明亮又溫暖。不可否認，廣場會非常擁擠，但很多遊客說那是一年中最美的夜晚。",
       "questions": [
         {
           "questionZh": "燈會的中心在哪裡？",
@@ -355,6 +355,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（invariably）原位換成翻譯題，沿用題 id b2-u02-l03-q17；目標字沿用 invariably",
         "resolution": "改為 translate：promptZh「這家麵包店的麵包總是在中午前就賣光了。」、hintWords [\"invariably\"]、referenceEn [\"The bread at this bakery is invariably sold out before noon.\",\"This bakery invariably sells out of bread before noon.\"]、rubricZh [\"invariably 表示「總是、一向」，可放 be 動詞後或一般動詞前（例如 is invariably sold out 等）\",\"「賣光」可寫，例如 is sold out、sells out of、is all gone 等\",\"「中午前」可寫，例如 before noon、by noon、before lunchtime 等\"]（原 makeSentence：instructionZh「用 invariably 造一個句子，說說某件每次都會發生的事。」、referenceEn [\"When I travel by train, I invariably fall asleep.\",\"My cat invariably sits on my keyboard when I am working.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（題庫外問題）、passageZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

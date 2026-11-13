@@ -25,7 +25,7 @@
       "id": "b2-u05-l07-q02",
       "type": "wordCard",
       "word": "demolish",
-      "exampleEn": "The old cinema will be demolished next month.",
+      "exampleEn": "The old movie theater will be demolished next month.",
       "exampleZh": "那間老電影院下個月要拆除。",
       "glossZh": "拆除；摧毀",
       "distractorsZh": [
@@ -185,8 +185,8 @@
     {
       "id": "b2-u05-l07-q15",
       "type": "reading",
-      "passageEn": "When my parents bought an old house last year, they wanted to demolish it and build a new one. However, the builder suggested a complete refresh instead, which would be much less costly. First, workers detached the old doors and windows. Then they found something surprising under the floor: a box of letters more than fifty years old. My father managed to identify the writer, the first owner of the house. His reaction was pure excitement. He made a duplicate of each letter and sent the originals to the owner's family. It was a relief to know they were going to the right people. Now the house looks great, and our family has a story to tell.",
-      "passageZh": "我爸媽去年買下一棟老房子時，本來想拆掉重建。不過，包商建議改成全面翻新，花費會少很多。首先，工人拆下舊的門窗。接著，他們在地板下發現了令人意外的東西：一盒五十多年前的信。我爸爸設法認出了寫信的人，就是這棟房子的第一位屋主。他的反應是興奮極了。他把每封信都複製了一份，再把原件寄給那位屋主的家人。知道這些信回到了對的人手上，讓人鬆了一口氣。現在房子看起來很棒，我們家也多了一個故事可以說。",
+      "passageEn": "When my parents bought an old house last year, they wanted to demolish it and build a new one. However, the builder suggested a complete refresh instead, which would be much less costly. First, workers detached the old doors and windows. Then they found something surprising under the floor: a box of letters more than fifty years old. My father managed to identify the writer, the first owner of the house. My father's reaction was pure excitement. He made a duplicate of each letter and sent the originals to the owner's family. It was a relief to know they were going to the right people. Now the house looks great, and our family has a story to tell.",
+      "passageZh": "我爸媽去年買下一棟老房子時，本來想拆掉重建。不過，包商建議改成全面翻新，花費會少很多。首先，工人拆下舊的門窗。接著，他們在地板下發現了令人意外的東西：一盒五十多年前的信。我爸爸設法認出了寫信的人，就是這棟房子的第一位屋主。爸爸的反應是興奮極了。他把每封信都複製了一份，再把原件寄給那位屋主的家人。知道這些信回到了對的人手上，讓人鬆了一口氣。現在房子看起來很棒，我們家也多了一個故事可以說。",
       "questions": [
         {
           "questionZh": "工人在地板下發現了什麼？",
@@ -410,6 +410,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（reaction）原位換成翻譯題，沿用題 id b2-u05-l07-q17；目標字沿用 reaction",
         "resolution": "改為 translate：promptZh「這部新電影得到觀眾熱烈的反應。」、hintWords [\"reaction\"]、referenceEn [\"The new film got a very warm reaction from audiences.\",\"The new movie received a great reaction from the audience.\"]、rubricZh [\"reaction 是名詞（例如 got a warm reaction from、received a great reaction 等）\",\"「熱烈」可寫，例如 warm、great、very positive 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 reaction 造一個句子，說說你聽到某個消息時的反應。」、referenceEn [\"My first reaction to the job offer was surprise.\",\"When I heard I got the job, my first reaction was to call my mom.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

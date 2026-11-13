@@ -127,10 +127,10 @@
       "audioZh": "這家店通常九點關門，但今晚七點就會關。",
       "questionZh": "這家店今晚幾點關門？",
       "options": [
-        "At nine.",
-        "At seven.",
-        "At eight.",
-        "At ten."
+        "At nine",
+        "At seven",
+        "At eight",
+        "At ten"
       ],
       "answer": 1
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u04-l09-q15",
       "type": "reading",
-      "passageEn": "Jenny's bakery is famous for one cake. Typically, it has ten thin layers of cream and fruit. Its main characteristic is that each layer has a different flavor. Jenny watches closely as her workers cut the cake with a sharp knife. The shop also has a small selection of cookies. When customers take their first bite, they usually go silent for a moment. Then they smile and ask for more. Jenny's brief answer is always the same: \"Thank you.\"",
-      "passageZh": "Jenny 的麵包店以一款蛋糕聞名。這款蛋糕通常有十層薄薄的奶油和水果。它的主要特色是每一層的口味都不一樣。Jenny 會仔細看著員工用鋒利的刀子切蛋糕。店裡也有少量餅乾可以挑選。客人吃下第一口時，通常會安靜一下，接著露出笑容，想再多吃一些。Jenny 簡短的回答永遠一樣：「謝謝。」",
+      "passageEn": "Jenny's bakery is famous for one cake. Typically, it has ten thin layers of cream and fruit. Its main characteristic is that each layer has a different flavor. Jenny watches closely as her workers cut the cake with a sharp knife. The shop also has a small selection of cookies. When customers take their first bite, they usually go silent for a moment. Then they smile and say how good it is. Jenny's brief answer is always the same: \"Thank you.\"",
+      "passageZh": "Jenny 的麵包店以一款蛋糕聞名。這款蛋糕通常有十層薄薄的奶油和水果。它的主要特色是每一層的口味都不一樣。Jenny 會仔細看著員工用鋒利的刀子切蛋糕。店裡也有少量餅乾可以挑選。客人吃下第一口時，通常會安靜一下，接著露出笑容，稱讚蛋糕很好吃。Jenny 簡短的回答永遠一樣：「謝謝。」",
       "questions": [
         {
           "questionZh": "這款蛋糕的主要特色是什麼？",
@@ -376,6 +376,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（silent）原位換成翻譯題，沿用題 id b1-u04-l09-q17；目標字沿用 silent",
         "resolution": "改為 translate：promptZh「他昨天整場會議都沒說話，保持沉默。」、hintWords [\"silent\"]、referenceEn [\"He stayed silent during the whole meeting yesterday.\",\"Yesterday, he remained silent for the entire meeting.\"]、rubricZh [\"用 silent 表示「沉默的」（例如 stayed silent、kept silent、remained silent 等）\",\"「整場會議」可寫，例如 during the whole meeting、for the entire meeting 等；時態配合「昨天」\"]（原 makeSentence：instructionZh「用 silent 造一個句子，說說你在什麼情況下會保持安靜。」、referenceEn [\"I stay silent when my boss is angry.\",\"I always keep silent in the library.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

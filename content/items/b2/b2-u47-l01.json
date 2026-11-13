@@ -126,7 +126,7 @@
       "questionZh": "比賽後來怎麼了？",
       "options": [
         "It started an hour earlier than planned",
-        "It was cancelled",
+        "It was canceled",
         "It began later than planned",
         "It began in the rain"
       ],
@@ -166,8 +166,8 @@
     {
       "id": "b2-u47-l01-q14",
       "type": "mcq",
-      "stemEn": "I was so busy that I had to ____ lunch and eat a sandwich at my desk later.",
-      "stemZh": "我忙到只好不吃午餐，晚點才在辦公桌前吃三明治。",
+      "stemEn": "I was so busy that I had to ____ my lunch break and eat a sandwich at my desk.",
+      "stemZh": "我忙到只好跳過午休，在辦公桌前吃個三明治。",
       "options": [
         "illustration",
         "peel",
@@ -185,7 +185,7 @@
     {
       "id": "b2-u47-l01-q15",
       "type": "reading",
-      "passageEn": "My aunt is an artist who draws illustrations for children's books. She says her grandmother, who painted flowers in her spare time, first taught her to draw. For each picture, she makes a quick sketch before she adds color. Last year, she almost ceased working because her eyes had weakened, but a pair of special glasses solved the problem. Now she works every morning in a small room full of paper and paint. When I visit, she lets me sneak a look at her next book.",
+      "passageEn": "My aunt is an artist who draws illustrations for children's books. She says her grandmother, who painted flowers in her spare time, first taught her to draw. For each picture, she makes a quick sketch before she adds color. Last year, she almost ceased working because her eyesight had weakened, but a pair of special glasses solved the problem. Now she works every morning in a small room full of paper and paint. When I visit, she lets me sneak a look at her next book.",
       "passageZh": "我阿姨是一位替童書畫插圖的畫家。她說是她的祖母先教她畫畫的，祖母平常有空會畫花。每一幅畫，她都先畫一張速寫，再上色。去年她的視力變差，差點停止工作，不過一副特製眼鏡解決了問題。現在她每天早上都在一間堆滿紙和顏料的小房間裡工作。我去拜訪時，她會讓我偷看一下她的下一本書。",
       "questions": [
         {
@@ -345,6 +345,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spare）原位換成翻譯題，沿用題 id b2-u47-l01-q17；目標字沿用 spare",
         "resolution": "改為 translate：promptZh「你有多餘的筆可以借我嗎？」、hintWords [\"spare\"]、referenceEn [\"Do you have a spare pen I could borrow?\",\"Have you got a spare pen that I can borrow?\"]、rubricZh [\"spare 放在名詞前，表示「多餘的、備用的」（例如 a spare pen 等）\",\"「借我」可寫，例如 I could borrow、lend me 等\",\"問句可用 Do you have、Have you got 等\"]（原 makeSentence：instructionZh「用 spare 造一個句子，說說你空閒時做什麼，或你會準備哪些備用的東西。」、referenceEn [\"In my spare time, I like to go cycling by the river.\",\"I always carry a spare pair of socks in my sports bag.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

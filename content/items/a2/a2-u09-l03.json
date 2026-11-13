@@ -143,7 +143,7 @@
     {
       "id": "a2-u09-l03-q12",
       "type": "shadowing",
-      "sentenceEn": "My great-grandmother is alive and very healthy.",
+      "sentenceEn": "My great-grandmother is still alive and very healthy.",
       "sentenceZh": "我的曾祖母還健在，而且非常健康。"
     },
     {
@@ -469,6 +469,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（boss）原位換成翻譯題，沿用題 id a2-u09-l03-q17；目標字沿用 boss",
         "resolution": "改為 translate：promptZh「我的新老闆比我年輕。」、hintWords [\"boss\"]、referenceEn [\"My new boss is younger than me.\",\"My new boss is younger than I am.\"]、rubricZh [\"用 boss 表示「老闆」\",\"比較用 younger than（例如 younger than me、younger than I am 等）\"]（原 makeSentence：instructionZh「用 boss 造一個句子，說說你或家人的老闆。」、referenceEn [\"My boss is very kind to everyone.\",\"My mother's boss never comes to work late.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

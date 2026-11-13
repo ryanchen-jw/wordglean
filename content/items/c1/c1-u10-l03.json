@@ -106,7 +106,7 @@
       "id": "c1-u10-l03-q08",
       "type": "wordCard",
       "word": "marvel",
-      "exampleEn": "I marvel that she finishes so much work every day.",
+      "exampleEn": "I marvel at how much work she gets done every day.",
       "exampleZh": "她每天能完成那麼多工作，真令我驚嘆。",
       "glossZh": "驚嘆；感到驚奇",
       "distractorsZh": [
@@ -188,8 +188,8 @@
     {
       "id": "c1-u10-l03-q15",
       "type": "reading",
-      "passageEn": "As a child, Ana's brother Jun had a lust for adventure. He read stories about wicked pirates and brave explorers, and he marveled at maps of faraway places. His parents worried, but they understood that adventure was part of his psyche. He learned the rudiments of sailing at a summer camp, and at twenty, he voluntarily joined a team that travels around the world by boat to study the ocean. The first storm was daunting, and the team had to work fiercely to keep the boat safe. Still, Jun says he would not change anything. \"I will always crave the open sea,\" he wrote in his latest letter home.",
-      "passageZh": "Ana 的弟弟 Jun 從小就渴望冒險。他讀邪惡海盜和勇敢探險家的故事，也對遙遠地方的地圖驚嘆不已。他的父母很擔心，但他們明白冒險是他天性的一部分。他在夏令營學會了駕船的基礎，二十歲時，自願加入一個搭船環遊世界、研究海洋的團隊。第一場暴風雨令人害怕，團隊得拚命工作才保住船的安全。儘管如此，Jun 說他什麼都不想改變。他在最近寄回家的信中寫道：「我永遠都會渴望那片廣闊的大海。」",
+      "passageEn": "As a child, Ana's brother Jun had a lust for adventure. He read stories about wicked pirates and brave explorers, and he marveled at maps of faraway places. His parents worried, but they understood that adventure was part of his psyche. He learned the rudiments of sailing at a summer camp, and at twenty, he voluntarily joined a team that travels around the world by boat to study the ocean. The first storm was daunting, and the team had to fight fiercely to keep the boat safe. Still, Jun says he would not change anything. \"I will always crave the open sea,\" he wrote in his latest letter home.",
+      "passageZh": "Ana 的兄弟 Jun 從小就渴望冒險。他讀邪惡海盜和勇敢探險家的故事，也對遙遠地方的地圖驚嘆不已。他的父母很擔心，但他們明白冒險是他天性的一部分。他在夏令營學會了駕船的基礎，二十歲時，自願加入一個搭船環遊世界、研究海洋的團隊。第一場暴風雨令人害怕，團隊得拚命奮戰才保住船的安全。儘管如此，Jun 說他什麼都不想改變。他在最近寄回家的信中寫道：「我永遠都會渴望那片廣闊的大海。」",
       "questions": [
         {
           "questionZh": "Jun 小時候喜歡讀什麼故事？",
@@ -305,6 +305,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（crave）原位換成翻譯題，沿用題 id c1-u10-l03-q17；目標字沿用 crave",
         "resolution": "改為 translate：promptZh「在城市住久了，他渴望安靜的鄉村生活。」、hintWords [\"crave\"]、referenceEn [\"He has lived in the city for years and now craves a quiet life in the countryside.\",\"Having lived in the city for so long, he craves the peace of country life.\"]、rubricZh [\"「渴望」用 crave＋名詞（例如 craves a quiet life 等）\",\"「鄉村生活」可寫，例如 life in the countryside、country life 等\",\"時態配合內容（例如 craves、has started to crave 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 crave 造一個句子，說說你在某種情況下特別渴望的東西。」、referenceEn [\"When I study late at night, I crave something sweet.\",\"After a busy week at work, I crave a quiet day at home.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

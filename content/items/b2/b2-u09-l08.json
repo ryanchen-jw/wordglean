@@ -54,8 +54,8 @@
       "id": "b2-u09-l08-q04",
       "type": "wordCard",
       "word": "downfall",
-      "exampleEn": "The story follows the rise and downfall of a young boxer.",
-      "exampleZh": "這個故事講述一位年輕拳擊手的崛起與沒落。",
+      "exampleEn": "The story follows the success and sudden downfall of a young boxer.",
+      "exampleZh": "這個故事講述一位年輕拳擊手的成功與突然垮台。",
       "glossZh": "垮台；衰敗",
       "distractorsZh": [
         "崛起",
@@ -407,6 +407,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（downfall）原位換成翻譯題，沿用題 id b2-u09-l08-q17；目標字沿用 downfall",
         "resolution": "改為 translate：promptZh「過度自信最後導致他垮台。」、hintWords [\"downfall\"]、referenceEn [\"In the end, too much confidence led to his downfall.\",\"Being too confident was his downfall in the end.\"]、rubricZh [\"downfall 是名詞，表示「垮台、衰敗」（例如 led to his downfall、was his downfall 等）\",\"「過度自信」可寫，例如 too much confidence、being too confident 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 downfall 造一個句子，說說某人或某家公司失敗、垮台的原因。」、referenceEn [\"Spending too much money was the company's downfall.\",\"Pride was the downfall of the famous singer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

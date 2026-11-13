@@ -122,7 +122,7 @@
       "id": "a2-u10-l06-q10",
       "type": "shadowing",
       "sentenceEn": "This mug was a gift from my sister.",
-      "sentenceZh": "這個馬克杯是我姊姊送的禮物。"
+      "sentenceZh": "這個馬克杯是我的姊妹送的禮物。"
     },
     {
       "id": "a2-u10-l06-q11",
@@ -375,6 +375,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fried）原位換成翻譯題，沿用題 id a2-u10-l06-q16；目標字沿用 fried",
         "resolution": "改為 translate：promptZh「我不太喜歡油炸的食物。」、hintWords [\"fried\"]、referenceEn [\"I don't really like fried food.\",\"I don't like fried food very much.\"]、rubricZh [\"用 fried 表示「油炸的」，放在名詞前（例如 fried food）\",\"「不太喜歡」可寫，例如 don't really like、don't like…very much 等\"]（原 makeSentence：instructionZh「用 fried 造一個句子，說說你喜歡或不喜歡的一種油炸食物。」、referenceEn [\"I love fried chicken.\",\"I don't like fried fish.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -79,8 +79,8 @@
       "id": "b1-u18-l05-q06",
       "type": "wordCard",
       "word": "chariot",
-      "exampleEn": "The museum has a golden chariot from long ago.",
-      "exampleZh": "博物館有一輛很久以前的金色戰車。",
+      "exampleEn": "The museum has an ancient golden chariot.",
+      "exampleZh": "博物館有一輛古代的金色戰車。",
       "glossZh": "（古代的）雙輪馬車；戰車",
       "distractorsZh": [
         "腳踏車",
@@ -107,7 +107,7 @@
       "word": "windscreen",
       "exampleEn": "Clean the windscreen before you start driving.",
       "exampleZh": "開車前先把擋風玻璃擦乾淨。",
-      "glossZh": "（汽車的）擋風玻璃",
+      "glossZh": "（汽車的）擋風玻璃；（英式）",
       "distractorsZh": [
         "輪胎",
         "座椅",
@@ -127,10 +127,10 @@
       "audioZh": "我們的飛機五分鐘後準備起飛，請繫好安全帶。",
       "questionZh": "飛機什麼時候起飛？",
       "options": [
-        "In about one minute.",
-        "In five hours.",
-        "In fifteen minutes.",
-        "Five minutes from now."
+        "In about one minute",
+        "In five hours",
+        "In fifteen minutes",
+        "Five minutes from now"
       ],
       "answer": 3
     },
@@ -346,6 +346,24 @@
         "message": "執行長裁示：第③關：FIX 原句是航空公司的具體規定（§11.21），換成不涉及規定的情境",
         "resolution": "改為 promptZh「起飛的時候，我一直看著窗外。」、referenceEn [\"During takeoff, I kept looking out of the window.\",\"I kept looking out of the window during takeoff.\"]、rubricZh [\"用 takeoff 表示「起飛」（例如 during takeoff）\",\"時態配合內容（例如 kept looking、was looking 等）\"]（原 promptZh「起飛和降落時請關掉手機。」、referenceEn [\"Please turn off your phone during takeoff and landing.\",\"Please switch off your phones for takeoff and landing.\"]、rubricZh [\"用 takeoff 表示「起飛」（例如 during takeoff）\",\"「關掉」可寫，例如 turn off、switch off 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

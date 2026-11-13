@@ -92,8 +92,8 @@
       "id": "b1-u22-l05-q07",
       "type": "wordCard",
       "word": "enjoyment",
-      "exampleEn": "The children laughed with enjoyment.",
-      "exampleZh": "孩子們開心地笑了。",
+      "exampleEn": "Many people get a lot of enjoyment from music.",
+      "exampleZh": "很多人從音樂中得到許多樂趣。",
       "glossZh": "樂趣；享受",
       "distractorsZh": [
         "恐懼",
@@ -127,10 +127,10 @@
       "audioZh": "那位喜劇演員的表演九點開始，但八點開放入場。",
       "questionZh": "幾點開放入場？",
       "options": [
-        "At nine.",
-        "At eight thirty.",
-        "At eight.",
-        "At ten."
+        "At nine",
+        "At seven",
+        "At eight",
+        "At ten"
       ],
       "answer": 2
     },
@@ -143,7 +143,7 @@
     {
       "id": "b1-u22-l05-q12",
       "type": "shadowing",
-      "sentenceEn": "The animation in this film took three years.",
+      "sentenceEn": "The animation in this film took three years to make.",
       "sentenceZh": "這部電影的動畫花了三年製作。"
     },
     {
@@ -187,8 +187,8 @@
     {
       "id": "b1-u22-l05-q15",
       "type": "reading",
-      "passageEn": "My cousin Kai works in animation. He draws characters for animated films at a small studio. Before that, he wanted to be a novelist, but he found more enjoyment in drawing. On weekends, he goes outdoors to draw people in the park. Last month, his studio made a short film about a comedian who travels to an island resort that looks like paradise. A famous entertainer even sang the main song. Kai says his job is hard but full of fun.",
-      "passageZh": "我表親 Kai 從事動畫工作。他在一間小工作室為動畫電影畫角色。在那之前，他想當小說家，但他發現畫畫更有樂趣。週末時，他會到戶外，在公園畫人。上個月，他的工作室做了一部短片，講一位喜劇演員到一個像天堂的島上度假村旅行。一位有名的藝人還唱了主題曲。Kai 說他的工作很辛苦，但充滿樂趣。",
+      "passageEn": "My cousin Kai works in animation. He draws characters for animated films at a small studio. Before that, he wanted to be a novelist, but he found more enjoyment in drawing. On weekends, he goes outdoors to draw people in the park. Last month, his studio made a short film about a comedian who travels to an island resort that looks like paradise. A famous entertainer even sang a song for the film. Kai says his job is hard but a lot of fun.",
+      "passageZh": "我表親 Kai 從事動畫工作。他在一間小工作室為動畫電影畫角色。在那之前，他想當小說家，但他發現畫畫更有樂趣。週末時，他會到戶外，在公園畫人。上個月，他的工作室做了一部短片，講一位喜劇演員到一個像天堂的島上度假村旅行。一位有名的藝人還為這部片唱了一首歌。Kai 說他的工作很辛苦，但充滿樂趣。",
       "questions": [
         {
           "questionZh": "Kai 以前想做什麼？",
@@ -357,6 +357,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（enjoyment）原位換成翻譯題，沿用題 id b1-u22-l05-q17；目標字沿用 enjoyment",
         "resolution": "改為 translate：promptZh「下雨並沒有減少我們看煙火的樂趣。」、hintWords [\"enjoyment\"]、referenceEn [\"The rain did not reduce our enjoyment of the fireworks.\",\"The rain didn't spoil our enjoyment of the fireworks.\"]、rubricZh [\"用 enjoyment 表示「樂趣」（例如 our enjoyment of…）\",\"「沒有減少」可寫，例如 did not reduce、did not spoil 等\"]（原 makeSentence：instructionZh「用 enjoyment 造一個句子，說說什麼帶給你樂趣。」、referenceEn [\"Music brings me a lot of enjoyment.\",\"I get great enjoyment from cooking for my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：options[1]（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

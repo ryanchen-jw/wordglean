@@ -81,7 +81,7 @@
       "id": "b1-u17-l06-q06",
       "type": "wordCard",
       "word": "vice",
-      "exampleEn": "Ann is the vice captain of our football team.",
+      "exampleEn": "Ann is the vice captain of our soccer team.",
       "exampleZh": "Ann 是我們足球隊的副隊長。",
       "glossZh": "副的（職位）",
       "distractorsZh": [
@@ -129,10 +129,10 @@
       "audioZh": "今晚的電影講的是一位民族主義領袖和他早年的生活。",
       "questionZh": "今晚的電影講的是什麼？",
       "options": [
-        "A leader's last years.",
-        "A football team's best season.",
-        "A leader's younger years.",
-        "A cooking contest on TV."
+        "A leader's last years",
+        "A soccer team's best season",
+        "A leader's younger years",
+        "A cooking contest on TV"
       ],
       "answer": 2
     },
@@ -419,6 +419,18 @@
         "message": "執行長裁示：第③關：SUS 與同課 q17（寺廟建於唐朝）同情境「建築物何時／多久蓋好」（§12.3）；審查建議的「這座城市有很多摩天大樓」就是先前與同單元 u17-l03-q17 雷同而補正掉的原題，改用頂樓餐廳情境",
         "resolution": "改為 promptZh「那棟摩天大樓的頂樓有一家餐廳。」、referenceEn [\"There is a restaurant on the top floor of that skyscraper.\",\"That skyscraper has a restaurant on its top floor.\"]、rubricZh [\"用 skyscraper 表示「摩天大樓」\",\"「頂樓」可寫，例如 the top floor 等\"]（原 promptZh「這棟摩天大樓花了五年才蓋好。」、referenceEn [\"It took five years to build this skyscraper.\",\"This skyscraper took five years to build.\"]、rubricZh [\"用 skyscraper 表示「摩天大樓」\",\"「花了五年才蓋好」可寫，例如 it took five years to build、took five years to build 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

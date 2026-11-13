@@ -77,8 +77,8 @@
       "id": "b1-u25-l02-q06",
       "type": "wordCard",
       "word": "graphic",
-      "exampleEn": "The book uses graphic pictures to explain the steps.",
-      "exampleZh": "這本書用圖像來說明步驟。",
+      "exampleEn": "The magazine hired a young graphic artist to draw its covers.",
+      "exampleZh": "那家雜誌請了一位年輕的平面美術設計師來畫封面。",
       "glossZh": "圖像的；平面的",
       "distractorsZh": [
         "音樂的",
@@ -121,14 +121,14 @@
     {
       "id": "b1-u25-l02-q10",
       "type": "listenChoice",
-      "audioEn": "The chemistry test is moved from Tuesday to Friday because the lab is being cleaned.",
+      "audioEn": "The chemistry test has been moved from Tuesday to Friday because the lab is being cleaned.",
       "audioZh": "化學考試從星期二改到星期五，因為實驗室在清理。",
       "questionZh": "化學考試為什麼延期？",
       "options": [
-        "The teacher is sick on Tuesday.",
-        "There's cleaning in the lab.",
-        "Friday is a holiday.",
-        "Students asked for it."
+        "The teacher is sick on Tuesday",
+        "There's cleaning in the lab",
+        "Friday is a holiday",
+        "Students asked for it"
       ],
       "answer": 1
     },
@@ -166,8 +166,8 @@
     {
       "id": "b1-u25-l02-q14",
       "type": "mcq",
-      "stemEn": "She designs ____ images for websites.",
-      "stemZh": "她為網站設計平面圖像。",
+      "stemEn": "She took a ____ design course to learn how to make posters.",
+      "stemZh": "她上了一門平面設計課，學習怎麼做海報。",
       "options": [
         "allergic",
         "excellence",
@@ -186,10 +186,10 @@
       "id": "b1-u25-l02-q15",
       "type": "reading",
       "passageEn": "At my brother's graduation, the head of the school gave a speech about excellence. My brother studied biology and chemistry, and he wants to be a doctor. His friend, who studied art, now works as a graphic designer. During the ceremony, each student received a small book: a biography of the scientist who started the school. When my brother walked onstage, my family gave him loud applause.",
-      "passageZh": "在我哥哥的畢業典禮上，校長發表了一篇關於卓越的演講。我哥哥讀的是生物和化學，他想當醫生。他一位讀藝術的朋友，現在是平面設計師。典禮中，每位學生都收到一本小書：創校科學家的傳記。我哥哥走到台前時，我們全家給了他熱烈的掌聲。",
+      "passageZh": "在我兄弟的畢業典禮上，校長發表了一篇關於卓越的演講。我的兄弟讀的是生物和化學，他想當醫生。他一位讀藝術的朋友，現在是平面設計師。典禮中，每位學生都收到一本小書：創校科學家的傳記。我的兄弟走到台前時，我們全家給了他熱烈的掌聲。",
       "questions": [
         {
-          "questionZh": "作者的哥哥讀的是什麼？",
+          "questionZh": "作者的兄弟讀的是什麼？",
           "options": [
             "生物和化學",
             "美術和平面設計",
@@ -414,6 +414,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（biography）原位換成翻譯題，沿用題 id b1-u25-l02-q17；目標字沿用 biography",
         "resolution": "改為 translate：promptZh「這本傳記是她的女兒寫的。」、hintWords [\"biography\"]、referenceEn [\"This biography was written by her daughter.\",\"Her daughter wrote this biography.\"]、rubricZh [\"用 biography 表示「傳記」\"]（原 makeSentence：instructionZh「用 biography 造一個句子，說說你讀過或想讀的傳記。」、referenceEn [\"I once read a biography of a famous football player.\",\"I want to read a biography of my favorite singer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

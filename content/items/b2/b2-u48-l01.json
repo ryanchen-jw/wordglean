@@ -168,7 +168,7 @@
     {
       "id": "b2-u48-l01-q14",
       "type": "mcq",
-      "stemEn": "The singer's new song was ____, so the radio stopped playing it.",
+      "stemEn": "The singer's new song was ____, so radio stations stopped playing it.",
       "stemZh": "那位歌手的新歌不受歡迎，所以電台不再播放。",
       "options": [
         "cheerful",
@@ -187,8 +187,8 @@
     {
       "id": "b2-u48-l01-q15",
       "type": "reading",
-      "passageEn": "Last year, the city announced the modernization of the old central market. At first, the plan was unpopular, and people in town were divided. Some said the old building had a place of prominence in the town's history and should not be changed. Others said the market was always packed and needed more space. In the end, the city kept the old front wall and built a modern hall behind it, with a sophisticated new payment system. Now most people agree that their worries were trivial.",
-      "passageZh": "去年，市政府表示要將老中央市場現代化。一開始，這項計畫不受歡迎，鎮上的人意見分歧。有些人說這棟老建築在鎮上的歷史中具有重要地位，不應該改變。另一些人則說市場總是擠滿人，需要更多空間。最後，市政府保留了舊的正面牆，在後面蓋了一座現代化的大廳，還有一套先進的新付款系統。現在大多數人都同意，他們當初的擔心其實微不足道。",
+      "passageEn": "Last year, the city announced the modernization of the old central market. At first, the plan was unpopular, and people in the city were divided. Some said the old building had a place of prominence in the city's history and should not be changed. Others said the market was always packed and needed more space. In the end, the city kept the old front wall and built a modern hall behind it, with a sophisticated new payment system. Now most people agree that their worries were trivial.",
+      "passageZh": "去年，市政府表示要將老中央市場現代化。一開始，這項計畫不受歡迎，市民意見分歧。有些人說這棟老建築在這座城市的歷史中具有重要地位，不應該改變。另一些人則說市場總是擠滿人，需要更多空間。最後，市政府保留了舊的正面牆，在後面蓋了一座現代化的大廳，還有一套先進的新付款系統。現在大多數人都同意，他們當初的擔心其實微不足道。",
       "questions": [
         {
           "questionZh": "反對改建的人提出什麼理由？",
@@ -371,6 +371,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unrealistic）原位換成翻譯題，沿用題 id b2-u48-l01-q17；目標字沿用 unrealistic",
         "resolution": "改為 translate：promptZh「期待新員工第一週就什麼都會，是不切實際的。」、hintWords [\"unrealistic\"]、referenceEn [\"It is unrealistic to expect new workers to know everything in their first week.\",\"Expecting new staff to know everything in the first week is unrealistic.\"]、rubricZh [\"unrealistic 表示「不切實際的」，句型例如 It is unrealistic to…、Expecting … is unrealistic 等\",\"「新員工」可寫，例如 new workers、new staff、new employees 等\",\"「什麼都會」可寫，例如 know everything、be able to do everything 等\"]（原 makeSentence：instructionZh「用 unrealistic 造一個句子，說說你曾有過的一個不切實際的計畫或期待。」、referenceEn [\"It was unrealistic of me to try to learn French in one month.\",\"My plan to read fifty books in one summer was unrealistic.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,9 +125,9 @@
       "audioZh": "這家餐廳今晚客滿了，我們去別家吧。",
       "questionZh": "他們為什麼要去別家餐廳？",
       "options": [
-        "It is too expensive.",
-        "It is closed.",
-        "It is full."
+        "It is too expensive",
+        "It is closed",
+        "It is full"
       ],
       "answer": 2
     },
@@ -430,6 +430,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（special）原位換成翻譯題，沿用題 id a1-u05-l05-q17；目標字沿用 special",
         "resolution": "改為 translate：promptZh「這家餐廳今晚有一道特別的菜。」、hintWords [\"special\"]、referenceEn [\"This restaurant has a special dish tonight.\",\"Tonight, this restaurant has a special dish.\"]、rubricZh [\"special 放在名詞前（例如 a special dish）\",\"「特別的菜」可寫，例如 a special dish、a special meal 等\"]（原 makeSentence：instructionZh「用 special 造一個句子，說說對你很特別的一天、一個人或一樣東西。」、referenceEn [\"My birthday is a special day for me.\",\"This watch is special to me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

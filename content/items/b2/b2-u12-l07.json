@@ -189,7 +189,7 @@
     {
       "id": "b2-u12-l07-q15",
       "type": "reading",
-      "passageEn": "When she was a teenager, Nina's aspiration was to become a chef. Her parents wanted her to study law, but she was determined to follow her dream. At cooking school, she learned to work independently and to cook with great dedication. When she opened her first restaurant, she faced the temptation to use cheaper food to save money, but she refused. Once, a food writer called her an idiot for using simple local vegetables, and many customers expressed outrage at his rude review. Nina simply laughed. She says such criticism often comes from ignorance of local food, and she never takes it personally.",
+      "passageEn": "When she was a teenager, Nina's aspiration was to become a chef. Her parents wanted her to study law, but she was determined to follow her dream. At cooking school, she learned to work independently and to cook with great dedication. When she opened her first restaurant, she faced the temptation to use cheaper ingredients to save money, but she refused. Once, a food writer called her an idiot for using simple local vegetables, and many customers expressed outrage at his rude review. Nina simply laughed. She says such criticism often comes from ignorance of local food, and she never takes it personally.",
       "passageZh": "Nina 十幾歲時，志向就是當廚師。她的父母希望她念法律，但她下定決心要追求夢想。在烹飪學校，她學會獨立工作，並全心投入地做菜。開第一家餐廳時，她面臨用便宜食材省錢的誘惑，但她拒絕了。有一次，一位美食作家罵她是白痴，因為她用的是簡單的在地蔬菜，許多顧客都對他無禮的評論感到憤慨。Nina 只是笑了笑。她說，這類批評常常來自對在地食物的無知，她從不放在心上。",
       "questions": [
         {
@@ -480,6 +480,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（determined）原位換成翻譯題，沿用題 id b2-u12-l07-q17；目標字沿用 determined",
         "resolution": "改為 translate：promptZh「那支球隊下定決心要贏回冠軍。」、hintWords [\"determined\"]、referenceEn [\"The team is determined to win the title back.\",\"The team is determined to win back the championship.\"]、rubricZh [\"determined 是形容詞，常接 to＋原形動詞（例如 is determined to win 等）\",\"時態可用現在式或過去式（例如 is、was 等）\",\"「冠軍」可寫，例如 the title、the championship 等\"]（原 makeSentence：instructionZh「用 determined 造一個句子，說說你下定決心要做的一件事。」、referenceEn [\"I am determined to run a full race this year.\",\"I'm determined to speak English with my clients by next summer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

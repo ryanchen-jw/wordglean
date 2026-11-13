@@ -115,20 +115,20 @@
     {
       "id": "b2-u43-l05-q09",
       "type": "listenType",
-      "sentenceEn": "Throwing rubbish on the beach shows a disregard for nature.",
+      "sentenceEn": "Throwing trash on the beach shows a disregard for nature.",
       "sentenceZh": "在海灘上亂丟垃圾，表示不尊重大自然。"
     },
     {
       "id": "b2-u43-l05-q10",
       "type": "listenChoice",
-      "audioEn": "I reckon the new café will be busy, because the coffee there is cheap.",
+      "audioEn": "I reckon the new cafe will be busy, because the coffee there is cheap.",
       "audioZh": "我認為那家新咖啡店會很忙，因為那裡的咖啡很便宜。",
       "questionZh": "說話者為什麼覺得那家新咖啡店會很忙？",
       "options": [
         "The coffee there tastes very good",
-        "The café is new and very big",
+        "The cafe is new and very big",
         "Its drinks don't cost much",
-        "The new café has lots of seats"
+        "The new cafe has lots of seats"
       ],
       "answer": 2
     },
@@ -289,6 +289,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（reckon）原位換成翻譯題，沿用題 id b2-u43-l05-q17；目標字沿用 reckon",
         "resolution": "改為 translate：promptZh「我爸爸估計這台舊冰箱還能再用五年。」、hintWords [\"reckon\"]、referenceEn [\"My dad reckons this old fridge will last another five years.\",\"My father reckons that the old fridge can work for five more years.\"]、rubricZh [\"reckon 表示「估計、認為」，動詞配合主詞（例如 reckons、reckoned 等）\",\"「還能再用五年」可寫，例如 will last another five years、can work for five more years 等\"]（原 makeSentence：instructionZh「用 reckon 造一個句子，說說你對接下來會發生的某件事的猜測。」、referenceEn [\"I reckon it will be sunny this weekend.\",\"I reckon my brother will be late again.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[1]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

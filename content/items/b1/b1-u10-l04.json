@@ -55,7 +55,7 @@
       "word": "jumper",
       "exampleEn": "My grandmother knitted this jumper for me.",
       "exampleZh": "這件毛衣是奶奶為我織的。",
-      "glossZh": "毛衣；套頭衫",
+      "glossZh": "毛衣；套頭衫；（英式）",
       "distractorsZh": [
         "襯衫",
         "褲子",
@@ -127,10 +127,10 @@
       "audioZh": "這雙涼鞋特價十元，所以我買了兩雙。",
       "questionZh": "說話者買了幾雙涼鞋？",
       "options": [
-        "Three pairs.",
-        "One pair.",
-        "Two pairs.",
-        "Ten pairs."
+        "Three pairs",
+        "One pair",
+        "Two pairs",
+        "Ten pairs"
       ],
       "answer": 2
     },
@@ -333,6 +333,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stylish）原位換成翻譯題，沿用題 id b1-u10-l04-q17；目標字沿用 stylish",
         "resolution": "改為 translate：promptZh「這家咖啡店裡面布置得很時髦。」、hintWords [\"stylish\"]、referenceEn [\"The inside of this cafe is very stylish.\",\"This cafe looks very stylish inside.\"]、rubricZh [\"用 stylish 表示「時髦的；有型的」（例如 very stylish）\"]（原 makeSentence：instructionZh「用 stylish 造一個句子，形容你認識的人或你喜歡的地方很有型。」、referenceEn [\"My aunt always looks stylish.\",\"I like this stylish little cafe.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

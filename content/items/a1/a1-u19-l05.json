@@ -144,7 +144,7 @@
       "id": "a1-u19-l05-q12",
       "type": "shadowing",
       "sentenceEn": "I can't swim, and my brother can't either.",
-      "sentenceZh": "我不會游泳，我弟弟也不會。"
+      "sentenceZh": "我不會游泳，我的兄弟也不會。"
     },
     {
       "id": "a1-u19-l05-q13",
@@ -187,7 +187,7 @@
     {
       "id": "a1-u19-l05-q15",
       "type": "reading",
-      "passageEn": "Our school is near a small river. Every Friday, everyone walks by the river after class. Today, it is ten past three, and the teacher asks, \"Is everyone here?\" Ken is late again. He doesn't like walking, and his friend Ben doesn't either.",
+      "passageEn": "Our school is near a small river. Every Friday, everyone walks by the river after class. Today, at ten past three, the teacher asks, \"Is everyone here?\" Ken is late again. He doesn't like walking, and his friend Ben doesn't either.",
       "passageZh": "我們學校在一條小河附近。每個星期五放學後，大家都會在河邊散步。今天三點十分，老師問：「大家都到了嗎？」Ken 又遲到了。他不喜歡散步，他的朋友 Ben 也不喜歡。",
       "questions": [
         {
@@ -235,11 +235,11 @@
       ],
       "referenceEn": [
         "Is there a hospital near here?",
-        "Is there any hospital near here?"
+        "Are there any hospitals near here?"
       ],
       "rubricZh": [
         "near 後面接地點（例如 near here）",
-        "問「有沒有」可寫，例如 Is there a…、Is there any… 等"
+        "問「有沒有」可寫，例如 Is there a…、Are there any… 等"
       ]
     }
   ],
@@ -337,6 +337,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（near）原位換成翻譯題，沿用題 id a1-u19-l05-q17；目標字沿用 near",
         "resolution": "改為 translate：promptZh「這附近有醫院嗎？」、hintWords [\"near\"]、referenceEn [\"Is there a hospital near here?\",\"Is there any hospital near here?\"]、rubricZh [\"near 後面接地點（例如 near here）\",\"問「有沒有」可寫，例如 Is there a…、Is there any… 等\"]（原 makeSentence：instructionZh「用 near 造一個句子，說說你家附近有什麼。」、referenceEn [\"There is a park near my home.\",\"I live near a big supermarket.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]、rubricZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

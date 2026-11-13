@@ -93,7 +93,7 @@
       "id": "c1-u06-l06-q07",
       "type": "wordCard",
       "word": "inexplicably",
-      "exampleEn": "The parcel inexplicably arrived a week early.",
+      "exampleEn": "The package inexplicably arrived a week early.",
       "exampleZh": "包裹莫名其妙地提早一週送到了。",
       "glossZh": "莫名其妙地；無法解釋地",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "不知道為什麼，我們辦公室的印表機只有星期一能用。",
       "questionZh": "這台印表機有什麼怪事？",
       "options": [
-        "It prints everything twice.",
-        "It works only on Mondays.",
-        "It makes a loud noise every hour.",
-        "It turns itself off at night."
+        "It prints everything twice",
+        "It works only on Mondays",
+        "It makes a loud noise every hour",
+        "It turns itself off at night"
       ],
       "answer": 1
     },
@@ -316,6 +316,18 @@
         "message": "執行長裁示：第③關：c1-u06-l06-q17 SUS 要點未收 be conditional upon",
         "resolution": "改為 rubricZh [\"「要看⋯而定」用 be conditional（例如 is conditional on the weather、is conditional upon… 等）\",\"「去露營」可寫，例如 whether we go camping、our camping trip 等\"]（原 rubricZh [\"「要看⋯而定」用 be conditional on（例如 is conditional on the weather 等）\",\"「去露營」可寫，例如 whether we go camping、our camping trip 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

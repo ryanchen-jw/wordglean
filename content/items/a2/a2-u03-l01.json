@@ -79,8 +79,8 @@
       "id": "a2-u03-l01-q06",
       "type": "wordCard",
       "word": "convenient",
-      "exampleEn": "This bag is small and convenient to carry.",
-      "exampleZh": "這個包包小巧，帶著很方便。",
+      "exampleEn": "This bag is small and very convenient for travel.",
+      "exampleZh": "這個包包小巧，旅行時帶著很方便。",
       "glossZh": "方便的",
       "distractorsZh": [
         "困難的",
@@ -186,8 +186,8 @@
     {
       "id": "a2-u03-l01-q15",
       "type": "reading",
-      "passageEn": "Last month, Amy moved into a small apartment in the city. It is very convenient. There is a convenience store downstairs, and the bus stop is right outside. The lights in the hall are automatic, so she never has to turn them on. Her mother gave her a colorful wool blanket for the sofa. \"Now a car is unnecessary,\" Amy said happily.",
-      "passageZh": "上個月，Amy 搬進城裡的一間小公寓。那裡非常方便：樓下就有便利商店，公車站就在門外。走廊的燈是自動的，所以她從來不用自己開燈。她媽媽送她一條色彩鮮豔的羊毛毯放在沙發上。Amy 開心地說：「現在車子已經沒有必要了。」",
+      "passageEn": "Last month, Amy moved into a small apartment in the city. It is very convenient. There is a convenience store downstairs, and the bus stop is right outside. The lights in the hall are automatic, so she never has to turn them on. Her mother gave her a colorful wool blanket for the sofa. \"With the bus stop so close, a car is unnecessary now,\" Amy said happily.",
+      "passageZh": "上個月，Amy 搬進城裡的一間小公寓。那裡非常方便：樓下就有便利商店，公車站就在門外。走廊的燈是自動的，所以她從來不用自己開燈。她媽媽送她一條色彩鮮豔的羊毛毯放在沙發上。Amy 開心地說：「公車站這麼近，現在車子已經沒有必要了。」",
       "questions": [
         {
           "questionZh": "Amy 住的公寓樓下有什麼？",
@@ -360,6 +360,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（colorful）原位換成翻譯題，沿用題 id a2-u03-l01-q17；目標字沿用 colorful",
         "resolution": "改為 translate：promptZh「公園裡有很多色彩鮮豔的花。」、hintWords [\"colorful\"]、referenceEn [\"There are many colorful flowers in the park.\",\"The park has a lot of colorful flowers.\"]、rubricZh [\"用 colorful 表示「色彩鮮豔的」，放在名詞前（例如 colorful flowers）\",\"「有很多」可寫，例如 There are many、has a lot of 等\"]（原 makeSentence：instructionZh「用 colorful 造一個句子，描述一樣色彩鮮豔的東西。」、referenceEn [\"My sister has a colorful umbrella.\",\"The market is full of colorful fruit.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

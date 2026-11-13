@@ -143,7 +143,7 @@
     {
       "id": "c1-u04-l05-q12",
       "type": "shadowing",
-      "sentenceEn": "The waist of these trousers is elastic, so they are very comfortable.",
+      "sentenceEn": "The waist of these pants is elastic, so they are very comfortable.",
       "sentenceZh": "這條褲子的腰部有彈性，所以穿起來很舒服。"
     },
     {
@@ -187,7 +187,7 @@
     {
       "id": "c1-u04-l05-q15",
       "type": "reading",
-      "passageEn": "On the edge of town stands a stately old house that once belonged to a famous writer. Today it is a small museum, and it is known for its quirky collection of hats, umbrellas, and hundreds of buttons. Visitors say the upstairs rooms feel almost ghostly, because the furniture has not moved for a hundred years. Even the antiquated light switches still work. One true rarity in the collection is a letter written by hand from the writer to his mother. The museum's guide, a former actor, shows great versatility: he sings, tells stories, and even plays the piano for visitors.",
+      "passageEn": "On the edge of town stands a stately old house that once belonged to a famous writer. Today it is a small museum, and it is known for its quirky collection of hats, umbrellas, and hundreds of buttons. Visitors say the upstairs rooms feel almost ghostly, because the furniture has not been moved for a hundred years. Even the antiquated light switches still work. One true rarity in the collection is a letter that the writer wrote to his mother by hand. The museum's guide, a former actor, shows great versatility: he sings, tells stories, and even plays the piano for visitors.",
       "passageZh": "小鎮邊緣矗立著一棟宏偉的老宅，曾經屬於一位知名作家。如今它是一間小博物館，以古怪有趣的館藏聞名：帽子、雨傘，還有好幾百顆鈕扣。參觀者說樓上的房間幾乎有點陰森，因為傢俱已經一百年沒移動過了。就連老舊的電燈開關都還能用。館藏中一件真正的珍品，是那位作家親筆寫給母親的一封信。博物館的導覽員以前是演員，展現了多才多藝的一面：他會唱歌、說故事，甚至為參觀者彈鋼琴。",
       "questions": [
         {
@@ -315,6 +315,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rarity）原位換成翻譯題，沿用題 id c1-u04-l05-q17；目標字沿用 rarity",
         "resolution": "改為 translate：promptZh「在這家熱門餐廳，有空位是很難得的事。」、hintWords [\"rarity\"]、referenceEn [\"At this popular restaurant, an empty table is a rarity.\",\"An empty table is a real rarity at this popular restaurant.\"]、rubricZh [\"「很難得的事」用 rarity（例如 is a rarity、a real rarity 等）\",\"「空位」可寫，例如 an empty table、a free table、a free seat 等\"]（原 makeSentence：instructionZh「用 rarity 造一個句子，說說在你的生活中很少發生的事。」、referenceEn [\"For me, a free weekend is a rarity these days.\",\"Eating breakfast at home is a rarity in my busy week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

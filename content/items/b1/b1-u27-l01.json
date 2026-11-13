@@ -78,7 +78,7 @@
       "type": "wordCard",
       "word": "preserve",
       "exampleEn": "The museum preserves old letters and maps.",
-      "exampleZh": "博物館收藏著古老的信件和地圖。",
+      "exampleZh": "博物館妥善保管著古老的信件和地圖。",
       "glossZh": "保留；保護；保鮮",
       "distractorsZh": [
         "拆除",
@@ -125,10 +125,10 @@
       "audioZh": "明天九點到中午會停電，所以請今晚幫手機充電。",
       "questionZh": "為什麼要今晚幫手機充電？",
       "options": [
-        "Tonight is the last day.",
-        "The phone store will close.",
-        "A new phone is coming.",
-        "The power will be off tomorrow."
+        "Tonight is the last day",
+        "The phone store will close",
+        "A new phone is coming",
+        "The power will be off tomorrow"
       ],
       "answer": 3
     },
@@ -354,6 +354,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（survival）原位換成翻譯題，沿用題 id b1-u27-l01-q17；目標字沿用 survival",
         "resolution": "改為 translate：promptZh「對這些動物來說，乾淨的水是生存的關鍵。」、hintWords [\"survival\"]、referenceEn [\"Clean water is the key to survival for these animals.\",\"For these animals, clean water is the key to survival.\"]、rubricZh [\"用 survival 表示「生存」（例如 the key to survival）\"]（原 makeSentence：instructionZh「用 survival 造一個句子，說說你覺得生存最需要什麼。」、referenceEn [\"I think water is the most important thing for survival.\",\"For survival in the jungle, I would need a knife.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:43:09Z"
       }
     ]
   }

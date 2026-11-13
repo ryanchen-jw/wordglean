@@ -105,8 +105,8 @@
       "id": "b1-u03-l05-q08",
       "type": "wordCard",
       "word": "stick",
-      "exampleEn": "Please stick the stamp on the top right corner.",
-      "exampleZh": "請把郵票貼在右上角。",
+      "exampleEn": "Please stick the stamp in the top right corner of the envelope.",
+      "exampleZh": "請把郵票貼在信封的右上角。",
       "glossZh": "黏貼；刺入",
       "distractorsZh": [
         "撕下",
@@ -127,10 +127,10 @@
       "audioZh": "請按綠色的按鈕，門就會打開。",
       "questionZh": "要怎麼開門？",
       "options": [
-        "Press the red button twice.",
-        "Use a key card.",
-        "Use the green button.",
-        "Wait for the door to open."
+        "Press the red button twice",
+        "Use a key card",
+        "Use the green button",
+        "Wait for the door to open"
       ],
       "answer": 2
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u03-l05-q15",
       "type": "reading",
-      "passageEn": "Ms. Lee works at a big hotel. Last week, she attended a meeting about a new door system. Soon, guests will open their doors with their phones, so they will not need a key. Only guests will have access to the upper floors. Ms. Lee was involved in testing the system. She examined every door and stuck a small sign next to each one. The sign says, \"Press your phone here.\" At first, some guests stared at the doors for a long time, but they learned quickly.",
-      "passageZh": "李小姐在一家大飯店工作。上星期，她參加了一場關於新門禁系統的會議。很快地，房客將用手機開房門，不再需要鑰匙。只有房客能進入樓上的樓層。李小姐參與了系統的測試。她檢查了每一扇門，並在每扇門旁邊貼了一張小告示，上面寫著：「把手機按在這裡。」一開始，有些房客盯著門看了很久，但他們很快就學會了。",
+      "passageEn": "Ms. Lee works at a big hotel. Last week, she attended a meeting about a new door system. Now, guests open their doors with their phones, so they do not need a key. Only guests have access to the upper floors. Ms. Lee was involved in testing the system. She examined every door and stuck a small sign next to each one. The sign says, \"Press your phone here.\" At first, some guests stared at the doors for a long time, but they learned quickly.",
+      "passageZh": "李小姐在一家大飯店工作。上星期，她參加了一場關於新門禁系統的會議。現在，房客用手機開房門，不再需要鑰匙。只有房客能進入樓上的樓層。李小姐參與了系統的測試。她檢查了每一扇門，並在每扇門旁邊貼了一張小告示，上面寫著：「把手機按在這裡。」一開始，有些房客盯著門看了很久，但他們很快就學會了。",
       "questions": [
         {
           "questionZh": "李小姐在新系統中負責什麼？",
@@ -424,6 +424,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stick）原位換成翻譯題，沿用題 id b1-u03-l05-q17；目標字沿用 stick",
         "resolution": "改為 translate：promptZh「這種膠帶黏不住牆壁。」、hintWords [\"stick\"]、referenceEn [\"This kind of tape doesn't stick to the wall.\",\"This tape won't stick to the wall.\"]、rubricZh [\"用 stick 表示「黏住」（例如 stick to the wall）\",\"「黏不住」可寫，例如 doesn't stick、won't stick 等\"]（原 makeSentence：instructionZh「用 stick 造一個句子，說說你會把什麼東西貼在哪裡。」、referenceEn [\"I stick notes on my computer screen.\",\"I always stick photos of my family on the fridge.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

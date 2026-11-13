@@ -96,7 +96,7 @@
       "type": "wordCard",
       "word": "figure out",
       "exampleEn": "My brother figured out a way to fix the old radio.",
-      "exampleZh": "我哥哥想出了修好那台舊收音機的辦法。",
+      "exampleZh": "我的兄弟想出了修好那台舊收音機的辦法。",
       "glossZh": "想出；弄懂",
       "distractorsZh": [
         "提起（話題）",
@@ -176,8 +176,8 @@
     {
       "id": "b1-p01-l01-q14",
       "type": "reading",
-      "passageEn": "Our class wanted to hold a music show for the school festival. But nobody could figure out how to pay for it. Then Kevin had a smart idea: we would sell cookies that we baked ourselves. Mom even helped us break big chocolate bars up for them. Two weeks before the show, it rained for days, and the teachers almost called it off. However, the weather eventually got better, so we carried on. On the day of the show, we carried the plan out, and many parents came. Later, one teacher brought up the idea of holding the show every year.",
-      "passageZh": "我們班想在校慶時辦一場音樂表演。但是沒有人想得出要怎麼籌錢。後來 Kevin 有個聰明的點子：我們來賣自己烤的餅乾。媽媽還幫我們把大塊巧克力掰碎放進餅乾裡。表演前兩週，連續下了好幾天雨，老師們差點取消表演。不過天氣後來好轉，所以我們繼續進行。表演當天，我們照計畫執行，很多家長也來了。後來，一位老師提起每年都辦這場表演的想法。",
+      "passageEn": "Our class wanted to hold a music show for the school festival. But nobody could figure out how to pay for it. Then Kevin had a smart idea: we would sell cookies that we baked ourselves. My mom even bought big chocolate bars and helped us break them up for the cookies. Two weeks before the show, it rained for days, and the teachers almost called it off. However, the weather eventually got better, so we carried on. On the day of the show, we carried the plan out, and many parents came. Later, one teacher brought up the idea of holding the show every year.",
+      "passageZh": "我們班想在校慶時辦一場音樂表演。但是沒有人想得出要怎麼籌錢。後來 Kevin 有個聰明的點子：我們來賣自己烤的餅乾。我媽媽還買了大塊巧克力，幫我們把它們掰碎放進餅乾裡。表演前兩週，連續下了好幾天雨，老師們差點取消表演。不過天氣後來好轉，所以我們繼續進行。表演當天，我們照計畫執行，很多家長也來了。後來，一位老師提起每年都辦這場表演的想法。",
       "questions": [
         {
           "questionZh": "Kevin 提出了什麼點子？",
@@ -368,6 +368,24 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 5 題位（b1-p01-l01-q09、b1-p01-l01-q12、b1-p01-l01-q13、b1-p01-l01-q14#0、b1-p01-l01-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

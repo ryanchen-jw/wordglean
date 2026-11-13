@@ -186,7 +186,7 @@
       "id": "b2-u50-l06-q15",
       "type": "reading",
       "passageEn": "During our winter trip to the mountains, we stayed in a wooden cabin with a big fireplace. Every evening, the blaze in the fireplace kept the whole room warm. I immersed myself in a long novel, while my brother played cards with our parents. Outside, snow fell quietly all night. By the end of the week, I felt that the quiet days had lightened the stress of my busy year.",
-      "passageZh": "冬天到山上旅行時，我們住在一間有大壁爐的小木屋。每天晚上，壁爐裡的熊熊火焰讓整個房間都很溫暖。我沉浸在一本長篇小說裡，弟弟則和爸媽玩牌。屋外整夜靜靜地下著雪。一週結束時，我覺得那些安靜的日子減輕了我忙碌一年的壓力。",
+      "passageZh": "冬天到山上旅行時，我們住在一間有大壁爐的小木屋。每天晚上，壁爐裡的熊熊火焰讓整個房間都很溫暖。我沉浸在一本長篇小說裡，我的兄弟則和爸媽玩牌。屋外整夜靜靜地下著雪。一週結束時，我覺得那些安靜的日子減輕了我忙碌一年的壓力。",
       "questions": [
         {
           "questionZh": "晚上作者在做什麼？",
@@ -357,6 +357,12 @@
         "message": "執行長裁示：第③關：SUS 「到了下午，天空漸漸變亮」情理不順",
         "resolution": "改為 promptZh「雨停以後，天空漸漸變亮了。」、referenceEn [\"After the rain stopped, the sky slowly began to lighten.\",\"The sky gradually lightened after the rain stopped.\"]、rubricZh [\"lighten 當不及物動詞「變亮」（例如 the sky lightened、began to lighten 等）\",\"「漸漸」可寫，例如 slowly、gradually 等，位置不扣分\",\"時態可用過去式或現在式（例如 lightened、lightens 等）\"]（原 promptZh「到了下午，天空漸漸變亮了。」、referenceEn [\"In the afternoon, the sky slowly began to lighten.\",\"The sky gradually lightened in the afternoon.\"]、rubricZh [\"lighten 當不及物動詞「變亮」（例如 the sky lightened、began to lighten 等）\",\"「漸漸」可寫，例如 slowly、gradually 等，位置不扣分\",\"時態可用過去式或現在式（例如 lightened、lightens 等）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

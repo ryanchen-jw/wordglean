@@ -93,7 +93,7 @@
       "id": "a2-u22-l04-q07",
       "type": "wordCard",
       "word": "addition",
-      "exampleEn": "Can you do this addition in your head?",
+      "exampleEn": "Can you do this addition problem in your head?",
       "exampleZh": "你能心算這題加法嗎？",
       "glossZh": "加法；（in addition）除了…還",
       "distractorsZh": [
@@ -188,7 +188,7 @@
       "id": "a2-u22-l04-q15",
       "type": "reading",
       "passageEn": "Last Saturday was my sister's birthday. Twenty kids, plus their parents, came to the party. Mom made an enormous cake, and we had to divide it into thirty pieces. In addition to the cake, we had plenty of ice cream for dessert. Some kids asked for extra chocolate. The house was extremely noisy, but everyone had lots of fun. By the end, every plate was empty!",
-      "passageZh": "上週六是我妹妹的生日。二十個小朋友，加上他們的爸媽，都來參加派對。媽媽做了一個超大的蛋糕，我們得把它分成三十塊。除了蛋糕，我們還有很多冰淇淋當甜點。有些小朋友還要多加巧克力。家裡非常吵，但大家都玩得很開心。到最後，每個盤子都空了！",
+      "passageZh": "上週六是我姊妹的生日。二十個小朋友，加上他們的爸媽，都來參加派對。媽媽做了一個超大的蛋糕，我們得把它分成三十塊。除了蛋糕，我們還有很多冰淇淋當甜點。有些小朋友還要多加巧克力。家裡非常吵，但大家都玩得很開心。到最後，每個盤子都空了！",
       "questions": [
         {
           "questionZh": "蛋糕被分成幾塊？",
@@ -392,6 +392,18 @@
         "message": "執行長裁示：第③關：FIX 題目用的「新增的人或物」不是單字卡教的詞義（§11.5），中文「新成員」也引導不到 addition；改用單字卡詞義「加法」",
         "resolution": "promptZh 改為 「我弟弟還不會做加法。」（原 「這隻小貓是我們家的新成員。」）；referenceEn 改為 [\"My little brother can't do addition yet.\",\"My younger brother can't do addition yet.\"]（原 [\"This little cat is a new addition to our family.\",\"This small cat is the newest addition to our family.\"]）；rubricZh 改為 [\"用 addition 表示「加法」（例如 do addition）\",\"「還不會」可寫，例如 can't…yet、doesn't know how to…yet 等\",\"「弟弟」可寫，例如 little brother、younger brother 等\"]（原 [\"用 addition 表示「新增的成員」（例如 a new addition to our family）\",\"「新成員」可寫，例如 a new addition、the newest addition 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

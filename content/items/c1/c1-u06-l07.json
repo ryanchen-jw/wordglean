@@ -127,10 +127,10 @@
       "audioZh": "就連我們辦公室裡那些凡事懷疑的人，也對新經理的第一週印象深刻。",
       "questionZh": "辦公室裡那些凡事懷疑的人有什麼反應？",
       "options": [
-        "They wanted to leave the company.",
-        "They asked for a meeting.",
-        "They were impressed.",
-        "They complained about the changes."
+        "They wanted to leave the company",
+        "They asked for a meeting",
+        "They were impressed",
+        "They complained about the changes"
       ],
       "answer": 2
     },
@@ -143,7 +143,7 @@
     {
       "id": "c1-u06-l07-q12",
       "type": "shadowing",
-      "sentenceEn": "He smiled cynically when the boss promised a pay rise.",
+      "sentenceEn": "He smiled cynically when the boss promised a raise.",
       "sentenceZh": "老闆答應加薪時，他冷冷地笑了一下。"
     },
     {
@@ -310,6 +310,18 @@
         "message": "執行長裁示：第③關：c1-u06-l07-q17 SUS 與同課單字卡 architects envisage a park 同為規劃者設想城市空間、句型相同，換到個人生活情境",
         "resolution": "改為 promptZh \"她設想自己五年後開一家小書店。\"、referenceEn [\"She envisages opening a small bookshop in five years.\",\"She envisages that she will open a small bookshop five years from now.\"]、rubricZh [\"「設想」用 envisage，可接動名詞或 that 子句（例如 envisages opening…、envisages that she will… 等）\",\"「五年後」可寫，例如 in five years、five years from now 等\",\"「小書店」可寫，例如 a small bookshop、a little bookstore 等\"]（原 promptZh \"市長設想十年後市中心不再有汽車。\"、referenceEn [\"The mayor envisages a city center without cars in ten years.\",\"The mayor envisages that there will be no cars in the city center in ten years.\"]、rubricZh [\"「設想」用 envisage，可接名詞或 that 子句（例如 envisages a city center without cars 等）\",\"「十年後」可寫，例如 in ten years、ten years from now 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

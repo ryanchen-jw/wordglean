@@ -128,10 +128,10 @@
       "audioZh": "Lisa 很少在外面吃，但她經常在家煮飯。",
       "questionZh": "Lisa 平常怎麼吃飯？",
       "options": [
-        "She often eats out at restaurants.",
-        "She never cooks.",
-        "She eats at her office.",
-        "She usually cooks at home."
+        "She often eats out at restaurants",
+        "She never cooks",
+        "She eats at her office",
+        "She usually cooks at home"
       ],
       "answer": 3
     },
@@ -151,7 +151,7 @@
       "id": "b1-u02-l03-q13",
       "type": "mcq",
       "stemEn": "My brother lives abroad, so I ____ see him.",
-      "stemZh": "我哥哥住在國外，所以我很少見到他。",
+      "stemZh": "我的兄弟住在國外，所以我很少見到他。",
       "options": [
         "immediately",
         "frequently",
@@ -188,8 +188,8 @@
     {
       "id": "b1-u02-l03-q15",
       "type": "reading",
-      "passageEn": "Daniel is currently a student at a cooking school. He has two sessions every day, one in the morning and one in the afternoon. He frequently cooks for his classmates, but he rarely cooks for special occasions. Last week, his teacher asked him to make a cake for her wedding. At first, he said no because he was nervous. But his classmates gave him immediate help, and the cake was a big success.",
-      "passageZh": "Daniel 目前是烹飪學校的學生。他每天有兩堂課，一堂在早上，一堂在下午。他經常煮東西給同學吃，但很少為特別的場合下廚。上星期，老師請他為她的婚禮做一個蛋糕。一開始他因為緊張而拒絕了。不過同學們立刻幫他，結果蛋糕非常成功。",
+      "passageEn": "Daniel is currently a student at a cooking school. He has two sessions every day, one in the morning and one in the afternoon. He frequently cooks for his classmates, but he rarely cooks for special occasions. Last week, his teacher asked him to make a cake for her wedding. At first, he said no because he was nervous. But his classmates offered him immediate help, so he agreed, and the cake was a big success.",
+      "passageZh": "Daniel 目前是烹飪學校的學生。他每天有兩堂課，一堂在早上，一堂在下午。他經常煮東西給同學吃，但很少為特別的場合下廚。上星期，老師請他為她的婚禮做一個蛋糕。一開始他因為緊張而拒絕了。不過同學們立刻表示要幫他，於是他答應了，結果蛋糕非常成功。",
       "questions": [
         {
           "questionZh": "Daniel 每天有幾堂課？",
@@ -324,6 +324,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（frequently）原位換成翻譯題，沿用題 id b1-u02-l03-q17；目標字沿用 frequently",
         "resolution": "改為 translate：promptZh「我爺爺經常去那家書店。」、hintWords [\"frequently\"]、referenceEn [\"My grandfather frequently goes to that bookstore.\",\"My grandpa goes to that bookshop frequently.\"]、rubricZh [\"用 frequently 表示「經常」（例如 frequently goes、goes … frequently 等；寫 often 也正確）\",\"「書店」可寫，例如 bookstore、bookshop 等\"]（原 makeSentence：instructionZh「用 frequently 造一個句子，說說你經常去的地方或經常做的事。」、referenceEn [\"I frequently go to the park near my home.\",\"I visit my grandparents frequently.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

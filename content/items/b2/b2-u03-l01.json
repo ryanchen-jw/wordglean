@@ -53,7 +53,7 @@
       "id": "b2-u03-l01-q04",
       "type": "wordCard",
       "word": "laborer",
-      "exampleEn": "My grandfather worked as a laborer on building sites.",
+      "exampleEn": "My grandfather worked as a laborer on construction sites.",
       "exampleZh": "我爺爺以前在工地當工人。",
       "glossZh": "勞工；體力勞動者",
       "distractorsZh": [
@@ -200,8 +200,8 @@
     {
       "id": "b2-u03-l01-q16",
       "type": "reading",
-      "passageEn": "Every morning at six, Mr. Huang leaves home to commute to the furniture factory where he works as a foreman. He carpools with two laborers who live nearby. At the factory, he first checks attendance and writes down the name of any absentee. Then he walks around to make sure every workbench is clean and every tool is in its place. The work is hard; the men toil for hours, cutting and fixing wood. In the afternoon, Mr. Huang sits at his worktable to plan the next day's jobs. He gets home at six, tired but proud.",
-      "passageZh": "每天早上六點，黃先生出門通勤到他擔任領班的傢俱工廠。他和兩位住在附近的工人一起共乘。到了工廠，他先點名，記下缺席者的名字。接著他到處巡視，確認每張工作台都乾淨、每件工具都放回原位。這份工作很辛苦，工人們一連幾個小時切割、修理木頭。下午，黃先生坐在他的工作桌前，規劃隔天的工作。他六點回到家，雖然累，卻很自豪。",
+      "passageEn": "Every morning at six, Mr. Huang leaves home to commute to the furniture factory where he works as a foreman. He carpools with two laborers who live nearby. At the factory, he first checks attendance and writes down the name of any absentee. Then he walks around to make sure every workbench is clean and every tool is in its place. The work is hard; the men toil for hours, cutting and shaping wood. In the afternoon, Mr. Huang sits at his worktable to plan the next day's jobs. He gets home at six, tired but proud.",
+      "passageZh": "每天早上六點，黃先生出門通勤到他擔任領班的傢俱工廠。他和兩位住在附近的工人一起共乘。到了工廠，他先點名，記下缺席者的名字。接著他到處巡視，確認每張工作台都乾淨、每件工具都放回原位。這份工作很辛苦，工人們一連幾個小時切割、加工木頭。下午，黃先生坐在他的工作桌前，規劃隔天的工作。他六點回到家，雖然累，卻很自豪。",
       "questions": [
         {
           "questionZh": "黃先生到工廠後第一件事做什麼？",
@@ -431,6 +431,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（attendance）原位換成翻譯題，沿用題 id b2-u03-l01-q18；目標字沿用 attendance",
         "resolution": "改為 translate：promptZh「這門課的出席佔總成績的百分之十。」、hintWords [\"attendance\"]、referenceEn [\"Attendance counts for ten percent of the final grade in this course.\",\"In this course, attendance is ten percent of the final grade.\"]、rubricZh [\"attendance 指出席情況，可當主詞（例如 Attendance counts for… 等）\",\"「佔…百分之十」可寫，例如 counts for ten percent of、is ten percent of、makes up 10% of 等\",\"「總成績」可寫，例如 the final grade、the total grade、the final mark 等\"]（原 makeSentence：instructionZh「用 attendance 造一個句子，說說某個會議、課程或活動的出席情況。」、referenceEn [\"Attendance at the company sports day was higher than we expected.\",\"My attendance at the evening class was perfect last term.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

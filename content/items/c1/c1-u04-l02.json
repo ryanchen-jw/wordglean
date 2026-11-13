@@ -127,10 +127,10 @@
       "audioZh": "他開一輛破舊的老廂型車，但它從來沒有拋錨過。",
       "questionZh": "關於他的車，下列何者正確？",
       "options": [
-        "It belongs to his old boss.",
-        "It is brand new.",
-        "It breaks down very often.",
-        "It is old but reliable."
+        "It belongs to his old boss",
+        "It is brand new",
+        "It breaks down very often",
+        "It is old but reliable"
       ],
       "answer": 3
     },
@@ -316,6 +316,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（elusive）原位換成翻譯題，沿用題 id c1-u04-l02-q17；目標字沿用 elusive",
         "resolution": "改為 translate：promptZh「那隻罕見的鳥非常難以捉摸，攝影師等了三天才拍到牠。」、hintWords [\"elusive\"]、referenceEn [\"The rare bird was very elusive; the photographer waited three days to get a picture of it.\",\"The rare bird proved so elusive that the photographer waited three days before getting a photo of it.\"]、rubricZh [\"「難以捉摸」用 elusive（例如 was very elusive、proved elusive 等）\",\"「等了三天才拍到」可寫，例如 waited three days to get a picture 等\",\"說的是已發生的事，時態配合內容（例如 was、waited 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 elusive 造一個句子，說說某樣你一直很難得到或達到的東西。」、referenceEn [\"For me, a good night's sleep has become elusive.\",\"I keep trying, but a perfect score in this game remains elusive.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

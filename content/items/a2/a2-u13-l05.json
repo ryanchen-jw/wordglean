@@ -19,7 +19,7 @@
       "word": "motorway",
       "exampleEn": "The motorway was closed because of snow.",
       "exampleZh": "高速公路因為下雪封閉了。",
-      "glossZh": "高速公路（英式說法）",
+      "glossZh": "高速公路；（英式）",
       "distractorsZh": [
         "小巷",
         "鐵路",
@@ -71,7 +71,7 @@
       "word": "petrol station",
       "exampleEn": "Is there a petrol station near here?",
       "exampleZh": "這附近有加油站嗎？",
-      "glossZh": "加油站（英式說法）",
+      "glossZh": "加油站；（英式）",
       "distractorsZh": [
         "停車場",
         "修車廠",
@@ -114,7 +114,7 @@
       "id": "a2-u13-l05-q09",
       "type": "listenChoice",
       "audioEn": "My sister just got her driver's license, so she drove us to the beach.",
-      "audioZh": "我姊姊剛考到駕照，所以她開車載我們去海邊。",
+      "audioZh": "我的姊妹剛考到駕照，所以她開車載我們去海邊。",
       "questionZh": "誰開車載他們去海邊？",
       "options": [
         "A cab driver",
@@ -333,6 +333,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tour guide）原位換成翻譯題，沿用題 id a2-u13-l05-q16；目標字沿用 tour guide",
         "resolution": "改為 translate：promptZh「導遊請我們在九點前回到巴士上。」、hintWords [\"tour guide\"]、referenceEn [\"The tour guide asked us to be back on the bus before nine.\",\"The tour guide told us to return to the bus by nine.\"]、rubricZh [\"用 tour guide 表示「導遊」\",\"「請我們…」可寫，例如 asked us to…、told us to… 等，後面接原形動詞\",\"「九點前」可寫，例如 before nine、by nine 等\"]（原 makeSentence：instructionZh「用 tour guide 造一個句子，說說一位導遊，或你想不想當導遊。」、referenceEn [\"Our tour guide in Japan was very funny.\",\"I want to be a tour guide someday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

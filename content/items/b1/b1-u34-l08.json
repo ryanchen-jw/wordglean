@@ -128,10 +128,10 @@
       "audioZh": "本店這週六將免費贈送袋子給前一百位顧客。",
       "questionZh": "這週六店家會做什麼？",
       "options": [
-        "Sell bags to a hundred customers.",
-        "Sell everything at half price.",
-        "Close at noon.",
-        "Give away free bags."
+        "Sell bags to a hundred customers",
+        "Sell everything at half price",
+        "Close early at noon",
+        "Give away free bags"
       ],
       "answer": 3
     },
@@ -151,7 +151,7 @@
       "id": "b1-u34-l08-q13",
       "type": "mcq",
       "stemEn": "There was no ____ of the cookies; my brother ate them all.",
-      "stemZh": "餅乾一點痕跡都沒留下；我弟弟全吃光了。",
+      "stemZh": "餅乾一點痕跡都沒留下；我的兄弟全吃光了。",
       "options": [
         "trace",
         "mount",
@@ -381,6 +381,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（adapt）原位換成翻譯題，沿用題 id b1-u34-l08-q17；目標字沿用 adapt",
         "resolution": "改為 translate：promptZh「這部電影是從一本小說改編的。」、hintWords [\"adapt\"]、referenceEn [\"This movie was adapted from a novel.\",\"This film is adapted from a novel.\"]、rubricZh [\"用 adapt 表示「改編」，這裡用被動（例如 was adapted from…）\"]（原 makeSentence：instructionZh「用 adapt 造一個句子，說說你適應某個新環境的經驗。」、referenceEn [\"I adapted quickly to life in a big city.\",\"It took me a while to adapt to the cold weather.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：options[2]（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

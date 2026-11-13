@@ -14,9 +14,9 @@
       "id": "b2-u15-l04-q01",
       "type": "wordCard",
       "word": "pudding",
-      "exampleEn": "The school canteen serves chocolate pudding every Friday.",
+      "exampleEn": "The school cafeteria serves chocolate pudding every Friday.",
       "exampleZh": "學校餐廳每週五都供應巧克力布丁。",
-      "glossZh": "布丁；（英）甜點",
+      "glossZh": "布丁；甜點；（英式：甜點義）",
       "distractorsZh": [
         "果凍",
         "冰淇淋",
@@ -174,8 +174,8 @@
     {
       "id": "b2-u15-l04-q14",
       "type": "reading",
-      "passageEn": "Our class held an international food day last Friday. Each group cooked a dish from a different country. My group made a dish from Mexico with fresh tomato salsa. Another group brought sweet mango with sticky rice, and a third made a dessert of soybean milk and fruit. The teacher prepared hot cocoa for everyone. By noon, we were starving, and the room smelled wonderful. The most popular dish was a rich bread pudding, served in a big pot with a glass lid. To finish, we all had cold tea with mint, which was perfect on such a warm day.",
-      "passageZh": "我們班上週五舉辦了國際美食日。每組做一道來自不同國家的料理。我們這組做了一道墨西哥菜，配上新鮮的番茄莎莎醬。另一組帶來甜芒果配糯米飯，第三組則用豆漿和水果做了一道甜點。老師幫大家準備了熱可可。到了中午，我們都餓壞了，教室裡香氣四溢。最受歡迎的是一道香濃的麵包布丁，裝在一個有玻璃蓋的大鍋裡。最後，我們喝了加薄荷的冰茶，在這麼溫暖的日子再適合不過了。",
+      "passageEn": "Our class held an international food day last Friday. Each group cooked a dish from a different country. My group made a dish from Mexico with fresh tomato salsa. Another group brought sweet mango with sticky rice, and a third made a dessert of soybean milk and fruit. The teacher prepared cold cocoa for everyone. By noon, we were starving, and the room smelled wonderful. The most popular dish was a rich bread pudding, served in a big pot with a glass lid. To finish, we all had cold tea with mint, which was perfect on such a warm day.",
+      "passageZh": "我們班上週五舉辦了國際美食日。每組做一道來自不同國家的料理。我們這組做了一道墨西哥菜，配上新鮮的番茄莎莎醬。另一組帶來甜芒果配糯米飯，第三組則用豆漿和水果做了一道甜點。老師幫大家準備了冰可可。到了中午，我們都餓壞了，教室裡香氣四溢。最受歡迎的是一道香濃的麵包布丁，裝在一個有玻璃蓋的大鍋裡。最後，我們喝了加薄荷的冰茶，在這麼溫暖的日子再適合不過了。",
       "questions": [
         {
           "questionZh": "作者那組做了什麼料理？",
@@ -191,7 +191,7 @@
           "questionZh": "最受歡迎的料理是什麼？",
           "options": [
             "芒果糯米飯",
-            "熱可可",
+            "冰可可",
             "加薄荷的冰茶",
             "麵包布丁"
           ],
@@ -393,6 +393,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pudding）原位換成翻譯題，沿用題 id b2-u15-l04-q16；目標字沿用 pudding",
         "resolution": "改為 translate：promptZh「這個布丁需要放在冰箱裡冷藏兩個小時。」、hintWords [\"pudding\"]、referenceEn [\"This pudding needs to stay in the fridge for two hours.\",\"You need to keep this pudding in the fridge for two hours.\"]、rubricZh [\"pudding 指「布丁」（例如 this pudding 等）\",\"「需要」可寫，例如 needs to、has to、should 等\",\"「冰箱」可寫，例如 fridge、refrigerator 等\"]（原 makeSentence：instructionZh「用 pudding 造一個句子，說說你喜歡的布丁或甜點。」、referenceEn [\"My favorite pudding is the chocolate one from the shop near my house.\",\"I sometimes make rice pudding when I want something sweet.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[1].options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -28,7 +28,7 @@
       "id": "c1-u16-l01-q02",
       "type": "wordCard",
       "word": "adversary",
-      "exampleEn": "In chess, you must always think about the next move of your adversary.",
+      "exampleEn": "In chess, you must always think about your adversary's next move.",
       "exampleZh": "下西洋棋時，你一定要隨時想到對手的下一步。",
       "glossZh": "對手；敵手",
       "distractorsZh": [
@@ -286,6 +286,12 @@
         "message": "執行長裁示：第③關：c1-u16-l01-q16 FIX 「上了六堂課」可讀成教課或去上課（§12.8），題目改「教了」",
         "resolution": "改為 promptZh \"我同事一天連續教了六堂課，她的體力真好。\"（原 promptZh \"我同事連續上了六堂課，她的體力真好。\"）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

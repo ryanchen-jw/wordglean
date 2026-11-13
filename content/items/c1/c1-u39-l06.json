@@ -80,7 +80,7 @@
       "id": "c1-u39-l06-q06",
       "type": "wordCard",
       "word": "hypocritically",
-      "exampleEn": "The company hypocritically talks about nature while polluting the river.",
+      "exampleEn": "The company hypocritically talks about protecting nature while polluting the river.",
       "exampleZh": "那家公司一邊汙染河川，一邊虛偽地大談保護自然。",
       "glossZh": "虛偽地；假惺惺地",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "平坦的沙漠公路單調地綿延了好幾個小時。",
       "questionZh": "那條沙漠公路是什麼樣子？",
       "options": [
-        "It had a lot of sharp, narrow turns.",
-        "It was flat and the same for hours.",
-        "It was crowded with big, noisy trucks.",
-        "It was closed for repairs all day."
+        "It had a lot of sharp, narrow turns",
+        "It was flat and the same for hours",
+        "It was crowded with big, noisy trucks",
+        "It was closed for repairs all day"
       ],
       "answer": 1
     },
@@ -169,7 +169,7 @@
     {
       "id": "c1-u39-l06-q14",
       "type": "mcq",
-      "stemEn": "The ____ pupil kept talking back to the teacher, so he was sent to the head teacher's office.",
+      "stemEn": "The ____ pupil kept talking back to the teacher, so he was sent to the principal's office.",
       "stemZh": "那個不服從的學生一直跟老師頂嘴，所以被送到校長室。",
       "options": [
         "tactful",
@@ -188,7 +188,7 @@
     {
       "id": "c1-u39-l06-q15",
       "type": "reading",
-      "passageEn": "My great-uncle Felix was a painter who worked prolifically, producing over two thousand paintings. He also dressed eccentrically, often wearing two different shoes. As a young art student, he was considered insubordinate because he refused to copy the paintings of the old masters, and his teachers did not value his individuality. He hated art that was done monotonously, like painting the same bowl of fruit every day. Late in life, he talked sentimentally about those student years. He sometimes criticized rich collectors, though some said he did so hypocritically, since he had sold them many paintings himself. On his ninetieth birthday, he smiled impishly and announced that he was starting a new series. When it opened, he walked victoriously through the crowded hall.",
+      "passageEn": "My great-uncle Felix was a painter who worked prolifically, producing over two thousand paintings. He also dressed eccentrically, often wearing two different shoes. As a young art student, he was considered insubordinate because he refused to copy the paintings of the old masters, and his teachers did not value his individuality. He hated working monotonously, like painting the same bowl of fruit every day. Late in life, he talked sentimentally about those student years. He sometimes criticized rich collectors, though some said he did so hypocritically, since he had sold them many paintings himself. On his ninetieth birthday, he smiled impishly and announced that he was starting a new series. When it opened, he walked victoriously through the crowded hall.",
       "passageZh": "我的伯公 Felix 是位多產的畫家，畫了兩千多幅作品。他的穿著也很古怪，常常左右腳穿不同的鞋。年輕時讀美術學校，他因為不肯臨摹古代大師的畫，被認為不服從，老師們也不重視他的個人特色。他討厭一成不變的創作，例如每天畫同一盤水果。晚年時，他感傷地談起那段學生時光。他有時會批評有錢的收藏家，不過也有人說他這樣很虛偽，因為他自己就賣了很多畫給他們。九十歲生日那天，他頑皮地笑著說要開始畫一系列新作品。這系列作品展出時，他得意地走過擠滿人潮的展覽廳。",
       "questions": [
         {
@@ -378,6 +378,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（impishly）原位換成翻譯題，沿用題 id c1-u39-l06-q17；目標字沿用 impishly",
         "resolution": "改為 translate：promptZh「那隻猴子頑皮地搶走了遊客手上的香蕉。」、hintWords [\"impishly\"]、referenceEn [\"The monkey impishly grabbed the banana from the tourist's hand.\",\"The monkey impishly took a banana right out of the tourist's hand.\"]、rubricZh [\"「頑皮地」用 impishly，位置有彈性\",\"「搶走」可寫，例如 grabbed、took 等\",\"說的是已發生的事，時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 impishly 造一個句子，描述某個人或動物頑皮地做某件事。」、referenceEn [\"My niece impishly hid my glasses in the fridge.\",\"The kitten looked at me impishly before it pushed my cup off the table.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -184,11 +184,11 @@
     {
       "id": "a1-u23-l06-q15",
       "type": "reading",
-      "passageEn": "My brother is a careful boy. He reads every question carefully before he answers. Today, he can't hear the teacher's question, so he asks her to repeat it. Then he solves the math problem. At home, our dirty dog digs a hole in the garden!",
-      "passageZh": "我弟弟是個很小心的男孩。他回答前都會仔細讀每一道題目。今天他聽不到老師的問題，所以請老師再說一次，然後他把數學題解出來了。回到家，我們那隻髒兮兮的狗正在花園裡挖洞！",
+      "passageEn": "My brother is a careful boy. He reads every question carefully before he answers. Today, he can't hear the teacher's question, so he asks her to repeat it. Then he solves the math problem. When he gets home, our dirty dog is digging a hole in the garden!",
+      "passageZh": "我的兄弟是個很小心的男孩。他回答前都會仔細讀每一道題目。今天他聽不到老師的問題，所以請老師再說一次，然後他把數學題解出來了。回到家，我們那隻髒兮兮的狗正在花園裡挖洞！",
       "questions": [
         {
-          "questionZh": "弟弟聽不到老師的問題時怎麼做？",
+          "questionZh": "作者的兄弟聽不到老師的問題時怎麼做？",
           "options": [
             "問同學",
             "請老師再說一次",
@@ -370,6 +370,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（careful）原位換成翻譯題，沿用題 id a1-u23-l06-q17；目標字沿用 careful",
         "resolution": "改為 translate：promptZh「她開車很小心。」、hintWords [\"careful\"]、referenceEn [\"She is a careful driver.\",\"She is very careful when she drives.\"]、rubricZh [\"careful 是形容詞，放在 be 動詞後面或名詞前面（例如 is careful、a careful driver）\",\"動詞配合主詞；寫 She drives carefully 也正確\"]（原 makeSentence：instructionZh「用 careful 造一個句子，提醒別人小心某件事。」、referenceEn [\"Be careful! The soup is hot.\",\"Please be careful when you cook.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -127,10 +127,10 @@
       "audioZh": "請填完問卷，離開前交給櫃台。",
       "questionZh": "填完問卷後要交給誰？",
       "options": [
-        "The reception desk.",
-        "The teacher in Room 3.",
-        "Your boss.",
-        "The guard."
+        "The reception desk",
+        "The teacher in Room 3",
+        "Your boss",
+        "The guard"
       ],
       "answer": 0
     },
@@ -143,8 +143,8 @@
     {
       "id": "b1-u25-l01-q12",
       "type": "shadowing",
-      "sentenceEn": "My brother is studying physics at university.",
-      "sentenceZh": "我哥哥在大學念物理。"
+      "sentenceEn": "My brother is studying physics in college.",
+      "sentenceZh": "我的兄弟在大學念物理。"
     },
     {
       "id": "b1-u25-l01-q13",
@@ -187,7 +187,7 @@
     {
       "id": "b1-u25-l01-q15",
       "type": "reading",
-      "passageEn": "Sara wants to become an engineer. Last year, she won a scholarship from a big company, and she received it at a ceremony. Now she studies physics at a university and spends many hours in the lab. Her instructor gives the class a difficult assignment every week. This term, her team is helping to build a small satellite. Sara also filled in a questionnaire about student life. She says the guidance of her teachers has been very important.",
+      "passageEn": "Sara wants to become an engineer. Last year, she won a scholarship from a big company, and she received it at a ceremony. Now she studies physics at a university and spends many hours in the lab. Her instructor gives the class a difficult assignment every week. This term, her team is helping to build a small satellite. Sara also filled out a questionnaire about student life. She says the guidance of her teachers has been very important.",
       "passageZh": "Sara 想成為工程師。去年，她拿到一家大公司提供的獎學金，還在典禮上領獎。現在她在大學念物理，花很多時間待在實驗室。她的講師每週都給全班一份很難的作業。這學期，她的團隊正在幫忙建造一顆小衛星。Sara 也填了一份關於學生生活的問卷。她說老師們的指導一直都很重要。",
       "questions": [
         {
@@ -339,6 +339,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（guidance）原位換成翻譯題，沿用題 id b1-u25-l01-q17；目標字沿用 guidance",
         "resolution": "改為 translate：promptZh「新員工在第一週需要很多指導。」、hintWords [\"guidance\"]、referenceEn [\"New staff need a lot of guidance in their first week.\",\"In the first week, new workers need plenty of guidance.\"]、rubricZh [\"用 guidance 表示「指導」（不可數，例如 a lot of guidance）\",\"「新員工」可寫，例如 new staff、new workers 等\"]（原 makeSentence：instructionZh「用 guidance 造一個句子，說說誰給過你指導或建議。」、referenceEn [\"My parents gave me a lot of guidance when I was in high school.\",\"I asked my teacher for guidance about my studies.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

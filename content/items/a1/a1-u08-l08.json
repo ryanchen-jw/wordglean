@@ -81,7 +81,7 @@
       "word": "biscuit",
       "exampleEn": "Would you like a biscuit with your tea?",
       "exampleZh": "你要配茶吃塊餅乾嗎？",
-      "glossZh": "（英式）餅乾",
+      "glossZh": "餅乾；（英式）",
       "distractorsZh": [
         "麵包",
         "蛋糕",
@@ -92,7 +92,7 @@
       "id": "a1-u08-l08-q07",
       "type": "wordCard",
       "word": "coke",
-      "exampleEn": "Can I have a coke, please?",
+      "exampleEn": "Can I have a Coke, please?",
       "exampleZh": "請給我一杯可樂。",
       "glossZh": "可樂",
       "distractorsZh": [
@@ -104,7 +104,7 @@
     {
       "id": "a1-u08-l08-q08",
       "type": "listenType",
-      "sentenceEn": "I want a burger and a coke.",
+      "sentenceEn": "I want a burger and a Coke.",
       "sentenceZh": "我要一個漢堡和一杯可樂。"
     },
     {
@@ -173,7 +173,7 @@
     {
       "id": "a1-u08-l08-q14",
       "type": "reading",
-      "passageEn": "Mike goes to a burger shop with his son. Mike has a beef burger and a coke. His son doesn't drink coke, so he has a cup of grape juice. After lunch, they buy some bananas and yogurt for tomorrow's breakfast.",
+      "passageEn": "Mike goes to a burger shop with his son. Mike has a beef burger and a Coke. His son doesn't drink Coke, so he has a cup of grape juice. After lunch, they buy some bananas and yogurt for tomorrow's breakfast.",
       "passageZh": "Mike 和他兒子去一家漢堡店。Mike 吃了一個牛肉漢堡，喝了一杯可樂。他兒子不喝可樂，所以喝了一杯葡萄汁。午餐後，他們買了一些香蕉和優格，當作明天的早餐。",
       "questions": [
         {
@@ -346,6 +346,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（banana）原位換成翻譯題，沿用題 id a1-u08-l08-q16；目標字沿用 banana",
         "resolution": "改為 translate：promptZh「香蕉是黃色的。」、hintWords [\"banana\"]、referenceEn [\"Bananas are yellow.\",\"A banana is yellow.\"]、rubricZh [\"泛指香蕉可寫，例如 Bananas are…、A banana is… 等\",\"動詞配合主詞（例如 Bananas are、A banana is）\"]（原 makeSentence：instructionZh「用 banana 造一個句子，說說你什麼時候吃香蕉。」、referenceEn [\"I eat a banana every morning.\",\"I often eat bananas after lunch.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

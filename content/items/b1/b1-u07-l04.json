@@ -125,10 +125,10 @@
       "audioZh": "這棟房子的地基很穩，所以即使颳強風也很安全。",
       "questionZh": "這棟房子為什麼很安全？",
       "options": [
-        "It has strong walls.",
-        "It is built on a solid base.",
-        "The winds are not strong.",
-        "It is made of glass."
+        "It has strong walls",
+        "It is built on a solid base",
+        "The winds are not strong",
+        "It is made of glass"
       ],
       "answer": 1
     },
@@ -458,6 +458,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（burden）原位換成翻譯題，沿用題 id b1-u07-l04-q17；目標字沿用 burden",
         "resolution": "改為 translate：promptZh「高房租對年輕人來說是很大的負擔。」、hintWords [\"burden\"]、referenceEn [\"High rent is a heavy burden for young people.\",\"High rents are a big burden for young people.\"]、rubricZh [\"用 burden 表示「負擔」（例如 a heavy burden、a big burden 等）\",\"主詞與動詞單複數一致即可（例如 High rent is…、High rents are…）\"]（原 makeSentence：instructionZh「用 burden 造一個句子，說說一件讓你覺得是負擔的事。」、referenceEn [\"Paying the rent every month is a big burden for me.\",\"I feel that too much homework is a burden.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

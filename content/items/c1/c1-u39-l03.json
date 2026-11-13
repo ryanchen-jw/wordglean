@@ -53,7 +53,7 @@
       "id": "c1-u39-l03-q04",
       "type": "wordCard",
       "word": "animatedly",
-      "exampleEn": "My grandfather speaks animatedly whenever football comes up.",
+      "exampleEn": "My grandfather speaks animatedly whenever soccer comes up.",
       "exampleZh": "只要一聊到足球，我爺爺就說得眉飛色舞。",
       "glossZh": "熱烈地；生動活潑地",
       "distractorsZh": [
@@ -79,7 +79,7 @@
       "id": "c1-u39-l03-q06",
       "type": "wordCard",
       "word": "remorseless",
-      "exampleEn": "The main bad character in the film is cold and remorseless.",
+      "exampleEn": "The main bad guy in the film is cold and remorseless.",
       "exampleZh": "電影裡的大反派冷酷又毫無悔意。",
       "glossZh": "冷酷無情的；毫不停歇的",
       "distractorsZh": [
@@ -127,10 +127,10 @@
       "audioZh": "那兩個朋友整頓晚餐都在熱烈地聊他們的旅行。",
       "questionZh": "兩位朋友吃晚餐時在做什麼？",
       "options": [
-        "Talking happily about their trip.",
-        "Arguing about who should pay for the meal.",
-        "Checking their phones without saying a word.",
-        "Eating quietly and slowly."
+        "Talking happily about their trip",
+        "Arguing about who should pay for the meal",
+        "Checking their phones without saying a word",
+        "Eating quietly and slowly"
       ],
       "answer": 0
     },
@@ -187,8 +187,8 @@
     {
       "id": "c1-u39-l03-q15",
       "type": "reading",
-      "passageEn": "Every summer, our town library runs a reading club for children. Last year, the opening speech by a local official was uninspiring, and the children kept moving around in their seats. Then the librarian, Mrs. Tan, took the microphone and talked so animatedly about monsters and pirates that everyone woke up. Over the next six weeks, even children who were not avid readers read voraciously, some finishing a book a day. One boy, a bit of an exhibitionist, insisted on reading aloud to the whole room. The heat outside was remorseless, but the library stayed cool, and parents sat placidly in a corner. On the final day, the children cheered exuberantly when they received their prizes. Only the old cooling system performed appallingly, breaking down twice.",
-      "passageZh": "每年夏天，我們鎮上的圖書館都會為孩子舉辦讀書會。去年，一位地方官員的開幕致詞很乏味，孩子們在座位上坐立不安。後來圖書館員 Tan 太太拿起麥克風，眉飛色舞地講起怪獸和海盜，大家一下子都醒了過來。接下來六個星期，連本來不愛看書的孩子都如飢似渴地讀書，有些人一天讀完一本。有個有點愛出風頭的男孩，堅持要對整個房間的人大聲朗讀。外面熱得毫不留情，但圖書館裡一直很涼爽，家長們安靜地坐在角落。最後一天，孩子們領到獎品時興高采烈地歡呼。只有那台老冷氣表現糟透了，壞了兩次。",
+      "passageEn": "Every summer, our town library runs a reading club for children. Last year, the opening speech by a local official was uninspiring, and the children kept moving around in their seats. Then the librarian, Mrs. Tan, took the microphone and talked so animatedly about monsters and pirates that everyone woke up. Over the next six weeks, even children who were not avid readers read voraciously, some finishing a book a day. One boy, a bit of an exhibitionist, insisted on reading aloud to the whole room. The heat outside was remorseless, but the library was mostly cool, and parents sat placidly in a corner. On the final day, the children cheered exuberantly when they received their prizes. Only the old cooling system performed appallingly, breaking down twice.",
+      "passageZh": "每年夏天，我們鎮上的圖書館都會為孩子舉辦讀書會。去年，一位地方官員的開幕致詞很乏味，孩子們在座位上坐立不安。後來圖書館員 Tan 太太拿起麥克風，眉飛色舞地講起怪獸和海盜，大家一下子都醒了過來。接下來六個星期，連本來不愛看書的孩子都如飢似渴地讀書，有些人一天讀完一本。有個有點愛出風頭的男孩，堅持要對整個房間的人大聲朗讀。外面熱得毫不留情，但圖書館裡大多時候很涼爽，家長們安靜地坐在角落。最後一天，孩子們領到獎品時興高采烈地歡呼。只有那台老冷氣表現糟透了，壞了兩次。",
       "questions": [
         {
           "questionZh": "地方官員的開幕致詞怎麼樣？",
@@ -311,6 +311,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（animatedly）原位換成翻譯題，沿用題 id c1-u39-l03-q17；目標字沿用 animatedly",
         "resolution": "改為 translate：promptZh「那位導遊生動地講解這座城堡的歷史。」、hintWords [\"animatedly\"]、referenceEn [\"The guide talked animatedly about the history of the castle.\",\"Our guide explained the castle's history animatedly.\"]、rubricZh [\"「生動地」用 animatedly，位置有彈性\",\"「講解」可寫，例如 talked about、explained、described 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 animatedly 造一個句子，描述你和別人熱烈談論某件事的情景。」、referenceEn [\"My friends and I talked animatedly about the concert on the way home.\",\"I chatted animatedly with my sister about our holiday plans.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

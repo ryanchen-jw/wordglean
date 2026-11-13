@@ -112,10 +112,10 @@
       "audioZh": "我們這個月的銷售額下降了，所以需要新的計畫。",
       "questionZh": "為什麼需要新的計畫？",
       "options": [
-        "Sales went up.",
-        "The boss left the shop.",
-        "Sales went down.",
-        "The shop moved away."
+        "Sales went up",
+        "The boss left the shop",
+        "Sales went down",
+        "The shop moved away"
       ],
       "answer": 2
     },
@@ -361,6 +361,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（decrease）原位換成翻譯題，沿用題 id b1-u05-l08-q16；目標字沿用 decrease",
         "resolution": "改為 translate：promptZh「這個小鎮的人口在過去十年減少了。」、hintWords [\"decrease\"]、referenceEn [\"The population of this town has decreased over the past ten years.\",\"This town's population decreased in the last ten years.\"]、rubricZh [\"用 decrease 表示「減少」（例如 has decreased、decreased 等；寫 has gone down 也正確）\",\"「過去十年」可寫，例如 over the past ten years、in the last ten years 等\"]（原 makeSentence：instructionZh「用 decrease 造一個句子，說說你希望減少，或已經減少的一件事。」、referenceEn [\"I want to decrease the time I spend on my phone.\",\"The amount of coffee I drink has decreased this year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

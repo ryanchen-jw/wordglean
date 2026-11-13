@@ -191,7 +191,7 @@
     {
       "id": "b2-u32-l01-q15",
       "type": "reading",
-      "passageEn": "Every Monday, Ms. Su checks the stock in her small kitchen shop. If something is running low, she places an order with her supplier. Most of her pots and knives are imported from Japan, so shipping can take two weeks. Last month, a big order arrived on a Friday evening, and her son helped her unload the boxes. One box was full of small packets of tea, which she had not ordered. When she called the supplier, they told her to keep the tea as a gift. Ms. Su is also thinking of opening a second shop in the new outlet mall near the airport, where customers can make a purchase online and collect it at the shop the same day. She will pay for it with a small loan.",
+      "passageEn": "Every Monday, Ms. Su checks the stock in her small kitchen shop. If something is running low, she places an order with her supplier. Most of her pots and knives are imported from Japan, so shipping can take two weeks. Last month, a big order arrived on a Friday evening, and her son helped her unload the boxes. One box was full of small packets of tea, which she had not ordered. When she called the supplier, they told her to keep the tea as a gift. Ms. Su is also thinking of opening a second shop in the new outlet mall near the airport, where customers can make a purchase online and collect it at the shop the same day. She plans to pay for the new shop with a small loan.",
       "passageZh": "每個星期一，蘇小姐都會檢查她那家小廚具店的存貨。如果有東西快賣完了，她就向供應商下訂單。她的鍋子和刀子大多是從日本進口的，所以運送可能要兩個星期。上個月，一批大訂單在星期五晚上送到，她兒子幫她卸下箱子。其中一箱裝滿了小包的茶葉，那是她沒有訂的。她打電話給供應商，對方說茶葉就留著當禮物。蘇小姐也在考慮到機場附近新開的暢貨中心開第二家店，顧客可以在網路上購買，當天到店取貨。她會用一筆小額貸款來支付開店費用。",
       "questions": [
         {
@@ -410,6 +410,12 @@
         "message": "執行長裁示：第③關：SUS 與 u01-l04-q16（店家週末總是擠滿人）情境、句型幾乎相同",
         "resolution": "改為 promptZh「我在暢貨中心用半價買到這雙跑鞋。」、referenceEn [\"I bought these running shoes at half price at the outlet.\",\"I got these running shoes for half price at an outlet mall.\"]、rubricZh [\"「暢貨中心」可寫，例如 outlet、outlet mall 等\",\"「用半價」可寫，例如 at half price、for half price 等\",\"時態可用過去式或現在完成式（例如 bought、have bought 等）\"]（原 promptZh「週末時，這家暢貨中心總是擠滿了購物的人。」、referenceEn [\"This outlet is always full of shoppers on weekends.\",\"On weekends, the outlet mall is always crowded with shoppers.\"]、rubricZh [\"「暢貨中心」可寫，例如 outlet、outlet mall 等\",\"「擠滿了購物的人」可寫，例如 full of shoppers、crowded with shoppers 等\",\"always 位置、「週末」放句首或句尾都不扣分\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

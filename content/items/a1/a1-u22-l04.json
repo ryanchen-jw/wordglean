@@ -118,7 +118,7 @@
       "id": "a1-u22-l04-q09",
       "type": "listenType",
       "sentenceEn": "I play the piano, and my sister plays the guitar.",
-      "sentenceZh": "我彈鋼琴，我妹妹彈吉他。"
+      "sentenceZh": "我彈鋼琴，我的姊妹彈吉他。"
     },
     {
       "id": "a1-u22-l04-q10",
@@ -312,6 +312,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（festival）原位換成翻譯題，沿用題 id a1-u22-l04-q17；目標字沿用 festival",
         "resolution": "改為 translate：promptZh「這個節慶有很多好吃的食物。」、hintWords [\"festival\"]、referenceEn [\"There is a lot of good food at this festival.\",\"This festival has a lot of good food.\"]、rubricZh [\"festival 前面加 this、the 等\",\"可寫，例如 There is a lot of good food at…、This festival has… 等；「好吃」寫 delicious 也正確\"]（原 makeSentence：instructionZh「用 festival 造一個句子，說說你喜歡的節日或慶典。」、referenceEn [\"My favorite festival is Chinese New Year.\",\"There is a big music festival in my city.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

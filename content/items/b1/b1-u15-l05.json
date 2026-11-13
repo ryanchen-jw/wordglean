@@ -29,7 +29,7 @@
       "word": "cashpoint",
       "exampleEn": "Is there a cashpoint near here?",
       "exampleZh": "這附近有提款機嗎？",
-      "glossZh": "自動提款機",
+      "glossZh": "自動提款機；（英式）",
       "distractorsZh": [
         "公車站",
         "公共廁所",
@@ -114,10 +114,10 @@
       "audioZh": "免稅店在護照查驗之後，靠近 5 號登機門。",
       "questionZh": "免稅店在哪裡？",
       "options": [
-        "Before passport control.",
-        "Near Gate 5.",
-        "Outside the airport.",
-        "Next to the bank."
+        "Before passport control",
+        "Near Gate 5",
+        "Outside the airport",
+        "Next to the bank"
       ],
       "answer": 1
     },
@@ -174,7 +174,7 @@
     {
       "id": "b1-u15-l05-q14",
       "type": "reading",
-      "passageEn": "When Maya was twelve, her parents opened a bank account for her. Every week, she put half of her pocket money into it. By sixteen, she had saved enough to buy a second-hand bicycle. Last summer, she traveled abroad for the first time. She checked the exchange rate online and took cash from a cashpoint at the airport. She did not buy anything at the duty-free shops because she wanted to save every penny. Her only treat was a takeaway pizza on the last night.",
+      "passageEn": "When Maya was twelve, her parents opened a bank account for her. Every week, she put half of her pocket money into it. By sixteen, she had saved enough to buy a second-hand bicycle. Last summer, she traveled abroad for the first time. She checked the exchange rate online and got some cash from a cashpoint at the airport. She did not buy anything at the duty-free shops because she wanted to save every penny. Her only treat was a takeaway pizza on the last night.",
       "passageZh": "Maya 十二歲時，爸媽替她開了一個銀行帳戶。每個星期，她把一半的零用錢存進去。到了十六歲，她存的錢已經夠買一輛二手腳踏車。去年夏天，她第一次出國旅行。她上網查了匯率，並在機場的提款機領了現金。她在免稅店什麼都沒買，因為她想省下每一分錢。她唯一犒賞自己的，是最後一晚的一份外帶披薩。",
       "questions": [
         {
@@ -363,6 +363,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bank account）原位換成翻譯題，沿用題 id b1-u15-l05-q16；目標字沿用 bank account",
         "resolution": "改為 translate：promptZh「薪水會直接存進你的銀行帳戶。」、hintWords [\"bank account\"]、referenceEn [\"Your pay will go directly into your bank account.\",\"Your pay will be put straight into your bank account.\"]、rubricZh [\"用 bank account 表示「銀行帳戶」\",\"「直接存進」可寫，例如 go directly into、be put straight into 等\"]（原 makeSentence：instructionZh「用 bank account 造一個句子，說說你怎麼使用銀行帳戶。」、referenceEn [\"I put part of my pay into my bank account every month.\",\"I use my bank account to pay bills online.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

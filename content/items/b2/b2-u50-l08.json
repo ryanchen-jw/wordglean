@@ -188,8 +188,8 @@
     {
       "id": "b2-u50-l08-q15",
       "type": "reading",
-      "passageEn": "Our town museum has a special room about printing. It shows a replica of a printing machine from five hundred years ago, and the artistry of early printers is clear on every page they made. A worker colors the pages with natural dye made from leaves. My favorite item was a reprint of the town's first newspaper, which you can buy at the gift shop. During our visit, there was a short interruption when the fire alarm rang by mistake, but everyone soon came back.",
-      "passageZh": "我們鎮的博物館有一間介紹印刷的特別展室。裡面展示一台五百年前印刷機的複製品，從他們印出的每一頁都看得出早期印刷工人的技藝。一位工作人員用樹葉做的天然染料替紙張上色。我最喜歡的展品是本鎮第一份報紙的翻印本，在禮品店就買得到。我們參觀時，火災警報誤響，參觀中斷了一下，不過大家很快就回來了。",
+      "passageEn": "Our town museum has a special room about printing. It shows a replica of a printing machine from five hundred years ago, and the artistry of early printers is clear on the old pages beside it. A worker colors the pages with natural dye made from leaves. My favorite item was a reprint of the town's first newspaper, which you can buy at the gift shop. During our visit, there was a short interruption when the fire alarm rang by mistake, but everyone soon came back.",
+      "passageZh": "我們鎮的博物館有一間介紹印刷的特別展室。裡面展示一台五百年前印刷機的複製品，從旁邊展示的舊書頁就看得出早期印刷工人的技藝。一位工作人員用樹葉做的天然染料替紙張上色。我最喜歡的展品是本鎮第一份報紙的翻印本，在禮品店就買得到。我們參觀時，火災警報誤響，參觀中斷了一下，不過大家很快就回來了。",
       "questions": [
         {
           "questionZh": "作者最喜歡哪一件展品？",
@@ -348,6 +348,12 @@
         "message": "執行長裁示：第③關：SUS 與 u48-l04-q16（報告草率、錯誤百出）情境相同",
         "resolution": "改為 promptZh「她匆忙寫了一張字條就出門了。」、referenceEn [\"She hastily wrote a note and left the house.\",\"She wrote a note hastily and went out.\"]、rubricZh [\"hastily 修飾動詞，可放動詞前或後（例如 hastily wrote、wrote … hastily 等）\",\"「出門」可寫，例如 left the house、went out 等\",\"時態可用過去式或現在完成式（例如 wrote、has left 等）\"]（原 promptZh「這份報告寫得太匆忙，裡面有很多錯誤。」、referenceEn [\"This report was written too hastily, so it has many mistakes.\",\"The report was written so hastily that it is full of mistakes.\"]、rubricZh [\"hastily 修飾動詞（例如 was written too hastily 等）；主動句也正確\",\"「很多錯誤」可寫，例如 many mistakes、full of mistakes、a lot of errors 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

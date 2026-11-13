@@ -127,10 +127,10 @@
       "audioZh": "辦公室星期一不開放，因為我們得重新擺放所有的家具。",
       "questionZh": "辦公室星期一為什麼不開放？",
       "options": [
-        "To change where the furniture goes.",
-        "To buy all new furniture.",
-        "Because it is a holiday.",
-        "To move to a new building."
+        "To change where the furniture goes",
+        "To buy all new furniture",
+        "Because it is a holiday",
+        "To move to a new building"
       ],
       "answer": 0
     },
@@ -509,6 +509,12 @@
         "message": "執行長裁示：第③關：SUS 「媽媽」可讀成自己的媽媽，改成泛指",
         "resolution": "改為 promptZh「當媽媽的總是想保護自己的孩子。」（原 promptZh「媽媽總是想保護自己的孩子。」）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

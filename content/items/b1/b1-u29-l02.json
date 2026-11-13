@@ -128,10 +128,10 @@
       "audioZh": "晚上六點以後，你可以在我們的網站上查詢訂單狀態。",
       "questionZh": "什麼時候可以上網查訂單狀態？",
       "options": [
-        "Only on weekends.",
+        "Only on weekends",
         "Before six p.m.",
-        "After six in the evening.",
-        "Tomorrow morning."
+        "After six in the evening",
+        "Tomorrow morning"
       ],
       "answer": 2
     },
@@ -188,8 +188,8 @@
     {
       "id": "b1-u29-l02-q15",
       "type": "reading",
-      "passageEn": "Last week, our class visited a museum about our city's history. It is in a historic building near the river. Two hundred years ago, the city was a small farming town. Then it became an industrial center with many factories. One room showed how Christians and people of other religions lived side by side. Another room explained the history of democracy in the city. Our guide said that in the past, women had a low status, and few of them could be independent. At the end, our teacher asked us about the moral of the visit. I said that things can change, even when people are conservative at first.",
-      "passageZh": "上週我們班參觀了一間介紹我們城市歷史的博物館，它位在河邊一棟具歷史意義的建築裡。兩百年前，這座城市是個小小的農業城鎮，後來成了有很多工廠的工業中心。有一個展間介紹基督徒和其他宗教的人如何比鄰而居。另一個展間說明這座城市民主制度的歷史。導覽員說，過去女性地位很低，很少有人能獨立。最後，老師問我們這次參觀的寓意是什麼。我說，即使人們一開始很保守，事情還是會改變。",
+      "passageEn": "Last week, our class visited a museum about our city's history. It is in a historic building near the river. Two hundred years ago, the city was a small farming town. Then it became an industrial center with many factories. One room showed how Christians and people of other religions lived side by side. Another room explained the history of democracy in the city. Our guide said that in the past, women had a low status, and few of them could be independent. At the end, our teacher asked us what the moral of the city's story was. I said that things can change, even when people are conservative at first.",
+      "passageZh": "上週我們班參觀了一間介紹我們城市歷史的博物館，它位在河邊一棟具歷史意義的建築裡。兩百年前，這座城市是個小小的農業城鎮，後來成了有很多工廠的工業中心。有一個展間介紹基督徒和其他宗教的人如何比鄰而居。另一個展間說明這座城市民主制度的歷史。導覽員說，過去女性地位很低，很少有人能獨立。最後，老師問我們這座城市的故事有什麼寓意。我說，即使人們一開始很保守，事情還是會改變。",
       "questions": [
         {
           "questionZh": "兩百年前這座城市是什麼樣子？",
@@ -202,7 +202,7 @@
           "answer": 2
         },
         {
-          "questionZh": "作者認為這次參觀的寓意是什麼？",
+          "questionZh": "作者認為這座城市的故事有什麼寓意？",
           "options": [
             "古人生活很辛苦",
             "要多參觀博物館",
@@ -328,6 +328,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（status）原位換成翻譯題，沿用題 id b1-u29-l02-q17；目標字沿用 status",
         "resolution": "改為 translate：promptZh「在這個國家，老師的社會地位很高。」、hintWords [\"status\"]、referenceEn [\"Teachers have a high social status in this country.\",\"In this country, teachers have high status in society.\"]、rubricZh [\"用 status 表示「地位」（例如 a high social status）\",\"「社會地位」可寫，例如 social status、status in society 等\"]（原 makeSentence：instructionZh「用 status 造一個句子，說說你最近查過的某件事的狀態。」、referenceEn [\"I checked the status of my flight this morning.\",\"I often check the status of my online orders.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[1].questionZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

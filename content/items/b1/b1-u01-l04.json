@@ -127,10 +127,10 @@
       "audioZh": "天氣很差，不過 Daniel 還是去公園跑步了。",
       "questionZh": "天氣不好時，Daniel 做了什麼？",
       "options": [
-        "He went to a café.",
-        "He stayed at home.",
-        "He still ran.",
-        "He sat in the park."
+        "He went to a cafe",
+        "He stayed at home",
+        "He still ran",
+        "He sat in the park"
       ],
       "answer": 2
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u01-l04-q15",
       "type": "reading",
-      "passageEn": "Daniel wanted to buy a used bike. He found one online for a mere fifty dollars. The owner said Daniel could have it, provided he picked it up that day. The shop was far away, and the bus ride took over an hour. Nevertheless, Daniel went there. The trip took two hours altogether. The bike was in very good condition. Furthermore, the owner gave him a free lock, so Daniel was very happy.",
-      "passageZh": "Daniel 想買一台二手腳踏車。他在網路上找到一台，只要五十美元。店主說只要 Daniel 當天來拿，就可以賣給他。那間店很遠，搭公車要一個多小時。儘管如此，Daniel 還是去了。這趟路總共花了兩個小時。腳踏車的狀況非常好。此外，店主還送他一個免費的鎖，所以 Daniel 非常開心。",
+      "passageEn": "Daniel wanted to buy a used bike. He found one on a bike shop's website for a mere fifty dollars. The owner said Daniel could have it, provided he picked it up that day. The shop was far away, and the bus ride took over an hour. Nevertheless, Daniel went there. The trip took two hours altogether. The bike was in very good condition. Furthermore, the owner gave him a free lock, so Daniel was very happy.",
+      "passageZh": "Daniel 想買一台二手腳踏車。他在一家腳踏車店的網站上找到一台，只要五十美元。店主說只要 Daniel 當天來拿，就可以賣給他。那間店很遠，搭公車要一個多小時。儘管如此，Daniel 還是去了。這趟路總共花了兩個小時。腳踏車的狀況非常好。此外，店主還送他一個免費的鎖，所以 Daniel 非常開心。",
       "questions": [
         {
           "questionZh": "店主的條件是什麼？",
@@ -352,6 +352,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nevertheless）原位換成翻譯題，沿用題 id b1-u01-l04-q17；目標字沿用 nevertheless",
         "resolution": "改為 translate：promptZh「這家餐廳很貴。儘管如此，每天晚上還是坐滿了客人。」、hintWords [\"nevertheless\"]、referenceEn [\"This restaurant is expensive. Nevertheless, it is full every night.\",\"This restaurant is expensive. Nevertheless, it is full of customers every night.\"]、rubricZh [\"用 nevertheless 表示「儘管如此」（例如 Nevertheless, it is full…；寫 However、Still 也正確）\",\"「坐滿了客人」可寫，例如 is full、is full of customers 等\"]（原 makeSentence：instructionZh「用 nevertheless 造兩個句子，說一件不順利但你仍然做到的事。」、referenceEn [\"I was very tired. Nevertheless, I finished my homework.\",\"The road was busy. Nevertheless, we arrived on time.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

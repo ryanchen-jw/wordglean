@@ -128,10 +128,10 @@
       "audioZh": "派對上，Ken 和賓客們交流，而不是一直待在廚房裡。",
       "questionZh": "Ken 在派對上做了什麼？",
       "options": [
-        "He played music all night.",
-        "He cooked in the kitchen.",
-        "He left early.",
-        "He chatted with guests."
+        "He played music all night",
+        "He cooked in the kitchen",
+        "He left early",
+        "He chatted with guests"
       ],
       "answer": 3
     },
@@ -317,6 +317,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（mingle）原位換成翻譯題，沿用題 id c1-u03-l06-q17；目標字沿用 mingle",
         "resolution": "改為 translate：promptZh「在這部電影裡，真實的歷史和虛構的故事混合在一起。」、hintWords [\"mingle\"]、referenceEn [\"In this film, real history mingles with fiction.\",\"This film mingles real history with invented stories.\"]、rubricZh [\"「混合」用 mingle（例如 history mingles with fiction、mingles A with B 等）\",\"「虛構的故事」可寫，例如 fiction、invented stories 等\"]（原 makeSentence：instructionZh「用 mingle 造一個句子，說說你在聚會或活動中和別人交流的情形。」、referenceEn [\"At the wedding, I mingled with guests I had never met before.\",\"I usually mingle with my colleagues at the company dinner.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

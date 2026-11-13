@@ -127,10 +127,10 @@
       "audioZh": "汽車經銷商說，這個價格包含第一年免費維修。",
       "questionZh": "第一年有什麼是免費的？",
       "options": [
-        "Free gas.",
-        "Repairs.",
-        "Insurance.",
-        "Parking."
+        "Free gas",
+        "Repairs",
+        "Insurance",
+        "Parking"
       ],
       "answer": 1
     },
@@ -221,7 +221,7 @@
       ],
       "referenceEn": [
         "This fridge consumes a lot of electricity.",
-        "This fridge consumes too much power."
+        "This fridge consumes a lot of power."
       ],
       "rubricZh": [
         "consume 表示「消耗」",
@@ -238,11 +238,11 @@
       ],
       "referenceEn": [
         "This experience taught me a valuable lesson.",
-        "This experience gave me a valuable lesson."
+        "This experience was a valuable lesson for me."
       ],
       "rubricZh": [
         "用 valuable 表示「寶貴的」（例如 a valuable lesson）",
-        "「給了我一課」可寫，例如 taught me、gave me 等"
+        "「給了我一課」可寫，例如 taught me、was a valuable lesson for me 等"
       ]
     }
   ],
@@ -406,6 +406,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（valuable）原位換成翻譯題，沿用題 id b1-u15-l03-q17；目標字沿用 valuable",
         "resolution": "改為 translate：promptZh「這次經驗給了我很寶貴的一課。」、hintWords [\"valuable\"]、referenceEn [\"This experience taught me a valuable lesson.\",\"This experience gave me a valuable lesson.\"]、rubricZh [\"用 valuable 表示「寶貴的」（例如 a valuable lesson）\",\"「給了我一課」可寫，例如 taught me、gave me 等\"]（原 makeSentence：instructionZh「用 valuable 造一個句子，說說一樣對你很珍貴的東西。」、referenceEn [\"My grandmother's ring is very valuable to me.\",\"Time with my family is the most valuable thing in my life.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]、rubricZh[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

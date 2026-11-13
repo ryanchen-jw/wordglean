@@ -115,10 +115,10 @@
       "audioZh": "以下是早晨新聞摘要：市中心交通壅塞，預計今天下午會下雨。",
       "questionZh": "根據這段新聞摘要，今天下午的天氣如何？",
       "options": [
-        "It will snow lightly.",
-        "It will be sunny and very warm.",
-        "Strong winds will close the roads.",
-        "It will probably rain."
+        "It will snow lightly",
+        "It will be sunny and very warm",
+        "Strong winds will close the roads",
+        "It will probably rain"
       ],
       "answer": 3
     },
@@ -156,7 +156,7 @@
     {
       "id": "c1-u36-l05-q13",
       "type": "mcq",
-      "stemEn": "Our office ____ a busy café, so it always smells of fresh coffee.",
+      "stemEn": "Our office ____ a busy cafe, so it always smells of fresh coffee.",
       "stemZh": "我們的辦公室緊鄰一家熱鬧的咖啡館，所以總是聞得到新鮮咖啡的香味。",
       "options": [
         "adjoins",
@@ -275,6 +275,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（roundup）原位換成翻譯題，沿用題 id c1-u36-l05-q16；目標字沿用 roundup",
         "resolution": "改為 translate：promptZh「這個網站每週五會用電子郵件寄出一週科技新聞的摘要。」、hintWords [\"roundup\"]、referenceEn [\"Every Friday, this website sends out an email with a roundup of the week's technology news.\",\"This website sends readers a weekly roundup of technology news by email every Friday.\"]、rubricZh [\"「摘要」用 roundup（例如 a roundup of the week's technology news 等）\",\"「用電子郵件寄出」可寫，例如 sends out an email with…、sends…by email 等\",\"說的是固定的習慣，時態配合內容\"]（原 makeSentence：instructionZh「用 roundup 造一個句子，說說你平常怎麼掌握新聞或資訊的重點。」、referenceEn [\"I listen to a short news roundup on my way to work.\",\"Every Sunday, I read a roundup of the week's sports news.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

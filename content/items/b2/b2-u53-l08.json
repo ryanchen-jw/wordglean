@@ -51,8 +51,8 @@
       "id": "b2-u53-l08-q04",
       "type": "wordCard",
       "word": "outshine",
-      "exampleEn": "The little restaurant outshines the expensive hotels in town.",
-      "exampleZh": "那家小餐廳比鎮上昂貴的飯店還出色。",
+      "exampleEn": "The little restaurant outshines the expensive hotel restaurants in town.",
+      "exampleZh": "那家小餐廳比鎮上昂貴的飯店餐廳還出色。",
       "glossZh": "比…出色；使相形見絀",
       "distractorsZh": [
         "模仿",
@@ -77,7 +77,7 @@
       "id": "b2-u53-l08-q06",
       "type": "wordCard",
       "word": "soaking",
-      "exampleEn": "After playing in the sea, she wrapped her soaking hair in a towel.",
+      "exampleEn": "After playing in the sea, she wrapped her soaking wet hair in a towel.",
       "exampleZh": "在海裡玩完水後，她用毛巾包住濕透的頭髮。",
       "glossZh": "濕透的",
       "distractorsZh": [
@@ -410,6 +410,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（redo）原位換成翻譯題，沿用題 id b2-u53-l08-q17；目標字沿用 redo",
         "resolution": "改為 translate：promptZh「電腦當機了，所以我得把整份報告重做一遍。」、hintWords [\"redo\"]、referenceEn [\"My computer crashed, so I had to redo the whole report.\",\"Because my computer crashed, I had to redo my entire report.\"]、rubricZh [\"redo 當動詞（例如 had to redo the whole report 等）\",\"「當機」可寫，例如 crashed、stopped working 等\",\"時態配合句意（例如 crashed、has crashed、had to redo、have to redo 等）\"]（原 makeSentence：instructionZh「用 redo 造一個句子，描述一件必須重做的事。」、referenceEn [\"My computer froze, so I had to redo the whole drawing.\",\"We redid the puzzle because one piece was missing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

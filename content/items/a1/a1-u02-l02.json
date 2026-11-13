@@ -72,7 +72,7 @@
       "type": "wordCard",
       "word": "girl",
       "exampleEn": "The girl in the red dress is my sister.",
-      "exampleZh": "穿紅色洋裝的女孩是我妹妹。",
+      "exampleZh": "穿紅色洋裝的女孩是我的姊妹。",
       "glossZh": "女孩",
       "distractorsZh": [
         "男孩",
@@ -407,6 +407,12 @@
         "message": "執行長裁示：第③關：SUS 題目「在一家銀行工作」與參考答案 has a job 不對應，題目改成「有一份工作」",
         "resolution": "改為 promptZh「他在一家銀行有一份工作。」（原「他在一家銀行工作。」）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

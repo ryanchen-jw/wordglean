@@ -15,7 +15,7 @@
       "type": "wordCard",
       "word": "pickle",
       "exampleEn": "My uncle makes his own pickles from cucumbers in his garden.",
-      "exampleZh": "叔叔用自己菜園的小黃瓜醃泡菜。",
+      "exampleZh": "叔叔用自己菜園種的小黃瓜做醃黃瓜。",
       "glossZh": "醃黃瓜；醃菜",
       "distractorsZh": [
         "果醬",
@@ -174,8 +174,8 @@
     {
       "id": "b2-u15-l05-q14",
       "type": "reading",
-      "passageEn": "My father loves trying food from different places. Last month, he took us to a seafood market by the sea. We bought fresh clams and cooked them with leeks in a big pot. My little sister gulped down a whole glass of papaya juice and asked for more. On the way home, we stopped at a farm shop that sold jars of pickles and bags of barley for soup. My father also bought a small bottle of bourbon from Kentucky as a gift for his friend. At home, we ate dinner on our new tablecloth, and everyone agreed it was a delicious day.",
-      "passageZh": "我爸爸很喜歡嘗試各地的食物。上個月，他帶我們去海邊的海鮮市場。我們買了新鮮蛤蜊，和韭蔥一起放進大鍋裡煮。妹妹一口氣喝光一整杯木瓜汁，還想再喝。回家路上，我們在一家農場小店停下來，那裡賣罐裝醃黃瓜和煮湯用的大麥。爸爸還買了一小瓶肯塔基的波本威士忌，要送給朋友。回到家，我們在新桌布上吃晚餐，大家都說那天吃得很美味。",
+      "passageEn": "My father loves trying food from different places. Last month, he took us to a seafood market by the sea. We bought fresh clams and cooked them with leeks in a big pot. My little sister gulped down a whole glass of papaya juice and asked for more. On the way home, we stopped at a farm shop that sold jars of pickles and bags of barley for soup. My father also bought a small bottle of bourbon from Kentucky as a gift for his friend. At home, we ate dinner on our new tablecloth, and everyone agreed that the meal was delicious.",
+      "passageZh": "我爸爸很喜歡嘗試各地的食物。上個月，他帶我們去海邊的海鮮市場。我們買了新鮮蛤蜊，和韭蔥一起放進大鍋裡煮。妹妹一口氣喝光一整杯木瓜汁，還想再喝。回家路上，我們在一家農場小店停下來，那裡賣罐裝醃黃瓜和煮湯用的大麥。爸爸還買了一小瓶肯塔基的波本威士忌，要送給朋友。回到家，我們在新桌布上吃晚餐，大家都說那頓飯很美味。",
       "questions": [
         {
           "questionZh": "蛤蜊是和什麼一起煮的？",
@@ -429,6 +429,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pickle）原位換成翻譯題，沿用題 id b2-u15-l05-q16；目標字沿用 pickle",
         "resolution": "改為 translate：promptZh「這家店的漢堡裡夾了很多醃黃瓜。」、hintWords [\"pickle\"]、referenceEn [\"The burgers at this shop have a lot of pickles in them.\",\"This shop puts lots of pickles in its burgers.\"]、rubricZh [\"pickle 指「醃黃瓜」，這裡用複數（例如 a lot of pickles 等）\",\"「漢堡裡夾了」可寫，例如 have … in them、puts … in its burgers 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 pickle 造一個句子，說說你喜不喜歡醃黃瓜或醃菜。」、referenceEn [\"I always take the pickle out of my burger.\",\"I love eating a cold pickle with my sandwich.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

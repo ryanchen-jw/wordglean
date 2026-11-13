@@ -112,10 +112,10 @@
       "audioZh": "你需要兩年的訓練才能取得這份工作的資格。",
       "questionZh": "要多久才能取得資格？",
       "options": [
-        "Three months.",
-        "Two years.",
-        "Five years.",
-        "One year and a half."
+        "Three months",
+        "Two years",
+        "Five years",
+        "A year and a half"
       ],
       "answer": 1
     },
@@ -173,10 +173,10 @@
       "id": "b1-u33-l02-q14",
       "type": "reading",
       "passageEn": "My brother is a nurse, and he loves his profession. Last year, he studied hard and passed a difficult exam to become a head nurse. The hospital management gave him a promotion, and he now gets a travel allowance, too. This spring, he also won a prize for his work with patients. But he says the best reward is a patient's smile. Our town has high unemployment, so he feels very lucky to have a job he loves.",
-      "passageZh": "我哥哥是護理師，他很熱愛自己的職業。去年他努力讀書，通過一場很難的考試，當上了護理長。醫院的管理階層讓他升職，現在他還有交通津貼。今年春天，他也因為照顧病人的表現得了獎。不過他說，最好的回報是病人的微笑。我們鎮上失業率很高，所以他覺得能有一份喜歡的工作很幸運。",
+      "passageZh": "我的兄弟是護理師，他很熱愛自己的職業。去年他努力讀書，通過一場很難的考試，當上了護理長。醫院的管理階層讓他升職，現在他還有交通津貼。今年春天，他也因為照顧病人的表現得了獎。不過他說，最好的回報是病人的微笑。我們鎮上失業率很高，所以他覺得能有一份喜歡的工作很幸運。",
       "questions": [
         {
-          "questionZh": "哥哥現在還有什麼津貼？",
+          "questionZh": "作者的兄弟現在還有什麼津貼？",
           "options": [
             "孩子的教育補助",
             "每個月的伙食費",
@@ -186,7 +186,7 @@
           "answer": 2
         },
         {
-          "questionZh": "哥哥認為最好的回報是什麼？",
+          "questionZh": "作者的兄弟認為最好的回報是什麼？",
           "options": [
             "加薪",
             "一個獎牌",
@@ -206,7 +206,7 @@
       ],
       "referenceEn": [
         "I save my allowance to buy books.",
-        "I keep my allowance so that I can buy books."
+        "I save up my allowance so that I can buy books."
       ],
       "rubricZh": [
         "allowance 表示「零用錢、津貼」，例如 save my allowance 等說法",
@@ -347,6 +347,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（profession）原位換成翻譯題，沿用題 id b1-u33-l02-q16；目標字沿用 profession",
         "resolution": "改為 translate：promptZh「她的父母都從事教職。」、hintWords [\"profession\"]、referenceEn [\"Both of her parents are in the teaching profession.\",\"Her parents both work in the teaching profession.\"]、rubricZh [\"用 profession 表示「職業」（例如 the teaching profession；寫 are both teachers 也正確）\"]（原 makeSentence：instructionZh「用 profession 造一個句子，說說你想從事的職業。」、referenceEn [\"I want to choose a profession that helps people.\",\"Nursing is the profession I want.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

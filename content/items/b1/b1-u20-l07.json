@@ -125,10 +125,10 @@
       "audioZh": "吸菸者可以使用飯店後面的區域，但不能在花園裡。",
       "questionZh": "吸菸者可以在哪裡抽菸？",
       "options": [
-        "In front of the hotel.",
-        "In the garden.",
-        "At the back of the hotel.",
-        "On their balcony."
+        "In front of the hotel",
+        "In the garden",
+        "At the back of the hotel",
+        "On their balcony"
       ],
       "answer": 2
     },
@@ -147,8 +147,8 @@
     {
       "id": "b1-u20-l07-q13",
       "type": "mcq",
-      "stemEn": "A ____ has more than two hundred bones.",
-      "stemZh": "一具骨骼有兩百多塊骨頭。",
+      "stemEn": "A human ____ has more than two hundred bones.",
+      "stemZh": "人體骨骼有兩百多塊骨頭。",
       "options": [
         "poison",
         "healing",
@@ -427,6 +427,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（discomfort）原位換成翻譯題，沿用題 id b1-u20-l07-q17；目標字沿用 discomfort",
         "resolution": "改為 translate：promptZh「有些人在高山上會感到不適。」、hintWords [\"discomfort\"]、referenceEn [\"Some people feel discomfort high up in the mountains.\",\"Some people feel discomfort in high mountains.\"]、rubricZh [\"用 discomfort 表示「不適」（例如 feel discomfort）\",\"「在高山上」可寫，例如 high up in the mountains、in high mountains 等\"]（原 makeSentence：instructionZh「用 discomfort 造一個句子，說說讓你感到不舒服的情況。」、referenceEn [\"I feel some discomfort when I sit for too long.\",\"I felt discomfort in my back after the long flight.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

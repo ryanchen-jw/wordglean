@@ -172,7 +172,7 @@
     {
       "id": "b2-u52-l05-q14",
       "type": "reading",
-      "passageEn": "Every spring, our town holds a flower festival. This year, the gaiety in the streets was wonderful, with music, dancing and colorful costumes everywhere. My neighbor, who is known for his cheerfulness, led the parade and unashamedly danced in a giant flower hat. The local football team, still exultant after winning the cup the day before, joined in too. Some people said the weather report about rain was humbug, and they were right: the sun shone all day.",
+      "passageEn": "Every spring, our town holds a flower festival. This year, the gaiety in the streets was wonderful, with music, dancing and colorful costumes everywhere. My neighbor, who is known for his cheerfulness, led the parade and unashamedly danced in a giant flower hat. The local soccer team, still exultant after winning the cup the day before, joined in too. Some people said the forecast of rain was humbug, and they were right: the sun shone all day.",
       "passageZh": "每年春天，我們鎮上都會舉辦花卉節。今年街上的歡樂氣氛好極了，到處都是音樂、舞蹈和繽紛的服裝。我那以開朗出名的鄰居帶領遊行隊伍，還毫不害臊地戴著一頂巨大的花帽跳舞。前一天剛贏得獎盃、仍然欣喜若狂的本地足球隊也加入了。有些人說會下雨的天氣預報是胡說，結果他們說對了：太陽照了一整天。",
       "questions": [
         {
@@ -283,6 +283,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bothered）原位換成翻譯題，沿用題 id b2-u52-l05-q16；目標字沿用 bothered",
         "resolution": "改為 translate：promptZh「她看起來很煩惱，因為她找不到鑰匙了。」、hintWords [\"bothered\"]、referenceEn [\"She looked bothered because she couldn't find her keys.\",\"She seemed bothered because she could not find her keys.\"]、rubricZh [\"bothered 當形容詞，接在 look、seem 等動詞後（例如 looked bothered 等）\",\"「找不到」可寫，例如 couldn't find、had lost 等\",\"時態可用過去式或現在式（例如 looked、looks 等）\"]（原 makeSentence：instructionZh「用 bothered 造一個句子，說說一件你不在意或很在意的小事。」、referenceEn [\"I was quite bothered when my friend was late for our lunch.\",\"I get bothered when people talk loudly on the train.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

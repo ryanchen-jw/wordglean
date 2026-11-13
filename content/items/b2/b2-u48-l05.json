@@ -121,12 +121,12 @@
     {
       "id": "b2-u48-l05-q10",
       "type": "listenChoice",
-      "audioEn": "The noise from the building site was unbearable, so we went to the library to study.",
+      "audioEn": "The noise from the construction site was unbearable, so we went to the library to study.",
       "audioZh": "工地的噪音讓人受不了，所以我們去圖書館讀書。",
       "questionZh": "他們為什麼去圖書館讀書？",
       "options": [
         "The library felt much cooler",
-        "The building work was too loud",
+        "The construction was too loud",
         "Friends were there",
         "The site was closed"
       ],
@@ -315,6 +315,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（brilliantly）原位換成翻譯題，沿用題 id b2-u48-l05-q17；目標字沿用 brilliantly",
         "resolution": "改為 translate：promptZh「這位律師把這件困難的案子處理得很出色。」、hintWords [\"brilliantly\"]、referenceEn [\"The lawyer handled the difficult case brilliantly.\",\"The lawyer dealt with the difficult case brilliantly.\"]、rubricZh [\"brilliantly 表示「出色地」，可放句尾或動詞前（例如 handled … brilliantly、brilliantly handled 等）\",\"「處理」可寫，例如 handled、dealt with 等\",\"時態可用過去式或現在完成式（例如 handled、has handled 等）\"]（原 makeSentence：instructionZh「用 brilliantly 造一個句子，稱讚某人把某件事做得很出色。」、referenceEn [\"My classmate answered the difficult question brilliantly.\",\"Our team defended brilliantly in the final game.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

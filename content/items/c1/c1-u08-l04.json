@@ -127,10 +127,10 @@
       "audioZh": "就地質而言，這座島非常年輕，大約一百萬年前才形成。",
       "questionZh": "關於這座島，說話者說了什麼？",
       "options": [
-        "It is sinking slowly.",
-        "It has a large population.",
-        "It is famous for castles.",
-        "It is young in geological terms."
+        "It is sinking slowly",
+        "It has a large population",
+        "It is famous for castles",
+        "It is young in geological terms"
       ],
       "answer": 3
     },
@@ -310,6 +310,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（mythological）原位換成翻譯題，沿用題 id c1-u08-l04-q17；目標字沿用 mythological",
         "resolution": "改為 translate：promptZh「這部電影的主角是一隻神話中的巨鳥。」、hintWords [\"mythological\"]、referenceEn [\"The hero of this film is a giant mythological bird.\",\"The main character in this movie is a huge mythological bird.\"]、rubricZh [\"「神話中的」用 mythological（例如 a mythological bird 等）\",\"「主角」可寫，例如 hero、main character 等\",\"「巨」可寫，例如 giant、huge 等\"]（原 makeSentence：instructionZh「用 mythological 造一個句子，說說你知道或喜歡的某個神話人物或生物。」、referenceEn [\"My favorite mythological creature is a horse with wings.\",\"I enjoy reading about mythological heroes from Greece.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "今天五點後不要在海灘上散步；潮水漲得很快，會淹沒沙灘。",
       "questionZh": "為什麼五點後不要在海灘散步？",
       "options": [
-        "The sea rises quickly.",
-        "The beach closes at five.",
-        "There will be a big storm.",
-        "The sand is too hot."
+        "The sea rises quickly",
+        "The beach closes at five",
+        "There will be a big storm",
+        "The sand is too hot"
       ],
       "answer": 0
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u26-l05-q15",
       "type": "reading",
-      "passageEn": "Our science class took a trip to a coastal town. First, a guide told us about agriculture near the sea: some plants can grow well right next to the sea. On the way, a huge bull stood behind a fence and watched us. We also saw a deep pit that people once used to keep food in. Then we walked along the top of a cliff. When the tide went out, we climbed down to the rocks and looked into small areas of water between them. Air bubbles came up from the sand because small animals were hiding there. Our teacher said each one is full of tiny organisms. Later, we took some water back to the school laboratory.",
-      "passageZh": "我們的自然課到一個沿海小鎮校外教學。首先，導覽員跟我們介紹海邊的農業：有些植物就算緊鄰海邊也能長得很好。路上，一頭巨大的公牛站在圍欄後面看著我們。我們還看到一個從前的人用來儲存食物的深坑。接著我們沿著懸崖頂端走。退潮時，我們爬下去到岩石區，看岩石間一小片一小片的水。沙子裡冒出氣泡，因為有小動物躲在裡面。老師說每一小片水裡都有很多微小的生物。後來，我們帶了一些水回學校的實驗室。",
+      "passageEn": "Our science class took a trip to a coastal town. First, a guide told us about agriculture near the sea: some plants can grow well right next to the sea. On the way, a huge bull stood behind a fence and watched us. We also saw a deep pit that people once used to keep food in. Then we walked along the top of a cliff. When the tide went out, we climbed down to the rocks and looked into the small pools of water between them. Air bubbles came up from the sand because small animals were hiding there. Our teacher said each one is full of tiny organisms. Later, we took some water back to the school laboratory.",
+      "passageZh": "我們的自然課到一個沿海小鎮校外教學。首先，導覽員跟我們介紹海邊的農業：有些植物就算緊鄰海邊也能長得很好。路上，一頭巨大的公牛站在圍欄後面看著我們。我們還看到一個從前的人用來儲存食物的深坑。接著我們沿著懸崖頂端走。退潮時，我們爬下去到岩石區，看岩石間的小水池。沙子裡冒出氣泡，因為有小動物躲在裡面。老師說每個小水池裡都有很多微小的生物。後來，我們帶了一些水回學校的實驗室。",
       "questions": [
         {
           "questionZh": "退潮時學生們去了哪裡？",
@@ -373,6 +373,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bubble）原位換成翻譯題，沿用題 id b1-u26-l05-q17；目標字沿用 bubble",
         "resolution": "改為 translate：promptZh「水快煮開時會冒出小氣泡。」、hintWords [\"bubble\"]、referenceEn [\"Small bubbles appear when the water is about to boil.\",\"When the water is nearly boiling, small bubbles come up.\"]、rubricZh [\"用 bubble 的複數表示「氣泡」\",\"「快煮開」可寫，例如 is about to boil、is nearly boiling 等\"]（原 makeSentence：instructionZh「用 bubble 造一個句子，說說你玩泡泡或看到氣泡的經驗。」、referenceEn [\"I loved blowing bubbles when I was a child.\",\"I saw bubbles rising in my glass of water.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

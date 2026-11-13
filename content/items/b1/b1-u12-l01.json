@@ -127,10 +127,10 @@
       "audioZh": "圖書館週末需要志工，可以在櫃台報名。",
       "questionZh": "要在哪裡報名？",
       "options": [
-        "At the library's front counter.",
-        "On the library website.",
-        "By calling the library.",
-        "At the school office."
+        "At the library's front counter",
+        "On the library website",
+        "By calling the library",
+        "At the school office"
       ],
       "answer": 0
     },
@@ -394,6 +394,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（routine）原位換成翻譯題，沿用題 id b1-u12-l01-q17；目標字沿用 routine",
         "resolution": "改為 translate：promptZh「新的工作讓我的日常作息完全改變了。」、hintWords [\"routine\"]、referenceEn [\"My new job has completely changed my daily routine.\",\"The new job changed my whole routine.\"]、rubricZh [\"用 routine 表示「日常作息」（例如 my daily routine）\",\"時態可用 has changed、changed 等\"]（原 makeSentence：instructionZh「用 routine 造一個句子，說說你的日常作息。」、referenceEn [\"My routine on weekdays is quite boring.\",\"I go for a run every morning as part of my routine.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

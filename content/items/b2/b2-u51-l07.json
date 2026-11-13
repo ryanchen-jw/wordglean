@@ -218,7 +218,7 @@
         "dispensable"
       ],
       "referenceEn": [
-        "Some of the extra features of this phone are really dispensable.",
+        "Some of the extra features of this phone are actually dispensable.",
         "Some extra features on this phone are not really necessary; they are dispensable."
       ],
       "rubricZh": [
@@ -361,6 +361,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（untrimmed）原位換成翻譯題，沿用題 id b2-u51-l07-q17；目標字沿用 untrimmed",
         "resolution": "改為 translate：promptZh「公園裡沒修剪的樹枝擋住了路燈。」、hintWords [\"untrimmed\"]、referenceEn [\"The untrimmed branches in the park are blocking the street lights.\",\"Untrimmed branches in the park have blocked the street lights.\"]、rubricZh [\"untrimmed 當形容詞放名詞前（例如 untrimmed branches 等）\",\"「擋住」可寫，例如 block、cover 等；時態可用現在式、進行式或完成式（例如 block、are blocking 等）\"]（原 makeSentence：instructionZh「用 untrimmed 造一個句子，描述一個沒有修剪、看起來亂亂的東西。」、referenceEn [\"The untrimmed bushes in my yard are now taller than me.\",\"My dog looks funny with his untrimmed fur.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

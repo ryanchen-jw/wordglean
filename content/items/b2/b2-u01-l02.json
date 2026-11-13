@@ -175,7 +175,7 @@
       "id": "b2-u01-l02-q14",
       "type": "mcq",
       "stemEn": "My sister loves big cities, ____ I prefer quiet towns.",
-      "stemZh": "我姊姊喜歡大城市，而我比較喜歡安靜的小鎮。",
+      "stemZh": "我的姊妹喜歡大城市，而我比較喜歡安靜的小鎮。",
       "options": [
         "whereas",
         "because",
@@ -388,6 +388,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（whereas）原位換成翻譯題，沿用題 id b2-u01-l02-q17；目標字沿用 whereas",
         "resolution": "改為 translate：promptZh「這座城市的北邊很現代，而南邊還有很多老房子。」、hintWords [\"whereas\"]、referenceEn [\"The north of the city is modern, whereas the south still has many old houses.\",\"The northern part of the city is very modern, whereas the southern part still has lots of old houses.\"]、rubricZh [\"whereas 連接兩個對比的部分，可放兩部分中間或句首（例如 …, whereas the south… 等）\",\"「北邊」可寫，例如 the north of the city、the northern part 等\",\"「還有很多老房子」可寫，例如 still has many old houses、there are still lots of old buildings 等\"]（原 makeSentence：instructionZh「用 whereas 造一個句子，比較你和另一個人不同的習慣或喜好。」、referenceEn [\"I drink coffee every morning, whereas my husband only drinks tea.\",\"I like to work in the morning, whereas my colleague works better at night.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

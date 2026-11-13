@@ -53,7 +53,7 @@
       "word": "highlight",
       "exampleEn": "Highlight the new words in yellow.",
       "exampleZh": "用黃色把新單字標出來。",
-      "glossZh": "強調；突顯",
+      "glossZh": "（用螢光筆）標示；強調；突顯",
       "distractorsZh": [
         "隱瞞",
         "刪除",
@@ -125,10 +125,10 @@
       "audioZh": "如果你把巧克力留在車上，在這種高溫下會融化。",
       "questionZh": "為什麼不要把巧克力留在車上？",
       "options": [
-        "The car is locked all day.",
-        "Someone might steal it.",
-        "The heat will make it soft.",
-        "The car will get dirty."
+        "The car is locked all day",
+        "Someone might steal it",
+        "The heat will make it soft",
+        "The car will get dirty"
       ],
       "answer": 2
     },
@@ -439,6 +439,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（dare）原位換成翻譯題，沿用題 id b1-u34-l10-q17；目標字沿用 dare",
         "resolution": "改為 translate：promptZh「我弟弟不敢一個人睡覺。」、hintWords [\"dare\"]、referenceEn [\"My little brother doesn't dare to sleep alone.\",\"My younger brother dare not sleep by himself.\"]、rubricZh [\"用 dare 表示「敢」（例如 doesn't dare to sleep、dare not sleep 等）\",\"「一個人」可寫，例如 alone、by himself 等\"]（原 makeSentence：instructionZh「用 dare 造一個句子，說說你不敢做的事。」、referenceEn [\"I don't dare to swim in the sea at night.\",\"I would never dare to sing in front of my whole school.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

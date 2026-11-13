@@ -106,7 +106,7 @@
       "id": "b2-u07-l07-q08",
       "type": "wordCard",
       "word": "lengthen",
-      "exampleEn": "I need to lengthen these trousers a little.",
+      "exampleEn": "I need to lengthen these pants a little.",
       "exampleZh": "這條褲子我得稍微放長一點。",
       "glossZh": "加長；延長",
       "distractorsZh": [
@@ -144,8 +144,8 @@
     {
       "id": "b2-u07-l07-q12",
       "type": "shadowing",
-      "sentenceEn": "In summer, the days lengthen and the nights get shorter.",
-      "sentenceZh": "夏天時，白天變長，夜晚變短。"
+      "sentenceEn": "In spring, the days lengthen and the nights get shorter.",
+      "sentenceZh": "春天時，白天變長，夜晚變短。"
     },
     {
       "id": "b2-u07-l07-q13",
@@ -188,8 +188,8 @@
     {
       "id": "b2-u07-l07-q15",
       "type": "reading",
-      "passageEn": "Our small company sells kitchen tools online, and last year we decided to sell overseas. We soon found that not every country uses the metric system, so we had to change the size labels for each market. We also had to quantify our costs thoroughly. Shipping prices rose tremendously, so we switched to a slower but cheaper service and lengthened our delivery time from three days to a week. We gave every product a numerical code, and our sales data showed that one product sold best: a thin knife that can cut a sliver of cheese as thin as paper. To amplify its success, we made a short video. In the video, a magnifying glass showed how sharp the knife was.",
-      "passageZh": "我們這家小公司在網路上賣廚房用具，去年決定開始外銷。我們很快就發現，並不是每個國家都用公制，所以得為每個市場修改尺寸標籤。我們也必須徹底量化成本。運費大幅上漲，所以我們改用比較慢但比較便宜的運送方式，把送貨時間從三天延長到一週。我們給每項產品一個數字代碼，銷售數據顯示有一項產品賣得最好：一把很薄的刀，能把起司切成像紙一樣薄的薄片。為了擴大它的成功，我們拍了一支短片。影片中用放大鏡顯示這把刀有多鋒利。",
+      "passageEn": "Our small company sells kitchen tools online, and last year we decided to sell overseas. We soon found that not every country uses the metric system, so we had to change the size labels for each market. We also had to quantify our costs thoroughly. Shipping prices rose tremendously, so we switched to a slower but cheaper service and lengthened our delivery time from three days to a week. We gave every product a numerical code, and our sales data showed that one product sold best: a thin knife that can cut a sliver of cheese as thin as paper. To help it sell even better, we made a short video. In the video, a magnifying glass showed how sharp the knife was.",
+      "passageZh": "我們這家小公司在網路上賣廚房用具，去年決定開始外銷。我們很快就發現，並不是每個國家都用公制，所以得為每個市場修改尺寸標籤。我們也必須徹底量化成本。運費大幅上漲，所以我們改用比較慢但比較便宜的運送方式，把送貨時間從三天延長到一週。我們給每項產品一個數字代碼，銷售數據顯示有一項產品賣得最好：一把很薄的刀，能把起司切成像紙一樣薄的薄片。為了讓它賣得更好，我們拍了一支短片。影片中用放大鏡顯示這把刀有多鋒利。",
       "questions": [
         {
           "questionZh": "他們為什麼把送貨時間延長？",
@@ -437,6 +437,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tremendously）原位換成翻譯題，沿用題 id b2-u07-l07-q17；目標字沿用 tremendously",
         "resolution": "改為 translate：promptZh「我非常欽佩我祖母的勇氣。」、hintWords [\"tremendously\"]、referenceEn [\"I admire my grandmother's courage tremendously.\",\"I tremendously admire my grandmother for her courage.\"]、rubricZh [\"tremendously 表示「極大地」，可放句尾或動詞前（例如 admire … tremendously 等）\",\"「欽佩」可寫，例如 admire、respect 等\",\"「祖母」可寫，例如 grandmother、grandma 等\"]（原 makeSentence：instructionZh「用 tremendously 造一個句子，說說你非常喜歡或讓你非常受益的某件事。」、referenceEn [\"I enjoyed my trip to Japan tremendously.\",\"Learning to cook has helped me tremendously.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

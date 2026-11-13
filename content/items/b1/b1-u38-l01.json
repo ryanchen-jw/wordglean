@@ -92,7 +92,7 @@
       "word": "revise",
       "exampleEn": "You should revise the hard chapters first.",
       "exampleZh": "你應該先複習比較難的章節。",
-      "glossZh": "複習；修改",
+      "glossZh": "複習；修改；（英式：複習義）",
       "distractorsZh": [
         "報名",
         "請假",
@@ -125,10 +125,10 @@
       "audioZh": "今天我們要複習第五章，因為星期一要考試。",
       "questionZh": "為什麼今天要複習第五章？",
       "options": [
-        "Chapter five is the hardest one.",
-        "The teacher was absent last week.",
-        "The test is on Monday.",
-        "The students asked for it yesterday."
+        "Chapter five is the hardest one",
+        "The teacher was absent last week",
+        "The test is on Monday",
+        "The students asked for it yesterday"
       ],
       "answer": 2
     },
@@ -185,11 +185,11 @@
     {
       "id": "b1-u38-l01-q15",
       "type": "reading",
-      "passageEn": "My sister is a sophomore in college, and she studies chemistry. Last weekend, she helped me revise for my science test. First, she drew a picture of a water molecule. Then she explained the atomic world: everything is made of atoms, and tiny electrons move around the center of each atom. She also told me that some gases in the air are dioxides. At the end, she asked me to summarize everything in five sentences. She said that when she was a young pupil, she hated science, but now it fascinates her.",
-      "passageZh": "我姊姊是大學二年級學生，主修化學。上週末，她幫我為自然考試複習。首先，她畫了一個水分子的圖。接著她解釋了原子的世界：所有東西都是由原子組成的，微小的電子繞著每個原子的中心移動。她還告訴我，空氣中有些氣體是二氧化物。最後，她要我用五個句子總結所有內容。她說她還是個小學生時很討厭自然課，但現在科學深深吸引著她。",
+      "passageEn": "My sister is a sophomore in college, and she studies chemistry. Last weekend, she helped me revise for my science test. First, she drew a picture of a water molecule. Then she explained the atomic world: everything is made of atoms, and tiny electrons move around the center of each atom. She also told me that some gases in the air are dioxides. Finally, she asked me to summarize everything in five sentences. She said that when she was a young pupil, she hated science, but now it fascinates her.",
+      "passageZh": "我的姊妹是大學二年級學生，主修化學。上週末，她幫我為自然考試複習。首先，她畫了一個水分子的圖。接著她解釋了原子的世界：所有東西都是由原子組成的，微小的電子繞著每個原子的中心移動。她還告訴我，空氣中有些氣體是二氧化物。最後，她要我用五個句子總結所有內容。她說她還是個小學生時很討厭自然課，但現在科學深深吸引著她。",
       "questions": [
         {
-          "questionZh": "姊姊一開始畫了什麼？",
+          "questionZh": "作者的姊妹一開始畫了什麼？",
           "options": [
             "一張太陽和地球的圖",
             "一個水分子的圖",
@@ -199,7 +199,7 @@
           "answer": 1
         },
         {
-          "questionZh": "最後姊姊要作者做什麼？",
+          "questionZh": "最後作者的姊妹要作者做什麼？",
           "options": [
             "把整本課本從頭到尾讀一遍",
             "用五句話總結內容",
@@ -348,6 +348,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（revise）原位換成翻譯題，沿用題 id b1-u38-l01-q17；目標字沿用 revise",
         "resolution": "改為 translate：promptZh「作者花了一年修改這本書。」、hintWords [\"revise\"]、referenceEn [\"The writer spent a year revising this book.\",\"It took the writer a year to revise the book.\"]、rubricZh [\"用 revise 表示「修改」（例如 revising this book）\"]（原 makeSentence：instructionZh「用 revise 造一個句子，說說你考試前怎麼複習。」、referenceEn [\"I revise my notes every night before an exam.\",\"I usually revise with my friends at the library.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

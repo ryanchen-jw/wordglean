@@ -51,8 +51,8 @@
       "id": "b1-u11-l01-q04",
       "type": "wordCard",
       "word": "basement",
-      "exampleEn": "The shop moved its kitchen to the basement.",
-      "exampleZh": "那家店把廚房搬到地下室。",
+      "exampleEn": "The restaurant moved its kitchen to the basement.",
+      "exampleZh": "那家餐廳把廚房搬到地下室。",
       "glossZh": "地下室",
       "distractorsZh": [
         "屋頂",
@@ -105,7 +105,7 @@
       "word": "rubber",
       "exampleEn": "Rubber trees grow in hot countries.",
       "exampleZh": "橡膠樹生長在炎熱的國家。",
-      "glossZh": "橡膠；橡皮擦",
+      "glossZh": "橡膠；橡皮擦；（英式：橡皮擦義）",
       "distractorsZh": [
         "玻璃",
         "木頭",
@@ -125,10 +125,10 @@
       "audioZh": "我換燈的時候，幫我扶著梯子。",
       "questionZh": "說話者要對方做什麼？",
       "options": [
-        "Hold the ladder.",
-        "Change the light.",
-        "Turn off the light.",
-        "Bring a chair."
+        "Hold the ladder",
+        "Change the light",
+        "Turn off the light",
+        "Bring a chair"
       ],
       "answer": 0
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u11-l01-q15",
       "type": "reading",
-      "passageEn": "Last summer, my family rented a wooden cabin in the mountains. It had a small basement full of old things: a ladder, rubber boots, and a box of nails. The beds were comfortable, but the pillows were too hard, so we bought new ones in town. The owner asked us to put plastic and paper trash in different bins. In town, we also met a homeless man who sold beautiful drawings. My father bought two of them, and they are now hanging in our living room.",
+      "passageEn": "Last summer, my family rented a wooden cabin in the mountains. It had a small basement full of old things: a ladder, rubber boots, and a box of nails. The beds were comfortable, but the pillows were too hard, so we bought new ones in town. The owner asked us to put plastic and paper trash in different bins. In town, we also met a homeless man who was selling beautiful drawings. My father bought two of them, and they are now hanging in our living room.",
       "passageZh": "去年夏天，我們全家在山上租了一間木屋。屋裡有個小地下室，堆滿了舊東西：一把梯子、幾雙橡膠靴，還有一盒釘子。床很舒服，但枕頭太硬了，所以我們到鎮上買了新的。屋主請我們把塑膠和紙類垃圾分開丟進不同的桶子。在鎮上，我們還遇到一位無家可歸的男士在賣很漂亮的畫。爸爸買了兩幅，現在就掛在我們家客廳。",
       "questions": [
         {
@@ -368,6 +368,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（trash）原位換成翻譯題，沿用題 id b1-u11-l01-q17；目標字沿用 trash",
         "resolution": "改為 translate：promptZh「垃圾車通常晚上八點來。」、hintWords [\"trash\"]、referenceEn [\"The trash truck usually comes at eight at night.\",\"The trash truck usually comes at 8 o'clock at night.\"]、rubricZh [\"用 trash 表示「垃圾」（例如 the trash truck；寫 garbage truck 也正確）\",\"「晚上八點」可寫，例如 at eight at night、at 8 p.m. 等\"]（原 makeSentence：instructionZh「用 trash 造一個句子，說說你家怎麼處理垃圾。」、referenceEn [\"My family takes out the trash every evening.\",\"I put the trash outside on Tuesdays.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

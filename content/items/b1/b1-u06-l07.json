@@ -127,10 +127,10 @@
       "audioZh": "我估計大約有五十個人會來參加派對。",
       "questionZh": "說話者估計有多少人會來？",
       "options": [
-        "Exactly fifty.",
-        "About fifteen.",
-        "About five hundred.",
-        "Close to fifty."
+        "Exactly fifty",
+        "About fifteen",
+        "About five hundred",
+        "Close to fifty"
       ],
       "answer": 3
     },
@@ -322,6 +322,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（estimate）原位換成翻譯題，沿用題 id b1-u06-l07-q17；目標字沿用 estimate",
         "resolution": "改為 translate：promptZh「這只是一個大概的估計，實際的價格可能更高。」、hintWords [\"estimate\"]、referenceEn [\"This is only a rough estimate; the real price may be higher.\",\"It is just a rough estimate. The real cost might be higher.\"]、rubricZh [\"用 estimate（名詞）表示「估計」（例如 a rough estimate）\",\"「實際的價格」可寫，例如 the real price、the real cost 等\"]（原 makeSentence：instructionZh「用 estimate 造一個句子，估計你每個月或每週在某件事上花多少錢或時間。」、referenceEn [\"I estimate that I spend about one hundred dollars on coffee every month.\",\"I estimate that I read for five hours a week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

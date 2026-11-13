@@ -125,10 +125,10 @@
       "audioZh": "老實告訴我，是你打破窗戶的嗎？",
       "questionZh": "說話者想知道什麼？",
       "options": [
-        "Who cleaned the window.",
-        "Who opened the window.",
-        "Who broke the window.",
-        "Who bought the window."
+        "Who cleaned the window",
+        "Who opened the window",
+        "Who broke the window",
+        "Who bought the window"
       ],
       "answer": 2
     },
@@ -141,7 +141,7 @@
     {
       "id": "b1-u09-l06-q12",
       "type": "shadowing",
-      "sentenceEn": "Some shop assistants are too aggressive, and customers don't like it.",
+      "sentenceEn": "Some store clerks are too aggressive, and customers don't like it.",
       "sentenceZh": "有些店員太過咄咄逼人，顧客不喜歡。"
     },
     {
@@ -392,6 +392,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（honest）原位換成翻譯題，沿用題 id b1-u09-l06-q17；目標字沿用 honest",
         "resolution": "改為 translate：promptZh「那個男孩很誠實，把撿到的錢包交給了警察。」、hintWords [\"honest\"]、referenceEn [\"The boy was honest and gave the wallet he found to the police.\",\"The honest boy took the wallet he found to the police.\"]、rubricZh [\"用 honest 表示「誠實的」（例如 was honest、the honest boy 等）\",\"「撿到的錢包」可寫，例如 the wallet he found 等；時態可用 gave、has given 等\"]（原 makeSentence：instructionZh「用 honest 造一個句子，說說你怎麼看待誠實，或你什麼時候會很坦白。」、referenceEn [\"I always try to be honest with my friends.\",\"I think it is important to be honest at work.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

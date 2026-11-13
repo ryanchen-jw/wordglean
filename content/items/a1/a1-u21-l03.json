@@ -184,8 +184,8 @@
     {
       "id": "a1-u21-l03-q15",
       "type": "reading",
-      "passageEn": "The kids sit in a circle on the warm grass. The teacher says, \"Be quiet, please. Here are the rules for the following game. Work in pairs. Play fair!\" The kids have a wonderful time.",
-      "passageZh": "孩子們在溫暖的草地上圍坐成一圈。老師說：「請安靜，接下來是下一個遊戲的規則。兩人一組。要公平地玩！」孩子們玩得很開心。",
+      "passageEn": "The kids sit in a circle on the warm grass. The teacher says, \"Be quiet, please. Listen to the following rules. Work in pairs. Play fair!\" The kids have a wonderful time.",
+      "passageZh": "孩子們在溫暖的草地上圍坐成一圈。老師說：「請安靜，聽好下面的規則：兩人一組。要公平地玩！」孩子們玩得很開心。",
       "questions": [
         {
           "questionZh": "孩子們坐在哪裡？",
@@ -364,6 +364,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（warm）原位換成翻譯題，沿用題 id a1-u21-l03-q17；目標字沿用 warm",
         "resolution": "改為 translate：promptZh「這件外套穿起來很暖和。」、hintWords [\"warm\"]、referenceEn [\"This coat keeps me warm.\",\"I feel warm in this coat.\"]、rubricZh [\"可寫，例如 This coat keeps me warm、I feel warm in this coat、This coat is warm 等\",\"「外套」可寫，例如 coat、jacket 等\"]（原 makeSentence：instructionZh「用 warm 造一個句子，說說溫暖的天氣或東西。」、referenceEn [\"It is warm in spring.\",\"I like to drink warm milk at night.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

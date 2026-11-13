@@ -142,7 +142,7 @@
       "id": "b2-u44-l06-q12",
       "type": "shadowing",
       "sentenceEn": "I made tea to console my sister after she failed her driving test.",
-      "sentenceZh": "妹妹駕照沒考過，我泡了茶安慰她。"
+      "sentenceZh": "我的姊妹駕照沒考過，我泡了茶安慰她。"
     },
     {
       "id": "b2-u44-l06-q13",
@@ -356,6 +356,12 @@
         "message": "執行長裁示：第③關：SUS 「最」沒譯出，What I despise most is… 要點沒涵蓋",
         "resolution": "改為 promptZh「我最痛恨別人在我背後說我壞話。」、referenceEn [\"I despise it when people talk about me behind my back.\",\"I really despise people saying bad things about me behind my back.\"]、rubricZh [\"despise 表示「非常厭惡」，後面可接名詞、it when 子句或動名詞（例如 despise it when… 等）\",\"「在我背後說我壞話」可寫，例如 talk about me behind my back、say bad things about me 等\",\"寫 What I despise most is… 也正確\"]（原 promptZh「我最痛恨別人在我背後說我壞話。」、referenceEn [\"I despise it when people talk about me behind my back.\",\"I really despise people saying bad things about me behind my back.\"]、rubricZh [\"despise 表示「非常厭惡」，後面可接名詞、it when 子句或動名詞（例如 despise it when… 等）\",\"「在我背後說我壞話」可寫，例如 talk about me behind my back、say bad things about me 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

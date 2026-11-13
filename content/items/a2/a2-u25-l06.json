@@ -115,7 +115,7 @@
     {
       "id": "a2-u25-l06-q09",
       "type": "listenType",
-      "sentenceEn": "The door opens automatically when you walk to it.",
+      "sentenceEn": "The door opens automatically when you walk up to it.",
       "sentenceZh": "你走到門前，門就會自動打開。"
     },
     {
@@ -184,8 +184,8 @@
     {
       "id": "a2-u25-l06-q15",
       "type": "reading",
-      "passageEn": "Last Sunday, I went to a science exhibition with my class. It was fascinating! We saw a machine that can draw pictures automatically. There was also a room with artificial rain, and our teacher spoke softly so we could hear it. After that, we had lunch at a fancy restaurant near the museum. Most importantly, everyone learned something new. It was a fantastic day.",
-      "passageZh": "上週日，我和班上同學去看科學展。好有趣喔！我們看到一台會自動畫圖的機器。還有一個會下人造雨的房間，老師說話很小聲，好讓我們聽到雨聲。之後，我們在博物館附近一家高級餐廳吃午餐。最重要的是，每個人都學到了新東西。那真是很棒的一天。",
+      "passageEn": "Last Sunday, I went to a science exhibition at a museum with my class. It was fascinating! We saw a machine that can draw pictures automatically. There was also a room with artificial rain, and our teacher spoke softly so we could hear the rain. After that, we had lunch at a fancy restaurant near the museum. Most importantly, everyone learned something new. It was a fantastic day.",
+      "passageZh": "上週日，我和班上同學去博物館看科學展。好有趣喔！我們看到一台會自動畫圖的機器。還有一個會下人造雨的房間，老師說話很小聲，好讓我們聽到雨聲。之後，我們在博物館附近一家高級餐廳吃午餐。最重要的是，每個人都學到了新東西。那真是很棒的一天。",
       "questions": [
         {
           "questionZh": "那台機器會做什麼？",
@@ -298,6 +298,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（importantly）原位換成翻譯題，沿用題 id a2-u25-l06-q17；目標字沿用 importantly",
         "resolution": "改為 translate：promptZh「這份工作很有趣，更重要的是，離我家很近。」、hintWords [\"importantly\"]、referenceEn [\"This job is interesting, and more importantly, it is near my home.\",\"The job is fun. More importantly, it's close to my home.\"]、rubricZh [\"用 more importantly 表示「更重要的是」\",\"「離我家很近」可寫，例如 near my home、close to my house 等\"]（原 makeSentence：instructionZh「用 importantly 造一個句子，說明一件事情最重要的部分。」、referenceEn [\"The hotel was cheap, and more importantly, it was clean.\",\"Most importantly, you need to be on time.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "你表格上的電話號碼不正確，請再寫一次。",
       "questionZh": "說話者請對方做什麼？",
       "options": [
-        "Sign at the bottom of the form.",
-        "Bring the form back next Monday.",
-        "Call the office before five o'clock.",
-        "Fix the wrong number on the form."
+        "Sign at the bottom of the form",
+        "Bring the form back next Monday",
+        "Call the office before five o'clock",
+        "Fix the wrong number on the form"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u42-l05-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, our school held a sale of unwanted things. The sun was shining brightly, and many people came. I sold my old toys. One woman accidentally broke a cup, but she said sorry and paid for it. The teacher said it was accidental, so it was no problem. A girl from my class did a graceful dance to bring in more people. At first, I wrote incorrect prices on some things, so my friend helped me fix them. The money will go to a charity that builds libraries, so the sale will indirectly help many children. One man asked me some unrelated questions, like what my favorite subject was.",
-      "passageZh": "上週六，我們學校舉辦了一場義賣，賣大家不想要的東西。陽光明亮地照耀著，來了很多人。我賣了我的舊玩具。一位女士不小心打破了一個杯子，但她道了歉並付了錢。老師說那只是意外，沒關係。我們班一位女生跳了一段優雅的舞來吸引更多人。一開始，我把一些東西的價格寫錯了，所以朋友幫我改正。賣得的錢會捐給一個蓋圖書館的慈善機構，所以這場義賣會間接幫助很多孩子。有一位先生問了我一些無關的問題，像是我最喜歡哪個科目。",
+      "passageEn": "Last Saturday, our school held a sale of unwanted things. The sun was shining brightly, and many people came. I sold my old toys. One woman accidentally broke a cup, but she said sorry and paid for it. The teacher said it was accidental, so it was no problem. A girl from my class did a graceful dance to bring in more people. At first, I wrote incorrect prices on some things, so my friend helped me fix them. The money will go to a charity that builds libraries, so the sale will indirectly help many children. One man asked me some questions unrelated to the sale, like what my favorite subject was.",
+      "passageZh": "上週六，我們學校舉辦了一場義賣，賣大家不想要的東西。陽光明亮地照耀著，來了很多人。我賣了我的舊玩具。一位女士不小心打破了一個杯子，但她道了歉並付了錢。老師說那只是意外，沒關係。我們班一位女生跳了一段優雅的舞來吸引更多人。一開始，我把一些東西的價格寫錯了，所以朋友幫我改正。賣得的錢會捐給一個蓋圖書館的慈善機構，所以這場義賣會間接幫助很多孩子。有一位先生問了我一些和義賣無關的問題，像是我最喜歡哪個科目。",
       "questions": [
         {
           "questionZh": "那位女士打破杯子後怎麼做？",
@@ -450,6 +450,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（graceful）原位換成翻譯題，沿用題 id b1-u42-l05-q17；目標字沿用 graceful",
         "resolution": "改為 translate：promptZh「那位舞者的動作非常優雅。」、hintWords [\"graceful\"]、referenceEn [\"The dancer's movements are very graceful.\",\"That dancer moves in a very graceful way.\"]、rubricZh [\"用 graceful 表示「優雅的」（寫 moves gracefully 也正確）\"]（原 makeSentence：instructionZh「用 graceful 造一個句子，描述一個優雅的人或動物。」、referenceEn [\"My cat is very graceful when she jumps.\",\"I think my dance teacher is graceful.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

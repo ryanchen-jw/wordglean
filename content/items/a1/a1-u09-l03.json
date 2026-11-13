@@ -127,9 +127,9 @@
       "audioZh": "這件夾克不醜，但對我來說太大了。",
       "questionZh": "說話者覺得這件夾克怎麼樣？",
       "options": [
-        "It is too small.",
-        "It is ugly.",
-        "It is too big."
+        "It is too small",
+        "It is ugly",
+        "It is too big"
       ],
       "answer": 2
     },
@@ -378,6 +378,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cute）原位換成翻譯題，沿用題 id a1-u09-l03-q17；目標字沿用 cute",
         "resolution": "改為 translate：promptZh「那隻小狗很可愛。」、hintWords [\"cute\"]、referenceEn [\"That little dog is very cute.\",\"That little dog is so cute.\"]、rubricZh [\"cute 放在 be 動詞後面（例如 is very cute）\",\"「小狗」可寫，例如 little dog、small dog 等\"]（原 makeSentence：instructionZh「用 cute 造一個句子，說說你覺得很可愛的人、動物或東西。」、referenceEn [\"My little sister is very cute.\",\"I think your cat is cute.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -177,7 +177,7 @@
       "id": "b1-p04-l04-q14",
       "type": "reading",
       "passageEn": "Last month, our school's science fair took place in the gym. Every class had to take part in it. Our group figured out how to make a small car run on sunlight. We took turns giving the talk, and Jenny took notes on every question from the judges. One boy in another group told a lie: he said he made his robot by himself, but his brother did it. When the teacher asked again, he finally told the truth. We didn't win, but nobody felt we wasted time.",
-      "passageZh": "上個月，我們學校的科展在體育館舉行。每一班都得參加。我們這組想出了怎麼讓一台小車靠陽光跑。我們輪流上台講解，Jenny 則把評審問的每個問題都記下來。另一組有個男生說謊：他說機器人是他自己做的，但其實是他哥哥做的。老師再問一次時，他終於說了實話。我們沒有得獎，但沒有人覺得是在浪費時間。",
+      "passageZh": "上個月，我們學校的科展在體育館舉行。每一班都得參加。我們這組想出了怎麼讓一台小車靠陽光跑。我們輪流上台講解，Jenny 則把評審問的每個問題都記下來。另一組有個男生說謊：他說機器人是他自己做的，但其實是他的兄弟做的。老師再問一次時，他終於說了實話。我們沒有得獎，但沒有人覺得是在浪費時間。",
       "questions": [
         {
           "questionZh": "Jenny 在科展中做了什麼？",
@@ -185,14 +185,14 @@
             "做了機器人",
             "一個人上台講解作品",
             "記下評審的問題",
-            "幫哥哥完成了作品"
+            "幫他的兄弟完成了作品"
           ],
           "answer": 2
         },
         {
           "questionZh": "另一組的男生說了什麼謊？",
           "options": [
-            "他的哥哥今天沒有來",
+            "他的兄弟今天沒有來",
             "他們這組得了第一名",
             "他自己做了機器人",
             "是老師幫他做的作品"
@@ -307,6 +307,12 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 1 題位（b1-p04-l04-q12），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].options[3]（中譯長幼）、questions[1].options[0]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

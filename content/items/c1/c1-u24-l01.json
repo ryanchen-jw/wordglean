@@ -233,8 +233,8 @@
         "occupational"
       ],
       "referenceEn": [
-        "Noise is one of the occupational risks for building workers.",
-        "Loud noise is an occupational risk for people who work on building sites."
+        "Noise is one of the occupational risks for construction workers.",
+        "Loud noise is an occupational risk for people who work on construction sites."
       ],
       "rubricZh": [
         "occupational 是形容詞，表示「職業的、職業上的」（例如 occupational risks、occupational safety 等）",
@@ -323,6 +323,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（apprentice）原位換成翻譯題，沿用題 id c1-u24-l01-q18；目標字沿用 apprentice",
         "resolution": "改為 translate：promptZh「他十六歲時跟著一位木匠當學徒。」、hintWords [\"apprentice\"]、referenceEn [\"At sixteen, he became an apprentice to a carpenter.\",\"When he was sixteen, he worked as an apprentice to a carpenter.\"]、rubricZh [\"「當學徒」用 apprentice（例如 became an apprentice to、worked as an apprentice to 等）\",\"「十六歲時」可寫，例如 at sixteen、when he was sixteen 等\"]（原 makeSentence：instructionZh「用 apprentice 造一個句子，說說你想跟誰學一門手藝。」、referenceEn [\"I would like to be an apprentice to a famous chef.\",\"If I could, I would work as an apprentice in a bike shop.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

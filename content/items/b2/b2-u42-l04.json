@@ -77,7 +77,7 @@
       "id": "b2-u42-l04-q06",
       "type": "wordCard",
       "word": "erect",
-      "exampleEn": "Our dog's ears stay erect when it hears a strange sound.",
+      "exampleEn": "Our dog's ears stand erect when it hears a strange sound.",
       "exampleZh": "我們家的狗聽到奇怪的聲音時，耳朵會豎起來。",
       "glossZh": "直立的；豎直的",
       "distractorsZh": [
@@ -185,8 +185,8 @@
     {
       "id": "b2-u42-l04-q15",
       "type": "reading",
-      "passageEn": "Last month, my sister took part in her first chess tournament. The rules were straightforward, but the games were tricky, especially against players with years of experience. In the final, she faced a formidable opponent who had won the tournament three times. She sat erect in her chair and thought carefully about every move, like a painter adding small details. The match lasted four hours, and she persisted even when she was tired. In the end, she lost, but she played well, thanked her opponent nicely, and the crowd clapped for her. Her coach says her style is varied, which makes her hard to predict.",
-      "passageZh": "上個月，我姊姊參加了她的第一場西洋棋比賽。規則很簡單，但對局很棘手，尤其是遇到經驗豐富的棋手時。決賽中，她碰上一位很難對付的對手，對方已經贏過三次冠軍。她在椅子上坐得挺直，仔細思考每一步，就像畫家在畫小細節。比賽持續了四個小時，她即使累了也堅持下去。最後她輸了，但她下得很好，還很有禮貌地向對手道謝，觀眾都為她鼓掌。她的教練說她的棋風多變，讓人很難預測。",
+      "passageEn": "Last month, my sister took part in her first chess tournament. The rules were straightforward, but the games were tricky, especially against players with years of experience. In the final, she faced a formidable opponent who had won the tournament three times. She sat erect in her chair and thought carefully about every move. The match lasted four hours, and she persisted even when she was tired. In the end, she lost, but she played well, thanked her opponent nicely, and the crowd clapped for her. Her coach says her style is varied, which makes her hard to predict.",
+      "passageZh": "上個月，我的姊妹參加了她的第一場西洋棋比賽。規則很簡單，但對局很棘手，尤其是遇到經驗豐富的棋手時。決賽中，她碰上一位很難對付的對手，對方已經贏過三次冠軍。她在椅子上坐得挺直，仔細思考每一步。比賽持續了四個小時，她即使累了也堅持下去。最後她輸了，但她下得很好，還很有禮貌地向對手道謝，觀眾都為她鼓掌。她的教練說她的棋風多變，讓人很難預測。",
       "questions": [
         {
           "questionZh": "決賽的對手是什麼樣的人？",
@@ -302,6 +302,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（straightforward）原位換成翻譯題，沿用題 id b2-u42-l04-q17；目標字沿用 straightforward",
         "resolution": "改為 translate：promptZh「我的老闆很直率，總是直接說出她的想法。」、hintWords [\"straightforward\"]、referenceEn [\"My boss is very straightforward and always says what she thinks.\",\"My boss is straightforward; she always tells us exactly what she thinks.\"]、rubricZh [\"straightforward 在這裡指「直率的」（例如 is very straightforward 等）\",\"「說出她的想法」可寫，例如 says what she thinks、tells us what she thinks 等\",\"always 位置不扣分\"]（原 makeSentence：instructionZh「用 straightforward 造一個句子，說說一件你覺得很簡單明瞭的事，或一個說話很直率的人。」、referenceEn [\"My teacher gave us straightforward instructions for the homework.\",\"My boss is straightforward and always tells us what she thinks.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

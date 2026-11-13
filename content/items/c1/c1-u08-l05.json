@@ -40,8 +40,8 @@
       "id": "c1-u08-l05-q03",
       "type": "wordCard",
       "word": "recessive",
-      "exampleEn": "In this flower, the white color is a recessive feature.",
-      "exampleZh": "在這種花身上，白色是一種隱性的特徵。",
+      "exampleEn": "In this flower, white is a recessive trait.",
+      "exampleZh": "在這種花身上，白色是一種隱性性狀。",
       "glossZh": "隱性的（遺傳）",
       "distractorsZh": [
         "顯性的",
@@ -114,10 +114,10 @@
       "audioZh": "多虧了新牆，這個房間的音響效果比以前好多了。",
       "questionZh": "這個房間有什麼改變？",
       "options": [
-        "It is colder.",
-        "It is much bigger than before.",
-        "It sounds better now.",
-        "It is darker."
+        "It is colder",
+        "It is much bigger than before",
+        "It sounds better now",
+        "It is darker"
       ],
       "answer": 2
     },
@@ -309,6 +309,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（interjection）原位換成翻譯題，沿用題 id c1-u08-l05-q16；目標字沿用 interjection",
         "resolution": "改為 translate：promptZh「主持人的一句插話，讓整個討論輕鬆了起來。」、hintWords [\"interjection\"]、referenceEn [\"The host's interjection made the whole discussion more relaxed.\",\"One interjection from the host made the whole discussion lighter.\"]、rubricZh [\"「插話」用名詞 interjection（例如 the host's interjection 等）\",\"「輕鬆了起來」可寫，例如 more relaxed、lighter、less serious 等\",\"時態配合內容（例如 made 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 interjection 造一個句子，說說你在開會或上課時插話的經驗。」、referenceEn [\"During the meeting, my quick interjection changed the direction of the discussion.\",\"I made a short interjection to correct a mistake in the report.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

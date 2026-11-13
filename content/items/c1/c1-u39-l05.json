@@ -125,10 +125,10 @@
       "audioZh": "客服人員冷冰冰地回答，一遍又一遍地唸著同樣的規定。",
       "questionZh": "客服人員怎麼回應？",
       "options": [
-        "Very kindly and patiently.",
-        "With a lot of jokes.",
-        "By giving a refund.",
-        "In a cold way, just repeating the rules."
+        "Very kindly and patiently",
+        "With a lot of jokes",
+        "By giving a refund",
+        "In a cold way, just repeating the rules"
       ],
       "answer": 3
     },
@@ -333,6 +333,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sedately）原位換成翻譯題，沿用題 id c1-u39-l05-q17；目標字沿用 sedately",
         "resolution": "改為 translate：promptZh「那隻大烏龜從容地爬過馬路。」、hintWords [\"sedately\"]、referenceEn [\"The large turtle crossed the road sedately.\",\"The big turtle made its way sedately across the road.\"]、rubricZh [\"「從容緩慢地」用 sedately（例如 crossed the road sedately 等）\",\"「爬過馬路」可寫，例如 crossed the road、made its way across the road 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 sedately 造一個句子，描述你從容、慢慢地做某件事。」、referenceEn [\"On Sundays, I walk sedately around the park with my coffee.\",\"I like to eat breakfast sedately before a busy day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

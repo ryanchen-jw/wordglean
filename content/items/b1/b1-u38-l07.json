@@ -16,7 +16,7 @@
       "word": "full stop",
       "exampleEn": "A full stop shows that a sentence is finished.",
       "exampleZh": "句號表示一個句子結束了。",
-      "glossZh": "句號",
+      "glossZh": "句號；（英式）",
       "distractorsZh": [
         "逗號",
         "問號",
@@ -114,10 +114,10 @@
       "audioZh": "小學畢業後，我去讀家附近的一所中學。",
       "questionZh": "說話者小學畢業後去了哪裡？",
       "options": [
-        "A primary school near home.",
-        "A school in another city far away.",
-        "A music school in the next town.",
-        "A high school close to home."
+        "A primary school near home",
+        "A school in another city far away",
+        "A music school in the next town",
+        "A high school close to home"
       ],
       "answer": 3
     },
@@ -174,7 +174,7 @@
     {
       "id": "b1-u38-l07-q14",
       "type": "reading",
-      "passageEn": "Last week, a new sign went up near the primary school in our town, and my class found three mistakes on it. First, the sentence \"Please drive slowly\" had no full stop. Second, the question \"Where is the park\" had no question mark. Third, the sign said \"a old park.\" We use \"an,\" not \"a,\" before words that begin with a vowel sound; each of them is an indefinite article. I'm in secondary school now, so my teacher asked me to write a short email to the town office. I used a modal verb to be polite: \"Could you please fix the sign?\" The office said they would look into it. \"Look into\" is a phrasal verb that means \"check.\" Two days later, the sign was fixed!",
+      "passageEn": "Last week, a new sign went up near the primary school in our town, and my class found three mistakes on it. First, the sentence \"Please drive slowly\" had no full stop. Second, the question \"Where is the park\" had no question mark. Third, the sign said \"a old park.\" We use \"an,\" not \"a,\" before words that begin with a vowel sound; both words are indefinite articles. I'm in secondary school now, so my teacher asked me to write a short email to the town office. I used a modal verb to be polite: \"Could you please fix the sign?\" The office said they would look into it. \"Look into\" is a phrasal verb that means \"check.\" Two days later, the sign was fixed!",
       "passageZh": "上週，我們鎮上的小學附近立了一塊新告示牌，我們班在上面發現了三個錯誤。第一，「Please drive slowly」這句話少了句號。第二，問句「Where is the park」沒有問號。第三，告示牌上寫著「a old park」。在母音開頭的字前面要用「an」，不是「a」；兩者都是不定冠詞。我現在讀中學，所以老師請我寫一封簡短的電子郵件給鎮公所。我用了一個情態動詞讓語氣更有禮貌：「Could you please fix the sign?」鎮公所說他們會 look into 這件事。「look into」是一個片語動詞，意思是「查看」。兩天後，告示牌就改好了！",
       "questions": [
         {
@@ -487,6 +487,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（primary school）原位換成翻譯題，沿用題 id b1-u38-l07-q16；目標字沿用 primary school",
         "resolution": "改為 translate：promptZh「我媽媽在一所小學教英文。」、hintWords [\"primary school\"]、referenceEn [\"My mother teaches English at a primary school.\",\"My mom is an English teacher at a primary school.\"]、rubricZh [\"用 primary school 表示「小學」（寫 elementary school 也正確）\"]（原 makeSentence：instructionZh「用 primary school 造一個句子，說說你小學時的回憶。」、referenceEn [\"In primary school, I loved art class.\",\"My best friend from primary school still lives near me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -120,7 +120,7 @@
         "Indent it",
         "Underline it",
         "Use bold",
-        "Center"
+        "Center it"
       ],
       "answer": 0
     },
@@ -134,7 +134,7 @@
       "id": "b2-u19-l08-q11",
       "type": "shadowing",
       "sentenceEn": "My sister chose botany because she loves flowers and trees.",
-      "sentenceZh": "我妹妹選了植物學，因為她喜歡花和樹。"
+      "sentenceZh": "我的姊妹選了植物學，因為她喜歡花和樹。"
     },
     {
       "id": "b2-u19-l08-q12",
@@ -158,7 +158,7 @@
     {
       "id": "b2-u19-l08-q13",
       "type": "mcq",
-      "stemEn": "Please ____ the titles of books, so they look different from the rest of the text.",
+      "stemEn": "Please ____ the titles of books so they look different from the rest of the text.",
       "stemZh": "請把書名改成斜體，讓它們和其他文字看起來不同。",
       "options": [
         "instruct",
@@ -177,8 +177,8 @@
     {
       "id": "b2-u19-l08-q14",
       "type": "reading",
-      "passageEn": "Our English teacher is very strict about writing style. She tells us to indent the first line of every paragraph and to italicize the titles of books and films. She often circles a missing apostrophe in red, and she reminds us that well-known needs a hyphen. Last week, we read a soliloquy from a famous play and wrote an essay about it. My friend, who loves botany, compared the character's thoughts to a plant growing in the dark. In science class, we also learned about the history of radium. Her rules take some getting used to, but she believes they help us excel at writing.",
-      "passageZh": "我們的英文老師對寫作格式很嚴格。她要我們每段第一行要縮排，書名和電影名稱要用斜體。她常用紅筆圈出漏掉的撇號，也提醒我們 well-known 中間要有連字號。上週，我們讀了一齣名劇裡的一段獨白，並寫了一篇心得。我那位喜歡植物學的朋友，把角色的想法比作在黑暗中生長的植物。在自然課上，我們也學了鐳的歷史。她的規定需要一點時間適應，但她相信這些規定能幫助我們在寫作上表現出色。",
+      "passageEn": "Our English teacher is very strict about writing style. She tells us to indent the first line of every paragraph and to italicize the titles of books and films. She often circles a missing apostrophe in red, and she reminds us that well-known needs a hyphen. Last week, we read a soliloquy from a famous play and wrote an essay about it. My friend, who loves botany, compared the character's thoughts to a plant growing in the dark. In science class, we also learned about the history of radium. Our English teacher's rules take some getting used to, but she believes they help us excel at writing.",
+      "passageZh": "我們的英文老師對寫作格式很嚴格。她要我們每段第一行要縮排，書名和電影名稱要用斜體。她常用紅筆圈出漏掉的撇號，也提醒我們 well-known 中間要有連字號。上週，我們讀了一齣名劇裡的一段獨白，並寫了一篇心得。我那位喜歡植物學的朋友，把角色的想法比作在黑暗中生長的植物。在自然課上，我們也學了鐳的歷史。英文老師的規定需要一點時間適應，但她相信這些規定能幫助我們在寫作上表現出色。",
       "questions": [
         {
           "questionZh": "老師要求書名和電影名稱怎麼寫？",
@@ -306,6 +306,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（botany）原位換成翻譯題，沿用題 id b2-u19-l08-q16；目標字沿用 botany",
         "resolution": "改為 translate：promptZh「這本植物學的書裡有很多漂亮的插圖。」、hintWords [\"botany\"]、referenceEn [\"This botany book has a lot of beautiful pictures.\",\"There are many beautiful drawings in this book on botany.\"]、rubricZh [\"botany 指植物學（例如 a botany book、a book on botany 等）\",\"「插圖」可寫，例如 pictures、drawings、illustrations 等\",\"句型可寫，例如 This book has…、There are… in this book 等\"]（原 makeSentence：instructionZh「用 botany 造一個句子，說說你對植物學或植物的興趣。」、referenceEn [\"I don't know much about botany, but I enjoy growing herbs.\",\"I became interested in botany after visiting a large garden.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

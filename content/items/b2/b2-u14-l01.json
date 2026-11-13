@@ -154,7 +154,7 @@
     {
       "id": "b2-u14-l01-q13",
       "type": "shadowing",
-      "sentenceEn": "The children are playing football on the front lawn.",
+      "sentenceEn": "The children are playing soccer on the front lawn.",
       "sentenceZh": "孩子們在前院的草坪上踢足球。"
     },
     {
@@ -198,8 +198,8 @@
     {
       "id": "b2-u14-l01-q16",
       "type": "reading",
-      "passageEn": "Every Saturday, our family shares the housework. My father cuts the grass on the lawn, and my brother sweeps the leaves from the path. My mother does the laundry and hangs it outside to dry. I am in charge of the kitchen: I wipe the counters, wash the tablecloth, and shake the dust out of the small rug by the door. Last week, I noticed a chip in my favorite bowl and a water mark on the ceiling above the sink. When we finish, my mother brings out a tray of tea and cookies, and we all sit together on the grass.",
-      "passageZh": "每個星期六，我們全家一起分擔家事。爸爸修剪草坪的草，哥哥把小路上的落葉掃乾淨。媽媽洗衣服，再晾到外面曬乾。我負責廚房：擦流理台、洗桌布，還把門邊那塊小地毯上的灰塵抖掉。上週，我發現我最喜歡的碗有個缺口，水槽上方的天花板也有一塊水漬。做完家事後，媽媽會端出一托盤的茶和餅乾，大家一起坐在草地上。",
+      "passageEn": "Every Saturday, our family shares the housework. My father cuts the lawn, and my brother sweeps the leaves from the path. My mother does the laundry and hangs it outside to dry. I am in charge of the kitchen: I wipe the counters, wash the tablecloth, and shake the dust out of the small rug by the door. Last week, I noticed a chip in my favorite bowl and a water mark on the ceiling above the sink. When we finish, my mother brings out a tray of tea and cookies, and we all sit together on the grass.",
+      "passageZh": "每個星期六，我們全家一起分擔家事。爸爸修剪草坪的草，我的兄弟把小路上的落葉掃乾淨。媽媽洗衣服，再晾到外面曬乾。我負責廚房：擦流理台、洗桌布，還把門邊那塊小地毯上的灰塵抖掉。上週，我發現我最喜歡的碗有個缺口，水槽上方的天花板也有一塊水漬。做完家事後，媽媽會端出一托盤的茶和餅乾，大家一起坐在草地上。",
       "questions": [
         {
           "questionZh": "作者負責哪裡的家事？",
@@ -392,6 +392,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ceiling）原位換成翻譯題，沿用題 id b2-u14-l01-q18；目標字沿用 ceiling",
         "resolution": "改為 translate：promptZh「浴室的天花板在漏水。」、hintWords [\"ceiling\"]、referenceEn [\"The ceiling in our bathroom is leaking.\",\"Water is leaking from the ceiling in the bathroom.\"]、rubricZh [\"ceiling 指「天花板」（例如 the bathroom ceiling、the ceiling in the bathroom 等）\",\"「在漏水」可寫，例如 is leaking、has been leaking、water is coming through 等\"]（原 makeSentence：instructionZh「用 ceiling 造一個句子，描述你家或辦公室的天花板。」、referenceEn [\"The ceiling in my bedroom is painted light blue.\",\"Our office has a very high ceiling with big windows.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

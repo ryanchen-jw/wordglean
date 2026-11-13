@@ -44,7 +44,7 @@
       "word": "torch",
       "exampleEn": "In the dark cave, we lit a torch to see the walls.",
       "exampleZh": "在漆黑的洞穴裡，我們點了一支火把來看清洞壁。",
-      "glossZh": "火把；火炬；（英）手電筒",
+      "glossZh": "火把；火炬；手電筒；（英式：手電筒義）",
       "distractorsZh": [
         "蠟燭",
         "地圖",
@@ -145,8 +145,8 @@
     {
       "id": "b2-u46-l04-q12",
       "type": "shadowing",
-      "sentenceEn": "Some old songs make people feel patriotic and proud of their home.",
-      "sentenceZh": "有些老歌讓人感到愛國，並以自己的家鄉為榮。"
+      "sentenceEn": "Some old songs make people feel patriotic and proud of their country.",
+      "sentenceZh": "有些老歌讓人感到愛國，並以自己的國家為榮。"
     },
     {
       "id": "b2-u46-l04-q13",
@@ -347,6 +347,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pirate）原位換成翻譯題，沿用題 id b2-u46-l04-q17；目標字沿用 pirate",
         "resolution": "改為 translate：promptZh「我弟弟最喜歡的玩具是一艘海盜船。」、hintWords [\"pirate\"]、referenceEn [\"My little brother's favorite toy is a pirate ship.\",\"A pirate ship is my younger brother's favorite toy.\"]、rubricZh [\"pirate 可放名詞前當形容詞（例如 a pirate ship 等）\",\"「我弟弟」可寫，例如 my little brother、my younger brother 等\"]（原 makeSentence：instructionZh「用 pirate 造一個句子，說說你看過或讀過的關於海盜的電影、書或遊戲。」、referenceEn [\"I watched a funny movie about a pirate who lost his ship.\",\"When I was young, I loved reading stories about pirates.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

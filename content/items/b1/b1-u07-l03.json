@@ -127,10 +127,10 @@
       "audioZh": "紙本書的銷量在下滑，但網路銷量在成長。",
       "questionZh": "什麼的銷量在增加？",
       "options": [
-        "Paper books.",
-        "Online sales.",
-        "Paper magazines.",
-        "Newspapers."
+        "Paper books",
+        "Online sales",
+        "Paper magazines",
+        "Newspapers"
       ],
       "answer": 1
     },
@@ -412,6 +412,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stress）原位換成翻譯題，沿用題 id b1-u07-l03-q17；目標字沿用 stress",
         "resolution": "改為 translate：promptZh「她最近工作壓力很大。」、hintWords [\"stress\"]、referenceEn [\"She has been under a lot of stress at work lately.\",\"She is under a lot of stress at work these days.\"]、rubricZh [\"用 stress 表示「壓力」（例如 under a lot of stress；寫 feels very stressed 也正確）\",\"時態配合「最近」（例如 has been、is 等）\"]（原 makeSentence：instructionZh「用 stress 造一個句子，說說你怎麼減輕壓力。」、referenceEn [\"When I feel stress, I go for a walk.\",\"Listening to music helps me reduce stress.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -54,8 +54,8 @@
       "id": "a2-u17-l05-q04",
       "type": "wordCard",
       "word": "singular",
-      "exampleEn": "Use the singular form after everyone.",
-      "exampleZh": "everyone 後面要用單數形。",
+      "exampleEn": "Use a singular verb after 'everyone'.",
+      "exampleZh": "everyone 後面要用單數動詞。",
       "glossZh": "單數（的）",
       "distractorsZh": [
         "複數的",
@@ -325,6 +325,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（blackboard）原位換成翻譯題，沿用題 id a2-u17-l05-q17；目標字沿用 blackboard",
         "resolution": "改為 translate：promptZh「我看不清楚黑板上的字。」、hintWords [\"blackboard\"]、referenceEn [\"I can't see the words on the blackboard clearly.\",\"I can't read the words on the blackboard.\"]、rubricZh [\"用 blackboard 表示「黑板」（例如 on the blackboard）\",\"「看不清楚」可寫，例如 can't see…clearly、can't read 等\"]（原 makeSentence：instructionZh「用 blackboard 造一個句子，說說教室裡的黑板。」、referenceEn [\"Our classroom has a big blackboard.\",\"My teacher draws pictures on the blackboard.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

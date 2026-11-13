@@ -127,10 +127,10 @@
       "audioZh": "我這個月在臨時辦公室工作，但六月會搬回總公司。",
       "questionZh": "說話者六月會做什麼？",
       "options": [
-        "Start in a temporary office.",
-        "Work from home.",
-        "Take a long vacation.",
-        "Return to the head office."
+        "Start in a temporary office",
+        "Work from home",
+        "Take a long vacation",
+        "Return to the head office"
       ],
       "answer": 3
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u02-l05-q15",
       "type": "reading",
-      "passageEn": "Mia has a temporary job at a busy bookstore this summer. The store has frequent sales, so many customers come in. There is a continuous line at the counter, and the phone rings continually. Mia often has to answer the phone and help a customer simultaneously. She gets a short break at intervals of two hours. She also gets a monthly bonus if the store sells a lot. Despite the occasional bad day, she likes the job.",
-      "passageZh": "Mia 今年夏天在一家很忙的書店做臨時工作。這家店經常有特價，所以很多客人上門。櫃台前的隊伍一直沒斷過，電話也響個不停。Mia 常常得同時接電話和招呼客人。她每隔兩個小時可以短暫休息一下。如果店裡賣得好，她每個月還能拿到獎金。儘管偶爾會有不順的一天，她還是喜歡這份工作。",
+      "passageEn": "Mia has a temporary job at a busy bookstore this summer. The store has frequent sales, so many customers come in. There is a continuous line of people waiting to pay, and the phone rings continually. Mia often has to answer the phone and help a customer simultaneously. She gets a short break at intervals of two hours. She also gets a monthly bonus if the store sells a lot. Despite the occasional bad day, she likes the job.",
+      "passageZh": "Mia 今年夏天在一家很忙的書店做臨時工作。這家店經常有特價，所以很多客人上門。等著結帳的隊伍一直沒斷過，電話也響個不停。Mia 常常得同時接電話和招呼客人。她每隔兩個小時可以短暫休息一下。如果店裡賣得好，她每個月還能拿到獎金。儘管偶爾會有不順的一天，她還是喜歡這份工作。",
       "questions": [
         {
           "questionZh": "為什麼這家書店的客人很多？",
@@ -388,6 +388,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（occasional）原位換成翻譯題，沿用題 id b1-u02-l05-q17；目標字沿用 occasional",
         "resolution": "改為 translate：promptZh「除了偶爾有電話打來，今天辦公室很安靜。」、hintWords [\"occasional\"]、referenceEn [\"Apart from an occasional phone call, the office was quiet today.\",\"Except for the occasional phone call, the office was quiet today.\"]、rubricZh [\"用 occasional（形容詞）修飾名詞，表示「偶爾的」（例如 an occasional phone call、the occasional call 等）\",\"「除了」可寫，例如 apart from、except for 等；時態配合今天的事（例如 was、has been 等）\"]（原 makeSentence：instructionZh「用 occasional 造一個句子，說說你偶爾會做或偶爾會享受的事。」、referenceEn [\"I enjoy an occasional cup of coffee at night.\",\"I take occasional trips to the beach in summer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

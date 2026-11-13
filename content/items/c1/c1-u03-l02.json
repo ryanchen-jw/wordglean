@@ -90,8 +90,8 @@
       "id": "c1-u03-l02-q07",
       "type": "wordCard",
       "word": "restoration",
-      "exampleEn": "After the restoration of electricity, the shops opened again.",
-      "exampleZh": "電力恢復之後，商店又重新營業了。",
+      "exampleEn": "After its restoration, the old painting looked almost new.",
+      "exampleZh": "經過修復之後，那幅老畫看起來幾乎跟新的一樣。",
       "glossZh": "修復；恢復",
       "distractorsZh": [
         "破壞",
@@ -125,10 +125,10 @@
       "audioZh": "那間老戲院經過兩年細心的修復，上週重新開幕了。",
       "questionZh": "這間老戲院發生了什麼事？",
       "options": [
-        "It closed for good last year.",
-        "It opened again after repairs.",
-        "It was sold to a hotel.",
-        "It moved to a new street."
+        "It closed for good last year",
+        "It opened again after repairs",
+        "It was sold to a hotel",
+        "It moved to a new street"
       ],
       "answer": 1
     },
@@ -315,6 +315,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（clutch）原位換成翻譯題，沿用題 id c1-u03-l02-q17；目標字沿用 clutch",
         "resolution": "改為 translate：promptZh「那位登山客緊緊抓著繩子，慢慢爬下陡坡。」、hintWords [\"clutch\"]、referenceEn [\"The climber clutched the rope and slowly climbed down the steep slope.\",\"The climber slowly climbed down the steep slope, clutching the rope tightly.\"]、rubricZh [\"「緊緊抓著」用 clutch（例如 clutched the rope、clutching the rope tightly 等）\",\"「爬下陡坡」可寫，例如 climbed down the steep slope、went down the steep hill 等\",\"時態配合內容（例如 clutched、clutches、was clutching 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 clutch 當動詞造一個句子，描述你緊緊抓著某樣東西的情景。」、referenceEn [\"I clutched my bag tightly on the crowded train.\",\"I clutched the rail when the boat started to shake.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

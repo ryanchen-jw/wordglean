@@ -125,10 +125,10 @@
       "audioZh": "這間公寓的收納空間不夠，所以我們把箱子放在床底下。",
       "questionZh": "他們把箱子放在哪裡？",
       "options": [
-        "On the bed.",
-        "Under where they sleep.",
-        "In the storage room.",
-        "Outside the apartment."
+        "On top of the bed",
+        "Under where they sleep",
+        "In the storage room",
+        "Outside the apartment"
       ],
       "answer": 1
     },
@@ -380,6 +380,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（storage）原位換成翻譯題，沿用題 id b1-u11-l04-q17；目標字沿用 storage",
         "resolution": "改為 translate：promptZh「那間小房間現在被當作儲藏室。」、hintWords [\"storage\"]、referenceEn [\"That small room is now used for storage.\",\"We now use that small room for storage.\"]、rubricZh [\"用 storage 表示「儲藏」（例如 is used for storage）\",\"「被當作」可寫，例如 is used for、we use … for 等\"]（原 makeSentence：instructionZh「用 storage 造一個句子，說說你家哪裡用來收納東西。」、referenceEn [\"We use the balcony for storage.\",\"There is not much storage space in my room.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：options[0]（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

@@ -60,8 +60,8 @@
       "id": "a2-u12-l04-q04",
       "type": "wordCard",
       "word": "architecture",
-      "exampleEn": "My sister studies architecture at university.",
-      "exampleZh": "我姊姊在大學念建築。",
+      "exampleEn": "My sister studies architecture in college.",
+      "exampleZh": "我的姊妹在大學念建築。",
       "glossZh": "建築學；建築風格",
       "distractorsZh": [
         "歷史",
@@ -386,6 +386,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 a2-u12-l05-q16（three hundred years old）共用 old、year（selfcheck-translate 字面 40%）；改本題（abroad 另有跟讀題情境，a2-u12-l05-q16 是 mosque 唯一翻譯情境，保留）",
         "resolution": "改為 promptZh「我表姊在國外讀書。」、referenceEn [\"My cousin studies abroad.\",\"My cousin is studying abroad.\"]、rubricZh [\"用 abroad 表示「在國外」，abroad 前面不加 in\",\"時態可用現在簡單式或現在進行式（例如 studies、is studying 等）\",\"「表姊」可寫，例如 cousin 等\"]（原 promptZh「我哥哥明年要出國工作。」、referenceEn [\"My brother will work abroad next year.\",\"My older brother is going to work abroad next year.\"]、rubricZh [\"「出國」用 abroad，前面不加 to（例如 work abroad、go abroad）\",\"未來的事可寫例如 will、be going to\"]）；題 id、hintWords 不變",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

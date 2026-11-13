@@ -70,8 +70,8 @@
       "id": "b2-u18-l03-q05",
       "type": "wordCard",
       "word": "gymnastic",
-      "exampleEn": "Gymnastic events at the Olympics are always popular.",
-      "exampleZh": "奧運的體操項目總是很受歡迎。",
+      "exampleEn": "The cat made a gymnastic leap from the sofa to the top of the shelf.",
+      "exampleZh": "那隻貓像體操選手般一躍，從沙發跳上架子頂端。",
       "glossZh": "體操的",
       "distractorsZh": [
         "舞蹈的",
@@ -83,9 +83,9 @@
       "id": "b2-u18-l03-q06",
       "type": "wordCard",
       "word": "outdistance",
-      "exampleEn": "Online sales have now outdistanced sales in the company's shops.",
-      "exampleZh": "線上銷售現在已遠遠超過公司門市的銷售。",
-      "glossZh": "遠遠超過；把…甩在後頭",
+      "exampleEn": "The horse quickly outdistanced the others and won easily.",
+      "exampleZh": "那匹馬很快就把其他馬甩在後頭，輕鬆獲勝。",
+      "glossZh": "把…甩在後頭；遠遠超過",
       "distractorsZh": [
         "落後於",
         "等於",
@@ -161,7 +161,7 @@
       "id": "b2-u18-l03-q13",
       "type": "shadowing",
       "sentenceEn": "My brother has been learning judo since he was seven.",
-      "sentenceZh": "我弟弟從七歲開始學柔道。"
+      "sentenceZh": "我的兄弟從七歲開始學柔道。"
     },
     {
       "id": "b2-u18-l03-q14",
@@ -204,8 +204,8 @@
     {
       "id": "b2-u18-l03-q16",
       "type": "reading",
-      "passageEn": "Last summer, our sports club visited a youth sports camp. In the morning, we watched a judo class where children practiced falling safely. Next door, a martial art teacher showed some impressive kicks. In the gym, girls showed their gymnastic skills with ribbons and balls to rhythmic music, while a coach timed the runners outside with a stopwatch. A teenage skateboarder showed us tricks in the park, and our guide, who once won a science olympiad, told us about the history of the games at Olympia. Later, we watched the semi-final of a junior football match. One fast player outdistanced every defender to score. It was a wonderful day.",
-      "passageZh": "去年夏天，我們運動社去參觀了一個青少年運動營。早上，我們看了一堂柔道課，孩子們在練習安全倒地。隔壁，一位武術老師示範了幾個厲害的踢腿。體育館裡，女孩們隨著節奏感強的音樂，拿著彩帶和球展現體操技巧，戶外則有教練拿著碼錶為跑者計時。一位十幾歲的滑板少年在公園裡表演花式動作給我們看，曾在科學奧林匹亞競賽得獎的導遊也跟我們介紹了奧林匹亞古代運動會的歷史。後來，我們看了一場青少年足球賽的準決賽。一位速度很快的球員甩開所有後衛射門得分。那是美好的一天。",
+      "passageEn": "Last summer, our sports club visited a youth sports camp. In the morning, we watched a judo class where children practiced falling safely. Next door, a martial arts teacher showed some impressive kicks. In the gym, girls showed their gymnastic skills with ribbons and balls to rhythmic music, while a coach timed the runners outside with a stopwatch. A teenage skateboarder showed us tricks in the park, and our guide, who once won a science olympiad, told us about the history of the games at Olympia. Later, we watched the semi-final of a junior soccer tournament. One fast player outdistanced every defender to score. It was a wonderful day.",
+      "passageZh": "去年夏天，我們運動社去參觀了一個青少年運動營。早上，我們看了一堂柔道課，孩子們在練習安全倒地。隔壁，一位武術老師示範了幾個厲害的踢腿。體育館裡，女孩們隨著節奏感強的音樂，拿著彩帶和球展現體操技巧，戶外則有教練拿著碼錶為跑者計時。一位十幾歲的滑板少年在公園裡表演花式動作給我們看，曾在科學奧林匹亞競賽得獎的導遊也跟我們介紹了奧林匹亞古代運動會的歷史。後來，我們看了一場青少年足球錦標賽的準決賽。一位速度很快的球員甩開所有後衛射門得分。那是美好的一天。",
       "questions": [
         {
           "questionZh": "柔道課上孩子們在練習什麼？",
@@ -393,6 +393,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（skateboarder）原位換成翻譯題，沿用題 id b2-u18-l03-q18；目標字沿用 skateboarder",
         "resolution": "改為 translate：promptZh「那位滑板選手沿著樓梯扶手滑了下來。」、hintWords [\"skateboarder\"]、referenceEn [\"The skateboarder slid down the handrail of the stairs.\",\"The skateboarder rode all the way down the stair handrail.\"]、rubricZh [\"skateboarder 指「玩滑板的人、滑板選手」（例如 the skateboarder 等）\",\"「沿著扶手滑下來」可寫，例如 slid down the handrail、rode down the handrail 等\",\"時態用過去式或現在完成式（例如 slid、rode 等）\"]（原 makeSentence：instructionZh「用 skateboarder 造一個句子，描述你在公園或街上看到的玩滑板的人。」、referenceEn [\"I often see a skateboarder practicing jumps near my school.\",\"The skateboarder I saw in the park could spin in the air.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh、glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

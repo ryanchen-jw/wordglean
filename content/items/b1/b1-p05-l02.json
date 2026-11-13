@@ -16,7 +16,7 @@
       "type": "wordCard",
       "word": "get a job",
       "exampleEn": "My sister got a job at a bank last month.",
-      "exampleZh": "我姊姊上個月在一家銀行找到工作。",
+      "exampleZh": "我的姊妹上個月在一家銀行找到工作。",
       "glossZh": "找到工作",
       "distractorsZh": [
         "辭職",
@@ -28,7 +28,7 @@
       "id": "b1-p05-l02-q02",
       "type": "wordCard",
       "word": "give a speech",
-      "exampleEn": "Our principal gave a speech on the first day of school.",
+      "exampleEn": "The head of our school gave a speech on the first day of school.",
       "exampleZh": "我們校長在開學第一天發表了演說。",
       "glossZh": "發表演說",
       "distractorsZh": [
@@ -357,6 +357,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 3 題位（b1-p05-l02-q09、b1-p05-l02-q12、b1-p05-l02-q13），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

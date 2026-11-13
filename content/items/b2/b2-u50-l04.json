@@ -105,7 +105,7 @@
       "word": "diversion",
       "exampleEn": "Reading is a pleasant diversion on long train trips.",
       "exampleZh": "閱讀是長途火車旅行中愉快的消遣。",
-      "glossZh": "消遣；轉移注意的事；繞道",
+      "glossZh": "消遣；轉移注意的事；繞道（英式）",
       "distractorsZh": [
         "負擔",
         "任務",
@@ -141,8 +141,8 @@
     {
       "id": "b2-u50-l04-q12",
       "type": "shadowing",
-      "sentenceEn": "Ask the keeper if you lose anything in the park.",
-      "sentenceZh": "如果在公園裡掉了東西，就去問管理員。"
+      "sentenceEn": "Ask the park keeper if you lose anything here.",
+      "sentenceZh": "如果在這裡掉了東西，就去問公園管理員。"
     },
     {
       "id": "b2-u50-l04-q13",
@@ -185,7 +185,7 @@
     {
       "id": "b2-u50-l04-q15",
       "type": "reading",
-      "passageEn": "Our town's football team had a strange match last Sunday against a strong opponent. In the first half, a dog ran onto the field, which created a funny diversion and stopped the game for ten minutes. Our keeper, who is only seventeen, saved three hard shots. In the second half, the coach brought in reinforcements from the bench, and the team played with great persistence. They finally won by one goal, and the cheering was so loud that I could feel the vibration in my seat.",
+      "passageEn": "Our town's soccer team had a strange match last Sunday against a strong opponent. In the first half, a dog ran onto the field, which created a funny diversion and stopped the game for ten minutes. Our keeper, who is only seventeen, saved three hard shots. In the second half, the coach brought in reinforcements from the bench, and the team played with great persistence. They finally won by one goal, and the cheering was so loud that I could feel the vibration in my seat.",
       "passageZh": "上週日，我們鎮上的足球隊和一支強隊踢了一場奇特的比賽。上半場有一隻狗跑進場，引起一陣好笑的騷動，比賽因此停了十分鐘。我們只有十七歲的守門員擋下了三記強勁的射門。下半場，教練從板凳派上生力軍，球隊以極大的毅力奮戰。他們最後贏了一球，歡呼聲大到我能感覺到座位在震動。",
       "questions": [
         {
@@ -309,6 +309,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（imitation）原位換成翻譯題，沿用題 id b2-u50-l04-q17；目標字沿用 imitation",
         "resolution": "改為 translate：promptZh「我妹妹很會模仿我們的老師。」、hintWords [\"imitation\"]、referenceEn [\"My younger sister does a great imitation of our teacher.\",\"My little sister is very good at doing imitations of our teacher.\"]、rubricZh [\"imitation 當名詞（例如 does a great imitation of、is good at doing imitations of 等）\",\"「很會」可寫，例如 does a great…、is very good at… 等\",\"「妹妹」可寫，例如 younger sister、little sister 等\"]（原 makeSentence：instructionZh「用 imitation 造一個句子，說說一次有趣的模仿或一樣仿製品。」、referenceEn [\"My little brother does a funny imitation of our teacher.\",\"I bought an imitation of a famous painting for my living room.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

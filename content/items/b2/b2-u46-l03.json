@@ -185,8 +185,8 @@
     {
       "id": "b2-u46-l03-q15",
       "type": "reading",
-      "passageEn": "Last week, the water in our apartment building suddenly turned brown. The superintendent called the city water department, a governmental office that checks water quality. Workers investigated the problem and found that old pipes under our street were the cause. The next day, a spokeswoman for the department said on the radio that the pipes would be replaced within a month. At a neighborhood meeting, some partisans of a bigger water plan wanted the city to move faster, but most people were happy with the promise.",
-      "passageZh": "上週，我們公寓大樓的水突然變成褐色。大樓管理員打電話給市政府的自來水處，那是負責檢查水質的政府機關。工作人員調查後發現，原因出在我們街道底下的老舊水管。隔天，自來水處的女發言人在廣播中說，水管會在一個月內換新。在住戶會議上，一些支持更大規模供水計畫的人希望市政府動作快一點，不過大部分人對這個承諾感到滿意。",
+      "passageEn": "Last week, the water in our apartment building suddenly turned brown. The superintendent called the city water department, a governmental office that checks water quality. Workers investigated the problem and found that old pipes under our street were the cause. The next day, a spokeswoman for the department said on the radio that the pipes would be replaced within a month. At a neighborhood meeting, some partisans of a plan to replace all the city's old pipes wanted the city to move faster, but most people were happy with the promise.",
+      "passageZh": "上週，我們公寓大樓的水突然變成褐色。大樓管理員打電話給市政府的自來水處，那是負責檢查水質的政府機關。工作人員調查後發現，原因出在我們街道底下的老舊水管。隔天，自來水處的女發言人在廣播中說，水管會在一個月內換新。在住戶會議上，一些支持全市老舊水管換新計畫的人希望市政府動作快一點，不過大部分人對這個承諾感到滿意。",
       "questions": [
         {
           "questionZh": "水變成褐色的原因是什麼？",
@@ -309,6 +309,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spokeswoman）原位換成翻譯題，沿用題 id b2-u46-l03-q17；目標字沿用 spokeswoman",
         "resolution": "改為 translate：promptZh「這家博物館請了一位女發言人來應付媒體。」、hintWords [\"spokeswoman\"]、referenceEn [\"The museum has hired a spokeswoman to deal with the media.\",\"The museum hired a spokeswoman to handle the media.\"]、rubricZh [\"spokeswoman 表示「女發言人」（例如 a spokeswoman 等）\",\"「應付媒體」可寫，例如 deal with the media、handle the media 等\",\"時態可用過去式或現在完成式（例如 hired、has hired 等）\"]（原 makeSentence：instructionZh「用 spokeswoman 造一個句子，說說某家公司或機構的女發言人說了什麼。」、referenceEn [\"A spokeswoman for the zoo said the baby elephant was healthy.\",\"The bank's spokeswoman said that the new online service would start next month.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

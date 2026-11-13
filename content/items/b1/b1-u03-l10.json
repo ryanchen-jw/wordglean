@@ -128,10 +128,10 @@
       "audioZh": "我今天早上在樓梯上滑了一跤，還好沒受傷。",
       "questionZh": "說話者今天早上發生了什麼事？",
       "options": [
-        "Got hurt on the stairs.",
-        "Lost a key at home.",
-        "Fell off a bike on the road.",
-        "Slipped but didn't get hurt."
+        "Got hurt on the stairs",
+        "Lost a key at home",
+        "Fell off a bike on the road",
+        "Slipped but didn't get hurt"
       ],
       "answer": 3
     },
@@ -188,8 +188,8 @@
     {
       "id": "b1-u03-l10-q15",
       "type": "reading",
-      "passageEn": "Our town's night market has changed a lot. To attract more young visitors, it added food stands with an interesting combination of Taiwanese and Japanese dishes. The town also wanted to ensure safety, so it eliminated the problem of blocked paths. Some shop owners defended the traditional way, but most agreed to the changes. Today, many families rely on the market for cheap dinners. But be careful: the stone floor is easy to slip on after rain.",
-      "passageZh": "我們鎮上的夜市改變了很多。為了吸引更多年輕遊客，夜市增加了一些攤位，賣台式和日式料理的有趣組合。鎮公所也想確保安全，所以解決了通道被擋住的問題。有些店家為傳統做法辯護，但大部分都同意改變。現在很多家庭依賴夜市解決便宜的晚餐。不過要小心：雨後石頭地面很容易滑倒。",
+      "passageEn": "Our town's night market has changed a lot. To attract more young visitors, it added food stands with an interesting combination of Taiwanese and Japanese dishes. The town also wanted to ensure safety, so it eliminated the problem of blocked paths. Some shop owners defended the traditional way, but most agreed to the changes. Today, many families rely on the market for cheap dinners. But be careful: the stone paths are easy to slip on after rain.",
+      "passageZh": "我們鎮上的夜市改變了很多。為了吸引更多年輕遊客，夜市增加了一些攤位，賣台式和日式料理的有趣組合。鎮公所也想確保安全，所以解決了通道被擋住的問題。有些店家為傳統做法辯護，但大部分都同意改變。現在很多家庭依賴夜市解決便宜的晚餐。不過要小心：雨後石板路很容易滑倒。",
       "questions": [
         {
           "questionZh": "夜市為了吸引年輕遊客做了什麼？",
@@ -455,6 +455,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ensure）原位換成翻譯題，沿用題 id b1-u03-l10-q17；目標字沿用 ensure",
         "resolution": "改為 translate：promptZh「這位老師總是確保每個學生都聽得懂。」、hintWords [\"ensure\"]、referenceEn [\"This teacher always ensures that every student understands.\",\"The teacher always ensures every student can understand.\"]、rubricZh [\"用 ensure 表示「確保」（that 可省略；寫 make sure 也正確）\",\"「聽得懂」可寫，例如 understands、can understand、can follow 等\"]（原 makeSentence：instructionZh「用 ensure 造一個句子，說說你出門前會確保做好的一件事。」、referenceEn [\"I always ensure that the door is locked before I leave.\",\"I ensure the lights are off before I go out.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

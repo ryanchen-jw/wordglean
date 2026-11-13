@@ -81,7 +81,7 @@
       "word": "takeaway",
       "exampleEn": "There is a takeaway next to the station.",
       "exampleZh": "車站旁邊有一家外帶餐館。",
-      "glossZh": "外帶餐點；外帶餐館",
+      "glossZh": "外帶餐點；外帶餐館；（英式）",
       "distractorsZh": [
         "電影院",
         "加油站",
@@ -127,10 +127,10 @@
       "audioZh": "休息時間茶點會放在 3 號室，請不要把飲料帶進訓練教室。",
       "questionZh": "休息時間茶點放在哪裡？",
       "options": [
-        "In the training room.",
-        "In Room 3.",
-        "In the café.",
-        "At the front desk."
+        "In the training room",
+        "In Room 3",
+        "In the cafe",
+        "At the front desk"
       ],
       "answer": 1
     },
@@ -143,7 +143,7 @@
     {
       "id": "b1-u14-l01-q12",
       "type": "shadowing",
-      "sentenceEn": "The pub was full, so we went to a café instead.",
+      "sentenceEn": "The pub was full, so we went to a cafe instead.",
       "sentenceZh": "那家酒吧客滿了，所以我們改去咖啡店。"
     },
     {
@@ -364,6 +364,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（refreshments）原位換成翻譯題，沿用題 id b1-u14-l01-q17；目標字沿用 refreshments",
         "resolution": "改為 translate：promptZh「我們準備了一些茶點給來參觀的客人。」、hintWords [\"refreshments\"]、referenceEn [\"We prepared some refreshments for the visitors.\",\"We have prepared refreshments for our visitors.\"]、rubricZh [\"用 refreshments 表示「茶點」（複數，例如 some refreshments）\",\"時態可用 prepared、have prepared 等\"]（原 makeSentence：instructionZh「用 refreshments 造一個句子，說說某個活動提供的茶點。」、referenceEn [\"Refreshments were served during the break.\",\"At the meeting, the refreshments were tea and cookies.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

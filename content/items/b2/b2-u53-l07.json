@@ -51,7 +51,7 @@
       "id": "b2-u53-l07-q04",
       "type": "wordCard",
       "word": "standby",
-      "exampleEn": "The hospital has standby power in case the power goes out.",
+      "exampleEn": "The hospital has standby power in case the electricity goes out.",
       "exampleZh": "醫院有備用電力，以防停電。",
       "glossZh": "備用的；候補的",
       "distractorsZh": [
@@ -343,6 +343,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（standby）原位換成翻譯題，沿用題 id b2-u53-l07-q17；目標字沿用 standby",
         "resolution": "改為 translate：promptZh「這齣戲有兩位候補演員，需要時隨時可以上台。」、hintWords [\"standby\"]、referenceEn [\"The play has two standby actors who are ready to go on stage if needed.\",\"There are two actors on standby for the play, ready to perform when needed.\"]、rubricZh [\"standby 可放名詞前或寫成 on standby（例如 two standby actors、two actors on standby 等）\",\"「需要時隨時可以上台」可寫，例如 ready to go on stage if needed 等\"]（原 makeSentence：instructionZh「用 standby 造一個句子，描述一樣備用的東西或候補的安排。」、referenceEn [\"We always keep a standby battery in the car.\",\"The team has a standby player for every match.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

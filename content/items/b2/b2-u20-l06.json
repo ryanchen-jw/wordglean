@@ -190,8 +190,8 @@
     {
       "id": "b2-u20-l06-q15",
       "type": "reading",
-      "passageEn": "My uncle is a travel writer, and his new book covers three very different places. The first chapter is about the Australian outback, where he drove for days without seeing another car. Then he traveled to the Indian subcontinent and visited a white marble mausoleum at sunrise. Later, he moved southward to a quiet fishing town, where the public bathhouse is the center of village life. His book became a countrywide best seller, and the city library even held a citywide reading event. Now he is homeward bound, and he says his next masterpiece will be about his own hometown.",
-      "passageZh": "我叔叔是旅遊作家，他的新書寫了三個截然不同的地方。第一章寫澳洲內陸荒野，他在那裡開了好幾天的車都沒看到別的車。接著他去了印度次大陸，在日出時參觀一座白色大理石陵墓。後來，他往南走到一個寧靜的漁村，那裡的公共澡堂是村民生活的中心。他的書成了全國暢銷書，市立圖書館甚至舉辦了全市讀書活動。現在他正踏上歸途，說他的下一部傑作要寫自己的家鄉。",
+      "passageEn": "My uncle is a travel writer, and his new book covers three very different places. The first chapter is about the Australian outback, where he drove for days without seeing another car. Then he traveled to the Indian subcontinent and visited a white marble mausoleum at sunrise. Later, he moved southward to a quiet fishing village, where the public bathhouse is the center of village life. His book sold well countrywide, and the city library even held a citywide reading event. Now he is homeward bound, and he says his next masterpiece will be about his own hometown.",
+      "passageZh": "我叔叔是旅遊作家，他的新書寫了三個截然不同的地方。第一章寫澳洲內陸荒野，他在那裡開了好幾天的車都沒看到別的車。接著他去了印度次大陸，在日出時參觀一座白色大理石陵墓。後來，他往南走到一個寧靜的漁村，那裡的公共澡堂是村民生活的中心。他的書在全國各地都賣得很好，市立圖書館甚至舉辦了全市讀書活動。現在他正踏上歸途，說他的下一部傑作要寫自己的家鄉。",
       "questions": [
         {
           "questionZh": "叔叔在澳洲內陸荒野有什麼經歷？",
@@ -295,6 +295,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（citywide）原位換成翻譯題，沿用題 id b2-u20-l06-q17；目標字沿用 citywide",
         "resolution": "改為 translate：promptZh「市政府在全市各地種了一千棵樹。」、hintWords [\"citywide\"]、referenceEn [\"The city government planted a thousand trees citywide.\",\"The city has planted one thousand trees citywide.\"]、rubricZh [\"citywide 表示「全市各地」，可當副詞放句尾（例如 planted… citywide 等）\",\"時態可用過去式或現在完成式（例如 planted、has planted 等）\",\"「市政府」可寫，例如 the city government、the city 等\"]（原 makeSentence：instructionZh「用 citywide 造一個句子，說說你住的城市舉辦過的全市活動。」、referenceEn [\"My city holds a citywide music festival every summer.\",\"Last year there was a citywide running race, and I joined it with my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

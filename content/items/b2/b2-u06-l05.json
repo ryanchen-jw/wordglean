@@ -118,7 +118,7 @@
     {
       "id": "b2-u06-l05-q09",
       "type": "listenType",
-      "sentenceEn": "The actual meeting starts at ten, not at nine as the email said.",
+      "sentenceEn": "The actual start time of the meeting is ten, not nine as the email said.",
       "sentenceZh": "會議實際上十點開始，不是信上說的九點。"
     },
     {
@@ -188,8 +188,8 @@
     {
       "id": "b2-u06-l05-q15",
       "type": "reading",
-      "passageEn": "When Daniel opened his first restaurant, he chose a prime location near the main train station. His primary goal was to serve good food at fair prices. In the first year, however, the actual number of customers was lower than he had planned. He looked at the problem from multiple angles and found the core issue: people did not know his restaurant existed. So he hired a young designer specifically to improve his website, a costly but wise decision. There were a few technical problems at first, but within six months, the number of customers had risen significantly.",
-      "passageZh": "Daniel 開第一家餐廳時，選在主要火車站附近的黃金地段。他的首要目標是以合理的價格提供好吃的食物。然而第一年，實際的客人數比他原本規劃的少。他從多個角度檢視這個問題，找出了核心原因：大家根本不知道有他這家餐廳。於是他特地聘請一位年輕設計師來改善網站，這個決定花費不小，卻很明智。一開始出了一些技術問題，但不到六個月，客人數就大幅增加了。",
+      "passageEn": "When Daniel opened his first restaurant, he chose a prime location near the main train station. His primary goal was to serve good food at fair prices. In the first year, however, the actual number of customers was lower than he had expected. He looked at the problem from multiple angles and found the core issue: people did not know his restaurant existed. So he hired a young designer specifically to improve his website, a costly but wise decision. There were a few technical problems at first, but within six months, the number of customers had risen significantly.",
+      "passageZh": "Daniel 開第一家餐廳時，選在主要火車站附近的黃金地段。他的首要目標是以合理的價格提供好吃的食物。然而第一年，實際的客人數比他原本預期的少。他從多個角度檢視這個問題，找出了核心原因：大家根本不知道有他這家餐廳。於是他特地聘請一位年輕設計師來改善網站，這個決定花費不小，卻很明智。一開始出了一些技術問題，但不到六個月，客人數就大幅增加了。",
       "questions": [
         {
           "questionZh": "Daniel 第一年遇到什麼問題？",
@@ -359,6 +359,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（significantly）原位換成翻譯題，沿用題 id b2-u06-l05-q17；目標字沿用 significantly",
         "resolution": "改為 translate：promptZh「新的軟體大幅縮短了處理訂單的時間。」、hintWords [\"significantly\"]、referenceEn [\"The new software has significantly reduced the time it takes to process orders.\",\"The new software significantly cut the time for handling orders.\"]、rubricZh [\"significantly 修飾動詞，可放動詞前或後（例如 significantly reduced 等）\",\"「縮短」可寫，例如 reduced、cut、shortened 等；「處理訂單」可寫，例如 process orders、handle orders 等\",\"時態可用過去式或現在完成式\"]（原 makeSentence：instructionZh「用 significantly 造一個句子，說說你生活中某件事明顯改變了。」、referenceEn [\"My English has improved significantly since I started reading every day.\",\"My rent has gone up significantly this year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

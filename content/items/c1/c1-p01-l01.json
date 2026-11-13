@@ -92,7 +92,7 @@
       "id": "c1-p01-l01-q07",
       "type": "wordCard",
       "word": "crop up",
-      "exampleEn": "Unexpected costs often crop up on holiday.",
+      "exampleEn": "Unexpected costs often crop up on vacation.",
       "exampleZh": "度假時常常會突然冒出意料之外的開銷。",
       "glossZh": "突然出現",
       "distractorsZh": [
@@ -174,8 +174,8 @@
     {
       "id": "c1-p01-l01-q14",
       "type": "reading",
-      "passageEn": "Ten years ago, Nina left a safe job to start a company that makes furniture from recycled wood. Many people doubted her idea, but she slowly carved a place out for herself in a crowded market. Problems cropped up constantly: suppliers were late, machines broke down, and one large customer refused to pay. When journalists ask about her success, she says it boils down to two things: patience and a willingness to learn from mistakes. Her early sales figures bear this out: the first three years were difficult, but each year was better than the last.",
-      "passageZh": "十年前，Nina 辭去一份穩定的工作，創辦了一家用回收木材做家具的公司。很多人懷疑她的點子，但她慢慢在競爭激烈的市場中闖出了一席之地。問題接二連三地冒出來：供應商延誤交貨、機器故障，還有一位大客戶拒絕付款。記者問起她成功的原因時，她說歸根究柢就是兩件事：耐心，以及願意從錯誤中學習。她早期的銷售數字就證實了這一點：前三年很辛苦，但每一年都比前一年好。",
+      "passageEn": "Ten years ago, Nina left a safe job to start a company that makes furniture from recycled wood. Many people doubted her idea, but she wanted a place for herself in a crowded market, and slowly she carved it out. Problems cropped up constantly: suppliers were late, machines broke down, and one large customer refused to pay. When journalists ask about her success, she says it boils down to two things: patience and a willingness to learn from mistakes. Her early sales figures bear this out: the first three years were difficult, but each year was better than the last.",
+      "passageZh": "十年前，Nina 辭去一份穩定的工作，創辦了一家用回收木材做家具的公司。很多人懷疑她的點子，但她想在競爭激烈的市場中佔有一席之地，後來也慢慢闖了出來。問題接二連三地冒出來：供應商延誤交貨、機器故障，還有一位大客戶拒絕付款。記者問起她成功的原因時，她說歸根究柢就是兩件事：耐心，以及願意從錯誤中學習。她早期的銷售數字就證實了這一點：前三年很辛苦，但每一年都比前一年好。",
       "questions": [
         {
           "questionZh": "Nina 的公司做什麼？",
@@ -338,6 +338,24 @@
         "message": "執行長第③關裁示修正：FIX：翻譯要點收不用片語的正確說法（裁示 1）",
         "resolution": "改前：[\"用片語表達「置之不理」，例如 brushed aside my suggestion 等；受詞可放在 aside 的前面或後面\",\"時態可用過去式或現在完成式（例如 brushed aside、has brushed aside 等）\",\"「建議」可寫，例如 suggestion、advice、idea 等\"]；改後：[\"建議用片語表達「置之不理」（例如 brushed aside my suggestion 等）\",\"不用片語但意思正確也算對（例如 ignored、dismissed、brushed off my suggestion 等）\",\"時態可用過去式或現在完成式（例如 brushed aside、has brushed aside 等）\",\"「建議」可寫，例如 suggestion、advice、idea 等\"]",
         "resolvedAt": "2026-10-06T00:34:56Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

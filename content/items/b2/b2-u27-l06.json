@@ -185,7 +185,7 @@
     {
       "id": "b2-u27-l06-q15",
       "type": "reading",
-      "passageEn": "This year, our city museum opened a new exhibition to commemorate its hundredth birthday. The first room shows prehistoric tools found near the river. The next room is about old legends full of supernatural creatures, such as giants and talking trees. In many of these stories, the gods are immortal, while humans are mortal and must accept that life is short. One story tells of a king who became so worldly that he cared only about gold. The gods thought his behavior was immoral and turned his palace into stone. The exhibition has already received a lot of publicity, and it will travel to three other cities next year.",
+      "passageEn": "This year, our city museum opened a new exhibition to commemorate its hundredth anniversary. The first room shows prehistoric tools found near the river. The next room is about old legends full of supernatural creatures, such as giants and talking trees. In many of these stories, the gods are immortal, while humans are mortal and must accept that life is short. One story tells of a king who became so worldly that he cared only about gold. The gods thought his behavior was immoral and turned his palace into stone. The exhibition has already received a lot of publicity, and it will travel to three other cities next year.",
       "passageZh": "今年，我們的市立博物館推出一個新展覽，紀念博物館成立一百週年。第一個展間展出在河邊發現的史前工具。下一個展間介紹充滿超自然生物的古老傳說，例如巨人和會說話的樹。在許多這類故事裡，神長生不死，而人類終有一死，必須接受人生短暫。有一個故事講一位國王變得非常世俗，只在乎金子。眾神認為他的行為不道德，就把他的宮殿變成了石頭。這個展覽已經得到很多宣傳，明年還會到另外三個城市巡迴展出。",
       "questions": [
         {
@@ -357,6 +357,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（supernatural）原位換成翻譯題，沿用題 id b2-u27-l06-q17；目標字沿用 supernatural",
         "resolution": "改為 translate：promptZh「這本小說充滿了鬼和魔法這類超自然的東西。」、hintWords [\"supernatural\"]、referenceEn [\"This novel is full of supernatural things like ghosts and magic.\",\"There are many supernatural elements, such as ghosts and magic, in this novel.\"]、rubricZh [\"supernatural 放名詞前，表示「超自然的」（例如 supernatural things、supernatural elements 等）\",\"「充滿了」可寫，例如 is full of、there are many… 等\",\"「這類」可寫，例如 like、such as 等\"]（原 makeSentence：instructionZh「用 supernatural 造一個句子，說說你喜歡或不喜歡的超自然故事、電影或遊戲。」、referenceEn [\"I love films about supernatural creatures like ghosts.\",\"I don't enjoy supernatural stories, because they scare me at night.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

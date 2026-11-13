@@ -185,8 +185,8 @@
     {
       "id": "b2-u06-l08-q15",
       "type": "reading",
-      "passageEn": "Last weekend, I watched a magic show with my nephew. Admittedly, I did not expect much at first. The magician made coins appear and disappear, and his hand movements were so fluid that the tricks looked real. At one point, a coin seemed to become completely invisible. Afterwards, I read that most tricks depend on subtle movements and secondary actions that pull the audience's attention away. The complexity of the tricks surprised me. The magician's joy on stage was genuine, and the show changed dramatically when he invited my nephew to help. Now my nephew wants a job related to magic!",
-      "passageZh": "上週末，我和姪子去看了一場魔術表演。不可否認，我一開始並沒抱什麼期待。魔術師讓硬幣出現又消失，他的手部動作非常流暢，讓戲法看起來像真的一樣。有一刻，一枚硬幣好像完全消失不見了。後來我讀到，大部分的戲法靠的是細微的動作，以及把觀眾注意力引開的次要動作。這些戲法的複雜程度讓我很驚訝。魔術師在台上的快樂是真誠的，而當他邀請我姪子上台幫忙時，整場表演起了很大的變化。現在我姪子想從事和魔術有關的工作！",
+      "passageEn": "Last weekend, I watched a magic show with my nephew. Admittedly, I did not expect much at first. The magician made coins appear and disappear, and his hand movements were so fluid that the tricks looked real. At one point, a coin seemed to become completely invisible. Afterwards, I read that most tricks depend on subtle movements and secondary actions that pull the audience's attention away. The complexity of the tricks surprised me. The magician's joy on stage was genuine, and the show became dramatically more exciting when he invited my nephew to help. Now my nephew wants a job related to magic!",
+      "passageZh": "上週末，我和姪子去看了一場魔術表演。不可否認，我一開始並沒抱什麼期待。魔術師讓硬幣出現又消失，他的手部動作非常流暢，讓戲法看起來像真的一樣。有一刻，一枚硬幣好像完全消失不見了。後來我讀到，大部分的戲法靠的是細微的動作，以及把觀眾注意力引開的次要動作。這些戲法的複雜程度讓我很驚訝。魔術師在台上的快樂是真誠的，而當他邀請我姪子上台幫忙時，整場表演變得精彩許多。現在我姪子想從事和魔術有關的工作！",
       "questions": [
         {
           "questionZh": "作者後來讀到，大部分的戲法靠什麼？",
@@ -440,6 +440,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（genuine）原位換成翻譯題，沿用題 id b2-u06-l08-q17；目標字沿用 genuine",
         "resolution": "改為 translate：promptZh「專家確認這幅畫是真跡。」、hintWords [\"genuine\"]、referenceEn [\"The expert confirmed that the painting is genuine.\",\"Experts have confirmed that this painting is genuine.\"]、rubricZh [\"genuine 表示「真的、非偽造的」（例如 is genuine、was genuine 等）\",\"「確認」可寫，例如 confirmed、said、proved 等；時態可用過去式或現在完成式\",\"expert 單複數都可以\"]（原 makeSentence：instructionZh「用 genuine 造一個句子，說說某樣真的（不是假的）東西，或某人真誠的態度。」、referenceEn [\"I bought a genuine leather wallet on my trip.\",\"My manager showed genuine interest in my ideas.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

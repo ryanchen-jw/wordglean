@@ -184,8 +184,8 @@
     {
       "id": "a2-u25-l05-q15",
       "type": "reading",
-      "passageEn": "Last week, my father's leather wallet was missing. He looked everywhere. \"This is awful,\" he said. My mother told him to think differently: \"Where did you go yesterday?\" He remembered the precise time he left the cafe: three o'clock. The principal problem was that he had no money for the bus. Then the cafe called. They had his wallet! \"What a brilliant cafe!\" he said and laughed.",
-      "passageZh": "上週，我爸爸的皮夾不見了。他到處找。他說：「真是糟透了。」媽媽要他換個方式想：「你昨天去了哪裡？」他想起自己離開咖啡店的確切時間：三點。最主要的問題是他沒錢搭公車。接著咖啡店打電話來，說他們撿到了他的皮夾！他笑著說：「這家咖啡店太棒了！」",
+      "passageEn": "Last week, my father's leather wallet was missing. He looked everywhere. \"This is awful,\" he said. My mother told him to think differently: \"Where did you go yesterday?\" He remembered the precise time he left the cafe: three o'clock. The principal problem was that he had no money for the bus. Then the cafe called. They had his wallet! \"That's brilliant!\" he said and laughed.",
+      "passageZh": "上週，我爸爸的皮夾不見了。他到處找。他說：「真是糟透了。」媽媽要他換個方式想：「你昨天去了哪裡？」他想起自己離開咖啡店的確切時間：三點。最主要的問題是他沒錢搭公車。接著咖啡店打電話來，說他們撿到了他的皮夾！他笑著說：「太好了！」",
       "questions": [
         {
           "questionZh": "爸爸的什麼東西不見了？",
@@ -286,6 +286,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（differently）原位換成翻譯題，沿用題 id a2-u25-l05-q17；目標字沿用 differently",
         "resolution": "改為 translate：promptZh「我和我哥哥穿衣服的方式很不一樣。」、hintWords [\"differently\"]、referenceEn [\"My brother and I dress very differently.\",\"My brother and I dress differently.\"]、rubricZh [\"用 differently 表示「不同地」，放在動詞後（例如 dress differently）\",\"「穿衣服的方式」可寫，例如 dress differently、wear clothes differently 等\"]（原 makeSentence：instructionZh「用 differently 造一個句子，說說你和別人做法或想法不同的地方。」、referenceEn [\"My sister and I think differently about money.\",\"I do my homework differently from my brother.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

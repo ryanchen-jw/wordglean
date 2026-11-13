@@ -125,10 +125,10 @@
       "audioZh": "顧客對新菜單的反應很好，所以餐廳會保留它。",
       "questionZh": "餐廳為什麼要保留新菜單？",
       "options": [
-        "It was cheaper.",
-        "The customers liked it.",
-        "The chef insisted on it.",
-        "It was easy to cook."
+        "It was cheaper",
+        "The customers liked it",
+        "The chef insisted on it",
+        "It was easy to cook"
       ],
       "answer": 1
     },
@@ -301,6 +301,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（realist）原位換成翻譯題，沿用題 id c1-u06-l05-q17；目標字沿用 realist",
         "resolution": "改為 translate：promptZh「談到預算，我們的經理是個非常務實的人。」、hintWords [\"realist\"]、referenceEn [\"When it comes to budgets, our manager is very much a realist.\",\"Our manager is a true realist when it comes to the budget.\"]、rubricZh [\"「務實的人」用 realist（例如 very much a realist、a true realist 等）\",\"「談到預算」可寫，例如 when it comes to budgets、when it comes to the budget 等，放句首或句尾皆可\"]（原 makeSentence：instructionZh「用 realist 造一個句子，說說你在某件事上是不是一個務實的人。」、referenceEn [\"I am a realist, so I always plan for delays when I travel.\",\"When it comes to money, I am very much a realist.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

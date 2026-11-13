@@ -201,7 +201,7 @@
     {
       "id": "b2-u31-l01-q16",
       "type": "reading",
-      "passageEn": "Last spring, a famous toy company went into bankruptcy. For years, its bankers had warned that the company was spending too much, and an audit later showed that it had lost money in every fiscal year since 2015. Economists said that online games had hurt its profit. Before closing, the company decided to donate its remaining toys to children's hospitals. The donation filled three trucks. Many people were surprised that the owner refused to make any withdrawal from the company's accounts for himself. \"One bad decision can bankrupt a business,\" he said, \"but it should not change who you are.\"",
+      "passageEn": "Last spring, a famous toy company went into bankruptcy. For years, its bankers had warned that the company was spending too much, and an audit later showed that it had lost money in every fiscal year since 2015. Economists said that online games had hurt its profits. Before closing, the company decided to donate its remaining toys to children's hospitals. The donation filled three trucks. Many people were surprised that the owner refused to make any withdrawal from the company's accounts for himself. \"One bad decision can bankrupt a business,\" he said, \"but it should not change who you are.\"",
       "passageZh": "去年春天，一家知名玩具公司破產了。多年來，往來的銀行業者一直警告這家公司花錢太多，後來的審計也顯示，它從 2015 年起的每個會計年度都在虧錢。經濟學家說，線上遊戲傷害了它的獲利。關門之前，公司決定把剩下的玩具捐給兒童醫院，捐出的玩具裝滿了三輛卡車。很多人驚訝的是，老闆拒絕從公司帳戶為自己提領任何一筆錢。他說：「一個錯誤的決定就能讓一家企業破產，但它不該改變你是什麼樣的人。」",
       "questions": [
         {
@@ -397,6 +397,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（donate）原位換成翻譯題，沿用題 id b2-u31-l01-q18；目標字沿用 donate",
         "resolution": "改為 translate：promptZh「她把這場演唱會的收入全部捐給了一所小學。」、hintWords [\"donate\"]、referenceEn [\"She donated all the money from the concert to a primary school.\",\"She donated all her earnings from the concert to an elementary school.\"]、rubricZh [\"donate 的用法，例如 donated … to a school 等\",\"「收入」可寫，例如 the money from the concert、her earnings 等\",\"時態可用過去式或現在完成式（例如 donated、has donated 等）\"]（原 makeSentence：instructionZh「用 donate 造一個句子，說說你曾經捐過什麼東西給誰。」、referenceEn [\"I donated my old clothes to a charity shop last month.\",\"I donated my old bicycle to a children's home last year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

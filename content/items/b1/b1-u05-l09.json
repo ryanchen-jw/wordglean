@@ -116,10 +116,10 @@
       "audioZh": "這個輪子的直徑是七十公分。",
       "questionZh": "這個輪子的直徑是多少？",
       "options": [
-        "Seven centimeters.",
-        "Seventy centimeters.",
-        "Seven meters.",
-        "Seventy meters."
+        "Seven centimeters",
+        "Seventy centimeters",
+        "Seven meters",
+        "Seventy meters"
       ],
       "answer": 1
     },
@@ -412,6 +412,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（countless）原位換成翻譯題，沿用題 id b1-u05-l09-q16；目標字沿用 countless",
         "resolution": "改為 translate：promptZh「這座圖書館有數不清的舊書。」、hintWords [\"countless\"]、referenceEn [\"This library has countless old books.\",\"There are countless old books in this library.\"]、rubricZh [\"用 countless 表示「數不清的」（例如 countless old books）\"]（原 makeSentence：instructionZh「用 countless 造一個句子，說說一件你做過無數次的事。」、referenceEn [\"I have watched this movie countless times.\",\"I have made countless mistakes in English, but I keep trying.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

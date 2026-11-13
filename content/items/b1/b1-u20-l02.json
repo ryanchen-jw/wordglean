@@ -140,10 +140,10 @@
       "audioZh": "那位籃球員手指受傷了，所以星期六不會上場。",
       "questionZh": "那位球員為什麼星期六不上場？",
       "options": [
-        "He hurt his foot.",
-        "He has a family trip.",
-        "His finger is injured.",
-        "His team won't play."
+        "He hurt his foot",
+        "He has a family trip",
+        "His finger is injured",
+        "His team won't play"
       ],
       "answer": 2
     },
@@ -200,7 +200,7 @@
     {
       "id": "b1-u20-l02-q16",
       "type": "reading",
-      "passageEn": "During a game last month, Marco fell and hurt his knee. The pain was so strong that he couldn't catch his breath for a moment. The team doctor said the injury was not serious, but he needed rest. Marco had to cancel his holiday with his friends. While he rested at home, he read about how the body fights disease: our skin and cells repair themselves every day. Now he is back on the field, and he plays more carefully.",
+      "passageEn": "During a game last month, Marco fell and hurt his knee. The pain was so bad that he couldn't catch his breath for a moment. The team doctor said the injury was not serious, but he needed rest. Marco had to cancel his holiday with his friends. While he rested at home, he read about how the body fights disease: our skin and cells repair themselves every day. Now he is back on the field, and he plays more carefully.",
       "passageZh": "上個月比賽時，Marco 跌倒傷了膝蓋。痛到他一時喘不過氣。隊醫說傷勢不嚴重，但他需要休息。Marco 只好取消和朋友的假期。在家休息時，他讀到身體怎麼對抗疾病：我們的皮膚和細胞每天都在自我修復。現在他回到球場上了，踢得更小心。",
       "questions": [
         {
@@ -467,6 +467,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（finger）原位換成翻譯題，沿用題 id b1-u20-l02-q18；目標字沿用 finger",
         "resolution": "改為 translate：promptZh「那個小女孩用手指數到十。」、hintWords [\"finger\"]、referenceEn [\"The little girl counted to ten on her fingers.\",\"The little girl used her fingers to count to ten.\"]、rubricZh [\"用 finger 的複數表示「手指」（例如 on her fingers）\",\"「數到十」可寫，例如 counted to ten 等；時態可用 counted、counts 等\"]（原 makeSentence：instructionZh「用 finger 造一個句子，說說你手指發生過的事或手指的用處。」、referenceEn [\"I cut my finger when I was making dinner last week.\",\"I wear my grandmother's ring on my middle finger.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

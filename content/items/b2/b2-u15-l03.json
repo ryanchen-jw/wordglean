@@ -53,7 +53,7 @@
       "id": "b2-u15-l03-q04",
       "type": "wordCard",
       "word": "pancake",
-      "exampleEn": "The café is famous for its thick pancakes with fresh fruit.",
+      "exampleEn": "The cafe is famous for its thick pancakes with fresh fruit.",
       "exampleZh": "那家咖啡店以搭配新鮮水果的厚鬆餅聞名。",
       "glossZh": "鬆餅；煎餅",
       "distractorsZh": [
@@ -208,7 +208,7 @@
       ],
       "referenceEn": [
         "She put some chopped walnuts on the salad.",
-        "She added some broken walnuts to her salad."
+        "She added some crushed walnuts to her salad."
       ],
       "rubricZh": [
         "walnut 可數，「一些核桃」用複數（例如 some walnuts）",
@@ -429,6 +429,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pancake）原位換成翻譯題，沿用題 id b2-u15-l03-q16；目標字沿用 pancake",
         "resolution": "改為 translate：promptZh「我第一次試著把鬆餅翻面時，它掉到了地上。」、hintWords [\"pancake\"]、referenceEn [\"The first time I tried to turn a pancake over, it fell on the floor.\",\"When I first tried to flip a pancake, it landed on the floor.\"]、rubricZh [\"pancake 指「鬆餅」（例如 a pancake、the pancake 等）\",\"「翻面」可寫，例如 turn … over、flip 等\",\"時態用過去式（例如 tried、fell、landed 等）\"]（原 makeSentence：instructionZh「用 pancake 造一個句子，說說你喜歡怎麼吃鬆餅。」、referenceEn [\"I like my pancakes with butter and a little honey.\",\"On Sunday mornings, I make pancakes for my whole family.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

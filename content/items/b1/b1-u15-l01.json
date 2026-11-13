@@ -127,10 +127,10 @@
       "audioZh": "這台印表機還在保固期內，所以店家會免費修理。",
       "questionZh": "店家為什麼會免費修理印表機？",
       "options": [
-        "Its warranty hasn't ended yet.",
-        "It is the newest model in the shop.",
-        "The shop broke the printer.",
-        "The owner is a close friend of theirs."
+        "Its warranty hasn't ended yet",
+        "It is the newest model in the shop",
+        "The shop broke the printer",
+        "The owner is a close friend of theirs"
       ],
       "answer": 0
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u15-l01-q15",
       "type": "reading",
-      "passageEn": "Notice to all shoppers: From May 1, Brightway will open three new self-service checkouts. Our sales staff will still be happy to help you choose goods. All our televisions and fridges come with a one-year warranty. Our new fridges use less power, so your power consumption will go down. We also sell goods from local merchants. If you are not happy with an item, you can get a full refund within 30 days. Please keep your receipt.",
+      "passageEn": "Notice to all shoppers: From May 1, Brightway will open three new self-service checkouts. Our sales staff will still be happy to help you choose products. All our televisions and fridges come with a one-year warranty. Our new fridges use less power, so your power consumption will go down. We also sell goods from local merchants. If you are not happy with an item, you can get a full refund within 30 days. Please keep your receipt.",
       "passageZh": "各位顧客請注意：從 5 月 1 日起，Brightway 將新設三台自助結帳機。我們的銷售人員仍然很樂意協助您挑選商品。所有電視和冰箱都附一年保固。我們的新款冰箱比較省電，能降低您的用電量。我們也販售本地商人的商品。如果您對商品不滿意，30 天內可以全額退款。請保留您的收據。",
       "questions": [
         {
@@ -376,6 +376,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（merchant）原位換成翻譯題，沿用題 id b1-u15-l01-q17；目標字沿用 merchant",
         "resolution": "改為 translate：promptZh「這條街以前住了很多有錢的商人。」、hintWords [\"merchant\"]、referenceEn [\"Many rich merchants used to live on this street.\",\"This street used to be home to many rich merchants.\"]、rubricZh [\"用 merchant 表示「商人」（例如 rich merchants）\",\"「以前」可寫，例如 used to、once 等\"]（原 makeSentence：instructionZh「用 merchant 造一個句子，描述一位商人做的生意。」、referenceEn [\"My uncle is a rice merchant, so he knows many farmers.\",\"My grandfather was a tea merchant.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

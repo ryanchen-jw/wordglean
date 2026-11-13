@@ -128,10 +128,10 @@
       "audioZh": "你可以直接打電話給經理，她的號碼在名片上。",
       "questionZh": "要怎麼聯絡經理？",
       "options": [
-        "Phone her yourself.",
-        "Send her a card.",
-        "Ask the front desk.",
-        "Visit her office."
+        "Phone her yourself",
+        "Send her a card",
+        "Ask the front desk",
+        "Visit her office"
       ],
       "answer": 0
     },
@@ -389,6 +389,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（positive）原位換成翻譯題，沿用題 id b1-u04-l06-q17；目標字沿用 positive",
         "resolution": "改為 translate：promptZh「大部分關於新菜單的意見都是正面的。」、hintWords [\"positive\"]、referenceEn [\"Most of the comments about the new menu were positive.\",\"Most comments on the new menu were positive.\"]、rubricZh [\"用 positive 表示「正面的」（例如 were positive）\",\"「意見」可寫，例如 comments、opinions 等；時態可用 were、are 等\"]（原 makeSentence：instructionZh「用 positive 造一個句子，說說你怎麼保持正面，或你經歷過的一個正面改變。」、referenceEn [\"I try to stay positive when things go wrong.\",\"Moving to a new city was a positive change for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -66,7 +66,7 @@
       "id": "c1-u39-l08-q05",
       "type": "wordCard",
       "word": "insubordinately",
-      "exampleEn": "The trainee chef behaved insubordinately toward the head chef and was moved to washing dishes.",
+      "exampleEn": "The trainee chef behaved insubordinately toward the head chef and was sent to wash dishes.",
       "exampleZh": "那名實習廚師對主廚態度不服從，被調去洗碗。",
       "glossZh": "不服從地；違抗上級地",
       "distractorsZh": [
@@ -110,21 +110,21 @@
     {
       "id": "c1-u39-l08-q09",
       "type": "listenChoice",
-      "audioEn": "The shelf had been fixed insecurely, and it fell as soon as I put my books on it.",
+      "audioEn": "The shelf had been put up insecurely, and it fell as soon as I put my books on it.",
       "audioZh": "那個架子沒裝牢，我一放書上去就掉下來了。",
       "questionZh": "那個架子怎麼了？",
       "options": [
-        "It fell down right away.",
-        "It was much too small for the books.",
-        "It was painted a strange color.",
-        "It was too high."
+        "It fell down right away",
+        "It was much too small for the books",
+        "It was painted a strange color",
+        "It was too high"
       ],
       "answer": 0
     },
     {
       "id": "c1-u39-l08-q10",
       "type": "shadowing",
-      "sentenceEn": "Watching the sunrise from the mountain top exhilarated all of us.",
+      "sentenceEn": "Watching the sunrise from the mountaintop exhilarated all of us.",
       "sentenceZh": "在山頂看日出，讓我們每個人都興奮不已。"
     },
     {
@@ -174,8 +174,8 @@
     {
       "id": "c1-u39-l08-q14",
       "type": "reading",
-      "passageEn": "Working at a hotel front desk can be stressful. Last Friday, a guest complained irately that his room key did not work. A young colleague answered insensitively, saying it was probably the guest's own fault, which made things worse. When the manager told him to apologize, he responded insubordinately and walked away. Lin, the shift leader, kept her poise. She fixed the key, offered a free breakfast and asked the guest to sign a short form, which he did compliantly. Later, a sign that had been fixed insecurely to the wall fell down in the lobby, and at the bar a singer was dressed rather raunchily, and a few older guests complained to Lin. Still, the challenge of solving one problem after another exhilarated Lin.",
-      "passageZh": "在飯店櫃台工作可能壓力很大。上星期五，一位客人氣沖沖地抱怨房卡不能用。一位年輕同事很不體貼地回答說，大概是客人自己的錯，結果讓情況更糟。經理叫他道歉時，他不服從地頂了回去，然後走開。值班主管 Lin 保持鎮定。她修好房卡，送客人一份免費早餐，再請客人簽一張簡短的表格，客人也照做了。後來，大廳裡一塊沒釘牢的告示牌從牆上掉了下來；酒吧的駐唱歌手穿得有點露骨，幾位年長的客人向 Lin 抱怨。儘管如此，一個接一個解決問題的挑戰，還是讓 Lin 感到興奮。",
+      "passageEn": "Working at a hotel front desk can be stressful. Last Friday, a guest complained irately that his room key did not work. A young colleague answered insensitively, saying it was probably the guest's own fault, which made things worse. When the manager told him to apologize, he responded insubordinately and walked away. Lin, the shift leader, kept her poise. She fixed the key, offered a free breakfast and asked the guest to sign a short form, which he did compliantly. Later, a sign that had been fixed insecurely to the wall fell down in the lobby. At the bar, a singer was dressed rather raunchily, and a few guests complained to Lin. Still, the challenge of solving one problem after another exhilarated Lin.",
+      "passageZh": "在飯店櫃台工作可能壓力很大。上星期五，一位客人氣沖沖地抱怨房卡不能用。一位年輕同事很不體貼地回答說，大概是客人自己的錯，結果讓情況更糟。經理叫他道歉時，他不服從地頂了回去，然後走開。值班主管 Lin 保持鎮定。她修好房卡，送客人一份免費早餐，再請客人簽一張簡短的表格，客人也照做了。後來，大廳裡一塊沒釘牢的告示牌從牆上掉了下來；酒吧的駐唱歌手穿得有點露骨，幾位客人向 Lin 抱怨。儘管如此，一個接一個解決問題的挑戰，還是讓 Lin 感到興奮。",
       "questions": [
         {
           "questionZh": "那位年輕同事被要求道歉時怎麼做？",
@@ -358,6 +358,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（exhilarate）原位換成翻譯題，沿用題 id c1-u39-l08-q16；目標字沿用 exhilarate",
         "resolution": "改為 translate：promptZh「觀眾的歡呼聲讓所有球員都振奮起來。」、hintWords [\"exhilarate\"]、referenceEn [\"The crowd's cheers exhilarated all the players.\",\"All the players were exhilarated by the cheering of the crowd.\"]、rubricZh [\"「使振奮」用 exhilarate（例如 exhilarated the players、were exhilarated by… 等）\",\"「歡呼聲」可寫，例如 cheers、cheering 等\",\"時態配合內容；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 exhilarate 造一個句子，說說什麼樣的活動會讓你感到興奮。」、referenceEn [\"Riding my bike down a long hill always exhilarates me.\",\"Swimming in the cold sea in the morning exhilarates me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

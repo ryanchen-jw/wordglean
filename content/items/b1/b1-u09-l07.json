@@ -127,10 +127,10 @@
       "audioZh": "飯店員工盡一切讓我們住得舒適，所以我們住得很愉快。",
       "questionZh": "說話者覺得這次住宿怎麼樣？",
       "options": [
-        "The room was too small.",
-        "They really enjoyed it.",
-        "The staff did very little.",
-        "The hotel was too far away."
+        "The room was too small",
+        "They really enjoyed it",
+        "The staff did very little",
+        "The hotel was too far away"
       ],
       "answer": 1
     },
@@ -345,6 +345,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（humor）原位換成翻譯題，沿用題 id b1-u09-l07-q17；目標字沿用 humor",
         "resolution": "改為 translate：promptZh「這本書充滿了幽默感。」、hintWords [\"humor\"]、referenceEn [\"This book is full of humor.\",\"This book is really full of humor.\"]、rubricZh [\"用 humor 表示「幽默」（例如 is full of humor）\"]（原 makeSentence：instructionZh「用 humor 造一個句子，說說你身邊誰很有幽默感。」、referenceEn [\"My father has a great sense of humor.\",\"I like my teacher because of her humor.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

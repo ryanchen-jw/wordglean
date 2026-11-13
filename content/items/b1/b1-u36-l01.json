@@ -125,10 +125,10 @@
       "audioZh": "我覺得這雙鞋賣五十元是合理的價格。我們買吧。",
       "questionZh": "說話者覺得價格怎麼樣？",
       "options": [
-        "It is far too high.",
-        "It is a fair price.",
-        "It is a little low.",
-        "It will go down soon."
+        "It is far too high",
+        "It is a fair price",
+        "It is a little low",
+        "It will go down soon"
       ],
       "answer": 1
     },
@@ -141,7 +141,7 @@
     {
       "id": "b1-u36-l01-q12",
       "type": "shadowing",
-      "sentenceEn": "She studied philosophy at university.",
+      "sentenceEn": "She studied philosophy in college.",
       "sentenceZh": "她在大學主修哲學。"
     },
     {
@@ -336,6 +336,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（impression）原位換成翻譯題，沿用題 id b1-u36-l01-q17；目標字沿用 impression",
         "resolution": "改為 translate：promptZh「我的印象是，他不太喜歡這份工作。」、hintWords [\"impression\"]、referenceEn [\"I got the impression that he doesn't like this job much.\",\"I have the impression that he doesn't really like this job.\"]、rubricZh [\"用 impression 表示「印象；感覺」（例如 I got the impression that…）\"]（原 makeSentence：instructionZh「用 impression 造一個句子，說說你對某個人或地方的第一印象。」、referenceEn [\"My first impression of my new teacher was very good.\",\"I had a bad first impression of this city because it rained.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

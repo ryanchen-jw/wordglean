@@ -131,9 +131,9 @@
       "audioZh": "嗨，我是 Sam，我是一家外國報社的記者。",
       "questionZh": "Sam 的工作是什麼？",
       "options": [
-        "He is a doctor.",
-        "He is a math teacher.",
-        "He is a reporter."
+        "He is a doctor",
+        "He is a math teacher",
+        "He is a reporter"
       ],
       "answer": 2
     },
@@ -147,7 +147,7 @@
       "id": "a1-u02-l03-q12",
       "type": "shadowing",
       "sentenceEn": "My sister works for a foreign bank.",
-      "sentenceZh": "我姊姊在一家外商銀行工作。"
+      "sentenceZh": "我的姊妹在一家外商銀行工作。"
     },
     {
       "id": "a1-u02-l03-q13",
@@ -190,7 +190,7 @@
     {
       "id": "a1-u02-l03-q15",
       "type": "reading",
-      "passageEn": "Today a new student is in our class. The teacher introduces her to us. Her name is Nina, and she is from Korea. She can speak three languages. A reporter from the school newspaper asks her some questions. Nina says, \"Thank you. I am happy to be here.\"",
+      "passageEn": "Today we have a new student in our class. The teacher introduces her to us. Her name is Nina, and she is from Korea. She can speak three languages. A reporter from the school newspaper asks her some questions. Nina says, \"Thank you. I am happy to be here.\"",
       "passageZh": "今天我們班上有一位新同學。老師把她介紹給我們。她的名字是 Nina，來自韓國。她會說三種語言。校刊的一位記者問了她一些問題。Nina 說：「謝謝，我很高興來到這裡。」",
       "questions": [
         {
@@ -448,6 +448,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（introduce）原位換成翻譯題，沿用題 id a1-u02-l03-q17；目標字沿用 introduce",
         "resolution": "改為 translate：promptZh「老師把新同學介紹給全班。」、hintWords [\"introduce\"]、referenceEn [\"The teacher introduces the new student to the class.\",\"The teacher introduced the new student to the class.\"]、rubricZh [\"introduce 後面接被介紹的人，介紹給誰用 to（例如 introduce the new student to the class）\",\"題目沒有時間，現在式或過去式（例如 introduces、introduced）都正確\"]（原 makeSentence：instructionZh「用 introduce 造一個句子，說你要把某個人介紹給大家。」、referenceEn [\"I want to introduce my friend Ken to everyone.\",\"Let me introduce my brother, Leo.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

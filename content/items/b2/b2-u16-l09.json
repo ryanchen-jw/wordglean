@@ -77,7 +77,7 @@
       "id": "b2-u16-l09-q06",
       "type": "wordCard",
       "word": "respiration",
-      "exampleEn": "The machine measures the rate of respiration of the plants in the lab.",
+      "exampleEn": "The machine measures the respiration rate of the plants in the lab.",
       "exampleZh": "那台儀器測量實驗室裡植物的呼吸速率。",
       "glossZh": "呼吸（作用）",
       "distractorsZh": [
@@ -142,7 +142,7 @@
       "id": "b2-u16-l09-q12",
       "type": "shadowing",
       "sentenceEn": "My sister is an incurable romantic who cries at every love story.",
-      "sentenceZh": "我姊姊是個無可救藥的浪漫派，看每部愛情故事都會哭。"
+      "sentenceZh": "我的姊妹是個無可救藥的浪漫派，看每部愛情故事都會哭。"
     },
     {
       "id": "b2-u16-l09-q13",
@@ -185,8 +185,8 @@
     {
       "id": "b2-u16-l09-q15",
       "type": "reading",
-      "passageEn": "Our health class this term, held in a cozy room on the top floor, looked at medicine through history. We learned how penicillin was discovered when a scientist noticed that something growing on a dish was killing germs. We also read about old remedies: people once rubbed strange ointments on their skin for every small malady. Our teacher explained respiration and how the lungs bring oxygen into the bloodstream. In another lesson, a guest speaker talked about eating problems such as bulimia and how researchers study them. We also discussed how many countries have banned corporal punishment in schools. Even my best friend, whose love of jokes is incurable, listened carefully. My only small complaint is the long reading list.",
-      "passageZh": "這學期的健康課在頂樓一間溫馨的教室上，從歷史的角度看醫學。我們學到盤尼西林是怎麼被發現的：一位科學家注意到培養皿上長出的東西殺死了細菌。我們也讀到古老的療法：以前的人一有小病小痛，就在皮膚上塗抹奇怪的藥膏。老師講解了呼吸作用，以及肺如何把氧氣送進血液。另一堂課，一位客座講者談到暴食症等飲食問題，以及研究人員如何研究它們。我們也討論了許多國家已經禁止學校體罰。就連我那個愛開玩笑到無可救藥的好朋友都聽得很專心。我唯一的小抱怨是書單太長。",
+      "passageEn": "Our health class this term, held in a cozy room on the top floor, looked at the history of medicine. We learned how penicillin was discovered when a scientist noticed that something growing on a dish was killing germs. We also read about old remedies: people once rubbed strange ointments on their skin for every small malady. Our teacher explained respiration and how the lungs bring oxygen into the bloodstream. In another lesson, a guest speaker talked about eating disorders such as bulimia and how researchers study them. We also discussed how many countries have banned corporal punishment in schools. Even my best friend, whose love of jokes is incurable, listened carefully. My only small complaint is the long reading list.",
+      "passageZh": "這學期的健康課在頂樓一間溫馨的教室上，探討醫學的歷史。我們學到盤尼西林是怎麼被發現的：一位科學家注意到培養皿上長出的東西殺死了細菌。我們也讀到古老的療法：以前的人一有小病小痛，就在皮膚上塗抹奇怪的藥膏。老師講解了呼吸作用，以及肺如何把氧氣送進血液。另一堂課，一位客座講者談到暴食症等飲食疾患，以及研究人員如何研究它們。我們也討論了許多國家已經禁止學校體罰。就連我那個愛開玩笑到無可救藥的好朋友都聽得很專心。我唯一的小抱怨是書單太長。",
       "questions": [
         {
           "questionZh": "盤尼西林是怎麼被發現的？",
@@ -595,6 +595,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（malady）原位換成翻譯題，沿用題 id b2-u16-l09-q17；目標字沿用 malady",
         "resolution": "改為 translate：promptZh「塞車是大城市的通病。」、hintWords [\"malady\"]、referenceEn [\"Traffic jams are a common malady of big cities.\",\"Heavy traffic is a malady that most big cities share.\"]、rubricZh [\"malady 這裡比喻「通病、弊病」（例如 a common malady of big cities 等）\",\"「塞車」可寫，例如 traffic jams、heavy traffic 等\"]（原 makeSentence：instructionZh「用 malady 造一個句子，比喻現代生活中的一個「通病」（例如熬夜、久坐不動）。」、referenceEn [\"I think staying up too late is a common malady among students.\",\"Being busy all the time is a malady of modern life.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

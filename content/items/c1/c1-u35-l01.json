@@ -98,11 +98,11 @@
     {
       "id": "c1-u35-l01-q08",
       "type": "listenChoice",
-      "audioEn": "On holiday, I rediscovered the joy of reading paper books.",
+      "audioEn": "On vacation, I rediscovered the joy of reading paper books.",
       "audioZh": "放假時，我重新發現了讀紙本書的樂趣。",
       "questionZh": "說話者放假時重新發現了什麼？",
       "options": [
-        "A new favorite café",
+        "A new favorite cafe",
         "A love of cooking with friends",
         "An old friend from primary school",
         "The joy of paper books"
@@ -162,7 +162,7 @@
     {
       "id": "c1-u35-l01-q13",
       "type": "reading",
-      "passageEn": "Seventy years ago, a small toy company in our town was a pioneer of plastic toys. Its first owner worked on the premise that children want toys they can build themselves. Later, the company faced criticism for the exploitation of cheap workers abroad and almost closed. A few years ago, the first owner's granddaughter took over. She rediscovered her grandfather's old notebooks and used his ideas to innovate again, this time with wooden toys and simple electronic gadgets. She also hired a trainer for the facilitation of design workshops with local children.",
+      "passageEn": "Seventy years ago, a small toy company in our town was a pioneer of plastic toys. Its first owner worked on the premise that children want toys they can build themselves. Later, the company faced criticism for the exploitation of cheap labor abroad and almost closed. A few years ago, the first owner's granddaughter took over. She rediscovered her grandfather's old notebooks and used his ideas to innovate again, this time with wooden toys and simple electronic gadgets. She also hired a trainer for the facilitation of design workshops with local children.",
       "passageZh": "七十年前，我們鎮上一家小玩具公司是塑膠玩具的先驅。第一任老闆的經營前提是：孩子想要可以自己組裝的玩具。後來，公司因為剝削海外廉價勞工而遭到批評，差點倒閉。幾年前，第一任老闆的孫女接手經營。她重新找到爺爺的舊筆記本，並用他的點子再次創新，這次做的是木製玩具和簡單的電子小玩意。她也聘請了一位培訓師，引導和當地孩子一起進行的設計工作坊。",
       "questions": [
         {
@@ -273,6 +273,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rediscover）原位換成翻譯題，沿用題 id c1-u35-l01-q15；目標字沿用 rediscover",
         "resolution": "改為 translate：promptZh「搬家時，她在箱子裡重新發現了小時候寫的日記。」、hintWords [\"rediscover\"]、referenceEn [\"While moving house, she rediscovered the diary she had written as a child.\",\"When she moved, she rediscovered her childhood diary in a box.\"]、rubricZh [\"「重新發現」用 rediscover（例如 rediscovered her diary 等）\",\"「小時候寫的日記」可寫，例如 the diary she had written as a child、her childhood diary 等\",\"說的是已發生的事，時態配合內容（例如 rediscovered 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 rediscover 造一個句子，說說你重新找回的一個興趣或東西。」、referenceEn [\"Last summer, I rediscovered my old guitar and started playing again.\",\"I rediscovered how much I enjoy swimming.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

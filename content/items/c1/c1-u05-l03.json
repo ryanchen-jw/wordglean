@@ -125,10 +125,10 @@
       "audioZh": "在這個小房間裡，歌手的聲音不需要擴音。",
       "questionZh": "為什麼歌手的聲音不需要擴音？",
       "options": [
-        "The microphone is broken.",
-        "She is tired.",
-        "The room is small.",
-        "Nobody listens."
+        "The microphone is broken",
+        "She is tired",
+        "The room is small",
+        "Nobody listens"
       ],
       "answer": 2
     },
@@ -185,7 +185,7 @@
     {
       "id": "c1-u05-l03-q15",
       "type": "reading",
-      "passageEn": "My uncle owns a farm of about fifty acres in the south. For years, people told him that small farms could not survive, and that refusing to grow rice was tantamount to giving up. He ignored them and planted fruit trees instead. His decision has amply paid off: his mangoes now sell in shops across the island. Last year, he embarked on a new plan to bulk up his income by adding a small cafe. On weekends, it holds small concerts that need no amplification. His energy seems inexhaustible; at seventy, he still starts work at five every morning.",
+      "passageEn": "My uncle owns a farm of about fifty acres in the south. For years, people told him that small farms could not survive, and that refusing to grow rice was tantamount to giving up. He ignored them and planted fruit trees instead. His decision has more than paid off: his mangoes now sell in shops across the island. Last year, he embarked on a new plan to increase his income by adding a small cafe. On weekends, it holds small concerts that need no amplification. His energy seems inexhaustible; at seventy, he still starts work at five every morning.",
       "passageZh": "我叔叔在南部有一座大約五十英畝的農場。多年來，大家都跟他說小農場撐不下去，不種稻米就等於放棄。他不理會這些話，改種果樹。他的決定得到了充分的回報：他的芒果現在在全島的商店都買得到。去年，他展開一項新計畫，加開一間小咖啡館來增加收入。週末時，咖啡館會舉辦不需要擴音的小型音樂會。他的精力似乎用不完；七十歲了，每天早上還是五點就開始工作。",
       "questions": [
         {
@@ -309,6 +309,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bulk up）原位換成翻譯題，沿用題 id c1-u05-l03-q17；目標字沿用 bulk up",
         "resolution": "改為 translate：promptZh「編輯請作者再多加幾個例子，讓這一章更充實。」、hintWords [\"bulk up\"]、referenceEn [\"The editor asked the writer to bulk up the chapter with more examples.\",\"The editor asked the author to add a few examples to bulk up the chapter.\"]、rubricZh [\"「讓⋯更充實」用 bulk up（例如 bulk up the chapter 等）\",\"「多加幾個例子」可寫，例如 with more examples、add a few more examples 等\",\"時態配合內容（例如 asked、asks 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 bulk up 造一個句子，說說你想讓自己的某樣東西（例如報告、簡報）變得更充實。」、referenceEn [\"I want to bulk up my presentation with a few more examples.\",\"I need to bulk up my report before the meeting on Friday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

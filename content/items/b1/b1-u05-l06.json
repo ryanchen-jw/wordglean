@@ -77,7 +77,7 @@
       "id": "b1-u05-l06-q06",
       "type": "wordCard",
       "word": "substantial",
-      "exampleEn": "She received a substantial pay rise this year.",
+      "exampleEn": "She received a substantial pay raise this year.",
       "exampleZh": "她今年加薪加了不少。",
       "glossZh": "大量的；可觀的",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "會議大約會開兩個小時，所以我們準時開始吧。",
       "questionZh": "會議大約會開多久？",
       "options": [
-        "Around two hours.",
-        "About one hour.",
-        "Exactly two hours.",
-        "About thirty minutes."
+        "Around two hours",
+        "About one hour",
+        "Exactly two hours",
+        "About thirty minutes"
       ],
       "answer": 0
     },
@@ -380,6 +380,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（minor）原位換成翻譯題，沿用題 id b1-u05-l06-q17；目標字沿用 minor",
         "resolution": "改為 translate：promptZh「這是一個不重要的細節，我們可以晚點再討論。」、hintWords [\"minor\"]、referenceEn [\"This is a minor detail, so we can talk about it later.\",\"It is only a minor detail. We can discuss it later.\"]、rubricZh [\"用 minor 表示「不重要的；較小的」（例如 a minor detail）\",\"「晚點再討論」可寫，例如 talk about it later、discuss it later 等\"]（原 makeSentence：instructionZh「用 minor 造一個句子，說說你最近遇到的一個小問題。」、referenceEn [\"I had a minor problem with my computer yesterday.\",\"There was a minor mistake in my report last week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

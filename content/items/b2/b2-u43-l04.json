@@ -115,7 +115,7 @@
     {
       "id": "b2-u43-l04-q09",
       "type": "listenType",
-      "sentenceEn": "It's irrational to worry about things you cannot change.",
+      "sentenceEn": "It's irrational to worry about things you can't change.",
       "sentenceZh": "為改變不了的事擔心是不理性的。"
     },
     {
@@ -410,6 +410,12 @@
         "message": "執行長裁示：第③關：FIX 要點第 1、3 條互相矛盾（收現在完成式又規定過去式）；「以為我在不高興」不通順",
         "resolution": "改為 promptZh「她誤會了我說的話，以為我不高興。」、referenceEn [\"She misunderstood what I said and thought I was upset.\",\"She misunderstood my words and thought that I was unhappy.\"]、rubricZh [\"時態可用過去式或現在完成式（例如 misunderstood what I said、has misunderstood me 等）\",\"「不高興」可寫，例如 upset、unhappy、angry 等\",\"後半句時態配合前半句（例如 thought I was upset、thinks I'm upset 等）\"]（原 promptZh「她誤會了我說的話，以為我在不高興。」、referenceEn [\"She misunderstood what I said and thought I was upset.\",\"She misunderstood my words and thought that I was unhappy.\"]、rubricZh [\"時態可用過去式或現在完成式（例如 misunderstood what I said、has misunderstood me 等）\",\"「不高興」可寫，例如 upset、unhappy、angry 等\",\"用過去式（例如 thought、was 等）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

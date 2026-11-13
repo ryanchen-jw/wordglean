@@ -40,8 +40,8 @@
       "id": "b2-u20-l02-q03",
       "type": "wordCard",
       "word": "domestic",
-      "exampleEn": "Domestic flights leave from the smaller building next to the main airport.",
-      "exampleZh": "國內航班從主機場旁邊較小的航廈出發。",
+      "exampleEn": "Domestic flights leave from the smaller terminal next to the main one.",
+      "exampleZh": "國內航班從主航廈旁邊較小的航廈出發。",
       "glossZh": "國內的；家庭的",
       "distractorsZh": [
         "國際的",
@@ -92,7 +92,7 @@
       "id": "b2-u20-l02-q07",
       "type": "wordCard",
       "word": "headquarters",
-      "exampleEn": "The headquarters of the football club has a small museum.",
+      "exampleEn": "The headquarters of the soccer club has a small museum.",
       "exampleZh": "那支足球俱樂部的總部有一間小博物館。",
       "glossZh": "總部；總公司",
       "distractorsZh": [
@@ -200,7 +200,7 @@
     {
       "id": "b2-u20-l02-q16",
       "type": "reading",
-      "passageEn": "When my company moved its headquarters from the capital to a small town in the western part of the country, many staff were worried. They were used to urban life, with cafés, malls and the underground. But the local community welcomed us warmly. Neighbors invited us to sit on their porches and share cakes they had baked. Life in this rural area is slower, and some colleagues missed city shopping at first. Still, most of us now enjoy the clean air and quiet roads. Our manager, a well-educated and patient woman, says the move has also helped the company win more domestic customers in this province.",
+      "passageEn": "When my company moved its headquarters from the capital to a small town in the western part of the country, many staff were worried. They were used to urban life, with cafes, malls and the subway. But the local community welcomed us warmly. Neighbors invited us to sit on their porches and share cakes they had baked. Life in this rural area is slower, and some colleagues missed city shopping at first. Still, most of us now enjoy the clean air and quiet roads. Our manager, a well-educated and patient woman, says the move has also helped the company win more domestic customers in this province.",
       "passageZh": "我們公司把總部從首都搬到國家西部的一個小鎮時，很多員工都很擔心。大家習慣了都市生活，有咖啡館、購物中心和地鐵。不過，當地居民熱情地歡迎我們。鄰居邀我們坐在他們的門廊上，分享他們烤的蛋糕。這個鄉村地區的生活步調比較慢，一開始有些同事很懷念在城市購物。不過，現在我們大多數人都很享受乾淨的空氣和安靜的道路。我們的經理受過良好教育又很有耐心，她說這次搬遷也幫公司在這個省爭取到更多國內客戶。",
       "questions": [
         {
@@ -335,6 +335,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（community）原位換成翻譯題，沿用題 id b2-u20-l02-q18；目標字沿用 community",
         "resolution": "改為 translate：promptZh「社區居民一起把那座舊公園打掃乾淨了。」、hintWords [\"community\"]、referenceEn [\"The local community cleaned up the old park together.\",\"People in the community worked together to clean up the old park.\"]、rubricZh [\"community 指地方居民、社區（例如 the local community、people in the community 等）\",\"時態可用過去式或現在完成式（例如 cleaned up、have cleaned up 等）\",\"「打掃乾淨」可寫，例如 clean up、tidy up 等\"]（原 makeSentence：instructionZh「用 community 造一個句子，說說你住的地方居民之間的互動。」、referenceEn [\"The community in my area holds a market every Sunday.\",\"I feel part of the community because my neighbors often help each other.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -149,27 +149,27 @@
     {
       "id": "a2-u16-l02-q13",
       "type": "mcq",
-      "stemEn": "Every four years, athletes from around the world meet at the ____ Games.",
-      "stemZh": "每四年，全世界的運動員會在奧運會相聚。",
+      "stemEn": "She won a gold ____ in swimming.",
+      "stemZh": "她在游泳項目贏得一面金牌。",
       "options": [
-        "local",
-        "Olympic",
-        "national",
-        "small"
+        "winner",
+        "medal",
+        "championship",
+        "national"
       ],
       "optionGlossZh": [
-        "地方的",
-        "奧林匹克的",
-        "全國的",
-        "小的"
+        "優勝者",
+        "獎牌",
+        "錦標賽",
+        "全國的"
       ],
       "answer": 1
     },
     {
       "id": "a2-u16-l02-q14",
       "type": "mcq",
-      "stemEn": "She won the ____ for best movie of the year.",
-      "stemZh": "她贏得了年度最佳電影獎。",
+      "stemEn": "She won the ____ for best singer of the year.",
+      "stemZh": "她贏得了年度最佳歌手獎。",
       "options": [
         "hockey",
         "award",
@@ -332,6 +332,24 @@
         "message": "執行長裁示：第③關：SUS 與同課 q16「He won the swimming championship.」同為「主詞＋won＋比賽成績」，換情境與句型（§12.3）",
         "resolution": "promptZh 改為 「他把獎牌拿給爸媽看。」（原 「我們學校在這次比賽中得到三面獎牌。」）；referenceEn 改為 [\"He showed the medal to his parents.\",\"He showed his parents his medal.\"]（原 [\"Our school won three medals in the competition.\",\"Our school got three medals at the competition.\"]）；rubricZh 改為 [\"用 medal 表示「獎牌」\",\"可寫，例如 showed the medal to his parents、showed his parents the medal 等\",\"時態可用過去式或現在完成式（例如 showed、has shown 等）\"]（原 [\"用 medal 表示「獎牌」，三面用複數（例如 three medals）\",\"過去的事用過去式（例如 won、got 等）\",\"「在比賽中」可寫，例如 in the competition、at the competition 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemEn（題庫外問題）、stemZh（題庫外問題）、options（題庫外問題）、optionGlossZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemEn（題庫外問題）、stemZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:43:09Z"
       }
     ]
   }

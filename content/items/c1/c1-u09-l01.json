@@ -84,8 +84,8 @@
       "id": "c1-u09-l01-q06",
       "type": "wordCard",
       "word": "offspring",
-      "exampleEn": "My parents are proud of all four of their offspring.",
-      "exampleZh": "我爸媽以他們的四個子女為榮。",
+      "exampleEn": "Most parents want a better life for their offspring.",
+      "exampleZh": "大多數父母都希望子女過更好的生活。",
       "glossZh": "子女；後代",
       "distractorsZh": [
         "祖先",
@@ -359,6 +359,12 @@
         "message": "執行長裁示：第③關：c1-u09-l01-q18 FIX 「請繫好安全帶」是航空公司規定句（§11.21），改成不涉及規定的情境",
         "resolution": "改為 promptZh \"飛機開始下降時，我們從窗戶看到了整座城市的燈光。\"、referenceEn [\"As the plane began its descent, we could see the lights of the whole city.\",\"We saw the city lights through the window as the plane started its descent.\"]、rubricZh [\"「下降」用名詞 descent（例如 began its descent、started its descent 等）\",\"「從窗戶看到」可寫，例如 could see…、saw…through the window 等\",\"時態配合內容（例如 began、started 等）；過去式、現在完成式都正確\"]（原 promptZh \"飛機開始下降時，請繫好安全帶。\"、referenceEn [\"Please fasten your seat belt when the plane begins its descent.\",\"When the plane starts its descent, please fasten your seat belt.\"]、rubricZh [\"「下降」用名詞 descent（例如 begins its descent、starts its descent 等）\",\"「繫好安全帶」可寫，例如 fasten your seat belt、put on your seat belt 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

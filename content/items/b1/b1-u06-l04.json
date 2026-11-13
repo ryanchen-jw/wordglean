@@ -127,10 +127,10 @@
       "audioZh": "我擔心我們派對的椅子不夠。",
       "questionZh": "說話者擔心什麼？",
       "options": [
-        "Not enough food.",
-        "The cost of the chairs.",
-        "Missing the party.",
-        "Too few seats."
+        "Not enough food",
+        "The cost of the chairs",
+        "Missing the party",
+        "Too few seats"
       ],
       "answer": 3
     },
@@ -187,7 +187,7 @@
     {
       "id": "b1-u06-l04-q15",
       "type": "reading",
-      "passageEn": "Ms. Lu runs a small language school. She is concerned that many students forget new words quickly. She believes the first week of learning a word is critical. One option she tried was to define each new word simply and then show a real object. Another was to show the relation between new words and old ones. Her students now remember words much better, and their test results have improved steadily. She can even recall the day one shy student said a whole sentence. Now she sees the possibility of opening a second school.",
+      "passageEn": "Ms. Lu runs a small language school. She is concerned that many students forget new words quickly. She believes the first week of learning a word is critical. One option she tried was to define each new word simply and then show a real object. Another was to show the relation between new words and old ones. Her students now remember words much better, and their test results have improved steadily. She can still recall the day one shy student first said a whole sentence. Now she sees the possibility of opening a second school.",
       "passageZh": "呂老師經營一間小型語言學校。她擔心很多學生很快就忘了新單字。她認為學一個字的第一週非常關鍵。她試過的一個方法，是先簡單定義每個新字，再拿出真實的物品給學生看；另一個方法是讓學生看出新字和舊字之間的關聯。她的學生現在記單字記得好多了，考試成績也穩定進步。她甚至還記得有個害羞的學生第一次說出完整句子的那一天。現在，她看到了開第二間學校的可能性。",
       "questions": [
         {
@@ -381,6 +381,18 @@
         "message": "執行長裁示：第③關：SUS 與 u13-l02 跟讀「The restaurant has a vegetarian menu with many choices.」意思幾乎相同",
         "resolution": "改為 promptZh「我們還有其他選擇嗎？」、referenceEn [\"Do we have any other options?\",\"Are there any other options?\"]、rubricZh [\"用 option 的複數表示「選擇」（例如 other options；寫 choices 也正確）\"]（原 promptZh「這家餐廳有很多素食的選擇。」、referenceEn [\"This restaurant has many vegetarian options.\",\"There are a lot of vegetarian options at this restaurant.\"]、rubricZh [\"用 option 的複數表示「選擇」（例如 many vegetarian options）\",\"「素食的」可寫，例如 vegetarian、meat-free 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -115,8 +115,8 @@
     {
       "id": "b2-u13-l03-q09",
       "type": "listenType",
-      "sentenceEn": "Please roll up your cuffs before you wash the dishes.",
-      "sentenceZh": "洗碗之前，請把袖口捲起來。"
+      "sentenceEn": "Roll up your sleeves before you wash the dishes, or your cuffs will get wet.",
+      "sentenceZh": "洗碗之前先把袖子捲起來，不然袖口會弄濕。"
     },
     {
       "id": "b2-u13-l03-q10",
@@ -386,6 +386,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ornament）原位換成翻譯題，沿用題 id b2-u13-l03-q17；目標字沿用 ornament",
         "resolution": "改為 translate：promptZh「她把一個小玻璃擺飾放在窗邊。」、hintWords [\"ornament\"]、referenceEn [\"She put a small glass ornament by the window.\",\"She placed a little glass ornament next to the window.\"]、rubricZh [\"ornament 指「擺飾、裝飾品」（例如 a small glass ornament 等）\",\"「放在窗邊」可寫，例如 by the window、next to the window 等\",\"時態可用過去式或現在完成式（例如 put、has put 等）\"]（原 makeSentence：instructionZh「用 ornament 造一個句子，說說你家或辦公室裡的一件擺飾。」、referenceEn [\"I have a small wooden ornament shaped like a cat on my desk.\",\"My mother hangs colorful ornaments in the window every winter.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

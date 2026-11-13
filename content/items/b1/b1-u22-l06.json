@@ -125,10 +125,10 @@
       "audioZh": "這場魔術表演是給孩子看的，所以下午四點開始。",
       "questionZh": "魔術表演幾點開始？",
       "options": [
-        "At four in the morning.",
+        "At four in the morning",
         "At four p.m.",
-        "At ten in the morning.",
-        "At seven in the evening."
+        "At ten in the morning",
+        "At seven in the evening"
       ],
       "answer": 1
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u22-l06-q15",
       "type": "reading",
-      "passageEn": "Last weekend, our town held a music and story festival. A magician did tricks with cards, and a storyteller dressed as a wizard told tales about magic animals. Later, a young band played on the main stage. The guitarist and the flute player were only fifteen, and a girl played the trumpet. Many teenagers came to see a pop singer who is their idol. Parents bought souvenirs, and in the evening, an outdoor cinema showed a thriller for older visitors.",
+      "passageEn": "Last weekend, our town held a music and story festival. A magician did tricks with cards, and a storyteller dressed as a wizard told tales about magic animals. Later, a young band played on the main stage. The guitarist and the flute player were only fifteen, and a girl played the trumpet. Many teenagers came to see a pop singer who is their idol. Parents bought souvenirs, and in the evening, an outdoor movie theater showed a thriller for older visitors.",
       "passageZh": "上週末，我們鎮上辦了一場音樂與故事節。一位魔術師用撲克牌變魔術，一位打扮成巫師的說故事人講了魔法動物的故事。後來，一支年輕樂團在主舞台演出。吉他手和吹長笛的團員都只有十五歲，還有一個女生吹小號。很多青少年來看他們的偶像——一位流行歌手。家長們買了紀念品，晚上戶外電影院為年紀較大的觀眾放映了一部驚悚片。",
       "questions": [
         {
@@ -397,6 +397,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（idol）原位換成翻譯題，沿用題 id b1-u22-l06-q17；目標字沿用 idol",
         "resolution": "改為 translate：promptZh「那位歌手是很多年輕人的偶像。」、hintWords [\"idol\"]、referenceEn [\"That singer is an idol to many young people.\",\"That singer is the idol of many young people.\"]、rubricZh [\"用 idol 表示「偶像」（例如 an idol to…、the idol of… 等）\"]（原 makeSentence：instructionZh「用 idol 造一個句子，說說你現在或小時候的偶像。」、referenceEn [\"My idol is a famous tennis player.\",\"When I was young, my idol was a singer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

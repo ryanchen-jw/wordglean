@@ -109,7 +109,7 @@
       "id": "a2-u23-l05-q09",
       "type": "listenChoice",
       "audioEn": "I can't concentrate because my brother is playing music.",
-      "audioZh": "我沒辦法專心，因為我弟弟在放音樂。",
+      "audioZh": "我沒辦法專心，因為我的兄弟在放音樂。",
       "questionZh": "說話的人為什麼沒辦法專心？",
       "options": [
         "The speaker is very hungry",
@@ -153,7 +153,7 @@
       "id": "a2-u23-l05-q13",
       "type": "mcq",
       "stemEn": "My brother and I often ____ about what to watch on TV.",
-      "stemZh": "我和哥哥常常為了看什麼電視意見不合。",
+      "stemZh": "我和我的兄弟常常為了看什麼電視意見不合。",
       "options": [
         "concentrate",
         "fault",
@@ -322,6 +322,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fault）原位換成翻譯題，沿用題 id a2-u23-l05-q16；目標字沿用 fault",
         "resolution": "改為 translate：promptZh「我們遲到是我的錯。」、hintWords [\"fault\"]、referenceEn [\"It is my fault that we are late.\",\"It's my fault we're late.\"]、rubricZh [\"用 fault 表示「過錯」（例如 It is my fault）\",\"時態可用現在式或過去式（例如 are late、were late 等）\",\"fault 後面的 that 可加可省略\"]（原 makeSentence：instructionZh「用 fault 造一個句子，說說某件事是誰的錯，或安慰別人那不是他的錯。」、referenceEn [\"It was my fault that we were late.\",\"The accident was not the driver's fault.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

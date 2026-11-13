@@ -105,7 +105,7 @@
       "word": "rubbish",
       "exampleEn": "Please put your rubbish in the bin.",
       "exampleZh": "請把垃圾丟進垃圾桶。",
-      "glossZh": "垃圾；廢話",
+      "glossZh": "垃圾；廢話；（英式）",
       "distractorsZh": [
         "食物",
         "零錢",
@@ -125,10 +125,10 @@
       "audioZh": "水壺的水開了，我現在來泡茶。",
       "questionZh": "說話者現在要做什麼？",
       "options": [
-        "Buy a new kettle.",
-        "Wash the tea cups.",
-        "Prepare some tea.",
-        "Go to bed."
+        "Buy a new kettle",
+        "Wash the tea cups",
+        "Prepare some tea",
+        "Go to bed"
       ],
       "answer": 2
     },
@@ -186,10 +186,10 @@
       "id": "b1-u11-l08-q15",
       "type": "reading",
       "passageEn": "Living with my brother is not always easy. He is quite careless: he leaves his rubbish everywhere and never washes the kettle. Last week, he used my new sponge to clean his bike! Then he had the gall to say it was my fault for leaving it in the bathroom. He also forgets to buy toothpaste. But he has good points too. Every night, he puts a glass of water on my bedside table, and in winter he knits warm hats for us both.",
-      "passageZh": "和我哥哥一起住不見得輕鬆。他相當粗心：垃圾到處亂丟，也從不洗水壺。上星期，他竟然用我的新海綿洗他的腳踏車！接著還好意思說，是我自己把海綿放在浴室裡的錯。他也老是忘了買牙膏。不過他也有優點：每天晚上，他都會在我的床頭櫃上放一杯水，冬天還會幫我們兩個織保暖的帽子。",
+      "passageZh": "和我的兄弟一起住不見得輕鬆。他相當粗心：垃圾到處亂丟，也從不洗水壺。上星期，他竟然用我的新海綿洗他的腳踏車！接著還好意思說，是我自己把海綿放在浴室裡的錯。他也老是忘了買牙膏。不過他也有優點：每天晚上，他都會在我的床頭櫃上放一杯水，冬天還會幫我們兩個織保暖的帽子。",
       "questions": [
         {
-          "questionZh": "哥哥用作者的新海綿做什麼？",
+          "questionZh": "作者的兄弟用作者的新海綿做什麼？",
           "options": [
             "洗廚房的碗",
             "洗整間浴室",
@@ -199,7 +199,7 @@
           "answer": 3
         },
         {
-          "questionZh": "哥哥每天晚上為作者做什麼？",
+          "questionZh": "作者的兄弟每天晚上為作者做什麼？",
           "options": [
             "泡一壺茶",
             "幫作者洗碗",
@@ -494,6 +494,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（knit）原位換成翻譯題，沿用題 id b1-u11-l08-q17；目標字沿用 knit",
         "resolution": "改為 translate：promptZh「我姊姊正在幫她的寶寶織一件毛衣。」、hintWords [\"knit\"]、referenceEn [\"My sister is knitting a sweater for her baby.\",\"My older sister is knitting her baby a sweater.\"]、rubricZh [\"用 knit 表示「編織」（例如 is knitting a sweater）\",\"「毛衣」可寫，例如 sweater、jumper 等\"]（原 makeSentence：instructionZh「用 knit 造一個句子，說說你或家人會不會織東西。」、referenceEn [\"My mother can knit a scarf in two days.\",\"I want to learn how to knit.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

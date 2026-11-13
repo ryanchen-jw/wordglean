@@ -125,10 +125,10 @@
       "audioZh": "十點時，市長會在圖書館的開幕式上演講。",
       "questionZh": "誰會發表演說？",
       "options": [
-        "A young student.",
-        "The head of the new library.",
-        "A famous writer from the city.",
-        "The city's leader."
+        "A young student",
+        "The head of the new library",
+        "A famous writer from the city",
+        "The city's leader"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u34-l01-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, a new sports center had its opening with a children's race. Before the race, the coach told everyone to stretch their legs. Her aim was simple: every child should enjoy the run. One boy, who was ill last year, had acquired new skills and finished the whole race. It was a great achievement for him. The local organization that planned the race did not waste any water: bottles were filled from a fountain where clean water flows all day. Some kids were exposed to strong sun, so volunteers gave out hats.",
-      "passageZh": "上週六，一座新的運動中心以一場兒童賽跑開幕。賽前，教練要大家先伸展雙腿。她的目標很簡單：讓每個孩子都享受跑步。有一個去年生病的男孩，學會了新的技巧，還跑完了全程，這對他來說是很大的成就。負責這場比賽的地方組織完全沒有浪費水：瓶子都在一座整天流著乾淨水的噴泉裝水。有些孩子曬到了強烈的陽光，所以志工發了帽子。",
+      "passageEn": "Last Saturday, a new sports center had its opening with a children's race. Before the race, the coach told everyone to stretch their legs. Her aim was simple: every child should enjoy the run. One boy, who was ill last year, had acquired new skills and finished the whole race. It was a great achievement for him. The local organization that planned the race did not waste any plastic: everyone filled their bottles at a fountain where clean water flows all day. Some kids were exposed to strong sun, so volunteers gave out hats.",
+      "passageZh": "上週六，一座新的運動中心以一場兒童賽跑開幕。賽前，教練要大家先伸展雙腿。她的目標很簡單：讓每個孩子都享受跑步。有一個去年生病的男孩，學會了新的技巧，還跑完了全程，這對他來說是很大的成就。負責這場比賽的地方組織完全沒有浪費塑膠：大家都在一座整天流著乾淨水的噴泉替自己的水瓶裝水。有些孩子曬到了強烈的陽光，所以志工發了帽子。",
       "questions": [
         {
           "questionZh": "教練的目標是什麼？",
@@ -366,6 +366,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（acquire）原位換成翻譯題，沿用題 id b1-u34-l01-q17；目標字沿用 acquire",
         "resolution": "改為 translate：promptZh「她在國外工作時學會了很多新技能。」、hintWords [\"acquire\"]、referenceEn [\"She acquired many new skills while working abroad.\",\"She acquired a lot of new skills when she worked abroad.\"]、rubricZh [\"用 acquire 表示「習得」（例如 acquired new skills；寫 learned 也正確）\"]（原 makeSentence：instructionZh「用 acquire 造一個句子，說說你最近學到或想學的一項技能。」、referenceEn [\"I acquired some cooking skills during the holidays.\",\"I want to acquire a new skill this year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

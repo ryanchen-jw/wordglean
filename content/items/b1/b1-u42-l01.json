@@ -125,10 +125,10 @@
       "audioZh": "我們隊得了銅牌，也就是第三名。",
       "questionZh": "他們得了第幾名？",
       "options": [
-        "Third, with no medal.",
-        "First, with a gold medal.",
-        "Second, with a silver medal.",
-        "Behind two other teams."
+        "Third, with no medal",
+        "First, with a gold medal",
+        "Second, with a silver medal",
+        "Behind two other teams"
       ],
       "answer": 3
     },
@@ -409,6 +409,12 @@
         "message": "執行長裁示：第③關：SUS 中文沒有時間詞、可讀成一般情況，兩個參考答案都是過去式",
         "resolution": "改為 referenceEn [\"A newborn horse walks in an awkward way.\",\"The newborn horse's steps were awkward.\"]（原 referenceEn [\"The newborn horse walked in an awkward way.\",\"The newborn horse's steps were awkward.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

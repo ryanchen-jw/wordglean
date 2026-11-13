@@ -125,10 +125,10 @@
       "audioZh": "我壓力好大，電腦壞了，報告明天就要交。",
       "questionZh": "說話者為什麼覺得壓力大？",
       "options": [
-        "A broken computer and a report deadline.",
-        "A friend is moving to another country soon.",
-        "The report was due yesterday.",
-        "The weather is too hot."
+        "A broken computer and a report deadline",
+        "A friend is moving to another country soon",
+        "The report was due yesterday",
+        "The weather is too hot"
       ],
       "answer": 0
     },
@@ -234,7 +234,7 @@
         "stressed"
       ],
       "referenceEn": [
-        "The exams are coming, and many students are stressed.",
+        "The exams are coming soon, and many students are stressed.",
         "With exams coming soon, a lot of students feel stressed."
       ],
       "rubricZh": [
@@ -450,6 +450,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stressed）原位換成翻譯題，沿用題 id b1-u43-l09-q17；目標字沿用 stressed",
         "resolution": "改為 translate：promptZh「考試快到了，很多學生都很緊張。」、hintWords [\"stressed\"]、referenceEn [\"The exams are coming, and many students are stressed.\",\"With exams coming soon, a lot of students feel stressed.\"]、rubricZh [\"用 stressed 表示「有壓力的；緊張的」（例如 are stressed、feel stressed 等）\"]（原 makeSentence：instructionZh「用 stressed 造一個句子，說說什麼讓你覺得有壓力。」、referenceEn [\"I feel stressed when I'm late for something.\",\"I was stressed before my piano contest.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

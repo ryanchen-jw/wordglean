@@ -115,7 +115,7 @@
     {
       "id": "c1-u11-l01-q09",
       "type": "listenType",
-      "sentenceEn": "The tailor made my trousers shorter in just one day.",
+      "sentenceEn": "The tailor made my pants shorter in just one day.",
       "sentenceZh": "裁縫只花一天就把我的褲子改短了。"
     },
     {
@@ -301,6 +301,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（gem）原位換成翻譯題，沿用題 id c1-u11-l01-q17；目標字沿用 gem",
         "resolution": "改為 translate：promptZh「這家小餐館是當地人才知道的私房好店。」、hintWords [\"gem\"]、referenceEn [\"This small restaurant is a hidden gem that only local people know about.\",\"Only locals know about this little restaurant; it's a real gem.\"]、rubricZh [\"「私房好店」用 gem，例如 a hidden gem、a real gem 等\",\"「當地人」可寫，例如 local people、locals 等\"]（原 makeSentence：instructionZh「用 gem 造一個句子，介紹一個你覺得是「寶」的地方或東西。」、referenceEn [\"This small bookshop is a hidden gem in my neighborhood.\",\"My grandmother's old recipe book is a real gem.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

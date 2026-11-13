@@ -108,7 +108,7 @@
       "word": "whilst",
       "exampleEn": "Never use your phone whilst driving.",
       "exampleZh": "開車的時候，絕對不要用手機。",
-      "glossZh": "當⋯時；而、然而（英式）",
+      "glossZh": "當⋯時；而、然而；（英式）",
       "distractorsZh": [
         "因為",
         "除非",
@@ -154,10 +154,10 @@
       "audioZh": "車站裡一片吵雜，Tom 聽不到關於他那班火車的廣播。",
       "questionZh": "Tom 為什麼聽不到廣播？",
       "options": [
-        "His phone was off.",
-        "It was far too noisy.",
-        "He was asleep.",
-        "He arrived late."
+        "His phone was off",
+        "It was far too noisy",
+        "He was asleep",
+        "He arrived late"
       ],
       "answer": 1
     },
@@ -196,7 +196,7 @@
       "id": "c1-u01-l01-q16",
       "type": "mcq",
       "stemEn": "____ the heavy rain, thousands of fans waited patiently outside the stadium.",
-      "stemZh": "儘管下著大雨，仍有數千人在體育場外耐心等候。",
+      "stemZh": "儘管下著大雨，仍有數千名球迷在體育場外耐心等候。",
       "options": [
         "Regarding",
         "Instead of",
@@ -214,7 +214,7 @@
     {
       "id": "c1-u01-l01-q17",
       "type": "reading",
-      "passageEn": "Mia runs a small bakery in a busy part of town. Her customers are principally office workers who stop by on their way to work. Last month, amid the morning rush, one of her ovens suddenly stopped working. Mia stayed calm. Whilst her assistant served the waiting customers, she called a repair company. The man from the repair company explained that old ovens are apt to break down when they are used all day without a rest. He fixed it within an hour. Since then, Mia has had her ovens checked every three months. Hence, she has had no further problems. She also tells customers beforehand whenever she plans to close the shop for repairs.",
+      "passageEn": "Mia runs a small bakery in a busy part of town. Her customers are principally office workers who stop by on their way to work. Last month, amid the morning rush, one of her ovens suddenly stopped working. Mia stayed calm. Whilst her assistant served the waiting customers, she called a repair company. The man from the repair company explained that old ovens are apt to break down when they are used all day without a break. He fixed it within an hour. Since then, Mia has had her ovens checked every three months. Hence, she has had no further problems. She also tells customers beforehand whenever she plans to close the shop for repairs.",
       "passageZh": "Mia 在城裡熱鬧的地段經營一家小麵包店。她的客人主要是上班途中順路進來的上班族。上個月，正值早上的尖峰時段，她的一台烤箱突然停止運轉。Mia 保持冷靜。她的助手招呼等候的客人時，她打電話給修理公司。修理公司派來的人解釋說，舊烤箱整天不停使用的話，很容易故障。他在一小時內就修好了。從那之後，Mia 每三個月請人檢查一次烤箱，因此再也沒出過問題。每當她打算關店維修時，也會事先告知客人。",
       "questions": [
         {
@@ -338,6 +338,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（apt to）原位換成翻譯題，沿用題 id c1-u01-l01-q19；目標字沿用 apt to",
         "resolution": "改為 translate：promptZh「這台舊印表機在潮濕的天氣裡容易故障。」、hintWords [\"apt to\"]、referenceEn [\"This old printer is apt to break down in wet weather.\",\"The old printer is apt to stop working when the weather is damp.\"]、rubricZh [\"「容易⋯」用 be apt to＋原形動詞（例如 is apt to break down 等）\",\"「故障」可寫，例如 break down、stop working 等\",\"「潮濕的天氣」可寫，例如 wet weather、damp weather、when it is wet 等\"]（原 makeSentence：instructionZh「用 be apt to 造一個句子，說說你自己容易發生的某個習慣或狀況。」、referenceEn [\"I am apt to forget my keys when I leave home in a hurry.\",\"I am apt to talk too fast when I feel nervous.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

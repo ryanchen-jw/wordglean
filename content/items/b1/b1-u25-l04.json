@@ -125,10 +125,10 @@
       "audioZh": "教授關於核能的演講換到比較大的教室，因為報名的學生多了很多。",
       "questionZh": "演講為什麼換教室？",
       "options": [
-        "The lights are broken.",
-        "The old room is being painted this week.",
-        "Lots more people want to attend.",
-        "Not many students signed up."
+        "The lights are broken",
+        "The old room is being painted this week",
+        "Lots more people want to attend",
+        "Not many students signed up"
       ],
       "answer": 2
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u25-l04-q15",
       "type": "reading",
-      "passageEn": "This term, our university invited a famous researcher to give talks about nuclear power. In her first talk, she explained some basic terms. Then she showed us computer graphics of how a nuclear power station works. She also told us about her investigation into safer ways to keep nuclear waste. Our professor said she uses a special technique in the lab to examine materials. At the end, she put the students' questions into three categories and answered them one by one.",
+      "passageEn": "This term, our university invited a famous researcher to give talks about nuclear power. In her first talk, she explained some basic terms. Then she showed us computer graphics of how a nuclear power station works. She also told us about her investigation into safer ways to keep nuclear waste. Our professor said she uses a special technique in the lab to examine materials. At the end of the talk, she put the students' questions into three categories and answered them one by one.",
       "passageZh": "這學期，我們大學邀請了一位知名的研究人員來演講，主題是核能。在第一場演講中，她解釋了一些基本術語。接著她用電腦圖像讓我們看核電廠怎麼運作。她也談到她的調查，內容是更安全地存放核廢料的方法。我們教授說，她在實驗室用一種特別的技術來檢驗材料。最後，她把學生的問題分成三類，一個一個回答。",
       "questions": [
         {
@@ -313,6 +313,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（term）原位換成翻譯題，沿用題 id b1-u25-l04-q17；目標字沿用 term",
         "resolution": "改為 translate：promptZh「這本書用了很多電腦術語，很難懂。」、hintWords [\"term\"]、referenceEn [\"This book uses a lot of computer terms, so it is hard to understand.\",\"This book is hard to understand because it uses many computer terms.\"]、rubricZh [\"用 term 的複數表示「術語」（例如 computer terms）\",\"「很難懂」可寫，例如 hard to understand、difficult to follow 等\"]（原 makeSentence：instructionZh「用 term 造一個句子，說說你這學期的計畫。」、referenceEn [\"This term, I want to read more books in the library.\",\"I am taking an art class this term.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

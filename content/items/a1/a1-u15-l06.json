@@ -66,7 +66,7 @@
       "id": "a1-u15-l06-q05",
       "type": "wordCard",
       "word": "bee",
-      "exampleEn": "A bee is on the flower.",
+      "exampleEn": "There is a bee on the flower.",
       "exampleZh": "一隻蜜蜂停在花上。",
       "glossZh": "蜜蜂",
       "distractorsZh": [
@@ -173,8 +173,8 @@
     {
       "id": "a1-u15-l06-q14",
       "type": "reading",
-      "passageEn": "Today, Jenny's class goes to the zoo. First, they see a lion. It is big, and it is sleeping. Then they see some snakes. Jenny is afraid of them. After that, they visit a small farm in the zoo. There are pigs, sheep, and rabbits. Jenny loves the white rabbit.",
-      "passageZh": "今天 Jenny 的班級去動物園。他們先看到一隻獅子，牠很大，正在睡覺。接著他們看到幾條蛇，Jenny 很怕牠們。之後，他們去參觀動物園裡的小農場，那裡有豬、羊和兔子。Jenny 很喜歡那隻白兔。",
+      "passageEn": "Today, Jenny's class goes to the zoo. First, they see a lion. It is big, and it is sleeping. Then they see some snakes. Jenny is afraid of them. After that, they visit a small farm in the zoo. There are pigs, sheep, and rabbits. Jenny loves a little white rabbit.",
+      "passageZh": "今天 Jenny 的班級去動物園。他們先看到一隻獅子，牠很大，正在睡覺。接著他們看到幾條蛇，Jenny 很怕牠們。之後，他們去參觀動物園裡的小農場，那裡有豬、羊和兔子。Jenny 很喜歡其中一隻小白兔。",
       "questions": [
         {
           "questionZh": "Jenny 害怕什麼動物？",
@@ -311,6 +311,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lion）原位換成翻譯題，沿用題 id a1-u15-l06-q16；目標字沿用 lion",
         "resolution": "改為 translate：promptZh「那隻獅子在睡覺。」、hintWords [\"lion\"]、referenceEn [\"That lion is sleeping.\",\"The lion is sleeping.\"]、rubricZh [\"「在睡覺」用現在進行式（例如 is sleeping）\",\"「那隻獅子」可寫，例如 that lion、the lion 等\"]（原 makeSentence：instructionZh「用 lion 造一個句子，說說獅子的樣子，或你在哪裡看過獅子。」、referenceEn [\"A lion is big and strong.\",\"I saw a lion at the zoo.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

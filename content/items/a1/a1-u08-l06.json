@@ -172,7 +172,7 @@
       "id": "a1-u08-l06-q14",
       "type": "reading",
       "passageEn": "Every Sunday morning, my family has a big breakfast. My mother makes bread, and my father cooks potatoes and eggs. We put butter and cheese on the bread. My parents drink tea, and my brother and I drink milk.",
-      "passageZh": "每個星期天早上，我們家都會吃一頓豐盛的早餐。我媽媽做麵包，我爸爸煮馬鈴薯和蛋。我們在麵包上塗奶油、放起司。我爸媽喝茶，我和我哥哥喝牛奶。",
+      "passageZh": "每個星期天早上，我們家都會吃一頓豐盛的早餐。我媽媽做麵包，我爸爸煮馬鈴薯和蛋。我們在麵包上塗奶油、放起司。我爸媽喝茶，我和我的兄弟喝牛奶。",
       "questions": [
         {
           "questionZh": "爸爸做什麼？",
@@ -219,7 +219,7 @@
         "tea"
       ],
       "referenceEn": [
-        "The tea in this shop is very famous.",
+        "The tea at this shop is very famous.",
         "This shop is famous for its tea."
       ],
       "rubricZh": [
@@ -376,6 +376,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tea）原位換成翻譯題，沿用題 id a1-u08-l06-q16；目標字沿用 tea",
         "resolution": "改為 translate：promptZh「這家店的茶很有名。」、hintWords [\"tea\"]、referenceEn [\"The tea in this shop is very famous.\",\"This shop is famous for its tea.\"]、rubricZh [\"「很有名」可寫，例如 is very famous、is famous for its tea 等\",\"泛指茶時不加 a；「這家店」可寫，例如 this shop、this store 等\"]（原 makeSentence：instructionZh「用 tea 造一個句子，說說你喝茶的習慣。」、referenceEn [\"I drink green tea every afternoon.\",\"I like my tea with milk.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

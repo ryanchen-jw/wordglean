@@ -68,7 +68,7 @@
       "word": "caravan",
       "exampleEn": "A long caravan of cars and buses carried the fans to the concert.",
       "exampleZh": "一長列汽車和巴士組成的車隊，載著歌迷前往演唱會。",
-      "glossZh": "（車、馬等的）隊伍；商隊；（英）露營車",
+      "glossZh": "（車、馬等的）隊伍；商隊；露營車（英式）",
       "distractorsZh": [
         "停車場",
         "軍隊",
@@ -94,7 +94,7 @@
       "word": "trolley",
       "exampleEn": "At the airport, I put my two heavy suitcases on a trolley.",
       "exampleZh": "在機場，我把兩個重行李箱放上推車。",
-      "glossZh": "手推車；（英）購物車",
+      "glossZh": "手推車；購物車；（英式）",
       "distractorsZh": [
         "背包",
         "電梯",
@@ -334,6 +334,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（trek）原位換成翻譯題，沿用題 id b2-u21-l04-q17；目標字沿用 trek",
         "resolution": "改為 translate：promptZh「這趟徒步旅行的最後一段路最難走。」、hintWords [\"trek\"]、referenceEn [\"The last part of the trek was the hardest.\",\"The final section of the trek was the most difficult.\"]、rubricZh [\"trek 這裡當名詞，指徒步旅行（例如 the last part of the trek 等）\",\"「最難走」用最高級（例如 the hardest、the most difficult 等）\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 trek 造一個句子，說說你走過的一段很長的路或想去的徒步旅行。」、referenceEn [\"I'd love to go on a trek through the forests of the east coast.\",\"Last summer, I trekked up a mountain with my friends for two days.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

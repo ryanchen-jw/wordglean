@@ -66,8 +66,8 @@
       "id": "b2-u17-l05-q05",
       "type": "wordCard",
       "word": "maestro",
-      "exampleEn": "The kitchen maestro prepared a ten-course dinner for the guests.",
-      "exampleZh": "那位廚藝大師為客人準備了十道菜的晚宴。",
+      "exampleEn": "Students came from all over the world to study with the great maestro.",
+      "exampleZh": "學生從世界各地前來，跟著這位音樂大師學習。",
       "glossZh": "大師；名指揮家",
       "distractorsZh": [
         "學徒",
@@ -352,6 +352,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（orchestral）原位換成翻譯題，沿用題 id b2-u17-l05-q17；目標字沿用 orchestral",
         "resolution": "改為 translate：promptZh「這首流行歌的交響樂版本比原曲還受歡迎。」、hintWords [\"orchestral\"]、referenceEn [\"The orchestral version of this pop song is more popular than the original.\",\"This pop song's orchestral version has become more popular than the original one.\"]、rubricZh [\"orchestral 是形容詞，放名詞前（例如 the orchestral version 等）\",\"「比原曲還受歡迎」用比較級（例如 more popular than the original 等）\",\"時態可用現在式或現在完成式（例如 is、has become 等）\"]（原 makeSentence：instructionZh「用 orchestral 造一個句子，說說你聽過或喜歡的交響樂或樂團音樂。」、referenceEn [\"I like listening to orchestral music while I study.\",\"The orchestral version of my favorite song sounds amazing to me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

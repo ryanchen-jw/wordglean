@@ -90,8 +90,8 @@
       "id": "a2-u26-l01-q07",
       "type": "wordCard",
       "word": "destroy",
-      "exampleEn": "The rain destroyed our picnic.",
-      "exampleZh": "這場雨毀了我們的野餐。",
+      "exampleEn": "The storm destroyed the old bridge.",
+      "exampleZh": "暴風雨摧毀了那座舊橋。",
       "glossZh": "毀壞；破壞",
       "distractorsZh": [
         "保護",
@@ -105,7 +105,7 @@
       "word": "burn",
       "exampleEn": "There is a burn on the old wooden table.",
       "exampleZh": "那張舊木桌上有一塊燒焦的痕跡。",
-      "glossZh": "燒傷；燙傷；燒痕",
+      "glossZh": "燒痕；燒傷；燙傷",
       "distractorsZh": [
         "蚊子包",
         "瘀青",
@@ -184,7 +184,7 @@
     {
       "id": "a2-u26-l01-q15",
       "type": "reading",
-      "passageEn": "Last weekend, my family went camping by a lake. We crossed the lake in a small boat to a quiet beach. The waves were small. We gathered wood and made a fire, and Dad put water around it to stop the spread of the fire. Then Mom cooked a big dinner. I got a small burn from the hot pan, but I was fine. That night, a strong wind destroyed our camping chairs. \"We survived!\" Dad said in the morning.",
+      "passageEn": "Last weekend, my family went camping by a lake. We crossed the lake in a small boat to a quiet beach. The waves were small. We gathered wood and made a fire, and Dad poured water around it to stop the spread of the fire. Then Mom cooked a big dinner. I got a small burn from the hot pan, but I was fine. That night, a strong wind destroyed our camping chairs. \"We survived!\" Dad said in the morning.",
       "passageZh": "上週末，我們全家去湖邊露營。我們坐小船渡湖，到了一處安靜的沙灘。浪很小。我們撿木柴生了火，爸爸在火堆周圍灑了水，防止火勢蔓延。接著媽媽煮了一頓豐盛的晚餐。我被熱鍋燙了一下，不過沒事。那天晚上，一陣強風把我們的露營椅吹壞了。早上爸爸說：「我們活下來了！」",
       "questions": [
         {
@@ -394,6 +394,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（survive）原位換成翻譯題，沿用題 id a2-u26-l01-q17；目標字沿用 survive",
         "resolution": "改為 translate：promptZh「有些植物不需要很多水也能存活。」、hintWords [\"survive\"]、referenceEn [\"Some plants can survive without much water.\",\"Some plants can survive with very little water.\"]、rubricZh [\"用 survive 表示「存活」（例如 can survive）\",\"「不需要很多水」可寫，例如 without much water、with very little water 等\"]（原 makeSentence：instructionZh「用 survive 造一個句子，說說某種動物或植物怎麼活下來。」、referenceEn [\"Some plants can survive the cold winter.\",\"Fish can't survive out of water.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

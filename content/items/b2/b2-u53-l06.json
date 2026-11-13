@@ -115,8 +115,8 @@
     {
       "id": "b2-u53-l06-q09",
       "type": "listenType",
-      "sentenceEn": "She untied her shoes and walked on the sand.",
-      "sentenceZh": "她解開鞋帶，走在沙灘上。"
+      "sentenceEn": "She untied her shoes, took them off, and walked on the sand.",
+      "sentenceZh": "她解開鞋帶，脫掉鞋子，走在沙灘上。"
     },
     {
       "id": "b2-u53-l06-q10",
@@ -185,7 +185,7 @@
     {
       "id": "b2-u53-l06-q15",
       "type": "reading",
-      "passageEn": "Our old dog is fourteen and has always been gentle and obedient. Last Sunday we took him to a pet show in the park, wrapped in a cozy blanket because the morning was cold. He had to sit and wait while other dogs did tricks, and after a while his ears drooped sadly. My little brother, who is very attached to the dog, kept stroking his head. Once, the whole show came to a standstill when a cat ran across the field. In the end, the judges gave him a prize for being the most patient dog in the show. We all cheered.",
+      "passageEn": "Our old dog is fourteen and has always been gentle and obedient. Last Sunday we took him to a pet show in the park. He went wrapped in a cozy blanket because the morning was cold. He had to sit and wait while other dogs did tricks, and after a while his ears drooped sadly. My little brother, who is very attached to the dog, kept stroking his head. Once, the whole show came to a standstill when a cat ran across the field. In the end, the judges gave him a prize for being the most patient dog in the show. We all cheered.",
       "passageZh": "我們家的老狗十四歲了，一直都很溫和又聽話。上星期日，我們帶牠去公園參加寵物比賽，因為早上很冷，就用溫暖的毯子把牠包起來。其他狗表演把戲時，牠得坐著等，過了一會兒，牠的耳朵難過地垂了下來。我弟弟非常依戀這隻狗，一直摸著牠的頭。有一次，一隻貓跑過場地，整場比賽停頓了下來。最後，評審頒給牠一個獎，因為牠是全場最有耐心的狗。我們都歡呼了。",
       "questions": [
         {
@@ -416,6 +416,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（attached）原位換成翻譯題，沿用題 id b2-u53-l06-q17；目標字沿用 attached",
         "resolution": "改為 translate：promptZh「我們的狗很快就跟剛出生的寶寶變得很親。」、hintWords [\"attached\"]、referenceEn [\"Our dog quickly became attached to the new baby.\",\"Our dog soon got very attached to the newborn baby.\"]、rubricZh [\"attached 當形容詞，接 to＋對象（例如 became attached to、got attached to 等）\",\"「很快就」可寫，例如 quickly、soon 等\",\"時態用過去式或現在完成式都可以（例如 became、has become 等）\"]（原 makeSentence：instructionZh「用 attached 造一個句子，描述人或動物對某樣東西或某個人的依戀。」、referenceEn [\"Our dog quickly became attached to the new baby.\",\"My sister has become attached to her first phone.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

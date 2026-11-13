@@ -172,7 +172,7 @@
       "id": "c1-u10-l09-q14",
       "type": "mcq",
       "stemEn": "Unlike his loud brother, Sam is calm and ____.",
-      "stemZh": "不像他吵鬧的哥哥，Sam 沉著又溫和。",
+      "stemZh": "不像他吵鬧的兄弟，Sam 沉著又溫和。",
       "options": [
         "placid",
         "exuberant",
@@ -320,6 +320,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（quirk）原位換成翻譯題，沿用題 id c1-u10-l09-q17；目標字沿用 quirk",
         "resolution": "改為 translate：promptZh「我室友有個怪癖：他吃飯前一定要把盤子裡的食物排整齊。」、hintWords [\"quirk\"]、referenceEn [\"My roommate has a strange quirk: he always arranges the food on his plate before he eats.\",\"One of my roommate's quirks is that he must line up the food on his plate before eating.\"]、rubricZh [\"「怪癖」用 quirk（例如 has a quirk、one of his quirks 等）\",\"「排整齊」可寫，例如 arranges、lines up 等\",\"「一定要」可寫，例如 always、must、has to 等\"]（原 makeSentence：instructionZh「用 quirk 造一個句子，說說你自己的一個小怪癖。」、referenceEn [\"One of my quirks is that I always sit in the same seat on the bus.\",\"I have a strange quirk: I can only sleep with socks on.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

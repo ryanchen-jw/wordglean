@@ -54,7 +54,7 @@
       "type": "wordCard",
       "word": "uninterested",
       "exampleEn": "My brother is uninterested in sports.",
-      "exampleZh": "我弟弟對運動不感興趣。",
+      "exampleZh": "我的兄弟對運動不感興趣。",
       "glossZh": "不感興趣的；冷漠的",
       "distractorsZh": [
         "興奮的",
@@ -127,10 +127,10 @@
       "audioZh": "她粗心地把手機留在公車上，現在找不到了。",
       "questionZh": "她的手機怎麼了？",
       "options": [
-        "Someone took it on the bus.",
-        "It fell into the water.",
-        "She forgot it on the bus.",
-        "Her brother broke it."
+        "Someone took it on the bus",
+        "It fell into the water",
+        "She forgot it on the bus",
+        "Her brother broke it"
       ],
       "answer": 2
     },
@@ -149,7 +149,7 @@
     {
       "id": "b1-u43-l08-q13",
       "type": "mcq",
-      "stemEn": "The students looked ____ in the long lesson; some were even sleeping.",
+      "stemEn": "The students looked ____ during the long lesson; some were even sleeping.",
       "stemZh": "學生們在冗長的課堂上看起來興趣缺缺，有些甚至睡著了。",
       "options": [
         "innermost",
@@ -236,7 +236,7 @@
         "overjoyed"
       ],
       "referenceEn": [
-        "He was overjoyed when he got into the university.",
+        "He was overjoyed when he got into college.",
         "He was overjoyed to hear that the university had accepted him."
       ],
       "rubricZh": [
@@ -374,6 +374,30 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u43-l06-q16 雷同（兩題都是「他／她是一個很…的人」（a very … person）），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「我妹妹喝了咖啡以後就變得很多話。」、referenceEn [\"My sister becomes very talkative after she drinks coffee.\",\"After drinking coffee, my sister gets really talkative.\"]、rubricZh [\"用 talkative 表示「多話的；健談的」\",\"「變得」可寫，例如 becomes、gets 等\"]（原 promptZh「她是個很健談的人。」、referenceEn [\"She is a very talkative person.\",\"She is a person who is very talkative.\"]、rubricZh [\"talkative 表示「健談的、愛說話的」，例如 a talkative person 等說法\",\"時態配合內容（例如現在簡單式等）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

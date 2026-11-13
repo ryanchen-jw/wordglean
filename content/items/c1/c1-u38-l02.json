@@ -123,14 +123,14 @@
     {
       "id": "c1-u38-l02-q10",
       "type": "listenChoice",
-      "audioEn": "The critic wrote a scathing review, calling the new restaurant's food cold and its prices silly.",
+      "audioEn": "The critic wrote a scathing review, calling the new restaurant's food cold and its prices ridiculous.",
       "audioZh": "那位評論家寫了一篇尖刻的評論，說這家新餐廳的菜是冷的、價格荒謬。",
       "questionZh": "評論家怎麼評價這家餐廳？",
       "options": [
-        "The review praised the friendly staff.",
-        "The review attacked both the food and the prices.",
-        "The review said it was worth a visit.",
-        "The review only talked about the music."
+        "The review praised the friendly staff",
+        "The review attacked both the food and the prices",
+        "The review said it was worth a visit",
+        "The review only talked about the music"
       ],
       "answer": 1
     },
@@ -138,7 +138,7 @@
       "id": "c1-u38-l02-q11",
       "type": "shadowing",
       "sentenceEn": "My sister is so bubbly that she makes friends everywhere she goes.",
-      "sentenceZh": "我妹妹個性活潑開朗，走到哪裡都交得到朋友。"
+      "sentenceZh": "我的姊妹個性活潑開朗，走到哪裡都交得到朋友。"
     },
     {
       "id": "c1-u38-l02-q12",
@@ -340,6 +340,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（wryly）原位換成翻譯題，沿用題 id c1-u38-l02-q17；目標字沿用 wryly",
         "resolution": "改為 translate：promptZh「那位廚師自嘲地說，他做的第一個蛋糕連他的狗都不吃。」、hintWords [\"wryly\"]、referenceEn [\"The chef said wryly that even his dog would not eat his first cake.\",\"The chef joked wryly that his first cake was so bad that even his dog refused it.\"]、rubricZh [\"「自嘲地」用 wryly（例如 said wryly、joked wryly 等）\",\"時態配合內容（例如 said、would not eat 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 wryly 造一個句子，描述你遇到不順利的事時苦笑或自嘲的樣子。」、referenceEn [\"I smiled wryly when my umbrella broke after five minutes of rain.\",\"When the bus left without me, I laughed wryly and started walking.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

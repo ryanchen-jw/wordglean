@@ -25,7 +25,7 @@
       "id": "b1-u29-l03-q02",
       "type": "wordCard",
       "word": "prayer",
-      "exampleEn": "The temple bell rings at the time of evening prayer.",
+      "exampleEn": "The temple bell rings for evening prayer.",
       "exampleZh": "寺廟的鐘在晚禱時間響起。",
       "glossZh": "禱告；祈禱",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "經濟學的課換到 8 號教室，因為 3 號教室太小了。",
       "questionZh": "為什麼換教室？",
       "options": [
-        "The lights in Room 3 are broken.",
-        "Room 3 isn't big enough.",
-        "Room 8 is too small.",
-        "It's a holiday."
+        "The lights in Room 3 are broken",
+        "Room 3 isn't big enough",
+        "Room 8 is too small",
+        "It's a holiday"
       ],
       "answer": 1
     },
@@ -234,8 +234,8 @@
         "economics"
       ],
       "referenceEn": [
-        "My sister majors in economics at university.",
-        "My older sister is studying economics at university."
+        "My sister majors in economics in college.",
+        "My older sister is studying economics in college."
       ],
       "rubricZh": [
         "用 economics 表示「經濟學」",
@@ -379,6 +379,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（economics）原位換成翻譯題，沿用題 id b1-u29-l03-q17；目標字沿用 economics",
         "resolution": "改為 translate：promptZh「我姊姊在大學主修經濟學。」、hintWords [\"economics\"]、referenceEn [\"My sister majors in economics at university.\",\"My older sister is studying economics at university.\"]、rubricZh [\"用 economics 表示「經濟學」\",\"「主修」可寫，例如 majors in、is studying 等\"]（原 makeSentence：instructionZh「用 economics 造一個句子，說說你對經濟學的看法或經驗。」、referenceEn [\"I think economics is a difficult subject.\",\"I want to study economics in the future.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

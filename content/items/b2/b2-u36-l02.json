@@ -40,8 +40,8 @@
       "id": "b2-u36-l02-q03",
       "type": "wordCard",
       "word": "outpatient",
-      "exampleEn": "Most outpatients go home on the same day.",
-      "exampleZh": "大多數門診病人當天就回家了。",
+      "exampleEn": "The hospital sees about five hundred outpatients a day.",
+      "exampleZh": "這家醫院每天看大約五百名門診病人。",
       "glossZh": "門診病人",
       "distractorsZh": [
         "訪客",
@@ -161,11 +161,11 @@
     {
       "id": "b2-u36-l02-q13",
       "type": "reading",
-      "passageEn": "Every Saturday, my sister volunteers at a hospital near our home. In the morning, she helps in the outpatient area, showing people where to go for blood tests or an X-ray. She has learned a lot about health care from the nurses and paramedics she meets there. In the afternoon, she visits a hospice next door, where she reads books and plays music for the people who stay there. Last month, she and her friends even organized a small parade in costumes, and everyone said it was very entertaining. The hospital's computers were once attacked by a virus, so now my sister also reminds the staff to update their antivirus software.",
-      "passageZh": "每個星期六，我姊姊都在我們家附近的一家醫院當志工。早上，她在門診區幫忙，告訴大家抽血或照 X 光要去哪裡。她從在那裡認識的護理師和急救人員身上，學到很多醫療照護的知識。下午，她到隔壁的安寧照護機構，念書給住在那裡的人聽，也放音樂給他們聽。上個月，她和朋友們甚至穿上戲服辦了一場小遊行，大家都說非常有趣。醫院的電腦曾經被病毒攻擊過，所以現在我姊姊也會提醒工作人員更新防毒軟體。",
+      "passageEn": "Every Saturday, my sister volunteers at a hospital near our home. In the morning, she helps in the outpatient area, showing people where to go for blood tests or an X-ray. She has learned a lot about health care from the nurses and paramedics she meets there. In the afternoon, she visits a hospice next door, where she reads books and plays music for the people who stay there. Last month, she and her friends even organized a small costume parade for the patients, and everyone said it was very entertaining. The hospital's computers were once attacked by a virus, so now my sister also reminds the staff to update their antivirus software.",
+      "passageZh": "每個星期六，我的姊妹都在我們家附近的一家醫院當志工。早上，她在門診區幫忙，告訴大家抽血或照 X 光要去哪裡。她從在那裡認識的護理師和急救人員身上，學到很多醫療照護的知識。下午，她到隔壁的安寧照護機構，念書給住在那裡的人聽，也放音樂給他們聽。上個月，她和朋友們甚至為病人辦了一場小型變裝遊行，大家都說非常有趣。醫院的電腦曾經被病毒攻擊過，所以現在我的姊妹也會提醒工作人員更新防毒軟體。",
       "questions": [
         {
-          "questionZh": "姊姊早上在醫院做什麼？",
+          "questionZh": "作者的姊妹早上在醫院做什麼？",
           "options": [
             "在醫院的餐廳裡幫忙煮飯",
             "在門診區幫人指路",
@@ -175,7 +175,7 @@
           "answer": 1
         },
         {
-          "questionZh": "姊姊為什麼提醒員工更新防毒軟體？",
+          "questionZh": "作者的姊妹為什麼提醒員工更新防毒軟體？",
           "options": [
             "醫院規定每週都要檢查一次",
             "醫院電腦曾被病毒攻擊",
@@ -374,6 +374,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（health care）原位換成翻譯題，沿用題 id b2-u36-l02-q15；目標字沿用 health care",
         "resolution": "改為 translate：promptZh「住在這座小島上的人很難得到好的醫療照護。」、hintWords [\"health care\"]、referenceEn [\"People on this small island find it hard to get good health care.\",\"It is difficult for people living on this small island to get good health care.\"]、rubricZh [\"「醫療照護」可寫，例如 health care、healthcare 等\",\"「很難得到」可寫，例如 find it hard to get、it is difficult for … to get 等\"]（原 makeSentence：instructionZh「用 health care 造一個句子，說說你覺得好的醫療照護應該是什麼樣子，或你家附近的醫療環境。」、referenceEn [\"I think good health care should be close to where people live.\",\"In my town, health care is easy to get because there are many clinics.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

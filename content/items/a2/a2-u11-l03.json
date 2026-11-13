@@ -68,7 +68,7 @@
       "type": "wordCard",
       "word": "cheap",
       "exampleEn": "My brother only buys cheap clothes.",
-      "exampleZh": "我哥哥只買便宜的衣服。",
+      "exampleZh": "我的兄弟只買便宜的衣服。",
       "glossZh": "便宜的",
       "distractorsZh": [
         "昂貴的",
@@ -456,6 +456,12 @@
         "message": "執行長裁示：第③關：SUS 與同課單字卡 cheap「My brother only buys cheap clothes.」同句型、同情境（§11.4），換句型與情境",
         "resolution": "promptZh 改為 「我們家一直都喝同一個牌子的咖啡。」（原 「我媽媽只買這個牌子的咖啡。」）；referenceEn 改為 [\"My family always drinks the same brand of coffee.\",\"Our family has always drunk the same brand of coffee.\"]（原 [\"My mother only buys this brand of coffee.\",\"My mom buys only this brand of coffee.\"]）；rubricZh 改為 [\"用 brand 表示「牌子」（例如 the same brand of coffee）\",\"時態可用現在式或現在完成式（例如 always drinks、has always drunk 等）\"]（原 [\"用 brand 表示「牌子」（例如 this brand of coffee）\",\"only 可放在 buys 前或後（例如 only buys、buys only 等）\",\"主詞是單數，動詞加 s（例如 buys）\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

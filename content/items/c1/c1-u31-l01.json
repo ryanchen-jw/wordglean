@@ -77,9 +77,9 @@
       "id": "c1-u31-l01-q06",
       "type": "wordCard",
       "word": "restorative",
-      "exampleEn": "Experts did careful restorative work on the old painting.",
-      "exampleZh": "專家對那幅老畫做了細心的修復工作。",
-      "glossZh": "修復的；有助恢復的",
+      "exampleEn": "The quiet garden has a restorative effect on tired visitors.",
+      "exampleZh": "安靜的花園讓疲憊的訪客恢復元氣。",
+      "glossZh": "有助恢復的；修復的",
       "distractorsZh": [
         "破壞的；令人緊張的",
         "裝飾的；令人疲倦的",
@@ -172,8 +172,8 @@
     {
       "id": "c1-u31-l01-q14",
       "type": "reading",
-      "passageEn": "Last year, a city hospital turned an empty roof into a garden. The idea came from a psychiatrist who noticed that many patients on the psychiatric ward rarely went outside. Clinical staff now take small groups to the garden every afternoon, and some patients say it is the best part of their day. Volunteers also run a remedial reading class there for children who are staying in the hospital for a long time. The garden is next to the dispensary, so visitors often stop there while waiting for medicine. The hospital hopes the garden will become a calm place for everyone.",
-      "passageZh": "去年，一家市立醫院把空著的屋頂改造成花園。這個點子來自一位精神科醫師，他注意到精神科病房的許多病人很少到戶外。現在臨床人員每天下午會帶小組病人到花園，有些病人說那是他們一天中最喜歡的時光。志工也在那裡為長期住院的孩子開設閱讀補救課程。花園就在藥局旁邊，所以訪客等領藥時常會去走走。醫院希望花園能成為每個人都能放鬆的地方。",
+      "passageEn": "Last year, a city hospital turned an empty roof into a garden. The idea came from a psychiatrist who noticed that many patients on the psychiatric ward rarely went outside. Clinical staff now take small groups to the garden every afternoon, and some patients say it is the best part of their day. Volunteers also run a remedial reading class there for children who are staying in the hospital for a long time. The dispensary is on the floor below, so visitors often go up to the garden while waiting for medicine. The hospital hopes the garden will become a calm place for everyone.",
+      "passageZh": "去年，一家市立醫院把空著的屋頂改造成花園。這個點子來自一位精神科醫師，他注意到精神科病房的許多病人很少到戶外。現在臨床人員每天下午會帶小組病人到花園，有些病人說那是他們一天中最喜歡的時光。志工也在那裡為長期住院的孩子開設閱讀補救課程。藥局就在樓下，所以訪客等領藥時常會上來走走。醫院希望花園能成為每個人都能放鬆的地方。",
       "questions": [
         {
           "questionZh": "花園的點子是誰想出來的？",
@@ -308,6 +308,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（remedial）原位換成翻譯題，沿用題 id c1-u31-l01-q16；目標字沿用 remedial",
         "resolution": "改為 translate：promptZh「這家公司採取了補救措施，修正帳單上的錯誤。」、hintWords [\"remedial\"]、referenceEn [\"The company took remedial action to correct the mistakes on the bills.\",\"The company took remedial steps to fix the errors in the bills.\"]、rubricZh [\"「補救措施」用 remedial，例如 remedial action、remedial steps、remedial measures 等\",\"「修正」可寫，例如 correct、fix 等\",\"說的是已發生的事，時態配合內容（例如 took 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 remedial 造一個句子，說說你或朋友上過的補救課程。」、referenceEn [\"I took a remedial writing course when I started college.\",\"My friend needed remedial help with her writing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh、glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

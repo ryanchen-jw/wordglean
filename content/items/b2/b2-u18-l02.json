@@ -155,7 +155,7 @@
       "id": "b2-u18-l02-q13",
       "type": "shadowing",
       "sentenceEn": "My sister does athletics after school: running, jumping and throwing.",
-      "sentenceZh": "我妹妹放學後練田徑：跑步、跳遠和投擲。"
+      "sentenceZh": "我的姊妹放學後練田徑：跑步、跳躍和投擲。"
     },
     {
       "id": "b2-u18-l02-q14",
@@ -321,6 +321,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sprint）原位換成翻譯題，沿用題 id b2-u18-l02-q18；目標字沿用 sprint",
         "resolution": "改為 translate：promptZh「最後一百公尺，她開始全力衝刺。」、hintWords [\"sprint\"]、referenceEn [\"In the last hundred meters, she began to sprint as fast as she could.\",\"She sprinted at full speed for the last hundred meters.\"]、rubricZh [\"sprint 當動詞，表示「衝刺」（例如 began to sprint、sprinted 等）\",\"「全力」可寫，例如 as fast as she could、at full speed 等\",\"時態可用過去式或現在式（例如 began、begins 等）\"]（原 makeSentence：instructionZh「用 sprint 造一個句子，說說你曾經衝刺去做某件事。」、referenceEn [\"I sprinted to the bus stop because I was late for school.\",\"I once had to sprint across the airport to catch my flight.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

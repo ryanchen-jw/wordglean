@@ -43,7 +43,7 @@
       "word": "footballer",
       "exampleEn": "That footballer can kick the ball very far.",
       "exampleZh": "那位足球員能把球踢得很遠。",
-      "glossZh": "足球員",
+      "glossZh": "足球員；（英式）",
       "distractorsZh": [
         "籃球員",
         "教練",
@@ -175,7 +175,7 @@
       "id": "a2-u16-l04-q14",
       "type": "reading",
       "passageEn": "Our town opened a new sports center last month. Inside, you can play badminton and table tennis. Outside, there is a place for skateboarding and a football field. My brother wants to be a footballer, so he goes there to practice every day. In summer, the center also takes people surfing at the beach.",
-      "passageZh": "我們鎮上個月開了一間新的運動中心。室內可以打羽毛球和桌球，室外有玩滑板的場地和一座足球場。我哥哥想當足球員，所以他每天都去那裡練習。夏天時，運動中心也會帶大家去海邊衝浪。",
+      "passageZh": "我們鎮上個月開了一間新的運動中心。室內可以打羽毛球和桌球，室外有玩滑板的場地和一座足球場。我的兄弟想當足球員，所以他每天都去那裡練習。夏天時，運動中心也會帶大家去海邊衝浪。",
       "questions": [
         {
           "questionZh": "運動中心室內可以打什麼？",
@@ -355,6 +355,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（snowboarding）原位換成翻譯題，沿用題 id a2-u16-l04-q16；目標字沿用 snowboarding",
         "resolution": "改為 translate：promptZh「我去年冬天第一次玩單板滑雪。」、hintWords [\"snowboarding\"]、referenceEn [\"I tried snowboarding for the first time last winter.\",\"Last winter, I tried snowboarding for the first time.\"]、rubricZh [\"用 snowboarding 表示「單板滑雪」（例如 tried snowboarding、went snowboarding 等）\",\"過去的事用過去式（例如 tried、went 等）\",\"「第一次」可寫，例如 for the first time 等\"]（原 makeSentence：instructionZh「用 snowboarding 造一個句子，說說你試過或想試的冬季運動。」、referenceEn [\"I want to try snowboarding someday.\",\"Snowboarding is harder than skiing for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

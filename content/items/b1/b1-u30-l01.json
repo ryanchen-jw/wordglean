@@ -141,10 +141,10 @@
       "audioZh": "如果對方聽不到你的聲音，請結束通話，五分鐘後再撥一次。",
       "questionZh": "對方聽不到時該怎麼做？",
       "options": [
-        "Write the number down on a piece of paper.",
-        "Send a message to the office manager.",
-        "End the call and try again later.",
-        "Speak more loudly for five minutes."
+        "Write the number down on a piece of paper",
+        "Send a message to the office manager",
+        "End the call and try again later",
+        "Speak more loudly for five minutes"
       ],
       "answer": 2
     },
@@ -371,6 +371,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（accent）原位換成翻譯題，沿用題 id b1-u30-l01-q18；目標字沿用 accent",
         "resolution": "改為 translate：promptZh「她說英文帶一點法國口音。」、hintWords [\"accent\"]、referenceEn [\"She speaks English with a slight French accent.\",\"She has a slight French accent when she speaks English.\"]、rubricZh [\"用 accent 表示「口音」（例如 with a French accent）\",\"「一點」可寫，例如 a slight、a little 等\"]（原 makeSentence：instructionZh「用 accent 造一個句子，說說你聽過的某種口音。」、referenceEn [\"My grandmother has a strong accent from the south.\",\"I like my teacher's accent.\"]）；properNouns 加 English、French",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

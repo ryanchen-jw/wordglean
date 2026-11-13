@@ -128,10 +128,10 @@
       "audioZh": "合唱團這個月星期二和星期四晚上練習。",
       "questionZh": "合唱團這個月什麼時候練習？",
       "options": [
-        "Tuesday and Thursday mornings.",
-        "Tuesday and Thursday nights.",
-        "Only on Tuesday evenings.",
-        "Every Monday night."
+        "Tuesday and Thursday mornings",
+        "Tuesday and Thursday nights",
+        "Only on Tuesday evenings",
+        "Every Monday night"
       ],
       "answer": 1
     },
@@ -381,6 +381,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（choir）原位換成翻譯題，沿用題 id b1-u22-l04-q17；目標字沿用 choir",
         "resolution": "改為 translate：promptZh「教堂的合唱團每年聖誕夜都會唱歌。」、hintWords [\"choir\"]、referenceEn [\"The church choir sings every year on Christmas Eve.\",\"Every Christmas Eve, the church choir sings.\"]、rubricZh [\"用 choir 表示「合唱團」（例如 the church choir）\"]（原 makeSentence：instructionZh「用 choir 造一個句子，說說你或認識的人參加合唱團的經驗。」、referenceEn [\"I sang in a choir when I was in high school.\",\"My aunt has sung in a choir for twenty years.\"]）；properNouns 加 Christmas、Eve",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

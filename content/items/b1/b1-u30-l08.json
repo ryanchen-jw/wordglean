@@ -127,10 +127,10 @@
       "audioZh": "我在留言板上看到你的廣告，我想買你的舊腳踏車。",
       "questionZh": "說話者想做什麼？",
       "options": [
-        "To put an advert on the board.",
-        "To sell a bike.",
-        "To pay for the used bike.",
-        "To find a job."
+        "To put an advert on the board",
+        "To sell a bike",
+        "To pay for the used bike",
+        "To find a job"
       ],
       "answer": 2
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u30-l08-q15",
       "type": "reading",
-      "passageEn": "My uncle loves trying new technology. Last month, he bought a webcam so that he could talk with my cousin, who lives abroad. He would rather meet face to face, but my cousin lives too far away. Now they have video chats every Sunday. My uncle also keeps an old CD-ROM full of family photos. He likes to read the message board at the library, too. Yesterday he saw an advert there for a cooking class. He wrote a letter to sign up, but he forgot to write the name of the addressee on the envelope! Still, he now writes emails to my cousin quite fluently in English.",
-      "passageZh": "我叔叔很喜歡嘗試新科技。上個月，他買了一台網路攝影機，好跟住在國外的表親聊天。他其實比較想當面見面，但表親住得太遠了。現在他們每週日都會視訊聊天。叔叔還留著一張存滿家庭照片的舊光碟。他也喜歡看圖書館的留言板。昨天他在那裡看到一則烹飪課的廣告。他寫了一封信報名，卻忘了在信封上寫收件人的名字！不過，他現在已經能用英文相當流利地寫電子郵件給表親了。",
+      "passageEn": "My uncle loves trying new technology. Last month, he bought a webcam so that he could talk with my cousin, who lives abroad. He would rather meet face to face, but my cousin lives too far away. Now they have video chats every Sunday. My uncle also keeps an old CD-ROM full of family photos. He likes to read the message board at the library, too. Yesterday he saw an advert there for a cooking class. He wrote a letter to sign up, but he forgot to write the name of the addressee on the envelope! He also writes emails to my cousin quite fluently in English.",
+      "passageZh": "我叔叔很喜歡嘗試新科技。上個月，他買了一台網路攝影機，好跟住在國外的表親聊天。他其實比較想當面見面，但表親住得太遠了。現在他們每週日都會視訊聊天。叔叔還留著一張存滿家庭照片的舊光碟。他也喜歡看圖書館的留言板。昨天他在那裡看到一則烹飪課的廣告。他寫了一封信報名，卻忘了在信封上寫收件人的名字！他也能用英文相當流利地寫電子郵件給表親。",
       "questions": [
         {
           "questionZh": "叔叔為什麼買網路攝影機？",
@@ -357,6 +357,18 @@
         "message": "執行長裁示：第③關：SUS 實體公告欄常譯 notice board、bulletin board，要點沒收",
         "resolution": "改為 rubricZh [\"用 message board 表示「公告欄；留言板」（寫 notice board、bulletin board 也正確）\",\"「公布」可寫，例如 posted、put up 等\"]（原 rubricZh [\"用 message board 表示「公告欄；留言板」\",\"「公布」可寫，例如 posted、put up 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

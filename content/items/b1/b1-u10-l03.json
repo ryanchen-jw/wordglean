@@ -77,8 +77,8 @@
       "id": "b1-u10-l03-q06",
       "type": "wordCard",
       "word": "bracelet",
-      "exampleEn": "The bracelet makes a sound when she moves her hand.",
-      "exampleZh": "她一動手，手環就會發出聲響。",
+      "exampleEn": "Her bracelet makes a sound when she moves her hand.",
+      "exampleZh": "她一動手，她的手環就會發出聲響。",
       "glossZh": "手環；手鐲",
       "distractorsZh": [
         "項鍊",
@@ -115,7 +115,7 @@
     {
       "id": "b1-u10-l03-q09",
       "type": "listenType",
-      "sentenceEn": "Many men become bald as they get older.",
+      "sentenceEn": "Many men go bald as they get older.",
       "sentenceZh": "很多男性年紀越大頭髮越少。"
     },
     {
@@ -125,10 +125,10 @@
       "audioZh": "她穿了一件藍色長禮服去參加晚宴，大家都很喜歡。",
       "questionZh": "她穿什麼去參加晚宴？",
       "options": [
-        "A long blue dress.",
-        "A short blue gown.",
-        "A long red dress.",
-        "A blue shirt."
+        "A long blue dress",
+        "A short blue gown",
+        "A long red dress",
+        "A blue shirt"
       ],
       "answer": 0
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u10-l03-q15",
       "type": "reading",
-      "passageEn": "Every year, the city museum holds a show about clothes in history. This year, visitors can see a long silk gown from a hundred years ago, covered with small jewels. There is also a coat made of real fur, which is no longer fashionable today. One room shows how men used to shave, with old razors and soap. The gift shop sells copies of old bracelets. Prices are relatively high, but I bought one for my sister.",
-      "passageZh": "每年，市立博物館都會舉辦一場關於歷史服飾的展覽。今年，參觀者可以看到一件一百年前的絲質長禮服，上面綴滿小珠寶。還有一件真皮草做的外套，那在今天已經不流行了。有一個展間介紹男人以前怎麼刮鬍子，展出舊刮鬍刀和肥皂。禮品店賣仿古手環。價格相對高，但我還是買了一個給我妹妹。",
+      "passageEn": "Every year, the city museum holds a show about the history of clothes. This year, visitors can see a long silk gown from a hundred years ago, covered with small jewels. There is also a coat made of real fur, which is no longer fashionable today. One room shows how men used to shave, with old razors and soap. The gift shop sells copies of old bracelets. Prices are relatively high, but I bought one for my sister.",
+      "passageZh": "每年，市立博物館都會舉辦一場關於服飾歷史的展覽。今年，參觀者可以看到一件一百年前的絲質長禮服，上面綴滿小珠寶。還有一件真皮草做的外套，那在今天已經不流行了。有一個展間介紹男人以前怎麼刮鬍子，展出舊刮鬍刀和肥皂。禮品店賣仿古手環。價格相對高，但我還是買了一個給我的姊妹。",
       "questions": [
         {
           "questionZh": "那件長禮服有什麼特色？",
@@ -380,6 +380,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bracelet）原位換成翻譯題，沿用題 id b1-u10-l03-q17；目標字沿用 bracelet",
         "resolution": "改為 translate：promptZh「這條手環是我在夜市買的。」、hintWords [\"bracelet\"]、referenceEn [\"I bought this bracelet at a night market.\",\"I got this bracelet at the night market.\"]、rubricZh [\"用 bracelet 表示「手環」\",\"「買」可寫，例如 bought、got 等\"]（原 makeSentence：instructionZh「用 bracelet 造一個句子，說說你或你家人戴的手環。」、referenceEn [\"My sister always wears a silver bracelet.\",\"I got a bracelet from my best friend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

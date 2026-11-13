@@ -115,7 +115,7 @@
     {
       "id": "b2-u43-l09-q09",
       "type": "listenType",
-      "sentenceEn": "Our flight has regrettably been cancelled because of fog.",
+      "sentenceEn": "Our flight has regrettably been canceled because of fog.",
       "sentenceZh": "很遺憾，我們的班機因為起霧已經取消了。"
     },
     {
@@ -235,7 +235,7 @@
       ],
       "referenceEn": [
         "With daily practice, learning ten songs on the guitar in three months is achievable.",
-        "If you practice every day, it is achievable to learn ten guitar songs in three months."
+        "If you practice every day, learning ten guitar songs in three months is an achievable goal."
       ],
       "rubricZh": [
         "achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）",
@@ -319,6 +319,18 @@
         "message": "執行長裁示：第③關：SUS 與 u40-l01 跟讀、u29-l02-q16 同屬公司銷售成長一成情境",
         "resolution": "改為 promptZh「只要每天練習，三個月學會彈十首吉他曲是做得到的。」、referenceEn [\"With daily practice, learning ten songs on the guitar in three months is achievable.\",\"If you practice every day, it is achievable to learn ten guitar songs in three months.\"]、rubricZh [\"achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）\",\"「只要每天練習」可寫，例如 with daily practice、if you practice every day 等\"]（原 promptZh「這家公司認為明年把銷售額提高一成是做得到的。」、referenceEn [\"The company thinks that raising sales by ten percent next year is achievable.\",\"The company believes a ten percent rise in sales next year is achievable.\"]、rubricZh [\"achievable 放在 be 動詞後或名詞前（例如 is achievable、an achievable goal 等）\",\"「提高一成」可寫，例如 raising sales by ten percent、a ten percent rise in sales 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

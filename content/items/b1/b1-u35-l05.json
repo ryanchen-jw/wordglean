@@ -78,7 +78,7 @@
       "type": "wordCard",
       "word": "medium",
       "exampleEn": "My brother is of medium height.",
-      "exampleZh": "我哥哥身高中等。",
+      "exampleZh": "我的兄弟身高中等。",
       "glossZh": "中等的；中號的；媒介",
       "distractorsZh": [
         "大號的",
@@ -125,10 +125,10 @@
       "audioZh": "這件襯衫有小、中、大三種尺寸，但中號已經賣完了。",
       "questionZh": "哪一種尺寸賣完了？",
       "options": [
-        "All three sizes.",
-        "Only the small size.",
-        "The large one.",
-        "Just the medium size."
+        "All three sizes",
+        "Only the small size",
+        "The large one",
+        "Just the medium size"
       ],
       "answer": 3
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u35-l05-q15",
       "type": "reading",
-      "passageEn": "Last month, a new café opened near my school. Its owner installed a robot that makes drinks with incredible speed. When I ordered a medium tea, the robot made it in less than a minute, and it always uses the exact amount of sugar you ask for. The owner briefly explained how it works. Thanks to the robot's rapid work, the café's efficiency is very high: it can serve two hundred drinks an hour. Surprisingly, the drinks taste great, too. Still, I don't think it is an absolute success: I miss chatting with a real person.",
+      "passageEn": "Last month, a new cafe opened near my school. Its owner installed a robot that makes drinks with incredible speed. When I ordered a medium tea, the robot made it in less than a minute, and it always uses the exact amount of sugar you ask for. The owner briefly explained how it works. Thanks to the robot's rapid work, the cafe's efficiency is very high: it can serve two hundred drinks an hour. Surprisingly, the drinks taste great, too. Still, I don't think it is an absolute success: I miss chatting with a real person.",
       "passageZh": "上個月，我學校附近開了一家新咖啡店。老闆安裝了一台機器人，做飲料的速度快得令人難以置信。我點了一杯中杯茶，機器人不到一分鐘就做好了，而且它總是放你要求的確切糖量。老闆簡短地說明了它的運作方式。多虧機器人工作迅速，這家店的效率非常高：一小時可以供應兩百杯飲料。出乎意料地，飲料也很好喝。不過，我覺得這還不算完全成功：我懷念和真人聊天。",
       "questions": [
         {
@@ -324,6 +324,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（incredible）原位換成翻譯題，沿用題 id b1-u35-l05-q17；目標字沿用 incredible",
         "resolution": "改為 translate：promptZh「她只花三個月就學會開車，真是難以置信。」、hintWords [\"incredible\"]、referenceEn [\"It is incredible that she learned to drive in only three months.\",\"It's incredible that she learned to drive in just three months.\"]、rubricZh [\"用 incredible 表示「難以置信的」（例如 It is incredible that…）\"]（原 makeSentence：instructionZh「用 incredible 造一個句子，說說你看過或經歷過最驚人的事。」、referenceEn [\"I saw an incredible sunset at the beach last summer.\",\"The fireworks I saw last year were incredible.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

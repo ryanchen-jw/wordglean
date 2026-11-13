@@ -41,7 +41,7 @@
       "type": "wordCard",
       "word": "short",
       "exampleEn": "My brother has short hair.",
-      "exampleZh": "我弟弟留短髮。",
+      "exampleZh": "我的兄弟留短髮。",
       "glossZh": "短的",
       "distractorsZh": [
         "長的",
@@ -127,9 +127,9 @@
       "audioZh": "請快一點，公車來了！",
       "questionZh": "說話者為什麼要你快一點？",
       "options": [
-        "It is late.",
-        "The bus is here.",
-        "The shop is closing."
+        "It is late",
+        "The bus is here",
+        "The shop is closing"
       ],
       "answer": 1
     },
@@ -377,6 +377,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（color）原位換成翻譯題，沿用題 id a1-u05-l06-q17；目標字沿用 color",
         "resolution": "改為 translate：promptZh「我很喜歡這朵花的顏色。」、hintWords [\"color\"]、referenceEn [\"I really like the color of this flower.\",\"I like the color of this flower very much.\"]、rubricZh [\"「這朵花的顏色」可寫，例如 the color of this flower、this flower's color 等（英式拼法 colour 也正確）\",\"「很喜歡」可寫，例如 really like、like … very much、love 等\"]（原 makeSentence：instructionZh「用 color 造一個句子，說說你最喜歡的顏色。」、referenceEn [\"My favorite color is blue.\",\"I like the color green best.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

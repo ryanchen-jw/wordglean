@@ -53,7 +53,7 @@
       "word": "motorbike",
       "exampleEn": "The motorbike is parked under a tree in front of the shop.",
       "exampleZh": "那台摩托車停在店門口的一棵樹下。",
-      "glossZh": "摩托車；機車",
+      "glossZh": "摩托車；機車；（英式）",
       "distractorsZh": [
         "腳踏車",
         "卡車",
@@ -308,6 +308,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（motorbike）原位換成翻譯題，沿用題 id b2-u21-l05-q17；目標字沿用 motorbike",
         "resolution": "改為 translate：promptZh「我爸爸週末都在車庫裡修他的舊摩托車。」、hintWords [\"motorbike\"]、referenceEn [\"My dad spends his weekends fixing his old motorbike in the garage.\",\"On weekends, my father repairs his old motorbike in the garage.\"]、rubricZh [\"motorbike 指摩托車（例如 his old motorbike 等）\",\"習慣的事用現在式（例如 repairs、spends… fixing 等）\",\"「修」可寫，例如 fix、repair、work on 等\"]（原 makeSentence：instructionZh「用 motorbike 造一個句子，說說你或認識的人騎摩托車的經驗。」、referenceEn [\"My older brother rides his motorbike to the office every day.\",\"I learned to ride a motorbike when I was twenty.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

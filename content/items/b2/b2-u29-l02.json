@@ -187,7 +187,7 @@
     {
       "id": "b2-u29-l02-q15",
       "type": "reading",
-      "passageEn": "After thirty-five years at the same factory, Mr. Ho is a true veteran. Next month, he will begin his retirement, and the personnel office is planning a small party for him. Mr. Ho started as a trainee earning a very low wage, but he worked hard and became a supervisor. Over the years, his salary grew, and he saved part of his earnings every month. In all those years, the factory never had to dismiss a single worker, and Mr. Ho is proud of that. Now he wants to travel with his wife and spend more time with his family.",
+      "passageEn": "After thirty-five years at the same factory, Mr. Ho is a true veteran. Next month, he will begin his retirement, and the personnel office is planning a small party for him. Mr. Ho started as a trainee earning a very low wage, but he worked hard and became a supervisor. Over the years, his salary grew, and he saved part of his earnings every month. In all these years, the factory has never had to dismiss a single worker, and Mr. Ho is proud of that. Now he wants to travel with his wife and spend more time with his family.",
       "passageZh": "在同一家工廠工作了三十五年，何先生是個名副其實的老手。下個月他就要退休了，人事室正在為他籌備一場小型派對。何先生從工資很低的實習生做起，但他工作努力，後來當上了主管。這些年來，他的薪水逐漸增加，他每個月都會存下一部分收入。這些年來，工廠從來不必解僱任何一位員工，何先生對此感到很驕傲。現在他想和太太一起旅行，多花點時間陪家人。",
       "questions": [
         {
@@ -371,6 +371,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（retirement）原位換成翻譯題，沿用題 id b2-u29-l02-q17；目標字沿用 retirement",
         "resolution": "改為 translate：promptZh「上週五，我們為一位老同事辦了退休派對。」、hintWords [\"retirement\"]、referenceEn [\"Last Friday, we had a retirement party for an old colleague.\",\"We held a retirement party for a long-time colleague last Friday.\"]、rubricZh [\"「退休派對」可寫，例如 a retirement party 等\",\"「辦」可寫，例如 had、held、threw 等；用過去式\",\"「老同事」可寫，例如 an old colleague、a long-time co-worker 等\"]（原 makeSentence：instructionZh「用 retirement 造一個句子，說說你希望退休後做什麼，或你認識的人退休後在做什麼。」、referenceEn [\"After my retirement, I hope to open a small bookshop.\",\"I want to travel around the world after my retirement.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

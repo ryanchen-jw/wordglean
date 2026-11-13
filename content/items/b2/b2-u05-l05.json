@@ -185,8 +185,8 @@
     {
       "id": "b2-u05-l05-q15",
       "type": "reading",
-      "passageEn": "Two small cafes on our street decided to merge last spring. After the closure of the smaller one, the owners made some modifications to the bigger shop: they added more seats, painted the walls, and hung colorful decorations from the ceiling. They also took the old chairs away for proper disposal instead of leaving them on the street. The owner's father, who is in his seventies, still comes every morning, invariably at seven, to wipe the wooden tables with a special polish. \"His daily repetition of the same work is part of the cafe's charm,\" says one customer. The only distraction is the loud coffee machine, but nobody seems to mind.",
-      "passageZh": "我們這條街上的兩家小咖啡店去年春天決定合併。小的那家關掉後，老闆們對大的那家店做了一些改裝：增加座位、粉刷牆壁，還在天花板掛上色彩繽紛的裝飾。他們也把舊椅子運走妥善處理，而不是丟在街上。老闆七十多歲的父親仍然每天早上來，總是七點準時到，用特別的亮光劑擦拭木桌。一位顧客說：「他每天重複同樣的工作，正是這家咖啡店的魅力之一。」唯一讓人分心的是那台很吵的咖啡機，不過似乎沒有人介意。",
+      "passageEn": "Two small cafes on our street decided to merge last spring. After the closure of the smaller one, the owners made some modifications to the bigger shop: they added more seats, painted the walls, and hung colorful decorations from the ceiling. They also took the old chairs away for proper disposal instead of leaving them on the street. One owner's father, who is in his seventies, still comes every morning, invariably at seven, to wipe the wooden tables with a special polish. \"His daily repetition of the same work is part of the cafe's charm,\" says one customer. The only distraction is the loud coffee machine, but nobody seems to mind.",
+      "passageZh": "我們這條街上的兩家小咖啡店去年春天決定合併。小的那家關掉後，老闆們對大的那家店做了一些改裝：增加座位、粉刷牆壁，還在天花板掛上色彩繽紛的裝飾。他們也把舊椅子運走妥善處理，而不是丟在街上。其中一位老闆七十多歲的父親仍然每天早上來，總是七點準時到，用特別的亮光劑擦拭木桌。一位顧客說：「他每天重複同樣的工作，正是這家咖啡店的魅力之一。」唯一讓人分心的是那台很吵的咖啡機，不過似乎沒有人介意。",
       "questions": [
         {
           "questionZh": "兩家店合併後，老闆對大的那家店做了什麼？",
@@ -445,6 +445,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（merge）原位換成翻譯題，沿用題 id b2-u05-l05-q17；目標字沿用 merge",
         "resolution": "改為 translate：promptZh「這兩條河在城市的東邊匯合。」、hintWords [\"merge\"]、referenceEn [\"The two rivers merge on the east side of the city.\",\"These two rivers merge to the east of the city.\"]、rubricZh [\"merge 表示「匯合」，可不接受詞（例如 The two rivers merge… 等）\",\"「城市的東邊」可寫，例如 on the east side of the city、east of the city 等\"]（原 makeSentence：instructionZh「用 merge 造一個句子，說說兩個團體、公司或東西合併的情況。」、referenceEn [\"Last year, my running club merged with a club in the next town.\",\"Our two small classes merged into one because there were few students.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

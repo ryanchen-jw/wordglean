@@ -77,7 +77,7 @@
       "id": "b2-u41-l02-q06",
       "type": "wordCard",
       "word": "explode",
-      "exampleEn": "Popcorn explodes when the corn gets very hot.",
+      "exampleEn": "Corn explodes into popcorn when it gets very hot.",
       "exampleZh": "玉米粒變得很燙時就會爆開成爆米花。",
       "glossZh": "爆炸；爆開",
       "distractorsZh": [
@@ -105,7 +105,7 @@
       "word": "pitch",
       "exampleEn": "The players walked onto the pitch to loud cheers.",
       "exampleZh": "球員們在熱烈的歡呼聲中走進球場。",
-      "glossZh": "（球）場；音高；投（球）",
+      "glossZh": "球場（英式）；音高；投（球）",
       "distractorsZh": [
         "球網",
         "球拍",
@@ -128,7 +128,7 @@
         "Ran out into the garden",
         "Watched the fireworks",
         "Jumped onto the table",
-        "Hid below the bed"
+        "Hid beneath the bed"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b2-u41-l02-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, our town's football team played its most important game of the year. Before the match, workers upgraded the lights, made a few adjustments to the old pitch and filled a long crack near one of the goals, and the mayor pitched a ball into the crowd for fun. In the middle of the game, a dog ran onto the field with its tail in the air, and the crowd exploded with laughter. Last year, the coach converted our best defender into a goalkeeper, and today he saved two difficult shots. The team could not sustain its early lead, and the game ended in a draw. When heavy rain started, some fans fled to their cars and missed the best moments.",
-      "passageZh": "上週六，我們鎮上的足球隊踢了今年最重要的一場比賽。賽前，工人升級了球場照明，稍微整修了老球場，把一個球門附近的長裂縫補好，市長還好玩地把一顆球拋向觀眾。比賽進行到一半，一隻狗翹著尾巴跑進場內，全場觀眾大笑。教練去年把我們最好的後衛改成守門員，他今天擋下了兩記很難的射門。球隊沒能保住一開始的領先，比賽最後以平手收場。下起大雨時，有些球迷逃回車上，錯過了最精采的時刻。",
+      "passageEn": "Last Saturday, our town's football team played its most important game of the year. Before the match, workers upgraded the lights, made a few adjustments to the old pitch, and filled a long crack near one of the goals. The mayor even pitched a ball into the crowd for fun. In the middle of the game, a dog ran onto the field with its tail in the air, and the crowd exploded with laughter. Last year, the coach converted our best defender into a goalkeeper, and in this game he saved two difficult shots. The team could not sustain its early lead, and the game ended in a draw. When heavy rain started late in the game, some fans fled to their cars and missed the best moments.",
+      "passageZh": "上週六，我們鎮上的足球隊踢了今年最重要的一場比賽。賽前，工人升級了球場照明，稍微整修了老球場，把一個球門附近的長裂縫補好。市長還好玩地把一顆球拋向觀眾。比賽進行到一半，一隻狗翹著尾巴跑進場內，全場觀眾大笑。教練去年把我們最好的後衛改成守門員，他在這場比賽中擋下了兩記很難的射門。球隊沒能保住一開始的領先，比賽最後以平手收場。比賽後段下起大雨時，有些球迷逃回車上，錯過了最精采的時刻。",
       "questions": [
         {
           "questionZh": "比賽進行到一半時發生了什麼事？",
@@ -302,6 +302,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（crack）原位換成翻譯題，沿用題 id b2-u41-l02-q17；目標字沿用 crack",
         "resolution": "改為 translate：promptZh「我的手機螢幕上有一條很長的裂縫。」、hintWords [\"crack\"]、referenceEn [\"There is a long crack in my phone screen.\",\"My phone screen has a long crack in it.\"]、rubricZh [\"crack 當名詞「裂縫」（例如 a long crack in… 等）\",\"「有」可寫，例如 there is、has 等；介系詞寫 in 或 on 都不扣分\"]（原 makeSentence：instructionZh「用 crack 造一個句子，說說你身邊有什麼東西有裂縫或裂開了。」、referenceEn [\"There is a long crack in my phone screen.\",\"My favorite cup cracked when I washed it in hot water.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

@@ -103,7 +103,7 @@
       "id": "b1-u41-l02-q08",
       "type": "wordCard",
       "word": "rescue",
-      "exampleEn": "The old cinema was rescued by the people of the town.",
+      "exampleEn": "The old movie theater was rescued by the people of the town.",
       "exampleZh": "那家老電影院被鎮上的居民救了下來。",
       "glossZh": "救援；解救",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "不要把玩具丟得滿地都是，把它們放回箱子裡。",
       "questionZh": "說話者要孩子做什麼？",
       "options": [
-        "Buy some new toys today.",
-        "Play outside after lunch.",
-        "Give the toys to a friend.",
-        "Clean up the toys."
+        "Buy some new toys today",
+        "Play outside after lunch",
+        "Give the toys to a friend",
+        "Clean up the toys"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u41-l02-q15",
       "type": "reading",
-      "passageEn": "Last year, my uncle's village decided to rebuild its old library. During the work, the children had to use the library in the next town, and the separation from their friends was hard. My uncle dedicated his weekends to the work. One day, a kitten got stuck on the roof, and a firefighter rescued it. Strong winds scattered paper all over the yard. My uncle twisted his ankle, but he kept working. Everyone admired his devotion. When the work was finished, the children happily bounced balls in the new yard again. The village also reserved a room in the library for a small museum about the village's history.",
-      "passageZh": "去年，我叔叔住的村莊決定重建老舊的圖書館。施工期間，孩子們只能去隔壁鎮的圖書館，和朋友分開讓他們很難受。我叔叔把週末都奉獻給這項工作。有一天，一隻小貓被困在屋頂上，一位消防員把牠救了下來。強風把紙張吹散到院子各處。叔叔扭傷了腳踝，但還是繼續工作。大家都很欽佩他的奉獻精神。工程完成後，孩子們又開心地在新院子裡拍球了。村裡還在圖書館保留了一間房間，做成介紹村莊歷史的小博物館。",
+      "passageEn": "Last year, my uncle's village decided to rebuild its old library. During the work, the children had to use libraries in different nearby towns, and the separation from their friends was hard. My uncle dedicated his weekends to the work. One day, a kitten got stuck on the roof, and a firefighter rescued it. Strong winds scattered paper all over the yard. My uncle twisted his ankle, but he kept working. Everyone admired his devotion. When the work was finished, the children happily bounced balls in the new yard again. The village also reserved a room in the library for a small museum about the village's history.",
+      "passageZh": "去年，我叔叔住的村莊決定重建老舊的圖書館。施工期間，孩子們只能分散到附近不同城鎮的圖書館，和朋友分開讓他們很難受。我叔叔把週末都奉獻給這項工作。有一天，一隻小貓被困在屋頂上，一位消防員把牠救了下來。強風把紙張吹散到院子各處。叔叔扭傷了腳踝，但還是繼續工作。大家都很欽佩他的奉獻精神。工程完成後，孩子們又開心地在新院子裡拍球了。村裡還在圖書館保留了一間房間，做成介紹村莊歷史的小博物館。",
       "questions": [
         {
           "questionZh": "消防員救了什麼？",
@@ -480,6 +480,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rescue）原位換成翻譯題，沿用題 id b1-u41-l02-q17；目標字沿用 rescue",
         "resolution": "改為 translate：promptZh「消防員從樹上救下了一隻貓。」、hintWords [\"rescue\"]、referenceEn [\"The firefighters rescued a cat from a tree.\",\"A cat was rescued from the tree by firefighters.\"]、rubricZh [\"用 rescue 表示「救援」\"]（原 makeSentence：instructionZh「用 rescue 造一個句子，說說一次救援的故事。」、referenceEn [\"I once rescued my little brother's kite from a tree.\",\"I rescued my phone just before it fell into the pool.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

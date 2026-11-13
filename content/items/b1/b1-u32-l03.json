@@ -79,7 +79,7 @@
       "word": "queue",
       "exampleEn": "Please join the queue and wait your turn.",
       "exampleZh": "請排隊等候輪到你。",
-      "glossZh": "隊伍；排隊的行列",
+      "glossZh": "隊伍；排隊的行列；（英式）",
       "distractorsZh": [
         "座位",
         "號碼",
@@ -105,7 +105,7 @@
       "word": "noticeboard",
       "exampleEn": "The noticeboard is next to the front door.",
       "exampleZh": "公告欄在前門旁邊。",
-      "glossZh": "公告欄",
+      "glossZh": "公告欄；（英式）",
       "distractorsZh": [
         "黑板",
         "窗戶",
@@ -121,14 +121,14 @@
     {
       "id": "b1-u32-l03-q10",
       "type": "listenChoice",
-      "audioEn": "Please write your name on the noticeboard if you want a paid day off in May.",
-      "audioZh": "如果你想在五月請一天有薪假，請把名字寫在公告欄上。",
+      "audioEn": "To take a paid day off in May, add your name to the list on the noticeboard.",
+      "audioZh": "如果你想在五月請一天有薪假，請在公告欄上的名單寫上你的名字。",
       "questionZh": "想在五月請有薪假要怎麼做？",
       "options": [
-        "Write your name on a form.",
-        "Send an email to the manager's office.",
-        "Talk to the manager before the end of April.",
-        "Add your name to the noticeboard."
+        "Write your name on a form",
+        "Send an email to the manager's office",
+        "Talk to the manager before the end of April",
+        "Add your name to the noticeboard"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u32-l03-q15",
       "type": "reading",
-      "passageEn": "Here is what happened at today's staff meeting. The first item on the agenda was the negotiation with the company that sells us paper. The manager explained how she negotiated a lower price. Then she talked about paid holidays: from next year, all staff will get fifteen paid days off. She also asked everyone to write any planned absence on the noticeboard. At the end, she joked about procrastination: \"Please don't wait until Friday to finish Monday's work!\" After the meeting, there was a long queue at the coffee machine.",
-      "passageZh": "以下是今天員工會議的情形。議程的第一項是和賣紙給我們的公司協商。經理說明了她怎麼談到更低的價格。接著她談到有薪假：從明年起，所有員工都有十五天有薪假。她也請大家把預定的請假寫在公告欄上。最後，她拿拖延開玩笑：「請不要等到星期五才完成星期一的工作！」會後，咖啡機前面大排長龍。",
+      "passageEn": "Here is what happened at today's staff meeting. The first item on the agenda was the negotiation with the company that sells us paper. The manager explained how she negotiated a lower price. Then she talked about paid holidays: from next year, all staff will get fifteen paid days off. She also asked everyone to add any planned absence to the list on the noticeboard. Finally, she joked about procrastination: \"Please don't wait until Friday to finish Monday's work!\" After the meeting, there was a long queue at the coffee machine.",
+      "passageZh": "以下是今天員工會議的情形。議程的第一項是和賣紙給我們的公司協商。經理說明了她怎麼談到更低的價格。接著她談到有薪假：從明年起，所有員工都有十五天有薪假。她也請大家把預定的請假加到公告欄上的清單裡。最後，她拿拖延開玩笑：「請不要等到星期五才完成星期一的工作！」會後，咖啡機前面大排長龍。",
       "questions": [
         {
           "questionZh": "經理和賣紙的公司談了什麼？",
@@ -218,7 +218,7 @@
         "procrastination"
       ],
       "referenceEn": [
-        "Procrastination made me finish my homework very late.",
+        "I finished my homework very late because of procrastination.",
         "Because of procrastination, I finished my homework very late."
       ],
       "rubricZh": [
@@ -379,6 +379,42 @@
         "message": "創辦人裁示：造句改翻譯：造句題（noticeboard）原位換成翻譯題，沿用題 id b1-u32-l03-q17；目標字沿用 noticeboard",
         "resolution": "改為 translate：promptZh「考試成績會貼在公告欄上。」、hintWords [\"noticeboard\"]、referenceEn [\"The exam results will be put up on the noticeboard.\",\"The test results will be posted on the noticeboard.\"]、rubricZh [\"用 noticeboard 表示「公告欄」（寫 notice board、bulletin board 也正確）\",\"「貼」可寫，例如 put up、posted 等\"]（原 makeSentence：instructionZh「用 noticeboard 造一個句子，說說你在公告欄上看過的東西。」、referenceEn [\"I saw an ad for a free concert on the noticeboard.\",\"There is a poster about a lost cat on our school noticeboard.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、audioZh、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioEn（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

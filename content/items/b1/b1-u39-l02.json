@@ -125,10 +125,10 @@
       "audioZh": "今天浪太大，我們不能在礁石附近游泳。",
       "questionZh": "為什麼今天不能在礁石附近游泳？",
       "options": [
-        "The reef is too big.",
-        "The water is cold.",
-        "It is too late today.",
-        "The sea is too rough."
+        "The reef is too big",
+        "The water is cold",
+        "It is too late today",
+        "The sea is too rough"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u39-l02-q15",
       "type": "reading",
-      "passageEn": "Last summer, my family visited a small island with an old volcano. The volcano has not been active for many years. In the morning, we went diving near a reef and saw a big sea turtle swimming slowly. In the afternoon, we walked up the hill, but the path was too steep for us, so a farmer let us ride his mule. On the way, a flock of birds flew over our heads. The farmer told us that spring is the breeding season for these birds. He also showed us that the bark of some trees can be used to make baskets. At night, the wind was freezing, and we sat close to the fire.",
-      "passageZh": "去年夏天，我們全家去了一座有古老火山的小島。那座火山已經很多年沒有活動了。早上，我們在礁石附近潛水，看到一隻大海龜在水中慢慢前進。下午我們往山上走，但小路對我們來說太陡了，所以一位農夫讓我們騎他的騾子。路上，一群鳥從我們頭上飛過。農夫告訴我們，春天是這些鳥的繁殖季節。他還告訴我們，有些樹的樹皮可以用來編籃子。晚上，風冷得刺骨，我們靠著火坐在一起。",
+      "passageEn": "Last summer, my family visited a small island with an old volcano. The volcano has not been active for many years. In the morning, we went diving near a reef and saw a big sea turtle swimming slowly. In the afternoon, we tried to walk up the hill, but the path was too steep for us, so a farmer let us ride his mule. On the way, a flock of birds flew over our heads. The farmer told us that spring is the breeding season for these birds. He also showed us that the bark of some trees can be used to make baskets. At night, the wind was freezing, and we sat close to the fire.",
+      "passageZh": "去年夏天，我們全家去了一座有古老火山的小島。那座火山已經很多年沒有活動了。早上，我們在礁石附近潛水，看到一隻大海龜在水中慢慢前進。下午我們試著往山上走，但小路對我們來說太陡了，所以一位農夫讓我們騎他的騾子。路上，一群鳥從我們頭上飛過。農夫告訴我們，春天是這些鳥的繁殖季節。他還告訴我們，有些樹的樹皮可以用來編籃子。晚上，風冷得刺骨，我們靠著火坐在一起。",
       "questions": [
         {
           "questionZh": "他們在礁石附近看到什麼？",
@@ -373,6 +373,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（freezing）原位換成翻譯題，沿用題 id b1-u39-l02-q17；目標字沿用 freezing",
         "resolution": "改為 translate：promptZh「湖水冰冷，沒有人敢下去游泳。」、hintWords [\"freezing\"]、referenceEn [\"The lake water was freezing, so nobody dared to swim.\",\"The water in the lake was freezing, and no one dared to go in.\"]、rubricZh [\"用 freezing 表示「極冷的」\",\"時態配合內容（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 freezing 造一個句子，說說一次你覺得非常冷的經驗。」、referenceEn [\"It was freezing when I went to the mountains last winter.\",\"My hands were freezing after I played in the snow.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

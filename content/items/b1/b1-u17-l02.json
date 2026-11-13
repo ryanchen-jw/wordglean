@@ -140,10 +140,10 @@
       "audioZh": "往機場的路因施工封閉，請改搭公車。",
       "questionZh": "往機場的路為什麼封閉？",
       "options": [
-        "Because of building work.",
-        "Because of a big accident.",
-        "Because the airport is closed.",
-        "Because of a festival in town."
+        "Because of building work",
+        "Because of a big accident",
+        "Because the airport is closed",
+        "Because of a festival in town"
       ],
       "answer": 0
     },
@@ -377,6 +377,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（border）原位換成翻譯題，沿用題 id b1-u17-l02-q18；目標字沿用 border",
         "resolution": "改為 translate：promptZh「這條河是兩國之間的邊界。」、hintWords [\"border\"]、referenceEn [\"This river forms the border between the two countries.\",\"The river is the border between the two countries.\"]、rubricZh [\"用 border 表示「邊界」（例如 the border between…）\",\"「是」可寫，例如 is、forms 等\"]（原 makeSentence：instructionZh「用 border 造一個句子，說說邊界附近的情況或經過邊界的經驗。」、referenceEn [\"The small town is near the border, so many people there speak two languages.\",\"We waited an hour at the border during our trip.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

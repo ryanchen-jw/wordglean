@@ -125,10 +125,10 @@
       "audioZh": "不要在這裡游泳。水看起來很深，其實很淺，而且有石頭。",
       "questionZh": "為什麼不要在這裡游泳？",
       "options": [
-        "The water isn't deep enough.",
-        "The water is too cold today.",
-        "There are too many fish here.",
-        "The water is too deep."
+        "The water isn't deep enough",
+        "The water is too cold today",
+        "There are too many fish here",
+        "The water is too deep"
       ],
       "answer": 0
     },
@@ -396,6 +396,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（shallow）原位換成翻譯題，沿用題 id b1-u35-l09-q17；目標字沿用 shallow",
         "resolution": "改為 translate：promptZh「這部電影的故事很膚淺。」、hintWords [\"shallow\"]、referenceEn [\"The story of this movie is very shallow.\",\"This movie has a very shallow story.\"]、rubricZh [\"用 shallow 表示「膚淺的」\"]（原 makeSentence：instructionZh「用 shallow 造一個句子，說說你去過的一個水很淺的地方。」、referenceEn [\"I played in the shallow water at the beach.\",\"I walked in a shallow stream near my grandma's house.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

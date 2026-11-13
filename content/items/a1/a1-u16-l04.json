@@ -28,8 +28,8 @@
       "id": "a1-u16-l04-q02",
       "type": "wordCard",
       "word": "technology",
-      "exampleEn": "Technology makes our life easy.",
-      "exampleZh": "科技讓我們的生活變得容易。",
+      "exampleEn": "Technology makes our lives easier.",
+      "exampleZh": "科技讓我們的生活更輕鬆。",
       "glossZh": "科技；技術",
       "distractorsZh": [
         "歷史",
@@ -187,7 +187,7 @@
     {
       "id": "a1-u16-l04-q15",
       "type": "reading",
-      "passageEn": "Our school has new technology this year. Every classroom has a computer and a big white board. The teachers put their notes on the internet, so we can read them at home. But there is one rule: no phones in class!",
+      "passageEn": "Our school has new technology this year. Every classroom has a computer and a big whiteboard. The teachers put their notes on the internet, so we can read them at home. But there is one rule: no phones in class!",
       "passageZh": "我們學校今年有了新科技。每間教室都有一台電腦和一面大白板。老師會把筆記放到網路上，所以我們在家也能讀。不過有一條規定：上課不能用手機！",
       "questions": [
         {
@@ -355,6 +355,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（note）原位換成翻譯題，沿用題 id a1-u16-l04-q17；目標字沿用 note",
         "resolution": "改為 translate：promptZh「我可以看一下你的筆記嗎？」、hintWords [\"note\"]、referenceEn [\"Can I see your notes?\",\"Can I look at your notes?\"]、rubricZh [\"「筆記」可寫，例如 notes、note 等\",\"請求可寫，例如 Can I see…、Can I look at…、May I… 等\"]（原 makeSentence：instructionZh「用 note 造一個句子，說說你上課或開會時做筆記的習慣。」、referenceEn [\"I take notes in every class.\",\"I write notes in my notebook at meetings.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

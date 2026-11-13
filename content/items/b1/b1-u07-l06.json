@@ -112,10 +112,10 @@
       "audioZh": "抱歉打擾了，我們需要檢查您房間裡的燈。",
       "questionZh": "說話者為什麼來打擾？",
       "options": [
-        "To look at the lights.",
-        "To clean the room.",
-        "To bring towels.",
-        "To check the heater in the room."
+        "To look at the lights",
+        "To clean the room",
+        "To bring towels",
+        "To check the heater in the room"
       ],
       "answer": 0
     },
@@ -457,6 +457,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（prosperity）原位換成翻譯題，沿用題 id b1-u07-l06-q16；目標字沿用 prosperity",
         "resolution": "改為 translate：promptZh「這條新鐵路為這個地區帶來了繁榮。」、hintWords [\"prosperity\"]、referenceEn [\"The new railway brought prosperity to this area.\",\"The new railway has brought prosperity to the area.\"]、rubricZh [\"用 prosperity 表示「繁榮」（例如 brought prosperity to…）\",\"時態可用 brought、has brought 等\"]（原 makeSentence：instructionZh「用 prosperity 造一個句子，說說你對自己的城市或家鄉未來的希望。」、referenceEn [\"I hope my hometown will enjoy more prosperity in the future.\",\"I wish my city peace and prosperity.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

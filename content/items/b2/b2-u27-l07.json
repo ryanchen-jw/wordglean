@@ -178,8 +178,8 @@
     {
       "id": "b2-u27-l07-q14",
       "type": "reading",
-      "passageEn": "Last week, our local newspaper printed an obituary of Ms. Wu, a painter who lived to ninety-five. She was born into a family of the old nobility, but she chose a simple life. In her twenties, she joined the city's young artists' subculture and painted on the walls of old factories. Later, she spoke out against sexism in the art world, where women's paintings were often ignored. Many people remember her as an impartial judge at art competitions, because she never cared who the artist was. Every morning, she burned incense and sat quietly for an hour before painting. A book about her life later became a bestseller. She once said that art was her only path to immortality.",
-      "passageZh": "上週，我們的地方報紙刊登了吳女士的訃聞，她是一位活到九十五歲的畫家。她出身舊貴族家庭，卻選擇了簡樸的生活。二十幾歲時，她加入了城裡年輕藝術家的次文化圈，在老工廠的牆上作畫。後來，她公開反對藝術界的性別歧視，因為當時女性的畫作常被忽視。很多人記得她是藝術比賽中公正的評審，因為她從不在乎作品是誰畫的。每天早上，她都會燒香、安靜坐一個小時再開始畫畫。後來，一本關於她生平的書成了暢銷書。她曾說，藝術是她通往不朽的唯一道路。",
+      "passageEn": "Last week, our local newspaper printed an obituary of Ms. Wu, a painter who lived to ninety-five. She was born into a family of the old nobility, but she chose a simple life. In her twenties, she joined the city's young artists' subculture and painted on the walls of old factories. Later, she spoke out against sexism in the art world, where women's paintings were often ignored. Many people remember her as an impartial judge at art competitions, because she never cared who the artist was. Every morning, she burned incense and sat quietly for an hour before painting. Years ago, a book about her life became a bestseller. She once said that art was her only path to immortality.",
+      "passageZh": "上週，我們的地方報紙刊登了吳女士的訃聞，她是一位活到九十五歲的畫家。她出身舊貴族家庭，卻選擇了簡樸的生活。二十幾歲時，她加入了城裡年輕藝術家的次文化圈，在老工廠的牆上作畫。後來，她公開反對藝術界的性別歧視，因為當時女性的畫作常被忽視。很多人記得她是藝術比賽中公正的評審，因為她從不在乎作品是誰畫的。每天早上，她都會燒香、安靜坐一個小時再開始畫畫。多年前，一本關於她生平的書就成了暢銷書。她曾說，藝術是她通往不朽的唯一道路。",
       "questions": [
         {
           "questionZh": "吳女士年輕時加入了什麼？",
@@ -355,6 +355,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（subculture）原位換成翻譯題，沿用題 id b2-u27-l07-q16；目標字沿用 subculture",
         "resolution": "改為 translate：promptZh「這座城市的街舞次文化吸引了很多年輕人。」、hintWords [\"subculture\"]、referenceEn [\"The street dance subculture in this city attracts many young people.\",\"Many young people are drawn to this city's street dance subculture.\"]、rubricZh [\"subculture 指次文化（例如 the street dance subculture 等）\",\"時態可用現在式、過去式或現在完成式（例如 attracts、attracted、has attracted 等）\",\"主動或被動都可以（例如 attracts…、are drawn to… 等）\"]（原 makeSentence：instructionZh「用 subculture 造一個句子，說說你知道或感興趣的一種次文化（例如某種音樂、運動或收藏的愛好者）。」、referenceEn [\"I am interested in the gaming subculture in Japan.\",\"My cousin is part of a small subculture of people who collect old cameras.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

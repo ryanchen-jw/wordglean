@@ -125,10 +125,10 @@
       "audioZh": "我弟弟因為冰淇淋掉到地上而大吵大鬧。",
       "questionZh": "弟弟為什麼大吵大鬧？",
       "options": [
-        "He wanted a new toy car.",
-        "He lost a game to his friend.",
-        "He wanted more ice cream.",
-        "He dropped his ice cream."
+        "He wanted a new toy car",
+        "He lost a game to his friend",
+        "He wanted more ice cream",
+        "He dropped his ice cream"
       ],
       "answer": 3
     },
@@ -421,6 +421,12 @@
         "message": "執行長裁示：第③關：SUS 與 u35-l05 跟讀「He told us an incredible story about his trip…」只換形容詞",
         "resolution": "改為 promptZh「他的笑話很有趣，大家都笑了。」、referenceEn [\"His jokes were so amusing that everyone laughed.\",\"His jokes were very amusing, and everybody laughed.\"]、rubricZh [\"用 amusing 表示「有趣的；好笑的」\",\"時態配合內容（例如 were、are 等）\"]（原 promptZh「他把旅行中發生的趣事說給我們聽。」、referenceEn [\"He told us an amusing story about his trip.\",\"He told us some amusing things that happened on his trip.\"]、rubricZh [\"用 amusing 表示「有趣的；好笑的」\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

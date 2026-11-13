@@ -184,8 +184,8 @@
     {
       "id": "a2-u03-l02-q15",
       "type": "reading",
-      "passageEn": "Last month, our company bought a new computer system. At first, it did not work smoothly. The office was very noisy because people were talking loudly on the phone about problems. It was a major problem for everyone. Now everything is fine. The computers are the newest model, and the price was low. My boss says the system has great value for the company.",
-      "passageZh": "上個月，我們公司買了一套新的電腦系統。一開始系統運作得不順，辦公室非常吵，因為大家都在電話上大聲討論各種問題。這對每個人來說都是個大問題。現在一切都沒事了。這些電腦是最新的機型，價格也很低。我老闆說這套系統對公司很有價值。",
+      "passageEn": "Last month, our company bought a new computer system. At first, it did not work smoothly. The office was very noisy because people were talking loudly on the phone about the problems. The noise was a major problem for everyone. Now everything is fine. The computers are the newest model, and the price was low. My boss says the system has great value for the company.",
+      "passageZh": "上個月，我們公司買了一套新的電腦系統。一開始系統運作得不順，辦公室非常吵，因為大家都在電話上大聲討論各種問題。這些噪音對每個人來說都是個大問題。現在一切都沒事了。這些電腦是最新的機型，價格也很低。我老闆說這套系統對公司很有價值。",
       "questions": [
         {
           "questionZh": "一開始辦公室為什麼很吵？",
@@ -329,6 +329,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（low）原位換成翻譯題，沿用題 id a2-u03-l02-q17；目標字沿用 low",
         "resolution": "改為 translate：promptZh「這張椅子對我來說太低了。」、hintWords [\"low\"]、referenceEn [\"This chair is too low for me.\",\"For me, this chair is too low.\"]、rubricZh [\"用 too low 表示「太低」\",\"「對我來說」可寫，例如 for me 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 low 造一個句子，描述一樣很低的東西（例如價格、桌子）。」、referenceEn [\"The water in the river is very low now.\",\"This table is too low for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

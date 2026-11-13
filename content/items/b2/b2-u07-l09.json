@@ -132,8 +132,8 @@
     {
       "id": "b2-u07-l09-q11",
       "type": "shadowing",
-      "sentenceEn": "Because of the shortness of time, we skipped lunch.",
-      "sentenceZh": "因為時間很短，我們沒吃午餐。"
+      "sentenceEn": "Because of the shortness of the trip, we only visited two museums.",
+      "sentenceZh": "因為行程很短，我們只參觀了兩間博物館。"
     },
     {
       "id": "b2-u07-l09-q12",
@@ -176,8 +176,8 @@
     {
       "id": "b2-u07-l09-q14",
       "type": "reading",
-      "passageEn": "My grandmother's old cake recipe came from England, so it uses ounces and pints instead of the units we use today. When I first tried it, the cake was abnormally flat. I checked every step thoroughly and found my mistake: I had used almost a whole pint of milk instead of half. Grandma laughed and said that in her school days, children learned to measure everything carefully. Her teacher even showed them a micrometer for measuring very small things. \"If you get a number wrong, your score is nought,\" the teacher used to say. Since I was only staying a short time, I baked the cake again that same evening. This time it was perfect, and I left with an armful of cakes for my friends.",
-      "passageZh": "我奶奶的老蛋糕食譜來自英格蘭，所以用的是盎司和品脫，而不是我們現在用的單位。我第一次照著做時，蛋糕異常地扁。我徹底檢查了每個步驟，找到了錯誤：我用了將近一整品脫的牛奶，而不是半品脫。奶奶笑著說，她上學的時候，孩子們都要學著仔細量每樣東西。她的老師甚至給他們看過一種用來量極小東西的測微計。老師常說：「數字錯一個，分數就是零。」因為我這次只待很短的時間，當天晚上就又烤了一次蛋糕。這次很完美，我離開時抱著滿懷的蛋糕要送給朋友。",
+      "passageEn": "My grandmother's old cake recipe came from England, so it uses ounces and pints instead of the units we use today. When I first tried it, the cake was abnormally flat. I checked every step thoroughly and found my mistake: I had used almost a whole pint of milk instead of half. Grandma laughed and said that in her school days, children learned to measure everything carefully. Her teacher even showed them a micrometer for measuring very small things. \"If you get a number wrong, your score is nought,\" the teacher used to say. Since I was only staying a short time, I baked the cake again that same evening. This time it was perfect, so I made a few more and left with an armful of cakes for my friends.",
+      "passageZh": "我奶奶的老蛋糕食譜來自英格蘭，所以用的是盎司和品脫，而不是我們現在用的單位。我第一次照著做時，蛋糕異常地扁。我徹底檢查了每個步驟，找到了錯誤：我用了將近一整品脫的牛奶，而不是半品脫。奶奶笑著說，她上學的時候，孩子們都要學著仔細量每樣東西。她的老師甚至給他們看過一種用來量極小東西的測微計。老師常說：「數字錯一個，分數就是零。」因為我這次只待很短的時間，當天晚上就又烤了一次蛋糕。這次很完美，所以我又多做了幾個，離開時抱著滿懷的蛋糕要送給朋友。",
       "questions": [
         {
           "questionZh": "作者第一次做的蛋糕為什麼很扁？",
@@ -401,6 +401,18 @@
         "message": "執行長裁示：第③關：SUS 「一大把」是 handful 的量，與 armful（一抱）不符",
         "resolution": "改為 promptZh「孩子們從院子裡抱了好幾大抱落葉進來。」、referenceEn [\"The children brought in armfuls of leaves from the yard.\",\"The children carried armfuls of fallen leaves in from the yard.\"]、rubricZh [\"armful 表示「一抱之量」，多抱用 armfuls（例如 armfuls of leaves 等）\",\"「抱進來」可寫，例如 brought in、carried in 等\",\"時態可用過去式或現在完成式\"]（原 promptZh「孩子們從院子裡抱了好幾大把落葉進來。」、referenceEn [\"The children brought in armfuls of leaves from the yard.\",\"The children carried armfuls of fallen leaves in from the yard.\"]、rubricZh [\"armful 表示「一抱之量」，多抱用 armfuls（例如 armfuls of leaves 等）\",\"「抱進來」可寫，例如 brought in、carried in 等\",\"時態可用過去式或現在完成式\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

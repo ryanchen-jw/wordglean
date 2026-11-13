@@ -55,7 +55,7 @@
       "word": "chemist",
       "exampleEn": "Some chemists work for food companies.",
       "exampleZh": "有些化學家在食品公司工作。",
-      "glossZh": "化學家；藥劑師",
+      "glossZh": "化學家；藥劑師；（英式：藥劑師義）",
       "distractorsZh": [
         "畫家",
         "廚師",
@@ -92,7 +92,7 @@
       "id": "b1-u38-l03-q07",
       "type": "wordCard",
       "word": "encyclopedia",
-      "exampleEn": "This encyclopedia has twenty books.",
+      "exampleEn": "This encyclopedia has twenty volumes.",
       "exampleZh": "這套百科全書共有二十冊。",
       "glossZh": "百科全書",
       "distractorsZh": [
@@ -127,10 +127,10 @@
       "audioZh": "請用清楚的字跡在表格上寫下你的名字。",
       "questionZh": "說話者要大家怎麼寫名字？",
       "options": [
-        "In red ink, at the top.",
-        "On the back of the form.",
-        "Clearly, so it's easy to read.",
-        "In very small letters."
+        "In red ink, at the top",
+        "On the back of the form",
+        "Clearly, so it's easy to read",
+        "In very small letters"
       ],
       "answer": 2
     },
@@ -362,6 +362,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（motto）原位換成翻譯題，沿用題 id b1-u38-l03-q17；目標字沿用 motto",
         "resolution": "改為 translate：promptZh「我們公司的座右銘是「顧客第一」。」、hintWords [\"motto\"]、referenceEn [\"Our company's motto is \\\"Customers come first.\\\"\",\"The motto of our company is \\\"Customers first.\\\"\"]、rubricZh [\"用 motto 表示「座右銘；標語」\"]（原 makeSentence：instructionZh「用 motto 造一個句子，說說你的座右銘。」、referenceEn [\"My motto is \\\"Try your best every day.\\\"\",\"I live by the motto \\\"Be kind to everyone.\\\"\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

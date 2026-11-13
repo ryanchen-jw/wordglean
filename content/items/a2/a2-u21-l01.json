@@ -106,8 +106,8 @@
       "id": "a2-u21-l01-q08",
       "type": "wordCard",
       "word": "scene",
-      "exampleEn": "The scene at the beach was very funny.",
-      "exampleZh": "海灘的那一幕非常好笑。",
+      "exampleEn": "The beach scene in the movie was very funny.",
+      "exampleZh": "電影裡海灘的那一幕非常好笑。",
       "glossZh": "一幕；場面（電影等）",
       "distractorsZh": [
         "歌曲",
@@ -344,6 +344,12 @@
         "message": "執行長裁示：第③關：SUS 劇場的「幕」英文通常是 act，寫 The first act 是正確譯法卻會被判錯；題目改「第一場」（對應 scene），保留戲劇情境以免與同單元 a2-u21-l03-q16 電影題雷同",
         "resolution": "promptZh 改為 「這齣戲的第一場發生在一間廚房裡。」（原 「這齣戲的第一幕發生在一間廚房裡。」）；rubricZh 改為 [\"用 scene 表示「（戲劇的）一場」（例如 the first scene of the play）\",\"「發生在」可寫，例如 is in、takes place in 等\"]（原 [\"用 scene 表示「（戲劇的）一幕」（例如 the first scene of the play）\",\"「發生在」可寫，例如 is in、takes place in 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

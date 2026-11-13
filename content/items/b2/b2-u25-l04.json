@@ -185,8 +185,8 @@
     {
       "id": "b2-u25-l04-q15",
       "type": "reading",
-      "passageEn": "Last year, a national broadcaster started adding captions to all of its news programs. The idea came from a viewer who often watched the news on her phone's browser in quiet places like the library, where she could not turn the sound on. Some reporters also mumble when they speak quickly, so the captions help everyone. At first, the captions were often wrong. In one report about bees, the word \"buzz\" appeared as \"bus.\" The broadcaster's manager emphatically promised to fix the problem, and the team hired more editors to check unfamiliar names and words. Now viewers can even use the zoom on their screens to make the captions bigger.",
-      "passageZh": "去年，一家全國性的廣播電視公司開始為所有新聞節目加上字幕。這個點子來自一位觀眾，她常在圖書館這類安靜的地方用手機瀏覽器看新聞，在那裡不能開聲音。有些記者講得快時也會口齒不清，所以字幕對每個人都有幫助。一開始，字幕常常出錯。在一則關於蜜蜂的報導中，「buzz（嗡嗡聲）」這個字被打成了「bus（公車）」。電視公司的經理強調一定會修正這個問題，團隊也多請了編輯來檢查不熟悉的人名和字詞。現在，觀眾甚至可以用螢幕的縮放功能把字幕放大。",
+      "passageEn": "Last year, a national broadcaster started adding captions to all of its news programs. The idea came from a viewer who often watched the news on her phone's browser in quiet places like the library, where she could not turn the sound on. Some reporters also mumble when they speak quickly, so the captions help everyone. At first, the captions were often wrong. In one report about bees, the word \"buzz\" appeared as \"bus.\" The broadcaster's manager emphatically promised to fix the problem, and the team hired more editors to check unfamiliar names and words. Now viewers can even zoom in on their screens to make the captions bigger.",
+      "passageZh": "去年，一家全國性的廣播電視公司開始為所有新聞節目加上字幕。這個點子來自一位觀眾，她常在圖書館這類安靜的地方用手機瀏覽器看新聞，在那裡不能開聲音。有些記者講得快時也會口齒不清，所以字幕對每個人都有幫助。一開始，字幕常常出錯。在一則關於蜜蜂的報導中，「buzz（嗡嗡聲）」這個字被打成了「bus（公車）」。電視公司的經理強調一定會修正這個問題，團隊也多請了編輯來檢查不熟悉的人名和字詞。現在，觀眾甚至可以在螢幕上放大畫面，讓字幕變大。",
       "questions": [
         {
           "questionZh": "那位觀眾為什麼需要字幕？",
@@ -315,6 +315,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（zoom）原位換成翻譯題，沿用題 id b2-u25-l04-q17；目標字沿用 zoom",
         "resolution": "改為 translate：promptZh「把地圖放大，你就能看到我們飯店的位置。」、hintWords [\"zoom\"]、referenceEn [\"Zoom in on the map, and you can see where our hotel is.\",\"If you zoom in on the map, you will see our hotel.\"]、rubricZh [\"zoom 當動詞時常寫 zoom in（例如 zoom in on the map 等）\",\"句型可用祈使句＋and 或 if 子句（例如 Zoom in…, and…、If you zoom in… 等）\",\"「看到位置」可寫，例如 see where our hotel is、see our hotel 等\"]（原 makeSentence：instructionZh「用 zoom 造一個句子，說說你拍照時怎麼使用變焦功能。」、referenceEn [\"I used the zoom on my phone to take a photo of the moon.\",\"I often use the zoom to take pictures of birds in the park.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

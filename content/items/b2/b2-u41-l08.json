@@ -14,8 +14,8 @@
       "id": "b2-u41-l08-q01",
       "type": "wordCard",
       "word": "whip",
-      "exampleEn": "My grandmother always whipped eggs by hand, without a machine.",
-      "exampleZh": "我奶奶總是用手打蛋，不用機器。",
+      "exampleEn": "My grandmother always whipped egg whites by hand, without a machine.",
+      "exampleZh": "我奶奶總是用手打發蛋白，不用機器。",
       "glossZh": "攪打；（打）發；鞭打",
       "distractorsZh": [
         "切片",
@@ -107,7 +107,7 @@
       "word": "sack",
       "exampleEn": "He was sacked for always arriving late.",
       "exampleZh": "他因為老是遲到被開除了。",
-      "glossZh": "開除（口語）；裝袋",
+      "glossZh": "開除（口語）；裝袋；（英式：開除義）",
       "distractorsZh": [
         "錄取",
         "升職",
@@ -149,7 +149,7 @@
     {
       "id": "b2-u41-l08-q13",
       "type": "mcq",
-      "stemEn": "If the rain ____, the match will be cancelled.",
+      "stemEn": "If the rain ____, the match will be canceled.",
       "stemZh": "如果雨一直下，比賽就會取消。",
       "options": [
         "tolerates",
@@ -187,7 +187,7 @@
     {
       "id": "b2-u41-l08-q15",
       "type": "reading",
-      "passageEn": "Last weekend, our hiking club climbed a steep hill near the city. Near the top, we had to scramble over large rocks using our hands. One member could not tolerate the heat and wanted to stop, but the rest of us persisted, and she joined us again after a short rest. At the top, someone punched the air with joy. Our leader explained that the town below once exploited the hill for its stone, but today a city project protects the area. The beautiful view stimulated a long discussion about protecting nature. Before going down, we ate cake with whipped cream that someone had carried up in a cool box.",
+      "passageEn": "Last weekend, our hiking club climbed a steep hill near the city. Near the top, we had to scramble over large rocks using our hands. One member could not tolerate the heat and wanted to stop, but the rest of us persisted, and she joined us again after a short rest. At the top, someone punched the air with joy. Our leader explained that the town below once exploited the hill for its stone, but today a city project protects the area. The beautiful view stimulated a long discussion about protecting nature. Before going down, we ate cake with whipped cream that someone had carried up in a cooler.",
       "passageZh": "上週末，我們健行社爬了城市附近的一座陡峭小山。快到山頂時，我們得手腳並用爬過大石頭。有一位社員受不了炎熱想停下來，但其他人堅持往上爬，她休息一下後又跟上了我們。到了山頂，有人開心地揮拳慶祝。領隊說，山下的小鎮以前曾開採這座山的石頭，但現在市政府的一項計畫保護著這一帶。美麗的景色引發了一場關於保護自然的長時間討論。下山前，我們吃了有人用保冷箱背上來、加了打發鮮奶油的蛋糕。",
       "questions": [
         {
@@ -334,6 +334,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（scramble）原位換成翻譯題，沿用題 id b2-u41-l08-q17；目標字沿用 scramble",
         "resolution": "改為 translate：promptZh「火車門一打開，乘客就爭搶座位。」、hintWords [\"scramble\"]、referenceEn [\"When the train doors opened, the passengers scrambled for seats.\",\"The passengers scrambled for seats as soon as the train doors opened.\"]、rubricZh [\"scramble for 表示「爭搶」（例如 scrambled for seats 等）\",\"「一…就」可寫，例如 when、as soon as 等，子句可放句首或句尾\",\"時態可用過去式或現在式（例如 scrambled、scramble 等）\"]（原 makeSentence：instructionZh「用 scramble 造一個句子，說說你看過大家爭搶某樣東西的情況。」、referenceEn [\"People scrambled for seats when the train doors opened.\",\"Shoppers scrambled for cheap shoes on the first day of the sale.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -67,8 +67,8 @@
       "id": "a2-u19-l01-q05",
       "type": "wordCard",
       "word": "police",
-      "exampleEn": "The police stopped the car on the highway.",
-      "exampleZh": "警察在公路上把那輛車攔了下來。",
+      "exampleEn": "The police stopped a car on the highway.",
+      "exampleZh": "警察在公路上把一輛車攔了下來。",
       "glossZh": "警察；警方",
       "distractorsZh": [
         "醫生",
@@ -218,8 +218,8 @@
         "political"
       ],
       "referenceEn": [
-        "She studies political science at university.",
-        "She is studying political science at university."
+        "She studies political science in college.",
+        "She is studying political science in college."
       ],
       "rubricZh": [
         "「政治學」可寫，例如 political science、politics 等",
@@ -355,6 +355,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（society）原位換成翻譯題，沿用題 id a2-u19-l01-q17；目標字沿用 society",
         "resolution": "改為 translate：promptZh「每個人都是社會的一份子。」、hintWords [\"society\"]、referenceEn [\"Everyone is a part of society.\",\"Everybody is part of society.\"]、rubricZh [\"用 society 表示「社會」，泛指時前面不加 the（例如 part of society）\",\"「一份子」可寫，例如 a part of、part of 等\"]（原 makeSentence：instructionZh「用 society 造一個句子，說說社會上的一個現象，或社會需要什麼。」、referenceEn [\"Many people in our society use phones all day.\",\"Our society needs more parks for children.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

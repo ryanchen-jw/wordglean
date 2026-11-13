@@ -125,10 +125,10 @@
       "audioZh": "請把塑膠瓶放進藍色箱子；回收車星期四會來。",
       "questionZh": "回收車哪天來？",
       "options": [
-        "Every other Monday.",
-        "On Tuesday morning.",
-        "On Thursday.",
-        "On Friday."
+        "Every other Monday",
+        "On Tuesday morning",
+        "On Thursday",
+        "On Friday"
       ],
       "answer": 2
     },
@@ -142,7 +142,7 @@
       "id": "b1-u27-l02-q12",
       "type": "shadowing",
       "sentenceEn": "My sister wants to be an environmentalist.",
-      "sentenceZh": "我姊姊想成為環保人士。"
+      "sentenceZh": "我的姊妹想成為環保人士。"
     },
     {
       "id": "b1-u27-l02-q13",
@@ -185,7 +185,7 @@
     {
       "id": "b1-u27-l02-q15",
       "type": "reading",
-      "passageEn": "My aunt is an environmentalist who works for a conservation group. Her team protects a lake near our city. The lake has a healthy ecosystem: fish, birds, insects, and tiny organisms all depend on each other. Last year, the group built a small greenhouse to grow local plants, and later they planted them around the lake. My aunt says the preservation of the lake is important because of its ecological value. She also started a recycling program at her office. Thanks to her, I became interested in ecology, and now I want to study it at university.",
+      "passageEn": "My aunt is an environmentalist who works for a conservation group. Her team protects a lake near our city. The lake has a healthy ecosystem: fish, birds, insects, and tiny organisms all depend on each other. Last year, the group built a small greenhouse to grow local plants, and later they planted them around the lake. My aunt says the preservation of the lake is important because of its ecological value. She also started a recycling program at her office. Thanks to her, I became interested in ecology, and now I want to study it in college.",
       "passageZh": "我阿姨是一位環保人士，在一個保育團體工作。她的團隊保護我們城市附近的一座湖。這座湖有健康的生態系統：魚、鳥、昆蟲和微小的生物都互相依賴。去年，這個團體蓋了一間小溫室來種本地植物，之後再把它們種到湖邊。阿姨說保護這座湖很重要，因為它有生態價值。她也在辦公室推動了一個回收計畫。因為她，我開始對生態學感興趣，現在我想在大學讀這個科目。",
       "questions": [
         {
@@ -306,6 +306,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（recycling）原位換成翻譯題，沿用題 id b1-u27-l02-q17；目標字沿用 recycling",
         "resolution": "改為 translate：promptZh「這棟大樓的回收區在地下室。」、hintWords [\"recycling\"]、referenceEn [\"The recycling area of this building is in the basement.\",\"This building's recycling area is in the basement.\"]、rubricZh [\"用 recycling 表示「資源回收」（例如 the recycling area）\"]（原 makeSentence：instructionZh「用 recycling 造一個句子，說說你家怎麼做回收。」、referenceEn [\"My family does recycling every week.\",\"I take our recycling to the bins on Sunday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

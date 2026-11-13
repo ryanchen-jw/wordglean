@@ -94,7 +94,7 @@
       "word": "pavement",
       "exampleEn": "Please don't park your bike on the pavement outside the shop.",
       "exampleZh": "請不要把腳踏車停在店門口的人行道上。",
-      "glossZh": "（英）人行道；路面",
+      "glossZh": "人行道；路面；（英式：人行道義）",
       "distractorsZh": [
         "屋頂",
         "草地",
@@ -188,7 +188,7 @@
       "id": "b2-u20-l03-q15",
       "type": "reading",
       "passageEn": "Last summer, my family took a road trip across Texas. In one small town, we visited a museum inside a colonial house, where the interior still had the original wooden floors and an old cello. The guide told us the town had once been on the frontier, and life there was hard. Next, we drove to a big arena to watch a football game, which was loud and exciting. The weather was extremely hot, and my sister joked that she wanted to move to the Arctic. On the last day, we learned that the state was running a statewide program to plant trees along the streets in its towns.",
-      "passageZh": "去年夏天，我們全家開車橫越德州。在一個小鎮，我們參觀了一間設在殖民時期房屋裡的博物館，屋子內部還保留著原本的木地板和一把舊大提琴。導覽員說，這個小鎮以前位在邊疆，那裡的生活很辛苦。接著，我們開車到一座大型競技場看足球賽，場面熱鬧又刺激。天氣熱得要命，我妹妹開玩笑說她想搬到北極去。最後一天，我們得知這個州正在推行一項全州計畫，要在各城鎮的街道旁種樹。",
+      "passageZh": "去年夏天，我們全家開車橫越德州。在一個小鎮，我們參觀了一間設在殖民時期房屋裡的博物館，屋子內部還保留著原本的木地板和一把舊大提琴。導覽員說，這個小鎮以前位在邊疆，那裡的生活很辛苦。接著，我們開車到一座大型競技場看足球賽，場面熱鬧又刺激。天氣熱得要命，我的姊妹開玩笑說她想搬到北極去。最後一天，我們得知這個州正在推行一項全州計畫，要在各城鎮的街道旁種樹。",
       "questions": [
         {
           "questionZh": "導覽員說這個小鎮以前是什麼樣子？",
@@ -357,6 +357,18 @@
         "message": "執行長裁示：第③關：SUS 與同課 q16 同屬飯店情境（§12.3），換情境",
         "resolution": "改為 promptZh「從我家的窗戶，我們可以看到鄰近的山。」、referenceEn [\"We can see the neighboring hills from our window.\",\"From the window of our house, we can see the neighboring mountains.\"]、rubricZh [\"neighboring 放在名詞前，表示「鄰近的」（例如 the neighboring mountains 等）\",\"「山」可寫，例如 mountains、hills 等；「窗戶」單複數皆可\"]（原 promptZh「從飯店的窗戶，我們可以看到鄰近的山。」、referenceEn [\"We can see the neighboring mountains from the hotel window.\",\"From our hotel window, we can see the neighboring hills.\"]、rubricZh [\"neighboring 放在名詞前，表示「鄰近的」（例如 the neighboring mountains 等）\",\"「山」可寫，例如 mountains、hills 等；「窗戶」單複數皆可\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

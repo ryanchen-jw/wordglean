@@ -90,7 +90,7 @@
       "id": "a1-u23-l05-q07",
       "type": "wordCard",
       "word": "blow",
-      "exampleEn": "The wind blows hard today.",
+      "exampleEn": "The wind is blowing hard today.",
       "exampleZh": "今天風吹得很大。",
       "glossZh": "吹",
       "distractorsZh": [
@@ -146,8 +146,8 @@
     {
       "id": "a1-u23-l05-q13",
       "type": "mcq",
-      "stemEn": "The children ____ behind the door. Can you find them?",
-      "stemZh": "孩子們躲在門後面，你找得到他們嗎？",
+      "stemEn": "Let's ____ behind the door. Mom can't find us there.",
+      "stemZh": "我們躲在門後面吧，媽媽在那裡找不到我們。",
       "options": [
         "jump",
         "hide",
@@ -436,6 +436,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（jump）原位換成翻譯題，沿用題 id a1-u23-l05-q17；目標字沿用 jump",
         "resolution": "改為 translate：promptZh「那隻青蛙跳進了河裡。」、hintWords [\"jump\"]、referenceEn [\"The frog jumped into the river.\",\"That frog jumped into the river.\"]、rubricZh [\"jump 可接 into 表示方向（例如 jumped into the river）\",\"過去的事用過去式（例如 jumped）\"]（原 makeSentence：instructionZh「用 jump 造一個句子，說說誰（或什麼動物）會跳。」、referenceEn [\"My dog can jump very high.\",\"The kids jump into the pool.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

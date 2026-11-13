@@ -130,10 +130,10 @@
       "audioZh": "比賽的結局很掃興，因為下雨而提早中止了。",
       "questionZh": "比賽的結局怎麼了？",
       "options": [
-        "It was a draw.",
-        "Our team won it at the end.",
-        "Rain stopped it early.",
-        "It went well."
+        "It was a draw",
+        "Our team won it at the end",
+        "Rain stopped it early",
+        "It went well"
       ],
       "answer": 2
     },
@@ -308,6 +308,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unmusical）原位換成翻譯題，沿用題 id c1-u15-l03-q17；目標字沿用 unmusical",
         "resolution": "改為 translate：promptZh「那隻鸚鵡的叫聲又大又不悅耳。」、hintWords [\"unmusical\"]、referenceEn [\"The parrot's cry is loud and unmusical.\",\"That parrot has a loud, unmusical voice.\"]、rubricZh [\"「不悅耳」用 unmusical（例如 loud and unmusical、an unmusical voice 等）\",\"「叫聲」可寫，例如 cry、call、voice 等\",\"時態配合內容（例如 is、was 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 unmusical 造一個句子，說說你或家人在音樂方面的能力。」、referenceEn [\"Nobody in my family is unmusical; we all play an instrument.\",\"I used to think I was unmusical, but now I enjoy singing in a choir.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

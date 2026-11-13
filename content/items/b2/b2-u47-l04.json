@@ -186,7 +186,7 @@
       "id": "b2-u47-l04-q15",
       "type": "reading",
       "passageEn": "Every Sunday, our newspaper comes with a science supplement for young readers. This week, it was about a space probe that has been traveling for twelve years. The probe recently sent back photos of a frozen moon, where scientists noticed a strange blue glow under the ice. The writer, a devoted fan of astronomy, explained that the glow might come from tiny living things. My sister cut out the photos and put them on her bedroom wall.",
-      "passageZh": "每個星期日，我們訂的報紙都會附上一份給年輕讀者的科學增刊。這週的主題是一個已經飛行十二年的太空探測器。探測器最近傳回一顆冰凍衛星的照片，科學家在冰層下發現一道奇怪的藍色光芒。作者是一位熱愛天文學的人，他解釋說那道光可能來自微小的生物。我妹妹把照片剪下來，貼在她臥室的牆上。",
+      "passageZh": "每個星期日，我們訂的報紙都會附上一份給年輕讀者的科學增刊。這週的主題是一個已經飛行十二年的太空探測器。探測器最近傳回一顆冰凍衛星的照片，科學家在冰層下發現一道奇怪的藍色光芒。作者是一位熱愛天文學的人，他解釋說那道光可能來自微小的生物。我的姊妹把照片剪下來，貼在她臥室的牆上。",
       "questions": [
         {
           "questionZh": "科學家在照片中發現了什麼？",
@@ -339,6 +339,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（knot）原位換成翻譯題，沿用題 id b2-u47-l04-q17；目標字沿用 knot",
         "resolution": "改為 translate：promptZh「每天早上，我都要花很久才能把頭髮上的結梳開。」、hintWords [\"knot\"]、referenceEn [\"Every morning, it takes me a long time to brush the knots out of my hair.\",\"I spend a long time every morning brushing the knots out of my hair.\"]、rubricZh [\"knot 表示「（頭髮、繩子的）結」，例如 the knots in my hair 等\",\"「梳開」可寫，例如 brush … out of my hair、comb out the knots 等\",\"「花很久」可寫，例如 it takes me a long time to…、I spend a long time… 等\"]（原 makeSentence：instructionZh「用 knot 造一個句子，說說你綁東西或打結的經驗。」、referenceEn [\"I tied a knot in the plastic bag so nothing would fall out.\",\"I always have trouble untying the knots in my kite string.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

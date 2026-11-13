@@ -125,10 +125,10 @@
       "audioZh": "市議會將在星期一開會討論新的公車路線。",
       "questionZh": "市議會星期一要討論什麼？",
       "options": [
-        "The price of parking.",
-        "A new city hall.",
-        "The old bus station.",
-        "Where new buses will run."
+        "The price of parking",
+        "A new city hall",
+        "The old bus station",
+        "Where new buses will run"
       ],
       "answer": 3
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u40-l01-q15",
       "type": "reading",
-      "passageEn": "Last month, our class visited the city hall to learn how the city council works. Each of us had to register online before the visit. A council member showed us an old map of the city. She told us about a famous protest long ago: some students walked to the city hall to ask for a bigger library, and the council agreed. She also said that everyone has a right to privacy, so the city keeps people's information safe. The council works with the police to keep the city safe from crime and terrorism, too. At the end, our teacher appointed two students to write a report. My friend joked that writing a report was a punishment, but it was fun.",
+      "passageEn": "Last month, our class visited the city hall to learn how the city council works. Each of us had to register online before the visit. A council member showed us an old map of the city. She told us about a famous protest long ago: some students walked to the city hall to ask for a bigger library, and the council agreed. She also said that everyone has a right to privacy, so the city keeps people's information safe. The council works with the police to keep the city safe from crime and terrorism, too. At the end of the visit, our teacher appointed two students to write a report. My friend joked that writing a report was a punishment, but it was fun.",
       "passageZh": "上個月，我們班去參觀市政府，了解市議會怎麼運作。參觀前，每個人都要先上網登記。一位議員給我們看了一張城市的老地圖。她跟我們說了很久以前一場有名的抗議：一群學生走到市政府，要求蓋一座更大的圖書館，議會後來同意了。她還說，每個人都有隱私權，所以市政府會好好保護大家的資料。議會也和警方合作，保護城市不受犯罪和恐怖行動的威脅。最後，老師指派兩位同學寫一份報告。我朋友開玩笑說寫報告是一種懲罰，但其實很好玩。",
       "questions": [
         {
@@ -492,6 +492,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（privacy）原位換成翻譯題，沿用題 id b1-u40-l01-q17；目標字沿用 privacy",
         "resolution": "改為 translate：promptZh「請尊重別人的隱私。」、hintWords [\"privacy\"]、referenceEn [\"Please respect other people's privacy.\",\"Please respect the privacy of others.\"]、rubricZh [\"用 privacy 表示「隱私」\"]（原 makeSentence：instructionZh「用 privacy 造一個句子，說說你怎麼看隱私。」、referenceEn [\"I need some privacy when I study.\",\"I keep my diary in a box for privacy.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

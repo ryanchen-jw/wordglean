@@ -141,8 +141,8 @@
     {
       "id": "a1-u16-l01-q11",
       "type": "shadowing",
-      "sentenceEn": "Draw an underline under each new word.",
-      "sentenceZh": "在每個新字下面畫一條底線。"
+      "sentenceEn": "Please underline the words you do not know.",
+      "sentenceZh": "請在你不認識的字下面畫線。"
     },
     {
       "id": "a1-u16-l01-q12",
@@ -359,6 +359,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（write）原位換成翻譯題，沿用題 id a1-u16-l01-q17；目標字沿用 write",
         "resolution": "改為 translate：promptZh「我奶奶每個月寫信給我。」、hintWords [\"write\"]、referenceEn [\"My grandmother writes a letter to me every month.\",\"Every month, my grandma writes me a letter.\"]、rubricZh [\"write 後面接寫的東西（例如 a letter），寫給誰可用 to 或直接接人（例如 writes me a letter）\",\"習慣性的事用現在簡單式（例如 writes）\"]（原 makeSentence：instructionZh「用 write 造一個句子，說說你常寫什麼（例如信、電子郵件、筆記）。」、referenceEn [\"I write emails at work every day.\",\"I often write letters to my grandmother.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

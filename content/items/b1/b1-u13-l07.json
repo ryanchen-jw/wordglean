@@ -127,10 +127,10 @@
       "audioZh": "每週五，點我們的炸鱈魚就免費附一壺檸檬汁。",
       "questionZh": "星期五點炸鱈魚會附贈什麼？",
       "options": [
-        "Some lemonade.",
-        "Some fried cod.",
-        "A jug of water.",
-        "Some ice cream."
+        "Some lemonade",
+        "Some fried cod",
+        "A jug of water",
+        "Some ice cream"
       ],
       "answer": 0
     },
@@ -400,6 +400,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（mash）原位換成翻譯題，沿用題 id b1-u13-l07-q17；目標字沿用 mash",
         "resolution": "改為 translate：promptZh「我們晚餐吃烤雞配馬鈴薯泥。」、hintWords [\"mash\"]、referenceEn [\"We had roast chicken with mashed potatoes for dinner.\",\"For dinner, we had roast chicken and mashed potatoes.\"]、rubricZh [\"用 mashed potatoes 表示「馬鈴薯泥」\",\"「烤雞」可寫，例如 roast chicken、grilled chicken 等；時態可用 had、have 等\"]（原 makeSentence：instructionZh「用 mash 造一個句子，說說你會把什麼食物壓成泥。」、referenceEn [\"I mash bananas to make banana bread.\",\"I mash boiled eggs to make egg sandwiches.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

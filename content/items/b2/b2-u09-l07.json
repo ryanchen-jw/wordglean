@@ -132,7 +132,7 @@
         "The office is going to close early this evening",
         "The client is coming today",
         "Missing the deadline could hurt the project",
-        "The boss is on holiday"
+        "The boss is on vacation"
       ],
       "answer": 2
     },
@@ -189,8 +189,8 @@
     {
       "id": "b2-u09-l07-q15",
       "type": "reading",
-      "passageEn": "Ten years ago, a small tea company in our town began to sell its products globally. At first, it prospered, but problems soon followed. Not having an English website was a handicap, and a fight between the two owners jeopardized the business. There was also some unrest among the workers, who felt their pay was unfair. As the situation worsened, the company found itself in a real predicament. A new manager finally solved the crucial problems: she built a new website and raised wages. Today, the company's success has overshadowed its difficult past.",
-      "passageZh": "十年前，我們鎮上一家小茶葉公司開始把產品銷往全球。起初生意很興旺，但問題很快就接踵而來。沒有英文網站是一項不利條件，兩位老闆之間的爭執也危及了公司。員工之間也出現了一些不滿，他們覺得薪水不公平。隨著情況惡化，公司真的陷入了困境。最後，一位新經理解決了關鍵的問題：她架設了新網站，也調高了工資。如今，公司的成功已經讓那段艱難的過去黯然失色。",
+      "passageEn": "Ten years ago, a small tea company in our town began to sell its products globally. At first, it prospered, but problems soon followed. Not having an English website was a handicap, and a fight between the two owners jeopardized the business. There was also some unrest among the workers, who felt their pay was unfair. As the situation worsened, the company found itself in a real predicament. A new manager finally made some crucial changes: she built a new website and raised wages. Today, the company's success has overshadowed its difficult past.",
+      "passageZh": "十年前，我們鎮上一家小茶葉公司開始把產品銷往全球。起初生意很興旺，但問題很快就接踵而來。沒有英文網站是一項不利條件，兩位老闆之間的爭執也危及了公司。員工之間也出現了一些不滿，他們覺得薪水不公平。隨著情況惡化，公司真的陷入了困境。最後，一位新經理做了幾項關鍵的改變：她架設了新網站，也調高了工資。如今，公司的成功已經讓那段艱難的過去黯然失色。",
       "questions": [
         {
           "questionZh": "這家公司一開始遇到什麼不利條件？",
@@ -443,6 +443,18 @@
         "message": "執行長裁示：第③關：SUS 參考答案變體 2 多了中文沒有的 not just here（§12.6）",
         "resolution": "改為 promptZh「這首歌在全世界都很有名。」、referenceEn [\"This song is very famous globally.\",\"The song is well known globally.\"]、rubricZh [\"globally 表示「在全球」，可放形容詞後或句尾（例如 famous globally 等）\",\"「很有名」可寫，例如 famous、well known、popular 等\"]（原 promptZh「這首歌在全世界都很有名。」、referenceEn [\"This song is very famous globally.\",\"The song is well known globally, not just here.\"]、rubricZh [\"globally 表示「在全球」，可放形容詞後或句尾（例如 famous globally 等）\",\"「很有名」可寫，例如 famous、well known、popular 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

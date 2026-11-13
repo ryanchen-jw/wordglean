@@ -14,8 +14,8 @@
       "id": "b1-u43-l04-q01",
       "type": "wordCard",
       "word": "ecstasy",
-      "exampleEn": "The little boy's face was full of ecstasy when he opened the gift.",
-      "exampleZh": "小男孩打開禮物時，臉上充滿狂喜。",
+      "exampleEn": "The little boy was in ecstasy when he opened the gift.",
+      "exampleZh": "小男孩打開禮物時欣喜若狂。",
       "glossZh": "狂喜；極度興奮",
       "distractorsZh": [
         "憤怒",
@@ -127,10 +127,10 @@
       "audioZh": "暴風雨時我妹妹嚇壞了，整晚都躲在床底下。",
       "questionZh": "妹妹在暴風雨時怎麼了？",
       "options": [
-        "She hid under the table.",
-        "She got under her bed.",
-        "She went outside.",
-        "She slept all night."
+        "She hid under the table",
+        "She got under her bed",
+        "She went outside",
+        "She slept all night"
       ],
       "answer": 1
     },
@@ -440,6 +440,18 @@
         "message": "執行長裁示：第③關：SUS 變體 2 taking planes 不自然",
         "resolution": "改為 referenceEn [\"My father is terrified of flying.\",\"My dad is terrified of getting on a plane.\"]（原 referenceEn [\"My father is terrified of flying.\",\"My dad is terrified of taking planes.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

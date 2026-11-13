@@ -125,10 +125,10 @@
       "audioZh": "我跟鄰居的狗玩時，我的貓會吃醋，躲到床底下。",
       "questionZh": "貓吃醋時會怎麼做？",
       "options": [
-        "It plays with the dog.",
-        "It climbs onto the kitchen table.",
-        "It bites the neighbor's dog.",
-        "It goes under the bed."
+        "It plays with the dog",
+        "It climbs onto the kitchen table",
+        "It bites the neighbor's dog",
+        "It goes under the bed"
       ],
       "answer": 3
     },
@@ -167,7 +167,7 @@
       "id": "b1-u37-l08-q14",
       "type": "mcq",
       "stemEn": "She was ____ of her sister because everyone praised her sister's singing.",
-      "stemZh": "她嫉妒姊姊，因為大家都稱讚姊姊的歌聲。",
+      "stemZh": "她嫉妒自己的姊妹，因為大家都稱讚她姊妹的歌聲。",
       "options": [
         "ashamed",
         "jealous",
@@ -354,6 +354,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（jealous）原位換成翻譯題，沿用題 id b1-u37-l08-q17；目標字沿用 jealous",
         "resolution": "改為 translate：promptZh「她的男朋友看到她和別的男生聊天就吃醋。」、hintWords [\"jealous\"]、referenceEn [\"Her boyfriend gets jealous when she talks to other boys.\",\"Her boyfriend becomes jealous when she chats with other boys.\"]、rubricZh [\"用 jealous 表示「吃醋的」（例如 gets jealous、becomes jealous 等）\"]（原 makeSentence：instructionZh「用 jealous 造一個句子，說說你曾經嫉妒或吃醋的經驗。」、referenceEn [\"I felt jealous when my friend got a new phone.\",\"I was jealous of my cousin's long holiday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

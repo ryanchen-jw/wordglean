@@ -12,7 +12,7 @@
       "id": "b1-u11-l03-q01",
       "type": "wordCard",
       "word": "calculator",
-      "exampleEn": "You can use a calculator in the math test.",
+      "exampleEn": "You can use a calculator on the math test.",
       "exampleZh": "數學考試可以用計算機。",
       "glossZh": "計算機",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "洗碗機壞了，所以我們今晚得用手洗碗。",
       "questionZh": "他們今晚得怎麼洗碗？",
       "options": [
-        "With the dishwasher.",
-        "At a restaurant.",
-        "Without the machine.",
-        "Tomorrow morning."
+        "With the dishwasher",
+        "At a restaurant",
+        "Without the machine",
+        "Tomorrow morning"
       ],
       "answer": 2
     },
@@ -186,7 +186,7 @@
       "id": "b1-u11-l03-q15",
       "type": "reading",
       "passageEn": "We just moved into a new apartment. The kitchen already has a dishwasher and a large hot water tank, but we had to buy everything else: pots, plates, and an iron. Prices were relatively high, so my father used a calculator to check every bill. A worker came to fix a loose wire in the bedroom. My brother brought his gym equipment, and it fills the whole balcony. Finally, we put clean sheets on the beds and slept well.",
-      "passageZh": "我們剛搬進一間新公寓。廚房裡原本就有洗碗機和一個大熱水箱，但其他東西都得買：鍋子、盤子，還有熨斗。東西相對貴，所以爸爸用計算機核對每一張帳單。一位工人來修臥室一條鬆掉的電線。我哥哥把他的健身器材搬來，塞滿了整個陽台。最後，我們鋪上乾淨的床單，睡了個好覺。",
+      "passageZh": "我們剛搬進一間新公寓。廚房裡原本就有洗碗機和一個大熱水箱，但其他東西都得買：鍋子、盤子，還有熨斗。東西相對貴，所以爸爸用計算機核對每一張帳單。一位工人來修臥室一條鬆掉的電線。我的兄弟把他的健身器材搬來，塞滿了整個陽台。最後，我們鋪上乾淨的床單，睡了個好覺。",
       "questions": [
         {
           "questionZh": "公寓裡原本就有什麼？",
@@ -469,6 +469,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（equipment）原位換成翻譯題，沿用題 id b1-u11-l03-q17；目標字沿用 equipment",
         "resolution": "改為 translate：promptZh「這間健身房的器材都很新。」、hintWords [\"equipment\"]、referenceEn [\"All the equipment in this gym is new.\",\"The equipment in this gym is all new.\"]、rubricZh [\"用 equipment 表示「器材」（不可數，動詞用單數，例如 is new）\"]（原 makeSentence：instructionZh「用 equipment 造一個句子，說說你的工作、運動或興趣需要什麼設備。」、referenceEn [\"I need a lot of equipment for camping.\",\"My job requires special computer equipment.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "請不要碰那口棺材，它已經有兩千多年的歷史了。",
       "questionZh": "為什麼不能碰那口棺材？",
       "options": [
-        "It is very hot.",
-        "It is very old.",
-        "It is not finished.",
-        "It belongs to a shop."
+        "It is very hot",
+        "It is very old",
+        "It is not finished",
+        "It belongs to a shop"
       ],
       "answer": 1
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u29-l06-q15",
       "type": "reading",
-      "passageEn": "My grandmother told me an old story. Long ago, a cruel king controlled the land, and the people lived under oppression. Farmers faced great hardship because the king took most of their crops. One day, a goddess came down from the sky. With her heavenly power, she liberated the people. She also brought the small villages together so that they could work together. When the king died, he was buried in a plain wooden coffin. Before leaving, the goddess told the people, \"Mankind must always help one another.\"",
+      "passageEn": "My grandmother told me an old story. Long ago, a cruel king controlled the land, and the people lived under oppression. Farmers faced great hardship because the king took most of their crops. One day, a goddess came down from the sky. With her heavenly power, she liberated the people. She also unified the small villages so that they could work together. When the king died, he was buried in a plain wooden coffin. Before leaving, the goddess told the people, \"Mankind must always help one another.\"",
       "passageZh": "奶奶跟我說了一個古老的故事。很久以前，一位殘暴的國王掌控這片土地，人民生活在壓迫之下。農民的處境非常艱苦，因為國王拿走了他們大部分的作物。有一天，一位女神從天而降。她用天上的力量解救了人民，也讓各個小村莊團結起來，可以一起合作。國王死後，被葬在一口簡樸的木棺裡。女神離開前告訴人們：「人類一定要互相幫助。」",
       "questions": [
         {
@@ -379,6 +379,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（mankind）原位換成翻譯題，沿用題 id b1-u29-l06-q17；目標字沿用 mankind",
         "resolution": "改為 translate：promptZh「這項發明改變了人類的生活方式。」、hintWords [\"mankind\"]、referenceEn [\"This invention has changed the way mankind lives.\",\"This invention changed mankind's way of life.\"]、rubricZh [\"用 mankind 表示「人類」（例如 the way mankind lives）\",\"「生活方式」可寫，例如 the way mankind lives、way of life 等；時態可用 changed、has changed 等\"]（原 makeSentence：instructionZh「用 mankind 造一個句子，說說你覺得對人類最重要的一項發明。」、referenceEn [\"I think the phone is the most important invention for mankind.\",\"For me, the wheel is the greatest invention in the history of mankind.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

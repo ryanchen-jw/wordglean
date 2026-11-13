@@ -125,10 +125,10 @@
       "audioZh": "這家店主要賣給學生，所以價格很低。",
       "questionZh": "這家店的價格為什麼很低？",
       "options": [
-        "The shop is very small.",
-        "The shop is closing soon.",
-        "It serves students.",
-        "The shop is far from the town center."
+        "The shop is very small",
+        "The shop is closing soon",
+        "It serves students",
+        "The shop is far from the town center"
       ],
       "answer": 2
     },
@@ -398,6 +398,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（height）原位換成翻譯題，沿用題 id b1-u05-l05-q17；目標字沿用 height",
         "resolution": "改為 translate：promptZh「這兩棵樹的高度差不多。」、hintWords [\"height\"]、referenceEn [\"These two trees are about the same height.\",\"The two trees are almost the same height.\"]、rubricZh [\"用 height 表示「高度」（例如 the same height；寫 are about as tall as each other 也正確）\",\"「差不多」可寫，例如 about、almost、nearly 等\"]（原 makeSentence：instructionZh「用 height 造一個句子，說說某個人或某棟建築的高度。」、referenceEn [\"My brother is the same height as my father.\",\"The height of my office building is about fifty meters.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

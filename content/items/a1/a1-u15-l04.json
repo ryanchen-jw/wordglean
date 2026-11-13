@@ -115,9 +115,9 @@
       "audioZh": "島上的天氣很糟，雨下得很大。",
       "questionZh": "島上的天氣怎麼樣？",
       "options": [
-        "It is rainy.",
-        "It is snowy.",
-        "It is sunny."
+        "It is rainy",
+        "It is snowy",
+        "It is sunny"
       ],
       "answer": 0
     },
@@ -201,7 +201,9 @@
       "id": "a1-u15-l04-q15",
       "type": "translate",
       "promptZh": "明天天氣怎麼樣？",
-      "hintWords": [],
+      "hintWords": [
+        "tomorrow"
+      ],
       "referenceEn": [
         "What will the weather be like tomorrow?",
         "How will the weather be tomorrow?"
@@ -298,6 +300,18 @@
         "message": "執行長裁示：第③關：SUS 要點寫死 always 位置，會判錯 has always been warm",
         "resolution": "改為 rubricZh [\"weather 前面加 the，不加 a\",\"always 可放在 be 動詞或助動詞後（例如 is always warm、has always been warm）\"]（原 [\"weather 前面加 the，不加 a\",\"always 放在 be 動詞後面（例如 is always warm）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：hintWords（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

@@ -53,7 +53,7 @@
       "word": "carriage",
       "exampleEn": "The first carriage of the train was empty.",
       "exampleZh": "火車的第一節車廂是空的。",
-      "glossZh": "（火車）車廂；馬車",
+      "glossZh": "（火車）車廂；馬車；（英式：火車車廂義）",
       "distractorsZh": [
         "車頂",
         "車站",
@@ -125,10 +125,10 @@
       "audioZh": "要去飯店的話，過橋後在第一個路口轉彎。",
       "questionZh": "過橋後該怎麼走？",
       "options": [
-        "Go straight on.",
-        "Take the second turning.",
-        "Turn at the first road.",
-        "Turn around."
+        "Go straight on",
+        "Take the second turning",
+        "Turn onto the first road",
+        "Turn around"
       ],
       "answer": 2
     },
@@ -380,6 +380,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（souvenir）原位換成翻譯題，沿用題 id b1-u18-l04-q17；目標字沿用 souvenir",
         "resolution": "改為 translate：promptZh「她把旅行帶回來的紀念品放在書架上。」、hintWords [\"souvenir\"]、referenceEn [\"She keeps the souvenirs from her trips on a shelf.\",\"She puts the souvenirs from her travels on the bookshelf.\"]、rubricZh [\"用 souvenir 表示「紀念品」（單複數都可以）\",\"「放在書架上」可寫，例如 keeps … on a shelf、puts … on the bookshelf 等\"]（原 makeSentence：instructionZh「用 souvenir 造一個句子，說說你買過或收過的紀念品。」、referenceEn [\"I bought a small souvenir at every station on my trip.\",\"My friend gave me a souvenir from her trip.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

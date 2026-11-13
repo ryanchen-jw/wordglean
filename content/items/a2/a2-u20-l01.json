@@ -197,7 +197,7 @@
     {
       "id": "a2-u20-l01-q16",
       "type": "reading",
-      "passageEn": "Last week, there was a rumor at school: our teacher was leaving. Students argued about it at lunch. Some said it was true, and others did not believe it. Then the headteacher made a statement on the school website: the rumor was not true. Our teacher read it to us in a happy voice. She suggested that we always check the facts before we share news. Her response made everyone laugh: \"I'm not going anywhere!\"",
+      "passageEn": "Last week, there was a rumor at school: our teacher was leaving. Students argued about it at lunch. Some said it was true, and others did not believe it. Then the headteacher posted a statement on the school website: the rumor was not true. Our teacher read it to us in a happy voice. She suggested that we always check the facts before we share news. Her response made everyone laugh: \"I'm not going anywhere!\"",
       "passageZh": "上週學校傳出一個謠言：我們的老師要離開了。同學們在午餐時為此爭論，有人說是真的，有人不相信。後來校長在學校網站上發表正式說明：這個謠言不是真的。老師用開心的聲音念給我們聽。她建議我們分享新聞前一定要先查證。她的回應讓大家都笑了：「我哪裡都不去！」",
       "questions": [
         {
@@ -347,6 +347,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（suggest）原位換成翻譯題，沿用題 id a2-u20-l01-q18；目標字沿用 suggest",
         "resolution": "改為 translate：promptZh「服務生建議我們試試這道菜。」、hintWords [\"suggest\"]、referenceEn [\"The waiter suggested that we try this dish.\",\"The waiter suggested trying this dish.\"]、rubricZh [\"用 suggest 表示「建議」，後面可接 that 子句或動名詞（例如 suggested that we try、suggested trying 等）\",\"時態可用過去式或現在式（例如 suggested、suggests 等）\"]（原 makeSentence：instructionZh「用 suggest 造一個句子，向朋友提出一個建議。」、referenceEn [\"I suggest that we take the bus.\",\"I suggest going to the beach this weekend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

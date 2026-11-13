@@ -146,8 +146,8 @@
     {
       "id": "a1-u21-l04-q13",
       "type": "mcq",
-      "stemEn": "It is not raining now. The ground is ____.",
-      "stemZh": "現在沒下雨了，地面是乾的。",
+      "stemEn": "It did not rain this week. The ground is ____.",
+      "stemZh": "這個星期都沒下雨，地面是乾的。",
       "options": [
         "strange",
         "slow",
@@ -316,6 +316,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（slow）原位換成翻譯題，沿用題 id a1-u21-l04-q17；目標字沿用 slow",
         "resolution": "改為 translate：promptZh「這個時鐘慢了五分鐘。」、hintWords [\"slow\"]、referenceEn [\"This clock is five minutes slow.\",\"The clock is five minutes slow.\"]、rubricZh [\"「慢了五分鐘」可寫，例如 is five minutes slow 等\",\"「這個時鐘」可寫，例如 this clock、the clock 等\"]（原 makeSentence：instructionZh「用 slow 造一個句子，說說很慢的東西或人。」、referenceEn [\"The bus is very slow today.\",\"My computer is too slow.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -111,8 +111,8 @@
       "id": "a2-u15-l06-q09",
       "type": "listenChoice",
       "audioEn": "My dad likes classical music, but my sister only listens to hip hop.",
-      "audioZh": "我爸爸喜歡古典音樂，但我姊姊只聽嘻哈。",
-      "questionZh": "說話的人的姊姊聽什麼音樂？",
+      "audioZh": "我爸爸喜歡古典音樂，但我的姊妹只聽嘻哈。",
+      "questionZh": "說話的人的姊妹聽什麼音樂？",
       "options": [
         "Classical music",
         "Only hip hop",
@@ -474,6 +474,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（video game）原位換成翻譯題，沿用題 id a2-u15-l06-q16；目標字沿用 video game",
         "resolution": "改為 translate：promptZh「這個電玩對我來說太難了。」、hintWords [\"video game\"]、referenceEn [\"This video game is too hard for me.\",\"This video game is too difficult for me.\"]、rubricZh [\"用 video game 表示「電玩」\",\"「太難」可寫，例如 too hard、too difficult 等\",\"「對我來說」可寫，例如 for me 等，放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 video game 造一個句子，說說你或家人玩電玩的習慣。」、referenceEn [\"I play video games for one hour after dinner.\",\"My brother plays video games every weekend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

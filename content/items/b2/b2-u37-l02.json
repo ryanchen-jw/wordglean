@@ -162,8 +162,8 @@
     {
       "id": "b2-u37-l02-q13",
       "type": "reading",
-      "passageEn": "Last month, my aunt sold her apartment in the city and moved into an old villa in the hills. A friend who works in real estate helped her find it. The villa has a big terrace with a view of the valley, and my aunt loves drinking tea there. Moving was hard work: it took three days to pack all her belongings. Her landlady from her student days, Mrs. Ota, came to help, and they laughed about the tiny room my aunt had rented forty years ago. In the hills, sorting trash is compulsory, so my aunt now does it carefully. Her son works in health care at the nearby hospital, so he visits every weekend.",
-      "passageZh": "上個月，我阿姨賣掉了城裡的公寓，搬進山上一棟老別墅。一位從事房地產工作的朋友幫她找到這棟房子。別墅有一個可以眺望山谷的大露台，阿姨很喜歡在那裡喝茶。搬家很辛苦：她花了三天才把所有物品打包好。她學生時代的女房東 Ota 太太也來幫忙，兩人笑談阿姨四十年前租的那間小房間。在山上，垃圾分類是強制的，所以阿姨現在都很仔細地分類。她兒子在附近的醫院從事醫療照護工作，所以每個週末都會來看她。",
+      "passageEn": "Last month, my aunt sold her apartment in the city and moved into an old villa in the hills. A friend who works in real estate helped her find it. The villa has a big terrace with a view of the valley, and my aunt loves drinking tea there. Moving was hard work: it took three days to pack all her belongings. Her landlady from her student days, Mrs. Ota, came to help, and they laughed about the tiny room my aunt had rented forty years ago. In her new neighborhood, sorting trash is compulsory, so my aunt now does it carefully. Her son works in health care at the nearby hospital, so he visits every weekend.",
+      "passageZh": "上個月，我阿姨賣掉了城裡的公寓，搬進山上一棟老別墅。一位從事房地產工作的朋友幫她找到這棟房子。別墅有一個可以眺望山谷的大露台，阿姨很喜歡在那裡喝茶。搬家很辛苦：她花了三天才把所有物品打包好。她學生時代的女房東 Ota 太太也來幫忙，兩人笑談阿姨四十年前租的那間小房間。在她的新社區，垃圾分類是強制的，所以阿姨現在都很仔細地分類。她兒子在附近的醫院從事醫療照護工作，所以每個週末都會來看她。",
       "questions": [
         {
           "questionZh": "搬家最辛苦的是什麼？",
@@ -309,6 +309,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（landlady）原位換成翻譯題，沿用題 id b2-u37-l02-q15；目標字沿用 landlady",
         "resolution": "改為 translate：promptZh「我的女房東住在樓上，還養了兩隻貓。」、hintWords [\"landlady\"]、referenceEn [\"My landlady lives upstairs and has two cats.\",\"My landlady lives on the floor above me, and she has two cats.\"]、rubricZh [\"「女房東」可寫，例如 landlady 等\",\"「住在樓上」可寫，例如 lives upstairs、lives on the floor above me 等\",\"「養了兩隻貓」可寫，例如 has two cats、keeps two cats 等\"]（原 makeSentence：instructionZh「用 landlady 造一個句子，說說你遇過或聽說過的一位女房東。」、referenceEn [\"My landlady is very kind and fixes things quickly.\",\"My first landlady lived downstairs and often gave me cookies.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

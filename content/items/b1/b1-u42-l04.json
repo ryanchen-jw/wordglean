@@ -79,8 +79,8 @@
       "id": "b1-u42-l04-q06",
       "type": "wordCard",
       "word": "circular",
-      "exampleEn": "The moon looks circular tonight.",
-      "exampleZh": "今晚的月亮看起來圓圓的。",
+      "exampleEn": "The old castle has a circular tower.",
+      "exampleZh": "那座老城堡有一座圓形的塔。",
       "glossZh": "圓形的；環狀的",
       "distractorsZh": [
         "方形的",
@@ -127,10 +127,10 @@
       "audioZh": "抱歉，桌子黏黏的，有人把果汁灑在上面。",
       "questionZh": "桌子為什麼黏黏的？",
       "options": [
-        "Some juice fell on it.",
-        "A child dropped some ice cream on it.",
-        "Someone spilled honey on it.",
-        "It was just painted."
+        "Some juice fell on it",
+        "A child dropped some ice cream on it",
+        "Someone spilled honey on it",
+        "It was just painted"
       ],
       "answer": 0
     },
@@ -404,6 +404,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（messy）原位換成翻譯題，沿用題 id b1-u42-l04-q17；目標字沿用 messy",
         "resolution": "改為 translate：promptZh「畫畫課結束後，教室變得很髒亂。」、hintWords [\"messy\"]、referenceEn [\"The classroom was very messy after the art class.\",\"After the painting class, the classroom was really messy.\"]、rubricZh [\"用 messy 表示「髒亂的」\"]（原 makeSentence：instructionZh「用 messy 造一個句子，說說你家或你房間的某個地方。」、referenceEn [\"My desk gets messy when I study for exams.\",\"My hair is always messy in the morning.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

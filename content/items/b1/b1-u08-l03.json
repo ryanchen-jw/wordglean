@@ -18,7 +18,7 @@
       "type": "wordCard",
       "word": "twin",
       "exampleEn": "My sister and I are twins, but we don't look alike.",
-      "exampleZh": "我妹妹和我是雙胞胎，但長得不像。",
+      "exampleZh": "我的姊妹和我是雙胞胎，但長得不像。",
       "glossZh": "雙胞胎（之一）",
       "distractorsZh": [
         "獨生子",
@@ -82,7 +82,7 @@
       "id": "b1-u08-l03-q06",
       "type": "wordCard",
       "word": "membership",
-      "exampleEn": "Membership of the club costs fifty dollars a year.",
+      "exampleEn": "Membership in the club costs fifty dollars a year.",
       "exampleZh": "這個俱樂部的會員資格一年五十元。",
       "glossZh": "會員資格；會員身分",
       "distractorsZh": [
@@ -130,10 +130,10 @@
       "audioZh": "各位女士、先生，表演將在五分鐘後開始。",
       "questionZh": "表演什麼時候開始？",
       "options": [
-        "Five minutes from now.",
-        "In fifteen minutes.",
-        "In one hour.",
-        "Five minutes ago."
+        "Five minutes from now",
+        "In fifteen minutes",
+        "In one hour",
+        "Five minutes ago"
       ],
       "answer": 0
     },
@@ -403,6 +403,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（companion）原位換成翻譯題，沿用題 id b1-u08-l03-q17；目標字沿用 companion",
         "resolution": "改為 translate：promptZh「我爺爺退休後，收音機成了他每天的伴。」、hintWords [\"companion\"]、referenceEn [\"After my grandfather retired, the radio became his daily companion.\",\"The radio became my grandpa's daily companion after he retired.\"]、rubricZh [\"用 companion 表示「同伴；陪伴的東西」（例如 his daily companion）\",\"時態可用過去式或現在完成式（例如 became、has become … since he retired 等）\"]（原 makeSentence：instructionZh「用 companion 造一個句子，說說誰（或什麼）是你常常一起做某件事的同伴。」、referenceEn [\"My brother is my companion on long bike rides.\",\"Music is my best companion when I study at night.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

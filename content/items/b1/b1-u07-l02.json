@@ -66,7 +66,7 @@
       "id": "b1-u07-l02-q05",
       "type": "wordCard",
       "word": "contribute",
-      "exampleEn": "Everyone in the team contributed good ideas.",
+      "exampleEn": "Everyone on the team contributed good ideas.",
       "exampleZh": "隊上每個人都貢獻了好點子。",
       "glossZh": "貢獻；捐助；促成",
       "distractorsZh": [
@@ -127,10 +127,10 @@
       "audioZh": "新圖書館的工程進展順利，五月就會開放。",
       "questionZh": "新圖書館什麼時候開放？",
       "options": [
-        "In March.",
-        "In May.",
-        "Next year.",
-        "Next week."
+        "In March",
+        "In May",
+        "Next year",
+        "Next week"
       ],
       "answer": 1
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u07-l02-q15",
       "type": "reading",
-      "passageEn": "Last year, our neighborhood cafe faced a crisis. A new chain store opened nearby and became a real threat. Sales dropped slightly every month, and the owner had to limit the opening hours. Then an idea emerged: the cafe would hold free music nights on a weekly basis. Local musicians contributed their time, and customers came back. Progress was slow at first, but the cafe soon recovered from the damage. Today, the cafe is busier than ever.",
-      "passageZh": "去年，我們這一帶的咖啡店遇到了危機。附近開了一家新的連鎖店，成了真正的威脅。營業額每個月都小幅下滑，老闆只好縮短營業時間。後來大家想出了一個點子：咖啡店每週舉辦免費音樂之夜。當地音樂人貢獻了他們的時間，客人也回來了。一開始進展很慢，但咖啡店很快就從損失中恢復了。現在，這家咖啡店比以前更忙了。",
+      "passageEn": "Last year, our neighborhood cafe faced a crisis. A new chain store opened nearby and became a real threat. Sales dropped every month, and the owner had to limit the opening hours. Then an idea emerged: the cafe would hold free music nights on a weekly basis. Local musicians contributed their time, and customers came back. Progress was slow at first, but the cafe soon recovered from the damage. Today, the cafe is busier than ever.",
+      "passageZh": "去年，我們這一帶的咖啡店遇到了危機。附近開了一家新的連鎖店，成了真正的威脅。營業額每個月都在下滑，老闆只好縮短營業時間。後來大家想出了一個點子：咖啡店每週舉辦免費音樂之夜。當地音樂人貢獻了他們的時間，客人也回來了。一開始進展很慢，但咖啡店很快就從損失中恢復了。現在，這家咖啡店比以前更忙了。",
       "questions": [
         {
           "questionZh": "咖啡店的危機是怎麼來的？",
@@ -477,6 +477,24 @@
         "message": "執行長裁示：第③關：SUS 與 u05-l08 單字卡 maximum「The maximum speed on this road is fifty.」情境、主詞、句型幾乎一樣",
         "resolution": "改為 promptZh「每位乘客的行李有重量限制。」、referenceEn [\"There is a weight limit for each passenger's bags.\",\"Each passenger's bags have a weight limit.\"]、rubricZh [\"用 limit 表示「限制」（例如 a weight limit）\"]（原 promptZh「這條路的速限是每小時五十公里。」、referenceEn [\"The speed limit on this road is fifty kilometers an hour.\",\"The speed limit on this road is fifty kilometers per hour.\"]、rubricZh [\"用 limit 表示「限制」（例如 the speed limit）\",\"「每小時五十公里」可寫，例如 fifty kilometers an hour、50 km per hour 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

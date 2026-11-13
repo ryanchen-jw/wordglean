@@ -136,8 +136,8 @@
     {
       "id": "a2-p02-l04-q12",
       "type": "mcq",
-      "stemEn": "The music is too noisy. Can you ____ the radio?",
-      "stemZh": "音樂太吵了，你可以把收音機轉小聲嗎？",
+      "stemEn": "I want to sleep. Can you ____ the radio?",
+      "stemZh": "我想睡覺，你可以把收音機轉小聲嗎？",
       "options": [
         "write down",
         "turn up",
@@ -174,8 +174,8 @@
     {
       "id": "a2-p02-l04-q14",
       "type": "reading",
-      "passageEn": "Every Saturday morning, Sam gets up at six, gets dressed, and goes to the park. He works out there for an hour with his friend Leo. Leo is often late, so Sam has to wait for him at the gate. After that, they go to a shoe shop. Last week, Sam found a pair of running shoes. He tried them on, but they were too small. The shop worker wrote down his size and promised to call him.",
-      "passageZh": "每個星期六早上，Sam 六點起床、穿好衣服，然後去公園。他和朋友 Leo 在那裡健身一個小時。Leo 常常遲到，所以 Sam 得在門口等他。之後，他們去一家鞋店。上星期，Sam 看到一雙跑鞋，他試穿了，但太小了。店員寫下他的尺寸，答應會打電話給他。",
+      "passageEn": "Every Saturday morning, Sam gets up at six, gets dressed, and goes to the park. He works out there for an hour with his friend Leo. Leo is often late, so Sam has to wait for him at the gate. Last week, they went to a shoe shop after the park. Sam found a pair of running shoes. He tried them on, but they were too small. The shop worker wrote down his size and promised to call him.",
+      "passageZh": "每個星期六早上，Sam 六點起床、穿好衣服，然後去公園。他和朋友 Leo 在那裡健身一個小時。Leo 常常遲到，所以 Sam 得在門口等他。上星期，他們離開公園後去了一家鞋店，Sam 看到一雙跑鞋，他試穿了，但太小了。店員寫下他的尺寸，答應會打電話給他。",
       "questions": [
         {
           "questionZh": "Sam 為什麼常常要在門口等？",
@@ -318,6 +318,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 3 題位（a2-p02-l04-q09、a2-p02-l04-q14#0、a2-p02-l04-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

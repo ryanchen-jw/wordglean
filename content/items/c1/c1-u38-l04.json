@@ -28,7 +28,7 @@
       "id": "c1-u38-l04-q02",
       "type": "wordCard",
       "word": "daydream",
-      "exampleEn": "His daydream of opening a café finally came true.",
+      "exampleEn": "His daydream of opening a cafe finally came true.",
       "exampleZh": "他開咖啡館的白日夢終於實現了。",
       "glossZh": "白日夢；做白日夢",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "同時照顧三個生病的孩子，讓 Ben 度過了一個非常難熬的週末。",
       "questionZh": "Ben 的週末為什麼很難熬？",
       "options": [
-        "He worked late both days.",
-        "He looked after three sick children.",
-        "His trip was canceled.",
-        "It rained all weekend."
+        "He worked late both days",
+        "He looked after three sick children",
+        "His trip was canceled",
+        "It rained all weekend"
       ],
       "answer": 1
     },
@@ -188,7 +188,7 @@
     {
       "id": "c1-u38-l04-q15",
       "type": "reading",
-      "passageEn": "It had been a trying week for Mia, who works at a customer service center. On Monday, an irate customer shouted at her for twenty minutes because his parcel had gone astray. On Wednesday, the company's new answering program gave strange replies, and a colleague joked that it had become sentient. Mia spent most of Thursday in a daydream about her weekend plans. On Saturday, she finally went up in a hot-air balloon for the first time. As she rose above the hills, she felt pure exhilaration and a new sense of vitality. That evening, after a rather lackluster dinner at a hotel, she and her friends sang karaoke with great gusto until midnight.",
+      "passageEn": "It had been a trying week for Mia, who works at a customer service center. On Monday, an irate customer shouted at her for twenty minutes because his package had gone astray. On Wednesday, the company's new answering program gave strange replies, and a colleague joked that it had become sentient. Mia spent most of Thursday in a daydream about her weekend plans. On Saturday, she finally went up in a hot-air balloon for the first time. As she rose above the hills, she felt pure exhilaration and a new sense of vitality. That evening, after a rather lackluster dinner at a hotel, she and her friends sang karaoke with great gusto until midnight.",
       "passageZh": "對在客服中心上班的 Mia 來說，這是難熬的一週。星期一，一位憤怒的客人因為包裹寄丟了，對她吼了二十分鐘。星期三，公司新的自動回覆程式答非所問，一位同事開玩笑說它有了知覺。星期四，Mia 大半天都在對週末計畫做白日夢。星期六，她終於第一次搭上熱氣球。當她升到山丘上空時，感到無比興奮，也重新充滿了活力。那天晚上，在飯店吃了一頓相當平淡的晚餐後，她和朋友們興致勃勃地唱卡拉 OK 唱到半夜。",
       "questions": [
         {
@@ -305,6 +305,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（gusto）原位換成翻譯題，沿用題 id c1-u38-l04-q17；目標字沿用 gusto",
         "resolution": "改為 translate：promptZh「合唱團的成員們興致勃勃地唱完了最後一首歌。」、hintWords [\"gusto\"]、referenceEn [\"The choir members sang the last song with great gusto.\",\"With gusto, the members of the choir sang their final song.\"]、rubricZh [\"「興致勃勃地」用 with gusto（例如 with great gusto 等），位置有彈性\",\"「合唱團的成員」可寫，例如 the choir members、the members of the choir 等\"]（原 makeSentence：instructionZh「用 gusto 造一個句子，描述你很投入、興致勃勃地做某件事。」、referenceEn [\"I sang my favorite song with gusto at my sister's wedding.\",\"I cleaned the whole house with gusto before the party.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

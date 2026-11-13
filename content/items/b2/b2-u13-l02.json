@@ -124,7 +124,7 @@
     {
       "id": "b2-u13-l02-q10",
       "type": "listenChoice",
-      "audioEn": "The thread on this button is loose. Can you sew it back on for me?",
+      "audioEn": "The thread on this button is loose. Can you sew the button back on for me?",
       "audioZh": "這顆鈕扣的線鬆了。你可以幫我縫回去嗎？",
       "questionZh": "說話者請對方做什麼？",
       "options": [
@@ -189,7 +189,7 @@
       "id": "b2-u13-l02-q15",
       "type": "reading",
       "passageEn": "Before my trip to Thailand, I made a list of things to pack. Because the weather is hot, I chose light linen shirts and enough underwear for ten days. I also packed a jacket with a hood in case of rain. At a market in Bangkok, a woman sold affordable perfume with a lovely scent of flowers. Next to her, an artist was drawing temporary tattoos on tourists' arms. My sister got a small one, and the artist even fixed a loose thread on her dress for free. When I showed my mother the photos, she raised an eyebrow at the tattoo, but she loved the soft curls a market hairdresser had given my sister.",
-      "passageZh": "去泰國旅行前，我列了一張打包清單。因為天氣很熱，我選了輕薄的亞麻襯衫，還帶了夠穿十天的內衣褲。我也帶了一件有連身帽的外套，以防下雨。在曼谷的市集裡，一位婦人在賣價格實惠、帶有迷人花香的香水。她旁邊有位藝術家在幫遊客的手臂畫暫時性的刺青。我妹妹畫了一個小的，那位藝術家還免費幫她把洋裝上一根鬆掉的線縫好。我給媽媽看照片時，她對那個刺青挑了挑眉，但她很喜歡市集裡的髮型師幫我妹妹弄的柔軟捲髮。",
+      "passageZh": "去泰國旅行前，我列了一張打包清單。因為天氣很熱，我選了輕薄的亞麻襯衫，還帶了夠穿十天的內衣褲。我也帶了一件有連身帽的外套，以防下雨。在曼谷的市集裡，一位婦人在賣價格實惠、帶有迷人花香的香水。她旁邊有位藝術家在幫遊客的手臂畫暫時性的刺青。我的姊妹畫了一個小的，那位藝術家還免費幫她把洋裝上一根鬆掉的線縫好。我給媽媽看照片時，她對那個刺青挑了挑眉，但她很喜歡市集裡的髮型師幫我的姊妹弄的柔軟捲髮。",
       "questions": [
         {
           "questionZh": "作者為什麼帶亞麻襯衫？",
@@ -205,7 +205,7 @@
           "questionZh": "媽媽看到照片時，對什麼挑了挑眉？",
           "options": [
             "那件新洋裝",
-            "妹妹的柔軟捲髮",
+            "作者姊妹的柔軟捲髮",
             "那個刺青",
             "那瓶花香香水"
           ],
@@ -377,6 +377,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（scent）原位換成翻譯題，沿用題 id b2-u13-l02-q17；目標字沿用 scent",
         "resolution": "改為 translate：promptZh「這家咖啡店裡充滿了剛出爐的麵包香味。」、hintWords [\"scent\"]、referenceEn [\"This coffee shop is full of the scent of bread just out of the oven.\",\"The scent of warm bread from the oven fills this coffee shop.\"]、rubricZh [\"scent 指「香味」（例如 the scent of bread 等）\",\"「充滿」可寫，例如 is full of、fills 等\",\"「剛出爐的麵包」可寫，例如 bread just out of the oven、freshly baked bread 等\"]（原 makeSentence：instructionZh「用 scent 造一個句子，說說一種讓你印象深刻的香味。」、referenceEn [\"The scent of my grandmother's cooking always makes me feel at home.\",\"I love the scent of rain on a summer evening.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].options[1]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

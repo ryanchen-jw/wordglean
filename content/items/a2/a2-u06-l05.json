@@ -185,10 +185,10 @@
       "id": "a2-u06-l05-q15",
       "type": "reading",
       "passageEn": "Last week, my brother had a job interview at a big company. He was very nervous and in a bad mood all morning, so I did him a favor and drove him there. The result was surprising: they offered him the job right away! The pay is attractive, and my parents are full of pride. \"It's not a fortune,\" he said, \"but it's a good start.\"",
-      "passageZh": "上週，我哥哥去一家大公司面試。他整個早上都很緊張、心情也不好，所以我幫了他一個忙，開車載他過去。結果出人意料：他們當場就錄取了他！薪水很吸引人，我爸媽也非常以他為傲。他說：「這不算什麼大錢，但是個好的開始。」",
+      "passageZh": "上週，我的兄弟去一家大公司面試。他整個早上都很緊張、心情也不好，所以我幫了他一個忙，開車載他過去。結果出人意料：他們當場就錄取了他！薪水很吸引人，我爸媽也非常以他為傲。他說：「這不算什麼大錢，但是個好的開始。」",
       "questions": [
         {
-          "questionZh": "面試那天早上，哥哥怎麼了？",
+          "questionZh": "面試那天早上，作者的兄弟怎麼了？",
           "options": [
             "一直在房間裡練習講話",
             "睡過頭了，差點就遲到",
@@ -371,6 +371,12 @@
         "message": "執行長裁示：第③關：SUS 中文沒有時間詞、也可讀成即將發生的事，要點卻只收過去式；題目加時間詞「去年」",
         "resolution": "promptZh 改為 「她去年第一次上台唱歌時很緊張。」（原 「她第一次上台唱歌時很緊張。」）；referenceEn 改為 [\"She was nervous when she first sang on stage last year.\",\"Last year, she felt nervous the first time she sang on stage.\"]（原 [\"She was very nervous when she sang on stage for the first time.\",\"She felt nervous the first time she sang on stage.\"]）；rubricZh 改為 [\"用 nervous 表示「緊張的」（例如 was nervous、felt nervous 等）\",\"去年的事用過去式（例如 was、sang 等）\",\"「第一次」可寫，例如 first sang、the first time、for the first time 等\"]（原 [\"用 nervous 表示「緊張的」（例如 was nervous、felt nervous 等）\",\"過去的事用過去式（例如 was、sang 等）\",\"「第一次」可寫，例如 for the first time、the first time 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

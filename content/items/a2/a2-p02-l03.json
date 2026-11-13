@@ -111,12 +111,12 @@
       "id": "a2-p02-l03-q09",
       "type": "listenChoice",
       "audioEn": "My sister signed up for a cooking class last week.",
-      "audioZh": "我姊姊上星期報名了一堂烹飪課。",
-      "questionZh": "說話者的姊姊上星期做了什麼？",
+      "audioZh": "我的姊妹上星期報名了一堂烹飪課。",
+      "questionZh": "說話者的姊妹上星期做了什麼？",
       "options": [
-        "She joined a cooking course.",
-        "She cooked a big dinner for us.",
-        "She started a new job."
+        "She joined a cooking course",
+        "She cooked a big dinner for us",
+        "She started a new job"
       ],
       "answer": 0
     },
@@ -328,6 +328,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 4 題位（a2-p02-l03-q12、a2-p02-l03-q13、a2-p02-l03-q14#0、a2-p02-l03-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

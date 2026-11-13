@@ -185,7 +185,7 @@
     {
       "id": "b2-u44-l01-q15",
       "type": "reading",
-      "passageEn": "When my cousin moved to a big city for university, she felt a deep loneliness in her first month. She did not know anyone, spoke nervously in class, and became pessimistic about making friends. One weekend, she joined a hiking club. On the first trip, she stood in awe at the top of a mountain, looking at the clouds below. The club leader was very attentive and made everyone feel welcome. When one member got lost, he calmly called him and soon found him. My cousin now has many friends, and she says their kindness was sincere. Every Sunday, they hike vigorously for hours.",
+      "passageEn": "When my cousin moved to a big city for university, she felt a deep loneliness in her first month. She did not know anyone, spoke nervously in class, and became pessimistic about making friends. One weekend, she joined a hiking club. On the first trip, she stood in awe at the top of a mountain, looking at the clouds below. The club leader was very attentive and made everyone feel welcome. When one member got lost, the leader calmly called him and soon found him. My cousin now has many friends, and she says their kindness was sincere. Every Sunday, they hike vigorously for hours.",
       "passageZh": "我表姊到大城市念大學時，第一個月覺得非常孤單。她誰也不認識，在課堂上說話很緊張，也對交朋友變得很悲觀。有個週末，她參加了一個登山社。第一次出遊時，她站在山頂上，驚嘆地看著底下的雲。社長很細心，讓每個人都覺得受歡迎。有一位社員走失時，他冷靜地打電話給對方，很快就找到人了。表姊現在有很多朋友，她說大家的善意都是真心的。每個星期天，他們都會精力充沛地健行好幾個小時。",
       "questions": [
         {
@@ -296,6 +296,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nervously）原位換成翻譯題，沿用題 id b2-u44-l01-q17；目標字沿用 nervously",
         "resolution": "改為 translate：promptZh「比賽開始前，她緊張地在走廊上走來走去。」、hintWords [\"nervously\"]、referenceEn [\"Before the race, she walked nervously up and down the hall.\",\"She nervously walked back and forth in the hall before the race.\"]、rubricZh [\"nervously 修飾動作，可放動詞前或後（例如 walked nervously、nervously walked 等）\",\"「走來走去」可寫，例如 walk up and down、walk back and forth 等\",\"時態可用過去式或現在式（例如 walked、walks 等）\"]（原 makeSentence：instructionZh「用 nervously 造一個句子，說說一次你很緊張的經驗。」、referenceEn [\"I waited nervously for my test results.\",\"My hands shook as I nervously opened the letter.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

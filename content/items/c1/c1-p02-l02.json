@@ -102,7 +102,7 @@
     {
       "id": "c1-p02-l02-q08",
       "type": "listenType",
-      "sentenceEn": "Emails quickly mount up when I'm on holiday.",
+      "sentenceEn": "Emails quickly mount up when I'm on vacation.",
       "sentenceZh": "我去度假時，電子郵件很快就會堆積如山。"
     },
     {
@@ -172,8 +172,8 @@
     {
       "id": "c1-p02-l02-q14",
       "type": "reading",
-      "passageEn": "For years, the number of tourists visiting our island grew quickly, but recently it has leveled off. Local leaders are not worried. They say rapid growth caused problems that had been mounting up, such as traffic jams, crowded beaches and rising rents. Last year, the island council and hotel owners hammered an agreement out to limit new hotels. Residents were also asked for their ideas, and many suggested more buses and bike paths. The council hopes the plan will protect the island's beaches for future visitors and for the people who live there all year.",
-      "passageZh": "多年來，來我們島上觀光的遊客人數成長得很快，但最近已經趨於平穩。地方領導人並不擔心。他們說，快速成長帶來了一些不斷累積的問題，例如塞車、海灘擁擠和房租上漲。去年，島上的議會和飯店業者敲定了一份限制新飯店的協議。居民也被請來提供意見，很多人建議增加公車和腳踏車道。議會希望這個計畫能為未來的遊客和一年到頭住在島上的人，保護島上的海灘。",
+      "passageEn": "For years, the number of tourists visiting our island grew quickly, but recently it has leveled off. Local leaders are not worried. They say rapid growth caused problems that had been mounting up, such as traffic jams, crowded beaches and rising rents. Last year, the island council and hotel owners needed an agreement to limit new hotels, and after months of talks they hammered one out. Residents were also asked for their ideas, and many suggested more buses and bike paths. The council hopes the plan will protect the island's beaches for future visitors and for the people who live there all year.",
+      "passageZh": "多年來，來我們島上觀光的遊客人數成長得很快，但最近已經趨於平穩。地方領導人並不擔心。他們說，快速成長帶來了一些不斷累積的問題，例如塞車、海灘擁擠和房租上漲。去年，島上的議會和飯店業者需要一份限制新飯店的協議，談了好幾個月後終於敲定。居民也被請來提供意見，很多人建議增加公車和腳踏車道。議會希望這個計畫能為未來的遊客和一年到頭住在島上的人，保護島上的海灘。",
       "questions": [
         {
           "questionZh": "快速成長帶來了哪些問題？",
@@ -378,6 +378,24 @@
         "message": "執行長第③關裁示修正：重新盲答審題員指出：正解仍是唯一最長的選項（裁示 4），干擾項補長",
         "resolution": "改前：\"飯店的房間不夠\"；改後：\"飯店的房間完全不夠住\"",
         "resolvedAt": "2026-10-06T00:40:57Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

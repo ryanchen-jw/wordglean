@@ -81,7 +81,7 @@
       "type": "wordCard",
       "word": "thesis",
       "exampleEn": "My brother's thesis is two hundred pages long.",
-      "exampleZh": "我哥哥的論文有兩百頁長。",
+      "exampleZh": "我兄弟的論文有兩百頁長。",
       "glossZh": "論文；論點",
       "distractorsZh": [
         "故事",
@@ -504,6 +504,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（articulate）原位換成翻譯題，沿用題 id b2-u10-l02-q18；目標字沿用 articulate",
         "resolution": "改為 translate：promptZh「他昨天在面試中清楚說明了自己的目標。」、hintWords [\"articulate\"]、referenceEn [\"He clearly articulated his goals in the interview yesterday.\",\"Yesterday, he articulated his goals very clearly during the interview.\"]、rubricZh [\"articulate 當動詞，表示「清楚表達」（例如 articulated his goals 等）\",\"有「昨天」，用過去式（例如 articulated 等）\",\"clearly 可放動詞前或句尾，位置不扣分；「目標」可寫，例如 goals、aims 等\"]（原 makeSentence：instructionZh「用 articulate 造一個句子，說說你在表達想法時的困難或方法。」、referenceEn [\"Before a big meeting, I write notes so I can articulate my main points.\",\"I am learning to articulate my ideas more clearly at work.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

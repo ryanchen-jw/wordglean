@@ -105,8 +105,8 @@
       "id": "b2-u12-l03-q08",
       "type": "wordCard",
       "word": "genius",
-      "exampleEn": "Mozart was a musical genius who wrote songs as a child.",
-      "exampleZh": "莫札特是音樂天才，小時候就會寫曲子。",
+      "exampleEn": "Mozart was a musical genius who wrote his first pieces of music at the age of five.",
+      "exampleZh": "莫札特是音樂天才，五歲就寫出了第一批曲子。",
       "glossZh": "天才；天賦",
       "distractorsZh": [
         "初學者",
@@ -187,8 +187,8 @@
     {
       "id": "b2-u12-l03-q15",
       "type": "reading",
-      "passageEn": "Our book club just finished a fantasy novel about a young girl who must stop an evil king. The writer is a genius at creating strange worlds, but some readers found the story too dark. The girl's journey is full of suffering, and one member admitted the book gave her nightmares. Still, most of us loved its message: kindness and honesty are virtues that can defeat any power. In the final chapter, the king confesses his crimes, and the girl chooses to forgive him. As a decent person, she believes everyone deserves a second chance. Our discussion became quite philosophical, and the book raised our consciousness about how we treat people who are different.",
-      "passageZh": "我們讀書會剛讀完一本奇幻小說，講一個年輕女孩必須阻止一位邪惡的國王。作者是創造奇特世界的天才，但有些讀者覺得故事太黑暗。女孩的旅程充滿苦難，有位成員坦言這本書讓她做了惡夢。不過，我們大多數人都很喜歡它傳達的訊息：善良和誠實是能戰勝任何權力的美德。在最後一章，國王坦承自己的罪行，女孩選擇原諒他。身為一個正派的人，她相信每個人都值得第二次機會。我們的討論變得很有哲理，這本書也讓我們更意識到該如何對待和自己不同的人。",
+      "passageEn": "Our book club just finished a fantasy novel about a young girl who must stop an evil king. The writer is a genius at creating strange worlds, but some readers found the story too dark. The girl's journey is full of suffering, and one member admitted the book gave her nightmares. Still, most of us loved its message: kindness and honesty are virtues that can defeat any power. In the final chapter, the king confesses his crimes, and the girl chooses to forgive him. As a decent person, she believes everyone deserves a second chance. Our discussion became quite philosophical, and the book raised our consciousness about how we treat people who have done wrong.",
+      "passageZh": "我們讀書會剛讀完一本奇幻小說，講一個年輕女孩必須阻止一位邪惡的國王。作者是創造奇特世界的天才，但有些讀者覺得故事太黑暗。女孩的旅程充滿苦難，有位成員坦言這本書讓她做了惡夢。不過，我們大多數人都很喜歡它傳達的訊息：善良和誠實是能戰勝任何權力的美德。在最後一章，國王坦承自己的罪行，女孩選擇原諒他。身為一個正派的人，她相信每個人都值得第二次機會。我們的討論變得很有哲理，這本書也讓我們更意識到該如何對待犯過錯的人。",
       "questions": [
         {
           "questionZh": "小說裡的女孩必須做什麼？",
@@ -490,6 +490,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（genius）原位換成翻譯題，沿用題 id b2-u12-l03-q17；目標字沿用 genius",
         "resolution": "改為 translate：promptZh「這位老師的天賦在於能把很難的觀念講得很簡單。」、hintWords [\"genius\"]、referenceEn [\"This teacher's genius lies in explaining difficult ideas simply.\",\"The genius of this teacher is that she can make hard ideas sound simple.\"]、rubricZh [\"genius 這裡指「天賦」，不可數（例如 his genius lies in…、the genius of this teacher 等）\",\"「在於」可寫，例如 lies in …ing、is that … 等\",\"老師用 he、she 都可以，不扣分\"]（原 makeSentence：instructionZh「用 genius 造一個句子，說說你認識或欣賞的、在某方面很有天分的人。」、referenceEn [\"My younger brother is a genius with computers.\",\"I think my grandmother is a genius in the kitchen.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

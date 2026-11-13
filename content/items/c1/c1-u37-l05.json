@@ -53,7 +53,7 @@
       "id": "c1-u37-l05-q04",
       "type": "wordCard",
       "word": "believably",
-      "exampleEn": "She explained her absence believably, so nobody asked more questions.",
+      "exampleEn": "She explained her absence believably, so nobody asked any more questions.",
       "exampleZh": "她把缺席的原因解釋得合情合理，所以沒人再追問。",
       "glossZh": "令人信服地；可信地",
       "distractorsZh": [
@@ -114,10 +114,10 @@
       "audioZh": "我問起延誤的事，櫃台人員冷冷地回了一句，就轉回去看她的電腦。",
       "questionZh": "櫃台人員如何回應說話者？",
       "options": [
-        "By giving a full refund.",
-        "With a big, friendly smile.",
-        "By calling the manager.",
-        "In a cold way, with little interest in helping."
+        "By giving a full refund",
+        "With a big, friendly smile",
+        "By calling the manager",
+        "In a cold way, with little interest in helping"
       ],
       "answer": 3
     },
@@ -224,7 +224,7 @@
         "exotically"
       ],
       "referenceEn": [
-        "To us, the piece of music sounded exotically beautiful.",
+        "To us, this piece of music sounded exotically beautiful.",
         "This tune sounded exotically beautiful to us."
       ],
       "rubricZh": [
@@ -388,6 +388,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（exotically）原位換成翻譯題，沿用題 id c1-u37-l05-q16；目標字沿用 exotically",
         "resolution": "改為 translate：promptZh「對我們來說，這首曲子聽起來充滿異國風情，非常美。」、hintWords [\"exotically\"]、referenceEn [\"To us, the piece of music sounded exotically beautiful.\",\"This tune sounded exotically beautiful to us.\"]、rubricZh [\"「充滿異國風情」用 exotically 修飾形容詞（例如 exotically beautiful 等）\",\"「曲子」可寫，例如 piece of music、tune、song 等\",\"時態配合內容（例如 sounded、sounds 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 exotically 造一個句子，描述某樣東西帶有異國風情的樣子。」、referenceEn [\"My aunt's living room is exotically decorated with lamps from Morocco.\",\"I bought an exotically patterned scarf at the night market.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

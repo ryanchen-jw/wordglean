@@ -77,8 +77,8 @@
       "id": "a2-u23-l03-q06",
       "type": "wordCard",
       "word": "affair",
-      "exampleEn": "This is a family affair, so please don't ask.",
-      "exampleZh": "這是家務事，請不要問。",
+      "exampleEn": "This is a private affair, so please don't ask.",
+      "exampleZh": "這是私事，請不要問。",
       "glossZh": "事務；事情",
       "distractorsZh": [
         "禮物",
@@ -171,7 +171,7 @@
     {
       "id": "a2-u23-l03-q14",
       "type": "reading",
-      "passageEn": "Our class had a debate: is it better to live in a city or in the countryside? Each team made a strategy before the debate. My team said the biggest advantage of the city is the good buses. The other team said cities are too noisy, and that is the truth. Our teacher explained the purpose of the debate: \"Listen to other opinions.\" In the end, it was impossible to decide!",
+      "passageEn": "Our class had a debate: is it better to live in a city or in the countryside? Each team planned a strategy before the debate. My team said the biggest advantage of the city is the good buses. The other team said cities are too noisy, and that is the truth. Our teacher explained the purpose of the debate: \"Listen to other opinions.\" In the end, it was impossible to decide!",
       "passageZh": "我們班舉辦了一場辯論：住在城市好，還是住在鄉下好？辯論前，每一隊都擬定了策略。我們這隊說城市最大的優點是公車很方便。另一隊說城市太吵，這也是事實。老師解釋這場辯論的目的：「聽聽別人的意見。」到最後，根本不可能分出高下！",
       "questions": [
         {
@@ -297,6 +297,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（purpose）原位換成翻譯題，沿用題 id a2-u23-l03-q16；目標字沿用 purpose",
         "resolution": "改為 translate：promptZh「這個房間沒有特別的用途。」、hintWords [\"purpose\"]、referenceEn [\"This room has no special purpose.\",\"This room doesn't have a special purpose.\"]、rubricZh [\"用 purpose 表示「用途」\",\"「沒有」可寫，例如 has no、doesn't have a 等\"]（原 makeSentence：instructionZh「用 purpose 造一個句子，說說做某件事的目的。」、referenceEn [\"The purpose of this trip is to see my grandparents.\",\"The purpose of the meeting was to plan the party.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

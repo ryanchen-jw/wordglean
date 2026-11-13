@@ -121,14 +121,14 @@
     {
       "id": "b1-u13-l04-q10",
       "type": "listenChoice",
-      "audioEn": "I've lost my appetite since I caught a cold. I'll just have some soup tonight.",
+      "audioEn": "I haven't had much appetite since I caught a cold. I'll just have some soup tonight.",
       "audioZh": "我感冒以後就沒什麼胃口，今晚只要喝點湯就好。",
       "questionZh": "說話者今晚要吃什麼？",
       "options": [
-        "Some rice.",
-        "Only soup.",
-        "Nothing at all.",
-        "A salad."
+        "Some rice",
+        "Only soup",
+        "Nothing at all",
+        "A salad"
       ],
       "answer": 1
     },
@@ -356,6 +356,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nutrient）原位換成翻譯題，沿用題 id b1-u13-l04-q17；目標字沿用 nutrient",
         "resolution": "改為 translate：promptZh「這條河把養分帶給沿岸的農田。」、hintWords [\"nutrient\"]、referenceEn [\"The river brings nutrients to the fields along its banks.\",\"This river carries nutrients to the fields beside it.\"]、rubricZh [\"用 nutrient 的複數表示「養分」（例如 brings nutrients to…）\",\"「沿岸的農田」可寫，例如 the fields along its banks、the fields beside it 等\"]（原 makeSentence：instructionZh「用 nutrient 造一個句子，說說某種食物含有營養。」、referenceEn [\"Eggs are full of nutrients that help children grow.\",\"Fish contains many nutrients that are good for the brain.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

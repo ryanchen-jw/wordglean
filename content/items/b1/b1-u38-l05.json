@@ -115,10 +115,10 @@
       "audioZh": "我在火車站碰到一位老同學，我們已經十年沒見了。",
       "questionZh": "說話者在哪裡遇到老同學？",
       "options": [
-        "At a wedding in the next town.",
-        "Where people catch trains.",
-        "At a coffee shop.",
-        "At their old school."
+        "At a wedding in the next town",
+        "Where people catch trains",
+        "At a coffee shop",
+        "At their old school"
       ],
       "answer": 1
     },
@@ -175,7 +175,7 @@
     {
       "id": "b1-u38-l05-q14",
       "type": "reading",
-      "passageEn": "My old schoolmate Kevin now studies biochemistry at university. Last week, he sent me a funny email about English words. He wrote that the prefix in \"unhappy\" means \"not.\" He also explained that the suffix \"-ness\" turns \"kind\" into a noun: \"kindness.\" Then he asked me a question: can the same letter be a vowel and a consonant? The answer is yes! In my reply, I tried to use his ideas, but I forgot two commas and used the wrong pronoun once. Kevin laughed and said I was getting better. I really enjoy writing to him.",
+      "passageEn": "My old schoolmate Kevin now studies biochemistry in college. Last week, he sent me a funny email about English words. He wrote that the prefix in \"unhappy\" means \"not.\" He also explained that the suffix \"-ness\" turns \"kind\" into a noun: \"kindness.\" Then he asked me a question: can the same letter be a vowel and a consonant? The answer is yes! In my reply, I tried to use his ideas, but I forgot two commas and used the wrong pronoun once. Kevin laughed and said I was getting better. I really enjoy writing to him.",
       "passageZh": "我的老同學 Kevin 現在在大學讀生物化學。上週，他寄給我一封關於英文單字的有趣電子郵件。他寫道，「unhappy」的字首表示「不」。他也解釋，字尾「-ness」會把「kind」變成名詞「kindness」。接著他問我一個問題：同一個字母可以既是母音又是子音嗎？答案是可以！我回信時試著用上他教的東西，但忘了加兩個逗號，還用錯了一次代名詞。Kevin 笑著說我越來越進步了。我很喜歡寫信給他。",
       "questions": [
         {
@@ -399,6 +399,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（schoolmate）原位換成翻譯題，沿用題 id b1-u38-l05-q16；目標字沿用 schoolmate",
         "resolution": "改為 translate：promptZh「她和兩位同學一起創立了一家公司。」、hintWords [\"schoolmate\"]、referenceEn [\"She started a company with two of her schoolmates.\",\"She and two schoolmates started a company together.\"]、rubricZh [\"用 schoolmate 表示「同學」\",\"「創立」可寫，例如 started、set up 等\"]（原 makeSentence：instructionZh「用 schoolmate 造一個句子，說說你和一位同學的事。」、referenceEn [\"One of my schoolmates sits next to me in math class.\",\"I made a birthday card for my schoolmate.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

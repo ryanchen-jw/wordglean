@@ -150,7 +150,7 @@
       "id": "b2-u49-l04-q13",
       "type": "mcq",
       "stemEn": "The ____ boy hid his sister's toys and laughed when she couldn't find them.",
-      "stemZh": "那個淘氣的男孩把妹妹的玩具藏起來，看她找不到就哈哈大笑。",
+      "stemZh": "那個淘氣的男孩把他姊妹的玩具藏起來，看她找不到就哈哈大笑。",
       "options": [
         "benevolent",
         "appreciative",
@@ -187,7 +187,7 @@
     {
       "id": "b2-u49-l04-q15",
       "type": "reading",
-      "passageEn": "This year, our class put on a play about a naughty boy who gets lost in a big city. The story is funny at first, but the ending is heartbreaking when he can't find his way home. My friend Amy played the boy, even though her costume was too big, and her acting astonished everyone. In one scene, the stage lights were uncomfortably bright, and an irritating noise came from the speakers, but she kept going. At the end, the appreciative audience stood up and clapped for a long time.",
+      "passageEn": "This year, our class put on a play about a naughty boy who gets lost in a big city. The story is funny at first, but the ending is heartbreaking when he can't find his way home. My friend Amy played the boy. Even though her costume was too big, her acting astonished everyone. In one scene, the stage lights were uncomfortably bright, and an irritating noise came from the speakers, but she kept going. At the end of the play, the appreciative audience stood up and clapped for a long time.",
       "passageZh": "今年我們班演了一齣戲，講一個頑皮男孩在大城市裡迷路的故事。故事一開始很好笑，但結局他找不到回家的路，令人心碎。我朋友 Amy 演那個男孩，雖然戲服太大，她的演技還是讓大家都很驚豔。有一幕舞台燈光亮得讓人難受，喇叭還傳出惱人的雜音，但她繼續演下去。最後，滿懷感謝的觀眾起立鼓掌了很久。",
       "questions": [
         {
@@ -323,6 +323,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（bravery）原位換成翻譯題，沿用題 id b2-u49-l04-q17；目標字沿用 bravery",
         "resolution": "改為 translate：promptZh「大家都稱讚那個男孩的勇敢，因為他把一隻小狗從河裡救了起來。」、hintWords [\"bravery\"]、referenceEn [\"Everyone praised the boy's bravery because he saved a puppy from the river.\",\"Everyone praised the boy for his bravery after he saved a little dog from the river.\"]、rubricZh [\"bravery 當名詞（例如 the boy's bravery、praised him for his bravery 等）\",\"「稱讚」可寫，例如 praised、admired 等；「救起」可寫，例如 saved、pulled … out of 等\",\"時態配合句意（例如 praised、praise、saved 等）\"]（原 makeSentence：instructionZh「用 bravery 造一個句子，說說一個讓你欣賞的勇敢行為。」、referenceEn [\"I admire the bravery of the girl who saved a cat from the river.\",\"My father showed great bravery when he spoke up for a stranger.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

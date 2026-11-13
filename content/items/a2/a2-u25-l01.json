@@ -149,7 +149,7 @@
       "id": "a2-u25-l01-q13",
       "type": "mcq",
       "stemEn": "My brother and I don't share a room. We sleep in ____ rooms.",
-      "stemZh": "我和弟弟沒有住同一間，我們睡在不同的房間。",
+      "stemZh": "我和我的兄弟沒有住同一間，我們睡在不同的房間。",
       "options": [
         "used",
         "separate",
@@ -186,7 +186,7 @@
     {
       "id": "a2-u25-l01-q15",
       "type": "reading",
-      "passageEn": "Last month, my family moved into an old house. Basically, it was empty when we arrived. In the garden, we found an old metal box. Inside, there was a golden ring and a photo in a small frame. The photo showed a family from long ago. We put the ring and the photo in separate bags and took them to a museum. Then we bought some used furniture for the house.",
+      "passageEn": "Last month, my family moved into an old house. It was basically empty when we arrived. In the garden, we found an old metal box. Inside, there was a golden ring and a photo in a small frame. The photo showed a family from long ago. We put the ring and the photo in separate bags and took them to a museum. Then we bought some used furniture for the house.",
       "passageZh": "上個月，我們家搬進一間老房子。基本上，我們到的時候房子是空的。我們在花園裡發現一個舊的金屬盒子，裡面有一枚金戒指和一張裝在小相框裡的照片。照片裡是很久以前的一家人。我們把戒指和照片分別裝進不同的袋子，送到博物館去。接著我們為房子買了一些二手家具。",
       "questions": [
         {
@@ -306,6 +306,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（used）原位換成翻譯題，沿用題 id a2-u25-l01-q17；目標字沿用 used",
         "resolution": "改為 translate：promptZh「這家店只賣二手衣服。」、hintWords [\"used\"]、referenceEn [\"This shop only sells used clothes.\",\"This store sells only used clothes.\"]、rubricZh [\"用 used 表示「二手的」，放在名詞前（例如 used clothes）\",\"only 可放在動詞前或後（例如 only sells、sells only 等）\"]（原 makeSentence：instructionZh「用 used 造一個句子，說說你買過或想買的二手東西。」、referenceEn [\"I bought a used guitar last year.\",\"I want to buy a used camera.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -54,7 +54,7 @@
       "type": "wordCard",
       "word": "tall",
       "exampleEn": "My brother is very tall.",
-      "exampleZh": "我哥哥很高。",
+      "exampleZh": "我的兄弟很高。",
       "glossZh": "高的（身高）",
       "distractorsZh": [
         "矮的",
@@ -170,7 +170,7 @@
       "stemEn": "He is very ____, so his bed is very long.",
       "stemZh": "他很高，所以他的床很長。",
       "options": [
-        "kind",
+        "short",
         "fat",
         "pretty",
         "tall"
@@ -401,6 +401,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（clothes）原位換成翻譯題，沿用題 id a1-u09-l02-q17；目標字沿用 clothes",
         "resolution": "改為 translate：promptZh「我的衣服都在箱子裡。」、hintWords [\"clothes\"]、referenceEn [\"All my clothes are in the box.\",\"My clothes are all in the box.\"]、rubricZh [\"clothes 一定是複數，動詞用 are\",\"「都」可寫，例如 All my clothes…、My clothes are all… 等\"]（原 makeSentence：instructionZh「用 clothes 造一個句子，說說你喜歡穿什麼樣的衣服。」、referenceEn [\"I like black clothes.\",\"I like clothes with pockets.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

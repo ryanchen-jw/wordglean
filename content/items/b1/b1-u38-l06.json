@@ -114,10 +114,10 @@
       "audioZh": "今天我們要學介系詞，像是 in、on 和 under。",
       "questionZh": "今天要學什麼？",
       "options": [
-        "Words that show place, like \"under.\"",
-        "Words that describe people, like \"tall.\"",
-        "Words that show actions, like \"learn.\"",
-        "Words that ask questions, like \"where.\""
+        "Words that show place, like \"under\"",
+        "Words that describe people, like \"tall\"",
+        "Words that show actions, like \"learn\"",
+        "Words that ask questions, like \"where\""
       ],
       "answer": 0
     },
@@ -409,6 +409,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（antonym）原位換成翻譯題，沿用題 id b1-u38-l06-q16；目標字沿用 antonym",
         "resolution": "改為 translate：promptZh「你知道「便宜」的反義詞是什麼嗎？」、hintWords [\"antonym\"]、referenceEn [\"Do you know the antonym of \\\"cheap\\\"?\",\"Do you know what the antonym of \\\"cheap\\\" is?\"]、rubricZh [\"用 antonym 表示「反義詞」（例如 the antonym of \\\"cheap\\\"）\"]（原 makeSentence：instructionZh「用 antonym 造一個句子，舉出一組反義詞。」、referenceEn [\"The antonym of \\\"happy\\\" is \\\"sad.\\\"\",\"I know that \\\"light\\\" is an antonym of \\\"dark.\\\"\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

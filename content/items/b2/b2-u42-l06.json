@@ -187,7 +187,7 @@
     {
       "id": "b2-u42-l06-q15",
       "type": "reading",
-      "passageEn": "Morning traffic in our city used to be chaotic, with cars, scooters and buses all fighting for space. The old buses could not cope with so many riders. Last year, the city bought fifty hybrid buses that use both electricity and petrol. Each bus has reflective paint on its sides, so drivers can see it easily at night. Riders can bring their bikes on board, but they must keep them upright in a special corner. The drivers seem happier too, and many riders now chat casually with them. Some people said the plan would fail, but the numbers show that traffic is moving faster.",
+      "passageEn": "Morning traffic in our city used to be chaotic, with cars, scooters and buses all fighting for space. The old buses could not cope with so many riders. Last year, the city bought fifty hybrid buses that use both electricity and gas. Each bus has reflective paint on its sides, so drivers can see it easily at night. Riders can bring their bikes on board, but they must keep them upright in a special corner. The drivers seem happier too, and many riders now chat casually with them. Some people said the plan would fail, but the numbers show that traffic is moving faster.",
       "passageZh": "我們城市早上的交通以前很混亂，汽車、機車和公車都在搶空間。舊公車應付不了這麼多乘客。去年，市政府買了五十輛同時使用電和汽油的油電公車。每輛公車側面都塗了反光漆，駕駛在夜裡也能看得很清楚。乘客可以帶腳踏車上車，但必須把車直立放在一個特別的角落。司機們看起來也比較開心，現在很多乘客會隨意地和他們聊天。有些人說這個計畫會失敗，但數字顯示交通變得比較順暢了。",
       "questions": [
         {
@@ -413,6 +413,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（reflective）原位換成翻譯題，沿用題 id b2-u42-l06-q17；目標字沿用 reflective",
         "resolution": "改為 translate：promptZh「晚上騎腳踏車時，最好穿一件反光的外套。」、hintWords [\"reflective\"]、referenceEn [\"You should wear a reflective jacket when you ride a bike at night.\",\"When riding a bike at night, it is best to wear a reflective jacket.\"]、rubricZh [\"reflective 放在名詞前（例如 a reflective jacket 等）\",\"「最好」可寫，例如 should、it is best to、had better 等\",\"when 子句可放句首或句尾\"]（原 makeSentence：instructionZh「用 reflective 造一個句子，說說你看過哪些會反光的東西。」、referenceEn [\"I often see reflective windows on new office buildings.\",\"My watch has a reflective face that shines in the sun.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

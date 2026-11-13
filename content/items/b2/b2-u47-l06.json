@@ -185,8 +185,8 @@
     {
       "id": "b2-u47-l06-q15",
       "type": "reading",
-      "passageEn": "Last month, an old theater in our city opened again after twenty years. The owners hope it will lead to a revival of live shows in the area. On the first night, after weeks of rehearsal, the audience was startled when the lights suddenly went out, but it was part of the play. Later, the sound of a glass shattering on stage made everyone jump again. The director said she had fulfilled a promise to her father, who once worked there. Ticket holders for the next show get a free drink.",
-      "passageZh": "上個月，我們市裡一間老劇院在關閉二十年後重新開幕。老闆們希望這能帶動這一帶現場表演的復興。經過好幾週的排練，首演那晚燈光突然熄滅，觀眾嚇了一跳，不過那是劇情的一部分。後來，舞台上玻璃碎裂的聲音又讓大家嚇得跳起來。導演說，她實現了對父親的承諾，她父親以前曾在那裡工作。下一場表演的持票人可以免費得到一杯飲料。",
+      "passageEn": "Last month, an old theater in our city opened again after twenty years. The owners hope it will lead to a revival of live shows in the area. The actors had spent weeks in rehearsal, and on the first night, the audience was startled when the lights suddenly went out, but it was part of the play. Later, the sound of a glass shattering on stage made everyone jump again. The director said she had fulfilled a promise to her father, who once worked there. Ticket holders for the next show get a free drink.",
+      "passageZh": "上個月，我們市裡一間老劇院在關閉二十年後重新開幕。老闆們希望這能帶動這一帶現場表演的復興。演員們排練了好幾週，首演那晚燈光突然熄滅，觀眾嚇了一跳，不過那是劇情的一部分。後來，舞台上玻璃碎裂的聲音又讓大家嚇得跳起來。導演說，她實現了對父親的承諾，她父親以前曾在那裡工作。下一場表演的持票人可以免費得到一杯飲料。",
       "questions": [
         {
           "questionZh": "首演時燈光突然熄滅是怎麼回事？",
@@ -345,6 +345,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（shatter）原位換成翻譯題，沿用題 id b2-u47-l06-q17；目標字沿用 shatter",
         "resolution": "改為 translate：promptZh「那個壞消息徹底擊垮了她的信心。」、hintWords [\"shatter\"]、referenceEn [\"The bad news completely shattered her confidence.\",\"Her confidence was completely shattered by the bad news.\"]、rubricZh [\"shatter 在這裡是比喻用法，表示「使破滅、擊垮」；主動或被動都可以\",\"「徹底」可寫，例如 completely、totally 等，位置不扣分\",\"時態可用過去式或現在完成式（例如 shattered、has shattered 等）\"]（原 makeSentence：instructionZh「用 shatter 造一個句子，說說某樣東西摔碎或某個希望破滅的情況。」、referenceEn [\"I dropped my phone, and the screen shattered.\",\"The bad news shattered my hopes of a quick trip home.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -140,10 +140,10 @@
       "audioZh": "三點在鎮上廣場的噴水池跟我碰面。",
       "questionZh": "他們要在哪裡碰面？",
       "options": [
-        "At the town library.",
-        "At the station.",
-        "At the monument.",
-        "Beside the fountain."
+        "At the town library",
+        "At the station",
+        "At the monument",
+        "Beside the fountain"
       ],
       "answer": 3
     },
@@ -383,6 +383,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（southern）原位換成翻譯題，沿用題 id b1-u17-l01-q18；目標字沿用 southern",
         "resolution": "改為 translate：promptZh「南部的口音和北部的不太一樣。」、hintWords [\"southern\"]、referenceEn [\"The southern accent is a bit different from the northern one.\",\"The southern accent is not quite the same as the northern accent.\"]、rubricZh [\"用 southern 表示「南部的」（例如 the southern accent）\",\"「不太一樣」可寫，例如 a bit different from、not quite the same as 等\"]（原 makeSentence：instructionZh「用 southern 造一個句子，說說某個地方的南部。」、referenceEn [\"My grandparents live in the southern part of the island.\",\"I'd like to visit the southern coast one day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

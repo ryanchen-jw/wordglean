@@ -188,8 +188,8 @@
     {
       "id": "a2-u01-l07-q15",
       "type": "reading",
-      "passageEn": "Amy and her husband wanted to take a holiday, but they could hardly decide where to go. Amy wanted to go somewhere warm. Her husband said, \"I don't mind. We can go anywhere except a big city.\" In the end, they chose a small town by the sea. \"Let's plan everything ourselves,\" Amy said. It was truly a great holiday, possibly their best one ever.",
-      "passageZh": "Amy 和先生想去度假，卻幾乎決定不了要去哪裡。Amy 想去溫暖的地方。她先生說：「我都可以。除了大城市，去哪裡都行。」最後他們選了一個海邊的小鎮。Amy 說：「我們自己規劃所有的事吧。」那真是一次很棒的假期，可能是他們到目前為止最棒的一次。",
+      "passageEn": "Amy and her husband wanted to take a holiday, but they could hardly agree on where to go. Amy wanted to go somewhere warm. Her husband said, \"I don't mind. We can go anywhere except a big city.\" In the end, they chose a small town by the sea. \"Let's plan everything ourselves,\" Amy said. It was truly a great holiday, possibly their best one ever.",
+      "passageZh": "Amy 和先生想去度假，兩人卻對要去哪裡幾乎談不攏。Amy 想去溫暖的地方。她先生說：「我都可以。除了大城市，去哪裡都行。」最後他們選了一個海邊的小鎮。Amy 說：「我們自己規劃所有的事吧。」那真是一次很棒的假期，可能是他們到目前為止最棒的一次。",
       "questions": [
         {
           "questionZh": "Amy 的先生說哪裡不想去？",
@@ -344,6 +344,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（except）原位換成翻譯題，沿用題 id a2-u01-l07-q17；目標字沿用 except",
         "resolution": "改為 translate：promptZh「這個房間除了一張床，什麼都沒有。」、hintWords [\"except\"]、referenceEn [\"There is nothing in this room except a bed.\",\"This room has nothing except a bed.\"]、rubricZh [\"用 except 表示「除了…」（例如 except a bed、except for a bed 等）\",\"「什麼都沒有」可寫，例如 There is nothing、has nothing 等\"]（原 makeSentence：instructionZh「用 except 造一個句子，說說某一類東西你都喜歡，只有一樣例外。」、referenceEn [\"I like all vegetables except carrots.\",\"I like all kinds of fruit except bananas.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

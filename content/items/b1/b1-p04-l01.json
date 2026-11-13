@@ -118,7 +118,7 @@
         "During a long trip abroad",
         "At the shop where both worked",
         "At a friend's wedding party",
-        "In the same class at university"
+        "In the same class in college"
       ],
       "answer": 1
     },
@@ -157,7 +157,7 @@
       "id": "b1-p04-l01-q13",
       "type": "mcq",
       "stemEn": "My sister ____, so she couldn't come to the party.",
-      "stemZh": "我姊姊著涼感冒了，所以沒辦法來參加派對。",
+      "stemZh": "我的姊妹著涼感冒了，所以沒辦法來參加派對。",
       "options": [
         "caught a bus",
         "caught a cold",
@@ -340,6 +340,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 3 題位（b1-p04-l01-q13、b1-p04-l01-q14#0、b1-p04-l01-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

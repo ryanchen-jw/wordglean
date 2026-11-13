@@ -138,10 +138,10 @@
       "audioZh": "手工藝市集星期六十點在學校禮堂開始。",
       "questionZh": "手工藝市集在哪裡舉行？",
       "options": [
-        "In the school library.",
-        "In the park near the station.",
-        "At the town hall.",
-        "In a hall at the school."
+        "In the school library",
+        "In the park near the station",
+        "At the town hall",
+        "In a hall at the school"
       ],
       "answer": 3
     },
@@ -198,8 +198,8 @@
     {
       "id": "b1-u22-l03-q16",
       "type": "reading",
-      "passageEn": "Every spring, our town holds a literary festival in a big white tent. This year, a young poet read poetry about the sea, and a writer talked about the narrative of his new book. In another room, an old man told old myths about the stars. There was also a comedy show that made everyone laugh. My favorite part was the craft market, where I bought a cup as a souvenir. The weather was perfect, which felt like a small miracle after a week of rain.",
-      "passageZh": "每年春天，我們鎮上都會在一個大白帳篷裡舉辦文學節。今年，一位年輕詩人朗讀關於大海的詩，一位作家談他新書的敘事。在另一個房間，一位老先生講述關於星星的古老神話。還有一場讓大家笑個不停的喜劇表演。我最喜歡的是手工藝市集，我在那裡買了一個杯子當紀念品。天氣好極了，在下了一星期雨之後，感覺像個小奇蹟。",
+      "passageEn": "Every spring, our town holds a literary festival in a big white tent. This year, a young poet read poetry about the sea, and a writer talked about the narrative of his new book. In a smaller tent nearby, an old man told old myths about the stars. There was also a comedy show that made everyone laugh. My favorite part was the craft market, where I bought a cup as a souvenir. The weather was perfect, which felt like a small miracle after a week of rain.",
+      "passageZh": "每年春天，我們鎮上都會在一個大白帳篷裡舉辦文學節。今年，一位年輕詩人朗讀關於大海的詩，一位作家談他新書的敘事。在旁邊一個較小的帳篷裡，一位老先生講述關於星星的古老神話。還有一場讓大家笑個不停的喜劇表演。我最喜歡的是手工藝市集，我在那裡買了一個杯子當紀念品。天氣好極了，在下了一星期雨之後，感覺像個小奇蹟。",
       "questions": [
         {
           "questionZh": "那位老先生講了什麼樣的故事？",
@@ -231,7 +231,7 @@
         "comedy"
       ],
       "referenceEn": [
-        "This play is a very funny comedy, so it is good for the whole family.",
+        "This play is a very funny comedy, and it is good for the whole family.",
         "The play is a really funny comedy that the whole family can enjoy."
       ],
       "rubricZh": [
@@ -356,6 +356,24 @@
         "message": "執行長裁示：第③關：SUS light 當「不嚴肅的」詞義較高；變體 2 a funny comedy 語意重複",
         "resolution": "改為 promptZh「這齣戲是一部很好笑的喜劇，很適合全家一起看。」、referenceEn [\"This play is a very funny comedy, so it is good for the whole family.\",\"The play is a really funny comedy that the whole family can enjoy.\"]、rubricZh [\"用 comedy 表示「喜劇」（例如 a very funny comedy）\",\"「很適合全家一起看」可寫，例如 good for the whole family、the whole family can enjoy 等\"]（原 promptZh「這齣戲是一部輕鬆的喜劇，很適合全家一起看。」、referenceEn [\"This play is a light comedy, so it is good for the whole family.\",\"The play is a funny comedy that the whole family can enjoy.\"]、rubricZh [\"用 comedy 表示「喜劇」（例如 a light comedy、a funny comedy 等）\",\"「很適合全家一起看」可寫，例如 good for the whole family、the whole family can enjoy 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

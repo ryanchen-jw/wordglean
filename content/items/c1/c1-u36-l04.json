@@ -114,10 +114,10 @@
       "audioZh": "會議結束後，我沿原路走回車站，但始終沒找到我的傘。",
       "questionZh": "說話者沿原路走回車站，結果如何？",
       "options": [
-        "It was in the speaker's bag.",
-        "Someone had handed it in at the station office.",
-        "It was still lying under the meeting table.",
-        "The umbrella was never found."
+        "It was in the speaker's bag",
+        "Someone had handed it in at the station office",
+        "It was still lying under the meeting table",
+        "The umbrella was never found"
       ],
       "answer": 3
     },
@@ -286,6 +286,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（retrace）原位換成翻譯題，沿用題 id c1-u36-l04-q16；目標字沿用 retrace",
         "resolution": "改為 translate：promptZh「我們重走了爺爺年輕時每天上學走的那條路。」、hintWords [\"retrace\"]、referenceEn [\"We retraced the route that Grandpa walked to school every day when he was young.\",\"We retraced the path my grandfather took to school each day as a boy.\"]、rubricZh [\"「重走」用 retrace（例如 retraced the route、retraced the path 等）\",\"「爺爺」可寫，例如 Grandpa、my grandfather 等\",\"說的是已發生的事，時態配合內容（例如 retraced、have retraced 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 retrace 造一個句子，說說你曾經走回頭路找東西或找路的經驗。」、referenceEn [\"When I got lost in Tainan, I retraced my route back to the train station.\",\"I retraced my steps to the café and found my wallet on the table.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

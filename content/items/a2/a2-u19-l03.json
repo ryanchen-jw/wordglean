@@ -184,8 +184,8 @@
     {
       "id": "a2-u19-l03-q15",
       "type": "reading",
-      "passageEn": "Our school has a reading club. This month, the club committee chose a mystery. In the story, someone steals a famous painting from a museum. A smart agent works with the museum guard to find the thief. In the end, the agent catches him at the back door! Our teacher also asked us, \"What does freedom mean for a citizen?\" We talked about it for an hour.",
-      "passageZh": "我們學校有一個讀書會。這個月，讀書會的委員會選了一本推理小說。故事裡，有人從博物館偷走一幅有名的畫。一位聰明的探員和博物館的警衛合作找小偷。最後，探員在後門抓到了他！老師還問我們：「對一個公民來說，自由代表什麼？」我們討論了一個小時。",
+      "passageEn": "Our school has a reading club. This month, the club committee chose a mystery. In the story, someone steals a famous painting from a museum. A smart agent works with the museum guard to find the thief. In the end, the agent catches him at the back door! After we read the story, our teacher asked us, \"What does freedom mean for a citizen?\" We talked about it for an hour.",
+      "passageZh": "我們學校有一個讀書會。這個月，讀書會的委員會選了一本推理小說。故事裡，有人從博物館偷走一幅有名的畫。一位聰明的探員和博物館的警衛合作找小偷。最後，探員在後門抓到了他！讀完故事後，老師問我們：「對一個公民來說，自由代表什麼？」我們討論了一個小時。",
       "questions": [
         {
           "questionZh": "故事裡被偷的是什麼？",
@@ -231,8 +231,8 @@
         "freedom"
       ],
       "referenceEn": [
-        "After I started university, I had more freedom.",
-        "I had more freedom after I went to university."
+        "After I started college, I had more freedom.",
+        "I had more freedom after I went to college."
       ],
       "rubricZh": [
         "用 freedom 表示「自由」（例如 more freedom）",
@@ -389,6 +389,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（freedom）原位換成翻譯題，沿用題 id a2-u19-l03-q17；目標字沿用 freedom",
         "resolution": "改為 translate：promptZh「上大學以後，我有了更多自由。」、hintWords [\"freedom\"]、referenceEn [\"After I started university, I had more freedom.\",\"I had more freedom after I went to university.\"]、rubricZh [\"用 freedom 表示「自由」（例如 more freedom）\",\"過去的事用過去式（例如 had）；寫 have more freedom 也正確\",\"「上大學」可寫，例如 started university、went to university、went to college 等\"]（原 makeSentence：instructionZh「用 freedom 造一個句子，說說你想要哪一種自由。」、referenceEn [\"I want more freedom to choose my own clothes.\",\"I want the freedom to travel alone.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

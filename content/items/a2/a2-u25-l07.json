@@ -44,7 +44,7 @@
       "type": "wordCard",
       "word": "worse",
       "exampleEn": "My English is worse than my sister's.",
-      "exampleZh": "我的英文比我姊姊差。",
+      "exampleZh": "我的英文比我的姊妹差。",
       "glossZh": "更差的；更糟的",
       "distractorsZh": [
         "更好的",
@@ -132,8 +132,8 @@
     {
       "id": "a2-u25-l07-q11",
       "type": "shadowing",
-      "sentenceEn": "Write your name in the right-hand corner.",
-      "sentenceZh": "把你的名字寫在右邊的角落。"
+      "sentenceEn": "Write your name in the right-hand corner at the top of the page.",
+      "sentenceZh": "把你的名字寫在頁面的右上角。"
     },
     {
       "id": "a2-u25-l07-q12",
@@ -290,6 +290,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（well-known）原位換成翻譯題，沿用題 id a2-u25-l07-q16；目標字沿用 well-known",
         "resolution": "改為 translate：promptZh「這個小鎮以茶聞名。」、hintWords [\"well-known\"]、referenceEn [\"This town is well-known for its tea.\",\"The town is well-known for its tea.\"]、rubricZh [\"用 be well-known for 表示「以…聞名」\",\"「茶」可寫，例如 its tea、tea 等\"]（原 makeSentence：instructionZh「用 well-known 造一個句子，介紹一個有名的人、地方或東西。」、referenceEn [\"This restaurant is well-known for its seafood.\",\"My aunt is a well-known cook in our town.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

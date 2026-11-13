@@ -13,8 +13,8 @@
       "type": "wordCard",
       "word": "crisp",
       "exampleEn": "My brother eats crisps while he watches TV.",
-      "exampleZh": "我弟弟邊看電視邊吃洋芋片。",
-      "glossZh": "洋芋片（英式，常用複數）",
+      "exampleZh": "我的兄弟邊看電視邊吃洋芋片。",
+      "glossZh": "洋芋片（常用複數）；（英式）",
       "distractorsZh": [
         "餅乾",
         "糖果",
@@ -351,6 +351,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（roast）原位換成翻譯題，沿用題 id a2-u10-l07-q16；目標字沿用 roast",
         "resolution": "改為 translate：promptZh「這家咖啡店自己烘咖啡豆。」、hintWords [\"roast\"]、referenceEn [\"This cafe roasts its own coffee beans.\",\"This coffee shop roasts its own coffee beans.\"]、rubricZh [\"用 roast 表示「烘（咖啡豆）」，主詞是單數，動詞加 s（例如 roasts）\",\"「自己（的）」可寫，例如 its own coffee beans、roasts the coffee beans itself 等\"]（原 makeSentence：instructionZh「用 roast 造一個句子，說說你家裡會在什麼時候烤什麼。」、referenceEn [\"My father roasts sweet potatoes in winter.\",\"We roast meat in the oven on weekends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

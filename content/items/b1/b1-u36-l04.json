@@ -125,10 +125,10 @@
       "audioZh": "抱歉，我分不出這些罐子裡哪個是鹽、哪個是糖。",
       "questionZh": "說話者分不出什麼？",
       "options": [
-        "Where the salt jar is.",
-        "Which jar has salt and which has sugar.",
-        "The colors of the jars.",
-        "The songs on the radio."
+        "Where the salt jar is",
+        "Which jar has salt and which has sugar",
+        "The colors of the jars",
+        "The songs on the radio"
       ],
       "answer": 1
     },
@@ -186,7 +186,7 @@
       "id": "b1-u36-l04-q15",
       "type": "reading",
       "passageEn": "Someone ate the cake that my mom made for my sister's birthday. My little brother was under suspicion because he had chocolate on his face. My mom started an inquiry: she asked everyone where they were that afternoon. My brother said he had eaten a cookie, but his story didn't make sense, because there were no cookies at home. Mom remarked that the dog was also near the kitchen. There was a lot of uncertainty, but it was apparent that my brother was nervous. Finally, he told the truth. To persuade Mom not to punish him, he offered a compromise: he would wash the dishes for a week. Mom agreed. Now she can easily tell when he is lying: he always touches his nose.",
-      "passageZh": "有人吃了媽媽為我姊姊生日做的蛋糕。我弟弟有嫌疑，因為他臉上沾著巧克力。媽媽開始調查：她問每個人那天下午在哪裡。弟弟說他吃的是餅乾，但他的說法不合邏輯，因為家裡根本沒有餅乾。媽媽說狗當時也在廚房附近。事情充滿不確定，但很明顯弟弟很緊張。最後，他說出了實話。為了說服媽媽不要處罰他，他提出了一個折衷辦法：他願意洗一個星期的碗。媽媽同意了。現在，媽媽很容易就能分辨他是不是在說謊：他一說謊就會摸鼻子。",
+      "passageZh": "有人吃了媽媽為我的姊妹生日做的蛋糕。我弟弟有嫌疑，因為他臉上沾著巧克力。媽媽開始調查：她問每個人那天下午在哪裡。弟弟說他吃的是餅乾，但他的說法不合邏輯，因為家裡根本沒有餅乾。媽媽說狗當時也在廚房附近。事情充滿不確定，但很明顯弟弟很緊張。最後，他說出了實話。為了說服媽媽不要處罰他，他提出了一個折衷辦法：他願意洗一個星期的碗。媽媽同意了。現在，媽媽很容易就能分辨他是不是在說謊：他一說謊就會摸鼻子。",
       "questions": [
         {
           "questionZh": "為什麼弟弟的說法不合邏輯？",
@@ -201,8 +201,8 @@
         {
           "questionZh": "弟弟提出什麼折衷辦法？",
           "options": [
-            "幫姊姊重新做一個蛋糕",
-            "把零用錢全部給姊姊",
+            "幫姊妹重新做一個蛋糕",
+            "把零用錢全給姊妹",
             "洗一個星期的碗",
             "去跟狗道歉"
           ],
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "Can you distinguish between these two kinds of birds?",
-        "Can you distinguish these two birds?"
+        "Can you distinguish these two kinds of birds?"
       ],
       "rubricZh": [
         "distinguish 表示「區分、辨別」，例如 distinguish between A and B 等說法",
@@ -403,6 +403,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（persuade）原位換成翻譯題，沿用題 id b1-u36-l04-q17；目標字沿用 persuade",
         "resolution": "改為 translate：promptZh「銷售員說服我買了比較貴的那一台。」、hintWords [\"persuade\"]、referenceEn [\"The salesman persuaded me to buy the more expensive one.\",\"I was persuaded by the salesman to buy the more expensive one.\"]、rubricZh [\"用 persuade＋人＋to＋原形動詞表示「說服」（寫 convinced me to 也正確）\",\"「比較貴的那一台」可寫，例如 the more expensive one 等\"]（原 makeSentence：instructionZh「用 persuade 造一個句子，說說你曾說服某人做某件事的經驗。」、referenceEn [\"I persuaded my friend to join the music club.\",\"I once persuaded my mom to let me keep a cat.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].options[0]（中譯長幼）、questions[1].options[1]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：questions[1].options[0]（中譯長幼）、questions[1].options[1]（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:43:09Z"
       }
     ]
   }

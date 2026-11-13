@@ -125,10 +125,10 @@
       "audioZh": "店家可以修改這件洋裝，讓它更合身。",
       "questionZh": "店家可以做什麼？",
       "options": [
-        "Sell you a bigger dress.",
-        "Give you your money back.",
-        "Wash the dress.",
-        "Change the dress to fit."
+        "Sell you a bigger dress",
+        "Give you your money back",
+        "Wash the dress",
+        "Change the dress to fit"
       ],
       "answer": 3
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u41-l01-q15",
       "type": "reading",
-      "passageEn": "Last summer, my family moved to a new city. Packing was a big strain on everyone. My mom asked us to fold all our clothes and put them in boxes. My most precious possession is my old guitar, so I carried it myself. The reason for our move was my dad's new job. On moving day, a box burst open, and books fell everywhere! We had to endure two hot days with no air conditioning. The heat was the trigger for a lot of complaints, but we soon laughed about it. In the new house, we modified the plan for our rooms, so I got the biggest one. When I saw it, I leaped with joy.",
-      "passageZh": "去年夏天，我們全家搬到一座新的城市。打包對每個人都是很大的負擔。媽媽要我們把所有衣服摺好放進箱子裡。我最珍貴的財產是我的舊吉他，所以我自己拿著它。我們搬家是因為爸爸的新工作。搬家那天，一個箱子突然破開，書掉得到處都是！我們還得忍受兩天沒有冷氣的炎熱日子。這股熱氣引來了一堆抱怨，但我們很快就一笑置之。在新家，我們修改了房間的分配計畫，所以我得到了最大的那間。看到房間時，我高興得跳了起來。",
+      "passageEn": "Last summer, my family moved to a new city because of my dad's new job. Packing was a big strain on everyone. My mom asked us to fold all our clothes and put them in boxes. My most precious possession is my old guitar, so I carried it myself. On moving day, a box burst open, and books fell everywhere! We had to endure two hot days with no air conditioning. The heat was the trigger for a lot of complaints, but we soon laughed about it. In the new house, we modified the plan for our rooms, so I got the biggest one. When I saw it, I leaped with joy.",
+      "passageZh": "去年夏天，因為爸爸的新工作，我們全家搬到一座新的城市。打包對每個人都是很大的負擔。媽媽要我們把所有衣服摺好放進箱子裡。我最珍貴的財產是我的舊吉他，所以我自己拿著它。搬家那天，一個箱子突然破開，書掉得到處都是！我們還得忍受兩天沒有冷氣的炎熱日子。這股熱氣引來了一堆抱怨，但我們很快就一笑置之。在新家，我們修改了房間的分配計畫，所以我得到了最大的那間。看到房間時，我高興得跳了起來。",
       "questions": [
         {
           "questionZh": "他們為什麼搬家？",
@@ -480,6 +480,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（possession）原位換成翻譯題，沿用題 id b1-u41-l01-q17；目標字沿用 possession",
         "resolution": "改為 translate：promptZh「搬家時，他只帶了幾件個人物品。」、hintWords [\"possession\"]、referenceEn [\"When he moved, he took only a few personal possessions.\",\"He only took a few of his possessions when he moved.\"]、rubricZh [\"用 possession 的複數表示「財物；物品」\"]（原 makeSentence：instructionZh「用 possession 造一個句子，說說你最珍惜的一樣東西。」、referenceEn [\"My most important possession is my bike.\",\"My grandfather's watch is my favorite possession.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

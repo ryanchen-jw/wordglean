@@ -90,8 +90,8 @@
       "id": "b1-u35-l01-q07",
       "type": "wordCard",
       "word": "severe",
-      "exampleEn": "The team made a severe mistake in the last minute.",
-      "exampleZh": "球隊在最後一分鐘犯了一個嚴重的錯誤。",
+      "exampleEn": "The storm caused severe damage to the old bridge.",
+      "exampleZh": "暴風雨對那座老橋造成了嚴重的損害。",
       "glossZh": "嚴重的；猛烈的；嚴厲的",
       "distractorsZh": [
         "輕微的",
@@ -125,10 +125,10 @@
       "audioZh": "因為天候惡劣，道路都封閉了，今天所有課程都改成線上上課。",
       "questionZh": "今天的課怎麼上？",
       "options": [
-        "Over the internet.",
-        "In the school hall, as usual.",
-        "There are no classes today.",
-        "At the library."
+        "Over the internet",
+        "In the school hall, as usual",
+        "There are no classes today",
+        "At the library"
       ],
       "answer": 0
     },
@@ -218,7 +218,7 @@
         "joint"
       ],
       "referenceEn": [
-        "This is a joint show of our two classes.",
+        "This is a joint show by our two classes.",
         "This is a joint performance by our two classes."
       ],
       "rubricZh": [
@@ -342,6 +342,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（practical）原位換成翻譯題，沿用題 id b1-u35-l01-q17；目標字沿用 practical",
         "resolution": "改為 translate：promptZh「這雙鞋不好看，但很實用。」、hintWords [\"practical\"]、referenceEn [\"These shoes aren't pretty, but they are very practical.\",\"These shoes don't look nice, but they are really practical.\"]、rubricZh [\"用 practical 表示「實用的」\"]（原 makeSentence：instructionZh「用 practical 造一個句子，說說一個你覺得實用的東西或方法。」、referenceEn [\"A small bag is very practical for going to class.\",\"I think learning to cook is a practical skill.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

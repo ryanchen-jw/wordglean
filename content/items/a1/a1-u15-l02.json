@@ -125,9 +125,9 @@
       "audioZh": "今天太冷了，不能在海裡游泳。",
       "questionZh": "為什麼今天不能去海裡游泳？",
       "options": [
-        "It is too cold.",
-        "It is too hot.",
-        "It is raining hard."
+        "It is too cold",
+        "It is too hot",
+        "It is raining hard"
       ],
       "answer": 0
     },
@@ -184,7 +184,7 @@
     {
       "id": "a1-u15-l02-q15",
       "type": "reading",
-      "passageEn": "Today we go to the sea. The sky is blue, and the sun is hot. There is a strong wind, so we fly a kite. We see many birds over the water. Our dog runs on the beach. In the evening, it gets cold, so we go home.",
+      "passageEn": "Today we go to the beach. The sky is blue, and the sun is hot. There is a strong wind, so we fly a kite. We see many birds over the water. Our dog runs on the beach. In the evening, it gets cold, so we go home.",
       "passageZh": "今天我們去海邊。天空很藍，太陽很大。風很強，所以我們去放風箏。我們看到很多鳥在海面上飛。我們的狗在沙灘上跑。到了傍晚，天氣變冷，我們就回家了。",
       "questions": [
         {
@@ -347,6 +347,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（animal）原位換成翻譯題，沿用題 id a1-u15-l02-q17；目標字沿用 animal",
         "resolution": "改為 translate：promptZh「動物園裡有很多動物。」、hintWords [\"animal\"]、referenceEn [\"There are many animals in the zoo.\",\"The zoo has many animals.\"]、rubricZh [\"泛指動物用複數（animals）\",\"可寫，例如 There are many animals in the zoo、The zoo has a lot of animals 等\"]（原 makeSentence：instructionZh「用 animal 造一個句子，說說你最喜歡的動物。」、referenceEn [\"My favorite animal is the cat.\",\"I love dogs. They are my favorite animals.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

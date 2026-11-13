@@ -69,7 +69,7 @@
       "word": "aubergine",
       "exampleEn": "Aubergines turn soft and sweet when you roast them.",
       "exampleZh": "茄子烤過之後會變得軟嫩香甜。",
-      "glossZh": "（英）茄子",
+      "glossZh": "茄子；（英式）",
       "distractorsZh": [
         "南瓜",
         "青椒",
@@ -175,7 +175,7 @@
     {
       "id": "b2-u15-l06-q14",
       "type": "reading",
-      "passageEn": "My cousin from London visited us last summer, and we took her to a night market full of colorful lighting. At first, she pointed at a purple vegetable and called it an aubergine, and we all stared at her. She tried grilled prawns, fried spareribs and a spicy mutton soup. 'Yummy!' she said after every bite. At a fish stall, she was surprised to see ling, a fish she usually eats fried at home. Before we left, she bought a bag of junk food to share with her friends back in England. She said the market was like a giant cupboard full of new flavors.",
+      "passageEn": "My cousin from London visited us last summer, and we took her to a night market with bright, colorful lighting. At first, she pointed at a purple vegetable and called it an aubergine, and we all stared at her. She tried grilled prawns, fried spareribs and a spicy mutton soup. 'Yummy!' she said after every bite. At a fish stall, she was surprised to see ling, a fish she usually eats fried at home. Before we left, she bought a bag of junk food to share with her friends back in England. She said the market was like a giant cupboard full of new flavors.",
       "passageZh": "我住在倫敦的表姊去年夏天來找我們，我們帶她去逛燈光繽紛的夜市。一開始，她指著一種紫色的蔬菜，叫它 aubergine，我們全都愣住了。她吃了烤明蝦、炸排骨和一碗辣羊肉湯。每吃一口她就說：「好好吃！」在一個魚攤，她很驚訝看到長鱈，那是她在家常吃的炸魚。離開前，她買了一袋垃圾食物，要帶回英國和朋友分享。她說夜市就像一個裝滿新口味的大櫥櫃。",
       "questions": [
         {
@@ -394,6 +394,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（prawn）原位換成翻譯題，沿用題 id b2-u15-l06-q16；目標字沿用 prawn",
         "resolution": "改為 translate：promptZh「剝蝦殼很花時間。」、hintWords [\"prawn\"]、referenceEn [\"Peeling prawns takes a lot of time.\",\"It takes a long time to peel prawns.\"]、rubricZh [\"prawn 指「明蝦、大蝦」，泛指時用複數 prawns\",\"「剝殼」可寫，例如 peel、take the shells off 等\",\"「很花時間」可寫，例如 takes a lot of time、It takes a long time to 等\"]（原 makeSentence：instructionZh「用 prawn 造一個句子，說說你喜歡怎麼吃明蝦。」、referenceEn [\"I like prawns cooked with lots of garlic and butter.\",\"My favorite dish at the night market is fried prawns.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -78,7 +78,7 @@
       "type": "wordCard",
       "word": "navy",
       "exampleEn": "Her brother is a cook in the navy and spends months at sea.",
-      "exampleZh": "她哥哥在海軍當廚師，常常好幾個月都在海上。",
+      "exampleZh": "她的兄弟在海軍當廚師，常常好幾個月都在海上。",
       "glossZh": "海軍；海軍藍",
       "distractorsZh": [
         "空軍",
@@ -344,6 +344,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（trailer）原位換成翻譯題，沿用題 id b2-u21-l02-q17；目標字沿用 trailer",
         "resolution": "改為 translate：promptZh「這部電影的預告片比電影本身還好看。」、hintWords [\"trailer\"]、referenceEn [\"The trailer for this movie is better than the movie itself.\",\"This film's trailer was more interesting than the film itself.\"]、rubricZh [\"trailer 這裡指預告片（例如 the trailer for this movie、this film's trailer 等）\",\"「比…還好看」用比較級（例如 better than、more interesting than 等）\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 trailer 造一個句子，說說你看過的電影預告片。」、referenceEn [\"I watched the trailer for a new cartoon, and it made me laugh.\",\"The trailer for that action film looked exciting, so I bought tickets.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

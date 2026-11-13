@@ -150,8 +150,8 @@
     {
       "id": "c1-u10-l02-q13",
       "type": "mcq",
-      "stemEn": "The film is meant to be ____; it wants viewers to argue about it afterwards.",
-      "stemZh": "這部電影刻意引人爭議，希望觀眾看完後去爭論。",
+      "stemEn": "The film is meant to be ____; the director wants viewers to argue about it afterwards.",
+      "stemZh": "這部電影刻意引人爭議，導演希望觀眾看完後去爭論。",
       "options": [
         "apt",
         "complimentary",
@@ -311,6 +311,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spontaneous）原位換成翻譯題，沿用題 id c1-u10-l02-q17；目標字沿用 spontaneous",
         "resolution": "改為 translate：promptZh「這段對話完全是即興的，演員事先沒有排練。」、hintWords [\"spontaneous\"]、referenceEn [\"The actors had not practiced this conversation beforehand; it was completely spontaneous.\",\"The conversation was totally spontaneous, and the actors had not practiced it before.\"]、rubricZh [\"「即興的」用 spontaneous（例如 completely spontaneous 等）\",\"「事先沒有排練」可寫，例如 had not practiced it beforehand、had not practiced it before 等\",\"時態配合內容（例如 was、is 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 spontaneous 造一個句子，說說你做過的一件臨時起意的事。」、referenceEn [\"Last summer, I made a spontaneous decision to visit Hualien.\",\"My friends and I took a spontaneous trip to the beach last weekend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

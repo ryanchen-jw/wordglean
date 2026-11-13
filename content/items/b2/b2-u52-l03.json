@@ -91,7 +91,7 @@
       "type": "wordCard",
       "word": "jealously",
       "exampleEn": "She looked jealously at her sister's new bike.",
-      "exampleZh": "她嫉妒地看著姊姊的新腳踏車。",
+      "exampleZh": "她嫉妒地看著她姊妹的新腳踏車。",
       "glossZh": "嫉妒地；小心守護地",
       "distractorsZh": [
         "大方地",
@@ -121,7 +121,7 @@
     {
       "id": "b2-u52-l03-q10",
       "type": "listenChoice",
-      "audioEn": "The bothersome noise from upstairs stopped at midnight, so we finally slept.",
+      "audioEn": "The bothersome noise from upstairs stopped at midnight, so we finally fell asleep.",
       "audioZh": "樓上惱人的噪音到半夜才停，我們終於睡著了。",
       "questionZh": "樓上的噪音什麼時候停？",
       "options": [
@@ -314,6 +314,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（heartwarming）原位換成翻譯題，沿用題 id b2-u52-l03-q17；目標字沿用 heartwarming",
         "resolution": "改為 translate：promptZh「看到鄰居們一起幫那位老太太搬家，真的很溫馨。」、hintWords [\"heartwarming\"]、referenceEn [\"It was heartwarming to see the neighbors help the old lady move house.\",\"Seeing the neighbors help the old woman move was really heartwarming.\"]、rubricZh [\"heartwarming 當形容詞（例如 It was heartwarming to see…、… was heartwarming 等）\",\"「搬家」可寫，例如 move、move house 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 heartwarming 造一個句子，說說一個讓你覺得溫馨感人的故事或時刻。」、referenceEn [\"My grandparents' fiftieth wedding anniversary was a heartwarming day.\",\"The moment my dog ran to meet me at the airport was heartwarming.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

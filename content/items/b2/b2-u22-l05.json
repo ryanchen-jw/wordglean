@@ -188,7 +188,7 @@
       "id": "b2-u22-l05-q15",
       "type": "reading",
       "passageEn": "Last year, my family visited a volcano park in Hawaii. A friendly ranger and his small crew led our walk across fields of black rock where lava had flowed years before. Most of the land was barren, but here and there, small plants were growing through the cracks. Near a quiet pond, we saw reeds, wild orchids and a pair of doves drinking water. The ranger also showed us the paw prints of a small wild cat in the mud. That night, we walked back to our hotel in the moonlight, and my brother said it felt like being on another planet.",
-      "passageZh": "去年，我們全家去參觀夏威夷的一座火山公園。一位親切的管理員和他的小團隊帶我們走過一片黑色岩石地，那裡多年前曾有熔岩流過。大部分的土地都很荒蕪，但到處都有小植物從裂縫裡長出來。在一個安靜的池塘邊，我們看到蘆葦、野生蘭花，還有一對鴿子在喝水。管理員也指給我們看泥巴裡一隻小野貓的腳印。那天晚上，我們在月光下走回飯店，弟弟說感覺就像在另一個星球上。",
+      "passageZh": "去年，我們全家去參觀夏威夷的一座火山公園。一位親切的管理員和他的小團隊帶我們走過一片黑色岩石地，那裡多年前曾有熔岩流過。大部分的土地都很荒蕪，但到處都有小植物從裂縫裡長出來。在一個安靜的池塘邊，我們看到蘆葦、野生蘭花，還有一對鴿子在喝水。管理員也指給我們看泥巴裡一隻小野貓的腳印。那天晚上，我們在月光下走回飯店，我的兄弟說感覺就像在另一個星球上。",
       "questions": [
         {
           "questionZh": "在池塘邊他們看到什麼？",
@@ -201,7 +201,7 @@
           "answer": 2
         },
         {
-          "questionZh": "弟弟說月光下走回飯店的感覺像什麼？",
+          "questionZh": "作者的兄弟說月光下走回飯店的感覺像什麼？",
           "options": [
             "像回到了很小的時候",
             "像在作夢一樣",
@@ -280,6 +280,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（ranger）原位換成翻譯題，沿用題 id b2-u22-l05-q17；目標字沿用 ranger",
         "resolution": "改為 translate：promptZh「公園管理員提醒我們不要餵猴子。」、hintWords [\"ranger\"]、referenceEn [\"The park ranger reminded us not to feed the monkeys.\",\"A ranger told us not to give food to the monkeys.\"]、rubricZh [\"ranger 指公園管理員（例如 the park ranger、a ranger 等）\",\"「提醒…不要」可寫，例如 reminded us not to…、told us not to… 等\",\"時態可用過去式或現在完成式（例如 reminded、has reminded 等）\"]（原 makeSentence：instructionZh「用 ranger 造一個句子，說說你遇過的公園管理員或對這份工作的想法。」、referenceEn [\"I think working as a forest ranger would be peaceful but lonely.\",\"A ranger once helped my family when we got lost on a mountain trail.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

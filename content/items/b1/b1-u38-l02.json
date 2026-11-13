@@ -92,7 +92,7 @@
       "id": "b1-u38-l02-q07",
       "type": "wordCard",
       "word": "genetics",
-      "exampleEn": "She wants to study genetics at university.",
+      "exampleEn": "She wants to study genetics in college.",
       "exampleZh": "她想在大學學遺傳學。",
       "glossZh": "遺傳學",
       "distractorsZh": [
@@ -127,10 +127,10 @@
       "audioZh": "主考官會在你進教室前檢查你的身分證。",
       "questionZh": "進教室前會發生什麼事？",
       "options": [
-        "You will get a free pen and some paper.",
-        "Someone will look at your ID.",
-        "You will get a new ID.",
-        "The examiner will enter first."
+        "You will get a free pen and some paper",
+        "Someone will look at your ID",
+        "You will get a new ID",
+        "The examiner will enter first"
       ],
       "answer": 1
     },
@@ -362,6 +362,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spelling）原位換成翻譯題，沿用題 id b1-u38-l02-q17；目標字沿用 spelling",
         "resolution": "改為 translate：promptZh「英文單字的拼法常常和讀音不一樣。」、hintWords [\"spelling\"]、referenceEn [\"The spelling of English words is often different from how they sound.\",\"English spelling often doesn't match how words sound.\"]、rubricZh [\"用 spelling 表示「拼字；拼法」\"]（原 makeSentence：instructionZh「用 spelling 造一個句子，說說你在拼字上的經驗。」、referenceEn [\"My spelling is not very good, so I check it twice.\",\"I got full marks on my spelling test last week.\"]）；properNouns 加 English",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

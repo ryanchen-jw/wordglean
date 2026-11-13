@@ -150,8 +150,8 @@
     {
       "id": "b2-u42-l05-q13",
       "type": "mcq",
-      "stemEn": "Hitting other players is ____ behavior, and the referee sent him off.",
-      "stemZh": "打其他球員是無法接受的行為，裁判把他趕出場了。",
+      "stemEn": "He hit another player, which is ____ behavior, so the referee sent him off.",
+      "stemZh": "他打了另一名球員，這是無法接受的行為，所以裁判把他趕出場了。",
       "options": [
         "gradual",
         "transparent",
@@ -188,7 +188,7 @@
     {
       "id": "b2-u42-l05-q15",
       "type": "reading",
-      "passageEn": "Last Sunday, our class helped clean the bank of the river near our school. It had rained all week, so the path was muddy, and we had to dress appropriately in boots and old clothes. We all squeezed into one small bus to get there. Our teacher said that throwing rubbish into the river is unacceptable, and she was genuinely shocked by how much plastic we found. We also found a decorative plate that someone had lost, which made everyone laugh. Seeing wild ducks is uncommon in the city, but we saw two. The river is getting cleaner, but the change is gradual. The change in weather, however, was swift: after lunch, the sun came out and dried the path.",
+      "passageEn": "Last Sunday, our class helped clean the bank of the river near our school. It had rained all week, so the path was muddy, and we had to dress appropriately in boots and old clothes. We all squeezed into one small bus to get there. Our teacher said that throwing trash into the river is unacceptable, and she was genuinely shocked by how much plastic we found. We also found a decorative plate that someone had lost, which made everyone laugh. Seeing wild ducks is uncommon in the city, but we saw two. The river is getting cleaner, but the change is gradual. The change in weather, however, was swift: after lunch, the sun came out and dried the path.",
       "passageZh": "上週日，我們班去幫忙清理學校附近的河岸。那一週一直下雨，小路很泥濘，所以我們得穿上雨鞋和舊衣服，打扮得合宜一點。我們全部擠進一輛小巴士過去。老師說，把垃圾丟進河裡是不能接受的行為，她看到我們撿到那麼多塑膠，真的很震驚。我們還撿到一個有人掉的裝飾盤，讓大家都笑了。在城市裡很少看到野鴨，但我們看到了兩隻。河水正在變乾淨，但變化是漸進的。不過，天氣倒是變得很快：午餐後太陽出來，把小路曬乾了。",
       "questions": [
         {
@@ -237,7 +237,7 @@
         "muddy"
       ],
       "referenceEn": [
-        "My brother's trousers were all muddy after he played football.",
+        "My brother's pants were all muddy after he played soccer.",
         "After playing soccer, my little brother's pants were completely muddy."
       ],
       "rubricZh": [
@@ -305,6 +305,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（muddy）原位換成翻譯題，沿用題 id b2-u42-l05-q17；目標字沿用 muddy",
         "resolution": "改為 translate：promptZh「我弟弟踢完足球後，褲子上全是泥巴。」、hintWords [\"muddy\"]、referenceEn [\"My brother's trousers were all muddy after he played football.\",\"After playing soccer, my little brother's pants were completely muddy.\"]、rubricZh [\"muddy 指「沾滿泥的」（例如 were all muddy、completely muddy 等）\",\"「褲子」可寫，例如 trousers、pants 等；「足球」可寫，例如 football、soccer 等\",\"時態可用過去式或現在式（例如 were、are 等）\"]（原 makeSentence：instructionZh「用 muddy 造一個句子，說說你遇過的泥濘地方，或東西被泥巴弄髒的經驗。」、referenceEn [\"My shoes got muddy when I walked through the park after the rain.\",\"The road to my grandparents' farm becomes muddy every winter.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "洞穴導覽十點開始。請穿好走的鞋，因為步道上都是泥巴。",
       "questionZh": "為什麼要穿好走的鞋？",
       "options": [
-        "The tour is three hours long.",
-        "The cave path is full of water.",
-        "The way is wet and dirty.",
-        "There are sharp rocks inside."
+        "The tour is three hours long",
+        "The cave path is full of water",
+        "The way is wet and dirty",
+        "There are sharp rocks inside"
       ],
       "answer": 2
     },
@@ -349,6 +349,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pond）原位換成翻譯題，沿用題 id b1-u26-l04-q17；目標字沿用 pond",
         "resolution": "改為 translate：promptZh「他在花園裡挖了一個小池塘來養魚。」、hintWords [\"pond\"]、referenceEn [\"He dug a small pond in his garden for fish.\",\"He made a small fish pond in his garden.\"]、rubricZh [\"用 pond 表示「池塘」\",\"「挖了」可寫，例如 dug、made 等\"]（原 makeSentence：instructionZh「用 pond 造一個句子，說說你看過的池塘。」、referenceEn [\"There is a small pond in the park near my home.\",\"I used to catch fish in a pond when I was a child.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

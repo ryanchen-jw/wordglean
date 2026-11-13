@@ -125,10 +125,10 @@
       "audioZh": "所有訪客都必須配戴訪客證，這是新的安全規定。",
       "questionZh": "為什麼訪客要配戴訪客證？",
       "options": [
-        "The cards help visitors find rooms.",
-        "It is a new safety rule.",
-        "The guards can't remember faces.",
-        "It is for the photos."
+        "The cards help visitors find rooms",
+        "It is a new safety rule",
+        "The guards can't remember faces",
+        "It is for the photos"
       ],
       "answer": 1
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u28-l04-q15",
       "type": "reading",
-      "passageEn": "Last weekend, we visited an old prison that is now a museum. Long ago, the army used it to hold enemy soldiers during a war. Later, it became a normal prison, and in 1990 the town declared it a historic building. Because of new safety regulations, every visitor has to show an identity card at the entrance. One room tells the story of a young lawyer who fought for justice for the prisoners. Before we left, I filled in an application to work there as a volunteer in the summer.",
+      "passageEn": "Last weekend, we visited an old prison that is now a museum. Long ago, the army used it to hold enemy soldiers during a war. Later, it became a normal prison, and in 1990 the town declared it a historic building. Because of new safety regulations, every visitor has to show an identity card at the entrance. One room tells the story of a young lawyer who fought for justice for the prisoners. Before we left, I filled out an application to work there as a volunteer in the summer.",
       "passageZh": "上週末，我們參觀了一座現在已改成博物館的老監獄。很久以前，軍隊在一場戰爭中用它來關押敵方士兵。後來它成為一般的監獄，1990 年鎮上宣布它為歷史建築。由於新的安全規定，每位參觀者在入口都必須出示身分證。有一個展間講述一位年輕律師為囚犯爭取正義的故事。離開前，我填了一份申請表，想在暑假去那裡當志工。",
       "questions": [
         {
@@ -348,6 +348,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（justice）原位換成翻譯題，沿用題 id b1-u28-l04-q17；目標字沿用 justice",
         "resolution": "改為 translate：promptZh「這個故事講的是一個為正義而戰的女孩。」、hintWords [\"justice\"]、referenceEn [\"This story is about a girl who fights for justice.\",\"The story is about a girl fighting for justice.\"]、rubricZh [\"用 justice 表示「正義」（例如 fights for justice）\"]（原 makeSentence：instructionZh「用 justice 造一個句子，說說你對公平正義的看法。」、referenceEn [\"I think everyone deserves justice.\",\"I like stories where justice wins in the end.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

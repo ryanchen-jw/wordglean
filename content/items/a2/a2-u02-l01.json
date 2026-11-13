@@ -82,7 +82,7 @@
       "word": "timetable",
       "exampleEn": "Let's check the bus timetable.",
       "exampleZh": "我們來查一下公車時刻表吧。",
-      "glossZh": "時刻表",
+      "glossZh": "時刻表；（英式）",
       "distractorsZh": [
         "車票",
         "地圖",
@@ -326,6 +326,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（someday）原位換成翻譯題，沿用題 id a2-u02-l01-q17；目標字沿用 someday",
         "resolution": "改為 translate：promptZh「我相信他總有一天會回來。」、hintWords [\"someday\"]、referenceEn [\"I believe he will come back someday.\",\"I believe that someday he will come back.\"]、rubricZh [\"用 someday 表示「總有一天」，可放子句開頭或句尾（例如 someday he will…、…come back someday 等）\",\"「會回來」用表示未來的寫法（例如 will come back、will return 等）\",\"believe 後面可加 that，也可以省略\"]（原 makeSentence：instructionZh「用 someday 造一個句子，說說你將來想做的一件事。」、referenceEn [\"Someday I want to open my own cafe.\",\"I hope I can buy a house by the sea someday.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

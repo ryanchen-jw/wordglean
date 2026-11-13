@@ -125,10 +125,10 @@
       "audioZh": "六歲以下兒童免費入園，但需要到服務台拿票。",
       "questionZh": "六歲以下的孩子入園要怎麼做？",
       "options": [
-        "Buy a ticket online a few days before.",
-        "Get a ticket from the desk without paying.",
-        "Pay half price at the front desk.",
-        "Enter with no ticket at all."
+        "Buy a ticket online a few days before",
+        "Get a ticket from the desk without paying",
+        "Pay half price at the front desk",
+        "Enter with no ticket at all"
       ],
       "answer": 1
     },
@@ -415,6 +415,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（service）原位換成翻譯題，沿用題 id b1-u28-l01-q17；目標字沿用 service",
         "resolution": "改為 translate：promptZh「這家飯店提供二十四小時的客房服務。」、hintWords [\"service\"]、referenceEn [\"This hotel offers twenty-four-hour room service.\",\"This hotel provides room service twenty-four hours a day.\"]、rubricZh [\"用 service 表示「服務」（例如 room service）\",\"「提供」可寫，例如 offers、provides 等\"]（原 makeSentence：instructionZh「用 service 造一個句子，說說你遇過很好或很差的服務。」、referenceEn [\"The service at my favorite café is always quick.\",\"I got very bad service at a hotel last year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -127,10 +127,10 @@
       "audioZh": "我的電腦中毒了，所以今天沒辦法寄報告。",
       "questionZh": "說話者為什麼今天不能寄報告？",
       "options": [
-        "The report isn't finished yet.",
-        "The speaker is sick today.",
-        "The internet is not working.",
-        "The computer has a problem."
+        "The report isn't finished yet",
+        "The speaker is sick today",
+        "The internet is not working",
+        "The computer has a problem"
       ],
       "answer": 3
     },
@@ -187,8 +187,8 @@
     {
       "id": "b1-u20-l04-q15",
       "type": "reading",
-      "passageEn": "Mr. Diaz has been blind since he was born. He works as a piano teacher and travels alone with his guide dog. He used to smoke, but he stopped buying tobacco ten years ago. Last week, he took the ferry to an island and walked on the beach. He cut his heel on a stone, and the wound became red. A nurse cleaned it carefully to stop an infection, and now it is getting better.",
-      "passageZh": "Diaz 先生天生失明。他是鋼琴老師，帶著導盲犬獨自旅行。他以前抽菸，但十年前就不再買菸了。上週，他搭渡輪到一座島，在海灘上散步。他的腳跟被石頭割傷，傷口紅了起來。護理師仔細清理傷口以免感染，現在已經好轉了。",
+      "passageEn": "Mr. Diaz has been blind since he was born. He works as a piano teacher and travels alone with his guide dog. He used to smoke, but he gave up tobacco ten years ago. Last week, he took the ferry to an island and walked on the beach. He cut his heel on a stone, and the wound became red. A nurse cleaned it carefully to prevent an infection, and now it is getting better.",
+      "passageZh": "Diaz 先生天生失明。他是鋼琴老師，帶著導盲犬獨自旅行。他以前抽菸，但十年前就戒菸了。上週，他搭渡輪到一座島，在海灘上散步。他的腳跟被石頭割傷，傷口紅了起來。護理師仔細清理傷口以免感染，現在已經好轉了。",
       "questions": [
         {
           "questionZh": "Diaz 先生做什麼工作？",
@@ -340,6 +340,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（blind）原位換成翻譯題，沿用題 id b1-u20-l04-q17；目標字沿用 blind",
         "resolution": "改為 translate：promptZh「那隻導盲犬幫助失明的主人過馬路。」、hintWords [\"blind\"]、referenceEn [\"The guide dog helps its blind owner cross the street.\",\"The guide dog helped its blind owner cross the road.\"]、rubricZh [\"用 blind 表示「失明的」（例如 its blind owner）\",\"「導盲犬」可寫，例如 guide dog 等；時態可用 helps、helped 等\"]（原 makeSentence：instructionZh「用 blind 造一個句子，說說你知道的、和盲人有關的一件事。」、referenceEn [\"My neighbor is blind, and she teaches music at a school.\",\"I once helped a blind man cross the street.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

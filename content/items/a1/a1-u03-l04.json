@@ -187,7 +187,7 @@
     {
       "id": "a1-u03-l04-q15",
       "type": "reading",
-      "passageEn": "School starts at eight. Today Ken gets up late, at half past seven. He runs to the bus stop. The bus comes soon, and he gets to school at eight. He is not late! In the second period, he has a math test.",
+      "passageEn": "School starts at eight. Today Ken gets up late, at half past seven. He runs to the bus stop. Soon the bus comes, and he gets to school at eight. He is not late! In the second period, he has a math test.",
       "passageZh": "學校八點上課。今天 Ken 很晚才起床，七點半才起來。他跑到公車站，公車很快就來了，他八點到學校，沒有遲到！第二節課他有數學考試。",
       "questions": [
         {
@@ -369,6 +369,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（early）原位換成翻譯題，沿用題 id a1-u03-l04-q17；目標字沿用 early",
         "resolution": "改為 translate：promptZh「那家店昨天很早就關門了。」、hintWords [\"early\"]、referenceEn [\"That shop closed early yesterday.\",\"The shop closed early yesterday.\"]、rubricZh [\"「很早就關門」可寫，例如 closed early、closed very early 等\",\"昨天的事用過去式（例如 closed）；「那家店」可寫，例如 that shop、the store 等\"]（原 makeSentence：instructionZh「用 early 造一個句子，說說你很早做的一件事。」、referenceEn [\"I get up early on Monday.\",\"I go to work early every day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

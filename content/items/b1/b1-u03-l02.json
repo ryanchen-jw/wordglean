@@ -128,10 +128,10 @@
       "audioZh": "我的健身房會員這個月到期，所以我星期六會去續約。",
       "questionZh": "說話者星期六要做什麼？",
       "options": [
-        "End the gym membership.",
-        "Join a new gym.",
-        "Sign up for the gym again.",
-        "Buy new sports clothes."
+        "End the gym membership",
+        "Join a new gym",
+        "Sign up for the gym again",
+        "Buy new sports clothes"
       ],
       "answer": 2
     },
@@ -468,6 +468,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（renew）原位換成翻譯題，沿用題 id b1-u03-l02-q17；目標字沿用 renew",
         "resolution": "改為 translate：promptZh「我忘了續借圖書館的書。」、hintWords [\"renew\"]、referenceEn [\"I forgot to renew my library books.\",\"I forgot to renew the books from the library.\"]、rubricZh [\"用 renew 表示「續借」（例如 renew my library books）\",\"時態可用 forgot、have forgotten 等\"]（原 makeSentence：instructionZh「用 renew 造一個句子，說說你最近續過或即將更新的東西（例如證件、會員）。」、referenceEn [\"I renewed my library card last week.\",\"I am going to renew my driving license next month.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

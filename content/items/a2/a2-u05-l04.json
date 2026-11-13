@@ -188,8 +188,8 @@
     {
       "id": "a2-u05-l04-q15",
       "type": "reading",
-      "passageEn": "Grandpa Lee loves telling stories about our ancestors. They were farmers who came to Taiwan two hundred years ago. Last week, his oldest grandson got married. The restaurant was full of guests. At the wedding, Grandpa sat next to the bride and told her about his teenage years. Every grandchild laughed at his old stories.",
-      "passageZh": "李爺爺很喜歡講我們祖先的故事。他們是兩百年前來到台灣的農夫。上週，他的長孫結婚了，餐廳裡坐滿了客人。婚禮上，爺爺坐在新娘旁邊，跟她聊自己十幾歲時的事。每個孫子孫女聽了他的老故事都哈哈大笑。",
+      "passageEn": "Grandpa Lee loves telling stories about our ancestors. They were farmers who came to Taiwan two hundred years ago. Last week, his oldest grandson got married. The wedding was at a big restaurant, and it was full of guests. Grandpa sat next to the bride and told her about his teenage years. Every grandchild laughed at his old stories.",
+      "passageZh": "李爺爺很喜歡講我們祖先的故事。他們是兩百年前來到台灣的農夫。上週，他的長孫結婚了，婚禮在一家大餐廳舉行，裡面坐滿了客人。爺爺坐在新娘旁邊，跟她聊自己十幾歲時的事。每個孫子孫女聽了他的老故事都哈哈大笑。",
       "questions": [
         {
           "questionZh": "李爺爺喜歡講什麼故事？",
@@ -309,6 +309,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（crowded）原位換成翻譯題，沿用題 id a2-u05-l04-q17；目標字沿用 crowded",
         "resolution": "改為 translate：promptZh「我不喜歡擁擠的地方。」、hintWords [\"crowded\"]、referenceEn [\"I don't like crowded places.\",\"I do not like crowded places.\"]、rubricZh [\"用 crowded 表示「擁擠的」，放在名詞前（例如 crowded places）\",\"「地方」用複數泛指（例如 places）；寫 a crowded place 也可以\"]（原 makeSentence：instructionZh「用 crowded 造一個句子，說說一個很擁擠的地方或時段。」、referenceEn [\"The night market is crowded on Saturday nights.\",\"The trains are very crowded in the morning.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

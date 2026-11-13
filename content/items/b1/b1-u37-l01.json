@@ -54,7 +54,7 @@
       "type": "wordCard",
       "word": "ridiculous",
       "exampleEn": "You look ridiculous in that giant hat.",
-      "exampleZh": "你戴那頂大帽子看起來好荒謬。",
+      "exampleZh": "你戴那頂大帽子看起來好可笑。",
       "glossZh": "荒謬的；可笑的",
       "distractorsZh": [
         "時髦的",
@@ -127,10 +127,10 @@
       "audioZh": "今天早上海面很平靜，所以我們搭小船出海。",
       "questionZh": "他們為什麼能搭小船出海？",
       "options": [
-        "It was early in the morning.",
-        "A friend lent them a boat.",
-        "The boat was small.",
-        "There were no big waves."
+        "It was early in the morning",
+        "A friend lent them a boat",
+        "The boat was small",
+        "There were no big waves"
       ],
       "answer": 3
     },
@@ -404,6 +404,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（talented）原位換成翻譯題，沿用題 id b1-u37-l01-q17；目標字沿用 talented",
         "resolution": "改為 translate：promptZh「這位年輕的廚師非常有才華。」、hintWords [\"talented\"]、referenceEn [\"This young cook is very talented.\",\"The young cook is extremely talented.\"]、rubricZh [\"用 talented 表示「有才華的」\"]（原 makeSentence：instructionZh「用 talented 造一個句子，說說一位你認識的有才華的人。」、referenceEn [\"My cousin is a talented piano player.\",\"I think my best friend is very talented at drawing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "這家青年旅館提供免費早餐，但毛巾要兩元。",
       "questionZh": "哪一項需要付費？",
       "options": [
-        "Maps.",
-        "Breakfast.",
-        "Towels.",
-        "Hot water."
+        "Maps",
+        "Breakfast",
+        "Towels",
+        "Hot water"
       ],
       "answer": 2
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u17-l07-q15",
       "type": "reading",
-      "passageEn": "Last summer, I traveled along the Atlantic coast for two weeks. I slept in cheap hostels and met people from many countries. One morning, I followed a signpost to a ness, where I could see a small isle in the distance. When I couldn't find my hostel, the firefighters at the local fire station showed me the way. I also sent a parcel of postcards home to my grandfather. He was born near this coast but moved abroad when he was young, and he still misses his motherland.",
+      "passageEn": "Last summer, I traveled along the Atlantic coast for two weeks. I slept in cheap hostels and met people from many countries. One morning, I followed a signpost to a ness, where I could see a small isle in the distance. When I couldn't find my hostel, the firefighters at the local fire station showed me the way. I also sent a package of postcards home to my grandfather. He was born near this coast but moved abroad when he was young, and he still misses his motherland.",
       "passageZh": "去年夏天，我沿著大西洋海岸旅行了兩個星期。我住便宜的青年旅館，認識了來自許多國家的人。有一天早上，我跟著路標走到一個海角，從那裡可以看到遠處的一座小島。我找不到青年旅館時，當地消防局的消防員為我指了路。我也寄了一包明信片回家給爺爺。他在這片海岸附近出生，年輕時搬到國外，至今仍想念他的故鄉。",
       "questions": [
         {
@@ -452,6 +452,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（vice president）原位換成翻譯題，沿用題 id b1-u17-l07-q17；目標字沿用 vice president",
         "resolution": "改為 translate：promptZh「我們公司的副總裁以前是一名老師。」、hintWords [\"vice president\"]、referenceEn [\"The vice president of our company used to be a teacher.\",\"Our company's vice president was once a teacher.\"]、rubricZh [\"用 vice president 表示「副總裁」\",\"「以前是」可寫，例如 used to be、was once 等\"]（原 makeSentence：instructionZh「用 vice president 造一個句子，說說某個副總裁、副會長或副社長做的事。」、referenceEn [\"The vice president of our club plans all the trips.\",\"Our company's vice president visits every branch once a year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -81,7 +81,7 @@
       "word": "flash",
       "exampleEn": "That restaurant is too flash for a family dinner.",
       "exampleZh": "那家餐廳太浮華了，全家聚餐不太適合。",
-      "glossZh": "浮華的；炫目的",
+      "glossZh": "浮華的；炫目的；（英式口語）",
       "distractorsZh": [
         "老舊的",
         "便宜的",
@@ -123,14 +123,14 @@
     {
       "id": "b1-u35-l06-q10",
       "type": "listenChoice",
-      "audioEn": "Turn left at the big curve, and you'll see the museum on your right.",
-      "audioZh": "在大彎道左轉，就會看到博物館在你的右手邊。",
+      "audioEn": "Go around the big curve, and you'll see the museum on your right.",
+      "audioZh": "繞過大彎道，就會看到博物館在你的右手邊。",
       "questionZh": "博物館在哪裡？",
       "options": [
-        "At the end of the road.",
-        "Next to the big curve on the left.",
-        "Behind the school.",
-        "On the right after the curve."
+        "At the end of the road",
+        "Next to the big curve on the left",
+        "Behind the school",
+        "On the right after the curve"
       ],
       "answer": 3
     },
@@ -398,6 +398,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（inevitable）原位換成翻譯題，沿用題 id b1-u35-l06-q17；目標字沿用 inevitable",
         "resolution": "改為 translate：promptZh「因為天氣變了，改變計畫是不可避免的。」、hintWords [\"inevitable\"]、referenceEn [\"Because the weather changed, a change of plan was inevitable.\",\"A change of plan was inevitable because the weather changed.\"]、rubricZh [\"用 inevitable 表示「不可避免的」\"]（原 makeSentence：instructionZh「用 inevitable 造一個句子，說說一件你覺得無法避免的事。」、referenceEn [\"I think it is inevitable that prices will go up.\",\"Feeling nervous before a test is inevitable for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、audioZh、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

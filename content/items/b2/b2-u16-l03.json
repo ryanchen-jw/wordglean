@@ -25,8 +25,8 @@
       "id": "b2-u16-l03-q02",
       "type": "wordCard",
       "word": "fatal",
-      "exampleEn": "Some kinds of wild mushrooms are fatal if you eat them.",
-      "exampleZh": "有些野生蘑菇吃了會致命。",
+      "exampleEn": "Eating some kinds of wild mushrooms can be fatal.",
+      "exampleZh": "吃某些野生蘑菇可能會致命。",
       "glossZh": "致命的；毀滅性的",
       "distractorsZh": [
         "輕微的",
@@ -185,7 +185,7 @@
     {
       "id": "b2-u16-l03-q15",
       "type": "reading",
-      "passageEn": "Our football team had a difficult season. In the first month, our captain was injured during practice and had to rest for six weeks. The coach called it a fatal blow to our hopes, but we kept going. Then a computer virus infected the club's system, and we lost all our training videos. Still, things got better. A local company gave the club a large injection of money, so we bought new equipment. Our captain came back with a small scar on his knee and a new addiction to stretching. Even with a sore rib, our goalkeeper played the whole final, and we won! Afterwards, we were all starving and shared three huge pizzas.",
+      "passageEn": "Our soccer team had a difficult season. In the first month, our captain was injured during practice and had to rest for six weeks. The coach called it a fatal blow to our hopes, but we kept going. Then a computer virus infected the club's system, and we lost all our training videos. Still, things got better. A local company gave the club a large injection of money, so we bought new equipment. Our captain came back with a small scar on his knee and a new addiction to stretching. Even with a sore rib, our goalkeeper played the whole final, and we won! Afterwards, we were all starving and shared three huge pizzas.",
       "passageZh": "我們足球隊這一季過得很辛苦。第一個月，隊長在練習時受傷，必須休息六週。教練說這對我們的希望是致命一擊，但我們還是繼續努力。接著，一種電腦病毒感染了球隊的系統，我們失去了所有訓練影片。不過，情況漸漸好轉。一家當地公司給球隊注入了一大筆資金，我們因此買了新裝備。隊長回來時膝蓋多了一道小疤痕，還迷上了伸展運動。就算肋骨痠痛，我們的守門員還是踢完了整場決賽，而且我們贏了！賽後大家都餓壞了，一起分了三個大披薩。",
       "questions": [
         {
@@ -446,6 +446,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（scar）原位換成翻譯題，沿用題 id b2-u16-l03-q17；目標字沿用 scar",
         "resolution": "改為 translate：promptZh「我爸爸的手臂上有一道長長的疤。」、hintWords [\"scar\"]、referenceEn [\"My father has a long scar on his arm.\",\"There is a long scar on my dad's arm.\"]、rubricZh [\"scar 指「疤痕」（例如 a long scar on his arm 等）\",\"可寫 … has a scar on…，或 There is a scar on… 等\",\"「爸爸」可寫，例如 father、dad 等\"]（原 makeSentence：instructionZh「用 scar 造一個句子，說說你或某樣東西上的一道疤痕或痕跡怎麼來的。」、referenceEn [\"I have a small scar on my hand from a cooking accident.\",\"My old guitar has a scar on the back from a bad fall.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

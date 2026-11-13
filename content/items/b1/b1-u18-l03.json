@@ -38,7 +38,7 @@
       "id": "b1-u18-l03-q03",
       "type": "wordCard",
       "word": "arrival",
-      "exampleEn": "The arrival hall was full of people waiting for friends.",
+      "exampleEn": "The arrivals hall was full of people waiting for friends.",
       "exampleZh": "入境大廳擠滿了等朋友的人。",
       "glossZh": "抵達；到達",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "我們船上的馬達故障了，所以只好等人來幫忙。",
       "questionZh": "他們為什麼得等人幫忙？",
       "options": [
-        "They lost their map.",
-        "The boat's engine broke down.",
-        "The boat was too small.",
-        "They ran out of food."
+        "They lost their map",
+        "The boat's engine broke down",
+        "The boat was too small",
+        "They ran out of food"
       ],
       "answer": 1
     },
@@ -141,8 +141,8 @@
     {
       "id": "b1-u18-l03-q12",
       "type": "shadowing",
-      "sentenceEn": "The museum has an old wagon from the farm.",
-      "sentenceZh": "博物館裡有一輛來自農場的舊貨車。"
+      "sentenceEn": "The museum has an old farm wagon.",
+      "sentenceZh": "博物館裡有一輛舊的農用貨車。"
     },
     {
       "id": "b1-u18-l03-q13",
@@ -404,6 +404,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（exploration）原位換成翻譯題，沿用題 id b1-u18-l03-q17；目標字沿用 exploration",
         "resolution": "改為 translate：promptZh「很多國家花大量的錢在太空探索上。」、hintWords [\"exploration\"]、referenceEn [\"Many countries spend a lot of money on space exploration.\",\"A lot of countries spend huge amounts of money on space exploration.\"]、rubricZh [\"用 exploration 表示「探索」（例如 space exploration）\",\"「花大量的錢」可寫，例如 spend a lot of money on、spend huge amounts of money on 等\"]（原 makeSentence：instructionZh「用 exploration 造一個句子，說說你對探險或太空探索的看法。」、referenceEn [\"I think space exploration is exciting.\",\"The exploration of the deep sea interests me a lot.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

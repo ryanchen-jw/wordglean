@@ -127,10 +127,10 @@
       "audioZh": "我看書看得太入迷，結果搭火車坐過站了。",
       "questionZh": "說話者為什麼坐過站？",
       "options": [
-        "The speaker was busy reading.",
-        "The speaker fell asleep after a long day.",
-        "The train was too full.",
-        "No one said the name."
+        "The speaker was busy reading",
+        "The speaker fell asleep after a long day",
+        "The train was too full",
+        "No one announced the stop"
       ],
       "answer": 0
     },
@@ -238,7 +238,7 @@
       ],
       "referenceEn": [
         "A few enterprising students opened a second-hand bookshop on campus.",
-        "Some enterprising students started a used bookshop on the campus."
+        "Some enterprising students started a used bookshop on campus."
       ],
       "rubricZh": [
         "「有進取心的」用 enterprising（例如 enterprising students 等）",
@@ -288,6 +288,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（enterprising）原位換成翻譯題，沿用題 id c1-u38-l03-q17；目標字沿用 enterprising",
         "resolution": "改為 translate：promptZh「幾個有進取心的學生在校園裡開了一家二手書店。」、hintWords [\"enterprising\"]、referenceEn [\"A few enterprising students opened a second-hand bookshop on campus.\",\"Some enterprising students started a used bookshop on the campus.\"]、rubricZh [\"「有進取心的」用 enterprising（例如 enterprising students 等）\",\"「開了」可寫，例如 opened、started、set up 等\",\"「二手書店」可寫，例如 a second-hand bookshop、a used bookstore 等\",\"時態配合內容（例如 opened、have opened 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 enterprising 造一個句子，描述一位你認識、很有進取心或創業頭腦的人。」、referenceEn [\"My enterprising cousin turned her hobby into a small bakery.\",\"I admire my enterprising neighbor, who started a cleaning business at sixty.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -122,8 +122,8 @@
     {
       "id": "b2-u11-l05-q09",
       "type": "listenType",
-      "sentenceEn": "The two boys were playmates as children and are still close friends.",
-      "sentenceZh": "這兩個男孩小時候是玩伴，現在仍是好朋友。"
+      "sentenceEn": "The two men were playmates as children and are still close friends.",
+      "sentenceZh": "這兩個男人小時候是玩伴，現在仍是好朋友。"
     },
     {
       "id": "b2-u11-l05-q10",
@@ -193,7 +193,7 @@
       "id": "b2-u11-l05-q15",
       "type": "reading",
       "passageEn": "Mr. and Mrs. Wang have two children: a son and an adopted daughter from Vietnam. The children grew up as playmates and quickly became inseparable. Last year, the family traveled to their daughter's birthplace, a small village near the coast. The villagers were warm and friendly, and the daughter met several neighbors who still remembered her as a baby. Her brother, always thoughtful, took hundreds of photos for her. Now the family often talks affectionately about the trip.",
-      "passageZh": "王先生和王太太有兩個孩子：一個兒子，以及一個從越南收養的女兒。兩個孩子從小一起玩，很快就形影不離。去年，一家人去了女兒的出生地，一個靠近海邊的小村莊。村民都很熱情友善，女兒還遇到幾位仍記得她小時候模樣的鄰居。她的哥哥總是很貼心，幫她拍了好幾百張照片。現在全家人常常充滿感情地聊起那趟旅行。",
+      "passageZh": "王先生和王太太有兩個孩子：一個兒子，以及一個從越南收養的女兒。兩個孩子從小一起玩，很快就形影不離。去年，一家人去了女兒的出生地，一個靠近海邊的小村莊。村民都很熱情友善，女兒還遇到幾位仍記得她小時候模樣的鄰居。她的兄弟總是很貼心，幫她拍了好幾百張照片。現在全家人常常充滿感情地聊起那趟旅行。",
       "questions": [
         {
           "questionZh": "王家的女兒出生在哪裡？",
@@ -206,7 +206,7 @@
           "answer": 1
         },
         {
-          "questionZh": "哥哥在旅行中做了什麼？",
+          "questionZh": "她的兄弟在旅行中做了什麼？",
           "options": [
             "認識了新朋友",
             "跟村民學會了說當地的語言",
@@ -549,6 +549,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（birthplace）原位換成翻譯題，沿用題 id b2-u11-l05-q17；目標字沿用 birthplace",
         "resolution": "改為 translate：promptZh「我爺爺八十歲時搬回了他的出生地。」、hintWords [\"birthplace\"]、referenceEn [\"My grandfather moved back to his birthplace when he was eighty.\",\"At the age of eighty, my grandpa moved back to his birthplace.\"]、rubricZh [\"birthplace 指「出生地」（例如 his birthplace 等）\",\"「搬回」用過去式（例如 moved back to、went back to live in 等）\",\"「八十歲時」可寫，例如 when he was eighty、at the age of eighty 等\"]（原 makeSentence：instructionZh「用 birthplace 造一個句子，介紹你或家人的出生地。」、referenceEn [\"My birthplace is a small town in the south of Taiwan.\",\"My father's birthplace is a fishing village near Keelung.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

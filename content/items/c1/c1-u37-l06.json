@@ -16,7 +16,7 @@
       "word": "chiselled",
       "exampleEn": "The actor is famous for his chiselled jaw.",
       "exampleZh": "那位演員以輪廓分明的下巴出名。",
-      "glossZh": "輪廓分明的；鑿刻的",
+      "glossZh": "輪廓分明的；鑿刻的（英式拼法）",
       "distractorsZh": [
         "圓潤的；柔和的",
         "浮腫的；鬆垮的",
@@ -79,8 +79,8 @@
       "id": "c1-u37-l06-q06",
       "type": "wordCard",
       "word": "unreliably",
-      "exampleEn": "The weather website predicts rain unreliably in the mountains.",
-      "exampleZh": "那個天氣網站在山區預測下雨很不可靠。",
+      "exampleEn": "Our old kitchen clock keeps time unreliably, so I always check my phone.",
+      "exampleZh": "我們廚房的舊時鐘走得很不準，所以我總是看手機確認時間。",
       "glossZh": "不可靠地；不穩定地",
       "distractorsZh": [
         "準確地；可靠地",
@@ -114,10 +114,10 @@
       "audioZh": "這條線的火車班次非常不可靠，所以我總是提早一小時出門。",
       "questionZh": "說話者為什麼提早一小時出門？",
       "options": [
-        "Because the speaker likes breakfast near work.",
-        "Because the trains are often late.",
-        "Because the roads are busy.",
-        "Because the office opens early."
+        "Because the speaker likes to have breakfast near work",
+        "Because the trains are often late",
+        "Because the roads are busy",
+        "Because the office opens early"
       ],
       "answer": 1
     },
@@ -130,7 +130,7 @@
     {
       "id": "c1-u37-l06-q11",
       "type": "shadowing",
-      "sentenceEn": "My grandfather's flat is eclectically decorated with things from his travels.",
+      "sentenceEn": "My grandfather's apartment is eclectically decorated with things from his travels.",
       "sentenceZh": "我爺爺的公寓用他旅行帶回來的各式東西佈置，風格兼收並蓄。"
     },
     {
@@ -207,7 +207,7 @@
         "unreliably"
       ],
       "referenceEn": [
-        "This old lift works so unreliably that we'd better take the stairs.",
+        "This old elevator works so unreliably that we'd better take the stairs.",
         "The old elevator runs unreliably, so we should take the stairs."
       ],
       "rubricZh": [
@@ -286,6 +286,42 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fiddly）原位換成翻譯題，沿用題 id c1-u37-l06-q16；目標字沿用 fiddly",
         "resolution": "改為 translate：promptZh「組裝這個模型很費工，因為有很多細小的零件。」、hintWords [\"fiddly\"]、referenceEn [\"Putting this model together is fiddly because it has lots of tiny parts.\",\"This model is fiddly to build, with many small pieces.\"]、rubricZh [\"「很費工」用 fiddly（例如 is fiddly、fiddly to build 等）\",\"「組裝」可寫，例如 putting…together、build 等\",\"「零件」可寫，例如 parts、pieces 等\"]（原 makeSentence：instructionZh「用 fiddly 造一個句子，說說一件你覺得很繁瑣、需要手巧的事。」、referenceEn [\"I find threading a needle really fiddly.\",\"Wrapping small gifts nicely is a fiddly job for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

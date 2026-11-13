@@ -138,10 +138,10 @@
       "audioZh": "抱歉，我現在得走了，辦公室有個緊急的問題。",
       "questionZh": "說話者為什麼要離開？",
       "options": [
-        "An urgent matter at work.",
-        "The office is closing now.",
-        "A friend's birthday party.",
-        "A forgotten bag."
+        "An urgent matter at work",
+        "The office is closing now",
+        "A friend's birthday party",
+        "A forgotten bag"
       ],
       "answer": 0
     },
@@ -198,7 +198,7 @@
     {
       "id": "b1-u04-l03-q16",
       "type": "reading",
-      "passageEn": "Last Monday was an unusually busy day at our hotel. In the morning, an urgent call came from the head office: a manager from there would visit in the afternoon. Our boss formally asked all the staff to help. We gave every room a thorough cleaning and checked every detail on the list carefully. The visitor was a quiet man in a striped shirt. He asked only indirect questions, so we all felt nervous. But in the end, he said our hotel was in excellent condition.",
+      "passageEn": "Last Monday was an unusually busy day at our hotel. In the morning, an urgent call came from the head office: one of its managers would visit in the afternoon. Our boss formally asked all the staff to help. We gave every room a thorough cleaning and checked every detail on the list carefully. The visitor was a quiet man in a striped shirt. He asked only indirect questions, so we all felt nervous. But in the end, he said our hotel was in excellent condition.",
       "passageZh": "上星期一，我們飯店異常忙碌。早上總公司打來一通緊急電話：那裡的一位經理下午要來視察。我們老闆正式請全體員工幫忙。我們把每個房間都徹底打掃了一遍，並仔細核對清單上的每個細節。來訪的是一位穿條紋襯衫、話不多的男士。他只問一些拐彎抹角的問題，所以大家都很緊張。不過最後他說，我們飯店的狀況非常好。",
       "questions": [
         {
@@ -375,6 +375,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（thorough）原位換成翻譯題，沿用題 id b1-u04-l03-q18；目標字沿用 thorough",
         "resolution": "改為 translate：promptZh「這份報告寫得很詳盡、很清楚。」、hintWords [\"thorough\"]、referenceEn [\"This report is very thorough and clear.\",\"The report is thorough and very clear.\"]、rubricZh [\"用 thorough 表示「詳盡的」（例如 is very thorough；寫 detailed 也正確）\",\"「寫得很…」可寫，例如 is very thorough、is written very clearly 等\"]（原 makeSentence：instructionZh「用 thorough 造一個句子，說說你做某件事時很徹底、很仔細。」、referenceEn [\"I always give my room a thorough cleaning on Sundays.\",\"I am very thorough when I check my work.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

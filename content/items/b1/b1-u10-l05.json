@@ -114,10 +114,10 @@
       "audioZh": "可以借我你的吹風機嗎？我的今天早上壞了。",
       "questionZh": "說話者為什麼要借吹風機？",
       "options": [
-        "The speaker lost a bag.",
-        "The speaker's own one broke.",
-        "The speaker's hair is too long.",
-        "The speaker is going on a trip."
+        "The speaker lost a bag",
+        "The speaker's hairdryer broke",
+        "The speaker's hair is too long",
+        "The speaker is going on a trip"
       ],
       "answer": 1
     },
@@ -285,6 +285,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（hairdresser）原位換成翻譯題，沿用題 id b1-u10-l05-q16；目標字沿用 hairdresser",
         "resolution": "改為 translate：promptZh「我姊姊當美髮師已經五年了。」、hintWords [\"hairdresser\"]、referenceEn [\"My sister has been a hairdresser for five years.\",\"My older sister has worked as a hairdresser for five years.\"]、rubricZh [\"用 hairdresser 表示「美髮師」\",\"表示持續到現在（例如 has been … for five years；寫 became a hairdresser five years ago 也正確）\"]（原 makeSentence：instructionZh「用 hairdresser 造一個句子，說說你多久去一次美髮店，或你的美髮師。」、referenceEn [\"I go to the hairdresser every two months.\",\"My hairdresser always gives me good advice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

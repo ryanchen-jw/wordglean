@@ -15,7 +15,7 @@
       "id": "b2-u33-l01-q01",
       "type": "wordCard",
       "word": "recipe",
-      "exampleEn": "I followed the recipe exactly, but the cake still failed.",
+      "exampleEn": "I followed the recipe exactly, but the cake still did not turn out right.",
       "exampleZh": "我完全照著食譜做，蛋糕還是失敗了。",
       "glossZh": "食譜；秘訣",
       "distractorsZh": [
@@ -175,7 +175,7 @@
     {
       "id": "b2-u33-l01-q14",
       "type": "reading",
-      "passageEn": "Last weekend, my cousin held her wedding party at an old brewery that has been turned into a restaurant. The owners are famous for their hospitality: every guest was welcomed at the door with a smile. A catering team cooked dishes from my grandmother's recipes, which my cousin had sent them a month before. Near the windows, a young bartender made colorful cocktails, and he also had fruit drinks for the children. After dinner, some of my cousin's friends wanted to go to a nightclub, but most guests stayed and danced in the garden. The restaurant gets its vegetables from a local supplier, so everything felt fresh.",
+      "passageEn": "Last weekend, my cousin held her wedding party at an old brewery that has been turned into a restaurant. The owners are famous for their hospitality: every guest was welcomed at the door with a smile. A catering team cooked dishes from my grandmother's recipes, which my cousin had sent them a month before. Near the windows, a young bartender made colorful cocktails, and he also had fruit drinks for the children. After dinner, some of my cousin's friends wanted to go to a nightclub, but most guests stayed and danced in the garden. The restaurant gets its vegetables from a local supplier, so everything tasted fresh.",
       "passageZh": "上週末，我表姊在一座改建成餐廳的老釀酒廠舉辦婚宴。老闆們以熱情款待聞名：每位賓客一到門口都受到笑臉迎接。外燴團隊照著我奶奶的食譜做菜，那些食譜是表姊一個月前寄給他們的。窗邊有一位年輕的調酒師調出繽紛的雞尾酒，也為孩子們準備了果汁飲料。晚餐後，表姊有些朋友想去夜店，但大部分賓客都留下來在花園裡跳舞。這家餐廳向當地的供應商購買蔬菜，所以每樣東西都很新鮮。",
       "questions": [
         {
@@ -359,6 +359,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（brewery）原位換成翻譯題，沿用題 id b2-u33-l01-q16；目標字沿用 brewery",
         "resolution": "改為 translate：promptZh「這家釀酒廠僱用了村裡大約一半的人。」、hintWords [\"brewery\"]、referenceEn [\"This brewery employs about half of the people in the village.\",\"About half of the people in the village work at this brewery.\"]、rubricZh [\"「釀酒廠」可寫，例如 brewery 等\",\"「僱用了村裡大約一半的人」可寫，例如 employs about half of…、half of the people … work at 等\",\"時態可用現在式或過去式（例如 employs、employed 等）\"]（原 makeSentence：instructionZh「用 brewery 造一個句子，說說你參觀過或聽說過的一家釀酒廠。」、referenceEn [\"I once visited an old brewery in Germany with my friends.\",\"There is a small brewery in my town that makes beer from local rice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

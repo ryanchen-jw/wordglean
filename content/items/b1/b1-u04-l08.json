@@ -129,10 +129,10 @@
       "audioZh": "這家店今天肯定沒開，我們明天再來吧。",
       "questionZh": "說話者建議怎麼做？",
       "options": [
-        "Return the next day.",
-        "Wait until it opens today.",
-        "Go to another shop.",
-        "Come back later today."
+        "Return the next day",
+        "Wait until it opens today",
+        "Go to another shop",
+        "Come back later today"
       ],
       "answer": 0
     },
@@ -384,6 +384,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（essential）原位換成翻譯題，沿用題 id b1-u04-l08-q17；目標字沿用 essential",
         "resolution": "改為 translate：promptZh「做這份工作，良好的英文能力是必要的。」、hintWords [\"essential\"]、referenceEn [\"Good English is essential for this job.\",\"Good English skills are essential in this job.\"]、rubricZh [\"用 essential 表示「必要的」（例如 is essential for、are essential in 等）\",\"「良好的英文能力」可寫，例如 good English、good English skills 等\"]（原 makeSentence：instructionZh「用 essential 造一個句子，說說一樣對你來說不可缺少的東西。」、referenceEn [\"Coffee is essential for me in the morning.\",\"My phone is essential for my work.\"]）；properNouns 加 English",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

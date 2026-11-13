@@ -64,9 +64,9 @@
       "id": "b2-u46-l06-q05",
       "type": "wordCard",
       "word": "dissident",
-      "exampleEn": "At the meeting, only one dissident voted against the new plan.",
-      "exampleZh": "會議上只有一位持不同意見者投票反對新計畫。",
-      "glossZh": "持不同意見者；異議人士",
+      "exampleEn": "The dissident was not allowed to leave the country for ten years.",
+      "exampleZh": "那位異議人士十年間都不准離開國家。",
+      "glossZh": "異議人士；持不同意見者",
       "distractorsZh": [
         "支持者",
         "觀光客",
@@ -303,6 +303,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（traitor）原位換成翻譯題，沿用題 id b2-u46-l06-q17；目標字沿用 traitor",
         "resolution": "改為 translate：promptZh「直到這本小說的結尾，我們才知道誰是叛徒。」、hintWords [\"traitor\"]、referenceEn [\"We only find out who the traitor is at the end of the novel.\",\"At the end of the novel, we finally learn who the traitor is.\"]、rubricZh [\"traitor 表示「叛徒」（例如 who the traitor is 等）\",\"「才知道」可寫，例如 only find out、finally learn 等；時態可用現在式或過去式\",\"only、finally 的位置不扣分\"]（原 makeSentence：instructionZh「用 traitor 造一個句子，說說故事、電影或球賽中被當成叛徒的人。」、referenceEn [\"In the movie, the hero's best friend turns out to be a traitor.\",\"In my favorite spy story, the traitor is the person nobody suspected.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh、glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

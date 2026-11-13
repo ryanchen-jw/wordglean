@@ -127,10 +127,10 @@
       "audioZh": "十年過去，鎮中心幾乎認不出來了；大部分的老店都不見了。",
       "questionZh": "說話者覺得鎮中心怎麼了？",
       "options": [
-        "It has changed a lot.",
-        "It has not changed.",
-        "It is very crowded.",
-        "It is too expensive."
+        "It has changed a lot",
+        "It has not changed",
+        "It is very crowded",
+        "It is too expensive"
       ],
       "answer": 0
     },
@@ -311,6 +311,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（versatile）原位換成翻譯題，沿用題 id c1-u04-l03-q17；目標字沿用 versatile",
         "resolution": "改為 translate：promptZh「她是一位多才多藝的演員，能演喜劇也能演悲劇。」、hintWords [\"versatile\"]、referenceEn [\"She is a versatile actor who can play both comedy and tragedy.\",\"She is a versatile actress; she can act in comedies as well as tragedies.\"]、rubricZh [\"「多才多藝」用 versatile（例如 a versatile actor 等）\",\"「演員」可寫，例如 actor、actress 等\",\"「能演喜劇也能演悲劇」可寫，例如 both comedy and tragedy、comedies as well as tragedies 等\"]（原 makeSentence：instructionZh「用 versatile 造一個句子，介紹一樣你覺得用途很多的東西。」、referenceEn [\"My favorite kitchen tool is a versatile knife that I use every day.\",\"I think a scarf is a versatile gift for almost anyone.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

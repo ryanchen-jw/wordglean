@@ -127,10 +127,10 @@
       "audioZh": "她的直覺告訴她有點不對勁，所以她打了電話回家。",
       "questionZh": "她為什麼打電話回家？",
       "options": [
-        "She forgot her keys.",
-        "She sensed a problem at home.",
-        "She was going to be late.",
-        "Her phone was ringing."
+        "She forgot her keys",
+        "She sensed a problem at home",
+        "She was going to be late",
+        "Her phone was ringing"
       ],
       "answer": 1
     },
@@ -187,8 +187,8 @@
     {
       "id": "c1-u06-l04-q15",
       "type": "reading",
-      "passageEn": "Last weekend, I visited an exhibition of modern paintings. Many of the works were pure abstraction: blocks of color with no people or objects. At first, they seemed almost meaningless to me. Then a guide explained that the artist did not plan her paintings with her intellect alone; she trusted her intuition and painted quickly. One large blue painting, the guide said, was reminiscent of the sea near the artist's childhood home. The exhibition also showed the artist's versatility, with photos and small sculptures. After that, I scrutinized each painting more slowly. My friend, who is a painter, concurs that this kind of art needs patience.",
-      "passageZh": "上週末，我去看了一場現代繪畫展。許多作品是純粹的抽象畫：只有一塊塊色彩，沒有人物也沒有物體。一開始，這些畫對我來說幾乎毫無意義。後來導覽員解釋，這位畫家不只靠理智來規劃畫作，她相信自己的直覺，畫得很快。導覽員說，其中一幅藍色大畫，讓人想起畫家童年老家附近的大海。展覽也呈現了畫家的多才多藝，有攝影作品和小型雕塑。之後，我放慢腳步，仔細看每一幅畫。我那位當畫家的朋友也認為，這類藝術需要耐心。",
+      "passageEn": "Last weekend, I visited an exhibition of modern paintings. Many of the works were pure abstraction: blocks of color with no people or objects. At first, they seemed almost meaningless to me. Then a guide explained that the artist did not plan her paintings with her intellect alone; she trusted her intuition and painted quickly. One large blue painting, the guide said, was reminiscent of the sea near the artist's childhood home. The exhibition also showed the artist's versatility, with photos and small sculptures. After the guide's explanation, I scrutinized each painting more slowly. My friend, who is a painter, concurs that this kind of art needs patience.",
+      "passageZh": "上週末，我去看了一場現代繪畫展。許多作品是純粹的抽象畫：只有一塊塊色彩，沒有人物也沒有物體。一開始，這些畫對我來說幾乎毫無意義。後來導覽員解釋，這位畫家不只靠理智來規劃畫作，她相信自己的直覺，畫得很快。導覽員說，其中一幅藍色大畫，讓人想起畫家童年老家附近的大海。展覽也呈現了畫家的多才多藝，有攝影作品和小型雕塑。聽完導覽員的解說後，我放慢腳步，仔細看每一幅畫。我那位當畫家的朋友也認為，這類藝術需要耐心。",
       "questions": [
         {
           "questionZh": "導覽員說這位畫家怎麼作畫？",
@@ -291,6 +291,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（intuition）原位換成翻譯題，沿用題 id c1-u06-l04-q17；目標字沿用 intuition",
         "resolution": "改為 translate：promptZh「選擇室友時，我常常相信自己的直覺。」、hintWords [\"intuition\"]、referenceEn [\"When I choose a roommate, I often trust my intuition.\",\"I often follow my intuition when choosing a roommate.\"]、rubricZh [\"「相信直覺」可寫，例如 trust my intuition、follow my intuition、rely on my intuition 等\",\"「常常」可寫，例如 often、usually，位置有彈性\"]（原 makeSentence：instructionZh「用 intuition 造一個句子，說說你憑直覺做決定的一次經驗。」、referenceEn [\"I followed my intuition and took the job in Taipei.\",\"My intuition told me not to buy that used car, and I was right.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

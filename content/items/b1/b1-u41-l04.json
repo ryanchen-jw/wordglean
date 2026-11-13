@@ -115,7 +115,7 @@
     {
       "id": "b1-u41-l04-q09",
       "type": "listenType",
-      "sentenceEn": "Please tighten the cap of the bottle.",
+      "sentenceEn": "Please tighten the cap on the bottle.",
       "sentenceZh": "請把瓶蓋轉緊。"
     },
     {
@@ -125,10 +125,10 @@
       "audioZh": "小心我的新車，車門上已經有一道刮痕了。",
       "questionZh": "說話者為什麼要對方小心？",
       "options": [
-        "The road is very wet.",
-        "The car belongs to a good friend.",
-        "The door has been damaged a little.",
-        "The car is very old."
+        "The road is very wet",
+        "The car belongs to a good friend",
+        "The door has been damaged a little",
+        "The car is very old"
       ],
       "answer": 2
     },
@@ -462,6 +462,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（scratch）原位換成翻譯題，沿用題 id b1-u41-l04-q17；目標字沿用 scratch",
         "resolution": "改為 translate：promptZh「我的貓在沙發上留下了很多抓痕。」、hintWords [\"scratch\"]、referenceEn [\"My cat left a lot of scratches on the sofa.\",\"My cat made many scratches on the sofa.\"]、rubricZh [\"用 scratch 的複數表示「抓痕」\"]（原 makeSentence：instructionZh「用 scratch 造一個句子，說說你的東西上的刮痕或一次被抓傷的經驗。」、referenceEn [\"I got a scratch on my hand from a rose.\",\"My cat left a scratch on my arm.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -80,7 +80,7 @@
       "type": "wordCard",
       "word": "weep",
       "exampleEn": "My grandpa wept at my sister's wedding.",
-      "exampleZh": "我爺爺在我姊姊的婚禮上哭了。",
+      "exampleZh": "我爺爺在我姊妹的婚禮上哭了。",
       "glossZh": "哭泣；（一陣）哭",
       "distractorsZh": [
         "笑",
@@ -186,7 +186,7 @@
     {
       "id": "a2-u27-l03-q15",
       "type": "reading",
-      "passageEn": "Last Friday, my friends and I watched a frightening movie. In the story, a brave girl tries to break a curse on her village. Some parts confused me, and one scene really frightened my friend Leo. He shouted, and the whole audience turned to look at him. It was so embarrassing! At the end, sadly, the girl had to leave her village, and I had a little weep.",
+      "passageEn": "Last Friday, my friends and I watched a frightening movie. In the story, a brave girl tries to break a curse on her village. Some parts confused me, and one scene really frightened my friend Leo. He shouted, and the whole audience turned to look at him. It was so embarrassing! At the end of the movie, sadly, the girl has to leave her village, and I had a little weep.",
       "passageZh": "上週五，我和朋友們看了一部很嚇人的電影。故事裡，一個勇敢的女孩想解除她村子被下的詛咒。有些地方讓我看不太懂，有一幕真的把我朋友 Leo 嚇壞了。他大叫一聲，全場觀眾都轉頭看他，真是太尷尬了！最後，很遺憾，女孩不得不離開她的村子，我也小哭了一下。",
       "questions": [
         {
@@ -313,6 +313,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（embarrassing）原位換成翻譯題，沿用題 id a2-u27-l03-q17；目標字沿用 embarrassing",
         "resolution": "改為 translate：promptZh「在公車上睡著真的很丟臉。」、hintWords [\"embarrassing\"]、referenceEn [\"Falling asleep on the bus is really embarrassing.\",\"It is really embarrassing to fall asleep on the bus.\"]、rubricZh [\"用 embarrassing 表示「令人尷尬的」（不是 embarrassed）\",\"主詞可寫，例如 Falling asleep…、It is…to fall asleep… 等\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 embarrassing 造一個句子，說說一件讓你尷尬的事。」、referenceEn [\"Falling down in front of my class was embarrassing.\",\"It was embarrassing when I called my teacher Mom.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

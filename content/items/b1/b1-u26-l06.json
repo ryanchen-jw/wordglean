@@ -125,10 +125,10 @@
       "audioZh": "我弟弟很怕閃電，所以暴風雨時會躲進被子裡。",
       "questionZh": "弟弟怕閃電，所以會怎麼做？",
       "options": [
-        "He hides under his bed.",
-        "He watches it from the window.",
-        "He covers himself with a blanket.",
-        "He turns on all the lights."
+        "He hides under his bed",
+        "He watches it from the window",
+        "He covers himself with a blanket",
+        "He turns on all the lights"
       ],
       "answer": 2
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u26-l06-q15",
       "type": "reading",
-      "passageEn": "My cousin works for a marine research center on the coast. She is also an experienced diver. Last month, after a busy summer weekend, she and her team cleaned up debris on the beach: broken wood, plastic, and even part of a boat. She told me that she once watched lightning light up the whole sky from the research boat. Before this job, she worked in a jungle, where she studied wild beasts like tigers and followed a herd of elephants. Her family has done farming for many years, so she grew up close to animals. In her free time, she makes small animal statues out of marble.",
+      "passageEn": "My cousin works for a marine research center on the coast. She is also an experienced diver. Last month, after a busy summer weekend, she and her team cleaned up debris on the beach: broken wood, plastic, and even part of a boat. She told me that she once watched lightning light up the whole sky from the research boat. Before this job, she worked in a jungle, where she studied wild beasts like tigers and followed a herd of elephants. Her family has been farming for many years, so she grew up close to animals. In her free time, she makes small animal statues out of marble.",
       "passageZh": "我的表親在海邊的一間海洋研究中心工作，也是一位經驗豐富的潛水員。上個月一個熱鬧的夏季週末過後，她和團隊清理了海灘上的殘骸：斷掉的木頭、塑膠，甚至還有船的一部分。她告訴我，她曾經在研究船上看著閃電照亮整片天空。在做這份工作之前，她在叢林裡工作，研究老虎之類的野獸，還跟著一群大象走。她家務農很多年了，所以她從小就跟動物很親近。空閒時，她會用大理石做小動物雕像。",
       "questions": [
         {
@@ -415,6 +415,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（beast）原位換成翻譯題，沿用題 id b1-u26-l06-q17；目標字沿用 beast",
         "resolution": "改為 translate：promptZh「傳說中，這片森林裡住著一隻可怕的野獸。」、hintWords [\"beast\"]、referenceEn [\"According to the old story, a terrible beast lives in this forest.\",\"In the old story, a scary beast lived in the forest.\"]、rubricZh [\"用 beast 表示「野獸」\",\"「傳說中」可寫，例如 according to the old story、in the old story 等；時態可用 lives、lived 等\"]（原 makeSentence：instructionZh「用 beast 造一個句子，說說故事或電影裡的野獸。」、referenceEn [\"In my favorite story, a beast lives in a castle.\",\"I was scared of the beast in that movie.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

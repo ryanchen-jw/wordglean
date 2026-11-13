@@ -142,10 +142,10 @@
       "audioZh": "房東說，只要我們每週打掃公寓，就可以養貓。",
       "questionZh": "房東說在什麼條件下可以養貓？",
       "options": [
-        "If the landlord can visit every week.",
-        "If they pay more rent.",
-        "If the cat stays outside the apartment.",
-        "If they clean the place weekly."
+        "If the landlord can visit every week",
+        "If they pay more rent",
+        "If the cat stays outside the apartment",
+        "If they clean the place weekly"
       ],
       "answer": 3
     },
@@ -402,6 +402,12 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u08-l06-q16 雷同（兩題都是「結婚」（get married）），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「老師恭喜每位學生順利畢業。」、referenceEn [\"The teacher congratulated every student on graduating.\",\"The teacher congratulated all the students on their graduation.\"]、rubricZh [\"用 congratulate＋人＋on 表示「恭喜某人某事」（例如 congratulated … on graduating）\",\"時態可用 congratulated、congratulates 等\"]（原 promptZh「我們想恭喜你們結婚。」、referenceEn [\"We want to congratulate you on your marriage.\",\"We would like to congratulate you on getting married.\"]、rubricZh [\"congratulate＋人＋on＋名詞或動名詞，on 不可少（例如 congratulate you on your marriage）\",\"「想」可寫 want to、would like to 等\",\"「結婚」可寫 your marriage、getting married 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -56,8 +56,8 @@
       "id": "a2-u25-l02-q04",
       "type": "wordCard",
       "word": "proper",
-      "exampleEn": "Please use proper words when you write to your teacher.",
-      "exampleZh": "寫信給老師時，請用恰當的字詞。",
+      "exampleEn": "Please use proper language when you write to your teacher.",
+      "exampleZh": "寫信給老師時，請用恰當的用語。",
       "glossZh": "適當的；正確的",
       "distractorsZh": [
         "奇怪的",
@@ -69,7 +69,7 @@
       "id": "a2-u25-l02-q05",
       "type": "wordCard",
       "word": "weak",
-      "exampleEn": "My grandmother's eyes are weak, so she can't read small letters.",
+      "exampleEn": "My grandmother's eyes are weak, so she can't read small words.",
       "exampleZh": "我奶奶視力不好，看不清楚小字。",
       "glossZh": "虛弱的；弱的",
       "distractorsZh": [
@@ -352,6 +352,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（seriously）原位換成翻譯題，沿用題 id a2-u25-l02-q17；目標字沿用 seriously",
         "resolution": "改為 translate：promptZh「她說話的口氣很認真，大家都安靜下來。」、hintWords [\"seriously\"]、referenceEn [\"She spoke seriously, and everyone became quiet.\",\"She spoke so seriously that everybody went quiet.\"]、rubricZh [\"用 seriously 表示「認真地」，放在動詞後（例如 spoke seriously）\",\"過去的事用過去式（例如 spoke、became 等）\",\"「安靜下來」可寫，例如 became quiet、went quiet 等\"]（原 makeSentence：instructionZh「用 seriously 造一個句子，說說你認真看待的一件事。」、referenceEn [\"I take my health seriously.\",\"I always think seriously about my future.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

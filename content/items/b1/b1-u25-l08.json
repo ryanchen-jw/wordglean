@@ -125,10 +125,10 @@
       "audioZh": "天文學家關於月球軌道的演講學生免費，其他訪客要付五元。",
       "questionZh": "學生聽演講要付多少錢？",
       "options": [
-        "It is free for students.",
-        "Five dollars each.",
-        "Three dollars each.",
-        "Half the normal price."
+        "It is free for students",
+        "Five dollars each",
+        "Three dollars each",
+        "Half the normal price"
       ],
       "answer": 0
     },
@@ -348,6 +348,12 @@
         "message": "執行長裁示：第③關：SUS 與同單元 u25-l05-q17 同為「作品 is based on 來源」（§12.3）",
         "resolution": "改為 promptZh「爺爺常常講村裡流傳的口述故事給我們聽。」、referenceEn [\"My grandfather often tells us the oral stories of the village.\",\"My grandpa often tells us oral stories from the village.\"]、rubricZh [\"用 oral 表示「口述的；口頭流傳的」（例如 oral stories）\"]（原 promptZh「這本書是根據村裡老人的口述寫成的。」、referenceEn [\"This book is based on the oral stories of the old people in the village.\",\"This book comes from the oral stories told by old people in the village.\"]、rubricZh [\"用 oral 表示「口述的」（例如 oral stories）\",\"「根據…寫成」可寫，例如 is based on、comes from 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

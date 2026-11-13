@@ -128,10 +128,10 @@
       "audioZh": "她的考試成績令人印象深刻：一百分拿了九十分。",
       "questionZh": "她考了幾分？",
       "options": [
-        "Nineteen.",
-        "Ninety.",
-        "One hundred.",
-        "Eighty."
+        "Nineteen",
+        "Ninety",
+        "One hundred",
+        "Eighty"
       ],
       "answer": 1
     },
@@ -389,6 +389,12 @@
         "message": "執行長裁示：第③關：SUS raise 名詞「加薪」高於 B1（§11.6），參考答案改 more pay，要點保留 a raise",
         "resolution": "改為 referenceEn [\"She finally found the courage to ask her boss for more pay.\",\"She finally found the courage to ask her boss to pay her more.\"]、rubricZh [\"用 courage 表示「勇氣」（例如 found the courage to…、had the courage to… 等）\",\"「要求加薪」可寫，例如 ask for more pay、ask … to pay her more 等；寫 ask for a raise 也正確\"]（原 referenceEn [\"She finally found the courage to ask her boss for a raise.\",\"She finally had the courage to ask her boss for more pay.\"]、rubricZh [\"用 courage 表示「勇氣」（例如 found the courage to…、had the courage to… 等）\",\"「要求加薪」可寫，例如 ask for a raise、ask for more pay 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

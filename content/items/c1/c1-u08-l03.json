@@ -92,8 +92,8 @@
       "id": "c1-u08-l03-q07",
       "type": "wordCard",
       "word": "methodical",
-      "exampleEn": "The librarian made a methodical list of every old book.",
-      "exampleZh": "圖書館員有條理地把每本舊書都列成清單。",
+      "exampleEn": "The librarian sorted the old books in a methodical way, shelf by shelf.",
+      "exampleZh": "圖書館員有條理地一層一層整理那些舊書。",
       "glossZh": "有條理的；有系統的",
       "distractorsZh": [
         "隨性的",
@@ -127,10 +127,10 @@
       "audioZh": "在她的節目上，那位記者逐行剖析了公司的年度報告。",
       "questionZh": "那位記者做了什麼？",
       "options": [
-        "She studied the report closely.",
-        "She invited the boss onto her show.",
-        "She ignored the report.",
-        "She praised the company."
+        "She studied the report closely",
+        "She invited the boss onto her show",
+        "She ignored the report",
+        "She praised the company"
       ],
       "answer": 0
     },
@@ -333,6 +333,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（methodical）原位換成翻譯題，沿用題 id c1-u08-l03-q17；目標字沿用 methodical",
         "resolution": "改為 translate：promptZh「那位警探有條理地檢查了每一個房間。」、hintWords [\"methodical\"]、referenceEn [\"The detective searched every room in a methodical way.\",\"The detective was methodical and checked each room one by one.\"]、rubricZh [\"「有條理地」用 methodical（例如 in a methodical way、was methodical 等），也可用副詞 methodically\",\"「檢查」可寫，例如 searched、checked、examined 等\"]（原 makeSentence：instructionZh「用 methodical 造一個句子，說說你做某件事的方式很有條理（或不夠有條理）。」、referenceEn [\"I am very methodical when I pack for a trip.\",\"I try to be methodical about checking my emails each morning.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

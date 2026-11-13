@@ -77,8 +77,8 @@
       "id": "a1-u06-l05-q06",
       "type": "wordCard",
       "word": "saw",
-      "exampleEn": "My dad cuts down the old tree with a saw.",
-      "exampleZh": "我爸爸用鋸子把那棵老樹鋸倒。",
+      "exampleEn": "My dad is cutting down the old tree with a saw.",
+      "exampleZh": "我爸爸正在用鋸子把那棵老樹鋸倒。",
       "glossZh": "鋸子",
       "distractorsZh": [
         "錘子",
@@ -184,11 +184,11 @@
     {
       "id": "a1-u06-l05-q15",
       "type": "reading",
-      "passageEn": "Our house has a big living room and a small dining room. Yesterday, my sister found a mouse in the living room. She jumped on the couch! My dad put a bucket over the mouse. Then he took it outside. Now we keep the doors closed.",
-      "passageZh": "我們家有一間大客廳和一間小飯廳。昨天，我姊姊在客廳發現一隻老鼠，她跳到沙發上！我爸爸用水桶把老鼠蓋住，然後把牠帶到外面。現在我們都把門關好。",
+      "passageEn": "Our house has a big living room and a small dining room. Yesterday, my sister found a mouse in the living room. She jumped on the couch! My dad put a bucket over the mouse. Then he took the mouse outside. Now we keep the doors closed.",
+      "passageZh": "我們家有一間大客廳和一間小飯廳。昨天，我的姊妹在客廳發現一隻老鼠，她跳到沙發上！我爸爸用水桶把老鼠蓋住，然後把牠帶到外面。現在我們都把門關好。",
       "questions": [
         {
-          "questionZh": "姊姊在哪裡發現老鼠？",
+          "questionZh": "作者的姊妹在哪裡發現老鼠？",
           "options": [
             "廚房",
             "飯廳",
@@ -388,6 +388,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（living room）原位換成翻譯題，沿用題 id a1-u06-l05-q17；目標字沿用 living room",
         "resolution": "改為 translate：promptZh「我們的客廳有一張舊沙發。」、hintWords [\"living room\"]、referenceEn [\"There is an old sofa in our living room.\",\"Our living room has an old sofa.\"]、rubricZh [\"「沙發」可寫，例如 sofa、couch 等；old 前面用 an\",\"可寫，例如 There is an old sofa in…、Our living room has… 等\"]（原 makeSentence：instructionZh「用 living room 造一個句子，說說你家客廳裡有什麼，或你在客廳做什麼。」、referenceEn [\"There is a big couch in our living room.\",\"I watch TV in the living room.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

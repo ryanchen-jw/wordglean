@@ -25,7 +25,7 @@
       "id": "c1-u38-l09-q02",
       "type": "wordCard",
       "word": "tedium",
-      "exampleEn": "The tedium of filling in forms made him want to quit.",
+      "exampleEn": "The tedium of filling out forms made him want to quit.",
       "exampleZh": "填表格的單調乏味讓他想放棄。",
       "glossZh": "單調乏味；沉悶",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "不管你有多忙，忘了最好朋友的婚禮就是不可原諒。",
       "questionZh": "說話者認為忘了好友的婚禮怎麼樣？",
       "options": [
-        "It is quite funny.",
-        "It is fine if you are really busy.",
-        "It is impossible to forgive.",
-        "It happens a lot."
+        "It is quite funny",
+        "It is fine if you are really busy",
+        "It is impossible to forgive",
+        "It happens a lot"
       ],
       "answer": 2
     },
@@ -303,6 +303,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（commendation）原位換成翻譯題，沿用題 id c1-u38-l09-q17；目標字沿用 commendation",
         "resolution": "改為 translate：promptZh「這位消防員因為救出受困的小貓而獲得表揚。」、hintWords [\"commendation\"]、referenceEn [\"The firefighter received a commendation for rescuing a trapped kitten.\",\"The firefighter was given a commendation for saving a kitten that was stuck.\"]、rubricZh [\"「表揚」用 commendation（例如 received a commendation for… 等）\",\"「救出受困的小貓」可寫，例如 rescuing a trapped kitten、saving a kitten that was stuck 等\",\"時態配合內容（例如 received、was given 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 commendation 造一個句子，說說某人因為什麼事受到表揚。」、referenceEn [\"My sister received a commendation from her school for helping new students.\",\"Our team got a commendation for finishing the project early.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

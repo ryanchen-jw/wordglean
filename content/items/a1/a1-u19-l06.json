@@ -125,17 +125,17 @@
       "audioZh": "外面在下雨，我們待在裡面吧。",
       "questionZh": "他們為什麼待在裡面？",
       "options": [
-        "It is raining.",
-        "It is very cold.",
-        "It is late at night."
+        "It is raining",
+        "It is very cold",
+        "It is late at night"
       ],
       "answer": 0
     },
     {
       "id": "a1-u19-l06-q11",
       "type": "shadowing",
-      "sentenceEn": "Everybody, please look above the door.",
-      "sentenceZh": "大家請看門的上方。"
+      "sentenceEn": "Everybody, please look at the picture above the door.",
+      "sentenceZh": "大家請看門上方的那幅畫。"
     },
     {
       "id": "a1-u19-l06-q12",
@@ -284,6 +284,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（inside）原位換成翻譯題，沿用題 id a1-u19-l06-q17；目標字沿用 inside",
         "resolution": "改為 translate：promptZh「盒子裡面有什麼？」、hintWords [\"inside\"]、referenceEn [\"What is inside the box?\",\"What's inside the box?\"]、rubricZh [\"inside 當介系詞接地點（例如 inside the box）；寫 in the box 也正確\"]（原 makeSentence：instructionZh「用 inside 造一個句子，說說某個東西在哪裡面，或你在室內做的事。」、referenceEn [\"My keys are inside my bag.\",\"I stay inside when it rains.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

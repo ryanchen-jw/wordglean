@@ -118,8 +118,8 @@
       "id": "b1-u17-l03-q09",
       "type": "wordCard",
       "word": "southeast",
-      "exampleEn": "Most of the rain falls in the southeast.",
-      "exampleZh": "大部分的雨下在東南部。",
+      "exampleEn": "Most of the rain in this country falls in the southeast.",
+      "exampleZh": "這個國家大部分的雨下在東南部。",
       "glossZh": "東南；東南方的",
       "distractorsZh": [
         "西北",
@@ -140,10 +140,10 @@
       "audioZh": "往島上的船每小時從港口出發一班，最後一班六點開。",
       "questionZh": "最後一班船幾點出發？",
       "options": [
-        "At six.",
-        "At five.",
-        "At seven.",
-        "Every hour."
+        "At six",
+        "At five",
+        "At seven",
+        "Every hour"
       ],
       "answer": 0
     },
@@ -200,8 +200,8 @@
     {
       "id": "b1-u17-l03-q16",
       "type": "reading",
-      "passageEn": "The town of Bayport sits on the southeast coast. Its busy port receives ships with goods from many countries. Last year, the mayor opened a new train station with four platforms. Regional trains now go northwest to the mountains and southwest to the beaches. The student union at the local college often organizes trips by train. In the evening, many people walk along the sea and watch the ships on the horizon.",
-      "passageZh": "Bayport 鎮位於東南海岸。鎮上忙碌的港口接收來自許多國家、載著貨物的船。去年，鎮長啟用了一座有四個月台的新火車站。區域列車現在往西北通往山區，往西南通往海灘。當地大學的學生會常常辦搭火車的旅行。傍晚時，許多人沿著海邊散步，看地平線上的船。",
+      "passageEn": "The town of Bayport sits on the southeast coast. Its busy port receives ships with goods from many countries. Last year, the mayor opened a new train station with four platforms. Regional trains now go northwest to the mountains and southwest to the beaches. The student union at the local college often organizes trips by train. In the evening, many people walk by the sea and watch the ships on the horizon.",
+      "passageZh": "Bayport 鎮位於東南海岸。鎮上忙碌的港口接收來自許多國家、載著貨物的船。去年，鎮長啟用了一座有四個月台的新火車站。區域列車現在往西北通往山區，往西南通往海灘。當地大學的學生會常常辦搭火車的旅行。傍晚時，許多人在海邊散步，看地平線上的船。",
       "questions": [
         {
           "questionZh": "新火車站有幾個月台？",
@@ -371,6 +371,24 @@
         "message": "執行長裁示：第③關：SUS 台灣「學生會」常譯 student council，要點沒收",
         "resolution": "改為 rubricZh [\"用 student union 表示「學生會」（寫 student council 也正確）\",\"「舉辦」可寫，例如 holds、organizes 等\"]（原 rubricZh [\"用 student union 表示「學生會」\",\"「舉辦」可寫，例如 holds、organizes 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

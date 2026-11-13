@@ -111,7 +111,7 @@
       "type": "wordCard",
       "word": "month",
       "exampleEn": "My sister visits us once a month.",
-      "exampleZh": "我姊姊每個月來看我們一次。",
+      "exampleZh": "我的姊妹每個月來看我們一次。",
       "glossZh": "月；月份",
       "distractorsZh": [
         "年",
@@ -398,6 +398,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（never）原位換成翻譯題，沿用題 id a1-u03-l02-q18；目標字沿用 never",
         "resolution": "改為 translate：promptZh「我爸爸從來不喝咖啡。」、hintWords [\"never\"]、referenceEn [\"My father never drinks coffee.\",\"My dad never drinks coffee.\"]、rubricZh [\"never 放在一般動詞前（例如 never drinks），句子不再加 not\",\"「爸爸」可寫，例如 father、dad 等；動詞配合主詞（drinks）\"]（原 makeSentence：instructionZh「用 never 造一個句子，說說一件你從來不做的事。」、referenceEn [\"I never eat breakfast.\",\"I never drink coffee at night.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

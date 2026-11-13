@@ -66,8 +66,8 @@
       "id": "a1-u11-l01-q05",
       "type": "wordCard",
       "word": "war",
-      "exampleEn": "We learn about the war in history class.",
-      "exampleZh": "我們在歷史課學到那場戰爭。",
+      "exampleEn": "We learn about wars in history class.",
+      "exampleZh": "我們在歷史課學到戰爭。",
       "glossZh": "戰爭",
       "distractorsZh": [
         "和平",
@@ -348,6 +348,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（town）原位換成翻譯題，沿用題 id a1-u11-l01-q17；目標字沿用 town",
         "resolution": "改為 translate：promptZh「這個小鎮晚上很安靜。」、hintWords [\"town\"]、referenceEn [\"This town is very quiet at night.\",\"This town is quiet at night.\"]、rubricZh [\"「這個小鎮」可寫，例如 this town、this small town 等\",\"「晚上」可寫，例如 at night、in the evening 等\"]（原 makeSentence：instructionZh「用 town 造一個句子，說說你住的或你喜歡的一個小鎮。」、referenceEn [\"I live in a small town near the sea.\",\"My hometown is a quiet town.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

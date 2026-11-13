@@ -107,7 +107,7 @@
       "id": "c1-u09-l02-q08",
       "type": "wordCard",
       "word": "maternalistic",
-      "exampleEn": "The head teacher had a warm, maternalistic way with new students.",
+      "exampleEn": "The principal had a warm, maternalistic way with new students.",
       "exampleZh": "校長對新生溫暖親切，像母親一樣照顧他們。",
       "glossZh": "母親般照顧的；母性的",
       "distractorsZh": [
@@ -126,7 +126,7 @@
       "id": "c1-u09-l02-q10",
       "type": "listenChoice",
       "audioEn": "As the proud possessor of a new camera, Leo took photos all day.",
-      "audioZh": "Leo 得意地擁有了一台新相機，整天都在拍照。",
+      "audioZh": "Leo 有了一台新相機，得意得整天都在拍照。",
       "questionZh": "Leo 一整天在做什麼？",
       "options": [
         "Fixing his old car",
@@ -189,7 +189,7 @@
     {
       "id": "c1-u09-l02-q15",
       "type": "reading",
-      "passageEn": "My grandmother is the proud possessor of a box of old letters from her youth. Last week, she gave us a synopsis of each one. In one letter, a young suitor writes about meeting her at a summer dance. She says she built a quick rapport with him because they both loved music. However, her father was very paternalistic and did not allow her to go out alone. Her aunt, who was more maternalistic, often helped her secretly. The letters also mention a group of traveling musicians whom people then called \"gypsies\"; today, the name Roma is usually preferred.",
+      "passageEn": "My grandmother is the proud possessor of a box of old letters from her youth. Last week, she gave us a synopsis of each one. In one letter, a young suitor writes about meeting her at a summer dance. She says she quickly built a rapport with him because they both loved music. However, her father was very paternalistic and did not allow her to go out alone. Her aunt, who was more maternalistic, often helped her secretly. The letters also mention a group of traveling musicians whom people then called \"gypsies\"; today, the name Roma is usually preferred.",
       "passageZh": "我奶奶珍藏著一盒年輕時的舊信件。上週，她把每封信的大意講給我們聽。其中一封信裡，一位年輕的追求者寫到在一場夏日舞會上認識她。她說，因為兩人都熱愛音樂，所以很快就很投緣。不過，她的父親管得很嚴，不准她單獨出門。她的阿姨比較像媽媽一樣照顧她，常常偷偷幫她。信裡也提到一群四處表演的樂手，當時人們稱他們為「吉普賽人」；現在通常比較傾向使用 Roma 這個名稱。",
       "questions": [
         {
@@ -324,6 +324,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rapport）原位換成翻譯題，沿用題 id c1-u09-l02-q17；目標字沿用 rapport",
         "resolution": "改為 translate：promptZh「她和鄰居們相處得很融洽。」、hintWords [\"rapport\"]、referenceEn [\"She has a good rapport with her neighbors.\",\"She and her neighbors have a great rapport.\"]、rubricZh [\"「相處融洽」用 rapport（例如 has a good rapport with…、have a great rapport 等）\",\"「鄰居們」可寫，例如 her neighbors 等\"]（原 makeSentence：instructionZh「用 rapport 造一個句子，說說你和某個人如何建立融洽的關係。」、referenceEn [\"I built a good rapport with my neighbors by sharing fruit from my garden.\",\"I have a great rapport with my manager because we both love hiking.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

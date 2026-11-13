@@ -158,7 +158,7 @@
     {
       "id": "b2-u30-l01-q13",
       "type": "mcq",
-      "stemEn": "The new bus route was not ____, so the company stopped it after a year.",
+      "stemEn": "The new bus route was not ____, so the company ended it after a year.",
       "stemZh": "新的公車路線不賺錢，所以公司一年後就停駛了。",
       "options": [
         "inexperienced",
@@ -177,8 +177,8 @@
     {
       "id": "b2-u30-l01-q14",
       "type": "reading",
-      "passageEn": "Five years ago, Nina Chen started a small company that makes natural soap. As a young entrepreneur, she had little money, so she sold her soap online. Online commerce helped her reach clients all over Taiwan, and her business became profitable after only two years. Last year, a large distributor offered to sell her soap in supermarkets, and she agreed. Then a bigger company proposed a merger. Nina said no, because she wanted to keep control of her own brand. Instead, the two companies decided to cooperate on a new line of gift sets. Now Nina plans to recruit five more workers.",
-      "passageZh": "五年前，Nina Chen 創立了一家做天然肥皂的小公司。身為年輕的創業家，她沒什麼錢，所以她在網路上賣肥皂。網路商務幫助她接觸到全台灣的客戶，她的生意才兩年就開始賺錢。去年，一家大型經銷商提議把她的肥皂賣進超市，她答應了。後來，一家更大的公司提議合併。Nina 拒絕了，因為她想保有自己品牌的控制權。兩家公司反而決定合作推出一系列新的禮盒。現在 Nina 打算再招募五名員工。",
+      "passageEn": "Five years ago, Nina Chen started a small company that makes natural soap. As a young entrepreneur, she had little money, so she sold her soap online. Online commerce helped her reach customers all over Taiwan, and her business became profitable after only two years. Last year, a large distributor offered to sell her soap in supermarkets, and she agreed. Then a bigger company proposed a merger. Nina said no, because she wanted to keep control of her own brand. Instead, the two companies decided to cooperate on a new line of gift sets. Now Nina plans to recruit five more workers.",
+      "passageZh": "五年前，Nina Chen 創立了一家做天然肥皂的小公司。身為年輕的創業家，她沒什麼錢，所以她在網路上賣肥皂。網路商務幫助她接觸到全台灣的顧客，她的生意才兩年就開始賺錢。去年，一家大型經銷商提議把她的肥皂賣進超市，她答應了。後來，一家更大的公司提議合併。Nina 拒絕了，因為她想保有自己品牌的控制權。兩家公司反而決定合作推出一系列新的禮盒。現在 Nina 打算再招募五名員工。",
       "questions": [
         {
           "questionZh": "Nina 為什麼拒絕合併？",
@@ -361,6 +361,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cooperate）原位換成翻譯題，沿用題 id b2-u30-l01-q16；目標字沿用 cooperate",
         "resolution": "改為 translate：promptZh「兩國的科學家正在合作研究這種罕見的鳥。」、hintWords [\"cooperate\"]、referenceEn [\"Scientists from the two countries are cooperating to study this rare bird.\",\"Scientists from both countries are cooperating on a study of this rare bird.\"]、rubricZh [\"cooperate 的用法，例如 cooperate to study、cooperate on a study 等\",\"「正在」用進行式（例如 are cooperating 等）\",\"「罕見的鳥」可寫，例如 this rare bird、this rare kind of bird 等\"]（原 makeSentence：instructionZh「用 cooperate 造一個句子，說說你曾經和別人合作完成的一件事。」、referenceEn [\"My classmates and I cooperated to plan a school trip.\",\"I cooperated with my neighbors to clean up our street.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

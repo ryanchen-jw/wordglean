@@ -55,7 +55,7 @@
       "type": "wordCard",
       "word": "creative",
       "exampleEn": "My sister is very creative. She makes her own clothes.",
-      "exampleZh": "我姊姊很有創意，她都自己做衣服。",
+      "exampleZh": "我的姊妹很有創意，她都自己做衣服。",
       "glossZh": "有創意的",
       "distractorsZh": [
         "懶惰的",
@@ -367,6 +367,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（surprised）原位換成翻譯題，沿用題 id a2-u06-l04-q17；目標字沿用 surprised",
         "resolution": "改為 translate：promptZh「我很驚訝他還記得我的名字。」、hintWords [\"surprised\"]、referenceEn [\"I was surprised that he still remembered my name.\",\"I was surprised he still remembered my name.\"]、rubricZh [\"用 be surprised 表示「感到驚訝」，後面可接 that 子句（that 可省略）\",\"時態可用過去式或現在式（例如 was surprised、remembered、am surprised、remembers 等）\"]（原 makeSentence：instructionZh「用 surprised 造一個句子，說說一件讓你很驚訝的事。」、referenceEn [\"I was surprised to get a letter from my old teacher.\",\"I was surprised when my friend called me from Japan.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

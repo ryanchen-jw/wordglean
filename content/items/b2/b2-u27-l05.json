@@ -191,7 +191,7 @@
       "id": "b2-u27-l05-q15",
       "type": "reading",
       "passageEn": "High in the mountains of Spain stands a small monastery that is over eight hundred years old. The man who started it was a disciple of a famous teacher, and his old walking stick is kept there as a relic. The monastery does not have the prestige of the great cathedral in the capital, but many visitors come for peace and quiet. Even members of royalty have stayed there. The monks run a small farm where goats walk freely on the hills, and they are known for being humane: they never turn away a hungry traveler. My brother, who is usually a lazy bum at home, got up at five every morning when we stayed there, just to watch the sunrise.",
-      "passageZh": "在西班牙的高山上，有一座八百多年歷史的小修道院。創立它的人是一位知名老師的弟子，他的舊手杖被當作遺物收藏在那裡。這座修道院沒有首都那座大教堂的名氣，但仍有許多訪客為了平靜而來，連皇室成員都曾在那裡住過。僧侶們經營一座小農場，山羊在山坡上自由走動；他們也以仁慈聞名，從不拒絕飢餓的旅人。我哥哥在家通常是個懶鬼，但我們住在那裡時，他每天早上五點就起床，只為了看日出。",
+      "passageZh": "在西班牙的高山上，有一座八百多年歷史的小修道院。創立它的人是一位知名老師的弟子，他的舊手杖被當作遺物收藏在那裡。這座修道院沒有首都那座大教堂的名氣，但仍有許多訪客為了平靜而來，連皇室成員都曾在那裡住過。僧侶們經營一座小農場，山羊在山坡上自由走動；他們也以仁慈聞名，從不拒絕飢餓的旅人。我的兄弟在家通常是個懶鬼，但我們住在那裡時，他每天早上五點就起床，只為了看日出。",
       "questions": [
         {
           "questionZh": "修道院收藏了什麼遺物？",
@@ -204,7 +204,7 @@
           "answer": 2
         },
         {
-          "questionZh": "說話者的哥哥住在修道院時有什麼改變？",
+          "questionZh": "說話者的兄弟住在修道院時有什麼改變？",
           "options": [
             "每天五點起床",
             "整天在房間裡睡覺",
@@ -380,6 +380,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cathedral）原位換成翻譯題，沿用題 id b2-u27-l05-q17；目標字沿用 cathedral",
         "resolution": "改為 translate：promptZh「每週日早上，整個小鎮都聽得到大教堂的鐘聲。」、hintWords [\"cathedral\"]、referenceEn [\"Every Sunday morning, the bells of the cathedral can be heard all over town.\",\"On Sunday mornings, you can hear the cathedral bells across the whole town.\"]、rubricZh [\"cathedral 指大教堂（例如 the bells of the cathedral、the cathedral bells 等）\",\"主動或被動都可以（例如 can be heard、you can hear 等）\",\"「整個小鎮」可寫，例如 all over town、across the whole town 等\"]（原 makeSentence：instructionZh「用 cathedral 造一個句子，說說你去過或想去參觀的一座大教堂。」、referenceEn [\"I visited a huge cathedral in Barcelona when I traveled in Spain.\",\"I hope to see the famous cathedral in Paris one day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

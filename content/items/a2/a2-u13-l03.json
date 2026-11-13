@@ -127,8 +127,8 @@
     {
       "id": "a2-u13-l03-q10",
       "type": "listenChoice",
-      "audioEn": "Hello, passengers. This is your pilot. We will land in Tokyo at six.",
-      "audioZh": "各位乘客好，我是機長。我們將在六點降落東京。",
+      "audioEn": "Hello, everyone. This is your pilot speaking. We will land in Tokyo at six.",
+      "audioZh": "各位好，我是機長。我們將在六點降落東京。",
       "questionZh": "飛機幾點降落？",
       "options": [
         "At six",
@@ -358,6 +358,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（journey）原位換成翻譯題，沿用題 id a2-u13-l03-q17；目標字沿用 journey",
         "resolution": "改為 translate：promptZh「祝你旅途愉快！」、hintWords [\"journey\"]、referenceEn [\"Have a nice journey!\",\"Have a good journey!\"]、rubricZh [\"用 journey 表示「旅途」\",\"祝福可寫，例如 Have a nice journey、I hope you have a good journey 等\"]（原 makeSentence：instructionZh「用 journey 造一個句子，說說一趟你記得的旅程。」、referenceEn [\"My first journey by plane was very exciting.\",\"Our train journey across Taiwan was wonderful.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、audioZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

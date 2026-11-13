@@ -95,8 +95,8 @@
       "id": "b2-u30-l04-q07",
       "type": "wordCard",
       "word": "salesmanship",
-      "exampleEn": "Selling ice to people in the snow would take great salesmanship.",
-      "exampleZh": "要把冰賣給住在雪地裡的人，得要有高超的推銷術。",
+      "exampleEn": "Selling ice to people in a snowy town would take great salesmanship.",
+      "exampleZh": "要把冰賣給住在下雪小鎮的人，得要有高超的推銷術。",
       "glossZh": "推銷術；銷售技巧",
       "distractorsZh": [
         "會計",
@@ -127,8 +127,8 @@
     {
       "id": "b2-u30-l04-q10",
       "type": "shadowing",
-      "sentenceEn": "The shop offers a concession of ten percent to students.",
-      "sentenceZh": "那家店給學生打九折的優惠。"
+      "sentenceEn": "The museum offers concessions to students.",
+      "sentenceZh": "那家博物館給學生優惠票價。"
     },
     {
       "id": "b2-u30-l04-q11",
@@ -366,6 +366,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（rival）原位換成翻譯題，沿用題 id b2-u30-l04-q16；目標字沿用 rival",
         "resolution": "改為 translate：promptZh「比賽開始前，他和他的對手握了手。」、hintWords [\"rival\"]、referenceEn [\"He shook hands with his rival before the match.\",\"Before the game started, he shook his rival's hand.\"]、rubricZh [\"「對手」可寫，例如 rival 等\",\"「握手」可寫，例如 shook hands with、shook his rival's hand 等；用過去式\",\"「比賽開始前」可寫，例如 before the match、before the game started 等，可放句首或句尾\"]（原 makeSentence：instructionZh「用 rival 造一個句子，說說兩個互相競爭的球隊、公司或人。」、referenceEn [\"My school's basketball team has a long-time rival across the river.\",\"My best friend became my rival when we both wanted the same role in a play.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

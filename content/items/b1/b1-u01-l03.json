@@ -130,10 +130,10 @@
       "audioZh": "每當 Helen 覺得有壓力時，她就會到樹下散步很久。",
       "questionZh": "Helen 有壓力時會做什麼？",
       "options": [
-        "She walks for a long time.",
-        "She sits under the trees.",
-        "She goes for a long drive.",
-        "She eats something sweet."
+        "She walks for a long time",
+        "She sits under the trees",
+        "She goes for a long drive",
+        "She eats something sweet"
       ],
       "answer": 0
     },
@@ -152,7 +152,7 @@
     {
       "id": "b1-u01-l03-q13",
       "type": "mcq",
-      "stemEn": "The flat is large and bright. ____, the rent is quite low.",
+      "stemEn": "The apartment is large and bright. ____, the rent is quite low.",
       "stemZh": "這間公寓又大又明亮，而且租金相當便宜。",
       "options": [
         "Merely",
@@ -359,6 +359,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（moreover）原位換成翻譯題，沿用題 id b1-u01-l03-q17；目標字沿用 moreover",
         "resolution": "改為 translate：promptZh「這份工作離我家很近。此外，薪水也不錯。」、hintWords [\"moreover\"]、referenceEn [\"This job is close to my home. Moreover, the pay is good.\",\"The job is near my home. Moreover, it pays well.\"]、rubricZh [\"用 moreover 補充同方向的理由（例如 Moreover, the pay…；寫 Furthermore、Also 也正確）\",\"「薪水不錯」可寫，例如 the pay is good、it pays well 等\"]（原 makeSentence：instructionZh「用 moreover 造兩個句子，說明你喜歡某個地方的兩個理由。」、referenceEn [\"This cafe is quiet. Moreover, the coffee is cheap.\",\"The park is quiet. Moreover, it is close to my home.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

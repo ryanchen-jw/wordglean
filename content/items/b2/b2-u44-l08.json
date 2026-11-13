@@ -39,7 +39,7 @@
       "type": "wordCard",
       "word": "witty",
       "exampleEn": "He gave a witty speech at his sister's wedding.",
-      "exampleZh": "他在姊姊的婚禮上發表了一篇風趣的致詞。",
+      "exampleZh": "他在他姊妹的婚禮上發表了一篇風趣的致詞。",
       "glossZh": "風趣的；機智的",
       "distractorsZh": [
         "無聊的",
@@ -320,6 +320,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（consolation）原位換成翻譯題，沿用題 id b2-u44-l08-q17；目標字沿用 consolation",
         "resolution": "改為 translate：promptZh「在那段難過的日子裡，我在音樂中找到了慰藉。」、hintWords [\"consolation\"]、referenceEn [\"During that sad time, I found consolation in music.\",\"I found great consolation in music during that difficult time.\"]、rubricZh [\"consolation 表示「安慰、慰藉」，例如 find consolation in… 等\",\"「那段難過的日子」可寫，例如 during that sad time、during those difficult days 等\",\"時態可用過去式（例如 found 等）\"]（原 makeSentence：instructionZh「用 consolation 造一個句子，說說一件讓你得到安慰的事。」、referenceEn [\"The only consolation was that the rain stopped before the game.\",\"My dog's company is a great consolation when I feel sad.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

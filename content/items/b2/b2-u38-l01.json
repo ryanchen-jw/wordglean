@@ -176,8 +176,8 @@
     {
       "id": "b2-u38-l01-q14",
       "type": "reading",
-      "passageEn": "For over a century, the paper mill was the biggest employer in our town. Forty years ago, its output was so large that trains carried paper from the town every day. Later, the mill was bought by a large manufacturer from Japan. The new owners replaced the old machines with modern ones made of high-quality components. The mill's manager first came to the town as a young inspector who checked the quality of its paper. Because manufacturing needs a lot of water and power, utility bills are the mill's biggest cost. Some people wanted to sell the land for real estate, but the town decided to keep the mill and the jobs it brings.",
-      "passageZh": "一百多年來，這座紙廠一直是我們鎮上最大的僱主。四十年前，它的產量大到每天都有火車把紙運出鎮外。後來，紙廠被一家日本的大型製造商買下。新老闆把舊機器換成用高品質零件做成的新式機器。紙廠的經理當年是以年輕檢查員的身分來到鎮上，負責檢查紙的品質。因為製造業需要大量的水和電，水電等公用事業費用是紙廠最大的開銷。有些人想把土地賣掉做房地產，但鎮上決定保留紙廠和它帶來的工作機會。",
+      "passageEn": "For over a century, the paper mill was the biggest employer in our town. Forty years ago, its output was so large that trains carried paper from the town every day. Later, the mill was bought by a large manufacturer from Japan. The new owners replaced the old machines with modern ones made of high-quality components. The mill's manager first came to the town as a young inspector who checked the quality of its paper. Because manufacturing needs a lot of water and power, utility bills are the mill's biggest cost. Some people wanted to sell the land to real estate companies, but the town decided to keep the mill and the jobs it brings.",
+      "passageZh": "一百多年來，這座紙廠一直是我們鎮上最大的僱主。四十年前，它的產量大到每天都有火車把紙運出鎮外。後來，紙廠被一家日本的大型製造商買下。新老闆把舊機器換成用高品質零件做成的新式機器。紙廠的經理當年是以年輕檢查員的身分來到鎮上，負責檢查紙的品質。因為製造業需要大量的水和電，水電等公用事業費用是紙廠最大的開銷。有些人想把土地賣給房地產公司，但鎮上決定保留紙廠和它帶來的工作機會。",
       "questions": [
         {
           "questionZh": "誰買下了紙廠？",
@@ -388,6 +388,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（manufacturer）原位換成翻譯題，沿用題 id b2-u38-l01-q16；目標字沿用 manufacturer",
         "resolution": "改為 translate：promptZh「這家製造商的玩具全部是用木頭做的。」、hintWords [\"manufacturer\"]、referenceEn [\"All the toys from this manufacturer are made of wood.\",\"This manufacturer makes all of its toys from wood.\"]、rubricZh [\"「製造商」可寫，例如 manufacturer 等\",\"「用木頭做的」可寫，例如 are made of wood、makes … from wood、wooden 等\"]（原 makeSentence：instructionZh「用 manufacturer 造一個句子，說說你知道的一家製造商和它做的產品。」、referenceEn [\"My laptop was made by a manufacturer in Taiwan.\",\"There is a toy manufacturer near my home that makes wooden toys.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

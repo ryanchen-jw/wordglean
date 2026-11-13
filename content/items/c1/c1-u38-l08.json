@@ -128,10 +128,10 @@
       "audioZh": "兩兄弟為了誰該留下他們合買的那輛舊車，爭了好幾個月。",
       "questionZh": "兄弟倆爭了好幾個月的是什麼？",
       "options": [
-        "How to share the cost of a new house.",
-        "Who would get the old car.",
-        "Where to go on holiday.",
-        "Which school to attend."
+        "How to share the cost of a new house",
+        "Who would get the old car",
+        "Where to go on vacation",
+        "Which school to attend"
       ],
       "answer": 1
     },
@@ -188,7 +188,7 @@
     {
       "id": "c1-u38-l08-q15",
       "type": "reading",
-      "passageEn": "After the paper factory closed, the slow desertion of young people left the village of Marlow half empty. Those who stayed felt lethargic, and the village council spent years wrangling over plans that never happened. Then Hana, a former teacher with a beguiling way of telling stories, returned home. She noticed teenagers wandering about with aimless looks and decided to give them a project: a festival of stories. Some neighbors glumly predicted that nobody would come. Hana fought ferociously for a small budget, and with real cleverness she turned the empty shops into stages. The first festival drew three thousand visitors, and the local paper commended her energy.",
+      "passageEn": "After the paper factory closed, the slow desertion of the village by its young people left Marlow half empty. Those who stayed felt lethargic, and the village council spent years wrangling over plans that never happened. Then Hana, a former teacher with a beguiling way of telling stories, returned home. She noticed teenagers wandering about, bored and aimless, and decided to give them a project: a festival of stories. Some neighbors glumly predicted that nobody would come. Hana fought ferociously for a small budget, and with real cleverness she turned the empty shops into stages. The first festival drew three thousand visitors, and the local paper commended her for her energy.",
       "passageZh": "造紙廠關閉後，年輕人一個個離開，讓 Marlow 村空了一半。留下來的人提不起勁，村議會花了好幾年爭論那些從未實現的計畫。後來，說故事很迷人的前老師 Hana 回到家鄉。她注意到青少年漫無目的地到處閒晃，便決定給他們一個任務：辦一場說故事節。有些鄰居悶悶不樂地預言不會有人來。Hana 拚命爭取到一筆小預算，還很巧妙地把空店面變成表演場地。第一屆說故事節吸引了三千名遊客，當地報紙也讚揚她的活力。",
       "questions": [
         {
@@ -330,6 +330,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（glumly）原位換成翻譯題，沿用題 id c1-u38-l08-q17；目標字沿用 glumly",
         "resolution": "改為 translate：promptZh「小男孩悶悶不樂地看著他的冰淇淋掉在地上。」、hintWords [\"glumly\"]、referenceEn [\"The little boy watched glumly as his ice cream fell on the ground.\",\"The little boy glumly watched his ice cream drop to the ground.\"]、rubricZh [\"「悶悶不樂地」用 glumly，位置有彈性（例如 watched glumly、glumly watched 等）\",\"「掉在地上」可寫，例如 fell on the ground、drop to the ground 等\",\"時態配合內容（例如 watched 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 glumly 造一個句子，描述你某次悶悶不樂的樣子。」、referenceEn [\"I walked home glumly after missing the last bus.\",\"I glumly looked at my test score and put the paper away.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -125,10 +125,10 @@
       "audioZh": "我們廚房地板需要新的瓷磚，但很貴。",
       "questionZh": "他們需要什麼？",
       "options": [
-        "A new table for the kitchen.",
-        "New paint for the kitchen floor.",
-        "Cheaper tiles for the bathroom.",
-        "Tiles for the floor of the kitchen."
+        "A new table for the kitchen",
+        "New paint for the kitchen floor",
+        "Cheaper tiles for the bathroom",
+        "Tiles for the floor of the kitchen"
       ],
       "answer": 3
     },
@@ -385,6 +385,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（nap）原位換成翻譯題，沿用題 id b1-u11-l02-q17；目標字沿用 nap",
         "resolution": "改為 translate：promptZh「我爸爸每天吃完午飯後都會睡個午覺。」、hintWords [\"nap\"]、referenceEn [\"My father takes a nap after lunch every day.\",\"Every day, my dad has a nap after lunch.\"]、rubricZh [\"用 nap 表示「午睡」（例如 takes a nap、has a nap 等）\"]（原 makeSentence：instructionZh「用 nap 造一個句子，說說你什麼時候會小睡一下。」、referenceEn [\"I take a nap on Sunday afternoons.\",\"I sometimes have a short nap on the train.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

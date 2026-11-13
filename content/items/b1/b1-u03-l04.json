@@ -127,10 +127,10 @@
       "audioZh": "開會前，請把舊海報拿掉，把新的掛在牆上。",
       "questionZh": "開會前要做什麼？",
       "options": [
-        "Hang the old posters again.",
-        "Clean the meeting room.",
-        "Replace the old posters.",
-        "Take the posters down after the meeting."
+        "Hang the old posters again",
+        "Clean the meeting room",
+        "Replace the old posters",
+        "Take the posters down after the meeting"
       ],
       "answer": 2
     },
@@ -221,7 +221,7 @@
       ],
       "referenceEn": [
         "This report contains a lot of useful information.",
-        "The report contains much useful information."
+        "The report contains plenty of useful information."
       ],
       "rubricZh": [
         "contain 表示「包含」，主詞是報告（第三人稱單數，動詞用 contains）",
@@ -376,6 +376,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tend）原位換成翻譯題，沿用題 id b1-u03-l04-q17；目標字沿用 tend",
         "resolution": "改為 translate：promptZh「這裡的夏天往往又熱又多雨。」、hintWords [\"tend\"]、referenceEn [\"Summers here tend to be hot and rainy.\",\"Summer here tends to be hot and rainy.\"]、rubricZh [\"用 tend to＋原形動詞表示「往往」（例如 tend to be；寫 are usually 也正確）\",\"主詞與動詞單複數一致即可（例如 Summers here tend…、Summer here tends… 等）\"]（原 makeSentence：instructionZh「用 tend to 造一個句子，說說你在某種情況下往往會做的事。」、referenceEn [\"I tend to sleep late on weekends.\",\"When I am busy, I tend to forget lunch.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

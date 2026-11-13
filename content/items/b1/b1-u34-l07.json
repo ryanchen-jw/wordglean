@@ -13,7 +13,7 @@
       "type": "wordCard",
       "word": "occupy",
       "exampleEn": "Video games occupy most of my brother's free time.",
-      "exampleZh": "電動遊戲占去了我弟弟大部分的空閒時間。",
+      "exampleZh": "電動遊戲占去了我的兄弟大部分的空閒時間。",
       "glossZh": "占據；使忙碌",
       "distractorsZh": [
         "打掃",
@@ -77,8 +77,8 @@
       "id": "b1-u34-l07-q06",
       "type": "wordCard",
       "word": "counter",
-      "exampleEn": "Every time I give an idea, my brother counters it.",
-      "exampleZh": "每次我提出想法，我哥都會反駁。",
+      "exampleEn": "Every time I suggest an idea, my brother counters it.",
+      "exampleZh": "每次我提出想法，我的兄弟都會反駁。",
       "glossZh": "反駁；回擊；櫃台",
       "distractorsZh": [
         "同意",
@@ -125,10 +125,10 @@
       "audioZh": "拿著那些杯子別跑，不然會摔到地上。",
       "questionZh": "為什麼不要拿著杯子跑？",
       "options": [
-        "The floor is wet.",
-        "The glasses are very hot.",
-        "The glasses may fall and break.",
-        "The drinks will get cold."
+        "The floor is wet",
+        "The glasses are very hot",
+        "The glasses may fall and break",
+        "The drinks will get cold"
       ],
       "answer": 2
     },
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "He possesses three different cars.",
-        "He possesses three cars of different kinds."
+        "He possesses three different kinds of cars."
       ],
       "rubricZh": [
         "possess 表示「擁有」，例如 possess cars 等說法",
@@ -403,6 +403,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（encounter）原位換成翻譯題，沿用題 id b1-u34-l07-q17；目標字沿用 encounter",
         "resolution": "改為 translate：promptZh「我們在山上遇到了一場大霧。」、hintWords [\"encounter\"]、referenceEn [\"We encountered thick fog in the mountains.\",\"We encountered heavy fog on the mountain.\"]、rubricZh [\"用 encounter 表示「遭遇；遇到」（例如 encountered thick fog）\",\"「大霧」可寫，例如 thick fog、heavy fog 等\"]（原 makeSentence：instructionZh「用 encounter 造一個句子，說說你曾有過的一次特別的相遇。」、referenceEn [\"I had a funny encounter with a famous singer at the airport.\",\"My first encounter with snow was on a mountain.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

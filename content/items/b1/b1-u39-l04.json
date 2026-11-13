@@ -125,10 +125,10 @@
       "audioZh": "地震時，我們躲在桌子底下，直到搖晃停止。",
       "questionZh": "地震時他們做了什麼？",
       "options": [
-        "Hid under the stairs.",
-        "Ran out of the house quickly.",
-        "Took cover under a table.",
-        "Stood next to the windows."
+        "Hid under the stairs",
+        "Ran out of the house quickly",
+        "Took cover under a table",
+        "Stood next to the windows"
       ],
       "answer": 2
     },
@@ -397,6 +397,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（crow）原位換成翻譯題，沿用題 id b1-u39-l04-q17；目標字沿用 crow",
         "resolution": "改為 translate：promptZh「幾隻烏鴉在垃圾桶旁邊找食物。」、hintWords [\"crow\"]、referenceEn [\"Some crows were looking for food near the trash can.\",\"A few crows are looking for food by the trash can.\"]、rubricZh [\"用 crow 的複數表示「烏鴉」\",\"時態配合內容（例如 are looking、were looking 等）\"]（原 makeSentence：instructionZh「用 crow 造一個句子，說說你看過的烏鴉。」、referenceEn [\"I often see crows in the park near my house.\",\"A crow once took food from my hand.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -124,13 +124,13 @@
       "id": "b1-u02-l04-q10",
       "type": "listenChoice",
       "audioEn": "My sister used to have a part-time job, but now she has a permanent one at a bank.",
-      "audioZh": "我姊姊以前做兼職工作，但現在她在一家銀行有正職工作。",
-      "questionZh": "說話者的姊姊現在做什麼工作？",
+      "audioZh": "我的姊妹以前做兼職工作，但現在她在一家銀行有正職工作。",
+      "questionZh": "說話者的姊妹現在做什麼工作？",
       "options": [
-        "A permanent job at a bank.",
-        "A part-time job at a bank.",
-        "A part-time job at a school.",
-        "She has no job now."
+        "A permanent job at a bank",
+        "A part-time job at a bank",
+        "A part-time job at a school",
+        "She has no job now"
       ],
       "answer": 0
     },
@@ -340,6 +340,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（constantly）原位換成翻譯題，沿用題 id b1-u02-l04-q17；目標字沿用 constantly",
         "resolution": "改為 translate：promptZh「昨晚，隔壁的狗一直不停地叫。」、hintWords [\"constantly\"]、referenceEn [\"Last night, the dog next door barked constantly.\",\"The dog next door was barking constantly last night.\"]、rubricZh [\"用 constantly 表示「不停地」（例如 barked constantly；寫 kept barking 也正確）\",\"時態配合「昨晚」（例如 barked、was barking 等）\"]（原 makeSentence：instructionZh「用 constantly 造一個句子，說說一件你一直在做、停不下來的事。」、referenceEn [\"I constantly check my phone at work.\",\"I am constantly thinking about my next trip.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

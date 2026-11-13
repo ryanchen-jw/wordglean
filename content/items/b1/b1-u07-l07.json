@@ -115,10 +115,10 @@
       "audioZh": "新經理的第一年表現極糟，所以公司請他離開。",
       "questionZh": "公司為什麼請新經理離開？",
       "options": [
-        "He was new to the company.",
-        "He wanted more money from the company.",
-        "His first year went very badly.",
-        "He asked to leave the company."
+        "He was new to the company",
+        "He wanted more money from the company",
+        "His first year went very badly",
+        "He asked to leave the company"
       ],
       "answer": 2
     },
@@ -156,8 +156,8 @@
     {
       "id": "b1-u07-l07-q13",
       "type": "mcq",
-      "stemEn": "The main ____ of this phone is its short battery life.",
-      "stemZh": "這支手機的主要缺點是電池續航力短。",
+      "stemEn": "The main ____ of this team is its lack of experience.",
+      "stemZh": "這支隊伍的主要缺陷是缺乏經驗。",
       "options": [
         "turbulence",
         "deficiency",
@@ -382,6 +382,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（transitional）原位換成翻譯題，沿用題 id b1-u07-l07-q16；目標字沿用 transitional",
         "resolution": "改為 translate：promptZh「公司正處於一段過渡時期，很多事情還沒決定。」、hintWords [\"transitional\"]、referenceEn [\"The company is in a transitional period, and many decisions have not been made yet.\",\"The company is going through a transitional period, and many things have not been decided.\"]、rubricZh [\"用 transitional 表示「過渡的」（例如 a transitional period、a transitional stage 等）\",\"「還沒決定」可寫，例如 have not been decided、decisions have not been made 等\"]（原 makeSentence：instructionZh「用 transitional 造一個句子，說說你人生中的一段過渡時期。」、referenceEn [\"Moving to Taipei was a transitional time in my life.\",\"My first year at university was a transitional period for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

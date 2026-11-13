@@ -14,8 +14,8 @@
       "id": "c1-p02-l01-q01",
       "type": "wordCard",
       "word": "bring in",
-      "exampleEn": "The new manager brought some fresh ideas in.",
-      "exampleZh": "新經理引進了一些新的想法。",
+      "exampleEn": "The team needed fresh ideas, so the new manager brought some in.",
+      "exampleZh": "團隊需要新的想法，所以新經理引進了一些。",
       "glossZh": "引進；賺得",
       "distractorsZh": [
         "提前",
@@ -114,7 +114,7 @@
       "audioZh": "夏季節慶賺到的錢比今年任何一場活動都多。",
       "questionZh": "夏季節慶的結果如何？",
       "options": [
-        "It was cancelled because the weather was bad",
+        "It was canceled because the weather was bad",
         "It earned the most money of the year",
         "It was smaller than usual",
         "Few people came to it"
@@ -174,8 +174,8 @@
     {
       "id": "c1-p02-l01-q14",
       "type": "reading",
-      "passageEn": "For decades, the Lu family's small factory made wooden toys by hand. When larger companies began to churn cheap plastic toys out, sales fell sharply. Instead of giving up, the family entered into a partnership with a design school. Together they created a new line of toys made from recycled paper. The plan was risky, and they had little money to fall back on, but they kept going. Today, the paper toys bring in most of the company's income, and they are sold in twelve countries. Parents like them because they are light and safe.",
-      "passageZh": "幾十年來，盧家的小工廠一直用手工製作木製玩具。當大公司開始大量生產便宜的塑膠玩具，工廠的銷量大幅下滑。這家人沒有放棄，而是和一所設計學校展開合作，一起開發出一系列用回收紙做的玩具。這個計畫風險很高，他們也沒什麼錢可以依靠，但他們堅持了下去。現在，紙做的玩具為公司賺進大部分的收入，並且在十二個國家販售。家長喜歡這些玩具，因為它們又輕又安全。",
+      "passageEn": "For decades, the Lu family's small factory made wooden toys by hand. When larger companies began making cheap plastic toys and churning them out by the million, sales fell sharply. Instead of giving up, the family entered into a partnership with a design school. Together they created a new line of toys made from recycled paper. The plan was risky, and they had little money to fall back on, but they kept going. Today, the paper toys bring in most of the company's income, and they are sold in twelve countries. Parents like them because they are light and safe.",
+      "passageZh": "幾十年來，盧家的小工廠一直用手工製作木製玩具。當大公司開始製造便宜的塑膠玩具，而且一做就是上百萬個，工廠的銷量大幅下滑。這家人沒有放棄，而是和一所設計學校展開合作，一起開發出一系列用回收紙做的玩具。這個計畫風險很高，他們也沒什麼錢可以依靠，但他們堅持了下去。現在，紙做的玩具為公司賺進大部分的收入，並且在十二個國家販售。家長喜歡這些玩具，因為它們又輕又安全。",
       "questions": [
         {
           "questionZh": "工廠的銷量為什麼大幅下滑？",
@@ -320,6 +320,36 @@
         "message": "執行長第③關裁示修正：選項長度超過其他選項平均 2 倍（單題異常值），縮短",
         "resolution": "改前：\"與設計學校合作開的課程\"；改後：\"合作課程\"",
         "resolvedAt": "2026-10-06T00:36:03Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（片語補句（代名詞拆開））、exampleZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

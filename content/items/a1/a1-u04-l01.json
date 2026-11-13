@@ -173,7 +173,7 @@
       "id": "a1-u04-l01-q14",
       "type": "mcq",
       "stemEn": "My brother and I often play ____.",
-      "stemZh": "我和我哥哥常常一起玩。",
+      "stemZh": "我和我的兄弟常常一起玩。",
       "options": [
         "once",
         "together",
@@ -433,6 +433,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（friend）原位換成翻譯題，沿用題 id a1-u04-l01-q17；目標字沿用 friend",
         "resolution": "改為 translate：promptZh「我的朋友送了我一本書。」、hintWords [\"friend\"]、referenceEn [\"My friend gave me a book.\",\"My friend gave a book to me.\"]、rubricZh [\"「送了」用過去式（例如 gave）\",\"可寫，例如 gave me a book、gave a book to me 等\"]（原 makeSentence：instructionZh「用 friend 造一個句子，介紹你的一位朋友。」、referenceEn [\"My friend Ken is a teacher.\",\"Anna is my best friend.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

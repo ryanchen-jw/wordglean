@@ -184,8 +184,8 @@
     {
       "id": "a2-u04-l01-q15",
       "type": "reading",
-      "passageEn": "My grandfather loves new inventions. Last month, he bought a coffee machine. It seems easy to use, and it provides hot coffee in one minute. But on the first day, he spilled coffee all over the kitchen. Now my grandmother forbids him to use it alone! He almost quit, but my brother gave him a cleaning kit and showed him how to use the machine.",
-      "passageZh": "我爺爺很喜歡新發明。上個月，他買了一台咖啡機。它看起來很好用，一分鐘就能煮好熱咖啡。可是第一天，他就把咖啡灑得整個廚房都是。現在我奶奶禁止他一個人使用！他差點就放棄了，不過我哥哥給了他一組清潔用具，還教他怎麼用那台咖啡機。",
+      "passageEn": "My grandfather loves new inventions. Last month, he bought a coffee machine. It seems easy to use, and it makes hot coffee in just one minute. But on the first day, he spilled coffee all over the kitchen. Now my grandmother forbids him to use it alone! He almost quit, but my brother gave him a cleaning kit and showed him how to use the machine.",
+      "passageZh": "我爺爺很喜歡新發明。上個月，他買了一台咖啡機。它看起來很好用，一分鐘就能煮好熱咖啡。可是第一天，他就把咖啡灑得整個廚房都是。現在我奶奶禁止他一個人使用！他差點就放棄了，不過我的兄弟給了他一組清潔用具，還教他怎麼用那台咖啡機。",
       "questions": [
         {
           "questionZh": "爺爺第一天用咖啡機時發生了什麼事？",
@@ -401,6 +401,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（lose）原位換成翻譯題，沿用題 id a2-u04-l01-q17；目標字沿用 lose",
         "resolution": "改為 translate：promptZh「我昨天在公車上弄丟了雨傘。」、hintWords [\"lose\"]、referenceEn [\"I lost my umbrella on the bus yesterday.\",\"Yesterday I lost my umbrella on the bus.\"]、rubricZh [\"昨天的事用過去式（例如 lost）\",\"「在公車上」可寫，例如 on the bus 等\",\"yesterday 放句首或句尾都可以\"]（原 makeSentence：instructionZh「用 lose 造一個句子，說說你曾經弄丟過的東西。」、referenceEn [\"I lost my wallet on the bus last year.\",\"I have lost my keys many times.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

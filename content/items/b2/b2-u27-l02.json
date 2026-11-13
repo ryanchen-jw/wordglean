@@ -191,13 +191,13 @@
     {
       "id": "b2-u27-l02-q15",
       "type": "reading",
-      "passageEn": "When Mei's family moved to Canada, her parents worried about how their children would fit in. As immigrants, they found that many social conventions were different. For example, students called their teachers by their first names, which seemed strange to the family at first. Mei's parents were quite conventional, but they slowly became more liberal and let her join a theater club. Mei learned that kindness is universal, even when customs are not. In history class, she studied the history of the native tribes in the area, and she also read old stories about the gods of the north. Today she works as a translator between two languages and two cultures.",
-      "passageZh": "Mei 一家搬到加拿大時，她的父母擔心孩子們能不能融入。身為移民，他們發現很多社會慣例都不一樣。例如，學生直接叫老師的名字，一開始全家人都覺得很奇怪。Mei 的父母相當傳統，但漸漸變得比較開明，讓她參加了戲劇社。Mei 學到，就算習俗不同，善意卻是到處都通的。在歷史課上，她學到這一帶原住民部落的歷史，也讀了關於北方眾神的古老故事。如今她是一名翻譯，在兩種語言和兩種文化之間工作。",
+      "passageEn": "When Mei's family moved to Canada, her parents worried about how their children would fit in. As immigrants, they found that many social conventions were different. For example, people at work called their bosses by their first names, which seemed strange to the family at first. Mei's parents were quite conventional, but they slowly became more liberal and let her join a theater club. Mei learned that kindness is universal, even when customs are not. In history class, she learned about the native tribes in the area and read their old stories about their gods. Today she works as a translator between two languages and two cultures.",
+      "passageZh": "Mei 一家搬到加拿大時，她的父母擔心孩子們能不能融入。身為移民，他們發現很多社會慣例都不一樣。例如，上班的人直接叫老闆的名字，一開始全家人都覺得很奇怪。Mei 的父母相當傳統，但漸漸變得比較開明，讓她參加了戲劇社。Mei 學到，就算習俗不同，善意卻是到處都通的。在歷史課上，她認識了這一帶的原住民部落，也讀了他們關於神明的古老故事。如今她是一名翻譯，在兩種語言和兩種文化之間工作。",
       "questions": [
         {
           "questionZh": "剛到加拿大時，Mei 一家覺得什麼很奇怪？",
           "options": [
-            "學生直接叫老師的名字",
+            "上班的人直接叫老闆的名字",
             "大家吃飯不用筷子",
             "冬天非常寒冷",
             "商店很早關門"
@@ -350,6 +350,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（immigrant）原位換成翻譯題，沿用題 id b2-u27-l02-q17；目標字沿用 immigrant",
         "resolution": "改為 translate：promptZh「她身為移民，花了三年才習慣這裡的天氣。」、hintWords [\"immigrant\"]、referenceEn [\"As an immigrant, she took three years to get used to the weather here.\",\"She was an immigrant, and it took her three years to get used to the weather here.\"]、rubricZh [\"immigrant 指移民（例如 as an immigrant 等）\",\"「花了三年才」可寫，例如 took three years to…、it took her three years to… 等\",\"「習慣」可寫，例如 get used to、get accustomed to 等\"]（原 makeSentence：instructionZh「用 immigrant 造一個句子，說說你知道的一位移民（可以是家人、朋友或鄰居）。」、referenceEn [\"My neighbor is an immigrant from Vietnam, and she cooks amazing food.\",\"My best friend's mother is an immigrant from Thailand who works as an engineer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[0].options[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

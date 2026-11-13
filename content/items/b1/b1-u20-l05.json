@@ -104,7 +104,7 @@
       "type": "wordCard",
       "word": "forehead",
       "exampleEn": "She has a small mark on her forehead.",
-      "exampleZh": "她額頭上有一個小記號。",
+      "exampleZh": "她額頭上有一個小印子。",
       "glossZh": "額頭；前額",
       "distractorsZh": [
         "下巴",
@@ -125,10 +125,10 @@
       "audioZh": "再次入場時，請出示手腕上的印章。",
       "questionZh": "要怎麼再次入場？",
       "options": [
-        "Hold up your stamped wrist.",
-        "Show your concert ticket again.",
-        "Get a new stamp at the door.",
-        "Wait outside the main gate."
+        "Hold up your stamped wrist",
+        "Show your concert ticket again",
+        "Get a new stamp at the door",
+        "Wait outside the main gate"
       ],
       "answer": 0
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u20-l05-q15",
       "type": "reading",
-      "passageEn": "Last Sunday, our class visited a museum about the human body. We saw a large model of the lungs and other organs. A guide showed us how the wrist and elbow move. Then we tried to pick up small things without using our thumbs, and it was very hard. Later, a real surgeon talked about her job. She said she washes her hands for three minutes before each operation. At the end, everyone got a smiling face stamped on their forehead.",
+      "passageEn": "Last Sunday, our class visited a museum about the human body. We saw a large model of the lungs and other organs. A guide showed us how the wrist and elbow move. Then we tried to pick up small things without using our thumbs, and it was very hard. Later, a real surgeon talked about her job. She said she washes her hands for three minutes before each operation. At the end of the visit, everyone got a smiling face stamped on their forehead.",
       "passageZh": "上星期天，我們班去參觀一座人體博物館。我們看到肺和其他器官的大模型。導覽員示範手腕和手肘怎麼活動。接著我們試著不用大拇指撿起小東西，結果非常難。後來，一位真正的外科醫師介紹她的工作。她說每次手術前都要洗手三分鐘。最後，每個人的額頭上都蓋了一個笑臉印章。",
       "questions": [
         {
@@ -337,6 +337,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（wrist）原位換成翻譯題，沿用題 id b1-u20-l05-q17；目標字沿用 wrist",
         "resolution": "改為 translate：promptZh「他把手錶戴在右手腕上。」、hintWords [\"wrist\"]、referenceEn [\"He wears his watch on his right wrist.\",\"He wears a watch on his right wrist.\"]、rubricZh [\"用 wrist 表示「手腕」（例如 on his right wrist）\"]（原 makeSentence：instructionZh「用 wrist 造一個句子，說說你手腕上戴的東西或手腕的狀況。」、referenceEn [\"I always wear a watch on my wrist.\",\"My wrist hurts after I type for a long time.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

@@ -127,10 +127,10 @@
       "audioZh": "在樂團說可以之前，請不要上傳演唱會的照片。",
       "questionZh": "什麼時候可以上傳照片？",
       "options": [
-        "As soon as the concert begins tonight.",
-        "Only during the break between the songs.",
-        "Once the band allows it.",
-        "Before the band says it's OK."
+        "As soon as the concert begins tonight",
+        "Only during the break between the songs",
+        "Once the band allows it",
+        "Before the band says it's OK"
       ],
       "answer": 2
     },
@@ -399,6 +399,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（blogger）原位換成翻譯題，沿用題 id b1-u30-l07-q17；目標字沿用 blogger",
         "resolution": "改為 translate：promptZh「那位部落客常寫關於便宜旅行的文章。」、hintWords [\"blogger\"]、referenceEn [\"That blogger often writes articles about cheap travel.\",\"That blogger often writes about traveling without spending much money.\"]、rubricZh [\"用 blogger 表示「部落客」\",\"「文章」可寫，例如 articles、posts 等；寫 writes about… 也正確\"]（原 makeSentence：instructionZh「用 blogger 造一個句子，說說你喜歡的部落客。」、referenceEn [\"My favorite blogger writes about cooking.\",\"I follow a travel blogger who visits a new city every month.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

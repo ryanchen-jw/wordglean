@@ -41,7 +41,7 @@
       "id": "c1-u10-l06-q03",
       "type": "wordCard",
       "word": "unconventional",
-      "exampleEn": "They had an unconventional wedding on a mountain top.",
+      "exampleEn": "They had an unconventional wedding on a mountaintop.",
       "exampleZh": "他們在山頂上辦了一場不落俗套的婚禮。",
       "glossZh": "非傳統的；不落俗套的",
       "distractorsZh": [
@@ -118,20 +118,20 @@
     {
       "id": "c1-u10-l06-q09",
       "type": "listenType",
-      "sentenceEn": "Filling in these forms is tedious but necessary.",
+      "sentenceEn": "Filling out these forms is tedious but necessary.",
       "sentenceZh": "填這些表格很乏味，但非填不可。"
     },
     {
       "id": "c1-u10-l06-q10",
       "type": "listenChoice",
-      "audioEn": "The head teacher commended the students for cleaning the beach on Saturday.",
+      "audioEn": "The principal commended the students for cleaning the beach on Saturday.",
       "audioZh": "校長表揚了星期六去淨灘的學生。",
       "questionZh": "學生們為什麼受到表揚？",
       "options": [
-        "They helped a teacher.",
-        "They won a singing contest.",
-        "They got high marks.",
-        "They cleaned the beach."
+        "They helped a teacher",
+        "They won a singing contest",
+        "They got good grades",
+        "They cleaned the beach"
       ],
       "answer": 3
     },
@@ -169,8 +169,8 @@
     {
       "id": "c1-u10-l06-q14",
       "type": "mcq",
-      "stemEn": "I was ____ when my old teacher remembered my name after twenty years.",
-      "stemZh": "二十年後老師還記得我的名字，讓我受寵若驚。",
+      "stemEn": "I was ____ when the famous writer asked for my opinion.",
+      "stemZh": "那位知名作家問我的意見時，我受寵若驚。",
       "options": [
         "robust",
         "flattered",
@@ -188,8 +188,8 @@
     {
       "id": "c1-u10-l06-q15",
       "type": "reading",
-      "passageEn": "When Kai started art school, he felt insecure about his strange, colorful style. Some classmates looked at his work with disdain and told him to paint \"normal\" pictures. For a while, he tried, but copying others felt tedious. His teacher noticed and encouraged him to keep his individuality. \"Unconventional ideas are what make art interesting,\" she said. Last spring, a local gallery commended Kai's work and showed it in a special exhibition, and critics praised its bold aesthetic qualities. One classmate who had laughed at him later said she felt remorse and apologized.",
-      "passageZh": "Kai 剛進藝術學校時，對自己奇特又色彩繽紛的畫風很沒信心。有些同學不屑地看著他的作品，叫他畫「正常」一點的畫。有一陣子他試著照做，但模仿別人讓他覺得乏味。老師注意到了，鼓勵他保有自己的個人特色。她說：「不落俗套的想法，才讓藝術有趣。」去年春天，當地一家畫廊肯定了 Kai 的作品，在特展中展出，評論家也讚揚作品大膽的美感。一位曾經嘲笑他的同學後來說她很懊悔，並向他道歉。",
+      "passageEn": "When Kai started art school, he felt insecure about his strange, colorful style. Some classmates looked at his work with disdain and told him to paint \"normal\" pictures. For a while, he tried, but copying others felt tedious. His teacher noticed and encouraged him to keep his individuality. \"Unconventional ideas are what make art interesting,\" she said. Last spring, a local gallery owner commended Kai's work and showed it in a special exhibition, and critics praised its bold aesthetic qualities. One classmate who had laughed at him later said she felt remorse and apologized.",
+      "passageZh": "Kai 剛進藝術學校時，對自己奇特又色彩繽紛的畫風很沒信心。有些同學不屑地看著他的作品，叫他畫「正常」一點的畫。有一陣子他試著照做，但模仿別人讓他覺得乏味。老師注意到了，鼓勵他保有自己的個人特色。她說：「不落俗套的想法，才讓藝術有趣。」去年春天，當地一家畫廊的老闆肯定了 Kai 的作品，在特展中展出，評論家也讚揚作品大膽的美感。一位曾經嘲笑他的同學後來說她很懊悔，並向他道歉。",
       "questions": [
         {
           "questionZh": "Kai 剛進藝術學校時有什麼感覺？",
@@ -322,6 +322,36 @@
         "message": "創辦人裁示：造句改翻譯：造句題（individuality）原位換成翻譯題，沿用題 id c1-u10-l06-q17；目標字沿用 individuality",
         "resolution": "改為 translate：promptZh「這位設計師的作品充滿個人特色。」、hintWords [\"individuality\"]、referenceEn [\"This designer's work is full of individuality.\",\"The designer's works show a lot of individuality.\"]、rubricZh [\"「個人特色」用 individuality（例如 full of individuality、show individuality 等）\",\"「作品」可寫，例如 work、works、designs 等\"]（原 makeSentence：instructionZh「用 individuality 造一個句子，說說你如何表現自己的個人特色。」、referenceEn [\"I show my individuality through the colorful socks I wear.\",\"I express my individuality by decorating my room in my own style.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

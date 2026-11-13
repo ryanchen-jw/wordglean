@@ -112,10 +112,10 @@
       "audioZh": "飛機後方的廁所故障了。",
       "questionZh": "飛機後方的廁所怎麼了？",
       "options": [
-        "It is full.",
-        "It is being cleaned now.",
-        "It is locked.",
-        "It is not working."
+        "It is full",
+        "It is being cleaned now",
+        "It is locked",
+        "It is not working"
       ],
       "answer": 3
     },
@@ -289,6 +289,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（conservatory）原位換成翻譯題，沿用題 id c1-u12-l02-q16；目標字沿用 conservatory",
         "resolution": "改為 translate：promptZh「她十八歲時進入一所有名的音樂學院。」、hintWords [\"conservatory\"]、referenceEn [\"She entered a famous music conservatory at the age of eighteen.\",\"At eighteen, she went to a well-known conservatory to study music.\"]、rubricZh [\"「音樂學院」用 conservatory（例如 a music conservatory、a conservatory 等）\",\"「進入」可寫，例如 entered、went to、was accepted by 等\",\"「十八歲時」可寫，例如 at eighteen、at the age of eighteen 等\"]（原 makeSentence：instructionZh「用 conservatory 造一個句子，說說如果你家有玻璃溫室，你會拿來做什麼。」、referenceEn [\"If I had a conservatory, I would grow tomatoes all year.\",\"I would like a conservatory where I could read in the winter sun.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

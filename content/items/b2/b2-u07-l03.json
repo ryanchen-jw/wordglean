@@ -220,7 +220,7 @@
         "exceed"
       ],
       "referenceEn": [
-        "The number of people who signed up exceeded one hundred.",
+        "The number of people who signed up this time exceeded one hundred.",
         "The number of people signing up this time has exceeded one hundred."
       ],
       "rubricZh": [
@@ -496,6 +496,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（portion）原位換成翻譯題，沿用題 id b2-u07-l03-q17；目標字沿用 portion",
         "resolution": "改為 translate：promptZh「這棟建築有一部分是一百多年前蓋的。」、hintWords [\"portion\"]、referenceEn [\"A portion of this building was built more than a hundred years ago.\",\"One portion of the building was built over one hundred years ago.\"]、rubricZh [\"portion 表示「一部分」（例如 a portion of、one portion of 等）\",\"「蓋的」用被動（例如 was built 等）\",\"「一百多年前」可寫，例如 more than a hundred years ago、over 100 years ago 等\"]（原 makeSentence：instructionZh「用 portion 造一個句子，說說你的時間、收入的一部分，或一份食物。」、referenceEn [\"I usually save a small portion of my salary.\",\"The portions at my favorite restaurant are too big for me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -112,7 +112,7 @@
     {
       "id": "b1-p02-l03-q09",
       "type": "listenChoice",
-      "audioEn": "When you fill in the form, please don't leave out your phone number.",
+      "audioEn": "When you fill out the form, please don't leave out your phone number.",
       "audioZh": "你填表格的時候，請不要漏掉你的電話號碼。",
       "questionZh": "說話的人提醒聽者什麼事？",
       "options": [
@@ -175,7 +175,7 @@
     {
       "id": "b1-p02-l03-q14",
       "type": "reading",
-      "passageEn": "Amy planned a surprise party for her best friend, Lisa. She invited everyone in their class, but she left out one name: Tom, Lisa's cousin. On the day of the party, Amy was held up at school, so she arrived late. When she finally came in, she saw Tom at the door with a cake. \"Lisa's mom told me about the party,\" he said with a smile. Amy felt bad. She didn't want to let down her friends. But Lisa just laughed and said, \"This is the best party ever!\"",
+      "passageEn": "Amy planned a surprise party for her best friend, Lisa. She invited everyone in their class, but she left out one name: Tom, Lisa's cousin. On the day of the party, Amy was held up at school, so she arrived late. When she finally came in, she saw Tom at the door with a cake. \"Lisa's mom told me about the party,\" he said with a smile. Amy felt bad. She didn't want to let her friends down. But Lisa just laughed and said, \"This is the best party ever!\"",
       "passageZh": "Amy 替她最好的朋友 Lisa 辦了一場驚喜派對。她邀請了班上所有人，卻漏掉了一個名字：Lisa 的表親 Tom。派對當天，Amy 在學校被耽擱，所以晚到了。她終於進門時，看到 Tom 拿著蛋糕站在門口。「Lisa 的媽媽跟我說了派對的事。」他笑著說。Amy 覺得很過意不去，她不想讓朋友們失望。但 Lisa 只是笑著說：「這是有史以來最棒的派對！」",
       "questions": [
         {
@@ -351,6 +351,18 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 3 題位（b1-p02-l03-q09、b1-p02-l03-q14#0、b1-p02-l03-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

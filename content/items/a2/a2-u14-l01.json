@@ -231,11 +231,11 @@
       ],
       "referenceEn": [
         "This book is about the life and death of a painter.",
-        "This book tells the life and death of a painter."
+        "This book tells the story of the life and death of a painter."
       ],
       "rubricZh": [
         "「死亡」用名詞 death",
-        "「⋯的一生」可寫例如 the life of…；「寫的是」可寫例如 is about、tells"
+        "「⋯的一生」可寫例如 the life of…；「寫的是」可寫例如 is about、tells the story of"
       ]
     },
     {
@@ -392,6 +392,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（medical）原位換成翻譯題，沿用題 id a2-u14-l01-q18；目標字沿用 medical",
         "resolution": "改為 translate：promptZh「我表哥明年會開始讀醫學院。」、hintWords [\"medical\"]、referenceEn [\"My cousin will start medical school next year.\",\"My cousin is going to start medical school next year.\"]、rubricZh [\"用 medical 表示「醫學的」（例如 medical school）\",\"明年的事用表示未來的寫法（例如 will、be going to 等）\",\"「讀醫學院」可寫，例如 start medical school、go to medical school 等\"]（原 makeSentence：instructionZh「用 medical 造一個句子，說說和醫學或醫療有關的人、地方或東西。」、referenceEn [\"My sister wants to go to medical school.\",\"This hospital has new medical machines.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]、rubricZh[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -172,7 +172,7 @@
       "id": "a2-u23-l04-q14",
       "type": "reading",
       "passageEn": "My brother wants a dog, but my parents had doubts. \"A dog is a big commitment,\" Mom said. \"It will change our lifestyle.\" Dad didn't oppose the idea, but he preferred a cat. My brother said he would walk the dog every day. Finally, they decided to trust him. Now we have a dog, and my brother told me a secret: he likes cats too!",
-      "passageZh": "我哥哥想養狗，但爸媽有疑慮。媽媽說：「養狗是要長期投入的事。我們的生活方式會改變。」爸爸不反對這個想法，但他比較想養貓。哥哥說他每天都會去遛狗。最後，爸媽決定相信他。現在我們家有了一隻狗，哥哥還偷偷告訴我一個秘密：他其實也喜歡貓！",
+      "passageZh": "我的兄弟想養狗，但爸媽有疑慮。媽媽說：「養狗是要長期投入的事。我們的生活方式會改變。」爸爸不反對這個想法，但他比較想養貓。我的兄弟說他每天都會去遛狗。最後，爸媽決定相信他。現在我們家有了一隻狗，我的兄弟還偷偷告訴我一個秘密：他其實也喜歡貓！",
       "questions": [
         {
           "questionZh": "媽媽為什麼有疑慮？",
@@ -184,7 +184,7 @@
           "answer": 2
         },
         {
-          "questionZh": "哥哥告訴作者什麼秘密？",
+          "questionZh": "作者的兄弟偷偷說了什麼秘密？",
           "options": [
             "他怕狗",
             "他不想遛狗",
@@ -370,6 +370,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（commitment）原位換成翻譯題，沿用題 id a2-u23-l04-q16；目標字沿用 commitment",
         "resolution": "改為 translate：promptZh「學一種樂器需要很大的投入。」、hintWords [\"commitment\"]、referenceEn [\"Learning an instrument is a big commitment.\",\"Learning to play an instrument takes a big commitment.\"]、rubricZh [\"用 commitment 表示「投入」（例如 a big commitment）\",\"「需要」可寫，例如 is、takes 等\",\"「學一種樂器」可寫，例如 Learning an instrument、Learning to play an instrument 等\"]（原 makeSentence：instructionZh「用 commitment 造一個句子，說說一件需要長期投入的事。」、referenceEn [\"Learning the piano is a big commitment.\",\"Having a baby is a big commitment for parents.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -186,7 +186,7 @@
       "id": "b2-u43-l06-q15",
       "type": "reading",
       "passageEn": "Last spring, my brother decided he wanted to keep chickens in our small garden. My parents disapproved at first. Dad was pessimistic and said the birds would make too much noise, and Mom worried about a foul smell. My brother used every kind of persuasion he could think of. He made a chart showing how many eggs we could get, and he read about chickens in an almost obsessive way. In the end, it became conceivable to my parents that the plan might work. Now we have three chickens, and Dad's only sign of disapproval is a small sigh when they wake him up early.",
-      "passageZh": "去年春天，我弟弟決定要在我們家的小院子裡養雞。爸媽一開始都不贊成。爸爸很悲觀，說雞會太吵；媽媽則擔心會有難聞的味道。弟弟用盡了他想得到的各種說服方法。他做了一張圖表，算出我們可以收到多少顆蛋，還近乎著迷地讀了很多養雞的資料。最後，爸媽開始覺得這個計畫可能行得通。現在我們養了三隻雞，爸爸唯一表示不滿的方式，就是被雞一大早吵醒時輕輕嘆一口氣。",
+      "passageZh": "去年春天，我的兄弟決定要在我們家的小院子裡養雞。爸媽一開始都不贊成。爸爸很悲觀，說雞會太吵；媽媽則擔心會有難聞的味道。我的兄弟用盡了他想得到的各種說服方法。他做了一張圖表，算出我們可以收到多少顆蛋，還近乎著迷地讀了很多養雞的資料。最後，爸媽開始覺得這個計畫可能行得通。現在我們養了三隻雞，爸爸唯一表示不滿的方式，就是被雞一大早吵醒時輕輕嘆一口氣。",
       "questions": [
         {
           "questionZh": "爸爸一開始為什麼不贊成？",
@@ -199,7 +199,7 @@
           "answer": 0
         },
         {
-          "questionZh": "弟弟怎麼說服爸媽？",
+          "questionZh": "作者的兄弟怎麼說服爸媽？",
           "options": [
             "做了一張可以收多少蛋的圖表",
             "請鄰居來勸爸媽",
@@ -325,6 +325,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（persuasion）原位換成翻譯題，沿用題 id b2-u43-l06-q17；目標字沿用 persuasion",
         "resolution": "改為 translate：promptZh「經過一番勸說，我弟弟終於答應洗碗。」、hintWords [\"persuasion\"]、referenceEn [\"After some persuasion, my brother finally agreed to wash the dishes.\",\"With a little persuasion, my younger brother finally agreed to do the dishes.\"]、rubricZh [\"persuasion 當名詞（例如 after some persuasion、with a little persuasion 等）\",\"「洗碗」可寫，例如 wash the dishes、do the dishes 等；時態可用過去式或現在完成式（例如 agreed、has agreed 等）\"]（原 makeSentence：instructionZh「用 persuasion 造一個句子，說說一次你說服別人（或被說服）做某件事的經驗。」、referenceEn [\"It took me a lot of persuasion to get my friend to join the club.\",\"With a little persuasion, I got my brother to wash the dishes.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

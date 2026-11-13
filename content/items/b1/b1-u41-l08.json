@@ -127,10 +127,10 @@
       "audioZh": "長時間散步後，我的狗走路一瘸一拐的，所以我把牠抱回家。",
       "questionZh": "說話者為什麼把狗抱回家？",
       "options": [
-        "The dog lost its collar.",
-        "It started to rain very hard.",
-        "The dog had trouble walking.",
-        "The dog wanted to go home."
+        "The dog lost its collar",
+        "It started to rain very hard",
+        "The dog had trouble walking",
+        "The dog wanted to go home"
       ],
       "answer": 2
     },
@@ -150,7 +150,7 @@
       "id": "b1-u41-l08-q13",
       "type": "mcq",
       "stemEn": "I borrowed fifty dollars from my brother, and I'll ____ him on Friday.",
-      "stemZh": "我向弟弟借了五十元，星期五會還他。",
+      "stemZh": "我向我的兄弟借了五十元，星期五會還他。",
       "options": [
         "repay",
         "impair",
@@ -187,8 +187,8 @@
     {
       "id": "b1-u41-l08-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, I went rock climbing for the first time. Before we started, the teacher checked everyone's harness. A boy named Sam joked that he would fall intentionally to scare us, but the teacher didn't laugh. In the middle of the climb, fog came in and impaired our view, so we climbed down. My heart was thumping, and I shivered in the cold fog. Sam hurt his ankle and limped back to the bus, so I carried his bag for him. On the way home, the teacher told us a story about a young runaway who lived in the mountains. Sam said I helped him a lot that day, and he promised to repay me with ice cream. Now our photo is next to my hanging plants.",
-      "passageZh": "上週六，我第一次去爬山壁。開始前，老師檢查了每個人的安全吊帶。一個叫 Sam 的男生開玩笑說他會故意摔下去嚇我們，但老師沒有笑。爬到一半時，霧飄了過來，阻礙了我們的視線，所以我們爬了下來。我的心臟砰砰直跳，在冷霧中直發抖。Sam 傷到了腳踝，一瘸一拐地走回巴士，所以我幫他拿包包。回家路上，老師跟我們說了一個關於住在山裡的離家出走少年的故事。Sam 說我那天幫了他很多，答應會請我吃冰淇淋來報答我。現在，我們的合照就放在我的吊掛盆栽旁邊。",
+      "passageEn": "Last Saturday, I went rock climbing for the first time. Before we started, the teacher checked everyone's harness. A boy named Sam joked that he would fall intentionally to scare us, but the teacher didn't laugh. In the middle of the climb, fog came in and impaired our view, so we climbed down. My heart was thumping, and I shivered in the cold fog. Sam hurt his ankle and limped back to the bus, so I carried his bag. On the way home, the teacher told us a story about a young runaway who lived in the mountains. Sam said I helped him a lot, and he promised to repay me with ice cream. Now a photo of Sam and me from that day is next to my hanging plants.",
+      "passageZh": "上週六，我第一次去攀岩。開始前，老師檢查了每個人的安全吊帶。一個叫 Sam 的男生開玩笑說他會故意摔下去嚇我們，但老師沒有笑。爬到一半時，霧飄了過來，阻礙了我們的視線，所以我們爬了下來。我的心臟砰砰直跳，在冷霧中直發抖。Sam 傷到了腳踝，一瘸一拐地走回巴士，所以我幫他拿包包。回家路上，老師跟我們說了一個關於住在山裡的離家出走少年的故事。Sam 說我幫了他很多，答應會請我吃冰淇淋來報答我。現在，我和 Sam 那天的合照就放在我的吊掛盆栽旁邊。",
       "questions": [
         {
           "questionZh": "為什麼他們爬到一半就下來了？",
@@ -392,6 +392,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（repay）原位換成翻譯題，沿用題 id b1-u41-l08-q17；目標字沿用 repay",
         "resolution": "改為 translate：promptZh「我不知道要怎麼報答你的好意。」、hintWords [\"repay\"]、referenceEn [\"I don't know how to repay your kindness.\",\"I don't know how I can repay you for your kindness.\"]、rubricZh [\"用 repay 表示「報答」（例如 repay your kindness、repay you for… 等）\"]（原 makeSentence：instructionZh「用 repay 造一個句子，說說你想怎麼報答幫助過你的人。」、referenceEn [\"I want to repay my parents for their love.\",\"I will repay my friend by helping her with math.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯（zh-findings））、passageEn（套用後檢查器修正）、passageEn（套用後檢查器修正）、passageZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

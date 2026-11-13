@@ -173,8 +173,8 @@
     {
       "id": "a2-p01-l04-q14",
       "type": "reading",
-      "passageEn": "Tom has a busy schedule every morning. His alarm clock rings at six. He wakes up, but he stays in bed for five more minutes. Then he stands up and turns the alarm off. He washes up and eats breakfast with his family. Before he leaves, he throws away the empty milk box. He is never late for school.",
-      "passageZh": "Tom 每天早上都很忙。他的鬧鐘六點響。他醒來了，但會在床上多待五分鐘。然後他站起來，把鬧鐘關掉。他去洗手洗臉，再和家人一起吃早餐。出門前，他把空的牛奶盒丟掉。他上學從來不遲到。",
+      "passageEn": "Tom has a busy schedule every morning. His alarm clock rings at six. He wakes up, but he stays in bed for five more minutes. Then he stands up and turns the alarm off. He washes up and eats breakfast with his family. Before he leaves, he throws away the empty milk bottle. He is never late for school.",
+      "passageZh": "Tom 每天早上都很忙。他的鬧鐘六點響。他醒來了，但會在床上多待五分鐘。然後他站起來，把鬧鐘關掉。他去洗手洗臉，再和家人一起吃早餐。出門前，他把空的牛奶瓶丟掉。他上學從來不遲到。",
       "questions": [
         {
           "questionZh": "鬧鐘響了以後，Tom 先做什麼？",
@@ -189,7 +189,7 @@
           "questionZh": "Tom 出門前做什麼？",
           "options": [
             "打開電視看新聞",
-            "丟掉空的牛奶盒",
+            "丟掉空的牛奶瓶",
             "幫媽媽洗碗"
           ],
           "answer": 1
@@ -304,6 +304,12 @@
         "message": "執行長第③關裁示 9：改到選項或題幹的選擇類題，由新 context 審題員只看不含正解的題目重新盲答",
         "resolution": "重新盲答 2 題位（a2-p01-l04-q14#0、a2-p01-l04-q14#1），答案皆等於答案鍵，已寫回 verdicts",
         "resolvedAt": "2026-10-05T18:04:20Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[1].options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

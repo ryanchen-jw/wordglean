@@ -127,10 +127,10 @@
       "audioZh": "辦公室在一棟毫不起眼的灰色大樓裡，所以很多訪客都直接走過頭。",
       "questionZh": "為什麼很多訪客會走過頭？",
       "options": [
-        "The building looks plain.",
-        "The sign is too small.",
-        "The street is very dark at night.",
-        "The door is always locked."
+        "The building looks plain",
+        "The sign is too small",
+        "The street is very dark at night",
+        "The door is always locked"
       ],
       "answer": 0
     },
@@ -299,6 +299,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（oddity）原位換成翻譯題，沿用題 id c1-u04-l06-q17；目標字沿用 oddity",
         "resolution": "改為 translate：promptZh「這間博物館收藏了許多來自世界各地的奇特物品。」、hintWords [\"oddity\"]、referenceEn [\"This museum has a collection of oddities from around the world.\",\"The museum holds many oddities from all over the world.\"]、rubricZh [\"「奇特物品」用 oddity 的複數 oddities（例如 a collection of oddities 等）\",\"「收藏了」可寫，例如 has a collection of、holds、keeps 等\",\"「世界各地」可寫，例如 around the world、all over the world 等\"]（原 makeSentence：instructionZh「用 oddity 造一個句子，說說你身邊某個奇特的人或東西。」、referenceEn [\"I own an oddity: a clock that runs backwards.\",\"My uncle is a bit of an oddity in our family because he never uses a phone.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -127,10 +127,10 @@
       "audioZh": "抱歉，今晚街上的噪音真的讓我很煩。",
       "questionZh": "什麼讓說話者很煩？",
       "options": [
-        "The cold weather this evening.",
-        "The TV show next door.",
-        "The loud sounds outside.",
-        "The street lights at night."
+        "The cold weather this evening",
+        "The TV show next door",
+        "The loud sounds outside",
+        "The street lights at night"
       ],
       "answer": 2
     },
@@ -149,8 +149,8 @@
     {
       "id": "b1-u09-l03-q13",
       "type": "mcq",
-      "stemEn": "My boss rarely gives anyone a ____, so I was very happy.",
-      "stemZh": "我老闆很少稱讚別人，所以我很開心。",
+      "stemEn": "My boss rarely gives anyone a ____, so I was very happy to get one.",
+      "stemZh": "我老闆很少稱讚別人，所以得到他的稱讚時我很開心。",
       "options": [
         "disappointment",
         "spirit",
@@ -187,7 +187,7 @@
     {
       "id": "b1-u09-l03-q15",
       "type": "reading",
-      "passageEn": "Our school's sports day is always full of spirit. This year, the students were enthusiastic, and the teachers joined the races too. The weather was hot, so the coach told everyone to run with caution. One careless runner fell, but luckily it was not serious. Food stands tempted the children with ice cream. Some loud music irritated a few parents, but most people had fun. At the end, the head of the school gave every class a compliment on their teamwork.",
+      "passageEn": "Our school's sports day is always full of spirit. This year, the students were enthusiastic, and the teachers joined the races too. The weather was hot, so the coach told everyone to run with caution. One careless runner fell, but luckily it was not serious. Food stands tempted the children with ice cream. Some loud music irritated a few parents, but most people had fun. At the end of sports day, the head of the school gave every class a compliment on their teamwork.",
       "passageZh": "我們學校的運動會總是充滿活力。今年學生們很熱情，老師們也一起參加賽跑。天氣很熱，所以教練要大家小心跑。有一位粗心的跑者跌倒了，幸好不嚴重。小吃攤用冰淇淋吸引孩子們。有些大聲的音樂讓幾位家長很煩，但大多數人都玩得很開心。最後，校長稱讚每一班的團隊合作。",
       "questions": [
         {
@@ -381,6 +381,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（serious）原位換成翻譯題，沿用題 id b1-u09-l03-q17；目標字沿用 serious",
         "resolution": "改為 translate：promptZh「我哥哥對他的新工作很認真。」、hintWords [\"serious\"]、referenceEn [\"My brother is very serious about his new job.\",\"My older brother is really serious about his new job.\"]、rubricZh [\"用 be serious about 表示「認真看待」（例如 is very serious about…；寫 takes … seriously 也正確）\"]（原 makeSentence：instructionZh「用 serious 造一個句子，說說一件你很認真看待的事。」、referenceEn [\"I am serious about learning English this year.\",\"I am very serious about my job.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

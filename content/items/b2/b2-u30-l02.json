@@ -176,7 +176,7 @@
     {
       "id": "b2-u30-l02-q14",
       "type": "reading",
-      "passageEn": "Every year, a large shoe enterprise in Tainan holds a charity run, and its marketing team plans the whole event. This year, over five thousand people took part, and participation by families doubled. Each runner paid a small fee, and the company promised to give all the profit from the day to a children's library. Several corporate teams also ran together, wearing the same T-shirts. A local radio station signed a contract to report the race live. A nearby gym, in which the company has a small stake, let the runners use its showers for free. Some workers even spent part of their salary on drinks for the runners.",
+      "passageEn": "Every year, a large shoe enterprise in Tainan holds a charity run, and its marketing team plans the whole event. This year, over five thousand people took part, and participation by families doubled. Each runner paid a small fee, and the company promised to give all the profit from the day to a children's library. Several corporate teams also ran together, wearing the same T-shirts. A local radio station signed a contract to broadcast the race live. A nearby gym, in which the company has a small stake, let the runners use its showers for free. Some workers even spent part of their salary on drinks for the runners.",
       "passageZh": "每年，台南一家大型製鞋企業都會舉辦公益路跑，由行銷團隊規劃整個活動。今年有超過五千人參加，家庭的參與人數增加了一倍。每位跑者付一小筆報名費，公司承諾把當天的所有利潤捐給一間兒童圖書館。還有好幾支企業隊伍穿著同樣的 T 恤一起跑。一家地方電台簽了合約，現場轉播這場路跑。附近一家健身房（公司持有它的一小部分股份）免費讓跑者使用淋浴間。有些員工甚至花了部分薪水買飲料給跑者。",
       "questions": [
         {
@@ -225,8 +225,8 @@
         "contract"
       ],
       "referenceEn": [
-        "The football player signed a new three-year contract with the team.",
-        "The footballer has signed a new three-year contract with his team."
+        "The soccer player signed a new three-year contract with the team.",
+        "The soccer player has signed a new three-year contract with his team."
       ],
       "rubricZh": [
         "「續簽合約」可寫，例如 signed a new contract、renewed his contract 等",
@@ -407,6 +407,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（contract）原位換成翻譯題，沿用題 id b2-u30-l02-q16；目標字沿用 contract",
         "resolution": "改為 translate：promptZh「這位足球員和球隊續簽了三年的合約。」、hintWords [\"contract\"]、referenceEn [\"The football player signed a new three-year contract with the team.\",\"The footballer has signed a new three-year contract with his team.\"]、rubricZh [\"「續簽合約」可寫，例如 signed a new contract、renewed his contract 等\",\"「三年的」可寫，例如 a three-year contract、a contract for three years 等\",\"時態可用過去式或現在完成式（例如 signed、has signed 等）\"]（原 makeSentence：instructionZh「用 contract 造一個句子，說說你簽過的一份合約（例如租屋、手機、工作）。」、referenceEn [\"I signed a one-year contract when I rented my apartment.\",\"I signed a two-year phone contract last spring.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[0]、referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

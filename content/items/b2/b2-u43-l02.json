@@ -107,7 +107,7 @@
       "type": "wordCard",
       "word": "keen",
       "exampleEn": "My brother is keen on photography.",
-      "exampleZh": "我哥哥熱衷攝影。",
+      "exampleZh": "我的兄弟熱衷攝影。",
       "glossZh": "熱衷的；渴望的；敏銳的",
       "distractorsZh": [
         "厭倦的",
@@ -298,6 +298,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（keen）原位換成翻譯題，沿用題 id b2-u43-l02-q17；目標字沿用 keen",
         "resolution": "改為 translate：promptZh「我很想在今年學會游泳。」、hintWords [\"keen\"]、referenceEn [\"I am keen to learn to swim this year.\",\"I'm really keen to learn how to swim this year.\"]、rubricZh [\"keen 的用法，例如 be keen to learn、be keen on learning 等\",\"「學會游泳」可寫，例如 learn to swim、learn how to swim 等\"]（原 makeSentence：instructionZh「用 keen 造一個句子，說說你很想做或很熱衷的一件事。」、referenceEn [\"I'm keen to visit the mountains this summer.\",\"My friends and I are keen to start a band.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

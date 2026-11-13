@@ -103,8 +103,8 @@
       "id": "b2-u24-l08-q08",
       "type": "wordCard",
       "word": "fraud",
-      "exampleEn": "The online game company found that some players used fraud to win prizes.",
-      "exampleZh": "那家線上遊戲公司發現，有些玩家用詐欺手段贏得獎品。",
+      "exampleEn": "The online game company found that some players had won prizes by fraud.",
+      "exampleZh": "那家線上遊戲公司發現，有些玩家靠詐欺手段贏得獎品。",
       "glossZh": "詐欺；騙局",
       "distractorsZh": [
         "捐款",
@@ -185,7 +185,7 @@
     {
       "id": "b2-u24-l08-q15",
       "type": "reading",
-      "passageEn": "Last month, a local newspaper reported an allegation that a popular online shop was selling fake designer bags. The city's consumer office began to investigate. They found clear signs of fraud, and the shop was fined. The case started a debate in the community about how to regulate online shops. Some people said the city should simply enforce the rules it already has, while others asked for new laws. Our teacher used the story in class and explained that every customer is entitled to honest information about what they buy. She also told us that while she held the presidency of a consumer club in college, the club's legislative team wrote rules for its school fairs.",
+      "passageEn": "Last month, a local newspaper reported an allegation that a popular online shop was selling fake designer bags. The city's consumer office began to investigate. They found clear signs of fraud, and the shop was fined. The case started a debate in the community about how to regulate online shops. Some people said the city should simply enforce the rules it already has, while others asked for new laws. Our teacher used the story in class and explained that every customer is entitled to honest information about what they buy. She also told us that while she held the presidency of a consumer club in college, the club's legislative team wrote rules for the fairs on campus.",
       "passageZh": "上個月，一家地方報紙報導了一項指控，說一家熱門網路商店在賣假名牌包。市政府的消費者保護處開始調查。他們找到明確的詐欺跡象，那家店被罰了款。這個案子在地方上引發了一場關於該如何規範網路商店的討論。有些人說，市政府只要執行現有的規定就好；另一些人則要求制定新法。老師把這個故事拿來上課，說明每位顧客都有權得到關於商品的真實資訊。她也說，她大學時擔任一個消費者社團的會長，當時社團的立法小組為校園市集訂定了規則。",
       "questions": [
         {
@@ -434,6 +434,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（enforce）原位換成翻譯題，沿用題 id b2-u24-l08-q17；目標字沿用 enforce",
         "resolution": "改為 translate：promptZh「這座城市開始嚴格執行禁止亂丟垃圾的規定。」、hintWords [\"enforce\"]、referenceEn [\"The city has started to strictly enforce the rule against littering.\",\"The city has begun enforcing its rule against littering strictly.\"]、rubricZh [\"enforce 指執行規定（例如 enforce the rule 等）\",\"時態可用現在完成式或過去式（例如 has started、started 等）\",\"strictly 位置不扣分；「亂丟垃圾」可寫，例如 littering、dropping litter 等\"]（原 makeSentence：instructionZh「用 enforce 造一個句子，說說你家、學校或公司怎麼執行某條規定。」、referenceEn [\"My parents enforce a no-phone rule during dinner.\",\"Our office enforces a strict rule about cleaning the kitchen.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

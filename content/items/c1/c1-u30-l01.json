@@ -112,7 +112,7 @@
     {
       "id": "c1-u30-l01-q09",
       "type": "shadowing",
-      "sentenceEn": "Every summer, cinemas are full of blockbusters.",
+      "sentenceEn": "Every summer, movie theaters are full of blockbusters.",
       "sentenceZh": "每年夏天，電影院都擠滿了強檔大片。"
     },
     {
@@ -162,7 +162,7 @@
     {
       "id": "c1-u30-l01-q13",
       "type": "reading",
-      "passageEn": "Five years ago, the band Lumo played small gigs in cafés and recorded a demo in a friend's bedroom. A film director heard the demo and asked them to write music for his new movie. The film became a surprise blockbuster, and the band's song was a number-one hit within a week of its debut. Now the director is working on a sequel, and the band's singer, Nadia, has even helped with the screenplay. She says success has not changed them: they still play one free show in a café every month.",
+      "passageEn": "Five years ago, the band Lumo played small gigs in cafes and recorded a demo in a friend's bedroom. A film director heard the demo and asked them to write music for his new movie. The film became a surprise blockbuster, and the band's song was a number-one hit within a week of its debut. Now the director is working on a sequel, and the band's singer, Nadia, has even helped with the screenplay. She says success has not changed them: they still play one free show in a cafe every month.",
       "passageZh": "五年前，Lumo 樂團還在咖啡館做小型演出，並在朋友的臥室錄了一張試聽帶。一位電影導演聽到這張試聽帶後，請他們為他的新電影寫配樂。這部電影意外成為賣座大片，樂團的歌推出不到一週就登上排行榜第一名。現在導演正在拍續集，樂團主唱 Nadia 甚至幫忙寫了劇本。她說成功並沒有改變他們：他們每個月仍會在咖啡館免費演出一場。",
       "questions": [
         {
@@ -285,6 +285,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sequel）原位換成翻譯題，沿用題 id c1-u30-l01-q15；目標字沿用 sequel",
         "resolution": "改為 translate：promptZh「這家遊戲公司正在開發那款熱門遊戲的續集。」、hintWords [\"sequel\"]、referenceEn [\"The game company is developing a sequel to that popular game.\",\"The game company is working on a sequel to that popular game.\"]、rubricZh [\"「續集」用 sequel（例如 a sequel to that popular game 等）\",\"「開發」可寫，例如 developing、working on、making 等\"]（原 makeSentence：instructionZh「用 sequel 造一個句子，說說你希望哪部電影或小說出續集。」、referenceEn [\"I hope there will be a sequel to my favorite cartoon.\",\"I want to read the sequel to the book I finished last week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

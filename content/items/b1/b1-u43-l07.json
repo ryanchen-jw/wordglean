@@ -53,7 +53,7 @@
       "id": "b1-u43-l07-q04",
       "type": "wordCard",
       "word": "hurriedly",
-      "exampleEn": "Hurriedly, the waiter cleaned the table for the next customers.",
+      "exampleEn": "The waiter hurriedly cleaned the table for the next customers.",
       "exampleZh": "服務生匆忙地為下一批客人收拾桌子。",
       "glossZh": "匆忙地；倉促地",
       "distractorsZh": [
@@ -124,13 +124,13 @@
       "id": "b1-u43-l07-q10",
       "type": "listenChoice",
       "audioEn": "He hurriedly hid the gift when his sister walked in.",
-      "audioZh": "妹妹走進來時，他匆忙把禮物藏起來。",
+      "audioZh": "他的姊妹走進來時，他匆忙把禮物藏起來。",
       "questionZh": "他為什麼匆忙藏起禮物？",
       "options": [
-        "His sister came.",
-        "The gift was broken.",
-        "His mom called him.",
-        "It started to rain."
+        "His sister came",
+        "The gift was broken",
+        "His mom called him",
+        "It started to rain"
       ],
       "answer": 0
     },
@@ -453,6 +453,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（easygoing）原位換成翻譯題，沿用題 id b1-u43-l07-q17；目標字沿用 easygoing",
         "resolution": "改為 translate：promptZh「我的新鄰居很隨和，很少為小事煩惱。」、hintWords [\"easygoing\"]、referenceEn [\"My new neighbor is easygoing and rarely worries about small things.\",\"My new neighbor is very easygoing; small things rarely bother him.\"]、rubricZh [\"用 easygoing 表示「隨和的」\",\"鄰居用 he、she 都可以\"]（原 makeSentence：instructionZh「用 easygoing 造一個句子，描述一位個性隨和的人。」、referenceEn [\"My best friend is easygoing and fun to be with.\",\"My grandma is an easygoing person who laughs a lot.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

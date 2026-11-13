@@ -129,7 +129,7 @@
       "options": [
         "Egg salad",
         "Chicken soup",
-        "Sweet cake"
+        "Apple cake"
       ],
       "answer": 1
     },
@@ -385,6 +385,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cook）原位換成翻譯題，沿用題 id a1-u08-l04-q17；目標字沿用 cook",
         "resolution": "改為 translate：promptZh「我爸爸很會做菜。」、hintWords [\"cook\"]、referenceEn [\"My father cooks very well.\",\"My dad cooks really well.\"]、rubricZh [\"「很會做菜」可寫，例如 cooks very well、cooks really well、is good at cooking 等\",\"「爸爸」可寫，例如 father、dad 等；動詞配合主詞\"]（原 makeSentence：instructionZh「用 cook 造一個句子，說說你會煮的一道菜，或你家誰負責煮飯。」、referenceEn [\"I can cook chicken soup.\",\"My mother cooks dinner every day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

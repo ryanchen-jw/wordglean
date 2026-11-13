@@ -12,7 +12,7 @@
       "id": "b2-u50-l03-q01",
       "type": "wordCard",
       "word": "displace",
-      "exampleEn": "Football has displaced baseball as the most popular sport at our school.",
+      "exampleEn": "Soccer has displaced baseball as the most popular sport at our school.",
       "exampleZh": "足球已經取代棒球，成為我們學校最受歡迎的運動。",
       "glossZh": "取代；迫使離開",
       "distractorsZh": [
@@ -185,8 +185,8 @@
     {
       "id": "b2-u50-l03-q15",
       "type": "reading",
-      "passageEn": "Last Saturday, a traveling show came to our town square. The first act was a mimic who could copy the voice of anyone in the crowd, from a crying baby to the mayor. Then a young woman performed an amazing feat: she climbed a tall pole without using her hands. Her calm face aroused everyone's interest. At the end, a magician plucked a coin from behind my ear, and for a moment I couldn't utter a word. It was a breathtaking show.",
-      "passageZh": "上週六，一個巡迴表演團來到我們鎮的廣場。第一個節目是一位模仿高手，他能模仿觀眾中任何人的聲音，從哭鬧的嬰兒到鎮長都學得維妙維肖。接著一位年輕女子表演了驚人的絕技：她不用手就爬上一根高高的柱子。她冷靜的表情引起了大家的興趣。最後，一位魔術師從我耳朵後面變出一枚硬幣，我一時之間說不出話來。那真是一場精彩萬分的表演。",
+      "passageEn": "Last Saturday, a traveling show came to our town square. The first act was a mimic who could copy the voice of anyone in the crowd, from a crying baby to the mayor. Then a young woman stepped forward, and her calm face aroused everyone's interest. She performed an amazing feat: she climbed a tall pole without using her hands. Finally, a magician plucked a coin from behind my ear, and for a moment I couldn't utter a word. It was a breathtaking show.",
+      "passageZh": "上週六，一個巡迴表演團來到我們鎮的廣場。第一個節目是一位模仿高手，他能模仿觀眾中任何人的聲音，從哭鬧的嬰兒到鎮長都學得維妙維肖。接著一位年輕女子走上前來，她冷靜的表情引起了大家的興趣。她表演了驚人的絕技：不用手就爬上一根高高的柱子。最後，一位魔術師從我耳朵後面變出一枚硬幣，我一時之間說不出話來。那真是一場精彩萬分的表演。",
       "questions": [
         {
           "questionZh": "第一個節目的表演者會做什麼？",
@@ -338,6 +338,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（unlock）原位換成翻譯題，沿用題 id b2-u50-l03-q17；目標字沿用 unlock",
         "resolution": "改為 translate：promptZh「這支新手機只要看一眼就能解鎖。」、hintWords [\"unlock\"]、referenceEn [\"You can unlock this new phone just by looking at it.\",\"This new phone can be unlocked simply by looking at it.\"]、rubricZh [\"unlock 當動詞，主動句、被動句都可以（例如 you can unlock it、it can be unlocked 等）\",\"「只要看一眼」可寫，例如 just by looking at it、simply by looking at it 等\"]（原 makeSentence：instructionZh「用 unlock 造一個句子，說說你平常怎麼開鎖或解鎖某樣東西。」、referenceEn [\"I unlock my phone with a short code.\",\"I unlock the front door with a key every evening.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

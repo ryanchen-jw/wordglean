@@ -218,12 +218,13 @@
         "your"
       ],
       "referenceEn": [
-        "We need your help."
+        "We need your help.",
+        "We need you to help us."
       ],
       "rubricZh": [
         "主詞用 we，動詞用 need",
         "need 後面直接接名詞 help",
-        "用 your 表示「你的」"
+        "「你的幫忙」可寫，例如 your help、you to help us 等"
       ]
     },
     {
@@ -359,6 +360,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（after）原位換成翻譯題，沿用題 id a1-u01-l10-q17；目標字沿用 after",
         "resolution": "改為 translate：promptZh「她下班後會打電話給你。」、hintWords [\"after\"]、referenceEn [\"She will call you after work.\",\"After work, she will call you.\"]、rubricZh [\"用 after 表示「在⋯之後」（例如 after work）\",\"未來的事可寫，例如 will call、is going to call 等\"]（原 makeSentence：instructionZh「用 after 造一個句子，說說你在某件事之後會做什麼。」、referenceEn [\"I play ball after school.\",\"I take a shower after dinner.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：referenceEn（題庫外問題）、rubricZh[2]（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

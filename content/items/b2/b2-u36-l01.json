@@ -94,8 +94,8 @@
     {
       "id": "b2-u36-l01-q07",
       "type": "listenType",
-      "sentenceEn": "The pharmacist at the corner shop knows everyone in the neighborhood.",
-      "sentenceZh": "街角那家店的藥師認識附近的每一個人。"
+      "sentenceEn": "The pharmacist at the corner pharmacy knows everyone in the neighborhood.",
+      "sentenceZh": "街角那家藥局的藥師認識附近的每一個人。"
     },
     {
       "id": "b2-u36-l01-q08",
@@ -105,7 +105,7 @@
       "questionZh": "會議為什麼改期？",
       "options": [
         "The manager was on a trip abroad",
-        "The manager was in hospital",
+        "The manager was in the hospital",
         "The room was being cleaned",
         "Too many people were away"
       ],
@@ -365,6 +365,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pharmacist）原位換成翻譯題，沿用題 id b2-u36-l01-q15；目標字沿用 pharmacist",
         "resolution": "改為 translate：promptZh「我姊姊大學畢業後成為一名藥師。」、hintWords [\"pharmacist\"]、referenceEn [\"My older sister became a pharmacist after she graduated from university.\",\"After finishing university, my sister became a pharmacist.\"]、rubricZh [\"「藥師」可寫，例如 pharmacist 等\",\"「大學畢業後」可寫，例如 after she graduated、after finishing university 等，位置不限\",\"時態可用過去式或現在完成式（例如 became、has become 等）；寫 has become 也正確\"]（原 makeSentence：instructionZh「用 pharmacist 造一個句子，說說你家或公司附近的一位藥師。」、referenceEn [\"The pharmacist near my home opens her shop at seven every morning.\",\"There is a friendly pharmacist at the shop next to my office.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn、sentenceZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

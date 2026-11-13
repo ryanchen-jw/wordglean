@@ -79,7 +79,7 @@
       "id": "b1-u17-l04-q06",
       "type": "wordCard",
       "word": "academy",
-      "exampleEn": "The football academy accepts players from age ten.",
+      "exampleEn": "The soccer academy accepts players from age ten.",
       "exampleZh": "這所足球學校收十歲以上的球員。",
       "glossZh": "學院；專科學校",
       "distractorsZh": [
@@ -127,10 +127,10 @@
       "audioZh": "旅遊服務處九點開門，提供免費的市區地圖。",
       "questionZh": "旅遊服務處提供什麼？",
       "options": [
-        "Free city tours.",
-        "Free tickets.",
-        "Maps for sale.",
-        "City maps at no cost."
+        "Free city tours",
+        "Free tickets",
+        "Maps for sale",
+        "City maps at no cost"
       ],
       "answer": 3
     },
@@ -169,7 +169,7 @@
       "id": "b1-u17-l04-q14",
       "type": "mcq",
       "stemEn": "My brother wants to study painting at an art ____.",
-      "stemZh": "我哥哥想在藝術學院學畫畫。",
+      "stemZh": "我的兄弟想在藝術學院學畫畫。",
       "options": [
         "avenue",
         "academy",
@@ -187,7 +187,7 @@
     {
       "id": "b1-u17-l04-q15",
       "type": "reading",
-      "passageEn": "Nora studies geography at a small academy in the northeast of the city. This summer, she has a part-time job at the tourist bureau on Park Avenue. Visitors often ask her about the old palace, which was built during the time of the empire. Nora tells them that the builders needed forty years to finish it. She also helps tourists find hotels and shows them where to send packages home.",
+      "passageEn": "Nora studies geography at a small academy in the northeast of the city. This summer, she has a part-time job at the tourist bureau on Park Avenue. Visitors often ask her about the old palace, which was built during the time of the empire. Nora tells them that it took the builders forty years to finish it. She also helps tourists find hotels and shows them where to send packages home.",
       "passageZh": "Nora 在城市東北部的一所小型學院念地理。今年夏天，她在 Park Avenue 上的旅遊服務處打工。遊客常問她那座古老宮殿的事，宮殿是在帝國時期建造的。Nora 告訴他們，建築工人花了四十年才完工。她也幫觀光客找飯店，並告訴他們哪裡可以把包裹寄回家。",
       "questions": [
         {
@@ -364,6 +364,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（geography）原位換成翻譯題，沿用題 id b1-u17-l04-q17；目標字沿用 geography",
         "resolution": "改為 translate：promptZh「這個地區的地理環境很適合種茶。」、hintWords [\"geography\"]、referenceEn [\"The geography of this area is good for growing tea.\",\"The geography of this region is perfect for growing tea.\"]、rubricZh [\"用 geography 表示「地理（環境）」（例如 the geography of this area）\",\"「很適合」可寫，例如 is good for、is perfect for 等\"]（原 makeSentence：instructionZh「用 geography 造一個句子，說說你對地理課或地理知識的看法。」、referenceEn [\"I find geography interesting because I love maps.\",\"Good geography skills help me when I travel.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

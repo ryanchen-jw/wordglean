@@ -122,7 +122,7 @@
     {
       "id": "a2-u02-l02-q10",
       "type": "shadowing",
-      "sentenceEn": "At the beginning, the work was hard.",
+      "sentenceEn": "In the beginning, the work was hard.",
       "sentenceZh": "一開始，這份工作很辛苦。"
     },
     {
@@ -172,7 +172,7 @@
     {
       "id": "a2-u02-l02-q14",
       "type": "reading",
-      "passageEn": "My grandparents' house is almost a century old. At the beginning, it was just a small house on a farm. My grandfather was the third child in his family, and he has lived there all his life. Recently, my parents painted the whole house for him. We pay them regular visits, and I always enjoy seeing them.",
+      "passageEn": "My grandparents' house is almost a century old. In the beginning, it was just a small house on a farm. My grandfather was the third child in his family, and he has lived there all his life. Recently, my parents painted the whole house for him. We pay them regular visits, and I always enjoy seeing them.",
       "passageZh": "我爺爺奶奶的房子快一百年了。一開始，它只是農場上的一間小房子。爺爺是家裡的第三個孩子，他一輩子都住在那裡。最近，我爸媽幫他把整棟房子重新油漆了一遍。我們定期去探望他們，每次見到他們我都很開心。",
       "questions": [
         {
@@ -334,6 +334,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（regular）原位換成翻譯題，沿用題 id a2-u02-l02-q16；目標字沿用 regular",
         "resolution": "改為 translate：promptZh「這家咖啡店有很多常客。」、hintWords [\"regular\"]、referenceEn [\"This cafe has many regular customers.\",\"There are a lot of regular customers at this cafe.\"]、rubricZh [\"「常客」可寫，例如 regular customers 等\",\"「有很多」可寫，例如 has many、There are a lot of 等\"]（原 makeSentence：instructionZh「用 regular 造一個句子，說說你規律在做的一件事。」、referenceEn [\"I go to bed at a regular time every night.\",\"I do regular exercise in the park.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

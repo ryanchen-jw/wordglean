@@ -80,7 +80,7 @@
       "type": "wordCard",
       "word": "ambassador",
       "exampleEn": "As a student ambassador, my sister shows visitors around her school.",
-      "exampleZh": "我妹妹是學生大使，負責帶訪客參觀她的學校。",
+      "exampleZh": "我的姊妹是學生大使，負責帶訪客參觀她的學校。",
       "glossZh": "大使；代表人物",
       "distractorsZh": [
         "教練",
@@ -142,7 +142,7 @@
       "options": [
         "Show their ID at the desk",
         "Go upstairs right now",
-        "Wait outside in the car park",
+        "Wait outside in the parking lot",
         "Call the office first"
       ],
       "answer": 0
@@ -395,6 +395,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（certificate）原位換成翻譯題，沿用題 id b2-u24-l01-q18；目標字沿用 certificate",
         "resolution": "改為 translate：promptZh「完成這門課的學生都會拿到一張證書。」、hintWords [\"certificate\"]、referenceEn [\"Students who finish this course will receive a certificate.\",\"Everyone who completes the course will get a certificate.\"]、rubricZh [\"certificate 指證書（例如 receive a certificate、get a certificate 等）\",\"「會」可用表示未來的寫法或現在式（例如 will get、get 等）\",\"「完成這門課的學生」可寫，例如 students who finish…、everyone who completes… 等\"]（原 makeSentence：instructionZh「用 certificate 造一個句子，說說你拿過的證書或想考的證照。」、referenceEn [\"I got a first aid certificate after a two-day course.\",\"I hope to get a cooking certificate next year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

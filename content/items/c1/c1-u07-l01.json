@@ -127,10 +127,10 @@
       "audioZh": "新公寓唯一的缺點，是走到車站要很久。",
       "questionZh": "新公寓的缺點是什麼？",
       "options": [
-        "It is very noisy.",
-        "The rent is too high.",
-        "It is far from the station.",
-        "The rooms are small."
+        "It is very noisy",
+        "The rent is too high",
+        "It is far from the station",
+        "The rooms are small"
       ],
       "answer": 2
     },
@@ -303,6 +303,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（diversity）原位換成翻譯題，沿用題 id c1-u07-l01-q17；目標字沿用 diversity",
         "resolution": "改為 translate：promptZh「這所大學很重視學生背景的多元性。」、hintWords [\"diversity\"]、referenceEn [\"This university values the diversity of its students' backgrounds.\",\"The university places great value on the diversity of its students.\"]、rubricZh [\"「多元性」用 diversity（例如 the diversity of its students 等）\",\"「重視」可寫，例如 values、places great value on、cares about 等\"]（原 makeSentence：instructionZh「用 diversity 造一個句子，說說你的城市、學校或公司的多元性。」、referenceEn [\"I love the diversity of the food in my city.\",\"My company values the diversity of its staff.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -79,8 +79,8 @@
       "id": "b1-u13-l05-q06",
       "type": "wordCard",
       "word": "canned",
-      "exampleEn": "Canned fish can stay on the shelf for years.",
-      "exampleZh": "罐頭魚可以在架上放好幾年。",
+      "exampleEn": "Canned fish can last for years on the shelf.",
+      "exampleZh": "罐頭魚放在架上好幾年都不會壞。",
       "glossZh": "罐裝的",
       "distractorsZh": [
         "冷凍的",
@@ -123,14 +123,14 @@
     {
       "id": "b1-u13-l05-q10",
       "type": "listenChoice",
-      "audioEn": "We're out of fresh vegetables, but there is a cabbage in the fridge.",
-      "audioZh": "我們沒有新鮮蔬菜了，不過冰箱裡有一顆高麗菜。",
+      "audioEn": "We're almost out of vegetables, but there is still a cabbage in the fridge.",
+      "audioZh": "我們的蔬菜快吃完了，不過冰箱裡還有一顆高麗菜。",
       "questionZh": "冰箱裡有什麼？",
       "options": [
-        "Some bacon.",
-        "Lots of vegetables.",
-        "Some spinach.",
-        "One cabbage."
+        "Some bacon",
+        "Lots of vegetables",
+        "Some spinach",
+        "One cabbage"
       ],
       "answer": 3
     },
@@ -376,6 +376,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spinach）原位換成翻譯題，沿用題 id b1-u13-l05-q17；目標字沿用 spinach",
         "resolution": "改為 translate：promptZh「市場上的菠菜今天全賣完了。」、hintWords [\"spinach\"]、referenceEn [\"The spinach at the market was all sold out today.\",\"The market sold out of spinach today.\"]、rubricZh [\"用 spinach 表示「菠菜」\",\"「全賣完了」可寫，例如 was all sold out、sold out of 等\"]（原 makeSentence：instructionZh「用 spinach 造一個句子，說說你喜不喜歡吃菠菜。」、referenceEn [\"I really hate the taste of spinach.\",\"I like spinach, so I often eat it with rice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、audioZh、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

@@ -149,7 +149,7 @@
     {
       "id": "b2-u29-l03-q13",
       "type": "mcq",
-      "stemEn": "The ____ for the cancelled flight was a free night at a hotel and a dinner.",
+      "stemEn": "The ____ for the canceled flight was a free night at a hotel and a dinner.",
       "stemZh": "航班取消的補償是免費住一晚飯店和一頓晚餐。",
       "options": [
         "capability",
@@ -187,7 +187,7 @@
     {
       "id": "b2-u29-l03-q15",
       "type": "reading",
-      "passageEn": "Mrs. Tsai is a bus mechanic, and this year she won the city's award for skilled workers. Ten years ago, the bus company recruited her straight from school. Today, her colleagues trust her competence: she can find a problem in an engine just by listening to it. Last year, a bigger company offered her a higher salary, but she did not resign. \"My team is competent, and the compensation here is fair,\" she said. The company even pays extra into her pension. Now she helps test the capability of every new electric bus before it goes on the road.",
+      "passageEn": "Mrs. Tsai is a bus mechanic, and this year she won the city's award for skilled workers. Ten years ago, the bus company recruited her straight from school. Today, her colleagues trust her competence: she can find a problem in an engine just by listening to it. Last year, a bigger company offered her a higher salary, but she did not resign. \"My team is competent, and the compensation here is fair,\" she said. The company even pays extra into her pension. Now she helps test the capabilities of every new electric bus before it goes on the road.",
       "passageZh": "蔡太太是一位公車技師，今年她得到了市政府頒給熟練技術人員的獎。十年前，公車公司在她一畢業就招募了她。如今，同事們都信任她的能力：她光聽引擎的聲音就能找出問題。去年，一家更大的公司開出更高的薪水，但她沒有辭職。她說：「我的團隊很能幹，這裡的薪資報酬也很公道。」公司甚至額外為她提撥退休金。現在她負責在每一輛新電動公車上路前，幫忙測試它的效能。",
       "questions": [
         {
@@ -430,6 +430,18 @@
         "message": "執行長裁示：第③關：SUS 題目「正在招募」，變體 2 wants to recruit 意思偏成「想招募」",
         "resolution": "改為 promptZh「我們的社團正在招募喜歡攝影的新成員。」、referenceEn [\"Our club is recruiting new members who love photography.\",\"Our club is now recruiting new members who enjoy taking photos.\"]、rubricZh [\"recruit 指「招募」（例如 is recruiting、is now recruiting 等）\",\"「喜歡攝影的」可寫，例如 who love photography、who enjoy taking photos 等\"]（原 promptZh「我們的社團正在招募喜歡攝影的新成員。」、referenceEn [\"Our club is recruiting new members who love photography.\",\"Our club wants to recruit new members who enjoy taking photos.\"]、rubricZh [\"recruit 指「招募」（例如 is recruiting、wants to recruit 等）\",\"「喜歡攝影的」可寫，例如 who love photography、who enjoy taking photos 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

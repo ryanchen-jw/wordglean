@@ -16,7 +16,7 @@
       "word": "trainer",
       "exampleEn": "The trainer blew his whistle and the players ran back to the line.",
       "exampleZh": "教練吹了哨子，球員們跑回線上。",
-      "glossZh": "教練；（英）運動鞋",
+      "glossZh": "教練；運動鞋；（英式：運動鞋義）",
       "distractorsZh": [
         "裁判",
         "球迷",
@@ -311,6 +311,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（skateboard）原位換成翻譯題，沿用題 id b2-u18-l01-q18；目標字沿用 skateboard",
         "resolution": "改為 translate：promptZh「我弟弟從滑板上摔下來，擦傷了膝蓋。」、hintWords [\"skateboard\"]、referenceEn [\"My younger brother fell off his skateboard and hurt his knee.\",\"My little brother hurt his knee when he fell off his skateboard.\"]、rubricZh [\"skateboard 指「滑板」（例如 fell off his skateboard 等）\",\"時態用過去式或現在完成式（例如 fell、hurt 等）\",\"「擦傷」可寫，例如 hurt、scraped、cut 等\"]（原 makeSentence：instructionZh「用 skateboard 造一個句子，說說你或你認識的人玩滑板的經驗。」、referenceEn [\"I tried to ride a skateboard once, but I fell after two seconds.\",\"My cousin rides his skateboard to school every morning.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

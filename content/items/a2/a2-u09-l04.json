@@ -186,7 +186,7 @@
     {
       "id": "a2-u09-l04-q15",
       "type": "reading",
-      "passageEn": "Lucy's grandfather is a retired fisherman. He kept a diary for fifty years about the sea and the weather. Lucy's mother is a busy businesswoman, and she often has sleepless nights because of work. Last week, Lucy read Grandpa's diary to her mother. It helped her relax, and she slept well that night.",
+      "passageEn": "Lucy's grandfather is a retired fisherman. For fifty years, he kept a diary about the sea and the weather. Lucy's mother is a busy businesswoman, and she often has sleepless nights because of work. Last week, Lucy read Grandpa's diary to her mother. It helped her relax, and she slept well that night.",
       "passageZh": "Lucy 的爺爺是一位退休的漁夫。他寫了五十年的日記，記錄大海和天氣。Lucy 的媽媽是個忙碌的女企業家，常常因為工作而失眠。上週，Lucy 把爺爺的日記唸給媽媽聽。這讓媽媽放鬆下來，那天晚上她睡得很好。",
       "questions": [
         {
@@ -391,6 +391,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（retired）原位換成翻譯題，沿用題 id a2-u09-l04-q17；目標字沿用 retired",
         "resolution": "改為 translate：promptZh「那位退休的老師現在住在鄉下。」、hintWords [\"retired\"]、referenceEn [\"The retired teacher now lives in the countryside.\",\"That retired teacher lives in the countryside now.\"]、rubricZh [\"用 retired 表示「退休的」，放在名詞前（例如 retired teacher）\",\"現在的狀態用現在簡單式，動詞加 s（例如 lives）\",\"「鄉下」可寫，例如 the countryside、the country 等\"]（原 makeSentence：instructionZh「用 retired 造一個句子，說說一位已經退休的家人或朋友。」、referenceEn [\"My retired father likes to cook for us.\",\"My grandmother is retired and lives by the sea.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

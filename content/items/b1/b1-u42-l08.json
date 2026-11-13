@@ -125,10 +125,10 @@
       "audioZh": "沿著河往西走，就會看到那座舊橋。",
       "questionZh": "說話者叫對方往哪個方向走？",
       "options": [
-        "Toward the north.",
-        "Back to the city.",
-        "Toward the east.",
-        "Toward the west."
+        "Toward the north",
+        "Back to the city",
+        "Toward the east",
+        "Toward the west"
       ],
       "answer": 3
     },
@@ -474,6 +474,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（faraway）原位換成翻譯題，沿用題 id b1-u42-l08-q17；目標字沿用 faraway",
         "resolution": "改為 translate：promptZh「她常常夢想去遙遠的國家旅行。」、hintWords [\"faraway\"]、referenceEn [\"She often dreams of traveling to faraway countries.\",\"She often dreams about visiting faraway countries.\"]、rubricZh [\"用 faraway 表示「遙遠的」（例如 faraway countries）\"]（原 makeSentence：instructionZh「用 faraway 造一個句子，說說一位住在遠方的親友。」、referenceEn [\"My aunt lives in a faraway city.\",\"I have a pen pal in a faraway country.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

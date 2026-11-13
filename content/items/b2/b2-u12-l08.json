@@ -121,7 +121,7 @@
     {
       "id": "b2-u12-l08-q10",
       "type": "listenChoice",
-      "audioEn": "The price of a parking space downtown is outrageous, so I'll take the bus instead.",
+      "audioEn": "The cost of parking downtown is outrageous, so I'll take the bus instead.",
       "audioZh": "市中心的停車費高得離譜，所以我改搭公車。",
       "questionZh": "說話者為什麼要改搭公車？",
       "options": [
@@ -135,7 +135,7 @@
     {
       "id": "b2-u12-l08-q11",
       "type": "shadowing",
-      "sentenceEn": "He spoke proudly about his daughter's success at university.",
+      "sentenceEn": "He spoke proudly about his daughter's success in college.",
       "sentenceZh": "他驕傲地談起女兒在大學的成就。"
     },
     {
@@ -185,7 +185,7 @@
     {
       "id": "b2-u12-l08-q15",
       "type": "reading",
-      "passageEn": "Our small town's football team had humble beginnings: twenty years ago, the players trained on a field full of stones. Last season, however, they had improved considerably, played aggressively, and reached the national final. Some fans of the other team treated them with contempt, calling them a team of beginners. The players answered with vigorous training and a calm attitude. In a moving speech before the game, the captain reminded everyone of their oath to always play fair. They lost by one goal, but the whole town proudly welcomed them home. Even the final's ticket prices, which many people called outrageous, did not stop hundreds of fans from traveling to watch.",
+      "passageEn": "Our small town's soccer team had humble beginnings: twenty years ago, the players trained on a field full of stones. By last season, however, they had improved considerably, and they played aggressively all the way to the national final. Some fans of the other team treated them with contempt, calling them a team of beginners. The players answered with vigorous training and a calm attitude. In a moving speech before the game, the captain reminded everyone of their oath to always play fair. They lost by one goal, but the whole town proudly welcomed them home. Even the final's ticket prices, which many people called outrageous, did not stop hundreds of fans from traveling to watch.",
       "passageZh": "我們小鎮的足球隊起步很卑微：二十年前，球員們在一片滿是石頭的場地上練習。不過上個球季，他們進步了很多，打法積極，一路打進全國決賽。對方的一些球迷很瞧不起他們，叫他們新手隊。球員們用高強度的訓練和冷靜的態度回應。賽前，隊長發表了一段感人的演說，提醒大家他們曾宣誓永遠公平比賽。他們以一球之差落敗，但全鎮的人都驕傲地歡迎他們回家。就連決賽那被許多人稱為離譜的票價，也擋不住數百名球迷遠道去觀賽。",
       "questions": [
         {
@@ -536,6 +536,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（humble）原位換成翻譯題，沿用題 id b2-u12-l08-q17；目標字沿用 humble",
         "resolution": "改為 translate：promptZh「雖然他很有名，他仍然很謙虛。」、hintWords [\"humble\"]、referenceEn [\"Although he is famous, he is still very humble.\",\"He is famous, but he remains humble.\"]、rubricZh [\"humble 是形容詞，表示「謙遜的」（例如 is very humble、remains humble 等）\",\"「雖然」可寫，例如 although、but 等（不要同時用 although 和 but）\",\"時態可用現在式或過去式（例如 is、was 等）\"]（原 makeSentence：instructionZh「用 humble 造一個句子，描述某個人很謙遜，或某件事起步卑微。」、referenceEn [\"My grandfather came from a humble family but built a big business.\",\"I try to stay humble and learn from my younger colleagues.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

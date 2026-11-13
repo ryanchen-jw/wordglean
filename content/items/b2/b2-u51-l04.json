@@ -64,8 +64,8 @@
       "id": "b2-u51-l04-q05",
       "type": "wordCard",
       "word": "outwardly",
-      "exampleEn": "Outwardly, the two phones look the same, but one is much faster.",
-      "exampleZh": "這兩支手機外表看起來一樣，但其中一支快得多。",
+      "exampleEn": "The team captain was outwardly confident before the final, but his hands were shaking.",
+      "exampleZh": "隊長在決賽前表面上很有自信，但他的雙手在發抖。",
       "glossZh": "表面上；外表上",
       "distractorsZh": [
         "實際上",
@@ -77,8 +77,8 @@
       "id": "b2-u51-l04-q06",
       "type": "wordCard",
       "word": "disorderly",
-      "exampleEn": "His notes were so disorderly that nobody could follow them.",
-      "exampleZh": "他的筆記雜亂到沒有人看得懂。",
+      "exampleEn": "The students' disorderly behavior annoyed the teacher.",
+      "exampleZh": "學生們沒規矩的行為讓老師很不高興。",
       "glossZh": "雜亂的；無秩序的",
       "distractorsZh": [
         "整齊的",
@@ -142,7 +142,7 @@
       "id": "b2-u51-l04-q12",
       "type": "shadowing",
       "sentenceEn": "That laugh is unmistakably my brother's; I'd know it anywhere.",
-      "sentenceZh": "那個笑聲一聽就是我哥哥的，在哪裡我都認得出來。"
+      "sentenceZh": "那個笑聲一聽就是我兄弟的，在哪裡我都認得出來。"
     },
     {
       "id": "b2-u51-l04-q13",
@@ -186,7 +186,7 @@
       "id": "b2-u51-l04-q15",
       "type": "reading",
       "passageEn": "Last month, my sister's team had to make a short video for an innovative new desk lamp. Their first idea was a funny song with a catchy tune, but the boss said it was unsuitable because it made the lamp look like a toy. So they focused on the lamp's functionality instead: it can change color, follow your hand and turn itself off. Outwardly, my sister stayed calm, but she worked late every night. In the end, the video was a great success.",
-      "passageZh": "上個月，我姊姊的團隊要替一款創新的新檯燈拍一支短片。他們的第一個點子是一首旋律洗腦的搞笑歌曲，但老闆說不適合，因為那會讓檯燈看起來像玩具。所以他們改成主打檯燈的功能：它能變換顏色、跟著你的手移動，還會自己關燈。我姊姊表面上很冷靜，但每天晚上都工作到很晚。最後，這支影片大獲成功。",
+      "passageZh": "上個月，我姊妹的團隊要替一款創新的新檯燈拍一支短片。他們的第一個點子是一首旋律洗腦的搞笑歌曲，但老闆說不適合，因為那會讓檯燈看起來像玩具。所以他們改成主打檯燈的功能：它能變換顏色、跟著你的手移動，還會自己關燈。我的姊妹表面上很冷靜，但每天晚上都工作到很晚。最後，這支影片大獲成功。",
       "questions": [
         {
           "questionZh": "老闆為什麼不採用搞笑歌曲？",
@@ -320,6 +320,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（disorderly）原位換成翻譯題，沿用題 id b2-u51-l04-q17；目標字沿用 disorderly",
         "resolution": "改為 translate：promptZh「車站裡的人群很混亂，大家都在推擠。」、hintWords [\"disorderly\"]、referenceEn [\"The crowd at the station was disorderly, and everyone was pushing.\",\"There was a disorderly crowd at the station, with people pushing each other.\"]、rubricZh [\"disorderly 當形容詞（例如 was disorderly、a disorderly crowd 等）\",\"「推擠」可寫，例如 pushing、pushing each other 等\",\"時態可用過去式或現在式（例如 was、is 等）\"]（原 makeSentence：instructionZh「用 disorderly 造一個句子，描述一個雜亂或沒有秩序的地方或情況。」、referenceEn [\"My desk becomes disorderly when I have a lot of exams.\",\"The disorderly crowd pushed toward the stage.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

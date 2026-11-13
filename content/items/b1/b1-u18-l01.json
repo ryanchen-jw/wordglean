@@ -127,10 +127,10 @@
       "audioZh": "207 號班機將從第一航廈 12 號登機門出發。",
       "questionZh": "207 號班機從哪個登機門出發？",
       "options": [
-        "Gate 2.",
-        "Gate 7.",
-        "Gate 21.",
-        "Gate 12."
+        "Gate 2",
+        "Gate 7",
+        "Gate 21",
+        "Gate 12"
       ],
       "answer": 3
     },
@@ -352,6 +352,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（motorcycle）原位換成翻譯題，沿用題 id b1-u18-l01-q17；目標字沿用 motorcycle",
         "resolution": "改為 translate：promptZh「這條路禁止機車通行。」、hintWords [\"motorcycle\"]、referenceEn [\"Motorcycles are not allowed on this road.\",\"Motorcycles can't use this road.\"]、rubricZh [\"用 motorcycle 的複數表示「機車」\",\"「禁止通行」可寫，例如 are not allowed on、can't use 等\"]（原 makeSentence：instructionZh「用 motorcycle 造一個句子，說說你騎機車的經驗或看法。」、referenceEn [\"I learned to ride a motorcycle when I was eighteen.\",\"I think riding a motorcycle in the rain is dangerous.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

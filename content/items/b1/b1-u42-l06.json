@@ -90,7 +90,7 @@
       "id": "b1-u42-l06-q07",
       "type": "wordCard",
       "word": "downward",
-      "exampleEn": "The river moves in a downward direction toward the sea.",
+      "exampleEn": "The river flows in a downward direction toward the sea.",
       "exampleZh": "這條河往下流向大海。",
       "glossZh": "向下的；下降的",
       "distractorsZh": [
@@ -125,10 +125,10 @@
       "audioZh": "公園旁的路上有一棵倒下的樹，所以今天請走別條路去學校。",
       "questionZh": "為什麼今天要走別條路？",
       "options": [
-        "A tree is blocking the road.",
-        "The road is being painted.",
-        "The park is closed.",
-        "The school moved."
+        "A tree is blocking the road",
+        "The road is being painted",
+        "The park is closed",
+        "The school moved"
       ],
       "answer": 0
     },
@@ -390,6 +390,18 @@
         "message": "執行長裁示：第③關：SUS 暴風雨造成農損接近 §12.9 災難題材，換中性情境",
         "resolution": "改為 promptZh「天氣太熱，桌上的香蕉兩天就爛了。」、referenceEn [\"It was so hot that the bananas on the table went rotten in two days.\",\"Because it was so hot, the bananas on the table became rotten in two days.\"]、rubricZh [\"用 rotten 表示「腐爛的」（例如 went rotten、became rotten 等）\"]（原 promptZh「暴風雨過後，田裡很多水果都爛了。」、referenceEn [\"After the storm, a lot of fruit in the fields went rotten.\",\"Much of the fruit in the fields became rotten after the storm.\"]、rubricZh [\"用 rotten 表示「腐爛的」（例如 went rotten、became rotten 等）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

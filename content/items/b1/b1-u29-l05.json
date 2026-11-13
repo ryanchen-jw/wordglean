@@ -103,8 +103,8 @@
       "id": "b1-u29-l05-q08",
       "type": "wordCard",
       "word": "liberation",
-      "exampleEn": "The liberation of the birds from their cages made the children cheer.",
-      "exampleZh": "鳥兒從籠子裡被放出來，孩子們歡呼起來。",
+      "exampleEn": "For many workers, the weekend is a kind of liberation from their jobs.",
+      "exampleZh": "對很多上班族來說，週末是一種從工作中的解放。",
       "glossZh": "解放；擺脫束縛",
       "distractorsZh": [
         "壓力",
@@ -125,10 +125,10 @@
       "audioZh": "僧侶們早上要靜修，所以遊客只能在午餐後進入。",
       "questionZh": "遊客什麼時候可以進去？",
       "options": [
-        "Only before lunch.",
-        "Early in the morning.",
-        "Any time they like.",
-        "In the afternoon."
+        "Only before lunch",
+        "Early in the morning",
+        "Any time they like",
+        "In the afternoon"
       ],
       "answer": 3
     },
@@ -147,7 +147,7 @@
     {
       "id": "b1-u29-l05-q13",
       "type": "mcq",
-      "stemEn": "In our club, everyone has the same vote, so there is real ____ between members.",
+      "stemEn": "In our club, everyone's vote counts the same, so there is real ____ between members.",
       "stemZh": "我們社團每個人都有一樣的投票權，所以會員之間真的很平等。",
       "options": [
         "haunt",
@@ -185,8 +185,8 @@
     {
       "id": "b1-u29-l05-q15",
       "type": "reading",
-      "passageEn": "Last summer, my uncle stayed at a mountain temple for a week. The monks there live in isolation, far from the city. They don't use phones, and they rarely meet people socially. My uncle said that it was hard at first, but later it felt like liberation from his busy life. The monks told him that every simple meal is a blessing. Now the quiet temple has become one of his favorite haunts. In the temple's small library, he also read old books about history, including the end of slavery in many countries and the long fight for equality.",
-      "passageZh": "去年夏天，我叔叔在一座山上的寺廟住了一個星期。那裡的僧侶過著與世隔絕的生活，遠離城市。他們不用手機，也很少和人社交往來。叔叔說，一開始很難熬，但後來感覺像是從忙碌的生活中解放了。僧侶們告訴他，每一頓簡單的飯都是一種恩賜。現在那座安靜的寺廟成了他最常去的地方之一。在寺廟的小圖書館裡，他也讀了一些歷史舊書，包括許多國家廢除奴隸制度，以及爭取平等的漫長過程。",
+      "passageEn": "Last summer, my uncle stayed at a mountain temple for a week. The monks there live in isolation, far from the city. They don't use phones, and they rarely meet people socially. My uncle said that it was hard at first, but later it felt like liberation from his busy life. The monks told him that every simple meal is a blessing. Now the quiet temple has become one of his favorite haunts. In the temple's small library, he also read old books by monks who believed in equality for all people.",
+      "passageZh": "去年夏天，我叔叔在一座山上的寺廟住了一個星期。那裡的僧侶過著與世隔絕的生活，遠離城市。他們不用手機，也很少和人社交往來。叔叔說，一開始很難熬，但後來感覺像是從忙碌的生活中解放了。僧侶們告訴他，每一頓簡單的飯都是一種恩賜。現在那座安靜的寺廟成了他最常去的地方之一。在寺廟的小圖書館裡，他也讀了一些僧侶寫的舊書，這些僧侶相信人人平等。",
       "questions": [
         {
           "questionZh": "那裡的僧侶過著什麼樣的生活？",
@@ -349,6 +349,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（haunt）原位換成翻譯題，沿用題 id b1-u29-l05-q17；目標字沿用 haunt",
         "resolution": "改為 translate：promptZh「那家小吃店是我們以前常去的地方，現在已經關門了。」、hintWords [\"haunt\"]、referenceEn [\"Our old haunt, a small snack shop, has closed.\",\"The little snack shop that was our favorite haunt has closed down.\"]、rubricZh [\"用 haunt 表示「常去的地方」（例如 our old haunt、our favorite haunt 等）\",\"「已經關門了」可寫，例如 has closed、has closed down 等\"]（原 makeSentence：instructionZh「用 haunt 造一個句子，說說你最常去的地方。」、referenceEn [\"The library near my home is my favorite haunt.\",\"This park was my favorite haunt when I was a child.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

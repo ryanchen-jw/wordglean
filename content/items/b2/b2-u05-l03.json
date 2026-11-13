@@ -185,7 +185,7 @@
     {
       "id": "b2-u05-l03-q15",
       "type": "reading",
-      "passageEn": "Every autumn, our company holds a three-day retreat by a lake. This year, the organizers decorated the main room with paper flowers, and everyone got a name tag at the door. On the second day, we went sailing. I had never steered a boat before, and when a strong wind came, I panicked and wanted to retreat to the shore. Our coach told me to stay calm and not to let fear interfere with my judgment. Birds soared above us, which almost distracted me again! The rest of the day was somewhat calmer. In the evening, someone sprayed bug spray on all our arms and legs, and we laughed because it smelled terrible. It was the best retreat we have ever had.",
+      "passageEn": "Every autumn, our company holds a three-day retreat by a lake. This year, the organizers decorated the main room with paper flowers, and everyone got a name tag at the door. On the second day, we went sailing. I had never steered a boat before, and when a strong wind came, I panicked and wanted to retreat to the shore. Our sailing instructor told me to stay calm and not to let fear interfere with my judgment. Birds soared above us, which almost distracted me again! The rest of the day was somewhat calmer. In the evening, someone sprayed bug spray on all our arms and legs, and we laughed because it smelled terrible. It was the best retreat we have ever had.",
       "passageZh": "每年秋天，我們公司都會在湖邊舉辦為期三天的員工旅遊。今年，主辦人用紙花佈置了主廳，每個人進門時都拿到一張名牌。第二天我們去駕帆船。我從來沒掌過舵，一陣強風吹來，我就慌了，只想退回岸邊。教練要我保持冷靜，別讓恐懼干擾判斷。鳥兒在我們頭上高飛，差點又讓我分心！那天接下來的時間稍微平靜了一些。晚上，有人往大家的手腳上噴防蚊液，大家都笑了，因為味道超難聞。那是我們辦過最棒的一次員工旅遊。",
       "questions": [
         {
@@ -440,6 +440,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（decorate）原位換成翻譯題，沿用題 id b2-u05-l03-q17；目標字沿用 decorate",
         "resolution": "改為 translate：promptZh「節慶期間，街道上裝飾著五顏六色的燈。」、hintWords [\"decorate\"]、referenceEn [\"During the festival, the streets are decorated with colorful lights.\",\"The streets were decorated with lights of many colors for the festival.\"]、rubricZh [\"decorate 可用被動（例如 are decorated with、were decorated with 等）\",\"「五顏六色的燈」可寫，例如 colorful lights、lights of many colors 等\",\"時態可用現在式或過去式\"]（原 makeSentence：instructionZh「用 decorate 造一個句子，說說你怎麼佈置家裡或辦公室。」、referenceEn [\"I decorated my bedroom wall with posters of my favorite band.\",\"I like to decorate my living room with plants.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

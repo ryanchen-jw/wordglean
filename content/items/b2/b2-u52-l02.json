@@ -27,8 +27,8 @@
       "id": "b2-u52-l02-q02",
       "type": "wordCard",
       "word": "mortify",
-      "exampleEn": "She was mortified when her phone rang during the quiet test.",
-      "exampleZh": "安靜的考試中她的手機響了，她覺得非常難堪。",
+      "exampleEn": "She was mortified when her phone rang in the quiet exam room.",
+      "exampleZh": "她的手機在安靜的考場裡響了，她覺得非常難堪。",
       "glossZh": "使難堪；使丟臉",
       "distractorsZh": [
         "使驕傲",
@@ -41,7 +41,7 @@
       "type": "wordCard",
       "word": "fascinated",
       "exampleEn": "My brother is fascinated by old trains.",
-      "exampleZh": "我弟弟對老火車非常著迷。",
+      "exampleZh": "我的兄弟對老火車非常著迷。",
       "glossZh": "著迷的；被深深吸引的",
       "distractorsZh": [
         "厭煩的",
@@ -287,6 +287,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（truthfulness）原位換成翻譯題，沿用題 id b2-u52-l02-q17；目標字沿用 truthfulness",
         "resolution": "改為 translate：promptZh「法官懷疑這位證人說的話是否真實。」、hintWords [\"truthfulness\"]、referenceEn [\"The judge doubted the truthfulness of the witness's story.\",\"The judge had doubts about the truthfulness of what the witness said.\"]、rubricZh [\"truthfulness 當名詞（例如 the truthfulness of the witness's story 等）\",\"「懷疑」可寫，例如 doubted、had doubts about、questioned 等\",\"時態可用過去式或現在式（例如 doubted、doubts 等）\"]（原 makeSentence：instructionZh「用 truthfulness 造一個句子，說說你怎麼看待誠實，或某人誠實的表現。」、referenceEn [\"I value truthfulness more than politeness in a friend.\",\"My teacher praised my truthfulness when I admitted my mistake.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

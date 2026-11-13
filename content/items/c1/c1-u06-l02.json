@@ -125,10 +125,10 @@
       "audioZh": "這個週末下雨的可能性很低，所以野餐會照常舉行。",
       "questionZh": "野餐會怎麼樣？",
       "options": [
-        "It will go ahead as planned.",
-        "It will move indoors.",
-        "It will be canceled.",
-        "It will start later."
+        "It will go ahead as planned",
+        "It will move indoors",
+        "It will be canceled",
+        "It will start later"
       ],
       "answer": 0
     },
@@ -185,7 +185,7 @@
     {
       "id": "c1-u06-l02-q15",
       "type": "reading",
-      "passageEn": "Last spring, rumors spread that a large shopping mall would be built next to our city's oldest park. The speculation stirred up strong public sentiment among residents, many of whom had walked in the park since childhood. Several websites published a succession of stories without checking the facts, and their credibility suffered when the city announced that no such plan existed. The irony was that the rumors brought new attention to the park. After months of public scrutiny, the city agreed to repair its paths and benches. Many residents believe the event had a profound effect on how people value green spaces.",
+      "passageEn": "Last spring, rumors spread that a large shopping mall would be built next to our city's oldest park. The speculation stirred up strong public sentiment among residents, many of whom had walked in the park since childhood. Several websites published a succession of stories without checking the facts, and their credibility suffered when the city announced that no such plan existed. The irony was that the rumors brought new attention to the park. After months of public scrutiny, the city agreed to repair the park's paths and benches. Many residents believe the event had a profound effect on how people value green spaces.",
       "passageZh": "去年春天，有謠言說我們城市最古老的公園旁邊要蓋一座大型購物中心。這個揣測在居民之間激起強烈的民意，其中很多人從小就在這座公園散步。好幾個網站沒有查證就接連刊出報導，等市府宣佈根本沒有這項計畫時，它們的可信度就受損了。諷刺的是，這些謠言反而讓公園重新受到關注。經過幾個月的大眾檢視，市府同意整修園內的步道和長椅。許多居民認為，這件事深深影響了人們看待綠地的方式。",
       "questions": [
         {
@@ -302,6 +302,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（speculate）原位換成翻譯題，沿用題 id c1-u06-l02-q17；目標字沿用 speculate",
         "resolution": "改為 translate：promptZh「記者們紛紛猜測那位演員為什麼突然退出這部電影。」、hintWords [\"speculate\"]、referenceEn [\"Reporters speculated about why the actor suddenly left the film.\",\"Journalists speculated on the reason the actor suddenly quit the movie.\"]、rubricZh [\"「猜測」用 speculate，可接 about、on 或 that 子句（例如 speculated about why… 等）\",\"「退出」可寫，例如 left、quit、pulled out of 等\",\"時態配合內容（例如 speculated、have speculated、are speculating 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 speculate 造一個句子，說說你對某件未知的事的猜測。」、referenceEn [\"I can only speculate about why my neighbor moved away so suddenly.\",\"I like to speculate about what my city will look like in fifty years.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

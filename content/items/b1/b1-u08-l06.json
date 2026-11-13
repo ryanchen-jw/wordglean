@@ -126,13 +126,13 @@
       "id": "b1-u08-l06-q10",
       "type": "listenChoice",
       "audioEn": "My brother and his girlfriend got engaged last night, and the wedding is in June.",
-      "audioZh": "我哥哥和他女朋友昨晚訂婚了，婚禮在六月。",
+      "audioZh": "我的兄弟和他女朋友昨晚訂婚了，婚禮在六月。",
       "questionZh": "婚禮什麼時候舉行？",
       "options": [
-        "In July.",
-        "Last night.",
-        "In June.",
-        "Next week."
+        "In July",
+        "Last night",
+        "In June",
+        "Next week"
       ],
       "answer": 2
     },
@@ -189,7 +189,7 @@
     {
       "id": "b1-u08-l06-q15",
       "type": "reading",
-      "passageEn": "Last month, my old classmate Ben got married. The groom wore a dark blue suit, and he was very nervous. His best friend from college, an Englishman named Harry, gave a funny speech. \"Hey, dude, don't worry!\" he shouted, and everyone laughed. Ben and Harry played on the same football team in college, and the brotherhood of that team is still strong. Harry said their teamwork on the field was essential, and it taught them a lot about friendship. At the end, he gave Ben a warm handshake.",
+      "passageEn": "Last month, my old classmate Ben got married. The groom wore a dark blue suit, and he was very nervous. His best friend from college, an Englishman named Harry, gave a funny speech. \"Hey, dude, don't worry!\" he shouted, and everyone laughed. Ben and Harry played on the same soccer team in college, and the brotherhood of that team is still strong. Harry said their teamwork on the field was essential, and it taught them a lot about friendship. At the end of his speech, he gave Ben a warm handshake.",
       "passageZh": "上個月，我的老同學 Ben 結婚了。新郎穿著深藍色西裝，非常緊張。他大學時最好的朋友——一位名叫 Harry 的英國人——致了一段有趣的詞。他大喊：「嘿，老兄，別緊張！」大家都笑了。Ben 和 Harry 大學時在同一支足球隊踢球，那支球隊的兄弟情誼至今依然深厚。Harry 說，他們在球場上的團隊合作非常重要，也讓他們學到很多關於友誼的事。最後，他和 Ben 熱情地握了手。",
       "questions": [
         {
@@ -384,6 +384,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（teamwork）原位換成翻譯題，沿用題 id b1-u08-l06-q17；目標字沿用 teamwork",
         "resolution": "改為 translate：promptZh「這個工作需要很多團隊合作。」、hintWords [\"teamwork\"]、referenceEn [\"This job requires a lot of teamwork.\",\"This job needs a lot of teamwork.\"]、rubricZh [\"用 teamwork 表示「團隊合作」（不可數，例如 a lot of teamwork）\",\"「需要」可寫，例如 requires、needs 等\"]（原 makeSentence：instructionZh「用 teamwork 造一個句子，說說團隊合作在你的工作、學校或運動中的重要性。」、referenceEn [\"Teamwork is very important in my job.\",\"Our class won the contest because of good teamwork.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -52,7 +52,7 @@
       "type": "wordCard",
       "word": "differ",
       "exampleEn": "My brother and I differ in many ways.",
-      "exampleZh": "我和弟弟在很多方面都不同。",
+      "exampleZh": "我和我的兄弟在很多方面都不同。",
       "glossZh": "不同；意見不一",
       "distractorsZh": [
         "改變",
@@ -122,13 +122,13 @@
       "id": "b1-u36-l03-q10",
       "type": "listenChoice",
       "audioEn": "My sister has a preference for window seats, so I booked one for her.",
-      "audioZh": "我姊姊比較喜歡靠窗的座位，所以我幫她訂了一個。",
-      "questionZh": "說話者幫姊姊訂了什麼座位？",
+      "audioZh": "我的姊妹比較喜歡靠窗的座位，所以我幫她訂了一個。",
+      "questionZh": "說話者幫自己的姊妹訂了什麼座位？",
       "options": [
-        "One by the window.",
-        "A window seat for the speaker.",
-        "A seat in the middle row.",
-        "A seat next to her friend."
+        "One by the window",
+        "A window seat for the speaker",
+        "A seat in the middle row",
+        "A seat next to her friend"
       ],
       "answer": 0
     },
@@ -185,8 +185,8 @@
     {
       "id": "b1-u36-l03-q15",
       "type": "reading",
-      "passageEn": "Every Friday is movie night in my family, but we never agree on a movie. My little brother has a strong preference for fantasy, because it helps him relax. For instance, he has watched one fantasy film five times! My dad has a tendency to fall asleep during long movies, so he always wants something short. Last Friday, my brother gave a short demonstration: he showed us the first five minutes of his favorite fantasy film. Everyone liked it, so we watched the whole film together. Afterward, my dad explained the significance of movie night: it doesn't matter what we watch, as long as we are together.",
-      "passageZh": "每週五是我們家的電影之夜，但我們從來沒辦法選定同一部電影。我弟弟特別偏好奇幻片，因為能幫助他放鬆。例如，有一部奇幻片他已經看了五次！我爸爸有看長片就睡著的傾向，所以他總是想看短一點的。上週五，弟弟做了一個簡短的示範：他放了他最愛的奇幻片的前五分鐘給我們看。大家都很喜歡，所以我們一起把整部片看完。看完後，爸爸說明了電影之夜的意義：看什麼不重要，重要的是我們在一起。",
+      "passageEn": "Every Friday is movie night in my family, but we never agree on a movie. My little brother has a strong preference for fantasy, because it helps him relax. For instance, he has watched one fantasy film five times! My dad has a tendency to fall asleep during long movies, so he always wants something short. Last Friday, my brother showed us the first five minutes of his favorite fantasy film. Everyone liked it, so we watched the whole film together. Afterward, my dad explained the significance of movie night: it doesn't matter what we watch, as long as we are together.",
+      "passageZh": "每週五是我們家的電影之夜，但我們從來沒辦法選定同一部電影。我弟弟特別偏好奇幻片，因為能幫助他放鬆。例如，有一部奇幻片他已經看了五次！我爸爸有看長片就睡著的傾向，所以他總是想看短一點的。上週五，弟弟放了他最愛的奇幻片的前五分鐘給我們看。大家都很喜歡，所以我們一起把整部片看完。看完後，爸爸說明了電影之夜的意義：看什麼不重要，重要的是我們在一起。",
       "questions": [
         {
           "questionZh": "弟弟為什麼喜歡奇幻片？",
@@ -432,6 +432,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fantasy）原位換成翻譯題，沿用題 id b1-u36-l03-q17；目標字沿用 fantasy",
         "resolution": "改為 translate：promptZh「我哥哥很喜歡看奇幻小說。」、hintWords [\"fantasy\"]、referenceEn [\"My brother loves reading fantasy novels.\",\"My older brother really enjoys fantasy novels.\"]、rubricZh [\"用 fantasy 表示「奇幻（作品）」（例如 fantasy novels、fantasy books 等）\"]（原 makeSentence：instructionZh「用 fantasy 造一個句子，說說你曾有過的一個幻想。」、referenceEn [\"I often have a fantasy about living in a big castle.\",\"My fantasy is to travel around the world by boat.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

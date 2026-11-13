@@ -101,10 +101,10 @@
       "audioZh": "動物醫院星期天休息，但寵物生病的話可以打這支電話。",
       "questionZh": "寵物生病而動物醫院休息時，可以怎麼做？",
       "options": [
-        "Wait until Monday morning.",
-        "Phone the number given.",
-        "Go to the vet's office.",
-        "Email the vet."
+        "Wait until Monday morning",
+        "Phone the number given",
+        "Go to the vet's office",
+        "Email the vet"
       ],
       "answer": 1
     },
@@ -161,8 +161,8 @@
     {
       "id": "b1-u21-l01-q13",
       "type": "reading",
-      "passageEn": "To all staff: Starting next month, our company will offer new health insurance. It pays for hospital stays, visits to a specialist, and the cost of an ambulance. It also pays for treatment for injuries at work. If you stay in a hospital ward, you will not have to pay. Pets are not included, so please continue to pay your own vet bills. For questions, use the form on your tablet or call Mr. Kato's office.",
-      "passageZh": "全體員工請注意：從下個月起，公司將提供新的健康保險。保險支付住院、看專科醫師以及救護車的費用，也支付工作受傷的治療費用。如果住在醫院病房，你不需要付錢。寵物不在保險範圍內，所以獸醫的帳單請繼續自行支付。有問題請用平板上的表單，或打電話到 Kato 先生的辦公室。",
+      "passageEn": "To all staff: Starting next month, our company will offer new health insurance. It pays for visits to a specialist and the cost of an ambulance. It also pays for treatment for injuries at work. If you stay in a hospital ward, you will not have to pay. Pets are not included, so please continue to pay your own vet bills. For questions, use the form on your tablet or call Mr. Kato's office.",
+      "passageZh": "全體員工請注意：從下個月起，公司將提供新的健康保險。保險支付看專科醫師以及救護車的費用，也支付工作受傷的治療費用。如果住在醫院病房，你不需要付錢。寵物不在保險範圍內，所以獸醫的帳單請繼續自行支付。有問題請用平板上的表單，或打電話到 Kato 先生的辦公室。",
       "questions": [
         {
           "questionZh": "新保險不包含什麼？",
@@ -314,6 +314,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tablet）原位換成翻譯題，沿用題 id b1-u21-l01-q15；目標字沿用 tablet",
         "resolution": "改為 translate：promptZh「我的平板電腦沒電了。」、hintWords [\"tablet\"]、referenceEn [\"My tablet's battery is dead.\",\"My tablet has no battery left.\"]、rubricZh [\"用 tablet 表示「平板電腦」\",\"「沒電了」可寫，例如 battery is dead、has run out of battery、has no battery left 等\"]（原 makeSentence：instructionZh「用 tablet 造一個句子，說說你怎麼使用平板電腦。」、referenceEn [\"I watch movies on my tablet before bed.\",\"I use my tablet to read books on the train.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

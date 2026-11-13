@@ -149,7 +149,7 @@
       "id": "a2-u26-l03-q13",
       "type": "mcq",
       "stemEn": "My sister ____ a surprise party for Mom's birthday.",
-      "stemZh": "我姊姊為媽媽的生日籌辦了一場驚喜派對。",
+      "stemZh": "我的姊妹為媽媽的生日籌辦了一場驚喜派對。",
       "options": [
         "organized",
         "mixed",
@@ -186,7 +186,7 @@
     {
       "id": "a2-u26-l03-q15",
       "type": "reading",
-      "passageEn": "My cousin Mia wants to pursue her dream of becoming a chef. Last month, she organized a cooking class for kids in our town. She showed them how to mix flour and water to make bread. One boy got a white mark on his face, and everyone laughed. At the end, Mia gave each child a small chain with a little gold spoon. \"Cooking belongs to everyone,\" she said.",
+      "passageEn": "My cousin Mia wants to pursue her dream of becoming a chef. Last month, she organized a cooking class for kids in our town. She showed them how to mix flour and water to make bread. One boy got a white mark on his face, and everyone laughed. At the end of the class, Mia gave each child a small chain with a little gold spoon. \"Cooking belongs to everyone,\" she said.",
       "passageZh": "我表姊 Mia 想追求當廚師的夢想。上個月，她為鎮上的孩子們籌辦了一堂烹飪課。她教大家怎麼把麵粉和水混合做成麵包。有個男孩臉上沾了一塊白白的痕跡，大家都笑了。最後，Mia 送給每個孩子一條掛著小金湯匙的鍊子。她說：「烹飪是屬於每個人的。」",
       "questions": [
         {
@@ -318,6 +318,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pursue）原位換成翻譯題，沿用題 id a2-u26-l03-q17；目標字沿用 pursue",
         "resolution": "改為 translate：promptZh「我們應該追求快樂，而不是錢。」、hintWords [\"pursue\"]、referenceEn [\"We should pursue happiness, not money.\",\"We should pursue happiness instead of money.\"]、rubricZh [\"用 pursue 表示「追求」\",\"「而不是」可寫，例如 not money、instead of money、rather than money 等\"]（原 makeSentence：instructionZh「用 pursue 造一個句子，說說你或別人想追求的夢想或目標。」、referenceEn [\"I want to pursue my dream of becoming a singer.\",\"My sister is pursuing her interest in art.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

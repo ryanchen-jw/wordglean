@@ -95,7 +95,7 @@
       "type": "wordCard",
       "word": "than",
       "exampleEn": "My brother is taller than me.",
-      "exampleZh": "我哥哥比我高。",
+      "exampleZh": "我的兄弟比我高。",
       "glossZh": "比",
       "distractorsZh": [
         "和",
@@ -130,7 +130,7 @@
       "questionZh": "誰的年紀比較大？",
       "options": [
         "They are the same age",
-        "His little sister",
+        "His sister",
         "Ben, her brother"
       ],
       "answer": 2
@@ -388,6 +388,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（than）原位換成翻譯題，沿用題 id a1-u01-l07-q17；目標字沿用 than",
         "resolution": "改為 translate：promptZh「今天比昨天冷。」、hintWords [\"than\"]、referenceEn [\"Today is colder than yesterday.\",\"It is colder today than yesterday.\"]、rubricZh [\"比較級加 than（例如 colder than）\",\"可寫，例如 Today is colder than yesterday、It is colder today than yesterday 等\"]（原 makeSentence：instructionZh「用 than 造一個句子，比較兩個人或兩樣東西。」、referenceEn [\"My cat is smaller than my dog.\",\"My bag is bigger than your bag.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

@@ -148,7 +148,7 @@
       "id": "b2-u50-l01-q13",
       "type": "mcq",
       "stemEn": "\"I passed!\" my sister ____ as she read the letter.",
-      "stemZh": "「我考過了！」姊姊一邊讀信一邊驚呼。",
+      "stemZh": "「我考過了！」我的姊妹一邊讀信一邊驚呼。",
       "options": [
         "exclaimed",
         "roamed",
@@ -166,8 +166,8 @@
     {
       "id": "b2-u50-l01-q14",
       "type": "mcq",
-      "stemEn": "The price includes all meals, with the ____ of drinks.",
-      "stemZh": "價格包含所有餐點，但飲料除外。",
+      "stemEn": "All meals are included, and drinks are the only ____ from the price.",
+      "stemZh": "所有餐點都包含在內，只有飲料不含在價格裡。",
       "options": [
         "tug",
         "discharge",
@@ -333,6 +333,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（roam）原位換成翻譯題，沿用題 id b2-u50-l01-q17；目標字沿用 roam",
         "resolution": "改為 translate：promptZh「放學後，那些青少年常常在購物中心裡閒逛。」、hintWords [\"roam\"]、referenceEn [\"After school, the teenagers often roam around the shopping center.\",\"The teenagers often roam the shopping center after school.\"]、rubricZh [\"roam 當動詞，可接 around 或直接接地點（例如 roam around the shopping center、roam the mall 等）\",\"often 可放動詞前或句尾，位置不扣分\",\"「購物中心」可寫，例如 shopping center、mall 等\"]（原 makeSentence：instructionZh「用 roam 造一個句子，說說你喜歡在哪裡閒逛。」、referenceEn [\"I like to roam around bookstores when it rains.\",\"On weekends, I roam the night market with my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn、stemZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

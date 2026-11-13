@@ -105,7 +105,7 @@
     {
       "id": "b2-p01-l04-q08",
       "type": "listenType",
-      "sentenceEn": "It's not easy to keep a conversation up in English.",
+      "sentenceEn": "It's not easy to keep up a conversation in English.",
       "sentenceZh": "用英文持續聊下去並不容易。"
     },
     {
@@ -175,8 +175,8 @@
     {
       "id": "b2-p01-l04-q14",
       "type": "reading",
-      "passageEn": "When Mr. Chen opened his coffee shop ten years ago, he hoped it would become a favorite place in the neighborhood. The room is bright, and the kitchen gives off the smell of fresh bread every morning. Business was hard during the first year, but he never laid any staff off. Instead, he worked longer hours himself. Now his daughter is ready to take over, and he plans to hand the shop over to her next spring. He says he will miss it, but he is happy that she wants to keep up the family tradition.",
-      "passageZh": "陳先生十年前開這家咖啡店時，希望它能成為這一帶大家最喜歡的地方。店裡很明亮，每天早上廚房都飄出新鮮麵包的香味。第一年生意很辛苦，但他從來沒有資遣任何員工，而是自己工作更長的時間。現在他的女兒已經準備好接手，他打算明年春天把店交給她。他說他會很捨不得，但很高興女兒想延續家裡的傳統。",
+      "passageEn": "When Mr. Chen opened his coffee shop ten years ago, he hoped it would become a favorite place in the neighborhood. The room is bright, and the kitchen gives off the smell of fresh bread every morning. Business was hard during the first year, but he cared about his staff and never laid them off. Instead, he worked longer hours himself. Now his daughter is ready to take over, and he plans to hand the shop over to her next spring. He says he will miss it, but the shop is a family tradition, and he is happy that she wants to keep it up.",
+      "passageZh": "陳先生十年前開這家咖啡店時，希望它能成為這一帶大家最喜歡的地方。店裡很明亮，每天早上廚房都飄出新鮮麵包的香味。第一年生意很辛苦，但他很照顧員工，從來沒有資遣他們，而是自己工作更長的時間。現在他的女兒已經準備好接手，他打算明年春天把店交給她。他說他會很捨不得，但這家店是家裡的傳統，他很高興女兒想延續下去。",
       "questions": [
         {
           "questionZh": "第一年生意不好時，陳先生怎麼做？",
@@ -333,6 +333,24 @@
         "message": "執行長第③關裁示修正：要點超過 80 字元上限，縮短措辭（意思不變）",
         "resolution": "改前：\"不用片語但意思正確的說法也算對（例如 accepted the new rules、agreed with the new rules、followed the new rules 等）\"；改後：\"不用片語但意思正確也算對（例如 accepted the new rules、followed the new rules、agreed with 等）\"",
         "resolvedAt": "2026-10-06T00:30:46Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））、passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

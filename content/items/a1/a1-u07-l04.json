@@ -55,7 +55,7 @@
       "word": "mobile",
       "exampleEn": "Call me on my mobile.",
       "exampleZh": "打我手機。",
-      "glossZh": "（英式）手機",
+      "glossZh": "手機；（英式）",
       "distractorsZh": [
         "電視",
         "電腦",
@@ -66,8 +66,8 @@
       "id": "a1-u07-l04-q05",
       "type": "wordCard",
       "word": "interviewer",
-      "exampleEn": "The interviewer asks me many questions.",
-      "exampleZh": "面試官會問我很多問題。",
+      "exampleEn": "The interviewer asked me many questions.",
+      "exampleZh": "面試官問了我很多問題。",
       "glossZh": "面試官",
       "distractorsZh": [
         "應徵者",
@@ -79,8 +79,8 @@
       "id": "a1-u07-l04-q06",
       "type": "wordCard",
       "word": "email",
-      "exampleEn": "I read my email every morning.",
-      "exampleZh": "我每天早上看電子郵件。",
+      "exampleEn": "I write an email to my teacher.",
+      "exampleZh": "我寫一封電子郵件給我的老師。",
       "glossZh": "電子郵件",
       "distractorsZh": [
         "報紙",
@@ -94,7 +94,7 @@
       "word": "mobile phone",
       "exampleEn": "Where is my mobile phone?",
       "exampleZh": "我的手機在哪裡？",
-      "glossZh": "手機",
+      "glossZh": "手機；（英式）",
       "distractorsZh": [
         "電腦",
         "相機",
@@ -407,6 +407,30 @@
         "message": "執行長裁示：第③關：SUS 與同課跟讀 q11「Hurry up! The bus is coming.」幾乎同句（§11.4），換情境",
         "resolution": "改為 promptZh「快一點，電影要開始了！」（原「快一點，公車要走了！」）、referenceEn [\"Hurry up! The movie is starting.\",\"Hurry! The movie is going to start.\"]（原 [\"Hurry up! The bus is leaving.\",\"Hurry! The bus is going to leave.\"]）、rubricZh [\"hurry 當動詞可寫，例如 Hurry up!、Hurry! 等\",\"「電影要開始了」可寫，例如 The movie is starting、The movie is going to start 等\"]（原 [\"hurry 當動詞可寫，例如 Hurry up!、Hurry! 等\",\"「公車要走了」可寫，例如 The bus is leaving、The bus is going to leave 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（題庫外問題）、exampleZh（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

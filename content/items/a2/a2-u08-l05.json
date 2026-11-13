@@ -184,7 +184,7 @@
     {
       "id": "a2-u08-l05-q15",
       "type": "reading",
-      "passageEn": "My grandfather's house is very old. The heating doesn't work well, so in winter he often cooks soup on the stove to keep warm. Last week, a cupboard door fell off because one screw was missing. Grandpa put in a new screw himself, and the door was fine again. \"This house is old, but so am I,\" he said and laughed.",
+      "passageEn": "My grandfather's house is very old. The heating doesn't work well, so in winter he often cooks soup on the stove to keep warm. Last week, a cupboard door fell off because one screw was missing. Grandpa put in a new screw himself, and the door was fine again. \"This house is old, and so am I,\" he said and laughed.",
       "passageZh": "我爺爺的房子很老舊。暖氣不太好用，所以冬天他常在爐子上煮湯來取暖。上週，有一扇櫥櫃門掉了下來，因為少了一顆螺絲。爺爺自己裝上一顆新螺絲，櫥櫃門就好了。他笑著說：「這房子很老，我也一樣老啊。」",
       "questions": [
         {
@@ -347,6 +347,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cupboard）原位換成翻譯題，沿用題 id a2-u08-l05-q17；目標字沿用 cupboard",
         "resolution": "改為 translate：promptZh「這個櫥櫃太小了，放不下所有的盤子。」、hintWords [\"cupboard\"]、referenceEn [\"This cupboard is too small for all the plates.\",\"The cupboard is too small to hold all the plates.\"]、rubricZh [\"用 cupboard 表示「櫥櫃」\",\"「太小了，放不下」可寫，例如 too small for…、too small to hold… 等\"]（原 makeSentence：instructionZh「用 cupboard 造一個句子，說說櫥櫃裡放了什麼。」、referenceEn [\"We keep plates and bowls in the cupboard.\",\"There are some cookies in the kitchen cupboard.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

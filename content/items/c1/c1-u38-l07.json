@@ -129,10 +129,10 @@
       "audioZh": "我們選了從容悠閒的遊河行程，而不是刺激的快艇之旅。",
       "questionZh": "他們選了什麼行程？",
       "options": [
-        "A bus tour of the city.",
-        "An exciting fast boat tour.",
-        "A walk along the river.",
-        "A slow and relaxing boat trip on the river."
+        "A bus tour of the city",
+        "An exciting fast boat tour",
+        "A walk along the river",
+        "A slow and relaxing boat trip on the river"
       ],
       "answer": 3
     },
@@ -189,7 +189,7 @@
     {
       "id": "c1-u38-l07-q15",
       "type": "reading",
-      "passageEn": "When Sam moved into a shared flat, he naively believed that everyone would keep the kitchen clean. He soon found out that Leon, who had the room next to his, was a complete slob who left dirty plates everywhere. Ellie, who lived across the hall, was a fitness fiend who went running at five every morning and slammed the door on her way out. Sam, a dutiful son who phoned his parents every Sunday, did not want to worry them, so he only grumbled to himself. Together with the monotony of his office job, the situation left him glum for weeks. Then one evening he found a disquieting note on the fridge: \"We need to talk.\" To his relief, Leon simply wanted to suggest a cleaning schedule. Life in the flat has been far more sedate ever since.",
+      "passageEn": "When Sam moved into a shared apartment, he naively believed that everyone would keep the kitchen clean. He soon found out that Leon, who had the room next to his, was a complete slob who left dirty plates everywhere. Ellie, who lived across the hall, was a fitness fiend who went running at five every morning and slammed the door on her way out. Sam, a dutiful son who phoned his parents every Sunday, did not want to worry them, so he only grumbled to himself. Together with the monotony of his office job, the situation left him glum for weeks. Then one evening he found a disquieting note on the fridge: \"We need to talk.\" To his relief, Leon simply wanted to suggest a cleaning schedule. Life in the apartment has been far more sedate ever since.",
       "passageZh": "Sam 搬進合租公寓時，天真地以為大家都會保持廚房乾淨。他很快就發現，住他隔壁房間的 Leon 是個徹頭徹尾的邋遢鬼，髒盤子到處亂放。住在走廊對面的 Ellie 則是健身狂，每天早上五點出門跑步，出門時還會用力甩門。Sam 是個每週日都打電話給父母的孝順兒子，不想讓他們擔心，所以只是自己發發牢騷。再加上辦公室工作的單調乏味，這種情況讓他悶悶不樂了好幾個星期。後來有一天晚上，他在冰箱上發現一張令人不安的紙條：「我們需要談談。」讓他鬆了一口氣的是，Leon 只是想提議排一張打掃輪值表。從那以後，公寓裡的生活平靜多了。",
       "questions": [
         {
@@ -289,6 +289,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（fiend）原位換成翻譯題，沿用題 id c1-u38-l07-q17；目標字沿用 fiend",
         "resolution": "改為 translate：promptZh「我的同事是個解謎狂，她每天午休都在解謎題。」、hintWords [\"fiend\"]、referenceEn [\"My colleague is a puzzle fiend; she spends every lunch break solving puzzles.\",\"My colleague is a puzzle fiend who does puzzles during her lunch break every day.\"]、rubricZh [\"「⋯狂」用 fiend（例如 a puzzle fiend 等）\",\"「午休」可寫，例如 lunch break、lunch hour 等\",\"「解謎題」可寫，例如 solving puzzles、does puzzles 等\"]（原 makeSentence：instructionZh「用 fiend 造一個句子，說說你或你認識的人對某件事的狂熱。」、referenceEn [\"My uncle is a gardening fiend who spends every weekend outside.\",\"My best friend is a movie fiend; she watches at least three films a week.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

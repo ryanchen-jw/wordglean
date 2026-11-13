@@ -129,10 +129,10 @@
       "audioZh": "那位保母很疏忽，整個下午都讓前門開著。",
       "questionZh": "保母做了什麼疏忽的事？",
       "options": [
-        "She made too much noise.",
-        "She left the front door open.",
-        "She came home very late.",
-        "She broke a glass."
+        "She made too much noise",
+        "She left the front door open",
+        "She came home very late",
+        "She broke a glass"
       ],
       "answer": 1
     },
@@ -343,6 +343,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（agreeable）原位換成翻譯題，沿用題 id c1-u38-l01-q17；目標字沿用 agreeable",
         "resolution": "改為 translate：promptZh「經理欣然同意了我們延長午休的提議。」、hintWords [\"agreeable\"]、referenceEn [\"The manager was agreeable to our idea of a longer lunch break.\",\"Our manager was agreeable to the suggestion of extending the lunch break.\"]、rubricZh [\"「欣然同意」用 be agreeable to＋名詞（例如 was agreeable to our idea 等）\",\"「延長午休」可寫，例如 a longer lunch break、extending the lunch break 等\",\"「提議」可寫，例如 idea、suggestion、proposal 等\"]（原 makeSentence：instructionZh「用 agreeable 造一個句子，描述一個讓你覺得愉快的地方、天氣或經驗。」、referenceEn [\"We had an agreeable afternoon walking along the river.\",\"I find the weather in autumn very agreeable.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

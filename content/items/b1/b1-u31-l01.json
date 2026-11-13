@@ -131,7 +131,7 @@
       "word": "cv",
       "exampleEn": "Keep your CV short and clear.",
       "exampleZh": "履歷要寫得簡短清楚。",
-      "glossZh": "履歷",
+      "glossZh": "履歷；（英式）",
       "distractorsZh": [
         "收據",
         "合約",
@@ -151,10 +151,10 @@
       "audioZh": "請在星期五前用電子郵件寄履歷；我們下週會打電話通知你面試。",
       "questionZh": "要在什麼時候前寄履歷？",
       "options": [
-        "By the end of next week.",
-        "Before Friday.",
-        "After the phone interview.",
-        "On Monday morning."
+        "By the end of next week",
+        "Before Friday",
+        "After the phone interview",
+        "On Monday morning"
       ],
       "answer": 1
     },
@@ -211,8 +211,8 @@
     {
       "id": "b1-u31-l01-q17",
       "type": "reading",
-      "passageEn": "My sister wants to become a journalist. Last month, she sent her CV to a small publisher that makes a monthly science journal. The office was in a quiet setting by the river. At the interview, she was the only interviewee who brought her own articles. The manager showed her the company's new logo and talked about a new series of books for children. She also met a columnist who writes about food every week. A week later, the company publicly announced that she got the job.",
-      "passageZh": "我姊姊想當記者。上個月，她把履歷寄給一家出版科學月刊的小出版社。辦公室位在河邊一個安靜的環境裡。面試時，她是唯一帶著自己寫的文章去的面試者。經理給她看公司的新商標，還談到一套新的兒童系列書籍。她也見到一位每週寫美食專欄的作家。一個星期後，公司公開宣布她錄取了。",
+      "passageEn": "My sister wants to become a journalist. Last month, she sent her CV to a small publisher that publishes a monthly science journal. The office was in a quiet setting by the river. At the interview, she was the only interviewee who brought her own articles. The manager showed her the company's new logo and talked about a new series of books for children. She also met a columnist who writes about food every week. A week later, the company publicly announced that she got the job.",
+      "passageZh": "我的姊妹想當記者。上個月，她把履歷寄給一家出版科學月刊的小出版社。辦公室位在河邊一個安靜的環境裡。面試時，她是唯一帶著自己寫的文章去的面試者。經理給她看公司的新商標，還談到一套新的兒童系列書籍。她也見到一位每週寫美食專欄的作家。一個星期後，公司公開宣布她錄取了。",
       "questions": [
         {
           "questionZh": "面試時她和其他人有什麼不同？",
@@ -369,6 +369,30 @@
         "message": "創辦人裁示：造句改翻譯：造句題（journal）原位換成翻譯題，沿用題 id b1-u31-l01-q19；目標字沿用 journal",
         "resolution": "改為 translate：promptZh「她的研究發表在一份科學期刊上。」、hintWords [\"journal\"]、referenceEn [\"Her research was published in a science journal.\",\"Her study appeared in a scientific journal.\"]、rubricZh [\"用 journal 表示「期刊」\",\"「發表」可寫，例如 was published in、appeared in 等\"]（原 makeSentence：instructionZh「用 journal 造一個句子，說說你寫日誌或讀期刊的習慣。」、referenceEn [\"I write in my journal every night.\",\"I kept a journal during my trip last summer.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：glossZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/16",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

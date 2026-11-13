@@ -125,10 +125,10 @@
       "audioZh": "登山客應該在三點前登頂，因為冬天天黑得早。",
       "questionZh": "為什麼要在三點前登頂？",
       "options": [
-        "Night comes early in winter.",
-        "It gets cold early in winter.",
-        "The summit closes at three.",
-        "There is a strong wind."
+        "Night comes early in winter",
+        "It gets cold early in winter",
+        "The summit closes at three",
+        "There is a strong wind"
       ],
       "answer": 0
     },
@@ -312,6 +312,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（summit）原位換成翻譯題，沿用題 id b1-u26-l03-q17；目標字沿用 summit",
         "resolution": "改為 translate：promptZh「從山頂可以看到整座城市。」、hintWords [\"summit\"]、referenceEn [\"You can see the whole city from the summit.\",\"From the summit, you can see the entire city.\"]、rubricZh [\"用 summit 表示「山頂」\"]（原 makeSentence：instructionZh「用 summit 造一個句子，說說你爬過或想爬的山頂。」、referenceEn [\"I reached the summit of a mountain last summer.\",\"I hope to stand on the summit of a high mountain one day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

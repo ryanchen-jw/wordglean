@@ -92,8 +92,8 @@
       "id": "b1-u43-l01-q07",
       "type": "wordCard",
       "word": "stubborn",
-      "exampleEn": "This old door is stubborn and won't open.",
-      "exampleZh": "這扇舊門卡得很緊，怎麼也打不開。",
+      "exampleEn": "The stubborn child refused to go to bed.",
+      "exampleZh": "那個固執的孩子不肯上床睡覺。",
       "glossZh": "固執的；頑固的",
       "distractorsZh": [
         "溫和的",
@@ -124,13 +124,13 @@
       "id": "b1-u43-l01-q10",
       "type": "listenChoice",
       "audioEn": "My sister is so stubborn. She won't wear a coat, even in the snow.",
-      "audioZh": "我姊姊好固執，就算下雪也不肯穿外套。",
-      "questionZh": "說話者的姊姊有什麼個性？",
+      "audioZh": "我的姊妹好固執，就算下雪也不肯穿外套。",
+      "questionZh": "說話者的姊妹有什麼個性？",
       "options": [
-        "She is very shy.",
-        "She is kind to everyone she meets.",
-        "She is often lazy.",
-        "She doesn't change her mind easily."
+        "She is very shy",
+        "She is kind to everyone she meets",
+        "She is often lazy",
+        "She doesn't change her mind easily"
       ],
       "answer": 3
     },
@@ -362,6 +362,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（cheerful）原位換成翻譯題，沿用題 id b1-u43-l01-q17；目標字沿用 cheerful",
         "resolution": "改為 translate：promptZh「這間教室漆成明亮的黃色，看起來很愉快。」、hintWords [\"cheerful\"]、referenceEn [\"The classroom is painted bright yellow, so it looks cheerful.\",\"Painted in bright yellow, the classroom looks very cheerful.\"]、rubricZh [\"用 cheerful 表示「令人愉快的；明亮的」\"]（原 makeSentence：instructionZh「用 cheerful 造一個句子，描述一位個性開朗的人。」、referenceEn [\"My new classmate seems cheerful and kind.\",\"My grandma is a cheerful person who loves to sing.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

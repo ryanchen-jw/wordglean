@@ -185,8 +185,8 @@
     {
       "id": "b2-u48-l06-q15",
       "type": "reading",
-      "passageEn": "My favorite cafe used to look shabby, with old chairs and a broken sign. Last year, the new owner decided to modernize it. Now the walls are white, and the cakes are delicately decorated with fresh fruit. Some customers say the coffee is still mediocre, but the room feels bright and cozy. There is even a tame old cat that sleeps by the window. On weekends, a guitarist plays there, and his voice fills the room powerfully.",
-      "passageZh": "我最喜歡的咖啡館以前看起來很破舊，椅子很舊，招牌也壞了。去年，新老闆決定把它現代化。現在牆壁是白色的，蛋糕上精緻地裝飾著新鮮水果。有些客人說咖啡還是普普通通，但店裡感覺明亮又溫馨。甚至還有一隻溫馴的老貓睡在窗邊。週末有一位吉他手在那裡表演，他的歌聲渾厚有力地充滿整個空間。",
+      "passageEn": "My favorite cafe used to look shabby, with old chairs and a broken sign. Last year, the new owner decided to modernize it. Now the walls are white, and the cakes are delicately decorated with fresh fruit. Some customers say the coffee is still mediocre, but the room feels bright and cozy. There is even a tame old cat that sleeps by the window. On weekends, a guitarist plays and sings there, and his voice fills the room powerfully.",
+      "passageZh": "我最喜歡的咖啡館以前看起來很破舊，椅子很舊，招牌也壞了。去年，新老闆決定把它現代化。現在牆壁是白色的，蛋糕上精緻地裝飾著新鮮水果。有些客人說咖啡還是普普通通，但店裡感覺明亮又溫馨。甚至還有一隻溫馴的老貓睡在窗邊。週末有一位吉他手在那裡自彈自唱，他的歌聲渾厚有力地充滿整個空間。",
       "questions": [
         {
           "questionZh": "有些客人對咖啡的評價是什麼？",
@@ -351,6 +351,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（shabby）原位換成翻譯題，沿用題 id b2-u48-l06-q17；目標字沿用 shabby",
         "resolution": "改為 translate：promptZh「他們搬進了一間破舊的小公寓。」、hintWords [\"shabby\"]、referenceEn [\"They moved into a shabby little apartment.\",\"They moved into a small, shabby apartment.\"]、rubricZh [\"shabby 表示「破舊的」（例如 a shabby little apartment 等）；形容詞順序不扣分\",\"「公寓」可寫，例如 apartment、flat 等\",\"時態可用過去式或現在完成式（例如 moved、have moved 等）\"]（原 makeSentence：instructionZh「用 shabby 造一個句子，描述一樣你擁有或看過的破舊東西或地方。」、referenceEn [\"My old school bag is shabby, but I still love it.\",\"I once stayed in a shabby little room near the train station.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

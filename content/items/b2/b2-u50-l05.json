@@ -135,7 +135,7 @@
     {
       "id": "b2-u50-l05-q11",
       "type": "shadowing",
-      "sentenceEn": "Without care, the old wooden house began to decay.",
+      "sentenceEn": "With no one to look after it, the old wooden house began to decay.",
       "sentenceZh": "沒人照顧，那棟老木屋開始腐朽。"
     },
     {
@@ -185,8 +185,8 @@
     {
       "id": "b2-u50-l05-q15",
       "type": "reading",
-      "passageEn": "My earliest recollection is of my grandmother's cottage in the countryside. Painted plates adorned the kitchen walls, and every morning I woke to the flutter of birds' wings outside my window. After she moved to the city, the cottage was left empty, and slowly it began to decay. Last year, my parents bought it back and repaired the roof. When I visited, the smell of the old kitchen brought back so many memories that I felt like a child again.",
-      "passageZh": "我最早的回憶是祖母在鄉下的小屋。彩繪的盤子裝飾著廚房的牆，每天早上我都在窗外鳥兒拍翅的聲音中醒來。祖母搬到城裡後，小屋就空了下來，漸漸變得破敗。去年，我爸媽把它買回來，修好了屋頂。我去的時候，舊廚房的氣味勾起好多回憶，讓我覺得自己又變回了孩子。",
+      "passageEn": "My earliest recollection is of my grandmother's cottage in the countryside. Painted plates adorned the kitchen walls, and every morning I woke to the flutter of birds' wings outside my window. After she moved to the city, the cottage was sold and left empty, and slowly it began to decay. Last year, my parents bought it back and repaired the roof. When I visited, the smell of the old kitchen brought back so many memories that I felt like a child again.",
+      "passageZh": "我最早的回憶是祖母在鄉下的小屋。彩繪的盤子裝飾著廚房的牆，每天早上我都在窗外鳥兒拍翅的聲音中醒來。祖母搬到城裡後，小屋被賣掉、空了下來，漸漸變得破敗。去年，我爸媽把它買回來，修好了屋頂。我去的時候，舊廚房的氣味勾起好多回憶，讓我覺得自己又變回了孩子。",
       "questions": [
         {
           "questionZh": "祖母搬走後，小屋怎麼了？",
@@ -194,7 +194,7 @@
             "改建成一間餐廳",
             "租給了外地來的一家人",
             "空著漸漸破敗",
-            "賣給了鄰居"
+            "被拆掉了"
           ],
           "answer": 2
         },
@@ -344,6 +344,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stagger）原位換成翻譯題，沿用題 id b2-u50-l05-q17；目標字沿用 stagger",
         "resolution": "改為 translate：promptZh「他抱著一個很重的箱子，搖搖晃晃地走上樓梯。」、hintWords [\"stagger\"]、referenceEn [\"He staggered up the stairs with a heavy box.\",\"Carrying a heavy box, he staggered up the stairs.\"]、rubricZh [\"stagger 當動詞，後接方向（例如 staggered up the stairs 等）\",\"「抱著很重的箱子」可寫，例如 with a heavy box、carrying a heavy box 等\",\"時態可用過去式或現在式（例如 staggered、staggers 等）\"]（原 makeSentence：instructionZh「用 stagger 造一個句子，描述你走路搖搖晃晃的一次經驗。」、referenceEn [\"After spinning around ten times, I staggered across the room.\",\"When I first learned to skate, I staggered on the ice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh、questions[0].options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

@@ -64,8 +64,8 @@
       "id": "b2-u09-l05-q05",
       "type": "wordCard",
       "word": "mobility",
-      "exampleEn": "Cheap flights have increased the mobility of young travelers.",
-      "exampleZh": "便宜的機票提高了年輕旅客的移動能力。",
+      "exampleEn": "Cheap flights have increased the mobility of young people.",
+      "exampleZh": "便宜的機票提高了年輕人的移動能力。",
       "glossZh": "流動性；移動能力",
       "distractorsZh": [
         "穩定性",
@@ -523,6 +523,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（destiny）原位換成翻譯題，沿用題 id b2-u09-l05-q17；目標字沿用 destiny",
         "resolution": "改為 translate：promptZh「她相信成為歌手是她的天命。」、hintWords [\"destiny\"]、referenceEn [\"She believes that becoming a singer is her destiny.\",\"She believes it is her destiny to become a singer.\"]、rubricZh [\"destiny 指「天命、命運」（例如 is her destiny、her destiny to… 等）\",\"「成為歌手」可寫，例如 becoming a singer、to become a singer 等\"]（原 makeSentence：instructionZh「用 destiny 造一個句子，說說你是否相信人有天命，以及你的理由。」、referenceEn [\"I don't believe in destiny, because I think we make our own choices.\",\"I believe destiny brought my parents together, so I trust it.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

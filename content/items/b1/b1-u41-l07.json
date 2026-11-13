@@ -90,8 +90,8 @@
       "id": "b1-u41-l07-q07",
       "type": "wordCard",
       "word": "enrich",
-      "exampleEn": "Farmers enrich the soil with old leaves.",
-      "exampleZh": "農夫用落葉讓土壤更肥沃。",
+      "exampleEn": "Farmers enrich their land with old leaves.",
+      "exampleZh": "農夫用落葉讓土地更肥沃。",
       "glossZh": "使豐富；使富裕",
       "distractorsZh": [
         "減少",
@@ -125,10 +125,10 @@
       "audioZh": "請不要告訴我結局，我不想讓你破壞這個故事。",
       "questionZh": "說話者不希望對方做什麼？",
       "options": [
-        "Read the story aloud.",
-        "Say how the story ends.",
-        "Tell the start of the story.",
-        "Borrow the book."
+        "Read the story aloud",
+        "Say how the story ends",
+        "Tell the start of the story",
+        "Borrow the book"
       ],
       "answer": 1
     },
@@ -186,7 +186,7 @@
       "id": "b1-u41-l07-q15",
       "type": "reading",
       "passageEn": "Last week, our school held a paper airplane contest. My little brother wanted to help, but he busted my first plane by stepping on it! I didn't want this to spoil my day, so I made a new one. My dad told me not to deprive myself of sleep the night before. On the day of the contest, I asked a friend to fetch some extra paper. On my first try, my plane made a long, beautiful glide across the hall. But a boy's plane hit mine, and one wing broke. I had to undo some folds and fix it quickly. In the end, I won second prize. The contest enriched my school life, and I conquered my fear of competing in front of people. It was a remarkable day.",
-      "passageZh": "上週，我們學校舉辦了一場紙飛機比賽。我弟弟想幫忙，結果卻一腳踩壞了我的第一架飛機！我不想讓這件事破壞我的一天，所以又做了一架新的。爸爸叫我比賽前一晚不要剝奪自己的睡眠。比賽當天，我請一位朋友去多拿一些紙來。第一次試飛時，我的飛機在大廳裡漂亮地滑翔了很長一段。但一個男生的飛機撞上了我的，一邊機翼斷了。我得拆開一些摺痕，趕快把它修好。最後，我得了第二名。這場比賽豐富了我的學校生活，我也戰勝了在眾人面前比賽的恐懼。那真是非凡的一天。",
+      "passageZh": "上週，我們學校舉辦了一場紙飛機比賽。我弟弟想幫忙，結果卻一腳踩壞了我的第一架飛機！我不想讓這件事破壞我的一天，所以又做了一架新的。爸爸叫我比賽前一晚不要睡太少。比賽當天，我請一位朋友去多拿一些紙來。第一次試飛時，我的飛機在大廳裡漂亮地滑翔了很長一段。但一個男生的飛機撞上了我的，一邊機翼斷了。我得拆開一些摺痕，趕快把它修好。最後，我得了第二名。這場比賽豐富了我的學校生活，我也戰勝了在眾人面前比賽的恐懼。那真是非凡的一天。",
       "questions": [
         {
           "questionZh": "弟弟做了什麼？",
@@ -415,6 +415,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（enrich）原位換成翻譯題，沿用題 id b1-u41-l07-q17；目標字沿用 enrich",
         "resolution": "改為 translate：promptZh「到國外旅行豐富了他的人生。」、hintWords [\"enrich\"]、referenceEn [\"Traveling abroad has enriched his life.\",\"Travel abroad enriched his life.\"]、rubricZh [\"用 enrich 表示「使豐富」\",\"時態可用 has enriched、enriched 等\"]（原 makeSentence：instructionZh「用 enrich 造一個句子，說說什麼讓你的生活更豐富。」、referenceEn [\"Reading books enriches my life.\",\"Learning music has enriched my life a lot.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯（zh-findings））",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

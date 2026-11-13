@@ -125,10 +125,10 @@
       "audioZh": "這台機器可以淨化海水，所以島上現在有足夠的飲用水。",
       "questionZh": "這台機器有什麼用處？",
       "options": [
-        "It keeps the island cool.",
-        "It cleans the plastic from the beaches.",
-        "It makes sea water safe to drink.",
-        "It checks the sea water."
+        "It keeps the island cool",
+        "It cleans the plastic from the beaches",
+        "It makes sea water safe to drink",
+        "It checks the sea water"
       ],
       "answer": 2
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u27-l03-q15",
       "type": "reading",
-      "passageEn": "Our town's river used to be dirty. Factories sent pollutants into the water, which endangered the fish. Ten years ago, the town decided to purify the river. Workers also reclaimed land along the river and turned it into a park. As a safeguard, factories now have to test their water every month. Today, the river is a habitat for many birds, and the park has a small eco center where visitors can learn about it. The benches there are made of recycled plastic. A sign says, \"Don't be wasteful. Take only what you need.\"",
+      "passageEn": "Our town's river used to be dirty. Factories sent pollutants into the water, which endangered the fish. Ten years ago, the town decided to purify the river. Workers also reclaimed land along the river and turned it into a park. As a safeguard, factories now have to test their water every month. Today, the river is a habitat for many birds, and the park has a small eco center where visitors can learn about the river. The benches there are made of recycled plastic. A sign says, \"Don't be wasteful. Take only what you need.\"",
       "passageZh": "我們鎮上的河以前很髒。工廠把汙染物排進河裡，危及了魚類。十年前，鎮上決定淨化這條河。工人們也開墾了河邊的土地，把它變成公園。作為保護措施，工廠現在每個月都必須檢測排放的水。如今，這條河是許多鳥類的棲息地，公園裡還有一座小小的生態中心，遊客可以在那裡認識這條河。那裡的長椅是用回收塑膠做的。一個告示寫著：「不要浪費，只拿你需要的。」",
       "questions": [
         {
@@ -219,7 +219,7 @@
       ],
       "referenceEn": [
         "Trash may endanger sea life.",
-        "Rubbish can endanger marine life."
+        "Waste can endanger marine life."
       ],
       "rubricZh": [
         "endanger 表示「危及」，例如 endanger animals 等說法",
@@ -337,6 +337,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（wasteful）原位換成翻譯題，沿用題 id b1-u27-l03-q17；目標字沿用 wasteful",
         "resolution": "改為 translate：promptZh「只用一次的塑膠杯很浪費。」、hintWords [\"wasteful\"]、referenceEn [\"Using plastic cups only once is wasteful.\",\"Plastic cups that you use only once are wasteful.\"]、rubricZh [\"用 wasteful 表示「浪費的」\",\"「只用一次」可寫，例如 using … only once、that you use only once 等\"]（原 makeSentence：instructionZh「用 wasteful 造一個句子，說說你覺得浪費的行為。」、referenceEn [\"I think it is wasteful to leave the TV on all day.\",\"Buying too many clothes is wasteful.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：referenceEn[1]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

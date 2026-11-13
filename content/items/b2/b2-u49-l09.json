@@ -187,7 +187,7 @@
     {
       "id": "b2-u49-l09-q15",
       "type": "reading",
-      "passageEn": "Mr. Wu, who lives on our street, has run a free reading class for children for ten years. He is known for his generosity, and although the work is often burdensome, he never complains. Some children are picky about books at first, but he finds the right story for each one. He also teaches them politeness, such as thanking the bus driver. Last week, the city gave him an award, and he accepted it with real eloquence. We were all thrilled for him.",
+      "passageEn": "Mr. Wu, who lives on our street, has run a free reading class for children for ten years. He is known for his generosity, and although the work is often burdensome, he never complains. Some children are picky about books at first, but he finds the right story for each one. He also teaches them small acts of politeness, such as thanking the bus driver. Last week, the city gave him an award, and he accepted it with a speech of real eloquence. We were all thrilled for him.",
       "passageZh": "住在我們這條街的吳先生，十年來為孩子們開免費的閱讀班。他以慷慨聞名，雖然這份工作常常很繁重，他從不抱怨。有些孩子一開始對書很挑，但他總能替每個孩子找到合適的故事。他也教他們禮貌，例如向公車司機道謝。上週，市政府頒獎給他，他發表了一段很動人的感言。我們都替他感到非常高興。",
       "questions": [
         {
@@ -305,6 +305,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（selfless）原位換成翻譯題，沿用題 id b2-u49-l09-q17；目標字沿用 selfless",
         "resolution": "改為 translate：promptZh「他們的幫忙完全是無私的，從來不要求任何回報。」、hintWords [\"selfless\"]、referenceEn [\"Their help was completely selfless; they never asked for anything in return.\",\"Their help was totally selfless, and they never asked for anything back.\"]、rubricZh [\"selfless 當形容詞（例如 was completely selfless 等）\",\"「不要求任何回報」可寫，例如 never asked for anything in return 等\",\"時態可用過去式或現在式（例如 was、is、asked、ask 等）\"]（原 makeSentence：instructionZh「用 selfless 造一個句子，描述你認識的一個無私的人或一件無私的行為。」、referenceEn [\"My mother is selfless and always thinks of others before herself.\",\"I will never forget my teacher's selfless help during my hardest year.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

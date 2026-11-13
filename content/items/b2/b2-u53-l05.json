@@ -185,8 +185,8 @@
     {
       "id": "b2-u53-l05-q15",
       "type": "reading",
-      "passageEn": "My daughter needed a costume for her school play, but she had outgrown last year's. With only two days left, I made a new one from my old overcoat. Working in such haste, I got a sharp prick from the needle more than once. On the night of the show, after weeks of rehearsal, parents bustled around the hall looking for seats. When my daughter walked on stage, I saw a twinkle of pride in her eyes.",
-      "passageZh": "我女兒的學校話劇需要戲服，但她已經穿不下去年那套了。只剩兩天，我就用自己的舊大衣做了一套新的。趕工的時候，我不只一次被針刺到。演出當晚，在好幾個星期的排練之後，家長們在禮堂裡忙著找座位。女兒走上舞臺時，我看到她眼中閃著驕傲的光芒。",
+      "passageEn": "My daughter needed a costume for her school play, but she had outgrown last year's. With only two days left, I made a new one from my old overcoat. Working in such haste, I got a sharp prick from the needle more than once. After weeks of rehearsal, the night of the show finally came, and parents bustled around the hall looking for seats. When my daughter walked on stage, I saw a twinkle of pride in her eyes.",
+      "passageZh": "我女兒的學校話劇需要戲服，但她已經穿不下去年那套了。只剩兩天，我就用自己的舊大衣做了一套新的。趕工的時候，我不只一次被針刺到。經過好幾個星期的排練，演出之夜終於到來，家長們在禮堂裡忙著找座位。女兒走上舞臺時，我看到她眼中閃著驕傲的光芒。",
       "questions": [
         {
           "questionZh": "作者為什麼要做新戲服？",
@@ -302,6 +302,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tiptoe）原位換成翻譯題，沿用題 id b2-u53-l05-q17；目標字沿用 tiptoe",
         "resolution": "改為 translate：promptZh「為了不吵醒家人，他半夜踮著腳走下樓。」、hintWords [\"tiptoe\"]、referenceEn [\"He tiptoed down the stairs at midnight so he wouldn't wake his family.\",\"At midnight, he tiptoed downstairs to avoid waking his family.\"]、rubricZh [\"tiptoe 當動詞，後接方向（例如 tiptoed down the stairs、tiptoed downstairs 等）\",\"「為了不吵醒」可寫，例如 so he wouldn't wake、to avoid waking 等\",\"時態可用過去式或現在式（例如 tiptoed、tiptoes 等）\"]（原 makeSentence：instructionZh「用 tiptoe 造一個句子，描述為了不吵到別人而踮著腳走路的情形。」、referenceEn [\"I tiptoed into the kitchen to get a snack at midnight.\",\"We tiptoed out of the library during the exam.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

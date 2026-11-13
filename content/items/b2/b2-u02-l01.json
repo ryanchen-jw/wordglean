@@ -187,8 +187,8 @@
     {
       "id": "b2-u02-l01-q15",
       "type": "reading",
-      "passageEn": "Every summer, a hotel by the sea hires seasonal workers. Last year, my cousin Ryan took one of these jobs. He was paid an hourly rate, and he worked mostly in the daytime, cleaning rooms and helping guests. A short training course preceded his first day. In it, he learned to check the serial number on every key card so that guests would not get the wrong room. Ryan seldom had free time, but he enjoyed the work. When the hotel was temporarily short of staff in August, he worked nights too. He says it was the best summer he has had in his lifetime.",
-      "passageZh": "每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我表哥 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是他這輩子度過最棒的夏天。",
+      "passageEn": "Every summer, a hotel by the sea hires seasonal workers. Last year, my cousin Ryan took one of these jobs. He was paid an hourly rate, and he worked mostly in the daytime, cleaning rooms and helping guests. A short training course preceded his first day. In it, he learned to check the serial number on every key card so that guests would not get the wrong room. Ryan seldom had free time, but he enjoyed the work. When the hotel was temporarily short of staff in August, he worked nights too. He says it was a once-in-a-lifetime experience.",
+      "passageZh": "每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我表哥 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是一生難得一次的經驗。",
       "questions": [
         {
           "questionZh": "Ryan 上班第一天之前做了什麼？",
@@ -394,6 +394,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（temporarily）原位換成翻譯題，沿用題 id b2-u02-l01-q17；目標字沿用 temporarily",
         "resolution": "改為 translate：promptZh「我妹妹暫時住在我家，直到她找到新的公寓。」、hintWords [\"temporarily\"]、referenceEn [\"My sister is temporarily staying with me until she finds a new apartment.\",\"My younger sister is living at my place temporarily until she finds a new apartment.\"]、rubricZh [\"temporarily 可放動詞前或句尾（例如 is temporarily staying、is living here temporarily 等）\",\"「住在我家」可寫，例如 stay with me、live at my place 等；時態可用現在進行式或現在式\",\"until 後面用現在式表示未來（例如 until she finds 等）\"]（原 makeSentence：instructionZh「用 temporarily 造一個句子，說說某個暫時的變化或安排。」、referenceEn [\"I am temporarily working from home while my office is being repaired.\",\"My favorite restaurant has temporarily moved to a smaller place.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

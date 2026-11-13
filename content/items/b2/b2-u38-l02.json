@@ -165,8 +165,8 @@
     {
       "id": "b2-u38-l02-q13",
       "type": "reading",
-      "passageEn": "Last year, my parents bought an old stone house in the countryside. It is not a mansion, but it has a lovely terrace and thick walls. The stonework was in good shape, but the iron gate was rusty and the windows were broken. My father hired a local craftsman who still makes windows by hand, the old way. He told us that most windows today are manufactured in factories, because the work has been mechanized. Two workmen helped him for a month. My father also wanted to help, but his skills were rusty, so he mostly made coffee for everyone.",
-      "passageZh": "去年，我爸媽在鄉下買了一間老石屋。它不是豪宅，但有一個很棒的露台和厚厚的牆。石造的部分狀況良好，但鐵門生鏽了，窗戶也破了。我爸爸請了一位當地的工匠，他到現在還用傳統的方式手工做窗戶。他告訴我們，現在大部分的窗戶都是在工廠製造的，因為這項工作已經機械化了。有兩名工人幫了他一個月。我爸爸也想幫忙，但他的手藝生疏了，所以他主要是幫大家泡咖啡。",
+      "passageEn": "Last year, my parents bought an old stone house in the countryside. It is not a mansion, but it has a lovely terrace and thick walls. The stonework was in good shape, but the iron gate was rusty and the windows were broken. My father hired a local craftsman who still makes windows by hand, the old way. The craftsman told us that most windows today are manufactured in factories, because the work has been mechanized. Two workmen helped him for a month. My father also wanted to help, but his skills were rusty, so he mostly made coffee for everyone.",
+      "passageZh": "去年，我爸媽在鄉下買了一間老石屋。它不是豪宅，但有一個很棒的露台和厚厚的牆。石造的部分狀況良好，但鐵門生鏽了，窗戶也破了。我爸爸請了一位當地的工匠，他到現在還用傳統的方式手工做窗戶。工匠告訴我們，現在大部分的窗戶都是在工廠製造的，因為這項工作已經機械化了。有兩名工人幫了他一個月。我爸爸也想幫忙，但他的手藝生疏了，所以他主要是幫大家泡咖啡。",
       "questions": [
         {
           "questionZh": "那間石屋買來時是什麼狀況？",
@@ -329,6 +329,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（manufacture）原位換成翻譯題，沿用題 id b2-u38-l02-q15；目標字沿用 manufacture",
         "resolution": "改為 translate：promptZh「這些手機是在越南製造的。」、hintWords [\"manufacture\"]、referenceEn [\"These phones were manufactured in Vietnam.\",\"These phones are manufactured in Vietnam.\"]、rubricZh [\"manufacture 用被動式（例如 were manufactured、are manufactured 等）\",\"時態可用過去式或現在式（例如 were、are 等）\"]（原 makeSentence：instructionZh「用 manufacture 造一個句子，說說某樣東西是在哪裡或怎麼製造的。」、referenceEn [\"My phone was manufactured in a factory in Vietnam.\",\"My grandfather manufactured furniture in a small workshop.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

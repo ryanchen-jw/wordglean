@@ -40,8 +40,8 @@
       "id": "c1-u05-l01-q03",
       "type": "wordCard",
       "word": "inclusive",
-      "exampleEn": "We want our school to be inclusive of children with different needs.",
-      "exampleZh": "我們希望學校能包容有不同需求的孩子。",
+      "exampleEn": "We want our school to be inclusive and to welcome children with different needs.",
+      "exampleZh": "我們希望學校具有包容性，接納有不同需求的孩子。",
       "glossZh": "包容的；包含在內的",
       "distractorsZh": [
         "排外的",
@@ -53,8 +53,8 @@
       "id": "c1-u05-l01-q04",
       "type": "wordCard",
       "word": "fraction",
-      "exampleEn": "The new phone costs only a fraction of the old price.",
-      "exampleZh": "新手機的價格只有舊款的一小部分。",
+      "exampleEn": "This phone now costs only a fraction of its original price.",
+      "exampleZh": "這支手機現在的價格只有原價的一小部分。",
       "glossZh": "一小部分；分數",
       "distractorsZh": [
         "全部",
@@ -140,10 +140,10 @@
       "audioZh": "銷售額在三月暴跌，但四月很快就回升了。",
       "questionZh": "銷售額在三月發生了什麼事？",
       "options": [
-        "They stayed the same.",
-        "They rose slowly but steadily.",
-        "They fell sharply.",
-        "They doubled in a week."
+        "They stayed the same",
+        "They rose slowly but steadily",
+        "They fell sharply",
+        "They doubled in a week"
       ],
       "answer": 2
     },
@@ -336,6 +336,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（plummet）原位換成翻譯題，沿用題 id c1-u05-l01-q18；目標字沿用 plummet",
         "resolution": "改為 translate：promptZh「昨晚氣溫驟降到零度以下。」、hintWords [\"plummet\"]、referenceEn [\"Last night, the temperature plummeted to below zero.\",\"The temperature plummeted below zero last night.\"]、rubricZh [\"「驟降」用 plummet（例如 plummeted to below zero 等）\",\"「零度以下」可寫，例如 below zero、below freezing 等\",\"有「昨晚」，用過去式（例如 plummeted 等）\"]（原 makeSentence：instructionZh「用 plummet 造一個句子，描述你生活中某個數字突然大幅下降。」、referenceEn [\"When I started cooking at home, my spending on food plummeted.\",\"My phone's battery plummeted to five percent in just one hour.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

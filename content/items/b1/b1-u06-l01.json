@@ -127,10 +127,10 @@
       "audioZh": "我代表王小姐打電話來更改開會時間。",
       "questionZh": "打電話的人代表誰？",
       "options": [
-        "The hotel.",
-        "Ms. Wang's manager.",
-        "Ms. Wang.",
-        "The airline."
+        "The hotel",
+        "Ms. Wang's manager",
+        "Ms. Wang",
+        "The airline"
       ],
       "answer": 2
     },
@@ -376,6 +376,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（meaningful）原位換成翻譯題，沿用題 id b1-u06-l01-q17；目標字沿用 meaningful",
         "resolution": "改為 translate：promptZh「這張舊照片對我奶奶來說很有意義。」、hintWords [\"meaningful\"]、referenceEn [\"This old photo is very meaningful to my grandmother.\",\"For my grandma, this old photo is very meaningful.\"]、rubricZh [\"用 meaningful 表示「有意義的」（例如 is very meaningful to…；寫 means a lot to 也正確）\",\"「對…來說」可寫，例如 to my grandmother、for my grandma 等\"]（原 makeSentence：instructionZh「用 meaningful 造一個句子，說說一件你覺得很有意義的事。」、referenceEn [\"Teaching kids to read is meaningful work for me.\",\"My trip to my grandmother's village was very meaningful.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

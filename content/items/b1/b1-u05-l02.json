@@ -125,10 +125,10 @@
       "audioZh": "我們大部分的顧客是年輕人，尤其是學生。",
       "questionZh": "他們的顧客大多是什麼人？",
       "options": [
-        "Older customers.",
-        "Business customers.",
-        "Mostly the young.",
-        "Customers from abroad."
+        "Older customers",
+        "Business customers",
+        "Mostly the young",
+        "Customers from abroad"
       ],
       "answer": 2
     },
@@ -356,6 +356,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（measure）原位換成翻譯題，沿用題 id b1-u05-l02-q17；目標字沿用 measure",
         "resolution": "改為 translate：promptZh「空氣品質每小時測量一次。」、hintWords [\"measure\"]、referenceEn [\"The air quality is measured every hour.\",\"They measure the air quality once an hour.\"]、rubricZh [\"用 measure 表示「測量」（例如 is measured、they measure 等）\",\"「每小時一次」可寫，例如 every hour、once an hour 等\"]（原 makeSentence：instructionZh「用 measure 造一個句子，說說你曾經量過什麼東西、為什麼量。」、referenceEn [\"I measured my room before I bought a new bed.\",\"I measured the box to see if it would fit in my car.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

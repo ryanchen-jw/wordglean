@@ -140,10 +140,10 @@
       "audioZh": "新圖書館所有人都可以使用，每天早上七點開門。",
       "questionZh": "新圖書館每天幾點開門？",
       "options": [
-        "Seven in the evening.",
-        "Eight every morning.",
-        "Seven in the morning.",
-        "Nine every morning."
+        "Seven in the evening",
+        "Eight every morning",
+        "Seven in the morning",
+        "Nine every morning"
       ],
       "answer": 2
     },
@@ -200,7 +200,7 @@
     {
       "id": "b1-u04-l02-q16",
       "type": "reading",
-      "passageEn": "Ken wanted to buy a new watch for running. In the shop, two watches looked alike, but there was one big difference: accuracy. The more expensive one measured distance with outstanding accuracy. The shop assistant gave him some realistic advice: \"If you only run for fun, the cheaper one is fine.\" Ken also noticed a similarity: both were easy to use and accessible to beginners. In the end, he bought the cheaper one, and his running has improved steadily.",
+      "passageEn": "Ken wanted to buy a new watch for running. In the shop, two watches looked alike, but there was one big difference: accuracy. The more expensive one measured distance with outstanding accuracy. The store clerk gave him some realistic advice: \"If you only run for fun, the cheaper one is fine.\" Ken also noticed a similarity: both were easy to use and accessible to beginners. In the end, he bought the cheaper one, and his running has improved steadily.",
       "passageZh": "Ken 想買一支跑步用的新手錶。店裡有兩支錶看起來很像，但有一個很大的差別：準確度。比較貴的那支測量距離非常準確。店員給了他一個很實際的建議：「如果你只是跑好玩的，便宜的那支就夠了。」Ken 也注意到一個相似之處：兩支都很好用，初學者也能輕鬆上手。最後，他買了比較便宜的那支，而他的跑步能力也穩定地進步。",
       "questions": [
         {
@@ -401,6 +401,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（casual）原位換成翻譯題，沿用題 id b1-u04-l02-q18；目標字沿用 casual",
         "resolution": "改為 translate：promptZh「這家餐廳的氣氛很輕鬆隨意。」、hintWords [\"casual\"]、referenceEn [\"This restaurant has a casual atmosphere.\",\"The atmosphere in this restaurant is very casual.\"]、rubricZh [\"用 casual 表示「輕鬆隨意的」（例如 a casual atmosphere；寫 relaxed 也正確）\",\"「氣氛」可寫，例如 atmosphere、feel 等\"]（原 makeSentence：instructionZh「用 casual 造一個句子，說說你在什麼時候喜歡穿休閒的衣服。」、referenceEn [\"I like to wear casual clothes on weekends.\",\"I wear casual clothes when I meet my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

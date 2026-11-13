@@ -42,7 +42,7 @@
       "type": "wordCard",
       "word": "rap",
       "exampleEn": "My brother listens to rap every day.",
-      "exampleZh": "我哥哥每天都聽饒舌音樂。",
+      "exampleZh": "我的兄弟每天都聽饒舌音樂。",
       "glossZh": "饒舌音樂",
       "distractorsZh": [
         "爵士樂",
@@ -378,6 +378,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（singing）原位換成翻譯題，沿用題 id a2-u15-l04-q16；目標字沿用 singing",
         "resolution": "改為 translate：promptZh「她的歌聲很好聽。」、hintWords [\"singing\"]、referenceEn [\"Her singing is beautiful.\",\"Her singing is very nice.\"]、rubricZh [\"用 singing 表示「歌聲」（例如 her singing）\",\"「很好聽」可寫，例如 beautiful、very nice、lovely 等\"]（原 makeSentence：instructionZh「用 singing 造一個句子，說說你或家人唱歌的情形。」、referenceEn [\"My mother's singing is better than mine.\",\"I enjoy singing in the shower.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

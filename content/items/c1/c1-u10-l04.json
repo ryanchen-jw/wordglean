@@ -27,8 +27,8 @@
       "id": "c1-u10-l04-q02",
       "type": "wordCard",
       "word": "mutually",
-      "exampleEn": "The two schools reached a mutually agreed decision.",
-      "exampleZh": "兩所學校達成了雙方都同意的決定。",
+      "exampleEn": "The two schools reached a mutually acceptable decision.",
+      "exampleZh": "兩所學校達成了雙方都能接受的決定。",
       "glossZh": "互相地；彼此",
       "distractorsZh": [
         "單方面地",
@@ -322,6 +322,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sentimental）原位換成翻譯題，沿用題 id c1-u10-l04-q17；目標字沿用 sentimental",
         "resolution": "改為 translate：promptZh「這枚舊戒指不值錢，但對奶奶來說有很深的情感意義。」、hintWords [\"sentimental\"]、referenceEn [\"This old ring is not worth much, but it has great sentimental value for Grandma.\",\"The old ring isn't valuable, but my grandmother keeps it for sentimental reasons.\"]、rubricZh [\"「情感意義」用 sentimental，例如 sentimental value、for sentimental reasons 等\",\"「不值錢」可寫，例如 not worth much、isn't valuable 等\",\"「奶奶」可寫，例如 Grandma、my grandmother 等\"]（原 makeSentence：instructionZh「用 sentimental 造一個句子，說說一樣你因為念舊而保留的東西。」、referenceEn [\"I keep my old school bag for sentimental reasons.\",\"I am sentimental about the first letter my best friend wrote me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/1",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

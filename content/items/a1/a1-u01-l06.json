@@ -40,7 +40,7 @@
       "id": "a1-u01-l06-q03",
       "type": "wordCard",
       "word": "so",
-      "exampleEn": "I am tired, so I go to bed early.",
+      "exampleEn": "I am tired, so I will go to bed early.",
       "exampleZh": "我很累，所以早點上床睡覺。",
       "glossZh": "所以",
       "distractorsZh": [
@@ -148,7 +148,7 @@
     {
       "id": "a1-u01-l06-q13",
       "type": "mcq",
-      "stemEn": "It is cold today, ____ I wear a coat.",
+      "stemEn": "It is cold today, ____ I am wearing a coat.",
       "stemZh": "今天很冷，所以我穿外套。",
       "options": [
         "when",
@@ -217,10 +217,11 @@
         "when"
       ],
       "referenceEn": [
-        "When do you go to school?"
+        "When do you go to school?",
+        "What time do you go to school?"
       ],
       "rubricZh": [
-        "用 when 問「什麼時候」",
+        "「什麼時候」可寫，例如 when、what time 等",
         "疑問句用 do 放在主詞前面",
         "go 用原形"
       ]
@@ -348,6 +349,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（some）原位換成翻譯題，沿用題 id a1-u01-l06-q17；目標字沿用 some",
         "resolution": "改為 translate：promptZh「桌上有一些花。」、hintWords [\"some\"]、referenceEn [\"There are some flowers on the table.\",\"Some flowers are on the table.\"]、rubricZh [\"用 some 表示「一些」，可數名詞用複數（例如 some flowers）\",\"可寫，例如 There are some flowers…、Some flowers are… 等\"]（原 makeSentence：instructionZh「用 some 造一個句子，說說你想要或擁有的一些東西。」、referenceEn [\"I want some milk.\",\"I have some books in my bag.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：referenceEn（題庫外問題）、rubricZh[0]（題庫外問題）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

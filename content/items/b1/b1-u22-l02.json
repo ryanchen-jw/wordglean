@@ -77,7 +77,7 @@
       "id": "b1-u22-l02-q06",
       "type": "wordCard",
       "word": "literature",
-      "exampleEn": "She studied literature at university.",
+      "exampleEn": "She studied literature in college.",
       "exampleZh": "她在大學念文學。",
       "glossZh": "文學",
       "distractorsZh": [
@@ -138,10 +138,10 @@
       "audioZh": "馬戲團七點開演，但請早點來買票。",
       "questionZh": "為什麼要早點到？",
       "options": [
-        "To pay for tickets.",
-        "To get good seats.",
-        "To meet the clowns.",
-        "To eat first."
+        "To pay for tickets",
+        "To get good seats",
+        "To meet the clowns",
+        "To eat first"
       ],
       "answer": 0
     },
@@ -392,6 +392,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（enjoyable）原位換成翻譯題，沿用題 id b1-u22-l02-q18；目標字沿用 enjoyable",
         "resolution": "改為 translate：promptZh「這趟火車之旅比我想像的愉快多了。」、hintWords [\"enjoyable\"]、referenceEn [\"The train trip was much more enjoyable than I expected.\",\"The train journey was far more enjoyable than I thought.\"]、rubricZh [\"用 enjoyable 表示「令人愉快的」（例如 more enjoyable than…）\",\"「比我想像的」可寫，例如 than I expected、than I thought 等\"]（原 makeSentence：instructionZh「用 enjoyable 造一個句子，說說一次愉快的經驗。」、referenceEn [\"My trip to the beach last summer was very enjoyable.\",\"Cooking with my family is always enjoyable.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

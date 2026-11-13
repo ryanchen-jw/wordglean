@@ -150,7 +150,7 @@
     {
       "id": "c1-u18-l03-q13",
       "type": "mcq",
-      "stemEn": "Before winter, the animal eats a lot to prepare for ____.",
+      "stemEn": "Before winter, this animal eats a lot to prepare for ____.",
       "stemZh": "入冬前，這種動物會吃很多東西，為冬眠做準備。",
       "options": [
         "resin",
@@ -305,6 +305,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（peacock）原位換成翻譯題，沿用題 id c1-u18-l03-q17；目標字沿用 peacock",
         "resolution": "改為 translate：promptZh「那位歌手穿著一件像孔雀一樣色彩鮮豔的外套上台。」、hintWords [\"peacock\"]、referenceEn [\"The singer came on stage in a jacket as colorful as a peacock.\",\"The singer walked onto the stage wearing a coat as bright as a peacock.\"]、rubricZh [\"「像孔雀一樣」用 peacock，例如 as colorful as a peacock、like a peacock 等\",\"「色彩鮮豔」可寫，例如 colorful、bright 等\",\"時態配合內容（例如 came、walked 等）；過去式、現在完成式都正確\"]（原 makeSentence：instructionZh「用 peacock 造一個句子，說說你看過孔雀的地方或經驗。」、referenceEn [\"I once saw a white peacock at the zoo in Taipei.\",\"When I visited the park, a peacock walked right past me.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

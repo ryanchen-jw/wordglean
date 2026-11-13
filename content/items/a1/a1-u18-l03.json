@@ -114,9 +114,9 @@
       "audioZh": "別生氣，很抱歉我遲到了。",
       "questionZh": "說話者為什麼道歉？",
       "options": [
-        "I am angry.",
-        "I am late.",
-        "I am sick."
+        "I am angry",
+        "I am late",
+        "I am sick"
       ],
       "answer": 1
     },
@@ -341,6 +341,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（funny）原位換成翻譯題，沿用題 id a1-u18-l03-q16；目標字沿用 funny",
         "resolution": "改為 translate：promptZh「這部卡通很好笑。」、hintWords [\"funny\"]、referenceEn [\"This cartoon is very funny.\",\"This cartoon is so funny.\"]、rubricZh [\"funny 放在 be 動詞後面（例如 is very funny）\",\"「很」可寫，例如 very、so 等\"]（原 makeSentence：instructionZh「用 funny 造一個句子，說說好笑的人、電影或故事。」、referenceEn [\"My uncle is very funny.\",\"I watched a funny movie with my friends.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

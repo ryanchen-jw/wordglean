@@ -127,10 +127,10 @@
       "audioZh": "會議進行到一半，我的肚子開始咕嚕咕嚕叫，大聲到大家都轉過頭來。",
       "questionZh": "會議進行到一半時發生了什麼事？",
       "options": [
-        "The lights went off suddenly.",
-        "The speaker's stomach made a loud noise.",
-        "Someone's phone rang twice.",
-        "It started to rain outside."
+        "The lights went off suddenly",
+        "The speaker's stomach made a loud noise",
+        "Someone's phone rang twice",
+        "It started to rain outside"
       ],
       "answer": 1
     },
@@ -188,7 +188,7 @@
       "id": "c1-u36-l01-q15",
       "type": "reading",
       "passageEn": "On the last night of our camping trip, thunder began to rumble over the hills. My brother sprawled on his sleeping bag, too tired to move, while I tried to light the stove with fingers that were numb from the cold. Suddenly our dog strayed away from the tent and disappeared into the dark. We searched for an hour, but she eluded us every time we got close. At last we found her under a fallen tree, her ears twitching at every sound. The storm had damaged our tent badly, so the next morning we salvaged what we could, including two blankets and the stove, and walked back to the car.",
-      "passageZh": "露營之旅的最後一晚，雷聲開始在山丘上方隆隆作響。我哥哥累得不想動，攤開四肢躺在睡袋上；我則用凍到沒有知覺的手指，想辦法把爐子點著。突然，我們的狗離開帳篷走失了，消失在黑暗中。我們找了一個小時，但每次一靠近，牠就溜走。最後我們在一棵倒下的樹底下找到牠，牠的耳朵隨著每個聲響抽動。暴風雨把帳篷弄壞得很嚴重，所以隔天早上我們搶救出還能用的東西，包括兩條毯子和爐子，然後走回車上。",
+      "passageZh": "露營之旅的最後一晚，雷聲開始在山丘上方隆隆作響。我的兄弟累得不想動，攤開四肢躺在睡袋上；我則用凍到沒有知覺的手指，想辦法把爐子點著。突然，我們的狗離開帳篷走失了，消失在黑暗中。我們找了一個小時，但每次一靠近，牠就溜走。最後我們在一棵倒下的樹底下找到牠，牠的耳朵隨著每個聲響抽動。暴風雨把帳篷弄壞得很嚴重，所以隔天早上我們搶救出還能用的東西，包括兩條毯子和爐子，然後走回車上。",
       "questions": [
         {
           "questionZh": "他們最後在哪裡找到狗？",
@@ -287,6 +287,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（stray）原位換成翻譯題，沿用題 id c1-u36-l01-q17；目標字沿用 stray",
         "resolution": "改為 translate：promptZh「健行時千萬不要偏離步道。」、hintWords [\"stray\"]、referenceEn [\"When you go hiking, never stray from the trail.\",\"Don't stray from the path when you are hiking.\"]、rubricZh [\"「偏離」用 stray from（例如 stray from the trail 等）\",\"「千萬不要」可寫，例如 never、don't 等\",\"「步道」可寫，例如 trail、path 等\"]（原 makeSentence：instructionZh「用 stray 造一個句子，說說你做事或說話時偏離原本方向的經驗。」、referenceEn [\"I sometimes stray from my shopping list when I see something on sale.\",\"During the hike, I strayed from the path and got lost for a while.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

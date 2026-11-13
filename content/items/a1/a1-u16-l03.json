@@ -57,7 +57,7 @@
       "type": "wordCard",
       "word": "college",
       "exampleEn": "My brother goes to college in Taipei.",
-      "exampleZh": "我哥哥在台北讀大學。",
+      "exampleZh": "我的兄弟在台北讀大學。",
       "glossZh": "大學；學院",
       "distractorsZh": [
         "小學",
@@ -152,7 +152,7 @@
       "id": "a1-u16-l03-q13",
       "type": "mcq",
       "stemEn": "My sister studies art at ____.",
-      "stemZh": "我姊姊在大學念藝術。",
+      "stemZh": "我的姊妹在大學念藝術。",
       "options": [
         "course",
         "college",
@@ -189,7 +189,7 @@
     {
       "id": "a1-u16-l03-q15",
       "type": "reading",
-      "passageEn": "Ben is a college student. This year, he is taking a computer course. His teacher is very good, and she teaches the class with many examples. Ben's test result is great. The reason is that he studies every night.",
+      "passageEn": "Ben is a college student. This year, he is taking a computer course. His teacher is very good, and she uses many examples in class. Ben's test result is great. The reason is that he studies every night.",
       "passageZh": "Ben 是大學生。今年他在上一門電腦課程。他的老師很好，上課時會舉很多例子。Ben 的考試成績很棒，原因是他每天晚上都讀書。",
       "questions": [
         {
@@ -315,6 +315,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（teach）原位換成翻譯題，沿用題 id a1-u16-l03-q17；目標字沿用 teach",
         "resolution": "改為 translate：promptZh「誰教你彈鋼琴的？」、hintWords [\"teach\"]、referenceEn [\"Who taught you to play the piano?\",\"Who taught you the piano?\"]、rubricZh [\"teach 後面接人和要教的內容（例如 taught you to play the piano）\",\"問過去的事用過去式（taught）\"]（原 makeSentence：instructionZh「用 teach 造一個句子，說說誰教你什麼，或你會教別人什麼。」、referenceEn [\"My father teaches me to swim.\",\"I can teach you how to cook rice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

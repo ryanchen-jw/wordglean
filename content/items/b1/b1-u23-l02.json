@@ -66,8 +66,8 @@
       "id": "b1-u23-l02-q05",
       "type": "wordCard",
       "word": "competitive",
-      "exampleEn": "The competitive player argued with the referee.",
-      "exampleZh": "那位好勝的球員和裁判爭論。",
+      "exampleEn": "My friend is so competitive that he hates losing, even at cards.",
+      "exampleZh": "我朋友好勝心很強，連玩紙牌都討厭輸。",
       "glossZh": "好勝的；競爭激烈的",
       "distractorsZh": [
         "害羞的",
@@ -127,10 +127,10 @@
       "audioZh": "我們隊去年拿下聯賽冠軍，但今年得了第三名。",
       "questionZh": "今年球隊得了第幾名？",
       "options": [
-        "Second.",
-        "In first place.",
-        "Third place.",
-        "Fifth."
+        "Second",
+        "In first place",
+        "Third place",
+        "Fifth place"
       ],
       "answer": 2
     },
@@ -400,6 +400,24 @@
         "message": "創辦人裁示：造句改翻譯：造句題（victory）原位換成翻譯題，沿用題 id b1-u23-l02-q17；目標字沿用 victory",
         "resolution": "改為 translate：promptZh「這場勝利對整個小鎮來說意義重大。」、hintWords [\"victory\"]、referenceEn [\"This victory means a lot to the whole town.\",\"The victory is very important to the whole town.\"]、rubricZh [\"用 victory 表示「勝利」\",\"「意義重大」可寫，例如 means a lot to、is very important to 等\"]（原 makeSentence：instructionZh「用 victory 造一個句子，說說一次讓你開心的勝利。」、referenceEn [\"Winning the school race was my first real victory.\",\"I felt very proud after my victory in the speech contest.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：options[3]（套用後檢查器修正）",
+        "resolvedAt": "2026-11-13T15:41:55Z"
       }
     ]
   }

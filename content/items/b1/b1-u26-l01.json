@@ -125,17 +125,17 @@
       "audioZh": "今晚帶點防蚊的東西，因為我們要在湖邊露營。",
       "questionZh": "為什麼今晚要帶防蚊的東西？",
       "options": [
-        "We'll swim in the lake tonight.",
-        "It will rain all night long.",
-        "The shop is closed tomorrow.",
-        "We'll stay near the lake tonight."
+        "We'll swim in the lake tonight",
+        "It will rain all night long",
+        "The shop is closed tomorrow",
+        "We'll stay near the lake tonight"
       ],
       "answer": 3
     },
     {
       "id": "b1-u26-l01-q11",
       "type": "shadowing",
-      "sentenceEn": "Keep the window closed to stop mosquitoes.",
+      "sentenceEn": "Keep the window closed to keep mosquitoes out.",
       "sentenceZh": "把窗戶關著來擋住蚊子。"
     },
     {
@@ -313,6 +313,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（wildlife）原位換成翻譯題，沿用題 id b1-u26-l01-q17；目標字沿用 wildlife",
         "resolution": "改為 translate：promptZh「請不要餵食野生動物。」、hintWords [\"wildlife\"]、referenceEn [\"Please do not feed the wildlife.\",\"Please don't give food to the wildlife.\"]、rubricZh [\"用 wildlife 表示「野生動物」（不可數）\",\"「餵食」可寫，例如 feed、give food to 等\"]（原 makeSentence：instructionZh「用 wildlife 造一個句子，說說你看過或想看的野生動物。」、referenceEn [\"I saw a lot of wildlife on my trip to the mountains.\",\"I want to see wildlife in the jungle one day.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/10",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

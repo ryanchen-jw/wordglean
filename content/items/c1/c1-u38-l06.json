@@ -41,7 +41,7 @@
       "id": "c1-u38-l06-q03",
       "type": "wordCard",
       "word": "aimlessly",
-      "exampleEn": "The small boat moved aimlessly with the wind on the lake.",
+      "exampleEn": "The small boat floated aimlessly on the lake, pushed by the wind.",
       "exampleZh": "那艘小船在湖上隨風漫無目的地漂動。",
       "glossZh": "漫無目的地；無方向地",
       "distractorsZh": [
@@ -128,10 +128,10 @@
       "audioZh": "我的舊車時好時壞：有些早上一發就動，有些早上卻怎麼也發不動。",
       "questionZh": "說話者的舊車怎麼了？",
       "options": [
-        "It works on some days but not on others.",
-        "It uses too much fuel.",
-        "Its brakes are too weak.",
-        "It is too small for the family."
+        "It works on some days but not on others",
+        "It uses too much fuel",
+        "Its brakes are too weak",
+        "It is too small for the family"
       ],
       "answer": 0
     },
@@ -311,6 +311,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（temperamental）原位換成翻譯題，沿用題 id c1-u38-l06-q17；目標字沿用 temperamental",
         "resolution": "改為 translate：promptZh「這位歌手喜怒無常，工作人員都很怕她。」、hintWords [\"temperamental\"]、referenceEn [\"The singer is so temperamental that the staff are all afraid of her.\",\"The singer is temperamental, and all the staff are scared of her.\"]、rubricZh [\"「喜怒無常」用 temperamental（例如 so temperamental that…、is temperamental 等）\",\"「工作人員都很怕她」可寫，例如 the staff are all afraid of her 等\"]（原 makeSentence：instructionZh「用 temperamental 造一個句子，描述某台時好時壞的機器，或某個喜怒無常的人。」、referenceEn [\"My laptop is temperamental and sometimes shuts down for no reason.\",\"My little brother becomes temperamental when he is hungry.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

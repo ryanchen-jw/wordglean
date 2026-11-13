@@ -115,7 +115,7 @@
     {
       "id": "b2-u22-l02-q09",
       "type": "listenType",
-      "sentenceEn": "The old tree has a trunk so thick that three people can't reach around it.",
+      "sentenceEn": "The old tree has a trunk so thick that three people can't get their arms around it.",
       "sentenceZh": "那棵老樹的樹幹粗到三個人都抱不住。"
     },
     {
@@ -185,8 +185,8 @@
     {
       "id": "b2-u22-l02-q15",
       "type": "reading",
-      "passageEn": "My aunt and uncle left the suburbs to live on a small farm at the edge of the wilderness. Tall pine trees surround their land, and the air always smells fresh. They keep six goats in an old barn, and every morning my aunt makes cheese from their milk. Life is not always easy. Weeds grow quickly in the summer, and in winter they sometimes hear a wolf near the hills. Last year, a lightning storm hit a tree, and its huge trunk fell across the road. After they burned the branches, my uncle used the ash in the garden to help the plants grow.",
-      "passageZh": "我阿姨和姨丈離開郊區，搬到荒野邊緣的一座小農場。高大的松樹環繞著他們的土地，空氣總是很清新。他們在一座舊穀倉裡養了六隻山羊，阿姨每天早上都用羊奶做起司。生活並不總是輕鬆。夏天雜草長得很快，冬天有時還會聽到山丘附近有狼。去年，一場雷雨打中一棵樹，巨大的樹幹倒下橫在路上。他們把樹枝燒掉後，姨丈把灰撒在菜園裡，幫助植物生長。",
+      "passageEn": "My aunt and uncle left the suburbs to live on a small farm at the edge of the wilderness. Tall pine trees surround their land, and the air always smells fresh. They keep six goats in an old barn, and every morning my aunt makes cheese from their milk. Life is not always easy. Weeds grow quickly in the summer, and in winter they sometimes hear a wolf near the hills. Last year, lightning hit a tree during a storm, and its huge trunk fell across the road. After they burned the branches, my uncle used the ash in the garden to help the plants grow.",
+      "passageZh": "我阿姨和姨丈離開郊區，搬到荒野邊緣的一座小農場。高大的松樹環繞著他們的土地，空氣總是很清新。他們在一座舊穀倉裡養了六隻山羊，阿姨每天早上都用羊奶做起司。生活並不總是輕鬆。夏天雜草長得很快，冬天有時還會聽到山丘附近有狼。去年，一場暴風雨中閃電打中一棵樹，巨大的樹幹倒下橫在路上。他們把樹枝燒掉後，姨丈把灰撒在菜園裡，幫助植物生長。",
       "questions": [
         {
           "questionZh": "阿姨每天早上用羊奶做什麼？",
@@ -320,6 +320,18 @@
         "message": "執行長裁示：第③關：FIX 題目沒有時間詞，要點寫死過去式，會判錯現在完成式（§12.11）",
         "resolution": "改為 promptZh「他們在荒野中迷路了兩天才被找到。」、referenceEn [\"They were lost in the wilderness for two days before they were found.\",\"They got lost in the wilderness and were found two days later.\"]、rubricZh [\"wilderness 指荒野（例如 in the wilderness 等）\",\"時態可用過去式或現在完成式（例如 were lost、got lost、were found、have been found 等）\",\"「兩天才被找到」可寫，例如 for two days before…、were found two days later 等\"]（原 promptZh「他們在荒野中迷路了兩天才被找到。」、referenceEn [\"They were lost in the wilderness for two days before they were found.\",\"They got lost in the wilderness and were found two days later.\"]、rubricZh [\"wilderness 指荒野（例如 in the wilderness 等）\",\"過去的事用過去式（例如 were lost、got lost、were found 等）\",\"「兩天才被找到」可寫，例如 for two days before…、were found two days later 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

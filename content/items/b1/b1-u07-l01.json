@@ -125,10 +125,10 @@
       "audioZh": "我們今年銷售額上升，但成本更高，造成了小小的虧損。",
       "questionZh": "這家公司今年的結果如何？",
       "options": [
-        "Sales went down this year.",
-        "No change at all.",
-        "They lost a little money.",
-        "Higher sales and no loss."
+        "Sales went down this year",
+        "No change at all",
+        "They lost a little money",
+        "Higher sales and no loss"
       ],
       "answer": 2
     },
@@ -185,7 +185,7 @@
     {
       "id": "b1-u07-l01-q15",
       "type": "reading",
-      "passageEn": "Our small town is in a strategic place between two big cities. In the past, it suffered from a shortage of jobs, and many young people left. This loss affected the whole town. Ten years ago, the town began a development plan. It used its natural resources, such as hot springs and mountains, to attract visitors. The growth has been fast, and the benefits are clear: new shops, new jobs, and young families moving back.",
+      "passageEn": "Our small town is in a strategic location between two big cities. In the past, it suffered from a shortage of jobs, and many young people left. This loss affected the whole town. Ten years ago, the town began a development plan. It used its natural resources, such as hot springs and mountains, to attract visitors. The growth has been fast, and the benefits are clear: new shops, new jobs, and young families moving back.",
       "passageZh": "我們的小鎮位在兩個大城市之間的重要位置。過去，小鎮苦於工作機會不足，很多年輕人都離開了。人口流失影響了整個小鎮。十年前，小鎮開始了一項發展計畫，利用溫泉和山等自然資源來吸引遊客。小鎮成長得很快，好處也很明顯：新商店、新工作，還有年輕家庭搬回來。",
       "questions": [
         {
@@ -404,6 +404,18 @@
         "message": "執行長裁示：第③關：FIX 要點寫死「benefit（名詞）」，This deal benefits both sides. 會被判錯（benefit 動詞 B2：要點照收、參考答案不放）",
         "resolution": "改為 rubricZh [\"benefit 表示「好處」（例如 has benefits for…；寫 benefits both sides、is good for 也正確）\",\"「雙方」可寫，例如 both sides、both companies 等\"]（原 rubricZh [\"用 benefit（名詞）表示「好處」（例如 has benefits for…；寫 is good for 也正確）\",\"「雙方」可寫，例如 both sides、both companies 等\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

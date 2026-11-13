@@ -121,14 +121,14 @@
     {
       "id": "b1-u09-l10-q10",
       "type": "listenChoice",
-      "audioEn": "The manager gave praise to the whole team for their hard work.",
-      "audioZh": "經理稱讚整個團隊工作很努力。",
+      "audioEn": "The whole team got praise from the manager for their hard work.",
+      "audioZh": "整個團隊因為工作努力而得到經理的稱讚。",
       "questionZh": "經理為什麼稱讚團隊？",
       "options": [
-        "Because they worked very hard.",
-        "Because they were on time.",
-        "Because the manager worked hard.",
-        "Because they saved money."
+        "Because they worked very hard",
+        "Because they were on time",
+        "Because the manager worked hard",
+        "Because they saved money"
       ],
       "answer": 0
     },
@@ -147,7 +147,7 @@
     {
       "id": "b1-u09-l10-q13",
       "type": "mcq",
-      "stemEn": "What a ____! The concert was cancelled.",
+      "stemEn": "What a ____! The concert was canceled.",
       "stemZh": "真可惜！音樂會取消了。",
       "options": [
         "guilt",
@@ -439,6 +439,18 @@
         "message": "執行長裁示：舊翻譯雷同補正：與同單元 b1-u09-l07-q16 雷同（兩題都是「給了…很多…」（give a lot of）；本題又與同課聽選 gave praise to the whole team 同情境），換情境改寫；題 id、hintWords 不變",
         "resolution": "改為 promptZh「這部電影受到影評人的高度讚美。」、referenceEn [\"This movie received high praise from critics.\",\"The movie got high praise from the critics.\"]、rubricZh [\"用 praise（名詞）表示「讚美」（例如 received high praise；寫 was highly praised by critics 也正確）\",\"「影評人」可寫，例如 critics、movie critics 等\"]（原 promptZh「老闆稱讚了她的報告。」、referenceEn [\"Her report got praise from the boss.\",\"The boss gave her report a lot of praise.\"]、rubricZh [\"praise 當名詞「讚美」，可用 get praise、give praise 等說法\",\"寫 The boss praised her report. 意思也正確\",\"說的是過去的事，可用過去式（例如 got、gave）\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：audioEn、audioZh、options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

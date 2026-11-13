@@ -188,7 +188,7 @@
     {
       "id": "a1-u15-l01-q15",
       "type": "reading",
-      "passageEn": "The weather is different in every place today. In Taipei, it is rainy. In Tainan, it is sunny and hot. In the mountains, it is snowy and very cold. In Hualien, it is cloudy, but there is no rain.",
+      "passageEn": "The weather is different everywhere today. In Taipei, it is rainy. In Tainan, it is sunny and hot. In the mountains, it is snowy and very cold. In Hualien, it is cloudy, but there is no rain.",
       "passageZh": "今天每個地方的天氣都不一樣。台北下雨，台南晴朗炎熱，山上下雪、非常冷，花蓮是陰天，但沒有下雨。",
       "questions": [
         {
@@ -368,6 +368,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pet）原位換成翻譯題，沿用題 id a1-u15-l01-q17；目標字沿用 pet",
         "resolution": "改為 translate：promptZh「我的寵物是一隻小白兔。」、hintWords [\"pet\"]、referenceEn [\"My pet is a little white rabbit.\",\"My pet is a small white rabbit.\"]、rubricZh [\"pet 當名詞（例如 My pet is…）\",\"「小白兔」可寫，例如 a little white rabbit、a small white rabbit 等\"]（原 makeSentence：instructionZh「用 pet 造一個句子，說說你養（或想養）的寵物。」、referenceEn [\"I have a pet cat.\",\"I want a pet dog.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

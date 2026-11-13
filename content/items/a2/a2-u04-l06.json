@@ -118,7 +118,7 @@
     {
       "id": "a2-u04-l06-q09",
       "type": "listenType",
-      "sentenceEn": "Please prepare your tickets before you enter.",
+      "sentenceEn": "Please have your tickets ready before you enter.",
       "sentenceZh": "進場前請先準備好你的票。"
     },
     {
@@ -368,6 +368,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（prepare）原位換成翻譯題，沿用題 id a2-u04-l06-q17；目標字沿用 prepare",
         "resolution": "改為 translate：promptZh「我哥哥正在準備明天的考試。」、hintWords [\"prepare\"]、referenceEn [\"My brother is preparing for tomorrow's test.\",\"My older brother is preparing for the test tomorrow.\"]、rubricZh [\"「正在準備」用現在進行式（例如 is preparing）\",\"prepare for 表示「為…做準備」（例如 preparing for the test）\",\"「考試」可寫，例如 test、exam 等；「哥哥」可寫，例如 brother、older brother 等\"]（原 makeSentence：instructionZh「用 prepare 造一個句子，說說你為某件事做的準備。」、referenceEn [\"I prepared some food for the trip.\",\"I am preparing for my English test.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：sentenceEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

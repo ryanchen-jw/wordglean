@@ -38,8 +38,8 @@
       "id": "b2-u16-l05-q03",
       "type": "wordCard",
       "word": "vomit",
-      "exampleEn": "Riding in the back seat of a bus makes my little brother want to vomit.",
-      "exampleZh": "坐在公車最後一排會讓我弟弟想吐。",
+      "exampleEn": "Sitting at the back of a bus makes my little brother want to vomit.",
+      "exampleZh": "坐在公車後段會讓我弟弟想吐。",
       "glossZh": "嘔吐；吐出",
       "distractorsZh": [
         "吞下",
@@ -103,7 +103,7 @@
       "id": "b2-u16-l05-q08",
       "type": "wordCard",
       "word": "coma",
-      "exampleEn": "Brain scientists use special machines to study patients in a coma.",
+      "exampleEn": "Doctors use special machines to monitor patients in a coma.",
       "exampleZh": "腦科學家用特殊儀器研究昏迷中的病人。",
       "glossZh": "昏迷",
       "distractorsZh": [
@@ -147,7 +147,7 @@
     {
       "id": "b2-u16-l05-q13",
       "type": "mcq",
-      "stemEn": "Public health workers hand out nets to protect people from ____ in hot, wet regions.",
+      "stemEn": "Public health workers hand out mosquito nets to protect people from ____ in hot, wet regions.",
       "stemZh": "公共衛生人員在炎熱潮濕的地區發放蚊帳，保護民眾免於瘧疾。",
       "options": [
         "malaria",
@@ -166,7 +166,7 @@
     {
       "id": "b2-u16-l05-q14",
       "type": "mcq",
-      "stemEn": "People with ____ cannot see at all.",
+      "stemEn": "Total ____ means that a person cannot see at all.",
       "stemZh": "失明的人完全看不見。",
       "options": [
         "tuberculosis",
@@ -185,8 +185,8 @@
     {
       "id": "b2-u16-l05-q15",
       "type": "reading",
-      "passageEn": "Our history class studied how public health has changed over two hundred years. Long ago, tuberculosis and pneumonia spread quickly in crowded, dirty cities. In hot regions, malaria was a serious problem, until people learned that mosquitoes carried it. Over time, clean water, better housing and new medicines made a huge difference. Governments also began campaigns about alcoholism and how it affects families. Our teacher explained that blindness caused by a lack of vitamins is now much rarer. Scientists today use DNA research to understand illnesses better. We ended the class by discussing how simple ideas, like washing hands, can protect millions of people.",
-      "passageZh": "我們歷史課研究了兩百年來公共衛生的變化。很久以前，肺結核和肺炎在擁擠骯髒的城市裡傳播得很快。在炎熱地區，瘧疾是個嚴重的問題，直到人們知道是蚊子傳播的。隨著時間過去，乾淨的水、更好的住屋和新藥帶來了巨大的改變。政府也開始推動關於酗酒及其對家庭影響的宣導。老師說明，因缺乏維生素造成的失明現在已少見得多。如今科學家利用 DNA 研究來更了解疾病。下課前，我們討論了像洗手這樣簡單的做法，如何能保護數百萬人。",
+      "passageEn": "Our history class studied how public health has changed over the past two hundred years. Long ago, tuberculosis and pneumonia spread quickly in crowded, dirty cities. In hot regions, malaria was a serious problem, and for a long time people did not know that mosquitoes carried it. Over time, clean water, better housing and new medicines made a huge difference. Governments also began campaigns about alcoholism and how it affects families. Our teacher explained that blindness caused by a lack of vitamins is now much rarer. Scientists today use DNA research to understand illnesses better. We ended the class by discussing how simple ideas, like washing hands, can protect millions of people.",
+      "passageZh": "我們歷史課研究了兩百年來公共衛生的變化。很久以前，肺結核和肺炎在擁擠骯髒的城市裡傳播得很快。在炎熱地區，瘧疾是個嚴重的問題，而且很長一段時間人們都不知道是蚊子傳播的。隨著時間過去，乾淨的水、更好的住屋和新藥帶來了巨大的改變。政府也開始推動關於酗酒及其對家庭影響的宣導。老師說明，因缺乏維生素造成的失明現在已少見得多。如今科學家利用 DNA 研究來更了解疾病。下課前，我們討論了像洗手這樣簡單的做法，如何能保護數百萬人。",
       "questions": [
         {
           "questionZh": "人們後來知道瘧疾是怎麼傳播的？",
@@ -446,6 +446,36 @@
         "message": "執行長裁示：第③關：SUS 變體 1 前文未指明是哪個早晨，不該用 the",
         "resolution": "改為 promptZh「在寒冷的早晨，那頭牛的鼻孔冒出白氣。」、referenceEn [\"On a cold morning, white steam came out of the cow's nostrils.\",\"Steam rose from the cow's nostrils in the cold morning air.\"]、rubricZh [\"nostril 指「鼻孔」，這裡用複數（例如 the cow's nostrils 等）\",\"「冒出白氣」可寫，例如 steam came out of、steam rose from 等\",\"時態可用過去式或現在式\"]（原 promptZh「在寒冷的早晨，那頭牛的鼻孔冒出白氣。」、referenceEn [\"On the cold morning, white steam came out of the cow's nostrils.\",\"Steam rose from the cow's nostrils in the cold morning air.\"]、rubricZh [\"nostril 指「鼻孔」，這裡用複數（例如 the cow's nostrils 等）\",\"「冒出白氣」可寫，例如 steam came out of、steam rose from 等\",\"時態可用過去式或現在式\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn、exampleZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：exampleEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/12",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：stemEn",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

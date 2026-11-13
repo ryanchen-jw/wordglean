@@ -128,9 +128,9 @@
       "audioZh": "新聞說我們隊贏了比賽。",
       "questionZh": "新聞說什麼？",
       "options": [
-        "It will rain.",
-        "Our team won.",
-        "The game is tomorrow."
+        "It will rain",
+        "Our team won",
+        "The game is tomorrow"
       ],
       "answer": 1
     },
@@ -187,8 +187,8 @@
     {
       "id": "a1-u14-l03-q15",
       "type": "reading",
-      "passageEn": "Ben loves soccer. He is a player on his school team, and he has a picture of a famous soccer player on his wall. Today, Ben's team plays a big game, and they win! It is on the news that night.",
-      "passageZh": "Ben 很愛足球，他是校隊的球員，他的牆上貼著一位知名足球員的照片。今天 Ben 的隊伍參加一場大比賽，而且贏了！當晚的新聞還報導了這件事。",
+      "passageEn": "Ben loves soccer. He is a player on his school team, and he has a picture of a famous soccer player on his wall. Today, Ben's team plays a big game, and they win! It is on the news tonight.",
+      "passageZh": "Ben 很愛足球，他是校隊的球員，他的牆上貼著一位知名足球員的照片。今天 Ben 的隊伍參加一場大比賽，而且贏了！今晚的新聞還報導了這件事。",
       "questions": [
         {
           "questionZh": "Ben 的牆上貼著誰的照片？",
@@ -415,6 +415,18 @@
         "message": "執行長裁示：第③關：SUS 與同單元 a1-u14-l02-q16「今晚去看電影」同情境（§12.3），換情境",
         "resolution": "改為 promptZh「那部電影是關於一隻狗的故事。」（原「我和家人每個星期五晚上看電影。」）、referenceEn [\"That movie is about a dog.\",\"The movie is about a dog.\"]（原 [\"My family and I watch a movie every Friday night.\",\"Every Friday night, my family and I watch a movie.\"]）、rubricZh [\"「關於」可寫，例如 is about 等\",\"「那部電影」可寫，例如 that movie、the movie 等\"]（原 [\"「看電影」可寫，例如 watch a movie、see a movie 等\",\"習慣性的事用現在簡單式\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：passageEn、passageZh",
+        "resolvedAt": "2026-11-13T15:27:49Z"
       }
     ]
   }

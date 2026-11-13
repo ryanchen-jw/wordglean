@@ -125,10 +125,10 @@
       "audioZh": "這條步道又短又平坦，很適合帶小小孩的家庭。",
       "questionZh": "這條步道適合誰？",
       "options": [
-        "Only expert climbers.",
-        "Families with young kids.",
-        "People who like long trails.",
-        "Owners of big dogs."
+        "Only expert climbers",
+        "Families with young kids",
+        "People who like long trails",
+        "Owners of big dogs"
       ],
       "answer": 1
     },
@@ -186,10 +186,10 @@
       "id": "b1-u26-l02-q15",
       "type": "reading",
       "passageEn": "Last weekend, my family walked along a trail by the ocean. The sand was warm, and the sea air was fresh. My sister, who studies chemistry, told me that the Earth's atmosphere protects us from the sun. On the way, we saw a big bird with long white wings. Near the beach, there was an old steel bridge. My sister said the climate here is getting warmer every year. At the end of the walk, my little brother fell in the mud and soiled his new shorts.",
-      "passageZh": "上週末，我們全家沿著海邊的一條步道散步。沙子暖暖的，海風很清新。讀化學的姊姊告訴我，地球的大氣層保護我們不受太陽傷害。路上，我們看到一隻有著白色長翅膀的大鳥。海灘附近有一座舊的鋼橋。姊姊說這裡的氣候一年比一年暖。散步快結束時，我弟弟跌進泥巴裡，弄髒了他的新短褲。",
+      "passageZh": "上週末，我們全家沿著海邊的一條步道散步。沙子暖暖的，海風很清新。讀化學的姊妹告訴我，地球的大氣層保護我們不受太陽傷害。路上，我們看到一隻有著白色長翅膀的大鳥。海灘附近有一座舊的鋼橋。我的姊妹說這裡的氣候一年比一年暖。散步快結束時，我弟弟跌進泥巴裡，弄髒了他的新短褲。",
       "questions": [
         {
-          "questionZh": "姊姊說地球的大氣層有什麼作用？",
+          "questionZh": "作者的姊妹說地球的大氣層有什麼作用？",
           "options": [
             "讓風吹得更強",
             "讓海水變暖",
@@ -373,6 +373,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（climate）原位換成翻譯題，沿用題 id b1-u26-l02-q17；目標字沿用 climate",
         "resolution": "改為 translate：promptZh「氣候變遷讓夏天變得越來越熱。」、hintWords [\"climate\"]、referenceEn [\"Climate change is making summers hotter.\",\"Because of climate change, summers are getting hotter and hotter.\"]、rubricZh [\"用 climate change 表示「氣候變遷」\",\"「越來越熱」可寫，例如 hotter、hotter and hotter 等\"]（原 makeSentence：instructionZh「用 climate 造一個句子，說說你喜歡哪種氣候。」、referenceEn [\"I like a cool, dry climate.\",\"I don't like hot climates because I can't sleep well.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
+        "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
+        "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }

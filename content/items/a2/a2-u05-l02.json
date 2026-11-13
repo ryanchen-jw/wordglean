@@ -108,7 +108,7 @@
       "type": "wordCard",
       "word": "married",
       "exampleEn": "My sister has been married for five years.",
-      "exampleZh": "我姊姊已經結婚五年了。",
+      "exampleZh": "我的姊妹已經結婚五年了。",
       "glossZh": "已婚的",
       "distractorsZh": [
         "單身的",
@@ -386,6 +386,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（female）原位換成翻譯題，沿用題 id a2-u05-l02-q17；目標字沿用 female",
         "resolution": "改為 translate：promptZh「那位女歌手的聲音很好聽。」、hintWords [\"female\"]、referenceEn [\"That female singer has a beautiful voice.\",\"The female singer has a lovely voice.\"]、rubricZh [\"用 female 表示「女性的」，放在名詞前（例如 female singer）\",\"「聲音很好聽」可寫，例如 has a beautiful voice、her voice is very nice 等\"]（原 makeSentence：instructionZh「用 female 造一個句子，說說某個團隊或公司裡的女性成員。」、referenceEn [\"My company has many female engineers.\",\"Our team has three female players.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼）",
+        "resolvedAt": "2026-11-13T15:42:15Z"
       }
     ]
   }
