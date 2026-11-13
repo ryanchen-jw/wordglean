@@ -45,9 +45,9 @@ test('小課：第 4 張單字卡後出現配對 → 配錯 → 主輪做完進�
   expect(pairs.map(([en]) => en)).toEqual(['the', 'be', 'and', 'of'])
   await toMatching(page)
   await expect(page.getByText('配對', { exact: true })).toBeVisible()
-  // 點英文發音（走 speak.ts → 內建聲音替身）
+  // 點英文發音（走 speak.ts → 預產音檔，TASK-35）
   await tile(page, 'be').click()
-  await expect.poll(() => lastSpoken(page)).toMatchObject({ text: 'be' })
+  await expect.poll(() => lastSpoken(page)).toMatchObject({ engine: 'clip', text: 'be' })
   await answer(page, MATCH, true)
   await next(page)
   for (let n = MATCH + 1; n <= STEPS.length; n++) {

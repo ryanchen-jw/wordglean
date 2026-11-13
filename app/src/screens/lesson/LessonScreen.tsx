@@ -43,7 +43,7 @@ import { useLiveQuery } from '../../data/useLiveQuery'
 import { goBack, navigate } from '../../router'
 import { playSfx } from '../../sound/sfx'
 import { useSpeech } from '../../speech/services'
-import { ttsAvailable } from '../../speech/speak'
+import { prefetchAudio, ttsAvailable } from '../../speech/speak'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { ConfirmDialog } from '../../ui/ConfirmDialog'
@@ -133,6 +133,8 @@ export function LessonScreen({
 
   useEffect(() => {
     let alive = true
+    // 這課的預產音檔先抓（TASK-35）：單字卡一出現就要念
+    prefetchAudio([lessonId])
     ;(async () => {
       const doc = await loadItems(lessonId)
       if (!doc) throw new Error(`沒有這一課的題目：${lessonId}`)

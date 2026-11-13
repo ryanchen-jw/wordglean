@@ -1,6 +1,7 @@
-// 建置後守衛（TASK-24 W5）：下列兩份資料不得內嵌進首屏 JS（首屏 JS 預算：超過 200KB gzip 警告、300KB 失敗，見 e2e/perf-budget.spec.ts）：
+// 建置後守衛（TASK-24 W5）：下列三份資料不得內嵌進首屏 JS（首屏 JS 預算：超過 200KB gzip 警告、300KB 失敗，見 e2e/perf-budget.spec.ts）：
 //   ① 片語表（data/phrases/phrases.json）：必須是延遲載入的獨立資產
 //   ② 題目檔對照表（src/lesson/itemUrls.ts，約 1000 課的檔名→網址）：只可由 load.ts 以 import() 取得
+//   ③ 預產音檔包對照表（src/speech/audioUrls.ts，TASK-35）：只可由 speak.ts 以 import() 取得
 // 首屏 JS＝dist/index.html 的入口 module script、modulepreload，以及它們靜態 import 的 chunk（動態 import 不算）。
 // 判定：① 片語表中 3 個字以上的片語原文（程式碼與介面文案不會出現）出現任何一個就失敗；
 //       ② 首屏 JS 出現任何題目檔檔名（<級>-uNN-lNN.json／<級>-pNN-lNN.json）就失敗。
@@ -49,6 +50,17 @@ if (itemHits.length > 0) {
   process.exit(1)
 }
 
+// ③ 首屏 JS 出現任何音檔包網址（….lga）就失敗
+const audioHits = [...seen].flatMap(([file, code]) =>
+  [...new Set(code.match(/[\w-]+\.lga\b/g) ?? [])].map((m) => `${file}：${m}`),
+)
+if (audioHits.length > 0) {
+  console.error(
+    `✗ 音檔包對照表進了首屏 JS（應只由 speech/speak.ts 以 import() 取得 audioUrls）：命中 ${audioHits.length} 個，例：\n  ${audioHits.slice(0, 5).join('\n  ')}`,
+  )
+  process.exit(1)
+}
+
 if (hits.length > 0) {
   console.error(
     `✗ 片語表內嵌進首屏 JS（應以 ?url 延遲載入）：命中 ${hits.length} 個片語，例：\n  ${hits.slice(0, 5).join('\n  ')}`,
@@ -56,5 +68,5 @@ if (hits.length > 0) {
   process.exit(1)
 }
 console.log(
-  `✓ 首屏 JS（${[...seen.keys()].join('、')}）不含片語表（檢查 ${markers.length} 個片語）與題目檔對照表`,
+  `✓ 首屏 JS（${[...seen.keys()].join('、')}）不含片語表（檢查 ${markers.length} 個片語）、題目檔與音檔包對照表`,
 )

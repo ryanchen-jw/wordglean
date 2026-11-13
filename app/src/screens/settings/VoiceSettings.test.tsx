@@ -1,137 +1,31 @@
-// 設定的語音區（TASK-13 D5）：發音選擇、高音質未下載時選它＝先告知再下載、下載進度、不支援的手機
+// 設定的語音區（TASK-35 起）：發音一律先播預先產生的音檔、沒有才用手機內建聲音，不需設定；
+// 語音區只剩音效開關與語音辨識模型下載，沒有高音質發音的選項與下載列
 import 'fake-indexeddb/auto'
-import { act, fireEvent, render, screen, within } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
-import type { DownloadStatus } from '../../download/download'
+import { render, screen } from '@testing-library/react'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { db } from '../../data/appDb'
 import { SettingsScreen } from './SettingsScreen'
 
-const state = vi.hoisted(() => ({
-  status: { kind: 'notDownloaded' } as DownloadStatus,
-  choice: 'system' as 'system' | 'hq',
-  listeners: new Set<() => void>(),
-}))
-const startDownload = vi.fn()
-const emit = () => state.listeners.forEach((l) => l())
-
-vi.mock('../../speech/speak', () => ({
-  hqVoice: {
-    status: () => state.status,
-    choice: () => state.choice,
-    setChoice: (c: 'system' | 'hq') => {
-      state.choice = c
-      emit()
-    },
-    subscribe: (l: () => void) => {
-      state.listeners.add(l)
-      return () => state.listeners.delete(l)
-    },
-    startDownload: () => startDownload(),
-  },
-}))
-
 beforeEach(async () => {
-  state.status = { kind: 'notDownloaded' }
-  state.choice = 'system'
-  startDownload.mockClear()
   localStorage.clear()
   await db.delete()
   await db.open()
 })
 
-const voiceRow = () => screen.getByRole('button', { name: /^發音/ })
-
 describe('設定・語音（s11）', () => {
-  it('預設：發音＝手機內建聲音（預設）；高音質列有下載鈕', async () => {
+  it('語音區只有音效與語音辨識模型', async () => {
     render(<SettingsScreen />)
-    expect(await screen.findByRole('button', { name: /發音\s*手機內建聲音（預設）/ })).toBeVisible()
-    expect(screen.getByRole('button', { name: '下載高音質發音（選配）' })).toBeInTheDocument()
+    const group = (await screen.findByText('語音')).closest('section') ?? document.body
+    expect(group).toHaveTextContent('音效')
+    expect(group).toHaveTextContent('語音辨識模型')
+    expect(group).toHaveTextContent('跟讀用・約 50–80MB')
   })
 
-  it('按下載：先告知約 310MB；「之後再說」不下載、「下載」才開始', async () => {
+  it('沒有發音選單、高音質發音與其下載', async () => {
     render(<SettingsScreen />)
-    fireEvent.click(await screen.findByRole('button', { name: '下載高音質發音（選配）' }))
-    const dialog = screen.getByRole('alertdialog')
-    expect(dialog).toHaveTextContent('下載高音質發音？')
-    expect(dialog).toHaveTextContent('約 310MB，建議連上 Wi-Fi 再下載。下載後不用網路也能用。')
-    fireEvent.click(within(dialog).getByRole('button', { name: '之後再說' }))
-    expect(startDownload).not.toHaveBeenCalled()
-    fireEvent.click(screen.getByRole('button', { name: '下載高音質發音（選配）' }))
-    fireEvent.click(within(screen.getByRole('alertdialog')).getByRole('button', { name: '下載' }))
-    expect(startDownload).toHaveBeenCalledOnce()
-    expect(screen.queryByRole('alertdialog')).toBeNull()
-  })
-
-  it('下載中顯示進度；失敗顯示「下載中斷・重試」，重試直接下載', async () => {
-    render(<SettingsScreen />)
-    await screen.findByRole('button', { name: '下載高音質發音（選配）' })
-    act(() => {
-      state.status = { kind: 'downloading', progress: 0.42 }
-      emit()
-    })
-    expect(screen.getByRole('progressbar', { name: '高音質發音（選配）' })).toHaveAttribute(
-      'aria-valuenow',
-      '42',
-    )
-    act(() => {
-      state.status = { kind: 'failed' }
-      emit()
-    })
-    fireEvent.click(screen.getByRole('button', { name: '下載中斷・重試' }))
-    expect(startDownload).toHaveBeenCalledOnce()
-  })
-
-  it('發音選單：高音質未下載時選它＝導向下載（先告知），不改選擇', async () => {
-    render(<SettingsScreen />)
-    fireEvent.click(await screen.findByRole('button', { name: /^發音/ }))
-    fireEvent.click(screen.getByRole('option', { name: '高音質發音（選配）' }))
-    expect(screen.getByRole('alertdialog')).toHaveTextContent('下載高音質發音？')
-    expect(state.choice).toBe('system')
-  })
-
-  it('已下載：可在發音選單切換，列上顯示目前的選擇', async () => {
-    state.status = { kind: 'downloaded' }
-    state.choice = 'hq'
-    render(<SettingsScreen />)
-    expect(await screen.findByRole('button', { name: /發音\s*高音質發音/ })).toBeVisible()
-    expect(screen.getByText('已下載')).toBeInTheDocument()
-    fireEvent.click(voiceRow())
-    fireEvent.click(screen.getByRole('option', { name: '手機內建聲音（預設）' }))
-    expect(state.choice).toBe('system')
-    expect(voiceRow()).toHaveTextContent('手機內建聲音（預設）')
-  })
-
-  // TASK-34：失敗後選高音質不再跳下載確認框（iPhone 無限循環）；失敗原因顯示在高音質列
-  it.each([
-    ['worker', '載入失敗：瀏覽器無法啟動高音質發音'],
-    ['error', '下載或載入時發生錯誤'],
-    ['timeout', '載入失敗：等太久沒有回應'],
-    ['crashed', '載入失敗：載入途中頁面被手機關掉，可能是記憶體不夠'],
-  ] as const)(
-    '失敗（%s）：列上顯示原因與重試；發音選單沒有高音質、不跳下載確認框',
-    async (reason, text) => {
-      state.status = { kind: 'failed', reason }
-      render(<SettingsScreen />)
-      expect(await screen.findByTestId('tts-hq-failed-reason')).toHaveTextContent(text)
-      expect(screen.queryByText('約 310MB・需支援 WebGPU 的手機')).toBeNull()
-      expect(screen.getByRole('button', { name: '下載中斷・重試' })).toBeInTheDocument()
-      fireEvent.click(voiceRow())
-      expect(screen.getAllByRole('option').map((o) => o.textContent)).toEqual([
-        '手機內建聲音（預設）',
-      ])
-      expect(screen.queryByRole('alertdialog')).toBeNull()
-      expect(startDownload).not.toHaveBeenCalled()
-    },
-  )
-
-  it('不支援的手機：高音質列顯示「這支手機不支援高音質發音」、選單沒有高音質', async () => {
-    state.status = { kind: 'unsupported' }
-    render(<SettingsScreen />)
-    expect(await screen.findByText('這支手機不支援高音質發音')).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: '下載高音質發音（選配）' })).toBeNull()
-    fireEvent.click(voiceRow())
-    expect(screen.getAllByRole('option').map((o) => o.textContent)).toEqual([
-      '手機內建聲音（預設）',
-    ])
+    await screen.findByText('語音辨識模型')
+    expect(screen.queryByRole('button', { name: /^發音/ })).toBeNull()
+    expect(screen.queryByText(/高音質/)).toBeNull()
+    expect(screen.queryByText(/310MB/)).toBeNull()
   })
 })

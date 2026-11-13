@@ -1,5 +1,4 @@
-// 下載狀態（components.md §4「模型下載進度」）：未下載＝下載鈕；下載中＝進度條＋百分比；失敗＝錯誤色＋重試；
-// 不支援（高音質發音需要 WebGPU，TASK-13）＝灰字說明、不能下載
+// 下載狀態（components.md §4「模型下載進度」）：未下載＝下載鈕；下載中＝進度條＋百分比；失敗＝錯誤色＋重試
 import { Download } from 'lucide-react'
 import { t } from '../i18n/t'
 import type { DownloadStatus } from './download'
@@ -11,14 +10,6 @@ export function DownloadProgress({ status, label, onStart, onRetry }: Props) {
     return (
       <span className="flex-none text-secondary whitespace-nowrap text-muted">
         {t('download.status.done')}
-      </span>
-    )
-
-  // 說明比「已下載」長：允許折行、最多佔一半寬，窄螢幕特大字級時不把左側名稱擠成直排
-  if (status.kind === 'unsupported')
-    return (
-      <span className="max-w-1/2 min-w-[4em] text-right text-secondary text-muted">
-        {t('settings.voice.hqUnsupported')}
       </span>
     )
 

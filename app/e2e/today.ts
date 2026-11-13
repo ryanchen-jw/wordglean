@@ -8,7 +8,10 @@ export const NEXT = 'a1-u01-l02'
 
 /** 依 fixture 正解走完一課（穿插順序見 lesson.ts stepsOf；能播音才有聽類題）；停在完成頁 */
 export async function playLesson(page: Page, lessonId: string) {
-  const tts = await page.evaluate(() => 'speechSynthesis' in window)
+  // 能播音＝有內建聲音或能播 MP3 預產音檔（同 App 的 ttsAvailable，TASK-35）
+  const tts = await page.evaluate(
+    () => 'speechSynthesis' in window || new Audio().canPlayType('audio/mpeg') !== '',
+  )
   const steps = stepsOf(lessonId, { tts })
   for (const [i, s] of steps.entries()) {
     await expect(page.getByText(`${i + 1}／${steps.length}`, { exact: true })).toBeVisible()

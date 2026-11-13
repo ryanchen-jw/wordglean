@@ -1,5 +1,5 @@
-// 聽類兩題型畫面（設計 s03）：播放／慢速、檢查停用、判題回饋、聽不出來、第一次的高音質提示
-import { act, cleanup, fireEvent, render, screen } from '@testing-library/react'
+// 聽類兩題型畫面（設計 s03）：播放／慢速、檢查停用、判題回饋、聽不出來
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { ListenChoiceItem, ListenTypeItem } from '../../lesson/items'
 import type { Step } from '../../lesson/queue'
@@ -8,23 +8,9 @@ import { ListenTypeView } from './ListenTypeView'
 
 const speak = vi.fn()
 const cancel = vi.fn()
-let hqFailed = false
-let engine: 'system' | 'hq' = 'system'
-let hqStatus: { kind: string } = { kind: 'notDownloaded' }
-const noticeListeners = new Set<() => void>()
-const notice = () => noticeListeners.forEach((l) => l())
 vi.mock('../../speech/speak', () => ({
   speak: (...args: unknown[]) => speak(...args),
-  hqVoice: { status: () => hqStatus },
-  tts: {
-    cancel: () => cancel(),
-    engine: () => engine,
-    hqFailed: () => hqFailed,
-    onNotice: (l: () => void) => {
-      noticeListeners.add(l)
-      return () => noticeListeners.delete(l)
-    },
-  },
+  tts: { cancel: () => cancel() },
 }))
 
 const typeItem: ListenTypeItem = {
@@ -53,12 +39,7 @@ const choiceStep: Step = {
 }
 
 beforeEach(() => {
-  speak.mockClear()
-  hqFailed = false
-  engine = 'system'
-  hqStatus = { kind: 'notDownloaded' }
   speak.mockReset()
-  localStorage.clear()
 })
 
 function renderType() {
@@ -72,7 +53,7 @@ function renderType() {
 const field = () => screen.getByRole('textbox', { name: '把聽到的英文打在這裡' })
 
 describe('聽音打字', () => {
-  it('播放念整句；慢速播放用 0.8；顯示「手機內建聲音」', () => {
+  it('播放念整句；慢速播放用 0.8', () => {
     renderType()
     expect(screen.getByText('聽音打字')).toBeInTheDocument()
     expect(screen.getByText('聽句子，把聽到的英文打出來')).toBeInTheDocument()
@@ -80,7 +61,6 @@ describe('聽音打字', () => {
     expect(speak).toHaveBeenLastCalledWith('They moved the meeting to Friday.')
     fireEvent.click(screen.getByRole('button', { name: '慢速播放' }))
     expect(speak).toHaveBeenLastCalledWith('They moved the meeting to Friday.', { rate: 0.8 })
-    expect(screen.getByText('手機內建聲音')).toBeInTheDocument()
   })
 
   it('還沒輸入（或只有空白）時「檢查」停用', () => {
@@ -129,70 +109,6 @@ describe('聽音打字', () => {
     expect(screen.getByRole('status')).toHaveTextContent('They moved the meeting to Friday.')
     expect(screen.getByRole('button', { name: '繼續' })).toBeInTheDocument()
   })
-
-  it('高音質提示條只在第一次出現', () => {
-    renderType()
-    expect(screen.getByTestId('hq-voice-hint')).toHaveTextContent(
-      '想要更自然的發音，可以到設定開啟「高音質發音」（選配）',
-    )
-    cleanup()
-    renderType()
-    expect(screen.queryByTestId('hq-voice-hint')).toBeNull()
-  })
-})
-
-describe('無障礙與裝置能力（驗收 P2）', () => {
-  it('沒有 WebGPU 的手機不顯示「到設定開啟高音質」的首次提示', () => {
-    hqStatus = { kind: 'unsupported' }
-    renderType()
-    expect(screen.queryByTestId('hq-voice-hint')).toBeNull()
-  })
-
-  it('失敗提示的 aria-live 容器一開始就在，失敗後文字出現在同一個容器（報讀器念得到）', () => {
-    renderType()
-    const live = document.querySelector('[aria-live="polite"]')!
-    expect(live).toBeInTheDocument()
-    expect(live).toHaveTextContent('')
-    act(() => notice())
-    expect(live).toHaveTextContent('高音質發音無法使用，已改用手機內建聲音')
-  })
-
-  it('用高音質時按播放：念完前播放鈕標示忙碌（aria-busy）', async () => {
-    engine = 'hq'
-    let done = () => {}
-    speak.mockReturnValue(new Promise<void>((r) => (done = r)))
-    renderType()
-    const play = screen.getByRole('button', { name: '播放' })
-    expect(play).not.toHaveAttribute('aria-busy', 'true')
-    fireEvent.click(play)
-    expect(play).toHaveAttribute('aria-busy', 'true')
-    await act(async () => done())
-    expect(play).not.toHaveAttribute('aria-busy', 'true')
-  })
-
-  it('用內建聲音時不標示忙碌（立即開始念）', () => {
-    speak.mockReturnValue(new Promise<void>(() => {}))
-    renderType()
-    const play = screen.getByRole('button', { name: '播放' })
-    fireEvent.click(play)
-    expect(play).not.toHaveAttribute('aria-busy', 'true')
-  })
-})
-
-describe('連按時的忙碌標示（TASK-31）', () => {
-  it('舊請求先結束不解除忙碌，最後一次請求結束才解除', async () => {
-    engine = 'hq'
-    const finish: (() => void)[] = []
-    speak.mockImplementation(() => new Promise<void>((resolve) => finish.push(resolve)))
-    renderType()
-    const play = screen.getByRole('button', { name: '播放' })
-    fireEvent.click(play)
-    fireEvent.click(play)
-    await act(async () => finish[0]())
-    expect(play).toHaveAttribute('aria-busy', 'true')
-    await act(async () => finish[1]())
-    expect(play).not.toHaveAttribute('aria-busy', 'true')
-  })
 })
 
 describe('換下一題時停止發音（TASK-32）', () => {
@@ -202,32 +118,6 @@ describe('換下一題時停止發音（TASK-32）', () => {
     fireEvent.click(screen.getByRole('button', { name: '播放' }))
     cleanup()
     expect(cancel).toHaveBeenCalledTimes(1)
-  })
-})
-
-describe('高音質發音失敗的提示（AC#2）', () => {
-  it('收到失敗通知時出現「已改用手機內建聲音」', () => {
-    renderType()
-    expect(screen.queryByTestId('hq-failed')).toBeNull()
-    act(() => notice())
-    expect(screen.getByTestId('hq-failed')).toHaveTextContent(
-      '高音質發音無法使用，已改用手機內建聲音',
-    )
-  })
-
-  it('用高音質時不顯示「手機內建聲音」；失敗退回後改顯示', () => {
-    engine = 'hq'
-    renderType()
-    expect(screen.queryByText('手機內建聲音')).toBeNull()
-    engine = 'system'
-    act(() => notice())
-    expect(screen.getByText('手機內建聲音')).toBeInTheDocument()
-  })
-
-  it('這次開啟內已失敗過：下一題一出現就顯示', () => {
-    hqFailed = true
-    renderType()
-    expect(screen.getByTestId('hq-failed')).toBeInTheDocument()
   })
 })
 

@@ -1,81 +1,76 @@
 // 發音（App 唯一的發音入口：字典彈層、單字卡、聽題共用）：speak(text) 介面沿用 TASK-16，另可帶語速
 // 設計規定發音鈕永遠可用（components.md §7），不支援的瀏覽器靜默略過
-import { createHqVoice } from './hqVoice'
-import { createTts, type Rate } from './tts'
+// TASK-35：優先播預先產生的音檔（clips.ts），沒有就用手機內建聲音
+import { LEVELS } from '../curriculum/curriculum'
+import { loadLevel } from '../curriculum/load'
+import { createClips } from './clips'
 import { systemVoice } from './systemVoice'
+import { createTts, type Rate } from './tts'
 
-// 合成過的句子存這裡（同一句不重算）；只當快取鍵用的網址，不會真的被請求
-const AUDIO_CACHE = 'lg-tts-audio'
-const audioUrl = (key: string) => `${location.origin}/__tts-audio/${encodeURIComponent(key)}`
+let urlIndex: Promise<Map<string, () => Promise<string>>> | null = null
 
-function playWav(wav: ArrayBuffer) {
-  const url = URL.createObjectURL(new Blob([wav], { type: 'audio/wav' }))
-  const audio = new Audio(url)
-  let finish = () => {}
-  const done = new Promise<void>((resolve, reject) => {
-    finish = resolve
-    audio.onended = () => resolve()
-    audio.onerror = () => reject(new Error('高音質音檔無法播放'))
-    audio.play().catch(reject)
-  }).finally(() => URL.revokeObjectURL(url))
-  return {
-    done,
-    stop: () => {
-      audio.pause()
-      finish()
-    },
-  }
+/** 包名（課號或 dNNN）→ 取網址的函式；對照表第一次用到才 import() */
+function packUrls() {
+  urlIndex ??= import('./audioUrls').then(({ lessonAudioUrls, dictAudioUrls }) => {
+    const map = new Map<string, () => Promise<string>>()
+    for (const [path, get] of Object.entries({ ...lessonAudioUrls, ...dictAudioUrls }))
+      map.set(path.slice(path.lastIndexOf('/') + 1, -'.lga'.length), get)
+    return map
+  })
+  return urlIndex
 }
 
-export const hqVoice = createHqVoice({
-  createWorker: () =>
-    new Worker(new URL('./kokoro.worker.ts', import.meta.url), { type: 'module' }),
-  hasWebGpu: async () => {
-    const gpu = (navigator as Navigator & { gpu?: { requestAdapter(): Promise<unknown> } }).gpu
-    return !!(await gpu?.requestAdapter())
+let wordIndex: Promise<Map<string, string>> | null = null
+
+/** 課綱的字與片語（小寫）→ 引入它的課號；課綱檔已預快取，第一次查字時建表 */
+function lessonOfWord(word: string) {
+  wordIndex ??= Promise.all(LEVELS.map(loadLevel)).then((docs) => {
+    const map = new Map<string, string>()
+    for (const doc of docs)
+      for (const unit of doc.units)
+        for (const lesson of unit.lessons)
+          for (const w of lesson.words) map.set(w.toLowerCase(), lesson.id)
+    return map
+  })
+  wordIndex.catch(() => (wordIndex = null))
+  return wordIndex.then((m) => m.get(word) ?? null)
+}
+
+const canPlayMp3 = (() => {
+  try {
+    return typeof Audio !== 'undefined' && new Audio().canPlayType('audio/mpeg') !== ''
+  } catch {
+    return false
+  }
+})()
+
+export const clips = createClips({
+  packUrl: async (id) => {
+    const get = (await packUrls()).get(id)
+    return get ? get() : null
   },
-  modelCached: async () => {
-    const keys = await (await caches.open('transformers-cache')).keys()
-    return keys.some((r) => /Kokoro-82M-v1\.0-ONNX\/resolve\/main\/onnx\/model\.onnx$/.test(r.url))
+  fetchPack: async (url) => {
+    const res = await fetch(url)
+    if (!res.ok) throw new Error(`音檔載入失敗：${res.status}`)
+    return res.arrayBuffer()
   },
-  storage: localStorage,
-  session: sessionStorage,
-  play: playWav,
-  audioCache: {
-    async get(key) {
-      try {
-        const hit = await (await caches.open(AUDIO_CACHE)).match(audioUrl(key))
-        return hit ? await hit.arrayBuffer() : undefined
-      } catch {
-        return undefined
-      }
-    },
-    async set(key, wav) {
-      try {
-        const body = wav.slice(0)
-        const res = new Response(body, { headers: { 'content-type': 'audio/wav' } })
-        await (await caches.open(AUDIO_CACHE)).put(audioUrl(key), res)
-      } catch {
-        // 快取寫不進去（空間不足等）：下次重算即可
-      }
-    },
-  },
+  lessonOfWord,
+  createAudio: () => new Audio(),
 })
 
-void hqVoice.init()
+export const tts = createTts({ system: systemVoice(), clips: canPlayMp3 ? clips : null })
 
-export const tts = createTts({
-  system: systemVoice(),
-  loadHq: () => hqVoice.load(),
-  wantHq: () => hqVoice.wantHq(),
-})
-
-/** 念一句；回傳念完（或失敗退回後念完）的 promise，不需要等的呼叫端可忽略 */
+/** 念一句；回傳念完（或退回內建聲音後念完）的 promise，不需要等的呼叫端可忽略 */
 export function speak(text: string, opts?: { rate?: Rate }): Promise<unknown> {
   return tts.speak(text, opts)
 }
 
-/** 能不能播音（TASK-18 能力偵測的 TTS）：有手機內建聲音，或選用了已下載的高音質發音 */
+/** 先抓這些課的音檔（進入小課、開始複習時） */
+export function prefetchAudio(lessonIds: readonly string[]) {
+  if (canPlayMp3) clips.prefetch(lessonIds)
+}
+
+/** 能不能播音（TASK-18 能力偵測的 TTS）：能播預產音檔，或有手機內建聲音 */
 export function ttsAvailable(): boolean {
-  return systemVoice() !== null || hqVoice.wantHq()
+  return canPlayMp3 || systemVoice() !== null
 }

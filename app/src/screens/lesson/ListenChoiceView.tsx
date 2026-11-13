@@ -7,7 +7,7 @@ import { Button } from '../../ui/Button'
 import { ChoiceOption } from '../../ui/ChoiceOption'
 import { FeedbackBar } from '../../ui/FeedbackBar'
 import { LessonFoot, LessonMain } from './frame'
-import { HqFailedNotice, HqVoiceHint, ListenCard } from './ListenParts'
+import { ListenCard } from './ListenParts'
 import { choiceState, LETTERS, type QuestionProps } from './types'
 import { ZhText } from './ZhText'
 
@@ -57,8 +57,6 @@ export function ListenChoiceView({
             </ChoiceOption>
           ))}
         </div>
-        <HqFailedNotice />
-        {!answered && <HqVoiceHint />}
       </LessonMain>
       <LessonFoot>
         {answered ? (

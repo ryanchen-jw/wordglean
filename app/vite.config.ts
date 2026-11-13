@@ -18,9 +18,8 @@ export default defineConfig({
       ],
       workbox: {
         // 課綱、字典切片（597 片）、單字總表等 json 資產一併預快取：離線可開課程地圖、可查字（TASK-16 D1）
+        // 預產發音音檔包（.lga，TASK-35）不在此列：首次開啟不下載全部，用到才抓（見下方 runtimeCaching）
         globPatterns: ['**/*.{js,css,html,json,svg,png}'],
-        // 高音質發音（Kokoro 選配，TASK-13）的 Worker 約 2MB，只有選用的人才需要：不預快取、用到才快取
-        globIgnores: ['**/kokoro.worker-*.js'],
         // 站內路由（/words、/settings…）離線時都回 index.html
         navigateFallback: 'index.html',
         // 字體依 unicode-range 分片、總量大，不預快取；用到哪片快取哪片
@@ -30,13 +29,17 @@ export default defineConfig({
             handler: 'CacheFirst',
             options: { cacheName: 'lg-fonts', expiration: { maxEntries: 300 } },
           },
-          // 高音質發音的 Worker（TASK-13）：不預快取，第一次用到才抓、之後離線可用
+          // 預產發音音檔包（TASK-35；一課一包約 0.1MB、字典專用包 512 包）：進課或點字時才抓，之後離線可播；
+          // 檔名帶內容雜湊，內容變了網址就變，舊包由 maxEntries 淘汰
           {
-            urlPattern: ({ url }) => /\/assets\/kokoro\.worker-[^/]+\.js$/.test(url.pathname),
+            urlPattern: ({ url }) => url.pathname.endsWith('.lga'),
             handler: 'CacheFirst',
-            options: { cacheName: 'lg-tts-hq-code', expiration: { maxEntries: 4 } },
+            options: {
+              cacheName: 'lg-audio',
+              expiration: { maxEntries: 2000, purgeOnQuotaError: true },
+            },
           },
-          // 推論引擎 ort wasm（約 21MB，放本站、不連 jsDelivr；TASK-13 高音質發音，TASK-14 語音辨識共用）：
+          // 推論引擎 ort wasm（約 21MB，放本站、不連 jsDelivr；TASK-14 語音辨識）：
           // 不預快取，第一次用到才抓、之後離線可用
           {
             urlPattern: ({ url }) => /\/ort-wasm-[^/]*\.(wasm|mjs)$/.test(url.pathname),
@@ -76,6 +79,7 @@ export default defineConfig({
         '../content/curriculum',
         '../content/items',
         '../content/placement',
+        '../content/audio',
         '../data/dict',
         '../data/lexicon',
         '../data/phrases',
@@ -84,11 +88,14 @@ export default defineConfig({
   },
   // data/ 依來源授權分檔（data/LICENSES.md），小檔也不得內嵌進程式碼 bundle，一律輸出成獨立資產
   build: {
+    // 預產音檔包（.lga）也一律是獨立資產
     assetsInlineLimit: (file) =>
-      /\/data\/(dict|lexicon|phrases)\/[^/]+\.json$/.test(file) ? false : undefined,
+      /\/data\/(dict|lexicon|phrases)\/[^/]+\.json$/.test(file) || file.endsWith('.lga')
+        ? false
+        : undefined,
   },
   preview: { port: 5288, strictPort: true },
-  // 高音質發音 Worker（TASK-13，TASK-14 語音辨識 Worker 同）內有動態 import，需用 ES module worker
+  // 語音辨識 Worker（TASK-14）內有動態 import，需用 ES module worker
   worker: { format: 'es' },
   test: {
     environment: 'jsdom',

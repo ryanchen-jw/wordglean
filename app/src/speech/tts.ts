@@ -1,48 +1,39 @@
-// 發音服務（TASK-13）：預設手機內建聲音；使用者選了高音質（Kokoro 選配，Stage 4 接上）才載入，
-// 載入或合成失敗就這一句改用內建聲音、提示一次，本次開啟不再重試（規格 §2、voice-poc §5）
+// 發音服務（TASK-13，TASK-35 改版）：優先播預先產生的音檔（clips.ts）；這段文字沒有音檔、音檔載入或播放失敗時，
+// 這一句改用手機內建聲音。逐句判斷，不會因一次失敗就整段時間不用音檔
 export type Rate = 1 | 0.8
-export type EngineId = 'system' | 'hq'
+export type EngineId = 'clip' | 'system'
 
 export interface VoiceEngine {
-  /** 念完（或失敗被吞掉）才 resolve；高音質引擎失敗時 reject 以觸發退回 */
+  /** 念完（或失敗被吞掉）才 resolve */
   speak(text: string, rate: Rate): Promise<void>
   cancel(): void
 }
 
-export type TtsNotice = { kind: 'hqFailed' }
+/** 預先產生的音檔（clips.ts 的 ClipEngine 實作） */
+export interface ClipSource<C = unknown> {
+  /** 找這段文字的音檔；沒有＝null */
+  find(text: string): Promise<C | null>
+  /** 播完才 resolve；被 stop() 停下也 resolve；無法播放時 reject */
+  play(clip: C, rate: Rate): Promise<void>
+  stop(): void
+}
 
 export interface TtsDeps {
   /** null＝瀏覽器沒有內建聲音 */
   system: VoiceEngine | null
-  loadHq?: () => Promise<VoiceEngine>
-  /** 使用者在設定選了高音質發音（且已下載） */
-  wantHq: () => boolean
+  /** null＝這個瀏覽器不能播預產音檔 */
+  clips: ClipSource | null
 }
 
 export interface Tts {
-  /** 以最後一次呼叫為準：等待中被後來的呼叫取代的不出聲，正常結束並回 'superseded' */
+  /** 以最後一次呼叫為準（TASK-31）：等待中被後來的呼叫取代的不出聲，正常結束並回 'superseded' */
   speak(text: string, opts?: { rate?: Rate }): Promise<EngineId | 'none' | 'superseded'>
-  /** 取消（離開畫面用）：等待中的請求都不出聲、回 'superseded'，正在念的立即停止；不算高音質失敗 */
+  /** 取消（離開畫面用，TASK-32）：等待中的請求都不出聲、回 'superseded'，正在念的立即停止 */
   cancel(): void
-  /** 目前會用哪個引擎（題目卡顯示「手機內建聲音」用） */
-  engine(): EngineId
-  /** 高音質這次開啟內已失敗、改用內建聲音 */
-  hqFailed(): boolean
-  onNotice(listener: (n: TtsNotice) => void): () => void
 }
 
-export function createTts({ system, loadHq, wantHq }: TtsDeps): Tts {
-  let hq: Promise<VoiceEngine> | null = null
-  let hqBroken = false
+export function createTts({ system, clips }: TtsDeps): Tts {
   let latest = 0
-  const listeners = new Set<(n: TtsNotice) => void>()
-
-  const hqOn = () => !hqBroken && !!loadHq && wantHq()
-
-  const fallBack = () => {
-    hqBroken = true
-    listeners.forEach((l) => l({ kind: 'hqFailed' }))
-  }
 
   async function viaSystem(text: string, rate: Rate) {
     if (!system) return 'none' as const
@@ -54,18 +45,18 @@ export function createTts({ system, loadHq, wantHq }: TtsDeps): Tts {
     async speak(text, { rate = 1 } = {}) {
       const request = ++latest
       system?.cancel()
-      if (hqOn()) {
+      clips?.stop()
+      if (clips) {
         try {
-          hq ??= loadHq!()
-          const engine = await hq
+          const clip = await clips.find(text)
           if (request !== latest) return 'superseded'
-          engine.cancel()
-          await engine.speak(text, rate)
-          return request === latest ? 'hq' : 'superseded'
+          if (clip !== null) {
+            await clips.play(clip, rate)
+            return request === latest ? 'clip' : 'superseded'
+          }
         } catch {
-          // 被取代的請求失敗不算數：高音質真的壞了，最後一句也會失敗，由它退回並提示
+          // 找不到或播不出來：這一句改用內建聲音；已被取代的就不出聲
           if (request !== latest) return 'superseded'
-          if (!hqBroken) fallBack()
         }
       }
       return viaSystem(text, rate)
@@ -73,16 +64,7 @@ export function createTts({ system, loadHq, wantHq }: TtsDeps): Tts {
     cancel() {
       latest++
       system?.cancel()
-      void hq?.then(
-        (engine) => engine.cancel(),
-        () => {},
-      )
-    },
-    engine: () => (hqOn() ? 'hq' : 'system'),
-    hqFailed: () => hqBroken,
-    onNotice(listener) {
-      listeners.add(listener)
-      return () => listeners.delete(listener)
+      clips?.stop()
     },
   }
 }

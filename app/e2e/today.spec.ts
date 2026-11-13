@@ -65,6 +65,8 @@ test('AC#4：手機不能播音、不能辨識語音、沒有金鑰時仍能完�
     // 模擬沒有 speechSynthesis 的瀏覽器（e2e 建置 STT 固定不可用；沒有連結 OpenRouter→寫作題改自評）
     Reflect.deleteProperty(window, 'speechSynthesis')
     Reflect.deleteProperty(Object.getPrototypeOf(window), 'speechSynthesis')
+    // 也不能播預產音檔（TASK-35）
+    HTMLMediaElement.prototype.canPlayType = () => ''
   })
   await page.goto(`/lesson/${LESSON}`)
   expect(await page.evaluate(() => 'speechSynthesis' in window)).toBe(false)
@@ -79,6 +81,8 @@ test('AC#4：手機不能播音、不能辨識語音、沒有金鑰時仍能完�
 })
 
 test('完成頁「再複習一次剛學的字」：練習本課 8 個字，不影響今天的複習數', async ({ page }) => {
+  // WebKit 自 TASK-35 起也能播音（預產音檔），一課多了聽類題，Windows build 跑完一課約 30 秒
+  test.setTimeout(60_000)
   await page.clock.setFixedTime(DAY1)
   await page.goto(`/lesson/${LESSON}`)
   await playLesson(page, LESSON)

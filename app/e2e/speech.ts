@@ -1,8 +1,10 @@
-// 手機內建聲音替身（TASK-13）：init script 把 speechSynthesis 換成記錄呼叫的版本，斷言念的句子、語速與語言，
-// 不依賴模擬器真的發聲
+// 發音替身（TASK-13，TASK-35 加預產音檔）：init script 把 speechSynthesis 與 audio 元素的播放換成記錄呼叫的版本，
+// 斷言念的文字、語速與用哪一種（clip＝預產音檔、system＝手機內建聲音），不依賴模擬器真的發聲
 import type { Page } from '@playwright/test'
 
-export type Spoken = { text: string; rate: number; lang: string }
+export type Spoken =
+  | { engine: 'system'; text: string; rate: number; lang: string }
+  | { engine: 'clip'; text: string; rate: number }
 
 export function fakeSystemVoice(page: Page) {
   return page.addInitScript(() => {
@@ -23,11 +25,20 @@ export function fakeSystemVoice(page: Page) {
       value: {
         cancel: () => {},
         speak: (u: FakeUtterance) => {
-          spoken.push({ text: u.text, rate: u.rate, lang: u.lang })
+          spoken.push({ engine: 'system', text: u.text, rate: u.rate, lang: u.lang })
           setTimeout(() => u.onend?.(), 0)
         },
       },
     })
+    // 預產音檔：App 播放前把文字標在 audio 元素的 data-clip（clips.ts）；兩引擎都當作能播 MP3
+    const media = HTMLMediaElement.prototype
+    media.canPlayType = (type: string) => (type === 'audio/mpeg' ? 'maybe' : '')
+    media.play = function (this: HTMLMediaElement) {
+      spoken.push({ engine: 'clip', text: this.dataset.clip ?? '', rate: this.playbackRate })
+      setTimeout(() => this.dispatchEvent(new Event('ended')), 0)
+      return Promise.resolve()
+    }
+    media.pause = () => {}
   })
 }
 
@@ -36,14 +47,3 @@ export const spokenList = (page: Page) =>
 
 export const lastSpoken = (page: Page) =>
   page.evaluate(() => (window as unknown as { __spoken: Spoken[] }).__spoken.at(-1))
-
-/** 模擬支援 WebGPU 的手機（只讓「高音質發音」顯示為可下載；不會真的載入模型）。設計 s03／s11 預設畫面以此為準 */
-export function fakeWebGpu(page: Page) {
-  return page.addInitScript(() =>
-    // configurable：個別測試可再覆寫成「沒有 WebGPU」
-    Object.defineProperty(navigator, 'gpu', {
-      value: { requestAdapter: async () => ({}) },
-      configurable: true,
-    }),
-  )
-}

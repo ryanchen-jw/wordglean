@@ -61,7 +61,7 @@ test('走完一課片語樣本課：片語卡整串顯示與發音、配對（�
   await count(page, 1)
   await expect(page.locator('main [lang="en"]').first()).toHaveText('clean up')
   await page.getByRole('button', { name: '發音' }).click()
-  await expect.poll(() => lastSpoken(page)).toMatchObject({ text: 'clean up' })
+  await expect.poll(() => lastSpoken(page)).toMatchObject({ engine: 'clip', text: 'clean up' })
   // 作答前例句提示裡的片語（clean your room up 的 clean、up）不可點，插入的受詞可點
   await page.getByRole('button', { name: '看例句提示' }).click()
   const hint = page.getByTestId('wordcard-hint')
@@ -106,7 +106,7 @@ test('點片語中的字：彈層先顯示片語的意思（含可分離），�
   // 片語在前、單字在後
   await expect(dict.getByRole('heading')).toHaveText(['clean up', 'up'])
   await phrase.getByRole('button', { name: '發音' }).click()
-  await expect.poll(() => lastSpoken(page)).toMatchObject({ text: 'clean up' })
+  await expect.poll(() => lastSpoken(page)).toMatchObject({ engine: 'clip', text: 'clean up' })
   await shot(page, info, 'phrase-dict-sheet', '[data-testid="dict-sheet"]')
   // 有片語區時資料來源註明片語自編（創辦人核可文案 2026-10-06）
   const source = dict.getByText('資料來源：ECDICT；片語：拾字自編（CC BY-SA 4.0）')

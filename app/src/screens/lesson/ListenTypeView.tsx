@@ -8,7 +8,7 @@ import type { ListenTypeItem } from '../../lesson/items'
 import { Button } from '../../ui/Button'
 import { FeedbackBar } from '../../ui/FeedbackBar'
 import { LessonFoot, LessonMain } from './frame'
-import { HqFailedNotice, HqVoiceHint, ListenCard } from './ListenParts'
+import { ListenCard } from './ListenParts'
 import type { QuestionProps } from './types'
 import { ZhText } from './ZhText'
 
@@ -96,8 +96,6 @@ export function ListenTypeView({ item, onAnswer, onContinue }: QuestionProps<Lis
             />
           )
         )}
-        <HqFailedNotice />
-        {!answered && <HqVoiceHint />}
       </LessonMain>
       <LessonFoot>
         {answered ? (

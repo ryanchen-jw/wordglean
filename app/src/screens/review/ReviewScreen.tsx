@@ -24,6 +24,7 @@ import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
 import { LessonFoot, LessonHeader, LessonMain, lessonFrameCls } from '../lesson/frame'
 import { playSfx } from '../../sound/sfx'
+import { prefetchAudio } from '../../speech/speak'
 import { MatchingView } from '../lesson/MatchingView'
 import { WordCardView } from '../lesson/WordCardView'
 
@@ -81,6 +82,7 @@ export function ReviewScreen({
     ;(async () => {
       let cards: ReviewCard[]
       if (mode.kind === 'practice') {
+        prefetchAudio([mode.lessonId])
         const doc = await loadItems(mode.lessonId)
         if (!doc) throw new Error(`沒有這一課的題目：${mode.lessonId}`)
         cards = lessonWordCards(doc)

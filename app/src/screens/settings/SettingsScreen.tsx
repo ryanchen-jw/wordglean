@@ -1,7 +1,8 @@
 // 設定（設計 s11 預設）＋清除資料確認（s13）；AI 批改區見 AiSection（TASK-15），帳號區為 TASK-20 掛點；
-// 語音區：發音選擇與高音質發音下載（TASK-13），語音辨識下載為 TASK-14 掛點；音效開關（創辦人試用 2026-10-04 ④）
+// 語音區：音效開關（創辦人試用 2026-10-04 ④）、語音辨識下載（TASK-14）；發音一律先播預先產生的音檔，
+// 沒有才用手機內建聲音（TASK-35），不需設定
 import { ChevronRight, FileDown, Trash2 } from 'lucide-react'
-import { createContext, useContext, useState, useSyncExternalStore, type ReactNode } from 'react'
+import { createContext, useContext, useState, type ReactNode } from 'react'
 import { currentLevel } from '../../curriculum/curriculum'
 import { LevelSheet } from '../../curriculum/LevelSheet'
 import { levelLabel } from '../../curriculum/levelLabel'
@@ -10,16 +11,13 @@ import { clearLocalData, exportData } from '../../data/localData'
 import { getSettings, saveSettings } from '../../data/repo'
 import { useLiveQuery } from '../../data/useLiveQuery'
 import { DownloadProgress } from '../../download/DownloadProgress'
-import { useDownloadStatus, type DownloadId, type HqFailReason } from '../../download/download'
+import { useDownloadStatus, type DownloadId } from '../../download/download'
 import { t, type MessageKey } from '../../i18n/t'
 import { navigate } from '../../router'
 import { clearPrefs, usePrefs, type Prefs } from '../../shell/prefs'
 import { setSfxEnabled, sfxEnabled } from '../../sound/sfx'
 import { stt } from '../../speech/stt'
 import { SubScreen } from '../../shell/Screen'
-import { hqVoice } from '../../speech/speak'
-import type { VoiceChoice } from '../../speech/hqVoice'
-import { ConfirmDialog } from '../../ui/ConfirmDialog'
 import { OptionSheet } from '../../ui/OptionSheet'
 import { AccountSection } from './AccountSection'
 import { AiSection } from './AiSection'
@@ -50,14 +48,7 @@ const TEST_LESSONS: { value: string; label: MessageKey }[] = [
   { value: 'translate', label: 'settings.other.testLessonTranslate' },
 ]
 
-const HQ_FAILED_REASON: Record<HqFailReason, MessageKey> = {
-  worker: 'settings.voice.hqFailedWorker',
-  error: 'settings.voice.hqFailedError',
-  timeout: 'settings.voice.hqFailedTimeout',
-  crashed: 'settings.voice.hqFailedCrashed',
-}
-
-type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | 'voice' | 'testLesson' | null
+type Sheet = 'level' | 'dailyNew' | 'theme' | 'textSize' | 'testLesson' | null
 
 const rowCls =
   'flex min-h-13 w-full items-center justify-between gap-3 border border-t-0 border-line bg-surface px-4 text-left first:rounded-t-2xl first:border-t last:rounded-b-2xl'
@@ -154,19 +145,11 @@ function ModelRow({
   onRetry: () => void
 }) {
   const status = useDownloadStatus(id)
-  // 有原因的失敗（高音質發音，TASK-34）：說明改成失敗原因
-  const reason = status.kind === 'failed' ? status.reason : undefined
   return (
     <div className={rowCls}>
       <span className="grid min-w-0 leading-[1.35]">
         {name}
-        {reason ? (
-          <span className="text-caption text-error" data-testid={`${id}-failed-reason`}>
-            {t(HQ_FAILED_REASON[reason])}
-          </span>
-        ) : (
-          <span className="text-caption text-muted">{note}</span>
-        )}
+        <span className="text-caption text-muted">{note}</span>
       </span>
       <DownloadProgress status={status} label={name} onStart={onStart} onRetry={onRetry} />
     </div>
@@ -192,17 +175,7 @@ export function SettingsScreen() {
   const [sheet, setSheet] = useState<Sheet>(null)
   const [confirming, setConfirming] = useState(false)
   const [sfx, setSfx] = useState(sfxEnabled)
-  // 高音質發音（TASK-13 D5）：下載前告知檔案大小；未下載時選它＝導向下載
-  const [confirmHq, setConfirmHq] = useState(false)
-  const voice = useSyncExternalStore(hqVoice.subscribe, hqVoice.choice)
-  const hqStatus = useDownloadStatus('tts-hq')
   const close = () => setSheet(null)
-  // 失敗時選單不列高音質（TASK-34）：不再導向下載確認框誘導重試，失敗原因與重試在下方高音質列
-  const hqPickable = hqStatus.kind !== 'unsupported' && hqStatus.kind !== 'failed'
-  const pickVoice = (v: VoiceChoice) => {
-    if (v === 'hq' && hqStatus.kind !== 'downloaded') setConfirmHq(true)
-    else hqVoice.setChoice(v)
-  }
   // 語音辨識（TASK-14）：在這裡直接下載（下載完就釋放，不常駐記憶體）
   const sttStart = () => void stt.load().catch(() => undefined)
 
@@ -255,11 +228,6 @@ export function SettingsScreen() {
           </Group>
 
           <Group title={t('settings.voice.title')}>
-            <Row
-              label={t('settings.voice.tts')}
-              value={t(voice === 'hq' ? 'settings.voice.ttsHqValue' : 'settings.voice.ttsValue')}
-              onClick={() => setSheet('voice')}
-            />
             <SwitchRow
               label={t('settings.voice.sfx')}
               on={sfx}
@@ -267,13 +235,6 @@ export function SettingsScreen() {
                 setSfxEnabled(on)
                 setSfx(on)
               }}
-            />
-            <ModelRow
-              id="tts-hq"
-              name={t('settings.voice.ttsHq')}
-              note={t('settings.voice.ttsHqNote')}
-              onStart={() => setConfirmHq(true)}
-              onRetry={() => hqVoice.startDownload()}
             />
             <ModelRow
               id="stt"
@@ -346,18 +307,6 @@ export function SettingsScreen() {
           onClose={close}
         />
       )}
-      {sheet === 'voice' && (
-        <OptionSheet<VoiceChoice>
-          label={t('settings.voice.tts')}
-          options={[
-            { value: 'system', label: t('settings.voice.ttsValue') },
-            ...(hqPickable ? [{ value: 'hq' as const, label: t('settings.voice.ttsHq') }] : []),
-          ]}
-          selected={voice}
-          onSelect={pickVoice}
-          onClose={close}
-        />
-      )}
       {sheet === 'testLesson' && (
         <OptionSheet
           label={t('settings.other.testLessonSheet')}
@@ -367,19 +316,6 @@ export function SettingsScreen() {
             navigate(v === TEST_LESSON_ALL ? '/lesson/demo' : `/lesson/demo?type=${v}`)
           }
           onClose={close}
-        />
-      )}
-      {confirmHq && (
-        <ConfirmDialog
-          title={t('download.hq.confirmTitle')}
-          body={t('download.hq.confirmBody')}
-          safeLabel={t('common.text.later')}
-          riskLabel={t('download.action.start')}
-          onSafe={() => setConfirmHq(false)}
-          onRisk={() => {
-            setConfirmHq(false)
-            hqVoice.startDownload()
-          }}
         />
       )}
       {confirming && <ClearDataDialog onCancel={() => setConfirming(false)} onConfirm={clearNow} />}

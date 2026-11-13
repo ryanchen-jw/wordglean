@@ -6,7 +6,7 @@
 import { writeFile } from 'node:fs/promises'
 import { expect, test, type Page, type TestInfo } from '@playwright/test'
 import { answer, answerRetry, count, LESSON, next, playTo, retryCount, STEPS } from './lesson.js'
-import { fakeSystemVoice, fakeWebGpu } from './speech.js'
+import { fakeSystemVoice } from './speech.js'
 import { measureMobile, overflowingChildren } from './measure.js'
 
 async function check(page: Page, info: TestInfo, name: string, strict = true) {
@@ -32,8 +32,6 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('lg.installDismissed', '1'))
   // 聽類題要能播音才出（TASK-18 能力偵測）；Playwright WebKit（Windows）沒有 speechSynthesis，一律用替身
   await fakeSystemVoice(page)
-  // 首次提示「到設定開啟高音質」只在支援 WebGPU 的手機出現（headless chromium 沒有）
-  await fakeWebGpu(page)
 })
 
 test('s07 單字卡：出題／例句提示／答對／答錯', async ({ page }, info) => {
@@ -103,12 +101,6 @@ for (const theme of ['light', 'dark'] as const) {
         [name, prop] as const,
       )
 
-    expect(await style('[data-testid="hq-voice-hint"]', 'backgroundColor')).toBe(
-      await token('--lg-hint-bg'),
-    )
-    expect(await style('[data-testid="hq-voice-hint"]', 'color')).toBe(
-      await token('--lg-hint', 'color'),
-    )
     expect(await style('button[aria-label="播放"]', 'backgroundColor')).toBe(
       await token('--lg-primary-soft'),
     )
@@ -180,10 +172,9 @@ test('s05 閱讀理解：作答中／看中文翻譯／答錯；s12 離開確認
   await check(page, info, 's05-reading-wrong')
 })
 
-test('s03 聽音打字：內建聲音＋第一次提示／作答中／答錯；第二次不再提示', async ({ page }, info) => {
+test('s03 聽音打字：出題／作答中／答錯', async ({ page }, info) => {
   await page.goto(`/lesson/${LESSON}`)
   await playTo(page, 11)
-  await expect(page.getByTestId('hq-voice-hint')).toBeVisible()
   await check(page, info, 's03-voice')
   await page.getByRole('textbox').fill('The book is on a bag')
   await check(page, info, 's03-type')
@@ -203,7 +194,6 @@ test('s03 聽不出來；聽音選答答對／答錯', async ({ page }, info) =>
   await answer(page, 13)
   await next(page)
   await count(page, 14)
-  await expect(page.getByTestId('hq-voice-hint')).toHaveCount(0)
   await page.getByRole('radio', { name: 'Two dogs', exact: true }).click()
   await check(page, info, 's03-choice-selected')
   await page.getByRole('button', { name: '檢查' }).click()

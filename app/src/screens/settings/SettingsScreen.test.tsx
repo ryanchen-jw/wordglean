@@ -6,11 +6,6 @@ import { db } from '../../data/appDb'
 import { getSettings, saveSettings } from '../../data/repo'
 import { SettingsScreen } from './SettingsScreen'
 
-// TASK-13：高音質發音只在有 WebGPU 的手機提供下載；jsdom 沒有 WebGPU，這裡模擬支援的手機（設計 s11 預設畫面）
-vi.hoisted(() => {
-  Object.defineProperty(navigator, 'gpu', { value: { requestAdapter: async () => ({}) } })
-})
-
 beforeEach(async () => {
   history.replaceState(null, '', '/settings')
   localStorage.clear()
@@ -37,7 +32,7 @@ describe('設定（s11）', () => {
     expect(screen.getByRole('button', { name: /目前級距\s*還沒有分級/ })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /外觀\s*跟隨系統/ })).toBeInTheDocument()
     expect(screen.getByText('狀態：未設定')).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: '下載高音質發音（選配）' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '下載語音辨識模型' })).toBeInTheDocument()
     expect(screen.getByTestId('settings-account-slot')).toHaveTextContent(
       '未登入：進度只存在這支手機',
     )
