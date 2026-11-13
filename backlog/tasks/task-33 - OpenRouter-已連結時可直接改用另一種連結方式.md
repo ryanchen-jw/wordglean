@@ -1,9 +1,10 @@
 ---
 id: TASK-33
 title: OpenRouter 已連結時可直接改用另一種連結方式
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-12 17:18'
+updated_date: '2026-11-13 01:56'
 labels:
   - app
 dependencies: []
@@ -37,8 +38,17 @@ dev-flow 情境：小功能。
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 帳號授權連結時顯示「改用貼上金鑰」；貼金鑰連結時顯示改用帳號授權的入口
-- [ ] #2 從已連結狀態完成另一種方式後，金鑰被替換、連結方式更新、已選模型保留，回到設定頁顯示已連結
-- [ ] #3 切換途中取消或失敗（授權被拒、貼了無效金鑰後離開），原連結完全不變
-- [ ] #4 lint、typecheck、npm test、build 過；openrouter、openrouter-visual e2e 兩引擎綠；設定頁 AI 區截圖（兩種連結方式）320 寬與特大字級無溢出
+- [x] #1 帳號授權連結時顯示「改用貼上金鑰」；貼金鑰連結時顯示改用帳號授權的入口
+- [x] #2 從已連結狀態完成另一種方式後，金鑰被替換、連結方式更新、已選模型保留，回到設定頁顯示已連結
+- [x] #3 切換途中取消或失敗（授權被拒、貼了無效金鑰後離開），原連結完全不變
+- [x] #4 lint、typecheck、npm test、build 過；openrouter、openrouter-visual e2e 兩引擎綠；設定頁 AI 區截圖（兩種連結方式）320 寬與特大字級無溢出
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-13 01:56
+---
+2026-11-13 驗收通過：獨立驗收官 PASS（unit 1154 passed、e2e 127 passed／7 skipped）；文案沿用既有 key，創辦人 push 核可。
+---
+<!-- COMMENTS:END -->

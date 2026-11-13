@@ -1,9 +1,10 @@
 ---
 id: TASK-34
 title: iPhone 高音質發音下載後無限跳回下載提示——查原因並停止循環
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-12 17:18'
+updated_date: '2026-11-13 01:56'
 labels:
   - app
 dependencies: []
@@ -42,9 +43,18 @@ dev-flow 情境：調查＋修 bug。
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 各失敗路徑在設定頁的呈現已逐一列出，且沒有任何一條會在失敗後表現成未下載而無限跳回下載確認框（有單元測試）
-- [ ] #2 失敗時顯示明確的失敗狀態；最近一次失敗紀錄（階段、訊息、時間）寫入 localStorage
-- [ ] #3 /debug/voice 診斷頁顯示需求列出的各項資訊，App 內沒有連到它的入口
-- [ ] #4 回報含根因推斷與第二階段方案（成本、取捨）
-- [ ] #5 lint、typecheck、npm test、build 過；tts-hq、listen e2e 綠；TASK-31／32 測試全綠
+- [x] #1 各失敗路徑在設定頁的呈現已逐一列出，且沒有任何一條會在失敗後表現成未下載而無限跳回下載確認框（有單元測試）
+- [x] #2 失敗時顯示明確的失敗狀態；最近一次失敗紀錄（階段、訊息、時間）寫入 localStorage
+- [x] #3 /debug/voice 診斷頁顯示需求列出的各項資訊，App 內沒有連到它的入口
+- [x] #4 回報含根因推斷與第二階段方案（成本、取捨）
+- [x] #5 lint、typecheck、npm test、build 過；tts-hq、listen e2e 綠；TASK-31／32 測試全綠
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-13 01:56
+---
+2026-11-13 第一階段驗收通過（獨立驗收官 PASS）；四條失敗文案與重試鈕維持現狀，創辦人 push 核可。★ 第二階段待 iPhone 使用者回傳 /debug/voice 截圖後裁示（A 標不支援／B fp16／C 預產音檔）。★ 觀察：自行關 App 也顯示記憶體不足、雙分頁誤判 crashed、iOS 若重開清快取仍會跨重開重下。
+---
+<!-- COMMENTS:END -->
