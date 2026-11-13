@@ -186,10 +186,10 @@
       "id": "b2-u49-l02-q15",
       "type": "reading",
       "passageEn": "When my cousin was fifteen, she was quite rebellious. She often had quarrels with her parents about her clothes and her late nights. One evening, she came home very late. Instead of making excuses, she listened to her conscience and was completely truthful about where she had been. Her parents were astonished. They could hear the sincerity in her voice, so instead of shouting, they talked calmly. She says that night changed their relationship.",
-      "passageZh": "我表妹十五歲時相當叛逆。她常為了穿著和晚歸跟爸媽吵架。有一天晚上她很晚才回家。她沒有找藉口，而是聽從良心，老老實實說出自己去了哪裡。她爸媽非常驚訝。他們聽得出她語氣中的真誠，所以沒有大吼，而是冷靜地談。她說那一晚改變了他們之間的關係。",
+      "passageZh": "我的表親十五歲時相當叛逆。她常為了穿著和晚歸跟爸媽吵架。有一天晚上她很晚才回家。她沒有找藉口，而是聽從良心，老老實實說出自己去了哪裡。她爸媽非常驚訝。他們聽得出她語氣中的真誠，所以沒有大吼，而是冷靜地談。她說那一晚改變了他們之間的關係。",
       "questions": [
         {
-          "questionZh": "表妹晚歸那天做了什麼？",
+          "questionZh": "作者的表親晚歸那天做了什麼？",
           "options": [
             "找了一個好藉口",
             "老實說出自己去了哪裡",
@@ -333,6 +333,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（tenderness）原位換成翻譯題，沿用題 id b2-u49-l02-q17；目標字沿用 tenderness",
         "resolution": "改為 translate：promptZh「她聲音中的溫柔讓大家都平靜下來。」、hintWords [\"tenderness\"]、referenceEn [\"The tenderness in her voice made everyone calm down.\",\"Everyone calmed down because of the tenderness in her voice.\"]、rubricZh [\"tenderness 當名詞（例如 the tenderness in her voice 等）\",\"「平靜下來」可寫，例如 calm down、feel calm 等\",\"時態可用過去式或現在式（例如 made、makes 等）\"]（原 makeSentence：instructionZh「用 tenderness 造一個句子，描述你身邊的人溫柔對待人或動物的樣子。」、referenceEn [\"My mother always speaks to our old dog with tenderness.\",\"I still remember the tenderness in my grandfather's voice.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

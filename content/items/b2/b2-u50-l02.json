@@ -188,7 +188,7 @@
       "id": "b2-u50-l02-q15",
       "type": "reading",
       "passageEn": "Last month, I went to my cousin's wedding at an old hotel by the lake. At the door, a young man ushered us to our seats. The bride walked in with a calm, graceful bearing. When my uncle arrived late, his wife gave him an angry glare. During dinner, my little nephew spilled juice and left a big stain on the tablecloth, but a waiter quickly cleaned it with a rag. After the party, it was very dark, so we used our phones to navigate back to the car.",
-      "passageZh": "上個月，我去參加表姊在湖邊一間老飯店舉行的婚禮。在門口，一位年輕人帶我們入座。新娘以沉穩優雅的儀態走進來。我舅舅遲到時，舅媽狠狠瞪了他一眼。晚餐時，我的小姪子打翻果汁，在桌巾上留下一大片汙漬，不過服務生很快就用抹布擦乾淨了。派對結束後天色很暗，我們用手機導航走回停車的地方。",
+      "passageZh": "上個月，我去參加我表親在湖邊一間老飯店舉行的婚禮。在門口，一位年輕人帶我們入座。新娘以沉穩優雅的儀態走進來。我舅舅遲到時，舅媽狠狠瞪了他一眼。晚餐時，我的小姪子打翻果汁，在桌巾上留下一大片汙漬，不過服務生很快就用抹布擦乾淨了。派對結束後天色很暗，我們用手機導航走回停車的地方。",
       "questions": [
         {
           "questionZh": "舅舅遲到時，舅媽有什麼反應？",
@@ -329,6 +329,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（spur）原位換成翻譯題，沿用題 id b2-u50-l02-q17；目標字沿用 spur",
         "resolution": "改為 translate：promptZh「這次的失敗反而激勵他重新開始寫作。」、hintWords [\"spur\"]、referenceEn [\"This failure actually spurred him to start writing again.\",\"The failure spurred him on to begin writing again.\"]、rubricZh [\"spur 當動詞「激勵」，常接人＋to＋動詞（例如 spurred him to start、spurred him on 等）\",\"「重新開始寫作」可寫，例如 start writing again、begin to write again 等\",\"時態用過去式或現在完成式都可以（例如 spurred、has spurred 等）\"]（原 makeSentence：instructionZh「用 spur 造一個句子，說說一件你一時衝動做的事（可用 on the spur of the moment）。」、referenceEn [\"I bought a plane ticket to Japan on the spur of the moment.\",\"On the spur of the moment, I decided to cut my hair short.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

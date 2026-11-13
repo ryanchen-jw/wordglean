@@ -188,7 +188,7 @@
       "id": "b2-u02-l01-q15",
       "type": "reading",
       "passageEn": "Every summer, a hotel by the sea hires seasonal workers. Last year, my cousin Ryan took one of these jobs. He was paid an hourly rate, and he worked mostly in the daytime, cleaning rooms and helping guests. A short training course preceded his first day. In it, he learned to check the serial number on every key card so that guests would not get the wrong room. Ryan seldom had free time, but he enjoyed the work. When the hotel was temporarily short of staff in August, he worked nights too. He says it was a once-in-a-lifetime experience.",
-      "passageZh": "每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我表哥 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是一生難得一次的經驗。",
+      "passageZh": "每年夏天，一家海邊的飯店都會僱用季節性員工。去年，我的表親 Ryan 接了其中一份工作。他領時薪，大多在白天上班，負責打掃房間、協助客人。上班第一天之前，他先上了一堂簡短的訓練課程，學會檢查每張房卡上的序號，讓客人不會拿錯房間。Ryan 很少有空閒時間，但他很喜歡這份工作。八月時飯店暫時人手不足，他連晚上也上班。他說那是一生難得一次的經驗。",
       "questions": [
         {
           "questionZh": "Ryan 上班第一天之前做了什麼？",
@@ -400,6 +400,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn、passageZh",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

@@ -172,7 +172,7 @@
       "id": "a2-u26-l06-q14",
       "type": "reading",
       "passageEn": "At my cousin's birthday party, a man did magic tricks. First, he adjusted his big hat. Then he pretended to cut a string into two pieces, but it was still one piece! Next, he buried a ring in a bowl of rice. When we looked, the ring was gone. Then he found it in a child's pocket! Everyone shouted and laughed.",
-      "passageZh": "在我表弟的生日派對上，有個男人表演魔術。他先調整了一下他的大帽子。接著他假裝把一條繩子剪成兩段，結果繩子還是完整的一條！然後他把一枚戒指埋進一碗米裡。我們一看，戒指不見了。最後他竟然從一個小朋友的口袋裡把戒指找了出來！大家又叫又笑。",
+      "passageZh": "在我表親的生日派對上，有個男人表演魔術。他先調整了一下他的大帽子。接著他假裝把一條繩子剪成兩段，結果繩子還是完整的一條！然後他把一枚戒指埋進一碗米裡。我們一看，戒指不見了。最後他竟然從一個小朋友的口袋裡把戒指找了出來！大家又叫又笑。",
       "questions": [
         {
           "questionZh": "他表演的第一個魔術是什麼？",
@@ -357,6 +357,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（pretend）原位換成翻譯題，沿用題 id a2-u26-l06-q16；目標字沿用 pretend",
         "resolution": "改為 translate：promptZh「他假裝聽不懂我的話。」、hintWords [\"pretend\"]、referenceEn [\"He pretended not to understand me.\",\"He pretended that he didn't understand me.\"]、rubricZh [\"用 pretend 表示「假裝」（例如 pretended not to understand、pretended that… 等）\",\"過去的事用過去式；寫現在式 pretends 也正確\"]（原 makeSentence：instructionZh「用 pretend 造一個句子，說說你或別人假裝做某件事。」、referenceEn [\"When I was little, I pretended to be a teacher.\",\"My cat pretends to sleep when I call her.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

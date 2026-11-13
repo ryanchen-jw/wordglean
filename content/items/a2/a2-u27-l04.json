@@ -185,10 +185,10 @@
       "id": "a2-u27-l04-q15",
       "type": "reading",
       "passageEn": "Last weekend, I went to the night market with my cousin. It was lively and full of people. At first, my cousin looked uneasy because there were so many people. Then she was frightened when she saw a man with a big snake. \"Snakes terrify me,\" she said. After we ate some hot soup, she finally felt relaxed. The famous cake shop was closed. What a pity! But the evening was not disappointing at all.",
-      "passageZh": "上週末，我和表妹去逛夜市。夜市很熱鬧，人擠人。一開始，表妹因為人太多看起來很不自在。後來她看到一個男人帶著一條大蛇，嚇了一大跳。她說：「我超怕蛇的。」喝了熱湯之後，她終於放鬆下來。那家有名的蛋糕店沒開，真可惜！不過這個晚上一點也不令人失望。",
+      "passageZh": "上週末，我和我的表親去逛夜市。夜市很熱鬧，人擠人。一開始，我的表親因為人太多看起來很不自在。後來她看到一個男人帶著一條大蛇，嚇了一大跳。她說：「我超怕蛇的。」喝了熱湯之後，她終於放鬆下來。那家有名的蛋糕店沒開，真可惜！不過這個晚上一點也不令人失望。",
       "questions": [
         {
-          "questionZh": "表妹一開始為什麼不自在？",
+          "questionZh": "作者的表親一開始為什麼不自在？",
           "options": [
             "天氣實在太冷了",
             "人實在是太多了",
@@ -335,6 +335,12 @@
         "message": "執行長裁示：第③關：FIX 變體 2 現在式 looks 搭 after he retired 時態不搭；要點同步",
         "resolution": "referenceEn 改為 [\"My father looks much more relaxed since he retired.\",\"Since he retired, my dad looks a lot more relaxed.\"]（原 [\"My father looks much more relaxed since he retired.\",\"My dad looks a lot more relaxed after he retired.\"]）；rubricZh 改為 [\"用 relaxed 表示「輕鬆的」（例如 looks more relaxed）\",\"「多了」可寫，例如 much more relaxed、a lot more relaxed 等\",\"「退休以後」可寫，例如 since he retired 等；寫 looked … after he retired 也正確\"]（原 [\"用 relaxed 表示「輕鬆的」（例如 looks more relaxed）\",\"「多了」可寫，例如 much more relaxed、a lot more relaxed 等\",\"「退休以後」可寫，例如 since he retired、after he retired 等\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

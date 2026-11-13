@@ -56,7 +56,7 @@
       "type": "wordCard",
       "word": "wedding",
       "exampleEn": "We went to my cousin's wedding last week.",
-      "exampleZh": "我們上週去參加了我表哥的婚禮。",
+      "exampleZh": "我們上週去參加了我表親的婚禮。",
       "glossZh": "婚禮",
       "distractorsZh": [
         "生日派對",
@@ -327,6 +327,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（wedding）原位換成翻譯題，沿用題 id a2-u05-l03-q17；目標字沿用 wedding",
         "resolution": "改為 translate：promptZh「昨天的婚禮上，很多人在跳舞。」、hintWords [\"wedding\"]、referenceEn [\"Many people danced at the wedding yesterday.\",\"At yesterday's wedding, a lot of people were dancing.\"]、rubricZh [\"用 wedding 表示「婚禮」，「在婚禮上」可寫，例如 at the wedding 等\",\"昨天的事用過去式或過去進行式（例如 danced、were dancing 等）\",\"「很多人」可寫，例如 many people、a lot of people 等\"]（原 makeSentence：instructionZh「用 wedding 造一個句子，說說你參加過的一場婚禮。」、referenceEn [\"My best friend's wedding was very romantic.\",\"My cousin's wedding was in a beautiful garden.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

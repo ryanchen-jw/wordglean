@@ -17,7 +17,7 @@
       "type": "wordCard",
       "word": "teen",
       "exampleEn": "My cousin is a teen who loves video games.",
-      "exampleZh": "我表弟是個熱愛電玩的青少年。",
+      "exampleZh": "我的表親是個熱愛電玩的青少年。",
       "glossZh": "青少年",
       "distractorsZh": [
         "嬰兒",
@@ -408,6 +408,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

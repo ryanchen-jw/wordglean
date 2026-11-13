@@ -137,7 +137,7 @@
       "id": "b2-u52-l07-q12",
       "type": "mcq",
       "stemEn": "Having grown up with very protective parents, my cousin was so ____ that he believed every stranger's story.",
-      "stemZh": "我表哥從小被父母保護得很好，不諳世事到相信每個陌生人說的故事。",
+      "stemZh": "我的表親從小被父母保護得很好，不諳世事到相信每個陌生人說的故事。",
       "options": [
         "wearisome",
         "untalented",
@@ -175,7 +175,7 @@
       "id": "b2-u52-l07-q14",
       "type": "reading",
       "passageEn": "Last year, my cousin Owen joined a dance class for beginners. He thought he was completely untalented, and the first lessons were wearisome, because he kept falling behind. His friends joked that he was a layabout who would quit within a week. But the teacher's gracefulness inspired him, and he practiced every evening. Six months later, he danced in a small ballet show and enjoyed a success that had been undreamed of when he started.",
-      "passageZh": "去年，我表哥 Owen 參加了一個初學者舞蹈班。他覺得自己完全沒天分，頭幾堂課也很累人，因為他一直跟不上。朋友們開玩笑說他是個懶漢，不到一週就會放棄。不過老師的優雅姿態激勵了他，他每天晚上都練習。六個月後，他在一場小型芭蕾演出中登台，獲得了剛開始時夢想不到的成功。",
+      "passageZh": "去年，我的表親 Owen 參加了一個初學者舞蹈班。他覺得自己完全沒天分，頭幾堂課也很累人，因為他一直跟不上。朋友們開玩笑說他是個懶漢，不到一週就會放棄。不過老師的優雅姿態激勵了他，他每天晚上都練習。六個月後，他在一場小型芭蕾演出中登台，獲得了剛開始時夢想不到的成功。",
       "questions": [
         {
           "questionZh": "頭幾堂課為什麼很累人？",
@@ -326,6 +326,18 @@
         "message": "創辦人裁示：造句改翻譯：造句題（wearisome）原位換成翻譯題，沿用題 id b2-u52-l07-q16；目標字沿用 wearisome",
         "resolution": "改為 translate：promptZh「這份工作很好，但每天長途通勤很累人。」、hintWords [\"wearisome\"]、referenceEn [\"The job is great, but the long journey to work every day is wearisome.\",\"The job is good, but traveling so far to work each day is wearisome.\"]、rubricZh [\"wearisome 當形容詞（例如 is wearisome 等）\",\"「每天長途通勤」可寫，例如 the long journey to work every day、the long commute 等\"]（原 makeSentence：instructionZh「用 wearisome 造一個句子，說說一件讓你覺得很累、很厭煩的事。」、referenceEn [\"Cleaning my room every week is wearisome.\",\"The long bus ride to my hometown is wearisome.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/11",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：stemZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

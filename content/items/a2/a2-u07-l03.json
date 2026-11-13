@@ -42,7 +42,7 @@
       "type": "wordCard",
       "word": "blonde",
       "exampleEn": "The girl with blonde hair is my cousin.",
-      "exampleZh": "那個金髮女孩是我表妹。",
+      "exampleZh": "那個金髮女孩是我的表親。",
       "glossZh": "金色的（頭髮）",
       "distractorsZh": [
         "黑色的",
@@ -379,6 +379,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（sunglasses）原位換成翻譯題，沿用題 id a2-u07-l03-q16；目標字沿用 sunglasses",
         "resolution": "改為 translate：promptZh「這副太陽眼鏡是誰的？」、hintWords [\"sunglasses\"]、referenceEn [\"Whose sunglasses are these?\",\"Who do these sunglasses belong to?\"]、rubricZh [\"sunglasses 是複數，代名詞與動詞配合複數（例如 these、are、do 等）\",\"「是誰的」可寫，例如 Whose sunglasses are these?、Whose are these sunglasses?、belong to 等\",\"句尾用問號\"]（原 makeSentence：instructionZh「用 sunglasses 造一個句子，說說你什麼時候會戴太陽眼鏡。」、referenceEn [\"I wear sunglasses when I drive in summer.\",\"I always wear sunglasses at the beach.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/2",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

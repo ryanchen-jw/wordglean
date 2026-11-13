@@ -199,10 +199,10 @@
       "id": "b2-u14-l03-q16",
       "type": "reading",
       "passageEn": "When my grandparents moved to a smaller house, our whole family came to help. We packed books and dishes into cardboard boxes and carried old jam jars up from the cellar. The house was cozy, with a brick fireplace in the living room and a green hedge around the garden. A stone arch stood over the front gate, covered in climbing roses with a sweet fragrance. My cousin found an old metal tub in the shed and turned it into a flower pot. At the end of the day, we cleared up all the mess, sat on wooden stools in the kitchen, and shared a pot of soup.",
-      "passageZh": "爺爺奶奶搬到比較小的房子時，我們全家都來幫忙。我們把書和碗盤裝進紙箱，還從地窖搬上來一些舊果醬罐。那間房子很溫馨，客廳裡有座磚砌壁爐，花園四周圍著綠色樹籬。前門上方立著一座石拱門，上面爬滿了香氣甜美的玫瑰。表哥在小屋裡找到一個舊鐵桶，把它改成了花盆。一天結束時，我們把屋裡收拾乾淨，坐在廚房的木凳子上，一起分享一鍋湯。",
+      "passageZh": "爺爺奶奶搬到比較小的房子時，我們全家都來幫忙。我們把書和碗盤裝進紙箱，還從地窖搬上來一些舊果醬罐。那間房子很溫馨，客廳裡有座磚砌壁爐，花園四周圍著綠色樹籬。前門上方立著一座石拱門，上面爬滿了香氣甜美的玫瑰。我的表親在小屋裡找到一個舊鐵桶，把它改成了花盆。一天結束時，我們把屋裡收拾乾淨，坐在廚房的木凳子上，一起分享一鍋湯。",
       "questions": [
         {
-          "questionZh": "表哥把舊鐵桶改成了什麼？",
+          "questionZh": "作者的表親把舊鐵桶改成了什麼？",
           "options": [
             "垃圾桶",
             "椅子",
@@ -429,6 +429,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：referenceEn[1]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

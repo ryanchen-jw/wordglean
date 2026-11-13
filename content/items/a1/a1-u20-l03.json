@@ -15,7 +15,7 @@
       "type": "wordCard",
       "word": "seventeen",
       "exampleEn": "My cousin is seventeen.",
-      "exampleZh": "我的表哥十七歲。",
+      "exampleZh": "我的表親十七歲。",
       "glossZh": "十七",
       "distractorsZh": [
         "七十",
@@ -187,7 +187,7 @@
       "id": "a1-u20-l03-q15",
       "type": "reading",
       "passageEn": "My grandmother is ninety, and my grandfather is eighty. They live in a small town. Every day, they get up at 6 a.m. and walk in the park. In August, all the family comes to their home for a big party. My cousin is nineteen, and she always makes the cake.",
-      "passageZh": "我奶奶九十歲，爺爺八十歲。他們住在一個小鎮上，每天早上六點起床，去公園散步。八月時，全家人都會到他們家參加一場大派對。我的表姊十九歲，蛋糕總是由她來做。",
+      "passageZh": "我奶奶九十歲，爺爺八十歲。他們住在一個小鎮上，每天早上六點起床，去公園散步。八月時，全家人都會到他們家參加一場大派對。我的表親十九歲，蛋糕總是由她來做。",
       "questions": [
         {
           "questionZh": "爺爺幾歲？",
@@ -336,6 +336,18 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：hintWords、referenceEn[0]、referenceEn[1]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/0",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

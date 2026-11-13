@@ -125,7 +125,7 @@
       "id": "a1-u04-l04-q10",
       "type": "listenChoice",
       "audioEn": "My cousin is coming tonight. We will celebrate her birthday.",
-      "audioZh": "我表姊今晚要來，我們要幫她慶生。",
+      "audioZh": "我的表親今晚要來，我們要幫她慶生。",
       "questionZh": "他們今晚要慶祝誰的生日？",
       "options": [
         "My cousin's",
@@ -381,6 +381,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（neighbor）原位換成翻譯題，沿用題 id a1-u04-l04-q17；目標字沿用 neighbor",
         "resolution": "改為 translate：promptZh「我的鄰居每天早上跑步。」、hintWords [\"neighbor\"]、referenceEn [\"My neighbor runs every morning.\",\"My neighbor goes running every morning.\"]、rubricZh [\"動詞配合主詞（例如 runs、goes running）；英式拼法 neighbour 也正確\",\"「每天早上」可寫，例如 every morning 等\"]（原 makeSentence：instructionZh「用 neighbor 造一個句子，說說你的一位鄰居。」、referenceEn [\"My neighbor is a nice old man.\",\"Our neighbor has two cats.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：audioZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

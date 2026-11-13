@@ -186,10 +186,10 @@
       "id": "b2-u19-l03-q15",
       "type": "reading",
       "passageEn": "My cousin is studying to become an educator, and her favorite subject is psychology. This term, she spent a month in a primary school as an observer. She sat at the back of the classroom and took notes on how children learn. She noticed that good teachers did not need strict discipline; instead, they kept lessons lively. In one science lesson, the children tested which substances float in water, including small pieces of carbon and aluminum. My cousin also learned about the biological reasons why young children need plenty of sleep. She told me the month was exhausting, but she had never felt so happy.",
-      "passageZh": "我表姊正在讀書準備當教育工作者，她最喜歡的科目是心理學。這學期，她在一所小學當了一個月的觀察員。她坐在教室後面，記錄孩子們怎麼學習。她注意到好老師不需要嚴格的紀律，而是讓課堂保持活潑。在一堂自然課上，孩子們測試哪些物質會浮在水上，包括小塊的碳和鋁。表姊也學到幼兒需要充足睡眠的生理原因。她跟我說，這個月很累人，但她從來沒有這麼開心過。",
+      "passageZh": "我的表親正在讀書準備當教育工作者，她最喜歡的科目是心理學。這學期，她在一所小學當了一個月的觀察員。她坐在教室後面，記錄孩子們怎麼學習。她注意到好老師不需要嚴格的紀律，而是讓課堂保持活潑。在一堂自然課上，孩子們測試哪些物質會浮在水上，包括小塊的碳和鋁。我的表親也學到幼兒需要充足睡眠的生理原因。她跟我說，這個月很累人，但她從來沒有這麼開心過。",
       "questions": [
         {
-          "questionZh": "表姊在小學裡擔任什麼角色？",
+          "questionZh": "作者的表親在小學裡擔任什麼角色？",
           "options": [
             "代課老師",
             "一名觀察員",
@@ -199,7 +199,7 @@
           "answer": 1
         },
         {
-          "questionZh": "表姊注意到好老師怎麼做？",
+          "questionZh": "作者的表親注意到好老師怎麼做？",
           "options": [
             "常常讓學生考試",
             "要求嚴格的紀律",
@@ -337,6 +337,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（observer）原位換成翻譯題，沿用題 id b2-u19-l03-q17；目標字沿用 observer",
         "resolution": "改為 translate：promptZh「昨天的會議有幾位來自其他學校的觀察員。」、hintWords [\"observer\"]、referenceEn [\"There were several observers from other schools at yesterday's meeting.\",\"Several observers from other schools attended the meeting yesterday.\"]、rubricZh [\"observer 指觀察員，這裡用複數（例如 several observers、a few observers 等）\",\"昨天的事用過去式（例如 there were、attended 等）\"]（原 makeSentence：instructionZh「用 observer 造一個句子，說說你曾經在旁邊觀察某件事的經驗。」、referenceEn [\"I joined my friend's team meeting as an observer and learned a lot.\",\"As a quiet observer, I like watching people at the train station.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））、questions[1].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

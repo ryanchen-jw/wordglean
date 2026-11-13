@@ -174,10 +174,10 @@
       "id": "a2-u15-l06-q14",
       "type": "reading",
       "passageEn": "When my grandmother was young, she listened to music on the radio. Now my cousin listens to hip hop on his phone, but he still keeps his old MP3 player. My uncle takes photos with a digital camera. On weekends, our whole family plays board games instead of video games.",
-      "passageZh": "我奶奶年輕的時候，是用收音機聽音樂的。現在我表哥用手機聽嘻哈，不過他還留著舊的 MP3 播放器。我叔叔用數位相機拍照。週末時，我們全家人會一起玩桌遊，而不是打電玩。",
+      "passageZh": "我奶奶年輕的時候，是用收音機聽音樂的。現在我的表親用手機聽嘻哈，不過他還留著舊的 MP3 播放器。我叔叔用數位相機拍照。週末時，我們全家人會一起玩桌遊，而不是打電玩。",
       "questions": [
         {
-          "questionZh": "表哥用手機聽什麼？",
+          "questionZh": "作者的表親用手機聽什麼？",
           "options": [
             "嘻哈音樂",
             "古典音樂",
@@ -480,6 +480,12 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：audioZh（中譯長幼）、questionZh（中譯長幼）",
         "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

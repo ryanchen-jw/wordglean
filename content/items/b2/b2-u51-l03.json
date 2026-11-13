@@ -186,7 +186,7 @@
       "id": "b2-u51-l03-q15",
       "type": "reading",
       "passageEn": "Last summer, my cousin worked at a small cafe by the beach. The owner wanted every worker to be adaptable, because one day you might make coffee and the next day you might clean windows. The weather that summer was atypical: it rained almost every afternoon, so business was slow. The pay was a little unsatisfactory, and the uniforms were gaudy orange outfits that everyone hated. Still, my cousin came home tanned and happy, with many funny stories.",
-      "passageZh": "去年夏天，我表哥在海邊一家小咖啡館打工。老闆希望每個員工都能靈活應變，因為你今天可能煮咖啡，明天可能要擦窗戶。那年夏天的天氣不太尋常：幾乎每天下午都下雨，所以生意很冷清。薪水有點不盡理想，制服又是大家都討厭的俗氣橘色套裝。不過，表哥還是曬得黝黑、開開心心地回家，帶回很多好笑的故事。",
+      "passageZh": "去年夏天，我的表親在海邊一家小咖啡館打工。老闆希望每個員工都能靈活應變，因為你今天可能煮咖啡，明天可能要擦窗戶。那年夏天的天氣不太尋常：幾乎每天下午都下雨，所以生意很冷清。薪水有點不盡理想，制服又是大家都討厭的俗氣橘色套裝。不過，我的表親還是曬得黝黑、開開心心地回家，帶回很多好笑的故事。",
       "questions": [
         {
           "questionZh": "那年夏天的天氣怎麼樣？",
@@ -337,6 +337,12 @@
         "message": "執行長裁示：第③關：SUS 要點寫死 gaudy 放名詞前",
         "resolution": "改為 promptZh「那棟房子被漆成俗氣的亮綠色。」、referenceEn [\"That house was painted a gaudy bright green.\",\"The house was painted in a gaudy shade of bright green.\"]、rubricZh [\"gaudy 可放名詞前或 be／look 後（例如 a gaudy bright green、looks gaudy 等）\",\"「被漆成」可寫，例如 was painted、is painted 等；主動句（例如 They painted…）也正確\"]（原 promptZh「那棟房子被漆成俗氣的亮綠色。」、referenceEn [\"That house was painted a gaudy bright green.\",\"The house was painted in a gaudy shade of bright green.\"]、rubricZh [\"gaudy 當形容詞放名詞前（例如 a gaudy bright green 等）\",\"「被漆成」可寫，例如 was painted、is painted 等；主動句（例如 They painted…）也正確\"]）",
         "resolvedAt": "2026-10-04T12:00:00Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

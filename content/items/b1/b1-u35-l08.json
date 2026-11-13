@@ -186,7 +186,7 @@
       "id": "b1-u35-l08-q15",
       "type": "reading",
       "passageEn": "Last Sunday, my cousin and I made a bold plan: to find a hidden waterfall that few people know about. The path was so steep that we had to hold onto the trees tightly. After two hours, we heard the faint sound of water. Then we saw it: the waterfall was beautiful, and the water shone in the burning sun. My cousin, who loves art, said the rocks looked like an abstract painting. We stayed there for an hour. On the way back, we had a scary encounter with a snake. These are precious memories for me.",
-      "passageZh": "上週日，我和表哥擬了一個大膽的計畫：去找一座很少人知道的隱藏瀑布。小路非常陡，我們必須緊緊抓住樹木。兩個小時後，我們聽到微弱的水聲。接著我們就看到了：瀑布很美，水在灼熱的陽光下閃閃發亮。熱愛藝術的表哥說，那些岩石看起來像一幅抽象畫。我們在那裡待了一個小時。回程時，我們遇到一條蛇，嚇了一大跳。這些對我來說都是珍貴的回憶。",
+      "passageZh": "上週日，我和我的表親擬了一個大膽的計畫：去找一座很少人知道的隱藏瀑布。小路非常陡，我們必須緊緊抓住樹木。兩個小時後，我們聽到微弱的水聲。接著我們就看到了：瀑布很美，水在灼熱的陽光下閃閃發亮。熱愛藝術的表親說，那些岩石看起來像一幅抽象畫。我們在那裡待了一個小時。回程時，我們遇到一條蛇，嚇了一大跳。這些對我來說都是珍貴的回憶。",
       "questions": [
         {
           "questionZh": "他們怎麼知道瀑布就在附近？",
@@ -202,7 +202,7 @@
           "questionZh": "回程時發生了什麼事？",
           "options": [
             "在路上碰到一條蛇，被嚇到了",
-            "表哥在路上滑倒受傷了",
+            "作者的表親在路上滑倒受傷了",
             "他們迷路了好幾個小時",
             "突然下起了一場大雨"
           ],
@@ -444,6 +444,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[1].options[1]（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

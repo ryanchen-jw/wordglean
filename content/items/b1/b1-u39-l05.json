@@ -186,7 +186,7 @@
       "id": "b1-u39-l05-q15",
       "type": "reading",
       "passageEn": "My cousin lives near a rainforest, and she often sends me emails. She says the air is very humid, and her clothes are always wet. One morning, it was so misty that she could hardly see the trees. Her neighbor has a colorful parrot that can say \"Good morning!\" Small flowers like daisies grow near her house. When the weather is stormy, she stays home with her kitten. Last week, she sent me a video of a beaver building its home in a river far away. It was incredible.",
-      "passageZh": "我表姊住在一座雨林附近，常常寄電子郵件給我。她說那裡的空氣非常潮濕，她的衣服總是濕濕的。有一天早上霧大到她幾乎看不見樹。她的鄰居養了一隻色彩鮮豔的鸚鵡，會說「Good morning!」。她家附近長著雛菊之類的小花。天氣風雨交加時，她就和她的小貓待在家裡。上週，她寄給我一段影片，是一隻河狸在遠方的一條河裡蓋家。那段影片真是精彩極了。",
+      "passageZh": "我的表親住在一座雨林附近，常常寄電子郵件給我。她說那裡的空氣非常潮濕，她的衣服總是濕濕的。有一天早上霧大到她幾乎看不見樹。她的鄰居養了一隻色彩鮮豔的鸚鵡，會說「Good morning!」。她家附近長著雛菊之類的小花。天氣風雨交加時，她就和她的小貓待在家裡。上週，她寄給我一段影片，是一隻河狸在遠方的一條河裡蓋家。那段影片真是精彩極了。",
       "questions": [
         {
           "questionZh": "有一天早上的天氣怎麼樣？",
@@ -199,7 +199,7 @@
           "answer": 2
         },
         {
-          "questionZh": "表姊上週寄了什麼給作者？",
+          "questionZh": "作者的表親上週寄了什麼給作者？",
           "options": [
             "一段河狸蓋家的影片",
             "一群小鴨子的照片",
@@ -480,6 +480,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[1].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

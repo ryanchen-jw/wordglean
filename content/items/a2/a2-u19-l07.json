@@ -70,7 +70,7 @@
       "type": "wordCard",
       "word": "police officer",
       "exampleEn": "My cousin wants to be a police officer.",
-      "exampleZh": "我表哥想當警察。",
+      "exampleZh": "我的表親想當警察。",
       "glossZh": "警察；警員",
       "distractorsZh": [
         "郵差",
@@ -340,6 +340,12 @@
         "message": "創辦人裁示：造句改翻譯：造句題（police officer）原位換成翻譯題，沿用題 id a2-u19-l07-q16；目標字沿用 police officer",
         "resolution": "改為 translate：promptZh「我叔叔當了二十年的警察。」、hintWords [\"police officer\"]、referenceEn [\"My uncle has been a police officer for twenty years.\",\"My uncle was a police officer for twenty years.\"]、rubricZh [\"用 police officer 表示「警察」\",\"時態可用現在完成式或過去式（例如 has been、was 等）\",\"「二十年」用 for twenty years\"]（原 makeSentence：instructionZh「用 police officer 造一個句子，說說警察的工作，或你遇過的一位警察。」、referenceEn [\"A police officer helped me find my way.\",\"Police officers work day and night.\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/4",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

@@ -206,7 +206,7 @@
       "id": "c1-u09-l01-q16",
       "type": "reading",
       "passageEn": "Last year, my cousin started researching our family's history. She discovered that we are of Hakka descent and that our clan moved to Taiwan about two hundred years ago. The first members were peasants who grew rice and tea in the hills. In her report, my cousin cites old letters and land records. One letter tells how a young farmer tried to woo his future wife by writing poems for her every week. Their offspring later opened a small shop in town, and the current occupants of that building still sell tea today.",
-      "passageZh": "去年，我表姊開始研究我們家族的歷史。她發現我們是客家血統，我們的家族大約兩百年前搬到台灣。最早的成員是在山上種稻米和茶的農民。在她的報告裡，表姊引用了舊信件和土地紀錄。其中一封信講述一位年輕農夫如何每週為未來的妻子寫詩來追求她。他們的後代後來在鎮上開了一間小店，而那棟房子現在的住戶至今仍在賣茶。",
+      "passageZh": "去年，我的表親開始研究我們家族的歷史。她發現我們是客家血統，我們的家族大約兩百年前搬到台灣。最早的成員是在山上種稻米和茶的農民。在她的報告裡，我的表親引用了舊信件和土地紀錄。其中一封信講述一位年輕農夫如何每週為未來的妻子寫詩來追求她。他們的後代後來在鎮上開了一間小店，而那棟房子現在的住戶至今仍在賣茶。",
       "questions": [
         {
           "questionZh": "家族最早的成員以什麼為生？",
@@ -365,6 +365,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：exampleEn、exampleZh",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/15",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

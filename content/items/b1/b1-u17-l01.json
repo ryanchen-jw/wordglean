@@ -131,7 +131,7 @@
       "id": "b1-u17-l01-q10",
       "type": "listenType",
       "sentenceEn": "My cousin wants to be a firefighter.",
-      "sentenceZh": "我表弟想當消防員。"
+      "sentenceZh": "我的表親想當消防員。"
     },
     {
       "id": "b1-u17-l01-q11",
@@ -389,6 +389,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

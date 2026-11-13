@@ -91,7 +91,7 @@
       "type": "wordCard",
       "word": "master",
       "exampleEn": "My cousin has mastered three card tricks and shows them at every party.",
-      "exampleZh": "我表哥已經熟練了三個紙牌魔術，每次派對都會表演。",
+      "exampleZh": "我的表親已經熟練了三個紙牌魔術，每次派對都會表演。",
       "glossZh": "精通；大師",
       "distractorsZh": [
         "放棄",
@@ -308,6 +308,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn、passageZh",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

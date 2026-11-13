@@ -129,7 +129,7 @@
       "id": "b2-u19-l09-q10",
       "type": "shadowing",
       "sentenceEn": "My cousin studies at a cyberschool because her family travels a lot.",
-      "sentenceZh": "我表妹在網路學校上課，因為她家常常旅行。"
+      "sentenceZh": "我的表親在網路學校上課，因為她家常常旅行。"
     },
     {
       "id": "b2-u19-l09-q11",
@@ -323,6 +323,12 @@
         "message": "創辦人裁示：造句改翻譯：同課第二題翻譯沿用目標字 first language，兩題提示字不可練同一個本課目標字（TRANSLATE_HINT_DUP）；本題題目與參考答案不動",
         "resolution": "改為 []（原 [\"first language\"]）",
         "resolvedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "path": "items/9",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

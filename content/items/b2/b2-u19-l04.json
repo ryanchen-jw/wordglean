@@ -116,7 +116,7 @@
       "id": "b2-u19-l04-q09",
       "type": "listenType",
       "sentenceEn": "My cousin is an undergraduate studying engineering in the south.",
-      "sentenceZh": "我表弟是在南部念工程的大學部學生。"
+      "sentenceZh": "我的表親是在南部念工程的大學部學生。"
     },
     {
       "id": "b2-u19-l04-q10",
@@ -386,6 +386,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：referenceEn[0]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/8",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：sentenceZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

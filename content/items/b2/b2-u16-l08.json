@@ -186,10 +186,10 @@
       "id": "b2-u16-l08-q15",
       "type": "reading",
       "passageEn": "My cousin works at a public health office, and she told me about her job. During the pandemic, her team checked that hospitals had sanitary conditions and helped people in quarantine get food and supplies. The work was exhausting, and she often came home covered in perspiration after long days in protective clothing. Now her team studies other topics, such as how stimulants in coffee and energy drinks affect sleep and how children get enough nourishment at school. She also mentioned a new eye test that takes a picture of the retina. She says the job is hard, but she loves feeling useful. After a long day at work, her favorite treat is a big mango.",
-      "passageZh": "我表姊在公共衛生單位工作，她跟我聊了她的工作。疫情期間，她的團隊檢查醫院的衛生狀況是否合格，並協助被隔離的人取得食物和物資。工作非常累人，在防護衣裡熬過漫長的一天後，她回家時常常滿身是汗。現在她的團隊研究其他主題，例如咖啡和能量飲料裡的刺激物如何影響睡眠，以及孩子在學校能否獲得足夠的營養。她也提到一種新的眼睛檢查，會拍下視網膜的照片。她說這份工作很辛苦，但她喜歡覺得自己有用。忙了一整天下班後，她最愛的點心是一顆大芒果。",
+      "passageZh": "我的表親在公共衛生單位工作，她跟我聊了她的工作。疫情期間，她的團隊檢查醫院的衛生狀況是否合格，並協助被隔離的人取得食物和物資。工作非常累人，在防護衣裡熬過漫長的一天後，她回家時常常滿身是汗。現在她的團隊研究其他主題，例如咖啡和能量飲料裡的刺激物如何影響睡眠，以及孩子在學校能否獲得足夠的營養。她也提到一種新的眼睛檢查，會拍下視網膜的照片。她說這份工作很辛苦，但她喜歡覺得自己有用。忙了一整天下班後，她最愛的點心是一顆大芒果。",
       "questions": [
         {
-          "questionZh": "疫情期間，表姊的團隊做了什麼？",
+          "questionZh": "疫情期間，作者表親的團隊做了什麼？",
           "options": [
             "到國外協助興建好幾間新醫院",
             "檢查醫院衛生、幫助隔離者",
@@ -199,7 +199,7 @@
           "answer": 1
         },
         {
-          "questionZh": "表姊下班後最愛的點心是什麼？",
+          "questionZh": "作者的表親下班後最愛的點心是什麼？",
           "options": [
             "咖啡",
             "大芒果",
@@ -482,6 +482,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn、passageZh",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））、questions[1].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

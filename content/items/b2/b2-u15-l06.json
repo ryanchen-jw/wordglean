@@ -176,10 +176,10 @@
       "id": "b2-u15-l06-q14",
       "type": "reading",
       "passageEn": "My cousin from London visited us last summer, and we took her to a night market with bright, colorful lighting. At first, she pointed at a purple vegetable and called it an aubergine, and we all stared at her. She tried grilled prawns, fried spareribs and a spicy mutton soup. 'Yummy!' she said after every bite. At a fish stall, she was surprised to see ling, a fish she usually eats fried at home. Before we left, she bought a bag of junk food to share with her friends back in England. She said the market was like a giant cupboard full of new flavors.",
-      "passageZh": "我住在倫敦的表姊去年夏天來找我們，我們帶她去逛燈光繽紛的夜市。一開始，她指著一種紫色的蔬菜，叫它 aubergine，我們全都愣住了。她吃了烤明蝦、炸排骨和一碗辣羊肉湯。每吃一口她就說：「好好吃！」在一個魚攤，她很驚訝看到長鱈，那是她在家常吃的炸魚。離開前，她買了一袋垃圾食物，要帶回英國和朋友分享。她說夜市就像一個裝滿新口味的大櫥櫃。",
+      "passageZh": "我住在倫敦的表親去年夏天來找我們，我們帶她去逛燈光繽紛的夜市。一開始，她指著一種紫色的蔬菜，叫它 aubergine，我們全都愣住了。她吃了烤明蝦、炸排骨和一碗辣羊肉湯。每吃一口她就說：「好好吃！」在一個魚攤，她很驚訝看到長鱈，那是她在家常吃的炸魚。離開前，她買了一袋垃圾食物，要帶回英國和朋友分享。她說夜市就像一個裝滿新口味的大櫥櫃。",
       "questions": [
         {
-          "questionZh": "表姊一開始說了什麼，讓大家愣住？",
+          "questionZh": "作者的表親一開始說了什麼，讓大家愣住？",
           "options": [
             "用了一個英式的說法",
             "說她從來不吃辣的東西",
@@ -189,7 +189,7 @@
           "answer": 0
         },
         {
-          "questionZh": "表姊在家通常怎麼吃長鱈？",
+          "questionZh": "作者的表親在家通常怎麼吃長鱈？",
           "options": [
             "生吃",
             "做成魚湯",
@@ -406,6 +406,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））、questions[1].questionZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

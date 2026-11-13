@@ -188,7 +188,7 @@
       "id": "b1-u12-l02-q15",
       "type": "reading",
       "passageEn": "My cousin Ben is a hard-working nurse. He has a full-time job at a hospital, and he also works part-time at a bookstore on Sundays. His working hours are long and irregular, and the work is very tiring. Last month, he dozed off on the bus and missed his stop. His family is worried that overwork will hurt his health, so he plans to take a long holiday this summer.",
-      "passageZh": "我表哥 Ben 是一位勤奮的護理師。他在醫院有一份全職工作，星期天還在書店兼職。他的工作時間又長又不固定，工作也很累人。上個月，他在公車上打瞌睡，坐過了站。家人擔心過度工作會傷害他的健康，所以他打算今年夏天放個長假。",
+      "passageZh": "我的表親 Ben 是一位勤奮的護理師。他在醫院有一份全職工作，星期天還在書店兼職。他的工作時間又長又不固定，工作也很累人。上個月，他在公車上打瞌睡，坐過了站。家人擔心過度工作會傷害他的健康，所以他打算今年夏天放個長假。",
       "questions": [
         {
           "questionZh": "Ben 星期天在哪裡兼職？",
@@ -345,6 +345,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

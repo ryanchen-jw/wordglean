@@ -186,10 +186,10 @@
       "id": "b2-u43-l07-q15",
       "type": "reading",
       "passageEn": "At a family dinner last week, my uncle said that young people never read books anymore. My cousin, who is an optimist and a big reader, said that was an exaggeration. \"You can't generalize from one or two teenagers,\" she told him. She then refuted his point with numbers from the library: more young people borrowed books this year than last year. My uncle smiled knowingly and admitted that it was just a harmless way to start a lively conversation. He also said it was improbable that he could ever win an argument against her.",
-      "passageZh": "上週家庭聚餐時，我舅舅說年輕人現在都不讀書了。我表妹是個樂觀又愛讀書的人，她說這太誇張了。「你不能從一兩個青少年就推論所有人。」她對舅舅說。接著，她用圖書館的數字反駁了他的說法：今年借書的年輕人比去年還多。舅舅會意地笑了笑，承認那只是開啟熱鬧話題的無害方式。他還說，反正他也不太可能辯得贏她。",
+      "passageZh": "上週家庭聚餐時，我舅舅說年輕人現在都不讀書了。我的表親是個樂觀又愛讀書的人，她說這太誇張了。「你不能從一兩個青少年就推論所有人。」她對舅舅說。接著，她用圖書館的數字反駁了他的說法：今年借書的年輕人比去年還多。舅舅會意地笑了笑，承認那只是開啟熱鬧話題的無害方式。他還說，反正他也不太可能辯得贏她。",
       "questions": [
         {
-          "questionZh": "表妹怎麼反駁舅舅的說法？",
+          "questionZh": "作者的表親怎麼反駁舅舅的說法？",
           "options": [
             "說她自己一年讀了一百本書",
             "要舅舅去問年輕人",
@@ -203,7 +203,7 @@
           "options": [
             "他真的覺得年輕人不讀書",
             "想讓大家聊開來",
-            "想讓表妹當眾出糗",
+            "想讓作者的表親當眾出糗",
             "他剛看完一篇新聞報導"
           ],
           "answer": 1
@@ -331,6 +331,12 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：stemZh（中譯長幼）",
         "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[0].questionZh（中譯長幼（cousin））、questions[1].options[2]（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

@@ -181,7 +181,7 @@
         {
           "questionZh": "Amy 邀請時漏掉了誰？",
           "options": [
-            "Amy 自己的表妹",
+            "Amy 自己的表親",
             "Lisa 的表親",
             "班上的老師"
           ],
@@ -363,6 +363,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：questions[0].options[0]（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }

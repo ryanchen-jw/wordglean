@@ -186,7 +186,7 @@
       "id": "b2-u43-l09-q15",
       "type": "reading",
       "passageEn": "At fifty, my aunt decided to learn the piano. Her teacher told her to set small, achievable goals, like learning one short song a month. My aunt listened attentively in every lesson, and she practiced every evening. My cousin, who is a pessimist, said she would give up within a month, but my aunt seemed unconcerned. What mystified all of us was how fast she got better. Regrettably, her old piano was a bit shaky and out of tune, so she bought a new one. Now she obsesses over playing a difficult piece for my grandmother's birthday.",
-      "passageZh": "五十歲那年，我阿姨決定學鋼琴。老師要她定一些小而做得到的目標，例如每個月學會一首短曲。阿姨每堂課都很專心聽，每天晚上也都練習。我表哥是個悲觀的人，他說阿姨不到一個月就會放棄，但阿姨似乎一點也不在意。讓我們大家都想不通的是，她怎麼進步得那麼快。可惜她那台舊鋼琴有點不穩，音也不準，所以她買了一台新的。現在她一心想在奶奶生日時彈一首很難的曲子。",
+      "passageZh": "五十歲那年，我阿姨決定學鋼琴。老師要她定一些小而做得到的目標，例如每個月學會一首短曲。阿姨每堂課都很專心聽，每天晚上也都練習。我的表親是個悲觀的人，他說阿姨不到一個月就會放棄，但阿姨似乎一點也不在意。讓我們大家都想不通的是，她怎麼進步得那麼快。可惜她那台舊鋼琴有點不穩，音也不準，所以她買了一台新的。現在她一心想在奶奶生日時彈一首很難的曲子。",
       "questions": [
         {
           "questionZh": "老師建議阿姨怎麼做？",
@@ -203,7 +203,7 @@
           "options": [
             "老師要她換一台比較好的",
             "她想在生日派對上表演",
-            "舊鋼琴被表哥不小心弄壞了",
+            "舊鋼琴被作者的表親不小心弄壞了",
             "舊的那台不穩又走音"
           ],
           "answer": 3
@@ -331,6 +331,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：referenceEn[1]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageZh（中譯長幼（cousin））、questions[1].options[2]（中譯長幼（cousin））",
+        "resolvedAt": "2026-11-13T15:55:09Z"
       }
     ]
   }
