@@ -1,5 +1,5 @@
 // 路由表（docs/verification/2026-10-02-task11-shell-evidence/proposal.md）
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { authConfigFromEnv } from './auth/config'
 import { syncAfterSettle } from './auth/sessionHandle'
 import { db } from './data/appDb'
@@ -18,6 +18,9 @@ import { SettingsScreen } from './screens/settings/SettingsScreen'
 import { StubScreen } from './screens/StubScreen'
 import { WordsScreen } from './screens/words/WordsScreen'
 import { DEMO_SOURCE } from './lesson/demo'
+
+// 即時跟讀原型測試頁（TASK-39）：內部工具，App 內沒有入口，延遲載入不進首屏
+const LiveShadowingScreen = lazy(() => import('./screens/debug/LiveShadowingScreen'))
 
 // 尚未開放：模型下載（TASK-13／14）
 const STUB_PATHS = /^\/models$/
@@ -66,6 +69,12 @@ export function AppRoutes() {
   if (lesson) return <LessonScreen key={lesson[1]} lessonId={lesson[1]} onSettle={onLessonSettle} />
   if (pathname === '/review')
     return <ReviewScreen key={location.search} mode={reviewMode(location.search)} />
+  if (pathname === '/debug/live-shadowing')
+    return (
+      <Suspense fallback={null}>
+        <LiveShadowingScreen />
+      </Suspense>
+    )
   if (STUB_PATHS.test(pathname)) return <StubScreen />
   return <RedirectHome />
 }

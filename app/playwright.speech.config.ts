@@ -8,6 +8,11 @@ import { defineConfig, devices } from '@playwright/test'
 // 跑法：E2E_PORT=<埠> npx playwright test --config playwright.speech.config.ts [--project=…]
 const PORT = Number(process.env.E2E_PORT ?? 5308)
 const MIC_WAV = resolve(import.meta.dirname, 'e2e-speech/fixtures/librispeech/6930-75918-0007.wav')
+const fakeMic = [
+  '--use-fake-ui-for-media-stream',
+  '--use-fake-device-for-media-stream',
+  `--use-file-for-fake-audio-capture=${MIC_WAV}`,
+]
 
 export default defineConfig({
   testDir: './e2e-speech',
@@ -43,6 +48,26 @@ export default defineConfig({
             `--use-file-for-fake-audio-capture=${MIC_WAV}`,
           ],
         },
+      },
+    },
+    // TASK-39 即時跟讀原型頁：真模型＋假麥克風（同上）。live-page＝原型頁 smoke；live-exp1／live-exp2＝設計 §7 實驗 1、2。
+    // chromium-live-real 為 Playwright 預設 headless（無 WebGPU → WASM）；chromium-live-webgpu 用完整 chromium＋WebGPU，只跑實驗 1
+    {
+      name: 'chromium-live-real',
+      testMatch: 'live-*.spec.ts',
+      use: {
+        ...devices['Pixel 7'],
+        permissions: ['microphone'],
+        launchOptions: { args: fakeMic },
+      },
+    },
+    {
+      name: 'chromium-live-webgpu',
+      testMatch: 'live-exp1.spec.ts',
+      use: {
+        ...devices['Pixel 7'],
+        permissions: ['microphone'],
+        launchOptions: { channel: 'chromium', args: [...fakeMic, '--enable-unsafe-webgpu'] },
       },
     },
   ],

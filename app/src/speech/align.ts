@@ -164,7 +164,7 @@ export function tokenize(sentence: string): Word[] {
 }
 
 /** 兩字的字母編輯距離÷較長字長（0＝相同，1＝完全不同） */
-function charDistance(a: string, b: string): number {
+export function charDistance(a: string, b: string): number {
   if (a === b) return 0
   let prev = Array.from({ length: b.length + 1 }, (_, j) => j)
   for (let i = 1; i <= a.length; i++) {
