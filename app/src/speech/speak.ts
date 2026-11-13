@@ -7,14 +7,14 @@ import { createClips } from './clips'
 import { systemVoice } from './systemVoice'
 import { createTts, type Rate } from './tts'
 
-let urlIndex: Promise<Map<string, () => Promise<string>>> | null = null
+let urlIndex: Promise<Map<string, string>> | null = null
 
-/** 包名（課號或 dNNN）→ 取網址的函式；對照表第一次用到才 import() */
+/** 包名（課號或 dNNN）→ 網址；對照表第一次用到才 import() */
 function packUrls() {
   urlIndex ??= import('./audioUrls').then(({ lessonAudioUrls, dictAudioUrls }) => {
-    const map = new Map<string, () => Promise<string>>()
-    for (const [path, get] of Object.entries({ ...lessonAudioUrls, ...dictAudioUrls }))
-      map.set(path.slice(path.lastIndexOf('/') + 1, -'.lga'.length), get)
+    const map = new Map<string, string>()
+    for (const [path, url] of Object.entries({ ...lessonAudioUrls, ...dictAudioUrls }))
+      map.set(path.slice(path.lastIndexOf('/') + 1, -'.lga'.length), url)
     return map
   })
   return urlIndex
@@ -45,10 +45,7 @@ const canPlayMp3 = (() => {
 })()
 
 export const clips = createClips({
-  packUrl: async (id) => {
-    const get = (await packUrls()).get(id)
-    return get ? get() : null
-  },
+  packUrl: async (id) => (await packUrls()).get(id) ?? null,
   fetchPack: async (url) => {
     const res = await fetch(url)
     if (!res.ok) throw new Error(`音檔載入失敗：${res.status}`)

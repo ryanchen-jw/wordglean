@@ -1,4 +1,4 @@
-// 建置後守衛（TASK-24 W5）：下列三份資料不得內嵌進首屏 JS（首屏 JS 預算：超過 200KB gzip 警告、300KB 失敗，見 e2e/perf-budget.spec.ts）：
+// 建置後守衛（TASK-24 W5）：下列三份資料不得內嵌進首屏 JS、預快取項數不得超過上限（④）（首屏 JS 預算：超過 200KB gzip 警告、300KB 失敗，見 e2e/perf-budget.spec.ts）：
 //   ① 片語表（data/phrases/phrases.json）：必須是延遲載入的獨立資產
 //   ② 題目檔對照表（src/lesson/itemUrls.ts，約 1000 課的檔名→網址）：只可由 load.ts 以 import() 取得
 //   ③ 預產音檔包對照表（src/speech/audioUrls.ts，TASK-35）：只可由 speak.ts 以 import() 取得
@@ -61,6 +61,18 @@ if (audioHits.length > 0) {
   process.exit(1)
 }
 
+// ④ 預快取項數上限（TASK-35）：首次安裝 service worker 就要下載整份清單。main 在 TASK-35 前為 2,747 項；
+// lazy import.meta.glob 會替每個檔各產生一個小模組（曾因音檔包對照表多出約 1,565 項），超過上限就失敗
+const MAX_PRECACHE = 3000
+const precacheCount = (readFileSync(join(dist, 'sw.js'), 'utf-8').match(/\{url:"/g) ?? []).length
+if (precacheCount === 0) throw new Error('dist/sw.js 找不到預快取清單')
+if (precacheCount > MAX_PRECACHE) {
+  console.error(
+    `✗ 預快取 ${precacheCount} 項，超過上限 ${MAX_PRECACHE}（檢查是否有 lazy glob 產生大量小模組）`,
+  )
+  process.exit(1)
+}
+
 if (hits.length > 0) {
   console.error(
     `✗ 片語表內嵌進首屏 JS（應以 ?url 延遲載入）：命中 ${hits.length} 個片語，例：\n  ${hits.slice(0, 5).join('\n  ')}`,
@@ -68,5 +80,5 @@ if (hits.length > 0) {
   process.exit(1)
 }
 console.log(
-  `✓ 首屏 JS（${[...seen.keys()].join('、')}）不含片語表（檢查 ${markers.length} 個片語）、題目檔與音檔包對照表`,
+  `✓ 首屏 JS（${[...seen.keys()].join('、')}）不含片語表（檢查 ${markers.length} 個片語）、題目檔與音檔包對照表；預快取 ${precacheCount} 項（上限 ${MAX_PRECACHE}）`,
 )

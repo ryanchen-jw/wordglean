@@ -60,7 +60,7 @@ export function applyCapabilities(
 
 /**
  * 目前裝置的能力。金鑰（TASK-15）由呼叫端傳入：本機有沒有 OpenRouter 連結（llm/keyStore getLink）。
- * TTS、STT 由呼叫端傳入服務的判斷（speech/speak.ts ttsAvailable：內建聲音或已下載的高音質，TASK-13；
+ * TTS、STT 由呼叫端傳入服務的判斷（speech/speak.ts ttsAvailable：能播預產音檔或有內建聲音，TASK-35；
  * speech/services.ts sttUsable：能錄音且能跑本機辨識、或已同意瀏覽器語音辨識，TASK-14）；
  * 本檔不直接 import 語音服務，保持純邏輯（node 環境的單元測試也能載入）
  */

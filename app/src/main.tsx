@@ -10,6 +10,7 @@ import { db } from './data/appDb'
 import { refreshModel, refreshModelIfStale } from './llm/startup'
 import { applyPrefs, readPrefs } from './shell/prefs'
 import { watchFirstInteraction } from './sound/sfx'
+import { cleanupLegacyHqVoice } from './speech/legacyCleanup'
 
 // 先套外觀與字級再渲染，避免閃一下預設樣式
 applyPrefs(readPrefs())
@@ -23,6 +24,9 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState !== 'visible') return
   void refreshModelIfStale(db).catch((e: unknown) => console.warn('[openrouter] 模型檢查失敗', e))
 })
+
+// 舊版高音質發音（TASK-35 移除）留下的模型快取與旗標：清一次就好，失敗下次開啟再試
+void cleanupLegacyHqVoice().catch((e: unknown) => console.warn('[tts] 清除舊高音質快取失敗', e))
 
 // e2e 專用測試掛鉤（TASK-20）；一般建置此判斷為常數 false，整段被移除
 if (import.meta.env.VITE_E2E_HOOKS === 'true') void import('./testHooks')
