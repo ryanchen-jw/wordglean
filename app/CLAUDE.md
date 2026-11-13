@@ -17,7 +17,6 @@ React＋Vite＋TypeScript＋TailwindCSS；PWA 由 vite-plugin-pwa 產生 service
 | `npm test`                                                 | Vitest 單元測試（jsdom）                                                                                                    |
 | `npm run e2e`                                              | Playwright 手機模擬 e2e（自動 build＋preview）；`E2E_PORT` 可改埠                                                           |
 | `npm run e2e:sync`                                         | 登入與同步 e2e（含結算後同步）＋登入畫面視覺 smoke（需本機 Supabase，跑法見 `playwright.sync.config.ts`；不進 CI）          |
-| `npm run e2e:tts`                                          | 高音質發音真模型測試（下載約 310MB、需 WebGPU 與空閒記憶體 ≥3GB，見 `playwright.tts.config.ts`；不進 CI）                   |
 | `npx playwright test --config playwright.speech.config.ts` | 跟讀 e2e：s04 視覺 smoke（假辨識）＋真模型整合測試（`--project=chromium-stt-real`，會自 Hugging Face 下載約 52MB；不進 CI） |
 
 首次跑 e2e 前：`npx playwright install webkit chromium`（CI 用 `--with-deps`）。
@@ -44,9 +43,10 @@ app/
 │   │                    比對規則同 content 的 phrase-match）以獨立 json 資產預快取、不內嵌進 bundle
 │   ├── curriculum/      課綱型別與查詢；課綱檔以獨立 json 資產載入（不併進程式碼 bundle）
 │   ├── data/            Dexie 資料層、appDb.ts（App 唯一 db 實例）、匯出／清除
-│   ├── download/        模型下載狀態型別與進度元件（高音質發音、語音辨識皆已接真下載）
-│   ├── speech/          發音服務（TASK-13）：speak.ts＝App 唯一發音入口；預設手機內建聲音，高音質（Kokoro 選配，
-│   │                    kokoro.worker.ts、僅 WebGPU）失敗自動退回並提示。
+│   ├── download/        模型下載狀態型別與進度元件（語音辨識模型）
+│   ├── speech/          發音服務（TASK-13、TASK-35）：speak.ts＝App 唯一發音入口；先播預先產生的音檔（clips.ts，
+│   │                    一課一包＋字典專用包，對照表 audioUrls.ts 只以 import() 取得、不預快取，runtimeCaching lg-audio），
+│   │                    沒有或失敗就這一句用手機內建聲音；文字正規化 clipKey.ts、包格式 clipPack.ts 與 content/audio-gen 共用。
 │   │                    跟讀（TASK-14）：逐字比對 align.ts、Moonshine Worker（stt*.ts）、錄音與權限 mic.ts、
 │   │                    Web Speech 後備 webSpeech.ts（需同意）；畫面經 services.ts 的 SpeechContext 取用
 │   ├── auth/、sync/     登入與同步（TASK-20）；帳號區塊掛在設定頁 AccountSection
@@ -79,10 +79,10 @@ app/
   - `narrow.spec`＝320 標準／320 特大／375 特大下單字庫、設定、清除確認、分級測驗不破版（含子元素不伸出卡片、主鈕不留孤字）。手機量測（溢出、單行控件、44px、英文字串、body 色、容器內溢出）一律用 `e2e/measure.ts`，e2e-sync 也共用。
   - `placement-cards.spec`＝分級測驗字卡：勾選底色（淺／深色系 computed 比對 token）、最長字題本在多種寬度／字級下不斷字不溢出。
   - `today.spec`＝今日動線（`page.clock` 固定時間：第一天上課、第二天先複習再接下一課、首頁數字更新）與三能力皆不可用仍完成一課；`review-visual.spec`＝複習各狀態截圖、狀態色 computed 斷言、窄螢幕／特大字級（共用 `e2e/today.ts`）。
-  - `listen.spec`＝聽音打字／聽音選答；`tts-hq.spec`＝高音質發音強制失敗退回、下載失敗、崩潰旗標（攔下 Hugging Face／jsDelivr，不真的下載；WebKit 的 Cache Storage 不跨導覽保留，「已下載」狀態只在 chromium 驗）；內建聲音以 `e2e/speech.ts` 替身記錄呼叫。
+  - `listen.spec`＝聽音打字／聽音選答（含音檔抓不到時改用內建聲音）；`audio.spec`＝預產音檔按需載入（首次開啟不抓音檔包、預快取不含、進課只抓該課、抓過的離線可播）；預產音檔與內建聲音都以 `e2e/speech.ts` 替身記錄呼叫（`engine: 'clip' | 'system'`）。e2e 的音檔包為 `src/lesson/fixtures/audio/`（樣本課，以 content/audio-gen 產生）。
   - `openrouter.spec`＝一鍵授權（PKCE）／貼金鑰／清除金鑰／寫作題 AI 批改與失敗，openrouter.ai 全由假端點（`e2e/openrouter.ts`）回應，並檢查金鑰只送往 openrouter.ai；`openrouter-visual.spec`＝s06 寫作四態、s11 AI 區視覺 smoke。兩者封鎖 service worker（其請求不經 page.route）。
   - `matching.spec`＝配對題（App 端組題，lesson/matching.ts）：小課每 4 張單字卡後一題、配錯進錯題重做、複習每 4 張到期卡後一題、四態截圖與窄螢幕；`demo.spec`＝示範課 `/lesson/demo`（所有題型一課、`?type=` 從該題型開始、練習模式不寫任何本機資料、入口只在設定頁「測試課程」）。
-  - `perf-budget.spec`＝首屏 JS gzip 預算（創辦人裁示 2026-10-06）：超過 200KB 只警告（輸出數字與「⚠ 警告」、測試照過），超過 300KB 才失敗；字典、單字總表、片語表、語音模型不得出現在首屏請求。片語表與題目檔對照表不得內嵌進首屏 JS 另由 `npm run build` 最後的 `scripts/check-entry-lazy.mjs` 守住。
+  - `perf-budget.spec`＝首屏 JS gzip 預算（創辦人裁示 2026-10-06）：超過 200KB 只警告（輸出數字與「⚠ 警告」、測試照過），超過 300KB 才失敗；字典、單字總表、片語表、預產音檔包、語音模型不得出現在首屏請求。片語表、題目檔與音檔包對照表不得內嵌進首屏 JS 另由 `npm run build` 最後的 `scripts/check-entry-lazy.mjs` 守住。
   - `phrases.spec`＝片語課（TASK-24）：課程地圖片語單元、走完片語樣本課（含配對）、點片語中的字看到片語義（含可分離）、收藏片語進單字庫，三畫面截圖。
   - `lesson.spec`＝小課讀類三題型走完一課與續作；`lesson-visual.spec`＝小課各狀態截圖與窄螢幕／特大字級量測。e2e 的 webServer 帶 `VITE_ITEM_FIXTURES=true`，題目來源為 `src/lesson/fixtures/items/` 的樣本課。
   - 已知：WebKit（Windows build）原生 IndexedDB 一次寫 5000 筆約 77 秒（測試準備成本），該案例時限放寬到 150 秒。

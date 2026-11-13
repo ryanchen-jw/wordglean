@@ -239,19 +239,9 @@
     },
     "voice": {
       "title": "語音",
-      "tts": "發音",
-      "ttsValue": "手機內建聲音（預設）",
-      "ttsHq": "高音質發音（選配）",
-      "ttsHqNote": "約 310MB・需支援 WebGPU 的手機",
       "stt": "語音辨識模型",
       "sttNote": "跟讀用・約 50–80MB",
-      "hqUnsupported": "這支手機不支援高音質發音",
-      "ttsHqValue": "高音質發音",
-      "sfx": "音效",
-      "hqFailedWorker": "載入失敗：瀏覽器無法啟動高音質發音",
-      "hqFailedError": "下載或載入時發生錯誤",
-      "hqFailedTimeout": "載入失敗：等太久沒有回應",
-      "hqFailedCrashed": "載入失敗：載入途中頁面被手機關掉，可能是記憶體不夠"
+      "sfx": "音效"
     },
     "data": {
       "title": "資料",
@@ -315,13 +305,6 @@
     "stt": {
       "title": "語音辨識模型下載中",
       "body": "約 50–80MB，只需下載一次，之後不用網路也能跟讀。下載時可以先做別題，下載會在背景繼續。"
-    },
-    "hq": {
-      "confirmTitle": "下載高音質發音？",
-      "confirmBody": "約 310MB，建議連上 Wi-Fi 再下載。下載後不用網路也能用。",
-      "delete": "刪除高音質發音",
-      "deleteConfirmTitle": "刪除高音質發音？",
-      "deleteConfirmBody": "刪除後改用手機內建聲音，之後可以再下載。"
     }
   },
   "install": {
@@ -443,14 +426,11 @@
       "choiceTitle": "聽音選答",
       "typePrompt": "聽句子，把聽到的英文打出來",
       "slow": "慢速播放",
-      "systemVoice": "手機內建聲音",
       "placeholder": "把聽到的英文打在這裡",
       "giveUp": "聽不出來",
       "almost": "差一點：",
       "missing": "＿＿",
-      "answerWas": "答案是",
-      "hqHint": "想要更自然的發音，可以到設定開啟「高音質發音」（選配）",
-      "hqFailed": "高音質發音無法使用，已改用手機內建聲音"
+      "answerWas": "答案是"
     }
   },
   "speak": {
@@ -644,12 +624,12 @@
       "body": "錄音、OpenRouter 金鑰、寫作題的句子、外觀與字級設定、小課中途的作答，都不會同步到雲端資料庫。"
     },
     "downloads": {
-      "title": "下載語音模型",
-      "body": "選用高音質發音或語音辨識時，模型會直接從 Hugging Face 下載並存在這支手機；下載時只取得檔案，不會送出你的學習資料。"
+      "title": "下載語音辨識模型",
+      "body": "選用語音辨識（跟讀）時，模型會直接從 Hugging Face 下載並存在這支手機；下載時只取得檔案，不會送出你的學習資料。"
     },
     "tts": {
       "title": "發音",
-      "body": "預設用手機內建的聲音唸題目的英文句子。有些瀏覽器的內建聲音會透過廠商的網路服務合成，這時送出的只有題目句子。"
+      "body": "題目的英文句子、單字與片語，播放的是事先產生、隨拾字從本站提供的音檔；第一次用到時才下載，存在這支手機。沒有對應音檔（例如課程以外的單字）或音檔載入失敗時，改用手機內建的聲音。有些瀏覽器的內建聲音會透過廠商的網路服務合成，這時送出的只有要唸的英文。"
     },
     "clear": {
       "title": "匯出與清除",
@@ -711,6 +691,11 @@
       "license": "題目文字採 CC BY-SA 4.0",
       "note": "例句、選項、短文、翻譯與評分要點由開發端撰寫。選字與分級依據的來源不在此範圍，各依原授權（見上方「單字資料」）。"
     },
+    "audio": {
+      "name": "課程發音音檔",
+      "license": "CC BY-SA 4.0",
+      "note": "課程的單字、片語、句子，以及字典中含連字號的字，由開發端用模型 Kokoro-82M（音色 af_heart）事先產生，隨 App 從本站提供。"
+    },
     "curriculum": {
       "name": "課綱與分級測驗題本",
       "license": "依單字資料各來源的條款",
@@ -744,12 +729,12 @@
     "kokoroJs": {
       "name": "kokoro-js 1.2.1",
       "license": "Apache-2.0",
-      "note": "高音質發音（選配）的合成程式。"
+      "note": "事先產生發音音檔的合成程式；只在開發端使用，不包含在 App 裡。"
     },
     "transformers": {
       "name": "@huggingface/transformers 3.8.1",
       "license": "Apache-2.0",
-      "note": "在瀏覽器裡執行語音模型（高音質發音與語音辨識共用）。"
+      "note": "在瀏覽器裡執行語音辨識模型。"
     },
     "onnxruntime": {
       "name": "onnxruntime-web",
@@ -759,17 +744,17 @@
     "phonemizer": {
       "name": "phonemizer 1.2.1",
       "license": "Apache-2.0",
-      "note": "高音質發音的英文音素轉換，內含 eSpeak NG。"
+      "note": "產生發音音檔時的英文音素轉換，內含 eSpeak NG；不包含在 App 裡。"
     },
     "espeak": {
       "name": "eSpeak NG",
       "license": "GPL-3.0-or-later",
-      "note": "經 phonemizer 包含在程式裡；GPL-3.0 與本專案的 AGPL-3.0 相容。"
+      "note": "經 phonemizer 於產生發音音檔時使用；不包含在 App 裡。"
     },
     "kokoroModel": {
       "name": "模型 Kokoro-82M",
       "license": "Apache-2.0",
-      "note": "高音質發音的聲音模型；不包含在程式裡，選用時直接從 Hugging Face 下載。"
+      "note": "發音音檔的聲音模型（音色 af_heart）；模型本身不包含在 App 裡。"
     },
     "moonshineWeb": {
       "name": "moonshine-web 範例",

@@ -35,8 +35,8 @@ npm run dev   # http://localhost:5287，用瀏覽器的手機模擬開啟
 
 | 目錄 | 內容 |
 |---|---|
-| `app/` | React＋Vite＋TailwindCSS 手機版 PWA；語音合成、語音辨識、字典、FSRS 都在瀏覽器執行 |
-| `content/` | 課綱、題庫 JSON、分級測驗題本，以及產生與檢查它們的程式 |
+| `app/` | React＋Vite＋TailwindCSS 手機版 PWA；語音辨識、字典、FSRS 都在瀏覽器執行，發音播放預先產生的音檔 |
+| `content/` | 課綱、題庫 JSON、分級測驗題本、預先產生的發音音檔，以及產生與檢查它們的程式 |
 | `data/` | 單字資料（CEFR-J、Octanove、TSL／NGSL、ECDICT 衍生），依各來源授權分檔 |
 | `supabase/` | 資料表、Row Level Security、migrations（登入與同步用） |
 | `docs/` | 規格、調查、自架指南、隱私說明 |

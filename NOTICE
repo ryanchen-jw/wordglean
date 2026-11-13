@@ -56,6 +56,9 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
             - Octanove C1/C2（級距）：CC BY-SA 4.0
             - TSL 1.2（多益常考字旗標）、NGSL 1.2（旗標，同在 lexicon 中）：CC BY-SA 4.0
             - ECDICT（排課用的詞頻、出題時提供給撰寫端的釋義參考）：MIT
+- 課程發音音檔（content/audio/）
+  以模型 Kokoro-82M（音色 af_heart）在開發端預先產生（content/audio-gen/，TASK-35）：課程的單字、片語、句子，
+  以及字典中含連字號的字；句子音檔衍生自上列題目文字，音檔整體採 CC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/）
 - 課綱與分級測驗題本（content/curriculum/、content/placement/）依 data/LICENSES.md 各來源條款（見 content/CLAUDE.md「授權分界」）
 - 程式碼（app/、content/scripts/、content/schema/、content/test/ 等）仍為 AGPL-3.0（見 LICENSE）
 
@@ -73,14 +76,14 @@ data/ 目錄內的單字資料預設以 Creative Commons Attribution-ShareAlike 
 - opencc-js 1.4.2（MIT；內含 OpenCC 字典資料，Apache-2.0）：Copyright (c) 2020-2021 The nk2028 Project；https://github.com/nk2028/opencc-js — 使用範圍：AI 批改解釋的簡體字與大陸用語轉台灣繁體（cn→twp，app/src/llm/zhTw.ts；批改回應到達時才載入）；字典資料衍生自 opencc-data（https://github.com/nk2028/opencc-data），授權見套件內 THIRD_PARTY_LICENSES.md
 - Dexie.js（Apache-2.0）：https://github.com/dexie/Dexie.js — 使用範圍：本機 IndexedDB 資料層（app/src/data/）
   NOTICE 原文：Copyright (c) 2014-2017 David Fahlander. Licensed under the Apache License, Version 2.0.
-高音質發音（Kokoro 選配，TASK-13；只在使用者選用並下載後於瀏覽器 Worker 執行，app/src/speech/kokoro.worker.ts）：
-  - kokoro-js 1.2.1（Apache-2.0）：https://github.com/hexgrad/kokoro（kokoro.js）
-  - @huggingface/transformers 3.8.1（Apache-2.0）：https://github.com/huggingface/transformers.js（與 TASK-14 共用同一份）
-  - onnxruntime-web（MIT）：https://github.com/microsoft/onnxruntime——@huggingface/transformers 內含的推論引擎 wasm，隨 app 從本站提供（與 TASK-14 共用同一份）
-  - phonemizer 1.2.1（npm 標 Apache-2.0）：https://github.com/xenova/phonemizer.js——內含編譯成 WebAssembly 的 eSpeak NG
-  - eSpeak NG（GPL-3.0-or-later）：https://github.com/espeak-ng/espeak-ng——經 phonemizer 隨程式散布；GPL-3.0 與本專案 AGPL-3.0 相容（AGPL-3.0 第 13 條）
-  - 模型 Kokoro-82M（Apache-2.0）：https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX——不隨程式散布，使用者下載時直接取自 Hugging Face
-語音辨識（跟讀，TASK-14；Moonshine 在瀏覽器 Worker 執行，app/src/speech/stt.worker.ts；與高音質發音共用上列 @huggingface/transformers 3.8.1 與 onnxruntime-web 的 wasm）：
+預先產生發音音檔（TASK-35；開發端在本機產生 content/audio/ 時使用，content/audio-gen/build-audio.mjs；工具與模型不隨 app 散布，產生的音檔隨 app 從本站提供）：
+  - kokoro-js 1.2.1（Apache-2.0）：https://github.com/hexgrad/kokoro（kokoro.js）——合成程式
+  - phonemizer 1.2.1（npm 標 Apache-2.0）：https://github.com/xenova/phonemizer.js——英文音素轉換，內含編譯成 WebAssembly 的 eSpeak NG
+  - eSpeak NG（GPL-3.0-or-later）：https://github.com/espeak-ng/espeak-ng——經 phonemizer 於產生音檔時使用，不隨 app 散布
+  - 模型 Kokoro-82M（Apache-2.0）：https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX——音色 af_heart；不隨程式散布
+語音辨識（跟讀，TASK-14；Moonshine 在瀏覽器 Worker 執行，app/src/speech/stt.worker.ts）：
+  - @huggingface/transformers 3.8.1（Apache-2.0）：https://github.com/huggingface/transformers.js
+  - onnxruntime-web（MIT）：https://github.com/microsoft/onnxruntime——@huggingface/transformers 內含的推論引擎 wasm，隨 app 從本站提供
   - moonshine-web 範例（Apache-2.0）：https://github.com/huggingface/transformers.js-examples/tree/main/moonshine-web——
     app/src/speech/sttEngine.ts 改寫自其 worker（裝置偵測、依裝置分精度、暖機、推論鏈）
   - 模型 Moonshine tiny（MIT，Useful Sensors）ONNX 版 onnx-community/moonshine-tiny-ONNX——不隨程式散布，

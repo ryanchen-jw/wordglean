@@ -167,3 +167,11 @@
 | 2c 移除舊功能 | hqVoice／kokoro.worker／kokoroProtocol、設定頁高音質選項與下載列、`download/download.ts` 中高音質的部分（下載元件語音辨識仍在用，保留）、/debug/voice（VoiceDiagnosticsScreen＋routes）、tts-hq.spec、playwright.tts.config、e2e:tts、vite.config 的 kokoro 條目、kokoro-js 依賴；更新 privacy、NOTICE、credits.ts、README、app/CLAUDE.md；設定頁語音區文案列給創辦人逐字審 | 約 −1,800／+150 行 |
 
 建議順序 2a → 2b → 2c；2b、2c 可同一 worker 依序做（2c 依賴 2b 的新引擎）。
+
+## 6. 第二階段實作紀錄（與上方設計不同處）
+
+- 裁示（執行長轉創辦人，2026-11-13）：48 kbps、頭尾靜音裁切採用、不做同形異音覆寫表與 `_headers`；兩字以上連念（片語）一律要有預產音檔；字典含連字號的字也預產（字典專用包）。
+- 字典專用包：`data/dict` 各切片詞條含連字號者（12,289 個，小寫去重），以 FNV-1a 32 位元雜湊 `% 512` 分包（`clipKey.ts` 的 `dictPackOf`），App 與產生端算同一包，**不需字→包對照表**；包網址表與課程包同在 `audioUrls.ts`（只以 `import()` 取得）。日後加字只動該字所在的一包。
+- 字典點到片語：468 個片語全都是片語課的單字卡（逐一核對，缺 0），依課綱字→課找到課的包。
+- 並行實測：同機 3 個行程各自吃滿 CPU（onnxruntime 預設多執行緒），每行程慢 5–6 倍、總吞吐反而低於單行程，改為單行程跑完。
+- 聽題卡的「手機內建聲音」標示、高音質首次提示與失敗提示、播放鈕忙碌標示一併拿掉（皆為高音質而設）。

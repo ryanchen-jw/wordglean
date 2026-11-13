@@ -16,7 +16,7 @@
 | 前端 | React＋Vite＋TailwindCSS（可用 shadcn） | 題型互動多 |
 | 前端部署 | Cloudflare Pages | 免費 |
 | 後端 | **不寫後端**；Supabase（PostgreSQL＋Auth＋Row Level Security） | 登入、同步、權限都由 Supabase 處理；他人可自架一份 |
-| 語音合成（聽） | **預設用手機系統內建聲音**；Kokoro-82M 為設定裡的選配（僅 WebGPU 可用時提供 fp32 版、約 310MB，下載前告知） | 原型實測 Kokoro 在手機瀏覽器即時合成過慢（見 `docs/research/voice-poc.md`；2026-10-02 創辦人裁示） |
+| 語音合成（聽） | 課程的單字、片語、句子與字典中含連字號的字，**播放開發端以 Kokoro-82M（af_heart）預先產生的音檔**，按需載入；沒有音檔才用手機系統內建聲音。手機端不下載模型 | 原型實測 Kokoro 在手機瀏覽器即時合成過慢（見 `docs/research/voice-poc.md`）；2026-11-13 創辦人裁示改預先產生（TASK-35） |
 | 語音辨識（說） | 手機瀏覽器跑 Moonshine tiny（約 50–80MB：WASM 版約 52MB、WebGPU 版約 76MB，MIT；2026-10-02 創辦人 G3 裁示，原估 28MB 版實測輸出亂碼）；Web Speech API 僅作最後後備 | 錄音不離開手機 |
 | LLM（寫作批改、語法解釋） | OpenRouter，**使用者自帶帳號**（OAuth PKCE 一鍵授權或貼金鑰），金鑰只存使用者瀏覽器、由瀏覽器直接呼叫；使用者可自選模型 | 營運者零 LLM 成本、伺服器不碰金鑰 |
 | 單字查義 | 內建 ECDICT（MIT，76 萬詞條，含音標、詞性），以 OpenCC s2twp 轉台灣繁體 | 免費、離線、無額度 |

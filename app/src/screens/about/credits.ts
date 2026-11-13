@@ -2,7 +2,7 @@
 // NOTICE 增刪條目時同步改這裡與 zh-TW.json，LicensesScreen.test.tsx 會比對兩者
 export const CREDIT_SECTIONS = [
   { id: 'data', credits: ['cefrj', 'octanove', 'tsl', 'ngsl', 'ecdict', 'phrases'] },
-  { id: 'content', credits: ['items', 'curriculum', 'code'] },
+  { id: 'content', credits: ['items', 'audio', 'curriculum', 'code'] },
   { id: 'ported', credits: ['librelingo'] },
   {
     id: 'runtime',
@@ -11,11 +11,11 @@ export const CREDIT_SECTIONS = [
       'openccJs',
       'dexie',
       'kokoroJs',
-      'transformers',
-      'onnxruntime',
       'phonemizer',
       'espeak',
       'kokoroModel',
+      'transformers',
+      'onnxruntime',
       'moonshineWeb',
       'moonshineModel',
       'notoSansTc',
