@@ -53,11 +53,14 @@ export default function LiveShadowingScreen() {
   const [elapsed, setElapsed] = useState(0)
   const [skipped, setSkipped] = useState(0)
   const session = useRef<{ mic: LiveMic; stop: () => void } | null>(null)
+  // 取得麥克風中（權限還沒回應）：期間按停止或離開頁面就標 cancelled，權限回來時立即釋放
+  const pending = useRef<{ cancelled: boolean } | null>(null)
 
   useEffect(() => {
     const release = client.acquire()
     void client.refresh()
     return () => {
+      if (pending.current) pending.current.cancelled = true
       session.current?.stop()
       release()
     }
@@ -75,15 +78,29 @@ export default function LiveShadowingScreen() {
   }, [running])
 
   async function start() {
+    // 連按只建立一條錄音
+    if (pending.current || session.current) return
+    const req = { cancelled: false }
+    pending.current = req
     setError(null)
     setStopReason(null)
     setRounds([])
     setSkipped(0)
+    setRunning(true)
     let mic: LiveMic
     try {
       mic = await startLiveMic()
     } catch (e) {
-      setError(String(e))
+      pending.current = null
+      if (!req.cancelled) {
+        setError(String(e))
+        setRunning(false)
+      }
+      return
+    }
+    pending.current = null
+    if (req.cancelled) {
+      mic.stop()
       return
     }
     const on = createLiveMatch(target, { confirm: true })
@@ -105,8 +122,8 @@ export default function LiveShadowingScreen() {
         const next = { on: on.update(r.text), off: off.update(r.text) }
         setMatch(next)
         if (mode === 'shadow' && next[confirmRef.current ? 'on' : 'off'].complete) {
-          loop.stop()
           end('complete')
+          loop.stop()
         }
       },
       onStop: (reason, e) => {
@@ -115,7 +132,15 @@ export default function LiveShadowingScreen() {
       },
     })
     session.current = { mic, stop: () => loop.stop() }
-    setRunning(true)
+  }
+
+  function stop() {
+    if (pending.current) {
+      pending.current.cancelled = true
+      pending.current = null
+      setRunning(false)
+      setStopReason('stopped')
+    } else session.current?.stop()
   }
   const ms = rounds.map((r) => r.ms)
   const half = (first: boolean) =>
@@ -267,7 +292,7 @@ export default function LiveShadowingScreen() {
       <Button
         variant={running ? 'danger' : 'primary'}
         disabled={!ready && !running}
-        onClick={() => (running ? session.current?.stop() : void start())}
+        onClick={() => (running ? stop() : void start())}
       >
         {running ? 'Stop' : 'Start'}
       </Button>

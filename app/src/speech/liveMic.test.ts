@@ -1,5 +1,65 @@
-import { describe, expect, it } from 'vitest'
-import { createRing, downsample, peakFrameRms } from './liveMic'
+import { afterEach, describe, expect, it, vi } from 'vitest'
+import { createRing, downsample, peakFrameRms, startLiveMic } from './liveMic'
+
+/** 假的 getUserMedia／AudioContext／AudioWorkletNode，記錄釋放動作 */
+function fakeAudio({ addModuleFails = false } = {}) {
+  const track = { stop: vi.fn() }
+  const ctx = {
+    sampleRate: 48_000,
+    audioWorklet: {
+      addModule: vi.fn(() => (addModuleFails ? Promise.reject(new Error('x')) : Promise.resolve())),
+    },
+    resume: vi.fn(async () => {}),
+    close: vi.fn(async () => {}),
+    destination: {},
+    createMediaStreamSource: vi.fn(() => ({ connect: vi.fn() })),
+  }
+  const node = {
+    port: { onmessage: null as unknown },
+    connect: vi.fn(),
+    disconnect: vi.fn(),
+  }
+  vi.stubGlobal('navigator', {
+    mediaDevices: { getUserMedia: vi.fn(async () => ({ getTracks: () => [track] })) },
+  })
+  vi.stubGlobal(
+    'AudioContext',
+    vi.fn(function () {
+      return ctx
+    }),
+  )
+  vi.stubGlobal(
+    'AudioWorkletNode',
+    vi.fn(function () {
+      return node
+    }),
+  )
+  URL.createObjectURL = vi.fn(() => 'blob:x')
+  URL.revokeObjectURL = vi.fn()
+  return { track, ctx, node }
+}
+
+afterEach(() => vi.unstubAllGlobals())
+
+describe('startLiveMic 釋放資源', () => {
+  it('stop()：音軌停止、worklet 斷開、AudioContext 關閉', async () => {
+    const { track, ctx, node } = fakeAudio()
+    const mic = await startLiveMic()
+    expect(node.connect).toHaveBeenCalledWith(ctx.destination)
+    mic.stop()
+    expect(track.stop).toHaveBeenCalledTimes(1)
+    expect(node.disconnect).toHaveBeenCalledTimes(1)
+    expect(node.port.onmessage).toBeNull()
+    expect(ctx.close).toHaveBeenCalledTimes(1)
+  })
+
+  it('載入 worklet 失敗：音軌停止、AudioContext 關閉', async () => {
+    const { track, ctx } = fakeAudio({ addModuleFails: true })
+    await expect(startLiveMic()).rejects.toThrow('x')
+    expect(track.stop).toHaveBeenCalledTimes(1)
+    expect(ctx.close).toHaveBeenCalledTimes(1)
+  })
+})
 
 describe('createRing', () => {
   it('只留最近 capacity 個樣本，跨過結尾仍依序', () => {
