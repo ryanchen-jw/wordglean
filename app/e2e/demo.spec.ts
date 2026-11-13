@@ -130,6 +130,10 @@ test('/lesson/demo 依序走完所有題型（單字卡、配對、選擇、閱�
   await expect(done).toContainText(`${TOTAL} 題`)
   await expect(done).toContainText(`答對 ${TOTAL - 1} 題`)
   await expect(done).not.toContainText('已加入單字庫')
+  // TASK-38：副標是「測試課程」、不像上完某一課；沒有複習連結
+  await expect(done.getByText('測試課程', { exact: true })).toBeVisible()
+  await expect(done).not.toContainText('基礎常用字')
+  await expect(done.getByRole('button', { name: '再複習一次剛學的字' })).toHaveCount(0)
   await shot(page, info, 'demo-done')
   expect(await snapshot(page)).toEqual(before)
 })
