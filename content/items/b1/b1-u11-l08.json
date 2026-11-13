@@ -105,7 +105,7 @@
       "word": "rubbish",
       "exampleEn": "Please put your rubbish in the bin.",
       "exampleZh": "請把垃圾丟進垃圾桶。",
-      "glossZh": "垃圾；廢話；（英式）",
+      "glossZh": "垃圾（英式）；廢話",
       "distractorsZh": [
         "食物",
         "零錢",
@@ -512,6 +512,18 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：passageZh（中譯長幼）、questions[0].questionZh（中譯長幼）、questions[1].questionZh（中譯長幼）",
         "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 2 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

@@ -53,8 +53,8 @@
       "id": "c1-p01-l01-q04",
       "type": "wordCard",
       "word": "carve out",
-      "exampleEn": "Few artists manage to carve out successful careers.",
-      "exampleZh": "很少有藝術家能成功闖出自己的事業。",
+      "exampleEn": "A career in art is hard to build, but she carved one out for herself.",
+      "exampleZh": "在藝術界很難闖出一番事業，但她為自己闖出了一片天。",
       "glossZh": "開創（事業、地位）",
       "distractorsZh": [
         "逐步淘汰",
@@ -174,8 +174,8 @@
     {
       "id": "c1-p01-l01-q14",
       "type": "reading",
-      "passageEn": "Ten years ago, Nina left a safe job to start a company that makes furniture from recycled wood. Many people doubted her idea, but she wanted a place for herself in a crowded market, and slowly she carved it out. Problems cropped up constantly: suppliers were late, machines broke down, and one large customer refused to pay. When journalists ask about her success, she says it boils down to two things: patience and a willingness to learn from mistakes. Her early sales figures bear this out: the first three years were difficult, but each year was better than the last.",
-      "passageZh": "十年前，Nina 辭去一份穩定的工作，創辦了一家用回收木材做家具的公司。很多人懷疑她的點子，但她想在競爭激烈的市場中佔有一席之地，後來也慢慢闖了出來。問題接二連三地冒出來：供應商延誤交貨、機器故障，還有一位大客戶拒絕付款。記者問起她成功的原因時，她說歸根究柢就是兩件事：耐心，以及願意從錯誤中學習。她早期的銷售數字就證實了這一點：前三年很辛苦，但每一年都比前一年好。",
+      "passageEn": "Ten years ago, Nina left a safe job to start a company that makes furniture from recycled wood. Many people doubted her idea, but she slowly carved out a place for herself in a crowded market. Problems cropped up constantly: suppliers were late, machines broke down, and one large customer refused to pay. When journalists ask about her success, she says it boils down to two things: patience and a willingness to learn from mistakes. Her early sales figures bear this out: the first three years were difficult, but each year was better than the last.",
+      "passageZh": "十年前，Nina 辭去一份穩定的工作，創辦了一家用回收木材做家具的公司。很多人懷疑她的點子，但她慢慢在競爭激烈的市場中闖出了一席之地。問題接二連三地冒出來：供應商延誤交貨、機器故障，還有一位大客戶拒絕付款。記者問起她成功的原因時，她說歸根究柢就是兩件事：耐心，以及願意從錯誤中學習。她早期的銷售數字就證實了這一點：前三年很辛苦，但每一年都比前一年好。",
       "questions": [
         {
           "questionZh": "Nina 的公司做什麼？",
@@ -356,6 +356,24 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：passageEn（片語補句（代名詞拆開））、passageZh（片語補句（代名詞拆開））",
         "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/13",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（驗收觀察）、passageZh（驗收觀察）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（驗收觀察）、exampleZh（驗收觀察）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 2 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

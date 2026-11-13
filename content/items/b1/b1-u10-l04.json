@@ -55,7 +55,7 @@
       "word": "jumper",
       "exampleEn": "My grandmother knitted this jumper for me.",
       "exampleZh": "這件毛衣是奶奶為我織的。",
-      "glossZh": "毛衣；套頭衫；（英式）",
+      "glossZh": "毛衣（英式）；套頭衫",
       "distractorsZh": [
         "襯衫",
         "褲子",
@@ -345,6 +345,12 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
       }
     ]
   }

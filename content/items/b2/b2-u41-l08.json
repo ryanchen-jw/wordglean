@@ -107,7 +107,7 @@
       "word": "sack",
       "exampleEn": "He was sacked for always arriving late.",
       "exampleZh": "他因為老是遲到被開除了。",
-      "glossZh": "開除（口語）；裝袋；（英式：開除義）",
+      "glossZh": "開除（英式口語）；裝袋",
       "distractorsZh": [
         "錄取",
         "升職",
@@ -358,6 +358,18 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：passageEn",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 3 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

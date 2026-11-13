@@ -90,8 +90,8 @@
       "id": "b1-u41-l07-q07",
       "type": "wordCard",
       "word": "enrich",
-      "exampleEn": "Farmers enrich their land with old leaves.",
-      "exampleZh": "農夫用落葉讓土地更肥沃。",
+      "exampleEn": "Learning a new language can enrich your life.",
+      "exampleZh": "學一種新語言能讓你的生活更豐富。",
       "glossZh": "使豐富；使富裕",
       "distractorsZh": [
         "減少",
@@ -433,6 +433,18 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：passageZh（中譯（zh-findings））",
         "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：exampleEn（驗收觀察）、exampleZh（驗收觀察）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 2 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

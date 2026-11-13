@@ -94,7 +94,7 @@
       "word": "pavement",
       "exampleEn": "Please don't park your bike on the pavement outside the shop.",
       "exampleZh": "請不要把腳踏車停在店門口的人行道上。",
-      "glossZh": "人行道；路面；（英式：人行道義）",
+      "glossZh": "人行道（英式）；路面",
       "distractorsZh": [
         "屋頂",
         "草地",
@@ -369,6 +369,18 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：passageZh（中譯長幼）",
         "resolvedAt": "2026-11-13T15:42:15Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 2 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

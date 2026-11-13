@@ -79,7 +79,7 @@
       "word": "queue",
       "exampleEn": "Please join the queue and wait your turn.",
       "exampleZh": "請排隊等候輪到你。",
-      "glossZh": "隊伍；排隊的行列；（英式）",
+      "glossZh": "隊伍（英式）；排隊的行列",
       "distractorsZh": [
         "座位",
         "號碼",
@@ -105,7 +105,7 @@
       "word": "noticeboard",
       "exampleEn": "The noticeboard is next to the front door.",
       "exampleZh": "公告欄在前門旁邊。",
-      "glossZh": "公告欄；（英式）",
+      "glossZh": "公告欄（英式）",
       "distractorsZh": [
         "黑板",
         "窗戶",
@@ -415,6 +415,24 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：audioEn（套用後檢查器修正）",
         "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/5",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "items/7",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 3 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

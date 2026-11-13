@@ -53,7 +53,7 @@
       "word": "carriage",
       "exampleEn": "The first carriage of the train was empty.",
       "exampleZh": "火車的第一節車廂是空的。",
-      "glossZh": "（火車）車廂；馬車；（英式：火車車廂義）",
+      "glossZh": "（火車）車廂（英式）；馬車",
       "distractorsZh": [
         "車頂",
         "車站",
@@ -392,6 +392,18 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：options[0]、options[1]、options[2]、options[3]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/3",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察：英式標註格式）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 1 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

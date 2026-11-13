@@ -92,7 +92,7 @@
       "word": "zip",
       "exampleEn": "The inside pocket of this bag has a zip, so small things like keys won't fall out.",
       "exampleZh": "這個包包的內袋有拉鍊，鑰匙之類的小東西就不會掉出來。",
-      "glossZh": "拉鍊",
+      "glossZh": "拉鍊（英式）",
       "distractorsZh": [
         "鈕扣",
         "口袋",
@@ -404,6 +404,18 @@
         "message": "TASK-36 英文全面審查套用（docs/pending/2026-11-13-english-review/apply.jsonl）",
         "resolution": "改寫欄位：referenceEn[0]",
         "resolvedAt": "2026-11-13T15:27:49Z"
+      },
+      {
+        "path": "items/6",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：glossZh（驗收觀察）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 2 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }

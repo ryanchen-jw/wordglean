@@ -185,7 +185,7 @@
     {
       "id": "b1-u30-l05-q15",
       "type": "reading",
-      "passageEn": "Our class visited a local radio station. In the newsroom, a woman was writing the headlines for the evening broadcast. She told us that she updates the news every hour. Then the manager made an announcement: the station will start a virtual tour on its website. In an old store room, we saw piles of disks with recordings from fifty years ago. A worker was making a scan of an old poster that proclaimed the opening of the station.",
+      "passageEn": "Our class visited a local radio station. In the newsroom, a woman was writing the headlines for the evening broadcast. She told us that she updates the news every hour. Then the manager made an announcement: the station will start a virtual tour on its website. In an old storeroom, we saw piles of disks with recordings from fifty years ago. A worker was making a scan of an old poster that proclaimed the opening of the station.",
       "passageZh": "我們班參觀了一家地方廣播電台。在新聞室裡，一位女士正在為晚間廣播撰寫新聞標題。她告訴我們，她每個小時更新一次新聞。接著經理宣布了一件事：電台將在網站上推出虛擬導覽。在一間舊倉庫裡，我們看到一疊疊磁碟，裡面是五十年前的錄音。一位員工正在掃描一張舊海報，那張海報宣告了電台開播。",
       "questions": [
         {
@@ -349,6 +349,18 @@
         "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
         "resolution": "改寫欄位：passageEn（題庫外問題）",
         "resolvedAt": "2026-11-13T15:41:55Z"
+      },
+      {
+        "path": "items/14",
+        "message": "TASK-36 英文審查後續修正（套用後檢查器、片語補句、中譯、題庫外問題）",
+        "resolution": "改寫欄位：passageEn（驗收觀察）",
+        "resolvedAt": "2026-11-13T16:09:59Z"
+      },
+      {
+        "path": "judge/verdicts",
+        "message": "TASK-36 補件：英文審查改寫後選擇類題目重判（開發端 Claude 盲判，judge-mcq.v1 規則）",
+        "resolution": "重判 2 題位",
+        "resolvedAt": "2026-11-13T16:13:02Z"
       }
     ]
   }
