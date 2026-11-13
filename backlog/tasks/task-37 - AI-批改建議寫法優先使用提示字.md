@@ -1,9 +1,10 @@
 ---
 id: TASK-37
 title: AI 批改建議寫法優先使用提示字
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-13 15:21'
+updated_date: '2026-11-13 16:08'
 labels:
   - app
 dependencies: []
@@ -31,6 +32,15 @@ AI 批改的建議寫法，在自然的前提下優先使用題目的提示字�
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 中翻英批改指令含「在自然的前提下，建議寫法優先使用提示字」規則，造句題不受影響
-- [ ] #2 有單元測試；lint、typecheck、npm test、build 過；openrouter e2e 綠
+- [x] #1 中翻英批改指令含「在自然的前提下，建議寫法優先使用提示字」規則，造句題不受影響
+- [x] #2 有單元測試；lint、typecheck、npm test、build 過；openrouter e2e 綠
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-13 16:08
+---
+2026-11-14 驗收通過（與 TASK-36、38 合驗 PASS）；prompt 版本 grade-writing.v4。
+---
+<!-- COMMENTS:END -->

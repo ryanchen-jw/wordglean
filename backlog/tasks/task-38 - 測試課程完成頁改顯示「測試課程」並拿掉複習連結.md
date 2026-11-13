@@ -1,9 +1,10 @@
 ---
 id: TASK-38
 title: 測試課程完成頁改顯示「測試課程」並拿掉複習連結
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-13 15:21'
+updated_date: '2026-11-13 16:08'
 labels:
   - app
 dependencies: []
@@ -31,6 +32,15 @@ app/src/screens/lesson/LessonDone.tsx 已有 demo 分支（TASK-30 只換了主�
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 示範課完成頁副標為「測試課程」，沒有「再複習一次剛學的字」連結；正式課完成頁不變
-- [ ] #2 有單元與 demo.spec 斷言；lint、typecheck、npm test、build 過；demo、lesson e2e 兩引擎綠
+- [x] #1 示範課完成頁副標為「測試課程」，沒有「再複習一次剛學的字」連結；正式課完成頁不變
+- [x] #2 有單元與 demo.spec 斷言；lint、typecheck、npm test、build 過；demo、lesson e2e 兩引擎綠
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-13 16:08
+---
+2026-11-14 驗收通過（與 TASK-36、37 合驗 PASS）。
+---
+<!-- COMMENTS:END -->
