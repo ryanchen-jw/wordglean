@@ -1,10 +1,10 @@
 ---
 id: TASK-36
 title: 英文審查修改套用到題庫＋中譯修正＋音檔重產
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-13 15:21'
-updated_date: '2026-11-13 16:08'
+updated_date: '2026-11-13 16:15'
 labels:
   - content
 dependencies: []
@@ -47,5 +47,10 @@ ordinal: 33000
 created: 2026-11-13 16:08
 ---
 2026-11-14 驗收官 PASS：抽讀 472 列（固定種子 3638），內容錯誤 0；已併入 main 76603ac。補件進行中：538 題實質改寫的選擇題沿用舊判題紀錄需重判，另修驗收觀察（英式標註格式、store room、b2-u48-l05-q10 線索、zip 未標、enrich 釋義、零星語感）。
+---
+
+created: 2026-11-13 16:15
+---
+2026-11-14 補件 540b9eb：TASK-36 改過的 621 題（1,048 判題位置）盲判重判全數確認；英式標註 62 欄統一；驗收觀察 10 項修正；check-items --require-judge 全綠。
 ---
 <!-- COMMENTS:END -->
