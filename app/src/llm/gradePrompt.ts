@@ -1,10 +1,11 @@
 // 寫作批改 prompt（規格 §6：LLM 改錯並以繁中解釋語法）；輸出 JSON 欄位見 parseGrade.ts
 // 版本號隨 prompt 改動遞增，評測報告（docs/research/llm-eval.md）引用同一版
 // v3（創辦人 2026-10-04 裁示 2）：點名台灣文法術語、禁簡體與大陸用語、一律用中文解釋（llm-eval.md §9）
+// v4（TASK-37，創辦人 2026-11-13 裁示）：中翻英的 corrected 在自然的前提下優先用提示字（造句題不加）
 import type { ChatMessage } from './client'
 import { TW_GRAMMAR_EXAMPLES, TW_GRAMMAR_TERMS } from './zhTw.ts'
 
-export const GRADE_PROMPT_VERSION = 'grade-writing.v3'
+export const GRADE_PROMPT_VERSION = 'grade-writing.v4'
 
 const TERMS = [
   ...TW_GRAMMAR_TERMS.map(([mainland, taiwan]) => `${taiwan} (never ${mainland})`),
@@ -47,6 +48,9 @@ export function gradeMessages(task: GradeTask): ChatMessage[] {
     `${task.kind === 'translate' ? 'Chinese sentence' : 'Instruction (Chinese)'}: ${task.promptZh}`,
     task.words.length > 0 &&
       `${task.kind === 'translate' ? 'Hint words' : 'Must use the word'}: ${task.words.join(', ')}`,
+    task.kind === 'translate' &&
+      task.words.length > 0 &&
+      'Use the hint words in "corrected" when it reads naturally; not using them is not an error.',
     `Target CEFR level: ${task.level ?? 'unknown'}`,
     `Reference answers: ${task.referenceEn.map((r) => `"${r}"`).join(' / ')}`,
     `Grading points (Chinese): ${task.rubricZh.join('；')}`,

@@ -119,6 +119,11 @@ describe('示範課 /lesson/demo（創辦人 2026-10-05 裁示二）', () => {
     const done = await screen.findByTestId('lesson-done')
     expect(done).toHaveTextContent('10 題')
     expect(done).toHaveTextContent('答對 9 題')
+    // TASK-38：副標是「測試課程」、不掛任何一課；沒有「再複習一次剛學的字」
+    expect(within(done).getByText('測試課程')).toBeInTheDocument()
+    expect(done).not.toHaveTextContent('第 1 課')
+    expect(within(done).queryByRole('button', { name: '再複習一次剛學的字' })).toBeNull()
+    expect(within(done).getByRole('button', { name: '返回' })).toBeInTheDocument()
     expect(onSettle).not.toHaveBeenCalled()
     expect(await tables()).toEqual(EMPTY)
     expect(loadItems).toHaveBeenCalledWith(DEMO_SOURCE)

@@ -102,6 +102,9 @@ test('課程地圖「開始這一課」→ 三種題型作答 → 完成頁 → 
   await expect(done).toContainText('20 題')
   await expect(done).toContainText('答對 17 題')
   await expect(done).toContainText('答錯的 1 題已排進明天的複習')
+  // 正式課完成頁不受 TASK-38 影響：有複習連結、沒有「測試課程」
+  await expect(done.getByRole('button', { name: '再複習一次剛學的字' })).toBeVisible()
+  await expect(done).not.toContainText('測試課程')
 
   await done.getByRole('button', { name: '回到今天' }).click()
   await expect(page).toHaveURL(/\/$/)

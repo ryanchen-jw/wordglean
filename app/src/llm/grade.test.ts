@@ -36,6 +36,7 @@ describe('gradeMessages', () => {
         'Task type: Translate the Chinese into English',
         'Chinese sentence: 儘管很累，她還是完成了工作。',
         'Hint words: despite',
+        'Use the hint words in "corrected" when it reads naturally; not using them is not an error.',
         'Target CEFR level: B1',
         'Reference answers: "Despite being tired, she finished the work." / "Despite feeling tired, she finished her work."',
         'Grading points (Chinese): despite 後面接名詞或動名詞，不接完整子句；主要子句時態用過去式',
@@ -46,13 +47,26 @@ describe('gradeMessages', () => {
 
   // 創辦人 2026-10-04 裁示 2：v2 評測 qwen 有簡體字、大陸文法術語（介詞、賓語）、整段英文解釋（llm-eval.md §7）
   it('v3：明令台灣文法術語（點名不得用的大陸術語）、一律用中文解釋', () => {
-    expect(GRADE_PROMPT_VERSION).toBe('grade-writing.v3')
     const system = gradeMessages(TASK)[0].content
     expect(system).toContain('介系詞 (never 介詞)')
     expect(system).toContain('受詞 (never 賓語)')
     expect(system).toContain('不定詞 (never 不定式)')
     expect(system).toContain('never Simplified Chinese characters')
     expect(system).toContain('Write every explanation in Chinese')
+  })
+
+  // TASK-37：提示字 whom，建議寫法卻用 who，看起來像提示錯
+  it('v4：中翻英要求 corrected 在自然的前提下優先用提示字；造句題與無提示字不加', () => {
+    expect(GRADE_PROMPT_VERSION).toBe('grade-writing.v4')
+    const rule =
+      'Use the hint words in "corrected" when it reads naturally; not using them is not an error.'
+    const [system, user] = gradeMessages(TASK)
+    expect(user.content).toContain(rule)
+    expect(system.content).not.toContain(rule)
+    const make = gradeMessages({ ...TASK, kind: 'makeSentence' })[1].content
+    expect(make).toContain('Must use the word: despite')
+    expect(make).not.toContain(rule)
+    expect(gradeMessages({ ...TASK, words: [] })[1].content).not.toContain(rule)
   })
 
   it('造句：說明與指定字的標籤不同；沒有提示字就不列', () => {

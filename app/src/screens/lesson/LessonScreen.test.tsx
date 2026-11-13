@@ -282,6 +282,7 @@ describe('小課畫面（AC#2 單元層）', () => {
     expect(done).toHaveTextContent('14 題')
     expect(done).toHaveTextContent('答對 12 題')
     expect(done).toHaveTextContent('答錯的 1 題已排進明天的複習')
+    expect(done).not.toHaveTextContent('測試課程')
     expect(onSettle).toHaveBeenCalledOnce()
     expect(await db.courseProgress.get(LESSON)).toBeDefined()
     fireEvent.click(within(done).getByRole('button', { name: '回到今天' }))
