@@ -1,9 +1,10 @@
 ---
 id: TASK-39
 title: 即時跟讀（一）原型測試頁與延遲、誤標實驗
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-11-13 17:49'
+updated_date: '2026-11-13 18:45'
 labels:
   - app
 dependencies: []
@@ -35,9 +36,18 @@ ordinal: 36000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 原型頁 /debug/live-shadowing 可在手機開啟，錄音中即時印出每輪辨識文字與耗時，可切 3／4／6 秒視窗，並顯示目標句的即時標記
-- [ ] #2 App 內沒有連到原型頁的入口（有測試）
-- [ ] #3 實驗 1：桌機各視窗每輪耗時（中位數與 P90）；實驗 2：截掉句尾的誤標率，開與關兩輪確認各一組；數字附重跑方式
-- [ ] #4 實驗 3、4 的手機操作說明完成
-- [ ] #5 lint、typecheck、npm test、build 過；既有跟讀 e2e（假辨識）綠；首屏 JS 不受影響
+- [x] #1 原型頁 /debug/live-shadowing 可在手機開啟，錄音中即時印出每輪辨識文字與耗時，可切 3／4／6 秒視窗，並顯示目標句的即時標記
+- [x] #2 App 內沒有連到原型頁的入口（有測試）
+- [x] #3 實驗 1：桌機各視窗每輪耗時（中位數與 P90）；實驗 2：截掉句尾的誤標率，開與關兩輪確認各一組；數字附重跑方式
+- [x] #4 實驗 3、4 的手機操作說明完成
+- [x] #5 lint、typecheck、npm test、build 過；既有跟讀 e2e（假辨識）綠；首屏 JS 不受影響
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-13 18:45
+---
+2026-11-14 驗收通過（獨立驗收官 PASS）：桌機每輪 3–4 秒視窗約 0.3 秒、6 秒約 0.5 秒；誤標率（1 秒＋兩輪確認）0–1.0%。補件 e010e13 修背景錄音漏洞、補釋放測試。★ 待創辦人手機實驗 3、4（docs/pending/2026-11-13-live-shadowing/experiments.md）。
+---
+<!-- COMMENTS:END -->
