@@ -19,6 +19,13 @@ vi.mock('../../sound/sfx', async (orig) => ({
   holdSfx: vi.fn(() => sfxRelease.fn),
 }))
 
+// 整句錄音（TASK-14）：TASK-40 起課程預設為即時跟讀，整句錄音由「改用整句錄音」進入；這裡把跟讀題直接掛 ShadowingView 測它本身的行為
+vi.mock('./views', async (orig) => {
+  const m = await orig<typeof import('./views')>()
+  const { ShadowingView } = await import('./ShadowingView')
+  return { QUESTION_VIEWS: { ...m.QUESTION_VIEWS, shadowing: ShadowingView } }
+})
+
 // TASK-14 跟讀（設計 s04 七個狀態）；期望文案取自設計 s04 與 zh-TW.json。
 // 規格 §6 G2：分數以送出句為準；每次送出都記一筆辨識原文 vs 送出句（Round 1 D1），第一次送出才計分（D3）
 const LESSON = 'a1-u01-l01'
@@ -89,6 +96,10 @@ function fakeSpeech({
     micPermission: async () => mic,
     requestMic: vi.fn(async () => true),
     startRecording: vi.fn(async () => ({ stop: async () => new Float32Array(16_000), cancel })),
+    liveMicSupported: () => true,
+    startLiveMic: vi.fn(async () => {
+      throw new Error('整句錄音不用即時取樣')
+    }),
   }
   return { services, stt, set, release, cancel }
 }

@@ -2,6 +2,7 @@
 // 分數以第一次送出的句子為準（規格 §6 G2）；之後「再唸一次」只當練習，但每次送出都寫紀錄（Round 1 D1、D3）
 // 設計偏差：模型未下載時先顯示下載鈕、按了才下載（D4）；回饋條第二行為目標句＋中譯（D6）
 // 本機辨識不能用（瀏覽器不能錄音、沒有 WebAssembly、模型載入失敗）時才提出瀏覽器語音辨識後備，需先同意（D8）
+// TASK-40 起課程預設為即時跟讀（LiveShadowingView），本畫面為「改用整句錄音」與「一口氣再唸一次」（practice：不計分）
 import { Download, Info, LoaderCircle, Mic, MicOff, Square, Volume2 } from 'lucide-react'
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react'
 import { EnglishText } from '../../dict/EnglishText'
@@ -20,6 +21,7 @@ import { ConfirmDialog } from '../../ui/ConfirmDialog'
 import { FeedbackBar } from '../../ui/FeedbackBar'
 import { LessonFoot, LessonMain } from './frame'
 import type { QuestionProps } from './types'
+import { clock, recCls, reducedMotion, WAVE } from './recControls'
 import { ZhText } from './ZhText'
 
 type Ui =
@@ -32,39 +34,21 @@ type Ui =
 // 錄不到這麼久就結束而失敗，算錄音太短
 const TOO_SHORT_MS = 1000
 
-// 音量條靜止時的高度（設計 s04 recording）；錄音中依音量縮放
-const WAVE = [6, 12, 20, 14, 22, 10, 16, 6]
-
-const recBase =
-  'grid size-[76px] place-items-center rounded-full transition-transform duration-(--lg-duration-press) ease-standard active:scale-(--lg-press-scale) disabled:active:scale-100'
-const recCls = {
-  idle: `${recBase} bg-primary text-on-primary`,
-  on: `${recBase} bg-error text-on-primary shadow-[0_0_0_6px_var(--lg-error-bg),0_0_0_8px_var(--lg-error)]`,
-  busy: `${recBase} bg-disabled-bg text-disabled-text`,
-  denied: `${recBase} border-2 border-error bg-surface text-error`,
-}
-
-const reducedMotion = () =>
-  typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-
-const clock = (ms: number) => {
-  const s = Math.floor(ms / 1000)
-  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`
-}
-
 export function ShadowingView({
   item,
   onAnswer,
   onContinue,
   onSpeech,
-}: QuestionProps<ShadowingItem>) {
+  practice = false,
+}: QuestionProps<ShadowingItem> & { practice?: boolean }) {
   // 離開這個畫面時停掉自己發起、還沒念完的發音（TASK-32）
   const speak = useSpeak()
   const speech = useSpeech()
   const model = useSyncExternalStore(speech.stt.subscribe, speech.stt.get)
   const [mic, setMic] = useState<MicPermission | null>(null)
   const [ui, setUi] = useState<Ui>({ kind: 'idle' })
-  const [answered, setAnswered] = useState(false)
+  // practice＝即時跟讀完成後的「一口氣再唸一次」：已計過分，只當練習
+  const [answered, setAnswered] = useState(practice)
   const [level, setLevel] = useState(0)
   const [now, setNow] = useState(0)
   const [asking, setAsking] = useState(false)
@@ -523,7 +507,7 @@ function TargetCard({ children }: { children: ReactNode }) {
   )
 }
 
-function RecWrap({
+export function RecWrap({
   children,
   skip,
   onSkip,
@@ -551,7 +535,7 @@ function RecWrap({
 }
 
 /** 語音辨識模型：未下載＝下載鈕；下載中＝進度；失敗＝錯誤色＋重試（components.md §4 模型下載進度） */
-function ModelCard({ state, onDownload }: { state: SttState; onDownload: () => void }) {
+export function ModelCard({ state, onDownload }: { state: SttState; onDownload: () => void }) {
   const downloading = state.kind === 'downloading'
   const failed = state.kind === 'failed'
   const pct = downloading ? Math.round(state.progress * 100) : 0

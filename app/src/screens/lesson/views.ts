@@ -3,10 +3,10 @@ import type { ComponentType } from 'react'
 import type { StepType } from '../../lesson/queue'
 import { ListenChoiceView } from './ListenChoiceView'
 import { ListenTypeView } from './ListenTypeView'
+import { LiveShadowingView } from './LiveShadowingView'
 import { MatchingView } from './MatchingView'
 import { McqView } from './McqView'
 import { ReadingView } from './ReadingView'
-import { ShadowingView } from './ShadowingView'
 import type { QuestionProps } from './types'
 import { WordCardView } from './WordCardView'
 import { WritingView } from './WritingView'
@@ -17,7 +17,8 @@ export const QUESTION_VIEWS: Partial<Record<StepType, ComponentType<QuestionProp
   reading: ReadingView as ComponentType<QuestionProps>,
   listenType: ListenTypeView as ComponentType<QuestionProps>,
   listenChoice: ListenChoiceView as ComponentType<QuestionProps>,
-  shadowing: ShadowingView as ComponentType<QuestionProps>,
+  // 即時跟讀（TASK-40）；整句錄音（ShadowingView）由畫面內「改用整句錄音」進入
+  shadowing: LiveShadowingView as ComponentType<QuestionProps>,
   translate: WritingView as ComponentType<QuestionProps>,
   makeSentence: WritingView as ComponentType<QuestionProps>,
   matching: MatchingView,

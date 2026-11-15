@@ -37,7 +37,8 @@ export interface CourseProgress {
   updatedAt: number
 }
 
-/** 跟讀紀錄：每次送出一筆；recognizedText＝辨識原文、correctedText＝使用者送出的句子（分數以送出句為準，規格 §6 G2） */
+/** 跟讀紀錄：整句錄音每次送出一筆；recognizedText＝辨識原文、correctedText＝使用者送出的句子（分數以送出句為準，規格 §6 G2）。
+ *  即時跟讀（TASK-40）每題一筆：recognizedText＝每輪聽到的文字以「 | 」串接（連續相同的只留一次）、correctedText＝空字串；不存錄音 */
 export interface SpeechCorrection {
   id: string
   itemId: string

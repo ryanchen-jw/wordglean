@@ -9,6 +9,7 @@ import {
   type Recording,
 } from './mic'
 import { e2eSpeechServices } from './e2eSpeech'
+import { liveMicSupported, startLiveMic, type LiveMic } from './liveMic'
 import { stt, type SttClient } from './stt'
 import { isSttUsable } from './usable'
 import { webSpeech, type WebSpeech } from './webSpeech'
@@ -20,6 +21,9 @@ export interface SpeechServices {
   micPermission(): Promise<MicPermission>
   requestMic(): Promise<boolean>
   startRecording(onLevel?: (level: number) => void): Promise<Recording>
+  /** 即時跟讀（TASK-40）：錄音中就取樣（AudioWorklet）；不支援就不能用本機即時辨識 */
+  liveMicSupported(): boolean
+  startLiveMic(): Promise<LiveMic>
   webSpeech: WebSpeech
   /** 這支手機能不能做跟讀（題型替代規則用，TASK-18 capabilities） */
   sttUsable(): boolean
@@ -38,6 +42,8 @@ const realSpeechServices: SpeechServices = {
   micPermission,
   requestMic,
   startRecording,
+  liveMicSupported,
+  startLiveMic: () => startLiveMic(),
   webSpeech,
 }
 
