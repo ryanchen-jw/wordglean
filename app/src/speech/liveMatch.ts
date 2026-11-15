@@ -1,7 +1,9 @@
 // 即時跟讀的不照順序比對（TASK-39，設計 docs/pending/2026-11-13-live-shadowing/design.md §3）：
 // 每一輪辨識文字以半全域對齊（目標句兩端空缺不計成本、句中跳字半價）對回目標句，只認完全相同的比對字；
 // 原字的比對字要在同一輪全部對到才算唸到；重複字以上下文決定，單獨出現對到第一個未完成的；
-// 兩輪確認（預設開）：相鄰兩輪都唸到才完成；功能字不擋整句完成（裁示 B 版），整句完成時未完成的功能字標為輕讀。
+// 確認（預設開）：最近 3 輪中有 2 輪唸到才完成（TASK-40；TASK-39 原為相鄰兩輪，幻聽輪次夾在中間會打斷）；
+// 功能字不擋整句完成（裁示 B 版），整句完成時未完成的功能字標為輕讀。
+// 幻聽輪次（非拉丁字母、重複迴圈）整輪丟棄、不算一輪；單輪只取前 maxWords 個字（TASK-40，創辦人手機實測）。
 // 只吃「這一輪聽到的文字」，不依賴辨識引擎
 import { charDistance, tokenize } from './align'
 
@@ -34,11 +36,17 @@ export interface LiveState {
   /** 完成（含輕讀）的字數 */
   doneCount: number
   complete: boolean
+  /** 被當成幻聽丟棄的輪數 */
+  dropped: number
 }
 
 export interface LiveMatchOptions {
-  /** 兩輪確認：相鄰兩輪都唸到才完成（預設開） */
+  /** 確認：最近 confirmWindow 輪中有 2 輪唸到才完成（預設開） */
   confirm?: boolean
+  /** 確認看最近幾輪（預設 3；2＝TASK-39 的相鄰兩輪，實驗 2 對照用） */
+  confirmWindow?: number
+  /** 丟棄幻聽輪次、限制單輪長度（預設開；關閉＝TASK-39 行為，實驗 2 對照用） */
+  screen?: boolean
   /** true＝功能字也要唸到才算整句完成（原版 A）；預設 false（B 版） */
   functionWordsBlock?: boolean
 }
@@ -51,6 +59,40 @@ const GAP_TARGET = 0.5
 const EXACT = -0.01
 /** 對到已完成的字多一點成本：同分時優先對到未完成的（重複字規則） */
 const DONE_PENALTY = 1e-3
+
+/** 單輪最多取幾個字：4 秒視窗、每秒 4 字（快速朗讀約每秒 3 字）；超出的多半是模型續寫 */
+export const MAX_ROUND_WORDS = 16
+
+const NON_LATIN = /(?![\p{Script=Latin}])\p{L}/u
+
+/** 同一段（1–4 字）連續出現 3 次以上＝重複迴圈（實測：all all all…、I always use. ×7） */
+function looping(words: string[]): boolean {
+  for (let n = 1; n <= 4; n++)
+    for (let i = 0; i + 3 * n <= words.length; i++) {
+      let reps = 1
+      while (
+        i + (reps + 1) * n <= words.length &&
+        words.slice(i + reps * n, i + (reps + 1) * n).every((w, k) => w === words[i + k])
+      )
+        reps++
+      if (reps >= 3) return true
+    }
+  return false
+}
+
+/** 一輪辨識文字的篩選：幻聽整輪丟棄（不拿來比對），否則只留前 maxWords 個字 */
+export function screenHeard(
+  text: string,
+  maxWords = MAX_ROUND_WORDS,
+): { text: string } | { dropped: 'script' | 'loop' } {
+  if (NON_LATIN.test(text)) return { dropped: 'script' }
+  const raw = text.trim().split(/\s+/).filter(Boolean)
+  const words = raw
+    .map((w) => w.toLowerCase().replace(/^[^\p{L}\p{N}']+|[^\p{L}\p{N}']+$/gu, ''))
+    .filter(Boolean)
+  if (looping(words)) return { dropped: 'loop' }
+  return { text: raw.length > maxWords ? raw.slice(0, maxWords).join(' ') : text }
+}
 
 /** 半全域對齊，回傳這一輪「完全相同」配對到的目標比對字索引 */
 export function matchParts(target: string[], heard: string[], done: boolean[]): Set<number> {
@@ -89,6 +131,8 @@ export function matchParts(target: string[], heard: string[], done: boolean[]): 
 
 export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions = {}) {
   const confirm = opts.confirm ?? true
+  const confirmWindow = opts.confirmWindow ?? 3
+  const screen = opts.screen ?? true
   const tWords = tokenize(targetSentence)
   const owner = tWords.flatMap((w, k) => w.parts.map(() => k))
   const parts = tWords.flatMap((w) => w.parts)
@@ -104,10 +148,11 @@ export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions =
     doneAt: null,
     hits: 0,
   }))
-  const lastHit = tWords.map(() => -1)
+  const lastHit = tWords.map(() => -Infinity)
   let round = 0
   let longestRun = 0
   let complete = false
+  let dropped = 0
 
   const snapshot = (): LiveState => ({
     words: words.map((w) => ({ ...w })),
@@ -115,6 +160,7 @@ export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions =
     longestRun,
     doneCount: words.filter((w) => w.mark === 'done' || w.mark === 'light').length,
     complete,
+    dropped,
   })
 
   return {
@@ -122,6 +168,14 @@ export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions =
     /** 餵入一輪聽到的文字，回傳更新後的狀態；整句完成後不再變動 */
     update(heard: string): LiveState {
       if (complete) return snapshot()
+      if (screen) {
+        const r = screenHeard(heard)
+        if ('dropped' in r) {
+          dropped++
+          return snapshot()
+        }
+        heard = r.text
+      }
       round++
       const done = owner.map((k) => words[k].mark === 'done')
       const hit = matchParts(
@@ -140,15 +194,16 @@ export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions =
         if (!matched[k]) continue
         const w = words[k]
         w.hits++
-        if (w.mark !== 'done' && (!confirm || lastHit[k] === round - 1)) {
+        if (w.mark !== 'done' && (!confirm || lastHit[k] > round - confirmWindow)) {
           w.mark = 'done'
           w.doneAt = round
         } else if (w.mark === 'todo') w.mark = 'heard'
         lastHit[k] = round
       }
-      // 上一輪唸到、這一輪沒唸到：確認失敗，退回未完成
+      // 唸到的那輪已滑出確認範圍（下一輪不可能湊滿 2 輪）：確認失敗，退回未完成
       for (let k = 0; k < words.length; k++)
-        if (words[k].mark === 'heard' && lastHit[k] !== round) words[k].mark = 'todo'
+        if (words[k].mark === 'heard' && lastHit[k] <= round + 1 - confirmWindow)
+          words[k].mark = 'todo'
 
       if (words.every((w, k) => !blocking[k] || w.mark === 'done')) {
         complete = true

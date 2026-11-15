@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { createLiveMatch, matchParts } from './liveMatch'
+import { createLiveMatch, matchParts, screenHeard } from './liveMatch'
 
 const marks = (s: { words: { text: string; mark: string }[] }) =>
   s.words.map((w) => `${w.text}:${w.mark}`).join(' ')
@@ -40,12 +40,38 @@ describe('createLiveMatch', () => {
     expect(s.doneCount).toBe(5)
   })
 
-  it('兩輪確認：要相鄰兩輪都唸到才完成，中間斷一輪就退回', () => {
+  it('確認規則：最近 3 輪中有 2 輪唸到才完成；中間夾一輪沒唸到仍可確認，隔兩輪才退回', () => {
     const m = createLiveMatch('I want to eat dinner')
+    expect(marks(m.update('eat'))).toBe('I:todo want:todo to:todo eat:heard dinner:todo')
+    expect(marks(m.update('hello'))).toBe('I:todo want:todo to:todo eat:heard dinner:todo')
+    expect(marks(m.update('eat'))).toBe('I:todo want:todo to:todo eat:done dinner:todo')
+    m.update('dinner')
+    m.update('hello')
+    expect(marks(m.update('hello'))).toBe('I:todo want:todo to:todo eat:done dinner:todo')
+    expect(marks(m.update('dinner'))).toBe('I:todo want:todo to:todo eat:done dinner:heard')
+  })
+
+  it('confirmWindow 2＝舊規則：相鄰兩輪都唸到才完成，中間斷一輪就退回', () => {
+    const m = createLiveMatch('I want to eat dinner', { confirmWindow: 2 })
     expect(marks(m.update('eat'))).toBe('I:todo want:todo to:todo eat:heard dinner:todo')
     expect(marks(m.update('hello'))).toBe('I:todo want:todo to:todo eat:todo dinner:todo')
     m.update('eat dinner')
     expect(marks(m.update('eat dinner'))).toBe('I:todo want:todo to:todo eat:done dinner:done')
+  })
+
+  it('幻聽輪次被丟棄、不算一輪，也不打斷確認', () => {
+    const m = createLiveMatch('I want to eat dinner')
+    m.update('eat')
+    // 創辦人手機（Android Chrome 157）實際輸出
+    for (const junk of [
+      'مرحبا بكم',
+      '我想吃晚餐',
+      'all all all all all',
+      'I always use. I always use. I always use. I always use.',
+    ])
+      expect(m.update(junk).round).toBe(1)
+    expect(marks(m.update('eat'))).toBe('I:todo want:todo to:todo eat:done dinner:todo')
+    expect(m.state().dropped).toBe(4)
   })
 
   it('功能字不擋完成（B 版）：未唸到的標輕讀；functionWordsBlock 時要唸到', () => {
@@ -98,5 +124,39 @@ describe('createLiveMatch', () => {
     const m = createLiveMatch('to be or', { confirm: false })
     expect(m.update('to be').complete).toBe(false)
     expect(m.update('or').complete).toBe(true)
+  })
+})
+
+describe('screenHeard（丟棄幻聽、限制長度）', () => {
+  it('非拉丁字母輸出整輪丟棄（阿拉伯文、中文，夾英文也丟）', () => {
+    expect(screenHeard('شكرا لكم على المشاهدة')).toEqual({ dropped: 'script' })
+    expect(screenHeard('我要吃晚餐')).toEqual({ dropped: 'script' })
+    expect(screenHeard('I want 晚餐')).toEqual({ dropped: 'script' })
+  })
+
+  it('重複迴圈整輪丟棄：同一段（1–4 字）連續出現 3 次以上', () => {
+    expect(screenHeard('all all all')).toEqual({ dropped: 'loop' })
+    expect(screenHeard('All, all, all, all...')).toEqual({ dropped: 'loop' })
+    expect(
+      screenHeard(
+        'I always use. I always use. I always use. I always use. I always use. I always use. I always use.',
+      ),
+    ).toEqual({ dropped: 'loop' })
+    expect(screenHeard('The English, the English, the English')).toEqual({ dropped: 'loop' })
+  })
+
+  it('正常輸出照收：重複兩次、重音字母、數字、標點都不算幻聽', () => {
+    expect(screenHeard('dinner dinner')).toEqual({ text: 'dinner dinner' })
+    expect(screenHeard('I had a café at 10.')).toEqual({ text: 'I had a café at 10.' })
+    expect(screenHeard('The Lord said unto Moses')).toEqual({ text: 'The Lord said unto Moses' })
+    expect(screenHeard('')).toEqual({ text: '' })
+  })
+
+  it('單輪輸出長度上限：超過 maxWords 只留前面的字', () => {
+    expect(screenHeard('one two three four five', 3)).toEqual({ text: 'one two three' })
+    const long = Array.from({ length: 30 }, (_, i) => `w${i}`).join(' ')
+    expect(screenHeard(long)).toEqual({
+      text: Array.from({ length: 16 }, (_, i) => `w${i}`).join(' '),
+    })
   })
 })

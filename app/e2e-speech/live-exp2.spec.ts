@@ -1,5 +1,5 @@
 // TASK-39 實驗 2（設計 §7）：補字誤標——LibriSpeech 測試音檔截掉句尾（只播前段），看沒播到的字被標成完成的比例；
-// 兩輪確認開／關各一組（同一串辨識結果分別餵兩個比對器，辨識條件完全相同）。
+// 確認開／關各一組，另加 TASK-39 舊規則（相鄰兩輪確認、不丟幻聽）對照（同一串辨識結果分別餵各比對器，辨識條件完全相同）。
 // 截點：句中停頓（50 ms 一格 RMS 連續低於門檻 ≥ 100 ms）的中點，取 20%–85% 音長之間、彼此相隔 ≥ 1.5 秒，每句最多 4 個。
 // 實際播到幾個字：截點前、後兩段各自整段辨識，取使「前段對目標前 k 字＋後段對其餘字」錯誤最少的 k；
 // 兩段合計錯誤 > 2 的截點不夠可靠，捨棄。截點以真實時間播放（createFileSource）＋4 秒靜音，視窗 4 秒。
@@ -73,7 +73,12 @@ type Lsh = {
       o: { cutSec: number; tailSec: number; windowSec: number; minSeconds: number },
     ): Promise<{ at: number; ms: number; text: string }[]>
     /** 以原型頁的比對器（liveMatch）依序餵入每輪文字，回傳每個目標字是否完成 */
-    marks(target: string, texts: string[], confirm: boolean): boolean[]
+    marks(
+      target: string,
+      texts: string[],
+      confirm: boolean,
+      opts?: { confirmWindow?: number; screen?: boolean },
+    ): boolean[]
     transcribeRange(u: string, from: number, to: number): Promise<string>
   }
 }
@@ -92,10 +97,12 @@ test('實驗 2：截掉句尾的誤標率（兩輪確認開／關）', async ({ 
     rounds: { at: number; ms: number; text: string }[]
     falseOn: string[]
     falseOff: string[]
+    falseOld: string[]
     dupOn: number
     dupOff: number
     hitOn: number
     hitOff: number
+    hitOld: number
   }
   const cuts: Cut[] = []
   const discarded: { file: string; cutSec: number; pre: string; post: string; errors: number }[] =
@@ -135,13 +142,20 @@ test('實驗 2：截掉句尾的誤標率（兩輪確認開／關）', async ({ 
             }),
           [url, cut, WINDOW, minSec] as const,
         )
-        const marks = (confirm: boolean) =>
+        const marks = (confirm: boolean, old = false) =>
           page.evaluate(
-            ([t, texts, c]) => (window as unknown as Lsh).__liveShadowing.marks(t, texts, c),
-            [m.text, rounds.map((r) => r.text), confirm] as const,
+            ([t, texts, c, o]) =>
+              (window as unknown as Lsh).__liveShadowing.marks(
+                t,
+                texts,
+                c,
+                o ? { confirmWindow: 2, screen: false } : {},
+              ),
+            [m.text, rounds.map((r) => r.text), confirm, old] as const,
           )
         const on = await marks(true)
         const off = await marks(false)
+        const old = await marks(true, true)
         const falseIdx = (done: boolean[]) => done.flatMap((d, i) => (d && i >= k ? [i] : []))
         // 誤標的字也出現在已播段＝重複字對錯位置，而非模型補字
         const dup = (done: boolean[]) =>
@@ -150,10 +164,12 @@ test('實驗 2：截掉句尾的誤標率（兩輪確認開／關）', async ({ 
           rounds: rounds.map((r) => ({ at: +r.at.toFixed(2), ms: Math.round(r.ms), text: r.text })),
           falseOn: falseIdx(on).map((i) => ref[i]),
           falseOff: falseIdx(off).map((i) => ref[i]),
+          falseOld: falseIdx(old).map((i) => ref[i]),
           dupOn: dup(on),
           dupOff: dup(off),
           hitOn: on.slice(0, k).filter(Boolean).length,
           hitOff: off.slice(0, k).filter(Boolean).length,
+          hitOld: old.slice(0, k).filter(Boolean).length,
         }
       }
       cuts.push({
@@ -188,6 +204,14 @@ test('實驗 2：截掉句尾的誤標率（兩輪確認開／關）', async ({ 
       minSeconds: ms,
       confirmOn: stat(`min${ms}`, true),
       confirmOff: stat(`min${ms}`, false),
+      task39Rule: (() => {
+        const falseMarks = sum((c) => c.variants[`min${ms}`].falseOld.length)
+        return {
+          falseMarks,
+          rate: +(falseMarks / unplayed).toFixed(4),
+          playedHitRate: +(sum((c) => c.variants[`min${ms}`].hitOld) / played).toFixed(4),
+        }
+      })(),
     })),
     cutsDetail: cuts,
     discardedDetail: discarded,
@@ -198,7 +222,7 @@ test('實驗 2：截掉句尾的誤標率（兩輪確認開／關）', async ({ 
   for (const r of summary.results)
     info.annotations.push({
       type: `誤標率（最短送辨識 ${r.minSeconds} 秒）`,
-      description: `兩輪確認開 ${(r.confirmOn.rate * 100).toFixed(1)}%、關 ${(r.confirmOff.rate * 100).toFixed(1)}%（${cuts.length} 個截點、未播 ${unplayed} 字）`,
+      description: `確認開 ${(r.confirmOn.rate * 100).toFixed(1)}%、關 ${(r.confirmOff.rate * 100).toFixed(1)}%、TASK-39 舊規則 ${(r.task39Rule.rate * 100).toFixed(1)}%（${cuts.length} 個截點、未播 ${unplayed} 字）`,
     })
   console.log(
     JSON.stringify({ ...summary, cutsDetail: undefined, discardedDetail: undefined }, null, 2),

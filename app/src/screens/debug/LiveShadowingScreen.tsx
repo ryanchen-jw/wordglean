@@ -2,7 +2,7 @@
 // 即時取樣（liveMic）＋滑動視窗重複辨識（liveStt）＋不照順序比對（liveMatch）；印每輪辨識文字與耗時，
 // 視窗 3／4／6 秒可在錄音中切換；「Continuous 60 s」模式不因整句完成而停，供耗電實驗（設計 §7 實驗 4）
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
-import { createLiveMatch, type LiveState } from '../../speech/liveMatch'
+import { createLiveMatch, type LiveMatchOptions, type LiveState } from '../../speech/liveMatch'
 import { liveMicSupported, startLiveMic, type LiveMic } from '../../speech/liveMic'
 import {
   createFileSource,
@@ -368,8 +368,8 @@ if (import.meta.env.VITE_E2E_SPEECH === 'true') {
       })
       return rounds
     },
-    marks(target: string, texts: string[], confirm: boolean) {
-      const m = createLiveMatch(target, { confirm })
+    marks(target: string, texts: string[], confirm: boolean, opts: LiveMatchOptions = {}) {
+      const m = createLiveMatch(target, { ...opts, confirm })
       for (const t of texts) m.update(t)
       return m.state().words.map((w) => w.mark === 'done')
     },
