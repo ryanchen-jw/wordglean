@@ -65,8 +65,15 @@ export const MAX_ROUND_WORDS = 16
 
 const NON_LATIN = /(?![\p{Script=Latin}])\p{L}/u
 
-/** 同一段（1–4 字）連續出現 3 次以上＝重複迴圈（實測：all all all…、I always use. ×7） */
-function looping(words: string[]): boolean {
+/** seq 是否照順序、連續出現在 target 裡 */
+const contains = (target: readonly string[], seq: string[]) =>
+  target.some((_, s) => s + seq.length <= target.length && seq.every((w, k) => target[s + k] === w))
+
+/**
+ * 同一段（1–4 字）連續出現 3 次以上＝重複迴圈（實測：all all all…、I always use. ×7）；
+ * 但整段重複本身照順序出現在目標句裡（目標句就是 no no no、Bye bye bye）不算
+ */
+function looping(words: string[], target: readonly string[]): boolean {
   for (let n = 1; n <= 4; n++)
     for (let i = 0; i + 3 * n <= words.length; i++) {
       let reps = 1
@@ -75,22 +82,23 @@ function looping(words: string[]): boolean {
         words.slice(i + reps * n, i + (reps + 1) * n).every((w, k) => w === words[i + k])
       )
         reps++
-      if (reps >= 3) return true
+      if (reps >= 3 && !contains(target, words.slice(i, i + reps * n))) return true
     }
   return false
 }
 
-/** 一輪辨識文字的篩選：幻聽整輪丟棄（不拿來比對），否則只留前 maxWords 個字 */
+const norm = (w: string) => w.toLowerCase().replace(/^[^\p{L}\p{N}']+|[^\p{L}\p{N}']+$/gu, '')
+
+/** 一輪辨識文字的篩選：幻聽整輪丟棄（不拿來比對），否則只留前 maxWords 個字；target＝目標句的字（小寫、去頭尾標點） */
 export function screenHeard(
   text: string,
   maxWords = MAX_ROUND_WORDS,
+  target: readonly string[] = [],
 ): { text: string } | { dropped: 'script' | 'loop' } {
   if (NON_LATIN.test(text)) return { dropped: 'script' }
   const raw = text.trim().split(/\s+/).filter(Boolean)
-  const words = raw
-    .map((w) => w.toLowerCase().replace(/^[^\p{L}\p{N}']+|[^\p{L}\p{N}']+$/gu, ''))
-    .filter(Boolean)
-  if (looping(words)) return { dropped: 'loop' }
+  const words = raw.map(norm).filter(Boolean)
+  if (looping(words, target)) return { dropped: 'loop' }
   return { text: raw.length > maxWords ? raw.slice(0, maxWords).join(' ') : text }
 }
 
@@ -134,6 +142,7 @@ export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions =
   const confirmWindow = opts.confirmWindow ?? 3
   const screen = opts.screen ?? true
   const tWords = tokenize(targetSentence)
+  const targetWords = tWords.map((w) => norm(w.text))
   const owner = tWords.flatMap((w, k) => w.parts.map(() => k))
   const parts = tWords.flatMap((w) => w.parts)
   const isFunction = tWords.map((w) => w.parts.length === 1 && FUNCTION_WORDS.has(w.parts[0]))
@@ -169,7 +178,7 @@ export function createLiveMatch(targetSentence: string, opts: LiveMatchOptions =
     update(heard: string): LiveState {
       if (complete) return snapshot()
       if (screen) {
-        const r = screenHeard(heard)
+        const r = screenHeard(heard, MAX_ROUND_WORDS, targetWords)
         if ('dropped' in r) {
           dropped++
           return snapshot()

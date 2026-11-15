@@ -159,4 +159,31 @@ describe('screenHeard（丟棄幻聽、限制長度）', () => {
       text: Array.from({ length: 16 }, (_, i) => `w${i}`).join(' '),
     })
   })
+
+  it('目標句本身就有照順序的三連重複（no no no、Bye bye bye）：同樣的重複不算幻聽', () => {
+    expect(screenHeard('No, no, no!', 16, ['no', 'no', 'no', 'not', 'today'])).toEqual({
+      text: 'No, no, no!',
+    })
+    expect(screenHeard('bye bye bye', 16, ['bye', 'bye', 'bye', 'my', 'friend'])).toEqual({
+      text: 'bye bye bye',
+    })
+    // 比目標句多重複幾次仍算迴圈
+    expect(screenHeard('no no no no no', 16, ['no', 'no', 'no', 'not', 'today'])).toEqual({
+      dropped: 'loop',
+    })
+  })
+
+  it('目標句沒有該重複：照樣丟棄', () => {
+    expect(screenHeard('no no no', 16, ['i', 'said', 'no'])).toEqual({ dropped: 'loop' })
+    expect(screenHeard('all all all', 16, ['all', 'of', 'us', 'all'])).toEqual({ dropped: 'loop' })
+  })
+
+  it('createLiveMatch 以目標句判斷：唸 Bye bye bye 可以完成', () => {
+    const m = createLiveMatch('Bye bye bye!', { confirm: false })
+    expect(m.update('Bye, bye, bye.').complete).toBe(true)
+    expect(m.state().dropped).toBe(0)
+    const other = createLiveMatch('I want to eat dinner', { confirm: false })
+    expect(other.update('bye bye bye').round).toBe(0)
+    expect(other.state().dropped).toBe(1)
+  })
 })

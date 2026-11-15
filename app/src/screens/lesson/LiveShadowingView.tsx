@@ -98,6 +98,8 @@ export function LiveShadowingView(props: QuestionProps<ShadowingItem>) {
     mic === 'unsupported' || !speech.moonshineAvailable() || !speech.liveMicSupported()
   const offerWeb = speech.webSpeech.supported() && (localBlocked || model.kind === 'failed')
   const web = offerWeb && speech.webSpeech.consented()
+  const wholeLocal =
+    !speech.liveMicSupported() && mic !== 'unsupported' && speech.moonshineAvailable()
 
   const endSession = () => {
     const s = session.current
@@ -482,6 +484,17 @@ export function LiveShadowingView(props: QuestionProps<ShadowingItem>) {
           <MicOff size={30} aria-hidden="true" />
         </button>
         <span className="text-secondary text-muted">{t('speak.live.localUnavailable')}</span>
+        {/* 只是不能即時取樣（無 AudioWorklet）、本機整句辨識可用：先給不上傳的整句錄音 */}
+        {wholeLocal && (
+          <Button
+            variant="text"
+            data-multiline
+            className="justify-center text-center"
+            onClick={() => switchTo('whole')}
+          >
+            {t('speak.live.whole')}
+          </Button>
+        )}
         {offerBtn}
       </RecWrap>
     )

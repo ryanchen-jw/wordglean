@@ -409,4 +409,29 @@ describe('即時跟讀：辨識不可用的退回（AC#5）', () => {
       await screen.findByRole('button', { name: '開始錄音' }, { timeout: 5_000 }),
     ).toBeInTheDocument()
   })
+
+  it('不支援 AudioWorklet、本機整句辨識可用、瀏覽器有語音辨識：錄音前就能選「改用整句錄音」走本機（不建立瀏覽器辨識）', async () => {
+    const rec = fakeRecognition()
+    const f = fakeLive({ liveMic: false, web: createWebSpeech(() => rec.Ctor) })
+    f.stt.transcribe = vi.fn(async () => 'I want to eat dinner')
+    renderLesson(f.services)
+    expect(
+      await screen.findByText('這支手機無法在本機辨識語音', {}, { timeout: 5_000 }),
+    ).toBeInTheDocument()
+    expect(button('改用瀏覽器的語音辨識')).toBeInTheDocument()
+    fireEvent.click(button('改用整句錄音'))
+    fireEvent.click(await screen.findByRole('button', { name: '開始錄音' }))
+    fireEvent.click(await screen.findByRole('button', { name: '結束錄音' }))
+    expect(await screen.findByRole('textbox')).toHaveValue('I want to eat dinner')
+    expect(f.stt.transcribe).toHaveBeenCalledOnce()
+    expect(rec.made).toHaveLength(0)
+  })
+
+  it('沒有本機辨識（無 WebAssembly）時不提供「改用整句錄音」', async () => {
+    const web = createWebSpeech(() => fakeRecognition().Ctor)
+    web.consent()
+    renderLesson(fakeLive({ wasm: false, web }).services)
+    expect(await screen.findByRole('button', { name: '開始唸' }, { timeout: 5_000 })).toBeEnabled()
+    expect(screen.queryByRole('button', { name: '改用整句錄音' })).toBeNull()
+  })
 })
