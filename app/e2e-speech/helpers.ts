@@ -45,3 +45,15 @@ export async function toShadowing(page: Page) {
   await countIs(page, FIRST_SHADOWING)
   await expect(page.getByText('跟讀', { exact: true })).toBeVisible()
 }
+
+/**
+ * 即時跟讀（TASK-40）→ 整句錄音：開始唸、時間快轉 20 秒、按「改用整句錄音」（舊流程的入口）。
+ * 需先 page.clock.install()；即時那段不給辨識結果（__lgSpeechConfig 不設 live）
+ */
+export async function toWholeSentence(page: Page) {
+  await page.getByRole('button', { name: '開始唸' }).click()
+  await expect(page.getByRole('button', { name: '暫停' })).toBeVisible()
+  await page.clock.fastForward(20_000)
+  await page.getByRole('button', { name: '改用整句錄音' }).click()
+  await expect(page.getByRole('button', { name: '開始錄音' })).toBeVisible()
+}

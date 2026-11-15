@@ -1,93 +1,18 @@
 // TASK-14 視覺 smoke（harness 06）：設計 s04 跟讀各狀態兩引擎截圖＋06 三件套＋狀態色（computed style 對 token）
+// TASK-40 起課程跟讀預設為即時跟讀（live-shadowing.spec）；本檔的整句錄音流程由「改用整句錄音」進入（toWholeSentence），
+// 麥克風、模型下載、後備等共用狀態現在截的是即時跟讀畫面
 // 辨識與麥克風為假（window.__lgSpeechConfig，見 src/speech/e2eSpeech.ts），不下載模型；題目＝樣本課 A1 第 9 步「I have a cup of tea.」
 // mock vs 真實：辨識結果為寫死字串（真實為 Moonshine 輸出）；下載進度 42% 為手動設定（真實為下載量比例）
-import { writeFile } from 'node:fs/promises'
-import { expect, test, type Locator, type Page, type TestInfo } from '@playwright/test'
-import { LESSON } from '../e2e/lesson.js'
-import { measureMobile, overflowingChildren } from '../e2e/measure.js'
-import { fakeSystemVoice } from '../e2e/speech.js'
-import { toShadowing } from './helpers.js'
-// 與 src/speech/e2eSpeech.ts 的 E2eSpeechConfig 同形（e2e 的 tsconfig 不編 src）
-interface E2eSpeechConfig {
-  model?: string
-  mic?: 'granted' | 'prompt' | 'denied' | 'unsupported'
-  heard?: string[]
-  hold?: boolean
-  wasm?: boolean
-  webSpeech?: boolean
-}
-
-async function check(page: Page, info: TestInfo, name: string, strict = true) {
-  await page.waitForTimeout(300) // 等回饋動畫結束
-  const shot = await page.screenshot()
-  await info.attach(name, { body: shot, contentType: 'image/png' })
-  await writeFile(info.outputPath(`${info.project.name}-${name}.png`), shot)
-  const m = await measureMobile(page)
-  expect.soft(m.overflow, `${name}：橫向溢出`).toEqual([])
-  expect.soft(m.wrapped, `${name}：單行控件折行`).toEqual([])
-  expect.soft(m.small, `${name}：可點目標 <44px`).toEqual([])
-  if (strict) {
-    expect.soft(m.latin, `${name}：英文介面字串`).toEqual([])
-    expect.soft(m.bodyColors, `${name}：body 未套 token 色`).toEqual([])
-  }
-  for (const sel of ['main', '[role="status"]', '[role="alertdialog"]'])
-    if (await page.locator(sel).count())
-      expect.soft(await overflowingChildren(page, sel), `${name}：${sel} 子元素溢出`).toEqual([])
-}
-
-/** token 的實際顏色（rgb 字串） */
-const token = (page: Page, name: string) =>
-  page.evaluate((n) => {
-    const probe = document.createElement('div')
-    probe.style.color = `var(${n})`
-    document.body.append(probe)
-    const c = getComputedStyle(probe).color
-    probe.remove()
-    return c
-  }, name)
-
-const style = (l: Locator, prop: 'backgroundColor' | 'color' | 'borderTopColor') =>
-  l.evaluate((el, p) => getComputedStyle(el)[p], prop)
-
-async function expectColor(
-  page: Page,
-  l: Locator,
-  prop: 'backgroundColor' | 'color' | 'borderTopColor',
-  name: string,
-) {
-  expect(await style(l, prop), `${prop} 應為 ${name}`).toBe(await token(page, name))
-}
-
-async function open(page: Page, cfg: E2eSpeechConfig, theme: 'light' | 'dark' = 'light') {
-  await fakeSystemVoice(page)
-  await page.addInitScript(
-    ([c, th]) => {
-      localStorage.setItem('lg.installDismissed', '1')
-      localStorage.setItem('lg.theme', th as string)
-      ;(window as unknown as { __lgSpeechConfig: unknown }).__lgSpeechConfig = c
-    },
-    [cfg, theme] as const,
-  )
-  await page.goto(`/lesson/${LESSON}`)
-  await toShadowing(page)
-  await expect(page.getByText('跟讀', { exact: true })).toBeVisible()
-}
-
-const speech = (page: Page, fn: string, arg?: unknown) =>
-  page.evaluate(
-    ([f, a]) =>
-      (window as unknown as { __lgSpeech: Record<string, (x?: unknown) => void> }).__lgSpeech[
-        f as string
-      ](a),
-    [fn, arg] as const,
-  )
-
+import { expect, test } from '@playwright/test'
+import { toWholeSentence } from './helpers.js'
+import { check, expectColor, open, speech, token } from './visual.js'
 for (const theme of ['light', 'dark'] as const) {
-  test(`s04 錄音流程：待錄／錄音中／轉文字中／確認／結果（錯、對）＋狀態色（${theme}）`, async ({
+  test(`s04 整句錄音（改用整句錄音）：待錄／錄音中／轉文字中／確認／結果（錯、對）＋狀態色（${theme}）`, async ({
     page,
   }, info) => {
     test.setTimeout(90_000)
     await open(page, { hold: true, heard: ['I have a cap', 'I have a cup of tea'] }, theme)
+    await toWholeSentence(page)
     const rec = (name: string) => page.getByRole('button', { name })
 
     await expectColor(page, rec('開始錄音'), 'backgroundColor', '--lg-primary')
@@ -200,7 +125,7 @@ test('s04 模型載入失敗：提出瀏覽器語音辨識後備＋同意框', a
   await expect(dialog).toContainText('錄音可能會傳送到瀏覽器廠商的伺服器')
   await check(page, info, 's04-fallback-dialog')
   await dialog.getByRole('button', { name: '同意並使用' }).click()
-  await expect(page.getByRole('button', { name: '開始錄音' })).toBeEnabled()
+  await expect(page.getByRole('button', { name: '開始唸' })).toBeEnabled()
   await check(page, info, 's04-fallback-idle')
 })
 
@@ -211,9 +136,7 @@ const NARROW = [
 ] as const
 
 for (const c of NARROW) {
-  test(`窄螢幕／特大字級 ${c.name}：待錄、下載中、確認、結果、未允許麥克風`, async ({
-    page,
-  }, info) => {
+  test(`窄螢幕／特大字級 ${c.name}：待錄、下載中、整句錄音的確認與結果`, async ({ page }, info) => {
     test.setTimeout(90_000)
     await page.setViewportSize({ width: c.width, height: c.height })
     await page.addInitScript((size) => {
@@ -224,6 +147,7 @@ for (const c of NARROW) {
     await check(page, info, `${c.name}-s04-stt-download`, false)
     await speech(page, 'setModel', { kind: 'ready' })
     await check(page, info, `${c.name}-s04-idle`, false)
+    await toWholeSentence(page)
     await page.getByRole('button', { name: '開始錄音' }).click()
     await page.getByRole('button', { name: '結束錄音' }).click()
     await expect(page.getByRole('textbox')).toBeVisible()

@@ -3,7 +3,8 @@ import { defineConfig, devices } from '@playwright/test'
 
 // 跟讀（TASK-14）e2e：建置帶 VITE_E2E_SPEECH（可換假辨識／假麥克風）與樣本課題目，輸出到 dist/speech。不進 CI。
 // - lesson-order：能跟讀時一課的出題順序（TASK-18 穿插，含跟讀）
-// - speech-visual：06 視覺 smoke，s04 各狀態兩引擎截圖（假辨識，不下載模型）
+// - speech-visual：06 視覺 smoke，s04 各狀態兩引擎截圖（假辨識，不下載模型）；整句錄音由「改用整句錄音」進入
+// - shadowing-live：即時跟讀（TASK-40，課程預設）假辨識串流驅動逐字標記＋各狀態截圖（不下載模型）
 // - stt-real：真模型（Hugging Face 下載約 52MB）辨識 10 句預錄音檔（AC#2）＋假麥克風錄音全程無上傳（AC#4）；只跑 chromium
 // 跑法：E2E_PORT=<埠> npx playwright test --config playwright.speech.config.ts [--project=…]
 const PORT = Number(process.env.E2E_PORT ?? 5308)
@@ -26,12 +27,22 @@ export default defineConfig({
   projects: [
     {
       name: 'webkit-iphone15',
-      testMatch: ['speech-visual.spec.ts', 'lesson-order.spec.ts', 'regressions.spec.ts'],
+      testMatch: [
+        'speech-visual.spec.ts',
+        'shadowing-live.spec.ts',
+        'lesson-order.spec.ts',
+        'regressions.spec.ts',
+      ],
       use: { ...devices['iPhone 15'] },
     },
     {
       name: 'chromium-pixel7',
-      testMatch: ['speech-visual.spec.ts', 'lesson-order.spec.ts', 'regressions.spec.ts'],
+      testMatch: [
+        'speech-visual.spec.ts',
+        'shadowing-live.spec.ts',
+        'lesson-order.spec.ts',
+        'regressions.spec.ts',
+      ],
       use: { ...devices['Pixel 7'] },
     },
     {

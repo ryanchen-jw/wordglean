@@ -1,9 +1,9 @@
 // TASK-14 隔離驗收 P1-1 回歸（2026-10-02）：送出後「再唸一次」再「跳過」曾讓整課卡死（重複作答 → 存檔 reject → 題號停住、✕ 無反應）
-// 辨識與麥克風為假（可錄音、模型已就緒）；內建聲音用替身
+// 辨識與麥克風為假（可錄音、模型已就緒）；內建聲音用替身。TASK-40 起整句錄音由即時跟讀的「改用整句錄音」進入
 import { expect, test } from '@playwright/test'
 import { LESSON } from '../e2e/lesson.js'
 import { fakeSystemVoice } from '../e2e/speech.js'
-import { countIs, FIRST_SHADOWING, toShadowing } from './helpers.js'
+import { countIs, FIRST_SHADOWING, toShadowing, toWholeSentence } from './helpers.js'
 
 test('送出後再唸一次再跳過：前進到下一題、✕ 仍可叫出離開確認框、沒有頁面錯誤', async ({ page }) => {
   const errors: string[] = []
@@ -16,8 +16,10 @@ test('送出後再唸一次再跳過：前進到下一題、✕ 仍可叫出離�
       heard: ['I have a cup of tea'],
     }
   })
+  await page.clock.install()
   await page.goto(`/lesson/${LESSON}`)
   await toShadowing(page)
+  await toWholeSentence(page)
   await page.getByRole('button', { name: '開始錄音' }).click()
   await page.getByRole('button', { name: '結束錄音' }).click()
   await page.getByRole('button', { name: '送出' }).click()

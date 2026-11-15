@@ -348,18 +348,18 @@ export function LiveShadowingView(props: QuestionProps<ShadowingItem>) {
 
   const tally = started && (
     <div className="flex items-center justify-between gap-3 text-secondary">
-      <span data-testid="live-tally">
+      <span data-testid="live-tally" className="whitespace-nowrap">
         {withEm(
           t('speak.live.tally', { total }),
           'n',
           <b className="text-correct">{state.doneCount}</b>,
         )}
       </span>
-      <span aria-hidden="true" className="flex min-w-0 justify-end gap-1">
+      <span aria-hidden="true" className="flex min-w-0 flex-1 justify-end gap-1">
         {state.words.map((w, k) => (
           <i
             key={k}
-            className={`h-1.5 w-[22px] min-w-1 shrink rounded-full ${w.mark === 'done' || w.mark === 'light' ? 'bg-correct' : 'bg-line'}`}
+            className={`h-1.5 max-w-[22px] min-w-1 flex-1 rounded-full ${w.mark === 'done' || w.mark === 'light' ? 'bg-correct' : 'bg-line'}`}
           />
         ))}
       </span>
@@ -408,11 +408,18 @@ export function LiveShadowingView(props: QuestionProps<ShadowingItem>) {
           <EnglishText text={item.sentenceEn} className="font-en" />
           <ZhText text={item.sentenceZh} />
         </FeedbackBar>
-        <div className="grid grid-cols-[minmax(max-content,1fr)_1.2fr] gap-2.5">
-          <Button variant="secondary" onClick={() => switchTo('practice')}>
+        {/* 放不下兩顆（窄螢幕特大字級）就上下排、各占整行 */}
+        <div className="flex flex-wrap gap-2.5">
+          <Button
+            variant="secondary"
+            className="grow basis-[max-content]"
+            onClick={() => switchTo('practice')}
+          >
             {t('speak.live.again')}
           </Button>
-          <Button onClick={onContinue}>{t('lesson.feedback.continue')}</Button>
+          <Button className="grow basis-32" onClick={onContinue}>
+            {t('lesson.feedback.continue')}
+          </Button>
         </div>
       </>
     )
