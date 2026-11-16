@@ -384,8 +384,9 @@ describe('即時跟讀：辨識不可用的退回（AC#5）', () => {
     const web = createWebSpeech(() => rec.Ctor)
     renderLesson(fakeLive({ liveMic: false, web }).services)
     expect(
-      await screen.findByText('這支手機無法在本機辨識語音', {}, { timeout: 5_000 }),
+      await screen.findByText('這支手機無法邊唸邊辨識', {}, { timeout: 5_000 }),
     ).toBeInTheDocument()
+    expect(screen.queryByText('這支手機無法在本機辨識語音')).toBeNull()
     fireEvent.click(button('改用瀏覽器的語音辨識'))
     expect(rec.made).toHaveLength(0)
     fireEvent.click(await screen.findByRole('button', { name: '同意並使用' }))
@@ -416,8 +417,9 @@ describe('即時跟讀：辨識不可用的退回（AC#5）', () => {
     f.stt.transcribe = vi.fn(async () => 'I want to eat dinner')
     renderLesson(f.services)
     expect(
-      await screen.findByText('這支手機無法在本機辨識語音', {}, { timeout: 5_000 }),
+      await screen.findByText('這支手機無法邊唸邊辨識', {}, { timeout: 5_000 }),
     ).toBeInTheDocument()
+    expect(screen.queryByText('這支手機無法在本機辨識語音')).toBeNull()
     expect(button('改用瀏覽器的語音辨識')).toBeInTheDocument()
     fireEvent.click(button('改用整句錄音'))
     fireEvent.click(await screen.findByRole('button', { name: '開始錄音' }))
@@ -425,6 +427,19 @@ describe('即時跟讀：辨識不可用的退回（AC#5）', () => {
     expect(await screen.findByRole('textbox')).toHaveValue('I want to eat dinner')
     expect(f.stt.transcribe).toHaveBeenCalledOnce()
     expect(rec.made).toHaveLength(0)
+  })
+
+  it('沒有本機辨識（無 WebAssembly）、瀏覽器有語音辨識未同意：說明無法在本機辨識', async () => {
+    const web = createWebSpeech(() => fakeRecognition().Ctor)
+    const f = fakeLive({ wasm: false, web })
+    // 只驗畫面文案：題型篩選（sttUsable）在此強制放行，讓跟讀題出現
+    f.services.sttUsable = () => true
+    renderLesson(f.services)
+    expect(
+      await screen.findByText('這支手機無法在本機辨識語音', {}, { timeout: 5_000 }),
+    ).toBeInTheDocument()
+    expect(screen.queryByText('這支手機無法邊唸邊辨識')).toBeNull()
+    expect(button('改用瀏覽器的語音辨識')).toBeInTheDocument()
   })
 
   it('沒有本機辨識（無 WebAssembly）時不提供「改用整句錄音」', async () => {

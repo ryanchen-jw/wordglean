@@ -479,11 +479,13 @@ export function LiveShadowingView(props: QuestionProps<ShadowingItem>) {
           type="button"
           disabled
           className={recCls.busy}
-          aria-label={t('speak.live.localUnavailable')}
+          aria-label={t(wholeLocal ? 'speak.live.liveUnavailable' : 'speak.live.localUnavailable')}
         >
           <MicOff size={30} aria-hidden="true" />
         </button>
-        <span className="text-secondary text-muted">{t('speak.live.localUnavailable')}</span>
+        <span className="text-secondary text-muted">
+          {t(wholeLocal ? 'speak.live.liveUnavailable' : 'speak.live.localUnavailable')}
+        </span>
         {/* 只是不能即時取樣（無 AudioWorklet）、本機整句辨識可用：先給不上傳的整句錄音 */}
         {wholeLocal && (
           <Button

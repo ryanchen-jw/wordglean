@@ -163,7 +163,7 @@ test('本機不能即時辨識：提出瀏覽器語音辨識→同意→中間�
     webSpeech: true,
     live: ['I have a cup', 'I have a cup of tea', 'tea'],
   })
-  await expect(page.getByText('這支手機無法在本機辨識語音')).toBeVisible()
+  await expect(page.getByText('這支手機無法邊唸邊辨識')).toBeVisible()
   await check(page, info, 'live-local-unavailable')
   await page.getByRole('button', { name: '改用瀏覽器的語音辨識' }).click()
   await page.getByRole('alertdialog').getByRole('button', { name: '同意並使用' }).click()
