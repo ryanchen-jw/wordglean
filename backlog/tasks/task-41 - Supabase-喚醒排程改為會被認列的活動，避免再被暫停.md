@@ -4,6 +4,7 @@ title: Supabase 喚醒排程改為會被認列的活動，避免再被暫停
 status: In Progress
 assignee: []
 created_date: '2026-11-25 06:38'
+updated_date: '2026-11-25 06:49'
 labels:
   - supabase
 dependencies: []
@@ -36,8 +37,17 @@ ordinal: 38000
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 官方文件與社群查證結論與證據等級寫進卡片
-- [ ] #2 新 migration 不放寬既有 RLS、不暴露使用者資料；排程只在明確成功時通過
-- [ ] #3 本機驗證 migration 與排程指令（或說明無法驗證的原因與替代驗證）
+- [x] #1 官方文件與社群查證結論與證據等級寫進卡片
+- [x] #2 新 migration 不放寬既有 RLS、不暴露使用者資料；排程只在明確成功時通過
+- [x] #3 本機驗證 migration 與排程指令（或說明無法驗證的原因與替代驗證）
 - [ ] #4 上正式站後連續 14 天排程成功且專案未被暫停
 <!-- AC:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+created: 2026-11-25 06:49
+---
+2026-11-25 查證：官方明文（docs/guides/platform/free-project-pausing、kb/faqs/platform/free-project-pausing）——一週內資料庫活動不足即暫停、每天幾次使用者請求通常就夠，門檻未公開；社群經驗（github.com/orgs/supabase/discussions/13121）——只建連線不夠、需真的有交易；推測——RLS 拒絕（42501）的請求未執行查詢故不被認列。做法：private.keepalive 單列心跳表＋public.keepalive() security definer 函式（search_path 鎖定、僅 anon 與 service_role 可執行），排程 POST rpc 且只接受 200＋時間字串。獨立驗收 PASS（pgTAP 96 項全綠、500 次並行仍 1 列）。待：創辦人 db push、git push、觀察 14 天。
+---
+<!-- COMMENTS:END -->
