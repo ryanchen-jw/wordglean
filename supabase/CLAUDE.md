@@ -23,6 +23,7 @@ CLI 一律 `npx --yes supabase@2.118.0`（鎖版本、不全域安裝）。proje
 每張表只給 `authenticated` 角色讀寫自己的列（`(select auth.uid()) = user_id`，profiles 用 `id`）；`anon` 沒有任何權限；`authenticated` 另收回 TRUNCATE（不受 RLS 管）、REFERENCES、TRIGGER。例外：
 - `profiles`：只能 select／update，列由註冊觸發器 `on_auth_user_created` 建立、隨帳號刪除 cascade。
 - `review_logs`：append-only，沒有 update（合併靠「聯集＋重播」，紀錄不可改寫）。
+- `public.keepalive()`：anon 唯一可執行的函式（TASK-41 喚醒排程），security definer，只更新 `private.keepalive` 單列心跳、回傳時間；`private` schema 不對 API 公開。
 
 ## 欄位對照表（app 本機資料層 TASK-10 ↔ 雲端）
 

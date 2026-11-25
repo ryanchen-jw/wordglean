@@ -1,4 +1,6 @@
-# Supabase 免費方案閒置 7 天會暫停：每日打一次資料庫。未登入會被 RLS 權限拒絕（42501），但請求已到 Postgres。
+# Supabase 免費方案閒置 7 天會暫停：官方以「使用者資料庫活動」判定。每日以 anon 呼叫 rpc/keepalive，
+# 函式在資料庫內真的寫一筆心跳（TASK-41 migration），只有 HTTP 200 且回傳時間字串才算成功，其他一律失敗。
+# 舊做法查 profiles 被 RLS 拒絕（42501）雖每日「成功」，專案仍於 2026-11-23 被暫停。
 # 只在設了 repo variables SUPABASE_URL、SUPABASE_ANON_KEY 的 repo 執行（兩者都是前端公開值）。
 name: Supabase keepalive
 
@@ -15,13 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - name: Query database
+      - name: Write heartbeat
         env:
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
         run: |
-          body=$(curl -sS --retry 3 --retry-all-errors --max-time 30 \
-            -H "apikey: $SUPABASE_ANON_KEY" -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
-            "$SUPABASE_URL/rest/v1/profiles?select=id&limit=1")
-          echo "$body" | cut -c1-120
-          echo "$body" | grep -q '"code":"42501"' || [ "$body" = "[]" ]
+          code=$(curl -sS -o body.txt -w '%{http_code}' --retry 3 --retry-all-errors --max-time 30 \
+            -X POST -H "apikey: $SUPABASE_ANON_KEY" -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+            -H 'Content-Type: application/json' -d '{}' "$SUPABASE_URL/rest/v1/rpc/keepalive") || code=000
+          echo "HTTP $code $(cut -c1-120 body.txt)"
+          [ "$code" = 200 ] && grep -Eq '^"[0-9]{4}-[0-9]{2}-[0-9]{2}T' body.txt
